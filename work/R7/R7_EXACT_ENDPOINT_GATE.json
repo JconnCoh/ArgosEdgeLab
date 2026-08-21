@@ -1,0 +1,70 @@
+{
+    "schema":  "argos_r7_exact_endpoint_gate_v1",
+    "createdUtc":  "2026-08-21T16:06:01.8696442Z",
+    "state":  "PASS_R7_EXACT_ENDPOINT_GATE",
+    "requestId":  "REQ_R7_0821_1605_X1",
+    "requestManifestSha256":  "EF542AACAAB0527580460C962FE2025808639F645B26C85226AF7398DEB51B7F",
+    "exactEndpointSha256":  "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+    "releasedImporterSha256":  "45965930699A0F0C38098B65E5A153C5DE360103BC9FED345AC5811B6F1FBD0D",
+    "entrypointSha256":  "A6A373457FA0F435BD0D351AE290175A29D50B8EA24F00246C7A5177B2798173",
+    "allowCreateAccepted":  true,
+    "targetIdempotenceAccepted":  true,
+    "unapprovedPredecessorRefusedBeforeMutation":  true,
+    "postInstallFailureRolledBack":  true,
+    "controlAfterFailurePassed":  true,
+    "exactProcessedResponseReplayPassed":  true,
+    "tenV3RouteContextsVerified":  true,
+    "preservedSourceRetained":  true,
+    "hardcodedIdentityUsed":  false,
+    "responseSignaturesVerified":  5,
+    "localEntrypointRestored":  true,
+    "results":  [
+                    {
+                        "case":  "create",
+                        "mode":  "absent",
+                        "endpointState":  "PASS_MAINTENANCE_PATCH",
+                        "entryExists":  true,
+                        "entrySha256":  "A6A373457FA0F435BD0D351AE290175A29D50B8EA24F00246C7A5177B2798173",
+                        "responseId":  "R_CD05EE5DDFFB_20260821160544863_9ab9b475",
+                        "signatureVerified":  true
+                    },
+                    {
+                        "case":  "target_idempotent",
+                        "mode":  "target",
+                        "endpointState":  "PASS_MAINTENANCE_PATCH",
+                        "entryExists":  true,
+                        "entrySha256":  "A6A373457FA0F435BD0D351AE290175A29D50B8EA24F00246C7A5177B2798173",
+                        "responseId":  "R_CD05EE5DDFFB_20260821160549514_5df35680",
+                        "signatureVerified":  true
+                    },
+                    {
+                        "case":  "unapproved",
+                        "mode":  "bad",
+                        "endpointState":  "FAILED",
+                        "entryExists":  true,
+                        "entrySha256":  "44F5D84E2B2BAA111CDF511D4BB18EE38364CE7EC342EAA50B4461D2C3486FDD",
+                        "responseId":  "R_CD05EE5DDFFB_20260821160551750_6a177e76",
+                        "signatureVerified":  true
+                    },
+                    {
+                        "case":  "runtime_failure",
+                        "mode":  "absent",
+                        "endpointState":  "FAILED",
+                        "entryExists":  false,
+                        "entrySha256":  "",
+                        "responseId":  "R_CD05EE5DDFFB_20260821160556797_4aede411",
+                        "signatureVerified":  true
+                    },
+                    {
+                        "case":  "control_after_failure",
+                        "mode":  "absent",
+                        "endpointState":  "PASS_MAINTENANCE_PATCH",
+                        "entryExists":  true,
+                        "entrySha256":  "A6A373457FA0F435BD0D351AE290175A29D50B8EA24F00246C7A5177B2798173",
+                        "responseId":  "R_CD05EE5DDFFB_20260821160601309_4778f55b",
+                        "signatureVerified":  true
+                    }
+                ],
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

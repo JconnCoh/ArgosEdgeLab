@@ -1,0 +1,64 @@
+{
+    "schema":  "argos_jbod_portal_queue_recovery_v2_rehearsal_result",
+    "createdUtc":  "2026-08-17T16:51:27.1771000+00:00",
+    "state":  "PASS_JBOD_PORTAL_QUEUE_RECOVERY_V2_REHEARSAL",
+    "windowsPowerShell":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "installerSha256":  "53FE65D3A53645814EF966075DC15CF16539D9BFAFB9E8942428C78170FC3C91",
+    "targetWorkerSha256":  "64F1BFA34A2F54F6D84D14C5D91BC270346E88E3D95E2E303C0A858206E770B2",
+    "approvedPredecessorSha256":  [
+                                      "CBB1D168DACF392259C93898D8CE725BED7C917571937207757423A05FAC4DE0"
+                                  ],
+    "checks":  [
+                   {
+                       "name":  "PATH_BOUNDARIES_199_200_229_230",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "EXACT_PACKAGED_PREFLIGHT_NON_MUTATING",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "APPROVED_PREDECESSOR_APPLY_AND_EXACT_QUARANTINE",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "TARGET_HASH_IDEMPOTENCY",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "ORIGINAL_REQUEST_CONTAINERIZED_ROUND_TRIP",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "REQUEST_REPLAY_NO_DUPLICATE_RESPONSE",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "STALE_WORK_COLLISION_AND_SECOND_QUEUE_ITEM",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "INJECTED_RESPONSE_FAILURE_COMPACT_AND_QUEUE_ADVANCE",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "FORCED_TERMINATION_AND_RESTART",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "UNAPPROVED_PREDECESSOR_REFUSED_BEFORE_MUTATION",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "INJECTED_FAILURE_ROLLBACK_AND_TASK_RESTART",
+                       "state":  "PASS"
+                   }
+               ],
+    "checkCount":  11,
+    "exactRequestId":  "REQ_20260816T033053168Z_802B9D0EC0B4",
+    "originalPathsPreservedInContainer":  true,
+    "duplicateRequestCreated":  false,
+    "detectorScribeInsiteMonitorTasksChanged":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

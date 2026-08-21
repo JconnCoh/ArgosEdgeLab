@@ -1,0 +1,77 @@
+{
+  "schema": "argos_project_portal_jbod_queue_recovery_final_package_gate_v2_1",
+  "createdUtc": "2026-08-17T17:13:00Z",
+  "state": "PASS_FINAL_ZIP_EXACT_PACKAGED_EXPIRED_REQUEST_REHEARSAL",
+  "revision": "ARGOS_PROJECT_PORTAL_JBOD_QUEUE_RECOVERY_V2_1_20260817",
+  "zip": {
+    "path": "work/ARGOS_JBOD_PORTAL_QUEUE_RECOVERY_V2_1.zip",
+    "bytes": 34471,
+    "sha256": "9BC3319A2D0988CB6ADAEE78EB5C5A02C3FAF049394E1262C798AB31B532FF56",
+    "freshExtractionRoot": "C:/AR21Z",
+    "freshExtractionDeletedAfterPass": true,
+    "manifestFileCount": 9,
+    "manifestHashAndSizeVerification": "PASS"
+  },
+  "packageManifest": {
+    "pathInsideZip": "PACKAGE_MANIFEST.json",
+    "bytes": 1975,
+    "sha256": "ED71B903731336C3CCCA2C19D744A3D708AE9F4C0CEEF7B209752214A7240D53",
+    "selfExcluded": true
+  },
+  "installer": {
+    "pathInsideZip": "APPLY_JBOD_PORTAL_QUEUE_RECOVERY_V2_1.ps1",
+    "bytes": 49614,
+    "sha256": "E011882048333FF66810A7D4EA507F2FFFD1166DEC6B9E0720683E81688D7AEB"
+  },
+  "exactPackagedRehearsal": {
+    "path": "work/ARGOS_JBOD_PORTAL_QUEUE_RECOVERY_V2_1.REHEARSAL_PASS.json",
+    "bytes": 3790,
+    "sha256": "F4FCE2D1E2AFDC35DFFA575EC6374ADE1456ECCB52ACCE16F2B23BF8A7E6EDC6",
+    "state": "PASS_JBOD_PORTAL_QUEUE_RECOVERY_V2_1_REHEARSAL",
+    "checkCount": 16,
+    "windowsPowerShell51": true,
+    "approvedPredecessorsExercised": [
+      "CBB1D168DACF392259C93898D8CE725BED7C917571937207757423A05FAC4DE0"
+    ],
+    "targetHashIdempotencyExercised": "64F1BFA34A2F54F6D84D14C5D91BC270346E88E3D95E2E303C0A858206E770B2",
+    "expiredExactRequestVerifiedAndQuarantined": true,
+    "expiredExactRequestExecuted": false,
+    "freshExactRequestRefusedForQuarantine": true,
+    "tamperedSignatureRefused": true,
+    "tamperedManifestRefused": true,
+    "tamperedPayloadRefused": true,
+    "currentMaintenanceRequestPreservedAndAdvanced": true,
+    "unapprovedHashRefusedBeforeMutation": true,
+    "rollbackRestoredRequestWorkAndPartial": true,
+    "restartExercised": true,
+    "secondQueuedRequestExercised": true,
+    "compactFailureResponseExercised": true,
+    "sourcePathAndHashPreservationExercised": true
+  },
+  "pathGate": {
+    "path": "work/ARGOS_JBOD_PORTAL_QUEUE_RECOVERY_V2_1.PATH_PREFLIGHT.json",
+    "bytes": 2443,
+    "sha256": "89362BE14786A481A98DC6282AA71DE64ED85B9A51851CE175C9616EAF2CAB72",
+    "state": "PASS_PATH_BUDGET",
+    "reservedSuffixCharacters": 32,
+    "shareZipViaVerifiedShortMapping": "I:/ARGOS_JBOD_PORTAL_QUEUE_RECOVERY_V2_1.zip"
+  },
+  "wrapperGates": {
+    "runRecovery": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "preflightOnly": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "arbitraryArgumentForwarding": false,
+    "startProcessWrapperHop": false
+  },
+  "expiredRequestId": "REQ_20260816T033053168Z_802B9D0EC0B4",
+  "expiredRequestManifestSha256": "AD86EDBDFAC654AA3D1D1E65559E7DF9C0A270A4EB2DC3FC8A4164034D809CD2",
+  "currentRequestId": "REQ_20260817T153923252Z_2EB5616C2942",
+  "currentRequestManifestSha256": "6D0A6C09E269C41843B92FB5AEB2F3EA529D0462E35987F93DB401495127B225",
+  "expiryBypassAllowed": false,
+  "duplicateRequestCreated": false,
+  "detectorScribeInsiteMonitorTasksChanged": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

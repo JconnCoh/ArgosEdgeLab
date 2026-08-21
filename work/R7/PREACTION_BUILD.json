@@ -1,0 +1,54 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v1",
+  "revision": "R7_BUILD_20260821",
+  "createdUtc": "2026-08-21T16:06:40.2776397Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "BUILD_R7_AFTER_EXACT_ENDPOINT_GATE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "371FD41B6719C9FA20B6D4CC6CADE26A4904683C267334ABAF5A38D18EAC0883",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "A774F1B7B11659D0308468A43D5567C302C6CE0869BD24F88D637246116088A6"
+    },
+    {
+      "path": "work/R7/R7_EXACT_ENDPOINT_GATE.json",
+      "sha256": "829E041CC75F1D9F36A426DB97D701F6AABAE6E20ECAC17898EF9B5303B77406"
+    },
+    {
+      "path": "work/R7/Prepare-R7.ps1",
+      "sha256": "959A9BA73349A1597196E95728BCEF8E89F4D1A8F3B956A5609E7E54969C0A9F"
+    },
+    {
+      "path": "work/R7/signed_short/REQ_R7_0821_1605_X1.ready/PORTAL_REQUEST_MANIFEST.json",
+      "sha256": "EF542AACAAB0527580460C962FE2025808639F645B26C85226AF7398DEB51B7F"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

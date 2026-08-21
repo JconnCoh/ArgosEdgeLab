@@ -1,0 +1,56 @@
+{
+  "schema": "argos_fiducial_model_workflow_lock_v2",
+  "revision": "ARGOS_FIDUCIAL_MODEL_WORKFLOW_V2",
+  "date": "2026-08-18",
+  "disposition": "APPROVED_BASELINE",
+  "authority": "OPERATOR_REQUESTED_REUSABLE_METHOD_WITH_PFC004_SITE_BINDING_CORRECTION",
+  "workflow": {
+    "path": "work/ARGOS_FIDUCIAL_MODEL_WORKFLOW.md",
+    "sha256": "366E2ED82C47D83C18D82C7033AD7A8691107385BBBCE6091B2FE568653B6640"
+  },
+  "machineReadableWorkflow": {
+    "path": "work/ARGOS_FIDUCIAL_MODEL_WORKFLOW.json",
+    "sha256": "1787BBE811DE8F6D0089BC7D9F35BE1602013C3CE01569D3938A8073DF256BE4"
+  },
+  "runTemplate": {
+    "path": "work/templates/ARGOS_FIDUCIAL_MODEL_RUN.template.json",
+    "sha256": "0A0ECC5CE26766BA0A44A2B0AC0937D9A1F61F7242BDF8F0D22DF5394D84916F"
+  },
+  "preservedV1": {
+    "workflow": {
+      "path": "work/ARGOS_FIDUCIAL_MODEL_WORKFLOW_V1_LOCKED.md",
+      "sha256": "E128BD58E6901D40DEC04B6DA55451B27F7EFC062B138C2940138145CA22C63F"
+    },
+    "machineReadableWorkflow": {
+      "path": "work/ARGOS_FIDUCIAL_MODEL_WORKFLOW_V1_LOCKED.json",
+      "sha256": "C256838A8C9A8B8086D9AC2D77253FDFB6B750C3C0938EFB8B894A3B35600023"
+    },
+    "runTemplate": {
+      "path": "work/templates/ARGOS_FIDUCIAL_MODEL_RUN_V1_LOCKED.template.json",
+      "sha256": "D8AEBC1CE2EAB0F06C32FEC46B28A7C8FBF91F45A2555C5471C25A008AEB6636"
+    }
+  },
+  "v2Additions": {
+    "designatedSitePredictionFrozenBeforeValidationOutcome": true,
+    "exactlyOneRefinedCandidateInsideFrozenRadiusRequired": true,
+    "completeGeometryOutsideRadiusEligible": false,
+    "wholeCropExactlyOneCompleteGeometryIsPassCriterion": false,
+    "shortLineAcceptedCountAndContiguousGapRequired": true,
+    "residualAndWidthStatisticPopulationDeclared": true
+  },
+  "pfc004ExactDiagnosis": {
+    "path": "work/PATTERNED_FIDUCIAL_INVENTORY/analysis/PFC004_LT1A_EXACT_RESULT_DIAGNOSIS_V1.json",
+    "sha256": "D0618B252B41FDA12D2BD17881117B1C7F8B086C860B65060B1CE0AF82C664C9",
+    "originalWrongSitePassSlots": ["Slot06", "Slot10"],
+    "originalValidDesignatedSitePassCount": 0,
+    "candidateRevisionQualifiedDesignatedSites": 5,
+    "candidateRevisionHeldDesignatedSites": ["Slot09"],
+    "slot07NotchState": "HOLD_NOTCH_NOT_QUALIFIED",
+    "candidateRevisionAuthority": "DIAGNOSTIC_ONLY_NATIVE_REHEARSAL_REQUIRED"
+  },
+  "agentsEnforcementRequired": true,
+  "alignmentAuthorityGranted": false,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

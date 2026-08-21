@@ -1,0 +1,121 @@
+{
+  "schema": "argos_fiducial_model_run_v2",
+  "runId": "REQUIRED_SHORT_RUN_ID",
+  "workflowRevision": "ARGOS_FIDUCIAL_MODEL_WORKFLOW_V2",
+  "workflowPath": "work/ARGOS_FIDUCIAL_MODEL_WORKFLOW.json",
+  "workflowSha256": "1787BBE811DE8F6D0089BC7D9F35BE1602013C3CE01569D3938A8073DF256BE4",
+  "state": "PENDING_OPERATOR_TOPOLOGY_DESIGNATION",
+  "disposition": "PENDING_GATE",
+  "identity": {
+    "product": "REQUIRED",
+    "productRevision": "REQUIRED",
+    "processBlock": "REQUIRED",
+    "step": "REQUIRED",
+    "operation": "REQUIRED",
+    "appearanceRegimeId": "REQUIRED",
+    "topologyId": "REQUIRED_OR_PENDING_OPERATOR"
+  },
+  "evidencePartition": {
+    "designationDevelopmentPhysicalIdentities": [],
+    "calibrationPhysicalIdentities": [],
+    "independentValidationPhysicalIdentities": [],
+    "laterTransferPhysicalIdentities": [],
+    "validationTargetUsedForTuning": false
+  },
+  "topology": {
+    "operatorDesignationRequired": true,
+    "operatorFeedbackPath": null,
+    "operatorFeedbackSha256": null,
+    "lineInventoryPath": null,
+    "lineInventorySha256": null,
+    "cornerMaskPath": null,
+    "cornerMaskSha256": null,
+    "identityOnlyComponents": [],
+    "operatorStrokesArePixelTruth": false
+  },
+  "designatedSiteBinding": {
+    "predictionFrozenBeforeValidationOutcome": false,
+    "predictionInputs": ["QUALIFIED_NOTCH_POSE", "EXACT_MAP_OR_OPERATOR_DESIGNATION_RELATIONSHIP", "CROP_TRANSFORM", "CALIBRATION_LOCALIZATION_ERROR"],
+    "eligibilityRadiusPx": 0,
+    "eligibilityRadiusBasis": "REQUIRED",
+    "exactlyOneRefinedCandidateInsideRadiusRequired": true,
+    "completeGeometryOutsideRadiusEligible": false,
+    "zeroOrMultipleCandidatesInsideRadiusState": "HOLD_DESIGNATED_FIDUCIAL_SITE_AMBIGUOUS"
+  },
+  "nativeInputs": [
+    {
+      "physicalIdentity": "REQUIRED",
+      "slot": "REQUIRED",
+      "channel": "BF_OR_DF",
+      "path": "REQUIRED",
+      "sha256": "REQUIRED_BEFORE_PIXEL_SCORING",
+      "widthPx": 0,
+      "heightPx": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "notchPoseAudit": "REQUIRED",
+      "notchPoseAuditSha256": "REQUIRED"
+    }
+  ],
+  "calibration": {
+    "boundaryDirection": "GEOMETRIC_OUTSIDE_TO_INTENDED_INTERIOR",
+    "outsideGuardPx": 0,
+    "maximumSeedAssociationDistancePx": 0,
+    "endpointIgnoreAlongLinePx": 0,
+    "cornerProfileFootprintExcludedBeforePixelRead": true,
+    "sampleCardinalitySource": "NOMINAL_MODEL_LENGTH",
+    "signedPolarityFrozenPerChannelPerLine": true,
+    "lineGeometryFixedPointIterations": 0,
+    "lineInterceptAndSlopeFrozenBeforePoseSolve": true,
+    "poseUnknowns": ["GLOBAL_X", "GLOBAL_Y", "GLOBAL_THETA"],
+    "perCandidateLineRefitAllowed": false,
+    "bfDfPoseAveragingAllowed": false,
+    "thresholdChangesFromParent": []
+  },
+  "qualityGates": {
+    "minimumDirectSupportFraction": 0,
+    "minimumAcceptedSamplesPerLine": "REQUIRED_INTEGER_OR_EXACT_FORMULA",
+    "maximumUnsupportedSamplesPerLine": 0,
+    "maximumUnsupportedGapPx": 0,
+    "maximumFitResidualPx": 0,
+    "maximumP90ResponseWidthPx": 0,
+    "residualStatisticPopulation": "REQUIRED_FOUND_OR_ACCEPTED_EXACT_SET",
+    "responseWidthStatisticPopulation": "REQUIRED_FOUND_OR_ACCEPTED_EXACT_SET",
+    "maximumRigidRmsPx": 0,
+    "minimumJointRank": 3,
+    "maximumConditionProxy": 0,
+    "maximumBfDfCenterDifferencePx": 0,
+    "maximumBfDfAngleDifferenceDegrees": 0
+  },
+  "internalVerification": {
+    "allMandatoryLinesPassBothChannels": false,
+    "acceptedPolarityViolationCount": null,
+    "disjointSampleCrossValidationPass": false,
+    "commonNominalPosePerturbationPass": false,
+    "lineOrderInvariancePass": false,
+    "boundedLeaveoutPass": false,
+    "leaveoutGateSpace": "FULL_FROZEN_MODEL_NATIVE_PIXEL_DISPLACEMENT",
+    "leaveoutMaximumDisplacementPx": null,
+    "leaveoutMaximumDisplacementBasis": null,
+    "nominalCardinalityInvariancePass": false,
+    "ignoredCornerPixelMutationInvariancePass": false,
+    "repeatingPatternLookalikesRejected": false,
+    "designatedSiteBindingMutationPass": false,
+    "outsideRadiusCompleteInstancesRemainIneligible": false
+  },
+  "independentValidation": {
+    "frozenNoTuning": true,
+    "sameStage": true,
+    "siteBound": true,
+    "targetResults": [],
+    "completeIndependentPositiveCount": 0,
+    "completeIndependentDesignatedSitePositiveCount": 0,
+    "operatorPresentationAllowed": false
+  },
+  "authority": {
+    "alignmentAuthorityGranted": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false
+  }
+}

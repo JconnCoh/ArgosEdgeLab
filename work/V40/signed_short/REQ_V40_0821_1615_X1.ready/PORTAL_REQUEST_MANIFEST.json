@@ -1,0 +1,48 @@
+{
+    "schema":  "argos_project_portal_request_manifest_v1",
+    "requestId":  "REQ_V40_0821_1615_X1",
+    "createdUtc":  "2026-08-21T16:12:14.1905683+00:00",
+    "expiresUtc":  "2026-08-22T16:12:14.1905683+00:00",
+    "targetRole":  "JBOD",
+    "jobClass":  "MAINTENANCE_PATCH",
+    "handler":  "",
+    "maxResultBytes":  4194304,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false,
+    "credentialsIncluded":  false,
+    "signerThumbprint":  "C82181052919C475CF888F49427C1B55AE65DC12",
+    "signatureAlgorithm":  "RSA-SHA256-PKCS1",
+    "files":  [
+                  {
+                      "path":  "payload/C2V.ps1",
+                      "bytes":  23799,
+                      "sha256":  "B0F0A41CE346A24C76BC89A4741110A6A2A36448E0D9CE87315FCDEC47657A94"
+                  },
+                  {
+                      "path":  "payload/PROCESSOR_CONFIG.json",
+                      "bytes":  1964,
+                      "sha256":  "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"
+                  }
+              ],
+    "entryPoint":  "payload/C2V.ps1",
+    "changes":  [
+                    {
+                        "source":  "payload/PROCESSOR_CONFIG.json",
+                        "destination":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json",
+                        "installedSha256":  "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8",
+                        "approvedPredecessorSha256":  [
+                                                          "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"
+                                                      ]
+                    }
+                ],
+    "allowedTaskActions":  [
+
+                           ],
+    "rehearsal":  {
+                      "required":  true,
+                      "state":  "PASS_C2V35_BOUNDED_LIVE_SNAPSHOT"
+                  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "argos_gateway_context_audit_final_package_gate_v1",
+  "revision": "GATEWAY_CONTEXT_AUDIT_V1",
+  "createdUtc": "2026-08-17T17:52:53.3127910Z",
+  "state": "PASS_GATEWAY_CONTEXT_AUDIT_V1_RELEASE_GATE",
+  "package": {
+    "path": "work/ARGOS_GATEWAY_CONTEXT_AUDIT_V1.zip",
+    "bytes": 8846,
+    "sha256": "F4A736FA9F80FD20ADF6EBAB80670290F7FAADB03D2F348749517518A6C310F0",
+    "fileCount": 7
+  },
+  "manifest": {
+    "path": "work/GWA1/PACKAGE_MANIFEST.json",
+    "sha256": "3EC123815E058E4C699F4A78B221D95577D2EB839353A7BB5A3584CC5314FF70",
+    "declaredPayloadFileCount": 6,
+    "allDeclaredHashesVerifiedBeforeZip": true,
+    "allDeclaredHashesVerifiedAfterZipExtraction": true
+  },
+  "pinnedFiles": {
+    "auditScriptSha256": "3893CF34145F43EB64A4391CD41A47AEF5DC86EB8DCAC09D2C982A2DA6F30EBB",
+    "runWrapperSha256": "915F177266F5A4E29A0F34B4FFAC991F473D5060132CC5709650FB5666B00C69",
+    "preflightWrapperSha256": "1808CBD7AC077900A7EBE7DDDB844A6444C852F5557DAB4D92520F25D5E0DE6D",
+    "invocationManifestSha256": "C18389E5C49D94F0AF63DCC48FDB1176EA5AEB122B3C101C0B730DCDD3D23287"
+  },
+  "gates": {
+    "pathBudget": "PASS_PATH_BUDGET",
+    "sourceWrapperPreflights": 2,
+    "extractedWrapperPreflights": 2,
+    "exactFinalZipRehearsal": "PASS_EXACT_FINAL_ZIP_REHEARSAL",
+    "functionalChecksPassed": 7,
+    "freshOutputCollisionRefused": true
+  },
+  "auditAuthority": {
+    "gatewayConfigurationMutationAllowed": false,
+    "scheduledTaskMutationAllowed": false,
+    "portalRequestExecutionAllowed": false,
+    "credentialsRead": false,
+    "secretsRead": false,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  }
+}

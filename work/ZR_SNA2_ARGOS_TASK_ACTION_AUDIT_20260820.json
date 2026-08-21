@@ -1,0 +1,36 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v1",
+  "revision":"SNA2_ARGOS_TASK_ACTION_AUDIT_20260820T193900Z",
+  "createdUtc":"2026-08-20T19:39:00.0000000Z",
+  "state":"PASS_PREACTION_CONTRACT",
+  "actionType":"SIGN_PUBLISH_AND_VERIFY_READ_ONLY_ARGOS_TASK_ACTION_AND_VISUAL_CONTRACT_AUDIT",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"FCEFDACDF0C750B1537B6D30535B7AC1ACD44F038498FF8B2B987F7AB1D04E0E",
+  "dependencies":[
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"1886029E1C118D913CFF5AF8667E62244D8AD7740CE89784823023560822AE52"},
+    {"path":"work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md","sha256":"11BBA547C18E1D2F8DE41F31488D48C4CD8BFFCA4B7F9EA0D993F5F879800ACB"},
+    {"path":"work/ARGOS_PATH_LENGTH_SAFETY.md","sha256":"BEED1B1F76EEA75E1DDEC102CF1C9ABD7F72BFAC816CAF6D15925700C428ED01"},
+    {"path":"work/ARGOS_POWERSHELL_HARNESS_SAFETY.md","sha256":"E8850BC23C897F1182EE820F4B19294DD175B629A70F47FBE712BC527C1687F9"},
+    {"path":"snp4/payload/D2.ps1","sha256":"CE56EF15624AEB72048B20D380A4C45E370E6FF8E719681A1F33954DFA0E2312"},
+    {"path":"snp4/definition.json","sha256":"CBFDFC3D399FCB01746FC16AA17667590F3BD8F96C83DAB79F2EA36467E6797B"},
+    {"path":"snp3/inbox/R_B56EB5725EFE_20260820193611756.ready/PORTAL_RESPONSE_MANIFEST.json","sha256":"0DB596D843C0C5853514C1E796F6BB400EFDA7E36D4D380235FB5058B170F9AC"},
+    {"path":"snp3/inbox/R_B56EB5725EFE_20260820193611756.ready/MAINTENANCE.stdout.txt","sha256":"3D2056CD769FBAC87D865EDF7FB71BDE902296D184BB0116080AAFC18A46C25C"},
+    {"path":"snp2/New-SignedPortalPackageV2.ps1","sha256":"0F63A186FEEE28709EC5F55A07B98A4C2F04F5F589E1C73F7854DD009585345C"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/ARGOS_ENDPOINT_SIGNER.cer","sha256":"ED1AD2F0AB8377EF8303EB67947B7B86B074F318F90163A87BFD7DF03C978CB7"},
+    {"path":"snp3/Publish.ps1","sha256":"B49AEE818E6A5AF77BAB365D5C9F402FE80BA954667D4A2ACF585CCBCC0305DE"},
+    {"path":"snp4/final/PREPUBLICATION_PATH_GATE.json","sha256":"56993116FB2705DF2748B0DE6D27FBECC12FCE631159273F31C9B9E839CDCC8A"},
+    {"path":"snp4/final/REQ_20260820T193917261Z_D69295338650.ready.zip","sha256":"BF1EBA5C4D228B6B56C1AC9C1258E3321F74BA5348DDF8146D19F030A39CFA33"}
+  ],
+  "controls":{
+    "valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,
+    "installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,
+    "windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,
+    "zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,
+    "declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,
+    "queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true,
+    "priorArgosRequestHasSignedTerminalResponse":true,"diagnosticTaskMutationAllowed":false,"manualOperatorExecutionRequired":false,
+    "publisherPreflightPassedWithoutWrites":true,"requestQueueStateNew":true,"exactFinalZipHashPinned":true
+  },
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":[]},
+  "reviewOnly":true,"productionRoutingEnabled":false
+}

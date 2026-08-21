@@ -1,0 +1,69 @@
+{
+    "schema":  "argos_r8_final_package_gate_v1",
+    "createdUtc":  "2026-08-21T16:30:43.9305225Z",
+    "state":  "PASS_R8_FINAL_PACKAGE_GATE",
+    "requestId":  "REQ_R8",
+    "requestZip":  "work/R8/final/REQ_R8.ready.zip",
+    "requestZipBytes":  8706,
+    "requestZipSha256":  "0F1597BDBE5DBA29CC5123D580D7F1B3B85D0A170A2F86B17E8D2F0EDF9C88A0",
+    "requestManifestSha256":  "3174326BBA1813189BA2F6E4662B6DD95DDE7F68F8408FCEA91C47649E8A3FF6",
+    "requestSignatureSha256":  "A0026D2F98ED9FA7511C0D5D3774C9C965309BEBADAD5D06BEDBE1674555C54B",
+    "entryPointSha256":  "3B5FE09081FC4545420B16874D675525A3647785EFD4B1294562ABEE18E6BEC4",
+    "targetSha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+    "exactFinalZipExtractionPassed":  true,
+    "exactFinalZipSignaturePassed":  true,
+    "legacyBehaviorHarnessUsed":  false,
+    "preFinalEndpointGateSha256":  "2948500006219D76251C58FC56CC4C56B50AA601248D84648A8006AFA059F98C",
+    "finalExtractedEndpointGateSha256":  "9E7C223DF934AD1760A3A0F2B3EA101E952A582DC35CDA8216E825D841395B3F",
+    "scriptRows":  [
+                       {
+                           "file":  "work/R8/New-C2RRequest.ps1",
+                           "sha256":  "C95D6533EC544AADB073CAE02A9FE631B03839EDBF2F7FFD7306BC6C3F6DEA1B"
+                       },
+                       {
+                           "file":  "work/R8/Test-C2RExactEndpoint.ps1",
+                           "sha256":  "FC9A02BDE0394FC65728D2915024B34E3E8C108EDF4A6918F09BD3415DC45C7E"
+                       },
+                       {
+                           "file":  "work/R8/Test-C2RRoutes.ps1",
+                           "sha256":  "F5706928A739E1F4405E7218DF84C3607AE37114BF3F09230722200339CC352E"
+                       },
+                       {
+                           "file":  "work/R8/Build-C2RFinal.ps1",
+                           "sha256":  "D4A4DA128CB38ACA007B5CE366157B9FF55FA504B05ACCF45AF820878D08369D"
+                       },
+                       {
+                           "file":  "work/R8/pkg/payload/C2R.ps1",
+                           "sha256":  "3B5FE09081FC4545420B16874D675525A3647785EFD4B1294562ABEE18E6BEC4"
+                       },
+                       {
+                           "file":  "work/R8/pkg/payload/Run-JbodAllWaferProcessor.ps1",
+                           "sha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+                       }
+                   ],
+    "approvedOldPredecessorExercised":  true,
+    "targetIdempotenceAccepted":  true,
+    "unapprovedPredecessorRefusedBeforeMutation":  true,
+    "runtimeVerifierFailureRolledBack":  true,
+    "controlAfterRuntimeFailurePassed":  true,
+    "responseSignaturesVerified":  5,
+    "completeRouteGateSha256":  "36D56372C4B225C3F4F96E3587E996A7856F5A59EC6120E58152D734EA223B69",
+    "completeRoutePathCount":  127,
+    "maximumRouteEffectiveLength":  187,
+    "maximumRouteComponentLength":  51,
+    "reservedSuffixCharacters":  32,
+    "installedRouteRootSetSha256":  "2D1DFA2D56F525395BE871B206EDD7649C77D1E1EA47B940332165E5F3F65BAE",
+    "transportRevisionSha256":  "843629F44D8C310FAE201EAD808509FBECF3FC3C04D8D16B0D67CCADEFAE2DDB",
+    "exactEndpointWorkerSha256":  "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+    "laptopResponseExtractionRoot":  "C:\\R8S",
+    "priorTerminalResponseId":  "R_CB3CDBA6F0B8_20260821161419288_ddf4e3bc",
+    "allowedTaskActions":  [
+                               "RESTART:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2"
+                           ],
+    "sourceDeletionPerformed":  false,
+    "otherInspectionTasksChanged":  false,
+    "waferAborted":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false,
+    "publicationAuthorized":  true
+}

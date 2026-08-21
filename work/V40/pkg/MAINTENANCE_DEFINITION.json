@@ -1,0 +1,22 @@
+{
+  "schema": "argos_project_portal_maintenance_definition_v1",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "entryPoint": "payload/C2V.ps1",
+  "maxResultBytes": 4194304,
+  "changes": [
+    {
+      "source": "payload/PROCESSOR_CONFIG.json",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json",
+      "installedSha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8",
+      "approvedPredecessorSha256": [
+        "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"
+      ]
+    }
+  ],
+  "allowedTaskActions": [],
+  "rehearsal": {
+    "required": true,
+    "state": "PASS_C2V35_BOUNDED_LIVE_SNAPSHOT"
+  }
+}

@@ -1,0 +1,43 @@
+{
+    "schema":  "argos_project_portal_request_manifest_v1",
+    "requestId":  "REQ_R7_0821_1605_X1",
+    "createdUtc":  "2026-08-21T16:05:21.4135117+00:00",
+    "expiresUtc":  "2026-08-22T16:05:21.4135117+00:00",
+    "targetRole":  "JBOD",
+    "jobClass":  "MAINTENANCE_PATCH",
+    "handler":  "",
+    "maxResultBytes":  2097152,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false,
+    "credentialsIncluded":  false,
+    "signerThumbprint":  "C82181052919C475CF888F49427C1B55AE65DC12",
+    "signatureAlgorithm":  "RSA-SHA256-PKCS1",
+    "files":  [
+                  {
+                      "path":  "payload/R7.ps1",
+                      "bytes":  9339,
+                      "sha256":  "A6A373457FA0F435BD0D351AE290175A29D50B8EA24F00246C7A5177B2798173"
+                  }
+              ],
+    "entryPoint":  "payload/R7.ps1",
+    "changes":  [
+                    {
+                        "source":  "payload/R7.ps1",
+                        "destination":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\hotfixes\\R7.ps1",
+                        "approvedPredecessorSha256":  [
+                                                          "A6A373457FA0F435BD0D351AE290175A29D50B8EA24F00246C7A5177B2798173"
+                                                      ],
+                        "installedSha256":  "A6A373457FA0F435BD0D351AE290175A29D50B8EA24F00246C7A5177B2798173",
+                        "allowCreate":  true
+                    }
+                ],
+    "allowedTaskActions":  [
+
+                           ],
+    "rehearsal":  {
+                      "requiredState":  "PASS_R7_EXACT_PROCESSED_RESPONSE_REIMPORTED"
+                  }
+}

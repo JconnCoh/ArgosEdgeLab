@@ -1,0 +1,61 @@
+{
+  "schema": "argos_project_portal_jbod_queue_recovery_final_package_gate_v2",
+  "createdUtc": "2026-08-17T16:51:00Z",
+  "state": "PASS_FINAL_ZIP_EXACT_PACKAGED_REHEARSAL",
+  "revision": "ARGOS_PROJECT_PORTAL_JBOD_QUEUE_RECOVERY_V2_20260817",
+  "zip": {
+    "path": "work/ARGOS_JBOD_PORTAL_QUEUE_RECOVERY_V2.zip",
+    "bytes": 29060,
+    "sha256": "5F87FAE1841F5D60E0716778F4CB284EE8533E4A997B9047EE899CDEA8486DC5",
+    "freshExtractionRoot": "C:/AR2Z",
+    "freshExtractionDeletedAfterPass": true,
+    "manifestFileCount": 9,
+    "manifestHashAndSizeVerification": "PASS"
+  },
+  "packageManifest": {
+    "pathInsideZip": "PACKAGE_MANIFEST.json",
+    "bytes": 1900,
+    "sha256": "F06488B74D2ECDE97AEDAA5E1E6D65C22F74BAF464B098C22B1850AA597C48E0",
+    "selfExcluded": true
+  },
+  "exactPackagedRehearsal": {
+    "path": "work/ARGOS_JBOD_PORTAL_QUEUE_RECOVERY_V2.REHEARSAL_PASS.json",
+    "bytes": 2775,
+    "sha256": "3A559C4E0487D5F3352AD93CDA5E54723DC8B6D3C0C6943A51027B7222BF1049",
+    "state": "PASS_JBOD_PORTAL_QUEUE_RECOVERY_V2_REHEARSAL",
+    "checkCount": 11,
+    "windowsPowerShell51": true,
+    "approvedPredecessorsExercised": [
+      "CBB1D168DACF392259C93898D8CE725BED7C917571937207757423A05FAC4DE0"
+    ],
+    "targetHashIdempotencyExercised": "64F1BFA34A2F54F6D84D14C5D91BC270346E88E3D95E2E303C0A858206E770B2",
+    "unapprovedHashRefusedBeforeMutation": true,
+    "rollbackExercised": true,
+    "restartExercised": true,
+    "secondQueuedRequestExercised": true,
+    "compactFailureResponseExercised": true,
+    "sourcePathAndHashPreservationExercised": true
+  },
+  "pathGate": {
+    "path": "work/ARGOS_JBOD_PORTAL_QUEUE_RECOVERY_V2.PATH_PREFLIGHT.json",
+    "bytes": 1660,
+    "sha256": "24FBB8C4CC91FA00AF88C3EAF4C09FB9115B577DAB33893719C7B1010663B25B",
+    "state": "PASS_PATH_BUDGET",
+    "reservedSuffixCharacters": 32,
+    "shareZipViaVerifiedShortMapping": "U:/ARGOS_JBOD_PORTAL_QUEUE_RECOVERY_V2.zip"
+  },
+  "wrapperGates": {
+    "runRecovery": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "preflightOnly": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "arbitraryArgumentForwarding": false,
+    "startProcessWrapperHop": false
+  },
+  "requestId": "REQ_20260816T033053168Z_802B9D0EC0B4",
+  "duplicateRequestCreated": false,
+  "detectorScribeInsiteMonitorTasksChanged": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

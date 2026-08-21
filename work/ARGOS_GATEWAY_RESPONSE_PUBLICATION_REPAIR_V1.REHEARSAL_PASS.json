@@ -1,0 +1,30 @@
+{
+  "schema": "argos_gateway_response_publication_repair_rehearsal_pass_v1",
+  "revision": "GATEWAY_RESPONSE_PUBLICATION_REPAIR_V1",
+  "checkedUtc": "2026-08-17T18:11:45.3751334Z",
+  "state": "PASS_EXACT_FINAL_ZIP_GATEWAY_REPAIR_REHEARSAL",
+  "zipSha256": "049E65ED47D0F7E7120811F300F96007C669A5E2AC8054368ADBC4656D89551A",
+  "zipBytes": 21479,
+  "extractRoot": "C:/GRZ/X1",
+  "fixtureRoot": "C:/GRZ/T1",
+  "extractedFileCount": 10,
+  "manifestVerified": true,
+  "exactInstalledPredecessorCopiesExercised": 2,
+  "wrapperPreflightPassCount": 2,
+  "windowsPowerShellVersion": "5.1",
+  "functionalState": "PASS_GATEWAY_RESPONSE_PUBLICATION_REPAIR_REHEARSAL",
+  "functionalChecksPassed": 8,
+  "controls": [
+    "PREFLIGHT_NON_MUTATING",
+    "APPROVED_PREDECESSOR_APPLY",
+    "TASK_CONTEXT_ALIAS_WRITE_PROOF",
+    "ONLY_SHARE_TASK_RESTARTED",
+    "IDEMPOTENT_ACCEPTANCE",
+    "UNAPPROVED_HASH_REFUSED_BEFORE_MUTATION",
+    "ALIAS_COLLISION_REFUSED",
+    "INJECTED_FAILURE_EXACT_ROLLBACK"
+  ],
+  "responseReceiverTaskMutated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

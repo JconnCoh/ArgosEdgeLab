@@ -1,0 +1,125 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-21T16:11:08.8365526Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\V40\\CLONE_REMEDIATION_C2V40.json",
+    "manifestSha256":  "D341F0785344A501506B4A18FFDF2C2735FE9A2D1BC9264BDF617F33724FD62D",
+    "pairCount":  6,
+    "pairs":  [
+                  {
+                      "source":  "work/V39/New-C2V39Request.ps1",
+                      "generated":  "work/V40/New-C2V40Request.ps1",
+                      "sourceSha256":  "DB7B0C6D8718263AF31E18DC3720F64F38D7C8A90C7764C99027163A03AED097",
+                      "generatedSha256":  "4D901C35CFB607C2015EE86F88A0C471CC962477D0A4DFAB3DA3E7E8112E406F",
+                      "sourceRoots":  [
+                                          "C:\\Users"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\Users"
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/V39/Prepare-C2V39.ps1",
+                      "generated":  "work/V40/Prepare-C2V40.ps1",
+                      "sourceSha256":  "655202F217D95BD353044EC2ECF47AC498EBCDCA905E7CDCDEC6E179B3EF36CF",
+                      "generatedSha256":  "78DC6907AEBE075390673529974DDDFFBD85547AD5AA7F5959C0C6B839662CB9",
+                      "sourceRoots":  [
+                                          "C:\\APR",
+                                          "C:\\ProgramData",
+                                          "C:\\Users",
+                                          "C:\\V39S1",
+                                          "C:\\V39Z1",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\APR",
+                                             "C:\\ProgramData",
+                                             "C:\\Users",
+                                             "C:\\V40S1",
+                                             "C:\\V40Z1",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  6
+                  },
+                  {
+                      "source":  "work/V39/Publish-C2V39.ps1",
+                      "generated":  "work/V40/Publish-C2V40.ps1",
+                      "sourceSha256":  "2E5AB756C5DAA1E86CD17DD7E63D44F4218DEBB2CECF461A9C64FC3B1F121D20",
+                      "generatedSha256":  "1C7C60E57D3F45199F9FD370503DEBDAAF9FC65E05F2E953F4F2CEDE94A7732C",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "C:\\Users",
+                                          "C:\\V39P2",
+                                          "I:\\ProjectPortalRO",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "C:\\Users",
+                                             "C:\\V40P2",
+                                             "I:\\ProjectPortalRO",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  5
+                  },
+                  {
+                      "source":  "work/V39/Collect-C2V39Response.ps1",
+                      "generated":  "work/V40/Collect-C2V40Response.ps1",
+                      "sourceSha256":  "95DCB9423260630DB1431E567EB24A2FC3285F31EF85C9BBB205AD2367C044E9",
+                      "generatedSha256":  "3EBF3C02755BEA08AA459F826EC501DE1784D9F02592CA09DD21A68201685DC3",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "C:\\Users",
+                                          "C:\\V39S1",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "C:\\Users",
+                                             "C:\\V40S1",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  4
+                  },
+                  {
+                      "source":  "work/V39/Test-C2V39ExactEndpoint.ps1",
+                      "generated":  "work/V40/Test-C2V40ExactEndpoint.ps1",
+                      "sourceSha256":  "C7813EB2B91865909BA37EFBF7E6D4B02AB10C89C10F08055A21B1D82F951394",
+                      "generatedSha256":  "45E5C1826540C16D3655D45A99ADD2A8B69CDEEF438D1BA665947C3EA5F8F138",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "C:\\Users",
+                                          "C:\\V39E1",
+                                          "D:\\A2"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "C:\\Users",
+                                             "C:\\V40E1",
+                                             "D:\\A2"
+                                         ],
+                      "ruleCount":  4
+                  },
+                  {
+                      "source":  "work/V39/pkg/payload/C2V.ps1",
+                      "generated":  "work/V40/pkg/payload/C2V.ps1",
+                      "sourceSha256":  "B0F0A41CE346A24C76BC89A4741110A6A2A36448E0D9CE87315FCDEC47657A94",
+                      "generatedSha256":  "B0F0A41CE346A24C76BC89A4741110A6A2A36448E0D9CE87315FCDEC47657A94",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData"
+                                         ],
+                      "ruleCount":  1
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

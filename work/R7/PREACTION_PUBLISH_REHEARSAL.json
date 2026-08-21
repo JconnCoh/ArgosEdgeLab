@@ -1,0 +1,37 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v1",
+  "revision": "R7_PUBLISH_REHEARSAL_20260821",
+  "createdUtc": "2026-08-21T16:07:37.7184238Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "REHEARSE_R7_CREATE_NEW_PUBLICATION",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "371FD41B6719C9FA20B6D4CC6CADE26A4904683C267334ABAF5A38D18EAC0883",
+  "dependencies": [
+    { "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "A774F1B7B11659D0308468A43D5567C302C6CE0869BD24F88D637246116088A6" },
+    { "path": "work/R7/Publish-R7.ps1", "sha256": "98D1D54E6D513DC9C0BE81CC7D8D1EFB8D996204DFF309B5B92E8940CEA3F471" },
+    { "path": "work/R7/final/REQ_R7_0821_1605_X1.ready.zip.gate.json", "sha256": "AA347AD6BC991F48E321F3306D23B84F3AA7152044A51EE24558A773D787905D" },
+    { "path": "work/R6/R6_TERMINAL_RESPONSE_GATE.json", "sha256": "25618862C9A0ED1A7359DF95807380D2894EA80EA83C4665D02D2B5BF5E30626" }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "legacyEvidenceException": { "used": false, "newExecutionAuthorized": false, "futureReuseAllowed": false, "blockedArtifacts": [] },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

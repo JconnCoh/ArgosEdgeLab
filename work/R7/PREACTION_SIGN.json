@@ -1,0 +1,66 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v1",
+  "revision": "R7_SIGN_OPTIONAL_CONFIG_FIELD_20260821",
+  "createdUtc": "2026-08-21T16:05:18.3094639Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "SIGN_R7_CONFIGURED_METADATA_ROOT_REPLAY_WITH_ABSENT_OPTIONAL_FIELD_SUPPORT",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "371FD41B6719C9FA20B6D4CC6CADE26A4904683C267334ABAF5A38D18EAC0883",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "A774F1B7B11659D0308468A43D5567C302C6CE0869BD24F88D637246116088A6"
+    },
+    {
+      "path": "work/R7/CLONE_GATE_R7.json",
+      "sha256": "61AE55EFE2B65687284A7915F976D33D854164BBCF22FAC913D7DD5537035078"
+    },
+    {
+      "path": "work/R7/R7_HARNESS_GATE.json",
+      "sha256": "3C5787568F7E4EE524ADFAB376DBBB76B85DDD49CC6E59B4CEDDAFF64712480D"
+    },
+    {
+      "path": "work/R7/New-R7Request.ps1",
+      "sha256": "94FE7AAA78BA916F361B9566BA729801C346A7A044F3931BD5A35E014246875C"
+    },
+    {
+      "path": "work/R7/pkg/MAINTENANCE_DEFINITION.json",
+      "sha256": "A0C2E3D62751C4AD63472624C76F528451EC92B5D7FD27FD606AA89696102BF6"
+    },
+    {
+      "path": "work/R7/pkg/payload/R7.ps1",
+      "sha256": "A6A373457FA0F435BD0D351AE290175A29D50B8EA24F00246C7A5177B2798173"
+    },
+    {
+      "path": "work/R6/R6_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "25618862C9A0ED1A7359DF95807380D2894EA80EA83C4665D02D2B5BF5E30626"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

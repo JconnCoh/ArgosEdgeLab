@@ -1,0 +1,82 @@
+{
+  "schema": "argos_patterned_wafer_registration_best_practice_v1",
+  "revision": "PATTERNED_WAFER_REGISTRATION_BP_V1",
+  "date": "2026-08-15",
+  "disposition": "APPROVED_BASELINE",
+  "authority": "OPERATOR_APPROVED_REVIEW_ONLY_METHOD_BASELINE",
+  "fiducialModelWorkflow": {
+    "revision": "ARGOS_FIDUCIAL_MODEL_WORKFLOW_V1",
+    "path": "work/ARGOS_FIDUCIAL_MODEL_WORKFLOW.json",
+    "sha256": "265617A5115C08C430752631E40B2940BB6EC663530DCC68098F0B6F0E8A4095",
+    "runTemplate": "work/templates/ARGOS_FIDUCIAL_MODEL_RUN.template.json",
+    "runTemplateSha256": "FAB4226F2C4DCD88BEA3F9CE6DC7300D6F0208E0111258207221180F39DADD41",
+    "requiredBeforeRegistration": true
+  },
+  "productionRegistrationAuthorized": false,
+  "xmlAuthorized": false,
+  "detectorMaskChangeAuthorized": false,
+  "sequence": [
+    "QUALIFY_PHYSICAL_NOTCH_MACRO_POSE_AND_HANDEDNESS",
+    "NOMINATE_BOUNDED_FIDUCIAL_SEARCH_REGION",
+    "IDENTIFY_SPECIFIC_NONREPEATING_FIDUCIAL_TOPOLOGY",
+    "SOLVE_NATIVE_BF_X_Y_THETA_FROM_ORTHOGONAL_STRAIGHT_BOUNDARIES",
+    "SOLVE_NATIVE_DF_X_Y_THETA_FROM_ORTHOGONAL_STRAIGHT_BOUNDARIES",
+    "VERIFY_DISTRIBUTED_MULTI_FIDUCIAL_DIE_PM_PHASE",
+    "SELECT_TARGET_EXCLUDED_TOPOLOGY_MATCHED_PEERS",
+    "BUILD_INDEPENDENT_BF_AND_DF_ROBUST_REFERENCES",
+    "SAMPLE_REFERENCES_INTO_UNCHANGED_LIVE_NATIVE_FRAMES",
+    "AUDIT_POSITIVE_AND_NORMAL_EDGE_CONTROLS"
+  ],
+  "channelContract": {
+    "bfTransformSource": "BF_ONLY",
+    "dfTransformSource": "DF_ONLY",
+    "forceBfDfAgreement": false,
+    "liveSourceResampledBeforeScoring": false,
+    "scaleX": 1,
+    "scaleY": 1
+  },
+  "geometryContract": {
+    "poseEvidence": "SUSTAINED_HIGH_CONTRAST_STRAIGHT_BOUNDARIES_IN_TWO_ORTHOGONAL_DIRECTIONS",
+    "boundarySelection": "FIRST_STABLE_PHYSICAL_BOUNDARY_FROM_GEOMETRIC_OUTSIDE_TO_DARK_INTERIOR",
+    "softCurvesPoseWeight": 0,
+    "circlesMayBeIdentityOnly": true,
+    "faintInternalLinesEligible": false,
+    "fillBrokenLines": false
+  },
+  "requiredFitEvidence": [
+    "FIDUCIAL_IDENTITY",
+    "BOUNDED_SEARCH_REGION",
+    "DIRECT_SUPPORT_FRACTION",
+    "MAXIMUM_UNSUPPORTED_GAP_PX",
+    "FIT_RESIDUAL_PX",
+    "RESPONSE_WIDTH_PX",
+    "TRANSLATION_X_Y",
+    "THETA",
+    "NONZERO_WHOLE_DIE_PM_ALIAS_DISTANCE",
+    "MULTI_SITE_PHASE_TOPOLOGY_CONSISTENCY"
+  ],
+  "compositeContract": {
+    "targetExcluded": true,
+    "sameStructuralClassRequired": true,
+    "nullWithNull": true,
+    "patternedWithPatterned": true,
+    "channelSpecific": true,
+    "morePeersBeforeGeometryPassEligible": false
+  },
+  "frontMetalV17QualifiedExample": {
+    "straightBoundaryCount": 6,
+    "longBarEdges": 2,
+    "orthogonalSideFeatureEdges": 4,
+    "circleStemIdentityComponents": 4,
+    "circleStemPoseWeight": 0,
+    "s26BfDirectSupport": {
+      "acceptedSamples": 74,
+      "expectedSamples": 78,
+      "fraction": 0.9487179487179487,
+      "isolatedOnePixelGaps": 4,
+      "autonomousGatePass": false,
+      "boundedDiagnosticAcceptedByOperator": true
+    }
+  },
+  "failClosedState": "HOLD_PATTERNED_WAFER_REGISTRATION_NOT_QUALIFIED"
+}

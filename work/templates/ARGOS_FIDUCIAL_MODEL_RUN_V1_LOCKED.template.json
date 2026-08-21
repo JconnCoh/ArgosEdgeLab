@@ -1,0 +1,104 @@
+{
+  "schema": "argos_fiducial_model_run_v1",
+  "runId": "REQUIRED_SHORT_RUN_ID",
+  "workflowRevision": "ARGOS_FIDUCIAL_MODEL_WORKFLOW_V1",
+  "workflowPath": "work/ARGOS_FIDUCIAL_MODEL_WORKFLOW.json",
+  "workflowSha256": "C256838A8C9A8B8086D9AC2D77253FDFB6B750C3C0938EFB8B894A3B35600023",
+  "state": "PENDING_OPERATOR_TOPOLOGY_DESIGNATION",
+  "disposition": "PENDING_GATE",
+  "identity": {
+    "product": "REQUIRED",
+    "productRevision": "REQUIRED",
+    "processBlock": "REQUIRED",
+    "step": "REQUIRED",
+    "operation": "REQUIRED",
+    "appearanceRegimeId": "REQUIRED",
+    "topologyId": "REQUIRED_OR_PENDING_OPERATOR"
+  },
+  "evidencePartition": {
+    "designationDevelopmentPhysicalIdentities": [],
+    "calibrationPhysicalIdentities": [],
+    "independentValidationPhysicalIdentities": [],
+    "laterTransferPhysicalIdentities": [],
+    "validationTargetUsedForTuning": false
+  },
+  "topology": {
+    "operatorDesignationRequired": true,
+    "operatorFeedbackPath": null,
+    "operatorFeedbackSha256": null,
+    "lineInventoryPath": null,
+    "lineInventorySha256": null,
+    "cornerMaskPath": null,
+    "cornerMaskSha256": null,
+    "identityOnlyComponents": [],
+    "operatorStrokesArePixelTruth": false
+  },
+  "nativeInputs": [
+    {
+      "physicalIdentity": "REQUIRED",
+      "slot": "REQUIRED",
+      "channel": "BF_OR_DF",
+      "path": "REQUIRED",
+      "sha256": "REQUIRED_BEFORE_PIXEL_SCORING",
+      "widthPx": 0,
+      "heightPx": 0,
+      "scaleX": 1,
+      "scaleY": 1,
+      "notchPoseAudit": "REQUIRED",
+      "notchPoseAuditSha256": "REQUIRED"
+    }
+  ],
+  "calibration": {
+    "boundaryDirection": "GEOMETRIC_OUTSIDE_TO_INTENDED_INTERIOR",
+    "outsideGuardPx": 0,
+    "maximumSeedAssociationDistancePx": 0,
+    "endpointIgnoreAlongLinePx": 0,
+    "cornerProfileFootprintExcludedBeforePixelRead": true,
+    "sampleCardinalitySource": "NOMINAL_MODEL_LENGTH",
+    "signedPolarityFrozenPerChannelPerLine": true,
+    "lineGeometryFixedPointIterations": 0,
+    "lineInterceptAndSlopeFrozenBeforePoseSolve": true,
+    "poseUnknowns": ["GLOBAL_X", "GLOBAL_Y", "GLOBAL_THETA"],
+    "perCandidateLineRefitAllowed": false,
+    "bfDfPoseAveragingAllowed": false,
+    "thresholdChangesFromParent": []
+  },
+  "qualityGates": {
+    "minimumDirectSupportFraction": 0,
+    "maximumUnsupportedGapPx": 0,
+    "maximumFitResidualPx": 0,
+    "maximumP90ResponseWidthPx": 0,
+    "maximumRigidRmsPx": 0,
+    "minimumJointRank": 3,
+    "maximumConditionProxy": 0,
+    "maximumBfDfCenterDifferencePx": 0,
+    "maximumBfDfAngleDifferenceDegrees": 0
+  },
+  "internalVerification": {
+    "allMandatoryLinesPassBothChannels": false,
+    "acceptedPolarityViolationCount": null,
+    "disjointSampleCrossValidationPass": false,
+    "commonNominalPosePerturbationPass": false,
+    "lineOrderInvariancePass": false,
+    "boundedLeaveoutPass": false,
+    "leaveoutGateSpace": "FULL_FROZEN_MODEL_NATIVE_PIXEL_DISPLACEMENT",
+    "leaveoutMaximumDisplacementPx": null,
+    "leaveoutMaximumDisplacementBasis": null,
+    "nominalCardinalityInvariancePass": false,
+    "ignoredCornerPixelMutationInvariancePass": false,
+    "repeatingPatternLookalikesRejected": false
+  },
+  "independentValidation": {
+    "frozenNoTuning": true,
+    "sameStage": true,
+    "targetResults": [],
+    "completeIndependentPositiveCount": 0,
+    "operatorPresentationAllowed": false
+  },
+  "authority": {
+    "alignmentAuthorityGranted": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false
+  }
+}

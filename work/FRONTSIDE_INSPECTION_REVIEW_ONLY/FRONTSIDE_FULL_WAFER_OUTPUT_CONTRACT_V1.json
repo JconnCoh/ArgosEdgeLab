@@ -1,0 +1,58 @@
+{
+  "schema": "argos_frontside_full_wafer_output_contract_v1",
+  "coverage": [
+    "SURFACE_INTERIOR",
+    "NARROW_EDGE_ZONE",
+    "PHYSICAL_PERIMETER",
+    "NOTCH_NEIGHBORHOOD",
+    "VISIBLE_BEVEL"
+  ],
+  "requiredDefectClasses": [
+    "Scratch",
+    "Residue",
+    "Contamination",
+    "Particle",
+    "Stain",
+    "EdgeChipout",
+    "EdgeMicroDamage",
+    "BevelDamage"
+  ],
+  "scratchPriority": "SENSITIVITY_FIRST_NOT_EXCLUSIVE",
+  "presenceFormation": "CLASS_NEUTRAL_BEFORE_CLASSIFICATION",
+  "acceptedBranches": [
+    "RAW",
+    "TARGET_EXCLUDED_SHADOW"
+  ],
+  "acceptedOperation": "PER_CLASS_NATIVE_PIXEL_OR_RAW_ACCEPTED_WITH_SHADOW_ACCEPTED",
+  "confirmationIncludedInAcceptedDisplay": false,
+  "reviewInteractionModel": "EXISTING_JBOD_BACKSIDE_COMPOSITE_ACCEPTED_VIEWER",
+  "requiredPrimaryTabs": [
+    "Composite Accepted BF",
+    "Composite Accepted DF"
+  ],
+  "requiredRendering": [
+    "UNCHANGED_FULL_WAFER_CHANNEL_BASE",
+    "EXACT_SUPPORTED_ACCEPTED_PIXELS",
+    "FULL_PHYSICAL_EDGE_IN_FRAME"
+  ],
+  "forbiddenPrimaryReview": [
+    "SCRATCH_ONLY_QUEUE",
+    "LOCAL_EVENT_CARD_QUEUE",
+    "INTERIOR_SURFACE_ONLY"
+  ],
+  "forbiddenRendering": [
+    "BOUNDING_BOX",
+    "FILLED_REGION_HEATMAP",
+    "BROAD_DISPLAY_HALO",
+    "INFERRED_LINE_OR_SHAPE"
+  ],
+  "frontsideHardwareHolderMaskAllowed": false,
+  "blanketInwardInsetAllowed": false,
+  "hotSpotState": "DISABLED_NO_EXAMPLES",
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "xmlGeometryEligible": false,
+  "productionEligible": false,
+  "jbodFrontsideProcessingEnabled": false
+}

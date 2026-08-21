@@ -1,0 +1,33 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/C2R.ps1",
+  "changes": [
+    {
+      "source": "payload/C2R.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\R9.ps1",
+      "approvedPredecessorSha256": [
+        "82D69849363138DFC453415B6E3F27E41E0B404580B5366C2A6A0825CD5140BA"
+      ],
+      "installedSha256": "82D69849363138DFC453415B6E3F27E41E0B404580B5366C2A6A0825CD5140BA",
+      "allowCreate": true
+    },
+    {
+      "source": "payload/Run-JbodAllWaferProcessor.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Run-JbodAllWaferProcessor.ps1",
+      "approvedPredecessorSha256": [
+        "6B61A415DF2F6852C290ABD0F794E86BE13B270A91E9E86E005B76A468404F1C",
+        "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+      ],
+      "installedSha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+      "allowCreate": false
+    }
+  ],
+  "allowedTaskActions": [
+    "RESTART:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2"
+  ],
+  "rehearsal": {
+    "requiredState": "PASS_JBOD_PROCESSOR_RUNNER_FIX_AND_REFRESH_R9"
+  }
+}

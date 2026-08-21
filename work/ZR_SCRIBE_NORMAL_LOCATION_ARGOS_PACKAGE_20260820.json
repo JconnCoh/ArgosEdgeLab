@@ -1,0 +1,57 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v1",
+  "revision": "SCRIBE_NORMAL_LOCATION_ARGOS_PACKAGE_20260820T175100Z",
+  "createdUtc": "2026-08-20T17:51:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "BUILD_AND_REHEARSE_EXACT_ARGOS_CANDIDATE_MES_QUERY_PATCH",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "6FA1EC4469D636D552051177A675B761D77AA8967188C069095E343FFB7C40D0",
+  "dependencies": [
+    { "path": "snr1/jbod/payload/SNR1.ps1", "sha256": "E138C6D54F83F5563C46E3AD93B846A4733565ADC8B0EB9F05727A4D159D6C1A" },
+    { "path": "snr1/jbod/tests/Test-SNR1JbodPackage.ps1", "sha256": "B86A8BEE57380C2436FD20CFE4855D5313E5CB4DF9B54123979351E1082FA47F" },
+    { "path": "snr1/jbod/final/FINAL_ZIP_GATE.json", "sha256": "37FB43E5BD58B3B403F876366C94091F7F7E67C423374663D67113A23578A034" },
+    { "path": "work/MES_INSITE_READ_ONLY/automatic_bridge_v1/Install-ArgosInsiteBridgeReviewOnly.ps1", "sha256": "9B61BBA00F61FFD1A3562B9EA2C74DA2A67F9FE78B77A482A1D50C3C5CDAC0AA" },
+    { "path": "work/MES_INSITE_READ_ONLY/automatic_bridge_v1/Invoke-ArgosAutomaticInsiteBridgeWorker.ps1", "sha256": "D84EAF81973233FC0696E27677C385D30D0A197AB7DA0FAB8D487A944F2F1C23" },
+    { "path": "R:/sp1/Invoke-ArgosAutomaticInsiteBridgeWorker.ps1", "sha256": "38CEF173CD4D4F9C8357C3F1879D27C16BC31B26AD3E3CE369473A3D5C608402" },
+    { "path": "work/SCRIBE_REVIEW_ONLY/tools/Invoke-ArgosCandidateInsiteRequest.ps1", "sha256": "826ED301EF8197E17BD2AA4DD3389B4FC2B4EFDB2B7B4236DBC0B33BC732300F" },
+    { "path": "work/SCRIBE_REVIEW_ONLY/tools/ArgosScribeCandidateInsiteContract.psm1", "sha256": "AFAB222E8C59CD2681D3525739BBD88EE76D3C7323EE6CAB6BA2AB0261BC83D7" },
+    { "path": "work/SCRIBE_REVIEW_ONLY/tools/ArgosInsiteRequestCanonical.psm1", "sha256": "E1DF58C58A14B9BC0D98729CC839AE59D9380FE74A3E1E3301778C6172B455B2" },
+    { "path": "work/SCRIBE_REVIEW_ONLY/tools/ArgosCandidateSnapshotEnvelope.psm1", "sha256": "03F518AE42CB3F2E09BB1806C9E76C647D644CA2E17550748F788FCCAEB5EAD4" },
+    { "path": "work/SCRIBE_REVIEW_ONLY/tools/ArgosScribeCandidateMesResolver.psm1", "sha256": "18D550F47103C3735536B1CA60600A4F0341E0F0E957F75C2D904CEC824AB541" },
+    { "path": "work/MES_INSITE_READ_ONLY/Invoke-ArgosPendingInsiteRequest.ps1", "sha256": "F25A7C828041A8D84FECE1DBFE0A7BD5E6D709521881F85CD8ADF1F2AB75472C" },
+    { "path": "work/MES_INSITE_READ_ONLY/Invoke-ArgosMesVisualStateSnapshot.ps1", "sha256": "04634C171F563CE4A46CBC44B0F69E88AF7EBD2BED0CF0253282BDEB34C0E35F" }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      "work/SCRIBE_REVIEW_ONLY/tools/Invoke-JbodScribeMultiChannelBackfill.ps1",
+      "work/SCRIBE_REVIEW_ONLY/tools/Invoke-JbodAutomaticInsiteBridgeWorkerV2.ps1",
+      "work/SCRIBE_REVIEW_ONLY/tools/Invoke-ArgosAutomaticInsiteBridgeWorkerV2.ps1",
+      "work/SCRIBE_REVIEW_ONLY/tools/Test-JbodScribeMultiChannelBackfill.ps1",
+      "work/SCRIBE_REVIEW_ONLY/tools/New-JbodScribeProposalPassMultiChannel.ps1"
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "argos_powershell_harness_set_gate_v1",
+  "checkedUtc": "2026-08-21T16:05:04.8632724Z",
+  "state": "PASS_R7_POWERSHELL_HARNESS_SET",
+  "windowsPowerShell51ParserPassed": true,
+  "scripts": [
+    {
+      "path": "work\\R7\\New-R7Request.ps1",
+      "sha256": "94FE7AAA78BA916F361B9566BA729801C346A7A044F3931BD5A35E014246875C",
+      "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY"
+    },
+    {
+      "path": "work\\R7\\Prepare-R7.ps1",
+      "sha256": "959A9BA73349A1597196E95728BCEF8E89F4D1A8F3B956A5609E7E54969C0A9F",
+      "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY"
+    },
+    {
+      "path": "work\\R7\\Publish-R7.ps1",
+      "sha256": "98D1D54E6D513DC9C0BE81CC7D8D1EFB8D996204DFF309B5B92E8940CEA3F471",
+      "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY"
+    },
+    {
+      "path": "work\\R7\\Collect-R7Response.ps1",
+      "sha256": "85FBFD29656CB926D2EBBA3C7B4B0E7C6EF46DF8E4A277B52A4E5C00D109F104",
+      "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY"
+    },
+    {
+      "path": "work\\R7\\Test-R7ExactEndpoint.ps1",
+      "sha256": "6BCC0D0DB1DFA13D420ACE30CD5A8FE4E69151DAF29B7710D47DDE4DD5F3BD40",
+      "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY"
+    },
+    {
+      "path": "work\\R7\\pkg\\payload\\R7.ps1",
+      "sha256": "A6A373457FA0F435BD0D351AE290175A29D50B8EA24F00246C7A5177B2798173",
+      "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY"
+    }
+  ],
+  "violations": [],
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

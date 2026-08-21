@@ -1,0 +1,77 @@
+{
+    "schema":  "argos_r8_exact_endpoint_gate_v1",
+    "createdUtc":  "2026-08-21T16:29:08.6861529Z",
+    "state":  "PASS_R8_EXACT_ENDPOINT_GATE",
+    "requestId":  "REQ_R8",
+    "requestManifestSha256":  "3174326BBA1813189BA2F6E4662B6DD95DDE7F68F8408FCEA91C47649E8A3FF6",
+    "endpointWorkerSha256":  "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+    "approvedOldPredecessorExercised":  true,
+    "targetIdempotenceAccepted":  true,
+    "unapprovedPredecessorRefusedBeforeMutation":  true,
+    "runtimeVerifierFailureRolledBack":  true,
+    "controlAfterRuntimeFailurePassed":  true,
+    "responseSignaturesVerified":  5,
+    "results":  [
+                    {
+                        "case":  "approved_old",
+                        "mode":  "old",
+                        "endpointState":  "PASS_MAINTENANCE_PATCH",
+                        "helperBeforeSha256":  "",
+                        "helperAfterSha256":  "3B5FE09081FC4545420B16874D675525A3647785EFD4B1294562ABEE18E6BEC4",
+                        "runnerBeforeSha256":  "6B61A415DF2F6852C290ABD0F794E86BE13B270A91E9E86E005B76A468404F1C",
+                        "runnerAfterSha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+                        "responseId":  "R_0FE56F0676DA_20260821162847863_3ae71e61",
+                        "signatureVerified":  true
+                    },
+                    {
+                        "case":  "target_idempotent",
+                        "mode":  "target",
+                        "endpointState":  "PASS_MAINTENANCE_PATCH",
+                        "helperBeforeSha256":  "3B5FE09081FC4545420B16874D675525A3647785EFD4B1294562ABEE18E6BEC4",
+                        "helperAfterSha256":  "3B5FE09081FC4545420B16874D675525A3647785EFD4B1294562ABEE18E6BEC4",
+                        "runnerBeforeSha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+                        "runnerAfterSha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+                        "responseId":  "R_0FE56F0676DA_20260821162853274_18dc4e11",
+                        "signatureVerified":  true
+                    },
+                    {
+                        "case":  "unapproved",
+                        "mode":  "bad",
+                        "endpointState":  "FAILED",
+                        "helperBeforeSha256":  "",
+                        "helperAfterSha256":  "",
+                        "runnerBeforeSha256":  "EE58914B74EE315E93821599D82B7B281F46AE93C47E18D559EF4780E116467B",
+                        "runnerAfterSha256":  "EE58914B74EE315E93821599D82B7B281F46AE93C47E18D559EF4780E116467B",
+                        "responseId":  "R_0FE56F0676DA_20260821162856691_aa99c2bd",
+                        "signatureVerified":  true
+                    },
+                    {
+                        "case":  "runtime_failure_rollback",
+                        "mode":  "old",
+                        "endpointState":  "FAILED",
+                        "helperBeforeSha256":  "",
+                        "helperAfterSha256":  "",
+                        "runnerBeforeSha256":  "6B61A415DF2F6852C290ABD0F794E86BE13B270A91E9E86E005B76A468404F1C",
+                        "runnerAfterSha256":  "6B61A415DF2F6852C290ABD0F794E86BE13B270A91E9E86E005B76A468404F1C",
+                        "responseId":  "R_0FE56F0676DA_20260821162901708_90967b26",
+                        "signatureVerified":  true
+                    },
+                    {
+                        "case":  "control_after_failure",
+                        "mode":  "old",
+                        "endpointState":  "PASS_MAINTENANCE_PATCH",
+                        "helperBeforeSha256":  "",
+                        "helperAfterSha256":  "3B5FE09081FC4545420B16874D675525A3647785EFD4B1294562ABEE18E6BEC4",
+                        "runnerBeforeSha256":  "6B61A415DF2F6852C290ABD0F794E86BE13B270A91E9E86E005B76A468404F1C",
+                        "runnerAfterSha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+                        "responseId":  "R_0FE56F0676DA_20260821162906909_1d024755",
+                        "signatureVerified":  true
+                    }
+                ],
+    "taskFixtureOnly":  true,
+    "sourceDeletionPerformed":  false,
+    "otherInspectionTasksChanged":  false,
+    "waferAborted":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

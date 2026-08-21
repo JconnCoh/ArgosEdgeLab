@@ -1,0 +1,27 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v1",
+  "revision":"F8_MECHANICAL_SUCCESSOR_FROM_LIVE_PROVEN_F3_20260821",
+  "createdUtc":"2026-08-21T14:50:00Z",
+  "state":"PASS_PREACTION_CONTRACT",
+  "actionType":"CREATE_FRESH_F8_SUCCESSOR_FROM_EXACT_F3_PAYLOAD_AND_GUARDED_HARNESS_TEMPLATES",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"371FD41B6719C9FA20B6D4CC6CADE26A4904683C267334ABAF5A38D18EAC0883",
+  "dependencies":[
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"02B172191792120A257B194E4A99C35315DFEA0C57332192540D135CD3053306"},
+    {"path":"work/F8_SOURCE_PATH_GATE.json","sha256":"F28E91CB0EFEA1ED32317BC4902EC49920A479051DEB1287A650E93D83E2425C"},
+    {"path":"work/F3/F3_TERMINAL_RESPONSE_GATE.json","sha256":"53AABC73325F27199F886705F63B9850986934BF546AA5735C10FAF70256D453"},
+    {"path":"work/V36/C2V36_TERMINAL_RESPONSE_GATE.json","sha256":"3A89CA86DEAB5EBBE120188580052D02281D1073FC62602952A2D0035A40FF9E"},
+    {"path":"work/F3/New-F3Request.ps1","sha256":"663C44A40EECCA6CDE9CA0F8F1064D58D6AC7A9B5F66001F10DF1946B5B54338"},
+    {"path":"work/F3/Prepare-F3.ps1","sha256":"2F47FEA9CA8E8590DDBB6F1BA884819B71C48F9CAB11F9DBDDBC7960020BF8FA"},
+    {"path":"work/F3/Publish-F3.ps1","sha256":"1C4C28765DBA4D84949122A2C3D7EB85A79FA7973977FB9F9C258BCF5C640C22"},
+    {"path":"work/F3/Collect-F3Response.ps1","sha256":"E0A17BB636EEFF91178FA8B44027A77BC30B71E82D73A12C0B89658F05C09C47"},
+    {"path":"work/F3/Test-F3ExactEndpoint.ps1","sha256":"F694C95B80B33555F47FB4F11F87FE91C03E8A00566C7A4DEE0C176DDDC249A5"},
+    {"path":"work/F3/pkg/MAINTENANCE_DEFINITION.json","sha256":"94CFD66D4750B2A904E4F44A53F29ED2CC25C588C78A637B3033BA412D36C446"},
+    {"path":"work/F3/pkg/payload/F3.ps1","sha256":"1F3227E4F789217EBBD2C5B84A8F516C6FC47D81EC0F08669AEA4DF0D0AC1272"},
+    {"path":"work/F3/pkg/payload/Invoke-JbodAutomaticInsiteBridgeWorker.ps1","sha256":"8D10D7A775741F9A2B4FD4AA831E1426DCA1DC2A17A9A68AD8CD432F10265B5C"}
+  ],
+  "controls":{"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":[]},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

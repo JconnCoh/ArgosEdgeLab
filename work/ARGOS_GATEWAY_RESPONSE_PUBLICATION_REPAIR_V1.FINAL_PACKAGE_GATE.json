@@ -1,0 +1,48 @@
+{
+  "schema": "argos_gateway_response_publication_repair_final_package_gate_v1",
+  "revision": "GATEWAY_RESPONSE_PUBLICATION_REPAIR_V1",
+  "createdUtc": "2026-08-17T18:11:45.3751334Z",
+  "state": "PASS_GATEWAY_RESPONSE_PUBLICATION_REPAIR_V1_RELEASE_GATE",
+  "package": {
+    "path": "work/ARGOS_GATEWAY_RESPONSE_PUBLICATION_REPAIR_V1.zip",
+    "bytes": 21479,
+    "sha256": "049E65ED47D0F7E7120811F300F96007C669A5E2AC8054368ADBC4656D89551A",
+    "fileCount": 10
+  },
+  "manifestSha256": "D1D1100409DF6278960F2AAE500589E11C92115A3ACF759A041C5B12E8439271",
+  "repairScriptSha256": "2EC213CC351F051F95FE057F89BC0273015211D9769B99CA8E239BE73E27C177",
+  "invocationManifestSha256": "84842D5E0DBBB25BADD5D2E3BA2078BDF7997185045AD6859EB3244C4ED8ECF5",
+  "preflightWrapperSha256": "CD89E3EE16F57F93AC7E3814EB7EF2C43177BCFB5C8935B673A69C61B2E4E229",
+  "runWrapperSha256": "79CD5DBD81B2A17C45428A1232BE16990FCCCE72AE309CB61FCBF8C97C4FDC61",
+  "livePins": {
+    "computerName": "TXSH-DPMZ0295HR",
+    "shareTaskUserId": "fab.op",
+    "shareTaskLogonType": "Interactive",
+    "predecessorBridgeSha256": "CA10063B850C8355616D0EF4686E83EF68C3AAB70321FC14032209598E5FA033",
+    "predecessorShareConfigSha256": "EED10A33058C75D7764AE096502D8C339BB0D6B6495EE607785C2608F47BA83F",
+    "responseReceiverConfigSha256": "C2317E9C40FB51FDD24F3D765E60BFE2A6F9652C64AE5719FB5F2AFC379FFE5C",
+    "targetBridgeSha256": "E32369C9D6E88FDB9576C97DA986FA763D4E00E36787BCB45F1567EA95B68485",
+    "targetShareConfigSha256": "24102B5ABDB155D3BD2A44CA3A3215ED67353C68824370BB3447909171B939D9"
+  },
+  "authorizedMutations": {
+    "installedFilesReplaced": 2,
+    "aliasCreated": "C:/APR/S",
+    "scheduledTasksRestarted": [
+      "ArgosProjectPortal.Gateway.ShareBridge.RO"
+    ],
+    "responseReceiverTaskMutationAllowed": false,
+    "productionRoutingEnabled": false
+  },
+  "gates": {
+    "pathBudget": "PASS_PATH_BUDGET",
+    "sourceWrapperPreflights": 2,
+    "extractedWrapperPreflights": 2,
+    "exactFinalZipRehearsal": "PASS_EXACT_FINAL_ZIP_GATEWAY_REPAIR_REHEARSAL",
+    "functionalChecksPassed": 8,
+    "rollbackPassed": true,
+    "idempotencyPassed": true,
+    "taskContextAliasWriteProofPassed": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,34 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v1","revision":"SNR3_JBOD_PORTAL_PUBLISH_20260820T200700Z",
+  "createdUtc":"2026-08-20T20:07:00.0000000Z","state":"PASS_PREACTION_CONTRACT",
+  "actionType":"PUBLISH_AND_VERIFY_REHEARSED_SNR3_JBOD_ABSENT_READER_RECOVERY_REQUEST",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"CD8CA59F2FFE80CA4D524F6A79E8E69AA58F0929110553A4BC8A79589498D10E",
+  "dependencies":[
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"0B4BAB33AD2709E8A3F5D7219016935FF7AA8921E20D0E3B4C750BD97973BD23"},
+    {"path":"work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md","sha256":"11BBA547C18E1D2F8DE41F31488D48C4CD8BFFCA4B7F9EA0D993F5F879800ACB"},
+    {"path":"work/ARGOS_PATH_LENGTH_SAFETY.md","sha256":"BEED1B1F76EEA75E1DDEC102CF1C9ABD7F72BFAC816CAF6D15925700C428ED01"},
+    {"path":"work/ARGOS_POWERSHELL_HARNESS_SAFETY.md","sha256":"E8850BC23C897F1182EE820F4B19294DD175B629A70F47FBE712BC527C1687F9"},
+    {"path":"work/ZR_SNR3_JBOD_PORTAL_SIGN_20260820.json","sha256":"92E34A8000FB32D39A028F46F3B7A3C8F039234B8842341320779E1B69D353AD"},
+    {"path":"snp8/final/REQ_20260820T200518672Z_6D8302EA4852.ready.zip","sha256":"F4F5F1A7C57912C5EA9802D38474B47666D95BDC3D84B5DDDF760515280BFBE2"},
+    {"path":"snp8/final/PREPUBLICATION_PATH_GATE.json","sha256":"6A25B64491FE7DD45C37AC6C6F651C5C633F939D1D86BE73C7ACA143A285C6D9"},
+    {"path":"snp8/final_rehearsal/run/GATE_RESULT.json","sha256":"6FC20292B68AA5F34BC73A1E4EBE60A06618E62F038474B0A7CDE006436BD88C"},
+    {"path":"snp8/Publish.ps1","sha256":"C7BCA98868FB6F166B1318FDBC1E92E37A5401423900F83ED2FBAAAF0143F39A"},
+    {"path":"snp8/PUBLISH_CLONE_LITERAL_GATE.json","sha256":"A8003E765585EBD9B8571E79DE3D2A740D0398F7DE33E11903CB9D50A1F5B0F3"},
+    {"path":"snp7/inbox/R_601B7C22DA7F_20260820195953845_2984ae9a.ready/PORTAL_RESPONSE_MANIFEST.json","sha256":"12C46262CF25B4879724C19143A3A07CBB1244ECEA4C1996D6AB8168B8500172"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer","sha256":"5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B"}
+  ],
+  "controls":{
+    "valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,
+    "installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,
+    "windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,
+    "zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,
+    "declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,
+    "queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true,
+    "priorJbodRequestHasSignedTerminalResponse":true,"exactFinalZipHashPinned":true,
+    "installedC1D2ReaderAbsentExercised":true,"exactPackagedInstallerRehearsed":true,
+    "publisherPreflightPassedWithoutWrites":true,"requestQueueStateNew":true,"manualOperatorExecutionRequired":false
+  },
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":[]},
+  "reviewOnly":true,"productionRoutingEnabled":false
+}

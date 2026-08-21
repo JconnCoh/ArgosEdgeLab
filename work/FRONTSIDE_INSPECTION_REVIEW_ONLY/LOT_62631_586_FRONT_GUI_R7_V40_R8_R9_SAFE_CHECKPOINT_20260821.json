@@ -1,0 +1,73 @@
+{
+  "schema": "ARGOS_LOT_FRONT_GUI_SAFE_CHECKPOINT_V1",
+  "createdUtc": "2026-08-21T16:37:51.3919125Z",
+  "revision": "LOT_62631_586_FRONT_GUI_R7_V40_R8_R9_SAFE_CHECKPOINT",
+  "state": "PENDING_GATE",
+  "lot": "62631-586",
+  "scanDate": "2026-08-19",
+  "targetSide": "FRONT",
+  "catalogFrontRows": 10,
+  "confirmedScribeRows": 10,
+  "verifiedMetadataRows": 10,
+  "activeTargetHolds": 0,
+  "completedFrontLedgerRows": 0,
+  "guiFrontRows": 0,
+  "guiBackRows": 7,
+  "r7": {
+    "requestId": "REQ_R7_0821_1605_X1",
+    "responseId": "R_CD05EE5DDFFB_20260821160806067_66504632",
+    "state": "PASS_R7_SIGNED_TERMINAL_RESPONSE",
+    "gate": "work/R7/R7_TERMINAL_RESPONSE_GATE.json",
+    "gateSha256": "4C2349965EEFC8614C6545FCFE560A00C114028B2A2DDF6A988297C11CF04AA7"
+  },
+  "v40": {
+    "requestId": "REQ_V40_0821_1615_X1",
+    "responseId": "R_CB3CDBA6F0B8_20260821161419288_ddf4e3bc",
+    "state": "PASS_C2V40_SIGNED_TERMINAL_RESPONSE",
+    "disposition": "PENDING_DASHBOARD_REFRESH",
+    "catalogAcceptance": true,
+    "guiAcceptance": false,
+    "gate": "work/V40/C2V40_TERMINAL_RESPONSE_GATE.json",
+    "gateSha256": "F3EE67B7C900A8BE3E83A03020C6BE5E8BB0C6C5D6B1F332044892631A2D813E"
+  },
+  "r8": {
+    "requestId": "REQ_R8",
+    "responseId": "R_0FE56F0676DA_20260821163245034_fbc68fa1",
+    "state": "FAIL_R8_SIGNED_TERMINAL_RESPONSE",
+    "disposition": "WITHDRAWN",
+    "failure": "Legacy endpoint invariant required 20 side-specific overlay-matched rows although the signed current FRONT contract contains 10 rows",
+    "failedBeforeTaskRestart": true,
+    "gate": "work/R8/R8_TERMINAL_RESPONSE_GATE.json",
+    "gateSha256": "EB329A4E518DD5A0C15CCDF196219F636AC710A0F8E15EE12234B1B165D39F42"
+  },
+  "r9Draft": {
+    "signed": false,
+    "rehearsed": false,
+    "published": false,
+    "executed": false,
+    "payload": "work/R9/pkg/payload/C2R.ps1",
+    "payloadSha256": "82D69849363138DFC453415B6E3F27E41E0B404580B5366C2A6A0825CD5140BA",
+    "definition": "work/R9/pkg/MAINTENANCE_DEFINITION.json",
+    "definitionSha256": "2C4EA5B15C23585F3D620BDA4186846CB2F14488B6603B8AA37DEDA1559CE973"
+  },
+  "installedRuntime": {
+    "configSha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8",
+    "runnerSha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+    "inventorySha256": "8919C3DD4AC04FD662B57E356AC6E1A70BD614E97AFC270EB4B8FF617D705160",
+    "liveImporterSha256": "45965930699A0F0C38098B65E5A153C5DE360103BC9FED345AC5811B6F1FBD0D",
+    "processingPassSha256": "0B063D452CA76AE5EE3EC1BDF6726853259039683C36E208718B8FE937D23753",
+    "dashboardUpdaterSha256": "DCF97D92BDA0A82A49DA277D54CFD1BC7802068CD8B9D89340534CC892792BAD",
+    "verifiedMetadataRoot": "D:\\A2\\m\\verified",
+    "outputRoot": "D:\\A2\\o",
+    "processorTask": "ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2"
+  },
+  "nextAction": "Commit the exact workspace checkpoint, then complete R9 mandatory gates and signed deployment; require 10 completed FRONT ledger rows and 10 FRONT GUI rows",
+  "safety": {
+    "reviewOnly": true,
+    "xmlExportEnabled": false,
+    "trainingEligible": false,
+    "productionRoutingEnabled": false,
+    "imagesRead": false,
+    "identitiesHardcoded": false
+  }
+}

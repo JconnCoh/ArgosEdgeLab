@@ -1,0 +1,35 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v1",
+  "revision":"SNR2_JBOD_PORTAL_PUBLISH_20260820T200000Z",
+  "createdUtc":"2026-08-20T20:00:00.0000000Z",
+  "state":"PASS_PREACTION_CONTRACT",
+  "actionType":"PUBLISH_AND_VERIFY_FROZEN_REHEARSED_SNR2_JBOD_NORMAL_LOCATION_SCRIBE_INSTALL_REQUEST",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"FCEFDACDF0C750B1537B6D30535B7AC1ACD44F038498FF8B2B987F7AB1D04E0E",
+  "dependencies":[
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"1886029E1C118D913CFF5AF8667E62244D8AD7740CE89784823023560822AE52"},
+    {"path":"work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md","sha256":"11BBA547C18E1D2F8DE41F31488D48C4CD8BFFCA4B7F9EA0D993F5F879800ACB"},
+    {"path":"work/ARGOS_PATH_LENGTH_SAFETY.md","sha256":"BEED1B1F76EEA75E1DDEC102CF1C9ABD7F72BFAC816CAF6D15925700C428ED01"},
+    {"path":"work/ARGOS_POWERSHELL_HARNESS_SAFETY.md","sha256":"E8850BC23C897F1182EE820F4B19294DD175B629A70F47FBE712BC527C1687F9"},
+    {"path":"work/ZR_SNR2_JBOD_PORTAL_SIGN_20260820.json","sha256":"2DD44BED71E51E75EB1A482A50E1977248A7A308DAB95F61A895081FD2804131"},
+    {"path":"snp7/final/REQ_20260820T195806165Z_790A283864B6.ready.zip","sha256":"8148902CEC338536354106FAF8812ED243668D847DE342940F1B9094C3A65165"},
+    {"path":"snp7/final/PREPUBLICATION_PATH_GATE.json","sha256":"F974213E12F1783B4A420D678004D30D11F7F51E2257094FCE8517CC569AFAF3"},
+    {"path":"snp7/Publish.ps1","sha256":"D4C04CB74E60068879A8978C2EBD594FF92D1A3FCA9BA5EAC3860190B674D587"},
+    {"path":"snp7/PUBLISH_CLONE_LITERAL_GATE.json","sha256":"083C6380A59126BD61D4E0F3997963BCE4D38728CCE8385855FB4088B93EF8D9"},
+    {"path":"snp6/inbox/R_A2ADBF630E5B_20260820195517044.ready/PORTAL_RESPONSE_MANIFEST.json","sha256":"2F996743B8F8BF0C84896B09A324FB0EF3260C3D7117DC9C9B1AA80E8F0EEA0B"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer","sha256":"5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B"}
+  ],
+  "controls":{
+    "valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,
+    "installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,
+    "windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,
+    "zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,
+    "declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,
+    "queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true,
+    "priorArgosRequestHasSignedTerminalResponse":true,"exactFinalZipHashPinned":true,
+    "allPayloadHashesMatchFrozenRehearsedPackage":true,"publisherPreflightPassedWithoutWrites":true,
+    "requestQueueStateNew":true,"manualOperatorExecutionRequired":false
+  },
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":[]},
+  "reviewOnly":true,"productionRoutingEnabled":false
+}

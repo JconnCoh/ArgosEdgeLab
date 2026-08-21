@@ -1,0 +1,142 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-21T16:23:26.1398495Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\R8\\CLONE_REMEDIATION_R8.json",
+    "manifestSha256":  "6B14B312F51E43E80821DD675B7D03B4B926325AD2501BCCA6C75CED067734A3",
+    "pairCount":  7,
+    "pairs":  [
+                  {
+                      "source":  "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/New-C2RRequest.ps1",
+                      "generated":  "work/R8/New-C2RRequest.ps1",
+                      "sourceSha256":  "CF4E690B3E7C215F4E5CE122A669666A55CDCC7B031F9444D604F7803B3DB0A6",
+                      "generatedSha256":  "C95D6533EC544AADB073CAE02A9FE631B03839EDBF2F7FFD7306BC6C3F6DEA1B",
+                      "sourceRoots":  [
+                                          "C:\\Users"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\Users"
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/Build-C2RFinal.ps1",
+                      "generated":  "work/R8/Build-C2RFinal.ps1",
+                      "sourceSha256":  "3397B9BCC7F2D647E098871DA19F622EB02C09CE9D6409030BF3E28C4D662EE9",
+                      "generatedSha256":  "6395852313DD2A1DF3BD1BC96739C8D5C936E58B6DA8264ED9CB42FC6E2DE0BE",
+                      "sourceRoots":  [
+                                          "C:\\A30S",
+                                          "C:\\C2R3F1",
+                                          "C:\\C2R3Z",
+                                          "C:\\Users"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\A30S",
+                                             "C:\\R8F1",
+                                             "C:\\R8Z",
+                                             "C:\\Users"
+                                         ],
+                      "ruleCount":  4
+                  },
+                  {
+                      "source":  "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/Publish-C2R.ps1",
+                      "generated":  "work/R8/Publish-C2R.ps1",
+                      "sourceSha256":  "A0D754080F17A54DA92140A47ED827DC5980618198E7A5A44C08AF494BB207C8",
+                      "generatedSha256":  "3519B88C4A20780AD89F82CD155661D69656307931DB177ABD568D5D28B40AC1",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "C:\\Users",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "C:\\Users",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  3
+                  },
+                  {
+                      "source":  "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/Collect-C2RResponse.ps1",
+                      "generated":  "work/R8/Collect-C2RResponse.ps1",
+                      "sourceSha256":  "C1DB34DFBFA2D7373CAD33CCF375DA7556514F65AF43822E78FF3605CE9F8FE5",
+                      "generatedSha256":  "20E844938E8E200416E2E928FBB123B3E45084CE1A3A020ED842579CA61DCBA5",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "C:\\A30S",
+                                          "C:\\Users",
+                                          "D:\\A2",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "C:\\A30S",
+                                             "C:\\Users",
+                                             "D:\\A2",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  5
+                  },
+                  {
+                      "source":  "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/Test-C2RExactEndpoint.ps1",
+                      "generated":  "work/R8/Test-C2RExactEndpoint.ps1",
+                      "sourceSha256":  "D802B2757A9D13960B5B4C764E499C8DB8C5AFF9B6524B3B036211AFE2E4021D",
+                      "generatedSha256":  "757278FC5CD9889FF0477800C29ED16B96FA8282F36390A7294E8B731321AF4B",
+                      "sourceRoots":  [
+                                          "C:\\C2R3E1",
+                                          "C:\\ProgramData",
+                                          "C:\\Users"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "C:\\R8E1",
+                                             "C:\\Users"
+                                         ],
+                      "ruleCount":  3
+                  },
+                  {
+                      "source":  "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/Test-C2RRoutes.ps1",
+                      "generated":  "work/R8/Test-C2RRoutes.ps1",
+                      "sourceSha256":  "980DD3447EEB66E2B10C5F0977190022DFEE7E93B61C08B0E6C91A75A5645246",
+                      "generatedSha256":  "3C18B3E9580C922B0659F9F197BBD959FF63168EDC9C51DA7A9623A05696B578",
+                      "sourceRoots":  [
+                                          "C:\\A30S",
+                                          "C:\\APR",
+                                          "C:\\ProgramData",
+                                          "C:\\Users",
+                                          "D:\\A2",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\A30S",
+                                             "C:\\APR",
+                                             "C:\\ProgramData",
+                                             "C:\\Users",
+                                             "D:\\A2",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  6
+                  },
+                  {
+                      "source":  "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/pkg/payload/C2R.ps1",
+                      "generated":  "work/R8/pkg/payload/C2R.ps1",
+                      "sourceSha256":  "D36830853CA5A246E18CAF75940A45F12950E7B3D81164365FF18284CD176D29",
+                      "generatedSha256":  "3B5FE09081FC4545420B16874D675525A3647785EFD4B1294562ABEE18E6BEC4",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "D:\\A2"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "D:\\A2"
+                                         ],
+                      "ruleCount":  2
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

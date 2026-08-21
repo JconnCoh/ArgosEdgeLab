@@ -1,0 +1,51 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v1",
+  "revision": "SCRIBE_NORMAL_LOCATION_MANUAL_HANDOFF_20260820T180000Z",
+  "createdUtc": "2026-08-20T18:00:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "BUILD_REHEARSE_AND_STAGE_OUT_OF_QUEUE_TWO_HOST_OPERATOR_HANDOFF",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "6FA1EC4469D636D552051177A675B761D77AA8967188C069095E343FFB7C40D0",
+  "dependencies": [
+    { "path": "utilities/templates/ARGOS_WRAPPER_TEMPLATE.cmd", "sha256": "A2A045DA8AC03368FA0EF47A71E261CC2422A416AF2CCE1291B5F61BC8195541" },
+    { "path": "utilities/templates/ARGOS_WRAPPER_TEMPLATE.ps1", "sha256": "CA215CC5A1413097F4F88B2CB95B7FFD4B287D03B09DD298BC600A767FB7BB0C" },
+    { "path": "utilities/templates/ARGOS_WRAPPER_TEMPLATE.invocation.json", "sha256": "A01CD09A1E06549C2898517E7DCB6496A75F164B6231A56E3EF61227DC0E2DCB" },
+    { "path": "snr1/jbod/final/SNR1_JBOD_NORMAL_LOCATION_SCRIBE_PATCH.zip", "sha256": "A953759180C68A08EC6DB099074CC1B059AC0FAAA3114450997436CADC1B63AB" },
+    { "path": "snr1/jbod/final/FINAL_ZIP_GATE.json", "sha256": "37FB43E5BD58B3B403F876366C94091F7F7E67C423374663D67113A23578A034" },
+    { "path": "snr1/argos/final/SNA1_ARGOS_CANDIDATE_MES_QUERY_PATCH.zip", "sha256": "57CBC72B7E203589D532F4A27333E715B96CFC77C9491511234904D8F3779466" },
+    { "path": "snr1/argos/final/FINAL_ZIP_GATE.json", "sha256": "9E40A34F614C5F037843EE0839E3A4F69FDDD99B66D432A191F6C1806AD177FD" },
+    { "path": "I:/ProjectPortalRO/requests/REQ_C2R.ready.zip", "sha256": "01DEE943F479F059BA3DF596C160CBC2D708C40FCE212DFBDDFC8EBB05CD4B8D" },
+    { "path": "work/JBOD_INSITE_WORKER_OPTIONAL_CONFIG_FIX_C2W/C2W_TERMINAL_RESPONSE_GATE.json", "sha256": "5B6CD1BCAD72E47FF3244FB11F4DBD494CBB8F221D1323CAE1FA22AE87D6D7BE" }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      "I:/ProjectPortalRO/requests/REQ_C2R.ready.zip",
+      "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Publish-SignedPortalRequest.ps1",
+      "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Receive-SignedPortalResponses.ps1"
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

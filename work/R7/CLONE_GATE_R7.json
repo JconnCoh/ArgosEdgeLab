@@ -1,0 +1,121 @@
+{
+  "schema": "argos_clone_literal_remediation_gate_v1",
+  "checkedUtc": "2026-08-21T16:05:03.2631021Z",
+  "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "mode": "GATE",
+  "manifest": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\R7\\CLONE_REMEDIATION_R7.json",
+  "manifestSha256": "61DA015DDAC958B10E45881141114CBA80FDFD6C6E1B5219F0C2237E4D2341D7",
+  "pairCount": 6,
+  "pairs": [
+    {
+      "source": "work/R4/New-R4Request.ps1",
+      "generated": "work/R7/New-R7Request.ps1",
+      "sourceSha256": "60FA5871ECE01CC7BE8AE22B815B352613B31BBA262AB30F384D40EDDA4F1FC5",
+      "generatedSha256": "94FE7AAA78BA916F361B9566BA729801C346A7A044F3931BD5A35E014246875C",
+      "sourceRoots": [
+        "C:\\Users"
+      ],
+      "generatedRoots": [
+        "C:\\Users"
+      ],
+      "ruleCount": 1
+    },
+    {
+      "source": "work/R4/Prepare-R4.ps1",
+      "generated": "work/R7/Prepare-R7.ps1",
+      "sourceSha256": "34D129A1D0CA9392CB10A155DAB0A8E3758AD19E5C59A803837DCC13DAD720A0",
+      "generatedSha256": "959A9BA73349A1597196E95728BCEF8E89F4D1A8F3B956A5609E7E54969C0A9F",
+      "sourceRoots": [
+        "C:\\APR",
+        "C:\\ProgramData",
+        "C:\\R4S",
+        "C:\\R4Z",
+        "C:\\Users",
+        "U:\\ProjectPortalRO"
+      ],
+      "generatedRoots": [
+        "C:\\APR",
+        "C:\\ProgramData",
+        "C:\\R7S",
+        "C:\\R7Z",
+        "C:\\Users",
+        "U:\\ProjectPortalRO"
+      ],
+      "ruleCount": 6
+    },
+    {
+      "source": "work/R4/Publish-R4.ps1",
+      "generated": "work/R7/Publish-R7.ps1",
+      "sourceSha256": "69165C26D27C4FFBAF0EE072FE87C08F054D4267635737B1A333F3D11E3EABB0",
+      "generatedSha256": "98D1D54E6D513DC9C0BE81CC7D8D1EFB8D996204DFF309B5B92E8940CEA3F471",
+      "sourceRoots": [
+        "\\\\shm-cifs\\Department",
+        "C:\\R4P",
+        "C:\\Users",
+        "I:\\ProjectPortalRO",
+        "U:\\ProjectPortalRO"
+      ],
+      "generatedRoots": [
+        "\\\\shm-cifs\\Department",
+        "C:\\R7P",
+        "C:\\Users",
+        "I:\\ProjectPortalRO",
+        "U:\\ProjectPortalRO"
+      ],
+      "ruleCount": 5
+    },
+    {
+      "source": "work/R4/Collect-R4Response.ps1",
+      "generated": "work/R7/Collect-R7Response.ps1",
+      "sourceSha256": "025652076FB0D47F9A1180D2F62B825A6B596FFE5BD788E7D7A0511CEDD7F90D",
+      "generatedSha256": "85FBFD29656CB926D2EBBA3C7B4B0E7C6EF46DF8E4A277B52A4E5C00D109F104",
+      "sourceRoots": [
+        "\\\\shm-cifs\\Department",
+        "C:\\R4S",
+        "C:\\Users",
+        "U:\\ProjectPortalRO"
+      ],
+      "generatedRoots": [
+        "\\\\shm-cifs\\Department",
+        "C:\\R7S",
+        "C:\\Users",
+        "U:\\ProjectPortalRO"
+      ],
+      "ruleCount": 4
+    },
+    {
+      "source": "work/R4/Test-R4ExactEndpoint.ps1",
+      "generated": "work/R7/Test-R7ExactEndpoint.ps1",
+      "sourceSha256": "AFF29A464BFF64423FF81D5142ABC0FE26454037CBEBFCD2E59A69EB6649ED0C",
+      "generatedSha256": "6BCC0D0DB1DFA13D420ACE30CD5A8FE4E69151DAF29B7710D47DDE4DD5F3BD40",
+      "sourceRoots": [
+        "C:\\ProgramData",
+        "C:\\R4E1",
+        "C:\\Users"
+      ],
+      "generatedRoots": [
+        "C:\\ProgramData",
+        "C:\\R7E1",
+        "C:\\Users"
+      ],
+      "ruleCount": 3
+    },
+    {
+      "source": "work/R4/pkg/payload/R4.ps1",
+      "generated": "work/R7/pkg/payload/R7.ps1",
+      "sourceSha256": "61A3B33BE852E8F3086CCEEFE0E985983580E5348402506230DD69DAAF7D0E00",
+      "generatedSha256": "A6A373457FA0F435BD0D351AE290175A29D50B8EA24F00246C7A5177B2798173",
+      "sourceRoots": [
+        "C:\\ProgramData"
+      ],
+      "generatedRoots": [
+        "C:\\ProgramData"
+      ],
+      "ruleCount": 1
+    }
+  ],
+  "violations": [],
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "evidenceWritten": true
+}

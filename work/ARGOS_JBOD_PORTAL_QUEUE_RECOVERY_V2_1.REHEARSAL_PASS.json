@@ -1,0 +1,87 @@
+{
+    "schema":  "argos_jbod_portal_queue_recovery_v2_1_rehearsal_result",
+    "createdUtc":  "2026-08-17T17:12:14.4055815+00:00",
+    "state":  "PASS_JBOD_PORTAL_QUEUE_RECOVERY_V2_1_REHEARSAL",
+    "windowsPowerShell":  "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "installerSha256":  "E011882048333FF66810A7D4EA507F2FFFD1166DEC6B9E0720683E81688D7AEB",
+    "targetWorkerSha256":  "64F1BFA34A2F54F6D84D14C5D91BC270346E88E3D95E2E303C0A858206E770B2",
+    "approvedPredecessorSha256":  [
+                                      "CBB1D168DACF392259C93898D8CE725BED7C917571937207757423A05FAC4DE0"
+                                  ],
+    "checks":  [
+                   {
+                       "name":  "PATH_BOUNDARIES_199_200_229_230",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "FRESH_EXACT_REQUEST_REFUSED_FOR_QUARANTINE",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "TAMPERED_SIGNATURE_REFUSED",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "TAMPERED_MANIFEST_REFUSED",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "TAMPERED_PAYLOAD_REFUSED",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "EXPIRED_EXACT_REQUEST_PREFLIGHT_NON_MUTATING",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "APPROVED_PREDECESSOR_EXPIRED_REQUEST_WORK_PARTIAL_QUARANTINE",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "TARGET_HASH_IDEMPOTENCY",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "EXPIRED_NOT_EXECUTED_CURRENT_MAINTENANCE_REQUEST_ADVANCED",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "ORIGINAL_SOURCE_PATH_CONTAINERIZED_ROUND_TRIP",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "REQUEST_REPLAY_NO_DUPLICATE_RESPONSE",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "STALE_WORK_COLLISION_AND_SECOND_QUEUE_ITEM",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "INJECTED_RESPONSE_FAILURE_COMPACT_AND_QUEUE_ADVANCE",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "FORCED_TERMINATION_AND_RESTART",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "UNAPPROVED_PREDECESSOR_REFUSED_BEFORE_MUTATION",
+                       "state":  "PASS"
+                   },
+                   {
+                       "name":  "INJECTED_FAILURE_ROLLBACK_AND_TASK_RESTART",
+                       "state":  "PASS"
+                   }
+               ],
+    "checkCount":  16,
+    "exactRequestId":  "REQ_20260816T033053168Z_802B9D0EC0B4",
+    "exactRequestDisposition":  "EXPIRED_VERIFIED_AND_QUARANTINED_NOT_EXECUTED",
+    "currentRequestId":  "REQ_20260817T153923252Z_2EB5616C2942",
+    "currentRequestPreservedAndAdvanced":  true,
+    "originalPathsPreservedInContainer":  true,
+    "duplicateRequestCreated":  false,
+    "detectorScribeInsiteMonitorTasksChanged":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}
