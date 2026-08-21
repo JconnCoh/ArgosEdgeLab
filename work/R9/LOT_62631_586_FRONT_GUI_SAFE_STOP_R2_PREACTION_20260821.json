@@ -1,0 +1,66 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v1",
+  "revision": "LOT_62631_586_FRONT_GUI_SAFE_STOP_R2_20260821",
+  "createdUtc": "2026-08-21T16:59:57.8800368Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "CONTINUITY_CHECKPOINT_PROMOTION_ONLY",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "E2D68512E50A9D1DBA821EE73B7495A1C789582F707EF56E509E6E07BCD3D2A0",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "1A5EA5750E4CE0570F2E3D20CE8E64D3330B074A2E2AA5012D4FB602353138B5"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_SAFE_STOP_R2_CHECKPOINT_20260821.md",
+      "sha256": "3300C190DECE5B7F9976E9B1522E5AD34FB6DD79F20D655B59E0233867B3B0A1"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_SAFE_STOP_R2_CHECKPOINT_20260821.json",
+      "sha256": "4312B8F12995669F0FC5DF6C22F47901636448FF4A11B24EEBE0742FDFAD5BCE"
+    },
+    {
+      "path": "work/R9/pkg/payload/C2R.ps1",
+      "sha256": "1B9E1687C6B70CBB7D128C992157D9FB528292DDD25DEE0EAFD3BDCEDC2B5074"
+    },
+    {
+      "path": "work/R9/pkg/MAINTENANCE_DEFINITION.json",
+      "sha256": "F4546AC895E9C65BA9A5F2ECB31D0671D1FA115B437C960B849520F8BD95D371"
+    },
+    {
+      "path": "work/R9/Build-C2RFinal.ps1",
+      "sha256": "892133918E38DC46C4F1746962F2379F18823F5CEC4A4F63C9A0E962BFE39CEE"
+    },
+    {
+      "path": "work/R9/Test-C2RExactEndpoint.ps1",
+      "sha256": "E6FC3F8F5D4C14F75C9C5CCF9CE27F7F78FADB7FF3515BA64EF88EB78319E387"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

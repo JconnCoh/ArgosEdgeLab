@@ -6012,3 +6012,33 @@ than rerunning it.
   `R_0FE56F0676DA_20260821163245034_fbc68fa1`. The entrypoint failed its bounded
   pre-action state check before task restart; the exact runner remained
   unchanged and no image, catalog, ledger, or wafer was modified.
+
+### A successor is not remediated until every executable assertion is closed
+
+- Failure signature: a successor is described and checkpointed as correcting a
+  stale invariant, while another executable copy of that exact stale invariant
+  remains in the successor payload. Here R9 was described as the ten-row FRONT
+  correction even though `C2R.ps1` still contained
+  `if($catalogRows.Count-ne20)`.
+- Cause: the change was treated as a local text edit instead of a dependency-
+  closure operation. Fixture values and later assertions were changed, but the
+  earlier live catalog-cardinality assertion was not included in a mechanical
+  semantic inventory. Packaging/hashing work then continued before proving
+  that every predecessor count, name, hash, state token, and assertion had been
+  eliminated or explicitly retained.
+- Mandatory preflight: before creating, checkpointing, signing, or publishing a
+  successor, enumerate every executable occurrence of each changed semantic
+  value across payload, fixtures, signer, builder, endpoint rehearsal,
+  publisher, collector, manifests, and gates. Require zero undeclared legacy
+  occurrences and run a positive ten-row case plus a negative non-ten-row case
+  against the exact payload. Describing the intended delta is never evidence
+  that the implementation contains it.
+- Recovery: stop at the last committed checkpoint. Record the incomplete
+  successor as unsigned, unrehearsed, unpublished, and unexecuted. Pin any
+  post-checkpoint edits as unvalidated; do not resume packaging until a fresh
+  task performs the complete semantic inventory and dependency closure from the
+  committed baseline.
+- First observed on 2026-08-21 after safe checkpoint commit
+  `100add177e24d035c133f78169cbfd9c8d583706`. The stale R9 assertion was found
+  by bounded source inspection. R9 had not been signed, published, or executed,
+  and no Argos/JBOD task, image, catalog, ledger, or wafer state changed.

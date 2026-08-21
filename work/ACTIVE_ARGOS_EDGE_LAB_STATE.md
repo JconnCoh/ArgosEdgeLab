@@ -5581,3 +5581,24 @@ current gate, run the bounded review-only processor refresh, and require ten
 completed FRONT ledger rows plus ten FRONT GUI rows. No image bytes, identity
 hardcode, task action, queue action, source deletion, wafer abort, XML,
 training, or production authority was introduced by this checkpoint.
+
+## 2026-08-21 Lot 62631-586 FRONT GUI safe-stop R2 realization
+
+The prior R9 implementation characterization is superseded. R9 was described
+as the ten-row correction while its executable payload still contained
+`if($catalogRows.Count-ne20)`. This was not merely a typo: fixture and later
+assertions were changed without a complete inventory of every executable copy
+of the legacy semantic value. Hashing/checkpoint work then continued without
+dependency closure or a stop-loss.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_SAFE_STOP_R2_CHECKPOINT_20260821.md`,
+SHA-256
+`3300C190DECE5B7F9976E9B1522E5AD34FB6DD79F20D655B59E0233867B3B0A1`.
+
+Disposition is `PENDING_GATE`; work state is `STOPPED_BY_OPERATOR`. Four small
+post-baseline edits are pinned as `UNVALIDATED` and non-authoritative. R9 has
+never been signed, rehearsed, published, or executed. Resume only in a fresh
+task, first performing a complete semantic inventory and dependency-closure
+audit. No additional successor or manual installer is authorized as a
+workaround.

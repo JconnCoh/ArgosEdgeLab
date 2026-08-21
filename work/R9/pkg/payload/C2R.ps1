@@ -72,7 +72,7 @@ function Read-LotState([string]$Phase){
     if($queueRows.Count-ne10){throw "C2R expected ten current queue rows; found $($queueRows.Count)."}
     $confirmed=@($queueRows|Where-Object{[string]$_.state-eq'SCRIBE_CONFIRMED_INSITE_LOOKUP_PENDING'})
     $catalogRows=@($catalog.acquisitions|Where-Object{$expected-contains[string]$_.physicalIdentity})
-    if($catalogRows.Count-ne20){throw "C2R expected twenty current catalog rows; found $($catalogRows.Count)."}
+    if($catalogRows.Count-ne10){throw "C2R expected ten current FRONT catalog rows; found $($catalogRows.Count)."}
     $overlayKeys=@{};foreach($row in @($overlay.rows)){$key=Normalize-Key ([string]$row.acquisitionKey);if($expected-contains$key){$overlayKeys[$key]=$true}}
     $matchedRows=@($catalogRows|Where-Object{$overlayKeys.ContainsKey((Normalize-Key ([string]$_.physicalIdentity)))})
     $staleRows=@($matchedRows|Where-Object{[string]$_.routeState-like'HOLD_INSITE_*'})
