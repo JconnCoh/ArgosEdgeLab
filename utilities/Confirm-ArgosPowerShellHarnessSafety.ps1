@@ -49,6 +49,15 @@ foreach ($errorRecord in @($parserErrors)) {
     Add-Violation 'POWERSHELL_PARSE_ERROR' ([int]$errorRecord.Extent.StartLineNumber) ([string]$errorRecord.Message)
 }
 
+$simplifiedWhereTokenAdjacency = @([regex]::Matches(
+    $source,
+    '(?im)\bWhere-Object[ \t]+[A-Za-z_][A-Za-z0-9_.]*[ \t]+-(?:eq|ne|gt|ge|lt|le)(?=[^\s\r\n])'
+))
+foreach ($match in $simplifiedWhereTokenAdjacency) {
+    $line = 1 + @([regex]::Matches($source.Substring(0, $match.Index), "`n")).Count
+    Add-Violation 'SIMPLIFIED_WHERE_OPERATOR_TOKEN_BOUNDARY' $line 'Simplified Where-Object syntax requires whitespace between the comparison operator and its operand.'
+}
+
 $parameterNames = @()
 if ($null -ne $ast.ParamBlock) { $parameterNames = @($ast.ParamBlock.Parameters | ForEach-Object { $_.Name.VariablePath.UserPath }) }
 $hasPreflight = $parameterNames -contains 'Preflight'
@@ -213,6 +222,7 @@ $result = [ordered]@{
     externalPowerShellAssignments = $externalAssignments.ToArray()
     conditionalCollectionAssignments = $conditionalCollectionAssignments.ToArray()
     conditionalCollectionAssignmentCount = $conditionalCollectionAssignments.Count
+    simplifiedWhereOperatorTokenAdjacencyCount = $simplifiedWhereTokenAdjacency.Count
     renderedFormatCommandCount = $formatCommands.Count
     broadRecursiveWorkspaceCommandCount = $broadRecursiveCommands.Count
     warnings = $warnings.ToArray()

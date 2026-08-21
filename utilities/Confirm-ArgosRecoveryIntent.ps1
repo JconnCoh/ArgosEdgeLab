@@ -162,7 +162,7 @@ if ($mode -eq 'OBSERVE') {
             if ([string]::IsNullOrWhiteSpace([string](Get-MemberValue $source $property ''))) { Add-Violation 'OBSERVATION_SOURCE_CONTRACT_INCOMPLETE' "Observation source omitted $property." }
         }
         $maximumRows = [int](Get-MemberValue $source 'maximumRows' 0)
-        if ($maximumRows -lt 1 -or $maximumRows -gt 1000) { Add-Violation 'OBSERVATION_ROW_BOUND_INVALID' 'Observation maximumRows must be 1..1000.' }
+        if ($maximumRows -lt 1 -or $maximumRows -gt 10000) { Add-Violation 'OBSERVATION_ROW_BOUND_INVALID' 'Observation maximumRows must be 1..10000.' }
     }
     $fields = @(Get-MemberValue $observation 'requestedFields' @())
     if ($fields.Count -lt 1 -or $fields.Count -gt 64 -or @($fields | Sort-Object -Unique).Count -ne $fields.Count) { Add-Violation 'OBSERVATION_FIELD_SET_INVALID' 'Observation requestedFields must be 1..64 unique fields.' }

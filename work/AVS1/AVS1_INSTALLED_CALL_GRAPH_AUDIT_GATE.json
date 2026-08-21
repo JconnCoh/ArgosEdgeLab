@@ -1,0 +1,64 @@
+{
+  "schema": "argos_avs1_installed_call_graph_audit_gate_v1",
+  "createdUtc": "2026-08-21T22:37:00Z",
+  "state": "PASS_EXACT_INSTALLED_DIRECT_CALL_GRAPH_AUDIT_WITH_ONE_PROVED_LIVE_FAILURE",
+  "signedResponse": {
+    "requestId": "REQ_20260821T221837376Z_04C5A6696D88",
+    "responseId": "R_8D1D77EB8AD0_20260821222027680_bcba8bef",
+    "responseState": "PASS_DATA_PULL",
+    "responseZipSha256": "02D5DBC1E09ABA4A2D71314CA30B536F72CEEB88141724A33FE335D5EE7A5873",
+    "responseManifestSha256": "70893F040178EDCC40BC48D1743EECFFE6B8367C8D12B99ED70D7977B3D418B7",
+    "responseSignatureSha256": "26BFD520FC7E20A25C429F418D542134FD841246FD02A8A9D5A772D387C5DD1B",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "signatureVerified": true,
+    "resultSha256": "3CF93896F8C744FF991E97468CF25E472290B9C0992D423D6ECF0019C9710E3A",
+    "payloadZipSha256": "13A4421668C659A33B71F2771482196E341A470B144C12B982EEDF0BB5EDA647",
+    "returnedFiles": 9,
+    "returnedFilesHashVerified": true
+  },
+  "currentFailure": {
+    "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/processor/PROCESSOR_LOOP_FAILURE.txt",
+    "selector": "entire bounded 615-byte text file",
+    "expected": "no ordered-consumer failure",
+    "observed": "Ordered consumer: INVENTORY; named parameter MetadataSnapshotRoot not found on Invoke-JbodAllWaferInventory.ps1",
+    "uniqueness": 1,
+    "sha256": "7566DBF2704BB7D45D15F62C9F0953D72946FE3B016873C02F56D3B82FC50DD5",
+    "state": "FAIL_LIVE_RUNNER_INVENTORY_PARAMETER_BINDING"
+  },
+  "directNamedCallRows": [
+    {"id": "RUNNER_INVENTORY_INSTALLED", "calleeSha256": "8919C3DD4AC04FD662B57E356AC6E1A70BD614E97AFC270EB4B8FF617D705160", "arguments": ["RawSearchRoot", "StateRoot", "MetadataSnapshotRoot", "RelayQueueRoot", "StableAgeSeconds", "StablePasses", "QueueRelaySummary"], "missing": ["MetadataSnapshotRoot"], "state": "FAIL_PARAMETER_SURFACE"},
+    {"id": "RUNNER_INVENTORY_CORRECTED", "calleeSha256": "BF0BAF295F3D1F3234C5C2A5DE184AFEA4BE446BB9593BE9E10BB0E8F932F50A", "arguments": ["RawSearchRoot", "StateRoot", "RelayQueueRoot", "StableAgeSeconds", "StablePasses", "QueueRelaySummary"], "missing": [], "state": "PASS_PARAMETER_SURFACE"},
+    {"id": "RUNNER_PROCESSING", "calleeSha256": "8050EEB71923DC69EBD0A81F6C95840A7BD6215998E8546F9170C5A051B936EB", "arguments": ["ConfigPath", "MaximumJobs", "PlanOnly"], "missing": [], "state": "PASS_PARAMETER_SURFACE"},
+    {"id": "RUNNER_SCRIBE_QUEUE", "calleeSha256": "F7505FD013D2B908E2E38F9205E9D767E6A30E7DE42724C94B657BA358822418", "arguments": ["ConfigPath"], "missing": [], "state": "PASS_PARAMETER_SURFACE"},
+    {"id": "PROCESSING_DASHBOARD", "calleeSha256": "036650143A582222CF46ED6892AE81EB3D90582ED558191D95626176D2E1BBFB", "arguments": ["ConfigPath"], "missing": [], "state": "PASS_PARAMETER_SURFACE"},
+    {"id": "PROCESSING_BARE", "calleeSha256": "3E0FCE6BADF06CE4D4C5E5BA26DB1590C5A16142D2112338B6213CEF7A971BF7", "arguments": ["JobConfigPath"], "missing": [], "state": "PASS_PARAMETER_SURFACE"},
+    {"id": "PROCESSING_BOWCOMP", "calleeSha256": "F45FD4E54D30B3755455F9C9AD0ABEBA4E3FDAE81F90E0FB0D6AC1FC5D129698", "arguments": ["JobConfigPath", "WorkerCount"], "missing": [], "state": "PASS_PARAMETER_SURFACE"},
+    {"id": "PROCESSING_FRONT", "calleeSha256": "FA23A0C40D681A033D65224EE4A7221B5801D2396EB5AF536E66B672065DEB4E", "arguments": ["JobConfigPath", "WorkerCount"], "missing": [], "state": "PASS_PARAMETER_SURFACE"},
+    {"id": "PROCESSING_REFERENCE_REGISTRY", "calleeSha256": "5728DCE83036727BB035819A25374537E590AF7EFE3EAE8C095FCCEE9612C897", "arguments": ["ConfigPath"], "missing": [], "state": "PASS_PARAMETER_SURFACE"},
+    {"id": "TRAY_COMPLETED_LOT", "calleeSha256": "13A4CF7984D11058CE3F1F296E0913E06EE4228FE56FD331817220768B300A3A", "arguments": ["StateRoot"], "missing": [], "state": "PASS_PARAMETER_SURFACE"},
+    {"id": "TRAY_INSITE_EXPORT", "calleeSha256": "653E5B38208A4E4C2E8E848DB16FF6CCD49BA51AC748F62005F6C01D4B372F26", "arguments": ["StateRoot", "MetadataSnapshotRoot", "OutputPath"], "missing": [], "state": "PASS_PARAMETER_SURFACE"},
+    {"id": "TRAY_INSITE_IMPORT", "calleeSha256": "45965930699A0F0C38098B65E5A153C5DE360103BC9FED345AC5811B6F1FBD0D", "arguments": ["StateRoot", "MetadataSnapshotRoot", "MesSnapshotPath"], "missing": [], "state": "PASS_PARAMETER_SURFACE"}
+  ],
+  "fullDatasetGate": {
+    "path": "work/AVS1/AVS1_LIVE_METADATA_GATE.json",
+    "sha256": "0E0E4473D80D2716ABA4A8BD7AA11A20CE1257EF195F55A4271CA7028BD068E9",
+    "verifiedRows": 745,
+    "targetFrontRows": 10,
+    "nonFrontImageConfirmedRows": 47,
+    "nonFrontOtherwiseEligibleRows": 12,
+    "nonFrontAcceptedRows": 12,
+    "state": "PASS_COMPLETE_PRODUCER_STATE_PARITY"
+  },
+  "decision": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_DECISION_20260821.md",
+    "sha256": "72E997AAF90493D04D5A7DDE00E4C4803040CCAECE5606A2439CA7A23CFFEC49",
+    "selectedRemedy": "D_WITH_REQUIRED_B_COMPONENTS",
+    "endpointMutationHasPoint": true,
+    "processorRestartHasPoint": true
+  },
+  "scope": "direct orchestration and GUI-refresh call graph; detector scoring algorithms unchanged",
+  "mutationsPerformed": false,
+  "imageBytesRead": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

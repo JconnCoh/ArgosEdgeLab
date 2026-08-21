@@ -1,0 +1,27 @@
+{
+  "schema": "argos_avs1_live_metadata_gate_v1",
+  "createdUtc": "2026-08-21T22:36:06.8047085Z",
+  "state": "PASS_AVS1_EXACT_PREDICATES_AGAINST_SIGNED_LIVE_METADATA",
+  "windowsPowerShell": {"major": 5, "minor": 1, "edition": "Desktop"},
+  "sources": {
+    "verifiedOverlaySha256": "F96CFFF67B286173A5608C4DCA53FE811E2E55EEE934DE8F80D5242A9AB68544",
+    "catalogSha256": "DE957D63D512F90412B6DB59A7C982629183787811EC2D70190B9D07C366AA5B",
+    "ledgerSha256": "D4D09ED9EE52803B6C5CA6E93AC562174090A1A8655E62B763FA520E14D716CA",
+    "dashboardSha256": "7EA0C51DB8366344AB6F923277BE4E81E22491A1C36B796E119BD91CBD17C764"
+  },
+  "payload": [
+    {"file": "Run-JbodAllWaferProcessor.ps1", "sha256": "8EB83C05CA650C831D2DE8A6AB89ABD2941271B05B31FA93BCFFB553DEAAA892", "parserErrors": 0},
+    {"file": "Invoke-JbodAllWaferInventory.ps1", "sha256": "BF0BAF295F3D1F3234C5C2A5DE184AFEA4BE446BB9593BE9E10BB0E8F932F50A", "parserErrors": 0},
+    {"file": "Invoke-JbodAllWaferProcessingPass.ps1", "sha256": "8050EEB71923DC69EBD0A81F6C95840A7BD6215998E8546F9170C5A051B936EB", "parserErrors": 0},
+    {"file": "Update-JbodDashboardManifest.ps1", "sha256": "036650143A582222CF46ED6892AE81EB3D90582ED558191D95626176D2E1BBFB", "parserErrors": 0},
+    {"file": "Show-JbodAllWaferTray.ps1", "sha256": "C03812C6889B102DFD9B3CB466E70B06B8943C1123A882EB0ADE972C641DAB2B", "parserErrors": 0}
+  ],
+  "inventory": {"runnerInventoryParameterSurface": "PASS", "verifiedRowsAccepted": 745, "targetRowsAccepted": 10},
+  "processing": {"targetRowsAccepted": 10, "distinctTargetFamilies": 1, "nonFrontImageRowsObserved": 47, "nonFrontImageRowsEligibleUnderHumanState": 12, "nonFrontImageRowsAccepted": 12},
+  "dashboard": {"completedFrontLedgerRows": 32, "unambiguousHistoricalFrontCandidates": 3, "currentFrontDashboardIdentities": 29, "targetFrontLedgerRowsBeforeRepair": 0},
+  "tray": {"scriptScopedLastActivityReferences": 0, "formTagLastActivityReferences": 4},
+  "mutationsPerformed": false,
+  "imageBytesRead": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

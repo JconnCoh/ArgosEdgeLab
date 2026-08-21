@@ -1,0 +1,62 @@
+{
+  "schema": "argos_project_portal_prepublication_path_gate_v1",
+  "createdUtc": "2026-08-21T23:04:00Z",
+  "state": "PASS_PROJECT_PORTAL_PREPUBLICATION_PATH_GATE",
+  "requestId": "REQ_20260821T230305923Z_1BDA7CA5CE20",
+  "jobClass": "STATUS",
+  "requestZip": "C:/AVS1S/REQ_20260821T230305923Z_1BDA7CA5CE20.ready.zip",
+  "requestZipBytes": 1052,
+  "requestZipSha256": "4AE1C3035A70590880C7A1B0F688EDDB52156E17F8174A1FC04474FF57413599",
+  "requestManifestSha256": "68445B4806A46276C51D7FAE546CA2119B219548ACA2CB2895BDD37242361A44",
+  "requestSignatureSha256": "DF10DB7BD4F6AE6518A1B561844DF4F0ABA058C179CFAA413762B8789AB0F5C0",
+  "definition": {"path": "work/AVS1/AVS1_POST_FAILURE_STATUS_DEFINITION.json", "sha256": "E6CE0311DBB759647333D3B216EB720F127DCBC5D31ED86556A4490E6F8928A4"},
+  "installedRoute": {
+    "endpointWorkerSha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+    "endpointConfigPath": "C:/ProgramData/ArgosProjectPortalRO/config/endpoint_jbod.json",
+    "endpointConfigSha256": "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F",
+    "endpointConfigEvidenceSha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "installedRouteRootSetSha256": "2D1DFA2D56F525395BE871B206EDD7649C77D1E1EA47B940332165E5F3F65BAE",
+    "transportRevisionSha256": "843629F44D8C310FAE201EAD808509FBECF3FC3C04D8D16B0D67CCADEFAE2DDB",
+    "completeRouteGate": {"path": "work/R9/R9_COMPLETE_ROUTE_GATE.json", "state": "PASS_R9_COMPLETE_ROUTE_GATE", "routePathRowsEvaluated": 127}
+  },
+  "roundTripRoots": {
+    "shareRequestStagingAndArchiveRoot": "U:/ProjectPortalRO/requests",
+    "endpointIncomingRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/incoming",
+    "endpointWorkRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/state/work",
+    "endpointResponsePartialAndReadyRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/responses",
+    "endpointResponseQuarantineRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/state/response_quarantine",
+    "responseSenderWatchAndSentRoot": "C:/ProgramData/ArgosProjectPortalRO/to_gateway",
+    "gatewayShareResponseStagingAndArchiveRoot": "U:/ProjectPortalRO/responses",
+    "laptopExtractionRoot": "C:/AVS1SR"
+  },
+  "requestContract": {
+    "payloadFiles": 0,
+    "maximumResultBytes": 1048576,
+    "maximumResultLeaves": ["PORTAL_RESPONSE_MANIFEST.json", "PORTAL_RESPONSE_MANIFEST.sig", "RESULT.json", "FAILURE.json"],
+    "longestResultLeaf": "PORTAL_RESPONSE_MANIFEST.json"
+  },
+  "reservedSuffixCharacters": 32,
+  "routeRows": [
+    {"hop": "localSignedManifest", "pathLength": 80, "effectiveLength": 112, "longestComponentLength": 42, "state": "PASS_PATH_BUDGET"},
+    {"hop": "localFinalZip", "pathLength": 55, "effectiveLength": 87, "longestComponentLength": 46, "state": "PASS_PATH_BUDGET"},
+    {"hop": "shareUpload", "pathLength": 78, "effectiveLength": 110, "longestComponentLength": 50, "state": "PASS_PATH_BUDGET"},
+    {"hop": "shareReady", "pathLength": 74, "effectiveLength": 106, "longestComponentLength": 46, "state": "PASS_PATH_BUDGET"},
+    {"hop": "endpointIncoming", "pathLength": 130, "effectiveLength": 162, "longestComponentLength": 42, "state": "PASS_PATH_BUDGET"},
+    {"hop": "endpointWork", "pathLength": 110, "effectiveLength": 142, "longestComponentLength": 28, "state": "PASS_PATH_BUDGET"},
+    {"hop": "endpointResponsePartial", "pathLength": 139, "effectiveLength": 171, "longestComponentLength": 49, "state": "PASS_PATH_BUDGET"},
+    {"hop": "responseSenderPending", "pathLength": 132, "effectiveLength": 164, "longestComponentLength": 47, "state": "PASS_PATH_BUDGET"},
+    {"hop": "shareResponse", "pathLength": 80, "effectiveLength": 112, "longestComponentLength": 51, "state": "PASS_PATH_BUDGET"},
+    {"hop": "laptopResponse", "pathLength": 61, "effectiveLength": 93, "longestComponentLength": 51, "state": "PASS_PATH_BUDGET"},
+    {"hop": "laptopResult", "pathLength": 69, "effectiveLength": 101, "longestComponentLength": 47, "state": "PASS_PATH_BUDGET"}
+  ],
+  "maximumEffectiveLength": 171,
+  "maximumComponentLength": 51,
+  "exactFinalZipExtractionPassed": true,
+  "exactFinalZipSignaturePassed": true,
+  "publicationAuthorized": true,
+  "maximumRequestsAuthorized": 1,
+  "retryOnFailure": false,
+  "readOnly": true,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

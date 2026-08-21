@@ -1,0 +1,75 @@
+{
+  "schema": "argos_all_valid_inspections_data_pull_signed_terminal_stop_v1",
+  "createdUtc": "2026-08-21T20:33:00Z",
+  "state": "FAIL_ALL_VALID_INSPECTIONS_DATA_PULL_SIGNED_TERMINAL_RESPONSE",
+  "stopState": "STOP_READ_ONLY_AUDIT_REQUIRED_SOURCE_ABSENT",
+  "disposition": "WITHDRAWN",
+  "incidentId": "ALL_VALID_INSPECTIONS_TERMINAL_AND_GUI_VISIBILITY",
+  "responseState": "FAILED",
+  "objective": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_VISIBILITY_OBJECTIVE_20260821.json",
+    "sha256": "303FBC1AEC97080DB9C4C377737FD2CDFA481054A219EEA713591522C9764383"
+  },
+  "request": {
+    "requestId": "REQ_20260821T202917395Z_675B67258EC9",
+    "jobClass": "DATA_PULL",
+    "zip": "C:/L586Q/REQ_20260821T202917395Z_675B67258EC9.ready.zip",
+    "zipBytes": 1361,
+    "zipSha256": "95DE527CCC30A054405F95FDA42B68A1391DB333297639ABC3EDA273379695CF",
+    "manifestSha256": "E8867591199C1308E9962DADC6DFB1FA00B55159A52F84D089431D1B771F900A",
+    "relativePathCount": 13,
+    "maximumRequestsAuthorized": 1,
+    "retryOnFailure": false
+  },
+  "response": {
+    "responseId": "R_4E81B46C722B_20260821203034791_6c70a719",
+    "state": "FAILED",
+    "detail": "DATA_PULL source not found: R10.ps1",
+    "zip": "C:/L586R/R_4E81B46C722B_20260821203034791_6c70a719.ready.zip",
+    "zipBytes": 1576,
+    "zipSha256": "7D31F4EF2CFD3BD16248C3FC99812E5439FEAA66E1EF4A6D4D67C2B9C5D18A44",
+    "signatureVerified": true,
+    "sourceRole": "JBOD",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "returnedFiles": [
+      {"path": "FAILURE.json", "bytes": 648, "sha256": "73B99F291180F451FCE1A1CD4D09B9B271AB10D54E5C0DA7DC6BFE56B2576F6D"}
+    ]
+  },
+  "provedFacts": {
+    "installedR10HelperState": "ABSENT",
+    "r10HelperAbsenceConsistentWithFailedMaintenanceRollback": true,
+    "otherRequestedSnapshotFilesReturned": 0,
+    "completePipelineReconciliationAvailable": false,
+    "tenWaferRegressionAvailable": false,
+    "processorRestartHasPoint": "NOT_ESTABLISHED",
+    "guiRedesignHasPoint": false
+  },
+  "decisionOptions": {
+    "A": "NOT_ESTABLISHED_NO_CURRENT_PIPELINE_SNAPSHOT",
+    "B": "NOT_ESTABLISHED_NO_CURRENT_PIPELINE_SNAPSHOT",
+    "C": "NOT_ESTABLISHED_NO_CURRENT_PIPELINE_SNAPSHOT",
+    "D": "NOT_ESTABLISHED_NO_CURRENT_PIPELINE_SNAPSHOT"
+  },
+  "stopReason": "The one authorized all-or-nothing audit request used a rolled-back optional helper as a required file. The signed failure returned no catalog, queue, ledger, dashboard, heartbeat, runner, or live tray source. The no-retry and new-premise-failure boundaries require an immediate stop.",
+  "forbiddenNextActions": [
+    "publish a retry or revised data-pull request in this incident",
+    "create a diagnostic helper or endpoint capability package",
+    "restart the processor",
+    "mutate queue or ledger data",
+    "change GUI or processor code",
+    "name or design R11"
+  ],
+  "nextPermittedAction": "A future separately authorized audit must classify every DATA_PULL source as required-present, omit R10.ps1, and bind its proved absence from this signed response and R10 rollback evidence before publication.",
+  "endpointWorkerChanged": false,
+  "installedChanges": 0,
+  "taskActions": [],
+  "processActions": [],
+  "queueMutation": false,
+  "ledgerMutation": false,
+  "guiMutation": false,
+  "imageRead": false,
+  "sourceDeletion": false,
+  "waferAction": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

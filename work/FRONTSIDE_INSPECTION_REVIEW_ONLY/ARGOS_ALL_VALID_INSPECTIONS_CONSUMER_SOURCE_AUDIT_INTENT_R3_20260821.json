@@ -1,0 +1,49 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-21T20:54:00Z",
+  "incidentId": "ALL_VALID_INSPECTIONS_TERMINAL_AND_GUI_VISIBILITY",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {
+    "signedPremiseFailures": 4,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {"path": "work/R8/R8_TERMINAL_RESPONSE_GATE.json", "sha256": "EB329A4E518DD5A0C15CCDF196219F636AC710A0F8E15EE12234B1B165D39F42", "state": "FAILED"},
+      {"path": "work/R9/R9_TERMINAL_RESPONSE_GATE.json", "sha256": "445B1CDA8C28E5E0C8239C913BC6C0B2BBB72B6DEB4637615482B0206F2AE91A", "state": "FAILED"},
+      {"path": "work/R10/R10_TERMINAL_RESPONSE_GATE.json", "sha256": "742EA6577934BC0816A16A978208DEB5CB6C2308F8A745C89B87A689CD44206D", "state": "FAILED"},
+      {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_DATA_PULL_SIGNED_TERMINAL_STOP_20260821.json", "sha256": "69F045A5C44BA9A975F8CDB4C783364B5A22730786F8572D9218D0A3F86E924F", "state": "FAILED"},
+      {"path": "work/RA1A/RA1A_WITHDRAWN_LOCAL_REHEARSAL_FAILURE_20260821.json", "sha256": "965FDF29C15DAB132B68A6E84138DFDB92F9F9CF8323E18EAF2FF1505AD9ED64", "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"}
+    ],
+    "postFailureObservation": {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_RECOVERY_OBSERVATION_EVIDENCE_20260821.json", "sha256": "BA34E5FD50207AEEC583A886420A628848DAC4434EB4972C6708530940A6B128"},
+    "workflowReviewClearance": {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_DECISION_20260821.md", "sha256": "535A374231D7263749F8765727639209FDB0ABD9B429B06A1361C50DB84C9EC5"}
+  },
+  "route": {
+    "type": "DATA_PULL", "jobClass": "DATA_PULL", "installedCodeChange": false, "helperInstall": false,
+    "taskActions": [], "processActions": [], "queueMutation": false, "ledgerMutation": false,
+    "sourceMutation": false, "imageRead": false, "waferAction": false, "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/pkg/payload/W.ps1", "sha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6"},
+    "installedConfigEvidence": {"path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json", "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"},
+    "capabilityEvidence": {"path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json", "sha256": "12BFF65114DFB1C20B8B4271CD592D80857CFE446595CB9F303868288F62F65E"},
+    "qualifiedEndpointGate": {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_EXACT_ENDPOINT_GATE.json", "sha256": "BC97C8D81F439D239CBF59B41EC1F663F2039751AD506FE59B279C72B21A8F45"},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "requiredPresentClassification": {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_REQUIRED_PRESENT_CONSUMERS_R3_20260821.json", "sha256": "7B7DADCBBD27936889F39F2AF126F20A9E28E788CF6F1F91CA7AD122F5B8626B"},
+    "exactSources": [
+      {"sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Invoke-JbodAllWaferInventory.ps1", "sourceSchema": "installed text file", "selector": "SHA-256 and bounded text", "uniquenessKey": "normalizedPath", "maximumRows": 1},
+      {"sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Update-JbodScribeIdentityQueue.ps1", "sourceSchema": "installed text file", "selector": "SHA-256 and bounded text", "uniquenessKey": "normalizedPath", "maximumRows": 1},
+      {"sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Invoke-JbodAllWaferProcessingPass.ps1", "sourceSchema": "installed text file", "selector": "SHA-256 and bounded text", "uniquenessKey": "normalizedPath", "maximumRows": 1},
+      {"sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Update-JbodDashboardManifest.ps1", "sourceSchema": "installed text file", "selector": "SHA-256 and bounded text", "uniquenessKey": "normalizedPath", "maximumRows": 1}
+    ],
+    "requestedCapabilities": ["approvedRootExactFiles"],
+    "requestedFields": ["consumer.sha256", "consumer.dashboardCompletedSelection", "consumer.partialSessionHandling", "consumer.ledgerToDashboardMapping", "consumer.processorRefreshOrder"],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {"supportedRemedy": "", "supportingObservation": {"path": "", "sha256": ""}, "endpointMutationNecessary": false, "singleMutationAttemptAuthorized": false},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

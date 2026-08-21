@@ -1,0 +1,88 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-21T22:37:00Z",
+  "incidentId": "ALL_VALID_INSPECTIONS_TERMINAL_AND_GUI_VISIBILITY",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 2,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": true,
+    "failureEvidence": [
+      {
+        "path": "work/R9/R9_TERMINAL_RESPONSE_GATE.json",
+        "sha256": "445B1CDA8C28E5E0C8239C913BC6C0B2BBB72B6DEB4637615482B0206F2AE91A",
+        "state": "FAILED"
+      },
+      {
+        "path": "work/R10/R10_TERMINAL_RESPONSE_GATE.json",
+        "sha256": "742EA6577934BC0816A16A978208DEB5CB6C2308F8A745C89B87A689CD44206D",
+        "state": "FAILED"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_RECOVERY_OBSERVATION_EVIDENCE_R4_20260821.json",
+      "sha256": "E95949C0C311DB3C2E21C05C6DFE0AF8C5B61FA5DA352E92728E356D0705FD76"
+    },
+    "workflowReviewClearance": {
+      "path": "work/AVS1/AVS1_WORKFLOW_REVIEW_CLEARANCE.json",
+      "sha256": "7BE3DF3F675757C6D35E198340BD1E97C322C477033AEAFCF31639B53F3FAB15"
+    },
+    "priorImplementationFailure": {
+      "path": "work/AVIR1/AVIR1_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "C3DBD3318D697B95CCC3B0ECAAA44B2E19036A2EE78B6B3CD7A2A01B8E435932",
+      "classification": "IMPLEMENTATION_FAILURE_NOT_LIVE_PREMISE_FAILURE"
+    }
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": false,
+    "taskActions": [
+      "RESTART:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2",
+      "RESTART:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2"
+    ],
+    "processActions": [
+      "stop the exact stale processor task process only to release the runner mutex, execute one exact live PlanOnly, then start the same task",
+      "restart the exact tray task process only after the event-state fix is installed"
+    ],
+    "queueMutation": true,
+    "ledgerMutation": false,
+    "sourceMutation": true,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/pkg/payload/W.ps1",
+      "sha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+      "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"
+    }
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "D",
+    "supportingObservation": {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_RECOVERY_OBSERVATION_EVIDENCE_R4_20260821.json",
+      "sha256": "E95949C0C311DB3C2E21C05C6DFE0AF8C5B61FA5DA352E92728E356D0705FD76"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

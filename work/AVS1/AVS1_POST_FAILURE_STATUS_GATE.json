@@ -1,0 +1,112 @@
+{
+  "schema": "argos_avs1_post_failure_status_gate_v1",
+  "createdUtc": "2026-08-21T23:06:30Z",
+  "state": "PASS_AVS1_POST_FAILURE_STATUS_OBSERVED",
+  "disposition": "PENDING_GATE",
+  "incidentId": "ALL_VALID_INSPECTIONS_AVS1_POST_FAILURE_TASK_SAFETY",
+  "request": {
+    "requestId": "REQ_20260821T230305923Z_1BDA7CA5CE20",
+    "jobClass": "STATUS",
+    "zipBytes": 1052,
+    "zipSha256": "4AE1C3035A70590880C7A1B0F688EDDB52156E17F8174A1FC04474FF57413599",
+    "manifestSha256": "68445B4806A46276C51D7FAE546CA2119B219548ACA2CB2895BDD37242361A44",
+    "maximumRequestsAuthorized": 1,
+    "retryOnFailure": false
+  },
+  "response": {
+    "responseId": "R_07B0A5DC725F_20260821230519159_a7ea6fee",
+    "state": "PASS_STATUS_COLLECTED",
+    "zip": "C:/AVS1SRX/R_07B0A5DC725F_20260821230519159_a7ea6fee.ready.zip",
+    "zipBytes": 2964,
+    "zipSha256": "803E1F0503AD6E68AFE7CA8EE93632F5171A7E8BDDC00F7C4E89E886D91DEC21",
+    "manifestSha256": "A8CACB7C25035A50525A972962F8A8E08524CF0CE5C1AA480C4FF55D8C9D10FD",
+    "signatureSha256": "2EBC2508DEBAFAD9FDD3858869204437FD8C9A8785A63618F7742942A9E08E7F",
+    "resultSha256": "E33837D771B4C77B0D1305FA10AFCAC4A2BDC176ABEFC8838AA479FC2BB5724F",
+    "signatureVerified": true,
+    "sourceRole": "JBOD",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC"
+  },
+  "fieldEvidence": [
+    {
+      "sourcePath": "ScheduledTask:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2",
+      "selector": "exact configured task row by task name",
+      "expected": "one unique row; report state without action",
+      "observed": "Ready",
+      "uniqueness": "one row",
+      "disposition": "STOPPED_NOT_RUNNING"
+    },
+    {
+      "sourcePath": "ScheduledTask:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2",
+      "selector": "exact configured task row by task name",
+      "expected": "one unique row; report state without action",
+      "observed": "Ready",
+      "uniqueness": "one row",
+      "disposition": "STOPPED_NOT_RUNNING"
+    },
+    {
+      "sourcePath": "ScheduledTask:ArgosEdgeLab.ScribeProposal.ReviewOnly.V2",
+      "selector": "exact configured task row by task name",
+      "expected": "one unique row; report state without action",
+      "observed": "Running",
+      "uniqueness": "one row",
+      "disposition": "RUNNING"
+    },
+    {
+      "sourcePath": "ScheduledTask:ArgosEdgeLab.InsiteBridge.Worker.ReviewOnly.V1",
+      "selector": "exact configured task row by task name",
+      "expected": "one unique row; report state without action",
+      "observed": "Running",
+      "uniqueness": "one row",
+      "disposition": "RUNNING"
+    },
+    {
+      "sourcePath": "ScheduledTask:ArgosEdgeLab.InsiteBridge.Relay.ReviewOnly.V1",
+      "selector": "exact configured task row by task name",
+      "expected": "one unique row; report state without action",
+      "observed": "Running",
+      "uniqueness": "one row",
+      "disposition": "RUNNING"
+    },
+    {
+      "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Invoke-JbodAllWaferProcessingPass.ps1",
+      "selector": "SHA-256 from exact configured installed path",
+      "expected": "pre-AVS1 rollback hash 0B063D452CA76AE5EE3EC1BDF6726853259039683C36E208718B8FE937D23753",
+      "observed": "0B063D452CA76AE5EE3EC1BDF6726853259039683C36E208718B8FE937D23753",
+      "uniqueness": "one configured path",
+      "bytes": 41278,
+      "disposition": "ROLLBACK_DIRECTLY_VERIFIED"
+    },
+    {
+      "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/PROCESSOR_STATUS.json",
+      "selector": "exact configured JSON state path",
+      "expected": "report existence and value without mutation",
+      "observed": "ABSENT",
+      "uniqueness": "one configured path",
+      "disposition": "NO_CURRENT_PROCESSOR_HEARTBEAT"
+    }
+  ],
+  "conclusions": {
+    "avs1Disposition": "WITHDRAWN_NO_REPLAY_NO_SUCCESSOR_PARENT",
+    "processingPassRollbackDirectlyVerified": true,
+    "otherFourAvs1InstalledFileRollbackHashesDirectlyVerified": false,
+    "processorTaskRunning": false,
+    "monitorTaskRunning": false,
+    "scribeAndInsiteTasksRunning": true,
+    "processorStatusPresent": false,
+    "taskAvailabilityRestorationRequired": true,
+    "taskAvailabilityRestorationPerformed": false,
+    "visibilityRemedyRetryAuthorized": false
+  },
+  "installedChanges": 0,
+  "taskActions": [],
+  "processActions": [],
+  "queueMutation": false,
+  "ledgerMutation": false,
+  "sourceMutation": false,
+  "imageRead": false,
+  "sourceDeletion": false,
+  "waferAction": false,
+  "nextAction": "Stop. Do not retry AVS1 or design a visibility successor. Restoring only the stopped processor and monitor tasks requires explicit post-failure authority and a separate exact action contract; no code or data repair is authorized.",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

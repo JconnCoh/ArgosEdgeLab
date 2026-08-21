@@ -1,0 +1,42 @@
+{
+  "schema": "argos_avs1_terminal_response_gate_v1",
+  "createdUtc": "2026-08-21T22:56:00Z",
+  "state": "FAIL_AVS1_SIGNED_TERMINAL_RESPONSE",
+  "responseState": "FAILED",
+  "disposition": "WITHDRAWN",
+  "requestId": "REQ_20260821T225023842Z_68DD43283089",
+  "requestZipSha256": "98E7C701CB2101721AE7F2E3E37625E4DEA1C5B5C55F83216D80F8773FFA3B47",
+  "response": {
+    "responseId": "R_53E919FF3990_20260821225532690_a417fac0",
+    "responseZipSha256": "EFFA984B4E9A6EAE4D4B8891D4584C6D619B6229FBA8B51A959ED750D84E846D",
+    "manifestSha256": "056AC81326388BFA82DCC064C5DF4235BEAA0BF47569275C4FEDF2D5E76EDD09",
+    "signatureSha256": "A28B858DF9AC65070FEDEF47688B6A0AF9C0F03B63942AA46A0E088E825AC836",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "signatureVerified": true,
+    "failureSha256": "BB12168FED1B48FE49209714EB308B004607F2CA0CD20F1D8DCEF5739CAE3C48",
+    "stderrSha256": "2E845652431247B824EDE678D88F4770A8076AF646E6CB27E755F53EF450B606"
+  },
+  "failure": {
+    "primary": "The live dashboard remained on an older schema row without metadata.resultFingerprintState, and strict-mode validation accessed the absent property directly.",
+    "localRecovery": "The entrypoint could not locate the endpoint worker predecessor evidence under its assumed prior-file selector, so it did not restart the processor or tray tasks before exiting.",
+    "endpointWorkerInstalledFileRollbackPathReached": true,
+    "installedRollbackDirectlyVerified": false,
+    "taskAvailabilityDirectlyVerified": false,
+    "possibleTaskState": "STOPPED_PENDING_READ_ONLY_STATUS_AUDIT"
+  },
+  "actions": {
+    "livePlanOnlyReached": true,
+    "tenFrontReadyProved": true,
+    "processorRestartReached": false,
+    "trayRestartReached": false,
+    "ledgerDirectMutationPerformed": false,
+    "sourceDeletionPerformed": false,
+    "waferActionPerformed": false
+  },
+  "futureReuseAllowed": false,
+  "replayAllowed": false,
+  "successorParentAllowed": false,
+  "nextPermittedAction": "One separately gated read-only STATUS request may determine exact installed rollback hashes and processor/tray task states. No mutation retry or successor package is authorized.",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

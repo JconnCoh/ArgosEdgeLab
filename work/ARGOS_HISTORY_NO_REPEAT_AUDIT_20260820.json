@@ -84,9 +84,18 @@
     "HARNESS_CASE_INSENSITIVE_REPLACEMENT_MAP_KEY_COLLISION",
     "HARNESS_CIM_POWERSHELL_LITERAL_FALSE_EXTERNAL_ASSIGNMENT",
     "PREACTION_COLLECTION_CASE_CLAIM_WITHOUT_MACHINE_EVIDENCE",
-    "RECOVERY_OBSERVATION_ROUTE_CAPABILITY_UNPROVEN"
+    "RECOVERY_OBSERVATION_ROUTE_CAPABILITY_UNPROVEN",
+    "RECOVERY_FULL_DATASET_ROW_BOUND",
+    "DATA_PULL_OPTIONAL_ABSENCE_ALL_OR_NOTHING",
+    "OPS_PRODUCER_CONSUMER_IDENTITY_STATE_DRIFT",
+    "OPS_DASHBOARD_CURRENT_FINGERPRINT_HIDES_HISTORY",
+    "GUI_EVENT_SCRIPT_SCOPE_STATE_UNBOUND",
+    "HARNESS_SIMPLIFIED_WHERE_OPERATOR_TOKEN_ADJACENCY",
+    "OPS_RUNNER_CONSUMER_PARAMETER_SURFACE_DRIFT",
+    "GUI_NONBLOCKING_REFRESH_OPTIONAL_SCHEMA_DRIFT",
+    "OPS_ENTRYPOINT_TASK_RECOVERY_PRIOR_EVIDENCE_UNPROVED"
   ],
-  "issueCount": 80,
+  "issueCount": 89,
   "openUnclassifiedIssueCount": 0,
   "preventionPolicy": "work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md",
   "preactionTemplate": "work/templates/ARGOS_ZERO_RECURRENCE_PREACTION.template.json",
@@ -235,6 +244,15 @@
       "futureReuseAllowed": false,
       "replayAllowed": false,
       "successorParentAllowed": false
+    },
+    {
+      "path": "work/AVIR1/final/REQ_AVIR1.ready.zip",
+      "sha256": "B7A203EA417C8A85F99A938F582BDDA4820AEE8BE35D5F0A4A902EE5DB023731",
+      "reason": "SIGNED_TERMINAL_FAILURE_AFTER_SIMPLIFIED_WHERE_OBJECT_COMPARISON_JOINED_GE_OPERATOR_AND_OPERAND_AND_THE_REHEARSAL_BYPASSED_THE_EXACT_STATE_READER",
+      "terminalEvidenceRetained": true,
+      "futureReuseAllowed": false,
+      "replayAllowed": false,
+      "successorParentAllowed": false
     }
   ],
   "legacyEvidence": {
@@ -303,7 +321,16 @@
     "mechanicalReplacementRulesUseOrderedPairsNotCaseInsensitiveHashtableKeys": true,
     "cimPowerShellProcessQueriesUseTypedHelperBoundaryBeforeObjectAssignment": true,
     "preactionCollectionCaseClaimsRequirePinnedMachineEvidence": true,
-    "recoveryObservationRequestedCapabilitiesRequirePinnedRouteEvidence": true
+    "recoveryObservationRequestedCapabilitiesRequirePinnedRouteEvidence": true,
+    "recoveryWholeDatasetObservationBoundAtLeastCurrentAuthoritativeRows": true,
+    "dataPullSourcesMustBeRequiredPresentNotOptionalAbsenceProbes": true,
+    "producerIdentityStateEnumsRequireCrossConsumerPredicateGate": true,
+    "singleHistoricalFrontCompletionRequiresExplicitFingerprintProvenance": true,
+    "winFormsCallbackStateMustBeObjectAnchored": true,
+    "simplifiedWhereComparisonOperatorRequiresSeparateOperandTokenAndExactStateReaderExecution": true,
+    "installedRunnerNamedArgumentsMustResolveAgainstExactConsumerCommandSurface": true,
+    "nonblockingDashboardRefreshRequiresRevisionAndOptionalFieldGate": true,
+    "taskStopRequiresReadableExactPredecessorRestoreMappingAndAvailabilityRecovery": true
   },
   "reviewOnly": true,
   "productionRoutingEnabled": false

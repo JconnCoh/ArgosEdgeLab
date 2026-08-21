@@ -1,0 +1,35 @@
+{
+  "schema": "argos_data_pull_required_present_sources_v1",
+  "createdUtc": "2026-08-21T20:45:00Z",
+  "state": "PASS_DATA_PULL_REQUIRED_PRESENT_SOURCE_CLASSIFICATION",
+  "incidentId": "ALL_VALID_INSPECTIONS_TERMINAL_AND_GUI_VISIBILITY",
+  "excludedOptionalOrAbsentSources": [
+    {
+      "relativePath": "R10.ps1",
+      "classification": "PROVED_ABSENT_AFTER_FAILED_MAINTENANCE_ROLLBACK",
+      "evidence": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_DATA_PULL_SIGNED_TERMINAL_STOP_20260821.json",
+      "requestedInR2": false
+    }
+  ],
+  "requiredPresentSources": [
+    {"relativePath": "identity/SCRIBE_IDENTITY_QUEUE.json", "evidence": "R10 live helper read and schema validation before its later premise failure"},
+    {"relativePath": "catalog/ALL_WAFER_CATALOG.json", "evidence": "R10 live helper read and schema validation before its later premise failure"},
+    {"relativePath": "identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json", "evidence": "signed V40 current confirmed-overlay evidence and unchanged processor family"},
+    {"relativePath": "metadata/verified/ACTIVE_VERIFIED_METADATA_OVERLAY.json", "evidence": "R10 live helper read and schema validation before its later premise failure"},
+    {"relativePath": "processor/PROCESSING_LEDGER.json", "evidence": "installed processor and completed-lot tray contract; required authoritative ledger source"},
+    {"relativePath": "dashboard_manifest.json", "evidence": "operator screenshot showed completed-lot button enabled; installed tray enables it only when manifest, viewer, and launcher exist"},
+    {"relativePath": "processor/PROCESSOR_STATUS.json", "evidence": "R10 live helper read plus operator screenshot fresh WATCHING state"},
+    {"relativePath": "PROCESSOR_CONFIG.json", "evidence": "R10 live helper read, exact schema and review-only contract validation"},
+    {"relativePath": "state/STATUS.json", "evidence": "operator screenshot displayed stable, route-ready, and hold counters sourced from aggregate status"},
+    {"relativePath": "Run-JbodAllWaferProcessor.ps1", "evidence": "R10 maintenance required existing approved runner predecessor and signed failure occurred after runner/config admission"},
+    {"relativePath": "Show-JbodAllWaferTray.ps1", "evidence": "operator directly observed running tray and completed-lot click exception"},
+    {"relativePath": "Open-JbodCompletedLot.ps1", "evidence": "operator screenshot showed enabled button; installed tray requires launcher file before enabling it"}
+  ],
+  "requiredPresentCount": 12,
+  "presentOrAbsentProbeCount": 0,
+  "allOrNothingFailureUnderstood": true,
+  "maximumRequests": 1,
+  "retryOnFailure": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

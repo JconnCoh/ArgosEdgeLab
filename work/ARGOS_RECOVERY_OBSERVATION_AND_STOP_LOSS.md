@@ -88,6 +88,12 @@ Implement at most one supported remedy. A GUI change is ineligible until the
 authoritative ledger/dashboard contains the expected records and the unchanged
 GUI still fails to display them.
 
+A named lot or wafer set may be a regression cohort, but it is not the
+product-level success boundary. When the reported defect is that completed or
+valid inspections disappear generally, the observation must reconcile the
+complete bounded authoritative dataset. `maximumRows` may be 1..10,000 so the
+gate can cover current datasets larger than 1,000 without becoming unbounded.
+
 ## 6. Evidence, not Boolean assurance
 
 New pre-action contracts must pin machine-readable zero/one/many collection

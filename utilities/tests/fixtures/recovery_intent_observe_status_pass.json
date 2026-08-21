@@ -16,7 +16,7 @@
     "qualifiedEndpointGate": {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_EXACT_ENDPOINT_GATE.json", "sha256": "BC97C8D81F439D239CBF59B41EC1F663F2039751AD506FE59B279C72B21A8F45"}
   },
   "observation": {
-    "exactSources": [{"sourcePath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\SCRIBE_IDENTITY_QUEUE.json", "sourceSchema": "argos_jbod_scribe_identity_queue_v1", "selector": "exact incident identities", "uniquenessKey": "physicalIdentity", "maximumRows": 10}],
+    "exactSources": [{"sourcePath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\SCRIBE_IDENTITY_QUEUE.json", "sourceSchema": "argos_jbod_scribe_identity_queue_v1", "selector": "complete bounded current set plus exact incident identities", "uniquenessKey": "physicalIdentity", "maximumRows": 5000}],
     "requestedCapabilities": ["taskState", "configuredJsonStates"], "requestedFields": ["queue.rows", "processor.heartbeat"], "decisionOptions": ["A", "B", "C", "D"], "mutationDecisionDeferred": true
   },
   "mutation": {"supportedRemedy": "", "supportingObservation": {"path": "", "sha256": ""}, "endpointMutationNecessary": false, "singleMutationAttemptAuthorized": false},

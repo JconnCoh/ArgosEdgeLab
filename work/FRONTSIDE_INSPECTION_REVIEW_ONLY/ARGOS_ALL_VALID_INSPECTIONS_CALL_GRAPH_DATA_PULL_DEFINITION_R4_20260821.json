@@ -1,0 +1,23 @@
+{
+  "schema": "argos_project_portal_request_definition_v1",
+  "targetRole": "JBOD",
+  "jobClass": "DATA_PULL",
+  "handler": "",
+  "maxResultBytes": 16777216,
+  "parameters": {
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "relativePaths": [
+      "processor/PROCESSOR_LOOP_FAILURE.txt",
+      "Select-JbodAppearanceReferenceFamily.ps1",
+      "Invoke-BareAcquisition.ps1",
+      "Invoke-BowCompAcquisition.ps1",
+      "Invoke-FrontsideScratchTestAcquisition.ps1",
+      "Update-JbodReferenceRegistry.ps1",
+      "Export-JbodPendingInsiteRequest.ps1",
+      "Import-JbodLiveInsiteSnapshot.ps1",
+      "ArgosRawAcquisitionAdmission.psm1"
+    ],
+    "maximumFiles": 9,
+    "maximumBytes": 16777216
+  }
+}

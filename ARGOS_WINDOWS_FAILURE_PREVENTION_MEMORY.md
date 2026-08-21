@@ -6219,3 +6219,220 @@ than rerunning it.
   `OBSERVATION_ROUTE_CAPABILITY_GAP` for `exactProcessInventory` before signing,
   publication, endpoint contact, task action, queue/ledger mutation, GUI edit,
   image read, source deletion, or wafer action.
+
+### A sample-sized observation cap cannot prove an all-inspections invariant
+
+- Failure signature: `Confirm-ArgosRecoveryIntent.ps1` rejects a read-only
+  whole-catalog reconciliation with `OBSERVATION_ROW_BOUND_INVALID` because
+  `maximumRows` exceeds 1,000, even though the current processor reports about
+  1,932 stable inputs.
+- Cause: the original validator confused a sample-sized row cap with bounded
+  execution. That made the named ten-wafer cohort easier to validate than the
+  actual requirement that every valid inspection have an explicit disposition
+  and every completion appear in the GUI.
+- Mandatory preflight: distinguish the regression cohort from the product
+  invariant. Permit a still-bounded maximum of 10,000 rows per exact source and
+  require explicit source, selector, uniqueness key, requested fields, and byte
+  limits. Reject counts inferred from similarly named fields.
+- Recovery: update the validator and its PASS fixture before signing. Rerun the
+  original exact read-only intent against the complete catalog/hold/ledger/
+  dashboard sets. Do not replace the full reconciliation with a ten-row sample.
+- First observed on 2026-08-21 while preflighting
+  `ARGOS_ALL_VALID_INSPECTIONS_READ_ONLY_AUDIT_INTENT_20260821.json`. The failure
+  occurred before signing, endpoint contact, publication, task or process
+  action, queue/ledger/GUI mutation, image read, source deletion, or wafer
+  action.
+
+### DATA_PULL cannot use an optional rolled-back artifact to prove absence
+
+- Failure signature: a multi-file `DATA_PULL` returns signed terminal `FAILED`
+  with `DATA_PULL source not found: <path>` and returns none of the other
+  requested snapshot files.
+- Cause: the endpoint preflights every requested source as an existing file and
+  fails the complete request on the first absence. A maintenance helper created
+  by a failed request is not a valid required source: queue-safe maintenance
+  rollback removes or quarantines a create-on-install file when its verifier
+  fails. Requesting that helper as though it must still be installed confuses
+  absence evidence with file retrieval.
+- Mandatory preflight: classify every requested `DATA_PULL` path as
+  `REQUIRED_PRESENT`, never `PRESENT_OR_ABSENT`. Prove optional absence through
+  an already qualified status/existence field, exact admin read-only evidence,
+  or the signed maintenance rollback record. Do not place optional files in an
+  all-or-nothing data pull.
+- Recovery: preserve the signed terminal failure, publish no retry in the same
+  incident, and make no restart or product-fix decision from the empty snapshot.
+  A future independently authorized audit must omit the rolled-back helper and
+  bind its absence separately before publication.
+- First observed on 2026-08-21 for request
+  `REQ_20260821T202917395Z_675B67258EC9`. Signed response
+  `R_4E81B46C722B_20260821203034791_6c70a719` proved `R10.ps1` absent and
+  returned only `FAILURE.json`. No installed change, task/process action,
+  queue/ledger/GUI mutation, image read, source deletion, or wafer action
+  occurred.
+
+### Producer identity-state expansion can poison stale consumer predicates
+
+- Failure signature: the authoritative confirmed/verified metadata producer
+  emits three approved identity states, while installed inventory, processor,
+  and dashboard consumers accept inconsistent one- or two-state subsets. The
+  inventory pass terminates, the resident processor stops refreshing, valid
+  FRONT acquisitions remain held, and the GUI catalog stays stale.
+- Cause: the producer enum grew without one frozen cross-consumer contract.
+  Equality predicates were copied into separate consumers and drifted. The
+  same valid identity was therefore accepted by the producer but rejected at
+  later stages.
+- Mandatory preflight: enumerate the producer's exact approved state set and
+  compare it mechanically with every inventory, processing, ledger, dashboard,
+  and GUI-refresh predicate. Any narrower consumer must be explicitly scoped by
+  domain and have negative controls proving unaffected domains unchanged.
+- Recovery: align inventory, processing, and dashboard with the exact same
+  three-state producer contract across every domain. Preserve each domain's
+  independent route, appearance, geometry, and context gates; do not use domain
+  as a substitute identity-state restriction. Execute the predicates against
+  the full live dataset and require every image-confirmed row that satisfies the
+  human-state baseline gates to produce the same family. The 2026-08-21 live
+  dataset contained 47 non-FRONT image-confirmed rows and 12 that satisfied all
+  other reference-family gates, proving that a FRONT-only correction is a
+  regression.
+- First observed on 2026-08-21 in the signed read-only live/source audit for lot
+  `62631-586`. The target verified overlay contained seven
+  `IMAGE_CONFIRMED_EXACT_PREVIOUS_HUMAN_SCRIBE_MATCH_REVIEW_ONLY` and three
+  `IMAGE_CONFIRMED_CURRENT_PIXELS_EXACT_UNIQUE_MES_REVIEW_ONLY` rows while the
+  processor heartbeat and catalog were more than 24 hours stale.
+
+### Current-fingerprint-only dashboard joins silently hide valid history
+
+- Failure signature: a completed FRONT ledger row exists exactly once for an
+  identity, but the dashboard excludes it with
+  `CURRENT_ACQUISITION_FINGERPRINT_HAS_NO_COMPLETED_RESULT` after a newer
+  acquisition fingerprint becomes current.
+- Cause: the dashboard equated current-input identity with result provenance.
+  It provided no bounded historical result representation, so valid completed
+  inspections disappeared instead of being labeled historical.
+- Mandatory preflight: test current match, zero historical matches, exactly one
+  historical match, and multiple historical matches. Exactly one FRONT
+  historical match must preserve both current fingerprint and completed ledger
+  job key; zero or multiple matches remain excluded with explicit reasons.
+- Recovery: expose only the single unambiguous historical FRONT completion with
+  `HISTORICAL_COMPLETED_SUPERSEDED_CURRENT_FINGERPRINT`; do not guess among
+  duplicates or change BARE/BOW behavior.
+- First observed on 2026-08-21 for three completed FRONT identities from lot
+  `62631-586` scan `20260815171102`, all omitted from the live dashboard with
+  one historical completed row each.
+
+### WinForms event callbacks cannot rely on caller script scope
+
+- Failure signature: opening Completed Lots raises `The variable
+  '$script:lastActivityKey' cannot be retrieved because it has not been set`,
+  even though the tray source initializes that script variable before registering
+  callbacks.
+- Cause: the event callback executes under a scope/runspace where the caller's
+  script-scoped variable is not reliably bound.
+- Mandatory preflight: mutable event state must be initialized on and retrieved
+  from the captured form/control object. A callback fixture must invoke the event
+  body and prove the state survives without reading a script-scoped variable.
+- Recovery: move the activity key to `form.Tag.LastActivityKey`, initialize it
+  before callback registration, and restart only the exact tray task after the
+  installed hash is verified.
+- First observed on 2026-08-21 in the operator's Completed Lots error dialog.
+  This is a narrow state-binding repair, not a GUI redesign.
+
+### Simplified Where-Object comparison operators require a separate operand token
+
+- Failure signature: Windows PowerShell accepts the script at parse time but
+  fails at runtime with `A parameter cannot be found that matches parameter
+  name 'ge1'` for `Where-Object Count -ge1`.
+- Cause: compact formatting joined the simplified-syntax comparison operator
+  and operand. The rehearsal replaced the complete state-reader result, so the
+  exact packaged selector was never executed.
+- Mandatory preflight: reject `Where-Object <property> -eq1`, `-ne1`, `-gt1`,
+  `-ge1`, `-lt1`, or `-le1` token adjacency mechanically. Every pre-mutation
+  live-state reader must execute from exact packaged bytes under Windows
+  PowerShell 5.1 against copied live-format metadata; a precomputed state object
+  cannot substitute for that branch.
+- Recovery: withdraw the published artifact, preserve its signed terminal
+  failure, and start only from the guarded installed sources. Do not patch or
+  replay the failed package.
+- First observed on 2026-08-21 in `REQ_AVIR1`. The signed JBOD response failed
+  before task enumeration or restart, and the endpoint rolled back all five
+  installed-file swaps.
+
+### Installed runner arguments must match the exact installed consumer parameter surface
+
+- Failure signature: the all-wafer processor remains stale while the installed
+  runner invokes `Invoke-JbodAllWaferInventory.ps1 -MetadataSnapshotRoot ...`
+  and the exact installed inventory command does not declare that parameter.
+- Cause: the runner was revised to propagate the configured D-root metadata
+  snapshot, but the paired inventory consumer remained on a parameter surface
+  that reads only `<StateRoot>\metadata\verified`.
+- Mandatory preflight: under Windows PowerShell 5.1, resolve every named
+  argument at each installed runner call site against `Get-Command` for the
+  exact paired consumer bytes. Then execute the installed runner's exact
+  `-Once -PlanOnly` path against live state before accepting a restart.
+- Recovery: remove the unsupported `MetadataSnapshotRoot` argument and its
+  temporary derivation from the runner. Preserve inventory's existing
+  `<StateRoot>\metadata\verified\ACTIVE_VERIFIED_METADATA_OVERLAY.json`
+  consumer path. `PROCESSOR_CONFIG.metadataSnapshotRoot` is the upstream MES
+  snapshot input used by the Insite importer; the importer writes the active
+  verified overlay into `StateRoot`, so rebinding inventory directly to the
+  upstream snapshot root would select the wrong contract. Keep all other
+  inventory inputs and review-only boundaries unchanged.
+- First observed on 2026-08-21 by direct comparison of installed runner SHA-256
+  `46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4`
+  with installed inventory SHA-256
+  `8919C3DD4AC04FD662B57E356AC6E1A70BD614E97AFC270EB4B8FF617D705160`.
+
+### A nonblocking dashboard refresh can preserve an older optional-field schema
+
+- Failure signature: the exact live PlanOnly reaches dashboard reconciliation,
+  but strict mode raises `The property 'resultFingerprintState' cannot be found
+  on this object` while reading the dashboard after refresh.
+- Cause: the processing pass deliberately treats dashboard refresh as
+  nonblocking and preserves the last valid manifest when the updater fails or
+  declines replacement. A verifier that assumes every post-refresh row has the
+  new optional provenance field can therefore read the retained older schema.
+- Mandatory preflight: after invoking a nonblocking refresh, read the refresh
+  status/audit first and classify the dashboard manifest revision explicitly.
+  Every newly added manifest property must be accessed through an optional-
+  property helper. Test both a newly written manifest and a retained predecessor
+  manifest under strict mode against the exact packaged verifier.
+- Recovery: do not infer refresh success from runner success. Preserve the old
+  manifest, report the updater's exact failure, and stop before task restart.
+  A future design must separately prove why the updater did not replace the
+  manifest; it must not merely weaken the verifier.
+- First observed on 2026-08-21 in signed terminal AVS1 response
+  `R_53E919FF3990_20260821225532690_a417fac0` after the exact live PlanOnly had
+  admitted the ten FRONT regression rows.
+
+### Endpoint-entrypoint task recovery cannot guess worker predecessor evidence layout
+
+- Failure signature: after a live verifier failure, local recovery reports
+  `Expected one predecessor evidence file for Run-JbodAllWaferProcessor.ps1;
+  observed 0`, and the entrypoint exits before restarting stopped tasks.
+- Cause: the entrypoint assumed that exact worker predecessor bytes would be
+  discoverable by a hard-coded maintenance prior-root and `*.prior` hash scan.
+  The exact live worker evidence layout was not directly audited through the
+  entrypoint's security context before task mutation.
+- Mandatory preflight: before stopping any task, prove a complete rollback
+  mapping from every changed destination to one exact readable worker prior
+  artifact, including path, hash, ACL/security-context readability, and atomic
+  restore operation. The task-stop boundary must remain after this proof.
+  Separately prove that a failure after task stop restores installed bytes and
+  task availability before the child exits; the outer worker rollback alone
+  does not restore scheduled-task state.
+- Recovery: after this signature, do not publish another mutation. Obtain one
+  signed read-only STATUS result for exact installed hashes and task states.
+  Any task-availability restoration requires explicit new authority and a
+  separately proven admin path; it cannot be bundled with another repair try.
+- First observed on 2026-08-21 in the same AVS1 signed terminal response. The
+  outer endpoint worker entered its installed-file rollback path, but task
+  availability and installed rollback hashes remained unproved at the terminal
+  boundary.
+- Follow-up signed read-only STATUS response
+  `R_07B0A5DC725F_20260821230519159_a7ea6fee` proved the processor and monitor
+  tasks were both `Ready`, not running, and `PROCESSOR_STATUS.json` was absent.
+  It directly proved the processing pass had rolled back to SHA-256
+  `0B063D452CA76AE5EE3EC1BDF6726853259039683C36E208718B8FE937D23753`;
+  it did not expose the other four AVS1 target hashes. This is why task
+  availability must be terminal evidence, not inferred from installed-file
+  rollback.

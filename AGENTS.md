@@ -58,6 +58,33 @@ new intent explicitly clears the stop-loss. For GUI recovery, do not change GUI
 code until the authoritative ledger/dashboard contains the expected rows and
 the unchanged UI still fails to display them.
 
+For a reported all-inspections or all-completed-lots visibility failure, a
+named lot is a regression cohort rather than the success boundary. Reconcile
+the complete bounded current catalog, explicit holds, ledger, and dashboard
+identity sets; do not redefine success as the named sample appearing.
+
+When an authoritative producer emits an enumerated identity, eligibility, or
+state set that multiple installed consumers use, freeze that exact producer
+set and mechanically compare every consumer predicate before publication. A
+consumer may narrow the set only with an explicit domain-scoped invariant and
+a negative regression control for all unaffected domains. A new producer state
+must never be accepted by only some of inventory, processing, ledger, dashboard,
+or GUI refresh code.
+
+For every changed or relied-upon runner, resolve each named argument against
+`Get-Command` for the exact paired installed consumer under Windows PowerShell
+5.1. Source hashes alone do not prove caller/consumer compatibility. A live
+restart gate must execute the runner's exact non-scoring `-Once -PlanOnly` path;
+do not replace that path or its state reader with a precomputed result object.
+
+A completed result whose acquisition fingerprint has been superseded must not
+silently disappear. Expose exactly one unambiguous historical completion with
+explicit current-versus-result fingerprint provenance; keep zero or multiple
+historical matches fail-closed. Mutable state used by WinForms event callbacks
+must be anchored to a captured form/control object or another explicitly shared
+object. Do not rely on script-scope variables being visible inside callback
+runspaces.
+
 Artifacts have explicit lifecycle states. `DRAFT` bytes may be corrected in
 place before freeze, signature, execution, publication, or external mutation.
 `FROZEN` bytes are immutable. A failed `FROZEN`, `SIGNED`, `PUBLISHED`, or

@@ -5713,3 +5713,43 @@ governance decision to revise the pre-observation boundary for one generic
 read-only endpoint capability improvement. Only then may the exact observation
 run once and select remedy A, B, C, or D. The global FS15 hold and every XML,
 training, production, deletion, and wafer-abort boundary remain unchanged.
+
+## 2026-08-21 all-valid-inspections AVS1 terminal failure and signed task status
+
+The bounded live audit found a five-part consumer compatibility defect, not a
+GUI redesign requirement. It also caught and removed an incorrect draft rule
+that would have limited image-confirmed identities to FRONT: the exact live
+dataset has 47 non-FRONT image-confirmed rows and 12 that satisfy every other
+processing gate. The corrected full-dataset gate accepts 745 verified rows,
+all ten target FRONT rows, and those 12 eligible non-FRONT rows. It reports 32
+completed FRONT ledger rows, 29 current FRONT dashboard identities, and three
+unambiguous historical FRONT candidates across the installed snapshot.
+
+AVS1 was published once and returned matching signed `FAILED` response
+`R_53E919FF3990_20260821225532690_a417fac0`. Its exact live PlanOnly reached
+ten target-ready rows, then failed because a nonblocking dashboard refresh had
+retained an older row without `metadata.resultFingerprintState`. AVS1's local
+recovery then failed to find the endpoint worker's predecessor evidence and did
+not confirm task restart. AVS1 is `WITHDRAWN`, non-replayable, and not a
+successor parent.
+
+One separately gated read-only STATUS request returned signed
+`PASS_STATUS_COLLECTED` response
+`R_07B0A5DC725F_20260821230519159_a7ea6fee`. It proves the processor and
+monitor tasks are `Ready`, not running, and `PROCESSOR_STATUS.json` is absent.
+Scribe proposal and both Insite tasks remain `Running`. The installed processing
+pass directly hash-matches its pre-AVS1 value
+`0B063D452CA76AE5EE3EC1BDF6726853259039683C36E208718B8FE937D23753`;
+the STATUS route does not expose the other four AVS1 target hashes, so their
+rollback is not claimed.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ALL_VALID_INSPECTIONS_AVS1_POST_FAILURE_STATUS_CHECKPOINT_20260821.md`,
+SHA-256
+`B29765DF4D31F643324320E9FD469BEE93BC21A27B4EF8E596DD5426FA1D51C9`.
+
+No restart or repair followed the systemic failure. Restoring only the stopped
+processor and monitor tasks requires explicit post-failure authority and a
+separate exact action contract; it must not be combined with another visibility
+package. The global FS15 hold and every XML, training, production,
+source-deletion, and wafer-abort boundary remain unchanged.

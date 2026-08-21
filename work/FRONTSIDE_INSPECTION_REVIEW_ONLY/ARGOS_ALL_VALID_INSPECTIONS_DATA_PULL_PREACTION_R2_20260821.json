@@ -1,0 +1,42 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "ARGOS_ALL_VALID_INSPECTIONS_DATA_PULL_R2_20260821",
+  "createdUtc": "2026-08-21T20:40:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "SIGN_AND_PUBLISH_ONE_CORRECTED_BOUNDED_READ_ONLY_DATA_PULL",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "FD53441616EF21AE3A6BCA7C8B513444D455229329021840A6B9C20DFC7153AA",
+  "dependencies": [
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_VISIBILITY_OBJECTIVE_20260821.json", "sha256": "303FBC1AEC97080DB9C4C377737FD2CDFA481054A219EEA713591522C9764383"},
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_READ_ONLY_AUDIT_INTENT_R2_20260821.json", "sha256": "D5BD8FF300B5E7084D50FA58BBA38B5B67C8E58A22CC8E20E577A324679CC30E"},
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_REQUIRED_PRESENT_SOURCES_R2_20260821.json", "sha256": "ACBDF39C02144BB44FBC37553251976E9853157765B6DCBCA228706E2561A011"},
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_DATA_PULL_DEFINITION_R2_20260821.json", "sha256": "AF961DC6DAA8DF7ADCB00C64895BAB0714CD34B3CF1EA267C637B933732EE885"},
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_DATA_PULL_SIGNED_TERMINAL_STOP_20260821.json", "sha256": "69F045A5C44BA9A975F8CDB4C783364B5A22730786F8572D9218D0A3F86E924F"},
+    {"path": "work/ARGOS_RECOVERY_FULL_DATASET_BOUND_TEST_GATE_20260821.json", "sha256": "25B9CFA189BC159DF27CF3A7FD3E451831FF73CB6AADE849E03C6F52CF45624E"},
+    {"path": "utilities/Confirm-ArgosRecoveryIntent.ps1", "sha256": "84B4A4665DF68ADD14279152D570CBE80A1AFDF18EA51EC4BB07C5D0610D0280"},
+    {"path": "utilities/Confirm-ArgosPathBudget.ps1", "sha256": "3A4820E81F25CEA9AB8EB5BE9E60B6324915DFC260132145CB8FB02970360835"},
+    {"path": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/New-SignedPortalPackage.ps1", "sha256": "8AF7AF26B6899CB6475735FEE8AB6E5A29231AAED8EDA898F1E7F4B04A2A403F"},
+    {"path": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalPackage.ps1", "sha256": "6CA21D7DE97EDE88F2C41F91D5B7801C688982C8C5A422987EB9528E1E9A084B"},
+    {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/pkg/payload/W.ps1", "sha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6"},
+    {"path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json", "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"},
+    {"path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json", "sha256": "12BFF65114DFB1C20B8B4271CD592D80857CFE446595CB9F303868288F62F65E"},
+    {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_EXACT_ENDPOINT_GATE.json", "sha256": "BC97C8D81F439D239CBF59B41EC1F663F2039751AD506FE59B279C72B21A8F45"},
+    {"path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json", "sha256": "46BBFAAB6F2F63FA79B888CE16B3FB8AAED172AAA891E22E82C9E3E747354457"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true, "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true, "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true, "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true, "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true, "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true, "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true, "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true, "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {"path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json", "sha256": "46BBFAAB6F2F63FA79B888CE16B3FB8AAED172AAA891E22E82C9E3E747354457", "requiredCaseIds": ["ZERO", "ONE", "MANY"]},
+  "legacyEvidenceException": {"used": false, "newExecutionAuthorized": false, "futureReuseAllowed": false, "blockedArtifacts": []},
+  "boundedAction": {"maximumRequests": 1, "jobClass": "DATA_PULL", "approvedRoot": "JBOD_PROCESSOR_REVIEW", "maximumFiles": 12, "maximumBytes": 134217728, "optionalSources": 0, "taskActions": [], "processActions": [], "installedChanges": 0, "queueMutation": false, "ledgerMutation": false, "imageRead": false, "sourceDeletion": false, "waferAction": false, "retryOnFailure": false},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

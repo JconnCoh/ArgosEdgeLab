@@ -1,0 +1,19 @@
+{
+  "schema": "argos_recovery_full_dataset_bound_test_gate_v1",
+  "createdUtc": "2026-08-21T20:26:23.9353642Z",
+  "state": "PASS_ARGOS_RECOVERY_FULL_DATASET_BOUND_TEST_GATE",
+  "validator": "utilities/Confirm-ArgosRecoveryIntent.ps1",
+  "validatorMaximumRowsPerSource": 10000,
+  "testHarness": "utilities/tests/Test-ArgosRecoveryIntent.ps1",
+  "testCaseCount": 8,
+  "fullDatasetPassFixture": "utilities/tests/fixtures/recovery_intent_observe_status_pass.json",
+  "fullDatasetPassFixtureMaximumRows": 5000,
+  "fullDatasetPassState": "PASS_ARGOS_RECOVERY_INTENT",
+  "actualAuditIntent": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_READ_ONLY_AUDIT_INTENT_20260821.json",
+  "actualAuditMaximumRows": 10000,
+  "actualAuditPreflightState": "PASS_ARGOS_RECOVERY_INTENT",
+  "targetExecuted": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "argos_all_valid_inspections_visibility_objective_v1",
+  "createdUtc": "2026-08-21T20:28:00Z",
+  "state": "PENDING_GATE",
+  "incidentId": "ALL_VALID_INSPECTIONS_TERMINAL_AND_GUI_VISIBILITY",
+  "problemStatement": "Determine and correct whether valid eligible inspections fail before terminal completion or completed inspections fail to surface in the completed-lot GUI; no valid input may disappear silently across catalog, eligibility or hold, ledger, dashboard, and GUI.",
+  "regressionCohort": {
+    "lot": "62631-586",
+    "domain": "FRONTSIDE",
+    "scanTimestampPrefix": "20260819",
+    "expectedPhysicalIdentities": 10,
+    "isProductLevelGoal": false
+  },
+  "successCriteria": [
+    "all current valid inputs have exactly one explicit hold, waiting, processing, failed, or completed disposition",
+    "every completed ledger identity appears exactly once in dashboard completed-lot data",
+    "the exact ten regression identities reconcile exactly and every completed one appears exactly once in completed-lot data",
+    "the real tray completed-lot button opens without the uninitialized script:lastActivityKey exception",
+    "visible completed-lot records match the authoritative dashboard manifest",
+    "processor heartbeat evidence establishes whether restart has any point"
+  ],
+  "reportedGuiSymptom": {
+    "action": "Open completed lot review",
+    "error": "The variable '$script:lastActivityKey' cannot be retrieved because it has not been set.",
+    "classification": "independent GUI runtime symptom until ledger-dashboard reconciliation proves its relationship"
+  },
+  "maximumReadOnlyAuditRequests": 3,
+  "readOnlyAuditRequestScope": [
+    "one successful exact state-and-GUI snapshot",
+    "one supplemental exact consumer-source snapshot required by the first snapshot's proved dashboard mismatch",
+    "one final exact direct-call-graph and current processor-failure snapshot required after the runner-to-inventory surface mismatch was discovered"
+  ],
+  "diagnosticPackageIterationAllowed": false,
+  "r10Reusable": false,
+  "r11Authorized": false,
+  "reviewOnly": true,
+  "xmlExportEnabled": false,
+  "trainingEligible": false,
+  "productionRoutingEnabled": false,
+  "sourceDeletionAllowed": false,
+  "waferAbortAllowed": false,
+  "imageBytesAllowed": false
+}

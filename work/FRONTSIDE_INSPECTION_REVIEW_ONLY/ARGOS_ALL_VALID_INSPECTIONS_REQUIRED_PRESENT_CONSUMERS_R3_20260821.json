@@ -1,0 +1,16 @@
+{
+  "schema": "argos_required_present_data_pull_sources_v1",
+  "createdUtc": "2026-08-21T20:54:00Z",
+  "state": "PASS_REQUIRED_PRESENT_CLASSIFICATION",
+  "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+  "sources": [
+    {"relativePath": "Invoke-JbodAllWaferInventory.ps1", "evidence": "exact installed runner references this mandatory consumer and signed V40 observed SHA-256 8919C3DD4AC04FD662B57E356AC6E1A70BD614E97AFC270EB4B8FF617D705160"},
+    {"relativePath": "Update-JbodScribeIdentityQueue.ps1", "evidence": "exact installed runner references this mandatory consumer before every processing pass"},
+    {"relativePath": "Invoke-JbodAllWaferProcessingPass.ps1", "evidence": "exact installed runner references this mandatory consumer and signed V40 observed SHA-256 0B063D452CA76AE5EE3EC1BDF6726853259039683C36E208718B8FE937D23753"},
+    {"relativePath": "Update-JbodDashboardManifest.ps1", "evidence": "signed V40 runtime inventory observed this required live consumer at SHA-256 DCF97D92BDA0A82A49DA277D54CFD1BC7802068CD8B9D89340534CC892792BAD"}
+  ],
+  "optionalSources": [],
+  "allOrNothingHandler": true,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

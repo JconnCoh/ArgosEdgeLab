@@ -1,0 +1,21 @@
+{
+  "schema": "argos_required_present_data_pull_sources_v1",
+  "createdUtc": "2026-08-21T22:14:00Z",
+  "state": "PASS_REQUIRED_PRESENT_CLASSIFICATION",
+  "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+  "sources": [
+    {"relativePath": "processor/PROCESSOR_LOOP_FAILURE.txt", "evidence": "exact current runner failure boundary; required to distinguish a live runner failure from a stale status"},
+    {"relativePath": "Select-JbodAppearanceReferenceFamily.ps1", "evidence": "exact installed processing pass dot-sources this script before catalog admission"},
+    {"relativePath": "Invoke-BareAcquisition.ps1", "evidence": "exact installed processing pass invokes this script with JobConfigPath"},
+    {"relativePath": "Invoke-BowCompAcquisition.ps1", "evidence": "exact installed processing pass invokes this script with JobConfigPath and WorkerCount"},
+    {"relativePath": "Invoke-FrontsideScratchTestAcquisition.ps1", "evidence": "exact installed processing pass invokes this script with JobConfigPath and WorkerCount"},
+    {"relativePath": "Update-JbodReferenceRegistry.ps1", "evidence": "exact installed processing pass invokes this script with ConfigPath after job handling"},
+    {"relativePath": "Export-JbodPendingInsiteRequest.ps1", "evidence": "exact installed tray invokes this script with StateRoot, MetadataSnapshotRoot, and OutputPath"},
+    {"relativePath": "Import-JbodLiveInsiteSnapshot.ps1", "evidence": "exact installed tray invokes this script with StateRoot, MetadataSnapshotRoot, and MesSnapshotPath"},
+    {"relativePath": "ArgosRawAcquisitionAdmission.psm1", "evidence": "required installed acquisition admission module used by live acquisition consumers"}
+  ],
+  "optionalSources": [],
+  "allOrNothingHandler": true,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
