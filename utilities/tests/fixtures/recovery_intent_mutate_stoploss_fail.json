@@ -1,0 +1,13 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-21T19:20:00Z",
+  "incidentId": "TEST_MUTATION_INCIDENT",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {"signedPremiseFailures": 2, "localPremiseFailures": 0, "directObservationAfterLastSignedFailure": true, "mutationStopLossExplicitlyCleared": false, "failureEvidence": [{"path": "work/R8/R8_TERMINAL_RESPONSE_GATE.json", "sha256": "EB329A4E518DD5A0C15CCDF196219F636AC710A0F8E15EE12234B1B165D39F42", "state": "FAILED"}, {"path": "work/R9/R9_TERMINAL_RESPONSE_GATE.json", "sha256": "445B1CDA8C28E5E0C8239C913BC6C0B2BBB72B6DEB4637615482B0206F2AE91A", "state": "FAILED"}], "postFailureObservation": {"path": "utilities/tests/fixtures/recovery_observation_evidence_pass.json", "sha256": "71DCD7FF1AD9EB3523A218D9EAE609423636C5895678D6E8AB711156CBB69115"}},
+  "route": {"type": "MAINTENANCE", "jobClass": "MAINTENANCE_PATCH", "installedCodeChange": true, "helperInstall": false, "taskActions": ["RESTART"], "processActions": [], "queueMutation": false, "ledgerMutation": false, "sourceMutation": false, "imageRead": false, "waferAction": false, "inheritsQualifiedEndpointGate": true},
+  "observation": {"exactSources": [], "requestedFields": [], "decisionOptions": ["A", "B", "C", "D"], "mutationDecisionDeferred": false},
+  "mutation": {"supportedRemedy": "B", "supportingObservation": {"path": "utilities/tests/fixtures/recovery_observation_evidence_pass.json", "sha256": "71DCD7FF1AD9EB3523A218D9EAE609423636C5895678D6E8AB711156CBB69115"}, "endpointMutationNecessary": true, "singleMutationAttemptAuthorized": true},
+  "reviewOnly": true, "productionRoutingEnabled": false
+}

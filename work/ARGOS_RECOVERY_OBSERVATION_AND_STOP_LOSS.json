@@ -1,0 +1,16 @@
+{
+  "schema": "argos_recovery_observation_stop_loss_policy_v1",
+  "revision": "ARGOS_RECOVERY_OBSERVATION_STOP_LOSS_V1",
+  "state": "APPROVED_BASELINE",
+  "modes": ["OBSERVE", "MUTATE"],
+  "observationRoutes": ["STATUS", "DATA_PULL", "DIRECT_ADMIN_READ_ONLY"],
+  "observationForbiddenJobClasses": ["MAINTENANCE_PATCH"],
+  "artifactLifecycle": ["DRAFT", "FROZEN", "SIGNED", "PUBLISHED", "WITHDRAWN"],
+  "freshNamespaceRequiredAtOrAfter": "FROZEN",
+  "signedPremiseFailuresBeforeObservationRequired": 1,
+  "signedPremiseFailuresBeforeMutationStopLoss": 2,
+  "decisionOptions": ["A", "B", "C", "D"],
+  "guiChangeRequiresAuthoritativeRowsPresent": true,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

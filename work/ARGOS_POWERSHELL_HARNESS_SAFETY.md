@@ -40,6 +40,12 @@ endpoint rehearsal, response collector, publisher, and operator launcher.
   diagnostic and checkpoint commands: visually reject the unsafe token pattern
   before execution because the static file checker cannot inspect an unsaved
   command.
+- When an assignment consumes an `if` expression intended to produce a
+  collection, place the array boundary around the complete conditional:
+  `$rows = @(if (...) { Get-Rows })`. An array wrapper inside each branch does
+  not survive PowerShell output enumeration. The harness guard rejects a
+  direct conditional assignment that contains branch array expressions or is
+  later dereferenced through `.Count`.
 - Do not use `Format-Table`, `Format-List`, or width-dependent console rendering
   as gate evidence.  Emit bounded JSON or explicit scalar `hash path` rows.
 - Search with `rg` first.  Never recursively enumerate the whole project/work

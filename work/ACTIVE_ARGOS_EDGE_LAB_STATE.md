@@ -5667,3 +5667,49 @@ first establish whether a restart is necessary, then select among data-state,
 assertion, or processor-code remedies from live evidence. The global FS15 hold
 and all XML, training, production, source-deletion, and wafer-abort boundaries
 remain unchanged.
+
+## 2026-08-21 Recovery observation governance and lot 62631-586 capability stop
+
+Recovery intent is now mechanically classified before design or publication.
+An `OBSERVE` intent may use only a qualified `STATUS`, `DATA_PULL`, or exact
+direct-admin read-only route, and every requested capability must be present in
+a pinned route inventory. It cannot install code, launch a helper, act on a
+task/process, mutate queues or ledgers, read image bytes, or perform a wafer
+action. One signed premise failure requires direct observation before another
+mutation; two signed premise failures activate the mutation stop-loss.
+
+The new PowerShell guard rejects the RA1A conditional-collection scalarization
+pattern. Windows PowerShell 5.1 passed explicit zero, one, and many cases. The
+zero-recurrence preaction V2 now requires that machine evidence rather than a
+self-asserted Boolean. The eight-case recovery-intent gate also proves that an
+observation route missing a requested capability fails closed. Governance
+checkpoint:
+`work/ARGOS_RECOVERY_GOVERNANCE_CHECKPOINT_20260821.md`, SHA-256
+`36DA58534A031D98C228BCE2390A49E05EC67D0C668C57273CABC3E39423188E`.
+Disposition is `RELEASED_REVIEW_ONLY`.
+
+The policy was then applied to the exact post-R10 FRONT recovery intent before
+endpoint contact. C1E `STATUS` can return configured task state, hashes, JSON
+states, and log tails; `DATA_PULL` can return approved exact files. Neither can
+return the required exact process inventory, and a bounded route search found
+no qualified generic direct-admin replacement. The preflight returned
+`OBSERVATION_ROUTE_CAPABILITY_GAP` for `exactProcessInventory`.
+
+Lot checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_OBSERVATION_CAPABILITY_STOP_CHECKPOINT_20260821.md`,
+SHA-256
+`92FAB3DEF0D2FFC9E924209FF91D4BBAAD36919B8CBDB6D50C6E79593916A044`.
+Disposition remains `PENDING_GATE`; R10 remains `WITHDRAWN`. Current queue,
+installed hash, catalog, ledger, GUI, task, process, and heartbeat values remain
+explicitly unknown rather than inferred from similarly named prior counts. No
+R11 was named or designed. No portal request, endpoint contact, installed-file
+change, restart, queue/ledger mutation, GUI edit, source deletion, image read,
+or wafer action occurred.
+
+There is presently no evidence that a processor restart, endpoint mutation,
+queue repair, precondition removal, or GUI change has a point. Continuation
+requires an already qualified exact admin read-only process route or an explicit
+governance decision to revise the pre-observation boundary for one generic
+read-only endpoint capability improvement. Only then may the exact observation
+run once and select remedy A, B, C, or D. The global FS15 hold and every XML,
+training, production, deletion, and wafer-abort boundary remain unchanged.

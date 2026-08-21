@@ -1,0 +1,25 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-21T20:01:00Z",
+  "incidentId": "TEST_FAILURE_COUNT_UNPROVED",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {"signedPremiseFailures": 1, "localPremiseFailures": 0, "directObservationAfterLastSignedFailure": false, "mutationStopLossExplicitlyCleared": false, "failureEvidence": []},
+  "route": {
+    "type": "STATUS", "jobClass": "STATUS", "installedCodeChange": false, "helperInstall": false,
+    "taskActions": [], "processActions": [], "queueMutation": false, "ledgerMutation": false, "sourceMutation": false, "imageRead": false, "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/pkg/payload/W.ps1", "sha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6"},
+    "installedConfigEvidence": {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_TERMINAL_RESPONSE_GATE.json", "sha256": "692B15854FDA240714C4A713687604E53C6125E4BBE778D22DD5E258511D02B2"},
+    "capabilityEvidence": {"path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json", "sha256": "12BFF65114DFB1C20B8B4271CD592D80857CFE446595CB9F303868288F62F65E"},
+    "qualifiedEndpointGate": {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_EXACT_ENDPOINT_GATE.json", "sha256": "BC97C8D81F439D239CBF59B41EC1F663F2039751AD506FE59B279C72B21A8F45"}
+  },
+  "observation": {
+    "exactSources": [{"sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/processor/PROCESSOR_STATUS.json", "sourceSchema": "processor_status", "selector": "singleton", "uniquenessKey": "singleton", "maximumRows": 1}],
+    "requestedCapabilities": ["taskState"], "requestedFields": ["processor.taskState"],
+    "decisionOptions": ["A", "B", "C", "D"], "mutationDecisionDeferred": true
+  },
+  "mutation": {"supportedRemedy": "", "supportingObservation": {"path": "", "sha256": ""}, "endpointMutationNecessary": false, "singleMutationAttemptAuthorized": false},
+  "reviewOnly": true, "productionRoutingEnabled": false
+}

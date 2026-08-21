@@ -1,0 +1,26 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-08-21T19:36:30Z",
+  "state": "PASS_ARGOS_ENDPOINT_STATIC_CAPABILITY_INVENTORY",
+  "endpointWorker": {
+    "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/pkg/payload/W.ps1",
+    "sha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6"
+  },
+  "routes": [
+    {
+      "type": "STATUS",
+      "capabilities": ["taskState", "configuredInstalledHashes", "configuredJsonStates", "configuredLogTails"],
+      "limitations": ["exactProcessInventory", "requestSpecificJsonSelector", "unconfiguredInstalledHashPaths"]
+    },
+    {
+      "type": "DATA_PULL",
+      "capabilities": ["approvedRootExactFiles"],
+      "limitations": ["exactProcessInventory", "taskState", "unapprovedRoots"]
+    }
+  ],
+  "configurationDependentCapabilitiesRequireCurrentInstalledConfigEvidence": true,
+  "sourceInspectionOnly": true,
+  "endpointExecuted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

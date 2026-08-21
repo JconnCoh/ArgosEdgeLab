@@ -1,0 +1,24 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-21T19:20:00Z",
+  "incidentId": "TEST_OBSERVE_STATUS",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {"signedPremiseFailures": 3, "localPremiseFailures": 0, "directObservationAfterLastSignedFailure": false, "mutationStopLossExplicitlyCleared": false, "failureEvidence": [{"path": "work/R8/R8_TERMINAL_RESPONSE_GATE.json", "sha256": "EB329A4E518DD5A0C15CCDF196219F636AC710A0F8E15EE12234B1B165D39F42", "state": "FAILED"}, {"path": "work/R9/R9_TERMINAL_RESPONSE_GATE.json", "sha256": "445B1CDA8C28E5E0C8239C913BC6C0B2BBB72B6DEB4637615482B0206F2AE91A", "state": "FAILED"}, {"path": "work/R10/R10_TERMINAL_RESPONSE_GATE.json", "sha256": "742EA6577934BC0816A16A978208DEB5CB6C2308F8A745C89B87A689CD44206D", "state": "FAILED"}]},
+  "route": {
+    "type": "STATUS", "jobClass": "STATUS", "installedCodeChange": false, "helperInstall": false,
+    "taskActions": [], "processActions": [], "queueMutation": false, "ledgerMutation": false,
+    "sourceMutation": false, "imageRead": false, "waferAction": false, "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/pkg/payload/W.ps1", "sha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6"},
+    "installedConfigEvidence": {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_TERMINAL_RESPONSE_GATE.json", "sha256": "692B15854FDA240714C4A713687604E53C6125E4BBE778D22DD5E258511D02B2"},
+    "capabilityEvidence": {"path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json", "sha256": "12BFF65114DFB1C20B8B4271CD592D80857CFE446595CB9F303868288F62F65E"},
+    "qualifiedEndpointGate": {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_EXACT_ENDPOINT_GATE.json", "sha256": "BC97C8D81F439D239CBF59B41EC1F663F2039751AD506FE59B279C72B21A8F45"}
+  },
+  "observation": {
+    "exactSources": [{"sourcePath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\SCRIBE_IDENTITY_QUEUE.json", "sourceSchema": "argos_jbod_scribe_identity_queue_v1", "selector": "exact incident identities", "uniquenessKey": "physicalIdentity", "maximumRows": 10}],
+    "requestedCapabilities": ["taskState", "configuredJsonStates"], "requestedFields": ["queue.rows", "processor.heartbeat"], "decisionOptions": ["A", "B", "C", "D"], "mutationDecisionDeferred": true
+  },
+  "mutation": {"supportedRemedy": "", "supportingObservation": {"path": "", "sha256": ""}, "endpointMutationNecessary": false, "singleMutationAttemptAuthorized": false},
+  "reviewOnly": true, "productionRoutingEnabled": false
+}

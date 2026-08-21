@@ -107,6 +107,31 @@ foreach ($assignment in $assignments) {
         Add-Violation 'PARAMETER_VARIABLE_REASSIGNED' ([int]$assignment.Extent.StartLineNumber) "Declared parameter `$$variableName is reassigned. PowerShell variables are case-insensitive and typed parameters can reject the new value."
     }
 }
+
+$conditionalCollectionAssignments = New-Object Collections.Generic.List[object]
+foreach ($assignment in $assignments) {
+    if ($assignment.Left -isnot [Management.Automation.Language.VariableExpressionAst]) { continue }
+    if ($assignment.Right -isnot [Management.Automation.Language.IfStatementAst]) { continue }
+    $arrayExpressions = @($assignment.Right.FindAll({ param($node) $node -is [Management.Automation.Language.ArrayExpressionAst] }, $true))
+    $variableName = $assignment.Left.VariablePath.UserPath
+    $laterCountUses = @($ast.FindAll({
+        param($node)
+        if ($node -isnot [Management.Automation.Language.MemberExpressionAst]) { return $false }
+        if ($node.Extent.StartOffset -le $assignment.Extent.EndOffset) { return $false }
+        if ($node.Expression -isnot [Management.Automation.Language.VariableExpressionAst]) { return $false }
+        if ($node.Expression.VariablePath.UserPath -ine $variableName) { return $false }
+        return [string]$node.Member.Value -ieq 'Count'
+    }, $true))
+    if ($arrayExpressions.Count -eq 0 -and $laterCountUses.Count -eq 0) { continue }
+    $conditionalCollectionAssignments.Add([pscustomobject]@{
+        variable = $variableName
+        line = [int]$assignment.Extent.StartLineNumber
+        branchArrayExpressionCount = $arrayExpressions.Count
+        laterCountUseCount = $laterCountUses.Count
+    })
+    Add-Violation 'CONDITIONAL_COLLECTION_ASSIGNMENT_CAN_SCALARIZE' ([int]$assignment.Extent.StartLineNumber) "Conditional output assigned directly to `$$variableName can unwrap zero or one items under StrictMode. Put the array boundary around the complete conditional: `$$variableName = @(if (...) { ... })."
+}
+
 foreach ($assignment in $assignments) {
     if ($assignment.Left -isnot [Management.Automation.Language.VariableExpressionAst]) { continue }
     $commands = @($assignment.Right.FindAll({ param($node) $node -is [Management.Automation.Language.CommandAst] }, $true))
@@ -186,6 +211,8 @@ $result = [ordered]@{
     topLevelMutationCount = $topLevelMutationLines.Count
     preflightReturnGuardCount = $preflightGuardLines.Count
     externalPowerShellAssignments = $externalAssignments.ToArray()
+    conditionalCollectionAssignments = $conditionalCollectionAssignments.ToArray()
+    conditionalCollectionAssignmentCount = $conditionalCollectionAssignments.Count
     renderedFormatCommandCount = $formatCommands.Count
     broadRecursiveWorkspaceCommandCount = $broadRecursiveCommands.Count
     warnings = $warnings.ToArray()

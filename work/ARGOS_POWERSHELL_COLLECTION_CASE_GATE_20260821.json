@@ -1,0 +1,22 @@
+{
+  "schema": "argos_powershell_collection_case_gate_v1",
+  "createdUtc": "2026-08-21T19:32:38.8676486Z",
+  "state": "PASS_ARGOS_POWERSHELL_COLLECTION_CASES",
+  "windowsPowerShell": {"major": 5, "minor": 1, "edition": "Desktop"},
+  "caseIds": ["ZERO", "ONE", "MANY"],
+  "cases": [
+    {"id": "ZERO", "inputCardinality": 0, "observedCount": 0, "state": "PASS"},
+    {"id": "ONE", "inputCardinality": 1, "observedCount": 1, "state": "PASS"},
+    {"id": "MANY", "inputCardinality": 3, "observedCount": 3, "state": "PASS"}
+  ],
+  "safeGuardState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+  "unsafeGuardState": "FAIL_ARGOS_POWERSHELL_HARNESS_SAFETY",
+  "unsafeViolationCode": "CONDITIONAL_COLLECTION_ASSIGNMENT_CAN_SCALARIZE",
+  "sourceFiles": [
+    {"path": "utilities/tests/fixtures/conditional_collection_safe.ps1", "sha256": "C57BA6AF3D59C8720C516D1EFCC06B7E75BD560DD0105036221ADAF3A523D7B6"},
+    {"path": "utilities/Confirm-ArgosPowerShellHarnessSafety.ps1", "sha256": "25FC3F33854B03FE67D7BDF10F1490E5999C1129669BE1EA75102CB680C651B3"}
+  ],
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

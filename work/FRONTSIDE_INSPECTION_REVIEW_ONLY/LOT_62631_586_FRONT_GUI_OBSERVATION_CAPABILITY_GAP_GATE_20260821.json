@@ -1,0 +1,108 @@
+{
+  "schema": "argos_front_gui_observation_capability_gap_gate_v1",
+  "createdUtc": "2026-08-21T19:57:51.6059781Z",
+  "state": "STOP_RECOVERY_OBSERVATION_CAPABILITY_GAP",
+  "incidentId": "LOT_62631_586_FRONT_GUI_POST_R10_RECOVERY",
+  "intent": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_READ_ONLY_RECOVERY_INTENT_20260821.json",
+    "sha256": "FC8D8DFB3E7B55D0D03693DDD60528DEAF54F4DBBB4D1DAC8D7F4993A006D8F8",
+    "mode": "OBSERVE",
+    "artifactLifecycle": "DRAFT"
+  },
+  "preflight": {
+    "validator": {
+      "path": "utilities/Confirm-ArgosRecoveryIntent.ps1",
+      "sha256": "756FFC0B52DF7CB60B07918AE201CD64536DCA5B9C87DE34560DF40EDBBD6812"
+    },
+    "state": "FAIL_ARGOS_RECOVERY_INTENT",
+    "violationCode": "OBSERVATION_ROUTE_CAPABILITY_GAP",
+    "message": "The STATUS route cannot provide requested capability: exactProcessInventory",
+    "targetExecuted": false,
+    "mutationsPerformed": false
+  },
+  "routeEvidence": {
+    "endpointWorker": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/pkg/payload/W.ps1",
+      "sha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6"
+    },
+    "capabilityInventory": {
+      "path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json",
+      "sha256": "12BFF65114DFB1C20B8B4271CD592D80857CFE446595CB9F303868288F62F65E",
+      "state": "PASS_ARGOS_ENDPOINT_STATIC_CAPABILITY_INVENTORY"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_EXACT_ENDPOINT_GATE.json",
+      "sha256": "BC97C8D81F439D239CBF59B41EC1F663F2039751AD506FE59B279C72B21A8F45"
+    },
+    "statusCapabilitiesObserved": [
+      "taskState",
+      "configuredInstalledHashes",
+      "configuredJsonStates",
+      "configuredLogTails"
+    ],
+    "statusCapabilityRequiredButAbsent": "exactProcessInventory",
+    "dataPullCapabilitiesObserved": ["approvedRootExactFiles"],
+    "dataPullCapabilityRequiredButAbsent": "exactProcessInventory"
+  },
+  "boundedRepositoryRouteSearch": {
+    "roots": [
+      "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E",
+      "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0",
+      "work/PROJECT_PORTAL_REVIEW_ONLY"
+    ],
+    "selectors": [
+      "DIRECT_ADMIN_READ_ONLY",
+      "exactProcessInventory",
+      "Win32_Process",
+      "Get-CimInstance",
+      "Get-Process",
+      "processInventory"
+    ],
+    "qualifiedGenericReadOnlyProcessRouteFound": false,
+    "notes": "C1E and C1F0 expose no process-inventory reader. Historical process-reading scripts found under PROJECT_PORTAL_REVIEW_ONLY are request-specific diagnostic or mutation packages, not a currently qualified generic STATUS, DATA_PULL, or direct-admin read-only route. They are not reusable authority."
+  },
+  "requiredObservation": {
+    "exactQueueRowsAndStates": "NOT_OBSERVED",
+    "installedR10HelperSha256": "NOT_OBSERVED",
+    "installedRunnerSha256": "NOT_OBSERVED",
+    "currentFrontCatalogCount": "NOT_OBSERVED",
+    "currentConfirmedOverlayCount": "NOT_OBSERVED",
+    "currentVerifiedMetadataCount": "NOT_OBSERVED",
+    "currentCompletedLedgerCount": "NOT_OBSERVED",
+    "currentFrontGuiCount": "NOT_OBSERVED",
+    "currentProcessorTaskState": "NOT_OBSERVED",
+    "currentProcessorProcessState": "NOT_OBSERVED",
+    "currentProcessorHeartbeat": "NOT_OBSERVED"
+  },
+  "decision": {
+    "optionA": "NOT_ESTABLISHED_CURRENT_PROCESSOR_HEALTH_UNKNOWN",
+    "optionB": "NOT_ESTABLISHED_PRECONDITION_VALIDITY_REQUIRES_LIVE_ROWS",
+    "optionC": "NOT_ESTABLISHED_QUEUE_DATA_STATE_REQUIRES_LIVE_ROWS",
+    "optionD": "NOT_ESTABLISHED_INSTALL_PROCESS_STATE_REQUIRES_LIVE_HASH_AND_PROCESS_EVIDENCE",
+    "endpointMutationHasPoint": "NOT_ESTABLISHED",
+    "processorRestartHasPoint": "NOT_ESTABLISHED",
+    "guiCodeRedesignHasPoint": false,
+    "guiCodeReason": "Last signed exact snapshot had ten FRONT catalog, confirmed-overlay, and verified-metadata rows but zero completed FRONT ledger and zero FRONT GUI rows; the unresolved boundary is upstream of GUI rendering. These prior values are not substituted for a current audit."
+  },
+  "forbiddenNextActions": [
+    "publish another incident-specific helper",
+    "publish another MAINTENANCE_PATCH observation",
+    "restart the processor",
+    "mutate queue or ledger data",
+    "change GUI code",
+    "name or design R11"
+  ],
+  "nextPermittedAction": "Governance review must explicitly authorize one bounded generic read-only endpoint capability improvement, or provide an already authorized exact admin read-only process-inventory route. Until then, stop without endpoint contact.",
+  "r10Reusable": false,
+  "r10SuccessorParentAllowed": false,
+  "endpointContacted": false,
+  "portalRequestPublished": false,
+  "taskRestarted": false,
+  "sourceDeletionPerformed": false,
+  "waferAborted": false,
+  "imageFilesRead": false,
+  "reviewOnly": true,
+  "xmlExportEnabled": false,
+  "trainingEligible": false,
+  "productionRoutingEnabled": false
+}

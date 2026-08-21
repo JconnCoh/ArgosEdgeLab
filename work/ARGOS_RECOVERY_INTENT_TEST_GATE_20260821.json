@@ -1,0 +1,19 @@
+{
+  "schema": "argos_recovery_intent_test_gate_v1",
+  "createdUtc": "2026-08-21T20:01:38.3430879Z",
+  "state": "PASS_ARGOS_RECOVERY_INTENT_TESTS",
+  "caseCount": 8,
+  "cases": [
+    {"id": "OBSERVE_STATUS_PASS", "state": "PASS_ARGOS_RECOVERY_INTENT", "violationCodes": []},
+    {"id": "OBSERVE_DIRECT_ADMIN_PASS", "state": "PASS_ARGOS_RECOVERY_INTENT", "violationCodes": []},
+    {"id": "OBSERVE_MAINTENANCE_FAIL", "state": "FAIL_ARGOS_RECOVERY_INTENT", "violationCodes": ["OBSERVATION_MAINTENANCE_PATCH_FORBIDDEN", "OBSERVATION_MUTATION_FORBIDDEN", "OBSERVATION_MUTATION_FORBIDDEN"]},
+    {"id": "OBSERVE_CAPABILITY_GAP_FAIL", "state": "FAIL_ARGOS_RECOVERY_INTENT", "violationCodes": ["OBSERVATION_ROUTE_CAPABILITY_GAP"]},
+    {"id": "FAILURE_COUNT_UNPROVED_FAIL", "state": "FAIL_ARGOS_RECOVERY_INTENT", "violationCodes": ["SIGNED_FAILURE_COUNT_UNPROVED"]},
+    {"id": "MUTATE_STOPLOSS_FAIL", "state": "FAIL_ARGOS_RECOVERY_INTENT", "violationCodes": ["MUTATION_STOP_LOSS_ACTIVE"]},
+    {"id": "MUTATE_MISSING_OBSERVATION_FAIL", "state": "FAIL_ARGOS_RECOVERY_INTENT", "violationCodes": ["POST_FAILURE_OBSERVATION_REQUIRED"]},
+    {"id": "MUTATE_SUPPORTED_PASS", "state": "PASS_ARGOS_RECOVERY_INTENT", "violationCodes": []}
+  ],
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "argos_front_gui_observation_capability_stop_checkpoint_v1",
+  "createdUtc": "2026-08-21T19:45:00Z",
+  "state": "PENDING_GATE",
+  "revision": "LOT_62631_586_FRONT_GUI_OBSERVATION_CAPABILITY_STOP",
+  "supersedesLotCheckpoint": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_R10_SIGNED_TERMINAL_FAILURE_CHECKPOINT_20260821.json",
+    "sha256": "D6E031C0C5E1C26DB2FE5EEB9800C82E6673E1AA1F5DACAC351BEB6644F8CA3E"
+  },
+  "r10Disposition": "WITHDRAWN",
+  "r10Reusable": false,
+  "r10SuccessorParentAllowed": false,
+  "recoveryIntent": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_READ_ONLY_RECOVERY_INTENT_20260821.json",
+    "sha256": "FC8D8DFB3E7B55D0D03693DDD60528DEAF54F4DBBB4D1DAC8D7F4993A006D8F8",
+    "mode": "OBSERVE",
+    "lifecycle": "DRAFT"
+  },
+  "capabilityStopGate": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_OBSERVATION_CAPABILITY_GAP_GATE_20260821.json",
+    "sha256": "A4A2E4A5E99766E4864D45BAD4F2259325F019DFC5EFEBCBC9D4226F8F863A04",
+    "state": "STOP_RECOVERY_OBSERVATION_CAPABILITY_GAP",
+    "violationCode": "OBSERVATION_ROUTE_CAPABILITY_GAP"
+  },
+  "currentLiveValues": {
+    "exactQueueRowsAndStates": "UNKNOWN_NOT_OBSERVED",
+    "installedR10HelperSha256": "UNKNOWN_NOT_OBSERVED",
+    "installedRunnerSha256": "UNKNOWN_NOT_OBSERVED",
+    "frontCatalogCount": "UNKNOWN_NOT_OBSERVED",
+    "frontConfirmedOverlayCount": "UNKNOWN_NOT_OBSERVED",
+    "frontVerifiedMetadataCount": "UNKNOWN_NOT_OBSERVED",
+    "completedFrontLedgerCount": "UNKNOWN_NOT_OBSERVED",
+    "frontGuiCount": "UNKNOWN_NOT_OBSERVED",
+    "processorTaskState": "UNKNOWN_NOT_OBSERVED",
+    "processorProcessState": "UNKNOWN_NOT_OBSERVED",
+    "processorHeartbeat": "UNKNOWN_NOT_OBSERVED"
+  },
+  "decision": {
+    "optionA": "UNRESOLVED",
+    "optionB": "UNRESOLVED",
+    "optionC": "UNRESOLVED",
+    "optionD": "UNRESOLVED",
+    "endpointMutationNecessary": "NOT_ESTABLISHED",
+    "processorRestartNecessary": "NOT_ESTABLISHED",
+    "guiRedesignNecessary": false
+  },
+  "nextAction": "Provide a qualified exact admin read-only process route or explicitly authorize one generic read-only endpoint capability improvement; then complete the exact observation before selecting one remedy.",
+  "endpointContacted": false,
+  "portalRequestPublished": false,
+  "installedFilesChanged": false,
+  "tasksChanged": false,
+  "queuesChanged": false,
+  "ledgersChanged": false,
+  "guiChanged": false,
+  "imageFilesRead": false,
+  "sourceDeletionPerformed": false,
+  "waferAborted": false,
+  "reviewOnly": true,
+  "xmlExportEnabled": false,
+  "trainingEligible": false,
+  "productionRoutingEnabled": false
+}

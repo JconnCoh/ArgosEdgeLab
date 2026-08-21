@@ -1,0 +1,63 @@
+{
+  "schema": "argos_ra1a_withdrawn_local_rehearsal_failure_checkpoint_v1",
+  "createdUtc": "2026-08-21T19:10:30Z",
+  "state": "WITHDRAWN",
+  "requestId": "REQ_RA1A_0821_1910_X1",
+  "requestManifest": {
+    "path": "work/RA1A/signed_short/REQ_RA1A_0821_1910_X1.ready/PORTAL_REQUEST_MANIFEST.json",
+    "sha256": "7B72D1E027278E42BEE9FE4EBCF12FE403EBFC8175B6CBC8084B5B1391480CB7",
+    "signed": true,
+    "published": false,
+    "replayAllowed": false,
+    "successorParentAllowed": false
+  },
+  "localRehearsal": {
+    "root": "C:\\RA1AE",
+    "case": "create_from_absent",
+    "responseId": "R_CD2FBA7EC9B1_20260821190854216_5e5482c8",
+    "responseState": "FAILED",
+    "signatureVerifiedByHarness": true,
+    "responseManifestPath": "C:\\RA1AE\\create_from_absent\\responses\\R_CD2FBA7EC9B1_20260821190854216_5e5482c8.ready\\PORTAL_RESPONSE_MANIFEST.json",
+    "responseManifestSha256": "0055F235859A858E13F242B24339DCEDA5531407B10EF84C51D1E07F4498E5B6",
+    "failureSha256": "940252211D4E3F6C46EC8B9D0B533F76FA1922A53F3A743463CE42A326F4B573",
+    "stderrSha256": "B4CB55D63926E6FF07FAF02B40AAE5B36B8C6E4E33766BFC0338AE5E11C1D188",
+    "failureSignature": "The property 'Count' cannot be found on this object.",
+    "failedBeforeLivePublication": true
+  },
+  "cause": {
+    "documentedFailureMemoryLines": "conditional assignment collection output scalarization under StrictMode",
+    "defectiveExpression": "$ledgerRows=if($null-ne$ledger){@(...)}else{@()}",
+    "requiredExpressionShape": "$ledgerRows=@(if($null-ne$ledger){...})",
+    "preactionPremiseFailure": "zeroOneManyCollectionCasesPassed was asserted without a pinned machine-readable zero/one/many ledger gate"
+  },
+  "rollbackEvidence": {
+    "temporaryInstallDestination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\RA1A.ps1",
+    "destinationExistedBefore": false,
+    "destinationExistsAfter": false,
+    "originalBackupExists": false,
+    "rollbackComplete": true
+  },
+  "boundaries": {
+    "livePortalRequestPublished": false,
+    "taskActionsPerformed": 0,
+    "queueRowsChanged": false,
+    "imageFilesRead": false,
+    "sourceDeletionPerformed": false,
+    "inspectionTasksChanged": false,
+    "waferAborted": false,
+    "xmlExportEnabled": false,
+    "trainingEligible": false,
+    "productionRoutingEnabled": false,
+    "globalFs15HoldUnchanged": true
+  },
+  "authority": {
+    "r10RemainsWithdrawn": true,
+    "continuityNotPromoted": true,
+    "frontLedgerRowsProven": false,
+    "frontGuiWafersProven": false
+  },
+  "newRequiredControl": "preactionCollectionCaseClaimsRequirePinnedMachineEvidence",
+  "nextAction": "STOP. Do not create or sign a successor without new direction and a fresh namespace whose preaction pins a Windows PowerShell 5.1 zero/one/many collection case gate.",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

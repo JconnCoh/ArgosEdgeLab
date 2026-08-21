@@ -19,7 +19,7 @@ inspection, or before promoting a new continuity checkpoint, apply
 `work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md`, create a file-backed
 pre-action contract from
 `work/templates/ARGOS_ZERO_RECURRENCE_PREACTION.template.json`, and run
-`utilities/Confirm-ArgosZeroRecurrencePreaction.ps1` against both the current
+`utilities/Confirm-ArgosZeroRecurrencePreaction.ps1 -Preflight` against both the current
 history audit and that exact contract. A mechanically cloned predecessor,
 guessed root/hash/state/switch/task principal, declaration broader than the
 implemented action, unresolved legacy mismatch, or missing exact dependency
@@ -28,6 +28,44 @@ declaration mismatch may be retained as terminal evidence only when its exact
 signed response proves the bounded action; it is non-reusable and cannot be a
 template or publication parent. A checkpoint written before this audit is
 provisional and must be superseded, never silently treated as authoritative.
+
+## Mandatory recovery classification, observation lane, and stop-loss
+
+Before designing a successor for a failed Windows/JBOD/portal/processor
+recovery, read and apply `work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.md`,
+create a file-backed intent from
+`work/templates/ARGOS_RECOVERY_INTENT.template.json`, and run
+`utilities/Confirm-ArgosRecoveryIntent.ps1 -Preflight` against that exact
+intent. Classify the next step as `OBSERVE` or `MUTATE` before writing package
+code.
+
+`OBSERVE` is a distinct non-mutating lane. It must use an already installed and
+qualified `STATUS`, `DATA_PULL`, or exact authorized admin/read-only route. It
+must not use `MAINTENANCE_PATCH`, install a helper, change an installed file,
+start/restart/stop a task or process, change a queue or ledger, read image
+bytes, delete a source, or abort a wafer. An unchanged endpoint implementation
+and route gate may be inherited only when the exact worker, installed config
+evidence, and qualified gate hashes are pinned. If those existing capabilities
+cannot supply the required evidence, stop with a capability gap and request
+authority for one endpoint capability improvement; do not disguise observation
+as maintenance.
+
+After one signed terminal failure disproves a live-state premise, no later
+mutation is allowed until a direct post-failure observation is pinned. After
+two signed premise failures in the same incident, mutation stop-loss is active:
+do not create another successor package until the workflow is reviewed and a
+new intent explicitly clears the stop-loss. For GUI recovery, do not change GUI
+code until the authoritative ledger/dashboard contains the expected rows and
+the unchanged UI still fails to display them.
+
+Artifacts have explicit lifecycle states. `DRAFT` bytes may be corrected in
+place before freeze, signature, execution, publication, or external mutation.
+`FROZEN` bytes are immutable. A failed `FROZEN`, `SIGNED`, `PUBLISHED`, or
+executed artifact is withdrawn and requires a fresh namespace. A malformed
+guard invocation, conservative-guard false positive, or draft-manifest omission
+that changed no target bytes does not by itself require a new product revision;
+correct the draft or invocation, record the cause when genuinely new, and rerun
+the exact gate.
 
 Path length must be rejected during planning, not discovered during launch.
 Before creating a new output root, extracting a package, or launching any
@@ -137,8 +175,11 @@ rollback-injection design before the first signature. External
 explicit bounded JSON rehydration before property access. Machine gates must
 emit bounded JSON or scalar rows, never width-dependent `Format-*` evidence.
 Do not recursively enumerate the whole project/work tree; use `rg` or one
-bounded exact root with row and error caps. Any harness-safety failure is a hard
-stop requiring a fresh output root after the cause and prevention are recorded.
+bounded exact root with row and error caps. A harness-safety failure is a hard
+stop before execution. A `FROZEN`, signed, executed, published, or externally
+mutating artifact requires a fresh output root after the cause and prevention
+are recorded. A `DRAFT` that has not crossed any of those boundaries may be
+corrected in place under the lifecycle rule above.
 
 When a gateway or JBOD host already exposes a working constrained Argos-only
 maintenance endpoint that authorizes the required bounded action, use that

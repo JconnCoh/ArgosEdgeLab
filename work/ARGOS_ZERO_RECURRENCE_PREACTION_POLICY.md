@@ -1,6 +1,6 @@
 # Argos zero-recurrence pre-action policy
 
-Revision: `ARGOS_ZERO_RECURRENCE_PREACTION_V1`
+Revision: `ARGOS_ZERO_RECURRENCE_PREACTION_V2`
 
 Disposition: `APPROVED_BASELINE`
 
@@ -23,8 +23,11 @@ can be published, launched, or promoted.
 4. Build a pre-action contract from
    `work/templates/ARGOS_ZERO_RECURRENCE_PREACTION.template.json`. Every
    dependency must name an existing file and its exact SHA-256. Every relevant
-   control must be explicitly true; omitted fields do not pass.
-5. Run `utilities/Confirm-ArgosZeroRecurrencePreaction.ps1` against the current
+   control must be explicitly true; omitted fields do not pass. New execution
+   contracts use schema `argos_zero_recurrence_preaction_v2` and pin a
+   machine-readable Windows PowerShell 5.1 collection-case gate. A Boolean
+   assertion is not collection-cardinality evidence.
+5. Run `utilities/Confirm-ArgosZeroRecurrencePreaction.ps1 -Preflight` against the current
    history audit and the exact contract. A failure is a hard stop before the
    first external write or continuity promotion.
 6. After execution, require the action-specific terminal gate. A share move,
@@ -51,7 +54,9 @@ can be published, launched, or promoted.
   version probe before invocation. Their absence is recorded as a capability
   state and never discovered by making the release/checkpoint validation fail.
 - Empty and one-item collections are materialized with an explicit array
-  boundary before serialization and tested for 0, 1, and many cases.
+  boundary before serialization and tested for 0, 1, and many cases. The exact
+  gate path, SHA-256, source-file hashes, and `ZERO`, `ONE`, and `MANY` case IDs
+  are pinned in the v2 pre-action contract.
 - Optional properties are presence-tested under strict mode. Every resident
   consumer of a changed config schema is inventoried, tested, and refreshed.
 

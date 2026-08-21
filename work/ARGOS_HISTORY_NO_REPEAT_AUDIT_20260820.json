@@ -80,9 +80,13 @@
     "HARNESS_SYNTHETIC_QUEUE_FIXTURE_IDENTITY_COLLISION",
     "PKG_SUCCESSOR_PARTIAL_SEMANTIC_REMEDIATION",
     "PKG_SIGNED_CARDINALITY_POPULATION_PREDICATE_DROPPED",
-    "PKG_SIGNED_COUNT_CROSS_SOURCE_SEMANTIC_SUBSTITUTION"
+    "PKG_SIGNED_COUNT_CROSS_SOURCE_SEMANTIC_SUBSTITUTION",
+    "HARNESS_CASE_INSENSITIVE_REPLACEMENT_MAP_KEY_COLLISION",
+    "HARNESS_CIM_POWERSHELL_LITERAL_FALSE_EXTERNAL_ASSIGNMENT",
+    "PREACTION_COLLECTION_CASE_CLAIM_WITHOUT_MACHINE_EVIDENCE",
+    "RECOVERY_OBSERVATION_ROUTE_CAPABILITY_UNPROVEN"
   ],
-  "issueCount": 76,
+  "issueCount": 80,
   "openUnclassifiedIssueCount": 0,
   "preventionPolicy": "work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md",
   "preactionTemplate": "work/templates/ARGOS_ZERO_RECURRENCE_PREACTION.template.json",
@@ -222,6 +226,15 @@
       "futureReuseAllowed": false,
       "replayAllowed": false,
       "successorParentAllowed": false
+    },
+    {
+      "path": "work/RA1A/signed_short/REQ_RA1A_0821_1910_X1.ready/PORTAL_REQUEST_MANIFEST.json",
+      "sha256": "7B72D1E027278E42BEE9FE4EBCF12FE403EBFC8175B6CBC8084B5B1391480CB7",
+      "reason": "SIGNED_LOCAL_REHEARSAL_FAILURE_AFTER_PREACTION_DECLARED_ZERO_ONE_MANY_COLLECTION_COVERAGE_WITHOUT_MACHINE_EVIDENCE_AND_LEDGER_ZERO_ROWS_SCALARIZED_TO_NULL",
+      "terminalEvidenceRetained": true,
+      "futureReuseAllowed": false,
+      "replayAllowed": false,
+      "successorParentAllowed": false
     }
   ],
   "legacyEvidence": {
@@ -286,7 +299,11 @@
     "syntheticQueueFixtureIdentitySetsMustBeDisjointAndPreflighted": true,
     "signedCardinalityBindingsRequireExactPopulationPredicateEquivalence": true,
     "signedCountsRequireExactSourceDocumentSchemaSelectorAndUniquenessEquivalence": true,
-    "compositePreactionFailuresRequireBoundedFieldSpecificExpectedAndObservedValues": true
+    "compositePreactionFailuresRequireBoundedFieldSpecificExpectedAndObservedValues": true,
+    "mechanicalReplacementRulesUseOrderedPairsNotCaseInsensitiveHashtableKeys": true,
+    "cimPowerShellProcessQueriesUseTypedHelperBoundaryBeforeObjectAssignment": true,
+    "preactionCollectionCaseClaimsRequirePinnedMachineEvidence": true,
+    "recoveryObservationRequestedCapabilitiesRequirePinnedRouteEvidence": true
   },
   "reviewOnly": true,
   "productionRoutingEnabled": false

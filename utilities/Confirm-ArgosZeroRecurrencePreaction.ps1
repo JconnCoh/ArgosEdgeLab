@@ -2,20 +2,25 @@
 param(
     [Parameter(Mandatory = $true)][string]$AuditPath,
     [Parameter(Mandatory = $true)][string]$ContractPath,
-    [string]$ProjectRoot
+    [string]$ProjectRoot,
+    [switch]$Preflight
 )
 
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
+if (-not $Preflight) { throw 'Zero-recurrence pre-action inspection is preflight-only.' }
 
-if ([string]::IsNullOrWhiteSpace($ProjectRoot)) {
-    $ProjectRoot = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
+$effectiveProjectRoot = if ([string]::IsNullOrWhiteSpace($ProjectRoot)) {
+    Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
+} else {
+    $ProjectRoot
 }
+$effectiveProjectRoot = [IO.Path]::GetFullPath($effectiveProjectRoot).TrimEnd('\')
 
 function Resolve-ArgosPath {
     param([Parameter(Mandatory = $true)][string]$Path)
     if ([IO.Path]::IsPathRooted($Path)) { return $Path }
-    return (Join-Path $ProjectRoot $Path.Replace('/', [IO.Path]::DirectorySeparatorChar))
+    return (Join-Path $effectiveProjectRoot $Path.Replace('/', [IO.Path]::DirectorySeparatorChar))
 }
 
 function Read-JsonFile {
@@ -75,7 +80,13 @@ if ([int]$audit.legacyEvidence.exactInspectorProcessCountBefore -ne 0 -or [int]$
     throw 'Legacy action evidence no longer proves the bounded non-reusable start.'
 }
 
-if ([string]$contract.schema -ne 'argos_zero_recurrence_preaction_v1') { throw 'Pre-action contract schema changed.' }
+$contractSchema = [string]$contract.schema
+if ($contractSchema -notin @('argos_zero_recurrence_preaction_v1', 'argos_zero_recurrence_preaction_v2')) { throw 'Pre-action contract schema changed.' }
+$policyV2EffectiveUtc = [DateTimeOffset]::Parse('2026-08-21T19:15:00Z')
+$contractCreatedUtc = [DateTimeOffset]::MinValue
+if (-not [DateTimeOffset]::TryParse([string]$contract.createdUtc, [ref]$contractCreatedUtc)) { throw 'Pre-action contract createdUtc is invalid.' }
+$isV2 = $contractSchema -eq 'argos_zero_recurrence_preaction_v2'
+if (-not $isV2 -and $contractCreatedUtc -ge $policyV2EffectiveUtc) { throw 'New execution contracts must use evidence-backed pre-action schema v2.' }
 if ([string]$contract.state -ne 'PASS_PREACTION_CONTRACT') { throw 'Pre-action contract is not PASS.' }
 if ([bool]$contract.productionRoutingEnabled) { throw 'Production routing is prohibited.' }
 if (-not [bool]$contract.reviewOnly) { throw 'Pre-action contract must remain review-only.' }
@@ -103,6 +114,34 @@ foreach ($dependency in $dependencyRows) {
     if ($actualHash -ne [string]$dependency.sha256) { throw "Dependency hash mismatch: $($dependency.path)" }
 }
 
+$collectionEvidenceVerified = $false
+$collectionCaseIds = @()
+if ($isV2) {
+    if (-not ($contract.PSObject.Properties.Name -contains 'collectionCaseEvidence')) { throw 'Pre-action v2 omitted collection-case evidence.' }
+    $collectionEvidence = $contract.collectionCaseEvidence
+    $collectionPathText = [string]$collectionEvidence.path
+    $collectionPath = Resolve-ArgosPath $collectionPathText
+    if (-not (Test-Path -LiteralPath $collectionPath -PathType Leaf)) { throw "Collection-case gate is missing: $collectionPathText" }
+    $collectionHash = (Get-FileHash -LiteralPath $collectionPath -Algorithm SHA256).Hash
+    if ($collectionHash -ne [string]$collectionEvidence.sha256) { throw 'Collection-case gate hash mismatch.' }
+    $collectionGate = Get-Content -LiteralPath $collectionPath -Raw | ConvertFrom-Json
+    if ([string]$collectionGate.schema -ne 'argos_powershell_collection_case_gate_v1') { throw 'Collection-case gate schema changed.' }
+    if ([string]$collectionGate.state -ne 'PASS_ARGOS_POWERSHELL_COLLECTION_CASES') { throw 'Collection-case gate is not PASS.' }
+    if ([int]$collectionGate.windowsPowerShell.major -ne 5 -or [int]$collectionGate.windowsPowerShell.minor -ne 1) { throw 'Collection-case gate did not run under Windows PowerShell 5.1.' }
+    $requiredCaseIds = @($collectionEvidence.requiredCaseIds | ForEach-Object { ([string]$_).ToUpperInvariant() } | Sort-Object -Unique)
+    if ($requiredCaseIds.Count -ne 3 -or @(Compare-Object -ReferenceObject @('MANY', 'ONE', 'ZERO') -DifferenceObject $requiredCaseIds).Count -ne 0) { throw 'Pre-action v2 must require ZERO, ONE, and MANY collection cases.' }
+    $collectionCaseIds = @($collectionGate.caseIds | ForEach-Object { ([string]$_).ToUpperInvariant() } | Sort-Object -Unique)
+    if (@(Compare-Object -ReferenceObject $requiredCaseIds -DifferenceObject $collectionCaseIds).Count -ne 0) { throw 'Collection-case gate did not prove the required case IDs.' }
+    $collectionSources = @($collectionGate.sourceFiles)
+    if ($collectionSources.Count -lt 1) { throw 'Collection-case gate has no pinned source files.' }
+    foreach ($source in $collectionSources) {
+        $sourcePath = Resolve-ArgosPath ([string]$source.path)
+        if (-not (Test-Path -LiteralPath $sourcePath -PathType Leaf)) { throw "Collection-case source is missing: $($source.path)" }
+        if ((Get-FileHash -LiteralPath $sourcePath -Algorithm SHA256).Hash -ne [string]$source.sha256) { throw "Collection-case source hash mismatch: $($source.path)" }
+    }
+    $collectionEvidenceVerified = $true
+}
+
 if ([bool]$contract.legacyEvidenceException.used) {
     if ([string]$contract.actionType -ne 'CHECKPOINT_SUPERSESSION_ONLY') { throw 'Legacy exception cannot authorize execution.' }
     if ([bool]$contract.legacyEvidenceException.newExecutionAuthorized -or [bool]$contract.legacyEvidenceException.futureReuseAllowed) { throw 'Legacy exception widened authority.' }
@@ -110,13 +149,16 @@ if ([bool]$contract.legacyEvidenceException.used) {
 }
 
 $result = [ordered]@{
-    schema = 'argos_zero_recurrence_preaction_result_v1'
+    schema = if ($isV2) { 'argos_zero_recurrence_preaction_result_v2' } else { 'argos_zero_recurrence_preaction_result_v1' }
     createdUtc = [DateTime]::UtcNow.ToString('o')
     state = 'PASS_ARGOS_ZERO_RECURRENCE_PREACTION'
     revision = [string]$contract.revision
     actionType = [string]$contract.actionType
     auditedIssueCount = @($audit.issueIds).Count
     dependencyCount = $dependencyRows.Count
+    evidenceBackedContract = $isV2
+    collectionCaseEvidenceVerified = $collectionEvidenceVerified
+    collectionCaseIds = $collectionCaseIds
     legacyMismatchDisclosed = $true
     legacyArtifactReuseBlocked = $true
     reviewOnly = $true

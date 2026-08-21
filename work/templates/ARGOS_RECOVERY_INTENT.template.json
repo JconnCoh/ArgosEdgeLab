@@ -1,0 +1,62 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "REPLACE_WITH_UTC_TIMESTAMP",
+  "incidentId": "REPLACE_WITH_STABLE_INCIDENT_ID",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "REPLACE_WITH_SHA256"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "STATUS",
+    "jobClass": "STATUS",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {"path": "REPLACE_WITH_PATH", "sha256": "REPLACE_WITH_SHA256"},
+    "installedConfigEvidence": {"path": "REPLACE_WITH_PATH", "sha256": "REPLACE_WITH_SHA256"},
+    "capabilityEvidence": {"path": "REPLACE_WITH_PATH", "sha256": "REPLACE_WITH_SHA256"},
+    "qualifiedEndpointGate": {"path": "REPLACE_WITH_PATH", "sha256": "REPLACE_WITH_SHA256"},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "REPLACE_WITH_EXACT_SOURCE",
+        "sourceSchema": "REPLACE_WITH_SCHEMA",
+        "selector": "REPLACE_WITH_EXACT_SELECTOR",
+        "uniquenessKey": "REPLACE_WITH_KEY",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": ["REPLACE_WITH_ROUTE_CAPABILITY"],
+    "requestedFields": ["REPLACE_WITH_FIELD"],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

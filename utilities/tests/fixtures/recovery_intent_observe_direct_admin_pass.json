@@ -1,0 +1,23 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-21T19:54:00Z",
+  "incidentId": "TEST_OBSERVE_DIRECT_ADMIN_PASS",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {"signedPremiseFailures": 0, "localPremiseFailures": 0, "directObservationAfterLastSignedFailure": false, "mutationStopLossExplicitlyCleared": false, "failureEvidence": []},
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY", "jobClass": "DIRECT_ADMIN_READ_ONLY", "installedCodeChange": false, "helperInstall": false,
+    "taskActions": [], "processActions": [], "queueMutation": false, "ledgerMutation": false, "sourceMutation": false, "imageRead": false, "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "capabilityEvidence": {"path": "utilities/tests/fixtures/recovery_direct_admin_capability_inventory_pass.json", "sha256": "D437ECC286C0BABE7BE7CC59D06C46858162A488F5150A56AC37DB83F08FCCF2"},
+    "qualifiedAdminGate": {"path": "utilities/tests/fixtures/recovery_admin_authorization_gate_pass.json", "sha256": "0B9D988349EEA03BD4894BC07CBCE62D756FCC81FA6D31AED1658F68ECE43FCC"}
+  },
+  "observation": {
+    "exactSources": [{"sourcePath": "Win32_Process", "sourceSchema": "windows_cim_process", "selector": "exact runner command line", "uniquenessKey": "ProcessId", "maximumRows": 2}],
+    "requestedCapabilities": ["exactProcessInventory"], "requestedFields": ["processor.processCount"],
+    "decisionOptions": ["A", "B", "C", "D"], "mutationDecisionDeferred": true
+  },
+  "mutation": {"supportedRemedy": "", "supportingObservation": {"path": "", "sha256": ""}, "endpointMutationNecessary": false, "singleMutationAttemptAuthorized": false},
+  "reviewOnly": true, "productionRoutingEnabled": false
+}

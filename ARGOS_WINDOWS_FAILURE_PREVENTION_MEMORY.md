@@ -6117,3 +6117,105 @@ than rerunning it.
   assertion failed before the declared task restart. The signed response and all
   three declared files verified; no source was deleted, no other inspection task
   was changed, and no wafer was aborted.
+
+### PowerShell replacement maps cannot contain keys that differ only by case
+
+- Failure signature: a file-backed or inline mechanical clone command fails at
+  parse time with `Duplicate keys ... are not allowed in hash literals` when an
+  ordered hashtable contains both upper- and lower-case replacement tokens.
+- Cause: Windows PowerShell and PowerShell ordered hashtables use
+  case-insensitive key equality. Tokens such as `C2V40` and `c2v40` are the same
+  key even though the intended string replacements are case-sensitive.
+- Mandatory preflight: represent mechanical replacement rules as an ordered
+  array of explicit `{ from, to }` pairs, or use a single canonical-case token
+  plus a separately asserted case-aware pass. Reject a hashtable-based rule set
+  when any normalized key occurs more than once.
+- Recovery: confirm that the parse-time failure created no target root or file,
+  then rerun once with ordered replacement pairs. Preserve source-template
+  hashes and repeat clone-literal and generated-harness gates before execution.
+- First observed on 2026-08-21 while preparing the bounded RA1 read-only audit.
+  The parser failed before the first statement executed; `work\RA1` did not
+  exist and the Git worktree remained clean.
+
+### Harness guard treats a CIM `powershell.exe` filter inside an assignment as external process output
+
+- Failure signature: `Confirm-ArgosPowerShellHarnessSafety.ps1` reports
+  `EXTERNAL_POWERSHELL_TEXT_USED_AS_OBJECT` for an assignment whose right-hand
+  side is an in-process `Get-CimInstance Win32_Process` query containing the
+  literal process name `powershell.exe`.
+- Cause: the conservative AST guard searches command extent text for a
+  PowerShell executable literal. A CIM query embedded directly in an assignment
+  can therefore resemble an external `powershell.exe` invocation even though no
+  child PowerShell process is launched.
+- Mandatory preflight: isolate a live CIM process query in a file-backed typed
+  helper function and assign only the helper's object output. Keep actual
+  external PowerShell invocations JSON-bounded and explicitly rehydrated.
+- Recovery: treat the failed generated root as withdrawn and non-executable.
+  Create a fresh output root from the guarded source templates, use the helper
+  boundary, and rerun parser, harness, wrapper, clone, exact-endpoint, and
+  package gates before signing.
+- First observed on 2026-08-21 in `work\RA1\pkg\payload\RA1.ps1`. The guard
+  failed before the payload, signer, builder, publisher, collector, or endpoint
+  ran. No portal request, task action, image read, queue change, source deletion,
+  or wafer action occurred. `work\RA1` is withdrawn and must not be executed or
+  used as a package parent.
+
+### Pre-action collection-case claims require pinned machine evidence
+
+- Failure signature: a zero-recurrence pre-action contract declares
+  `zeroOneManyCollectionCasesPassed: true`, but the first exact Windows
+  PowerShell 5.1 endpoint case fails with `The property 'Count' cannot be found
+  on this object` for a conditional collection that was not exercised at zero,
+  one, and multiple cardinalities.
+- Cause: the pre-action validator accepted a Boolean declaration without a
+  dependency on a machine-readable case gate. In RA1A, `$ledgerRows = if (...)
+  { @(...) } else { @() }` repeated the already documented conditional-output
+  scalarization defect. The fixture exercised zero ledger rows only and the
+  contract nevertheless claimed complete zero/one/many evidence.
+- Mandatory preflight: every true collection-cardinality control must pin a
+  machine-readable gate naming each conditional collection assignment and its
+  zero-, exactly-one-, and multiple-item Windows PowerShell 5.1 outcomes. Reject
+  a pre-action contract whose dependency set does not contain that exact gate.
+  Independently require the array boundary around the complete conditional,
+  for example `$rows = @(if (...) { Get-Rows })`, before signature.
+- Recovery: retain RA1A request `REQ_RA1A_0821_1910_X1`, its signed local
+  terminal failure, and `C:\RA1AE` as withdrawn, non-replayable evidence. Do not
+  publish or use RA1A as a successor parent. The temporary approved-root install
+  was rolled back to the observed absent state. A future attempt requires a
+  fresh namespace and a pinned zero/one/many collection gate before signing;
+  do not iterate while the systemic pre-action premise is unresolved.
+- First observed on 2026-08-21 in the exact RA1A create-from-absent rehearsal.
+  Signed response `R_CD2FBA7EC9B1_20260821190854216_5e5482c8` was `FAILED`
+  before any live portal publication. No task action, queue mutation, image
+  read, source deletion, production route, or wafer action occurred.
+
+### A read-only route must prove every requested observation capability before publication
+
+- Failure signature: a recovery audit is described as read-only, but its
+  selected `STATUS` or `DATA_PULL` endpoint cannot return one or more fields
+  needed to decide whether any mutation has a point. Repeatedly packaging an
+  incident-specific helper then turns observation into endpoint mutation and
+  restarts the same failure loop.
+- Cause: route safety, endpoint qualification, and question-answering
+  capability were treated as interchangeable. The C1E `STATUS` handler can
+  return configured task state, installed hashes, JSON states, and bounded log
+  tails; `DATA_PULL` can return configured approved-root exact files. Neither
+  returns exact process inventory. A qualified endpoint is therefore not
+  automatically qualified for every read-only question.
+- Mandatory preflight: every recovery intent must enumerate the exact requested
+  capabilities and pin a machine-readable capability inventory for the exact
+  route implementation. Reject before signing when any requested capability is
+  absent. After repeated premise failures, do not bridge the gap with an
+  incident-specific maintenance helper. Either use an already authorized exact
+  admin read-only route or stop for governance review of one generic read-only
+  endpoint capability improvement.
+- Recovery: preserve the failed intent and capability-gap gate as bounded
+  evidence, contact no endpoint, name no successor, and make no restart or data
+  decision. Resume only after the capability gap is closed independently; then
+  run the original exact observation once and select one evidence-supported
+  remedy.
+- First observed on 2026-08-21 while preflighting the post-R10 lot
+  `62631-586` FRONT GUI audit. The validator returned
+  `OBSERVATION_ROUTE_CAPABILITY_GAP` for `exactProcessInventory` before signing,
+  publication, endpoint contact, task action, queue/ledger mutation, GUI edit,
+  image read, source deletion, or wafer action.
