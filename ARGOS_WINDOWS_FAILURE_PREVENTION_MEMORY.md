@@ -6042,3 +6042,37 @@ than rerunning it.
   `100add177e24d035c133f78169cbfd9c8d583706`. The stale R9 assertion was found
   by bounded source inspection. R9 had not been signed, published, or executed,
   and no Argos/JBOD task, image, catalog, ledger, or wafer state changed.
+
+### Cardinality bindings must preserve the signed validator's exact population predicate
+
+- Failure signature: a live successor bound to a signed validator's ten FRONT
+  rows fails before task restart with `C2R expected ten current FRONT catalog
+  rows; found 20.`
+- Cause: the signed V40 validator counted
+  `catalog.acquisitions` only when `domain == 'FRONTSIDE'`, in addition to the
+  exact lot and scan predicates. R9 copied the scalar result `10` but selected
+  every catalog acquisition whose `physicalIdentity` matched the ten wafers;
+  it omitted the FRONT domain predicate and therefore evaluated a broader
+  20-row population. The earlier recovery statement that changing the scalar
+  cardinalities from 20 to 10 was sufficient was incomplete: a cardinality is
+  not portable without its exact selection predicate and population semantics.
+- Mandatory preflight: for every count imported from a signed validator, bind
+  and mechanically compare the complete selector, including lot, scan,
+  physical identity, domain/side, uniqueness key, and grouping semantics. The
+  exact endpoint fixture must include the ten intended FRONT rows plus bounded
+  non-FRONT competitors sharing the same physical identities, prove the
+  competitors are excluded, and include missing, duplicate, and wrong-domain
+  FRONT negative cases. A scalar-only fixture field such as `catalogRows = 10`
+  is not sufficient evidence of selector equivalence.
+- Recovery: retain R9 and its signed terminal failure as withdrawn evidence.
+  Use a fresh successor that selects the exact ten rows with the signed V40
+  FRONT predicate before applying matched, hold, not-ready, and route-state
+  assertions. Keep the declared exact RESTART action and all safety boundaries;
+  do not publish until the packaged endpoint rehearsal exercises both the ten
+  FRONT rows and the same-identity non-FRONT competitors. Do not reinterpret the
+  raw 20-row count as twenty FRONT rows.
+- First observed on 2026-08-21 in signed R9 response
+  `R_A5A427490F0D_20260821174144370_961e73de`. The response signature and all
+  three declared files verified. The verifier failed before any scheduled-task
+  restart; the endpoint returned a terminal signed failure, and no source was
+  deleted, no other inspection task was changed, and no wafer was aborted.

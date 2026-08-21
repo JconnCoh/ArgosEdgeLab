@@ -1,0 +1,83 @@
+{
+  "schema": "argos_lot_62631_586_front_gui_r9_signed_terminal_failure_checkpoint_v1",
+  "createdUtc": "2026-08-21T17:50:00Z",
+  "state": "PENDING_GATE",
+  "disposition": "WITHDRAWN",
+  "supersedes": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_SAFE_STOP_R2_CHECKPOINT_20260821.md",
+  "requestId": "REQ_R9",
+  "requestSigned": true,
+  "requestPublished": true,
+  "endpointProcessed": true,
+  "signedTerminalResponseReceived": true,
+  "terminalPass": false,
+  "processorTaskRestartReached": false,
+  "requestZip": {
+    "path": "work/R9/final/REQ_R9.ready.zip",
+    "bytes": 8949,
+    "sha256": "1BE5D66E8B2361B9DE2AAD3E022A534A4EE5EBAAC532E02D7BFABBC1C3A048D6",
+    "futureReuseAllowed": false,
+    "replayAllowed": false,
+    "successorParentAllowed": false
+  },
+  "publishGate": {
+    "path": "work/R9/R9_PUBLISH_GATE.json",
+    "sha256": "5F70960426FB72CF7F94DB860D55A2E04A487DB180EBFB74F79AE98B19D024A8"
+  },
+  "response": {
+    "responseId": "R_A5A427490F0D_20260821174144370_961e73de",
+    "state": "FAILED",
+    "zipBytes": 2246,
+    "zipSha256": "ADFAC753D950253F186D8B34AF19B24E7F450E57E968C962DF32AF1EB90695F4",
+    "signatureVerified": true,
+    "failureSignature": "C2R expected ten current FRONT catalog rows; found 20."
+  },
+  "terminalGate": {
+    "path": "work/R9/R9_TERMINAL_RESPONSE_GATE.json",
+    "sha256": "445B1CDA8C28E5E0C8239C913BC6C0B2BBB72B6DEB4637615482B0206F2AE91A",
+    "state": "FAIL_R9_SIGNED_TERMINAL_RESPONSE"
+  },
+  "rootCause": {
+    "path": "work/R9/R9_SIGNED_TERMINAL_FAILURE_ROOT_CAUSE_20260821.json",
+    "sha256": "87F580134661FF600B9281EF79AC0F31B82C04CAD59FC472F8BD38CBD996DA9F",
+    "classification": "SIGNED_VALIDATOR_POPULATION_PREDICATE_DROPPED",
+    "signedV40FrontRows": 10,
+    "r9BroaderObservedRows": 20,
+    "requiredDomain": "FRONTSIDE"
+  },
+  "lotState": {
+    "catalogFrontWafers": 10,
+    "confirmedScribeRows": 10,
+    "verifiedMetadataRows": 10,
+    "completedFrontLedgerRows": 0,
+    "guiFrontsideAssetWafers": 0
+  },
+  "successorControls": {
+    "freshSuccessorRequired": true,
+    "exactPopulationPredicateRequired": true,
+    "sameIdentityNonFrontCompetitorFixtureRequired": true,
+    "missingFrontNegativeCaseRequired": true,
+    "duplicateFrontNegativeCaseRequired": true,
+    "wrongDomainNegativeCaseRequired": true,
+    "scalarOnlyCatalogFixtureForbidden": true,
+    "declaredTaskAction": "RESTART:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2"
+  },
+  "historyAudit": {
+    "path": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+    "sha256": "33152D8494EE0F0670B50CAC54964BB890E2A3AA159C3FE56D87260D28B2AA05",
+    "issueCount": 75,
+    "openUnclassifiedIssueCount": 0
+  },
+  "preaction": {
+    "path": "work/R9/PREACTION_R9_FAILURE_CHECKPOINT.json",
+    "resultPath": "work/R9/PREACTION_R9_FAILURE_CHECKPOINT.result.json",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"
+  },
+  "globalFs15HoldUnchanged": true,
+  "sourceDeletionPerformed": false,
+  "otherInspectionTasksChanged": false,
+  "waferAborted": false,
+  "reviewOnly": true,
+  "xmlExportEnabled": false,
+  "productionRoutingEnabled": false,
+  "nextAction": "Build a fresh successor with exact V40 FRONT population predicate semantics and same-identity non-FRONT competitor fixtures before any signature or publication."
+}

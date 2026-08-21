@@ -5602,3 +5602,33 @@ never been signed, rehearsed, published, or executed. Resume only in a fresh
 task, first performing a complete semantic inventory and dependency-closure
 audit. No additional successor or manual installer is authorized as a
 workaround.
+
+## 2026-08-21 Lot 62631-586 FRONT GUI R9 signed terminal failure
+
+R9 completed every local source, clone, harness, wrapper, path, exact endpoint,
+route, final-ZIP, and publisher gate, then was signed and published as
+`REQ_R9`. JBOD returned the matching signature-verified terminal response
+`R_A5A427490F0D_20260821174144370_961e73de`, but its state is `FAILED`.
+R9 is `WITHDRAWN` and is blocked from replay, reuse, or successor-parent
+authority.
+
+The exact verifier failure was `C2R expected ten current FRONT catalog rows;
+found 20.` The cause is mechanically bounded: V40's signed count of ten used
+exact lot, scan, and `domain == FRONTSIDE`; R9 copied the scalar count but
+selected all acquisitions sharing the ten physical identities. This compared
+the right count to a broader population. The scheduled-task restart was not
+reached. Completed FRONT ledger rows and FRONT GUI asset rows remain zero.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_R9_SIGNED_TERMINAL_FAILURE_CHECKPOINT_20260821.md`,
+SHA-256
+`9E09B65292678A6C8C76DF7A4B711A85D63D2770575F2E29142F003A42F05AD7`.
+
+Disposition is `PENDING_GATE`; R9 is `WITHDRAWN`. The current history audit has
+75 classified issues and blocks the exact R9 ZIP. A fresh successor must bind
+the full V40 FRONT selector and exercise same-identity non-FRONT competitors,
+missing/duplicate/wrong-domain FRONT rows, exact RESTART action semantics,
+rollback, idempotence, and a later control. Only a signed PASS terminal response
+may precede fresh ten-ledger-row and ten-GUI-row validation. The independent
+global FS15 terminal hold and all XML, training, production, deletion, and wafer
+boundaries remain unchanged.

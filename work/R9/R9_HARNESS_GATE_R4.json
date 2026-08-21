@@ -1,0 +1,43 @@
+{
+  "schema": "argos_powershell_harness_set_gate_v1",
+  "createdUtc": "2026-08-21T17:38:57Z",
+  "state": "PASS_R9_POWERSHELL_HARNESS_SET",
+  "windowsPowerShellVersion": "5.1",
+  "sourceTemplateHarnessChecksPassed": 7,
+  "generatedHarnessChecksPassed": 7,
+  "generatedWrapperChecksPassed": 7,
+  "pathState": "PASS_PATH_BUDGET",
+  "scripts": [
+    {
+      "path": "work/R9/New-C2RRequest.ps1",
+      "sha256": "1F09AF24963308E8C27F825B5BACE6BB1A8E5F7ADD98A2499E907B708C2F33AF"
+    },
+    {
+      "path": "work/R9/Test-C2RExactEndpoint.ps1",
+      "sha256": "07CB27D0FA0819390207992D211DA835CA40B41E607142C64EA0C33193FCD92E"
+    },
+    {
+      "path": "work/R9/Test-C2RRoutes.ps1",
+      "sha256": "FD992FADC6EFC1631D34934EF59066E5DCF42B9B28C777FA3A9778C0AD98DA71"
+    },
+    {
+      "path": "work/R9/Build-C2RFinal.ps1",
+      "sha256": "35933920EE8A7CBEEA09F75506AF227CF8230D5BBC4E9B7CB25E8C811A955055"
+    },
+    {
+      "path": "work/R9/Publish-C2R.ps1",
+      "sha256": "1FA5F7435AF30F7FF69F08A60A62654A35D2CDA3E439F185375E4FD8F8013C57"
+    },
+    {
+      "path": "work/R9/Collect-C2RResponse.ps1",
+      "sha256": "BEA6ED4CAF38A6072C3CAAF855F1489D4E430637EE1AE2DFC5F65CCA13F368B4"
+    },
+    {
+      "path": "work/R9/pkg/payload/C2R.ps1",
+      "sha256": "37AE08C068CDB1816BF397B3C91F0AA334AA7E13A944DD4364157E18C34A1B4A"
+    }
+  ],
+  "unchangedInstalledRunnerAssetSha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

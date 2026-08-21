@@ -1,0 +1,131 @@
+{
+  "schema": "argos_r9_package_design_freeze_v1",
+  "createdUtc": "2026-08-21T17:20:00Z",
+  "revision": "LOT_62631_586_FRONT_GUI_R9_RESTART_REFRESH",
+  "state": "FROZEN_BEFORE_FIRST_SIGNATURE",
+  "disposition": "PENDING_GATE",
+  "requestId": "REQ_R9",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "entryPoint": {
+    "path": "work/R9/pkg/payload/C2R.ps1",
+    "sha256": "37AE08C068CDB1816BF397B3C91F0AA334AA7E13A944DD4364157E18C34A1B4A",
+    "installedDestination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/R9.ps1",
+    "allowCreate": true,
+    "idempotentTargetSha256": "37AE08C068CDB1816BF397B3C91F0AA334AA7E13A944DD4364157E18C34A1B4A"
+  },
+  "runner": {
+    "path": "work/R9/pkg/payload/Run-JbodAllWaferProcessor.ps1",
+    "sha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+    "installedDestination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Run-JbodAllWaferProcessor.ps1",
+    "approvedPredecessorSha256": [
+      "6B61A415DF2F6852C290ABD0F794E86BE13B270A91E9E86E005B76A468404F1C",
+      "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+    ],
+    "allowCreate": false
+  },
+  "maintenanceDefinition": {
+    "path": "work/R9/pkg/MAINTENANCE_DEFINITION.json",
+    "sha256": "A8BA4B29E8C556520BD8F10A728F60114E86E56428564C35EC83A616D3DB0A2D",
+    "requiredState": "PASS_JBOD_PROCESSOR_RUNNER_FIX_AND_REFRESH_R9"
+  },
+  "signedValidator": {
+    "path": "work/V40/C2V40_TERMINAL_RESPONSE_GATE.json",
+    "sha256": "F3EE67B7C900A8BE3E83A03020C6BE5E8BB0C6C5D6B1F332044892631A2D813E",
+    "responseId": "R_CB3CDBA6F0B8_20260821161419288_ddf4e3bc",
+    "frontCatalogRows": 10,
+    "distinctFrontPhysicalIdentities": 10,
+    "targetConfirmedRows": 10,
+    "targetVerifiedRows": 10,
+    "targetActiveHolds": 0,
+    "staleAppearanceRouteRows": 7,
+    "staleScribeRouteRows": 3,
+    "targetLedgerRows": 0,
+    "frontsideAssetWafers": 0
+  },
+  "signedFailedPredecessor": {
+    "path": "work/R8/R8_TERMINAL_RESPONSE_GATE.json",
+    "sha256": "EB329A4E518DD5A0C15CCDF196219F636AC710A0F8E15EE12234B1B165D39F42",
+    "requestId": "REQ_R8",
+    "responseId": "R_0FE56F0676DA_20260821163245034_fbc68fa1",
+    "state": "FAIL_R8_SIGNED_TERMINAL_RESPONSE"
+  },
+  "installedInvariantHashes": {
+    "processorConfigSha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8",
+    "inventorySha256": "8919C3DD4AC04FD662B57E356AC6E1A70BD614E97AFC270EB4B8FF617D705160",
+    "importerSha256": "45965930699A0F0C38098B65E5A153C5DE360103BC9FED345AC5811B6F1FBD0D",
+    "endpointWorkerSha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+    "routeRootSetSha256": "2D1DFA2D56F525395BE871B206EDD7649C77D1E1EA47B940332165E5F3F65BAE",
+    "transportRevisionSha256": "843629F44D8C310FAE201EAD808509FBECF3FC3C04D8D16B0D67CCADEFAE2DDB"
+  },
+  "actionContract": {
+    "declared": "RESTART:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2",
+    "implementedPassingAction": "RESTART",
+    "requiredProcessCountBefore": 1,
+    "requiredProcessCountAfter": 1,
+    "oldAndNewProcessIdsMustDiffer": true,
+    "startIfAbsentAllowed": false,
+    "noActionPassAllowed": false,
+    "otherTaskActionAllowed": false
+  },
+  "rollbackDesign": {
+    "endpointTransactionRollbackRequired": true,
+    "unapprovedPredecessorRefusedBeforeMutation": true,
+    "nonTenCatalogRefusedBeforeTaskAction": true,
+    "absentProcessRefusedBeforeTaskAction": true,
+    "runtimeFailureInjectionProperty": "failAfterAuthorization",
+    "runtimeFailureInjectionToken": "INJECTED_C2R_RUNTIME_FAILURE",
+    "postFailureControlRequired": true,
+    "expectedSignedRehearsalResponseCount": 7
+  },
+  "responseLeaves": [
+    "PORTAL_RESPONSE_MANIFEST.json",
+    "PORTAL_RESPONSE_MANIFEST.sig",
+    "MAINTENANCE.stdout.txt",
+    "MAINTENANCE.stderr.txt",
+    "RESULT.json",
+    "FAILURE.json"
+  ],
+  "roots": {
+    "installedRoot": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2",
+    "endpointIncomingRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/incoming",
+    "endpointResponseRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/responses",
+    "laptopResponseExtractionRoot": "C:/R9S",
+    "endpointRehearsalRoot": "C:/R9E1",
+    "finalEndpointRehearsalRoot": "C:/R9F1",
+    "finalPackagePartialRoot": "C:/R9Z",
+    "publisherRehearsalRoot": "C:/R9P"
+  },
+  "sourceAudits": {
+    "semanticInventory": "work/R9/R9_SEMANTIC_DEPENDENCY_INVENTORY_20260821.json",
+    "semanticInventorySha256": "34E3E4DDCE92C2504F86915AA0C7E0CDAEE76D2145F03B5F0039FE3171120CAA",
+    "cloneRemediationManifest": "work/R9/CLONE_REMEDIATION_R9.json",
+    "cloneRemediationManifestSha256": "94934F5E49294E7181BD215B4F76AC6F0BB56E792359B4170B48E6B9CA98ED29",
+    "sourceTemplateHarnessGateCount": 7,
+    "generatedHarnessGateCount": 7,
+    "generatedWrapperGateCount": 7,
+    "pathBudgetState": "PASS_PATH_BUDGET"
+  },
+  "currentHarnessHashes": {
+    "newRequestSha256": "1F09AF24963308E8C27F825B5BACE6BB1A8E5F7ADD98A2499E907B708C2F33AF",
+    "endpointTestSha256": "7FD1DE0327E011E6AEE50162E0BF3FEC16B7FB478140A4438F990525912908B8",
+    "routeTestSha256": "288418DAC235EB37FF0AD614E4F91B1750B0230DC48ABEF624BE5E8DA81FAB51",
+    "builderSha256": "A862C7CD66CD519F902C818E9BF6163C2AC9208DF9D64F8D26E4A9C95B753E2D",
+    "publisherSha256": "525988A2D1B0FEF1876C40CA335EFBBB31E40CB64F4EC0E7574141CBE01D96B4",
+    "collectorSha256": "BEA6ED4CAF38A6072C3CAAF855F1489D4E430637EE1AE2DFC5F65CCA13F368B4"
+  },
+  "derivedPins": {
+    "signedR9Manifest": "PENDING_FIRST_SIGNATURE",
+    "finalR9Zip": "PENDING_FINAL_BUILD",
+    "finalR9Gate": "PENDING_FINAL_BUILD",
+    "r9PublishGate": "PENDING_PUBLICATION"
+  },
+  "authority": {
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlExportEnabled": false,
+    "productionRoutingEnabled": false,
+    "sourceDeletionAllowed": false,
+    "waferAbortAllowed": false
+  }
+}

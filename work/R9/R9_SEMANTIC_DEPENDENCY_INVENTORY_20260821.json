@@ -1,0 +1,210 @@
+{
+  "schema": "argos_r9_semantic_dependency_inventory_v1",
+  "createdUtc": "2026-08-21T17:12:03.7415833Z",
+  "revision": "LOT_62631_586_FRONT_GUI_R9_SEMANTIC_DEPENDENCY_INVENTORY_20260821",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "state": "HOLD_R9_SEMANTIC_DEPENDENCY_CLOSURE_INCOMPLETE",
+  "authority": {
+    "safeStopCheckpoint": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_SAFE_STOP_R2_CHECKPOINT_20260821.md",
+    "safeStopCheckpointSha256": "3300C190DECE5B7F9976E9B1522E5AD34FB6DD79F20D655B59E0233867B3B0A1",
+    "safeGitBaseline": "100add177e24d035c133f78169cbfd9c8d583706",
+    "inventoryHead": "6d5884672b25932e0cd65c0dcc57e62c03a32300",
+    "signedValidator": "work/V40/C2V40_TERMINAL_RESPONSE_GATE.json",
+    "signedValidatorSha256": "F3EE67B7C900A8BE3E83A03020C6BE5E8BB0C6C5D6B1F332044892631A2D813E",
+    "signedFailedPredecessor": "work/R8/R8_TERMINAL_RESPONSE_GATE.json",
+    "signedFailedPredecessorSha256": "EB329A4E518DD5A0C15CCDF196219F636AC710A0F8E15EE12234B1B165D39F42"
+  },
+  "signedValidatorFacts": {
+    "frontCatalogRows": 10,
+    "distinctFrontPhysicalIdentities": 10,
+    "frontSlots": [
+      "Slot01",
+      "Slot02",
+      "Slot03",
+      "Slot04",
+      "Slot05",
+      "Slot06",
+      "Slot07",
+      "Slot08",
+      "Slot09",
+      "Slot10"
+    ],
+    "targetConfirmedRows": 10,
+    "targetVerifiedRows": 10,
+    "targetActiveHolds": 0,
+    "staleCatalogRouteStates": [
+      {
+        "state": "HOLD_FRONTSIDE_APPEARANCE_ROUTE_NOT_YET_QUALIFIED",
+        "count": 7
+      },
+      {
+        "state": "HOLD_SCRIBE_CONFIRMATION_REQUIRED_BEFORE_DETECTOR",
+        "count": 3
+      }
+    ],
+    "targetLedgerRows": 0,
+    "frontsideAssetWafers": 0,
+    "catalogAcceptance": true,
+    "guiAcceptance": false
+  },
+  "currentSourceValidation": {
+    "powerShellFileCount": 8,
+    "powerShellParseErrorCount": 0,
+    "jsonFileCountBeforeThisInventory": 3,
+    "jsonInvalidCount": 0,
+    "r9ExecutableLegacyTwentyRowAssertionCount": 0,
+    "r9ExecutableR8TokenOccurrences": [
+      {
+        "path": "work/R9/Build-C2RFinal.ps1",
+        "lines": [20, 35],
+        "classification": "REQUIRED_SIGNED_R8_TERMINAL_PREDECESSOR"
+      }
+    ]
+  },
+  "postBaselineEditsAudited": [
+    {
+      "path": "work/R9/pkg/payload/C2R.ps1",
+      "sha256": "1B9E1687C6B70CBB7D128C992157D9FB528292DDD25DEE0EAFD3BDCEDC2B5074",
+      "delta": "catalogRows.Count-ne20 changed to catalogRows.Count-ne10 with FRONT-specific refusal text",
+      "validationState": "STATICALLY_CONFIRMED_NOT_EXECUTED"
+    },
+    {
+      "path": "work/R9/pkg/MAINTENANCE_DEFINITION.json",
+      "sha256": "F4546AC895E9C65BA9A5F2ECB31D0671D1FA115B437C960B849520F8BD95D371",
+      "delta": "R9 entrypoint target/idempotent hash updated to the current payload hash",
+      "validationState": "STATICALLY_CONFIRMED_NOT_EXECUTED"
+    },
+    {
+      "path": "work/R9/Build-C2RFinal.ps1",
+      "sha256": "892133918E38DC46C4F1746962F2379F18823F5CEC4A4F63C9A0E962BFE39CEE",
+      "delta": "entryPointSha256 pin updated to the current payload hash",
+      "validationState": "STATICALLY_CONFIRMED_NOT_EXECUTED"
+    },
+    {
+      "path": "work/R9/Test-C2RExactEndpoint.ps1",
+      "sha256": "E6FC3F8F5D4C14F75C9C5CCF9CE27F7F78FADB7FF3515BA64EF88EB78319E387",
+      "delta": "targetSha pin updated to the current payload hash",
+      "validationState": "STATICALLY_CONFIRMED_NOT_EXECUTED"
+    }
+  ],
+  "tenRowSemanticClosure": [
+    {
+      "component": "live payload",
+      "path": "work/R9/pkg/payload/C2R.ps1",
+      "status": "PRESENT",
+      "details": "Expected physical identities are Slots 01-10; queue, catalog, confirmed, overlay-matched, before, and after cardinality checks use 10."
+    },
+    {
+      "component": "endpoint fixture",
+      "path": "work/R9/Test-C2RExactEndpoint.ps1",
+      "status": "POSITIVE_CASE_PRESENT_NEGATIVE_CASE_MISSING",
+      "details": "The positive fixture models ten FRONT rows and the signed 7/3 stale catalog route split, but no non-ten case is executed against the exact payload."
+    },
+    {
+      "component": "terminal collector",
+      "path": "work/R9/Collect-C2RResponse.ps1",
+      "status": "TEN_ROW_FIELDS_PRESENT",
+      "details": "Confirmed, verified, metadata-matched, and before/after not-ready postconditions use 10/0 as intended."
+    },
+    {
+      "component": "signed validator binding",
+      "paths": [
+        "work/R9/Test-C2RExactEndpoint.ps1",
+        "work/R9/Build-C2RFinal.ps1"
+      ],
+      "status": "MISSING_DIRECT_HASH_AND_FIELD_BINDING",
+      "details": "The exact V40 gate is the authority for 10 FRONT rows and the 7/3 stale route split, but the R9 endpoint and final builder do not directly pin and assert it."
+    }
+  ],
+  "allowedUnchangedTwentyLiterals": [
+    {
+      "path": "work/R9/Test-C2RExactEndpoint.ps1",
+      "line": 17,
+      "value": "2026-08-21T16:20:00Z",
+      "classification": "FIXTURE_TIMESTAMP_MINUTE_NOT_CARDINALITY"
+    },
+    {
+      "path": "work/R9/pkg/payload/Run-JbodAllWaferProcessor.ps1",
+      "lines": [39, 52],
+      "value": "PlanOnly MaximumJobs=20",
+      "classification": "UNCHANGED_PROCESSOR_PLAN_CAP_NOT_TARGET_ROW_ASSERTION",
+      "sourceSha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+      "generatedSha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+    }
+  ],
+  "derivedHashStopGates": [
+    {
+      "stage": "SIGNED_REQUEST",
+      "legacySha256": "3174326BBA1813189BA2F6E4662B6DD95DDE7F68F8408FCEA91C47649E8A3FF6",
+      "legacyArtifact": "work/R8/signed_short/REQ_R8.ready/PORTAL_REQUEST_MANIFEST.json",
+      "occurrences": [
+        "work/R9/Build-C2RFinal.ps1:15",
+        "work/R9/Test-C2RExactEndpoint.ps1:7",
+        "work/R9/Test-C2RRoutes.ps1:50"
+      ],
+      "state": "HARD_STOP_UNTIL_EXACT_R9_SIGNED_MANIFEST_EXISTS"
+    },
+    {
+      "stage": "FINAL_PACKAGE",
+      "legacyArtifacts": [
+        {
+          "sha256": "0F1597BDBE5DBA29CC5123D580D7F1B3B85D0A170A2F86B17E8D2F0EDF9C88A0",
+          "bytes": 8706,
+          "path": "work/R8/final/REQ_R8.ready.zip"
+        },
+        {
+          "sha256": "0D9DA2616924E2B85F89A4F7F81989823CDA66598A3FC1645A93277A1EA9B5F2",
+          "path": "work/R8/final/REQ_R8.ready.zip.gate.json"
+        }
+      ],
+      "occurrences": [
+        "work/R9/Publish-C2R.ps1:10",
+        "work/R9/Publish-C2R.ps1:11",
+        "work/R9/Publish-C2R.ps1:12"
+      ],
+      "state": "HARD_STOP_UNTIL_EXACT_R9_FINAL_PACKAGE_AND_GATE_EXIST"
+    },
+    {
+      "stage": "PUBLISHED_REQUEST",
+      "legacySha256": "172411037BB901E5D8428FACE1C9C2BECC525BF18AF107AA7D9AB1947ADE3A54",
+      "legacyArtifact": "work/R8/R8_PUBLISH_GATE.json",
+      "occurrences": [
+        "work/R9/Collect-C2RResponse.ps1:12"
+      ],
+      "state": "HARD_STOP_UNTIL_EXACT_R9_PUBLISH_GATE_EXISTS"
+    }
+  ],
+  "actionSemanticAudit": {
+    "declaredAction": "RESTART:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2",
+    "payloadBranches": [
+      "RESTART_WHEN_ONE_PROCESS_AND_REFRESH_REQUIRED",
+      "START_IF_ABSENT_WHEN_ZERO_PROCESSES",
+      "NO_TASK_ACTION_WHEN_PROCESS_IS_FRESH_AND_NO_REFRESH_REQUIRED"
+    ],
+    "collectorRequiresRestart": true,
+    "state": "HOLD_DECLARATION_PAYLOAD_BRANCH_MISMATCH",
+    "requiredClosure": "Bind the payload to the signed pre-refresh state, require exactly one existing processor process, require refresh-needed state before authorization, and add negative cases proving absent-process and non-ten refusal before task action."
+  },
+  "missingGates": [
+    "COMPLETE_R8_TO_R9_CLONE_LITERAL_REMEDIATION_MANIFEST_AND_PASS",
+    "NEGATIVE_NON_TEN_EXACT_PAYLOAD_CASE",
+    "NEGATIVE_ABSENT_PROCESS_ACTION_SEMANTIC_CASE",
+    "CURRENT_HARNESS_SAFETY_PASS",
+    "CURRENT_WRAPPER_SAFETY_PASS",
+    "CURRENT_PATH_BUDGET_PASS",
+    "CURRENT_ZERO_RECURRENCE_PREACTION_PASS",
+    "EXACT_R9_SIGNED_MANIFEST_HASH_PROPAGATION",
+    "EXACT_PACKAGED_ENDPOINT_REHEARSAL_PASS",
+    "EXACT_R9_FINAL_PACKAGE_HASH_PROPAGATION",
+    "EXACT_R9_PUBLISH_GATE_HASH_PROPAGATION"
+  ],
+  "stopLoss": {
+    "buildAllowed": false,
+    "signatureAllowed": false,
+    "publicationAllowed": false,
+    "executionAllowed": false,
+    "r10Allowed": false,
+    "manualInstallerAllowed": false
+  },
+  "nextAction": "Remediate the R9 source set as one dependency-closed change: bind V40 directly, make RESTART the only reachable authorized action, add exact non-ten and absent-process negative cases, update all coupled response-count assertions, then repeat this inventory before any signing or build."
+}

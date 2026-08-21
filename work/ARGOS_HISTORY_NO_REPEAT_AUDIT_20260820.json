@@ -78,9 +78,10 @@
     "PORTAL_REQUEST_ARCHIVE_TRANSPORT_TOKEN_REUSE_COLLISION",
     "HARNESS_DYNAMIC_QUEUE_POSTCONDITION_TOCTOU",
     "HARNESS_SYNTHETIC_QUEUE_FIXTURE_IDENTITY_COLLISION",
-    "PKG_SUCCESSOR_PARTIAL_SEMANTIC_REMEDIATION"
+    "PKG_SUCCESSOR_PARTIAL_SEMANTIC_REMEDIATION",
+    "PKG_SIGNED_CARDINALITY_POPULATION_PREDICATE_DROPPED"
   ],
-  "issueCount": 74,
+  "issueCount": 75,
   "openUnclassifiedIssueCount": 0,
   "preventionPolicy": "work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md",
   "preactionTemplate": "work/templates/ARGOS_ZERO_RECURRENCE_PREACTION.template.json",
@@ -202,6 +203,15 @@
       "futureReuseAllowed": false,
       "replayAllowed": false,
       "successorParentAllowed": false
+    },
+    {
+      "path": "work/R9/final/REQ_R9.ready.zip",
+      "sha256": "1BE5D66E8B2361B9DE2AAD3E022A534A4EE5EBAAC532E02D7BFABBC1C3A048D6",
+      "reason": "SIGNED_TERMINAL_FAILURE_AFTER_SCALAR_TEN_WAS_APPLIED_WITHOUT_THE_SIGNED_V40_FRONTSIDE_DOMAIN_POPULATION_PREDICATE",
+      "terminalEvidenceRetained": true,
+      "futureReuseAllowed": false,
+      "replayAllowed": false,
+      "successorParentAllowed": false
     }
   ],
   "legacyEvidence": {
@@ -263,7 +273,8 @@
     "environmentInvocationManifestControlsEffectiveRehearsalState": true,
     "portalTransportTokenUnusedAcrossLiveAndProcessedShareQueuesRequired": true,
     "dynamicQueuePostconditionsUseBoundedUnionSnapshotRequired": true,
-    "syntheticQueueFixtureIdentitySetsMustBeDisjointAndPreflighted": true
+    "syntheticQueueFixtureIdentitySetsMustBeDisjointAndPreflighted": true,
+    "signedCardinalityBindingsRequireExactPopulationPredicateEquivalence": true
   },
   "reviewOnly": true,
   "productionRoutingEnabled": false

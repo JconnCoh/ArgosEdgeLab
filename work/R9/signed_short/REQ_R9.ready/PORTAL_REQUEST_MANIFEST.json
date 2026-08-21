@@ -1,0 +1,58 @@
+{
+    "schema":  "argos_project_portal_request_manifest_v1",
+    "requestId":  "REQ_R9",
+    "createdUtc":  "2026-08-21T17:23:55.1233201+00:00",
+    "expiresUtc":  "2026-08-22T17:23:55.1233201+00:00",
+    "targetRole":  "JBOD",
+    "jobClass":  "MAINTENANCE_PATCH",
+    "handler":  "",
+    "maxResultBytes":  1048576,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false,
+    "credentialsIncluded":  false,
+    "signerThumbprint":  "C82181052919C475CF888F49427C1B55AE65DC12",
+    "signatureAlgorithm":  "RSA-SHA256-PKCS1",
+    "files":  [
+                  {
+                      "path":  "payload/C2R.ps1",
+                      "bytes":  19154,
+                      "sha256":  "37AE08C068CDB1816BF397B3C91F0AA334AA7E13A944DD4364157E18C34A1B4A"
+                  },
+                  {
+                      "path":  "payload/Run-JbodAllWaferProcessor.ps1",
+                      "bytes":  3624,
+                      "sha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+                  }
+              ],
+    "entryPoint":  "payload/C2R.ps1",
+    "changes":  [
+                    {
+                        "source":  "payload/C2R.ps1",
+                        "destination":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\R9.ps1",
+                        "approvedPredecessorSha256":  [
+                                                          "37AE08C068CDB1816BF397B3C91F0AA334AA7E13A944DD4364157E18C34A1B4A"
+                                                      ],
+                        "installedSha256":  "37AE08C068CDB1816BF397B3C91F0AA334AA7E13A944DD4364157E18C34A1B4A",
+                        "allowCreate":  true
+                    },
+                    {
+                        "source":  "payload/Run-JbodAllWaferProcessor.ps1",
+                        "destination":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Run-JbodAllWaferProcessor.ps1",
+                        "approvedPredecessorSha256":  [
+                                                          "6B61A415DF2F6852C290ABD0F794E86BE13B270A91E9E86E005B76A468404F1C",
+                                                          "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+                                                      ],
+                        "installedSha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+                        "allowCreate":  false
+                    }
+                ],
+    "allowedTaskActions":  [
+                               "RESTART:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2"
+                           ],
+    "rehearsal":  {
+                      "requiredState":  "PASS_JBOD_PROCESSOR_RUNNER_FIX_AND_REFRESH_R9"
+                  }
+}

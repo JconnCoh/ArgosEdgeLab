@@ -7,9 +7,9 @@ if(([bool]$Preflight)-eq([bool]$Apply)){throw 'Specify exactly one of -Preflight
 $project='C:\Users\joshua.conn\Desktop\ArgosDev\ArgosEdgeLab'
 $root=Join-Path $project 'work\R9'
 $requestId='REQ_R9'
-$requestSha='0F1597BDBE5DBA29CC5123D580D7F1B3B85D0A170A2F86B17E8D2F0EDF9C88A0'
-$requestBytes=[int64]8706
-$finalGateSha='0D9DA2616924E2B85F89A4F7F81989823CDA66598A3FC1645A93277A1EA9B5F2'
+$requestSha='1BE5D66E8B2361B9DE2AAD3E022A534A4EE5EBAAC532E02D7BFABBC1C3A048D6'
+$requestBytes=[int64]8949
+$finalGateSha='04F72D1CA7B3AE9707136AA1B35C1E1BBD1CAABD14FFB467D638E2FF30B8CE21'
 $source=Join-Path $root 'final\REQ_R9.ready.zip'
 $finalGatePath=$source+'.gate.json'
 $publishGate=Join-Path $root 'R9_PUBLISH_GATE.json'

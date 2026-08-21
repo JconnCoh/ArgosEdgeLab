@@ -9,7 +9,7 @@ $root=Join-Path $project 'work\R9'
 $requestId='REQ_R9'
 $localRoot='C:\R9S'
 $publishGatePath=Join-Path $root 'R9_PUBLISH_GATE.json'
-$publishGateSha='172411037BB901E5D8428FACE1C9C2BECC525BF18AF107AA7D9AB1947ADE3A54'
+$publishGateSha='5F70960426FB72CF7F94DB860D55A2E04A487DB180EBFB74F79AE98B19D024A8'
 $routeGatePath=Join-Path $root 'R9_RESPONSE_ROUTE_GATE.json'
 $terminalGatePath=Join-Path $root 'R9_TERMINAL_RESPONSE_GATE.json'
 $pathTool=Join-Path $project 'utilities\Confirm-ArgosPathBudget.ps1'
@@ -86,6 +86,8 @@ if([string]$candidate.manifest.state-eq'FAILED'){
     $terminal=[ordered]@{schema='argos_r9_terminal_failure_gate_v1';createdUtc=[DateTime]::UtcNow.ToString('o');state='FAIL_R9_SIGNED_TERMINAL_RESPONSE';disposition='WITHDRAWN';requestId=$requestId;responseId=[string]$candidate.manifest.responseId;responseState=[string]$candidate.manifest.state;responseZip=$targetZip;responseZipBytes=$zipBytes;responseZipSha256=$zipSha;signatureVerified=$true;failureState=if($null-eq$failure){''}else{[string]$failure.state};stderrSha256=Bytes-Sha $stderrBytes;sourceDeletionPerformed=$false;otherInspectionTasksChanged=$false;waferAborted=$false;reviewOnly=$true;productionRoutingEnabled=$false}
     Write-NewJson $terminalGatePath $terminal;$terminal|ConvertTo-Json -Depth 8;return
 }
+$readyRows=@()
+if($null-ne$stdout){$readyRows=@($stdout.routeStatesAfter|Where-Object{[string]$_.state-eq'READY_FRONTSIDE_SCRATCH_TEST_REVIEW_ONLY_PROCESSING'})}
 $pass=(
     [string]$candidate.manifest.state-eq'PASS_MAINTENANCE_PATCH'-and$null-ne$stdout-and
     [string]$stdout.state-eq'PASS_JBOD_PROCESSOR_RUNNER_FIX_AND_REFRESH_R9'-and-not[bool]$stdout.rehearsal-and
@@ -103,7 +105,10 @@ $pass=(
     [int]$stdout.notReadyMatchedRowsBefore-eq10-and[int]$stdout.notReadyMatchedRowsAfter-eq0-and
     [int]$stdout.scribeHoldRowsAfter-eq0-and
     [int]$stdout.exactProcessCountAfter-eq1-and
-    (([bool]$stdout.processorTaskRestarted)-xor([bool]$stdout.restartSkippedFresh))-and
+    [bool]$stdout.processorTaskRestarted-and-not[bool]$stdout.restartSkippedFresh-and
+    [int]$stdout.oldProcessId-gt0-and[int]$stdout.newProcessId-gt0-and[int]$stdout.oldProcessId-ne[int]$stdout.newProcessId-and
+    -not[string]::IsNullOrWhiteSpace([string]$stdout.restartStartedUtc)-and
+    @($stdout.routeStatesAfter).Count-eq1-and$readyRows.Count-eq1-and[int]$readyRows[0].count-eq10-and
     ([DateTime]$stdout.newProcessCreationUtc).ToUniversalTime()-ge([DateTime]$stdout.dRootBoundaryUtc).ToUniversalTime()-and
     ([DateTime]$stdout.newProcessCreationUtc).ToUniversalTime()-ge([DateTime]$stdout.runnerLastWriteUtc).ToUniversalTime()-and
     -not[bool]$stdout.protectedTaskDefinitionsChanged-and-not[bool]$stdout.protectedTaskPrincipalsChanged-and

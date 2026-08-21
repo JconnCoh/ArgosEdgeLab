@@ -1,0 +1,86 @@
+{
+  "schema": "argos_r9_signed_terminal_failure_root_cause_v1",
+  "createdUtc": "2026-08-21T17:48:00Z",
+  "state": "FAIL_R9_SIGNED_TERMINAL_RESPONSE_ROOT_CAUSE_CONFIRMED",
+  "disposition": "WITHDRAWN",
+  "requestId": "REQ_R9",
+  "responseId": "R_A5A427490F0D_20260821174144370_961e73de",
+  "responseState": "FAILED",
+  "signatureVerified": true,
+  "terminalGate": {
+    "path": "work/R9/R9_TERMINAL_RESPONSE_GATE.json",
+    "sha256": "445B1CDA8C28E5E0C8239C913BC6C0B2BBB72B6DEB4637615482B0206F2AE91A"
+  },
+  "responseRouteGate": {
+    "path": "work/R9/R9_RESPONSE_ROUTE_GATE.json",
+    "sha256": "F40587F7A1A87869D65CBFC337D578693CC792BE9B1353B2B8B6977436131DD5"
+  },
+  "responseZip": {
+    "path": "C:/R9S/R_A5A427490F0D_20260821174144370_961e73de.ready.zip",
+    "bytes": 2246,
+    "sha256": "ADFAC753D950253F186D8B34AF19B24E7F450E57E968C962DF32AF1EB90695F4"
+  },
+  "responseFiles": [
+    {
+      "path": "C:/R9S/R_A5A427490F0D_20260821174144370_961e73de.ready/PORTAL_RESPONSE_MANIFEST.json",
+      "bytes": 1418,
+      "sha256": "EB39702DD2A74BCD9275ECC8FCE3AB5D187033FBC1349FC73A4FEA0B356018F5"
+    },
+    {
+      "path": "C:/R9S/R_A5A427490F0D_20260821174144370_961e73de.ready/FAILURE.json",
+      "bytes": 687,
+      "sha256": "8645673025242D5349F5F459F06C5C5D43BE9D96BF099B06FD31A6CB32B9B50D"
+    },
+    {
+      "path": "C:/R9S/R_A5A427490F0D_20260821174144370_961e73de.ready/MAINTENANCE.stderr.txt",
+      "bytes": 518,
+      "sha256": "A90FB40161F0B3E74883A10F971A42A768E14CBE7034159A8A1DCFE58EF783EC"
+    }
+  ],
+  "failureSignature": "C2R expected ten current FRONT catalog rows; found 20.",
+  "executionBoundary": {
+    "maintenanceVerifierExitCode": 1,
+    "scheduledTaskRestartReached": false,
+    "sourceDeletionPerformed": false,
+    "otherInspectionTasksChanged": false,
+    "waferAborted": false
+  },
+  "rootCause": {
+    "classification": "SIGNED_VALIDATOR_POPULATION_PREDICATE_DROPPED",
+    "r9Payload": {
+      "path": "work/R9/signed_short/REQ_R9.ready/payload/C2R.ps1",
+      "sha256": "37AE08C068CDB1816BF397B3C91F0AA334AA7E13A944DD4364157E18C34A1B4A",
+      "selector": "expected physicalIdentity only",
+      "observedSelectedRows": 20
+    },
+    "signedV40ValidatorPayload": {
+      "path": "work/V40/signed_short/REQ_V40_0821_1615_X1.ready/payload/C2V.ps1",
+      "sha256": "B0F0A41CE346A24C76BC89A4741110A6A2A36448E0D9CE87315FCDEC47657A94",
+      "selector": "exact lot and scan plus domain == FRONTSIDE",
+      "signedSelectedRows": 10,
+      "signedDistinctPhysicalIdentities": 10
+    },
+    "signedV40TerminalGate": {
+      "path": "work/V40/C2V40_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "F3EE67B7C900A8BE3E83A03020C6BE5E8BB0C6C5D6B1F332044892631A2D813E"
+    },
+    "finding": "R9 copied the signed scalar ten but not the signed FRONT population predicate; the broader same-physical-identity selector returned twenty rows."
+  },
+  "mandatorySuccessorControls": {
+    "freshSuccessorRequired": true,
+    "r9ReusableAsPublicationParent": false,
+    "exactFrontDomainPredicateRequired": true,
+    "sameIdentityNonFrontCompetitorFixtureRequired": true,
+    "missingFrontNegativeCaseRequired": true,
+    "duplicateFrontNegativeCaseRequired": true,
+    "wrongDomainNegativeCaseRequired": true,
+    "scalarOnlyCatalogFixtureForbidden": true,
+    "declaredTaskAction": "RESTART:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2"
+  },
+  "failureMemory": {
+    "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+    "sha256": "222713FBB8B5476E0E8F865301230207291E76F080E3C31958AE2EC52D79DAF5"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

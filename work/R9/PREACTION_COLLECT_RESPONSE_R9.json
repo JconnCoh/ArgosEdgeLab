@@ -1,0 +1,82 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v1",
+  "revision": "R9_COLLECT_SIGNED_TERMINAL_RESPONSE_20260821",
+  "createdUtc": "2026-08-21T17:45:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "COLLECT_VERIFY_AND_EXTRACT_EXACT_R9_SIGNED_TERMINAL_RESPONSE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "E2D68512E50A9D1DBA821EE73B7495A1C789582F707EF56E509E6E07BCD3D2A0",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "1A5EA5750E4CE0570F2E3D20CE8E64D3330B074A2E2AA5012D4FB602353138B5"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_SAFE_STOP_R2_CHECKPOINT_20260821.md",
+      "sha256": "3300C190DECE5B7F9976E9B1522E5AD34FB6DD79F20D655B59E0233867B3B0A1"
+    },
+    {
+      "path": "work/R9/CLONE_GATE_R9_R5.json",
+      "sha256": "38F1FF94617259C0BF86E3EFC8F832EE0CE80890A429820D053AA92A70C1CE27"
+    },
+    {
+      "path": "work/R9/R9_HARNESS_GATE_R5.json",
+      "sha256": "852EC7F1840E34B8391F69F704096560E89CDDA4D1982A42D9739D53123A0706"
+    },
+    {
+      "path": "work/R9/Collect-C2RResponse.ps1",
+      "sha256": "A08C5A30D2A174B5CF17A6AD4C2BEBDB08C858EDB010C75F27AE4E0B03C3609A"
+    },
+    {
+      "path": "work/R9/R9_PUBLISH_GATE.json",
+      "sha256": "5F70960426FB72CF7F94DB860D55A2E04A487DB180EBFB74F79AE98B19D024A8"
+    },
+    {
+      "path": "work/R9/R9_RESPONSE_PREFLIGHT_20260821.json",
+      "sha256": "DDE020379DE8D656434CBBFD186141D69A9B834E619CF545740A35F4B8984E47"
+    },
+    {
+      "path": "work/R9/final/REQ_R9.ready.zip.gate.json",
+      "sha256": "04F72D1CA7B3AE9707136AA1B35C1E1BBD1CAABD14FFB467D638E2FF30B8CE21"
+    },
+    {
+      "path": "work/R9/R9_COMPLETE_ROUTE_GATE.json",
+      "sha256": "34632ECA18B797A41FDF49817F8EDEFC0D4D0CA196CED9DF8C9AE4CA6A71B22A"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer",
+      "sha256": "5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B"
+    },
+    {
+      "path": "work/R9/PREACTION_PUBLISH_LIVE_R9.result.json",
+      "sha256": "E93CAF817749819F4E2A505DFD8194D95764C4AE6B46F47592D1E4ED2944356B"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

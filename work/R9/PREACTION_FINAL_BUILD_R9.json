@@ -1,0 +1,110 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v1",
+  "revision": "R9_FINAL_BUILD_AND_EXTRACTED_REHEARSAL_20260821",
+  "createdUtc": "2026-08-21T17:36:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "BUILD_VERIFY_AND_REHEARSE_EXACT_FINAL_R9_SIGNED_ZIP",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "E2D68512E50A9D1DBA821EE73B7495A1C789582F707EF56E509E6E07BCD3D2A0",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "1A5EA5750E4CE0570F2E3D20CE8E64D3330B074A2E2AA5012D4FB602353138B5"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_SAFE_STOP_R2_CHECKPOINT_20260821.md",
+      "sha256": "3300C190DECE5B7F9976E9B1522E5AD34FB6DD79F20D655B59E0233867B3B0A1"
+    },
+    {
+      "path": "work/R9/R9_PACKAGE_DESIGN_FREEZE_20260821.json",
+      "sha256": "822E70C801DC0FFAC00118FB83E52B44605F1E9EFA00F9F58BB49255F4523F57"
+    },
+    {
+      "path": "work/R9/CLONE_GATE_R9_R3.json",
+      "sha256": "CE6B8CA3D70ECCCC83F54C9052B772A4BB8ABFC693A2A11F9F91C80E998FFD87"
+    },
+    {
+      "path": "work/R9/R9_HARNESS_GATE_R3.json",
+      "sha256": "3ED0702B0F021FB0766623FEC9AD956A2C7992CFB9E1D5AE9593BE606A9EEA0C"
+    },
+    {
+      "path": "work/R9/Build-C2RFinal.ps1",
+      "sha256": "35933920EE8A7CBEEA09F75506AF227CF8230D5BBC4E9B7CB25E8C811A955055"
+    },
+    {
+      "path": "work/R9/Test-C2RExactEndpoint.ps1",
+      "sha256": "07CB27D0FA0819390207992D211DA835CA40B41E607142C64EA0C33193FCD92E"
+    },
+    {
+      "path": "work/R9/C2R_EXACT_ENDPOINT_GATE.json",
+      "sha256": "7EEDCB39666D6D8547D71D2F31B89DE2761434F4867E85A2DC132379D8AA9BB6"
+    },
+    {
+      "path": "work/R9/R9_COMPLETE_ROUTE_GATE.json",
+      "sha256": "34632ECA18B797A41FDF49817F8EDEFC0D4D0CA196CED9DF8C9AE4CA6A71B22A"
+    },
+    {
+      "path": "work/R9/signed_short/REQ_R9.ready/PORTAL_REQUEST_MANIFEST.json",
+      "sha256": "CAC97750555B7103C8D8C87C2A0C36008B07144EACC27284A6A66C4753DEAB81"
+    },
+    {
+      "path": "work/R9/signed_short/REQ_R9.ready/PORTAL_REQUEST_MANIFEST.sig",
+      "sha256": "3DCCF583CC66A2144EEC7DB3AF8594D13D2D1726826E2677E60E9154888BBCD1"
+    },
+    {
+      "path": "work/R9/signed_short/REQ_R9.ready/payload/C2R.ps1",
+      "sha256": "37AE08C068CDB1816BF397B3C91F0AA334AA7E13A944DD4364157E18C34A1B4A"
+    },
+    {
+      "path": "work/R9/signed_short/REQ_R9.ready/payload/Run-JbodAllWaferProcessor.ps1",
+      "sha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+    },
+    {
+      "path": "work/V40/C2V40_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "F3EE67B7C900A8BE3E83A03020C6BE5E8BB0C6C5D6B1F332044892631A2D813E"
+    },
+    {
+      "path": "work/R8/R8_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "EB329A4E518DD5A0C15CCDF196219F636AC710A0F8E15EE12234B1B165D39F42"
+    },
+    {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/pkg/payload/W.ps1",
+      "sha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalPackage.ps1",
+      "sha256": "6CA21D7DE97EDE88F2C41F91D5B7801C688982C8C5A422987EB9528E1E9A084B"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/ARGOS_PROJECT_PORTAL_LAPTOP_SIGNER_PUBLIC.cer",
+      "sha256": "2B434D0CF6A0D6D69AAE3D280032EFF00807D423CA3B3D7F2EFC1C6BB628BFFF"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

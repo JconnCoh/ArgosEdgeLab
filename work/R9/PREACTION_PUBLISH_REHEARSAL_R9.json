@@ -1,0 +1,78 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v1",
+  "revision": "R9_PUBLISHER_CREATE_NEW_REHEARSAL_20260821",
+  "createdUtc": "2026-08-21T17:40:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "REHEARSE_R9_EXACT_CREATE_NEW_PUBLICATION_WITHOUT_EXTERNAL_QUEUE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "E2D68512E50A9D1DBA821EE73B7495A1C789582F707EF56E509E6E07BCD3D2A0",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "1A5EA5750E4CE0570F2E3D20CE8E64D3330B074A2E2AA5012D4FB602353138B5"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_SAFE_STOP_R2_CHECKPOINT_20260821.md",
+      "sha256": "3300C190DECE5B7F9976E9B1522E5AD34FB6DD79F20D655B59E0233867B3B0A1"
+    },
+    {
+      "path": "work/R9/CLONE_GATE_R9_R4.json",
+      "sha256": "2E082830EE92B180B54916ACFB47C9A3D307F60E0EC18AEB3364558F1A5C0F2E"
+    },
+    {
+      "path": "work/R9/R9_HARNESS_GATE_R4.json",
+      "sha256": "8F9778E37EF7B96CF8F011299F1B96750AC3AEC2E216BEB1CAA5D2B067719FD9"
+    },
+    {
+      "path": "work/R9/Publish-C2R.ps1",
+      "sha256": "1FA5F7435AF30F7FF69F08A60A62654A35D2CDA3E439F185375E4FD8F8013C57"
+    },
+    {
+      "path": "work/R9/PUBLISH_REHEARSAL.json",
+      "sha256": "8F7E8E9A43FFF74F97EF5A2110331D52D3DEE92EBED65C52D318A9AC7287FB32"
+    },
+    {
+      "path": "work/R9/final/REQ_R9.ready.zip",
+      "sha256": "1BE5D66E8B2361B9DE2AAD3E022A534A4EE5EBAAC532E02D7BFABBC1C3A048D6"
+    },
+    {
+      "path": "work/R9/final/REQ_R9.ready.zip.gate.json",
+      "sha256": "04F72D1CA7B3AE9707136AA1B35C1E1BBD1CAABD14FFB467D638E2FF30B8CE21"
+    },
+    {
+      "path": "work/R9/R9_COMPLETE_ROUTE_GATE.json",
+      "sha256": "34632ECA18B797A41FDF49817F8EDEFC0D4D0CA196CED9DF8C9AE4CA6A71B22A"
+    },
+    {
+      "path": "work/R9/R9_FINAL_EXACT_ENDPOINT_GATE.json",
+      "sha256": "2B5792997789B22B683256EF41863B6E3C38FAC96BEC145B3888FCBD1A518323"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
