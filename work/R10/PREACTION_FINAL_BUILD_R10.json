@@ -1,0 +1,55 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v1",
+  "revision": "R10_FINAL_BUILD_20260821",
+  "createdUtc": "2026-08-21T18:20:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "BUILD_AND_REHEARSE_EXACT_SIGNED_R10_FINAL_ZIP",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "33152D8494EE0F0670B50CAC54964BB890E2A3AA159C3FE56D87260D28B2AA05",
+  "dependencies": [
+    { "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "222713FBB8B5476E0E8F865301230207291E76F080E3C31958AE2EC52D79DAF5" },
+    { "path": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/C2R3_TERMINAL_RESPONSE_GATE.json", "sha256": "FE8FCD5CAA29F51100263AFCA0D9C868C7252C75F7928CF12837BD9288AF85F2" },
+    { "path": "work/R9/R9_TERMINAL_RESPONSE_GATE.json", "sha256": "445B1CDA8C28E5E0C8239C913BC6C0B2BBB72B6DEB4637615482B0206F2AE91A" },
+    { "path": "work/V40/C2V40_TERMINAL_RESPONSE_GATE.json", "sha256": "F3EE67B7C900A8BE3E83A03020C6BE5E8BB0C6C5D6B1F332044892631A2D813E" },
+    { "path": "work/R10/R10_CLONE_LITERAL_REMEDIATION_GATE_R4.json", "sha256": "5E4E035E88DD021F7753031B39C1D64C76D10EC609750EAF6E354A7C24EF30F3" },
+    { "path": "work/R10/R10_HARNESS_GATE_R2.json", "sha256": "10620C58FB073895EA9B26738BB7A7E3A9E77934879FC3947C5E288CFAD5DDD4" },
+    { "path": "work/R10/R10_SELECTOR_GATE.json", "sha256": "57768BDAA0860A37ACA4DEF3555989CE79E6A5803CDC051648EE0BB01AC2F3C6" },
+    { "path": "work/R10/R10_EXACT_ENDPOINT_GATE.json", "sha256": "2591A80E35900144B02B3B2EEDEB95952F36045D720FC473439E2BDAC842268F" },
+    { "path": "work/R10/R10_COMPLETE_ROUTE_GATE.json", "sha256": "BDBA7832B2792216160960F12E2D99D9C558C40B57FEF06A4AAC7AFBD135F784" },
+    { "path": "work/R10/PREACTION_ROUTE_GATE_R10.result.json", "sha256": "E49B47EFC9A4010F7C152A72F172BBB5C778BA495F53133D30BE12DBB54D4F98" },
+    { "path": "work/R10/Build-C2RFinal.ps1", "sha256": "743E8A81647416AEC20D109C5146E1F6DCCAF54249CC1457EB2C58509FA48541" },
+    { "path": "work/R10/signed_short/REQ_R10.ready/PORTAL_REQUEST_MANIFEST.json", "sha256": "898D5E18B0532F01448CFDBDA0D8E26F43D7D98FE689A84D56A2FC2C9E991E22" },
+    { "path": "work/R10/signed_short/REQ_R10.ready/PORTAL_REQUEST_MANIFEST.sig", "sha256": "83586D0D66A0151652C8212FBEE5C19B5E58795773E884B310011F745BBD392F" },
+    { "path": "work/R10/signed_short/REQ_R10.ready/payload/C2R.ps1", "sha256": "A0E48FB4CFE30FDF9C7B7F83924309CAEA43AB25C9542DAD5E940D92B933F747" },
+    { "path": "work/R10/signed_short/REQ_R10.ready/payload/Run-JbodAllWaferProcessor.ps1", "sha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4" }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      { "path": "work/R9/final/REQ_R9.ready.zip", "sha256": "1BE5D66E8B2361B9DE2AAD3E022A534A4EE5EBAAC532E02D7BFABBC1C3A048D6", "reason": "Withdrawn signed request; diagnostic evidence only." }
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

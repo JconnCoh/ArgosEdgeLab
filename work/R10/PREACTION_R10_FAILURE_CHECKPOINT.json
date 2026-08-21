@@ -1,0 +1,53 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v1",
+  "revision": "R10_SIGNED_TERMINAL_FAILURE_SAFE_CHECKPOINT_20260821",
+  "createdUtc": "2026-08-21T18:31:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "PROMOTE_R10_SIGNED_TERMINAL_FAILURE_AND_CROSS_SOURCE_COUNT_ROOT_CAUSE_SAFE_CHECKPOINT",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "712E939E3A0EAA414F59F9606659CD2DC6139DBF7635D52B3C936A5072EEF670",
+  "dependencies": [
+    { "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "A1035D0F0DF04B0468F0A1BB2196A508EBAE2A5B3BF1085B8670C3505C2EF57B" },
+    { "path": "work/R10/R10_SIGNED_TERMINAL_FAILURE_ROOT_CAUSE_20260821.json", "sha256": "C4F6EA1D936CD7F23BF98D5FEFA1ABF4EAF532F2CF220E1FD3979F0334642F44" },
+    { "path": "work/R10/R10_TERMINAL_RESPONSE_GATE.json", "sha256": "742EA6577934BC0816A16A978208DEB5CB6C2308F8A745C89B87A689CD44206D" },
+    { "path": "work/R10/R10_RESPONSE_ROUTE_GATE.json", "sha256": "1992B69C90BCA54703A741E040B2CD85C75C559320BC6C4F2A7BF0C47B72A5BB" },
+    { "path": "work/R10/R10_PUBLISH_GATE.json", "sha256": "9D83F604EDD676195EF2BE08A819DD8646A78680A7C751F85857D7CE2EE1DC50" },
+    { "path": "work/R10/final/REQ_R10.ready.zip.gate.json", "sha256": "A455C9A46073EFBAE3A414874F4404EB4D5DA8E34F0A09795ABC79F516272E83" },
+    { "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_R9_SIGNED_TERMINAL_FAILURE_CHECKPOINT_20260821.md", "sha256": "9E09B65292678A6C8C76DF7A4B711A85D63D2770575F2E29142F003A42F05AD7" },
+    { "path": "work/ARGOS_CONTINUITY_STATE.json", "sha256": "44FCA1029E46AD60521786F92F6164A382D18E108B588AE063E86125A87C2E1D" },
+    { "path": "work/ACTIVE_ARGOS_EDGE_LAB_STATE.md", "sha256": "C06A8622F550AA2F8144C64425124AE516D02C91E7CE8C9C4BE3C63B978A0290" },
+    { "path": "work/ARGOS_REVISION_LEDGER.md", "sha256": "241491003FCA4C1A7262B61BFB431537112DA1FBA26349255C327DAA1C365F6E" },
+    { "path": "work/PROJECT_MEMORY_INDEX.md", "sha256": "C54BF3116CEE948E217BEF5D6A80F241F147792315A4D2D6D335BA6BECACA914" },
+    { "path": "work/ARGOS_CODEX_SESSION_SAFETY.md", "sha256": "68BEB214CAAD941DDB0BC0C48359F110831BF24E4E4A631C7AA64E2A3497895F" }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      { "path": "work/R9/final/REQ_R9.ready.zip", "sha256": "1BE5D66E8B2361B9DE2AAD3E022A534A4EE5EBAAC532E02D7BFABBC1C3A048D6", "reason": "Withdrawn signed request; diagnostic evidence only." },
+      { "path": "work/R10/final/REQ_R10.ready.zip", "sha256": "10DEEB44E465CBE53A0E427BB36169E9EC1B31EB24F550251D83D838396D51E7", "reason": "Withdrawn signed request with cross-source count semantic substitution; terminal evidence only." }
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

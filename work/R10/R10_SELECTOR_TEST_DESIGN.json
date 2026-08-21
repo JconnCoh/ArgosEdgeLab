@@ -1,0 +1,33 @@
+{
+  "schema": "argos_r10_selector_test_design_v1",
+  "createdDate": "2026-08-21",
+  "state": "FROZEN_BEFORE_SELECTOR_TEST_EXECUTION",
+  "entryPoint": "work/R10/pkg/payload/C2R.ps1",
+  "entryPointSha256": "A0E48FB4CFE30FDF9C7B7F83924309CAEA43AB25C9542DAD5E940D92B933F747",
+  "testHarness": "work/R10/Test-R10Selector.ps1",
+  "testRoot": "C:/R10P",
+  "rawInputs": [
+    "queueBefore",
+    "catalogBefore",
+    "overlayBefore",
+    "queueAfter",
+    "catalogAfter",
+    "overlayAfter"
+  ],
+  "forbiddenInputs": [
+    "lotStateBefore",
+    "lotStateAfter",
+    "precomputed catalogRows scalar"
+  ],
+  "cases": [
+    { "name": "valid_non_front_competitors", "expected": "PASS", "frontRows": 10, "sameIdentityBacksideCompetitors": 10 },
+    { "name": "missing_front", "expected": "REFUSE", "frontRows": 9, "sameIdentityBacksideCompetitors": 10 },
+    { "name": "duplicate_front", "expected": "REFUSE", "frontRows": 11, "sameIdentityBacksideCompetitors": 10 },
+    { "name": "wrong_domain_replacement", "expected": "REFUSE", "frontRows": 9, "sameIdentityBacksideCompetitors": 11 },
+    { "name": "absent_process", "expected": "REFUSE", "frontRows": 10, "sameIdentityBacksideCompetitors": 10 },
+    { "name": "injected_internal_swap_rollback", "expected": "REFUSE_AND_RESTORE_OLD_RUNNER", "frontRows": 10, "sameIdentityBacksideCompetitors": 10 }
+  ],
+  "publicationAuthority": "NONE",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

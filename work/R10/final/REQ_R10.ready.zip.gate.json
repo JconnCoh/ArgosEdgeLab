@@ -1,0 +1,84 @@
+{
+    "schema":  "argos_r10_final_package_gate_v1",
+    "createdUtc":  "2026-08-21T18:21:39.6506951Z",
+    "state":  "PASS_R10_FINAL_PACKAGE_GATE",
+    "requestId":  "REQ_R10",
+    "requestZip":  "work/R10/final/REQ_R10.ready.zip",
+    "requestZipBytes":  9229,
+    "requestZipSha256":  "10DEEB44E465CBE53A0E427BB36169E9EC1B31EB24F550251D83D838396D51E7",
+    "requestManifestSha256":  "898D5E18B0532F01448CFDBDA0D8E26F43D7D98FE689A84D56A2FC2C9E991E22",
+    "requestSignatureSha256":  "83586D0D66A0151652C8212FBEE5C19B5E58795773E884B310011F745BBD392F",
+    "entryPointSha256":  "A0E48FB4CFE30FDF9C7B7F83924309CAEA43AB25C9542DAD5E940D92B933F747",
+    "runnerSha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+    "exactFinalZipExtractionPassed":  true,
+    "exactFinalZipSignaturePassed":  true,
+    "preFinalEndpointGateSha256":  "2591A80E35900144B02B3B2EEDEB95952F36045D720FC473439E2BDAC842268F",
+    "finalExtractedEndpointGateSha256":  "B685D83C8909B765BF895D0728F9F7A006AB281BD8F80566A67CEC058F599105",
+    "signedValidatorSha256":  "F3EE67B7C900A8BE3E83A03020C6BE5E8BB0C6C5D6B1F332044892631A2D813E",
+    "rawCatalogSelectorExercised":  true,
+    "sameIdentityNonFrontCompetitorsExercised":  true,
+    "missingFrontRefused":  true,
+    "duplicateFrontRefused":  true,
+    "wrongDomainReplacementRefused":  true,
+    "absentProcessRefused":  true,
+    "approvedOldPredecessorExercised":  true,
+    "targetIdempotenceAccepted":  true,
+    "unapprovedPredecessorRefusedBeforeMutation":  true,
+    "runtimeVerifierFailureRolledBack":  true,
+    "controlAfterRuntimeFailurePassed":  true,
+    "responseSignaturesVerified":  10,
+    "completeRouteGateSha256":  "BDBA7832B2792216160960F12E2D99D9C558C40B57FEF06A4AAC7AFBD135F784",
+    "completeRoutePathCount":  127,
+    "maximumRouteEffectiveLength":  187,
+    "maximumRouteComponentLength":  51,
+    "reservedSuffixCharacters":  32,
+    "installedRouteRootSetSha256":  "2D1DFA2D56F525395BE871B206EDD7649C77D1E1EA47B940332165E5F3F65BAE",
+    "transportRevisionSha256":  "843629F44D8C310FAE201EAD808509FBECF3FC3C04D8D16B0D67CCADEFAE2DDB",
+    "exactEndpointWorkerSha256":  "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+    "laptopResponseExtractionRoot":  "C:\\R10S",
+    "sourceTerminalResponseId":  "R_C57E232B3681_20260820052535470_afeba1f7",
+    "r9DiagnosticResponseId":  "R_A5A427490F0D_20260821174144370_961e73de",
+    "allowedTaskActions":  [
+                               "RESTART:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2"
+                           ],
+    "scriptRows":  [
+                       {
+                           "file":  "work/R10/New-C2RRequest.ps1",
+                           "sha256":  "11BCDEF745DAF59B59EB27A63AF9660E39F419BAC538DAD11C0F2FD336164F21"
+                       },
+                       {
+                           "file":  "work/R10/Test-C2RExactEndpoint.ps1",
+                           "sha256":  "A6A3DFED3F61880ADEE2E0B90792FB71712A8E84C3B38405F7E521A53D7F670C"
+                       },
+                       {
+                           "file":  "work/R10/Test-C2RRoutes.ps1",
+                           "sha256":  "D126002C393A6E32D7E6F1F5B1C5100D033A085EF5F4AEAADACF607DD06ED78E"
+                       },
+                       {
+                           "file":  "work/R10/Build-C2RFinal.ps1",
+                           "sha256":  "743E8A81647416AEC20D109C5146E1F6DCCAF54249CC1457EB2C58509FA48541"
+                       },
+                       {
+                           "file":  "work/R10/Publish-C2R.ps1",
+                           "sha256":  "9373578373C1E6D161BAD02FEEBF910BCC01D605DD0EB4493952AA164B700717"
+                       },
+                       {
+                           "file":  "work/R10/Collect-C2RResponse.ps1",
+                           "sha256":  "CC50EDCD58E8BB553A827D552615145C8758C4C75A25C8AC09DD2FE853BF8BAC"
+                       },
+                       {
+                           "file":  "work/R10/pkg/payload/C2R.ps1",
+                           "sha256":  "A0E48FB4CFE30FDF9C7B7F83924309CAEA43AB25C9542DAD5E940D92B933F747"
+                       },
+                       {
+                           "file":  "work/R10/pkg/payload/Run-JbodAllWaferProcessor.ps1",
+                           "sha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+                       }
+                   ],
+    "sourceDeletionPerformed":  false,
+    "otherInspectionTasksChanged":  false,
+    "waferAborted":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false,
+    "publicationAuthorized":  true
+}

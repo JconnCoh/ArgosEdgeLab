@@ -1,0 +1,47 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v1",
+  "revision": "R10_COLLECT_RESPONSE_20260821",
+  "createdUtc": "2026-08-21T18:25:45Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "COLLECT_MATCHING_SIGNED_R10_TERMINAL_RESPONSE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "33152D8494EE0F0670B50CAC54964BB890E2A3AA159C3FE56D87260D28B2AA05",
+  "dependencies": [
+    { "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "222713FBB8B5476E0E8F865301230207291E76F080E3C31958AE2EC52D79DAF5" },
+    { "path": "work/R10/R10_CLONE_LITERAL_REMEDIATION_GATE_R6.json", "sha256": "A70FF33D12B32AE142865AC4E9A260347E966F1D97C97C34A89EE9A2F2F36EB0" },
+    { "path": "work/R10/R10_COLLECTOR_HARNESS_GATE.json", "sha256": "4D5FE43B5EE8ECD522E91A94618029F0401AD8383929C6FC776A6071526D7224" },
+    { "path": "work/R10/PREACTION_PUBLISH_LIVE_R10.result.json", "sha256": "5CCA31414D854343F6F8E7192E5F8B7BB80BEE93C9E6031D71651B7B520EC109" },
+    { "path": "work/R10/R10_PUBLISH_GATE.json", "sha256": "9D83F604EDD676195EF2BE08A819DD8646A78680A7C751F85857D7CE2EE1DC50" },
+    { "path": "work/R10/Collect-C2RResponse.ps1", "sha256": "2D87F875A4F599FE597FCCF2474077D951E9AD3297FA0121234FBF8155283920" },
+    { "path": "work/R10/R10_COMPLETE_ROUTE_GATE.json", "sha256": "BDBA7832B2792216160960F12E2D99D9C558C40B57FEF06A4AAC7AFBD135F784" }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      { "path": "work/R9/final/REQ_R9.ready.zip", "sha256": "1BE5D66E8B2361B9DE2AAD3E022A534A4EE5EBAAC532E02D7BFABBC1C3A048D6", "reason": "Withdrawn signed request; diagnostic evidence only." }
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

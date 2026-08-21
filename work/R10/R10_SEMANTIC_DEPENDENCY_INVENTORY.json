@@ -1,0 +1,143 @@
+{
+  "schema": "argos_r10_semantic_dependency_inventory_v1",
+  "createdDate": "2026-08-21",
+  "state": "FROZEN_BEFORE_TRANSFORMATION",
+  "requestId": "REQ_R10",
+  "scope": "Fresh review-only JBOD processor restart and exact FRONT catalog refresh validation",
+  "authoritativePublicationParent": {
+    "path": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3",
+    "terminalGatePath": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/C2R3_TERMINAL_RESPONSE_GATE.json",
+    "terminalGateSha256": "FE8FCD5CAA29F51100263AFCA0D9C868C7252C75F7928CF12837BD9288AF85F2",
+    "reason": "Last successful signed processor-recovery family; R9 is withdrawn and is not a publication parent."
+  },
+  "diagnosticEvidenceOnly": [
+    {
+      "path": "work/R9/R9_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "445B1CDA8C28E5E0C8239C913BC6C0B2BBB72B6DEB4637615482B0206F2AE91A",
+      "authority": "WITHDRAWN_TERMINAL_FAILURE_ONLY"
+    },
+    {
+      "path": "work/R9/R9_SIGNED_TERMINAL_FAILURE_ROOT_CAUSE_20260821.json",
+      "sha256": "87F580134661FF600B9281EF79AC0F31B82C04CAD59FC472F8BD38CBD996DA9F",
+      "authority": "DIAGNOSTIC_ONLY"
+    }
+  ],
+  "lockedValidator": {
+    "path": "work/V40/C2V40_TERMINAL_RESPONSE_GATE.json",
+    "sha256": "F3EE67B7C900A8BE3E83A03020C6BE5E8BB0C6C5D6B1F332044892631A2D813E",
+    "requiredState": "PASS_C2V40_SIGNED_TERMINAL_RESPONSE",
+    "lot": "62631-586",
+    "scanDatePrefix": "2026-08-19",
+    "expectedPhysicalIdentityTimestamp": "20260819173317",
+    "domain": "FRONTSIDE",
+    "frontCatalogRows": 10,
+    "distinctFrontPhysicalIdentities": 10,
+    "preRefreshRouteCounts": {
+      "HOLD_FRONTSIDE_APPEARANCE_ROUTE_NOT_YET_QUALIFIED": 7,
+      "HOLD_SCRIBE_CONFIRMATION_REQUIRED_BEFORE_DETECTOR": 3
+    },
+    "guiAcceptance": false
+  },
+  "populationContract": {
+    "selectionOrder": [
+      "exact lot equals 62631-586",
+      "scanTimestampLocal begins with 2026-08-19, matching the signed V40 selector",
+      "domain equals FRONTSIDE",
+      "physical identity is one of Slot01 through Slot10 for lot 62631-586 and timestamp token 20260819173317",
+      "then and only then require exactly ten rows and ten distinct expected physical identities"
+    ],
+    "competitors": "Same physical identities in any non-FRONTSIDE domain remain outside the selected population and cannot affect FRONT counts or route-state assertions.",
+    "forbiddenShortcut": "No rehearsal scalar or precomputed lot-state count may bypass selection from raw catalog acquisition rows."
+  },
+  "declaredAction": {
+    "token": "RESTART:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2",
+    "before": "Exactly one existing exact processor process is required.",
+    "after": "Exactly one different fresh exact processor process is required.",
+    "forbidden": [
+      "start when absent",
+      "skip restart because the process appears fresh",
+      "accept the same process identifier after the action"
+    ]
+  },
+  "requiredRehearsalCases": [
+    "approved predecessor with ten FRONT rows and ten same-identity BACKSIDE competitors",
+    "target idempotence with ten FRONT rows and ten same-identity BACKSIDE competitors",
+    "dedicated non-FRONT competitor control proving only FRONT rows are selected",
+    "unapproved installed predecessor refusal before mutation",
+    "missing FRONT row refusal",
+    "duplicate FRONT row refusal",
+    "wrong-domain replacement refusal",
+    "absent exact processor process refusal",
+    "injected failure after endpoint package swap and payload authorization with exact rollback",
+    "control request after failures"
+  ],
+  "fileTransformations": [
+    {
+      "path": "work/R10/pkg/payload/C2R.ps1",
+      "changes": [
+        "Bind signed V40 hash and exact validator fields.",
+        "Use one shared raw-row selector in rehearsal and live modes.",
+        "Require exact lot, scan, expected physical identity, and FRONTSIDE domain before Count equals 10.",
+        "Require ten distinct expected FRONT physical identities.",
+        "Enforce exact pre-refresh 7 plus 3 routes and exact post-refresh ten-row ready route.",
+        "Enforce exact restart semantics and retained task definitions/principals.",
+        "Retain review-only, no XML, no production, no deletion, no wafer abort constraints."
+      ]
+    },
+    {
+      "path": "work/R10/Test-C2RExactEndpoint.ps1",
+      "changes": [
+        "Build raw queue, catalog acquisition, and overlay fixtures.",
+        "Include bounded same-identity BACKSIDE competitors.",
+        "Exercise all ten required signed endpoint cases and verify every signed response.",
+        "Prove failure cases do not mutate protected destinations and control-after-failure succeeds."
+      ]
+    },
+    {
+      "path": "work/R10/New-C2RRequest.ps1",
+      "changes": [
+        "Use REQ_R10 and fresh R10 roots/tokens.",
+        "Require exact two-file payload, idempotent target hash membership, and one exact RESTART action."
+      ]
+    },
+    {
+      "path": "work/R10/pkg/MAINTENANCE_DEFINITION.json",
+      "changes": [
+        "Install helper as R10.ps1.",
+        "Pin newly computed helper hash and unchanged runner hash.",
+        "Require PASS_JBOD_PROCESSOR_RUNNER_FIX_AND_REFRESH_R10."
+      ]
+    },
+    {
+      "path": "work/R10/Test-C2RRoutes.ps1",
+      "changes": [
+        "Use exact R10 manifest hash after signing and enumerate complete R10 request/response paths."
+      ]
+    },
+    {
+      "path": "work/R10/Build-C2RFinal.ps1",
+      "changes": [
+        "Require the exact ten-case endpoint gate, signed V40 binding, R10 route gate, and exact manifest/payload hashes.",
+        "Rehearse the extracted final bytes in a fresh root before publication."
+      ]
+    },
+    {
+      "path": "work/R10/Publish-C2R.ps1",
+      "changes": [
+        "Require the exact R10 final package gate and zero pending queue entries before create-new publication."
+      ]
+    },
+    {
+      "path": "work/R10/Collect-C2RResponse.ps1",
+      "changes": [
+        "Collect only the matching signed R10 terminal response and enforce exact R10 stdout/state semantics."
+      ]
+    }
+  ],
+  "publicationAuthority": "NONE_UNTIL_ALL_GATES_PASS",
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

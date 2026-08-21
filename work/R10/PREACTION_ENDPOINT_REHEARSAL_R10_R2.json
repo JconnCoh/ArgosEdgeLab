@@ -1,0 +1,50 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v1",
+  "revision": "R10_ENDPOINT_REHEARSAL_R2_20260821",
+  "createdUtc": "2026-08-21T18:16:45Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "REHEARSE_SIGNED_R10_ENDPOINT_WITH_EARLY_AND_HANDLER_FAILURE_EVIDENCE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "33152D8494EE0F0670B50CAC54964BB890E2A3AA159C3FE56D87260D28B2AA05",
+  "dependencies": [
+    { "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "222713FBB8B5476E0E8F865301230207291E76F080E3C31958AE2EC52D79DAF5" },
+    { "path": "work/V40/C2V40_TERMINAL_RESPONSE_GATE.json", "sha256": "F3EE67B7C900A8BE3E83A03020C6BE5E8BB0C6C5D6B1F332044892631A2D813E" },
+    { "path": "work/R9/R9_TERMINAL_RESPONSE_GATE.json", "sha256": "445B1CDA8C28E5E0C8239C913BC6C0B2BBB72B6DEB4637615482B0206F2AE91A" },
+    { "path": "work/R10/R10_SELECTOR_GATE.json", "sha256": "57768BDAA0860A37ACA4DEF3555989CE79E6A5803CDC051648EE0BB01AC2F3C6" },
+    { "path": "work/R10/R10_CLONE_LITERAL_REMEDIATION_GATE_R4.json", "sha256": "5E4E035E88DD021F7753031B39C1D64C76D10EC609750EAF6E354A7C24EF30F3" },
+    { "path": "work/R10/R10_ENDPOINT_HARNESS_GATE_R2.json", "sha256": "C496CD314F67793A8FE8336C363CF3B98FBE32891E0513D1BE8F840430CCC85F" },
+    { "path": "work/R10/PREACTION_SIGN_R10.result.json", "sha256": "54DDCC1D7CB82508777387B7CE2F08A8AD65D1E62E19BC7B25A87083BC0FAB53" },
+    { "path": "work/R10/signed_short/REQ_R10.ready/PORTAL_REQUEST_MANIFEST.json", "sha256": "898D5E18B0532F01448CFDBDA0D8E26F43D7D98FE689A84D56A2FC2C9E991E22" },
+    { "path": "work/R10/signed_short/REQ_R10.ready/PORTAL_REQUEST_MANIFEST.sig", "sha256": "83586D0D66A0151652C8212FBEE5C19B5E58795773E884B310011F745BBD392F" },
+    { "path": "work/R10/Test-C2RExactEndpoint.ps1", "sha256": "A6A3DFED3F61880ADEE2E0B90792FB71712A8E84C3B38405F7E521A53D7F670C" }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      { "path": "work/R9/final/REQ_R9.ready.zip", "sha256": "1BE5D66E8B2361B9DE2AAD3E022A534A4EE5EBAAC532E02D7BFABBC1C3A048D6", "reason": "Withdrawn signed request; diagnostic evidence only." }
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

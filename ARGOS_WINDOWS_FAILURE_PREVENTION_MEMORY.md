@@ -6076,3 +6076,44 @@ than rerunning it.
   three declared files verified. The verifier failed before any scheduled-task
   restart; the endpoint returned a terminal signed failure, and no source was
   deleted, no other inspection task was changed, and no wafer was aborted.
+
+### A similarly named count from another live document is not evidence for an executable assertion
+
+- Failure signature: after the exact FRONT selector succeeds, a live successor
+  refuses before task restart with
+  `R10 signed V40 pre-refresh state is not the exact ten-row FRONT contract.`
+- Cause: R10 correctly bound the signed V40 catalog selector, but then treated
+  V40's ten `targetConfirmedRows` as authority for
+  `confirmedPhysical == 10`. Those values come from different documents and
+  predicates. V40's `targetConfirmedRows` are selected from
+  `identity\confirmed\ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json`; R10's
+  `confirmedPhysical` is selected from `identity\SCRIBE_IDENTITY_QUEUE.json`
+  only when `state == SCRIBE_CONFIRMED_INSITE_LOOKUP_PENDING`. The signed V40
+  validator never asserted that queue-state population. R10's raw fixture then
+  hard-coded all ten queue rows to that state, so it proved its own assumption
+  instead of the installed source semantics. The composite pre-refresh error
+  also omitted field-by-field observed values, preventing the terminal response
+  from identifying the exact divergent derived field without another audit.
+- Mandatory preflight: every executable count must declare its exact source
+  document, schema, selector, uniqueness key, and signed or direct evidence.
+  Mechanically reject cross-document scalar substitutions even when labels such
+  as `confirmed`, `matched`, or `rows` appear equivalent. Build fixtures from
+  raw rows matching the exact evidence source, and add a wrong-source control
+  that proves a confirmed-overlay count cannot satisfy a queue-state assertion.
+  Composite assertions must emit bounded field-specific expected and observed
+  values before any mutation so one signed terminal response is sufficient for
+  diagnosis.
+- Recovery: retain R10 and its signed terminal failure as withdrawn evidence.
+  Do not reuse its package or fixture as a successor parent. Before any new
+  restart request, obtain a bounded read-only signed or direct audit of the exact
+  `SCRIBE_IDENTITY_QUEUE.json` target rows and states, then either bind the
+  queue-state assertion to that evidence or remove it only after proving it is
+  not an authorization invariant. Rebuild every fixture from the audited raw
+  queue rows and rerun the complete FRONT-competitor and rollback matrix from a
+  fresh root.
+- First observed on 2026-08-21 in signed R10 response
+  `R_1E567E7F3C79_20260821182419402_28a007a2`. The exact FRONT lot/date/domain
+  selector and identity-set guards had already passed. The composite pre-refresh
+  assertion failed before the declared task restart. The signed response and all
+  three declared files verified; no source was deleted, no other inspection task
+  was changed, and no wafer was aborted.

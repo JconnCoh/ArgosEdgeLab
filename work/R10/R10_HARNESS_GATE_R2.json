@@ -1,0 +1,29 @@
+{
+  "schema": "argos_r10_harness_gate_v1",
+  "checkedUtc": "2026-08-21T18:19:45Z",
+  "state": "PASS_R10_HARNESS_GATE",
+  "windowsPowerShellVersion": "5.1",
+  "commonResults": {
+    "parser": "PASS",
+    "harnessSafety": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperSafety": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+  },
+  "rows": [
+    { "path": "work/R10/New-C2RRequest.ps1", "sha256": "11BCDEF745DAF59B59EB27A63AF9660E39F419BAC538DAD11C0F2FD336164F21" },
+    { "path": "work/R10/Test-R10Selector.ps1", "sha256": "BA304D73B1E991493D15B02FB03EC74664E1A4D7EB3D9581D567F221168D86F4" },
+    { "path": "work/R10/Test-C2RExactEndpoint.ps1", "sha256": "A6A3DFED3F61880ADEE2E0B90792FB71712A8E84C3B38405F7E521A53D7F670C" },
+    { "path": "work/R10/Test-C2RRoutes.ps1", "sha256": "D126002C393A6E32D7E6F1F5B1C5100D033A085EF5F4AEAADACF607DD06ED78E" },
+    { "path": "work/R10/Build-C2RFinal.ps1", "sha256": "743E8A81647416AEC20D109C5146E1F6DCCAF54249CC1457EB2C58509FA48541" },
+    { "path": "work/R10/Publish-C2R.ps1", "sha256": "9373578373C1E6D161BAD02FEEBF910BCC01D605DD0EB4493952AA164B700717" },
+    { "path": "work/R10/Collect-C2RResponse.ps1", "sha256": "CC50EDCD58E8BB553A827D552615145C8758C4C75A25C8AC09DD2FE853BF8BAC" },
+    { "path": "work/R10/pkg/payload/C2R.ps1", "sha256": "A0E48FB4CFE30FDF9C7B7F83924309CAEA43AB25C9542DAD5E940D92B933F747" }
+  ],
+  "unchangedResidentRunner": {
+    "path": "work/R10/pkg/payload/Run-JbodAllWaferProcessor.ps1",
+    "sha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+    "harnessSafety": "NOT_APPLICABLE_RESIDENT_PROCESSOR_RUNNER_WITH_PLAN_ONLY_MODE"
+  },
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

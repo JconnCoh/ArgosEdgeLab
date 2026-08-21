@@ -5632,3 +5632,38 @@ rollback, idempotence, and a later control. Only a signed PASS terminal response
 may precede fresh ten-ledger-row and ten-GUI-row validation. The independent
 global FS15 terminal hold and all XML, training, production, deletion, and wafer
 boundaries remain unchanged.
+
+## 2026-08-21 Lot 62631-586 FRONT GUI R10 signed terminal failure and stop-loss
+
+R10 closed R9's missing FRONT-domain selector and passed its bounded selector,
+endpoint, route, and exact-package rehearsals. JBOD returned matching signed
+response `R_1E567E7F3C79_20260821182419402_28a007a2` with state `FAILED`.
+The exact failure was `R10 signed V40 pre-refresh state is not the exact
+ten-row FRONT contract.` The FRONT selector guards passed, the composite
+pre-refresh assertion failed, and the declared processor-task restart was not
+reached.
+
+The failure is not another catalog-domain defect. R10 treated V40's signed
+`targetConfirmedRows=10` from
+`identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json` as authority for a
+different count derived from `identity/SCRIBE_IDENTITY_QUEUE.json` filtered to
+`SCRIBE_CONFIRMED_INSITE_LOOKUP_PENDING`. V40 never asserted that queue-state
+population. The R10 fixture manufactured all ten queue rows in that state, so
+it tested its premise instead of proving the live dependency. The composite
+failure omitted field-specific observed values; the exact live queue-state
+distribution and post-failure installed helper/runner hashes remain unknown.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_R10_SIGNED_TERMINAL_FAILURE_CHECKPOINT_20260821.md`,
+SHA-256
+`411C2E41C9D05C9ABBD09C14ABB5ED98FCC05DCEA544AE0D4AFD3D4D6CBC38CC`.
+
+Disposition is `PENDING_GATE`; R10 is `WITHDRAWN`. This is the second systemic
+dependency-closure failure, so the stop-loss is active. No R11 or other restart
+request may be designed, signed, published, or executed in this task. The next
+action is a fresh-task, separately gated, bounded read-only audit of the exact
+ten queue rows/states and installed R10 helper/runner hashes. That audit must
+first establish whether a restart is necessary, then select among data-state,
+assertion, or processor-code remedies from live evidence. The global FS15 hold
+and all XML, training, production, source-deletion, and wafer-abort boundaries
+remain unchanged.

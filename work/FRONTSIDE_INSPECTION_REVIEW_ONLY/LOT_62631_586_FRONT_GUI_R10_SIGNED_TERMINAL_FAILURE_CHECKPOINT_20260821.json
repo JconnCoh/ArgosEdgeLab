@@ -1,0 +1,110 @@
+{
+  "schema": "argos_lot_62631_586_front_gui_r10_signed_terminal_failure_checkpoint_v1",
+  "createdUtc": "2026-08-21T18:33:00Z",
+  "state": "PENDING_GATE",
+  "disposition": "WITHDRAWN",
+  "supersedes": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_R9_SIGNED_TERMINAL_FAILURE_CHECKPOINT_20260821.md",
+  "requestId": "REQ_R10",
+  "requestSigned": true,
+  "requestPublished": true,
+  "endpointProcessed": true,
+  "signedTerminalResponseReceived": true,
+  "terminalPass": false,
+  "frontSelectorGuardsPassed": true,
+  "compositePreRefreshAssertionPassed": false,
+  "processorTaskRestartReached": false,
+  "postFailureInstalledHashesAudited": false,
+  "requestZip": {
+    "path": "work/R10/final/REQ_R10.ready.zip",
+    "bytes": 9229,
+    "sha256": "10DEEB44E465CBE53A0E427BB36169E9EC1B31EB24F550251D83D838396D51E7",
+    "futureReuseAllowed": false,
+    "replayAllowed": false,
+    "successorParentAllowed": false
+  },
+  "publishGate": {
+    "path": "work/R10/R10_PUBLISH_GATE.json",
+    "sha256": "9D83F604EDD676195EF2BE08A819DD8646A78680A7C751F85857D7CE2EE1DC50"
+  },
+  "response": {
+    "responseId": "R_1E567E7F3C79_20260821182419402_28a007a2",
+    "state": "FAILED",
+    "zipBytes": 2245,
+    "zipSha256": "451D8076E37DFB953E99F9CCEDB16D665337B54F459FEDE25D7E241FEBE36442",
+    "signatureVerified": true,
+    "failureSignature": "R10 signed V40 pre-refresh state is not the exact ten-row FRONT contract."
+  },
+  "terminalGate": {
+    "path": "work/R10/R10_TERMINAL_RESPONSE_GATE.json",
+    "sha256": "742EA6577934BC0816A16A978208DEB5CB6C2308F8A745C89B87A689CD44206D",
+    "state": "FAIL_R10_SIGNED_TERMINAL_RESPONSE"
+  },
+  "rootCause": {
+    "path": "work/R10/R10_SIGNED_TERMINAL_FAILURE_ROOT_CAUSE_20260821.json",
+    "sha256": "C4F6EA1D936CD7F23BF98D5FEFA1ABF4EAF532F2CF220E1FD3979F0334642F44",
+    "classification": "SIGNED_COUNT_REUSED_ACROSS_DIFFERENT_SOURCE_DOCUMENTS_AND_PREDICATES",
+    "signedEvidenceSource": "identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json",
+    "executableAssertionSource": "identity/SCRIBE_IDENTITY_QUEUE.json",
+    "exactQueueStateAuditRequired": true
+  },
+  "retainedPassedGates": {
+    "selectorGate": {
+      "path": "work/R10/R10_SELECTOR_GATE.json",
+      "sha256": "57768BDAA0860A37ACA4DEF3555989CE79E6A5803CDC051648EE0BB01AC2F3C6",
+      "caseCount": 6
+    },
+    "exactEndpointGate": {
+      "path": "work/R10/R10_EXACT_ENDPOINT_GATE.json",
+      "sha256": "2591A80E35900144B02B3B2EEDEB95952F36045D720FC473439E2BDAC842268F",
+      "responseSignaturesVerified": 10
+    },
+    "completeRouteGate": {
+      "path": "work/R10/R10_COMPLETE_ROUTE_GATE.json",
+      "sha256": "BDBA7832B2792216160960F12E2D99D9C558C40B57FEF06A4AAC7AFBD135F784",
+      "pathCount": 127,
+      "maximumEffectiveLength": 187,
+      "maximumComponentLength": 51
+    }
+  },
+  "signedEvidenceState": {
+    "frontCatalogRows": 10,
+    "distinctFrontPhysicalIdentities": 10,
+    "confirmedOverlayRows": 10,
+    "verifiedMetadataRows": 10,
+    "scribeIdentityQueueTargetRows": 10,
+    "scribeIdentityQueueStateDistribution": "UNKNOWN_REQUIRES_DIRECT_AUDIT",
+    "completedFrontLedgerRows": 0,
+    "guiFrontsideAssetWafers": 0
+  },
+  "successorControls": {
+    "freshTaskRequired": true,
+    "freshSuccessorRequired": true,
+    "boundedExactQueueStateAuditRequired": true,
+    "installedHelperAndRunnerHashAuditRequired": true,
+    "crossSourceScalarSubstitutionForbidden": true,
+    "fieldSpecificExpectedObservedFailuresRequired": true,
+    "wrongSourceFixtureControlRequired": true,
+    "exactFrontPopulationPredicateRequired": true,
+    "sameIdentityNonFrontCompetitorFixtureRequired": true,
+    "declaredTaskAction": "RESTART:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2"
+  },
+  "historyAudit": {
+    "path": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+    "sha256": "712E939E3A0EAA414F59F9606659CD2DC6139DBF7635D52B3C936A5072EEF670",
+    "issueCount": 76,
+    "openUnclassifiedIssueCount": 0
+  },
+  "preaction": {
+    "path": "work/R10/PREACTION_R10_FAILURE_CHECKPOINT.json",
+    "resultPath": "work/R10/PREACTION_R10_FAILURE_CHECKPOINT.result.json",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"
+  },
+  "globalFs15HoldUnchanged": true,
+  "sourceDeletionPerformed": false,
+  "otherInspectionTasksChanged": false,
+  "waferAborted": false,
+  "reviewOnly": true,
+  "xmlExportEnabled": false,
+  "productionRoutingEnabled": false,
+  "nextAction": "In a fresh task, perform a separately gated bounded read-only audit of the exact ten scribe-identity queue rows/states and installed R10 helper/runner hashes before designing any successor."
+}

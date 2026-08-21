@@ -1,0 +1,76 @@
+{
+    "schema":  "argos_r10_selector_gate_v1",
+    "createdUtc":  "2026-08-21T18:11:35.8010628Z",
+    "state":  "PASS_R10_RAW_CATALOG_SELECTOR_GATE",
+    "entryPointSha256":  "A0E48FB4CFE30FDF9C7B7F83924309CAEA43AB25C9542DAD5E940D92B933F747",
+    "caseCount":  6,
+    "rawCatalogRowsExercised":  true,
+    "scalarLotStateUsed":  false,
+    "sameIdentityNonFrontCompetitorsExcluded":  true,
+    "missingFrontRefused":  true,
+    "duplicateFrontRefused":  true,
+    "wrongDomainReplacementRefused":  true,
+    "absentProcessRefused":  true,
+    "internalSwapRollbackPassed":  true,
+    "results":  [
+                    {
+                        "case":  "valid_non_front_competitors",
+                        "variant":  "valid",
+                        "expectedPass":  true,
+                        "exitCode":  0,
+                        "failurePattern":  "",
+                        "failurePatternVerified":  false,
+                        "runnerAfterSha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+                    },
+                    {
+                        "case":  "missing_front",
+                        "variant":  "missing_front",
+                        "expectedPass":  false,
+                        "exitCode":  1,
+                        "failurePattern":  "expected ten current FRONT catalog rows; found 9",
+                        "failurePatternVerified":  true,
+                        "runnerAfterSha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+                    },
+                    {
+                        "case":  "duplicate_front",
+                        "variant":  "duplicate_front",
+                        "expectedPass":  false,
+                        "exitCode":  1,
+                        "failurePattern":  "expected ten current FRONT catalog rows; found 11",
+                        "failurePatternVerified":  true,
+                        "runnerAfterSha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+                    },
+                    {
+                        "case":  "wrong_domain_replacement",
+                        "variant":  "wrong_domain",
+                        "expectedPass":  false,
+                        "exitCode":  1,
+                        "failurePattern":  "expected ten current FRONT catalog rows; found 9",
+                        "failurePatternVerified":  true,
+                        "runnerAfterSha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+                    },
+                    {
+                        "case":  "absent_process",
+                        "variant":  "valid",
+                        "expectedPass":  false,
+                        "exitCode":  1,
+                        "failurePattern":  "declared RESTART requires exactly one existing processor process; found 0",
+                        "failurePatternVerified":  true,
+                        "runnerAfterSha256":  "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+                    },
+                    {
+                        "case":  "injected_internal_swap_rollback",
+                        "variant":  "valid",
+                        "expectedPass":  false,
+                        "exitCode":  1,
+                        "failurePattern":  "INJECTED_R10_FAILURE_AFTER_SWAP",
+                        "failurePatternVerified":  true,
+                        "runnerAfterSha256":  "6B61A415DF2F6852C290ABD0F794E86BE13B270A91E9E86E005B76A468404F1C"
+                    }
+                ],
+    "sourceDeletionPerformed":  false,
+    "inspectionTasksChanged":  false,
+    "waferAborted":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

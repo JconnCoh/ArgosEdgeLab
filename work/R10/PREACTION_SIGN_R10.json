@@ -1,0 +1,104 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v1",
+  "revision": "R10_SIGN_20260821",
+  "createdUtc": "2026-08-21T18:12:30Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "SIGN_R10_EXACT_FRONT_POPULATION_PROCESSOR_RESTART_REQUEST",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "33152D8494EE0F0670B50CAC54964BB890E2A3AA159C3FE56D87260D28B2AA05",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "222713FBB8B5476E0E8F865301230207291E76F080E3C31958AE2EC52D79DAF5"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_R9_SIGNED_TERMINAL_FAILURE_CHECKPOINT_20260821.md",
+      "sha256": "9E09B65292678A6C8C76DF7A4B711A85D63D2770575F2E29142F003A42F05AD7"
+    },
+    {
+      "path": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/C2R3_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "FE8FCD5CAA29F51100263AFCA0D9C868C7252C75F7928CF12837BD9288AF85F2"
+    },
+    {
+      "path": "work/R9/R9_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "445B1CDA8C28E5E0C8239C913BC6C0B2BBB72B6DEB4637615482B0206F2AE91A"
+    },
+    {
+      "path": "work/V40/C2V40_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "F3EE67B7C900A8BE3E83A03020C6BE5E8BB0C6C5D6B1F332044892631A2D813E"
+    },
+    {
+      "path": "work/R10/R10_SEMANTIC_DEPENDENCY_INVENTORY.json",
+      "sha256": "DF2C6E90BE2071EF87F41BDCE808C75B31EC9ED4CD4E291CE6D334A342A12BCB"
+    },
+    {
+      "path": "work/R10/R10_SELECTOR_TEST_DESIGN.json",
+      "sha256": "8B2E13C6A324DABDB68E7D6D933E42EE621BB05B063A2AEAD69217333A7EA402"
+    },
+    {
+      "path": "work/R10/R10_SELECTOR_GATE.json",
+      "sha256": "57768BDAA0860A37ACA4DEF3555989CE79E6A5803CDC051648EE0BB01AC2F3C6"
+    },
+    {
+      "path": "work/R10/R10_CLONE_LITERAL_REMEDIATION_GATE_R2.json",
+      "sha256": "3DD67893690888514B23A1589C8653A388289C757C73FEEF6F3033A524BC5335"
+    },
+    {
+      "path": "work/R10/R10_SIGNING_HARNESS_GATE.json",
+      "sha256": "CF700D6A2950E013382316F767BF7B474959C4F73A2C8EAC42C84E626613294D"
+    },
+    {
+      "path": "work/R10/R10_INITIAL_PATH_GATE.json",
+      "sha256": "168D16126F1F6E155A7123F3E9834B475605F399DB91BAA19B6471F618958960"
+    },
+    {
+      "path": "work/R10/New-C2RRequest.ps1",
+      "sha256": "11BCDEF745DAF59B59EB27A63AF9660E39F419BAC538DAD11C0F2FD336164F21"
+    },
+    {
+      "path": "work/R10/pkg/MAINTENANCE_DEFINITION.json",
+      "sha256": "DFFB7FD7B1320F3CDDDCFA9F691D935D50BBF3A36C5E36F763E3745618657827"
+    },
+    {
+      "path": "work/R10/pkg/payload/C2R.ps1",
+      "sha256": "A0E48FB4CFE30FDF9C7B7F83924309CAEA43AB25C9542DAD5E940D92B933F747"
+    },
+    {
+      "path": "work/R10/pkg/payload/Run-JbodAllWaferProcessor.ps1",
+      "sha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      {
+        "path": "work/R9/final/REQ_R9.ready.zip",
+        "sha256": "1BE5D66E8B2361B9DE2AAD3E022A534A4EE5EBAAC532E02D7BFABBC1C3A048D6",
+        "reason": "Withdrawn signed request with dropped population predicate; diagnostic evidence only."
+      }
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

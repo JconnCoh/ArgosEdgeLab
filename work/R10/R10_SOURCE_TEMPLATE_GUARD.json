@@ -1,0 +1,53 @@
+{
+  "schema": "argos_r10_source_template_guard_v1",
+  "createdUtc": "2026-08-21T17:56:00Z",
+  "state": "PASS_R10_SOURCE_TEMPLATE_GUARD",
+  "sourceFamily": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3",
+  "sourceFamilyTerminalGate": {
+    "path": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/C2R3_TERMINAL_RESPONSE_GATE.json",
+    "sha256": "FE8FCD5CAA29F51100263AFCA0D9C868C7252C75F7928CF12837BD9288AF85F2"
+  },
+  "sourceHarnessChecksPassed": 7,
+  "windowsPowerShellVersion": "5.1",
+  "sources": [
+    {
+      "path": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/New-C2RRequest.ps1",
+      "sha256": "CF4E690B3E7C215F4E5CE122A669666A55CDCC7B031F9444D604F7803B3DB0A6"
+    },
+    {
+      "path": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/Test-C2RExactEndpoint.ps1",
+      "sha256": "D802B2757A9D13960B5B4C764E499C8DB8C5AFF9B6524B3B036211AFE2E4021D"
+    },
+    {
+      "path": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/Test-C2RRoutes.ps1",
+      "sha256": "980DD3447EEB66E2B10C5F0977190022DFEE7E93B61C08B0E6C91A75A5645246"
+    },
+    {
+      "path": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/Build-C2RFinal.ps1",
+      "sha256": "3397B9BCC7F2D647E098871DA19F622EB02C09CE9D6409030BF3E28C4D662EE9"
+    },
+    {
+      "path": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/Publish-C2R.ps1",
+      "sha256": "A0D754080F17A54DA92140A47ED827DC5980618198E7A5A44C08AF494BB207C8"
+    },
+    {
+      "path": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/Collect-C2RResponse.ps1",
+      "sha256": "C1DB34DFBFA2D7373CAD33CCF375DA7556514F65AF43822E78FF3605CE9F8FE5"
+    },
+    {
+      "path": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/pkg/payload/C2R.ps1",
+      "sha256": "D36830853CA5A246E18CAF75940A45F12950E7B3D81164365FF18284CD176D29"
+    }
+  ],
+  "sourceMaintenanceDefinition": {
+    "path": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/pkg/MAINTENANCE_DEFINITION.json",
+    "sha256": "79A9E1F30239868C810709D60518B92CED2F0E593BFE80C60A74D3BE82D9D677"
+  },
+  "unchangedRunnerAsset": {
+    "path": "work/JBOD_PROCESSOR_RUNNER_FIX_C2R3/pkg/payload/Run-JbodAllWaferProcessor.ps1",
+    "sha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+  },
+  "withdrawnR9UsedAsSourceTemplate": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

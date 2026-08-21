@@ -1,0 +1,123 @@
+{
+  "schema": "argos_r10_signed_terminal_failure_root_cause_v1",
+  "createdUtc": "2026-08-21T18:30:00Z",
+  "state": "FAIL_R10_SIGNED_TERMINAL_RESPONSE_ROOT_CAUSE_CONFIRMED",
+  "disposition": "WITHDRAWN",
+  "requestId": "REQ_R10",
+  "responseId": "R_1E567E7F3C79_20260821182419402_28a007a2",
+  "responseState": "FAILED",
+  "signatureVerified": true,
+  "terminalGate": {
+    "path": "work/R10/R10_TERMINAL_RESPONSE_GATE.json",
+    "bytes": 933,
+    "sha256": "742EA6577934BC0816A16A978208DEB5CB6C2308F8A745C89B87A689CD44206D"
+  },
+  "responseRouteGate": {
+    "path": "work/R10/R10_RESPONSE_ROUTE_GATE.json",
+    "bytes": 697,
+    "sha256": "1992B69C90BCA54703A741E040B2CD85C75C559320BC6C4F2A7BF0C47B72A5BB"
+  },
+  "responseZip": {
+    "path": "C:/R10S/R_1E567E7F3C79_20260821182419402_28a007a2.ready.zip",
+    "bytes": 2245,
+    "sha256": "451D8076E37DFB953E99F9CCEDB16D665337B54F459FEDE25D7E241FEBE36442"
+  },
+  "responseFiles": [
+    {
+      "path": "C:/R10S/R_1E567E7F3C79_20260821182419402_28a007a2.ready/PORTAL_RESPONSE_MANIFEST.json",
+      "bytes": 1419,
+      "sha256": "249EE7B6AC13DC728C9BA087D2AC416904D77980100BCEA7836C69D44C970426"
+    },
+    {
+      "path": "C:/R10S/R_1E567E7F3C79_20260821182419402_28a007a2.ready/FAILURE.json",
+      "bytes": 687,
+      "sha256": "8D03264D5A2BE45D27963F31B81070A49B8A64224481700BB584530418AC9E33"
+    },
+    {
+      "path": "C:/R10S/R_1E567E7F3C79_20260821182419402_28a007a2.ready/MAINTENANCE.stderr.txt",
+      "bytes": 549,
+      "sha256": "42DB697443ACB3A892243B1DF7A369C71D66D646ECE72B13176B9E096D421570"
+    },
+    {
+      "path": "C:/R10S/R_1E567E7F3C79_20260821182419402_28a007a2.ready/MAINTENANCE.stdout.txt",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    }
+  ],
+  "failureSignature": "R10 signed V40 pre-refresh state is not the exact ten-row FRONT contract.",
+  "executionBoundary": {
+    "maintenanceVerifierExitCode": 1,
+    "frontSelectorGuardsReachedAndPassed": true,
+    "compositePreRefreshAssertionFailed": true,
+    "scheduledTaskRestartReached": false,
+    "liveInstalledHelperAndRunnerHashesAfterFailureAudited": false,
+    "sourceDeletionPerformed": false,
+    "otherInspectionTasksChanged": false,
+    "waferAborted": false
+  },
+  "rootCause": {
+    "classification": "SIGNED_COUNT_REUSED_ACROSS_DIFFERENT_SOURCE_DOCUMENTS_AND_PREDICATES",
+    "r10Payload": {
+      "path": "work/R10/signed_short/REQ_R10.ready/payload/C2R.ps1",
+      "sha256": "A0E48FB4CFE30FDF9C7B7F83924309CAEA43AB25C9542DAD5E940D92B933F747",
+      "derivedField": "confirmedPhysical",
+      "source": "identity/SCRIBE_IDENTITY_QUEUE.json",
+      "predicate": "target physicalIdentity AND state == SCRIBE_CONFIRMED_INSITE_LOOKUP_PENDING",
+      "assertedCount": 10
+    },
+    "signedV40Evidence": {
+      "path": "work/V40/C2V40_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "F3EE67B7C900A8BE3E83A03020C6BE5E8BB0C6C5D6B1F332044892631A2D813E",
+      "field": "targetConfirmedRows",
+      "source": "identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json",
+      "predicate": "acquisitionKey in exact ten FRONT physical identity set",
+      "signedCount": 10,
+      "queueStatePopulationAsserted": false
+    },
+    "fixtureDefect": {
+      "path": "work/R10/Test-C2RExactEndpoint.ps1",
+      "queueRows": 10,
+      "hardCodedQueueState": "SCRIBE_CONFIRMED_INSITE_LOOKUP_PENDING",
+      "wrongSourceControlPresent": false,
+      "finding": "The raw fixture exercised the catalog selector but manufactured the unbound queue-state premise."
+    },
+    "diagnosticDefect": {
+      "compositeAssertion": true,
+      "fieldSpecificObservedValuesEmitted": false,
+      "finding": "The terminal response proves at least one derived pre-refresh field diverged but does not contain the individual observed values."
+    },
+    "finding": "R10 closed the R9 catalog population predicate but did not close the source-document semantics of every later derived count. A similarly named signed overlay count was not authority for the queue-state count used by the executable assertion."
+  },
+  "successfulR10EvidenceRetained": {
+    "rawSelectorGate": {
+      "path": "work/R10/R10_SELECTOR_GATE.json",
+      "sha256": "57768BDAA0860A37ACA4DEF3555989CE79E6A5803CDC051648EE0BB01AC2F3C6"
+    },
+    "exactSignedEndpointGate": {
+      "path": "work/R10/R10_EXACT_ENDPOINT_GATE.json",
+      "sha256": "2591A80E35900144B02B3B2EEDEB95952F36045D720FC473439E2BDAC842268F",
+      "responseSignaturesVerified": 10
+    },
+    "finalPackageGate": {
+      "path": "work/R10/final/REQ_R10.ready.zip.gate.json",
+      "sha256": "A455C9A46073EFBAE3A414874F4404EB4D5DA8E34F0A09795ABC79F516272E83"
+    }
+  },
+  "mandatorySuccessorControls": {
+    "freshTaskAndFreshSuccessorRequired": true,
+    "r10ReusableAsPublicationParent": false,
+    "boundedExactQueueStateAuditRequiredBeforeSuccessor": true,
+    "everyDerivedCountMustBindExactSourceSchemaSelectorAndUniqueness": true,
+    "wrongSourceFixtureControlRequired": true,
+    "fieldSpecificExpectedAndObservedFailureEvidenceRequired": true,
+    "exactFrontPopulationPredicateMustRemain": true,
+    "sameIdentityNonFrontCompetitorCasesMustRemain": true,
+    "declaredTaskAction": "RESTART:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2"
+  },
+  "failureMemory": {
+    "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+    "sha256": "A1035D0F0DF04B0468F0A1BB2196A508EBAE2A5B3BF1085B8670C3505C2EF57B"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
