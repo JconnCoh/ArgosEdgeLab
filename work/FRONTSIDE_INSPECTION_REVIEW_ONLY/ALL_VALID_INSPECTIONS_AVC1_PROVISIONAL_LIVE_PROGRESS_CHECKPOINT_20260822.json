@@ -1,0 +1,57 @@
+{
+  "schema": "argos_all_valid_inspections_avc1_provisional_live_progress_checkpoint_v1",
+  "createdUtc": "2026-08-22T00:50:00Z",
+  "state": "PENDING_GATE",
+  "repair": "AVC1",
+  "repairDisposition": "RELEASED_REVIEW_ONLY",
+  "decision": "REPAIR_REAL_INSTALLED_CONSUMER_AND_RUNNER_DEFECTS_WITH_ONE_BOUNDED_PACKAGE",
+  "guiRedesignRequired": false,
+  "maintenanceRequestId": "REQ_20260822T001259682Z_584BE4EFD5E7",
+  "maintenanceResponseId": "R_CD3D634B5414_20260822001721391_05ff9fd8",
+  "maintenanceEndpointState": "PASS_MAINTENANCE_PATCH",
+  "maintenanceResponseZipSha256": "648CAC21687F0796FEE69FCE26F95D9D9398E796E3968FB51F86E95DA70AF257",
+  "validationRequestId": "REQ_20260822T002837514Z_64FE12C5E4EB",
+  "validationResponseId": "R_437B81703A84_20260822003429334_ebb607f6",
+  "validationEndpointState": "PASS_DATA_PULL",
+  "validationResponseZipSha256": "CEB15502FA2F84351F7955239C44518E1577ADFFADC2858AD663304CD4F190AB",
+  "target": {
+    "lot": "62631-586",
+    "scan": "20260819173317",
+    "domain": "FRONTSIDE",
+    "catalogRows": 10,
+    "catalogUniqueIdentities": 10,
+    "queueRows": 10,
+    "queueUniquePhysicalIdentities": 10,
+    "queueState": "SCRIBE_CONFIRMED_MES_SNAPSHOT",
+    "confirmedOverlayRows": 10,
+    "verifiedMetadataRows": 10,
+    "completedLedgerRowsAtSnapshot": 3,
+    "completedSlotsAtSnapshot": ["Slot01","Slot02","Slot03"],
+    "guiWafersAtSnapshot": 3,
+    "guiSlotsAtSnapshot": ["Slot01","Slot02","Slot03"]
+  },
+  "processorAtSnapshot": {
+    "updatedUtc": "2026-08-22T00:33:05.3736455Z",
+    "state": "PROCESSING",
+    "currentIdentity": "62631-586_20260819173317_Slot04__BOWCOMP_BACKSIDE",
+    "currentStage": "NATIVE_DETECTOR",
+    "eligiblePending": 21
+  },
+  "operatorObservation": {
+    "frontsideCountIncreasing": true,
+    "acceptedAsGoodForNow": true,
+    "formalTenOfTenClosureWaivedForCurrentStop": true
+  },
+  "formalTenOfTenClosureProved": false,
+  "nextAction": "Leave the healthy running processor untouched. If work resumes, use one proportional read-only final observation after completion or investigate one concrete new failure; do not create another repair from this provisional checkpoint alone.",
+  "unchangedBoundaries": {
+    "globalFs15Hold": true,
+    "reviewOnly": true,
+    "xmlExportEnabled": false,
+    "trainingEligible": false,
+    "productionRoutingEnabled": false,
+    "sourceDeletionAllowed": false,
+    "waferAbortAllowed": false,
+    "imageOrBinaryBytesInSessionAllowed": false
+  }
+}

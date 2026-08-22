@@ -1,0 +1,28 @@
+{
+  "schema": "argos_required_present_paths_v1",
+  "createdUtc": "2026-08-22T00:20:00Z",
+  "state": "LOCKED_INPUT",
+  "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+  "requiredRelativePaths": [
+    "identity/SCRIBE_IDENTITY_QUEUE.json",
+    "catalog/ALL_WAFER_CATALOG.json",
+    "identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json",
+    "metadata/verified/ACTIVE_VERIFIED_METADATA_OVERLAY.json",
+    "processor/PROCESSING_LEDGER.json",
+    "dashboard_manifest.json",
+    "processor/PROCESSOR_STATUS.json",
+    "PROCESSOR_CONFIG.json",
+    "state/STATUS.json",
+    "Run-JbodAllWaferProcessor.ps1",
+    "Invoke-JbodAllWaferInventory.ps1",
+    "Invoke-JbodAllWaferProcessingPass.ps1",
+    "Update-JbodDashboardManifest.ps1",
+    "Show-JbodAllWaferTray.ps1",
+    "Open-JbodCompletedLot.ps1"
+  ],
+  "requiredCount": 15,
+  "optionalRelativePaths": [],
+  "imageOrBinaryPaths": [],
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

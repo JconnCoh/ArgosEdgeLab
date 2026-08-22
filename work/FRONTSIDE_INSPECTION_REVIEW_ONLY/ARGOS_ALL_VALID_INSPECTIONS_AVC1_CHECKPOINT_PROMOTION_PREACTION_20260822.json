@@ -1,0 +1,69 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "ARGOS_ALL_VALID_INSPECTIONS_AVC1_PROVISIONAL_LIVE_PROGRESS_20260822",
+  "createdUtc": "2026-08-22T01:02:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "PROMOTE_PROVISIONAL_CHECKPOINT_AND_PUBLISH_EXACT_REVIEWED_FILES_TO_GITHUB",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"AGENTS.md","sha256":"E3C403CF8937CC80B1B6F3EC353159EC32BE9B228C091DBAF0D87ADB5D7B9EF0"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"59C4DE1E3208E419082D5DDD5BB54111F9A87FB9F30DA4717A7DD212BE1664DF"},
+    {"path":"work/ARGOS_CONTINUITY_STATE.json","sha256":"10D2512B0E65707CF7A249BECD7517FB95FB78C077132961706284ED9F7D83C3"},
+    {"path":"work/ACTIVE_ARGOS_EDGE_LAB_STATE.md","sha256":"FFD8142CCBD40A682B34C9AD04E437917C4B0D91CE56D2CB82445DB4A4C0C060"},
+    {"path":"work/ARGOS_REVISION_LEDGER.md","sha256":"2A7D9970F35DA985DF470AE3B2A4B17774A51DC34FB9BDA9F543391891171A6C"},
+    {"path":"work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_DECISION_20260821.md","sha256":"8917851854D8E163B580F20E733878D90398124B9BE74358EB65CE933091E865"},
+    {"path":"work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_FIX_AND_ACCEPTANCE_CHECKLIST_20260821.json","sha256":"4CEA75A09CAC7E4A27D5055A7E6AF00BA36091CDD132E6728C0680EB30F18FF0"},
+    {"path":"work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ALL_VALID_INSPECTIONS_AVC1_PROVISIONAL_LIVE_PROGRESS_CHECKPOINT_20260822.md","sha256":"7EA6B3DA3E463588AB5EAD1148333203523EFD0031065EA4C3A8D06E3354589A"},
+    {"path":"work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ALL_VALID_INSPECTIONS_AVC1_PROVISIONAL_LIVE_PROGRESS_CHECKPOINT_20260822.json","sha256":"3C53B77AD7193E5BE70EA7AD70FEA5EA860EDC05FEE5C27720F81354CBAB0351"},
+    {"path":"work/AVC1/AVC1_TERMINAL_RESPONSE_GATE.json","sha256":"DAB87ABCFDC8E20F44C1DFB20D0DD5B97D953DC7902637AE9CD5EF4905C2131F"},
+    {"path":"work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_POST_AVC1_SIGNED_RESPONSE_GATE_20260822.json","sha256":"1C68C38AEA6E076F03987E72420D962BFD33BE57FBC921BA162271562A80B38F"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "boundedAction": {
+    "liveEndpointRequests": 0,
+    "installedChanges": 0,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "imageRead": false,
+    "binaryRead": false,
+    "sourceDeletion": false,
+    "waferAction": false,
+    "gitBranchesCreatedMaximum": 1,
+    "gitCommitsCreatedMaximum": 1,
+    "gitPushesMaximum": 1
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

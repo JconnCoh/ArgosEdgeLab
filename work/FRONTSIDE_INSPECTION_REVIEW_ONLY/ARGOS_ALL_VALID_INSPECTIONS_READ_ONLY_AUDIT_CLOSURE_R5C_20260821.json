@@ -1,0 +1,75 @@
+{
+  "schema": "argos_all_valid_inspections_read_only_audit_closure_r5c_v1",
+  "createdUtc": "2026-08-21T23:55:00Z",
+  "state": "PASS_BOUNDED_READ_ONLY_AUDIT_CLOSED",
+  "disposition": "PENDING_GATE",
+  "authoritativeLiveDataAudit": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_READ_ONLY_LIVE_AUDIT_PASS_20260821.json",
+    "targetQueueSelector": "rows[physicalIdentity startsWith '62631-586_20260819173317_']",
+    "targetQueueExpected": 10,
+    "targetQueueObserved": 10,
+    "targetQueueUniquePhysicalIdentity": 10,
+    "targetVerifiedOverlaySelector": "rows[acquisitionKey startsWith target]",
+    "targetVerifiedOverlayExpected": 10,
+    "targetVerifiedOverlayObserved": 10,
+    "targetVerifiedOverlayUniqueAcquisitionKey": 10,
+    "targetLedgerSelector": "rows[identity startsWith target AND domain == 'FRONTSIDE']",
+    "targetLedgerObserved": 0,
+    "targetDashboardSelector": "scanSessions[scanId == '62631-586_20260819173317_FRONTSIDE'].wafers",
+    "targetDashboardObserved": 0
+  },
+  "transitiveSourceAudit": {
+    "requestId": "REQ_20260821T233918477Z_BA51D69A07D9",
+    "responseId": "R_7CF6AB9693B8_20260821234034075_14eae0a8",
+    "signedState": "PASS_DATA_PULL",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "responseOuterZipSha256": "3BFE926D84957488F01E01E2A7C49BD61FE55194E21BA80DE302D0A41D949FF9",
+    "nestedPayloadSha256": "56F8839CB7DD4ED83D1EBFB0659BB27F050E00C542FCBB35D53C9BD25D2BFC08",
+    "exactTextSourceFilesExpected": 26,
+    "exactTextSourceFilesObserved": 26,
+    "exactTextSourceUniquePaths": 26,
+    "imageOrBinaryFilesRead": 0,
+    "powershellFilesParsed": 8,
+    "powershellParseErrors": 0,
+    "mjsRelativeImportsUnresolved": 0,
+    "csharpPublicCallSurfaceMismatches": 0,
+    "exactLiveFilesMatchingLocalCandidate": 23,
+    "exactLiveFilesDifferingFromLocalCandidate": 3,
+    "detectorOrImageProcessingRewriteSupported": false
+  },
+  "postAvs1TopLevelAudit": {
+    "requestId": "REQ_20260821T234909906Z_2F48E70B2DBF",
+    "responseId": "R_07B724B988F2_20260821235147385_f05afc84",
+    "signedState": "PASS_DATA_PULL",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "responseOuterZipSha256": "BDBFFDF9B467DF7F870B5EE54403FC911A7B961EB0857607DE1294767CADB101",
+    "nestedPayloadSha256": "23011C7D2FD15CCF84943F4C91E9866984BEE8D6ABF2BAC9FB49192C382323A5",
+    "selector": "exact five required top-level relative paths under JBOD_PROCESSOR_REVIEW",
+    "expected": 5,
+    "observed": 5,
+    "uniquePaths": 5,
+    "rows": [
+      {"path":"Run-JbodAllWaferProcessor.ps1","sha256":"46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4","preAvs1Match":true},
+      {"path":"Invoke-JbodAllWaferInventory.ps1","sha256":"8919C3DD4AC04FD662B57E356AC6E1A70BD614E97AFC270EB4B8FF617D705160","preAvs1Match":true},
+      {"path":"Invoke-JbodAllWaferProcessingPass.ps1","sha256":"0B063D452CA76AE5EE3EC1BDF6726853259039683C36E208718B8FE937D23753","preAvs1Match":true},
+      {"path":"Update-JbodDashboardManifest.ps1","sha256":"DCF97D92BDA0A82A49DA277D54CFD1BC7802068CD8B9D89340534CC892792BAD","preAvs1Match":true},
+      {"path":"Show-JbodAllWaferTray.ps1","sha256":"769ACAD731F8EA04C1820AB90CCA80591A132CEDDFCF44611B54D9BB2A41FB45","preAvs1Match":true}
+    ],
+    "coherentKnownPredecessor": true,
+    "mixedRollbackState": false
+  },
+  "decision": {
+    "A_NO_CODE_OR_PACKAGE": "REJECTED_BASELINE_TASKS_STOPPED_AND_BASELINE_CODE_CONTAINS_PROVED_BLOCKERS",
+    "B_CORRECT_INVALID_PRECONDITION": "SELECTED",
+    "C_REPAIR_QUEUE_OR_DATA": "REJECTED_AUTHORITATIVE_ROWS_AND_ROUTE_CONTEXT_ALREADY_PRESENT",
+    "D_REPAIR_PROCESSOR_CODE_OR_INSTALL": "SELECTED_MINIMAL_FIVE_FILE_CONSUMER_ORCHESTRATION_REPAIR",
+    "endpointMutationHasPoint": true,
+    "restartHasPointBeforeRepair": false,
+    "restartHasPointAfterExactRepairAnd_PLAN_ONLY_PASS": true
+  },
+  "liveMutationPerformed": false,
+  "taskOrProcessActionPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
+

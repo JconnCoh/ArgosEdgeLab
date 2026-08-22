@@ -1,0 +1,40 @@
+{
+  "schema": "argos_project_portal_request_definition_v1",
+  "targetRole": "JBOD",
+  "jobClass": "DATA_PULL",
+  "handler": "",
+  "maxResultBytes": 16777216,
+  "parameters": {
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "relativePaths": [
+      "Build-FrontsideScratchTestPose.ps1",
+      "Build-FrontsideScribeIdentityExclusionV1.ps1",
+      "Invoke-FrontsideScratchTestWorker.ps1",
+      "Invoke-BowCompWorker.ps1",
+      "runtime/scribe/FrontsideNotchAudit.cs",
+      "runtime/scribe/BmpZipRegionExtractor.cs",
+      "runtime/scribe/NativeFrontsideNotchCandidateAudit.cs",
+      "runtime/scribe/SemiM12DotMatrixImageReader.cs",
+      "runtime/scribe/references/PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+      "runtime/frontside/FrontsideNativePhysicalEligibilityReviewPreparedTile.cs",
+      "runtime/frontside/FrontsideRawShadowDualBranchParallelPrototype.cs",
+      "runtime/bowcomp/NativePhysicalEligibilityReviewPreparedTile.cs",
+      "runtime/bowcomp/BowCompRawShadowDualBranchParallelPrototype.cs",
+      "runtime/viewer/Build-CompositeAcceptedOverviewExact.ps1",
+      "runtime/viewer/Build-BareAcceptedOverview.ps1",
+      "runtime/viewer/Add-BareEdgeAcceptedDisplay.ps1",
+      "runtime/bare/surface/Invoke-BareSurfaceNative.ps1",
+      "runtime/bare/surface/NativePhysicalEligibilityReview.cs",
+      "runtime/bare/edge/v2dc_contact_sheet_harness.mjs",
+      "runtime/bare/edge/v2dc_blind_discovery_smoke.mjs",
+      "runtime/bare/edge/qualify_circle_geometry.mjs",
+      "runtime/bare/edge/polar_full_circle.mjs",
+      "runtime/bare/edge/large_damage_v5_3.mjs",
+      "runtime/bare/edge/decision_core_v5_7.mjs",
+      "runtime/bare/edge/bare_edge_runtime.mjs",
+      "runtime/bare/edge/apply_v5_11_confidence_layer.mjs"
+    ],
+    "maximumFiles": 26,
+    "maximumBytes": 16777216
+  }
+}

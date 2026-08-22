@@ -77,13 +77,24 @@ For every changed or relied-upon runner, resolve each named argument against
 restart gate must execute the runner's exact non-scoring `-Once -PlanOnly` path;
 do not replace that path or its state reader with a precomputed result object.
 
-A completed result whose acquisition fingerprint has been superseded must not
-silently disappear. Expose exactly one unambiguous historical completion with
-explicit current-versus-result fingerprint provenance; keep zero or multiple
-historical matches fail-closed. Mutable state used by WinForms event callbacks
-must be anchored to a captured form/control object or another explicitly shared
-object. Do not rely on script-scope variables being visible inside callback
-runspaces.
+A completed result whose acquisition fingerprint has been superseded is not a
+current-acquisition result. Identity uniqueness alone is never provenance and
+must not re-admit that result to the current dashboard. Reuse is allowed only
+when the result records exact source-byte hashes and those hashes match the
+current acquisition's exact source bytes; otherwise retain the result only as
+explicitly historical evidence or reprocess the current acquisition. Mutable
+state used by WinForms event callbacks must be anchored to a captured
+form/control object or another explicitly shared object. Do not rely on
+script-scope variables being visible inside callback runspaces.
+
+An installed output producer must actually run successfully before an
+entrypoint validates fields or counts that only that producer can create.
+Installing new producer bytes, checking for source-code tokens, or running a
+different upstream `-PlanOnly` path is not output evidence. Read the producer's
+own terminal status first, then validate the exact output revision it wrote.
+If the producer is intentionally nonblocking, retained predecessor output must
+be treated as predecessor output rather than as a failed instance of the new
+schema.
 
 Artifacts have explicit lifecycle states. `DRAFT` bytes may be corrected in
 place before freeze, signature, execution, publication, or external mutation.
@@ -201,6 +212,12 @@ rollback-injection design before the first signature. External
 `powershell.exe` stdout is text: use an in-process script for typed objects or
 explicit bounded JSON rehydration before property access. Machine gates must
 emit bounded JSON or scalar rows, never width-dependent `Format-*` evidence.
+PowerShell 7 `ConvertFrom-Json` can coerce ISO timestamp strings to `DateTime`
+and later serialize them with host-local formatting, unlike Windows PowerShell
+5.1. When JSON strings participate in hashes, keys, selectors, or signed
+evidence, use the exact installed PowerShell host or PowerShell 7
+`ConvertFrom-Json -DateKind String`; never hash or compare reserialized JSON
+after an unverified cross-host conversion.
 Do not recursively enumerate the whole project/work tree; use `rg` or one
 bounded exact root with row and error caps. A harness-safety failure is a hard
 stop before execution. A `FROZEN`, signed, executed, published, or externally

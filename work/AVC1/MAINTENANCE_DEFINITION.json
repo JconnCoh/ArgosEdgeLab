@@ -1,0 +1,68 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/AVC1.ps1",
+  "changes": [
+    {
+      "source": "payload/Run-JbodAllWaferProcessor.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Run-JbodAllWaferProcessor.ps1",
+      "approvedPredecessorSha256": [
+        "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+        "8EB83C05CA650C831D2DE8A6AB89ABD2941271B05B31FA93BCFFB553DEAAA892"
+      ],
+      "installedSha256": "8EB83C05CA650C831D2DE8A6AB89ABD2941271B05B31FA93BCFFB553DEAAA892",
+      "allowCreate": false
+    },
+    {
+      "source": "payload/Invoke-JbodAllWaferInventory.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Invoke-JbodAllWaferInventory.ps1",
+      "approvedPredecessorSha256": [
+        "8919C3DD4AC04FD662B57E356AC6E1A70BD614E97AFC270EB4B8FF617D705160",
+        "BF0BAF295F3D1F3234C5C2A5DE184AFEA4BE446BB9593BE9E10BB0E8F932F50A"
+      ],
+      "installedSha256": "BF0BAF295F3D1F3234C5C2A5DE184AFEA4BE446BB9593BE9E10BB0E8F932F50A",
+      "allowCreate": false
+    },
+    {
+      "source": "payload/Invoke-JbodAllWaferProcessingPass.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Invoke-JbodAllWaferProcessingPass.ps1",
+      "approvedPredecessorSha256": [
+        "0B063D452CA76AE5EE3EC1BDF6726853259039683C36E208718B8FE937D23753",
+        "8050EEB71923DC69EBD0A81F6C95840A7BD6215998E8546F9170C5A051B936EB"
+      ],
+      "installedSha256": "8050EEB71923DC69EBD0A81F6C95840A7BD6215998E8546F9170C5A051B936EB",
+      "allowCreate": false
+    },
+    {
+      "source": "payload/Update-JbodDashboardManifest.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Update-JbodDashboardManifest.ps1",
+      "approvedPredecessorSha256": [
+        "DCF97D92BDA0A82A49DA277D54CFD1BC7802068CD8B9D89340534CC892792BAD",
+        "F73AC7C38139098B079A23CC9C7653A93D7464BE1D4376708B25B3346B704E5D"
+      ],
+      "installedSha256": "F73AC7C38139098B079A23CC9C7653A93D7464BE1D4376708B25B3346B704E5D",
+      "allowCreate": false
+    },
+    {
+      "source": "payload/Show-JbodAllWaferTray.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Show-JbodAllWaferTray.ps1",
+      "approvedPredecessorSha256": [
+        "769ACAD731F8EA04C1820AB90CCA80591A132CEDDFCF44611B54D9BB2A41FB45",
+        "C03812C6889B102DFD9B3CB466E70B06B8943C1123A882EB0ADE972C641DAB2B"
+      ],
+      "installedSha256": "C03812C6889B102DFD9B3CB466E70B06B8943C1123A882EB0ADE972C641DAB2B",
+      "allowCreate": false
+    }
+  ],
+  "allowedTaskActions": [
+    "START_IF_STOPPED:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2",
+    "START_IF_STOPPED:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2",
+    "STOP_IF_STARTED_BY_THIS_REQUEST_ON_FAILURE:ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2",
+    "STOP_IF_STARTED_BY_THIS_REQUEST_ON_FAILURE:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2"
+  ],
+  "rehearsal": {
+    "requiredState": "PASS_AVC1_ALL_VALID_CONSUMER_REPAIR"
+  }
+}
+

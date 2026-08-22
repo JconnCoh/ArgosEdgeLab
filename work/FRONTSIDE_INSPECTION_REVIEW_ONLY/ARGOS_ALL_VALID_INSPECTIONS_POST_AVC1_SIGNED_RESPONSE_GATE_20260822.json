@@ -1,0 +1,63 @@
+{
+  "schema": "argos_post_avc1_signed_data_pull_response_gate_v1",
+  "createdUtc": "2026-08-22T00:36:00Z",
+  "state": "PASS_DIRECT_EXACT_SIGNED_RESPONSE",
+  "requestId": "REQ_20260822T002837514Z_64FE12C5E4EB",
+  "responseId": "R_437B81703A84_20260822003429334_ebb607f6",
+  "endpointState": "PASS_DATA_PULL",
+  "sourceRole": "JBOD",
+  "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+  "signatureVerified": true,
+  "responseZip": "U:/ProjectPortalRO/responses/R_437B81703A84_20260822003429334_ebb607f6.ready.zip",
+  "responseZipBytes": 463397,
+  "responseZipSha256": "CEB15502FA2F84351F7955239C44518E1577ADFFADC2858AD663304CD4F190AB",
+  "manifestSha256": "B47F0B607AFB69C898EBEE3389C075D20F3DE23396E8BFE868BFD038DA36F512",
+  "signatureSha256": "909EECF1A414ACC9D4A4EC6932AA85D75D248625D34D42FE5EC01D812AF825B9",
+  "resultSha256": "58166CEC63D2200E03A491939B098A1005B24F1E4C2D26FDE331B366BA50C7E0",
+  "containerBytes": 17445625,
+  "containerSha256": "834C1A3D911E90DA25571C1739D9FBADF5D1A3FFD8DECD6DEE04A0E930F0A32E",
+  "returnedFiles": 15,
+  "returnedUniquePaths": 15,
+  "allReturnedHashesVerified": true,
+  "targetSelector": "lot=62631-586; scan=20260819173317; domain=FRONTSIDE",
+  "targetCatalogRows": 10,
+  "targetCatalogUniqueIdentities": 10,
+  "targetQueueRows": 10,
+  "targetQueueUniquePhysicalIdentities": 10,
+  "targetQueueStateCounts": [
+    {"state":"SCRIBE_CONFIRMED_MES_SNAPSHOT","count":10}
+  ],
+  "targetConfirmedOverlayRows": 10,
+  "targetVerifiedMetadataRows": 10,
+  "targetCatalogIdentityStateCounts": [
+    {"state":"IMAGE_CONFIRMED_CURRENT_PIXELS_EXACT_UNIQUE_MES_REVIEW_ONLY","count":3},
+    {"state":"IMAGE_CONFIRMED_EXACT_PREVIOUS_HUMAN_SCRIBE_MATCH_REVIEW_ONLY","count":7}
+  ],
+  "targetCatalogMetadataStateCounts": [
+    {"state":"SCRIBE_CONFIRMED_MES_SNAPSHOT","count":10}
+  ],
+  "targetCompletedFrontLedgerRowsAtSnapshot": 3,
+  "targetCompletedFrontSlotsAtSnapshot": ["Slot01","Slot02","Slot03"],
+  "targetFrontGuiWafersAtSnapshot": 3,
+  "targetFrontGuiSlotsAtSnapshot": ["Slot01","Slot02","Slot03"],
+  "processorStatus": {
+    "updatedUtc": "2026-08-22T00:33:05.3736455Z",
+    "state": "PROCESSING",
+    "currentIdentity": "62631-586_20260819173317_Slot04__BOWCOMP_BACKSIDE",
+    "currentDomain": "BOWCOMP_BACKSIDE",
+    "currentStage": "NATIVE_DETECTOR",
+    "progressPercent": 1,
+    "eligiblePending": 21
+  },
+  "installedHashes": {
+    "Run-JbodAllWaferProcessor.ps1": "8EB83C05CA650C831D2DE8A6AB89ABD2941271B05B31FA93BCFFB553DEAAA892",
+    "Invoke-JbodAllWaferInventory.ps1": "BF0BAF295F3D1F3234C5C2A5DE184AFEA4BE446BB9593BE9E10BB0E8F932F50A",
+    "Invoke-JbodAllWaferProcessingPass.ps1": "8050EEB71923DC69EBD0A81F6C95840A7BD6215998E8546F9170C5A051B936EB",
+    "Update-JbodDashboardManifest.ps1": "F73AC7C38139098B079A23CC9C7653A93D7464BE1D4376708B25B3346B704E5D",
+    "Show-JbodAllWaferTray.ps1": "C03812C6889B102DFD9B3CB466E70B06B8943C1123A882EB0ADE972C641DAB2B",
+    "Open-JbodCompletedLot.ps1": "13A4CF7984D11058CE3F1F296E0913E06EE4228FE56FD331817220768B300A3A"
+  },
+  "formalTenOfTenClosureProved": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

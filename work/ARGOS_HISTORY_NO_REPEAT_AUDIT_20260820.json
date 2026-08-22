@@ -88,14 +88,15 @@
     "RECOVERY_FULL_DATASET_ROW_BOUND",
     "DATA_PULL_OPTIONAL_ABSENCE_ALL_OR_NOTHING",
     "OPS_PRODUCER_CONSUMER_IDENTITY_STATE_DRIFT",
-    "OPS_DASHBOARD_CURRENT_FINGERPRINT_HIDES_HISTORY",
+    "OPS_HISTORICAL_IDENTITY_REUSE_WITHOUT_SOURCE_HASH_PROVENANCE",
     "GUI_EVENT_SCRIPT_SCOPE_STATE_UNBOUND",
     "HARNESS_SIMPLIFIED_WHERE_OPERATOR_TOKEN_ADJACENCY",
     "OPS_RUNNER_CONSUMER_PARAMETER_SURFACE_DRIFT",
-    "GUI_NONBLOCKING_REFRESH_OPTIONAL_SCHEMA_DRIFT",
-    "OPS_ENTRYPOINT_TASK_RECOVERY_PRIOR_EVIDENCE_UNPROVED"
+    "GUI_INSTALLED_UPDATER_NOT_EXECUTED_BEFORE_OUTPUT_VALIDATION",
+    "OPS_ENTRYPOINT_TASK_RECOVERY_PRIOR_EVIDENCE_UNPROVED",
+    "HARNESS_CROSS_POWERSHELL_JSON_DATE_COERCION"
   ],
-  "issueCount": 89,
+  "issueCount": 90,
   "openUnclassifiedIssueCount": 0,
   "preventionPolicy": "work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md",
   "preactionTemplate": "work/templates/ARGOS_ZERO_RECURRENCE_PREACTION.template.json",
@@ -253,6 +254,15 @@
       "futureReuseAllowed": false,
       "replayAllowed": false,
       "successorParentAllowed": false
+    },
+    {
+      "path": "C:/AVS1Q/REQ_20260821T225023842Z_68DD43283089.ready.zip",
+      "sha256": "98E7C701CB2101721AE7F2E3E37625E4DEA1C5B5C55F83216D80F8773FFA3B47",
+      "reason": "SIGNED_TERMINAL_FAILURE_AFTER_ENTRYPOINT_INSTALLED_BUT_NEVER_EXECUTED_THE_DASHBOARD_UPDATER_THEN_VALIDATED_NEW_OUTPUT_FIELDS_AND_USED_IDENTITY_CARDINALITY_AS_HISTORICAL_RESULT_PROVENANCE",
+      "terminalEvidenceRetained": true,
+      "futureReuseAllowed": false,
+      "replayAllowed": false,
+      "successorParentAllowed": false
     }
   ],
   "legacyEvidence": {
@@ -325,12 +335,13 @@
     "recoveryWholeDatasetObservationBoundAtLeastCurrentAuthoritativeRows": true,
     "dataPullSourcesMustBeRequiredPresentNotOptionalAbsenceProbes": true,
     "producerIdentityStateEnumsRequireCrossConsumerPredicateGate": true,
-    "singleHistoricalFrontCompletionRequiresExplicitFingerprintProvenance": true,
+    "supersededResultCurrentReuseRequiresExactSourceByteHashEquality": true,
     "winFormsCallbackStateMustBeObjectAnchored": true,
     "simplifiedWhereComparisonOperatorRequiresSeparateOperandTokenAndExactStateReaderExecution": true,
     "installedRunnerNamedArgumentsMustResolveAgainstExactConsumerCommandSurface": true,
-    "nonblockingDashboardRefreshRequiresRevisionAndOptionalFieldGate": true,
-    "taskStopRequiresReadableExactPredecessorRestoreMappingAndAvailabilityRecovery": true
+    "installedOutputProducerMustExecuteSuccessfullyBeforeNewOutputValidation": true,
+    "taskStopRequiresReadableExactPredecessorRestoreMappingAndAvailabilityRecovery": true,
+    "crossPowerShellJsonHashInputsRemainStringsRequired": true
   },
   "reviewOnly": true,
   "productionRoutingEnabled": false

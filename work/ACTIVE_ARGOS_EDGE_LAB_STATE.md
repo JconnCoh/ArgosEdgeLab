@@ -5753,3 +5753,36 @@ processor and monitor tasks requires explicit post-failure authority and a
 separate exact action contract; it must not be combined with another visibility
 package. The global FS15 hold and every XML, training, production,
 source-deletion, and wafer-abort boundary remain unchanged.
+
+## 2026-08-21 AVC1 repaired all-valid inspection flow; live progress accepted provisionally
+
+One bounded AVC1 maintenance action returned matching signed
+`PASS_MAINTENANCE_PATCH` response
+`R_CD3D634B5414_20260822001721391_05ff9fd8`. It repaired the five installed
+consumer/runner components, started the tray and processor, proved all ten exact
+target FRONT identities ready, and left thirteen protected tasks unchanged.
+It did not mutate the completed ledger or image data directly. AVC1 is
+`RELEASED_REVIEW_ONLY`; AVS1 and R10 remain `WITHDRAWN` and are not replay or
+successor parents.
+
+A separately gated signed read-only data pull then returned
+`PASS_DATA_PULL` response `R_437B81703A84_20260822003429334_ebb607f6`.
+The exact snapshot proved ten unique target catalog rows, ten unique queue rows
+all in `SCRIBE_CONFIRMED_MES_SNAPSHOT`, ten confirmed-overlay rows, ten verified
+metadata rows, three completed FRONT ledger rows, and three GUI FRONT wafers
+(Slots 01-03). The processor status was fresh and `PROCESSING` Slot04 with 21
+eligible items pending. The operator subsequently observed the FRONT count
+continuing to increase and accepted the live state as good for now.
+
+This is a provisional operational stop, not a false 10/10 closure claim. Leave
+the healthy processor untouched. If work resumes, use one proportional
+read-only observation after completion or investigate one concrete new failure;
+do not create another repair package merely to improve validation volume.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ALL_VALID_INSPECTIONS_AVC1_PROVISIONAL_LIVE_PROGRESS_CHECKPOINT_20260822.md`,
+SHA-256
+`7EA6B3DA3E463588AB5EAD1148333203523EFD0031065EA4C3A8D06E3354589A`.
+Disposition remains `PENDING_GATE`. The global FS15 hold and every XML,
+training, production, source-deletion, image-byte, and wafer-abort boundary
+remain unchanged.

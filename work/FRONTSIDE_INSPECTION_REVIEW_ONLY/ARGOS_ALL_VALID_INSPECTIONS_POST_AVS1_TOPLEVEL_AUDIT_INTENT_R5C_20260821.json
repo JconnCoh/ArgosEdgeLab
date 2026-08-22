@@ -1,0 +1,33 @@
+{
+  "schema": "argos_read_only_live_audit_intent_v1",
+  "createdUtc": "2026-08-21T23:48:00Z",
+  "state": "PASS_BOUNDED_POST_AVS1_TOPLEVEL_AUDIT_INTENT",
+  "objective": "Directly prove the complete five-file post-AVS1 installed state before any successor design; do not infer four hashes from outer-worker rollback.",
+  "route": {
+    "jobClass":"DATA_PULL",
+    "targetRole":"JBOD",
+    "approvedRoot":"JBOD_PROCESSOR_REVIEW",
+    "endpointWorkerSha256":"244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+    "priorSuccessfulSameRouteResponseId":"R_7CF6AB9693B8_20260821234034075_14eae0a8"
+  },
+  "selector": {
+    "source":"signed DATA_PULL RESULT.json files[]",
+    "expected":"exactly the five required current files, each unique and locally hash-equal",
+    "uniqueness":"one row per exact relative path"
+  },
+  "bounds": {
+    "maximumRequests":1,
+    "maximumFiles":5,
+    "maximumBytes":2097152,
+    "retryOnFailure":false,
+    "imageOrBinaryFilesRequested":0,
+    "taskActions":[],
+    "processActions":[],
+    "installedChanges":0,
+    "queueOrLedgerMutation":false,
+    "sourceDeletion":false,
+    "waferAction":false
+  },
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

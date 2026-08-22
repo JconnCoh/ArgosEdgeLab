@@ -1,0 +1,49 @@
+{
+  "schema": "argos_post_action_read_only_audit_intent_v1",
+  "createdUtc": "2026-08-22T00:20:00Z",
+  "state": "LOCKED_INPUT",
+  "authority": {
+    "repair": "AVC1",
+    "signedResponseId": "R_CD3D634B5414_20260822001721391_05ff9fd8",
+    "signedEndpointState": "PASS_MAINTENANCE_PATCH"
+  },
+  "regressionCohortSelector": {
+    "lot": "62631-586",
+    "scan": "20260819173317",
+    "domain": "FRONTSIDE",
+    "expectedUniqueIdentities": 10
+  },
+  "sourceSelectors": [
+    {"field":"target identity state and uniqueness","path":"identity/SCRIBE_IDENTITY_QUEUE.json","selector":"lot=62631-586 AND scan=20260819173317 AND domain=FRONTSIDE","expected":"10 unique rows; each state is a producer-approved ready state"},
+    {"field":"installed repair hashes","path":"top-level five installed PowerShell sources","selector":"exact relative path","expected":"exact AVC1 target hashes"},
+    {"field":"current FRONT acquisition set","path":"catalog/ALL_WAFER_CATALOG.json","selector":"domain=FRONTSIDE and current acquisition semantics from installed consumer","expected":"each eligible row has one explicit disposition"},
+    {"field":"confirmed identities","path":"identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json","selector":"current exact identity key","expected":"no ambiguous target identity"},
+    {"field":"verified metadata","path":"metadata/verified/ACTIVE_VERIFIED_METADATA_OVERLAY.json","selector":"current exact identity key","expected":"no target metadata hold"},
+    {"field":"completed processing","path":"processor/PROCESSING_LEDGER.json","selector":"current acquisition fingerprint/job key from installed consumer","expected":"all completed current FRONT rows exactly once; target cohort exactly 10"},
+    {"field":"completed-lot GUI source","path":"dashboard_manifest.json","selector":"current acquisition fingerprint/job key from installed consumer","expected":"all completed current FRONT ledger rows exactly once; target cohort exactly 10; duplicate identity groups 0"},
+    {"field":"processor health","path":"processor/PROCESSOR_STATUS.json and state/STATUS.json","selector":"latest non-PlanOnly heartbeat and processor state","expected":"fresh healthy progress or terminal WATCHING state"},
+    {"field":"completed-lot launcher","path":"Open-JbodCompletedLot.ps1","selector":"exact installed hash","expected":"unchanged approved launcher"}
+  ],
+  "boundedDecision": {
+    "maximumRequests": 1,
+    "retryOnFailure": false,
+    "taskActions": [],
+    "processActions": [],
+    "installedChanges": 0,
+    "ledgerMutation": false,
+    "imageRead": false,
+    "binaryRead": false,
+    "restartAllowed": false,
+    "secondRepairAllowed": false,
+    "stopOnNewSystemicPremiseFailure": true
+  },
+  "unchangedBoundaries": {
+    "reviewOnly": true,
+    "globalFs15Hold": true,
+    "xmlExportEnabled": false,
+    "trainingEligible": false,
+    "productionRoutingEnabled": false,
+    "sourceDeletionAllowed": false,
+    "waferAbortAllowed": false
+  }
+}

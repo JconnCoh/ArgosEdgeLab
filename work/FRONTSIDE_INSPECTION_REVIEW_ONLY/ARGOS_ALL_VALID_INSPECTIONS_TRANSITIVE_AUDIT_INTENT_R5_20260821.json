@@ -1,0 +1,62 @@
+{
+  "schema": "argos_read_only_live_audit_intent_v1",
+  "createdUtc": "2026-08-21T23:36:00Z",
+  "state": "PASS_BOUNDED_TRANSITIVE_SOURCE_AUDIT_INTENT",
+  "objective": "Close the exact installed image-processing dependency graph that the prior direct-call audit omitted before any restart or successor design.",
+  "whyRequired": [
+    "The signed R4 pull stopped at direct acquisition entrypoints.",
+    "The exact installed FRONT entrypoint names pose, scribe-exclusion, worker, detector, notch, glyph-reference, and composite-rendering dependencies whose installed bytes were not audited.",
+    "Bare and BowComp entrypoints name additional worker, detector, geometry, surface, and rendering dependencies whose installed bytes were not audited.",
+    "AVS1 did not change detector code and failed before processor restart, but source completeness is required before relying on unchanged installed behavior."
+  ],
+  "route": {
+    "jobClass": "DATA_PULL",
+    "targetRole": "JBOD",
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "currentEndpointConfigSha256": "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F",
+    "endpointWorkerSha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+    "priorSuccessfulSameRouteResponseId": "R_8D1D77EB8AD0_20260821222027680_bcba8bef"
+  },
+  "selectors": [
+    {
+      "field": "returned relative-path set",
+      "source": "signed DATA_PULL RESULT.json files[].relativePath",
+      "expected": "exact equality with all 26 required-present relative paths",
+      "uniqueness": "one returned record per relative path; no duplicates, omissions, or extras"
+    },
+    {
+      "field": "returned source hashes",
+      "source": "signed DATA_PULL RESULT.json files[].sha256 plus extracted text/source files",
+      "expected": "64-hex hash for every returned file and exact local rehash equality",
+      "uniqueness": "one hash per exact relative path"
+    },
+    {
+      "field": "task and process state",
+      "source": "not requested by DATA_PULL",
+      "expected": "no task or process action; retain signed post-AVS1 STATUS evidence",
+      "uniqueness": "not applicable"
+    }
+  ],
+  "bounds": {
+    "maximumRequests": 1,
+    "maximumFiles": 26,
+    "maximumBytes": 16777216,
+    "retryOnFailure": false,
+    "imageOrBinaryFilesRequested": 0,
+    "recursiveEnumerationRequested": false,
+    "taskActions": [],
+    "processActions": [],
+    "installedChanges": 0,
+    "queueOrLedgerMutation": false,
+    "sourceDeletion": false,
+    "waferAction": false
+  },
+  "hardStops": [
+    "Any required file absent",
+    "Any returned path or hash mismatch",
+    "Any signed terminal response other than PASS_DATA_PULL",
+    "Any evidence of image or binary source content in the response"
+  ],
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

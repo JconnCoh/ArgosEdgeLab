@@ -1,0 +1,71 @@
+{
+  "schema": "argos_avc1_change_and_preflight_gate_v1",
+  "createdUtc": "2026-08-22T00:08:30Z",
+  "state": "PASS_AVC1_EXACT_CHANGE_AND_NON_MUTATING_PREFLIGHT",
+  "disposition": "PENDING_GATE",
+  "sourceAuthority": {
+    "signedAudit": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_READ_ONLY_AUDIT_CLOSURE_R5C_20260821.json",
+    "sourceRoot": "C:/L5CD/data/JBOD_PROCESSOR_REVIEW",
+    "coherentPreAvs1Baseline": true,
+    "avs1UsedAsParent": false,
+    "r10UsedAsParent": false
+  },
+  "changes": [
+    {
+      "defect": "UNSUPPORTED_RUNNER_INVENTORY_ARGUMENT",
+      "path": "payload/Run-JbodAllWaferProcessor.ps1",
+      "predecessorSha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+      "targetSha256": "8EB83C05CA650C831D2DE8A6AB89ABD2941271B05B31FA93BCFFB553DEAAA892",
+      "fix": "REMOVE_ONLY_METADATA_SNAPSHOT_ROOT_DERIVATION_AND_NAMED_ARGUMENT"
+    },
+    {
+      "defect": "INVENTORY_IDENTITY_STATE_PREDICATE_DRIFT",
+      "path": "payload/Invoke-JbodAllWaferInventory.ps1",
+      "predecessorSha256": "8919C3DD4AC04FD662B57E356AC6E1A70BD614E97AFC270EB4B8FF617D705160",
+      "targetSha256": "BF0BAF295F3D1F3234C5C2A5DE184AFEA4BE446BB9593BE9E10BB0E8F932F50A",
+      "fix": "ACCEPT_EXACT_THREE_PRODUCER_APPROVED_REVIEW_ONLY_IDENTITY_STATES"
+    },
+    {
+      "defect": "PROCESSING_IDENTITY_STATE_PREDICATE_DRIFT",
+      "path": "payload/Invoke-JbodAllWaferProcessingPass.ps1",
+      "predecessorSha256": "0B063D452CA76AE5EE3EC1BDF6726853259039683C36E208718B8FE937D23753",
+      "targetSha256": "8050EEB71923DC69EBD0A81F6C95840A7BD6215998E8546F9170C5A051B936EB",
+      "fix": "ACCEPT_EXACT_THREE_PRODUCER_APPROVED_REVIEW_ONLY_IDENTITY_STATES"
+    },
+    {
+      "defect": "DASHBOARD_IDENTITY_STATE_PREDICATE_DRIFT",
+      "path": "payload/Update-JbodDashboardManifest.ps1",
+      "predecessorSha256": "DCF97D92BDA0A82A49DA277D54CFD1BC7802068CD8B9D89340534CC892792BAD",
+      "targetSha256": "F73AC7C38139098B079A23CC9C7653A93D7464BE1D4376708B25B3346B704E5D",
+      "fix": "ACCEPT_EXACT_THREE_PRODUCER_APPROVED_STATES_WITHOUT_HISTORICAL_RESULT_SUBSTITUTION"
+    },
+    {
+      "defect": "TRAY_CALLBACK_SCRIPT_SCOPE_STATE_UNBOUND",
+      "path": "payload/Show-JbodAllWaferTray.ps1",
+      "predecessorSha256": "769ACAD731F8EA04C1820AB90CCA80591A132CEDDFCF44611B54D9BB2A41FB45",
+      "targetSha256": "C03812C6889B102DFD9B3CB466E70B06B8943C1123A882EB0ADE972C641DAB2B",
+      "fix": "ANCHOR_LAST_ACTIVITY_KEY_ON_CAPTURED_FORM_TAG_OBJECT"
+    }
+  ],
+  "entryPoint": {
+    "path": "payload/AVC1.ps1",
+    "sha256": "00F1C0EC4052A1D0690F68FF19E80287054B261D2357C7D81D0213BECFECD341",
+    "windowsPowerShell51ParseErrors": 0,
+    "harnessSafety": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperSafety": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "dashboardValidatedBeforeProducerRun": false,
+    "localPredecessorRestoreImplemented": false
+  },
+  "preflightCases": [
+    {"case":"COHERENT_PREDECESSOR","root":"C:/L5A1T","expected":"PASS","observed":"PASS_AVC1_NON_MUTATING_PREFLIGHT"},
+    {"case":"COHERENT_TARGET_IDEMPOTENT","root":"C:/L5A1G","expected":"PASS","observed":"PASS_AVC1_NON_MUTATING_PREFLIGHT"},
+    {"case":"MIXED_FOUR_PREDECESSOR_ONE_TARGET","root":"C:/L5A1M","expected":"REFUSE","observed":"REFUSED_PREDECESSOR_4_TARGET_1"}
+  ],
+  "payloadBytesChangedByPreflight": false,
+  "liveStateContactedByPreflight": false,
+  "imageProcessingCodeChanged": false,
+  "viewerCodeChanged": false,
+  "historicalCurrentSubstitutionAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

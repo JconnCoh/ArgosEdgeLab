@@ -6382,27 +6382,53 @@ than rerunning it.
   with installed inventory SHA-256
   `8919C3DD4AC04FD662B57E356AC6E1A70BD614E97AFC270EB4B8FF617D705160`.
 
-### A nonblocking dashboard refresh can preserve an older optional-field schema
+### Installed dashboard bytes do not update the dashboard unless the updater runs
 
 - Failure signature: the exact live PlanOnly reaches dashboard reconciliation,
   but strict mode raises `The property 'resultFingerprintState' cannot be found
-  on this object` while reading the dashboard after refresh.
-- Cause: the processing pass deliberately treats dashboard refresh as
-  nonblocking and preserves the last valid manifest when the updater fails or
-  declines replacement. A verifier that assumes every post-refresh row has the
-  new optional provenance field can therefore read the retained older schema.
-- Mandatory preflight: after invoking a nonblocking refresh, read the refresh
-  status/audit first and classify the dashboard manifest revision explicitly.
-  Every newly added manifest property must be accessed through an optional-
-  property helper. Test both a newly written manifest and a retained predecessor
-  manifest under strict mode against the exact packaged verifier.
-- Recovery: do not infer refresh success from runner success. Preserve the old
-  manifest, report the updater's exact failure, and stop before task restart.
-  A future design must separately prove why the updater did not replace the
-  manifest; it must not merely weaken the verifier.
+  on this object` while reading the unchanged dashboard.
+- Cause: AVS1 installed a changed dashboard updater but never invoked it. The
+  runner's `-Once -PlanOnly` path returns from the processing pass before its
+  nonblocking dashboard-refresh call, so `dashboard_manifest.json` remained the
+  29-row predecessor. The entrypoint then required a field and 32-row count that
+  only a successful invocation of the new updater could create. The local gate
+  checked source tokens rather than executing this producer/consumer sequence.
+- Mandatory preflight: identify the exact producer for every newly required
+  output field or count. Execute that exact producer, require its terminal
+  success/status, and only then validate the exact output revision it wrote.
+  Installing producer bytes, finding source tokens, or executing a different
+  upstream path is not output evidence. Every newly added manifest property must
+  still be accessed through an optional-property helper, and a retained
+  predecessor manifest must be classified as such under strict mode.
+- Recovery: do not infer dashboard refresh from runner PlanOnly or installed
+  hashes. Preserve the predecessor manifest, report that the updater was not
+  executed, and stop before task restart. Do not patch and replay AVS1.
 - First observed on 2026-08-21 in signed terminal AVS1 response
   `R_53E919FF3990_20260821225532690_a417fac0` after the exact live PlanOnly had
   admitted the ten FRONT regression rows.
+
+### Identity uniqueness cannot substitute for acquisition-fingerprint provenance
+
+- Failure signature: a dashboard repair proposes to include a completed FRONT
+  result solely because there is exactly one completed ledger row with the same
+  identity, even though the current catalog fingerprint and ledger job-key
+  fingerprint differ.
+- Cause: the workflow incorrectly called a single same-identity historical row
+  "unambiguous." The fingerprint covers the channel paths, byte counts,
+  timestamps, and dimensions; a mismatch is positive evidence that current
+  acquisition equivalence has not been proved. Same identity is not same input.
+- Mandatory preflight: never re-admit a superseded result to the current
+  dashboard from identity cardinality. Require recorded exact BF/DF source-byte
+  hashes in the result and exact equality with hashes of the current acquisition
+  sources. If either side lacks those hashes, retain the result only as
+  historical evidence or reprocess the current acquisition.
+- Recovery: withdraw the historical-fingerprint fallback in AVS1. The three
+  ledger rows for slots 02, 07, and 10 of scan `20260815171102` remain valid
+  historical completions but are not current-dashboard rows until exact source
+  equivalence or a fresh current-acquisition result is proved.
+- First observed on 2026-08-21 while auditing AVS1 after its signed failure. All
+  three proposed fallback rows had different current catalog fingerprints and
+  ledger job-key fingerprints.
 
 ### Endpoint-entrypoint task recovery cannot guess worker predecessor evidence layout
 
@@ -6428,6 +6454,27 @@ than rerunning it.
   outer endpoint worker entered its installed-file rollback path, but task
   availability and installed rollback hashes remained unproved at the terminal
   boundary.
+
+### Cross-PowerShell JSON date coercion can change hash inputs
+
+- Failure signature: a locally reconstructed request, selector, or evidence
+  object differs from the installed Windows PowerShell 5.1 value even though
+  its source JSON text appears equivalent; ISO timestamp fields have become
+  host-local `DateTime` strings.
+- Cause: PowerShell 7 `ConvertFrom-Json` converts ISO timestamp strings to
+  `DateTime` by default, while Windows PowerShell 5.1 preserves them as strings.
+  Re-serialization can therefore change exact bytes, keys, or hash inputs.
+- Mandatory preflight: when JSON strings participate in hashes, keys,
+  selectors, or signed evidence, execute with the exact installed PowerShell
+  host or use PowerShell 7 `ConvertFrom-Json -DateKind String`. Assert the exact
+  received string before hashing or comparison. Do not treat cross-host JSON
+  object equivalence as byte or hash equivalence.
+- Recovery: discard the locally coerced reconstruction and return to the
+  original file bytes or repeat the bounded read with string-preserving JSON
+  parsing. This correction does not justify replaying or mutating an endpoint.
+- First observed on 2026-08-21 while validating the post-AVC1 signed read-only
+  snapshot; preserving timestamp strings restored exact selector/hash
+  comparison without another live action.
 - Follow-up signed read-only STATUS response
   `R_07B0A5DC725F_20260821230519159_a7ea6fee` proved the processor and monitor
   tasks were both `Ready`, not running, and `PROCESSOR_STATUS.json` was absent.

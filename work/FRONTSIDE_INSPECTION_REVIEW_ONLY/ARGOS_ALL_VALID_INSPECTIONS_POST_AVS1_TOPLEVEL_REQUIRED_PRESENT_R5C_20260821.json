@@ -1,0 +1,19 @@
+{
+  "schema": "argos_required_present_data_pull_sources_v1",
+  "createdUtc": "2026-08-21T23:48:00Z",
+  "state": "PASS_REQUIRED_PRESENT_POST_AVS1_TOPLEVEL_CLASSIFICATION",
+  "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+  "sources": [
+    {"relativePath":"Run-JbodAllWaferProcessor.ps1","evidence":"changed by AVS1; post-failure STATUS did not expose its hash"},
+    {"relativePath":"Invoke-JbodAllWaferInventory.ps1","evidence":"changed by AVS1; post-failure STATUS did not expose its hash"},
+    {"relativePath":"Invoke-JbodAllWaferProcessingPass.ps1","evidence":"changed by AVS1; post-failure STATUS exposed the old hash and this pull reconfirms the five-file set atomically"},
+    {"relativePath":"Update-JbodDashboardManifest.ps1","evidence":"changed by AVS1; post-failure STATUS did not expose its hash"},
+    {"relativePath":"Show-JbodAllWaferTray.ps1","evidence":"changed by AVS1; post-failure STATUS did not expose its hash"}
+  ],
+  "optionalSources": [],
+  "allOrNothingHandler": true,
+  "maximumFiles": 5,
+  "imageOrBinaryFilesRequested": 0,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

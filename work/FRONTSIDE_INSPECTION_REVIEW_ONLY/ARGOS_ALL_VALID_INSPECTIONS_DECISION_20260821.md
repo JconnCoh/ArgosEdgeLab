@@ -2,84 +2,71 @@
 
 Disposition: `PENDING_GATE`
 
-The signed live audit proves that this is not a ten-row GUI-only loss. All ten
-August 19 FRONT physical identities are exact and unique in the identity queue,
-confirmed overlay, verified metadata overlay, and catalog, but none is in the
-FRONT completed ledger or GUI manifest. The ten rows are the regression cohort;
-the product invariant is that every producer-approved, route-valid inspection
-receives an explicit terminal disposition and every completed inspection is
-visible exactly once in the Completed Lot GUI.
+The signed read-only audit is closed. This is not a GUI redesign and the ten
+missing wafers are not the whole requirement. They are the regression cohort
+for the invariant that every producer-approved current inspection receives a
+truthful explicit disposition and every current completed result appears once
+in Completed Lot data.
 
-The current live processor failure is now exact. Signed response
-`R_8D1D77EB8AD0_20260821222027680_bcba8bef` returned the installed
-`processor/PROCESSOR_LOOP_FAILURE.txt` at SHA-256
-`7566DBF2704BB7D45D15F62C9F0953D72946FE3B016873C02F56D3B82FC50DD5`.
-It records `Ordered consumer: INVENTORY` and a Windows PowerShell parameter
-binding failure because runner
-`46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4`
-passes `-MetadataSnapshotRoot` to inventory
-`8919C3DD4AC04FD662B57E356AC6E1A70BD614E97AFC270EB4B8FF617D705160`,
-whose exact parameter surface does not declare it. Every other direct named
-argument on the runner, processor, dashboard, acquisition, reference-registry,
-Completed Lot, Insite import, and Insite export orchestration surface matched
-its exact installed callee.
+The exact ten target queue rows are unique. The verified overlay contains ten
+unique exact acquisition rows with authoritative MES context and confirmed
+FRONT routes. None is in the completed FRONT ledger or dashboard. Across the
+current FRONT population, the ledger has 32 completed rows and the dashboard
+has 29 unique rows. The three omissions are historical completed results whose
+job-key fingerprints differ from the current acquisitions; identity uniqueness
+does not make them current.
 
-Removing that binding error alone is insufficient. The exact producer/verified
-contract accepts three review-only identity states, but installed inventory,
-processing, and dashboard consumers do not consistently accept the same set.
-The full signed live dataset has 745 verified rows. It includes 47 non-FRONT
-image-confirmed rows; 12 of them satisfy every other current reference-family
-gate when evaluated with the human-confirmed state. A FRONT-only consumer
-exception would therefore break valid BowComp/backside work. The corrected
-contract accepts the same three producer-approved states in every domain while
-leaving all existing domain route, appearance, geometry, context, XML,
-training, and production gates intact.
+The exact installed call path has four proved orchestration/consumer defects:
 
-The broader GUI invariant fails independently: 32 unique completed FRONT
-identities exist in the ledger while only 29 appear in the dashboard. The three
-missing identities each have exactly one completed historical result whose
-fingerprint was superseded by the current catalog acquisition. They can be
-included without ambiguity only with explicit historical/current fingerprint
-provenance. The reported Completed Lot popup is a separate two-line tray-state
-defect: the WinForms event callback reads `$script:lastActivityKey` from an
-unreliable callback script scope. Anchoring this value on the captured form's
-`Tag` state fixes the exception without changing the viewer or redesigning the
-GUI.
+1. the runner passes nonexistent `-MetadataSnapshotRoot` to inventory;
+2. inventory, processing, and dashboard disagree with the exact three identity
+   states emitted and approved by the identity producer;
+3. the tray timer reads `$script:lastActivityKey` from an unreliable callback
+   scope; and
+4. AVS1 attempted to treat a unique same-identity historical result as current
+   without source-byte equivalence.
+
+AVS1 also installed a changed dashboard updater but never invoked it. Its
+`-Once -PlanOnly` runner path returns before dashboard refresh, after which the
+entrypoint read the unchanged 29-row predecessor dashboard and required a new
+field. The signed failure therefore did not prove a dashboard updater failure.
+It proved a producer-never-ran/consumer-validated-new-output sequencing defect.
+
+The R5 source audit traversed the full text/source dependency path through
+pose, scribe exclusion, glyph references, FRONT and BowComp workers, native C#
+detectors, composite/viewer builders, and Bare support utilities. All eight
+PowerShell sources parse, all exact caller/callee parameter surfaces match, all
+MJS relative imports resolve, and the C# public APIs match their PowerShell
+calls. The three live-versus-local source differences are compatible with the
+current callers. No evidence supports changing detector thresholds, raster
+logic, pose, scribe exclusion, composites, or the Completed Lot viewer.
+
+Signed R5C then proved all five installed top-level files match the coherent
+pre-AVS1 baseline exactly. There is no mixed rollback state.
 
 ## Credible remedies
 
-- **A — no code/package:** rejected. The exact current failure file proves the
-  resident loop dies before inventory, and the processor/inventory heartbeats
-  are over 24 hours stale against a 15-second poll contract. Observation cannot
-  repair it.
-- **B — remove the invalid precondition:** necessary as part of the remedy. The
-  runner must stop passing the nonexistent inventory parameter, and downstream
-  consumers must use the exact producer-approved identity set rather than a
-  one-lot or one-domain substitute.
-- **C — repair queue/data state:** rejected. The exact confirmed and verified
-  overlays already contain the authoritative identities and MES context. No
-  guessed scribe, queue rewrite, metadata fabrication, or wafer action is
-  warranted.
-- **D — repair code/install state:** selected. Five exact installed consumers
-  have independently proved defects: runner binding, inventory state contract,
-  processing state contract, dashboard completion reconciliation, and tray
-  callback state.
+- **A — no code/package:** rejected. Both scheduled tasks are stopped/Ready,
+  and the coherent baseline contains the proved runner, state-predicate, and
+  tray defects. Restarting it would knowingly restart broken code.
+- **B — correct the invalid precondition:** selected. Remove only the invalid
+  runner argument and align the three downstream identity predicates to the
+  exact producer-approved set.
+- **C — repair queue/data state:** rejected. The signed queue and overlays
+  already contain exact unique identities, MES context, and confirmed routes.
+  No queue rewrite, guessed scribe, fabricated metadata, or wafer action is
+  supported.
+- **D — repair code/install state:** selected in its smallest form. Change only
+  the runner, three consumer predicates, and tray callback state. Do not add
+  historical fallback and do not change image processing or viewer code.
 
-A restart has a point, but only after the exact five-file correction is present.
-The running processor has parsed the old runner and owns the global processor
-mutex, so it cannot load the corrected runner in place. The bounded action must
-stop only the exact processor task, execute the corrected runner once with
-`-PlanOnly` against live state, require all direct call surfaces and the live
-catalog/route predicates to pass, then start that exact processor task. The
-exact monitor task must be restarted only to load the corrected tray bytes.
-Any failed live PlanOnly or task identity/hash check must restore task
-availability and terminate the single action; it must not iterate.
+An endpoint mutation has a point only for that bounded repair. A restart has no
+point before it. After exact install verification, the existing runner's real
+`-Once -PlanOnly` path must pass against live state and admit the ten target
+rows before the processor and tray tasks are started. Dashboard output must not
+be validated as new until its exact producer has actually run successfully.
 
-The endpoint action may refresh catalog, queue, processor status, and dashboard
-state and may read the existing acquisition headers needed by inventory. It may
-not alter source images, the completed ledger directly, detector thresholds,
-XML, training eligibility, production routing, other inspection tasks, or wafer
-state. Completion still requires a matching signed PASS action response followed
-by direct exact-endpoint evidence of ten completed FRONT ledger identities, ten
-GUI identities, reconciliation of the three historical completed FRONT rows,
-and an error-free real Completed Lot launch.
+The fixed acceptance boundary is recorded in
+`ARGOS_ALL_VALID_INSPECTIONS_FIX_AND_ACCEPTANCE_CHECKLIST_20260821.md` and its
+machine-readable companion. Any new systemic premise failure is a terminal stop,
+not permission to publish another trial.

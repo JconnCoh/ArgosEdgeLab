@@ -1,0 +1,19 @@
+{
+  "schema": "argos_project_portal_request_definition_v1",
+  "targetRole": "JBOD",
+  "jobClass": "DATA_PULL",
+  "handler": "",
+  "maxResultBytes": 2097152,
+  "parameters": {
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "relativePaths": [
+      "Run-JbodAllWaferProcessor.ps1",
+      "Invoke-JbodAllWaferInventory.ps1",
+      "Invoke-JbodAllWaferProcessingPass.ps1",
+      "Update-JbodDashboardManifest.ps1",
+      "Show-JbodAllWaferTray.ps1"
+    ],
+    "maximumFiles": 5,
+    "maximumBytes": 2097152
+  }
+}

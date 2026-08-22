@@ -1,0 +1,86 @@
+{
+  "schema": "argos_project_portal_prepublication_path_gate_v1",
+  "createdUtc": "2026-08-22T00:32:08Z",
+  "state": "PASS_PROJECT_PORTAL_PREPUBLICATION_PATH_GATE",
+  "requestId": "REQ_20260822T002837514Z_64FE12C5E4EB",
+  "jobClass": "DATA_PULL",
+  "requestZip": "C:/L5V1Q/REQ_20260822T002837514Z_64FE12C5E4EB.ready.zip",
+  "requestZipBytes": 1368,
+  "requestZipSha256": "D909E72CA9620803156CF1FF72A70B7D8BBC5536EFD9A49EE1D3194E6C777422",
+  "requestManifestSha256": "550E9B74B03C043BAEA9F1627FBB321232F638DD72E121FECBA0D541DC939379",
+  "requestSignatureSha256": "F5B361A2119E65F074331EDD2C520174FE6CACE1DF68E2B406BEFBD8DA37602C",
+  "definition": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_POST_AVC1_VALIDATION_DATA_PULL_DEFINITION_20260822.json",
+    "sha256": "1F79AE213D212160B3556829E23C391470AAF62E072FB8F381DA0F412A5CDD48"
+  },
+  "preactionContract": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_POST_AVC1_VALIDATION_PREACTION_20260822.json",
+    "sha256": "F21051A322254D3A3E6D09498A362F3492D918C20C962AF9C50E6039EF66951D"
+  },
+  "installedRoute": {
+    "endpointWorkerPath": "C:/ProgramData/ArgosProjectPortalRO/bin/W.ps1",
+    "endpointWorkerSha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+    "endpointConfigPath": "C:/ProgramData/ArgosProjectPortalRO/config/endpoint_jbod.json",
+    "endpointConfigSha256": "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F",
+    "endpointConfigEvidenceSha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "incomingRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/pending",
+    "processedRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/processed",
+    "responsePartialAndReadyRoot": "C:/ProgramData/ArgosProjectPortalRO/to_argos/pending",
+    "responseSenderSentRoot": "C:/ProgramData/ArgosProjectPortalRO/to_argos/sent",
+    "stateRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/state",
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "approvedRootPath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2"
+  },
+  "transitiveRouteEvidence": {
+    "priorEquivalentDataPullPathGate": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_DATA_PULL_PREPUBLICATION_PATH_GATE_R2_20260821.json",
+    "priorEquivalentDataPullPathGateSha256": "3D6E65EEC3A4C9749A09E14867AC029453E091085FB1D280493775C387EE1210",
+    "sameRequestTokenLength": true,
+    "sameResponseTokenLength": true,
+    "sameLongestReturnedZipEntry": "data/JBOD_PROCESSOR_REVIEW/metadata/verified/ACTIVE_VERIFIED_METADATA_OVERLAY.json",
+    "shareRequestRoot": "U:/ProjectPortalRO/requests",
+    "shareResponseRoot": "U:/ProjectPortalRO/responses",
+    "laptopExtractionRoot": "C:/L5V1R"
+  },
+  "requestContract": {
+    "relativePathCount": 15,
+    "maximumFiles": 15,
+    "maximumBytes": 134217728,
+    "maxResultBytes": 134217728,
+    "optionalPathCount": 0,
+    "longestSourceRelativeLeaf": "metadata/verified/ACTIVE_VERIFIED_METADATA_OVERLAY.json",
+    "longestReturnedZipEntry": "data/JBOD_PROCESSOR_REVIEW/metadata/verified/ACTIVE_VERIFIED_METADATA_OVERLAY.json",
+    "sourcePathsPreservedInsideNestedZip": true,
+    "filesystemReturnPathsFlattened": true,
+    "imageOrBinaryFilesRequested": 0
+  },
+  "reservedSuffixCharacters": 32,
+  "routeRows": [
+    {"hop":"localSignedManifest","pathLength":80,"effectiveLength":112,"longestComponentLength":42,"state":"PASS_PATH_BUDGET"},
+    {"hop":"localFinalZip","pathLength":55,"effectiveLength":87,"longestComponentLength":46,"state":"PASS_PATH_BUDGET"},
+    {"hop":"shareUpload","pathLength":74,"effectiveLength":106,"longestComponentLength":46,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointIncoming","pathLength":104,"effectiveLength":136,"longestComponentLength":46,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointProcessed","pathLength":106,"effectiveLength":138,"longestComponentLength":46,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointDataPullPartial","pathLength":114,"effectiveLength":146,"longestComponentLength":29,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponsePartial","pathLength":102,"effectiveLength":134,"longestComponentLength":49,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponsePayload","pathLength":124,"effectiveLength":156,"longestComponentLength":49,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponseManifest","pathLength":132,"effectiveLength":164,"longestComponentLength":49,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponseReady","pathLength":100,"effectiveLength":132,"longestComponentLength":47,"state":"PASS_PATH_BUDGET"},
+    {"hop":"shareResponse","pathLength":80,"effectiveLength":112,"longestComponentLength":51,"state":"PASS_PATH_BUDGET"},
+    {"hop":"laptopResponsePayload","pathLength":78,"effectiveLength":110,"longestComponentLength":47,"state":"PASS_PATH_BUDGET"},
+    {"hop":"laptopInnerLongest","pathLength":139,"effectiveLength":171,"longestComponentLength":47,"state":"PASS_PATH_BUDGET"}
+  ],
+  "rejectedNonImplementationCandidate": {
+    "pathModel": "response-id.ready.zip.partial.guid",
+    "reason": "Not the installed endpoint response layout; source uses response-id.partial directory then response-id.ready directory",
+    "usedForPublication": false
+  },
+  "maximumEffectiveLength": 171,
+  "maximumComponentLength": 49,
+  "exactFinalZipExtractionPassed": true,
+  "exactFinalZipSignaturePassed": true,
+  "publicationAuthorized": true,
+  "maximumRequestsAuthorized": 1,
+  "retryOnFailure": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

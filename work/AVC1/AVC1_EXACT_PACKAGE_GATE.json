@@ -1,0 +1,54 @@
+{
+  "schema": "argos_avc1_exact_package_gate_v1",
+  "createdUtc": "2026-08-22T00:14:00Z",
+  "state": "PASS_AVC1_EXACT_PACKAGE_GATE",
+  "disposition": "PENDING_GATE",
+  "requestId": "REQ_20260822T001259682Z_584BE4EFD5E7",
+  "requestZip": "C:/L5A1Q/REQ_20260822T001259682Z_584BE4EFD5E7.ready.zip",
+  "requestZipBytes": 43057,
+  "requestZipSha256": "8DDF2FE62EC3F6D7C754083D55177DE97C7E87F2572726C4ACBB55DDCF9D92EA",
+  "requestManifestSha256": "99388B580B640DEB329915C59885C1080D592C8382157A62845D340ABFC286EB",
+  "requestSignatureSha256": "705FC2C6DCD84EB867DC138D381586F427A3D6DE8482197EB4FCDD0CD9B46C44",
+  "preaction": {
+    "contract": "work/AVC1/AVC1_PREACTION.json",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION",
+    "auditedIssueCount": 89,
+    "dependencyCount": 21,
+    "collectionCaseIds": ["MANY", "ONE", "ZERO"]
+  },
+  "signedPackageVerification": {
+    "sourceFolder": "PASS_SIGNED_PORTAL_PACKAGE",
+    "exactFinalZipExtraction": "PASS_SIGNED_PORTAL_PACKAGE",
+    "payloadFileCount": 6,
+    "payloadHashMismatches": 0,
+    "entrypointSha256": "00F1C0EC4052A1D0690F68FF19E80287054B261D2357C7D81D0213BECFECD341"
+  },
+  "windowsPowerShell51ExtractedBoundaryCases": [
+    {"case":"EXTRACTED_COHERENT_PREDECESSOR","expected":"PASS","observed":"PASS_AVC1_NON_MUTATING_PREFLIGHT"},
+    {"case":"EXTRACTED_COHERENT_TARGET","expected":"PASS","observed":"PASS_AVC1_NON_MUTATING_PREFLIGHT"},
+    {"case":"EXTRACTED_QUOTED_SPACE_PATH","expected":"PASS","observed":"PASS_AVC1_NON_MUTATING_PREFLIGHT"},
+    {"case":"EXTRACTED_MIXED_INSTALL","expected":"REFUSE","observed":"EXPECTED_REFUSAL"},
+    {"case":"EXTRACTED_UNAPPROVED_HASH","expected":"REFUSE","observed":"EXPECTED_REFUSAL"}
+  ],
+  "exactPayload": [
+    {"path":"payload/AVC1.ps1","sha256":"00F1C0EC4052A1D0690F68FF19E80287054B261D2357C7D81D0213BECFECD341"},
+    {"path":"payload/Run-JbodAllWaferProcessor.ps1","sha256":"8EB83C05CA650C831D2DE8A6AB89ABD2941271B05B31FA93BCFFB553DEAAA892"},
+    {"path":"payload/Invoke-JbodAllWaferInventory.ps1","sha256":"BF0BAF295F3D1F3234C5C2A5DE184AFEA4BE446BB9593BE9E10BB0E8F932F50A"},
+    {"path":"payload/Invoke-JbodAllWaferProcessingPass.ps1","sha256":"8050EEB71923DC69EBD0A81F6C95840A7BD6215998E8546F9170C5A051B936EB"},
+    {"path":"payload/Update-JbodDashboardManifest.ps1","sha256":"F73AC7C38139098B079A23CC9C7653A93D7464BE1D4376708B25B3346B704E5D"},
+    {"path":"payload/Show-JbodAllWaferTray.ps1","sha256":"C03812C6889B102DFD9B3CB466E70B06B8943C1123A882EB0ADE972C641DAB2B"}
+  ],
+  "predecessorCasesExercised": 5,
+  "targetIdempotenceAccepted": true,
+  "mixedInstallRefused": true,
+  "unapprovedHashRefused": true,
+  "quotedScalarPathPassed": true,
+  "frozenPayloadChangedByGate": false,
+  "liveStateContactedByGate": false,
+  "trialPackage": false,
+  "maximumRequestsAuthorized": 1,
+  "retryOnFailure": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
+

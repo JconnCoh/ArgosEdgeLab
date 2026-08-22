@@ -1,0 +1,50 @@
+{
+  "schema": "argos_all_valid_inspections_fix_and_acceptance_checklist_v1",
+  "createdUtc": "2026-08-21T23:55:00Z",
+  "state": "PENDING_GATE",
+  "regressionCohort": {
+    "lot": "62631-586",
+    "scan": "20260819173317",
+    "domain": "FRONTSIDE",
+    "expectedUniqueIdentities": 10,
+    "isProductBoundary": false
+  },
+  "requiredFixes": [
+    "REMOVE_UNSUPPORTED_RUNNER_INVENTORY_METADATA_SNAPSHOT_ARGUMENT",
+    "ALIGN_INVENTORY_PROCESSING_DASHBOARD_TO_EXACT_THREE_PRODUCER_APPROVED_IDENTITY_STATES",
+    "ANCHOR_TRAY_ACTIVITY_KEY_ON_CAPTURED_FORM_OBJECT",
+    "FORBID_HISTORICAL_CURRENT_REUSE_WITHOUT_EXACT_SOURCE_BYTE_HASH_EQUALITY",
+    "PRESERVE_IMAGE_PROCESSING_AND_VIEWER_ALGORITHMS_ABSENT_NEW_DIRECT_DEFECT_EVIDENCE"
+  ],
+  "acceptance": {
+    "processorTaskRunning": true,
+    "trayTaskRunning": true,
+    "freshProcessorHeartbeatRequired": true,
+    "freshTrayProcessEvidenceRequired": true,
+    "trayCallbackExceptionsExpected": 0,
+    "allEligibleFrontRowsRequireExplicitDisposition": true,
+    "currentCompletedFrontLedgerRowsMissingFromDashboardExpected": 0,
+    "dashboardDuplicateIdentityGroupsExpected": 0,
+    "ledgerJobKeyMustMatchCurrentAcquisitionFingerprint": true,
+    "targetTenCompletedLedgerExpected": 10,
+    "targetTenDashboardExpected": 10,
+    "targetTenUniqueLedgerExpected": 10,
+    "targetTenUniqueDashboardExpected": 10,
+    "historicalIdentitySubstitutionAllowed": false,
+    "signedTerminalPassRequired": true,
+    "directPostActionReadOnlyAuditRequired": true
+  },
+  "unchangedBoundaries": {
+    "reviewOnly": true,
+    "globalFs15Hold": true,
+    "xmlExportEnabled": false,
+    "trainingEligible": false,
+    "productionRoutingEnabled": false,
+    "sourceDeletionAllowed": false,
+    "waferAbortAllowed": false,
+    "imageOrBinaryBytesInSessionAllowed": false
+  },
+  "stopOnNewSystemicPremiseFailure": true,
+  "trialPackageIterationAllowed": false
+}
+
