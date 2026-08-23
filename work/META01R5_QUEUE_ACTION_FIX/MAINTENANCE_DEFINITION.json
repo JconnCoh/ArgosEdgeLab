@@ -1,0 +1,15 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Apply-META01R5QueueActionFix.ps1",
+  "changes": [{
+    "source": "payload/Update-JbodScribeIdentityQueue.ps1",
+    "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Update-JbodScribeIdentityQueue.ps1",
+    "approvedPredecessorSha256": ["F7505FD013D2B908E2E38F9205E9D767E6A30E7DE42724C94B657BA358822418", "6185D960F32088120E304BE49D5BF99C525B07EE60F5D68017A40A93F68EC6A9"],
+    "installedSha256": "6185D960F32088120E304BE49D5BF99C525B07EE60F5D68017A40A93F68EC6A9",
+    "allowCreate": false
+  }],
+  "allowedTaskActions": [],
+  "rehearsal": {"requiredState": "PASS_META01R5_QUEUE_ACTION_FIX"}
+}

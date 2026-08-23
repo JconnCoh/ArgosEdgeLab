@@ -1,0 +1,119 @@
+{
+  "schema": "argos_fiducial_opencv_integration_boundary_v2",
+  "revision": "FIDCV1_OPENCV_REGISTRATION_PIPELINE_BOUNDARY_20260822",
+  "state": "LOCKED_INPUT",
+  "supersedes": {
+    "path": "work/FIDUCIAL_OPENCV_JBOD_INSTALL_FOI1/INTEGRATION_BOUNDARY.json",
+    "sha256": "397B49CC7B0F94F326ABD42C04B699BF1B56149D50895A11E43FC9C71E44FF93",
+    "reason": "The operator clarified that qualified fiducial registration is the mandatory upstream dependency for patterned-wafer composite construction and inspected-wafer comparison."
+  },
+  "purpose": "Keep the OpenCV fiducial and registration capability directly integrable as the fail-closed upstream coordinate-system provider for patterned-wafer composite construction and inspection, without embedding test-lot or temporary development restrictions into the future JBOD processor call path.",
+  "foi1Scope": {
+    "classification": "REVIEW_ONLY_RUNTIME_INSTALL",
+    "installedRuntimeRoot": "D:\\AFCV1",
+    "runtimeRootIsStoragePlacementNotProcessorContract": true,
+    "inspectionProcessorIntegrationChanged": false,
+    "inspectionTasksChanged": false,
+    "inspectionProcessesChanged": false,
+    "productionRoutingEnabled": false,
+    "bundledDiagnosticV1IsActivationEntrypoint": false
+  },
+  "requiredPipelineOrder": [
+    "QUALIFIED_FIDUCIAL_MODEL_AND_APPEARANCE_REGIME",
+    "SITE_BOUND_FIDUCIAL_LOCALIZATION_ON_REFERENCE_INPUTS",
+    "QUALIFIED_REFERENCE_TO_COMPOSITE_COORDINATE_TRANSFORMS",
+    "COMPOSITE_CONSTRUCTION_WITH_EXACT_SOURCE_AND_TRANSFORM_PROVENANCE",
+    "SITE_BOUND_FIDUCIAL_LOCALIZATION_ON_INSPECTED_WAFER",
+    "QUALIFIED_INSPECTED_WAFER_TO_COMPOSITE_COORDINATE_TRANSFORM",
+    "REGISTERED_INSPECTED_WAFER_COMPARISON_TO_COMPOSITE",
+    "PATTERNED_WAFER_INSPECTION_RESULT"
+  ],
+  "requiredFutureBoundary": {
+    "runtimeRootFromInstalledConfiguration": true,
+    "engineEntrypointFromInstalledConfiguration": true,
+    "bfPathFromJob": true,
+    "dfPathFromJob": true,
+    "mapPoseAndDesignatedSiteFromJob": true,
+    "appearanceRegimeFromFrozenConfiguration": true,
+    "referenceAndCompositeCoordinateFramesFromJob": true,
+    "outputRootFromJob": true,
+    "combinationAndLotEligibilityFromAuthorityProfile": true,
+    "algorithmReturnsMeasurementTransformAndHoldStatesWithoutGrantingProductionAuthority": true,
+    "processorAdapterOwnsAuthorityAndFeatureSelection": true,
+    "stableVersionedLocalizationJobAndResultSchemasRequired": true,
+    "stableVersionedRegistrationArtifactSchemaRequired": true,
+    "stableVersionedCompositeManifestSchemaRequired": true,
+    "machineReadableExitStateRequired": true,
+    "currentProcessorPathRemainsUnchangedWhenFeatureDisabled": true,
+    "missingAmbiguousOrUnqualifiedFiducialProducesExplicitHold": true,
+    "unqualifiedRegistrationPreventsCompositeConstruction": true,
+    "unqualifiedInspectedWaferRegistrationPreventsPatternedWaferComparison": true
+  },
+  "registrationArtifactContract": {
+    "role": "PROCESSOR_CONSUMABLE_COORDINATE_TRANSFORM_EVIDENCE",
+    "requiredBindings": [
+      "JOB_SCHEMA_AND_JOB_HASH",
+      "FIDUCIAL_MODEL_REVISION_AND_HASH",
+      "APPEARANCE_REGIME_REVISION_AND_HASH",
+      "OPERATOR_DESIGNATED_SITE_AND_MAP_RELATIONSHIP",
+      "QUALIFIED_NOTCH_POSE_AND_CROP_TRANSFORM",
+      "EXACT_BF_DF_SOURCE_HASHES",
+      "SOURCE_AND_TARGET_COORDINATE_FRAME_IDENTIFIERS",
+      "TRANSFORM_TYPE_AND_NUMERIC_PARAMETERS",
+      "ELIGIBILITY_RADIUS_AND_REFINED_CANDIDATE_COUNT",
+      "RESIDUAL_AND_LOCALIZATION_ERROR_POPULATIONS",
+      "MACHINE_READABLE_PASS_OR_HOLD_STATE"
+    ],
+    "successRequirement": "Exactly one eligible refined site-bound candidate and a transform that passes frozen calibration and independent validation thresholds.",
+    "consumerRule": "Composite construction and inspected-wafer comparison consume only an exact qualified registration artifact whose hashes and coordinate frames match their own inputs.",
+    "authorityRule": "A geometric or registration pass supplies coordinate evidence only; the installed authority profile separately controls whether any downstream inspection route is eligible."
+  },
+  "compositeContract": {
+    "constructionRequiresQualifiedReferenceTransforms": true,
+    "manifestPinsEverySourceHashAndRegistrationArtifactHash": true,
+    "coordinateFrameIsExplicitAndVersioned": true,
+    "noFilenameDimensionOrIdentityOnlyProvenance": true,
+    "noUnregisteredReferenceImageContribution": true,
+    "inspectedWaferMustBeRegisteredToExactCompositeRevision": true
+  },
+  "prohibitedIntegrationPatterns": [
+    "HARDCODED_TEST_LOT_PATH",
+    "HARDCODED_SOURCE_OR_OUTPUT_ROOT_IN_PROCESSOR",
+    "HARDCODED_COMBINATION_ALLOW_OR_DENY_LIST_IN_GEOMETRY_ENGINE",
+    "HARDCODED_REVIEW_ONLY_BOOLEAN_IN_GEOMETRY_ENGINE",
+    "HARDCODED_PRODUCTION_ENABLE_BOOLEAN_IN_GEOMETRY_ENGINE",
+    "PROCESSOR_SOURCE_EDIT_REQUIRED_TO_SELECT_QUALIFIED_PROVIDER",
+    "PRODUCTION_AUTHORITY_INFERRED_FROM_GEOMETRY_OR_REGISTRATION_PASS",
+    "SILENT_FALLBACK_WHEN_REQUIRED_FIDUCIAL_CAPABILITY_IS_MISSING",
+    "COMPOSITE_BUILD_WITHOUT_EXACT_QUALIFIED_REFERENCE_TRANSFORMS",
+    "PATTERNED_WAFER_COMPARISON_WITHOUT_EXACT_INSPECTED_WAFER_TO_COMPOSITE_TRANSFORM",
+    "DOWNSTREAM_INSPECTION_RESULT_USED_AS_FIDUCIAL_OR_REGISTRATION_EVIDENCE"
+  ],
+  "activationGateRequirements": [
+    "CONFIGURATION_DRIVEN_PROVIDER_SELECTION_TEST",
+    "UNCHANGED_DISABLED_PATH_REGRESSION_TEST",
+    "EXACT_LOCALIZATION_JOB_AND_RESULT_SCHEMA_CONTRACT_TEST",
+    "EXACT_REGISTRATION_ARTIFACT_SCHEMA_CONTRACT_TEST",
+    "EXACT_COMPOSITE_MANIFEST_SCHEMA_CONTRACT_TEST",
+    "REFERENCE_TO_COMPOSITE_TRANSFORM_CONSUMER_TEST",
+    "INSPECTED_WAFER_TO_COMPOSITE_TRANSFORM_CONSUMER_TEST",
+    "NON_FS15_TEST_LOT_TRANSFER_PASS",
+    "SITE_BOUND_PAIRED_BF_DF_INDEPENDENT_VALIDATION_PASS",
+    "FAIL_CLOSED_MISSING_RUNTIME_TEST",
+    "FAIL_CLOSED_UNQUALIFIED_APPEARANCE_REGIME_TEST",
+    "FAIL_CLOSED_ZERO_OR_MULTIPLE_ELIGIBLE_CANDIDATES_TEST",
+    "FAIL_CLOSED_MISSING_OR_MISMATCHED_REGISTRATION_ARTIFACT_TEST",
+    "FAIL_CLOSED_COMPOSITE_REVISION_MISMATCH_TEST",
+    "NO_INSPECTION_TASK_RESTART_DURING_REVIEW_ONLY_DEVELOPMENT"
+  ],
+  "currentAuthority": {
+    "fs15State": "PENDING_GATE_UNCHANGED",
+    "testLotOnly": true,
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "compositeConstructionAuthorized": false,
+    "patternedWaferInspectionAuthorized": false
+  }
+}

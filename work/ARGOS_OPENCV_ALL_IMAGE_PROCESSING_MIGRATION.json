@@ -1,0 +1,234 @@
+{
+  "schema": "argos_opencv_all_image_processing_migration_v1",
+  "revision": "OPENCV_ALL_IMAGE_PROCESSING_MIGRATION_V1_20260822",
+  "createdUtc": "2026-08-23T00:38:00Z",
+  "state": "READY_FOR_FRESH_CHAT_EXECUTION",
+  "disposition": "PENDING_GATE",
+  "authority": {
+    "repository": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab",
+    "branch": "codex/fiducial-opencv-d-drive",
+    "startingCommit": "bb09223748c446f0b9e38656d80ca996049a3e55",
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  },
+  "objective": "Move every image-decoding and pixel-processing operation from PowerShell or ad-hoc managed implementations into configuration-selected OpenCV providers while preserving the accepted inspection semantics and leaving PowerShell responsible only for orchestration, file/manifest operations, queues, and provider invocation.",
+  "opencvOwns": [
+    "IMAGE_DECODE_AND_NATIVE_PIXEL_ACCESS",
+    "CROP_RESIZE_RESAMPLE_AND_COLORSPACE_CONVERSION",
+    "DENOISE_FILTER_NORMALIZE_AND_BACKGROUND_CORRECTION",
+    "EDGE_LINE_CIRCLE_AND_PERIMETER_MEASUREMENT",
+    "MORPHOLOGY_SEGMENTATION_CONNECTED_COMPONENTS_AND_HOUGH",
+    "SCRIBE_ROI_RECTIFICATION_GLYPH_SEGMENTATION_AND_OCR",
+    "NOTCH_CANDIDATE_MEASUREMENT_AND_PHYSICAL_COMPETITOR_ANALYSIS",
+    "FIDUCIAL_LOCALIZATION_AND_GEOMETRIC_TRANSFORM_ESTIMATION",
+    "REFERENCE_COMPOSITING_AND_INSPECTED_WAFER_REGISTRATION",
+    "DEFECT_FEATURE_EXTRACTION_CLASSIFICATION_AND_PIXEL_MASKS",
+    "HEATMAP_OVERLAY_CROP_AND_REVIEW_RASTER_RENDERING"
+  ],
+  "powershellMayOwn": [
+    "WATCHERS_SCHEDULING_AND_PROCESS_ORCHESTRATION",
+    "CONFIGURATION_AND_VERSIONED_JOB_MANIFEST_VALIDATION",
+    "EXACT_FILE_DISCOVERY_COPY_RENAME_HASH_AND_RETENTION",
+    "OPENCV_PROVIDER_INVOCATION_TIMEOUT_AND_EXIT_STATE_COLLECTION",
+    "QUEUE_LEDGER_DASHBOARD_AND_GUI_DATA_FLOW",
+    "PROJECT_PORTAL_TRANSPORT_AND_SIGNED_EVIDENCE_COLLECTION"
+  ],
+  "powershellMustNotOwn": [
+    "IMAGE_BYTE_DECODING",
+    "PIXEL_LOOPS_OR_PIXEL_CLASSIFICATION",
+    "IMAGE_CROPPING_RESIZING_FILTERING_OR_COMPOSITING",
+    "OCR_OR_GLYPH_SCORING",
+    "GEOMETRY_FITTING_OR_REGISTRATION",
+    "DEFECT_MASK_OR_HEATMAP_GENERATION"
+  ],
+  "startingEvidence": {
+    "withdrawnNativeNotchCheckpoint": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/FS15_NATIVE_V3_TERMINAL_HOLD_CHECKPOINT_20260820.md",
+    "withdrawnNativeNotchReusable": false,
+    "opencvPrototype": "work/PATTERNED_FIDUCIAL_INVENTORY/tools/NativeFrontsideWaferPoseOpenCvV1.py",
+    "opencvPrototypeState": "SYNTHETIC_PASS_DIAGNOSTIC_ONLY",
+    "jbodRuntimeRoot": "D:/AFCV1/rt",
+    "jbodRuntimeState": "PASS_OPENCV_NATIVE_POSE_RUNTIME_PREFLIGHT",
+    "fiducialPauseCheckpoint": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/FIDCV1_OPERATOR_PAUSE_FOR_GUI_CHECKPOINT_20260822.md",
+    "currentBlocker": "HOLD_EXACT_SOURCE_PATH_UNRESOLVED_ENDPOINT_CAPABILITY_AUTHORITY_REQUIRED",
+    "realOpenCvPixelScoringPerformed": false,
+    "inspectionProcessorIntegrationChanged": false
+  },
+  "nonNegotiableSemantics": [
+    "FREEZE_WHAT_CURRENTLY_WORKS_AS_FAMILY_SPECIFIC_REGRESSION_BASELINES",
+    "NO_BIG_BANG_PROCESSOR_REWRITE_OR_UNBOUNDED_LIVE_REPLACEMENT",
+    "BF_AND_DF_LOCALIZATION_REMAIN_INDEPENDENT_AND_TRANSFORMS_ARE_NEVER_AVERAGED",
+    "APPEARANCE_ONLY_NOTCH_COMPETITORS_CANNOT_ESTABLISH_PHYSICAL_POSE",
+    "BF_DF_SUPPORTED_PHYSICAL_INDENTATIONS_REMAIN_ELIGIBLE_COMPETITORS",
+    "SCRIBE_DECIPHERING_NEVER_GUESSES_LOW_CONFIDENCE_IDENTITY",
+    "RECIPROCAL_NOTCH_RELATIVE_SCRIBE_SUPPORT_REMAINS_AN_ALIGNMENT_GATE",
+    "FIDUCIAL_VALIDATION_IS_OPERATOR_DESIGNATED_SITE_BOUND",
+    "EXACTLY_ONE_ELIGIBLE_REFINED_FIDUCIAL_CANDIDATE_IS_REQUIRED",
+    "COMPOSITE_CONSTRUCTION_REQUIRES_QUALIFIED_REFERENCE_TRANSFORMS",
+    "INSPECTED_PATTERNED_WAFER_COMPARISON_REQUIRES_REGISTRATION_TO_THE_EXACT_COMPOSITE_REVISION",
+    "BOWCOMP_RG_AVERAGE_AND_BLUE_NITRIDE_NUISANCE_SEMANTICS_REMAIN_ISOLATED_FROM_BARE",
+    "SCRATCH_PRESENCE_CONFIDENCE_REMAINS_SEPARATE_FROM_SUBCLASS_CONFIDENCE",
+    "DISABLED_PROVIDER_PATH_MUST_REMAIN_BEHAVIORALLY_UNCHANGED",
+    "ALL_RESOURCE_INTENSIVE_RUNTIME_CACHE_AND_OUTPUT_ACTIVITY_USES_JBOD_D_DRIVE",
+    "NO_HARDCODED_LOT_PRODUCT_TEST_ROOT_FS15_OR_PRODUCTION_AUTHORITY_SWITCH"
+  ],
+  "workPackages": [
+    {
+      "id": "OCV-00",
+      "name": "Exact image-processing inventory and source-path authority",
+      "state": "FIRST",
+      "deliverables": [
+        "Inventory every installed PowerShell C# and helper operation that reads image bytes or creates image-derived measurements rasters masks crops or composites",
+        "Resolve and freeze the exact PFC003 and PFC010 paired BF/DF development leaves and byte hashes through a qualified metadata-only route",
+        "Map each existing family output schema threshold semantic and accepted regression cohort before replacement"
+      ]
+    },
+    {
+      "id": "OCV-01",
+      "name": "Configuration-selected OpenCV provider platform",
+      "state": "PENDING_OCV_00",
+      "deliverables": [
+        "Versioned job result transform composite mask and review-raster schemas",
+        "Runtime and engine paths from installed configuration rather than hard-coded D roots",
+        "D-drive work cache and output roots with bounded cleanup and provenance",
+        "Unchanged disabled-path regression and fail-closed missing-runtime behavior"
+      ]
+    },
+    {
+      "id": "OCV-02",
+      "name": "Scribe deciphering and reciprocal identity support",
+      "state": "PENDING_OCV_01",
+      "deliverables": [
+        "OpenCV scribe-region localization from qualified wafer pose",
+        "BF and DF channel-local enhancement rectification glyph segmentation and OCR candidate generation",
+        "Canonical lot slot and checksum scoring without silently coercing ambiguous characters",
+        "Confidence-calibrated automatic confirmation plus explicit operator-review holds",
+        "Reciprocal notch-relative scribe orientation evidence for notch and pose ambiguity resolution",
+        "Regression over confirmed scribes noncanonical checksums weak scribes and known operator-review cases"
+      ]
+    },
+    {
+      "id": "OCV-03",
+      "name": "Wafer perimeter notch and global pose",
+      "state": "PENDING_OCV_01",
+      "deliverables": [
+        "Independent full-native BF and DF perimeter fitting",
+        "Robust exclusion of notch chipout pattern interruption and unsupported spans",
+        "Manufactured-notch morphology and physical-versus-appearance competitor handling",
+        "Reciprocal scribe support where notch morphology is interrupted",
+        "Explicit alignment holds for incomplete coverage channel disagreement or multiple plausible physical candidates",
+        "Fresh non-FS15 development and independent paired validation because withdrawn FS15 V3 is not tuning evidence"
+      ]
+    },
+    {
+      "id": "OCV-04",
+      "name": "Reusable fiducial localization and appearance regimes",
+      "state": "PENDING_OCV_02_OCV_03",
+      "deliverables": [
+        "Operator-designated topology and exact site binding",
+        "Automatic native channel-local calibration of sustained geometric lines",
+        "Per-product appearance-regime polarity response width edge-family and threshold bindings",
+        "Exactly one eligible refined candidate inside the frozen site radius",
+        "Frozen internal verification followed by separate no-tuning paired BF/DF validation"
+      ]
+    },
+    {
+      "id": "OCV-05",
+      "name": "Reference composite construction and inspected-wafer registration",
+      "state": "PENDING_OCV_04",
+      "deliverables": [
+        "Qualified reference-to-composite transforms with exact source and model hashes",
+        "Target-excluded reference composite with explicit coordinate frame and revision",
+        "Inspected-wafer localization and transform to the exact composite revision",
+        "Registration residual coverage and provenance gates before any patterned comparison"
+      ]
+    },
+    {
+      "id": "OCV-06",
+      "name": "Bare and unpatterned wafer inspection",
+      "state": "PENDING_OCV_01",
+      "deliverables": [
+        "OpenCV migration of current Bare front and backside pixel processing",
+        "Preserve accepted edge notch bevel microdamage scratch particle residue and coverage semantics",
+        "Preserve current family-specific thresholds and operator-approved reviewer evidence as frozen regression controls",
+        "No BowComp calibration truth or nuisance rules may leak into Bare"
+      ]
+    },
+    {
+      "id": "OCV-07",
+      "name": "Backside visual-regime processing",
+      "state": "PENDING_OCV_01",
+      "deliverables": [
+        "OpenCV visual-regime evidence for generic backside Bare and BowComp routing without replacing metadata authority",
+        "Migrate backside normalization geometry scratch particle residue edge and coverage operations",
+        "Fail closed when the appearance regime is missing ambiguous or unqualified"
+      ]
+    },
+    {
+      "id": "OCV-08",
+      "name": "BowComp inspection",
+      "state": "PENDING_OCV_01",
+      "deliverables": [
+        "OpenCV implementation of RG_AVERAGE detector evidence while preserving raw BF and DF",
+        "Preserve broad blue field recurring blue-band and rounded-edge nuisance semantics",
+        "Preserve tangential blue-transition rejection without broad sector masks",
+        "Preserve faint scratch sensitivity and V5.7 axis-only supported recovery",
+        "Keep defect-presence confidence separate from uncertain subclass confidence",
+        "Retain BowComp geometry hold until independently qualified"
+      ]
+    },
+    {
+      "id": "OCV-09",
+      "name": "Frontside patterned and unpatterned defect processing",
+      "state": "PENDING_OCV_05_FOR_PATTERNED",
+      "deliverables": [
+        "Migrate frontside dielectric front-metal resist scratch and other pixel processing to OpenCV",
+        "Use direct OpenCV family processing for unpatterned wafers after their own qualification",
+        "Require exact composite registration before patterned-wafer defect comparison",
+        "Preserve product process appearance-regime and review-only authority boundaries"
+      ]
+    },
+    {
+      "id": "OCV-10",
+      "name": "Review masks heatmaps crops and raster provenance",
+      "state": "PENDING_FAMILY_PROVIDER",
+      "deliverables": [
+        "Generate all image-derived review assets in OpenCV rather than PowerShell",
+        "Keep clean sources current detector heatmaps and imported operator feedback as separate provenance-bound layers",
+        "Preserve native coordinates masks coverage truth and color semantics"
+      ]
+    },
+    {
+      "id": "OCV-11",
+      "name": "Family-by-family shadow comparison and activation",
+      "state": "PENDING_EACH_FAMILY",
+      "deliverables": [
+        "Run OpenCV beside the frozen working implementation on bounded review-only cohorts",
+        "Compare exact identities transforms masks counts and reviewer-visible outputs without using fake success fixtures as live evidence",
+        "Activate one qualified family provider at a time through configuration",
+        "Prove rollback disabled-path behavior resource limits and D-drive performance before the next family",
+        "Never restart or modify the healthy processor merely to accumulate validation"
+      ]
+    }
+  ],
+  "requiredOrder": [
+    "OCV-00",
+    "OCV-01",
+    "OCV-02_AND_OCV-03",
+    "OCV-04",
+    "OCV-05",
+    "OCV-06_OCV-07_OCV-08_OCV-09_AS_SEPARATELY_FROZEN_FAMILY_MIGRATIONS",
+    "OCV-10_PER_FAMILY",
+    "OCV-11_PER_FAMILY"
+  ],
+  "firstFreshChatAction": "Read and verify the migration checkpoint and frozen fiducial pause, then perform OCV-00 as a read-only exact inventory. Do not begin pixel conversion or contact the JBOD until the inventory and exact-source authority are complete.",
+  "invariants": {
+    "healthyProcessorRestartAuthorized": false,
+    "liveImageProcessingReplacementAuthorized": false,
+    "realImagePixelReadAuthorizedByThisCheckpoint": false,
+    "xmlEligible": false,
+    "trainingEligible": false,
+    "productionEligible": false,
+    "sourceDeletionAllowed": false,
+    "waferAbortAllowed": false
+  }
+}

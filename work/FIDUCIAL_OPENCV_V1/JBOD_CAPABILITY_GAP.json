@@ -1,0 +1,73 @@
+{
+  "schema": "argos_fiducial_opencv_jbod_capability_gap_v1",
+  "revision": "FIDCV1_JBOD_D_DRIVE_PREFLIGHT_CAPABILITY_GAP",
+  "createdUtc": "2026-08-22T01:46:00Z",
+  "state": "HOLD_JBOD_READ_ONLY_CAPABILITY_GAP",
+  "disposition": "PENDING_GATE",
+  "purpose": "Establish whether the isolated portable OpenCV runtime and review-only fiducial work root can be safely placed on the JBOD D: drive without touching the healthy inspection processor.",
+  "plannedRoots": {
+    "workRoot": "D:/AFCV1",
+    "runtimeRoot": "D:/AFCV1/rt",
+    "outputRoot": "D:/AFCV1/out"
+  },
+  "portableRuntime": {
+    "bundlePath": "work/FIDUCIAL_OPENCV_V1/portable/FIDCV1_PORTABLE_OPENCV_RUNTIME.zip",
+    "bundleSha256": "467B210E941725724AE7F6F90CF5F7C162A51BD2E9018A7A0A768CA7AEE777D8",
+    "bundleBytes": 67277595,
+    "expandedFileCount": 1034,
+    "expandedBytes": 180627977,
+    "expandedTreeSha256": "104CCE5D12FD7BED0CBB3DBD7CAFCDC663FEEDB404786F32A7AF28E5B4975FD7",
+    "pythonVersion": "3.13.2",
+    "pythonArchitectureBits": 64,
+    "opencvVersion": "5.0.0",
+    "numpyVersion": "2.5.2",
+    "localRehearsalPassed": true
+  },
+  "pinnedRouteEvidence": {
+    "installedEndpointConfigPath": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+    "installedEndpointConfigSha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "routeCapabilityInventoryPath": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json",
+    "routeCapabilityInventorySha256": "12BFF65114DFB1C20B8B4271CD592D80857CFE446595CB9F303868288F62F65E",
+    "qualifiedStatusCanSupplyRequiredFacts": false,
+    "qualifiedDataPullCanSupplyRequiredFacts": false,
+    "qualifiedDirectAdminRouteFound": false
+  },
+  "requiredPreinstallationFacts": [
+    "CURRENT_D_DRIVE_FREE_BYTES",
+    "D_AFCV1_ROOT_ABSENT_OR_EXACT_RESUMABLE_MATCH",
+    "JBOD_OS_AND_PROCESS_ARCHITECTURE",
+    "EXISTING_PYTHON_AND_OPENCV_RUNTIME_INVENTORY",
+    "EXPANSION_CAPACITY_WITH_BOUNDED_OUTPUT_AND_TEMPORARY_SUFFIX_RESERVE"
+  ],
+  "missingFacts": [
+    "CURRENT_D_DRIVE_FREE_BYTES",
+    "D_AFCV1_ROOT_STATE",
+    "JBOD_OS_AND_PROCESS_ARCHITECTURE",
+    "EXISTING_PYTHON_AND_OPENCV_RUNTIME_INVENTORY"
+  ],
+  "pathPlanningEvidence": {
+    "maximumObservedPlannedEffectiveLength": 175,
+    "hardStopThreshold": 230,
+    "warningThreshold": 200,
+    "allPlannedLeavesBelowWarningThreshold": true
+  },
+  "permittedContinuation": "ONE_EXPLICITLY_AUTHORIZED_BOUNDED_READ_ONLY_ENDPOINT_CAPABILITY_IMPROVEMENT_OR_ONE_REHEARSED_OPERATOR_LOCAL_READ_ONLY_PREFLIGHT",
+  "prohibitedContinuation": [
+    "MAINTENANCE_PATCH_AS_OBSERVATION",
+    "PORTABLE_RUNTIME_PUBLICATION_BEFORE_EXACT_D_CAPACITY_AND_ROOT_STATE",
+    "HEALTHY_PROCESSOR_OR_TASK_RESTART",
+    "FS15_TUNING",
+    "R10_OR_AVS1_REPLAY_OR_SUCCESSOR_PARENT_USE"
+  ],
+  "endpointContacted": false,
+  "jbodInstalled": false,
+  "jbodExecutionPerformed": false,
+  "healthyProcessorTouched": false,
+  "imageBytesRead": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "sourceDeletionPerformed": false,
+  "waferActionPerformed": false
+}

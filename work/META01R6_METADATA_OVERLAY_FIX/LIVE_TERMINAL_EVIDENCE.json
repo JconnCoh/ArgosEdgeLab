@@ -1,0 +1,55 @@
+{
+  "schema": "argos_meta01r6_live_terminal_evidence_v1",
+  "createdUtc": "2026-08-23T00:26:00Z",
+  "state": "PASS_META01R6_LIVE_METADATA_OVERLAY_CONSUMER_FIX",
+  "maintenance": {
+    "requestId": "REQ_20260823T002019647Z_07515D4B31F0",
+    "responseId": "R_F6C90BFF0572_20260823002114236_9c13bb1b",
+    "responseState": "PASS_MAINTENANCE_PATCH",
+    "responseZipSha256": "40A72231CA7F06AF3822B1242962EE302D529F6DE3B1A799509F03627F17F12D",
+    "signatureVerified": true,
+    "changedFiles": 2,
+    "exitCode": 0,
+    "taskActions": 0,
+    "processActions": 0,
+    "processorRestarted": false
+  },
+  "readback": {
+    "requestId": "REQ_20260823T002413638Z_36C673670154",
+    "responseId": "R_30120B503CC4_20260823002345978_672684d7",
+    "responseState": "PASS_DATA_PULL",
+    "responseZipSha256": "7240B156A379DF58209C8ACBE4608F1607CEC845FBBD1C817C7BC45976CA1866",
+    "signatureVerified": true,
+    "inventorySha256": "228D9EDD0EFF45E58682659DC6C807FB04F63DD55E48C7F70426BF272C08FA7C",
+    "runnerSha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+    "configSha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8",
+    "metadataSnapshotRoot": "D:/A2/m/verified",
+    "catalogSha256": "1910B4693DECF1F93BC0F513E229C24118250FB709C4F30337FFD9EC023CD8FB",
+    "queueSha256": "E651776B5595476DB3380DB0386532BC4A7A03D280201A052D4F02BEEF61E843",
+    "statusSha256": "FAAA67C9BB6826BC3B9193B137C702363F43BCFED4D4D07ADD1B643A56FDAB7D"
+  },
+  "liveCounts": {
+    "catalogAcquisitions": 1844,
+    "catalogStable": 1844,
+    "catalogWaiting": 0,
+    "routeReadyBefore": 313,
+    "routeReadyAfter": 526,
+    "routeReadyIncrease": 213,
+    "queueTotal": 922,
+    "queueConfirmed": 745,
+    "queueInsiteLookupPending": 0,
+    "queueProposalReady": 4,
+    "queueHeld": 37
+  },
+  "cause": "Installed inventory bound metadata overlay to stateRoot/C: while verified metadata and exporter authority were configured on D:/A2/m/verified.",
+  "repair": "Inventory now resolves PROCESSOR_CONFIG.metadataSnapshotRoot when the resident runner omits the argument; the runner also explicitly forwards the same configured root on future starts.",
+  "scope": {
+    "reviewOnly": true,
+    "productionRoutingEnabled": false,
+    "xmlGenerated": false,
+    "imageBytesRead": false,
+    "sourceDeleted": false,
+    "waferAborted": false,
+    "fiducialChanged": false
+  }
+}

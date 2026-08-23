@@ -1,0 +1,57 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-22T17:02:15Z",
+  "incidentId": "FIDCV1_FSF3_SOURCE_PATH_MISSING_POSTFAIL_OBSERVATION",
+  "state": "PASS_FIDCV1_POST_FAILURE_CAPABILITY_GAP_OBSERVED",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": true,
+  "mutationsPerformed": false,
+  "sources": [
+    {
+      "path": "work/FIDUCIAL_OPENCV_POSTFAIL_OBSERVATION_FSO1/FSO1_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "EDEF1E00933FD96094679DB96169A6F42E553038B025EE7DCD96966F9B4D76D7",
+      "observed": "signature-verified post-failure PASS_STATUS_COLLECTED response; the healthy processor remained Running and its installed configuration still names D:/KLARFExport"
+    },
+    {
+      "path": "C:/ASO1/R_736E657E8CCC_20260822165423207_9db7c7bc.ready/RESULT.json",
+      "sha256": "08778A07B60052F1CE194110D189009F5027D417B1F838A1726CA44051B3E2D5",
+      "observed": "exact signed STATUS payload contains the legacy field set and no environmentInventory property"
+    },
+    {
+      "path": "work/FIDUCIAL_OPENCV_SOURCE_FINGERPRINT_FSF3/FSF3_SIGNED_FAILURE_GATE.json",
+      "sha256": "15B0F42987342283BDADAE66411B7DAA9ECD4868B14F7281E0A0DD1985B2A8E8",
+      "observed": "the exact requested paired source path was missing through the verified process-local alias"
+    }
+  ],
+  "expectedObserved": [
+    {"field":"inventory.volume.totalBytes","expected":"current D volume total bytes","observed":"UNAVAILABLE_RUNNING_STATUS_WORKER_FIELD_ABSENT"},
+    {"field":"inventory.volume.availableFreeBytes","expected":"current D volume available bytes","observed":"UNAVAILABLE_RUNNING_STATUS_WORKER_FIELD_ABSENT"},
+    {"field":"inventory.children[name=KLARFExport].exists","expected":"exact top-level child existence","observed":"UNAVAILABLE_RUNNING_STATUS_WORKER_FIELD_ABSENT"},
+    {"field":"inventory.children[name=KLARFExport].pathType","expected":"exact top-level child path type","observed":"UNAVAILABLE_RUNNING_STATUS_WORKER_FIELD_ABSENT"},
+    {"field":"inventory.children[name=KLARFExport].reparsePoint","expected":"exact top-level child reparse state","observed":"UNAVAILABLE_RUNNING_STATUS_WORKER_FIELD_ABSENT"},
+    {"field":"inventory.children[name=AFCV1].exists","expected":"exact top-level child existence","observed":"UNAVAILABLE_RUNNING_STATUS_WORKER_FIELD_ABSENT"},
+    {"field":"inventory.children[name=AFCV1].pathType","expected":"exact top-level child path type","observed":"UNAVAILABLE_RUNNING_STATUS_WORKER_FIELD_ABSENT"},
+    {"field":"inventory.children[name=AFCV1].reparsePoint","expected":"exact top-level child reparse state","observed":"UNAVAILABLE_RUNNING_STATUS_WORKER_FIELD_ABSENT"},
+    {"field":"inventory.pathsEnumerated","expected":"false","observed":"UNAVAILABLE_RUNNING_STATUS_WORKER_FIELD_ABSENT"},
+    {"field":"inventory.filesRead","expected":"false","observed":"UNAVAILABLE_RUNNING_STATUS_WORKER_FIELD_ABSENT"},
+    {"field":"inventory.imageBytesRead","expected":"false","observed":"UNAVAILABLE_RUNNING_STATUS_WORKER_FIELD_ABSENT"},
+    {"field":"inventory.mutationsPerformed","expected":"false","observed":"UNAVAILABLE_RUNNING_STATUS_WORKER_FIELD_ABSENT"},
+    {"field":"processor.taskState","expected":"Running and untouched","observed":"Running"},
+    {"field":"processor.config.rawSearchRoot","expected":"D:/KLARFExport","observed":"D:/KLARFExport"}
+  ],
+  "sourcePathExistenceResolved": false,
+  "nestedSourceDiscoveryResolved": false,
+  "supportedDecision": "D",
+  "decision": "REQUEST_ONE_BOUNDED_METADATA_ONLY_ENDPOINT_CAPABILITY_ACTIVATION_OR_EQUIVALENT_QUALIFIED_ROUTE",
+  "taskRestartAuthorized": false,
+  "processorRestartAuthorized": false,
+  "sourceFingerprintPassClaimed": false,
+  "sourceHashesAccepted": false,
+  "pixelScoringAllowed": false,
+  "compositeConstructionAllowed": false,
+  "patternedInspectionAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

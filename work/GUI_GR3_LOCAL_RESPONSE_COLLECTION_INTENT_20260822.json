@@ -1,0 +1,94 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-22T18:12:00Z",
+  "incidentId": "GUIR3_EXISTING_SIGNED_RESPONSE_LOCAL_COLLECTION_20260822",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 2,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/GUIR2/GUIR2_COLLECTOR_C1_WITHDRAWN_PREFLIGHT_FAILURE.json",
+        "sha256": "5EDD0EF0DDD336530DF2E326F40D5AEF73108D459A4FCA973EE43DD355B288FF",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      },
+      {
+        "path": "work/GUIR2/GUIR2_COLLECTOR_C2_WITHDRAWN_PREFLIGHT_FAILURE.json",
+        "sha256": "3FC0A5606EF5C95E817D2343DD075A83D84345AA95C11DF838A468D3C13C30CA",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/GUIR2_SIGNED_RESPONSE_AVAILABLE_COLLECTOR_STOP_CHECKPOINT_20260822.md",
+      "sha256": "3B20CBFDBD057E3090F5C715BB21F573A7E40E1B68221DC7B9103B2D1C81020F"
+    }
+  },
+  "route": {
+    "type": "DATA_PULL",
+    "jobClass": "DATA_PULL",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/pkg/payload/W.ps1",
+      "sha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json",
+      "sha256": "12BFF65114DFB1C20B8B4271CD592D80857CFE446595CB9F303868288F62F65E"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_EXACT_ENDPOINT_GATE.json",
+      "sha256": "BC97C8D81F439D239CBF59B41EC1F663F2039751AD506FE59B279C72B21A8F45"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "U:/ProjectPortalRO/responses/R_8F8FC98120E8_20260822175659802_990ddd4c.ready.zip",
+        "sourceSchema": "signed Project Portal DATA_PULL response",
+        "selector": "exact response ID, size, SHA-256, request ID, source role, signature, manifest files, DATA_PULL v2 result, and fourteen payload mappings",
+        "uniquenessKey": "responseId",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": ["approvedRootExactFiles"],
+    "requestedFields": [
+      "response.signatureAndManifest",
+      "dataPull.resultV2",
+      "dataPull.relativePathSet",
+      "dataPull.entryPathSet",
+      "local.exactExtractionHashes"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

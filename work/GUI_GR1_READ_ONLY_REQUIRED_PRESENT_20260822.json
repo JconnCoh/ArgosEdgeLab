@@ -1,0 +1,28 @@
+{
+  "schema": "argos_required_present_data_pull_sources_v1",
+  "createdUtc": "2026-08-22T17:40:55Z",
+  "state": "PASS_REQUIRED_PRESENT_CLASSIFICATION",
+  "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+  "sources": [
+    {"relativePath": "identity/SCRIBE_IDENTITY_QUEUE.json", "evidence": "signed post-AVC1 DATA_PULL returned the exact path"},
+    {"relativePath": "catalog/ALL_WAFER_CATALOG.json", "evidence": "signed post-AVC1 DATA_PULL returned the exact path"},
+    {"relativePath": "identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json", "evidence": "signed post-AVC1 DATA_PULL returned the exact path"},
+    {"relativePath": "metadata/verified/ACTIVE_VERIFIED_METADATA_OVERLAY.json", "evidence": "signed post-AVC1 DATA_PULL returned the exact path"},
+    {"relativePath": "processor/PROCESSING_LEDGER.json", "evidence": "signed post-AVC1 DATA_PULL returned the exact path"},
+    {"relativePath": "dashboard_manifest.json", "evidence": "signed post-AVC1 DATA_PULL returned the exact path"},
+    {"relativePath": "dashboard/DASHBOARD_CATALOG_STATUS.json", "evidence": "the exact installed updater writes this path on every successful refresh and the signed post-AVC1 manifest proves a successful refresh"},
+    {"relativePath": "processor/PROCESSOR_STATUS.json", "evidence": "signed post-AVC1 DATA_PULL returned the exact path"},
+    {"relativePath": "PROCESSOR_CONFIG.json", "evidence": "signed post-AVC1 DATA_PULL returned the exact path"},
+    {"relativePath": "Show-JbodAllWaferTray.ps1", "evidence": "signed post-AVC1 DATA_PULL returned the exact path"},
+    {"relativePath": "Open-JbodCompletedLot.ps1", "evidence": "signed post-AVC1 DATA_PULL returned the exact path and the operator exercised it"},
+    {"relativePath": "Update-JbodDashboardManifest.ps1", "evidence": "signed post-AVC1 DATA_PULL returned the exact path"},
+    {"relativePath": "Export-JbodPendingInsiteRequest.ps1", "evidence": "R4 required-present evidence and the installed tray exact call graph require this path"},
+    {"relativePath": "Import-JbodScribeVerificationResponse.ps1", "evidence": "the installed tray enables the operator-exercised import button only when this exact path exists"}
+  ],
+  "optionalSources": [],
+  "allOrNothingHandler": true,
+  "maximumRequests": 1,
+  "retryOnFailure": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

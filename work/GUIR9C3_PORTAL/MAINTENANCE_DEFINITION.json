@@ -1,0 +1,56 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Apply-GUIR9C3DirectGuiPatch.ps1",
+  "changes": [
+    {
+      "source": "payload/Show-JbodAllWaferTray.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Show-JbodAllWaferTray.ps1",
+      "approvedPredecessorSha256": [
+        "C03812C6889B102DFD9B3CB466E70B06B8943C1123A882EB0ADE972C641DAB2B",
+        "CF8C229A9F0EC5C26D88F800849DF96C9EC6AAA3039FE81F01971E477F4A3828"
+      ],
+      "installedSha256": "CF8C229A9F0EC5C26D88F800849DF96C9EC6AAA3039FE81F01971E477F4A3828",
+      "allowCreate": false
+    },
+    {
+      "source": "payload/ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe",
+      "approvedPredecessorSha256": [
+        "39AEA256E4C08043A6F9AEFEADB32F4297217E878C8B71A4603D64FA570677A6",
+        "FD2ABADC0494C0FABA81452B18FB7D860AF7B4F32CA086018D0907E2885B1225"
+      ],
+      "installedSha256": "FD2ABADC0494C0FABA81452B18FB7D860AF7B4F32CA086018D0907E2885B1225",
+      "allowCreate": false
+    },
+    {
+      "source": "payload/ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\runtime\\viewer\\ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe",
+      "approvedPredecessorSha256": [
+        "39AEA256E4C08043A6F9AEFEADB32F4297217E878C8B71A4603D64FA570677A6",
+        "FD2ABADC0494C0FABA81452B18FB7D860AF7B4F32CA086018D0907E2885B1225"
+      ],
+      "installedSha256": "FD2ABADC0494C0FABA81452B18FB7D860AF7B4F32CA086018D0907E2885B1225",
+      "allowCreate": false
+    },
+    {
+      "source": "payload/Program.cs",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\runtime\\viewer\\Program.cs",
+      "approvedPredecessorSha256": [
+        "20A2442FAC73ABDDE95C8876C6A21A2988E63AFBB119F969F7979F7096C7D545",
+        "CA69813161A862FF1623AE1989D18F8E6B1394901B2C1BAC279F97307AA07B2C"
+      ],
+      "installedSha256": "CA69813161A862FF1623AE1989D18F8E6B1394901B2C1BAC279F97307AA07B2C",
+      "allowCreate": false
+    }
+  ],
+  "allowedTaskActions": [
+    "STOP_IF_RUNNING:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2",
+    "START_ALWAYS:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2",
+    "CLOSE_IF_RUNNING:ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe"
+  ],
+  "rehearsal": {
+    "requiredState": "PASS_GUIR9_DIRECT_GUI_PATCH_AND_TRAY_ACTIVATION"
+  }
+}

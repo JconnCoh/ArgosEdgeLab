@@ -1,5 +1,121 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### The Insite exporter rejected a valid producer state and its modal exposed dynamic-scope label shadowing
+
+- Signature: export stops on `Confirmed identity row contract failed` for an
+  `IMAGE_CONFIRMED_CURRENT_PIXELS_EXACT_UNIQUE_MES_REVIEW_ONLY` row, while a
+  separate .NET dialog reports that property `Text` is missing.
+- Cause: the confirmed-overlay producer emits three qualified states but the
+  exporter accepted only two. In the tray completion function, a local string
+  named `$detail` dynamically shadows the status Label while a modal pumps a
+  nested timer callback.
+- Preflight: freeze the producer's complete state set and mechanically compare
+  the exporter allowlist; require zero missing states. Audit callback-local
+  names against UI control names across modal re-entry.
+- Recovery: add only the missing qualified producer state to the exporter and
+  rename only the child-output local variable. Restart only the tray; leave the
+  processor and config untouched.
+- First observed on 2026-08-22 after META01R2 exposed the real exporter result
+  without a cascade.
+
+### A modal GUI failure re-entered its own terminal operation every timer tick
+
+- Signature: one timed-out tray child operation immediately produces a growing
+  stack of identical error dialogs; later activity lines say the same
+  `FAILED_GUI_CHILD_OPERATION.json` already exists.
+- Cause: there are two exact defects. Timeout age subtracts a round-trip UTC
+  string cast by Windows PowerShell as local wall time from `UtcNow`, making the
+  first two-second tick appear roughly five hours overdue and killing the child
+  immediately. Then `Complete-GuiChildOperationIfReady` shows a modal error
+  before clearing `form.Tag.ActiveChildOperation`. The modal message loop
+  continues dispatching the timer, so the same terminal operation is completed
+  again, collides with its create-new result record, and opens another modal.
+- Preflight: prove a fresh UTC start is below the deadline under the exact
+  Windows PowerShell 5.1 timezone, then force one real child timeout in the
+  exact WinForms timer path and hold the first dialog open across multiple timer
+  intervals. Require exactly one terminal record, exactly one notification,
+  and no second completion attempt.
+- Recovery: parse the round-trip start timestamp with `RoundtripKind` and
+  compare in UTC. Claim terminal completion before recording evidence or
+  displaying UI, dispose it once, and make terminal notification non-reentrant.
+  Stop/restart only the tray when required to clear an active cascade; never
+  restart the independent inspection processor.
+- First observed on 2026-08-22 immediately after the operator invoked the live
+  META01R1 Insite export callback. The processor remained `WATCHING`.
+
+### A relocated signer retained a same-directory validator assumption
+
+- Signature: signing created a complete request directory, then failed because
+  `Test-SignedPortalPackage.ps1` was looked up beside the relocated signer.
+- Cause: the cloned signer moved out of the canonical portal scripts directory
+  without remediating its validator path.
+- Preflight: resolve and existence-check every sibling script invoked by a
+  relocated signer before any signature is created.
+- Recovery: withdraw the incomplete signed request identity and use the
+  unchanged canonical portal signer from its qualified scripts directory with
+  a fresh request identity and fresh output root.
+- First observed on 2026-08-22 while preparing `META01R1`; no portal publish or
+  JBOD mutation occurred.
+
+### The tray repeated the optional production-routing property crash
+
+- Signature: the installed review-only tray logs `Insite export validation
+  failed: The property 'productionRoutingEnabled' cannot be found on this
+  object` before launching the exporter or creating its declared output file.
+- Cause: `Show-JbodAllWaferTray.ps1` function
+  `Get-ConfiguredMetadataSnapshotRoot` directly evaluates
+  `[bool]$config.productionRoutingEnabled` under strict mode. The exact live
+  config is the approved review-only schema-v3 representation that safely
+  omits this optional property. The automatic bridge and processor runner had
+  already received the presence-check correction, but the tray consumer was
+  omitted from that dependency inventory.
+- Preflight: enumerate every strict-mode reader of `PROCESSOR_CONFIG.json`,
+  including GUI callbacks, and exercise its actual caller path with the
+  optional property absent, explicitly false, and explicitly unsafe true.
+  Require absent/false to resolve to the configured metadata root and unsafe
+  true to refuse before child launch. Source-token checks and a tray startup
+  smoke that never invokes the callback are insufficient.
+- Recovery: change only the tray's optional-property read to a false-default
+  presence check, keep explicit true fail-closed, install from the exact live
+  tray predecessor, and restart only the exact review-only tray task so the
+  resident script refreshes. Prove the manual Insite export callback creates a
+  schema-valid request for the current actionable cohort. Do not rewrite the
+  live config, clear metadata holds, restart the processor, or change XML,
+  training, or production routing.
+- First observed on 2026-08-22 in the operator's live GUI after signed GUIR9C3
+  installed tray SHA-256
+  `CF8C229A9F0EC5C26D88F800849DF96C9EC6AAA3039FE81F01971E477F4A3828`.
+  Exact signed GUIR9C3 terminal evidence pins those installed bytes, and the
+  previously signed GUIR3 data pull pins exporter SHA-256
+  `653E5B38208A4E4C2E8E848DB16FF6CCD49BA51AC748F62005F6C01D4B372F26`,
+  which does not read the optional property.
+
+### A ZIP or extra `.ready` wrapper is not an endpoint-ready request directory
+
+- Signature: the JBOD endpoint returns the signed failure
+  `Portal request manifest is missing.` and the response request identity has
+  an unexpected trailing `.ready`, even though the signed inner request is
+  valid.
+- Cause: Windows Explorer presented a `.ready.zip` as a compressed folder and
+  extraction created an additional directory ending in `.ready` above the
+  signed request directory. The endpoint correctly consumed that outer
+  wrapper, where `PORTAL_REQUEST_MANIFEST.json` was absent, and changed no
+  installed target bytes.
+- Preflight: in the endpoint `pending` root, require a normal filesystem
+  directory—not a `Compressed (zipped) Folder`—whose name ends exactly once in
+  `.ready`. Require `PORTAL_REQUEST_MANIFEST.json`,
+  `PORTAL_REQUEST_MANIFEST.sig`, and `payload` immediately inside that
+  directory before leaving it visible to the worker.
+- Recovery: use the signed inner directory unchanged. If the worker already
+  archived the wrapper, move only the inner directory from the exact
+  `processed\failed` wrapper into `pending`; do not extract, rename, rebuild,
+  resign, or edit it. Verify the resulting signed terminal response against
+  the original manifest request ID.
+- First observed on 2026-08-22 for outer-wrapper response
+  `R_77AB97E22A6B_20260822221726887_78afc754`. Moving the untouched inner
+  request produced signed `PASS_MAINTENANCE_PATCH` response
+  `R_7C549BAAF87D_20260822222055187_069d4c50`.
+
 ### Legacy portal signer has no non-mutating preflight boundary
 
 - Signature: the exact generic portal signer fails
@@ -6483,3 +6599,466 @@ than rerunning it.
   it did not expose the other four AVS1 target hashes. This is why task
   availability must be terminal evidence, not inferred from installed-file
   rollback.
+
+### Physical candidate matching must not erase unmatched channel-local evidence
+
+- Failure signature: an expanded native-pose synthetic gate reports the
+  expected single BF/DF physical indentation and the correct conservative hold,
+  but fails because a test expects zero unmatched channel-local fragments after
+  that physical match.
+- Cause: the test conflated physical-boundary eligibility with absence of all
+  channel-local boundary response. A matched BF/DF physical candidate does not
+  make a separate BF-only or DF-only response disappear. Those responses remain
+  ineligible to establish wafer pose and must remain explicit evidence.
+- Mandatory preflight: candidate gates must assert the exact physical-candidate
+  count separately from BF-only and DF-only evidence counts. Require exact
+  channel-only counts only for controls whose construction guarantees them;
+  otherwise require preservation and ineligibility, not artificial emptiness.
+  Never merge, delete, or relabel an unmatched channel-local response merely to
+  make a single-physical-candidate control pass.
+- Recovery: retain the failed executed synthetic output as withdrawn evidence,
+  correct only the draft expectation, move to a fresh output namespace, rerun
+  the safety/preflight gates, and require the physical state, channel
+  independence, FS15 refusal, and authority boundaries to pass together.
+- First observed on 2026-08-22 in
+  `work/FIDUCIAL_OPENCV_V1/SYNTHETIC_GATE_V2/SYNTHETIC_GATE.json`, SHA-256
+  `388A8336D5254B90FE79900673A405E64F486893C9CB46804BC89573EFEB24A8`.
+
+### File-backed evidence timestamps must come from the host clock
+
+- Failure signature: a newly written local evidence manifest contains a
+  `createdUtc` later than the host's current UTC time even though no clock
+  discontinuity was observed.
+- Cause: the timestamp was manually estimated instead of captured from the
+  host clock at file creation.
+- Mandatory preflight: before freezing or referencing a new evidence manifest,
+  parse every creation timestamp and require it to be no later than the current
+  host UTC time plus a small declared clock-skew allowance. Generate timestamps
+  from the host clock; never type an estimated future time.
+- Recovery: while the artifact is still local draft evidence and has not been
+  signed, published, executed against real inputs, or used for external
+  mutation, replace the estimated value with the file's exact filesystem
+  creation time, then recompute every dependent hash before promotion. A
+  frozen, signed, published, or externally used artifact instead requires a
+  fresh namespace.
+- First observed on 2026-08-22 in the local draft
+  `work/FIDUCIAL_OPENCV_V1/DEVELOPMENT_PARTITION.json`; its original estimated
+  `2026-08-22T03:30:00Z` was corrected before real image access or checkpoint
+  promotion to filesystem creation time `2026-08-22T01:30:19.6244427Z`.
+
+### Gate consumers must pin and validate the producer's actual result schema
+
+- Failure signature: an otherwise passing final-package rehearsal stops while
+  writing its local gate because it reads a generic `checkCount` property from
+  a prerequisite gate that actually publishes `caseCount` and `passCount`.
+- Cause: the consumer pinned the prerequisite file hash and PASS state but
+  guessed a summary-field name instead of checking the exact producer schema.
+- Mandatory preflight: before a harness reads any prerequisite result field,
+  enumerate the bounded top-level property names and pin the exact schema,
+  state, hash, and required field names. Test the final gate-construction path
+  in preflight or build from the actual producer schema; do not assume that
+  unrelated gates share a generic count-field name.
+- Recovery: confirm the failure occurred only in a fresh local partial staging
+  root, record its exact path and contents, quarantine or remove only that
+  verified partial root, correct the still-local harness to read the producer's real count
+  field, rerun parser/harness/wrapper/pre-action gates, and rebuild from the
+  unchanged signed source. Do not reuse the incomplete partial output.
+- First observed on 2026-08-22 in the FIC1 local final-package build. The
+  incomplete root was
+  `work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/final.partial` with five files
+  and 80,254 bytes. It was preserved as withdrawn evidence under
+  `work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/withdrawn/FINAL_PARTIAL_FAILED_GATE_SCHEMA_20260822`;
+  no request had been published and no JBOD target bytes had changed.
+## 2026-08-22 — Signed maintenance package with `allowCreate` still requires a nonempty predecessor set
+
+- Failure signature: `Test-SignedPortalPackage.ps1` rejected the signed, unpublished FSF1 package with `Maintenance change lacks approved predecessor hashes.`
+- Cause: the create-new helper declaration used `approvedPredecessorSha256: []`. The portal verifier requires at least one exact approved predecessor for every maintenance change, including an `allowCreate: true` target, so the empty set also omitted the target-hash idempotence case.
+- Preflight prevention: before signature, require every maintenance change to have at least one exact `approvedPredecessorSha256`; for a create-new/idempotent helper, include its exact `installedSha256`. The signer preflight must assert this cardinality and equality, and the exact signed package must still pass `Test-SignedPortalPackage.ps1` before final ZIP construction or publication.
+- Recovery: FSF1 was signed but never zipped, published, or executed. Preserve it as `WITHDRAWN`, block replay and successor-parent authority, and use a fresh FSF2 namespace whose definition and signer enforce the nonempty target-hash predecessor rule. No endpoint, task, processor, source, image, or wafer state changed.
+## 2026-08-22 — Native patterned-front source paths require a verified process-local short alias before fingerprinting
+
+- Failure signature: the exact FSF2 PFC003/PFC010 BF/DF source path gate returned `SHORT_ALIAS_REQUIRED_BEFORE_WRITE_OR_LAUNCH`; the longest observed source path was 178 characters and 210 with the mandatory 32-character reserve.
+- Cause: FSF2 correctly moved source paths into a signed job but still planned to open the long `D:\KLARFExport\PatternedFront\...` paths directly. Configuration-driven paths alone do not satisfy the path-budget rule.
+- Preflight prevention: run `Confirm-ArgosPathBudget.ps1` against every exact job source before signature. When any source is 200 or more with reserve but below the 230 hard stop, the signed job must declare a bounded alias name and one allowed source root. The entrypoint must create a process-local FileSystem PSDrive for that root, mechanically convert every source to the alias-relative path, rerun its own path/component budget on the alias path, verify the alias still resolves within the declared root, and only then read/hash bytes. Route gates must include both provenance paths and exact alias paths.
+- Recovery: FSF2 was signed and built but never published or executed. Preserve it as `WITHDRAWN`, block replay and successor-parent authority, and use a fresh FSF3 namespace. Do not create a persistent junction, global drive mapping, or processor hard-coded path.
+## 2026-08-22 — Raw `System.IO.File` APIs do not resolve a process-local PowerShell FileSystem PSDrive
+
+- Failure signature: the FSF3 draft created and validated process-local PSDrive `L:`, `Test-Path` found `L:\CLEAN_PAIRED\BF.bmp`, but `[IO.File]::Open` failed with `Could not find a part of the path`.
+- Cause: PowerShell provider drives are resolved by provider-aware cmdlets; they are not Win32/DOS drive mappings and raw `System.IO.File` path APIs do not resolve their names.
+- Preflight prevention: when a bounded process-local FileSystem PSDrive is the path-shortening mechanism, perform the actual alias-path read with provider-aware PowerShell cmdlets. For a BMP metadata probe, use bounded `Get-Content -Encoding Byte -TotalCount 30`; use `Get-Item` and `Get-FileHash` on the same alias path. Do not silently resolve `.FullName` and pass the original long path back to raw .NET APIs.
+- Recovery: FSF3 was still `DRAFT`, unsigned, unpublished, and unexecuted. Correct it in place and rerun the exact alias execution gate. No endpoint, task, processor, source, image, or wafer state changed.
+## 2026-08-22 — `Get-FileHash` module scope cannot see a script-local PSDrive
+
+- Failure signature: after the FSF3 draft successfully read the BMP header through process-local `L:`, `Get-FileHash` failed inside `Microsoft.PowerShell.Utility.psm1` with `Cannot find drive. A drive with the name 'L' does not exist.`
+- Cause: `Get-FileHash` resolves its path inside module scope, where the script-scoped PSDrive is not visible, even though core provider cmdlets in the entrypoint can resolve it.
+- Preflight prevention: hash alias-backed files incrementally in the entrypoint scope using bounded `Get-Content -Encoding Byte -ReadCount` blocks and `SHA256.TransformBlock`/`TransformFinalBlock`. Verify this result against `Get-FileHash` for local short-path controls. Do not convert the alias back to the original long path.
+- Recovery: FSF3 remained `DRAFT`, unsigned, unpublished, and unexecuted. Correct in place and rerun the alias gate. No endpoint, task, processor, source, image, or wafer state changed.
+
+## 2026-08-22 — A locked catalog path is not live source-existence evidence
+
+- Failure signature: the signed FSF3 fingerprint entrypoint failed before any
+  image read because one exact paired catalog path was missing through the
+  verified process-local alias:
+  `Lot_62616-115/62616-115_20260807120245/Slot23/BrightfieldFrontsideWafer/resizedImage/62616-115_Slot23_BrightfieldFrontsideWafer_PM2_resizedImage.bmp`.
+- Cause: the request correctly pinned the catalog-derived path, pairing, alias,
+  and path budget, but no current direct endpoint observation had proved that
+  every exact source leaf still existed under the installed JBOD root. Catalog
+  provenance and syntactic containment do not prove live filesystem presence.
+- Preflight prevention: before signing or publishing a source-fingerprint job,
+  obtain current metadata-only evidence for every exact requested leaf through
+  an already qualified read-only route. Pin existence, leaf type, containment,
+  and reparse state without reading image bytes. If the installed route cannot
+  provide exact-leaf metadata, stop with a capability gap and request one
+  bounded endpoint capability improvement; do not use maintenance as an
+  observation surrogate.
+- Recovery: preserve the signed terminal failure and follow it with one signed
+  read-only observation. Do not publish a successor fingerprint job until the
+  exact source paths are resolved and re-frozen. Do not restart the healthy
+  processor or the resident portal worker merely to activate a newly installed
+  observation field. The FSO1 signed STATUS response proved the processor was
+  still `Running` with configured root `D:/KLARFExport`, but its resident worker
+  returned no `environmentInventory`; therefore exact source discovery remains
+  an explicit capability gap.
+
+## 2026-08-22 — Path-budget candidate rows do not publish a per-row `state`
+
+- Failure signature: a signed, locally extracted DATA_PULL request passes the
+  aggregate `PASS_PATH_BUDGET` check, then its package-gate writer fails under
+  StrictMode with `The property 'state' cannot be found on this object` while
+  projecting `pathBudget.candidates`.
+- Cause: `Confirm-ArgosPathBudget.ps1` publishes the disposition on the
+  top-level result. Candidate rows publish path, length, effective length, and
+  longest-component measurements, but no candidate-level `state` property.
+  The consumer guessed a row field after checking only the aggregate schema.
+- Mandatory preflight: before signature, enumerate and pin the bounded
+  top-level and candidate-row property names of every machine gate consumed by
+  a package-gate writer. Exercise the final gate-construction projection in a
+  non-mutating fixture using the actual gate output. Copy the aggregate state
+  explicitly when a normalized per-row disposition is desired; never
+  dereference an unverified candidate property.
+- Recovery: preserve GUIR1's signed directory, final ZIP, and exact extracted
+  directory as `WITHDRAWN_LOCAL_SIGNED_NOT_PUBLISHED` evidence. Do not publish,
+  replay, patch, or use GUIR1 as a successor parent. Correct the consumer only
+  in a fresh GUIR2 namespace, rerun clone-remediation, harness, recovery-intent,
+  zero-recurrence, path, and final-gate-construction preflights, and sign only
+  after the actual row projection passes.
+- First observed on 2026-08-22 in
+  `work/GUIR1/New-GUIR1ReadOnlyRequest.ps1` after creation of
+  `C:\G1Z\REQ_GUIR1_0822_X1.ready.zip`, SHA-256
+  `8B665354B6A5A55F772B4632236E2FB80F6170BEE92FFF4303468D1715611A67`.
+  No portal request was published and no JBOD, task, processor, queue, ledger,
+  source, image, or wafer state changed.
+
+## 2026-08-22 — A mapped PSDrive's `Root` is not its UNC identity
+
+- Failure signature: a one-shot Project Portal publisher preflight can read the
+  mapped queue through `U:\`, but rejects the mapping as unpinned when it
+  compares `Get-PSDrive U`.Root to the expected engineering UNC share.
+- Cause: for a mapped filesystem drive, `Root` is the drive-qualified provider
+  root (`U:\`). The backing UNC identity is published as `DisplayRoot`.
+  Queue readability therefore did not make the incorrect `Root` comparison
+  valid.
+- Mandatory preflight: capture the bounded scalar fields `Name`, `Root`,
+  `DisplayRoot`, and provider name in the exact Windows PowerShell 5.1
+  execution context. Require `DisplayRoot` to equal the pinned UNC share and
+  separately require the exact queue root to be readable. Never infer the
+  backing share from `Root` and never bypass an absent `DisplayRoot`.
+- Recovery: preserve the failed publisher and its preaction as
+  `WITHDRAWN_PREFLIGHT_ONLY_NOT_PUBLISHED`. Create a fresh publisher namespace,
+  replace only the identity predicate with the pinned `DisplayRoot` check, and
+  rerun harness, clone-remediation, zero-recurrence, and the publisher's own
+  non-mutating preflight. The already signed request package is unaffected
+  because no request, upload, archive, publish gate, JBOD, task, process, or
+  installed byte was written.
+- First observed on 2026-08-22 in
+  `work/GUIR2/Publish-GUIR2ReadOnlyRequest.ps1`, SHA-256
+  `42A330892A14C598820F8B10157819104E87D3EDDCF6A746400E7241295B2187`.
+  The request queue remained empty and `REQ_GUIR2_0822_X1` was not published.
+
+## 2026-08-22 — DATA_PULL definition paths are nested under `parameters`
+
+- Failure signature: a response collector passes its recurrence gate and then
+  stops under StrictMode with `The property 'relativePaths' cannot be found on
+  this object` before scanning or collecting a response.
+- Cause: the request-definition schema publishes the requested source array as
+  `parameters.relativePaths`, not as a top-level `relativePaths` property. The
+  collector assumed a flattened representation. The current DATA_PULL v2
+  result separately names each source as `files[].relativePath` and its ZIP
+  member as `files[].entryPath`; those fields must not be conflated either.
+- Mandatory preflight: enumerate and assert the exact bounded property sets of
+  the signed request definition and installed DATA_PULL result schema before
+  response scanning. Freeze three distinct sets: requested relative paths,
+  returned `relativePath` values, and returned payload `entryPath` values.
+  Mechanically compare each set at its own boundary and exercise this schema
+  access in the collector's non-mutating preflight.
+- Recovery: preserve the failed collector and preaction as
+  `WITHDRAWN_PREFLIGHT_ONLY_NO_RESPONSE_COLLECTED`. Create one fresh collector
+  namespace using `definition.parameters.relativePaths`, compare returned
+  source identities through `files[].relativePath`, and verify/extract payload
+  members through `files[].entryPath`. Do not republish or retry the request.
+- First observed on 2026-08-22 in
+  `work/GUIR2/Collect-GUIR2ReadOnlyResponse.ps1`, SHA-256
+  `C4305C947325055EA530A664DEE4C6B2C895C3E815EB07E9C4780489EE42D736`.
+  No local response root, route gate, terminal gate, JBOD state, queue state,
+  task, process, installed byte, image, or wafer was changed.
+
+## 2026-08-22 — General path-budget results have no aggregate maximum field
+
+- Failure signature: a response collector verifies the matching signed
+  response, exact DATA_PULL v2 fourteen-file contract, and aggregate
+  `PASS_PATH_BUDGET`, then fails under StrictMode while reporting
+  `pathResult.maxEffectiveLength`.
+- Cause: `Confirm-ArgosPathBudget.ps1` publishes threshold fields,
+  `maximumComponentLength`, and `candidates`, but no top-level
+  `maxEffectiveLength`. A separate package-specific path gate happened to use
+  `maximumEffectiveLength`; that consumer schema was incorrectly projected
+  onto the general utility result.
+- Mandatory preflight: enumerate the exact top-level property names of the
+  actual general utility result and every package-specific wrapper separately.
+  Derive an aggregate maximum only from verified candidate fields, or omit the
+  optional display metric. Exercise the complete PASS output serialization in
+  non-mutating preflight before freezing a collector.
+- Recovery: preserve GUIR2 collector C2 as
+  `WITHDRAWN_PREFLIGHT_ONLY_SIGNED_RESPONSE_RETAINED_UNCOLLECTED`. Do not
+  republish or retry GUIR2. The matching signed `PASS_DATA_PULL` response and
+  its exact hash remain on the share. Stop the task-level collector iteration;
+  a C3 requires explicit operator direction and a fresh namespace.
+- First observed on 2026-08-22 in
+  `work/GUIR2/Collect-GUIR2ReadOnlyResponse-C2.ps1`, SHA-256
+  `97E179C3E2F94BA099AA65BB74F65718F8BA22DD3999254900995C73A0C1BC53`.
+  No local response root, route gate, terminal gate, retry, queue mutation,
+  JBOD mutation, task/process action, installed change, image read, or wafer
+  action occurred.
+
+## 2026-08-22 — `return` requires a token boundary before a type literal
+
+- Failure signature: a Windows PowerShell 5.1 rehearsal enters a helper and
+  fails with `The term 'return[pscustomobject]@' is not recognized` before the
+  helper can return its fixture descriptor.
+- Cause: the draft harness concatenated the `return` keyword directly with a
+  `[pscustomobject]` type literal. The parser accepted the token sequence as a
+  command expression, so metadata-only parsing did not expose the runtime
+  command-resolution failure.
+- Mandatory preflight: require whitespace after flow-control keywords before a
+  type literal, and execute every helper return path at least once in the exact
+  Windows PowerShell 5.1 non-production rehearsal before freezing its gate.
+  Static parser success is necessary but is not evidence that helper paths ran.
+- Recovery: retain `C:\G7E` as failed local rehearsal evidence and do not reuse
+  it. Correct only the still-draft endpoint test harness, select a fresh local
+  root, rerun its harness-safety and zero-recurrence preflights, and then rerun
+  the exact signed request rehearsal. The signed request bytes remain frozen
+  and unchanged.
+- First observed on 2026-08-22 in
+  `work/GUIR7_PORTAL/Test-GUIR7PortalEndpoint.ps1`. The failure occurred while
+  constructing the first local fixture, before the simulated endpoint worker,
+  JBOD publication, task/process action, installed-JBOD change, image read,
+  source mutation, or wafer action.
+
+## 2026-08-22 — Windows PowerShell 5.1 can reject array-wrapping a generic list
+
+- Failure signature: an exact signed maintenance request reaches its local
+  endpoint rehearsal and the entrypoint exits before task/process action with
+  `System.ArgumentException: Argument types do not match`; no script line is
+  included in redirected stderr.
+- Cause: the entrypoint placed a
+  `System.Collections.Generic.List[object]` inside an array subexpression as
+  `@($list)` while constructing an ordered result. Windows PowerShell 5.1 can
+  fail this dynamic binder conversion even though the script parses and the
+  list contains valid objects.
+- Mandatory preflight: when a generic list participates in JSON/gate output,
+  convert it explicitly with `.ToArray()` at the boundary. Before signature,
+  execute the exact Windows PowerShell 5.1 helper path that constructs every
+  result object; parser and metadata-only harness gates are insufficient.
+- Recovery: mark signed request `REQ_G7_0822_A1` and its entrypoint as
+  `WITHDRAWN_LOCAL_SIGNED_NOT_PUBLISHED`; do not patch, publish, replay, or use
+  those frozen bytes as a successor package. Preserve `C:\G7E2` and its signed
+  local failure response. A successor requires a fresh namespace, an
+  independently frozen entrypoint, a direct Windows PowerShell 5.1 result-
+  construction rehearsal before signature, and a fresh exact-endpoint
+  rehearsal after signature.
+- First observed on 2026-08-22 in exact local response
+  `R_2294BAEED240_20260822194700116_358cf406`. The portal request queue remained
+  empty, the JBOD was never contacted, and no JBOD task, process, installed
+  file, inspection data, source image, or wafer state changed.
+
+## 2026-08-22 — Do not name a declared PowerShell parameter `$Args`
+
+- Failure signature: a bounded child `powershell.exe` returns exit code zero,
+  but its captured stdout begins with the Windows PowerShell banner instead of
+  the expected JSON; the caller then fails with `Invalid JSON primitive:
+  Windows`.
+- Cause: the process helper declared a named parameter `$Args`, colliding
+  case-insensitively with PowerShell's automatic `$args` variable. The child
+  argument list was therefore empty at runtime, launching an interactive
+  redirected PowerShell host rather than the pinned `-File` invocation.
+- Mandatory preflight: never declare parameters or working variables named
+  `$Args`. Use a domain name such as `$ArgumentList`, assert the constructed
+  `ProcessStartInfo.Arguments` is nonempty and contains the exact quoted
+  `-File` scalar, and run the full success path under Windows PowerShell 5.1
+  before signature. A zero exit code is not sufficient; parse and assert the
+  exact expected JSON state.
+- Recovery: retain `C:\G8D` as non-reusable local rehearsal evidence. Mark the
+  GUIR8 draft entrypoint withdrawn; do not sign, publish, patch into a frozen
+  request, or continue package iteration in the same work session. Resume only
+  from the durable checkpoint with a fresh namespace after operator direction.
+- First observed on 2026-08-22 in the GUIR8 full direct pre-sign rehearsal.
+  The entrypoint restored all four fixture predecessor hashes and created no
+  inner audit root. The engineering-share request queue remained empty, the
+  JBOD was never contacted, and no JBOD task, process, installed file, image,
+  source, or wafer state changed.
+
+## 2026-08-22 — Never leave placeholder hashes in an executable pre-action flow
+
+- Failure signature: an unexecuted local endpoint-rehearsal pre-action contains
+  the literal `PLACEHOLDER_INTENT_HASH` instead of the exact hash of its frozen
+  recovery intent.
+- Cause: the intent and dependent pre-action were authored in one edit before
+  the intent's final file hash was available. The dependent value was left for
+  a later substitution rather than being mechanically populated and rejected
+  before the next step.
+- Mandatory preflight: before running any intent, pre-action, builder, signer,
+  publisher, collector, or endpoint harness, scan its exact bounded source for
+  `PLACEHOLDER`, `TODO`, `TBD`, dummy 64-character hashes, and empty required
+  dependency values. A hit is a hard stop. Create and hash dependency files
+  first; author dependent contracts only after those hashes exist.
+- Recovery: preserve the affected GUIR9 local-rehearsal files as withdrawn,
+  never execute them, and never use them as publication evidence. Do not alter
+  the already frozen GUIR9 payload or signed request. The operator rejected a
+  simulated laptop/JBOD environment; future GUI-only live validation must use
+  the bounded environment-authentic lane in `AGENTS.md` with one request, no
+  retry, exact live precondition checks, endpoint rollback, and a signed
+  terminal response.
+- First observed on 2026-08-22 in
+  `work/GUIR9_PORTAL/GUIR9_EXACT_ENDPOINT_REHEARSAL_PREACTION.json`, SHA-256
+  `3D5D43CC843400E94E149AED5C2CDC3BEA6CCC6597BEFECF035B09B2B5622E1A`.
+  The affected harness was never executed, `C:\G9E` was never created, the
+  request was not published, and no JBOD or laptop installed byte, task,
+  process, image, source, or wafer state changed.
+
+## 2026-08-22 — `Compress-Archive -LiteralPath` does not expand `*`
+
+- Failure signature: a local signed-package ZIP build reports that
+  `C:\...\*` does not exist, then later commands in the same shell invocation
+  attempt to expand or verify a ZIP that was never created.
+- Cause: `-LiteralPath` treats the asterisk literally; wildcard expansion is
+  supported by `-Path`, not `-LiteralPath`. The compound invocation also did
+  not set `$ErrorActionPreference = 'Stop'` before its first operation, so the
+  shell continued into dependent commands after the archive failure.
+- Mandatory preflight: for a directory-contents archive, use `Compress-Archive
+  -Path (Join-Path $source '*')`; reserve `-LiteralPath` for a concrete file or
+  directory with no wildcard. Set `$ErrorActionPreference = 'Stop'` at the
+  first statement and assert the ZIP exists before extraction.
+- Recovery: because no ZIP was created and the output remained an unfrozen
+  draft containing only empty directories, retain the same bounded draft root
+  after verifying it contains no files. Refresh the zero-recurrence contract
+  against the updated memory, then rerun only the corrected packaging command.
+  Do not resign or alter the request.
+- First observed on 2026-08-22 while building
+  `C:\G9F\REQ_G9_0822_A1.ready.zip`. The ZIP, publish path, and JBOD were
+  untouched; `C:\G9F` contained no files after the failed attempt.
+
+## 2026-08-22 — `Get-CimInstance` datetime values are not necessarily DMTF strings
+
+- Failure signature: a live Windows PowerShell 5.1 verifier calls
+  `ManagementDateTimeConverter.ToDateTime([string]$process.CreationDate)` and
+  fails with `Specified argument was out of the range of valid values` and
+  parameter `dmtfDate` while reading a real `Win32_Process` row.
+- Cause: `Get-CimInstance` can materialize the CIM `CreationDate` property as
+  a typed `System.DateTime`. Converting that value to text produces a normal
+  culture-formatted timestamp, not a WMI DMTF timestamp. Passing that text to
+  `ManagementDateTimeConverter.ToDateTime` is invalid. A rehearsal fixture
+  that supplies a preformatted UTC string bypasses this live conversion path
+  and cannot prove it.
+- Mandatory preflight: preserve the runtime type of CIM datetime properties.
+  If the value is `DateTime`, normalize it directly with `ToUniversalTime()`;
+  use `ManagementDateTimeConverter` only for a string that first passes an
+  exact DMTF-format check. Exercise typed `DateTime`, valid DMTF string, null,
+  and malformed string cases under Windows PowerShell 5.1. Never claim a
+  fixture-only process row proves the live CIM materialization path.
+- Recovery: accept the signed terminal failure, rely on the unchanged generic
+  endpoint transaction to restore all prepared destinations, and perform a
+  direct read-only post-failure observation before any successor mutation.
+  Do not replay `REQ_G9_0822_A1`, do not patch its frozen bytes, and do not
+  publish an automatic retry. A successor must use a fresh request namespace
+  and requires explicit operator authorization after rollback evidence is
+  pinned.
+- First observed on 2026-08-22 in signed JBOD response
+  `R_B27BAAB4CDA4_20260822205836383_182e8c7d`, response ZIP SHA-256
+  `0F822D4E73F04DEAF4C5DF2293920416B359DE84DFAA4193BB8A19C732820057`.
+  The response state is `FAILED`, its signature is valid, and its exact stderr
+  names `Apply-GUIR9DirectGuiPatch.ps1`. No second request was published.
+
+## 2026-08-22 — Inline portal publication cleanup can be rejected before execution
+
+- Failure signature: the local command runner rejects an entire compound
+  portal-publication command before execution when that command contains an
+  inline conditional `Remove-Item` cleanup branch.
+- Cause: the runner's destructive-operation policy evaluates the complete
+  command before PowerShell starts. An exact temporary upload cleanup that
+  would only run after a copy-hash mismatch is still treated as an inline
+  destructive action and blocks the otherwise create-new publication command.
+- Mandatory preflight: separate the zero-recurrence preflight, create-new copy,
+  hash verification, and create-new ready rename into bounded commands. Do not
+  embed a deletion or cleanup branch in the publication command. If a partial
+  upload is ever created, stop and classify that exact artifact before any
+  separately authorized cleanup; never retry automatically.
+- Recovery: confirm that the rejected command created neither the `.upload`
+  nor `.ready.zip` leaf and that the live queue remains empty, refresh every
+  contract that pins this memory hash, then execute the create-new publication
+  steps once without inline cleanup.
+- First observed on 2026-08-22 while preparing the GUIR9O1 post-failure
+  read-only `DATA_PULL`. The command was rejected before execution; the
+  observation request was not published and no local or JBOD file, task,
+  process, queue, ledger, source, image, or wafer state changed.
+
+## 2026-08-22 — JavaScript replacement strings interpret PowerShell `$'` as a suffix token
+
+- Failure signature: a mechanically generated PowerShell successor draft
+  duplicates a large suffix of its source inside a regex line ending in `$'`,
+  producing hundreds of unexpected diff lines and an invalid script.
+- Cause: JavaScript `String.replace(search, replacementString)` interprets
+  `$'` in the replacement string as the unmatched suffix of the input. A
+  PowerShell single-quoted end-anchored regex naturally contains that exact
+  two-character sequence.
+- Mandatory preflight: when generated replacement text can contain dollar
+  signs, pass a callback to `String.replace` so the returned text is inserted
+  literally. Strip command-runner metadata before using captured stdout as
+  source text. Before any parser, harness, signature, freeze, or package step,
+  require the generated successor to have only the intended bounded diff.
+- Recovery: while the artifact remains `DRAFT`, remove only that generated
+  draft with `apply_patch`, regenerate it from the untouched frozen source
+  using a callback replacement, then prove the exact diff and Windows
+  PowerShell 5.1 parse. Never correct a frozen, signed, published, or executed
+  artifact in place.
+- First observed on 2026-08-22 in the unexecuted draft
+  `work/GUIR9C1_PORTAL/payload/Apply-GUIR9C1DirectGuiPatch.ps1`. The source
+  GUIR9 entrypoint, signed requests, live queue, JBOD installed files, tasks,
+  processes, images, sources, and wafer state were untouched.
+
+## 2026-08-22 — A maintenance verifier must not reconstruct endpoint-private predecessor evidence names
+
+- Failure signature: after the endpoint installs all declared target files, a
+  maintenance verifier fails before GUI actions with `Endpoint predecessor
+  evidence is missing: <destination>` even though the generic endpoint owns
+  and created the transaction's predecessor records.
+- Cause: the verifier independently reconstructs the endpoint's private
+  `Mnnn_<destination-token>_<request-token>.prior` name and state-root layout.
+  Source-level agreement between two hash/name implementations does not prove
+  that the child verifier can resolve the exact live endpoint-created record.
+  This duplicates an internal transaction contract across producer and
+  consumer instead of passing endpoint-owned evidence explicitly.
+- Mandatory preflight: a verifier that needs predecessor evidence must consume
+  an exact endpoint-produced mapping or another endpoint-owned, request-bound
+  contract. Do not recompute private evidence filenames or claim compatibility
+  from duplicated algorithms. The exact live non-scoring path must prove that
+  the verifier can resolve every prepared predecessor before publication.
+- Recovery: accept the signed terminal failure and the generic endpoint's
+  rollback. Perform one signed read-only observation of the four installed
+  hashes and processor health. This is the second signed premise failure in
+  the incident, so mutation stop-loss is active: do not publish another repair
+  until workflow review creates an explicit clearance and a fresh intent.
+- First observed on 2026-08-22 in signed JBOD response
+  `R_4ED6AC7A9CBB_20260822213037518_7efea9df`, response ZIP SHA-256
+  `6E64D74F39EA2E2E93FE6E64EFF70A9BADBBE4634D2B7E7E5F286EBC96FCC778`.
+  The failure occurred before GUI task/process actions; no automatic retry is
+  allowed.

@@ -1,8 +1,73 @@
-# Active ArgosEdgeLab state - C2H Insite retry identity repaired, lot validation next - 2026-08-19
+# Active ArgosEdgeLab state - META01R1 live tray fix pass - 2026-08-22
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## META01R1 live tray fix pass — 2026-08-22
+
+The authoritative repair list is
+`work/JBOD_INSPECTION_REPAIR_PROJECT_20260822.md`, SHA-256
+`61196972554E29E2B9AB40D136F81C6F9AB79F848736625A9F4330CBDD3CB36A`.
+`META-01` is the only active item. META01R1 returned signed
+`PASS_MAINTENANCE_PATCH`, installed only the tray's false-default presence
+check for the omitted optional `productionRoutingEnabled` property, and
+restarted only the tray. The installed tray SHA-256 is
+`DA8E272CF2A00BC50A37FD17662E10E0FFEFFA130A928769D517028372CC881F`.
+The processor stayed on PID 6708 with its original creation time and was not
+restarted. No config rewrite or other GUI-file change occurred.
+
+The prior GUIR9C1 stop-loss was explicitly cleared by the GUIR9C2 workflow
+review. GUIR9C3 returned signed terminal `PASS_MAINTENANCE_PATCH` response
+`R_7C549BAAF87D_20260822222055187_069d4c50`; exact evidence is
+`work/GUIR9C3_PORTAL/GUIR9C3_LIVE_TERMINAL_EVIDENCE.json`, SHA-256
+`8B2901E9716B17B9B996E0618E76090CAB5773FE6888FB8751EB3FA475DAFF9E`.
+The GUI repair is `RELEASED_REVIEW_ONLY`; the processor remained PID 6708 and
+was not restarted.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/JBOD_META01R1_TRAY_CONFIG_FIX_LIVE_PASS_CHECKPOINT_20260822.md`,
+SHA-256
+`E6C37C6B5A4DCB4972CBA217468F30F7365E8F3A98F8DF1B632ECD03365A00B7`.
+The exact next action is one operator invocation of `Export Insite backlog`
+from the refreshed tray, followed by normal request/verified-metadata
+observation. Do not publish another repair or restart the processor merely to
+obtain that observation.
+AVC1 stays healthy and frozen. FIDCV1 remains operator-paused. R10 and AVS1
+remain withdrawn; XML, training, production, deletion, image-byte, and
+wafer-abort boundaries are unchanged.
+
+## GUIR6 draft GUI package rehearsal pass — 2026-08-22
+
+GUIR3 remains the exact signed current-state authority: 270 dashboard-eligible
+wafers with zero missing, extra, or duplicate identities. GUIR4's integration-
+safe viewer and tray candidates passed independent and combined local gates.
+
+GUIR5 is `WITHDRAWN`. Its first exact packaged-installer preflight stopped
+before apply because it assumed processor config schema v2 while the pinned
+current config is schema v3. No candidate process or file mutation occurred;
+`C:\G5D` is non-reusable and GUIR5 cannot parent publication.
+
+Fresh GUIR6 passed clone-remediation, generated harness, wrapper, path,
+recovery-intent, Windows PowerShell 5.1, and 90-issue pre-action gates. Its
+exact packaged-installer rehearsal at `C:\G6D` passed predecessor install,
+already-target idempotence, nested/quoted paths, four viewer smokes plus tray
+rehearsal in each successful case, and unapproved-hash refusal before mutation.
+There were zero orphan processes, JBOD contacts, task actions, image reads, or
+fiducial changes.
+
+The GUIR6 ZIP is deliberately `DRAFT_LOCAL_PACKAGE` and is test evidence only.
+It must not be relabeled, signed, published, installed, copied to
+`InspectionRevs`, or used as a publication parent. Continue only after explicit
+operator authorization by creating a fresh frozen GUIR7 namespace and repeating
+all exact final-package gates. Fiducial work remains paused, healthy AVC1
+remains untouched, R10/AVS1 remain withdrawn, and all FS15/XML/training/
+production/deletion/image-byte/wafer-abort boundaries remain unchanged.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/GUIR6_DRAFT_GUI_PACKAGE_REHEARSAL_PASS_CHECKPOINT_20260822.md`,
+SHA-256
+`378A72BBFA98224A85A527F79C25D3439550EE6814FA3F8A88765B009A1EE44B`.
 
 ## JBOD C2H signed Insite hold-attempt fix pass - 2026-08-19
 
@@ -5786,3 +5851,270 @@ SHA-256
 Disposition remains `PENDING_GATE`. The global FS15 hold and every XML,
 training, production, source-deletion, image-byte, and wafer-abort boundary
 remain unchanged.
+
+## 2026-08-22 FIDCV1 local OpenCV prototype pass and JBOD capability gap
+
+A new review-only `FIDCV1` development revision was started from a declared
+non-FS15 partition containing PFC003 and PFC010. Their BF/DF hashes remain
+unobserved, pixel scoring remains disabled, and no real image bytes were read.
+Independent validation identities remain unselected until development freeze.
+
+The new OpenCV prototype fits BF and DF independently at native pixels, never
+conditions one channel on the other, never averages their poses, and preserves
+unmatched channel-local responses as explicit ineligible evidence. A five-case
+synthetic gate passed the clean, one-physical, BF-only appearance, two-physical,
+and channel-pose-disagreement controls. It also passed exact BF invariance under
+DF mutation and refused FS15 as development input. The same suite passed from a
+freshly extracted portable CPython 3.13.2/OpenCV 5.0.0/NumPy 2.5.2 runtime.
+
+The portable bundle is 67,277,595 bytes; its rehearsed tree contains 1,034 files
+and 180,627,977 bytes. Planned JBOD roots are short and isolated at
+`D:\AFCV1`, `D:\AFCV1\rt`, and `D:\AFCV1\out`; every planned leaf passed the
+path budget with maximum effective length 175.
+
+Deployment stopped before endpoint contact because existing qualified STATUS
+and DATA_PULL routes cannot report current D: free bytes, exact target-root
+state, host architecture, or installed Python/OpenCV inventory, and no qualified
+generic direct-admin route was found. A maintenance request is not an authorized
+substitute for that read-only observation. No JBOD install or execution, task or
+processor action, queue/ledger mutation, real-image read, deletion, or wafer
+action occurred.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/FIDUCIAL_OPENCV_V1_LOCAL_PROTOTYPE_AND_JBOD_CAPABILITY_GAP_CHECKPOINT_20260822.md`,
+SHA-256
+`00CFB3BE5D19CDCCAF83EA639341BE4DD99CAAF207D092F1193D9FC51A03E0AA`.
+Disposition is `PENDING_GATE`. Continuation requires explicit authority for one
+bounded generic read-only endpoint capability improvement or one rehearsed
+operator-local read-only preflight. The global FS15 hold, PFC004 preservation,
+Slot07 notch hold, healthy AVC1 processor stop boundary, R10/AVS1 withdrawal,
+and every XML, training, production, deletion, image-byte, and wafer-abort
+boundary remain unchanged.
+
+## 2026-08-22 FIDCV1 OpenCV runtime installed on JBOD; integration boundary locked
+
+FIC1 returned signed `PASS_MAINTENANCE_PATCH`, adding only the bounded
+environment-inventory capability while mechanically preserving DATA_PULL and
+the established maintenance/queue/response implementation. The separately
+gated FIO1 read-only observation returned signed `PASS_DATA_PULL` and proved
+`D:\AFCV1` absent, 476,891,750,203,392 available bytes on `D:`, and a 64-bit
+AMD64 Windows/endpoint environment.
+
+FOI1 then published once and returned matching signed `PASS_MAINTENANCE_PATCH`
+response `R_A2C33C30A777_20260822152512001_bbc860ce`. The signed stdout proves
+`PASS_FIDCV1_OPENCV_D_ONLY_INSTALLED`, runtime root `D:\AFCV1\rt`, installation
+manifest SHA-256 `1289EC11F092233D3AAB5ACF416B0212F1874F698F9BBC2B474829939BCDF596`,
+and installed-runtime self-test `PASS_OPENCV_NATIVE_POSE_RUNTIME_PREFLIGHT`.
+No inspection or processor task, source, image, or wafer was changed.
+
+The locked integration boundary requires a configuration-selected provider,
+versioned job/result schemas, job-supplied BF/DF/map/pose/site/output values,
+and externally supplied combination/lot authority. `D:\AFCV1` is runtime
+placement only. The bundled review-only V1 diagnostic is not the future
+activation entrypoint, so its temporary FS15-development refusal and authority
+booleans cannot become processor hard-coded switch-on blocks.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/FIDUCIAL_OPENCV_V1_JBOD_RUNTIME_INSTALLED_INTEGRATION_BOUNDARY_CHECKPOINT_20260822.md`,
+SHA-256
+`38D5788412B962CE84041AE5524C1A376A9A36DB25E4FBE664255EF45E9C52F9`.
+Disposition is `PENDING_GATE`. PFC003/PFC010 source hashes remain unobserved,
+so real pixel scoring remains disabled. Next is one exact four-file hash and
+metadata action only; a separately gated OpenCV run follows after those hashes
+are frozen. FS15 and every XML, training, production, deletion, wafer-abort,
+AVC1 healthy-processor, and R10/AVS1 withdrawal boundary remain unchanged.
+
+## 2026-08-22 FIDCV1 FSF3 source-path failure and FSO1 capability gap
+
+The downstream architecture is now explicit: qualified fiducial localization
+produces provenance-bound transforms; qualified reference transforms construct
+an exact composite; each inspected patterned wafer must then register to that
+exact composite revision before defect comparison. Any missing, ambiguous,
+unqualified, or mismatched transform/registration fails closed. Integration
+boundary V2 preserves configuration-selected activation and stable schemas so
+the completed work can later be enabled without lot, D-root, FS15, or authority
+blocks hard-coded into the geometry engine.
+
+The one published FSF3 source-fingerprint request returned matching signed
+`FAILED` response `R_8000B87CFC61_20260822163530416_79c70d47`: the exact
+PFC010 BF catalog path was missing through the verified process-local alias.
+The helper rolled back; no image was read, no source hash was accepted, and no
+OpenCV scoring, composite, registration, or inspection ran.
+
+One separately gated post-failure STATUS observation then returned signed
+`PASS_STATUS_COLLECTED` response
+`R_736E657E8CCC_20260822165423207_9db7c7bc`. It proves the healthy processor
+is still `Running` and configured for `D:\KLARFExport`. The resident worker did
+not return the requested `environmentInventory`, so D: capacity, top-level
+child state, and exact nested replacement paths remain unresolved rather than
+inferred.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/FIDCV1_FSF3_FAILURE_FSO1_CAPABILITY_GAP_CHECKPOINT_20260822.md`,
+SHA-256
+`4682ECF3B21763AF86FC3BF8D7096BC837E551D9706ABCFCEBCA9F8707B02735`.
+Disposition is `PENDING_GATE`. Continuation requires explicit authority for one
+generic, bounded metadata-only exact-leaf endpoint capability improvement or
+an already qualified equivalent route. Do not publish another fingerprint
+helper or restart the healthy processor/resident portal worker merely to get
+more evidence. FS15 and all XML, training, production, deletion, image-byte,
+wafer-abort, AVC1, R10, and AVS1 boundaries remain unchanged.
+
+## 2026-08-22 FIDCV1 paused by operator for GUI priority
+
+All fiducial work is temporarily paused at the operator's request so GUI issues
+can be examined first. No fiducial endpoint request is pending and no fiducial
+background action requires monitoring. The pause is a priority hold, not model
+completion, approval, withdrawal, or permission for GUI work to alter fiducial
+artifacts.
+
+The frozen machine pause record is
+`work/FIDUCIAL_OPENCV_PAUSE_FOP1/PAUSE_STATE.json`, SHA-256
+`1A8176BEAC7A3DE234D4E82964F6AC2A97688BFFADDE14547727CDB15009C319`.
+It preserves exact authority, architecture, qualified progress, signed
+terminal history, current source-path/capability blocker, resume prerequisites,
+key artifact hashes, and deterministic tree summaries for all eight bounded
+fiducial roots: 2,375 files and 738,163,969 bytes.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/FIDCV1_OPERATOR_PAUSE_FOR_GUI_CHECKPOINT_20260822.md`,
+SHA-256
+`7C4C716C5DA2118BAA3595FD5B4567548920ABC765DFE2B5304260AB923AF1A3`.
+Disposition remains `PENDING_GATE`. Fiducial work may resume only after an
+explicit operator instruction, pause-record and tree-hash verification, and
+the recorded metadata-only exact-leaf capability decision. Until then, OpenCV
+pixel scoring, composite construction, patterned-wafer registration, and
+patterned inspection remain disabled.
+
+The immediate next activity is a read-only diagnosis of the concrete GUI issue
+the operator identifies. Do not infer a GUI redesign or repair from the pause
+alone. Leave the healthy AVC1 processor untouched; R10/AVS1 withdrawal, global
+FS15, and all XML, training, production, deletion, image-byte, and wafer-abort
+boundaries remain unchanged.
+## 2026-08-22 GUIR8 GUI installation safe stop
+
+The frozen local GUIR7 installer ZIP remains valid rehearsal evidence at
+`C:\G7F\GUIR7_REVIEW_ONLY_GUI_FIX_20260822.zip`, SHA-256
+`47ACE6B1F3924762A720A890C336CA9636425C731856ECC6066C695A33397BA7`.
+It was not installed or published.
+
+Signed local portal request `REQ_G7_0822_A1` is
+`WITHDRAWN_LOCAL_SIGNED_NOT_PUBLISHED` after its exact local endpoint
+rehearsal exposed a Windows PowerShell 5.1 generic-list array binder failure
+before task/process action. The one fresh GUIR8 successor is also `WITHDRAWN`:
+its exact non-mutating preflight passed, but its full pre-sign rehearsal proved
+that declaring a process-helper parameter named `$Args` emptied the child
+argument list and launched the PowerShell banner instead of the pinned
+installer. All four GUIR8 fixture predecessors were restored and no inner
+audit root was created.
+
+The engineering-share request queue remained empty. No GUI install request
+reached the JBOD, and no JBOD task, process, installed byte, image, source, or
+wafer state changed. Stop package iteration in this task. The healthy AVC1
+processor and the fiducial pause remain untouched.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/GUIR8_GUI_INSTALLATION_SAFE_STOP_CHECKPOINT_20260822.md`,
+SHA-256
+`61D58ACC141F23BA51054844F39D0061F5BA05E4FBD671611F60BD508F5568A0`.
+
+## 2026-08-22 GUIR9/GUIR9C1 signed failures and mutation stop-loss
+
+The GUI repair is not installed and is not fixed. GUIR9 returned a matching
+signed terminal failure when typed CIM `CreationDate` was passed to the DMTF
+string converter. A separately signed read-only observation proved automatic
+rollback to all four approved predecessor hashes and processor state
+`WATCHING`.
+
+GUIR9C1 corrected that narrow conversion boundary and removed the hard-coded
+request ID, but its one signed live request returned a second matching terminal
+failure before GUI task/process action: `Endpoint predecessor evidence is
+missing: Show-JbodAllWaferTray.ps1`. The verifier had reconstructed an
+endpoint-private predecessor evidence filename instead of consuming an
+endpoint-produced mapping/contract. GUIR9 and GUIR9C1 are both `WITHDRAWN` and
+cannot be replayed or used as successor parents.
+
+Final signed read-only request `REQ_20260822T213441259Z_BA3DAB8B985E`
+returned `PASS_DATA_PULL`. It proves the four known-good predecessor GUI hashes
+are installed and `PROCESSOR_STATUS.json` remains `WATCHING`, updated at
+`2026-08-22T21:35:21.188128Z`. No repair request is pending.
+
+Two signed premise failures activate mandatory mutation stop-loss. Do not
+publish another maintenance repair or perform task/process action until a
+workflow review and fresh recovery intent explicitly clear stop-loss. Any
+future successor must consume an endpoint-produced exact predecessor-evidence
+mapping and must not guess endpoint-private rollback filenames.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/GUIR9C1_SECOND_SIGNED_FAILURE_STOP_LOSS_CHECKPOINT_20260822.md`,
+SHA-256
+`B9A229A48B7913272D7B76382EC066458CAF5D547B26D9C7763E6C981AC55EA8`.
+Disposition is `PENDING_GATE`. The healthy AVC1 processor and fiducial pause
+remain untouched; R10 and AVS1 remain `WITHDRAWN`; global FS15 and all XML,
+training, production, deletion, image-byte, source-deletion, and wafer-abort
+boundaries remain unchanged.
+
+## 2026-08-22 META01R5 live queue action fix
+
+META01R5 is `RELEASED_REVIEW_ONLY`. One installed queue-producer file changed to SHA-256 `6185D960F32088120E304BE49D5BF99C525B07EE60F5D68017A40A93F68EC6A9`; signed maintenance returned `PASS_MAINTENANCE_PATCH`. Signed live readback then proved 25 genuine actionable metadata rows and zero terminal rows falsely advertised as actionable. No task or process restarted, and the healthy processor remained untouched.
+
+Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/META01R5_LIVE_QUEUE_ACTION_FIX_CHECKPOINT_20260822.md`.
+
+## 2026-08-22 META01R6 live metadata-overlay consumer fix
+
+META01R6 is `RELEASED_REVIEW_ONLY`. The exact live fault was a split metadata
+authority: the exporter correctly read verified metadata from configured
+`D:\A2\m\verified`, while inventory hard-coded the stale
+`stateRoot\metadata\verified` path on `C:`. The signed maintenance response
+returned `PASS_MAINTENANCE_PATCH`, changed exactly the inventory and runner,
+and performed no task/process action or processor restart.
+
+The signed post-action data pull proves installed inventory SHA-256
+`228D9EDD0EFF45E58682659DC6C807FB04F63DD55E48C7F70426BF272C08FA7C`,
+installed runner SHA-256
+`46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4`,
+and configured metadata root `D:\A2\m\verified`. The stable catalog remains
+`1844/1844` with zero waiting; route-ready acquisitions increased from `313`
+to `526`; queue `insiteLookupPending` is now zero.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/META01R6_LIVE_METADATA_OVERLAY_CONSUMER_FIX_CHECKPOINT_20260822.md`.
+Remaining non-completed rows retain their actual domain-specific holds. Do not
+publish another repair or restart merely for more validation. The healthy
+processor, fiducial pause, R10/AVS1 withdrawal, and all XML/training/production,
+deletion, image-byte, source-deletion, and wafer-abort boundaries remain
+unchanged.
+
+## 2026-08-22 OpenCV all-image-processing migration ready
+
+The operator explicitly expanded and resumed the OpenCV program for execution
+in a fresh chat. The migration now covers every image-decoding and
+pixel-processing path: scribe deciphering/OCR, independent BF/DF wafer
+perimeter and notch pose, fiducials, reference composites, inspected-wafer
+registration, Bare, backside, BowComp, frontside patterned and unpatterned
+families, detector masks, heatmaps, crops, overlays, and review rasters.
+
+PowerShell is frozen as orchestration only. It may watch, schedule, validate
+configuration/manifests, copy/rename/hash files, invoke providers, collect exit
+states, and manage queues/ledgers/dashboard/GUI/transport. It may not decode
+images, process pixels, perform OCR or geometry, composite/register wafers,
+score defects, or generate image-derived masks and rasters.
+
+The omitted scribe issue is restored as `OCV-02`: OpenCV pose-bound ROI
+localization, independent BF/DF enhancement, rectification, glyph segmentation,
+OCR candidates, canonical/checksum scoring, calibrated confidence, explicit
+operator holds, and reciprocal notch-relative scribe evidence. Ambiguous
+identity must never be guessed.
+
+The withdrawn direct-native notch V3 remains failure evidence only. The newer
+OpenCV synthetic-pass prototype and installed `D:\AFCV1\rt` runtime are the
+structural starting point, but no real OpenCV development pixels have been
+scored and no inspection processor integration is active.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_ALL_IMAGE_PROCESSING_MIGRATION_START_CHECKPOINT_20260822.md`.
+Begin the fresh chat at `OCV-00`: read-only exact inventory, frozen working
+family baselines, and exact PFC003/PFC010 source-path/hash resolution. The
+healthy processor remains untouched; no live provider activation, real image
+read, XML, training, production, deletion, or wafer action is authorized by
+the checkpoint.

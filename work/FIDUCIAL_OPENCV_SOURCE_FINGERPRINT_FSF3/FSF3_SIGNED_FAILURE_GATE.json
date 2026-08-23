@@ -1,0 +1,22 @@
+{
+  "schema": "argos_signed_terminal_failure_gate_v1",
+  "createdUtc": "2026-08-22T16:43:00Z",
+  "state": "FAIL_FSF3_SOURCE_FINGERPRINT_PATH_MISSING",
+  "responseState": "FAILED",
+  "requestId": "REQ_FSF3",
+  "responseToken": "R_8000B87CFC61_20260822163530416_79c70d47.ready",
+  "signedResponseVerified": true,
+  "terminalResponseGate": {
+    "path": "work/FIDUCIAL_OPENCV_SOURCE_FINGERPRINT_FSF3/FSF3_TERMINAL_RESPONSE_GATE.json",
+    "sha256": "2D4A50ED964BC7B0D0E8C1FE2B0D8CB2D6B754D9064904BA0A9A2FC9B57589D8"
+  },
+  "failureJsonSha256": "FF5E6375B4932C282FCD6B2145FF3902C642850F7A537050E18D0A65F3FADBAD",
+  "stderrSha256": "9346F40A0CAA7F1E17D019187E4C1C1C7A81ADE8E4A1F5E723155BDDD8734D06",
+  "failedPremise": "The exact PFC010 BF source path was assumed to exist and be readable through its job-declared process-local alias.",
+  "observedFailure": "Fingerprint source is missing through verified alias F:\\Lot_62616-115\\62616-115_20260807120245\\Slot23\\BrightfieldFrontsideWafer\\resizedImage\\62616-115_Slot23_BrightfieldFrontsideWafer_PM2_resizedImage.bmp.",
+  "sourceHashesAccepted": false,
+  "pixelScoringAllowed": false,
+  "directPostFailureObservationRequiredBeforeMutation": true,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

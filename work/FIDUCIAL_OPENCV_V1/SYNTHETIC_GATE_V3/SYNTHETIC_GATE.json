@@ -1,0 +1,99 @@
+{
+  "schema": "argos_native_frontside_wafer_pose_opencv_v1_synthetic_gate",
+  "state": "PASS_OPENCV_NATIVE_POSE_SYNTHETIC_GATE",
+  "caseCount": 5,
+  "passCount": 5,
+  "failedCaseIds": [],
+  "cases": [
+    {
+      "caseId": "CLEAN_PAIRED",
+      "expectedState": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_NO_PHYSICAL_INDENTATION",
+      "actualState": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_NO_PHYSICAL_INDENTATION",
+      "expectedPhysicalCandidates": 0,
+      "actualPhysicalCandidates": 0,
+      "expectedBfOnlyCandidates": 0,
+      "actualBfOnlyCandidates": 0,
+      "expectedDfOnlyCandidates": 0,
+      "actualDfOnlyCandidates": 0,
+      "resultPath": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\FIDUCIAL_OPENCV_V1\\SYNTHETIC_GATE_V3\\CLEAN_PAIRED\\RESULT.json",
+      "resultSha256": "7E8CB19AC828838607137F4D52C5A3F62F75B237084DB8765F272B54AEBF2071",
+      "passed": true
+    },
+    {
+      "caseId": "PAIRED_SINGLE",
+      "expectedState": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_MANUFACTURED_NOTCH_MORPHOLOGY_AND_RECIPROCAL_SCRIBE_REQUIRED",
+      "actualState": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_MANUFACTURED_NOTCH_MORPHOLOGY_AND_RECIPROCAL_SCRIBE_REQUIRED",
+      "expectedPhysicalCandidates": 1,
+      "actualPhysicalCandidates": 1,
+      "expectedBfOnlyCandidates": null,
+      "actualBfOnlyCandidates": 0,
+      "expectedDfOnlyCandidates": null,
+      "actualDfOnlyCandidates": 1,
+      "resultPath": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\FIDUCIAL_OPENCV_V1\\SYNTHETIC_GATE_V3\\PAIRED_SINGLE\\RESULT.json",
+      "resultSha256": "F88A44E5A2C50700D79113EFACBAE4F14FDF6004C8B8B1566B8341E4DB34AA9D",
+      "passed": true
+    },
+    {
+      "caseId": "BF_ONLY_APPEARANCE",
+      "expectedState": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_NO_PHYSICAL_INDENTATION",
+      "actualState": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_NO_PHYSICAL_INDENTATION",
+      "expectedPhysicalCandidates": 0,
+      "actualPhysicalCandidates": 0,
+      "expectedBfOnlyCandidates": 1,
+      "actualBfOnlyCandidates": 1,
+      "expectedDfOnlyCandidates": 0,
+      "actualDfOnlyCandidates": 0,
+      "resultPath": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\FIDUCIAL_OPENCV_V1\\SYNTHETIC_GATE_V3\\BF_ONLY_APPEARANCE\\RESULT.json",
+      "resultSha256": "09A2A8F90AE15F1302B5004124BE4537FAADEEE74573446403BFA416D35F863F",
+      "passed": true
+    },
+    {
+      "caseId": "TWO_PHYSICAL_COMPETITORS",
+      "expectedState": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_MULTIPLE_PHYSICAL_INDENTATIONS",
+      "actualState": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_MULTIPLE_PHYSICAL_INDENTATIONS",
+      "expectedPhysicalCandidates": 2,
+      "actualPhysicalCandidates": 2,
+      "expectedBfOnlyCandidates": 0,
+      "actualBfOnlyCandidates": 0,
+      "expectedDfOnlyCandidates": 0,
+      "actualDfOnlyCandidates": 0,
+      "resultPath": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\FIDUCIAL_OPENCV_V1\\SYNTHETIC_GATE_V3\\TWO_PHYSICAL_COMPETITORS\\RESULT.json",
+      "resultSha256": "B653275C3A149BE42E692E397F5292DCA350932372ABCB3180D275720D367223",
+      "passed": true
+    },
+    {
+      "caseId": "CHANNEL_POSE_DISAGREEMENT",
+      "expectedState": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_BF_DF_PERIMETER_DISAGREEMENT",
+      "actualState": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_BF_DF_PERIMETER_DISAGREEMENT",
+      "expectedPhysicalCandidates": 0,
+      "actualPhysicalCandidates": 0,
+      "expectedBfOnlyCandidates": 0,
+      "actualBfOnlyCandidates": 0,
+      "expectedDfOnlyCandidates": 0,
+      "actualDfOnlyCandidates": 0,
+      "resultPath": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\FIDUCIAL_OPENCV_V1\\SYNTHETIC_GATE_V3\\CHANNEL_POSE_DISAGREEMENT\\RESULT.json",
+      "resultSha256": "794D4D58872D69E0A47F56591C4374CF65D440424EE13691C95198EE76ADD964",
+      "passed": true
+    }
+  ],
+  "channelIndependenceGate": {
+    "schema": "argos_native_pose_channel_independence_gate_v1",
+    "state": "PASS_BF_RESULT_INVARIANT_TO_DF_MUTATION",
+    "bfResultExactObjectMatch": true,
+    "bfDfPoseAveragingAllowed": false,
+    "reviewOnly": true
+  },
+  "fs15RefusalGate": {
+    "schema": "argos_native_pose_fs15_refusal_gate_v1",
+    "state": "PASS_FS15_DEVELOPMENT_INPUT_REFUSED",
+    "fs15TuningAllowed": false,
+    "reviewOnly": true
+  },
+  "bfDfIndependent": true,
+  "bfDfPoseAveragingAllowed": false,
+  "manufacturedNotchAuthorityGranted": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

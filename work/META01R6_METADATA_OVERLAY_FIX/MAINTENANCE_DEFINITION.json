@@ -1,0 +1,32 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Apply-META01R6MetadataOverlayFix.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-JbodAllWaferInventory.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Invoke-JbodAllWaferInventory.ps1",
+      "approvedPredecessorSha256": [
+        "BF0BAF295F3D1F3234C5C2A5DE184AFEA4BE446BB9593BE9E10BB0E8F932F50A",
+        "228D9EDD0EFF45E58682659DC6C807FB04F63DD55E48C7F70426BF272C08FA7C"
+      ],
+      "installedSha256": "228D9EDD0EFF45E58682659DC6C807FB04F63DD55E48C7F70426BF272C08FA7C",
+      "allowCreate": false
+    },
+    {
+      "source": "payload/Run-JbodAllWaferProcessor.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Run-JbodAllWaferProcessor.ps1",
+      "approvedPredecessorSha256": [
+        "8EB83C05CA650C831D2DE8A6AB89ABD2941271B05B31FA93BCFFB553DEAAA892",
+        "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4"
+      ],
+      "installedSha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+      "allowCreate": false
+    }
+  ],
+  "allowedTaskActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_META01R6_METADATA_OVERLAY_FIX"
+  }
+}

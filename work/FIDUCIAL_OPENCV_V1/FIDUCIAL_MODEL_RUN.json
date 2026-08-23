@@ -1,0 +1,141 @@
+{
+  "schema": "argos_fiducial_model_run_v2",
+  "runId": "FIDCV1",
+  "workflowRevision": "ARGOS_FIDUCIAL_MODEL_WORKFLOW_V2",
+  "workflowPath": "work/ARGOS_FIDUCIAL_MODEL_WORKFLOW.json",
+  "workflowSha256": "1787BBE811DE8F6D0089BC7D9F35BE1602013C3CE01569D3938A8073DF256BE4",
+  "state": "PASS_SYNTHETIC_IMPLEMENTATION_VERIFICATION_PENDING_NATIVE_SOURCE_OBSERVATION",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "identity": {
+    "product": "MULTI_PRODUCT_DEVELOPMENT_ONLY",
+    "productRevision": "FIDCV1",
+    "processBlock": "NATIVE_WAFER_PERIMETER_AND_NOTCH_POSE",
+    "step": "DEVELOPMENT",
+    "operation": "REVIEW_ONLY_NATIVE_POSE",
+    "appearanceRegimeId": "PENDING_PER_PRODUCT_DECLARATION",
+    "topologyId": "PENDING_OPERATOR_FOR_EACH_PRODUCT"
+  },
+  "evidencePartition": {
+    "partitionPath": "work/FIDUCIAL_OPENCV_V1/DEVELOPMENT_PARTITION.json",
+    "designationDevelopmentPhysicalIdentities": [
+      "62628-281_20260813112015_Slot02",
+      "62616-115_20260807120245_Slot23"
+    ],
+    "calibrationPhysicalIdentities": [],
+    "independentValidationPhysicalIdentities": [],
+    "laterTransferPhysicalIdentities": [],
+    "validationTargetUsedForTuning": false
+  },
+  "topology": {
+    "operatorDesignationRequired": true,
+    "operatorFeedbackPath": null,
+    "operatorFeedbackSha256": null,
+    "lineInventoryPath": null,
+    "lineInventorySha256": null,
+    "cornerMaskPath": null,
+    "cornerMaskSha256": null,
+    "identityOnlyComponents": [],
+    "operatorStrokesArePixelTruth": false
+  },
+  "designatedSiteBinding": {
+    "predictionFrozenBeforeValidationOutcome": false,
+    "predictionInputs": [
+      "QUALIFIED_NOTCH_POSE",
+      "EXACT_MAP_OR_OPERATOR_DESIGNATION_RELATIONSHIP",
+      "CROP_TRANSFORM",
+      "CALIBRATION_LOCALIZATION_ERROR"
+    ],
+    "eligibilityRadiusPx": 0,
+    "eligibilityRadiusBasis": "PENDING_CALIBRATION_LOCALIZATION_ERROR",
+    "exactlyOneRefinedCandidateInsideRadiusRequired": true,
+    "completeGeometryOutsideRadiusEligible": false,
+    "zeroOrMultipleCandidatesInsideRadiusState": "HOLD_DESIGNATED_FIDUCIAL_SITE_AMBIGUOUS"
+  },
+  "nativeInputs": [],
+  "calibration": {
+    "boundaryDirection": "GEOMETRIC_OUTSIDE_TO_INTENDED_INTERIOR",
+    "outsideGuardPx": 0,
+    "maximumSeedAssociationDistancePx": 0,
+    "endpointIgnoreAlongLinePx": 0,
+    "cornerProfileFootprintExcludedBeforePixelRead": true,
+    "sampleCardinalitySource": "NOMINAL_MODEL_LENGTH",
+    "signedPolarityFrozenPerChannelPerLine": true,
+    "lineGeometryFixedPointIterations": 0,
+    "lineInterceptAndSlopeFrozenBeforePoseSolve": true,
+    "poseUnknowns": ["GLOBAL_X", "GLOBAL_Y", "GLOBAL_THETA"],
+    "perCandidateLineRefitAllowed": false,
+    "bfDfPoseAveragingAllowed": false,
+    "thresholdChangesFromParent": []
+  },
+  "qualityGates": {
+    "state": "SYNTHETIC_ONLY_NOT_FROZEN_FOR_REAL_DATA",
+    "minimumDirectSupportFraction": 0,
+    "minimumAcceptedSamplesPerLine": "PENDING",
+    "maximumUnsupportedSamplesPerLine": 0,
+    "maximumUnsupportedGapPx": 0,
+    "maximumFitResidualPx": 0,
+    "maximumP90ResponseWidthPx": 0,
+    "residualStatisticPopulation": "PENDING_ACCEPTED_EXACT_SET",
+    "responseWidthStatisticPopulation": "PENDING_ACCEPTED_EXACT_SET",
+    "maximumRigidRmsPx": 0,
+    "minimumJointRank": 3,
+    "maximumConditionProxy": 0,
+    "maximumBfDfCenterDifferencePx": 0,
+    "maximumBfDfAngleDifferenceDegrees": 0
+  },
+  "internalVerification": {
+    "allMandatoryLinesPassBothChannels": false,
+    "acceptedPolarityViolationCount": null,
+    "disjointSampleCrossValidationPass": false,
+    "commonNominalPosePerturbationPass": false,
+    "lineOrderInvariancePass": false,
+    "boundedLeaveoutPass": false,
+    "leaveoutGateSpace": "FULL_FROZEN_MODEL_NATIVE_PIXEL_DISPLACEMENT",
+    "leaveoutMaximumDisplacementPx": null,
+    "leaveoutMaximumDisplacementBasis": null,
+    "nominalCardinalityInvariancePass": false,
+    "ignoredCornerPixelMutationInvariancePass": false,
+    "repeatingPatternLookalikesRejected": false,
+    "designatedSiteBindingMutationPass": false,
+    "outsideRadiusCompleteInstancesRemainIneligible": false
+  },
+  "implementationVerification": {
+    "scope": "SYNTHETIC_AND_PORTABLE_RUNTIME_ONLY",
+    "sourcePath": "work/PATTERNED_FIDUCIAL_INVENTORY/tools/NativeFrontsideWaferPoseOpenCvV1.py",
+    "sourceSha256": "3CC4630B3A689C80887C2B8572C3A0C37B5342301E88DD8FFF4046E67EFB4DB9",
+    "windowsPowerShellHarnessPath": "work/PATTERNED_FIDUCIAL_INVENTORY/tools/Test-NativeFrontsideWaferPoseOpenCvV1.ps1",
+    "windowsPowerShellHarnessSha256": "B8B8DA87953292FE736796FDA9FD5FBA5030EEC7CA32F4BF661494FD435F97E5",
+    "nativeSyntheticGatePath": "work/FIDUCIAL_OPENCV_V1/SYNTHETIC_GATE_V3/SYNTHETIC_GATE.json",
+    "nativeSyntheticGateSha256": "4454C3A4CC0EFF15C5E81335DEE55652C2EAE8FA65AEF9D4858F19A4B8BE4986",
+    "nativeSyntheticGateState": "PASS_OPENCV_NATIVE_POSE_SYNTHETIC_GATE",
+    "portableRuntimeGatePath": "work/FIDUCIAL_OPENCV_V1/portable/FIDCV1_PORTABLE_RUNTIME_GATE.json",
+    "portableRuntimeGateSha256": "6BCA2B3FA69416BE9E7DE9D02B606081A24C976275C5A4D1B1E83D133D30A409",
+    "portableRuntimeGateState": "PASS_FIDUCIAL_OPENCV_PORTABLE_RUNTIME_GATE",
+    "portableSyntheticGatePath": "work/FIDUCIAL_OPENCV_V1/SYNTHETIC_GATE_PORTABLE_V1/SYNTHETIC_GATE.json",
+    "portableSyntheticGateSha256": "0F3AA230AD1CDBBEC2BD47F5AD7C6834FA98282739A1FBFC247F66A537049558",
+    "portableSyntheticGateState": "PASS_OPENCV_NATIVE_POSE_SYNTHETIC_GATE",
+    "syntheticCaseCount": 5,
+    "syntheticPassCount": 5,
+    "bfResultInvariantToDfMutation": true,
+    "bfDfPoseAveragingAllowed": false,
+    "fs15DevelopmentInputRefused": true,
+    "realImageBytesRead": false,
+    "realThresholdsFrozen": false,
+    "realInternalVerificationPassed": false
+  },
+  "independentValidation": {
+    "frozenNoTuning": true,
+    "sameStage": true,
+    "siteBound": true,
+    "targetResults": [],
+    "completeIndependentPositiveCount": 0,
+    "completeIndependentDesignatedSitePositiveCount": 0,
+    "operatorPresentationAllowed": false
+  },
+  "authority": {
+    "alignmentAuthorityGranted": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false
+  }
+}

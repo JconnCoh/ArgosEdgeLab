@@ -1,0 +1,101 @@
+{
+  "schema": "argos_guir9c3_live_terminal_evidence_v1",
+  "createdUtc": "2026-08-22T22:23:00Z",
+  "repository": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab",
+  "requiredRepositoryCommitPresent": "bb09223748c446f0b9e38656d80ca996049a3e55",
+  "revision": "GUIR9C3",
+  "disposition": "RELEASED_REVIEW_ONLY",
+  "request": {
+    "requestId": "REQ_20260822T220504669Z_0C7FF7185E9A",
+    "signedZipSha256": "5B55960036659951AE351DE0DD733176BCDCAE3529118DFD197BA7F2FC114B37",
+    "jobClass": "MAINTENANCE_PATCH",
+    "targetRole": "JBOD",
+    "publishedRequestCount": 1
+  },
+  "gatewayIntakeObservation": {
+    "sharePath": "U:/ProjectPortalRO/requests/REQ_20260822T220504669Z_0C7FF7185E9A.ready.zip",
+    "state": "STALLED_UNCONSUMED_AT_GATEWAY_SHARE",
+    "intakeCopySha256Verified": true,
+    "packageSignatureVerified": true,
+    "operatorReportedPermissionPromptAtJbodEndpointRoot": true,
+    "gatewayAclCauseProven": false
+  },
+  "manualWrapperFailure": {
+    "responseId": "R_77AB97E22A6B_20260822221726887_78afc754",
+    "responseRequestId": "REQ_20260822T220504669Z_0C7FF7185E9A.ready",
+    "state": "FAILED",
+    "detail": "Portal request manifest is missing.",
+    "cause": "EXTRA_READY_WRAPPER_DIRECTORY_ABOVE_SIGNED_PACKAGE",
+    "installedTargetBytesChanged": false,
+    "responseZipPath": "work/GUIR9C3_PORTAL/manual_wrapper_failure_response/R_77AB97E22A6B_20260822221726887_78afc754.ready.zip",
+    "responseZipSha256": "340FA28A548E89540946BC8B6D6F8390A0D3E7AA35DD980CA0B1546C3F7EF963",
+    "signatureVerified": true
+  },
+  "terminalResponse": {
+    "responseId": "R_7C549BAAF87D_20260822222055187_069d4c50",
+    "requestId": "REQ_20260822T220504669Z_0C7FF7185E9A",
+    "state": "PASS_MAINTENANCE_PATCH",
+    "entryPointState": "PASS_GUIR9_DIRECT_GUI_PATCH_AND_TRAY_ACTIVATION",
+    "responseZipPath": "work/GUIR9C3_PORTAL/live_response/R_7C549BAAF87D_20260822222055187_069d4c50.ready.zip",
+    "responseZipSha256": "C58BD21C7DA0BF2251F827D31918B2828F9EF05603BE557713C2BE1DD3813755",
+    "manifestSha256": "8096588B61FC9C5A2B9219E68CA58F7C34185E95783F6E7F4DC3D2FC39A0BD72",
+    "signatureSha256": "01343DC96418398343CFD388583385AD9B4CF4CBA51E46FCE4186211FBEFD34F",
+    "stdoutSha256": "27BCD409F8E7A1B64840D72173795BCC3D58A3944E4AA7E9B47043BC14EC34D9",
+    "resultSha256": "1480EAD9217E9434D6A4E4DF5BAC4864ABB8F694C2095381DAF2A48B1C8CA21C",
+    "signatureVerified": true,
+    "changedFiles": 4
+  },
+  "installedTargets": [
+    {
+      "path": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Show-JbodAllWaferTray.ps1",
+      "predecessorSha256": "C03812C6889B102DFD9B3CB466E70B06B8943C1123A882EB0ADE972C641DAB2B",
+      "installedSha256": "CF8C229A9F0EC5C26D88F800849DF96C9EC6AAA3039FE81F01971E477F4A3828"
+    },
+    {
+      "path": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe",
+      "predecessorSha256": "39AEA256E4C08043A6F9AEFEADB32F4297217E878C8B71A4603D64FA570677A6",
+      "installedSha256": "FD2ABADC0494C0FABA81452B18FB7D860AF7B4F32CA086018D0907E2885B1225"
+    },
+    {
+      "path": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/runtime/viewer/ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe",
+      "predecessorSha256": "39AEA256E4C08043A6F9AEFEADB32F4297217E878C8B71A4603D64FA570677A6",
+      "installedSha256": "FD2ABADC0494C0FABA81452B18FB7D860AF7B4F32CA086018D0907E2885B1225"
+    },
+    {
+      "path": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/runtime/viewer/Program.cs",
+      "predecessorSha256": "20A2442FAC73ABDDE95C8876C6A21A2988E63AFBB119F969F7979F7096C7D545",
+      "installedSha256": "CA69813161A862FF1623AE1989D18F8E6B1394901B2C1BAC279F97307AA07B2C"
+    }
+  ],
+  "runtime": {
+    "trayTask": "ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2",
+    "trayPrincipal": "lwm",
+    "trayProcessStable": true,
+    "trayProcessId": 30860,
+    "processorTask": "ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2",
+    "processorProcessIdBefore": 6708,
+    "processorProcessIdAfter": 6708,
+    "processorRestarted": false,
+    "processorTaskAction": false,
+    "protectedTaskDefinitionsChanged": false,
+    "protectedTaskPrincipalsChanged": false
+  },
+  "operatorObservation": {
+    "liveGuiVisible": true,
+    "catalogPopulated": true,
+    "showAllDatesChecked": true,
+    "visibleExactScanVisitCount": 40,
+    "processorVisibleState": "WATCHING",
+    "formalInspectionCatalogClosureClaimed": false
+  },
+  "boundaries": {
+    "imageRead": false,
+    "sourceMutation": false,
+    "deletion": false,
+    "waferAction": false,
+    "fiducialArtifactsChanged": false,
+    "xmlEnabled": false,
+    "trainingEnabled": false,
+    "productionRoutingEnabled": false
+  }
+}

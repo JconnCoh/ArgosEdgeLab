@@ -1,0 +1,28 @@
+{
+  "schema": "argos_project_portal_request_definition_v1",
+  "targetRole": "JBOD",
+  "jobClass": "DATA_PULL",
+  "handler": "",
+  "maxResultBytes": 134217728,
+  "parameters": {
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "relativePaths": [
+      "identity/SCRIBE_IDENTITY_QUEUE.json",
+      "catalog/ALL_WAFER_CATALOG.json",
+      "identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json",
+      "metadata/verified/ACTIVE_VERIFIED_METADATA_OVERLAY.json",
+      "processor/PROCESSING_LEDGER.json",
+      "dashboard_manifest.json",
+      "dashboard/DASHBOARD_CATALOG_STATUS.json",
+      "processor/PROCESSOR_STATUS.json",
+      "PROCESSOR_CONFIG.json",
+      "Show-JbodAllWaferTray.ps1",
+      "Open-JbodCompletedLot.ps1",
+      "Update-JbodDashboardManifest.ps1",
+      "Export-JbodPendingInsiteRequest.ps1",
+      "Import-JbodScribeVerificationResponse.ps1"
+    ],
+    "maximumFiles": 14,
+    "maximumBytes": 134217728
+  }
+}

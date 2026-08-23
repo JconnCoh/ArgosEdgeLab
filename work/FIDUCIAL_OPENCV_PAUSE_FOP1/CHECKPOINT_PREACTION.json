@@ -1,0 +1,76 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "FIDCV1_OPERATOR_PAUSE_FOR_GUI_FOP1_CHECKPOINT",
+  "createdUtc": "2026-08-22T17:11:34.4010185Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "PROMOTE_FILE_BACKED_FIDUCIAL_PAUSE_AND_GUI_PRIORITY_CHECKPOINT",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"AGENTS.md","sha256":"E3C403CF8937CC80B1B6F3EC353159EC32BE9B228C091DBAF0D87ADB5D7B9EF0"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"2D64086B2FDADC64AD42FCD6B1EF8C9D974FD0FD2C883F4D0C7C71CF6B706AB4"},
+    {"path":"work/ARGOS_CONTINUITY_STATE.json","sha256":"E7EE2FC2F55616F087792B032062C2F5F21C76EDBE0B17FA659F32F77CED723C"},
+    {"path":"work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md","sha256":"A5FAD6B8E185AB4350D989FBD6DC114D15356CDE90DA1247FB72B4ED985CD621"},
+    {"path":"work/ARGOS_PATH_LENGTH_SAFETY.md","sha256":"BEED1B1F76EEA75E1DDEC102CF1C9ABD7F72BFAC816CAF6D15925700C428ED01"},
+    {"path":"work/templates/ARGOS_ZERO_RECURRENCE_PREACTION.template.json","sha256":"3E22DF60E5E71022DA7A5B03CE9BD221D49C88B32454DC5B3C0090E90B8B561D"},
+    {"path":"utilities/Confirm-ArgosPathBudget.ps1","sha256":"3A4820E81F25CEA9AB8EB5BE9E60B6324915DFC260132145CB8FB02970360835"},
+    {"path":"utilities/Confirm-ArgosProjectContinuity.ps1","sha256":"7E1F9D9B9325AA4BA6AF7DDB157795A806A6CBFE1FA0BA29176C5808CE6E62E4"},
+    {"path":"utilities/Confirm-ArgosCodexSessionSafety.ps1","sha256":"3474408D888FAEBDCEBB0B25BA6337A30298D77BAFBD2BFD023263C3EE429E8F"},
+    {"path":"work/FIDUCIAL_OPENCV_PAUSE_FOP1/PAUSE_STATE.json","sha256":"1A8176BEAC7A3DE234D4E82964F6AC2A97688BFFADDE14547727CDB15009C319"},
+    {"path":"work/FIDUCIAL_OPENCV_JBOD_INSTALL_FOI1/INTEGRATION_BOUNDARY_V2.json","sha256":"046F8EBA7177A5D2B1189B68AFFC6AB78DDEDAA62F6F5449A3A1AD24BA0BC994"},
+    {"path":"work/FIDUCIAL_OPENCV_POSTFAIL_OBSERVATION_FSO1/POST_FAILURE_OBSERVATION.json","sha256":"6E622BF6BB96A45E75483EF9543B7588076BBF0B6F794F60B0D90EA24B9D25BE"},
+    {"path":"work/FRONTSIDE_INSPECTION_REVIEW_ONLY/FIDCV1_FSF3_FAILURE_FSO1_CAPABILITY_GAP_CHECKPOINT_20260822.md","sha256":"4682ECF3B21763AF86FC3BF8D7096BC837E551D9706ABCFCEBCA9F8707B02735"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      "work/FIDUCIAL_OPENCV_SOURCE_FINGERPRINT_FSF1",
+      "work/FIDUCIAL_OPENCV_SOURCE_FINGERPRINT_FSF2",
+      "R10",
+      "AVS1"
+    ]
+  },
+  "boundedAction": {
+    "liveEndpointRequestsMaximum": 0,
+    "installedSupportEntrypointsMaximum": 0,
+    "dOnlyRuntimeRootsMaximum": 0,
+    "runtimeBundleBytes": 0,
+    "runtimeExpandedBytes": 0,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "imageRead": false,
+    "sourceDeletion": false,
+    "waferAction": false,
+    "healthyProcessorTouched": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

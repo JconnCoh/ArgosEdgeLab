@@ -1,0 +1,67 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "META01R1_SINGLE_LINE_TRAY_OPTIONAL_CONFIG_FIX",
+  "createdUtc": "2026-08-22T23:32:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "SIGN_ONE_META01R1_MAINTENANCE_PATCH",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"AGENTS.md","sha256":"6C6F5BBB66A7D0F7365A3E91A2E958A8947D19EF2CA10818CDBA57DE66197C40"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"992612BF67BEC5373290D33AFBA6BB883B043455E9BF32381ED95D64A72CF820"},
+    {"path":"work/ARGOS_CONTINUITY_STATE.json","sha256":"B43BCBCF6B1F26D5CB582CAF1B03316EC12E8375CCD3FC9C0FC372FA03B1246D"},
+    {"path":"work/META01R1_TRAY_OPTIONAL_CONFIG_FIX/META01R1_RECOVERY_INTENT.json","sha256":"8B3E999A131434703F00455983EBCB9E76094433155742F7AA18D6BF455F2FA4"},
+    {"path":"work/META01R1_TRAY_OPTIONAL_CONFIG_FIX/META01R1_EXACT_LIVE_SOURCE_DIAGNOSIS.json","sha256":"307CCC97F16E6DCFDC27314D93ECDC451C790258B241BDA2945F580E328FD842"},
+    {"path":"work/META01R1_TRAY_OPTIONAL_CONFIG_FIX/MAINTENANCE_DEFINITION.json","sha256":"5562FB6B7B2659044A52BACE0C284831C164C65EAEB82FFA372C06155247A5A5"},
+    {"path":"work/META01R1_TRAY_OPTIONAL_CONFIG_FIX/payload/Apply-META01R1TrayConfigReadFix.ps1","sha256":"97E4AAA5A9F27C7E4A618F4B7194B8729BFADF01A2CDE31FE93F5E92926A23CC"},
+    {"path":"work/META01R1_TRAY_OPTIONAL_CONFIG_FIX/payload/Show-JbodAllWaferTray.ps1","sha256":"DA8E272CF2A00BC50A37FD17662E10E0FFEFFA130A928769D517028372CC881F"},
+    {"path":"work/META01R1_TRAY_OPTIONAL_CONFIG_FIX/META01R1_CLONE_LITERAL_GATE.json","sha256":"8A838F79CBEFD727CB0F798F18C79AFFB93351AEEF8AF62A8AA3E2726BDE5C24"},
+    {"path":"work/META01R1_TRAY_OPTIONAL_CONFIG_FIX/META01R1_CONFIG_SHAPE_GATE.json","sha256":"00F1F583DD6FEBCDF22FFC8482A1D753DCC56F48A2527B282BC291AE83152806"},
+    {"path":"work/META01R1_TRAY_OPTIONAL_CONFIG_FIX/META01R1_PLANNED_PATH_GATE.json","sha256":"5E16FA7A93BE05AC9A7C165AA4D464E682CA99B767DA557DDB51FC4B5FD994A1"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/New-SignedPortalPackage.ps1","sha256":"8AF7AF26B6899CB6475735FEE8AB6E5A29231AAED8EDA898F1E7F4B04A2A403F"},
+    {"path":"work/GUIR9C3_PORTAL/GUIR9C3_LIVE_TERMINAL_EVIDENCE.json","sha256":"8B2901E9716B17B9B996E0618E76090CAB5773FE6888FB8751EB3FA475DAFF9E"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": ["GUIR9", "GUIR9C1", "R10", "AVS1"]
+  },
+  "boundedAction": {
+    "liveEndpointRequestsMaximum": 1,
+    "installedFileChangesMaximum": 1,
+    "taskActions": ["STOP_IF_RUNNING:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2", "START_ALWAYS:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2"],
+    "processActions": ["REPLACE_EXACT_TRAY_PROCESS_ONLY"],
+    "processorActions": [],
+    "imageRead": false,
+    "sourceDeletion": false,
+    "waferAction": false,
+    "fiducialChange": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "GUIR9C3_SINGLE_MINIMAL_LIVE_GUI_REPAIR_SIGNING",
+  "createdUtc": "2026-08-22T22:04:02Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "SIGN_ONE_GUIR9C3_MAINTENANCE_PATCH",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"AGENTS.md","sha256":"6C6F5BBB66A7D0F7365A3E91A2E958A8947D19EF2CA10818CDBA57DE66197C40"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"015E80D4999C7D6F65D467AB6BEB9B28944A76D7B7839D52A31508B0DDEEF0C4"},
+    {"path":"work/ARGOS_CONTINUITY_STATE.json","sha256":"CC1A346823D8D8AD623C08B0429D2BC49AAA3DB763F45E95756C7D5B006380EC"},
+    {"path":"work/GUIR9C2_PORTAL/GUIR9C2_OPERATOR_WORKFLOW_REVIEW_CLEARANCE.json","sha256":"E7FBD6BD15EB5DBBE290D77A86DEE815D508FFD4175D82800C11D507DA7AB187"},
+    {"path":"work/GUIR9C3_PORTAL/GUIR9C3_RECOVERY_INTENT.json","sha256":"BABC17138E0E98B19A5CEABD5C235E25E23B11F24E5BCCE45385567C6AAF1D31"},
+    {"path":"work/GUIR9C3_PORTAL/MAINTENANCE_DEFINITION.json","sha256":"043AE0DE98E1395B19395D638467116A5C3CF57B3E186D3D231E609F83D08D53"},
+    {"path":"work/GUIR9C3_PORTAL/payload/Apply-GUIR9C3DirectGuiPatch.ps1","sha256":"0F9E1B32DE20CB8E6C04AC052853AB658C63EE08F5E480DAB8E588B079BA6872"},
+    {"path":"work/GUIR9C2_PORTAL/GUIR9C2_CLONE_LITERAL_GATE_V2.json","sha256":"B0C77BCDA048CD7E60B0525A6C4BC14269686958A755B29AA5C803EA823B5385"},
+    {"path":"work/GUIR9C2_PORTAL/GUIR9C2_PLANNED_PATH_GATE.json","sha256":"698C8848D7755F48AE5DBCCDC61EAD1DA0DDCA102F1157897E9747A9AE5BC095"},
+    {"path":"work/GUIR9C1_PORTAL/GUIR9C1O1_POST_FAILURE_OBSERVATION_EVIDENCE.json","sha256":"D6A480561D2723CD1EE2D5206E14B3C6FA39AFAB8568A0B74B8487F0915F4E18"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/New-SignedPortalPackage.ps1","sha256":"8AF7AF26B6899CB6475735FEE8AB6E5A29231AAED8EDA898F1E7F4B04A2A403F"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": ["GUIR9", "GUIR9C1", "R10", "AVS1"]
+  },
+  "boundedAction": {
+    "liveEndpointRequestsMaximum": 1,
+    "installedFileChangesMaximum": 4,
+    "taskActions": ["STOP_IF_RUNNING:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2", "START_ALWAYS:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2"],
+    "processActions": ["CLOSE_IF_RUNNING:ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe"],
+    "processorActions": [],
+    "imageRead": false,
+    "sourceDeletion": false,
+    "waferAction": false,
+    "fiducialChange": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

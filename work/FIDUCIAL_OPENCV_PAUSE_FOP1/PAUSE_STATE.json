@@ -1,0 +1,191 @@
+{
+  "schema": "argos_fiducial_pause_state_v1",
+  "revision": "FIDCV1_OPERATOR_PAUSE_FOR_GUI_FOP1",
+  "createdUtc": "2026-08-22T17:10:03.1048285Z",
+  "lifecycle": "FROZEN",
+  "state": "PAUSED_BY_OPERATOR_FOR_GUI_PRIORITY",
+  "disposition": "PENDING_GATE",
+  "authority": {
+    "repository": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab",
+    "branchAtPause": "codex/fiducial-opencv-d-drive",
+    "headAtPause": "bb09223748c446f0b9e38656d80ca996049a3e55",
+    "requiredPublishedAvc1CommitPresent": true,
+    "codexManagedWorktreeIsSourceOfTruth": false
+  },
+  "pause": {
+    "reason": "OPERATOR_REQUESTED_TEMPORARY_FIDUCIAL_PAUSE_TO_INVESTIGATE_GUI",
+    "fiducialWorkMayResumeWithoutNewOperatorMessage": false,
+    "guiInvestigationMayModifyFiducialArtifacts": false,
+    "healthyProcessorMustRemainUntouched": true,
+    "formalAvc1TenOfTenClosureClaimed": false
+  },
+  "architecture": {
+    "orderedDependency": [
+      "OPERATOR_DESIGNATED_FIDUCIAL_TOPOLOGY_AND_SITE",
+      "QUALIFIED_CHANNEL_LOCAL_FIDUCIAL_LOCALIZATION",
+      "PROVENANCE_BOUND_REFERENCE_TRANSFORMS",
+      "EXACT_COMPOSITE_FROM_QUALIFIED_REFERENCE_TRANSFORMS",
+      "INSPECTED_WAFER_REGISTRATION_TO_EXACT_COMPOSITE_REVISION",
+      "DEFECT_COMPARISON_ONLY_AFTER_REGISTRATION_PASS"
+    ],
+    "failClosedOn": [
+      "MISSING_FIDUCIAL",
+      "AMBIGUOUS_FIDUCIAL",
+      "UNQUALIFIED_FIDUCIAL",
+      "MISMATCHED_SOURCE_OR_TRANSFORM_PROVENANCE",
+      "UNQUALIFIED_REFERENCE_TRANSFORM",
+      "COMPOSITE_REVISION_MISMATCH",
+      "INSPECTED_WAFER_REGISTRATION_FAILURE"
+    ],
+    "geometryOrRegistrationGrantsProductionAuthority": false,
+    "integrationActivation": "CONFIGURATION_SELECTED_PROVIDER_AND_VERSIONED_SCHEMAS",
+    "hardCodedLotActivationAllowed": false,
+    "hardCodedRuntimeRootActivationAllowed": false,
+    "hardCodedFs15ActivationAllowed": false,
+    "hardCodedProductionAuthorityAllowed": false
+  },
+  "qualifiedProgress": {
+    "opencvPrototypeImplemented": true,
+    "prototypeSyntheticGateState": "PASS_OPENCV_NATIVE_POSE_SYNTHETIC_GATE",
+    "prototypeSyntheticCaseCount": 5,
+    "bfDfLocalizationIndependent": true,
+    "bfDfPoseAveragingAllowed": false,
+    "portableRuntimeBuilt": true,
+    "portableRuntimeInstalledOnJbod": true,
+    "jbodRuntimeRoot": "D:/AFCV1/rt",
+    "jbodRuntimeSelfTestState": "PASS_OPENCV_NATIVE_POSE_RUNTIME_PREFLIGHT",
+    "integrationBoundaryState": "LOCKED_CONFIG_DRIVEN_DOWNSTREAM_CONTRACT",
+    "realDevelopmentSourceHashesFrozen": false,
+    "realImagePixelScoringPerformed": false,
+    "fiducialAlignmentAuthorityGranted": false,
+    "compositeConstructionPerformed": false,
+    "patternedWaferRegistrationPerformed": false,
+    "patternedWaferInspectionPerformed": false
+  },
+  "terminalHistory": {
+    "withdrawnRequests": [
+      {"requestId":"REQ_FSF1","state":"WITHDRAWN_LOCAL_SIGNED_UNPUBLISHED","futureReuseAllowed":false},
+      {"requestId":"REQ_FSF2","state":"WITHDRAWN_LOCAL_SIGNED_UNPUBLISHED","futureReuseAllowed":false}
+    ],
+    "signedFingerprintRequest": {
+      "requestId": "REQ_FSF3",
+      "responseId": "R_8000B87CFC61_20260822163530416_79c70d47",
+      "responseState": "FAILED",
+      "failure": "EXACT_PFC010_BF_PATH_MISSING_THROUGH_VERIFIED_PROCESS_LOCAL_ALIAS",
+      "sourceHashesAccepted": false,
+      "imageBytesRead": false,
+      "helperRolledBack": true,
+      "successorPublished": false
+    },
+    "signedPostFailureObservation": {
+      "requestId": "REQ_FSO1",
+      "responseId": "R_736E657E8CCC_20260822165423207_9db7c7bc",
+      "responseState": "PASS_STATUS_COLLECTED",
+      "processorTaskState": "Running",
+      "configuredRawSearchRoot": "D:/KLARFExport",
+      "environmentInventoryReturned": false,
+      "exactNestedSourcePathResolved": false,
+      "tasksOrProcessesChanged": false,
+      "imageBytesRead": false
+    }
+  },
+  "currentBlocker": {
+    "state": "HOLD_EXACT_SOURCE_PATH_UNRESOLVED_ENDPOINT_CAPABILITY_AUTHORITY_REQUIRED",
+    "missingSource": "D:/KLARFExport/Lot_62616-115/62616-115_20260807120245/Slot23/BrightfieldFrontsideWafer/resizedImage/62616-115_Slot23_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "catalogPathIsLiveExistenceEvidence": false,
+    "existingQualifiedReadOnlyRouteResolvesExactLeafMetadata": false,
+    "endpointCapabilityImprovementAuthorized": false,
+    "processorRestartAuthorized": false,
+    "portalWorkerRestartAuthorized": false
+  },
+  "resumeContract": {
+    "operatorMustExplicitlyResumeFiducialWork": true,
+    "firstReadOrder": [
+      "AGENTS.md",
+      "work/ARGOS_CONTINUITY_STATE.json",
+      "work/ACTIVE_ARGOS_EDGE_LAB_STATE.md",
+      "work/PROJECT_MEMORY_INDEX.md",
+      "PAUSE_CHECKPOINT_PATH_FROM_CONTINUITY_STATE"
+    ],
+    "firstVerification": [
+      "AUTHORITATIVE_DESKTOP_REPOSITORY",
+      "COMMIT_bb09223748c446f0b9e38656d80ca996049a3e55_PRESENT",
+      "PASS_ARGOS_PROJECT_CONTINUITY",
+      "PASS_ARGOS_CODEX_SESSION_SAFETY",
+      "PAUSE_STATE_HASH_AND_ROOT_TREE_INVENTORIES_UNCHANGED"
+    ],
+    "nextAuthorizedDesignDecision": "REQUEST_EXPLICIT_AUTHORITY_FOR_ONE_BOUNDED_GENERIC_METADATA_ONLY_EXACT_LEAF_ENDPOINT_CAPABILITY_IMPROVEMENT_OR_USE_ALREADY_QUALIFIED_EQUIVALENT_ROUTE",
+    "capabilityMaximum": "ONLY_OPERATOR_SUPPLIED_EXACT_LEAVES_BENEATH_APPROVED_D_KLARFEXPORT_ROOT_RETURNING_EXISTENCE_LEAF_OR_CONTAINER_TYPE_CONTAINMENT_AND_REPARSE_METADATA",
+    "capabilityForbidden": [
+      "IMAGE_BYTE_READ",
+      "BROAD_DIRECTORY_ENUMERATION",
+      "TASK_OR_PROCESS_ACTION",
+      "PROCESSOR_OR_PORTAL_WORKER_RESTART",
+      "SOURCE_WRITE_OR_DELETE",
+      "QUEUE_OR_LEDGER_MUTATION",
+      "WAFER_ACTION"
+    ],
+    "afterExactLeafObservation": [
+      "CORRECT_AND_FREEZE_EXACT_PFC003_PFC010_BF_DF_PATHS",
+      "FREEZE_EXACT_SOURCE_BYTE_HASHES_AND_METADATA_IN_DEVELOPMENT_PARTITION",
+      "RUN_SEPARATELY_GATED_REVIEW_ONLY_OPENCV_DEVELOPMENT_THROUGH_CONFIGURATION_SELECTED_ADAPTER",
+      "FREEZE_MODEL_BEFORE_INDEPENDENT_PAIRED_BF_DF_VALIDATION",
+      "ONLY_AFTER_VALIDATION_QUALIFY_REFERENCE_TRANSFORMS_FOR_COMPOSITE_CONSTRUCTION",
+      "ONLY_AFTER_EXACT_COMPOSITE_FREEZE_REGISTER_INSPECTED_WAFERS_AND_COMPARE_DEFECTS"
+    ]
+  },
+  "rootInventories": [
+    {"path":"work/FIDUCIAL_OPENCV_V1","fileCount":2151,"totalBytes":535674484,"treeSha256":"9CCF2404E954AFCD4B487055FF276E14BB316662A9D1438560DF59094C65E55A"},
+    {"path":"work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1","fileCount":38,"totalBytes":400038,"treeSha256":"6162372B9B85BAC821B0BBAF2F004905DDF673775728E96167FB26A01951D039"},
+    {"path":"work/FIDUCIAL_JBOD_INVENTORY_OBSERVATION_FIO1","fileCount":23,"totalBytes":85184,"treeSha256":"F94E34222FF39512F688C3A85B290D1F0F415A43E707E7C959E6957C3DED0C71"},
+    {"path":"work/FIDUCIAL_OPENCV_JBOD_INSTALL_FOI1","fileCount":38,"totalBytes":201575669,"treeSha256":"E2038D394FF793FF82691969AB17E3C47983E2675839D32DD7BCEEB4CC3FE170"},
+    {"path":"work/FIDUCIAL_OPENCV_SOURCE_FINGERPRINT_FSF1","fileCount":22,"totalBytes":57471,"treeSha256":"EA59D4ADD11FF40F8C881484E127242908521D7F56F787981D2DCEC11FB7E55C"},
+    {"path":"work/FIDUCIAL_OPENCV_SOURCE_FINGERPRINT_FSF2","fileCount":25,"totalBytes":83741,"treeSha256":"3F0E4DD537FF50AECAEF78A852EBC56EB3700C5F23B954987729D53DDBDAE8C5"},
+    {"path":"work/FIDUCIAL_OPENCV_SOURCE_FINGERPRINT_FSF3","fileCount":43,"totalBytes":182198,"treeSha256":"F0737189A008BB59CBDA8F839EF0DCDC248ECB741B1B78EE6F9CC3F16D9F6AE2"},
+    {"path":"work/FIDUCIAL_OPENCV_POSTFAIL_OBSERVATION_FSO1","fileCount":35,"totalBytes":105184,"treeSha256":"A2ABA5624E72FD33D5DB4BF8CA9D899834EAC9E4395FDE38ADF31287221925E3"}
+  ],
+  "rootInventoryAlgorithm": "For each exact root: recursively enumerate files only, cap 5000, sort absolute FullName ordinally as PowerShell Sort-Object, record relative path with forward slashes plus pipe plus decimal byte count plus pipe plus uppercase file SHA256, join rows with LF and one final LF, then SHA256 UTF-8 without BOM.",
+  "keyArtifacts": [
+    {"path":"work/ARGOS_PATTERNED_WAFER_REGISTRATION_BEST_PRACTICE.md","sha256":"334AF0C52B843720AD26E37D28817840E502775392920562A13D15E215F717A8"},
+    {"path":"work/ARGOS_PATTERNED_WAFER_REGISTRATION_BEST_PRACTICE.json","sha256":"5C828D14E9AD73E9C4A1AE73C17B6FB1C65E510B9F38E63178779C9B822D07DD"},
+    {"path":"work/ARGOS_FIDUCIAL_MODEL_WORKFLOW.md","sha256":"366E2ED82C47D83C18D82C7033AD7A8691107385BBBCE6091B2FE568653B6640"},
+    {"path":"work/ARGOS_FIDUCIAL_MODEL_WORKFLOW.json","sha256":"1787BBE811DE8F6D0089BC7D9F35BE1602013C3CE01569D3938A8073DF256BE4"},
+    {"path":"work/templates/ARGOS_FIDUCIAL_MODEL_RUN.template.json","sha256":"0A0ECC5CE26766BA0A44A2B0AC0937D9A1F61F7242BDF8F0D22DF5394D84916F"},
+    {"path":"work/FIDUCIAL_OPENCV_V1/DEVELOPMENT_PARTITION.json","sha256":"FD54A18351D8FB70A814B4CA34BED643FC25F32904299CE5222AC84EAE75504F"},
+    {"path":"work/FIDUCIAL_OPENCV_V1/FIDUCIAL_MODEL_RUN.json","sha256":"6C36AE0BB40B9ECD0353B15E54716D9E508F648A37A953304C7F4B321C91FA3D"},
+    {"path":"work/PATTERNED_FIDUCIAL_INVENTORY/tools/NativeFrontsideWaferPoseOpenCvV1.py","sha256":"3CC4630B3A689C80887C2B8572C3A0C37B5342301E88DD8FFF4046E67EFB4DB9"},
+    {"path":"work/FIDUCIAL_OPENCV_V1/SYNTHETIC_GATE_V3/SYNTHETIC_GATE.json","sha256":"4454C3A4CC0EFF15C5E81335DEE55652C2EAE8FA65AEF9D4858F19A4B8BE4986"},
+    {"path":"work/FIDUCIAL_OPENCV_V1/portable/FIDCV1_PORTABLE_OPENCV_RUNTIME.zip","sha256":"467B210E941725724AE7F6F90CF5F7C162A51BD2E9018A7A0A768CA7AEE777D8"},
+    {"path":"work/FIDUCIAL_OPENCV_V1/portable/FIDCV1_PORTABLE_RUNTIME_GATE.json","sha256":"6BCA2B3FA69416BE9E7DE9D02B606081A24C976275C5A4D1B1E83D133D30A409"},
+    {"path":"work/FIDUCIAL_OPENCV_V1/SYNTHETIC_GATE_PORTABLE_V1/SYNTHETIC_GATE.json","sha256":"0F3AA230AD1CDBBEC2BD47F5AD7C6834FA98282739A1FBFC247F66A537049558"},
+    {"path":"work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/FIC1_TERMINAL_RESPONSE_GATE.json","sha256":"650B078B3DCDC12A2B08D0A8891E4582C8120AE410937821DA3BDB885C69D5DA"},
+    {"path":"work/FIDUCIAL_JBOD_INVENTORY_OBSERVATION_FIO1/FIO1_TERMINAL_RESPONSE_GATE.json","sha256":"9B9CE3CC9420135EAB829D2B5CBE9C6AD0CD2596446729E078B0860BD224F83C"},
+    {"path":"work/FIDUCIAL_OPENCV_JBOD_INSTALL_FOI1/FOI1_TERMINAL_RESPONSE_GATE.json","sha256":"E54585857204BDC2FE9A4632BAF3308987F195F91FFE00B9E98A0D78E56B169C"},
+    {"path":"work/FIDUCIAL_OPENCV_JBOD_INSTALL_FOI1/INTEGRATION_BOUNDARY_V2.json","sha256":"046F8EBA7177A5D2B1189B68AFFC6AB78DDEDAA62F6F5449A3A1AD24BA0BC994"},
+    {"path":"work/FIDUCIAL_OPENCV_SOURCE_FINGERPRINT_FSF1/FSF1_WITHDRAWAL.json","sha256":"C27B3E3800D3E2F790E9EA43E08C789FE3BBFB331C077472D5E2CF2BF72052F4"},
+    {"path":"work/FIDUCIAL_OPENCV_SOURCE_FINGERPRINT_FSF2/FSF2_WITHDRAWAL.json","sha256":"9AA3D2BD9D0BAA23F3BC6F8436CA49EC48352902BC95C23EE1C2DC487B7AB122"},
+    {"path":"work/FIDUCIAL_OPENCV_SOURCE_FINGERPRINT_FSF3/final/REQ_FSF3.ready.zip","sha256":"9AC6B927C4CFED89E5F8C3288072CDF8621A77E798C693077A767E77C5C843A6"},
+    {"path":"work/FIDUCIAL_OPENCV_SOURCE_FINGERPRINT_FSF3/FSF3_TERMINAL_RESPONSE_GATE.json","sha256":"2D4A50ED964BC7B0D0E8C1FE2B0D8CB2D6B754D9064904BA0A9A2FC9B57589D8"},
+    {"path":"work/FIDUCIAL_OPENCV_SOURCE_FINGERPRINT_FSF3/FSF3_SIGNED_FAILURE_GATE.json","sha256":"15B0F42987342283BDADAE66411B7DAA9ECD4868B14F7281E0A0DD1985B2A8E8"},
+    {"path":"work/FIDUCIAL_OPENCV_POSTFAIL_OBSERVATION_FSO1/final/REQ_FSO1.ready.zip","sha256":"6E11477D711BAAF5AE88D8DBEBF5B280E5FADB7B799BCF143E6CF4F8B19B0A6D"},
+    {"path":"work/FIDUCIAL_OPENCV_POSTFAIL_OBSERVATION_FSO1/FSO1_TERMINAL_RESPONSE_GATE.json","sha256":"EDEF1E00933FD96094679DB96169A6F42E553038B025EE7DCD96966F9B4D76D7"},
+    {"path":"work/FIDUCIAL_OPENCV_POSTFAIL_OBSERVATION_FSO1/POST_FAILURE_OBSERVATION.json","sha256":"6E622BF6BB96A45E75483EF9543B7588076BBF0B6F794F60B0D90EA24B9D25BE"},
+    {"path":"work/FIDUCIAL_OPENCV_POSTFAIL_OBSERVATION_FSO1/RECOVERY_INTENT.json","sha256":"0DD0361A28F5EC941ABE2B0556FA67ABC6399D518501E21A735B537067C1C9BD"},
+    {"path":"work/FRONTSIDE_INSPECTION_REVIEW_ONLY/FIDCV1_FSF3_FAILURE_FSO1_CAPABILITY_GAP_CHECKPOINT_20260822.md","sha256":"4682ECF3B21763AF86FC3BF8D7096BC837E551D9706ABCFCEBCA9F8707B02735"}
+  ],
+  "invariants": {
+    "avc1ProcessorActionAllowed": false,
+    "r10Reusable": false,
+    "avs1Reusable": false,
+    "globalFs15StateChanged": false,
+    "pfc004StateChanged": false,
+    "slot07HoldChanged": false,
+    "xmlExportEnabled": false,
+    "trainingEligible": false,
+    "productionEligible": false,
+    "sourceDeletionAllowed": false,
+    "waferAbortAllowed": false,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  }
+}

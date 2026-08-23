@@ -4,6 +4,23 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OpenCV all-image-processing migration — 2026-08-22
+
+- `work/ARGOS_OPENCV_ALL_IMAGE_PROCESSING_MIGRATION.md` and its JSON companion
+  define the current twelve-work-package migration program. All image decoding
+  and pixel processing moves to configuration-selected OpenCV providers;
+  PowerShell remains orchestration only.
+- The program explicitly includes weak scribe deciphering/OCR and reciprocal
+  scribe evidence, independent BF/DF notch and pose, fiducials, exact
+  composites and inspected-wafer registration, Bare, backside, BowComp, all
+  frontside families, detector masks, heatmaps, crops, overlays, and review
+  rasters.
+- The continuation authority is
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_ALL_IMAGE_PROCESSING_MIGRATION_START_CHECKPOINT_20260822.md`.
+  Begin at `OCV-00` with a read-only exact processing inventory and exact
+  PFC003/PFC010 source-path/hash resolution. The withdrawn native notch V3 is
+  failure evidence only; it was never integrated into the installed processor.
+
 ## Read order
 
 1. `AGENTS.md` - governing safety, inspection, UI, release, and evidence rules.
@@ -26,6 +43,8 @@ file-backed and is never embedded here.
   `work/STANDALONE_APP`
 - Project portal revision record:
   `work/PROJECT_PORTAL_REVIEW_ONLY/PROJECT_PORTAL_REVISION_LEDGER.md`
+- Current JBOD inspection repair project:
+  `work/JBOD_INSPECTION_REPAIR_PROJECT_20260822.md`
 - Codex session-safety contract:
   `work/ARGOS_CODEX_SESSION_SAFETY.md`
 - Metadata-only Codex session-size gate:
@@ -566,3 +585,4 @@ task from changing which revision, UI, evidence, or next action is active.
 | 2026-08-20 | FS15 direct-native V3 terminal hold and source withdrawal | `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/FS15_NATIVE_V3_TERMINAL_HOLD_CHECKPOINT_20260820.md` | `PENDING_GATE` | `CA322325AB37E9B7B32E16D93DB3095D8CAE35C0153A5B1225F5731904045978` | The sealed 15-wafer run held 15/15 at native perimeter qualification: BF passed 12/15 and DF 0/15. V3 is withdrawn because it conditions DF on BF and averages channel pose, contrary to the independent-channel contract. V1E/77-peer fanout is blocked; FS15 is exposed terminal evidence and cannot be used for tuning. A successor needs a separate development partition and a new independent paired BF/DF validation set. |
 | 2026-08-21 | Lot 62631-586 FRONT GUI R9 signed terminal failure | `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_R9_SIGNED_TERMINAL_FAILURE_CHECKPOINT_20260821.md` | `PENDING_GATE` | `9E09B65292678A6C8C76DF7A4B711A85D63D2770575F2E29142F003A42F05AD7` | R9 returned a signature-verified `FAILED` before task restart. V40's ten-row value was bound to `domain == FRONTSIDE`; R9 dropped that selector and saw 20 all-domain rows sharing the ten physical identities. R9 is withdrawn and blocked from reuse. A fresh successor must prove the exact FRONT predicate with same-identity non-FRONT competitors, then obtain a signed PASS before ten-ledger-row and ten-GUI-row validation. |
 | 2026-08-21 | Lot 62631-586 FRONT GUI R10 signed terminal failure and stop-loss | `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_R10_SIGNED_TERMINAL_FAILURE_CHECKPOINT_20260821.md` | `PENDING_GATE` | `411C2E41C9D05C9ABBD09C14ABB5ED98FCC05DCEA544AE0D4AFD3D4D6CBC38CC` | R10 passed its exact FRONT selector guards but returned signature-verified `FAILED` before processor restart because it substituted V40's confirmed-overlay count for a different scribe-queue-state count. The fixture manufactured that premise and the terminal error omitted observed field values. R10 is withdrawn; no R11 is authorized in this task. A fresh task must first audit the exact ten queue rows/states and installed helper/runner hashes, determine whether any restart is needed, and implement only an evidence-supported remedy. |
+| 2026-08-22 | META01R1 exact live tray optional-config fix | `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/JBOD_META01R1_TRAY_CONFIG_FIX_LIVE_PASS_CHECKPOINT_20260822.md` | `PENDING_GATE` | `E6C37C6B5A4DCB4972CBA217468F30F7365E8F3A98F8DF1B632ECD03365A00B7` | Signed `PASS_MAINTENANCE_PATCH` installed only the tray presence-check correction and restarted only the tray. Processor PID 6708 remained unchanged. Invoke `Export Insite backlog` once from the refreshed tray, then observe normal bounded request coverage and verified metadata arrival; do not publish another repair or restart the processor merely for observation. |

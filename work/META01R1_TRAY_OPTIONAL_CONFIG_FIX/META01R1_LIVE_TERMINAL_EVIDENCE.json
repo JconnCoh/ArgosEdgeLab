@@ -1,0 +1,52 @@
+{
+  "schema": "argos_meta01r1_live_terminal_evidence_v1",
+  "createdUtc": "2026-08-22T23:17:00Z",
+  "state": "PASS_META01R1_LIVE_TERMINAL",
+  "requestId": "REQ_20260822T231515986Z_B57FB9CFE577",
+  "requestZipSha256": "D2B9A5D17AED63A87A6C4A52949F7034A3DB8CABFDBB9B17D6B252AC8A4D30EC",
+  "responseId": "R_6F35BC4387FD_20260822231529115_c6db03f3",
+  "responseZipSha256": "BE2F9FB491F751A2C8C52DD0437420D8BAA46C45B6993EC920F18A5C5A13DD2E",
+  "responseSignatureVerified": true,
+  "responseState": "PASS_MAINTENANCE_PATCH",
+  "entryPointState": "PASS_META01R1_TRAY_CONFIG_READ_FIX_AND_TRAY_ACTIVATION",
+  "installedFile": {
+    "path": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Show-JbodAllWaferTray.ps1",
+    "predecessorSha256": "CF8C229A9F0EC5C26D88F800849DF96C9EC6AAA3039FE81F01971E477F4A3828",
+    "installedSha256": "DA8E272CF2A00BC50A37FD17662E10E0FFEFFA130A928769D517028372CC881F"
+  },
+  "tray": {
+    "taskName": "ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2",
+    "principal": "lwm",
+    "taskDefinitionSha256": "E3D78B9802BC4599CEC37BCC80F01BC8A0086B398CCABC25163DE4AEFC0C419F",
+    "stopIssued": true,
+    "forcedStop": false,
+    "processIdAfter": 15976,
+    "sessionIdAfter": 1,
+    "stable": true
+  },
+  "processor": {
+    "taskName": "ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2",
+    "processIdBefore": 6708,
+    "processIdAfter": 6708,
+    "creationUtc": "2026-08-22T00:17:03.6603700Z",
+    "restarted": false,
+    "taskAction": false
+  },
+  "viewerProcessesClosed": 0,
+  "protectedTaskDefinitionsChanged": false,
+  "protectedTaskPrincipalsChanged": false,
+  "responseFiles": {
+    "manifestSha256": "32428AECC01FDA2B14A82D9367DB04881B770C7C70302B6F19C8A32FDD5FA7CC",
+    "stdoutSha256": "4357F8F745AAA5E3D0A45AFCF55D0E9EA8E708DC544A2E36112FA8AB9CCB76D8",
+    "stderrSha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "resultSha256": "AC3050537A9041124018896CCB9CE52A0BD2095BA191DD2ADEBA9C0497120A28"
+  },
+  "remainingValidation": "Operator invokes Export Insite backlog once from the refreshed tray; then reconcile normal request coverage and verified metadata arrival without another repair or processor restart.",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false,
+  "imageRead": false,
+  "sourceMutation": false,
+  "deletion": false,
+  "waferAction": false,
+  "fiducialArtifactsChanged": false
+}

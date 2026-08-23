@@ -168,6 +168,25 @@ runtime response error, no orphaned queue-head poison, and successful processing
 of the control request. Store the machine-readable PASS artifact beside the
 package.
 
+For a bounded GUI-only patch whose signed manifest names fixed JBOD installed
+destinations and whose task/process behavior cannot be represented faithfully
+on the engineering laptop, do not create a fake laptop installation or claim
+that mocked tasks/processes prove live behavior. A single operator-authorized
+live transaction may serve as the environment-authentic round trip only when
+all of the following are true before publication: the payload was derived from
+signed exact-JBOD pulls; every payload, manifest, signature, predecessor, live
+task definition, live task principal, and endpoint-worker hash is pinned; the
+unchanged generic endpoint has an existing qualified queue-safety and rollback
+gate; the exact entrypoint has passed Windows PowerShell 5.1 success and
+injected-failure construction tests without changing the frozen payload; and
+the entrypoint validates the real JBOD premises before its first task/process
+action. Limit the live transaction to one request with no automatic retry. The
+endpoint and entrypoint must roll back every installed byte on failure, return
+a signed terminal response, restart only the explicitly authorized GUI tray,
+and prove that the healthy processor PID and creation time did not change.
+This exception never applies to processor, inspection, XML, training,
+production-routing, deletion, source-image, fiducial, or wafer actions.
+
 Do not publish a later request to the same endpoint while an earlier accepted
 request lacks a signed terminal response, unless a bounded direct endpoint
 audit proves the earlier request's exact queue/ledger state and proves the
@@ -336,6 +355,34 @@ statistics must name their exact population. An allowed unsupported sample may
 not be silently reintroduced through a found-sample percentile veto. Threshold
 values and these population semantics are frozen from development/calibration
 evidence before independent validation.
+
+## Mandatory OpenCV image-processing migration boundary
+
+The approved migration objective is to move all image decoding and pixel
+processing into configuration-selected OpenCV providers. This includes scribe
+deciphering/OCR, wafer perimeter and notch pose, fiducial localization,
+reference composites, inspected-wafer registration, Bare, backside, BowComp,
+frontside patterned and unpatterned defect processing, detector masks,
+heatmaps, crops, overlays, and review-raster generation. PowerShell is limited
+to orchestration, configuration/manifest validation, exact file operations and
+hashing, provider invocation, timeout/exit handling, queues, ledgers,
+dashboards, GUI data flow, and signed transport. It must not decode image
+bytes, loop over pixels, crop/resize/filter/composite images, perform OCR, fit
+image geometry, register wafers, score defects, or generate image-derived
+masks and heatmaps.
+
+Apply `work/ARGOS_OPENCV_ALL_IMAGE_PROCESSING_MIGRATION.md` and its
+machine-readable companion before beginning or integrating migration work.
+Freeze each currently accepted family implementation as regression evidence;
+do not use migration to redesign working semantics. Migrate and activate one
+family at a time through installed configuration, preserve the unchanged
+disabled path, and fail closed on missing runtime, schema, model, appearance
+regime, registration, composite revision, or provenance. OpenCV engines must
+not hard-code a lot, product, source/output root, FS15 exception, review-only
+or production switch, or authority decision. All resource-intensive runtime,
+cache, and output work belongs on JBOD `D:`. Geometry, OCR, and registration
+return measurements, confidence, and explicit holds; they never grant
+production authority.
 
 ## Mandatory continuation memory
 

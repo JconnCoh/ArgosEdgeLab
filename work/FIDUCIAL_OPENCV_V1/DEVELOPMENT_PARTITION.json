@@ -1,0 +1,65 @@
+{
+  "schema": "argos_native_pose_development_partition_v1",
+  "revision": "FIDCV1",
+  "createdUtc": "2026-08-22T01:30:19.6244427Z",
+  "state": "PENDING_SOURCE_HASH_OBSERVATION",
+  "disposition": "LOCKED_INPUT",
+  "purpose": "Review-only independent-channel native wafer perimeter and notch-pose development for a new OpenCV implementation.",
+  "selectionBasis": {
+    "catalogPath": "work/PATTERNED_FIDUCIAL_INVENTORY/catalog/V1_20260816T014800Z/COMBINATIONS.csv",
+    "catalogSha256": "783AB6922A9CAD744941E73D4AEEE3742B3F8282935A774E8E32905545DB15E8",
+    "classifiedIndexPath": "work/PATTERNED_FIDUCIAL_INVENTORY/review/PATTERNED_FIDUCIAL_CLASSIFIED_SOURCE_INDEX_20260818.csv",
+    "classifiedIndexSha256": "CC7AAB6FF7D85F15027772E1E780DAC48E251F14DED03E4CF37587F43DD6CA7D",
+    "selectedBeforeOpenCvPixelOutcomes": true,
+    "requiredGalleryState": "PENDING_OPERATOR_FIDUCIAL_MODEL_CONFIRMATION",
+    "requiredSourceDomain": "D:/KLARFExport/PatternedFront",
+    "bowCompExcluded": true,
+    "fs15Excluded": true,
+    "macroPoseHoldCohortExcluded": true
+  },
+  "developmentInputs": [
+    {
+      "combinationId": "PFC003",
+      "physicalIdentity": "62628-281_20260813112015_Slot02",
+      "product": "1627304/A00",
+      "productFamily": "3416-901",
+      "bfPath": "D:/KLARFExport/PatternedFront/Lot_62628-281/62628-281_20260813112015/Slot02/BrightfieldFrontsideWafer/resizedImage/62628-281_Slot02_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "dfPath": "D:/KLARFExport/PatternedFront/Lot_62628-281/62628-281_20260813112015/Slot02/DarkfieldFrontsideWafer/resizedImage/62628-281_Slot02_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "bfSha256": null,
+      "dfSha256": null,
+      "pixelScoringAllowed": false
+    },
+    {
+      "combinationId": "PFC010",
+      "physicalIdentity": "62616-115_20260807120245_Slot23",
+      "product": "1427010/A01",
+      "productFamily": "3206-901",
+      "bfPath": "D:/KLARFExport/PatternedFront/Lot_62616-115/62616-115_20260807120245/Slot23/BrightfieldFrontsideWafer/resizedImage/62616-115_Slot23_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "dfPath": "D:/KLARFExport/PatternedFront/Lot_62616-115/62616-115_20260807120245/Slot23/DarkfieldFrontsideWafer/resizedImage/62616-115_Slot23_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "bfSha256": null,
+      "dfSha256": null,
+      "pixelScoringAllowed": false
+    }
+  ],
+  "independentValidationReservation": {
+    "selectionState": "REQUIRED_AFTER_DEVELOPMENT_FREEZE",
+    "mustBeNewPairedBfDfAcquisition": true,
+    "mustNotOverlapDevelopment": true,
+    "mustNotOverlapFs15": true,
+    "validationTargetUsedForTuning": false
+  },
+  "prohibitedInputs": {
+    "fs15JobPath": "work/PNR2/REGRESSION_JOB.json",
+    "fs15JobSha256": "FCD92AD365BA0908AB3F59195F615EDC20CE99E9F368C961187156AD8D09C851",
+    "fs15TuningAuthorized": false,
+    "pfc004RetuningAuthorized": false,
+    "v1eMacroPoseHoldRunAuthorized": false,
+    "peer77FanoutAuthorized": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Apply-META01R1TrayConfigReadFix.ps1",
+  "changes": [
+    {
+      "source": "payload/Show-JbodAllWaferTray.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Show-JbodAllWaferTray.ps1",
+      "approvedPredecessorSha256": [
+        "CF8C229A9F0EC5C26D88F800849DF96C9EC6AAA3039FE81F01971E477F4A3828",
+        "DA8E272CF2A00BC50A37FD17662E10E0FFEFFA130A928769D517028372CC881F"
+      ],
+      "installedSha256": "DA8E272CF2A00BC50A37FD17662E10E0FFEFFA130A928769D517028372CC881F",
+      "allowCreate": false
+    }
+  ],
+  "allowedTaskActions": [
+    "STOP_IF_RUNNING:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2",
+    "START_ALWAYS:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2"
+  ],
+  "rehearsal": {
+    "requiredState": "PASS_META01R1_TRAY_CONFIG_READ_FIX_AND_TRAY_ACTIVATION"
+  }
+}
