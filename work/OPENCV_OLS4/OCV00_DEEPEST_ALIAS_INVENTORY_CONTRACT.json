@@ -1,0 +1,108 @@
+{
+  "schema": "argos_ocv00_deepest_alias_inventory_contract_v1",
+  "revision": "OCV00_DEEPEST_ALIAS_AND_EXACT_SKIP_IDENTITY_V1_20260824",
+  "state": "PENDING_LOCAL_PROVIDER_PROOF",
+  "disposition": "PENDING_GATE",
+  "classification": "MUTATE_REQUIRED_FOR_INSTALLED_PROVIDER_LOCAL_DESIGN_ONLY",
+  "liveRequestAuthorized": false,
+  "incidentEvidence": {
+    "terminalGatePath": "work/OPENCV_OLS3/OLS3_TERMINAL_RESPONSE_GATE.json",
+    "terminalGateSha256": "18CB23C01E618D26D31C59091C5A692DEEE78A9DFEB1844D0AF5AC59C48DB862",
+    "inventoryDisposition": "HOLD_INCOMPLETE",
+    "skippedUnsafePathCount": 40,
+    "accessErrorCount": 0,
+    "reparseSkipCount": 0,
+    "truncated": false
+  },
+  "sourceAlias": {
+    "provider": "PowerShell FileSystem PSDrive",
+    "scope": "exact worker script scope",
+    "persistent": false,
+    "anchor": "EXACT_REQUESTED_SUBTREE_ROOT",
+    "forbiddenAnchor": "BROAD_CONFIGURED_DATA_ROOT_WHEN_REQUESTED_SUBTREE_IS_DEEPER",
+    "aliasRootShape": "<validatedAliasName>:/",
+    "canonicalIdentityBase": "configured approved data root",
+    "canonicalIdentityRole": "PROVENANCE_ONLY",
+    "filesystemIoRole": "ALIAS_PATH_ONLY",
+    "rawDotNetIoThroughAliasAllowed": false,
+    "providerAwareCmdletsRequired": true,
+    "removeInFinallyRequired": true
+  },
+  "preconditions": [
+    "requested subtree is relative, traversal-free, wildcard-free, and contained by the configured approved root",
+    "requested subtree root exists and every ancestor below the approved root is non-reparse",
+    "alias name is bounded and unused",
+    "alias root resolves exactly to the requested subtree root",
+    "actual alias root passes the path budget with 32-character reserve"
+  ],
+  "childEvaluation": {
+    "actualIoPath": "alias parent plus exact child name",
+    "actualIoPathMustPassEffectiveLengthBelow": 200,
+    "reservedSuffixCharacters": 32,
+    "newOutputLongestComponentMaximum": 80,
+    "existingSourceComponentFilesystemMaximum": 255,
+    "existingSourceComponentAbove80RecordedButNotReproduced": true,
+    "canonicalFullSpellingRecorded": true,
+    "canonicalBudgetStateRecorded": true,
+    "canonicalFullSpellingUsedForIo": false,
+    "unsafeChildRecordedBeforeSkip": true
+  },
+  "unsafeChildRow": {
+    "requiredFields": [
+      "parentRelativePath",
+      "childName",
+      "pathType",
+      "extension",
+      "canonicalProvenancePath",
+      "canonicalEffectiveLength",
+      "canonicalLongestComponentLength",
+      "aliasReadPath",
+      "aliasEffectiveLength",
+      "aliasLongestComponentLength",
+      "rejectionReason"
+    ],
+    "allowedRejectionReasons": [
+      "ALIAS_EFFECTIVE_LENGTH_AT_OR_ABOVE_200",
+      "ALIAS_COMPONENT_ABOVE_FILESYSTEM_MAXIMUM",
+      "CANONICAL_CONTAINMENT_FAILED",
+      "REPARSE_CHILD_NOT_TRAVERSED"
+    ],
+    "countOnlySkipAllowed": false,
+    "maximumReturnedRows": 2048,
+    "rowOverflowDisposition": "HOLD_TRUNCATED"
+  },
+  "completion": {
+    "requiresZeroUnsafeChildRows": true,
+    "requiresZeroAccessErrors": true,
+    "requiresZeroReparseTraversal": true,
+    "requiresNoTruncation": true,
+    "requiresZeroDepthBoundaryDirectories": true,
+    "completeState": "COMPLETE",
+    "otherwiseState": "HOLD_INCOMPLETE"
+  },
+  "requiredWindowsPowerShell51Cases": [
+    "ABSENT_SUBTREE_HOLD",
+    "ONE_BMP_COMPLETE",
+    "PAIRED_BF_DF_COMPLETE",
+    "CANONICAL_PROVENANCE_230_PLUS_ALIAS_BELOW_200_COMPLETE",
+    "ALIAS_200_PLUS_EXACT_SKIP_IDENTITY_HOLD",
+    "EXISTING_SOURCE_COMPONENT_81_TO_255_RECORDED_WITH_ADVISORY",
+    "REPARSE_DIRECTORY_IDENTITY_HOLD_NO_TRAVERSAL",
+    "TRUNCATION_HOLD",
+    "DEPTH_BOUNDARY_HOLD",
+    "ALIAS_ROOT_EQUALS_REQUESTED_SUBTREE",
+    "ALIAS_REMOVED_AFTER_SUCCESS",
+    "ALIAS_REMOVED_AFTER_INJECTED_FAILURE",
+    "ZERO_IMAGE_OR_SOURCE_BYTE_READS"
+  ],
+  "filesRead": false,
+  "imageBytesRead": false,
+  "sourceHashingPerformed": false,
+  "imageProcessingCodeWritten": false,
+  "imageProcessingCodeRun": false,
+  "healthyProcessorTouched": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

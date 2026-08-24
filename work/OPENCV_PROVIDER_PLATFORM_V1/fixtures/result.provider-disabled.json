@@ -1,0 +1,34 @@
+{
+  "schema": "argos_opencv_result_v1",
+  "contractRevision": "ARGOS_OPENCV_RESULT_CONTRACT_V1",
+  "jobId": "OCV01_SCHEMA_ONLY_SLOT16",
+  "jobSha256": "5F8D02AF582E679D71DC7002B68457C2AFFDCF1282F86F222B7D945AC31A5EB6",
+  "providerBinding": {
+    "providerId": "opencv-python-portable-v1",
+    "providerContractRevision": "ARGOS_OPENCV_PROVIDER_CONTRACT_V1",
+    "providerConfigSha256": "E28165490C4AD5395BDCE539321C94D81EEDEC63F477D076C808C170E71C3F23"
+  },
+  "state": "HOLD_PROVIDER_DISABLED",
+  "eligibleForDownstream": false,
+  "exitCode": 0,
+  "measurements": {},
+  "holds": [
+    {
+      "code": "HOLD_PROVIDER_DISABLED",
+      "detail": "OCV-01 defines the platform contract only; no family provider is activated."
+    }
+  ],
+  "artifacts": [],
+  "runtimeProvenance": {
+    "runtimeManifestSha256": "6BCA2B3FA69416BE9E7DE9D02B606081A24C976275C5A4D1B1E83D133D30A409",
+    "engineSha256": "3CC4630B3A689C80887C2B8572C3A0C37B5342301E88DD8FFF4046E67EFB4DB9",
+    "opencvVersion": "5.0.0"
+  },
+  "authority": {
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV00_OLS2_COLLECT_PINNED_SIGNED_FAILURE_RESPONSE_20260824",
+  "createdUtc": "2026-08-24T17:37:00.0000000Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "COLLECT_AND_VERIFY_ONE_PINNED_SIGNED_TERMINAL_FAILURE_RESPONSE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"AGENTS.md","sha256":"4B5C2BEF7AD81369969BE7BE2C508A64360BBD1243C2A7AB71C2F29D8593EFA0"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"E7733A191E65D917F35B8ADCE87DFA4615AC94F92FCE89F2C2E9125709D4C5DA"},
+    {"path":"work/ARGOS_CONTINUITY_STATE.json","sha256":"B93AF257E3B69BB72694B4D4D09F5798E76D842B4217E3C7C1FB6D6BDCA80914"},
+    {"path":"work/ACTIVE_ARGOS_EDGE_LAB_STATE.md","sha256":"4F04A31B08C203FB0D4BC47ADC29DEA5CA4325DA5C2F86720258B4D3E5A56515"},
+    {"path":"work/ARGOS_REVISION_LEDGER.md","sha256":"72AB61AC3630E7CE85EA6AAD0FB2833067ACF93A6B035032DF4D3F3E55421399"},
+    {"path":"work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_OLS2_REQUEST_PUBLISHED_RESPONSE_PENDING_SIGNATURE_CHECKPOINT_20260824.md","sha256":"220A54453392C427784775D95060B67F871387EFFF90F21C352A1FB16E08CC9F"},
+    {"path":"work/OPENCV_OLS2/OLS2_PUBLISH_GATE.json","sha256":"F7B6671E9990AA3E46A1678B04C2E8A257C544EC36033B41A190D69F667CAB31"},
+    {"path":"work/OPENCV_OLS2/RESPONSE_FAILURE_COLLECTION_INVOCATION.json","sha256":"E80D8ED808BDC20F3FA9EE470E519AF671917819A3B0006647C1B77D17FCE06E"},
+    {"path":"work/OPENCV_OLS2/Collect-OLS2FailureResponse.ps1","sha256":"655EE257E7C9F245E064687663FA3668C60DFB79C64E03CF0C7684F7D830DCAC"},
+    {"path":"work/OPENCV_OLS2/FAILURE_COLLECTOR_CLONE_LITERAL_REMEDIATION.json","sha256":"7BE8165CFA0018F40115F14973201843CBF2F6C7CB5E9B9D01766ABC55F8074D"},
+    {"path":"work/OPENCV_OLS2/OLS2_FAILURE_COLLECTOR_CLONE_GATE.json","sha256":"3EDDCE54B90C12D5E85EF05DBF699C5EB9A42EB543505801B9F280A727A498BA"},
+    {"path":"U:/ProjectPortalRO/responses/R_CC18FEEA00BD_20260824173017440_aae41c8c.ready.zip","sha256":"D6C4C56ECEA086FE29CB31704E1BA61E783E0D887EE6A9827B597E2225C84673"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalResponse.ps1","sha256":"4AF5901A7B9DFFF5A4DAF128960173D67501ABF6FF87C586BA526643B1C1449C"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer","sha256":"5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "boundedAction": {
+    "responseZipCopiesMaximum": 1,
+    "localExtractionRootsMaximum": 1,
+    "signedResponseVerificationMaximum": 1,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "endpointMutation": false,
+    "fileContentReadFromLot": false,
+    "imageRead": false,
+    "sourceHashing": false,
+    "sourceDeletion": false,
+    "waferAction": false,
+    "healthyProcessorTouched": false,
+    "residentPortalWorkerRestarted": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

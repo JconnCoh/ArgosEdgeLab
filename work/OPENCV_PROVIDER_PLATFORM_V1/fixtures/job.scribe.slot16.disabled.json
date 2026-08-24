@@ -1,0 +1,63 @@
+{
+  "schema": "argos_opencv_job_v1",
+  "contractRevision": "ARGOS_OPENCV_JOB_CONTRACT_V1",
+  "jobId": "OCV01_SCHEMA_ONLY_SLOT16",
+  "createdUtc": "2026-08-24T21:52:00Z",
+  "family": "SCRIBE",
+  "operation": "SCRIBE_DECIPHER",
+  "identity": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "slotId": "Slot16"
+  },
+  "providerBinding": {
+    "providerConfigRevision": "OCV_PROVIDER_PLATFORM_V1_DISABLED_20260824",
+    "providerConfigSha256": "E28165490C4AD5395BDCE539321C94D81EEDEC63F477D076C808C170E71C3F23",
+    "providerId": "opencv-python-portable-v1",
+    "providerContractRevision": "ARGOS_OPENCV_PROVIDER_CONTRACT_V1"
+  },
+  "inputs": [
+    {
+      "sourceId": "62619-433_20260824005735_Slot16_BF",
+      "channel": "BF",
+      "path": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot16\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sha256": "CE5502F33D54A12FEF1A082A0B18C1635169B2F5D0BE98C402EA8238D86C2E53",
+      "bytes": 475379874,
+      "coordinateFrameId": "SLOT16_BF_NATIVE_PIXELS"
+    },
+    {
+      "sourceId": "62619-433_20260824005735_Slot16_DF",
+      "channel": "DF",
+      "path": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot16\\DarkfieldFrontsideWafer\\resizedImage\\62619-433_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sha256": "6FAC812536C19F07D1C3DAD5263741350E94460A07867F2AEE0D2EEEA8C19ED9",
+      "bytes": 475379874,
+      "coordinateFrameId": "SLOT16_DF_NATIVE_PIXELS"
+    }
+  ],
+  "resourceBindings": {
+    "workRoot": "D:\\A2\\w\\ocv",
+    "cacheRoot": "D:\\A2\\c\\ocv",
+    "outputRoot": "D:\\A2\\o\\ocv",
+    "providerConfigSha256": "E28165490C4AD5395BDCE539321C94D81EEDEC63F477D076C808C170E71C3F23"
+  },
+  "provenanceBindings": [
+    {
+      "role": "OCV00_SOURCE_HASH_AGGREGATE",
+      "revision": "OCV00_LOT_62619_433_EXACT_SOURCE_HASHES_20260824",
+      "sha256": "E54A15301A2B4FE914E6315DDFB9628E1D1364B0553D2155E9D5387A88E7FF3B"
+    },
+    {
+      "role": "OCV00_DEVELOPMENT_VALIDATION_SPLIT",
+      "revision": "OCV00_LOT_62619_433_SPLIT_20260824",
+      "sha256": "62BC8EFF1B7F85D9913141845514B04D79296AC6AD2BB40659A3EAC5227FEFFA"
+    }
+  ],
+  "outputManifestPath": "D:\\A2\\o\\ocv\\jobs\\OCV01_SCHEMA_ONLY_SLOT16\\RESULT.json",
+  "authority": {
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}

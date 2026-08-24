@@ -1,0 +1,50 @@
+{
+    "schema":  "argos_ols2_terminal_failure_gate_r2_v1",
+    "collectedUtc":  "2026-08-24T17:42:54.1022866Z",
+    "state":  "PASS_OLS2_SIGNED_TERMINAL_FAILURE_R2_COLLECTED",
+    "disposition":  "SIGNED_TERMINAL_FAILURE",
+    "requestId":  "REQ_OLS2",
+    "responseToken":  "R_CC18FEEA00BD_20260824173017440_aae41c8c.ready",
+    "endpointState":  "FAILED",
+    "sourceRole":  "JBOD",
+    "signedResponseVerified":  true,
+    "failureSchema":  "argos_project_portal_failure_v1",
+    "failureState":  "FAILED",
+    "failureDetail":  "Maintenance verifier failed with exit code 1. Exact stderr is attached.",
+    "responseFileCount":  3,
+    "responseFiles":  [
+                          {
+                              "path":  "FAILURE.json",
+                              "bytes":  687,
+                              "sha256":  "2D81B9ED0F9E02471462DBF2F1F1EC088FF18A0647B3E613DBDA466039726DD0"
+                          },
+                          {
+                              "path":  "MAINTENANCE.stderr.txt",
+                              "bytes":  536,
+                              "sha256":  "9FDE269E93D3E42B4B3193059615BCC2E6466C6CA215364632A79665ACFBD683"
+                          },
+                          {
+                              "path":  "MAINTENANCE.stdout.txt",
+                              "bytes":  0,
+                              "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                          }
+                      ],
+    "sourceZipBytes":  2248,
+    "sourceZipSha256":  "D6C4C56ECEA086FE29CB31704E1BA61E783E0D887EE6A9827B597E2225C84673",
+    "collectedRoot":  "C:\\AS2G\\R_CC18FEEA00BD_20260824173017440_aae41c8c.ready",
+    "optionalPropertyCasesPassed":  2,
+    "pathState":  "PASS_PATH_BUDGET",
+    "inventoryPassClaimed":  false,
+    "sourceHashesAccepted":  false,
+    "pixelScoringAllowed":  false,
+    "terminalFailureRequiresDirectObservationBeforeMutation":  true,
+    "filesReadFromLot":  false,
+    "imageBytesRead":  false,
+    "sourceHashingPerformed":  false,
+    "inspectionTasksChanged":  false,
+    "processorTaskChanged":  false,
+    "sourceDeletionPerformed":  false,
+    "currentWaferAborted":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

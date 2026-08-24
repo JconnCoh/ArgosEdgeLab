@@ -1,0 +1,58 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 2097152,
+  "entryPoint": "payload/E.ps1",
+  "changes": [
+    {
+      "source": "payload/E.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV00_OLS1.ps1",
+      "approvedPredecessorSha256": [
+        "0CE21005DA29F959B42795CC89BF871448A90FB2EBFDFE86D5D28D521284F5B4"
+      ],
+      "installedSha256": "0CE21005DA29F959B42795CC89BF871448A90FB2EBFDFE86D5D28D521284F5B4",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "destination": "C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosProjectPortalEndpointWorker.ps1",
+      "approvedPredecessorSha256": [
+        "1CE01F67083A989CB92AE3824DB0AE2CB6532FD6B674E74456CC495F06DCDDF8",
+        "2EC51AE77151C97910BAA93069E2CE90677813B1630F3BA1C48C60CB4B290A68"
+      ],
+      "installedSha256": "2EC51AE77151C97910BAA93069E2CE90677813B1630F3BA1C48C60CB4B290A68",
+      "transaction": "ENTRYPOINT_ATOMIC_SELF_UPDATE_WITH_INSTALLED_PRODUCER_PREFLIGHT_TERMINAL_READBACK_AND_ROLLBACK"
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV00_OLS1_LOT_PATHS.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_project_portal_environment_probe_result_v1",
+      "requiredState": "PASS_JBOD_ENVIRONMENT_INVENTORY"
+    }
+  ],
+  "metadataReadContract": {
+    "mode": "CONFIG_ANCHORED_BOUNDED_PATH_NAME_METADATA_ONLY",
+    "approvedDataRoot": "JBOD_KLARF_EXPORT",
+    "literalToken": "62616-115",
+    "maximumDepth": 3,
+    "maximumEntries": 50000,
+    "maximumMatches": 128,
+    "returnedFields": ["relativePath", "normalizedFullPath", "name", "depth", "pathType", "attributes", "reparsePoint", "length", "lastWriteTimeUtc", "containedByApprovedRoot"],
+    "pathEnumerationAllowed": true,
+    "pathNameMetadataOnly": true,
+    "fileContentReadAllowed": false,
+    "imageBytesReadAllowed": false,
+    "sourceHashingAllowed": false,
+    "taskOrProcessActionAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_OCV00_BOUNDED_LOT_PATH_SEARCH_OLS1"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

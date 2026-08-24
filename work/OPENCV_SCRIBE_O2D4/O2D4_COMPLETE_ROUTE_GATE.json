@@ -1,0 +1,539 @@
+{
+    "schema":  "argos_o2d4_complete_route_gate_v1",
+    "createdUtc":  "2026-08-24T22:57:58.6066968Z",
+    "state":  "PASS_O2D4_COMPLETE_ROUTE_GATE",
+    "requestId":  "REQ_O2D4",
+    "jobClass":  "MAINTENANCE_PATCH",
+    "routePathRowsEvaluated":  53,
+    "canonicalSourceRowsEvaluated":  2,
+    "reservedSuffixCharacters":  32,
+    "maximumPlannedEffectiveLength":  210,
+    "maximumMaterializedEffectiveLength":  193,
+    "maximumPlannedComponentLength":  63,
+    "longestPlannedPath":  "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot16\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "longestMaterializedPath":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\R_0123456789AB_20260824235959999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.json",
+    "canonicalSourcePathsRequireAlias":  true,
+    "temporaryChildVisibleAlias":  "X:",
+    "aliasAnchorCanonicalPath":  "D:\\KLARFExport\\PatternedFront\\Lot_62619-433",
+    "aliasVerifiedByEndpointBeforeProviderStart":  true,
+    "aliasRemovedByEndpointFinally":  true,
+    "canonicalPathsMaterializedByProvider":  false,
+    "childIoAliasPathsPassBelow200":  true,
+    "endpointWorkerSha256":  "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "installedConfigEvidenceSha256":  "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "requestZipPath":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D4\\final\\REQ_O2D4.ready.zip",
+    "requestZipSha256":  "D2411AE50ED33AEE4B6EC8DF1D8B771E228C082C21338B6A4373289EB744C994",
+    "requestManifestSha256":  "63E93EFC681EAE63E84F9306F57D581E865BB1E1B06D58FDAC8D4586E645F818",
+    "requestSignatureSha256":  "707C1C3A320E133798BA514A216AC99A31BE940B626A2F5C67CFAF728DD26FE8",
+    "exactFinalZipExtractionPassed":  true,
+    "exactFinalZipSignaturePassed":  true,
+    "inheritedQueueSafetyGateSha256":  "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+    "canonicalSourceRows":  [
+                                {
+                                    "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot16\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                                    "pathClass":  "CANONICAL_PROVENANCE_ONLY",
+                                    "pathLength":  178,
+                                    "effectiveLength":  210,
+                                    "longestComponentLength":  63,
+                                    "disposition":  "SHORT_ALIAS_REQUIRED_BEFORE_WRITE_OR_LAUNCH",
+                                    "materializedByProvider":  false,
+                                    "mitigation":  "TEMPORARY_CHILD_VISIBLE_X_ALIAS",
+                                    "mitigatedIoPath":  "X:\\62619-433_20260824005735\\Slot16\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp"
+                                },
+                                {
+                                    "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot16\\DarkfieldFrontsideWafer\\resizedImage\\62619-433_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                                    "pathClass":  "CANONICAL_PROVENANCE_ONLY",
+                                    "pathLength":  174,
+                                    "effectiveLength":  206,
+                                    "longestComponentLength":  61,
+                                    "disposition":  "SHORT_ALIAS_REQUIRED_BEFORE_WRITE_OR_LAUNCH",
+                                    "materializedByProvider":  false,
+                                    "mitigation":  "TEMPORARY_CHILD_VISIBLE_X_ALIAS",
+                                    "mitigatedIoPath":  "X:\\62619-433_20260824005735\\Slot16\\DarkfieldFrontsideWafer\\resizedImage\\62619-433_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp"
+                                }
+                            ],
+    "rows":  [
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D4\\O2D4_FINAL_PACKAGE_GATE.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  103,
+                     "effectiveLength":  135,
+                     "longestComponentLength":  28,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D4\\final\\REQ_O2D4.ready.zip",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  99,
+                     "effectiveLength":  131,
+                     "longestComponentLength":  18,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D4\\final\\extract\\PORTAL_REQUEST_MANIFEST.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  117,
+                     "effectiveLength":  149,
+                     "longestComponentLength":  28,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D4\\final\\extract\\PORTAL_REQUEST_MANIFEST.sig",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  116,
+                     "effectiveLength":  148,
+                     "longestComponentLength":  27,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D4\\final\\extract\\payload\\Invoke-O2D4ScribeEndpoint.ps1",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  126,
+                     "effectiveLength":  158,
+                     "longestComponentLength":  29,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D4\\final\\extract\\payload\\ArgosOpenCvScribeV1.py",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  119,
+                     "effectiveLength":  151,
+                     "longestComponentLength":  22,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D4\\final\\extract\\payload\\O2D4_REFS.zip",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  110,
+                     "effectiveLength":  142,
+                     "longestComponentLength":  18,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D4\\final\\extract\\payload\\O2D4_SLOT16_JOB.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  117,
+                     "effectiveLength":  149,
+                     "longestComponentLength":  20,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "U:\\ProjectPortalRO\\requests\\REQ_O2D4.ready.zip.upload",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  53,
+                     "effectiveLength":  85,
+                     "longestComponentLength":  25,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "U:\\ProjectPortalRO\\requests\\REQ_O2D4.ready.zip",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  46,
+                     "effectiveLength":  78,
+                     "longestComponentLength":  18,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\APR\\S\\requests\\REQ_O2D4.ready.zip",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  36,
+                     "effectiveLength":  68,
+                     "longestComponentLength":  18,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\APR\\S\\requests\\processed\\REQ_O2D4.ready.zip",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  46,
+                     "effectiveLength":  78,
+                     "longestComponentLength":  18,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\share\\staging\\REQ_O2D4.ready.zip",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  68,
+                     "effectiveLength":  100,
+                     "longestComponentLength":  20,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_to_argos\\pending\\REQ_O2D4.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  105,
+                     "effectiveLength":  137,
+                     "longestComponentLength":  28,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\share\\request_archive\\REQ_O2D4.ready.zip",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  76,
+                     "effectiveLength":  108,
+                     "longestComponentLength":  20,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_from_gateway\\pending\\REQ_O2D4.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  109,
+                     "effectiveLength":  141,
+                     "longestComponentLength":  28,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\pending\\REQ_O2D4.ready\\payload\\O2D4_REFS.zip",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  88,
+                     "effectiveLength":  120,
+                     "longestComponentLength":  20,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\sent\\REQ_O2D4.ready\\payload\\Invoke-O2D4ScribeEndpoint.ps1",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  101,
+                     "effectiveLength":  133,
+                     "longestComponentLength":  29,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O2D4.ready\\payload\\Invoke-O2D4ScribeEndpoint.ps1",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  110,
+                     "effectiveLength":  142,
+                     "longestComponentLength":  29,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\completed\\REQ_O2D4.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  113,
+                     "effectiveLength":  145,
+                     "longestComponentLength":  28,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\work\\J_0123456789AB_01234567\\MAINTENANCE.stdout.txt",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  107,
+                     "effectiveLength":  139,
+                     "longestComponentLength":  23,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\work\\J_0123456789AB_01234567\\MAINTENANCE.stderr.txt",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  107,
+                     "effectiveLength":  139,
+                     "longestComponentLength":  23,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\work\\J_0123456789AB_01234567\\RESULT.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  96,
+                     "effectiveLength":  128,
+                     "longestComponentLength":  23,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\compact\\C_0123456789AB_01234567\\FAILURE.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  100,
+                     "effectiveLength":  132,
+                     "longestComponentLength":  23,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\ledger\\REQ_O2D4.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  76,
+                     "effectiveLength":  108,
+                     "longestComponentLength":  20,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\maintenance\\REQ_O2D4\\prior\\M000_0123456789_0123456789.prior",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  115,
+                     "effectiveLength":  147,
+                     "longestComponentLength":  32,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\maintenance\\REQ_O2D4\\failed_new\\M000_0123456789_0123456789.rollback",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  123,
+                     "effectiveLength":  155,
+                     "longestComponentLength":  35,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\.M000_0123456789_0123456789.stage",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  83,
+                     "effectiveLength":  115,
+                     "longestComponentLength":  33,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\.M000_0123456789_0123456789.restore",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  85,
+                     "effectiveLength":  117,
+                     "longestComponentLength":  35,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_O2D4.ps1",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  64,
+                     "effectiveLength":  96,
+                     "longestComponentLength":  19,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "D:\\A2\\w\\ocv\\O2D4.partial\\refs\\PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  68,
+                     "effectiveLength":  100,
+                     "longestComponentLength":  38,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "D:\\A2\\w\\ocv\\O2D4\\ArgosOpenCvScribeV1.py",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  39,
+                     "effectiveLength":  71,
+                     "longestComponentLength":  22,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "D:\\A2\\w\\ocv\\O2D4\\JOB.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  25,
+                     "effectiveLength":  57,
+                     "longestComponentLength":  8,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "D:\\A2\\w\\ocv\\O2D4\\refs\\glyphs_v5_confirmed_20260806\\A\\sample.png",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  63,
+                     "effectiveLength":  95,
+                     "longestComponentLength":  28,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "D:\\A2\\o\\ocv\\O2D4\\RESULT.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  28,
+                     "effectiveLength":  60,
+                     "longestComponentLength":  11,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "D:\\A2\\o\\ocv\\O2D4\\RUN_GATE.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  30,
+                     "effectiveLength":  62,
+                     "longestComponentLength":  13,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "X:\\62619-433_20260824005735\\Slot16\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "pathClass":  "CHILD_IO_ALIAS",
+                     "pathLength":  137,
+                     "effectiveLength":  169,
+                     "longestComponentLength":  63,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  true
+                 },
+                 {
+                     "path":  "X:\\62619-433_20260824005735\\Slot16\\DarkfieldFrontsideWafer\\resizedImage\\62619-433_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "pathClass":  "CHILD_IO_ALIAS",
+                     "pathLength":  133,
+                     "effectiveLength":  165,
+                     "longestComponentLength":  61,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  true
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\R_0123456789AB_20260824235959999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  161,
+                     "effectiveLength":  193,
+                     "longestComponentLength":  55,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260824235959999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  138,
+                     "effectiveLength":  170,
+                     "longestComponentLength":  55,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\MAINTENANCE.stdout.txt",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  123,
+                     "effectiveLength":  155,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\sent\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  127,
+                     "effectiveLength":  159,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\from_jbod\\pending\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  131,
+                     "effectiveLength":  163,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\pending\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  132,
+                     "effectiveLength":  164,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\sent\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  129,
+                     "effectiveLength":  161,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\APR\\R\\pending\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  94,
+                     "effectiveLength":  126,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\APR\\A\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  86,
+                     "effectiveLength":  118,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\share\\response_zip_archive\\R_0123456789AB_20260824235959999_a1b2c3d4.ready.zip",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  114,
+                     "effectiveLength":  146,
+                     "longestComponentLength":  51,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "U:\\ProjectPortalRO\\responses\\R_0123456789AB_20260824235959999_a1b2c3d4.ready.zip",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  80,
+                     "effectiveLength":  112,
+                     "longestComponentLength":  51,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\A6R\\R_0123456789AB_20260824235959999_a1b2c3d4.ready.zip",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  58,
+                     "effectiveLength":  90,
+                     "longestComponentLength":  51,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\A6R\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  84,
+                     "effectiveLength":  116,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\A6R\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\MAINTENANCE.stdout.txt",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  77,
+                     "effectiveLength":  109,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D4\\O2D4_COMPLETE_ROUTE_GATE.json",
+                     "pathClass":  "MATERIALIZED_ROUTE_OR_OUTPUT",
+                     "pathLength":  104,
+                     "effectiveLength":  136,
+                     "longestComponentLength":  29,
+                     "disposition":  "PASS_PATH_BUDGET",
+                     "materializedByProvider":  false
+                 }
+             ],
+    "mutationsPerformed":  false,
+    "imageProcessingPerformed":  false,
+    "sourceMutationPerformed":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

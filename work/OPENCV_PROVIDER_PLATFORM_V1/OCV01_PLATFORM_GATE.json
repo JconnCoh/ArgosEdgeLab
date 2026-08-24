@@ -1,0 +1,80 @@
+{
+  "schema": "argos_opencv_provider_platform_gate_v1",
+  "createdUtc": "2026-08-24T21:54:00Z",
+  "state": "PASS_OCV01_PROVIDER_PLATFORM_DISABLED_CONTRACT",
+  "disposition": "APPROVED_BASELINE",
+  "branch": "codex/fiducial-opencv-d-drive",
+  "localTip": "ecbda3205852550d7f9fdb4a4daf99b4a001e7da",
+  "githubTip": "ecbda3205852550d7f9fdb4a4daf99b4a001e7da",
+  "branchTipsMatch": true,
+  "ocv00CompletionGate": {
+    "path": "work/OPENCV_OCV00/OCV00_COMPLETE_GATE_20260824.json",
+    "sha256": "888DE3D95F2A5E883927A7D9DB1DE4B7F97722709A98EF02D25B189B8443CDC0"
+  },
+  "sourceHashAggregate": {
+    "path": "work/OPENCV_OLS6/OLS6_EXACT_TWENTY_SOURCE_HASHES.json",
+    "sha256": "E54A15301A2B4FE914E6315DDFB9628E1D1364B0553D2155E9D5387A88E7FF3B",
+    "sourceCount": 20,
+    "sourceBytes": 9507597480
+  },
+  "schemas": [
+    { "name": "provider-config", "path": "work/OPENCV_PROVIDER_PLATFORM_V1/schemas/provider-config.v1.schema.json", "sha256": "8F2640D2143EF9ABD4CB55B0D1606FAF1998EF8E4B9CC64A1A2F113308EC4E49" },
+    { "name": "job", "path": "work/OPENCV_PROVIDER_PLATFORM_V1/schemas/job.v1.schema.json", "sha256": "9F95405C3AC4E6CD82FCF7F85068E590AF117C28B53B728AC7573A7560FBE6FE" },
+    { "name": "result", "path": "work/OPENCV_PROVIDER_PLATFORM_V1/schemas/result.v1.schema.json", "sha256": "9EE945E8B918F1190F83745B0A2ADBD71F9F304ED3CC1BA140693B215F324EA7" },
+    { "name": "transform", "path": "work/OPENCV_PROVIDER_PLATFORM_V1/schemas/transform.v1.schema.json", "sha256": "86660A1469DE77DB75AD9C34A098C6ED06741C7C5B066D9EAD303E9C9C4400A4" },
+    { "name": "composite", "path": "work/OPENCV_PROVIDER_PLATFORM_V1/schemas/composite.v1.schema.json", "sha256": "A69E64219398B3A6EB5C37F2B86285DCC82C994456D8D7F409A6750C23DC15E2" },
+    { "name": "mask", "path": "work/OPENCV_PROVIDER_PLATFORM_V1/schemas/mask.v1.schema.json", "sha256": "A6A9740E5FD89F38B2E71A7F9E04E6190CE041694C2679E53F44A50BB10ACB12" },
+    { "name": "review-raster", "path": "work/OPENCV_PROVIDER_PLATFORM_V1/schemas/review-raster.v1.schema.json", "sha256": "8909F1E7A46378A6CC28F0D680B8823537CE4548AEA2DC3203EB0A75DAB054DD" }
+  ],
+  "configuration": {
+    "path": "work/OPENCV_PROVIDER_PLATFORM_V1/OCV01_DISABLED_PROVIDER_CONFIG.json",
+    "sha256": "E28165490C4AD5395BDCE539321C94D81EEDEC63F477D076C808C170E71C3F23",
+    "enabled": false,
+    "activationState": "DISABLED_OCV01_PLATFORM_ONLY",
+    "installed": false,
+    "runtimeRoot": "D:/AFCV1/rt",
+    "workRoot": "D:/A2/w/ocv",
+    "cacheRoot": "D:/A2/c/ocv",
+    "outputRoot": "D:/A2/o/ocv",
+    "sourceDeletionAllowed": false
+  },
+  "resolver": {
+    "path": "work/OPENCV_PROVIDER_PLATFORM_V1/Resolve-ArgosOpenCvProviderV1.ps1",
+    "sha256": "033D0514DABAD6BAE99503BFBB46CC8B8B59926B06F58A939F5B59FCCB3FC9CE",
+    "windowsPowerShell51": true,
+    "wrapperPreflightState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "harnessSafetyState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "providerInvocationImplemented": false,
+    "imageProcessingImplemented": false
+  },
+  "contractTests": {
+    "validFixtureCount": 8,
+    "validFixturePassCount": 8,
+    "negativeControlCount": 7,
+    "negativeControlRejectedCount": 7,
+    "disabledResolutionState": "DISABLED_UNCHANGED_LEGACY_PATH",
+    "disabledRuntimeProbePerformed": false,
+    "missingRuntimeResolutionState": "HOLD_OPENCV_RUNTIME_MISSING",
+    "missingRuntimeEligible": false,
+    "missingRuntimeProviderInvoked": false,
+    "pathBudgetState": "PASS_PATH_BUDGET"
+  },
+  "safety": {
+    "installedProcessorConfigChanged": false,
+    "liveProviderActivated": false,
+    "imageBytesRead": false,
+    "imageProcessingPerformed": false,
+    "processorTaskChanged": false,
+    "processorProcessChanged": false,
+    "healthyProcessorTouched": false,
+    "existingHoldCleared": false,
+    "sourceMutationPerformed": false,
+    "sourceDeletionPerformed": false,
+    "waferActionPerformed": false,
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionRoutingEnabled": false
+  },
+  "nextAction": "Begin OCV-02 scribe provider development on the frozen development partition only. Preserve BF and DF independently, search pose-bound candidate regions rather than assuming a fixed scribe position, return calibrated candidates and explicit holds, and do not activate the live processor provider."
+}

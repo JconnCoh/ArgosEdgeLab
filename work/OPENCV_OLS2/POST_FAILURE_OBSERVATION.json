@@ -1,0 +1,56 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-24T17:12:00Z",
+  "incidentId": "OCV00_REPLACEMENT_LOT_62619_433_EXACT_SUBTREE_DISCOVERY",
+  "state": "PASS_OCV00_REPLACEMENT_LOT_EXACT_SUBTREE_CAPABILITY_GAP_OBSERVED",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": true,
+  "mutationsPerformed": false,
+  "sources": [
+    {
+      "path": "work/OPENCV_OEL1/OEL1_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "047E9460EC5E71989FCD952665CF8427914378946DB2752E253D6467FBE9A7CE",
+      "observed": "The signature-verified installed endpoint observation used exact relative leaves only, performed no path enumeration, read no files or image bytes, hashed no source images, and changed no task or process."
+    },
+    {
+      "path": "work/OPENCV_OEL1/pkg/payload/W.ps1",
+      "sha256": "1CE01F67083A989CB92AE3824DB0AE2CB6532FD6B674E74456CC495F06DCDDF8",
+      "observed": "The currently qualified worker has no bounded exact-subtree metadata selector; its environment provider can inspect only named volume children and already-known exact leaves."
+    },
+    {
+      "path": "work/OPENCV_OCV00/OCV00_READ_ONLY_INVENTORY_DRAFT_20260822.json",
+      "sha256": "3C7FAEEE0CF2D7C25E53EF14BE3DA84C352073D9363BF19D9588C13FE1132E2A",
+      "observed": "The bounded current catalog evidence has zero rows for replacement lot 62619-433; catalog absence does not disprove the operator-supplied exact folder because the lot can remain outside the KLARF catalog."
+    },
+    {
+      "path": "work/OPENCV_OLS2/OLS2_PROVIDER_TEST_GATE_R3.json",
+      "sha256": "C98500E5CD005B62E2B1F4683B8E5B4304B3AEC26C948497C7A851B86A87015D",
+      "observed": "A local Windows PowerShell 5.1 proof shows one generic config-anchored exact-subtree provider can return directory and BMP metadata through a verified process-local alias while refusing truncation, depth, reparse, traversal, and path-budget hazards."
+    }
+  ],
+  "expectedObserved": [
+    {"field":"operatorSuppliedRoot","expected":"an exact replacement-lot root","observed":"D:/KLARFExport/PatternedFront/Lot_62619-433"},
+    {"field":"currentCatalog.rowsForLot62619-433","expected":"one or more only if the lot remains within current catalog scope","observed":"0"},
+    {"field":"installedCapability.boundedExactSubtreeMetadata","expected":"required to enumerate the supplied folder without guessing leaves","observed":"unavailable"},
+    {"field":"sourcePathExistence","expected":"direct endpoint metadata required","observed":"not yet directly observed"},
+    {"field":"imageBytesRead","expected":"false","observed":"false"},
+    {"field":"sourceHashingPerformed","expected":"false","observed":"false"},
+    {"field":"inspectionTasksChanged","expected":"false","observed":"false"},
+    {"field":"processorTaskChanged","expected":"false","observed":"false"}
+  ],
+  "sourcePathExistenceResolved": false,
+  "nestedSourceDiscoveryResolved": false,
+  "supportedDecision": "D",
+  "decision": "REQUEST_ONE_REUSABLE_CONFIG_ANCHORED_BOUNDED_EXACT_SUBTREE_METADATA_CAPABILITY",
+  "taskRestartAuthorized": false,
+  "processorRestartAuthorized": false,
+  "sourceFingerprintPassClaimed": false,
+  "sourceHashesAccepted": false,
+  "pixelScoringAllowed": false,
+  "compositeConstructionAllowed": false,
+  "patternedInspectionAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

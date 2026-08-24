@@ -1,0 +1,54 @@
+{
+  "schema": "argos_ocv00_deepest_alias_local_proof_freeze_v1",
+  "createdUtc": "2026-08-24T19:51:00Z",
+  "state": "PASS_LOCAL_PROVIDER_PROOF_LIVE_REQUEST_NOT_AUTHORIZED",
+  "lifecycle": "FROZEN_LOCAL_EVIDENCE",
+  "designContract": {
+    "path": "work/OPENCV_OLS4/OCV00_DEEPEST_ALIAS_INVENTORY_CONTRACT.json",
+    "sha256": "7DB4FEC2B8AAB216127263F9E06EAE65FF4F7A433CF4ED20F43A464F5C7F0C8F"
+  },
+  "provider": {
+    "path": "work/OPENCV_OLS4/Invoke-OCV00DeepestAliasInventory.ps1",
+    "sha256": "DFF2B3A54E9C6D30A003CF4CFC283FECA0F104B5D5A2929296A81D283CAA5675"
+  },
+  "harness": {
+    "path": "work/OPENCV_OLS4/Test-OCV00DeepestAliasProvider.ps1",
+    "sha256": "04A39208233A3FB5062DF6884EDB17AD0738BC8AD5FA0D4205BFD2B81B89FBEF"
+  },
+  "invocationManifest": {
+    "path": "work/OPENCV_OLS4/OLS4_LOCAL_REHEARSAL_INVOCATION.json",
+    "sha256": "456A170CE72E7F9660084EF2B67B9AD6F51C0243E3F82EF8C743376D9711E87C"
+  },
+  "preflightGate": {
+    "path": "work/OPENCV_OLS4/OLS4_LOCAL_PREFLIGHT_GATE.json",
+    "sha256": "447BB029BDB3132AC84B90CECF06E43B04D39067480DCBA7B04AC07DF689E254"
+  },
+  "preactionContract": {
+    "path": "work/OPENCV_OLS4/OLS4_LOCAL_PROVIDER_REHEARSAL_PREACTION.json",
+    "sha256": "68F88F42EB44017FC0EDA0B61078E1B0A9B35A1593F0D6E752D373BE05950898"
+  },
+  "localGate": {
+    "path": "work/OPENCV_OLS4/OLS4_DEEPEST_ALIAS_PROVIDER_GATE.json",
+    "sha256": "791829F3EFE668B10FD6DB6CD6847F375556790204C8A9D811224627AD309396",
+    "state": "PASS_OCV00_DEEPEST_ALIAS_PROVIDER_LOCAL_GATE"
+  },
+  "proved": {
+    "aliasAnchoredAtExactRequestedSubtree": true,
+    "canonical230PlusPathUsedForProvenanceOnly": true,
+    "aliasIoEffectiveLengthBelow200": true,
+    "zeroOneManyComplete": true,
+    "unsafeAliasPathProducesExactIdentityHold": true,
+    "existingSourceComponentAbove80IsAdvisory": true,
+    "filesystemImpossibleComponentProducesExactIdentityHold": true,
+    "missingSubtreeFailsClosed": true,
+    "aliasRemovedAfterInjectedFailure": true
+  },
+  "liveRequestAuthorized": false,
+  "packageBuildAuthorized": false,
+  "sourceHashingAuthorized": false,
+  "imageReadAuthorized": false,
+  "jbodContacted": false,
+  "healthyProcessorActions": 0,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

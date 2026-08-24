@@ -1,8 +1,33 @@
-# Active ArgosEdgeLab state - META01R1 live tray fix pass - 2026-08-22
+# Active ArgosEdgeLab state - OCV-02 O2D4 Slot16 response pending - 2026-08-24
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-02 O2D4 Slot16 request published / response pending — 2026-08-24
+
+`REQ_O2D4` is the only active OpenCV migration request. Its exact signed ZIP
+SHA-256 is `D2411AE50ED33AEE4B6EC8DF1D8B771E228C082C21338B6A4373289EB744C994`.
+The gateway consumed the request, but no matching signed terminal response was
+available when the checkpoint was written. Do not retry or publish a successor
+until the exact signed terminal response is collected.
+
+The package-shaped local gate passed accepted historical scribe
+`0438S004FEH0`, preserved `SCRIBE_REFERENCE_COVERAGE_HOLD`, removed the
+temporary `X:` child alias, and failed closed on an injected source-hash
+mismatch. The exact route gate SHA-256 is
+`AFE9A1306D90C5B54042388901F6FD6902DD8C1637A99714B451EF1F14F8CA34`.
+The canonical D: leaves remain provenance only; OpenCV reads the verified
+alias paths below the path limit.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV02_O2D4_SLOT16_REQUEST_PUBLISHED_RESPONSE_PENDING_CHECKPOINT_20260824.md`,
+SHA-256 `0F57B389B44B1BF1D60BD743A0BD72797E809E9F8AA19F72839BB448E190AA16`.
+On a matching signed terminal pass, freeze Slot16 and continue directly to
+frozen development Slot17. On failure or continued absence, stop before any
+successor and follow the observation/stop-loss policy. The healthy processor,
+all existing holds, disabled provider selection, XML/training/production
+boundaries, sources, and wafers remain unchanged.
 
 ## META01R1 live tray fix pass — 2026-08-22
 
@@ -6118,3 +6143,328 @@ family baselines, and exact PFC003/PFC010 source-path/hash resolution. The
 healthy processor remains untouched; no live provider activation, real image
 read, XML, training, production, deletion, or wafer action is authorized by
 the checkpoint.
+
+## 2026-08-24 OCV-00 exact source-path resolution
+
+OCV-00 remains `PENDING_GATE`. One operator-approved generic metadata-only
+capability returned a matching signed terminal response. PFC003 BF and DF are
+exact contained ordinary leaves at their catalog paths, 475,379,874 bytes
+each, with no reparse point or reparse ancestor. Their current source hashes
+were not acquired. Both exact PFC010 catalog paths are absent; no fallback or
+replacement identity was selected.
+
+The machine record is
+`work/OPENCV_OEL1/OCV00_EXACT_SOURCE_PATH_RESOLUTION_20260824.json`, SHA-256
+`C75A1144A9B2A3F7B469410C93DC55A3CD528E1A629232F49C96EC80A91CB207`.
+The terminal response gate SHA-256 is
+`047E9460EC5E71989FCD952665CF8427914378946DB2752E253D6467FBE9A7CE`.
+No enumeration, file-content read, image-byte read, source hash, image
+processing, provider activation, task/process action, processor restart,
+source deletion, or wafer action occurred.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_EXACT_SOURCE_PATH_RESOLUTION_CHECKPOINT_20260824.md`,
+SHA-256
+`BC05C65EBA7602CBB3B09FB30F19C48A41A00B1181D1B009F623650FC6ABF2A0`.
+The healthy processor, R10/AVS1 withdrawal, global FS15, fiducial
+composite/registration/scoring, XML, training, production, deletion, and
+wafer-action holds remain unchanged.
+
+Next action: await operator selection of a fresh replacement PFC010
+development identity or an exact alternate native BF/DF pair. Then obtain
+explicit authority for a separately bounded current-source SHA-256
+acquisition. Do not write or run OpenCV image-processing code before both the
+replacement pair and exact current source hashes are frozen.
+
+## 2026-08-24 OCV-00 OLS2 replacement-lot inventory request ready
+
+OCV-00 remains `PENDING_GATE`. The operator selected
+`D:\KLARFExport\PatternedFront\Lot_62619-433` as the replacement development
+lot after confirming the former PFC010 lot was moved because of bad stitching.
+Null-die/bin-34/bin-36 context is preserved only as a neighborhood clue; it is
+not fiducial identity or site authority.
+
+One generic exact-subtree metadata request, `REQ_OLS2`, is frozen and signed
+locally but not published. Its exact ZIP SHA-256 is
+`D72CE5040E0EADF624A80A536BFCE7DE2755AD6264E556BCD558A657C7CF23FE`.
+Eight provider cases, ten entrypoint cases, worker inheritance, complete clone
+remediation, exact final extraction/signature verification, and all 50 planned
+route paths pass. The complete route-gate SHA-256 is
+`BD49980EECA38B197CD2099EEE7DE5704E113B5B1E882AD8D9CE86D54322B78A`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_OLS2_LOT_62619_433_INVENTORY_REQUEST_READY_CHECKPOINT_20260824.md`,
+SHA-256
+`D79CC309A1684F2FCFE4BC9AD7D7D8EDA1F6DEB0D2AAA154E3197CDFFFAD5FB6`.
+
+No source hash, file-content/image-byte read, image processing, provider
+activation, task/process action, processor restart, deletion, or wafer action
+occurred. Next, pass continuity/session/queue/publication/tip gates and publish
+exactly one create-new request. Await its matching signed terminal response
+without retry, then report exact BF/DF candidate paths and stop before hashing
+or image processing. Every existing fiducial and global hold remains unchanged.
+
+## 2026-08-24 OCV-00 OLS2 request published, response pending signature
+
+`REQ_OLS2` was published exactly once after the queue, continuity, session,
+path, route, recurrence, and branch-tip gates passed. Local and GitHub tips
+both matched commit `ecbda3205852550d7f9fdb4a4daf99b4a001e7da`. The publish
+gate SHA-256 is
+`F7B6671E9990AA3E46A1678B04C2E8A257C544EC36033B41A190D69F667CAB31`,
+and the gateway consumed the request.
+
+One matching 2,248-byte response ZIP is present with SHA-256
+`D6C4C56ECEA086FE29CB31704E1BA61E783E0D887EE6A9827B597E2225C84673`.
+Its bounded manifest carries `FAILED`, but that state remains untrusted until
+the pinned JBOD signature and exact failure files are verified. No retry or
+successor is authorized.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_OLS2_REQUEST_PUBLISHED_RESPONSE_PENDING_SIGNATURE_CHECKPOINT_20260824.md`,
+SHA-256
+`220A54453392C427784775D95060B67F871387EFFF90F21C352A1FB16E08CC9F`.
+All image, processor, fiducial, inspection, XML, training, production,
+deletion, and wafer-action boundaries remain unchanged.
+
+## 2026-08-24 OCV-00 OLS2 signed terminal failure
+
+The pinned JBOD signature verifies the matching `REQ_OLS2` response. The
+signed endpoint state is `FAILED`; exact stderr says
+`OLS2 output bounded subtree inventory did not complete safely.` The failure
+gate SHA-256 is
+`6F37C539876D879B2D91D64BC950817737259A6A4721F001F5323A61859CA70D`.
+No completion predicate below that entrypoint assertion is yet proven.
+
+The first local collector is `WITHDRAWN` after a documented StrictMode
+optional-property recurrence; preserved root `C:\AS2F` is non-reusable. Fresh
+R2 at `C:\AS2G` passed pinned signature verification and wrote the terminal
+gate. Neither collector contacted JBOD or read lot/image content.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_OLS2_SIGNED_TERMINAL_FAILURE_CHECKPOINT_20260824.md`,
+SHA-256
+`6ABA22E08C945B97347C719940AFB4BE5FA88957939E83E656C25CD7F5CE5183`.
+
+This is one signed live-premise failure. No mutation, retry, successor, source
+hash, image read, or image processing is allowed until a direct post-failure
+observation is pinned through an already qualified read-only route. All
+existing holds remain unchanged.
+
+## 2026-08-24 OCV-00 OLS2 OBS1 signed capability gap
+
+The pinned JBOD signature verifies the matching terminal response for the
+read-only `REQ_O2OBS1` diagnostic pull. Its signed failure detail is
+`DATA_PULL source not found: OCV00_OLS2_LOT_INVENTORY.json`. This proves the
+installed OLS2 inventory output was absent when requested; it does not prove
+that `D:\KLARFExport\PatternedFront\Lot_62619-433` or its images are absent,
+and it resolves no BF/DF source path. The signed gate SHA-256 is
+`2697F12E486C848087030A11678FFE84FECDBD602B8B6A04439365DF3C99D9A3`.
+
+This is the second signed premise failure in the OLS2 incident, so mutation
+stop-loss is active. No retry, successor request, endpoint change, broader
+enumeration, image read, source hash, or image-processing work is authorized
+until the workflow is reviewed and a fresh recovery intent explicitly clears
+the stop-loss.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_OLS2_OBS1_SIGNED_CAPABILITY_GAP_CHECKPOINT_20260824.md`,
+SHA-256
+`E12A890C889CBA349F90767CBA4841D751CD9F16F5E9CBCEC2FCAB1A3D236A6D`.
+The healthy processor and every existing hold remain unchanged.
+
+## 2026-08-24 OCV-00 OLS3 stop-loss cleared / request ready
+
+The two signed OLS2 premise failures were reviewed and a direct post-failure
+observation was pinned. Fresh workflow clearance and a frozen recovery intent
+explicitly clear mutation stop-loss for one metadata-only `REQ_OLS3` request,
+with no retry. The request targets the operator-selected JBOD lot
+`D:\KLARFExport\PatternedFront\Lot_62619-433` and is signed and packaged but
+not yet published.
+
+Exact final ZIP SHA-256 is
+`952C6C02ED5E7C18EC9976F2226D5DFA8403DC990CB0D9919F4A5774BACFF09C`;
+the complete 50-path route-gate SHA-256 is
+`932C792DA3095FA43FF1749775D7F4BD3473FA6043ABE86C449FBA16A3914F3A`.
+The corrected result contract preserves bounded metadata as `COMPLETE` or
+`HOLD_INCOMPLETE` instead of discarding an incomplete inventory.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_OLS3_STOP_LOSS_CLEARED_REQUEST_READY_CHECKPOINT_20260824.md`,
+SHA-256
+`2A36A01D2DAEDE5053824D2FAFD6DC7ED665BE066D35B9C391BD6413CE60073B`.
+
+The fixed sequence remains OCV-00 inventory/baselines, OCV-01 provider
+platform, OCV-02 scribe, OCV-03 perimeter/notch/global pose, then OCV-04
+fiducials. No image bytes or source hashes were read, no image processing ran,
+and the healthy processor and all existing holds remain unchanged. Next,
+publish exactly one request through the gateway and await its signed terminal
+response without retry.
+
+## 2026-08-24 OCV-00 OLS3 response available / pending signature
+
+`REQ_OLS3` was published exactly once and consumed by the established gateway.
+Local and GitHub branch tips matched
+`ecbda3205852550d7f9fdb4a4daf99b4a001e7da`; publish-gate SHA-256 is
+`8B0CE8CF044A28D8CFC79CB14A5970F2AEC73955DC4C907083CF3286FF5396D5`.
+
+Matching response `R_8D14080FA339_20260824191035127_9bace42e.ready.zip`
+is 10,299 bytes with SHA-256
+`E71DA6D107335F4E6A21C698C513CE96708949F909C09CBF6C78B1607B979D06`.
+Its outer success state and diagnostic HOLD_INCOMPLETE metadata remain
+untrusted until pinned JBOD signature verification.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_OLS3_RESPONSE_AVAILABLE_PENDING_SIGNATURE_CHECKPOINT_20260824.md`,
+SHA-256
+`1BB76FC97E7B61F3335C90D7BD25D4F1BAD55EE350C5F165A853A7D063885694`.
+No retry, image read, source hash, image processing, task/process action,
+deletion, or wafer action occurred. Next, collect once into fresh `C:\A3R` and
+verify the exact signed terminal contract.
+
+## 2026-08-24 OCV-00 OLS3 signed exact front paths
+
+The pinned JBOD signature verifies `REQ_OLS3`. The broad lot inventory remains
+`HOLD_INCOMPLETE` because 40 long-path items were skipped, but 20 exact signed
+frontside BF/DF source rows are valid: ten pairs for Slots 16 through 25 under
+acquisition `62619-433_20260824005735`. Every leaf is an ordinary non-reparse
+BMP contained by `D:\KLARFExport` and is 475,379,874 bytes.
+
+The explicit path-set SHA-256 is
+`7D7155D92E5DD40F0BD5CAE9CF13FA713E84DCD762238A4919D10DDD4910FE5A`;
+its binding-gate SHA-256 is
+`B21850788F3201E2BD45C02BA0927C38243C66CEA84072A72D3339357AAF11F0`.
+The signed terminal-gate SHA-256 is
+`18CB23C01E618D26D31C59091C5A692DEEE78A9DFEB1844D0AF5AC59C48DB862`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_OLS3_SIGNED_EXACT_FRONT_PATHS_CHECKPOINT_20260824.md`,
+SHA-256
+`B102CAAD0EE8A6BEE0372BD72D1C90E35E3D027B25C8893734B6E41CE15CA668`.
+
+Current source hashes and the development/validation split remain unresolved.
+No image bytes were read, no image processing ran, and the healthy processor
+and all existing holds remain unchanged. OCV-00 must close before OCV-01,
+OCV-02 scribe, OCV-03 notch/pose, or OCV-04 fiducials begins.
+
+## 2026-08-24 OCV-00 OLS4 deepest-alias local proof
+
+The corrected generic inventory provider now anchors its process-local alias
+at the exact requested subtree, uses the alias for all enumeration I/O, keeps
+canonical full paths as provenance strings only, and emits one exact bounded
+identity row before any unsafe-path skip. Existing source components over 80
+characters are advisory rather than silently omitted.
+
+The Windows PowerShell 5.1 local gate passed ZERO, ONE, and MANY inventories,
+long-canonical/short-alias separation, exact unsafe-path holds, missing-root
+fail-closed behavior, and alias cleanup after an injected failure. Gate
+SHA-256 is
+`791829F3EFE668B10FD6DB6CD6847F375556790204C8A9D811224627AD309396`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_OLS4_DEEPEST_ALIAS_LOCAL_PROOF_CHECKPOINT_20260824.md`,
+SHA-256
+`0BB0914CB4A99168A62E83CD8ABB3803F04C7D32329DD54FEE37F7997A483D88`.
+
+No JBOD request was created or published, no image bytes or current source
+hashes were read, and the healthy processor and all holds remain unchanged.
+One separately frozen metadata-only JBOD inventory request requires explicit
+operator authority. A signed `COMPLETE` result with zero skipped-path rows is
+required before source hashing is reconsidered.
+
+## 2026-08-24 OCV-00 OLS4 signed complete inventory and frozen split
+
+`REQ_OLS4` returned a pinned-signature `PASS_MAINTENANCE_PATCH`. The exact lot
+inventory is `COMPLETE`: 131 directories, 40 BMP leaves, and zero skip, access,
+reparse, unsafe-path, depth-boundary, or truncation holds. Terminal-gate SHA-256
+is `2FE715B1ABCBAC8CCB5E09F2298C34FFEBB65F1D5D9A4130AFBB448DDC46E36D`.
+
+The ten frontside BF/DF pairs are frozen before hashing into development Slots
+16-21 and independent-validation Slots 22-25. Split-manifest SHA-256 is
+`62BC8EFF1B7F85D9913141845514B04D79296AC6AD2BB40659A3EAC5227FEFFA`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_OLS4_SIGNED_COMPLETE_INVENTORY_AND_SPLIT_CHECKPOINT_20260824.md`,
+SHA-256
+`753EFA75EE38FB304272F3768704CD04D09570579054DBBC72DDDF25449E288E`.
+
+No image was decoded and no image-processing code ran. The processor and all
+holds remain unchanged. The operator authorized automatic continuation; next
+acquire exact current SHA-256 provenance for the frozen twenty frontside BMP
+leaves, then close OCV-00 baselines and begin OCV-01.
+
+## 2026-08-24 OCV-00 OLS5 signed hash timeout
+
+`REQ_OLS5` returned a pinned-signature terminal `FAILED`: the endpoint killed
+the provider-aware PowerShell hash child at its fixed 900-second limit. The
+twenty frozen files total 9,507,597,480 bytes, and no result was committed.
+Timeout-gate SHA-256 is
+`BC60CE0401105FD4F02A0F0363B9E702A6CE5C5D9055DC7F7997E3ED590633EC`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_OLS5_SIGNED_HASH_TIMEOUT_CHECKPOINT_20260824.md`,
+SHA-256
+`7D68CB78A4878E9C90E908B6BDF8249BF8376F940821ADA0BB4AB90ECF211C5F`.
+
+OLS5 is withdrawn and cannot be retried. No pixel decode, image processing,
+source mutation, task/process action, processor change, wafer action, or hold
+clearance occurred. Before a faster successor is designed, obtain one signed
+read-only DATA_PULL observation of the exact OLS5 output identity.
+
+## 2026-08-24 OCV-00 OLS5 post-timeout observation complete
+
+Signed read-only `REQ_O5OBS1` proves the exact OLS5 output is absent. Absence-
+gate SHA-256 is
+`46F430F8C70B8AA63CA19FDE74F77CE83E9FBA191086150A32FCC4059E8586CF`;
+post-failure observation SHA-256 is
+`936DAE7A1166B09218C6F3A523F057958904ADC9ACA1D0FB0945EFE5CAD16119`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_OLS5_TIMEOUT_POST_FAILURE_OBSERVATION_CHECKPOINT_20260824.md`,
+SHA-256
+`87A9BE6CE059A339A7BE3CFF59D93F9EBDC6210AF2E2473B73162EFECF3DBBFC`.
+
+The successor is a fresh five-chunk hash workflow: two complete BF/DF slot
+pairs (four leaves) per request, strictly sequential signed completion. No
+pixel/image-processing semantics change, and the processor/holds stay fixed.
+
+## 2026-08-24 OCV-00 complete; OCV-01 started
+
+The five-request OLS6 successor completed successfully. All 20 frozen BF/DF
+leaves for operator-selected Lot 62619-433 are SHA-256-pinned: 20 unique
+targets, 9,507,597,480 bytes, zero missing/extra/duplicate/unstable rows, and
+zero pixel decode or image processing. OCV-00 completion-gate SHA-256 is
+`888DE3D95F2A5E883927A7D9DB1DE4B7F97722709A98EF02D25B189B8443CDC0`;
+aggregate SHA-256 is
+`E54A15301A2B4FE914E6315DDFB9628E1D1364B0553D2155E9D5387A88E7FF3B`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_COMPLETE_OCV01_START_CHECKPOINT_20260824.md`,
+SHA-256
+`8DDA34C623144C12D579551466EA6AF0BD01318600EF02DF576B82D75478CE31`.
+
+Active work is now OCV-01: define the disabled-by-default,
+configuration-selected OpenCV provider platform and versioned schemas. Live
+family activation remains unauthorized. The healthy processor and every hold
+remain unchanged.
+
+## 2026-08-24 OCV-01 complete; OCV-02 started
+
+The configuration-selected provider platform is frozen as an approved,
+disabled-by-default baseline. Seven versioned schemas cover provider config,
+job, result, transform, composite, mask, and review-raster contracts. Eight
+valid fixtures passed and seven invalid controls were rejected.
+
+Windows PowerShell 5.1 proved `DISABLED_UNCHANGED_LEGACY_PATH` without a
+runtime probe and `HOLD_OPENCV_RUNTIME_MISSING` without provider invocation.
+Platform-gate SHA-256 is
+`F0A6B44976C570FCE4CCAB28839AC4DEC702B51B9EEE87859738D1332DB11190`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV01_COMPLETE_OCV02_START_CHECKPOINT_20260824.md`,
+SHA-256
+`64CA07641D7C480C475ED5D5DECC587C3C6C2EC8237972FE028B2EBCD6A9D177`.
+
+No installed config or processor path changed and no provider was activated.
+The healthy processor and all holds remain untouched. Active work is OCV-02
+scribe-provider development on frozen development Slots16-21; Slots22-25 stay
+unseen until the development contract is frozen.

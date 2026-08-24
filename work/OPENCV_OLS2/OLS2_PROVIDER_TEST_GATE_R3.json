@@ -1,0 +1,56 @@
+{
+    "schema":  "argos_ols2_provider_test_gate_v1",
+    "createdUtc":  "2026-08-24T17:07:16.3412962Z",
+    "state":  "PASS_OLS2_PROVIDER_TEST_GATE",
+    "workerSha256":  "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "caseCount":  8,
+    "passCount":  8,
+    "cases":  [
+                  {
+                      "caseId":  "ABSENT",
+                      "state":  "PASS",
+                      "bmpLeafCount":  0
+                  },
+                  {
+                      "caseId":  "ONE_BMP",
+                      "state":  "PASS",
+                      "bmpLeafCount":  1
+                  },
+                  {
+                      "caseId":  "PAIRED_BF_DF",
+                      "state":  "PASS",
+                      "bmpLeafCount":  2,
+                      "otherLeafCount":  1
+                  },
+                  {
+                      "caseId":  "TRUNCATION_HOLD",
+                      "state":  "PASS"
+                  },
+                  {
+                      "caseId":  "DEPTH_BOUNDARY_HOLD",
+                      "state":  "PASS"
+                  },
+                  {
+                      "caseId":  "REPARSE_HOLD",
+                      "state":  "PASS"
+                  },
+                  {
+                      "caseId":  "UNSAFE_ROOT_REFUSAL",
+                      "state":  "PASS"
+                  },
+                  {
+                      "caseId":  "PATH_BUDGET_REFUSAL",
+                      "state":  "PASS"
+                  }
+              ],
+    "windowsPowerShellVersion":  "5.1.26100.8457",
+    "filesRead":  false,
+    "imageBytesRead":  false,
+    "sourceHashingPerformed":  false,
+    "processorTaskChanged":  false,
+    "processActions":  [
+
+                       ],
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

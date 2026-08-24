@@ -1,0 +1,53 @@
+{
+    "schema":  "argos_oel1_entrypoint_test_gate_v1",
+    "createdUtc":  "2026-08-24T15:24:26.6239835Z",
+    "state":  "PASS_OEL1_ENTRYPOINT_TEST_GATE",
+    "caseCount":  6,
+    "passCount":  6,
+    "cases":  [
+                  {
+                      "caseId":  "OLD_PREDECESSOR",
+                      "state":  "PASS",
+                      "workerChanged":  true
+                  },
+                  {
+                      "caseId":  "TARGET_IDEMPOTENT",
+                      "state":  "PASS",
+                      "workerChanged":  false
+                  },
+                  {
+                      "caseId":  "UNAPPROVED_PREDECESSOR",
+                      "state":  "PASS",
+                      "refusedBeforeMutation":  true
+                  },
+                  {
+                      "caseId":  "ROLLBACK_AFTER_SWAP",
+                      "state":  "PASS",
+                      "predecessorRestored":  true
+                  },
+                  {
+                      "caseId":  "UNSAFE_RELATIVE_LEAF_REFUSAL",
+                      "state":  "PASS",
+                      "mutationsPerformed":  false
+                  },
+                  {
+                      "caseId":  "UNAPPROVED_ROOT_REFUSAL",
+                      "state":  "PASS",
+                      "mutationsPerformed":  false
+                  }
+              ],
+    "priorWorkerSha256":  "750022568C62C2C049D04CE0D49E2FD52B5030A9701D8E453152129EB48D6F08",
+    "targetWorkerSha256":  "1CE01F67083A989CB92AE3824DB0AE2CB6532FD6B674E74456CC495F06DCDDF8",
+    "dataRoot":  "C:\\O1D",
+    "maximumCanonicalEffectiveLength":  225,
+    "aliasEffectiveLength":  198,
+    "installedProducerPreflightExecuted":  true,
+    "installedProducerTerminalStatusReadBeforeOutputValidation":  true,
+    "inspectionTasksChanged":  false,
+    "processActions":  [
+
+                       ],
+    "imageBytesRead":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

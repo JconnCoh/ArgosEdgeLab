@@ -1,0 +1,65 @@
+{
+  "schema": "argos_opencv_scribe_job_v1",
+  "revision": "OCV02_SCRIBE_O2D1_REHEARSAL_20260824",
+  "jobId": "O2D1_REHEARSAL_SLOT16",
+  "createdUtc": "2026-08-24T22:25:00Z",
+  "identity": {
+    "lotId": "62631-535",
+    "acquisitionId": "62631-535_20260730105033",
+    "slotId": "Slot16"
+  },
+  "inputs": {
+    "bf": {
+      "path": "C:\\O2D1I\\BF.png",
+      "sha256": "094353365C010DA2C1AB67EBAE1097D3F783E80379BBB585D1F4B531C29EA2EE",
+      "bytes": 1677580,
+      "coordinateFrameId": "O2D1_REHEARSAL_ORIENTED_NATIVE"
+    },
+    "df": {
+      "path": "C:\\O2D1I\\DF.png",
+      "sha256": "79232E8A8FAC6634048CFE9EDAFF34467EBF21BEACC55A47E2B3CAA91B82426C",
+      "bytes": 619767,
+      "coordinateFrameId": "O2D1_REHEARSAL_ORIENTED_NATIVE"
+    }
+  },
+  "references": {
+    "manifestPath": "C:\\O2D1T\\w\\refs\\PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "manifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "roots": [
+      {
+        "relativePrefix": "glyphs",
+        "path": "C:\\O2D1T\\w\\refs\\glyphs"
+      },
+      {
+        "relativePrefix": "glyphs_v5_confirmed_20260806",
+        "path": "C:\\O2D1T\\w\\refs\\glyphs_v5_confirmed_20260806"
+      }
+    ]
+  },
+  "search": {
+    "expectedRegions": [
+      {
+        "regionId": "FROZEN_ACCEPTED_GRID_PRIOR",
+        "x": 382,
+        "y": 277,
+        "width": 1152,
+        "height": 230,
+        "angleDegrees": 0.0,
+        "source": "OPERATOR_DESIGNATED_REVIEW_ONLY"
+      }
+    ],
+    "boundedExceptionSearch": true,
+    "maximumWorkingDimension": 1600,
+    "maximumCandidates": 32,
+    "orientationStepDegrees": 15
+  },
+  "outputRoot": "C:\\O2D1T\\o",
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}

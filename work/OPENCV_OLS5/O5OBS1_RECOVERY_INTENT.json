@@ -1,0 +1,80 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-24T20:46:00Z",
+  "incidentId": "OCV00_OLS5_HASH_TIMEOUT_20260824",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_OLS5/OLS5_SIGNED_TIMEOUT_GATE.json",
+        "sha256": "BC60CE0401105FD4F02A0F0363B9E702A6CE5C5D9055DC7F7997E3ED590633EC",
+        "signedTerminal": true
+      }
+    ],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DATA_PULL",
+    "jobClass": "DATA_PULL",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_OLS2/OBS1_PREPUBLICATION_PATH_GATE.json",
+      "sha256": "3E6267DDF51313D0E4C9C8654D7FD0618460A98976D4A6BCB6B6FA19F1527A24"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/OPENCV_OLS2/OBS1_PREPUBLICATION_PATH_GATE.json",
+      "sha256": "3E6267DDF51313D0E4C9C8654D7FD0618460A98976D4A6BCB6B6FA19F1527A24"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV00_OLS5_FRONT_SOURCE_HASHES.json",
+        "sourceSchema": "argos_ols5_source_hash_result_v1",
+        "selector": "approvedRoot=JBOD_PROCESSOR_REVIEW;relativePath=OCV00_OLS5_FRONT_SOURCE_HASHES.json",
+        "uniquenessKey": "normalized_exact_relative_path",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": ["DATA_PULL"],
+    "requestedFields": ["existence", "bytes", "sha256"],
+    "decisionOptions": ["OUTPUT_PRESENT", "OUTPUT_ABSENT"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

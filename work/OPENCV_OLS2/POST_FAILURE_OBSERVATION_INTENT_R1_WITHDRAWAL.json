@@ -1,0 +1,21 @@
+{
+  "schema": "argos_recovery_intent_withdrawal_v1",
+  "createdUtc": "2026-08-24T17:48:00.0000000Z",
+  "state": "WITHDRAWN",
+  "incidentId": "OCV00_OLS2_BOUNDED_SUBTREE_INVENTORY_INCOMPLETE_20260824",
+  "intentPath": "work/OPENCV_OLS2/POST_FAILURE_OBSERVATION_INTENT.json",
+  "intentSha256": "863BD77A87FA26BC39F58B3D89F266881888F86A3390C1FC23F72DA76FBA1F3F",
+  "cause": "Frozen intent preflight rejected missing failure-evidence state classifications, a mistyped qualified-gate hash, and nonliteral decision-option labels.",
+  "violations": [
+    "FAILURE_EVIDENCE_CLASS_INVALID",
+    "SIGNED_FAILURE_COUNT_UNPROVED",
+    "LOCAL_FAILURE_COUNT_UNPROVED",
+    "PINNED_EVIDENCE_HASH_MISMATCH",
+    "DECISION_OPTION_SET_INVALID"
+  ],
+  "targetExecuted": false,
+  "mutationsPerformed": false,
+  "reusable": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

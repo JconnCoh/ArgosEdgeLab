@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "argos://schemas/opencv/provider-config/v1",
+  "title": "Argos OpenCV provider configuration v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema", "revision", "state", "enabled", "activationState",
+    "installedProcessorConfig", "roots", "cleanup", "providers",
+    "familyBindings", "failClosed", "authority"
+  ],
+  "properties": {
+    "schema": { "const": "argos_opencv_provider_config_v1" },
+    "revision": { "type": "string", "pattern": "^[A-Z0-9][A-Z0-9_.-]{3,95}$" },
+    "state": { "enum": ["LOCKED_INPUT", "PENDING_GATE", "DIAGNOSTIC_ONLY"] },
+    "enabled": { "type": "boolean" },
+    "activationState": {
+      "enum": ["DISABLED_OCV01_PLATFORM_ONLY", "SHADOW_REVIEW_ONLY", "ACTIVE_REVIEW_ONLY"]
+    },
+    "installedProcessorConfig": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "sha256"],
+      "properties": {
+        "schema": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/definitions/sha256" }
+      }
+    },
+    "roots": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["runtimeRoot", "workRoot", "cacheRoot", "outputRoot"],
+      "properties": {
+        "runtimeRoot": { "$ref": "#/definitions/jbodPath" },
+        "workRoot": { "$ref": "#/definitions/jbodPath" },
+        "cacheRoot": { "$ref": "#/definitions/jbodPath" },
+        "outputRoot": { "$ref": "#/definitions/jbodPath" }
+      }
+    },
+    "cleanup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["workRetentionHours", "cacheMaximumBytes", "outputRetentionDays", "deleteSourceImages", "preserveProvenance"],
+      "properties": {
+        "workRetentionHours": { "type": "integer", "minimum": 1, "maximum": 720 },
+        "cacheMaximumBytes": { "type": "integer", "minimum": 1048576 },
+        "outputRetentionDays": { "type": "integer", "minimum": 1, "maximum": 3650 },
+        "deleteSourceImages": { "const": false },
+        "preserveProvenance": { "const": true }
+      }
+    },
+    "providers": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "providerId", "contractRevision", "enabled", "runtimeExecutableRelativePath",
+          "engineEntrypointRelativePath", "runtimeManifestSha256", "engineSha256",
+          "supportedFamilies"
+        ],
+        "properties": {
+          "providerId": { "$ref": "#/definitions/id" },
+          "contractRevision": { "$ref": "#/definitions/id" },
+          "enabled": { "type": "boolean" },
+          "runtimeExecutableRelativePath": { "$ref": "#/definitions/safeRelativePath" },
+          "engineEntrypointRelativePath": { "$ref": "#/definitions/safeRelativePath" },
+          "runtimeManifestSha256": { "$ref": "#/definitions/sha256" },
+          "engineSha256": { "$ref": "#/definitions/sha256" },
+          "supportedFamilies": {
+            "type": "array", "minItems": 1, "uniqueItems": true,
+            "items": { "$ref": "#/definitions/family" }
+          }
+        }
+      }
+    },
+    "familyBindings": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "anyOf": [{ "$ref": "#/definitions/id" }, { "type": "null" }]
+      }
+    },
+    "failClosed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["disabledPathState", "missingRuntimeState", "missingProviderState", "schemaMismatchState", "provenanceMismatchState"],
+      "properties": {
+        "disabledPathState": { "const": "DISABLED_UNCHANGED_LEGACY_PATH" },
+        "missingRuntimeState": { "const": "HOLD_OPENCV_RUNTIME_MISSING" },
+        "missingProviderState": { "const": "HOLD_OPENCV_PROVIDER_MISSING" },
+        "schemaMismatchState": { "const": "HOLD_OPENCV_SCHEMA_MISMATCH" },
+        "provenanceMismatchState": { "const": "HOLD_OPENCV_PROVENANCE_MISMATCH" }
+      }
+    },
+    "authority": { "$ref": "#/definitions/authority" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "enabled": { "const": false } } },
+      "then": { "properties": { "activationState": { "const": "DISABLED_OCV01_PLATFORM_ONLY" } } }
+    }
+  ],
+  "definitions": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{2,95}$" },
+    "jbodPath": { "type": "string", "pattern": "^[Dd]:[\\\\/]", "maxLength": 180 },
+    "safeRelativePath": {
+      "type": "string", "minLength": 1, "maxLength": 160,
+      "not": { "pattern": "(^[A-Za-z]:)|(^[\\\\/])|(\\.\\.)" }
+    },
+    "family": {
+      "enum": ["SCRIBE", "WAFER_POSE", "FIDUCIAL", "REFERENCE_COMPOSITE", "REGISTRATION", "BARE", "BACKSIDE", "BOWCOMP", "FRONTSIDE_UNPATTERNED", "FRONTSIDE_PATTERNED", "REVIEW_RASTER"]
+    },
+    "authority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reviewOnly", "trainingEligible", "xmlEligible", "productionEligible", "mayRestartProcessor", "mayClearHolds"],
+      "properties": {
+        "reviewOnly": { "const": true },
+        "trainingEligible": { "const": false },
+        "xmlEligible": { "const": false },
+        "productionEligible": { "const": false },
+        "mayRestartProcessor": { "const": false },
+        "mayClearHolds": { "const": false }
+      }
+    }
+  }
+}

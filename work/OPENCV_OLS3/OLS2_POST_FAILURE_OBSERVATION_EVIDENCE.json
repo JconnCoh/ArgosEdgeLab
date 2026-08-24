@@ -1,0 +1,45 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-24T18:35:34.4290816Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "OCV00_OLS2_BOUNDED_SUBTREE_INVENTORY_INCOMPLETE_20260824",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "matchingResponseGate": {
+    "path": "work/OPENCV_OLS2/OBS1_SIGNED_FAILURE_GATE.json",
+    "sha256": "2697F12E486C848087030A11678FFE84FECDBD602B8B6A04439365DF3C99D9A3"
+  },
+  "expectedObserved": [
+    {
+      "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV00_OLS2_LOT_INVENTORY.json",
+      "field": "exists",
+      "expected": true,
+      "observed": false,
+      "authority": "matching signed JBOD DATA_PULL terminal response"
+    },
+    {
+      "sourcePath": "work/OPENCV_OLS2/pkg/payload/E.ps1",
+      "field": "failed output lifecycle",
+      "expected": "preserve rejected producer output",
+      "observed": "entrypoint moves output to timestamped maintenance_bootstrap/OLS2_<UTC>/failed_probe.json before rethrow",
+      "authority": "exact frozen REQ_OLS2 entrypoint bytes"
+    },
+    {
+      "sourcePath": "installed qualified DATA_PULL route",
+      "field": "capability to discover unknown timestamped evidence path",
+      "expected": true,
+      "observed": false,
+      "authority": "qualified capability inventory and exact-file-only route contract"
+    }
+  ],
+  "decision": "B",
+  "decisionReason": "Correct the invalid success-only output contract while preserving HOLD_INCOMPLETE and all safety counters; the exact-file observation route cannot discover the unknown timestamped failed_probe path.",
+  "mutationsPerformed": false,
+  "imageBytesRead": false,
+  "sourceHashingPerformed": false,
+  "taskOrProcessActionPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

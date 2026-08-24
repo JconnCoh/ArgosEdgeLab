@@ -1,0 +1,50 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 2097152,
+  "entryPoint": "payload/Invoke-OCV00SourceHashChunkEndpoint.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-OCV00SourceHashChunkEndpoint.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV00_OLS6.ps1",
+      "approvedPredecessorSha256": ["ED960F358ACC93D0EF57D294888E1BF71421B9890814C11F10D25530784B083E"],
+      "installedSha256": "ED960F358ACC93D0EF57D294888E1BF71421B9890814C11F10D25530784B083E",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [],
+  "entryPointOutputs": [
+    {
+      "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV00_OLS6_CHUNK05_SOURCE_HASHES.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_ols6_source_hash_chunk_result_v1",
+      "requiredState": "PASS_OCV00_SOURCE_HASH_CHUNK_OLS6"
+    }
+  ],
+  "metadataReadContract": {
+    "mode": "CONFIG_ANCHORED_EXACT_FROZEN_SOURCE_SHA256_CHUNK",
+    "chunkId": "CHUNK05",
+    "approvedDataRoot": "JBOD_KLARF_EXPORT",
+    "relativeRoot": "PatternedFront/Lot_62619-433",
+    "processLocalAliasName": "F",
+    "aliasAnchor": "EXACT_REQUESTED_SUBTREE_ROOT",
+    "chunkManifestSha256": "02F470F23FC7189CA1A8CD921507B5E09D2748F90E829F61E4AEA0CCD5B77F55",
+    "parentTargetManifestSha256": "EC016561994CD3FAFCB35C5ED2D9C39D6D425515C9AC4998DBFB4024327A7CA8",
+    "completeInventorySha256": "EB97918066DA4AC148C49BDB5D241443614F173E341787CFB253708316710936",
+    "targetCount": 4,
+    "hashAlgorithm": "SHA256",
+    "providerAwareIncrementalHashing": true,
+    "fileContentReadAllowed": true,
+    "imageBytesReadAllowed": true,
+    "sourceHashingAllowed": true,
+    "pixelDecodeAllowed": false,
+    "imageProcessingAllowed": false,
+    "sourceMutationAllowed": false,
+    "taskOrProcessActionAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [],
+  "rehearsal": {"requiredState": "PASS_OCV00_SOURCE_HASH_CHUNK_OLS6"},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,99 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-24T18:35:34.4290816Z",
+  "incidentId": "OCV00_OLS2_BOUNDED_SUBTREE_INVENTORY_INCOMPLETE_20260824",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 2,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": true,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_OLS2/OLS2_SIGNED_PREMISE_FAILURE_CLASSIFICATION.json",
+        "sha256": "68867BC037D1AA372094BD6F2E80359AFAA7EA33E2A582CF02F746BC74337BDC",
+        "state": "FAILED"
+      },
+      {
+        "path": "work/OPENCV_OLS3/OBS1_SIGNED_PREMISE_FAILURE_CLASSIFICATION.json",
+        "sha256": "D783EBD0E9ABED025E4D7F0A83D5391C626B9547287E4461E593CCC711A7667F",
+        "state": "FAILED"
+      },
+      {
+        "path": "work/OPENCV_OLS2/OLS2_FAILURE_COLLECTOR_R1_WITHDRAWAL.json",
+        "sha256": "B4D684E3FFA065D54C7AB60E8C5A08E23A2006CA95BDA36ABD91B9DECB628A33",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/OPENCV_OLS3/OLS2_POST_FAILURE_OBSERVATION_EVIDENCE.json",
+      "sha256": "B3688B81727654C02111CE2A3BC8DC61D0F7E55D132E3C33C042A46936861C5B"
+    },
+    "workflowReviewClearance": {
+      "path": "work/OPENCV_OLS3/OLS3_WORKFLOW_REVIEW_CLEARANCE.json",
+      "sha256": "FE505A47A819CE63C9F621CE0762DE7934202B9F3B92727BC02C535C4CE564D9"
+    }
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OEL1/pkg/payload/W.ps1",
+      "sha256": "1CE01F67083A989CB92AE3824DB0AE2CB6532FD6B674E74456CC495F06DCDDF8"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json",
+      "sha256": "12BFF65114DFB1C20B8B4271CD592D80857CFE446595CB9F303868288F62F65E"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/OPENCV_OEL1/OEL1_COMPLETE_ROUTE_GATE.json",
+      "sha256": "30E2A04438770BF9D1515BF9515FC91584EF8A84ACD9C2EF05BBF789F21C95B3"
+    },
+    "qualifiedAdminGate": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_OLS3/OLS2_POST_FAILURE_OBSERVATION_EVIDENCE.json",
+      "sha256": "B3688B81727654C02111CE2A3BC8DC61D0F7E55D132E3C33C042A46936861C5B"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

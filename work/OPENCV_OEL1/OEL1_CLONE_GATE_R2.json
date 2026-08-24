@@ -1,0 +1,107 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-24T15:31:36.5057157Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_OEL1\\CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "735440FC2CC6B1A2C0E51C442F75594542424D52D53B078EE14B7B84B62EC88A",
+    "pairCount":  6,
+    "pairs":  [
+                  {
+                      "source":  "work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/pkg/payload/E.ps1",
+                      "generated":  "work/OPENCV_OEL1/pkg/payload/E.ps1",
+                      "sourceSha256":  "04D8139B6E9799D55D688E40ADF8FB34D2B3C11B30374F82D4AEEEF9DFE17585",
+                      "generatedSha256":  "48F4642404A377A792B5333D3A75E11FBE5D96F2E178A89EC79B447D3C0DE85E",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData"
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/Test-FIC1DataPullInheritance.ps1",
+                      "generated":  "work/OPENCV_OEL1/Test-OEL1Inheritance.ps1",
+                      "sourceSha256":  "0B59C20FA416E44A43307CCCCD19828868D17308FFD56E90D0ABE801E03551D3",
+                      "generatedSha256":  "2866E1AA40495B724C143F503DD876FEEF5D8018B7F940982CD1657E1BCAD62C",
+                      "sourceRoots":  [
+                                          "C:\\Users"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\Users"
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/Build-FIC1Final.ps1",
+                      "generated":  "work/OPENCV_OEL1/Build-OEL1Final.ps1",
+                      "sourceSha256":  "6C701E779B8A9650828DA7F9FA2C4FFC3D9622D9FD976E87766DB8187FB733DF",
+                      "generatedSha256":  "B6E51FC313AE694FDEE2C549A890A08F9EEF0F3B00CABDD826306E5C0E4ECFCA",
+                      "sourceRoots":  [
+                                          "C:\\Users"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\Users"
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/Publish-FIC1.ps1",
+                      "generated":  "work/OPENCV_OEL1/Publish-OEL1.ps1",
+                      "sourceSha256":  "FE8B0B275AE5DA6180BBB355E5E246283A9028DD2C19A93C84E97FAD721D41B9",
+                      "generatedSha256":  "8A666C71E0A2C4581A49ADF504E2DDF1484E1EBC616A6356D8E3890CFC4B4D94",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "C:\\Users",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "C:\\Users",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  3
+                  },
+                  {
+                      "source":  "work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/Collect-FIC1Response.ps1",
+                      "generated":  "work/OPENCV_OEL1/Collect-OEL1Response.ps1",
+                      "sourceSha256":  "4443CB4A68528D4B324CC188F47E30C70D414CC1DA6B530C4A3E130A09E62252",
+                      "generatedSha256":  "C1EC51645A0716394EE399596E7FFBDA7B1BFD63EC642236695350361493B690",
+                      "sourceRoots":  [
+                                          "C:\\AF1R",
+                                          "C:\\Users",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\AO1R",
+                                             "C:\\Users",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  3
+                  },
+                  {
+                      "source":  "work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/pkg/MAINTENANCE_DEFINITION.json",
+                      "generated":  "work/OPENCV_OEL1/pkg/MAINTENANCE_DEFINITION.json",
+                      "sourceSha256":  "81197F33096AFCFCC8AEFA3C26165B0EB817A7A39974EEFE3A2E3C23F604A552",
+                      "generatedSha256":  "A7D9EE2BE3BFF85A87072590B36F326071E47B93B9C2FACEE6F9A483695EAFFA",
+                      "sourceRoots":  [
+                                          "\\\\ArgosEdgeLabRO\\AllWaferProcessorV2",
+                                          "\\\\ArgosProjectPortalRO\\bin",
+                                          "C:\\ProgramData"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\ArgosEdgeLabRO\\AllWaferProcessorV2",
+                                             "\\\\ArgosProjectPortalRO\\bin",
+                                             "C:\\ProgramData"
+                                         ],
+                      "ruleCount":  3
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

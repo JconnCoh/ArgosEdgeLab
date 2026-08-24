@@ -1,0 +1,75 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 4194304,
+  "entryPoint": "payload/Invoke-O2D1ScribeEndpoint.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-O2D1ScribeEndpoint.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_O2D1.ps1",
+      "approvedPredecessorSha256": ["A23CAE49FE255C7212F3765CBDE472FAF1CF38326A834A559EC6C298966B0A16"],
+      "installedSha256": "A23CAE49FE255C7212F3765CBDE472FAF1CF38326A834A559EC6C298966B0A16",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\A2\\w\\ocv\\O2D1",
+      "mode": "CREATE_NEW_PROVIDER_WORK_TREE",
+      "failureQuarantine": "D:\\A2\\w\\ocv\\O2D1.failed",
+      "payloads": [
+        {"path":"payload/ArgosOpenCvScribeV1.py","sha256":"0756EC2FA9279AA7AF915BC3F6D8B2810AC1268A64FC626233FAFE3DC5DDB53D"},
+        {"path":"payload/O2D1_REFS.zip","sha256":"56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6"},
+        {"path":"payload/O2D1_SLOT16_JOB.json","sha256":"3056646A019D155908A125503E17E024FD0DA74AB744CB2F31502197AE14BD9B"}
+      ]
+    },
+    {
+      "targetRoot": "D:\\A2\\o\\ocv\\O2D1",
+      "mode": "CREATE_NEW_PROVIDER_OUTPUT_TREE"
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "D:\\A2\\o\\ocv\\O2D1\\RESULT.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_opencv_scribe_result_v1",
+      "requiredStates": [
+        "SCRIBE_REFERENCE_COVERAGE_HOLD",
+        "SCRIBE_LOCALIZATION_HOLD",
+        "SCRIBE_SEGMENTATION_HOLD",
+        "SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID",
+        "SCRIBE_UNCALIBRATED_CONFIDENCE_HOLD",
+        "SCRIBE_M12_RERANKED_CONFIRMATION_REQUIRED",
+        "SCRIBE_M12_CHECKSUM_FAILED"
+      ]
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\O2D1\\RUN_GATE.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_o2d1_opencv_scribe_development_gate_v1",
+      "requiredState": "PASS_O2D1_OPENCV_SCRIBE_DEVELOPMENT_EXECUTED"
+    }
+  ],
+  "sourceProcessingContract": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "slotId": "Slot16",
+    "partition": "DEVELOPMENT",
+    "bfPath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot16\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "bfSha256": "CE5502F33D54A12FEF1A082A0B18C1635169B2F5D0BE98C402EA8238D86C2E53",
+    "dfPath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot16\\DarkfieldFrontsideWafer\\resizedImage\\62619-433_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "dfSha256": "6FAC812536C19F07D1C3DAD5263741350E94460A07867F2AEE0D2EEEA8C19ED9",
+    "sourceImageBytesReadAllowed": true,
+    "opencvPixelDecodeRequired": true,
+    "boundedWholeImageScribeSearchRequired": true,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": ["START_BOUNDED_PORTABLE_OPENCV_SCRIBE_DEVELOPMENT_SLOT16"],
+  "rehearsal": {"requiredState":"PASS_O2D1_ENTRYPOINT_TEST_GATE_R2"},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

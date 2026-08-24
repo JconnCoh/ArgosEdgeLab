@@ -1,0 +1,54 @@
+{
+  "schema": "argos_opencv_provider_config_v1",
+  "revision": "OCV01_MISSING_RUNTIME_TEST_ONLY",
+  "state": "DIAGNOSTIC_ONLY",
+  "enabled": true,
+  "activationState": "SHADOW_REVIEW_ONLY",
+  "installedProcessorConfig": {
+    "schema": "argos_jbod_all_wafer_processor_config_v3",
+    "sha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"
+  },
+  "roots": {
+    "runtimeRoot": "D:\\OCV01_MISSING\\rt",
+    "workRoot": "D:\\A2\\w\\ocv",
+    "cacheRoot": "D:\\A2\\c\\ocv",
+    "outputRoot": "D:\\A2\\o\\ocv"
+  },
+  "cleanup": {
+    "workRetentionHours": 1,
+    "cacheMaximumBytes": 1048576,
+    "outputRetentionDays": 1,
+    "deleteSourceImages": false,
+    "preserveProvenance": true
+  },
+  "providers": [
+    {
+      "providerId": "opencv-python-portable-v1",
+      "contractRevision": "ARGOS_OPENCV_PROVIDER_CONTRACT_V1",
+      "enabled": true,
+      "runtimeExecutableRelativePath": "python.exe",
+      "engineEntrypointRelativePath": "engine\\NativeFrontsideWaferPoseOpenCvV1.py",
+      "runtimeManifestSha256": "6BCA2B3FA69416BE9E7DE9D02B606081A24C976275C5A4D1B1E83D133D30A409",
+      "engineSha256": "3CC4630B3A689C80887C2B8572C3A0C37B5342301E88DD8FFF4046E67EFB4DB9",
+      "supportedFamilies": ["WAFER_POSE", "FIDUCIAL"]
+    }
+  ],
+  "familyBindings": {
+    "WAFER_POSE": "opencv-python-portable-v1"
+  },
+  "failClosed": {
+    "disabledPathState": "DISABLED_UNCHANGED_LEGACY_PATH",
+    "missingRuntimeState": "HOLD_OPENCV_RUNTIME_MISSING",
+    "missingProviderState": "HOLD_OPENCV_PROVIDER_MISSING",
+    "schemaMismatchState": "HOLD_OPENCV_SCHEMA_MISMATCH",
+    "provenanceMismatchState": "HOLD_OPENCV_PROVENANCE_MISMATCH"
+  },
+  "authority": {
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayRestartProcessor": false,
+    "mayClearHolds": false
+  }
+}

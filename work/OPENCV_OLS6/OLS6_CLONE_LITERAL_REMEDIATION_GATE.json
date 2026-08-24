@@ -1,0 +1,30 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-24T21:02:14.4650873Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_OLS6\\OLS6_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "A06801F84EC3CD474FEB7A6D6EBFC7B4C5463B709D95147A72FFBB5564CB6452",
+    "pairCount":  1,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_OLS5/Invoke-OCV00SourceHashEndpoint.ps1",
+                      "generated":  "work/OPENCV_OLS6/Invoke-OCV00SourceHashChunkEndpoint.ps1",
+                      "sourceSha256":  "6508FE7EACBAA39E4EB49CA0B15F0A292BD19F636D6AA7BAE3C2A26737F6D640",
+                      "generatedSha256":  "ED960F358ACC93D0EF57D294888E1BF71421B9890814C11F10D25530784B083E",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData"
+                                         ],
+                      "ruleCount":  1
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

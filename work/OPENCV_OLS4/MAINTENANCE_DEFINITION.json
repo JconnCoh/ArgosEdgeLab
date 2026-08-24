@@ -1,0 +1,54 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 8388608,
+  "entryPoint": "payload/Invoke-OCV00DeepestAliasEndpoint.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-OCV00DeepestAliasEndpoint.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV00_OLS4.ps1",
+      "approvedPredecessorSha256": [
+        "5C2496DA36EDEBF5FF156F93D626BB36B2414442D805274192F46FB549CD8361"
+      ],
+      "installedSha256": "5C2496DA36EDEBF5FF156F93D626BB36B2414442D805274192F46FB549CD8361",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [],
+  "entryPointOutputs": [
+    {
+      "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV00_OLS4_LOT_INVENTORY.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_ols4_entrypoint_result_v1",
+      "requiredState": "PASS_OCV00_DEEPEST_ALIAS_INVENTORY_OLS4"
+    }
+  ],
+  "metadataReadContract": {
+    "mode": "CONFIG_ANCHORED_EXACT_SUBTREE_ALIAS_METADATA_ONLY",
+    "approvedDataRoot": "JBOD_KLARF_EXPORT",
+    "processLocalAliasName": "F",
+    "aliasAnchor": "EXACT_REQUESTED_SUBTREE_ROOT",
+    "relativeRoot": "PatternedFront/Lot_62619-433",
+    "maximumDepth": 8,
+    "maximumEntries": 20000,
+    "maximumDirectories": 2048,
+    "maximumBmpLeaves": 2048,
+    "canonicalPathsAreProvenanceOnly": true,
+    "exactSkipIdentityRequired": true,
+    "completeRequiresZeroSkipRows": true,
+    "existingSourceComponentAbove80IsAdvisory": true,
+    "pathEnumerationAllowed": true,
+    "subtreeMetadataOnly": true,
+    "fileContentReadAllowed": false,
+    "imageBytesReadAllowed": false,
+    "sourceHashingAllowed": false,
+    "taskOrProcessActionAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_OCV00_DEEPEST_ALIAS_INVENTORY_OLS4"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

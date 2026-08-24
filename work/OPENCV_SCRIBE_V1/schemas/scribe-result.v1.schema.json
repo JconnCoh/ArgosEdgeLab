@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "argos://schemas/opencv/scribe-result/v1",
+  "title": "Argos OpenCV scribe result v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "revision", "jobId", "state", "eligibleIdentity", "imageFirstString", "checksumState", "localization", "hypotheses", "candidates", "holds", "provenance", "authority"],
+  "properties": {
+    "schema": { "const": "argos_opencv_scribe_result_v1" },
+    "revision": { "$ref": "#/definitions/id" },
+    "jobId": { "$ref": "#/definitions/id" },
+    "state": {
+      "enum": ["SCRIBE_M12_CONFIRMED", "SCRIBE_M12_RERANKED_CONFIRMATION_REQUIRED", "SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID", "SCRIBE_M12_CHECKSUM_FAILED", "SCRIBE_NONSTANDARD_FORMAT_HOLD", "SCRIBE_LOCALIZATION_HOLD", "SCRIBE_SEGMENTATION_HOLD", "SCRIBE_MES_CONFLICT_HOLD", "SCRIBE_REFERENCE_COVERAGE_HOLD", "SCRIBE_PROVENANCE_MISMATCH_HOLD", "SCRIBE_UNCALIBRATED_CONFIDENCE_HOLD"]
+    },
+    "eligibleIdentity": { "type": "boolean" },
+    "imageFirstString": { "type": "string", "maxLength": 12 },
+    "checksumState": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "localization": {
+      "type": "object", "additionalProperties": false,
+      "required": ["candidateCount", "selectedRegionId", "selectedRegionSource", "x", "y", "width", "height", "angleDegrees", "score", "confidenceCalibrationState", "calibratedConfidence"],
+      "properties": {
+        "candidateCount": { "type": "integer", "minimum": 0 },
+        "selectedRegionId": { "type": "string", "maxLength": 120 },
+        "selectedRegionSource": { "type": "string", "maxLength": 120 },
+        "x": { "type": ["number", "null"] }, "y": { "type": ["number", "null"] },
+        "width": { "type": ["number", "null"] }, "height": { "type": ["number", "null"] },
+        "angleDegrees": { "type": ["number", "null"] },
+        "score": { "type": ["number", "null"] },
+        "confidenceCalibrationState": { "enum": ["UNQUALIFIED_DEVELOPMENT", "FROZEN_CALIBRATED"] },
+        "calibratedConfidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1 }
+      }
+    },
+    "hypotheses": { "type": "array", "maxItems": 1024, "items": { "type": "object" } },
+    "candidates": { "type": "array", "maxItems": 128, "items": { "type": "object" } },
+    "holds": {
+      "type": "array", "maxItems": 64,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["code", "detail"],
+        "properties": {
+          "code": { "type": "string", "pattern": "^(SCRIBE|HOLD)_[A-Z0-9_]{2,95}$" },
+          "detail": { "type": "string", "minLength": 1, "maxLength": 1000 }
+        }
+      }
+    },
+    "provenance": { "type": "object" },
+    "authority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reviewOnly", "automaticIdentityAuthority", "trainingEligible", "xmlEligible", "productionEligible", "mayClearHolds"],
+      "properties": {
+        "reviewOnly": { "const": true }, "automaticIdentityAuthority": { "const": false },
+        "trainingEligible": { "const": false }, "xmlEligible": { "const": false },
+        "productionEligible": { "const": false }, "mayClearHolds": { "const": false }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "state": { "const": "SCRIBE_M12_CONFIRMED" } } },
+      "then": { "properties": { "eligibleIdentity": { "const": true }, "holds": { "maxItems": 0 }, "imageFirstString": { "pattern": "^[0-9A-Z]{12}$" } } },
+      "else": { "properties": { "eligibleIdentity": { "const": false }, "holds": { "minItems": 1 } } }
+    }
+  ],
+  "definitions": {
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{2,119}$" }
+  }
+}

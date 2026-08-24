@@ -1,0 +1,39 @@
+{
+  "schema": "argos_ocv00_front_development_validation_split_v1",
+  "revision": "OCV00_LOT_62619_433_FRONT_SPLIT_20260824",
+  "createdUtc": "2026-08-24T20:13:30Z",
+  "state": "FROZEN_BEFORE_SOURCE_HASHING",
+  "disposition": "LOCKED_INPUT",
+  "lotId": "62619-433",
+  "lotRoot": "D:/KLARFExport/PatternedFront/Lot_62619-433",
+  "acquisitionId": "62619-433_20260824005735",
+  "sourcePathSetPath": "work/OPENCV_OLS3/OCV00_OLS3_SIGNED_EXACT_FRONT_SOURCE_PATHS.json",
+  "sourcePathSetSha256": "7D7155D92E5DD40F0BD5CAE9CF13FA713E84DCD762238A4919D10DDD4910FE5A",
+  "completeInventoryGatePath": "work/OPENCV_OLS4/OLS4_TERMINAL_RESPONSE_GATE.json",
+  "completeInventoryGateSha256": "2FE715B1ABCBAC8CCB5E09F2298C34FFEBB65F1D5D9A4130AFBB448DDC46E36D",
+  "partitionRule": "Contiguous slot partition frozen before source hashing or image inspection; Slots 16-21 are development/calibration and Slots 22-25 are independent validation.",
+  "development": {
+    "purpose": "provider development and automatic calibration only",
+    "slots": ["Slot16", "Slot17", "Slot18", "Slot19", "Slot20", "Slot21"],
+    "pairCount": 6
+  },
+  "independentValidation": {
+    "purpose": "independent paired BF/DF validation without tuning",
+    "slots": ["Slot22", "Slot23", "Slot24", "Slot25"],
+    "pairCount": 4
+  },
+  "allSlots": ["Slot16", "Slot17", "Slot18", "Slot19", "Slot20", "Slot21", "Slot22", "Slot23", "Slot24", "Slot25"],
+  "allPairCount": 10,
+  "allLeafCount": 20,
+  "operatorAuthority": "User directed automatic continuation to the next step after successful complete inventory.",
+  "sourceHashesAcquired": false,
+  "imageBytesDecoded": false,
+  "imageProcessingCodeWritten": false,
+  "imageProcessingCodeRun": false,
+  "bin34Bin36ContextIsNavigationClueOnly": true,
+  "fiducialIdentityGranted": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

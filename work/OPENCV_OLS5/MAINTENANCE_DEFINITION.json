@@ -1,0 +1,50 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 8388608,
+  "entryPoint": "payload/Invoke-OCV00SourceHashEndpoint.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-OCV00SourceHashEndpoint.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV00_OLS5.ps1",
+      "approvedPredecessorSha256": ["6508FE7EACBAA39E4EB49CA0B15F0A292BD19F636D6AA7BAE3C2A26737F6D640"],
+      "installedSha256": "6508FE7EACBAA39E4EB49CA0B15F0A292BD19F636D6AA7BAE3C2A26737F6D640",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [],
+  "entryPointOutputs": [
+    {
+      "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV00_OLS5_FRONT_SOURCE_HASHES.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_ols5_source_hash_result_v1",
+      "requiredState": "PASS_OCV00_FRONT_SOURCE_HASHES_OLS5"
+    }
+  ],
+  "metadataReadContract": {
+    "mode": "CONFIG_ANCHORED_EXACT_FROZEN_SOURCE_SHA256",
+    "approvedDataRoot": "JBOD_KLARF_EXPORT",
+    "relativeRoot": "PatternedFront/Lot_62619-433",
+    "processLocalAliasName": "F",
+    "aliasAnchor": "EXACT_REQUESTED_SUBTREE_ROOT",
+    "targetManifestSha256": "EC016561994CD3FAFCB35C5ED2D9C39D6D425515C9AC4998DBFB4024327A7CA8",
+    "completeInventorySha256": "EB97918066DA4AC148C49BDB5D241443614F173E341787CFB253708316710936",
+    "targetCount": 20,
+    "hashAlgorithm": "SHA256",
+    "providerAwareIncrementalHashing": true,
+    "fileContentReadAllowed": true,
+    "imageBytesReadAllowed": true,
+    "sourceHashingAllowed": true,
+    "pixelDecodeAllowed": false,
+    "imageProcessingAllowed": false,
+    "sourceMutationAllowed": false,
+    "taskOrProcessActionAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_OCV00_FRONT_SOURCE_HASHES_OLS5"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,61 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-24T22:44:49.9286295Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D3\\O2D3_CLONE_REMEDIATION.json",
+    "manifestSha256":  "0565A1C56C588B44096DBC088A143877B9ADAA10C49197C6F91EE8B4E4ADCAFB",
+    "pairCount":  2,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D2/Invoke-O2D2ScribeEndpoint.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D3/Invoke-O2D3ScribeEndpoint.ps1",
+                      "sourceSha256":  "4ABDC69650F98CC17AB28C8646299185B42BE116277EA0C8F9DC9372E5B6A611",
+                      "generatedSha256":  "AABA66345799A3FEDA58C786AE2BAB713AC4C82AC9CA951F4C151A3FB83CBF2B",
+                      "sourceRoots":  [
+                                          "D:",
+                                          "D:\\A2",
+                                          "D:\\AFCV1",
+                                          "D:\\KLARFExport",
+                                          "X:"
+                                      ],
+                      "generatedRoots":  [
+                                             "D:",
+                                             "D:\\A2",
+                                             "D:\\AFCV1",
+                                             "D:\\KLARFExport",
+                                             "X:"
+                                         ],
+                      "ruleCount":  5
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D2/Test-O2D2Endpoint.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D3/Test-O2D3Endpoint.ps1",
+                      "sourceSha256":  "1977854602118A13AA56E898B57237F031BFDE41D020606EAB0CD971DDBCA22E",
+                      "generatedSha256":  "4355354CD467116DCF5709A47BA52DF8130DE43A2E27BFE0055C802DCDE5539C",
+                      "sourceRoots":  [
+                                          "C:\\O2D2F",
+                                          "C:\\O2D2I",
+                                          "C:\\O2D2P",
+                                          "C:\\O2D2T",
+                                          "Q:",
+                                          "X:"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\O2D3F",
+                                             "C:\\O2D3I",
+                                             "C:\\O2D3P",
+                                             "C:\\O2D3T",
+                                             "Q:",
+                                             "X:"
+                                         ],
+                      "ruleCount":  6
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

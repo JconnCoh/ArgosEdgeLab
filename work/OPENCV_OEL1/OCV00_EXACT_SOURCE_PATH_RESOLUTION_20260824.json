@@ -1,0 +1,153 @@
+{
+  "schema": "argos_ocv00_exact_source_path_resolution_v1",
+  "createdUtc": "2026-08-24T15:34:39.4027664Z",
+  "revision": "OCV00_EXACT_SOURCE_PATH_RESOLUTION_OEL1_20260824",
+  "state": "HOLD_OCV00_PFC010_SOURCE_ABSENT_AND_CURRENT_SOURCE_HASHES_UNAUTHORIZED",
+  "disposition": "PENDING_GATE",
+  "authority": {
+    "repositoryRoot": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab",
+    "branch": "codex/fiducial-opencv-d-drive",
+    "localHead": "ecbda3205852550d7f9fdb4a4daf99b4a001e7da",
+    "githubHead": "ecbda3205852550d7f9fdb4a4daf99b4a001e7da",
+    "localAndGithubTipsMatch": true,
+    "operatorAuthorization": "User message on 2026-08-24: Approved",
+    "authorizedCapability": "ONE_BOUNDED_GENERIC_METADATA_ONLY_EXACT_LEAF_CAPABILITY_UNDER_CONFIGURED_JBOD_KLARF_EXPORT_ROOT"
+  },
+  "parentInventory": {
+    "path": "work/OPENCV_OCV00/OCV00_READ_ONLY_INVENTORY_DRAFT_20260822.json",
+    "sha256": "3C7FAEEE0CF2D7C25E53EF14BE3DA84C352073D9363BF19D9588C13FE1132E2A",
+    "installedOperationInventoryPreserved": true,
+    "frozenWorkingFamilyBaselinesPreserved": true
+  },
+  "terminalEvidence": {
+    "requestId": "REQ_OEL1",
+    "requestZipPath": "work/OPENCV_OEL1/final/REQ_OEL1.ready.zip",
+    "requestZipSha256": "8EF99A665162C5C1974FB6B448EAE85D817390F5469208CAB0CD5DA4B6648AAA",
+    "completeRouteGatePath": "work/OPENCV_OEL1/OEL1_COMPLETE_ROUTE_GATE.json",
+    "completeRouteGateSha256": "30E2A04438770BF9D1515BF9515FC91584EF8A84ACD9C2EF05BBF789F21C95B3",
+    "publishGatePath": "work/OPENCV_OEL1/OEL1_PUBLISH_GATE.json",
+    "publishGateSha256": "05643A19C1B7F3182C5F32F6834BABDEB4EF7B1AA2244FE435AA1D8BA355A47E",
+    "responseId": "R_39E9C66836AD_20260824153249150_8bff586c.ready",
+    "responseZipSha256": "57F64F758A7470E3E26E4D5B5F5C18DE564C763343D846C9890B0F6947BAD44D",
+    "terminalResponseGatePath": "work/OPENCV_OEL1/OEL1_TERMINAL_RESPONSE_GATE.json",
+    "terminalResponseGateSha256": "047E9460EC5E71989FCD952665CF8427914378946DB2752E253D6467FBE9A7CE",
+    "terminalState": "PASS_OEL1_SIGNED_TERMINAL_RESPONSE",
+    "endpointState": "PASS_MAINTENANCE_PATCH",
+    "signedResponseVerified": true
+  },
+  "capabilityEvidence": {
+    "workerPredecessorSha256": "750022568C62C2C049D04CE0D49E2FD52B5030A9701D8E453152129EB48D6F08",
+    "workerTargetSha256": "1CE01F67083A989CB92AE3824DB0AE2CB6532FD6B674E74456CC495F06DCDDF8",
+    "entrypointSha256": "48F4642404A377A792B5333D3A75E11FBE5D96F2E178A89EC79B447D3C0DE85E",
+    "cloneGatePath": "work/OPENCV_OEL1/OEL1_CLONE_GATE_R2.json",
+    "cloneGateSha256": "FD37FB37E525DAB96CA864FBAF9B87C8CDF70AA4901A25667864CC2648E3A5D6",
+    "inheritanceGatePath": "work/OPENCV_OEL1/OEL1_WORKER_INHERITANCE_GATE.json",
+    "inheritanceGateSha256": "5CDC6E515FBC5AAAD35D52BF30B35D249015E4E5D1C532D59C77936E0003ECAD",
+    "entrypointGatePath": "work/OPENCV_OEL1/OEL1_ENTRYPOINT_TEST_GATE.json",
+    "entrypointGateSha256": "B6315433FE0D14D1C1AF3705ED3EF2EAE2E406C73E0A2380202AE4087904D352",
+    "changedWorkerFunctions": ["Get-EnvironmentInventory"],
+    "unchangedWorkerFunctionCount": 22,
+    "residentWorkerRestarted": false
+  },
+  "sourcePathResolution": {
+    "approvedConfiguredRoot": "D:/KLARFExport",
+    "processLocalAlias": "F:/",
+    "PFC003": {
+      "physicalIdentity": "62628-281_20260813112015_Slot02",
+      "state": "EXACT_BF_DF_ORDINARY_LEAVES_RESOLVED_METADATA_ONLY_CURRENT_SOURCE_HASHES_NOT_ACQUIRED",
+      "brightfield": {
+        "path": "D:/KLARFExport/PatternedFront/Lot_62628-281/62628-281_20260813112015/Slot02/BrightfieldFrontsideWafer/resizedImage/62628-281_Slot02_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+        "exists": true,
+        "pathType": "LEAF",
+        "containedByApprovedRoot": true,
+        "reparsePoint": false,
+        "ancestorReparsePoint": false,
+        "bytes": 475379874,
+        "lastWriteTimeUtc": "2026-08-13T16:27:00.3668942Z",
+        "currentSourceSha256": null,
+        "hashState": "NOT_ACQUIRED_IMAGE_BYTES_AND_SOURCE_HASHING_OUTSIDE_APPROVED_METADATA_ONLY_CAPABILITY"
+      },
+      "darkfield": {
+        "path": "D:/KLARFExport/PatternedFront/Lot_62628-281/62628-281_20260813112015/Slot02/DarkfieldFrontsideWafer/resizedImage/62628-281_Slot02_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+        "exists": true,
+        "pathType": "LEAF",
+        "containedByApprovedRoot": true,
+        "reparsePoint": false,
+        "ancestorReparsePoint": false,
+        "bytes": 475379874,
+        "lastWriteTimeUtc": "2026-08-13T16:27:13.9346762Z",
+        "currentSourceSha256": null,
+        "hashState": "NOT_ACQUIRED_IMAGE_BYTES_AND_SOURCE_HASHING_OUTSIDE_APPROVED_METADATA_ONLY_CAPABILITY"
+      }
+    },
+    "PFC010": {
+      "physicalIdentity": "62616-115_20260807120245_Slot23",
+      "state": "HOLD_EXACT_CATALOG_BF_DF_PATHS_ABSENT_NO_FALLBACK_OR_REPLACEMENT_AUTHORIZED",
+      "brightfield": {
+        "path": "D:/KLARFExport/PatternedFront/Lot_62616-115/62616-115_20260807120245/Slot23/BrightfieldFrontsideWafer/resizedImage/62616-115_Slot23_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+        "exists": false,
+        "pathType": "ABSENT",
+        "containedByApprovedRoot": true,
+        "reparsePoint": false,
+        "ancestorReparsePoint": false,
+        "currentSourceSha256": null
+      },
+      "darkfield": {
+        "path": "D:/KLARFExport/PatternedFront/Lot_62616-115/62616-115_20260807120245/Slot23/DarkfieldFrontsideWafer/resizedImage/62616-115_Slot23_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+        "exists": false,
+        "pathType": "ABSENT",
+        "containedByApprovedRoot": true,
+        "reparsePoint": false,
+        "ancestorReparsePoint": false,
+        "currentSourceSha256": null
+      },
+      "fallbackSelected": false,
+      "replacementIdentitySelected": false
+    }
+  },
+  "safety": {
+    "pathEnumerationPerformed": false,
+    "fileContentRead": false,
+    "imageBytesRead": false,
+    "sourceHashingPerformed": false,
+    "imageProcessingCodeWritten": false,
+    "imageProcessingCodeRun": false,
+    "providerActivated": false,
+    "taskActions": [],
+    "processActions": [],
+    "processorTaskChanged": false,
+    "inspectionTasksChanged": false,
+    "sourceDeletionPerformed": false,
+    "waferActionPerformed": false,
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false
+  },
+  "preservedHolds": {
+    "healthyProcessor": "UNCHANGED_NO_TASK_OR_PROCESS_ACTION; last signed running-state observation remains FSO1",
+    "PFC010Source": "HOLD_EXACT_CATALOG_PATHS_ABSENT",
+    "currentSourceHashes": "HOLD_NOT_AUTHORIZED_OR_ACQUIRED",
+    "fiducialCompositeRegistrationAndPatternedScoring": "FAIL_CLOSED",
+    "withdrawnR10AndAVS1": "WITHDRAWN_UNCHANGED",
+    "globalFS15": "UNCHANGED",
+    "xml": "DISABLED",
+    "training": "DISABLED",
+    "production": "DISABLED",
+    "deletion": "DISABLED",
+    "waferAbort": "DISABLED"
+  },
+  "ocv00Disposition": {
+    "installedOperationInventoryComplete": true,
+    "workingFamilyBaselinesFrozen": true,
+    "PFC003ExactSourcePathsResolved": true,
+    "PFC003CurrentSourceHashesResolved": false,
+    "PFC010ExactCatalogPathsObservedAbsent": true,
+    "PFC010ReplacementIdentityResolved": false,
+    "sourcePathAndHashGateComplete": false,
+    "providerCodeMayBeWritten": false,
+    "providerCodeMayBeRun": false,
+    "nextAction": "Await operator selection of a fresh replacement PFC010 development identity or an exact alternate BF/DF pair. After that identity is fixed, obtain explicit authority for a separately bounded current-source SHA-256 acquisition before writing or running any OpenCV image-processing code."
+  }
+}

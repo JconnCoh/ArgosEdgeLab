@@ -1,0 +1,29 @@
+{
+  "schema":"argos_recovery_observation_evidence_v1",
+  "createdUtc":"2026-08-24T20:53:05Z",
+  "incidentId":"OCV00_OLS5_HASH_TIMEOUT_20260824",
+  "state":"PASS_O5OBS1_DIRECT_POST_FAILURE_OBSERVATION",
+  "exactSourcesProved":true,
+  "fieldSpecificExpectedObservedRecorded":true,
+  "directEndpointEvidence":false,
+  "matchingSignedTerminalResponse":true,
+  "sources":[
+    {"path":"work/OPENCV_OLS5/O5OBS1_SIGNED_ABSENCE_GATE.json","sha256":"46F430F8C70B8AA63CA19FDE74F77CE83E9FBA191086150A32FCC4059E8586CF","requestId":"REQ_O5OBS1","signedResponseVerified":true},
+    {"path":"C:/A5O/R_BBFC9922A3C5_20260824205146738_05fc36fc.ready/FAILURE.json","sha256":"197AB5C9F753F27421BD343F0CA02E1135236C2788A5D0ADF82785FEF50E7F81","bytes":676}
+  ],
+  "expectedObserved":[
+    {"field":"exactOutputPath","expected":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV00_OLS5_FRONT_SOURCE_HASHES.json","observed":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV00_OLS5_FRONT_SOURCE_HASHES.json"},
+    {"field":"exactOutputExists","expected":false,"observed":false},
+    {"field":"dataPullTerminalDetail","expected":"DATA_PULL source not found: OCV00_OLS5_FRONT_SOURCE_HASHES.json","observed":"DATA_PULL source not found: OCV00_OLS5_FRONT_SOURCE_HASHES.json"}
+  ],
+  "provedCapabilityGap":"PROVIDER_AWARE_POWERSHELL_HASH_EXCEEDED_900_SECONDS_WITH_NO_COMMITTED_OUTPUT",
+  "supportedRemedy":"B",
+  "supportedRemedyDescription":"Replace only the slow provider-aware byte transport with a bounded faster alias-visible hash transport; preserve exact frozen targets and all semantics.",
+  "filesRead":false,
+  "imageBytesRead":false,
+  "sourceHashingPerformed":false,
+  "mutationsPerformed":false,
+  "healthyProcessorTouched":false,
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

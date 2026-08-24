@@ -1,0 +1,60 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 8388608,
+  "entryPoint": "payload/E.ps1",
+  "changes": [
+    {
+      "source": "payload/E.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV00_OLS3.ps1",
+      "approvedPredecessorSha256": [
+        "FB2BA81F2159EEF026EB459F7A857E1DDD0821AD446FD4888DEAF9F003D9C2B3"
+      ],
+      "installedSha256": "FB2BA81F2159EEF026EB459F7A857E1DDD0821AD446FD4888DEAF9F003D9C2B3",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "destination": "C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosProjectPortalEndpointWorker.ps1",
+      "approvedPredecessorSha256": [
+        "1CE01F67083A989CB92AE3824DB0AE2CB6532FD6B674E74456CC495F06DCDDF8",
+        "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+      ],
+      "installedSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+      "transaction": "ENTRYPOINT_ATOMIC_SELF_UPDATE_WITH_INSTALLED_PRODUCER_PREFLIGHT_TERMINAL_READBACK_AND_ROLLBACK"
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV00_OLS3_LOT_INVENTORY.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_project_portal_environment_probe_result_v1",
+      "requiredState": "PASS_JBOD_ENVIRONMENT_INVENTORY"
+    }
+  ],
+  "metadataReadContract": {
+    "mode": "CONFIG_ANCHORED_BOUNDED_SUBTREE_METADATA_ONLY",
+    "approvedDataRoot": "JBOD_KLARF_EXPORT",
+    "processLocalAliasName": "F",
+    "relativeRoot": "PatternedFront/Lot_62619-433",
+    "maximumDepth": 8,
+    "maximumEntries": 20000,
+    "maximumDirectories": 2048,
+    "maximumBmpLeaves": 2048,
+    "returnedFields": ["relativePath", "subtreeRelativePath", "normalizedFullPath", "aliasReadPath", "name", "depth", "pathType", "extension", "attributes", "reparsePoint", "length", "lastWriteTimeUtc", "canonicalEffectiveLength", "aliasEffectiveLength", "containedByApprovedRoot"],
+    "pathEnumerationAllowed": true,
+    "subtreeMetadataOnly": true,
+    "fileContentReadAllowed": false,
+    "imageBytesReadAllowed": false,
+    "sourceHashingAllowed": false,
+    "taskOrProcessActionAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_OCV00_BOUNDED_LOT_SUBTREE_OBSERVED_OLS3"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

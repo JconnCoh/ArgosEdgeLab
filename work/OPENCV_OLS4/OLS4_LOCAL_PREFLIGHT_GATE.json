@@ -1,0 +1,46 @@
+{
+  "schema": "argos_ocv00_deepest_alias_local_preflight_gate_v1",
+  "createdUtc": "2026-08-24T19:49:00Z",
+  "state": "PASS_OCV00_DEEPEST_ALIAS_LOCAL_PREFLIGHT",
+  "lifecycle": "FROZEN_LOCAL_EVIDENCE",
+  "provider": {
+    "path": "work/OPENCV_OLS4/Invoke-OCV00DeepestAliasInventory.ps1",
+    "sha256": "DFF2B3A54E9C6D30A003CF4CFC283FECA0F104B5D5A2929296A81D283CAA5675",
+    "windowsPowerShell51ParserState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "selfTestState": "PASS_OCV00_DEEPEST_ALIAS_PROVIDER_SELF_TEST"
+  },
+  "harness": {
+    "path": "work/OPENCV_OLS4/Test-OCV00DeepestAliasProvider.ps1",
+    "sha256": "04A39208233A3FB5062DF6884EDB17AD0738BC8AD5FA0D4205BFD2B81B89FBEF",
+    "windowsPowerShell51ParserState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "preflightState": "PASS_OCV00_DEEPEST_ALIAS_LOCAL_REHEARSAL_PREFLIGHT"
+  },
+  "invocationManifest": {
+    "path": "work/OPENCV_OLS4/OLS4_LOCAL_REHEARSAL_INVOCATION.json",
+    "sha256": "456A170CE72E7F9660084EF2B67B9AD6F51C0243E3F82EF8C743376D9711E87C"
+  },
+  "pathBudget": {
+    "state": "PASS_PATH_BUDGET",
+    "reservedSuffixCharacters": 32,
+    "maximumEffectiveLength": 137,
+    "maximumComponentLength": 37,
+    "candidateCount": 5,
+    "arrayBoundaryMode": "ONE_SCALAR_PER_PROCESS_INVOCATION"
+  },
+  "freshTargets": {
+    "fixtureRoot": "C:\\O4F",
+    "fixtureRootPresent": false,
+    "gateOutputPath": "work/OPENCV_OLS4/OLS4_DEEPEST_ALIAS_PROVIDER_GATE.json",
+    "gateOutputPresent": false,
+    "aliasName": "Q",
+    "aliasPresent": false
+  },
+  "mutationsPerformedByPreflight": false,
+  "imageBytesRead": false,
+  "sourceHashingPerformed": false,
+  "jbodContacted": false,
+  "endpointRequests": 0,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

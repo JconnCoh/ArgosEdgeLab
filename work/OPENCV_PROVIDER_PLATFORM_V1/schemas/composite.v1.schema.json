@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "argos://schemas/opencv/composite/v1",
+  "title": "Argos OpenCV composite manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "revision", "jobId", "state", "qualified", "coordinateFrameId", "targetExcluded", "contributors", "output", "authority"],
+  "properties": {
+    "schema": { "const": "argos_opencv_composite_v1" },
+    "revision": { "$ref": "#/definitions/id" },
+    "jobId": { "$ref": "#/definitions/id" },
+    "state": { "enum": ["PASS_QUALIFIED_COMPOSITE", "HOLD_NO_COMPOSITE", "HOLD_UNQUALIFIED_TRANSFORM", "HOLD_PROVENANCE_MISMATCH", "HOLD_SCHEMA_FIXTURE_ONLY"] },
+    "qualified": { "type": "boolean" },
+    "coordinateFrameId": { "$ref": "#/definitions/id" },
+    "targetExcluded": { "const": true },
+    "contributors": {
+      "type": "array", "maxItems": 512,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["sourceId", "sourceSha256", "transformRevision", "transformSha256", "included"],
+        "properties": {
+          "sourceId": { "$ref": "#/definitions/id" },
+          "sourceSha256": { "$ref": "#/definitions/sha256" },
+          "transformRevision": { "$ref": "#/definitions/id" },
+          "transformSha256": { "$ref": "#/definitions/sha256" },
+          "included": { "type": "boolean" }
+        }
+      }
+    },
+    "output": {
+      "anyOf": [
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["path", "sha256", "width", "height", "pixelFormat"],
+          "properties": {
+            "path": { "$ref": "#/definitions/jbodPath" },
+            "sha256": { "$ref": "#/definitions/sha256" },
+            "width": { "type": "integer", "minimum": 1 },
+            "height": { "type": "integer", "minimum": 1 },
+            "pixelFormat": { "type": "string", "minLength": 1, "maxLength": 40 }
+          }
+        },
+        { "type": "null" }
+      ]
+    },
+    "authority": { "$ref": "#/definitions/authority" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "qualified": { "const": true } } },
+      "then": {
+        "properties": {
+          "state": { "const": "PASS_QUALIFIED_COMPOSITE" },
+          "contributors": { "minItems": 1 },
+          "output": { "type": "object" }
+        }
+      },
+      "else": { "not": { "properties": { "state": { "const": "PASS_QUALIFIED_COMPOSITE" } } } }
+    }
+  ],
+  "definitions": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{2,119}$" },
+    "jbodPath": { "type": "string", "pattern": "^[Dd]:[\\\\/]", "maxLength": 200 },
+    "authority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reviewOnly", "productionEligible", "mayClearHolds"],
+      "properties": {
+        "reviewOnly": { "const": true }, "productionEligible": { "const": false }, "mayClearHolds": { "const": false }
+      }
+    }
+  }
+}

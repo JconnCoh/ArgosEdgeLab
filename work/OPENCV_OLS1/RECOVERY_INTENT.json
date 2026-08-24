@@ -1,0 +1,109 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-24T16:15:00Z",
+  "incidentId": "OCV00_PFC010_EXPECTED_LEAVES_ABSENT_LOT_PATH_DISCOVERY",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/FIDUCIAL_OPENCV_SOURCE_FINGERPRINT_FSF3/FSF3_SIGNED_FAILURE_GATE.json",
+        "sha256": "15B0F42987342283BDADAE66411B7DAA9ECD4868B14F7281E0A0DD1985B2A8E8",
+        "state": "FAILED"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/OPENCV_OLS1/POST_FAILURE_OBSERVATION.json",
+      "sha256": "E297E0152CA54A967B2B0DAB2E38760D8610DEA64EEC76BA8C7A4954E4CB1D52"
+    },
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": true,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OEL1/pkg/payload/W.ps1",
+      "sha256": "1CE01F67083A989CB92AE3824DB0AE2CB6532FD6B674E74456CC495F06DCDDF8"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_OLS1/POST_FAILURE_OBSERVATION.json",
+      "sha256": "E297E0152CA54A967B2B0DAB2E38760D8610DEA64EEC76BA8C7A4954E4CB1D52"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/OPENCV_OEL1/OEL1_COMPLETE_ROUTE_GATE.json",
+      "sha256": "30E2A04438770BF9D1515BF9515FC91584EF8A84ACD9C2EF05BBF789F21C95B3"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "D:/KLARFExport",
+        "sourceSchema": "bounded_approved_root_path_name_metadata_v1",
+        "selector": "literal path-name token 62616-115 under configured approved root JBOD_KLARF_EXPORT; maximum depth 3; maximum 50000 entries; maximum 128 matches; reparse subtrees and unsafe paths are not followed",
+        "uniquenessKey": "normalizedFullPath",
+        "maximumRows": 128
+      }
+    ],
+    "requestedCapabilities": ["boundedApprovedRootPathNameMetadata"],
+    "requestedFields": [
+      "relativePath",
+      "normalizedFullPath",
+      "name",
+      "depth",
+      "pathType",
+      "attributes",
+      "reparsePoint",
+      "length",
+      "lastWriteTimeUtc",
+      "containedByApprovedRoot",
+      "entriesVisited",
+      "directoriesEnumerated",
+      "truncated",
+      "accessErrorCount",
+      "skippedReparseSubtrees",
+      "skippedUnsafePathSubtrees",
+      "filesRead",
+      "imageBytesRead",
+      "sourceHashingPerformed",
+      "mutationsPerformed"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "D",
+    "supportingObservation": {
+      "path": "work/OPENCV_OLS1/POST_FAILURE_OBSERVATION.json",
+      "sha256": "E297E0152CA54A967B2B0DAB2E38760D8610DEA64EEC76BA8C7A4954E4CB1D52"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "operatorAuthorization": "User message on 2026-08-24: start with just the lot ID",
+    "boundedChange": "Extend the installed generic environment inventory with one reusable config-anchored bounded path-name metadata search. Execute only literal token 62616-115 under JBOD_KLARF_EXPORT to depth 3. No file content, image bytes, source hashes, task/process actions, source changes, deletion, or wafer action."
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

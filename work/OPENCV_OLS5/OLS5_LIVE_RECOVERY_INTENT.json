@@ -1,0 +1,78 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-24T20:21:00Z",
+  "incidentId": "OCV00_OLS4_COMPLETE_TO_SOURCE_HASH_20260824",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": true,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_OLS5/OCV00_SOURCE_HASH_LOCAL_PROOF_FREEZE.json",
+      "sha256": "9A13FD0D2D36E66B14EBA4666352299205A4C4B5DEE1912B92C6F2B9939DBC91"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/OPENCV_OLS4/OLS4_COMPLETE_ROUTE_GATE.json",
+      "sha256": "A0BECC1A59665E6BF936C0E76B56910DD3DBF3AFC9E9674EC825368F3069C7EE"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": ["D:/KLARFExport/PatternedFront/Lot_62619-433"],
+    "requestedCapabilities": ["EXACT_FROZEN_FRONT_SOURCE_SHA256"],
+    "requestedFields": ["canonicalProvenancePath", "slot", "channel", "partition", "bytes", "lastWriteTimeUtc", "sha256", "sourceStableDuringHash"],
+    "decisionOptions": ["COMPLETE", "FAIL_CLOSED"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_OLS4/OLS4_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "2FE715B1ABCBAC8CCB5E09F2298C34FFEBB65F1D5D9A4130AFBB448DDC46E36D"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "contractPath": "work/OPENCV_OLS5/OCV00_SOURCE_HASH_LOCAL_PROOF_FREEZE.json",
+    "contractSha256": "9A13FD0D2D36E66B14EBA4666352299205A4C4B5DEE1912B92C6F2B9939DBC91"
+  },
+  "authorizationBoundary": {
+    "localDesignAndWindowsPowerShell51ProofAuthorized": true,
+    "packageBuildAuthorized": true,
+    "signatureAuthorized": true,
+    "livePublicationAuthorized": true,
+    "liveEndpointRequestsMaximum": 1
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

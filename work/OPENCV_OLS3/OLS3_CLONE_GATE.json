@@ -1,0 +1,45 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-24T18:44:35.7514533Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_OLS3\\OLS3_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "8953AF6A28E1F125CF069627CA77C3F008D4172203C2B7F00F015504EC5218D9",
+    "pairCount":  2,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_OLS2/pkg/payload/E.ps1",
+                      "generated":  "work/OPENCV_OLS3/pkg/payload/E.ps1",
+                      "sourceSha256":  "0CFA53516B5CD9CD3AAC6BF9316C4EF2847CBCA8A234202AF5E8CF942DDFD7DE",
+                      "generatedSha256":  "FB2BA81F2159EEF026EB459F7A857E1DDD0821AD446FD4888DEAF9F003D9C2B3",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "F:\\PatternedFront"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "F:\\PatternedFront"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/OPENCV_OLS2/Test-OLS2Entrypoint.ps1",
+                      "generated":  "work/OPENCV_OLS3/Test-OLS3Entrypoint.ps1",
+                      "sourceSha256":  "F67044D12DD7206D64FD8384322964EA64C94E84A731D8D49C3CD5625227960C",
+                      "generatedSha256":  "14494D48CFA05C866C993A5A6A6A06C20DEC1A2F83EC1310415F79508C851C40",
+                      "sourceRoots":  [
+                                          "F:"
+                                      ],
+                      "generatedRoots":  [
+                                             "F:"
+                                         ],
+                      "ruleCount":  1
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

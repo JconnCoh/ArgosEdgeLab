@@ -1,0 +1,104 @@
+{
+  "schema": "argos_opencv_scribe_semantic_baseline_v1",
+  "createdUtc": "2026-08-24T22:02:00Z",
+  "state": "LOCKED_INPUT",
+  "revision": "OCV02_SCRIBE_SEMANTIC_BASELINE_20260824",
+  "sourceMethod": {
+    "path": "work/SCRIBE_REVIEW_ONLY/FRONTSIDE_NOTCH_AND_SCRIBE_IDENTITY_METHOD.md",
+    "sha256": "E45B1DCF3B5DB645FA6CD199A4A4953477C0BF6968A746EAAD7409860ED2CD21"
+  },
+  "semiM12Method": {
+    "path": "work/SCRIBE_REVIEW_ONLY/SEMI_M12_SCRIBE_VALIDATION_METHOD.md",
+    "sha256": "E5B78AFBA2614A3D4186298C84CF8E46F4816B0A9F3B2BC3DE751E854C014C2C",
+    "valueMethod": "ASCII_MINUS_32_MOD_59",
+    "bodyLength": 10,
+    "totalLength": 12,
+    "canonicalCheckPairRequired": true,
+    "checksumMayInventUnsupportedCharacter": false,
+    "verifiedVectorPath": "work/SCRIBE_REVIEW_ONLY/SEMI_M12_VERIFIED_TEST_VECTORS_20260730.csv",
+    "verifiedVectorSha256": "6911A0E12E81AEFBF59D7EE4FCC99457362DE0834949431E26C27566F6E93F16",
+    "verifiedVectorCount": 19,
+    "verifiedVectorPassCount": 19
+  },
+  "acceptedReader": {
+    "path": "work/SCRIBE_REVIEW_ONLY/tools/SemiM12DotMatrixImageReader.cs",
+    "sha256": "0E64D5FBE57556B7FC5A37D6764FDA65CBF780F96A3C994B73954CF985E67206",
+    "schemaVersion": "SEMI_M12_DOT_MATRIX_IMAGE_READER_V6",
+    "descriptorWidth": 24,
+    "descriptorHeight": 48,
+    "bodyCandidateMaxScoreDelta": 0.18,
+    "bodyCandidateMaximum": 4,
+    "checkCandidateMaxScoreDelta": 0.40,
+    "checkCandidateMinimumScore": -0.05,
+    "checkCandidateMaximum": 8,
+    "gridMeanWeight": 0.75,
+    "gridLeadingBoundaryWeight": 0.125,
+    "gridTrailingBoundaryWeight": 0.125,
+    "boundaryCellMinimumScore": 0.19,
+    "bodyReferenceAggregation": "TOP_1_CONFIRMED_ACQUISITION_STYLE_VARIANT",
+    "checkReferenceAggregation": "BOUNDED_TOP_3_CONFIRMED_CONSENSUS"
+  },
+  "acceptedChannelSemantics": {
+    "bfAndDfIndependent": true,
+    "darkAndBrightPolarityPerChannel": true,
+    "channelOrPolarityDisagreementIsHold": true,
+    "polarityVariantSourcePath": "work/SCRIBE_REVIEW_ONLY/tools/ScribeChannelPolarityVariants.cs",
+    "polarityVariantSourceSha256": "94DFB1B7F38A1E5BF12C41F9D8FBEEDAFFDF888365E9646F1058C58A9F5DEF0C"
+  },
+  "acceptedLocalizationSemantics": {
+    "fixedImageRectangleAllowed": false,
+    "fixedRotationAllowed": false,
+    "expectedPoseBoundRegionIsPriorNotProof": true,
+    "boundedPerimeterExceptionSearchRequired": true,
+    "standardAndExceptionResultsRemainDistinct": true,
+    "missingLocationState": "SCRIBE_LOCALIZATION_HOLD",
+    "nativeCropAuthoritative": true,
+    "displayCropMayDriveOcr": false
+  },
+  "referenceManifest": {
+    "path": "work/SCRIBE_REVIEW_ONLY/scratch/SCRIBE_READER_V5_MERGED_REFERENCES_20260806T203000Z/PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "sha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "referenceCount": 456,
+    "baseReferenceCount": 372,
+    "v5ReferenceCount": 84,
+    "coveredLabelCount": 26,
+    "missingGenericLabels": ["I", "J", "K", "O", "Q", "V", "W", "X", "Y", "Z"],
+    "localReferenceMissingCount": 0,
+    "localReferenceHashMismatchCount": 0,
+    "referenceCoverageComplete": false,
+    "incompleteCoverageState": "SCRIBE_REFERENCE_COVERAGE_HOLD",
+    "trainingAuthorized": false,
+    "trainingExecuted": false
+  },
+  "requiredDecisionStates": [
+    "SCRIBE_M12_CONFIRMED",
+    "SCRIBE_M12_RERANKED_CONFIRMATION_REQUIRED",
+    "SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID",
+    "SCRIBE_M12_CHECKSUM_FAILED",
+    "SCRIBE_NONSTANDARD_FORMAT_HOLD",
+    "SCRIBE_LOCALIZATION_HOLD",
+    "SCRIBE_SEGMENTATION_HOLD",
+    "SCRIBE_MES_CONFLICT_HOLD",
+    "SCRIBE_REFERENCE_COVERAGE_HOLD",
+    "SCRIBE_PROVENANCE_MISMATCH_HOLD"
+  ],
+  "developmentPartition": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "slots": ["Slot16", "Slot17", "Slot18", "Slot19", "Slot20", "Slot21"],
+    "sourceHashAggregatePath": "work/OPENCV_OLS6/OLS6_EXACT_TWENTY_SOURCE_HASHES.json",
+    "sourceHashAggregateSha256": "E54A15301A2B4FE914E6315DDFB9628E1D1364B0553D2155E9D5387A88E7FF3B"
+  },
+  "independentValidationPartition": {
+    "slots": ["Slot22", "Slot23", "Slot24", "Slot25"],
+    "mayBeInspectedBeforeDevelopmentFreeze": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}

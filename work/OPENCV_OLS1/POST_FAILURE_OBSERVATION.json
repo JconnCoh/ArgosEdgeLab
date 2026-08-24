@@ -1,0 +1,52 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-24T16:19:00Z",
+  "incidentId": "OCV00_PFC010_EXPECTED_LEAVES_ABSENT_LOT_PATH_DISCOVERY",
+  "state": "PASS_OCV00_PFC010_PATH_DISCOVERY_CAPABILITY_GAP_OBSERVED",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": true,
+  "mutationsPerformed": false,
+  "sources": [
+    {
+      "path": "work/OPENCV_OEL1/OEL1_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "047E9460EC5E71989FCD952665CF8427914378946DB2752E253D6467FBE9A7CE",
+      "observed": "signature-verified OEL1 endpoint response proved both exact expected PFC010 BF/DF leaves absent, with zero path enumeration, zero file reads, zero image-byte reads, zero source hashing, and no task/process action"
+    },
+    {
+      "path": "work/OPENCV_OEL1/OCV00_EXACT_SOURCE_PATH_RESOLUTION_20260824.json",
+      "sha256": "C75A1144A9B2A3F7B469410C93DC55A3CD528E1A629232F49C96EC80A91CB207",
+      "observed": "OCV-00 machine record preserves PFC003 exact-leaf success and PFC010 absent-source hold"
+    },
+    {
+      "path": "work/OPENCV_OCV00/OCV00_READ_ONLY_INVENTORY_DRAFT_20260822.json",
+      "sha256": "3C7FAEEE0CF2D7C25E53EF14BE3DA84C352073D9363BF19D9588C13FE1132E2A",
+      "observed": "complete current catalog evidence contains zero rows for lot 62616-115 and physical identity 62616-115_20260807120245_Slot23; historical source hashes are explicitly non-current authority"
+    }
+  ],
+  "expectedObserved": [
+    {"field":"PFC010.expectedBrightfield.exists","expected":"true if the historical exact path remains current","observed":"false"},
+    {"field":"PFC010.expectedDarkfield.exists","expected":"true if the historical exact path remains current","observed":"false"},
+    {"field":"currentCatalog.rowsForLot62616-115","expected":"one or more if the lot remains within current catalog scope","observed":"0"},
+    {"field":"currentCatalog.rowsForPhysicalIdentity","expected":"one or more if the identity remains within current catalog scope","observed":"0"},
+    {"field":"installedCapability.pathEnumeration","expected":"bounded path-name enumeration needed to locate a retained alternate directory","observed":"unavailable; exact-relative-leaf metadata only"},
+    {"field":"OEL1.imageBytesRead","expected":"false","observed":"false"},
+    {"field":"OEL1.sourceHashingPerformed","expected":"false","observed":"false"},
+    {"field":"OEL1.inspectionTasksChanged","expected":"false","observed":"false"},
+    {"field":"OEL1.processorTaskChanged","expected":"false","observed":"false"}
+  ],
+  "sourcePathExistenceResolved": false,
+  "nestedSourceDiscoveryResolved": false,
+  "supportedDecision": "D",
+  "decision": "REQUEST_ONE_REUSABLE_BOUNDED_APPROVED_ROOT_PATH_NAME_METADATA_CAPABILITY_FOR_LITERAL_LOT_ID",
+  "taskRestartAuthorized": false,
+  "processorRestartAuthorized": false,
+  "sourceFingerprintPassClaimed": false,
+  "sourceHashesAccepted": false,
+  "pixelScoringAllowed": false,
+  "compositeConstructionAllowed": false,
+  "patternedInspectionAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

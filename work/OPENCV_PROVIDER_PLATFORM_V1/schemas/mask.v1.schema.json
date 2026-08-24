@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "argos://schemas/opencv/mask/v1",
+  "title": "Argos OpenCV mask manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "revision", "jobId", "state", "semantic", "coordinateFrameId", "dimensions", "pixelValueSemantics", "sourceBindings", "transformBinding", "output", "coverageTruthSeparateFromDetectorResponse", "operatorFeedbackIncluded", "authority"],
+  "properties": {
+    "schema": { "const": "argos_opencv_mask_v1" },
+    "revision": { "$ref": "#/definitions/id" },
+    "jobId": { "$ref": "#/definitions/id" },
+    "state": { "enum": ["PASS_MASK", "HOLD_NO_MASK", "HOLD_TRANSFORM_MISMATCH", "HOLD_PROVENANCE_MISMATCH", "HOLD_SCHEMA_FIXTURE_ONLY"] },
+    "semantic": { "enum": ["ACCEPTED_CANDIDATE", "REMOVED_RESPONSE", "UNCOVERED", "UNASSIGNED", "OUTSIDE_DOMAIN", "TARGET_EXCLUDED_FALLBACK", "OPERATOR_FEEDBACK"] },
+    "coordinateFrameId": { "$ref": "#/definitions/id" },
+    "dimensions": {
+      "type": "object", "additionalProperties": false,
+      "required": ["width", "height"],
+      "properties": { "width": { "type": "integer", "minimum": 1 }, "height": { "type": "integer", "minimum": 1 } }
+    },
+    "pixelValueSemantics": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "sourceBindings": {
+      "type": "array", "minItems": 1, "maxItems": 64,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["sourceId", "sha256"],
+        "properties": { "sourceId": { "$ref": "#/definitions/id" }, "sha256": { "$ref": "#/definitions/sha256" } }
+      }
+    },
+    "transformBinding": {
+      "anyOf": [
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["revision", "sha256"],
+          "properties": { "revision": { "$ref": "#/definitions/id" }, "sha256": { "$ref": "#/definitions/sha256" } }
+        },
+        { "type": "null" }
+      ]
+    },
+    "output": {
+      "anyOf": [
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["path", "sha256", "nonzeroPixelCount"],
+          "properties": {
+            "path": { "$ref": "#/definitions/jbodPath" },
+            "sha256": { "$ref": "#/definitions/sha256" },
+            "nonzeroPixelCount": { "type": "integer", "minimum": 0 }
+          }
+        },
+        { "type": "null" }
+      ]
+    },
+    "coverageTruthSeparateFromDetectorResponse": { "const": true },
+    "operatorFeedbackIncluded": { "type": "boolean" },
+    "authority": { "$ref": "#/definitions/authority" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "state": { "const": "PASS_MASK" } } },
+      "then": { "properties": { "output": { "type": "object" } } },
+      "else": { "properties": { "output": { "type": "null" } } }
+    },
+    {
+      "if": { "properties": { "semantic": { "const": "OPERATOR_FEEDBACK" } } },
+      "then": { "properties": { "operatorFeedbackIncluded": { "const": true } } },
+      "else": { "properties": { "operatorFeedbackIncluded": { "const": false } } }
+    }
+  ],
+  "definitions": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{2,119}$" },
+    "jbodPath": { "type": "string", "pattern": "^[Dd]:[\\\\/]", "maxLength": 200 },
+    "authority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reviewOnly", "productionEligible", "mayClearHolds"],
+      "properties": { "reviewOnly": { "const": true }, "productionEligible": { "const": false }, "mayClearHolds": { "const": false } }
+    }
+  }
+}

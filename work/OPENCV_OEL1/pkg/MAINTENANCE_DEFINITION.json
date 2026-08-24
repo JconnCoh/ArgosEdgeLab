@@ -1,0 +1,61 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 2097152,
+  "entryPoint": "payload/E.ps1",
+  "changes": [
+    {
+      "source": "payload/E.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV00_OEL1.ps1",
+      "approvedPredecessorSha256": [
+        "48F4642404A377A792B5333D3A75E11FBE5D96F2E178A89EC79B447D3C0DE85E"
+      ],
+      "installedSha256": "48F4642404A377A792B5333D3A75E11FBE5D96F2E178A89EC79B447D3C0DE85E",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "destination": "C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosProjectPortalEndpointWorker.ps1",
+      "approvedPredecessorSha256": [
+        "750022568C62C2C049D04CE0D49E2FD52B5030A9701D8E453152129EB48D6F08",
+        "1CE01F67083A989CB92AE3824DB0AE2CB6532FD6B674E74456CC495F06DCDDF8"
+      ],
+      "installedSha256": "1CE01F67083A989CB92AE3824DB0AE2CB6532FD6B674E74456CC495F06DCDDF8",
+      "transaction": "ENTRYPOINT_ATOMIC_SELF_UPDATE_WITH_INSTALLED_PRODUCER_PREFLIGHT_TERMINAL_READBACK_AND_ROLLBACK"
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV00_OEL1_EXACT_LEAF_STATUS.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_project_portal_environment_probe_result_v1",
+      "requiredState": "PASS_JBOD_ENVIRONMENT_INVENTORY"
+    }
+  ],
+  "metadataReadContract": {
+    "mode": "CONFIG_ANCHORED_PROCESS_LOCAL_ALIAS_METADATA_ONLY",
+    "approvedDataRoot": "JBOD_KLARF_EXPORT",
+    "processLocalAliasName": "F",
+    "relativeLeafPaths": [
+      "PatternedFront/Lot_62628-281/62628-281_20260813112015/Slot02/BrightfieldFrontsideWafer/resizedImage/62628-281_Slot02_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "PatternedFront/Lot_62628-281/62628-281_20260813112015/Slot02/DarkfieldFrontsideWafer/resizedImage/62628-281_Slot02_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "PatternedFront/Lot_62616-115/62616-115_20260807120245/Slot23/BrightfieldFrontsideWafer/resizedImage/62616-115_Slot23_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "PatternedFront/Lot_62616-115/62616-115_20260807120245/Slot23/DarkfieldFrontsideWafer/resizedImage/62616-115_Slot23_DarkfieldFrontsideWafer_PM2_resizedImage.bmp"
+    ],
+    "maximumLeaves": 4,
+    "returnedFields": ["normalizedFullPath", "aliasReadPath", "containedByApprovedRoot", "exists", "pathType", "attributes", "reparsePoint", "ancestorReparsePoint", "firstReparseAncestor", "length", "lastWriteTimeUtc"],
+    "pathEnumerationAllowed": false,
+    "fileContentReadAllowed": false,
+    "imageBytesReadAllowed": false,
+    "sourceHashingAllowed": false,
+    "persistentAliasAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_FIDCV1_JBOD_INVENTORY_CAPABILITY_OEL1"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-08-24T18:35:34.4290816Z",
+  "state": "PASS_OLS3_WORKFLOW_REVIEW_CLEARANCE",
+  "incidentId": "OCV00_OLS2_BOUNDED_SUBTREE_INVENTORY_INCOMPLETE_20260824",
+  "operatorDirection": "Create a context file and continue through the established Gateway to Argos to JBOD route.",
+  "signedPremiseFailureCount": 2,
+  "reviewFindings": [
+    "REQ_OLS2 reached JBOD and produced an inventory object before the frozen COMPLETE assertion failed.",
+    "The exact entrypoint moved the rejected output to an unknown timestamped failed_probe.json path.",
+    "REQ_O2OBS1 requested the former stable path and therefore returned signed source-not-found.",
+    "The installed exact-file DATA_PULL route cannot discover an unknown timestamped evidence directory.",
+    "A single generic metadata-only endpoint correction is narrower than further per-incident diagnostic requests."
+  ],
+  "supportedRemedy": "B",
+  "authorizedMutation": "One fresh OLS3 attempt may install the already-tested generic bounded-subtree provider and change only the entrypoint contract so COMPLETE or HOLD_INCOMPLETE metadata is returned without discarding the result.",
+  "singleMutationAttemptAuthorized": true,
+  "automaticRetryAuthorized": false,
+  "processorTaskActionAuthorized": false,
+  "processActionAuthorized": false,
+  "imageReadAuthorized": false,
+  "sourceHashingAuthorized": false,
+  "sourceDeletionAuthorized": false,
+  "waferActionAuthorized": false,
+  "contextPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV00_GATEWAY_JBOD_CONTEXT_20260824.md",
+  "contextSha256": "04E0FC98E8E8CF4019385C96C456242B38B866C325B75BEBDD101F2C5CD8DA96",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

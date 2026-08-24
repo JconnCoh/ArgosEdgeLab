@@ -1,0 +1,74 @@
+{
+    "schema":  "argos_ols3_entrypoint_test_gate_v1",
+    "createdUtc":  "2026-08-24T18:46:29.6634772Z",
+    "state":  "PASS_OLS3_ENTRYPOINT_TEST_GATE",
+    "caseCount":  10,
+    "passCount":  10,
+    "cases":  [
+                  {
+                      "caseId":  "OLD_PREDECESSOR",
+                      "state":  "PASS",
+                      "workerChanged":  true
+                  },
+                  {
+                      "caseId":  "TARGET_IDEMPOTENT",
+                      "state":  "PASS",
+                      "workerChanged":  false
+                  },
+                  {
+                      "caseId":  "ABSENT_SUBTREE",
+                      "state":  "PASS",
+                      "bmpLeafCount":  0
+                  },
+                  {
+                      "caseId":  "ONE_BMP",
+                      "state":  "PASS",
+                      "bmpLeafCount":  1
+                  },
+                  {
+                      "caseId":  "PAIRED_BF_DF",
+                      "state":  "PASS",
+                      "bmpLeafCount":  2
+                  },
+                  {
+                      "caseId":  "UNAPPROVED_PREDECESSOR",
+                      "state":  "PASS",
+                      "refusedBeforeMutation":  true
+                  },
+                  {
+                      "caseId":  "ROLLBACK_AFTER_SWAP",
+                      "state":  "PASS",
+                      "predecessorRestored":  true
+                  },
+                  {
+                      "caseId":  "UNSAFE_SUBTREE_ROOT_REFUSAL",
+                      "state":  "PASS",
+                      "mutationsPerformed":  false
+                  },
+                  {
+                      "caseId":  "TRUNCATION_HOLD",
+                      "state":  "PASS",
+                      "bmpLeafCount":  1,
+                      "complete":  false
+                  },
+                  {
+                      "caseId":  "UNAPPROVED_ROOT_REFUSAL",
+                      "state":  "PASS",
+                      "mutationsPerformed":  false
+                  }
+              ],
+    "priorWorkerSha256":  "1CE01F67083A989CB92AE3824DB0AE2CB6532FD6B674E74456CC495F06DCDDF8",
+    "targetWorkerSha256":  "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "dataRoot":  "C:\\P3G",
+    "maximumCanonicalEffectiveLength":  225,
+    "aliasEffectiveLength":  198,
+    "installedProducerPreflightExecuted":  true,
+    "installedProducerTerminalStatusReadBeforeOutputValidation":  true,
+    "inspectionTasksChanged":  false,
+    "processActions":  [
+
+                       ],
+    "imageBytesRead":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

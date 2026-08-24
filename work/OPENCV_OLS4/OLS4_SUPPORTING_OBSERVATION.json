@@ -1,0 +1,43 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-24T19:35:00.0000000Z",
+  "incidentId": "OCV00_OLS3_BROAD_ALIAS_SKIP_IDENTITY_GAP_20260824",
+  "state": "PASS_OLS4_SUPPORTING_OBSERVATION",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "sources": [
+    {
+      "path": "work/OPENCV_OLS3/OLS3_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "18CB23C01E618D26D31C59091C5A692DEEE78A9DFEB1844D0AF5AC59C48DB862",
+      "requestId": "REQ_OLS3",
+      "signedResponseVerified": true
+    },
+    {
+      "path": "C:/A3R/R_8D14080FA339_20260824191035127_9bace42e.ready/MAINTENANCE.stdout.txt",
+      "sha256": "AE575B98877CC1BE81E0F91D2C595B1360F2E1DF1B5887598AB08C579AE13446",
+      "bytes": 367162
+    }
+  ],
+  "expectedObserved": [
+    {"field": "inventoryDisposition", "expected": "COMPLETE_OR_EXACT_HOLD_IDENTITIES", "observed": "HOLD_INCOMPLETE"},
+    {"field": "accessErrorCount", "expected": 0, "observed": 0},
+    {"field": "skippedReparseSubtrees", "expected": 0, "observed": 0},
+    {"field": "truncated", "expected": false, "observed": false},
+    {"field": "skippedUnsafePathSubtrees", "expected": 0, "observed": 40},
+    {"field": "skippedUnsafePathIdentityRows", "expected": 40, "observed": 0},
+    {"field": "maximumCapturedAliasEffectiveLength", "expected": "BELOW_200", "observed": 198},
+    {"field": "aliasAnchor", "expected": "EXACT_REQUESTED_SUBTREE_ROOT", "observed": "CONFIGURED_D_KLARFEXPORT_ROOT"}
+  ],
+  "provedCapabilityGap": "BROAD_ALIAS_AND_COUNT_ONLY_UNSAFE_PATH_SKIP",
+  "supportedRemedy": "B",
+  "supportedRemedyDescription": "Generic deepest-requested-subtree process-local alias plus exact bounded skip-identity rows",
+  "filesRead": false,
+  "imageBytesRead": false,
+  "sourceHashingPerformed": false,
+  "mutationsPerformed": false,
+  "healthyProcessorTouched": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

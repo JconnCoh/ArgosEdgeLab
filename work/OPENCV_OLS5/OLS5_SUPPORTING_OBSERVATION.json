@@ -1,0 +1,43 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-24T20:21:45Z",
+  "incidentId": "OCV00_OLS4_COMPLETE_TO_SOURCE_HASH_20260824",
+  "state": "PASS_OLS5_SUPPORTING_OBSERVATION",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "sources": [
+    {
+      "path": "work/OPENCV_OLS4/OLS4_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "2FE715B1ABCBAC8CCB5E09F2298C34FFEBB65F1D5D9A4130AFBB448DDC46E36D",
+      "requestId": "REQ_OLS4",
+      "signedResponseVerified": true
+    },
+    {
+      "path": "C:/A4R/R_6EACC22D8932_20260824200941404_f55f0928.ready/MAINTENANCE.stdout.txt",
+      "sha256": "DC7BD6F60DFDB57B888ADBC10300B750B57B4102BA0996EBCDDC9A9FC2F00FB0",
+      "bytes": 375081
+    }
+  ],
+  "expectedObserved": [
+    {"field": "relativeSubtree", "expected": "PatternedFront/Lot_62619-433", "observed": "PatternedFront/Lot_62619-433"},
+    {"field": "inventoryDisposition", "expected": "COMPLETE", "observed": "COMPLETE"},
+    {"field": "bmpLeafCount", "expected": 40, "observed": 40},
+    {"field": "frontsideBfDfPairCount", "expected": 10, "observed": 10},
+    {"field": "skippedPathRowCount", "expected": 0, "observed": 0},
+    {"field": "accessErrorCount", "expected": 0, "observed": 0},
+    {"field": "truncated", "expected": false, "observed": false},
+    {"field": "aliasAnchor", "expected": "EXACT_REQUESTED_SUBTREE_ROOT", "observed": "EXACT_REQUESTED_SUBTREE_ROOT"}
+  ],
+  "provedCapabilityGap": "CURRENT_SOURCE_SHA256_NOT_YET_ACQUIRED",
+  "supportedRemedy": "B",
+  "supportedRemedyDescription": "One bounded JBOD-local provider-aware SHA-256 pass over the twenty frozen frontside leaves",
+  "filesRead": false,
+  "imageBytesRead": false,
+  "sourceHashingPerformed": false,
+  "mutationsPerformed": false,
+  "healthyProcessorTouched": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

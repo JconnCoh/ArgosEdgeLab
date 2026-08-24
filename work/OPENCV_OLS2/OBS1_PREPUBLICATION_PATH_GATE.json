@@ -1,0 +1,224 @@
+{
+    "schema":  "argos_project_portal_prepublication_path_gate_v1",
+    "createdUtc":  "2026-08-24T17:53:57.5952052Z",
+    "state":  "PASS_PROJECT_PORTAL_PREPUBLICATION_PATH_GATE",
+    "requestId":  "REQ_O2OBS1",
+    "jobClass":  "DATA_PULL",
+    "requestZip":  "C:\\O2Z\\REQ_O2OBS1.ready.zip",
+    "requestZipBytes":  1149,
+    "requestZipSha256":  "9BAEE54F5AFD82D3C469EBABA0B9874707052EE2DC421A032FE2623ADD382CAB",
+    "requestManifestSha256":  "A75AA44B159EF9E205E080908EFD39490392B4B5CFB49103477EAA62CB4494F8",
+    "requestSignatureSha256":  "EDD354A7EBC51C95855C8C680B24A9A7B18C8A7CABB058D941B9591B10C1E167",
+    "definition":  {
+                       "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_OLS2\\OBS1_DATA_PULL_DEFINITION.json",
+                       "sha256":  "8A13255A2A7FAA2C3B4A30D2FCCA6E720742CA01E65BC3D980FDAA918609E44B"
+                   },
+    "preactionContract":  {
+                              "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_OLS2\\PREACTION_OBS1_BUILD.json",
+                              "sha256":  "461705A5CD7F1E6A4C595B1AEC6E53742B7BD315F6F1FA3DCCB9425A12720D00"
+                          },
+    "installedRoute":  {
+                           "endpointWorkerPath":  "C:/ProgramData/ArgosProjectPortalRO/bin/W.ps1",
+                           "endpointWorkerSha256":  "1CE01F67083A989CB92AE3824DB0AE2CB6532FD6B674E74456CC495F06DCDDF8",
+                           "endpointConfigPath":  "C:/ProgramData/ArgosProjectPortalRO/config/endpoint_jbod.json",
+                           "endpointConfigSha256":  "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F",
+                           "incomingRoot":  "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/pending",
+                           "processedRoot":  "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/processed",
+                           "responsePartialAndReadyRoot":  "C:/ProgramData/ArgosProjectPortalRO/to_argos/pending",
+                           "responseSenderSentRoot":  "C:/ProgramData/ArgosProjectPortalRO/to_argos/sent",
+                           "stateRoot":  "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/state",
+                           "approvedRoot":  "JBOD_PROCESSOR_REVIEW",
+                           "approvedRootPath":  "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2"
+                       },
+    "requestContract":  {
+                            "relativePathCount":  2,
+                            "maximumFiles":  2,
+                            "maximumBytes":  4194304,
+                            "maxResultBytes":  4194304,
+                            "optionalPathCount":  0,
+                            "longestReturnedZipEntry":  "data/JBOD_PROCESSOR_REVIEW/OCV00_OLS2_LOT_INVENTORY.json",
+                            "sourcePathsPreservedInsideNestedZip":  true,
+                            "filesystemReturnPathsFlattened":  true,
+                            "imageOrBinaryFilesRequested":  0
+                        },
+    "reservedSuffixCharacters":  32,
+    "routeRows":  [
+                      {
+                          "path":  "C:\\APR\\A\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                          "pathLength":  86,
+                          "effectiveLength":  118,
+                          "longestComponentLength":  47,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\APR\\R\\pending\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\DATA_PULL_PAYLOAD.zip",
+                          "pathLength":  86,
+                          "effectiveLength":  118,
+                          "longestComponentLength":  47,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\APR\\S\\requests\\processed\\REQ_O2OBS1.ready.zip",
+                          "pathLength":  48,
+                          "effectiveLength":  80,
+                          "longestComponentLength":  20,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\APR\\S\\requests\\REQ_O2OBS1.ready.zip",
+                          "pathLength":  38,
+                          "effectiveLength":  70,
+                          "longestComponentLength":  20,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\O2Q\\REQ_O2OBS1.partial\\PORTAL_REQUEST_MANIFEST.json",
+                          "pathLength":  54,
+                          "effectiveLength":  86,
+                          "longestComponentLength":  28,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\O2Q\\REQ_O2OBS1.ready\\PORTAL_REQUEST_MANIFEST.sig",
+                          "pathLength":  51,
+                          "effectiveLength":  83,
+                          "longestComponentLength":  27,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\O2R\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\data\\JBOD_PROCESSOR_REVIEW\\OCV00_OLS2_LOT_INVENTORY.json",
+                          "pathLength":  111,
+                          "effectiveLength":  143,
+                          "longestComponentLength":  47,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\O2R\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\DATA_PULL_PAYLOAD.zip",
+                          "pathLength":  76,
+                          "effectiveLength":  108,
+                          "longestComponentLength":  47,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\O2Z\\REQ_O2OBS1.ready.zip",
+                          "pathLength":  27,
+                          "effectiveLength":  59,
+                          "longestComponentLength":  20,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\O2Z\\REQ_O2OBS1.ready.zip.path_gate.json",
+                          "pathLength":  42,
+                          "effectiveLength":  74,
+                          "longestComponentLength":  35,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O2OBS1.ready\\PORTAL_REQUEST_MANIFEST.json",
+                          "pathLength":  103,
+                          "effectiveLength":  135,
+                          "longestComponentLength":  28,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\completed\\REQ_O2OBS1.ready\\PORTAL_REQUEST_MANIFEST.json",
+                          "pathLength":  115,
+                          "effectiveLength":  147,
+                          "longestComponentLength":  28,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\work\\J_0123456789AB_a1b2c3d4\\DATA_PULL_PAYLOAD.zip.partial",
+                          "pathLength":  114,
+                          "effectiveLength":  146,
+                          "longestComponentLength":  29,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\from_jbod\\pending\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                          "pathLength":  131,
+                          "effectiveLength":  163,
+                          "longestComponentLength":  47,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_from_gateway\\pending\\REQ_O2OBS1.ready\\PORTAL_REQUEST_MANIFEST.json",
+                          "pathLength":  111,
+                          "effectiveLength":  143,
+                          "longestComponentLength":  28,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_to_argos\\pending\\REQ_O2OBS1.ready\\PORTAL_REQUEST_MANIFEST.json",
+                          "pathLength":  107,
+                          "effectiveLength":  139,
+                          "longestComponentLength":  28,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260824235959999_a1b2c3d4.partial\\DATA_PULL_PAYLOAD.zip",
+                          "pathLength":  124,
+                          "effectiveLength":  156,
+                          "longestComponentLength":  49,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                          "pathLength":  130,
+                          "effectiveLength":  162,
+                          "longestComponentLength":  47,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\sent\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\DATA_PULL_PAYLOAD.zip",
+                          "pathLength":  119,
+                          "effectiveLength":  151,
+                          "longestComponentLength":  47,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\pending\\R_0123456789AB_20260824235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                          "pathLength":  132,
+                          "effectiveLength":  164,
+                          "longestComponentLength":  47,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\pending\\REQ_O2OBS1.ready\\PORTAL_REQUEST_MANIFEST.json",
+                          "pathLength":  97,
+                          "effectiveLength":  129,
+                          "longestComponentLength":  28,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "U:\\ProjectPortalRO\\requests\\REQ_O2OBS1.ready.zip",
+                          "pathLength":  48,
+                          "effectiveLength":  80,
+                          "longestComponentLength":  20,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "U:\\ProjectPortalRO\\requests\\REQ_O2OBS1.ready.zip.upload",
+                          "pathLength":  55,
+                          "effectiveLength":  87,
+                          "longestComponentLength":  27,
+                          "state":  "PASS_PATH_BUDGET"
+                      },
+                      {
+                          "path":  "U:\\ProjectPortalRO\\responses\\R_0123456789AB_20260824235959999_a1b2c3d4.ready.zip",
+                          "pathLength":  80,
+                          "effectiveLength":  112,
+                          "longestComponentLength":  51,
+                          "state":  "PASS_PATH_BUDGET"
+                      }
+                  ],
+    "maximumEffectiveLength":  164,
+    "maximumComponentLength":  51,
+    "exactFinalZipExtractionPassed":  true,
+    "exactFinalZipSignaturePassed":  true,
+    "publicationAuthorized":  true,
+    "maximumRequestsAuthorized":  1,
+    "retryOnFailure":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

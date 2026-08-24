@@ -7062,3 +7062,421 @@ than rerunning it.
   `6E64D74F39EA2E2E93FE6E64EFF70A9BADBBE4634D2B7E7E5F286EBC96FCC778`.
   The failure occurred before GUI task/process actions; no automatic retry is
   allowed.
+
+## 2026-08-24 — Standalone `Get-FileHash` discovery does not prove worker-script availability
+
+- Failure signature: the OLS1 metadata-only draft completed its bounded path
+  enumeration under Windows PowerShell 5.1, then failed before writing its
+  local result because `Get-FileHash` was not recognized inside the exact
+  worker-script invocation. The same host could discover and run
+  `Get-FileHash` in a separate standalone command, and an explicit
+  `Import-Module Microsoft.PowerShell.Utility` inside the worker imported the
+  module's cmdlets but did not make its `Get-FileHash` function available.
+- Cause: `Get-FileHash` is a function exported by the Windows PowerShell 5.1
+  `Microsoft.PowerShell.Utility` module, and its availability proved
+  invocation-context dependent. A separate-shell `Get-Command` result and a
+  source-level module import were therefore not caller/consumer compatibility
+  evidence for the exact worker.
+- Mandatory preflight: exercise the exact worker's own non-scoring path under
+  Windows PowerShell 5.1 and resolve every relied-upon command from inside that
+  same invocation before any write or swap. For physical short-path files,
+  prefer a script-local bounded .NET SHA-256 helper over the module-exported
+  `Get-FileHash` function. If a provider-only PSDrive path is involved, retain
+  the existing provider-aware incremental hashing rule instead of passing the
+  alias to raw .NET APIs.
+- Recovery: OLS1 remained a local `DRAFT`; it was never signed, published, or
+  executed on JBOD. Preserve its failed fixture roots as diagnostic evidence,
+  withdraw that namespace, and use a fresh successor cloned from the unchanged
+  qualified OEL1 worker. Qualify the successor's exact PS5 path before one
+  bounded request. No endpoint, task, processor, source, image, wafer, queue,
+  or external file state changed.
+
+## 2026-08-24 — A parser-clean PowerShell regex can still be invalid at first evaluation
+
+- Failure signature: the OLS2 exact-subtree provider passed Windows PowerShell
+  5.1 parsing and harness safety, but its first local invocation failed while
+  evaluating `(^|\)\.\.?($|\)` with a regex parsing error. No provider output
+  was created.
+- Cause: the PowerShell string contained a single regex backslash before a
+  closing parenthesis. The PowerShell language parser validates the string as
+  syntax but does not compile regex operands during `ParseFile`.
+- Mandatory preflight: for every new or changed `-match`, `[regex]`, or regex
+  replacement used by a provider, execute positive and negative controls under
+  the exact Windows PowerShell 5.1 invocation before broader fixtures. Require
+  traversal controls such as `..\\escape` to be rejected and ordinary bounded
+  relative paths to compile and pass.
+- Recovery: OLS2 remained an unfrozen local `DRAFT`. Preserve the failed fresh
+  fixture root, correct the regex in place, refresh all pinned hashes, rerun
+  clone and harness guards, then use a fresh fixture namespace. No JBOD,
+  endpoint, processor, task, process, queue, source, image, or wafer state was
+  contacted or changed.
+
+## 2026-08-24 — A broad process-local source alias can still hide deeper leaves behind the path budget
+
+- Failure signature: the signed OLS3 metadata inventory for
+  `D:\KLARFExport\PatternedFront\Lot_62619-433` returned 131 directory rows
+  and 40 BMP rows but remained `HOLD_INCOMPLETE` with exactly 40
+  `UNSAFE_PATH_SUBTREES_SKIPPED`. There were zero access errors, zero reparse
+  skips, zero truncation, and zero depth-boundary directories. Captured
+  brightfield source aliases were already at effective length 198. The worker
+  returned only the skip count, so the 40 rejected identities could not be
+  proven from the result.
+- Cause: the process-local `F:` PSDrive was anchored at the broad configured
+  `D:\KLARFExport` root, then repeated the complete lot-relative path beneath
+  the alias. Slightly longer children crossed the alias effective-length limit.
+  The loop also rejected a child when its canonical provenance spelling was
+  230 or more even when the actual provider-aware alias path could be made
+  safe, and incremented a count without first recording the child's bounded
+  identity and exact rejection reason.
+- Mandatory preflight: anchor the process-local alias at the deepest verified
+  common source ancestor required by the request, normally the exact requested
+  subtree root, so the actual provider-aware I/O path begins at `F:\`. Keep
+  the configured-root-relative canonical identity as provenance only; never
+  pass an overlong canonical spelling to a launch, raw .NET API, hashing loop,
+  or OpenCV provider. Gate the exact alias path that the process will use and
+  record the canonical budget state separately. New outputs remain subject to
+  the normal 230 hard stop. Before any `continue`, record a bounded skip row
+  containing parent-relative path, child name, path type, extension,
+  canonical and alias effective lengths, longest-component lengths, and an
+  enumerated rejection reason. A count-only unsafe-path result is prohibited.
+  The 80-character component cap applies to newly created outputs, not to an
+  unchanged pre-existing source component. For source discovery, record a
+  component above 80 as provenance and never reproduce it in a new output
+  name; reject only an invalid/filesystem-impossible component or an unsafe
+  total alias path.
+  Require Windows PowerShell 5.1 controls proving: canonical provenance 230 or
+  more plus alias below 200 is enumerated safely through the alias; alias 200
+  or more holds with the exact skipped identity; a pre-existing source
+  component from 81 through the filesystem maximum is enumerated with an
+  advisory but not copied into a new output name; and complete inventories
+  contain zero skip rows.
+- Recovery: preserve OLS3 as signed terminal hold evidence. Do not hash or
+  decode any source from that incomplete broad inventory. Use a fresh
+  namespace and recovery intent for one generic metadata-only capability
+  correction, prove the deepest-alias and exact-skip-row behavior locally, and
+  only then consider one separately authorized JBOD request. The correction
+  must not hard-code a lot, slot, product, source root, or authority decision.
+
+## 2026-08-24 — Provenance-only long paths must not enter legacy .NET path parsing
+
+- Failure signature: the first OLS4 Windows PowerShell 5.1 self-test supplied
+  a deliberately long canonical provenance spelling and failed inside
+  `[IO.Path]::GetPathRoot` with the legacy 260-character path exception before
+  any alias or filesystem enumeration was attempted.
+- Cause: the provider correctly intended the canonical spelling to be
+  metadata-only, but its budget helper still passed that string to a legacy
+  .NET path parser. A path can therefore violate the provenance/I/O boundary
+  even when no file content is opened.
+- Mandatory preflight: canonical provenance strings at and above the 230
+  effective-length hard-stop boundary must be validated and split lexically,
+  without `[IO.Path]`, `Resolve-Path`, provider resolution, filesystem tests,
+  or child-process arguments. Only the short physical alias anchor and the
+  provider-aware alias read paths may enter filesystem APIs. Run this exact
+  long-provenance control under Windows PowerShell 5.1 before freezing or
+  publishing the provider.
+- Recovery: OLS4 remained a local draft with no JBOD contact. The provider now
+  performs lexical drive/UNC provenance validation and passed the frozen local
+  gate, including long-canonical/short-alias enumeration and alias cleanup
+  after an injected failure. Gate SHA-256 is
+  `791829F3EFE668B10FD6DB6CD6847F375556790204C8A9D811224627AD309396`.
+
+## 2026-08-24 — A scale-search grid must include the exact complete-row extent
+
+- Failure signature: the first OCV-02 synthetic scribe gate passed only the
+  missing-scribe hold. All three visible twelve-character controls localized
+  candidate regions but produced shifted image-first strings and many false
+  checksum-valid alternatives. The preserved failed gate is
+  `C:\O2S1\SYNTHETIC_GATE.json`.
+- Cause: the new scale-search enumerated row-width fractions only through
+  `0.96`. Even when the input patch was an exact twelve-cell row, it could not
+  evaluate the complete `1.00` extent. A cropped grid then substituted partial
+  neighboring glyphs at the boundary, and bounded checksum search amplified
+  those segmentation errors into false ambiguity.
+- Mandatory preflight: before a rotated/full-image synthetic gate, evaluate an
+  exact twelve-cell row directly. Require its image-first string to equal the
+  rendered truth, both boundary cells to pass, and the canonical SEMI M12 pair
+  to match. Every scale search must include the exact `1.00` row extent as well
+  as bounded margin variants. Checksum enumeration remains ineligible until
+  both boundary cells establish a complete image row.
+- Recovery: preserve `C:\O2S1` as failed executed evidence. Correct the
+  unfrozen engine draft, run the direct-row invariant first, and use a fresh
+  output namespace for the next complete synthetic gate. No JBOD image,
+  installed file, processor, task, process, queue, wafer, source, or hold was
+  contacted or changed.
+
+## 2026-08-24 — Synthetic glyph geometry must match the frozen acquisition contract
+
+- Failure signature: after the direct twelve-cell invariant passed, the fresh
+  `C:\O2S2` full synthetic gate still produced `4444494944A4` for the standard
+  visible row and failed all three visible cases.
+- Cause: the synthetic reference generator used 64-by-112 cells while the
+  frozen accepted glyphs are 96-by-215. The full-case rectified region was 200
+  pixels high, so the synthetic glyph occupied a different normalized
+  descriptor scale than its own short reference even though cell boundaries
+  were correct. This was a fixture-geometry mismatch, not JBOD evidence.
+- Mandatory preflight: inspect the exact frozen reference dimensions before
+  generating OCR controls. Synthetic reference cells and rendered row cells
+  must use that same native geometry, and expected-region margins must retain
+  the complete row without changing glyph scale.
+- Recovery: preserve `C:\O2S2` as failed executed evidence, correct only the
+  synthetic fixture geometry in the unfrozen engine, rerun the direct-row
+  invariant, and use a fresh output root. No production or JBOD source was
+  read or changed.
+
+## 2026-08-24 — A migration must preserve the frozen descriptor window, not a proportional approximation
+
+- Failure signature: `C:\O2S3` still failed the three visible scribe controls
+  after synthetic cells matched 96-by-215. The standard region correctly used
+  a 97.5-pixel cell width but misread central glyphs in a 300-pixel-high crop.
+- Cause: the OpenCV port replaced the accepted reader's exact maximum
+  80-by-180 energy-centered descriptor window with proportional 0.833-by-0.783
+  dimensions. A crop with harmless vertical margin therefore changed glyph
+  scale relative to its frozen reference. This was an unauthorized semantic
+  drift in the migration.
+- Mandatory preflight: mechanically compare every migrated descriptor
+  constant and population with the accepted implementation. The OpenCV port
+  must use `min(cellWidth - 2, 80)` by `min(cellHeight - 2, 180)`, centered on
+  squared residual energy, before 24-by-48 sampling and normalization. Test
+  both an exact row and the same row inside a taller harmless-margin crop.
+- Recovery: preserve `C:\O2S3`, restore the exact frozen descriptor window in
+  the unfrozen engine, pass both direct descriptor invariants, and use a fresh
+  synthetic output namespace. Do not tune checksum or candidate thresholds to
+  compensate for descriptor drift.
+
+## 2026-08-24 — Exception localization must join the complete twelve-cell row
+
+- Failure signature: `C:\O2S4` passed the standard-position and missing-mark
+  controls, but both rotated exception searches returned partial regions. The
+  dark rotated truth was 1,152 pixels wide while the selected region was only
+  548 pixels wide, so OCR saw roughly half a row and checksum search produced
+  false ambiguity.
+- Cause: the orientation-aware closing element was only 3.5 percent of the
+  working image's minimum dimension. It joined strokes within nearby glyphs
+  but not all twelve acquisition-scale cells into one region.
+- Mandatory preflight: a rotated full-row control must produce at least one
+  bounded candidate covering 90 percent of the known rendered row width before
+  OCR. Candidate completeness is an image-localization gate; checksum may not
+  repair a partial localized row. Size the oriented join element from the
+  bounded working-image scale and retain maximum-region and NMS limits.
+- Recovery: preserve `C:\O2S4`, increase only the unfrozen exception-search
+  joining span, verify complete-row coverage before OCR, and use a fresh output
+  namespace. Do not relax OCR or checksum thresholds.
+
+## 2026-08-24 — Oriented closing alone does not prove full-row coverage
+
+- Failure signature: `C:\O2S5` passed three of four cases, but the dark
+  25-degree exception search still returned a maximum 558-pixel region for a
+  1,152-pixel row even after the oriented join span increased. The explicit
+  pre-OCR coverage control failed.
+- Cause: response gaps within some glyph combinations kept the connected
+  component split. A single contour-derived rectangle, regardless of closing
+  span, was incorrectly treated as the complete row.
+- Mandatory preflight: generate bounded baseline-direction expansions for
+  every text-like component and preserve distinct width scales through NMS.
+  OCR may select among those regions, but checksum remains ineligible until a
+  complete twelve-cell boundary passes. Require a candidate covering at least
+  90 percent of the known rotated control row before the full gate.
+- Recovery: preserve `C:\O2S5`; add bounded multi-scale baseline expansion in
+  the unfrozen locator, keep the candidate cap, retain only materially distinct
+  width scales, and use a fresh output root. Do not weaken character scoring.
+
+## 2026-08-24 — Region-scale expansion requires a commensurate bounded grid scale
+
+- Failure signature: `C:\O2S6` passed the explicit full-row coverage control
+  and three of four full cases. The remaining rotated candidate was 1,340
+  pixels wide around a 1,152-pixel row, but the OCR grid omitted the matching
+  0.86 row-width fraction and shifted by one cell.
+- Cause: localization correctly preserved a larger complete-row region while
+  OCR sampled row fractions in coarse 0.06 increments. The true bounded scale
+  fell between 0.84 and 0.90.
+- Mandatory preflight: enumerate row-width fractions from 0.72 through 1.00 in
+  bounded 0.02 increments and preserve the existing candidate cap. Require the
+  same rotated truth to pass without changing descriptor, character, boundary,
+  or checksum thresholds.
+- Recovery: preserve `C:\O2S6`, refine only the bounded grid-scale enumeration
+  in the unfrozen engine, and use a fresh output namespace.
+
+## 2026-08-24 — Expanding a partial component around its own center can still omit the row end
+
+- Failure signature: `C:\O2S7` retained a complete-width 1,340-pixel region
+  but still dropped the first glyph. Diagnostics showed the detected partial
+  component center at `(889,369)` while the rendered full-row center was
+  `(760,420)`; symmetric width expansion preserved the wrong center.
+- Cause: the locator expanded a partial connected component only about that
+  component's centroid. Full-row width alone did not guarantee that both row
+  ends were inside the region.
+- Mandatory preflight: for each bounded baseline expansion, retain left,
+  centered, and right centroid hypotheses along the measured baseline. NMS
+  must not merge materially shifted hypotheses merely because their width
+  scale matches. OCR boundary gates choose among them.
+- Recovery: preserve `C:\O2S7`, add bounded baseline-direction centroid
+  offsets without weakening OCR, and use a fresh output root.
+
+## 2026-08-24 — Multi-case real-reference scribe gates need measured timeout budgets
+
+- Failure signature: the six-case historical BF/DF real-reference regression
+  was launched with a 120-second command limit and terminated with exit 124
+  before the file-backed gate could be committed. The already completed
+  one-case control took about 15 seconds; the combined bounded exception
+  searches did not fit the guessed aggregate limit.
+- Cause: the command timeout was selected before measuring the complete
+  multi-case runtime and did not reserve for all BF/DF channel, polarity, and
+  orientation hypotheses.
+- Mandatory preflight: measure one representative case first, multiply by the
+  exact case count, and reserve at least 100 percent additional time for a
+  bounded multi-case gate. Prefer smaller create-new batches when the harness
+  commits output only after all cases finish.
+- Recovery: retain the passing `C:\O2R1` one-case gate, confirm that the timed
+  out run created no final output root, and rerun the remaining bounded cases
+  in smaller create-new batches with a measured timeout. Do not interpret a
+  harness timeout as an image-processing failure.
+
+## 2026-08-24 — A timed-out PowerShell parent can leave its Python child running
+
+- Failure signature: immediately after the six-case command returned exit 124,
+  `C:\O2R2` did not exist. A smaller retry then finished computation but failed
+  its create-new commit because `C:\O2R2` had appeared. Readback proved that
+  the original child had completed all six cases and committed a valid PASS
+  gate while the retry was running.
+- Cause: terminating the bounded PowerShell invocation did not prove that its
+  already-started portable Python child had terminated. Absence of the final
+  output root immediately after the parent timeout was not terminal process
+  evidence.
+- Mandatory preflight: after any parent timeout, identify the exact child by
+  executable path, start time, and command line, then wait for or terminate
+  that exact process before reusing its output namespace or launching a retry.
+  Recheck the create-new root immediately before a retry and treat a newly
+  committed gate as candidate evidence requiring full readback.
+- Recovery: do not delete or overwrite the late output. Read back its exact
+  case count, pass count, source hashes, authority fields, and SHA-256; accept
+  it only if complete. Use a distinct namespace for any necessary retry.
+
+## 2026-08-24 — Windows PowerShell 5.1 can bind `String.Split` count as enum options
+
+- Failure signature: the draft O2D1 reference-bundle `-Preflight` failed before
+  any write because `$relative.Split(@('\\'), 2)` bound the integer `2` to the
+  `StringSplitOptions` overload and rejected it as an invalid enum value.
+- Cause: a .NET `String.Split` overload expression that is accepted or inferred
+  differently by newer hosts was ambiguous under Windows PowerShell 5.1.
+- Mandatory preflight: run the exact script's non-mutating mode under Windows
+  PowerShell 5.1 before build. For one bounded separator, use `IndexOf` plus
+  `Substring` and validate both sides rather than relying on an ambiguous
+  `Split` overload.
+- Recovery: the artifact was still `DRAFT` and no output existed, so correct it
+  in place, rerun harness safety, and repeat the same exact `-Preflight` before
+  any build.
+
+## 2026-08-24 — Endpoint rehearsal must use the exact package payload layout
+
+- Failure signature: O2D1 R1 staged only the short local BF/DF inputs, then the
+  endpoint stopped before OpenCV because its `PayloadRoot` did not contain
+  `ArgosOpenCvScribeV1.py`; the engine source lived in the separate OCV-02
+  provider folder and had not been copied into a package-shaped payload.
+- Cause: the harness invoked the endpoint against a source/work directory
+  instead of the exact payload layout the portal request will extract.
+- Mandatory preflight: enumerate and hash every endpoint-relative payload leaf
+  under a fresh package-shaped root, invoke the exact endpoint `-Preflight`
+  against that root, and only then run the rehearsal. Source presence elsewhere
+  in the repository is not payload evidence.
+- Recovery: preserve `C:\O2D1I` as the withdrawn R1 staging evidence, create
+  fresh R2 input/payload/normal/failure roots, stage the engine, reference ZIP,
+  and job under their exact payload names, and rerun both normal and injected-
+  provenance-failure cases.
+
+## 2026-08-24 — Clone remediation must classify process-local alias literals
+
+- Failure signature: the first frozen O2D1 R2 clone-remediation preflight
+  rejected the source `Q:` alias as undeclared and identified two generated
+  full alias-leaf literals.
+- Cause: the remediation manifest classified the persistent filesystem roots
+  but omitted the process-local source alias; the generated harness also used
+  whole alias leaves instead of composing the bounded filenames from `Q:`.
+- Mandatory preflight: run clone-literal remediation before executing a cloned
+  harness, classify every process-local PSDrive root, and compose leaf names so
+  the manifest describes the alias anchor rather than each leaf.
+- Recovery: preserve the failed frozen remediation manifest, use a fresh R2
+  manifest, declare `Q:` as `UNCHANGED_ALLOWED`, and rerun both harness-safety
+  and clone-remediation preflight before writing its gate.
+
+## 2026-08-24 — Never freeze a preaction dependency hash from transcription
+
+- Failure signature: the first frozen O2D1 live mutation intent named the R1
+  test-withdrawal file but contained a transcribed SHA-256 that did not match
+  the exact file.
+- Cause: the dependency value was entered before running `Get-FileHash` against
+  the final exact bytes.
+- Mandatory preflight: compute every dependency hash from the final file, emit
+  the path/hash rows, then construct the frozen contract from those rows. Never
+  infer or transcribe an unseen hash, even for a small local JSON artifact.
+- Recovery: withdraw the frozen R1 intent without execution, signature,
+  publication, or external mutation; create a fresh R2 namespace using the
+  measured hash and run the recovery-intent preflight against R2.
+
+## 2026-08-24 — Do not force a new development request into recovery semantics
+
+- Failure signature: the O2D1 R2 recovery-intent preflight rejected local test
+  classifications, a non-B/C/D remedy, and an OCV-00 source-hash aggregate as
+  recovery observation evidence.
+- Cause: a normal first OCV-02 development request was incorrectly modeled as
+  a successor recovery merely because it creates a bounded D-side work/output
+  tree and installs an exact endpoint helper. No signed live-state premise had
+  failed and no failed recovery was being replaced.
+- Mandatory preflight: classify the action `MUTATE` for its writes/process, but
+  create `ARGOS_RECOVERY_INTENT` only when designing a successor recovery under
+  the recovery policy. New review-only development still requires the normal
+  zero-recurrence, path, harness, package, queue, and route gates.
+- Recovery: withdraw both unused O2D1 recovery-intent drafts, create no R3,
+  and continue through the standard new-development request lane.
+
+## 2026-08-24 — OpenCV child paths need a child-visible short source alias
+
+- Failure signature: the unpublished signed O2D1 request passed its local
+  package gates, but the exact Slot16 BF source path measured 178 characters
+  raw and 210 with the mandatory 32-character reserve. The job passed that
+  canonical path directly to the portable Python/OpenCV child.
+- Cause: local package path planning included payload and D output leaves but
+  did not run the path-budget guard against each canonical image source before
+  freezing the job. A PowerShell-only PSDrive alias would not solve the child
+  process path because it is provider-local.
+- Mandatory preflight: path-gate every canonical source before job freeze. At
+  effective length 200 or more, create a verified temporary DOS-device alias
+  anchored at the deepest exact source subtree, use its short path for child
+  I/O, preserve the canonical path separately in the versioned job/result
+  provenance, and remove the alias in a `finally` block. Refuse a pre-existing
+  or mismatched alias. Include alias create/remove in the declared process
+  actions and rehearse both normal and injected-failure removal.
+- Recovery: preserve and withdraw the frozen signed O2D1 ZIP before
+  publication. Use fresh request and D work/output namespaces for O2D2; never
+  patch or publish O2D1.
+
+## 2026-08-24 — `subst.exe <drive>:` is not a mapping query
+
+- Failure signature: O2D2 successfully created and later removed the temporary
+  `X:` alias, but its local rehearsal stopped before OpenCV because
+  `subst.exe X:` returned `Invalid parameter - X:` and the endpoint treated
+  that as an alias-target mismatch.
+- Cause: `subst.exe` lists mappings only when invoked without arguments; the
+  single-drive form is not a supported query.
+- Mandatory preflight: after creating the exact alias, invoke `subst.exe` with
+  zero arguments, parse exactly one case-insensitive line for the requested
+  drive, and require its right-hand target to equal the frozen anchor. Rehearse
+  alias removal on both normal and injected-failure paths.
+- Recovery: preserve the O2D2 local roots, confirm `X:` and the diagnostic `Z:`
+  are absent, withdraw the executed O2D2 test/endpoint namespace, and use a
+  fresh O2D3 namespace with zero-argument mapping verification.
+
+## 2026-08-24 — PowerShell keywords require token separation from variables
+
+- Failure signature: O2D3 created and verified the short alias, completed the
+  OpenCV child, wrote `RESULT.json`, and removed the alias, then failed because
+  `return$r` was interpreted as a command named `return$r` at runtime.
+- Cause: source compaction removed mandatory whitespace between the `return`
+  keyword and its variable. The AST parser and static harness did not classify
+  this token sequence as a parse error.
+- Mandatory preflight: reject keyword-variable adjacency such as `return$...`
+  and `throw$...` with an explicit bounded lexical check in addition to the
+  parser/harness gate; keep whitespace around control keywords in generated
+  PowerShell.
+- Recovery: preserve the O2D3 result as withdrawn local evidence, confirm the
+  alias is absent, and use a fresh O2D4 endpoint/test/request namespace with
+  separated `return $value` and `throw $value` tokens.

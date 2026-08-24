@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "argos://schemas/opencv/review-raster/v1",
+  "title": "Argos OpenCV review raster manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "revision", "jobId", "state", "coordinateFrameId", "cleanSource", "layers", "output", "outsideDocumentedMaskChangedPixels", "feedbackLayerSeparate", "nativeCoordinateCapturePreserved", "authority"],
+  "properties": {
+    "schema": { "const": "argos_opencv_review_raster_v1" },
+    "revision": { "$ref": "#/definitions/id" },
+    "jobId": { "$ref": "#/definitions/id" },
+    "state": { "enum": ["PASS_REVIEW_RASTER", "HOLD_NO_REVIEW_RASTER", "HOLD_SOURCE_PROVENANCE_MISMATCH", "HOLD_LAYER_PROVENANCE_MISMATCH", "HOLD_SCHEMA_FIXTURE_ONLY"] },
+    "coordinateFrameId": { "$ref": "#/definitions/id" },
+    "cleanSource": {
+      "type": "object", "additionalProperties": false,
+      "required": ["sourceId", "path", "sha256"],
+      "properties": {
+        "sourceId": { "$ref": "#/definitions/id" },
+        "path": { "$ref": "#/definitions/jbodPath" },
+        "sha256": { "$ref": "#/definitions/sha256" }
+      }
+    },
+    "layers": {
+      "type": "array", "maxItems": 128,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["role", "manifestSchema", "manifestRevision", "manifestSha256", "operatorFeedback"],
+        "properties": {
+          "role": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]{2,79}$" },
+          "manifestSchema": { "type": "string", "minLength": 1, "maxLength": 96 },
+          "manifestRevision": { "$ref": "#/definitions/id" },
+          "manifestSha256": { "$ref": "#/definitions/sha256" },
+          "operatorFeedback": { "type": "boolean" }
+        }
+      }
+    },
+    "output": {
+      "anyOf": [
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["path", "sha256", "width", "height"],
+          "properties": {
+            "path": { "$ref": "#/definitions/jbodPath" },
+            "sha256": { "$ref": "#/definitions/sha256" },
+            "width": { "type": "integer", "minimum": 1 },
+            "height": { "type": "integer", "minimum": 1 }
+          }
+        },
+        { "type": "null" }
+      ]
+    },
+    "outsideDocumentedMaskChangedPixels": { "const": 0 },
+    "feedbackLayerSeparate": { "const": true },
+    "nativeCoordinateCapturePreserved": { "const": true },
+    "authority": { "$ref": "#/definitions/authority" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "state": { "const": "PASS_REVIEW_RASTER" } } },
+      "then": { "properties": { "output": { "type": "object" } } },
+      "else": { "properties": { "output": { "type": "null" } } }
+    }
+  ],
+  "definitions": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{2,119}$" },
+    "jbodPath": { "type": "string", "pattern": "^[Dd]:[\\\\/]", "maxLength": 200 },
+    "authority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reviewOnly", "productionEligible", "mayClearHolds"],
+      "properties": { "reviewOnly": { "const": true }, "productionEligible": { "const": false }, "mayClearHolds": { "const": false } }
+    }
+  }
+}

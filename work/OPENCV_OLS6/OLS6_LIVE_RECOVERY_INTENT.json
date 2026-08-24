@@ -1,0 +1,89 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-24T21:01:00Z",
+  "incidentId": "OCV00_OLS5_HASH_TIMEOUT_20260824",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_OLS5/OLS5_SIGNED_TIMEOUT_CLASSIFICATION.json",
+        "sha256": "514B1A11A33F24C46B8D795A4E2489FCDC65AE82FAF29D155EA09E62E8406A33",
+        "state": "FAILED"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/OPENCV_OLS5/O5OBS1_POST_FAILURE_OBSERVATION.json",
+      "sha256": "936DAE7A1166B09218C6F3A523F057958904ADC9ACA1D0FB0945EFE5CAD16119"
+    },
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": true,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_OLS6/OLS6_CHUNK_PLAN.json",
+      "sha256": "A79159F8DE1F180B5E47EBAAE28DC77059B8CF29AA34B970F6AF95EF38B94EC4"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/OPENCV_OLS4/OLS4_COMPLETE_ROUTE_GATE.json",
+      "sha256": "A0BECC1A59665E6BF936C0E76B56910DD3DBF3AFC9E9674EC825368F3069C7EE"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": ["D:/KLARFExport/PatternedFront/Lot_62619-433"],
+    "requestedCapabilities": ["EXACT_FROZEN_FRONT_SOURCE_SHA256_IN_FIVE_SEQUENTIAL_CHUNKS"],
+    "requestedFields": ["canonicalProvenancePath", "slot", "channel", "partition", "bytes", "lastWriteTimeUtc", "sha256", "sourceStableDuringHash"],
+    "decisionOptions": ["COMPLETE", "FAIL_CLOSED"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_OLS5/O5OBS1_POST_FAILURE_OBSERVATION.json",
+      "sha256": "936DAE7A1166B09218C6F3A523F057958904ADC9ACA1D0FB0945EFE5CAD16119"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "remedyDescription": "Replace the timed-out monolithic twenty-leaf run with one bounded five-stage workflow of four leaves per signed request, preserving the exact frozen twenty-leaf union and hash semantics.",
+    "contractPath": "work/OPENCV_OLS6/OLS6_LOCAL_PROOF_FREEZE.json",
+    "contractSha256": "9128EA5494C528C2D5F834051DCA1394350A48106DDF5AD203D0ACA7482C5B60"
+  },
+  "authorizationBoundary": {
+    "localDesignAndWindowsPowerShell51ProofAuthorized": true,
+    "packageBuildAuthorized": true,
+    "signatureAuthorized": true,
+    "livePublicationAuthorized": true,
+    "liveEndpointRequestsMaximum": 5,
+    "publishNextOnlyAfterPriorSignedTerminalSuccess": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

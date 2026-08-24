@@ -1,0 +1,77 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "OCV00_OLS3_FROM_FROZEN_OLS2_20260824",
+  "pairs": [
+    {
+      "source": "work/OPENCV_OLS2/pkg/payload/E.ps1",
+      "generated": "work/OPENCV_OLS3/pkg/payload/E.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "C:\\ProgramData",
+          "generatedRoot": "C:\\ProgramData",
+          "disposition": "UNCHANGED_ALLOWED",
+          "reason": "The exact installed portal and processor roots remain unchanged."
+        },
+        {
+          "sourceRoot": "F:\\PatternedFront",
+          "generatedRoot": "F:\\PatternedFront",
+          "disposition": "UNCHANGED_ALLOWED",
+          "reason": "The fixed process-local alias remains the metadata-only path-shortening mechanism."
+        }
+      ]
+    },
+    {
+      "source": "work/OPENCV_OLS2/Test-OLS2Entrypoint.ps1",
+      "generated": "work/OPENCV_OLS3/Test-OLS3Entrypoint.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "F:",
+          "generatedRoot": "F:",
+          "disposition": "UNCHANGED_ALLOWED",
+          "reason": "The fixture validates the unchanged process-local alias contract."
+        }
+      ]
+    }
+  ],
+  "forwardSlashRootRemediation": [
+    {
+      "source": "work/OPENCV_OLS2/ENTRYPOINT_TEST_INVOCATION.json",
+      "generated": "work/OPENCV_OLS3/ENTRYPOINT_TEST_INVOCATION.json",
+      "rules": [
+        {
+          "sourceRoot": "C:/AS2X/OLS2V4",
+          "generatedRoot": "C:/A3X/V1",
+          "disposition": "REPLACED"
+        },
+        {
+          "sourceRoot": "C:/P2G",
+          "generatedRoot": "C:/P3G",
+          "disposition": "REPLACED"
+        },
+        {
+          "sourceRoot": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab",
+          "generatedRoot": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab",
+          "disposition": "UNCHANGED_ALLOWED"
+        }
+      ]
+    },
+    {
+      "source": "work/OPENCV_OLS2/ENTRYPOINT_PREFLIGHT_INVOCATION.json",
+      "generated": "work/OPENCV_OLS3/ENTRYPOINT_PREFLIGHT_INVOCATION.json",
+      "rules": [
+        {
+          "sourceRoot": "C:/AS2X/OLS2V4",
+          "generatedRoot": "C:/A3X/V1",
+          "disposition": "REPLACED"
+        }
+      ]
+    }
+  ],
+  "unchangedByteCopies": [
+    {
+      "source": "work/OPENCV_OLS2/pkg/payload/W.ps1",
+      "generated": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "expectedSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    }
+  ]
+}

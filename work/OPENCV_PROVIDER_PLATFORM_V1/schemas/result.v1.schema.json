@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "argos://schemas/opencv/result/v1",
+  "title": "Argos OpenCV result v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "contractRevision", "jobId", "jobSha256", "providerBinding", "state", "eligibleForDownstream", "exitCode", "measurements", "holds", "artifacts", "runtimeProvenance", "authority"],
+  "properties": {
+    "schema": { "const": "argos_opencv_result_v1" },
+    "contractRevision": { "$ref": "#/definitions/id" },
+    "jobId": { "$ref": "#/definitions/id" },
+    "jobSha256": { "$ref": "#/definitions/sha256" },
+    "providerBinding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["providerId", "providerContractRevision", "providerConfigSha256"],
+      "properties": {
+        "providerId": { "$ref": "#/definitions/id" },
+        "providerContractRevision": { "$ref": "#/definitions/id" },
+        "providerConfigSha256": { "$ref": "#/definitions/sha256" }
+      }
+    },
+    "state": {
+      "enum": ["PASS_MEASUREMENT", "HOLD_PROVIDER_DISABLED", "HOLD_RUNTIME_MISSING", "HOLD_SCHEMA_MISMATCH", "HOLD_PROVENANCE_MISMATCH", "HOLD_REQUIRED_INPUT_MISSING", "HOLD_AMBIGUOUS_MEASUREMENT", "ERROR_PROVIDER_TIMEOUT", "ERROR_PROVIDER_EXIT"]
+    },
+    "eligibleForDownstream": { "type": "boolean" },
+    "exitCode": { "type": "integer", "minimum": 0, "maximum": 255 },
+    "measurements": { "type": "object" },
+    "holds": {
+      "type": "array", "maxItems": 128,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["code", "detail"],
+        "properties": {
+          "code": { "type": "string", "pattern": "^(HOLD|ERROR)_[A-Z0-9_]{2,95}$" },
+          "detail": { "type": "string", "minLength": 1, "maxLength": 1000 }
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array", "maxItems": 256,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["role", "schema", "path", "sha256"],
+        "properties": {
+          "role": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]{2,79}$" },
+          "schema": { "type": "string", "minLength": 1, "maxLength": 96 },
+          "path": { "$ref": "#/definitions/jbodPath" },
+          "sha256": { "$ref": "#/definitions/sha256" }
+        }
+      }
+    },
+    "runtimeProvenance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["runtimeManifestSha256", "engineSha256", "opencvVersion"],
+      "properties": {
+        "runtimeManifestSha256": { "$ref": "#/definitions/sha256" },
+        "engineSha256": { "$ref": "#/definitions/sha256" },
+        "opencvVersion": { "type": "string", "minLength": 1, "maxLength": 40 }
+      }
+    },
+    "authority": { "$ref": "#/definitions/authority" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "state": { "const": "PASS_MEASUREMENT" } } },
+      "then": { "properties": { "eligibleForDownstream": { "const": true }, "holds": { "maxItems": 0 } } },
+      "else": { "properties": { "eligibleForDownstream": { "const": false }, "holds": { "minItems": 1 } } }
+    }
+  ],
+  "definitions": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{2,119}$" },
+    "jbodPath": { "type": "string", "pattern": "^[Dd]:[\\\\/]", "maxLength": 200 },
+    "authority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reviewOnly", "trainingEligible", "xmlEligible", "productionEligible", "mayClearHolds"],
+      "properties": {
+        "reviewOnly": { "const": true }, "trainingEligible": { "const": false },
+        "xmlEligible": { "const": false }, "productionEligible": { "const": false },
+        "mayClearHolds": { "const": false }
+      }
+    }
+  }
+}

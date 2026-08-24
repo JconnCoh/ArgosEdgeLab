@@ -1,0 +1,21 @@
+{
+  "schema": "argos_signed_premise_failure_classification_v1",
+  "createdUtc": "2026-08-24T18:35:34.4290816Z",
+  "state": "FAIL_SIGNED_OBS1_EXPECTED_INVENTORY_OUTPUT_ABSENT",
+  "incidentId": "OCV00_OLS2_BOUNDED_SUBTREE_INVENTORY_INCOMPLETE_20260824",
+  "requestId": "REQ_O2OBS1",
+  "responseToken": "R_0F2CEA68C4B5_20260824175805433_166656e6.ready",
+  "responseState": "FAILED",
+  "signedResponseVerified": true,
+  "failureDetail": "DATA_PULL source not found: OCV00_OLS2_LOT_INVENTORY.json",
+  "terminalGatePath": "work/OPENCV_OLS2/OBS1_SIGNED_FAILURE_GATE.json",
+  "terminalGateSha256": "2697F12E486C848087030A11678FFE84FECDBD602B8B6A04439365DF3C99D9A3",
+  "responseZipSha256": "596C7E21E341F4E6CC5233A20A54190D93C3F97F06CE63C4D25C78AE82EAE507",
+  "premiseDisproved": "The rejected OLS2 inventory would still exist at its original stable output path after the entrypoint failure.",
+  "lotAbsenceProved": false,
+  "sourceImageAbsenceProved": false,
+  "imageBytesRead": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-24T22:33:00Z",
+  "incidentId": "OCV02_SCRIBE_SLOT16_DEVELOPMENT_O2D1_R2_20260824",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 3,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {"path":"work/OPENCV_SCRIBE_O2D1/O2D1_ENTRYPOINT_TEST_R1_WITHDRAWAL.json","sha256":"F98D51EEF497D93633D1DB3C2410E8B8200E8403F23FD0D2BEFFDD685647E585","state":"WITHDRAWN"},
+      {"path":"work/OPENCV_SCRIBE_O2D1/O2D1_R2_CLONE_REMEDIATION.json","sha256":"8FC5DA587DA41027A3AD4BFA4C311C7CD160F6E39C0D0FA842F3A1AEB6CF3DA2","state":"FROZEN_FAILED_PREFLIGHT"},
+      {"path":"work/OPENCV_SCRIBE_O2D1/O2D1_LIVE_MUTATION_INTENT_R1_WITHDRAWAL.json","sha256":"4F8363D76A270E2CE9C3A26A02730CC2771C6301A86BB7B9A463C70ED33A0343","state":"WITHDRAWN"}
+    ],
+    "postFailureObservation": {"path":"work/OPENCV_SCRIBE_O2D1/O2D1_ENTRYPOINT_TEST_GATE_R2.json","sha256":"BBEAC7C099F42AF4AF4232360653112E232CF318D1EB384925DA2DCD3DED5C6A"},
+    "workflowReviewClearance": {"path":"","sha256":""}
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": true,
+    "taskActions": [],
+    "processActions": ["START_BOUNDED_PORTABLE_OPENCV_SCRIBE_DEVELOPMENT_SLOT16"],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    "installedConfigEvidence": {"path":"work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json","sha256":"465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"},
+    "capabilityEvidence": {"path":"work/FIDUCIAL_OPENCV_JBOD_INSTALL_FOI1/FOI1_TERMINAL_RESPONSE_GATE.json","sha256":"E54585857204BDC2FE9A4632BAF3308987F195F91FFE00B9E98A0D78E56B169C"},
+    "qualifiedEndpointGate": {"path":"work/OPENCV_OLS4/OLS4_COMPLETE_ROUTE_GATE.json","sha256":"A0BECC1A59665E6BF936C0E76B56910DD3DBF3AFC9E9674EC825368F3069C7EE"},
+    "qualifiedAdminGate": {"path":"","sha256":""}
+  },
+  "observation": {
+    "exactSources": [
+      "D:/KLARFExport/PatternedFront/Lot_62619-433/62619-433_20260824005735/Slot16/BrightfieldFrontsideWafer/resizedImage/62619-433_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "D:/KLARFExport/PatternedFront/Lot_62619-433/62619-433_20260824005735/Slot16/DarkfieldFrontsideWafer/resizedImage/62619-433_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp"
+    ],
+    "requestedCapabilities": ["OPENCV_SCRIBE_BOUNDED_WHOLE_IMAGE_SEARCH_AND_REVIEW_ONLY_SEMI_M12_CANDIDATES"],
+    "requestedFields": ["sourceProvenance", "localization", "imageFirstString", "checksumState", "candidates", "holds", "referenceCoverage"],
+    "decisionOptions": ["DEVELOPMENT_EVIDENCE_RETURNED", "EXPLICIT_SCRIBE_HOLD", "FAIL_CLOSED"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "RUN_ONE_FROZEN_DEVELOPMENT_SLOT",
+    "supportingObservation": {"path":"work/OPENCV_OLS6/OLS6_EXACT_TWENTY_SOURCE_HASHES.json","sha256":"E54A15301A2B4FE914E6315DDFB9628E1D1364B0553D2155E9D5387A88E7FF3B"},
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "remedyDescription": "Install one exact-hash review-only endpoint helper, create fresh D-only work/output roots, and run the frozen OpenCV scribe provider on development Slot16 without activating it or changing any processor, source, wafer, authority, or hold state.",
+    "contractPath": "work/OPENCV_SCRIBE_O2D1/MAINTENANCE_DEFINITION.json",
+    "contractSha256": "AB3B4759090F5CAC9DBC2FE1696CF1D2A5B17AB0B1163D1899F0A0C76492101F"
+  },
+  "authorizationBoundary": {
+    "localDesignAndWindowsPowerShell51ProofAuthorized": true,
+    "packageBuildAuthorized": true,
+    "signatureAuthorized": true,
+    "livePublicationAuthorized": true,
+    "liveEndpointRequestsMaximum": 1,
+    "publishNextOnlyAfterPriorSignedTerminalSuccess": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

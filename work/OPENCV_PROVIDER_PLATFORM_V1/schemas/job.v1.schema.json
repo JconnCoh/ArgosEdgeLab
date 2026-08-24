@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "argos://schemas/opencv/job/v1",
+  "title": "Argos OpenCV job v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "contractRevision", "jobId", "createdUtc", "family", "operation", "identity", "providerBinding", "inputs", "resourceBindings", "provenanceBindings", "outputManifestPath", "authority"],
+  "properties": {
+    "schema": { "const": "argos_opencv_job_v1" },
+    "contractRevision": { "$ref": "#/definitions/id" },
+    "jobId": { "$ref": "#/definitions/id" },
+    "createdUtc": { "type": "string", "format": "date-time" },
+    "family": { "$ref": "#/definitions/family" },
+    "operation": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]{2,79}$" },
+    "identity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["lotId", "acquisitionId", "slotId"],
+      "properties": {
+        "lotId": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "acquisitionId": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "slotId": { "type": "string", "pattern": "^Slot[0-9]{2}$" }
+      }
+    },
+    "providerBinding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["providerConfigRevision", "providerConfigSha256", "providerId", "providerContractRevision"],
+      "properties": {
+        "providerConfigRevision": { "$ref": "#/definitions/id" },
+        "providerConfigSha256": { "$ref": "#/definitions/sha256" },
+        "providerId": { "$ref": "#/definitions/id" },
+        "providerContractRevision": { "$ref": "#/definitions/id" }
+      }
+    },
+    "inputs": {
+      "type": "array", "minItems": 1, "maxItems": 64,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["sourceId", "channel", "path", "sha256", "bytes", "coordinateFrameId"],
+        "properties": {
+          "sourceId": { "$ref": "#/definitions/id" },
+          "channel": { "enum": ["BF", "DF", "RGB", "GRAY", "DEPTH", "OTHER"] },
+          "path": { "$ref": "#/definitions/jbodPath" },
+          "sha256": { "$ref": "#/definitions/sha256" },
+          "bytes": { "type": "integer", "minimum": 1 },
+          "coordinateFrameId": { "$ref": "#/definitions/id" }
+        }
+      }
+    },
+    "resourceBindings": {
+      "type": "object", "additionalProperties": false,
+      "required": ["workRoot", "cacheRoot", "outputRoot", "providerConfigSha256"],
+      "properties": {
+        "workRoot": { "$ref": "#/definitions/jbodPath" },
+        "cacheRoot": { "$ref": "#/definitions/jbodPath" },
+        "outputRoot": { "$ref": "#/definitions/jbodPath" },
+        "providerConfigSha256": { "$ref": "#/definitions/sha256" }
+      }
+    },
+    "provenanceBindings": {
+      "type": "array", "minItems": 1, "maxItems": 64,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["role", "revision", "sha256"],
+        "properties": {
+          "role": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]{2,79}$" },
+          "revision": { "$ref": "#/definitions/id" },
+          "sha256": { "$ref": "#/definitions/sha256" }
+        }
+      }
+    },
+    "outputManifestPath": { "$ref": "#/definitions/jbodPath" },
+    "authority": { "$ref": "#/definitions/authority" }
+  },
+  "definitions": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{2,119}$" },
+    "jbodPath": { "type": "string", "pattern": "^[Dd]:[\\\\/]", "maxLength": 200 },
+    "family": { "enum": ["SCRIBE", "WAFER_POSE", "FIDUCIAL", "REFERENCE_COMPOSITE", "REGISTRATION", "BARE", "BACKSIDE", "BOWCOMP", "FRONTSIDE_UNPATTERNED", "FRONTSIDE_PATTERNED", "REVIEW_RASTER"] },
+    "authority": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reviewOnly", "trainingEligible", "xmlEligible", "productionEligible", "mayClearHolds"],
+      "properties": {
+        "reviewOnly": { "const": true }, "trainingEligible": { "const": false },
+        "xmlEligible": { "const": false }, "productionEligible": { "const": false },
+        "mayClearHolds": { "const": false }
+      }
+    }
+  }
+}
