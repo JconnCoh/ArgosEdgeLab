@@ -1,8 +1,34 @@
-# Active ArgosEdgeLab state - OCV-02 O2D4 Slot16 response pending - 2026-08-24
+# Active ArgosEdgeLab state - OCV-02 O2D4 response absence observed - 2026-08-24
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-02 O2D4 exact response absence / collection-root hold — 2026-08-24
+
+At `2026-08-24T23:35:23.2234404Z`, the exact engineering response share was
+reachable but contained zero response ZIPs newer than the `REQ_O2D4`
+publication boundary. The exact 14,825,404-byte request remains in the gateway
+processed archive with SHA-256
+`D2411AE50ED33AEE4B6EC8DF1D8B771E228C082C21338B6A4373289EB744C994`.
+This proves gateway consumption only; no signed JBOD terminal state exists.
+
+The frozen route's planned laptop extraction root `C:\A6R` is occupied by six
+older OLS6 artifacts and is not reusable. No extraction was attempted. Before
+collecting a later exact response, bind its ZIP hash to a supplemental route
+gate using a fresh short physical root.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV02_O2D4_RESPONSE_ABSENCE_OBSERVATION_CHECKPOINT_20260824.md`,
+SHA-256 `7885DBF26DBE6C473B89566E84E81341794D09125FBE0D4E0B80FED0CCAA2157`.
+The machine observation is
+`work/OPENCV_SCRIBE_O2D4/O2D4_RESPONSE_ABSENCE_OBSERVATION_20260824T233523Z.json`,
+SHA-256 `EAF8BE723AA296A7E1F102C8B0E446963D6B1FB3AF5C3C861FAC3A09603DC1B5`.
+
+Do not retry or publish a successor. Slot16 is not frozen, Slot17 must not
+start, and Slots22-25 remain unseen. The healthy processor, disabled live
+provider, `SCRIBE_REFERENCE_COVERAGE_HOLD`, every existing hold, and all
+review-only boundaries remain unchanged.
 
 ## OCV-02 O2D4 Slot16 request published / response pending — 2026-08-24
 

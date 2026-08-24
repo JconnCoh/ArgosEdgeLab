@@ -4,6 +4,23 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-02 O2D4 signed-response absence — 2026-08-24
+
+- `REQ_O2D4` remains the only active OpenCV migration request. Its exact
+  processed gateway archive hash matches the frozen request, but the reachable
+  engineering response share contained zero post-publication response ZIPs at
+  `2026-08-24T23:35:23.2234404Z`. Gateway consumption is not endpoint evidence.
+- The current checkpoint is
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV02_O2D4_RESPONSE_ABSENCE_OBSERVATION_CHECKPOINT_20260824.md`,
+  SHA-256
+  `7885DBF26DBE6C473B89566E84E81341794D09125FBE0D4E0B80FED0CCAA2157`.
+- The frozen response-extraction root `C:\A6R` is occupied by older OLS6
+  evidence and is non-reusable. A later exact response requires a supplemental
+  route gate bound to its hash and a fresh short physical root.
+- No retry or successor is authorized. Slot16 is not frozen, Slot17 is
+  blocked, Slots22-25 remain unseen, the live provider stays disabled, and all
+  holds remain fixed.
+
 ## OpenCV all-image-processing migration — 2026-08-22
 
 - `work/ARGOS_OPENCV_ALL_IMAGE_PROCESSING_MIGRATION.md` and its JSON companion
