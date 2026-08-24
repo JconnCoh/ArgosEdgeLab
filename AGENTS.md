@@ -457,6 +457,34 @@ accept the intended predecessor.
 
 ## Task-history payload safety
 
+### Mandatory automatic Codex task rollover
+
+Apply `work/ARGOS_CODEX_TASK_ROLLOVER.md` and its machine-readable companion
+for every Argos task. The operator has granted standing authority to create one
+fresh Codex task when the project hook reports
+`ARGOS_AUTOMATIC_ROLLOVER_REQUIRED`. Warn at 8,000 cumulative changed lines and
+roll over at 10,000 cumulative changed lines or 150 changed files. The
+task-start commit is the baseline, so commits made inside the task do not reset
+the count. The existing 128/256/384/512 MiB session gates and abnormal-growth
+stop remain independently mandatory.
+
+At rollover, finish only the current atomic operation. Do not begin a new
+external mutation merely to reach a cleaner handoff. Write or confirm the exact
+file-backed checkpoint, preserve every hold and pending signed request, run
+project continuity and metadata-only session safety, commit and push authorized
+work, fetch `origin`, and require a clean worktree with matching local/remote
+`codex/fiducial-opencv-d-drive` tips. Then create one fresh Codex task in this
+exact Desktop project using only the checkpoint path/hash, continuity path,
+branch, authority/holds, and next action. Never fork or attach the prior
+transcript. Record the new task ID with the hook's `--complete-handoff` action
+before ending the old task. If the task-creation capability is unavailable,
+stop after the safe checkpoint and report that exact capability gap.
+
+The project-local `.codex/hooks.json` is the enforcement trigger. Review and
+trust its exact hash when Codex requests the one-time hook approval. Do not
+replace it with a scheduled automation, cron task, or active-task heartbeat;
+those mechanisms either create task-list spam or grow the task being guarded.
+
 The former Codex task `019f95b4-36be-72c0-b0bc-34ae4c3dbf97` is
 quarantined because embedded image/base64 payloads expanded its JSONL history
 to approximately 20.6 GiB. Never open, read, fork, restore, summarize, or

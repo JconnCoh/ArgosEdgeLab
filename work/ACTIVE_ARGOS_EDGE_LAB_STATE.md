@@ -6468,3 +6468,26 @@ No installed config or processor path changed and no provider was activated.
 The healthy processor and all holds remain untouched. Active work is OCV-02
 scribe-provider development on frozen development Slots16-21; Slots22-25 stay
 unseen until the development contract is frozen.
+
+## 2026-08-24 automatic task rollover installed; O2D4 unchanged
+
+The operator-approved automatic Codex task rollover is installed as a
+trusted-project hook. It warns at 8,000 cumulative changed lines and requires a
+fresh task at 10,000 changed lines or 150 changed files, while preserving the
+existing session-size gates. It checks only at task start and turn stop; no
+cron, heartbeat, scheduled automation, or per-edit delay was added. Five local
+tests passed. Gate SHA-256 is
+`BF3405593C38D91A4C20655A43DD9111AB4C05115B259DADC3B27946986F70B2`.
+One-time Codex trust review of the exact hook hash remains required in the
+fresh task.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_TASK_ROLLOVER_V1_O2D4_PENDING_CHECKPOINT_20260824.md`,
+SHA-256
+`33A372A9968504C2F0C6097611C788ED04B5FF217D9A10C72FC62E02C10C812E`.
+
+The automatic-rollover work did not contact JBOD or change `REQ_O2D4`, the
+healthy processor, provider configuration, source images, wafers, queues,
+ledgers, or holds. Active work remains exact collection and verification of
+the one matching signed terminal response for `REQ_O2D4`; no retry or
+successor is authorized while it remains unresolved.

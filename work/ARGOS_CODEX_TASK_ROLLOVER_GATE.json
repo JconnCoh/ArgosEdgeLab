@@ -1,0 +1,72 @@
+{
+  "schema": "argos_codex_task_rollover_gate_v1",
+  "revision": "ARGOS_CODEX_TASK_ROLLOVER_V1_20260824",
+  "checkedLocal": "2026-08-24T18:26:46-05:00",
+  "state": "PASS_LOCAL_IMPLEMENTATION_HOOK_TRUST_PENDING",
+  "policy": {
+    "path": "work/ARGOS_CODEX_TASK_ROLLOVER.json",
+    "sha256": "7E97A0987B092476DC4F4ECB89E47C015B8338652FD112814BF17D2347F10D37"
+  },
+  "policyMarkdown": {
+    "path": "work/ARGOS_CODEX_TASK_ROLLOVER.md",
+    "sha256": "F80ACD51E6100962D80ABD7594B825C7F4CADF76465CCDAC06F9B9E1F7E2285C"
+  },
+  "projectConfig": {
+    "path": ".codex/config.toml",
+    "sha256": "D37497C3278121598A663564AB38B53F658969717F78DECB661DDD11C66551EA",
+    "hooksFeatureEnabled": true
+  },
+  "hookConfig": {
+    "path": ".codex/hooks.json",
+    "sha256": "EC67B9FEF7D8A5CF3B3D1F7A11DB0F3A72443005780C940913A5E7C22F47E504",
+    "jsonParsePassed": true,
+    "events": [
+      "SessionStart",
+      "Stop"
+    ],
+    "oneTimeCodexTrustReviewRequired": true,
+    "oneTimeCodexTrustReviewCompleted": false
+  },
+  "hookScript": {
+    "path": ".codex/hooks/argos_task_rollover.py",
+    "sha256": "517922B30A0995FD90597BC31030253F3EE4900A45D2FFA9BA6F64D33896C42D",
+    "pythonCompilePassed": true,
+    "sessionContentRead": false,
+    "imageBytesRead": false,
+    "stateRoot": ".git/codex/argos-task-rollover"
+  },
+  "tests": {
+    "path": ".codex/hooks/test_argos_task_rollover.py",
+    "sha256": "2D197FB28C1EED64F515E9A6D077C94665E966895E56C3425C1B89C2BB6D28AB",
+    "passed": 5,
+    "failed": 0,
+    "covered": [
+      "tracked line count survives commits inside a task",
+      "unknown untracked binary counts as a file without content read",
+      "configured line threshold requests rollover",
+      "Stop hook creates an automatic continuation",
+      "clean matching local and origin tips permit handoff recording"
+    ]
+  },
+  "liveProjectFixture": {
+    "sessionStartOutputValid": true,
+    "stopOutputValid": true,
+    "belowThresholdStopState": "continue",
+    "measuredStopHookMilliseconds": 2319
+  },
+  "skill": {
+    "path": "C:/Users/joshua.conn/.codex/skills/argos-opencv-migration/SKILL.md",
+    "sha256": "64A08EAF099D930E535C5299058B0B2CF194682A09645D306EA8E2CE4DB39975",
+    "quickValidatePassed": true,
+    "validationDependency": "isolated temporary PyYAML only"
+  },
+  "automationBoundaries": {
+    "scheduledAutomationCreated": false,
+    "heartbeatCreated": false,
+    "cronCreated": false,
+    "jbodContacted": false,
+    "processorChanged": false,
+    "imageBytesRead": false,
+    "holdChanged": false
+  }
+}

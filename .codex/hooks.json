@@ -1,0 +1,34 @@
+{
+  "description": "Argos task-size rollover guard. It never reads image bytes or session contents.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/argos_task_rollover.py\"",
+            "commandWindows": "py -3 \"C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\.codex\\hooks\\argos_task_rollover.py\"",
+            "timeout": 15,
+            "statusMessage": "Initializing Argos task rollover guard",
+            "additionalContextLimit": 1200
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/argos_task_rollover.py\"",
+            "commandWindows": "py -3 \"C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\.codex\\hooks\\argos_task_rollover.py\"",
+            "timeout": 20,
+            "statusMessage": "Enforcing Argos safe task rollover",
+            "additionalContextLimit": 1800
+          }
+        ]
+      }
+    ]
+  }
+}

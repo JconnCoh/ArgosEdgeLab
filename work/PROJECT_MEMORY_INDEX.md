@@ -51,6 +51,9 @@ file-backed and is never embedded here.
   `utilities/Confirm-ArgosCodexSessionSafety.ps1`
 - Deterministic Codex session-health probe:
   `utilities/Confirm-ArgosCodexSessionHealth.ps1`
+- Automatic task-rollover contract and trusted-project hook:
+  `work/ARGOS_CODEX_TASK_ROLLOVER.md`,
+  `work/ARGOS_CODEX_TASK_ROLLOVER.json`, and `.codex/hooks.json`
 - Current qualified local development-toolchain checkpoint:
   `work/ARGOS_LOCAL_DEVELOPMENT_TOOLCHAIN_VS_REPAIR_CHECKPOINT_20260819.md`
 - Parent local development-toolchain inventory and interrupted-install record:

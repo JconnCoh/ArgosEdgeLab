@@ -1,0 +1,46 @@
+{
+  "schema": "argos_codex_task_rollover_v1",
+  "revision": "ARGOS_CODEX_TASK_ROLLOVER_V1_20260824",
+  "disposition": "APPROVED_BASELINE",
+  "authority": "OPERATOR_APPROVED_AUTOMATIC_SAFE_CHECKPOINT_AND_FRESH_TASK_HANDOFF",
+  "projectRoot": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab",
+  "requiredBranch": "codex/fiducial-opencv-d-drive",
+  "changeThresholds": {
+    "warningChangedLines": 8000,
+    "rolloverChangedLines": 10000,
+    "rolloverChangedFiles": 150,
+    "lineDefinition": "additions plus deletions in tracked text diffs from the task-start commit, plus bounded untracked source-text lines",
+    "fileDefinition": "unique tracked diff paths plus all untracked paths"
+  },
+  "sessionThresholds": {
+    "checkpointBytes": 134217728,
+    "firstProbeBytes": 268435456,
+    "secondProbeAndRolloverBytes": 402653184,
+    "hardStopBytes": 536870912,
+    "abnormalStopToStopGrowthBytes": 16777216
+  },
+  "safeBoundaryRules": {
+    "finishCurrentAtomicOperation": true,
+    "neverStartNewExternalMutationToReachRollover": true,
+    "pendingSignedRequestMayBeCarriedForward": true,
+    "currentCheckpointMustDescribeActualState": true,
+    "continuityAndSessionSafetyMustPass": true,
+    "workingTreeMustBeClean": true,
+    "localAndOriginBranchTipsMustMatch": true,
+    "freshTaskMustUseFilesystemCheckpointNotForkedTranscript": true
+  },
+  "hook": {
+    "configPath": ".codex/hooks.json",
+    "scriptPath": ".codex/hooks/argos_task_rollover.py",
+    "stateRoot": ".git/codex/argos-task-rollover",
+    "events": [
+      "SessionStart",
+      "Stop"
+    ],
+    "readsSessionContent": false,
+    "readsImageBytes": false,
+    "createsScheduledTasks": false,
+    "createsHeartbeat": false,
+    "createsCronAutomation": false
+  }
+}
