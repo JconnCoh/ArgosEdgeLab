@@ -1,4 +1,4 @@
-# Active ArgosEdgeLab state - JEO1R validated / O2D5 direct Slot16 successor design - 2026-08-25
+# Active ArgosEdgeLab state - O2D5 direct Slot16 package frozen / publication pending - 2026-08-25
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
@@ -6790,3 +6790,38 @@ D-local result, and a host-authentic signed outbound response through the
 already-running response sender. After one exact pass, freeze Slot16 and
 continue directly to frozen development Slot17. Slots22-25 stay unseen and
 `SCRIBE_REFERENCE_COVERAGE_HOLD` plus every existing hold remain.
+
+## 2026-08-25 O2D5 direct Slot16 package frozen; publication pending
+
+Fresh O2D5 revision `O2D5_20260825T190855Z_54B4C08C` is frozen outside the
+blocked portal inbound queue. `ARGOS_O2D5.zip` is 14,830,285 bytes with
+SHA-256
+`31C03DFE334551999169152A64050E3BFD05BD35730B0840AB12132797ACE335`;
+final-gate SHA-256 is
+`B83B35C76F11B6053CF852E6F0CC397040CF4EFFD08DA01FFB1B22D4AA78C763`.
+
+Windows PowerShell 5.1 package-shaped tests ran the exact OpenCV engine to its
+expected `SCRIBE_REFERENCE_COVERAGE_HOLD`, produced and verified a compatible
+signed response, and proved an injected outbound failure retains the durable
+local result. The complete path gate has maximum effective length 185. The
+MUTATE recovery intent and R2 90-issue zero-recurrence preaction pass.
+
+O2D5 writes all heavy work/output/results to D, creates its exact local result
+before outbound delivery, and then uses the pinned LocalMachine signer plus the
+already-installed response-sender outbox. It starts no installed task/process,
+restarts nothing, installs no helper, and does not activate the provider. The
+failed pre-freeze draft was removed from C; current C free space remained above
+68 GiB after the passing build.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D5_DIRECT_SLOT16_FROZEN_READY_CHECKPOINT_20260825.md`,
+SHA-256
+`5580A45FBB1F8847C7F994B5AC10F4195BB894B49E23055D42E08AE65D3FB7C1`.
+
+Exact next action: commit and push this frozen package, require clean matching
+local/origin tips, then publish only the exact ZIP and path gate create-new to
+`InspectionRevs`. One JBOD launch follows. If the signed outbound response does
+not return, retrieve only
+`D:\A2\x\O2D5R_20260825T190855Z_54B4C08C.zip`; never rerun O2D5. Slot16
+remains unfrozen, Slot17 blocked, Slots22-25 unseen, and every authority/hold
+remains fixed.

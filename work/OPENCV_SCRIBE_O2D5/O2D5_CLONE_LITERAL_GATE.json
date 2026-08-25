@@ -1,0 +1,59 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-25T19:25:58.4379344Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D5\\O2D5_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "F1FE5A556FBFBECBCD0737FDE1385878D9FBED8C5190DB0FACE82628E3145944",
+    "pairCount":  2,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D4/Invoke-O2D4ScribeEndpoint.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D5/Invoke-O2D5Direct.ps1",
+                      "sourceSha256":  "7FB8B54B18D4D446F4C7AC2FFCB3898721222B93FE4B17E69B681B6E6F85C8C2",
+                      "generatedSha256":  "BE70D3B41EB8983F7D193BF5E33858A69FEB890A27DA6B0A7A39CDB662C03F93",
+                      "sourceRoots":  [
+                                          "D:",
+                                          "D:\\A2",
+                                          "D:\\AFCV1",
+                                          "D:\\KLARFExport",
+                                          "X:"
+                                      ],
+                      "generatedRoots":  [
+                                             "D:",
+                                             "D:\\A2",
+                                             "D:\\AFCV1",
+                                             "D:\\KLARFExport",
+                                             "X:"
+                                         ],
+                      "ruleCount":  5
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D4/Test-O2D4Endpoint.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D5/Test-O2D5Direct.ps1",
+                      "sourceSha256":  "82B3B55948B8AC36B4B630E9E1A1565ABFEF1BAAC39242B5AE77CB7225428252",
+                      "generatedSha256":  "7C3B5E78974F86916E89E015009AF3E370A70A3B949E527892F20180B8EB682C",
+                      "sourceRoots":  [
+                                          "C:\\O2D4F",
+                                          "C:\\O2D4I",
+                                          "C:\\O2D4P",
+                                          "C:\\O2D4T",
+                                          "Q:",
+                                          "X:"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\O2D5T_54B4C08C",
+                                             "D:\\LOCKED_HISTORICAL_REHEARSAL",
+                                             "X:\\BF.png",
+                                             "X:\\DF.png"
+                                         ],
+                      "ruleCount":  7
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}
