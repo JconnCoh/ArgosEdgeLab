@@ -1,0 +1,52 @@
+{
+    "schema":  "argos_o2a2_final_package_gate_v1",
+    "createdUtc":  "2026-08-25T00:50:11.0876950Z",
+    "state":  "PASS_O2A2_FINAL_PACKAGE_GATE",
+    "lifecycle":  "FROZEN",
+    "revision":  "O2A2",
+    "zipLeaf":  "ARGOS_O2A2.zip",
+    "zipSha256":  "A60926D0EC26BB44B11B47AB70023EC72C08E4F19CE5DA97431CA5212C535C47",
+    "zipBytes":  8816,
+    "archiveEntryCount":  5,
+    "archiveEntries":  [
+                           {
+                               "path":  "AUDIT_O2A2.ps1",
+                               "sha256":  "9CD452765661B59DAC18A5EB0C6848936068A24CAF003E451460BE0C787FB4DD",
+                               "bytes":  22474
+                           },
+                           {
+                               "path":  "RUN_O2A2.cmd",
+                               "sha256":  "D53C65BA49272EE5FC3E50EEEAE8168CF2811DA556EFBD9C7A2CD3EC7179AD67",
+                               "bytes":  566
+                           },
+                           {
+                               "path":  "INVOCATION.json",
+                               "sha256":  "971ED59F4D3CBF9A4DF7771188DC8C9EC62965F7A1B3B463CAE3FA13ECCFDCA4",
+                               "bytes":  3894
+                           },
+                           {
+                               "path":  "README_FIRST.txt",
+                               "sha256":  "BBA41C1186083DAD4B1155E52DEB7518BBA2EEA358371B83DDC20AC41E0CC986",
+                               "bytes":  967
+                           },
+                           {
+                               "path":  "PACKAGE_MANIFEST.json",
+                               "sha256":  "E21FE57902B329E0EB3EE790D53DCBFE7E9999E6143143E67D0EE004B2C4284A",
+                               "bytes":  1142
+                           }
+                       ],
+    "exactZipExtractionPassed":  true,
+    "extractedHarnessState":  "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "extractedWrapperState":  "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "extractedRehearsalPreflightState":  "PASS_O2A2_DIRECT_ADMIN_READ_ONLY_PREFLIGHT",
+    "extractedLaptopRefusalPassed":  true,
+    "liveOutputRootCreated":  false,
+    "shareReturnCreated":  false,
+    "jbodContacted":  false,
+    "targetMutationsPerformed":  false,
+    "imageBytesRead":  false,
+    "publicationAuthorized":  true,
+    "oneObservationExecutionAuthorized":  true,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

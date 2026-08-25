@@ -1,0 +1,38 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-08-25T00:25:10Z",
+  "state": "PASS_ARGOS_ENDPOINT_STATIC_CAPABILITY_INVENTORY",
+  "auditor": {
+    "path": "work/OPENCV_SCRIBE_O2A1/pkg/AUDIT_O2A1.ps1",
+    "sha256": "1D7191FBDB985C759340094DFDDBD7B827A566457C236789ED05A36E8FA0B6FC",
+    "portable": true,
+    "installed": false
+  },
+  "routes": [
+    {
+      "type": "DIRECT_ADMIN_READ_ONLY",
+      "capabilities": [
+        "exactBoundedPathMetadata",
+        "safeTextAndSignatureHash",
+        "safeEvidenceReturnCopy",
+        "exactTaskState",
+        "exactTaskDefinitionHash",
+        "boundedPortalProcessInventory",
+        "dosDeviceAliasInventory",
+        "installedRouteHashInventory"
+      ]
+    }
+  ],
+  "sourceInspectionOnly": true,
+  "endpointExecuted": false,
+  "targetMutationCommandsPresent": false,
+  "taskActionCommandsPresent": false,
+  "processActionCommandsPresent": false,
+  "imageExtensionsContentAllowlisted": false,
+  "safeContentExtensions": [".json", ".txt", ".log", ".sig", ".ps1", ".cmd"],
+  "maximumSafeFileBytes": 4194304,
+  "maximumCopyFiles": 128,
+  "maximumCopyBytes": 33554432,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

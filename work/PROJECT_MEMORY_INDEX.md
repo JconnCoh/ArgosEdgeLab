@@ -4,6 +4,24 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-02 O2A2 direct observation frozen / publication pending — 2026-08-25
+
+- Frozen package:
+  `work/OPENCV_SCRIBE_O2A2/final/ARGOS_O2A2.zip`, SHA-256
+  `A60926D0EC26BB44B11B47AB70023EC72C08E4F19CE5DA97431CA5212C535C47`.
+- Final package gate SHA-256:
+  `45C7D1AF71AF028BA017F4C9331CADE146F523C4793F41B8A76DDBA7DF811766`.
+  Exact extraction, file hashes, Windows PowerShell 5.1 rehearsal,
+  wrapper/harness guards, ZERO/ONE/MANY cases, and laptop refusal passed.
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV02_O2A2_DIRECT_OBSERVATION_FROZEN_READY_CHECKPOINT_20260825.md`,
+  SHA-256
+  `3779C269089379EDF1B79139912870F0AD8F37EE75885873F32D81EDB473C293`.
+- Next action: after committing/pushing and proving clean matching branch tips,
+  publish the exact ZIP for one operator JBOD run. Do not retry `REQ_O2D4` or
+  publish a portal successor. Slot16 remains unfrozen, Slot17 blocked, Slots
+  22-25 unseen, provider disabled, processor untouched, and holds preserved.
+
 ## OCV-02 O2D4 corrected contract failure / direct-observation gap — 2026-08-25
 
 - `REQ_O2D4` remains the only active OpenCV migration request, but its frozen

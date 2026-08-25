@@ -1,0 +1,42 @@
+{
+    "schema":  "argos_o2a2_test_gate_r3_v1",
+    "createdUtc":  "2026-08-25T00:39:43.5189300Z",
+    "state":  "PASS_O2A2_DIRECT_ADMIN_READ_ONLY_TEST_GATE",
+    "cases":  [
+                  {
+                      "id":  "ZERO",
+                      "state":  "PASS",
+                      "matchCount":  0,
+                      "copiedEvidenceCount":  0,
+                      "imageBytesRead":  false,
+                      "targetMutationsPerformed":  false
+                  },
+                  {
+                      "id":  "ONE",
+                      "state":  "PASS",
+                      "matchCount":  1,
+                      "copiedEvidenceCount":  4,
+                      "imageBytesRead":  false,
+                      "targetMutationsPerformed":  false
+                  },
+                  {
+                      "id":  "MANY",
+                      "state":  "PASS",
+                      "matchCount":  3,
+                      "copiedEvidenceCount":  10,
+                      "imageBytesRead":  false,
+                      "targetMutationsPerformed":  false
+                  }
+              ],
+    "requiredCaseIds":  [
+                            "ZERO",
+                            "ONE",
+                            "MANY"
+                        ],
+    "windowsPowerShell51Passed":  true,
+    "packageShapedExecutionPassed":  true,
+    "imageBytesRead":  false,
+    "targetMutationsPerformed":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

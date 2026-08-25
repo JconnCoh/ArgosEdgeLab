@@ -1,0 +1,100 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-25T00:32:56.1145202Z",
+  "incidentId": "OCV02_O2D4_TERMINAL_STATE_20260825",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_SCRIBE_O2A1/O2A1_TEST_FAILURE_WITHDRAWAL.json",
+        "sha256": "254A2F79C1AD503DFE17C0D00251541498224F2F14C86C28D775A9623A6F99F1",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"","sha256":""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_ADMIN_READ_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path":"","sha256":""},
+    "installedConfigEvidence": {"path":"","sha256":""},
+    "capabilityEvidence": {
+      "path": "work/OPENCV_SCRIBE_O2A2/O2A2_DIRECT_ADMIN_CAPABILITY_INVENTORY.json",
+      "sha256": "EA15F77A3DDA4A1004802BA9061F24A84B816A94946D0ADB9442F9B9C0A92808"
+    },
+    "qualifiedEndpointGate": {"path":"","sha256":""},
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_SCRIBE_O2A2/O2A2_DIRECT_ADMIN_READ_ONLY_AUTHORIZATION_GATE.json",
+      "sha256": "536E2B4809C5EE5423BF661BBC403311CCF3520E31E6D75B673A1CE2C8967416"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {"sourcePath":"C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/pending","sourceSchema":"bounded_directory_metadata","selector":"exact child REQ_O2D4.ready","uniquenessKey":"fullPath","maximumRows":64},
+      {"sourcePath":"C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/processed","sourceSchema":"bounded_directory_metadata","selector":"completed failed or replayed child prefix REQ_O2D4","uniquenessKey":"fullPath","maximumRows":192},
+      {"sourcePath":"C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/state","sourceSchema":"bounded_portal_state_metadata_and_safe_text","selector":"exact ledger REQ_O2D4 and work prefix J_A2A87054A416_","uniquenessKey":"fullPath","maximumRows":513},
+      {"sourcePath":"C:/ProgramData/ArgosProjectPortalRO/to_argos","sourceSchema":"bounded_response_metadata_and_safe_text_signature","selector":"pending or sent prefix R_A2A87054A416_","uniquenessKey":"fullPath","maximumRows":256},
+      {"sourcePath":"D:/A2/w/ocv","sourceSchema":"bounded_directory_metadata_and_safe_text","selector":"child prefix O2D4","uniquenessKey":"fullPath","maximumRows":512},
+      {"sourcePath":"D:/A2/o/ocv","sourceSchema":"bounded_directory_metadata_and_safe_text","selector":"child prefix O2D4","uniquenessKey":"fullPath","maximumRows":512},
+      {"sourcePath":"Windows scheduled tasks","sourceSchema":"windows_scheduled_task_state","selector":"exact JBOD endpoint response sender and request receiver task names","uniquenessKey":"name","maximumRows":3},
+      {"sourcePath":"Win32_Process","sourceSchema":"windows_cim_process","selector":"command line contains exact portal root","uniquenessKey":"processId","maximumRows":64},
+      {"sourcePath":"subst.exe zero-argument inventory","sourceSchema":"windows_dos_device_alias_inventory","selector":"all current mappings with exact X row inspected","uniquenessKey":"mappingRow","maximumRows":26}
+    ],
+    "requestedCapabilities": [
+      "exactBoundedPathMetadata",
+      "safeTextAndSignatureHash",
+      "safeEvidenceReturnCopy",
+      "exactTaskState",
+      "exactTaskDefinitionHash",
+      "boundedPortalProcessInventory",
+      "dosDeviceAliasInventory",
+      "installedRouteHashInventory"
+    ],
+    "requestedFields": [
+      "o2d4.pendingPaths",
+      "o2d4.processedPaths",
+      "o2d4.ledger",
+      "o2d4.attemptWork",
+      "o2d4.responsePending",
+      "o2d4.responseSent",
+      "o2d4.dWork",
+      "o2d4.dOutput",
+      "o2d4.xAlias",
+      "portal.taskStates",
+      "portal.taskDefinitionHashes",
+      "portal.processes",
+      "portal.installedWorkerHash",
+      "portal.routeConfigHashes"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path":"","sha256":""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "argos_o2a2_prepublication_gate_v1",
+  "createdUtc": "2026-08-25T00:43:32.8592444Z",
+  "state": "PASS_O2A2_PREPUBLICATION_GATE",
+  "revision": "O2A2",
+  "packageManifest": {
+    "path": "work/OPENCV_SCRIBE_O2A2/pkg/PACKAGE_MANIFEST.json",
+    "sha256": "E21FE57902B329E0EB3EE790D53DCBFE7E9999E6143143E67D0EE004B2C4284A"
+  },
+  "entrypoint": {
+    "path": "work/OPENCV_SCRIBE_O2A2/pkg/AUDIT_O2A2.ps1",
+    "sha256": "9CD452765661B59DAC18A5EB0C6848936068A24CAF003E451460BE0C787FB4DD",
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "windowsPowerShell51ParserPassed": true
+  },
+  "wrapper": {
+    "path": "work/OPENCV_SCRIBE_O2A2/pkg/RUN_O2A2.cmd",
+    "sha256": "D53C65BA49272EE5FC3E50EEEAE8168CF2811DA556EFBD9C7A2CD3EC7179AD67",
+    "state": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "arbitraryArgumentForwarding": false,
+    "startProcessWrapperHop": false
+  },
+  "invocation": {
+    "path": "work/OPENCV_SCRIBE_O2A2/pkg/INVOCATION.json",
+    "sha256": "971ED59F4D3CBF9A4DF7771188DC8C9EC62965F7A1B3B463CAE3FA13ECCFDCA4",
+    "schema": "argos_o2a2_direct_admin_invocation_v1",
+    "requestId": "REQ_O2D4",
+    "responsePrefix": "R_A2A87054A416_"
+  },
+  "exactPackageTest": {
+    "path": "work/OPENCV_SCRIBE_O2A2/O2A2_TEST_GATE_R3.json",
+    "sha256": "EAFDE4D1634E7C5F3E0858217DA4168F63ED8F570A912DEF06D81C5423DDD377",
+    "state": "PASS_O2A2_DIRECT_ADMIN_READ_ONLY_TEST_GATE",
+    "caseIds": ["ZERO", "ONE", "MANY"],
+    "windowsPowerShell51Passed": true,
+    "imageBytesRead": false,
+    "targetMutationsPerformed": false
+  },
+  "pathBudget": {
+    "checkedUtc": "2026-08-25T00:43:00.9082862Z",
+    "state": "PASS_PATH_BUDGET",
+    "candidateCount": 39,
+    "reservedSuffixCharacters": 32,
+    "maximumPathLength": 142,
+    "maximumEffectiveLength": 174,
+    "maximumComponentLength": 43,
+    "warningEffectiveLength": 200,
+    "hardStopEffectiveLength": 230,
+    "rootsEvaluated": [
+      "work/OPENCV_SCRIBE_O2A2/pkg",
+      "work/OPENCV_SCRIBE_O2A2/final.partial",
+      "work/OPENCV_SCRIBE_O2A2/final",
+      "C:/O2A2P",
+      "C:/O2A2",
+      "C:/O2A2R",
+      "C:/ProgramData/ArgosProjectPortalRO",
+      "D:/A2/w/ocv",
+      "D:/A2/o/ocv",
+      "//shm-cifs/Department/DE-1302_FAB_BE_Engineering/60_Saw_VI_Sort/600_General/Joshua.conn/AVI_Images/Argos/Uploads/InspectionRevs"
+    ],
+    "longestLeaf": "//shm-cifs/Department/DE-1302_FAB_BE_Engineering/60_Saw_VI_Sort/600_General/Joshua.conn/AVI_Images/Argos/Uploads/InspectionRevs/ARGOS_O2A2.zip",
+    "allCandidatesPassed": true
+  },
+  "laptopRefusalControl": {
+    "checkedUtc": "2026-08-25T00:43:32.8592444Z",
+    "computerName": "TXSH-LUPW0JLTPR",
+    "expectedRefusalObserved": true,
+    "exitCode": 1,
+    "liveOutputRootCreated": false,
+    "localResultCreated": false,
+    "shareReturnCreated": false
+  },
+  "targetExecuted": false,
+  "jbodContacted": false,
+  "imageBytesRead": false,
+  "targetMutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

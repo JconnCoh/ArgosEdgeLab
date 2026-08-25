@@ -1,0 +1,55 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "O2A2_FROM_WITHDRAWN_O2A1_20260825",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_O2A1/Test-O2A1.ps1",
+      "generated": "work/OPENCV_SCRIBE_O2A2/Test-O2A2.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\O2A1","generatedRoot":"C:\\O2A2","disposition":"REPLACED","reason":"The failed live-output namespace is withdrawn."},
+        {"sourceRoot":"C:\\O2A1T","generatedRoot":"C:\\O2A2T","disposition":"REPLACED","reason":"The failed local rehearsal root is preserved and replaced."},
+        {"sourceRoot":"D:\\fixture","generatedRoot":"D:\\fixture","disposition":"UNCHANGED_ALLOWED","reason":"The literal appears only in the in-memory alias fixture row."},
+        {"sourceRoot":"X:","generatedRoot":"X:","disposition":"UNCHANGED_ALLOWED","reason":"The alias identity under observation remains X:."}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2A1/pkg/INVOCATION.json",
+      "generated": "work/OPENCV_SCRIBE_O2A2/pkg/INVOCATION.json",
+      "rootRules": [
+        {"sourceRoot":"C:\\O2A1","generatedRoot":"C:\\O2A2","disposition":"REPLACED","reason":"The live evidence-output namespace is fresh."},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED","reason":"The exact installed portal root remains the observed source."},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED","reason":"The exact JBOD work/output root remains the observed source."},
+        {"sourceRoot":"\\\\600_General\\Joshua.conn","generatedRoot":"\\\\600_General\\Joshua.conn","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged share segment."},
+        {"sourceRoot":"\\\\ArgosProjectPortalRO\\bin","generatedRoot":"\\\\ArgosProjectPortalRO\\bin","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged installed route segment."},
+        {"sourceRoot":"\\\\ArgosProjectPortalRO\\config","generatedRoot":"\\\\ArgosProjectPortalRO\\config","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged installed route segment."},
+        {"sourceRoot":"\\\\ArgosProjectPortalRO\\endpoint_jbod","generatedRoot":"\\\\ArgosProjectPortalRO\\endpoint_jbod","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged installed route segment."},
+        {"sourceRoot":"\\\\ArgosProjectPortalRO\\to_argos","generatedRoot":"\\\\ArgosProjectPortalRO\\to_argos","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged installed route segment."},
+        {"sourceRoot":"\\\\AVI_Images\\Argos","generatedRoot":"\\\\AVI_Images\\Argos","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged share segment."},
+        {"sourceRoot":"\\\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort","generatedRoot":"\\\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged share segment."},
+        {"sourceRoot":"\\\\o\\ocv","generatedRoot":"\\\\o\\ocv","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged D output segment."},
+        {"sourceRoot":"\\\\processed\\completed","generatedRoot":"\\\\processed\\completed","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged processed-state segment."},
+        {"sourceRoot":"\\\\processed\\failed","generatedRoot":"\\\\processed\\failed","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged processed-state segment."},
+        {"sourceRoot":"\\\\processed\\replayed","generatedRoot":"\\\\processed\\replayed","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged processed-state segment."},
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED","reason":"The authorized engineering-share UNC root remains unchanged."},
+        {"sourceRoot":"\\\\state\\ledger","generatedRoot":"\\\\state\\ledger","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged state segment."},
+        {"sourceRoot":"\\\\state\\maintenance","generatedRoot":"\\\\state\\maintenance","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged state segment."},
+        {"sourceRoot":"\\\\state\\work","generatedRoot":"\\\\state\\work","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged state segment."},
+        {"sourceRoot":"\\\\Uploads\\InspectionRevs","generatedRoot":"\\\\Uploads\\InspectionRevs","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged share segment."},
+        {"sourceRoot":"\\\\w\\ocv","generatedRoot":"\\\\w\\ocv","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes one unchanged D work segment."}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2A1/pkg/README_FIRST.txt",
+      "generated": "work/OPENCV_SCRIBE_O2A2/pkg/README_FIRST.txt",
+      "rootRules": [
+        {"sourceRoot":"C:\\O2A1","generatedRoot":"C:\\O2A2","disposition":"REPLACED","reason":"The failed evidence-output root is withdrawn."}
+      ]
+    }
+  ],
+  "rootlessPairs": [
+    {"source":"work/OPENCV_SCRIBE_O2A1/pkg/AUDIT_O2A1.ps1","generated":"work/OPENCV_SCRIBE_O2A2/pkg/AUDIT_O2A2.ps1","classification":"NO_LITERAL_ROOTS_DETECTED; all operational roots come from the bounded invocation manifest"},
+    {"source":"work/OPENCV_SCRIBE_O2A1/pkg/RUN_O2A1.cmd","generated":"work/OPENCV_SCRIBE_O2A2/pkg/RUN_O2A2.cmd","classification":"NO_LITERAL_ROOTS_DETECTED; package-relative wrapper only"}
+  ],
+  "forwardSlashRootRemediation": [],
+  "unchangedByteCopies": []
+}

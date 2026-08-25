@@ -1,0 +1,31 @@
+{
+  "schema": "argos_direct_admin_read_only_authorization_gate_v1",
+  "createdUtc": "2026-08-25T00:21:10.6612427Z",
+  "state": "PASS_ARGOS_DIRECT_ADMIN_READ_ONLY_AUTHORIZATION",
+  "incidentId": "OCV02_O2D4_TERMINAL_STATE_20260825",
+  "authoritySource": "Operator explicitly instructed Codex to continue with the bounded direct-admin read-only observation and continue through the corrected successor request until inspection results or a concrete operator-input issue.",
+  "oneObservationExecutionAuthorized": true,
+  "readOnly": true,
+  "taskActionsAllowed": false,
+  "processActionsAllowed": false,
+  "installedChangesAllowed": false,
+  "queueMutationAllowed": false,
+  "ledgerMutationAllowed": false,
+  "sourceMutationAllowed": false,
+  "imageReadAllowed": false,
+  "waferActionAllowed": false,
+  "authorizedFields": [
+    "exact O2D4 endpoint pending and processed path metadata",
+    "exact O2D4 ledger and bounded worker-attempt text evidence",
+    "exact O2D4 response-outbox pending and sent evidence",
+    "exact O2D4 D-drive work and output metadata plus bounded JSON/text evidence",
+    "current X: DOS-device alias inventory",
+    "read-only endpoint and response-sender scheduled-task state",
+    "read-only portal process inventory",
+    "installed endpoint worker and route-config hashes"
+  ],
+  "evidenceOutputWritesOnly": true,
+  "resultReturnLeaf": "O2A1R.zip",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

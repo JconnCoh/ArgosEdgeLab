@@ -1,8 +1,31 @@
-# Active ArgosEdgeLab state - OCV-02 O2D4 corrected contract failure / direct-observation gap - 2026-08-25
+# Active ArgosEdgeLab state - OCV-02 O2A2 direct observation frozen / publication pending - 2026-08-25
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-02 O2A2 direct observation frozen / publication pending — 2026-08-25
+
+The operator-authorized bounded `DIRECT_ADMIN_READ_ONLY` package is frozen as
+`work/OPENCV_SCRIBE_O2A2/final/ARGOS_O2A2.zip`, 8,816 bytes, SHA-256
+`A60926D0EC26BB44B11B47AB70023EC72C08E4F19CE5DA97431CA5212C535C47`.
+Its final package gate SHA-256 is
+`45C7D1AF71AF028BA017F4C9331CADE146F523C4793F41B8A76DDBA7DF811766`.
+The exact extracted ZIP passed hash/count verification, Windows PowerShell 5.1
+rehearsal, wrapper and harness guards, ZERO/ONE/MANY cases, and the laptop
+refusal control. No JBOD contact, image read, or target mutation occurred.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV02_O2A2_DIRECT_OBSERVATION_FROZEN_READY_CHECKPOINT_20260825.md`,
+SHA-256 `3779C269089379EDF1B79139912870F0AD8F37EE75885873F32D81EDB473C293`.
+
+Next, commit and push these exact frozen bytes, prove clean matching local and
+origin tips, and publish that one ZIP to `InspectionRevs`. It authorizes one
+operator JBOD run and returns `O2A2R.zip`. `REQ_O2D4` remains non-reusable and
+must not be retried. Slot16 is not frozen, Slot17 has not started, Slots22-25
+remain unseen, the live provider remains disabled, the healthy processor stays
+untouched, and `SCRIBE_REFERENCE_COVERAGE_HOLD` plus every existing hold remain
+fixed.
 
 ## OCV-02 O2D4 corrected contract failure / direct-observation capability gap — 2026-08-25
 

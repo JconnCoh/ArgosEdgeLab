@@ -1,0 +1,43 @@
+{
+  "schema": "argos_o2a1_direct_admin_invocation_v1",
+  "incidentId": "OCV02_O2D4_TERMINAL_STATE_20260825",
+  "requestId": "REQ_O2D4",
+  "expectedResponsePrefix": "R_A2A87054A416_",
+  "rehearsal": false,
+  "portalRoot": "C:\\ProgramData\\ArgosProjectPortalRO",
+  "outputRoot": "C:\\O2A1",
+  "localResultLeaf": "O2A1R_LOCAL.zip",
+  "returnPath": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs\\O2A1R.zip",
+  "refuseComputerNames": ["TXSH-LUPW0JLTPR"],
+  "maximumSafeFileBytes": 4194304,
+  "maximumCopyFiles": 128,
+  "maximumCopyBytes": 33554432,
+  "maximumProcessRows": 64,
+  "taskNames": [
+    "ArgosProjectPortal.JBOD.Endpoint.RO",
+    "ArgosProjectPortal.JBOD.ResponseSender.RO",
+    "ArgosProjectPortal.JBOD.RequestReceiver.RO"
+  ],
+  "pathSources": [
+    {"id":"ENDPOINT_CONFIG","root":"C:\\ProgramData\\ArgosProjectPortalRO\\config\\endpoint_jbod.json","selection":"EXACT_PATH","matchText":"","maximumDepth":0,"maximumRows":1,"copySafeEvidence":true},
+    {"id":"SENDER_CONFIG","root":"C:\\ProgramData\\ArgosProjectPortalRO\\config\\JBOD_RESPONSE_SENDER.json","selection":"EXACT_PATH","matchText":"","maximumDepth":0,"maximumRows":1,"copySafeEvidence":true},
+    {"id":"ENDPOINT_WORKER","root":"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosProjectPortalEndpointWorker.ps1","selection":"EXACT_PATH","matchText":"","maximumDepth":0,"maximumRows":1,"copySafeEvidence":false},
+    {"id":"PENDING_REQUEST","root":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending","selection":"CHILD_NAME_EXACT","matchText":"REQ_O2D4.ready","maximumDepth":2,"maximumRows":64,"copySafeEvidence":true},
+    {"id":"PROCESSED_DONE","root":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\completed","selection":"CHILD_NAME_PREFIX","matchText":"REQ_O2D4","maximumDepth":2,"maximumRows":64,"copySafeEvidence":true},
+    {"id":"PROCESSED_FAIL","root":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\failed","selection":"CHILD_NAME_PREFIX","matchText":"REQ_O2D4","maximumDepth":2,"maximumRows":64,"copySafeEvidence":true},
+    {"id":"PROCESSED_REPLAY","root":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\replayed","selection":"CHILD_NAME_PREFIX","matchText":"REQ_O2D4","maximumDepth":2,"maximumRows":64,"copySafeEvidence":true},
+    {"id":"LEDGER","root":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\ledger\\REQ_O2D4.json","selection":"EXACT_PATH","matchText":"","maximumDepth":0,"maximumRows":1,"copySafeEvidence":true},
+    {"id":"ATTEMPT_WORK","root":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\work","selection":"CHILD_NAME_PREFIX","matchText":"J_A2A87054A416_","maximumDepth":3,"maximumRows":256,"copySafeEvidence":true},
+    {"id":"MAINTENANCE","root":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\maintenance\\REQ_O2D4","selection":"EXACT_PATH","matchText":"","maximumDepth":3,"maximumRows":256,"copySafeEvidence":true},
+    {"id":"RESP_PENDING","root":"C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending","selection":"CHILD_NAME_PREFIX","matchText":"R_A2A87054A416_","maximumDepth":2,"maximumRows":128,"copySafeEvidence":true},
+    {"id":"RESP_SENT","root":"C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\sent","selection":"CHILD_NAME_PREFIX","matchText":"R_A2A87054A416_","maximumDepth":2,"maximumRows":128,"copySafeEvidence":true},
+    {"id":"D_WORK","root":"D:\\A2\\w\\ocv","selection":"CHILD_NAME_PREFIX","matchText":"O2D4","maximumDepth":4,"maximumRows":512,"copySafeEvidence":true},
+    {"id":"D_OUTPUT","root":"D:\\A2\\o\\ocv","selection":"CHILD_NAME_PREFIX","matchText":"O2D4","maximumDepth":4,"maximumRows":512,"copySafeEvidence":true}
+  ],
+  "taskFixture": [],
+  "processFixture": [],
+  "substFixture": [],
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
+

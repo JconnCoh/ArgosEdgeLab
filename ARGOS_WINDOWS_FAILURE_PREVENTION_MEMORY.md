@@ -7480,3 +7480,61 @@ than rerunning it.
 - Recovery: preserve the O2D3 result as withdrawn local evidence, confirm the
   alias is absent, and use a fresh O2D4 endpoint/test/request namespace with
   separated `return $value` and `throw $value` tokens.
+
+## 2026-08-25 — Empty external-evidence sets cannot rely on `Measure-Object.Sum`
+
+- Failure signature: the first O2A1 direct-admin read-only rehearsal reached
+  the `ZERO` collection case and stopped under Windows PowerShell 5.1 with
+  `The property 'Sum' cannot be found on this object`. The failed expression
+  cast `(($copyCandidates.ToArray() | Measure-Object -Property bytes -Sum).Sum)`
+  while the generic list contained zero rows.
+- Cause: an empty generic-list pipeline did not provide the assumed aggregate
+  object/property boundary under StrictMode. The harness had a ZERO case, but
+  the aggregate itself was evaluated before the test could assert the case.
+- Mandatory preflight: for a bounded numeric total that must support zero,
+  initialize an explicitly typed scalar to zero and add each materialized row
+  inside a `foreach` loop. Exercise ZERO, ONE, and MANY through the exact
+  packaged Windows PowerShell 5.1 entrypoint; never dereference an aggregate
+  property whose command may receive no pipeline invocation.
+- Recovery: preserve `C:\O2A1T` and the exact O2A1 source as withdrawn local
+  rehearsal evidence. No live `C:\O2A1` root or share return was created.
+  Use fresh O2A2 script, package, test, output, and return namespaces; do not
+  patch, publish, or execute O2A1 again.
+
+## 2026-08-25 — StrictMode does not guarantee collection member enumeration
+
+- Failure signature: the O2A2 package completed and returned a passing ZERO
+  observation, but its outer test harness then failed on
+  `$observation.sourceResults.rows` with `The property 'rows' cannot be found
+  on this object` under Windows PowerShell 5.1 StrictMode.
+- Cause: the harness relied on implicit member enumeration across an array of
+  deserialized source-result objects. That convenience is not a stable
+  Windows PowerShell 5.1 collection contract under StrictMode.
+- Mandatory preflight: materialize the outer collection, iterate each source
+  result explicitly, materialize its `rows` collection, and add each row
+  through a nested loop before filtering or counting. Exercise the exact
+  deserialized ZERO, ONE, and MANY result schemas.
+- Recovery: preserve `C:\O2A2T` and the failed `Test-O2A2.ps1` as withdrawn
+  harness evidence. The exact O2A2 audit package passed and remains unchanged;
+  use a fresh `Test-O2A2R2.ps1`, `C:\O2A2T2`, and create-new gate. No live
+  `C:\O2A2` root, share return, JBOD contact, or target mutation occurred.
+
+## 2026-08-25 — A PowerShell `if` statement is not a parenthesized argument expression
+
+- Failure signature: the O2A2 R2 outer harness completed the passing `ZERO`
+  audit case, then stopped while constructing the `ONE` fixture with
+  `The term 'if' is not recognized as the name of a cmdlet`. The expression
+  passed `(if (...) { ... } else { ... })` directly as a `Join-Path` argument.
+- Cause: Windows PowerShell 5.1 treated `if` inside ordinary parentheses as a
+  command invocation. Control-flow output may be captured with a subexpression
+  or, more clearly, assigned by a preceding statement; ordinary parentheses
+  do not turn a statement into an argument expression.
+- Mandatory preflight: assign each conditional argument to a scalar with an
+  explicit `if`/`else` statement before invoking the consumer. Rehearse every
+  branch through the exact Windows PowerShell 5.1 harness, including ZERO,
+  ONE, and MANY fixtures; parsing and token inspection alone do not prove the
+  dormant branch can execute.
+- Recovery: preserve `C:\O2A2T2` and `Test-O2A2R2.ps1` as withdrawn harness
+  evidence. The unchanged O2A2 audit package passed the ZERO case again; use
+  fresh `Test-O2A2R3.ps1`, `C:\O2A2T3`, and a create-new R3 gate. No live
+  `C:\O2A2` root, share return, JBOD contact, or target mutation occurred.

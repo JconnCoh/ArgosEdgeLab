@@ -1,0 +1,23 @@
+{
+  "schema": "argos_o2a1_test_failure_withdrawal_v1",
+  "createdUtc": "2026-08-25T00:29:21.0171937Z",
+  "state": "WITHDRAWN",
+  "revision": "O2A1",
+  "failedCase": "ZERO",
+  "failure": "The property 'Sum' cannot be found on this object under Windows PowerShell 5.1 StrictMode for an empty safe-evidence copy set.",
+  "cause": "The script dereferenced Measure-Object.Sum after an empty generic-list pipeline instead of using an explicitly initialized loop accumulator.",
+  "failedTestRoot": "C:/O2A1T",
+  "failedScriptPath": "work/OPENCV_SCRIBE_O2A1/pkg/AUDIT_O2A1.ps1",
+  "failedScriptSha256": "1D7191FBDB985C759340094DFDDBD7B827A566457C236789ED05A36E8FA0B6FC",
+  "testHarnessPath": "work/OPENCV_SCRIBE_O2A1/Test-O2A1.ps1",
+  "testHarnessSha256": "19C49122D34622F3B759A9C4F190A778E3E39D1F410BA036031CD064402A2546",
+  "liveOutputRootCreated": false,
+  "shareReturnCreated": false,
+  "jbodContacted": false,
+  "targetMutationsPerformed": false,
+  "imageBytesRead": false,
+  "futureReuseAllowed": false,
+  "successorRevisionRequired": "O2A2",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
