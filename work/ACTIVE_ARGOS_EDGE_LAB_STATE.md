@@ -1,4 +1,4 @@
-# Active ArgosEdgeLab state - O2D5 direct Slot16 package frozen / publication pending - 2026-08-25
+# Active ArgosEdgeLab state - O2D5 published / one JBOD Slot16 run pending - 2026-08-25
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
@@ -6825,3 +6825,30 @@ not return, retrieve only
 `D:\A2\x\O2D5R_20260825T190855Z_54B4C08C.zip`; never rerun O2D5. Slot16
 remains unfrozen, Slot17 blocked, Slots22-25 unseen, and every authority/hold
 remains fixed.
+
+## 2026-08-25 O2D5 published; one JBOD Slot16 run pending
+
+The exact frozen 14,830,285-byte `ARGOS_O2D5.zip` and adjacent path gate were
+published create-new to `InspectionRevs`. Share readback matches SHA-256
+`31C03DFE334551999169152A64050E3BFD05BD35730B0840AB12132797ACE335`;
+the adjacent path-gate SHA-256 is
+`2DAD77D5D6C689F6345E93BA2527F6FD2AEF8B328295EE6A6C3C083E116A095F`.
+Publication-gate SHA-256 is
+`50CFF31A436437CF315A6B0878AF08F55E2DD3F78FA415711FAA8704A5442F3B`.
+The exact `O2D5R.zip` manual-return leaf was absent. Publication contacted no
+JBOD, created no portal request, and performed no task, process, wafer, source,
+or image action.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D5_PUBLISHED_OPERATOR_RUN_PENDING_CHECKPOINT_20260825.md`,
+SHA-256
+`EF1FF10EB5C6EA04927690366DD4772757FFD0B854F8A8AD67AE316587DE0B93`.
+
+One operator action remains: on the already-open JBOD desktop, extract the
+exact published `ARGOS_O2D5.zip` into fresh `D:\O2D5` and run
+`RUN_O2D5.cmd` once as administrator. Never rerun it. Codex must then collect
+and verify only the matching signed response; if outbound return is absent,
+retrieve only `D:\A2\x\O2D5R_20260825T190855Z_54B4C08C.zip`. Slot16 remains
+unfrozen, Slot17 blocked, Slots22-25 unseen, the provider disabled, the healthy
+processor untouched, and `SCRIBE_REFERENCE_COVERAGE_HOLD` plus every hold
+preserved.
