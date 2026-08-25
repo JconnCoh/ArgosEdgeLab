@@ -1,0 +1,40 @@
+{
+  "schema": "argos_jeo1_operator_console_result_v1",
+  "createdUtc": "2026-08-25T18:50:53.5601373Z",
+  "source": "OPERATOR_PASTED_JBOD_CONSOLE_OUTPUT",
+  "sourceVerificationState": "PENDING_EXACT_JEO1R_LOCAL_ZIP_COLLECTION",
+  "computerName": "A1025645101",
+  "packageRoot": "D:/JE01/ARGOS_JEO1",
+  "launchStartedLocal": "2026-08-25T13:47:15.29-05:00",
+  "preflight": {
+    "state": "PASS_JEO1_DIRECT_ADMIN_READ_ONLY_PREFLIGHT",
+    "createdUtc": "2026-08-25T18:47:18.6110718Z",
+    "outputRoot": "D:/A2/x/JEO1",
+    "localResultZip": "D:/A2/x/JEO1R_LOCAL.zip",
+    "pathSourceCount": 20,
+    "treeSourceCount": 3,
+    "targetExecuted": false,
+    "mutationsPerformed": false
+  },
+  "observation": {
+    "state": "PASS_JEO1_DIRECT_ADMIN_READ_ONLY_OBSERVATION",
+    "observationPath": "D:/A2/x/JEO1/JEO1_OBSERVATION.json",
+    "copiedEvidenceCount": 4,
+    "retiredTreeCount": 3,
+    "taskCount": 4,
+    "processCount": 3,
+    "targetMutationsPerformed": false
+  },
+  "returnAttempt": {
+    "state": "FAILED_RETURN_SHARE_UNREACHABLE",
+    "error": "Test-Path: The network path was not found",
+    "scriptLine": 430,
+    "returnPath": "//shm-cifs/Department/DE-1302_FAB_BE_Engineering/60_Saw_VI_Sort/600_General/Joshua.conn/AVI_Images/Argos/Uploads/InspectionRevs/JEO1R.zip",
+    "exitCode": 1
+  },
+  "localEvidenceReportedPreserved": true,
+  "rerunAuthorized": false,
+  "exactNextAction": "Collect and verify D:/A2/x/JEO1R_LOCAL.zip without rerunning JEO1.",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

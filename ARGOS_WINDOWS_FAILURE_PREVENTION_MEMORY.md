@@ -7556,3 +7556,31 @@ than rerunning it.
   deleted no retired source file. Correct the draft in place, refresh every
   dependent hash, and use fresh local rehearsal and create-new gate paths
   before freeze; never reuse the failed `work\M1D` rehearsal root.
+
+## 2026-08-25 — A JBOD-local collector cannot assume direct engineering-share reachability
+
+- Failure signature: frozen JEO1 passed its exact live preflight on JBOD
+  `A1025645101`, completed the bounded read-only observation with state
+  `PASS_JEO1_DIRECT_ADMIN_READ_ONLY_OBSERVATION`, wrote
+  `D:\A2\x\JEO1R_LOCAL.zip`, and then failed closed at line 430 when
+  `Test-Path` against the `\\shm-cifs\...\InspectionRevs` parent raised
+  `The network path was not found`. The observation performed zero target
+  mutations; only the direct share return failed.
+- Cause: the portable package treated the engineering share, which is
+  reachable from the engineering laptop and gateway, as if the JBOD host had
+  the same direct network route. Path-length proof and share existence from a
+  different hop did not prove JBOD-to-share reachability.
+- Mandatory preflight: for every direct-admin endpoint package, identify the
+  exact host that performs each return hop and prove reachability from that
+  host before collection. If the endpoint has no direct share route, retain a
+  create-new local result on qualified `D:` and use an already-qualified relay,
+  pull channel, or explicit operator reverse-transfer path. A failed optional
+  return copy must not invalidate or obscure a successfully committed local
+  observation; catch and report return failure separately. Rehearse the exact
+  unreachable-share case through Windows PowerShell 5.1.
+- Recovery: do not rerun JEO1. Preserve frozen JEO1 as executed terminal
+  failure evidence and retrieve only exact `D:\A2\x\JEO1R_LOCAL.zip` through
+  the already-open reverse RDP path. Verify its hash and contents before using
+  any observation claim. Build the durable signed read-only JBOD evidence
+  channel with a host-authentic return route; JEO1 is non-reusable and cannot
+  parent a patched execution package.

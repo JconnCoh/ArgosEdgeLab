@@ -6727,3 +6727,28 @@ One operator action remains: on the already-open JBOD desktop, copy/extract
 administrator. Codex then collects and verifies the result. DFLY3005 remains
 excluded; CDM1/CDO1/O2A2 must not run; O2D4 must not be retried. The processor,
 provider, slots, and all holds remain fixed.
+
+## 2026-08-25 JEO1 local observation passed; direct share return failed
+
+The operator ran frozen JEO1 once on JBOD `A1025645101`. Its exact preflight
+and bounded read-only observation passed with zero reported target mutations.
+The exact local result is reported preserved at
+`D:\A2\x\JEO1R_LOCAL.zip`. The final direct `\\shm-cifs` return failed with
+`The network path was not found`, so the exact result hash and contents remain
+unverified. JEO1 must not be rerun.
+
+The operator-console evidence record SHA-256 is
+`9F758D4A24562165E26164F8A06A99A9E13386C8F434DEE07D92BC1DCDEC6D59`.
+The new host-authentic return-route failure prevention entry is recorded in
+`ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/JBOD_EVIDENCE_OBSERVATION_JEO1_LOCAL_PASS_RETURN_FAILURE_COLLECTION_PENDING_CHECKPOINT_20260825.md`,
+SHA-256
+`4C45A2B119F53CA758305563D57E029C7CF6A32DC840275FAD507EFFF96AD483`.
+
+Exact next action: copy only `D:\A2\x\JEO1R_LOCAL.zip` outward through the
+already-open nested RDP sessions and place it in `InspectionRevs` as
+`JEO1R.zip`, or attach that exact ZIP after bringing it to the engineering
+laptop. No package rerun is authorized. The processor, provider, slots, and
+all holds remain fixed.
