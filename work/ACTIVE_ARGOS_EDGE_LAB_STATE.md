@@ -6677,3 +6677,30 @@ window open through terminal completion, then collect only `CDM1R.zip`.
 be retried. Slot16 remains unfrozen, Slot17 blocked, Slots22-25 unseen, the
 live provider disabled, and every hold including
 `SCRIBE_REFERENCE_COVERAGE_HOLD` remains.
+
+## 2026-08-25 JEO1 JBOD evidence observation frozen; publication pending
+
+The missing CDM1 return and current O2D4 endpoint state will be recovered by
+one D-drive-only portable direct-admin read-only collector outside the blocked
+portal queue. Frozen `ARGOS_JEO1.zip` is 10,365 bytes with SHA-256
+`DFAA7601296DB64870D7C8752490EAF0FD962A8338AC12395480CD6F489889C4`;
+final-gate SHA-256 is
+`6B2B0410BC89E5151CCA9085BFE642E3B14387AC9AE5E0396C48CAD0C5504D74`.
+Exact extraction, Windows PowerShell 5.1 ZERO/ONE/MANY, wrapper, harness,
+path, clone-remediation, laptop-refusal, and zero-recurrence gates passed.
+
+The corrected operator topology is engineering laptop to RustDesk gateway to
+Argos RDP to JBOD RDP. DFLY3005 is a Rudolph tool and is excluded. JEO1 has
+not contacted JBOD and performed no image-byte read or target mutation.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/JBOD_EVIDENCE_OBSERVATION_JEO1_FROZEN_READY_CHECKPOINT_20260825.md`,
+SHA-256
+`99826EEA7CDC2FC05DBC1B20EC4C5EC4ADE0B1ECC90031236906F39DDE40FB54`.
+
+Exact next action: commit and push, require a clean matching local/origin tip,
+then publish only the exact frozen JEO1 ZIP and adjacent machine path gate
+create-new. After publication, one operator launch on the already-open JBOD
+desktop is required. CDM1 must not be rerun; CDO1 and O2A2 must not run; O2D4
+must not be retried. The healthy processor, disabled provider, Slot16/Slot17,
+unseen Slots22-25, `SCRIBE_REFERENCE_COVERAGE_HOLD`, and every hold remain.

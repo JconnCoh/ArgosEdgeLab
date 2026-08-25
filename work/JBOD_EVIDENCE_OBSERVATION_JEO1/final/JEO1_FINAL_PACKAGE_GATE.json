@@ -1,0 +1,60 @@
+{
+    "schema":  "argos_jeo1_final_package_gate_v1",
+    "createdUtc":  "2026-08-25T18:10:31.4908301Z",
+    "state":  "PASS_JEO1_FINAL_PACKAGE_GATE",
+    "lifecycle":  "FROZEN",
+    "revision":  "JEO1",
+    "zipPath":  "final/ARGOS_JEO1.zip",
+    "zipBytes":  10365,
+    "zipSha256":  "DFAA7601296DB64870D7C8752490EAF0FD962A8338AC12395480CD6F489889C4",
+    "zipEntryCount":  5,
+    "zipEntries":  [
+                       "AUDIT_JEO1.ps1",
+                       "INVOCATION.json",
+                       "PACKAGE_MANIFEST.json",
+                       "README_FIRST.txt",
+                       "RUN_JEO1.cmd"
+                   ],
+    "fileRows":  [
+                     {
+                         "path":  "AUDIT_JEO1.ps1",
+                         "bytes":  27983,
+                         "sha256":  "3AA4A48CF9342F8AF93AB462BAF199E0ABC8708F0C204D79AC63C6E3CFE9115A"
+                     },
+                     {
+                         "path":  "INVOCATION.json",
+                         "bytes":  6187,
+                         "sha256":  "400E37CB290C5DDD84E8ADC04AE61D1AB5BDB7597AFB03012668B96383B99E0B"
+                     },
+                     {
+                         "path":  "PACKAGE_MANIFEST.json",
+                         "bytes":  966,
+                         "sha256":  "9BDA5C4FFCAA23BF9D2B9F141F8F171840987CF562309D9B09E02DA29F18344E"
+                     },
+                     {
+                         "path":  "README_FIRST.txt",
+                         "bytes":  889,
+                         "sha256":  "78073F98AD2DA9FB437ED62CCA8720FBB4EED2E78ADF19DE9A76858D13894676"
+                     },
+                     {
+                         "path":  "RUN_JEO1.cmd",
+                         "bytes":  1815,
+                         "sha256":  "0D01B83A42BC0BEFE4E2F37FD29B424DF290306F98F5D4A513BC2F3C4724793C"
+                     }
+                 ],
+    "packageManifestSha256":  "9BDA5C4FFCAA23BF9D2B9F141F8F171840987CF562309D9B09E02DA29F18344E",
+    "testGateSha256":  "8DA52535416F335F1BAA24189F33CC0AA007642FA7D7774C42D15DD913E59390",
+    "pathGateSha256":  "15894BC8431AE193EA113261279037E2F34C5CE4015CA8EDE3B10B74F10FCE74",
+    "preactionSha256":  "AD524E3EA65537C8980CC1EAA277F6A00CBE3222F2C018EA74BA3F5B0BE47E77",
+    "exactExtractionVerified":  true,
+    "extractedHarnessState":  "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "extractedWrapperState":  "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "extractedRehearsalPreflightState":  "PASS_JEO1_DIRECT_ADMIN_READ_ONLY_PREFLIGHT",
+    "extractedLaptopRefusalPassed":  true,
+    "jbodContacted":  false,
+    "targetMutationsPerformed":  false,
+    "imageBytesRead":  false,
+    "oneObservationExecutionAuthorized":  true,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

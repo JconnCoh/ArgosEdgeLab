@@ -1,0 +1,48 @@
+{
+    "schema":  "argos_jeo1_test_gate_v1",
+    "createdUtc":  "2026-08-25T18:03:34.8374961Z",
+    "state":  "PASS_JEO1_DIRECT_ADMIN_READ_ONLY_TEST_GATE",
+    "cases":  [
+                  {
+                      "id":  "ZERO",
+                      "state":  "PASS",
+                      "matchCount":  0,
+                      "returnedZipSha256":  "8C068DF64DCA4564B14E874EFB83C396E0F4F2A087A0D684E9D6D18AE77ADFCE",
+                      "binaryEvidenceZipCopies":  1,
+                      "imageBytesRead":  false,
+                      "targetMutationsPerformed":  false
+                  },
+                  {
+                      "id":  "ONE",
+                      "state":  "PASS",
+                      "matchCount":  1,
+                      "returnedZipSha256":  "AAB977EBB4CDBACED54E3D53DB452AB67AE447A9E231AE58749ED2571C8C5879",
+                      "binaryEvidenceZipCopies":  1,
+                      "imageBytesRead":  false,
+                      "targetMutationsPerformed":  false
+                  },
+                  {
+                      "id":  "MANY",
+                      "state":  "PASS",
+                      "matchCount":  3,
+                      "returnedZipSha256":  "221956F711FF9E382B61FDA54EFA8DC34C9FB8EDBD217B3030AC5AE22DF5D6BD",
+                      "binaryEvidenceZipCopies":  1,
+                      "imageBytesRead":  false,
+                      "targetMutationsPerformed":  false
+                  }
+              ],
+    "requiredCaseIds":  [
+                            "ZERO",
+                            "ONE",
+                            "MANY"
+                        ],
+    "windowsPowerShell51Passed":  true,
+    "packageShapedExecutionPassed":  true,
+    "aggregateTreeCountsPassed":  true,
+    "exactEvidenceZipCopyPassed":  true,
+    "imageBytesRead":  false,
+    "targetMutationsPerformed":  false,
+    "testRoot":  "C:\\JEO1T1",
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

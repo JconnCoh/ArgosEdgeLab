@@ -1,0 +1,26 @@
+{
+  "schema": "argos_jeo1_incident_observation_authority_v1",
+  "createdUtc": "2026-08-25T17:58:13.9564337Z",
+  "state": "OBSERVED_CDM1_RETURN_ABSENT_DIRECT_JBOD_OBSERVATION_REQUIRED",
+  "incidentId": "JBOD_CDM1_POST_RUN_EVIDENCE_20260825",
+  "operatorReported": {
+    "jbodCFreeBytesAfterAttempt": 1751461888,
+    "jbodCFreeDisplay": "1.63 GB",
+    "launcherDisappearsImmediatelyOnLaterAttempt": true,
+    "laterAttemptWasNotAuthorizedAsARerun": true,
+    "correctedRemoteTopology": "Laptop -> RustDesk gateway -> gateway RDP -> Argos -> Argos RDP -> JBOD",
+    "dfly3005IsArgos": false
+  },
+  "engineeringShareObservation": {
+    "checkedUtc": "2026-08-25T17:58:13.9564337Z",
+    "cdm1ResultPath": "//shm-cifs/Department/DE-1302_FAB_BE_Engineering/60_Saw_VI_Sort/600_General/Joshua.conn/AVI_Images/Argos/Uploads/InspectionRevs/CDM1R.zip",
+    "cdm1ResultExists": false,
+    "jeo1ResultExists": false,
+    "jeo1PackageExists": false
+  },
+  "cdm1RerunProhibited": true,
+  "o2d4RetryProhibited": true,
+  "requiredNextEvidence": "One fresh D-based direct-admin read-only observation of exact CDM1 local evidence, current retired-tree counts, drive free space, processor identity, and exact O2D4 endpoint state.",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

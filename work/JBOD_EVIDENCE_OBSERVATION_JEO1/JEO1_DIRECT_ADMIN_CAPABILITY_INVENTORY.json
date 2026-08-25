@@ -1,0 +1,42 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-08-25T17:58:13.9564337Z",
+  "state": "PASS_ARGOS_ENDPOINT_STATIC_CAPABILITY_INVENTORY",
+  "auditor": {
+    "path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/pkg/AUDIT_JEO1.ps1",
+    "sha256": "3AA4A48CF9342F8AF93AB462BAF199E0ABC8708F0C204D79AC63C6E3CFE9115A",
+    "portable": true,
+    "installed": false
+  },
+  "routes": [
+    {
+      "type": "DIRECT_ADMIN_READ_ONLY",
+      "capabilities": [
+        "exactBoundedPathMetadata",
+        "safeTextAndSignatureHash",
+        "exactBoundedEvidenceZipCopy",
+        "aggregateRetiredTreeFileAndByteCounts",
+        "logicalDriveFreeSpace",
+        "exactTaskStateAndDefinitionHash",
+        "boundedRelevantProcessInventory",
+        "dosDeviceAliasInventory",
+        "installedRouteHashInventory"
+      ]
+    }
+  ],
+  "sourceInspectionOnly": true,
+  "endpointExecuted": false,
+  "targetMutationCommandsPresent": false,
+  "taskActionCommandsPresent": false,
+  "processActionCommandsPresent": false,
+  "imageExtensionsContentAllowlisted": false,
+  "safeContentExtensions": [".json", ".jsonl", ".txt", ".log", ".sig", ".ps1", ".cmd"],
+  "exactBinaryEvidenceExtension": ".zip",
+  "exactBinaryEvidenceSources": ["D:/A2/x/CDM1R_LOCAL.zip", "InspectionRevs/CDM1R.zip"],
+  "maximumSafeFileBytes": 4194304,
+  "maximumBinaryEvidenceBytes": 67108864,
+  "maximumCopyFiles": 160,
+  "maximumCopyBytes": 100663296,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

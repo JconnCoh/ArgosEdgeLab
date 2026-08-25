@@ -1,0 +1,82 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "JEO1_FROM_WITHDRAWN_O2A2_20260825",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_O2A2/pkg/AUDIT_O2A2.ps1",
+      "generated": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/pkg/AUDIT_JEO1.ps1",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"C:\\ProgramData","disposition":"ADDED","reason":"JEO1 live preflight binds exact JBOD installed roots instead of accepting an unpinned manifest root."},
+        {"sourceRoot":"","generatedRoot":"D:\\A2","disposition":"ADDED","reason":"All JEO1 live evidence output is forced to the qualified JBOD D-side short root because C is space-constrained."}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2A2/pkg/INVOCATION.json",
+      "generated": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/pkg/INVOCATION.json",
+      "rootRules": [
+        {"sourceRoot":"C:\\O2A2","generatedRoot":"D:\\A2","disposition":"REPLACED","reason":"The prohibited O2A2 C-side evidence namespace is replaced by JEO1 D-side evidence."},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED","reason":"The exact installed JBOD portal and processor roots remain read-only sources."},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED","reason":"The exact qualified JBOD D-side work/output root remains a read-only source and evidence destination."},
+        {"sourceRoot":"\\\\600_General\\Joshua.conn","generatedRoot":"\\\\600_General\\Joshua.conn","disposition":"UNCHANGED_ALLOWED","reason":"JSON escaping exposes the unchanged authorized share segment."},
+        {"sourceRoot":"\\\\ArgosProjectPortalRO\\bin","generatedRoot":"\\\\ArgosProjectPortalRO\\bin","disposition":"UNCHANGED_ALLOWED","reason":"The installed endpoint-worker segment remains a read-only source."},
+        {"sourceRoot":"\\\\ArgosProjectPortalRO\\config","generatedRoot":"\\\\ArgosProjectPortalRO\\config","disposition":"UNCHANGED_ALLOWED","reason":"The installed route-config segment remains a read-only source."},
+        {"sourceRoot":"\\\\ArgosProjectPortalRO\\endpoint_jbod","generatedRoot":"\\\\ArgosProjectPortalRO\\endpoint_jbod","disposition":"UNCHANGED_ALLOWED","reason":"The exact JBOD endpoint state segment remains a read-only source."},
+        {"sourceRoot":"\\\\ArgosProjectPortalRO\\to_argos","generatedRoot":"\\\\ArgosProjectPortalRO\\to_argos","disposition":"UNCHANGED_ALLOWED","reason":"The exact response-outbox segment remains a read-only source."},
+        {"sourceRoot":"\\\\AVI_Images\\Argos","generatedRoot":"\\\\AVI_Images\\Argos","disposition":"UNCHANGED_ALLOWED","reason":"The authorized engineering-share segment remains unchanged."},
+        {"sourceRoot":"\\\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort","generatedRoot":"\\\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort","disposition":"UNCHANGED_ALLOWED","reason":"The authorized engineering-share segment remains unchanged."},
+        {"sourceRoot":"\\\\o\\ocv","generatedRoot":"\\\\o\\ocv","disposition":"UNCHANGED_ALLOWED","reason":"The O2D4 output segment remains an exact read-only source."},
+        {"sourceRoot":"\\\\processed\\completed","generatedRoot":"\\\\processed\\completed","disposition":"UNCHANGED_ALLOWED","reason":"The completed-state segment remains an exact read-only source."},
+        {"sourceRoot":"\\\\processed\\failed","generatedRoot":"\\\\processed\\failed","disposition":"UNCHANGED_ALLOWED","reason":"The failed-state segment remains an exact read-only source."},
+        {"sourceRoot":"\\\\processed\\replayed","generatedRoot":"\\\\processed\\replayed","disposition":"UNCHANGED_ALLOWED","reason":"The replayed-state segment remains an exact read-only source."},
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED","reason":"The authorized engineering-share UNC root remains unchanged."},
+        {"sourceRoot":"\\\\state\\ledger","generatedRoot":"\\\\state\\ledger","disposition":"UNCHANGED_ALLOWED","reason":"The exact endpoint-ledger segment remains a read-only source."},
+        {"sourceRoot":"\\\\state\\maintenance","generatedRoot":"\\\\state\\maintenance","disposition":"UNCHANGED_ALLOWED","reason":"The exact maintenance-evidence segment remains a read-only source."},
+        {"sourceRoot":"\\\\state\\work","generatedRoot":"\\\\state\\work","disposition":"UNCHANGED_ALLOWED","reason":"The exact endpoint-work segment remains a read-only source."},
+        {"sourceRoot":"\\\\Uploads\\InspectionRevs","generatedRoot":"\\\\Uploads\\InspectionRevs","disposition":"UNCHANGED_ALLOWED","reason":"The authorized return folder remains unchanged."},
+        {"sourceRoot":"\\\\w\\ocv","generatedRoot":"\\\\w\\ocv","disposition":"UNCHANGED_ALLOWED","reason":"The O2D4 work segment remains an exact read-only source."},
+        {"sourceRoot":"","generatedRoot":"\\\\ArgosEdgeLabRO\\AllWaferProcessorV2","disposition":"ADDED","reason":"JEO1 adds exact retired-tree and healthy-processor observations required by the CDM1 incident."},
+        {"sourceRoot":"","generatedRoot":"\\\\x\\CDM1","disposition":"ADDED","reason":"JEO1 adds the exact CDM1 D-side evidence root."},
+        {"sourceRoot":"","generatedRoot":"\\\\x\\CDM1_LAUNCH.log","disposition":"ADDED","reason":"JEO1 adds the exact persistent CDM1 launcher log."},
+        {"sourceRoot":"","generatedRoot":"\\\\x\\CDM1R_LOCAL.zip","disposition":"ADDED","reason":"JEO1 adds the exact CDM1 local result ZIP."},
+        {"sourceRoot":"","generatedRoot":"\\\\x\\JEO1","disposition":"ADDED","reason":"JEO1 uses one fresh D-side evidence namespace."},
+        {"sourceRoot":"","generatedRoot":"\\\\x\\JEO1R_LOCAL.zip","disposition":"ADDED","reason":"JEO1 preserves one exact local return if share publication fails."},
+        {"sourceRoot":"","generatedRoot":"\\\\x\\manifests","disposition":"ADDED","reason":"JEO1 observes metadata for the exact locked CDM1 manifest."}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2A2/pkg/RUN_O2A2.cmd",
+      "generated": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/pkg/RUN_JEO1.cmd",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"D:\\A2","disposition":"ADDED","reason":"The corrected persistent launcher log and all local evidence are D-side only."}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2A2/pkg/README_FIRST.txt",
+      "generated": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/pkg/README_FIRST.txt",
+      "rootRules": [
+        {"sourceRoot":"C:\\O2A2","generatedRoot":"D:\\A2","disposition":"REPLACED","reason":"The prohibited C-side O2A2 output root is replaced by the JEO1 D-side evidence root."},
+        {"sourceRoot":"","generatedRoot":"D:\\JEO1","disposition":"ADDED","reason":"The operator extraction root is a fresh short D-side package folder."}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2A2/Test-O2A2R3.ps1",
+      "generated": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/Test-JEO1.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\O2A2","generatedRoot":"C:\\JEO1T1","disposition":"REPLACED","reason":"The prohibited live O2A2 root is absent from the JEO1 rehearsal and replaced by one fresh bounded test root."},
+        {"sourceRoot":"C:\\O2A2T3","generatedRoot":"C:\\JEO1T1","disposition":"REPLACED","reason":"The predecessor rehearsal root is replaced by one fresh JEO1 test root."},
+        {"sourceRoot":"D:\\fixture","generatedRoot":"D:\\fixture","disposition":"UNCHANGED_ALLOWED","reason":"The literal exists only in synthetic process and alias fixture strings."},
+        {"sourceRoot":"X:","generatedRoot":"X:","disposition":"UNCHANGED_ALLOWED","reason":"The X alias fixture remains the exact O2D4 alias identity under observation."}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2A2/Build-O2A2R2.ps1",
+      "generated": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/Build-JEO1.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\O2A2","generatedRoot":"D:\\A2","disposition":"REPLACED","reason":"The extracted laptop refusal control protects the fresh JEO1 D-side live evidence namespace instead of the prohibited O2A2 C-side root."}
+      ]
+    }
+  ],
+  "rootlessPairs": [],
+  "forwardSlashRootRemediation": [],
+  "unchangedByteCopies": []
+}
