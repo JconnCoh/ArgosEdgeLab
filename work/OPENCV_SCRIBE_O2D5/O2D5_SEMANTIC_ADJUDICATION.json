@@ -1,0 +1,86 @@
+{
+  "schema": "argos_o2d5_semantic_adjudication_v1",
+  "createdUtc": "2026-08-25T19:47:30Z",
+  "state": "FAIL_O2D5_MIGRATION_PARITY_LOCALIZATION_AND_DECISION_PRECEDENCE",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "revision": "O2D5_20260825T190855Z_54B4C08C",
+  "requestId": "DIRECT_O2D5_20260825T190855Z_54B4C08C",
+  "responseId": "R_ADD3BF802E2F_20260825193812855_dbc9bb56",
+  "signedResponseVerified": true,
+  "signedResponseZipSha256": "A1EF71116AB6571DC537A66A2ECD85A8E828DECA4F9F1C466760E632B9BDC4A4",
+  "responseManifestSha256": "867547FCCB653842ACDD5FD8A1909712AB73F2220A915271952A69A89264DCF6",
+  "resultSha256": "F26875AA38B5346B9F3AEC0A6A2F6B75E0D69A972E94A0E8DDC39E21B63ED4B3",
+  "runGateSha256": "3C1AF40B7774FE2B1A1F0B77830AE99A0FDD3230389D30E9467F515A347E8A6B",
+  "reportedImageFirstString": "699F999999F6",
+  "reportedChecksumState": "SCRIBE_M12_IMAGE_FIRST_CHECKSUM_VALID_REVIEW_ONLY",
+  "eligibleIdentity": false,
+  "operatorAcceptedIdentity": false,
+  "localization": {
+    "expectedPoseBoundRegionCount": 0,
+    "selectedRegionId": "EXCEPTION_120_0010_X1.25_O+0.00",
+    "selectedRegionSource": "BOUNDED_WHOLE_IMAGE_EXCEPTION_SEARCH",
+    "score": 0.544673502445221,
+    "confidenceCalibrationState": "UNQUALIFIED_DEVELOPMENT",
+    "candidateCount": 9
+  },
+  "recognition": {
+    "hypothesisCount": 72,
+    "checksumValidCandidateCount": 124,
+    "acceptedHypothesisCount": 0,
+    "acceptedCandidateCount": 0,
+    "referenceManifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "referenceCount": 456,
+    "sameAcceptedReferenceLibraryUsed": true,
+    "referenceCoverageComplete": false,
+    "missingReferenceLabels": "IJKOQVWXYZ"
+  },
+  "semanticViolations": [
+    "QUALIFIED_POSE_BOUND_REGION_ABSENT",
+    "WHOLE_IMAGE_EXCEPTION_TEXTURE_ACCEPTED_WITHOUT_LOCALIZATION_CONFIDENCE_GATE",
+    "OCR_GRID_SCORE_SORTED_AHEAD_OF_LOCALIZATION_CONFIDENCE",
+    "STANDARD_AND_EXCEPTION_RESULTS_NOT_ADJUDICATED_AS_DISTINCT_SEMANTIC_CLASSES",
+    "REFERENCE_COVERAGE_HOLD_MASKED_LOCALIZATION_CONFIDENCE_AND_124_WAY_CHECKSUM_AMBIGUITY",
+    "MIGRATION_PARITY_WITH_ACCEPTED_V4_READER_NOT_PROVEN"
+  ],
+  "acceptedBaseline": {
+    "path": "work/OPENCV_SCRIBE_V1/OCV02_SCRIBE_SEMANTIC_BASELINE.json",
+    "sha256": "14294BAB3C2B3CB1F9B7AF199F796BACD0BCE46BA555DCD772FC17ACF175F0CC",
+    "acceptedReaderSha256": "0E64D5FBE57556B7FC5A37D6764FDA65CBF780F96A3C994B73954CF985E67206",
+    "acceptedPhysicalHoldout": "15_OF_15_CORRECT_TOP_PROPOSALS",
+    "duplicateViewAgreement": "4_OF_4"
+  },
+  "sourceProvenance": {
+    "bfSha256": "CE5502F33D54A12FEF1A082A0B18C1635169B2F5D0BE98C402EA8238D86C2E53",
+    "dfSha256": "6FAC812536C19F07D1C3DAD5263741350E94460A07867F2AEE0D2EEEA8C19ED9",
+    "priorCheckpointDfHashTypoDisclosed": true,
+    "executedPackageUsedCorrectDfHash": true
+  },
+  "collectorAdjudication": {
+    "terminalGatePath": "work/OPENCV_SCRIBE_O2D5/O2D5_TERMINAL_RESPONSE_GATE.json",
+    "cryptographicAndPayloadVerificationValid": true,
+    "slot16DevelopmentFrozenClaimWithdrawn": true,
+    "slot17AuthorizedClaimWithdrawn": true,
+    "collectorAndGateReusable": false
+  },
+  "workflowState": {
+    "o2d5Reusable": false,
+    "slot16Frozen": false,
+    "slot17Authorized": false,
+    "slots22Through25Exposed": false,
+    "nextRecoveryLane": "OBSERVE",
+    "nextAction": "Collect exact installed current-acquisition scribe proposal, multi-channel reader summary/hold, source caller hashes, and crop-path metadata without reading image bytes before changing the OpenCV engine."
+  },
+  "protectedInvariants": {
+    "taskOrProcessRestarted": false,
+    "providerActivated": false,
+    "sourceMutationPerformed": false,
+    "sourceDeletionPerformed": false,
+    "waferActionPerformed": false,
+    "holdsCleared": false,
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false
+  }
+}

@@ -7608,3 +7608,56 @@ than rerunning it.
   rows and installed config hashes. Any successor observation must use a fresh
   namespace and null-safe task fields before task state can clear a route or
   processor hold; frozen executed JEO1 is non-reusable.
+### OpenCV scribe exception search cannot substitute texture OCR for qualified localization
+
+- Signature: a signed real-wafer OpenCV scribe run reports a checksum-valid
+  image-first string under `SCRIBE_REFERENCE_COVERAGE_HOLD`, while its job has
+  zero pose-bound expected regions, the selected region is a low-confidence
+  whole-image exception candidate, no hypothesis/candidate is accepted, and a
+  large set of checksum-valid alternatives comes from unrelated wafer texture.
+- Cause: the engine ranked OCR grid score before localization confidence,
+  applied no qualified localization threshold, mixed standard and exception
+  regions in one winner list, and evaluated reference coverage before
+  localization-confidence and ambiguity disposition. The correct accepted
+  glyph library was present; the failure was localization and decision
+  precedence, not missing reference bytes.
+- Preflight: require at least one qualified pose-bound region or an explicitly
+  qualified exception-localization result before OCR can be eligible. Freeze
+  standard and exception result classes separately. Reject an unqualified
+  exception region before checksum adjudication, and prove that localization,
+  segmentation, confidence, and multiple-valid-candidate holds outrank the
+  general reference-coverage hold. Run the accepted V4 physical holdout and
+  duplicate-view regression before any new real-wafer package.
+- Recovery: retain the signed response as diagnostic evidence, do not freeze
+  the slot or run the next slot, and perform a direct read-only observation of
+  the installed current-acquisition proposal/crop metadata before changing the
+  OpenCV engine. A corrected engine requires a fresh namespace and must not
+  reuse the failed package or its output roots.
+- First observed on 2026-08-25 in signed O2D5 response
+  `R_ADD3BF802E2F_20260825193812855_dbc9bb56`: selected exception region
+  `EXCEPTION_120_0010_X1.25_O+0.00`, localization score
+  `0.544673502445221`, reported string `699F999999F6`, and 124
+  checksum-valid candidates. No task/process restart, provider activation,
+  source mutation/deletion, wafer action, hold clearance, XML, training, or
+  production action occurred.
+
+### Signed-response verification gates cannot grant downstream workflow authority
+
+- Signature: a response collector correctly verifies a signature, request ID,
+  file hashes, and protected invariants, then writes downstream booleans such
+  as `slotFrozen=true` or `nextSlotAuthorized=true` before migration-parity
+  adjudication has occurred.
+- Cause: cryptographic/transport success was conflated with semantic family
+  acceptance. A valid signed result proves what executed and what it returned;
+  it does not prove that the returned algorithm preserved the frozen accepted
+  semantics.
+- Preflight: response collectors must stop at transport, signature, exact
+  payload, and bounded-result facts. Slot freeze, family parity, successor
+  authorization, hold clearance, and provider eligibility belong only in a
+  separate semantic adjudication gate that pins the accepted baseline.
+- Recovery: preserve the verified response and its immutable collector output
+  as terminal evidence, explicitly withdraw the overbroad downstream claims,
+  mark the collector non-reusable, and create a separate adjudication artifact.
+- First observed on 2026-08-25 in the O2D5 response-collection gate. Its
+  signature and payload verification remain valid; its Slot16-freeze and
+  Slot17-authorization claims are withdrawn.

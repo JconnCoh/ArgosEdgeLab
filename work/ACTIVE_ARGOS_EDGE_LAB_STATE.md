@@ -1,4 +1,4 @@
-# Active ArgosEdgeLab state - O2D5 published / one JBOD Slot16 run pending - 2026-08-25
+# Active ArgosEdgeLab state - O2D5 signed semantic regression / direct observation required - 2026-08-25
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
@@ -6852,3 +6852,45 @@ retrieve only `D:\A2\x\O2D5R_20260825T190855Z_54B4C08C.zip`. Slot16 remains
 unfrozen, Slot17 blocked, Slots22-25 unseen, the provider disabled, the healthy
 processor untouched, and `SCRIBE_REFERENCE_COVERAGE_HOLD` plus every hold
 preserved.
+
+## 2026-08-25 O2D5 signed response verified; semantic migration regression
+
+O2D5 ran once on JBOD and returned matching signed response
+`R_ADD3BF802E2F_20260825193812855_dbc9bb56`. The 67,852-byte response ZIP
+has SHA-256
+`A1EF71116AB6571DC537A66A2ECD85A8E828DECA4F9F1C466760E632B9BDC4A4`;
+signed-manifest SHA-256 is
+`867547FCCB653842ACDD5FD8A1909712AB73F2220A915271952A69A89264DCF6`.
+Signature, request identity, payload hashes, source provenance, and protected
+invariants all pass. No task/process restart, provider activation, source or
+wafer mutation, hold clearance, XML, training, or production action occurred.
+
+The reported image-first string is `699F999999F6`, but it is not an accepted
+identity. O2D5 had zero pose-bound regions, selected low-confidence whole-image
+exception texture, retained 124 checksum-valid strings, and masked localization
+and ambiguity failures behind the general reference-coverage hold. The same
+accepted 456-glyph library was present; the regression is in OpenCV localization
+and decision precedence. Semantic-adjudication SHA-256 is
+`9CF9D0B843D08F3A16C18F2282D7645EF0A0EA9BB3CDDC201786A6CA9F002E0E`.
+
+The immutable collection gate remains valid only for signature/payload facts.
+Its premature Slot16-freeze and Slot17-authorization booleans are withdrawn.
+O2D5 and its collector are non-reusable. Slot16 remains unfrozen and Slot17
+blocked.
+
+The executed package used the correct DF SHA-256
+`6FAC812536C19F07D1C3DAD5263741350E94460A07867F2AEE0D2EEEA8C19ED9`.
+The earlier frozen-ready checkpoint's truncated textual DF hash is disclosed;
+that checkpoint is superseded and non-reusable as a publication parent.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D5_SIGNED_SEMANTIC_REGRESSION_OBSERVATION_REQUIRED_CHECKPOINT_20260825.md`,
+SHA-256
+`C2E0991B52D89219A83C3CF2D928A0C5E08AFE27CBED8F9F17DD40677B44D411`.
+
+Exact next action: one fresh direct-admin read-only observation of the exact
+installed current-acquisition Slot16 proposal, reader summary/hold, caller and
+helper hashes, and crop-path metadata. It must not read or hash image bytes or
+change any JBOD state. Only after that evidence is pinned may a fresh OpenCV
+engine revision be built and required to pass the accepted V4 15/15 plus 4/4
+regression before another real-wafer request. All authority and holds remain.
