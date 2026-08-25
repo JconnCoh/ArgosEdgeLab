@@ -6704,3 +6704,26 @@ create-new. After publication, one operator launch on the already-open JBOD
 desktop is required. CDM1 must not be rerun; CDO1 and O2A2 must not run; O2D4
 must not be retried. The healthy processor, disabled provider, Slot16/Slot17,
 unseen Slots22-25, `SCRIBE_REFERENCE_COVERAGE_HOLD`, and every hold remain.
+
+## 2026-08-25 JEO1 published; one JBOD observation run pending
+
+The exact frozen `ARGOS_JEO1.zip` and `ARGOS_JEO1_PATH_GATE.json` were
+published create-new to `InspectionRevs`. Share readback matches SHA-256
+`DFAA7601296DB64870D7C8752490EAF0FD962A8338AC12395480CD6F489889C4`
+for the 10,365-byte ZIP and
+`15894BC8431AE193EA113261279037E2F34C5CE4015CA8EDE3B10B74F10FCE74`
+for the path gate. Publication-gate SHA-256 is
+`0F3077FA4324D07C219F78D354F20883B30CABFC7D2948E7243D6E842BF3DBE3`.
+`JEO1R.zip` is absent because JEO1 has not run. Publication did not contact
+JBOD or execute any target action.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/JBOD_EVIDENCE_OBSERVATION_JEO1_PUBLISHED_OPERATOR_RUN_PENDING_CHECKPOINT_20260825.md`,
+SHA-256
+`396ECBC327D6DF85EE29DC2EE5FFE8CEA886DFB281F65DD94EE91121141A6611`.
+
+One operator action remains: on the already-open JBOD desktop, copy/extract
+`ARGOS_JEO1.zip` to fresh `D:\JEO1` and run `RUN_JEO1.cmd` once as
+administrator. Codex then collects and verifies the result. DFLY3005 remains
+excluded; CDM1/CDO1/O2A2 must not run; O2D4 must not be retried. The processor,
+provider, slots, and all holds remain fixed.

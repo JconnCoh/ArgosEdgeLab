@@ -1,0 +1,51 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-25T18:18:47.1043149Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\JBOD_EVIDENCE_OBSERVATION_JEO1\\JEO1_PUBLICATION_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "6B11960A5E8803C397DD9A39758FD8B5C197C8A896A3177939245804E397EE91",
+    "pairCount":  2,
+    "pairs":  [
+                  {
+                      "source":  "work/JBOD_C_DRIVE_STAGE1_DELETE_CDM1/Publish-CDM1.ps1",
+                      "generated":  "work/JBOD_EVIDENCE_OBSERVATION_JEO1/Publish-JEO1.ps1",
+                      "sourceSha256":  "9551C5433142B6429CB0821F44F820F7F74B1785ED6CE05D4807D61CB9C1482A",
+                      "generatedSha256":  "246994B608EA78E930AF276A14F0123374DE35B4421F41C5CA6DC683AF56DC51",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department"
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/JBOD_C_DRIVE_STAGE1_DELETE_CDM1/PUBLISH_INVOCATION.json",
+                      "generated":  "work/JBOD_EVIDENCE_OBSERVATION_JEO1/PUBLISH_INVOCATION.json",
+                      "sourceSha256":  "C7D2B9D91415514CDD0DFA122BB6263CD346B6E62982FAE5FE485872E90D3120",
+                      "generatedSha256":  "37FB2A1C91DE82F470BC52394BF4D1337B611B3941BFEBD7AB297D2E54E10D16",
+                      "sourceRoots":  [
+                                          "\\\\600_General\\Joshua.conn",
+                                          "\\\\AVI_Images\\Argos",
+                                          "\\\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort",
+                                          "\\\\shm-cifs\\Department",
+                                          "\\\\Uploads\\InspectionRevs"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\600_General\\Joshua.conn",
+                                             "\\\\AVI_Images\\Argos",
+                                             "\\\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort",
+                                             "\\\\shm-cifs\\Department",
+                                             "\\\\Uploads\\InspectionRevs"
+                                         ],
+                      "ruleCount":  5
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

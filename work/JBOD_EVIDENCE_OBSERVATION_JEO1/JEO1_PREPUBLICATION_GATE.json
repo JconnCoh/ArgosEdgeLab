@@ -1,0 +1,49 @@
+{
+  "schema": "argos_jeo1_prepublication_gate_v1",
+  "createdUtc": "2026-08-25T18:16:40.9562867Z",
+  "state": "PASS_JEO1_PREPUBLICATION",
+  "revision": "JEO1",
+  "branch": "codex/fiducial-opencv-d-drive",
+  "localTip": "9cf9a91953997eb0b4d2f301bf98fa2a8edd57ce",
+  "originTip": "9cf9a91953997eb0b4d2f301bf98fa2a8edd57ce",
+  "package": {
+    "path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/final/ARGOS_JEO1.zip",
+    "bytes": 10365,
+    "sha256": "DFAA7601296DB64870D7C8752490EAF0FD962A8338AC12395480CD6F489889C4"
+  },
+  "dependencies": [
+    {"path":"work/JBOD_EVIDENCE_OBSERVATION_JEO1/final/JEO1_FINAL_PACKAGE_GATE.json","sha256":"6B2B0410BC89E5151CCA9085BFE642E3B14387AC9AE5E0396C48CAD0C5504D74"},
+    {"path":"work/JBOD_EVIDENCE_OBSERVATION_JEO1/JEO1_PATH_GATE.json","sha256":"15894BC8431AE193EA113261279037E2F34C5CE4015CA8EDE3B10B74F10FCE74"},
+    {"path":"work/JBOD_EVIDENCE_OBSERVATION_JEO1/JEO1_TEST_GATE.json","sha256":"8DA52535416F335F1BAA24189F33CC0AA007642FA7D7774C42D15DD913E59390"},
+    {"path":"work/JBOD_EVIDENCE_OBSERVATION_JEO1/JEO1_RECOVERY_INTENT.json","sha256":"CF941ECA21F23D53C0765A8EB6835B454C7749672517E0D08F3341E14F799A69"},
+    {"path":"work/JBOD_EVIDENCE_OBSERVATION_JEO1/JEO1_DIRECT_ADMIN_READ_ONLY_AUTHORIZATION_GATE.json","sha256":"6734664D2FE3E4A4EA3DAC6752C08AF171BA1DB81D4A9FA6A65BF72FB869B1E7"}
+  ],
+  "controls": {
+    "frozenPackageVerified": true,
+    "finalZipExactExtractionVerified": true,
+    "windowsPowerShell51ZeroOneManyPassed": true,
+    "laptopRefusedBeforeObservation": true,
+    "dDriveOnlyLiveOutput": true,
+    "pathBudgetPassed": true,
+    "projectContinuityPassed": true,
+    "sessionSafetyPassed": true,
+    "cleanMatchingBranchTips": true,
+    "destinationZipAbsent": true,
+    "destinationPathGateAbsent": true,
+    "returnZipAbsent": true,
+    "singlePublicationOnly": true,
+    "cdm1RerunAuthorized": false,
+    "cdo1RunAuthorized": false,
+    "o2a2RunAuthorized": false,
+    "o2d4RetryAuthorized": false,
+    "dfly3005Excluded": true
+  },
+  "correctedTopology": "ENGINEERING_LAPTOP_TO_RUSTDESK_GATEWAY_TO_ARGOS_RDP_TO_JBOD_RDP",
+  "taskActions": [],
+  "processActions": [],
+  "waferAction": false,
+  "imageBytesDecoded": false,
+  "targetMutation": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
