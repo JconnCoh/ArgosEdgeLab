@@ -7538,3 +7538,21 @@ than rerunning it.
   evidence. The unchanged O2A2 audit package passed the ZERO case again; use
   fresh `Test-O2A2R3.ps1`, `C:\O2A2T3`, and a create-new R3 gate. No live
   `C:\O2A2` root, share return, JBOD contact, or target mutation occurred.
+
+## 2026-08-25 — Regex backslashes must remain doubled in PowerShell single-quoted patterns
+
+- Failure signature: the first local CDM1 draft rehearsal reached relative-path
+  validation and stopped with `Not enough )'s` while parsing
+  `(^|\)\.\.(\|$)` as a regular expression.
+- Cause: the intended literal-backslash regex lost one backslash in each
+  alternation arm while the draft script was constructed. The PowerShell AST
+  remained valid because the defect was in runtime regex syntax.
+- Mandatory preflight: for every safety-significant regex, run the exact
+  expression through Windows PowerShell 5.1 in the package rehearsal and
+  exercise both an accepted path and the rejected `..` segment. In a
+  PowerShell single-quoted regex string, preserve `\\` where the regex engine
+  must match one literal backslash.
+- Recovery: the unpublished, unsigned DRAFT package made no JBOD contact and
+  deleted no retired source file. Correct the draft in place, refresh every
+  dependent hash, and use fresh local rehearsal and create-new gate paths
+  before freeze; never reuse the failed `work\M1D` rehearsal root.

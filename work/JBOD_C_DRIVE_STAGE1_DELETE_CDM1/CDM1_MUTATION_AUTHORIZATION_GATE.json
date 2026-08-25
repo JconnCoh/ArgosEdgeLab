@@ -1,0 +1,28 @@
+{
+  "schema": "argos_direct_admin_exact_source_delete_authorization_gate_v1",
+  "createdUtc": "2026-08-25T16:30:53.8446586Z",
+  "state": "PASS_CDM1_EXACT_STAGE1_DUPLICATE_DELETE_AUTHORIZED",
+  "incidentId": "JBOD_C_DRIVE_FULL_20260825",
+  "authoritySource": "operator instruction in current task",
+  "operatorInstruction": "delete the stuff you put there that you never deleted",
+  "authorizedAttemptCount": 1,
+  "authorizedSourceRoots": [
+    "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/cache",
+    "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/metadata",
+    "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/dashboard_outputs"
+  ],
+  "authorizedExpectedFiles": 93709,
+  "authorizedExpectedLogicalBytes": 232912232897,
+  "requiredVerifiedMirrors": ["D:/A2/c", "D:/A2/m", "D:/A2/d"],
+  "historicalOutputRootAuthorized": false,
+  "historicalOutputBytesExcluded": 260566845066,
+  "broadCDriveCleanupAuthorized": false,
+  "taskActionsAllowed": false,
+  "processActionsAllowed": false,
+  "installedChangesAllowed": false,
+  "queueMutationAllowed": false,
+  "ledgerMutationAllowed": false,
+  "waferActionsAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

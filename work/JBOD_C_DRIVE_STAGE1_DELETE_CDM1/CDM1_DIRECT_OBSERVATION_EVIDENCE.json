@@ -1,0 +1,46 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-25T16:30:53.8446586Z",
+  "incidentId": "JBOD_C_DRIVE_FULL_20260825",
+  "state": "PASS_DIRECT_JBOD_C_VOLUME_FULL_AND_STAGE1_DUPLICATE_LINEAGE_PINNED",
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "observedHost": "JBOD computer",
+  "observationSource": "operator-visible Windows Local Disk (C:) Properties",
+  "observedFields": {
+    "capacityBytes": 690169573376,
+    "usedBytes": 690169573376,
+    "freeBytes": 0
+  },
+  "signedDuplicateLineage": {
+    "checkpointPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/JBOD_D3A2_SIGNED_EXACT_SET_VERIFY_PASS_CHECKPOINT_20260819.md",
+    "checkpointSha256": "889AF9E26034FC8180CB01A9B36DFF68B5DEB25B35864541FB0766A37328E6C8",
+    "terminalResponseGateSha256": "8706F06E28D9EAA1B88E0DDE7F87257571CA2318BF5842E5DE5EE65E46F04BF8",
+    "finalDeltaManifestPath": "D:/A2/x/manifests/M1_20260819T172439962Z.jsonl",
+    "finalDeltaManifestSha256": "5C42EFF1431867076DC3F3DEE15FA0FB20A0B0C204C2AA38B5E5BDBCD0806DEB",
+    "exactSourceDestinationFileCount": 93709,
+    "exactSourceDestinationBytes": 232912232897,
+    "perFileSourceDestinationSha256Matched": 93709,
+    "exactRelativePathSet": true
+  },
+  "activeDPathLineage": {
+    "cutoverCheckpointPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/JBOD_C2B_SIGNED_D_PATH_REACTIVATION_PASS_CHECKPOINT_20260819.md",
+    "cutoverCheckpointSha256": "65295845065015C8E151BBBDD05283CD789EBBF9847508F7A85C6F0A6770AE98",
+    "liveValidationCheckpointPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/JBOD_C2V6_LOT_COMPLETE_C2D1A_DASHBOARD_AND_INSITE_CLOSURE_CHECKPOINT_20260820.md",
+    "liveValidationCheckpointSha256": "9C372C38AE145FAB43AF252AE35846F00C2466506719006EA8F98471CAC7066E",
+    "oldCRootWritesAfterActivation": 0,
+    "outputRoot": "D:/A2/o",
+    "dashboardOutputRoot": "D:/A2/d",
+    "cacheRoot": "D:/A2/c",
+    "metadataSnapshotRoot": "D:/A2/m/verified"
+  },
+  "mutationsPerformed": false,
+  "taskActionsPerformed": [],
+  "processActionsPerformed": [],
+  "sourceDeletionPerformed": false,
+  "imageBytesRead": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

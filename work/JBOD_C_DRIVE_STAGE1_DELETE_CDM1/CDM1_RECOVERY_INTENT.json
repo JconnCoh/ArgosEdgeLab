@@ -1,0 +1,71 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-25T16:30:53.8446586Z",
+  "incidentId": "JBOD_C_DRIVE_FULL_20260825",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"","sha256":""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_EXACT_SOURCE_DELETE",
+    "jobClass": "DIRECT_ADMIN_EXACT_SOURCE_DELETE",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": true,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path":"","sha256":""},
+    "installedConfigEvidence": {
+      "path": "C:/G3R/R_8F8FC98120E8_20260822175659802_990ddd4c.ready/payload/data/JBOD_PROCESSOR_REVIEW/PROCESSOR_CONFIG.json",
+      "sha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"
+    },
+    "capabilityEvidence": {
+      "path": "work/JBOD_C_DRIVE_STAGE1_DELETE_CDM1/CDM1_DIRECT_OBSERVATION_EVIDENCE.json",
+      "sha256": "DB20C2597DFE346390747857DADC3DD49BF8BD0D1AF4F76371EE72033425B06C"
+    },
+    "qualifiedEndpointGate": {"path":"","sha256":""},
+    "qualifiedAdminGate": {
+      "path": "work/JBOD_C_DRIVE_STAGE1_DELETE_CDM1/CDM1_MUTATION_AUTHORIZATION_GATE.json",
+      "sha256": "7FF20EE1C6FADBF6617836AAD96B69F8B0D73083856B9C952E57C6DA49D9EB6A"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {"sourcePath":"D:/A2/x/manifests/M1_20260819T172439962Z.jsonl","sourceSchema":"stage1 final-delta per-file JSONL","selector":"all 93709 frozen stage1 copy records","uniquenessKey":"tree|relative","maximumRows":93709},
+      {"sourcePath":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/cache;metadata;dashboard_outputs","sourceSchema":"retired exact source trees","selector":"exact manifest-bound files only","uniquenessKey":"normalized full path","maximumRows":93709},
+      {"sourcePath":"D:/A2/c;D:/A2/m;D:/A2/d","sourceSchema":"active destination trees","selector":"exact manifest-bound destination files","uniquenessKey":"tree|relative","maximumRows":93709}
+    ],
+    "requestedCapabilities": ["exactManifestVerification","sourceMetadataStability","destinationSha256Verification","exactFileDeletion"],
+    "requestedFields": ["manifest.sha256","source.files","source.bytes","destination.sha256Matches","deleted.files","deleted.bytes","c.availableFreeBytesAfter"],
+    "decisionOptions": ["A","B","C","D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/JBOD_C_DRIVE_STAGE1_DELETE_CDM1/CDM1_DIRECT_OBSERVATION_EVIDENCE.json",
+      "sha256": "DB20C2597DFE346390747857DADC3DD49BF8BD0D1AF4F76371EE72033425B06C"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "exactAction": "After verifying the frozen manifest, current retired C source exact set and metadata, current D mirror content hashes, exact D-path config, and stable healthy processor identity, delete only the 93709 manifest-bound files and their now-empty directories from the three retired C roots."
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

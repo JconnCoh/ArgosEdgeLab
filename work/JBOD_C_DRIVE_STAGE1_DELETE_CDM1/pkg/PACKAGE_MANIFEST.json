@@ -1,0 +1,34 @@
+{
+  "schema": "argos_cdm1_package_manifest_v1",
+  "revision": "CDM1",
+  "lifecycle": "FROZEN",
+  "incidentId": "JBOD_C_DRIVE_FULL_20260825",
+  "purpose": "Verify exact D mirrors and delete only the manifest-bound retired C stage1 duplicates",
+  "authorization": {
+    "gatePath": "work/JBOD_C_DRIVE_STAGE1_DELETE_CDM1/CDM1_MUTATION_AUTHORIZATION_GATE.json",
+    "gateSha256": "7FF20EE1C6FADBF6617836AAD96B69F8B0D73083856B9C952E57C6DA49D9EB6A",
+    "singleAttemptAuthorized": true,
+    "exactSourceDeletionAuthorized": true,
+    "historicalOutputDeletionAuthorized": false
+  },
+  "files": [
+    {"path":"DELETE_CDM1.ps1","bytes":40359,"sha256":"F903EDB6104BD1526461ED0285A8E0FC02E174381CA9328B28B2DBD96FDF2F76"},
+    {"path":"RUN_CDM1.cmd","bytes":1306,"sha256":"95FF7C4AD2D80A84D267B8C8DF8E899B1094D99BCC73718EF81A78785ECA88FF"},
+    {"path":"INVOCATION.json","bytes":2075,"sha256":"88D84A2BCAE5895A088C01A9715BE2F8390BEE98CBE1D6DB079E13A0F6F49162"},
+    {"path":"README_FIRST.txt","bytes":1233,"sha256":"96A1355F0F442A253000DCDF9581D077D3AC0C9BDBF53ED5247091AB0AB8CEC5"}
+  ],
+  "expectedDeletion": {"files":93709,"logicalBytes":232912232897,"sourceRoots":3,"mirrorRoots":3},
+  "safety": {
+    "historicalOutputRootExcluded": true,
+    "broadCDriveCleanup": false,
+    "taskActions": [],
+    "processActions": [],
+    "installedChanges": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "waferAction": false,
+    "imageBytesDecoded": false,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  }
+}

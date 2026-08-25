@@ -1,0 +1,57 @@
+{
+  "schema": "argos_cdm1_prepublication_gate_v1",
+  "createdUtc": "2026-08-25T17:00:51.2910965Z",
+  "state": "PASS_CDM1_PREPUBLICATION",
+  "revision": "CDM1",
+  "branch": "codex/fiducial-opencv-d-drive",
+  "localTip": "9639066280d4539259d5c05a2a6fd7ef84de5db7",
+  "originTip": "9639066280d4539259d5c05a2a6fd7ef84de5db7",
+  "package": {
+    "path": "work/JBOD_C_DRIVE_STAGE1_DELETE_CDM1/ARGOS_CDM1.zip",
+    "bytes": 12502,
+    "sha256": "E5ACE0AD4BAECA282C42B53AFC9F4EA3D017A3F1DB863EAF4C1FA429F9533CB3"
+  },
+  "dependencies": [
+    {"path":"work/JBOD_C_DRIVE_STAGE1_DELETE_CDM1/ARGOS_CDM1_PATH_GATE.json","sha256":"661D891C998360B2CA73B91B0E7BE95F2D5576FCA65C1CEB3CEA6880A366E9BA"},
+    {"path":"work/JBOD_C_DRIVE_STAGE1_DELETE_CDM1/CDM1_BUILD_GATE.json","sha256":"5BB141C3F21BE32449A782937ADF8D7EE2445569F9C3F9CFD48858EFF59C0188"},
+    {"path":"work/JBOD_C_DRIVE_STAGE1_DELETE_CDM1/CDM1_FINAL_PACKAGE_TEST_GATE.json","sha256":"E45D8F88A39E5ACECFEA02A4885357622ABB43441816956C9B0085D9B4206BBF"},
+    {"path":"work/JBOD_C_DRIVE_STAGE1_DELETE_CDM1/CDM1_LAPTOP_REFUSAL_GATE.json","sha256":"D642D66068C8819CB090A1BD252F68C55B5EE6BD08B2FA5BAB36049B1AB42B40"},
+    {"path":"work/JBOD_C_DRIVE_STAGE1_DELETE_CDM1/CDM1_MUTATION_AUTHORIZATION_GATE.json","sha256":"7FF20EE1C6FADBF6617836AAD96B69F8B0D73083856B9C952E57C6DA49D9EB6A"},
+    {"path":"work/JBOD_C_DRIVE_STAGE1_DELETE_CDM1/CDM1_RECOVERY_INTENT.json","sha256":"6AB552D04C98D6139F142AA4A526521A54F1F24A25F44440EE4B8CBE5F171B79"}
+  ],
+  "controls": {
+    "frozenPackageManifestVerified": true,
+    "finalZipExactExtractionVerified": true,
+    "windowsPowerShell51RehearsalPassed": true,
+    "destinationHashMismatchFailsBeforeDelete": true,
+    "unsafeRelativePathFailsBeforeDelete": true,
+    "validExactDeletePassed": true,
+    "historicalOutputControlUnchanged": true,
+    "destinationFilesUnchanged": true,
+    "processorUnchanged": true,
+    "laptopRefusedBeforeMutation": true,
+    "pathBudgetPassed": true,
+    "projectContinuityPassed": true,
+    "sessionSafetyPassed": true,
+    "singleAttemptOnly": true,
+    "cdo1MustNotRun": true,
+    "o2d4NotRetried": true,
+    "o2a2NotRetried": true
+  },
+  "expectedDeletion": {
+    "files": 93709,
+    "logicalBytes": 232912232897,
+    "roots": [
+      "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\cache",
+      "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\metadata",
+      "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\dashboard_outputs"
+    ]
+  },
+  "excludedRoot": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\outputs",
+  "taskActions": [],
+  "processActions": [],
+  "waferAction": false,
+  "imageBytesDecoded": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

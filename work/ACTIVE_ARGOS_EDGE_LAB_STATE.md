@@ -6647,3 +6647,33 @@ healthy processor, provider configuration, source images, wafers, queues,
 ledgers, or holds. Active work remains exact collection and verification of
 the one matching signed terminal response for `REQ_O2D4`; no retry or
 successor is authorized while it remains unresolved.
+
+## 2026-08-25 CDM1 exact retired-stage duplicate deletion published
+
+The operator superseded the read-only C-drive observation with explicit
+authority to delete only the old C-stage files that were already proven exact
+hash mirrors on D. Frozen `ARGOS_CDM1.zip` is published create-new to
+`InspectionRevs`; share readback SHA-256 is
+`E5ACE0AD4BAECA282C42B53AFC9F4EA3D017A3F1DB863EAF4C1FA429F9533CB3`.
+Publication-gate SHA-256 is
+`A5BD731D5669571A8E982D0D656A4262398A0288F69AC4889F04CB39FC521749`.
+
+CDM1 is `PENDING_GATE` and has not run on JBOD. Its only delete scope is the
+93,709 locked files / 232,912,232,897 logical bytes under retired C `cache`,
+`metadata`, and `dashboard_outputs`, after exact per-file D SHA-256
+verification. The unmirrored historical `outputs` tree remains excluded and
+held. The healthy processor must retain the same PID and creation time; no
+task/process action is permitted.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/JBOD_C_DRIVE_STAGE1_DELETE_CDM1_PUBLISHED_OPERATOR_RUN_PENDING_CHECKPOINT_20260825.md`,
+SHA-256
+`AD50A24EE5A6B82C2DFE975AEC01F28D5672CB58F691B69E6F3EBDF734FD92D4`.
+
+Exact next action: on JBOD only, extract `ARGOS_CDM1.zip` into fresh
+`D:\CDM1`, run `D:\CDM1\RUN_CDM1.cmd` once as administrator, leave the
+window open through terminal completion, then collect only `CDM1R.zip`.
+`ARGOS_CDO1.zip` and `ARGOS_O2A2.zip` must not be run, and `REQ_O2D4` must not
+be retried. Slot16 remains unfrozen, Slot17 blocked, Slots22-25 unseen, the
+live provider disabled, and every hold including
+`SCRIBE_REFERENCE_COVERAGE_HOLD` remains.
