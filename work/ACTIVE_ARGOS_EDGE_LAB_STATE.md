@@ -6921,3 +6921,23 @@ Exact next action: commit and push, require clean matching branch tips, then
 publish only the frozen package and path gate create-new. One JBOD observation
 follows. Slot16 remains unfrozen, Slot17 blocked, Slots22-25 unseen, provider
 disabled, processor untouched, and all holds fixed.
+
+## 2026-08-25 O2A3 published; one JBOD read-only observation pending
+
+The exact frozen 12,290-byte `ARGOS_O2A3.zip` and adjacent path gate were
+published create-new to `InspectionRevs`. Share readback matches SHA-256
+`574FDA03A11C1E64451288CCB911C80558B96DE3E08EA539C51ECD4D7F1DC94B`;
+publication-gate SHA-256 is
+`FE9C18EF2EBE8AF3C5A6563176FE3B0BB99B3F41520934DB9028E5FA503653BC`.
+Publication contacted no JBOD and performed no image, task/process, provider,
+source, wafer, ledger, queue, or hold action.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2A3_PUBLISHED_OPERATOR_OBSERVATION_PENDING_CHECKPOINT_20260825.md`,
+SHA-256
+`C7B137123EF24F47FF952694AFDFB9B8923627FE260BF86A569DC014F718D8F5`.
+
+One operator action remains: on JBOD `A1025645101`, extract the published ZIP
+into fresh `D:\O2A3` and run `RUN_O2A3.cmd` once as administrator. Codex then
+collects only the matching signed response and continues the scribe repair.
+Never rerun O2A3. Slot16/Slot17/provider/processor/holds remain fixed.
