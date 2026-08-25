@@ -47,8 +47,8 @@ Assert-True ([IO.Path]::GetFileName($destinationZip) -eq 'ARGOS_O2D5.zip' -and [
 
 Assert-True (Test-Path -LiteralPath $sourceZip -PathType Leaf) 'O2D5 frozen ZIP is absent.'
 Assert-True ((Get-Item -LiteralPath $sourceZip).Length -eq [int64]$invocation.sourceZipBytes -and (Get-Sha256 $sourceZip) -eq [string]$invocation.sourceZipSha256) 'O2D5 frozen ZIP changed.'
-Assert-True (Test-Path -LiteralPath $sourcePathGate -PathType Leaf -and (Get-Sha256 $sourcePathGate) -eq [string]$invocation.sourcePathGateSha256) 'O2D5 path gate changed.'
-Assert-True (Test-Path -LiteralPath $finalPackageGate -PathType Leaf -and (Get-Sha256 $finalPackageGate) -eq [string]$invocation.finalPackageGateSha256) 'O2D5 final package gate changed.'
+Assert-True ((Test-Path -LiteralPath $sourcePathGate -PathType Leaf) -and (Get-Sha256 $sourcePathGate) -eq [string]$invocation.sourcePathGateSha256) 'O2D5 path gate changed.'
+Assert-True ((Test-Path -LiteralPath $finalPackageGate -PathType Leaf) -and (Get-Sha256 $finalPackageGate) -eq [string]$invocation.finalPackageGateSha256) 'O2D5 final package gate changed.'
 $pathGate = Get-Content -Raw -LiteralPath $sourcePathGate | ConvertFrom-Json
 $finalGate = Get-Content -Raw -LiteralPath $finalPackageGate | ConvertFrom-Json
 Assert-True ([string]$pathGate.state -eq 'PASS_O2D5_COMPLETE_DIRECT_ROUTE_PATH_GATE' -and [int]$pathGate.maximumEffectiveLength -lt 200) 'O2D5 path gate is not publishable.'
