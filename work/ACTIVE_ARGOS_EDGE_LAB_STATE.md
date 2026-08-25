@@ -1,8 +1,95 @@
-# Active ArgosEdgeLab state - OCV-02 O2D4 response absence observed - 2026-08-24
+# Active ArgosEdgeLab state - OCV-02 O2D4 corrected contract failure / direct-observation gap - 2026-08-25
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-02 O2D4 corrected contract failure / direct-observation capability gap — 2026-08-25
+
+The exact current endpoint worker is
+`work/OPENCV_OLS3/pkg/payload/W.ps1`, SHA-256
+`CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250`,
+as pinned by the O2D4 route gate. Mechanical comparison against those exact
+bytes confirms that `REQ_O2D4` cannot pass: its signed manifest requires
+rehearsal-only marker `PASS_O2D4_ENTRYPOINT_TEST_GATE`, while normal execution
+emits `PASS_O2D4_OPENCV_SCRIBE_DEVELOPMENT_EXECUTED`; the worker's 900-second
+maintenance-child timeout is shorter than the entrypoint's 1,800-second
+provider allowance; and static ID `REQ_O2D4` was published without proving
+the endpoint ledger/response namespace absent. The current worker searches
+both response-outbox `pending` and `sent` and archives a same-ID match as a
+replay without creating a fresh response.
+
+All 329 share-visible response manifests had zero O2D4 matches. A further
+600-second exact-prefix watch for `R_A2A87054A416_` completed with no match at
+`2026-08-25T00:08:33.8546944Z`. A bounded recursive portal-share scan found
+only the exact processed request. The response root has not changed since
+`2026-08-24T21:37:06.6874070Z`, before O2D4 gateway consumption. The response
+is not merely late, and the pinned Slot16 source paths/hashes are not the
+defect.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV02_O2D4_CORRECTED_CONTRACT_FAILURE_DIRECT_OBSERVATION_GAP_CHECKPOINT_20260825.md`,
+SHA-256 `0D7A1E7CB8475EACE478A49CF9A48C7EE10372B234AB4C80EC448C147E603A55`.
+Corrected machine diagnosis:
+`work/OPENCV_SCRIBE_O2D4/O2D4_FROZEN_REQUEST_CONTRACT_FAILURE_R2_20260825T000937Z.json`,
+SHA-256 `9BB226016EB5251F037BC996631E434AE375FEBA9360CE82C9E87FBA47FC8AC9`.
+
+Recovery remains `OBSERVE`, with state
+`STOP_RECOVERY_OBSERVATION_CAPABILITY_GAP`. Continue passive exact-response
+collection and obtain authority for one bounded `DIRECT_ADMIN_READ_ONLY`
+observation of the exact endpoint pending/processed/ledger/work, response
+outbox/sent, O2D4 work/output, and `X:` fields. It must install nothing and
+change no task, process, queue, ledger, source, image, or wafer. Do not retry
+O2D4 or publish a successor. Slot16 is not frozen, Slot17 has not started,
+Slots22-25 remain unseen, the live provider stays disabled, and
+`SCRIBE_REFERENCE_COVERAGE_HOLD` plus every existing hold remain fixed.
+
+## WITHDRAWN — OCV-02 O2D4 predecessor contract diagnosis — 2026-08-24
+
+The section below and checkpoint SHA-256
+`92FC151276508C5F781619422A88B285FE2AF3654B932E7CC75452F47AAEFE46`
+are historical only. They used older worker hash `64F1...` rather than the
+route-pinned current worker. The corrected diagnosis above reconfirmed the
+contract failures against exact worker `CB670...`; no external action was
+taken from the withdrawn comparison.
+
+### Historical text
+
+The exact published `REQ_O2D4` cannot produce a valid live pass. Its signed
+manifest requires rehearsal-only marker `PASS_O2D4_ENTRYPOINT_TEST_GATE`,
+while the normal entrypoint emits
+`PASS_O2D4_OPENCV_SCRIBE_DEVELOPMENT_EXECUTED`; the exact installed worker
+therefore must fail even a successful provider run. The worker also kills its
+child after 900 seconds while O2D4 allows the inner OpenCV child 1,800 seconds,
+and the live request used a prohibited static ID without proving the JBOD
+ledger namespace absent. These are known failure-memory recurrences. The
+source paths and exact BF/DF hashes remain pinned and are not the defect.
+
+A complete manifest correlation read all 329 response ZIPs with zero errors
+and found zero `REQ_O2D4` responses at
+`2026-08-24T23:53:17.4129840Z`. Exact response prefix
+`R_A2A87054A416_` also remained absent. O2D4 was already beyond the 910.29
+second gateway-consumption-to-response interval demonstrated by the recent
+`REQ_OLS5` outer-timeout control. Long image processing alone no longer
+explains the absent signed response; the exact broken JBOD/return hop requires
+direct observation.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV02_O2D4_FROZEN_REQUEST_CONTRACT_FAILURE_CHECKPOINT_20260824.md`,
+SHA-256 `92FC151276508C5F781619422A88B285FE2AF3654B932E7CC75452F47AAEFE46`.
+Machine diagnosis:
+`work/OPENCV_SCRIBE_O2D4/O2D4_FROZEN_REQUEST_CONTRACT_FAILURE_20260824T235744Z.json`,
+SHA-256 `C2F1E971063226C7B7C76664B5F9CF0B0CF4D199DE49BE5439C95BDC43BAE5E4`.
+
+O2D4 and its builder, definition, and entrypoint are non-reusable. Continue
+exact-prefix response collection and require qualified direct read-only
+observation of the JBOD pending/processed/ledger/response-outbox, O2D4
+work/output, and `X:` state. The engineering-share route cannot expose those
+fields. Do not retry, publish a portal successor, or mutate a task, process,
+queue, ledger, source, image, wafer, hold, provider, XML, training, or
+production state while the terminal response and direct state are unresolved.
+Slot16 is not frozen, Slot17 has not started, Slots22-25 remain unseen, and
+`SCRIBE_REFERENCE_COVERAGE_HOLD` plus every existing hold remain fixed.
 
 ## OCV-02 O2D4 exact response absence / collection-root hold — 2026-08-24
 

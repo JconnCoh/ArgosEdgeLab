@@ -4,22 +4,40 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
-## OCV-02 O2D4 signed-response absence — 2026-08-24
+## OCV-02 O2D4 corrected contract failure / direct-observation gap — 2026-08-25
 
-- `REQ_O2D4` remains the only active OpenCV migration request. Its exact
-  processed gateway archive hash matches the frozen request, but the reachable
-  engineering response share contained zero post-publication response ZIPs at
-  `2026-08-24T23:35:23.2234404Z`. Gateway consumption is not endpoint evidence.
+- `REQ_O2D4` remains the only active OpenCV migration request, but its frozen
+  signed bytes are invalid and non-reusable. The exact route-pinned current
+  worker is `work/OPENCV_OLS3/pkg/payload/W.ps1`, SHA-256
+  `CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250`.
+- Exact-worker comparison proves three known recurrences: normal execution
+  cannot emit the rehearsal-only required marker; the worker's 900-second
+  timeout is shorter than O2D4's 1,800-second provider allowance; and static
+  ID `REQ_O2D4` was published without proving the endpoint ledger/response
+  namespace absent. The worker treats a same-ID signed response in either
+  outbox `pending` or `sent` as a replay and creates no fresh response.
+- All 329 response manifests had zero O2D4 matches. A further 600-second watch
+  for exact prefix `R_A2A87054A416_` ended with no match at
+  `2026-08-25T00:08:33.8546944Z`. A bounded recursive portal-share scan found
+  only the processed request. The response root has not changed since before
+  O2D4 gateway consumption.
 - The current checkpoint is
-  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV02_O2D4_RESPONSE_ABSENCE_OBSERVATION_CHECKPOINT_20260824.md`,
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV02_O2D4_CORRECTED_CONTRACT_FAILURE_DIRECT_OBSERVATION_GAP_CHECKPOINT_20260825.md`,
   SHA-256
-  `7885DBF26DBE6C473B89566E84E81341794D09125FBE0D4E0B80FED0CCAA2157`.
-- The frozen response-extraction root `C:\A6R` is occupied by older OLS6
-  evidence and is non-reusable. A later exact response requires a supplemental
-  route gate bound to its hash and a fresh short physical root.
-- No retry or successor is authorized. Slot16 is not frozen, Slot17 is
-  blocked, Slots22-25 remain unseen, the live provider stays disabled, and all
-  holds remain fixed.
+  `0D7A1E7CB8475EACE478A49CF9A48C7EE10372B234AB4C80EC448C147E603A55`.
+  Corrected machine diagnosis SHA-256 is
+  `9BB226016EB5251F037BC996631E434AE375FEBA9360CE82C9E87FBA47FC8AC9`.
+- Prior diagnostic SHA-256
+  `C2F1E971063226C7B7C76664B5F9CF0B0CF4D199DE49BE5439C95BDC43BAE5E4`
+  and its checkpoint are `WITHDRAWN`: they compared the older `64F1...`
+  worker. No external action was taken from that error.
+- Recovery is `OBSERVE` with
+  `STOP_RECOVERY_OBSERVATION_CAPABILITY_GAP`. Continue passive exact-response
+  collection and obtain authority for one bounded `DIRECT_ADMIN_READ_ONLY`
+  observation. No retry, successor, task/process/queue/ledger mutation, image
+  read, or wafer action is authorized. Slot16 is not frozen, Slot17 is
+  blocked, Slots22-25 remain unseen, the provider stays disabled, and every
+  hold remains fixed.
 
 ## OpenCV all-image-processing migration — 2026-08-22
 

@@ -1,0 +1,135 @@
+{
+  "schema": "argos_o2d4_frozen_request_contract_failure_v2",
+  "createdUtc": "2026-08-25T00:09:37.0198501Z",
+  "state": "STOP_RECOVERY_OBSERVATION_CAPABILITY_GAP",
+  "disposition": "PENDING_GATE",
+  "supersedes": {
+    "path": "work/OPENCV_SCRIBE_O2D4/O2D4_FROZEN_REQUEST_CONTRACT_FAILURE_20260824T235744Z.json",
+    "sha256": "C2F1E971063226C7B7C76664B5F9CF0B0CF4D199DE49BE5439C95BDC43BAE5E4",
+    "disposition": "WITHDRAWN",
+    "reason": "The first diagnostic compared O2D4 with older worker 64F1BFA34A2F54F6D84D14C5D91BC270346E88E3D95E2E303C0A858206E770B2 instead of the exact current worker pinned by the O2D4 route gate. This corrected revision uses only worker CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250."
+  },
+  "request": {
+    "requestId": "REQ_O2D4",
+    "requestIdSha256": "A2A87054A416E51000CECAF8411CFFF391D10B21210CCCB96145E5E6131B6AAE",
+    "expectedResponsePrefix": "R_A2A87054A416_",
+    "requestZipPath": "work/OPENCV_SCRIBE_O2D4/final/REQ_O2D4.ready.zip",
+    "requestZipBytes": 14825404,
+    "requestZipSha256": "D2411AE50ED33AEE4B6EC8DF1D8B771E228C082C21338B6A4373289EB744C994",
+    "requestManifestPath": "work/OPENCV_SCRIBE_O2D4/final/extract/PORTAL_REQUEST_MANIFEST.json",
+    "requestManifestSha256": "63E93EFC681EAE63E84F9306F57D581E865BB1E1B06D58FDAC8D4586E645F818",
+    "gatewayProcessedCreationUtc": "2026-08-24T22:58:34.5320560Z",
+    "gatewayProcessedExactHashVerified": true,
+    "gatewayConsumptionIsExecutionEvidence": false
+  },
+  "exactCurrentWorker": {
+    "sourcePath": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+    "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "pinnedByRouteGatePath": "work/OPENCV_SCRIBE_O2D4/O2D4_COMPLETE_ROUTE_GATE.json",
+    "pinnedByRouteGateSha256": "AFE9A1306D90C5B54042388901F6FD6902DD8C1637A99714B451EF1F14F8CA34",
+    "mechanicalComparisonUsesExactPinnedWorker": true
+  },
+  "sourceContract": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "slotId": "Slot16",
+    "bfCanonicalPath": "D:/KLARFExport/PatternedFront/Lot_62619-433/62619-433_20260824005735/Slot16/BrightfieldFrontsideWafer/resizedImage/62619-433_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "bfBytes": 475379874,
+    "bfSha256": "CE5502F33D54A12FEF1A082A0B18C1635169B2F5D0BE98C402EA8238D86C2E53",
+    "dfCanonicalPath": "D:/KLARFExport/PatternedFront/Lot_62619-433/62619-433_20260824005735/Slot16/DarkfieldFrontsideWafer/resizedImage/62619-433_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "dfBytes": 475379874,
+    "dfSha256": "6FAC812536C19F07D1C3DAD5263741350E94460A07867F2AEE0D2EEEA8C19ED9",
+    "sourcePathsAndHashesRemainPinned": true,
+    "sourceAbsenceIsNotSupportedByCurrentEvidence": true
+  },
+  "confirmedContractFailures": [
+    {
+      "id": "NORMAL_REQUIRED_STATE_IS_REHEARSAL_ONLY",
+      "deterministic": true,
+      "requestDeclaredRequiredState": "PASS_O2D4_ENTRYPOINT_TEST_GATE",
+      "normalEntrypointSuccessState": "PASS_O2D4_OPENCV_SCRIBE_DEVELOPMENT_EXECUTED",
+      "workerBehavior": "The exact current worker invokes the entrypoint without arguments and requires normal stdout to contain manifest.rehearsal.requiredState.",
+      "effect": "An otherwise successful live run must be rolled back and returned FAILED because normal stdout cannot contain the rehearsal-only marker.",
+      "knownFailureMemorySection": "Maintenance entrypoint required-state must match normal execution output"
+    },
+    {
+      "id": "PARENT_TIMEOUT_SHORTER_THAN_CHILD_TIMEOUT",
+      "deterministic": true,
+      "workerOuterTimeoutSeconds": 900,
+      "entrypointPath": "work/OPENCV_SCRIBE_O2D4/Invoke-O2D4ScribeEndpoint.ps1",
+      "entrypointSha256": "7FB8B54B18D4D446F4C7AC2FFCB3898721222B93FE4B17E69B681B6E6F85C8C2",
+      "entrypointInnerTimeoutSeconds": 1800,
+      "outerTimeoutCoversInnerTimeout": false,
+      "effect": "The current worker can forcibly terminate the entrypoint before its provider bound and before the entrypoint finally removes X:.",
+      "knownFailureMemorySection": "Parent process timeout can bypass child finally cleanup"
+    },
+    {
+      "id": "STATIC_REQUEST_ID_REUSED_AS_LIVE_NAMESPACE",
+      "deterministic": true,
+      "requestId": "REQ_O2D4",
+      "highEntropyTimestampGuidIdentity": false,
+      "endpointLedgerNamespaceProvedAbsentBeforeSignature": false,
+      "exactWorkerReplayBehavior": "The current worker searches both responseOutbox pending and sibling sent for a signed response with the same requestId. On a match it archives the incoming package as replayed and does not create a fresh response.",
+      "effect": "An inaccessible prior ledger or signed response namespace can prevent the new live package from executing or producing a new terminal response.",
+      "knownFailureMemorySection": "Static portal request IDs must be unique across the response archive"
+    }
+  ],
+  "responseObservation": {
+    "responseRoot": "//shm-cifs/Department/DE-1302_FAB_BE_Engineering/60_Saw_VI_Sort/600_General/Joshua.conn/AVI_Images/Argos/Uploads/InspectionRevs/ProjectPortalRO/responses",
+    "fullManifestCorrelationCheckedUtc": "2026-08-24T23:53:17.4129840Z",
+    "responseZipCount": 329,
+    "responseManifestsRead": 329,
+    "responseManifestReadErrors": 0,
+    "matchingRequestIdCount": 0,
+    "exactPrefixMonitorDurationSeconds": 600,
+    "exactPrefixMonitorCompletedUtc": "2026-08-25T00:08:33.8546944Z",
+    "exactPrefixMonitorState": "NO_MATCH_WITHIN_MONITOR_WINDOW",
+    "portalShareRecursiveNameMatchCount": 1,
+    "portalShareOnlyMatchingPath": "ProjectPortalRO/requests/processed/REQ_O2D4.ready.zip",
+    "responseRootLastWriteUtc": "2026-08-24T21:37:06.6874070Z",
+    "noResponseCreatedAfterO2D4GatewayConsumption": true,
+    "terminalEndpointStateKnown": false,
+    "brokenHopNotYetDirectlyObserved": true
+  },
+  "requiredDirectObservation": {
+    "classification": "OBSERVE",
+    "routeTypeRequired": "DIRECT_ADMIN_READ_ONLY",
+    "authorizationGatePresent": false,
+    "capabilityGapState": "STOP_RECOVERY_OBSERVATION_CAPABILITY_GAP",
+    "exactFields": [
+      "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/pending/REQ_O2D4.ready",
+      "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/processed/*/REQ_O2D4.ready",
+      "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/state/ledger/REQ_O2D4.json",
+      "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/state/work/J_A2A87054A416_*",
+      "C:/ProgramData/ArgosProjectPortalRO/to_argos/pending/R_A2A87054A416_*",
+      "C:/ProgramData/ArgosProjectPortalRO/to_argos/sent/R_A2A87054A416_*",
+      "D:/A2/w/ocv/O2D4*",
+      "D:/A2/o/ocv/O2D4*",
+      "X: alias existence and target"
+    ],
+    "allowedActions": [],
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false
+  },
+  "authority": {
+    "matchingSignedTerminalResponseStillRequired": true,
+    "retryAuthorized": false,
+    "successorPublicationAuthorized": false,
+    "healthyProcessorPreserved": true,
+    "providerActivated": false,
+    "slot16Frozen": false,
+    "slot17Started": false,
+    "independentValidationSlotsUnseen": ["Slot22", "Slot23", "Slot24", "Slot25"],
+    "scribeReferenceCoverageHoldPreserved": true,
+    "allExistingHoldsPreserved": true,
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false
+  }
+}

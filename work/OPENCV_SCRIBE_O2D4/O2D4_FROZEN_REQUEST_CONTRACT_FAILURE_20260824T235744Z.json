@@ -1,0 +1,119 @@
+{
+  "schema": "argos_o2d4_frozen_request_contract_failure_v1",
+  "createdUtc": "2026-08-24T23:57:44.9365580Z",
+  "state": "FAIL_O2D4_FROZEN_REQUEST_CONTRACT",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "request": {
+    "requestId": "REQ_O2D4",
+    "requestIdSha256": "A2A87054A416E51000CECAF8411CFFF391D10B21210CCCB96145E5E6131B6AAE",
+    "expectedResponsePrefix": "R_A2A87054A416_",
+    "requestZipPath": "work/OPENCV_SCRIBE_O2D4/final/REQ_O2D4.ready.zip",
+    "requestZipSha256": "D2411AE50ED33AEE4B6EC8DF1D8B771E228C082C21338B6A4373289EB744C994",
+    "requestManifestPath": "work/OPENCV_SCRIBE_O2D4/final/extract/PORTAL_REQUEST_MANIFEST.json",
+    "requestManifestSha256": "63E93EFC681EAE63E84F9306F57D581E865BB1E1B06D58FDAC8D4586E645F818",
+    "gatewayProcessedCreationUtc": "2026-08-24T22:58:34.5320560Z",
+    "gatewayProcessedExactHashVerified": true,
+    "gatewayConsumptionIsExecutionEvidence": false
+  },
+  "sourceContract": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "slotId": "Slot16",
+    "bfCanonicalPath": "D:/KLARFExport/PatternedFront/Lot_62619-433/62619-433_20260824005735/Slot16/BrightfieldFrontsideWafer/resizedImage/62619-433_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "bfBytes": 475379874,
+    "bfSha256": "CE5502F33D54A12FEF1A082A0B18C1635169B2F5D0BE98C402EA8238D86C2E53",
+    "dfCanonicalPath": "D:/KLARFExport/PatternedFront/Lot_62619-433/62619-433_20260824005735/Slot16/DarkfieldFrontsideWafer/resizedImage/62619-433_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "dfBytes": 475379874,
+    "dfSha256": "6FAC812536C19F07D1C3DAD5263741350E94460A07867F2AEE0D2EEEA8C19ED9",
+    "sourcePathsAndHashesRemainPinned": true,
+    "sourceAbsenceIsNotSupportedByCurrentEvidence": true
+  },
+  "contractFailures": [
+    {
+      "id": "NORMAL_REQUIRED_STATE_IS_REHEARSAL_ONLY",
+      "deterministic": true,
+      "requestDeclaredRequiredState": "PASS_O2D4_ENTRYPOINT_TEST_GATE",
+      "normalEntrypointSuccessState": "PASS_O2D4_OPENCV_SCRIBE_DEVELOPMENT_EXECUTED",
+      "declaredStateEmittedByNormalEntrypoint": false,
+      "effect": "The exact installed worker must convert an otherwise successful normal O2D4 run to terminal FAILED because normal stdout cannot contain the declared rehearsal-only marker.",
+      "knownFailureMemoryPath": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "knownFailureMemorySection": "Maintenance entrypoint required-state must match normal execution output"
+    },
+    {
+      "id": "PARENT_TIMEOUT_SHORTER_THAN_CHILD_TIMEOUT",
+      "deterministic": true,
+      "endpointWorkerSha256": "64F1BFA34A2F54F6D84D14C5D91BC270346E88E3D95E2E303C0A858206E770B2",
+      "workerOuterTimeoutSeconds": 900,
+      "entrypointSha256": "7FB8B54B18D4D446F4C7AC2FFCB3898721222B93FE4B17E69B681B6E6F85C8C2",
+      "entrypointInnerTimeoutSeconds": 1800,
+      "outerTimeoutCoversInnerTimeout": false,
+      "effect": "The worker can forcibly terminate the entrypoint before its bounded provider timeout and before its finally cleanup removes X:.",
+      "knownFailureMemoryPath": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "knownFailureMemorySection": "Parent process timeout can bypass child finally cleanup"
+    },
+    {
+      "id": "STATIC_REQUEST_ID_REUSED_AS_LIVE_NAMESPACE",
+      "deterministic": true,
+      "requestId": "REQ_O2D4",
+      "highEntropyTimestampGuidIdentity": false,
+      "endpointLedgerNamespaceProvedAbsentBeforeSignature": false,
+      "effect": "The request violated the required high-entropy request identity and could collide with an inaccessible endpoint ledger or archived route namespace.",
+      "knownFailureMemoryPath": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "knownFailureMemorySection": "Static portal request IDs must be unique across the response archive"
+    }
+  ],
+  "preactionAuditFailure": {
+    "contractPath": "work/OPENCV_SCRIBE_O2D4/PREACTION_BUILD_SIGN_O2D4.json",
+    "contractClaimedResidentConsumersInventoried": true,
+    "contractClaimedDeclaredActionMatchesImplementation": true,
+    "exactWorkerWasMechanicallyComparedToNormalEntrypointState": false,
+    "exactWorkerOuterTimeoutWasComparedToEntrypointInnerTimeout": false,
+    "staticRequestIdWasRejected": false
+  },
+  "responseObservation": {
+    "responseRoot": "//shm-cifs/Department/DE-1302_FAB_BE_Engineering/60_Saw_VI_Sort/600_General/Joshua.conn/AVI_Images/Argos/Uploads/InspectionRevs/ProjectPortalRO/responses",
+    "fullManifestCorrelationCheckedUtc": "2026-08-24T23:53:17.4129840Z",
+    "responseZipCount": 329,
+    "responseManifestsRead": 329,
+    "responseManifestReadErrors": 0,
+    "matchingRequestIdCount": 0,
+    "exactPrefixCheckedUtc": "2026-08-24T23:56:28.0073474Z",
+    "exactPrefixMatchCount": 0,
+    "latestSharedResponseName": "R_719A29FE426D_20260824213821269_cc149521.ready.zip",
+    "latestSharedResponseRequestId": "REQ_OLS6C05",
+    "latestSharedResponseCreationUtc": "2026-08-24T21:37:06.6724090Z",
+    "recentTimeoutControlRequestId": "REQ_OLS5",
+    "recentTimeoutControlState": "FAILED",
+    "recentTimeoutControlShareElapsedSeconds": 910.29,
+    "o2d4OuterTimeoutExpectedShareDeadlineUtc": "2026-08-24T23:13:44.8220560Z",
+    "o2d4WasPastExpectedOuterTimeoutDeadlineAtObservation": true,
+    "terminalEndpointStateKnown": false,
+    "brokenHopNotYetDirectlyObserved": true
+  },
+  "recoveryBoundary": {
+    "classification": "OBSERVE",
+    "matchingSignedTerminalResponseStillRequired": true,
+    "retryAuthorized": false,
+    "successorPublicationAuthorized": false,
+    "directEndpointObservationCapabilityPresentOnLaptop": false,
+    "laptopComputerName": "TXSH-LUPW0JLTPR",
+    "jbodSpecificRoutePresent": false,
+    "winRmTargetConfigured": false,
+    "nextRequiredEvidence": "Exact JBOD pending/processed/ledger/response/outbox/O2D4 work-output/X-alias state through an already authorized read-only route, or the matching signed terminal response.",
+    "capabilityGap": "The authorized engineering-share response route cannot expose the exact JBOD endpoint ledger, pending package, response outbox, D:/A2 O2D4 roots, or X: alias state."
+  },
+  "authority": {
+    "healthyProcessorPreserved": true,
+    "inspectionTasksChanged": false,
+    "providerActivated": false,
+    "slot16Frozen": false,
+    "slot17Started": false,
+    "independentValidationSlotsUnseen": ["Slot22", "Slot23", "Slot24", "Slot25"],
+    "scribeReferenceCoverageHoldPreserved": true,
+    "allExistingHoldsPreserved": true,
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false
+  }
+}
