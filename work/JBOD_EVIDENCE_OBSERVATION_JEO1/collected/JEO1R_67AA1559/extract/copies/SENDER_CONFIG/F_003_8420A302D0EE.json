@@ -1,0 +1,22 @@
+{
+    "schema":  "argos_project_portal_transport_config_v1",
+    "testOnly":  true,
+    "productionRoutingEnabled":  false,
+    "nodeName":  "JBOD_RESPONSE_SENDER",
+    "stateRoot":  "C:\\ProgramData\\ArgosProjectPortalRO\\state\\transport_JBOD_RESPONSE_SENDER",
+    "receiver":  {
+                     "enabled":  false
+                 },
+    "sender":  {
+                   "enabled":  true,
+                   "watchRoot":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending",
+                   "sentRoot":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\sent",
+                   "localBindIp":  "172.16.0.10",
+                   "remoteIp":  "172.16.0.11",
+                   "port":  48717,
+                   "pinnedServerThumbprint":  "09EDA4E43C75FCEBFED37372E26D1A0F9EF8907B",
+                   "sharedSecretPath":  "C:\\ProgramData\\ArgosProjectPortalRO\\secrets\\argos_response.key",
+                   "pollSeconds":  2,
+                   "maxPackageBytes":  536870912
+               }
+}

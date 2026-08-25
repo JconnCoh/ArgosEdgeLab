@@ -7584,3 +7584,27 @@ than rerunning it.
   any observation claim. Build the durable signed read-only JBOD evidence
   channel with a host-authentic return route; JEO1 is non-reusable and cannot
   parent a patched execution package.
+
+## 2026-08-25 — A nullable scheduled-task timestamp must not erase task presence
+
+- Failure signature: JEO1 returned four scheduled-task rows with
+  `present=false` and `You cannot call a method on a null-valued expression`,
+  even though its independent process inventory proved the JBOD endpoint worker
+  and response sender were running. The task collector called
+  `$info.NextRunTime.ToUniversalTime()` while `NextRunTime` was null, and its
+  broad catch replaced the entire already-found task with a false absent row.
+- Cause: one optional task-info timestamp was treated as mandatory inside the
+  same failure boundary as task discovery, definition export, principal,
+  actions, and current state. A presentation-field null therefore destroyed
+  the authoritative presence evidence.
+- Mandatory preflight: capture task existence and definition identity before
+  optional task-info fields. Null-check `LastRunTime` and `NextRunTime`
+  independently and preserve a present row with a field-scoped diagnostic when
+  either timestamp is absent. Rehearse null, zero/default, and populated task
+  timestamps through Windows PowerShell 5.1; a field error must never flip a
+  discovered task to absent.
+- Recovery: treat all JEO1 scheduled-task rows as unusable and make no task or
+  processor-health claim from them. Retain the independently captured process
+  rows and installed config hashes. Any successor observation must use a fresh
+  namespace and null-safe task fields before task state can clear a route or
+  processor hold; frozen executed JEO1 is non-reusable.

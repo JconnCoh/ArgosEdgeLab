@@ -1,0 +1,610 @@
+{
+    "schema":  "argos_jeo1_direct_admin_observation_v1",
+    "createdUtc":  "2026-08-25T18:47:24.0819220Z",
+    "state":  "PASS_JEO1_DIRECT_ADMIN_READ_ONLY_OBSERVATION",
+    "incidentId":  "JBOD_CDM1_POST_RUN_EVIDENCE_20260825",
+    "requestId":  "REQ_O2D4",
+    "expectedResponsePrefix":  "R_A2A87054A416_",
+    "computerName":  "A1025645101",
+    "userName":  "A1025645101\\lwm",
+    "scriptPath":  "D:\\JE01\\ARGOS_JEO1\\AUDIT_JEO1.ps1",
+    "scriptSha256":  "3AA4A48CF9342F8AF93AB462BAF199E0ABC8708F0C204D79AC63C6E3CFE9115A",
+    "invocationManifestSha256":  "400E37CB290C5DDD84E8ADC04AE61D1AB5BDB7597AFB03012668B96383B99E0B",
+    "driveFreeSpace":  [
+                           {
+                               "deviceId":  "C:",
+                               "volumeName":  "",
+                               "sizeBytes":  690169573376,
+                               "freeBytes":  1730494464
+                           },
+                           {
+                               "deviceId":  "D:",
+                               "volumeName":  "JBOD",
+                               "sizeBytes":  479994788577280,
+                               "freeBytes":  476788472676352
+                           }
+                       ],
+    "retiredTreeSummaries":  [
+                                 {
+                                     "id":  "CACHE",
+                                     "root":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\cache",
+                                     "exists":  true,
+                                     "fileCount":  1444,
+                                     "directoryCount":  56,
+                                     "logicalBytes":  83174610824,
+                                     "maximumFiles":  250000,
+                                     "maximumDirectories":  300000,
+                                     "truncated":  false,
+                                     "accessErrors":  [
+
+                                                      ],
+                                     "imageBytesRead":  false
+                                 },
+                                 {
+                                     "id":  "METADATA",
+                                     "root":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\metadata",
+                                     "exists":  true,
+                                     "fileCount":  92347,
+                                     "directoryCount":  4,
+                                     "logicalBytes":  149462687281,
+                                     "maximumFiles":  250000,
+                                     "maximumDirectories":  300000,
+                                     "truncated":  false,
+                                     "accessErrors":  [
+
+                                                      ],
+                                     "imageBytesRead":  false
+                                 },
+                                 {
+                                     "id":  "DASHBOARD_OUTPUTS",
+                                     "root":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\dashboard_outputs",
+                                     "exists":  true,
+                                     "fileCount":  244,
+                                     "directoryCount":  62,
+                                     "logicalBytes":  294245663,
+                                     "maximumFiles":  250000,
+                                     "maximumDirectories":  300000,
+                                     "truncated":  false,
+                                     "accessErrors":  [
+
+                                                      ],
+                                     "imageBytesRead":  false
+                                 }
+                             ],
+    "sourceResults":  [
+                          {
+                              "id":  "CDM1_LAUNCH",
+                              "root":  "D:\\A2\\x\\CDM1_LAUNCH.log",
+                              "selection":  "EXACT_PATH",
+                              "matchText":  "",
+                              "maximumDepth":  0,
+                              "maximumRows":  1,
+                              "matchedStartCount":  1,
+                              "returnedRowCount":  1,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+                                           {
+                                               "name":  "CDM1_LAUNCH.log",
+                                               "fullPath":  "D:\\A2\\x\\CDM1_LAUNCH.log",
+                                               "depth":  0,
+                                               "pathType":  "FILE",
+                                               "bytes":  520,
+                                               "extension":  ".log",
+                                               "attributes":  "Archive, NotContentIndexed",
+                                               "creationUtc":  "2026-08-25T17:11:04.8124476Z",
+                                               "lastWriteUtc":  "2026-08-25T17:11:07.8881775Z",
+                                               "sha256":  "66D75FA0BE30D8AF5EDE57E773B6E537689F6543A9D2F0D9842F3A3BDCB94E25",
+                                               "safeTextOrSignatureContentRead":  true,
+                                               "exactEvidenceZipCopied":  false,
+                                               "imageBytesRead":  false
+                                           }
+                                       ]
+                          },
+                          {
+                              "id":  "CDM1_OUTPUT",
+                              "root":  "D:\\A2\\x\\CDM1",
+                              "selection":  "EXACT_PATH",
+                              "matchText":  "",
+                              "maximumDepth":  4,
+                              "maximumRows":  512,
+                              "matchedStartCount":  0,
+                              "returnedRowCount":  0,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+
+                                       ]
+                          },
+                          {
+                              "id":  "CDM1_LOCAL_ZIP",
+                              "root":  "D:\\A2\\x\\CDM1R_LOCAL.zip",
+                              "selection":  "EXACT_PATH",
+                              "matchText":  "",
+                              "maximumDepth":  0,
+                              "maximumRows":  1,
+                              "matchedStartCount":  0,
+                              "returnedRowCount":  0,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+
+                                       ]
+                          },
+                          {
+                              "id":  "CDM1_SHARE_ZIP",
+                              "root":  "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs\\CDM1R.zip",
+                              "selection":  "EXACT_PATH",
+                              "matchText":  "",
+                              "maximumDepth":  0,
+                              "maximumRows":  1,
+                              "matchedStartCount":  0,
+                              "returnedRowCount":  0,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+
+                                       ]
+                          },
+                          {
+                              "id":  "CDM1_MANIFEST",
+                              "root":  "D:\\A2\\x\\manifests\\M1_20260819T172439962Z.jsonl",
+                              "selection":  "EXACT_PATH",
+                              "matchText":  "",
+                              "maximumDepth":  0,
+                              "maximumRows":  1,
+                              "matchedStartCount":  1,
+                              "returnedRowCount":  1,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+                                           {
+                                               "name":  "M1_20260819T172439962Z.jsonl",
+                                               "fullPath":  "D:\\A2\\x\\manifests\\M1_20260819T172439962Z.jsonl",
+                                               "depth":  0,
+                                               "pathType":  "FILE",
+                                               "bytes":  46282905,
+                                               "extension":  ".jsonl",
+                                               "attributes":  "Archive, NotContentIndexed",
+                                               "creationUtc":  "2026-08-19T17:24:39.9625278Z",
+                                               "lastWriteUtc":  "2026-08-19T20:55:56.1707902Z",
+                                               "sha256":  null,
+                                               "safeTextOrSignatureContentRead":  false,
+                                               "exactEvidenceZipCopied":  false,
+                                               "imageBytesRead":  false
+                                           }
+                                       ]
+                          },
+                          {
+                              "id":  "PROCESSOR_CONFIG",
+                              "root":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json",
+                              "selection":  "EXACT_PATH",
+                              "matchText":  "",
+                              "maximumDepth":  0,
+                              "maximumRows":  1,
+                              "matchedStartCount":  1,
+                              "returnedRowCount":  1,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+                                           {
+                                               "name":  "PROCESSOR_CONFIG.json",
+                                               "fullPath":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json",
+                                               "depth":  0,
+                                               "pathType":  "FILE",
+                                               "bytes":  1964,
+                                               "extension":  ".json",
+                                               "attributes":  "Archive, NotContentIndexed",
+                                               "creationUtc":  "2026-08-06T14:58:29.2399645Z",
+                                               "lastWriteUtc":  "2026-08-22T02:10:30.0000000Z",
+                                               "sha256":  "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8",
+                                               "safeTextOrSignatureContentRead":  true,
+                                               "exactEvidenceZipCopied":  false,
+                                               "imageBytesRead":  false
+                                           }
+                                       ]
+                          },
+                          {
+                              "id":  "ENDPOINT_CONFIG",
+                              "root":  "C:\\ProgramData\\ArgosProjectPortalRO\\config\\endpoint_jbod.json",
+                              "selection":  "EXACT_PATH",
+                              "matchText":  "",
+                              "maximumDepth":  0,
+                              "maximumRows":  1,
+                              "matchedStartCount":  1,
+                              "returnedRowCount":  1,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+                                           {
+                                               "name":  "endpoint_jbod.json",
+                                               "fullPath":  "C:\\ProgramData\\ArgosProjectPortalRO\\config\\endpoint_jbod.json",
+                                               "depth":  0,
+                                               "pathType":  "FILE",
+                                               "bytes":  3144,
+                                               "extension":  ".json",
+                                               "attributes":  "Archive, NotContentIndexed",
+                                               "creationUtc":  "2026-08-09T01:33:52.1511565Z",
+                                               "lastWriteUtc":  "2026-08-09T01:33:52.1511565Z",
+                                               "sha256":  "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F",
+                                               "safeTextOrSignatureContentRead":  true,
+                                               "exactEvidenceZipCopied":  false,
+                                               "imageBytesRead":  false
+                                           }
+                                       ]
+                          },
+                          {
+                              "id":  "SENDER_CONFIG",
+                              "root":  "C:\\ProgramData\\ArgosProjectPortalRO\\config\\JBOD_RESPONSE_SENDER.json",
+                              "selection":  "EXACT_PATH",
+                              "matchText":  "",
+                              "maximumDepth":  0,
+                              "maximumRows":  1,
+                              "matchedStartCount":  1,
+                              "returnedRowCount":  1,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+                                           {
+                                               "name":  "JBOD_RESPONSE_SENDER.json",
+                                               "fullPath":  "C:\\ProgramData\\ArgosProjectPortalRO\\config\\JBOD_RESPONSE_SENDER.json",
+                                               "depth":  0,
+                                               "pathType":  "FILE",
+                                               "bytes":  1036,
+                                               "extension":  ".json",
+                                               "attributes":  "Archive, NotContentIndexed",
+                                               "creationUtc":  "2026-08-09T01:33:51.6917924Z",
+                                               "lastWriteUtc":  "2026-08-09T01:33:51.6917924Z",
+                                               "sha256":  "8420A302D0EE0665E9E034448A245613C6AD5E7EE2D82BF0E7F962A7F7B104E0",
+                                               "safeTextOrSignatureContentRead":  true,
+                                               "exactEvidenceZipCopied":  false,
+                                               "imageBytesRead":  false
+                                           }
+                                       ]
+                          },
+                          {
+                              "id":  "ENDPOINT_WORKER",
+                              "root":  "C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosProjectPortalEndpointWorker.ps1",
+                              "selection":  "EXACT_PATH",
+                              "matchText":  "",
+                              "maximumDepth":  0,
+                              "maximumRows":  1,
+                              "matchedStartCount":  1,
+                              "returnedRowCount":  1,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+                                           {
+                                               "name":  "Invoke-ArgosProjectPortalEndpointWorker.ps1",
+                                               "fullPath":  "C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosProjectPortalEndpointWorker.ps1",
+                                               "depth":  0,
+                                               "pathType":  "FILE",
+                                               "bytes":  67001,
+                                               "extension":  ".ps1",
+                                               "attributes":  "Archive, NotContentIndexed",
+                                               "creationUtc":  "2026-08-09T01:33:48.0049009Z",
+                                               "lastWriteUtc":  "2026-08-24T19:10:34.0031119Z",
+                                               "sha256":  "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+                                               "safeTextOrSignatureContentRead":  true,
+                                               "exactEvidenceZipCopied":  false,
+                                               "imageBytesRead":  false
+                                           }
+                                       ]
+                          },
+                          {
+                              "id":  "PENDING_REQUEST",
+                              "root":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending",
+                              "selection":  "CHILD_NAME_EXACT",
+                              "matchText":  "REQ_O2D4.ready",
+                              "maximumDepth":  2,
+                              "maximumRows":  64,
+                              "matchedStartCount":  0,
+                              "returnedRowCount":  0,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+
+                                       ]
+                          },
+                          {
+                              "id":  "PROCESSED_DONE",
+                              "root":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\completed",
+                              "selection":  "CHILD_NAME_PREFIX",
+                              "matchText":  "REQ_O2D4",
+                              "maximumDepth":  2,
+                              "maximumRows":  64,
+                              "matchedStartCount":  0,
+                              "returnedRowCount":  0,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+
+                                       ]
+                          },
+                          {
+                              "id":  "PROCESSED_FAIL",
+                              "root":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\failed",
+                              "selection":  "CHILD_NAME_PREFIX",
+                              "matchText":  "REQ_O2D4",
+                              "maximumDepth":  2,
+                              "maximumRows":  64,
+                              "matchedStartCount":  0,
+                              "returnedRowCount":  0,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+
+                                       ]
+                          },
+                          {
+                              "id":  "PROCESSED_REPLAY",
+                              "root":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\replayed",
+                              "selection":  "CHILD_NAME_PREFIX",
+                              "matchText":  "REQ_O2D4",
+                              "maximumDepth":  2,
+                              "maximumRows":  64,
+                              "matchedStartCount":  0,
+                              "returnedRowCount":  0,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+
+                                       ]
+                          },
+                          {
+                              "id":  "LEDGER",
+                              "root":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\ledger\\REQ_O2D4.json",
+                              "selection":  "EXACT_PATH",
+                              "matchText":  "",
+                              "maximumDepth":  0,
+                              "maximumRows":  1,
+                              "matchedStartCount":  0,
+                              "returnedRowCount":  0,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+
+                                       ]
+                          },
+                          {
+                              "id":  "ATTEMPT_WORK",
+                              "root":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\work",
+                              "selection":  "CHILD_NAME_PREFIX",
+                              "matchText":  "J_A2A87054A416_",
+                              "maximumDepth":  3,
+                              "maximumRows":  256,
+                              "matchedStartCount":  0,
+                              "returnedRowCount":  0,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+
+                                       ]
+                          },
+                          {
+                              "id":  "MAINTENANCE",
+                              "root":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\maintenance\\REQ_O2D4",
+                              "selection":  "EXACT_PATH",
+                              "matchText":  "",
+                              "maximumDepth":  3,
+                              "maximumRows":  256,
+                              "matchedStartCount":  0,
+                              "returnedRowCount":  0,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+
+                                       ]
+                          },
+                          {
+                              "id":  "RESP_PENDING",
+                              "root":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending",
+                              "selection":  "CHILD_NAME_PREFIX",
+                              "matchText":  "R_A2A87054A416_",
+                              "maximumDepth":  2,
+                              "maximumRows":  128,
+                              "matchedStartCount":  0,
+                              "returnedRowCount":  0,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+
+                                       ]
+                          },
+                          {
+                              "id":  "RESP_SENT",
+                              "root":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\sent",
+                              "selection":  "CHILD_NAME_PREFIX",
+                              "matchText":  "R_A2A87054A416_",
+                              "maximumDepth":  2,
+                              "maximumRows":  128,
+                              "matchedStartCount":  0,
+                              "returnedRowCount":  0,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+
+                                       ]
+                          },
+                          {
+                              "id":  "D_WORK",
+                              "root":  "D:\\A2\\w\\ocv",
+                              "selection":  "CHILD_NAME_PREFIX",
+                              "matchText":  "O2D4",
+                              "maximumDepth":  4,
+                              "maximumRows":  512,
+                              "matchedStartCount":  0,
+                              "returnedRowCount":  0,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+
+                                       ]
+                          },
+                          {
+                              "id":  "D_OUTPUT",
+                              "root":  "D:\\A2\\o\\ocv",
+                              "selection":  "CHILD_NAME_PREFIX",
+                              "matchText":  "O2D4",
+                              "maximumDepth":  4,
+                              "maximumRows":  512,
+                              "matchedStartCount":  0,
+                              "returnedRowCount":  0,
+                              "truncated":  false,
+                              "accessErrors":  [
+
+                                               ],
+                              "rows":  [
+
+                                       ]
+                          }
+                      ],
+    "copiedEvidence":  [
+                           {
+                               "sourceId":  "CDM1_LAUNCH",
+                               "sourcePath":  "D:\\A2\\x\\CDM1_LAUNCH.log",
+                               "kind":  "SAFE_TEXT",
+                               "returnedRelativePath":  "copies/CDM1_LAUNCH/F_000_66D75FA0BE30.log",
+                               "bytes":  520,
+                               "sha256":  "66D75FA0BE30D8AF5EDE57E773B6E537689F6543A9D2F0D9842F3A3BDCB94E25"
+                           },
+                           {
+                               "sourceId":  "PROCESSOR_CONFIG",
+                               "sourcePath":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json",
+                               "kind":  "SAFE_TEXT",
+                               "returnedRelativePath":  "copies/PROCESSOR_CONFIG/F_001_CDFD888129D0.json",
+                               "bytes":  1964,
+                               "sha256":  "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"
+                           },
+                           {
+                               "sourceId":  "ENDPOINT_CONFIG",
+                               "sourcePath":  "C:\\ProgramData\\ArgosProjectPortalRO\\config\\endpoint_jbod.json",
+                               "kind":  "SAFE_TEXT",
+                               "returnedRelativePath":  "copies/ENDPOINT_CONFIG/F_002_55A106E8F29F.json",
+                               "bytes":  3144,
+                               "sha256":  "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F"
+                           },
+                           {
+                               "sourceId":  "SENDER_CONFIG",
+                               "sourcePath":  "C:\\ProgramData\\ArgosProjectPortalRO\\config\\JBOD_RESPONSE_SENDER.json",
+                               "kind":  "SAFE_TEXT",
+                               "returnedRelativePath":  "copies/SENDER_CONFIG/F_003_8420A302D0EE.json",
+                               "bytes":  1036,
+                               "sha256":  "8420A302D0EE0665E9E034448A245613C6AD5E7EE2D82BF0E7F962A7F7B104E0"
+                           }
+                       ],
+    "copiedEvidenceBytes":  6664,
+    "tasks":  [
+                  {
+                      "name":  "ArgosProjectPortal.JBOD.Endpoint.RO",
+                      "present":  false,
+                      "error":  "You cannot call a method on a null-valued expression."
+                  },
+                  {
+                      "name":  "ArgosProjectPortal.JBOD.ResponseSender.RO",
+                      "present":  false,
+                      "error":  "You cannot call a method on a null-valued expression."
+                  },
+                  {
+                      "name":  "ArgosProjectPortal.JBOD.RequestReceiver.RO",
+                      "present":  false,
+                      "error":  "You cannot call a method on a null-valued expression."
+                  },
+                  {
+                      "name":  "ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2",
+                      "present":  false,
+                      "error":  "You cannot call a method on a null-valued expression."
+                  }
+              ],
+    "relevantProcesses":  [
+                              {
+                                  "processId":  3556,
+                                  "parentProcessId":  2352,
+                                  "name":  "powershell.exe",
+                                  "executablePath":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                  "commandLine":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ProjectPortalTaskHost.ps1\" -TargetPath \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" -ArgumentListBase64 \"eyJzY2hlbWEiOiJhcmdvc19wcm9qZWN0X3BvcnRhbF90YXNrX2FyZ3VtZW50c192MSIsImFyZ3VtZW50cyI6WyItLXJ1biIsIkM6XFxQcm9ncmFtRGF0YVxcQXJnb3NQcm9qZWN0UG9ydGFsUk9cXGNvbmZpZ1xcSkJPRF9SRVNQT05TRV9TRU5ERVIuanNvbiJdfQ==\" -StateRoot \"C:\\ProgramData\\ArgosProjectPortalRO\\state\\task_hosts\\ArgosProjectPortal.JBOD.ResponseSender.RO\"",
+                                  "commandLineSha256":  "5D71C78B6879A9904ACC9CB6BDF87A72E8E00B09790A42BA5253A1859A663A98",
+                                  "creationDate":  "2026-08-19T11:56:07.9690820Z"
+                              },
+                              {
+                                  "processId":  11008,
+                                  "parentProcessId":  2352,
+                                  "name":  "powershell.exe",
+                                  "executablePath":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                  "commandLine":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosProjectPortalEndpointWorker.ps1\" -ConfigPath \"C:\\ProgramData\\ArgosProjectPortalRO\\config\\endpoint_jbod.json\"",
+                                  "commandLineSha256":  "A84729C5EC9666AA163D8036FDAA7D56128E056098270C315C587D1345AEE745",
+                                  "creationDate":  "2026-08-19T13:46:53.2256730Z"
+                              },
+                              {
+                                  "processId":  25844,
+                                  "parentProcessId":  3556,
+                                  "name":  "ArgosProjectPortal.Transport.ReviewOnly.V1.exe",
+                                  "executablePath":  "C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe",
+                                  "commandLine":  "\"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" --run C:\\ProgramData\\ArgosProjectPortalRO\\config\\JBOD_RESPONSE_SENDER.json",
+                                  "commandLineSha256":  "3244C1786C316A7DDF3EF689BC0CBD1C229E38F73F924DB4782584488755CA27",
+                                  "creationDate":  "2026-08-19T11:56:08.2448570Z"
+                              }
+                          ],
+    "substRows":  [
+
+                  ],
+    "truncatedSourceCount":  0,
+    "truncatedTreeCount":  0,
+    "sourceAccessErrorCount":  0,
+    "treeAccessErrorCount":  0,
+    "targetMutationsPerformed":  false,
+    "evidenceOutputWritesOnly":  true,
+    "taskActionsPerformed":  [
+
+                             ],
+    "processActionsPerformed":  [
+
+                                ],
+    "queueMutationPerformed":  false,
+    "ledgerMutationPerformed":  false,
+    "sourceMutationPerformed":  false,
+    "imageBytesRead":  false,
+    "waferActionPerformed":  false,
+    "providerActivated":  false,
+    "inspectionTaskChanged":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

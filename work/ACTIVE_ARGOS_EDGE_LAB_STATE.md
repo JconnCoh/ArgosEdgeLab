@@ -1,4 +1,4 @@
-# Active ArgosEdgeLab state - OCV-02 O2A2 published / operator run pending - 2026-08-25
+# Active ArgosEdgeLab state - JEO1R validated / O2D5 direct Slot16 successor design - 2026-08-25
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
@@ -6752,3 +6752,41 @@ already-open nested RDP sessions and place it in `InspectionRevs` as
 `JEO1R.zip`, or attach that exact ZIP after bringing it to the engineering
 laptop. No package rerun is authorized. The processor, provider, slots, and
 all holds remain fixed.
+
+## 2026-08-25 JEO1R exact result validated; CDM1 deleted nothing; O2D4 never executed
+
+The operator-returned 7,980-byte `JEO1R.zip` was collected create-new with
+exact SHA-256
+`67AA1559C6C6DCD46103E14D6D355F1149904E10B05800D9D415E2301BEF622E`.
+Its collection-gate SHA-256 is
+`776DEAD5EC855A00EF468949A35AFC0DFE59193F3798B21F0F2E20EAC8FF3C74`;
+the semantic terminal-gate state is
+`PASS_JEO1R_EXACT_OBSERVATION_WITH_ROUTE_TASK_CAPABILITY_GAPS`, SHA-256
+`04667E3B7DDC5EA38969DF98D859BBD23940A53DE30BBEF5C1D0248AA9EF796B`.
+
+CDM1 failed closed on the unreachable engineering-share return-root check
+before its locked-manifest, D-mirror, or deletion boundary. It deleted zero
+files and must not be rerun. Current C free space is 1,730,494,464 bytes; the
+historical `outputs` tree remains excluded and held.
+
+Eleven exact JBOD O2D4 identities all have zero matches with zero access error
+or truncation. `REQ_O2D4` never executed on JBOD and produced no Slot16
+result. O2D4 remains withdrawn and non-reusable. The endpoint worker and
+response sender were observed running, but no inbound request-receiver process
+was observed and JEO1's nullable task-field defect makes its task rows unusable.
+No processor-health claim is made from those rows and no task/process action is
+authorized.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/JEO1R_VALIDATED_CDM1_NO_DELETE_O2D4_NOT_EXECUTED_CHECKPOINT_20260825.md`,
+SHA-256
+`38AA12B3D9F24D4225E5EE37128C1A3BA2090AA90EAAA125C7935F3CEDED50BD`.
+
+Exact next action: build and fully gate one fresh portable direct-admin O2D5
+Slot16 development package outside the blocked inbound portal queue. It must
+use D-only work/output, the exact frozen Slot16 BF/DF hashes, a high-entropy
+identity, no task/process restart, no installed-provider activation, a durable
+D-local result, and a host-authentic signed outbound response through the
+already-running response sender. After one exact pass, freeze Slot16 and
+continue directly to frozen development Slot17. Slots22-25 stay unseen and
+`SCRIBE_REFERENCE_COVERAGE_HOLD` plus every existing hold remain.
