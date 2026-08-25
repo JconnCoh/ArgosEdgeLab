@@ -4,6 +4,20 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-02 O2A2 published / operator run pending — 2026-08-25
+
+- `InspectionRevs/ARGOS_O2A2.zip` readback is 8,816 bytes, SHA-256
+  `A60926D0EC26BB44B11B47AB70023EC72C08E4F19CE5DA97431CA5212C535C47`.
+- Publication-gate SHA-256 is
+  `E02755F75D22D9064D7E02B845363C1CD3268C6014BCBC63620D32AD95B90380`;
+  `O2A2R.zip` is absent and JBOD execution remains pending.
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV02_O2A2_PUBLISHED_OPERATOR_RUN_PENDING_CHECKPOINT_20260825.md`,
+  SHA-256
+  `A755C7E909755A24898F4A002FA023131180F01EF4D7394D516D949D3C51828A`.
+- Next action is one operator JBOD execution from fresh `C:\O2A2P`; do not
+  retry O2D4. Collect and verify the return before any corrected successor.
+
 ## OCV-02 O2A2 direct observation frozen / publication pending — 2026-08-25
 
 - Frozen package:

@@ -1,8 +1,28 @@
-# Active ArgosEdgeLab state - OCV-02 O2A2 direct observation frozen / publication pending - 2026-08-25
+# Active ArgosEdgeLab state - OCV-02 O2A2 published / operator run pending - 2026-08-25
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-02 O2A2 published / operator run pending — 2026-08-25
+
+The exact 8,816-byte O2A2 ZIP is published to `InspectionRevs` with share
+readback SHA-256
+`A60926D0EC26BB44B11B47AB70023EC72C08E4F19CE5DA97431CA5212C535C47`.
+Publication gate SHA-256 is
+`E02755F75D22D9064D7E02B845363C1CD3268C6014BCBC63620D32AD95B90380`.
+The `O2A2R.zip` return leaf remains absent, so JBOD execution has not occurred.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OPENCV_OCV02_O2A2_PUBLISHED_OPERATOR_RUN_PENDING_CHECKPOINT_20260825.md`,
+SHA-256 `A755C7E909755A24898F4A002FA023131180F01EF4D7394D516D949D3C51828A`.
+
+Operator action: on the JBOD computer only, extract `ARGOS_O2A2.zip` to fresh
+`C:\O2A2P`, right-click `C:\O2A2P\RUN_O2A2.cmd`, choose **Run as
+administrator**, and leave the window visible. Run it once only. The package
+returns `O2A2R.zip` automatically. Do not retry `REQ_O2D4`. Slot16 remains
+unfrozen, Slot17 blocked, Slots22-25 unseen, provider disabled, processor
+untouched, and `SCRIBE_REFERENCE_COVERAGE_HOLD` plus every hold preserved.
 
 ## OCV-02 O2A2 direct observation frozen / publication pending — 2026-08-25
 
