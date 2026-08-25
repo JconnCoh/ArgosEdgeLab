@@ -6894,3 +6894,30 @@ helper hashes, and crop-path metadata. It must not read or hash image bytes or
 change any JBOD state. Only after that evidence is pinned may a fresh OpenCV
 engine revision be built and required to pass the accepted V4 15/15 plus 4/4
 regression before another real-wafer request. All authority and holds remain.
+
+## 2026-08-25 O2A3 exact Slot16 scribe observation frozen; publication pending
+
+Fresh read-only observation revision `O2A3_20260825T195521Z_SLOT16` is frozen.
+The 12,290-byte `ARGOS_O2A3.zip` has SHA-256
+`574FDA03A11C1E64451288CCB911C80558B96DE3E08EA539C51ECD4D7F1DC94B`;
+final-gate SHA-256 is
+`EC530B14EE3AF7CA694C0400002033BF5FA556FE6EFFF621A42C146427DDFD40`.
+The package pins the installed proposal caller/helper, accepted reader and
+polarity sources, accepted 456-reference manifest, processor runner, and exact
+Slot16 proposal/summary-or-hold paths.
+
+Windows PowerShell 5.1 package-shaped tests passed summary, hold, exact-absence,
+and injected-outbound-failure cases. Absence returns a signed hold observation
+rather than triggering a guess. Every case ran while a declared fake BMP was
+exclusively locked, proving the observer never opens image bytes. The D-local
+result is retained before signed outbound return. No JBOD contact occurred.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2A3_EXACT_SLOT16_SCRIBE_OBSERVATION_FROZEN_READY_CHECKPOINT_20260825.md`,
+SHA-256
+`CE4E5FD8FE70D8608AE06703937CD293D24CBA4393647686D318D048FC389503`.
+
+Exact next action: commit and push, require clean matching branch tips, then
+publish only the frozen package and path gate create-new. One JBOD observation
+follows. Slot16 remains unfrozen, Slot17 blocked, Slots22-25 unseen, provider
+disabled, processor untouched, and all holds fixed.

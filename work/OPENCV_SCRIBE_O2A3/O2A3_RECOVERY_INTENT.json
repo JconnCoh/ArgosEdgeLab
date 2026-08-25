@@ -1,0 +1,105 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-25T19:55:21Z",
+  "incidentId": "OCV02_O2D5_SIGNED_SEMANTIC_REGRESSION_20260825",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_ADMIN_EXACT_SLOT16_SCRIBE_METADATA_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {
+      "path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/copies/PROCESSOR_CONFIG/F_001_CDFD888129D0.json",
+      "sha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_SCRIBE_O2A3/O2A3_DIRECT_ADMIN_CAPABILITY_INVENTORY.json",
+      "sha256": "BB0119D10FB5F137424C2F333EE635FC4046CA7F00F2227909CEE73BFA3D6306"
+    },
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_SCRIBE_O2A3/O2A3_DIRECT_ADMIN_READ_ONLY_AUTHORIZATION_GATE.json",
+      "sha256": "645255A64859FF9EE35BB359D6B12A791F7F5A24C5D7CD96DA9670A2D578D556"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/catalog/ALL_WAFER_CATALOG.json",
+        "sourceSchema": "argos_all_wafer_catalog_exact_row_projection",
+        "selector": "lot 62619-433; acquisition 62619-433_20260824005735; slot Slot16; domain FRONTSIDE",
+        "uniquenessKey": "physicalIdentity",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot16/SCRIBE_PROPOSAL.json",
+        "sourceSchema": "installed_current_acquisition_scribe_proposal_json",
+        "selector": "exact physical identity and exact leaf",
+        "uniquenessKey": "fullPath",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot16/scribe/multi_channel",
+        "sourceSchema": "installed_multi_channel_summary_or_hold_json",
+        "selector": "exact SUMMARY and HOLD leaves only",
+        "uniquenessKey": "fullPath",
+        "maximumRows": 2
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Invoke-JbodScribeProposalPass.ps1 and runtime/scribe dependencies",
+        "sourceSchema": "installed_source_code_hash_metadata",
+        "selector": "five exact pinned caller/helper/reader/reference paths",
+        "uniquenessKey": "fullPath",
+        "maximumRows": 5
+      }
+    ],
+    "requestedCapabilities": [
+      "exactBoundedPathMetadata",
+      "safeTextAndSignatureHash",
+      "safeEvidenceReturnCopy",
+      "installedRouteHashInventory"
+    ],
+    "requestedFields": [
+      "catalog.currentAcquisitionSlot16Row",
+      "proposal.exactRawJsonAndSha256",
+      "reader.exactSummaryOrHoldRawJsonAndSha256",
+      "runtime.callerHelperReaderReferenceHashes",
+      "reader.declaredCropPathsAndDimensions",
+      "invariants.imageBytesReadFalse",
+      "invariants.processorIdentityUnchanged"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

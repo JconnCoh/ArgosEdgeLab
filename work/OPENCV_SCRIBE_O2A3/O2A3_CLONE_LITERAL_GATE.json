@@ -1,0 +1,52 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-25T20:04:33.4092884Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2A3\\O2A3_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "C795D2603D79C06E09C483BC00BB79F08EF70C031220504611A5F7FFA145691C",
+    "pairCount":  2,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D5/Invoke-O2D5Direct.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2A3/pkg/Invoke-O2A3Direct.ps1",
+                      "sourceSha256":  "BE70D3B41EB8983F7D193BF5E33858A69FEB890A27DA6B0A7A39CDB662C03F93",
+                      "generatedSha256":  "E09E4AC81ED6CB4BA7B7D71C5499992434CF84D93D69CD3C051D8C6EE6132BE2",
+                      "sourceRoots":  [
+                                          "D:",
+                                          "D:\\A2",
+                                          "D:\\AFCV1",
+                                          "D:\\KLARFExport",
+                                          "X:"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "D:\\A2"
+                                         ],
+                      "ruleCount":  5
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D5/Test-O2D5Direct.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2A3/Test-O2A3Direct.ps1",
+                      "sourceSha256":  "7C3B5E78974F86916E89E015009AF3E370A70A3B949E527892F20180B8EB682C",
+                      "generatedSha256":  "391DF2BB69A4C7FE689F81F7A7F5C5CD548F941B9800DB7C1E46FAA63EDEEB88",
+                      "sourceRoots":  [
+                                          "C:\\O2D5T_54B4C08C",
+                                          "D:\\LOCKED_HISTORICAL_REHEARSAL",
+                                          "X:\\BF.png",
+                                          "X:\\DF.png"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\O2A3T_195521",
+                                             "D:\\A2"
+                                         ],
+                      "ruleCount":  4
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-08-25T20:05:40Z",
+  "state": "PASS_ARGOS_ENDPOINT_STATIC_CAPABILITY_INVENTORY",
+  "auditor": {
+    "path": "work/OPENCV_SCRIBE_O2A3/pkg/Invoke-O2A3Direct.ps1",
+    "sha256": "E09E4AC81ED6CB4BA7B7D71C5499992434CF84D93D69CD3C051D8C6EE6132BE2",
+    "portable": true,
+    "installed": false
+  },
+  "routes": [
+    {
+      "type": "DIRECT_ADMIN_READ_ONLY",
+      "capabilities": [
+        "exactBoundedPathMetadata",
+        "safeTextAndSignatureHash",
+        "safeEvidenceReturnCopy",
+        "installedRouteHashInventory"
+      ]
+    }
+  ],
+  "exactTarget": "62619-433_20260824005735_Slot16",
+  "exactCatalogSelectorBound": 1,
+  "exactEvidenceJsonLeafBound": 3,
+  "exactInstalledDependencyHashBound": 6,
+  "declaredMetadataRowBound": 256,
+  "packageShapedWindowsPowerShell51TestGate": {
+    "path": "work/OPENCV_SCRIBE_O2A3/O2A3_DIRECT_TEST_GATE.json",
+    "sha256": "560F77BB31B2046C0AC5A8B0C4DD0B7A1A9D28BBD22EF380A9EAAD6BDE5AB015"
+  },
+  "sourceInspectionOnly": false,
+  "endpointExecuted": false,
+  "packageShapedRehearsalExecuted": true,
+  "targetMutationCommandsPresent": false,
+  "taskActionCommandsPresent": false,
+  "processActionCommandsPresent": false,
+  "imagePathContentAccessPresent": false,
+  "lockedImageNegativeControlPassed": true,
+  "imageBytesRead": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

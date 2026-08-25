@@ -1,0 +1,54 @@
+{
+  "schema": "argos_o2a3_direct_invocation_v1",
+  "revision": "O2A3_20260825T195521Z_SLOT16",
+  "requestId": "DIRECT_O2A3_20260825T195521Z_SLOT16",
+  "incidentId": "OCV02_O2D5_SIGNED_SEMANTIC_REGRESSION_20260825",
+  "createdUtc": "2026-08-25T19:55:21Z",
+  "rehearsal": false,
+  "injectResponseFailure": false,
+  "minimumDDriveFreeBytes": 1073741824,
+  "maximumCatalogBytes": 67108864,
+  "maximumEvidenceJsonBytes": 4194304,
+  "processorCommandToken": "Run-JbodAllWaferProcessor.ps1",
+  "paths": {
+    "processorConfigPath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json",
+    "endpointConfigPath": "C:\\ProgramData\\ArgosProjectPortalRO\\config\\endpoint_jbod.json",
+    "senderConfigPath": "C:\\ProgramData\\ArgosProjectPortalRO\\config\\JBOD_RESPONSE_SENDER.json",
+    "stateRoot": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2",
+    "outputRoot": "D:\\A2\\x\\O2A3_20260825T195521Z",
+    "localResultPath": "D:\\A2\\x\\O2A3R_20260825T195521Z.zip"
+  },
+  "pins": {
+    "processorConfigSha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8",
+    "endpointConfigSha256": "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F",
+    "senderConfigSha256": "8420A302D0EE0665E9E034448A245613C6AD5E7EE2D82BF0E7F962A7F7B104E0",
+    "dependencies": {
+      "processorRunner": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+      "scribeProposalPass": "3B00E5CDE1BA28DCE347DD4BC83D28B301058E70160D70D4E23E878E5904915B",
+      "multiChannelReader": "E5EA835CA3E8BE32A8E19E9CE46E1E114DFC4823D6A6F186E01AE8BFFF5D6C73",
+      "polarityVariants": "94DFB1B7F38A1E5BF12C41F9D8FBEEDAFFDF888365E9646F1058C58A9F5DEF0C",
+      "imageReader": "0E64D5FBE57556B7FC5A37D6764FDA65CBF780F96A3C994B73954CF985E67206",
+      "referenceManifest": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229"
+    }
+  },
+  "target": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "slotId": "Slot16",
+    "domain": "FRONTSIDE",
+    "expectedPhysicalIdentity": "62619-433_20260824005735_Slot16"
+  },
+  "senderProcessFixture": [],
+  "processorFixture": [],
+  "authority": {
+    "reviewOnly": true,
+    "productionRoutingEnabled": false,
+    "taskOrProcessRestartAllowed": false,
+    "providerActivationAllowed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "holdClearanceAllowed": false,
+    "imageReadAllowed": false,
+    "waferActionAllowed": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+    "schema":  "argos_o2a3_direct_test_gate_v1",
+    "createdUtc":  "2026-08-25T20:05:40.2314802Z",
+    "state":  "PASS_O2A3_DIRECT_PACKAGE_SHAPED_TEST_GATE",
+    "cases":  [
+                  {
+                      "id":  "SUMMARY",
+                      "state":  "PASS",
+                      "observationState":  "PASS_O2A3_EXACT_SLOT16_SCRIBE_OBSERVATION",
+                      "signedResponseVerified":  true,
+                      "processorIdentityUnchanged":  true,
+                      "imageLockHeldDuringRun":  true,
+                      "imageBytesRead":  false
+                  },
+                  {
+                      "id":  "HOLD",
+                      "state":  "PASS",
+                      "observationState":  "PASS_O2A3_EXACT_SLOT16_SCRIBE_OBSERVATION",
+                      "signedResponseVerified":  true,
+                      "processorIdentityUnchanged":  true,
+                      "imageLockHeldDuringRun":  true,
+                      "imageBytesRead":  false
+                  },
+                  {
+                      "id":  "ABSENT",
+                      "state":  "PASS",
+                      "observationState":  "HOLD_O2A3_EXACT_SLOT16_SCRIBE_EVIDENCE_INCOMPLETE",
+                      "signedResponseVerified":  true,
+                      "processorIdentityUnchanged":  true,
+                      "imageLockHeldDuringRun":  true,
+                      "imageBytesRead":  false
+                  },
+                  {
+                      "id":  "OUTBOUND_FAIL",
+                      "state":  "PASS_INJECTED_OUTBOUND_FAILURE",
+                      "localResultRetained":  true,
+                      "signedResponseCreated":  false,
+                      "imageLockHeldDuringRun":  true
+                  }
+              ],
+    "requiredCaseIds":  [
+                            "SUMMARY",
+                            "HOLD",
+                            "ABSENT",
+                            "OUTBOUND_FAIL"
+                        ],
+    "windowsPowerShell51Passed":  true,
+    "packageShapedExecutionPassed":  true,
+    "exactSummaryAndHoldAlternativesPassed":  true,
+    "exactAbsenceReturnsSignedHoldObservation":  true,
+    "injectedOutboundFailureRetainedLocalResult":  true,
+    "lockedImageFixturePassed":  true,
+    "imageBytesRead":  false,
+    "taskOrProcessRestarted":  false,
+    "targetMutationsPerformed":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}
