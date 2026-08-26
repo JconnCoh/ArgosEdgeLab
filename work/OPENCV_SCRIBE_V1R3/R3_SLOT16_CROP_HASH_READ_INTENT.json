@@ -1,0 +1,45 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T00:07:00Z",
+  "incidentId": "OCV02_R3_SLOT16_SCRIBE_PROJECTION_20260826",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_MUTATE",
+    "jobClass": "READ_TWO_EXACT_CURRENT_SLOT16_CROP_FILES_FOR_SHA256_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": ["BOUNDED_SHA256_READ_TWO_DEVELOPMENT_CROP_FILES"],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/copies/PROCESSOR_CONFIG/F_001_CDFD888129D0.json", "sha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"},
+    "capabilityEvidence": {"path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_CROP_HASH_READ_AUTHORIZATION.json", "sha256": "FD5279A5B97886A59CED14BE70FDCA6A69DE4BB97ADD0F7F3CD0835D7E889368"},
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {"exactSources": [], "requestedCapabilities": [], "requestedFields": [], "decisionOptions": ["A", "B", "C", "D"], "mutationDecisionDeferred": false},
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {"path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_SCRIBE_PROJECTION_OBSERVATION_20260826.json", "sha256": "6888BC27C464DC358B6436A56D369FC292BEDB5A7E5579AF51B178C0D4893B0C"},
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

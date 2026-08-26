@@ -1,0 +1,62 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_O2D10_JBOD_RECEIVER_RECOVERY_R9_20260826T184610Z",
+  "createdUtc": "2026-08-26T18:46:10Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "START_ONE_EXACT_PINNED_JBOD_REQUEST_RECEIVER_TASK",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"424AF7388363BAA00FBA1D3E717F18968F1EB81AF84C49FCA1301F1009CD71FE"},
+    {"path":"work/OPENCV_SCRIBE_O2D10/O2D10_JBOD_RECEIVER_RECOVERY_OBSERVATION_R7.json","sha256":"17F8BB9D4FE3E2F288E5305D8CEA7D12C612FE46591059B5BC0FEB899401AC3A"},
+    {"path":"work/OPENCV_SCRIBE_O2D10/O2D10_JBOD_RECEIVER_DEPENDENCY_PINS_R8.json","sha256":"DF718CAD96EAFF6A658D7A58043FF4F7568B32F18BBC88E7CBD681512DAA04EC"},
+    {"path":"work/OPENCV_SCRIBE_O2D10/direct_control_r9/Start-JbodExactPortalRequestReceiverR9.ps1","sha256":"62BA756383FC140D46F524DF3788A08E8E3D978B995EDC21E8B83F18EA7DD2ED"},
+    {"path":"C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosAdminClipboardAction.ps1","sha256":"1F2224E86790C3FA4CFDFDF07BB636F5F9E0885695C59CC9328030D3D91290BC"},
+    {"path":"work/OPENCV_SCRIBE_O2D10/O2D10_JBOD_RECEIVER_RECOVERY_R9_STATIC_GATE.json","sha256":"D00AFB4A6ACD79E1E634938084FECEAB1FB7C37577E477715E913F1B6FD23F68"},
+    {"path":"work/OPENCV_SCRIBE_O2D10/O2D10_JBOD_RECEIVER_RECOVERY_R9_CAPABILITY.json","sha256":"19A33179F8CBBAF92D4525B21F499B3B6CDDBA622617D28D3FA1EC6611A97A68"},
+    {"path":"work/OPENCV_SCRIBE_O2D10/O2D10_JBOD_RECEIVER_RECOVERY_R9_AUTHORIZATION.json","sha256":"4E153FB8B865B9D56B36882B0642C1AA49A5C9B1A0501880F485E96A32CEEDA4"},
+    {"path":"work/OPENCV_SCRIBE_O2D10/O2D10_JBOD_RECEIVER_RECOVERY_INTENT_R9.json","sha256":"5B137074658ED6764F488DB4ABD94A8FFDB15FFC282961E911E6401F3EB22803"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO","ONE","MANY"]
+  },
+  "scope": {
+    "targetComputer": "A1025645101",
+    "taskName": "ArgosProjectPortal.JBOD.RequestReceiver.RO",
+    "maximumTaskStarts": 1,
+    "requestRetry": false,
+    "requestRepublication": false,
+    "otherTaskOrProcessAction": false,
+    "installedByteMutation": false,
+    "healthyProcessorMustRemainUnchanged": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": ["REQ_O2D4"]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,104 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T22:01:54.4418775Z",
+  "incidentId": "OCV02_SLOT19_SOURCE_BINDING_SUMMARY_ABSENCE_20260826",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_SCRIBE_O2S19B1/S19B1_SIGNED_TERMINAL_FAILURE_GATE.json",
+        "sha256": "86F005A975046AF9EEAD48E906B664BE8BD61A2AA801D6C0490DB1D1E622E9D3",
+        "state": "FAILED"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "",
+      "sha256": ""
+    },
+    "workflowReviewClearance": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "route": {
+    "type": "DATA_PULL",
+    "jobClass": "DATA_PULL",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json",
+      "sha256": "12BFF65114DFB1C20B8B4271CD592D80857CFE446595CB9F303868288F62F65E"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/OPENCV_OEL1/OEL1_COMPLETE_ROUTE_GATE.json",
+      "sha256": "30E2A04438770BF9D1515BF9515FC91584EF8A84ACD9C2EF05BBF789F21C95B3"
+    },
+    "qualifiedAdminGate": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "identity/proposals/62619-433_20260824005735_Slot19/SCRIBE_PROPOSAL.json",
+        "sourceSchema": "INSTALLED_SCRIBE_PROPOSAL_JSON",
+        "selector": "EXACT_FILE",
+        "uniquenessKey": "62619-433_20260824005735_Slot19/SCRIBE_PROPOSAL.json",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": [
+      "approvedRootExactFiles"
+    ],
+    "requestedFields": [
+      "existence",
+      "bytes",
+      "sha256",
+      "content"
+    ],
+    "decisionOptions": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {
+      "path": "",
+      "sha256": ""
+    },
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

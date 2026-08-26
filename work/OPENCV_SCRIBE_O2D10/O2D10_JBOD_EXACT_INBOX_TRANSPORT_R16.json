@@ -1,0 +1,145 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-08-26T19:05:32.8523514Z",
+    "state":  "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+    "actionId":  "O2D10_JBOD_EXACT_INBOX_TRANSPORT_R16",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "1F2224E86790C3FA4CFDFDF07BB636F5F9E0885695C59CC9328030D3D91290BC",
+    "payloadSha256":  "AAC0321A245E193F2679854B6095E8857DCD96A7AC0746387AF06E530BB2E91A",
+    "expectedResultSchema":  "argos_o2d10_jbod_inbox_transport_observation_v1",
+    "hostnameGatePassed":  true,
+    "hostnameUsesShortClipboardPaste":  true,
+    "payloadTransferred":  true,
+    "typedTrigger":  "iex(gcb -r)",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "schema":  "argos_o2d10_jbod_inbox_transport_observation_v1",
+                         "createdUtc":  "2026-08-26T19:04:35.6770160Z",
+                         "state":  "PASS_O2D10_JBOD_INBOX_TRANSPORT_OBSERVATION",
+                         "computerName":  "A1025645101",
+                         "requestId":  "REQ_20260826T015418549Z_F5D3732576F9",
+                         "roots":  [
+                                       {
+                                           "root":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod",
+                                           "exists":  true,
+                                           "immediate":  [
+                                                             {
+                                                                 "Name":  "deferred_post2",
+                                                                 "FullName":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\deferred_post2",
+                                                                 "PSIsContainer":  true,
+                                                                 "Length":  null,
+                                                                 "LastWriteTimeUtc":  "\/Date(1786401537785)\/"
+                                                             },
+                                                             {
+                                                                 "Name":  "incoming",
+                                                                 "FullName":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\incoming",
+                                                                 "PSIsContainer":  true,
+                                                                 "Length":  null,
+                                                                 "LastWriteTimeUtc":  "\/Date(1786239228048)\/"
+                                                             },
+                                                             {
+                                                                 "Name":  "pending",
+                                                                 "FullName":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending",
+                                                                 "PSIsContainer":  true,
+                                                                 "Length":  null,
+                                                                 "LastWriteTimeUtc":  "\/Date(1787770876721)\/"
+                                                             },
+                                                             {
+                                                                 "Name":  "processed",
+                                                                 "FullName":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed",
+                                                                 "PSIsContainer":  true,
+                                                                 "Length":  null,
+                                                                 "LastWriteTimeUtc":  "\/Date(1787147213772)\/"
+                                                             },
+                                                             {
+                                                                 "Name":  "receipts",
+                                                                 "FullName":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\receipts",
+                                                                 "PSIsContainer":  true,
+                                                                 "Length":  null,
+                                                                 "LastWriteTimeUtc":  "\/Date(1787770872203)\/"
+                                                             },
+                                                             {
+                                                                 "Name":  "state",
+                                                                 "FullName":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state",
+                                                                 "PSIsContainer":  true,
+                                                                 "Length":  null,
+                                                                 "LastWriteTimeUtc":  "\/Date(1787770876721)\/"
+                                                             }
+                                                         ],
+                                           "exactRequestRows":  [
+                                                                    {
+                                                                        "Name":  "REQ_20260826T015418549Z_F5D3732576F9.ready",
+                                                                        "FullName":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\failed\\REQ_20260826T015418549Z_F5D3732576F9.ready",
+                                                                        "PSIsContainer":  true,
+                                                                        "Length":  null,
+                                                                        "LastWriteTimeUtc":  "\/Date(1787770872181)\/"
+                                                                    },
+                                                                    {
+                                                                        "Name":  "REQ_20260826T015418549Z_F5D3732576F9.receipt.json",
+                                                                        "FullName":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\receipts\\REQ_20260826T015418549Z_F5D3732576F9.receipt.json",
+                                                                        "PSIsContainer":  false,
+                                                                        "Length":  467,
+                                                                        "LastWriteTimeUtc":  "\/Date(1787770872203)\/"
+                                                                    },
+                                                                    {
+                                                                        "Name":  "REQ_20260826T015418549Z_F5D3732576F9.json",
+                                                                        "FullName":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\ledger\\REQ_20260826T015418549Z_F5D3732576F9.json",
+                                                                        "PSIsContainer":  false,
+                                                                        "Length":  459,
+                                                                        "LastWriteTimeUtc":  "\/Date(1787770876721)\/"
+                                                                    },
+                                                                    {
+                                                                        "Name":  "REQ_20260826T015418549Z_F5D3732576F9",
+                                                                        "FullName":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\maintenance\\REQ_20260826T015418549Z_F5D3732576F9",
+                                                                        "PSIsContainer":  true,
+                                                                        "Length":  null,
+                                                                        "LastWriteTimeUtc":  "\/Date(1787770876452)\/"
+                                                                    }
+                                                                ],
+                                           "textFiles":  [
+
+                                                         ]
+                                       },
+                                       {
+                                           "root":  "C:\\ProgramData\\ArgosProjectPortalRO\\state\\transport_JBOD_REQUEST_RECEIVER",
+                                           "exists":  true,
+                                           "immediate":  [
+                                                             {
+                                                                 "Name":  "relay.log",
+                                                                 "FullName":  "C:\\ProgramData\\ArgosProjectPortalRO\\state\\transport_JBOD_REQUEST_RECEIVER\\relay.log",
+                                                                 "PSIsContainer":  false,
+                                                                 "Length":  135435,
+                                                                 "LastWriteTimeUtc":  "\/Date(1787770872214)\/"
+                                                             },
+                                                             {
+                                                                 "Name":  "STATUS.json",
+                                                                 "FullName":  "C:\\ProgramData\\ArgosProjectPortalRO\\state\\transport_JBOD_REQUEST_RECEIVER\\STATUS.json",
+                                                                 "PSIsContainer":  false,
+                                                                 "Length":  256,
+                                                                 "LastWriteTimeUtc":  "\/Date(1787770872203)\/"
+                                                             }
+                                                         ],
+                                           "exactRequestRows":  [
+
+                                                                ],
+                                           "textFiles":  [
+                                                             {
+                                                                 "name":  "STATUS.json",
+                                                                 "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\state\\transport_JBOD_REQUEST_RECEIVER\\STATUS.json",
+                                                                 "length":  256,
+                                                                 "lastWriteTimeUtc":  "\/Date(1787770872203)\/",
+                                                                 "content":  "{\"schema\":\"argos_project_portal_transport_status_v1\",\"updatedUtc\":\"2026-08-26T19:01:12.2033850Z\",\"nodeName\":\"JBOD_REQUEST_RECEIVER\",\"state\":\"RECEIVED_READY\",\"detail\":\"REQ_20260826T015418549Z_F5D3732576F9\",\"testOnly\":true,\"productionRoutingEnabled\":false}\r\n"
+                                                             }
+                                                         ]
+                                       }
+                                   ],
+                         "requestRetried":  false,
+                         "queueMutationPerformed":  false,
+                         "taskOrProcessActionPerformed":  false,
+                         "imageBytesRead":  false,
+                         "mutationsPerformed":  false,
+                         "reviewOnly":  true,
+                         "productionRoutingEnabled":  false
+                     }
+}

@@ -1,0 +1,13 @@
+{
+  "schema":"argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc":"2026-08-26T18:30:20Z",
+  "state":"PASS_O2D10_JBOD_RECEIVER_READ_ONLY_CAPABILITY",
+  "incidentId":"OCV02_O2D10_JBOD_RECEIVER_UNREACHABLE_20260826",
+  "routes":[{"type":"DIRECT_ADMIN_READ_ONLY","action":"JbodReceiverTaskProcessAndPortObservation","targetComputerName":"A1025645101","capabilities":["jbodHostnameGatedDirectProbe","boundedPortalTaskProcessConnectionObservation","structuredLocalFailureEvidence"]}],
+  "runnerPath":"C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+  "runnerSha256":"CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D",
+  "limitations":["REQUIRES_OPERATOR_EXPOSED_EXISTING_JBOD_RDP_LAYER","NO_TASK_OR_PROCESS_ACTION","NO_QUEUE_MUTATION","NO_IMAGE_READ","NO_REQUEST_RETRY"],
+  "mutationsPerformed":false,
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

@@ -1,0 +1,88 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T17:11:00Z",
+  "incidentId": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_20260826",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_ADMIN_READ_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_INBOUND_RELAY_CAPABILITY_INVENTORY.json",
+      "sha256": "47D9B6EBF0A5D95736465292F932C2D3C1F6472556EE3BF6A0099A62EF90CFA1"
+    },
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_INBOUND_RELAY_AUTHORIZATION_GATE.json",
+      "sha256": "43BC26D924795A7B95C03B7656FD14488579D791005C8EA689F83A9C8CA988E0"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "DESKTOP-266P787:C:/ProgramData/ArgosProjectPortalRO",
+        "sourceSchema": "argos_inbound_relay_direct_observation_v1",
+        "selector": "bounded portal task/process/connection rows, config/bin hashes, and direct children of requests_from_gateway and to_jbod queue/archive roots",
+        "uniquenessKey": "category+nativeIdentity",
+        "maximumRows": 1216
+      }
+    ],
+    "requestedCapabilities": [
+      "boundedArgosPortalTaskObservation",
+      "boundedArgosPortalProcessAndConnectionObservation",
+      "boundedInstalledConfigAndWorkerHashObservation",
+      "boundedRequestsFromGatewayQueueArchiveObservation",
+      "boundedToJbodQueueArchiveObservation"
+    ],
+    "requestedFields": [
+      "computerName",
+      "taskRows",
+      "configRows",
+      "workerRows",
+      "processRows",
+      "connectionRows",
+      "queueRows"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "decisionSemantics": {
+      "A": "PASS_CURRENT_HEALTHY_EMPTY",
+      "B": "HOLD_UNHEALTHY",
+      "C": "HOLD_UNRESOLVED_REQUEST",
+      "D": "HOLD_INCOMPLETE"
+    },
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

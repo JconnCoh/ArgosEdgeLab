@@ -1,0 +1,49 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T00:04:00Z",
+  "incidentId": "OCV02_R3_SLOT16_SCRIBE_PROJECTION_20260826",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_CONTROL_EXACT_SLOT16_SCRIBE_PROPERTY_PROJECTION",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/copies/PROCESSOR_CONFIG/F_001_CDFD888129D0.json", "sha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"},
+    "capabilityEvidence": {"path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_PROJECTION_CAPABILITY_INVENTORY.json", "sha256": "89F04A28553BBCE1C35219B5115C0A14C7C4EA5F64B61D5B2C3365D88C8A4398"},
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {"path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_PROJECTION_AUTHORIZATION_GATE.json", "sha256": "122FE9A940E53850F1CDD62DD7438A8CF74675CC1EF4EDC53972CEB9E7233867"}
+  },
+  "observation": {
+    "exactSources": [
+      {"sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot16/SCRIBE_PROPOSAL.json", "sourceSchema": "installed_current_acquisition_scribe_proposal_property_projection", "selector": "exact leaf hash, byte count, property names, and bounded localization/proposal fields", "uniquenessKey": "fullPath", "maximumRows": 1},
+      {"sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot16/scribe/multi_channel", "sourceSchema": "installed_multi_channel_summary_and_hold_property_projection", "selector": "exact SUMMARY and HOLD leaf hashes, byte counts, property names, and bounded localization/proposal fields", "uniquenessKey": "fullPath", "maximumRows": 2}
+    ],
+    "requestedCapabilities": ["exactBoundedPathMetadata", "safeTextAndSignatureHash", "boundedJsonProjection", "hostnameGatedNonceBoundReturn"],
+    "requestedFields": ["proposal.hashBytesPropertyNamesAndLocalizationFields", "reader.hashBytesPropertyNamesAndLocalizationFields", "invariants.imageBytesReadFalse", "invariants.mutationsPerformedFalse"],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {"supportedRemedy": "", "supportingObservation": {"path": "", "sha256": ""}, "endpointMutationNecessary": false, "singleMutationAttemptAuthorized": false},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

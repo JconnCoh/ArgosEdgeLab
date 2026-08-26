@@ -1,0 +1,37 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R3_INSTALLED_O2D5_ASSET_OBSERVATION_20260826",
+  "createdUtc": "2026-08-26T00:20:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "DIRECT_ADMIN_READ_ONLY_EXACT_INSTALLED_ASSET_OBSERVATION",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path": "work/OPENCV_SCRIBE_V1R3/Get-R3InstalledO2D5Assets.ps1", "sha256": "D4228919769469E6BF3F5B880B7EC1C76F6959564D421A69A937BE9CC0933F4A"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3_INSTALLED_O2D5_ASSET_OBSERVATION_INTENT.json", "sha256": "6F2A31089C4C0A0E1428B2803DAFA4DF1664A1B120DA9099E3D6246A7E75CF5B"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {"path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json", "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11", "requiredCaseIds": ["ZERO", "ONE", "MANY"]},
+  "scope": {"filesystem": "AUTHORITATIVE_DESKTOP_REPOSITORY_AND_EXACT_JBOD_NAMED_PATHS", "jbodExecution": true, "providerActivation": false, "currentDevelopmentImagesRead": false, "independentValidationSlotsExposed": false, "maximumNamedFiles": 9},
+  "legacyEvidenceException": {"used": false, "newExecutionAuthorized": false, "futureReuseAllowed": false, "blockedArtifacts": []},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

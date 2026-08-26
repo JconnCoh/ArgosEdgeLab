@@ -1,0 +1,39 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_O2D4_JBOD_ENDPOINT_PROJECTION_20260826T011000Z",
+  "createdUtc": "2026-08-26T01:10:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "DIRECT_ADMIN_READ_ONLY_EXACT_O2D4_JBOD_ENDPOINT_PROJECTION",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path": "work/OPENCV_SCRIBE_V1R3/Get-O2D4JbodEndpointProjectionShort.ps1", "sha256": "134BD24308BFC1B99FAF5563812EF5EC5F97C442DD9364D162AE1BD8C274AE39"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/O2D4_JBOD_ENDPOINT_OBSERVATION_INTENT.json", "sha256": "B07D1AAA29F8DFDA60A01C78FC7D4E011793E0FCBD14018DF124FBC7FAAB3DB1"},
+    {"path": "work/OPENCV_SCRIBE_O2D4/O2D4_FROZEN_REQUEST_CONTRACT_FAILURE_R2_20260825T000937Z.json", "sha256": "9BB226016EB5251F037BC996631E434AE375FEBA9360CE82C9E87FBA47FC8AC9"},
+    {"path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1", "sha256": "59EFFEE5AED64879689324B46DC78FC2B10CFE5DDAC851BF2996D2036C922452"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {"path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json", "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11", "requiredCaseIds": ["ZERO", "ONE", "MANY"]},
+  "scope": {"filesystem": "EXACT_O2D4_JBOD_ENDPOINT_PROJECTION_ONLY", "jbodExecution": true, "providerActivation": false, "currentDevelopmentImagesRead": false, "independentValidationSlotsExposed": false, "commandSourceBytes": 1086},
+  "legacyEvidenceException": {"used": false, "newExecutionAuthorized": false, "futureReuseAllowed": false, "blockedArtifacts": []},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

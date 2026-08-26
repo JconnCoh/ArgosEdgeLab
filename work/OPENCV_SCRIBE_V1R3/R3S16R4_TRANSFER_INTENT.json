@@ -1,0 +1,14 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T00:54:00Z",
+  "incidentId": "OCV02_R3S16_TRANSFER_R4_20260826",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {"signedPremiseFailures": 0, "localPremiseFailures": 0, "directObservationAfterLastSignedFailure": false, "mutationStopLossExplicitlyCleared": false, "failureEvidence": [], "postFailureObservation": {"path": "", "sha256": ""}, "workflowReviewClearance": {"path": "", "sha256": ""}},
+  "route": {"type": "DIRECT_ADMIN_MUTATE", "jobClass": "FRESH_R3S16R4_LENGTH_GATED_TRANSFER_ONLY", "installedCodeChange": false, "helperInstall": false, "taskActions": [], "processActions": ["WRITE_WRAPPER_CORRECTED_HASH_PINNED_HELPER_AND_PAYLOAD_PARTS_TO_FRESH_D_ROOT"], "queueMutation": false, "ledgerMutation": false, "sourceMutation": false, "imageRead": false, "waferAction": false, "inheritsQualifiedEndpointGate": false, "endpointWorker": {"path": "", "sha256": ""}, "installedConfigEvidence": {"path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/copies/PROCESSOR_CONFIG/F_001_CDFD888129D0.json", "sha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"}, "capabilityEvidence": {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R4_TRANSFER_AUTHORIZATION.json", "sha256": "E23B238C9E05989042212DBF3550F26D02037BDC738400F52443793E924FDA14"}, "qualifiedEndpointGate": {"path": "", "sha256": ""}, "qualifiedAdminGate": {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R4_TRANSFER_AUTHORIZATION.json", "sha256": "E23B238C9E05989042212DBF3550F26D02037BDC738400F52443793E924FDA14"}},
+  "observation": {"exactSources": [], "requestedCapabilities": [], "requestedFields": [], "decisionOptions": ["A", "B", "C", "D"], "mutationDecisionDeferred": false},
+  "mutation": {"supportedRemedy": "B", "supportingObservation": {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R4_TRANSFER_SUPPORTING_OBSERVATION.json", "sha256": "4DC6DC793826E4CAB3E8FEC73A3515C632B20CC89F0AF118629008948FEF7E8A"}, "endpointMutationNecessary": true, "singleMutationAttemptAuthorized": true},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

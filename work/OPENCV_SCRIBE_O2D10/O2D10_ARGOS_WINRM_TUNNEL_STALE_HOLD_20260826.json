@@ -1,0 +1,39 @@
+{
+  "schema": "argos_argos_winrm_tunnel_health_hold_v1",
+  "createdUtc": "2026-08-26T16:50:03.5687968Z",
+  "state": "HOLD_EXISTING_ARGOS_WINRM_TUNNEL_STALE_OR_UNROUTED",
+  "incidentId": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_20260826",
+  "tunnel": {
+    "processId": 32736,
+    "creationLocal": "2026-08-25T15:37:33.792511-05:00",
+    "executablePath": "C:/Program Files/RustDesk/RustDesk.exe",
+    "executableSha256": "B654CB0E45016773EDACB532CDDFAA3FAF677ADBBB3BD7B61E31ED0EC23E0C91",
+    "commandLine": "\"C:\\Program Files\\RustDesk\\RustDesk.exe\" --port-forward 10.66.81.84 15985 10.20.70.241 5985",
+    "localPort": 15985,
+    "listening": true,
+    "persistentUpstreamConnectionObserved": false
+  },
+  "wsManIdentify": {
+    "endpoint": "http://127.0.0.1:15985/wsman",
+    "passed": false,
+    "wsManFaultCode": 995,
+    "httpErrorCode": 12152,
+    "messageClass": "INVALID_OR_UNRECOGNIZED_HTTP_RESPONSE",
+    "remoteCommandExecuted": false
+  },
+  "httpHeaderProbe": {
+    "endpoint": "http://127.0.0.1:15985/wsman",
+    "curlExitCode": 52,
+    "response": "EMPTY_REPLY_FROM_SERVER",
+    "credentialsUsed": false,
+    "remoteCommandExecuted": false
+  },
+  "disposition": "Preserve the stale listener. Create at most one fresh local forward on a new port using the pinned RustDesk executable, verify that exact new process and port, and remove only that new process on failure.",
+  "taskOrProcessActionOnArgos": false,
+  "queueOrLedgerMutation": false,
+  "remoteFileMutation": false,
+  "jbodContacted": false,
+  "publicationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

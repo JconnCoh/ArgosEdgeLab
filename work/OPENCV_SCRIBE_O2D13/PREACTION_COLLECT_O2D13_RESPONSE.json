@@ -1,0 +1,106 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_O2D13_COLLECT_SIGNED_RESPONSE_20260826T213200Z",
+  "createdUtc": "2026-08-26T21:32:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "COLLECT_AND_VERIFY_ONLY_MATCHING_SIGNED_O2D13_TERMINAL_RESPONSE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/Collect-O2D13Response.ps1",
+      "sha256": "0985B9B9CA4BF94C1469AA800E5EEAC4A718D91935EC526D7C8CC669D5D59071"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/O2D13_RESPONSE_COLLECTION_INVOCATION.json",
+      "sha256": "DF510D43BF1B9D087EA97D2D945AAE571D9F3FD23ED260F199B0E60B736056AB"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/O2D13_PUBLISH_GATE.json",
+      "sha256": "8575D7EBB9CAB263F6761F88C1A9015307838ADE1C2AB77D7BFBCA13B8518559"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/O2D13_COMPLETE_ROUTE_GATE_R2.json",
+      "sha256": "F7F65BCAF809D586E7E55ED86C83BCD9149703AD399262EAFC28C09E65FE9116"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/O2D13_ENTRYPOINT_TEST_GATE.json",
+      "sha256": "4B3BA8CABB7DE0C16FBB0DD82E726094E3E3162075FDEB1CD55DAC8631AF92D3"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/O2D13_COLLECT_CLONE_LITERAL_GATE_R2.json",
+      "sha256": "7AECA6F5F9A8EFD65988EDBC23D2E25D4AE63A3C151A157BCBF3789063FA1C8E"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalResponse.ps1",
+      "sha256": "4AF5901A7B9DFFF5A4DAF128960173D67501ABF6FF87C586BA526643B1C1449C"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer",
+      "sha256": "5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B"
+    },
+    {
+      "path": "U:/ProjectPortalRO/responses/R_44B8599A5515_20260826213007070_6e53d58b.ready.zip",
+      "sha256": "13C25FE90F1E25C347CFCD44D961AF0B0CE637D1D6562FB2C687D899C41925D3"
+    },
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "586E4360879D90CB931755AD7752478EBAF740638253A42820C7FF65235EF653"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "scope": {
+    "filesystem": "ONE_CREATE_NEW_LOCAL_SIGNED_RESPONSE_COLLECTION",
+    "shareMutation": false,
+    "sourceResponseReadOnly": true,
+    "requestId": "REQ_20260826T211907111Z_AC64E36ED036",
+    "responseId": "R_44B8599A5515_20260826213007070_6e53d58b",
+    "requestRetryAuthorized": false,
+    "responseCollection": "MATCHING_SIGNED_TERMINAL_ONLY",
+    "jbodContact": false,
+    "targetMutation": false,
+    "taskOrProcessRestart": false,
+    "providerActivation": false,
+    "healthyProcessorTouched": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      "REQ_O2D4",
+      "O2D8",
+      "O2D9",
+      "O2D10"
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

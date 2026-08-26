@@ -1,0 +1,39 @@
+{
+  "schema":"argos_recovery_intent_v1",
+  "createdUtc":"2026-08-26T18:22:05Z",
+  "incidentId":"OCV02_O2D10_MATCHING_RESPONSE_PENDING_20260826",
+  "mode":"OBSERVE",
+  "artifactLifecycle":"FROZEN",
+  "policy":{"path":"work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json","sha256":"F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory":{"signedPremiseFailures":0,"localPremiseFailures":1,"directObservationAfterLastSignedFailure":false,"mutationStopLossExplicitlyCleared":false,"failureEvidence":[{"path":"work/OPENCV_SCRIBE_O2D10/O2D10_EXACT_REQUEST_ROUTE_OBSERVATION_INTENT_R9_WITHDRAWAL.json","sha256":"CE1899C7E3FA4A756EB63A5A2830679D878ECFA01C5F827CC730E10F31F2F5B5","state":"WITHDRAWN_PREFLIGHT_CAPABILITY_LABEL_MISMATCH"}],"postFailureObservation":{"path":"","sha256":""},"workflowReviewClearance":{"path":"","sha256":""}},
+  "route":{
+    "type":"DIRECT_ADMIN_READ_ONLY",
+    "jobClass":"DIRECT_ADMIN_READ_ONLY",
+    "installedCodeChange":false,
+    "helperInstall":false,
+    "taskActions":[],
+    "processActions":[],
+    "queueMutation":false,
+    "ledgerMutation":false,
+    "sourceMutation":false,
+    "imageRead":false,
+    "waferAction":false,
+    "inheritsQualifiedEndpointGate":false,
+    "endpointWorker":{"path":"","sha256":""},
+    "installedConfigEvidence":{"path":"work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_RELAY_R4.json","sha256":"A5910A390159B00533CFA5D29CA26D9AFF1391F2B53B96D941D9099A9A569039"},
+    "capabilityEvidence":{"path":"work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_R4_CAPABILITY.json","sha256":"24679BFAFE4096CD69D8C4379C092010AECC252368509414721C28F4713EDA0B"},
+    "qualifiedEndpointGate":{"path":"","sha256":""},
+    "qualifiedAdminGate":{"path":"work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_R4_AUTHORIZATION.json","sha256":"7B8F63D72B7402B1EF546B1BD4574A1DD71CCDEF81FC0F442F5CD4BB79519DD2"}
+  },
+  "observation":{
+    "exactSources":[{"sourcePath":"DESKTOP-266P787:C:/ProgramData/ArgosProjectPortalRO","sourceSchema":"argos_o2d10_exact_request_route_observation_v1","selector":"exact requestId REQ_20260826T015418549Z_F5D3732576F9 and exact response prefix R_AAB6C504C28E_ across bounded portal queue and receipt roots","uniquenessKey":"relativePath","maximumRows":96}],
+    "requestedCapabilities":["shortClipboardPasteHostnameGate","boundedHostnameAdministrativeTokenAndProtectedPortalReadGate","boundedPortalTaskProcessConnectionObservation","boundedRequestsFromGatewayAndToJbodObservation","structuredPerSourceAccessErrors","structuredLocalFailureEvidence"],
+    "requestedFields":["computerName","administrativeToken","requestId","responsePrefix","queueRows","receiptRows","taskRows","connectionRows","sectionErrors"],
+    "decisionOptions":["A","B","C","D"],
+    "decisionSemantics":{"A":"TERMINAL_RESPONSE_ALREADY_IN_ARGOS_RETURN_ROUTE","B":"REQUEST_SENT_TO_JBOD_RESPONSE_PENDING","C":"REQUEST_STALLED_BEFORE_JBOD","D":"HOLD_INCOMPLETE_OR_ACCESS_DENIED"},
+    "mutationDecisionDeferred":true
+  },
+  "mutation":{"supportedRemedy":"","supportingObservation":{"path":"","sha256":""},"endpointMutationNecessary":false,"singleMutationAttemptAuthorized":false},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

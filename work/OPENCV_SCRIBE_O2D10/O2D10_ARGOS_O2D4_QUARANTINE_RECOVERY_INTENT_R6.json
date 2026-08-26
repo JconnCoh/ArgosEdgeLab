@@ -1,0 +1,73 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T18:05:30Z",
+  "incidentId": "OCV02_O2D4_ARGOS_QUEUE_POISON_20260826",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"","sha256":""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_RECOVERY",
+    "jobClass": "DIRECT_ADMIN_RECOVERY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": true,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path":"","sha256":""},
+    "installedConfigEvidence": {"path":"","sha256":""},
+    "capabilityEvidence": {
+      "path":"work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_O2D4_QUARANTINE_R5_CAPABILITY.json",
+      "sha256":"69C988D068371AF43E52BE40239981CFE9287032B3202B87A005CAED81421E23"
+    },
+    "qualifiedEndpointGate": {"path":"","sha256":""},
+    "qualifiedAdminGate": {
+      "path":"work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_O2D4_QUARANTINE_R5_AUTHORIZATION.json",
+      "sha256":"539546EAEC44F2117917E49EBF4E28E8DD8512057D9B49E505F98C71F24A60DD"
+    }
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A","B","C","D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "C",
+    "supportingObservation": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_RELAY_RECOVERY_OBSERVATION_R4.json",
+      "sha256": "194F7DE2A9616D95BCEF3E574584DE122DB9ADAC089E7ECA43046912317B45B5"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "remedyDescription": "Move only the exact six-file, exact-hash, non-reusable REQ_O2D4.ready tree from Argos to_jbod/pending into a create-new quarantine namespace, with no task/process action, JBOD contact, request retry, or O2D10 publication.",
+    "contractPath": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_O2D4_QUARANTINE_R5_STATIC_GATE.json",
+    "contractSha256": "1C6589F7E26A673C837B9DDA6538BA6D86A16B26358F2B8B685488E2A07A5649"
+  },
+  "authorizationBoundary": {
+    "liveDirectAdminMutationAuthorized": true,
+    "liveActionsMaximum": 1,
+    "retryAuthorized": false,
+    "jbodContactAuthorized": false,
+    "requestPublicationAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

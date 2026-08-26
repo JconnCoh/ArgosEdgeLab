@@ -1,0 +1,74 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T16:47:34.8972731Z",
+  "incidentId": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_20260826",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_ADMIN_READ_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_WINRM_IDENTIFY_CAPABILITY_INVENTORY.json",
+      "sha256": "4BDA5D423401ED3ACF02B3CE65BE4C29A38E8B1CF5642C64D044DCD53F1037E0"
+    },
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_WINRM_IDENTIFY_AUTHORIZATION_GATE.json",
+      "sha256": "A6433834F5ADD16CA538451FE99FB44AE3E8E8098649930DD98E73FDA0F447B8"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "http://127.0.0.1:15985/wsman",
+        "sourceSchema": "WS-Management IdentifyResponse",
+        "selector": "single unauthenticated/default-auth Identify response only; no remote command",
+        "uniquenessKey": "ProtocolVersion+ProductVendor+ProductVersion",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": [
+      "winrmIdentifyWithoutRemoteCommand"
+    ],
+    "requestedFields": [
+      "ProtocolVersion",
+      "ProductVendor",
+      "ProductVersion"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

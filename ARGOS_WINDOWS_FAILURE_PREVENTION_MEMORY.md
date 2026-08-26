@@ -1,5 +1,66 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### Direct-control observations leaked fresh interactive PowerShell processes
+
+- Signature: JBOD process inventory shows dozens of bare `powershell.exe`
+  children with the same Windows Terminal console-host parent and creation
+  times matching direct-control observations; protected Argos processes remain
+  separately identifiable by full command line.
+- Cause: the direct-control helper middle-clicked a fresh PowerShell for each
+  action, but several observation commands copied their result without an
+  in-command `exit`. Timeout and parse-error paths also left their console open.
+- Preflight: every fixed remote observation command must parse locally and end
+  with `;exit` in the same submitted command. After test execution, compare
+  exact bare-child cardinality under the pinned terminal parent before and
+  after; require no increase. Capture terminal errors before closing a failed
+  current console.
+- Recovery: pin the exact terminal parent and select only bare PowerShell child
+  command lines created by this control session. Exclude the healthy processor,
+  current tray, portal, sender, bridge, scribe, Insite, monitor, inspection, and
+  every command line with an application script. Stop only the proved leaked
+  interactive children under a file-backed mutation intent and verify the
+  protected command-line set is unchanged.
+- First observed on 2026-08-25 after exact JBOD process inventory returned 59
+  script-host rows, including more than 50 bare children under parent PID 20648.
+
+### Nested RustDesk/RDP SendKeys corrupted shifted PowerShell punctuation
+
+- Signature: a command visible in the JBOD Windows Terminal differs from the
+  locally parsed source: `2>&1` arrives as `2.71`, or the first pipeline `|`
+  arrives as `\`, producing red parser/parameter-binding errors and no
+  clipboard result.
+- Cause: text-level `SendKeys` translation through the laptop RustDesk session
+  and two nested RDP sessions does not reliably preserve shifted punctuation.
+  Local parsing proves source syntax but cannot prove the remote keystrokes.
+- Preflight: send `|`, `>`, and `&` with explicit virtual-key plus Shift
+  down/up events, then exercise an exact hostname-gated scalar pipeline and
+  capture the Windows Terminal buffer when the expected result marker is
+  absent. Never infer focus loss from a missing clipboard result until the
+  terminal text is inspected.
+- Recovery: correct the still-draft direct-control transport, retain the
+  console capture as diagnostic evidence, and rerun only the read-only query.
+  No JBOD task, process, file, queue, ledger, source, wafer, provider, hold, or
+  production state changed.
+- First observed on 2026-08-25 while querying JBOD startup and drive metadata.
+
+### Compact direct-control observation fused a property and comparison operator
+
+- Signature: exact JBOD hostname proof passes, but the bounded scheduled-task
+  inventory never updates the return clipboard and the caller times out.
+- Cause: the fixed read-only command compacted `TaskPath -notlike` into the
+  invalid token `TaskPath-notlike`. The control script parsed its own source
+  but did not parse each constructed fixed remote command before input.
+- Preflight: parse every exact fixed or constructed remote PowerShell command
+  locally with the Windows PowerShell parser before focusing RustDesk or
+  sending any keystroke. Preserve whitespace at every property/operator,
+  keyword/operand, and statement/value boundary.
+- Recovery: correct the still-draft read-only command in place, add the local
+  command parse boundary to the direct-control helper, and rerun only the
+  hostname-gated observation. No task, process, file, queue, ledger, source,
+  wafer, provider, or production state changed.
+- First observed on 2026-08-25 while inventorying non-Microsoft JBOD scheduled
+  tasks through the direct RustDesk/nested-RDP observation route.
+
 ### The Insite exporter rejected a valid producer state and its modal exposed dynamic-scope label shadowing
 
 - Signature: export stops on `Confirmed identity row contract failed` for an
@@ -7661,3 +7722,851 @@ than rerunning it.
 - First observed on 2026-08-25 in the O2D5 response-collection gate. Its
   signature and payload verification remain valid; its Slot16-freeze and
   Slot17-authorization claims are withdrawn.
+
+## 2026-08-25 — Nested-RDP clipboard synchronization can transiently lock the local clipboard
+
+- Failure signature: a direct-control observation stopped locally at
+  `Set-Clipboard : Requested Clipboard operation did not succeed` before the
+  command was sent to the remote Argos console.
+- Cause: RustDesk plus two nested RDP clipboard channels can hold the Windows
+  clipboard while synchronizing a prior remote result. A single
+  `Set-Clipboard` call is not a reliable delivery or sentinel preflight.
+- Mandatory preflight: every direct-control clipboard write must use a bounded
+  retry loop, verify an exact readback after the write, and stop before remote
+  input if the clipboard cannot be acquired. Keep command/result sentinels
+  unique and never treat a stale clipboard value as a new endpoint response.
+- Recovery: retry only the local clipboard acquisition. Because the failing
+  call preceded all remote keystrokes, it is not a remote execution attempt and
+  does not authorize bypassing the endpoint identity gate or reusing a stale
+  result.
+
+## 2026-08-25 — Direct-control runners need an explicit local preflight before freeze
+
+- Failure signature: the harness-safety gate rejected the frozen R1
+  direct-control runner with `MISSING_NON_MUTATING_MODE` and
+  `PARAMETER_VARIABLE_REASSIGNED`; no remote preflight or mutation had run.
+- Cause: read-only behavior was represented only by action names instead of a
+  named `-Preflight` mode, and the typed `$Command` parameter was reassigned
+  when loading `-CommandPath`. PowerShell variable names are case-insensitive,
+  so a typed parameter must not double as mutable working storage.
+- Mandatory preflight: run `Confirm-ArgosPowerShellHarnessSafety.ps1` against
+  the exact direct-control runner before freezing or pinning it in a pre-action
+  contract. Require an early local-only `-Preflight` return that validates
+  action-specific dependencies without focusing RustDesk or sending remote
+  input. Copy typed parameters into separately named effective-value variables
+  and never reassign the parameters.
+- Recovery: withdraw the failed frozen R1 contract, preserve it as evidence,
+  add the explicit local preflight, rename mutable command storage, rerun the
+  parser and harness gates, and issue a fresh R2 intent and pre-action contract.
+  Do not edit or execute the failed frozen R1 contract.
+
+## 2026-08-25 — A multiline clipboard payload is not a terminal response sentinel
+
+- Failure signature: the R2 remote preflight executed successfully, but the
+  local collector immediately passed the still-synchronizing payload text
+  beginning with `[CmdletBinding()]` into `ConvertFrom-Json`, which failed with
+  `Invalid JSON primitive: CmdletBinding`. The exact terminal preflight JSON
+  arrived moments later and proved zero target mutations.
+- Cause: the response predicate accepted any clipboard value whose trimmed
+  form differed from the untrimmed multiline payload sentinel. Newline
+  normalization across RustDesk and nested RDP made the same payload compare
+  unequal to itself.
+- Mandatory preflight: a clipboard response collector must match an exact
+  terminal schema and action/revision identity. Inequality with a sent payload,
+  nonce, or stale clipboard value is not positive response identification.
+  Exercise payload newline normalization and delayed clipboard propagation
+  before freezing the collector.
+- Recovery: collect and pin the already-arriving exact terminal once without
+  retrying the remote preflight. Withdraw the frozen R2 collector, change the
+  predicate to require `argos_legacy_converter_disable_terminal_v1`, rerun all
+  local gates, and issue a fresh R3 contract before any apply action.
+
+## 2026-08-25 — Alt-based focus handoff can change the nested JBOD input language
+
+- Failure signature: while a long Base64 PowerShell command was being typed
+  through RustDesk, Argos RDP, and JBOD RDP, the JBOD input indicator changed
+  from English to German. The remaining command was corrupted, no terminal
+  clipboard marker returned, and later direct-control actions timed out.
+- Cause: the control runner tapped Alt to satisfy Windows foreground-focus
+  restrictions while Shift remained held in the nested remote input state.
+  JBOD received `Left Alt+Shift`, which is a keyboard-layout switch. Base64 is
+  not layout-independent when keys such as Y and Z are subsequently remapped.
+- Mandatory preflight: never emit Alt, Windows-key, or another shortcut to gain
+  foreground focus. Attach the current and foreground input threads, call
+  `SetForegroundWindow`, detach, and require the exact window handle to be
+  foreground. Then send key-up events for left/right Shift, Ctrl, Alt, and
+  Windows keys before every input stage. Require the visible JBOD input
+  indicator to be English before a typed command.
+- Recovery: stop the corrupted shell once, restore English input explicitly,
+  discard the unterminated command attempt, and do not retry its namespace.
+  Patch and validate the direct-control runner before sending more remote input.
+
+## 2026-08-25 — Nested RDP can keep typing after the local runner times out
+
+- Failure signature: a local direct-control process reached its outer timeout
+  while the JBOD console was still visibly receiving the earlier long command;
+  terminating the local runner did not immediately empty the RustDesk and
+  nested-RDP input queues, so the operator had to stop the remote console.
+- Cause: `SendKeys` queued 400-character bursts with only 20 milliseconds
+  between them. The local API accepted input much faster than RustDesk plus two
+  RDP layers could deliver it. The outer process timeout covered only an
+  assumed result window and did not budget the actual remote typing/drain time.
+- Mandatory preflight: pace long Base64 input in 16-character chunks with at
+  least 200 milliseconds between chunks and wait five seconds after the final
+  chunk before Enter. Calculate the caller timeout as the typing estimate plus
+  the declared result timeout plus 30 seconds. At the 8,192-character ceiling,
+  reserve roughly two minutes for typing alone. Never send a second stream or
+  kill the runner while the first stream is visibly draining.
+- Recovery: stop the affected console once, leave processor/task state
+  unchanged, mark the incomplete command non-reusable, validate the paced
+  runner locally, and begin any later observation under a fresh command
+  namespace only after English layout and exact JBOD identity are reverified.
+
+## 2026-08-25 — SendKeys Ctrl+V can degrade to a literal `v` through nested RDP
+
+- Failure signature: the direct-control runner placed the complete command on
+  the verified shared clipboard, called `SendKeys.SendWait('^v')`, and the JBOD
+  PowerShell console received only the single character `v`. The expected
+  nonce-bound result never arrived and the console remained open.
+- Cause: through RustDesk, gateway RDP, Argos RDP, and JBOD RDP, the synthesized
+  Ctrl modifier was dropped while the V key was delivered. A SendKeys chord is
+  not an atomic clipboard-paste operation across this topology.
+- Mandatory preflight: clipboard-based direct control must emit explicit
+  low-level left-Ctrl-down, V-down, V-up, and left-Ctrl-up events with bounded
+  delays. Prove the exact mechanism first with a short `hostname|clip;exit`
+  paste and require `A1025645101`. Do not send a substantive command until that
+  probe passes. Every pasted wrapper must exit its own console on PASS or FAIL.
+- Recovery: terminate the waiting local collector, close only the console
+  opened by that failed attempt, patch and validate the direct-control skill,
+  then run the exact short paste probe. Never fall back to long typed Base64;
+  long typed commands are prohibited in this nested topology.
+
+## 2026-08-25 — Exiting an EncodedCommand child does not close its parent console
+
+- Failure signature: each clipboard-based `Invoke` returned its nonce-bound
+  result, but a new blank interactive PowerShell console remained open. A
+  bounded process inventory showed the hidden qualified monitor/tray processes
+  unchanged and multiple recent plain `powershell.exe` parents, each with a
+  console host and no substantive command line.
+- Cause: the fresh interactive PowerShell launched `powershell.exe
+  -EncodedCommand ...`. The wrapper's `exit` terminated only that child process;
+  control returned to the fresh parent prompt, which had no outer exit command.
+- Mandatory preflight: the pasted command must append `;exit` after the complete
+  EncodedCommand token. Rehearse PASS and remote FAIL and require both to return
+  a nonce-bound result and leave no additional recent plain interactive parent.
+- Recovery: enumerate exact recent plain PowerShell parents and distinguish
+  them from pinned hidden processor, monitor, and tray command lines. With an
+  explicit bounded cleanup authorization, close only the stale parents created
+  by direct control. Never kill PowerShell by name or touch the pinned healthy
+  processor/tray processes.
+
+## 2026-08-25 — A long nested-RDP clipboard paste can open an interactive confirmation
+
+- Failure signature: a bounded cleanup payload was placed on the shared
+  clipboard and pasted into the JBOD console, but an interactive confirmation
+  window opened instead of executing the command. No nonce-bound terminal
+  marker returned; the operator directly reported that the paste did not work.
+- Cause: the terminal/remote clipboard path applied an interactive large-paste
+  safety boundary. A successful short paste probe does not prove that a much
+  longer EncodedCommand will bypass that boundary.
+- Mandatory preflight: record the exact final pasted character count and test
+  the actual transport-length class non-mutatingly before a mutation. Keep
+  direct clipboard commands within the already proven short-paste class. A
+  large file-backed workflow requires a qualified file/portal transfer route;
+  it must not be tunneled as a long clipboard command.
+- Recovery: send Escape once to reject the confirmation, mark the attempted
+  command non-reusable, and make one short direct observation of the exact
+  target identities. Do not press Enter, accept the dialog, or retry the same
+  mutation namespace. Any successor requires fresh observation, intent,
+  pre-action contract, and a transport proven at its exact final length.
+
+## 2026-08-25 — PowerShell `$Matches` can overwrite a case-insensitive process variable
+
+- Failure signature: a locally validated direct-control action failed while
+  binding its RustDesk `-Process` parameter, reporting that a CSV PID string
+  could not convert to `System.Diagnostics.Process`. No remote focus or input
+  occurred.
+- Cause: the runner stored its RustDesk collection in `$matches`. A later
+  `-match`/`-notmatch` validation populated PowerShell's automatic `$Matches`
+  variable; variable names are case-insensitive, so the process collection was
+  replaced by regex captures.
+- Mandatory preflight: never use `$matches` as application storage. Prefer
+  `[regex]::IsMatch()` when the automatic captures are not required, and keep
+  exact process collections under a semantically unique variable name. Exercise
+  every new action through local preflight plus its first focus-binding call.
+- Recovery: because the failure occurred before remote focus or input, correct
+  the DRAFT runner, rerun parser/harness/skill validation, and repeat only the
+  unchanged read-only observation. Do not classify it as a JBOD execution.
+
+## 2026-08-25 — Bare `python` can resolve outside the qualified Argos environment
+
+- Failure signature: a local OpenCV parity gate stopped during module import
+  with `ModuleNotFoundError: No module named 'cv2'`; no gate output or image
+  processing occurred.
+- Cause: the shell resolved bare `python` to `C:\Python314\python.exe`. The
+  qualified Argos development interpreter is the separately recorded
+  `C:\ArgosPy313\Scripts\python.exe`; neither the system Python nor a Codex
+  workspace dependency loader is an interchangeable OpenCV authority.
+- Mandatory preflight: before every local Python/OpenCV gate, resolve the exact
+  interpreter path from `work/ARGOS_LOCAL_DEVELOPMENT_TOOLCHAIN_CHECKPOINT_20260819.md`,
+  invoke that absolute path, and run a bounded `import cv2,numpy` version probe.
+  Never rely on PATH or a bare `python` command.
+- Recovery: retain the no-output failed invocation as transport/toolchain
+  evidence only, verify the qualified interpreter and module versions, then
+  rerun the unchanged local gate using its fresh create-new output path.
+
+## 2026-08-25 — One-letter PowerShell helper names can collide with built-in aliases
+
+- Failure signature: an exact read-only metadata observer called helper `H`
+  with a file path, but Windows PowerShell resolved `H` as the built-in history
+  alias and tried to convert the path to `Get-History -Id`.
+- Cause: command-name precedence and case-insensitive alias resolution make
+  terse one-letter helper names unsafe even when a same-looking function was
+  declared in compact source.
+- Mandatory preflight: prohibit one-letter function/helper names in every
+  Windows/JBOD script. Resolve each custom command name with `Get-Command -All`
+  under Windows PowerShell 5.1 and use a unique verb-noun name such as
+  `Get-ExactSha`.
+- Recovery: withdraw the executed observer namespace, record its nonce and
+  terminal failure, and create a fresh observer artifact with the unique
+  helper name. The failed read-only action returned no asset rows, read no
+  image bytes, and made no mutation.
+
+## 2026-08-25 — Nested RustDesk clipboard input can fail while typed control and clipboard return remain healthy
+
+- Failure signature: the exact short `hostname|clip;exit` clipboard probe
+  timed out, but the immediately subsequent typed `WindowInventory` hostname
+  gate returned exact host `A1025645101` and a complete bounded window list.
+  No substantive command ran during the failed paste attempt.
+- Cause: the RustDesk/RDP inbound clipboard-paste direction was unavailable or
+  intercepted even though the visible nested route, typed key delivery, and
+  remote-to-local clipboard return direction were healthy. A full-screen
+  RustDesk window alone does not prove both clipboard directions.
+- Mandatory preflight: after a clipboard-probe timeout, do not retry the paste
+  or send an EncodedCommand. Run one typed hostname-gated window inventory. A
+  typed fallback may be used only when that exact inventory passes, the command
+  is parser-valid and non-mutating, its source is at most 512 characters, and
+  the transport returns a nonce-bound result. It must reject common mutation
+  tokens and must not carry files, packages, or binary content.
+- Recovery: use the skill's `InvokeTypedReadOnly` lane for the single bounded
+  read-only projection only after the complete constructed transport—not merely
+  the caller source—has passed the typed-length class. Otherwise stop at the
+  exact typed inventory and return to a qualified file or portal transport for
+  payload delivery. Do not type long Base64, accept a paste confirmation, or
+  resize RustDesk.
+
+## 2026-08-25 — Bounding caller source does not bound a constructed typed transport
+
+- Failure signature: a 469-character read-only caller passed its source limit,
+  but the constructed nonce/hostname/result wrapper expanded beyond 1,000
+  characters. The nested RustDesk/RDP/RDP input queue delivered the tail before
+  the head, changed character case, and left PowerShell at continuation prompt
+  `>>`. Console capture proved no caller result and no target mutation.
+- Cause: the gate bounded only caller source and permitted a much longer final
+  typed transport. Nested interactive typing is not an ordered file-transfer
+  channel; a locally parser-valid wrapper can still arrive reordered.
+- Mandatory preflight: path, character, and transport gates must measure the
+  exact final string actually sent. Arbitrary typed wrappers are prohibited in
+  this topology regardless of caller-source length. Typed commands remain
+  limited to the short fixed commands already implemented and proven by the
+  direct-control skill, such as `hostname|clip` and bounded inventory actions.
+- Recovery: withdraw the typed-wrapper feature and failed command namespace,
+  preserve the exact console text as failure evidence, and use a qualified file
+  or portal transport for every payload or compound command. Do not repair the
+  partial continuation prompt by blindly sending Enter or retrying the caller.
+
+## 2026-08-25 — A typed PowerShell parameter can silently coerce a same-named local result
+
+- Failure signature: the bounded OpenCV child completed, but the caller failed
+  in strict mode at `$run.exitCode` because `$run` was a string rather than the
+  intended `PSCustomObject`. The disposable rehearsal root was removed and no
+  gate was created.
+- Cause: function parameter `[string]$Result` and local variable `$result` are
+  the same case-insensitive PowerShell variable. Assigning the invocation object
+  to the typed parameter coerced it to text before return.
+- Mandatory preflight: prohibit local variables that case-insensitively equal a
+  parameter name, especially generic names such as `Result`, `Path`, `Input`,
+  or `Output`. Run an AST inventory of parameter/local assignments and execute
+  the exact normal result-return path under Windows PowerShell 5.1 before freeze.
+- Recovery: withdraw the executed rehearsal namespace, preserve the failure and
+  cleanup proof, and create a fresh product namespace with semantically distinct
+  names such as `$ResultPath` and `$invocation`. Do not patch executed product
+  bytes in place.
+
+## 2026-08-25 — A preserved hold need not be the top-level result state
+
+- Failure signature: the corrected OpenCV endpoint completed its rehearsal, but
+  the harness failed because it required top-level `resultState` to equal
+  `SCRIBE_REFERENCE_COVERAGE_HOLD`. The output contract separately returned the
+  complete `holds` array, where the coverage hold is authoritative.
+- Cause: result-state precedence selects a more specific recognition or
+  localization disposition while independent safety holds remain present in
+  `holds[]`. Equality between one hold code and the top-level state is not the
+  hold-preservation contract.
+- Mandatory preflight: assert required holds by exact code and cardinality in
+  the returned hold set. Validate top-level state only against its explicitly
+  enumerated result-state contract; never infer that an independent hold must
+  replace a more specific state.
+- Recovery: withdraw the executed rehearsal namespace and create a fresh test
+  namespace. Preserve the endpoint semantics and replace only the invalid
+  harness assertion with an exact `holds[]` membership/cardinality check.
+
+## 2026-08-25 — `allowCreate` does not waive maintenance predecessor declaration
+
+- Failure signature: the local signed-package verifier rejected a maintenance
+  request with `Maintenance change lacks approved predecessor hashes` after the
+  request directory was signed but before final ZIP creation or publication.
+- Cause: generic maintenance validation requires every change to declare at
+  least one approved predecessor hash even when `allowCreate` is true. The
+  declaration is also the idempotent/existing-target safety boundary.
+- Mandatory preflight: mechanically validate each `changes[]` row before the
+  first signature. Require a nonempty normalized predecessor set. For a fresh
+  create-only helper destination, declare the exact intended installed hash as
+  the sole idempotent predecessor and keep `allowCreate: true`.
+- Recovery: retain the signed-invalid directory as withdrawn evidence, create a
+  fresh high-entropy request/product namespace, and run the generic signed-
+  package verifier before final ZIP construction. Never patch signed bytes.
+
+## 2026-08-25 — A builder cannot pin the hash of a gate that hashes that builder
+
+- Failure signature: a draft clone-remediation gate recorded the exact builder
+  hash, while the builder also pinned the clone-gate file hash. Updating the
+  builder with that gate hash necessarily made the recorded builder hash stale.
+- Cause: the two artifacts formed an unsatisfiable cryptographic dependency
+  cycle. No choice of gate-ordering can make both exact hashes current.
+- Mandatory preflight: construct the complete clone-remediation manifest before
+  generation, but do not make a generated script pin the hash of an evidence
+  file whose contents include that script's hash. Detect bidirectional hash
+  dependencies as a hard stop before signature or execution.
+- Recovery: while both artifacts remain draft and unsigned, preserve the
+  original pre-generation manifest, make the builder dynamically require the
+  gate state, manifest hash, exact generated path, and its own recorded hash,
+  then regenerate the gate once after the builder is final. The builder may pin
+  the immutable manifest hash; it must not pin the self-referential gate hash.
+
+## 2026-08-25 — Refactoring a pinned gate requires a full downstream symbol audit
+
+- Failure signature: a signed request passed the generic package verifier and
+  exact ZIP extraction, then strict mode rejected an unset former gate-hash
+  variable while constructing the final evidence object.
+- Cause: the builder's preflight dependency was correctly changed from a pinned
+  clone-gate hash to dynamic exact-builder validation, but one downstream
+  evidence-field expression still referenced the removed variable.
+- Mandatory preflight: after removing or renaming a dependency symbol, perform
+  an exact whole-file symbol search and execute the complete build through final
+  gate serialization on an unsigned rehearsal namespace. Preflight success is
+  insufficient when it returns before final evidence construction.
+- Recovery: preserve the signed and partial-final artifacts as withdrawn and
+  non-reusable, create a fresh request/product namespace, replace the evidence
+  field with the actual current clone-gate hash computed after validating the
+  gate contents, and rerun every exact gate before the first new signature.
+
+## 2026-08-25 — Path-budget maxima must be derived from candidate rows
+
+- Failure signature: the exact pre-sign final-gate construction rehearsal failed
+  in strict mode because `maximumEffectiveLength` was read as a top-level
+  property of the path-budget result.
+- Cause: `Confirm-ArgosPathBudget.ps1` returns thresholds and `candidates[]` at
+  the top level; each candidate owns its exact `effectiveLength`. It does not
+  emit a top-level observed maximum.
+- Mandatory preflight: inspect the exact utility schema and derive the observed
+  maximum mechanically from `candidates[].effectiveLength`. Do not confuse the
+  top-level warning/hard-stop thresholds with an observed maximum, and exercise
+  final evidence serialization before signing.
+- Recovery: while the product remains draft and unsigned, calculate the maximum
+  from the nonempty candidate collection, bind that scalar into the final-gate
+  constructor, regenerate any source-hash gate affected by the correction, and
+  rerun the exact preflight.
+
+## 2026-08-26 — Foreground attachment must include the exact RustDesk target thread
+
+- Failure signature: the exact full-screen RustDesk window existed once at the
+  pinned title and `1920x1200` bounds, but the direct-control runner stopped
+  before input with `Exact RustDesk desktop did not become foreground`.
+- Cause: the focus helper attached the calling thread only to the current
+  foreground window thread. Windows accepted the target only after the caller
+  was also attached to the exact RustDesk target UI thread and used
+  `BringWindowToTop`, `SetActiveWindow`, `SetFocus`, and `SetForegroundWindow`.
+- Mandatory preflight: resolve exactly one RustDesk process by pinned title,
+  require the verified full-screen bounds, obtain both foreground and target
+  UI thread IDs, attach the caller to both when distinct, and verify the exact
+  target handle is foreground before emitting any key, click, or clipboard
+  command. A process-name or title match alone is insufficient.
+- Recovery: record that the failed attempt sent zero remote input, update the
+  draft control helper to attach and detach both threads inside `try/finally`,
+  preserve the no-resize/no-minimize rule, run wrapper/harness validation, and
+  forward-test the focus-only path before one exact hostname-gated action.
+
+## 2026-08-26 — RustDesk foreground does not prove synthetic keys entered its capture path
+
+- Failure signature: the exact RustDesk frame was foreground, active, focused,
+  childless, and at the verified full-screen bounds, but the hostname clipboard
+  sentinel never changed. RustDesk's current connection log recorded the
+  sentinel clipboard update and no corresponding Escape, Ctrl+Escape, text, or
+  Enter key events.
+- Cause: `SetForegroundWindow` and GUI-thread focus prove only Win32 focus. The
+  RustDesk client converts events from its own local keyboard-capture path into
+  remote key messages; Windows-synthetic `SendKeys`/`keybd_event` events were
+  not captured in this session.
+- Mandatory preflight: after a focus-only proof, correlate the exact attempt
+  time with the bounded RustDesk connection log. Require the expected key-event
+  rows before treating GUI input as delivered. If the clipboard changes but no
+  attempt keys appear, stop before retry and inventory an already-established
+  non-GUI management tunnel instead.
+- Recovery: preserve the unchanged sentinel and no-command proof, do not add
+  longer sleeps or repeat keyboard input, and qualify the existing fixed
+  RustDesk WinRM port-forward as a separate read-only capability. Never guess,
+  extract, or persist credentials to make the tunnel usable.
+
+## 2026-08-26 — A listening RustDesk port-forward does not prove an upstream route
+
+- Failure signature: the existing RustDesk `--port-forward` process owned the
+  expected local listening port, but had no persistent upstream connection.
+  WS-Man Identify returned HTTP error `12152`, and a header-only HTTP probe
+  received an empty reply.
+- Cause: a long-lived local listener can survive the interactive RustDesk
+  connection that authenticated or routed it. Local `LISTEN` state proves only
+  that the client process accepted the socket; it does not prove gateway or
+  target reachability.
+- Mandatory preflight: pin the exact RustDesk executable hash, peer, local and
+  target ports, process command line, and creation time. Require both the exact
+  new listener and a valid protocol-level response before granting the tunnel
+  any read-only remote-command capability.
+- Recovery: preserve the stale listener, refuse to recycle or overwrite its
+  port, create at most one fresh listener on a new exact port, and track its
+  exact PID/command line. If protocol validation fails, stop only the process
+  created by that attempt and leave every predecessor listener untouched.
+
+### A direct-control skill is incomplete when it omits the separate listener state
+
+- Failure signature: a prior session had established a RustDesk management
+  listener, but the next session treated the nested desktop-input helper as
+  the complete transport and began debugging GUI injection without first
+  inventorying that listener. The operator correctly reported that the prior
+  listener window was no longer visible.
+- Cause: the durable skill documented only the interactive RustDesk/RDP input
+  path and explicitly created no listener. It did not require a task-start
+  inventory of the separate background port-forward or candidate console
+  listener, so session-scoped transport state was lost from the workflow.
+- Mandatory preflight: before remote input or tunnel recovery, run the bounded
+  control-transport inventory. Record matching RustDesk forward PIDs, creation
+  times, listener ownership, candidate PowerShell/Python listeners, and—when
+  the exact read-only authority permits it—a protocol-level WS-Man Identify.
+- Recovery: classify the desktop chain and management listener separately.
+  Never call a listener absent from window appearance alone, and never call it
+  healthy from local `LISTEN` alone. Restore a failed listener only through a
+  governed one-attempt action; do not compensate with repeated GUI input.
+
+## 2026-08-26 — Tunnel success must include protocol validation inside rollback
+
+- Failure signature: a frozen tunnel launcher passed its non-mutating
+  preflight and could prove one new process/listener, but its success path did
+  not execute the protocol-level WS-Man Identify check promised by the
+  pre-action contract.
+- Cause: listener/process cardinality was implemented as the terminal success
+  boundary while protocol health remained a later caller responsibility. That
+  made the declaration broader than the atomic implementation and could leave
+  a useless process after a nominal pass.
+- Mandatory preflight: mechanically trace every declared terminal predicate to
+  code inside the same `try/catch` rollback boundary. For a tunnel, require
+  exact process, exact listener owner, and valid protocol response before PASS.
+- Recovery: stop before Apply, withdraw the frozen launcher, preserve its
+  no-mutation proof, and create a fresh launcher namespace. The successor must
+  run WS-Man Identify before PASS and stop only its newly created PID if that
+  validation fails.
+
+## 2026-08-26 — A multiline clipboard payload is not a safe result sentinel
+
+- Failure signature: the Argos hostname gate passed and the pinned multiline
+  observation source was placed on the shared clipboard, but the runner's
+  `value != originalPayload` predicate returned that source text as though it
+  were result JSON; `ConvertFrom-Json` then failed at `CmdletBinding`.
+- Cause: RustDesk/RDP clipboard propagation may round-trip or normalize a
+  multiline source representation before the remote command replaces it. Byte
+  or string inequality against the original source is not a result-ready
+  predicate.
+- Mandatory preflight: for an in-memory clipboard payload, accept a response
+  only when it begins with the expected serialized container and contains the
+  exact result schema/state. A payload-transfer acknowledgement and a result
+  readiness predicate are separate gates; neither may be inferred from local
+  clipboard assignment.
+- Recovery: do not retry the frozen action. Preserve the original payload and
+  parser failure, create a fresh action namespace, require exact schema-shaped
+  result readiness, and make the remote observer return bounded structured
+  failure rows instead of leaving source text on the clipboard.
+
+## 2026-08-26 — Generic Argos visibility does not prove protected portal readability
+
+- Failure signature: the ordinary Argos current-layer inventory verified
+  `DESKTOP-266P787` and returned legacy task/window rows, but the bounded portal
+  observation terminated with operator-visible `Access denied` before it could
+  return config, worker-hash, or queue evidence.
+- Cause: the visible `lwm` RDP token can observe ordinary desktop state while
+  one or more protected `C:\ProgramData\ArgosProjectPortalRO` sources remain
+  inaccessible. A successful hostname or generic task inventory is not an
+  administrative-read proof.
+- Mandatory preflight: a portal observer must isolate every task, config, bin,
+  connection, and queue read inside its own bounded failure boundary and return
+  the exact denied source as structured evidence. Route health cannot pass when
+  any required source is denied, missing, truncated, or unparsable.
+- Recovery: remain in the non-mutating lane, return partial readable evidence
+  plus exact access errors, and require an already-authorized administrative
+  read route for any protected source. Never respond to `Access denied` by
+  changing ACLs, creating a helper task, guessing credentials, or silently
+  elevating the desktop process.
+
+## 2026-08-26 — Windows PowerShell 5.1 generic lists require explicit ToArray
+
+- Failure signature: a parser-clean, harness-clean read-only payload completed
+  every bounded source section, then Windows PowerShell 5.1 threw `Argument
+  types do not match` at `@($genericList)` during final result construction.
+- Cause: array-subexpression enumeration of a closed generic `List[object]` is
+  not reliable in the exact Windows PowerShell 5.1 host even though ordinary
+  pipeline collections behave correctly.
+- Mandatory preflight: execute final result construction in Windows PowerShell
+  5.1 and convert generic evidence lists with their explicit `.ToArray()`
+  method before count, filtering, or JSON serialization. Parser and static
+  harness success do not prove this runtime boundary.
+- Recovery: while the payload remains draft and unexecuted on the target,
+  replace the generic-list array subexpression with `@($list.ToArray())`,
+  update every exact dependent hash, and repeat the full no-clipboard local
+  execution rehearsal before freeze.
+
+## 2026-08-26 — A visible error console is not proof of a reusable command prompt
+
+- Failure signature: after an earlier Argos observer displayed an error, a
+  fresh read-only successor tried to reuse that visible PowerShell window. Its
+  exact `hostname | clip` identity gate timed out after 30 seconds, so the
+  successor payload was never transferred or invoked.
+- Cause: a console can remain visible while it is in selection mode, running a
+  predecessor, closed behind another surface, or otherwise not accepting
+  commands at its prompt. Visibility and prior command success do not prove
+  current prompt readiness.
+- Mandatory preflight: every reuse-existing-console action must first obtain
+  the exact expected hostname through a short bounded command and a
+  schema-shaped clipboard response. Treat timeout, unchanged clipboard, or a
+  mismatched hostname as a terminal local focus/prompt failure before payload
+  transfer.
+- Recovery: do not repeat input into the same presumed prompt and do not type
+  the payload after the identity timeout. Preserve `payloadTransferred=false`,
+  remain non-mutating, and require an operator-confirmed usable prompt at the
+  exact required privilege level or a separately qualified non-GUI route.
+
+## 2026-08-26 — Do not regress a proven short clipboard-paste gate to synthetic text typing
+
+- Failure signature: the one-attempt Argos administrative observer timed out
+  at its first hostname gate even though the preceding current-layer observer
+  had delivered that same short gate through clipboard paste. The withdrawn
+  successor instead emitted the command characters with `SendKeys`.
+- Cause: the successor changed the already demonstrated transport primitive
+  while cloning the observer. A short command is not safe merely because its
+  character count is bounded; RustDesk can accept clipboard paste while
+  dropping or misrouting individually synthesized text keys.
+- Mandatory preflight: mechanically assert that the exact hostname command is
+  placed on the clipboard and delivered only by the bounded paste primitive.
+  Keep the observation source on the clipboard and type only the fixed
+  11-character `iex(gcb -r)` trigger. Require create-new structured evidence
+  for every local or remote failure stage before authorizing the attempt.
+- Recovery: withdraw the executed runner without retry, preserve its
+  `payloadTransferred=false` evidence, and use a fresh namespace whose local
+  Windows PowerShell 5.1 transport test proves the clipboard-paste hostname
+  path, short trigger, parser validity, and structured stage-failure output.
+
+## 2026-08-26 — The persistent InspectionRevs U mapping is infrastructure, not cleanup
+
+- Failure signature: each portal publication rediscovers the engineering
+  share's over-budget UNC path because an earlier publisher removed the known
+  good short `U:` mapping in its normal or failure cleanup.
+- Cause: the exact persistent mapping was incorrectly treated as temporary
+  process state even though later Argos work repeatedly requires the same
+  verified `InspectionRevs` root and the raw UNC leaf exceeds the safe path
+  budget.
+- Mandatory preflight: require `Get-PSDrive U` `DisplayRoot` and the Windows
+  logical-disk `ProviderName` to equal the frozen `InspectionRevs` UNC root.
+  If absent, create the mapping once with `New-PSDrive -Persist`, verify it
+  through both views, and path-gate the exact final and upload leaves. If it
+  maps anywhere else, stop for explicit authority; never silently replace it.
+- Recovery: leave the verified persistent `U:` mapping in place across
+  publication, collection, rehearsal, success, and failure. Publishers and
+  their `finally` or cleanup blocks may remove only their own exact create-new
+  temporary file, never the `U:` drive. Removing or repurposing `U:` requires
+  a separate explicitly authorized infrastructure action.
+
+## 2026-08-26 — Portal endpoint and response sender health do not prove the request receiver
+
+- Failure signature: the exact O2D10 request was accepted by the gateway and
+  queued at Argos `to_jbod\pending`, while the Argos sender remained in
+  `SYN_SENT` to JBOD port `48716`. On JBOD, the endpoint and response-sender
+  scheduled tasks were both running, but
+  `ArgosProjectPortal.JBOD.RequestReceiver.RO` was `Ready`, its last result was
+  `1`, its receiver process was absent, and no process listened on `48716`.
+- Cause: route preflight treated the endpoint and response-return components as
+  sufficient portal health and did not independently require the inbound
+  request-receiver task, process, and listening socket. The three portal roles
+  have separate liveness boundaries.
+- Mandatory preflight: before publishing a portal request, pin and verify the
+  exact endpoint, request-receiver, and response-sender task identities,
+  principals, installed dependency hashes, process cardinalities, and required
+  listening sockets. A running endpoint or response sender must never stand in
+  for a missing request receiver.
+- Recovery: after direct read-only observation pins the failed receiver and the
+  unchanged dependencies, start only the exact existing pinned request-receiver
+  task once. Require its task, process, and `48716` listener to become healthy,
+  prove the healthy wafer processor and the other two portal roles unchanged,
+  and allow the already queued request to continue without republishing or
+  retrying it. If the one start does not pass, stop and observe; never restart
+  other tasks or issue a second start.
+
+## 2026-08-26 — CIM process creation timestamps must retain full source precision
+
+- Failure signature: a frozen receiver-recovery precondition compared the
+  healthy processor creation time recorded by earlier JSON as
+  `2026-08-25T15:38:27.716Z` with the live CIM value
+  `2026-08-25T15:38:27.7160450Z` and stopped before its first task action.
+- Cause: the observation record shortened the CIM timestamp to milliseconds.
+  Process identity pins require the full source precision; millisecond JSON
+  display is not an exact substitute for the originating CIM value.
+- Mandatory preflight: normalize `Win32_Process.CreationDate` to UTC with the
+  round-trip `o` format and freeze every retained fractional digit before
+  comparing process identity. Assert the full normalized string or parsed
+  instant derived from that exact string, not a manually shortened timestamp.
+- Recovery: preserve the no-mutation terminal evidence, withdraw only the
+  failed frozen recovery revision, create a fresh namespace with the full CIM
+  timestamp, rerun clone, wrapper, harness, intent, and zero-recurrence gates,
+  then make at most the still-authorized single task-start attempt.
+
+## 2026-08-26 — Process cardinality must match the selector, not the task tree
+
+- Failure signature: the receiver recovery filtered command lines for literal
+  endpoint or sender config names, correctly observed two matching resident
+  processes, but failed because its contract expected three rows copied from a
+  broader earlier inventory. The task-host wrapper carries its config in
+  base64 and does not match that literal selector.
+- Cause: expected cardinalities were inherited from a different process
+  predicate instead of being derived from the exact predicate in the action.
+- Mandatory preflight: freeze selector and cardinality together. For the exact
+  literal-config selector, require two unchanged resident endpoint/sender
+  processes before and after, and one receiver executable owning port `48716`.
+- Recovery: preserve the verified zero-start evidence, create a fresh payload
+  namespace changing only those two proven cardinalities, and rerun the exact
+  static gates before the still-unused single start attempt.
+
+## 2026-08-26 — Advanced-script parameter defaults cannot depend on PSScriptRoot under Windows PowerShell 5.1 -File
+
+- Failure signature: the signed O2D10 maintenance entry point passed its local
+  rehearsal whenever `-PayloadRoot` was supplied explicitly, but the installed
+  endpoint launched the same frozen bytes with Windows PowerShell 5.1 `-File`
+  and no arguments. `Join-Path $PayloadRoot ...` then failed immediately with
+  `Cannot bind argument to parameter 'Path' because it is an empty string.`
+- Cause: for an advanced script containing `[CmdletBinding()]`, a parameter
+  default such as `[string]$PayloadRoot = $PSScriptRoot` is evaluated before
+  `$PSScriptRoot` is populated when the script is the direct `-File` target.
+  The script body later sees a populated `$PSScriptRoot`, but the already-bound
+  parameter remains empty. The rehearsal concealed this host boundary by
+  always supplying a nonempty `-PayloadRoot` override.
+- Mandatory preflight: every changed or relied-upon entry point that the
+  installed consumer launches without arguments must be exercised as the
+  direct target of the consumer's exact Windows PowerShell 5.1 `-File`
+  invocation with the exact omitted-argument shape. Script-root-derived
+  defaults must be assigned after the `param` block, for example by accepting
+  an empty parameter and setting it from `$PSScriptRoot` in the script body.
+  An explicit-override rehearsal is a separate case and cannot substitute for
+  the no-argument installed invocation.
+- Recovery: retain the signed O2D10 failure as terminal evidence and never
+  patch or retry its frozen namespace. A fresh successor must change only the
+  draft entry-point root initialization first, add both exact no-argument
+  `-File` and explicit-override Windows PowerShell 5.1 controls, preserve all
+  review-only and processor invariants, and pass the full publication gates
+  before any separately authorized successor request.
+
+## 2026-08-26 — Cast byte arrays at overloaded .NET `ComputeHash` calls
+
+- Failure signature: a draft Windows PowerShell 5.1 response collector reached
+  an in-memory SHA-256 check and reported `Multiple ambiguous overloads found
+  for ComputeHash and the argument count: 1`.
+- Cause: the advanced function parameter was declared `[byte[]]`, but the
+  PowerShell method binder still saw an ambiguous argument at the overloaded
+  .NET call boundary. A zero-length ZIP entry can also collapse to `$null`
+  when returned through the PowerShell pipeline.
+- Mandatory preflight: call `ComputeHash([byte[]]$Bytes)` explicitly for
+  in-memory response entries, normalize `$null` from a zero-length entry to
+  `[byte[]]::new(0)`, and exercise the collector's exact `-Preflight` before it
+  creates its collection root.
+- Recovery: because the collector was an unexecuted `DRAFT` and created no
+  output, add the explicit cast, rerun harness safety and exact preflight, then
+  retain the same collection namespace.
+
+## 2026-08-26 — Recovery capability evidence must be the route inventory
+
+- Failure signature: a draft `OBSERVE` recovery intent pointed
+  `route.capabilityEvidence` at a worker-inheritance gate. The recovery-intent
+  preflight stopped with `The property 'routes' cannot be found on this
+  object` before request construction or publication.
+- Cause: the pinned file proved inheritance but did not implement the required
+  `argos_endpoint_read_only_capability_inventory_v1` schema with one `routes`
+  row for the declared route type.
+- Mandatory preflight: for `STATUS`, `DATA_PULL`, or
+  `DIRECT_ADMIN_READ_ONLY`, pin the exact endpoint read-only capability
+  inventory as `route.capabilityEvidence`; pin worker inheritance and current
+  route health separately. Require exactly one row matching `route.type` and
+  request only capabilities enumerated by that row.
+- Recovery: while the intent is still `DRAFT` and no request bytes or external
+  mutation exist, replace only the incorrect capability-evidence pin and align
+  `requestedCapabilities` to the inventory, then rerun the exact recovery
+  preflight.
+
+## 2026-08-26 — PowerShell keyword and expression token boundaries are mandatory
+
+- Failure signature: a draft response collector passed AST/harness safety but
+  its exact non-mutating preflight stopped at `return$Path.Replace(...)` with
+  `The term 'return$Path.Replace' is not recognized` before creating output.
+- Cause: the `return` keyword and following expression were concatenated into
+  one command token. The general harness parser accepted the source because it
+  was syntactically valid PowerShell, but it was not the intended runtime
+  expression.
+- Mandatory preflight: require whitespace after `return` and `throw`, and
+  inspect compact generated functions for `return$`, `throw"`, or equivalent
+  keyword/expression adjacency before running them. The exact script
+  `-Preflight` remains mandatory because AST parsing alone cannot prove the
+  intended command tokenization.
+- Recovery: when the collector remains `DRAFT` and preflight created no output,
+  correct only the token boundary, refresh its exact preaction dependency pin,
+  rerun harness and clone-remediation gates, and rerun the same non-mutating
+  preflight before collection.
+
+## 2026-08-26 — Validate installed identity folders by exact full identity suffix
+
+- Failure signature: a draft Slot17 response collector correctly read the
+  signed proposal but rejected its oriented-input paths because it expected a
+  directory segment named only `Slot17`. The installed directory is the exact
+  physical identity `62619-433_20260824005735_Slot17`.
+- Cause: the path assertion shortened an authoritative compound identity into
+  a display-slot label that is not an actual filesystem component.
+- Mandatory preflight: derive the exact expected proposal directory from the
+  frozen physical identity and assert the complete identity plus channel leaf.
+  Never replace a compound acquisition identity with its trailing slot label
+  when validating installed paths.
+- Recovery: while the collector remains `DRAFT` and has created no output,
+  correct only the exact suffix assertion, refresh the preaction dependency
+  pin, and rerun the non-mutating collector preflight.
+
+## 2026-08-26 — Do not name helper functions after built-in PowerShell aliases
+
+- Failure signature: a draft collector defined a one-letter `H` hash helper,
+  but the exact preflight resolved the built-in `h`/`Get-History` alias first
+  and attempted to bind a file path to `Get-History -Id`.
+- Cause: PowerShell command precedence gives aliases priority over functions;
+  case does not disambiguate them.
+- Mandatory preflight: use descriptive, project-specific helper names and run
+  `Get-Command` for every compact helper token before execution. Prohibit
+  one-letter helper names in Windows/JBOD harnesses.
+- Recovery: while the collector is still `DRAFT` and created no output, rename
+  only the colliding helper, refresh the preaction dependency pin, rerun harness
+  safety, and rerun the exact non-mutating preflight.
+
+## 2026-08-26 — Clone remediation must represent a verified zero-root pair
+
+- Failure signature: clone-remediation preflight rejected a bounded cloned
+  Python engine/harness pair with `Clone-remediation pair has no root rules`
+  even though the utility's own literal-root scanner found zero drive and UNC
+  roots in both source and generated files.
+- Cause: the manifest schema and checker had dispositions for replaced,
+  unchanged, and added roots, but no explicit representation for the valid
+  zero-root case. An empty rule set was rejected before the scanner result
+  could become evidence.
+- Mandatory preflight: declare one `NO_LITERAL_ROOTS` rule with empty source
+  and generated roots. The checker must accept it only when its exact scanner
+  finds zero literal roots in both files; any discovered root fails the gate.
+- Recovery: while the cloned files remain local `DRAFT` bytes and no image or
+  external target was read or changed, add the explicit zero-root disposition,
+  rerun clone-remediation preflight, and write a create-new gate before running
+  either cloned harness.
+
+## 2026-08-26 — Automatic scribe localization must rank OCR-scale bands
+
+- Failure signature: the first V1R4 automatic-localization positive gate found
+  twelve diagnostic regions and promoted four, while every promoted region was
+  too narrow for a twelve-cell grid. The reader therefore returned
+  `NOT_EVALUATED`; the unchanged recognition corpus still passed 15/15 and all
+  four duplicate-agreement groups passed.
+- Cause: diagnostic regions were ranked only by mean morphology response.
+  Short high-contrast strokes outranked the two broad scribe-band candidates,
+  and the promoted rectangle was not expanded to the reader's frozen
+  twelve-cell working envelope.
+- Mandatory preflight: an automatic-localization positive control must include
+  multiple short high-response distractors and a lower-response OCR-scale band.
+  Promotion must require and prioritize configured minimum band width, expand
+  only into a bounded configured OCR envelope, and prove the reader evaluates
+  at least one promoted region. The locked 15/15 recognition and 4/4 duplicate
+  gates remain mandatory.
+- Recovery: retain V1R4 and its failed gate as `WITHDRAWN` local evidence. Use
+  fresh V1R5 bytes to change only development-only candidate eligibility,
+  ranking, and bounded OCR-envelope expansion; do not alter R3 recognition
+  thresholds, direct-input behavior, identity eligibility, holds, or authority.
+
+## 2026-08-26 — Alias-path rehearsals must stage metadata from canonical paths
+
+- Failure signature: the first local O2D14 rehearsal stopped while building
+  its file-backed job because `Get-Item X:\BF.png` ran before the endpoint had
+  created the temporary `X:` alias.
+- Cause: the harness correctly wrote `X:` as the provider-facing source path,
+  but incorrectly reused that not-yet-materialized path to calculate the
+  staged source byte count.
+- Mandatory preflight: when a rehearsal tests endpoint-owned alias creation,
+  construct hashes and byte counts from the exact canonical rehearsal files;
+  reserve the alias path only for the provider-facing job. Assert the alias is
+  absent before entrypoint execution and absent again afterward.
+- Recovery: because the draft harness failed before invoking the endpoint and
+  its `finally` block removed the bounded rehearsal root, correct only the two
+  metadata dereferences, refresh the harness/clone/preaction hashes, and rerun
+  the same rehearsal. No product revision or external retry is required.
+
+## 2026-08-26 — Scribe entrypoint rehearsal must prove the reader evaluated
+
+- Failure signature: an O2D14 local entrypoint gate reported `PASS` for alias,
+  failure-before-write, hold, and processor invariants while its normal result
+  was `SCRIBE_LOCALIZATION_HOLD`, `imageFirstString` was empty, and checksum
+  evaluation never occurred.
+- Cause: the gate asserted safety mechanics and hold preservation but omitted
+  an explicit positive OCR-evaluation assertion; its inherited sample was not
+  the V1R5 automatic-localization positive control.
+- Mandatory preflight: the entrypoint rehearsal must use a hash-pinned positive
+  control that exercises the exact development auto-localization mode and must
+  require a promoted region, nonempty image-first string, and checksum state
+  other than `NOT_EVALUATED`, in addition to all safety invariants.
+- Recovery: withdraw the mechanically insufficient V1 local gate, retain the
+  unbuilt/unpublished O2D14 product namespace, strengthen only the test harness,
+  and write a create-new R2 gate. The final builder must pin only the R2 gate.
+
+## 2026-08-26 — Signed maintenance declarations must name the exact final rehearsal gate
+
+- Failure signature: the signed but unpublished O2D14 maintenance definition
+  declared `PASS_O2D14_ENTRYPOINT_TEST_GATE_R2`, while the final package gate
+  relied on the later exact-endpoint R3 rehearsal. The R3 gate was the correct
+  execution evidence, but the signed declaration still named its predecessor.
+- Cause: the package builder was updated to pin the create-new R3 gate without
+  mechanically requiring the maintenance definition's declared gate state and
+  evidence hash to equal that same final rehearsal artifact.
+- Mandatory preflight: before signing, require one exact rehearsal identity in
+  the maintenance definition, builder inputs, extracted request manifest, and
+  final package gate. Assert the gate state and SHA-256 in all four locations;
+  a pass from an older endpoint revision is not interchangeable evidence.
+- Recovery: do not publish or reuse the signed O2D14 request. Record it as
+  `WITHDRAWN`, retain its hashes as local evidence, and build the same bounded
+  Slot19 raw-source read in a fresh O2D15 namespace only after the exact final
+  rehearsal declaration is corrected and mechanically cross-checked.
+
+## 2026-08-26 — Artifact withdrawal is not recovery premise-failure evidence
+
+- Failure signature: a draft O2D15 recovery intent counted the withdrawn
+  O2D14 package declaration mismatch as a third local premise failure and used
+  the unsupported failure-evidence state `WITHDRAWN`.
+- Cause: artifact lifecycle evidence and recovery premise failures were merged
+  into one array even though the recovery guard accepts only signed failures or
+  qualified withdrawn local rehearsal failures in that count.
+- Mandatory preflight: keep withdrawn package evidence in a separate metadata
+  field with `countsAsPremiseFailure=false`; require the declared signed and
+  local premise counts to equal only guard-supported failure classifications.
+- Recovery: the intent was still `DRAFT` and the guard performed no mutation.
+  Remove the package withdrawal from `failureEvidence`, restore the exact local
+  premise count, preserve it separately, and rerun the same preflight.

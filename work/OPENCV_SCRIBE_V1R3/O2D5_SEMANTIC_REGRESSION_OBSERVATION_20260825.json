@@ -1,0 +1,41 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-25T23:39:07.5186372Z",
+  "state": "PASS_OCV02_O2D5_SEMANTIC_REGRESSION_OBSERVATION",
+  "incidentId": "OCV02_O2D5_SEMANTIC_REGRESSION_20260825",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "sourceEvidence": {
+    "terminalGatePath": "work/OPENCV_SCRIBE_O2D5/O2D5_TERMINAL_RESPONSE_GATE.json",
+    "terminalGateSha256": "4531D86B207CCD578028F7D090DFB2C769119E330025BDB3701C57D55F1E0D7C",
+    "semanticAdjudicationPath": "work/OPENCV_SCRIBE_O2D5/O2D5_SEMANTIC_ADJUDICATION.json",
+    "semanticAdjudicationSha256": "9CF9D0B843D08F3A16C18F2282D7645EF0A0EA9BB3CDDC201786A6CA9F002E0E",
+    "signedResponseVerified": true,
+    "expectedPoseBoundRegionCount": 0,
+    "selectedRegionSource": "BOUNDED_WHOLE_IMAGE_EXCEPTION_SEARCH",
+    "reportedImageFirstString": "699F999999F6",
+    "reportedChecksumState": "SCRIBE_M12_IMAGE_FIRST_CHECKSUM_VALID_REVIEW_ONLY",
+    "checksumValidCandidateCount": 124,
+    "acceptedReaderPhysicalHoldout": "15_OF_15_CORRECT_TOP_PROPOSALS",
+    "frozenOpenCvReaderPhysicalHoldoutProbe": "0_OF_15_CORRECT_TOP_PROPOSALS"
+  },
+  "expected": {
+    "unqualifiedExceptionEligibleForIdentity": false,
+    "standardAndExceptionResultsDistinct": true,
+    "acceptedPhysicalHoldoutPassCount": 15,
+    "acceptedDuplicateViewAgreementPassCount": 4
+  },
+  "observed": {
+    "unqualifiedExceptionEligibleForIdentity": true,
+    "standardAndExceptionResultsDistinct": false,
+    "frozenOpenCvPhysicalHoldoutPassCount": 0,
+    "frozenOpenCvPhysicalHoldoutTotalCount": 15
+  },
+  "supportedDecision": "B",
+  "supportedAction": "FRESH_LOCAL_REVIEW_ONLY_OPENCV_SCRIBE_ENGINE_REVISION_WITH_EXACT_ACCEPTED_READER_PARITY_AND_EXCEPTION_LOCALIZATION_HOLD",
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

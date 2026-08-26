@@ -1,0 +1,92 @@
+{
+  "schema": "argos_opencv_edge_notch_robustness_acceptance_v1",
+  "revision": "EDGE_NOTCH_ROBUSTNESS_ACCEPTANCE_20260826",
+  "createdUtc": "2026-08-26T21:55:00Z",
+  "disposition": "LOCKED_INPUT",
+  "authority": {
+    "reviewOnly": true,
+    "providerActivationAuthorized": false,
+    "productionRoutingEnabled": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "sourceMutationAllowed": false,
+    "waferActionAllowed": false,
+    "holdClearanceAuthorized": false
+  },
+  "requiredOrder": [
+    "COMPLETE_SCRIBE_DEVELOPMENT_SLOTS19_THROUGH_21",
+    "FREEZE_SCRIBE_ENGINE",
+    "RUN_SCRIBE_SLOTS22_THROUGH_25_BLIND_WITHOUT_TUNING",
+    "FREEZE_SCRIBE_VALIDATION_RESULT",
+    "INVENTORY_EDGE_NOTCH_NORMAL_HOTSPOT_AND_CHIPOUT_COHORTS",
+    "FREEZE_EDGE_NOTCH_DEVELOPMENT_AND_INDEPENDENT_VALIDATION_PARTITIONS",
+    "DEVELOP_OCV03_FROM_DEVELOPMENT_AND_KNOWN_FAILURE_EVIDENCE_ONLY",
+    "RUN_FROZEN_INDEPENDENT_PAIRED_BF_DF_VALIDATION_WITHOUT_TUNING"
+  ],
+  "mandatoryCohorts": {
+    "hotspotLots": [
+      {
+        "lotFolderName": "Lot_62629-419_NotchBad_Hotspot",
+        "operatorReportedFailure": "ARGOS_MISSED_PHYSICAL_NOTCH_BECAUSE_HOTSPOT_DARKENED_NOTCH_AND_ROTATED_ONE_WAFER_INCORRECTLY",
+        "legacyRotationIsTruth": false,
+        "role": "DEVELOPMENT_AND_PERMANENT_REGRESSION_CHALLENGE"
+      }
+    ],
+    "chipout": {
+      "scope": "EVERY_DISCOVERABLE_KNOWN_CHIPOUT_WAFER_IN_BOUNDED_ARGOS_KLARF_EVIDENCE",
+      "role": "DEVELOPMENT_AND_PERMANENT_REGRESSION_CHALLENGE",
+      "chipoutMayBeSelectedAsNotch": false
+    },
+    "ordinaryParity": {
+      "scope": "CURRENTLY_ACCEPTED_ORDINARY_WAFER_NOTCH_AND_EDGE_RESULTS",
+      "role": "UNCHANGED_SEMANTIC_PARITY"
+    },
+    "independentValidation": {
+      "pairedBfDfRequired": true,
+      "partitionFrozenBeforeOutcomeInspection": true,
+      "tuningAllowedAfterOutcomeInspection": false,
+      "samePhysicalWaferLaterScanCountsIndependent": false
+    }
+  },
+  "acceptance": {
+    "maximumIncorrectRotations": 0,
+    "maximumChipoutAsNotchSelections": 0,
+    "hotspotNotchPositionAndAngleMustBeCorrectWhenEvidenceSufficient": true,
+    "ambiguousOrInsufficientState": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD",
+    "bfDfIndependent": true,
+    "bfDfTransformAveragingAllowed": false,
+    "fixedAngleSelectionAllowed": false,
+    "fixedPositionSelectionAllowed": false,
+    "deepestIndentationSelectionAllowed": false,
+    "appearanceOnlyBoundaryMayEstablishPose": false,
+    "physicalBfDfSupportedIndentationRemainsCompetitor": true,
+    "multiplePhysicalCompetitorsRequireManufacturedMorphologyNativeRefinementAndReciprocalScribe": true,
+    "frontsideFlipImageHorizontal": false,
+    "notchAngleAloneMayEstablishDieGridPhase": false
+  },
+  "evidenceFreeze": {
+    "physicalIdentityRequired": true,
+    "sourcePathRequired": true,
+    "sourceSha256Required": true,
+    "acquisitionFingerprintRequired": true,
+    "partitionAssignmentRequired": true,
+    "beforePixelOutcomeInspection": true
+  },
+  "humanValidation": {
+    "mayBeDeferred": true,
+    "mechanicallyUnresolvedFactsRemainHolds": true,
+    "guessOrDefaultAllowed": false
+  },
+  "preservedHolds": [
+    "SCRIBE_REFERENCE_COVERAGE_HOLD",
+    "SCRIBE_AMBIGUITY_AND_CONFIRMATION_HOLDS",
+    "FRONTSIDE_NOTCH_ALIGNMENT_HOLD",
+    "FIDUCIAL_AND_ALIGNMENT_PREREQUISITE_HOLDS",
+    "ALL_EXISTING_REVIEW_ONLY_TRAINING_XML_PRODUCTION_DELETION_SOURCE_AND_WAFER_HOLDS"
+  ],
+  "resourceContract": {
+    "jbodRuntimeIntensiveRoot": "D:/",
+    "liveProviderDisabled": true,
+    "protectedProcessorRestartAuthorized": false
+  }
+}

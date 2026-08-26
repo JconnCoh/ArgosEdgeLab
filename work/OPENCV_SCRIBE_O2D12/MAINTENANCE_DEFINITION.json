@@ -1,0 +1,105 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 4194304,
+  "entryPoint": "payload/Invoke-O2D12ScribeEndpoint.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-O2D12ScribeEndpoint.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_O2D12.ps1",
+      "approvedPredecessorSha256": [
+        "17C01B42278D7750EAD56CCE5035FEB6F5DBE25520D43CD4293E56F5351837B9"
+      ],
+      "installedSha256": "4668AE9D8103E3D59BDBBE2420E0788F8B45B138FFB910BC82186B760DA38A5A",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\A2\\w\\ocv\\O2D12_20260826T202600000Z_6B91F2C4",
+      "mode": "CREATE_NEW_PROVIDER_WORK_TREE",
+      "failureQuarantine": "D:\\A2\\w\\ocv\\O2D12_20260826T202600000Z_6B91F2C4.failed",
+      "payloads": [
+        {
+          "path": "payload/ArgosOpenCvScribeV1R3.py",
+          "sha256": "8A6DE04B7DD08EFA717AF606FD0D04622ABE84C753B690C4590B0E95D8B31BAB"
+        },
+        {
+          "path": "payload/O2D12_SLOT17_JOB.json",
+          "sha256": "EA50016888080BCF4906D47A1C30239AE09114FA90B2ABAEF095351E8526C2B6"
+        },
+        {
+          "path": "D:/O2D5/ARGOS_O2D5/O2D5_REFS.zip",
+          "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6"
+        }
+      ]
+    },
+    {
+      "targetRoot": "D:\\A2\\o\\ocv\\O2D12_20260826T202600000Z_6B91F2C4",
+      "mode": "CREATE_NEW_PROVIDER_OUTPUT_TREE"
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "D:\\A2\\o\\ocv\\O2D12_20260826T202600000Z_6B91F2C4\\RESULT.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_opencv_scribe_result_v2"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\O2D12_20260826T202600000Z_6B91F2C4\\RUN_GATE.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_o2d11_opencv_scribe_development_gate_v1",
+      "requiredState": "PASS_O2D11_OPENCV_SCRIBE_DEVELOPMENT_EXECUTED"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\O2D12_20260826T202600000Z_6B91F2C4\\EXECUTION.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_o2d11_execution_v1",
+      "requiredState": "PASS_O2D11_EXECUTION"
+    }
+  ],
+  "sourceProcessingContract": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "slotId": "Slot17",
+    "physicalIdentity": "62619-433_20260824005735_Slot17",
+    "inputMode": "QUALIFIED_INSTALLED_ORIENTED_DETECTOR_INPUT",
+    "proposalPath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals\\62619-433_20260824005735_Slot17\\SCRIBE_PROPOSAL.json",
+    "proposalSha256": "5B529F708E2B956DFF79B2EC19C8B9D92EEE94E483093ADC92417F242A056761",
+    "multiChannelSummaryPath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals\\62619-433_20260824005735_Slot17\\scribe\\multi_channel\\MULTI_CHANNEL_READER_SUMMARY.json",
+    "multiChannelSummarySha256": "84CC935A49E79F33A756D26FADC1545FB92961D7220EEAB14C3D2CE7DC8D8E6B",
+    "installedProposalEligibleIdentity": false,
+    "installedConsensusState": "MULTIPLE_IMAGE_SUPPORTED_M12_CANDIDATES",
+    "bfPath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals\\62619-433_20260824005735_Slot17\\scribe\\BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+    "bfBytes": 1642696,
+    "bfSha256": "46ACA8C9C32850EF052C1BF7F26550EFD474E00372B0F43F0DD391AFEA1A431D",
+    "dfPath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals\\62619-433_20260824005735_Slot17\\scribe\\DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+    "dfBytes": 672445,
+    "dfSha256": "012365504979E0A89E387FBD735E0E60B9B49899FC9A516D05C0BAE0ACC631E9",
+    "referenceBundlePath": "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+    "referenceBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "sourceImageBytesReadAllowed": true,
+    "opencvPixelDecodeRequired": true,
+    "boundedExceptionSearchAllowed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 900,
+    "opencvChildTimeoutSeconds": 600,
+    "outerCoversChild": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_BOUNDED_PORTABLE_OPENCV_SCRIBE_DEVELOPMENT_SLOT17"
+  ],
+  "rehearsal": {
+    "requiredState": "PASS_O2D12_OPENCV_SCRIBE_DEVELOPMENT_EXECUTED",
+    "gateState": "PASS_O2D12_ENTRYPOINT_TEST_GATE"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
+

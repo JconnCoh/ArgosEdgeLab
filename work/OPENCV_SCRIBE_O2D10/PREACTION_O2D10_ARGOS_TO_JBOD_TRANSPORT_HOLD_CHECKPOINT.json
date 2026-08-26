@@ -1,0 +1,23 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v2",
+  "revision":"OCV02_O2D10_ARGOS_TO_JBOD_TRANSPORT_HOLD_CHECKPOINT_20260826T182800Z",
+  "createdUtc":"2026-08-26T18:28:00Z",
+  "state":"PASS_PREACTION_CONTRACT",
+  "actionType":"PROMOTE_O2D10_PUBLISHED_ARGOS_TO_JBOD_TRANSPORT_HOLD_CHECKPOINT",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies":[
+    {"path":"work/OPENCV_SCRIBE_O2D10/O2D10_PUBLISH_GATE.json","sha256":"CECEEC3604A547DCB10A6FA58BCEFF33DA60A83134827AC903EC2AB15FFC87DC"},
+    {"path":"work/OPENCV_SCRIBE_O2D10/O2D10_EXACT_REQUEST_ROUTE_R6.json","sha256":"CE5BB974497B5D1AEE4F987AB8BA6D8A2F470A42DFEC66EB75F33367A8B6560D"},
+    {"path":"work/OPENCV_SCRIBE_O2D10/O2D10_LOCAL_CONTROL_TRANSPORT_OBSERVATION_20260826.json","sha256":"30204E97F1B146F52393C1102097E7632C3CA524137A8EB26CC51D9FCB2403F3"},
+    {"path":"work/OPENCV_SCRIBE_O2D10/O2D10_COMPLETE_ROUTE_GATE_R2.json","sha256":"6938DC3E37A5208DC1F3E2F8F7A5703CC9A6B70B7533556E584F531DCD310D81"},
+    {"path":"work/OPENCV_SCRIBE_O2D10/O2D10_FINAL_PACKAGE_GATE.json","sha256":"CA653F6FA44F0282F52B56DC4B8D158FFFD1AC638AD271A85FD4C43929F98D50"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"B02C04599734092154FAC72E62E912C1592CE6AF86CE85AE6339133B92522A86"}
+  ],
+  "controls":{"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence":{"path":"work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json","sha256":"17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "scope":{"filesystem":"CONTINUITY_METADATA_ONLY","requestPublished":true,"publicationCount":1,"retryAuthorized":false,"matchingResponsePresent":false,"requestLocation":"DESKTOP-266P787:C:/ProgramData/ArgosProjectPortalRO/to_jbod/pending/REQ_20260826T015418549Z_F5D3732576F9.ready","argosSenderConnectionState":"SYN_SENT","jbodReceiverObservationRequired":true,"jbodMutationPerformed":false,"queueMutation":false,"taskOrProcessRestart":false,"imageRead":false,"providerActivation":false,"healthyProcessorTouched":false},
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":["REQ_O2D4","O2D10_ARGOS_O2D4_QUARANTINE_RECOVERY_INTENT_R5","O2D10_EXACT_REQUEST_ROUTE_OBSERVATION_INTENT_R9","O2D10_EXACT_REQUEST_ROUTE_OBSERVATION_INTENT_R10"]},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "argos_admin_inbound_relay_observation_failure_v1",
+  "createdUtc": "2026-08-26T17:48:33.9114732Z",
+  "state": "FAIL_O2D10_ARGOS_ADMIN_INBOUND_RELAY_R3_HOSTNAME_GATE_TIMEOUT",
+  "incidentId": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_20260826",
+  "action": "ArgosAdminInboundRelayObservationR3",
+  "runner": {
+    "path": "work/OPENCV_SCRIBE_O2D10/direct_control_r3/Invoke-ArgosAdminInboundRelayObservationR3.ps1",
+    "sha256": "8976E68EEE5B7F7A7DFF2157884167C3E34FCCBF504A5347E48D9139EDDFEFAC"
+  },
+  "payload": {
+    "path": "work/OPENCV_SCRIBE_O2D10/direct_control_r3/Get-ArgosAdminInboundRelayObservationR3.ps1",
+    "sha256": "0A5FC6DC9D403C9E28FC12CA20498E547B88FD87A1BA961A3841C80975353A43"
+  },
+  "intent": {
+    "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_OBSERVATION_INTENT_R6.json",
+    "sha256": "AE3D10103AFD760D83E242C5ECB73C2DDABB4E722280A78ADA9BEB692E098118"
+  },
+  "preaction": {
+    "path": "work/OPENCV_SCRIBE_O2D10/PREACTION_O2D10_ARGOS_ADMIN_INBOUND_RELAY_OBSERVATION_R6.json",
+    "sha256": "B77207EE9902D988779F6FFC05C8A7548293D3906DCA5670D2AC1B261F4F37E2"
+  },
+  "staticGate": {
+    "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_OBSERVER_R3_STATIC_GATE.json",
+    "sha256": "043FB8C6096902CABBE62016B613C90BDA1738B57B7240D900D2EBF30D515365"
+  },
+  "identityGateCommand": "hostname|clip",
+  "identityTimeoutSeconds": 30,
+  "hostnameResponseReceived": false,
+  "adminGateTransferred": false,
+  "fullPayloadTransferred": false,
+  "plannedOutputPath": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_OBSERVATION_R3.json",
+  "plannedOutputExistsAtRecord": false,
+  "targetObservationCompleted": false,
+  "jbodContacted": false,
+  "publicationPerformed": false,
+  "taskOrProcessActionPerformed": false,
+  "queueOrLedgerMutationPerformed": false,
+  "remoteFileMutationPerformed": false,
+  "mutationsPerformed": false,
+  "rerunAllowed": false,
+  "disposition": "Withdraw R3. A fresh successor must use the proven short clipboard-paste transport for the hostname gate, keep the full payload off the command line, and write structured local failure evidence for every stage."
+}

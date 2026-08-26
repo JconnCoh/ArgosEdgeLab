@@ -1,0 +1,368 @@
+{
+  "schema": "argos_r3s16r4_short_transfer_manifest_v1",
+  "createdUtc": "2026-08-26T00:51:07.0541960Z",
+  "state": "FROZEN_R3S16R4_SHORT_TRANSFER_MANIFEST",
+  "remoteRoot": "D:\\A2\\x\\r3s16r4_8A6DE04B",
+  "sourcePayloadZip": "R3S16_PAYLOAD.zip",
+  "sourcePayloadZipBytes": 16839,
+  "sourcePayloadZipSha256": "33B183483B25FDF9F48C102E61C5457F802B72BCE9418C34A782AF18E5456279",
+  "partWriter": {
+    "source": "Stage-R3S16R4-PartWriter.ps1",
+    "bytes": 746,
+    "sha256": "A39B25C368FC76523DBE52D47363469D2D0D37D2751726368868D4A09059C07B",
+    "writerParts": [
+      {
+        "script": "Stage-R3S16R4-WriterPart-000.ps1",
+        "scriptBytes": 1173,
+        "scriptSha256": "7EC3B221A5BF0C52F18E752EF0A7CFE4EBB9DC9834845F4BF217F40CA15FB300",
+        "part": "h000.bin",
+        "partBytes": 384,
+        "partSha256": "BDF357226F93F988B6A947B10DD643F3FC18EC91B253612D8B6DE7592C861FD6"
+      },
+      {
+        "script": "Stage-R3S16R4-WriterPart-001.ps1",
+        "scriptBytes": 1145,
+        "scriptSha256": "92CED4056DF51141B9035BBB5D25BE99F59EA9798BDF40806234B17F12903837",
+        "part": "h001.bin",
+        "partBytes": 362,
+        "partSha256": "83D3672B0A103DA0EA762512FED2C52C31F101DC06BD051AD4CB343AA263AFBA"
+      }
+    ],
+    "assembler": {
+      "script": "Assemble-R3S16R4-PartWriter.ps1",
+      "scriptBytes": 651,
+      "scriptSha256": "E79C07DE0647D927A44882270A9ABF8ACB9D3586995021A5228C6A0F6813F544"
+    }
+  },
+  "payloadParts": [
+    {
+      "index": 0,
+      "script": "Stage-R3S16R4-PayloadPart-000.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "17FFB81E93C7CE70BAA9F14BBB6853B2A7AC739AC8C7674623FE3936CFF63B84",
+      "part": "p000.bin",
+      "partBytes": 480,
+      "partSha256": "9237439342F252F4EF8C4EFB5B49E642C16DF3F8B16C670CAC0B96328E637DE8"
+    },
+    {
+      "index": 1,
+      "script": "Stage-R3S16R4-PayloadPart-001.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "2F14051E544914BDA34B89C19160A00827FB65BDB5729C11E51A863E88128C38",
+      "part": "p001.bin",
+      "partBytes": 480,
+      "partSha256": "D4669B46641A61F7D606F576C1365E794981A6EB7B44F69B65B0EDAC62494A7A"
+    },
+    {
+      "index": 2,
+      "script": "Stage-R3S16R4-PayloadPart-002.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "AC8D68F1B72EED5770B16626732B3FA13D9C3DE613BA104C36B7BD76E13B7722",
+      "part": "p002.bin",
+      "partBytes": 480,
+      "partSha256": "C3876CE2A65CD4D583C8699ACE3EBD101FC73C6A151DA67396EBDDFE077C6C19"
+    },
+    {
+      "index": 3,
+      "script": "Stage-R3S16R4-PayloadPart-003.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "06C56DE81689073240033758E4CB14C1423B19A7B98FF69A81A234DA9A35CA68",
+      "part": "p003.bin",
+      "partBytes": 480,
+      "partSha256": "8DC6FB4007FC7E08C49E0CD8285DCEC27D1B208D86609666F4919094A1018ACC"
+    },
+    {
+      "index": 4,
+      "script": "Stage-R3S16R4-PayloadPart-004.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "8BCC69F848D248A35F96AC18B4F1F9ED363463F1061E12CC349CE7A866731F70",
+      "part": "p004.bin",
+      "partBytes": 480,
+      "partSha256": "8ECE34A518DEF5B670A43818A16D65A71754508BAE38590EDD8DADB244C855D6"
+    },
+    {
+      "index": 5,
+      "script": "Stage-R3S16R4-PayloadPart-005.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "453221980FD41AF43602498FF704BEA22C2A0D1ED1C913B66CA2AFA498E8806B",
+      "part": "p005.bin",
+      "partBytes": 480,
+      "partSha256": "73798FDE6D27D4B74B2CE608698DFD3802EFA826C8998D62B6B1619588190DD0"
+    },
+    {
+      "index": 6,
+      "script": "Stage-R3S16R4-PayloadPart-006.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "E6068DEA86A4C52B6D18DAAAE221076A912B5681368607931CF88B760383E9EA",
+      "part": "p006.bin",
+      "partBytes": 480,
+      "partSha256": "141E64FA2299F36D9797ED91DD71EC804DB0E08B59AF6DCECB6FA93EA0401EEE"
+    },
+    {
+      "index": 7,
+      "script": "Stage-R3S16R4-PayloadPart-007.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "45C45D6089D2492F7B652CF69A54819DC517A4798ADA7D0E887DBF98471DC9DF",
+      "part": "p007.bin",
+      "partBytes": 480,
+      "partSha256": "49201ADB83D4F83935E028F65B0EA938979FCB0102A41590612FA8B7BFA634CD"
+    },
+    {
+      "index": 8,
+      "script": "Stage-R3S16R4-PayloadPart-008.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "73F91CA9D6997953C919E7CB2855AC0E7A737B903D8A10A5C081A56926B28582",
+      "part": "p008.bin",
+      "partBytes": 480,
+      "partSha256": "4E24909FA0C8DB0540A7CEBF6013417EDE22ADD649EDC6AC77EAF75D02FA255F"
+    },
+    {
+      "index": 9,
+      "script": "Stage-R3S16R4-PayloadPart-009.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "8B0194F4F14FE290CBF45083F598E014733CB2C7E1D1C48107914B3EFC400D07",
+      "part": "p009.bin",
+      "partBytes": 480,
+      "partSha256": "67D43730565F2D1237E3495587A0BDECBE389AEDA4211B783462F034E4216ED9"
+    },
+    {
+      "index": 10,
+      "script": "Stage-R3S16R4-PayloadPart-010.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "DC81D9B2AB6644B1D9C033353EC71CEC1FA9D7D0CFCCBAA53803296DC0E5817E",
+      "part": "p010.bin",
+      "partBytes": 480,
+      "partSha256": "7AFC0FD4DC2525687C66ED10A9F314704122AC79C73F75B1AD6555B6142A65F8"
+    },
+    {
+      "index": 11,
+      "script": "Stage-R3S16R4-PayloadPart-011.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "DD45B379ED90ED90AE22C0CCF0CB450E05AF72DF19FFEE15FF0B8507DA80D688",
+      "part": "p011.bin",
+      "partBytes": 480,
+      "partSha256": "6BE203653D16E8A5433A51F8EEBB7C384AE208C636EB9BE8AD955C3A59081A28"
+    },
+    {
+      "index": 12,
+      "script": "Stage-R3S16R4-PayloadPart-012.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "10A058560D88528F246C9998B814D82E62505FC36C4FF33A4D0CE661773B0DD4",
+      "part": "p012.bin",
+      "partBytes": 480,
+      "partSha256": "651D4B2B27307AF7C506398F406FC39AB10B9ADCAB0269132C27F79C922E676D"
+    },
+    {
+      "index": 13,
+      "script": "Stage-R3S16R4-PayloadPart-013.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "14BB1C708AECDF1614DDAFC4F5705972A19FBFB6026708154E1CC6B054582AD8",
+      "part": "p013.bin",
+      "partBytes": 480,
+      "partSha256": "6BDA7A019B4698E71790C05348B4F69D7082E011902C69AD36BB3EF40D13B513"
+    },
+    {
+      "index": 14,
+      "script": "Stage-R3S16R4-PayloadPart-014.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "7806E1AC5CEAD5EAA370A03FC82EE6D365988954E68B64BC0FD951DCBEA40ADA",
+      "part": "p014.bin",
+      "partBytes": 480,
+      "partSha256": "A1EA28FA155ED3E3E006DA769C44EE6488EAC96777762B1F3CBE69CAF09850D6"
+    },
+    {
+      "index": 15,
+      "script": "Stage-R3S16R4-PayloadPart-015.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "DDAF5234328FC5BA364C268681FA17946D17A9094D4694F36505F5C8DE0D2359",
+      "part": "p015.bin",
+      "partBytes": 480,
+      "partSha256": "7248DBEEC9D80E670A2808A90FA1A2A5BEB917FA7B00D001068AD78967F8C995"
+    },
+    {
+      "index": 16,
+      "script": "Stage-R3S16R4-PayloadPart-016.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "664CBE404F37830D036485DBC781BC5DFB1FEE0B709A0E2B7E97FF58EBCF60C7",
+      "part": "p016.bin",
+      "partBytes": 480,
+      "partSha256": "472FF41A3F20E9F88EF1391D7AB5A53BF44F5D232A66ADD01BF2ABF88886CFCD"
+    },
+    {
+      "index": 17,
+      "script": "Stage-R3S16R4-PayloadPart-017.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "B5FA172FA1EB52349D9E38F6D0432887C39EC436AFEB8A719287710318623D88",
+      "part": "p017.bin",
+      "partBytes": 480,
+      "partSha256": "4B7CF2EE3E81B15EBB3389AA69057F67D7C49F374C15CB9AF1D1F3D6CA4190A3"
+    },
+    {
+      "index": 18,
+      "script": "Stage-R3S16R4-PayloadPart-018.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "4F2304594714C14AEC3B60FDD27829EBAE2163EDCE5272F8B349F0AC94A00D00",
+      "part": "p018.bin",
+      "partBytes": 480,
+      "partSha256": "8303626FD2A5CD2854CD96B32D43441894A68A817853529A5F9C960574FA7E42"
+    },
+    {
+      "index": 19,
+      "script": "Stage-R3S16R4-PayloadPart-019.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "D72EE49F30F15D6C4BF4B35367757C9AF2EAC01D7B97CC46B71FEFBD33B512F0",
+      "part": "p019.bin",
+      "partBytes": 480,
+      "partSha256": "B54643E882D6E8561C59AADE815F19942F93FEA33EEDCD26967708B9B35A206F"
+    },
+    {
+      "index": 20,
+      "script": "Stage-R3S16R4-PayloadPart-020.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "4C5304972BECDFBB9238297B29204D26608620780745B9A1603D2BE7693E8F22",
+      "part": "p020.bin",
+      "partBytes": 480,
+      "partSha256": "496B8CD840EF9DB1B940882635F1AD2A0B3F1EE858D0A432375D3B63401ECDF7"
+    },
+    {
+      "index": 21,
+      "script": "Stage-R3S16R4-PayloadPart-021.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "B60BB6194CD564938113858FF4B544956D0A9D11EE1BDA8F6121928BE511BB89",
+      "part": "p021.bin",
+      "partBytes": 480,
+      "partSha256": "0B05568BAB5D0194CCE03B1FEAB2837FC0666945D45B1F8EBF0BA367CFD3C48B"
+    },
+    {
+      "index": 22,
+      "script": "Stage-R3S16R4-PayloadPart-022.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "6CCB5CA0AD855EE0A3D21A2CF83918E79E40F7CF3B5FF01EABEC12DA63E62FF3",
+      "part": "p022.bin",
+      "partBytes": 480,
+      "partSha256": "3E33BC21189CD1DAD2A04A7F3DD6A9F6DAA479555BF2E74FA3E4DCD4693116AE"
+    },
+    {
+      "index": 23,
+      "script": "Stage-R3S16R4-PayloadPart-023.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "F469C1B46693E71A073426ED7DAF4AAC9C65906BE371FA1EB82D50561DE8E7A7",
+      "part": "p023.bin",
+      "partBytes": 480,
+      "partSha256": "A648463121C7AFE98EC85226143B5DD4B558DE477521776B5F5CCC7CC0506387"
+    },
+    {
+      "index": 24,
+      "script": "Stage-R3S16R4-PayloadPart-024.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "C6EBC5073F4B7E906F148C947DD2A7745692FDDE8C522977EBDCD79A98DC6C78",
+      "part": "p024.bin",
+      "partBytes": 480,
+      "partSha256": "8AF7B561C710057CF42B23146A2E5E18DABCB4C978158C0FECB6BD170DA24B3B"
+    },
+    {
+      "index": 25,
+      "script": "Stage-R3S16R4-PayloadPart-025.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "E500F85AAFC30CCC61C9430DB9EC0C810BEFE7FD9CF8A811379E3754881B63DB",
+      "part": "p025.bin",
+      "partBytes": 480,
+      "partSha256": "E03DE9611C5CF85DB3218EF2D143A95C7075C60710949B8FF5A587C86B39AE16"
+    },
+    {
+      "index": 26,
+      "script": "Stage-R3S16R4-PayloadPart-026.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "1D62CFAA36EB9A359B228850128D6A6EA5014058733CCD10C8446A3AD61AD168",
+      "part": "p026.bin",
+      "partBytes": 480,
+      "partSha256": "11A6E76BA26139AB0BB072184A093E74BCA9994B842AF1CAEA9160C0A337A5B6"
+    },
+    {
+      "index": 27,
+      "script": "Stage-R3S16R4-PayloadPart-027.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "28B27131725E7DA67CD48A027D27B8CF113BBE15618AF72C6B881D0BD81B0B3D",
+      "part": "p027.bin",
+      "partBytes": 480,
+      "partSha256": "D88E31D825F87813A01E2811632033FE94C8915198CE4B608B9C97CEDC475807"
+    },
+    {
+      "index": 28,
+      "script": "Stage-R3S16R4-PayloadPart-028.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "EF3636FB61C38586568C62AE6066B57C224D567941EB7CC20BAC87DE646F051F",
+      "part": "p028.bin",
+      "partBytes": 480,
+      "partSha256": "154351FE1878872C055648CE945440DD43EEFBF944D7FDA4BFE1F4BAE90E37E1"
+    },
+    {
+      "index": 29,
+      "script": "Stage-R3S16R4-PayloadPart-029.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "F924BB37546263A239FB95D7AB3ADCDB524864F1CBC2DC62FDADC64AB775C560",
+      "part": "p029.bin",
+      "partBytes": 480,
+      "partSha256": "FCD62D056B2912AB60AB83DE3CFF4AA9C42542FBBD9CCFE841E7F8D63CD4BADB"
+    },
+    {
+      "index": 30,
+      "script": "Stage-R3S16R4-PayloadPart-030.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "C451E7117332C92A4038B435169AC33DB6356CF082CD2E00385352D90C8915C0",
+      "part": "p030.bin",
+      "partBytes": 480,
+      "partSha256": "2B2B82D6F762EBB0D9BFD613AA3DD9BB8EFCE380C9B6BC829E37856F2D51292F"
+    },
+    {
+      "index": 31,
+      "script": "Stage-R3S16R4-PayloadPart-031.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "1CA92DF636DA9DBD62AEDFF3019232D1B14DFF31D7462D88B7667790893D5A75",
+      "part": "p031.bin",
+      "partBytes": 480,
+      "partSha256": "27A37B9F85903EAFA68DA9E0F336FB37DF68277E18226B0CC9D96F7E7A5FEA62"
+    },
+    {
+      "index": 32,
+      "script": "Stage-R3S16R4-PayloadPart-032.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "E552937AC21CC0A7832C53E3AC3AA642A5F4B28CB599994DA25777424BD55EDB",
+      "part": "p032.bin",
+      "partBytes": 480,
+      "partSha256": "B3484FB06470656AA21320B32BFB7FA466688D18848BEA7B197694C08F7B1A36"
+    },
+    {
+      "index": 33,
+      "script": "Stage-R3S16R4-PayloadPart-033.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "F4BA69273B918BFF1F75A0B816265B83C65B8E5591C23BE6E5873E4BDFDC039B",
+      "part": "p033.bin",
+      "partBytes": 480,
+      "partSha256": "B549947873FC47DBE986CE235D6A1993C59C4E65152F88E46A660ECDE4509F7F"
+    },
+    {
+      "index": 34,
+      "script": "Stage-R3S16R4-PayloadPart-034.ps1",
+      "scriptBytes": 1175,
+      "scriptSha256": "17C32558762B4970F8B4AFD8FD326EA94E60F2F45D9A09567B347192EDF131A8",
+      "part": "p034.bin",
+      "partBytes": 480,
+      "partSha256": "154FCA1ACC1206C570B94CE43F1DCD3F355A3467A230FDC8E2BF999C6BA4425E"
+    },
+    {
+      "index": 35,
+      "script": "Stage-R3S16R4-PayloadPart-035.ps1",
+      "scriptBytes": 587,
+      "scriptSha256": "96907A2C5C1C9923510086AC70F391FFA2C00A97BF141504493CD92D1A307BA9",
+      "part": "p035.bin",
+      "partBytes": 39,
+      "partSha256": "5FB2E6A025AE121757D020B2F5B0DA7616ADE1D44B3457B44E27A88882A88E6E"
+    }
+  ],
+  "maximumCommandScriptBytes": 1175,
+  "commandSourceLimit": 1260,
+  "wrapperMode": "WINDOWS_POWERSHELL_5_1_NO_PROFILE_EXECUTION_POLICY_BYPASS_FILE",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

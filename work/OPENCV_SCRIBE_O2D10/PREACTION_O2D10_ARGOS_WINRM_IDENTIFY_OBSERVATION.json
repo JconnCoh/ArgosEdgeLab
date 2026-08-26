@@ -1,0 +1,76 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_O2D10_ARGOS_WINRM_IDENTIFY_20260826T164734Z",
+  "createdUtc": "2026-08-26T16:47:34.8972731Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "TEST_EXISTING_ARGOS_WINRM_TUNNEL_IDENTIFY_WITHOUT_REMOTE_COMMAND",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_WINRM_IDENTIFY_OBSERVATION_INTENT.json",
+      "sha256": "40A8197313B9E4E946DF021B58590C4D5E745B9B66B4704399571A81130FB642"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_WINRM_IDENTIFY_AUTHORIZATION_GATE.json",
+      "sha256": "A6433834F5ADD16CA538451FE99FB44AE3E8E8098649930DD98E73FDA0F447B8"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_WINRM_IDENTIFY_CAPABILITY_INVENTORY.json",
+      "sha256": "4BDA5D423401ED3ACF02B3CE65BE4C29A38E8B1CF5642C64D044DCD53F1037E0"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_GUI_INPUT_CAPTURE_HOLD_20260826.json",
+      "sha256": "5DCDEF7E56CDBF8784EBED701E5288673DCEA42A8882FEE407EDF200DCA5F7F7"
+    },
+    {
+      "path": "C:/Program Files/RustDesk/RustDesk.exe",
+      "sha256": "B654CB0E45016773EDACB532CDDFAA3FAF677ADBBB3BD7B61E31ED0EC23E0C91"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D10_LOCAL_SIGNED_ROUTE_HOLD_CHECKPOINT_20260826.md",
+      "sha256": "D165CFF84257C0C5A51C7037D54386482A73B48213B95F602B1ACD8E0A02C9C7"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "target": "ARGOS_DESKTOP_266P787_ONLY",
+    "localEndpoint": "http://127.0.0.1:15985/wsman",
+    "remoteCommand": false,
+    "credentialDiscovery": false,
+    "jbodContact": false,
+    "remoteMutation": false,
+    "publication": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

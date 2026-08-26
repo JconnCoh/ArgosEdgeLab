@@ -1,0 +1,80 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "ARGOS_ADMIN_INBOUND_RELAY_OBSERVER_R3_20260826T173100Z",
+  "createdUtc": "2026-08-26T17:31:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "BUILD_FRESH_ARGOS_ADMIN_INBOUND_RELAY_READ_ONLY_OBSERVER_R3",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_R3_DESIGN_INTENT.json",
+      "sha256": "610F96B8F67E2E82C843FC7BE024514F22F6DB3DC8C0553F57ACA2C5261209E4"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D10_ARGOS_ADMIN_READ_CAPABILITY_GAP_CHECKPOINT_20260826.md",
+      "sha256": "AFDA4FD6F650C4BB875CC1AF9BA449ED74A4F803965268B976DED112832CE6F4"
+    },
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "289D3CF2F95ADBA49B4204F58390591E6E682ED49CE637B9C3416F9FD5E0050C"
+    },
+    {
+      "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosInboundRelayObservationR2.ps1",
+      "sha256": "93DAE4FF29C53C696894D32A6994E190373B7A95BEFE6D00BB753E2C3FE9FFE3"
+    },
+    {
+      "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Get-ArgosInboundRelayObservationR2.ps1",
+      "sha256": "58FA457DFBB35843311DE5239B33802F2CD0DBB56A8B54C86133BD851415C613"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "target": "LOCAL_PROJECT_OBSERVER_ONLY",
+    "freshRunner": "work/OPENCV_SCRIBE_O2D10/direct_control_r3/Invoke-ArgosAdminInboundRelayObservationR3.ps1",
+    "freshPayload": "work/OPENCV_SCRIBE_O2D10/direct_control_r3/Get-ArgosAdminInboundRelayObservationR3.ps1",
+    "remoteInputDuringBuild": false,
+    "remoteMutation": false,
+    "reusesOnlyOperatorConfirmedVisibleIdleArgosAdministrativePowerShell": true,
+    "hostnameAndAdminReadGateBeforeFullPayload": true,
+    "schemaShapedResultPredicates": true,
+    "windowResizeOrStateChange": false,
+    "jbodContact": false,
+    "imageBytes": false,
+    "publication": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      "ARGOS_INBOUND_RELAY_OBSERVATION_R1",
+      "ARGOS_INBOUND_RELAY_PARTIAL_OBSERVATION_R2"
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

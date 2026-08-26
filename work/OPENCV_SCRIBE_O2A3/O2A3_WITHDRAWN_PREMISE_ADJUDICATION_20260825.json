@@ -1,0 +1,29 @@
+{
+  "schema": "argos_local_recovery_failure_v1",
+  "createdUtc": "2026-08-25T23:39:07.5186372Z",
+  "state": "WITHDRAWN",
+  "disposition": "WITHDRAWN_NON_REUSABLE",
+  "incidentId": "O2A3_PROCESSOR_COMMANDLINE_CARDINALITY_ZERO_20260825",
+  "failureEvidencePath": "work/OPENCV_SCRIBE_O2A3/O2A3_OPERATOR_LAUNCH_FAILURE_20260825.json",
+  "failureEvidenceSha256": "4A159AD52D0894C55E3AC5ADB0EA41BB746068E7CE5A58823F71ECEBBE5F9D86",
+  "antecedentDirectObservationPath": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/JEO1_OBSERVATION.json",
+  "antecedentDirectObservationSha256": "91B5A9219F72845187D7CB17DAB0F1D74AF223E7DDA11E380EEA26148C60CD01",
+  "adjudication": {
+    "premise": "Exactly one running process command line contains Run-JbodAllWaferProcessor.ps1.",
+    "observedCardinalityAtLaunch": 0,
+    "antecedentRelevantProcessCount": 3,
+    "antecedentProcessorTokenMatchCount": 0,
+    "causeClass": "STALE_LIVE_STATE_PREMISE",
+    "openCvResultProduced": false,
+    "mayBeRetried": false,
+    "mayBePublicationParent": false
+  },
+  "targetExecuted": false,
+  "collectionBegan": false,
+  "taskOrProcessRestarted": false,
+  "providerActivated": false,
+  "sourceMutationPerformed": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

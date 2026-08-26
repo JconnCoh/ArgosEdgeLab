@@ -1,0 +1,53 @@
+{
+  "schema": "argos_direct_control_gui_input_capture_hold_v1",
+  "createdUtc": "2026-08-26T16:46:52.0657357Z",
+  "state": "HOLD_ARGOS_GUI_SYNTHETIC_INPUT_NOT_CAPTURED",
+  "incidentId": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_20260826",
+  "targetComputerExpected": "DESKTOP-266P787",
+  "failedAction": "ArgosCurrentLayerInventory",
+  "runnerSha256": "A341B704AA3EA898B826AFB23670AD58C7DC81584879C29879C77C7BD51AAB41",
+  "exactRustDeskWindow": {
+    "processId": 25784,
+    "title": "10.66.81.84",
+    "handle": 2558966,
+    "className": "H-SMILE-FRAME",
+    "width": 1920,
+    "height": 1200,
+    "active": true,
+    "focused": true,
+    "foreground": true,
+    "childWindowCount": 0
+  },
+  "clipboard": {
+    "length": 53,
+    "sha256": "C8D86326341DC4BD55A2C064D2B6592774BA5CE42C4A93C7E674E543AEED7C86",
+    "valueClass": "UNCHANGED_ARGOS_LOCAL_SENTINEL",
+    "hostnameReturned": false
+  },
+  "rustDeskLog": {
+    "path": "C:/Users/joshua.conn/AppData/Roaming/RustDesk/log/connect/RustDesk_rCURRENT.log",
+    "lastWriteUtcAtAudit": "2026-08-26T16:41:45.1873056Z",
+    "clipboardUpdateObserved": true,
+    "attemptKeyboardEventsObserved": false,
+    "conclusion": "The client received the sentinel clipboard update but captured none of the synthetic Escape, Ctrl+Escape, text, or Enter events."
+  },
+  "existingArgosManagementTunnel": {
+    "processId": 32736,
+    "executable": "C:/Program Files/RustDesk/RustDesk.exe",
+    "arguments": "--port-forward 10.66.81.84 15985 10.20.70.241 5985",
+    "localAddress": "0.0.0.0",
+    "localPort": 15985,
+    "targetAddress": "10.20.70.241",
+    "targetPort": 5985
+  },
+  "disposition": "Do not retry GUI keyboard injection. Qualify the existing Argos-only WinRM port-forward as a separate read-only observation capability without guessing or extracting credentials.",
+  "hostnameCommandConfirmedExecuted": false,
+  "inventoryExecuted": false,
+  "taskOrProcessActionPerformed": false,
+  "queueOrLedgerMutationPerformed": false,
+  "remoteFileMutationPerformed": false,
+  "jbodContacted": false,
+  "publicationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

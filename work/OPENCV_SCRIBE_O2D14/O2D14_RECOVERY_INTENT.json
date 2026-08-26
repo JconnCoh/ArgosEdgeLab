@@ -1,0 +1,97 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T22:37:00Z",
+  "incidentId": "OCV02_SLOT19_SOURCE_BINDING_SUMMARY_ABSENCE_20260826",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 2,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_SCRIBE_O2S19B1/S19B1_SIGNED_TERMINAL_FAILURE_GATE.json",
+        "sha256": "86F005A975046AF9EEAD48E906B664BE8BD61A2AA801D6C0490DB1D1E622E9D3",
+        "state": "FAILED"
+      },
+      {
+        "path": "work/OPENCV_SCRIBE_V1R4/OCV02_R4_LOCKED_PARITY_FAILURE_ADJUDICATION.json",
+        "sha256": "5F873A21221C36E8746201C62111B699720811E08919E291D1DA1B9F7368F8A0",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      },
+      {
+        "path": "work/OPENCV_SCRIBE_O2D14/O2D14_ENTRYPOINT_TEST_GATE_WITHDRAWAL.json",
+        "sha256": "78B8B14DA27FCA8C5661D69E9AC8C87CE9371688A6E0AF630FBFE12AA6E1FEBE",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/OPENCV_SCRIBE_O2S19P1/S19P1_RECOVERY_OBSERVATION_EVIDENCE.json",
+      "sha256": "12169D825F9D381CA8FB7C3CA3C3895B5F07A6E666710EE0E8511603BF867C33"
+    },
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": ["START_BOUNDED_PORTABLE_OPENCV_SCRIBE_DEVELOPMENT_SLOT19"],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {"path": "work/OPENCV_OLS3/pkg/payload/W.ps1", "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    "installedConfigEvidence": {"path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/copies/ENDPOINT_CONFIG/F_002_55A106E8F29F.json", "sha256": "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F"},
+    "capabilityEvidence": {
+      "path": "work/OPENCV_SCRIBE_O2S19P1/S19P1_RECOVERY_OBSERVATION_EVIDENCE.json",
+      "sha256": "12169D825F9D381CA8FB7C3CA3C3895B5F07A6E666710EE0E8511603BF867C33"
+    },
+    "qualifiedEndpointGate": {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json", "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "work/OPENCV_OLS6/OLS6_EXACT_TWENTY_SOURCE_HASHES.json",
+        "sourceSchema": "argos_ocv00_exact_twenty_source_hash_gate_v1",
+        "selector": "lotId=62619-433; acquisitionId=62619-433_20260824005735; slot=Slot19; modalities=BrightfieldFrontsideWafer,DarkfieldFrontsideWafer",
+        "uniquenessKey": "lotId+acquisitionId+slot+modality",
+        "maximumRows": 2
+      }
+    ],
+    "requestedCapabilities": ["rawSourceAutoLocalizedScribeDevelopment"],
+    "requestedFields": ["imageFirstString", "checksumState", "candidateDiagnostics", "localizationDiagnostics", "holds"],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_SCRIBE_O2S19P1/S19P1_RECOVERY_OBSERVATION_EVIDENCE.json",
+      "sha256": "12169D825F9D381CA8FB7C3CA3C3895B5F07A6E666710EE0E8511603BF867C33"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "operatorAuthorization": "User correction on 2026-08-26: do not hold Slot19; still read the scribe.",
+    "boundedChange": "Implement fresh V1R5 development-only candidate eligibility and ranking so OCR-scale morphology bands outrank short high-response strokes, then expand only to configured bounded OCR envelopes. Preserve the R3 reader, direct-input behavior, identity ineligibility, review-only authority, and all holds."
+  },
+  "scope": {
+    "newNamespace": "work/OPENCV_SCRIBE_O2D14",
+    "liveProviderActivation": false,
+    "jbodExecution": true,
+    "developmentSlots": ["Slot16", "Slot17", "Slot18", "Slot19", "Slot20", "Slot21"],
+    "independentValidationSlotsUnseen": ["Slot22", "Slot23", "Slot24", "Slot25"],
+    "requiredHold": "SCRIBE_REFERENCE_COVERAGE_HOLD"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

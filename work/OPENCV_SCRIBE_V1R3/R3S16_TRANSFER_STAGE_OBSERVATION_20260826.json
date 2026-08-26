@@ -1,0 +1,37 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T00:38:00Z",
+  "state": "PASS_R3S16_POST_TIMEOUT_TRANSFER_STAGE_OBSERVATION",
+  "incidentId": "OCV02_R3S16_TRANSFER_TIMEOUT_OBSERVATION_20260826",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "transport": {
+    "state": "PASS_EXACT_JBOD_DIRECT_COMMAND",
+    "computerName": "A1025645101",
+    "nonce": "2acb6568bc93457d89dcb475329c6c9a",
+    "commandSha256": "DF095E61B6DB58F6D8906A0E161F469FD622ED508C5EF1621D0BDBF23D7C6A6E",
+    "truncated": false
+  },
+  "observed": {
+    "stagingRoot": "D:/A2/x/r3s16_8A6DE04B",
+    "parts": [{"name": "p000.bin", "bytes": 768, "sha256": "D5949D8185FEA3CF2229AD2F5B25869A0E1033B1173662AFC27411ED56F990AC"}],
+    "assembledZipExists": false,
+    "packageRootExists": false,
+    "workRootExists": false,
+    "outputRootExists": false,
+    "localResultExists": false,
+    "imageBytesRead": false,
+    "mutationsPerformed": false
+  },
+  "decision": {
+    "failedNamespaceReusable": false,
+    "resumeOrOverwriteAllowed": false,
+    "opencvExecuted": false,
+    "freshTransportNamespaceRequired": true,
+    "nextAction": "Create a fresh R2 transport namespace and shorter exact-hash part-writer transport; retain the unchanged frozen payload only as an unexecuted dependency."
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "argos_direct_admin_read_only_authorization_gate_v1",
+  "createdUtc": "2026-08-26T17:36:00Z",
+  "state": "PASS_O2D10_ARGOS_ADMIN_INBOUND_RELAY_R3_READ_ONLY_AUTHORIZATION",
+  "incidentId": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_20260826",
+  "targetComputerName": "DESKTOP-266P787",
+  "targetAddress": "10.20.70.241",
+  "action": "ArgosAdminInboundRelayObservationR3",
+  "operatorConfirmedAdministrativePromptOpen": true,
+  "runnerPath": "work/OPENCV_SCRIBE_O2D10/direct_control_r3/Invoke-ArgosAdminInboundRelayObservationR3.ps1",
+  "runnerSha256": "8976E68EEE5B7F7A7DFF2157884167C3E34FCCBF504A5347E48D9139EDDFEFAC",
+  "payloadPath": "work/OPENCV_SCRIBE_O2D10/direct_control_r3/Get-ArgosAdminInboundRelayObservationR3.ps1",
+  "payloadSha256": "0A5FC6DC9D403C9E28FC12CA20498E547B88FD87A1BA961A3841C80975353A43",
+  "capabilityEvidence": {
+    "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_R3_CAPABILITY.json",
+    "sha256": "87886FD3F3EDDFA14D6A91C5E59A9183A55C9016A6AF43EDD77AD70AAA5156FA"
+  },
+  "staticGate": {
+    "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_OBSERVER_R3_STATIC_GATE.json",
+    "sha256": "043FB8C6096902CABBE62016B613C90BDA1738B57B7240D900D2EBF30D515365"
+  },
+  "readOnly": true,
+  "reuseExistingVisibleArgosPowerShellOnly": true,
+  "taskActionsAllowed": false,
+  "processActionsAllowed": false,
+  "installedChangesAllowed": false,
+  "queueActionsAllowed": false,
+  "ledgerActionsAllowed": false,
+  "imageBytesAllowed": false,
+  "jbodContactAllowed": false,
+  "publicationAllowed": false,
+  "retryAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

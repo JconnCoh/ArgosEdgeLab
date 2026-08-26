@@ -1,0 +1,114 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_O2D13_BUILD_SIGN_20260826T212300Z",
+  "createdUtc": "2026-08-26T21:23:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "BUILD_AND_SIGN_REVIEW_ONLY_O2D13_PORTAL_REQUEST",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "760F9242A3632B9B3AD8655581FAE6CCCE5F46292E77BEDF53DE4EA8629822A5"
+    },
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "586E4360879D90CB931755AD7752478EBAF740638253A42820C7FF65235EF653"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/Invoke-O2D13ScribeEndpoint.ps1",
+      "sha256": "08B6E76548CEE99EA11FC6245FB07C05F2E31E53B23562F8A1B15B1AC6EF6A32"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_V1R3/ArgosOpenCvScribeV1R3.py",
+      "sha256": "8A6DE04B7DD08EFA717AF606FD0D04622ABE84C753B690C4590B0E95D8B31BAB"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/O2D13_SLOT18_JOB.json",
+      "sha256": "B0C4C36354A222F38A57A5A581213B5687578D44E91FDBA1F9AB2DA55FE105AB"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/MAINTENANCE_DEFINITION.json",
+      "sha256": "2D4B94BC7EB58114EE686D6001FC4C47B8389FBA447F1219776B5C2D3F324A5D"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/O2D13_ENTRYPOINT_TEST_GATE.json",
+      "sha256": "4B3BA8CABB7DE0C16FBB0DD82E726094E3E3162075FDEB1CD55DAC8631AF92D3"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/O2D13_NO_ARGUMENT_FILE_GATE.json",
+      "sha256": "0CD1BE84A046047B664FAFE15B2ED0B5C5159457D4FED4D3F71549B91FB86D87"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/O2D13_CLONE_LITERAL_REMEDIATION.json",
+      "sha256": "AF37AD41CA6417EA8D1374C694A3025D32D674821E52527272B9E06A73C03C8F"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/O2D13_RECOVERY_INTENT.json",
+      "sha256": "562203ADDC49BFA3C66134C47CEF8232056FC1A84CAF9F59F3A566F0BA841017"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/O2D13_SUPPORTING_OBSERVATION.json",
+      "sha256": "66980E43F14051C8964A6328C62A2DFF9DE24BEAB8D3276F0C584C8E93E3B595"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2S18B1/S18B1_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "DE799E4183DEB75E9CEA1D82D13A8F8E86CE00D785D6A4AA1C236269924636B3"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2S18B2/S18B2_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "25CF8C9B04BFE5DEC485FCE2D7D5231AE8BA632602544E6BE928D2001C95FCF9"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "scope": {
+    "filesystem": "LOCAL_CREATE_NEW_SIGNED_REQUEST_ONLY",
+    "jbodExecution": false,
+    "providerActivation": false,
+    "currentDevelopmentImagesRead": false,
+    "independentValidationSlotsExposed": false,
+    "requestId": "REQ_20260826T211907111Z_AC64E36ED036"
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      "REQ_O2D4",
+      "O2D10_RETRY_OR_REPUBLICATION",
+      "O2A2",
+      "JEO1",
+      "CDM1",
+      "CDO1"
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R3S16R2_STAGE_OBSERVATION_20260826T004500Z",
+  "createdUtc": "2026-08-26T00:45:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "DIRECT_ADMIN_READ_ONLY_POST_EXECUTION_POLICY_FAILURE_OBSERVATION",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path": "work/OPENCV_SCRIBE_V1R3/Get-R3S16R2TransferStageObservation.ps1", "sha256": "78DA5104F3B92646C9BD272BEF8429258E2489F9A478ACE6FB32464064E6CA73"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R2_STAGE_OBSERVATION_INTENT.json", "sha256": "01B06EA4B4B25C3711450C6714EDDA84FADE4EF5AD2825D7504A4E862FEC2AA5"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R2_TRANSFER_FAILURE_20260826.json", "sha256": "6E053EAEA233B9C65F7D3A9E66191FD6C9FD75C261C1CBEFE1DAE085FBA47884"}
+  ],
+  "controls": {"valuesDerivedFromCurrentFileEvidence": true, "dependencyHashesPinned": true, "templateResidueAuditPassed": true, "installedRootAndTaskIdentityPinned": true, "pathAndWrapperGatesPassedWhenApplicable": true, "compoundCommandsFileBacked": true, "windowsPowerShell51ParserPassedWhenApplicable": true, "externalEvidenceJsonRehydrated": true, "arrayBoundaryModeSafe": true, "zeroOneManyCollectionCasesPassed": true, "optionalPropertiesPresenceTested": true, "residentConsumersInventoried": true, "declaredActionMatchesImplementation": true, "expectedFailureCaptureSafe": true, "optionalToolsDiscoveredBeforeUse": true, "queueAndReturnRouteTerminalGatePlanned": true, "historyAuditCompleteBeforeCheckpoint": true},
+  "collectionCaseEvidence": {"path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json", "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11", "requiredCaseIds": ["ZERO", "ONE", "MANY"]},
+  "scope": {"filesystem": "EXACT_R3S16R2_JBOD_STAGE_ONLY", "jbodExecution": true, "providerActivation": false, "currentDevelopmentImagesRead": false, "independentValidationSlotsExposed": false, "maximumRows": 28},
+  "legacyEvidenceException": {"used": false, "newExecutionAuthorized": false, "futureReuseAllowed": false, "blockedArtifacts": []},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

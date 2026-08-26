@@ -1,0 +1,59 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T00:09:23Z",
+  "state": "PASS_R3_SLOT16_EXACT_CROP_HASH_OBSERVATION",
+  "incidentId": "OCV02_R3_SLOT16_CROP_HASH_20260826",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "transport": {
+    "state": "PASS_EXACT_JBOD_DIRECT_COMMAND",
+    "computerName": "A1025645101",
+    "nonce": "71effb9a703a406a9936727b0b65c023",
+    "commandSha256": "17F3C53A0FAC9D0A672B80DC1B8E43653322C5A5E21592487E38185F646E835B",
+    "runnerSha256": "59EFFEE5AED64879689324B46DC78FC2B10CFE5DDAC851BF2996D2036C922452",
+    "truncated": false
+  },
+  "target": {
+    "physicalIdentity": "62619-433_20260824005735_Slot16",
+    "partition": "DEVELOPMENT"
+  },
+  "expected": {
+    "maximumFileCount": 2,
+    "pixelsDecoded": false,
+    "taskOrProcessRestarted": false,
+    "mutationsPerformed": false
+  },
+  "observed": {
+    "files": [
+      {
+        "channel": "BF",
+        "leaf": "BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+        "path": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot16/scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+        "bytes": 1651802,
+        "sha256": "5F4E99C88FF42293AFDC7D3A2F9110C12262C4C3707055B99B054EFC603E541C"
+      },
+      {
+        "channel": "DF",
+        "leaf": "DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+        "path": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot16/scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+        "bytes": 679156,
+        "sha256": "B6C059B35AC64DD7B8D3FBB72388A60680B014E286901CAEB956880F989D86D1"
+      }
+    ],
+    "pixelsDecoded": false,
+    "taskOrProcessRestarted": false,
+    "mutationsPerformed": false
+  },
+  "decision": {
+    "r3InputsHashPinned": true,
+    "installedProposalEligibleIdentity": false,
+    "reason": "EXACT_CROP_BYTES_PINNED_FOR_BOUNDED_REVIEW_ONLY_OPENCV_DEVELOPMENT; MULTI_CHANNEL_AMBIGUITY_AND_SCRIBE_REFERENCE_COVERAGE_HOLD_REMAIN",
+    "nextAction": "Build and gate one fresh portable OpenCV development execution against only these two exact Slot16 detector inputs."
+  },
+  "unseenSlotsPreserved": ["Slot22", "Slot23", "Slot24", "Slot25"],
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

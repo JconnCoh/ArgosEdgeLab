@@ -1,0 +1,45 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T00:30:00Z",
+  "incidentId": "OCV02_R3_SLOT16_DIRECT_DEVELOPMENT_20260826",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_MUTATE",
+    "jobClass": "ONE_BOUNDED_REVIEW_ONLY_OPENCV_SLOT16_DEVELOPMENT_EXECUTION",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": ["STAGE_FROZEN_PAYLOAD_TO_FRESH_D_ROOT", "ONE_BOUNDED_PORTABLE_PYTHON_OPENCV_CHILD", "WRITE_FRESH_D_EVIDENCE_AND_LOCAL_RESULT_ZIP"],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/copies/PROCESSOR_CONFIG/F_001_CDFD888129D0.json", "sha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"},
+    "capabilityEvidence": {"path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_DIRECT_EXECUTION_AUTHORIZATION.json", "sha256": "9D4626DA399AF477E22EA0B7AA34D0C8BD9DD13FF6F49E4725BE446B4E75CC41"},
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {"path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_DIRECT_EXECUTION_AUTHORIZATION.json", "sha256": "9D4626DA399AF477E22EA0B7AA34D0C8BD9DD13FF6F49E4725BE446B4E75CC41"}
+  },
+  "observation": {"exactSources": [], "requestedCapabilities": [], "requestedFields": [], "decisionOptions": ["A", "B", "C", "D"], "mutationDecisionDeferred": false},
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {"path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_DIRECT_EXECUTION_SUPPORTING_OBSERVATION.json", "sha256": "2B4FDA066B653D2F48B3DEDEA2015E7C67DFC0F9F2A3977DD1D9B389B0074FF3"},
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

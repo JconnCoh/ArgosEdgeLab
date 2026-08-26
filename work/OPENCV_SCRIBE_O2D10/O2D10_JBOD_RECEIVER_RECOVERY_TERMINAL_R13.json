@@ -1,0 +1,71 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-08-26T19:02:06.6782436Z",
+    "state":  "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+    "actionId":  "O2D10_JBOD_RECEIVER_RECOVERY_R13",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "1F2224E86790C3FA4CFDFDF07BB636F5F9E0885695C59CC9328030D3D91290BC",
+    "payloadSha256":  "0699C82FD078457E111EAC64D33CA9AF6C56E9F57F4E638F1BBA20CBC7B8F246",
+    "expectedResultSchema":  "argos_o2d10_jbod_receiver_recovery_terminal_v1",
+    "hostnameGatePassed":  true,
+    "hostnameUsesShortClipboardPaste":  true,
+    "payloadTransferred":  true,
+    "typedTrigger":  "iex(gcb -r)",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "schema":  "argos_o2d10_jbod_receiver_recovery_terminal_v1",
+                         "createdUtc":  "2026-08-26T19:01:09.6249168Z",
+                         "state":  "PASS_O2D10_JBOD_REQUEST_RECEIVER_RECOVERED",
+                         "computerName":  "A1025645101",
+                         "receiverTask":  {
+                                              "name":  "ArgosProjectPortal.JBOD.RequestReceiver.RO",
+                                              "state":  "Running",
+                                              "principal":  "SYSTEM"
+                                          },
+                         "receiverProcesses":  [
+                                                   {
+                                                       "processId":  27992,
+                                                       "parentProcessId":  39028,
+                                                       "name":  "ArgosProjectPortal.Transport.ReviewOnly.V1.exe",
+                                                       "creationUtc":  "2026-08-26T19:01:08.3657020Z",
+                                                       "commandLine":  "\"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" --run C:\\ProgramData\\ArgosProjectPortalRO\\config\\JBOD_REQUEST_RECEIVER.json"
+                                                   }
+                                               ],
+                         "listener48716":  {
+                                               "localAddress":  "172.16.0.10",
+                                               "localPort":  48716,
+                                               "owningProcess":  27992
+                                           },
+                         "endpointTask":  {
+                                              "name":  "ArgosProjectPortal.JBOD.Endpoint.RO",
+                                              "state":  "Running",
+                                              "principal":  "SYSTEM"
+                                          },
+                         "responseSenderTask":  {
+                                                    "name":  "ArgosProjectPortal.JBOD.ResponseSender.RO",
+                                                    "state":  "Running",
+                                                    "principal":  "SYSTEM"
+                                                },
+                         "residentPortalProcessesUnchanged":  true,
+                         "healthyProcessor":  {
+                                                  "processId":  8504,
+                                                  "parentProcessId":  2352,
+                                                  "name":  "powershell.exe",
+                                                  "creationUtc":  "2026-08-25T15:38:27.7160450Z",
+                                                  "commandLine":  "\"powershell.exe\" -WindowStyle Hidden -NoProfile -STA -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Show-JbodAllWaferTray.ps1\" -StateRoot \"C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\" -StartHidden"
+                                              },
+                         "healthyProcessorUnchanged":  true,
+                         "receiverTaskStartCount":  1,
+                         "requestRetryPerformed":  false,
+                         "requestRepublished":  false,
+                         "queueMutationPerformed":  false,
+                         "otherTaskOrProcessActionPerformed":  false,
+                         "installedBytesChanged":  false,
+                         "sourceMutationPerformed":  false,
+                         "imageBytesRead":  false,
+                         "providerActivated":  false,
+                         "reviewOnly":  true,
+                         "productionRoutingEnabled":  false
+                     }
+}

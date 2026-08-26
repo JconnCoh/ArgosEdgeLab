@@ -1,0 +1,32 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T00:42:00Z",
+  "incidentId": "OCV02_R3S16_TRANSFER_R2_20260826",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {"signedPremiseFailures": 0, "localPremiseFailures": 0, "directObservationAfterLastSignedFailure": false, "mutationStopLossExplicitlyCleared": false, "failureEvidence": [], "postFailureObservation": {"path": "", "sha256": ""}, "workflowReviewClearance": {"path": "", "sha256": ""}},
+  "route": {
+    "type": "DIRECT_ADMIN_MUTATE",
+    "jobClass": "FRESH_R3S16R2_SHORT_TRANSFER_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": ["WRITE_HASH_PINNED_TRANSFER_HELPER_AND_PAYLOAD_PARTS_TO_FRESH_D_ROOT"],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/copies/PROCESSOR_CONFIG/F_001_CDFD888129D0.json", "sha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"},
+    "capabilityEvidence": {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R2_TRANSFER_AUTHORIZATION.json", "sha256": "E53BFBE8C9FF8CBD15F5D7D521885BC5930656C3B46B7AAE6BD209431C342322"},
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R2_TRANSFER_AUTHORIZATION.json", "sha256": "E53BFBE8C9FF8CBD15F5D7D521885BC5930656C3B46B7AAE6BD209431C342322"}
+  },
+  "observation": {"exactSources": [], "requestedCapabilities": [], "requestedFields": [], "decisionOptions": ["A", "B", "C", "D"], "mutationDecisionDeferred": false},
+  "mutation": {"supportedRemedy": "B", "supportingObservation": {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R2_TRANSFER_SUPPORTING_OBSERVATION.json", "sha256": "BEFAF1E086A61F388DDA341F57E779E2C09663D5E6E82F0182F040FBE53B72E7"}, "endpointMutationNecessary": true, "singleMutationAttemptAuthorized": true},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "argos_o2d10_argos_tunnel_launcher_static_gate_v1",
+  "createdUtc": "2026-08-26T16:52:43.0666088Z",
+  "state": "PASS_O2D10_ARGOS_TUNNEL_LAUNCHER_STATIC_GATE",
+  "scriptPath": "work/OPENCV_SCRIBE_O2D10/Start-O2D10ArgosWinRmTunnel.ps1",
+  "scriptSha256": "A7C4304CD425FBF26F26B24F3EDBC2E4E238C22AD9BCD5D128A0664301628A35",
+  "manifestPath": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_TUNNEL_INVOCATION.json",
+  "manifestSha256": "5026F71F31678B44391D74FFCF823CD0E1845F849D055CAAE11706C68304BB9F",
+  "pathBudget": {
+    "state": "PASS_PATH_BUDGET",
+    "scriptEffectiveLength": 139,
+    "manifestEffectiveLength": 142,
+    "reservedSuffixCharacters": 32,
+    "maximumComponentLength": 34
+  },
+  "wrapper": {
+    "state": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "scriptSha256": "A7C4304CD425FBF26F26B24F3EDBC2E4E238C22AD9BCD5D128A0664301628A35",
+    "manifestSha256": "5026F71F31678B44391D74FFCF823CD0E1845F849D055CAAE11706C68304BB9F",
+    "preflightParameterRequired": true,
+    "arbitraryArgumentForwarding": false,
+    "startProcessWrapperHop": false
+  },
+  "harness": {
+    "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "scriptSha256": "A7C4304CD425FBF26F26B24F3EDBC2E4E238C22AD9BCD5D128A0664301628A35",
+    "parserErrors": 0,
+    "topLevelMutationCount": 1,
+    "preflightReturnGuardCount": 1,
+    "violations": []
+  },
+  "targetExecuted": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

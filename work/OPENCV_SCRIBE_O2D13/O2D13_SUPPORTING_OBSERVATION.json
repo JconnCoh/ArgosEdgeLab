@@ -1,0 +1,42 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T20:31:00Z",
+  "state": "PASS_O2D13_SLOT18_EXACT_SOURCE_BINDING_OBSERVED",
+  "incidentId": "OCV02_O2D13_SLOT18_DEVELOPMENT_20260826",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "computerName": "A1025645101",
+  "physicalIdentity": "62619-433_20260824005735_Slot18",
+  "proposal": {
+    "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals\\62619-433_20260824005735_Slot18\\SCRIBE_PROPOSAL.json",
+    "sha256": "52750D994411CB6E687F0B02B273B23A8B232A35EA77895B58E7C3A42A526473"
+  },
+  "multiChannelSummary": {
+    "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals\\62619-433_20260824005735_Slot18\\scribe\\multi_channel\\MULTI_CHANNEL_READER_SUMMARY.json",
+    "sha256": "B5E8F920FD6F2650F4D80B63A5E66E86C1E78536E92E8A191AF2BB9BAF381FDF"
+  },
+  "inputs": {
+    "bf": {"path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals\\62619-433_20260824005735_Slot18\\scribe\\BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png", "bytes": 1655393, "sha256": "68BC8F2A68CCDBE0D9C71BFE742509509DEE43E79FF3661723F5429A2799AC66"},
+    "df": {"path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals\\62619-433_20260824005735_Slot18\\scribe\\DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png", "bytes": 671586, "sha256": "5E8D1377A8D84C467AC60FF9EEAAEA1FCC5C8835AC384246F84F1936624B9048"}
+  },
+  "signedObservations": [
+    {"path": "work/OPENCV_SCRIBE_O2S18B1/S18B1_TERMINAL_RESPONSE_GATE.json", "sha256": "DE799E4183DEB75E9CEA1D82D13A8F8E86CE00D785D6A4AA1C236269924636B3", "state": "PASS_S18B1_SIGNED_SLOT18_SOURCE_METADATA_COLLECTED_HASH_BINDING_PENDING"},
+    {"path": "work/OPENCV_SCRIBE_O2S18B2/S18B2_TERMINAL_RESPONSE_GATE.json", "sha256": "25CF8C9B04BFE5DEC485FCE2D7D5231AE8BA632602544E6BE928D2001C95FCF9", "state": "PASS_S18B2_SIGNED_SLOT18_ORIENTED_INPUT_HASH_BINDING"}
+  ],
+  "expectedObserved": [
+    {"field": "physicalIdentity", "expected": "62619-433_20260824005735_Slot18", "observed": "62619-433_20260824005735_Slot18"},
+    {"field": "bfSha256", "expected": "exact signed Slot18 BF SHA-256", "observed": "68BC8F2A68CCDBE0D9C71BFE742509509DEE43E79FF3661723F5429A2799AC66"},
+    {"field": "dfSha256", "expected": "exact signed Slot18 DF SHA-256", "observed": "5E8D1377A8D84C467AC60FF9EEAAEA1FCC5C8835AC384246F84F1936624B9048"},
+    {"field": "installedConsensusState", "expected": "MULTIPLE_IMAGE_SUPPORTED_M12_CANDIDATES", "observed": "MULTIPLE_IMAGE_SUPPORTED_M12_CANDIDATES"},
+    {"field": "requiredHold", "expected": "SCRIBE_REFERENCE_COVERAGE_HOLD", "observed": "SCRIBE_REFERENCE_COVERAGE_HOLD"}
+  ],
+  "processorHealthyPreserved": true,
+  "mutationsPerformed": false,
+  "taskOrProcessRestarted": false,
+  "sourceMutationPerformed": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

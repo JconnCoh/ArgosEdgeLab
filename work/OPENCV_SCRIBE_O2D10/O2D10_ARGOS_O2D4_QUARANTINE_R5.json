@@ -1,0 +1,75 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-08-26T18:07:15.8146563Z",
+    "state":  "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+    "actionId":  "O2D10_ARGOS_O2D4_QUARANTINE_R5",
+    "stage":  "COMPLETE",
+    "computerName":  "DESKTOP-266P787",
+    "runnerSha256":  "1CE34530D25FF25CDA1DB80416F95D7E0E850258B416B14E5A2563AB01D78DA1",
+    "payloadSha256":  "43C937C6A8987AA155E3B6562DD8CAE573C1B1BC137004549CD27A55868DB2E8",
+    "expectedResultSchema":  "argos_exact_o2d4_pending_quarantine_r5_terminal_v1",
+    "hostnameGatePassed":  true,
+    "hostnameUsesShortClipboardPaste":  true,
+    "payloadTransferred":  true,
+    "typedTrigger":  "iex(gcb -r)",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "schema":  "argos_exact_o2d4_pending_quarantine_r5_terminal_v1",
+                         "createdUtc":  "2026-08-26T18:07:15.1825930Z",
+                         "state":  "PASS_EXACT_O2D4_PENDING_MOVED_TO_QUARANTINE",
+                         "computerName":  "DESKTOP-266P787",
+                         "userName":  "DESKTOP-266P787\\lwm",
+                         "administrativeToken":  true,
+                         "sourcePath":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\pending\\REQ_O2D4.ready",
+                         "destinationPath":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\quarantine\\REQ_O2D4.ready.WITHDRAWN_20260826T180500Z",
+                         "sourceAbsentAfter":  true,
+                         "destinationPresentAfter":  true,
+                         "verifiedFileCount":  6,
+                         "verifiedFiles":  [
+                                               {
+                                                   "relativePath":  "payload/ArgosOpenCvScribeV1.py",
+                                                   "bytes":  38290,
+                                                   "sha256":  "3CE7E93B9C922B02DE8E8BF712FC715BE24FF7D232B7EC3DDBB86EC7A05273B9"
+                                               },
+                                               {
+                                                   "relativePath":  "payload/Invoke-O2D4ScribeEndpoint.ps1",
+                                                   "bytes":  13658,
+                                                   "sha256":  "7FB8B54B18D4D446F4C7AC2FFCB3898721222B93FE4B17E69B681B6E6F85C8C2"
+                                               },
+                                               {
+                                                   "relativePath":  "payload/O2D4_REFS.zip",
+                                                   "bytes":  14855150,
+                                                   "sha256":  "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6"
+                                               },
+                                               {
+                                                   "relativePath":  "payload/O2D4_SLOT16_JOB.json",
+                                                   "bytes":  2316,
+                                                   "sha256":  "10FA06D089A7F0918AFA3073033D8F92C0F7D94A625FD8DB4F2C730B12BF3669"
+                                               },
+                                               {
+                                                   "relativePath":  "PORTAL_REQUEST_MANIFEST.json",
+                                                   "bytes":  8145,
+                                                   "sha256":  "63E93EFC681EAE63E84F9306F57D581E865BB1E1B06D58FDAC8D4586E645F818"
+                                               },
+                                               {
+                                                   "relativePath":  "PORTAL_REQUEST_MANIFEST.sig",
+                                                   "bytes":  384,
+                                                   "sha256":  "707C1C3A320E133798BA514A216AC99A31BE940B626A2F5C67CFAF728DD26FE8"
+                                               }
+                                           ],
+                         "quarantineParentCreated":  true,
+                         "queueMutation":  "MOVE_EXACT_STALE_O2D4_PENDING_TO_CREATE_NEW_QUARANTINE",
+                         "taskActions":  [
+
+                                         ],
+                         "processActions":  [
+
+                                            ],
+                         "jbodContacted":  false,
+                         "sourceImageBytesRead":  false,
+                         "providerActivated":  false,
+                         "mutationsPerformed":  true,
+                         "reviewOnly":  true,
+                         "productionRoutingEnabled":  false
+                     }
+}

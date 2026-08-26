@@ -1,0 +1,141 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-08-26T19:03:28.4113208Z",
+    "state":  "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+    "actionId":  "O2D10_JBOD_POST_RECOVERY_REQUEST_OBSERVATION_R14",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "1F2224E86790C3FA4CFDFDF07BB636F5F9E0885695C59CC9328030D3D91290BC",
+    "payloadSha256":  "90DF43D8E41F8CE7CF994E02B279A514FE8B49D7F7EC80522AAFBA4458C69577",
+    "expectedResultSchema":  "argos_o2d10_jbod_receiver_admin_read_only_observation_v1",
+    "hostnameGatePassed":  true,
+    "hostnameUsesShortClipboardPaste":  true,
+    "payloadTransferred":  true,
+    "typedTrigger":  "iex(gcb -r)",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "schema":  "argos_o2d10_jbod_receiver_admin_read_only_observation_v1",
+                         "createdUtc":  "2026-08-26T19:02:31.0076280Z",
+                         "state":  "PASS_O2D10_JBOD_RECEIVER_ADMIN_READ_ONLY_OBSERVATION",
+                         "disposition":  "RECEIVER_HEALTHY",
+                         "computerName":  "A1025645101",
+                         "userName":  "A1025645101\\lwm",
+                         "administrativeToken":  true,
+                         "portalRootReadable":  true,
+                         "requestId":  "REQ_20260826T015418549Z_F5D3732576F9",
+                         "tasks":  [
+                                       {
+                                           "name":  "ArgosProjectPortal.JBOD.Endpoint.RO",
+                                           "present":  true,
+                                           "state":  "Running",
+                                           "principal":  "SYSTEM",
+                                           "execute":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                           "arguments":  "-NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosProjectPortalEndpointWorker.ps1\" -ConfigPath \"C:\\ProgramData\\ArgosProjectPortalRO\\config\\endpoint_jbod.json\"",
+                                           "lastRunUtc":  "2026-08-19T13:46:53.0000000Z",
+                                           "lastTaskResult":  267009
+                                       },
+                                       {
+                                           "name":  "ArgosProjectPortal.JBOD.ResponseSender.RO",
+                                           "present":  true,
+                                           "state":  "Running",
+                                           "principal":  "SYSTEM",
+                                           "execute":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                           "arguments":  "-NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ProjectPortalTaskHost.ps1\" -TargetPath \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" -ArgumentListBase64 \"eyJzY2hlbWEiOiJhcmdvc19wcm9qZWN0X3BvcnRhbF90YXNrX2FyZ3VtZW50c192MSIsImFyZ3VtZW50cyI6WyItLXJ1biIsIkM6XFxQcm9ncmFtRGF0YVxcQXJnb3NQcm9qZWN0UG9ydGFsUk9cXGNvbmZpZ1xcSkJPRF9SRVNQT05TRV9TRU5ERVIuanNvbiJdfQ==\" -StateRoot \"C:\\ProgramData\\ArgosProjectPortalRO\\state\\task_hosts\\ArgosProjectPortal.JBOD.ResponseSender.RO\"",
+                                           "lastRunUtc":  "2026-08-19T11:56:07.0000000Z",
+                                           "lastTaskResult":  267009
+                                       },
+                                       {
+                                           "name":  "ArgosProjectPortal.JBOD.RequestReceiver.RO",
+                                           "present":  true,
+                                           "state":  "Running",
+                                           "principal":  "SYSTEM",
+                                           "execute":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                           "arguments":  "-NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ProjectPortalTaskHost.ps1\" -TargetPath \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" -ArgumentListBase64 \"eyJzY2hlbWEiOiJhcmdvc19wcm9qZWN0X3BvcnRhbF90YXNrX2FyZ3VtZW50c192MSIsImFyZ3VtZW50cyI6WyItLXJ1biIsIkM6XFxQcm9ncmFtRGF0YVxcQXJnb3NQcm9qZWN0UG9ydGFsUk9cXGNvbmZpZ1xcSkJPRF9SRVFVRVNUX1JFQ0VJVkVSLmpzb24iXX0=\" -StateRoot \"C:\\ProgramData\\ArgosProjectPortalRO\\state\\task_hosts\\ArgosProjectPortal.JBOD.RequestReceiver.RO\"",
+                                           "lastRunUtc":  "2026-08-26T19:01:07.0000000Z",
+                                           "lastTaskResult":  267009
+                                       }
+                                   ],
+                         "processes":  [
+                                           {
+                                               "processId":  3556,
+                                               "parentProcessId":  2352,
+                                               "name":  "powershell.exe",
+                                               "executablePath":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                               "commandLine":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ProjectPortalTaskHost.ps1\" -TargetPath \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" -ArgumentListBase64 \"eyJzY2hlbWEiOiJhcmdvc19wcm9qZWN0X3BvcnRhbF90YXNrX2FyZ3VtZW50c192MSIsImFyZ3VtZW50cyI6WyItLXJ1biIsIkM6XFxQcm9ncmFtRGF0YVxcQXJnb3NQcm9qZWN0UG9ydGFsUk9cXGNvbmZpZ1xcSkJPRF9SRVNQT05TRV9TRU5ERVIuanNvbiJdfQ==\" -StateRoot \"C:\\ProgramData\\ArgosProjectPortalRO\\state\\task_hosts\\ArgosProjectPortal.JBOD.ResponseSender.RO\"",
+                                               "creationDate":  "2026-08-19T11:56:07.9690820Z"
+                                           },
+                                           {
+                                               "processId":  25844,
+                                               "parentProcessId":  3556,
+                                               "name":  "ArgosProjectPortal.Transport.ReviewOnly.V1.exe",
+                                               "executablePath":  "C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe",
+                                               "commandLine":  "\"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" --run C:\\ProgramData\\ArgosProjectPortalRO\\config\\JBOD_RESPONSE_SENDER.json",
+                                               "creationDate":  "2026-08-19T11:56:08.2448570Z"
+                                           },
+                                           {
+                                               "processId":  11008,
+                                               "parentProcessId":  2352,
+                                               "name":  "powershell.exe",
+                                               "executablePath":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                               "commandLine":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosProjectPortalEndpointWorker.ps1\" -ConfigPath \"C:\\ProgramData\\ArgosProjectPortalRO\\config\\endpoint_jbod.json\"",
+                                               "creationDate":  "2026-08-19T13:46:53.2256730Z"
+                                           },
+                                           {
+                                               "processId":  39028,
+                                               "parentProcessId":  2352,
+                                               "name":  "powershell.exe",
+                                               "executablePath":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                               "commandLine":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ProjectPortalTaskHost.ps1\" -TargetPath \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" -ArgumentListBase64 \"eyJzY2hlbWEiOiJhcmdvc19wcm9qZWN0X3BvcnRhbF90YXNrX2FyZ3VtZW50c192MSIsImFyZ3VtZW50cyI6WyItLXJ1biIsIkM6XFxQcm9ncmFtRGF0YVxcQXJnb3NQcm9qZWN0UG9ydGFsUk9cXGNvbmZpZ1xcSkJPRF9SRVFVRVNUX1JFQ0VJVkVSLmpzb24iXX0=\" -StateRoot \"C:\\ProgramData\\ArgosProjectPortalRO\\state\\task_hosts\\ArgosProjectPortal.JBOD.RequestReceiver.RO\"",
+                                               "creationDate":  "2026-08-26T19:01:07.9586880Z"
+                                           },
+                                           {
+                                               "processId":  27992,
+                                               "parentProcessId":  39028,
+                                               "name":  "ArgosProjectPortal.Transport.ReviewOnly.V1.exe",
+                                               "executablePath":  "C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe",
+                                               "commandLine":  "\"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" --run C:\\ProgramData\\ArgosProjectPortalRO\\config\\JBOD_REQUEST_RECEIVER.json",
+                                               "creationDate":  "2026-08-26T19:01:08.3657020Z"
+                                           }
+                                       ],
+                         "tcp48716":  [
+                                          {
+                                              "localAddress":  "172.16.0.10",
+                                              "localPort":  48716,
+                                              "remoteAddress":  "172.16.0.11",
+                                              "remotePort":  63435,
+                                              "state":  "TimeWait",
+                                              "owningProcess":  0
+                                          },
+                                          {
+                                              "localAddress":  "172.16.0.10",
+                                              "localPort":  48716,
+                                              "remoteAddress":  "0.0.0.0",
+                                              "remotePort":  0,
+                                              "state":  "Listen",
+                                              "owningProcess":  27992
+                                          }
+                                      ],
+                         "receiverConfig":  null,
+                         "exactRequestRows":  [
+
+                                              ],
+                         "sectionErrors":  [
+                                               {
+                                                   "section":  "RECEIVER_CONFIG",
+                                                   "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\config\\JBOD_REQUEST_RECEIVER.json",
+                                                   "errorType":  "System.Management.Automation.PropertyNotFoundException",
+                                                   "errorMessage":  "The property \u0027outputRoot\u0027 cannot be found on this object. Verify that the property exists."
+                                               }
+                                           ],
+                         "sectionErrorCount":  1,
+                         "requestRetried":  false,
+                         "queueMutationPerformed":  false,
+                         "taskOrProcessActionPerformed":  false,
+                         "imageBytesRead":  false,
+                         "providerActivated":  false,
+                         "healthyProcessorTouched":  false,
+                         "mutationsPerformed":  false,
+                         "reviewOnly":  true,
+                         "productionRoutingEnabled":  false
+                     }
+}

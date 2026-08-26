@@ -1,0 +1,59 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T22:08:38.7399906Z",
+  "incidentId": "OCV02_SLOT19_SOURCE_BINDING_SUMMARY_ABSENCE_20260826",
+  "state": "PASS_S19P1_DIRECT_POST_FAILURE_OBSERVATION",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "requestId": "REQ_20260826T220154441Z_9A705541B17B",
+  "responseId": "R_55EA4C7B3265_20260826220609794_11e106b5",
+  "source": {
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "relativePath": "identity/proposals/62619-433_20260824005735_Slot19/SCRIBE_PROPOSAL.json",
+    "physicalIdentity": "62619-433_20260824005735_Slot19",
+    "sha256": "E291F7FF7960A2FE1D7F668EA4DD1BF4A9BB2E1BFC7B9E34576AB65AE3ADEF29",
+    "bytes": 577
+  },
+  "expectedObserved": [
+    {
+      "field": "physicalIdentity",
+      "expected": "62619-433_20260824005735_Slot19",
+      "observed": "62619-433_20260824005735_Slot19"
+    },
+    {
+      "field": "state",
+      "expected": "AUTHORITATIVE_CURRENT_PROPOSAL_STATE",
+      "observed": "SCRIBE_IDENTITY_CONFIRMATION_HOLD"
+    },
+    {
+      "field": "failure",
+      "expected": "AUTHORITATIVE_CURRENT_UPSTREAM_FAILURE_OR_EMPTY",
+      "observed": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_MULTIPLE_OR_NO_NATIVE_MORPHOLOGY"
+    },
+    {
+      "field": "proposal",
+      "expected": "AUTHORITATIVE_CURRENT_PROPOSAL_OR_EMPTY",
+      "observed": ""
+    },
+    {
+      "field": "operatorConfirmationRequired",
+      "expected": "AUTHORITATIVE_CURRENT_REQUIREMENT",
+      "observed": true
+    },
+    {
+      "field": "orientedScribeInputs",
+      "expected": "PRESENT_ONLY_IF_FRONT_SIDE_NOTCH_ALIGNMENT_COMPLETED",
+      "observed": "ABSENT_BECAUSE_UPSTREAM_NOTCH_ALIGNMENT_HELD"
+    }
+  ],
+  "conclusion": "Slot19 stopped before scribe at the frontside notch-alignment hold, so no oriented BF/DF scribe inputs or multi-channel reader summary exist for this acquisition.",
+  "mutationsPerformed": false,
+  "imageBytesRead": false,
+  "pixelsDecoded": false,
+  "taskOrProcessRestarted": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

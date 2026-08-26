@@ -1,0 +1,69 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T00:05:00Z",
+  "state": "PASS_R3_SLOT16_INSTALLED_SCRIBE_PROJECTION_OBSERVATION",
+  "incidentId": "OCV02_R3_SLOT16_SCRIBE_PROJECTION_20260826",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "transport": {
+    "state": "PASS_EXACT_JBOD_DIRECT_COMMAND",
+    "computerName": "A1025645101",
+    "nonce": "e67422db4f024332a2098ebe4a0e9573",
+    "commandSha256": "0D74EC5D5EEE9BDF0A9BFC0C32B043896F0BD2B0685698F5BDC2C27AF0F814EB",
+    "runnerSha256": "59EFFEE5AED64879689324B46DC78FC2B10CFE5DDAC851BF2996D2036C922452",
+    "truncated": false
+  },
+  "target": {
+    "physicalIdentity": "62619-433_20260824005735_Slot16",
+    "partition": "DEVELOPMENT"
+  },
+  "expected": {
+    "maximumLeafCount": 3,
+    "imageBytesRead": false,
+    "mutationsPerformed": false
+  },
+  "observed": {
+    "proposal": {
+      "path": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot16/SCRIBE_PROPOSAL.json",
+      "present": true,
+      "bytes": 2162,
+      "sha256": "C57380C95187610807C6BCE5C32A88E3A5F49E446C2D0C58B9B3CF855B115A0F",
+      "notchState": "FRONTSIDE_NOTCH_NATIVE_REVIEW_ONLY_CANDIDATE",
+      "bfOrientedReviewPath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot16/scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "dfOrientedReviewPath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot16/scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "readerResultPath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot16/scribe/IMAGE_FIRST_READER_RESULT.json",
+      "proposal": "1443R073SUG6",
+      "proposalSource": "IMAGE_FIRST_CHECKSUM_VALID",
+      "state": "SCRIBE_IMAGE_FIRST_CONFIRMATION_REQUIRED",
+      "checksumState": "SCRIBE_M12_IMAGE_FIRST_CHECKSUM_VALID_REVIEW_ONLY",
+      "segmentationState": "SCRIBE_GRID_BOUNDARY_COMPLETE",
+      "readerState": "SCRIBE_REFERENCE_COVERAGE_HOLD"
+    },
+    "multiChannelSummary": {
+      "path": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot16/scribe/multi_channel/MULTI_CHANNEL_READER_SUMMARY.json",
+      "present": true,
+      "bytes": 9912,
+      "sha256": "FDC869DD292A15D69B9BFAAE0F077A799E535F5BE4A4614A14DE1148F91B059E",
+      "state": "SCRIBE_M12_CANDIDATES_REQUIRE_EXACT_MES_VERIFICATION",
+      "consensusState": "MULTIPLE_IMAGE_SUPPORTED_M12_CANDIDATES",
+      "uniqueImageCandidate": ""
+    },
+    "multiChannelHold": {
+      "path": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot16/scribe/multi_channel/MULTI_CHANNEL_READER_HOLD.json",
+      "present": false
+    },
+    "imageBytesRead": false,
+    "mutationsPerformed": false
+  },
+  "decision": {
+    "installedProposalEligibleIdentity": false,
+    "reason": "MULTIPLE_IMAGE_SUPPORTED_M12_CANDIDATES_AND_EXACT_MES_VERIFICATION_REQUIRED",
+    "r3InputPathsResolved": true,
+    "nextAction": "Hash the two exact current Slot16 oriented detector-input files, then run frozen R3 on those paths with review-only authority."
+  },
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

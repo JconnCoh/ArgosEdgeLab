@@ -1,0 +1,97 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T00:03:00Z",
+  "incidentId": "OCV02_R3_SLOT16_INSTALLED_SCRIBE_METADATA_20260825",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_CONTROL_EXACT_SLOT16_INSTALLED_SCRIBE_METADATA",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {
+      "path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/copies/PROCESSOR_CONFIG/F_001_CDFD888129D0.json",
+      "sha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_DIRECT_CONTROL_CAPABILITY_INVENTORY.json",
+      "sha256": "F40133539615C61D9D3F4D23F701FBE52BE5F920F2BF9C989DCE9FDF64149D23"
+    },
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_DIRECT_CONTROL_AUTHORIZATION_GATE.json",
+      "sha256": "A63D7FA2AE1A44EA3A5FBB819893B2FCAD7D0BEAD13631D2799216D43AD72F4C"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/catalog/ALL_WAFER_CATALOG.json",
+        "sourceSchema": "argos_all_wafer_catalog_exact_row_projection",
+        "selector": "physicalIdentity 62619-433_20260824005735_Slot16 and domain FRONTSIDE",
+        "uniquenessKey": "physicalIdentity+domain",
+        "maximumRows": 2
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot16/SCRIBE_PROPOSAL.json",
+        "sourceSchema": "installed_current_acquisition_scribe_proposal_json",
+        "selector": "exact leaf, maximum 4096 bytes",
+        "uniquenessKey": "fullPath",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot16/scribe/multi_channel",
+        "sourceSchema": "installed_multi_channel_summary_and_hold_json",
+        "selector": "exact SUMMARY and HOLD leaves, maximum 4096 bytes each",
+        "uniquenessKey": "fullPath",
+        "maximumRows": 2
+      }
+    ],
+    "requestedCapabilities": [
+      "exactBoundedPathMetadata",
+      "safeTextAndSignatureHash",
+      "boundedJsonProjection",
+      "hostnameGatedNonceBoundReturn"
+    ],
+    "requestedFields": [
+      "catalog.exactCurrentAcquisitionRow",
+      "proposal.exactJsonAndSha256",
+      "reader.summaryAndHoldExactJsonAndSha256",
+      "reader.declaredCropPathsAndDimensions",
+      "invariants.imageBytesReadFalse",
+      "invariants.mutationsPerformedFalse"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

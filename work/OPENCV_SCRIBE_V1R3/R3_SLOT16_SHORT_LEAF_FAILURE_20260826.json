@@ -1,0 +1,21 @@
+{
+  "schema": "argos_direct_control_terminal_failure_v1",
+  "createdUtc": "2026-08-26T00:03:00Z",
+  "state": "WITHDRAWN",
+  "disposition": "WITHDRAWN_NON_REUSABLE_TERMINAL_DIRECT_FAILURE",
+  "incidentId": "OCV02_R3_SLOT16_SHORT_SCRIBE_LEAVES_20260825",
+  "nonce": "5b05f88d47ad43fea9b03db8d831e994",
+  "commandSha256": "87D26C2E25DB09BE16A3E22536A83548C33CC0587531D48809117541D285B07B",
+  "remoteState": "FAIL",
+  "remoteError": "The term 'throwLeaf exceeds bound' is not recognized.",
+  "cause": "The first installed JSON leaf exceeded the provisional 4096-byte raw-return bound and the compact throw statement omitted lexical separation.",
+  "targetExecutionProved": true,
+  "jsonContentReturned": false,
+  "imageBytesRead": false,
+  "taskOrProcessRestarted": false,
+  "mutationsPerformed": false,
+  "retryAllowed": false,
+  "successorRequirement": "FRESH_BOUNDED_PROPERTY_PROJECTION_WITHOUT_RAW_JSON_RETURN",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

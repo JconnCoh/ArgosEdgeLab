@@ -1,0 +1,20 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T00:53:00Z",
+  "state": "PASS_R3S16R4_TRANSFER_SUPPORTING_OBSERVATION",
+  "incidentId": "OCV02_R3S16_TRANSFER_R4_20260826",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "sources": [
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R2_TRANSFER_FAILURE_20260826.json", "sha256": "6E053EAEA233B9C65F7D3A9E66191FD6C9FD75C261C1CBEFE1DAE085FBA47884"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R2_STAGE_PROJECTION_OBSERVATION_20260826.json", "sha256": "5131B9F2A9D3EDEB4DD61F536CECF393B09F41A0232051DC1E44A14F0E62AE4A"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R3_TRANSFER_WITHDRAWN_LENGTH_CLASS_20260826.json", "sha256": "0693E2ED0679AF69C16BBE9C2AA4DF62E86D60D0D33974567BBB27C5131686A6"}
+  ],
+  "observed": {"r2HelperExact": true, "r2PayloadPartCount": 0, "existingProductTargetCount": 0, "opencvExecuted": false, "sourceImagesRead": false},
+  "decision": {"r2NamespaceReusable": false, "r3ContactAllowed": false, "freshNamespace": "D:/A2/x/r3s16r4_8A6DE04B", "requiredWrapper": "Windows PowerShell 5.1 -NoProfile -ExecutionPolicy Bypass -File", "maximumCommandScriptBytes": 1175, "singleSuccessorAttemptSupported": true},
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,127 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T17:55:50Z",
+  "incidentId": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_20260826",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 3,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_INBOUND_RELAY_OBSERVER_R1_WITHDRAWAL.json",
+        "sha256": "636BBB38535F306BBF2AF6700E21D5FFD8AC6C84B0A2F9B126F9D69B469B6D34",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      },
+      {
+        "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_INBOUND_RELAY_PARTIAL_OBSERVER_R2_WITHDRAWAL.json",
+        "sha256": "EC3C4FA87189C34CD9E06FAAB3A9C7B90C6BF78EE2A766EF07975DEC1AA56E41",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      },
+      {
+        "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_OBSERVER_R3_WITHDRAWAL.json",
+        "sha256": "E94924D9333F90ECE70E50019DDFD6354C9C33AF768EFF9BB70CACEB0C7A6F80",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "",
+      "sha256": ""
+    },
+    "workflowReviewClearance": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_ADMIN_READ_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {
+      "path": "",
+      "sha256": ""
+    },
+    "installedConfigEvidence": {
+      "path": "",
+      "sha256": ""
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_R4_CAPABILITY.json",
+      "sha256": "24679BFAFE4096CD69D8C4379C092010AECC252368509414721C28F4713EDA0B"
+    },
+    "qualifiedEndpointGate": {
+      "path": "",
+      "sha256": ""
+    },
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_R4_AUTHORIZATION.json",
+      "sha256": "7B8F63D72B7402B1EF546B1BD4574A1DD71CCDEF81FC0F442F5CD4BB79519DD2"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "DESKTOP-266P787:visible-administrative-PowerShell/C:/ProgramData/ArgosProjectPortalRO",
+        "sourceSchema": "argos_inbound_relay_direct_observation_v3",
+        "selector": "short clipboard-paste hostname gate, administrative-token/protected-root gate, then bounded portal evidence with per-source structured errors",
+        "uniquenessKey": "section+path",
+        "maximumRows": 1216
+      }
+    ],
+    "requestedCapabilities": [
+      "shortClipboardPasteHostnameGate",
+      "boundedHostnameAdministrativeTokenAndProtectedPortalReadGate",
+      "boundedPortalTaskProcessConnectionObservation",
+      "boundedInstalledConfigWorkerHashObservation",
+      "boundedRequestsFromGatewayAndToJbodObservation",
+      "structuredPerSourceAccessErrors",
+      "structuredLocalFailureEvidence"
+    ],
+    "requestedFields": [
+      "computerName",
+      "administrativeToken",
+      "protectedPortalRootReadable",
+      "taskRows",
+      "configRows",
+      "workerRows",
+      "processRows",
+      "connectionRows",
+      "queueRows",
+      "sectionErrors"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "decisionSemantics": {
+      "A": "PASS_CURRENT_HEALTHY_EMPTY",
+      "B": "HOLD_ACCESS_OR_HEALTH_FAILURE",
+      "C": "HOLD_UNRESOLVED_REQUEST",
+      "D": "HOLD_INCOMPLETE_OR_TRUNCATED"
+    },
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {
+      "path": "",
+      "sha256": ""
+    },
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

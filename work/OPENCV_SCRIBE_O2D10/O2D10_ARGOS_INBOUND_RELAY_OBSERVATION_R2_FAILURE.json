@@ -1,0 +1,30 @@
+{
+  "schema": "argos_direct_observation_failure_v1",
+  "createdUtc": "2026-08-26T17:15:00Z",
+  "state": "FAIL_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_ACCESS_DENIED_NO_RESULT",
+  "incidentId": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_20260826",
+  "targetComputerName": "DESKTOP-266P787",
+  "action": "ArgosInboundRelayObservation",
+  "runnerSha256": "CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D",
+  "payloadSha256": "0BE9F8E1D0842DD77A5D1ADA771D1D61A74759E096F75F95491A3A192D9DE335",
+  "hostnameGatePassed": true,
+  "operatorVisibleError": "Access denied",
+  "exactDeniedSourceCaptured": false,
+  "resultSchemaReturned": false,
+  "localRunnerFailure": "ConvertFrom-Json rejected clipboard source text at CmdletBinding because the multiline payload was incorrectly accepted as a changed result.",
+  "postFailureConsoleCaptureState": "TIMEOUT_NO_CLIPBOARD_RESPONSE",
+  "clipboardAfterFailure": {
+    "characterCount": 8755,
+    "utf8Sha256": "0BE9F8E1D0842DD77A5D1ADA771D1D61A74759E096F75F95491A3A192D9DE335",
+    "classification": "EXACT_OBSERVATION_PAYLOAD_NOT_RESULT_JSON"
+  },
+  "routeHealthProved": false,
+  "publicationAuthorized": false,
+  "retryAuthorized": false,
+  "jbodContacted": false,
+  "targetMutationsPerformed": false,
+  "taskOrProcessRestarted": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

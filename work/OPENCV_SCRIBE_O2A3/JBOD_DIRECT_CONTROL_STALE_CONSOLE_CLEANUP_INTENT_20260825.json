@@ -1,0 +1,79 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-25T23:26:30Z",
+  "incidentId": "JBOD_DIRECT_CONTROL_STALE_CONSOLE_CLEANUP_20260825",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {
+      "path": "work/OPENCV_SCRIBE_O2A3/JBOD_DIRECT_CONTROL_STALE_CONSOLE_OBSERVATION_20260825.json",
+      "sha256": "BE46D1FD2F73D522A4480FDCA9F38CD2D7F6087F288B1683EAE0B1288198E581"
+    },
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_BOUNDED_PROCESS_CLEANUP",
+    "jobClass": "DIRECT_ADMIN_BOUNDED_PROCESS_CLEANUP",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": ["STOP_EXACT_STALE_DIRECT_CONTROL_CONSOLE_PARENTS"],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {
+      "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+      "sha256": "F80C3F0FC02302091761DBF7B01843C1F3A850BF5D82BFBE8B39EAC9E90F120E"
+    },
+    "installedConfigEvidence": {
+      "path": "work/OPENCV_SCRIBE_O2A3/JBOD_DIRECT_CONTROL_STALE_CONSOLE_OBSERVATION_20260825.json",
+      "sha256": "BE46D1FD2F73D522A4480FDCA9F38CD2D7F6087F288B1683EAE0B1288198E581"
+    },
+    "capabilityEvidence": {
+      "path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/JEO1_DIRECT_ADMIN_CAPABILITY_INVENTORY.json",
+      "sha256": "2C63C7C57E57CE089F057101F240D20A01D0118ECB32E17F2BDCF671A29F49DA"
+    },
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "A1025645101:Win32_Process",
+        "sourceSchema": "bounded_exact_process_identity_observation_v1",
+        "selector": "nine exact process IDs with parent 20648, plain interactive PowerShell command line, created after 2026-08-25T18:10:00 local; exclude current collector and all -File/-EncodedCommand/-Command/-WindowStyle processes",
+        "uniquenessKey": "ProcessId",
+        "maximumRows": 9
+      }
+    ],
+    "requestedCapabilities": ["boundedRelevantProcessInventory"],
+    "requestedFields": ["ProcessId", "ParentProcessId", "Name", "CommandLine", "CreationDate"],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_SCRIBE_O2A3/JBOD_DIRECT_CONTROL_STALE_CONSOLE_OBSERVATION_20260825.json",
+      "sha256": "BE46D1FD2F73D522A4480FDCA9F38CD2D7F6087F288B1683EAE0B1288198E581"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "operatorAuthorization": "User message on 2026-08-25: clean up your powershell windows going forward",
+    "boundedChange": "Stop only process IDs 33032, 27788, 38176, 25400, 27964, 39712, 17516, 35160, and 33428 after revalidating their exact plain interactive PowerShell premises. Require protected process IDs 3556, 11008, and 8504 before and after. Perform no task, file, source, queue, ledger, image, wafer, provider, or production-routing action."
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

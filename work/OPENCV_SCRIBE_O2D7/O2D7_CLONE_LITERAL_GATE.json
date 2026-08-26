@@ -1,0 +1,47 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-26T01:32:53.5787409Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D7\\O2D7_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "83E899854734C58F6288103CE31CCB0AA61D6B79A7B6326A0BF94C49EEAAC9DD",
+    "pairCount":  2,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D6/Invoke-O2D6ScribeEndpoint.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D7/Invoke-O2D7ScribeEndpoint.ps1",
+                      "sourceSha256":  "7E21E8F8034986DCC33667EC8E064AC86B36B5A2CAA3827055897B68081EAD27",
+                      "generatedSha256":  "79B5A8E6C5288BEF6F2DAD41609148813197BDA18D42984E7619192F7057764A",
+                      "sourceRoots":  [
+                                          "D:\\A2",
+                                          "D:\\AFCV1",
+                                          "D:\\O2D5"
+                                      ],
+                      "generatedRoots":  [
+                                             "D:\\A2",
+                                             "D:\\AFCV1",
+                                             "D:\\O2D5"
+                                         ],
+                      "ruleCount":  3
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D6/Test-O2D6Endpoint.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D7/Test-O2D7Endpoint.ps1",
+                      "sourceSha256":  "6369D77C438EC8278B3018052D236BFE4B6A916556E322D06A1BC7207D7443DA",
+                      "generatedSha256":  "06FF8191A90E71EA5460FC89CF7E63849F3EA5113EE359896EB70A16384A4F2B",
+                      "sourceRoots":  [
+                                          "C:\\O2D6T_D6F9980F"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\O2D7T_36CD8BD9"
+                                         ],
+                      "ruleCount":  1
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

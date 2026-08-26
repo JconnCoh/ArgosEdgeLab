@@ -1,0 +1,1142 @@
+{
+    "schema":  "argos_admin_inbound_relay_observation_r4_acquisition_v1",
+    "createdUtc":  "2026-08-26T17:57:40.0677681Z",
+    "state":  "PASS_EXACT_ARGOS_ADMIN_INBOUND_RELAY_READ_ONLY_OBSERVATION",
+    "stage":  "COMPLETE",
+    "computerName":  "DESKTOP-266P787",
+    "runnerSha256":  "732D1B4C16728D0AD624E3112C31ECD8C92C6FF550ACA46968B0A677243FB966",
+    "payloadSha256":  "0A5FC6DC9D403C9E28FC12CA20498E547B88FD87A1BA961A3841C80975353A43",
+    "hostnameGatePassed":  true,
+    "adminGate":  {
+                      "schema":  "argos_admin_protected_portal_read_gate_v1",
+                      "createdUtc":  "2026-08-26T17:57:32.3791691Z",
+                      "state":  "PASS_ARGOS_ADMIN_PROTECTED_PORTAL_READ_GATE",
+                      "computerName":  "DESKTOP-266P787",
+                      "userName":  "DESKTOP-266P787\\lwm",
+                      "administrativeToken":  true,
+                      "portalRoot":  "C:\\ProgramData\\ArgosProjectPortalRO",
+                      "portalRootExists":  true,
+                      "portalRootReadable":  true,
+                      "entryProbeCount":  1,
+                      "errorType":  null,
+                      "errorMessage":  null,
+                      "mutationsPerformed":  false
+                  },
+    "fullPayloadTransferred":  true,
+    "observationReturned":  true,
+    "observation":  {
+                        "schema":  "argos_inbound_relay_direct_observation_v3",
+                        "createdUtc":  "2026-08-26T17:57:39.3536932Z",
+                        "state":  "OBSERVED_ARGOS_ADMIN_INBOUND_RELAY_READ_ONLY",
+                        "computerName":  "DESKTOP-266P787",
+                        "administrativeToken":  true,
+                        "protectedPortalRootReadable":  true,
+                        "portalRoot":  "C:\\ProgramData\\ArgosProjectPortalRO",
+                        "taskRows":  [
+                                         {
+                                             "taskPath":  "\\",
+                                             "taskName":  "ArgosProjectPortal.Argos.Endpoint.RO",
+                                             "state":  "Running",
+                                             "principal":  "SYSTEM",
+                                             "execute":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                             "arguments":  "-NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosProjectPortalEndpointWorker.ps1\" -ConfigPath \"C:\\ProgramData\\ArgosProjectPortalRO\\config\\endpoint_argos.json\"",
+                                             "workingDirectory":  "",
+                                             "lastRunUtc":  "2026-08-09T01:32:32.0000000Z",
+                                             "lastTaskResult":  267009,
+                                             "observationError":  null
+                                         },
+                                         {
+                                             "taskPath":  "\\",
+                                             "taskName":  "ArgosProjectPortal.Argos.RequestReceiver.RO",
+                                             "state":  "Running",
+                                             "principal":  "SYSTEM",
+                                             "execute":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                             "arguments":  "-NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ProjectPortalTaskHost.ps1\" -TargetPath \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" -ArgumentListBase64 \"eyJzY2hlbWEiOiJhcmdvc19wcm9qZWN0X3BvcnRhbF90YXNrX2FyZ3VtZW50c192MSIsImFyZ3VtZW50cyI6WyItLXJ1biIsIkM6XFxQcm9ncmFtRGF0YVxcQXJnb3NQcm9qZWN0UG9ydGFsUk9cXGNvbmZpZ1xcQVJHT1NfUkVRVUVTVF9SRUNFSVZFUi5qc29uIl19\" -StateRoot \"C:\\ProgramData\\ArgosProjectPortalRO\\state\\task_hosts\\ArgosProjectPortal.Argos.RequestReceiver.RO\"",
+                                             "workingDirectory":  "",
+                                             "lastRunUtc":  "2026-08-09T01:32:32.0000000Z",
+                                             "lastTaskResult":  267009,
+                                             "observationError":  null
+                                         },
+                                         {
+                                             "taskPath":  "\\",
+                                             "taskName":  "ArgosProjectPortal.Argos.RequestSender.RO",
+                                             "state":  "Running",
+                                             "principal":  "SYSTEM",
+                                             "execute":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                             "arguments":  "-NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ProjectPortalTaskHost.ps1\" -TargetPath \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" -ArgumentListBase64 \"eyJzY2hlbWEiOiJhcmdvc19wcm9qZWN0X3BvcnRhbF90YXNrX2FyZ3VtZW50c192MSIsImFyZ3VtZW50cyI6WyItLXJ1biIsIkM6XFxQcm9ncmFtRGF0YVxcQXJnb3NQcm9qZWN0UG9ydGFsUk9cXGNvbmZpZ1xcQVJHT1NfUkVRVUVTVF9TRU5ERVIuanNvbiJdfQ==\" -StateRoot \"C:\\ProgramData\\ArgosProjectPortalRO\\state\\task_hosts\\ArgosProjectPortal.Argos.RequestSender.RO\"",
+                                             "workingDirectory":  "",
+                                             "lastRunUtc":  "2026-08-19T12:24:24.0000000Z",
+                                             "lastTaskResult":  267009,
+                                             "observationError":  null
+                                         },
+                                         {
+                                             "taskPath":  "\\",
+                                             "taskName":  "ArgosProjectPortal.Argos.ResponseRelay.RO",
+                                             "state":  "Running",
+                                             "principal":  "SYSTEM",
+                                             "execute":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                             "arguments":  "-NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ProjectPortalTaskHost.ps1\" -TargetPath \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" -ArgumentListBase64 \"eyJzY2hlbWEiOiJhcmdvc19wcm9qZWN0X3BvcnRhbF90YXNrX2FyZ3VtZW50c192MSIsImFyZ3VtZW50cyI6WyItLXJ1biIsIkM6XFxQcm9ncmFtRGF0YVxcQXJnb3NQcm9qZWN0UG9ydGFsUk9cXGNvbmZpZ1xcQVJHT1NfUkVTUE9OU0VfUkVMQVkuanNvbiJdfQ==\" -StateRoot \"C:\\ProgramData\\ArgosProjectPortalRO\\state\\task_hosts\\ArgosProjectPortal.Argos.ResponseRelay.RO\"",
+                                             "workingDirectory":  "",
+                                             "lastRunUtc":  "2026-08-19T12:24:24.0000000Z",
+                                             "lastTaskResult":  267009,
+                                             "observationError":  null
+                                         },
+                                         {
+                                             "taskPath":  "\\",
+                                             "taskName":  "ArgosProjectPortal.Argos.Router.RO",
+                                             "state":  "Running",
+                                             "principal":  "SYSTEM",
+                                             "execute":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                             "arguments":  "-NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosPortalRequestRouter.ps1\" -ConfigPath \"C:\\ProgramData\\ArgosProjectPortalRO\\config\\argos_router.json\"",
+                                             "workingDirectory":  "",
+                                             "lastRunUtc":  "2026-08-09T01:32:32.0000000Z",
+                                             "lastTaskResult":  267009,
+                                             "observationError":  null
+                                         }
+                                     ],
+                        "taskRowsTruncated":  false,
+                        "configRows":  [
+                                           {
+                                               "name":  "ARGOS_REQUEST_RECEIVER.json",
+                                               "length":  1000,
+                                               "sha256":  "B06056C48DA0F5C8669F9A1B497A840712009E49EC31D3A01EA1BA2C4E1FF284",
+                                               "nodeName":  "ARGOS_REQUEST_RECEIVER",
+                                               "testOnly":  true,
+                                               "productionRoutingEnabled":  false,
+                                               "receiverEnabled":  true,
+                                               "receiverBindIp":  "10.20.70.241",
+                                               "receiverPort":  48715,
+                                               "receiverOutputRoot":  "",
+                                               "senderEnabled":  false,
+                                               "senderWatchRoot":  "",
+                                               "senderSentRoot":  "",
+                                               "senderLocalBindIp":  "",
+                                               "senderRemoteIp":  "",
+                                               "senderPort":  null
+                                           },
+                                           {
+                                               "name":  "ARGOS_REQUEST_SENDER.json",
+                                               "length":  1032,
+                                               "sha256":  "3486967B1577F6FCF628E946EFE62EB1863BCCF942892AFB1E67B7B8903DE72C",
+                                               "nodeName":  "ARGOS_REQUEST_SENDER",
+                                               "testOnly":  true,
+                                               "productionRoutingEnabled":  false,
+                                               "receiverEnabled":  false,
+                                               "receiverBindIp":  "",
+                                               "receiverPort":  null,
+                                               "receiverOutputRoot":  "",
+                                               "senderEnabled":  true,
+                                               "senderWatchRoot":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\pending",
+                                               "senderSentRoot":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\sent",
+                                               "senderLocalBindIp":  "172.16.0.11",
+                                               "senderRemoteIp":  "172.16.0.10",
+                                               "senderPort":  48716
+                                           },
+                                           {
+                                               "name":  "ARGOS_RESPONSE_RELAY.json",
+                                               "length":  1599,
+                                               "sha256":  "D41B735BDF1A925C4E30C563CA909C1A0F9739160D7AC0E74232393203066DA0",
+                                               "nodeName":  "ARGOS_RESPONSE_RELAY",
+                                               "testOnly":  true,
+                                               "productionRoutingEnabled":  false,
+                                               "receiverEnabled":  true,
+                                               "receiverBindIp":  "172.16.0.11",
+                                               "receiverPort":  48717,
+                                               "receiverOutputRoot":  "",
+                                               "senderEnabled":  true,
+                                               "senderWatchRoot":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\pending",
+                                               "senderSentRoot":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\sent",
+                                               "senderLocalBindIp":  "10.20.70.241",
+                                               "senderRemoteIp":  "10.20.70.242",
+                                               "senderPort":  48718
+                                           },
+                                           {
+                                               "name":  "argos_router.json",
+                                               "length":  799,
+                                               "sha256":  "5E84DB000FC2836B91AA6F261276679F8CF911898FFEF57813E6DE5F52AB52F0",
+                                               "nodeName":  "",
+                                               "testOnly":  null,
+                                               "productionRoutingEnabled":  false,
+                                               "receiverEnabled":  null,
+                                               "receiverBindIp":  "",
+                                               "receiverPort":  null,
+                                               "receiverOutputRoot":  "",
+                                               "senderEnabled":  null,
+                                               "senderWatchRoot":  "",
+                                               "senderSentRoot":  "",
+                                               "senderLocalBindIp":  "",
+                                               "senderRemoteIp":  "",
+                                               "senderPort":  null
+                                           },
+                                           {
+                                               "name":  "endpoint_argos.json",
+                                               "length":  2961,
+                                               "sha256":  "D55373206CA6E4DAA557A4BD422DA95C9D5784F9339AF71BFAD836735542A550",
+                                               "nodeName":  "",
+                                               "testOnly":  null,
+                                               "productionRoutingEnabled":  false,
+                                               "receiverEnabled":  null,
+                                               "receiverBindIp":  "",
+                                               "receiverPort":  null,
+                                               "receiverOutputRoot":  "",
+                                               "senderEnabled":  null,
+                                               "senderWatchRoot":  "",
+                                               "senderSentRoot":  "",
+                                               "senderLocalBindIp":  "",
+                                               "senderRemoteIp":  "",
+                                               "senderPort":  null
+                                           }
+                                       ],
+                        "configRowsTruncated":  false,
+                        "workerRows":  [
+                                           {
+                                               "name":  "ArgosProjectPortal.Transport.ReviewOnly.V1.exe",
+                                               "length":  58880,
+                                               "sha256":  "843629F44D8C310FAE201EAD808509FBECF3FC3C04D8D16B0D67CCADEFAE2DDB",
+                                               "lastWriteUtc":  "2026-08-19T05:16:06.0000000Z"
+                                           }
+                                       ],
+                        "workerRowsTruncated":  false,
+                        "processRows":  [
+                                            {
+                                                "processId":  7132,
+                                                "parentProcessId":  2952,
+                                                "name":  "powershell.exe",
+                                                "executablePath":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                                "commandLine":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ProjectPortalTaskHost.ps1\" -TargetPath \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" -ArgumentListBase64 \"eyJzY2hlbWEiOiJhcmdvc19wcm9qZWN0X3BvcnRhbF90YXNrX2FyZ3VtZW50c192MSIsImFyZ3VtZW50cyI6WyItLXJ1biIsIkM6XFxQcm9ncmFtRGF0YVxcQXJnb3NQcm9qZWN0UG9ydGFsUk9cXGNvbmZpZ1xcQVJHT1NfUkVRVUVTVF9TRU5ERVIuanNvbiJdfQ==\" -StateRoot \"C:\\ProgramData\\ArgosProjectPortalRO\\state\\task_hosts\\ArgosProjectPortal.Argos.RequestSender.RO\"",
+                                                "creationDate":  "2026-08-19T12:24:24.7740580Z"
+                                            },
+                                            {
+                                                "processId":  10304,
+                                                "parentProcessId":  2952,
+                                                "name":  "powershell.exe",
+                                                "executablePath":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                                "commandLine":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosProjectPortalEndpointWorker.ps1\" -ConfigPath \"C:\\ProgramData\\ArgosProjectPortalRO\\config\\endpoint_argos.json\"",
+                                                "creationDate":  "2026-08-09T01:32:50.9738110Z"
+                                            },
+                                            {
+                                                "processId":  17636,
+                                                "parentProcessId":  2952,
+                                                "name":  "powershell.exe",
+                                                "executablePath":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                                "commandLine":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosPortalRequestRouter.ps1\" -ConfigPath \"C:\\ProgramData\\ArgosProjectPortalRO\\config\\argos_router.json\"",
+                                                "creationDate":  "2026-08-09T01:32:51.4698000Z"
+                                            },
+                                            {
+                                                "processId":  21720,
+                                                "parentProcessId":  2952,
+                                                "name":  "powershell.exe",
+                                                "executablePath":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                                "commandLine":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ProjectPortalTaskHost.ps1\" -TargetPath \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" -ArgumentListBase64 \"eyJzY2hlbWEiOiJhcmdvc19wcm9qZWN0X3BvcnRhbF90YXNrX2FyZ3VtZW50c192MSIsImFyZ3VtZW50cyI6WyItLXJ1biIsIkM6XFxQcm9ncmFtRGF0YVxcQXJnb3NQcm9qZWN0UG9ydGFsUk9cXGNvbmZpZ1xcQVJHT1NfUkVTUE9OU0VfUkVMQVkuanNvbiJdfQ==\" -StateRoot \"C:\\ProgramData\\ArgosProjectPortalRO\\state\\task_hosts\\ArgosProjectPortal.Argos.ResponseRelay.RO\"",
+                                                "creationDate":  "2026-08-19T12:24:24.7898030Z"
+                                            },
+                                            {
+                                                "processId":  22920,
+                                                "parentProcessId":  7132,
+                                                "name":  "ArgosProjectPortal.Transport.ReviewOnly.V1.exe",
+                                                "executablePath":  "C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe",
+                                                "commandLine":  "\"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" --run C:\\ProgramData\\ArgosProjectPortalRO\\config\\ARGOS_REQUEST_SENDER.json",
+                                                "creationDate":  "2026-08-19T12:24:25.1842150Z"
+                                            },
+                                            {
+                                                "processId":  27272,
+                                                "parentProcessId":  38812,
+                                                "name":  "ArgosProjectPortal.Transport.ReviewOnly.V1.exe",
+                                                "executablePath":  "C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe",
+                                                "commandLine":  "\"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" --run C:\\ProgramData\\ArgosProjectPortalRO\\config\\ARGOS_REQUEST_RECEIVER.json",
+                                                "creationDate":  "2026-08-09T01:32:48.8693440Z"
+                                            },
+                                            {
+                                                "processId":  28284,
+                                                "parentProcessId":  21720,
+                                                "name":  "ArgosProjectPortal.Transport.ReviewOnly.V1.exe",
+                                                "executablePath":  "C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe",
+                                                "commandLine":  "\"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" --run C:\\ProgramData\\ArgosProjectPortalRO\\config\\ARGOS_RESPONSE_RELAY.json",
+                                                "creationDate":  "2026-08-19T12:24:25.1842100Z"
+                                            },
+                                            {
+                                                "processId":  38812,
+                                                "parentProcessId":  2952,
+                                                "name":  "powershell.exe",
+                                                "executablePath":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                                "commandLine":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ProjectPortalTaskHost.ps1\" -TargetPath \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" -ArgumentListBase64 \"eyJzY2hlbWEiOiJhcmdvc19wcm9qZWN0X3BvcnRhbF90YXNrX2FyZ3VtZW50c192MSIsImFyZ3VtZW50cyI6WyItLXJ1biIsIkM6XFxQcm9ncmFtRGF0YVxcQXJnb3NQcm9qZWN0UG9ydGFsUk9cXGNvbmZpZ1xcQVJHT1NfUkVRVUVTVF9SRUNFSVZFUi5qc29uIl19\" -StateRoot \"C:\\ProgramData\\ArgosProjectPortalRO\\state\\task_hosts\\ArgosProjectPortal.Argos.RequestReceiver.RO\"",
+                                                "creationDate":  "2026-08-09T01:32:48.4858250Z"
+                                            }
+                                        ],
+                        "connectionRows":  [
+                                               {
+                                                   "LocalAddress":  "172.16.0.11",
+                                                   "LocalPort":  48717,
+                                                   "RemoteAddress":  "0.0.0.0",
+                                                   "RemotePort":  0,
+                                                   "State":  2,
+                                                   "OwningProcess":  28284
+                                               },
+                                               {
+                                                   "LocalAddress":  "172.16.0.11",
+                                                   "LocalPort":  54851,
+                                                   "RemoteAddress":  "172.16.0.10",
+                                                   "RemotePort":  48716,
+                                                   "State":  3,
+                                                   "OwningProcess":  22920
+                                               }
+                                           ],
+                        "queueRows":  [
+                                          {
+                                              "relativeRoot":  "requests_from_gateway",
+                                              "exists":  true,
+                                              "truncated":  false,
+                                              "rows":  [
+                                                           {
+                                                               "name":  "pending",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-24T23:00:53.7203794Z"
+                                                           },
+                                                           {
+                                                               "name":  "receipts",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-24T23:00:52.5770667Z"
+                                                           }
+                                                       ]
+                                          },
+                                          {
+                                              "relativeRoot":  "requests_from_gateway\\pending",
+                                              "exists":  true,
+                                              "truncated":  false,
+                                              "rows":  [
+
+                                                       ]
+                                          },
+                                          {
+                                              "relativeRoot":  "requests_from_gateway\\receipts",
+                                              "exists":  true,
+                                              "truncated":  true,
+                                              "rows":  [
+                                                           {
+                                                               "name":  "REQ_20260809T014045334Z_305EED085D9F.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-09T01:40:47.6917475Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T014400257Z_274636FCB62A.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-09T01:44:02.7746189Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T015424351Z_8A97C0D6CA0E.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-09T01:54:47.5894575Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T015623898Z_1C1BAE00F331.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-09T01:56:42.2474903Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T020833870Z_087902F46C48.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-09T02:08:37.3733144Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T031527022Z_E8CC2670A8D2.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  470,
+                                                               "lastWriteUtc":  "2026-08-09T03:16:06.0531695Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T031845689Z_82A316839D53.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  470,
+                                                               "lastWriteUtc":  "2026-08-09T03:18:50.9614007Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T032330389Z_7A89CFDA0BE2.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-09T03:27:11.3522736Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T033718061Z_CB704D2F3EEE.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-09T03:37:22.0725466Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T043954120Z_08C7947D2870.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-09T04:40:29.8869991Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T044410593Z_DFB40DEA257B.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-09T04:44:15.1188718Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T175855440Z_69C5A61FA358.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T17:58:57.8213950Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T185932052Z_ECF3A4EBECD1.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T18:59:33.7524159Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T212126128Z_0228BFA32FCC.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T21:21:28.4677172Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T212126754Z_34A233A8427A.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T21:21:28.7043351Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T212127221Z_2A426B183BDE.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T21:21:28.9329721Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T212127611Z_BCD8D8DBAEDC.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T21:21:31.2140499Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T212128008Z_4E41834A0C47.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T21:21:31.4666456Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T212128422Z_A4856578133F.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T21:21:31.6972730Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T213327559Z_415723D1DAE2.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  470,
+                                                               "lastWriteUtc":  "2026-08-10T21:33:30.8817323Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T214500865Z_22003759D77A.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T21:45:03.9280182Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T214501401Z_71F3C8350139.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T21:45:04.1922435Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T224312439Z_8CAE3FBD5B29.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T22:43:15.0858311Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T224611304Z_CB2441A1E15B.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T22:46:14.0481487Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T225410285Z_DA3E9EDE16DF.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T22:54:11.8329168Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T230731436Z_2A5A03B85ACB.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T23:07:35.0506065Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T231055321Z_0B4D66DEF7F2.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T23:10:58.0243725Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T231405168Z_9E27C9545D56.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T23:14:06.9973614Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T231634017Z_479CEA9D55BA.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T23:16:37.7501339Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T232420646Z_346D2BBEA244.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  469,
+                                                               "lastWriteUtc":  "2026-08-10T23:24:25.5738591Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T232645559Z_200EC7D4480D.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T23:26:48.3482196Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T232846758Z_DAF064F1564E.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T23:28:49.0568016Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T233759577Z_34A062D80D23.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T23:38:03.3173771Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T234303308Z_B8410552426C.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T23:43:06.7106827Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T235159585Z_2E62A731E86F.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  469,
+                                                               "lastWriteUtc":  "2026-08-10T23:52:18.7128187Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T235352166Z_552C47B64B36.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T23:54:09.4118190Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T235630583Z_54BC2DD532B1.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-10T23:56:50.1791051Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T000007313Z_1BDF1C95C207.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T00:00:31.2179091Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T000831422Z_53DCA9342F8C.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  469,
+                                                               "lastWriteUtc":  "2026-08-11T00:08:35.0392050Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T001254992Z_ABA51513DB63.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T00:12:58.1355357Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T001415297Z_A7D3F28144FB.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  469,
+                                                               "lastWriteUtc":  "2026-08-11T00:14:18.6456179Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T001611405Z_B85C363D03E9.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T00:16:15.2870522Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T002601937Z_961FED9945A7.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T00:26:05.6607562Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T002738085Z_CE4F26DC4553.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T00:27:42.2190773Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T003424975Z_596EA17B9E00.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T00:34:27.7218429Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T003601620Z_35D6C8841127.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T00:36:04.2045588Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T004101638Z_5C5DA1978903.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T00:41:03.4896049Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T005018047Z_DA277123AD61.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T00:50:37.8223537Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T010503741Z_611D68289E8A.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T01:05:07.0891598Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T011153914Z_F310E0EB184D.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T01:11:56.7159734Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T011354422Z_0995B7AFC290.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T01:13:57.3288015Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T011540039Z_D973A0F953DD.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T01:15:41.8835589Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T012307725Z_61F6178BFE7D.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T01:23:27.8389341Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T013720091Z_DB0A98E7FA13.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  469,
+                                                               "lastWriteUtc":  "2026-08-11T01:37:39.0455458Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T014029692Z_599C3DFFC89D.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  469,
+                                                               "lastWriteUtc":  "2026-08-11T01:40:31.8492578Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T014859415Z_DF0A867B1BB1.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  469,
+                                                               "lastWriteUtc":  "2026-08-11T01:49:01.8562681Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T015824160Z_DCC5BCD102B9.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  469,
+                                                               "lastWriteUtc":  "2026-08-11T01:58:28.2513041Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T020752834Z_9B0C2C603924.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T02:07:56.5141635Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T021215016Z_DC620FF26DE7.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T02:12:17.7039745Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T022004244Z_2C76D35670A2.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  469,
+                                                               "lastWriteUtc":  "2026-08-11T02:20:09.5717998Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T022218511Z_D795C9B8752D.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T02:22:22.2492140Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T022325155Z_7D7311558D3C.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T02:23:28.7328610Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T022725358Z_5BBA21DA1C16.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T02:27:29.8209799Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T023356320Z_6680432B37F2.receipt.json",
+                                                               "isContainer":  false,
+                                                               "length":  468,
+                                                               "lastWriteUtc":  "2026-08-11T02:34:01.5438550Z"
+                                                           }
+                                                       ]
+                                          },
+                                          {
+                                              "relativeRoot":  "to_jbod",
+                                              "exists":  true,
+                                              "truncated":  false,
+                                              "rows":  [
+                                                           {
+                                                               "name":  "pending",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-24T23:00:53.7203794Z"
+                                                           },
+                                                           {
+                                                               "name":  "sent",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-24T21:35:42.6264047Z"
+                                                           }
+                                                       ]
+                                          },
+                                          {
+                                              "relativeRoot":  "to_jbod\\pending",
+                                              "exists":  true,
+                                              "truncated":  false,
+                                              "rows":  [
+                                                           {
+                                                               "name":  "REQ_O2D4.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-24T23:00:52.4597358Z"
+                                                           }
+                                                       ]
+                                          },
+                                          {
+                                              "relativeRoot":  "to_jbod\\sent",
+                                              "exists":  true,
+                                              "truncated":  true,
+                                              "rows":  [
+                                                           {
+                                                               "name":  "acks",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-24T21:35:42.6264047Z"
+                                                           },
+                                                           {
+                                                               "name":  "duplicate_quarantine",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-19T00:46:38.0123330Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T014045334Z_305EED085D9F.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-09T01:40:47.6757727Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T020833870Z_087902F46C48.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-09T02:08:37.3643292Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T031527022Z_E8CC2670A8D2.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-09T03:16:05.9852781Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T031845689Z_82A316839D53.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-09T03:18:50.8965045Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T032330389Z_7A89CFDA0BE2.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-09T03:27:11.3432846Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260809T033718061Z_CB704D2F3EEE.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-09T03:37:22.0635640Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T175855440Z_69C5A61FA358.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T17:58:57.8124091Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T185932052Z_ECF3A4EBECD1.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T18:59:33.7414335Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T212126128Z_0228BFA32FCC.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T21:21:28.4567344Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T212126754Z_34A233A8427A.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T21:21:28.6943507Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T212127221Z_2A426B183BDE.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T21:21:28.9219865Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T212127611Z_BCD8D8DBAEDC.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T21:21:31.1980718Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T212128008Z_4E41834A0C47.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T21:21:31.4566580Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T212128422Z_A4856578133F.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T21:21:31.6862905Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T213327559Z_415723D1DAE2.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T21:33:30.7918769Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T214501401Z_71F3C8350139.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T21:45:04.1822595Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T224312439Z_8CAE3FBD5B29.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T22:43:15.0698573Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T230731436Z_2A5A03B85ACB.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T23:07:35.0396272Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T231055321Z_0B4D66DEF7F2.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T23:10:58.0143864Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T231405168Z_9E27C9545D56.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T23:14:06.9863790Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T231634017Z_479CEA9D55BA.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T23:16:37.7391519Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T232420646Z_346D2BBEA244.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T23:24:25.5259357Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T232645559Z_200EC7D4480D.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T23:26:48.3372374Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T232846758Z_DAF064F1564E.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T23:28:49.0458200Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T233759577Z_34A062D80D23.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T23:38:03.3073931Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T234303308Z_B8410552426C.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T23:43:06.6997004Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T235159585Z_2E62A731E86F.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T23:52:18.6828667Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T235352166Z_552C47B64B36.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T23:54:09.4008322Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260810T235630583Z_54BC2DD532B1.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-10T23:56:50.1691211Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T000007313Z_1BDF1C95C207.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T00:00:31.2069272Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T000831422Z_53DCA9342F8C.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T00:08:34.9942773Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T001254992Z_ABA51513DB63.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T00:12:58.1045815Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T001415297Z_A7D3F28144FB.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T00:14:18.6006901Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T001611405Z_B85C363D03E9.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T00:16:15.2770683Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T002601937Z_961FED9945A7.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T00:26:05.6517704Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T002738085Z_CE4F26DC4553.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T00:27:42.2080951Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T003424975Z_596EA17B9E00.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T00:34:27.6948875Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T003601620Z_35D6C8841127.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T00:36:04.1935765Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T004101638Z_5C5DA1978903.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T00:41:03.4796213Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T005018047Z_DA277123AD61.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T00:50:37.8123696Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T010503741Z_611D68289E8A.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T01:05:07.0781769Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T011153914Z_F310E0EB184D.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T01:11:56.6820280Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T011354422Z_0995B7AFC290.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T01:13:57.3038416Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T011540039Z_D973A0F953DD.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T01:15:41.8576005Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T012307725Z_61F6178BFE7D.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T01:23:27.8109794Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T013720091Z_DB0A98E7FA13.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T01:37:38.9984128Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T014029692Z_599C3DFFC89D.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T01:40:31.8003357Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T014859415Z_DF0A867B1BB1.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T01:49:01.8093429Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T015824160Z_DCC5BCD102B9.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T01:58:28.2028690Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T020752834Z_9B0C2C603924.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T02:07:56.5031793Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T021215016Z_DC620FF26DE7.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T02:12:17.6919934Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T022004244Z_2C76D35670A2.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T02:20:09.5228680Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T022218511Z_D795C9B8752D.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T02:22:22.2392306Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T022325155Z_7D7311558D3C.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T02:23:28.7228771Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T022725358Z_5BBA21DA1C16.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T02:27:29.8099974Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T023356320Z_6680432B37F2.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T02:34:01.5338709Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T024503747Z_5428E9D39567.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T02:45:05.9751840Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T024924517Z_D9F43D40EFC2.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T02:49:27.1209471Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T025130566Z_050EF8458AE6.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T02:51:31.7726416Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260811T031601494Z_B6B0A39D64F1.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-11T03:16:02.8765244Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260814T162441553Z_23532A39C48B.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-14T16:24:49.7388505Z"
+                                                           },
+                                                           {
+                                                               "name":  "REQ_20260814T162804256Z_7D12A6137A6E.ready",
+                                                               "isContainer":  true,
+                                                               "length":  null,
+                                                               "lastWriteUtc":  "2026-08-14T16:28:10.7400367Z"
+                                                           }
+                                                       ]
+                                          }
+                                      ],
+                        "sectionErrors":  [
+
+                                          ],
+                        "sectionErrorCount":  0,
+                        "accessDenied":  false,
+                        "imageBytesRead":  false,
+                        "jbodContacted":  false,
+                        "mutationsPerformed":  false,
+                        "reviewOnly":  true,
+                        "productionRoutingEnabled":  false
+                    },
+    "jbodContacted":  false,
+    "mutationsPerformed":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

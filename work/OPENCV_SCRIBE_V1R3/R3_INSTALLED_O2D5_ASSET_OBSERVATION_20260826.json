@@ -1,0 +1,49 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T00:24:00Z",
+  "state": "PASS_R3_INSTALLED_O2D5_ASSET_OBSERVATION",
+  "incidentId": "OCV02_R3_INSTALLED_O2D5_ASSET_OBSERVATION_20260826",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "transport": {
+    "state": "PASS_EXACT_JBOD_DIRECT_COMMAND",
+    "computerName": "A1025645101",
+    "nonce": "1f67e256cf7f491592f7ed7906129fcd",
+    "commandSha256": "64DFD450B4857813BED88B7B2B1AC27EA7A935091D771B3C9392E682FD1B0E1F",
+    "runnerSha256": "59EFFEE5AED64879689324B46DC78FC2B10CFE5DDAC851BF2996D2036C922452",
+    "truncated": false
+  },
+  "observed": {
+    "referenceBundle": {
+      "path": "D:/O2D5/ARGOS_O2D5/O2D5_REFS.zip",
+      "bytes": 14855150,
+      "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6"
+    },
+    "predecessorEngine": {
+      "path": "D:/O2D5/ARGOS_O2D5/ArgosOpenCvScribeV1.py",
+      "bytes": 38290,
+      "sha256": "3CE7E93B9C922B02DE8E8BF712FC715BE24FF7D232B7EC3DDBB86EC7A05273B9"
+    },
+    "predecessorPackageManifest": {
+      "path": "D:/O2D5/ARGOS_O2D5/PACKAGE_MANIFEST.json",
+      "bytes": 2566,
+      "sha256": "8708B418484617BAE73E2842EF127C6E5968D69103E55DFD36B8140C14AE3DEC"
+    },
+    "imageBytesRead": false,
+    "pixelsDecoded": false,
+    "mutationsPerformed": false
+  },
+  "decision": {
+    "referenceBundleReusableAsExactInstalledDependency": true,
+    "predecessorEngineReusable": false,
+    "reason": "The exact 456-reference bundle is present and hash-matches the accepted dependency. The predecessor engine is retained only as predecessor evidence; the gated R3 engine remains a fresh payload.",
+    "nextAction": "Stage the fresh hash-pinned R3 engine, job, and direct runner into a fresh D-side namespace and execute one review-only Slot16 development run."
+  },
+  "imageBytesRead": false,
+  "pixelsDecoded": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

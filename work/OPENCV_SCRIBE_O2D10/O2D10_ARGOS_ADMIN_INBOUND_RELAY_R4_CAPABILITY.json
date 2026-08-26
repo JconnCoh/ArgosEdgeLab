@@ -1,0 +1,39 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-08-26T17:52:30Z",
+  "state": "PASS_O2D10_ARGOS_ADMIN_INBOUND_RELAY_R4_CAPABILITY",
+  "incidentId": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_20260826",
+  "routes": [
+    {
+      "type": "DIRECT_ADMIN_READ_ONLY",
+      "action": "ArgosAdminInboundRelayObservationR4",
+      "targetComputerName": "DESKTOP-266P787",
+      "capabilities": [
+        "shortClipboardPasteHostnameGate",
+        "boundedHostnameAdministrativeTokenAndProtectedPortalReadGate",
+        "boundedPortalTaskProcessConnectionObservation",
+        "boundedInstalledConfigWorkerHashObservation",
+        "boundedRequestsFromGatewayAndToJbodObservation",
+        "structuredPerSourceAccessErrors",
+        "structuredLocalFailureEvidence"
+      ]
+    }
+  ],
+  "runnerSha256": "732D1B4C16728D0AD624E3112C31ECD8C92C6FF550ACA46968B0A677243FB966",
+  "payloadSha256": "0A5FC6DC9D403C9E28FC12CA20498E547B88FD87A1BA961A3841C80975353A43",
+  "staticGate": {
+    "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_OBSERVER_R4_STATIC_GATE.json",
+    "sha256": "92979C7A86EAA71AAA15D92528D1590B828B2C9DC5C87FF74EED863B0FECBC67"
+  },
+  "limitations": [
+    "REQUIRES_EXACT_VISIBLE_ARGOS_ADMINISTRATIVE_POWERSHELL_AT_IDLE_PROMPT",
+    "HOSTNAME_AND_ADMIN_READ_GATES_MUST_PASS_BEFORE_FULL_PAYLOAD",
+    "NO_LISTENER_OR_PERSISTENT_AGENT_IS_CREATED",
+    "ONE_ATTEMPT_ONLY",
+    "NO_JBOD_CONTACT_OR_O2D10_PUBLICATION"
+  ],
+  "remoteProcessStartImplemented": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

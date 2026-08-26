@@ -1,0 +1,73 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T18:47:35Z",
+  "incidentId": "OCV02_O2D10_JBOD_RECEIVER_UNREACHABLE_20260826",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"","sha256":""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_RECOVERY",
+    "jobClass": "DIRECT_ADMIN_RECOVERY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": ["Start ArgosProjectPortal.JBOD.RequestReceiver.RO exactly once"],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path":"","sha256":""},
+    "installedConfigEvidence": {"path":"","sha256":""},
+    "capabilityEvidence": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_JBOD_RECEIVER_RECOVERY_R9_CAPABILITY.json",
+      "sha256": "19A33179F8CBBAF92D4525B21F499B3B6CDDBA622617D28D3FA1EC6611A97A68"
+    },
+    "qualifiedEndpointGate": {"path":"","sha256":""},
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_JBOD_RECEIVER_RECOVERY_R10_AUTHORIZATION.json",
+      "sha256": "0D774F63B9F63EE8C89F8FB0A7E065D3F58164A0DA23BF7221B5661CAD7078C9"
+    }
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A","B","C","D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_JBOD_RECEIVER_RECOVERY_OBSERVATION_R8.json",
+      "sha256": "303797AA994191907AD0AEDEFE5C6B424261F3B04E82C576CC82E62112C67CFD"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "remedyDescription": "Start only the exact installed pinned JBOD request-receiver scheduled task once, verify its process and port 48716 listener, preserve the healthy processor and other portal roles, and allow the already queued O2D10 request to continue without retry or republication.",
+    "contractPath": "work/OPENCV_SCRIBE_O2D10/O2D10_JBOD_RECEIVER_RECOVERY_R9_STATIC_GATE.json",
+    "contractSha256": "D00AFB4A6ACD79E1E634938084FECEAB1FB7C37577E477715E913F1B6FD23F68"
+  },
+  "authorizationBoundary": {
+    "liveDirectAdminMutationAuthorized": true,
+    "liveActionsMaximum": 1,
+    "retryAuthorized": false,
+    "requestPublicationAuthorized": false,
+    "otherTaskOrProcessActionAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

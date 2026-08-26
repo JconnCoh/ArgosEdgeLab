@@ -1,0 +1,97 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-25T22:54:17.3427741Z",
+  "incidentId": "O2A3_PROCESSOR_COMMANDLINE_CARDINALITY_ZERO_20260825",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_ADMIN_PROCESSOR_PREMISE_OBSERVATION",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {
+      "path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/copies/PROCESSOR_CONFIG/F_001_CDFD888129D0.json",
+      "sha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"
+    },
+    "capabilityEvidence": {
+      "path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/JEO1_DIRECT_ADMIN_CAPABILITY_INVENTORY.json",
+      "sha256": "2C63C7C57E57CE089F057101F240D20A01D0118ECB32E17F2BDCF671A29F49DA"
+    },
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {
+      "path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/JEO1_DIRECT_ADMIN_READ_ONLY_AUTHORIZATION_GATE.json",
+      "sha256": "6734664D2FE3E4A4EA3DAC6752C08AF171BA1DB81D4A9FA6A65BF72FB869B1E7"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "Win32_Process on A1025645101",
+        "sourceSchema": "cim_win32_process_exact_processor_token_projection",
+        "selector": "CommandLine contains Run-JbodAllWaferProcessor.ps1; plus exact protected PowerShell PIDs 3556 and 11008",
+        "uniquenessKey": "ProcessId",
+        "maximumRows": 4
+      },
+      {
+        "sourcePath": "Task Scheduler task \\ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2 on A1025645101",
+        "sourceSchema": "scheduled_task_exact_definition_and_info_projection",
+        "selector": "exact TaskPath and TaskName; state, principal, action, process and last-result metadata only",
+        "uniquenessKey": "TaskPath+TaskName",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/PROCESSOR_CONFIG.json",
+        "sourceSchema": "argos_jbod_all_wafer_processor_config_v3_metadata",
+        "selector": "exact installed config path metadata and SHA-256; no image paths or image bytes",
+        "uniquenessKey": "fullPath",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": [
+      "boundedRelevantProcessInventory",
+      "exactTaskStateAndDefinitionHash",
+      "exactBoundedPathMetadata",
+      "installedRouteHashInventory"
+    ],
+    "requestedFields": [
+      "processor.tokenMatchRows",
+      "processor.protectedPidMetadata",
+      "task.statePrincipalActionsLastRunLastResult",
+      "config.pathBytesSha256",
+      "invariants.imageBytesReadFalse",
+      "invariants.taskOrProcessRestartedFalse"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T00:45:00Z",
+  "incidentId": "OCV02_R3S16R2_EXECUTION_POLICY_OBSERVATION_20260826",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {"signedPremiseFailures": 0, "localPremiseFailures": 0, "directObservationAfterLastSignedFailure": false, "mutationStopLossExplicitlyCleared": false, "failureEvidence": [], "postFailureObservation": {"path": "", "sha256": ""}, "workflowReviewClearance": {"path": "", "sha256": ""}},
+  "route": {"type": "DIRECT_ADMIN_READ_ONLY", "jobClass": "DIRECT_CONTROL_EXACT_R3S16R2_STAGE_OBSERVATION", "installedCodeChange": false, "helperInstall": false, "taskActions": [], "processActions": [], "queueMutation": false, "ledgerMutation": false, "sourceMutation": false, "imageRead": false, "waferAction": false, "inheritsQualifiedEndpointGate": false, "endpointWorker": {"path": "", "sha256": ""}, "installedConfigEvidence": {"path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/copies/PROCESSOR_CONFIG/F_001_CDFD888129D0.json", "sha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"}, "capabilityEvidence": {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R2_STAGE_CAPABILITY_INVENTORY.json", "sha256": "8E7743F27BCCB85A78B706E0B9CE8AC3D4D57C813470225D512774865AC67CBF"}, "qualifiedEndpointGate": {"path": "", "sha256": ""}, "qualifiedAdminGate": {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R2_STAGE_OBSERVATION_AUTHORIZATION.json", "sha256": "68DA9DE23981F91C9D6DE2BCC6821D3B74DE25CC2FEAC17D2CB1C83AC57C9843"}},
+  "observation": {"exactSources": [{"sourcePath": "D:/A2/x/r3s16r2_8A6DE04B", "sourceSchema": "r3s16r2_exact_transfer_stage_and_successor_targets", "selector": "exact helper hash, p*.bin metadata, and five target existence flags", "uniquenessKey": "fullPath", "maximumRows": 28}], "requestedCapabilities": ["exactBoundedPathMetadata", "safeTextAndSignatureHash", "hostnameGatedNonceBoundReturn"], "requestedFields": ["helper.existsSha256", "parts.nameBytesSha256", "targets.pathExists"], "decisionOptions": ["A", "B", "C", "D"], "mutationDecisionDeferred": true},
+  "mutation": {"supportedRemedy": "", "supportingObservation": {"path": "", "sha256": ""}, "endpointMutationNecessary": false, "singleMutationAttemptAuthorized": false},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

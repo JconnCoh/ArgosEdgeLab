@@ -1,0 +1,68 @@
+{
+  "schema": "argos_opencv_scribe_job_v1",
+  "revision": "OCV02_O2D10_20260826T015418549Z_F5D37325",
+  "jobId": "O2D10_20260826T015418549Z_F5D37325_62619-433_SLOT16",
+  "createdUtc": "2026-08-26T01:54:18.549Z",
+  "identity": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "slotId": "Slot16",
+    "physicalIdentity": "62619-433_20260824005735_Slot16"
+  },
+  "inputMode": "QUALIFIED_INSTALLED_ORIENTED_DETECTOR_INPUT",
+  "inputQualification": {
+    "state": "QUALIFIED_INSTALLED_ORIENTED_DETECTOR_INPUT",
+    "physicalIdentity": "62619-433_20260824005735_Slot16",
+    "proposalPath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals\\62619-433_20260824005735_Slot16\\SCRIBE_PROPOSAL.json",
+    "proposalSha256": "C57380C95187610807C6BCE5C32A88E3A5F49E446C2D0C58B9B3CF855B115A0F",
+    "multiChannelSummaryPath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals\\62619-433_20260824005735_Slot16\\scribe\\multi_channel\\MULTI_CHANNEL_READER_SUMMARY.json",
+    "multiChannelSummarySha256": "FDC869DD292A15D69B9BFAAE0F077A799E535F5BE4A4614A14DE1148F91B059E",
+    "installedProposalEligibleIdentity": false,
+    "installedConsensusState": "MULTIPLE_IMAGE_SUPPORTED_M12_CANDIDATES"
+  },
+  "inputs": {
+    "bf": {
+      "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals\\62619-433_20260824005735_Slot16\\scribe\\BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "canonicalProvenancePath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals\\62619-433_20260824005735_Slot16\\scribe\\BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "ioPathClass": "INSTALLED_HASH_PINNED_REVIEW_ONLY",
+      "aliasName": "",
+      "sha256": "5F4E99C88FF42293AFDC7D3A2F9110C12262C4C3707055B99B054EFC603E541C",
+      "bytes": 1651802,
+      "coordinateFrameId": "LOT62619_433_SLOT16_INSTALLED_SCRIBE_DETECTOR_INPUT"
+    },
+    "df": {
+      "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals\\62619-433_20260824005735_Slot16\\scribe\\DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "canonicalProvenancePath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals\\62619-433_20260824005735_Slot16\\scribe\\DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "ioPathClass": "INSTALLED_HASH_PINNED_REVIEW_ONLY",
+      "aliasName": "",
+      "sha256": "B6C059B35AC64DD7B8D3FBB72388A60680B014E286901CAEB956880F989D86D1",
+      "bytes": 679156,
+      "coordinateFrameId": "LOT62619_433_SLOT16_INSTALLED_SCRIBE_DETECTOR_INPUT"
+    }
+  },
+  "references": {
+    "manifestPath": "D:\\A2\\w\\ocv\\O2D10_20260826T015418549Z_F5D37325\\refs\\PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "manifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "excludedPhysicalIdentity": "62619-433_20260824005735_Slot16",
+    "roots": [
+      {"relativePrefix": "glyphs", "path": "D:\\A2\\w\\ocv\\O2D10_20260826T015418549Z_F5D37325\\refs\\glyphs"},
+      {"relativePrefix": "glyphs_v5_confirmed_20260806", "path": "D:\\A2\\w\\ocv\\O2D10_20260826T015418549Z_F5D37325\\refs\\glyphs_v5_confirmed_20260806"}
+    ]
+  },
+  "search": {
+    "expectedRegions": [],
+    "boundedExceptionSearch": false,
+    "maximumWorkingDimension": 1600,
+    "maximumCandidates": 64,
+    "orientationStepDegrees": 15
+  },
+  "outputRoot": "D:\\A2\\o\\ocv\\O2D10_20260826T015418549Z_F5D37325",
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T18:04:00Z",
+  "state": "PASS_DIRECT_ARGOS_O2D4_QUEUE_POISON_OBSERVATION",
+  "incidentId": "OCV02_O2D4_ARGOS_QUEUE_POISON_20260826",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "sourceEvidence": {
+    "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_RELAY_R4.json",
+    "sha256": "A5910A390159B00533CFA5D29CA26D9AFF1391F2B53B96D941D9099A9A569039"
+  },
+  "fieldComparisons": [
+    {"field":"computerName","expected":"DESKTOP-266P787","observed":"DESKTOP-266P787","pass":true},
+    {"field":"administrativeToken","expected":true,"observed":true,"pass":true},
+    {"field":"protectedPortalRootReadable","expected":true,"observed":true,"pass":true},
+    {"field":"expectedPortalTasksRunningAsSystem","expected":5,"observed":5,"pass":true},
+    {"field":"queueSafeTransportSha256","expected":"843629F44D8C310FAE201EAD808509FBECF3FC3C04D8D16B0D67CCADEFAE2DDB","observed":"843629F44D8C310FAE201EAD808509FBECF3FC3C04D8D16B0D67CCADEFAE2DDB","pass":true},
+    {"field":"requestSenderConnection","expected":"172.16.0.11:* -> 172.16.0.10:48716 ESTABLISHED","observed":"172.16.0.11:54851 -> 172.16.0.10:48716 state 3","pass":true},
+    {"field":"responseRelayListener","expected":"172.16.0.11:48717 LISTEN","observed":"172.16.0.11:48717 state 2","pass":true},
+    {"field":"sectionErrorCount","expected":0,"observed":0,"pass":true},
+    {"field":"requestsFromGatewayPendingCount","expected":0,"observed":0,"pass":true},
+    {"field":"toJbodPendingCount","expected":0,"observed":1,"pass":false},
+    {"field":"toJbodPendingOnlyIdentity","expected":null,"observed":"REQ_O2D4.ready","pass":false},
+    {"field":"o2d4ExecutedOnJbod","expected":false,"observed":false,"pass":true},
+    {"field":"o2d4FrozenRequestReusable","expected":false,"observed":false,"pass":true}
+  ],
+  "observationDecision": "C",
+  "observationDisposition": "HOLD_EXACT_EARLIER_ACCEPTED_O2D4_STALE_IN_ARGOS_TO_JBOD_PENDING",
+  "exactPendingPath": "C:/ProgramData/ArgosProjectPortalRO/to_jbod/pending/REQ_O2D4.ready",
+  "exactPendingLastWriteUtc": "2026-08-24T23:00:52.4597358Z",
+  "o2d4DirectJbodObservation": {
+    "path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/JEO1_OBSERVATION.json",
+    "sha256": "91B5A9219F72845187D7CB17DAB0F1D74AF223E7DDA11E380EEA26148C60CD01",
+    "exactIdentityMatchCount": 0
+  },
+  "mutationsPerformed": false,
+  "jbodContacted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

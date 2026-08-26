@@ -1,0 +1,68 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-25T23:39:07.5186372Z",
+  "incidentId": "OCV02_O2D5_SEMANTIC_REGRESSION_20260825",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "LOCAL_DEVELOPMENT_MUTATE",
+    "jobClass": "OPENCV_SCRIBE_ENGINE_DEVELOPMENT_REVIEW_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {
+      "path": "work/OPENCV_SCRIBE_V1R3/O2D5_SEMANTIC_REGRESSION_OBSERVATION_20260825.json",
+      "sha256": "84EF176E643A234AEC54D7AB74B2142F2749FE63701F20398B218895B4D0B5C6"
+    },
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_SCRIBE_V1R3/O2D5_SEMANTIC_REGRESSION_OBSERVATION_20260825.json",
+      "sha256": "84EF176E643A234AEC54D7AB74B2142F2749FE63701F20398B218895B4D0B5C6"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "scope": {
+    "newNamespace": "work/OPENCV_SCRIBE_V1R3",
+    "liveProviderActivation": false,
+    "jbodExecution": false,
+    "developmentSlots": ["Slot16", "Slot17", "Slot18", "Slot19", "Slot20", "Slot21"],
+    "independentValidationSlotsUnseen": ["Slot22", "Slot23", "Slot24", "Slot25"],
+    "requiredHold": "SCRIBE_REFERENCE_COVERAGE_HOLD"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

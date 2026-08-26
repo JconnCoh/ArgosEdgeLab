@@ -1,0 +1,29 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-08-26T00:03:00Z",
+  "state": "PASS_ARGOS_ENDPOINT_STATIC_CAPABILITY_INVENTORY",
+  "routes": [
+    {
+      "type": "DIRECT_ADMIN_READ_ONLY",
+      "capabilities": [
+        "exactBoundedPathMetadata",
+        "safeTextAndSignatureHash",
+        "boundedJsonProjection",
+        "hostnameGatedNonceBoundReturn"
+      ]
+    }
+  ],
+  "exactTarget": "62619-433_20260824005735_Slot16",
+  "maximumCatalogBytes": 1048576,
+  "maximumEvidenceJsonBytesPerLeaf": 4096,
+  "maximumEvidenceJsonLeafCount": 3,
+  "maximumReturnedCharacters": 16384,
+  "sourceInspectionOnly": false,
+  "targetMutationCommandsPresent": false,
+  "taskActionCommandsPresent": false,
+  "processActionCommandsPresent": false,
+  "imagePathContentAccessPresent": false,
+  "imageBytesRead": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

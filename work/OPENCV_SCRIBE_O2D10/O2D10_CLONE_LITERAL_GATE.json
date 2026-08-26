@@ -1,0 +1,62 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-26T02:01:46.1856223Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D10\\O2D10_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "AFBBA0FB3E829B0963869CAD2CAEECE861B8A167AA0DF1CE37392B01D1C4E590",
+    "pairCount":  3,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D9/Invoke-O2D9ScribeEndpoint.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D10/Invoke-O2D10ScribeEndpoint.ps1",
+                      "sourceSha256":  "3334A28434C6AC09CDDA3BF748C6AD5E1FF418243785BABA4AE62134D25A8883",
+                      "generatedSha256":  "859CF8A75D1D25EE94E8D3B7DD6184DA88A7BFCA9A32C71F48E581941E093CC8",
+                      "sourceRoots":  [
+                                          "D:\\A2",
+                                          "D:\\AFCV1",
+                                          "D:\\O2D5"
+                                      ],
+                      "generatedRoots":  [
+                                             "D:\\A2",
+                                             "D:\\AFCV1",
+                                             "D:\\O2D5"
+                                         ],
+                      "ruleCount":  3
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D9/Test-O2D9Endpoint.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D10/Test-O2D10Endpoint.ps1",
+                      "sourceSha256":  "1C5B57E4EA617F13683A6E2F6275EEA96106212D2CBCCD16A7ED4F55CC58636A",
+                      "generatedSha256":  "63FD533181C744C997430DBC51312ED4946FE24A805110EFDAA4338F7FDEC0C1",
+                      "sourceRoots":  [
+                                          "C:\\O2D9T_85B91FC3"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\O2D10T_F5D37325"
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D9/Build-O2D9Request.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D10/Build-O2D10Request.ps1",
+                      "sourceSha256":  "CD896B38DE33A7423FF3310B24599A2A2B63D676CE50CBEDEB7470385823F0ED",
+                      "generatedSha256":  "8C6C6DAA97A402DBF5647282641D6069B4C3F956DBF080AB7CB94EDC363AE2D0",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "D:\\A2"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "D:\\A2"
+                                         ],
+                      "ruleCount":  2
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

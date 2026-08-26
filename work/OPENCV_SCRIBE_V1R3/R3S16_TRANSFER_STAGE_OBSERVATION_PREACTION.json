@@ -1,0 +1,38 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R3S16_TRANSFER_STAGE_OBSERVATION_20260826T003700Z",
+  "createdUtc": "2026-08-26T00:37:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "DIRECT_ADMIN_READ_ONLY_POST_TIMEOUT_TRANSFER_STAGE_OBSERVATION",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path": "work/OPENCV_SCRIBE_V1R3/Get-R3S16TransferStageObservation.ps1", "sha256": "DF095E61B6DB58F6D8906A0E161F469FD622ED508C5EF1621D0BDBF23D7C6A6E"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3S16_TRANSFER_STAGE_OBSERVATION_INTENT.json", "sha256": "7BEC516E5C4ACDFC24C18E0E7C6C1F7BC76B431DE5F9892F966975D947D98EC8"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3S16_TRANSFER_TIMEOUT_FAILURE_20260826.json", "sha256": "F0B6ECDEA988C53B30DF9E8BB553CF14C4977A9160C431213917A5ADFF44C210"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {"path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json", "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11", "requiredCaseIds": ["ZERO", "ONE", "MANY"]},
+  "scope": {"filesystem": "EXACT_JBOD_TRANSFER_STAGE_ONLY", "jbodExecution": true, "providerActivation": false, "currentDevelopmentImagesRead": false, "independentValidationSlotsExposed": false, "maximumRows": 27},
+  "legacyEvidenceException": {"used": false, "newExecutionAuthorized": false, "futureReuseAllowed": false, "blockedArtifacts": []},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

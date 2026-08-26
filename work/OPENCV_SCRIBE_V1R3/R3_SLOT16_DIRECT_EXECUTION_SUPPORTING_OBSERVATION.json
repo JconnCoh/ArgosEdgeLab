@@ -1,0 +1,49 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T00:31:00Z",
+  "state": "PASS_R3_SLOT16_DIRECT_EXECUTION_SUPPORTING_OBSERVATION",
+  "incidentId": "OCV02_R3_SLOT16_DIRECT_DEVELOPMENT_20260826",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "sources": [
+    {
+      "path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_SCRIBE_PROJECTION_OBSERVATION_20260826.json",
+      "sha256": "6888BC27C464DC358B6436A56D369FC292BEDB5A7E5579AF51B178C0D4893B0C",
+      "proves": "Exact installed Slot16 detector-input paths and unresolved multi-channel ambiguity"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_CROP_HASH_OBSERVATION_20260826.json",
+      "sha256": "D0BE8A61D415BAC7BB139B7011CC267D9005F01B5FB9D6BF6A53DE81D56B3ADF",
+      "proves": "Exact BF/DF detector-input byte lengths and SHA-256"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_V1R3/R3_INSTALLED_O2D5_ASSET_OBSERVATION_20260826.json",
+      "sha256": "6E2B15093AE3320F939F5424204C70EEC0CFC307B8A8731D3939885C0683092A",
+      "proves": "Exact installed 456-reference bundle path, byte length, and SHA-256"
+    }
+  ],
+  "expected": {
+    "physicalIdentity": "62619-433_20260824005735_Slot16",
+    "engineSha256": "8A6DE04B7DD08EFA717AF606FD0D04622ABE84C753B690C4590B0E95D8B31BAB",
+    "jobSha256": "331AF56A56DC65C78A68555EB5F11849ECBDB4C7203EAD3019994088390F33EE",
+    "reviewOnly": true,
+    "holdsRemain": true
+  },
+  "observed": {
+    "bfSha256": "5F4E99C88FF42293AFDC7D3A2F9110C12262C4C3707055B99B054EFC603E541C",
+    "dfSha256": "B6C059B35AC64DD7B8D3FBB72388A60680B014E286901CAEB956880F989D86D1",
+    "referenceBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "installedConsensusState": "MULTIPLE_IMAGE_SUPPORTED_M12_CANDIDATES",
+    "installedProposalEligibleIdentity": false
+  },
+  "decision": {
+    "boundedDevelopmentExecutionSupported": true,
+    "identityOrHoldClearanceSupported": false,
+    "reason": "All exact inputs and the installed reference dependency are directly pinned; current ambiguity and SCRIBE_REFERENCE_COVERAGE_HOLD remain mandatory regardless of the development result."
+  },
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

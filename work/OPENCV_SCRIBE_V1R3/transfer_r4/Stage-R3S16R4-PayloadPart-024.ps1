@@ -1,0 +1,6 @@
+$ErrorActionPreference='Stop'
+if($env:COMPUTERNAME-ne'A1025645101'){throw'Wrong host'}
+$ps=Join-Path $env:SystemRoot 'System32\WindowsPowerShell\v1.0\powershell.exe'
+$result=& $ps -NoProfile -ExecutionPolicy Bypass -File 'D:\A2\x\r3s16r4_8A6DE04B\ctl\StagePart.ps1' -Part 'p024.bin' -Data 'pLWbO4zj26qDkwix2dObjBKUzG6rFzDLghmUH9G0Vk8wBTsi+ZHOCb4HBc1ms+P+AeasR/OgtmXGNJMfqxklMFj0bvqDho9ieHt2xq53CIOoJki61XmQzSHp3YxguCSIrhsOWacUz0iQzteN0Uerqem3Z2cOgQGFNblLyfqRQLokSe3GRtTByQoSCsnt2dkYs/SRzGo504aDF+mSwo9BNq/lusiy3BjCNA5CWJPq0qkkyZspSoI4Xj8Wy1yUpThjwvJFu5HyzvNzZfuwl9EM0qfbP71BCb2tDmEGyQr2Wk35sTpdxjE/DUZwe3b2AVJ/Gcfs1/ZAWDzIeu9rnLgxSmNEazfhPCA3t7fva9JX6VT6H0k+vRF75fODlCmU3Z6dDeECr6C3SOnaSyhBMJPlbjXGyQxmtIemNcG+4eBlQuVHrmItH/zbx8QLwnl9cPcNhvSxOmmcw2RG55u/L2CQLQnMZ0D9InhAi+VCbhQPGxhn8FHZdMvGBmr5JgSbd8VZyPWYgqaiyODkOsmCKQRwOoUhRSsI0oDOzwBfdrLHrNhGPYbAKC0O8SLFCUxosa50R18IorD+KcPJJbzfvx/Md3Nb/RzES5hflwtTOu+puvz4VDjziNqYSedOVz9HFJKA' -ExpectedSha '8AF7B561C710057CF42B23146A2E5E18DABCB4C978158C0FECB6BD170DA24B3B'
+if($LASTEXITCODE-ne 0-or$result-ne'PASS_R3S16R4_PART|p024.bin|8AF7B561C710057CF42B23146A2E5E18DABCB4C978158C0FECB6BD170DA24B3B'){throw'Writer result'}
+$result

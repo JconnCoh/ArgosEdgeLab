@@ -1,0 +1,31 @@
+{
+  "schema": "argos_direct_admin_read_only_authorization_gate_v1",
+  "createdUtc": "2026-08-26T17:10:00Z",
+  "state": "PASS_O2D10_ARGOS_INBOUND_RELAY_READ_ONLY_AUTHORIZATION",
+  "incidentId": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_20260826",
+  "targetComputerName": "DESKTOP-266P787",
+  "targetAddress": "10.20.70.241",
+  "topology": "RUSTDESK_GATEWAY_10.66.81.84_TO_ARGOS_10.20.70.241",
+  "operatorExposedArgos": true,
+  "action": "ArgosInboundRelayObservation",
+  "runnerPath": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+  "runnerSha256": "CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D",
+  "payloadPath": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Get-ArgosInboundRelayObservation.ps1",
+  "payloadSha256": "0BE9F8E1D0842DD77A5D1ADA771D1D61A74759E096F75F95491A3A192D9DE335",
+  "capabilityEvidence": {
+    "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_INBOUND_RELAY_CAPABILITY_INVENTORY.json",
+    "sha256": "47D9B6EBF0A5D95736465292F932C2D3C1F6472556EE3BF6A0099A62EF90CFA1"
+  },
+  "readOnly": true,
+  "taskActionsAllowed": false,
+  "processActionsAllowed": false,
+  "installedChangesAllowed": false,
+  "queueActionsAllowed": false,
+  "ledgerActionsAllowed": false,
+  "imageBytesAllowed": false,
+  "jbodContactAllowed": false,
+  "publicationAllowed": false,
+  "retryAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

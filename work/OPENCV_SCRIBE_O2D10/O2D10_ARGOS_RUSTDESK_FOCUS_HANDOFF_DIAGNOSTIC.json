@@ -1,0 +1,43 @@
+{
+  "schema": "argos_direct_control_focus_handoff_diagnostic_v1",
+  "createdUtc": "2026-08-26T16:38:10.9163023Z",
+  "state": "PASS_EXACT_RUSTDESK_FOCUS_HANDOFF_CAUSE_AND_RECOVERY",
+  "incidentId": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_20260826",
+  "failedAction": "ArgosCurrentLayerInventory",
+  "failedActionRemoteInputSent": false,
+  "failureMessage": "Exact RustDesk desktop did not become foreground; refusing input.",
+  "target": {
+    "processName": "RustDesk",
+    "processId": 25784,
+    "mainWindowTitle": "10.66.81.84",
+    "mainWindowHandle": 2558966,
+    "left": 0,
+    "top": 0,
+    "width": 1920,
+    "height": 1200,
+    "targetThreadId": 27220
+  },
+  "initialForeground": {
+    "processName": "WindowsTerminal",
+    "processId": 18404,
+    "mainWindowTitle": "Administrator: Windows PowerShell",
+    "mainWindowHandle": 1902944
+  },
+  "cause": "The focus helper attached the calling thread only to the current foreground thread. It did not attach the calling thread to the exact RustDesk target UI thread before BringWindowToTop, SetActiveWindow, SetFocus, and SetForegroundWindow.",
+  "diagnostic": {
+    "callingThreadId": 8140,
+    "attachedForegroundThread": true,
+    "attachedTargetThread": true,
+    "bringWindowToTopReturned": true,
+    "setForegroundWindowReturned": true,
+    "afterForegroundHandle": 2558966,
+    "afterForegroundProcessId": 25784,
+    "exactTargetForeground": true,
+    "remoteInputSent": false
+  },
+  "requiredRecovery": "Attach the calling thread to both the observed foreground thread and the exact verified RustDesk target UI thread, perform focus-only window calls, detach both in finally, verify exact target handle foreground, and only then allow input.",
+  "windowResizeOrStateChangePerformed": false,
+  "remoteMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

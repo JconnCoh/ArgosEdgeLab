@@ -1,0 +1,19 @@
+{
+  "schema":"argos_o2d10_jbod_receiver_recovery_static_gate_v1",
+  "createdUtc":"2026-08-26T19:00:25Z",
+  "state":"PASS_O2D10_JBOD_RECEIVER_RECOVERY_R11_STATIC_GATE",
+  "incidentId":"OCV02_O2D10_JBOD_RECEIVER_UNREACHABLE_20260826",
+  "targetComputerName":"A1025645101",
+  "payload":{"path":"work/OPENCV_SCRIBE_O2D10/direct_control_r11/Start-JbodExactPortalRequestReceiverR11.ps1","sha256":"0699C82FD078457E111EAC64D33CA9AF6C56E9F57F4E638F1BBA20CBC7B8F246","harnessSafetyState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperSafetyState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"},
+  "cloneGate":{"path":"work/OPENCV_SCRIBE_O2D10/O2D10_JBOD_RECEIVER_RECOVERY_R11_CLONE_GATE.json","sha256":"783EAB81723C9F675E4DB4483532C8241CC8DCF7F20F1D26BEB9102A932EABC5"},
+  "task":{"name":"ArgosProjectPortal.JBOD.RequestReceiver.RO","principal":"SYSTEM","xmlSha256":"4BFCB64B8DB8934D727C13C12F37E15017CD630E973A751BD6188E9C825EF86C","maximumStarts":1},
+  "installedHashes":{"transport":"843629F44D8C310FAE201EAD808509FBECF3FC3C04D8D16B0D67CCADEFAE2DDB","taskHost":"2D77E8E973B86E789C3A54702550B2A67E80E1E7EBB0AF51575F69ACEB157253","config":"4DBB3677D26F6452EE6EFB295FECD951C59A9A2CCE40E3B6A262E9C5060259F0"},
+  "healthyProcessor":{"processId":8504,"creationUtc":"2026-08-25T15:38:27.7160450Z","mustRemainUnchanged":true},
+  "selectorCardinality":{"residentEndpointAndResponse":2,"receiverExecutableAfterStart":1,"listener48716":1},
+  "requestRetry":false,
+  "requestRepublication":false,
+  "otherTaskOrProcessAction":false,
+  "installedByteMutation":false,
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

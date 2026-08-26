@@ -1,0 +1,33 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T00:41:00Z",
+  "state": "PASS_R3S16R2_TRANSFER_SUPPORTING_OBSERVATION",
+  "incidentId": "OCV02_R3S16_TRANSFER_R2_20260826",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "sources": [
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3S16_TRANSFER_TIMEOUT_FAILURE_20260826.json", "sha256": "F0B6ECDEA988C53B30DF9E8BB553CF14C4977A9160C431213917A5ADFF44C210"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3S16_TRANSFER_STAGE_OBSERVATION_20260826.json", "sha256": "7C4B0688DF12ABEC909195801D9E02553636B3F473E16A903FCBB63BA807388B"}
+  ],
+  "observed": {
+    "failedNamespace": "D:/A2/x/r3s16_8A6DE04B",
+    "exactPartCount": 1,
+    "assembledZipExists": false,
+    "packageOrExecutionTargetsExist": false,
+    "sourceImagesRead": false,
+    "opencvExecuted": false
+  },
+  "decision": {
+    "failedNamespaceReusable": false,
+    "freshNamespace": "D:/A2/x/r3s16r2_8A6DE04B",
+    "unchangedPayloadEligibleAsUnexecutedDependency": true,
+    "shorterTransportRequired": true,
+    "maximumSuccessorCommandScriptBytes": 1260,
+    "singleSuccessorAttemptSupported": true
+  },
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

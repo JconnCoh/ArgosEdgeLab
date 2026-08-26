@@ -1,0 +1,21 @@
+{
+  "schema":"argos_recovery_observation_evidence_v1",
+  "createdUtc":"2026-08-26T18:39:00Z",
+  "state":"OBSERVED_O2D10_JBOD_RECEIVER_TASK_NOT_RUNNING",
+  "incidentId":"OCV02_O2D10_JBOD_RECEIVER_UNREACHABLE_20260826",
+  "sourceEvidence":{"path":"work/OPENCV_SCRIBE_O2D10/O2D10_JBOD_RECEIVER_ADMIN_OBSERVATION_R7.json","sha256":"7255E7319513C568A3E6420BE62362FEE71AA16F28F1CABAD0FCADD2D7C86903"},
+  "exactSourcesProved":true,
+  "fieldSpecificExpectedObservedRecorded":true,
+  "directEndpointEvidence":true,
+  "matchingSignedTerminalResponse":false,
+  "expected":{"computerName":"A1025645101","receiverTask":"ArgosProjectPortal.JBOD.RequestReceiver.RO","receiverTaskState":"Running","receiverProcessMinimum":1,"listener48716Count":1},
+  "observed":{"computerName":"A1025645101","administrativeToken":true,"receiverTaskPresent":true,"receiverTaskState":"Ready","receiverTaskPrincipal":"SYSTEM","lastTaskResult":1,"receiverProcessCount":0,"listener48716Count":0,"endpointTaskState":"Running","responseSenderTaskState":"Running"},
+  "disposition":"RECEIVER_TASK_NOT_RUNNING",
+  "requestRetried":false,
+  "queueMutationPerformed":false,
+  "taskOrProcessActionPerformed":false,
+  "healthyProcessorTouched":false,
+  "mutationsPerformed":false,
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "argos_o2d9_final_gate_construction_failure_v1",
+  "createdUtc": "2026-08-26T01:54:00Z",
+  "state": "WITHDRAWN_O2D9_SIGNED_FINAL_GATE_CONSTRUCTION_FAILURE",
+  "revision": "O2D9_20260826T014322494Z_85B91FC3",
+  "requestId": "REQ_20260826T014322494Z_85B91FC365FB",
+  "failure": "Strict mode rejected the removed variable cloneGateSha while constructing the final package gate after signing and generic package verification.",
+  "cause": "The clone-gate dependency was changed from an impossible pinned self-reference to dynamic exact-builder validation, but the final-gate evidence row retained the removed scalar variable.",
+  "signedManifestSha256": "14F76FEF2F4E37CC8D5959C340B4CEA7AFF0152349B692C80A499447F4D36335",
+  "signedManifestSignatureSha256": "A61AEDC60E0BF7C252DDC542008564730245151F3F673B61F56EA6BA9AE266A3",
+  "partialFinalZipSha256": "BF98022C0F1F4A8129B66D213D54C09DCA8C097E69F7DEFD0D790B1524014ECD",
+  "genericSignedPackageVerifierPassed": true,
+  "exactZipExtractionPassed": true,
+  "finalPackageGateWritten": false,
+  "published": false,
+  "jbodContacted": false,
+  "targetExecuted": false,
+  "sourceMutationPerformed": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false,
+  "lifecycleDisposition": "WITHDRAWN_SIGNED_BYTES_PRESERVED_NON_REUSABLE"
+}

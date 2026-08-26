@@ -1,0 +1,66 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R3_LOCKED_PARITY_20260825T234100Z",
+  "createdUtc": "2026-08-25T23:41:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "LOCAL_REVIEW_ONLY_OPENCV_SCRIBE_LOCKED_PARITY_GATE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/OPENCV_SCRIBE_V1R3/ArgosOpenCvScribeV1R3.py",
+      "sha256": "CF2C6BEE87A74F4C9E741200FE1B1E7678B94F244F98D569CA9D0B31EF5A10BC"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_V1R3/Run-ArgosOpenCvScribeR3LockedParityGate.py",
+      "sha256": "58382D65028FF059D82DA7B15ADA04CC1E0BC5AAB5EB2B0638907F19E11AC2C3"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_V1R3/OCV02_R3_RECOVERY_INTENT.json",
+      "sha256": "0CF9287321B78626D7A99FE307B58C25F61F4FA5E333D6A960D959AAD2157D0E"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_V1/OCV02_SCRIBE_SEMANTIC_BASELINE.json",
+      "sha256": "14294BAB3C2B3CB1F9B7AF199F796BACD0BCE46BA555DCD772FC17ACF175F0CC"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "filesystem": "AUTHORITATIVE_DESKTOP_REPOSITORY_ONLY",
+    "jbodExecution": false,
+    "providerActivation": false,
+    "currentDevelopmentImagesRead": false,
+    "independentValidationSlotsExposed": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

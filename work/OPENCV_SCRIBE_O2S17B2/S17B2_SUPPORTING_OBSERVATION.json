@@ -1,0 +1,39 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T20:18:00Z",
+  "state": "PASS_S17B2_SUPPORTING_OBSERVATION",
+  "incidentId": "OCV02_SLOT17_ORIENTED_HASH_BINDING_20260826",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "mutationsPerformed": false,
+  "sourceTerminalGate": {
+    "path": "work/OPENCV_SCRIBE_O2S17B1/S17B1_TERMINAL_RESPONSE_GATE.json",
+    "sha256": "72F646F8A3BE332368154B3B9E5D4EC6D821D23C368D2BF5B49DB5A608BB52D7",
+    "requestId": "REQ_O2S17B1_20260826",
+    "responseId": "R_2BB6E675D942_20260826201045764_e468f65f"
+  },
+  "expectedObserved": [
+    {
+      "field": "bfOrientedReviewPath",
+      "expected": "exact Slot17 installed BF oriented detector input path",
+      "observed": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot17/scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png"
+    },
+    {
+      "field": "dfOrientedReviewPath",
+      "expected": "exact Slot17 installed DF oriented detector input path",
+      "observed": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals/62619-433_20260824005735_Slot17/scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png"
+    },
+    {
+      "field": "orientedInputHashMetadataPresent",
+      "expected": true,
+      "observed": false
+    }
+  ],
+  "supportedDecision": "B_EXACT_BOUNDED_SOURCE_BYTE_HASH_ACQUISITION_WITHOUT_PIXEL_DECODE",
+  "imageBytesRead": false,
+  "pixelsDecoded": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

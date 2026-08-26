@@ -1,0 +1,38 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R3_SLOT16_SHORT_TRANSFER_AND_EXECUTION_R2_20260826T003300Z",
+  "createdUtc": "2026-08-26T00:33:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "DIRECT_ADMIN_SHORT_TRANSFER_AND_BOUNDED_REVIEW_ONLY_OPENCV_SLOT16_EXECUTION",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_DIRECT_EXECUTION_PREACTION.json", "sha256": "860DADC35495BE6AB037A10B2C1D85B1C6A1E5948E85F8078EC5BE0AD60B7A4E"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/Test-R3S16Transfer.ps1", "sha256": "64982B683BD9D88A9684BC38BD10C7EEC035D28A979E7F67EBA520A3452A196B"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3S16_TRANSFER_GATE.json", "sha256": "92D1B9925DD573CFC3410BAEEE5BAB56880CF79DC14ACE98D77230764C111B55"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {"path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json", "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11", "requiredCaseIds": ["ZERO", "ONE", "MANY"]},
+  "scope": {"filesystem": "AUTHORITATIVE_DESKTOP_REPOSITORY_AND_EXACT_JBOD_D_NAMESPACES", "jbodExecution": true, "providerActivation": false, "currentDevelopmentImagesRead": true, "independentValidationSlotsExposed": false, "maximumCurrentSlots": 1, "maximumTransferScriptBytes": 1931, "maximumTransferParts": 22},
+  "legacyEvidenceException": {"used": false, "newExecutionAuthorized": false, "futureReuseAllowed": false, "blockedArtifacts": []},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -4,6 +4,82 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-02 O2D15 Slot19 raw-source request publication ready — 2026-08-26
+
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D15_COMPLETE_ROUTE_PASS_PUBLICATION_READY_CHECKPOINT_20260826.md`,
+  SHA-256
+  `E041F9398EE36B20D8A81CE52E083DF3C1254C55B0E05E6EBA4FC9755E1215DE`.
+- Fresh request `REQ_20260826T225708001Z_9A8661E9BF26`; ZIP SHA-256
+  `01BD0CDE5EC4AA668FD153E93C4DF25D340C988B211CC7D5A57F9476848D9CDD`;
+  complete-route gate SHA-256
+  `9496B3DE0DE4FA17E071506D416C2F0023EC07EB2592EA26AEEA970CF48F32B2`.
+- Slot19 uses exact OLS6 raw BF/DF hashes through an endpoint-owned temporary
+  `X:` alias. The upstream notch/identity hold does not skip the scribe read.
+- O2D14 is `WITHDRAWN`, unpublished, unexecuted, and non-reusable; withdrawal
+  gate SHA-256 is
+  `76317B063133AFEEA777949D957CF148786CD919932A4A4D929843791E01F885`.
+- Next is one publication and only the matching signed response collection;
+  retry is false. Slots22-25 remain unseen and all holds/authority stay fixed.
+
+## Edge/notch hotspot and chipout robustness contract — 2026-08-26
+
+- Locked review-only contract:
+  `work/OPENCV_EDGE_NOTCH_ROBUSTNESS/EDGE_NOTCH_ROBUSTNESS_ACCEPTANCE_CONTRACT_20260826.md`,
+  SHA-256
+  `43991AF5B3B1E93CFE4E238ED734562E64339EE0F85A8689BF5ECC2F6C6C29CC`.
+- Machine-readable companion SHA-256:
+  `FC5BE91F06F6ADEC8EB86EB966C7D12F1697ACD5A3AB94732552F549C9B5A27C`.
+- Exact permanent challenge lot:
+  `Lot_62629-419_NotchBad_Hotspot`; its legacy incorrect rotation is failure
+  evidence, not truth. All discoverable known chipout wafers are also
+  development/permanent regression challenges.
+- OCV-03 requires zero wrong rotations, zero chipout-as-notch selections,
+  native independent BF/DF pose, no fixed-angle or deepest-indentation
+  selection, and an explicit hold on ambiguity.
+- Current order remains: finish scribe Slots19-21, freeze, execute Slots22-25
+  blind without tuning, then inventory/freeze edge/notch development and
+  independent validation cohorts. Human-only decisions may wait as holds.
+
+## OCV-02 O2D11 signed Slot16 frozen / Slot17 source binding — 2026-08-26
+
+- Matching signed response `R_CD18553728F2_20260826194912039_5e31e7c7`
+  passed; response ZIP SHA-256 is
+  `9B451F54260054EED36FFF86D3973962F952F4ED66FC0DAF1544C667A377F8B6`.
+- Slot16 is frozen only as ambiguous development evidence: displayed
+  `1443R073SUC6`, proposed `1443R073SUG6`, seven candidates, ambiguity and
+  reference-coverage holds retained, no accepted identity.
+- Terminal-gate SHA-256 is
+  `658678FE83586D79E7197A2D555AB5C7264B890686E6677D76BF90A423F17CD9`.
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D11_SIGNED_SLOT16_FROZEN_SLOT17_SOURCE_BINDING_CHECKPOINT_20260826.md`,
+  SHA-256
+  `C3E6190047375AF7A6DC01E96612758E4B072C82847A0EFE2F624364C46EA770`.
+- Next is one bounded `DATA_PULL` for Slot17 proposal and multi-channel summary
+  before freezing its oriented-input hashes. Slots22-25 remain unseen and all
+  authority/holds stay fixed.
+
+## OCV-02 O2D11 corrected successor / publication ready — 2026-08-26
+
+- O2D10 returned a verified signed terminal failure for the empty
+  `$PSScriptRoot`-derived `PayloadRoot` under no-argument Windows PowerShell
+  5.1 `-File`; it is withdrawn, non-reusable, and must not be retried.
+- O2D11 resolves the omitted root in the script body. Exact no-argument and
+  full OpenCV rehearsal gates passed while preserving processor/provider/hold
+  invariants.
+- Frozen request ZIP SHA-256 is
+  `FD777711DD5A12583DB711924818A055711D6049DA9CD56122DE41A0212E7D67`;
+  complete-route gate SHA-256 is
+  `C0C1603C98AB5061BE89468AA4B7615D0908B0A33E46C44C6C03142069201033`.
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D11_COMPLETE_ROUTE_PASS_PUBLICATION_READY_CHECKPOINT_20260826.md`,
+  SHA-256
+  `A7C7E6D1E5E5453A3F9D94E66D072587785ADC1C5788B3919A69063D254E212A`.
+- Next action is one create-new publication through persistent `U:`, followed
+  only by the matching signed terminal response. Slot16 remains unfrozen,
+  Slot17 blocked, Slots22-25 unseen, live provider disabled, healthy processor
+  untouched, and all holds preserved.
+
 ## OCV-02 O2A2 published / operator run pending — 2026-08-25
 
 - `InspectionRevs/ARGOS_O2A2.zip` readback is 8,816 bytes, SHA-256
@@ -656,3 +732,15 @@ task from changing which revision, UI, evidence, or next action is active.
 | 2026-08-21 | Lot 62631-586 FRONT GUI R9 signed terminal failure | `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_R9_SIGNED_TERMINAL_FAILURE_CHECKPOINT_20260821.md` | `PENDING_GATE` | `9E09B65292678A6C8C76DF7A4B711A85D63D2770575F2E29142F003A42F05AD7` | R9 returned a signature-verified `FAILED` before task restart. V40's ten-row value was bound to `domain == FRONTSIDE`; R9 dropped that selector and saw 20 all-domain rows sharing the ten physical identities. R9 is withdrawn and blocked from reuse. A fresh successor must prove the exact FRONT predicate with same-identity non-FRONT competitors, then obtain a signed PASS before ten-ledger-row and ten-GUI-row validation. |
 | 2026-08-21 | Lot 62631-586 FRONT GUI R10 signed terminal failure and stop-loss | `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/LOT_62631_586_FRONT_GUI_R10_SIGNED_TERMINAL_FAILURE_CHECKPOINT_20260821.md` | `PENDING_GATE` | `411C2E41C9D05C9ABBD09C14ABB5ED98FCC05DCEA544AE0D4AFD3D4D6CBC38CC` | R10 passed its exact FRONT selector guards but returned signature-verified `FAILED` before processor restart because it substituted V40's confirmed-overlay count for a different scribe-queue-state count. The fixture manufactured that premise and the terminal error omitted observed field values. R10 is withdrawn; no R11 is authorized in this task. A fresh task must first audit the exact ten queue rows/states and installed helper/runner hashes, determine whether any restart is needed, and implement only an evidence-supported remedy. |
 | 2026-08-22 | META01R1 exact live tray optional-config fix | `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/JBOD_META01R1_TRAY_CONFIG_FIX_LIVE_PASS_CHECKPOINT_20260822.md` | `PENDING_GATE` | `E6C37C6B5A4DCB4972CBA217468F30F7365E8F3A98F8DF1B632ECD03365A00B7` | Signed `PASS_MAINTENANCE_PATCH` installed only the tray presence-check correction and restarted only the tray. Processor PID 6708 remained unchanged. Invoke `Export Insite backlog` once from the refreshed tray, then observe normal bounded request coverage and verified metadata arrival; do not publish another repair or restart the processor merely for observation. |
+## 2026-08-26 — OCV-02 O2D13 Slot18 publication ready
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D13_COMPLETE_ROUTE_PASS_PUBLICATION_READY_CHECKPOINT_20260826.md`
+- SHA-256: `76D1472C651B191D5A24ECB798A9F2C40A9FB7A48BDB06F1164205838BD56C4F`
+- Exact next action: publish frozen request `REQ_20260826T211907111Z_AC64E36ED036` once through persistent `U:` with no retry, then collect only its matching signed terminal response.
+- Authority: review-only; Slots16-17 frozen, Slot18 pending result, Slots22-25 unseen, live provider disabled, healthy processor untouched, and every hold preserved.
+## 2026-08-26 — OCV-02 O2D13 signed Slot18 frozen / Slot19 next
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D13_SIGNED_SLOT18_FROZEN_SLOT19_NEXT_CHECKPOINT_20260826.md`
+- SHA-256: `1009F3149E1826F88200369BF716BB0E975C41CC0954A2B43526368715A047FF`
+- Result: signed image-first/proposed string `1443R071SUF5`, valid M12 checksum, exact installed-proposal match, seven retained candidates, identity still unaccepted.
+- Next: Slot19 exact signed source binding; Slots16-18 frozen, Slots22-25 unseen, provider disabled, processor untouched, and all holds preserved.

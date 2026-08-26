@@ -1,0 +1,66 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "ARGOS_DIRECT_CONTROL_FOCUS_HANDOFF_FIX_20260826T163810Z",
+  "createdUtc": "2026-08-26T16:38:10.9163023Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "UPDATE_LOCAL_DIRECT_CONTROL_SKILL_FOCUS_HANDOFF",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_RUSTDESK_FOCUS_HANDOFF_DIAGNOSTIC.json",
+      "sha256": "05640351879CB47A0DB265E7F26F7C950920963D01A145DB25F58A28A631A6B2"
+    },
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "68E9966AC99454988D3C4DA94ED916DD149DE5022DBC9B9E5E5858A415E5EBCD"
+    },
+    {
+      "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+      "sha256": "59EFFEE5AED64879689324B46DC78FC2B10CFE5DDAC851BF2996D2036C922452"
+    },
+    {
+      "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/SKILL.md",
+      "sha256": "20C52D0B42EBF6C93EA62904446F6D784F44ABA69099AB3112DF4DDFC5EFD855"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "target": "LOCAL_CODEX_SKILL_ONLY",
+    "remoteInputDuringFix": false,
+    "remoteMutation": false,
+    "windowResizeOrStateChange": false,
+    "publication": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

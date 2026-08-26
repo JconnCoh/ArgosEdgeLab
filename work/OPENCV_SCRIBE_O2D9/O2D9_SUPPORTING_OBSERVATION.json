@@ -1,0 +1,24 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T01:49:00Z",
+  "state": "PASS_O2D9_EXACT_SUPPORTING_OBSERVATION",
+  "incidentId": "OCV02_O2D9_SLOT16_DEVELOPMENT_20260826",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "sources": [
+    {"path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/JEO1_OBSERVATION.json", "sha256": "91B5A9219F72845187D7CB17DAB0F1D74AF223E7DDA11E380EEA26148C60CD01", "observed": "REQ_O2D4 absent from JBOD pending, processed, ledger, work, response, and D product roots; endpoint worker and response sender processes present."},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_SCRIBE_PROJECTION_OBSERVATION_20260826.json", "sha256": "6888BC27C464DC358B6436A56D369FC292BEDB5A7E5579AF51B178C0D4893B0C", "observed": "Exact current Slot16 proposal and multi-channel ambiguity pinned; installed proposal not identity eligible."},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_CROP_HASH_OBSERVATION_20260826.json", "sha256": "D0BE8A61D415BAC7BB139B7011CC267D9005F01B5FB9D6BF6A53DE81D56B3ADF", "observed": "Exact current Slot16 installed BF/DF detector-input paths, byte counts, and hashes pinned without decoding pixels."},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3_INSTALLED_O2D5_ASSET_OBSERVATION_20260826.json", "sha256": "6E2B15093AE3320F939F5424204C70EEC0CFC307B8A8731D3939885C0683092A", "observed": "Exact installed 456-reference bundle path, byte count, and SHA-256 pinned."},
+    {"path": "work/OPENCV_SCRIBE_O2D9/O2D9_ENTRYPOINT_TEST_GATE.json", "sha256": "33487FFDF56E7F6805649EB1FA8FB9FF270E07C9CE099105496B15A7166BBD75", "observed": "Exact O2D9 endpoint passed normal Windows PowerShell 5.1/OpenCV rehearsal and injected pre-write source-hash failure; the reference hold and installed multi-candidate ambiguity remained present."}
+  ],
+  "expected": {"slotId": "Slot16", "inputMode": "QUALIFIED_INSTALLED_ORIENTED_DETECTOR_INPUT", "referenceCount": 456, "eligibleIdentity": false, "requiredHold": "SCRIBE_REFERENCE_COVERAGE_HOLD"},
+  "observed": {"slotId": "Slot16", "installedConsensusState": "MULTIPLE_IMAGE_SUPPORTED_M12_CANDIDATES", "installedProposalEligibleIdentity": false, "referenceBundlePresent": true, "localRehearsalPassed": true, "rehearsalImageFirstString": "0438S004FEH0"},
+  "decision": {"selectedOption": "B", "reason": "One fresh bounded review-only development execution using exact installed qualified detector inputs and installed reference bundle; no provider activation, task action, source mutation, or hold clearance."},
+  "mutationsPerformed": false,
+  "imageBytesRead": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

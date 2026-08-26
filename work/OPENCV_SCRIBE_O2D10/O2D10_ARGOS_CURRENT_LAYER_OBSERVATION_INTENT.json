@@ -1,0 +1,77 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T16:33:49.9056215Z",
+  "incidentId": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_20260826",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_ADMIN_READ_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_CURRENT_LAYER_CAPABILITY_INVENTORY.json",
+      "sha256": "5D4C42455381F498FC8FC3E599812F1D5E0EF25D715106E2C3C254755FB8222D"
+    },
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_CURRENT_LAYER_AUTHORIZATION_GATE.json",
+      "sha256": "8404E2D3919356E814B4DFE5FD0B8F32DDC7406C61EF6F454E1DAC8DD0BAEBD5"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "DESKTOP-266P787:current-task-startup-process-window-service-inventory",
+        "sourceSchema": "argos_jbod_direct_argos_legacy_inventory_v1",
+        "selector": "bounded non-Microsoft tasks plus startup commands, command-bearing processes, titled windows, and Argos-related services",
+        "uniquenessKey": "category+nativeIdentity",
+        "maximumRows": 240
+      }
+    ],
+    "requestedCapabilities": [
+      "currentArgosTaskStartupProcessWindowServiceInventory"
+    ],
+    "requestedFields": [
+      "computerName",
+      "tasks",
+      "startup",
+      "processes",
+      "windows",
+      "services"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

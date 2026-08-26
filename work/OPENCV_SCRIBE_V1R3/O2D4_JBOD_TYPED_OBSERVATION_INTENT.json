@@ -1,0 +1,38 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T01:16:00Z",
+  "incidentId": "OCV02_O2D4_JBOD_TYPED_OBSERVATION_20260826",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {"signedPremiseFailures": 0, "localPremiseFailures": 0, "directObservationAfterLastSignedFailure": false, "mutationStopLossExplicitlyCleared": false, "failureEvidence": [], "postFailureObservation": {"path": "", "sha256": ""}, "workflowReviewClearance": {"path": "", "sha256": ""}},
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_CONTROL_TYPED_EXACT_O2D4_JBOD_ENDPOINT_PROJECTION",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "work/OPENCV_OLS3/pkg/payload/W.ps1", "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    "installedConfigEvidence": {"path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/copies/PROCESSOR_CONFIG/F_001_CDFD888129D0.json", "sha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"},
+    "capabilityEvidence": {"path": "work/OPENCV_SCRIBE_V1R3/O2D4_JBOD_TYPED_CAPABILITY_INVENTORY.json", "sha256": "472890ABE7B83B521BFEA438133CA92EE0BA6E3BCF22BBAEF33D3CEFF214FC31"},
+    "qualifiedEndpointGate": {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json", "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"},
+    "qualifiedAdminGate": {"path": "work/OPENCV_SCRIBE_V1R3/O2D4_JBOD_TYPED_OBSERVATION_AUTHORIZATION.json", "sha256": "BE48CD4CBD6C1E751365E967CED16439AEE5E29DC6DA4D9B47B687F9E4EFCD83"}
+  },
+  "observation": {
+    "exactSources": [{"sourcePath": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod and D:/A2/{w,o}/ocv/O2D4", "sourceSchema": "exact_o2d4_jbod_endpoint_typed_projection", "selector": "REQ_O2D4 and R_A2A87054A416 exact paths/prefixes, O2D4 product roots, endpoint-worker command line", "uniquenessKey": "fieldName", "maximumRows": 9}],
+    "requestedCapabilities": ["exactBoundedPathMetadata", "hostnameGatedNonceBoundReturn", "typedReadOnlyFallback"],
+    "requestedFields": ["computerName", "pending", "ledger", "work", "responsePending", "responseSent", "dWork", "dOutput", "endpointWorkerCount"],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {"supportedRemedy": "", "supportingObservation": {"path": "", "sha256": ""}, "endpointMutationNecessary": false, "singleMutationAttemptAuthorized": false},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

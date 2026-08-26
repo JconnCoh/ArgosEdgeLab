@@ -1,0 +1,45 @@
+{
+  "schema": "argos_direct_control_action_static_gate_v1",
+  "createdUtc": "2026-08-26T17:09:00Z",
+  "state": "PASS_O2D10_ARGOS_INBOUND_RELAY_DIRECT_CONTROL_STATIC_GATE",
+  "action": "ArgosInboundRelayObservation",
+  "runner": {
+    "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+    "sha256": "CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D"
+  },
+  "payload": {
+    "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Get-ArgosInboundRelayObservation.ps1",
+    "sha256": "0BE9F8E1D0842DD77A5D1ADA771D1D61A74759E096F75F95491A3A192D9DE335"
+  },
+  "skill": {
+    "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/SKILL.md",
+    "sha256": "0CB04D3CA31157688E6F222BAD82261C943F8B4C3BDAD543FCD32BDA11344ED1"
+  },
+  "preactionContract": {
+    "path": "work/OPENCV_SCRIBE_O2D10/PREACTION_UPDATE_ARGOS_DIRECT_CONTROL_INBOUND_RELAY.json",
+    "sha256": "AFC3B976C2AAF246CD41F195540DD1CEAAA69FCC673513D24B71A87209CC938A"
+  },
+  "checks": {
+    "windowsPowerShell51PayloadPreflightPassed": true,
+    "runnerLocalPreflightPassed": true,
+    "runnerWrapperSafetyPassed": true,
+    "runnerHarnessSafetyPassed": true,
+    "payloadHarnessSafetyPassed": true,
+    "skillQuickValidationPassed": true,
+    "payloadHashPinnedInRunner": true,
+    "targetIdentityPinned": true,
+    "boundedParentRoots": [
+      "C:/ProgramData/ArgosProjectPortalRO/requests_from_gateway",
+      "C:/ProgramData/ArgosProjectPortalRO/to_jbod"
+    ],
+    "recursiveEnumerationUsed": false,
+    "remoteMutationImplemented": false,
+    "imageReadImplemented": false,
+    "jbodContactImplemented": false
+  },
+  "artifactLifecycle": "FROZEN",
+  "targetExecuted": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

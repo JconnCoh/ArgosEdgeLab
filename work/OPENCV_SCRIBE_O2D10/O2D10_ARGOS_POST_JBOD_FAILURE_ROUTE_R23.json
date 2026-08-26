@@ -1,0 +1,262 @@
+{
+  "schema": "argos_admin_clipboard_action_evidence_v1",
+  "createdUtc": "2026-08-26T19:20:37.7621872Z",
+  "state": "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+  "actionId": "O2D10_ARGOS_POST_JBOD_FAILURE_ROUTE_R23",
+  "stage": "COMPLETE",
+  "computerName": "DESKTOP-266P787",
+  "runnerSha256": "A8591DF4FDABB4C0B6DB1B338D4EA48D2BF5892FEF8560A555EAC92FCE4B93E8",
+  "payloadSha256": "9360727CF1EF54394F4B8BD5AEEC5AD1F288E4D4A3A46D0BA356FF76CC2291BD",
+  "expectedResultSchema": "argos_o2d10_exact_request_route_observation_v1",
+  "hostnameGatePassed": true,
+  "hostnameUsesShortClipboardPaste": true,
+  "payloadTransferred": true,
+  "typedTrigger": "iex(gcb -r)",
+  "remoteResultReturned": true,
+  "remoteResult": {
+    "schema": "argos_o2d10_exact_request_route_observation_v1",
+    "createdUtc": "2026-08-26T19:20:37.1762752Z",
+    "state": "PASS_O2D10_EXACT_REQUEST_ROUTE_READ_ONLY_OBSERVATION",
+    "disposition": "TERMINAL_RESPONSE_PRESENT_IN_ARGOS_RETURN_ROUTE",
+    "computerName": "DESKTOP-266P787",
+    "userName": "DESKTOP-266P787\\lwm",
+    "administrativeToken": true,
+    "portalRoot": "C:\\ProgramData\\ArgosProjectPortalRO",
+    "portalRootReadable": true,
+    "requestId": "REQ_20260826T015418549Z_F5D3732576F9",
+    "responsePrefix": "R_AAB6C504C28E_",
+    "rootRows": [
+      {
+        "relativeRoot": "requests_from_gateway\\pending",
+        "exists": true,
+        "enumeratedCount": 0,
+        "truncated": false
+      },
+      {
+        "relativeRoot": "requests_from_gateway\\receipts",
+        "exists": true,
+        "enumeratedCount": 256,
+        "truncated": true
+      },
+      {
+        "relativeRoot": "to_jbod\\pending",
+        "exists": true,
+        "enumeratedCount": 0,
+        "truncated": false
+      },
+      {
+        "relativeRoot": "to_jbod\\sent",
+        "exists": true,
+        "enumeratedCount": 256,
+        "truncated": true
+      },
+      {
+        "relativeRoot": "to_jbod\\sent\\acks",
+        "exists": true,
+        "enumeratedCount": 256,
+        "truncated": true
+      },
+      {
+        "relativeRoot": "from_jbod\\pending",
+        "exists": false,
+        "enumeratedCount": 0,
+        "truncated": false
+      },
+      {
+        "relativeRoot": "from_jbod\\receipts",
+        "exists": false,
+        "enumeratedCount": 0,
+        "truncated": false
+      },
+      {
+        "relativeRoot": "responses_from_jbod\\pending",
+        "exists": false,
+        "enumeratedCount": 0,
+        "truncated": false
+      },
+      {
+        "relativeRoot": "responses_from_jbod\\receipts",
+        "exists": false,
+        "enumeratedCount": 0,
+        "truncated": false
+      },
+      {
+        "relativeRoot": "to_gateway\\pending",
+        "exists": true,
+        "enumeratedCount": 0,
+        "truncated": false
+      },
+      {
+        "relativeRoot": "to_gateway\\sent",
+        "exists": true,
+        "enumeratedCount": 256,
+        "truncated": true
+      },
+      {
+        "relativeRoot": "to_gateway\\sent\\acks",
+        "exists": true,
+        "enumeratedCount": 256,
+        "truncated": true
+      }
+    ],
+    "matchRows": [
+      {
+        "relativeRoot": "requests_from_gateway\\receipts",
+        "relativePath": "requests_from_gateway\\receipts\\REQ_20260826T015418549Z_F5D3732576F9.receipt.json",
+        "name": "REQ_20260826T015418549Z_F5D3732576F9.receipt.json",
+        "isContainer": false,
+        "length": 469,
+        "lastWriteUtc": "2026-08-26T18:17:23.1450137Z",
+        "sha256": "4C752B96B3ED83AEDC53B8BB4BB4B9771539E8661BE6F824E59752E4C47B52C7"
+      },
+      {
+        "relativeRoot": "to_jbod\\sent",
+        "relativePath": "to_jbod\\sent\\REQ_20260826T015418549Z_F5D3732576F9.ready",
+        "name": "REQ_20260826T015418549Z_F5D3732576F9.ready",
+        "isContainer": true,
+        "length": null,
+        "lastWriteUtc": "2026-08-26T18:17:23.1020792Z",
+        "sha256": null
+      },
+      {
+        "relativeRoot": "to_jbod\\sent\\acks",
+        "relativePath": "to_jbod\\sent\\acks\\REQ_20260826T015418549Z_F5D3732576F9.send-ack.json",
+        "name": "REQ_20260826T015418549Z_F5D3732576F9.send-ack.json",
+        "isContainer": false,
+        "length": 353,
+        "lastWriteUtc": "2026-08-26T19:02:08.9277539Z",
+        "sha256": "DDD5FCEBDB671B415BBA6FE3729FFE80A5675E43799ADC42B00252C6CD34EEDA"
+      },
+      {
+        "relativeRoot": "to_gateway\\sent",
+        "relativePath": "to_gateway\\sent\\R_AAB6C504C28E_20260826190116689_9f0ba1d4.ready",
+        "name": "R_AAB6C504C28E_20260826190116689_9f0ba1d4.ready",
+        "isContainer": true,
+        "length": null,
+        "lastWriteUtc": "2026-08-26T19:02:14.10561Z",
+        "sha256": null
+      },
+      {
+        "relativeRoot": "to_gateway\\sent\\acks",
+        "relativePath": "to_gateway\\sent\\acks\\R_AAB6C504C28E_20260826190116689_9f0ba1d4.send-ack.json",
+        "name": "R_AAB6C504C28E_20260826190116689_9f0ba1d4.send-ack.json",
+        "isContainer": false,
+        "length": 359,
+        "lastWriteUtc": "2026-08-26T19:02:15.4042266Z",
+        "sha256": "EB550BC79FC9F4E015A2250C919010F72A09220C817E60DD9255676991FFD47E"
+      }
+    ],
+    "receiptRows": [
+      {
+        "relativeRoot": "requests_from_gateway\\receipts",
+        "relativePath": "requests_from_gateway\\receipts\\REQ_20260826T015418549Z_F5D3732576F9.receipt.json",
+        "name": "REQ_20260826T015418549Z_F5D3732576F9.receipt.json",
+        "isContainer": false,
+        "length": 469,
+        "lastWriteUtc": "2026-08-26T18:17:23.1450137Z",
+        "sha256": "4C752B96B3ED83AEDC53B8BB4BB4B9771539E8661BE6F824E59752E4C47B52C7"
+      }
+    ],
+    "responseRows": [
+      {
+        "relativeRoot": "to_gateway\\sent",
+        "relativePath": "to_gateway\\sent\\R_AAB6C504C28E_20260826190116689_9f0ba1d4.ready",
+        "name": "R_AAB6C504C28E_20260826190116689_9f0ba1d4.ready",
+        "isContainer": true,
+        "length": null,
+        "lastWriteUtc": "2026-08-26T19:02:14.10561Z",
+        "sha256": null
+      },
+      {
+        "relativeRoot": "to_gateway\\sent\\acks",
+        "relativePath": "to_gateway\\sent\\acks\\R_AAB6C504C28E_20260826190116689_9f0ba1d4.send-ack.json",
+        "name": "R_AAB6C504C28E_20260826190116689_9f0ba1d4.send-ack.json",
+        "isContainer": false,
+        "length": 359,
+        "lastWriteUtc": "2026-08-26T19:02:15.4042266Z",
+        "sha256": "EB550BC79FC9F4E015A2250C919010F72A09220C817E60DD9255676991FFD47E"
+      }
+    ],
+    "sentToJbodRows": [
+      {
+        "relativeRoot": "to_jbod\\sent",
+        "relativePath": "to_jbod\\sent\\REQ_20260826T015418549Z_F5D3732576F9.ready",
+        "name": "REQ_20260826T015418549Z_F5D3732576F9.ready",
+        "isContainer": true,
+        "length": null,
+        "lastWriteUtc": "2026-08-26T18:17:23.1020792Z",
+        "sha256": null
+      }
+    ],
+    "pendingBeforeJbodRows": [],
+    "taskRows": [
+      {
+        "taskName": "ArgosProjectPortal.Argos.Endpoint.RO",
+        "state": "Running",
+        "principal": "SYSTEM",
+        "lastRunUtc": "2026-08-09T01:32:32Z",
+        "lastTaskResult": 267009
+      },
+      {
+        "taskName": "ArgosProjectPortal.Argos.RequestReceiver.RO",
+        "state": "Running",
+        "principal": "SYSTEM",
+        "lastRunUtc": "2026-08-09T01:32:32Z",
+        "lastTaskResult": 267009
+      },
+      {
+        "taskName": "ArgosProjectPortal.Argos.RequestSender.RO",
+        "state": "Running",
+        "principal": "SYSTEM",
+        "lastRunUtc": "2026-08-19T12:24:24Z",
+        "lastTaskResult": 267009
+      },
+      {
+        "taskName": "ArgosProjectPortal.Argos.ResponseRelay.RO",
+        "state": "Running",
+        "principal": "SYSTEM",
+        "lastRunUtc": "2026-08-19T12:24:24Z",
+        "lastTaskResult": 267009
+      },
+      {
+        "taskName": "ArgosProjectPortal.Argos.Router.RO",
+        "state": "Running",
+        "principal": "SYSTEM",
+        "lastRunUtc": "2026-08-09T01:32:32Z",
+        "lastTaskResult": 267009
+      }
+    ],
+    "requiredTasksHealthy": true,
+    "connectionRows": [
+      {
+        "localAddress": "172.16.0.11",
+        "localPort": 48717,
+        "remoteAddress": "0.0.0.0",
+        "remotePort": 0,
+        "state": "Listen",
+        "owningProcess": 28284
+      },
+      {
+        "localAddress": "10.20.70.241",
+        "localPort": 48715,
+        "remoteAddress": "0.0.0.0",
+        "remotePort": 0,
+        "state": "Listen",
+        "owningProcess": 27272
+      }
+    ],
+    "sectionErrors": [],
+    "sectionErrorCount": 0,
+    "accessDenied": false,
+    "requestRetried": false,
+    "jbodContactedByObservation": false,
+    "imageBytesRead": false,
+    "queueMutationPerformed": false,
+    "taskOrProcessActionPerformed": false,
+    "providerActivated": false,
+    "healthyProcessorTouched": false,
+    "mutationsPerformed": false,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  }
+}

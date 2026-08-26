@@ -1,8 +1,236 @@
-# Active ArgosEdgeLab state - O2D5 signed semantic regression / direct observation required - 2026-08-25
+# Active ArgosEdgeLab state - O2D15 Slot19 raw-source request publication ready - 2026-08-26
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-02 O2D15 Slot19 raw-source scribe request publication ready — 2026-08-26
+
+O2D14 is withdrawn, unpublished, and unexecuted because its signed definition
+named predecessor rehearsal R2 while the final package relied on corrected R3.
+Withdrawal gate SHA-256 is
+`76317B063133AFEEA777949D957CF148786CD919932A4A4D929843791E01F885`.
+
+Fresh O2D15 request `REQ_20260826T225708001Z_9A8661E9BF26` binds the frozen
+Slot19 raw BF/DF hashes from OLS6 and executes the V1R5 review-only automatic
+localizer despite the upstream notch/identity hold. The exact R3 rehearsal
+evaluated a nonempty scribe and preserved both scribe holds, the processor,
+disabled provider, sources, and wafer state. Request ZIP SHA-256 is
+`01BD0CDE5EC4AA668FD153E93C4DF25D340C988B211CC7D5A57F9476848D9CDD`;
+complete-route gate SHA-256 is
+`9496B3DE0DE4FA17E071506D416C2F0023EC07EB2592EA26AEEA970CF48F32B2`.
+
+Next: publish this exact request once through persistent `U:`, then collect
+only its matching signed terminal response. No retry. On exact pass, freeze
+Slot19 as development evidence without accepting identity and continue through
+Slots20-21. Slots22-25 remain unseen. `SCRIBE_REFERENCE_COVERAGE_HOLD`, the
+separate GUI recovery `PENDING_GATE`, every map/pose/fiducial hold, and every
+existing hold remain unchanged. Live provider, XML, training, and production
+authority remain disabled.
+
+## Edge/notch robustness requirements locked — 2026-08-26
+
+The operator-required hotspot and chipout robustness contract is now file-
+backed at
+`work/OPENCV_EDGE_NOTCH_ROBUSTNESS/EDGE_NOTCH_ROBUSTNESS_ACCEPTANCE_CONTRACT_20260826.md`
+and its machine-readable companion. Markdown SHA-256 is
+`43991AF5B3B1E93CFE4E238ED734562E64339EE0F85A8689BF5ECC2F6C6C29CC`;
+JSON SHA-256 is
+`FC5BE91F06F6ADEC8EB86EB966C7D12F1697ACD5A3AB94732552F549C9B5A27C`.
+
+The exact named challenge lot is `Lot_62629-419_NotchBad_Hotspot`, where the
+legacy Argos result missed a hotspot-darkened notch and rotated a wafer
+incorrectly. It and all discoverable known chipout wafers are development and
+permanent regression challenges, never accepted legacy truth. OCV-03 requires
+zero wrong rotations, zero chipout-as-notch selections, independent BF/DF
+pose, no fixed-angle/deepest-indentation choice, and explicit
+`FRONTSIDE_NOTCH_ALIGNMENT_HOLD` on ambiguity. A separately frozen unseen
+paired BF/DF partition remains mandatory.
+
+This guidance does not change the exact current action: complete scribe
+development Slots19-21, freeze the engine, and run Slots22-25 blind without
+tuning. Human-only judgments may be deferred only as explicit holds. Provider,
+processor, source/wafer, training, XML, production, and every existing hold
+remain unchanged.
+
+## OCV-02 O2D13 signed Slot18 result frozen / Slot19 next — 2026-08-26
+
+O2D13 returned matching signed response
+`R_44B8599A5515_20260826213007070_6e53d58b`. Response ZIP SHA-256 is
+`13C25FE90F1E25C347CFCD44D961AF0B0CE637D1D6562FB2C687D899C41925D3`;
+terminal-gate SHA-256 is
+`59817EF309D84DA447CEF05D231CC0D1BAD6125B3257909442957E28B1B293FC`.
+
+The exact image-first/proposed string is `1443R071SUF5`, matching the installed
+Slot18 proposal and passing the M12 checksum in review-only mode. It remains
+unaccepted identity because seven image-supported alternatives remain.
+`SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID` and `SCRIBE_REFERENCE_COVERAGE_HOLD`
+remain; installed eligibility is false. The signed run proves no task/process
+restart, provider activation, source/wafer mutation, or hold clearance.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D13_SIGNED_SLOT18_FROZEN_SLOT19_NEXT_CHECKPOINT_20260826.md`,
+SHA-256 `1009F3149E1826F88200369BF716BB0E975C41CC0954A2B43526368715A047FF`.
+
+Slots16-18 are frozen as bounded ambiguous development evidence. Slot19 is
+next and must begin with exact signed source binding. Slots22-25 remain unseen,
+live provider disabled, healthy processor untouched, and every hold preserved.
+
+## OCV-02 O2D13 Slot18 exact source binding / publication ready — 2026-08-26
+
+Two matching signed source-binding responses froze Slot18
+`62619-433_20260824005735_Slot18`: proposal SHA-256
+`52750D994411CB6E687F0B02B273B23A8B232A35EA77895B58E7C3A42A526473`,
+summary SHA-256
+`B5E8F920FD6F2650F4D80B63A5E66E86C1E78536E92E8A191AF2BB9BAF381FDF`,
+BF SHA-256 `68BC8F2A68CCDBE0D9C71BFE742509509DEE43E79FF3661723F5429A2799AC66`,
+and DF SHA-256 `5E8D1377A8D84C467AC60FF9EEAAEA1FCC5C8835AC384246F84F1936624B9048`.
+
+O2D13 Windows PowerShell 5.1/OpenCV rehearsal passed. Frozen request
+`REQ_20260826T211907111Z_AC64E36ED036` is 19,326 bytes with SHA-256
+`2BBACC6305D34A68A2104E3DFAAA7822398EDC9B5722F9ED1378D9CF042DD8B6`.
+The complete-route gate SHA-256 is
+`F7F65BCAF809D586E7E55ED86C83BCD9149703AD399262EAFC28C09E65FE9116`.
+Publish once through persistent `U:` with no retry, then collect only its
+matching signed terminal response.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D13_COMPLETE_ROUTE_PASS_PUBLICATION_READY_CHECKPOINT_20260826.md`,
+SHA-256 `76D1472C651B191D5A24ECB798A9F2C40A9FB7A48BDB06F1164205838BD56C4F`.
+
+Slots16-17 remain frozen; Slot18 is started but not frozen; Slots22-25 remain
+unseen. Live provider remains disabled, healthy processor untouched,
+`SCRIBE_REFERENCE_COVERAGE_HOLD` and every hold preserved.
+
+## OCV-02 O2D12 signed Slot17 result frozen / Slot18 next — 2026-08-26
+
+O2D12 returned matching signed response
+`R_BE5255B84095_20260826204317306_d9536434`. Response ZIP SHA-256 is
+`CEE8F5EB3ABE6CB7D507B14C3C8DF6400E953B7B5445E5730992F5B8FCAFF14B`;
+terminal-gate SHA-256 is
+`AE6F7C2B763F25AB4302EBC2BB35123B0B4330509DF37808A314E90262E1E8DB`.
+
+The exact image-first and proposed string is `1443R072SUC4`, matching the
+installed Slot17 proposal and passing the M12 checksum in review-only mode.
+It is not accepted identity: seven image-supported candidates remain,
+`SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID` and
+`SCRIBE_REFERENCE_COVERAGE_HOLD` remain, and installed eligibility is false.
+The signed run proves no task/process restart, provider activation,
+source/wafer mutation, or hold clearance.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D12_SIGNED_SLOT17_FROZEN_SLOT18_NEXT_CHECKPOINT_20260826.md`,
+SHA-256 `1572D141FDAAE39530C457E1DEC4B56753AAD21DD039D3A7D4035817F0709ACA`.
+
+Slot16 and Slot17 are frozen as bounded ambiguous development evidence. Slot18
+is next and must begin with exact signed source binding. Slots22-25 remain
+unseen, live provider disabled, healthy processor untouched, and every hold
+preserved.
+
+## OCV-02 O2D12 Slot17 exact source binding / publication ready — 2026-08-26
+
+Two matching signed `DATA_PULL` responses froze the exact current Slot17
+proposal, multi-channel summary, and installed oriented BF/DF hashes. Slot17 is
+`62619-433_20260824005735_Slot17`; BF SHA-256 is
+`46ACA8C9C32850EF052C1BF7F26550EFD474E00372B0F43F0DD391AFEA1A431D`
+and DF SHA-256 is
+`012365504979E0A89E387FBD735E0E60B9B49899FC9A516D05C0BAE0ACC631E9`.
+The installed proposal remains ineligible and the consensus remains
+`MULTIPLE_IMAGE_SUPPORTED_M12_CANDIDATES`.
+
+Fresh O2D12 passed exact Windows PowerShell 5.1/OpenCV rehearsal, injected
+pre-write source-hash failure, no-argument entrypoint, clone/root, recovery,
+preaction, signed package, and 129-row path/route gates. The frozen 19,297-byte
+request ZIP SHA-256 is
+`03FEB764BADE1637FE25B169BBF47649D8B5ECB2C578433FB050119A583858FF`;
+complete-route gate SHA-256 is
+`07A423E398D022EFF3D819B2F5679C87D577E4A97013D30DBAF71C1632442263`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D12_COMPLETE_ROUTE_PASS_PUBLICATION_READY_CHECKPOINT_20260826.md`,
+SHA-256 `62345A873E1A6B6C563C32FF5742A0C1D0F5EFCF76BC4B509845B3E2AED2A64C`.
+
+Exact next action: publish `REQ_O2D12_20260826` once through persistent `U:`,
+with no retry, then collect only its matching signed terminal response. Slot16
+is frozen, Slot17 is the current bounded development execution, Slots22-25 are
+unseen, live provider disabled, protected processor untouched,
+`SCRIBE_REFERENCE_COVERAGE_HOLD` and every hold preserved.
+
+## OCV-02 O2D11 signed Slot16 result frozen / Slot17 source binding — 2026-08-26
+
+O2D11 was published once and returned matching signed response
+`R_CD18553728F2_20260826194912039_5e31e7c7`. The response ZIP SHA-256 is
+`9B451F54260054EED36FFF86D3973962F952F4ED66FC0DAF1544C667A377F8B6`;
+terminal-gate SHA-256 is
+`658678FE83586D79E7197A2D555AB5C7264B890686E6677D76BF90A423F17CD9`.
+
+Slot16 is frozen as ambiguous review-only development evidence. It returned
+seven bounded candidates, displayed `1443R073SUC6`, proposed
+`1443R073SUG6`, and retained both
+`SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID` and
+`SCRIBE_REFERENCE_COVERAGE_HOLD`. It is not an accepted identity. The signed
+run proves no task/process restart, provider activation, source/wafer action,
+or hold clearance. It reported `processorProcessCount: 0`; no resident-process
+health claim is inferred and no processor action occurred.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D11_SIGNED_SLOT16_FROZEN_SLOT17_SOURCE_BINDING_CHECKPOINT_20260826.md`,
+SHA-256 `C3E6190047375AF7A6DC01E96612758E4B072C82847A0EFE2F624364C46EA770`.
+
+Slot17 source binding has started. Next is one bounded signed `DATA_PULL` for
+only the current Slot17 proposal and multi-channel summary under the already
+qualified `JBOD_PROCESSOR_REVIEW` root. Slots22-25 remain unseen, live provider
+disabled, protected processor untouched, and every hold preserved.
+
+## OCV-02 O2D10 Argos administrative-read capability gap — 2026-08-26
+
+The corrected V1R3 OpenCV scribe engine passed locked direct-input parity at
+15/15 plus 4/4 duplicate controls and full localization at 15/15 plus 4/4.
+Fresh O2D10 Windows PowerShell 5.1/OpenCV rehearsal passed with diagnostic
+proposal `0438S004FEH0`, top-level state
+`SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID`, `SCRIBE_REFERENCE_COVERAGE_HOLD`
+preserved, installed multi-candidate ambiguity preserved, injected source-hash
+failure before write, and protected processor identity unchanged.
+
+The exact local signed request is
+`work/OPENCV_SCRIBE_O2D10/final/REQ_20260826T015418549Z_F5D3732576F9.ready.zip`,
+19,249 bytes, SHA-256
+`289276329B5C2A34F8155C33001747034ACB85CC89B16EBB630D9E4F6FC87256`.
+Final package gate SHA-256 is
+`CA653F6FA44F0282F52B56DC4B8D158FFFD1AC638AD271A85FD4C43929F98D50`.
+It is not published or executed.
+
+The complete route gate evaluated 129 exact paths with maximum effective length
+193 and maximum component length 55. JBOD endpoint-worker and response-sender
+processes are directly proved present, but current Argos inbound relay/queue
+health is not directly proved. Route-gate SHA-256 is
+`B04FF3EF0F389C45C4FC8E4119468A56EB971E8325F2ECAB6ADAA150959061BE`;
+state is `HOLD_O2D10_COMPLETE_ROUTE_GATE_ARGOS_INBOUND_RELAY_UNPROVEN`,
+publication false, retry false.
+
+Direct ordinary Argos inventory passed on `DESKTOP-266P787` and proved both
+legacy converter tasks already disabled. The protected relay observer then
+displayed `Access denied`, proving the ordinary desktop token cannot supply the
+required protected portal reads. A fresh partial observer passed its local and
+static gates but its reuse-existing-console hostname check timed out before
+payload transfer. It must not be rerun. No JBOD contact, publication, target
+mutation, task/process restart, provider activation, or processor action
+occurred.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D10_ARGOS_ADMIN_READ_CAPABILITY_GAP_CHECKPOINT_20260826.md`,
+SHA-256 `AFDA4FD6F650C4BB875CC1AF9BA449ED74A4F803965268B976DED112832CE6F4`.
+
+Next, the operator must open Windows PowerShell **as Administrator on Argos
+`10.20.70.241`** and leave that exact window visible at an idle prompt. Codex
+will create and gate one fresh read-only observer, prove hostname and
+administrative read capability before payload transfer, then collect only the
+bounded Argos inbound relay/config/queue/archive evidence. Only exact PASS can
+authorize one create-new O2D10 publication.
+O2A3/O2D5/O2D4/JEO1/CDM1/CDO1/O2A2 must not run. O2D8 and O2D9 signed bytes
+are withdrawn and non-reusable. DFLY3005 is excluded. Slot16 remains unfrozen,
+Slot17 blocked, Slots22-25 unseen, provider disabled, processor untouched, and
+`SCRIBE_REFERENCE_COVERAGE_HOLD` plus every hold preserved.
 
 ## OCV-02 O2A2 published / operator run pending — 2026-08-25
 

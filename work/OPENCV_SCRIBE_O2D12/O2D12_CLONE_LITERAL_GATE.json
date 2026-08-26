@@ -1,0 +1,115 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-26T20:36:41.9470002Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D12\\O2D12_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "FD9C49DAA7B8271C9876DE3C2728C3107C625E54695A6295962EA41118DF9330",
+    "pairCount":  6,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D11/Invoke-O2D11ScribeEndpoint.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D12/Invoke-O2D12ScribeEndpoint.ps1",
+                      "sourceSha256":  "17C01B42278D7750EAD56CCE5035FEB6F5DBE25520D43CD4293E56F5351837B9",
+                      "generatedSha256":  "4668AE9D8103E3D59BDBBE2420E0788F8B45B138FFB910BC82186B760DA38A5A",
+                      "sourceRoots":  [
+                                          "D:\\A2",
+                                          "D:\\AFCV1",
+                                          "D:\\O2D5"
+                                      ],
+                      "generatedRoots":  [
+                                             "D:\\A2",
+                                             "D:\\AFCV1",
+                                             "D:\\O2D5"
+                                         ],
+                      "ruleCount":  3
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D11/Test-O2D11Endpoint.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D12/Test-O2D12Endpoint.ps1",
+                      "sourceSha256":  "090D3CE0865F9B50FFEFAE8EE798E459B9888C27FFB879BEF0BD1BE68B6BCC94",
+                      "generatedSha256":  "6591DBE356C5C00A5EE6E43C425CBA0D6C63A730172D3E69471A4206B9AE3C44",
+                      "sourceRoots":  [
+                                          "C:\\O2D11T_3F4C2A1B"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\O2D12T_6B91F2C4"
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D11/Build-O2D11Request.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D12/Build-O2D12Request.ps1",
+                      "sourceSha256":  "32924801C8AB6E38A47ACD7EC50B194CE9B725943E8EC1FA9EC520169FD9CC1A",
+                      "generatedSha256":  "0E2A18254F9FAA04FAE505DD61D5EA18BF27ABD8773BB7E4ADCF216C36D20C1D",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "D:\\A2"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "D:\\A2"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D11/Test-O2D11Routes.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D12/Test-O2D12Routes.ps1",
+                      "sourceSha256":  "859EF46D0386A46A95EC3047C10DB8C67D21A2A948D580DFAF790063EF41FCC9",
+                      "generatedSha256":  "EFF82FABE6B29BF8A4F937FDD853704FCF715E1C88F39FCB17CEE28BFAC644D0",
+                      "sourceRoots":  [
+                                          "C:\\A6R",
+                                          "C:\\APR",
+                                          "C:\\ProgramData",
+                                          "D:\\A2",
+                                          "D:\\O2D5",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\A6R",
+                                             "C:\\APR",
+                                             "C:\\ProgramData",
+                                             "D:\\A2",
+                                             "D:\\O2D5",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  6
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D11/Publish-O2D11.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D12/Publish-O2D12.ps1",
+                      "sourceSha256":  "E1E6F5FF35450187E6BE95C97CBDD3073BE6845E6E43C80B8C74F6FB70675B0A",
+                      "generatedSha256":  "A7DB852A0D42D07248BBF30739BB6F2230A77898A2EA0366736C1E4970400160",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D11/Collect-O2D11Response.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_O2D12/Collect-O2D12Response.ps1",
+                      "sourceSha256":  "8BCFECD7F2C3EB33A91A304CEC9E81AAF33080F5F9F76D7A69505E959270C69F",
+                      "generatedSha256":  "07711E192F75483182506BCFC20A1951FF87437423EB3B43BE7461A2A2595A26",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  2
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

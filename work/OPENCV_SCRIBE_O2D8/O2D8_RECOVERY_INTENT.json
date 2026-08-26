@@ -1,0 +1,37 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T01:40:00Z",
+  "incidentId": "OCV02_O2D8_SLOT16_DEVELOPMENT_20260826",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {"signedPremiseFailures": 0, "localPremiseFailures": 0, "directObservationAfterLastSignedFailure": false, "mutationStopLossExplicitlyCleared": false, "failureEvidence": [], "postFailureObservation": {"path": "", "sha256": ""}, "workflowReviewClearance": {"path": "", "sha256": ""}},
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": ["START_BOUNDED_PORTABLE_OPENCV_SCRIBE_DEVELOPMENT_SLOT16"],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {"path": "work/OPENCV_OLS3/pkg/payload/W.ps1", "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    "installedConfigEvidence": {"path": "work/JBOD_EVIDENCE_OBSERVATION_JEO1/collected/JEO1R_67AA1559/extract/copies/ENDPOINT_CONFIG/F_002_55A106E8F29F.json", "sha256": "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F"},
+    "capabilityEvidence": {"path": "work/OPENCV_SCRIBE_O2D8/O2D8_SUPPORTING_OBSERVATION.json", "sha256": "8E25ED690DB8D0AFC621705DC4A14AD2CB70C9D06D9CEB2969CB53907D4318EB"},
+    "qualifiedEndpointGate": {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json", "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {"exactSources": [], "requestedCapabilities": [], "requestedFields": [], "decisionOptions": ["A", "B", "C", "D"], "mutationDecisionDeferred": false},
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {"path": "work/OPENCV_SCRIBE_O2D8/O2D8_SUPPORTING_OBSERVATION.json", "sha256": "8E25ED690DB8D0AFC621705DC4A14AD2CB70C9D06D9CEB2969CB53907D4318EB"},
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R4_CLONE_REMEDIATION_GATE_20260826T221800Z",
+  "createdUtc": "2026-08-26T22:18:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "LOCAL_METADATA_ONLY_OPENCV_SCRIBE_V1R4_CLONE_REMEDIATION_GATE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"8EE7ABBB6A4727B9B28DF2A946ED3F02099E4147F43ADD14A7A83213DF07734F"},
+    {"path":"utilities/Confirm-ArgosCloneLiteralRemediation.ps1","sha256":"514F9019E4711F1D24DAFE4E80C44CA24D8936C40A5C4E54B5E5A1E013F19BBF"},
+    {"path":"work/OPENCV_SCRIBE_V1R4/R4_CLONE_LITERAL_REMEDIATION.json","sha256":"82439689587C9B8E6CE752E0AB298C1C4E215ED4F2CC7861B55D45916FE9F0AD"},
+    {"path":"work/OPENCV_SCRIBE_V1R4/OCV02_R4_RECOVERY_INTENT.json","sha256":"AE04EE69115425ECD6F2452612552E1857E5606A749FC77E0DF6F86C0E2520A8"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "filesystem": "AUTHORITATIVE_DESKTOP_REPOSITORY_ONLY",
+    "jbodExecution": false,
+    "providerActivation": false,
+    "currentDevelopmentImagesRead": false,
+    "independentValidationSlotsExposed": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

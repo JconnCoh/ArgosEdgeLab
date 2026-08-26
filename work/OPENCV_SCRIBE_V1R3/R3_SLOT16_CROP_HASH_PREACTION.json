@@ -1,0 +1,50 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R3_SLOT16_CROP_HASH_20260826T000700Z",
+  "createdUtc": "2026-08-26T00:07:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "DIRECT_CONTROL_TWO_EXACT_SLOT16_CROP_SHA256_READS",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path": "work/OPENCV_SCRIBE_V1R3/Get-R3Slot16CropHashes.ps1", "sha256": "17F3C53A0FAC9D0A672B80DC1B8E43653322C5A5E21592487E38185F646E835B"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_CROP_HASH_READ_INTENT.json", "sha256": "6056EA8CD81044D0AFF61D337D33D5827AB9A82902306B548EADEA970054E90F"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_SCRIBE_PROJECTION_OBSERVATION_20260826.json", "sha256": "6888BC27C464DC358B6436A56D369FC292BEDB5A7E5579AF51B178C0D4893B0C"},
+    {"path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1", "sha256": "59EFFEE5AED64879689324B46DC78FC2B10CFE5DDAC851BF2996D2036C922452"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {"path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json", "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11", "requiredCaseIds": ["ZERO", "ONE", "MANY"]},
+  "scope": {
+    "expectedComputerName": "A1025645101",
+    "physicalIdentity": "62619-433_20260824005735_Slot16",
+    "maximumFileCount": 2,
+    "commandCharacters": 822,
+    "pixelsDecoded": false,
+    "sourceMutation": false,
+    "remoteWrites": false,
+    "taskOrProcessActions": false,
+    "providerActivation": false,
+    "slots22Through25Exposed": false
+  },
+  "legacyEvidenceException": {"used": false, "newExecutionAuthorized": false, "futureReuseAllowed": false, "blockedArtifacts": []},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

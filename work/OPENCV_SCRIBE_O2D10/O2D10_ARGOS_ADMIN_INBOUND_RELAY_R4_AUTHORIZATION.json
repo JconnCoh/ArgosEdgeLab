@@ -1,0 +1,43 @@
+{
+  "schema": "argos_direct_admin_read_only_authorization_gate_v1",
+  "createdUtc": "2026-08-26T17:52:30Z",
+  "state": "PASS_O2D10_ARGOS_ADMIN_INBOUND_RELAY_R4_READ_ONLY_AUTHORIZATION",
+  "incidentId": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_20260826",
+  "operatorDirection": "Go on, and when you fix it, update yourself to not mess it up again",
+  "action": "ArgosAdminInboundRelayObservationR4",
+  "targetComputerName": "DESKTOP-266P787",
+  "targetAddress": "10.20.70.241",
+  "runnerPath": "work/OPENCV_SCRIBE_O2D10/direct_control_r4/Invoke-ArgosAdminInboundRelayObservationR4.ps1",
+  "runnerSha256": "732D1B4C16728D0AD624E3112C31ECD8C92C6FF550ACA46968B0A677243FB966",
+  "payloadPath": "work/OPENCV_SCRIBE_O2D10/direct_control_r3/Get-ArgosAdminInboundRelayObservationR3.ps1",
+  "payloadSha256": "0A5FC6DC9D403C9E28FC12CA20498E547B88FD87A1BA961A3841C80975353A43",
+  "operatorConfirmedAdministrativePromptOpen": true,
+  "capabilityEvidence": {
+    "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_R4_CAPABILITY.json",
+    "sha256": "24679BFAFE4096CD69D8C4379C092010AECC252368509414721C28F4713EDA0B"
+  },
+  "staticGate": {
+    "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_OBSERVER_R4_STATIC_GATE.json",
+    "sha256": "92979C7A86EAA71AAA15D92528D1590B828B2C9DC5C87FF74EED863B0FECBC67"
+  },
+  "requiredRuntimeGates": [
+    "EXACT_RUSTDESK_WINDOW_AND_1920X1200_FULLSCREEN",
+    "EXACT_ARGOS_HOSTNAME_DESKTOP_266P787",
+    "ADMINISTRATIVE_TOKEN_TRUE",
+    "PROTECTED_PORTAL_ROOT_READABLE_TRUE"
+  ],
+  "oneAttemptAuthorized": true,
+  "readOnly": true,
+  "reuseExistingVisibleArgosPowerShellOnly": true,
+  "taskActionsAllowed": false,
+  "processActionsAllowed": false,
+  "installedChangesAllowed": false,
+  "queueActionsAllowed": false,
+  "ledgerActionsAllowed": false,
+  "imageBytesAllowed": false,
+  "jbodContactAllowed": false,
+  "publicationAllowed": false,
+  "retryAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

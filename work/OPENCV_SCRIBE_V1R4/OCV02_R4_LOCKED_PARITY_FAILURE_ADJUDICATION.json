@@ -1,0 +1,28 @@
+{
+  "schema": "argos_local_rehearsal_failure_adjudication_v1",
+  "createdUtc": "2026-08-26T22:20:00Z",
+  "state": "WITHDRAWN",
+  "revision": "ARGOS_OPENCV_SCRIBE_V1R4_20260826",
+  "failedGate": {
+    "path": "work/OPENCV_SCRIBE_V1R4/OCV02_R4_LOCKED_PARITY_GATE.json",
+    "sha256": "6200A4AA52D4E01C311770488C4BF046F4742A5E4F19154EC08D38DF1574228B",
+    "state": "FAIL_OCV02_R4_LOCKED_READER_AND_SEMANTIC_PARITY"
+  },
+  "classification": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE",
+  "cause": "Mean-response ranking promoted four short stroke regions ahead of the lower-response OCR-scale bands, so no promoted patch could evaluate a frozen twelve-cell grid.",
+  "preservedEvidence": {
+    "lockedRecognitionCasesPassed": 15,
+    "lockedRecognitionCasesTotal": 15,
+    "duplicateAgreementGroupsPassed": 4,
+    "duplicateAgreementGroupsTotal": 4,
+    "diagnosticRegionsFound": 12,
+    "regionsPromoted": 4,
+    "checksumState": "NOT_EVALUATED"
+  },
+  "targetExecuted": false,
+  "jbodExecution": false,
+  "providerActivated": false,
+  "sourceMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R3_DIRECT_INPUT_FULL_LOCALIZATION_R2_20260826T001300Z",
+  "createdUtc": "2026-08-26T00:13:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "LOCAL_REVIEW_ONLY_OPENCV_SCRIBE_FULL_LOCALIZATION_GATE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/OPENCV_SCRIBE_V1R3/ArgosOpenCvScribeV1R3.py",
+      "sha256": "8A6DE04B7DD08EFA717AF606FD0D04622ABE84C753B690C4590B0E95D8B31BAB"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_V1R3/Run-ArgosOpenCvScribeR3FullLocalizationGate.py",
+      "sha256": "E0B9E0ABC2D5FE0CD8A11F372B691AC0AE8B0D71A7C2A4AC1D9BFAC8005AA4BB"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_V1R3/OCV02_R3_RECOVERY_INTENT.json",
+      "sha256": "0CF9287321B78626D7A99FE307B58C25F61F4FA5E333D6A960D959AAD2157D0E"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_V1/OCV02_SCRIBE_SEMANTIC_BASELINE.json",
+      "sha256": "14294BAB3C2B3CB1F9B7AF199F796BACD0BCE46BA555DCD772FC17ACF175F0CC"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "filesystem": "AUTHORITATIVE_DESKTOP_REPOSITORY_ONLY",
+    "jbodExecution": false,
+    "providerActivation": false,
+    "currentDevelopmentImagesRead": false,
+    "independentValidationSlotsExposed": false,
+    "maximumLockedLegacyCases": 15
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

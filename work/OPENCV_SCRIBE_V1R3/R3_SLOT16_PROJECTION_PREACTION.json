@@ -1,0 +1,50 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R3_SLOT16_PROJECTION_20260826T000500Z",
+  "createdUtc": "2026-08-26T00:05:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "DIRECT_CONTROL_SHORT_READ_ONLY_SLOT16_SCRIBE_PROPERTY_PROJECTION",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path": "work/OPENCV_SCRIBE_V1R3/Get-R3Slot16ScribeProjection.ps1", "sha256": "0D74EC5D5EEE9BDF0A9BFC0C32B043896F0BD2B0685698F5BDC2C27AF0F814EB"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_PROJECTION_OBSERVATION_INTENT.json", "sha256": "01A83FF0DE842E0613DBBAAB343503148EC275A619108C21A56B0D5D5AB7128D"},
+    {"path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1", "sha256": "59EFFEE5AED64879689324B46DC78FC2B10CFE5DDAC851BF2996D2036C922452"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3_SLOT16_PROJECTION_AUTHORIZATION_GATE.json", "sha256": "122FE9A940E53850F1CDD62DD7438A8CF74675CC1EF4EDC53972CEB9E7233867"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {"path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json", "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11", "requiredCaseIds": ["ZERO", "ONE", "MANY"]},
+  "scope": {
+    "expectedComputerName": "A1025645101",
+    "commandCharacters": 1189,
+    "maximumReturnedCharacters": 16384,
+    "rawJsonReturned": false,
+    "maximumEvidenceLeaves": 3,
+    "imageBytesRead": false,
+    "remoteWrites": false,
+    "taskOrProcessActions": false,
+    "providerActivation": false,
+    "supersedesRawLeafReturnAttempt": true
+  },
+  "legacyEvidenceException": {"used": false, "newExecutionAuthorized": false, "futureReuseAllowed": false, "blockedArtifacts": []},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

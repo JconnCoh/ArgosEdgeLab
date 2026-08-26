@@ -1,0 +1,63 @@
+{
+  "schema": "argos_o2d12_complete_route_gate_v2",
+  "createdUtc": "2026-08-26T20:39:00Z",
+  "state": "PASS_O2D12_COMPLETE_ROUTE_GATE",
+  "requestId": "REQ_O2D12_20260826",
+  "jobClass": "MAINTENANCE_PATCH",
+  "requestZipSha256": "03FEB764BADE1637FE25B169BBF47649D8B5ECB2C578433FB050119A583858FF",
+  "requestManifestSha256": "6D78B5C6CBDB0418167915BD958436E3606476877B678CFF3C02CD60586AADC3",
+  "requestSignatureSha256": "3AD45C3A9334F23AD689EED2A0075FF1CBBC748A1BADD23A58D06E8BC4DFAF0A",
+  "finalPackageGateSha256": "A6C98D3DE395D164851D8E2EA6A9A59B1141B22F5020D76363EEDDBB8A15FCF8",
+  "inheritedPathRouteGate": {
+    "path": "work/OPENCV_SCRIBE_O2D12/O2D12_COMPLETE_ROUTE_GATE.json",
+    "sha256": "2D0C9D7B2BBC19A87699677DF69CC8C5415581DF77EF7A404AC8B580EABD5C73",
+    "pathBudgetState": "PASS_PATH_BUDGET",
+    "routePathRowsEvaluated": 129,
+    "maximumEffectiveLength": 193,
+    "maximumComponentLength": 55
+  },
+  "publicationAliasGate": {
+    "path": "work/OPENCV_SCRIBE_O2D12/O2D12_INSPECTIONREVS_U_ALIAS_GATE.json",
+    "sha256": "EAAD8DDC7F6AF3939F6901C0908B44546AA8E89B816186CCCF0301480DA96461",
+    "targetEffectiveLength": 88,
+    "uploadEffectiveLength": 95
+  },
+  "endpointWorkerSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+  "installedEndpointConfigSha256": "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F",
+  "inheritedQueueSafetyGateSha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+  "jbodEndpointWorkerObserved": true,
+  "jbodResponseSenderObserved": true,
+  "priorSuccessfulRoundTrip": {
+    "path": "work/OPENCV_SCRIBE_O2S17B2/S17B2_TERMINAL_RESPONSE_GATE.json",
+    "sha256": "C97719FE27BFBAD5CC983FB87C9BC0E922742D7FE41A4FF4791776097676CDB6",
+    "requestId": "REQ_O2S17B2_20260826",
+    "responseId": "R_C20829E77751_20260826202155992_b7e4ed8e",
+    "signedResponseVerified": true,
+    "endpointState": "PASS_DATA_PULL",
+    "requestRetried": false,
+    "completeGatewayArgosJbodReturnRoundTripProved": true
+  },
+  "currentShareObservation": {
+    "persistentUDriveExact": true,
+    "requestsRootReadable": true,
+    "pendingRequestCount": 0,
+    "newTargetAbsent": true,
+    "newUploadAbsent": true
+  },
+  "requestsFromGatewayPendingAfterCount": 0,
+  "toJbodPendingAfterCount": 0,
+  "toGatewayPendingAfterCount": 0,
+  "unresolvedEarlierAcceptedRequestCount": 0,
+  "argosInboundRelayCurrentHealthProved": true,
+  "routeHealthDisposition": "PASS_RECENT_MATCHING_SIGNED_FULL_ROUND_TRIP_AND_ZERO_CURRENT_SHARE_PENDING_REQUESTS",
+  "publicationAuthorized": true,
+  "createNewPublicationMaximum": 1,
+  "retryAuthorized": false,
+  "matchingSignedTerminalResponseCollectionOnly": true,
+  "targetExecuted": false,
+  "targetMutationsPerformed": false,
+  "sourceImageBytesRead": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

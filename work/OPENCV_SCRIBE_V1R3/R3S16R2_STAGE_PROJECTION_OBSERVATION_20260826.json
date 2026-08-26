@@ -1,0 +1,29 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T00:50:00Z",
+  "state": "PASS_R3S16R2_POST_FAILURE_STAGE_PROJECTION",
+  "incidentId": "OCV02_R3S16R2_EXECUTION_POLICY_OBSERVATION_20260826",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "transport": {"state": "PASS_EXACT_JBOD_DIRECT_COMMAND", "computerName": "A1025645101", "nonce": "b0f71a94b817422ea9b78eabfaa39f5d", "commandSha256": "496DF8DB96C8370B0F13239F9EE01AADD5E5D5D7D94B77EB2A98E7ED609BCE17", "truncated": false},
+  "observed": {
+    "stagingRoot": "D:/A2/x/r3s16r2_8A6DE04B",
+    "helperExists": true,
+    "helperSha256": "35BBCDA143AA12CB90C19978570B2CD1387BBF8A1ED48A652B079520D8DC2A70",
+    "payloadPartCount": 0,
+    "existingSuccessorTargetCount": 0,
+    "imageBytesRead": false,
+    "mutationsPerformed": false
+  },
+  "decision": {
+    "failedNamespaceReusable": false,
+    "payloadByteWriteOccurred": false,
+    "productExecutionOccurred": false,
+    "freshNamespaceRequired": true,
+    "requiredCorrection": "Invoke the staged helper through exact Windows PowerShell 5.1 -NoProfile -ExecutionPolicy Bypass -File."
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

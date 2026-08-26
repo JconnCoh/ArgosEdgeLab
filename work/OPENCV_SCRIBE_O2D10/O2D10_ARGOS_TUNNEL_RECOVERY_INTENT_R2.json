@@ -1,0 +1,71 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-26T16:54:19.2113163Z",
+  "incidentId": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_20260826",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_TUNNEL_LAUNCHER_R1_WITHDRAWAL.json",
+        "sha256": "57C2BE8AB422F37502D64E31F0A9A6DA9DF230B25ED54448CDC6BD21A0142EF8",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "LOCAL_ARGOS_TUNNEL_RECOVERY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [
+      "START_ONE_FRESH_LOCAL_RUSTDESK_PORT_FORWARD_15986_VALIDATE_WSMAN_AND_ROLL_BACK_ONLY_THAT_PROCESS_ON_FAILURE"
+    ],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {"path": "", "sha256": ""},
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_TUNNEL_RECOVERY_SUPPORTING_OBSERVATION.json",
+      "sha256": "DBF754A43DF05BAF7CC31650E4AB39025B69C2DC5D370EE5FE56E6529B72979A"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "authority": {
+    "userDirection": "fix your tunnel and continue without operator relays",
+    "scope": "local transport process only",
+    "predecessorProcessMayBeStopped": false,
+    "argosOrJbodProcessActionAllowed": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

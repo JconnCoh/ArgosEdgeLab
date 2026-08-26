@@ -1,0 +1,107 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 4194304,
+  "entryPoint": "payload/Invoke-O2D15ScribeEndpoint.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-O2D15ScribeEndpoint.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_O2D15.ps1",
+      "approvedPredecessorSha256": [
+        "08B6E76548CEE99EA11FC6245FB07C05F2E31E53B23562F8A1B15B1AC6EF6A32"
+      ],
+      "installedSha256": "29EAE036C05009CEAF35820EAB45BCFCB19832F9A25256B4EDD7BF8867871C80",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\A2\\w\\ocv\\O2D15_20260826T225708001Z_9A8661E9",
+      "mode": "CREATE_NEW_PROVIDER_WORK_TREE",
+      "failureQuarantine": "D:\\A2\\w\\ocv\\O2D15_20260826T225708001Z_9A8661E9.failed",
+      "payloads": [
+        {
+          "path": "payload/ArgosOpenCvScribeV1R5.py",
+          "sha256": "F61F5954A77E6F730A2BF0D110A468535C4595D25DB21AFFE1573EF08B8139AB"
+        },
+        {
+          "path": "payload/O2D15_SLOT19_JOB.json",
+          "sha256": "D14E47EF05FAF9FD8EC1C687E005BEC878C13FC69DF3B738B5B4762492A6B089"
+        },
+        {
+          "path": "D:/O2D5/ARGOS_O2D5/O2D5_REFS.zip",
+          "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6"
+        }
+      ]
+    },
+    {
+      "targetRoot": "D:\\A2\\o\\ocv\\O2D15_20260826T225708001Z_9A8661E9",
+      "mode": "CREATE_NEW_PROVIDER_OUTPUT_TREE"
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "D:\\A2\\o\\ocv\\O2D15_20260826T225708001Z_9A8661E9\\RESULT.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_opencv_scribe_result_v2"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\O2D15_20260826T225708001Z_9A8661E9\\RUN_GATE.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_o2d15_opencv_scribe_development_gate_v1",
+      "requiredState": "PASS_O2D15_OPENCV_SCRIBE_DEVELOPMENT_EXECUTED"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\O2D15_20260826T225708001Z_9A8661E9\\EXECUTION.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_o2d15_execution_v1",
+      "requiredState": "PASS_O2D15_EXECUTION"
+    }
+  ],
+  "sourceProcessingContract": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "slotId": "Slot19",
+    "physicalIdentity": "62619-433_20260824005735_Slot19",
+    "inputMode": "DEVELOPMENT_AUTO_LOCALIZED_WHOLE_IMAGE",
+    "rawSourceEvidencePath": "work/OPENCV_OLS6/OLS6_EXACT_TWENTY_SOURCE_HASHES.json",
+    "rawSourceEvidenceSha256": "E54A15301A2B4FE914E6315DDFB9628E1D1364B0553D2155E9D5387A88E7FF3B",
+    "upstreamProposalState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+    "upstreamNotchHoldDoesNotSkipScribeDevelopment": true,
+    "sourceAliasName": "X:",
+    "sourceAliasRoot": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433",
+    "bfPath": "X:\\62619-433_20260824005735\\Slot19\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot19_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "bfCanonicalPath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot19\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot19_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "bfBytes": 475379874,
+    "bfSha256": "83362565391B7245DAB450B67A6EF79062CAC431D6E7259E0ECEA594DCA3C239",
+    "dfPath": "X:\\62619-433_20260824005735\\Slot19\\DarkfieldFrontsideWafer\\resizedImage\\62619-433_Slot19_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "dfCanonicalPath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot19\\DarkfieldFrontsideWafer\\resizedImage\\62619-433_Slot19_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "dfBytes": 475379874,
+    "dfSha256": "3F1CF8D84C5E4C3F4DFADD6368A0DE667B06D956F664CD69C5B4390F5ABC5256",
+    "referenceBundlePath": "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+    "referenceBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "sourceImageBytesReadAllowed": true,
+    "opencvPixelDecodeRequired": true,
+    "boundedExceptionSearchAllowed": true,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 900,
+    "opencvChildTimeoutSeconds": 600,
+    "outerCoversChild": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_BOUNDED_PORTABLE_OPENCV_SCRIBE_DEVELOPMENT_SLOT19"
+  ],
+  "rehearsal": {
+    "requiredState": "PASS_O2D15_OPENCV_SCRIBE_DEVELOPMENT_EXECUTED",
+    "gateState": "PASS_O2D15_ENTRYPOINT_TEST_GATE_R3",
+    "gateSha256": "1363BA73353FBD51F295C354F2103586ED513113149F12012036DB0707E451EB"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

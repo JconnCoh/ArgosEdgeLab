@@ -78,6 +78,9 @@ foreach ($pair in @($manifest.pairs)) {
         elseif ($disposition -eq 'ADDED') {
             if (-not [string]::IsNullOrWhiteSpace($from) -or [string]::IsNullOrWhiteSpace($to) -or $sourceRoots -icontains $to -or $generatedRoots -inotcontains $to) { $violations.Add([pscustomobject]@{code='ADDED_LITERAL_ROOT_CONTRACT_FAILED';file=[string]$pair.generated;root=$from;expected=$to}) }
         }
+        elseif ($disposition -eq 'NO_LITERAL_ROOTS') {
+            if (-not [string]::IsNullOrWhiteSpace($from) -or -not [string]::IsNullOrWhiteSpace($to) -or $sourceRoots.Count -ne 0 -or $generatedRoots.Count -ne 0) { $violations.Add([pscustomobject]@{code='NO_LITERAL_ROOTS_CONTRACT_FAILED';file=[string]$pair.generated;root=$from;expected=$to}) }
+        }
         else { $violations.Add([pscustomobject]@{code='UNKNOWN_LITERAL_ROOT_DISPOSITION';file=[string]$pair.generated;root=$from;expected=$disposition}) }
     }
     $pairResults += [pscustomobject]@{source=[string]$pair.source;generated=[string]$pair.generated;sourceSha256=(Get-FileHash -LiteralPath $sourcePath -Algorithm SHA256).Hash;generatedSha256=(Get-FileHash -LiteralPath $generatedPath -Algorithm SHA256).Hash;sourceRoots=$sourceRoots;generatedRoots=$generatedRoots;ruleCount=$rules.Count}

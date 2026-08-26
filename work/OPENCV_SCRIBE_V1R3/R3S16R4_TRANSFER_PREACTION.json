@@ -1,0 +1,22 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R3S16R4_WRAPPER_CORRECTED_SHORT_TRANSFER_20260826T005400Z",
+  "createdUtc": "2026-08-26T00:54:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "DIRECT_ADMIN_FRESH_WRAPPER_CORRECTED_LENGTH_GATED_TRANSFER",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R4_TRANSFER_INTENT.json", "sha256": "E28FC5267DF6FC5B986F1B01BF425038E7629F86C673D88E68B357B8B4C3029D"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R4_TRANSFER_MANIFEST.json", "sha256": "FB65AFF3147697A3A21AC0B854C4F48C64FE867035AA08FD581ECC6B07262DFD"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3S16R4_TRANSFER_GATE.json", "sha256": "95B096AF25E761F684A92EEEC859FE53DC6954C121E6D6F9FA4DCF47376EED1F"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/Test-R3S16R4Transfer.ps1", "sha256": "C3CE5EF9AB0947B0C5E01E1E1A406008A30E7728D7E4CEEE87ACE2795ADF2A23"},
+    {"path": "work/OPENCV_SCRIBE_V1R3/R3S16_PAYLOAD.zip", "sha256": "33B183483B25FDF9F48C102E61C5457F802B72BCE9418C34A782AF18E5456279"}
+  ],
+  "controls": {"valuesDerivedFromCurrentFileEvidence": true, "dependencyHashesPinned": true, "templateResidueAuditPassed": true, "installedRootAndTaskIdentityPinned": true, "pathAndWrapperGatesPassedWhenApplicable": true, "compoundCommandsFileBacked": true, "windowsPowerShell51ParserPassedWhenApplicable": true, "externalEvidenceJsonRehydrated": true, "arrayBoundaryModeSafe": true, "zeroOneManyCollectionCasesPassed": true, "optionalPropertiesPresenceTested": true, "residentConsumersInventoried": true, "declaredActionMatchesImplementation": true, "expectedFailureCaptureSafe": true, "optionalToolsDiscoveredBeforeUse": true, "queueAndReturnRouteTerminalGatePlanned": true, "historyAuditCompleteBeforeCheckpoint": true},
+  "collectionCaseEvidence": {"path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json", "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11", "requiredCaseIds": ["ZERO", "ONE", "MANY"]},
+  "scope": {"filesystem": "EXACT_FRESH_R3S16R4_JBOD_D_TRANSFER_ROOT", "jbodExecution": true, "providerActivation": false, "currentDevelopmentImagesRead": false, "independentValidationSlotsExposed": false, "maximumCommandScriptBytes": 1175, "maximumRemoteWrites": 39},
+  "legacyEvidenceException": {"used": false, "newExecutionAuthorized": false, "futureReuseAllowed": false, "blockedArtifacts": []},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

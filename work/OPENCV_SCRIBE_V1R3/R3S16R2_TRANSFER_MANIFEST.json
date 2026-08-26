@@ -1,0 +1,277 @@
+{
+  "schema": "argos_r3s16r2_short_transfer_manifest_v1",
+  "createdUtc": "2026-08-26T00:39:41.2498712Z",
+  "state": "FROZEN_R3S16R2_SHORT_TRANSFER_MANIFEST",
+  "remoteRoot": "D:\\A2\\x\\r3s16r2_8A6DE04B",
+  "sourcePayloadZip": "R3S16_PAYLOAD.zip",
+  "sourcePayloadZipBytes": 16839,
+  "sourcePayloadZipSha256": "33B183483B25FDF9F48C102E61C5457F802B72BCE9418C34A782AF18E5456279",
+  "partWriter": {
+    "source": "Stage-R3S16R2-PartWriter.ps1",
+    "bytes": 746,
+    "sha256": "35BBCDA143AA12CB90C19978570B2CD1387BBF8A1ED48A652B079520D8DC2A70",
+    "writerParts": [
+      {
+        "script": "Stage-R3S16R2-WriterPart-000.ps1",
+        "scriptBytes": 1173,
+        "scriptSha256": "FFE845D1EFA0CAF5B4CC07C729D545B2517624C33D77EFA1F46CC877C50BCDC3",
+        "part": "h000.bin",
+        "partBytes": 384,
+        "partSha256": "EE7634B281DD54C236416A049AE86ECF912319ED13047D46B5FBB4218573E52D"
+      },
+      {
+        "script": "Stage-R3S16R2-WriterPart-001.ps1",
+        "scriptBytes": 1145,
+        "scriptSha256": "BBCF2FDAC20E3EBD4BFAB35A3EFBF4F07AC1CD1119A2B83F6B2798B9CA90EAF0",
+        "part": "h001.bin",
+        "partBytes": 362,
+        "partSha256": "83453A101FB2A716F0B08110B49BD3CE48F8C1F5D784739FEAECCFED0FCABE29"
+      }
+    ],
+    "assembler": {
+      "script": "Assemble-R3S16R2-PartWriter.ps1",
+      "scriptBytes": 651,
+      "scriptSha256": "F0BDCD71D03C16BC219FD32E0EB9D2A4C3BFF1CF30702A57E4377DDD2339CA7F"
+    }
+  },
+  "payloadParts": [
+    {
+      "index": 0,
+      "script": "Stage-R3S16R2-PayloadPart-000.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "941D8B3A47550FD04AD91BF6F4AE14BBD4C2FD0A78B51E5F2FC16FF342FA7DC1",
+      "part": "p000.bin",
+      "partBytes": 672,
+      "partSha256": "8EFBD334FECDBB354E595D9D57656BD83FF3AD540278844FDEC6913D7D47122A"
+    },
+    {
+      "index": 1,
+      "script": "Stage-R3S16R2-PayloadPart-001.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "134C3BEE96BD4706C8CA4E87C888A6DF1586126F5A677CF003A7CDD7AF4BB1D4",
+      "part": "p001.bin",
+      "partBytes": 672,
+      "partSha256": "A3E8BF195D8892326F21B1FE853676C56BE77D2D356F26C7327A934711CE5604"
+    },
+    {
+      "index": 2,
+      "script": "Stage-R3S16R2-PayloadPart-002.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "B2BC8BCFA73C7201C564523437EAD510D9DA2BFCF2D86A8F1AFBF7671B96704E",
+      "part": "p002.bin",
+      "partBytes": 672,
+      "partSha256": "637C31F55DB6DA2A99B3997A7384A687D4F446799994C24E6C3E3A96AE46A935"
+    },
+    {
+      "index": 3,
+      "script": "Stage-R3S16R2-PayloadPart-003.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "2A2C24CCE6F865AC35B5E070A72E5CA40FE244C5E6982975BE213CFF7B915344",
+      "part": "p003.bin",
+      "partBytes": 672,
+      "partSha256": "885E925B7CFFBA724F2101E6118022908FEE1B0E96D58E96162C0D4818D956D2"
+    },
+    {
+      "index": 4,
+      "script": "Stage-R3S16R2-PayloadPart-004.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "498648554BA5AF8BDB29761DDBDA3A50A756CA41E2AA611EA9BF4B5554BC2764",
+      "part": "p004.bin",
+      "partBytes": 672,
+      "partSha256": "6D0314A0952182DDB3161C5DBE40D41A5BDC0426D6F09904637A5169D6CD37C5"
+    },
+    {
+      "index": 5,
+      "script": "Stage-R3S16R2-PayloadPart-005.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "FF72A5B87A36D6352F9F72AA8D5CB33BC5E371823C3D017BC6BC664340E91271",
+      "part": "p005.bin",
+      "partBytes": 672,
+      "partSha256": "8D54A1A234D189A6B333EEA19404A371B7CCD73ACB5FB86FFDC13594A7544D0C"
+    },
+    {
+      "index": 6,
+      "script": "Stage-R3S16R2-PayloadPart-006.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "540A3A0D2892CC89FAC9CADCB27471905027923B559C7AE16A06A275DB7E11FB",
+      "part": "p006.bin",
+      "partBytes": 672,
+      "partSha256": "E3CA131CCD17D0F347F8F911C7A10BB366E335FD855088AD550C55589EFF18BD"
+    },
+    {
+      "index": 7,
+      "script": "Stage-R3S16R2-PayloadPart-007.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "27EA9A5085DD74CDE0AE8D5A87A2E3376EA2D41BF3863F8A617EBCFD1D261DD5",
+      "part": "p007.bin",
+      "partBytes": 672,
+      "partSha256": "D375B8E1F99BB2F77A9E07A232961D86ADF9E1C741A31EE4AC5F6EC19321374E"
+    },
+    {
+      "index": 8,
+      "script": "Stage-R3S16R2-PayloadPart-008.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "0004A9110EC28C90516A7FFAE62109209EC1A051E15E5909FE5A683D556A150D",
+      "part": "p008.bin",
+      "partBytes": 672,
+      "partSha256": "E8B12595ECAD07AF14694DB05DEC3CDCF72201530B215CFC08DD5CD1AF608ACF"
+    },
+    {
+      "index": 9,
+      "script": "Stage-R3S16R2-PayloadPart-009.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "7131A41BAFD876395D7D4863E3ABCED842C30CCD0BF54EECE50F3B88CC081D95",
+      "part": "p009.bin",
+      "partBytes": 672,
+      "partSha256": "A7CB6688B2287203942CC6585DB6F0D4F67BF9CD93C18B18A88F34CF5125E0D1"
+    },
+    {
+      "index": 10,
+      "script": "Stage-R3S16R2-PayloadPart-010.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "80D8606E35F4B314F24E77A017FBC4B9378BE4E7059F56D7B148ACF428048C69",
+      "part": "p010.bin",
+      "partBytes": 672,
+      "partSha256": "A432D4DAE9ADA211ED81225546B5E6A183AD7348A1E2BE42A33F3C8CD83A3621"
+    },
+    {
+      "index": 11,
+      "script": "Stage-R3S16R2-PayloadPart-011.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "F262B00F77E0F3128E39267A70CA2BCD6724C666B7D694608F5DDF0D652F8C0E",
+      "part": "p011.bin",
+      "partBytes": 672,
+      "partSha256": "029094AB02E59334CCE374FA3BFA241655FAF39C093898A51AC3F69E6022B393"
+    },
+    {
+      "index": 12,
+      "script": "Stage-R3S16R2-PayloadPart-012.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "ABA535B6747DFD9BBDA194C70BA42C9FEAB3BB987DAF97EF1175E948A25C126F",
+      "part": "p012.bin",
+      "partBytes": 672,
+      "partSha256": "684F4499CA2C3B3E68B0A1A566AB6D2C68B29361358DB373591DEFFF21F2ABF7"
+    },
+    {
+      "index": 13,
+      "script": "Stage-R3S16R2-PayloadPart-013.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "410AB5FF49799D1FD3D5C972C3F201B59A90BFF8237EEA36E4568D695E04FE0A",
+      "part": "p013.bin",
+      "partBytes": 672,
+      "partSha256": "ED2B0CCFA8B6BB5ED4157B39E29D7BD59AC97E5945A66EEE7B1A623F3B5C7993"
+    },
+    {
+      "index": 14,
+      "script": "Stage-R3S16R2-PayloadPart-014.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "1D88F55477BF4C823B37AE74A90CF770CFC191A92665CE07AAB9FD0A6D4D0258",
+      "part": "p014.bin",
+      "partBytes": 672,
+      "partSha256": "F0130D6F6A0334EFF3159F42D96A1C683BAC91A34D37178B01A11D47E6B972BC"
+    },
+    {
+      "index": 15,
+      "script": "Stage-R3S16R2-PayloadPart-015.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "E93856AEB9DB06F116F880E6CD919EA69C94C423AE46771A14F90971F8B6012C",
+      "part": "p015.bin",
+      "partBytes": 672,
+      "partSha256": "FF7FE6569327552FC7A62045DF55DC19D7A51DA730D8A2F7C26BB79CCBBCE0BC"
+    },
+    {
+      "index": 16,
+      "script": "Stage-R3S16R2-PayloadPart-016.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "190B23C469AA8E1506F1A6FF233148D1258C37C5EBDBA21A59E933C1B027A015",
+      "part": "p016.bin",
+      "partBytes": 672,
+      "partSha256": "634B8E6168637AEAB9C27C7EABDD229FC278F0B4C4817D4CDA8D292C2F30152F"
+    },
+    {
+      "index": 17,
+      "script": "Stage-R3S16R2-PayloadPart-017.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "F113FEFF69F69618EDFA973E926C46A1070BCB2DD39EEA7346054E84E9978AAF",
+      "part": "p017.bin",
+      "partBytes": 672,
+      "partSha256": "247F4AC5F60B20732CBE3B54D01CDBE2C4AE4A7CD2AB69F30BD2187E7152B8DA"
+    },
+    {
+      "index": 18,
+      "script": "Stage-R3S16R2-PayloadPart-018.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "B1A1503B50C7DA01149147C9E9CBE1E6B1012AC3D772267F25A4E0F5CD4A6F06",
+      "part": "p018.bin",
+      "partBytes": 672,
+      "partSha256": "5E1B835A7DB3A50AD8C63CF765B67E2A79CCE61CAAF4AC0CC0DF97B09EF13979"
+    },
+    {
+      "index": 19,
+      "script": "Stage-R3S16R2-PayloadPart-019.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "DF4ACF0837C93C6D32734E51315CBF79B2033D361FF19CC1113E4CB7D9C3BBC1",
+      "part": "p019.bin",
+      "partBytes": 672,
+      "partSha256": "08A5242E0CD5479701B4DDC14D3B9BF86C4C2AFDB51B93C595EEBAC4F0345B45"
+    },
+    {
+      "index": 20,
+      "script": "Stage-R3S16R2-PayloadPart-020.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "BE786A89DECEE713B6C7D7E9DC84CC7C5DDE7A3F8D20BBF0E9F255569D01A672",
+      "part": "p020.bin",
+      "partBytes": 672,
+      "partSha256": "E75C278D8F31B7926E27BF4592044EC49E0C0E17366B6A3CFA78B95129CA543A"
+    },
+    {
+      "index": 21,
+      "script": "Stage-R3S16R2-PayloadPart-021.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "272B36A1BCF1C2BF455F8C57770FB658D3066BD0773568D345152A9E7C56E382",
+      "part": "p021.bin",
+      "partBytes": 672,
+      "partSha256": "00994D2825ACD97177433FADE2CF9307C215D83A37C8ACC8387652CFC0BB225C"
+    },
+    {
+      "index": 22,
+      "script": "Stage-R3S16R2-PayloadPart-022.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "B66521F82B0797FD43EC09BD3AD80D13B592B021F42C7F1C350ADFC035866C22",
+      "part": "p022.bin",
+      "partBytes": 672,
+      "partSha256": "99AF77930D8838FCE89CC6FACCDB46F2B16433CE22D572801B8AE41ECB10862D"
+    },
+    {
+      "index": 23,
+      "script": "Stage-R3S16R2-PayloadPart-023.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "03A5F79774720D54C2A64F31D25C29DB367CE2CAEA0E283938E95376597A3DEE",
+      "part": "p023.bin",
+      "partBytes": 672,
+      "partSha256": "1A2CE4724C25424BE98C49E3E64819244C97BADFD10CE5C0641A84715D96E348"
+    },
+    {
+      "index": 24,
+      "script": "Stage-R3S16R2-PayloadPart-024.ps1",
+      "scriptBytes": 1260,
+      "scriptSha256": "DA9A14AE97C6B048090C7849CA9AE9BAE62B7CD6141A4A6FA934B7316753B20C",
+      "part": "p024.bin",
+      "partBytes": 672,
+      "partSha256": "4E6F9D4394D7E39D7A634FD91C7CBCD35161C44BA1E2F5FB5685DEB4BB1295A4"
+    },
+    {
+      "index": 25,
+      "script": "Stage-R3S16R2-PayloadPart-025.ps1",
+      "scriptBytes": 416,
+      "scriptSha256": "02E07F71F000AB20E31F55B371A50B823F274642AE0115589EDB9AA8C6F97DE1",
+      "part": "p025.bin",
+      "partBytes": 39,
+      "partSha256": "5FB2E6A025AE121757D020B2F5B0DA7616ADE1D44B3457B44E27A88882A88E6E"
+    }
+  ],
+  "maximumCommandScriptBytes": 1260,
+  "commandSourceLimit": 2048,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

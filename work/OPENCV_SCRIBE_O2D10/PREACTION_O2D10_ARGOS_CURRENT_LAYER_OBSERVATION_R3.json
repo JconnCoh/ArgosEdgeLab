@@ -1,0 +1,81 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_O2D10_ARGOS_CURRENT_LAYER_OBSERVATION_R3_20260826T165943Z",
+  "createdUtc": "2026-08-26T16:59:43Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "RUN_FRESHLY_EXPOSED_ARGOS_CURRENT_LAYER_READ_ONLY_INVENTORY",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_CURRENT_LAYER_OBSERVATION_INTENT_R3.json",
+      "sha256": "05624040365BE09C9A5DF373073D0082A97C86DEAD409F9CD14CB53A7683EA17"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_CURRENT_LAYER_AUTHORIZATION_GATE_R3.json",
+      "sha256": "B7C5C6D39DE10B64F01EC7F0E83F2DB303DBE4DCB149A3ED1524D02CB3927130"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_CURRENT_LAYER_CAPABILITY_INVENTORY.json",
+      "sha256": "5D4C42455381F498FC8FC3E599812F1D5E0EF25D715106E2C3C254755FB8222D"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_DIRECT_CONTROL_FOCUS_HANDOFF_FIX_GATE.json",
+      "sha256": "0B303F91E322C9AE84B5B140E0A020B29C206E2BD4BF9E858D895B33B00F2225"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_GUI_INPUT_CAPTURE_HOLD_20260826.json",
+      "sha256": "5DCDEF7E56CDBF8784EBED701E5288673DCEA42A8882FEE407EDF200DCA5F7F7"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_COMPLETE_ROUTE_GATE.json",
+      "sha256": "B04FF3EF0F389C45C4FC8E4119468A56EB971E8325F2ECAB6ADAA150959061BE"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D10_LOCAL_SIGNED_ROUTE_HOLD_CHECKPOINT_20260826.md",
+      "sha256": "D165CFF84257C0C5A51C7037D54386482A73B48213B95F602B1ACD8E0A02C9C7"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "targetComputerName": "DESKTOP-266P787",
+    "action": "ArgosCurrentLayerInventory",
+    "runnerSha256": "A341B704AA3EA898B826AFB23670AD58C7DC81584879C29879C77C7BD51AAB41",
+    "externalStateChange": "OPERATOR_EXPOSED_ARGOS_AFTER_PRIOR_GUI_CAPTURE_FAILURE",
+    "jbodContact": false,
+    "remoteMutations": false,
+    "publication": false,
+    "requestRetry": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

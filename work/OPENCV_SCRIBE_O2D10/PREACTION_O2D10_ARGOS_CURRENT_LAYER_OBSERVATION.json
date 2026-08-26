@@ -1,0 +1,71 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_O2D10_ARGOS_CURRENT_LAYER_OBSERVATION_20260826T163349Z",
+  "createdUtc": "2026-08-26T16:33:49.9056215Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "RUN_EXISTING_ARGOS_CURRENT_LAYER_READ_ONLY_INVENTORY",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_CURRENT_LAYER_OBSERVATION_INTENT.json",
+      "sha256": "CDC17274D2719C208639D18714C6094C42C82BC8DB6A50577DAD0968331A20ED"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_CURRENT_LAYER_AUTHORIZATION_GATE.json",
+      "sha256": "8404E2D3919356E814B4DFE5FD0B8F32DDC7406C61EF6F454E1DAC8DD0BAEBD5"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_CURRENT_LAYER_CAPABILITY_INVENTORY.json",
+      "sha256": "5D4C42455381F498FC8FC3E599812F1D5E0EF25D715106E2C3C254755FB8222D"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_COMPLETE_ROUTE_GATE.json",
+      "sha256": "B04FF3EF0F389C45C4FC8E4119468A56EB971E8325F2ECAB6ADAA150959061BE"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D10_LOCAL_SIGNED_ROUTE_HOLD_CHECKPOINT_20260826.md",
+      "sha256": "D165CFF84257C0C5A51C7037D54386482A73B48213B95F602B1ACD8E0A02C9C7"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "targetComputerName": "DESKTOP-266P787",
+    "action": "ArgosCurrentLayerInventory",
+    "jbodContact": false,
+    "remoteMutations": false,
+    "publication": false,
+    "requestRetry": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

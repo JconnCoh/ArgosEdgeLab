@@ -1,0 +1,35 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T01:08:00Z",
+  "state": "PASS_R3S16R4_POST_TIMEOUT_STAGE_PROJECTION",
+  "incidentId": "OCV02_R3S16R4_TIMEOUT_OBSERVATION_20260826",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "transport": {
+    "state": "PASS_EXACT_JBOD_DIRECT_COMMAND",
+    "computerName": "A1025645101",
+    "nonce": "cfcfca1847ee419e9f93fcbe102a7b98",
+    "commandSha256": "6BFB77E322DC0F1067111D6B6FDE79D2107EECC38D36D6671E2488FF4668F829",
+    "truncated": false
+  },
+  "observed": {
+    "stagingRoot": "D:/A2/x/r3s16r4_8A6DE04B",
+    "helperExists": true,
+    "helperSha256": "A39B25C368FC76523DBE52D47363469D2D0D37D2751726368868D4A09059C07B",
+    "payloadPartCount": 19,
+    "existingSuccessorTargetCount": 0,
+    "imageBytesRead": false,
+    "mutationsPerformed": false
+  },
+  "decision": {
+    "failedNamespaceReusable": false,
+    "interactiveTransferReusable": false,
+    "productExecutionOccurred": false,
+    "freshProductNamespaceRequired": true,
+    "requiredCorrection": "Use the already-installed signed Project Portal route for the unchanged frozen payload; do not retry or resume interactive clipboard transfer."
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

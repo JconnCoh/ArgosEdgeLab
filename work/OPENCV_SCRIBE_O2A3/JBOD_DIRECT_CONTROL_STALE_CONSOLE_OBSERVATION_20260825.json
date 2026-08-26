@@ -1,0 +1,47 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-25T23:24:30Z",
+  "state": "PASS_JBOD_DIRECT_CONTROL_STALE_CONSOLE_OBSERVATION",
+  "incidentId": "JBOD_DIRECT_CONTROL_STALE_CONSOLE_CLEANUP_20260825",
+  "computerName": "A1025645101",
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "transport": {
+    "state": "PASS_EXACT_JBOD_DIRECT_COMMAND",
+    "nonce": "7825e33020d14a0d9cf7774d6baf19b7",
+    "commandSha256": "02A1DA7B9BE6903AC76E601A165B477CA3C48AB080C03B2213F0B46F06201072",
+    "runnerSha256": "F80C3F0FC02302091761DBF7B01843C1F3A850BF5D82BFBE8B39EAC9E90F120E",
+    "pastedCommand": true,
+    "typedCommandCharacters": 0
+  },
+  "selector": {
+    "name": "powershell.exe",
+    "parentProcessId": 20648,
+    "createdLocalAtOrAfter": "2026-08-25T18:10:00",
+    "excludedCurrentCollectorParent": true,
+    "excludedCommandLineSwitches": ["File", "EncodedCommand", "Command", "WindowStyle"]
+  },
+  "expected": {
+    "computerName": "A1025645101",
+    "targetCount": 9,
+    "targetProcessIds": [33032, 27788, 38176, 25400, 27964, 39712, 17516, 35160, 33428],
+    "protectedProcessIds": [3556, 11008, 8504]
+  },
+  "observed": {
+    "computerName": "A1025645101",
+    "targetCount": 9,
+    "targetProcessIds": [33032, 27788, 38176, 25400, 27964, 39712, 17516, 35160, 33428],
+    "allTargetsHadParentProcessId": 20648,
+    "allTargetsHadPlainInteractiveCommandLine": true,
+    "qualifiedTrayProcessId": 8504,
+    "qualifiedTrayCommandLine": "powershell.exe -WindowStyle Hidden -NoProfile -STA -ExecutionPolicy Bypass -File C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Show-JbodAllWaferTray.ps1 -StateRoot C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2 -StartHidden"
+  },
+  "imageBytesRead": false,
+  "taskActionsPerformed": false,
+  "processActionsPerformed": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

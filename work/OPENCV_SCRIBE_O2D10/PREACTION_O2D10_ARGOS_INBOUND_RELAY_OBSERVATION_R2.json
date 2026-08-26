@@ -1,0 +1,85 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_R2_20260826T171100Z",
+  "createdUtc": "2026-08-26T17:11:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "RUN_BOUNDED_ARGOS_INBOUND_RELAY_READ_ONLY_OBSERVATION_R2",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_INTENT_R2.json",
+      "sha256": "C46613A88B8EE3AAFB19E124F9EA974ED22A015FB9951ABD27E80240A96D5C5A"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_INTENT_WITHDRAWAL.json",
+      "sha256": "C39682E0B2097FFF32231FF380FA5949D5F9775CC7BEB8E77F8E618803866747"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_INBOUND_RELAY_AUTHORIZATION_GATE.json",
+      "sha256": "43BC26D924795A7B95C03B7656FD14488579D791005C8EA689F83A9C8CA988E0"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_INBOUND_RELAY_CAPABILITY_INVENTORY.json",
+      "sha256": "47D9B6EBF0A5D95736465292F932C2D3C1F6472556EE3BF6A0099A62EF90CFA1"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_INBOUND_RELAY_DIRECT_CONTROL_GATE.json",
+      "sha256": "BC2DF4C9419A1AE075E13ADDA74929FBC1ED056C077D5F3AC9B4E2136FD5F561"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_CURRENT_LAYER_OBSERVATION_R3.json",
+      "sha256": "A149201990FD6B86E10E9517D1A017A09532E1334BA8D23085108A0430A9B17E"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_COMPLETE_ROUTE_GATE.json",
+      "sha256": "B04FF3EF0F389C45C4FC8E4119468A56EB971E8325F2ECAB6ADAA150959061BE"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D10_LOCAL_SIGNED_ROUTE_HOLD_CHECKPOINT_20260826.md",
+      "sha256": "D165CFF84257C0C5A51C7037D54386482A73B48213B95F602B1ACD8E0A02C9C7"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "targetComputerName": "DESKTOP-266P787",
+    "action": "ArgosInboundRelayObservation",
+    "runnerSha256": "CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D",
+    "payloadSha256": "0BE9F8E1D0842DD77A5D1ADA771D1D61A74759E096F75F95491A3A192D9DE335",
+    "jbodContact": false,
+    "remoteMutations": false,
+    "publication": false,
+    "requestRetry": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

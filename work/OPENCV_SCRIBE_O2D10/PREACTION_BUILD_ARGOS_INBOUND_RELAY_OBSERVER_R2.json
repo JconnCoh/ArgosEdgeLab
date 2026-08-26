@@ -1,0 +1,73 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "ARGOS_INBOUND_RELAY_PARTIAL_OBSERVER_R2_20260826T171700Z",
+  "createdUtc": "2026-08-26T17:17:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "BUILD_FRESH_ARGOS_INBOUND_RELAY_PARTIAL_READ_ONLY_OBSERVER_R2",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_INBOUND_RELAY_OBSERVATION_R2_FAILURE.json",
+      "sha256": "80289EAF532142AFC4C4B01F1E53B5B1A2F2E510DC28DB0A5106CE06BA0298C6"
+    },
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "DEEC5761B22EEB58F28A04CF09B25F80EC0E58A71E8AFEEF452C94C93CD50C5C"
+    },
+    {
+      "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+      "sha256": "CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D"
+    },
+    {
+      "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Get-ArgosInboundRelayObservation.ps1",
+      "sha256": "0BE9F8E1D0842DD77A5D1ADA771D1D61A74759E096F75F95491A3A192D9DE335"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "target": "LOCAL_CODEX_SKILL_ONLY",
+    "freshRunner": "Invoke-ArgosInboundRelayObservationR2.ps1",
+    "freshPayload": "Get-ArgosInboundRelayObservationR2.ps1",
+    "remoteInputDuringBuild": false,
+    "remoteMutation": false,
+    "reusesOnlyExistingVisibleArgosPowerShell": true,
+    "structuredPerSourceErrors": true,
+    "schemaShapedResultPredicate": true,
+    "windowResizeOrStateChange": false,
+    "jbodContact": false,
+    "imageBytes": false,
+    "publication": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

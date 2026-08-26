@@ -1,0 +1,111 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_S19P1_BUILD_20260826T220154Z",
+  "createdUtc": "2026-08-26T22:01:54.4418775Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "BUILD_AND_SIGN_EXACT_SLOT19_POST_FAILURE_PROPOSAL_OBSERVATION_DATA_PULL",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "760F9242A3632B9B3AD8655581FAE6CCCE5F46292E77BEDF53DE4EA8629822A5"
+    },
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "586E4360879D90CB931755AD7752478EBAF740638253A42820C7FF65235EF653"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2S19P1/S19P1_DATA_PULL_DEFINITION.json",
+      "sha256": "4F5751BB0D326FCA0F71A725B495B613413DFE29DA6E419700935EF3113DB52F"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2S19P1/S19P1_RECOVERY_INTENT.json",
+      "sha256": "197B11135378E3E1C714E8CEBE3A46666E4D16B6ED9FC4BCCDB113CC85DF3B89"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D13/O2D13_COMPLETE_ROUTE_GATE_R2.json",
+      "sha256": "F7F65BCAF809D586E7E55ED86C83BCD9149703AD399262EAFC28C09E65FE9116"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2S19B1/S19B1_SIGNED_TERMINAL_FAILURE_GATE.json",
+      "sha256": "86F005A975046AF9EEAD48E906B664BE8BD61A2AA801D6C0490DB1D1E622E9D3"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D13_SIGNED_SLOT18_FROZEN_SLOT19_NEXT_CHECKPOINT_20260826.md",
+      "sha256": "1009F3149E1826F88200369BF716BB0E975C41CC0954A2B43526368715A047FF"
+    },
+    {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    {
+      "path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json",
+      "sha256": "12BFF65114DFB1C20B8B4271CD592D80857CFE446595CB9F303868288F62F65E"
+    },
+    {
+      "path": "work/OPENCV_OEL1/OEL1_COMPLETE_ROUTE_GATE.json",
+      "sha256": "30E2A04438770BF9D1515BF9515FC91584EF8A84ACD9C2EF05BBF789F21C95B3"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "scope": {
+    "filesystem": "LOCAL_CREATE_NEW_SIGNED_REQUEST_ONLY",
+    "jbodExecution": false,
+    "signedPremiseFailures": 1,
+    "directPostFailureObservation": true,
+    "imageBytesRequested": false,
+    "slot19Only": true,
+    "slots22Through25Exposed": false,
+    "requestId": "REQ_20260826T220154441Z_9A705541B17B"
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      "O2D10_RETRY",
+      "O2A3",
+      "O2D5",
+      "O2D4",
+      "JEO1",
+      "CDM1",
+      "CDO1",
+      "O2A2"
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
+
