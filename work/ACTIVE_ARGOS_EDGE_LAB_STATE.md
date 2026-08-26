@@ -7169,3 +7169,31 @@ One operator action remains: on JBOD `A1025645101`, extract the published ZIP
 into fresh `D:\O2A3` and run `RUN_O2A3.cmd` once as administrator. Codex then
 collects only the matching signed response and continues the scribe repair.
 Never rerun O2A3. Slot16/Slot17/provider/processor/holds remain fixed.
+
+## 2026-08-26 O2D15 signed failure reviewed; corrected O2D16 publication ready
+
+O2D15 was published once and returned a matching signed terminal failure before
+entrypoint execution because its declared installed endpoint hash did not equal
+its payload hash. O2D15 is diagnostic-only and non-reusable. Direct
+post-failure observation, the two-failure stop-loss workflow review, explicit
+clearance, and a fresh O2D16 recovery intent are file-backed.
+
+O2D16 binds the exact raw Slot19 BF/DF pair and requires the endpoint payload,
+maintenance definition, extracted signed manifest, and final gate all to carry
+the same SHA-256
+`AC85BD4CD2CF8211EC2546F715298B9C62944B1FBF175569D9D24703AEC1DA7D`.
+The full Windows PowerShell 5.1 rehearsal read `FE5565R022F5`, retained
+ambiguity, localization, notch/identity, and reference-coverage holds, and
+proved the notch hold did not skip OCR. O2D16's frozen 20,968-byte ZIP has
+SHA-256 `9B8F9EEDF5C39BDBE36968938C04C39D9C8FDD19C95FBBD55E107B5B469E36FD`;
+complete-route gate SHA-256 is
+`D218E70E5264402DE1C50B25B9730D5B89B730464D10324A65A5168A38BE9F40`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D16_COMPLETE_ROUTE_PASS_PUBLICATION_READY_CHECKPOINT_20260826.md`,
+SHA-256
+`E1A765DC16D521AA5D0502EE846AFB87E4BA69EB140E81BBAEC0E934F30A41BC`.
+
+Exact next action: publish O2D16 once, collect only its matching signed terminal
+response, and do not retry. Slot19 remains unfrozen, Slots22-25 unseen, provider
+disabled, processor untouched, and every hold preserved.

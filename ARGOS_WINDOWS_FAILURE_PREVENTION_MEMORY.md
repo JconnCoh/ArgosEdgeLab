@@ -8570,3 +8570,26 @@ than rerunning it.
 - Recovery: the intent was still `DRAFT` and the guard performed no mutation.
   Remove the package withdrawal from `failureEvidence`, restore the exact local
   premise count, preserve it separately, and rerun the same preflight.
+
+## 2026-08-26 — Maintenance `installedSha256` must equal the exact payload source hash
+
+- Failure signature: the matching signed O2D15 response failed before the
+  entrypoint with `Maintenance source hash mismatch:
+  payload/Invoke-O2D15ScribeEndpoint.ps1`. The extracted signed manifest
+  declared `changes[0].installedSha256` as O2D14's endpoint hash
+  `29EAE036...`, while the exact O2D15 payload hash was `748C9DCB...`.
+- Cause: the fresh namespace changed the endpoint bytes, but the mechanically
+  cloned maintenance definition retained its predecessor `installedSha256`.
+  The builder pinned both the definition and endpoint independently without
+  asserting that the definition's one installed hash equaled `$endpointSha`.
+- Mandatory preflight: before signing, require exactly one change record and
+  mechanically assert its normalized source path, destination, predecessor
+  set, and `installedSha256 == endpointSha`. Repeat the same equality against
+  the extracted signed manifest and record both values in the final gate. An
+  endpoint rehearsal cannot substitute for this maintenance-verifier contract.
+- Recovery: collect the compact signed terminal failure, retain O2D15 as
+  executed terminal evidence only, and never retry it. No entrypoint, image
+  read, processor/provider action, source/wafer mutation, or hold clearance
+  occurred. This is the second signed premise failure in the Slot19 incident,
+  so mutation stop-loss is active until a file-backed workflow review and a
+  fresh recovery intent explicitly clear it for one new namespace.

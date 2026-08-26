@@ -1,0 +1,87 @@
+{
+  "schema": "argos_o2d15_slot19_stop_loss_workflow_review_v1",
+  "createdUtc": "2026-08-26T23:25:00Z",
+  "state": "PASS_O2D15_SLOT19_STOP_LOSS_WORKFLOW_REVIEW",
+  "incidentId": "OCV02_SLOT19_SOURCE_BINDING_SUMMARY_ABSENCE_20260826",
+  "signedPremiseFailureCount": 2,
+  "mutationStopLossWasActive": true,
+  "signedFailures": [
+    {
+      "path": "work/OPENCV_SCRIBE_O2S19B1/S19B1_SIGNED_TERMINAL_FAILURE_GATE.json",
+      "sha256": "86F005A975046AF9EEAD48E906B664BE8BD61A2AA801D6C0490DB1D1E622E9D3",
+      "failureClass": "INSTALLED_MULTI_CHANNEL_SUMMARY_ABSENT",
+      "entryPointExecuted": true,
+      "targetMutationPerformed": false
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D15/O2D15_TERMINAL_FAILURE_RESPONSE_GATE.json",
+      "sha256": "50656FD549D1DFB8E824A60B22FA47F41C7CD3943F7AD2A9B411F14344618F46",
+      "failureClass": "MAINTENANCE_SOURCE_HASH_DECLARATION_MISMATCH",
+      "entryPointExecuted": false,
+      "targetMutationPerformed": false
+    }
+  ],
+  "postFailureObservations": [
+    {
+      "path": "work/OPENCV_SCRIBE_O2S19P1/S19P1_RECOVERY_OBSERVATION_EVIDENCE.json",
+      "sha256": "12169D825F9D381CA8FB7C3CA3C3895B5F07A6E666710EE0E8511603BF867C33",
+      "proves": "Slot19 installed proposal is held upstream and lacks oriented inputs; raw OLS6 BF/DF fallback is required and scribe development remains eligible."
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D15/O2D15_SIGNED_FAILURE_DIRECT_OBSERVATION.json",
+      "sha256": "EE5115EF413B6E599AAFD2F38D4CDD2D68BA890E72E5E78DC7AFD196D0EA5CED",
+      "proves": "The endpoint remained responsive and rejected O2D15 before installation or entrypoint execution because signed changes[0].installedSha256 did not equal the exact payload source hash."
+    }
+  ],
+  "rootCauseReview": {
+    "firstFailure": "The original source-binding request assumed an installed summary that the upstream notch hold had prevented from being produced.",
+    "firstFailureCorrection": "The operator explicitly required the scribe read to continue; exact OLS6 raw BF/DF hashes and a bounded development-only auto-localization path were qualified in V1R5.",
+    "secondFailure": "O2D15 independently pinned the endpoint and maintenance definition but did not assert that changes[0].installedSha256 equaled the endpoint payload SHA-256.",
+    "secondFailureCorrection": "A fresh builder must cross-assert endpoint SHA-256 against the maintenance definition, the extracted signed request manifest, and the final package gate before signing or publication.",
+    "liveStateAmbiguityRemaining": false,
+    "endpointQueueHealthDisproved": false,
+    "processorStateDisproved": false,
+    "sourceStateDisproved": false
+  },
+  "mandatorySuccessorControls": {
+    "freshNamespaceRequired": true,
+    "failedO2D15PackageReusable": false,
+    "failedO2D15PackageTemplateAllowed": false,
+    "qualifiedBase": "O2D13_APPROVED_BASELINE_PLUS_V1R5_LOCKED_READER_AND_RAW_SOURCE_ALIAS_SPEC",
+    "exactChangeCount": 1,
+    "exactChangeSource": "payload/Invoke-O2D16ScribeEndpoint.ps1",
+    "exactChangeDestination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV02_O2D16.ps1",
+    "approvedInstalledPredecessorSha256": "08B6E76548CEE99EA11FC6245FB07C05F2E31E53B23562F8A1B15B1AC6EF6A32",
+    "definitionInstalledShaMustEqualEndpointPayloadSha": true,
+    "builderMustAssertDefinitionEquality": true,
+    "extractedManifestMustAssertDefinitionEquality": true,
+    "finalGateMustRecordBothEqualHashes": true,
+    "exactWindowsPowerShell51RehearsalRequired": true,
+    "sourceHashMismatchMustFailBeforeWrite": true,
+    "noArgumentFileGateRequired": true,
+    "completeRouteGateRequired": true,
+    "oneCreateNewPublicationMaximum": 1,
+    "retryAuthorized": false,
+    "matchingSignedTerminalResponseCollectionOnly": true
+  },
+  "authorityReview": {
+    "operatorDirection": "Continue the project autonomously and do not hold Slot19 instead of reading its scribe.",
+    "boundedMutationStillNecessary": true,
+    "providerActivationAuthorized": false,
+    "taskOrProcessRestartAuthorized": false,
+    "sourceOrWaferMutationAuthorized": false,
+    "holdClearanceAuthorized": false,
+    "slots22Through25ExposureAuthorized": false,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  },
+  "clearance": {
+    "workflowReviewed": true,
+    "directPostFailureObservationPinned": true,
+    "exactCauseClosedByMechanicalGate": true,
+    "mutationStopLossExplicitlyClearedForOneFreshSuccessor": true,
+    "authorizedFreshNamespace": "work/OPENCV_SCRIBE_O2D16",
+    "maximumSuccessorPublications": 1,
+    "automaticRetryAuthorized": false
+  }
+}

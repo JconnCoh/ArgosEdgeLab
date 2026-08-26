@@ -1,0 +1,32 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-08-26T23:25:30Z",
+  "state": "PASS_O2D15_SLOT19_STOP_LOSS_CLEARANCE",
+  "incidentId": "OCV02_SLOT19_SOURCE_BINDING_SUMMARY_ABSENCE_20260826",
+  "operatorDirection": "Continue the project autonomously and do not hold Slot19 instead of reading its scribe.",
+  "signedPremiseFailureCount": 2,
+  "workflowReview": "work/OPENCV_SCRIBE_O2D15/O2D15_STOP_LOSS_WORKFLOW_REVIEW.json",
+  "workflowReviewSha256": "63D8CF225CCA941D1985DB2F68F791F90438F4A25D1BBF882AE2C0F6E9FF0FFE",
+  "reviewFindings": [
+    "S19B1 disproved the installed-summary premise and S19P1 proved the exact raw-source fallback requirement.",
+    "O2D15 was signed and published once but the endpoint rejected it before execution because changes[0].installedSha256 retained O2D14's endpoint hash.",
+    "The matching signed compact failure and extracted signed request manifest completely identify the second cause without any ambiguous live state.",
+    "The successor must mechanically assert one exact endpoint hash across the payload, maintenance definition, extracted signed manifest, builder, and final gate."
+  ],
+  "supportedRemedy": "B",
+  "authorizedMutation": "One fresh O2D16 review-only Slot19 raw-source scribe development attempt may use the approved O2D13 baseline plus the qualified V1R5 raw-source alias specification, provided every exact source-hash equality gate passes before signing and publication.",
+  "singleMutationAttemptAuthorized": true,
+  "automaticRetryAuthorized": false,
+  "processorTaskActionAuthorized": false,
+  "processActionAuthorized": true,
+  "authorizedProcessAction": "START_ONE_BOUNDED_PORTABLE_OPENCV_SCRIBE_DEVELOPMENT_SLOT19_CHILD_ONLY",
+  "imageReadAuthorized": true,
+  "sourceHashingAuthorized": true,
+  "sourceDeletionAuthorized": false,
+  "waferActionAuthorized": false,
+  "providerActivationAuthorized": false,
+  "holdClearanceAuthorized": false,
+  "slots22Through25ExposureAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

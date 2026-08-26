@@ -1,0 +1,50 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-26T23:25:30Z",
+  "state": "PASS_O2D15_POST_FAILURE_RECOVERY_OBSERVATION",
+  "incidentId": "OCV02_SLOT19_SOURCE_BINDING_SUMMARY_ABSENCE_20260826",
+  "mode": "OBSERVE",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "sources": [
+    {
+      "path": "work/OPENCV_SCRIBE_O2D15/O2D15_SIGNED_PREMISE_FAILURE_GATE.json",
+      "selector": "requestId=REQ_20260826T225708001Z_9A8661E9BF26;responseId=R_9641D12F7275_20260826231910853_331d63ea",
+      "maximumRows": 1
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D15/final/extract/PORTAL_REQUEST_MANIFEST.json",
+      "selector": "changes[0].source=payload/Invoke-O2D15ScribeEndpoint.ps1",
+      "maximumRows": 1
+    }
+  ],
+  "fieldObservations": [
+    {
+      "field": "signedFailure.detail",
+      "expected": "Any exact terminal state for the one published request",
+      "observed": "Maintenance source hash mismatch: payload/Invoke-O2D15ScribeEndpoint.ps1"
+    },
+    {
+      "field": "changes[0].installedSha256",
+      "expected": "748C9DCB2E20F653A367D091A588BDA3AC93CCCE653F20F3D0C047D0580E8F61",
+      "observed": "29EAE036C05009CEAF35820EAB45BCFCB19832F9A25256B4EDD7BF8867871C80"
+    },
+    {
+      "field": "entryPointExecuted",
+      "expected": false,
+      "observed": false
+    }
+  ],
+  "conclusion": "The endpoint and return route are healthy. O2D15 failed deterministically before installation because the signed maintenance installedSha256 retained its predecessor value. No live-state premise remains ambiguous.",
+  "mutationsPerformed": false,
+  "imageBytesRead": false,
+  "taskOrProcessActionPerformed": false,
+  "providerActivated": false,
+  "sourceMutationPerformed": false,
+  "waferActionPerformed": false,
+  "requestRetried": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

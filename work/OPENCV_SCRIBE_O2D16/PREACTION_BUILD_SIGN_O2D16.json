@@ -1,0 +1,68 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_O2D16_BUILD_SIGN_20260826T234000Z",
+  "createdUtc": "2026-08-26T23:40:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "BUILD_AND_SIGN_REVIEW_ONLY_O2D16_PORTAL_REQUEST",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"63447353035EC77E130CB4F6CF23583FE273556F4687FBB66E6DFB1A1A76DA28"},
+    {"path":"work/OPENCV_SCRIBE_O2D16/Invoke-O2D16ScribeEndpoint.ps1","sha256":"AC85BD4CD2CF8211EC2546F715298B9C62944B1FBF175569D9D24703AEC1DA7D"},
+    {"path":"work/OPENCV_SCRIBE_O2D16/Test-O2D16Endpoint.ps1","sha256":"33C8664EE3D45900F9E18B3F187E69EC342A4A104753D200528F0EB76A455E50"},
+    {"path":"work/OPENCV_SCRIBE_O2D16/Test-O2D16NoArgumentFile.ps1","sha256":"BE63F9BFA63B32F0A5113262D5363BECE98C6D4F02A3D6F494223B7EA29BB124"},
+    {"path":"work/OPENCV_SCRIBE_O2D16/O2D16_SLOT19_JOB.json","sha256":"146C2E2A7973BA525983158552549C2FE42A6ACCAC663542D9200DC000F2CD5D"},
+    {"path":"work/OPENCV_SCRIBE_O2D16/O2D16_RECOVERY_INTENT.json","sha256":"036FCF3FFC1D866A64D7BCCA337E8E4D338E1C48778DED51C3C7E8A94B397DED"},
+    {"path":"work/OPENCV_SCRIBE_O2D16/O2D16_CLONE_LITERAL_REMEDIATION.json","sha256":"5CF4E6C223EDD541B305D8E37577D3D1253233529EB1C7CA08E879C294B592D7"},
+    {"path":"work/OPENCV_SCRIBE_O2D16/MAINTENANCE_DEFINITION.json","sha256":"AF7A89D92A6C7F428CC5042510CD8B8CC50ABA1F353A7F9A0DBDF968FB5E29EF"},
+    {"path":"work/OPENCV_SCRIBE_O2D16/O2D16_ENTRYPOINT_TEST_GATE_R3.json","sha256":"DCCB416A83B0828C20694C6A75B92FB1F450E7807229DC62E4027E4EAB7EF3E6"},
+    {"path":"work/OPENCV_SCRIBE_O2D16/O2D16_NO_ARGUMENT_FILE_GATE_R2.json","sha256":"13827071DF60DCB30911AB9D5B35F6D8577DBF916B3F9A9C5D68F80A58E6663B"},
+    {"path":"work/OPENCV_SCRIBE_O2D15/O2D15_POST_FAILURE_RECOVERY_OBSERVATION.json","sha256":"33DA3D9FC2DD1504010F5B3D34E4BDDC8C298511A40EAD06B611632C99FD790F"},
+    {"path":"work/OPENCV_SCRIBE_O2D15/O2D15_STOP_LOSS_CLEARANCE.json","sha256":"D907C6475B4D7D2F6AB09412952E7A307F7877A01B4102FCC3D0617636FAE8C4"},
+    {"path":"work/OPENCV_SCRIBE_O2D15/O2D15_STOP_LOSS_WORKFLOW_REVIEW.json","sha256":"63D8CF225CCA941D1985DB2F68F791F90438F4A25D1BBF882AE2C0F6E9FF0FFE"},
+    {"path":"work/OPENCV_OLS6/OLS6_EXACT_TWENTY_SOURCE_HASHES.json","sha256":"E54A15301A2B4FE914E6315DDFB9628E1D1364B0553D2155E9D5387A88E7FF3B"},
+    {"path":"work/OPENCV_SCRIBE_V1R5/ArgosOpenCvScribeV1R5.py","sha256":"F61F5954A77E6F730A2BF0D110A468535C4595D25DB21AFFE1573EF08B8139AB"},
+    {"path":"work/OPENCV_SCRIBE_V1R5/OCV02_R5_LOCKED_PARITY_GATE.json","sha256":"92BEA052728ECA2F338A51D4751C0C5B54AA292C4AFE5E1951614F3DD385C34B"},
+    {"path":"work/OPENCV_SCRIBE_V1R5/OCV02_R5_FULL_LOCALIZATION_GATE.json","sha256":"3202F561B80AD8FB91CD1C81B13FB02D30EE5488512CE4B9D05040B1974BD74A"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "filesystem": "LOCAL_CREATE_NEW_SIGNED_REQUEST_ONLY",
+    "jbodExecution": false,
+    "providerActivation": false,
+    "currentDevelopmentImagesRead": false,
+    "independentValidationSlotsExposed": false,
+    "requestId": "REQ_20260826T232833075Z_7A14DACFBF26"
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": ["work/OPENCV_SCRIBE_O2D15/final/REQ_20260826T225708001Z_9A8661E9BF26.ready.zip"]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
