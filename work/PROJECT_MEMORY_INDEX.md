@@ -800,3 +800,13 @@ task from changing which revision, UI, evidence, or next action is active.
 - Publisher SHA-256: `579EF5E6249AC475A4D88C853D00DCE7D942EFF9F05A247C5E159C57C5A7F62E`; invocation SHA-256: `B3DF9C619045199E1C58FCAF5A4402F0DB4F3D79CDC016F04D7D3F6C51665943`; clone gate SHA-256: `26F987D75EEF122E4052188FF3517570872E60BAE7E7F82835BECC8BC76DC28B`.
 - Exact next action: commit/push/fetch; require clean matching tips and final exact non-mutating gates; publish request `REQ_20260827T035500111Z_3C97863DBF26` exactly once with no retry; collect only its matching signed terminal response.
 - Authority: Slot25 is not wholly unseen; review-only remains true, training/XML/production remain false, provider/processor boundaries and every prerequisite/hold remain preserved.
+
+## 2026-08-27 — OCV-02 O2D23 signed Slot25 outcome-blind result frozen
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D23_SLOT25_TERMINAL_20260827.md`
+- SHA-256: `D8C44F8F465FD25D7D2F47967DC8AB64E44FABFB8A0FDB7B781D03073EDC8D4D`
+- Signed response: `R_E15698774150_20260827044400129_f775f729`, ZIP SHA-256 `044066FEF469C05DC4C1F8E907C929486D9FC3DFE75315C1A885485BED8C589A`, manifest SHA-256 `7310A266EFFC9FE14495436B55265528617713FE079566637335333F72E70DA1`.
+- Result: seven candidates; image-first `FFFFFFFFFFF7`; proposed `FF7FFF7FF7F7`; `SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID`; identity unaccepted; all holds preserved.
+- Collector: first draft failed PS5.1 preflight before mutation and is non-reusable; R2 collection gate is `9B5EA1163BB65F6BF558723858407590B47AED40CC2C06F92D1621EF82258B45`.
+- Exact next action: filesystem-only four-member independent validation assessment; no tuning, new request, provider/processor action, identity acceptance, or hold clearance.
+- Authority: Slot25 is outcome-blind metadata-disclosed, not wholly unseen; review-only true, training/XML/production false, provider disabled, processor untouched, and every prerequisite/hold preserved.

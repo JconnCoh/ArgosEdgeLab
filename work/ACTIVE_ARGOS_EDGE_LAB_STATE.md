@@ -7616,3 +7616,42 @@ Exact next action: commit/push/fetch, require clean matching branch tips and all
 final non-mutating gates, then publish exactly once with no retry and collect
 only the matching signed response. Slot25 is not wholly unseen. All authority
 limits, prerequisites, and holds remain unchanged.
+
+## 2026-08-27 O2D23 signed Slot25 outcome-blind terminal result frozen
+
+Request `REQ_20260827T035500111Z_3C97863DBF26` was published exactly once
+through persistent `U:` and received exact matching signed response
+`R_E15698774150_20260827044400129_f775f729`. Response ZIP SHA-256 is
+`044066FEF469C05DC4C1F8E907C929486D9FC3DFE75315C1A885485BED8C589A`;
+response-manifest SHA-256 is
+`7310A266EFFC9FE14495436B55265528617713FE079566637335333F72E70DA1`;
+R2 collection-gate SHA-256 is
+`9B5EA1163BB65F6BF558723858407590B47AED40CC2C06F92D1621EF82258B45`.
+
+The frozen unchanged V1R5 engine returned seven candidates. Image-first is
+`FFFFFFFFFFF7`, proposed is `FF7FFF7FF7F7`, checksum state is
+`SCRIBE_M12_RERANKED_CONFIRMATION_REQUIRED`, and result state is
+`SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID`. Identity is not accepted.
+`SCRIBE_REFERENCE_COVERAGE_HOLD`, ambiguity, automatic-localization
+development, upstream identity-confirmation, notch, and every existing hold
+remain.
+
+Slot25 is the fourth sequential outcome-blind validation member under
+classification `INDEPENDENT_VALIDATION_OUTCOME_BLIND_METADATA_DISCLOSED`; it
+must never be called wholly unseen. The first local collector failed PS5.1
+preflight before mutation because `Get-FileHash` was unavailable and is
+non-reusable. Fresh R2 used a script-local .NET SHA-256 helper and collected
+once after all exact gates passed.
+
+No retry, task/process restart, source mutation/deletion, wafer action, hold
+clearance, provider activation, training, XML, or production action occurred.
+Live provider remains disabled and the protected processor was untouched.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D23_SLOT25_TERMINAL_20260827.md`,
+SHA-256 `D8C44F8F465FD25D7D2F47967DC8AB64E44FABFB8A0FDB7B781D03073EDC8D4D`.
+
+Exact next action: perform a filesystem-only OCV-02 four-member independent
+validation assessment with no tuning, identity acceptance, hold clearance,
+provider/processor action, or external request. All authority limits,
+prerequisites, and holds remain unchanged.

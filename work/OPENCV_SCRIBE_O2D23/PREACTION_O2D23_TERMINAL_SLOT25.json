@@ -1,0 +1,98 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_O2D23_TERMINAL_SLOT25_20260827T045200Z",
+  "createdUtc": "2026-08-27T04:52:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "PROMOTE_O2D23_SLOT25_SIGNED_TERMINAL_RESULT_CHECKPOINT",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "47AD7D3A36BB0A3B7F1FF7FB0901FD4AF3A7DA03E2A79EA03DAF70B29603563C"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/O2D23_PUBLISH_GATE.json",
+      "sha256": "51709F372074990B189EC5168113932235B4A2999C64C655C523058E1DFF9181"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/O2D23_EXACT_RESPONSE_COLLECTION_R2_GATE.json",
+      "sha256": "9B5EA1163BB65F6BF558723858407590B47AED40CC2C06F92D1621EF82258B45"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/collected/R_E15698774150_20260827044400129_f775f729.ready/PORTAL_RESPONSE_MANIFEST.json",
+      "sha256": "7310A266EFFC9FE14495436B55265528617713FE079566637335333F72E70DA1"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/collected/R_E15698774150_20260827044400129_f775f729.ready/RESULT.json",
+      "sha256": "2D44ADE2407C69F9F335B2A0F6D95159FEEF1A8BABBE122C8C786017472AA655"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/collected/R_E15698774150_20260827044400129_f775f729.ready/MAINTENANCE.stdout.txt",
+      "sha256": "6B273BCBAF3F101737FF89DAC39CC74ECB9C37ACD2C3D195ACEA72ADD062AD35"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/PREACTION_COLLECT_O2D23_RESPONSE_R2.json",
+      "sha256": "49A1EE6FBE070AC8A72AB3C967305DBCE1F0D95082EB442BBA6B27DD6CFA7FD5"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/final/REQ_20260827T035500111Z_3C97863DBF26.ready.zip",
+      "sha256": "8D4E9C9C8C4105B28CF8539942AD182C6E9F237974200C86412D0EBDF67303F0"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "scope": {
+    "filesystem": "FILE_BACKED_TERMINAL_RESULT_CHECKPOINT_AND_CONTINUITY_PROMOTION",
+    "jbodExecution": false,
+    "requestId": "REQ_20260827T035500111Z_3C97863DBF26",
+    "responseId": "R_E15698774150_20260827044400129_f775f729",
+    "slot": "Slot25",
+    "validationQualification": "INDEPENDENT_VALIDATION_OUTCOME_BLIND_METADATA_DISCLOSED",
+    "identityAccepted": false,
+    "providerActivation": false,
+    "sourceImageBytesRead": false,
+    "taskOrProcessRestarted": false,
+    "holdsCleared": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      "work/OPENCV_SCRIBE_O2D23/Collect-O2D23Response.ps1",
+      "work/OPENCV_SCRIBE_O2D23/PREACTION_COLLECT_O2D23_RESPONSE.json",
+      "work/OPENCV_SCRIBE_O2D23/O2D23_COLLECT_CLONE_LITERAL_GATE.json"
+    ]
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionRoutingEnabled": false
+}

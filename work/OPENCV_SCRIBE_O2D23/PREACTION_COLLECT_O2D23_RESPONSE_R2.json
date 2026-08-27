@@ -1,0 +1,108 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_O2D23_COLLECT_SIGNED_RESPONSE_R2_20260827T045100Z",
+  "createdUtc": "2026-08-27T04:51:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "COLLECT_AND_VERIFY_EXACT_MATCHING_O2D23_SLOT25_SIGNED_TERMINAL_RESPONSE_R2",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "47AD7D3A36BB0A3B7F1FF7FB0901FD4AF3A7DA03E2A79EA03DAF70B29603563C"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/Collect-O2D23ResponseR2.ps1",
+      "sha256": "2326A29A2DCA5953FA3A430864D10639F7D976D1C769348D3B0FEA94C96A11FF"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/Collect-O2D23ResponseR2.cmd",
+      "sha256": "D146A5921520F41D8C46DFC5181E98B6AC58C1D0D1072358AA55DE1ACF659016"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/O2D23_EXACT_RESPONSE_COLLECTION_R2_INVOCATION.json",
+      "sha256": "37E1A882DA5B41186BC9BEABB01D79EC29CC2C43ADE8FA7041C7B8D0C1A2E395"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/O2D23_COLLECT_R2_CLONE_LITERAL_REMEDIATION.json",
+      "sha256": "D849139D09457F6D7E1F4B42C793AE26B784FD9A42D9E0206F8061B43CDE2747"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/O2D23_COLLECT_R2_CLONE_LITERAL_GATE.json",
+      "sha256": "F2D85357EEF21F82C97F9D94496BCAE281129720CE77BF2339BFD72E627D6BD2"
+    },
+    {
+      "path": "U:/ProjectPortalRO/responses/R_E15698774150_20260827044400129_f775f729.ready.zip",
+      "sha256": "044066FEF469C05DC4C1F8E907C929486D9FC3DFE75315C1A885485BED8C589A"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalResponse.ps1",
+      "sha256": "4AF5901A7B9DFFF5A4DAF128960173D67501ABF6FF87C586BA526643B1C1449C"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer",
+      "sha256": "5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/final/REQ_20260827T035500111Z_3C97863DBF26.ready.zip",
+      "sha256": "8D4E9C9C8C4105B28CF8539942AD182C6E9F237974200C86412D0EBDF67303F0"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/O2D23_PUBLISH_GATE.json",
+      "sha256": "51709F372074990B189EC5168113932235B4A2999C64C655C523058E1DFF9181"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "scope": {
+    "filesystem": "EXACT_PINNED_ZIP_SIGNATURE_FIRST_RESPONSE_COLLECTION_ONLY",
+    "jbodExecution": false,
+    "providerActivation": false,
+    "sourceImageBytesRead": false,
+    "requestId": "REQ_20260827T035500111Z_3C97863DBF26",
+    "responseId": "R_E15698774150_20260827044400129_f775f729",
+    "slot": "Slot25",
+    "slot25SourceMetadataPrematurelyExposed": true,
+    "slot25ImageBytesRead": false,
+    "slot25OutcomeSeen": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Receive-SignedPortalResponses.ps1",
+      "work/OPENCV_SCRIBE_O2D23/Collect-O2D23Response.ps1",
+      "work/OPENCV_SCRIBE_O2D23/PREACTION_COLLECT_O2D23_RESPONSE.json",
+      "work/OPENCV_SCRIBE_O2D23/O2D23_COLLECT_CLONE_LITERAL_GATE.json"
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
