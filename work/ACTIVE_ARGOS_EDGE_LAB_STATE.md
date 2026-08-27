@@ -1,8 +1,34 @@
-# Active ArgosEdgeLab state - O2D18 signed Slot20 frozen / Slot21 next - 2026-08-27
+# Active ArgosEdgeLab state - O2D19 Slot21 publication ready - 2026-08-27
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-02 O2D19 Slot21 exact-source request publication ready — 2026-08-27
+
+Fresh request `REQ_20260827T012505111Z_73C073D0BF26` binds exact frozen OLS6
+Slot21 BF SHA-256
+`73C073D01127CE0BD7C2C26BB7BF10FE223200847DEE474FBEBA2E8D6882DFCE`
+and DF SHA-256
+`B5A3429B3A307991AD29E11F710E2BDD0DCEC89EE178B15F92B0370CD9ABDFC6`.
+The unchanged V1R5 engine, six live self-pins, Windows PowerShell 5.1
+rehearsal, exact no-argument gate, signed-package extraction/signature, and
+129-leaf route budget all pass.
+
+The 21,403-byte ZIP SHA-256 is
+`DAA71BB4A819409176975EAD72485ED02E2C294BC2EC9031A4C6CDE0E6054773`;
+final-package gate SHA-256 is
+`96158335F247702B030FACBB63785279D5D8DF9E2300E9EF1ECF8B69773AEBDC`;
+complete-route PASS SHA-256 is
+`6F99757B4D17F516086E98BC8486D726BC05F6E1809FD15E6A3ED62082BB5B51`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D19_COMPLETE_ROUTE_PASS_PUBLICATION_READY_CHECKPOINT_20260827.md`,
+SHA-256 `D9CE82700A14A27A7D1D2E55F1E50B36826B483B86A6836634D20281D061E560`.
+Next is one create-new publication through persistent `U:` and only the exact
+matching signed response; no retry. Slots16-20 are frozen development evidence,
+Slot21 is not yet frozen, Slots22-25 remain unseen, and every hold/provider/
+processor/authority boundary remains fixed.
 
 ## OCV-02 O2D18 signed Slot20 result frozen / Slot21 next — 2026-08-27
 

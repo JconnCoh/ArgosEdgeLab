@@ -8639,3 +8639,48 @@ than rerunning it.
   exact-ZIP signature-first collection under a fresh invocation/preaction, and
   remove only the explicit temporary C: staging root after the collected copy
   and its hash are verified.
+
+## 2026-08-26 — Caller timeout must cover the endpoint rehearsal ceiling
+
+- Failure signature: the O2D19 local endpoint rehearsal remained active after
+  the invoking command envelope expired at about 124 seconds. Its pinned
+  portable Python child was still consuming CPU, the test root still existed,
+  and no gate had yet been written. The unchanged endpoint itself correctly
+  retained its independent 600-second child timeout and later completed with a
+  PASS gate and bounded-root cleanup.
+- Cause: the caller timeout was 120 seconds even though the exact endpoint
+  contract permits up to 600 seconds plus harness setup, injected-failure
+  coverage, and cleanup. Expiry detached the still-valid Windows PowerShell
+  process instead of proving an endpoint failure.
+- Mandatory preflight: for an exact endpoint rehearsal, set the caller envelope
+  above the endpoint child ceiling with explicit setup/cleanup reserve (at
+  least 720 seconds for a 600-second child), or retain the yielded command cell
+  and observe it in bounded intervals. If a caller expires first, inventory
+  only the exact parent/child identities, bounded test root, CPU progress, and
+  gate state; do not launch a duplicate, kill an active bounded child, or call
+  the run failed while its own timeout remains in force.
+- Recovery: O2D19 was still DRAFT and had performed no external mutation,
+  signing, publication, or current Slot21 image read. The exact active run was
+  observed through completion, its parent and child exited, its test root was
+  removed, and `O2D19_ENTRYPOINT_TEST_GATE_R2.json` recorded PASS. No retry was
+  performed and no new product namespace was required.
+
+## 2026-08-26 — Ordered clone replacements must preserve parent evidence
+
+- Failure signature: the draft O2D19 builder paired the O2D18 parent response
+  hash with an impossible O2D19 terminal-response path and expected the O2D19
+  Slot21 terminal state before O2D19 had been built. No build, signature, or
+  publication had occurred when bounded source inspection found the mismatch.
+- Cause: the generator first changed the O2D17 parent reference to O2D18, then
+  a later broad O2D18-to-O2D19 token replacement transformed that already
+  corrected parent reference a second time. Literal-root classification could
+  not detect the semantically wrong evidence generation.
+- Mandatory preflight: apply broad product-token replacement before explicit
+  parent-evidence replacement, then assert the parent path, hash, terminal
+  state, slot, and generation as one tuple. The parent generation must be
+  exactly one less than the successor and its terminal artifact must already
+  exist. A matching hash alone is insufficient when path or state was
+  mechanically advanced.
+- Recovery: correct the still-DRAFT generator ordering and builder tuple in
+  place, rerun exact wrapper, harness, clone, and dependency gates, and bind
+  the O2D18 Slot20 signed terminal response as O2D19's sole development parent.
