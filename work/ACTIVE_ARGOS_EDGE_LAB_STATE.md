@@ -7458,3 +7458,25 @@ Current checkpoint SHA-256 is
 
 Exact next action: commit/push, publish O2D21 exactly once, and collect only its
 matching signed response. No retry. All holds and authority limits remain.
+
+## 2026-08-27 O2D22 Slot24 blind request publication ready
+
+Slot24 alone is bound to BF `6C5C7F1F2F9B83DB52DE57FDEA100A9724FA4DBEF11E7087AAD790BFD5F8A1AA`
+and DF `D709717C8BAFBF544DE2616262E2E7DF57A7D8B71F0B46163740AC1D5CA529F7`.
+The frozen engine remains `F61F5954A77E6F730A2BF0D110A468535C4595D25DB21AFFE1573EF08B8139AB`;
+no tuning occurred.
+
+The signed 21,403-byte request ZIP has SHA-256
+`AEB63CD89894E32708E7FB693DF8CF2024D9C3DC5FA4D20CEE0650D062007D13`;
+final gate is `12B1BB2C91E7663A7115231FCC0B2FEBC2112AA03D47551A1ECDD6E44BBF5EEC`;
+complete-route gate is `1261B52E190EF010F1EC54777F998ED74CC2FD6E8FF825FAD0BF996114A54140`.
+Current checkpoint SHA-256 is
+`572A62B4776A61B0B22FE6E9E9572515B3BE978D8DE494E7BB22D11103C70433`.
+
+A Slot24 metadata search exposed adjacent Slot25 path/hash metadata only. No
+Slot25 image bytes, pixels, OCR/provider output, or outcome were read. Slot25
+must not be called wholly unseen; after Slot24 terminal evidence, a file-backed
+workflow review is required before any Slot25 request.
+
+Exact next action: commit/push, publish O2D22 exactly once, and collect only its
+matching signed response. No retry. All holds and authority limits remain.

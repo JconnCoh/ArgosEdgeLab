@@ -8684,3 +8684,25 @@ than rerunning it.
 - Recovery: correct the still-DRAFT generator ordering and builder tuple in
   place, rerun exact wrapper, harness, clone, and dependency gates, and bind
   the O2D18 Slot20 signed terminal response as O2D19's sole development parent.
+
+## 2026-08-27 — Context searches on ordered slot inventories can expose the next slot
+
+- Failure signature: a text-only query intended to reveal only frozen OLS6
+  Slot24 source metadata used `rg -C 18` against the multi-slot JSON inventory.
+  The after-context crossed the Slot24 record boundary and emitted the adjacent
+  Slot25 path, byte count, timestamp, and SHA-256 before Slot24 was terminal.
+- Cause: line-oriented context around a match is not a record boundary. The
+  query bounded file scope but did not bound the selected JSON object identity.
+- Mandatory preflight: reveal sequential slot metadata only by parsing the
+  frozen JSON and selecting the exact requested `slot` plus the exact BF/DF
+  channel set. Require exactly two selected records and serialize only those
+  records. Do not use `rg -C`, `Select-String -Context`, line ranges, or tail
+  output against a multi-slot inventory for an unseen-slot reveal.
+- Recovery: no image bytes, pixels, OCR output, candidate result, or tuning
+  evidence was read, and no filesystem or external state was mutated. Preserve
+  the frozen engine and no-tuning rule, disclose that Slot25 source metadata is
+  prematurely exposed, and never again describe Slot25 as wholly unseen. Slot24
+  may continue under its unchanged frozen contract. Treat Slot25 outcome and
+  image content as still blind; before counting Slot25 as the fourth sequential
+  blind-validation member, require a file-backed workflow review that explicitly
+  addresses the metadata-only early exposure.

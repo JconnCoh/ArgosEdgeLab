@@ -744,3 +744,11 @@ task from changing which revision, UI, evidence, or next action is active.
 - SHA-256: `1009F3149E1826F88200369BF716BB0E975C41CC0954A2B43526368715A047FF`
 - Result: signed image-first/proposed string `1443R071SUF5`, valid M12 checksum, exact installed-proposal match, seven retained candidates, identity still unaccepted.
 - Next: Slot19 exact signed source binding; Slots16-18 frozen, Slots22-25 unseen, provider disabled, processor untouched, and all holds preserved.
+
+## 2026-08-27 — OCV-02 O2D22 Slot24 publication ready
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D22_COMPLETE_ROUTE_PASS_SLOT24_BLIND_PUBLICATION_READY_CHECKPOINT_20260827.md`
+- SHA-256: `572A62B4776A61B0B22FE6E9E9572515B3BE978D8DE494E7BB22D11103C70433`
+- Exact next action: publish frozen request `REQ_20260827T030200111Z_6C5C7F1FBF26` once through persistent `U:` with no retry, then collect only its matching signed terminal response.
+- Disclosure: Slot25 path/hash metadata was exposed by adjacent text-search context; no image bytes or outcome were read. Complete the file-backed workflow review after Slot24 terminal evidence before any Slot25 request.
+- Authority: review-only; Slots22-23 remain blind-validation evidence, Slot24 is pending result, live provider disabled, healthy processor untouched, and every hold preserved.
