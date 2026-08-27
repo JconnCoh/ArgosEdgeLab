@@ -8056,3 +8056,31 @@ Live provider remains disabled, protected processor/tasks/processes remain
 untouched, no detector/tuning/source/wafer/hold action occurred, review-only
 is true, training/XML/production are false, and every prerequisite is
 preserved.
+
+## 2026-08-27 — OCV-03 O3K1 actual-pixel gallery ready / operator review pending
+
+The one-file DATA_PULL `REQ_20260827T203242373Z_0DBC2A7558B3` was published
+exactly once with no retry. Matching JBOD response
+`R_859705B2A128_20260827203835267_ee050a5b` is signature-verified; response
+ZIP SHA-256 is
+`DD5FB84E80A8566F731249BB9D009A07044217C392D5F0C2B79E8E7133962E66`.
+The exact review ZIP was reconstituted at 5,666,342 bytes and SHA-256
+`CEE193475613E04D0AD25F0402437E3E21E310EF1F8B1312737B28463699F724`.
+
+The local page
+`work/OPENCV_EDGE_NOTCH_O3K1/local_review/gallery.html` has SHA-256
+`6B929D147DE393F93BADA05AF55485B30D7C6A9B54604FC1C87683CF21E78623`.
+It shows actual clean/overlay pixel pairs for S16-C1, S17-C1, and S17-C2 in
+BF and DF. Raster-provenance preflight verifies 6 clean bases, 6 overlays,
+and 6 masks with zero changed pixels outside each current mask.
+
+The controlled in-app browser rejected the exact local file URL by URL
+policy. No workaround, screenshot, alternate automation, or image-byte return
+was attempted. Operator manual review of the exact local page is now the only
+active gate; the provenance release gate remains pending.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3K1_ACTUAL_PIXEL_GALLERY_READY_OPERATOR_REVIEW_20260827.md`,
+SHA-256 `166E713E47D070887716A3C9D7D5950AB21C67488012CFEEB58486429CC7AD53`.
+All detector/tuning/provider/processor/task/process/source/wafer/hold and
+review-only/training/XML/production boundaries remain preserved.

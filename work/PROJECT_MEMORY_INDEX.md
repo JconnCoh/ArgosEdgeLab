@@ -926,3 +926,15 @@ task from changing which revision, UI, evidence, or next action is active.
 - Exact one-file DATA_PULL: `REQ_20260827T203242373Z_0DBC2A7558B3`, signed but unpublished; ZIP SHA-256 `DD7651041B5C37B6BBBA09E069152BB2C4859D825C6BF38911E80F1DB4F173AF`.
 - Exact next action: clean matching pushed tips, final publisher/U preflights, publish the DATA_PULL exactly once with no retry, collect only its matching signed response, verify and reconstitute the exact review ZIP, then present the local pixel gallery after provenance/browser gates.
 - Authority: no detector rerun/tuning, source mutation/deletion, provider activation, processor/task/process/wafer action, or hold clearance; review-only true, training/XML/production false, every prerequisite preserved.
+
+## 2026-08-27 — OCV-03 O3K1 actual-pixel gallery ready / operator review pending
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3K1_ACTUAL_PIXEL_GALLERY_READY_OPERATOR_REVIEW_20260827.md`
+- SHA-256: `166E713E47D070887716A3C9D7D5950AB21C67488012CFEEB58486429CC7AD53`
+- DATA_PULL response: `R_859705B2A128_20260827203835267_ee050a5b`, signature-verified response ZIP SHA-256 `DD5FB84E80A8566F731249BB9D009A07044217C392D5F0C2B79E8E7133962E66`.
+- Exact review ZIP: 5,666,342 bytes, SHA-256 `CEE193475613E04D0AD25F0402437E3E21E310EF1F8B1312737B28463699F724`; 18 raster assets plus render manifest.
+- Local gallery: `work/OPENCV_EDGE_NOTCH_O3K1/local_review/gallery.html`, SHA-256 `6B929D147DE393F93BADA05AF55485B30D7C6A9B54604FC1C87683CF21E78623`.
+- Raster provenance: preflight passed for 6 clean bases, 6 current overlays, and 6 current masks; all current overlays change zero pixels outside their documented masks.
+- Controlled-browser gap: local `file://` URL rejected by browser policy; no workaround or screenshot used. Operator manual review is required before the provenance release gate.
+- Exact next action: operator opens the local gallery with its manifest query, uses Clean/Overlay/Blink, and classifies the overlays and whether S17-C1/S17-C2 are same-family, distinct types, a non-notch competitor, or ambiguous.
+- Authority: no detector rerun/tuning, provider activation, processor/task/process/source/wafer/hold action; review-only true, training/XML/production false, every prerequisite preserved.
