@@ -1,0 +1,31 @@
+{
+  "schema": "argos_ocv03_detector_output_freeze_v1",
+  "revision": "O3D2_POST2_V2_R6_DETECTOR_OUTPUT_FREEZE_20260827",
+  "state": "FROZEN_DETECTOR_OUTPUTS_BEFORE_SCORING",
+  "producerExitCode": 0,
+  "producerState": "COMPLETE_REVIEW_ONLY_DEVELOPMENT",
+  "detectorEntrypointPath": "work/PATTERNED_FIDUCIAL_INVENTORY/tools/NativeFrontsideWaferPoseOpenCvV2R6.py",
+  "detectorEntrypointSha256": "90839F14CEEED7C2DFC6E1601195F6927C4631E508F9EB859E77A93745D3FB30",
+  "jobPath": "work/OPENCV_EDGE_NOTCH_O3D2/O3D2_POST2_V2_R6_JOB.json",
+  "jobSha256": "FF0615B4B6EBAF6B513CA6B8585611A1816AA4A3D9DF6D68F9BAEA2176FFE1F6",
+  "outputRoot": "work/O3D2/R6",
+  "outputs": [
+    {"path":"work/O3D2/R6/62546-481_POST2_SLOT01/NATIVE_WAFER_POSE_OPENCV_V2.json","sha256":"27C8FA9C3F308DC50B81D5DB4A145E402C3CB0CE55A93BF8574AEF7B4C693659","bytes":18940},
+    {"path":"work/O3D2/R6/62546-481_POST2_SLOT03/NATIVE_WAFER_POSE_OPENCV_V2.json","sha256":"A2721C6834623B8315BEDCF8FEC221850CBA87D9BA594970C6BC62E64B267AD1","bytes":11653},
+    {"path":"work/O3D2/R6/62546-481_POST2_SLOT17/NATIVE_WAFER_POSE_OPENCV_V2.json","sha256":"4ED3D611A2C69F4F9B3BC26F6ECCC5DDDFD7339F8CE6252B7FF83A74C8D1C3F8","bytes":9208},
+    {"path":"work/O3D2/R6/SUMMARY.json","sha256":"2606170AAAF0C558D03666C55219292764A20E93C7131FBE6EACA6C82AEE38D6","bytes":2400}
+  ],
+  "outputFileCount": 4,
+  "allThreeManufacturedNotchCandidatesSelectedForReview": true,
+  "fullPerimeterInference": true,
+  "knownNotchLocationConsumed": false,
+  "notchAnglePriorConsumed": false,
+  "fixedAngularSearchWindowConsumed": false,
+  "regressionLabelsConsumed": false,
+  "rotationAuthorityGranted": false,
+  "labelsMayBeUsedOnlyBySeparatePostInferenceScorer": true,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

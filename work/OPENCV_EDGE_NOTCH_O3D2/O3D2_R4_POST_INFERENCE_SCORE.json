@@ -1,0 +1,88 @@
+{
+  "schema": "argos_ocv03_o3d2_post_inference_score_v1",
+  "state": "FAIL_POST_INFERENCE_SELECTION_WITH_LOCALIZATION_EVIDENCE",
+  "freezePath": "work/OPENCV_EDGE_NOTCH_O3D2/O3D2_R4_DETECTOR_OUTPUT_FREEZE.json",
+  "freezeSha256": "0E006643CFCDF13E2C8F4D9F57BAFCBEE296286BBB88435E8148B5EDC4C42B42",
+  "labelsPath": "work/OPENCV_EDGE_NOTCH_O3D2/O3D2_POST2_SCORER_ONLY_LABELS.json",
+  "labelsSha256": "F8337BB2DDA12DBBA5769677C5A1A31E54CDD54659E0137F2EB9694EC2CCA668",
+  "rows": [
+    {
+      "identity": "62546-481_POST2_SLOT01",
+      "detectorState": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_NATIVE_PERIMETER_NOT_QUALIFIED",
+      "expectedNotchAngleDegreesScorerOnly": 89.9,
+      "maximumAbsoluteAngleErrorDegrees": 0.8,
+      "selectedAngleDegrees": null,
+      "selectedCandidatePassed": false,
+      "nearestFrozenBfCandidate": {
+        "angleDegrees": 92.52830693289212,
+        "absoluteErrorDegrees": 2.628306932892116,
+        "widthDegrees": 12.3,
+        "symmetryScore": 0.0,
+        "tipCenterOffsetFraction": 1.0
+      },
+      "nearestFrozenDfCandidate": {
+        "angleDegrees": 90.03556734938735,
+        "absoluteErrorDegrees": 0.13556734938734394,
+        "widthDegrees": 2.0,
+        "symmetryScore": 0.84759933625149,
+        "tipCenterOffsetFraction": 0.15789473684210525
+      },
+      "knownChipoutAngleDegreesScorerOnly": 85.50363964412367,
+      "chipoutSelectedAsNotch": false
+    },
+    {
+      "identity": "62546-481_POST2_SLOT03",
+      "detectorState": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_NATIVE_PERIMETER_NOT_QUALIFIED",
+      "expectedNotchAngleDegreesScorerOnly": 89.55,
+      "maximumAbsoluteAngleErrorDegrees": 0.8,
+      "selectedAngleDegrees": null,
+      "selectedCandidatePassed": false,
+      "nearestFrozenBfCandidate": {
+        "angleDegrees": 90.01343213566035,
+        "absoluteErrorDegrees": 0.463432135660355,
+        "widthDegrees": 1.4000000000000001,
+        "symmetryScore": 0.0,
+        "tipCenterOffsetFraction": 1.0
+      },
+      "nearestFrozenDfCandidate": {
+        "angleDegrees": 89.64385690044607,
+        "absoluteErrorDegrees": 0.09385690044607031,
+        "widthDegrees": 2.4000000000000004,
+        "symmetryScore": 0.8078238985087944,
+        "tipCenterOffsetFraction": 0.13043478260869565
+      }
+    },
+    {
+      "identity": "62546-481_POST2_SLOT17",
+      "detectorState": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_NATIVE_PERIMETER_NOT_QUALIFIED",
+      "expectedNotchAngleDegreesScorerOnly": 89.6,
+      "maximumAbsoluteAngleErrorDegrees": 0.8,
+      "selectedAngleDegrees": null,
+      "selectedCandidatePassed": false,
+      "nearestFrozenBfCandidate": {
+        "angleDegrees": 89.68100140621873,
+        "absoluteErrorDegrees": 0.08100140621871788,
+        "widthDegrees": 2.3000000000000003,
+        "symmetryScore": 0.9102651734230681,
+        "tipCenterOffsetFraction": 0.09090909090909091
+      },
+      "nearestFrozenDfCandidate": {
+        "angleDegrees": 89.64755723590974,
+        "absoluteErrorDegrees": 0.047557235909749807,
+        "widthDegrees": 2.4000000000000004,
+        "symmetryScore": 0.8129643694482053,
+        "tipCenterOffsetFraction": 0.13043478260869565
+      }
+    }
+  ],
+  "detectorOutputsFrozenBeforeLabelsRead": true,
+  "labelsProvidedToDetector": false,
+  "labelsUsedAsThresholdSource": false,
+  "labelsUsedAsCandidateFilter": false,
+  "labelsUsedAsTieBreaker": false,
+  "imageBytesDecoded": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

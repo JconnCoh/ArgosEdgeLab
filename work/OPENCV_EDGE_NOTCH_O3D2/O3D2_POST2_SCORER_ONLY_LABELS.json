@@ -1,0 +1,38 @@
+{
+  "schema": "argos_ocv03_post2_scorer_only_labels_v1",
+  "revision": "O3D2_POST2_SCORER_ONLY_LABELS_20260827",
+  "state": "FROZEN_POST_INFERENCE_SCORER_ONLY",
+  "detectorInputAllowed": false,
+  "thresholdSourceAllowed": false,
+  "candidateFilterAllowed": false,
+  "tieBreakerAllowed": false,
+  "members": [
+    {
+      "identity": "62546-481_POST2_SLOT01",
+      "expectedNotchAngleDegreesImage": 89.9,
+      "maximumAbsoluteAngleErrorDegrees": 0.8,
+      "knownChipoutAngleDegreesImage": 85.50363964412367,
+      "chipoutMayBeSelectedAsNotch": false,
+      "sourceArtifact": "work/FP2P_SLOT01_EXCEPTION_V2/RECIPROCAL_SCRIBE_POSE_CONFIRMATION.json",
+      "sourceArtifactSha256": "54613A666FB597991E984154A3198D8DA2815397CB007B5363B43B3DF254C2FE"
+    },
+    {
+      "identity": "62546-481_POST2_SLOT03",
+      "expectedNotchAngleDegreesImage": 89.55,
+      "maximumAbsoluteAngleErrorDegrees": 0.8,
+      "sourceArtifact": "work/FP2P/62546-481_POST2_SLOT03/NATIVE_NOTCH_AUDIT.json",
+      "sourceArtifactSha256": "EEF6578BD604448B406B3EF47F20497EDFAC5A14B30B27D8A701269126FF397D"
+    },
+    {
+      "identity": "62546-481_POST2_SLOT17",
+      "expectedNotchAngleDegreesImage": 89.6,
+      "maximumAbsoluteAngleErrorDegrees": 0.8,
+      "sourceArtifact": "work/FP2P_SLOT17/62546-481_POST2_SLOT17/NATIVE_NOTCH_AUDIT.json",
+      "sourceArtifactSha256": "841B0A69AF6F81D51F83E4F1523C39C20CBE675C5430A75D18CC32DA79A049C8"
+    }
+  ],
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

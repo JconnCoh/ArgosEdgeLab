@@ -859,6 +859,28 @@ task from changing which revision, UI, evidence, or next action is active.
 - Exact next action: commit/push/fetch, clean matching tips, one no-retry publication through persistent `U:`, then exact matching signed-response collection.
 - Authority: review-only; provider disabled, processor untouched, training/XML/production false, and every hold/prerequisite preserved.
 
+## 2026-08-27 — OCV-03 O3C2 signed hotspot source freeze complete / V2 next
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3C2_SIGNED_SOURCE_FREEZE_COMPLETE_V2_NEXT_20260827.md`
+- SHA-256: `F089AFD3EF5D041AF2629A8C008A44F6EDE2C76D5D207D81E2EC86C59166AA18`
+- Request: `REQ_20260827T151200111Z_62629419C3F2`, published exactly once; matching JBOD response `R_21E61BDA3E47_20260827153734977_d7ab3f62`.
+- Response ZIP SHA-256: `42D02AE95A4E33F0CD0B6A3DF890CEE010CBE8B535BB2D0526E01C081B5F9874`; collection gate SHA-256: `665C1DDDFD1E1FBDECED11C5C9F382D147E3AB1F7904BF191A5F9026E43063AD`.
+- Result: ten stable BF/DF pairs, 20 source hashes, 9,507,597,480 bytes hashed, aggregate fingerprint `EB45C81DB9A4A3B220B0D4161C2F280A7FB402A40296FB94110223692073BAA0`.
+- Exact next action: run V2 development on frozen POST2 before hotspot decode; full-perimeter inference only, with known correct locations isolated to post-inference scoring.
+- Authority: review-only; provider disabled, processor untouched, validation cohort uninspected, training/XML/production false, and every hold/prerequisite preserved.
+
+## 2026-08-27 — OCV-03 O3D2 POST2 V2 R6 pass / hotspot signed execution next
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3D2_POST2_V2_PASS_HOTSPOT_EXECUTION_NEXT_20260827.md`
+- SHA-256: `978E425C69BC99E4977EA1967F9ACEE0C7A202D1C538E9B58A4394D35D1BF6B0`
+- Engine: `work/PATTERNED_FIDUCIAL_INVENTORY/tools/NativeFrontsideWaferPoseOpenCvV2R6.py`, SHA-256 `90839F14CEEED7C2DFC6E1601195F6927C4631E508F9EB859E77A93745D3FB30`.
+- Concrete result: exact exit-zero run selected one BF/DF manufactured-notch candidate for each of POST2 Slots01/03/17; isolated post-inference errors were `0.13556734938731552`, `0.463432135660355`, and `0.08100140621877472` degrees; Slot01 chipout was not selected.
+- Output freeze: `FC3B23E22855C3473E2AE8DF8F971FCFB7BAA7EB0A608199E421D51CC99162E3`; scorer: `6D164CAD39ACE01206AB009BA69AE8D3DE9E9272FA44F0F4895D27463A35C518`.
+- Algorithm boundary: full perimeter and independent BF/DF edge fits; zero known-location input, angle prior/window, scorer reference, historical candidate filter, or tie-breaker. Historical labels were read only after frozen outputs.
+- Additional candidate: operator-reported `Lot_62627-193` Slot01 backside marked copy is scorer-only `PENDING_GATE`; clean leaf/hash/pair unresolved and family kept separate.
+- Exact next action: one fully gated signed no-retry JBOD D:-only execution on the ten O3C2-frozen hotspot pairs, then exact matching signed-response collection.
+- Authority: provider disabled, processor untouched, rotation false, validation cohort uninspected, review-only true, training/XML/production false, and every hold/prerequisite preserved.
+
 ## 2026-08-27 — OCV-03 O3T1 exact-length direct-transport capability gap
 
 - Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3T1_TRANSPORT_CAPABILITY_GAP_20260827.md`
@@ -869,3 +891,4 @@ task from changing which revision, UI, evidence, or next action is active.
 - O3I2 remains frozen/unexecuted; hotspot inventory and lot presence remain unknown; no image bytes or source hashes were read.
 - Exact next action: operator authority for one endpoint capability improvement or another already installed qualified metadata route. No Enter, shorter-command exploration, retry, helper install, or maintenance observation workaround.
 - Authority: review-only; provider disabled, processor untouched, training/XML/production false, and every hold/prerequisite preserved.
+- `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3D3R4_HOTSPOT_PACKAGE_READY_PUBLISH_NEXT_20260827.md` — authoritative OCV-03 package-ready checkpoint for the one-shot Slot16-Slot25 hotspot execution; request ZIP SHA-256 `C023B2AA688BDAA70C2CE9104D939592CEDE53FFAF11DF26960C248757483BC3`.

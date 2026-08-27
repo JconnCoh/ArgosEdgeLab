@@ -1,0 +1,52 @@
+{
+  "schema": "argos_clone_literal_remediation_gate_v1",
+  "checkedUtc": "2026-08-27T16:37:30.8188180Z",
+  "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "mode": "GATE",
+  "manifest": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3D3\\O3D3R2_CLONE_LITERAL_REMEDIATION_ENDPOINT_TEST.json",
+  "manifestSha256": "BD74C89C97555639FBBF785153986D5B06084F79BB89CF90A77A58D0542D41FB",
+  "pairCount": 2,
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_O2D23/Invoke-O2D23ScribeEndpoint.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3D3/Invoke-O3D3R2HotspotEndpoint.ps1",
+      "sourceSha256": "159BD82528E505DE69BDEEE4C3A3B29402BA9281939C57F6187587E9047D9740",
+      "generatedSha256": "C51820F543F2D88644EC86E6F6BCD3B32A3F0B7181BF98084EEDE19FA7E8F197",
+      "sourceRoots": [
+        "D:\\A2",
+        "D:\\AFCV1",
+        "D:\\KLARFExport",
+        "D:\\O2D5",
+        "X:"
+      ],
+      "generatedRoots": [
+        "D:\\A2",
+        "D:\\AFCV1",
+        "D:\\KLARFExport",
+        "F:"
+      ],
+      "ruleCount": 5
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2D23/Test-O2D23Endpoint.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3D3/Test-O3D3R2Endpoint.ps1",
+      "sourceSha256": "893A4BA914927495D70229E1D77210FE1E537E567994B0D1730654D6575FE8C4",
+      "generatedSha256": "E4AFBB6855F2FA2BE8CC812154212887139BEC36053AC40FE599CB1E74853AB7",
+      "sourceRoots": [
+        "C:\\O2D23T_3C97863D",
+        "X:",
+        "X:\\BF.png",
+        "X:\\DF.png"
+      ],
+      "generatedRoots": [
+        "C:\\A36",
+        "F:"
+      ],
+      "ruleCount": 4
+    }
+  ],
+  "violations": [],
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "evidenceWritten": true
+}

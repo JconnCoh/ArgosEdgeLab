@@ -1,0 +1,30 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v2",
+  "revision":"OCV03_O3C2_EXACT_SIGNED_RESPONSE_COLLECTION_20260827",
+  "createdUtc":"2026-08-27T15:42:00Z",
+  "state":"PASS_PREACTION_CONTRACT",
+  "actionType":"COLLECT_ONE_PINNED_MATCHING_JBOD_SIGNED_TERMINAL_RESPONSE",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies":[
+    {"path":"AGENTS.md","sha256":"760F9242A3632B9B3AD8655581FAE6CCCE5F46292E77BEDF53DE4EA8629822A5"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"55AF7B81210CE5BFBBA586415D58E5FE3CF474AA4376001A04D6B2977A8988B2"},
+    {"path":"work/ARGOS_CONTINUITY_STATE.json","sha256":"AC6C6897E580C4C03ABE0DCE7D9D6E5FB098878879F3784C932935F303469F3A"},
+    {"path":"work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3C2_SOURCE_FREEZE_PUBLISH_READY_R2_20260827.md","sha256":"6E2C67499D2716FFE5D3CBABE22C2DB83B7ADE317BF2ADB12CB36F15F51EFD2B"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3C2/O3C2_PUBLISH_R2_GATE.json","sha256":"0DCFFA7B5F8E305B2951F3587E2187F0E493B73AECEEB92C4778A9C775186E39"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3C2/Collect-O3C2Response.ps1","sha256":"FB1396CB39511308E9A2C2171A58CFA90547483C62FB83E43242748CBB784EAA"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3C2/Collect-O3C2Response.cmd","sha256":"A3561B5732E92E8C596642C3740155F697730A639EE411478EACCAC5E8923EC5"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3C2/O3C2_EXACT_RESPONSE_COLLECTION_INVOCATION.json","sha256":"5707A7878D8DF4C1BD017E0739848558E7810B926265F0E79890545C89777166"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3C2/O3C2_COLLECT_CLONE_LITERAL_REMEDIATION.json","sha256":"8ACA888FA46E55D873A12BDB9BBBAA373E54C78CE1BA1D3132941402AED7F392"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3C2/O3C2_COLLECT_CLONE_LITERAL_GATE.json","sha256":"38107A911258286987C55B01FE2185C5A68682E12BD4E4276F5206ACAAAD6891"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3C2/O3C2_RESPONSE_COLLECTION_PATH_GATE.json","sha256":"959DC832DC0ED44C21A6FBAA26F3A82E13A5CEECC799FB513EF335AECDFB7D05"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalResponse.ps1","sha256":"4AF5901A7B9DFFF5A4DAF128960173D67501ABF6FF87C586BA526643B1C1449C"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer","sha256":"5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B"}
+  ],
+  "controls":{"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence":{"path":"work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json","sha256":"17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":["work/OPENCV_EDGE_NOTCH_O3C2/Publish-O3C2.ps1","O3I1_DIRECT_LONG_CLIPBOARD","O3T1_DIRECT_LONG_CLIPBOARD","O3I2_UNEXECUTED"]},
+  "boundedAction":{"sourceResponseZipsMaximum":1,"requestId":"REQ_20260827T151200111Z_62629419C3F2","responseId":"R_21E61BDA3E47_20260827153734977_d7ab3f62","responseZipBytes":5590,"responseZipSha256":"42D02AE95A4E33F0CD0B6A3DF890CEE010CBE8B535BB2D0526E01C081B5F9874","requestRetryAuthorized":false,"matchingSignedTerminalResponseOnly":true,"endpointSourceHashingExpected":true,"imageReadByCollector":false,"sourceHashingByCollector":false,"sourceDeletion":false,"knownNotchLocationConsumed":false,"notchAnglePriorConsumed":false,"fixedAngularSearchWindowConsumed":false,"knownLocationAllowedOnlyForPostInferenceRegressionScoring":true,"taskActions":[],"processActions":[],"providerActivation":false},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

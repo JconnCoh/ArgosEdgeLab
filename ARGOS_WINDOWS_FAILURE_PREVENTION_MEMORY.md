@@ -8959,3 +8959,130 @@ than rerunning it.
   input, install a helper, or publish maintenance as observation. Continuing
   requires operator authority for one separately designed endpoint capability
   improvement or another already installed qualified metadata route.
+
+## 2026-08-27 — Embedded portable Python does not add a script's directory to `sys.path`
+
+- Failure signature: the frozen O3D2 V2 R2 entrypoint failed its first
+  non-mutating `--runtime-preflight` with `ModuleNotFoundError` while importing
+  its sibling core module by bare module name. No image was decoded and neither
+  planned output root existed afterward.
+- Cause: the portable Python 3.13 runtime is governed by `python313._pth`.
+  Its `.` entry resolves to the embedded executable directory, not the invoked
+  script's directory, so a sibling source file is not importable by name merely
+  because the entrypoint and core are adjacent.
+- Mandatory preflight: every wrapper that imports a project sibling under the
+  embedded runtime must load the exact sibling path with
+  `importlib.util.spec_from_file_location`, register the resulting module in
+  `sys.modules`, and execute the spec. Run the wrapper's own runtime preflight
+  before any image decode or output-root creation; adjacency is not import
+  evidence.
+- Recovery: withdraw the frozen failed wrapper/job namespace, preserve its
+  terminal preflight failure as non-reusable evidence, create a fresh wrapper
+  and job namespace with exact-path loading, re-freeze every hash and gate, and
+  rerun the full pre-action and non-mutating preflights before execution.
+
+## 2026-08-27 — Capture an original function before monkey-patching its module binding
+
+- Failure signature: the frozen O3D2 V2 R3 synthetic gate created its fresh
+  root, then failed before drawing or writing either case because its wrapper's
+  replacement `synthetic_parameters` called `core.synthetic_parameters` after
+  that binding already pointed to the replacement. Python terminated with
+  `RecursionError`; the synthetic root was empty and no real POST2 run began.
+- Cause: the wrapper did not capture the original callable before assigning the
+  replacement to the module. Looking the function up through the module from
+  inside the replacement resolves the replacement itself.
+- Mandatory preflight: when a frozen wrapper replaces a loaded module binding,
+  first store the original callable in a distinct immutable wrapper-level name;
+  the replacement may call only that captured name. Exercise the exact
+  replacement path in a fresh synthetic namespace before any real image decode.
+- Recovery: withdraw the wrapper, job, and empty output namespace, create a
+  fresh entrypoint/job/output namespace that captures the original callable,
+  re-run all hashes, isolation, path, zero-recurrence, runtime, job, and
+  synthetic gates, and do not reuse the failed empty root.
+
+## 2026-08-27 — Bind endpoint result-schema assertions to the producer constant, not a guessed suffix
+
+- Failure signature: the first draft O3D3 endpoint rehearsal completed the
+  exact R6 OpenCV run and wrote a one-row result, but the endpoint rejected
+  `argos_native_frontside_wafer_pose_opencv_v2` because its guard guessed
+  `argos_native_frontside_wafer_pose_opencv_v2_result`. The endpoint failed
+  closed and moved the work/output trees to the exact `.failed` quarantines;
+  no JBOD request was built, signed, published, or executed.
+- Cause: the endpoint guard inferred a result-schema suffix instead of reading
+  the producer's exact `RESULT_SCHEMA` constant or a frozen producer output.
+  The summary schema happens to carry a `_summary` suffix, but that naming
+  convention does not imply a `_result` suffix for the per-input schema.
+- Mandatory preflight: before freezing any endpoint that validates an installed
+  or packaged producer's output schema, mechanically compare every asserted
+  schema token with the exact producer constant and one frozen producer output.
+  Include that comparison in the Windows PowerShell 5.1 rehearsal gate; do not
+  derive one schema name from another.
+- Recovery: preserve the failed local rehearsal roots as diagnostic-only
+  evidence, correct the still-DRAFT endpoint assertion, freeze fresh endpoint
+  and harness hashes, and use a fresh short rehearsal namespace. Re-run clone,
+  harness, wrapper, path, zero-recurrence, success, and injected-failure gates
+  before signing. Never reuse `C:\A35` as the rehearsal root.
+
+## 2026-08-27 — Strip shell-result metadata before mechanically cloning source through an orchestration tool
+
+- Failure signature: the first generated O3D3R2 draft files began with three
+  non-source lines (`Exit code`, `Wall time`, and `Output`) captured from the
+  shell tool result. Windows PowerShell parsing rejected the endpoint before
+  any rehearsal execution; the JSON job and Python fixture generator were also
+  visibly prefixed. No new test root, signed package, or external mutation was
+  created.
+- Cause: the orchestration layer returned a structured command-result envelope
+  as text. The mechanical clone treated the entire envelope as file contents
+  instead of isolating the command's stdout payload.
+- Mandatory preflight: after every tool-mediated mechanical source clone,
+  inspect the first source lines and parse the exact generated file before
+  hashing or execution. Reject generated PowerShell unless its first logical
+  source line is the expected `#Requires`/attribute/comment, JSON unless it
+  begins with `{` or `[`, and Python unless it begins with the expected shebang
+  or source text. The clone-remediation gate does not replace this check.
+- Recovery: because the generated files remained DRAFT and were never parsed
+  successfully or executed, remove only the three disclosed envelope lines in
+  place, then rerun exact parser/JSON/Python compilation, hashes, clone,
+  harness, wrapper, path, and zero-recurrence gates before rehearsal.
+
+## 2026-08-27 — Compare fixture schema literals mechanically after namespace changes
+
+- Failure signature: the O3D3R2 rehearsal generated only its local synthetic
+  source fixture, then the endpoint's non-mutating live-contract branch rejected
+  `argos_o3d3r2_live_contract_fixture_v1` because the exact endpoint still
+  required `argos_o3d3_live_contract_fixture_v1`. No source hash, detector run,
+  signed package, JBOD request, or provider action occurred.
+- Cause: a namespace transformation changed the fixture JSON schema but did not
+  change the matching lowercase schema token embedded in the endpoint. Parser,
+  clone-root, and hash gates cannot detect two individually valid but unequal
+  contract literals.
+- Mandatory preflight: extract and compare the endpoint's exact accepted fixture
+  schema with the fixture JSON's `schema` before executing the harness. Apply
+  the same literal equality check to every required output schema/state token;
+  namespace search-and-replace is not contract evidence.
+- Recovery: preserve `C:\A36` as the R2 diagnostic-only partial test root,
+  withdraw the R2 endpoint/test namespace, and create a fresh R3 namespace whose
+  preflight mechanically proves fixture-schema equality before fixture creation.
+  Re-freeze and rerun every parser, clone, harness, wrapper, path, and zero-
+  recurrence gate before execution.
+
+## 2026-08-27 — Do not array-subexpress a generic List when constructing a Windows PowerShell 5.1 gate
+
+- Failure signature: the O3D3R3 rehearsal completed the exact synthetic R6
+  detector run and validated its result, then Windows PowerShell 5.1 threw
+  `Argument types do not match` before writing `RUN_GATE.json`. The work and
+  output were quarantined under `C:\A37\*.failed`; no signed package or JBOD
+  request existed.
+- Cause: the endpoint placed a `Collections.Generic.List[object]` into the gate
+  with `@($resultRows)`. Windows PowerShell 5.1's binder can throw this opaque
+  argument-type error while enumerating a generic list in an array
+  subexpression, even though `.Count` and individual items are valid.
+- Mandatory preflight: convert generic lists explicitly with `.ToArray()` before
+  assigning them to JSON/gate properties under Windows PowerShell 5.1. The exact
+  success rehearsal must reach gate serialization and read the written gate;
+  detector output alone is not endpoint-output evidence.
+- Recovery: preserve the R3 diagnostic roots, withdraw its endpoint/test
+  namespace, and create a fresh R4 namespace using `.ToArray()` for the bounded
+  result rows. Re-freeze exact hashes and rerun the complete parser, clone,
+  harness, wrapper, path, zero-recurrence, success, and injected-failure gates.
+  Never reuse `C:\A37`.

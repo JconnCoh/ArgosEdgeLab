@@ -7819,6 +7819,34 @@ terminal response. Gateway acceptance is not execution evidence. All prior
 holds, prerequisites, disabled-provider/protected-processor boundaries, and
 review-only/training-false/XML-false/production-false authority remain.
 
+## 2026-08-27 OCV-03 O3D2 POST2 R6 pass / hotspot signed execution next
+
+The full-perimeter R6 OpenCV detector completed the frozen POST2 development
+cohort with exit code zero. Slots 01, 03, and 17 each returned exactly one
+BF/DF-supported manufactured-notch candidate. The isolated post-inference
+scorer measured errors of `0.13556734938731552`, `0.463432135660355`, and
+`0.08100140621877472` degrees respectively against the frozen `0.8`-degree
+limits. Slot01's known chipout was not selected.
+
+Detector-output freeze SHA-256 is
+`FC3B23E22855C3473E2AE8DF8F971FCFB7BAA7EB0A608199E421D51CC99162E3`;
+post-inference score SHA-256 is
+`6D164CAD39ACE01206AB009BA69AE8D3DE9E9272FA44F0F4895D27463A35C518`.
+The detector had zero historical-angle literals and zero scorer-manifest
+references. It used no known location, angular prior/window, historical
+candidate filter, or historical tie-breaker. Rotation authority remains false.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3D2_POST2_V2_PASS_HOTSPOT_EXECUTION_NEXT_20260827.md`,
+SHA-256 `978E425C69BC99E4977EA1967F9ACEE0C7A202D1C538E9B58A4394D35D1BF6B0`.
+
+Exact next action: build and completely gate one signed no-retry JBOD D:-only
+request over the ten O3C2-frozen `Lot_62629-419_NotchBad_Hotspot` BF/DF pairs,
+then publish only after clean matching branch tips and all exact gates. The
+operator-reported marked `Lot_62627-193` Slot01 backside copy is recorded as a
+separate scorer-only future `PENDING_GATE`; its clean source and paired channel
+remain unresolved. All existing holds and review-only boundaries remain.
+
 ## 2026-08-27 OCV-03 O3C2 publisher R1 withdrawn / R2 required
 
 The exact Windows PowerShell 5.1 non-mutating R1 publisher preflight stopped
@@ -7836,6 +7864,26 @@ keyword whitespace, commit/push/fetch, require clean matching tips, publish
 the unchanged request once with no retry, and collect only its matching signed
 terminal response. All algorithm-integrity, provider/processor, authority,
 prerequisite, and hold boundaries remain unchanged.
+
+## 2026-08-27 OCV-03 O3C2 signed hotspot source freeze complete
+
+Request `REQ_20260827T151200111Z_62629419C3F2` was published once and its exact
+matching JBOD-signed response passed. The frozen result contains ten BF/DF
+pairs and 20 stable SHA-256 leaves over 9,507,597,480 source bytes. Its
+aggregate acquisition fingerprint is
+`EB45C81DB9A4A3B220B0D4161C2F280A7FB402A40296FB94110223692073BAA0`.
+Collection gate SHA-256 is
+`665C1DDDFD1E1FBDECED11C5C9F382D147E3AB1F7904BF191A5F9026E43063AD`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3C2_SIGNED_SOURCE_FREEZE_COMPLETE_V2_NEXT_20260827.md`,
+SHA-256 `F089AFD3EF5D041AF2629A8C008A44F6EDE2C76D5D207D81E2EC86C59166AA18`.
+
+Exact next action: develop and run OpenCV V2 first on the frozen POST2
+development/known-failure cohort. The detector must infer over the full
+perimeter with no known-location input; historical correct locations remain
+post-inference scorer labels only. Do not decode hotspot challenge images
+until POST2 V2 has concrete results. All holds and review-only boundaries remain.
 
 ## 2026-08-27 OCV-03 O3C2 source freeze publication ready
 
@@ -7865,3 +7913,6 @@ persistent `U:` with no retry, and collect only the matching signed terminal
 response. Gateway acceptance is not execution evidence. All existing holds,
 prerequisites, disabled-provider/protected-processor boundaries, and
 review-only/training-false/XML-false/production-false authority remain.
+## 2026-08-27 — OCV-03 O3D3R4 hotspot package ready (`PENDING_GATE`)
+
+The exact review-only Slot16-Slot25 hotspot request `REQ_20260827T165500111Z_62629419D3R4` is built and signed. ZIP SHA-256 is `C023B2AA688BDAA70C2CE9104D939592CEDE53FFAF11DF26960C248757483BC3`; endpoint rehearsal and exact-package preflight passed under Windows PowerShell 5.1. It has not been published. Commit/push and one-shot `U:` publication are next. Known notch locations and labels remain absent from the detector job; all holds and disabled-provider/healthy-processor boundaries remain unchanged.

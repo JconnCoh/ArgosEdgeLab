@@ -1,0 +1,54 @@
+{
+  "schema": "argos_ocv03_o3d2_post_inference_score_v2",
+  "state": "PASS_POST_INFERENCE_REGRESSION_SCORE",
+  "freezePath": "work/OPENCV_EDGE_NOTCH_O3D2/O3D2_R6_DETECTOR_OUTPUT_FREEZE.json",
+  "freezeSha256": "FC3B23E22855C3473E2AE8DF8F971FCFB7BAA7EB0A608199E421D51CC99162E3",
+  "labelsPath": "work/OPENCV_EDGE_NOTCH_O3D2/O3D2_POST2_SCORER_ONLY_LABELS.json",
+  "labelsSha256": "F8337BB2DDA12DBBA5769677C5A1A31E54CDD54659E0137F2EB9694EC2CCA668",
+  "rows": [
+    {
+      "identity": "62546-481_POST2_SLOT01",
+      "detectorState": "PASS_REVIEW_ONLY_MANUFACTURED_NOTCH_CANDIDATE",
+      "expectedNotchAngleDegreesScorerOnly": 89.9,
+      "selectedReviewAngleDegrees": 90.03556734938735,
+      "reviewAngleChannel": "DF",
+      "absoluteErrorDegrees": 0.13556734938731552,
+      "maximumAbsoluteAngleErrorDegrees": 0.8,
+      "selectedCandidatePassed": true,
+      "knownChipoutAngleDegreesScorerOnly": 85.50363964412367,
+      "chipoutSelectedAsNotch": false
+    },
+    {
+      "identity": "62546-481_POST2_SLOT03",
+      "detectorState": "PASS_REVIEW_ONLY_MANUFACTURED_NOTCH_CANDIDATE",
+      "expectedNotchAngleDegreesScorerOnly": 89.55,
+      "selectedReviewAngleDegrees": 90.01343213566035,
+      "reviewAngleChannel": "BF",
+      "absoluteErrorDegrees": 0.463432135660355,
+      "maximumAbsoluteAngleErrorDegrees": 0.8,
+      "selectedCandidatePassed": true
+    },
+    {
+      "identity": "62546-481_POST2_SLOT17",
+      "detectorState": "PASS_REVIEW_ONLY_MANUFACTURED_NOTCH_CANDIDATE",
+      "expectedNotchAngleDegreesScorerOnly": 89.6,
+      "selectedReviewAngleDegrees": 89.68100140621873,
+      "reviewAngleChannel": "BF",
+      "absoluteErrorDegrees": 0.08100140621877472,
+      "maximumAbsoluteAngleErrorDegrees": 0.8,
+      "selectedCandidatePassed": true
+    }
+  ],
+  "allMembersPassed": true,
+  "detectorOutputsFrozenBeforeLabelsRead": true,
+  "labelsProvidedToDetector": false,
+  "labelsUsedAsThresholdSource": false,
+  "labelsUsedAsCandidateFilter": false,
+  "labelsUsedAsTieBreaker": false,
+  "imageBytesDecodedByScorer": false,
+  "rotationAuthorityGranted": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

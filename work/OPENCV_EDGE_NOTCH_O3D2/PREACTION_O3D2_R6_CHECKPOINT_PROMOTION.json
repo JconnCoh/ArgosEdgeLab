@@ -1,0 +1,40 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3D2_R6_POST2_PASS_HOTSPOT_NEXT_CHECKPOINT_PROMOTION_20260827",
+  "createdUtc": "2026-08-27T16:19:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "METADATA_ONLY_OCV03_O3D2_R6_CHECKPOINT_PROMOTION",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"AGENTS.md","sha256":"760F9242A3632B9B3AD8655581FAE6CCCE5F46292E77BEDF53DE4EA8629822A5"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"4F5F76C92207A35AF586B3201C0ECF491A0640C55142B0FC6B18AE0F415516DC"},
+    {"path":"work/ARGOS_CONTINUITY_STATE.json","sha256":"ADEAE973955C0377323547D5200BBAE1CB81DB5AB295E507BFDA7237F25AD6D9"},
+    {"path":"work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3C2_SIGNED_SOURCE_FREEZE_COMPLETE_V2_NEXT_20260827.md","sha256":"F089AFD3EF5D041AF2629A8C008A44F6EDE2C76D5D207D81E2EC86C59166AA18"},
+    {"path":"work/PATTERNED_FIDUCIAL_INVENTORY/tools/NativeFrontsideWaferPoseOpenCvV2R6.py","sha256":"90839F14CEEED7C2DFC6E1601195F6927C4631E508F9EB859E77A93745D3FB30"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3D2/O3D2_POST2_V2_R6_JOB.json","sha256":"FF0615B4B6EBAF6B513CA6B8585611A1816AA4A3D9DF6D68F9BAEA2176FFE1F6"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3D2/O3D2_R6_DETECTOR_OUTPUT_FREEZE.json","sha256":"FC3B23E22855C3473E2AE8DF8F971FCFB7BAA7EB0A608199E421D51CC99162E3"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3D2/O3D2_R6_POST_INFERENCE_SCORE.json","sha256":"6D164CAD39ACE01206AB009BA69AE8D3DE9E9272FA44F0F4895D27463A35C518"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3D2/O3D2_ADDITIONAL_BACKSIDE_CHIPOUT_REGRESSION_CANDIDATE.json","sha256":"0EA6FA053388FEE8E572CD7D896BEA8A16B4337F6AA950E477733A8632002832"},
+    {"path":"work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3D2_POST2_V2_PASS_HOTSPOT_EXECUTION_NEXT_20260827.md","sha256":"978E425C69BC99E4977EA1967F9ACEE0C7A202D1C538E9B58A4394D35D1BF6B0"}
+  ],
+  "controls": {"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence": {"path":"work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json","sha256":"17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "legacyEvidenceException": {"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":[]},
+  "scope": {
+    "metadataOnly": true,
+    "checkpointPromotion": true,
+    "post2R6Passed": true,
+    "hotspotExecutionPerformed": false,
+    "knownNotchLocationConsumedByDetector": false,
+    "providerActivation": false,
+    "processorAction": false,
+    "sourceMutation": false,
+    "waferAction": false,
+    "holdClearance": false
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionRoutingEnabled": false
+}
