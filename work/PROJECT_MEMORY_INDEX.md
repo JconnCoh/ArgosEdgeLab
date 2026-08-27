@@ -776,3 +776,11 @@ task from changing which revision, UI, evidence, or next action is active.
 - Result: signature-verified Slot24 returned eight ambiguous candidates, image-first `FFFFFFFFFFF7`, proposed `FF7FFF7FF7F7`; identity remains unaccepted and every hold remains.
 - Exact next action: adjudicate Slot25 metadata-only early exposure in a file-backed workflow review before any Slot25 request; continue only if outcome blindness remains valid without tuning.
 - Authority: review-only; provider disabled, processor untouched, training/XML/production false, and all prerequisites/holds preserved.
+
+## 2026-08-27 — OCV-02 Slot25 metadata review cleared / O2D23 next
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D22_SLOT25_REVIEW_CLEARED_20260827.md`
+- SHA-256: `A779AA3302B79F3091797FF450B88FB6F9D9DF242FD727875B95C7C9149A509B`
+- Decision: Slot25 is `INDEPENDENT_VALIDATION_OUTCOME_BLIND_METADATA_DISCLOSED`; it is not wholly unseen, but image/pixel/candidate/provider-output/outcome blindness remains.
+- Exact next action: create fresh unchanged-V1R5 O2D23, run all gates, publish once with no retry, and collect only the exact matching signed response.
+- Authority: review-only; provider disabled, processor untouched, training/XML/production false, and all prerequisites/holds preserved.

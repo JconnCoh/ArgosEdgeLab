@@ -7545,3 +7545,21 @@ SHA-256 `D9EF3B5239D040A9986EC3425C0C688F07C87F63F4FD6EC4F3F191ABD50BADBB`.
 Exact next action: adjudicate Slot25 metadata-only early exposure in a
 file-backed workflow review before any Slot25 request. All authority limits,
 prerequisites, and holds remain unchanged.
+
+## 2026-08-27 Slot25 metadata review cleared / O2D23 next
+
+The file-backed review classifies Slot25 as
+`INDEPENDENT_VALIDATION_OUTCOME_BLIND_METADATA_DISCLOSED`. Metadata blindness
+was lost, but no image bytes, pixels, expected identity, candidates, provider
+output, or validation outcome were seen. Frozen scoring semantics cannot change
+in response to provenance metadata.
+
+Review JSON SHA-256 is
+`608162E8BCF966B80295038CA162FC846046B63ACB30F903C93CCFFE94268ECF`.
+Current checkpoint is
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D22_SLOT25_REVIEW_CLEARED_20260827.md`,
+SHA-256 `A779AA3302B79F3091797FF450B88FB6F9D9DF242FD727875B95C7C9149A509B`.
+
+One fresh unchanged-V1R5 O2D23 successor is authorized, with one publication,
+no retry, and exact signed-response-only collection. Slot25 must never be called
+wholly unseen. All authority limits, prerequisites, and holds remain unchanged.
