@@ -7522,3 +7522,26 @@ SHA-256 `068E1A8EA3361796C4A9A921CC7653EB44C7090BA2D829B5AD788A39C31F09EF`.
 
 Exact next action: monitor and collect only the exact matching signed response.
 All authority limits, prerequisites, and holds remain unchanged.
+
+## 2026-08-27 O2D22 signed Slot24 blind result frozen / Slot25 review next
+
+Exact response `R_C74B050C0F51_20260827034006298_4d459405` passed JBOD
+signature, request correlation, file-hash, maintenance-result, provider-result,
+and protected-invariant validation. Response ZIP SHA-256 is
+`D68EF3002168396B993A25C4BD37C4EDB7A54BC6811129936FBCA8A82E33BD42`;
+terminal-gate SHA-256 is
+`90ABE4E37A74EED80EC7D2F82296D1B101E2F655A2AB7F909D5D525F5B34D7F2`.
+
+With no tuning, Slot24 returned eight candidates, image-first
+`FFFFFFFFFFF7`, proposed `FF7FFF7FF7F7`, ambiguity and checksum confirmation
+required. Identity is not accepted. All reference/localization/notch and
+upstream identity holds remain; no task/process/provider/source/wafer/hold
+action or retry occurred.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D22_SLOT24_TERMINAL_20260827.md`,
+SHA-256 `D9EF3B5239D040A9986EC3425C0C688F07C87F63F4FD6EC4F3F191ABD50BADBB`.
+
+Exact next action: adjudicate Slot25 metadata-only early exposure in a
+file-backed workflow review before any Slot25 request. All authority limits,
+prerequisites, and holds remain unchanged.

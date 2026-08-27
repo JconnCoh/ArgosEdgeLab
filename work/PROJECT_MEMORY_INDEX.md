@@ -768,3 +768,11 @@ task from changing which revision, UI, evidence, or next action is active.
 - Publication: request `REQ_20260827T030200111Z_6C5C7F1FBF26` published exactly once by wrapper-gated R2; publish gate `8AB9A65640C06983A10AE88D81AFCA10EAC085809602970875FF638554FA0F30`.
 - Exact next action: collect only the matching signed terminal response; gateway acceptance is not execution evidence and no retry is allowed.
 - Authority: review-only; Slot25 metadata disclosure, provider/processor boundaries, prerequisites, and all holds remain.
+
+## 2026-08-27 — OCV-02 O2D22 signed Slot24 frozen / Slot25 review next
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D22_SLOT24_TERMINAL_20260827.md`
+- SHA-256: `D9EF3B5239D040A9986EC3425C0C688F07C87F63F4FD6EC4F3F191ABD50BADBB`
+- Result: signature-verified Slot24 returned eight ambiguous candidates, image-first `FFFFFFFFFFF7`, proposed `FF7FFF7FF7F7`; identity remains unaccepted and every hold remains.
+- Exact next action: adjudicate Slot25 metadata-only early exposure in a file-backed workflow review before any Slot25 request; continue only if outcome blindness remains valid without tuning.
+- Authority: review-only; provider disabled, processor untouched, training/XML/production false, and all prerequisites/holds preserved.

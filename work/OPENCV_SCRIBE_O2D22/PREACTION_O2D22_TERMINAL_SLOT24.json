@@ -1,0 +1,110 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_O2D22_TERMINAL_SLOT24_CHECKPOINT_20260827T034600Z",
+  "createdUtc": "2026-08-27T03:46:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "PROMOTE_EXACT_SIGNED_O2D22_SLOT24_TERMINAL_RESPONSE_AND_FREEZE_BLIND_VALIDATION_EVIDENCE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "F752C130507E5CFE49B9253F4FF9C33D2E4808980DAEE47477B421201F045891"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D22/O2D22_FINAL_PACKAGE_GATE.json",
+      "sha256": "12B1BB2C91E7663A7115231FCC0B2FEBC2112AA03D47551A1ECDD6E44BBF5EEC"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D22/O2D22_PUBLISH_R2_GATE.json",
+      "sha256": "8AB9A65640C06983A10AE88D81AFCA10EAC085809602970875FF638554FA0F30"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D22/O2D22_EXACT_RESPONSE_COLLECTION_GATE.json",
+      "sha256": "ECA68DCF0009A75614E0C6C9B6C2C722ED7BA8AF530C70AB622C047D55C99693"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D22/collected/_transport_archive/R_C74B050C0F51_20260827034006298_4d459405.ready.zip",
+      "sha256": "D68EF3002168396B993A25C4BD37C4EDB7A54BC6811129936FBCA8A82E33BD42"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D22/collected/R_C74B050C0F51_20260827034006298_4d459405.ready/PORTAL_RESPONSE_MANIFEST.json",
+      "sha256": "FE816B304AA01357BD7D5FBE30C7A3DA91AD8B0D088D5733B80BDBD13474F150"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D22/collected/R_C74B050C0F51_20260827034006298_4d459405.ready/PORTAL_RESPONSE_MANIFEST.sig",
+      "sha256": "1DE3F0380034071AEA89F166A9BB3E397EE507ED4894BCA60726E45D60012D64"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D22/collected/R_C74B050C0F51_20260827034006298_4d459405.ready/MAINTENANCE.stdout.txt",
+      "sha256": "69F457F06B3A1D10A1DE4B57FCF6D7291CA7B25DE576E253217A701B3AA7504E"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D22/collected/R_C74B050C0F51_20260827034006298_4d459405.ready/MAINTENANCE.stderr.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D22/collected/R_C74B050C0F51_20260827034006298_4d459405.ready/RESULT.json",
+      "sha256": "E68B5EFF84FF47A352B2810DAA6DF27F4AFE8E84C60FD87EC2CF9154F133E88B"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D22/O2D22_SLOT24_JOB.json",
+      "sha256": "227BF3F6409B3AB822E9D2091263F0BCA3A2B60F01C964816B0815B678F92EE5"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_V1R5/OCV02_V1R5_DEVELOPMENT_ENGINE_FREEZE.json",
+      "sha256": "CA55E6CD1765EA95FEB227FD5696FF1EF514153889782D294959320F1AEB331D"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "scope": {
+    "filesystem": "LOCAL_TERMINAL_GATE_AND_CONTINUITY_CHECKPOINT_ONLY",
+    "jbodExecution": false,
+    "requestId": "REQ_20260827T030200111Z_6C5C7F1FBF26",
+    "responseId": "R_C74B050C0F51_20260827034006298_4d459405",
+    "slot": "Slot24",
+    "slot25SourceMetadataPrematurelyExposed": true,
+    "slot25ImageBytesRead": false,
+    "slot25OutcomeSeen": false,
+    "slot25WorkflowReviewRequired": true,
+    "providerActivation": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      "work/OPENCV_SCRIBE_O2D22/Publish-O2D22.ps1",
+      "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Receive-SignedPortalResponses.ps1"
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
