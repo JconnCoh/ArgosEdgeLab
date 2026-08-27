@@ -7504,3 +7504,21 @@ SHA-256 `3FC2C0F25B587A5CB07E5EC09785B3C40CC8ADE83EB09DE719E4AEC9F7EB2881`.
 Exact next action: commit/push, run the exact R2 Windows PowerShell 5.1
 preflight, publish once with no retry, and collect only the matching signed
 response. All authority limits, prerequisites, and holds remain unchanged.
+
+## 2026-08-27 O2D22 exact request published / response pending
+
+Wrapper-gated `Publish-O2D22R2` published request
+`REQ_20260827T030200111Z_6C5C7F1FBF26` exactly once at
+`2026-08-27T03:38:25.0567101Z`. Publish-gate SHA-256 is
+`8AB9A65640C06983A10AE88D81AFCA10EAC085809602970875FF638554FA0F30`.
+The exact ZIP hash remains
+`AEB63CD89894E32708E7FB693DF8CF2024D9C3DC5FA4D20CEE0650D062007D13`.
+
+The request moved to `requests/processed`, proving gateway acceptance only.
+No signed terminal response has been observed. O2D22 must not be republished or
+retried. Current checkpoint is
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D22_SLOT24_PUBLISHED_PENDING_20260827.md`,
+SHA-256 `068E1A8EA3361796C4A9A921CC7653EB44C7090BA2D829B5AD788A39C31F09EF`.
+
+Exact next action: monitor and collect only the exact matching signed response.
+All authority limits, prerequisites, and holds remain unchanged.

@@ -760,3 +760,11 @@ task from changing which revision, UI, evidence, or next action is active.
 - Supersession: the first publisher/checkpoint are non-reusable and were never executed; the initial long R2 checkpoint DRAFT was rejected before launch and replaced with the short path.
 - Exact next action: commit/push, run exact `Publish-O2D22R2` Windows PowerShell 5.1 preflight, publish request `REQ_20260827T030200111Z_6C5C7F1FBF26` once through persistent `U:` with no retry, then collect only its matching signed response.
 - Authority: review-only; Slot25 metadata exposure remains disclosed, Slot25 bytes/outcome remain unseen, provider disabled, processor untouched, and every prerequisite/hold preserved.
+
+## 2026-08-27 — OCV-02 O2D22 Slot24 published / response pending
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D22_SLOT24_PUBLISHED_PENDING_20260827.md`
+- SHA-256: `068E1A8EA3361796C4A9A921CC7653EB44C7090BA2D829B5AD788A39C31F09EF`
+- Publication: request `REQ_20260827T030200111Z_6C5C7F1FBF26` published exactly once by wrapper-gated R2; publish gate `8AB9A65640C06983A10AE88D81AFCA10EAC085809602970875FF638554FA0F30`.
+- Exact next action: collect only the matching signed terminal response; gateway acceptance is not execution evidence and no retry is allowed.
+- Authority: review-only; Slot25 metadata disclosure, provider/processor boundaries, prerequisites, and all holds remain.
