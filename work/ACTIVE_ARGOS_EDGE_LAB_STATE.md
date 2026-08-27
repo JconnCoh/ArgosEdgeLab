@@ -1,8 +1,29 @@
-# Active ArgosEdgeLab state - O2D15 Slot19 raw-source request publication ready - 2026-08-26
+# Active ArgosEdgeLab state - O2D17 signed Slot19 frozen / Slot20 next - 2026-08-27
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-02 O2D17 signed Slot19 result frozen / Slot20 next — 2026-08-27
+
+O2D17 returned matching signed response
+`R_EE54DA2619E9_20260827003857253_5197c64e`. Response ZIP SHA-256 is
+`D2142C0220E81239E0DE4F944C1A7353D74B76988E03D11D3CE3770370FDDA91`;
+terminal-gate SHA-256 is
+`D2CA85670EED654572522AB45BF9CC5D90DBBC84B47D4BAB1AA1C7842B1945E2`.
+The verified JBOD execution read Slot19 despite its upstream notch hold and
+returned image-first `FFFFFFFFFFF7`, proposed `FFF77FFF7FF7`, seven candidates,
+and `SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID`. It remains unaccepted identity.
+
+Slot19 is frozen as development evidence. No task/process/provider/source/
+wafer/hold action occurred. Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D17_SIGNED_SLOT19_FROZEN_SLOT20_NEXT_CHECKPOINT_20260827.md`.
+Checkpoint SHA-256 is
+`6B4C8304CBAF4AD2A4872913B6B821481BD88814BD1D159F8B1EEC874799E114`.
+Exact next action is one fresh exact-source Slot20 successor, followed by
+Slot21. Slots22-25 remain unseen until the engine is frozen. All holds,
+review-only authority, the disabled provider, and protected processor remain
+unchanged.
 
 ## OCV-02 O2D15 Slot19 raw-source scribe request publication ready — 2026-08-26
 
