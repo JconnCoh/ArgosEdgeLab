@@ -7418,3 +7418,20 @@ SHA-256
 Exact next action: reveal Slot23 only and repeat the fresh, one-publication,
 no-retry blind workflow with the same frozen engine. Slots24-25 remain unseen.
 All authority limits and holds remain unchanged.
+
+## 2026-08-27 O2D21 Slot23 blind request publication ready
+
+Slot23 alone is bound to BF `8A9CFF90BE426453220BEAE550016CF80C61FF5D782D24F2EF4C717CFE8ECF6A`
+and DF `CA82C2B0068F5DF847BAEC33AE6BE884C5CF1D5E43A45E910CA8818B4C5F5118`.
+The frozen engine remains `F61F5954A77E6F730A2BF0D110A468535C4595D25DB21AFFE1573EF08B8139AB`;
+no tuning occurred and Slots24-25 remain unseen.
+
+The signed 21,394-byte request ZIP has SHA-256
+`3241153CAFCA52DDCF5DFA4314D2DDAE7B0458B5D0BAA36B4595698142191410`;
+final gate is `04DC48EB53A807E37DEEB27EA5591E48DDB698C1DE6F1B1B5E0B912FCFDABEEB`;
+route gate is `F6A2F513C5E382FAB01965E88A3D6247659E2F52A806F3B0CEA69729CEBB9D5D`.
+Current checkpoint SHA-256 is
+`8118D5C0CF095522EECF558F49B9670A235B04B180217A56CC5052F27B21BBCB`.
+
+Exact next action: commit/push, publish O2D21 exactly once, and collect only its
+matching signed response. No retry. All holds and authority limits remain.
