@@ -1,0 +1,26 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-27T21:27:10Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "OCV03_O3K1_CENTER_RAY_VISUAL_FAILURE_20260827",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "matchingSignedTerminal": {"path": "work/OPENCV_EDGE_NOTCH_O3K1/O3K1_RENDER_RESPONSE_COLLECTION_GATE.json", "sha256": "1CE3B6EC3AE63654DCA10B8113ED1DD04A9946EA40DF2A815226886967B7D4E4", "signatureVerified": true},
+  "o3l5Failure": {"path": "work/OPENCV_EDGE_NOTCH_O3L5/O3L5_SYNTHETIC_CENTER_SEMANTICS_FAILURE.json", "sha256": "876155064FB413B308E1F5F2F5EDAC549BD0A7677C4DED569257F3C590C69E19"},
+  "observations": [
+    {"field": "topologyPrimaryFound", "expected": true, "observed": true},
+    {"field": "mouthMidpointErrorPx", "expected": 0, "observed": 26.5},
+    {"field": "redCenterMustUseDeepestAxis", "expected": true, "observed": false}
+  ],
+  "supportedRemedy": "D",
+  "supportedAction": "Fresh topology localizer with the red center bound to the deepest indentation axis; mouth midpoint retained only as diagnostic geometry.",
+  "mutationsPerformed": false,
+  "sourceMutationPerformed": false,
+  "taskOrProcessActionPerformed": false,
+  "queueOrLedgerMutationPerformed": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

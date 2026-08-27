@@ -1,0 +1,27 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-27T21:38:00Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "OCV03_O3K1_CENTER_RAY_VISUAL_FAILURE_20260827",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "matchingSignedTerminal": {"path": "work/OPENCV_EDGE_NOTCH_O3K1/O3K1_RENDER_RESPONSE_COLLECTION_GATE.json", "sha256": "1CE3B6EC3AE63654DCA10B8113ED1DD04A9946EA40DF2A815226886967B7D4E4", "signatureVerified": true},
+  "o3l7Failure": {"path": "work/OPENCV_EDGE_NOTCH_O3L7/O3L7_SYNTHETIC_AMBIGUITY_FAILURE.json", "sha256": "5930B6E2280D543786B8AA8276A0DE4AF3A43E94FFA7CACBB55D1104DAF3438F"},
+  "observations": [
+    {"field": "qualifiedTopologyIndentationCount", "expected": 2, "observed": 2},
+    {"field": "classification", "expected": "AMBIGUOUS", "observed": "PRIMARY"},
+    {"field": "secondToFirstScoreRatio", "expectedToControlUniqueness": false, "observed": 0.642713100223291},
+    {"field": "allPrecedingSyntheticControlsPassed", "expected": true, "observed": true}
+  ],
+  "supportedRemedy": "D",
+  "supportedAction": "Fresh topology localizer that holds every count greater than one independently qualified physical indentation; candidate score ratio remains diagnostic only.",
+  "mutationsPerformed": false,
+  "sourceMutationPerformed": false,
+  "taskOrProcessActionPerformed": false,
+  "queueOrLedgerMutationPerformed": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

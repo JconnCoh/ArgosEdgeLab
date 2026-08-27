@@ -1,0 +1,50 @@
+{
+  "schema": "argos_ocv03_o3l6_synthetic_failure_v1",
+  "createdUtc": "2026-08-27T21:31:35Z",
+  "state": "WITHDRAWN",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "failedCaseId": "TOPOLOGY_NO_NOTCH_NEGATIVE",
+  "failureSignature": "No-notch periodic-die BF synthetic frame produced one primary topology indentation candidate.",
+  "candidate": {
+    "leftX": 465,
+    "rightX": 548,
+    "mouthCenterX": 506.5,
+    "tipX": 479,
+    "widthPx": 84,
+    "peakDepthPx": 14.90913200378418,
+    "edgeSupport": 0.2533811926841736,
+    "score": 34.6231341978352
+  },
+  "positiveControlEvidenceBeforeFailure": {
+    "bfAxisErrorPx": 9.0,
+    "dfAxisErrorPx": 10.0,
+    "contourHuggingOverlayAssertionPassed": true,
+    "fullHeightRedCenterRayAssertionPassed": true
+  },
+  "diagnosis": {
+    "negativeControlPeakDepthPx": 14.90913200378418,
+    "positiveControlMinimumPeakDepthPx": 63.18619155883789,
+    "twoIndentationExistingNoiseEstimateInflated": true,
+    "evidenceBackedSuccessorChange": "Use lower-side robust noise and a 20-pixel topology-indentation floor between the 14.91-pixel negative and 63.19-pixel positive control bounds."
+  },
+  "frozenInputs": {
+    "engine": {"path": "work/OPENCV_EDGE_NOTCH_O3L6/WaferTopologyAxisOpenCv.py", "sha256": "F3F6C2212FCEBAF6DEA4B05DC246F35959C39FFCBAE7801AC8C5C47E4E24FDBE"},
+    "test": {"path": "work/OPENCV_EDGE_NOTCH_O3L6/Test-WaferTopologyAxis.py", "sha256": "A2BCA8CA6A1A2B2B5FDCCBC7F745FDFBF7F0B0D170A5CB807ED05BE0C93EA64F"},
+    "job": {"path": "work/OPENCV_EDGE_NOTCH_O3L6/O3L6_JOB.json", "sha256": "F5B4BCB3FC4A5AEBBE583AF6EBF59116DCC0FFF9D250CFF429A0BABA4CD75AFB"},
+    "preaction": {"path": "work/OPENCV_EDGE_NOTCH_O3L6/PREACTION_O3L6_LOCALIZE_AND_RENDER.json"}
+  },
+  "syntheticGateCreated": false,
+  "realSourceImageRead": false,
+  "realOutputRootCreated": false,
+  "sourceMutationPerformed": false,
+  "detectorRerunPerformed": false,
+  "providerActivated": false,
+  "taskOrProcessActionPerformed": false,
+  "protectedProcessorTouched": false,
+  "holdCleared": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

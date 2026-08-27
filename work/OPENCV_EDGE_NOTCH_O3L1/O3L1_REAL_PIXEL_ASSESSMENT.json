@@ -1,0 +1,57 @@
+{
+  "schema": "argos_ocv03_o3l1_real_pixel_assessment_v1",
+  "createdUtc": "2026-08-27T21:08:00Z",
+  "state": "WITHDRAWN",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "incidentId": "OCV03_O3L1_REAL_PIXEL_TRANSFER_INCOMPLETE_20260827",
+  "manifest": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3L1/review/MANIFEST.json",
+    "sha256": "DFC05D556E06213CFEA53269CBCD1A00C9430E0D1BC792DC8099F2998ED57288"
+  },
+  "syntheticGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3L1/O3L1_SYNTHETIC_GATE.json",
+    "sha256": "ED33577A46F815920CBAAA8E039260CDF9E2C7236161E341DAF845FDCA8DD67B",
+    "state": "PASS_O3L1_NOTCH_LOCALIZER_SYNTHETIC_GATE"
+  },
+  "observed": {
+    "inputCount": 6,
+    "primaryLocalizationCount": 3,
+    "noLocalizationCount": 3,
+    "bfDfPairCount": 3,
+    "bfDfCenterAgreementCount": 0,
+    "bfDfMissingCount": 3,
+    "rightEdgePrimary": {
+      "inputId": "S17-C2-BF",
+      "centerX": 951.0,
+      "cropWidthPx": 1000
+    }
+  },
+  "assessment": {
+    "presentableToOperator": false,
+    "oldO3K1FailureResolved": false,
+    "cause": "The O3L1 score attenuated periodic texture but still allowed absolute internal gradient and intensity-step evidence to compete with the physical wafer/outside transition. It did not require a candidate boundary to transition into the column-local exterior appearance observed at the bottom of the crop.",
+    "successorRequirement": "Use the measured bottom exterior as the per-column appearance/noise reference, score a sustained change from wafer material above to exterior-like pixels below, then perform the same independent boundary and indentation measurement.",
+    "thresholdRelaxationAuthorized": false,
+    "freshNamespaceRequired": true,
+    "successorNamespace": "O3L2"
+  },
+  "lifecycle": {
+    "o3l1CodeReusable": false,
+    "o3l1JobReusable": false,
+    "o3l1OutputsReusable": false,
+    "failureEvidencePreserved": true
+  },
+  "protectedState": {
+    "sourceMutationPerformed": false,
+    "detectorRerunPerformed": false,
+    "providerActivated": false,
+    "taskOrProcessActionPerformed": false,
+    "protectedProcessorTouched": false,
+    "holdCleared": false
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

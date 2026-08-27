@@ -1,0 +1,29 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-27T21:32:00Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "OCV03_O3K1_CENTER_RAY_VISUAL_FAILURE_20260827",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "matchingSignedTerminal": {"path": "work/OPENCV_EDGE_NOTCH_O3K1/O3K1_RENDER_RESPONSE_COLLECTION_GATE.json", "sha256": "1CE3B6EC3AE63654DCA10B8113ED1DD04A9946EA40DF2A815226886967B7D4E4", "signatureVerified": true},
+  "o3l6Failure": {"path": "work/OPENCV_EDGE_NOTCH_O3L6/O3L6_SYNTHETIC_NEGATIVE_FAILURE.json", "sha256": "6FC1441824E9555DAAFF61B5C1DB1D3A2C65AC608296D20BB03A8B62B3AC5AC9"},
+  "observations": [
+    {"field": "bfPositiveAxisErrorPx", "expectedMaximum": 12.0, "observed": 9.0},
+    {"field": "dfPositiveAxisErrorPx", "expectedMaximum": 12.0, "observed": 10.0},
+    {"field": "negativeControlPeakDepthPx", "expectedMaximum": 0.0, "observed": 14.90913200378418},
+    {"field": "minimumPositiveControlPeakDepthPx", "expectedMinimum": 20.0, "observed": 63.18619155883789},
+    {"field": "contourHuggingOverlayPassed", "expected": true, "observed": true},
+    {"field": "fullHeightRedRayAbsent", "expected": true, "observed": true}
+  ],
+  "supportedRemedy": "D",
+  "supportedAction": "Fresh topology localizer using lower-side robust noise and an evidence-backed 20-pixel topology-depth floor, preserving the mouth-to-mouth red contour and deepest-axis marker.",
+  "mutationsPerformed": false,
+  "sourceMutationPerformed": false,
+  "taskOrProcessActionPerformed": false,
+  "queueOrLedgerMutationPerformed": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

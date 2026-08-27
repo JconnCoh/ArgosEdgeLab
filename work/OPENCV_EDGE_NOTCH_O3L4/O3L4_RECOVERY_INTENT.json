@@ -1,0 +1,38 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-27T21:18:10Z",
+  "incidentId": "OCV03_O3K1_CENTER_RAY_VISUAL_FAILURE_20260827",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 4,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {"path": "work/OPENCV_EDGE_NOTCH_O3L1/O3L1_O3K1_OPERATOR_VISUAL_FAILURE.json", "sha256": "42A817F1FBF50078163068D319FA114B27A18BFCA8902E547AA981C5C8FCE3E6", "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"},
+      {"path": "work/OPENCV_EDGE_NOTCH_O3L1/O3L1_REAL_PIXEL_ASSESSMENT.json", "sha256": "84A1130B99A2DC74633B227DFEF4CD4E43AE7A3924B561E34CF9A2F2E8F8EA06", "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"},
+      {"path": "work/OPENCV_EDGE_NOTCH_O3L2/O3L2_SYNTHETIC_FAILURE.json", "sha256": "9A730355D270188AFD74C47BE116AFD5EFD27A3991AC2DFC47ED9C211254A6F3", "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"},
+      {"path": "work/OPENCV_EDGE_NOTCH_O3L3/O3L3_SYNTHETIC_RUNTIME_FAILURE.json", "sha256": "1BB05F8611ADC10B65CDAA66DCE21939FD4D03D9D18B820708225431E248FB91", "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"}
+    ],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "LOCAL_REVIEW_PROVIDER", "jobClass": "LOCAL_OPENCV_REVIEW_ONLY", "installedCodeChange": false, "helperInstall": false,
+    "taskActions": [], "processActions": [], "queueMutation": false, "ledgerMutation": false, "sourceMutation": false, "imageRead": true, "waferAction": false,
+    "inheritsQualifiedEndpointGate": false, "endpointWorker": {"path": "", "sha256": ""}, "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {"path": "", "sha256": ""}, "qualifiedEndpointGate": {"path": "", "sha256": ""}, "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {"exactSources": [], "requestedCapabilities": [], "requestedFields": [], "decisionOptions": ["A", "B", "C", "D"], "mutationDecisionDeferred": false},
+  "mutation": {
+    "supportedRemedy": "D",
+    "supportingObservation": {"path": "work/OPENCV_EDGE_NOTCH_O3L4/O3L4_SUPPORTING_OBSERVATION.json", "sha256": "BEEE02FDC26B508AC5173EBB66961E4B7CB0A5A68C23D0AA38E20F1E1BA5CAE7"},
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "scope": {"freshNamespace": "work/OPENCV_EDGE_NOTCH_O3L4", "floatSafeSmoothing": true, "hardExteriorEligibility": true, "thresholdRelaxation": false, "failedRuntimeParentAllowed": false, "liveProviderActivationAllowed": false},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

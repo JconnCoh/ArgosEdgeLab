@@ -1,0 +1,38 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3L5_LOCALIZE_AND_RENDER_20260827T212500Z",
+  "createdUtc": "2026-08-27T21:25:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "LOCAL_OPENCV_WAFER_TOPOLOGY_NOTCH_LOCALIZATION_AND_RENDER",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path": "work/OPENCV_EDGE_NOTCH_O3L5/WaferTopologyNotchOpenCv.py", "sha256": "B18338079CC685AA147C8E9593AA19D312DCD396D960EE7AB9E2A202BC69ED4C"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3L5/Test-WaferTopologyNotch.py", "sha256": "CD1936E250A3215FF1C022C324EB86070FE41773D1DBD254395213E4083902F9"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3L5/O3L5_JOB.json", "sha256": "AFD546A69AD1E63E7EC855A038EDD39BFAA73D9B1A9A841ECFE7949F8BA3609F"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3L5/O3L5_RECOVERY_INTENT.json", "sha256": "A0E99EA5828C6C4FF52965B13EB7E0FAE76264E28D6D264A7D50DE4822163F3B"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3L5/O3L5_SUPPORTING_OBSERVATION.json", "sha256": "EA73B4FFBDFBD6C1E8A5281FD0FF7B8033E8617E7A3AB41F44861C5DC4C93857"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3L4/O3L4_SYNTHETIC_LOCALIZATION_FAILURE.json", "sha256": "AFF1337F107E28C36AC4A977CD0F57516A76242B0C233EC0151E22F3A6EBB2BD"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3K1/local_review/assets/RENDER_MANIFEST.json", "sha256": "26F784FD7C5B4C35D89083CCAFDE5CD499F9CD3533AFE8319AD4877B38C8186A"},
+    {"path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "92111588EB4EEE40D04D659B4CEFA08B825D6E423EE78482A3B1EDD890C071F3"},
+    {"path": "work/ARGOS_OPENCV_ALL_IMAGE_PROCESSING_MIGRATION.json", "sha256": "C1EF35002EB8A294221DB9FF2E15FC7CB4ED48F1299EFC7AD0774BF5B82194B4"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true, "dependencyHashesPinned": true, "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true, "pathAndWrapperGatesPassedWhenApplicable": true, "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true, "externalEvidenceJsonRehydrated": true, "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true, "optionalPropertiesPresenceTested": true, "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true, "expectedFailureCaptureSafe": true, "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true, "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {"path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json", "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11", "requiredCaseIds": ["ZERO", "ONE", "MANY"]},
+  "executionBoundary": {
+    "interpreter": "C:/ArgosPy313/Scripts/python.exe", "pythonVersion": "3.13.2", "opencvVersion": "5.0.0", "numpyVersion": "2.5.2",
+    "outputRoot": "work/OPENCV_EDGE_NOTCH_O3L5/review", "outputCreateNew": true, "topConnectedWaferTopologyRequired": true,
+    "internalHoleFillRequired": true, "thresholdRelaxation": false, "failedRuntimeParentUsed": false,
+    "detectorRerun": false, "sourceMutation": false, "liveProviderActivation": false, "taskOrProcessAction": false
+  },
+  "legacyEvidenceException": {"used": false, "newExecutionAuthorized": false, "futureReuseAllowed": false, "blockedArtifacts": []},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

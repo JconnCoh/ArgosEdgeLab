@@ -1,0 +1,32 @@
+{
+  "schema": "argos_ocv03_o3l3_synthetic_runtime_failure_v1",
+  "createdUtc": "2026-08-27T21:18:00Z",
+  "state": "WITHDRAWN",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "incidentId": "OCV03_O3L3_MEDIANBLUR_FLOAT_K9_RUNTIME_FAILURE_20260827",
+  "preflightState": "PASS_O3L3_HARD_EXTERIOR_PREFLIGHT",
+  "failure": "OpenCV medianBlur rejected a float32 one-row boundary with kernel size 9.",
+  "opencvAssertion": "src.depth() == CV_8U && (cn == 1 || cn == 3 || cn == 4)",
+  "syntheticAssertionsReached": false,
+  "syntheticGateCreated": false,
+  "realPixelRunPerformed": false,
+  "realPixelOutputRootCreated": false,
+  "assessment": {
+    "cause": "OpenCV 5.0 medianBlur supports float32 only for smaller kernels; the 9-pixel optimized path requires an 8-bit source.",
+    "prevention": "Use a float-safe OpenCV Gaussian filter for the 1-D boundary or pin an explicit lossless fixed-point conversion with range proof. Exercise the exact float smoothing path in the synthetic gate before any real input read.",
+    "algorithmThresholdChange": false,
+    "freshNamespaceRequired": true,
+    "successorNamespace": "O3L4"
+  },
+  "protectedState": {
+    "sourceImagesRead": false,
+    "sourceMutationPerformed": false,
+    "detectorRerunPerformed": false,
+    "providerActivated": false,
+    "taskOrProcessActionPerformed": false,
+    "protectedProcessorTouched": false,
+    "holdCleared": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

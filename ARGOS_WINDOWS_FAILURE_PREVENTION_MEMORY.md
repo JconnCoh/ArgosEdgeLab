@@ -9170,3 +9170,143 @@ than rerunning it.
 - Recovery: because the renderer and job remained DRAFT and no target bytes or
   output root were created, correct only the schema constant in place, rerun
   parser and exact-input preflight, and proceed only on its explicit PASS.
+
+## 2026-08-27 — Periodic-texture attenuation is not an exterior-boundary proof
+
+- Failure signature: O3L1 passed BF/DF periodic-die synthetic controls, but its
+  first bounded real-crop run localized only three of six views, confirmed zero
+  of three BF/DF pairs, and placed one primary center at x=951 in a 1000-pixel
+  crop. The run was review-only and changed no source, provider, processor,
+  task, process, hold, XML, training, or production state.
+- Cause: the boundary score blurred tangential texture and rewarded a texture
+  drop, but absolute gradient and intensity-step terms could still promote an
+  internal die street. The score did not require the pixels below a proposed
+  boundary to match the column-local exterior appearance measured at the
+  bottom of the tangent/radial crop.
+- Mandatory preflight: a notch crop localizer must measure a bounded exterior
+  reference from the known outward end of every crop, normalize column-local
+  intensity and texture distance against that exterior, and score a sustained
+  wafer-above/exterior-below transition. Synthetic controls must include strong
+  internal die streets, channel-specific contrast, no-notch exterior, and two
+  physical indentations. The first real-development run is not presentable
+  unless its exact BF/DF cardinalities and edge-adjacent primaries are assessed
+  before any gallery is built.
+- Recovery: preserve O3L1 as withdrawn diagnostic evidence, make no threshold
+  relaxation, and use a fresh namespace for an exterior-referenced successor.
+  Do not patch or present the O3L1 output root.
+
+## 2026-08-27 — Exterior similarity must be an edge-eligibility gate, not a weight
+
+- Failure signature: O3L2 passed its non-mutating preflight but its frozen
+  synthetic suite stopped on `EXTERIOR_NO_NOTCH_NEGATIVE` because a periodic
+  die-only crop still produced an indentation candidate. No synthetic gate,
+  real-crop output root, source read, or external mutation was created.
+- Cause: O3L2 measured column-local exterior appearance, but used likeness of
+  the pixels below a candidate only as a soft multiplier. A strong internal
+  transition could retain nonzero score and remain in the dynamic-programming
+  search even though the below-region did not actually match the exterior.
+- Mandatory preflight: candidate boundary rows must be ineligible unless a
+  sustained below-region falls inside a pinned normalized distance from the
+  exact column-local exterior model. Keep the no-notch negative, strong die
+  streets, BF/DF contrast variants, and two-indentation ambiguity control; do
+  not compensate by lowering notch depth or ambiguity thresholds.
+- Recovery: withdraw O3L2 and create a fresh namespace with the hard exterior
+  eligibility mask. Do not run O3L2 on real pixels or reuse its source as the
+  runtime parent.
+
+## 2026-08-27 — OpenCV medianBlur float support depends on kernel size
+
+- Failure signature: O3L3 passed non-mutating preflight, then stopped before
+  synthetic assertions because OpenCV 5.0 rejected `medianBlur` on a float32
+  one-row boundary with kernel size 9. The optimized path asserted an 8-bit
+  source. No gate, real-pixel read, or output root was created.
+- Cause: the implementation assumed float32 support at kernel 9 because small
+  median kernels accept float data. OpenCV's larger optimized median path has
+  a narrower source-depth contract.
+- Mandatory preflight: exercise the exact dtype, channel count, shape, and
+  kernel size of every OpenCV smoothing operation in the synthetic gate.
+  Prefer a float-safe Gaussian filter for subpixel boundary arrays; if a fixed-
+  point conversion is used, pin its range and round-trip error.
+- Recovery: withdraw O3L3, preserve the unchanged hard-exterior and notch
+  thresholds, and use a fresh namespace with float-safe smoothing before any
+  real crop is read.
+
+## 2026-08-27 — Per-column exterior transitions do not enforce wafer topology
+
+- Failure signature: O3L4 exercised its float-safe smoothing path but the BF
+  periodic-die single-notch synthetic control did not return one primary
+  notch. The test stopped before its gate and before any real-crop read.
+- Cause: hard exterior eligibility was applied per column, then missing rows
+  were interpolated. That approach still permits fragmented edge evidence and
+  ignores the stronger physical invariant that the wafer is one region
+  connected to the crop's inward/top side while die streets are interior holes.
+- Mandatory preflight: segment exterior-dissimilar pixels, retain only the
+  largest top-connected wafer component, close and fill bounded interior holes,
+  and extract the outward contour from that component. Synthetic controls must
+  keep stronger die streets than the physical edge, a no-notch negative, BF/DF
+  contrast variants, and a two-indentation ambiguity case.
+- Recovery: withdraw O3L4 and use a fresh topology-based namespace. Do not
+  lower notch depth, exterior separation, or ambiguity thresholds.
+
+## 2026-08-27 — A notch mouth midpoint is not necessarily its physical axis
+
+- Failure signature: O3L5's topology segmentation found the BF synthetic
+  indentation, but the red-center test missed the known axis by 26.5 pixels.
+  The center was defined as the midpoint of threshold-dependent left/right
+  mouth returns. No real crop was read and no output root was created.
+- Cause: asymmetric or differently recovered shoulders can move the mouth
+  midpoint even when the deepest topology-derived indentation point remains on
+  the physical notch axis. Width bounds and axis location are different
+  measurements.
+- Mandatory preflight: render the deepest indentation point/axis as the red
+  notch center, retain left/right mouth returns as separate yellow width
+  evidence, and record their midpoint only as diagnostic geometry. Synthetic
+  BF/DF cases must gate the red axis against the known deepest point.
+- Recovery: preserve O3L5 as withdrawn, change no segmentation or thresholds,
+  and use a fresh namespace for the corrected center semantics.
+
+## 2026-08-27 — Topology indentation noise must exclude the positive tail
+
+- Failure signature: O3L6 passed its non-mutating preflight, its BF/DF
+  deepest-axis positive checks, and its contour-hugging/no-full-height-ray
+  overlay assertions, but the no-notch BF control still produced one
+  14.91-pixel-deep candidate. The frozen suite stopped before its gate, before
+  any real image read, and before any output root was created.
+- Cause: notch noise was estimated from absolute residuals across the complete
+  contour. A repeated or broad physical indentation can inflate that estimate,
+  while an isolated positive die-pattern tail can still exceed the old
+  7-pixel floor. The exact controls bounded the false positive at 14.91 pixels
+  and both single-notch positives at 63.19 pixels or deeper.
+- Mandatory preflight: estimate contour noise from the non-positive/lower half
+  of the residual population so physical indentation tails cannot veto one
+  another. Pin an evidence-backed 20-pixel topology-indentation floor between
+  the exact negative and positive bounds. Require the BF/DF single-notch
+  controls, no-notch negative, two-indentation ambiguity hold, red
+  mouth-to-mouth contour coverage, and absence of any full-height red column
+  to pass in one frozen suite.
+- Recovery: withdraw O3L6 and use a fresh namespace. Change only the robust
+  noise population and the evidenced topology-depth floor; preserve topology
+  segmentation, all other thresholds, deepest-axis semantics, and the
+  contour-hugging overlay. Do not read real crops until the complete successor
+  synthetic gate passes.
+
+## 2026-08-27 — Two qualified topology indentations always require a hold
+
+- Failure signature: O3L7 passed both single-notch axis controls, the no-notch
+  negative, and its contour-hugging/no-full-height-ray assertions. Its final
+  synthetic frame then returned two independently qualified 60-pixel-plus
+  physical indentations but labeled the frame primary because the second score
+  was 0.643 of the first, below the predecessor 0.72 ratio. No gate, real image
+  read, or output root was created.
+- Cause: the score-ratio ambiguity rule treated weaker recovered support or
+  width as evidence that a second physical indentation could be discarded.
+  Once topology, depth, and width gates qualify two distinct indentations,
+  their relative rendering score is not a physical uniqueness proof.
+- Mandatory preflight: classify every frame with more than one independently
+  qualified topology indentation as ambiguous. Keep scores and their ratio as
+  diagnostics only. The complete frozen suite must prove one BF notch, one DF
+  notch, zero notches, and a two-indentation hold, plus the contour-hugging and
+  no-full-height-ray raster assertions.
+- Recovery: withdraw O3L7 and use a fresh namespace. Preserve segmentation,
+  evidence-bounded depth/noise gates, axis semantics, and overlay bytes; change
+  only multi-candidate decision semantics before any real crop read.

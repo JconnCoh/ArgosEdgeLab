@@ -1,0 +1,31 @@
+{
+  "schema": "argos_ocv03_o3l2_synthetic_failure_v1",
+  "createdUtc": "2026-08-27T21:13:00Z",
+  "state": "WITHDRAWN",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "incidentId": "OCV03_O3L2_NO_NOTCH_FALSE_LOCALIZATION_20260827",
+  "preflightState": "PASS_O3L2_EXTERIOR_NOTCH_PREFLIGHT",
+  "failedCaseId": "EXTERIOR_NO_NOTCH_NEGATIVE",
+  "failure": "No-notch exterior control falsely localized an indentation.",
+  "syntheticGateCreated": false,
+  "realPixelRunPerformed": false,
+  "realPixelOutputRootCreated": false,
+  "assessment": {
+    "cause": "O3L2 multiplied boundary evidence by exterior similarity but left that similarity as a soft score. A sufficiently strong internal periodic transition could remain eligible even when the pixels below it did not closely match the measured exterior.",
+    "prevention": "Make sustained exterior likeness below the candidate a hard boundary eligibility condition before dynamic tracing, while retaining the unchanged minimum notch depth and ambiguity controls.",
+    "thresholdRelaxationAuthorized": false,
+    "freshNamespaceRequired": true,
+    "successorNamespace": "O3L3"
+  },
+  "protectedState": {
+    "sourceImagesRead": false,
+    "sourceMutationPerformed": false,
+    "detectorRerunPerformed": false,
+    "providerActivated": false,
+    "taskOrProcessActionPerformed": false,
+    "protectedProcessorTouched": false,
+    "holdCleared": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

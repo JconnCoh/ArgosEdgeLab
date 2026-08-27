@@ -1,0 +1,470 @@
+{
+  "schema": "argos_ocv03_notch_localization_manifest_v1",
+  "revision": "FMOCV03_O3L1_20260827T210000Z",
+  "state": "PASS_O3L1_IMAGE_DERIVED_NOTCH_REVIEW_RENDERED",
+  "failedParentReviewId": "FMOCV03_O3K1_20260827T200000Z",
+  "failedParentReusable": false,
+  "imageInputCount": 6,
+  "inputHashesMatched": true,
+  "frozenJsonCandidateCenterConsumed": false,
+  "imageDerivedLocalizationPerformed": true,
+  "bfDfTransformsAveraged": false,
+  "algorithm": {
+    "revision": "O3L1_BOUNDARY_TEXTURE_DROP_V1",
+    "claheClipLimit": 2.5,
+    "claheTileSize": 8,
+    "tangentialBlurSigma": 11.0,
+    "radialBlurSigma": 2.0,
+    "regionOffsetPx": 14,
+    "maximumInwardExcursionPx": 180,
+    "maximumOutwardExcursionPx": 55,
+    "maximumBoundaryStepPx": 8,
+    "boundaryStepPenalty": 0.035,
+    "expectedPerimeterPenalty": 0.0015,
+    "diePatternSuppressionWidthPx": 13,
+    "minimumNotchDepthPx": 7.0,
+    "noiseSigmaThreshold": 4.5,
+    "candidateJoinWidthPx": 19,
+    "minimumNotchWidthPx": 18,
+    "ambiguityScoreRatio": 0.72,
+    "bfDfAgreementDegrees": 1.5
+  },
+  "results": [
+    {
+      "id": "S16-C1-BF",
+      "pairId": "S16-C1",
+      "channel": "BF",
+      "state": "IMAGE_DERIVED_NOTCH_PRIMARY_FOR_OPERATOR_REVIEW",
+      "source": {
+        "path": "s16c1_bf_clean.png",
+        "sha256": "D6FA45D15A59AF068F86F8628307127364AB77F7782892B1A915388DC93EDDCF"
+      },
+      "detectionInput": "CLEAN_CROP_PIXELS_ONLY",
+      "frozenJsonCandidateCenterConsumed": false,
+      "diePatternSuppression": "TANGENTIAL_BLUR_PLUS_WAFER_TO_OUTSIDE_TEXTURE_DROP_PLUS_1D_MORPHOLOGICAL_OPEN",
+      "boundary": {
+        "meanSupport": 0.5383093953132629,
+        "minimumY": 391.23748779296875,
+        "maximumY": 429.0000305175781,
+        "medianY": 420.9996032714844
+      },
+      "depthNoisePx": 3.463283913660049,
+      "detectionThresholdPx": 16.280546325421334,
+      "candidateCount": 1,
+      "candidates": [
+        {
+          "leftX": 414,
+          "rightX": 439,
+          "centerX": 426.5,
+          "tipX": 427,
+          "widthPx": 26,
+          "peakDepthPx": 25.532276153564453,
+          "mouthLevelPx": 7.622336541271209,
+          "boundarySupport": 0.80683434009552,
+          "shapeAreaPx2": 299.64361572265625,
+          "score": 120.02360008079059,
+          "centerAngleDegrees": 178.3198062910166,
+          "tipAngleDegrees": 178.32544818616896
+        }
+      ],
+      "primary": {
+        "leftX": 414,
+        "rightX": 439,
+        "centerX": 426.5,
+        "tipX": 427,
+        "widthPx": 26,
+        "peakDepthPx": 25.532276153564453,
+        "mouthLevelPx": 7.622336541271209,
+        "boundarySupport": 0.80683434009552,
+        "shapeAreaPx2": 299.64361572265625,
+        "score": 120.02360008079059,
+        "centerAngleDegrees": 178.3198062910166,
+        "tipAngleDegrees": 178.32544818616896
+      },
+      "assets": {
+        "clean": {
+          "path": "s16c1bf_clean.png",
+          "sha256": "D6FA45D15A59AF068F86F8628307127364AB77F7782892B1A915388DC93EDDCF"
+        },
+        "enhanced": {
+          "path": "s16c1bf_enhanced.png",
+          "sha256": "0E776394DE38481E1D451FBD8EAB6F7D2328438764B1B745BEA1ABB1E55ECBF1"
+        },
+        "overlay": {
+          "path": "s16c1bf_edge_overlay.png",
+          "sha256": "2BFC4837E32CFBFA50A0A330EF9F78CE5FFDFDCC01275B66AD1EDEF215B1D5A4"
+        },
+        "mask": {
+          "path": "s16c1bf_mask.png",
+          "sha256": "B5C21E7345956CE71F2BA34FA6AC594C808AFA1E6A698BEE74C9DF8D43D7DC3F"
+        }
+      },
+      "imageBytesEmittedToStdout": false
+    },
+    {
+      "id": "S16-C1-DF",
+      "pairId": "S16-C1",
+      "channel": "DF",
+      "state": "HOLD_NO_IMAGE_DERIVED_NOTCH",
+      "source": {
+        "path": "s16c1_df_clean.png",
+        "sha256": "854A509245239D3406D704CC328F3110BB44AD9C3858DF39A7A60068EF1771EF"
+      },
+      "detectionInput": "CLEAN_CROP_PIXELS_ONLY",
+      "frozenJsonCandidateCenterConsumed": false,
+      "diePatternSuppression": "TANGENTIAL_BLUR_PLUS_WAFER_TO_OUTSIDE_TEXTURE_DROP_PLUS_1D_MORPHOLOGICAL_OPEN",
+      "boundary": {
+        "meanSupport": 0.7603219151496887,
+        "minimumY": 391.0,
+        "maximumY": 419.0,
+        "medianY": 412.0
+      },
+      "depthNoisePx": 1.0147357459545134,
+      "detectionThresholdPx": 7.0,
+      "candidateCount": 0,
+      "candidates": [],
+      "primary": null,
+      "assets": {
+        "clean": {
+          "path": "s16c1df_clean.png",
+          "sha256": "854A509245239D3406D704CC328F3110BB44AD9C3858DF39A7A60068EF1771EF"
+        },
+        "enhanced": {
+          "path": "s16c1df_enhanced.png",
+          "sha256": "B76B52B120457FCACE4AA648EEE4D03DD258D56C1295609C8393CBB4A8E7B55E"
+        },
+        "overlay": {
+          "path": "s16c1df_edge_overlay.png",
+          "sha256": "79BCDB4223C8498326FFF25876A8D7252D28C2A8EFB6C62233CE3E5C3553C7FF"
+        },
+        "mask": {
+          "path": "s16c1df_mask.png",
+          "sha256": "0B5CE76E4E526479B7E5AF9CDA7EFBF507A62B40C19F28CA8864B5818498BC37"
+        }
+      },
+      "imageBytesEmittedToStdout": false
+    },
+    {
+      "id": "S17-C1-BF",
+      "pairId": "S17-C1",
+      "channel": "BF",
+      "state": "HOLD_NO_IMAGE_DERIVED_NOTCH",
+      "source": {
+        "path": "s17c1_bf_clean.png",
+        "sha256": "89B7F5031DE99A05719BFA089DF96C1D7C95941026F310C40B48236EFB1661EE"
+      },
+      "detectionInput": "CLEAN_CROP_PIXELS_ONLY",
+      "frozenJsonCandidateCenterConsumed": false,
+      "diePatternSuppression": "TANGENTIAL_BLUR_PLUS_WAFER_TO_OUTSIDE_TEXTURE_DROP_PLUS_1D_MORPHOLOGICAL_OPEN",
+      "boundary": {
+        "meanSupport": 0.7052282691001892,
+        "minimumY": 329.0000305175781,
+        "maximumY": 410.0,
+        "medianY": 356.51519775390625
+      },
+      "depthNoisePx": 17.7081478975296,
+      "detectionThresholdPx": 81.31088102254867,
+      "candidateCount": 0,
+      "candidates": [],
+      "primary": null,
+      "assets": {
+        "clean": {
+          "path": "s17c1bf_clean.png",
+          "sha256": "89B7F5031DE99A05719BFA089DF96C1D7C95941026F310C40B48236EFB1661EE"
+        },
+        "enhanced": {
+          "path": "s17c1bf_enhanced.png",
+          "sha256": "7F16EFD4F29B6A562824095B5651CA723132FA7B13FD1667E577938B0BDDF871"
+        },
+        "overlay": {
+          "path": "s17c1bf_edge_overlay.png",
+          "sha256": "4B833D0909B180991B6CD3801DD250B1485DEDFBCD4ABB2FC016800E19B6BF4A"
+        },
+        "mask": {
+          "path": "s17c1bf_mask.png",
+          "sha256": "5DC5DD6654BB0D28BC8FCE3CB4AC28F8D5DD978F9BD464DE4F3A1CB102FB0449"
+        }
+      },
+      "imageBytesEmittedToStdout": false
+    },
+    {
+      "id": "S17-C1-DF",
+      "pairId": "S17-C1",
+      "channel": "DF",
+      "state": "IMAGE_DERIVED_NOTCH_PRIMARY_FOR_OPERATOR_REVIEW",
+      "source": {
+        "path": "s17c1_df_clean.png",
+        "sha256": "DCD82C5E5CD9CF101084F16537DD4962FD79402493CB782FFBC56219A6869E99"
+      },
+      "detectionInput": "CLEAN_CROP_PIXELS_ONLY",
+      "frozenJsonCandidateCenterConsumed": false,
+      "diePatternSuppression": "TANGENTIAL_BLUR_PLUS_WAFER_TO_OUTSIDE_TEXTURE_DROP_PLUS_1D_MORPHOLOGICAL_OPEN",
+      "boundary": {
+        "meanSupport": 0.7618784308433533,
+        "minimumY": 294.0008850097656,
+        "maximumY": 419.0,
+        "medianY": 404.0
+      },
+      "depthNoisePx": 1.6769132738113401,
+      "detectionThresholdPx": 7.797308917999267,
+      "candidateCount": 1,
+      "candidates": [
+        {
+          "leftX": 459,
+          "rightX": 673,
+          "centerX": 566.0,
+          "tipX": 520,
+          "widthPx": 215,
+          "peakDepthPx": 116.12446594238281,
+          "mouthLevelPx": 20.902403869628905,
+          "boundarySupport": 0.824717104434967,
+          "shapeAreaPx2": 11085.109375,
+          "score": 1958.5168791954043,
+          "centerAngleDegrees": 89.56836449797133,
+          "tipAngleDegrees": 89.05346379827768
+        }
+      ],
+      "primary": {
+        "leftX": 459,
+        "rightX": 673,
+        "centerX": 566.0,
+        "tipX": 520,
+        "widthPx": 215,
+        "peakDepthPx": 116.12446594238281,
+        "mouthLevelPx": 20.902403869628905,
+        "boundarySupport": 0.824717104434967,
+        "shapeAreaPx2": 11085.109375,
+        "score": 1958.5168791954043,
+        "centerAngleDegrees": 89.56836449797133,
+        "tipAngleDegrees": 89.05346379827768
+      },
+      "assets": {
+        "clean": {
+          "path": "s17c1df_clean.png",
+          "sha256": "DCD82C5E5CD9CF101084F16537DD4962FD79402493CB782FFBC56219A6869E99"
+        },
+        "enhanced": {
+          "path": "s17c1df_enhanced.png",
+          "sha256": "257CF6C33E9A8AFCBC5326002E1CE2EF4B0D9DAF1873477338826A5A4A593696"
+        },
+        "overlay": {
+          "path": "s17c1df_edge_overlay.png",
+          "sha256": "D996F20B5DD006AAE3B111A39A5DD0D139A060A62066AA8C7E20B9975AF52A6D"
+        },
+        "mask": {
+          "path": "s17c1df_mask.png",
+          "sha256": "2C52FCE7554730CED67BDC40C6E9F36196BD0E1788E9A867DF734023EFB5133E"
+        }
+      },
+      "imageBytesEmittedToStdout": false
+    },
+    {
+      "id": "S17-C2-BF",
+      "pairId": "S17-C2",
+      "channel": "BF",
+      "state": "IMAGE_DERIVED_NOTCH_PRIMARY_FOR_OPERATOR_REVIEW",
+      "source": {
+        "path": "s17c2_bf_clean.png",
+        "sha256": "34C1FDA71BCCAA4B85F88D113FC8C3801FC20C0141D9138934852FA6CC563AF2"
+      },
+      "detectionInput": "CLEAN_CROP_PIXELS_ONLY",
+      "frozenJsonCandidateCenterConsumed": false,
+      "diePatternSuppression": "TANGENTIAL_BLUR_PLUS_WAFER_TO_OUTSIDE_TEXTURE_DROP_PLUS_1D_MORPHOLOGICAL_OPEN",
+      "boundary": {
+        "meanSupport": 0.7273819446563721,
+        "minimumY": 319.0,
+        "maximumY": 416.00006103515625,
+        "medianY": 406.0000305175781
+      },
+      "depthNoisePx": 0.9615268475532531,
+      "detectionThresholdPx": 7.0,
+      "candidateCount": 5,
+      "candidates": [
+        {
+          "leftX": 904,
+          "rightX": 998,
+          "centerX": 951.0,
+          "tipX": 928,
+          "widthPx": 95,
+          "peakDepthPx": 76.19625854492188,
+          "mouthLevelPx": 13.715326538085938,
+          "boundarySupport": 0.679140567779541,
+          "shapeAreaPx2": 5452.21044921875,
+          "score": 776.9873466473796,
+          "centerAngleDegrees": 85.66221486374828,
+          "tipAngleDegrees": 85.40580983799171
+        },
+        {
+          "leftX": 520,
+          "rightX": 586,
+          "centerX": 553.0,
+          "tipX": 539,
+          "widthPx": 67,
+          "peakDepthPx": 41.08100891113281,
+          "mouthLevelPx": 7.394581604003906,
+          "boundarySupport": 0.6989127397537231,
+          "shapeAreaPx2": 1820.3634033203125,
+          "score": 326.0363503763532,
+          "centerAngleDegrees": 81.16591749066872,
+          "tipAngleDegrees": 81.0092093904977
+        },
+        {
+          "leftX": 273,
+          "rightX": 300,
+          "centerX": 286.5,
+          "tipX": 288,
+          "widthPx": 28,
+          "peakDepthPx": 11.702997207641602,
+          "mouthLevelPx": 3.15,
+          "boundarySupport": 0.8728971481323242,
+          "shapeAreaPx2": 155.25070190429688,
+          "score": 61.81794832396832,
+          "centerAngleDegrees": 78.19257771821874,
+          "tipAngleDegrees": 78.2092701413955
+        },
+        {
+          "leftX": 372,
+          "rightX": 399,
+          "centerX": 385.5,
+          "tipX": 386,
+          "widthPx": 28,
+          "peakDepthPx": 12.042040824890137,
+          "mouthLevelPx": 3.15,
+          "boundarySupport": 0.8220395445823669,
+          "shapeAreaPx2": 177.0219268798828,
+          "score": 61.231859417952656,
+          "centerAngleDegrees": 79.29626987265105,
+          "tipAngleDegrees": 79.30184016470857
+        },
+        {
+          "leftX": 470,
+          "rightX": 494,
+          "centerX": 482.0,
+          "tipX": 482,
+          "widthPx": 25,
+          "peakDepthPx": 11.253482818603516,
+          "mouthLevelPx": 3.15,
+          "boundarySupport": 0.7149097323417664,
+          "shapeAreaPx2": 144.0856170654297,
+          "score": 47.43040280207401,
+          "centerAngleDegrees": 80.37176833403986,
+          "tipAngleDegrees": 80.37176833403986
+        }
+      ],
+      "primary": {
+        "leftX": 904,
+        "rightX": 998,
+        "centerX": 951.0,
+        "tipX": 928,
+        "widthPx": 95,
+        "peakDepthPx": 76.19625854492188,
+        "mouthLevelPx": 13.715326538085938,
+        "boundarySupport": 0.679140567779541,
+        "shapeAreaPx2": 5452.21044921875,
+        "score": 776.9873466473796,
+        "centerAngleDegrees": 85.66221486374828,
+        "tipAngleDegrees": 85.40580983799171
+      },
+      "assets": {
+        "clean": {
+          "path": "s17c2bf_clean.png",
+          "sha256": "34C1FDA71BCCAA4B85F88D113FC8C3801FC20C0141D9138934852FA6CC563AF2"
+        },
+        "enhanced": {
+          "path": "s17c2bf_enhanced.png",
+          "sha256": "C1EC48CD37FA5D256121C905DD92ECE3600074F5F5714FD2A912EB2BA98B2983"
+        },
+        "overlay": {
+          "path": "s17c2bf_edge_overlay.png",
+          "sha256": "CE2A30C0F0066C43E068C098014581C583036338D0D405FDE2A538E7E2CB85F5"
+        },
+        "mask": {
+          "path": "s17c2bf_mask.png",
+          "sha256": "063AD23AADFE707676F732DF7863F1B5E0F7B98BA565866CB555C2B77F649CC4"
+        }
+      },
+      "imageBytesEmittedToStdout": false
+    },
+    {
+      "id": "S17-C2-DF",
+      "pairId": "S17-C2",
+      "channel": "DF",
+      "state": "HOLD_NO_IMAGE_DERIVED_NOTCH",
+      "source": {
+        "path": "s17c2_df_clean.png",
+        "sha256": "86145587C033CA7BFC4EDB5356D0A1975C36F7E126BFCD7C9A37532EC9398874"
+      },
+      "detectionInput": "CLEAN_CROP_PIXELS_ONLY",
+      "frozenJsonCandidateCenterConsumed": false,
+      "diePatternSuppression": "TANGENTIAL_BLUR_PLUS_WAFER_TO_OUTSIDE_TEXTURE_DROP_PLUS_1D_MORPHOLOGICAL_OPEN",
+      "boundary": {
+        "meanSupport": 0.8060629963874817,
+        "minimumY": 395.0,
+        "maximumY": 418.0000305175781,
+        "medianY": 411.098876953125
+      },
+      "depthNoisePx": 0.7454954468250274,
+      "detectionThresholdPx": 7.0,
+      "candidateCount": 0,
+      "candidates": [],
+      "primary": null,
+      "assets": {
+        "clean": {
+          "path": "s17c2df_clean.png",
+          "sha256": "86145587C033CA7BFC4EDB5356D0A1975C36F7E126BFCD7C9A37532EC9398874"
+        },
+        "enhanced": {
+          "path": "s17c2df_enhanced.png",
+          "sha256": "E61932B162021A08BD49638C76B03B9C078F8F6803932EDE59FB752C3FD054F8"
+        },
+        "overlay": {
+          "path": "s17c2df_edge_overlay.png",
+          "sha256": "ABF8B3FA0058558BD95B141F00C08EBDD5B9AFE7A0BB0C1CC2A835E88D1D081A"
+        },
+        "mask": {
+          "path": "s17c2df_mask.png",
+          "sha256": "0ABD0327B6B490E0334687C63F723293C7A230EF671AC7310053407FBA1D80F0"
+        }
+      },
+      "imageBytesEmittedToStdout": false
+    }
+  ],
+  "pairs": [
+    {
+      "pairId": "S16-C1",
+      "bfInputId": "S16-C1-BF",
+      "dfInputId": "S16-C1-DF",
+      "state": "HOLD_BF_DF_NOTCH_MISSING",
+      "absoluteCenterDifferenceDegrees": null,
+      "transformAveragingPerformed": false
+    },
+    {
+      "pairId": "S17-C1",
+      "bfInputId": "S17-C1-BF",
+      "dfInputId": "S17-C1-DF",
+      "state": "HOLD_BF_DF_NOTCH_MISSING",
+      "absoluteCenterDifferenceDegrees": null,
+      "transformAveragingPerformed": false
+    },
+    {
+      "pairId": "S17-C2",
+      "bfInputId": "S17-C2-BF",
+      "dfInputId": "S17-C2-DF",
+      "state": "HOLD_BF_DF_NOTCH_MISSING",
+      "absoluteCenterDifferenceDegrees": null,
+      "transformAveragingPerformed": false
+    }
+  ],
+  "assetFileCount": 24,
+  "sourceMutationPerformed": false,
+  "detectorRerunPerformed": false,
+  "providerActivated": false,
+  "taskOrProcessActionPerformed": false,
+  "protectedProcessorTouched": false,
+  "holdCleared": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

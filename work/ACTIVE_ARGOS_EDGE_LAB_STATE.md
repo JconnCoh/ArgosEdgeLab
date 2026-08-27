@@ -8084,3 +8084,34 @@ Current checkpoint:
 SHA-256 `166E713E47D070887716A3C9D7D5950AB21C67488012CFEEB58486429CC7AD53`.
 All detector/tuning/provider/processor/task/process/source/wafer/hold and
 review-only/training/XML/production boundaries remain preserved.
+
+## 2026-08-27 — OCV-03 O3L8 topology notch-contour gallery ready / operator review pending
+
+The O3K1 full-height red center ray is withdrawn. O3L8 passed a complete
+OpenCV topology synthetic suite covering BF/DF single notches, a no-notch
+negative, a two-indentation ambiguity hold, mouth-to-mouth red contour
+coverage, deepest-axis placement, and absence of any full-height red ray.
+Synthetic gate SHA-256 is
+`20738F9DC560F7C015A8A41E370A73DA1375FCDE35235B1E2756F31E41E9C2F1`.
+
+The create-new six-crop review found one qualified BF/DF pair at S17-C1.
+Its independent channel axes differ by `0.04226364113790737` degrees. S16-C1
+remains held because BF has no candidate and DF contour coverage is incomplete;
+S17-C2 remains held with no qualified candidate in either channel. The review
+manifest SHA-256 is
+`4D7ACA7A1EC90393AB21A3B58D7CD763B1B499CCFA6128110D168374E039544F`.
+
+The local page `work/OPENCV_EDGE_NOTCH_O3L8/gallery.html` has SHA-256
+`0AFD7DDECDB351EB926748DDD4C5A7042043D73D54059200F76E04D3432ABDBC`.
+Every overlay is composited onto exact clean source pixels only inside its
+current mask; raster-provenance preflight verifies six clean bases, six current
+overlays, and six masks. Browser automation rejected the local file URL by
+policy, so the operator visual gate and raster release gate remain pending.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3L8_TOPOLOGY_NOTCH_CONTOUR_GALLERY_READY_OPERATOR_REVIEW_20260827.md`,
+SHA-256 `43A9373F39639FEF222F6AEF197C0F171D37DE42EBB19D24693AC8E41FBBE680`.
+No detector rerun, source mutation, live-provider activation, protected-
+processor action, task/process action, hold clearance, XML/training, or
+production routing occurred. Frozen POST2 R6 remains mandatory before any
+fresh hotspot successor.

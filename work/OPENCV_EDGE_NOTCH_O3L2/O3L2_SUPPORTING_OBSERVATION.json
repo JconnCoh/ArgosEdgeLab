@@ -1,0 +1,49 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-27T21:08:20Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "OCV03_O3K1_CENTER_RAY_VISUAL_FAILURE_20260827",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "matchingSignedTerminal": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3K1/O3K1_RENDER_RESPONSE_COLLECTION_GATE.json",
+    "sha256": "1CE3B6EC3AE63654DCA10B8113ED1DD04A9946EA40DF2A815226886967B7D4E4",
+    "signatureVerified": true
+  },
+  "operatorVisualFailure": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3L1/O3L1_O3K1_OPERATOR_VISUAL_FAILURE.json",
+    "sha256": "42A817F1FBF50078163068D319FA114B27A18BFCA8902E547AA981C5C8FCE3E6"
+  },
+  "o3l1RealPixelAssessment": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3L1/O3L1_REAL_PIXEL_ASSESSMENT.json",
+    "sha256": "84A1130B99A2DC74633B227DFEF4CD4E43AE7A3924B561E34CF9A2F2E8F8EA06"
+  },
+  "observations": [
+    {
+      "field": "o3l1PrimaryLocalizationCount",
+      "expected": 6,
+      "observed": 3
+    },
+    {
+      "field": "o3l1BfDfAgreementCount",
+      "expected": 3,
+      "observed": 0
+    },
+    {
+      "field": "o3l1BoundaryCandidateRequiresExteriorAppearanceBelow",
+      "expected": true,
+      "observed": false
+    }
+  ],
+  "supportedRemedy": "D",
+  "supportedAction": "Fresh exterior-referenced OpenCV boundary localizer with no threshold relaxation and no reuse of O3L1 output or runtime source.",
+  "mutationsPerformed": false,
+  "sourceMutationPerformed": false,
+  "taskOrProcessActionPerformed": false,
+  "queueOrLedgerMutationPerformed": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

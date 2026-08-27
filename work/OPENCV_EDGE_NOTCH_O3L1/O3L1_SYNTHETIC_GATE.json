@@ -1,0 +1,36 @@
+{
+  "schema": "argos_ocv03_o3l1_synthetic_gate_v1",
+  "state": "PASS_O3L1_NOTCH_LOCALIZER_SYNTHETIC_GATE",
+  "engine": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3L1\\OCV03_NotchLocalizeOpenCvV1.py",
+  "job": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3L1\\O3L1_JOB.json",
+  "caseCount": 4,
+  "cases": [
+    {
+      "caseId": "BF_PERIODIC_DIE_SINGLE_NOTCH",
+      "state": "PASS",
+      "centerErrorPx": 0.0
+    },
+    {
+      "caseId": "DF_PERIODIC_DIE_SINGLE_NOTCH",
+      "state": "PASS",
+      "centerErrorPx": 2.0
+    },
+    {
+      "caseId": "NO_NOTCH_PERIODIC_DIE_NEGATIVE",
+      "state": "PASS",
+      "candidateCount": 0
+    },
+    {
+      "caseId": "TWO_PHYSICAL_INDENTATIONS_AMBIGUOUS",
+      "state": "PASS",
+      "candidateCount": 2
+    }
+  ],
+  "periodicDiePatternSuppressionProved": true,
+  "bfDfIndependent": true,
+  "noNotchNegativeControlPassed": true,
+  "multiplePhysicalIndentationsHoldPassed": true,
+  "imageBytesEmittedToStdout": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

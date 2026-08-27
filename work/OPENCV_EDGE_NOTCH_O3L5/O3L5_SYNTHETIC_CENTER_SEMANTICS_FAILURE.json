@@ -1,0 +1,25 @@
+{
+  "schema": "argos_ocv03_o3l5_center_semantics_failure_v1",
+  "createdUtc": "2026-08-27T21:27:00Z",
+  "state": "WITHDRAWN",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "incidentId": "OCV03_O3L5_MOUTH_MIDPOINT_NOT_NOTCH_AXIS_20260827",
+  "preflightState": "PASS_O3L5_WAFER_TOPOLOGY_PREFLIGHT",
+  "failedCaseId": "BF_TOPOLOGY_PERIODIC_NOTCH",
+  "observedMouthMidpointErrorPx": 26.5,
+  "topologyPrimaryFound": true,
+  "syntheticGateCreated": false,
+  "realPixelRunPerformed": false,
+  "realPixelOutputRootCreated": false,
+  "assessment": {
+    "cause": "The topology localizer found the indentation, but defined the red center as the midpoint of two threshold-dependent mouth-return points. Asymmetric mouth shoulders displaced that midpoint from the physical notch axis/deepest tip.",
+    "prevention": "Use the deepest point of the topology-derived indentation profile as the red notch axis/center. Preserve the two mouth-return points only as yellow width bounds and retain the midpoint as a diagnostic field.",
+    "segmentationChange": false,
+    "thresholdChange": false,
+    "freshNamespaceRequired": true,
+    "successorNamespace": "O3L6"
+  },
+  "protectedState": {"sourceImagesRead": false, "sourceMutationPerformed": false, "detectorRerunPerformed": false, "providerActivated": false, "taskOrProcessActionPerformed": false, "protectedProcessorTouched": false, "holdCleared": false},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

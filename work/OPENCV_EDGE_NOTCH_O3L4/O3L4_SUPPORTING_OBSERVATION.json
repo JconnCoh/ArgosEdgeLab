@@ -1,0 +1,26 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-27T21:18:10Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "OCV03_O3K1_CENTER_RAY_VISUAL_FAILURE_20260827",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "matchingSignedTerminal": {"path": "work/OPENCV_EDGE_NOTCH_O3K1/O3K1_RENDER_RESPONSE_COLLECTION_GATE.json", "sha256": "1CE3B6EC3AE63654DCA10B8113ED1DD04A9946EA40DF2A815226886967B7D4E4", "signatureVerified": true},
+  "o3l3Failure": {"path": "work/OPENCV_EDGE_NOTCH_O3L3/O3L3_SYNTHETIC_RUNTIME_FAILURE.json", "sha256": "1BB05F8611ADC10B65CDAA66DCE21939FD4D03D9D18B820708225431E248FB91"},
+  "observations": [
+    {"field": "o3l3SyntheticAssertionsReached", "expected": true, "observed": false},
+    {"field": "o3l3FloatKernelSupported", "expected": true, "observed": false},
+    {"field": "o3l3RealPixelRunPerformed", "expected": false, "observed": false}
+  ],
+  "supportedRemedy": "D",
+  "supportedAction": "Fresh standalone hard-exterior localizer using float-safe Gaussian boundary smoothing with otherwise unchanged decision gates.",
+  "mutationsPerformed": false,
+  "sourceMutationPerformed": false,
+  "taskOrProcessActionPerformed": false,
+  "queueOrLedgerMutationPerformed": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

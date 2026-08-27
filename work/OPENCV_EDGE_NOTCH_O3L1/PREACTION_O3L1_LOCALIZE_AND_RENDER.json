@@ -1,0 +1,97 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3L1_LOCALIZE_AND_RENDER_20260827T210000Z",
+  "createdUtc": "2026-08-27T21:00:20.8139018Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "LOCAL_OPENCV_IMAGE_DERIVED_NOTCH_LOCALIZATION_AND_REVIEW_RENDER",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3L1/OCV03_NotchLocalizeOpenCvV1.py",
+      "sha256": "F118EF1CD63F738A3ABCFFBA9508D1C9FADFD3FCF139F0E7C945961EA89B1DAB"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3L1/Test-O3L1NotchLocalizer.py",
+      "sha256": "8A44C06CF8CFFAE3133E027C872EAD348F058DB8F04BA7A22C20C5D732A6BE0A"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3L1/O3L1_JOB.json",
+      "sha256": "5266808B6EBA4F0B18C9EA1E8077D651F5A626DC059CCD17F84E2A4CA92FD5FF"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3L1/O3L1_RECOVERY_INTENT.json",
+      "sha256": "FEF4AE63478776FE3B8DE6B9209DE8186F39FFDD24131EFA251B42568F9DA74D"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3L1/O3L1_SUPPORTING_OBSERVATION.json",
+      "sha256": "DA007E0C0D5F49184C52809CB5EDAFC3D44387F2DBBB3136737C32D74FA249E6"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3L1/O3L1_O3K1_OPERATOR_VISUAL_FAILURE.json",
+      "sha256": "42A817F1FBF50078163068D319FA114B27A18BFCA8902E547AA981C5C8FCE3E6"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3K1/local_review/assets/RENDER_MANIFEST.json",
+      "sha256": "26F784FD7C5B4C35D89083CCAFDE5CD499F9CD3533AFE8319AD4877B38C8186A"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3K1/O3K1_RENDER_RESPONSE_COLLECTION_GATE.json",
+      "sha256": "1CE3B6EC3AE63654DCA10B8113ED1DD04A9946EA40DF2A815226886967B7D4E4"
+    },
+    {
+      "path": "work/ARGOS_OPENCV_ALL_IMAGE_PROCESSING_MIGRATION.json",
+      "sha256": "C1EF35002EB8A294221DB9FF2E15FC7CB4ED48F1299EFC7AD0774BF5B82194B4"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "executionBoundary": {
+    "interpreter": "C:/ArgosPy313/Scripts/python.exe",
+    "pythonVersion": "3.13.2",
+    "opencvVersion": "5.0.0",
+    "numpyVersion": "2.5.2",
+    "outputRoot": "work/OPENCV_EDGE_NOTCH_O3L1/review",
+    "outputCreateNew": true,
+    "inputCount": 6,
+    "detectorRerun": false,
+    "sourceMutation": false,
+    "liveProviderActivation": false,
+    "taskOrProcessAction": false,
+    "protectedProcessorAction": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

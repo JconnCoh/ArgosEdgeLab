@@ -1,0 +1,54 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-27T21:00:20.8139018Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "OCV03_O3K1_CENTER_RAY_VISUAL_FAILURE_20260827",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "matchingSignedTerminal": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3K1/O3K1_RENDER_RESPONSE_COLLECTION_GATE.json",
+    "sha256": "1CE3B6EC3AE63654DCA10B8113ED1DD04A9946EA40DF2A815226886967B7D4E4",
+    "requestId": "REQ_20260827T201500111Z_62629419O3K1",
+    "responseId": "R_34948C162186_20260827202149504_651be723",
+    "signatureVerified": true
+  },
+  "operatorVisualEvidence": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3L1/O3L1_O3K1_OPERATOR_VISUAL_FAILURE.json",
+    "sha256": "42A817F1FBF50078163068D319FA114B27A18BFCA8902E547AA981C5C8FCE3E6"
+  },
+  "renderManifest": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3K1/local_review/assets/RENDER_MANIFEST.json",
+    "sha256": "26F784FD7C5B4C35D89083CCAFDE5CD499F9CD3533AFE8319AD4877B38C8186A"
+  },
+  "observations": [
+    {
+      "field": "redCenterRayCrossesOperatorVisibleNotchCenter",
+      "expected": true,
+      "observed": false,
+      "decision": "RENDERED_JSON_CENTER_IS_NOT_ACCEPTED_AS_VISIBLE_NOTCH_CENTER"
+    },
+    {
+      "field": "oldRendererPerformsIndependentPixelLocalization",
+      "expected": true,
+      "observed": false,
+      "decision": "SUCCESSOR_REQUIRES_IMAGE_DERIVED_LOCALIZATION"
+    },
+    {
+      "field": "oldGalleryReusable",
+      "expected": false,
+      "observed": false,
+      "decision": "PRESERVE_AS_WITHDRAWN_FAILURE_EVIDENCE_ONLY"
+    }
+  ],
+  "supportedRemedy": "D",
+  "supportedAction": "Create one fresh local review-only OpenCV implementation that suppresses periodic die response, enhances visibility, traces the physical wafer edge, and derives the notch center from pixels independently in BF and DF.",
+  "mutationsPerformed": false,
+  "sourceMutationPerformed": false,
+  "taskOrProcessActionPerformed": false,
+  "queueOrLedgerMutationPerformed": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

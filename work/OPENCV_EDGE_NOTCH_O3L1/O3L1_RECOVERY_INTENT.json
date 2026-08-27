@@ -1,0 +1,100 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-27T21:00:20.8139018Z",
+  "incidentId": "OCV03_O3K1_CENTER_RAY_VISUAL_FAILURE_20260827",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3L1/O3L1_O3K1_OPERATOR_VISUAL_FAILURE.json",
+        "sha256": "42A817F1FBF50078163068D319FA114B27A18BFCA8902E547AA981C5C8FCE3E6",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "",
+      "sha256": ""
+    },
+    "workflowReviewClearance": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "route": {
+    "type": "LOCAL_REVIEW_PROVIDER",
+    "jobClass": "LOCAL_OPENCV_REVIEW_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {
+      "path": "",
+      "sha256": ""
+    },
+    "installedConfigEvidence": {
+      "path": "",
+      "sha256": ""
+    },
+    "capabilityEvidence": {
+      "path": "",
+      "sha256": ""
+    },
+    "qualifiedEndpointGate": {
+      "path": "",
+      "sha256": ""
+    },
+    "qualifiedAdminGate": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "D",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3L1/O3L1_SUPPORTING_OBSERVATION.json",
+      "sha256": "DA007E0C0D5F49184C52809CB5EDAFC3D44387F2DBBB3136737C32D74FA249E6"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "scope": {
+    "freshNamespace": "work/OPENCV_EDGE_NOTCH_O3L1",
+    "inputRoot": "work/OPENCV_EDGE_NOTCH_O3K1/local_review/assets",
+    "inputImageCount": 6,
+    "inputKind": "HASH_PINNED_CLEAN_TANGENT_RADIAL_CROPS",
+    "imageProcessingOwner": "OPENCV_PROVIDER",
+    "powershellPixelProcessingAllowed": false,
+    "detectorThresholdChangeAllowed": false,
+    "liveProviderActivationAllowed": false,
+    "protectedProcessorActionAllowed": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

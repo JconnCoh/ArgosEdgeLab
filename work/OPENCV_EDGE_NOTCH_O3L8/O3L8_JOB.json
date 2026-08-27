@@ -1,0 +1,51 @@
+{
+  "schema": "argos_ocv03_wafer_topology_axis_job_v1",
+  "revision": "FMOCV03_O3L8_20260827T213900Z",
+  "sourceRootRelativeToJob": "../OPENCV_EDGE_NOTCH_O3K1/local_review/assets",
+  "localizationInput": "CLEAN_PIXELS_TOP_CONNECTED_WAFER_TOPOLOGY",
+  "inputs": [
+    {"id": "S16-C1-BF", "pairId": "S16-C1", "channel": "BF", "path": "s16c1_bf_clean.png", "sha256": "D6FA45D15A59AF068F86F8628307127364AB77F7782892B1A915388DC93EDDCF", "widthPx": 1000, "heightPx": 600, "inwardY": 420, "radiusPx": 5150.356029638875, "cropCenterAngleDegrees": 179.13628776081535},
+    {"id": "S16-C1-DF", "pairId": "S16-C1", "channel": "DF", "path": "s16c1_df_clean.png", "sha256": "854A509245239D3406D704CC328F3110BB44AD9C3858DF39A7A60068EF1771EF", "widthPx": 1000, "heightPx": 600, "inwardY": 420, "radiusPx": 5166.646712068096, "cropCenterAngleDegrees": 178.89693195700835},
+    {"id": "S17-C1-BF", "pairId": "S17-C1", "channel": "BF", "path": "s17c1_bf_clean.png", "sha256": "89B7F5031DE99A05719BFA089DF96C1D7C95941026F310C40B48236EFB1661EE", "widthPx": 1000, "heightPx": 600, "inwardY": 420, "radiusPx": 5160.445009261581, "cropCenterAngleDegrees": 88.09222454791899},
+    {"id": "S17-C1-DF", "pairId": "S17-C1", "channel": "DF", "path": "s17c1_df_clean.png", "sha256": "DCD82C5E5CD9CF101084F16537DD4962FD79402493CB782FFBC56219A6869E99", "widthPx": 1000, "heightPx": 600, "inwardY": 420, "radiusPx": 5171.565611467596, "cropCenterAngleDegrees": 88.82079696662512},
+    {"id": "S17-C2-BF", "pairId": "S17-C2", "channel": "BF", "path": "s17c2_bf_clean.png", "sha256": "34C1FDA71BCCAA4B85F88D113FC8C3801FC20C0141D9138934852FA6CC563AF2", "widthPx": 1000, "heightPx": 600, "inwardY": 420, "radiusPx": 5160.445009261581, "cropCenterAngleDegrees": 80.56671010142058},
+    {"id": "S17-C2-DF", "pairId": "S17-C2", "channel": "DF", "path": "s17c2_df_clean.png", "sha256": "86145587C033CA7BFC4EDB5356D0A1975C36F7E126BFCD7C9A37532EC9398874", "widthPx": 1000, "heightPx": 600, "inwardY": 420, "radiusPx": 5171.565611467596, "cropCenterAngleDegrees": 81.76692200974142}
+  ],
+  "pairs": [
+    {"pairId": "S16-C1", "bfInputId": "S16-C1-BF", "dfInputId": "S16-C1-DF"},
+    {"pairId": "S17-C1", "bfInputId": "S17-C1-BF", "dfInputId": "S17-C1-DF"},
+    {"pairId": "S17-C2", "bfInputId": "S17-C2-BF", "dfInputId": "S17-C2-DF"}
+  ],
+  "config": {
+    "revision": "O3L8_TOPOLOGY_AXIS_CONTOUR_OVERLAY_V1",
+    "clahe": 2.5,
+    "exteriorStartY": 510,
+    "exteriorEndY": 585,
+    "minimumExteriorScale": 3.0,
+    "waferDistanceThreshold": 2.5,
+    "dieStreetCloseKernelPx": 17,
+    "topContactRowsPx": 12,
+    "minimumTopContactPixels": 100,
+    "minimumWaferAreaPx": 150000,
+    "maximumInwardPx": 180,
+    "maximumOutwardPx": 55,
+    "supportSampleOffsetPx": 8,
+    "minimumContourCoverage": 0.95,
+    "maximumInterpolatedGapPx": 20,
+    "patternSuppressionWidthPx": 13,
+    "minimumNotchDepthPx": 20.0,
+    "noiseSigmaThreshold": 4.5,
+    "candidateJoinWidthPx": 19,
+    "minimumNotchWidthPx": 18,
+    "ambiguityScoreRatio": 0.72,
+    "bfDfAgreementDegrees": 1.5
+  },
+  "detectorRerun": false,
+  "sourceMutation": false,
+  "liveProviderActivation": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

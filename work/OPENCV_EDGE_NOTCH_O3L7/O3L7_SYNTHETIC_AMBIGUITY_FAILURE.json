@@ -1,0 +1,43 @@
+{
+  "schema": "argos_ocv03_o3l7_synthetic_ambiguity_failure_v1",
+  "createdUtc": "2026-08-27T21:37:43Z",
+  "state": "WITHDRAWN",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "failedCaseId": "TOPOLOGY_TWO_INDENTATIONS_HOLD",
+  "failureSignature": "Two qualified physical topology indentations were found, but the predecessor score-ratio rule classified the frame as one primary.",
+  "candidateCount": 2,
+  "candidates": [
+    {"leftX": 252, "rightX": 375, "tipX": 331, "widthPx": 124, "peakDepthPx": 63.21099090576172, "score": 170.732875246279},
+    {"leftX": 647, "rightX": 736, "tipX": 666, "widthPx": 90, "peakDepthPx": 60.151336669921875, "score": 109.73165713163706}
+  ],
+  "observedSecondToFirstScoreRatio": 0.642713100223291,
+  "predecessorAmbiguityScoreRatio": 0.72,
+  "diagnosis": "Both candidates passed independent topology, depth, and width qualification. Their score difference reflects recovered support/width, not proof that the second physical indentation is noise.",
+  "evidenceBackedSuccessorChange": "Any count greater than one independently qualified topology indentation is an ambiguity hold; score ratio remains diagnostic only.",
+  "controlsPassedBeforeFailure": {
+    "bfSingleNotchAxis": true,
+    "dfSingleNotchAxis": true,
+    "noNotchNegative": true,
+    "contourHuggingOverlay": true,
+    "fullHeightRedRayAbsent": true
+  },
+  "frozenInputs": {
+    "engine": {"path": "work/OPENCV_EDGE_NOTCH_O3L7/WaferTopologyAxisOpenCv.py", "sha256": "423DFEDFEC20FED7B52A92747592A4F4DC8408BB6AB31204948A9F80A584045A"},
+    "test": {"path": "work/OPENCV_EDGE_NOTCH_O3L7/Test-WaferTopologyAxis.py", "sha256": "0F0D89D0A2059982BF990C494D93F32D921249C1A59E7FEA65AFC612E1F011FF"},
+    "job": {"path": "work/OPENCV_EDGE_NOTCH_O3L7/O3L7_JOB.json", "sha256": "186D8ECC4A7E86E02F54765D2A535DF917B1478FB1101F9835A2AE80903CDDEC"}
+  },
+  "syntheticGateCreated": false,
+  "realSourceImageRead": false,
+  "realOutputRootCreated": false,
+  "sourceMutationPerformed": false,
+  "detectorRerunPerformed": false,
+  "providerActivated": false,
+  "taskOrProcessActionPerformed": false,
+  "protectedProcessorTouched": false,
+  "holdCleared": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

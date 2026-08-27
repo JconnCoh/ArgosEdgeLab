@@ -1,0 +1,26 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-27T21:22:10Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "OCV03_O3K1_CENTER_RAY_VISUAL_FAILURE_20260827",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "matchingSignedTerminal": {"path": "work/OPENCV_EDGE_NOTCH_O3K1/O3K1_RENDER_RESPONSE_COLLECTION_GATE.json", "sha256": "1CE3B6EC3AE63654DCA10B8113ED1DD04A9946EA40DF2A815226886967B7D4E4", "signatureVerified": true},
+  "o3l4Failure": {"path": "work/OPENCV_EDGE_NOTCH_O3L4/O3L4_SYNTHETIC_LOCALIZATION_FAILURE.json", "sha256": "AFF1337F107E28C36AC4A977CD0F57516A76242B0C233EC0151E22F3A6EBB2BD"},
+  "observations": [
+    {"field": "o3l4BfSingleNotchUnique", "expected": true, "observed": false},
+    {"field": "o3l4TopConnectedWaferTopologyUsed", "expected": true, "observed": false},
+    {"field": "o3l4RealPixelRunPerformed", "expected": false, "observed": false}
+  ],
+  "supportedRemedy": "D",
+  "supportedAction": "Fresh topology-based OpenCV segmentation of the top-connected wafer region, internal-hole closing/fill, and outer-contour indentation measurement.",
+  "mutationsPerformed": false,
+  "sourceMutationPerformed": false,
+  "taskOrProcessActionPerformed": false,
+  "queueOrLedgerMutationPerformed": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

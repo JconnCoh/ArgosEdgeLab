@@ -1,0 +1,384 @@
+{
+  "schema": "argos_ocv03_wafer_topology_axis_manifest_v1",
+  "revision": "FMOCV03_O3L8_20260827T213900Z",
+  "state": "PASS_O3L8_WAFER_TOPOLOGY_AXIS_REVIEW_RENDERED",
+  "topConnectedWaferTopologyUsed": true,
+  "internalDieHolesFilled": true,
+  "notchShapeOverlay": "CONTOUR_HUGGING_MOUTH_TO_MOUTH",
+  "fullHeightCenterLineRendered": false,
+  "noisePopulation": "LOWER_SIDE_RESIDUALS_AT_OR_BELOW_MEDIAN",
+  "minimumTopologyIndentationDepthPx": 20.0,
+  "multipleQualifiedIndentationDecision": "HOLD",
+  "ambiguityScoreRatioDecisionUse": false,
+  "redCenterDefinition": "DEEPEST_INDENTATION_AXIS",
+  "mouthMidpointDiagnosticOnly": true,
+  "jsonCandidateCenterConsumed": false,
+  "thresholdRelaxationPerformed": false,
+  "inputHashesMatched": true,
+  "results": [
+    {
+      "id": "S16-C1-BF",
+      "pairId": "S16-C1",
+      "channel": "BF",
+      "state": "HOLD_NO_TOPOLOGY_NOTCH",
+      "source": {
+        "path": "s16c1_bf_clean.png",
+        "sha256": "D6FA45D15A59AF068F86F8628307127364AB77F7782892B1A915388DC93EDDCF"
+      },
+      "jsonCandidateCenterConsumed": false,
+      "topologyEvidence": {
+        "topConnectedComponentCount": 1,
+        "selectedComponentAreaPx": 395141,
+        "dieStreetCloseKernelPx": 17,
+        "externalContourFillApplied": true,
+        "observedColumnCount": 1000,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "medianExteriorLevel": 7.489139080047607,
+        "medianExteriorMad": 0.5117766857147217
+      },
+      "depthNoisePx": 1.8734555886268616,
+      "detectionThresholdPx": 20.0,
+      "candidateCount": 0,
+      "candidates": [],
+      "primary": null,
+      "assets": {
+        "clean": {
+          "path": "s16c1bf_clean.png",
+          "sha256": "D6FA45D15A59AF068F86F8628307127364AB77F7782892B1A915388DC93EDDCF"
+        },
+        "enhanced": {
+          "path": "s16c1bf_enhanced.png",
+          "sha256": "0E776394DE38481E1D451FBD8EAB6F7D2328438764B1B745BEA1ABB1E55ECBF1"
+        },
+        "overlay": {
+          "path": "s16c1bf_contour_overlay.png",
+          "sha256": "E923456FF7C3341A2D5DB6063DAFE6B9D291CAFFB30CBD06FA50AD4E096F696D"
+        },
+        "mask": {
+          "path": "s16c1bf_mask.png",
+          "sha256": "FEDC82D9E3209CDE4807B649A66B85C0A2E7FF71B9B5529C8DAD2C4506CCA921"
+        }
+      },
+      "imageBytesEmittedToStdout": false
+    },
+    {
+      "id": "S16-C1-DF",
+      "pairId": "S16-C1",
+      "channel": "DF",
+      "state": "HOLD_WAFER_TOPOLOGY_CONTOUR_INCOMPLETE",
+      "source": {
+        "path": "s16c1_df_clean.png",
+        "sha256": "854A509245239D3406D704CC328F3110BB44AD9C3858DF39A7A60068EF1771EF"
+      },
+      "jsonCandidateCenterConsumed": false,
+      "topologyEvidence": {
+        "topConnectedComponentCount": 1,
+        "selectedComponentAreaPx": 300005,
+        "dieStreetCloseKernelPx": 17,
+        "externalContourFillApplied": true,
+        "observedColumnCount": 829,
+        "coverageFraction": 0.829,
+        "longestInterpolatedGapPx": 171,
+        "medianExteriorLevel": 2.999999523162842,
+        "medianExteriorMad": 4.76837158203125e-07
+      },
+      "depthNoisePx": 0.5,
+      "detectionThresholdPx": 20.0,
+      "candidateCount": 0,
+      "candidates": [],
+      "primary": null,
+      "assets": {
+        "clean": {
+          "path": "s16c1df_clean.png",
+          "sha256": "854A509245239D3406D704CC328F3110BB44AD9C3858DF39A7A60068EF1771EF"
+        },
+        "enhanced": {
+          "path": "s16c1df_enhanced.png",
+          "sha256": "B76B52B120457FCACE4AA648EEE4D03DD258D56C1295609C8393CBB4A8E7B55E"
+        },
+        "overlay": {
+          "path": "s16c1df_contour_overlay.png",
+          "sha256": "1184516980A6A0A780ED32DC11E330B12AE29700D8F7E9C2530D6CA98568837C"
+        },
+        "mask": {
+          "path": "s16c1df_mask.png",
+          "sha256": "E253DF697E551DB6A0415EC06365DC88CC827F719D229A7A55EF56190D91485C"
+        }
+      },
+      "imageBytesEmittedToStdout": false
+    },
+    {
+      "id": "S17-C1-BF",
+      "pairId": "S17-C1",
+      "channel": "BF",
+      "state": "WAFER_TOPOLOGY_NOTCH_FOR_OPERATOR_REVIEW",
+      "source": {
+        "path": "s17c1_bf_clean.png",
+        "sha256": "89B7F5031DE99A05719BFA089DF96C1D7C95941026F310C40B48236EFB1661EE"
+      },
+      "jsonCandidateCenterConsumed": false,
+      "topologyEvidence": {
+        "topConnectedComponentCount": 1,
+        "selectedComponentAreaPx": 398990,
+        "dieStreetCloseKernelPx": 17,
+        "externalContourFillApplied": true,
+        "observedColumnCount": 1000,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "medianExteriorLevel": 8.997258186340332,
+        "medianExteriorMad": 0.05523824691772461
+      },
+      "depthNoisePx": 0.5,
+      "detectionThresholdPx": 20.0,
+      "candidateCount": 1,
+      "candidates": [
+        {
+          "leftX": 549,
+          "rightX": 749,
+          "mouthCenterX": 649.0,
+          "tipX": 650,
+          "widthPx": 201,
+          "peakDepthPx": 76.52395629882812,
+          "mouthLevelPx": 13.774312133789062,
+          "edgeSupport": 0.9210981130599976,
+          "score": 999.3125379383764,
+          "mouthMidpointAngleDegrees": 89.77808722840422,
+          "axisCenterX": 650,
+          "axisCenterAngleDegrees": 89.78935735953898
+        }
+      ],
+      "primary": {
+        "leftX": 549,
+        "rightX": 749,
+        "mouthCenterX": 649.0,
+        "tipX": 650,
+        "widthPx": 201,
+        "peakDepthPx": 76.52395629882812,
+        "mouthLevelPx": 13.774312133789062,
+        "edgeSupport": 0.9210981130599976,
+        "score": 999.3125379383764,
+        "mouthMidpointAngleDegrees": 89.77808722840422,
+        "axisCenterX": 650,
+        "axisCenterAngleDegrees": 89.78935735953898
+      },
+      "assets": {
+        "clean": {
+          "path": "s17c1bf_clean.png",
+          "sha256": "89B7F5031DE99A05719BFA089DF96C1D7C95941026F310C40B48236EFB1661EE"
+        },
+        "enhanced": {
+          "path": "s17c1bf_enhanced.png",
+          "sha256": "7F16EFD4F29B6A562824095B5651CA723132FA7B13FD1667E577938B0BDDF871"
+        },
+        "overlay": {
+          "path": "s17c1bf_contour_overlay.png",
+          "sha256": "04FCFE47597F6573FCDC2903C2513B04978DC61470E1044FD15E159E1173285C"
+        },
+        "mask": {
+          "path": "s17c1bf_mask.png",
+          "sha256": "BB7507EBA456BE0A6F2624B109C99F06435B2C4387C21D08F0F7B33AB45A181E"
+        }
+      },
+      "imageBytesEmittedToStdout": false
+    },
+    {
+      "id": "S17-C1-DF",
+      "pairId": "S17-C1",
+      "channel": "DF",
+      "state": "WAFER_TOPOLOGY_NOTCH_FOR_OPERATOR_REVIEW",
+      "source": {
+        "path": "s17c1_df_clean.png",
+        "sha256": "DCD82C5E5CD9CF101084F16537DD4962FD79402493CB782FFBC56219A6869E99"
+      },
+      "jsonCandidateCenterConsumed": false,
+      "topologyEvidence": {
+        "topConnectedComponentCount": 1,
+        "selectedComponentAreaPx": 390487,
+        "dieStreetCloseKernelPx": 17,
+        "externalContourFillApplied": true,
+        "observedColumnCount": 1000,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "medianExteriorLevel": 2.999999523162842,
+        "medianExteriorMad": 4.76837158203125e-07
+      },
+      "depthNoisePx": 0.5,
+      "detectionThresholdPx": 20.0,
+      "candidateCount": 1,
+      "candidates": [
+        {
+          "leftX": 493,
+          "rightX": 678,
+          "mouthCenterX": 585.5,
+          "tipX": 582,
+          "widthPx": 186,
+          "peakDepthPx": 72.17041015625,
+          "mouthLevelPx": 12.990673828124999,
+          "edgeSupport": 0.9618686437606812,
+          "score": 946.7414960947067,
+          "mouthMidpointAngleDegrees": 89.78638386749105,
+          "axisCenterX": 582,
+          "axisCenterAngleDegrees": 89.74709371840108
+        }
+      ],
+      "primary": {
+        "leftX": 493,
+        "rightX": 678,
+        "mouthCenterX": 585.5,
+        "tipX": 582,
+        "widthPx": 186,
+        "peakDepthPx": 72.17041015625,
+        "mouthLevelPx": 12.990673828124999,
+        "edgeSupport": 0.9618686437606812,
+        "score": 946.7414960947067,
+        "mouthMidpointAngleDegrees": 89.78638386749105,
+        "axisCenterX": 582,
+        "axisCenterAngleDegrees": 89.74709371840108
+      },
+      "assets": {
+        "clean": {
+          "path": "s17c1df_clean.png",
+          "sha256": "DCD82C5E5CD9CF101084F16537DD4962FD79402493CB782FFBC56219A6869E99"
+        },
+        "enhanced": {
+          "path": "s17c1df_enhanced.png",
+          "sha256": "257CF6C33E9A8AFCBC5326002E1CE2EF4B0D9DAF1873477338826A5A4A593696"
+        },
+        "overlay": {
+          "path": "s17c1df_contour_overlay.png",
+          "sha256": "8BBC5BDDBE4E6AEF5EE33A56607DCD6526893847659251396381373D6C0776CF"
+        },
+        "mask": {
+          "path": "s17c1df_mask.png",
+          "sha256": "535D23CA983DFBCC9708BFA1D3E9A851D1389E87B017B9BCD91B663C3FF19C57"
+        }
+      },
+      "imageBytesEmittedToStdout": false
+    },
+    {
+      "id": "S17-C2-BF",
+      "pairId": "S17-C2",
+      "channel": "BF",
+      "state": "HOLD_NO_TOPOLOGY_NOTCH",
+      "source": {
+        "path": "s17c2_bf_clean.png",
+        "sha256": "34C1FDA71BCCAA4B85F88D113FC8C3801FC20C0141D9138934852FA6CC563AF2"
+      },
+      "jsonCandidateCenterConsumed": false,
+      "topologyEvidence": {
+        "topConnectedComponentCount": 1,
+        "selectedComponentAreaPx": 408884,
+        "dieStreetCloseKernelPx": 17,
+        "externalContourFillApplied": true,
+        "observedColumnCount": 1000,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "medianExteriorLevel": 8.849234580993652,
+        "medianExteriorMad": 0.1935124397277832
+      },
+      "depthNoisePx": 0.5,
+      "detectionThresholdPx": 20.0,
+      "candidateCount": 0,
+      "candidates": [],
+      "primary": null,
+      "assets": {
+        "clean": {
+          "path": "s17c2bf_clean.png",
+          "sha256": "34C1FDA71BCCAA4B85F88D113FC8C3801FC20C0141D9138934852FA6CC563AF2"
+        },
+        "enhanced": {
+          "path": "s17c2bf_enhanced.png",
+          "sha256": "C1EC48CD37FA5D256121C905DD92ECE3600074F5F5714FD2A912EB2BA98B2983"
+        },
+        "overlay": {
+          "path": "s17c2bf_contour_overlay.png",
+          "sha256": "D930A79ED65221FFF38FA5D23AE61140A215591B831FA3DF817BD44244DBBCC7"
+        },
+        "mask": {
+          "path": "s17c2bf_mask.png",
+          "sha256": "73A835C1E6CD615DC46D0C6985E034A1CD0DD7176C567A47FE7546F244D65E9E"
+        }
+      },
+      "imageBytesEmittedToStdout": false
+    },
+    {
+      "id": "S17-C2-DF",
+      "pairId": "S17-C2",
+      "channel": "DF",
+      "state": "HOLD_NO_TOPOLOGY_NOTCH",
+      "source": {
+        "path": "s17c2_df_clean.png",
+        "sha256": "86145587C033CA7BFC4EDB5356D0A1975C36F7E126BFCD7C9A37532EC9398874"
+      },
+      "jsonCandidateCenterConsumed": false,
+      "topologyEvidence": {
+        "topConnectedComponentCount": 1,
+        "selectedComponentAreaPx": 403545,
+        "dieStreetCloseKernelPx": 17,
+        "externalContourFillApplied": true,
+        "observedColumnCount": 1000,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "medianExteriorLevel": 2.999999523162842,
+        "medianExteriorMad": 4.76837158203125e-07
+      },
+      "depthNoisePx": 0.5,
+      "detectionThresholdPx": 20.0,
+      "candidateCount": 0,
+      "candidates": [],
+      "primary": null,
+      "assets": {
+        "clean": {
+          "path": "s17c2df_clean.png",
+          "sha256": "86145587C033CA7BFC4EDB5356D0A1975C36F7E126BFCD7C9A37532EC9398874"
+        },
+        "enhanced": {
+          "path": "s17c2df_enhanced.png",
+          "sha256": "E61932B162021A08BD49638C76B03B9C078F8F6803932EDE59FB752C3FD054F8"
+        },
+        "overlay": {
+          "path": "s17c2df_contour_overlay.png",
+          "sha256": "DB74FDEE9E7D36AAEE753D0DCCAE25CDD5B9E4096D491BD01818D6F06D8BB32A"
+        },
+        "mask": {
+          "path": "s17c2df_mask.png",
+          "sha256": "8B6C9C9234B3BC5A8784378ECB7F75BCA8A4ECB614896F3C61B4AA5D5BCA08DB"
+        }
+      },
+      "imageBytesEmittedToStdout": false
+    }
+  ],
+  "pairs": [
+    {
+      "pairId": "S16-C1",
+      "state": "HOLD_BF_DF_PRIMARY_MISSING",
+      "absoluteCenterDifferenceDegrees": null,
+      "transformAveragingPerformed": false
+    },
+    {
+      "pairId": "S17-C1",
+      "state": "BF_DF_TOPOLOGY_NOTCH_AGREEMENT_FOR_OPERATOR_REVIEW",
+      "absoluteCenterDifferenceDegrees": 0.04226364113790737,
+      "transformAveragingPerformed": false
+    },
+    {
+      "pairId": "S17-C2",
+      "state": "HOLD_BF_DF_PRIMARY_MISSING",
+      "absoluteCenterDifferenceDegrees": null,
+      "transformAveragingPerformed": false
+    }
+  ],
+  "assetFileCount": 24,
+  "sourceMutationPerformed": false,
+  "detectorRerunPerformed": false,
+  "providerActivated": false,
+  "taskOrProcessActionPerformed": false,
+  "protectedProcessorTouched": false,
+  "holdCleared": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

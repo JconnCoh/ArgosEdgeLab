@@ -1,0 +1,41 @@
+{
+  "schema": "argos_ocv03_o3l8_synthetic_gate_v1",
+  "state": "PASS_O3L8_WAFER_TOPOLOGY_AXIS_SYNTHETIC_GATE",
+  "caseCount": 4,
+  "cases": [
+    {
+      "caseId": "BF_TOPOLOGY_PERIODIC_NOTCH",
+      "state": "PASS",
+      "axisErrorPx": 9.0
+    },
+    {
+      "caseId": "DF_TOPOLOGY_PERIODIC_NOTCH",
+      "state": "PASS",
+      "axisErrorPx": 10.0
+    },
+    {
+      "caseId": "TOPOLOGY_NO_NOTCH_NEGATIVE",
+      "state": "PASS"
+    },
+    {
+      "caseId": "TOPOLOGY_TWO_INDENTATIONS_HOLD",
+      "state": "PASS",
+      "candidateCount": 2
+    }
+  ],
+  "topConnectedWaferComponentProved": true,
+  "deepestIndentationAxisPassed": true,
+  "notchContourHuggingOverlayPassed": true,
+  "fullHeightCenterLineAbsent": true,
+  "overlayEvidence": {
+    "redContourColumnCoverage": 1.0,
+    "maximumRedPixelsInOneColumn": 32
+  },
+  "periodicDieStreetsRejected": true,
+  "noNotchNegativePassed": true,
+  "twoIndentationHoldPassed": true,
+  "thresholdRelaxationPerformed": false,
+  "imageBytesEmittedToStdout": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

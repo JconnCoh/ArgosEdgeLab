@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>O3L8 Notch-Contour Validation — Actual Pixels</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080d13;--panel:#111a24;--line:#2a3c4d;--text:#edf5fc;--muted:#a9bac8;--blue:#68c9ff;--hold:#ffc266;--review:#71e59a}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,Segoe UI,sans-serif}
+    header{position:sticky;top:0;z-index:5;padding:15px 22px;background:rgba(8,13,19,.96);border-bottom:1px solid var(--line)}
+    h1{font-size:21px;margin:0 0 4px} header p{margin:0;color:var(--muted)}
+    .toolbar{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-top:12px} button{border:1px solid #45657e;border-radius:7px;background:#173148;color:var(--text);padding:7px 12px;cursor:pointer} button.active{background:#23567a;border-color:#72cfff}
+    main{max-width:1900px;margin:auto;padding:20px}.notice{border:1px solid #34526a;background:#112130;border-radius:9px;padding:12px 15px;margin-bottom:18px}
+    .focus{border-color:#327f52;background:#10291c}.legend{display:flex;flex-wrap:wrap;gap:15px;margin-top:8px;color:var(--muted)}.swatch{display:inline-block;width:13px;height:13px;border-radius:2px;margin-right:5px;vertical-align:-2px}.red{background:#f22}.yellow{background:#e8d500}.cyan{background:#00e5ef}.green{background:#00bd3b}
+    section{margin:25px 0 32px}h2{font-size:18px;margin:0 0 10px}.grid{display:grid;grid-template-columns:repeat(3,minmax(320px,1fr));gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}.card.review{border-color:#2f8b58}.card.hold{border-color:#7d5d2c}.head{display:flex;justify-content:space-between;gap:12px;padding:10px 12px;border-bottom:1px solid var(--line)}.status{font-size:12px;text-align:right}.review .status{color:var(--review)}.hold .status{color:var(--hold)}
+    .frame{aspect-ratio:5/3;background:#000;overflow:hidden}.frame img{width:100%;height:100%;object-fit:contain;display:block}.metrics{padding:8px 12px;color:var(--muted);font-size:13px}.links{display:flex;gap:12px;padding:0 12px 11px;font-size:13px}a{color:var(--blue)}code{color:#cbeaff}footer{padding:18px 20px 30px;border-top:1px solid var(--line);color:var(--muted)}
+    @media(max-width:1050px){.grid{grid-template-columns:1fr}header{position:static}}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Actual notch pixels — contour-hugging validation</h1>
+  <p>Review ID <strong id="review-id">FMOCV03_O3L8_20260827T213900Z</strong> · six exact 1000×600 clean crops · review-only</p>
+  <div class="toolbar"><button id="show-overlay" class="active" type="button">Contour overlay</button><button id="show-clean" type="button">Clean pixels</button><button id="blink" type="button">Blink</button><span id="manifest-status"></span></div>
+</header>
+<main>
+  <div class="notice focus"><strong>Your useful check is S17-C1 BF against S17-C1 DF.</strong> The red trace should sit on the visible notch boundary from one yellow mouth marker to the other, and the small red cross should be at the deepest point. Tell me if the trace floats into the die pattern, cuts inside/outside the notch, looks noisy, or shifts between BF and DF.</div>
+  <div class="notice">The colored geometry is current OpenCV evidence, not a truth label. <div class="legend"><span><i class="swatch red"></i>red: extracted notch contour + deepest-point marker</span><span><i class="swatch yellow"></i>yellow: mouth bounds</span><span><i class="swatch cyan"></i>cyan: remaining wafer edge</span><span><i class="swatch green"></i>green: unindented baseline</span></div></div>
+
+  <section><h2>Brightfield</h2><div class="grid">
+    <article class="card hold" data-clean="../OPENCV_EDGE_NOTCH_O3K1/local_review/assets/s16c1_bf_clean.png" data-overlay="presentation/s16c1bf_clean_contour_overlay.png"><div class="head"><strong>S16-C1 · BF</strong><span class="status">HOLD · no qualified notch</span></div><div class="frame"><img src="presentation/s16c1bf_clean_contour_overlay.png" alt="S16-C1 BF contour overlay"></div><div class="metrics">0 candidates · contour coverage 100%</div><div class="links"><a href="../OPENCV_EDGE_NOTCH_O3K1/local_review/assets/s16c1_bf_clean.png" target="_blank">Clean native</a><a href="presentation/s16c1bf_clean_contour_overlay.png" target="_blank">Overlay native</a></div></article>
+    <article class="card review" data-clean="../OPENCV_EDGE_NOTCH_O3K1/local_review/assets/s17c1_bf_clean.png" data-overlay="presentation/s17c1bf_clean_contour_overlay.png"><div class="head"><strong>S17-C1 · BF</strong><span class="status">REVIEW · one notch</span></div><div class="frame"><img src="presentation/s17c1bf_clean_contour_overlay.png" alt="S17-C1 BF contour-hugging notch overlay"></div><div class="metrics">red contour x=549–749 · deepest x=650 · depth 76.52 px</div><div class="links"><a href="../OPENCV_EDGE_NOTCH_O3K1/local_review/assets/s17c1_bf_clean.png" target="_blank">Clean native</a><a href="presentation/s17c1bf_clean_contour_overlay.png" target="_blank">Overlay native</a></div></article>
+    <article class="card hold" data-clean="../OPENCV_EDGE_NOTCH_O3K1/local_review/assets/s17c2_bf_clean.png" data-overlay="presentation/s17c2bf_clean_contour_overlay.png"><div class="head"><strong>S17-C2 · BF</strong><span class="status">HOLD · no qualified notch</span></div><div class="frame"><img src="presentation/s17c2bf_clean_contour_overlay.png" alt="S17-C2 BF contour overlay"></div><div class="metrics">0 candidates · contour coverage 100%</div><div class="links"><a href="../OPENCV_EDGE_NOTCH_O3K1/local_review/assets/s17c2_bf_clean.png" target="_blank">Clean native</a><a href="presentation/s17c2bf_clean_contour_overlay.png" target="_blank">Overlay native</a></div></article>
+  </div></section>
+
+  <section><h2>Darkfield</h2><div class="grid">
+    <article class="card hold" data-clean="../OPENCV_EDGE_NOTCH_O3K1/local_review/assets/s16c1_df_clean.png" data-overlay="presentation/s16c1df_clean_contour_overlay.png"><div class="head"><strong>S16-C1 · DF</strong><span class="status">HOLD · contour incomplete</span></div><div class="frame"><img src="presentation/s16c1df_clean_contour_overlay.png" alt="S16-C1 DF incomplete contour overlay"></div><div class="metrics">0 candidates · contour coverage 82.9% · 171 px gap</div><div class="links"><a href="../OPENCV_EDGE_NOTCH_O3K1/local_review/assets/s16c1_df_clean.png" target="_blank">Clean native</a><a href="presentation/s16c1df_clean_contour_overlay.png" target="_blank">Overlay native</a></div></article>
+    <article class="card review" data-clean="../OPENCV_EDGE_NOTCH_O3K1/local_review/assets/s17c1_df_clean.png" data-overlay="presentation/s17c1df_clean_contour_overlay.png"><div class="head"><strong>S17-C1 · DF</strong><span class="status">REVIEW · one notch</span></div><div class="frame"><img src="presentation/s17c1df_clean_contour_overlay.png" alt="S17-C1 DF contour-hugging notch overlay"></div><div class="metrics">red contour x=493–678 · deepest x=582 · depth 72.17 px · BF/DF angle gap 0.0423°</div><div class="links"><a href="../OPENCV_EDGE_NOTCH_O3K1/local_review/assets/s17c1_df_clean.png" target="_blank">Clean native</a><a href="presentation/s17c1df_clean_contour_overlay.png" target="_blank">Overlay native</a></div></article>
+    <article class="card hold" data-clean="../OPENCV_EDGE_NOTCH_O3K1/local_review/assets/s17c2_df_clean.png" data-overlay="presentation/s17c2df_clean_contour_overlay.png"><div class="head"><strong>S17-C2 · DF</strong><span class="status">HOLD · no qualified notch</span></div><div class="frame"><img src="presentation/s17c2df_clean_contour_overlay.png" alt="S17-C2 DF contour overlay"></div><div class="metrics">0 candidates · contour coverage 100%</div><div class="links"><a href="../OPENCV_EDGE_NOTCH_O3K1/local_review/assets/s17c2_df_clean.png" target="_blank">Clean native</a><a href="presentation/s17c2df_clean_contour_overlay.png" target="_blank">Overlay native</a></div></article>
+  </div></section>
+  <div class="notice">A missing red contour is intentionally a hold, not an inferred “no notch.” No detector threshold, live provider, processor, source, or production state was changed.</div>
+</main>
+<footer>Manifest: <code>presentation/MANIFEST.json</code> · raster provenance pending your visual gate · old O3K1 center-ray gallery is withdrawn.</footer>
+<script>
+  const cards=[...document.querySelectorAll('.card')], clean=document.getElementById('show-clean'), overlay=document.getElementById('show-overlay'); let timer=null, showing='overlay';
+  function show(which){showing=which;cards.forEach(c=>{c.querySelector('img').src=c.dataset[which]});clean.classList.toggle('active',which==='clean');overlay.classList.toggle('active',which==='overlay')}
+  clean.onclick=()=>{if(timer){clearInterval(timer);timer=null}show('clean')};overlay.onclick=()=>{if(timer){clearInterval(timer);timer=null}show('overlay')};document.getElementById('blink').onclick=()=>{if(timer){clearInterval(timer);timer=null;show('overlay');return}timer=setInterval(()=>show(showing==='overlay'?'clean':'overlay'),650)};
+  const requested=new URLSearchParams(location.search).get('manifest'),status=document.getElementById('manifest-status');if(requested==='presentation/MANIFEST.json'){status.textContent='✓ exact O3L8 manifest selected';status.style.color='#71e59a'}else{status.textContent='⚠ use ?manifest=presentation%2FMANIFEST.json';status.style.color='#ffc266'}
+</script>
+</body>
+</html>

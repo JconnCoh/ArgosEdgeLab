@@ -1,0 +1,23 @@
+{
+  "schema": "argos_ocv03_o3l4_synthetic_localization_failure_v1",
+  "createdUtc": "2026-08-27T21:22:00Z",
+  "state": "WITHDRAWN",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "incidentId": "OCV03_O3L4_BF_SYNTHETIC_NOT_UNIQUE_20260827",
+  "preflightState": "PASS_O3L4_NOTCH_EXTERIOR_PREFLIGHT",
+  "failedCaseId": "BF_HARD_EXTERIOR_NOTCH",
+  "failure": "The BF periodic-die single-notch control did not return one primary notch.",
+  "syntheticGateCreated": false,
+  "realPixelRunPerformed": false,
+  "realPixelOutputRootCreated": false,
+  "assessment": {
+    "causeBoundary": "Per-column transition selection with interpolation is still vulnerable to fragmented eligible rows and does not exploit the fact that the wafer is one top-connected region while die streets are internal holes.",
+    "successorRequirement": "Segment the exterior-dissimilar wafer mask, retain the largest component connected to the inward/top side, close/fill internal die holes, and derive the radial outer contour from that connected region before measuring indentation.",
+    "thresholdRelaxationAuthorized": false,
+    "freshNamespaceRequired": true,
+    "successorNamespace": "O3L5"
+  },
+  "protectedState": {"sourceImagesRead": false, "sourceMutationPerformed": false, "detectorRerunPerformed": false, "providerActivated": false, "taskOrProcessActionPerformed": false, "protectedProcessorTouched": false, "holdCleared": false},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
