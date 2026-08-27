@@ -840,6 +840,15 @@ task from changing which revision, UI, evidence, or next action is active.
 - Exact next action: operator reports the visible JBOD console state without input. Only a visibly present parse/runtime error permits bounded console-text capture; never accept a paste dialog or retry the same command namespace.
 - Authority: review-only; provider disabled, processor untouched, training/XML/production false, and every hold/prerequisite preserved.
 
+## 2026-08-27 — OCV-03 O3C2 publisher R1 withdrawn / R2 required
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3C2_SOURCE_FREEZE_PUBLISH_READY_R2_20260827.md`
+- SHA-256: `6E2C67499D2716FFE5D3CBABE22C2DB83B7ADE317BF2ADB12CB36F15F51EFD2B`
+- R1 withdrawal: `work/OPENCV_EDGE_NOTCH_O3C2/O3C2_PUBLISHER_R1_WITHDRAWAL.json`, SHA-256 `30AC361BCEC5D0843A6243E56791071AA387D85E2DEAC738B80BB97ABC56A2CB`.
+- Result: exact PS5.1 preflight failed before mutation on `return$Path.Replace`; target/upload/gate remained absent; the signed request is unchanged and unpublished.
+- Exact next action: fresh R2 publisher, complete gates, clean matching pushed tips, then one no-retry publication and exact signed-response collection.
+- Authority and algorithm boundary: known notch locations remain post-inference scorer labels only; provider disabled, processor untouched, review-only true, training/XML/production false, and every hold/prerequisite preserved.
+
 ## 2026-08-27 — OCV-03 O3C2 source-freeze request publication ready
 
 - Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3C2_SOURCE_FREEZE_PUBLISH_READY_20260827.md`

@@ -1,5 +1,29 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### PowerShell keyword adjacency can survive static parsing and fail only at runtime
+
+- Signature: a Windows PowerShell 5.1 non-mutating preflight parses and passes
+  the static harness gate, then stops because `return$Path.Replace(...)` is
+  interpreted as a command name instead of the `return` keyword followed by an
+  expression.
+- Cause: removing optional whitespace during a compact mechanical rewrite
+  joined a language keyword directly to a variable token. The PowerShell AST
+  parser accepted the source and the existing harness adjacency checks covered
+  simplified `Where-Object` operators but not keyword/variable boundaries.
+- Preflight: before freezing any compact PowerShell publisher or launcher,
+  scan exact source bytes for keyword-variable adjacency such as
+  `return$`, `throw$`, `break$`, and `continue$`, then run the exact
+  non-mutating path under Windows PowerShell 5.1. Static parser success alone
+  is insufficient.
+- Recovery: prove the failed preflight made no write, withdraw the frozen
+  publisher bytes, preserve the unchanged signed request, and create a fresh
+  publisher revision with explicit keyword whitespace. Do not edit or replay
+  the frozen publisher revision.
+- First observed: OCV-03 O3C2 publisher R1 preflight on 2026-08-27. The share
+  target and upload path remained absent, no publication gate was written, and
+  no JBOD, source, task, process, wafer, provider, training, XML, or production
+  action occurred.
+
 ### Nested rehearsal exceptions require an explicit entrypoint failure contract
 
 - Signature: an injected provider failure safely removes its temporary mapping

@@ -7819,6 +7819,24 @@ terminal response. Gateway acceptance is not execution evidence. All prior
 holds, prerequisites, disabled-provider/protected-processor boundaries, and
 review-only/training-false/XML-false/production-false authority remain.
 
+## 2026-08-27 OCV-03 O3C2 publisher R1 withdrawn / R2 required
+
+The exact Windows PowerShell 5.1 non-mutating R1 publisher preflight stopped
+on `return$Path.Replace` before any share write. The target, upload, and
+publication-gate paths remained absent. R1 publisher bytes are withdrawn and
+non-reusable; the unchanged signed request was not withdrawn and remains
+unpublished.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3C2_SOURCE_FREEZE_PUBLISH_READY_R2_20260827.md`,
+SHA-256 `6E2C67499D2716FFE5D3CBABE22C2DB83B7ADE317BF2ADB12CB36F15F51EFD2B`.
+
+Exact next action: create and fully gate a fresh R2 publisher with explicit
+keyword whitespace, commit/push/fetch, require clean matching tips, publish
+the unchanged request once with no retry, and collect only its matching signed
+terminal response. All algorithm-integrity, provider/processor, authority,
+prerequisite, and hold boundaries remain unchanged.
+
 ## 2026-08-27 OCV-03 O3C2 source freeze publication ready
 
 The generic manifest-driven source-freeze provider, exact live-cardinality
