@@ -1,8 +1,50 @@
-# Active ArgosEdgeLab state - O2D19 Slot21 publication ready - 2026-08-27
+# Active ArgosEdgeLab state - Slot21 frozen / V1R5 frozen / Slot22 blind next - 2026-08-27
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-02 O2D19 signed Slot21 frozen / V1R5 engine frozen — 2026-08-27
+
+Matching signed response `R_21582E811518_20260827015646459_2e35dfe3`
+passed exact request, ZIP, manifest, signed-file, signer, maintenance, and
+endpoint-invariant verification. Response ZIP SHA-256 is
+`0ECDFFA183544043507BA28D1C95EA0271CDFE99560A9F17765F6EECA7E60E10`;
+terminal-gate SHA-256 is
+`2D22C04CB8FC267D2D696753174FCAB59D53DB7121E4D7363DD55F9623D96801`.
+
+Slot21 returned six candidates, image-first `FFFFFFFFFFF7`, proposed
+`FFF77FFF7FF7`, and retained ambiguity, reference-coverage, localization,
+notch/identity, and every existing hold. Identity remains unaccepted. No
+task/process/provider/source/wafer/hold action occurred.
+
+The unchanged V1R5 engine is frozen before any Slot22-25 source or outcome
+exposure. Freeze gate SHA-256 is
+`CA55E6CD1765EA95FEB227FD5696FF1EF514153889782D294959320F1AEB331D`.
+No tuning, engine/reference/threshold change, or per-slot relaxation is allowed.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D19_SIGNED_SLOT21_FROZEN_ENGINE_FROZEN_SLOT22_BLIND_NEXT_CHECKPOINT_20260827.md`,
+SHA-256 `9688C19E0EDB7FFCDD1E5F196E6BF0A6A30B8352591168663AB06807DCC1F041`.
+Slot22 only is next as the first blind validation. Slots23-25 remain unseen;
+all holds and authority boundaries remain fixed.
+
+## OCV-02 O2D19 exact Slot21 request published / response pending — 2026-08-27
+
+Request `REQ_20260827T012505111Z_73C073D0BF26` was published exactly once at
+`2026-08-27T01:55:04.1078525Z`. Its 21,403-byte share copy matches frozen ZIP
+SHA-256 `DAA71BB4A819409176975EAD72485ED02E2C294BC2EC9031A4C6CDE0E6054773`.
+Publication-gate SHA-256 is
+`7EACABD93204576239834C52AAE8F3DD80F78907FF2B4B791B2079A22AD1BDBC`.
+The gateway importer consumed the request; no signed terminal response has yet
+been observed, so endpoint execution is not claimed.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D19_PUBLISHED_SLOT21_RESPONSE_PENDING_CHECKPOINT_20260827.md`,
+SHA-256 `7DC10B675BBEFF9D3C29FDD6EB23BC1779D3991308B0D07D92A72B2FB10AE8EA`.
+Only the exact matching signed response may be collected. No retry or
+republication is allowed. Slot21 remains pending; Slots22-25 remain unseen;
+the engine is not yet frozen; all holds and authority boundaries remain.
 
 ## OCV-02 O2D19 Slot21 exact-source request publication ready — 2026-08-27
 

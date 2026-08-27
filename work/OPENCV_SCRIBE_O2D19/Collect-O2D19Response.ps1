@@ -8,10 +8,10 @@ if (([bool]$Preflight) -eq ([bool]$Gate)) { throw 'Specify exactly one of -Prefl
 
 $project = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
 $requestId = 'REQ_20260827T012505111Z_73C073D0BF26'
-$responseId = '__O2D19_RESPONSE_ID__'
-$sourceZip = 'U:\ProjectPortalRO\responses\__O2D19_RESPONSE_ID__.ready.zip'
-$expectedBytes = __O2D19_RESPONSE_BYTES__
-$expectedSha256 = '__O2D19_RESPONSE_SHA256__'
+$responseId = 'R_21582E811518_20260827015646459_2e35dfe3'
+$sourceZip = 'U:\ProjectPortalRO\responses\R_21582E811518_20260827015646459_2e35dfe3.ready.zip'
+$expectedBytes = 3681
+$expectedSha256 = '0ECDFFA183544043507BA28D1C95EA0271CDFE99560A9F17765F6EECA7E60E10'
 $certificate = Join-Path $project 'work\PROJECT_PORTAL_REVIEW_ONLY\enrollment\active\JBOD_ENDPOINT_SIGNER.cer'
 $verifier = Join-Path $project 'work\PROJECT_PORTAL_REVIEW_ONLY\scripts\Test-SignedPortalResponse.ps1'
 $tempRoot = 'C:\O2D19R_73C073D0'
