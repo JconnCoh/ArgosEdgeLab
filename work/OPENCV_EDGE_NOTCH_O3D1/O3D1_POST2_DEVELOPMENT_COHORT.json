@@ -1,0 +1,76 @@
+{
+  "schema": "argos_ocv03_edge_notch_cohort_v1",
+  "revision": "O3D1_POST2_DEVELOPMENT_20260827",
+  "createdUtc": "2026-08-27T12:08:00Z",
+  "state": "FROZEN_DEVELOPMENT_AND_PERMANENT_REGRESSION_COHORT",
+  "artifactLifecycle": "FROZEN",
+  "acceptanceContract": {
+    "path": "work/OPENCV_EDGE_NOTCH_ROBUSTNESS/EDGE_NOTCH_ROBUSTNESS_ACCEPTANCE_CONTRACT_20260826.json",
+    "sha256": "FC5BE91F06F6ADEC8EB86EB966C7D12F1697ACD5A3AB94732552F549C9B5A27C"
+  },
+  "engine": {
+    "path": "work/PATTERNED_FIDUCIAL_INVENTORY/tools/NativeFrontsideWaferPoseOpenCvV1.py",
+    "sha256": "3CC4630B3A689C80887C2B8572C3A0C37B5342301E88DD8FFF4046E67EFB4DB9",
+    "qualification": "STRUCTURAL_STARTING_POINT_SYNTHETIC_PASS_DIAGNOSTIC_ONLY"
+  },
+  "fingerprintDefinition": "SHA256_UTF8(physicalIdentity|BF|bfSha256|DF|dfSha256)",
+  "members": [
+    {
+      "physicalIdentity": "62546-481_POST2_SLOT01",
+      "combinationId": "POST2",
+      "role": "DEVELOPMENT_AND_PERMANENT_CHIPOUT_REGRESSION_CHALLENGE",
+      "legacyTruthAuthority": false,
+      "operatorConfirmedFeature": "KNOWN_NOTCH_ADJACENT_LARGE_CHIPOUT",
+      "bfPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot01/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot01_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "bfBytes": 475379874,
+      "bfSha256": "D03C10550401B3AC2AFE42CC066E192DA9CC8D3FFC8F1E2497FA9C7C39CA5052",
+      "dfPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot01/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot01_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "dfBytes": 475379874,
+      "dfSha256": "C1759B44CE9D7ACA18D87413D10936578A67D35C018A0D646A78C45AFE5AA536",
+      "acquisitionFingerprintSha256": "524A8367E006963FB0A3D5B56D29AA666056C73C85E6855E11854293C5368B7D"
+    },
+    {
+      "physicalIdentity": "62546-481_POST2_SLOT03",
+      "combinationId": "POST2",
+      "role": "DEVELOPMENT_ORDINARY_PARITY_CONTROL",
+      "legacyTruthAuthority": false,
+      "bfPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot03/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot03_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "bfBytes": 475379874,
+      "bfSha256": "55B290A566FC243C81D1EB5E364D56DBB4DBC7A27AE81EA40E1CBF7CB6E570B3",
+      "dfPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot03/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot03_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "dfBytes": 475379874,
+      "dfSha256": "2EF13BB346E381217F6D8DA4C732C5B97C8EABCD062CBE73FD02BD5DD064DFD5",
+      "acquisitionFingerprintSha256": "EF00119868ED41F8F6822A2123309F2D726C638EE0BA4B5C1007DD76130CB677"
+    },
+    {
+      "physicalIdentity": "62546-481_POST2_SLOT17",
+      "combinationId": "POST2",
+      "role": "DEVELOPMENT_ORDINARY_PARITY_CONTROL",
+      "legacyTruthAuthority": false,
+      "bfPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot17/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "bfBytes": 475379874,
+      "bfSha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94",
+      "dfPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot17/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "dfBytes": 475379874,
+      "dfSha256": "9AB0AA6942948F54635C51B173618FC8478C75791E9F859FDD135FFDE52C153C",
+      "acquisitionFingerprintSha256": "A34835F683A1691A451AAA3B4D5301D952F7098CB8497C665F047D6D61121B6A"
+    }
+  ],
+  "independentValidation": {
+    "state": "PENDING_FRESH_UNINSPECTED_PAIRED_BF_DF_COHORT",
+    "memberCount": 0,
+    "outcomesInspected": false,
+    "tuningAllowedAfterInspection": false
+  },
+  "hotspot": {
+    "lotFolderName": "Lot_62629-419_NotchBad_Hotspot",
+    "state": "PENDING_EXACT_METADATA_ONLY_JBOD_INVENTORY",
+    "role": "DEVELOPMENT_AND_PERMANENT_REGRESSION_CHALLENGE",
+    "legacyIncorrectRotationIsTruth": false
+  },
+  "frontsideFlipImageHorizontal": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

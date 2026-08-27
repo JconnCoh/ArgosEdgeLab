@@ -1,0 +1,122 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3D1_POST2_V1_LOCAL_REVIEW_ONLY_RUN_20260827T121000Z",
+  "createdUtc": "2026-08-27T12:10:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "LOCAL_REVIEW_ONLY_OPENCV_OCV03_POST2_DEVELOPMENT_DIAGNOSTIC",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "47AD7D3A36BB0A3B7F1FF7FB0901FD4AF3A7DA03E2A79EA03DAF70B29603563C"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_ROBUSTNESS/EDGE_NOTCH_ROBUSTNESS_ACCEPTANCE_CONTRACT_20260826.json",
+      "sha256": "FC5BE91F06F6ADEC8EB86EB966C7D12F1697ACD5A3AB94732552F549C9B5A27C"
+    },
+    {
+      "path": "work/PATTERNED_FIDUCIAL_INVENTORY/tools/NativeFrontsideWaferPoseOpenCvV1.py",
+      "sha256": "3CC4630B3A689C80887C2B8572C3A0C37B5342301E88DD8FFF4046E67EFB4DB9"
+    },
+    {
+      "path": "work/FIDUCIAL_OPENCV_V1/portable/stage/python.exe",
+      "sha256": "7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1"
+    },
+    {
+      "path": "work/FIDUCIAL_OPENCV_V1/portable/FIDCV1_PORTABLE_RUNTIME_GATE.json",
+      "sha256": "6BCA2B3FA69416BE9E7DE9D02B606081A24C976275C5A4D1B1E83D133D30A409"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3D1/O3D1_POST2_DEVELOPMENT_COHORT.json",
+      "sha256": "4647FC5B7EC146FC4AFBF4DF15CCE9154CA26DB98A67E8483674A3351A915345"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3D1/O3D1_POST2_V1_JOB.json",
+      "sha256": "6FA813AD02848C5A5EAC3114A0F9EDC6DFE7103DAF5A963B014D37B3DB291FA3"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot01/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot01_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sha256": "D03C10550401B3AC2AFE42CC066E192DA9CC8D3FFC8F1E2497FA9C7C39CA5052"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot01/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot01_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sha256": "C1759B44CE9D7ACA18D87413D10936578A67D35C018A0D646A78C45AFE5AA536"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot03/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot03_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sha256": "55B290A566FC243C81D1EB5E364D56DBB4DBC7A27AE81EA40E1CBF7CB6E570B3"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot03/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot03_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sha256": "2EF13BB346E381217F6D8DA4C732C5B97C8EABCD062CBE73FD02BD5DD064DFD5"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot17/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot17/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sha256": "9AB0AA6942948F54635C51B173618FC8478C75791E9F859FDD135FFDE52C153C"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "scope": {
+    "artifactLifecycle": "FROZEN",
+    "mode": "MUTATE_LOCAL_OUTPUT_ONLY",
+    "inputMemberCount": 3,
+    "outputRoot": "work/O3D1/r",
+    "outputRootMustNotExistBeforeRun": true,
+    "runtimePreflightState": "PASS_OPENCV_NATIVE_POSE_RUNTIME_PREFLIGHT",
+    "jobPreflightState": "PASS_NATIVE_FRONTSIDE_WAFER_POSE_OPENCV_V1_PREFLIGHT",
+    "imageDecodeAuthorized": true,
+    "pixelProcessingAuthorized": true,
+    "localOutputWritesAuthorized": true,
+    "externalRequest": false,
+    "jbodExecution": false,
+    "providerActivation": false,
+    "processorAction": false,
+    "sourceMutation": false,
+    "waferAction": false,
+    "holdClearance": false,
+    "independentValidationExecuted": false,
+    "hotspotExecuted": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionRoutingEnabled": false
+}

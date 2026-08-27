@@ -1,0 +1,56 @@
+{
+  "schema": "argos_native_frontside_wafer_pose_opencv_v1_job",
+  "revision": "O3D1_POST2_V1_DIAGNOSTIC_20260827",
+  "cohortPath": "work/OPENCV_EDGE_NOTCH_O3D1/O3D1_POST2_DEVELOPMENT_COHORT.json",
+  "cohortState": "FROZEN_DEVELOPMENT_AND_PERMANENT_REGRESSION_COHORT",
+  "parametersState": "UNCHANGED_SYNTHETIC_STRUCTURAL_STARTING_POINT_NOT_REAL_WAFER_QUALIFIED",
+  "parameters": {
+    "nominalRadiusFraction": 0.4,
+    "radialHalfWidthPx": 80,
+    "angleSamples": 1440,
+    "minimumGradient": 10.0,
+    "gradientRelativeFloor": 0.35,
+    "fitMadMultiplier": 4.5,
+    "fitResidualFloorPx": 1.5,
+    "minimumFitInlierFraction": 0.88,
+    "minimumAngularCoverageFraction": 0.9,
+    "candidateDepthPx": 7.0,
+    "candidateMinimumWidthDegrees": 1.0,
+    "candidateMatchToleranceDegrees": 2.5,
+    "maximumChannelCenterDifferencePx": 10.0,
+    "maximumChannelRadiusDifferencePx": 8.0
+  },
+  "inputs": [
+    {
+      "identity": "62546-481_POST2_SLOT01",
+      "combinationId": "POST2",
+      "role": "DEVELOPMENT_AND_PERMANENT_CHIPOUT_REGRESSION_CHALLENGE",
+      "bfPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot01/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot01_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "bfSha256": "D03C10550401B3AC2AFE42CC066E192DA9CC8D3FFC8F1E2497FA9C7C39CA5052",
+      "dfPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot01/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot01_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "dfSha256": "C1759B44CE9D7ACA18D87413D10936578A67D35C018A0D646A78C45AFE5AA536"
+    },
+    {
+      "identity": "62546-481_POST2_SLOT03",
+      "combinationId": "POST2",
+      "role": "DEVELOPMENT_ORDINARY_PARITY_CONTROL",
+      "bfPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot03/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot03_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "bfSha256": "55B290A566FC243C81D1EB5E364D56DBB4DBC7A27AE81EA40E1CBF7CB6E570B3",
+      "dfPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot03/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot03_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "dfSha256": "2EF13BB346E381217F6D8DA4C732C5B97C8EABCD062CBE73FD02BD5DD064DFD5"
+    },
+    {
+      "identity": "62546-481_POST2_SLOT17",
+      "combinationId": "POST2",
+      "role": "DEVELOPMENT_ORDINARY_PARITY_CONTROL",
+      "bfPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot17/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "bfSha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94",
+      "dfPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot17/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "dfSha256": "9AB0AA6942948F54635C51B173618FC8478C75791E9F859FDD135FFDE52C153C"
+    }
+  ],
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}
