@@ -905,3 +905,13 @@ task from changing which revision, UI, evidence, or next action is active.
 - Diagnosis SHA-256: `4FF05A8614171205B5A2C70E772AFE3FB58DE8AE797128BEE87D3C5A3A0804B9`. Slot16 fails only minimum width; Slot17 has two candidates each failing one different frozen criterion; Slot18 passes every frozen morphology gate and remains a review-only detector pass.
 - Exact next action: no tuning or fresh hotspot successor. Obtain independent non-tuning candidate-truth evidence or hold. Before any later explicitly authorized successor, rerun the exact frozen POST2 R6 regression and require its unchanged pass.
 - Authority: live provider disabled, protected processor untouched, rotation false, review-only true, training/XML/production false, and every existing hold/prerequisite preserved.
+
+## 2026-08-27 — OCV-03 O3K1 actual notch overlay render publish ready
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3K1_NOTCH_PIXEL_OVERLAY_RENDER_PUBLISH_READY_20260827.md`
+- SHA-256: `66719D8EC8DD8A0D2660E8A2CE4ABFD84656CEBAFC1E70D510562608BD81F8C4`
+- Request: `REQ_20260827T201500111Z_62629419O3K1`, signed but unpublished; ZIP SHA-256 `B755ECE17D8FE81BD5D49D607445004BE729A47FD7F2154AD0544D1B1F8FA24C`.
+- Purpose: actual clean crops and separate overlays for `S16-C1`, `S17-C1`, and `S17-C2` from exactly four frozen BF/DF sources; source read/hash is explicitly authorized.
+- Gates: endpoint rehearsal `2790E5BBEA726EA98AA5BBF8A88FA368EA14E2D1E12BD467F47F773F0A62C16B`; exact package `CF55899F25D2143629A9E0EE9165DAEC390597A12504352C2AB663B4A9009299`; route `74B5B8D29596D6DADB81CFE987584AE768D0BAC4F37FF63CE990403588BBF1E0`.
+- Exact next action: commit/push clean matching tips, rerun continuity/session/publisher preflight, publish once with no retry, and collect only the matching JBOD-signed terminal response. A separate DATA_PULL is forbidden until that response proves the exact export ZIP.
+- Authority: no detector rerun/tuning, source mutation, provider activation, processor/task/process/wafer action, or hold clearance; review-only true, training/XML/production false, all prerequisites preserved.

@@ -1,0 +1,111 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-27T19:54:26.7806637Z",
+  "incidentId": "OCV03_MULTI_NOTCH_VARIATION_PIXEL_REVIEW_20260827",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3J1/O3J1_EXACT_RESPONSE_COLLECTION_GATE.json",
+      "sha256": "4C277E2F92BC33D61F29BBF41E0E79D3371A8258365522B100DC606C02EB2748"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3D3/O3D3R4_COMPLETE_ROUTE_GATE.json",
+      "sha256": "41A4A1B808E40E7A14A8F22BA7BF9189C0B00B16639A43DDF5AB9A3FC70385D2"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [
+      "F:/62629-419_20260824112405/Slot16/BrightfieldFrontsideWafer/resizedImage/62629-419_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "F:/62629-419_20260824112405/Slot16/DarkfieldFrontsideWafer/resizedImage/62629-419_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "F:/62629-419_20260824112405/Slot17/BrightfieldFrontsideWafer/resizedImage/62629-419_Slot17_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "F:/62629-419_20260824112405/Slot17/DarkfieldFrontsideWafer/resizedImage/62629-419_Slot17_DarkfieldFrontsideWafer_PM2_resizedImage.bmp"
+    ],
+    "requestedCapabilities": [
+      "EXACT_FOUR_SOURCE_SHA256_VERIFICATION",
+      "OPENCV_BOUNDED_CLEAN_CROP_RENDERING",
+      "OPENCV_CURRENT_GEOMETRY_OVERLAY_RENDERING",
+      "EXACT_SMALL_RASTER_AND_PROVENANCE_RETURN"
+    ],
+    "requestedFields": [
+      "THREE_CANDIDATE_BF_DF_CLEAN_CROPS",
+      "THREE_CANDIDATE_BF_DF_CURRENT_GEOMETRY_OVERLAYS",
+      "SOURCE_CROP_OVERLAY_MASK_AND_TRANSFORM_PROVENANCE",
+      "PIXEL_CHANGE_COUNTS_INSIDE_AND_OUTSIDE_CURRENT_MASK"
+    ],
+    "decisionOptions": [
+      "SAME_MANUFACTURED_NOTCH_FAMILY",
+      "DISTINCT_MANUFACTURED_NOTCH_FAMILIES",
+      "NON_NOTCH_COMPETITOR_PRESENT",
+      "HOLD_VISUALLY_AMBIGUOUS"
+    ],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3K1/O3K1_SUPPORTING_OBSERVATION.json",
+      "sha256": "54B23BF61502AFC364BBA09D1976C9B8BF8869E14A24F40C59495DADBC21576E"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "authorizationBoundary": {
+    "localDesignAndWindowsPowerShell51ProofAuthorized": true,
+    "packageBuildAuthorized": true,
+    "signatureAuthorized": true,
+    "livePublicationAuthorized": true,
+    "liveEndpointRequestsMaximum": 2,
+    "liveEndpointRequestSequence": [
+      "ONE_MAINTENANCE_PATCH_TO_RENDER_AND_STAGE_THE_EXACT_REVIEW_ZIP",
+      "ONE_DATA_PULL_AFTER_THE_MATCHING_RENDER_TERMINAL_RESPONSE_TO_RETURN_THAT_EXACT_ZIP"
+    ],
+    "operatorAuthorization": "2026-08-27 user message: Anyway, authorized",
+    "authorizedPurpose": "Read and SHA-256 verify only the exact four frozen Slot16/Slot17 BF/DF images and generate bounded local review-only clean crops and current-geometry overlays for S16-C1, S17-C1, and S17-C2."
+  },
+  "sourceImageBytesReadAllowed": true,
+  "sourceImageReadAllowlistCount": 4,
+  "sourceMutationAllowed": false,
+  "detectorRerunAllowed": false,
+  "thresholdOrAlgorithmChangeAllowed": false,
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

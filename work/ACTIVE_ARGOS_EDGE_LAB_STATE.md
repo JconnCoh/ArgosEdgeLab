@@ -8010,3 +8010,23 @@ Current checkpoint:
 SHA-256 `9FB613136E018C56384DE810CC5686CAFA2DA9F112AA0C6CB2838F8407ED85B1`.
 Live provider disabled, protected processor untouched, review-only true,
 training/XML/production false, and every hold/prerequisite preserved.
+
+## 2026-08-27 — OCV-03 O3K1 actual notch overlay render publish ready
+
+The operator authorized exact read/hash of the four frozen Slot16/Slot17 BF/DF
+images solely to render the existing `S16-C1`, `S17-C1`, and `S17-C2`
+candidates as clean crops plus separate current overlays. The signed render
+request `REQ_20260827T201500111Z_62629419O3K1` is unpublished; ZIP SHA-256 is
+`B755ECE17D8FE81BD5D49D607445004BE729A47FD7F2154AD0544D1B1F8FA24C`.
+Windows PowerShell 5.1 endpoint and exact-package rehearsals passed, as did the
+50-path round-trip gate with maximum effective length 187. Persistent `U:` is
+the exact expected mapping and has zero pending requests.
+
+The request performs no detector rerun, tuning, source mutation, task/process
+restart, provider activation, processor change, wafer action, or hold
+clearance. Only a matching JBOD-signed terminal response can authorize the
+subsequent single no-retry `DATA_PULL` of the exact rendered ZIP.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3K1_NOTCH_PIXEL_OVERLAY_RENDER_PUBLISH_READY_20260827.md`,
+SHA-256 `66719D8EC8DD8A0D2660E8A2CE4ABFD84656CEBAFC1E70D510562608BD81F8C4`.

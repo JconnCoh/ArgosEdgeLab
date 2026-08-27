@@ -1,0 +1,95 @@
+{
+  "schema": "argos_ocv03_notch_review_job_v1",
+  "revision": "FMOCV03_O3K1_20260827T200000Z",
+  "sourceRoot": "F:\\",
+  "allowedOutputRoot": "D:\\A2\\o\\ocv",
+  "crop": {
+    "widthPx": 1000,
+    "inwardPx": 420,
+    "outwardPx": 180,
+    "orientation": "TANGENT_HORIZONTAL_INSIDE_AT_TOP_OUTSIDE_AT_BOTTOM",
+    "interpolation": "INTER_NEAREST"
+  },
+  "resultFiles": [
+    {
+      "slot": 16,
+      "path": "S16_RESULT.json",
+      "sha256": "FBBF0609AD337D495E90E73C6F175E6D255287730B81498CE23C4C83536760B1"
+    },
+    {
+      "slot": 17,
+      "path": "S17_RESULT.json",
+      "sha256": "FAFD17CE4456C8F23D563423BA7FBA46E838C332D58A7E9D23F8E5B9EE8FFF8C"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S16-BF",
+      "slot": 16,
+      "channel": "BF",
+      "path": "F:\\62629-419_20260824112405\\Slot16\\BrightfieldFrontsideWafer\\resizedImage\\62629-419_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "frozenResultSourcePath": "F:\\62629-419_20260824112405\\Slot16\\BrightfieldFrontsideWafer\\resizedImage\\62629-419_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "bytes": 475379874,
+      "sha256": "3F98D5B506B3EF6E18BF9C24A64DC4516F024248DE994BD3DCBD5C8680EB7E90"
+    },
+    {
+      "id": "S16-DF",
+      "slot": 16,
+      "channel": "DF",
+      "path": "F:\\62629-419_20260824112405\\Slot16\\DarkfieldFrontsideWafer\\resizedImage\\62629-419_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "frozenResultSourcePath": "F:\\62629-419_20260824112405\\Slot16\\DarkfieldFrontsideWafer\\resizedImage\\62629-419_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "bytes": 475379874,
+      "sha256": "E293D3155A50554104A232C1FF9F1BDA7E6935D798C7266A2C8A0F90FC0A098B"
+    },
+    {
+      "id": "S17-BF",
+      "slot": 17,
+      "channel": "BF",
+      "path": "F:\\62629-419_20260824112405\\Slot17\\BrightfieldFrontsideWafer\\resizedImage\\62629-419_Slot17_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "frozenResultSourcePath": "F:\\62629-419_20260824112405\\Slot17\\BrightfieldFrontsideWafer\\resizedImage\\62629-419_Slot17_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "bytes": 475379874,
+      "sha256": "6CC032A4B0B30434ED0D6E726282C25DA3A06180633A6B354F5174B8B862397B"
+    },
+    {
+      "id": "S17-DF",
+      "slot": 17,
+      "channel": "DF",
+      "path": "F:\\62629-419_20260824112405\\Slot17\\DarkfieldFrontsideWafer\\resizedImage\\62629-419_Slot17_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "frozenResultSourcePath": "F:\\62629-419_20260824112405\\Slot17\\DarkfieldFrontsideWafer\\resizedImage\\62629-419_Slot17_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "bytes": 475379874,
+      "sha256": "23E2CF382D44EF292A3E49508C9DF8BA2D15215694C33CE643ED7B75FEC43A66"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "S16-C1",
+      "slot": 16,
+      "physicalCandidateIndex": 0,
+      "bfAngleDegrees": 179.13628776081535,
+      "dfAngleDegrees": 178.89693195700835
+    },
+    {
+      "id": "S17-C1",
+      "slot": 17,
+      "physicalCandidateIndex": 0,
+      "bfAngleDegrees": 88.09222454791899,
+      "dfAngleDegrees": 88.82079696662512
+    },
+    {
+      "id": "S17-C2",
+      "slot": 17,
+      "physicalCandidateIndex": 1,
+      "bfAngleDegrees": 80.56671010142058,
+      "dfAngleDegrees": 81.76692200974142
+    }
+  ],
+  "detectorRerun": false,
+  "thresholdOrAlgorithmChange": false,
+  "sourceMutationAllowed": false,
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

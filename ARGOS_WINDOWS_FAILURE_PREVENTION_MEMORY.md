@@ -9152,3 +9152,21 @@ than rerunning it.
 - Recovery: preserve the failed frozen observation and intent, create fresh R2
   evidence namespaces with the explicit general flag, re-pin the R2 observation
   hash, and rerun the preflight before package construction.
+
+## 2026-08-27 — Read the exact frozen result schema before pinning a review renderer
+
+- Failure signature: the DRAFT O3K1 OpenCV review renderer parsed successfully
+  and then stopped in its non-mutating preflight with `Frozen result schema
+  changed` before any image read, source hash, output creation, JBOD contact, or
+  external mutation.
+- Cause: the renderer guessed the frozen result schema token as
+  `argos_native_frontside_wafer_pose_opencv_v2_result`; the exact signed Slot16
+  and Slot17 results publish `argos_native_frontside_wafer_pose_opencv_v2`.
+- Mandatory preflight: before coding a consumer for frozen JSON, enumerate and
+  pin the actual top-level schema and required property set from every exact
+  input file. Exercise the consumer's complete non-mutating preflight against
+  those exact files before source hashing, pixel decode, output creation,
+  package build, or signature.
+- Recovery: because the renderer and job remained DRAFT and no target bytes or
+  output root were created, correct only the schema constant in place, rerun
+  parser and exact-input preflight, and proceed only on its explicit PASS.

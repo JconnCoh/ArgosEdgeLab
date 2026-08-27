@@ -1,0 +1,30 @@
+#Requires -Version 5.1
+[CmdletBinding()]
+param([switch]$Preflight,[switch]$Gate,[Parameter(Mandatory=$true)][string]$InvocationManifest)
+
+$ErrorActionPreference='Stop'
+Set-StrictMode -Version Latest
+if(([bool]$Preflight)-eq([bool]$Gate)){throw 'Specify exactly one of -Preflight or -Gate.'}
+function Assert-True([bool]$Condition,[string]$Message){if(-not $Condition){throw $Message}}
+function Get-Sha([string]$Path){return (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash}
+$invocationPath=[IO.Path]::GetFullPath($InvocationManifest)
+$invocation=Get-Content -LiteralPath $invocationPath -Raw|ConvertFrom-Json
+Assert-True ([string]$invocation.schema-eq'argos_o3k1_route_invocation_v1') 'O3K1 route invocation schema changed.'
+$projectRoot=[IO.Path]::GetFullPath([string]$invocation.projectRoot).TrimEnd('\')
+$pathTool=Join-Path $projectRoot 'utilities\Confirm-ArgosPathBudget.ps1'
+$paths=@($invocation.paths|ForEach-Object{[string]$_})
+Assert-True ($paths.Count-ge45-and$paths.Count-le128-and@($paths|Sort-Object -Unique).Count-eq$paths.Count) 'O3K1 route path set is incomplete or duplicated.'
+$rows=New-Object Collections.Generic.List[object]
+foreach($path in $paths){$one=& $pathTool -CandidatePath $path -ReservedSuffixCharacters 32 -AsJson|ConvertFrom-Json;Assert-True ([string]$one.state-eq'PASS_PATH_BUDGET'-and@($one.candidates).Count-eq1) "O3K1 route path failed: $path";$row=@($one.candidates)[0];$rows.Add([pscustomobject]@{path=[string]$row.path;pathLength=[int]$row.pathLength;effectiveLength=[int]$row.effectiveLength;longestComponentLength=[int]$row.longestComponentLength;state=[string]$row.disposition})}
+$rowArray=$rows.ToArray()
+$longest=@($rowArray|Sort-Object effectiveLength -Descending|Select-Object -First 1)[0]
+$result=[ordered]@{schema='argos_o3k1_complete_route_gate_v1';createdUtc=[DateTime]::UtcNow.ToString('o');state=$(if($Preflight){'PASS_O3K1_COMPLETE_ROUTE_PREFLIGHT'}else{'PASS_O3K1_COMPLETE_ROUTE_GATE'});requestId=[string]$invocation.requestId;jobClass='MAINTENANCE_PATCH';routePathRowsEvaluated=$rowArray.Count;reservedSuffixCharacters=32;maximumPlannedEffectiveLength=[int]$longest.effectiveLength;maximumPlannedComponentLength=[int](($rowArray|Measure-Object longestComponentLength -Maximum).Maximum);longestPath=[string]$longest.path;rootsEvaluated=@($invocation.rootsEvaluated);payloadLeaves=@($invocation.payloadLeaves);maximumResultBytes=[int64]$invocation.maximumResultBytes;endpointWorkerSha256=[string]$invocation.endpointWorkerSha256;installedConfigEvidenceSha256=[string]$invocation.installedConfigEvidenceSha256;inheritedQueueSafetyGateSha256=[string]$invocation.inheritedQueueSafetyGateSha256;requestZipPath=[IO.Path]::GetFullPath([string]$invocation.requestZipPath);requestZipSha256=$null;requestManifestSha256=$null;requestSignatureSha256=$null;exactFinalZipExtractionPassed=$false;exactFinalZipSignaturePassed=$false;matchingSignedTerminalResponseRequired=$true;gatewayAcceptanceIsExecutionEvidence=$false;requestRetryAuthorized=$false;rows=$rowArray;mutationsPerformed=$false;reviewOnly=$true;trainingEligible=$false;xmlEligible=$false;productionEligible=$false;productionRoutingEnabled=$false}
+if($Preflight){$result|ConvertTo-Json -Depth 8;return}
+foreach($property in @('requestZipPath','requestManifestPath','requestSignaturePath')){$artifact=[IO.Path]::GetFullPath([string]$invocation.$property);Assert-True (Test-Path -LiteralPath $artifact -PathType Leaf) "O3K1 route artifact absent: $artifact"}
+$result.requestZipSha256=Get-Sha ([string]$invocation.requestZipPath);$result.requestManifestSha256=Get-Sha ([string]$invocation.requestManifestPath);$result.requestSignatureSha256=Get-Sha ([string]$invocation.requestSignaturePath)
+Assert-True ($result.requestZipSha256-eq[string]$invocation.requestZipSha256-and$result.requestManifestSha256-eq[string]$invocation.requestManifestSha256-and$result.requestSignatureSha256-eq[string]$invocation.requestSignatureSha256) 'O3K1 exact route artifact hash changed.'
+$result.exactFinalZipExtractionPassed=[bool]$invocation.exactFinalZipExtractionPassed;$result.exactFinalZipSignaturePassed=[bool]$invocation.exactFinalZipSignaturePassed;Assert-True ($result.exactFinalZipExtractionPassed-and$result.exactFinalZipSignaturePassed) 'O3K1 final ZIP route proof changed.'
+$output=[IO.Path]::GetFullPath([string]$invocation.outputPath);Assert-True (-not(Test-Path -LiteralPath $output)) 'O3K1 route output exists.'
+[IO.File]::WriteAllText($output,(($result|ConvertTo-Json -Depth 8)+[Environment]::NewLine),(New-Object Text.UTF8Encoding($false)))
+$result.mutationsPerformed=$true
+$result|ConvertTo-Json -Depth 8

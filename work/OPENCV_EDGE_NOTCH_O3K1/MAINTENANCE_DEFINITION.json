@@ -1,0 +1,78 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 4194304,
+  "entryPoint": "payload/Invoke-O3K1NotchReviewEndpoint.ps1",
+  "changes": [
+    {
+      "source": "payload/OCV03_NotchReviewOpenCvV1.py",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03_NotchReviewOpenCvV1.py",
+      "approvedPredecessorSha256": ["6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4"],
+      "installedSha256": "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\A2\\o\\ocv\\O3K1_20260827T200000Z",
+      "mode": "CREATE_NEW_REVIEW_RASTER_OUTPUT_TREE",
+      "failureQuarantine": "D:\\A2\\o\\ocv\\O3K1_20260827T200000Z.failed"
+    },
+    {
+      "targetRoot": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03ReviewExports\\O3K1_20260827T200000Z",
+      "mode": "CREATE_NEW_DATA_PULL_EXPORT_TREE",
+      "failureQuarantine": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03ReviewExports\\O3K1_20260827T200000Z.failed"
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "D:\\A2\\o\\ocv\\O3K1_20260827T200000Z\\RENDER_MANIFEST.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_ocv03_notch_review_render_v1",
+      "requiredState": "PASS_O3K1_NOTCH_REVIEW_RENDERED"
+    },
+    {
+      "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03ReviewExports\\O3K1_20260827T200000Z\\EXPORT_MANIFEST.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_o3k1_review_export_v1",
+      "requiredState": "PASS_O3K1_REVIEW_EXPORT"
+    }
+  ],
+  "sourceProcessingContract": {
+    "sourceLeafCount": 4,
+    "candidateCount": 3,
+    "channelRenderCount": 6,
+    "assetFileCount": 18,
+    "sourceFreezeGateSha256": "665C1DDDFD1E1FBDECED11C5C9F382D147E3AB1F7904BF191A5F9026E43063AD",
+    "sourceAcquisitionFingerprintSha256": "EB45C81DB9A4A3B220B0D4161C2F280A7FB402A40296FB94110223692073BAA0",
+    "sourceHashesVerifiedBeforeDecode": true,
+    "sourceImageReadAuthorized": true,
+    "detectorRerunAllowed": false,
+    "thresholdOrAlgorithmChangeAllowed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "taskRestartAllowed": false,
+    "processorRestartAllowed": false,
+    "providerActivationAllowed": false,
+    "waferActionAllowed": false,
+    "holdClearanceAllowed": false
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 900,
+    "opencvChildTimeoutSeconds": 780,
+    "outerCoversChild": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": ["START_BOUNDED_PORTABLE_OPENCV_REVIEW_RENDER_S16_S17"],
+  "rehearsal": {
+    "requiredState": "PASS_O3K1_NOTCH_REVIEW_RENDERED_FOR_DATA_PULL",
+    "gateState": "PASS_O3K1_ENDPOINT_REHEARSAL",
+    "gateSha256": "2790E5BBEA726EA98AA5BBF8A88FA368EA14E2D1E12BD467F47F773F0A62C16B"
+  },
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}
