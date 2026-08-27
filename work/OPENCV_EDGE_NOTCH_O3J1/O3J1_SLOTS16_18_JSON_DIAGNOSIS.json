@@ -1,0 +1,256 @@
+{
+    "schema":  "argos_o3j1_slots16_18_json_diagnosis_v1",
+    "createdUtc":  "2026-08-27T19:35:29.7734309Z",
+    "state":  "PASS_O3J1_SLOTS16_18_JSON_DIAGNOSIS_NO_TUNING",
+    "disposition":  "DIAGNOSTIC_ONLY",
+    "requestId":  "REQ_20260827T185500111Z_62629419O3J1",
+    "responseId":  "R_7AF93A801F21_20260827192418120_a88bd396",
+    "collectionGateSha256":  "4C277E2F92BC33D61F29BBF41E0E79D3371A8258365522B100DC606C02EB2748",
+    "sourceToReturnMappingSha256":  "F5A148CC5CDE765A0A86B7046D2665B65389D48BC3775A315B52FFA87393FFA3",
+    "frozenJobSha256":  "F7DB6FE811D58DAA3F410C5AD8E4F063BBD6E961004BDAF1BF2470BB74392717",
+    "frozenEngineSha256":  "90839F14CEEED7C2DFC6E1601195F6927C4631E508F9EB859E77A93745D3FB30",
+    "thresholds":  {
+                       "manufacturedMinimumWidthDegrees":  0.9,
+                       "manufacturedMaximumWidthDegrees":  3.2,
+                       "manufacturedMinimumSymmetry":  0.72,
+                       "manufacturedMaximumTipOffsetFraction":  0.7,
+                       "manufacturedMinimumSlopeConsistency":  0.55,
+                       "manufacturedMinimumCrossChannelOverlap":  0.1
+                   },
+    "slots":  [
+                  {
+                      "slot":  16,
+                      "identity":  "62629-419_20260824112405_SLOT16",
+                      "detectorState":  "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_NO_MANUFACTURED_NOTCH_MORPHOLOGY",
+                      "bfQualified":  true,
+                      "dfQualified":  true,
+                      "channelComparisonQualified":  true,
+                      "channelCenterDifferencePx":  2.8520725701907095,
+                      "channelRadiusDifferencePx":  16.290682429221306,
+                      "physicalCandidateCount":  1,
+                      "bfOnlyBoundaryCandidateCount":  1,
+                      "dfOnlyBoundaryCandidateCount":  20,
+                      "eligibleManufacturedMorphologyCount":  0,
+                      "manufacturedNotchSelectedForReview":  false,
+                      "candidates":  [
+                                         {
+                                             "candidateOrdinal":  1,
+                                             "reviewAngleDegrees":  179.13628776081535,
+                                             "reviewAngleChannel":  "BF",
+                                             "channelAngleDifferenceDegrees":  0.23935580380700117,
+                                             "crossChannelOverlapFraction":  0.46173218236748881,
+                                             "combinedWidthDegrees":  0.5,
+                                             "combinedSymmetryScore":  0.78202217176439159,
+                                             "combinedTipCenterOffsetFraction":  0.42857142857142855,
+                                             "combinedSlopeConsistencyFraction":  1,
+                                             "minimumWidthMarginDegrees":  -0.4,
+                                             "maximumWidthMarginDegrees":  2.7,
+                                             "symmetryMargin":  0.06202217176439162,
+                                             "tipOffsetMargin":  0.27142857142857141,
+                                             "slopeConsistencyMargin":  0.44999999999999996,
+                                             "crossChannelOverlapMargin":  0.36173218236748883,
+                                             "failedCriteria":  [
+                                                                    "WIDTH_BELOW_MINIMUM"
+                                                                ],
+                                             "manufacturedNotchMorphologyEligible":  false
+                                         }
+                                     ]
+                  },
+                  {
+                      "slot":  17,
+                      "identity":  "62629-419_20260824112405_SLOT17",
+                      "detectorState":  "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_NO_MANUFACTURED_NOTCH_MORPHOLOGY",
+                      "bfQualified":  true,
+                      "dfQualified":  true,
+                      "channelComparisonQualified":  true,
+                      "channelCenterDifferencePx":  2.582482555060551,
+                      "channelRadiusDifferencePx":  11.120602206015064,
+                      "physicalCandidateCount":  2,
+                      "bfOnlyBoundaryCandidateCount":  0,
+                      "dfOnlyBoundaryCandidateCount":  15,
+                      "eligibleManufacturedMorphologyCount":  0,
+                      "manufacturedNotchSelectedForReview":  false,
+                      "candidates":  [
+                                         {
+                                             "candidateOrdinal":  1,
+                                             "reviewAngleDegrees":  88.820796966625124,
+                                             "reviewAngleChannel":  "DF",
+                                             "channelAngleDifferenceDegrees":  0.7285724187061362,
+                                             "crossChannelOverlapFraction":  0.74111644498531082,
+                                             "combinedWidthDegrees":  3.4000000000000004,
+                                             "combinedSymmetryScore":  0.81724999494905282,
+                                             "combinedTipCenterOffsetFraction":  0.047619047619047616,
+                                             "combinedSlopeConsistencyFraction":  0.90476190476190477,
+                                             "minimumWidthMarginDegrees":  2.5000000000000004,
+                                             "maximumWidthMarginDegrees":  -0.20000000000000018,
+                                             "symmetryMargin":  0.097249994949052843,
+                                             "tipOffsetMargin":  0.65238095238095228,
+                                             "slopeConsistencyMargin":  0.35476190476190472,
+                                             "crossChannelOverlapMargin":  0.64111644498531084,
+                                             "failedCriteria":  [
+                                                                    "WIDTH_ABOVE_MAXIMUM"
+                                                                ],
+                                             "manufacturedNotchMorphologyEligible":  false
+                                         },
+                                         {
+                                             "candidateOrdinal":  2,
+                                             "reviewAngleDegrees":  81.766922009741421,
+                                             "reviewAngleChannel":  "DF",
+                                             "channelAngleDifferenceDegrees":  1.2002119083208385,
+                                             "crossChannelOverlapFraction":  0.4544754055816142,
+                                             "combinedWidthDegrees":  3,
+                                             "combinedSymmetryScore":  0.85511214739086683,
+                                             "combinedTipCenterOffsetFraction":  0.72413793103448276,
+                                             "combinedSlopeConsistencyFraction":  0.93939393939393945,
+                                             "minimumWidthMarginDegrees":  2.1,
+                                             "maximumWidthMarginDegrees":  0.20000000000000018,
+                                             "symmetryMargin":  0.13511214739086685,
+                                             "tipOffsetMargin":  -0.024137931034482807,
+                                             "slopeConsistencyMargin":  0.3893939393939394,
+                                             "crossChannelOverlapMargin":  0.35447540558161417,
+                                             "failedCriteria":  [
+                                                                    "TIP_OFFSET_ABOVE_MAXIMUM"
+                                                                ],
+                                             "manufacturedNotchMorphologyEligible":  false
+                                         }
+                                     ]
+                  },
+                  {
+                      "slot":  18,
+                      "identity":  "62629-419_20260824112405_SLOT18",
+                      "detectorState":  "PASS_REVIEW_ONLY_MANUFACTURED_NOTCH_CANDIDATE",
+                      "bfQualified":  true,
+                      "dfQualified":  true,
+                      "channelComparisonQualified":  true,
+                      "channelCenterDifferencePx":  2.9467285928824913,
+                      "channelRadiusDifferencePx":  12.043799049736664,
+                      "physicalCandidateCount":  1,
+                      "bfOnlyBoundaryCandidateCount":  1,
+                      "dfOnlyBoundaryCandidateCount":  17,
+                      "eligibleManufacturedMorphologyCount":  1,
+                      "manufacturedNotchSelectedForReview":  true,
+                      "candidates":  [
+                                         {
+                                             "candidateOrdinal":  1,
+                                             "reviewAngleDegrees":  95.9090881092048,
+                                             "reviewAngleChannel":  "DF",
+                                             "channelAngleDifferenceDegrees":  0.13031902486500258,
+                                             "crossChannelOverlapFraction":  0.82968384663910366,
+                                             "combinedWidthDegrees":  1.1,
+                                             "combinedSymmetryScore":  0.96175751125053677,
+                                             "combinedTipCenterOffsetFraction":  0,
+                                             "combinedSlopeConsistencyFraction":  1,
+                                             "minimumWidthMarginDegrees":  0.20000000000000007,
+                                             "maximumWidthMarginDegrees":  2.1,
+                                             "symmetryMargin":  0.24175751125053679,
+                                             "tipOffsetMargin":  0.7,
+                                             "slopeConsistencyMargin":  0.44999999999999996,
+                                             "crossChannelOverlapMargin":  0.72968384663910368,
+                                             "failedCriteria":  [
+
+                                                                ],
+                                             "manufacturedNotchMorphologyEligible":  true
+                                         }
+                                     ]
+                  }
+              ],
+    "slots19To25SelectedCandidateCohort":  [
+                                               {
+                                                   "slot":  19,
+                                                   "reviewAngleDegrees":  89.704129432554083,
+                                                   "combinedWidthDegrees":  2.1,
+                                                   "combinedSymmetryScore":  0.86786072196186859,
+                                                   "combinedTipCenterOffsetFraction":  0.090909090909090925,
+                                                   "combinedSlopeConsistencyFraction":  1,
+                                                   "crossChannelOverlapFraction":  0.99690868867194282,
+                                                   "channelAngleDifferenceDegrees":  0.003405706510420714
+                                               },
+                                               {
+                                                   "slot":  20,
+                                                   "reviewAngleDegrees":  89.7342734163454,
+                                                   "combinedWidthDegrees":  2.2,
+                                                   "combinedSymmetryScore":  0.87627813526648746,
+                                                   "combinedTipCenterOffsetFraction":  0.14285714285714285,
+                                                   "combinedSlopeConsistencyFraction":  1,
+                                                   "crossChannelOverlapFraction":  0.98574778788849959,
+                                                   "channelAngleDifferenceDegrees":  0.015789954210973178
+                                               },
+                                               {
+                                                   "slot":  21,
+                                                   "reviewAngleDegrees":  89.7276445571311,
+                                                   "combinedWidthDegrees":  2.2,
+                                                   "combinedSymmetryScore":  0.86888271910140846,
+                                                   "combinedTipCenterOffsetFraction":  0.14285714285714285,
+                                                   "combinedSlopeConsistencyFraction":  1,
+                                                   "crossChannelOverlapFraction":  0.98916658663170565,
+                                                   "channelAngleDifferenceDegrees":  0.011981655820292758
+                                               },
+                                               {
+                                                   "slot":  22,
+                                                   "reviewAngleDegrees":  89.68858385160253,
+                                                   "combinedWidthDegrees":  2.1,
+                                                   "combinedSymmetryScore":  0.8948378997119858,
+                                                   "combinedTipCenterOffsetFraction":  0.047619047619047616,
+                                                   "combinedSlopeConsistencyFraction":  1,
+                                                   "crossChannelOverlapFraction":  0.98333290753297842,
+                                                   "channelAngleDifferenceDegrees":  0.018067692351593223
+                                               },
+                                               {
+                                                   "slot":  23,
+                                                   "reviewAngleDegrees":  89.719037185902025,
+                                                   "combinedWidthDegrees":  2.2,
+                                                   "combinedSymmetryScore":  0.88196169518682677,
+                                                   "combinedTipCenterOffsetFraction":  0.090909090909090925,
+                                                   "combinedSlopeConsistencyFraction":  1,
+                                                   "crossChannelOverlapFraction":  0.97694007878861844,
+                                                   "channelAngleDifferenceDegrees":  0.026245015355954138
+                                               },
+                                               {
+                                                   "slot":  24,
+                                                   "reviewAngleDegrees":  89.68709273835313,
+                                                   "combinedWidthDegrees":  2.1,
+                                                   "combinedSymmetryScore":  0.89999421738767271,
+                                                   "combinedTipCenterOffsetFraction":  0.1,
+                                                   "combinedSlopeConsistencyFraction":  1,
+                                                   "crossChannelOverlapFraction":  0.979051410306878,
+                                                   "channelAngleDifferenceDegrees":  0.023816625765277877
+                                               },
+                                               {
+                                                   "slot":  25,
+                                                   "reviewAngleDegrees":  89.698854949766456,
+                                                   "combinedWidthDegrees":  2.1,
+                                                   "combinedSymmetryScore":  0.88269874122961167,
+                                                   "combinedTipCenterOffsetFraction":  0.090909090909090925,
+                                                   "combinedSlopeConsistencyFraction":  1,
+                                                   "crossChannelOverlapFraction":  0.99544193279895721,
+                                                   "channelAngleDifferenceDegrees":  0.00502532680980039
+                                               }
+                                           ],
+    "slots19To25ReviewAngleMedianDegrees":  89.704129432554083,
+    "slot18ReviewAngleDegrees":  95.9090881092048,
+    "slot18AbsoluteDifferenceFromSlots19To25MedianDegrees":  6.204958676650719,
+    "conclusions":  {
+                        "slot16":  "HOLD_ONLY_MATCHED_PHYSICAL_CANDIDATE_FAILS_WIDTH_BELOW_FROZEN_MINIMUM",
+                        "slot17":  "HOLD_TWO_MATCHED_PHYSICAL_CANDIDATES_EACH_FAILS_ONE_DIFFERENT_FROZEN_CRITERION",
+                        "slot18":  "DETECTOR_PASS_SINGLE_PHYSICAL_CANDIDATE_PASSES_ALL_FROZEN_MORPHOLOGY_CRITERIA",
+                        "slot18CohortAngleOutlierIsDetectorFailure":  false,
+                        "thresholdChangeSupportedByCurrentEvidence":  false,
+                        "algorithmChangeSupportedByCurrentEvidence":  false,
+                        "freshHotspotSuccessorAuthorized":  false,
+                        "frozenPost2RerunRequiredBeforeAnyFreshHotspotSuccessor":  true,
+                        "frozenPost2RerunPerformedByThisAnalysis":  false
+                    },
+    "imageBytesRead":  false,
+    "sourceImageBytesRead":  false,
+    "o3d3r4RerunPerformed":  false,
+    "taskOrProcessActionPerformed":  false,
+    "providerActivated":  false,
+    "healthyProcessorTouched":  false,
+    "rotationAuthorityGranted":  false,
+    "holdsCleared":  false,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false
+}

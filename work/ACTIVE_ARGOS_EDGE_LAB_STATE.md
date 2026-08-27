@@ -7973,3 +7973,40 @@ Commit/push/fetch and clean matching branch tips are required before the exact
 single no-retry publication. Collect only its matching signed terminal
 response. Provider remains disabled; processor/tasks/processes/images/source
 and every prerequisite/hold remain untouched.
+
+## 2026-08-27 — OCV-03 O3J1 signed JSON diagnosis complete / no-tuning hold
+
+Request `REQ_20260827T185500111Z_62629419O3J1` was published exactly once.
+Its matching JBOD-signed response is
+`R_7AF93A801F21_20260827192418120_a88bd396`, ZIP SHA-256
+`702932F08C741610CC8E2950E8D7A2CFE963CD16A8E75E831B0BDDFE6A348130`.
+Signer thumbprint `DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC` and exact request
+correlation passed. Collection gate SHA-256 is
+`4C277E2F92BC33D61F29BBF41E0E79D3371A8258365522B100DC606C02EB2748`.
+
+Exactly 13 returned UTF-8 JSON files were byte-for-byte reconstituted under
+`work/O3J1R/files`. Mapping SHA-256 is
+`F5A148CC5CDE765A0A86B7046D2665B65389D48BC3775A315B52FFA87393FFA3`.
+No image bytes were reread and O3D3R4 was not rerun.
+
+The JSON-only diagnosis SHA-256 is
+`4FF05A8614171205B5A2C70E772AFE3FB58DE8AE797128BEE87D3C5A3A0804B9`.
+Slot16's only paired physical candidate fails only minimum width (`0.5` versus
+`0.9` degrees). Slot17 has two paired candidates: one fails only maximum
+width (`3.4` versus `3.2`), while the other fails only tip offset
+(`0.72413793103448276` versus `0.70`). Slot18 has exactly one candidate and
+passes every frozen morphology gate; it remains
+`PASS_REVIEW_ONLY_MANUFACTURED_NOTCH_CANDIDATE`. Its `6.204958676650719`-
+degree difference from the Slots19-Slot25 median remains post-freeze context,
+not a detector failure or rotation authority.
+
+Current evidence supports no threshold/code change, fresh hotspot successor,
+or hold clearance. The exact frozen POST2 R6 rerun is required before any
+future evidence-supported successor, but was not run because no successor is
+authorized.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3J1_SIGNED_JSON_DIAGNOSIS_NO_TUNING_20260827.md`,
+SHA-256 `9FB613136E018C56384DE810CC5686CAFA2DA9F112AA0C6CB2838F8407ED85B1`.
+Live provider disabled, protected processor untouched, review-only true,
+training/XML/production false, and every hold/prerequisite preserved.
