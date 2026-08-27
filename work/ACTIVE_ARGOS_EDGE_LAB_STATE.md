@@ -1,8 +1,41 @@
-# Active ArgosEdgeLab state - Slot21 frozen / V1R5 frozen / Slot22 blind next - 2026-08-27
+# Active ArgosEdgeLab state - OCV-03 signed hotspot inventory complete / source freeze next - 2026-08-27
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3C1 exact signed hotspot inventory complete — 2026-08-27
+
+Request `REQ_20260827T141000111Z_62629419C3A1` was published once through
+persistent `U:` and was not retried. Matching terminal response
+`R_96293D05BC45_20260827143055769_eb895d3c` passed JBOD signature and exact
+request correlation. Response ZIP SHA-256 is
+`7CFD6195E3BBD0369C1A6468102E27A9654BFE520C8D18680A20B560CAC63C83`;
+collection-gate SHA-256 is
+`8BC123F670CB4154C737CE714086F238916820C11789925F4DB024120299DDCC`.
+
+The installed metadata provider returned a complete exact inventory for
+`Lot_62629-419_NotchBad_Hotspot`: one run, Slot16-Slot25, 131 directories, 40
+BMP leaves, 162 other leaves, zero skipped paths, zero access errors, and no
+truncation. Each slot has the complete BF/DF frontside and backside set; OCV-03
+has ten exact frontside BF/DF pairs. All BMP canonical paths require qualified
+short-alias I/O (maximum canonical effective length 227; alias maximum 169).
+No image bytes or source hashes were read.
+
+Machine assessment:
+`work/OPENCV_EDGE_NOTCH_O3C1/O3C1_HOTSPOT_INVENTORY_ASSESSMENT.json`, SHA-256
+`8C6BD56577302550F7CEB317F1D79C6A1DC795C1D823B4129764E6541AB277FA`.
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3C1_SIGNED_HOTSPOT_INVENTORY_COMPLETE_R2_20260827.md`,
+SHA-256 `2D4E3BD9E107DFBF20FBC8B037A38AFD5B62EE56C4E40C9A62F08EC04459591D`.
+R2 supersedes the provisional pre-audit checkpoint after the exact
+zero-recurrence promotion audit passed.
+
+Next is one bounded O3C2 hash-only source freeze for exactly the 20 frontside
+leaves, through the qualified short alias, before any hotspot image decode or
+pixel outcome. The independent paired BF/DF validation cohort remains fresh
+and uninspected. Provider, processor, tasks, processes, wafers, holds, XML,
+training, and production routing remain untouched/disabled.
 
 ## OCV-02 O2D19 signed Slot21 frozen / V1R5 engine frozen — 2026-08-27
 
