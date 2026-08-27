@@ -8706,3 +8706,51 @@ than rerunning it.
   image content as still blind; before counting Slot25 as the fourth sequential
   blind-validation member, require a file-backed workflow review that explicitly
   addresses the metadata-only early exposure.
+
+## 2026-08-27 — Wrapper-manifest compatibility must pass before publisher freeze
+
+- Failure signature: the first O2D22 one-shot publisher was committed and
+  pushed in commit `1e33325` before its direct Windows PowerShell 5.1 wrapper
+  gate was constructed. Static inspection then proved that the frozen script
+  did not declare `InvocationManifest`, so the mandatory file-backed invocation
+  contract could not be supplied to `Confirm-ArgosPowerShellWrapper.ps1`.
+- Cause: harness safety, clone-literal safety, and the publication pre-action
+  were treated as sufficient publisher freeze gates. The separate wrapper
+  safety contract was deferred until immediately before execution, after the
+  publisher and checkpoint had already crossed the repository publication
+  boundary.
+- Mandatory preflight: before committing, freezing, signing, or publishing any
+  new or changed publisher/collector/operator entrypoint, require its bounded
+  UTF-8 invocation manifest, require the script to declare and validate the
+  exact `InvocationManifest`, create the canonical fixed-argument `.cmd`
+  wrapper when applicable, and run `Confirm-ArgosPowerShellWrapper.ps1` against
+  all three exact files. Only then may the checkpoint pin the entrypoint.
+- Recovery: the first publisher was never executed and no portal, JBOD, image,
+  provider, task, processor, source, wafer, or hold state changed. Preserve it
+  as non-reusable evidence, supersede its provisional publication-ready
+  checkpoint, create a fresh `Publish-O2D22R2` namespace from the qualified
+  O2D21 source rather than from the rejected publisher, and repeat clone,
+  harness, wrapper, pre-action, continuity, commit/push, and exact preflight
+  gates before the sole authorized publication.
+
+## 2026-08-27 — Checkpoint filenames are part of the pre-launch path budget
+
+- Failure signature: the uncommitted O2D22 R2 publisher path preflight rejected
+  the provisional checkpoint
+  `OCV02_O2D22_COMPLETE_ROUTE_PASS_SLOT24_BLIND_PUBLICATION_READY_R2_CHECKPOINT_20260827.md`.
+  Its filename component was 88 characters and its laptop path had effective
+  length 209 with the required 32-character suffix reserve.
+- Cause: the request/route paths and short `U:` alias had been gated, but the
+  newly created continuity-checkpoint filename was not included before its
+  first write. Descriptive checkpoint naming crossed the mandatory 80-character
+  component limit even though no portal path was long.
+- Mandatory preflight: construct every proposed checkpoint, invocation,
+  publisher, gate, local evidence, share, processed, response, and extraction
+  path before creating any of them. Run `Confirm-ArgosPathBudget.ps1` with the
+  real suffix reserve, reject any component longer than 80, and prefer a short
+  stable checkpoint name whose detailed scope lives inside the file.
+- Recovery: no entrypoint launched and no external state changed. The R2 files
+  remained uncommitted DRAFT bytes, so replace the provisional checkpoint with
+  a short path, update every exact path/hash pin, retain the failed path-gate
+  output only in task commentary, and rerun clone, harness, wrapper, path,
+  pre-action, continuity, and clean-tip gates before publication.

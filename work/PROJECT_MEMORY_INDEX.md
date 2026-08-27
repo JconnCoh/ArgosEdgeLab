@@ -752,3 +752,11 @@ task from changing which revision, UI, evidence, or next action is active.
 - Exact next action: publish frozen request `REQ_20260827T030200111Z_6C5C7F1FBF26` once through persistent `U:` with no retry, then collect only its matching signed terminal response.
 - Disclosure: Slot25 path/hash metadata was exposed by adjacent text-search context; no image bytes or outcome were read. Complete the file-backed workflow review after Slot24 terminal evidence before any Slot25 request.
 - Authority: review-only; Slots22-23 remain blind-validation evidence, Slot24 is pending result, live provider disabled, healthy processor untouched, and every hold preserved.
+
+## 2026-08-27 — OCV-02 O2D22 wrapper-gated R2 publication ready
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D22_SLOT24_PUBLISH_R2_20260827.md`
+- SHA-256: `3FC2C0F25B587A5CB07E5EC09785B3C40CC8ADE83EB09DE719E4AEC9F7EB2881`
+- Supersession: the first publisher/checkpoint are non-reusable and were never executed; the initial long R2 checkpoint DRAFT was rejected before launch and replaced with the short path.
+- Exact next action: commit/push, run exact `Publish-O2D22R2` Windows PowerShell 5.1 preflight, publish request `REQ_20260827T030200111Z_6C5C7F1FBF26` once through persistent `U:` with no retry, then collect only its matching signed response.
+- Authority: review-only; Slot25 metadata exposure remains disclosed, Slot25 bytes/outcome remain unseen, provider disabled, processor untouched, and every prerequisite/hold preserved.

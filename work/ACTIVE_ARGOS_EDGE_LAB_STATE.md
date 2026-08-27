@@ -7480,3 +7480,27 @@ workflow review is required before any Slot25 request.
 
 Exact next action: commit/push, publish O2D22 exactly once, and collect only its
 matching signed response. No retry. All holds and authority limits remain.
+
+## 2026-08-27 O2D22 publisher R1 withdrawn / wrapper-gated R2 ready
+
+The first publisher and first publication-ready checkpoint were committed
+before wrapper-manifest compatibility and are non-reusable. The publisher was
+never executed and no portal or JBOD state changed. An uncommitted descriptive
+R2 checkpoint path was also rejected at effective length 209/component length
+88 before launch and was replaced by the short path below.
+
+Fresh `Publish-O2D22R2.ps1` SHA-256 is
+`E468AD0AFE801F6999C16A8A7FF12982F51C3D02DABA3A626D1ACBD59DDC0BC7`;
+its fixed wrapper is `966D985B3B782B4C260C618806BB7CFFB9206F04524B9CF150AF8A9FEDEDDDCF`
+and file-backed invocation is
+`4D31340318088D68C54DD44F874A150111E78C99DE7ABE7176F0D2F3DAE27D45`.
+Clone, harness, wrapper, and corrected path gates pass. The signed request bytes
+remain unchanged and unexecuted.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D22_SLOT24_PUBLISH_R2_20260827.md`,
+SHA-256 `3FC2C0F25B587A5CB07E5EC09785B3C40CC8ADE83EB09DE719E4AEC9F7EB2881`.
+
+Exact next action: commit/push, run the exact R2 Windows PowerShell 5.1
+preflight, publish once with no retry, and collect only the matching signed
+response. All authority limits, prerequisites, and holds remain unchanged.
