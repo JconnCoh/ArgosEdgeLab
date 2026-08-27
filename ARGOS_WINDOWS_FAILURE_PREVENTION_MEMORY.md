@@ -8593,3 +8593,49 @@ than rerunning it.
   occurred. This is the second signed premise failure in the Slot19 incident,
   so mutation stop-loss is active until a file-backed workflow review and a
   fresh recovery intent explicitly clear it for one new namespace.
+
+## 2026-08-26 — Live-only endpoint self-pins must be exercised before signing
+
+- Failure signature: the matching signed O2D16 response failed before alias
+  creation or any source read with `O2D16 live job changed.` The packaged job
+  SHA-256 was `146C2E2A...`, but the endpoint hard-coded the predecessor job
+  SHA-256 `D14E47EF...`. The local entrypoint rehearsal passed because its
+  `-Rehearsal` branch deliberately skipped both live job and installed-runtime
+  hash assertions.
+- Cause: the final package gate compared the payload and signed maintenance
+  declaration but did not mechanically compare every endpoint self-pin with
+  the exact packaged dependency. The only execution test used a branch that
+  bypassed the failing live-only assertions.
+- Mandatory preflight: inventory every hash literal and live-only assertion in
+  the exact packaged endpoint. Require each payload self-pin to equal the exact
+  packaged file hash and each installed-state self-pin to equal qualified
+  installed evidence. Exercise the live assertion branch against bounded
+  fixtures before signing; a rehearsal branch that skips an assertion cannot
+  prove it. Record the endpoint constant, computed hash, and branch coverage in
+  a machine-readable gate.
+- Recovery: retain O2D16 as executed terminal evidence and never retry it.
+  Collect the exact signed response, pin a direct post-failure observation, and
+  activate the third-premise-failure mutation stop-loss. No successor may be
+  built or published until a file-backed workflow review and fresh recovery
+  intent explicitly clear one new namespace with the live self-pin gate.
+
+## 2026-08-26 — Exact response collection must accept portal correlation suffixes
+
+- Failure signature: the legacy bulk response receiver rejected the exact
+  signed response leaf
+  `R_43B046749202_20260826234809840_3bbc13fa.ready.zip` as an unexpected
+  filename even though its request ID, response signature, source role, and ZIP
+  hash matched the pending request.
+- Cause: the receiver's filename regular expression predates the portal's
+  current `_xxxxxxxx` correlation suffix. Filename parsing failed before the
+  response-package signature verifier could evaluate the selected archive.
+- Mandatory preflight: enumerate the exact selected response leaf and test its
+  current naming shape before invoking a collector. Select by pinned request
+  identity and exact ZIP SHA-256, extract only that archive to a fresh bounded
+  root, and let the signed manifest establish response identity. Do not use a
+  bulk legacy filename parser as the identity authority.
+- Recovery: do not retry the request or the incompatible bulk import. Preserve
+  the rejected collector invocation as local diagnostic evidence, run an
+  exact-ZIP signature-first collection under a fresh invocation/preaction, and
+  remove only the explicit temporary C: staging root after the collected copy
+  and its hash are verified.

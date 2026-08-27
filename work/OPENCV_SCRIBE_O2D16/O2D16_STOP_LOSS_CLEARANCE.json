@@ -1,0 +1,33 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-08-26T23:57:30Z",
+  "state": "PASS_O2D16_SLOT19_STOP_LOSS_CLEARANCE",
+  "incidentId": "OCV02_SLOT19_SOURCE_BINDING_SUMMARY_ABSENCE_20260826",
+  "operatorDirection": "Continue the project autonomously and do not hold Slot19 instead of reading its scribe.",
+  "signedPremiseFailureCount": 3,
+  "workflowReview": "work/OPENCV_SCRIBE_O2D16/O2D16_STOP_LOSS_WORKFLOW_REVIEW.json",
+  "workflowReviewSha256": "32275F147DECC49E7E3751139AA681D37E62D6C0FA9671357A789E2C8983E606",
+  "reviewFindings": [
+    "S19B1 disproved the installed-summary premise and exact OLS6 BF/DF evidence established the raw-source fallback.",
+    "O2D15 was rejected before entrypoint execution because its signed maintenance installedSha256 did not equal its endpoint payload hash.",
+    "O2D16 was rejected at endpoint line 97 before alias creation or image access because its live job self-pin retained a predecessor hash.",
+    "O2D16 rehearsal skipped the live-only job and installation assertions, so the passing rehearsal did not cover the failing branch.",
+    "The successor must mechanically compare all six endpoint self-pins and execute the live assertion branch against bounded fixtures before signing."
+  ],
+  "supportedRemedy": "B",
+  "authorizedMutation": "One fresh O2D17 review-only Slot19 raw-source scribe development attempt may use the approved O2D13 baseline plus the qualified V1R5 raw-source alias specification only after a machine gate proves every endpoint self-pin equals exact packaged or qualified installed evidence and a bounded live-branch fixture executes the job and installation assertions.",
+  "singleMutationAttemptAuthorized": true,
+  "automaticRetryAuthorized": false,
+  "processorTaskActionAuthorized": false,
+  "processActionAuthorized": true,
+  "authorizedProcessAction": "START_ONE_BOUNDED_PORTABLE_OPENCV_SCRIBE_DEVELOPMENT_SLOT19_CHILD_ONLY",
+  "imageReadAuthorized": true,
+  "sourceHashingAuthorized": true,
+  "sourceDeletionAuthorized": false,
+  "waferActionAuthorized": false,
+  "providerActivationAuthorized": false,
+  "holdClearanceAuthorized": false,
+  "slots22Through25ExposureAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

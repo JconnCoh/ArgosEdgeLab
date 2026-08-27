@@ -7197,3 +7197,41 @@ SHA-256
 Exact next action: publish O2D16 once, collect only its matching signed terminal
 response, and do not retry. Slot19 remains unfrozen, Slots22-25 unseen, provider
 disabled, processor untouched, and every hold preserved.
+
+## 2026-08-27 O2D16 signed self-pin failure reviewed; corrected O2D17 publication ready
+
+O2D16 was published once and returned matching signed response
+`R_43B046749202_20260826234809840_3bbc13fa`. Its endpoint rejected the live job
+at line 97 because the hard-coded job hash did not match the packaged job hash.
+The failure occurred before alias creation, image reads, work/output creation,
+Python start, processor contact, or provider activation. O2D16 is
+diagnostic-only, terminal, non-reusable, and must not be retried.
+
+The third signed premise failure activated stop-loss. Direct post-failure
+observation, workflow review, and explicit one-successor clearance are pinned.
+Fresh O2D17 uses the O2D13 approved development baseline and V1R5/raw-source
+specification; O2D15/O2D16 are excluded as parents and templates. Its
+self-pin/live-branch gate proves all six live dependencies match and both
+injected bad branches fail before alias creation or image read.
+
+The exact Windows PowerShell 5.1 rehearsal still reads Slot19 despite the
+upstream notch hold. It produced image-first string `FE5565R022F5` while
+retaining ambiguity, automatic-localization, upstream notch/identity, and
+`SCRIBE_REFERENCE_COVERAGE_HOLD`. That is development output, not accepted
+identity. The frozen 21,404-byte O2D17 request ZIP has SHA-256
+`21DD0588B7FEDA639EA039585EC1B09615E300C410488651AE9ED3E3FF7C662B`;
+final-package gate SHA-256 is
+`6111AF1177332DE4A7AAA1EED9A2443A5A588B78FFF1645610C3F876EA243167`;
+complete-route PASS gate SHA-256 is
+`B938B5103A6F182F9551CA59C573BEE9336444E5B6C993EDB4966B56E2B96CF4`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D17_COMPLETE_ROUTE_PASS_PUBLICATION_READY_CHECKPOINT_20260827.md`,
+SHA-256
+`92CE4780DF2AD241D089FD3D38ECA0CFF41B886401FA05F6C09DD5EEB4121B51`.
+
+Exact next action: publish O2D17 exactly once through persistent `U:`, collect
+only its matching signed terminal response, and do not retry. On exact pass,
+freeze Slot19 without accepting identity and continue directly through Slot20
+and Slot21. Slots22-25 remain unseen, the provider remains disabled, the
+protected processor remains untouched, and every hold remains preserved.

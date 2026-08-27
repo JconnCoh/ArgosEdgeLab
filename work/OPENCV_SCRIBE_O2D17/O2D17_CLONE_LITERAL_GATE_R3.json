@@ -1,0 +1,59 @@
+{
+  "schema": "argos_clone_literal_remediation_gate_v1",
+  "checkedUtc": "2026-08-27T00:21:34.4074741Z",
+  "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "mode": "GATE",
+  "manifest": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D17\\O2D17_CLONE_LITERAL_REMEDIATION_R3.json",
+  "manifestSha256": "ADAC6AA38EAE947294A58A0BDAC78CEF49B18373351E6D141FB87BFE9F97229F",
+  "pairCount": 3,
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_O2D13/Invoke-O2D13ScribeEndpoint.ps1",
+      "generated": "work/OPENCV_SCRIBE_O2D17/Invoke-O2D17ScribeEndpoint.ps1",
+      "sourceSha256": "08B6E76548CEE99EA11FC6245FB07C05F2E31E53B23562F8A1B15B1AC6EF6A32",
+      "generatedSha256": "FF885657C01EEF2CC17DC19D4A8773F7F355855C1FE50FE91F0E09DBA8B2F2DA",
+      "sourceRoots": [
+        "D:\\A2",
+        "D:\\AFCV1",
+        "D:\\O2D5"
+      ],
+      "generatedRoots": [
+        "D:\\A2",
+        "D:\\AFCV1",
+        "D:\\KLARFExport",
+        "D:\\O2D5",
+        "X:"
+      ],
+      "ruleCount": 5
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2D13/Test-O2D13Endpoint.ps1",
+      "generated": "work/OPENCV_SCRIBE_O2D17/Test-O2D17Endpoint.ps1",
+      "sourceSha256": "26F4B21073EA9307B504D8B4422E1093D73E3F495D177F2B84FD6CB4CE92A663",
+      "generatedSha256": "C7A3D56295F32144394417E45A6DA8555B67889F459AB528EC09506F78B3295B",
+      "sourceRoots": [
+        "C:\\O2D13T_10B0E71B"
+      ],
+      "generatedRoots": [
+        "C:\\O2D17T_CC5F7C6A",
+        "X:",
+        "X:\\BF.png",
+        "X:\\DF.png"
+      ],
+      "ruleCount": 4
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2D13/Test-O2D13NoArgumentFile.ps1",
+      "generated": "work/OPENCV_SCRIBE_O2D17/Test-O2D17NoArgumentFile.ps1",
+      "sourceSha256": "FEA64DA47C445C70309BB595FCFB1A7F9714B43F991FDD1BB710FA65736A6F2A",
+      "generatedSha256": "7F802730EBB1A6F41C66830356C73C184A54244F32F8201B742FFE4558D5F6C4",
+      "sourceRoots": [],
+      "generatedRoots": [],
+      "ruleCount": 1
+    }
+  ],
+  "violations": [],
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "evidenceWritten": true
+}

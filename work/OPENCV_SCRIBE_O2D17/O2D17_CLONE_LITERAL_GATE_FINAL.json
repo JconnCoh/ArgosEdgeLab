@@ -1,0 +1,75 @@
+{
+  "schema": "argos_clone_literal_remediation_gate_v1",
+  "checkedUtc": "2026-08-27T00:23:42.9025251Z",
+  "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "mode": "GATE",
+  "manifest": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D17\\O2D17_CLONE_LITERAL_REMEDIATION_FINAL.json",
+  "manifestSha256": "0D1E73C53E791238C927530BB158FA3E95367C2B4700536D1C8D0D29151719C1",
+  "pairCount": 4,
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_O2D13/Invoke-O2D13ScribeEndpoint.ps1",
+      "generated": "work/OPENCV_SCRIBE_O2D17/Invoke-O2D17ScribeEndpoint.ps1",
+      "sourceSha256": "08B6E76548CEE99EA11FC6245FB07C05F2E31E53B23562F8A1B15B1AC6EF6A32",
+      "generatedSha256": "FF885657C01EEF2CC17DC19D4A8773F7F355855C1FE50FE91F0E09DBA8B2F2DA",
+      "sourceRoots": [
+        "D:\\A2",
+        "D:\\AFCV1",
+        "D:\\O2D5"
+      ],
+      "generatedRoots": [
+        "D:\\A2",
+        "D:\\AFCV1",
+        "D:\\KLARFExport",
+        "D:\\O2D5",
+        "X:"
+      ],
+      "ruleCount": 5
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2D13/Test-O2D13Endpoint.ps1",
+      "generated": "work/OPENCV_SCRIBE_O2D17/Test-O2D17Endpoint.ps1",
+      "sourceSha256": "26F4B21073EA9307B504D8B4422E1093D73E3F495D177F2B84FD6CB4CE92A663",
+      "generatedSha256": "C7A3D56295F32144394417E45A6DA8555B67889F459AB528EC09506F78B3295B",
+      "sourceRoots": [
+        "C:\\O2D13T_10B0E71B"
+      ],
+      "generatedRoots": [
+        "C:\\O2D17T_CC5F7C6A",
+        "X:",
+        "X:\\BF.png",
+        "X:\\DF.png"
+      ],
+      "ruleCount": 4
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2D13/Test-O2D13NoArgumentFile.ps1",
+      "generated": "work/OPENCV_SCRIBE_O2D17/Test-O2D17NoArgumentFile.ps1",
+      "sourceSha256": "FEA64DA47C445C70309BB595FCFB1A7F9714B43F991FDD1BB710FA65736A6F2A",
+      "generatedSha256": "7F802730EBB1A6F41C66830356C73C184A54244F32F8201B742FFE4558D5F6C4",
+      "sourceRoots": [],
+      "generatedRoots": [],
+      "ruleCount": 1
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2D13/Build-O2D13Request.ps1",
+      "generated": "work/OPENCV_SCRIBE_O2D17/Build-O2D17Request.ps1",
+      "sourceSha256": "4F56A4D502233476B955D3D882FF0B50C70581AEB5CE813219106FD6FFC4F050",
+      "generatedSha256": "DA6B0D9ADF9A6D8E346910C2FCE2A260DB2C4BDDCF6153E420867607786D7CB3",
+      "sourceRoots": [
+        "C:\\ProgramData",
+        "D:\\A2"
+      ],
+      "generatedRoots": [
+        "C:\\ProgramData",
+        "D:\\A2",
+        "X:\\62619-433_20260824005735"
+      ],
+      "ruleCount": 3
+    }
+  ],
+  "violations": [],
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "evidenceWritten": true
+}

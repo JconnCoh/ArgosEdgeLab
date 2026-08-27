@@ -1,0 +1,75 @@
+{
+    "schema":  "argos_o2d17_self_pin_and_live_branch_gate_v1",
+    "createdUtc":  "2026-08-27T00:07:56.0770401Z",
+    "state":  "PASS_O2D17_SELF_PIN_AND_LIVE_BRANCH_GATE",
+    "endpointSha256":  "FF885657C01EEF2CC17DC19D4A8773F7F355855C1FE50FE91F0E09DBA8B2F2DA",
+    "approvedBasePath":  "work/OPENCV_SCRIBE_O2D13/Invoke-O2D13ScribeEndpoint.ps1",
+    "approvedBaseSha256":  "08B6E76548CEE99EA11FC6245FB07C05F2E31E53B23562F8A1B15B1AC6EF6A32",
+    "pins":  [
+                 {
+                     "id":  "engineSha",
+                     "endpointValue":  "F61F5954A77E6F730A2BF0D110A468535C4595D25DB21AFFE1573EF08B8139AB",
+                     "evidenceValue":  "F61F5954A77E6F730A2BF0D110A468535C4595D25DB21AFFE1573EF08B8139AB",
+                     "match":  true
+                 },
+                 {
+                     "id":  "jobSha",
+                     "endpointValue":  "A60B494AB1F88A937372E8ABE2B30513037E6DFF486BC23A41FA8D66FBA03563",
+                     "evidenceValue":  "A60B494AB1F88A937372E8ABE2B30513037E6DFF486BC23A41FA8D66FBA03563",
+                     "match":  true
+                 },
+                 {
+                     "id":  "refsSha",
+                     "endpointValue":  "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+                     "evidenceValue":  "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+                     "match":  true
+                 },
+                 {
+                     "id":  "installationSha",
+                     "endpointValue":  "1289EC11F092233D3AAB5ACF416B0212F1874F698F9BBC2B474829939BCDF596",
+                     "evidenceValue":  "1289EC11F092233D3AAB5ACF416B0212F1874F698F9BBC2B474829939BCDF596",
+                     "match":  true
+                 },
+                 {
+                     "id":  "bfSha",
+                     "endpointValue":  "83362565391B7245DAB450B67A6EF79062CAC431D6E7259E0ECEA594DCA3C239",
+                     "evidenceValue":  "83362565391B7245DAB450B67A6EF79062CAC431D6E7259E0ECEA594DCA3C239",
+                     "match":  true
+                 },
+                 {
+                     "id":  "dfSha",
+                     "endpointValue":  "3F1CF8D84C5E4C3F4DFADD6368A0DE667B06D956F664CD69C5B4390F5ABC5256",
+                     "evidenceValue":  "3F1CF8D84C5E4C3F4DFADD6368A0DE667B06D956F664CD69C5B4390F5ABC5256",
+                     "match":  true
+                 }
+             ],
+    "pinCount":  6,
+    "pinMatchCount":  6,
+    "liveBranchCases":  [
+                            {
+                                "id":  "GOOD_JOB_AND_INSTALLATION",
+                                "state":  "PASS",
+                                "jobAssertionExecuted":  true,
+                                "installationAssertionExecuted":  true
+                            },
+                            {
+                                "id":  "BAD_JOB_HASH_REFUSED",
+                                "state":  "PASS",
+                                "failureBeforeAliasOrImageRead":  true
+                            },
+                            {
+                                "id":  "BAD_INSTALLATION_HASH_REFUSED",
+                                "state":  "PASS",
+                                "failureBeforeAliasOrImageRead":  true
+                            }
+                        ],
+    "normalLiveSelfPinCallCount":  1,
+    "fixtureSelfPinCallCount":  1,
+    "rehearsalBranchAloneSufficient":  false,
+    "targetExecuted":  false,
+    "mutationsPerformed":  false,
+    "imageBytesRead":  false,
+    "providerActivated":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}
