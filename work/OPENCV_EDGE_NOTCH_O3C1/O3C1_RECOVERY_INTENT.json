@@ -1,0 +1,90 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-27T14:05:00.0000000Z",
+  "incidentId": "OCV03_O3T1_DIRECT_TRANSPORT_CAPABILITY_GAP_20260827",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 2,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3D1/O3I1_DIRECT_COMMAND_WITHDRAWAL.json",
+        "sha256": "641B05C72037D6434EC97DF7CF0C23BCA964D081965FDE1E9E6CE4F29234D73B",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      },
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3D1/O3T1_TRANSPORT_REHEARSAL_WITHDRAWAL.json",
+        "sha256": "32E39D4BD12498355662A0EDE12B3F158273553D16710897D687898594BA762C",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": true,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_OLS4/OCV00_DEEPEST_ALIAS_LOCAL_PROOF_FREEZE.json",
+      "sha256": "C6275BFA173B6E9E5EE0DCCB39FA57EF39BA5A318767309A6DA894141B6378B5"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/OPENCV_SCRIBE_O2D23/O2D23_COMPLETE_ROUTE_GATE_R3.json",
+      "sha256": "04AC15694066C3CE4971DC946F77AF3CDB6814920CAB8B3DCCEA4CDCE4B535D3"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": ["D:/KLARFExport/PatternedFront/Lot_62629-419_NotchBad_Hotspot"],
+    "requestedCapabilities": ["EXACT_SUBTREE_ALIAS_METADATA_INVENTORY"],
+    "requestedFields": ["directoryRows", "bmpLeafRows", "skipIdentityRows", "accessErrors", "complete"],
+    "decisionOptions": ["COMPLETE", "HOLD_INCOMPLETE"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3C1/O3C1_SUPPORTING_OBSERVATION.json",
+      "sha256": "80704FD39C400024680CCB6457EEC1FA914693A260E215E65A65FAF0EE53380A"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "contractPath": "work/OPENCV_EDGE_NOTCH_O3C1/MAINTENANCE_DEFINITION.json",
+    "contractSha256": "A886E948BC67922C1ACACBDAB94F5ED2984932E125ECE2B7940E5E3BF4AB2D3B"
+  },
+  "authorizationBoundary": {
+    "localDesignAndWindowsPowerShell51ProofAuthorized": true,
+    "packageBuildAuthorized": true,
+    "signatureAuthorized": true,
+    "livePublicationAuthorized": true,
+    "liveEndpointRequestsMaximum": 1,
+    "operatorAuthorization": "2026-08-27 user message: Go ahead"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

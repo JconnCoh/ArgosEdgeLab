@@ -1,0 +1,27 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v2",
+  "revision":"OCV03_O3C1_ROUTE_AND_SHARE_GATES_20260827",
+  "createdUtc":"2026-08-27T14:21:00Z",
+  "state":"PASS_PREACTION_CONTRACT",
+  "actionType":"LOCAL_WINDOWS_POWERSHELL51_ROUTE_AND_CURRENT_SHARE_EVIDENCE",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies":[
+    {"path":"AGENTS.md","sha256":"760F9242A3632B9B3AD8655581FAE6CCCE5F46292E77BEDF53DE4EA8629822A5"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"D4B0988DBCBAD840E880007EA2D4AD5B795BDE88AA5BAAFDB80D03C2EF9D460F"},
+    {"path":"work/ARGOS_CONTINUITY_STATE.json","sha256":"DF1D3B4D9EF61120BAF3BAFDE146994C40F6DE346532DA986173BA11CC21EED4"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3C1/O3C1_FINAL_PACKAGE_GATE.json","sha256":"6B86A5222FF55FCF791D26467D0D93444074563F70F795CB33AE57D1B9B1AB75"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3C1/O3C1_EXACT_PACKAGE_REHEARSAL_GATE.json","sha256":"36102773F30C915D9173891F904512646659F6A36371C5C4C3946F55B5A404E1"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3C1/Get-O3C1CurrentShareObservation.ps1","sha256":"D94BE2C673D988B64CFE08C86F221A2FD54C45B6FE3955A619E0371408A2BB9F"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3C1/O3C1_CLONE_LITERAL_REMEDIATION_SHARE.json","sha256":"DBCA6187C92DB3CD7FBE151A16A9C77FB56BA9A8F5CAA28A5780CEB4CDDB362F"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3C1/Test-O3C1Routes.ps1","sha256":"90397B6187622F32389628C5A931A76FA4A59C341397D17B12B10A42C489568C"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3C1/O3C1_ROUTE_INVOCATION.json","sha256":"FABE2005835B87DE1360961A1B8EAF8CE7D479224E21C77126AF0D15D8FBF543"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3C1/O3C1_CLONE_LITERAL_REMEDIATION_ROUTE.json","sha256":"A8B40CF9A2CA0DD5E1C5911BAFA35F72D63E7477C23BC2244A3BFE7FA87A4FB6"}
+  ],
+  "controls":{"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence":{"path":"work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json","sha256":"17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":["O3I1_DIRECT_LONG_CLIPBOARD","O3T1_DIRECT_LONG_CLIPBOARD"]},
+  "boundedAction":{"endpointRequests":0,"installedFileChanges":0,"taskActions":[],"processActions":[],"localGateOutputFilesMaximum":4,"persistentUDriveReadOnlyObservation":true,"imageRead":false,"sourceHashing":false,"sourceDeletion":false,"waferAction":false,"jbodContact":false},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

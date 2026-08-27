@@ -1,0 +1,39 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-27T14:04:00.0000000Z",
+  "incidentId": "OCV03_O3T1_DIRECT_TRANSPORT_CAPABILITY_GAP_20260827",
+  "state": "PASS_O3C1_SUPPORTING_OBSERVATION",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "sources": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3D1/O3I1_OPERATOR_SCREEN_STATE_20260827.json",
+      "sha256": "D8E575C69159463F6E2968DC7ACBA3923D267801A06D84E7F08DA3F499232E11",
+      "endpoint": "JBOD A1025645101",
+      "operatorObserved": true
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3D1/O3T1_TRANSPORT_REHEARSAL_TIMEOUT_BLOCKER.json",
+      "sha256": "F552B1303FFCA876132444A7354CF7A9795ABBDCB1CF489BCFF4D31D57E5080D",
+      "transport": "NESTED_RDP_CLIPBOARD"
+    }
+  ],
+  "expectedObserved": [
+    {"field": "exactSource", "expected": "D:/KLARFExport/PatternedFront/Lot_62629-419_NotchBad_Hotspot", "observed": "PINNED_IN_UNSUBMITTED_COMMAND"},
+    {"field": "commandSubmitted", "expected": true, "observed": false},
+    {"field": "matchingTerminalScalar", "expected": true, "observed": false},
+    {"field": "endpointInventoryCapability", "expected": "INSTALLED_QUALIFIED_METADATA_PROVIDER", "observed": "ABSENT"}
+  ],
+  "provedCapabilityGap": "NO_INSTALLED_QUALIFIED_HOTSPOT_METADATA_PROVIDER_AND_DIRECT_LONG_CLIPBOARD_TRANSPORT_DISQUALIFIED",
+  "supportedRemedy": "B",
+  "supportedRemedyDescription": "Install the previously qualified generic metadata-only exact-subtree provider through one rollback-gated signed maintenance request and run that installed producer in the same transaction.",
+  "filesRead": false,
+  "imageBytesRead": false,
+  "sourceHashingPerformed": false,
+  "mutationsPerformed": false,
+  "healthyProcessorTouched": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

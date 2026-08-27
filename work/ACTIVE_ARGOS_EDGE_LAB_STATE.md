@@ -7756,3 +7756,32 @@ Enter in either stranded console, explore progressively shorter clipboard
 commands, retry O3I1/O3T1, install an observation helper, or publish
 maintenance as observation. All provider/processor and authority/hold
 boundaries remain unchanged.
+
+## 2026-08-27 OCV-03 O3C1 signed metadata capability publication ready
+
+The operator authorized one endpoint capability improvement. A single signed,
+rollback-gated `MAINTENANCE_PATCH` now installs the unchanged qualified generic
+exact-subtree metadata provider and runs that installed producer against
+`PatternedFront\Lot_62629-419_NotchBad_Hotspot`. It performs directory/BMP
+metadata enumeration only. No image bytes, source hashes, pixel processing,
+inspection, task/process action, provider activation, source mutation, wafer
+action, or hold clearance is authorized.
+
+The exact signed package passed Windows PowerShell 5.1 entrypoint success and
+injected-failure rehearsals, exact ZIP signature/extraction, create,
+target-hash idempotence, unapproved-predecessor refusal, inherited endpoint
+rollback/queue safety, complete 43-path round-trip budget, clone/harness, and
+zero-recurrence gates. Persistent `U:` is exact and currently has zero pending
+requests. Request `REQ_20260827T141000111Z_62629419C3A1` has ZIP SHA-256
+`2D191B3FBC9C40D447F3D7EAE0C998946085BE1916275999F32EB92E963F9293`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3C1_METADATA_CAPABILITY_PUBLISH_READY_20260827.md`,
+SHA-256 `1A7AE8535F1324296B9693C438983684C1EAB607E17CB6C18B8B6B8A400557B4`.
+
+Exact next action: commit/push/fetch, require clean matching branch tips, run
+the exact Windows PowerShell 5.1 publisher preflight, publish once through the
+persistent `U:` mapping with no retry, and collect only the matching signed
+terminal response. Gateway acceptance is not execution evidence. All prior
+holds, prerequisites, disabled-provider/protected-processor boundaries, and
+review-only/training-false/XML-false/production-false authority remain.
