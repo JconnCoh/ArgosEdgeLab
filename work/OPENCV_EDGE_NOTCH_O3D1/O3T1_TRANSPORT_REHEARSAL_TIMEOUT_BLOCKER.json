@@ -1,0 +1,65 @@
+{
+  "schema": "argos_ocv03_exact_length_transport_rehearsal_blocker_v1",
+  "createdUtc": "2026-08-27T13:53:15.9626798Z",
+  "state": "STOP_DIRECT_TRANSPORT_LENGTH_CLASS_UNQUALIFIED",
+  "disposition": "PENDING_GATE",
+  "incidentId": "OCV03_O3T1_EXACT_LENGTH_TRANSPORT_REHEARSAL_20260827",
+  "predecessorObservation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3D1/O3I1_OPERATOR_SCREEN_STATE_20260827.json",
+    "sha256": "D8E575C69159463F6E2968DC7ACBA3923D267801A06D84E7F08DA3F499232E11",
+    "classification": "PASTED_ENCODED_COMMAND_REMAINS_IN_INPUT_BUFFER_NO_SUBMISSION_OR_EXECUTION_EVIDENCE"
+  },
+  "transportLengthGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3D1/O3T1_TRANSPORT_LENGTH_GATE.json",
+    "sha256": "FC76BEF24F89C28779C4FA84803DDF0905D34053DB90D7F11F9EF66AB87711F3",
+    "rehearsalAndSuccessorPastedCharacters": 5711,
+    "failedPredecessorPastedCharacters": 6647
+  },
+  "rehearsalAttempt": {
+    "commandPath": "work/OPENCV_EDGE_NOTCH_O3D1/O3T1_EXACT_LENGTH_TRANSPORT_REHEARSAL.ps1",
+    "commandSha256": "F1E2C1C2E0AC0BC649D0C756683B8954F5E1C59E2831F2BC788CCD7A7EEF7D19",
+    "sourceCharacters": 1583,
+    "expectedScalar": "PASS_O3T1",
+    "timeoutSeconds": 30,
+    "maximumResultCharacters": 16384,
+    "attemptCount": 1,
+    "terminalNonceReceived": false,
+    "terminalCommandHashReceived": false,
+    "terminalPassStateReceived": false,
+    "terminalResultReceived": false,
+    "remoteExecutionState": "UNKNOWN_NO_TERMINAL_RESULT",
+    "failureClass": "TIMED_OUT_WAITING_FOR_EXACT_JBOD_CLIPBOARD_RESPONSE",
+    "retryPerformed": false,
+    "sameNamespaceRetryAuthorized": false
+  },
+  "blockedSuccessor": {
+    "commandPath": "work/OPENCV_EDGE_NOTCH_O3D1/O3I2_HOTSPOT_METADATA_INVENTORY_COMMAND.ps1",
+    "commandSha256": "08C9208442BE6E7924D340A353AF96D2753F0154AD6F8281693D13C7F07449E5",
+    "sourceCharacters": 1583,
+    "pastedCharacters": 5711,
+    "executed": false,
+    "executionAuthorizedAfterFailedRehearsal": false
+  },
+  "capabilityGap": {
+    "exactRequiredCapability": "bounded exact-subtree directory and BMP metadata enumeration without image reads",
+    "statusRouteCapable": false,
+    "dataPullRouteCapableWithoutExactLeaves": false,
+    "maintenanceObservationAllowed": false,
+    "directClipboardLengthClassQualified": false,
+    "installedHelperAllowed": false,
+    "operatorAuthorityRequired": "one separately designed endpoint capability improvement or another already installed qualified metadata route"
+  },
+  "inventoryDisposition": {
+    "inventoryComplete": false,
+    "lotPresenceKnown": false,
+    "directoryCountKnown": false,
+    "bmpLeafCountKnown": false,
+    "imageBytesRead": false,
+    "sourceHashingPerformed": false,
+    "mutationsPerformed": false
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

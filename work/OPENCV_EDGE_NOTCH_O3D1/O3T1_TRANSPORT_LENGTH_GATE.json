@@ -1,0 +1,37 @@
+{
+  "schema": "argos_ocv03_direct_transport_length_gate_v1",
+  "createdUtc": "2026-08-27T13:50:07.2120215Z",
+  "state": "PASS_LOCAL_EXACT_LENGTH_CONSTRUCTION",
+  "directRunnerPath": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+  "directRunnerSha256": "CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D",
+  "expectedComputerName": "A1025645101",
+  "maximumResultCharacters": 16384,
+  "failedPredecessor": {
+    "commandPath": "work/OPENCV_EDGE_NOTCH_O3D1/O3I1_HOTSPOT_METADATA_INVENTORY_COMMAND.ps1",
+    "commandSha256": "3902E54F3EE8DFC5039040AAEC12AB3E63B6768C88B432E4C8F23743BB06B7FD",
+    "sourceCharacters": 1934,
+    "transportCharacters": 2474,
+    "pastedCharacters": 6647,
+    "disposition": "WITHDRAWN_NON_REUSABLE_NO_TERMINAL_RESULT"
+  },
+  "rehearsal": {
+    "commandPath": "work/OPENCV_EDGE_NOTCH_O3D1/O3T1_EXACT_LENGTH_TRANSPORT_REHEARSAL.ps1",
+    "commandSha256": "F1E2C1C2E0AC0BC649D0C756683B8954F5E1C59E2831F2BC788CCD7A7EEF7D19",
+    "sourceCharacters": 1583,
+    "transportCharacters": 2123,
+    "pastedCharacters": 5711,
+    "expectedScalar": "PASS_O3T1"
+  },
+  "successor": {
+    "commandPath": "work/OPENCV_EDGE_NOTCH_O3D1/O3I2_HOTSPOT_METADATA_INVENTORY_COMMAND.ps1",
+    "commandSha256": "08C9208442BE6E7924D340A353AF96D2753F0154AD6F8281693D13C7F07449E5",
+    "sourceCharacters": 1583,
+    "transportCharacters": 2123,
+    "pastedCharacters": 5711
+  },
+  "exactLengthClassEqual": true,
+  "remoteRehearsalExecuted": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

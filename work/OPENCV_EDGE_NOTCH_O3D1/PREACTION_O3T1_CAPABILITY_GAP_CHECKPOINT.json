@@ -1,0 +1,43 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV03_O3T1_CAPABILITY_GAP_CHECKPOINT_20260827T135400Z",
+  "createdUtc": "2026-08-27T13:54:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "CHECKPOINT_SUPERSESSION_ONLY",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "D4B0988DBCBAD840E880007EA2D4AD5B795BDE88AA5BAAFDB80D03C2EF9D460F"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3D1/O3I1_OPERATOR_SCREEN_STATE_20260827.json", "sha256": "D8E575C69159463F6E2968DC7ACBA3923D267801A06D84E7F08DA3F499232E11"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3D1/O3T1_TRANSPORT_REHEARSAL_TIMEOUT_BLOCKER.json", "sha256": "F552B1303FFCA876132444A7354CF7A9795ABBDCB1CF489BCFF4D31D57E5080D"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3D1/O3T1_TRANSPORT_REHEARSAL_WITHDRAWAL.json", "sha256": "32E39D4BD12498355662A0EDE12B3F158273553D16710897D687898594BA762C"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3D1/O3I2_HOTSPOT_METADATA_INVENTORY_COMMAND.ps1", "sha256": "08C9208442BE6E7924D340A353AF96D2753F0154AD6F8281693D13C7F07449E5"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {"used": false, "newExecutionAuthorized": false, "futureReuseAllowed": false, "blockedArtifacts": []},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

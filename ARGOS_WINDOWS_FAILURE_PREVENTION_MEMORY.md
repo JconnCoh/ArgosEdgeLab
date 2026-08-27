@@ -8842,3 +8842,53 @@ than rerunning it.
   Only when a remote parse/runtime error is visibly present may the existing
   bounded `CaptureConsoleText` action collect that already-visible text; any
   successor command requires a fresh separately governed namespace.
+
+## 2026-08-27 — A long encoded paste can remain in the console input buffer after the runner sends Enter
+
+- Failure signature: the operator's post-timeout screenshot showed the exact
+  long Base64 `powershell.exe -EncodedCommand ...;exit` text fully visible in
+  the JBOD PowerShell input buffer with the insertion cursor at its end. There
+  was no parse/runtime error, paste-confirmation dialog, returned prompt, or
+  nonce-bound result.
+- Cause: the substantive Invoke wrapper exceeded the transport's previously
+  proven short-paste class. The unchanged runner sent Enter only 500 ms after
+  Ctrl+V; the observed pending input proves that the command was not submitted
+  at that boundary. It does not prove whether Enter arrived too early, was
+  dropped, or was consumed while the nested terminal was still applying the
+  paste.
+- Mandatory preflight: calculate and record the complete pasted wrapper length,
+  not merely the embedded source length. Before a fresh substantive namespace,
+  run one non-mutating nonce-bound Invoke rehearsal whose final pasted length
+  is equal to or greater than the successor and whose source returns only a
+  fixed scalar. Continue only on its exact nonce, command hash, PASS state, and
+  non-truncated scalar result. The successor must remain at or below that exact
+  qualified length.
+- Recovery: never press Enter into the stranded input, clear it with blind
+  keystrokes, capture it as an error, or reuse the failed namespace. Leave the
+  stranded console untouched. A fresh console and fresh namespace may be used
+  only after the exact-length rehearsal and every observation/pre-action gate
+  pass. If the exact-length rehearsal fails, stop with a direct-transport
+  capability gap rather than installing an observation helper or using a
+  maintenance request.
+
+## 2026-08-27 — A failed equal-length fixed-scalar rehearsal disqualifies the substantive clipboard class
+
+- Failure signature: after the long inventory namespace was withdrawn, a fresh
+  1,583-character source that returned only `PASS_O3T1` produced the exact same
+  5,711-character pasted length planned for its substantive successor. It also
+  returned no nonce, command hash, PASS state, or scalar result before 30
+  seconds.
+- Cause: the 5,711-character nested RustDesk/RDP clipboard class is not
+  qualified by the current direct runner's 500 ms paste-to-Enter boundary. A
+  fixed-scalar failure rules out filesystem enumeration time, JSON size, image
+  access, and lot topology as the cause of that attempt.
+- Mandatory preflight: a substantive successor must never run when its equal-
+  or-greater-length fixed-scalar rehearsal lacks an exact terminal result.
+  Record the rehearsal source hash, source length, constructed pasted length,
+  timeout, and absent nonce/hash/state/result as a machine blocker.
+- Recovery: withdraw the rehearsal namespace, keep the blocked substantive
+  successor unexecuted, and stop with a direct-transport capability gap. Do not
+  explore progressively shorter clipboard commands, press Enter on stranded
+  input, install a helper, or publish maintenance as observation. Continuing
+  requires operator authority for one separately designed endpoint capability
+  improvement or another already installed qualified metadata route.

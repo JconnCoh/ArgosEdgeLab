@@ -7732,3 +7732,27 @@ dialog, ordinary prompt, or no visible console. Only a visibly reported
 parse/runtime error permits bounded `CaptureConsoleText`. Do not accept a
 dialog, repeat Enter, or retry the same command namespace. All provider,
 processor, authority, prerequisite, and hold boundaries remain unchanged.
+
+## 2026-08-27 OCV-03 O3T1 exact-length transport capability gap
+
+The operator screenshot shows O3I1's long encoded command stranded in the JBOD
+PowerShell input buffer with no error, dialog, prompt return, or result. A fresh
+fixed-scalar O3T1 rehearsal exactly matched the shorter O3I2 successor's 1,583
+source characters and 5,711 pasted characters. It also returned no nonce-bound
+result before 30 seconds and was not retried. O3I2 was not executed.
+
+The exact blocker is
+`work/OPENCV_EDGE_NOTCH_O3D1/O3T1_TRANSPORT_REHEARSAL_TIMEOUT_BLOCKER.json`,
+SHA-256 `F552B1303FFCA876132444A7354CF7A9795ABBDCB1CF489BCFF4D31D57E5080D`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3T1_TRANSPORT_CAPABILITY_GAP_20260827.md`,
+SHA-256 `E6CDBFBD3DED6823003848CD947374BA8011C2F196B522A575010D874DE4DB7F`.
+
+Exact next action: obtain operator authority for one separately designed
+endpoint capability improvement or identify another already installed
+qualified metadata route for bounded exact-subtree enumeration. Do not press
+Enter in either stranded console, explore progressively shorter clipboard
+commands, retry O3I1/O3T1, install an observation helper, or publish
+maintenance as observation. All provider/processor and authority/hold
+boundaries remain unchanged.

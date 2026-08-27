@@ -1,0 +1,41 @@
+{
+  "schema": "argos_ocv03_operator_visible_console_observation_v1",
+  "createdUtc": "2026-08-27T13:46:00Z",
+  "state": "OBSERVED_PASTED_ENCODED_COMMAND_PENDING_IN_INPUT_BUFFER",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "observationSource": "OPERATOR_PROVIDED_SCREENSHOT_IN_CURRENT_CODEX_TASK",
+  "imageToolUsed": false,
+  "imageBytesReadByCodexTool": false,
+  "imageHashComputed": false,
+  "visibleFacts": {
+    "nestedRdpTargetLabel": "172.16.0.10",
+    "terminalTitle": "Windows PowerShell",
+    "encodedCommandTextVisible": true,
+    "visibleCommandSuffix": ";exit",
+    "insertionCursorVisibleAfterCommand": true,
+    "parseOrRuntimeErrorVisible": false,
+    "pasteConfirmationDialogVisible": false,
+    "ordinaryPromptReturned": false,
+    "nonceBoundResultVisible": false
+  },
+  "classification": "PASTED_ENCODED_COMMAND_REMAINS_IN_INPUT_BUFFER_NO_SUBMISSION_OR_EXECUTION_EVIDENCE",
+  "permittedActions": {
+    "captureConsoleText": false,
+    "dismissCurrentDialog": false,
+    "repeatEnter": false,
+    "clearInputWithBlindKeystrokes": false,
+    "retryO3I1Namespace": false,
+    "freshExactLengthTransportRehearsalAfterNewGates": true
+  },
+  "inventoryDisposition": {
+    "inventoryComplete": false,
+    "lotPresenceKnown": false,
+    "bmpLeafCountKnown": false,
+    "imageBytesRead": false,
+    "sourceHashingPerformed": false
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

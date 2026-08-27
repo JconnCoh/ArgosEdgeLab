@@ -839,3 +839,14 @@ task from changing which revision, UI, evidence, or next action is active.
 - Result: fresh short gate passed exact `A1025645101`; the one frozen metadata-only inventory command returned no nonce-bound result before 50 seconds and was not retried. No inventory result exists.
 - Exact next action: operator reports the visible JBOD console state without input. Only a visibly present parse/runtime error permits bounded console-text capture; never accept a paste dialog or retry the same command namespace.
 - Authority: review-only; provider disabled, processor untouched, training/XML/production false, and every hold/prerequisite preserved.
+
+## 2026-08-27 — OCV-03 O3T1 exact-length direct-transport capability gap
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3T1_TRANSPORT_CAPABILITY_GAP_20260827.md`
+- SHA-256: `E6CDBFBD3DED6823003848CD947374BA8011C2F196B522A575010D874DE4DB7F`
+- Operator observation: O3I1 encoded command remained visibly pasted in the input buffer with no error, dialog, prompt return, or execution result.
+- Exact-length result: fresh fixed-scalar O3T1 at the successor's 5,711 pasted characters also timed out without nonce/hash/PASS/result and was not retried.
+- Blocker: `work/OPENCV_EDGE_NOTCH_O3D1/O3T1_TRANSPORT_REHEARSAL_TIMEOUT_BLOCKER.json`, SHA-256 `F552B1303FFCA876132444A7354CF7A9795ABBDCB1CF489BCFF4D31D57E5080D`.
+- O3I2 remains frozen/unexecuted; hotspot inventory and lot presence remain unknown; no image bytes or source hashes were read.
+- Exact next action: operator authority for one endpoint capability improvement or another already installed qualified metadata route. No Enter, shorter-command exploration, retry, helper install, or maintenance observation workaround.
+- Authority: review-only; provider disabled, processor untouched, training/XML/production false, and every hold/prerequisite preserved.
