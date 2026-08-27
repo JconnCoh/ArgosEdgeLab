@@ -8,7 +8,7 @@ if(([bool]$Preflight)-eq([bool]$Publish)){throw 'Specify exactly one of -Preflig
 function Assert-True([bool]$Condition,[string]$Message){if(-not$Condition){throw $Message}}
 function Get-Sha256([string]$Path){$s=[IO.File]::Open($Path,[IO.FileMode]::Open,[IO.FileAccess]::Read,[IO.FileShare]::Read);$h=[Security.Cryptography.SHA256]::Create();try{return([BitConverter]::ToString($h.ComputeHash($s))).Replace('-','')}finally{$h.Dispose();$s.Dispose()}}
 function Assert-Pin([string]$Path,[string]$Sha){Assert-True(Test-Path -LiteralPath $Path -PathType Leaf)"O3C1 publisher dependency absent: $Path";Assert-True((Get-Sha256 $Path)-eq$Sha)"O3C1 publisher dependency changed: $Path"}
-function Normalize-Root([string]$Path){return$Path.Replace('/','\').TrimEnd('\')}
+function Normalize-Root([string]$Path){return $Path.Replace('/','\').TrimEnd('\')}
 function Write-NewJson([string]$Path,[object]$Value){$bytes=(New-Object Text.UTF8Encoding($false)).GetBytes((($Value|ConvertTo-Json -Depth 12)+[Environment]::NewLine));$stream=New-Object IO.FileStream($Path,[IO.FileMode]::CreateNew,[IO.FileAccess]::Write,[IO.FileShare]::None);try{$stream.Write($bytes,0,$bytes.Length)}finally{$stream.Dispose()}}
 
 $project=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
