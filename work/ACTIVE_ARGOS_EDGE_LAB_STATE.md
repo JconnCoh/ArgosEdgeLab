@@ -7916,3 +7916,36 @@ review-only/training-false/XML-false/production-false authority remain.
 ## 2026-08-27 — OCV-03 O3D3R4 hotspot package ready (`PENDING_GATE`)
 
 The exact review-only Slot16-Slot25 hotspot request `REQ_20260827T165500111Z_62629419D3R4` is built and signed. ZIP SHA-256 is `C023B2AA688BDAA70C2CE9104D939592CEDE53FFAF11DF26960C248757483BC3`; endpoint rehearsal and exact-package preflight passed under Windows PowerShell 5.1. It has not been published. Commit/push and one-shot `U:` publication are next. Known notch locations and labels remain absent from the detector job; all holds and disabled-provider/healthy-processor boundaries remain unchanged.
+## 2026-08-27 OCV-03 O3D3R4 edge pass / notch partial / candidate-detail capability gap R2
+
+The exact O3D3R4 hotspot request was published once and its matching JBOD-signed
+terminal response was collected. Both BF and DF wafer edges qualified on all
+ten Slot16-Slot25 pairs. Slots19-Slot25 form a post-freeze seven-row candidate
+cluster spanning only `0.04718067799227299` degrees. Slots16-Slot17 remain
+no-manufactured-morphology holds; Slot18 is conservatively held as a
+`6.204958676650719`-degree post-freeze outlier, without being called correct or
+incorrect. Rotation authority remains false.
+
+Response collection gate SHA-256 is
+`578CBB5689ACE80744D9667D0E1AB2FFE65B40FDF5E778935218C3EEE81F607E`;
+detector freeze is
+`51B5D82E3BF070D0DE956EF92B0AAB0EC770F845EACE101A3696132F612288DB`;
+assessment is
+`F04FA882D17876AFF20518C2B40ABF9569DD49B61ACB57BCFB3A5FD610BF03E5`.
+No known location or historical label entered the detector.
+
+The detailed per-channel JSON needed to diagnose Slots16-Slot18 is under a
+JBOD `D:\A2` output root that is not covered by the installed read-only data
+roots. Maintenance cannot be used as an observation workaround. Explicit
+operator authority is required for one exact JSON-only read-only capability
+improvement or an existing qualified equivalent. The operator-marked
+`Lot_62627-193` Slot01 backside chipout remains a distinct scorer-only
+`PENDING_GATE` until clean provenance and pairing are frozen.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3D3R4_EDGE_PASS_NOTCH_PARTIAL_CANDIDATE_DETAIL_CAPABILITY_GAP_R2_20260827.md`,
+SHA-256 `1F9F1297B8F8DA3ACE5CA45CDDC964475463F825EB6EA0EF966B10D73665050E`.
+The provisional predecessor is superseded after the passed checkpoint-promotion
+zero-recurrence audit. All holds, disabled-provider/protected-processor
+boundaries, and review-only/training-false/XML-false/production-false authority
+remain.

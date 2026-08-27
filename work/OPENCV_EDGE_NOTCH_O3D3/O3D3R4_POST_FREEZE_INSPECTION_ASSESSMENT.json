@@ -1,0 +1,95 @@
+{
+  "schema": "argos_o3d3r4_post_freeze_inspection_assessment_v1",
+  "createdUtc": "2026-08-27T17:07:00Z",
+  "state": "O3D3R4_EDGE_PASS_NOTCH_PARTIAL_HOLD_DETAIL_OBSERVATION_REQUIRED",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "detectorOutputFreezeGate": "work/OPENCV_EDGE_NOTCH_O3D3/O3D3R4_DETECTOR_OUTPUT_FREEZE_GATE.json",
+  "signedResponseCollectionGate": "work/OPENCV_EDGE_NOTCH_O3D3/O3D3R4_EXACT_RESPONSE_COLLECTION_GATE.json",
+  "sourceAcquisitionFingerprintSha256": "EB45C81DB9A4A3B220B0D4161C2F280A7FB402A40296FB94110223692073BAA0",
+  "edgeAssessment": {
+    "inputCount": 10,
+    "bfQualifiedCount": 10,
+    "dfQualifiedCount": 10,
+    "state": "PASS_ALL_TEN_BF_DF_WAFER_EDGES_QUALIFIED",
+    "minimumBfAngularCoverageFraction": 0.9027777777777778,
+    "minimumDfAngularCoverageFraction": 1.0,
+    "maximumBfRmsResidualPx": 2.904452024111221,
+    "maximumDfRmsResidualPx": 3.0880705209793224,
+    "maximumChannelCenterDifferencePx": 2.9467285928824913,
+    "maximumChannelRadiusDifferencePx": 17.28617869909067,
+    "fullPerimeterInference": true,
+    "bfDfIndependent": true
+  },
+  "notchAssessment": {
+    "detectorPassRowCount": 8,
+    "detectorHoldRowCount": 2,
+    "postFreezeConsistentReviewCandidateCount": 7,
+    "postFreezeUnresolvedCount": 3,
+    "detectorHolds": [
+      {"identity": "62629-419_20260824112405_SLOT16", "reason": "NO_MANUFACTURED_NOTCH_MORPHOLOGY", "physicalCandidateCount": 1},
+      {"identity": "62629-419_20260824112405_SLOT17", "reason": "NO_MANUFACTURED_NOTCH_MORPHOLOGY", "physicalCandidateCount": 2}
+    ],
+    "tightPostFreezeCohort": {
+      "identities": [
+        "62629-419_20260824112405_SLOT19",
+        "62629-419_20260824112405_SLOT20",
+        "62629-419_20260824112405_SLOT21",
+        "62629-419_20260824112405_SLOT22",
+        "62629-419_20260824112405_SLOT23",
+        "62629-419_20260824112405_SLOT24",
+        "62629-419_20260824112405_SLOT25"
+      ],
+      "minimumReviewAngleDegrees": 89.68709273835313,
+      "maximumReviewAngleDegrees": 89.7342734163454,
+      "rangeDegrees": 0.04718067799227299,
+      "medianReviewAngleDegrees": 89.70412943255408,
+      "role": "POST_INFERENCE_DIAGNOSTIC_ONLY_NOT_DETECTOR_PRIOR"
+    },
+    "outlierHold": {
+      "identity": "62629-419_20260824112405_SLOT18",
+      "detectorReviewAngleDegrees": 95.9090881092048,
+      "differenceFromFrozenSevenRowMedianDegrees": 6.204958676650719,
+      "detectorSelectedCrossChannelOverlap": 0.8296838466391037,
+      "state": "HOLD_POST_FREEZE_COHORT_INCONSISTENCY_PENDING_CANDIDATE_DETAIL_OR_AUTHORITATIVE_LABEL",
+      "calledIncorrect": false,
+      "calledCorrect": false
+    },
+    "rotationAuthorityGranted": false
+  },
+  "historicalComparison": {
+    "authoritativePreOpenCvTruthRecordFoundForThisHotspotLot": false,
+    "boundedSearchRoots": ["work/OPENCV_EDGE_NOTCH_*", "work/FRONTSIDE_INSPECTION_REVIEW_ONLY", "work/ARGOS_CONTINUITY_STATE.json"],
+    "post2ScorerLabelsExistButAreDifferentPhysicalWafers": true,
+    "post2LabelsAppliedToThisLot": false,
+    "legacyFailedRotationAcceptedAsTruth": false,
+    "neighboringWaferClusterAcceptedAsDetectorPrior": false,
+    "knownNotchLocationRequiredByAlgorithm": false
+  },
+  "sourceCodeDiagnostic": {
+    "frozenR6EngineSha256": "90839F14CEEED7C2DFC6E1601195F6927C4631E508F9EB859E77A93745D3FB30",
+    "detailedCandidateRecordsRequiredBeforePatch": true,
+    "summaryOmitsPerChannelCandidateAnglesAndMorphologyMetrics": true,
+    "potentialRiskCrossChannelBestOfFeatureAssembly": true,
+    "potentialRiskReviewAngleChosenFromNarrowerChannelOnly": true,
+    "patchAuthorizedFromSummaryAlone": false,
+    "thresholdChangeAuthorizedFromSummaryAlone": false
+  },
+  "additionalChipoutCandidate": {
+    "recordPath": "work/OPENCV_EDGE_NOTCH_O3D2/O3D2_ADDITIONAL_BACKSIDE_CHIPOUT_REGRESSION_CANDIDATE.json",
+    "operatorReportedDirectory": "D:/KLARFExport/PatternedFront/Lot_62627-193/62627-193_20260820124250/Slot01/BrightfieldBacksideWafer/resizedImage",
+    "markedCopyRole": "POST_INFERENCE_SCORER_OR_ANNOTATION_ONLY",
+    "backsideFamilyDistinctFromCurrentFrontsideCohort": true,
+    "detectorInputAuthorized": false,
+    "thresholdSourceAuthorized": false,
+    "imageBytesRead": false
+  },
+  "knownNotchLocationConsumed": false,
+  "notchAnglePriorConsumed": false,
+  "fixedAngularSearchWindowConsumed": false,
+  "regressionLabelsConsumed": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionRoutingEnabled": false
+}
