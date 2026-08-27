@@ -7368,3 +7368,30 @@ only its matching signed terminal response, and do not retry. On exact pass,
 freeze Slot19 without accepting identity and continue directly through Slot20
 and Slot21. Slots22-25 remain unseen, the provider remains disabled, the
 protected processor remains untouched, and every hold remains preserved.
+
+## 2026-08-27 O2D20 Slot22 blind request publication ready
+
+The V1R5 development engine remains immutably frozen at SHA-256
+`F61F5954A77E6F730A2BF0D110A468535C4595D25DB21AFFE1573EF08B8139AB`.
+Slot22 is the first independent blind-validation member and is bound only to
+BF `5B7ADC1B1A52BE73A3C32D6663E92FC467C640D5502AA77A8309A059C444CDF5`
+and DF `3A923FD19A8E625D3023BACFAA0481A1E73CE0EB6859E3327760269B2D90E840`.
+No tuning occurred after freeze; Slots23-25 remain unseen.
+
+The exact signed 21,409-byte O2D20 request ZIP has SHA-256
+`B017640583757E80C07FD55C7C196CAAA334A5E733980D18B8197F0B9C5BC35C`;
+final-package gate SHA-256 is
+`D16EC4803778B241C0C06AB882BA6C19215E790CF1A3E1376DBC676A55D844B4`;
+complete-route PASS gate SHA-256 is
+`00CD3EA848D1F717C30F656BECE23B4D2BD2E3389D00BB8BE75732AC60654FBE`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D20_COMPLETE_ROUTE_PASS_SLOT22_BLIND_PUBLICATION_READY_CHECKPOINT_20260827.md`,
+SHA-256
+`1FC9B413B4C2238A7A8EBC9B89193B847E53BEA3B11FA1E63802BE0469EF1C74`.
+
+Exact next action: after a clean commit/push and matching branch tips, publish
+O2D20 once through persistent `U:` and collect only its exact matching signed
+terminal response. No retry. Keep Slots23-25 unseen until Slot22 is terminal.
+Provider/processor/training/XML/production authority and every existing hold
+remain unchanged.

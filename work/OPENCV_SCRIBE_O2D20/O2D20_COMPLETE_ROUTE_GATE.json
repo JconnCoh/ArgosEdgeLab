@@ -1,0 +1,952 @@
+{
+    "schema":  "argos_o2d20_complete_route_gate_v1",
+    "createdUtc":  "2026-08-27T02:19:45.5718287Z",
+    "state":  "HOLD_O2D20_COMPLETE_ROUTE_GATE_ARGOS_INBOUND_RELAY_UNPROVEN",
+    "requestId":  "REQ_20260827T020900111Z_5B7ADC1BBF26",
+    "jobClass":  "MAINTENANCE_PATCH",
+    "routePathRowsEvaluated":  129,
+    "requestLeafCountPerExtractedHop":  5,
+    "requestExtractedHopCount":  9,
+    "responseLeafCountPerHop":  5,
+    "responseHopCount":  10,
+    "reservedSuffixCharacters":  32,
+    "pathBudgetState":  "PASS_PATH_BUDGET",
+    "maximumEffectiveLength":  193,
+    "maximumComponentLength":  63,
+    "longestPath":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\R_0123456789AB_20260827012345999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.json",
+    "requestZipSha256":  "B017640583757E80C07FD55C7C196CAAA334A5E733980D18B8197F0B9C5BC35C",
+    "requestManifestSha256":  "838EABB5FF521CCD144A3D058522B3CE39C27B4AAA0EACF3A9896CFE79D8F003",
+    "requestSignatureSha256":  "F0D62C1EF1CA5C776C3FE867AAD9DBFE79500E29A514A250CB9A13FAE82D75EF",
+    "finalPackageGateSha256":  "D16EC4803778B241C0C06AB882BA6C19215E790CF1A3E1376DBC676A55D844B4",
+    "endpointPayloadSha256":  "4A0A3DDD28EB22ED788BE4EA373BF490A27B6BA88FC5421D08F6F04794E9079D",
+    "declaredInstalledSha256":  "4A0A3DDD28EB22ED788BE4EA373BF490A27B6BA88FC5421D08F6F04794E9079D",
+    "maintenanceInstalledShaMatchesPayload":  true,
+    "declaredRehearsalGateState":  "PASS_O2D20_ENTRYPOINT_TEST_GATE_R2",
+    "declaredRehearsalGateSha256":  "70080F7CF642AC578C050CF35B4B7F32B6EFF46E60F6481F28FF97986B571C25",
+    "declaredSelfPinGateState":  "PASS_O2D20_SELF_PIN_AND_LIVE_BRANCH_GATE",
+    "declaredSelfPinGateSha256":  "42ECAADD9A7E492B56B6679CB3679B71AB9B785E465A15B0E54513420B281180",
+    "endpointWorkerSha256":  "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "installedEndpointConfigSha256":  "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F",
+    "inheritedQueueSafetyGateSha256":  "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+    "directJbodObservationSha256":  "91B5A9219F72845187D7CB17DAB0F1D74AF223E7DDA11E380EEA26148C60CD01",
+    "jbodEndpointWorkerObserved":  true,
+    "jbodResponseSenderObserved":  true,
+    "o2d4ConfirmedAbsentFromJbod":  true,
+    "argosInboundRelayCurrentHealthProved":  false,
+    "routeHealthDisposition":  "HOLD_CURRENT_ARGOS_INBOUND_RELAY_HEALTH_NOT_DIRECTLY_PROVED",
+    "requiredNextObservation":  "DIRECT_READ_ONLY_ARGOS_INBOUND_RELAY_AND_QUEUE_HEALTH",
+    "retryAuthorized":  false,
+    "publicationAuthorized":  false,
+    "targetExecuted":  false,
+    "targetMutationsPerformed":  false,
+    "sourceImageBytesRead":  false,
+    "providerActivated":  false,
+    "localEvidenceWritten":  true,
+    "rows":  [
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D20\\O2D20_FINAL_PACKAGE_GATE.json",
+                     "pathLength":  105,
+                     "effectiveLength":  137,
+                     "longestComponentLength":  29,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D20\\final\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready.zip",
+                     "pathLength":  128,
+                     "effectiveLength":  160,
+                     "longestComponentLength":  46,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D20\\O2D20_COMPLETE_ROUTE_GATE.json",
+                     "pathLength":  106,
+                     "effectiveLength":  138,
+                     "longestComponentLength":  30,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "U:\\ProjectPortalRO\\requests\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready.zip.upload",
+                     "pathLength":  81,
+                     "effectiveLength":  113,
+                     "longestComponentLength":  53,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "U:\\ProjectPortalRO\\requests\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready.zip",
+                     "pathLength":  74,
+                     "effectiveLength":  106,
+                     "longestComponentLength":  46,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\S\\requests\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready.zip",
+                     "pathLength":  64,
+                     "effectiveLength":  96,
+                     "longestComponentLength":  46,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\S\\requests\\processed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready.zip",
+                     "pathLength":  74,
+                     "effectiveLength":  106,
+                     "longestComponentLength":  46,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\share\\staging\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready.zip",
+                     "pathLength":  96,
+                     "effectiveLength":  128,
+                     "longestComponentLength":  46,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\share\\request_archive\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready.zip",
+                     "pathLength":  104,
+                     "effectiveLength":  136,
+                     "longestComponentLength":  46,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\share\\response_zip_archive\\R_0123456789AB_20260827012345999_a1b2c3d4.ready.zip",
+                     "pathLength":  114,
+                     "effectiveLength":  146,
+                     "longestComponentLength":  51,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "U:\\ProjectPortalRO\\responses\\R_0123456789AB_20260827012345999_a1b2c3d4.ready.zip",
+                     "pathLength":  80,
+                     "effectiveLength":  112,
+                     "longestComponentLength":  51,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\A6R\\R_0123456789AB_20260827012345999_a1b2c3d4.ready.zip",
+                     "pathLength":  58,
+                     "effectiveLength":  90,
+                     "longestComponentLength":  51,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D20\\final\\extract\\PORTAL_REQUEST_MANIFEST.json",
+                     "pathLength":  118,
+                     "effectiveLength":  150,
+                     "longestComponentLength":  28,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D20\\final\\extract\\PORTAL_REQUEST_MANIFEST.sig",
+                     "pathLength":  117,
+                     "effectiveLength":  149,
+                     "longestComponentLength":  27,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D20\\final\\extract\\payload\\Invoke-O2D20ScribeEndpoint.ps1",
+                     "pathLength":  128,
+                     "effectiveLength":  160,
+                     "longestComponentLength":  30,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D20\\final\\extract\\payload\\ArgosOpenCvScribeV1R5.py",
+                     "pathLength":  122,
+                     "effectiveLength":  154,
+                     "longestComponentLength":  24,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_SCRIBE_O2D20\\final\\extract\\payload\\O2D20_SLOT22_JOB.json",
+                     "pathLength":  119,
+                     "effectiveLength":  151,
+                     "longestComponentLength":  21,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_to_argos\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "pathLength":  133,
+                     "effectiveLength":  165,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_to_argos\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.sig",
+                     "pathLength":  132,
+                     "effectiveLength":  164,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_to_argos\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\Invoke-O2D20ScribeEndpoint.ps1",
+                     "pathLength":  143,
+                     "effectiveLength":  175,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_to_argos\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\ArgosOpenCvScribeV1R5.py",
+                     "pathLength":  137,
+                     "effectiveLength":  169,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_to_argos\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\O2D20_SLOT22_JOB.json",
+                     "pathLength":  134,
+                     "effectiveLength":  166,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_from_gateway\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "pathLength":  137,
+                     "effectiveLength":  169,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_from_gateway\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.sig",
+                     "pathLength":  136,
+                     "effectiveLength":  168,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_from_gateway\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\Invoke-O2D20ScribeEndpoint.ps1",
+                     "pathLength":  147,
+                     "effectiveLength":  179,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_from_gateway\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\ArgosOpenCvScribeV1R5.py",
+                     "pathLength":  141,
+                     "effectiveLength":  173,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_from_gateway\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\O2D20_SLOT22_JOB.json",
+                     "pathLength":  138,
+                     "effectiveLength":  170,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "pathLength":  123,
+                     "effectiveLength":  155,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.sig",
+                     "pathLength":  122,
+                     "effectiveLength":  154,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\Invoke-O2D20ScribeEndpoint.ps1",
+                     "pathLength":  133,
+                     "effectiveLength":  165,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\ArgosOpenCvScribeV1R5.py",
+                     "pathLength":  127,
+                     "effectiveLength":  159,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\O2D20_SLOT22_JOB.json",
+                     "pathLength":  124,
+                     "effectiveLength":  156,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\sent\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "pathLength":  120,
+                     "effectiveLength":  152,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\sent\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.sig",
+                     "pathLength":  119,
+                     "effectiveLength":  151,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\sent\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\Invoke-O2D20ScribeEndpoint.ps1",
+                     "pathLength":  130,
+                     "effectiveLength":  162,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\sent\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\ArgosOpenCvScribeV1R5.py",
+                     "pathLength":  124,
+                     "effectiveLength":  156,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\sent\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\O2D20_SLOT22_JOB.json",
+                     "pathLength":  121,
+                     "effectiveLength":  153,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "pathLength":  129,
+                     "effectiveLength":  161,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.sig",
+                     "pathLength":  128,
+                     "effectiveLength":  160,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\Invoke-O2D20ScribeEndpoint.ps1",
+                     "pathLength":  139,
+                     "effectiveLength":  171,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\ArgosOpenCvScribeV1R5.py",
+                     "pathLength":  133,
+                     "effectiveLength":  165,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\O2D20_SLOT22_JOB.json",
+                     "pathLength":  130,
+                     "effectiveLength":  162,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\completed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "pathLength":  141,
+                     "effectiveLength":  173,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\completed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.sig",
+                     "pathLength":  140,
+                     "effectiveLength":  172,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\completed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\Invoke-O2D20ScribeEndpoint.ps1",
+                     "pathLength":  151,
+                     "effectiveLength":  183,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\completed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\ArgosOpenCvScribeV1R5.py",
+                     "pathLength":  145,
+                     "effectiveLength":  177,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\completed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\O2D20_SLOT22_JOB.json",
+                     "pathLength":  142,
+                     "effectiveLength":  174,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\failed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "pathLength":  138,
+                     "effectiveLength":  170,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\failed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.sig",
+                     "pathLength":  137,
+                     "effectiveLength":  169,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\failed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\Invoke-O2D20ScribeEndpoint.ps1",
+                     "pathLength":  148,
+                     "effectiveLength":  180,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\failed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\ArgosOpenCvScribeV1R5.py",
+                     "pathLength":  142,
+                     "effectiveLength":  174,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\failed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\O2D20_SLOT22_JOB.json",
+                     "pathLength":  139,
+                     "effectiveLength":  171,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\replayed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "pathLength":  140,
+                     "effectiveLength":  172,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\replayed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\PORTAL_REQUEST_MANIFEST.sig",
+                     "pathLength":  139,
+                     "effectiveLength":  171,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\replayed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\Invoke-O2D20ScribeEndpoint.ps1",
+                     "pathLength":  150,
+                     "effectiveLength":  182,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\replayed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\ArgosOpenCvScribeV1R5.py",
+                     "pathLength":  144,
+                     "effectiveLength":  176,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\replayed\\REQ_20260827T020900111Z_5B7ADC1BBF26.ready\\payload\\O2D20_SLOT22_JOB.json",
+                     "pathLength":  141,
+                     "effectiveLength":  173,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62619-433",
+                     "pathLength":  43,
+                     "effectiveLength":  75,
+                     "longestComponentLength":  14,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "X:\\62619-433_20260824005735\\Slot22\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot22_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "pathLength":  137,
+                     "effectiveLength":  169,
+                     "longestComponentLength":  63,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "X:\\62619-433_20260824005735\\Slot22\\DarkfieldFrontsideWafer\\resizedImage\\62619-433_Slot22_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "pathLength":  133,
+                     "effectiveLength":  165,
+                     "longestComponentLength":  61,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "X:\\",
+                     "pathLength":  3,
+                     "effectiveLength":  35,
+                     "longestComponentLength":  2,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+                     "pathLength":  32,
+                     "effectiveLength":  64,
+                     "longestComponentLength":  13,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\work\\J_0123456789AB_01234567\\MAINTENANCE.stdout.txt",
+                     "pathLength":  107,
+                     "effectiveLength":  139,
+                     "longestComponentLength":  23,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\work\\J_0123456789AB_01234567\\MAINTENANCE.stderr.txt",
+                     "pathLength":  107,
+                     "effectiveLength":  139,
+                     "longestComponentLength":  23,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\work\\J_0123456789AB_01234567\\RESULT.json",
+                     "pathLength":  96,
+                     "effectiveLength":  128,
+                     "longestComponentLength":  23,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\compact\\C_0123456789AB_01234567\\FAILURE.json",
+                     "pathLength":  100,
+                     "effectiveLength":  132,
+                     "longestComponentLength":  23,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\ledger\\REQ_20260827T020900111Z_5B7ADC1BBF26.json",
+                     "pathLength":  104,
+                     "effectiveLength":  136,
+                     "longestComponentLength":  41,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\maintenance\\REQ_20260827T020900111Z_5B7ADC1BBF26\\prior\\M000_0123456789_0123456789.prior",
+                     "pathLength":  143,
+                     "effectiveLength":  175,
+                     "longestComponentLength":  36,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\maintenance\\REQ_20260827T020900111Z_5B7ADC1BBF26\\failed_new\\M000_0123456789_0123456789.rollback",
+                     "pathLength":  151,
+                     "effectiveLength":  183,
+                     "longestComponentLength":  36,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\.M000_0123456789_0123456789.stage",
+                     "pathLength":  83,
+                     "effectiveLength":  115,
+                     "longestComponentLength":  33,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\.M000_0123456789_0123456789.restore",
+                     "pathLength":  85,
+                     "effectiveLength":  117,
+                     "longestComponentLength":  35,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_O2D20.ps1",
+                     "pathLength":  65,
+                     "effectiveLength":  97,
+                     "longestComponentLength":  19,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\A2\\w\\ocv\\O2D20_20260827T020900000Z_5B7ADC1B.partial\\refs\\PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+                     "pathLength":  98,
+                     "effectiveLength":  130,
+                     "longestComponentLength":  42,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\A2\\w\\ocv\\O2D20_20260827T020900000Z_5B7ADC1B\\ArgosOpenCvScribeV1R5.py",
+                     "pathLength":  71,
+                     "effectiveLength":  103,
+                     "longestComponentLength":  34,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\A2\\w\\ocv\\O2D20_20260827T020900000Z_5B7ADC1B\\JOB.json",
+                     "pathLength":  55,
+                     "effectiveLength":  87,
+                     "longestComponentLength":  34,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\A2\\w\\ocv\\O2D20_20260827T020900000Z_5B7ADC1B\\refs\\glyphs_v5_confirmed_20260806\\028_62630_456_SLOT22_P04_S.png",
+                     "pathLength":  111,
+                     "effectiveLength":  143,
+                     "longestComponentLength":  34,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\A2\\o\\ocv\\O2D20_20260827T020900000Z_5B7ADC1B\\RESULT.json",
+                     "pathLength":  58,
+                     "effectiveLength":  90,
+                     "longestComponentLength":  34,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\A2\\o\\ocv\\O2D20_20260827T020900000Z_5B7ADC1B\\RUN_GATE.json",
+                     "pathLength":  60,
+                     "effectiveLength":  92,
+                     "longestComponentLength":  34,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\A2\\o\\ocv\\O2D20_20260827T020900000Z_5B7ADC1B\\EXECUTION.json",
+                     "pathLength":  61,
+                     "effectiveLength":  93,
+                     "longestComponentLength":  34,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\R_0123456789AB_20260827012345999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathLength":  161,
+                     "effectiveLength":  193,
+                     "longestComponentLength":  55,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\R_0123456789AB_20260827012345999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.sig",
+                     "pathLength":  160,
+                     "effectiveLength":  192,
+                     "longestComponentLength":  55,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\R_0123456789AB_20260827012345999_a1b2c3d4.ready.partial\\MAINTENANCE.stdout.txt",
+                     "pathLength":  154,
+                     "effectiveLength":  186,
+                     "longestComponentLength":  55,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\R_0123456789AB_20260827012345999_a1b2c3d4.ready.partial\\MAINTENANCE.stderr.txt",
+                     "pathLength":  154,
+                     "effectiveLength":  186,
+                     "longestComponentLength":  55,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\R_0123456789AB_20260827012345999_a1b2c3d4.ready.partial\\RESULT.json",
+                     "pathLength":  143,
+                     "effectiveLength":  175,
+                     "longestComponentLength":  55,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathLength":  138,
+                     "effectiveLength":  170,
+                     "longestComponentLength":  55,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.sig",
+                     "pathLength":  137,
+                     "effectiveLength":  169,
+                     "longestComponentLength":  55,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready.partial\\MAINTENANCE.stdout.txt",
+                     "pathLength":  131,
+                     "effectiveLength":  163,
+                     "longestComponentLength":  55,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready.partial\\MAINTENANCE.stderr.txt",
+                     "pathLength":  131,
+                     "effectiveLength":  163,
+                     "longestComponentLength":  55,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready.partial\\RESULT.json",
+                     "pathLength":  120,
+                     "effectiveLength":  152,
+                     "longestComponentLength":  55,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathLength":  130,
+                     "effectiveLength":  162,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.sig",
+                     "pathLength":  129,
+                     "effectiveLength":  161,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stdout.txt",
+                     "pathLength":  123,
+                     "effectiveLength":  155,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stderr.txt",
+                     "pathLength":  123,
+                     "effectiveLength":  155,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\RESULT.json",
+                     "pathLength":  112,
+                     "effectiveLength":  144,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\sent\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathLength":  127,
+                     "effectiveLength":  159,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\sent\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.sig",
+                     "pathLength":  126,
+                     "effectiveLength":  158,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\sent\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stdout.txt",
+                     "pathLength":  120,
+                     "effectiveLength":  152,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\sent\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stderr.txt",
+                     "pathLength":  120,
+                     "effectiveLength":  152,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\sent\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\RESULT.json",
+                     "pathLength":  109,
+                     "effectiveLength":  141,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\from_jbod\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathLength":  131,
+                     "effectiveLength":  163,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\from_jbod\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.sig",
+                     "pathLength":  130,
+                     "effectiveLength":  162,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\from_jbod\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stdout.txt",
+                     "pathLength":  124,
+                     "effectiveLength":  156,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\from_jbod\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stderr.txt",
+                     "pathLength":  124,
+                     "effectiveLength":  156,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\from_jbod\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\RESULT.json",
+                     "pathLength":  113,
+                     "effectiveLength":  145,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathLength":  132,
+                     "effectiveLength":  164,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.sig",
+                     "pathLength":  131,
+                     "effectiveLength":  163,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stdout.txt",
+                     "pathLength":  125,
+                     "effectiveLength":  157,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stderr.txt",
+                     "pathLength":  125,
+                     "effectiveLength":  157,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\RESULT.json",
+                     "pathLength":  114,
+                     "effectiveLength":  146,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\sent\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathLength":  129,
+                     "effectiveLength":  161,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\sent\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.sig",
+                     "pathLength":  128,
+                     "effectiveLength":  160,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\sent\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stdout.txt",
+                     "pathLength":  122,
+                     "effectiveLength":  154,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\sent\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stderr.txt",
+                     "pathLength":  122,
+                     "effectiveLength":  154,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\sent\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\RESULT.json",
+                     "pathLength":  111,
+                     "effectiveLength":  143,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\R\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathLength":  94,
+                     "effectiveLength":  126,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\R\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.sig",
+                     "pathLength":  93,
+                     "effectiveLength":  125,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\R\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stdout.txt",
+                     "pathLength":  87,
+                     "effectiveLength":  119,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\R\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stderr.txt",
+                     "pathLength":  87,
+                     "effectiveLength":  119,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\R\\pending\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\RESULT.json",
+                     "pathLength":  76,
+                     "effectiveLength":  108,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\A\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathLength":  86,
+                     "effectiveLength":  118,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\A\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.sig",
+                     "pathLength":  85,
+                     "effectiveLength":  117,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\A\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stdout.txt",
+                     "pathLength":  79,
+                     "effectiveLength":  111,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\A\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stderr.txt",
+                     "pathLength":  79,
+                     "effectiveLength":  111,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\A\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\RESULT.json",
+                     "pathLength":  68,
+                     "effectiveLength":  100,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\A6R\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "pathLength":  84,
+                     "effectiveLength":  116,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\A6R\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.sig",
+                     "pathLength":  83,
+                     "effectiveLength":  115,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\A6R\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stdout.txt",
+                     "pathLength":  77,
+                     "effectiveLength":  109,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\A6R\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\MAINTENANCE.stderr.txt",
+                     "pathLength":  77,
+                     "effectiveLength":  109,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\A6R\\R_0123456789AB_20260827012345999_a1b2c3d4.ready\\RESULT.json",
+                     "pathLength":  66,
+                     "effectiveLength":  98,
+                     "longestComponentLength":  47,
+                     "disposition":  "PASS_PATH_BUDGET"
+                 }
+             ],
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}
