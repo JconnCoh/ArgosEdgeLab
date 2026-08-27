@@ -8030,3 +8030,29 @@ subsequent single no-retry `DATA_PULL` of the exact rendered ZIP.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3K1_NOTCH_PIXEL_OVERLAY_RENDER_PUBLISH_READY_20260827.md`,
 SHA-256 `66719D8EC8DD8A0D2660E8A2CE4ABFD84656CEBAFC1E70D510562608BD81F8C4`.
+
+## 2026-08-27 — OCV-03 O3K1 signed render terminal / exact DATA_PULL ready
+
+Render request `REQ_20260827T201500111Z_62629419O3K1` was published exactly
+once with no retry. Matching JBOD response
+`R_34948C162186_20260827202149504_651be723` is signature-verified; response
+ZIP SHA-256 is
+`AB08F56DD42317734750CA27159694598268D4029656500FC2485D4D21517034`.
+It proves four exact frozen source reads with matching hashes and staged
+`OCV03ReviewExports/O3K1_20260827T200000Z/O3K1_REVIEW.zip`, 5,666,342 bytes,
+SHA-256 `CEE193475613E04D0AD25F0402437E3E21E310EF1F8B1312737B28463699F724`.
+
+The separate one-file DATA_PULL request
+`REQ_20260827T203242373Z_0DBC2A7558B3` is signed but unpublished; ZIP SHA-256
+is `DD7651041B5C37B6BBBA09E069152BB2C4859D825C6BF38911E80F1DB4F173AF`.
+It is limited to the exact staged review ZIP, one file, one publication, and
+no retry. Exact signed-package and 25-path round-trip gates pass; the maximum
+effective route length is 185.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3K1_RENDER_TERMINAL_DATA_PULL_PUBLISH_READY_20260827.md`,
+SHA-256 `FEDAF3EFC8A6523B4DD58AFEDEEE668284DB02A7464FE0B520FC2720D0373B0D`.
+Live provider remains disabled, protected processor/tasks/processes remain
+untouched, no detector/tuning/source/wafer/hold action occurred, review-only
+is true, training/XML/production are false, and every prerequisite is
+preserved.

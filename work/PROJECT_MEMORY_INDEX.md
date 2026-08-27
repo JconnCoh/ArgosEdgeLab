@@ -915,3 +915,14 @@ task from changing which revision, UI, evidence, or next action is active.
 - Gates: endpoint rehearsal `2790E5BBEA726EA98AA5BBF8A88FA368EA14E2D1E12BD467F47F773F0A62C16B`; exact package `CF55899F25D2143629A9E0EE9165DAEC390597A12504352C2AB663B4A9009299`; route `74B5B8D29596D6DADB81CFE987584AE768D0BAC4F37FF63CE990403588BBF1E0`.
 - Exact next action: commit/push clean matching tips, rerun continuity/session/publisher preflight, publish once with no retry, and collect only the matching JBOD-signed terminal response. A separate DATA_PULL is forbidden until that response proves the exact export ZIP.
 - Authority: no detector rerun/tuning, source mutation, provider activation, processor/task/process/wafer action, or hold clearance; review-only true, training/XML/production false, all prerequisites preserved.
+
+## 2026-08-27 — OCV-03 O3K1 signed render terminal / exact DATA_PULL ready
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3K1_RENDER_TERMINAL_DATA_PULL_PUBLISH_READY_20260827.md`
+- SHA-256: `FEDAF3EFC8A6523B4DD58AFEDEEE668284DB02A7464FE0B520FC2720D0373B0D`
+- Render request: `REQ_20260827T201500111Z_62629419O3K1`, published once with no retry; matching JBOD response `R_34948C162186_20260827202149504_651be723`.
+- Response ZIP SHA-256: `AB08F56DD42317734750CA27159694598268D4029656500FC2485D4D21517034`; collection gate SHA-256: `1CE3B6EC3AE63654DCA10B8113ED1DD04A9946EA40DF2A815226886967B7D4E4`.
+- Exact staged review ZIP: `OCV03ReviewExports/O3K1_20260827T200000Z/O3K1_REVIEW.zip`, 5,666,342 bytes, SHA-256 `CEE193475613E04D0AD25F0402437E3E21E310EF1F8B1312737B28463699F724`.
+- Exact one-file DATA_PULL: `REQ_20260827T203242373Z_0DBC2A7558B3`, signed but unpublished; ZIP SHA-256 `DD7651041B5C37B6BBBA09E069152BB2C4859D825C6BF38911E80F1DB4F173AF`.
+- Exact next action: clean matching pushed tips, final publisher/U preflights, publish the DATA_PULL exactly once with no retry, collect only its matching signed response, verify and reconstitute the exact review ZIP, then present the local pixel gallery after provenance/browser gates.
+- Authority: no detector rerun/tuning, source mutation/deletion, provider activation, processor/task/process/wafer action, or hold clearance; review-only true, training/XML/production false, every prerequisite preserved.

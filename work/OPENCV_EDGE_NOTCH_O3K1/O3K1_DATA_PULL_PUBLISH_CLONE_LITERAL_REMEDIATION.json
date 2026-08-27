@@ -1,0 +1,24 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "O3K1_DATA_PULL_PUBLISH_CLONE_LITERAL_REMEDIATION_20260827",
+  "pairs": [
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3K1/Publish-O3K1RenderRequest.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3K1/Publish-O3K1DataPullRequest.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "U:\\ProjectPortalRO",
+          "generatedRoot": "U:\\ProjectPortalRO",
+          "disposition": "UNCHANGED_ALLOWED",
+          "reason": "Both frozen O3K1 publishers use the same qualified persistent ProjectPortalRO request subtree."
+        },
+        {
+          "sourceRoot": "\\\\shm-cifs\\Department",
+          "generatedRoot": "\\\\shm-cifs\\Department",
+          "disposition": "UNCHANGED_ALLOWED",
+          "reason": "Both frozen O3K1 publishers pin the same qualified persistent InspectionRevs mapping."
+        }
+      ]
+    }
+  ]
+}
