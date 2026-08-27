@@ -1,0 +1,103 @@
+{
+  "schema": "argos_ocv03_post2_v1_result_gate_v1",
+  "createdUtc": "2026-08-27T12:13:00Z",
+  "state": "HOLD_O3D1_STRUCTURAL_STARTING_POINT_REAL_WAFER_NOT_QUALIFIED",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "engine": {
+    "path": "work/PATTERNED_FIDUCIAL_INVENTORY/tools/NativeFrontsideWaferPoseOpenCvV1.py",
+    "sha256": "3CC4630B3A689C80887C2B8572C3A0C37B5342301E88DD8FFF4046E67EFB4DB9"
+  },
+  "job": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3D1/O3D1_POST2_V1_JOB.json",
+    "sha256": "6FA813AD02848C5A5EAC3114A0F9EDC6DFE7103DAF5A963B014D37B3DB291FA3"
+  },
+  "cohort": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3D1/O3D1_POST2_DEVELOPMENT_COHORT.json",
+    "sha256": "4647FC5B7EC146FC4AFBF4DF15CCE9154CA26DB98A67E8483674A3351A915345"
+  },
+  "preaction": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3D1/PREACTION_O3D1_POST2_V1_RUN.json",
+    "sha256": "C63B482B4F8142A7680E03C8B71563D5FB42E63F7CA44C59B14D34E9ADC5B164",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"
+  },
+  "summary": {
+    "path": "work/O3D1/r/SUMMARY.json",
+    "sha256": "005792EEC4B123277E81DAC29BFC72A0FE49493AE34D7089F682296AA797E76E",
+    "state": "COMPLETE_REVIEW_ONLY_DIAGNOSTIC",
+    "inputCount": 3
+  },
+  "results": [
+    {
+      "physicalIdentity": "62546-481_POST2_SLOT01",
+      "role": "DEVELOPMENT_AND_PERMANENT_CHIPOUT_REGRESSION_CHALLENGE",
+      "path": "work/O3D1/r/62546-481_POST2_SLOT01/NATIVE_WAFER_POSE_OPENCV_V1.json",
+      "sha256": "D93B34281D40193ABB3A31CB402703732C32E4D45DA1BE43EB090EED92E4798E",
+      "state": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_MULTIPLE_PHYSICAL_INDENTATIONS",
+      "bfPerimeterQualified": true,
+      "dfPerimeterQualified": true,
+      "bfCandidateCount": 69,
+      "dfCandidateCount": 61,
+      "matchedPhysicalCandidateCount": 48,
+      "bfOnlyCandidateCount": 21,
+      "dfOnlyCandidateCount": 13,
+      "knownNotchChipoutNeighborhoodCandidateCount": 2,
+      "knownNeighborhoodCandidateAnglesDegrees": [82.15552838191206, 86.79422231673229],
+      "manufacturedNotchSelected": false,
+      "chipoutSelectedAsNotch": false
+    },
+    {
+      "physicalIdentity": "62546-481_POST2_SLOT03",
+      "role": "DEVELOPMENT_ORDINARY_PARITY_CONTROL",
+      "path": "work/O3D1/r/62546-481_POST2_SLOT03/NATIVE_WAFER_POSE_OPENCV_V1.json",
+      "sha256": "B61359464DF35E750EC4AD3067332870D01684EE54CDCDCA9ADC7DB9ACEA97D8",
+      "state": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_MULTIPLE_PHYSICAL_INDENTATIONS",
+      "bfPerimeterQualified": true,
+      "dfPerimeterQualified": true,
+      "bfCandidateCount": 62,
+      "dfCandidateCount": 70,
+      "matchedPhysicalCandidateCount": 51,
+      "bfOnlyCandidateCount": 11,
+      "dfOnlyCandidateCount": 19,
+      "manufacturedNotchSelected": false
+    },
+    {
+      "physicalIdentity": "62546-481_POST2_SLOT17",
+      "role": "DEVELOPMENT_ORDINARY_PARITY_CONTROL",
+      "path": "work/O3D1/r/62546-481_POST2_SLOT17/NATIVE_WAFER_POSE_OPENCV_V1.json",
+      "sha256": "A019B6920B19C59053DA985A8393BF0546F93A742BBEEDF8848F54FB2932ADFC",
+      "state": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_MULTIPLE_PHYSICAL_INDENTATIONS",
+      "bfPerimeterQualified": true,
+      "dfPerimeterQualified": true,
+      "bfCandidateCount": 63,
+      "dfCandidateCount": 71,
+      "matchedPhysicalCandidateCount": 56,
+      "bfOnlyCandidateCount": 7,
+      "dfOnlyCandidateCount": 15,
+      "manufacturedNotchSelected": false
+    }
+  ],
+  "aggregate": {
+    "perimeterQualifiedPairCount": 3,
+    "notchAlignmentHoldCount": 3,
+    "manufacturedNotchSelectedCount": 0,
+    "incorrectRotationCount": 0,
+    "chipoutAsNotchSelectionCount": 0,
+    "matchedPhysicalCandidateCountTotal": 155,
+    "bfDfIndependent": true,
+    "bfDfPoseAveraged": false,
+    "realWaferQualificationPassed": false,
+    "reason": "The unchanged synthetic structural starting point correctly failed closed, but produced 48 to 56 BF/DF-supported physical candidates per wafer and granted no manufactured-notch authority."
+  },
+  "hotspotExecuted": false,
+  "independentValidationExecuted": false,
+  "tuningPerformed": false,
+  "providerActivated": false,
+  "processorTouched": false,
+  "sourceMutationPerformed": false,
+  "waferActionPerformed": false,
+  "holdsCleared": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

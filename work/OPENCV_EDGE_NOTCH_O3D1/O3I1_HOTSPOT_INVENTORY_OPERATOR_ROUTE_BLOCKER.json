@@ -1,0 +1,70 @@
+{
+  "schema": "argos_ocv03_hotspot_inventory_route_blocker_v1",
+  "createdUtc": "2026-08-27T12:14:00Z",
+  "state": "STOP_OPERATOR_VISIBLE_JBOD_LAYER_REQUIRED",
+  "disposition": "PENDING_GATE",
+  "requestedObservation": {
+    "mode": "OBSERVE",
+    "exactRelativeSubtree": "PatternedFront/Lot_62629-419_NotchBad_Hotspot",
+    "approvedRootName": "JBOD_KLARF_EXPORT",
+    "metadataOnly": true,
+    "imageBytesRead": false,
+    "sourceHashingPerformed": false,
+    "mutationsPerformed": false
+  },
+  "routeDecision": {
+    "statusHandlerCapable": false,
+    "dataPullHandlerCapableWithoutExactLeaves": false,
+    "maintenancePatchAllowedForObservation": false,
+    "selectedRoute": "EXISTING_AUTHORIZED_ARGOS_ONLY_DIRECT_ADMIN_READ_ONLY_ROUTE"
+  },
+  "transportObservation": {
+    "scriptPath": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Get-ArgosControlTransportState.ps1",
+    "scriptSha256": "853776763BF5449E582CE5E1E163E7D44EED511ED43CD34A90A23ACD3C00720B",
+    "state": "OBSERVED_MATCHING_ARGOS_FORWARD",
+    "matchingForwardCount": 1,
+    "matchingForwardProcessId": 32736,
+    "matchingForwardCreationDate": "2026-08-25T15:37:33.7925110-05:00",
+    "localPort": 15985,
+    "targetHost": "10.20.70.241",
+    "targetPort": 5985,
+    "ownedListenerCount": 1,
+    "protocolValidationRequested": false,
+    "mutationsPerformed": false
+  },
+  "probeAttempt": {
+    "scriptPath": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+    "scriptSha256": "CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D",
+    "action": "Probe",
+    "attemptCount": 1,
+    "terminalResultReceived": false,
+    "failureClass": "BOUNDED_PROBE_TIMEOUT_NO_NONCE_OR_HOSTNAME_RESULT",
+    "jbodIdentityVerified": false,
+    "retryPerformed": false,
+    "retryAuthorizedBeforeOperatorStateChange": false,
+    "exactLingeringProbeProcessCountAfterTimeout": 0,
+    "remoteMutationClaimed": false
+  },
+  "operatorActionRequired": {
+    "action": "Expose the existing RustDesk connection titled 10.66.81.84 in verified 1920x1200 full-screen mode with the existing nested RDP session already showing JBOD A1025645101, then report that the JBOD layer is visible.",
+    "openNewSession": false,
+    "changeWindowGeometryThroughAutomation": false,
+    "acceptPasteDialog": false
+  },
+  "preservedInvariants": {
+    "hotspotImageBytesRead": false,
+    "hotspotOutcomeInspected": false,
+    "newPortalRequestPublished": false,
+    "maintenanceHelperInstalled": false,
+    "providerActivated": false,
+    "processorTouched": false,
+    "taskOrProcessRestarted": false,
+    "sourceMutationPerformed": false,
+    "waferActionPerformed": false,
+    "holdsCleared": false
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

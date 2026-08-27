@@ -820,3 +820,13 @@ task from changing which revision, UI, evidence, or next action is active.
 - Slot25 remains `INDEPENDENT_VALIDATION_OUTCOME_BLIND_METADATA_DISCLOSED`, not wholly unseen.
 - Exact next action: OCV-03 local review-only edge/notch execution using the exact hotspot lot and all discoverable existing chipout regression wafers, with a frozen separate independent paired BF/DF validation cohort.
 - Authority: live provider disabled, protected processor untouched, review-only true, training/XML/production false, and every existing hold/prerequisite preserved.
+
+## 2026-08-27 — OCV-03 O3D1 POST2 diagnostic / hotspot operator route blocker
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3D1_POST2_DIAGNOSTIC_HOTSPOT_OPERATOR_ROUTE_BLOCKER_20260827.md`
+- SHA-256: `763ECEEB579AB10DD2C42A5825E84883E6C93D384F803D21136B21ACA2C6EACF`
+- O3D1 result gate: `work/OPENCV_EDGE_NOTCH_O3D1/O3D1_POST2_V1_RESULT_GATE.json`, SHA-256 `702E124815ABDFCB3037D18D917E8312D7902F7214AD1A0049A82DD31C5FAFFE`.
+- Concrete result: three of three POST2 pairs qualified independent BF/DF perimeters, then held with 48/51/56 matched physical candidates; no notch authority, rotation, transform averaging, or chipout-as-notch selection.
+- Hotspot blocker: `work/OPENCV_EDGE_NOTCH_O3D1/O3I1_HOTSPOT_INVENTORY_OPERATOR_ROUTE_BLOCKER.json`, SHA-256 `8FC78087B49F59CC282387ABF925F1154C41888ECE4FF7AB84AB619636870AD4`.
+- Exact next action: operator exposes the existing verified full-screen RustDesk/nested-RDP JBOD layer and reports it visible; then one fresh hostname gate may precede the bounded in-memory exact hotspot inventory. No retry of the timed-out probe.
+- Authority: diagnostic-only/review-only; live provider disabled, processor untouched, training/XML/production false, and all holds/prerequisites preserved.

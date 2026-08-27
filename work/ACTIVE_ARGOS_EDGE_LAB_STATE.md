@@ -7678,3 +7678,32 @@ every discoverable existing chipout regression wafer, while freezing an
 independent paired BF/DF validation cohort before inspection. Use only local
 review-only OpenCV; keep the live provider disabled and protected processor
 untouched. All prior holds and authority limits remain.
+
+## 2026-08-27 OCV-03 O3D1 concrete POST2 diagnostic / hotspot route blocker
+
+The frozen local O3D1 job ran the unchanged structural OpenCV V1 starting point
+on exact POST2 Slot01, Slot03, and Slot17 BF/DF pairs. All three independent BF
+and DF perimeter fits qualified, but each failed closed at
+`FRONTSIDE_NOTCH_ALIGNMENT_HOLD_MULTIPLE_PHYSICAL_INDENTATIONS`. Matched
+physical candidate counts were 48, 51, and 56. No notch authority or rotation
+was emitted, transforms were not averaged, and the known Slot01 chipout was not
+selected as the notch. Result-gate SHA-256 is
+`702E124815ABDFCB3037D18D917E8312D7902F7214AD1A0049A82DD31C5FAFFE`.
+
+The exact hotspot lot is absent from local staging/catalog evidence. Current
+observation policy forbids a maintenance helper for metadata-only discovery.
+The existing direct admin/read-only transport forward was present, but one
+hostname-gated probe returned no nonce/hostname before timeout. It was not
+retried and left no exact probe process. Blocker SHA-256 is
+`8FC78087B49F59CC282387ABF925F1154C41888ECE4FF7AB84AB619636870AD4`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3D1_POST2_DIAGNOSTIC_HOTSPOT_OPERATOR_ROUTE_BLOCKER_20260827.md`,
+SHA-256 `763ECEEB579AB10DD2C42A5825E84883E6C93D384F803D21136B21ACA2C6EACF`.
+
+Exact next action: the operator must expose the existing RustDesk/nested-RDP
+JBOD `A1025645101` layer in the required verified full-screen geometry and
+report it visible. Only after that external state change may one fresh hostname
+gate precede the bounded in-memory hotspot inventory. No blind retry or portal
+maintenance observation is allowed. All provider/processor and authority/hold
+boundaries remain unchanged.
