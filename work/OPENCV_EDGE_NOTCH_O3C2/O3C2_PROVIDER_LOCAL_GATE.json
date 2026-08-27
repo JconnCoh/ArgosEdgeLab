@@ -1,0 +1,52 @@
+{
+    "schema":  "argos_ocv03_source_freeze_provider_local_gate_v1",
+    "createdUtc":  "2026-08-27T15:03:47.1405210Z",
+    "state":  "PASS_O3C2_SOURCE_FREEZE_PROVIDER_LOCAL_GATE",
+    "disposition":  "PENDING_GATE",
+    "providerPath":  "work/OPENCV_EDGE_NOTCH_O3C2/OCV03_SourceFreezeProviderV1.ps1",
+    "providerSha256":  "1A73D69F38C1E578734E30376845DF308636A893A846CF86FB9531144FE04B88",
+    "collectionCases":  [
+                            {
+                                "caseId":  "ZERO",
+                                "expected":  "REFUSE",
+                                "observed":  "REFUSED"
+                            },
+                            {
+                                "caseId":  "ONE",
+                                "expectedPairCount":  1,
+                                "observedPairCount":  1,
+                                "observedLeafCount":  2
+                            },
+                            {
+                                "caseId":  "MANY",
+                                "expectedPairCount":  10,
+                                "observedPairCount":  10,
+                                "observedLeafCount":  20
+                            }
+                        ],
+    "win32VisibleExactSubtreeAliasPassed":  true,
+    "bufferedDotNetSha256Passed":  true,
+    "sourceStableBeforeAndAfterHashPassed":  true,
+    "pairFingerprintCount":  10,
+    "aggregateFingerprintPresent":  true,
+    "injectedFailureLeavesNoOutput":  true,
+    "injectedFailureRemovesAlias":  true,
+    "preexistingAliasRefusedBeforeOutput":  true,
+    "preexistingAliasPreservedByProvider":  true,
+    "targetCount":  20,
+    "knownNotchLocationConsumed":  false,
+    "notchAnglePriorConsumed":  false,
+    "fixedAngularSearchWindowConsumed":  false,
+    "sourceHashingPerformed":  true,
+    "imageBytesDecoded":  false,
+    "pixelProcessingPerformed":  false,
+    "sourceMutationPerformed":  false,
+    "taskOrProcessActionPerformed":  false,
+    "providerActivated":  false,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false,
+    "fixtureRoot":  "C:\\A32T1"
+}

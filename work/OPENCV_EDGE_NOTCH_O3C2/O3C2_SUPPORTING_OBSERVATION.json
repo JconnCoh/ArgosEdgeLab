@@ -1,0 +1,33 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "revision": "O3C2_SOURCE_FREEZE_SUPPORTING_OBSERVATION_20260827",
+  "createdUtc": "2026-08-27T15:02:00Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "OCV03_O3C1_COMPLETE_TO_O3C2_SOURCE_FREEZE_20260827",
+  "source": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3C1/O3C1_HOTSPOT_INVENTORY_ASSESSMENT.json",
+    "sha256": "8C6BD56577302550F7CEB317F1D79C6A1DC795C1D823B4129764E6541AB277FA",
+    "signedResponseGatePath": "work/OPENCV_EDGE_NOTCH_O3C1/O3C1_EXACT_RESPONSE_COLLECTION_GATE.json",
+    "signedResponseGateSha256": "8BC123F670CB4154C737CE714086F238916820C11789925F4DB024120299DDCC"
+  },
+  "expectedObserved": [
+    {"field": "inventory.complete", "expected": true, "observed": true},
+    {"field": "inventory.frontsidePairCount", "expected": 10, "observed": 10},
+    {"field": "inventory.frontsideLeafCount", "expected": 20, "observed": 20},
+    {"field": "inventory.skippedPathRowCount", "expected": 0, "observed": 0},
+    {"field": "inventory.accessErrorCount", "expected": 0, "observed": 0},
+    {"field": "inventory.truncated", "expected": false, "observed": false},
+    {"field": "inventory.maximumAliasEffectiveLength", "expectedMaximumExclusive": 200, "observed": 169},
+    {"field": "inventory.sourceHashesFrozen", "expected": false, "observed": false},
+    {"field": "inventory.imageBytesRead", "expected": false, "observed": false}
+  ],
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "mutationsPerformed": false,
+  "imageBytesRead": false,
+  "sourceHashingPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

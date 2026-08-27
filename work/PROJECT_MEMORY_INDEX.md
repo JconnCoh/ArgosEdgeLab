@@ -840,6 +840,16 @@ task from changing which revision, UI, evidence, or next action is active.
 - Exact next action: operator reports the visible JBOD console state without input. Only a visibly present parse/runtime error permits bounded console-text capture; never accept a paste dialog or retry the same command namespace.
 - Authority: review-only; provider disabled, processor untouched, training/XML/production false, and every hold/prerequisite preserved.
 
+## 2026-08-27 — OCV-03 O3C2 source-freeze request publication ready
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3C2_SOURCE_FREEZE_PUBLISH_READY_20260827.md`
+- SHA-256: `F2EDC99A503A60B85FA9CF2AE2104E7EBA33B9D2D957EDBE0D684CF595338911`
+- Signed request: `REQ_20260827T151200111Z_62629419C3F2`, ZIP SHA-256 `14C2408B3644CFC30D09CD0DAB175196EFF5F7254BB792DD1A68DEDAC4781402`.
+- Gates: exact-package rehearsal `10BDA7E7B359E596F7F2E9983470DAB575439AA646ACE905050C4C6EC502D9DF`; complete route `2BCD47C9F3F06C7941416CE8F453242E52D1E809B6FA2985F56AB553C8CD1033`; persistent-`U:` zero-pending observation `2C69A5A6C23F516399B133C61C279B191E7DE0314C8643284759E283C36CC633`.
+- Algorithm boundary: no known notch location, angle prior, or fixed window is consumed; full-perimeter inference is required and known locations are post-inference scorer labels only.
+- Exact next action: commit/push/fetch, clean matching tips, one no-retry publication through persistent `U:`, then exact matching signed-response collection.
+- Authority: review-only; provider disabled, processor untouched, training/XML/production false, and every hold/prerequisite preserved.
+
 ## 2026-08-27 — OCV-03 O3T1 exact-length direct-transport capability gap
 
 - Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3T1_TRANSPORT_CAPABILITY_GAP_20260827.md`

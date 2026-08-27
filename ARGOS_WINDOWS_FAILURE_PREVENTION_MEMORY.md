@@ -1,5 +1,48 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### Nested rehearsal exceptions require an explicit entrypoint failure contract
+
+- Signature: an injected provider failure safely removes its temporary mapping
+  and creates no output, but the outer entrypoint rehearsal gate fails because
+  it assumes the provider's inner exception text will be preserved verbatim
+  across a nested script invocation and pipeline assignment.
+- Cause: the harness matched one raw inner message while the caller did not
+  define an explicit wrapped failure token. Safe cleanup behavior was proved,
+  but the test could not identify the exact intended injected branch.
+- Preflight: wrap the provider invocation in the entrypoint, emit one stable
+  revision-specific failure prefix followed by the bounded inner message, and
+  require the failure test to match both that prefix and the intended injected
+  token. Independently assert output absence and temporary-alias cleanup.
+- Recovery: retain the failed rehearsal output namespace, change only the
+  draft entrypoint exception contract and harness expectation, then use a fresh
+  path-gated output namespace. Do not rerun or delete the prior rehearsal.
+- First observed: OCV-03 O3C2 entrypoint R1 local rehearsal on 2026-08-27.
+  The success output existed, the injected-failure output did not, `Q:` was
+  absent after the failure, and no portal, JBOD, source, task, process, wafer,
+  provider-activation, training, XML, or production action occurred.
+
+### Failure-injection fixtures must satisfy the live entrypoint cardinality first
+
+- Signature: an entrypoint's injected-failure rehearsal expects to reach the
+  provider after one source hash, but the fixture contains one BF/DF pair while
+  the exact live entrypoint requires ten. The rehearsal stops correctly at the
+  earlier cardinality gate and never exercises the intended failure boundary.
+- Cause: the provider's generic ONE collection control was reused as an exact
+  live-entrypoint failure fixture. Provider breadth and live job cardinality
+  are separate contracts.
+- Preflight: bind success and injected-failure entrypoint cases to the same
+  exact live cardinality and source-manifest schema. Vary only the create-new
+  output path and explicit failure-injection field. Keep ZERO and ONE controls
+  in the provider-local gate, not the live-entrypoint gate.
+- Recovery: preserve the failed rehearsal namespace, leave the entrypoint and
+  provider bytes unchanged, and execute the corrected fixture in a fresh
+  path-gated output root. Never loosen the live cardinality guard to make a
+  generic fixture reach the injected branch.
+- First observed: OCV-03 O3C2 entrypoint R2 local rehearsal on 2026-08-27.
+  Success completed, failure output was absent, and no portal, JBOD, source,
+  task, process, wafer, provider-activation, training, XML, or production
+  action occurred.
+
 ### Direct-control observations leaked fresh interactive PowerShell processes
 
 - Signature: JBOD process inventory shows dozens of bare `powershell.exe`

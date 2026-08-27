@@ -1,0 +1,54 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 2097152,
+  "entryPoint": "payload/Invoke-O3C2SourceFreezeEndpoint.ps1",
+  "changes": [
+    {
+      "source": "payload/OCV03_SourceFreezeProviderV1.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03_SourceFreezeProviderV1.ps1",
+      "approvedPredecessorSha256": ["1A73D69F38C1E578734E30376845DF308636A893A846CF86FB9531144FE04B88"],
+      "installedSha256": "1A73D69F38C1E578734E30376845DF308636A893A846CF86FB9531144FE04B88",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [],
+  "entryPointOutputs": [
+    {
+      "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03_O3C2_SOURCE_FREEZE.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_ocv03_hotspot_source_freeze_v1",
+      "requiredState": "PASS_O3C2_HOTSPOT_SOURCE_FREEZE"
+    }
+  ],
+  "sourceReadContract": {
+    "mode": "EXACT_FROZEN_TWENTY_LEAF_SHA256_ONLY",
+    "approvedDataRoot": "JBOD_KLARF_EXPORT",
+    "processLocalAliasName": "F",
+    "aliasType": "SUBST_WIN32_VISIBLE",
+    "aliasAnchor": "EXACT_REQUESTED_SUBTREE_ROOT",
+    "targetManifest": "payload/O3C2_SOURCE_TARGETS.json",
+    "targetManifestSha256": "AF94AAF89093781624C5A113BC58147CA1E94F030EC5132E2C00F1A26A1F79A4",
+    "inventoryOutputSha256": "3B79EE01AE98C2C5A5E5A69BBC837E67D228DFD652F6B348AD16C10F5B928F49",
+    "pairCount": 10,
+    "leafCount": 20,
+    "sourceHashAlgorithm": "SHA256",
+    "acquisitionFingerprintSchema": "argos_ocv03_pair_acquisition_fingerprint_v1",
+    "fileContentReadAllowedForHashOnly": true,
+    "imageDecodeAllowed": false,
+    "pixelProcessingAllowed": false,
+    "knownNotchLocationConsumed": false,
+    "notchAnglePriorConsumed": false,
+    "fixedAngularSearchWindowConsumed": false,
+    "sourceMutationAllowed": false,
+    "taskOrProcessActionAllowed": false,
+    "providerActivationAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_O3C2_HOTSPOT_SOURCE_FREEZE"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

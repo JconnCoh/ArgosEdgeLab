@@ -1,0 +1,94 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-27T15:02:00Z",
+  "incidentId": "OCV03_O3C1_COMPLETE_TO_O3C2_SOURCE_FREEZE_20260827",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 2,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3C2/O3C2_ENTRYPOINT_TEST_R1_WITHDRAWAL.json",
+        "sha256": "997DA188F3A806E2193F266909DE33A97F49CE267788572C1D52C443A39D0AAB",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      },
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3C2/O3C2_ENTRYPOINT_TEST_R2_WITHDRAWAL.json",
+        "sha256": "0E56A10C8C6291A2E668BA87C4094CD9C1F4BD04B537186B45E763629F622A6A",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": true,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3C1/O3C1_HOTSPOT_INVENTORY_ASSESSMENT.json",
+      "sha256": "8C6BD56577302550F7CEB317F1D79C6A1DC795C1D823B4129764E6541AB277FA"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/OPENCV_SCRIBE_O2D23/O2D23_COMPLETE_ROUTE_GATE_R3.json",
+      "sha256": "04AC15694066C3CE4971DC946F77AF3CDB6814920CAB8B3DCCEA4CDCE4B535D3"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": ["D:/KLARFExport/PatternedFront/Lot_62629-419_NotchBad_Hotspot"],
+    "requestedCapabilities": ["EXACT_TWENTY_LEAF_SHA256_AND_PAIR_FINGERPRINT_FREEZE"],
+    "requestedFields": ["bytes", "lastWriteTimeUtc", "sha256", "sourceStableDuringHash", "acquisitionFingerprintSha256"],
+    "decisionOptions": ["COMPLETE", "HOLD_SOURCE_CHANGED", "HOLD_HASH_FAILED"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3C2/O3C2_SUPPORTING_OBSERVATION.json",
+      "sha256": "27F7B5C8ABF8051CA6530B44ED27469DA21D912943AB6C12C4CC9D93FE9B21E9"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "exactMutation": "Install one generic manifest-driven Win32-visible short-alias SHA256 provider and execute it once against exactly the twenty frozen frontside leaves. No decoder, pixel processing, task/process action, provider activation, source mutation, wafer action, or hold clearance.",
+    "failurePrevention": "Do not repeat OLS5 provider-only Get-Content hashing of twenty 475 MB leaves. Use a verified exact-subtree subst alias with buffered .NET FileStream SHA256 and guaranteed finally cleanup."
+  },
+  "authorizationBoundary": {
+    "localDesignAndWindowsPowerShell51ProofAuthorized": true,
+    "packageBuildAuthorized": true,
+    "signatureAuthorized": true,
+    "livePublicationAuthorized": true,
+    "liveEndpointRequestsMaximum": 1,
+    "retryAuthorized": false,
+    "sourceHashingAuthorized": true,
+    "imageDecodeAuthorized": false,
+    "pixelProcessingAuthorized": false,
+    "operatorAuthorization": "2026-08-27 user messages: Go ahead; Agreed, do not hard-code known notch locations"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

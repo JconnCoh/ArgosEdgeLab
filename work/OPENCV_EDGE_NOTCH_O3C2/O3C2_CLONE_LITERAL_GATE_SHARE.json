@@ -1,0 +1,30 @@
+{
+  "schema": "argos_clone_literal_remediation_gate_v1",
+  "checkedUtc": "2026-08-27T15:28:43.5398882Z",
+  "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "mode": "GATE",
+  "manifest": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3C2\\O3C2_CLONE_LITERAL_REMEDIATION_SHARE.json",
+  "manifestSha256": "C4400937A79F2BBAC844248DCF3A55F4055BAB46773477DAAC8D821830585AC0",
+  "pairCount": 1,
+  "pairs": [
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3C1/Get-O3C1CurrentShareObservation.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3C2/Get-O3C2CurrentShareObservation.ps1",
+      "sourceSha256": "D94BE2C673D988B64CFE08C86F221A2FD54C45B6FE3955A619E0371408A2BB9F",
+      "generatedSha256": "8FB2965D91A80961D43F4ACAD1477A73006536CDA0D71BDCA8632DAC5B40388B",
+      "sourceRoots": [
+        "\\\\shm-cifs\\Department",
+        "U:\\ProjectPortalRO"
+      ],
+      "generatedRoots": [
+        "\\\\shm-cifs\\Department",
+        "U:\\ProjectPortalRO"
+      ],
+      "ruleCount": 2
+    }
+  ],
+  "violations": [],
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "evidenceWritten": true
+}

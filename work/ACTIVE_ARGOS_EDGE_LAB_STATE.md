@@ -7818,3 +7818,32 @@ persistent `U:` mapping with no retry, and collect only the matching signed
 terminal response. Gateway acceptance is not execution evidence. All prior
 holds, prerequisites, disabled-provider/protected-processor boundaries, and
 review-only/training-false/XML-false/production-false authority remain.
+
+## 2026-08-27 OCV-03 O3C2 source freeze publication ready
+
+The generic manifest-driven source-freeze provider, exact live-cardinality
+entrypoint, and one signed request are frozen. Local provider and entrypoint
+gates passed ZERO/ONE/MANY, 10-pair/20-leaf success, and injected-failure
+controls. The exact signed package passed Windows PowerShell 5.1 signature,
+payload, create, idempotence, predecessor-refusal, success, failure, and
+44-row round-trip path gates. Persistent `U:` is exact and has zero pending
+requests.
+
+Request `REQ_20260827T151200111Z_62629419C3F2` is not yet published. Its ZIP
+SHA-256 is
+`14C2408B3644CFC30D09CD0DAB175196EFF5F7254BB792DD1A68DEDAC4781402`.
+No hotspot source hash or pixel result exists yet. The source-freeze path uses
+no known notch location, angle prior, or fixed angular search window. Future
+detector inference must scan the full perimeter; known locations are permitted
+only in post-inference regression scoring.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3C2_SOURCE_FREEZE_PUBLISH_READY_20260827.md`,
+SHA-256 `F2EDC99A503A60B85FA9CF2AE2104E7EBA33B9D2D957EDBE0D684CF595338911`.
+
+Exact next action: commit/push/fetch, require clean matching branch tips, rerun
+all publisher and continuity/session gates, publish exactly once through
+persistent `U:` with no retry, and collect only the matching signed terminal
+response. Gateway acceptance is not execution evidence. All existing holds,
+prerequisites, disabled-provider/protected-processor boundaries, and
+review-only/training-false/XML-false/production-false authority remain.
