@@ -8819,3 +8819,26 @@ than rerunning it.
   namespace that binds the corrected builder, and rerun every exact preflight.
   Do not reuse or overwrite the earlier clone gate and do not create a request
   until the .NET certificate lookup passes in the paired PS5.1 consumer.
+
+## 2026-08-27 — A passing visible-route hostname gate does not prove a longer clipboard result round trip
+
+- Failure signature: after the operator exposed the existing full-screen JBOD
+  layer, the fresh short hostname gate returned exact `A1025645101`, but the
+  separately frozen 1,934-character metadata-only inventory command returned
+  no nonce-bound clipboard result before its 50-second boundary.
+- Cause: unresolved. The short gate proves the exact visible host and current
+  prompt accepted one short paste; it does not prove that a longer encoded
+  command parsed, ran, serialized within its result bound, or replaced the
+  shared clipboard. A timeout is not inventory evidence and cannot be used to
+  infer remote execution or completion.
+- Mandatory preflight: preserve separate short-gate and command-result
+  boundaries, freeze the exact command source/hash/length, require the direct
+  runner's exact nonce, command hash, `PASS` state, and non-truncated bounded
+  result, and treat absence of any one as terminal. Never call the exact lot
+  absent, empty, complete, or inventoried from the timeout.
+- Recovery: do not rerun the same command namespace, repeat Enter, click
+  blindly, or accept a paste-confirmation dialog. Keep the visible sessions
+  open. Require the operator to report the exact current JBOD console state.
+  Only when a remote parse/runtime error is visibly present may the existing
+  bounded `CaptureConsoleText` action collect that already-visible text; any
+  successor command requires a fresh separately governed namespace.

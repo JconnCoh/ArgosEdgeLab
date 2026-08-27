@@ -1,0 +1,92 @@
+{
+  "schema": "argos_ocv03_hotspot_inventory_command_timeout_blocker_v1",
+  "createdUtc": "2026-08-27T13:38:31.4602136Z",
+  "state": "STOP_OPERATOR_VISIBLE_JBOD_CONSOLE_STATE_REQUIRED",
+  "disposition": "PENDING_GATE",
+  "incidentId": "OCV03_HOTSPOT_METADATA_INVENTORY_20260827",
+  "operatorStateChange": {
+    "reported": "JBOD visible",
+    "newSessionOpened": false,
+    "windowGeometryChangedByAutomation": false,
+    "pasteDialogAccepted": false
+  },
+  "transportObservation": {
+    "state": "OBSERVED_MATCHING_ARGOS_FORWARD",
+    "matchingForwardCount": 1,
+    "matchingForwardProcessId": 32736,
+    "matchingForwardCreationDate": "2026-08-25T15:37:33.7925110-05:00",
+    "localPort": 15985,
+    "targetHost": "10.20.70.241",
+    "targetPort": 5985,
+    "ownedListenerCount": 1,
+    "mutationsPerformed": false
+  },
+  "freshHostnameGate": {
+    "state": "PASS_EXACT_JBOD_DIRECT_CONTROL_PROBE",
+    "computerName": "A1025645101",
+    "gateway": "10.66.81.84",
+    "argos": "10.20.70.241",
+    "jbod": "172.16.0.10",
+    "pastedCommand": true,
+    "mutationsPerformed": false
+  },
+  "observationContract": {
+    "intentPath": "work/OPENCV_EDGE_NOTCH_O3D1/O3I1_HOTSPOT_METADATA_OBSERVATION_INTENT.json",
+    "intentSha256": "5D873F05484B4EEC16EF86EB1829B88A9B13F4DA1BD76445B84D6BDD02F89CBD",
+    "preactionPath": "work/OPENCV_EDGE_NOTCH_O3D1/PREACTION_O3I1_HOTSPOT_METADATA_OBSERVATION.json",
+    "recoveryIntentPreflightState": "PASS_ARGOS_RECOVERY_INTENT",
+    "zeroRecurrencePreflightState": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION",
+    "mode": "OBSERVE",
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  },
+  "commandAttempt": {
+    "commandPath": "work/OPENCV_EDGE_NOTCH_O3D1/O3I1_HOTSPOT_METADATA_INVENTORY_COMMAND.ps1",
+    "commandSha256": "3902E54F3EE8DFC5039040AAEC12AB3E63B6768C88B432E4C8F23743BB06B7FD",
+    "commandCharacters": 1934,
+    "maximumAllowedCommandCharacters": 2048,
+    "windowsPowerShell51ParserState": "PASS",
+    "timeoutSeconds": 50,
+    "maximumResultCharacters": 16384,
+    "attemptCount": 1,
+    "terminalNonceReceived": false,
+    "terminalCommandHashReceived": false,
+    "terminalPassStateReceived": false,
+    "terminalResultReceived": false,
+    "resultTruncationState": "UNKNOWN_NO_TERMINAL_RESULT",
+    "remoteExecutionState": "UNKNOWN_NO_TERMINAL_RESULT",
+    "failureClass": "TIMED_OUT_WAITING_FOR_EXACT_JBOD_CLIPBOARD_RESPONSE",
+    "retryPerformed": false,
+    "sameNamespaceRetryAuthorized": false
+  },
+  "inventoryDisposition": {
+    "exactRelativeSubtree": "PatternedFront/Lot_62629-419_NotchBad_Hotspot",
+    "inventoryComplete": false,
+    "lotPresenceKnown": false,
+    "directoryCountKnown": false,
+    "bmpLeafCountKnown": false,
+    "imageBytesRead": false,
+    "sourceHashingPerformed": false,
+    "inspectionOutcomeObserved": false
+  },
+  "operatorActionRequired": {
+    "action": "Without typing, clicking, accepting a dialog, or changing window state, report whether the visible JBOD layer currently shows a PowerShell parse/runtime error, a paste-confirmation dialog, an ordinary prompt, or no visible console.",
+    "captureConsoleTextAllowedOnlyIfVisibleParseOrRuntimeErrorReported": true,
+    "acceptPasteDialog": false,
+    "repeatEnter": false,
+    "retrySameCommandNamespace": false,
+    "leaveSessionsOpen": true
+  },
+  "preservedInvariants": {
+    "providerActivated": false,
+    "processorTouched": false,
+    "taskOrProcessActionPerformed": false,
+    "queueOrLedgerMutationPerformed": false,
+    "sourceOrWaferMutationPerformed": false,
+    "holdsCleared": false
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

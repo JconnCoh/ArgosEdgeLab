@@ -830,3 +830,12 @@ task from changing which revision, UI, evidence, or next action is active.
 - Hotspot blocker: `work/OPENCV_EDGE_NOTCH_O3D1/O3I1_HOTSPOT_INVENTORY_OPERATOR_ROUTE_BLOCKER.json`, SHA-256 `8FC78087B49F59CC282387ABF925F1154C41888ECE4FF7AB84AB619636870AD4`.
 - Exact next action: operator exposes the existing verified full-screen RustDesk/nested-RDP JBOD layer and reports it visible; then one fresh hostname gate may precede the bounded in-memory exact hotspot inventory. No retry of the timed-out probe.
 - Authority: diagnostic-only/review-only; live provider disabled, processor untouched, training/XML/production false, and all holds/prerequisites preserved.
+
+## 2026-08-27 — OCV-03 O3I1 hostname pass / hotspot inventory timeout blocker
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3I1_HOTSPOT_COMMAND_TIMEOUT_BLOCKER_20260827.md`
+- SHA-256: `C4E3909AAE9B640243FF0B3D76013FEFFAF43F42BBE60D856FCF85B911370B00`
+- Exact blocker: `work/OPENCV_EDGE_NOTCH_O3D1/O3I1_HOTSPOT_INVENTORY_COMMAND_TIMEOUT_BLOCKER.json`, SHA-256 `94978D7A5FECE6C13E63A81CBEB5574A27F35264543B1177AB83B4C4235ED8ED`.
+- Result: fresh short gate passed exact `A1025645101`; the one frozen metadata-only inventory command returned no nonce-bound result before 50 seconds and was not retried. No inventory result exists.
+- Exact next action: operator reports the visible JBOD console state without input. Only a visibly present parse/runtime error permits bounded console-text capture; never accept a paste dialog or retry the same command namespace.
+- Authority: review-only; provider disabled, processor untouched, training/XML/production false, and every hold/prerequisite preserved.

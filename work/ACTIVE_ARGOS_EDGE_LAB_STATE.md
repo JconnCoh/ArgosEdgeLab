@@ -7707,3 +7707,28 @@ report it visible. Only after that external state change may one fresh hostname
 gate precede the bounded in-memory hotspot inventory. No blind retry or portal
 maintenance observation is allowed. All provider/processor and authority/hold
 boundaries remain unchanged.
+
+## 2026-08-27 OCV-03 O3I1 exact-host pass / inventory command timeout
+
+After the operator reported the existing JBOD layer visible, the transport
+inventory remained stable and one fresh short hostname gate returned exact
+`A1025645101`. The frozen 1,934-character metadata-only hotspot command passed
+recovery-intent and zero-recurrence preflight, but its one authorized attempt
+returned no nonce-bound clipboard result before 50 seconds. It was not
+retried. Exact lot presence, directory/BMP counts, path status, and cohort
+eligibility remain unknown; the timeout is not inventory evidence.
+
+The exact blocker is
+`work/OPENCV_EDGE_NOTCH_O3D1/O3I1_HOTSPOT_INVENTORY_COMMAND_TIMEOUT_BLOCKER.json`,
+SHA-256 `94978D7A5FECE6C13E63A81CBEB5574A27F35264543B1177AB83B4C4235ED8ED`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3I1_HOTSPOT_COMMAND_TIMEOUT_BLOCKER_20260827.md`,
+SHA-256 `C4E3909AAE9B640243FF0B3D76013FEFFAF43F42BBE60D856FCF85B911370B00`.
+
+Exact next action: the operator must report the exact visible JBOD console
+state without typing or clicking: parse/runtime error, paste-confirmation
+dialog, ordinary prompt, or no visible console. Only a visibly reported
+parse/runtime error permits bounded `CaptureConsoleText`. Do not accept a
+dialog, repeat Enter, or retry the same command namespace. All provider,
+processor, authority, prerequisite, and hold boundaries remain unchanged.
