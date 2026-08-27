@@ -792,3 +792,11 @@ task from changing which revision, UI, evidence, or next action is active.
 - Frozen request: `REQ_20260827T035500111Z_3C97863DBF26`, ZIP SHA-256 `8D4E9C9C8C4105B28CF8539942AD182C6E9F237974200C86412D0EBDF67303F0`; classification remains `INDEPENDENT_VALIDATION_OUTCOME_BLIND_METADATA_DISCLOSED`.
 - Exact next action: commit/push this checkpoint, create and gate one fresh fixed one-shot publisher, publish exactly once through persistent `U:` with no retry, then collect only the matching signed terminal response.
 - Authority: review-only; provider disabled, processor untouched, training/XML/production false, and every prerequisite/hold preserved.
+
+## 2026-08-27 — OCV-02 O2D23 Slot25 wrapper-gated publisher ready
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D23_SLOT25_PUBLISH_READY_20260827.md`
+- SHA-256: `DD833B90A654D2B5DF4029530E11D2E13B4CEEB5D3985D1F8E3761EAE015BD6C`
+- Publisher SHA-256: `579EF5E6249AC475A4D88C853D00DCE7D942EFF9F05A247C5E159C57C5A7F62E`; invocation SHA-256: `B3DF9C619045199E1C58FCAF5A4402F0DB4F3D79CDC016F04D7D3F6C51665943`; clone gate SHA-256: `26F987D75EEF122E4052188FF3517570872E60BAE7E7F82835BECC8BC76DC28B`.
+- Exact next action: commit/push/fetch; require clean matching tips and final exact non-mutating gates; publish request `REQ_20260827T035500111Z_3C97863DBF26` exactly once with no retry; collect only its matching signed terminal response.
+- Authority: Slot25 is not wholly unseen; review-only remains true, training/XML/production remain false, provider/processor boundaries and every prerequisite/hold remain preserved.

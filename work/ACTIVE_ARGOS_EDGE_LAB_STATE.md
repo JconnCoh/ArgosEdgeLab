@@ -7591,3 +7591,28 @@ Exact next action: commit/push, qualify one fixed wrapper-gated publisher,
 publish the exact ZIP once with no retry, and collect only its exact signed
 response. Never call Slot25 wholly unseen. All authority limits, prerequisites,
 and holds remain unchanged.
+
+## 2026-08-27 O2D23 Slot25 wrapper-gated publisher ready
+
+Fresh publisher `Publish-O2D23` is bound to request
+`REQ_20260827T035500111Z_3C97863DBF26`, frozen ZIP
+`8D4E9C9C8C4105B28CF8539942AD182C6E9F237974200C86412D0EBDF67303F0`,
+and classification `INDEPENDENT_VALIDATION_OUTCOME_BLIND_METADATA_DISCLOSED`.
+Script SHA-256 is
+`579EF5E6249AC475A4D88C853D00DCE7D942EFF9F05A247C5E159C57C5A7F62E`;
+invocation SHA-256 is
+`B3DF9C619045199E1C58FCAF5A4402F0DB4F3D79CDC016F04D7D3F6C51665943`;
+clone gate SHA-256 is
+`26F987D75EEF122E4052188FF3517570872E60BAE7E7F82835BECC8BC76DC28B`.
+Source and generated harness gates, wrapper gate, clone remediation, path
+budget, and zero-recurrence preaction pass. The publisher has not run and the
+request remains unpublished.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D23_SLOT25_PUBLISH_READY_20260827.md`,
+SHA-256 `DD833B90A654D2B5DF4029530E11D2E13B4CEEB5D3985D1F8E3761EAE015BD6C`.
+
+Exact next action: commit/push/fetch, require clean matching branch tips and all
+final non-mutating gates, then publish exactly once with no retry and collect
+only the matching signed response. Slot25 is not wholly unseen. All authority
+limits, prerequisites, and holds remain unchanged.
