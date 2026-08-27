@@ -1,0 +1,45 @@
+{
+  "schema": "argos_o2d23_endpoint_test_late_completion_audit_v1",
+  "createdUtc": "2026-08-27T04:10:34Z",
+  "state": "PASS_O2D23_ENDPOINT_TEST_LATE_COMPLETION_READBACK",
+  "outerCommand": {
+    "state": "TIMEOUT_PARENT_ONLY",
+    "timeoutSeconds": 184,
+    "terminalOutputCaptured": false,
+    "retryIssued": false
+  },
+  "postTimeoutObservation": {
+    "controllerPid": 7292,
+    "controllerStartUtc": "2026-08-27T04:05:55.9887474Z",
+    "pythonPid": 25260,
+    "pythonStartUtc": "2026-08-27T04:06:00.9582211Z",
+    "pythonCpuSecondsAtFirstObservation": 263.359375,
+    "controllerResponsive": true,
+    "pythonResponsive": true,
+    "resultAbsentWhileRunning": true,
+    "gateAbsentWhileRunning": true
+  },
+  "terminalObservation": {
+    "observedUtc": "2026-08-27T04:10:33.9546879Z",
+    "matchingProcessCount": 0,
+    "testRootAbsent": true,
+    "gatePath": "work/OPENCV_SCRIBE_O2D23/O2D23_ENTRYPOINT_TEST_GATE_R2.json",
+    "gateSha256": "17EFFBE2B9557688BFD4181B3DC6F8F3E01687E0FF9FBC59DDA0967370B40CF1",
+    "gateState": "PASS_O2D23_ENTRYPOINT_TEST_GATE_R2",
+    "revision": "O2D23_20260827T035500000Z_3C97863D",
+    "injectedHashMismatchFailedBeforeWrite": true,
+    "sourceAliasRemoved": true,
+    "processorIdentityUnchanged": true,
+    "taskOrProcessRestarted": false,
+    "sourceMutationPerformed": false,
+    "sourceDeletionPerformed": false,
+    "waferActionPerformed": false,
+    "holdsCleared": false,
+    "providerActivated": false
+  },
+  "disposition": "ACCEPT_EXACT_LATE_GATE_AFTER_FULL_READBACK_NO_RETRY",
+  "slot25SourceImageBytesRead": false,
+  "slot25OutcomeSeen": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

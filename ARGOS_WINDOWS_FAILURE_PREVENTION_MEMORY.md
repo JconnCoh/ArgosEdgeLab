@@ -8754,3 +8754,68 @@ than rerunning it.
   a short path, update every exact path/hash pin, retain the failed path-gate
   output only in task commentary, and rerun clone, harness, wrapper, path,
   pre-action, continuity, and clean-tip gates before publication.
+
+## 2026-08-27 — The task-rollover hook is an event consumer, not a no-argument status command
+
+- Failure signature: manually invoking
+  `py -3 .codex\hooks\argos_task_rollover.py` returned
+  `ARGOS_AUTOMATIC_ROLLOVER_GUARD_ERROR: Expecting value: line 1 column 1
+  (char 0)` instead of a task-size measurement.
+- Cause: the normal hook path calls `json.load(sys.stdin)` and requires the
+  Codex hook event object. The no-argument command omitted that event entirely;
+  the script has no standalone status mode. Its argument-only mode is reserved
+  for recording an already completed handoff with `--complete-handoff`.
+- Mandatory preflight: inspect the hook interface before a manual invocation.
+  For an ordinary measurement, supply one valid bounded JSON hook event with
+  the exact current `session_id`, project `cwd`, event name, and any known
+  transcript path. Prefer reading the state already written by the automatic
+  SessionStart/Stop hooks when only status is needed. Never invoke the hook
+  without either a hook event on standard input or the complete handoff
+  argument set.
+- Recovery: the empty-input invocation changed no repository, portal, JBOD,
+  image, processor, source, wafer, hold, or provider state. Read the exact
+  current rollover state first; if a new measurement is necessary, send one
+  correctly formed event and use its machine-readable result before starting
+  another atomic operation.
+
+## 2026-08-27 — Verify rollover-state creation immediately after a task handoff
+
+- Failure signature: the predecessor task recorded a completed handoff to
+  task `01a04125-ad32-7b93-8f45-2e634cd38120` at commit `b4cd1e5`, but the new
+  task had no matching file under `.git/codex/argos-task-rollover` after five
+  repository commits and 5,961 cumulative changed lines.
+- Cause: the expected SessionStart state write was absent. A later ordinary
+  hook event would therefore initialize its baseline from the current `HEAD`
+  and incorrectly exclude all work already completed in the new task.
+- Mandatory preflight: immediately after every completed handoff, require the
+  new task's exact rollover-state file to exist and require its
+  `baselineCommit` to equal the predecessor handoff's exact `commit` and
+  `remoteTip` before making the first repository change. A missing or different
+  baseline is a hard stop; never let a delayed hook silently rebase the count.
+- Recovery: use only the predecessor's machine-recorded completed handoff to
+  reconstruct the missing metadata-only state for the exact new task ID and
+  baseline, then send one valid bounded SessionStart event and verify its
+  measurement against `git diff` from that baseline. Do not infer the baseline
+  from chat history or initialize it from the later current `HEAD`.
+
+## 2026-08-27 — Windows PowerShell may not mount the `Cert:` provider in an exact script invocation
+
+- Failure signature: the O2D23 signed-request builder passed its dependency,
+  clone, path, and zero-recurrence checks, then its non-mutating Windows
+  PowerShell 5.1 preflight failed at `Get-Item Cert:\CurrentUser\My\...` with
+  `Cannot find drive. A drive with the name 'Cert' does not exist.` No signed,
+  partial, final, ZIP, or package-gate path existed afterward.
+- Cause: the exact clean Windows PowerShell script invocation did not mount the
+  certificate provider drive. A certificate available to the current user is
+  not evidence that the provider drive will exist in every invocation context.
+- Mandatory preflight: resolve the pinned signer through the provider-independent
+  .NET `X509Store` API in the exact builder invocation. Open `CurrentUser/My`
+  read-only, normalize thumbprints, require exactly one match, require its
+  private key, and close the store in `finally` before any signed-output write.
+  Do not use a separate `Cert:` discovery command as caller/consumer evidence.
+- Recovery: because the failure was preflight-only and the complete create-new
+  output set remained absent, correct the DRAFT builder in place, refresh the
+  failure-memory dependency and build pre-action hash, create a fresh clone-gate
+  namespace that binds the corrected builder, and rerun every exact preflight.
+  Do not reuse or overwrite the earlier clone gate and do not create a request
+  until the .NET certificate lookup passes in the paired PS5.1 consumer.

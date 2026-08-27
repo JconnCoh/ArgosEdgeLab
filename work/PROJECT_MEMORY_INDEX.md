@@ -784,3 +784,11 @@ task from changing which revision, UI, evidence, or next action is active.
 - Decision: Slot25 is `INDEPENDENT_VALIDATION_OUTCOME_BLIND_METADATA_DISCLOSED`; it is not wholly unseen, but image/pixel/candidate/provider-output/outcome blindness remains.
 - Exact next action: create fresh unchanged-V1R5 O2D23, run all gates, publish once with no retry, and collect only the exact matching signed response.
 - Authority: review-only; provider disabled, processor untouched, training/XML/production false, and all prerequisites/holds preserved.
+
+## 2026-08-27 — OCV-02 O2D23 Slot25 outcome-blind publication ready
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D23_SLOT25_READY_20260827.md`
+- SHA-256: `F674593BB1186A92E8A8CB3A41F6E7B48CB963A021A21B4657D3A69ACAE24E24`
+- Frozen request: `REQ_20260827T035500111Z_3C97863DBF26`, ZIP SHA-256 `8D4E9C9C8C4105B28CF8539942AD182C6E9F237974200C86412D0EBDF67303F0`; classification remains `INDEPENDENT_VALIDATION_OUTCOME_BLIND_METADATA_DISCLOSED`.
+- Exact next action: commit/push this checkpoint, create and gate one fresh fixed one-shot publisher, publish exactly once through persistent `U:` with no retry, then collect only the matching signed terminal response.
+- Authority: review-only; provider disabled, processor untouched, training/XML/production false, and every prerequisite/hold preserved.
