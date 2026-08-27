@@ -1,8 +1,26 @@
-# Active ArgosEdgeLab state - O2D18 Slot20 publication ready - 2026-08-27
+# Active ArgosEdgeLab state - O2D18 signed Slot20 frozen / Slot21 next - 2026-08-27
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-02 O2D18 signed Slot20 result frozen / Slot21 next — 2026-08-27
+
+Matching signed response `R_DDE1C032BD6B_20260827011029175_2677777e`
+passed exact request, ZIP, manifest, file, signature, signer and terminal-state
+verification. Response ZIP SHA-256 is
+`940D0B0AB65C27A93C8B13428800359B70B12685FF0D414356B04A2A07D0A4AA`;
+terminal-gate SHA-256 is
+`7086F5005363A85175555603B2D4427F45BA948F219CDEE925E3B18138D09D82`.
+
+Slot20 read despite the upstream notch hold and returned image-first
+`FFFFFFFFFFF7`, proposed `FFF77FFF7FF7`, and six candidates. Identity remains
+unaccepted. Slot20 is frozen only as ambiguous development evidence. Current
+checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D18_SIGNED_SLOT20_FROZEN_SLOT21_NEXT_CHECKPOINT_20260827.md`,
+SHA-256 `DA40520B42BA9258FDF3597B094F25BA00C3FED5D1FA0080107FC7E8406BA8FC`.
+Slot21 is next. Slots22-25 remain unseen and all holds, provider, processor and
+authority boundaries remain fixed.
 
 ## OCV-02 O2D18 Slot20 exact-source request publication ready — 2026-08-27
 
