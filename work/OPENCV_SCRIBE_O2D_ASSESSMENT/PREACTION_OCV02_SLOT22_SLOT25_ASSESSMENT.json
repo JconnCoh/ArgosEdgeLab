@@ -1,0 +1,111 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_SLOT22_SLOT25_FILESYSTEM_ASSESSMENT_20260827T120000Z",
+  "createdUtc": "2026-08-27T12:00:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "FILESYSTEM_ONLY_OCV02_FOUR_MEMBER_VALIDATION_ASSESSMENT_AND_CHECKPOINT",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "47AD7D3A36BB0A3B7F1FF7FB0901FD4AF3A7DA03E2A79EA03DAF70B29603563C"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D20_SIGNED_SLOT22_BLIND_FROZEN_SLOT23_NEXT_CHECKPOINT_20260827.md",
+      "sha256": "247D637CE3791BC4E92B0E82F7017ECC046A764E47B06C404CCFCEB4678D185A"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D20/O2D20_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "8A29FCBFC83F85E6BA514577619B71E072670416C71959D2EE1091EFDE705D7F"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D21_SIGNED_SLOT23_BLIND_FROZEN_SLOT24_NEXT_CHECKPOINT_20260827.md",
+      "sha256": "07724A33A5AF99D6B855E7BBBA626B520D397E5C11D07623286BE8703AF2C2C2"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D21/O2D21_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "40A6A70324BF3D22AFD681CEBAF242B1ECBCA8C6656398B0687E8313054605FC"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D22_SLOT24_TERMINAL_20260827.md",
+      "sha256": "D9EF3B5239D040A9986EC3425C0C688F07C87F63F4FD6EC4F3F191ABD50BADBB"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D22/O2D22_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "90ABE4E37A74EED80EC7D2F82296D1B101E2F655A2AB7F909D5D525F5B34D7F2"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D22_SLOT25_REVIEW_CLEARED_20260827.md",
+      "sha256": "A779AA3302B79F3091797FF450B88FB6F9D9DF242FD727875B95C7C9149A509B"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/O2D23_SLOT25_TERMINAL_20260827.md",
+      "sha256": "D8C44F8F465FD25D7D2F47967DC8AB64E44FABFB8A0FDB7B781D03073EDC8D4D"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/O2D23_EXACT_RESPONSE_COLLECTION_R2_GATE.json",
+      "sha256": "9B5EA1163BB65F6BF558723858407590B47AED40CC2C06F92D1621EF82258B45"
+    },
+    {
+      "path": "work/ARGOS_OPENCV_ALL_IMAGE_PROCESSING_MIGRATION.json",
+      "sha256": "C1EF35002EB8A294221DB9FF2E15FC7CB4ED48F1299EFC7AD0774BF5B82194B4"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "scope": {
+    "mode": "OBSERVE",
+    "filesystemOnly": true,
+    "signedEvidenceMembers": 4,
+    "slots": [
+      "Slot22",
+      "Slot23",
+      "Slot24",
+      "Slot25"
+    ],
+    "imageBytesRead": false,
+    "externalRequest": false,
+    "providerActivation": false,
+    "processorAction": false,
+    "identityAcceptance": false,
+    "holdsCleared": false,
+    "checkpointPromotionPlanned": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionRoutingEnabled": false
+}

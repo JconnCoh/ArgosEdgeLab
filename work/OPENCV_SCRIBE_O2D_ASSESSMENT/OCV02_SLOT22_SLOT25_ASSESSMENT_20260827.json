@@ -1,0 +1,145 @@
+{
+  "schema": "argos_ocv02_four_member_validation_assessment_v1",
+  "createdUtc": "2026-08-27T12:02:00Z",
+  "state": "HOLD_OCV02_AUTOMATIC_IDENTITY_NOT_QUALIFIED_FOUR_OF_FOUR_AMBIGUOUS",
+  "disposition": "PENDING_GATE",
+  "mode": "FILESYSTEM_ONLY_OBSERVE",
+  "preactionContract": {
+    "path": "work/OPENCV_SCRIBE_O2D_ASSESSMENT/PREACTION_OCV02_SLOT22_SLOT25_ASSESSMENT.json",
+    "sha256": "914156F8476A7FA6928B8FAAA7057E2C2D0D09C402C8E6800CC18454FF6143BB",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"
+  },
+  "frozenEngine": {
+    "sha256": "F61F5954A77E6F730A2BF0D110A468535C4595D25DB21AFFE1573EF08B8139AB",
+    "unchangedAcrossAllMembers": true,
+    "noTuningAfterFreeze": true
+  },
+  "members": [
+    {
+      "slot": "Slot22",
+      "physicalIdentity": "62619-433_20260824005735_Slot22",
+      "qualification": "INDEPENDENT_VALIDATION_BLIND",
+      "requestId": "REQ_20260827T020900111Z_5B7ADC1BBF26",
+      "responseId": "R_7E2AAF0BAD7E_20260827022655295_888d00bd",
+      "responseZipSha256": "346356D55AC2D6B25203B10786D396536FC11B0A0064FDF37A8854DAF6875C32",
+      "terminalGate": {
+        "path": "work/OPENCV_SCRIBE_O2D20/O2D20_TERMINAL_RESPONSE_GATE.json",
+        "sha256": "8A29FCBFC83F85E6BA514577619B71E072670416C71959D2EE1091EFDE705D7F"
+      },
+      "resultState": "SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID",
+      "imageFirstString": "FFFFFFFFFFF7",
+      "proposedString": "FF7FFF7FF7F7",
+      "checksumState": "SCRIBE_M12_RERANKED_CONFIRMATION_REQUIRED",
+      "candidateCount": 6,
+      "identityAccepted": false
+    },
+    {
+      "slot": "Slot23",
+      "physicalIdentity": "62619-433_20260824005735_Slot23",
+      "qualification": "INDEPENDENT_VALIDATION_BLIND",
+      "requestId": "REQ_20260827T023200111Z_8A9CFF90BF26",
+      "responseId": "R_0625466C6A6C_20260827024747655_661acb16",
+      "responseZipSha256": "8A249AD8ACDFCFBA75F2815FF1EFCC1B0A9762C447BB9DC7A777F39629FCF491",
+      "terminalGate": {
+        "path": "work/OPENCV_SCRIBE_O2D21/O2D21_TERMINAL_RESPONSE_GATE.json",
+        "sha256": "40A6A70324BF3D22AFD681CEBAF242B1ECBCA8C6656398B0687E8313054605FC"
+      },
+      "resultState": "SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID",
+      "imageFirstString": "FFFFFFFFFFF7",
+      "proposedString": "FFF77FFF7FF7",
+      "checksumState": "SCRIBE_M12_RERANKED_CONFIRMATION_REQUIRED",
+      "candidateCount": 6,
+      "identityAccepted": false
+    },
+    {
+      "slot": "Slot24",
+      "physicalIdentity": "62619-433_20260824005735_Slot24",
+      "qualification": "INDEPENDENT_VALIDATION_BLIND",
+      "requestId": "REQ_20260827T030200111Z_6C5C7F1FBF26",
+      "responseId": "R_C74B050C0F51_20260827034006298_4d459405",
+      "responseZipSha256": "D68EF3002168396B993A25C4BD37C4EDB7A54BC6811129936FBCA8A82E33BD42",
+      "terminalGate": {
+        "path": "work/OPENCV_SCRIBE_O2D22/O2D22_TERMINAL_RESPONSE_GATE.json",
+        "sha256": "90ABE4E37A74EED80EC7D2F82296D1B101E2F655A2AB7F909D5D525F5B34D7F2"
+      },
+      "resultState": "SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID",
+      "imageFirstString": "FFFFFFFFFFF7",
+      "proposedString": "FF7FFF7FF7F7",
+      "checksumState": "SCRIBE_M12_RERANKED_CONFIRMATION_REQUIRED",
+      "candidateCount": 8,
+      "identityAccepted": false
+    },
+    {
+      "slot": "Slot25",
+      "physicalIdentity": "62619-433_20260824005735_Slot25",
+      "qualification": "INDEPENDENT_VALIDATION_OUTCOME_BLIND_METADATA_DISCLOSED",
+      "whollyUnseen": false,
+      "requestId": "REQ_20260827T035500111Z_3C97863DBF26",
+      "responseId": "R_E15698774150_20260827044400129_f775f729",
+      "responseZipSha256": "044066FEF469C05DC4C1F8E907C929486D9FC3DFE75315C1A885485BED8C589A",
+      "terminalGate": {
+        "path": "work/OPENCV_SCRIBE_O2D23/O2D23_EXACT_RESPONSE_COLLECTION_R2_GATE.json",
+        "sha256": "9B5EA1163BB65F6BF558723858407590B47AED40CC2C06F92D1621EF82258B45"
+      },
+      "resultState": "SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID",
+      "imageFirstString": "FFFFFFFFFFF7",
+      "proposedString": "FF7FFF7FF7F7",
+      "checksumState": "SCRIBE_M12_RERANKED_CONFIRMATION_REQUIRED",
+      "candidateCount": 7,
+      "identityAccepted": false
+    }
+  ],
+  "aggregate": {
+    "memberCount": 4,
+    "blindMemberCount": 3,
+    "outcomeBlindMetadataDisclosedMemberCount": 1,
+    "ambiguousMultipleValidCount": 4,
+    "automaticIdentityAcceptedCount": 0,
+    "rerankedConfirmationRequiredCount": 4,
+    "referenceCoverageHoldCount": 4,
+    "automaticLocalizationDevelopmentHoldCount": 4,
+    "upstreamIdentityConfirmationHoldCount": 4,
+    "candidateCountTotal": 27,
+    "candidateCountMinimum": 6,
+    "candidateCountMaximum": 8,
+    "imageFirstAgreementCount": 4,
+    "dominantProposal": "FF7FFF7FF7F7",
+    "dominantProposalCount": 3,
+    "alternateProposal": "FFF77FFF7FF7",
+    "alternateProposalCount": 1
+  },
+  "assessment": {
+    "automaticIdentityQualificationPassed": false,
+    "confidenceCalibrationQualified": false,
+    "referenceCoverageQualified": false,
+    "providerActivationAuthorized": false,
+    "ocv04IdentityPrerequisiteCleared": false,
+    "humanIdentityDecisionRequired": true,
+    "reason": "All four no-tuning members returned multiple valid proposals under unqualified automatic localization, and the frozen reference bundle lacks full label coverage. Agreement of an image-first or proposed string is not identity authority."
+  },
+  "preservedHolds": [
+    "SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID",
+    "SCRIBE_REFERENCE_COVERAGE_HOLD",
+    "SCRIBE_AUTO_LOCALIZATION_DEVELOPMENT_HOLD",
+    "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+    "lot62631586FrontGuiRecovery:PENDING_GATE",
+    "ALL_MAP_POSE_FIDUCIAL_ALIGNMENT_PREREQUISITES",
+    "O2D14:WITHDRAWN",
+    "DFLY3005:EXCLUDED"
+  ],
+  "actions": {
+    "imageBytesRead": false,
+    "externalRequestPublished": false,
+    "predecessorRerun": false,
+    "providerActivated": false,
+    "processorTouched": false,
+    "taskOrProcessRestarted": false,
+    "identityAccepted": false,
+    "holdsCleared": false
+  },
+  "nextWorkPackage": "OCV-03",
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

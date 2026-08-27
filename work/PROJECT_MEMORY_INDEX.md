@@ -810,3 +810,13 @@ task from changing which revision, UI, evidence, or next action is active.
 - Collector: first draft failed PS5.1 preflight before mutation and is non-reusable; R2 collection gate is `9B5EA1163BB65F6BF558723858407590B47AED40CC2C06F92D1621EF82258B45`.
 - Exact next action: filesystem-only four-member independent validation assessment; no tuning, new request, provider/processor action, identity acceptance, or hold clearance.
 - Authority: Slot25 is outcome-blind metadata-disclosed, not wholly unseen; review-only true, training/XML/production false, provider disabled, processor untouched, and every prerequisite/hold preserved.
+
+## 2026-08-27 — OCV-02 Slot22-Slot25 assessment complete / OCV-03 active
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_SLOT22_SLOT25_ASSESSMENT_COMPLETE_OCV03_NEXT_20260827.md`
+- SHA-256: `F45B85279BEE8260F6A790124C81785BF5983DD27E4AF7F6ED68E57C4524F632`
+- Assessment: `work/OPENCV_SCRIBE_O2D_ASSESSMENT/OCV02_SLOT22_SLOT25_ASSESSMENT_20260827.json`, SHA-256 `436F50AA4D4E176CD9F3E14FEDBAE7FD7796004F089B8968A553B804D0BA8418`.
+- Result: four of four no-tuning members are `SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID`; 0 identities accepted; 27 total candidates; reference coverage, automatic localization, upstream identity, and all other holds remain.
+- Slot25 remains `INDEPENDENT_VALIDATION_OUTCOME_BLIND_METADATA_DISCLOSED`, not wholly unseen.
+- Exact next action: OCV-03 local review-only edge/notch execution using the exact hotspot lot and all discoverable existing chipout regression wafers, with a frozen separate independent paired BF/DF validation cohort.
+- Authority: live provider disabled, protected processor untouched, review-only true, training/XML/production false, and every existing hold/prerequisite preserved.
