@@ -1,0 +1,117 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-27T23:12:15Z",
+  "incidentId": "OCV03_SLOT16_FRONT_NOTCH_SPLIT_METHOD_20260827",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 2,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3M8/O3M8_WITHDRAWAL.json",
+        "sha256": "8DD0F64D5F46FBB69EE93ADC0E67363C8AB7D92B6DB6527F1822FFCECEEEBB22",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      },
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3M9/O3M9_SIGNED_REQUEST_WITHDRAWAL.json",
+        "sha256": "DF1AAB53833AB89AB523D4EFF466810F21B8249D48CB68A016272986F00383C1",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": ["START_BOUNDED_PORTABLE_OPENCV_SPLIT_METHOD_SLOT16"],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3J1/O3J1_EXACT_RESPONSE_COLLECTION_GATE.json",
+      "sha256": "4C277E2F92BC33D61F29BBF41E0E79D3371A8258365522B100DC606C02EB2748"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3D3/O3D3R4_COMPLETE_ROUTE_GATE.json",
+      "sha256": "41A4A1B808E40E7A14A8F22BA7BF9189C0B00B16639A43DDF5AB9A3FC70385D2"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [
+      "F:/62629-419_20260824112405/Slot16/BrightfieldFrontsideWafer/resizedImage/62629-419_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "F:/62629-419_20260824112405/Slot16/DarkfieldFrontsideWafer/resizedImage/62629-419_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp"
+    ],
+    "requestedCapabilities": [
+      "EXACT_TWO_SOURCE_SHA256_VERIFICATION",
+      "BF_TOP_CONNECTED_TOPOLOGY_FULL_360",
+      "DF_OUTER_EDGE_RADIAL_FULL_360",
+      "CROSS_METHOD_CANDIDATE_PAIRING",
+      "CONTOUR_HUGGING_REVIEW_OVERLAY"
+    ],
+    "requestedFields": [
+      "BF_AND_DF_INDEPENDENT_CANDIDATES",
+      "COMMON_PHYSICAL_CANDIDATES",
+      "MEASURED_MOUTH_TO_MOUTH_CONTOURS",
+      "FULL_WAFER_OVERVIEWS",
+      "EXPLICIT_HOLDS"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3M9/O3M9_SUPPORTING_OBSERVATION.json",
+      "sha256": "CBB8441B0B0BC74741412A1ADBF4980F1BC7D558B86DF7FA1FE089E68C8C1FC5"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "authorizationBoundary": {
+    "localDesignAndWindowsPowerShell51ProofAuthorized": true,
+    "packageBuildAuthorized": true,
+    "signatureAuthorized": true,
+    "livePublicationAuthorized": true,
+    "liveEndpointRequestsMaximum": 2,
+    "liveEndpointRequestSequence": [
+      "ONE_MAINTENANCE_PATCH_TO_RUN_THE_EXACT_SLOT16_SPLIT_METHOD_AND_STAGE_THE_REVIEW_ZIP",
+      "ONE_DATA_PULL_AFTER_THE_MATCHING_RENDER_TERMINAL_RESPONSE_TO_RETURN_THAT_EXACT_ZIP"
+    ],
+    "operatorAuthorization": "2026-08-27 operator authorized the notch-finding successor and confirmed BF/DF and FS/BS may use different methods",
+    "authorizedPurpose": "Find the true Slot16 frontside notch by independent full-360 BF and DF methods without Argos orientation metadata, then present measured contour-hugging overlays."
+  },
+  "sourceImageBytesReadAllowed": true,
+  "sourceImageReadAllowlistCount": 2,
+  "sourceMutationAllowed": false,
+  "detectorRerunAllowed": true,
+  "thresholdOrAlgorithmChangeAllowed": false,
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

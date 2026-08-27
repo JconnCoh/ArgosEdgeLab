@@ -1,0 +1,62 @@
+{
+  "schema": "argos_ocv03_o3m9_endpoint_rehearsal_gate_v1",
+  "revision": "O3M9_ENDPOINT_REHEARSAL_GATE_20260827T230313Z",
+  "createdUtc": "2026-08-27T23:03:13Z",
+  "state": "PASS",
+  "host": "WINDOWS_POWERSHELL_5_1_ENGINEERING_LAPTOP",
+  "endpoint": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3M9/Invoke-O3M9Slot16Endpoint.ps1",
+    "sha256": "6FCBD72372DB278A9EF4C6476B57398D2F29478776CF82819945828B52C14A7A"
+  },
+  "invocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3M9/O3M9_ENDPOINT_REHEARSAL_INVOCATION.json",
+    "sha256": "55D65B68124C17FB3BA66E9307E83863B4B360D5091547942FE61D1339FBD0C9"
+  },
+  "preaction": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3M9/PREACTION_O3M9_ENDPOINT_REHEARSAL.json",
+    "state": "PASS_PREACTION_CONTRACT"
+  },
+  "terminalState": "PASS_O3M8_SLOT16_SPLIT_METHOD_RENDERED_FOR_DATA_PULL",
+  "detectorManifest": {
+    "path": "C:/A3M9O/MANIFEST.json",
+    "sha256": "1C54521E8CA5210D403A2D605591FC224DE661281E601B0FEC8E085BC1334D77",
+    "state": "COMPLETE_REVIEW_ONLY_FULL_PERIMETER_TOPOLOGY",
+    "pairState": "HOLD_PARTIAL_BF_TOPOLOGY_COVERAGE_WITH_ONE_CROSS_METHOD_CANDIDATE",
+    "eligiblePhysicalCandidateCount": 1,
+    "physicalCandidateCount": 1,
+    "bfQualifiedTileCount": 71,
+    "bfTileCount": 72,
+    "bfAngleDegrees": 89.6892118798564,
+    "dfAngleDegrees": 89.64755723590974,
+    "channelAngleDifferenceDegrees": 0.04165464394665719,
+    "dfRedMeasuredContourColumnCount": 228
+  },
+  "reviewZip": {
+    "path": "C:/A3M9E/O3M9_REHEARSAL.zip",
+    "bytes": 11667919,
+    "sha256": "CEBF7B866403890194BCD8356BCCC1F2D98B9A1E69E02F61EF2152A47C22B9AE",
+    "entryCount": 39
+  },
+  "methods": {
+    "bf": "TOP_CONNECTED_TOPOLOGY_FULL_360",
+    "df": "OUTER_EDGE_RADIAL_FULL_360",
+    "backside": "NOT_CONSUMED"
+  },
+  "controls": {
+    "sourceHashesMatched": true,
+    "detectorRerun": true,
+    "thresholdChanged": false,
+    "backsidePixelsConsumed": false,
+    "argosRotationMetadataConsumed": false,
+    "orientationMetadataConsumed": false,
+    "operatorLocationConsumedBeforeOutputFreeze": false,
+    "sourceMutationPerformed": false,
+    "providerActivated": false,
+    "processorTouched": false,
+    "aliasRemoved": true,
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false
+  }
+}

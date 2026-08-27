@@ -1,0 +1,72 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-27T23:03:30Z",
+  "state": "PASS_O3M9_SLOT16_SPLIT_METHOD_SUPPORTING_OBSERVATION",
+  "incidentId": "OCV03_SLOT16_FRONT_NOTCH_SPLIT_METHOD_20260827",
+  "sourceEvidence": {
+    "signedSlot16Response": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3J1/O3J1_EXACT_RESPONSE_COLLECTION_GATE.json",
+      "sha256": "4C277E2F92BC33D61F29BBF41E0E79D3371A8258365522B100DC606C02EB2748"
+    },
+    "slot16JsonDiagnosis": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3J1/O3J1_SLOTS16_18_JSON_DIAGNOSIS.json",
+      "sha256": "4FF05A8614171205B5A2C70E772AFE3FB58DE8AE797128BEE87D3C5A3A0804B9"
+    },
+    "operatorFeedback": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3L8/O3L8_OPERATOR_FEEDBACK_20260827.json",
+      "sha256": "462BB62796A2D3E424DF1C6FC05AAC39EF40CCB4AAF0C4D6BF73417CE33120DD"
+    },
+    "splitMethodRegression": {
+      "path": "work/O3M7/P7/MANIFEST.json",
+      "sha256": "825118A0D53D478AA2F8B5334ED9405267561041FD21E14C1EBD4E46DF016AEE"
+    },
+    "splitMethodSyntheticGate": {
+      "path": "work/O3M7/T7/SYNTHETIC_GATE.json",
+      "sha256": "A4A85A46B61701EA9973DA768AF77D5240A682DBE4D1085FAF14BEAB21F8D937"
+    }
+  },
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "mutationsPerformed": false,
+  "expectedObserved": [
+    {
+      "identity": "62629-419_20260824112405_SLOT16_BF",
+      "expectedBytes": 475379874,
+      "observedBytes": 475379874,
+      "expectedSha256": "3F98D5B506B3EF6E18BF9C24A64DC4516F024248DE994BD3DCBD5C8680EB7E90",
+      "observedSha256": "3F98D5B506B3EF6E18BF9C24A64DC4516F024248DE994BD3DCBD5C8680EB7E90"
+    },
+    {
+      "identity": "62629-419_20260824112405_SLOT16_DF",
+      "expectedBytes": 475379874,
+      "observedBytes": 475379874,
+      "expectedSha256": "E293D3155A50554104A232C1FF9F1BDA7E6935D798C7266A2C8A0F90FC0A098B",
+      "observedSha256": "E293D3155A50554104A232C1FF9F1BDA7E6935D798C7266A2C8A0F90FC0A098B"
+    },
+    {
+      "field": "DISPLAYED_179_DEGREE_CANDIDATE",
+      "expected": "VISIBLE_MANUFACTURED_NOTCH",
+      "observed": "NO_NOTCH; CYAN_EDGE_DRIFT"
+    },
+    {
+      "field": "TRUE_SLOT16_NOTCH_LOCATION",
+      "expected": "UNKNOWN_TO_DETECTOR_FULL_360_SEARCH",
+      "observed": "OPERATOR_REPORTS_UPPER_RIGHT_ONLY_AFTER_PRIOR_OUTPUT_FREEZE"
+    },
+    {
+      "field": "CHANNEL_APPEARANCE_METHOD",
+      "expected": "BF_AND_DF_MAY_REQUIRE_DIFFERENT_SEGMENTATION",
+      "observed": "BF_TOPOLOGY_AND_DF_RADIAL_SPLIT_PASSED_FROZEN_POST2_AND_SYNTHETIC_REGRESSION"
+    }
+  ],
+  "observationConclusion": "The prior Slot16 candidate is disproved visually. The exact source pair remains available and the independently frozen BF-topology plus DF-radial full-360 methods agree on the known POST2 notch cohort without consuming Argos orientation metadata. One exact Slot16 review-only run is needed to locate and render the true contour.",
+  "imageBytesReadByThisObservation": false,
+  "sourceHashingPerformedByThisObservation": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

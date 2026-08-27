@@ -1,0 +1,37 @@
+{
+  "schema": "argos_ocv03_split_method_preflight_gate_v1",
+  "revision": "O3M6_R6_SPLIT_METHOD_PREFLIGHT_20260827T224600Z",
+  "createdUtc": "2026-08-27T22:46:00Z",
+  "state": "PASS_SPLIT_METHOD_EVIDENCE_AND_IN_MEMORY_CONTROLS",
+  "channelMethods": {
+    "BF": "TOP_CONNECTED_TOPOLOGY_FULL_360",
+    "DF": "OUTER_EDGE_RADIAL_FULL_360"
+  },
+  "backsidePixelsConsumed": false,
+  "post2Evidence": {
+    "bfTopologyManifest": {
+      "path": "work/O3M5/P5/MANIFEST.json",
+      "sha256": "1601F83A00E821AA81A6BB5151378B1A019498568F01382708CD2F6E882AD0D8"
+    },
+    "dfRadialResults": [
+      {"pairId": "62546-481_POST2_SLOT01", "path": "work/O3M1/P6/62546-481_POST2_SLOT01/NATIVE_WAFER_POSE_OPENCV_V2.json", "sha256": "27C8FA9C3F308DC50B81D5DB4A145E402C3CB0CE55A93BF8574AEF7B4C693659", "bfTopologyAngleDegrees": 89.99435058183501, "dfRadialAngleDegrees": 90.03556734938735, "differenceDegrees": 0.04121676755232784, "eligibleCrossMethodPairCount": 1},
+      {"pairId": "62546-481_POST2_SLOT03", "path": "work/O3M1/P6/62546-481_POST2_SLOT03/NATIVE_WAFER_POSE_OPENCV_V2.json", "sha256": "A2721C6834623B8315BEDCF8FEC221850CBA87D9BA594970C6BC62E64B267AD1", "bfTopologyAngleDegrees": 89.58789128659392, "dfRadialAngleDegrees": 89.64385690044607, "differenceDegrees": 0.055965613852094975, "eligibleCrossMethodPairCount": 1},
+      {"pairId": "62546-481_POST2_SLOT17", "path": "work/O3M1/P6/62546-481_POST2_SLOT17/NATIVE_WAFER_POSE_OPENCV_V2.json", "sha256": "4ED3D611A2C69F4F9B3BC26F6ECCC5DDDFD7339F8CE6252B7FF83A74C8D1C3F8", "bfTopologyAngleDegrees": 89.6892118798564, "dfRadialAngleDegrees": 89.64755723590974, "differenceDegrees": 0.04165464394668561, "eligibleCrossMethodPairCount": 1}
+    ],
+    "thresholdOrAlgorithmTuningAgainstPost2": false,
+    "operatorLocationConsumed": false
+  },
+  "syntheticInMemoryRows": [
+    {"caseId": "UPPER_RIGHT_315", "bfTopologyCandidateCount": 1, "dfRadialCandidateCount": 1, "eligiblePairCount": 1, "expectedCount": 1},
+    {"caseId": "ANGLE_037", "bfTopologyCandidateCount": 1, "dfRadialCandidateCount": 1, "eligiblePairCount": 1, "expectedCount": 1},
+    {"caseId": "NO_NOTCH_PERIODIC", "bfTopologyCandidateCount": 0, "dfRadialCandidateCount": 0, "eligiblePairCount": 0, "expectedCount": 0},
+    {"caseId": "TWO_NOTCH_AMBIGUITY", "bfTopologyCandidateCount": 2, "dfRadialCandidateCount": 2, "eligiblePairCount": 2, "expectedCount": 2},
+    {"caseId": "CHIPOUT_NOT_PAIRED", "bfTopologyCandidateCount": 1, "dfRadialCandidateCount": 2, "eligiblePairCount": 1, "expectedCount": 1}
+  ],
+  "full360Search": true,
+  "argosRotationMetadataConsumed": false,
+  "knownNotchLocationConsumed": false,
+  "thresholdChange": false,
+  "reviewOnly": true,
+  "productionEligible": false
+}

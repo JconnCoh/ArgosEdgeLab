@@ -1,0 +1,66 @@
+{
+  "schema": "argos_ocv03_o3l8_operator_feedback_v1",
+  "revision": "FMOCV03_O3L8_20260827T213900Z",
+  "reviewManifestPath": "work/OPENCV_EDGE_NOTCH_O3L8/review/MANIFEST.json",
+  "reviewManifestSha256": "4D7ACA7A1EC90393AB21A3B58D7CD763B1B499CCFA6128110D168374E039544F",
+  "feedbackDateLocal": "2026-08-27",
+  "channelJudgments": [
+    {
+      "id": "S17-C1-DF",
+      "judgment": "GREAT",
+      "operatorText": "DF great"
+    },
+    {
+      "id": "S17-C1-BF",
+      "judgment": "GREAT",
+      "operatorText": "BF great"
+    },
+    {
+      "id": "S16-C1-DF",
+      "judgment": "REJECT_DISPLAYED_REGION_AS_NOTCH",
+      "operatorText": "There is no notch in this image; the cyan drifts away on the left.",
+      "externalGimpEnhancementUsedForOperatorInspectionOnly": true
+    },
+    {
+      "id": "S17-C2-DF",
+      "judgment": "EDGE_TRACE_GREAT",
+      "operatorText": "DF great"
+    },
+    {
+      "id": "S17-C2-BF",
+      "judgment": "EDGE_TRACE_PRETTY_GOOD_LOCAL_LEFT_JUT",
+      "operatorText": "Pretty good; there is a tiny jut deviating from the wafer on the left."
+    },
+    {
+      "id": "S16-C1-BF",
+      "judgment": "EDGE_TRACE_PRETTY_GOOD_HOTSPOT_TRANSITION_DEVIATION",
+      "operatorText": "Pretty good; there is a slight deviation in the transition area where the hotspot is."
+    }
+  ],
+  "slot16OperatorDesignation": {
+    "physicalNotchVisibleOnFullWaferImage": true,
+    "rawDisplayedLocation": "UPPER_RIGHT",
+    "argosDisplayedRotationKnownIncorrect": true,
+    "displayedS16C1CandidateRegionIsPhysicalNotch": false,
+    "detectorRequirement": "SEARCH_COMPLETE_RAW_FULL_WAFER_PERIMETER_WITHOUT_ARGOS_ROTATION_METADATA_OR_ORIENTATION_PRIOR",
+    "operatorLocationUse": "POST_INFERENCE_REGRESSION_SCORING_ONLY"
+  },
+  "reviewConclusions": {
+    "s17c1NotchContourAcceptedByOperator": true,
+    "s16c1CandidateCropRejectedAsPhysicalNotch": true,
+    "s16TrueNotchMissingFromPresentedCandidateSet": true,
+    "candidateCenteredReviewCanHideA_MISSED_TRUE_NOTCH": true,
+    "argosRotationMetadataAllowedAsDetectorInput": false,
+    "knownNotchLocationAllowedAsDetectorInput": false,
+    "fullPerimeterInferenceRequired": true
+  },
+  "authority": {
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "providerActivationAuthorized": false,
+    "processorActionAuthorized": false,
+    "holdClearanceAuthorized": false
+  }
+}

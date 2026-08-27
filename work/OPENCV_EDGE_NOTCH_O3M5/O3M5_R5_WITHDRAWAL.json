@@ -1,0 +1,49 @@
+{
+  "schema": "argos_ocv03_full_perimeter_topology_withdrawal_v1",
+  "revision": "O3M5_R5_WITHDRAWN_20260827T224300Z",
+  "createdUtc": "2026-08-27T22:43:00Z",
+  "state": "WITHDRAWN",
+  "reason": "UNIVERSAL_BF_DF_SOLID_REGION_TOPOLOGY_APPEARANCE_REGIME_MISMATCH",
+  "engine": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3M5/FullPerimeterWaferTopologyOpenCvR5.py",
+    "sha256": "305CD83948A0C5DCDCC4706E3E0DB9B2AAC2C1E77EE6E86B7E23D6477A569B79"
+  },
+  "job": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3M5/O3M5_POST2_R5_JOB.json",
+    "sha256": "7B125B2365AE3BC7E73A25876ED640D6254330B5189EC52F6ACEA3D288C1DD62"
+  },
+  "syntheticGate": {
+    "path": "work/O3M5/T5/SYNTHETIC_GATE.json",
+    "sha256": "1FC27CEE1DB2D9CC1358CDB39887EBF50308E719582C7D291DD10D2F1BA73593",
+    "state": "PASS_O3M1_FULL_PERIMETER_TOPOLOGY_SYNTHETIC_GATE"
+  },
+  "failedLocalRun": {
+    "path": "work/O3M5/P5/MANIFEST.json",
+    "sha256": "1601F83A00E821AA81A6BB5151378B1A019498568F01382708CD2F6E882AD0D8",
+    "bfQualifiedTileCounts": [71, 71, 71],
+    "bfTotalTilesPerChannel": 72,
+    "dfIncompleteTileCounts": [12, 63, 68],
+    "dfExactFailureReasons": [
+      "No top-connected wafer component qualified.",
+      "Wafer contour covers fewer than two columns."
+    ],
+    "bfKnownNotchAnglesDegrees": [89.99435058183501, 89.58789128659392, 89.6892118798564]
+  },
+  "cause": "The frozen POST2 DF appearance regime does not form the solid top-connected exterior-dissimilar component required by BF topology segmentation; frozen R6 radial boundary evidence remains qualified.",
+  "prevention": "Use explicitly different frontside channel methods: BF full-perimeter topology and DF full-perimeter R6 radial boundary, followed by common physical candidate agreement.",
+  "backsideMethodShared": false,
+  "thresholdChangeAuthorized": false,
+  "futureExecutionAllowed": false,
+  "publicationParentAllowed": false,
+  "externalRequestMade": false,
+  "jbodExecution": false,
+  "providerActivated": false,
+  "processorTouched": false,
+  "sourceMutationPerformed": false,
+  "holdCleared": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

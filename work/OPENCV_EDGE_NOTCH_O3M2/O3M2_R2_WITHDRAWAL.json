@@ -1,0 +1,23 @@
+{
+  "schema": "argos_ocv03_o3m2_r2_withdrawal_v1",
+  "recordedUtc": "2026-08-27T22:22:14Z",
+  "state": "WITHDRAWN_SYNTHETIC_DEPTH_SCALE_MISMATCH",
+  "enginePath": "work/OPENCV_EDGE_NOTCH_O3M2/FullPerimeterWaferTopologyOpenCvR2.py",
+  "engineSha256": "674F8E29DCA4110D70CF2A88D5F6F5CCE411DF3B3EEF880F4FD861C3AD53563A",
+  "failedOutputRoot": "work/O3M2/T2",
+  "failedGatePath": "work/O3M2/T2/SYNTHETIC_GATE.json",
+  "failedGateSha256": "6001A1C9876E92C563EB417EFCE8E1A7F91B849F3B01C2FBB16E93BE2C14F489",
+  "failure": "The mouth scale was corrected, but the 38-pixel constructed positive depth remained below the accepted 72.17/76.52-pixel real S17 topology regime and filtered to 17.80 pixels below the frozen 20-pixel floor.",
+  "boundedDiagnostic": {
+    "constructedDepthsTestedPx": [50.0, 64.0, 76.0, 90.0],
+    "firstPassingConstructedDepthPx": 64.0,
+    "selectedSuccessorConstructedDepthPx": 76.0,
+    "thresholdChanged": false
+  },
+  "realSourceImagesRead": false,
+  "externalMutationPerformed": false,
+  "futureReuseAllowed": false,
+  "successorParentAllowed": false,
+  "reviewOnly": true,
+  "productionEligible": false
+}

@@ -9310,3 +9310,185 @@ than rerunning it.
 - Recovery: withdraw O3L7 and use a fresh namespace. Preserve segmentation,
   evidence-bounded depth/noise gates, axis semantics, and overlay bytes; change
   only multi-candidate decision semantics before any real crop read.
+## 2026-08-27 — A full-perimeter topology synthetic must preserve real pixel scale
+
+- Failure signature: the first O3M1 full-perimeter topology synthetic gate
+  returned zero eligible candidates for every positive case while its periodic
+  no-notch negative passed.  No real source image was read and no external
+  action occurred.
+- Cause: the synthetic used a 420-pixel wafer radius with a 2.4-degree notch,
+  making the mouth only about 18 pixels wide.  The unchanged real-image
+  17-pixel die-street closing kernel, contour smoothing, and 20-pixel depth
+  floor were therefore applied at a radically different spatial scale than
+  the approximately 5,160-pixel real wafer radius.  A bounded diagnostic found
+  a 22.37-pixel raw residual but only a 16.01-pixel processed peak after the
+  fixed topology filtering; relaxing the fixed gates would have hidden the
+  fixture defect.
+- Mandatory preflight: every angular notch/topology synthetic must preserve the
+  real ratio among wafer radius, notch mouth width, morphology kernels,
+  smoothing widths, and depth floor.  Assert the constructed mouth-pixel width
+  and its ratio to every fixed kernel before launch.  Scale the synthetic canvas
+  and radius when needed; never weaken a real detector threshold merely to make
+  an underscaled fixture pass.
+- Recovery: preserve `work/O3M1/T1` and the executed O3M1 R1 engine as
+  `WITHDRAWN`.  Use a fresh engine/output namespace with a spatially scaled
+  synthetic, keep the real topology thresholds unchanged, and rerun every
+  positive, no-notch, ambiguity, and chipout control before any real-image or
+  JBOD execution.
+- R2 follow-up: scaling the mouth to 35.19 pixels while retaining a 38-pixel
+  synthetic depth was still not commensurate with the accepted real S17
+  topology, whose measured peaks are 72.17 and 76.52 pixels.  The unchanged
+  topology path measured only an 18.96-pixel raw residual and a 17.80-pixel
+  filtered peak, correctly below the frozen 20-pixel floor.  A bounded
+  in-memory sweep proved that 64-, 76-, and 90-pixel constructed depths pass
+  without a threshold change, while 50 pixels does not.  Future preflight must
+  bind both mouth scale and positive depth to the accepted real development
+  regime and assert the filtered positive clears the frozen floor; preserve
+  `work/O3M2/T2` and the executed R2 engine as `WITHDRAWN`.
+- R3 follow-up: the accepted 76-pixel depth made the 2.4-degree upper-right
+  control pass, but four 2.2-degree BF controls still disappeared while their
+  DF partners survived.  The smaller BF mouth was only about twice the
+  17-pixel closing kernel, so the fixture remained direction/edge-family
+  sensitive.  A bounded five-angle in-memory preflight at a 2,200-pixel BF
+  radius produced an 84.47-pixel 2.2-degree mouth and returned exactly one
+  eligible BF/DF candidate at every tested angle, including 37, 82, 217, 242,
+  and 315 degrees.  Require the minimum positive mouth to be at least four
+  times the largest topology kernel, not merely wider than it; preserve
+  `work/O3M3/T3` and the executed R3 engine as `WITHDRAWN`.
+
+## 2026-08-27 — A composed image-provider job must validate its complete downstream configuration
+
+- Failure signature: O3M4 R4 passed its scale-realistic full-perimeter
+  synthetic gate and non-mutating real-job preflight, but the first frozen
+  POST2 execution marked all 72 tiles in all six BF/DF inputs incomplete with
+  the exact exception `'clahe'`.  It wrote review-only local evidence only;
+  no JBOD request, provider activation, processor action, source mutation, or
+  hold clearance occurred.
+- Cause: the successor job carried only the configuration keys referenced
+  directly by its orchestration module.  The delegated unchanged O3L8
+  topology provider also required `clahe`, exterior sampling, connected-region,
+  support, noise, and candidate-width keys.  The preflight validated selected
+  values but did not assert the complete downstream key set, while the
+  synthetic path supplied an internal complete dictionary and therefore could
+  not expose the real-job omission.
+- Mandatory preflight: every composed provider must define one complete exact
+  downstream configuration schema, require every delegated-provider key in
+  job validation, reject unknown or missing keys, and run at least one
+  no-pixel-decode configuration-construction check through the same real-job
+  path.  Synthetic fixtures must consume the same validated configuration
+  object as real jobs or mechanically compare their key sets before launch.
+- Recovery: preserve `work/O3M4/T4`, `work/O3M4/P4`, the R4 engine, and its job
+  as `WITHDRAWN`.  Use a fresh namespace, restore the unchanged frozen O3L8
+  configuration values, add complete key-set validation, rerun the full
+  synthetic suite, and then rerun the exact POST2 inputs without threshold or
+  algorithm changes before any Slot16/JBOD action.
+
+## 2026-08-27 — Frontside BF and DF edge appearance regimes must not be forced through one segmentation method
+
+- Failure signature: O3M5 R5 corrected the complete configuration contract,
+  passed the full scale-realistic synthetic suite, and decoded the exact three
+  frozen POST2 BF/DF pairs.  BF topology qualified 71 of 72 tiles on every
+  wafer and recovered each known approximately 90-degree notch.  The identical
+  solid-region topology method failed 12, 63, and 68 DF tiles respectively;
+  the failures were `No top-connected wafer component qualified` or `Wafer
+  contour covers fewer than two columns`.  The run wrote local review-only
+  evidence only and made no external or source mutation.
+- Cause: DF wafer interiors in this frozen appearance regime are not a solid
+  exterior-dissimilar region.  Treating sparse/dark DF interior response like
+  BF prevents the top-connected filled-component invariant from existing,
+  even though the qualified R6 outer-edge radial method independently recovers
+  the DF physical notch in every exact POST2 pair.  This is an appearance-
+  regime mismatch, not evidence to lower topology thresholds.
+- Mandatory preflight: declare channel methods explicitly.  Use the proven
+  top-connected topology contour for BF and the proven full-360 outer-edge
+  radial contour for DF, then pair only candidates supported by both channels.
+  Keep frontside and backside providers independent.  Gate upper-right and
+  arbitrary-angle positives, a no-notch negative, two-notch ambiguity, and a
+  one-channel chipout under the split method.  On the exact POST2 evidence,
+  require one BF-topology/DF-radial eligible pair per wafer at the frozen notch
+  without tuning.
+- Recovery: preserve `work/O3M5/T5`, `work/O3M5/P5`, the R5 engine, and its job
+  as `WITHDRAWN`.  Use a fresh namespace for the explicit BF-topology/DF-radial
+  provider.  Reuse frozen R6 radial parameters and O3L8 BF topology values;
+  change no threshold, use no Argos rotation/orientation input, and do not
+  consume backside pixels.
+
+## 2026-08-27 — PowerShell keyword boundaries require whitespace even when the AST parses
+
+- Failure signature: the first O3M8 Windows PowerShell 5.1 endpoint preflight
+  stopped with `The term 'return$r' is not recognized`.  The harness parser
+  gate had passed because PowerShell parsed the adjacent text as a command
+  token.  The failure occurred before alias creation, source metadata or image
+  reads, output creation, signature, publication, or external action.
+- Cause: a mechanically compacted function ended with `return$r` instead of
+  `return $r`.  AST parse success alone does not prove keyword/token boundary
+  semantics for compact PowerShell source.
+- Mandatory preflight: scan every changed PowerShell harness for adjacent
+  control-flow keywords and variables (`return$`, `throw$`, `break$`,
+  `continue$`, `exit$`) in addition to the AST parser and harness-safety gate.
+  Execute the exact non-mutating Windows PowerShell 5.1 preflight before any
+  rehearsal output, signature, or publication.
+- Recovery: because O3M8 remained an unsigned, unpublished, unexecuted local
+  `DRAFT` and no target bytes changed, correct the token boundary in place,
+  update exact hashes, and rerun the preaction, harness, and endpoint preflight.
+
+## 2026-08-27 — A create-new output leaf still requires an existing parent
+
+- Failure signature: the frozen O3M8 endpoint rehearsal passed its exact
+  non-mutating Windows PowerShell 5.1 preflight, created and later removed only
+  its owned `F:` alias, then the OpenCV child stopped with `WinError 3` while
+  creating `C:\A3M8R\o.partial`.  The parent `C:\A3M8R` did not exist.  No
+  image was decoded, no output leaf was created, and no request was signed or
+  published.
+- Cause: path-budget and collision gates proved the planned leaf was safe and
+  absent but did not prove that its immediate parent existed.  The provider
+  intentionally uses non-recursive create-new output creation.
+- Mandatory preflight: for every provider output, partial, export, and failure
+  leaf, prove the exact immediate parent exists before launch, or choose a
+  create-new leaf directly under an already verified existing parent.  Never
+  rely on an image provider to create missing ancestors implicitly.
+- Recovery: preserve O3M8 as withdrawn frozen rehearsal evidence.  Use a fresh
+  namespace whose rehearsal output/export leaves are directly under verified
+  `C:\`; retain the unchanged live roots whose parents are already pinned.
+
+## 2026-08-27 — Guard switches must be discovered from the exact installed command
+
+- Failure signature: the first O3M9 build pre-action invocation supplied
+  `-AsJson` to `Confirm-ArgosZeroRecurrencePreaction.ps1`, which does not
+  declare that switch.  PowerShell rejected the parameter before the guard
+  inspected the contract; the later build preflight in the same local shell
+  command still ran, but no build, signature, publication, source read, or
+  external mutation occurred.
+- Cause: the invocation copied an output-format switch supported by adjacent
+  guards without resolving the exact parameter set of the zero-recurrence
+  guard first.
+- Mandatory preflight: before invoking any guard, resolve its exact installed
+  command and parameter names with `Get-Command`; never infer optional switches
+  from a sibling utility.  Run guards as separate processes or fail the
+  compound caller immediately so a rejected mandatory guard cannot be hidden
+  by a later successful command.
+- Recovery: O3M9 build/sign remains an unsigned, unpublished local draft.
+  Correct only the guard invocation, refresh the failure-memory pin in the
+  pre-action contract, and rerun the zero-recurrence guard successfully before
+  signing.
+
+## 2026-08-27 — A signed maintenance request requires at least one declared change row
+
+- Failure signature: the O3M9 builder created and signed request
+  `REQ_20260827T230600111Z_62629419O3M9`, then the exact package verifier
+  stopped with `Maintenance package has no declared changes.`  No ZIP was
+  finalized, and nothing was published or executed.
+- Cause: the portal `MAINTENANCE_PATCH` manifest verifier requires one or more
+  `changes` rows even when the bounded entrypoint is intended to execute only
+  packaged payload bytes.  An empty changes array is not a valid signed
+  maintenance package in this installed protocol revision.
+- Mandatory preflight: before signing, assert the selected portal package
+  class's exact manifest cardinalities against the installed verifier.  For a
+  payload-only review action that still requires `MAINTENANCE_PATCH`, use only
+  a separately pinned, already-installed non-processor review helper as an
+  idempotent same-hash protocol anchor with `allowCreate=false`; never name a
+  protected processor file or represent an actual algorithm install as inert.
+- Recovery: withdraw the signed O3M9 request ID and preserve its exact manifest
+  and signature hashes as terminal local evidence.  Build any successor under
+  a fresh request/package namespace, rerun all gates, and publish it at most
+  once with no retry.

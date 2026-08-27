@@ -1,0 +1,46 @@
+{
+  "schema": "argos_ocv03_full_perimeter_topology_withdrawal_v1",
+  "revision": "O3M4_R4_WITHDRAWN_20260827T223500Z",
+  "createdUtc": "2026-08-27T22:35:00Z",
+  "state": "WITHDRAWN",
+  "reason": "REAL_JOB_TOPOLOGY_CONFIG_INCOMPLETE_CLAHE_KEY_ABSENT",
+  "engine": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3M4/FullPerimeterWaferTopologyOpenCvR4.py",
+    "sha256": "7B48AA89FD1FBFDA7B827DE33973C13560449B3AEEE19EB71B978840AFB697E3"
+  },
+  "job": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3M4/O3M4_POST2_R4_JOB.json",
+    "sha256": "B33373786E21201EB10798A74394089DDB79941C2FFA1C15153D86C1595CB05B"
+  },
+  "syntheticGate": {
+    "path": "work/O3M4/T4/SYNTHETIC_GATE.json",
+    "sha256": "1FC27CEE1DB2D9CC1358CDB39887EBF50308E719582C7D291DD10D2F1BA73593",
+    "state": "PASS_O3M1_FULL_PERIMETER_TOPOLOGY_SYNTHETIC_GATE"
+  },
+  "failedLocalRun": {
+    "path": "work/O3M4/P4/MANIFEST.json",
+    "sha256": "76EF39AEA69ECD8959F0D83615205429FD9B438A0F3C2A544C670FC9D47C1C59",
+    "pairCount": 3,
+    "channelCount": 6,
+    "tilesPerChannel": 72,
+    "incompleteTileCountPerChannel": 72,
+    "exactException": "'clahe'"
+  },
+  "cause": "The real job omitted delegated O3L8 topology configuration keys; validation checked selected values but not the complete downstream key set. The synthetic path used a separate complete internal dictionary.",
+  "prevention": "The successor must require the complete exact O3L8 topology key set, reject missing and unknown keys, use the same validated configuration construction in synthetic and real paths, and preserve every existing value.",
+  "thresholdChangeAuthorized": false,
+  "algorithmChangeAuthorized": false,
+  "futureExecutionAllowed": false,
+  "publicationParentAllowed": false,
+  "externalRequestMade": false,
+  "jbodExecution": false,
+  "providerActivated": false,
+  "processorTouched": false,
+  "sourceMutationPerformed": false,
+  "holdCleared": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

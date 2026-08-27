@@ -8115,3 +8115,39 @@ No detector rerun, source mutation, live-provider activation, protected-
 processor action, task/process action, hold clearance, XML/training, or
 production routing occurred. Frozen POST2 R6 remains mandatory before any
 fresh hotspot successor.
+
+## 2026-08-27 — OCV-03 O3N1 split-method Slot16 signed request ready
+
+Operator feedback disproved the old displayed Slot16 candidate and identified
+the actual notch as upper-right only for post-freeze visual checking. The
+successor now searches all 360 degrees in raw image coordinates without Argos
+rotation/orientation metadata. BF uses connected wafer topology; DF uses the
+qualified outer-edge radial method. Backside pixels are not consumed and
+backside remains a separate future appearance regime.
+
+The mandatory frozen POST2 rerun passed. The split method then passed the
+upper-right, arbitrary-angle, no-notch, two-notch-ambiguity, and one-channel
+chipout synthetic controls and returned one BF/DF common candidate for each
+frozen POST2 member without tuning. Each member preserves its one-tile BF
+partial-coverage hold.
+
+Exact signed request `REQ_20260827T231500111Z_62629419O3N1` is ready but
+unpublished. Its ZIP SHA-256 is
+`76BA22E074ADE5DF0D2B14CBB2C7937EA7E25DBEC3A1D552B923834C1BF12FAE`.
+The exact signed-package rehearsal SHA-256 is
+`5AFFED3580C93D1ACC97CDB6AF1D5CCA58D9673A132A1350DB83AC4F09844BBB`;
+the 53-row route gate SHA-256 is
+`C46F4C24150E4799A373224DF421A8A08872FC7921309F8F9DD87C033C86E94D`.
+Persistent `U:` is the exact drive-type-4 engineering mapping with zero
+pending request files. One publication and no retry are authorized; gateway
+acceptance is not execution evidence.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3N1_SPLIT_METHOD_SLOT16_PUBLISH_READY_20260827.md`,
+SHA-256 `4EC8DB7257C54184110D6977D85DA9B4D3C5D0C00BAA099772700AE098377E26`.
+Only the matching JBOD-signed terminal response may authorize the separate
+exact-file DATA_PULL. Slot16 operator contour review, BF partial coverage,
+raster release, fiducial designation/alignment transfer, and every existing
+production prerequisite remain held. No provider activation, protected
+processor action, threshold relaxation, source/wafer mutation, training, XML,
+or production routing is authorized.

@@ -1,0 +1,43 @@
+{
+  "schema": "argos_ocv03_source_derivation_v1",
+  "revision": "O3M5_R5_SOURCE_DERIVATION_20260827T223700Z",
+  "createdUtc": "2026-08-27T22:37:00Z",
+  "state": "PASS_FRESH_NAMESPACE_BOUNDED_CONFIG_VALIDATION_REMEDIATION",
+  "withdrawnPredecessorEngine": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3M4/FullPerimeterWaferTopologyOpenCvR4.py",
+    "sha256": "7B48AA89FD1FBFDA7B827DE33973C13560449B3AEEE19EB71B978840AFB697E3"
+  },
+  "withdrawal": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3M4/O3M4_R4_WITHDRAWAL.json",
+    "sha256": "B1AC7F10CB278B286EB531DD149D6C96335AB945D463BB71611BC018A492C26F"
+  },
+  "successorEngine": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3M5/FullPerimeterWaferTopologyOpenCvR5.py",
+    "sha256": "305CD83948A0C5DCDCC4706E3E0DB9B2AAC2C1E77EE6E86B7E23D6477A569B79"
+  },
+  "successorJob": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3M5/O3M5_POST2_R5_JOB.json",
+    "sha256": "7B125B2365AE3BC7E73A25876ED640D6254330B5189EC52F6ACEA3D288C1DD62"
+  },
+  "changeClassification": "CONFIG_SCHEMA_COMPLETENESS_ONLY",
+  "changes": [
+    "Add exact required topology configuration key set",
+    "Reject every missing or unknown topology key before image decode",
+    "Restore all unchanged frozen O3L8 delegated-provider values in the real job",
+    "Invoke the identical validator from synthetic and real-job paths"
+  ],
+  "unchanged": [
+    "Full 360-degree raw-image search",
+    "BF and DF independent frontside image processing",
+    "Backside exclusion",
+    "All detection algorithms and thresholds",
+    "Pairing and manufactured-notch morphology gates",
+    "Contour-hugging overlay semantics",
+    "Review-only authority"
+  ],
+  "thresholdChange": false,
+  "algorithmChange": false,
+  "publicationParentIsWithdrawnArtifact": false,
+  "reviewOnly": true,
+  "productionEligible": false
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "argos_ocv03_o3m3_r3_withdrawal_v1",
+  "recordedUtc": "2026-08-27T22:26:33Z",
+  "state": "WITHDRAWN_SYNTHETIC_MINIMUM_MOUTH_TO_KERNEL_RATIO_INSUFFICIENT",
+  "enginePath": "work/OPENCV_EDGE_NOTCH_O3M3/FullPerimeterWaferTopologyOpenCvR3.py",
+  "engineSha256": "A66450E0CF048DA0A52E678779422C4D7C5681A6E317FA6A342B874A02DC7483",
+  "failedOutputRoot": "work/O3M3/T3",
+  "failedGatePath": "work/O3M3/T3/SYNTHETIC_GATE.json",
+  "failedGateSha256": "1FCB20D3B49BA402750F235554BEBA6ED868500A40CEA16E92BEAC193AE39BCD",
+  "upperRightControlPassed": true,
+  "angleInvariantMinimumWidthControlsPassed": false,
+  "failure": "The 2.4-degree upper-right control passed, but the 2.2-degree BF mouth remained only about twice the 17-pixel closing kernel and was not angle-invariant.",
+  "boundedDiagnostic": {
+    "successorBfRadiusPx": 2200,
+    "minimumConstructedMouthWidthPx": 84.47393579652557,
+    "minimumMouthToLargestKernelRatio": 4.969055046854445,
+    "testedAnglesDegrees": [37.0, 82.0, 217.0, 242.0, 315.0],
+    "bfCandidateCountAtEveryAngle": 1,
+    "dfCandidateCountAtEveryAngle": 1,
+    "eligiblePhysicalCandidateCountAtEveryAngle": 1,
+    "thresholdChanged": false
+  },
+  "realSourceImagesRead": false,
+  "externalMutationPerformed": false,
+  "futureReuseAllowed": false,
+  "successorParentAllowed": false,
+  "reviewOnly": true,
+  "productionEligible": false
+}
