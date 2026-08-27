@@ -1,0 +1,49 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 67108864,
+  "entryPoint": "payload/Invoke-O3J1ResultJsonEndpoint.ps1",
+  "changes": [
+    {
+      "source": "payload/OCV03_ResultJsonProviderV1.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03_ResultJsonProviderV1.ps1",
+      "approvedPredecessorSha256": ["EF9773ADAC624A7A8A689989AB0EE404C2863B4E32B2666F437331E8CC9CAE67"],
+      "installedSha256": "EF9773ADAC624A7A8A689989AB0EE404C2863B4E32B2666F437331E8CC9CAE67",
+      "allowCreate": true
+    },
+    {
+      "source": "payload/O3J1_RESULT_JSON_PROVIDER_CONFIG.json",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03_O3J1_RESULT_JSON_PROVIDER_CONFIG.json",
+      "approvedPredecessorSha256": ["01C09158CF67EB9C04C84DE35F8C039D9F0F5B913319E304543AD8482ACE3EA0"],
+      "installedSha256": "01C09158CF67EB9C04C84DE35F8C039D9F0F5B913319E304543AD8482ACE3EA0",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [],
+  "entryPointOutputs": [],
+  "jsonReadContract": {
+    "mode": "EXACT_FROZEN_ALLOWLIST_JSON_TEXT_ONLY",
+    "approvedRootName": "O3D3R4_IMMUTABLE_RESULT_JSON",
+    "approvedRootPath": "D:\\A2\\o\\ocv\\O3D3R4_20260827T165500000Z_62629419",
+    "allowedExtension": ".json",
+    "exactFileCount": 13,
+    "maximumFileBytes": 4194304,
+    "maximumTotalBytes": 33554432,
+    "returnChannel": "SIGNED_MAINTENANCE_STDOUT",
+    "sourceJsonContentReadAllowed": true,
+    "sourceImageBytesReadAllowed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "taskOrProcessActionAllowed": false,
+    "providerActivationAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [],
+  "rehearsal": {"requiredState": "PASS_O3J1_EXACT_RESULT_JSON_CAPABILITY"},
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

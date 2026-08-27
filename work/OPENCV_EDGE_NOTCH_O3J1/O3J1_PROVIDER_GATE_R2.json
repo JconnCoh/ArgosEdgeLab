@@ -1,0 +1,103 @@
+{
+    "schema":  "argos_o3j1_provider_gate_v1",
+    "createdUtc":  "2026-08-27T18:59:44.4318104Z",
+    "state":  "PASS_O3J1_RESULT_JSON_PROVIDER_GATE",
+    "lifecycle":  "FROZEN_LOCAL_EVIDENCE",
+    "providerSha256":  "EF9773ADAC624A7A8A689989AB0EE404C2863B4E32B2666F437331E8CC9CAE67",
+    "controlSha256":  "B0F396B03CE8E46BAB00EFB2DF06E5DC53B1A4D637E20C33FBC9F45258C1FE35",
+    "liveConfigurationSha256":  "01C09158CF67EB9C04C84DE35F8C039D9F0F5B913319E304543AD8482ACE3EA0",
+    "liveInvocationSha256":  "6220CD7638D83EA18FE24E4C31A29FD542747B99ECF6AE6B205E5556335CC96B",
+    "livePreflightState":  "PASS_O3J1_RESULT_JSON_PROVIDER_PREFLIGHT",
+    "positiveCases":  [
+                          {
+                              "caseId":  "ZERO",
+                              "state":  "PASS_O3J1_EXACT_RESULT_JSON_COLLECTED",
+                              "fileCount":  0,
+                              "totalBytes":  0,
+                              "passed":  true
+                          },
+                          {
+                              "caseId":  "ONE",
+                              "state":  "PASS_O3J1_EXACT_RESULT_JSON_COLLECTED",
+                              "fileCount":  1,
+                              "totalBytes":  24,
+                              "passed":  true
+                          },
+                          {
+                              "caseId":  "MANY_13",
+                              "state":  "PASS_O3J1_EXACT_RESULT_JSON_COLLECTED",
+                              "fileCount":  13,
+                              "totalBytes":  368,
+                              "passed":  true
+                          }
+                      ],
+    "negativeCases":  [
+                          {
+                              "caseId":  "ROOTED",
+                              "rejected":  true,
+                              "message":  "A rooted relative path is not allowed: C:\\outside.json"
+                          },
+                          {
+                              "caseId":  "TRAVERSAL",
+                              "rejected":  true,
+                              "message":  "Traversal is not allowed: ../outside.json"
+                          },
+                          {
+                              "caseId":  "WILDCARD",
+                              "rejected":  true,
+                              "message":  "A wildcard relative path is not allowed: *.json"
+                          },
+                          {
+                              "caseId":  "NON_JSON",
+                              "rejected":  true,
+                              "message":  "An allowed path is not JSON."
+                          },
+                          {
+                              "caseId":  "UNAPPROVED",
+                              "rejected":  true,
+                              "message":  "Invocation requested an unapproved JSON path."
+                          },
+                          {
+                              "caseId":  "DUPLICATE",
+                              "rejected":  true,
+                              "message":  "Allowed JSON paths contain duplicates."
+                          },
+                          {
+                              "caseId":  "MISSING",
+                              "rejected":  true,
+                              "message":  "Required JSON source is absent: missing.json"
+                          },
+                          {
+                              "caseId":  "MALFORMED",
+                              "rejected":  true,
+                              "message":  "Invalid object passed in, \u0027:\u0027 or \u0027}\u0027 expected. (9): {not-json"
+                          },
+                          {
+                              "caseId":  "OVERSIZE",
+                              "rejected":  true,
+                              "message":  "JSON source exceeds its byte limit: C:\\A3J1Q\\OVERSIZE\\large.json"
+                          }
+                      ],
+    "positiveCaseCount":  3,
+    "negativeCaseCount":  9,
+    "zeroOneManyProven":  true,
+    "exactAllowlistProven":  true,
+    "pathTraversalRejected":  true,
+    "invalidJsonRejected":  true,
+    "missingJsonRejected":  true,
+    "oversizeJsonRejected":  true,
+    "fixtureRoot":  "C:\\A3J1Q",
+    "fixturePreserved":  true,
+    "jbodContacted":  false,
+    "sourceImageBytesRead":  false,
+    "imageBytesRead":  false,
+    "sourceMutationPerformed":  false,
+    "taskActions":  0,
+    "processActions":  0,
+    "providerActivationPerformed":  false,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-27T19:03:00.0000000Z",
+  "incidentId": "OCV03_O3D3R4_RESULT_JSON_CAPABILITY_GAP_20260827",
+  "state": "PASS_O3J1_SUPPORTING_OBSERVATION",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "sources": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3D3/O3D3R4_EXACT_RESPONSE_COLLECTION_GATE.json",
+      "sha256": "578CBB5689ACE80744D9667D0E1AB2FFE65B40FDF5E778935218C3EEE81F607E",
+      "state": "PASS_O3D3R4_EXACT_SIGNED_TERMINAL_RESPONSE_COLLECTED"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3D3/O3D3R4_DETECTOR_OUTPUT_FREEZE_GATE.json",
+      "sha256": "51B5D82E3BF070D0DE956EF92B0AAB0EC770F845EACE101A3696132F612288DB",
+      "state": "PASS_O3D3R4_DETECTOR_OUTPUT_FREEZE"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3D3/O3D3R4_CANDIDATE_DETAIL_OBSERVATION_CAPABILITY_GAP.json",
+      "sha256": "3592735D146CA3B172F125C29BAD180F152A9B581AEE6B2637116C222D5C1167",
+      "state": "PENDING_GATE_ENDPOINT_CAPABILITY_GAP"
+    }
+  ],
+  "expectedObserved": [
+    {"field": "signedO3D3R4TerminalResponse", "expected": true, "observed": true},
+    {"field": "immutableResultRoot", "expected": "D:/A2/o/ocv/O3D3R4_20260827T165500000Z_62629419", "observed": "PINNED_BY_O3D3R4_TERMINAL_AND_FREEZE_EVIDENCE"},
+    {"field": "exactCandidateDetailFilesRequired", "expected": 13, "observed": 13},
+    {"field": "installedQualifiedExactJsonReadCapability", "expected": true, "observed": false},
+    {"field": "existingDATA_PULLApprovedRootContainsD_A2", "expected": true, "observed": false}
+  ],
+  "provedCapabilityGap": "NO_INSTALLED_QUALIFIED_ROUTE_CAN_RETURN_THE_EXACT_13_IMMUTABLE_D_A2_JSON_FILES",
+  "supportedRemedy": "B",
+  "supportedRemedyDescription": "Install one generic JSON-only provider plus a frozen exact allowlist under the already approved processor root and execute it in the same rollback-gated signed maintenance transaction.",
+  "jsonContentReadRequired": true,
+  "imageBytesRead": false,
+  "sourceMutationPerformed": false,
+  "healthyProcessorTouched": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

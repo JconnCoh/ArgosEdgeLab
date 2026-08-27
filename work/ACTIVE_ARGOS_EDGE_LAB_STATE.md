@@ -7949,3 +7949,27 @@ The provisional predecessor is superseded after the passed checkpoint-promotion
 zero-recurrence audit. All holds, disabled-provider/protected-processor
 boundaries, and review-only/training-false/XML-false/production-false authority
 remain.
+
+## 2026-08-27 — OCV-03 O3J1 exact result-JSON capability publication ready
+
+The operator-approved O3J1 capability package is signed and unpublished.
+Request `REQ_20260827T185500111Z_62629419O3J1` has exact ZIP SHA-256
+`71E3BA51EF387C91D8F1425CD7703B3F3606B4C6043166E1907069F4A803DF94`.
+The JSON-only provider passed ZERO/ONE/MANY_13 plus nine negative controls;
+the entrypoint passed exact 13-file success and injected failure. Exact package
+rehearsal and the 45-path complete route gate passed under Windows PowerShell
+5.1. Persistent `U:` has zero pending ready/upload requests.
+
+Slot18's detector state is `PASS_REVIEW_ONLY_MANUFACTURED_NOTCH_CANDIDATE`,
+not a detector failure. The earlier cohort-outlier interpretation is
+provisional pending exact candidate details. Slots16-Slot17 remain the actual
+morphology holds. No known angle/location, label, threshold, or regression
+answer enters the detector.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3J1_RESULT_JSON_CAPABILITY_PUBLISH_READY_20260827.md`,
+SHA-256 `0E1D6271FBD3E03BD4F5804B4CAD426E6B5C54D42BCC6A572212120752A86281`.
+Commit/push/fetch and clean matching branch tips are required before the exact
+single no-retry publication. Collect only its matching signed terminal
+response. Provider remains disabled; processor/tasks/processes/images/source
+and every prerequisite/hold remain untouched.

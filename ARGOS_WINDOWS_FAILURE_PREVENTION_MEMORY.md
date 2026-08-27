@@ -9086,3 +9086,69 @@ than rerunning it.
   result rows. Re-freeze exact hashes and rerun the complete parser, clone,
   harness, wrapper, path, zero-recurrence, success, and injected-failure gates.
   Never reuse `C:\A37`.
+
+## 2026-08-27 — Do not use Join-Path to preflight an absent target drive
+
+- Failure signature: the first DRAFT O3J1 provider test preflight failed before
+  creating its fixture root because Windows PowerShell 5.1 `Join-Path` rejected
+  the planned `D:` result root on the engineering laptop, where that JBOD drive
+  is intentionally absent. No JSON source was read and no local or external
+  mutation occurred.
+- Cause: `Join-Path` resolves its drive provider and therefore requires the
+  named drive to exist even when code is only constructing and validating an
+  absolute path for a different host.
+- Mandatory preflight: planning-only code for an installed or remote absolute
+  root must construct candidate leaves with `System.IO.Path.Combine` followed
+  by `GetFullPath`, then enforce containment and path-budget checks. Existence,
+  reparse-lineage, and byte reads remain confined to the explicit collection or
+  apply branch.
+- Recovery: correct the unpublished DRAFT provider in place, re-pin its exact
+  hash, and rerun parser, harness-safety, non-mutating provider/test preflights,
+  and the fresh ZERO/ONE/MANY gate before freezing any package bytes.
+
+## 2026-08-27 — Match the installed host's malformed-JSON failure class in negative controls
+
+- Failure signature: the frozen O3J1 R1 local provider gate completed ZERO,
+  ONE, MANY_13, and seven negative cases, then its harness rejected the expected
+  malformed-JSON rejection because Windows PowerShell 5.1 reported `Invalid
+  object passed in` rather than one of the harness's narrower expected phrases.
+  The provider failed closed correctly; no JBOD contact or image read occurred.
+- Cause: the negative control asserted selected message wording instead of the
+  complete known Windows PowerShell 5.1 malformed-JSON error class.
+- Mandatory preflight: malformed-JSON negative controls must accept the bounded
+  installed-host phrase set while still requiring an exception and must record
+  the exact observed message. Positive schema/state checks remain exact.
+- Recovery: preserve the R1 partial fixture and withdrawal evidence, clone the
+  harness into a fresh R2 namespace under literal-remediation control, add the
+  installed-host phrase, and rerun guard, preflight, and every case in a fresh
+  fixture root before writing a PASS gate.
+
+## 2026-08-27 — Declare the exact root token emitted by the clone-literal scanner
+
+- Failure signature: the DRAFT O3J1 R2 clone-remediation preflight rejected the
+  declared `C:\outside` test root because the scanner's exact token for the
+  rooted negative-control literal was `C:\outside.json`. The preflight wrote no
+  gate and executed neither source nor generated harness.
+- Cause: the remediation manifest shortened the mechanically reported literal
+  token instead of declaring it exactly.
+- Mandatory preflight: obtain every root token from the remediation tool's
+  bounded preflight result and declare the exact case-insensitive token,
+  including a leaf-like first component when that is what the scanner emits.
+- Recovery: correct the unexecuted DRAFT manifest in place and require a clean
+  preflight and durable gate before the cloned harness runs.
+
+## 2026-08-27 — State the general mutation flag in recovery observations
+
+- Failure signature: O3J1 recovery-intent preflight rejected its frozen
+  supporting observation as mutated even though the observation explicitly
+  reported `sourceMutationPerformed: false`.
+- Cause: the recovery validator fails closed when the general
+  `mutationsPerformed` field is absent; a narrower source-mutation flag does not
+  establish that no other mutation occurred.
+- Mandatory preflight: every recovery observation must explicitly set
+  `mutationsPerformed: false` in addition to any narrower source, task, process,
+  queue, or ledger flags, and must pass the exact recovery-intent validator
+  before build or signature.
+- Recovery: preserve the failed frozen observation and intent, create fresh R2
+  evidence namespaces with the explicit general flag, re-pin the R2 observation
+  hash, and rerun the preflight before package construction.
