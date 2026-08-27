@@ -1,0 +1,60 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_O2D18_SELF_PIN_LIVE_BRANCH_20260827T005100Z",
+  "createdUtc": "2026-08-27T00:51:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "LOCAL_REVIEW_ONLY_O2D18_ENDPOINT_CLONE_SELF_PIN_AND_LIVE_BRANCH_GATE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"187C82C8FD7D331E5D51F2D5B497BCDE8ECACF88B15111EFCCC29565B5ACB016"},
+    {"path":"work/OPENCV_SCRIBE_O2D17/O2D17_TERMINAL_RESPONSE_GATE.json","sha256":"D2CA85670EED654572522AB45BF9CC5D90DBBC84B47D4BAB1AA1C7842B1945E2"},
+    {"path":"work/OPENCV_SCRIBE_O2D13/Invoke-O2D13ScribeEndpoint.ps1","sha256":"08B6E76548CEE99EA11FC6245FB07C05F2E31E53B23562F8A1B15B1AC6EF6A32"},
+    {"path":"work/OPENCV_SCRIBE_O2D18/Invoke-O2D18ScribeEndpoint.ps1","sha256":"06FB6E82D86B98D6637A769AA82D053027016D4EFE296A6A96B03B29E67F8269"},
+    {"path":"work/OPENCV_SCRIBE_O2D18/Test-O2D18SelfPins.ps1","sha256":"D4650EA016B8E67EDE6FFBD23D791D976ED874BCEE75835B7A9583324A2F10B4"},
+    {"path":"work/OPENCV_SCRIBE_O2D18/O2D18_SLOT20_JOB.json","sha256":"C0CC9FF91BAC0FEBD45EBEA335133E1BE65FA3F33310B79305C81FC3CDE456AF"},
+    {"path":"work/OPENCV_SCRIBE_V1R5/ArgosOpenCvScribeV1R5.py","sha256":"F61F5954A77E6F730A2BF0D110A468535C4595D25DB21AFFE1573EF08B8139AB"},
+    {"path":"work/OPENCV_SCRIBE_O2D18/O2D18_CLONE_LITERAL_REMEDIATION.json","sha256":"CDD021522168D262BFBDE22C903C85BFBF84A0AD834B07694E40311748850987"},
+    {"path":"work/OPENCV_SCRIBE_O2D18/O2D18_CLONE_LITERAL_GATE_R2.json","sha256":"8941C9284C7C16F2671D6E7B76CA4A1644C62E4CD801E4C2271513BA2F195031"},
+    {"path":"work/OPENCV_SCRIBE_O2D18/fixtures/INSTALLATION.json","sha256":"77CF1C09D7B2F064FA60A41DDA377846FC1F599F85D0A8070681B6CDE49BA3E0"},
+    {"path":"work/OPENCV_SCRIBE_O2D18/fixtures/LIVE_CONTRACT_GOOD.json","sha256":"6876125D99EF06C01F466036E68E42472F92B416B54251E0EC5B8F0A9D4B703D"},
+    {"path":"work/OPENCV_SCRIBE_O2D18/fixtures/LIVE_CONTRACT_BAD_JOB.json","sha256":"49BF6F8A44A5D4E04E5477B06EF6D3606949569925A28B46D713952D1A29E83D"},
+    {"path":"work/OPENCV_SCRIBE_O2D18/fixtures/LIVE_CONTRACT_BAD_INSTALLATION.json","sha256":"A57643D65D5121F540C976EFBF601806A02C7A4F213F55ADF66EE6B4D7A8F0D5"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "filesystem": "LOCAL_CREATE_NEW_MACHINE_GATES_ONLY",
+    "jbodExecution": false,
+    "providerActivation": false,
+    "currentDevelopmentImagesRead": false,
+    "independentValidationSlotsExposed": false,
+    "pinCount": 6,
+    "liveBranchFixtureCases": 3
+  },
+  "legacyEvidenceException": {"used": false,"newExecutionAuthorized": false,"futureReuseAllowed": false,"blockedArtifacts": []},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

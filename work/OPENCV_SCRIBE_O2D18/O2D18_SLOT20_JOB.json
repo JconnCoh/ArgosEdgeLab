@@ -1,0 +1,73 @@
+{
+  "schema": "argos_opencv_scribe_job_v1",
+  "revision": "OCV02_O2D18_20260827T004800000Z_227E9F1C",
+  "jobId": "O2D18_20260827T004800000Z_227E9F1C_62619-433_SLOT20",
+  "createdUtc": "2026-08-27T00:00:00Z",
+  "identity": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "slotId": "Slot20",
+    "physicalIdentity": "62619-433_20260824005735_Slot20"
+  },
+  "inputMode": "DEVELOPMENT_AUTO_LOCALIZED_WHOLE_IMAGE",
+  "rawSourceBinding": {
+    "state": "PASS_OCV00_EXACT_TWENTY_SOURCE_HASHES",
+    "evidencePath": "work/OPENCV_OLS6/OLS6_EXACT_TWENTY_SOURCE_HASHES.json",
+    "evidenceSha256": "E54A15301A2B4FE914E6315DDFB9628E1D1364B0553D2155E9D5387A88E7FF3B",
+    "upstreamProposalState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+    "upstreamFailure": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_MULTIPLE_OR_NO_NATIVE_MORPHOLOGY",
+    "upstreamHoldDoesNotSkipScribeDevelopment": true
+  },
+  "inputs": {
+    "bf": {
+      "path": "X:\\62619-433_20260824005735\\Slot20\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot20_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "canonicalProvenancePath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot20\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot20_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "ioPathClass": "SHORT_DOS_DEVICE_ALIAS",
+      "aliasName": "X:",
+      "aliasAnchorCanonicalPath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433",
+      "sha256": "227E9F1CED3D6E49C10C7DEC9803EA76DC341CC64C77801453A930A9FAF3691B",
+      "bytes": 475379874,
+      "coordinateFrameId": "LOT62619_433_SLOT20_RAW_BRIGHTFIELD_FRONT_WAFER"
+    },
+    "df": {
+      "path": "X:\\62619-433_20260824005735\\Slot20\\DarkfieldFrontsideWafer\\resizedImage\\62619-433_Slot20_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "canonicalProvenancePath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot20\\DarkfieldFrontsideWafer\\resizedImage\\62619-433_Slot20_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "ioPathClass": "SHORT_DOS_DEVICE_ALIAS",
+      "aliasName": "X:",
+      "aliasAnchorCanonicalPath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433",
+      "sha256": "28EDE033FEA4721E7D54DD77083428F13494A5E25D087B01DED9E76ADE87080F",
+      "bytes": 475379874,
+      "coordinateFrameId": "LOT62619_433_SLOT20_RAW_DARKFIELD_FRONT_WAFER"
+    }
+  },
+  "references": {
+    "manifestPath": "D:\\A2\\w\\ocv\\O2D18_20260827T004800000Z_227E9F1C\\refs\\PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "manifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "excludedPhysicalIdentity": "62619-433_20260824005735_Slot20",
+    "roots": [
+      {"relativePrefix": "glyphs", "path": "D:\\A2\\w\\ocv\\O2D18_20260827T004800000Z_227E9F1C\\refs\\glyphs"},
+      {"relativePrefix": "glyphs_v5_confirmed_20260806", "path": "D:\\A2\\w\\ocv\\O2D18_20260827T004800000Z_227E9F1C\\refs\\glyphs_v5_confirmed_20260806"}
+    ]
+  },
+  "search": {
+    "expectedRegions": [],
+    "boundedExceptionSearch": true,
+    "maximumWorkingDimension": 1600,
+    "maximumCandidates": 24,
+    "orientationStepDegrees": 15,
+    "developmentMaximumRegions": 4,
+    "developmentMinimumLocalizationScore": 0.0,
+    "developmentMinimumBandWidthPixels": 500,
+    "developmentOcrRegionWidthPixels": 1600,
+    "developmentOcrRegionHeightPixels": 400
+  },
+  "outputRoot": "D:\\A2\\o\\ocv\\O2D18_20260827T004800000Z_227E9F1C",
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}
