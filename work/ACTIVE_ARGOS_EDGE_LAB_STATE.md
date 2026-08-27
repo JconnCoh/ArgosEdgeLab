@@ -7395,3 +7395,26 @@ O2D20 once through persistent `U:` and collect only its exact matching signed
 terminal response. No retry. Keep Slots23-25 unseen until Slot22 is terminal.
 Provider/processor/training/XML/production authority and every existing hold
 remain unchanged.
+
+## 2026-08-27 O2D20 signed Slot22 blind result frozen / Slot23 next
+
+O2D20 was published exactly once and returned exact matching signed response
+`R_7E2AAF0BAD7E_20260827022655295_888d00bd`. Response ZIP SHA-256 is
+`346356D55AC2D6B25203B10786D396536FC11B0A0064FDF37A8854DAF6875C32`;
+terminal-gate SHA-256 is
+`8A29FCBFC83F85E6BA514577619B71E072670416C71959D2EE1091EFDE705D7F`.
+
+With the engine still frozen and no tuning, Slot22 returned six candidates,
+image-first `FFFFFFFFFFF7`, proposed `FF7FFF7FF7F7`, ambiguity and checksum
+confirmation required, and the existing reference/localization/notch holds.
+Identity is not accepted. No task/process/provider/source/wafer/hold action
+occurred.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D20_SIGNED_SLOT22_BLIND_FROZEN_SLOT23_NEXT_CHECKPOINT_20260827.md`,
+SHA-256
+`247D637CE3791BC4E92B0E82F7017ECC046A764E47B06C404CCFCEB4678D185A`.
+
+Exact next action: reveal Slot23 only and repeat the fresh, one-publication,
+no-retry blind workflow with the same frozen engine. Slots24-25 remain unseen.
+All authority limits and holds remain unchanged.

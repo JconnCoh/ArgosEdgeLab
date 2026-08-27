@@ -1,0 +1,26 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v2",
+  "revision":"OCV02_O2D20_COLLECT_SIGNED_RESPONSE_20260827T022900Z",
+  "createdUtc":"2026-08-27T02:29:00Z",
+  "state":"PASS_PREACTION_CONTRACT",
+  "actionType":"COLLECT_AND_VERIFY_EXACT_MATCHING_O2D20_SLOT22_BLIND_SIGNED_TERMINAL_RESPONSE",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies":[
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"8FDF7B46DA23851FCC2FCB3E00292E3681B95110276EF9CCC1765CF4ECD72DB2"},
+    {"path":"work/OPENCV_SCRIBE_O2D20/Collect-O2D20Response.ps1","sha256":"85E063F735285170188A89E82F7037814FCEF871E4719E01A03030180AAB3636"},
+    {"path":"work/OPENCV_SCRIBE_O2D20/O2D20_COLLECT_CLONE_LITERAL_REMEDIATION.json","sha256":"D3182863BD72E2F781FD2D610B7EDBCCC67A014C7592A744C8BDF7E1F62D1ACE"},
+    {"path":"work/OPENCV_SCRIBE_O2D20/O2D20_COLLECT_CLONE_LITERAL_GATE.json","sha256":"4DD73D61365AD0974E98C4F4DEC726AA93027F8B75230B3685198F3B6062D11B"},
+    {"path":"work/OPENCV_SCRIBE_O2D20/O2D20_EXACT_RESPONSE_COLLECTION_INVOCATION.json","sha256":"E0B14584317368600BA198188A690C64396F5348E464D939B5DA9B23EBFC00A0"},
+    {"path":"U:/ProjectPortalRO/responses/R_7E2AAF0BAD7E_20260827022655295_888d00bd.ready.zip","sha256":"346356D55AC2D6B25203B10786D396536FC11B0A0064FDF37A8854DAF6875C32"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalResponse.ps1","sha256":"4AF5901A7B9DFFF5A4DAF128960173D67501ABF6FF87C586BA526643B1C1449C"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer","sha256":"5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B"},
+    {"path":"work/OPENCV_SCRIBE_O2D20/final/REQ_20260827T020900111Z_5B7ADC1BBF26.ready.zip","sha256":"B017640583757E80C07FD55C7C196CAAA334A5E733980D18B8197F0B9C5BC35C"}
+  ],
+  "controls":{"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence":{"path":"work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json","sha256":"17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "scope":{"filesystem":"EXACT_PINNED_ZIP_SIGNATURE_FIRST_RESPONSE_COLLECTION_ONLY","jbodExecution":false,"providerActivation":false,"sourceImageBytesRead":false,"requestId":"REQ_20260827T020900111Z_5B7ADC1BBF26","responseId":"R_7E2AAF0BAD7E_20260827022655295_888d00bd","slot":"Slot22","slots23Through25Exposed":false},
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":["work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Receive-SignedPortalResponses.ps1"]},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}
