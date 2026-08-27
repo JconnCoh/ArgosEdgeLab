@@ -7419,6 +7419,29 @@ Exact next action: reveal Slot23 only and repeat the fresh, one-publication,
 no-retry blind workflow with the same frozen engine. Slots24-25 remain unseen.
 All authority limits and holds remain unchanged.
 
+## 2026-08-27 O2D21 signed Slot23 blind result frozen / Slot24 next
+
+O2D21 was published exactly once and returned exact matching signed response
+`R_0625466C6A6C_20260827024747655_661acb16`. Response ZIP SHA-256 is
+`8A249AD8ACDFCFBA75F2815FF1EFCC1B0A9762C447BB9DC7A777F39629FCF491`;
+terminal-gate SHA-256 is
+`40A6A70324BF3D22AFD681CEBAF242B1ECBCA8C6656398B0687E8313054605FC`.
+
+With the engine still frozen and no tuning, Slot23 returned six candidates,
+image-first `FFFFFFFFFFF7`, proposed `FFF77FFF7FF7`, ambiguity and checksum
+confirmation required, and the existing reference/localization/notch holds.
+Identity is not accepted. No retry or task/process/provider/source/wafer/hold
+action occurred.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_O2D21_SIGNED_SLOT23_BLIND_FROZEN_SLOT24_NEXT_CHECKPOINT_20260827.md`,
+SHA-256
+`07724A33A5AF99D6B855E7BBBA626B520D397E5C11D07623286BE8703AF2C2C2`.
+
+Exact next action: reveal Slot24 only and repeat the fresh, one-publication,
+no-retry blind workflow with the same frozen engine. Slot25 remains unseen.
+All authority limits and holds remain unchanged.
+
 ## 2026-08-27 O2D21 Slot23 blind request publication ready
 
 Slot23 alone is bound to BF `8A9CFF90BE426453220BEAE550016CF80C61FF5D782D24F2EF4C717CFE8ECF6A`
