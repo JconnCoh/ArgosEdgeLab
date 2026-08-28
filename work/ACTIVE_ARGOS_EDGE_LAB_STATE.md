@@ -8544,3 +8544,36 @@ path, command line, creation time, and running count. It must use a disposable
 fresh console, run once without retry, leave every existing console and process
 untouched, and perform no image read or target mutation. Another runtime query,
 numeric successor, backside, fanout, and fiducial resume remain blocked.
+
+## 2026-08-28 — OCV-03 O3EI1 timeout-isolated runtime capability publish ready
+
+O3EI1 is the one explicitly authorized endpoint capability improvement after
+the signed O3Q2 NumPy-premise failure and the withdrawn O3SO3 synchronous
+process-API observer. It installs one exact read-only helper under the already
+approved processor root, starts only its own exact `D:\AFCV1\rt\python.exe`
+child, enforces a 15-second wall-clock timeout, and may terminate only that
+owned PID/creation-time instance on timeout.
+
+Windows PowerShell 5.1 fixed/error/malformed/timeout and entrypoint failure
+tests passed. The signed ZIP is
+`A0FC4A5885CDD6350113212FCB299302E2EB9E8C0AA860BAEC95094F64EC740D`;
+exact-package rehearsal is
+`07BE7BEFC7D4AC8D5607441AAFDE6155C42905722592240D000353C17F4CB69B`;
+the 43-leaf route gate is
+`539227F71AACB9CD96FCFE92BB348264F10B364743622DC0319B9199388AD9B9`;
+and the current zero-pending U: alias gate is
+`E933AA39F2F07AD24FD31E8284193A2E974D6EFE2D5A69E72806FA12F4BC1DD0`.
+
+Request `REQ_20260828T143500111Z_O3EI1R01` is signed but unpublished. Publish
+once, no retry, and collect only its matching signed terminal response. Only an
+exact runtime-premise pass can authorize one fresh unchanged-O3P8 Slot16
+numeric successor. O3N1/O3P7/O3Q1/O3TR1/O3TR2/O3RO1/O3RO2/O3RO3/O3SO1/
+O3SO2/O3SO3 stay withdrawn/no-retry/non-parent. Backside is unconsumed, BF
+Slot16 coverage remains partial, every fiducial/alignment and XML/training/
+production hold remains, and no provider/processor/source/task/existing-process
+or threshold/algorithm action is authorized.
+
+The first O3EI1 publish-ready checkpoint was provisional because it preceded
+the mandatory checkpoint-promotion preaction. It is superseded by R2:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3EI1_TIMEOUT_ISOLATED_RUNTIME_CAPABILITY_PUBLISH_READY_R2_20260828.md`.
+Only R2 is authoritative.

@@ -1,0 +1,45 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-28T16:10:00.0000000Z",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "state": "PASS_O3EI1_SUPPORTING_OBSERVATION",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "sources": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_SIGNED_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "56D64F2F287477E3307BA6111AEA7C89E7B3CEADF408476F7AD9E25A5D320769",
+      "responseId": "R_1B7D26E4FA16_20260828034551022_4d1f22f6",
+      "signedTerminal": true
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q2/collected/O3Q2R_1B7D26E4FA16/extract/MAINTENANCE.stderr.txt",
+      "sha256": "BB7E27D4DA03E1FF6710A1F692FCD646FE0C554A385D5ADBA57AA4496824C1D0",
+      "engineReached": true
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_POST_FAILURE_OBSERVATION_CAPABILITY_GAP_GATE.json",
+      "sha256": "D8CA36321642A0B311B8DDEAB05F8F180AFC1B0EEF280D704DE13C965E47FDD2",
+      "installedExactReadOnlyVersionRoute": false
+    }
+  ],
+  "expectedObserved": [
+    {"field": "pythonExecutableSha256", "expected": "7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1", "observed": "MATCHED_BY_O3Q2_ENTRYPOINT_BEFORE_ENGINE_START"},
+    {"field": "installationManifestSha256", "expected": "1289EC11F092233D3AAB5ACF416B0212F1874F698F9BBC2B474829939BCDF596", "observed": "MATCHED_BY_O3Q2_ENTRYPOINT_BEFORE_ENGINE_START"},
+    {"field": "opencvVersion", "expected": "5.0.0", "observed": "ENGINE_PASSED_OPENCV_VERSION_ASSERTION"},
+    {"field": "numpyVersion", "expected": "2.5.1", "observed": null},
+    {"field": "signedFailure", "expected": "O3P8 NumPy version changed.", "observed": "O3P8 NumPy version changed."}
+  ],
+  "provedCapabilityGap": "NO_INSTALLED_QUALIFIED_EXACT_RUNTIME_VERSION_ROUTE_WITH_EXTERNALLY_ENFORCED_TIMEOUT",
+  "supportedRemedy": "D",
+  "supportedRemedyDescription": "Install one exact read-only runtime-version helper whose sole child process is externally timeout-bounded and ownership-pinned, then execute it once in the same signed maintenance transaction.",
+  "filesRead": false,
+  "imageBytesRead": false,
+  "sourceHashingPerformed": false,
+  "mutationsPerformed": false,
+  "healthyProcessorTouched": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,56 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Invoke-O3EI1RuntimeCapability.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-O3EI1RuntimeProbe.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Invoke-O3EI1RuntimeProbe.ps1",
+      "approvedPredecessorSha256": [
+        "C4BCE3DBC9ABF91E99AE1E1DEB971EEB60610C2A117E645B5903EC4BAD744E8D"
+      ],
+      "installedSha256": "C4BCE3DBC9ABF91E99AE1E1DEB971EEB60610C2A117E645B5903EC4BAD744E8D",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [],
+  "entryPointOutputs": [
+    {
+      "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03_O3EI1_RUNTIME_STATUS.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_o3ei1_runtime_capability_result_v1",
+      "requiredState": "PASS_O3EI1_RUNTIME_CAPABILITY"
+    }
+  ],
+  "runtimeQueryContract": {
+    "pythonExecutable": "D:/AFCV1/rt/python.exe",
+    "pythonExecutableSha256": "7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1",
+    "installationManifest": "D:/AFCV1/INSTALLATION.json",
+    "installationManifestSha256": "1289EC11F092233D3AAB5ACF416B0212F1874F698F9BBC2B474829939BCDF596",
+    "expectedOpenCvVersion": "5.0.0",
+    "expectedNumpyVersion": "2.5.1",
+    "timeoutMilliseconds": 15000,
+    "externallyEnforcedTimeout": true,
+    "timeoutCleanupOwnershipPinned": true,
+    "sourceFilesReadAllowed": false,
+    "imageBytesReadAllowed": false,
+    "sourceHashingAllowed": false,
+    "existingProcessActionAllowed": false,
+    "taskActionAllowed": false,
+    "providerActivationAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_OWNED_BOUNDED_D_AFCV1_RUNTIME_QUERY",
+    "TERMINATE_ONLY_OWNED_RUNTIME_QUERY_ON_TIMEOUT"
+  ],
+  "rehearsal": {
+    "requiredState": "PASS_O3EI1_RUNTIME_CAPABILITY"
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}
