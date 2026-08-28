@@ -1,8 +1,28 @@
-# Active ArgosEdgeLab state - OCV-03 O3B8 exact backside short-stage request publish ready - 2026-08-28
+# Active ArgosEdgeLab state - OCV-03 O3B8 signed stage pass / O3B9 approved return stage local pass - 2026-08-28
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3B8 signed stage pass / O3B9 approved return stage local pass — 2026-08-28
+
+Matching JBOD-signed O3B8 response verified exact clean backside outputs at
+`D:/B8O1`: BF SHA-256 `F41BDF5CAAFDABF4C8A9BFCE21B0CB0587AA74C93354C3B41B099713B4CB290B`
+and DF SHA-256 `8546F979E83B9749CCFEB1241DAF0393D24534DB8F5E94706DFCD8D3FDC9BB7C`,
+each 475,379,874 bytes. Terminal gate is
+`FD5E095E6893CF14ADE602DC43556D412360F79F3A5683A7C77D353A2ED82EF5`.
+
+`D:/B8O1` is outside the installed DATA_PULL allowlist, so no doomed pull was
+signed. Fresh transfer-only O3B9 locally passed exact hash/stability copying
+into the approved `D:/KLARFExport/B8R1` destination; local gate is
+`658DC7015F1425B1BCAB2E0CCF30711BB1CE030E2BFFDCCF653464DD8B3B77C6`.
+Finish O3B9 package/route gates, publish once/no-retry, then pull the exact pair
+and switch to High only after laptop hashes match. No laptop JBOD mapping is
+used; all holds and the stranded console/process restriction remain.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B8_SIGNED_STAGE_PASS_O3B9_APPROVED_RETURN_STAGE_LOCAL_PASS_20260828.md`,
+SHA-256 `B434538FF29699536FA7582A888D6E28F34383D64854A58E7BBDD1B138311289`.
 
 ## OCV-03 O3B8 exact backside short-stage request publish ready — 2026-08-28
 

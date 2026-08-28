@@ -1,0 +1,8 @@
+{
+  "targetRole":"JBOD","jobClass":"MAINTENANCE_PATCH","maxResultBytes":16777216,"entryPoint":"payload/Invoke-O3B9Endpoint.ps1",
+  "changes":[{"source":"payload/tools/OCV03_NotchReviewOpenCvV1.py","destination":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_NotchReviewOpenCvV1.py","approvedPredecessorSha256":["6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4"],"installedSha256":"6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4","allowCreate":false}],
+  "entryPointMutations":[{"targetRoot":"D:/KLARFExport/B8R1","mode":"CREATE_NEW_EXACT_PAIR"}],"entryPointOutputs":[{"path":"D:/KLARFExport/B8R1/BF.bmp","expectedBytes":475379874},{"path":"D:/KLARFExport/B8R1/DF.bmp","expectedBytes":475379874}],
+  "sourceProcessingContract":{"sourceRoot":"D:/B8O1","sourceImageReadAuthorized":true,"imageDecodeAllowed":false,"sourceMutationAllowed":false,"sourceDeletionAllowed":false},"timeoutContract":{"endpointWorkerOuterTimeoutSeconds":1800},
+  "allowedTaskActions":[],"allowedProcessActions":[],"rehearsal":{"requiredState":"PASS_O3B9_EXACT_PAIR_IN_APPROVED_DATA_ROOT"},
+  "requestRetryAuthorized":false,"reviewOnly":true,"trainingEligible":false,"xmlEligible":false,"productionEligible":false,"productionRoutingEnabled":false
+}

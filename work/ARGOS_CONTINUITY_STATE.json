@@ -1,13 +1,13 @@
 {
   "schema": "argos_edge_lab_continuity_state_v1",
-  "updatedLocal": "2026-08-28T17:58:00-05:00",
+  "updatedLocal": "2026-08-28T18:10:00-05:00",
   "activeFamily": "OPENCV_ALL_IMAGE_PROCESSING_MIGRATION_REVIEW_ONLY",
-  "activePhase": "OCV03_O3B8_EXACT_BACKSIDE_SHORT_STAGE_REQUEST_PUBLISH_READY",
+  "activePhase": "OCV03_O3B8_SIGNED_STAGE_PASS_O3B9_APPROVED_RETURN_STAGE_LOCAL_PASS",
   "activeStatePath": "work/ACTIVE_ARGOS_EDGE_LAB_STATE.md",
   "memoryIndexPath": "work/PROJECT_MEMORY_INDEX.md",
   "revisionLedgerPath": "work/ARGOS_REVISION_LEDGER.md",
-  "currentPhaseCheckpoint": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B8_EXACT_BACKSIDE_SHORT_STAGE_REQUEST_PUBLISH_READY_20260828.md",
-  "currentPhaseCheckpointSha256": "9621A9EC9CD1B71D37764B06394C113F39A8089DBC8D7C1D13629955CC948A1B",
+  "currentPhaseCheckpoint": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B8_SIGNED_STAGE_PASS_O3B9_APPROVED_RETURN_STAGE_LOCAL_PASS_20260828.md",
+  "currentPhaseCheckpointSha256": "B434538FF29699536FA7582A888D6E28F34383D64854A58E7BBDD1B138311289",
   "ocv03BacksideNotchO3B6": {
     "revision": "O3B6_EXACT_BACKSIDE_PAIR_FROZEN_TRANSFER_PATH_CAPABILITY_GAP_20260828",
     "state": "SIGNED_TERMINAL_PATH_BUDGET_FAILURE_EXACT_PAIR_FROZEN",
@@ -8108,7 +8108,7 @@
     "reviewOnly": true,
     "productionRoutingEnabled": false
   },
-  "nextAction": "After continuity/session checks and a clean pushed branch with matching tips, publish exact request REQ_O3B8_20260828A once through persistent U:, collect only its matching signed terminal response, and do not retry. If exact staging passes, create one fresh short DATA_PULL for D:/B8O1/BF.bmp and D:/B8O1/DF.bmp, verify returned hashes, then switch from Medium to High for local OpenCV backside-notch analysis. Do not touch the possible stranded direct-hash console/process; preserve the parked hotspot, unchanged POST2 baseline, and all source/task/process/provider/threshold/algorithm/hold/XML/training/production restrictions.",
+  "nextAction": "Publish exact signed O3B9 request once with no retry to copy only the signed-hash D:/B8O1 BF/DF outputs into approved D:/KLARFExport/B8R1. Verify the matching signed terminal response, then issue one exact two-file DATA_PULL for B8R1/BF.bmp and B8R1/DF.bmp, verify laptop hashes, and switch from Medium to High for local OpenCV backside-notch analysis. Do not touch the possible stranded direct-hash console/process; preserve all holds and restrictions.",
   "reviewOnly": true,
   "trainingEligible": false,
   "trainingScope": "NONE_REVIEW_ONLY_NOTCH_FRONT_BACK_DEVELOPMENT_FIDUCIAL_CONDITIONAL",
