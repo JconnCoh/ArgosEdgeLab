@@ -8577,3 +8577,23 @@ The first O3EI1 publish-ready checkpoint was provisional because it preceded
 the mandatory checkpoint-promotion preaction. It is superseded by R2:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3EI1_TIMEOUT_ISOLATED_RUNTIME_CAPABILITY_PUBLISH_READY_R2_20260828.md`.
 Only R2 is authoritative.
+
+## 2026-08-28 — OCV-03 O3EI1 signed runtime-version mismatch / numeric hold
+
+O3EI1 published once and returned matching JBOD-signed response
+`R_43E71FD9A091_20260828144836355_489915ba`. Exact executable and installation
+hashes matched. The timeout-owned Python child exited 0 without timeout or
+cleanup. It reported Python `3.13.2`, OpenCV `5.0.0`, and NumPy `2.5.2` against
+the frozen expected NumPy `2.5.1`.
+
+The exact collection gate is
+`A8437E04071F4429734BC791F23E1D537FB0CD6DB36ADD9399830ED83D924756`.
+The disposition is `HOLD_O3EI1_RUNTIME_VERSION_MISMATCH`; the observed `2.5.2`
+is not silently accepted. O3EI1 is terminal/no-retry and no numeric successor
+is authorized. No image/source/task/existing-process/protected-processor or
+provider action crossed the declared boundary.
+
+Stop at the runtime premise hold. BF Slot16 partial coverage, backside-
+unconsumed state, every fiducial/alignment prerequisite, and XML/training/
+production holds remain unchanged. All earlier withdrawn artifacts remain
+no-retry/non-parent, and every stranded console/process stays untouched.
