@@ -1,0 +1,45 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T22:45:40Z",
+  "incidentId": "OCV03_BACKSIDE_PAIR_LONG_PATH_TRANSFER_20260828",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {"path":"work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json","sha256":"F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {"path":"work/OPENCV_BACKSIDE_NOTCH_PULL_O3B6/O3B6_SIGNED_PATH_BUDGET_FAILURE_GATE.json","sha256":"E8E1AA105CA753591574F89EEF49D127297AE0DFB7D128C712C1D614648858B5","state":"FAILED"},
+      {"path":"work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B7/O3B7_LOCAL_REHEARSAL_WITHDRAWAL.json","sha256":"E11F32D43737957A4C7A8FD177ECFC53782C798E4E1F7AE19D15787329B13656","state":"WITHDRAWN_LOCAL_REHEARSAL_FAILURE"}
+    ],
+    "postFailureObservation": {"path":"work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B7/O3B7_POST_FAILURE_OBSERVATION.json","sha256":"C8BA7377C6AA78425A33C6F2C1DFCF6683C87A3255A44437F9455AA9B72B97E6"},
+    "workflowReviewClearance": {"path":"","sha256":""}
+  },
+  "route": {
+    "type":"PROJECT_PORTAL","jobClass":"MAINTENANCE_PATCH","installedCodeChange":false,"helperInstall":false,
+    "taskActions":[],"processActions":[],"queueMutation":true,"ledgerMutation":true,"sourceMutation":false,"imageRead":true,"waferAction":false,"inheritsQualifiedEndpointGate":true,
+    "endpointWorker":{"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    "installedConfigEvidence":{"path":"work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json","sha256":"465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"},
+    "capabilityEvidence":{"path":"work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_ENDPOINT_REHEARSAL_GATE.json","sha256":"CC2E2931824679F82E57C0BE9226AA7B002A7E86DCFA023009DCA18D9F2E73FF"},
+    "qualifiedEndpointGate":{"path":"work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json","sha256":"170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"},
+    "qualifiedAdminGate":{"path":"","sha256":""}
+  },
+  "observation":{"exactSources":[],"requestedCapabilities":[],"requestedFields":[],"decisionOptions":["A","B","C","D"],"mutationDecisionDeferred":false},
+  "mutation": {
+    "supportedRemedy":"B",
+    "supportingObservation":{"path":"work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B7/O3B7_POST_FAILURE_OBSERVATION.json","sha256":"C8BA7377C6AA78425A33C6F2C1DFCF6683C87A3255A44437F9455AA9B72B97E6"},
+    "endpointMutationNecessary":true,
+    "singleMutationAttemptAuthorized":true,
+    "operatorAuthorization":"2026-08-28 operator direction: continue without stopping or asking for approval",
+    "boundedChange":"One fresh O3B8 exact-Slot01 short-alias stage into create-new D:/B8O1; no installed code change and no O3B6/O3B7 retry."
+  },
+  "scope": {
+    "newNamespace":"work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B8","liveRequestAuthorized":true,"maximumLocalProviderTests":1,"maximumLiveRequests":1,
+    "sourceMutationAllowed":false,"sourceDeletionAllowed":false,"taskOrExistingProcessActionAllowed":false,"strandedConsoleOrProcessActionAllowed":false,
+    "providerActivationAllowed":false,"requestRetryAuthorized":false
+  },
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

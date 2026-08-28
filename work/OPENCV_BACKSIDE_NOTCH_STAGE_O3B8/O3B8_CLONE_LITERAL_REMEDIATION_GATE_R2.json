@@ -1,0 +1,69 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-28T22:50:56.7747846Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_BACKSIDE_NOTCH_STAGE_O3B8\\O3B8_CLONE_LITERAL_REMEDIATION_MANIFEST.json",
+    "manifestSha256":  "E0ADD2C0567DF62F40440425B19F871C67EC0E070EA829EEA80450D3011E618B",
+    "pairCount":  4,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B7/Invoke-O3B7ShortStage.ps1",
+                      "generated":  "work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B8/Invoke-O3B8ShortStage.ps1",
+                      "sourceSha256":  "9C6B92B00C46384DDE01BF316000856279D4515C0E34AFBEE11E166B84C1F962",
+                      "generatedSha256":  "AA2ABC5A051EB0425B832CB7BC3F92DA437F4BF1D0F9914229A22EFA18B4357F",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B7/Test-O3B7ShortStage.ps1",
+                      "generated":  "work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B8/Test-O3B8ShortStage.ps1",
+                      "sourceSha256":  "2717B44CC44B2D0A37777C2074A812AE3F99DFE03321DF7EBE692B4BD0E0AE8C",
+                      "generatedSha256":  "999D90B6CC09C75CDCDE56F1E10AB54D7CCBB2B8854F8A4B12BB3F516747B25A",
+                      "sourceRoots":  [
+                                          "C:\\O3B7T"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\O3B8T"
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B7/O3B7_LIVE_INVOCATION.json",
+                      "generated":  "work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B8/O3B8_LIVE_INVOCATION.json",
+                      "sourceSha256":  "F0DD8216312D4765888B0B05D37A3EB04DB41DB7A038B8D59939A1C8E000DA4B",
+                      "generatedSha256":  "C995892127835B85041160F3A7EFB8F26FCF5A55CC0FA4785E253F701D0139F2",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3Q8/Build-O3Q8Package.ps1",
+                      "generated":  "work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B8/Build-O3B8Package.ps1",
+                      "sourceSha256":  "5837127BB9775E5D1367A5240885B561D4869E68516EB0B3D81E7705379FA373",
+                      "generatedSha256":  "FD4B8478F59467D3B61FB0DB7A8C12595A44C0DDF3D622F728DF7D382F38F82D",
+                      "sourceRoots":  [
+                                          "C:\\A8B"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\B8P"
+                                         ],
+                      "ruleCount":  1
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

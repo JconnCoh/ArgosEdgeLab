@@ -1,8 +1,31 @@
-# Active ArgosEdgeLab state - OCV-03 O3B6 exact backside pair frozen / transfer capability gap - 2026-08-28
+# Active ArgosEdgeLab state - OCV-03 O3B8 exact backside short-stage request publish ready - 2026-08-28
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3B8 exact backside short-stage request publish ready — 2026-08-28
+
+Exact signed request `REQ_O3B8_20260828A` is ready for one no-retry Project
+Portal publication. ZIP SHA-256 is
+`BED3E048D6AFF6330A68A7EF3493353E9F954DD737BFEA5925331D63E25CE327`.
+Its exact packaged Windows PowerShell 5.1 rehearsal passed success and injected
+timestamp-failure/quarantine paths; gate SHA-256 is
+`A06612B9142FAE4AF45B4AA44490EFEBC2C5A39C98712975B1DF2DFDA6A03B17`.
+The full route gate passed 123 paths with maximum effective length 187.
+
+The temporary `Q:` alias exists only inside the JBOD process and targets the
+exact local Slot01 ancestor; it is removed afterward. No laptop JBOD mapping is
+attempted. Exact next action is publication once through existing persistent
+`U:`, collection of only the matching signed terminal response, then—only on
+stage success—a fresh two-file `DATA_PULL` from `D:/B8O1`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B8_EXACT_BACKSIDE_SHORT_STAGE_REQUEST_PUBLISH_READY_20260828.md`,
+SHA-256 `9621A9EC9CD1B71D37764B06394C113F39A8089DBC8D7C1D13629955CC948A1B`.
+O3B6/O3B7 are no-retry, the possible stranded direct-hash console/process stays
+untouched, hotspot remains parked, POST2 unchanged, and every existing hold and
+review-only restriction remains.
 
 ## OCV-03 O3B6 exact backside pair frozen / transfer capability gap — 2026-08-28
 

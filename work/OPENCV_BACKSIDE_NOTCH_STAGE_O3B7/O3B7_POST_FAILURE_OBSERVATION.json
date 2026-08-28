@@ -1,0 +1,48 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-28T22:40:00Z",
+  "state": "PASS_O3B7_POST_O3B6_SIGNED_FAILURE_OBSERVATION",
+  "incidentId": "OCV03_BACKSIDE_PAIR_LONG_PATH_TRANSFER_20260828",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "signedResponseManifestPath": "work/OPENCV_BACKSIDE_NOTCH_PULL_O3B6/response_exact/R_7BEDC7E1740F_20260828222355212_16a91028.ready/PORTAL_RESPONSE_MANIFEST.json",
+  "signedResponseManifestSha256": "6C487BD597418B6660313447FF802706477DD78AC81554B6358A76C1E452226B",
+  "observations": [
+    {
+      "field": "requestId",
+      "expected": "REQ_20260828T222139580Z_CD59E0CECF36",
+      "observed": "REQ_20260828T222139580Z_CD59E0CECF36"
+    },
+    {
+      "field": "responseState",
+      "expected": "SIGNED_TERMINAL",
+      "observed": "FAILED"
+    },
+    {
+      "field": "failedEffectivePathLength",
+      "expected": "LESS_THAN_200",
+      "observed": 208
+    },
+    {
+      "field": "requiredCapability",
+      "expected": "DIRECT_DATA_PULL",
+      "observed": "PROCESS_LOCAL_ALIAS_ANCHORED_AT_EXACT_SOURCE_ANCESTOR"
+    },
+    {
+      "field": "sourceBytesRead",
+      "expected": true,
+      "observed": false
+    }
+  ],
+  "exactSourcePairFreezePath": "work/OPENCV_BACKSIDE_NOTCH_STATUS_O3B5/O3B5_EXACT_BACKSIDE_PAIR_FREEZE.json",
+  "exactSourcePairFreezeSha256": "CEF8688BEE1B59DE36C952CA47EE7750BA7D1A235919D2870F131729DE9E3187",
+  "supportedRemedy": "B",
+  "supportedRemedyDetail": "Stage the same two frozen leaves through an exact-Slot01 process-local alias into one short create-new JBOD D-drive output root, then use unchanged DATA_PULL on those short outputs.",
+  "o3b6RetryAllowed": false,
+  "strandedConsoleOrProcessActionAllowed": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

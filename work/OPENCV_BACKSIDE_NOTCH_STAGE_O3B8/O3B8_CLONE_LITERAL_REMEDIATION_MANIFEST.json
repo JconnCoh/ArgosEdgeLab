@@ -1,0 +1,45 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "O3B8_GENERIC_LIST_SERIALIZATION_RECOVERY_FROM_WITHDRAWN_O3B7_20260828",
+  "pairs": [
+    {
+      "source": "work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B7/Invoke-O3B7ShortStage.ps1",
+      "generated": "work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B8/Invoke-O3B8ShortStage.ps1",
+      "sourceSha256": "9C6B92B00C46384DDE01BF316000856279D4515C0E34AFBEE11E166B84C1F962",
+      "generatedSha256": "AA2ABC5A051EB0425B832CB7BC3F92DA437F4BF1D0F9914229A22EFA18B4357F",
+      "rootRules": [{"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}],
+      "constructedRootRules": [{"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}]
+    },
+    {
+      "source": "work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B7/Test-O3B7ShortStage.ps1",
+      "generated": "work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B8/Test-O3B8ShortStage.ps1",
+      "sourceSha256": "2717B44CC44B2D0A37777C2074A812AE3F99DFE03321DF7EBE692B4BD0E0AE8C",
+      "generatedSha256": "999D90B6CC09C75CDCDE56F1E10AB54D7CCBB2B8854F8A4B12BB3F516747B25A",
+      "rootRules": [{"sourceRoot":"C:\\O3B7T","generatedRoot":"C:\\O3B8T","disposition":"REPLACED"}]
+    },
+    {
+      "source": "work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B7/O3B7_LIVE_INVOCATION.json",
+      "generated": "work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B8/O3B8_LIVE_INVOCATION.json",
+      "sourceSha256": "F0DD8216312D4765888B0B05D37A3EB04DB41DB7A038B8D59939A1C8E000DA4B",
+      "generatedSha256": "C995892127835B85041160F3A7EFB8F26FCF5A55CC0FA4785E253F701D0139F2",
+      "rootRules": [{"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}],
+      "forwardSlashRootRules": [
+        {"sourceRoot":"D:/KLARFExport","generatedRoot":"D:/KLARFExport","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:/B7O1","generatedRoot":"D:/B8O1","disposition":"REPLACED"},
+        {"sourceRoot":"C:/Windows","generatedRoot":"C:/Windows","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3Q8/Build-O3Q8Package.ps1",
+      "generated": "work/OPENCV_BACKSIDE_NOTCH_STAGE_O3B8/Build-O3B8Package.ps1",
+      "sourceSha256": "5837127BB9775E5D1367A5240885B561D4869E68516EB0B3D81E7705379FA373",
+      "generatedSha256": "FD4B8478F59467D3B61FB0DB7A8C12595A44C0DDF3D622F728DF7D382F38F82D",
+      "rootRules": [{"sourceRoot":"C:\\A8B","generatedRoot":"C:\\B8P","disposition":"REPLACED"}]
+    }
+  ],
+  "undeclaredRootAllowed": false,
+  "predecessorOutputRootReuseAllowed": false,
+  "failedO3B7ExecutionArtifactReuseAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

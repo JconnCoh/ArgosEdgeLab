@@ -10389,3 +10389,21 @@ than rerunning it.
   independently constructed shorter request identifier that the unchanged
   qualified portal consumers accept, and pass the full exact route
   cross-product before signing once.
+
+## 2026-08-28 — PowerShell permits a missing return-expression space to survive static parsing
+
+- Failure signature: the first O3B8 exact-package rehearsal stopped locally
+  with `The term 'return[ordered]@' is not recognized`. The harness was valid
+  PowerShell syntax to the parser, but it attempted to invoke the combined
+  token as a command when the helper function executed. No JBOD action or
+  signed-package change occurred.
+- Cause: a mechanically compacted helper omitted the required whitespace in
+  `return [ordered]@{...}`. Parser-only safety cannot prove that every legal
+  token sequence has the intended runtime meaning.
+- Mandatory preflight: search new or transformed PowerShell harnesses for
+  `return[` and reject it before execution. Exercise every helper function in
+  the exact local rehearsal, not only the script parser and top-level
+  preflight branch.
+- Recovery: correct only the unfrozen local harness token, rerun harness
+  safety and the exact success/injected-failure rehearsal, and preserve the
+  abandoned create-new fixture under a clearly failed local-evidence name.
