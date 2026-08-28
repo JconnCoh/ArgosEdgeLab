@@ -10277,3 +10277,51 @@ than rerunning it.
   static, collection, recovery, wrapper, path, and zero-recurrence gates, and
   only then run one fresh local rehearsal. This local failure did not publish
   or consume the one authorized live Slot16 successor.
+
+## 2026-08-28 — A response locator must bound the post-publication cohort, not the historical root
+
+- Failure signature: the first O3Q4 response locator selected the first 21
+  top-level ready ZIPs from the shared response root and then stopped with
+  `response root exceeded the bounded 20-ZIP discovery limit`. The root
+  legitimately contained more than 20 historical responses; the locator did
+  not reach manifest correlation and made no remote change.
+- Cause: the row cap was applied to the complete historical response root
+  instead of to the exact cohort created at or after the O3Q4 publication
+  timestamp. The cap therefore measured retention history rather than the
+  bounded response candidates for the published request.
+- Mandatory preflight: a post-publication response locator must freeze the
+  exact publish-gate timestamp and lazily enumerate only top-level ready ZIPs
+  whose last-write time is at or after that timestamp, with a small documented
+  clock-skew allowance. Apply the row cap after this time predicate, then read
+  only bounded manifests and require zero or one exact request-ID match.
+- Recovery: withdraw the executed read-only locator as non-parent and do not
+  retry it. Preserve the single published request unchanged. Use a fresh
+  locator namespace keyed to the signed request ID and exact publish-gate
+  timestamp; do not republish, scan processes, or mutate the response share.
+
+## 2026-08-28 — A runtime-gate producer state must match every pinned consumer predicate
+
+- Failure signature: O3Q4 supplied correct file-backed JBOD runtime evidence
+  with state `PASS_O3RV1_FILE_BACKED_JBOD_RUNTIME_PREMISE` and correct Python
+  `3.13.2`, OpenCV `5.0.0`, and NumPy `2.5.2`, but unchanged O3P8 stopped in
+  `load_job` with `ValueError: O3P8 runtime gate is not PASS.` before image
+  read. O3P8 line 120 accepted only the hard-coded predecessor state
+  `PASS_O3P2_LOCAL_RUNTIME_INSTALLED`.
+- Cause: the new runtime-gate producer schema was validated by the O3Q4
+  endpoint wrapper but not mechanically compared with the independent O3P8
+  consumer predicate. Version and file hashes were compatible; the state-token
+  vocabulary was not. Local O3Q4 rehearsal used a predecessor-compatible
+  runtime-gate fixture and therefore did not exercise the exact live gate state.
+- Mandatory preflight: freeze the exact runtime-gate state set and mechanically
+  inspect every packaged consumer of that file before signing. The exact live
+  gate bytes—not a semantically equivalent rehearsal fixture—must pass each
+  consumer's non-image `load_job` path under the packaged runtime. Reject a
+  producer state that any consumer hard-codes out, and reject a rehearsal whose
+  runtime-gate state differs from the live payload state.
+- Recovery: O3Q4 is signed-terminal failed, withdrawn, and no-retry. Do not
+  relabel the correct O3RV1 evidence as the old laptop-runtime state, change
+  thresholds/algorithms, or run another runtime observation. O3Q2 plus O3Q4 are
+  two signed premise/contract failures in the same incident, so mutation
+  stop-loss is active. A future non-algorithmic runtime-gate compatibility
+  improvement and fresh numeric namespace require workflow review and a new
+  intent that explicitly clears stop-loss; they are not authorized here.

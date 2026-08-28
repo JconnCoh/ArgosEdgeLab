@@ -1,0 +1,69 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV03_O3Q4_SIGNED_RUNTIME_GATE_STATE_COMPATIBILITY_FAILURE_CHECKPOINT_20260828",
+  "createdUtc": "2026-08-28T16:04:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "PROMOTE_O3Q4_SIGNED_TERMINAL_FAILURE_TO_MUTATION_STOP_LOSS_CHECKPOINT",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"51F82F4820E5FA18A41E509C10886B7FD6650C00E1CB3481B177C5229D44EF64"},
+    {"path":"work/ARGOS_CONTINUITY_STATE.json","sha256":"2F1365810D9799DDA9B1DB206717761A913A0CA2AB0713AE7E41E22A596364AF"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_PUBLISH_GATE.json","sha256":"0292D65FD64785284EC87BA9B6D5512403CABBEA71E3C4F1E93B087E62DB5A02"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_FAILED_RESPONSE_COLLECTION_GATE.json","sha256":"8F5B53A87B6F641BDA421D91395ABD09416B8D155A609FAE3FD93237FB49D670"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_SIGNED_TERMINAL_RESPONSE_GATE.json","sha256":"63C54F71FB1F2F54AA2A3F14FE938D58B3F93AE88716B1F991650DB3B94D5925"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_RECOVERY_INTENT.json","sha256":"3362A52D432A8032C0F9A51F602A732DAD5CDF3AB6615E4B356DE69B8E147AC5"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3RV1/O3RV1_RUNTIME_PREMISE_REVIEW.json","sha256":"22557FFA8DE03DBD8690376EBCF2AF1D77A5A4CD3CFF14DFEB492ED47ADE494C"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_COLLECTION_CASE_GATE.json",
+    "sha256": "6F027F746D443104396E5B7F582359617475C78CE2F1FCB589939D0D00C7CAD6",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": ["O3Q2", "O3Q3", "O3Q4", "O3Q4_RESPONSE_DISCOVERY_R1"]
+  },
+  "boundedAction": {
+    "checkpointPromotionsMaximum": 1,
+    "externalMutation": false,
+    "requestRetryAuthorized": false,
+    "freshNumericSuccessorAuthorized": false,
+    "mutationStopLossActive": true,
+    "workflowReviewRequired": true,
+    "imageRead": false,
+    "sourceMutation": false,
+    "sourceDeletion": false,
+    "taskActions": [],
+    "processActions": [],
+    "providerActivation": false,
+    "holdClearance": false
+  },
+  "terminalGatePlanned": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q4_SIGNED_RUNTIME_GATE_STATE_COMPATIBILITY_FAILURE_HOLD_20260828.md",
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

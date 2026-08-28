@@ -8634,3 +8634,32 @@ state, every fiducial/alignment prerequisite, and XML/training/production
 holds remain unchanged. No provider activation, protected-processor action,
 source mutation/deletion, existing-process/task action, threshold/algorithm
 change, wafer action, or hold clearance is authorized.
+
+## 2026-08-28 — OCV-03 O3Q4 signed runtime-gate state compatibility failure hold
+
+O3Q4 published once and returned matching JBOD-signed terminal response
+`R_4972FF4F6E27_20260828155653502_d78b4283`. Response ZIP SHA-256 is
+`72CD823F644C49DBB847B49FDAD4BC1836389A8CD4810840F503D2B4A2FB85CA`;
+collection gate SHA-256 is
+`8F5B53A87B6F641BDA421D91395ABD09416B8D155A609FAE3FD93237FB49D670`;
+terminal gate SHA-256 is
+`63C54F71FB1F2F54AA2A3F14FE938D58B3F93AE88716B1F991650DB3B94D5925`.
+
+Runtime versions remain resolved at Python `3.13.2`, OpenCV `5.0.0`, and NumPy
+`2.5.2`. The unchanged O3P8 consumer hard-codes runtime-gate state
+`PASS_O3P2_LOCAL_RUNTIME_INSTALLED` and rejected O3Q4's correct file-backed
+state `PASS_O3RV1_FILE_BACKED_JBOD_RUNTIME_PREMISE` in `load_job`. Signed
+stderr proves failure before image read or numeric/raster output.
+
+O3Q4 is withdrawn/no-retry/non-parent. O3Q2 plus O3Q4 activate the two-signed-
+failure mutation stop-loss. Stop here: no runtime re-observation, O3Q4 replay,
+numeric successor, compatibility mutation, threshold/algorithm change, or hold
+clearance is authorized. A future non-algorithmic state-consumer compatibility
+improvement requires workflow review and a fresh intent that explicitly clears
+stop-loss. Every prior withdrawal, stranded process/console, BF Slot16 partial
+coverage, backside, fiducial/alignment, XML, training, and production hold
+remains unchanged.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q4_SIGNED_RUNTIME_GATE_STATE_COMPATIBILITY_FAILURE_HOLD_20260828.md`,
+SHA-256 `4E39B50320EB7C37D7E1EFCDFBE03F5868B8AED39D814FC17DEAC5A86A16B530`.

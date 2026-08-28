@@ -1,0 +1,66 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV03_O3Q4_TIME_BOUNDED_RESPONSE_DISCOVERY_R2_20260828",
+  "createdUtc": "2026-08-28T15:59:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "OBSERVE_ONE_TIME_BOUNDED_POST_PUBLICATION_RESPONSE_COHORT_FOR_EXACT_REQUEST",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"3C3645F2AD428181DD965423272937B247E9D68D6046B7EDF510AC1E93B7EEF0"},
+    {"path":"work/ARGOS_CONTINUITY_STATE.json","sha256":"2F1365810D9799DDA9B1DB206717761A913A0CA2AB0713AE7E41E22A596364AF"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_PUBLISH_GATE.json","sha256":"0292D65FD64785284EC87BA9B6D5512403CABBEA71E3C4F1E93B087E62DB5A02"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_RESPONSE_DISCOVERY_R1_FAILURE_GATE.json","sha256":"A0DB908D642456BCD96792586F7D5B166FA14EAE32782421F6A46B96C99F42CB"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q4/Find-O3Q4ResponseR2.ps1","sha256":"6E77593BBCE787CDEB3C474584D54CCD454862AD989BA4BB7D0901D49489F59F"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_COLLECTION_CASE_GATE.json",
+    "sha256": "6F027F746D443104396E5B7F582359617475C78CE2F1FCB589939D0D00C7CAD6",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": ["O3Q4_RESPONSE_DISCOVERY_R1"]
+  },
+  "boundedAction": {
+    "requestId": "REQ_20260828T152800444Z_62629419O3Q4",
+    "publishedUtc": "2026-08-28T15:57:47.2407846Z",
+    "cohortClockSkewMinutes": 1,
+    "candidateResponseZipsMaximum": 20,
+    "matchingResponseZipsMaximum": 1,
+    "manifestBytesMaximum": 65536,
+    "requestRepublish": false,
+    "requestRetryAuthorized": false,
+    "remoteMutation": false,
+    "imageRead": false,
+    "sourceMutation": false,
+    "sourceDeletion": false,
+    "taskActions": [],
+    "processActions": [],
+    "providerActivation": false
+  },
+  "terminalGatePlanned": "ONE_JSON_RESPONSE_DISCOVERY_RESULT_ON_STDOUT",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
