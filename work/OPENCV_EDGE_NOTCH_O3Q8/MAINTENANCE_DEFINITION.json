@@ -1,0 +1,77 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 16777216,
+  "entryPoint": "payload/Invoke-O3Q8Slot16Numeric.ps1",
+  "changes": [
+    {
+      "source": "payload/tools/OCV03_NotchReviewOpenCvV1.py",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_NotchReviewOpenCvV1.py",
+      "approvedPredecessorSha256": [
+        "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4"
+      ],
+      "installedSha256": "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+      "allowCreate": false
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:/A2/o/ocv/O3Q8_20260828A",
+      "mode": "CREATE_NEW_NUMERIC_REVIEW_ONLY_OUTPUT_TREE",
+      "failureQuarantine": "D:/A2/o/ocv/O3Q8_20260828A.failed"
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "D:/A2/o/ocv/O3Q8_20260828A/O3Q8_RESULT.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_ocv03_o3p9_front_split_notch_result_v1",
+      "requiredState": "COMPLETE_O3P9_POST2_BF_TOPOLOGY_DF_RADIAL_REVIEW_ONLY"
+    }
+  ],
+  "sourceProcessingContract": {
+    "sourceLeafCount": 2,
+    "sourceAliasDrive": "Q:",
+    "sourceHashesVerifiedBeforeDecode": true,
+    "sourceImageReadAuthorized": true,
+    "detectorRerunAllowed": true,
+    "thresholdOrAlgorithmChangeAllowed": true,
+    "algorithmChange": "O3P9_13PX_NARROW_PATTERN_SUPPRESSION_ONLY",
+    "bfMethod": "O3L8_TOP_CONNECTED_TOPOLOGY_MEASURED_CONTOUR",
+    "dfMethod": "FROZEN_R6_OUTER_EDGE_RADIAL_FULL_360",
+    "allFrozenDfSeedsRequired": true,
+    "expectedFrozenDfSeedCount": 21,
+    "backsidePixelsConsumed": false,
+    "argosRotationMetadataConsumed": false,
+    "knownNotchLocationConsumed": false,
+    "hotspotMembershipConsumed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "taskRestartAllowed": false,
+    "existingProcessActionAllowed": false,
+    "processorRestartAllowed": false,
+    "providerActivationAllowed": false,
+    "waferActionAllowed": false,
+    "holdClearanceAllowed": false
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 1800,
+    "opencvChildTimeoutSeconds": 1500,
+    "outerCoversChild": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_BOUNDED_OWNED_PORTABLE_OPENCV_O3Q8_SLOT16_NUMERIC_CHILD_ONLY"
+  ],
+  "rehearsal": {
+    "requiredState": "COMPLETE_O3Q8_NUMERIC_REVIEW_ONLY",
+    "gateState": "PASS_O3Q8_EXACT_ENTRYPOINT_REHEARSAL",
+    "gateSha256": "40654EF243A62892D080583D0BD08C9FB8614C1938034DD45E10B0817C3DFC63"
+  },
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

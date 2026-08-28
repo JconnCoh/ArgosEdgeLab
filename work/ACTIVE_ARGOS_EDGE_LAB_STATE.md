@@ -1,8 +1,21 @@
-# Active ArgosEdgeLab state - OCV-03 O3Q7 local signed package route pass - 2026-08-28
+# Active ArgosEdgeLab state - OCV-03 O3Q8 pattern-suppressed Slot16 publish ready - 2026-08-28
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3Q8 pattern-suppressed Slot16 request publish ready — 2026-08-28
+
+Operator-authorized request `REQ_O3Q8_20260828A` is signed, rehearsed, exact-route
+qualified, and ready for one no-retry Project Portal publication. ZIP SHA-256 is
+`A0CAC75D8101A7F19CF6EB0D33FE7BC23EBC850D8DC32A835B47D0A0E9641B0B`.
+O3P9 adds only 13-pixel narrow repeating-pattern suppression before unchanged
+candidate scoring; its six-case synthetic gate passed. Runtime was not
+reobserved. Current checkpoint is
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q8_PATTERN_SUPPRESSED_SLOT16_REQUEST_PUBLISH_READY_20260828.md`,
+SHA-256 `46F86517D97C69D3F12A5D670CC939BFD82EA95937E030453EF396A0BCC0F345`.
+Publish once, collect only the matching signed response, and do not retry.
+Every existing hold and review-only restriction remains.
 
 ## OCV-03 O3Q7 local signed package and exact-route pass — 2026-08-28
 

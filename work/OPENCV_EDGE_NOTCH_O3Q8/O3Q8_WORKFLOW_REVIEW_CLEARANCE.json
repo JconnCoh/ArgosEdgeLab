@@ -1,0 +1,26 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-08-28T19:45:00Z",
+  "state": "PASS_O3Q8_PATTERN_SUPPRESSION_PUBLICATION_CLEARANCE",
+  "incidentId": "OCV03_SLOT16_RUNTIME_GATE_CONSUMER_CONTRACT_20260828",
+  "operatorDirection": "2026-08-28 user message: PROMOTE AND PUBLISH",
+  "signedPremiseFailureCount": 2,
+  "reviewFindings": [
+    "File-backed runtime premise is closed and will not be reobserved.",
+    "O3P9 changes only the pre-scoring narrow-pattern suppression; geometry, thresholds, seeds, source hashes, and authority remain unchanged.",
+    "O3P9 synthetic gate passed all six controls including the new suppression control.",
+    "One fresh O3Q8 signed publication is authorized with no retry."
+  ],
+  "supportedRemedy": "B",
+  "authorizedMutation": "Build, sign, publish, and execute exactly one fresh O3Q8 review-only Slot16 numeric request using O3P9.",
+  "singleMutationAttemptAuthorized": true,
+  "automaticRetryAuthorized": false,
+  "liveRequestAuthorized": true,
+  "runtimeReobservationAllowed": false,
+  "sourceImageReadAuthorized": true,
+  "taskOrExistingProcessActionAuthorized": false,
+  "providerActivationAuthorized": false,
+  "holdClearanceAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

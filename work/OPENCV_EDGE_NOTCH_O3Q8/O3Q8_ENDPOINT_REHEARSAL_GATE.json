@@ -1,0 +1,49 @@
+{
+  "schema": "argos_ocv03_o3q8_endpoint_rehearsal_gate_v1",
+  "checkedUtc": "2026-08-28T19:47:30Z",
+  "state": "PASS_O3Q8_EXACT_ENTRYPOINT_REHEARSAL",
+  "payloadPlan": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q8/O3Q8_PAYLOAD_PLAN.json",
+    "sha256": "DFA997A8175BB0ED00C109FF2F9C16131421C231CE707677CA5E5464425A60C9"
+  },
+  "payloadRoot": "C:/A8B/payload",
+  "payloadFileCount": 15,
+  "entrypoint": {
+    "path": "C:/A8B/payload/Invoke-O3Q8Slot16Numeric.ps1",
+    "sha256": "304AA7E35D6A4F1A6A1F71FF574A771E31B532FE37B5C3758EDF61462C3B9982"
+  },
+  "rehearsalInvocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q8/O3Q8_ENDPOINT_REHEARSAL_INVOCATION.json",
+    "sha256": "086A83F04C38FD6DD3300F15C5B911A0C0274A4D7489390E203C3181890842F9"
+  },
+  "preflightState": "PASS_O3Q8_ENDPOINT_PREFLIGHT",
+  "producerTerminalState": "COMPLETE_O3Q8_NUMERIC_REVIEW_ONLY",
+  "result": {
+    "path": "C:/A10T/o/O3Q8_RESULT.json",
+    "sha256": "2E17D0DD523BE3A879862C7E17594595DA87E83D341C8398FA1C0FF66AAEED65",
+    "rowState": "PASS_REVIEW_ONLY_UNIQUE_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+    "seedCount": 21,
+    "eligibleCount": 1,
+    "numericIndependentPass": true
+  },
+  "ownedProducerStartCount": 1,
+  "ownedProducerExitCode": 0,
+  "ownedProducerTimedOut": false,
+  "sourceAliasDrive": "Q:",
+  "sourceAliasRemoved": true,
+  "runtimePremiseConsumedFromFile": true,
+  "runtimeReobserved": false,
+  "sourceImageBytesRead": false,
+  "sourceHashesRecomputed": false,
+  "sourceMutationPerformed": false,
+  "sourceDeletionPerformed": false,
+  "existingProcessQueryCount": 0,
+  "taskActionCount": 0,
+  "providerActivated": false,
+  "o3q4ExecutionParentInherited": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

@@ -1,13 +1,13 @@
 {
   "schema": "argos_edge_lab_continuity_state_v1",
-  "updatedLocal": "2026-08-28T12:19:00-05:00",
+  "updatedLocal": "2026-08-28T14:50:00-05:00",
   "activeFamily": "OPENCV_ALL_IMAGE_PROCESSING_MIGRATION_REVIEW_ONLY",
-  "activePhase": "OCV03_O3Q7_LOCAL_SIGNED_PACKAGE_ROUTE_PASS",
+  "activePhase": "OCV03_O3Q8_PATTERN_SUPPRESSED_SLOT16_REQUEST_PUBLISH_READY",
   "activeStatePath": "work/ACTIVE_ARGOS_EDGE_LAB_STATE.md",
   "memoryIndexPath": "work/PROJECT_MEMORY_INDEX.md",
   "revisionLedgerPath": "work/ARGOS_REVISION_LEDGER.md",
-  "currentPhaseCheckpoint": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q7_LOCAL_SIGNED_PACKAGE_ROUTE_PASS_20260828.md",
-  "currentPhaseCheckpointSha256": "044D6D12FC765B6B071907DFE8F5372AF08401BA42727C4AC61289B8D36FD286",
+  "currentPhaseCheckpoint": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q8_PATTERN_SUPPRESSED_SLOT16_REQUEST_PUBLISH_READY_20260828.md",
+  "currentPhaseCheckpointSha256": "46F86517D97C69D3F12A5D670CC939BFD82EA95937E030453EF396A0BCC0F345",
   "ocv03EdgeNotchV2": {
     "revision": "O3SO3_SCHEMA_OBSERVER_PROCESS_API_TIMEOUT_CAPABILITY_GAP_20260828",
     "state": "WITHDRAWN_SCHEMA_OBSERVER_PROCESS_API_TIMEOUT_CAPABILITY_GAP",
@@ -7991,7 +7991,7 @@
     "reviewOnly": true,
     "productionRoutingEnabled": false
   },
-  "nextAction": "Stop before publication. The locally signed and exact-route-qualified request REQ_O3Q7_20260828A is not authorized for live publication by this checkpoint. A later authority-bearing checkpoint may permit one publication only after revalidating the exact ZIP/hash, exact route gate, unchanged qualified endpoint/config/queue gates, and current persistent-U zero-pending state; no automatic retry is allowed and only one matching signed terminal response may be collected. Do not inspect runtime again, reuse O3Q2/O3Q4 or the withdrawn O3Q6 signed package, touch stranded consoles/processes or the protected processor, mutate/delete sources, act on tasks or existing processes, activate the provider, change thresholds/algorithms, take wafer action, or clear any of the 46 preserved prior PENDING_GATE records, BF Slot16 partial coverage, backside, fiducial/map/pose/registration/coverage/sensitivity/alignment/source/storage/processor/GUI, XML, training, or production holds.",
+  "nextAction": "Publish REQ_O3Q8_20260828A exactly once under the operator's 2026-08-28 PROMOTE AND PUBLISH authority, then collect only its matching signed terminal response. Do not retry. Runtime remains closed; do not touch tasks, existing processes, the protected processor, sources, provider activation, backside, Argos orientation/location priors, XML, training, production routing, or any prior hold.",
   "reviewOnly": true,
   "trainingEligible": false,
   "trainingScope": "NONE_REVIEW_ONLY_NOTCH_FRONT_BACK_DEVELOPMENT_FIDUCIAL_CONDITIONAL",

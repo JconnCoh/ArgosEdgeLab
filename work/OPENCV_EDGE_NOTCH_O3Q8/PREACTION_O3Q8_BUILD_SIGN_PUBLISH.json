@@ -1,0 +1,116 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV03_O3Q8_BUILD_SIGN_PUBLISH_20260828",
+  "createdUtc": "2026-08-28T19:47:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "ASSEMBLE_REHEARSE_SIGN_AND_PUBLISH_ONE_FRESH_O3Q8_REQUEST",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "B2508C36F9D9FBFC9D6661527F1E1AF882A3479D63DCEE0082948A105715FF15"
+    },
+    {
+      "path": "work/ARGOS_CONTINUITY_STATE.json",
+      "sha256": "9858AD2483D58C940399317B18A276B20D6D8C5E033822407969A668D90D9EAB"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q8/O3Q8_RECOVERY_INTENT.json",
+      "sha256": "D0BBADBD9E6A3DA3ABAF92FD285D81C549D83559189F31F3E1A17B82608755FD"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q8/O3Q8_WORKFLOW_REVIEW_CLEARANCE.json",
+      "sha256": "DCF29705F2BB146C58886E27B5EB8982F865DF3B9150B45C166DF9EBB6BA40EC"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q8/O3Q8_PAYLOAD_PLAN.json",
+      "sha256": "DFA997A8175BB0ED00C109FF2F9C16131421C231CE707677CA5E5464425A60C9"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P9/O3P9_SYNTHETIC_GATE.json",
+      "sha256": "7796415E1B118629771E396A775ACA92E6CE96C41CEDF66BC949994F2945A29C"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q8/O3Q8_ENDPOINT_REHEARSAL_GATE.json",
+      "sha256": "40654EF243A62892D080583D0BD08C9FB8614C1938034DD45E10B0817C3DFC63"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q8/MAINTENANCE_DEFINITION.json",
+      "sha256": "C40C252D71A66F4957216676B2AFC36974F42AD25733769794F86FF1D6E24D4D"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q8/O3Q8_EXACT_ROUTE_PATH_GATE.json",
+      "sha256": "88694199A33A1AA7A855A48D32067F45F652D0F1918846B418D7F5B3A0117A90"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q8/Build-O3Q8Package.ps1",
+      "sha256": "5837127BB9775E5D1367A5240885B561D4869E68516EB0B3D81E7705379FA373"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalPackage.ps1",
+      "sha256": "6CA21D7DE97EDE88F2C41F91D5B7801C688982C8C5A422987EB9528E1E9A084B"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Publish-SignedPortalRequest.ps1",
+      "sha256": "B9694FAD07DCD385C57F430ACF057809077938985783F795BDDF6A2B8F68FF07"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_COLLECTION_CASE_GATE.json",
+    "sha256": "6F027F746D443104396E5B7F582359617475C78CE2F1FCB589939D0D00C7CAD6",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      "O3Q2",
+      "O3Q4",
+      "O3Q6_SIGNED_PACKAGE",
+      "O3Q7_LOCAL_PACKAGE"
+    ]
+  },
+  "boundedAction": {
+    "freshPackageBuildsMaximum": 1,
+    "signaturesMaximum": 1,
+    "requestId": "REQ_O3Q8_20260828A",
+    "publicationsMaximum": 1,
+    "liveExecutionAuthorized": true,
+    "sourceImageRead": true,
+    "sourceMutation": false,
+    "sourceDeletion": false,
+    "taskActions": [],
+    "processActions": [],
+    "providerActivation": false,
+    "holdClearance": false,
+    "thresholdOrAlgorithmChange": true
+  },
+  "terminalGatePlanned": "work/OPENCV_EDGE_NOTCH_O3Q8/O3Q8_SIGNED_TERMINAL_RESPONSE_GATE.json",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
