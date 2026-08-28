@@ -1,0 +1,62 @@
+{
+  "schema": "argos_o3q2_runtime_observation_safety_gate_v2",
+  "createdUtc": "2026-08-28T11:59:49Z",
+  "state": "PASS_O3Q2_RUNTIME_OBSERVATION_SAFETY_GATES",
+  "recoveryIntent": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_POST_FAILURE_RECOVERY_INTENT_R2.json",
+    "sha256": "3A2078C4075F5B3EDDFEC6BB6935CA65CBF40AD790A6CAE6E93FB4E714D376E4",
+    "preflightState": "PASS_ARGOS_RECOVERY_INTENT",
+    "signedPremiseFailures": 1,
+    "mutationStopLossActive": false
+  },
+  "transportInventory": {
+    "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Get-ArgosControlTransportState.ps1",
+    "sha256": "D582B80A7CF9AC4AB21FE2D228B875D8ED1503ACB50FB750EC008EEBFADED538",
+    "repairGatePath": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_TRANSPORT_CAPABILITY_REPAIR_GATE.json",
+    "repairGateSha256": "A32323790736A2EBA62FB68D38C4D211129EF682B7267BF810A8B098C679A7D0",
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "windowsPowerShell51PreflightState": "PASS_ARGOS_CONTROL_TRANSPORT_PREFLIGHT",
+    "operationalInventoryExecuted": false,
+    "remoteInputSent": false
+  },
+  "observationSource": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/Observe-O3Q2RuntimeVersions.ps1",
+    "sha256": "9DED5B3AC1B1EE64CA771D34D8B07D291D7662B013E7E0DA2D46074874C78B8A",
+    "bytes": 1826,
+    "windowsPowerShell51PreflightState": "PASS_O3Q2_RUNTIME_VERSION_OBSERVATION_PREFLIGHT",
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "parserErrors": 0,
+    "pathState": "PASS_PATH_BUDGET",
+    "pathLength": 110,
+    "reservedSuffixCharacters": 32,
+    "effectiveLength": 142,
+    "longestComponentLength": 31
+  },
+  "directRunner": {
+    "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+    "sha256": "CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D",
+    "bytes": 56593,
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "exactInvokePreflightState": "PASS_ARGOS_JBOD_DIRECT_LOCAL_PREFLIGHT",
+    "parserErrors": 0
+  },
+  "invocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_RUNTIME_OBSERVATION_INVOCATION.json",
+    "sha256": "561BF250322CCB2B15D96B755C7E12A9BDE4D14860C9D3AD8926D9F0B42F0CE3",
+    "action": "Invoke",
+    "maximumExecutions": 1,
+    "retryAuthorized": false,
+    "maximumResultCharacters": 4096
+  },
+  "continuitySessionGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_POST_FAILURE_CONTINUITY_SESSION_GATE_R2.json",
+    "sha256": "0B0B6AFB0571FEEB769486B0E29E7287287729A46D69073E8660C921E894C524"
+  },
+  "targetInputSent": false,
+  "targetMutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

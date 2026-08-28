@@ -9827,3 +9827,36 @@ than rerunning it.
   transport-inventory revision (and refreshed intent, path, wrapper,
   zero-recurrence, continuity, and session gates) or one bounded installed
   portal observation capability that can return the required runtime version.
+
+## 2026-08-28 — A passing transport-inventory repair does not qualify the long Invoke clipboard class
+
+- Failure signature: the operator authorized the bounded repair of the existing
+  `Get-ArgosControlTransportState.ps1`.  Its fresh hash passed the harness,
+  wrapper, Windows PowerShell 5.1 preflight, path, recovery, continuity,
+  session, and zero-recurrence gates.  The resulting inventory reported no
+  matching WinRM forward and no errors.  The separately authorized O3Q2
+  1,826-character read-only runtime-version source was then sent once through
+  the unchanged GUI direct runner, which still uses a 500-millisecond
+  paste-to-Enter delay.  No nonce, command hash, terminal state, or runtime
+  version returned before the 45-second boundary.  The command was not retried.
+- Cause: the O3Q2 safety and preaction evidence qualified the repaired local
+  inventory dependency but did not mechanically require the already documented
+  deterministic complete-pasted-length calculation and equal-or-greater-length
+  fixed-scalar rehearsal for the substantive `Invoke` clipboard class.  A
+  passing local runner preflight does not prove that the nested clipboard paste
+  was submitted or returned.  The timeout is a recurrence of the known long
+  encoded-paste failure class, not runtime-version evidence.
+- Mandatory preflight: every future substantive direct `Invoke` must pin the
+  exact command-source length, complete constructed pasted-wrapper length,
+  runner hash, and paste-to-Enter delay.  Its zero-recurrence contract must pin
+  one fresh equal-or-greater-length fixed-scalar rehearsal terminal gate with
+  exact nonce, command hash, PASS state, and non-truncated result.  A Boolean
+  assertion or generic runner preflight is insufficient.  The substantive
+  action is a hard stop when that dependency is absent.
+- Recovery: preserve the failed O3Q2 observation attempt as withdrawn terminal
+  transport evidence.  Do not rerun it, press Enter, clear the remote console,
+  click blindly, or infer target execution.  Require the operator to report the
+  current JBOD console state.  `CaptureConsoleText` is eligible only when the
+  operator reports a visibly present parse/runtime error.  Any fresh rehearsal
+  and successor require new namespaces, exact-length gating, refreshed recovery
+  and zero-recurrence evidence, and must leave the stranded console untouched.

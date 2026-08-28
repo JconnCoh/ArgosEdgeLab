@@ -1,0 +1,77 @@
+{
+  "schema": "argos_o3q2_direct_runtime_observation_timeout_gate_v1",
+  "createdUtc": "2026-08-28T12:04:16Z",
+  "state": "STOP_O3Q2_DIRECT_RUNTIME_OBSERVATION_TIMEOUT_NO_RETRY",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "observationAttempt": {
+    "maximumAuthorizedExecutions": 1,
+    "executionCount": 1,
+    "sameNamespaceRetryAllowed": false,
+    "commandSourcePath": "work/OPENCV_EDGE_NOTCH_O3Q2/Observe-O3Q2RuntimeVersions.ps1",
+    "commandSourceSha256": "9DED5B3AC1B1EE64CA771D34D8B07D291D7662B013E7E0DA2D46074874C78B8A",
+    "commandSourceCharacters": 1826,
+    "commandSourceBytes": 1826,
+    "runnerPath": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+    "runnerSha256": "CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D",
+    "runnerPasteToEnterMilliseconds": 500,
+    "timeoutSeconds": 45,
+    "terminalError": "Timed out waiting for the exact JBOD clipboard response after 45 seconds."
+  },
+  "preconditions": {
+    "transportInventoryScriptSha256": "D582B80A7CF9AC4AB21FE2D228B875D8ED1503ACB50FB750EC008EEBFADED538",
+    "transportInventoryState": "OBSERVED_NO_MATCHING_ARGOS_FORWARD",
+    "transportInventoryGatePath": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_DIRECT_TRANSPORT_INVENTORY_R2.json",
+    "recoveryIntentState": "PASS_ARGOS_RECOVERY_INTENT",
+    "zeroRecurrenceState": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION",
+    "continuityState": "PASS_ARGOS_PROJECT_CONTINUITY",
+    "sessionSafetyState": "PASS_SESSION_SIZE"
+  },
+  "terminalEvidence": {
+    "nonceBoundResultReturned": false,
+    "commandHashReturned": false,
+    "targetStateReturned": false,
+    "runtimeVersionsObserved": false,
+    "targetExecutionConfirmed": false,
+    "remoteInputSent": true,
+    "remoteConsoleStateObserved": false,
+    "remoteConsoleInputMayBeStranded": true,
+    "targetMutationsObserved": false,
+    "targetMutationsProvenAbsent": false
+  },
+  "knownFailureMemory": {
+    "existingRule": "A long encoded paste can remain in the console input buffer after the runner sends Enter.",
+    "equalOrGreaterLengthFixedScalarRehearsalHadPassed": false,
+    "substantiveClipboardClassQualified": false,
+    "recurrence": true
+  },
+  "recovery": {
+    "sameCommandNamespaceWithdrawn": true,
+    "repeatEnterAllowed": false,
+    "blindClickAllowed": false,
+    "captureConsoleTextAllowedOnlyAfterOperatorReportsVisibleParseOrRuntimeError": true,
+    "operatorCurrentConsoleStateRequired": true,
+    "freshSuccessorRequiresFreshNamespace": true,
+    "freshSuccessorRequiresDeterministicPastedLength": true,
+    "freshSuccessorRequiresEqualOrGreaterLengthFixedScalarRehearsal": true,
+    "requestRetryPerformed": false
+  },
+  "withdrawnNonReusableArtifacts": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_RUNTIME_OBSERVATION_SAFETY_GATE_R2.json",
+      "sha256": "3A5C938CABB0B0B261D9536BF5AC25CC195938776D6B96A58B36AADCB433C929",
+      "reason": "PASS omitted mandatory equal-or-greater-length fixed-scalar clipboard rehearsal"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q2/PREACTION_O3Q2_DIRECT_RUNTIME_OBSERVATION_R2.json",
+      "sha256": "B49F1A1CD82486ECB94280390831560A03602482EE33F5BA380E27B71838E9B7",
+      "reason": "executed preaction did not pin the mandatory clipboard-class rehearsal terminal gate"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q2/Observe-O3Q2RuntimeVersions.ps1",
+      "sha256": "9DED5B3AC1B1EE64CA771D34D8B07D291D7662B013E7E0DA2D46074874C78B8A",
+      "reason": "one-attempt execution namespace consumed by terminal transport timeout"
+    }
+  ],
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

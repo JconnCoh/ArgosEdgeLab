@@ -1,47 +1,56 @@
-# Active ArgosEdgeLab state - OCV-03 O3Q2 signed NumPy-premise failure / transport-gate hold - 2026-08-28
+# Active ArgosEdgeLab state - OCV-03 O3Q2 direct runtime observation timeout / operator-console hold - 2026-08-28
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
 
-## OCV-03 O3Q2 signed NumPy-premise failure / transport-gate hold — 2026-08-28
+## OCV-03 O3Q2 direct runtime observation timeout / operator-console hold — 2026-08-28
 
-O3Q2 request `REQ_20260828T033000222Z_62629419O3Q2` was published exactly
-once and was not retried. The matching response
-`R_1B7D26E4FA16_20260828034551022_4d1f22f6` is an authentic JBOD-signed
-terminal `FAILED` response. Response ZIP SHA-256 is
-`519E0B1C9EB6A2F0EE036E356E9CDB1FC3A6D72D0B38DF9AE7831CCF25C2A23E`;
-the exact collection-gate SHA-256 is
-`1A5F2D1433464DA180F0EAEEB733C1625139F72E0706030E396E41468A0F6DDA`.
+The operator authorized the bounded repair of the existing direct-control
+inventory while requiring the established JBOD/Argos access method to remain.
+`Get-ArgosControlTransportState.ps1` was changed only to add non-mutating
+`Preflight` and repair its conditional assignment. Fresh SHA-256
+`D582B80A7CF9AC4AB21FE2D228B875D8ED1503ACB50FB750EC008EEBFADED538`
+passed parser, harness, wrapper, exact Windows PowerShell 5.1 preflight, and
+path gates. The existing operational schema, gateway/target constants, and
+`ValidateWinRm` behavior remain. Repair-gate SHA-256 is
+`A32323790736A2EBA62FB68D38C4D211129EF682B7267BF810A8B098C679A7D0`.
 
-The unchanged O3P8 engine failed closed before image read because active
-`np.__version__` did not equal the frozen expected NumPy `2.5.1`. The actual
-active version remains unknown. This is one signed premise failure, so the
-next lane is `OBSERVE` and mutation is blocked until an exact direct
-post-failure observation is pinned.
+The operational inventory returned `OBSERVED_NO_MATCHING_ARGOS_FORWARD`, one
+RustDesk listener candidate on local port `21118`, zero errors, and zero
+mutations. WinRM was not requested. Inventory-gate SHA-256 is
+`357419E593DACB5886B98F51A41925727FB51C1DB204C81B1E88371978A8B409`.
 
-Installed STATUS cannot return active Python-module versions and DATA_PULL
-cannot read `D:\AFCV1`. A fresh direct read-only observation intent and its
-source/runner wrapper, harness, path, continuity, session, and zero-recurrence
-gates passed. Before any remote input, the mandatory transport-inventory
-harness rejected the unchanged skill script for missing a declared
-non-mutating mode and for an unsafe conditional collection assignment. The
-transport script did not execute; no RustDesk, RDP, or JBOD input was sent.
-Capability-gap SHA-256 is
-`D8CA36321642A0B311B8DDEAB05F8F180AFC1B0EEF280D704DE13C965E47FDD2`.
+The separately authorized read-only runtime observation was then executed
+exactly once through the unchanged GUI direct runner. No nonce, command hash,
+terminal state, NumPy version, or OpenCV version returned before 45 seconds.
+The attempt ended with `Timed out waiting for the exact JBOD clipboard
+response after 45 seconds.` It was not retried. Target execution is unconfirmed
+and no target-mutation claim is made. Timeout-gate SHA-256 is
+`DF16C06EBDD822E28135220E22E23D70C90D4D345CCEDE9A0C1D73C74B909E7F`.
+
+This repeated the already documented unqualified long encoded-paste class:
+the unchanged runner uses a 500-millisecond paste-to-Enter delay, while the
+O3Q2 preaction omitted the mandatory deterministic complete-pasted-length and
+equal-or-greater-length fixed-scalar terminal rehearsal. The recurrence and
+mechanical prevention are now in the Windows failure-prevention memory.
 
 Current checkpoint:
-`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q2_NUMPY_PREMISE_FAILURE_TRANSPORT_GATE_HOLD_20260828.md`,
-SHA-256 `AD55F80B428C0DC2906E259EE5E80D1FEB9499B8AF3D5159E183CC9FA0959DC1`.
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q2_DIRECT_RUNTIME_OBSERVATION_TIMEOUT_OPERATOR_CONSOLE_HOLD_20260828.md`,
+SHA-256 `95CA4A98F7A0ABA0C7B91C048D39BCBCBA09E83FC1CE4777D0EDF19E34EE539D`.
 
-Next requires authority for one bounded observation-capability improvement:
-either an installed read-only portal field for exact `D:\AFCV1` NumPy/OpenCV
-versions or a fresh harness-qualified transport-inventory script. Do not replay
-O3Q2 or publish a successor. A fresh live numeric successor requires separate
-explicit authority after observation because the one authorized publication
-was consumed. Frontside validation is incomplete; backside, fanout, and
-fiducial resume remain blocked in sequence. Every existing provider,
-processor, source, task/process, threshold/algorithm, retry, hold, XML,
+Before any more remote input, the operator must report whether the current
+JBOD console shows a stranded long EncodedCommand, a visible parse/runtime
+error, a returned prompt, or another exact state. Do not press Enter, clear the
+console, click blindly, or rerun the observation. `CaptureConsoleText` is
+eligible only for a visibly reported parse/runtime error. A fresh namespace
+requires deterministic pasted-length evidence and a successful equal-or-
+greater-length fixed-scalar rehearsal before a fresh runtime observation.
+
+O3Q2 remains published once with one authentic signed NumPy-premise failure
+and no retry. The actual versions remain unknown. Frontside is incomplete;
+backside, fanout, and fiducial resume remain blocked. Every provider,
+processor, source-image, task/process, threshold/algorithm, retry, hold, XML,
 training, production, fiducial, and alignment-transfer restriction remains.
 
 ## OCV-03 O3Q2 exact Slot16 numeric request publication ready — 2026-08-28

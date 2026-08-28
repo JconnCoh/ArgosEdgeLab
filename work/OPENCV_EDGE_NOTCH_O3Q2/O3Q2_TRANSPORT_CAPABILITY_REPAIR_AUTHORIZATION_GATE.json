@@ -1,0 +1,41 @@
+{
+  "schema": "argos_o3q2_transport_capability_repair_authorization_v1",
+  "createdUtc": "2026-08-28T11:55:34Z",
+  "state": "PASS_OPERATOR_AUTHORIZED_TRANSPORT_CAPABILITY_REPAIR",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "authoritySource": "Operator explicitly approved doing what is needed to continue while requiring preservation of the already-working JBOD/Argos access method.",
+  "authorizedCapabilityChange": {
+    "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Get-ArgosControlTransportState.ps1",
+    "rejectedSha256": "853776763BF5449E582CE5E1E163E7D44EED511ED43CD34A90A23ACD3C00720B",
+    "allowedChanges": [
+      "ADD_STRICTLY_NON_MUTATING_PREFLIGHT_MODE",
+      "REMEDIATE_CONDITIONAL_COLLECTION_ASSIGNMENT_SCALARIZATION"
+    ],
+    "operationalTransportSemanticsMustRemainUnchanged": true,
+    "newTransportImplementationAllowed": false,
+    "portalChangeAllowed": false
+  },
+  "postRepairAction": {
+    "maximumRuntimeObservations": 1,
+    "requiredComputerName": "A1025645101",
+    "readOnly": true,
+    "sameO3Q2ReplayAllowed": false,
+    "sameO3Q2RetryAllowed": false,
+    "freshNumericSuccessorAuthorizedOnlyAfterObservation": true,
+    "freshNumericSuccessorMustUseFreshNamespace": true,
+    "thresholdOrAlgorithmChangeAllowed": false
+  },
+  "targetRestrictions": {
+    "installedJbodChangeAllowed": false,
+    "taskOrProcessActionAllowed": false,
+    "queueOrLedgerMutationAllowed": false,
+    "sourceImageMutationAllowed": false,
+    "imageReadAllowedForObservation": false,
+    "providerActivationAllowed": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

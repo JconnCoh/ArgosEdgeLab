@@ -1,0 +1,28 @@
+{
+  "schema": "argos_o3q2_post_failure_continuity_session_gate_v2",
+  "createdUtc": "2026-08-28T11:59:49Z",
+  "state": "PASS_O3Q2_POST_FAILURE_CONTINUITY_AND_SESSION_SAFETY",
+  "continuity": {
+    "state": "PASS_ARGOS_PROJECT_CONTINUITY",
+    "continuityPath": "work/ARGOS_CONTINUITY_STATE.json",
+    "continuitySha256": "A23A0056F9B55B79F140C186CDEB172AA1E16E4924191481C760668CCEAC9C05",
+    "activePhase": "OCV03_O3Q2_NUMPY_PREMISE_FAILURE_TRANSPORT_GATE_HOLD",
+    "phaseCheckpoint": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q2_NUMPY_PREMISE_FAILURE_TRANSPORT_GATE_HOLD_20260828.md",
+    "phaseCheckpointSha256": "AD55F80B428C0DC2906E259EE5E80D1FEB9499B8AF3D5159E183CC9FA0959DC1"
+  },
+  "sessionSafety": {
+    "checkedUtc": "2026-08-28T11:59:48.5994268Z",
+    "state": "PASS_SESSION_SIZE",
+    "sessionId": "01a0463c-9f63-7341-8129-fbbaa9fed62d",
+    "bytes": 6748083,
+    "mebibytes": 6.435,
+    "metadataOnly": true,
+    "sessionContentRead": false,
+    "quarantinedSessionIdsExcludedFromRead": true,
+    "hardStopBytes": 536870912,
+    "singleTurnGrowthAlarmBytes": 16777216
+  },
+  "targetMutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

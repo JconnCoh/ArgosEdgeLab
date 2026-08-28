@@ -1,0 +1,60 @@
+{
+  "schema": "argos_o3q2_transport_capability_repair_gate_v1",
+  "createdUtc": "2026-08-28T11:57:18Z",
+  "state": "PASS_O3Q2_EXISTING_TRANSPORT_INVENTORY_HARNESS_QUALIFIED",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "authorization": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_TRANSPORT_CAPABILITY_REPAIR_AUTHORIZATION_GATE.json",
+    "sha256": "DD64E94D06DDE1F8D475F8E4B6326D0CE5B30005332F619EB480759D1A6AE38F"
+  },
+  "transportInventory": {
+    "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Get-ArgosControlTransportState.ps1",
+    "rejectedSha256": "853776763BF5449E582CE5E1E163E7D44EED511ED43CD34A90A23ACD3C00720B",
+    "qualifiedSha256": "D582B80A7CF9AC4AB21FE2D228B875D8ED1503ACB50FB750EC008EEBFADED538",
+    "bytes": 7115,
+    "parserErrors": 0,
+    "declaredParameters": ["Preflight", "ValidateWinRm"]
+  },
+  "boundedRemediation": {
+    "addedStrictlyNonMutatingPreflight": true,
+    "conditionalCollectionAssignmentRemediated": true,
+    "existingValidateWinRmParameterPreserved": true,
+    "existingGatewayPeerPreserved": "10.66.81.84",
+    "existingTargetHostPreserved": "10.20.70.241",
+    "existingTargetPortPreserved": 5985,
+    "existingOperationalSchemaPreserved": "argos_control_transport_state_v1",
+    "newTransportImplementationIntroduced": false,
+    "topLevelMutationCount": 0
+  },
+  "harnessPreflight": {
+    "checkedUtc": "2026-08-28T11:56:19.4301827Z",
+    "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "metadataOnly": true,
+    "targetExecuted": false,
+    "conditionalCollectionAssignmentCount": 0,
+    "violations": []
+  },
+  "exactTargetPreflight": {
+    "checkedUtc": "2026-08-28T11:56:49.2006795Z",
+    "state": "PASS_ARGOS_CONTROL_TRANSPORT_PREFLIGHT",
+    "windowsPowerShell51": true,
+    "validateWinRmRequested": false,
+    "requiredCommandCount": 3,
+    "missingCommandCount": 0,
+    "mutationsPerformed": false,
+    "targetInventoryExecuted": false
+  },
+  "pathGate": {
+    "state": "PASS_PATH_BUDGET",
+    "pathLength": 103,
+    "reservedSuffixCharacters": 32,
+    "effectiveLength": 135,
+    "longestComponentLength": 34
+  },
+  "remoteInputSent": false,
+  "jbodCommandExecuted": false,
+  "requestRepublished": false,
+  "requestRetried": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

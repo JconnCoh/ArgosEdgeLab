@@ -4,6 +4,27 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 O3Q2 direct runtime observation timeout / operator-console hold — 2026-08-28
+
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q2_DIRECT_RUNTIME_OBSERVATION_TIMEOUT_OPERATOR_CONSOLE_HOLD_20260828.md`,
+  SHA-256
+  `95CA4A98F7A0ABA0C7B91C048D39BCBCBA09E83FC1CE4777D0EDF19E34EE539D`.
+- Existing transport inventory was minimally repaired and qualified at SHA-256
+  `D582B80A7CF9AC4AB21FE2D228B875D8ED1503ACB50FB750EC008EEBFADED538`;
+  its inventory observed no matching WinRM forward and made no mutation.
+- The one authorized GUI observation attempt returned no nonce/hash/state or
+  runtime version before 45 seconds and was not retried. Timeout-gate SHA-256
+  is `DF16C06EBDD822E28135220E22E23D70C90D4D345CCEDE9A0C1D73C74B909E7F`.
+- Target execution is unconfirmed. The operator must report the exact current
+  JBOD console state before any further remote input. Leave any stranded
+  EncodedCommand untouched; `CaptureConsoleText` is eligible only for a
+  visibly reported parse/runtime error.
+- Any fresh namespace requires deterministic complete-pasted-length evidence
+  and one equal-or-greater-length fixed-scalar terminal rehearsal. O3Q2 stays
+  exactly-once/no-retry; frontside, backside, fanout, fiducial, provider,
+  processor, source-image, hold, XML, training, and production gates remain.
+
 ## OCV-02 O2D15 Slot19 raw-source request publication ready — 2026-08-26
 
 - Current checkpoint:
