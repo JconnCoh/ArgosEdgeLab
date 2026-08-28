@@ -4,6 +4,14 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## Durable GUI requirement — held inspections remain visible
+
+- Inspection-held wafers must remain visible in the dashboard with the rest
+  of their lot.
+- Each held wafer must display its exact held reason.
+- A held inspection must never disappear, be treated as uninspected, or be
+  filtered out merely because alignment-dependent processing cannot continue.
+
 ## OCV-03 O3Q5 local package consumer pass — 2026-08-28
 
 - Current checkpoint:
