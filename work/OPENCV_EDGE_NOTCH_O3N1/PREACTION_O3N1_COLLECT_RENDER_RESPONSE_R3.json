@@ -1,0 +1,78 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3N1_COLLECT_RENDER_RESPONSE_R3_20260827T235400Z",
+  "createdUtc": "2026-08-27T23:54:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "COLLECT_VERIFY_AND_FREEZE_EXACT_MATCHING_JBOD_SIGNED_O3N1_RENDER_RESPONSE_R3_NO_RETRY",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "3FC0C783A1DB8FCBE3FFC4DED60CC848D56AEF5471459D8C51E6A08DCA5309A4"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3N1/Collect-O3N1RenderResponseR3.ps1", "sha256": "CC6047F5503FD060E4531FBEDD3AFCA077065215AFD707C0E3247FC1E115D28D"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3N1/O3N1_RENDER_RESPONSE_COLLECTION_R3_INVOCATION.json", "sha256": "1D1DBBAAEA36426083DEAC22E010E870F6C55BD744436EE9ED1E6B4868408914"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3N1/O3N1_RENDER_RESPONSE_COLLECTION_R1_WITHDRAWAL.json", "sha256": "0B39544A5AFEACF61485E61C6F1EE62399F100034B3D8B984CA01DFFC70173F8"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3N1/O3N1_RENDER_RESPONSE_COLLECTION_R2_WITHDRAWAL.json", "sha256": "C964938A0BCD0D3EC0044F0EC91A4485DAFBD3D98639A3140B6AE38F1CD47C11"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3N1/O3N1_RENDER_MATCHING_RESPONSE_OBSERVATION.json", "sha256": "465C7A89ACEEF8D15E8D498D480394A8F7C2DFCDD8D750B166224529945ECE68"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3N1/O3N1_RENDER_PUBLISH_GATE.json", "sha256": "1697F3E96207C20FCF10C9BFB11C9C17D23EE7728956CAFA5CD12006AA946953"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3N1/O3N1_COMPLETE_ROUTE_GATE.json", "sha256": "C46F4C24150E4799A373224DF421A8A08872FC7921309F8F9DD87C033C86E94D"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3N1/O3N1_FINAL_PACKAGE_GATE.json", "sha256": "DEC2F1226474E655D98B9BD00FB105D47641586D7483AC162824236C79F8A958"},
+    {"path": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalResponse.ps1", "sha256": "4AF5901A7B9DFFF5A4DAF128960173D67501ABF6FF87C586BA526643B1C1449C"},
+    {"path": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer", "sha256": "5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      "work/OPENCV_EDGE_NOTCH_O3N1/Collect-O3N1RenderResponse.ps1",
+      "work/OPENCV_EDGE_NOTCH_O3N1/O3N1_RENDER_RESPONSE_COLLECTION_INVOCATION.json",
+      "work/OPENCV_EDGE_NOTCH_O3N1/PREACTION_O3N1_COLLECT_RENDER_RESPONSE.json",
+      "work/OPENCV_EDGE_NOTCH_O3N1/Collect-O3N1RenderResponseR2.ps1",
+      "work/OPENCV_EDGE_NOTCH_O3N1/O3N1_RENDER_RESPONSE_COLLECTION_R2_INVOCATION.json",
+      "work/OPENCV_EDGE_NOTCH_O3N1/PREACTION_O3N1_COLLECT_RENDER_RESPONSE_R2.json"
+    ]
+  },
+  "scope": {
+    "classification": "EXACT_MATCHING_SIGNED_RESPONSE_COLLECTION_R3",
+    "requestId": "REQ_20260827T231500111Z_62629419O3N1",
+    "responseId": "R_0F274208CEBB_20260827233856916_3a28577f",
+    "sourceZipSha256": "5B292BCE4487ED8D5CC11DDD99C61F571F305837551A0839B9BAC8CC76AD373D",
+    "localCreateNewRoot": "C:/A3N1C",
+    "byteArrayCaseIds": ["ZERO", "ONE", "MANY"],
+    "matchingSignedTerminalResponseOnly": true,
+    "requestRetryAuthorized": false,
+    "imageBytesRead": false,
+    "sourceMutation": false,
+    "sourceDeletion": false,
+    "taskOrProcessAction": false,
+    "processorAction": false,
+    "providerActivation": false,
+    "holdClearance": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -8151,3 +8151,39 @@ raster release, fiducial designation/alignment transfer, and every existing
 production prerequisite remain held. No provider activation, protected
 processor action, threshold relaxation, source/wafer mutation, training, XML,
 or production routing is authorized.
+
+## 2026-08-27 — OCV-03 O3N1 signed render terminal / exact Slot16 DATA_PULL ready
+
+O3N1 render request `REQ_20260827T231500111Z_62629419O3N1` was published
+exactly once. Matching response
+`R_0F274208CEBB_20260827233856916_3a28577f` is JBOD-signature-verified;
+response ZIP SHA-256 is
+`5B292BCE4487ED8D5CC11DDD99C61F571F305837551A0839B9BAC8CC76AD373D`.
+The frozen result remains `HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH`, with zero
+eligible physical candidates and zero physical candidates. The staged review
+ZIP is 15,166,219 bytes, SHA-256
+`93B2A18D70CAD29B321818EDCD5F1F39C0F189C44DA9F2495BF4AE5AAECD7B2D`.
+
+One exact one-file DATA_PULL, `REQ_20260827T235851191Z_95B56EC29E54`, is
+signed but unpublished. Request ZIP SHA-256 is
+`65CE29AE28459607BF9B6AD8217CBA957AE7F26E49499DE28B4B7AF235AAE606`.
+Its exact final-package gate is
+`0ACDC1850535BA9F225A6F64190DEAF82AA020AB9C1DFF10DD69D1C45AE91179`
+and its 25-leaf route gate is
+`4DBD062AE7D77594C6502611052B10EB40BF17EF7118D38AA48D07DEDDAEA291`.
+Persistent `U:` is the exact drive-type-4 engineering mapping with zero
+pending request files. One publication and no retry are authorized.
+
+The DATA_PULL transfers only the exact staged ZIP and does not decode pixels
+or change the detector, source, installed endpoint, provider, processor,
+task/process state, hold, or production route. After its matching signed
+terminal response, the exact returned ZIP must be hash-verified and used to
+build a local file-backed Slot16 BF/DF contour gallery. The zero-candidate hold
+must remain visible and must not be relabeled as a detector pass.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3N1_RENDER_TERMINAL_DATA_PULL_PUBLISH_READY_20260827.md`.
+Slot16 contour review, BF partial coverage, raster release, fiducial and
+alignment-transfer prerequisites, and every training/XML/production hold
+remain pending. Backside pixels and Argos orientation metadata remain
+unconsumed; the live provider and protected processor remain untouched.

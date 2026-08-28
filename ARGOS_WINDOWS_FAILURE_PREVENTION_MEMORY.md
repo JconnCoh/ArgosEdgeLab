@@ -1,5 +1,53 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### Adjacent parenthesized positional expressions are not valid PowerShell command arguments
+
+- Signature: a frozen PowerShell harness is rejected by the static wrapper
+  parser with repeated `Unexpected token '(' in expression or statement` and
+  `Missing closing ')' in expression` errors before the target runs.
+- Cause: a function was invoked in command argument mode with multiple
+  adjacent parenthesized positional expressions, for example
+  `Assert-PinnedJson (<path expression>) (<hash expression>) '<state>'`.
+  PowerShell did not treat the second parenthesized expression as a new
+  positional argument.
+- Preflight: compute every non-scalar path/hash expression into a named local
+  variable first, then invoke the function with named parameters whose values
+  are simple variables. Require an exact Windows PowerShell 5.1 parser/wrapper
+  pass before freezing or executing the successor.
+- Recovery: preserve the rejected frozen harness, invocation, and preaction as
+  withdrawn and non-reusable. Use a fresh namespace with precomputed argument
+  variables; rerun wrapper, harness, zero-recurrence, and exact non-mutating
+  preflight. Do not alter or republish the signed request/response.
+- First observed: OCV-03 O3N1 render-response collector R2 on 2026-08-27. The
+  wrapper rejected lines 99-103 before the collector executed; `C:\A3N1C` and
+  the R2 collection gate remained absent.
+
+### Empty byte-array function output can collapse to `$null` in Windows PowerShell 5.1
+
+- Signature: a response collector's exact non-mutating preflight reads a
+  zero-byte ZIP member successfully, then strict mode fails on `.Length` with
+  `The property 'Length' cannot be found on this object.` No extraction root or
+  collection gate is created.
+- Cause: the helper returned `MemoryStream.ToArray()` through the PowerShell
+  success-output pipeline. Windows PowerShell enumerated the empty byte array
+  into no output, so assignment produced `$null` rather than a zero-length
+  `[byte[]]`.
+- Preflight: every helper that returns binary/text entry bytes must use an
+  explicit non-enumerating output boundary and its exact Windows PowerShell
+  5.1 gate must exercise zero-byte, one-byte, and many-byte ZIP members. Assert
+  the result type and exact lengths `0`, `1`, and `N` before freezing the
+  collector.
+- Recovery: preserve the failed frozen collector, invocation, and preaction as
+  withdrawn and non-reusable. Prove the failed preflight created neither its
+  local extraction root nor its collection gate. Use a fresh collector
+  namespace with the non-enumerating boundary and rerun wrapper, harness,
+  zero-recurrence, exact preflight, and collection gates. Do not republish the
+  request or modify the signed response.
+- First observed: OCV-03 O3N1 render-response collector R1 on 2026-08-27. The
+  exact response ZIP remained unchanged at SHA-256
+  `5B292BCE4487ED8D5CC11DDD99C61F571F305837551A0839B9BAC8CC76AD373D`;
+  `C:\A3N1C` and the collection gate were both absent after failure.
+
 ### PowerShell keyword adjacency can survive static parsing and fail only at runtime
 
 - Signature: a Windows PowerShell 5.1 non-mutating preflight parses and passes
