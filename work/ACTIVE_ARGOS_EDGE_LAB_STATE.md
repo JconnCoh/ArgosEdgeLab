@@ -1,8 +1,40 @@
-# Active ArgosEdgeLab state - OCV-03 O3SO3 schema observer process-API timeout / capability gap - 2026-08-28
+# Active ArgosEdgeLab state - OCV-03 O3Q5 local runtime-gate consumer contract repair pass - 2026-08-28
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3Q5 local runtime-gate consumer contract repair pass — 2026-08-28
+
+The runtime premise remains closed at Python `3.13.2`, OpenCV `5.0.0`, and
+NumPy `2.5.2`; no runtime observation was repeated. The byte-exact O3Q4 gate
+first reproduced the frozen O3P8 `load_job` rejection with zero image reads.
+
+Fresh O3Q5 adapter SHA-256
+`4A641397B787767ECCAABF3345499AF0E9E5F0C26F7EE8498CF58319E07D85F3`
+then accepted that same exact gate. Wrong hash, wrong expected state, failed
+state, and wrong gate NumPy version all rejected before image access. The
+adapter delegates every detector operation to unchanged O3P8 SHA-256
+`41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36`.
+Exact test-gate SHA-256 is
+`8CA026CCE68BC7FC243EA4386FB8C59F11993C366BD97B7AAC0207CEB3E17EC0`.
+
+The incident-bound workflow review and recovery-intent preflight explicitly
+cleared stop-loss for this one local repair only. Runtime rediscovery,
+substitute gate fixtures, improvised observers, retries, and live action before
+the exact packaged consumer test are mechanically forbidden.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q5_LOCAL_RUNTIME_GATE_CONSUMER_CONTRACT_REPAIR_PASS_20260828.md`,
+SHA-256 `9ED5426C5D9518EB0CC453D09BE0DFB4A1DE213960C3B0CC30A46A81E8CC7842`.
+
+Exact next action is a fresh O3Q5 local endpoint/job integration that supplies
+the job-pinned runtime-gate contract fields and repeats the byte-exact positive
+and bounded negative cases against the final packaged consumer. No live
+request is authorized. O3Q2/O3Q4 remain withdrawn/no-retry/non-parent; every
+stranded console/process, BF Slot16 partial-coverage, backside, fiducial,
+alignment, XML, training, production, provider, processor, source, and hold
+restriction remains unchanged.
 
 ## OCV-03 O3SO3 schema observer process-API timeout / capability gap — 2026-08-28
 

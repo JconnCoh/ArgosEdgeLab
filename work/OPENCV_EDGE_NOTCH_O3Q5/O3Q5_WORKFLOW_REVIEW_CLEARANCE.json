@@ -1,0 +1,40 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-08-28T16:14:27Z",
+  "state": "PASS_O3Q5_RUNTIME_GATE_CONSUMER_WORKFLOW_REVIEW_CLEARANCE",
+  "incidentId": "OCV03_SLOT16_RUNTIME_GATE_CONSUMER_CONTRACT_20260828",
+  "operatorDirection": "Fix this in the current task and change the operating behavior so the same failure loop cannot recur.",
+  "signedPremiseFailureCount": 2,
+  "reviewFindings": [
+    "O3Q2 failed before image read because a laptop NumPy premise was applied to the unchanged JBOD runtime.",
+    "O3RV1 and the exact signed runtime evidence closed the runtime premise at Python 3.13.2, OpenCV 5.0.0, and NumPy 2.5.2.",
+    "O3Q4 then failed before image read because O3P8 hard-coded the predecessor runtime-gate state token.",
+    "O3Q4 rehearsal used a substitute runtime gate whose old state token satisfied O3P8, so it did not cover the final consumer contract.",
+    "The narrow remedy is to make O3P8 compare the gate state to the exact state pinned in its job and to test the exact O3Q4 gate bytes through load_job."
+  ],
+  "supportedRemedy": "B",
+  "authorizedMutation": "One fresh O3Q5 local review-only contract repair may change only O3P8 runtime-gate state plumbing and add exact-positive and bounded-negative load_job tests. Detector image algorithms, thresholds, configuration, inputs, and outputs remain unchanged. This clearance does not authorize a live request.",
+  "singleMutationAttemptAuthorized": true,
+  "automaticRetryAuthorized": false,
+  "liveRequestAuthorized": false,
+  "processorTaskActionAuthorized": false,
+  "processActionAuthorized": false,
+  "imageReadAuthorized": false,
+  "sourceHashingAuthorized": false,
+  "sourceDeletionAuthorized": false,
+  "waferActionAuthorized": false,
+  "providerActivationAuthorized": false,
+  "holdClearanceAuthorized": false,
+  "antiLoopControls": {
+    "runtimePremiseClosed": true,
+    "runtimeReobservationAllowed": false,
+    "substituteRuntimeGateFixtureAllowed": false,
+    "exactO3Q4RuntimeGateFixtureRequired": true,
+    "maximumLocalImplementationAttempts": 1,
+    "stopOnFirstAcceptanceFailure": true,
+    "liveActionBeforeAcceptancePassAllowed": false,
+    "newObserverOrSchemaFamilyAllowed": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

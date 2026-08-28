@@ -1,0 +1,91 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T16:14:27Z",
+  "incidentId": "OCV03_SLOT16_RUNTIME_GATE_CONSUMER_CONTRACT_20260828",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 2,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": true,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_SIGNED_TERMINAL_RESPONSE_GATE.json",
+        "sha256": "56D64F2F287477E3307BA6111AEA7C89E7B3CEADF408476F7AD9E25A5D320769",
+        "state": "FAILED"
+      },
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3Q5/O3Q4_SIGNED_PREMISE_FAILURE_CLASSIFICATION.json",
+        "sha256": "8B5572B252B1ADE6BEC6EFA7E38FD2D8CCAAC4553090C9821F96B0A3F1042EC2",
+        "state": "FAILED"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q5/O3Q5_POST_FAILURE_OBSERVATION.json",
+      "sha256": "FAE1CC1AEAEB652DF3DB1D867B06D6DB69A99919B1E27A1138F77C3F2257F849"
+    },
+    "workflowReviewClearance": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q5/O3Q5_WORKFLOW_REVIEW_CLEARANCE.json",
+      "sha256": "973227E7612C7D0F9668DCDBA4B4388D679EEB43E62C12BAFDAA78B30BC0A40B"
+    }
+  },
+  "route": {
+    "type": "LOCAL_REPOSITORY_CONTRACT_REPAIR",
+    "jobClass": "LOCAL_CONTRACT_TEST",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {"path": "", "sha256": ""},
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q5/O3Q5_POST_FAILURE_OBSERVATION.json",
+      "sha256": "FAE1CC1AEAEB652DF3DB1D867B06D6DB69A99919B1E27A1138F77C3F2257F849"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "operatorAuthorization": "Fix this in the current task and change the operating behavior so the same failure loop cannot recur.",
+    "boundedChange": "Create one fresh O3Q5 local engine copy that changes only runtime-gate state validation from a hard-coded predecessor state to the exact job-pinned state. Add a contract test using the byte-exact O3Q4 runtime gate plus wrong-state, wrong-hash, wrong-version, and failed-state negatives. No live request is authorized by this intent."
+  },
+  "scope": {
+    "newNamespace": "work/OPENCV_EDGE_NOTCH_O3Q5",
+    "withdrawnNonParents": ["O3Q2", "O3Q4"],
+    "runtimePremiseClosed": true,
+    "runtimeReobservationAllowed": false,
+    "liveRequestAuthorized": false,
+    "maximumLocalImplementationAttempts": 1,
+    "detectorImageAlgorithmChangeAllowed": false,
+    "detectorThresholdChangeAllowed": false,
+    "detectorConfigurationChangeAllowed": false,
+    "sourceImageReadAllowed": false,
+    "taskOrProcessActionAllowed": false,
+    "providerActivationAllowed": false,
+    "requestRetryAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,57 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-28T16:14:27Z",
+  "state": "PASS_O3Q5_POST_FAILURE_FILE_BACKED_OBSERVATION",
+  "incidentId": "OCV03_SLOT16_RUNTIME_GATE_CONSUMER_CONTRACT_20260828",
+  "sourceEvidence": {
+    "o3q4SignedTerminalResponse": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_SIGNED_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "63C54F71FB1F2F54AA2A3F14FE938D58B3F93AE88716B1F991650DB3B94D5925"
+    },
+    "exactRuntimeGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_RUNTIME_GATE.json",
+      "sha256": "09DEEF0BC1C0DC9464F5BF5CE93EF590F2780F3123BB13AB6080358E562C68C4"
+    },
+    "runtimePremiseReview": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3RV1/O3RV1_RUNTIME_PREMISE_REVIEW.json",
+      "sha256": "22557FFA8DE03DBD8690376EBCF2AF1D77A5A4CD3CFF14DFEB492ED47ADE494C"
+    },
+    "consumer": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P8/Detect-O3P8FrontSplitNotches.py",
+      "sha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36"
+    }
+  },
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "mutationsPerformed": false,
+  "expectedObserved": [
+    {
+      "field": "runtimeGateSha256",
+      "expected": "09DEEF0BC1C0DC9464F5BF5CE93EF590F2780F3123BB13AB6080358E562C68C4",
+      "observed": "09DEEF0BC1C0DC9464F5BF5CE93EF590F2780F3123BB13AB6080358E562C68C4"
+    },
+    {
+      "field": "runtimeGateState",
+      "expected": "PASS_O3RV1_FILE_BACKED_JBOD_RUNTIME_PREMISE",
+      "observed": "PASS_O3RV1_FILE_BACKED_JBOD_RUNTIME_PREMISE"
+    },
+    {"field": "pythonVersion", "expected": "3.13.2", "observed": "3.13.2"},
+    {"field": "openCvVersion", "expected": "5.0.0", "observed": "5.0.0"},
+    {"field": "numpyVersion", "expected": "2.5.2", "observed": "2.5.2"},
+    {
+      "field": "consumerPredicate",
+      "expected": "JOB_PINNED_RUNTIME_GATE_STATE",
+      "observed": "HARDCODED_PASS_O3P2_LOCAL_RUNTIME_INSTALLED"
+    }
+  ],
+  "observationConclusion": "The runtime premise is already proved and must not be observed again. The only proved blocker is the O3P8 consumer's hard-coded predecessor state token. Remedy B is a non-algorithmic contract repair tested with the exact O3Q4 gate bytes.",
+  "imageBytesReadByThisObservation": false,
+  "sourceHashingPerformedByThisObservation": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

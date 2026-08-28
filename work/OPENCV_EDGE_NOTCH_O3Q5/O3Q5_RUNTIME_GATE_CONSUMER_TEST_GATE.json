@@ -1,0 +1,44 @@
+{
+  "schema": "argos_ocv03_o3q5_runtime_gate_consumer_test_gate_v1",
+  "createdUtc": "2026-08-28T16:17:57Z",
+  "state": "PASS_O3Q5_EXACT_RUNTIME_GATE_CONSUMER",
+  "legacyReproduction": {
+    "candidate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P8/Detect-O3P8FrontSplitNotches.py",
+      "sha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36"
+    },
+    "state": "PASS_O3Q5_EXACT_FIXTURE_REPRODUCED_LEGACY_CONSUMER_FAILURE",
+    "observedFailure": "O3P8 runtime gate is not PASS.",
+    "imageReadCount": 0
+  },
+  "candidate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q5/Detect-O3Q5FrontSplitNotches.py",
+    "sha256": "4A641397B787767ECCAABF3345499AF0E9E5F0C26F7EE8498CF58319E07D85F3",
+    "frozenDetectorPath": "work/OPENCV_EDGE_NOTCH_O3P8/Detect-O3P8FrontSplitNotches.py",
+    "frozenDetectorSha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36"
+  },
+  "test": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q5/Test-O3Q5RuntimeGateConsumer.py",
+    "sha256": "9E1B2C693ADF9B18ECCE302EF60FF7708B1EC73F7E680A03E48376039C585271"
+  },
+  "exactRuntimeGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_RUNTIME_GATE.json",
+    "sha256": "09DEEF0BC1C0DC9464F5BF5CE93EF590F2780F3123BB13AB6080358E562C68C4",
+    "state": "PASS_O3RV1_FILE_BACKED_JBOD_RUNTIME_PREMISE"
+  },
+  "cases": [
+    {"caseId": "EXACT_O3Q4_GATE", "expected": "ACCEPT", "observed": "ACCEPT", "passed": true},
+    {"caseId": "WRONG_GATE_HASH", "expected": "REJECT", "observed": "O3P8 runtime gate changed.", "passed": true},
+    {"caseId": "WRONG_EXPECTED_STATE", "expected": "REJECT", "observed": "O3P8 runtime gate state changed.", "passed": true},
+    {"caseId": "FAILED_GATE_STATE", "expected": "REJECT", "observed": "O3P8 runtime gate state changed.", "passed": true},
+    {"caseId": "WRONG_GATE_NUMPY_VERSION", "expected": "REJECT", "observed": "O3P8 runtime gate NumPy version changed.", "passed": true}
+  ],
+  "imageReadCount": 0,
+  "runtimeReobservationPerformed": false,
+  "liveRequestPerformed": false,
+  "taskOrProcessActionPerformed": false,
+  "thresholdOrAlgorithmChanged": false,
+  "frozenDetectorChanged": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

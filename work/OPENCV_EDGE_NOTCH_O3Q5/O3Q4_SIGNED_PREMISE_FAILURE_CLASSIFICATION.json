@@ -1,0 +1,25 @@
+{
+  "schema": "argos_ocv03_o3q4_signed_premise_failure_classification_v1",
+  "createdUtc": "2026-08-28T16:14:27Z",
+  "state": "FAIL_O3Q4_AUTHENTIC_SIGNED_RUNTIME_GATE_STATE_CONSUMER_COMPATIBILITY",
+  "responseState": "FAILED",
+  "incidentId": "OCV03_SLOT16_RUNTIME_GATE_CONSUMER_CONTRACT_20260828",
+  "signedTerminalEvidence": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_SIGNED_TERMINAL_RESPONSE_GATE.json",
+    "sha256": "63C54F71FB1F2F54AA2A3F14FE938D58B3F93AE88716B1F991650DB3B94D5925",
+    "responseId": "R_4972FF4F6E27_20260828155653502_d78b4283",
+    "signatureVerified": true
+  },
+  "classification": {
+    "failureStage": "LOAD_JOB_RUNTIME_GATE_STATE_CHECK",
+    "runtimeGateState": "PASS_O3RV1_FILE_BACKED_JBOD_RUNTIME_PREMISE",
+    "consumerRequiredState": "PASS_O3P2_LOCAL_RUNTIME_INSTALLED",
+    "runtimeVersionsCorrect": true,
+    "imageReadBeforeFailure": false,
+    "numericResultProduced": false,
+    "thresholdOrAlgorithmChanged": false
+  },
+  "disposition": "WITHDRAWN_NO_RETRY_NON_PARENT",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
