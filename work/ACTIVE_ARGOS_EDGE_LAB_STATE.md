@@ -1,8 +1,38 @@
-# Active ArgosEdgeLab state - OCV-03 O3Q5 local package consumer pass - 2026-08-28
+# Active ArgosEdgeLab state - OCV-03 O3Q7 local signed package route pass - 2026-08-28
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3Q7 local signed package and exact-route pass — 2026-08-28
+
+Local request `REQ_O3Q7_20260828A` is signed and exact-route qualified but not
+published. ZIP
+`work/OPENCV_EDGE_NOTCH_O3Q7/final_o3q7/REQ_O3Q7_20260828A.ready.zip`,
+SHA-256 `381224AAFBE50CE9DAECDD60910658EABCD2372E5D2EFCDCC295326BBFB77577`,
+passed signature, all 15 payload hashes, fresh extraction, extracted endpoint
+preflight, and tamper rejection. Final gate SHA-256 is
+`C9514825C06A5AA2006D6806101C54E3F42F0D027C2273B8A9B40B280D2B1C12`.
+
+The full pre-sign path cross-product included the final 17 leaves at all eight
+request roots plus ZIP/response/maintenance/output/source-alias paths. All 195
+unique paths passed; maximum effective length is 189. Route gate SHA-256 is
+`4FAC0CA527C98BC164160393EFB1D8E7545745EDEF89C4B1DA12C796C579B3DB`.
+The earlier signed local O3Q6 ZIP is withdrawn and non-publishable after its
+exact route gate found six 200–207-character paths. It was never published or
+executed and was not consumed as the O3Q7 package parent.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q7_LOCAL_SIGNED_PACKAGE_ROUTE_PASS_20260828.md`,
+SHA-256 `044D6D12FC765B6B071907DFE8F5372AF08401BA42727C4AC61289B8D36FD286`.
+
+Stop before publication. No live request is authorized by this checkpoint.
+Runtime remains closed at Python `3.13.2`, OpenCV `5.0.0`, and NumPy `2.5.2`;
+do not inspect it again. All 46 prior `PENDING_GATE` records, O3Q2/O3Q4/O3Q6
+withdrawals, stranded consoles/processes, BF Slot16 partial coverage,
+backside-unconsumed state, fiducial/map/pose/alignment and all other source,
+storage, processor, GUI, XML, training, production, provider, task/process,
+threshold/algorithm, wafer, and hold restrictions remain unchanged.
 
 ## OCV-03 O3Q5 local package consumer pass — 2026-08-28
 

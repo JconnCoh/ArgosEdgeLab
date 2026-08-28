@@ -1,0 +1,42 @@
+{
+  "schema": "argos_ocv03_o3q7_fresh_package_plan_v1",
+  "revision": "OCV03_O3Q7_SHORT_REQUEST_ID_PATH_RECOVERY_20260828",
+  "state": "FROZEN_PRE_SIGN_PACKAGE_PLAN",
+  "requestId": "REQ_O3Q7_20260828A",
+  "readyName": "REQ_O3Q7_20260828A.ready",
+  "stageRoot": "C:/A7B",
+  "payloadRoot": "C:/A7B/payload",
+  "signedRoot": "C:/A7B/signed",
+  "verifyRoot": "C:/A7B/v",
+  "finalRoot": "work/OPENCV_EDGE_NOTCH_O3Q7/final_o3q7",
+  "sourcePayloadPlan": {"path":"work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_PAYLOAD_PLAN.json","sha256":"15151B02982F59304FA1E5272E9F6002BA86F8B7CAB53364ECA9A6ADA7036CDD","consumeOriginalSourcesOnly":true},
+  "maintenanceDefinition": {"path":"work/OPENCV_EDGE_NOTCH_O3Q6/MAINTENANCE_DEFINITION.json","sha256":"72559C558A2EA13DDCBDD0A2D407CE1AF739FC23962DC79B44215A3E3222CA86"},
+  "requestExpandedRoots": [
+    "C:/A7B/signed/REQ_O3Q7_20260828A.ready",
+    "C:/A7B/v",
+    "C:/ProgramData/ArgosProjectPortalRO/requests_to_argos/pending/REQ_O3Q7_20260828A.ready",
+    "C:/ProgramData/ArgosProjectPortalRO/requests_from_gateway/pending/REQ_O3Q7_20260828A.ready",
+    "C:/ProgramData/ArgosProjectPortalRO/to_jbod/pending/REQ_O3Q7_20260828A.ready",
+    "C:/ProgramData/ArgosProjectPortalRO/to_jbod/sent/REQ_O3Q7_20260828A.ready",
+    "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/pending/REQ_O3Q7_20260828A.ready",
+    "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/processed/completed/REQ_O3Q7_20260828A.ready"
+  ],
+  "requestZipPaths": [
+    "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab/work/OPENCV_EDGE_NOTCH_O3Q7/final_o3q7/REQ_O3Q7_20260828A.ready.zip",
+    "U:/ProjectPortalRO/requests/REQ_O3Q7_20260828A.ready.zip",
+    "U:/ProjectPortalRO/requests/REQ_O3Q7_20260828A.ready.zip.upload",
+    "C:/APR/S/requests/REQ_O3Q7_20260828A.ready.zip",
+    "C:/APR/S/requests/processed/REQ_O3Q7_20260828A.ready.zip",
+    "C:/ProgramData/ArgosProjectPortalRO/share/staging/REQ_O3Q7_20260828A.ready.zip",
+    "C:/ProgramData/ArgosProjectPortalRO/share/request_archive/REQ_O3Q7_20260828A.ready.zip"
+  ],
+  "supplementalMaximumRoutePlan": {"path":"work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_PATH_PLAN.json","sha256":"1C3CEFBFCB8F5776D19A27CB8E76ADA9C57B25A9806341A428129D6BE514CBEF","replacement":{"from":"REQ_20260828T164700666Z_62629419O3Q6","to":"REQ_O3Q7_20260828A"}},
+  "expectedPayloadFileCount": 15,
+  "expectedRequestLeafCount": 17,
+  "expectedRouteCandidateCount": 207,
+  "reservedSuffixCharacters": 32,
+  "withdrawnO3Q6SignedPackageConsumed": false,
+  "livePublicationAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

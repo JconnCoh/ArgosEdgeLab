@@ -1,0 +1,48 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-08-28T16:46:04Z",
+  "state": "PASS_O3Q6_NUMERIC_SUCCESSOR_PACKAGE_WORKFLOW_REVIEW_CLEARANCE",
+  "incidentId": "OCV03_SLOT16_RUNTIME_GATE_CONSUMER_CONTRACT_20260828",
+  "operatorDirection": "Continue the recorded O3Q6 successor action in the current task without another approval loop.",
+  "signedPremiseFailureCount": 2,
+  "reviewFindings": [
+    "The exact JBOD runtime premise is closed at Python 3.13.2, OpenCV 5.0.0, and NumPy 2.5.2 and must not be observed again.",
+    "The fresh O3Q5 adapter accepted the byte-exact captured runtime gate and rejected every bounded wrong-hash, wrong-state, failed-state, and wrong-version case before image access.",
+    "The extracted O3Q5 local package repeated the same exact consumer contract with zero image reads and zero live actions.",
+    "O3Q4 endpoint, builder, signed request, and execution package remain withdrawn and cannot be a package or execution parent.",
+    "The narrow next step is one fresh local O3Q6 endpoint/job package using locked Slot16 BF/DF hashes, unchanged O3P8 detector/configuration, and O3Q5 runtime-contract plumbing."
+  ],
+  "supportingPackageGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q5/O3Q5_LOCAL_PACKAGE_CONSUMER_GATE.json",
+    "sha256": "110CCDF9ACDBB43774183E7F89DADA478FC77E183EA5366C64CB950216B1F41A"
+  },
+  "supportingCheckpoint": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q5_LOCAL_PACKAGE_CONSUMER_PASS_20260828.md",
+    "sha256": "DF4617B432C96834BA6BF08768F9AD1C7A094CA70B2E5D438A88D6251051008A"
+  },
+  "supportedRemedy": "B",
+  "authorizedMutation": "One fresh O3Q6 local review-only endpoint/job package may be constructed and rehearsed once. It may change only runtime-gate consumer plumbing by using the verified O3Q5 adapter. Detector algorithms, thresholds, configuration, locked Slot16 input hashes, frozen DF seed set, and authority remain unchanged. This clearance does not authorize publication or a live request.",
+  "singleMutationAttemptAuthorized": true,
+  "automaticRetryAuthorized": false,
+  "liveRequestAuthorized": false,
+  "processorTaskActionAuthorized": false,
+  "existingProcessActionAuthorized": false,
+  "sourceImageReadAuthorizedDuringLocalPackageConstruction": false,
+  "sourceHashingAuthorizedDuringLocalPackageConstruction": false,
+  "sourceDeletionAuthorized": false,
+  "waferActionAuthorized": false,
+  "providerActivationAuthorized": false,
+  "holdClearanceAuthorized": false,
+  "antiLoopControls": {
+    "runtimePremiseClosed": true,
+    "runtimeReobservationAllowed": false,
+    "substituteRuntimeGateFixtureAllowed": false,
+    "exactCapturedRuntimeGateRequired": true,
+    "maximumLocalPackageBuilds": 1,
+    "stopOnFirstPackageConsumerFailure": true,
+    "liveActionBeforePublishReadyCheckpointAllowed": false,
+    "newObserverOrRuntimeSchemaAllowed": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

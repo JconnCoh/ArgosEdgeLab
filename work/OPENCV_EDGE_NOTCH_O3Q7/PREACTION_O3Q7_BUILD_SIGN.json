@@ -1,0 +1,33 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV03_O3Q7_FRESH_SHORT_ID_BUILD_SIGN_20260828",
+  "createdUtc": "2026-08-28T17:15:30Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "ASSEMBLE_AND_SIGN_ONE_FRESH_O3Q7_LOCAL_PACKAGE_AFTER_EXACT_ROUTE_PASS",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"B2508C36F9D9FBFC9D6661527F1E1AF882A3479D63DCEE0082948A105715FF15"},
+    {"path":"work/ARGOS_CONTINUITY_STATE.json","sha256":"5F4F112B31DD9C04FE4AFF5CB359C2417F9E76614F68323D904981336F2B8C7B"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q7/O3Q7_RECOVERY_INTENT.json","sha256":"354343FF317C74B40C81537319F803F3D055E483C2B4AAA4D6BD2B802A6C4694"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q7/O3Q7_WORKFLOW_REVIEW_CLEARANCE.json","sha256":"94C2EF01AD2E341DA7CA9C9172D218CC270D37B4AFC3DF3D0D79FB74EE33231A"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q7/O3Q7_PACKAGE_PLAN.json","sha256":"35B7B10267787B60335D08CF144493ED26983E056091767E6113CF4461CB494A"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q7/O3Q7_EXACT_ROUTE_PATH_GATE.json","sha256":"4FAC0CA527C98BC164160393EFB1D8E7545745EDEF89C4B1DA12C796C579B3DB"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q7/Build-O3Q7Package.ps1","sha256":"6591E1766127980033FD76EDE270298FB8129648BAF7EADEEC60A9BC789807B4"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_ENDPOINT_REHEARSAL_GATE.json","sha256":"CC2E2931824679F82E57C0BE9226AA7B002A7E86DCFA023009DCA18D9F2E73FF"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_ENTRYPOINT_NEGATIVE_GATE.json","sha256":"EF42A790A9F6AB8A653B33E0908D88420A3F615D11BDC6601B388E0258B12A6E"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q6/MAINTENANCE_DEFINITION.json","sha256":"72559C558A2EA13DDCBDD0A2D407CE1AF739FC23962DC79B44215A3E3222CA86"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/state/LAPTOP_SIGNING_IDENTITY.json","sha256":"3FD8164D1869375156FB7566D206FEAB97AE8A9E7D377B0AD4E03739ED697289"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/ARGOS_PROJECT_PORTAL_LAPTOP_SIGNER_PUBLIC.cer","sha256":"2B434D0CF6A0D6D69AAE3D280032EFF00807D423CA3B3D7F2EFC1C6BB628BFFF"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalPackage.ps1","sha256":"6CA21D7DE97EDE88F2C41F91D5B7801C688982C8C5A422987EB9528E1E9A084B"},
+    {"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    {"path":"work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json","sha256":"170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"}
+  ],
+  "controls": {"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence": {"path":"work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_COLLECTION_CASE_GATE.json","sha256":"6F027F746D443104396E5B7F582359617475C78CE2F1FCB589939D0D00C7CAD6","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "legacyEvidenceException": {"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":["O3Q2","O3Q4","O3Q6_SIGNED_PACKAGE"]},
+  "boundedAction": {"freshPackageBuildsMaximum":1,"signaturesMaximum":1,"requestId":"REQ_O3Q7_20260828A","publicationsMaximum":0,"liveExecutionAuthorized":false,"sourceImageRead":false,"sourceMutation":false,"sourceDeletion":false,"taskActions":[],"processActions":[],"providerActivation":false,"holdClearance":false,"thresholdOrAlgorithmChange":false},
+  "terminalGatePlanned": "work/OPENCV_EDGE_NOTCH_O3Q7/O3Q7_FINAL_PACKAGE_GATE.json",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

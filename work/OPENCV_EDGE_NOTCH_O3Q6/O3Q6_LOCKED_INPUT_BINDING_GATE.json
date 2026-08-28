@@ -1,0 +1,56 @@
+{
+  "schema": "argos_ocv03_o3q6_locked_input_binding_gate_v1",
+  "createdUtc": "2026-08-28T16:55:00Z",
+  "state": "PASS_LOCKED_INPUTS_AND_SOURCE_ALIAS_BOUND",
+  "jobContract": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_JOB_CONTRACT.json",
+    "sha256": "7A19701B265ED038B593F4403B4FFBDFAE7239B1DB7296BC85A0F0516DB83652"
+  },
+  "seedProjection": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_SLOT16_SEED_PROJECTION.json",
+    "sha256": "33FCAEA5661352138F9A6C5920F504F3D2DC7A807C88F2A0A9CE29A4D7FD71E2",
+    "candidateCount": 21,
+    "matchesLockedSeedSource": true
+  },
+  "lockedSourceRecord": {
+    "path": "work/O3J1R/files/S16.json",
+    "sha256": "FBBF0609AD337D495E90E73C6F175E6D255287730B81498CE23C4C83536760B1"
+  },
+  "lockedSeedSource": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3N1/local_review_r2/assets/MANIFEST.json",
+    "sha256": "69FDAD4AB4DCF06A8A38C76EA009F0DA178896E8D0291668670AB9ADD24A05C8",
+    "role": "LOCKED_SEED_EVIDENCE_ONLY_NOT_EXECUTION_PARENT"
+  },
+  "lockedInputs": {
+    "bfSha256": "3F98D5B506B3EF6E18BF9C24A64DC4516F024248DE994BD3DCBD5C8680EB7E90",
+    "dfSha256": "E293D3155A50554104A232C1FF9F1BDA7E6935D798C7266A2C8A0F90FC0A098B",
+    "sourceHashesMatch": true,
+    "bfFitMatches": true
+  },
+  "detectorBinding": {
+    "adapterSha256": "4A641397B787767ECCAABF3345499AF0E9E5F0C26F7EE8498CF58319E07D85F3",
+    "frozenEngineSha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36",
+    "configEquivalenceGateSha256": "CF896E114179370BC9C8A58D64FDD3470EDCAB1A96836252693C935845224F95",
+    "configGroupsMatchFrozenO3P8": true,
+    "thresholdOrAlgorithmChange": false
+  },
+  "runtimeBinding": {
+    "capturedGateSha256": "09DEEF0BC1C0DC9464F5BF5CE93EF590F2780F3123BB13AB6080358E562C68C4",
+    "jobRuntimeContractSha256": "9BEE718266F63F4576AE3821E8A19548A285DF3BCFC62F5070532F4FAC9555A7",
+    "contractMatchesCapturedGate": true,
+    "runtimeReobserved": false
+  },
+  "sourceAliasBinding": {
+    "drive": "Q:",
+    "constructedDriveSet": ["Q:"],
+    "bfConstructedPath": "Q:/62629-419_20260824112405/Slot16/BrightfieldFrontsideWafer/resizedImage/62629-419_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "dfConstructedPath": "Q:/62629-419_20260824112405/Slot16/DarkfieldFrontsideWafer/resizedImage/62629-419_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "relativePathsSafe": true,
+    "mismatchedDriveRejected": true
+  },
+  "o3q4ExecutionParentInherited": false,
+  "imageReadCount": 0,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

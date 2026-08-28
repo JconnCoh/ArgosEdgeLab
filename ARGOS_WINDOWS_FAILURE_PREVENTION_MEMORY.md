@@ -10325,3 +10325,59 @@ than rerunning it.
   stop-loss is active. A future non-algorithmic runtime-gate compatibility
   improvement and fresh numeric namespace require workflow review and a new
   intent that explicitly clears stop-loss; they are not authorized here.
+
+## 2026-08-28 — A source-alias gate must match the drive actually written into the engine job
+
+- Failure signature: static review after O3Q4 withdrawal found that its live
+  invocation declared and its endpoint created source alias `Q:`, while the
+  job contract still supplied BF/DF paths rooted at `F:`. Its route gate then
+  verified the stale `F:` leaves and asserted that the endpoint created the
+  verified alias. O3Q4 stopped at the runtime-gate consumer before image read,
+  so this is a latent package-contract mismatch rather than an observed image
+  execution failure.
+- Cause: the alias lifecycle, route path inventory, and engine-job input-path
+  materialization were independently declared. The endpoint created one drive
+  but copied already rooted predecessor paths into the job, and the route gate
+  never mechanically compared those roots.
+- Mandatory preflight: store source identities as exact source-root-relative
+  paths. Construct every engine input path from the one invocation-pinned alias
+  only after that alias is created. Mechanically require the invocation alias,
+  constructed job-path drive, route-gate alias rows, and cleanup target to be
+  identical; reject any rooted input path in the job contract and any second
+  drive token. Include the exact constructed BF/DF leaves in the non-mutating
+  endpoint preflight and final route gate.
+- Recovery: keep O3Q4 withdrawn and non-parent. Do not patch or replay its
+  endpoint, job, or route gate. A fresh successor must use a fresh job schema
+  with relative BF/DF leaves, a fresh endpoint that materializes the pinned
+  alias paths, and a source-binding gate before package construction.
+
+## 2026-08-28 — A package path gate must expand the final payload leaf set through the deepest archival root
+
+- Failure signature: the signed local O3Q6 package passed its conservative
+  64-path planning gate, but the exact post-signing cross-product found six
+  request leaves with effective lengths from 200 through 207. The missed
+  roots were `requests_from_gateway\pending` and
+  `endpoint_jbod\processed\completed`; the missed leaves included the nested
+  O3Q5 adapter, O3P8 engine, and detector-equivalence gate. No package was
+  published or launched.
+- Cause: the pre-signing plan modeled representative predecessor payload
+  names and the endpoint pending root instead of freezing the final package's
+  complete internal leaf set and expanding every leaf across every request
+  receive, send, pending, processed, completed, and archive root. A later
+  exact gate therefore discovered a route layout that the planning gate had
+  not represented.
+- Mandatory preflight: before signing, freeze the exact proposed request ID
+  (or its maximum length), final payload-relative leaf set, and every expanded
+  request root. Mechanically cross-product every leaf through all roots,
+  including `requests_from_gateway\pending` and
+  `endpoint_jbod\processed\completed`, then append ZIP, response, maintenance,
+  compact-failure, output, and source-alias leaves. Run
+  `Confirm-ArgosPathBudget.ps1` on that complete set and require every
+  effective length below 200 before the first signature.
+- Recovery: retain the signed O3Q6 ZIP only as withdrawn terminal local
+  evidence; it is non-publishable and not a package parent. Do not rename,
+  patch, or re-sign it. Use a fresh package namespace assembled from the
+  independently qualified exact endpoint and locked detector inputs, with an
+  independently constructed shorter request identifier that the unchanged
+  qualified portal consumers accept, and pass the full exact route
+  cross-product before signing once.

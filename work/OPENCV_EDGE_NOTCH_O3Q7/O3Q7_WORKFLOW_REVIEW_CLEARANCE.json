@@ -1,0 +1,34 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-08-28T17:13:00Z",
+  "state": "PASS_O3Q7_FRESH_PACKAGE_PATH_RECOVERY_CLEARANCE",
+  "incidentId": "OCV03_SLOT16_RUNTIME_GATE_CONSUMER_CONTRACT_20260828",
+  "operatorDirection": "Continue and complete the bounded package work in this task without another approval loop.",
+  "signedPremiseFailureCount": 2,
+  "localPackagePathFailure": {"path":"work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_EXACT_ROUTE_FAILURE_GATE.json","sha256":"EA2E3F850AF6733E27C3786424C9650F2DC4CFAEF59D7E921787D2079747FD57"},
+  "reviewFindings": [
+    "O3Q6 endpoint, runtime contract, locked inputs, exact entrypoint rehearsal, and negatives passed independently.",
+    "The O3Q6 signed ZIP is withdrawn solely because its final payload leaves exceeded path budget at two installed archive roots.",
+    "The unchanged portal verifier, publisher, and endpoint worker treat requestId as an opaque REQ_[A-Z0-9_]+ identity.",
+    "A shorter fresh O3Q7 package request ID fixes the path cause without changing endpoint bytes, detector semantics, runtime evidence, inputs, thresholds, configuration, or authority.",
+    "The full exact payload-leaf by installed-root cross-product must pass before the one O3Q7 signature."
+  ],
+  "qualifiedEndpointGate": {"path":"work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_ENDPOINT_REHEARSAL_GATE.json","sha256":"CC2E2931824679F82E57C0BE9226AA7B002A7E86DCFA023009DCA18D9F2E73FF"},
+  "requestIdConsumerEvidence": [
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Publish-SignedPortalRequest.ps1","sha256":"B9694FAD07DCD385C57F430ACF057809077938985783F795BDDF6A2B8F68FF07"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalPackage.ps1","sha256":"6CA21D7DE97EDE88F2C41F91D5B7801C688982C8C5A422987EB9528E1E9A084B"},
+    {"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"}
+  ],
+  "supportedRemedy": "B",
+  "authorizedMutation": "Assemble and sign one fresh local O3Q7 package from original pinned inputs with requestId REQ_O3Q7_20260828A only after exact route-path PASS. Do not publish or execute live.",
+  "singleMutationAttemptAuthorized": true,
+  "automaticRetryAuthorized": false,
+  "liveRequestAuthorized": false,
+  "runtimeReobservationAllowed": false,
+  "sourceImageReadAuthorized": false,
+  "taskOrExistingProcessActionAuthorized": false,
+  "providerActivationAuthorized": false,
+  "holdClearanceAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

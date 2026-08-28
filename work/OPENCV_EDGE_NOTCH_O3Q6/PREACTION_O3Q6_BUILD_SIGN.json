@@ -1,0 +1,32 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV03_O3Q6_ONE_LOCAL_SIGNED_PACKAGE_BUILD_20260828",
+  "createdUtc": "2026-08-28T17:05:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "BUILD_AND_SIGN_ONE_LOCAL_O3Q6_PROJECT_PORTAL_PACKAGE_NO_PUBLICATION",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"2B098C4E045A2A8B5AE3D5D32C40C997C03E0D4B2FA469A458644608D2590CEC"},
+    {"path":"work/ARGOS_CONTINUITY_STATE.json","sha256":"5F4F112B31DD9C04FE4AFF5CB359C2417F9E76614F68323D904981336F2B8C7B"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_RECOVERY_INTENT.json","sha256":"0355AB90538E794964A86837BB129E5084BE2E5F80AA35EEBCD7B125387D2185"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_PATH_GATE.json","sha256":"0F270B272F432FDA2AF3DC81E6AB2E1324753089F8C258DD32F67D199C471B41"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_PAYLOAD_PLAN.json","sha256":"15151B02982F59304FA1E5272E9F6002BA86F8B7CAB53364ECA9A6ADA7036CDD"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q6/MAINTENANCE_DEFINITION.json","sha256":"72559C558A2EA13DDCBDD0A2D407CE1AF739FC23962DC79B44215A3E3222CA86"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_ENDPOINT_REHEARSAL_GATE.json","sha256":"CC2E2931824679F82E57C0BE9226AA7B002A7E86DCFA023009DCA18D9F2E73FF"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_ENTRYPOINT_NEGATIVE_GATE.json","sha256":"EF42A790A9F6AB8A653B33E0908D88420A3F615D11BDC6601B388E0258B12A6E"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/New-SignedPortalPackage.ps1","sha256":"8AF7AF26B6899CB6475735FEE8AB6E5A29231AAED8EDA898F1E7F4B04A2A403F"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalPackage.ps1","sha256":"6CA21D7DE97EDE88F2C41F91D5B7801C688982C8C5A422987EB9528E1E9A084B"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/state/LAPTOP_SIGNING_IDENTITY.json","sha256":"3FD8164D1869375156FB7566D206FEAB97AE8A9E7D377B0AD4E03739ED697289"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/ARGOS_PROJECT_PORTAL_LAPTOP_SIGNER_PUBLIC.cer","sha256":"2B434D0CF6A0D6D69AAE3D280032EFF00807D423CA3B3D7F2EFC1C6BB628BFFF"},
+    {"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    {"path":"work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json","sha256":"170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"}
+  ],
+  "controls": {"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence": {"path":"work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_COLLECTION_CASE_GATE.json","sha256":"6F027F746D443104396E5B7F582359617475C78CE2F1FCB589939D0D00C7CAD6","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "legacyEvidenceException": {"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":["O3Q2","O3Q4"]},
+  "boundedAction": {"signedPackageBuildsMaximum":1,"localSigningAllowed":true,"livePublicationAuthorized":false,"sourceImageRead":false,"sourceMutation":false,"sourceDeletion":false,"taskActions":[],"processActions":[],"providerActivation":false,"holdClearance":false,"thresholdOrAlgorithmChange":false},
+  "terminalGatePlanned": "work/OPENCV_EDGE_NOTCH_O3Q6/O3Q6_FINAL_PACKAGE_GATE.json",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

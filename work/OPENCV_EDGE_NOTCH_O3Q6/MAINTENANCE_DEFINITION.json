@@ -1,0 +1,51 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 16777216,
+  "entryPoint": "payload/Invoke-O3Q6Slot16Numeric.ps1",
+  "changes": [
+    {
+      "source": "payload/tools/OCV03_NotchReviewOpenCvV1.py",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_NotchReviewOpenCvV1.py",
+      "approvedPredecessorSha256": ["6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4"],
+      "installedSha256": "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+      "allowCreate": false
+    }
+  ],
+  "entryPointMutations": [{"targetRoot":"D:/A2/o/ocv/O3Q6_20260828T164700Z","mode":"CREATE_NEW_NUMERIC_REVIEW_ONLY_OUTPUT_TREE","failureQuarantine":"D:/A2/o/ocv/O3Q6_20260828T164700Z.failed"}],
+  "entryPointOutputs": [{"path":"D:/A2/o/ocv/O3Q6_20260828T164700Z/O3Q6_RESULT.json","mode":"CREATE_NEW","schema":"argos_ocv03_o3p8_front_split_notch_result_v1","requiredState":"COMPLETE_O3P8_POST2_BF_TOPOLOGY_DF_RADIAL_REVIEW_ONLY"}],
+  "sourceProcessingContract": {
+    "sourceLeafCount": 2,
+    "sourceAliasDrive": "Q:",
+    "sourceHashesVerifiedBeforeDecode": true,
+    "sourceImageReadAuthorized": true,
+    "detectorRerunAllowed": true,
+    "thresholdOrAlgorithmChangeAllowed": false,
+    "bfMethod": "O3L8_TOP_CONNECTED_TOPOLOGY_MEASURED_CONTOUR",
+    "dfMethod": "FROZEN_R6_OUTER_EDGE_RADIAL_FULL_360",
+    "allFrozenDfSeedsRequired": true,
+    "expectedFrozenDfSeedCount": 21,
+    "backsidePixelsConsumed": false,
+    "argosRotationMetadataConsumed": false,
+    "knownNotchLocationConsumed": false,
+    "hotspotMembershipConsumed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "taskRestartAllowed": false,
+    "existingProcessActionAllowed": false,
+    "processorRestartAllowed": false,
+    "providerActivationAllowed": false,
+    "waferActionAllowed": false,
+    "holdClearanceAllowed": false
+  },
+  "timeoutContract": {"endpointWorkerOuterTimeoutSeconds":1800,"opencvChildTimeoutSeconds":1500,"outerCoversChild":true},
+  "allowedTaskActions": [],
+  "allowedProcessActions": ["START_BOUNDED_OWNED_PORTABLE_OPENCV_O3Q5_SLOT16_NUMERIC_CHILD_ONLY"],
+  "rehearsal": {"requiredState":"COMPLETE_O3Q6_NUMERIC_REVIEW_ONLY","gateState":"PASS_O3Q6_EXACT_ENTRYPOINT_REHEARSAL","gateSha256":"CC2E2931824679F82E57C0BE9226AA7B002A7E86DCFA023009DCA18D9F2E73FF"},
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}
