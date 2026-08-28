@@ -1,0 +1,42 @@
+{
+  "schema": "argos_o3tr1_local_launch_failure_gate_v1",
+  "createdUtc": "2026-08-28T12:29:26.7544826Z",
+  "state": "WITHDRAWN",
+  "revision": "O3TR1_EQUAL_OR_GREATER_LENGTH_FIXED_SCALAR_20260828",
+  "failureStage": "LOCAL_GATE_PLAN_HASH_HELPER_BEFORE_DIRECT_RUNNER_INVOCATION",
+  "errorMessage": "Get-FileHash is not recognized as the name of a cmdlet, function, script file, or operable program.",
+  "entrypoint": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TR1/Invoke-O3TR1EqualLengthRehearsal.ps1",
+    "sha256": "C798CB276581E8C5C8EAEFB81DB2223F6F327C12FF123371AD513D3424A19917"
+  },
+  "cmdWrapper": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TR1/RUN_O3TR1.cmd",
+    "sha256": "E8A5EA088F24F1C34A543790C9278D6793566945E3CE9207A1FD2AB74952AF34",
+    "executionCount": 1
+  },
+  "invocationManifest": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TR1/O3TR1_INVOCATION.json",
+    "sha256": "2D85F37A6DA8817D38723B9FA87E622704AE6F1B3263386226D311AAAABA75DA",
+    "artifactLifecycle": "FROZEN"
+  },
+  "preaction": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TR1/PREACTION_O3TR1_EQUAL_LENGTH_REHEARSAL.json",
+    "sha256": "F7E4DC515F6A6E95332AAF030021EA72C90B22A75C81D8FC5B3670DB8B634FEA",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"
+  },
+  "plannedTerminalGatePath": "work/OPENCV_EDGE_NOTCH_O3TR1/O3TR1_REHEARSAL_TERMINAL_GATE.json",
+  "plannedTerminalGateExists": false,
+  "directRunnerInvoked": false,
+  "rustDeskFocusAttempted": false,
+  "clipboardChanged": false,
+  "freshRemoteConsoleOpened": false,
+  "remoteInputSent": false,
+  "targetExecutionConfirmed": false,
+  "targetPersistentMutationPerformed": false,
+  "originalStrandedConsoleUntouched": true,
+  "retryAuthorized": false,
+  "futureReuseAllowed": false,
+  "successorRequiresFreshNamespace": true,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

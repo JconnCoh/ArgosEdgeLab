@@ -1,0 +1,51 @@
+{
+  "schema": "argos_o3tc1_fresh_console_short_trigger_invocation_v1",
+  "revision": "O3RO3_EXACT_O3RO1_PROCESS_STATE_OBSERVATION_20260828",
+  "createdUtc": "2026-08-28T13:25:27.5677533Z",
+  "artifactLifecycle": "FROZEN",
+  "projectRoot": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab",
+  "entrypoint": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TC1/Invoke-O3TC1FreshConsoleShortTrigger.ps1",
+    "sha256": "E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB"
+  },
+  "payload": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO3/O3RO3_PROCESS_STATE_PAYLOAD.ps1",
+    "sha256": "A60E6FECA5CD83178FCF576E72B6A801C33BB06C8B7D6D1B02BF3D02A43E29E8",
+    "characters": 5645
+  },
+  "terminalGatePath": "work/OPENCV_EDGE_NOTCH_O3RO3/O3RO3_TRANSPORT_TERMINAL_GATE.json",
+  "expectedComputerName": "A1025645101",
+  "rustDeskWindowTitle": "10.66.81.84",
+  "typedHostnameGate": "hostname|clip",
+  "typedPayloadTrigger": "iex(gcb -r)",
+  "maximumTypedCharacters": 32,
+  "timeoutSeconds": 60,
+  "freshConsole": {
+    "taskbarX": 337,
+    "taskbarY": 1118,
+    "fullScreenWidth": 1920,
+    "fullScreenHeight": 1200,
+    "openMethod": "MIDDLE_CLICK_PINNED_POWERSHELL_ICON"
+  },
+  "expectedResult": {
+    "schema": "argos_o3ro3_process_state_result_v1",
+    "state": "PASS_O3RO3_PROCESS_STATE_OBSERVATION",
+    "nonce": "O3RO3_PROCESS_STATE_20260828_912FB64C",
+    "scalar": "PASS_O3RO3_EXACT_PROCESS_STATE_OBSERVATION_20260828"
+  },
+  "executionContract": {
+    "maximumExecutions": 1,
+    "retryAuthorized": false,
+    "freshConsoleOnly": true,
+    "allExistingConsolesMustRemainUntouched": true,
+    "exactSource": "Win32_Process filtered to python.exe and exact O3RO1 runtime command",
+    "maximumRows": 8,
+    "callerConsumerContractPreflightPassed": true,
+    "requiredRunnerResultFields": ["taskOrProcessManagementPerformed","imageBytesRead","targetPersistentMutationPerformed"],
+    "targetPersistentMutationAllowed": false,
+    "taskOrProcessManagementAllowed": false,
+    "imageReadAllowed": false,
+    "providerActivationAllowed": false,
+    "productionRoutingAllowed": false
+  }
+}

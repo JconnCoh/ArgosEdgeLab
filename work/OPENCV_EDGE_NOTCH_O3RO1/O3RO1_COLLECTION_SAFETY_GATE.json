@@ -1,0 +1,51 @@
+{
+  "schema": "argos_o3ro1_runtime_observation_collection_safety_gate_v1",
+  "createdUtc": "2026-08-28T13:08:19.2512648Z",
+  "state": "PASS_O3RO1_RUNTIME_OBSERVATION_COLLECTION_SAFETY",
+  "artifactLifecycle": "FROZEN",
+  "collector": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/Collect-O3RO1RuntimeObservation.ps1",
+    "sha256": "A577361A2603F78C47393B955B25087EF7273C7B5157F3C3113DFE9D88157C4A",
+    "parserErrors": 0,
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "windowsPowerShell51PreflightState": "PASS_O3RO1_RUNTIME_OBSERVATION_COLLECTOR_PREFLIGHT"
+  },
+  "invocationManifest": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_COLLECTION_INVOCATION.json",
+    "sha256": "6693FBF64B555293E5E1675528878A3DBB8C91F6DCF1FE4192067C94BF797E5D",
+    "artifactLifecycle": "FROZEN"
+  },
+  "sourceInvocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_INVOCATION.json",
+    "sha256": "9CA1861B0D36657010D49A82733A4EA88AF302B9DF0D6E7BB538B25EC3D5AFA1"
+  },
+  "pathGate": {
+    "state": "PASS_PATH_BUDGET",
+    "candidateCount": 3,
+    "maximumPathLength": 115,
+    "reservedSuffixCharacters": 32,
+    "maximumEffectiveLength": 147,
+    "maximumLongestComponentLength": 35
+  },
+  "collectionContract": {
+    "transportTerminalMustPassBeforeCollect": true,
+    "exactTerminalInvocationEntrypointPayloadNonceAndScalarRequired": true,
+    "clipboardTextOnly": true,
+    "maximumClipboardCharacters": 65536,
+    "exactSchemaHostPathsHashesAndVersionsRequired": true,
+    "observationGateCreateNew": true,
+    "remoteInputAllowed": false,
+    "maximumCollections": 1,
+    "retryAuthorized": false
+  },
+  "transportTerminalExistsAtPreflight": false,
+  "observationGateExistsAtPreflight": false,
+  "clipboardReadAtPreflight": false,
+  "remoteInputSent": false,
+  "targetExecuted": false,
+  "localEvidenceWritten": false,
+  "targetPersistentMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

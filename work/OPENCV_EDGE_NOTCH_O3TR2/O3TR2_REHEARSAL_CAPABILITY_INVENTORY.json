@@ -1,0 +1,46 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-08-28T12:33:00Z",
+  "state": "PASS_ARGOS_ENDPOINT_STATIC_CAPABILITY_INVENTORY",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "routes": [
+    {
+      "type": "DIRECT_ADMIN_READ_ONLY",
+      "transport": "existing RustDesk gateway to existing Argos RDP to existing JBOD RDP",
+      "requiredComputerName": "A1025645101",
+      "originalConsolePreservationGatePath": "work/OPENCV_EDGE_NOTCH_O3TR2/O3TR2_ORIGINAL_CONSOLE_PRESERVATION_GATE.json",
+      "runnerPath": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+      "runnerSha256": "CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D",
+      "lengthGateWrapperPath": "work/OPENCV_EDGE_NOTCH_O3TR2/Invoke-O3TR2EqualLengthRehearsal.ps1",
+      "lengthGateWrapperSha256": "FC55D1022F70EDE796BA671E4B145AEFF5D894CBAE3054396FF3E7D78F99ED79",
+      "rehearsalCommandPath": "work/OPENCV_EDGE_NOTCH_O3TR2/O3TR2_FIXED_SCALAR.ps1",
+      "rehearsalCommandSha256": "5F2DB63430736AA32EA5C37E57D4D88D81855E725D2679EA061CDBB58773756B",
+      "capabilities": [
+        "freshConsoleWithoutOriginalConsoleInput",
+        "exactHostnameGate",
+        "completePastedCommandLengthCalculation",
+        "equalOrGreaterLengthFixedScalarCommand",
+        "boundedNonceAndCommandHashTextReturn",
+        "nonTruncatedExactScalarValidation",
+        "scriptLocalDotNetSha256"
+      ]
+    }
+  ],
+  "exactSources": [
+    {"path":"work/OPENCV_EDGE_NOTCH_O3TR2/O3TR2_FIXED_SCALAR.ps1","maximumRows":1,"maximumBytesRead":2047}
+  ],
+  "referenceCompletePastedCommandCharacters": 6347,
+  "rehearsalCompletePastedCommandCharacters": 6935,
+  "pasteToEnterDelayMilliseconds": 500,
+  "targetFileContentReadRequired": false,
+  "imageBytesReadRequired": false,
+  "installedCodeChangeRequired": false,
+  "helperInstallRequired": false,
+  "taskActionRequired": false,
+  "processManagementActionRequired": false,
+  "queueOrLedgerMutationRequired": false,
+  "sourceMutationRequired": false,
+  "waferActionRequired": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

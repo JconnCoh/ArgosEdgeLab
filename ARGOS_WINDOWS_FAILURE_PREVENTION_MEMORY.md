@@ -9860,3 +9860,346 @@ than rerunning it.
   operator reports a visibly present parse/runtime error.  Any fresh rehearsal
   and successor require new namespaces, exact-length gating, refreshed recovery
   and zero-recurrence evidence, and must leave the stranded console untouched.
+
+## 2026-08-28 — Function-local MyInvocation does not identify the script file
+
+- Failure signature: the first local `O3TR1` exact-length rehearsal preflight
+  passed parser, harness, wrapper, and path gates, then stopped under strict
+  mode with `The property 'Path' cannot be found on this object.` No GUI focus,
+  clipboard change, remote input, target execution, or terminal-gate write
+  occurred.
+- Cause: `Get-RehearsalPlan` evaluated `$MyInvocation.MyCommand.Path` inside a
+  function. In that scope `MyCommand` identifies the function rather than the
+  script file and does not expose the expected script `Path` property.
+- Mandatory preflight: a Windows PowerShell entry point that needs its own path
+  inside helper functions must capture the scalar `$PSCommandPath` once at
+  script scope, reject an empty value, and pass or close over that captured
+  scalar. Its exact `-Preflight` must exercise the helper before any external
+  action; parser and static harness success are insufficient.
+- Recovery: O3TR1 remains a local `DRAFT`. Correct the wrapper in place to use
+  the script-scope path, refresh its manifest hash, and rerun parser, harness,
+  wrapper, path, and exact Windows PowerShell 5.1 preflight gates. Preserve the
+  original stranded JBOD console and send no remote input until all refreshed
+  gates pass.
+
+## 2026-08-28 — Get-Command does not resolve a script through LiteralPath
+
+- Failure signature: after the O3TR1 script-scope path correction, the exact
+  local preflight again stopped before GUI focus or remote input. Windows
+  PowerShell 5.1 surfaced a null-method error; a non-mutating same-path local
+  diagnostic identified line 193, where `Get-Command -LiteralPath` could not
+  retrieve the direct runner and reported that `ArgumentList` is valid only
+  for one cmdlet or script. No terminal gate was written.
+- Cause: `Get-Command` has a `Name`-based command-discovery contract, not a
+  filesystem `LiteralPath` contract. The invalid named argument did not return
+  the one `ExternalScriptInfo` object whose parameter map the caller expected.
+- Mandatory preflight: for an exact installed script consumer, call
+  `Get-Command -Name <absolute-script-path> -CommandType ExternalScript
+  -ErrorAction Stop`, materialize the complete result as an array, require
+  exactly one row, and only then inspect its declared parameters. Do not infer
+  filesystem-style parameter names for command discovery.
+- Recovery: O3TR1 remains a local `DRAFT`; replace only the command-discovery
+  call, refresh the wrapper hash in its invocation manifest, and rerun every
+  parser, harness, wrapper, path, and exact Windows PowerShell 5.1 preflight.
+  Preserve the original stranded console and send no remote input first.
+
+## 2026-08-28 — A direct Windows PowerShell worker must not rely on Get-FileHash auto-loading
+
+- Failure signature: frozen O3TR1 passed its direct Windows PowerShell 5.1
+  script preflight, parser, harness, wrapper, path, recovery, continuity,
+  transport-inventory, and zero-recurrence gates. The exact `.cmd` launcher
+  then entered the local `-Gate` plan and stopped before invoking the direct
+  runner with `Get-FileHash is not recognized`. The planned terminal gate was
+  absent. No RustDesk focus, clipboard change, fresh remote console, JBOD
+  input, target execution, or target mutation occurred; the original stranded
+  console remained untouched.
+- Cause: the rehearsal wrapper's `Get-Sha256File` helper depended on the
+  module-exported `Get-FileHash` command. This contradicted the existing
+  project rule that exact Windows PowerShell workers must use a script-local
+  bounded .NET SHA-256 helper. A direct script preflight and a static `.cmd`
+  wrapper check did not reproduce the exact `.cmd`-launched module environment.
+- Mandatory preflight: every fresh direct-control launcher must use a
+  script-local bounded .NET SHA-256 implementation for file hashes. Its exact
+  `.cmd` must automatically invoke the target's non-mutating `-Preflight` first
+  and continue to the one-attempt gate only after PASS. The wrapper gate must
+  pin that exact flow; a direct script preflight in a different host boundary
+  is not sufficient.
+- Recovery: O3TR1 and its frozen manifest, source, wrapper, preaction, and
+  absent planned terminal gate are withdrawn and non-reusable. Do not rerun or
+  patch them. Use a fresh O3TR2 namespace with the existing unchanged direct
+  runner, a .NET hash helper, refreshed recovery/length/path/wrapper/harness/
+  continuity/transport/zero-recurrence gates, and at most one fresh-console
+  rehearsal. Preserve the original stranded console throughout.
+
+## 2026-08-28 — Complete long paste does not prove the direct runner's Enter took effect
+
+- Failure signature: frozen O3TR2 used the unchanged qualified direct runner,
+  a script-local .NET SHA-256 helper, an exact `.cmd` preflight-to-gate flow,
+  and a 6,935-character complete pasted command versus the failed O3Q2
+  command's 6,347 characters. The runner opened one fresh JBOD PowerShell
+  console and attempted the one authorized remote input, but no exact scalar,
+  nonce, or command hash returned before its 60-second boundary. The signed
+  local terminal gate records `FAIL_O3TR2_EQUAL_LENGTH_REHEARSAL`, target
+  execution unconfirmed, and no target mutation. The operator's immediate
+  visual observation then showed the fresh foreground console with the long
+  command and `;exit` suffix completely visible and the cursor still at its
+  end, with no returned prompt or visible parse/runtime error. The original
+  background console remained visible and untouched.
+- Cause: the long clipboard paste completed, but the runner's subsequent Enter
+  action did not take effect in the intended fresh console before timeout. The
+  available evidence does not distinguish a focus loss, ignored keystroke, or
+  timing defect, so no narrower cause may be assumed. Equal-or-greater pasted
+  length alone qualifies paste completion but not command submission.
+- Mandatory preflight: a future direct-control capability revision for long
+  commands must separately and deterministically prove both complete paste and
+  command submission in a fresh disposable console. The gate must identify the
+  exact focused window/console, prove that the cursor leaves the pasted input
+  through a returned nonce-bearing scalar, and fail without retry when Enter is
+  not observed to take effect. A longer delay, a second Enter, or a blind
+  keystroke is not an acceptable inference-based repair.
+- Recovery: withdraw O3TR2 and retain its terminal gate as non-reusable
+  transport evidence. Do not press Enter, clear either console, capture console
+  text, replay O3TR2, or send another fresh command. Preserve both visible
+  consoles untouched. The notch workflow has a direct-transport capability gap
+  until one separately authorized endpoint/runner capability improvement can
+  prove command submission without retry, or the operator explicitly directs a
+  bounded manual recovery after reviewing this exact state.
+
+## 2026-08-28 — A qualified short trigger does not prove a heavier payload returned
+
+- Failure signature: O3TC1 had qualified one disposable fresh-console
+  `hostname|clip` plus file-backed clipboard payload and 11-character
+  `iex(gcb -r)` trigger using native `VK_RETURN`. Frozen O3RO1 reused that
+  exact entrypoint and passed all recovery, harness, wrapper, path, continuity,
+  session, transport-inventory, and zero-recurrence gates. Its fresh console
+  returned exact hostname `A1025645101`, and the runner submitted the payload
+  trigger once, but no exact O3RO1 schema/nonce/state/scalar returned within
+  90 seconds. Two bounded local clipboard checks after timeout found the exact
+  4,069-character payload source unchanged, with no pass or failure result.
+- Cause: the terminal failure was caused by absence of a synchronized result
+  before the frozen timeout while the local clipboard remained the payload.
+  This evidence does not prove whether the short trigger failed to execute,
+  whether exact `D:\AFCV1\rt\python.exe` started and remained blocked during
+  import, or whether it exited before `clip.exe` received the result. O3TC1's
+  fixed-scalar qualification proved the transport primitive only; it did not
+  qualify the runtime cost or completion behavior of the later payload.
+- Mandatory preflight: before another runtime-version attempt, use a fresh
+  read-only namespace to observe only exact process identity, executable path,
+  command line, creation time, and running count for the O3RO1 Python command.
+  Do not touch the O3RO1 console, send a second Enter, replay its payload, or
+  infer execution from `payloadTriggerSubmitted`. Any future version query
+  must be split into bounded stages whose timeout covers independently observed
+  runtime behavior and whose exact payload always returns a compact failure
+  result for a completed PowerShell path.
+- Recovery: O3RO1 is withdrawn after one execution and cannot be retried or
+  used as a publication parent. Preserve every existing console untouched.
+  Perform at most one separately gated fresh-console process-state observation
+  with no image read, process management, installed change, or target mutation.
+  If no exact O3RO1 process is running, stop and classify command execution as
+  unproved; if one is running, continue only with non-mutating observation and
+  do not terminate or restart it.
+
+## 2026-08-28 — A result producer must implement every property its strict-mode runner reads
+
+- Failure signature: frozen O3RO2 passed payload parser/harness/Windows
+  PowerShell 5.1 preflight, runner wrapper/preflight, path, recovery, clone,
+  collection, transport-inventory, continuity/session, and zero-recurrence
+  gates. The final caller/consumer audit before execution found that the
+  payload returned `processManagementPerformed`, while the unchanged qualified
+  O3TC1 runner reads `taskOrProcessManagementPerformed`. No remote input,
+  target execution, terminal gate, observation gate, or target mutation
+  occurred.
+- Cause: the new result producer and frozen consumer used different property
+  names for the same safety assertion. Under the runner's strict mode, reading
+  the absent property would throw after a result arrived and misclassify the
+  otherwise bounded observation as a transport failure. Parser and independent
+  producer/consumer preflights did not exercise their joined result schema.
+- Mandatory preflight: before freezing any payload consumed by an unchanged
+  direct-control runner, mechanically enumerate every remote-result property
+  the exact runner reads and require the payload's success and failure objects
+  to implement that complete set with exact names and compatible types. The
+  joined fixture must exercise the exact consumer expressions under Windows
+  PowerShell 5.1 strict mode; separate source hashes and separate preflights are
+  insufficient.
+- Recovery: withdraw O3RO2 unexecuted and retain it only as non-reusable
+  evidence. Use a fresh namespace whose payload differs only by implementing
+  the exact required `taskOrProcessManagementPerformed` property in both
+  success and failure results, then refresh every dependent hash and gate. Do
+  not patch, rerun, or use O3RO2 as a parent.
+
+## 2026-08-28 — A progress marker does not bound an in-process CIM query
+
+- Failure signature: frozen O3RO3 passed the joined producer/consumer result
+  contract, exact Windows PowerShell 5.1 payload preflight, transport, wrapper,
+  harness, path, recovery, continuity/session, and zero-recurrence gates. Its
+  one authorized fresh-console execution returned the exact hostname and then
+  synchronized the exact progress schema, nonce, and computer name before the
+  process query. The same progress marker remained in the clipboard after the
+  60-second terminal boundary and again at least 36 seconds later. No terminal
+  success or compact failure result returned.
+- Cause: the payload called `Get-CimInstance Win32_Process` directly in its
+  execution thread. The outer transport timeout bounded only the local wait;
+  it could not interrupt or convert a non-returning remote CIM operation into
+  the payload's compact failure schema. The progress marker proves the short
+  trigger and payload started, so this is not an Enter, paste, or transport
+  failure.
+- Mandatory preflight: a direct observation operation must be selected from a
+  fixed typed request schema and implemented by one hash-pinned executor. Each
+  operation must declare and mechanically enforce its own timeout, maximum row
+  count, maximum field lengths, and success/failure result shape. Validate the
+  request producer, executor dispatch, every success/failure result fixture,
+  and the exact transport consumer as one joined contract before freeze. An
+  outer wait timeout or a pre-query progress marker is not operation timeout
+  evidence. Do not introduce another one-off payload for the same observation.
+- Recovery: withdraw O3RO3 after its single execution and do not retry, press
+  Enter, close its console, terminate its query, or manage any related process.
+  Preserve the progress and terminal gates as non-reusable evidence. Inventory
+  the existing project observers first; then build only the smallest reusable
+  schema-driven read-only executor needed to close the capability gap. If a
+  timeout-safe process observation cannot be proven locally under the exact
+  Windows PowerShell 5.1/.NET contract, retain process state as unknown and
+  stop before another live process or runtime query.
+
+## 2026-08-28 — OrderedDictionary keys are not PSObject property metadata
+
+- Failure signature: the draft schema-driven observer passed parser and
+  harness safety, then its first Windows PowerShell 5.1 preflight reported all
+  declared result fields missing and reported only `Count`, `Keys`, `Values`,
+  `IsReadOnly`, and other collection metadata as extra fields.
+- Cause: success and failure fixtures were ordered dictionaries. Enumerating
+  `$value.PSObject.Properties.Name` inspected the dictionary object's CLR
+  metadata rather than its schema keys, even though PowerShell's adapter still
+  permits convenient `$value.schema` access.
+- Mandatory preflight: exact-property-set validation must branch on
+  `System.Collections.IDictionary` and enumerate its `.Keys`; use
+  `PSObject.Properties.Name` only for non-dictionary objects. Exercise both a
+  deserialized JSON object and the executor's native ordered result object in
+  the joined producer/consumer preflight.
+- Recovery: because the executor and request were still local `DRAFT` bytes
+  and no clipboard, remote input, or target query occurred, correct the helper
+  in place, rerun harness safety, and repeat every result fixture. Do not
+  loosen the exact field set or convert the transport consumer to permissive
+  optional access.
+
+## 2026-08-28 — SwitchParameter arithmetic and bare JSON Booleans are not PowerShell contracts
+
+- Failure signature: two draft preflights stopped locally before their target
+  actions. One attempted `[int]$Preflight` on a `SwitchParameter`; another
+  used bare `true`/`false` tokens inside a PowerShell ordered result and tried
+  to invoke commands named `true` or `false`.
+- Cause: JSON and PowerShell syntax were mixed into the orchestration layer,
+  and switch selection was treated as numeric conversion rather than explicit
+  control flow. Parser success does not detect either runtime mistake.
+- Mandatory preflight: count selected switches with explicit `if ($Switch) {
+  $modeCount++ }` statements. PowerShell Boolean values are always `$true` and
+  `$false`; native `true`/`false` belongs only in JSON. The exact non-mutating
+  preflight must construct every returned object before any execution or
+  output write.
+- Recovery: correct only the local `DRAFT` bytes, rerun harness and wrapper
+  safety, and rerun the exact Windows PowerShell 5.1 preflight. No fresh
+  product namespace is required when no artifact was frozen, signed,
+  published, executed externally, or written to its final gate path.
+
+## 2026-08-28 — Recovery evidence state and evidence classification are separate schemas
+
+- Failure signature: the frozen O3SO1 recovery intent referenced an exact gate
+  whose own state was `WITHDRAWN`, and copied that value into the intent's
+  `failureEvidence[].state`. `Confirm-ArgosRecoveryIntent.ps1` rejected it with
+  `FAILURE_EVIDENCE_CLASS_INVALID` and `LOCAL_FAILURE_COUNT_UNPROVED` before a
+  payload build or remote input.
+- Cause: the referenced artifact state was confused with the recovery-intent
+  evidence classification. The gate must itself contain state `WITHDRAWN`,
+  while its record inside `failureEvidence` must declare the validator's class
+  `WITHDRAWN_LOCAL_REHEARSAL_FAILURE` so it contributes to the mechanically
+  proved local-failure count.
+- Mandatory preflight: before setting a recovery intent to `FROZEN`, enumerate
+  the exact accepted evidence classes from the pinned validator and test every
+  referenced gate's own state separately. Keep the intent `DRAFT` until this
+  exact preflight passes; source-file existence and hash equality do not prove
+  evidence-class compatibility.
+- Recovery: withdraw O3SO1 because its intent was already marked `FROZEN`.
+  Create a fresh O3SO2 namespace, classify every withdrawn local gate as
+  `WITHDRAWN_LOCAL_REHEARSAL_FAILURE`, increment the proved local-failure count,
+  and rerun recovery preflight before creating a request or payload. Preserve
+  the independently qualified generic observer schemas/executor; do not use
+  any O3SO1 artifact as an execution or publication parent.
+
+## 2026-08-28 — A nested executor preflight does not satisfy the generated entrypoint contract
+
+- Failure signature: O3SO2's payload builder passed its own harness/wrapper
+  checks, joined schema rehearsal, exact request validation, path budget, and
+  zero-recurrence gate, then created the frozen combined payload. Guarding that
+  exact generated `.ps1` reported `MISSING_NON_MUTATING_MODE`: the embedded
+  executor declared `-Preflight`, but the generated file's top level declared
+  no parameters or preflight return guard. No remote input occurred.
+- Cause: builder preflight validated the nested executor and the combined
+  syntax, but did not apply the mandatory harness guard to the exact generated
+  entrypoint shape before writing frozen output. Static harness discovery does
+  not treat a parameter block nested inside an invoked scriptblock as the
+  outer entrypoint's non-mutating mode.
+- Mandatory preflight: a generated direct-observation payload must itself
+  declare a top-level `-Preflight` switch, keep the executor in one scriptblock,
+  route top-level preflight to the nested executor's preflight and return, and
+  use the unchanged no-argument path only for the qualified short trigger's
+  live execution. Before freezing, construct those exact bytes in memory and
+  require the same top-level parameter and return-guard shape that the harness
+  will inspect; after build, guard the exact file again.
+- Recovery: withdraw O3SO2 and preserve its payload/build gate as non-reusable
+  evidence. Keep the request/result schemas and executor V1, which passed their
+  independent gates. Create a fresh composer V2 and O3SO3 namespace; never use
+  the O3SO2 payload or composer V1 as a template or execution parent.
+
+## 2026-08-28 — Escaped drive-path tails can look like synthetic UNC roots to clone remediation
+
+- Failure signature: O3SO3's exact generated payload passed parser, harness,
+  top-level preflight, and rehearsal. Clone-literal preflight correctly found
+  the added real root `D:\AFCV1`, but also classified the JSON-escaped tail
+  `\\rt\python.exe` inside `D:\\AFCV1\\rt\\python.exe` as a second
+  UNC-looking root. The R1 manifest declared only the real drive root and was
+  conservatively rejected before remote input.
+- Cause: clone-remediation drive detection normalizes repeated backslashes,
+  while its UNC detector separately inspects the original escaped source text.
+  A JSON-escaped Windows drive path can therefore yield both its real drive
+  root and a synthetic UNC-looking suffix token.
+- Mandatory preflight: when a generated PowerShell payload embeds JSON paths,
+  run clone remediation in preflight and mechanically inventory every reported
+  root. Declare the real drive root and any exact synthetic escaped-tail token
+  separately; do not treat the synthetic token as a real route, share, or
+  authorization boundary. Keep the generated bytes unchanged.
+- Recovery: preserve the failed R1 invocation. This is a conservative guard
+  false positive with no target execution, so retain O3SO3 and create a fresh
+  R2 remediation manifest that classifies both `D:\AFCV1` and the exact
+  synthetic `\\rt\python.exe` token as `ADDED`; rerun preflight and the
+  create-new evidence gate before any transport execution.
+
+## 2026-08-28 — CIM operation timeout is not a hard wall-clock boundary
+
+- Failure signature: the schema-driven O3SO3 process observer passed exact
+  request/result schema, Windows PowerShell 5.1 ZERO/ONE/MANY/ERROR/TIMEOUT,
+  wrapper, harness, clone-remediation, path, recovery, continuity/session, and
+  zero-recurrence gates. Its one authorized JBOD execution returned the exact
+  progress schema, nonce, request hash, operation, and computer name, but no
+  terminal result within the 60-second transport boundary. The 8-second
+  `Get-CimInstance -OperationTimeoutSec` request budget did not return control
+  to the executor's stopwatch/catch boundary.
+- Cause: `OperationTimeoutSec` configures the CIM operation but is not an
+  externally enforced hard wall-clock cancellation boundary for a locally
+  blocked `Get-CimInstance Win32_Process` call. A stopwatch checked before and
+  after a synchronous cmdlet cannot interrupt the cmdlet while it is blocked.
+  Local fixture TIMEOUT success therefore did not prove the exact live Windows
+  provider call would return within that budget.
+- Mandatory preflight: a live observer must not claim hard timeout behavior
+  from `OperationTimeoutSec`, a stopwatch, or synthetic fixtures alone. Before
+  reuse, the exact provider call must pass an environment-authentic terminal
+  timing gate, or the provider must run behind a separately authorized,
+  ownership-pinned, externally enforceable isolation boundary whose timeout
+  cleanup is itself within authority. Emit stage-specific progress before
+  every potentially blocking provider/property call so terminal absence can
+  be localized without a retry.
+- Recovery: withdraw O3SO3 after its single execution and never retry or use
+  its generated payload, composer, or executor as a live execution parent.
+  Do not touch its fresh console or any process it may own. Preserve the exact
+  progress marker and failed terminal gate as read-only evidence. Retain O3RO1
+  process state and command execution as unknown and stop before another live
+  process query, runtime-version attempt, or numeric successor unless a
+  separately authorized timeout-isolated endpoint capability is available.

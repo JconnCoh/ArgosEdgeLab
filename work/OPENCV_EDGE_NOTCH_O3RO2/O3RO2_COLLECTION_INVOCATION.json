@@ -1,0 +1,56 @@
+{
+  "schema": "argos_o3ro2_process_state_collection_invocation_v1",
+  "revision": "O3RO2_PROCESS_STATE_OBSERVATION_COLLECTION_20260828",
+  "createdUtc": "2026-08-28T13:19:51.9014582Z",
+  "artifactLifecycle": "FROZEN",
+  "projectRoot": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab",
+  "collectionInvocationPath": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_COLLECTION_INVOCATION.json",
+  "collector": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/Collect-O3RO2ProcessStateObservation.ps1",
+    "sha256": "FE22F6E25D955C3E133E76B9DCA18A6CFAF05A4131BE5726DA20933858633690"
+  },
+  "entrypoint": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TC1/Invoke-O3TC1FreshConsoleShortTrigger.ps1",
+    "sha256": "E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB"
+  },
+  "sourceInvocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_INVOCATION.json",
+    "sha256": "C3BCAD177CA9936CEAF5D4ECE7EB3405CFBC3CE7C6CB9B6C7045259B220DCEED"
+  },
+  "payload": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_PROCESS_STATE_PAYLOAD.ps1",
+    "sha256": "ED835FE679839E71FB5562FECB0566148ED08D03C1912FF12B2B541330425B6C"
+  },
+  "transportTerminal": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_TRANSPORT_TERMINAL_GATE.json",
+    "mustExistForCollect": true
+  },
+  "observationGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_OBSERVATION_GATE.json",
+    "createNew": true
+  },
+  "expected": {
+    "schema": "argos_o3ro2_process_state_result_v1",
+    "state": "PASS_O3RO2_PROCESS_STATE_OBSERVATION",
+    "nonce": "O3RO2_PROCESS_STATE_20260828_6C41E7B2",
+    "scalar": "PASS_O3RO2_EXACT_PROCESS_STATE_OBSERVATION_20260828",
+    "computerName": "A1025645101",
+    "executablePath": "D:\\AFCV1\\rt\\python.exe",
+    "commandMarker": "import json,platform,cv2,numpy as np",
+    "maximumRows": 8,
+    "maximumCommandLineCharacters": 2048
+  },
+  "collectionContract": {
+    "maximumCollections": 1,
+    "remoteInputAllowed": false,
+    "clipboardTextOnly": true,
+    "maximumClipboardCharacters": 65536,
+    "zeroOneManyRowsSupported": true,
+    "localCreateNewEvidenceOnly": true,
+    "processManagementAllowed": false,
+    "targetPersistentMutationAllowed": false,
+    "retryAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

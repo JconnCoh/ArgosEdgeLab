@@ -1,0 +1,73 @@
+{
+    "schema":  "argos_direct_observer_local_gate_v1",
+    "createdUtc":  "2026-08-28T13:44:37.7338321Z",
+    "state":  "PASS_ARGOS_DIRECT_OBSERVER_LOCAL_SCHEMA_AND_PROVIDER_GATE",
+    "invocationManifestSha256":  "8100D532DB7A9039793AFBED79EA6DC68F55CAC403F93E6C4FDFCEDD91A5E919",
+    "executorSha256":  "7F2051AC0EA16BE0D20E3EEEC86FBFBE9F4E5C982EF17E0EB1F7F2F877A8545C",
+    "requestSha256":  "2D96E7D0561B289DCD77A7D35E0B69B2846942A2BA6B87085524B2CD2E41BF16",
+    "requestSchemaSha256":  "EAF4AE35296570B95DF885F9AC88D980BFFFED3AC657F1E1642BA3A2F1D8D50F",
+    "resultSchemaSha256":  "B8FDE1122A182ABB7B2D96C79230CEC9C0591D5DC259FF409DF90FB0B3AD615A",
+    "preflightCaseIds":  [
+                             "ERROR",
+                             "MANY",
+                             "ONE",
+                             "TIMEOUT",
+                             "ZERO"
+                         ],
+    "rehearsals":  [
+                       {
+                           "caseId":  "ZERO",
+                           "state":  "PASS_ARGOS_DIRECT_OBSERVATION",
+                           "operationState":  "OBSERVED",
+                           "rowCount":  0,
+                           "safetyFieldsFalse":  true
+                       },
+                       {
+                           "caseId":  "ONE",
+                           "state":  "PASS_ARGOS_DIRECT_OBSERVATION",
+                           "operationState":  "OBSERVED",
+                           "rowCount":  1,
+                           "safetyFieldsFalse":  true
+                       },
+                       {
+                           "caseId":  "MANY",
+                           "state":  "PASS_ARGOS_DIRECT_OBSERVATION",
+                           "operationState":  "OBSERVED",
+                           "rowCount":  3,
+                           "safetyFieldsFalse":  true
+                       },
+                       {
+                           "caseId":  "ERROR",
+                           "state":  "FAIL_ARGOS_DIRECT_OBSERVATION",
+                           "operationState":  "ERROR",
+                           "rowCount":  0,
+                           "safetyFieldsFalse":  true
+                       },
+                       {
+                           "caseId":  "TIMEOUT",
+                           "state":  "FAIL_ARGOS_DIRECT_OBSERVATION",
+                           "operationState":  "TIMEOUT",
+                           "rowCount":  0,
+                           "safetyFieldsFalse":  true
+                       }
+                   ],
+    "liveProvider":  {
+                         "executionCount":  1,
+                         "state":  "PASS_ARGOS_DIRECT_OBSERVATION",
+                         "operationState":  "OBSERVED",
+                         "operationTimeoutSeconds":  8,
+                         "candidateProcessCount":  4,
+                         "exactExecutablePathProcessCount":  4,
+                         "exactMatchCount":  1,
+                         "observedProcessId":  20012,
+                         "exactExecutorCommandLineObserved":  true
+                     },
+    "clipboardChanged":  false,
+    "remoteInputSent":  false,
+    "taskOrProcessManagementPerformed":  false,
+    "imageBytesRead":  false,
+    "sourceMutationPerformed":  false,
+    "targetPersistentMutationPerformed":  false,
+    "providerActivationPerformed":  false,
+    "productionRoutingEnabled":  false
+}

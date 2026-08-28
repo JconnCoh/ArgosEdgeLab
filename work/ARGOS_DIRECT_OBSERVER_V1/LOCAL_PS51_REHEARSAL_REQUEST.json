@@ -1,0 +1,29 @@
+{
+  "schema": "argos_direct_observation_request_v1",
+  "revision": "ARGOS_DIRECT_OBSERVER_V1_LOCAL_PS51_REHEARSAL_20260828",
+  "requestSchemaSha256": "EAF4AE35296570B95DF885F9AC88D980BFFFED3AC657F1E1642BA3A2F1D8D50F",
+  "resultSchemaSha256": "B8FDE1122A182ABB7B2D96C79230CEC9C0591D5DC259FF409DF90FB0B3AD615A",
+  "nonce": "ARGOS_DIRECT_OBSERVER_LOCAL_20260828_01",
+  "expectedComputerName": "TXSH-LUPW0JLTPR",
+  "operation": "WINDOWS_PROCESS_SNAPSHOT",
+  "operationTimeoutSeconds": 8,
+  "maximumRows": 16,
+  "maximumFieldCharacters": 4096,
+  "expectedScalar": "PASS_ARGOS_DIRECT_OBSERVER_LOCAL_PS51_REHEARSAL_20260828",
+  "parameters": {
+    "processName": "powershell.exe",
+    "exactExecutablePath": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "commandLineContains": "Invoke-ArgosDirectObservation.ps1"
+  },
+  "authority": {
+    "reviewOnly": true,
+    "taskOrProcessManagementAllowed": false,
+    "imageReadAllowed": false,
+    "sourceMutationAllowed": false,
+    "targetPersistentMutationAllowed": false,
+    "providerActivationAllowed": false,
+    "productionRoutingAllowed": false,
+    "retryAuthorized": false,
+    "maximumExecutions": 1
+  }
+}

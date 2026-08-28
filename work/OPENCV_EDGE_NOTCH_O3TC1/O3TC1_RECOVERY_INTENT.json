@@ -1,0 +1,111 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T12:52:57.7558813Z",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 2,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_SIGNED_TERMINAL_RESPONSE_GATE.json",
+        "sha256": "56D64F2F287477E3307BA6111AEA7C89E7B3CEADF408476F7AD9E25A5D320769",
+        "state": "FAILED"
+      },
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3TR1/O3TR1_LOCAL_LAUNCH_FAILURE_GATE.json",
+        "sha256": "4BA0E4B1404946EB69D1DE73F748AFC357B5A8F8016522F45981BF8FA98452EE",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      },
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3TR2/O3TR2_WITHDRAWAL_GATE.json",
+        "sha256": "D3B2A98F0A49BA34279E7488A9394E96D1C8D9600F971B04F737054079CC6D99",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"","sha256":""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_ADMIN_READ_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path":"","sha256":""},
+    "installedConfigEvidence": {"path":"","sha256":""},
+    "capabilityEvidence": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_CAPABILITY_INVENTORY.json",
+      "sha256": "7C09398E1E12E27837CB0BD078BF56382F0A1DFB5122B046F3DDD47432E6BA33"
+    },
+    "qualifiedEndpointGate": {"path":"","sha256":""},
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_AUTHORIZATION_GATE.json",
+      "sha256": "1F215110438BEC79BC8703F4AD04576BA7E9ED83C9274CC567724E915AF81E23"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_FIXED_SCALAR_PAYLOAD.ps1",
+        "sourceSchema": "hash-pinned fixed-scalar payload returning exact JSON through clipboard",
+        "selector": "one disposable fresh console on exact hostname A1025645101",
+        "uniquenessKey": "nonce+payloadSha256",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": [
+      "openOneDisposableFreshConsoleWithoutInputToExistingConsoles",
+      "typeExactThirteenCharacterHostnameGate",
+      "verifyExactHostnameThroughClipboardReturn",
+      "transferHashPinnedFileBackedPayloadThroughExistingClipboardSynchronization",
+      "typeExactElevenCharacterPayloadTrigger",
+      "submitThroughNativeVkReturnKeyDownKeyUp",
+      "returnExactSchemaNonceHostnameStateAndScalar"
+    ],
+    "requestedFields": [
+      "computerName",
+      "nonce",
+      "state",
+      "scalar",
+      "hostnameGatePassed",
+      "payloadTriggerSubmitted",
+      "targetPersistentMutationPerformed"
+    ],
+    "decisionOptions": ["A","B","C","D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path":"","sha256":""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "scope": {
+    "sameRequestReplayAllowed": false,
+    "requestRetryAuthorized": false,
+    "maximumObservationExecutions": 1,
+    "targetWriteAllowed": false,
+    "taskOrProcessManagementAllowed": false,
+    "providerActivationAllowed": false,
+    "protectedProcessorChangeAllowed": false,
+    "existingStrandedConsoleInputAllowed": false,
+    "disposableFreshConsoleOnly": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

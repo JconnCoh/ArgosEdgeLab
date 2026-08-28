@@ -1,0 +1,109 @@
+{
+  "schema": "argos_o3ro2_local_safety_gate_v1",
+  "createdUtc": "2026-08-28T13:20:47.4736890Z",
+  "state": "PASS_O3RO2_LOCAL_SAFETY_GATES",
+  "artifactLifecycle": "FROZEN",
+  "qualifiedTransport": {
+    "entrypointPath": "work/OPENCV_EDGE_NOTCH_O3TC1/Invoke-O3TC1FreshConsoleShortTrigger.ps1",
+    "entrypointSha256": "E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB",
+    "qualificationGatePath": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_TERMINAL_GATE.json",
+    "qualificationGateSha256": "3FD025F1B64702D5A8183D3C8F405E74D7616310715857ED3911BF8A4FA4EFA8",
+    "qualificationState": "PASS_O3TC1_FRESH_CONSOLE_SHORT_TRIGGER",
+    "o3tc1RerunAllowed": false
+  },
+  "recoveryIntent": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_RECOVERY_INTENT.json",
+    "sha256": "85B61026D4449E779FE1469417BB083BA4B4FF25392F7A25BA470442503665A8",
+    "preflightState": "PASS_ARGOS_RECOVERY_INTENT",
+    "mode": "OBSERVE",
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 3,
+    "mutationStopLossActive": false
+  },
+  "authorization": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_AUTHORIZATION_GATE.json",
+    "sha256": "DB8598F23D5EFF967A4BE12996FE72BA05902AFD60E815CB13C08F58A61D1D77",
+    "readOnly": true,
+    "taskActionsAllowed": false,
+    "processActionsAllowed": false,
+    "installedChangesAllowed": false,
+    "maximumExecutions": 1,
+    "retryAuthorized": false
+  },
+  "capabilityInventory": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_CAPABILITY_INVENTORY.json",
+    "sha256": "E88BD35F6A69B51565A7694E4F15D2D59E8F3F4FD6F1CF3EE65A6CB7A29199A7",
+    "state": "PASS_O3RO2_STATIC_CAPABILITY_INVENTORY"
+  },
+  "payload": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_PROCESS_STATE_PAYLOAD.ps1",
+    "sha256": "ED835FE679839E71FB5562FECB0566148ED08D03C1912FF12B2B541330425B6C",
+    "characters": 4279,
+    "parserErrors": 0,
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "windowsPowerShell51PreflightState": "PASS_O3RO2_PROCESS_STATE_PAYLOAD_PREFLIGHT"
+  },
+  "invocationManifest": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_INVOCATION.json",
+    "sha256": "C3BCAD177CA9936CEAF5D4ECE7EB3405CFBC3CE7C6CB9B6C7045259B220DCEED",
+    "artifactLifecycle": "FROZEN",
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "windowsPowerShell51PreflightState": "PASS_O3TC1_FRESH_CONSOLE_SHORT_TRIGGER_PREFLIGHT"
+  },
+  "collector": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/Collect-O3RO2ProcessStateObservation.ps1",
+    "sha256": "FE22F6E25D955C3E133E76B9DCA18A6CFAF05A4131BE5726DA20933858633690",
+    "collectionInvocationPath": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_COLLECTION_INVOCATION.json",
+    "collectionInvocationSha256": "B4F1017C4034F503E156504BAA416C7D4B6807DAC71C17C867377E9ABA32FBD3",
+    "collectionSafetyGatePath": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_COLLECTION_SAFETY_GATE.json",
+    "collectionSafetyGateSha256": "3DD13FF5AF57590B6E76D389E3967E5E87828DB9AD8262FDB0161FEC10E1398B"
+  },
+  "cloneLiteralRemediation": {
+    "manifestPath": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256": "EF36FFD77B3FFC0103A3309C9FAB251EC37903404DF54C9E9D98AF975143B777",
+    "gatePath": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_CLONE_LITERAL_REMEDIATION_GATE.json",
+    "gateSha256": "BC03673A2F4771940DFE5A9F5ABB0A071CE810A2D9CA9D68E5D7E99716174ACA",
+    "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"
+  },
+  "processObservationContract": {
+    "requiredComputerName": "A1025645101",
+    "processName": "python.exe",
+    "exactExecutablePath": "D:/AFCV1/rt/python.exe",
+    "exactCommandMarker": "import json,platform,cv2,numpy as np",
+    "maximumRows": 8,
+    "maximumCommandLineCharacters": 2048,
+    "progressMarkerWrittenBeforeQuery": true,
+    "processManagementAllowed": false,
+    "imageBytesReadAllowed": false,
+    "sourceMutationAllowed": false,
+    "targetPersistentMutationAllowed": false
+  },
+  "pathGate": {
+    "state": "PASS_PATH_BUDGET",
+    "candidateCount": 7,
+    "maximumPathLength": 120,
+    "reservedSuffixCharacters": 32,
+    "maximumEffectiveLength": 152,
+    "maximumLongestComponentLength": 40
+  },
+  "transportInputContract": {
+    "fileBackedClipboardPayload": true,
+    "typedHostnameGate": "hostname|clip",
+    "typedPayloadTrigger": "iex(gcb -r)",
+    "nativeEnterKey": "VK_RETURN_0x0D_KEYDOWN_KEYUP",
+    "freshConsoleOnly": true,
+    "allExistingConsolesMustRemainUntouched": true,
+    "maximumExecutions": 1,
+    "retryAuthorized": false
+  },
+  "plannedTerminalGatePath": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_TRANSPORT_TERMINAL_GATE.json",
+  "plannedTerminalGateExists": false,
+  "plannedObservationGatePath": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_OBSERVATION_GATE.json",
+  "plannedObservationGateExists": false,
+  "remoteInputSent": false,
+  "targetExecuted": false,
+  "processManagementPerformed": false,
+  "targetPersistentMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

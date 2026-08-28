@@ -1,0 +1,39 @@
+{
+  "schema": "argos_o3tr2_post_timeout_operator_console_state_gate_v1",
+  "createdUtc": "2026-08-28T12:41:05.1319279Z",
+  "state": "CONFIRMED_SECOND_FRESH_CONSOLE_STRANDED_LONG_COMMAND_CURSOR_AT_END",
+  "revision": "O3TR2_EQUAL_OR_GREATER_LENGTH_FIXED_SCALAR_REHEARSAL_20260828",
+  "observationSource": "OPERATOR_PROVIDED_VISUAL_OBSERVATION_IN_CURRENT_CODEX_TASK",
+  "observationMethod": "VISUAL_ONLY_NO_SCREENSHOT_BINARY_READ_OR_CAPTURE",
+  "endpointContextVisible": {
+    "argosSessionHost": "10.20.70.241",
+    "jbodSessionHost": "172.16.0.10"
+  },
+  "consoleInventory": {
+    "originalBackgroundConsoleStillVisible": true,
+    "freshForegroundConsoleVisible": true,
+    "freshForegroundConsoleContainsLongEncodedCommand": true,
+    "freshForegroundConsoleShowsExitSuffix": true,
+    "freshForegroundConsoleCursorAtEnd": true,
+    "freshForegroundConsoleReturnedPromptVisible": false,
+    "freshForegroundConsoleParseOrRuntimeErrorVisible": false
+  },
+  "terminalGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TR2/O3TR2_REHEARSAL_TERMINAL_GATE.json",
+    "sha256": "3EB274C682E1DB7CF5329230A29F029221031F62653A24524C2573696FD9147B",
+    "state": "FAIL_O3TR2_EQUAL_LENGTH_REHEARSAL",
+    "remoteInputAttempted": true,
+    "targetExecutionConfirmed": false,
+    "resultReturned": false
+  },
+  "classification": "PASTE_COMPLETED_BUT_ENTER_DID_NOT_TAKE_EFFECT_BEFORE_RUNNER_TIMEOUT",
+  "pressEnterAuthorized": false,
+  "clearConsoleAuthorized": false,
+  "captureConsoleTextEligible": false,
+  "retryAuthorized": false,
+  "bothVisibleConsolesMustRemainUntouched": true,
+  "directTransportCapabilityGapRetained": true,
+  "targetPersistentMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

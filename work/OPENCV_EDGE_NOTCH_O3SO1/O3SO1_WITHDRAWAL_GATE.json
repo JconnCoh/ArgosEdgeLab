@@ -1,0 +1,31 @@
+{
+  "schema": "argos_o3so1_withdrawal_gate_v1",
+  "createdUtc": "2026-08-28T13:48:33.8142447Z",
+  "state": "WITHDRAWN",
+  "revision": "O3SO1_SCHEMA_DRIVEN_O3RO1_PROCESS_STATE_OBSERVATION_20260828",
+  "artifactLifecycle": "WITHDRAWN",
+  "failedFrozenArtifact": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3SO1/O3SO1_RECOVERY_INTENT.json",
+    "sha256": "EBF532C3D10C98048052687577B7D5A207B2A691F254E10C593E8EFA8B6F3624"
+  },
+  "failure": {
+    "gate": "Confirm-ArgosRecoveryIntent.ps1 -Preflight",
+    "violations": ["FAILURE_EVIDENCE_CLASS_INVALID", "LOCAL_FAILURE_COUNT_UNPROVED"],
+    "causeClass": "RECOVERY_INTENT_EVIDENCE_CLASS_LABEL_DID_NOT_MATCH_VALIDATOR_CONTRACT",
+    "targetExecutionAttempted": false,
+    "payloadBuilt": false,
+    "remoteInputSent": false
+  },
+  "reuse": {
+    "executionParentAllowed": false,
+    "publicationParentAllowed": false,
+    "intentTemplateAllowed": false,
+    "terminalEvidenceRetentionAllowed": true
+  },
+  "taskOrProcessManagementPerformed": false,
+  "imageBytesRead": false,
+  "sourceMutationPerformed": false,
+  "targetPersistentMutationPerformed": false,
+  "providerActivationPerformed": false,
+  "productionRoutingEnabled": false
+}

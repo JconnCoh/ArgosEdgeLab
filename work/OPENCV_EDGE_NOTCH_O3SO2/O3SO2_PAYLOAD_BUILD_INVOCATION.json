@@ -1,0 +1,40 @@
+{
+  "schema": "argos_direct_observer_payload_build_invocation_v1",
+  "createdUtc": "2026-08-28T13:50:15.7422231Z",
+  "artifactLifecycle": "FROZEN",
+  "projectRoot": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab",
+  "builder": {
+    "path": "work/ARGOS_DIRECT_OBSERVER_V1/New-ArgosDirectObservationPayload.ps1",
+    "sha256": "9746AB3D35845A02558774930B17EA346E6657D037405D19FCD31FA83438D4F6"
+  },
+  "executor": {
+    "path": "work/ARGOS_DIRECT_OBSERVER_V1/Invoke-ArgosDirectObservation.ps1",
+    "sha256": "7F2051AC0EA16BE0D20E3EEEC86FBFBE9F4E5C982EF17E0EB1F7F2F877A8545C"
+  },
+  "request": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3SO2/O3SO2_PROCESS_STATE_REQUEST.json",
+    "sha256": "76590974FB0C173E469DB6BCABD200A0CAE1187AC5A80782C14E4C87314D5FFE"
+  },
+  "transportRunner": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TC1/Invoke-O3TC1FreshConsoleShortTrigger.ps1",
+    "sha256": "E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB"
+  },
+  "outputPath": "work/OPENCV_EDGE_NOTCH_O3SO2/O3SO2_SCHEMA_DRIVEN_PROCESS_STATE_PAYLOAD.ps1",
+  "buildGatePath": "work/OPENCV_EDGE_NOTCH_O3SO2/O3SO2_PAYLOAD_BUILD_GATE.json",
+  "maximumPayloadCharacters": 32768,
+  "expectedResult": {
+    "schema": "argos_direct_observation_result_v1",
+    "state": "PASS_ARGOS_DIRECT_OBSERVATION",
+    "nonce": "O3SO2_PROCESS_STATE_20260828_1E7D62DA",
+    "scalar": "PASS_O3SO2_EXACT_O3RO1_PROCESS_STATE_SCHEMA_OBSERVATION_20260828"
+  },
+  "authority": {
+    "maximumExecutions": 1,
+    "retryAuthorized": false,
+    "remoteInputAllowedDuringBuild": false,
+    "taskOrProcessManagementAllowed": false,
+    "imageReadAllowed": false,
+    "targetPersistentMutationAllowed": false,
+    "productionRoutingAllowed": false
+  }
+}

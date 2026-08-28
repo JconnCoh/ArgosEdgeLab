@@ -1,8 +1,45 @@
-# Active ArgosEdgeLab state - OCV-03 O3Q2 direct runtime observation timeout / operator-console hold - 2026-08-28
+# Active ArgosEdgeLab state - OCV-03 O3SO3 schema observer process-API timeout / capability gap - 2026-08-28
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3SO3 schema observer process-API timeout / capability gap — 2026-08-28
+
+The reusable schema-driven process observer passed its exact request/result
+schemas, Windows PowerShell 5.1 ZERO/ONE/MANY/ERROR/TIMEOUT fixtures, generated
+top-level preflight, wrapper, harness, clone-remediation, path, recovery,
+continuity/session, and zero-recurrence gates. O3SO3 then executed once through
+the qualified fresh-console short trigger and returned exact hostname
+`A1025645101` plus its exact progress schema/nonce/request hash.
+
+No terminal result returned within 60 seconds. Terminal-gate SHA-256 is
+`F4F8BCC7747735FE35CA3B030EEAD21F433BAF698B7B349B3EC7E31B56BC8722`;
+post-timeout exact-progress gate SHA-256 is
+`EA606C70261C348938B928C86DCEB9D853E1DE6E7701B0B391A364E97ABF7A85`.
+This proves the schema payload started on JBOD, but the synchronous Windows
+process provider did not return. `OperationTimeoutSec` did not provide a hard
+wall-clock boundary that the executor could enforce.
+
+O3SO3 is withdrawn/no-retry/non-parent at SHA-256
+`F24C0DB2D3EE656D520BA059FB101047EA172D6116A06B8D797D6598761B988D`.
+The generic executor/composer is withdrawn for live
+`WINDOWS_PROCESS_SNAPSHOT`; its local fixture evidence remains diagnostic.
+No collector ran, and O3RO1 process state, command execution, and runtime
+versions remain unknown. No existing console/process was touched or managed.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3SO3_SCHEMA_OBSERVER_PROCESS_API_TIMEOUT_CAPABILITY_GAP_20260828.md`,
+SHA-256 `6FB7BF866E29095037C17E2993EF8033FA1674C202C9B1809572500175D212F9`.
+
+Do not launch another live process/runtime observer through the withdrawn
+synchronous provider path. A separately authorized timeout-isolated endpoint
+capability or an already installed qualified exact read-only route is required
+before runtime-version evidence and a fresh numeric Slot16 successor. Frontside
+remains incomplete; backside, fanout, and fiducial resume remain blocked. All
+provider, processor, source, task/process, threshold/algorithm, retry, hold,
+XML, training, production, fiducial, and alignment-transfer restrictions
+remain.
 
 ## OCV-03 O3Q2 direct runtime observation timeout / operator-console hold — 2026-08-28
 
@@ -8415,3 +8452,95 @@ holds, XML, training, and production routing remain untouched or disabled.
 BF Slot16 partial coverage and all fiducial designation, map, pose,
 registration, coverage, sensitivity, and independent alignment-transfer gates
 remain pending.
+
+## 2026-08-28 — OCV-03 O3TR2 complete long paste / Enter not effective / direct-transport capability gap
+
+O3TR2 executed once through the unchanged qualified direct runner after exact
+Windows PowerShell 5.1, wrapper, harness, path, recovery, transport,
+continuity/session, clone-literal, and zero-recurrence gates passed. Its 6,935
+complete pasted characters exceeded the failed O3Q2 observation's 6,347, with
+the same 500-millisecond paste-to-Enter delay. The runner attempted remote
+input but returned no nonce, command hash, state, or scalar before 60 seconds.
+Terminal-gate SHA-256 is
+`3EB274C682E1DB7CF5329230A29F029221031F62653A24524C2573696FD9147B`.
+O3TR2 is withdrawn and cannot be retried.
+
+The operator's immediate visual observation showed the fresh foreground JBOD
+PowerShell console with the long command and `;exit` suffix completely visible
+and its cursor still at the end, with no returned prompt or visible error. The
+original background console also remained visible and untouched. This proves
+complete paste but not command submission. The exact state gate is
+`36293FCA041BCE94D78CE9BA24ED156AAA09AC5586C73A84619AF8D2B42659C0`.
+Both consoles must remain untouched.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3TR2_EQUAL_LENGTH_PASTE_COMPLETE_ENTER_NOT_EFFECTIVE_DIRECT_TRANSPORT_CAPABILITY_GAP_20260828.md`,
+SHA-256 `C019999148F8EBDB42E5BDDD07517880266FF671696DD525E07E869FDCF4DD21`.
+
+Exact next action: under the operator's standing approval, inspect only the
+existing runner's focus/Enter-submission implementation and design the smallest
+separately gated capability improvement without sending GUI input. Any live
+qualification must use a fresh namespace and disposable fresh console, return
+an exact nonce-bearing scalar, run once with no retry, and preserve both
+current stranded consoles. Runtime-version observation and any fresh numeric
+successor remain blocked until that transport qualification passes. Frontside
+is incomplete; backside, fanout, fiducial resume, provider/processor action,
+source action, threshold/algorithm change, hold clearance, XML, training, and
+production routing remain blocked or disabled.
+
+## 2026-08-28 — OCV-03 O3TC1 short-trigger transport qualified / runtime observation next
+
+O3TC1 reused the previously successful file-backed clipboard-payload plus
+short typed-trigger route and the existing fresh-console opener. In one
+disposable fresh console it typed `hostname|clip`, submitted native
+`VK_RETURN`, received exact `A1025645101`, synchronized the exact payload,
+typed `iex(gcb -r)`, submitted native `VK_RETURN`, and received the exact
+schema, nonce, state, and scalar. It did not paste a long command.
+
+Terminal-gate SHA-256 is
+`3FD025F1B64702D5A8183D3C8F405E74D7616310715857ED3911BF8A4FA4EFA8`.
+Neither stranded console received input; no persistent target mutation,
+task/process management, or image read occurred. O3TC1 completed once and may
+not be rerun. O3TR2 withdrawal SHA-256 is
+`D3B2A98F0A49BA34279E7488A9394E96D1C8D9600F971B04F737054079CC6D99`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3TC1_SHORT_TRIGGER_TRANSPORT_QUALIFIED_RUNTIME_OBSERVATION_NEXT_20260828.md`,
+SHA-256 `AB3B0F783FCBB6392F89DE6495BE7D32CE6A7CB223D4FE8A59F4E72839A39E1A`.
+
+Exact next action: build and fully gate one fresh O3RO1 read-only payload and
+invocation using the exact qualified O3TC1 entrypoint. Observe only exact
+`D:/AFCV1/rt/python.exe`, exact `D:/AFCV1/INSTALLATION.json`, and the Python,
+OpenCV, and NumPy versions returned by that runtime. Use one disposable fresh
+console, one execution, no retry, and exact hostname/schema/nonce proof. Do not
+build a numeric successor until this observation passes. Frontside remains
+incomplete; backside, fanout, fiducial resume, provider/processor action,
+source action, threshold/algorithm change, hold clearance, XML, training, and
+production routing remain blocked or disabled.
+
+## 2026-08-28 — OCV-03 O3RO1 runtime observation timeout / process-state observation next
+
+O3RO1 used the exact qualified O3TC1 fresh-console entrypoint once. Exact
+hostname `A1025645101` returned and the short payload trigger was submitted,
+but no matching O3RO1 schema/nonce/state/scalar returned within 90 seconds.
+Terminal SHA-256 is
+`3A242FCD9265A3DFAD21D41A1B110AA34AB7CB31A7EF2E6A4F15F8BFD20F7385`.
+Two no-input local clipboard checks found the exact 4,069-character payload
+still present; post-timeout gate SHA-256 is
+`3A881BE7D105FDC94D1679FD3B17A75F0EB02EB7423967883538533D14BEAEC4`.
+
+O3RO1 is withdrawn, no-retry, non-reusable, and non-parent. Withdrawal gate
+SHA-256 is
+`074DDEEC848BF9BA84EF2BBF218B3ECE289235B7EE13FC1F642553E42D50BFC4`.
+No runtime version was observed and no numeric successor is ready.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3RO1_RUNTIME_OBSERVATION_TIMEOUT_PROCESS_STATE_OBSERVATION_NEXT_20260828.md`,
+SHA-256 `B195CEE422135A6297DF130E07C6F9E55A373E12EE345EAA07E87CEE1BEF83F5`.
+
+Exact next action: build and gate one fresh read-only process-state observation
+that enumerates only exact O3RO1-relevant `python.exe` identity, executable
+path, command line, creation time, and running count. It must use a disposable
+fresh console, run once without retry, leave every existing console and process
+untouched, and perform no image read or target mutation. Another runtime query,
+numeric successor, backside, fanout, and fiducial resume remain blocked.

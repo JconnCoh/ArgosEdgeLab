@@ -1,0 +1,22 @@
+{
+  "schema": "argos_o3ro3_process_state_collection_safety_gate_v1",
+  "createdUtc": "2026-08-28T13:27:30.2920245Z",
+  "state": "PASS_O3RO3_PROCESS_STATE_COLLECTION_SAFETY",
+  "artifactLifecycle": "FROZEN",
+  "collector": {"path":"work/OPENCV_EDGE_NOTCH_O3RO3/Collect-O3RO3ProcessStateObservation.ps1","sha256":"7FB90781B09E7C86D718BF2E62BBCEF73FEC4E5618A6715120E90985641E4359","parserErrors":0,"harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT","windowsPowerShell51PreflightState":"PASS_O3RO3_PROCESS_STATE_COLLECTOR_PREFLIGHT"},
+  "invocationManifest": {"path":"work/OPENCV_EDGE_NOTCH_O3RO3/O3RO3_COLLECTION_INVOCATION.json","sha256":"CD684CF923CBB167085596C2808A2AA688E1499E5B59E6EA51623B16461F2079","artifactLifecycle":"FROZEN"},
+  "sourceInvocation": {"path":"work/OPENCV_EDGE_NOTCH_O3RO3/O3RO3_INVOCATION.json","sha256":"0BCA571C07E81105FA3A915F35DEC78B9D40EE77F9FBB13643EB8BA1C5779ED5"},
+  "callerConsumerContractGate": {"path":"work/OPENCV_EDGE_NOTCH_O3RO3/O3RO3_CALLER_CONSUMER_RESULT_CONTRACT_GATE.json","sha256":"B2CA0BF5763B8CBD9A2BA19CCF55D2D8600AA6151DA6A3B843361DF6F0203F65"},
+  "pathGate": {"state":"PASS_PATH_BUDGET","candidateCount":3,"maximumPathLength":120,"reservedSuffixCharacters":32,"maximumEffectiveLength":152,"maximumLongestComponentLength":40},
+  "collectionContract": {"transportTerminalMustPassBeforeCollect":true,"clipboardTextOnly":true,"maximumClipboardCharacters":65536,"zeroOneManyRowsSupported":true,"exactRunnerResultPropertyContractRequired":true,"observationGateCreateNew":true,"remoteInputAllowed":false,"taskOrProcessManagementAllowed":false,"maximumCollections":1,"retryAuthorized":false},
+  "transportTerminalExistsAtPreflight": false,
+  "observationGateExistsAtPreflight": false,
+  "clipboardReadAtPreflight": false,
+  "remoteInputSent": false,
+  "targetExecuted": false,
+  "localEvidenceWritten": false,
+  "taskOrProcessManagementPerformed": false,
+  "targetPersistentMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

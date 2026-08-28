@@ -1,0 +1,42 @@
+{
+  "schema": "argos_direct_observer_payload_builder_v2_local_gate_v1",
+  "createdUtc": "2026-08-28T13:58:08.2679074Z",
+  "state": "PASS_ARGOS_DIRECT_OBSERVER_PAYLOAD_BUILDER_V2_LOCAL_GATE",
+  "artifactLifecycle": "FROZEN",
+  "builder": {
+    "path": "work/ARGOS_DIRECT_OBSERVER_V1/New-ArgosDirectObservationPayloadV2.ps1",
+    "sha256": "9B7967076ACB5FACF07B7A1C2D6C07E3ACD868A4AEFC4F89D9C0B11A5FF8183D",
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+  },
+  "localTestInvocation": {
+    "path": "work/ARGOS_DIRECT_OBSERVER_V1/PAYLOAD_BUILDER_V2_LOCAL_TEST_INVOCATION.json",
+    "sha256": "3EF40B46B07C8E1FD9205EF60C23D519C8462C43C9B61E2DAC53BD2D94201F8C"
+  },
+  "generatedPayload": {
+    "path": "work/ARGOS_DIRECT_OBSERVER_V1/BUILDER_V2_LOCAL_TEST_PAYLOAD.ps1",
+    "sha256": "FB161C3B341C2FAB1884F7E45519A1CA41635F3674A1DB22D7CD58AF6C7190AE",
+    "characters": 24240,
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "declaredParameters": ["Preflight", "Rehearsal", "RehearsalCase"],
+    "preflightReturnGuardCount": 2,
+    "windowsPowerShell51PreflightState": "PASS_ARGOS_DIRECT_OBSERVER_PREFLIGHT",
+    "windowsPowerShell51RehearsalState": "PASS_ARGOS_DIRECT_OBSERVATION",
+    "windowsPowerShell51RehearsalRowCount": 1
+  },
+  "buildGate": {
+    "path": "work/ARGOS_DIRECT_OBSERVER_V1/BUILDER_V2_LOCAL_TEST_BUILD_GATE.json",
+    "sha256": "175E6C6DCB0162328A59D69D816CE62B8E749BA0BBFF8CDA226B58F9FAD70EBF"
+  },
+  "maximumEffectivePathLengthWith32CharacterReserve": 158,
+  "maximumPathComponentLength": 45,
+  "targetQueryPerformed": false,
+  "clipboardChanged": false,
+  "remoteInputSent": false,
+  "taskOrProcessManagementPerformed": false,
+  "imageBytesRead": false,
+  "sourceMutationPerformed": false,
+  "targetPersistentMutationPerformed": false,
+  "providerActivationPerformed": false,
+  "productionRoutingEnabled": false
+}

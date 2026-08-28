@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://argosedgelab.local/schema/argos-direct-observation-result-v1.json",
+  "title": "Argos direct read-only observation result v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "state",
+    "nonce",
+    "computerName",
+    "scalar",
+    "requestSha256",
+    "requestSchemaSha256",
+    "resultSchemaSha256",
+    "operation",
+    "operationState",
+    "operationTimeoutSeconds",
+    "candidateProcessCount",
+    "exactExecutablePathProcessCount",
+    "exactMatchCount",
+    "rows",
+    "errorMessage",
+    "taskOrProcessManagementPerformed",
+    "processManagementPerformed",
+    "imageBytesRead",
+    "sourceMutationPerformed",
+    "targetPersistentMutationPerformed",
+    "providerActivationPerformed",
+    "productionRoutingEnabled"
+  ],
+  "properties": {
+    "schema": {"const": "argos_direct_observation_result_v1"},
+    "state": {"enum": ["PASS_ARGOS_DIRECT_OBSERVATION", "FAIL_ARGOS_DIRECT_OBSERVATION"]},
+    "nonce": {"type": "string", "pattern": "^[A-Z0-9_]{16,96}$"},
+    "computerName": {"type": "string", "pattern": "^[A-Z0-9-]{0,32}$"},
+    "scalar": {"type": "string", "maxLength": 128},
+    "requestSha256": {"type": "string", "pattern": "^[A-F0-9]{64}$"},
+    "requestSchemaSha256": {"type": "string", "pattern": "^[A-F0-9]{64}$"},
+    "resultSchemaSha256": {"type": "string", "pattern": "^[A-F0-9]{64}$"},
+    "operation": {"const": "WINDOWS_PROCESS_SNAPSHOT"},
+    "operationState": {"enum": ["OBSERVED", "ERROR", "TIMEOUT"]},
+    "operationTimeoutSeconds": {"type": "integer", "minimum": 1, "maximum": 15},
+    "candidateProcessCount": {"type": "integer", "minimum": 0, "maximum": 65535},
+    "exactExecutablePathProcessCount": {"type": "integer", "minimum": 0, "maximum": 16},
+    "exactMatchCount": {"type": "integer", "minimum": 0, "maximum": 16},
+    "rows": {
+      "type": "array",
+      "maxItems": 16,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["processId", "executablePath", "commandLine", "creationUtc"],
+        "properties": {
+          "processId": {"type": "integer", "minimum": 1, "maximum": 4294967295},
+          "executablePath": {"type": "string", "maxLength": 4096},
+          "commandLine": {"type": "string", "maxLength": 4096},
+          "creationUtc": {"type": "string", "maxLength": 64}
+        }
+      }
+    },
+    "errorMessage": {"type": "string", "maxLength": 1024},
+    "taskOrProcessManagementPerformed": {"const": false},
+    "processManagementPerformed": {"const": false},
+    "imageBytesRead": {"const": false},
+    "sourceMutationPerformed": {"const": false},
+    "targetPersistentMutationPerformed": {"const": false},
+    "providerActivationPerformed": {"const": false},
+    "productionRoutingEnabled": {"const": false}
+  }
+}

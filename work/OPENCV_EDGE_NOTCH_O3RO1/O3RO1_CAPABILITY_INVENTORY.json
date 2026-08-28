@@ -1,0 +1,46 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-08-28T13:01:54.0266950Z",
+  "state": "PASS_O3RO1_STATIC_CAPABILITY_INVENTORY",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "routes": [
+    {
+      "type": "DIRECT_ADMIN_READ_ONLY",
+      "transport": "qualified O3TC1 RustDesk gateway to Argos RDP to JBOD RDP fresh-console short trigger",
+      "requiredComputerName": "A1025645101",
+      "runnerPath": "work/OPENCV_EDGE_NOTCH_O3TC1/Invoke-O3TC1FreshConsoleShortTrigger.ps1",
+      "runnerSha256": "E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB",
+      "transportQualificationGatePath": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_TERMINAL_GATE.json",
+      "transportQualificationGateSha256": "3FD025F1B64702D5A8183D3C8F405E74D7616310715857ED3911BF8A4FA4EFA8",
+      "payloadPath": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_RUNTIME_VERSION_PAYLOAD.ps1",
+      "payloadSha256": "3FF90CF8ED092D747BE09F85BAA648ABF0DC4B1ABE371E89502066E618CEF3B0",
+      "payloadCharacters": 4069,
+      "invocationManifestPath": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_INVOCATION.json",
+      "invocationManifestSha256": "9CA1861B0D36657010D49A82733A4EA88AF302B9DF0D6E7BB538B25EC3D5AFA1",
+      "capabilities": [
+        "exactFreshConsoleHostnameGate",
+        "hashPinnedFileBackedClipboardPayload",
+        "shortTypedTriggerAndNativeReturn",
+        "exactPythonExecutableSha256",
+        "exactInstallationRecordSha256",
+        "exactPythonOpenCvAndNumpyVersionStrings",
+        "exactSchemaNonceStateAndScalarReturn"
+      ]
+    }
+  ],
+  "exactSources": [
+    {"path":"D:/AFCV1/rt/python.exe","maximumRows":1,"maximumBytesRead":0},
+    {"path":"D:/AFCV1/INSTALLATION.json","maximumRows":1,"maximumBytesRead":0},
+    {"path":"Python imports platform, cv2, and numpy","maximumRows":3,"maximumReturnedCharacters":384}
+  ],
+  "imageBytesReadRequired": false,
+  "installedCodeChangeRequired": false,
+  "helperInstallRequired": false,
+  "taskActionRequired": false,
+  "processManagementActionRequired": false,
+  "queueOrLedgerMutationRequired": false,
+  "sourceMutationRequired": false,
+  "waferActionRequired": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

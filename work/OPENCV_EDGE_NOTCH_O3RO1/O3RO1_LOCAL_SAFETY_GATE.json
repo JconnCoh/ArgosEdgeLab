@@ -1,0 +1,104 @@
+{
+  "schema": "argos_o3ro1_local_safety_gate_v1",
+  "createdUtc": "2026-08-28T13:05:12.6253630Z",
+  "state": "PASS_O3RO1_LOCAL_SAFETY_GATES",
+  "artifactLifecycle": "FROZEN",
+  "qualifiedTransport": {
+    "entrypointPath": "work/OPENCV_EDGE_NOTCH_O3TC1/Invoke-O3TC1FreshConsoleShortTrigger.ps1",
+    "entrypointSha256": "E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB",
+    "qualificationGatePath": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_TERMINAL_GATE.json",
+    "qualificationGateSha256": "3FD025F1B64702D5A8183D3C8F405E74D7616310715857ED3911BF8A4FA4EFA8",
+    "qualificationState": "PASS_O3TC1_FRESH_CONSOLE_SHORT_TRIGGER",
+    "o3tc1RerunAllowed": false
+  },
+  "recoveryIntent": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_RECOVERY_INTENT.json",
+    "sha256": "00F7280B80F0F81CD2D1CB6C8B96B6D443C1E11A94EEDEC5B6176D4D3C43E9AA",
+    "preflightState": "PASS_ARGOS_RECOVERY_INTENT",
+    "mode": "OBSERVE",
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 2,
+    "mutationStopLossActive": false
+  },
+  "authorization": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_AUTHORIZATION_GATE.json",
+    "sha256": "7564500B640DABA19AE7EE94B905912648CB43F399D9C65A937698FA77A74C0F",
+    "readOnly": true,
+    "taskActionsAllowed": false,
+    "processActionsAllowed": false,
+    "installedChangesAllowed": false,
+    "maximumExecutions": 1,
+    "retryAuthorized": false
+  },
+  "capabilityInventory": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_CAPABILITY_INVENTORY.json",
+    "sha256": "EFFB9CC303ED47C07DBD18677FA2BB7F1267A74B8F9FC2BC38C432D52673D7F6",
+    "state": "PASS_O3RO1_STATIC_CAPABILITY_INVENTORY"
+  },
+  "payload": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_RUNTIME_VERSION_PAYLOAD.ps1",
+    "sha256": "3FF90CF8ED092D747BE09F85BAA648ABF0DC4B1ABE371E89502066E618CEF3B0",
+    "characters": 4069,
+    "parserErrors": 0,
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "windowsPowerShell51PreflightState": "PASS_O3RO1_RUNTIME_VERSION_PAYLOAD_PREFLIGHT"
+  },
+  "invocationManifest": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_INVOCATION.json",
+    "sha256": "9CA1861B0D36657010D49A82733A4EA88AF302B9DF0D6E7BB538B25EC3D5AFA1",
+    "artifactLifecycle": "FROZEN"
+  },
+  "entrypointGateResults": {
+    "parserErrors": 0,
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "windowsPowerShell51DirectPreflightState": "PASS_O3TC1_FRESH_CONSOLE_SHORT_TRIGGER_PREFLIGHT",
+    "cmdWrapperUsed": false,
+    "dotNetSha256HelperUsed": true,
+    "getFileHashDependencyUsed": false
+  },
+  "runtimeObservationContract": {
+    "requiredComputerName": "A1025645101",
+    "pythonPath": "D:/AFCV1/rt/python.exe",
+    "installationPath": "D:/AFCV1/INSTALLATION.json",
+    "moduleRoot": "D:/AFCV1/rt",
+    "expectedSchema": "argos_o3ro1_runtime_versions_result_v1",
+    "expectedNonce": "O3RO1_RUNTIME_VERSIONS_20260828_24B91C6E",
+    "expectedState": "PASS_O3RO1_RUNTIME_VERSION_OBSERVATION",
+    "expectedScalar": "PASS_O3RO1_RUNTIME_VERSION_OBSERVATION_20260828",
+    "pythonExecutionAllowed": true,
+    "pythonExecutionPurpose": "return platform, cv2, and numpy version strings from the exact D:/AFCV1 runtime",
+    "processEnvironmentChangesAreProcessLocalAndRestored": true,
+    "imageBytesReadAllowed": false,
+    "sourceMutationAllowed": false,
+    "taskOrProcessManagementAllowed": false,
+    "targetPersistentMutationAllowed": false
+  },
+  "pathGate": {
+    "state": "PASS_PATH_BUDGET",
+    "candidateCount": 4,
+    "maximumPathLength": 114,
+    "reservedSuffixCharacters": 32,
+    "maximumEffectiveLength": 146,
+    "maximumLongestComponentLength": 34
+  },
+  "transportInputContract": {
+    "fileBackedClipboardPayload": true,
+    "typedHostnameGate": "hostname|clip",
+    "typedPayloadTrigger": "iex(gcb -r)",
+    "nativeEnterKey": "VK_RETURN_0x0D_KEYDOWN_KEYUP",
+    "freshConsoleOnly": true,
+    "allExistingConsolesMustRemainUntouched": true,
+    "maximumExecutions": 1,
+    "retryAuthorized": false
+  },
+  "plannedTerminalGatePath": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_TRANSPORT_TERMINAL_GATE.json",
+  "plannedTerminalGateExists": false,
+  "plannedObservationGatePath": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_OBSERVATION_GATE.json",
+  "plannedObservationGateExists": false,
+  "remoteInputSent": false,
+  "targetExecuted": false,
+  "targetPersistentMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

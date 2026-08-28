@@ -1,0 +1,37 @@
+{
+  "schema": "argos_o3so2_withdrawal_gate_v1",
+  "createdUtc": "2026-08-28T13:53:48.8993820Z",
+  "state": "WITHDRAWN",
+  "revision": "O3SO2_SCHEMA_DRIVEN_O3RO1_PROCESS_STATE_OBSERVATION_20260828",
+  "artifactLifecycle": "WITHDRAWN",
+  "frozenPayload": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3SO2/O3SO2_SCHEMA_DRIVEN_PROCESS_STATE_PAYLOAD.ps1",
+    "sha256": "64202280D05E82A81F07732AE7AF67AD8F5FC3494CEFC4B9111B708F7210A83B",
+    "characters": 23687
+  },
+  "buildGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3SO2/O3SO2_PAYLOAD_BUILD_GATE.json",
+    "sha256": "A548B7F89E5802872CE443F558AA124CEE41A0326E5EFC3074BFCE543C7D10FF"
+  },
+  "failure": {
+    "gate": "Confirm-ArgosPowerShellHarnessSafety.ps1 -Preflight",
+    "state": "FAIL_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "violation": "MISSING_NON_MUTATING_MODE",
+    "causeClass": "GENERATED_PAYLOAD_NESTED_PREFLIGHT_NOT_TOP_LEVEL_HARNESS_CONTRACT",
+    "targetExecutionAttempted": false,
+    "remoteInputSent": false
+  },
+  "reuse": {
+    "executionParentAllowed": false,
+    "publicationParentAllowed": false,
+    "payloadTemplateAllowed": false,
+    "builderV1TemplateAllowed": false,
+    "terminalEvidenceRetentionAllowed": true
+  },
+  "taskOrProcessManagementPerformed": false,
+  "imageBytesRead": false,
+  "sourceMutationPerformed": false,
+  "targetPersistentMutationPerformed": false,
+  "providerActivationPerformed": false,
+  "productionRoutingEnabled": false
+}

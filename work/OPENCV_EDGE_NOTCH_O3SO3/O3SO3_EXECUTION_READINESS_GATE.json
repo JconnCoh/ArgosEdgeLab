@@ -1,0 +1,74 @@
+{
+  "schema": "argos_o3so3_execution_readiness_gate_v1",
+  "createdUtc": "2026-08-28T14:05:09.8658391Z",
+  "state": "PASS_O3SO3_SCHEMA_OBSERVATION_EXECUTION_READINESS",
+  "artifactLifecycle": "FROZEN",
+  "branch": "codex/fiducial-opencv-d-drive",
+  "localTip": "1b7192fa2482ba36995dc2f319d3053956275b66",
+  "remoteTip": "1b7192fa2482ba36995dc2f319d3053956275b66",
+  "tipsMatch": true,
+  "continuity": {
+    "state": "PASS_ARGOS_PROJECT_CONTINUITY",
+    "activePhase": "OCV03_O3RO1_RUNTIME_OBSERVATION_TIMEOUT_PROCESS_STATE_OBSERVATION_NEXT",
+    "phaseCheckpointSha256": "B195CEE422135A6297DF130E07C6F9E55A373E12EE345EAA07E87CEE1BEF83F5",
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false
+  },
+  "session": {
+    "sessionId": "01a0463c-9f63-7341-8129-fbbaa9fed62d",
+    "state": "PASS_SESSION_SIZE",
+    "metadataOnly": true,
+    "sessionContentRead": false,
+    "bytes": 23016589,
+    "mebibytes": 21.95,
+    "priorSessionBytes": 18395678,
+    "growthSincePriorBytes": 4620911
+  },
+  "transportInventory": {
+    "scriptPath": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Get-ArgosControlTransportState.ps1",
+    "scriptSha256": "D582B80A7CF9AC4AB21FE2D228B875D8ED1503ACB50FB750EC008EEBFADED538",
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "preflightState": "PASS_ARGOS_CONTROL_TRANSPORT_PREFLIGHT",
+    "inventoryState": "OBSERVED_NO_MATCHING_ARGOS_FORWARD",
+    "matchingForwardCount": 0,
+    "candidateListenerCount": 1,
+    "candidateListener": {"processId":7036,"processName":"RustDesk","localAddress":"0.0.0.0","localPort":21118},
+    "errorCount": 0,
+    "guiDesktopRouteRequiresFreshHostnameGate": true
+  },
+  "transport": {
+    "invocationPath": "work/OPENCV_EDGE_NOTCH_O3SO3/O3SO3_INVOCATION.json",
+    "invocationSha256": "22BEFACCB768560C91D61B37F5040441B31C0ED088197BEC81014D626C76B198",
+    "runnerSha256": "E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB",
+    "payloadSha256": "8813FACE36CA1C5EA6F2CA1F9C73DF1B2CFB48BAE6287EF2D2F3FF7B73B0FB51",
+    "preflightState": "PASS_O3TC1_FRESH_CONSOLE_SHORT_TRIGGER_PREFLIGHT",
+    "terminalGateAbsent": true
+  },
+  "collector": {
+    "path": "work/ARGOS_DIRECT_OBSERVER_V1/Collect-ArgosDirectObservationResult.ps1",
+    "sha256": "CBC40D641CC2847EF5633DA7C3980DB68A5D13DC57DB6822466A0A17D12E4068",
+    "invocationPath": "work/OPENCV_EDGE_NOTCH_O3SO3/O3SO3_COLLECTION_INVOCATION.json",
+    "invocationSha256": "9843CAC64338BC07D2F45F84D57D0249A9B3E9CA6096047B401E7FDF1628B13E",
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "preflightState": "PASS_ARGOS_DIRECT_OBSERVATION_COLLECTOR_PREFLIGHT",
+    "collectionGateAbsent": true
+  },
+  "pathBudget": {
+    "state": "PASS_PATH_BUDGET",
+    "reservedSuffixCharacters": 32,
+    "maximumEffectiveLength": 153,
+    "maximumComponentLength": 40
+  },
+  "maximumExecutions": 1,
+  "retryAuthorized": false,
+  "remoteInputSent": false,
+  "targetExecuted": false,
+  "taskOrProcessManagementPerformed": false,
+  "imageBytesRead": false,
+  "targetPersistentMutationPerformed": false,
+  "productionRoutingEnabled": false
+}

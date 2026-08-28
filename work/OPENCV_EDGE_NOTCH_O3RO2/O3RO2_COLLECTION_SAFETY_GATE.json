@@ -1,0 +1,60 @@
+{
+  "schema": "argos_o3ro2_process_state_collection_safety_gate_v1",
+  "createdUtc": "2026-08-28T13:20:23.8469693Z",
+  "state": "PASS_O3RO2_PROCESS_STATE_COLLECTION_SAFETY",
+  "artifactLifecycle": "FROZEN",
+  "collector": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/Collect-O3RO2ProcessStateObservation.ps1",
+    "sha256": "FE22F6E25D955C3E133E76B9DCA18A6CFAF05A4131BE5726DA20933858633690",
+    "parserErrors": 0,
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "windowsPowerShell51PreflightState": "PASS_O3RO2_PROCESS_STATE_COLLECTOR_PREFLIGHT"
+  },
+  "invocationManifest": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_COLLECTION_INVOCATION.json",
+    "sha256": "B4F1017C4034F503E156504BAA416C7D4B6807DAC71C17C867377E9ABA32FBD3",
+    "artifactLifecycle": "FROZEN"
+  },
+  "cloneLiteralRemediation": {
+    "manifestPath": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256": "EF36FFD77B3FFC0103A3309C9FAB251EC37903404DF54C9E9D98AF975143B777",
+    "gatePath": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_CLONE_LITERAL_REMEDIATION_GATE.json",
+    "gateSha256": "BC03673A2F4771940DFE5A9F5ABB0A071CE810A2D9CA9D68E5D7E99716174ACA",
+    "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"
+  },
+  "sourceInvocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_INVOCATION.json",
+    "sha256": "C3BCAD177CA9936CEAF5D4ECE7EB3405CFBC3CE7C6CB9B6C7045259B220DCEED"
+  },
+  "pathGate": {
+    "state": "PASS_PATH_BUDGET",
+    "candidateCount": 3,
+    "maximumPathLength": 120,
+    "reservedSuffixCharacters": 32,
+    "maximumEffectiveLength": 152,
+    "maximumLongestComponentLength": 40
+  },
+  "collectionContract": {
+    "transportTerminalMustPassBeforeCollect": true,
+    "clipboardTextOnly": true,
+    "maximumClipboardCharacters": 65536,
+    "zeroOneManyRowsSupported": true,
+    "exactProcessPathCommandMarkerCreationTimeAndUniqueProcessIdRequired": true,
+    "observationGateCreateNew": true,
+    "remoteInputAllowed": false,
+    "processManagementAllowed": false,
+    "maximumCollections": 1,
+    "retryAuthorized": false
+  },
+  "transportTerminalExistsAtPreflight": false,
+  "observationGateExistsAtPreflight": false,
+  "clipboardReadAtPreflight": false,
+  "remoteInputSent": false,
+  "targetExecuted": false,
+  "localEvidenceWritten": false,
+  "processManagementPerformed": false,
+  "targetPersistentMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

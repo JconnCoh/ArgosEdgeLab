@@ -1,0 +1,46 @@
+{
+  "schema": "argos_o3ro3_withdrawal_gate_v1",
+  "createdUtc": "2026-08-28T13:33:46.7226614Z",
+  "state": "WITHDRAWN",
+  "revision": "O3RO3_EXACT_O3RO1_PROCESS_STATE_OBSERVATION_20260828",
+  "artifactLifecycle": "WITHDRAWN",
+  "executionCount": 1,
+  "maximumExecutions": 1,
+  "retryAuthorized": false,
+  "rerunAuthorized": false,
+  "terminalGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO3/O3RO3_TRANSPORT_TERMINAL_GATE.json",
+    "sha256": "DF6BA2761E1DE33518F077DA92E62EBE97F3BB560891CE6207EEB889DE796128"
+  },
+  "postTimeoutProgressGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO3/O3RO3_POST_TIMEOUT_PROGRESS_GATE.json",
+    "sha256": "4F519EE64B4D02A05B03E88B389CC1B4F3F9F6758114C1D1C9C68CBECC09847D"
+  },
+  "classification": {
+    "causeClass": "PAYLOAD_STARTED_CIM_PROCESS_QUERY_DID_NOT_RETURN",
+    "qualifiedTransportFailed": false,
+    "payloadStarted": true,
+    "terminalResultReturned": false,
+    "observationCompleted": false,
+    "collectorExecuted": false,
+    "observationGateCreated": false
+  },
+  "reuse": {
+    "executionParentAllowed": false,
+    "publicationParentAllowed": false,
+    "schemaOrPayloadTemplateAllowed": false,
+    "terminalEvidenceRetentionAllowed": true
+  },
+  "holds": {
+    "runtimeVersionsRemainUnknown": true,
+    "exactO3RO1ProcessStateRemainsUnknown": true,
+    "numericSuccessorAllowed": false,
+    "existingRemoteConsoleMustRemainUntouched": true
+  },
+  "taskOrProcessManagementPerformed": false,
+  "imageBytesRead": false,
+  "sourceMutationPerformed": false,
+  "targetPersistentMutationPerformed": false,
+  "providerActivationPerformed": false,
+  "productionRoutingEnabled": false
+}

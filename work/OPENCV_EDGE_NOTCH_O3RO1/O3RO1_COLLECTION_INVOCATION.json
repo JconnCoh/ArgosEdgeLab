@@ -1,0 +1,52 @@
+{
+  "schema": "argos_o3ro1_runtime_observation_collection_invocation_v1",
+  "revision": "O3RO1_RUNTIME_VERSION_OBSERVATION_COLLECTION_20260828",
+  "createdUtc": "2026-08-28T13:07:45.4502459Z",
+  "artifactLifecycle": "FROZEN",
+  "projectRoot": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab",
+  "collectionInvocationPath": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_COLLECTION_INVOCATION.json",
+  "collector": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/Collect-O3RO1RuntimeObservation.ps1",
+    "sha256": "A577361A2603F78C47393B955B25087EF7273C7B5157F3C3113DFE9D88157C4A"
+  },
+  "entrypoint": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TC1/Invoke-O3TC1FreshConsoleShortTrigger.ps1",
+    "sha256": "E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB"
+  },
+  "sourceInvocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_INVOCATION.json",
+    "sha256": "9CA1861B0D36657010D49A82733A4EA88AF302B9DF0D6E7BB538B25EC3D5AFA1"
+  },
+  "payload": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_RUNTIME_VERSION_PAYLOAD.ps1",
+    "sha256": "3FF90CF8ED092D747BE09F85BAA648ABF0DC4B1ABE371E89502066E618CEF3B0"
+  },
+  "transportTerminal": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_TRANSPORT_TERMINAL_GATE.json",
+    "mustExistForCollect": true
+  },
+  "observationGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_OBSERVATION_GATE.json",
+    "createNew": true
+  },
+  "expected": {
+    "schema": "argos_o3ro1_runtime_versions_result_v1",
+    "state": "PASS_O3RO1_RUNTIME_VERSION_OBSERVATION",
+    "nonce": "O3RO1_RUNTIME_VERSIONS_20260828_24B91C6E",
+    "scalar": "PASS_O3RO1_RUNTIME_VERSION_OBSERVATION_20260828",
+    "computerName": "A1025645101",
+    "pythonPath": "D:\\AFCV1\\rt\\python.exe",
+    "installationPath": "D:\\AFCV1\\INSTALLATION.json"
+  },
+  "collectionContract": {
+    "maximumCollections": 1,
+    "remoteInputAllowed": false,
+    "clipboardTextOnly": true,
+    "maximumClipboardCharacters": 65536,
+    "localCreateNewEvidenceOnly": true,
+    "targetPersistentMutationAllowed": false,
+    "retryAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

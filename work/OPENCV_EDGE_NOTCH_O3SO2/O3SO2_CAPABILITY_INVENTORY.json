@@ -1,0 +1,50 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-08-28T13:49:01.3442126Z",
+  "state": "PASS_O3SO2_SCHEMA_DRIVEN_CAPABILITY_INVENTORY",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "routes": [
+    {
+      "type": "DIRECT_ADMIN_READ_ONLY",
+      "transport": "unchanged qualified O3TC1 RustDesk gateway to Argos RDP to JBOD RDP fresh-console short trigger",
+      "requiredComputerName": "A1025645101",
+      "runnerPath": "work/OPENCV_EDGE_NOTCH_O3TC1/Invoke-O3TC1FreshConsoleShortTrigger.ps1",
+      "runnerSha256": "E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB",
+      "transportQualificationGatePath": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_TERMINAL_GATE.json",
+      "transportQualificationGateSha256": "3FD025F1B64702D5A8183D3C8F405E74D7616310715857ED3911BF8A4FA4EFA8",
+      "observerExecutorPath": "work/ARGOS_DIRECT_OBSERVER_V1/Invoke-ArgosDirectObservation.ps1",
+      "observerExecutorSha256": "7F2051AC0EA16BE0D20E3EEEC86FBFBE9F4E5C982EF17E0EB1F7F2F877A8545C",
+      "observerLocalGatePath": "work/ARGOS_DIRECT_OBSERVER_V1/ARGOS_DIRECT_OBSERVER_V1_LOCAL_GATE.json",
+      "observerLocalGateSha256": "C5F44CAB185548EDD4B0D9376CF04EDC516523079D761E84B4E7EDD9371657A0",
+      "capabilities": [
+        "exactFreshConsoleHostnameGate",
+        "hashPinnedFileBackedClipboardPayload",
+        "shortTypedTriggerAndNativeReturn",
+        "schemaPinnedReadOnlyObservationRequestAndResult",
+        "getProcessExactExecutablePathPrefilter",
+        "exactPidCimQueryWithOperationTimeoutSecAndTotalDeadline",
+        "boundedRowsAndFields",
+        "joinedSuccessFailureAndTransportConsumerContract",
+        "compactProgressAndTerminalClipboardResult"
+      ]
+    }
+  ],
+  "exactSources": [
+    {
+      "path": "Get-Process python exact D:/AFCV1/rt/python.exe prefilter plus PID-scoped Win32_Process",
+      "maximumRows": 8,
+      "maximumFieldCharacters": 2048,
+      "operationTimeoutSeconds": 8
+    }
+  ],
+  "imageBytesReadRequired": false,
+  "installedCodeChangeRequired": false,
+  "helperInstallRequired": false,
+  "taskActionRequired": false,
+  "processManagementActionRequired": false,
+  "queueOrLedgerMutationRequired": false,
+  "sourceMutationRequired": false,
+  "waferActionRequired": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

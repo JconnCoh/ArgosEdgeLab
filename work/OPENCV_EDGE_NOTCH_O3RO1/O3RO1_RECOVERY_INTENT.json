@@ -1,0 +1,73 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T13:01:54.0266950Z",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 2,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {"path":"work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_SIGNED_TERMINAL_RESPONSE_GATE.json","sha256":"56D64F2F287477E3307BA6111AEA7C89E7B3CEADF408476F7AD9E25A5D320769","state":"FAILED"},
+      {"path":"work/OPENCV_EDGE_NOTCH_O3TR1/O3TR1_LOCAL_LAUNCH_FAILURE_GATE.json","sha256":"4BA0E4B1404946EB69D1DE73F748AFC357B5A8F8016522F45981BF8FA98452EE","state":"WITHDRAWN_LOCAL_REHEARSAL_FAILURE"},
+      {"path":"work/OPENCV_EDGE_NOTCH_O3TR2/O3TR2_WITHDRAWAL_GATE.json","sha256":"D3B2A98F0A49BA34279E7488A9394E96D1C8D9600F971B04F737054079CC6D99","state":"WITHDRAWN_LOCAL_REHEARSAL_FAILURE"}
+    ],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"","sha256":""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_ADMIN_READ_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path":"","sha256":""},
+    "installedConfigEvidence": {"path":"","sha256":""},
+    "capabilityEvidence": {"path":"work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_CAPABILITY_INVENTORY.json","sha256":"EFFB9CC303ED47C07DBD18677FA2BB7F1267A74B8F9FC2BC38C432D52673D7F6"},
+    "qualifiedEndpointGate": {"path":"","sha256":""},
+    "qualifiedAdminGate": {"path":"work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_AUTHORIZATION_GATE.json","sha256":"7564500B640DABA19AE7EE94B905912648CB43F399D9C65A937698FA77A74C0F"}
+  },
+  "observation": {
+    "exactSources": [
+      {"sourcePath":"D:/AFCV1/rt/python.exe","sourceSchema":"exact executable metadata and SHA-256","selector":"exact path on A1025645101","uniquenessKey":"normalizedPath","maximumRows":1},
+      {"sourcePath":"D:/AFCV1/INSTALLATION.json","sourceSchema":"exact installation record SHA-256","selector":"exact path on A1025645101","uniquenessKey":"normalizedPath","maximumRows":1},
+      {"sourcePath":"Python imports platform, cv2, and numpy","sourceSchema":"bounded exact module version strings","selector":"exact D:/AFCV1/rt/python.exe with PYTHONPATH D:/AFCV1/rt","uniquenessKey":"moduleName","maximumRows":3}
+    ],
+    "requestedCapabilities": ["exactPythonExecutableSha256","exactInstallationRecordSha256","exactPythonOpenCvAndNumpyVersionStrings"],
+    "requestedFields": ["computerName","pythonPath","pythonSha256","installationPath","installationSha256","pythonVersion","opencvVersion","numpyVersion"],
+    "decisionOptions": ["A","B","C","D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path":"","sha256":""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "scope": {
+    "sameRequestReplayAllowed": false,
+    "requestRetryAuthorized": false,
+    "maximumObservationExecutions": 1,
+    "targetWriteAllowed": false,
+    "taskOrProcessManagementAllowed": false,
+    "providerActivationAllowed": false,
+    "protectedProcessorChangeAllowed": false,
+    "existingConsoleInputAllowed": false,
+    "disposableFreshConsoleOnly": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

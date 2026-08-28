@@ -1,0 +1,43 @@
+{
+  "schema": "argos_o3ro2_withdrawal_gate_v1",
+  "createdUtc": "2026-08-28T13:23:12.0000000Z",
+  "state": "WITHDRAWN",
+  "artifactLifecycle": "WITHDRAWN",
+  "reason": "CALLER_CONSUMER_RESULT_PROPERTY_CONTRACT_MISMATCH_CAUGHT_BEFORE_EXECUTION",
+  "entrypoint": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TC1/Invoke-O3TC1FreshConsoleShortTrigger.ps1",
+    "sha256": "E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB",
+    "requiredResultProperty": "taskOrProcessManagementPerformed"
+  },
+  "payload": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_PROCESS_STATE_PAYLOAD.ps1",
+    "sha256": "ED835FE679839E71FB5562FECB0566148ED08D03C1912FF12B2B541330425B6C",
+    "implementedResultProperty": "processManagementPerformed"
+  },
+  "invocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_INVOCATION.json",
+    "sha256": "C3BCAD177CA9936CEAF5D4ECE7EB3405CFBC3CE7C6CB9B6C7045259B220DCEED"
+  },
+  "preaction": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO2/PREACTION_O3RO2_PROCESS_STATE_OBSERVATION.json",
+    "sha256": "8BE97D9F5A6A95B007E60B37CE863083647BE5D25397BCA2D3B3164E3B4D8601"
+  },
+  "compatibilityFinding": {
+    "runnerExpression": "[bool]$remoteResult.taskOrProcessManagementPerformed",
+    "payloadResultField": "processManagementPerformed",
+    "strictModeMissingPropertyWouldFail": true,
+    "caughtBeforeRemoteInput": true
+  },
+  "executionCount": 0,
+  "retryAuthorized": false,
+  "rerunAllowed": false,
+  "futurePublicationParentAllowed": false,
+  "transportTerminalCreated": false,
+  "observationGateCreated": false,
+  "remoteInputSent": false,
+  "targetExecuted": false,
+  "processManagementPerformed": false,
+  "targetPersistentMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,57 @@
+{
+  "schema": "argos_o3tc1_fresh_console_short_trigger_invocation_v1",
+  "revision": "O3SO3_SCHEMA_DRIVEN_O3RO1_PROCESS_STATE_OBSERVATION_20260828",
+  "createdUtc": "2026-08-28T14:01:32.6357025Z",
+  "artifactLifecycle": "FROZEN",
+  "projectRoot": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab",
+  "entrypoint": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TC1/Invoke-O3TC1FreshConsoleShortTrigger.ps1",
+    "sha256": "E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB"
+  },
+  "payload": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3SO3/O3SO3_SCHEMA_DRIVEN_PROCESS_STATE_PAYLOAD.ps1",
+    "sha256": "8813FACE36CA1C5EA6F2CA1F9C73DF1B2CFB48BAE6287EF2D2F3FF7B73B0FB51",
+    "characters": 24207
+  },
+  "terminalGatePath": "work/OPENCV_EDGE_NOTCH_O3SO3/O3SO3_TRANSPORT_TERMINAL_GATE.json",
+  "expectedComputerName": "A1025645101",
+  "rustDeskWindowTitle": "10.66.81.84",
+  "typedHostnameGate": "hostname|clip",
+  "typedPayloadTrigger": "iex(gcb -r)",
+  "maximumTypedCharacters": 32,
+  "timeoutSeconds": 60,
+  "freshConsole": {
+    "taskbarX": 337,
+    "taskbarY": 1118,
+    "fullScreenWidth": 1920,
+    "fullScreenHeight": 1200,
+    "openMethod": "MIDDLE_CLICK_PINNED_POWERSHELL_ICON"
+  },
+  "expectedResult": {
+    "schema": "argos_direct_observation_result_v1",
+    "state": "PASS_ARGOS_DIRECT_OBSERVATION",
+    "nonce": "O3SO3_PROCESS_STATE_20260828_1EF0368A",
+    "scalar": "PASS_O3SO3_EXACT_O3RO1_PROCESS_STATE_SCHEMA_OBSERVATION_20260828"
+  },
+  "executionContract": {
+    "maximumExecutions": 1,
+    "retryAuthorized": false,
+    "freshConsoleOnly": true,
+    "allExistingConsolesMustRemainUntouched": true,
+    "exactSource": "Get-Process python exact D:/AFCV1/rt/python.exe prefilter plus PID-scoped Win32_Process",
+    "operationTimeoutSeconds": 8,
+    "maximumRows": 8,
+    "maximumFieldCharacters": 2048,
+    "requestSchemaSha256": "EAF4AE35296570B95DF885F9AC88D980BFFFED3AC657F1E1642BA3A2F1D8D50F",
+    "resultSchemaSha256": "B8FDE1122A182ABB7B2D96C79230CEC9C0591D5DC259FF409DF90FB0B3AD615A",
+    "payloadBuildGateSha256": "29717AB90345A98B22D3C7428D3E8557490E381F070148501D0C3F5F3679FFAF",
+    "cloneLiteralGateSha256": "B0C608624FF5DDF76A77D01822A374F2D5FA9977D77455B106AAB1B963A267B9",
+    "topLevelPayloadPreflightPassed": true,
+    "generatedPayloadHarnessPassed": true,
+    "targetPersistentMutationAllowed": false,
+    "taskOrProcessManagementAllowed": false,
+    "imageReadAllowed": false,
+    "providerActivationAllowed": false,
+    "productionRoutingAllowed": false
+  }
+}

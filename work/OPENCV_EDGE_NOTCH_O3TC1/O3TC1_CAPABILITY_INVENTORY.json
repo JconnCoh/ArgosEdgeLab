@@ -1,0 +1,64 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-08-28T12:52:57.7558813Z",
+  "state": "PASS_O3TC1_STATIC_CAPABILITY_INVENTORY",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "routes": [
+    {
+      "type": "DIRECT_ADMIN_READ_ONLY",
+      "transport": "existing RustDesk gateway to existing Argos RDP to existing JBOD RDP",
+      "requiredComputerName": "A1025645101",
+      "runnerPath": "work/OPENCV_EDGE_NOTCH_O3TC1/Invoke-O3TC1FreshConsoleShortTrigger.ps1",
+      "runnerSha256": "E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB",
+      "payloadPath": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_FIXED_SCALAR_PAYLOAD.ps1",
+      "payloadSha256": "58392D0F704F7C8C7FC6BCC677C34C84FC210C8288257607CF53299AE6541AFF",
+      "invocationManifestPath": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_INVOCATION.json",
+      "invocationManifestSha256": "9751CE1AF919749FCFEE926A3EA98C77D47856BE48A36D701907E5257B10FAEC",
+      "authorizationGatePath": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_AUTHORIZATION_GATE.json",
+      "authorizationGateSha256": "1F215110438BEC79BC8703F4AD04576BA7E9ED83C9274CC567724E915AF81E23",
+      "capabilities": [
+        "openOneDisposableFreshConsoleWithoutInputToExistingConsoles",
+        "typeExactThirteenCharacterHostnameGate",
+        "verifyExactHostnameThroughClipboardReturn",
+        "transferHashPinnedFileBackedPayloadThroughExistingClipboardSynchronization",
+        "typeExactElevenCharacterPayloadTrigger",
+        "submitThroughNativeVkReturnKeyDownKeyUp",
+        "returnExactSchemaNonceHostnameStateAndScalar",
+        "writeOneCreateNewLocalTerminalGate"
+      ]
+    }
+  ],
+  "qualifiedSourceReuse": {
+    "shortTriggerRunnerPath": "work/OPENCV_SCRIBE_O2D10/direct_control_r4/Invoke-ArgosAdminInboundRelayObservationR4.ps1",
+    "shortTriggerRunnerSha256": "732D1B4C16728D0AD624E3112C31ECD8C92C6FF550ACA46968B0A677243FB966",
+    "successfulReadOnlyEvidencePath": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_RELAY_R4.json",
+    "successfulReadOnlyEvidenceSha256": "A5910A390159B00533CFA5D29CA26D9AFF1391F2B53B96D941D9099A9A569039",
+    "staticGatePath": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_INBOUND_RELAY_OBSERVER_R4_STATIC_GATE.json",
+    "staticGateSha256": "92979C7A86EAA71AAA15D92528D1590B828B2C9DC5C87FF74EED863B0FECBC67",
+    "freshConsoleSourcePath": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+    "freshConsoleSourceSha256": "CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D",
+    "cloneLiteralGatePath": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_CLONE_LITERAL_REMEDIATION_GATE.json",
+    "cloneLiteralGateSha256": "A5999F7E2E2D18FF25AC2C72CCDA2F5554D0293BF32B81248A885A0CB75F0F40"
+  },
+  "exactSources": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_FIXED_SCALAR_PAYLOAD.ps1",
+      "maximumRows": 1,
+      "maximumBytesRead": 1736
+    }
+  ],
+  "completeLongPasteRequired": false,
+  "maximumTypedCommandCharacters": 13,
+  "nativeEnterMethod": "VK_RETURN_0x0D_KEYDOWN_KEYUP",
+  "targetFileContentReadRequired": false,
+  "imageBytesReadRequired": false,
+  "installedCodeChangeRequired": false,
+  "helperInstallRequired": false,
+  "taskActionRequired": false,
+  "processManagementActionRequired": false,
+  "queueOrLedgerMutationRequired": false,
+  "sourceMutationRequired": false,
+  "waferActionRequired": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

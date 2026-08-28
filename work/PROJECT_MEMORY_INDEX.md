@@ -4,6 +4,30 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 O3SO3 schema observer process-API timeout / capability gap — 2026-08-28
+
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3SO3_SCHEMA_OBSERVER_PROCESS_API_TIMEOUT_CAPABILITY_GAP_20260828.md`,
+  SHA-256
+  `6FB7BF866E29095037C17E2993EF8033FA1674C202C9B1809572500175D212F9`.
+- The reusable schema system passed its exact local contract and O3SO3 returned
+  exact JBOD hostname plus progress schema/nonce/request hash, proving the
+  payload started. It returned no terminal process result within 60 seconds.
+- Terminal gate SHA-256 is
+  `F4F8BCC7747735FE35CA3B030EEAD21F433BAF698B7B349B3EC7E31B56BC8722`;
+  progress gate SHA-256 is
+  `EA606C70261C348938B928C86DCEB9D853E1DE6E7701B0B391A364E97ABF7A85`;
+  withdrawal SHA-256 is
+  `F24C0DB2D3EE656D520BA059FB101047EA172D6116A06B8D797D6598761B988D`.
+- `Get-CimInstance -OperationTimeoutSec` did not prove a hard wall-clock
+  boundary for the exact live `Win32_Process` call. The executor/composer is
+  withdrawn as a live process-observation parent. Do not retry O3SO3 or touch
+  its console/process.
+- O3RO1 process state, command execution, and runtime versions remain unknown.
+  A separately authorized timeout-isolated endpoint capability or an already
+  installed qualified exact read-only route is required before another runtime
+  observation or numeric Slot16 successor. Every existing hold remains.
+
 ## OCV-03 O3Q2 direct runtime observation timeout / operator-console hold — 2026-08-28
 
 - Current checkpoint:

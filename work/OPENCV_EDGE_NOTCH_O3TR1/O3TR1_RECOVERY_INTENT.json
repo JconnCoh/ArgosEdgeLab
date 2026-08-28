@@ -1,0 +1,107 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T12:24:00Z",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_SIGNED_TERMINAL_RESPONSE_GATE.json",
+        "sha256": "56D64F2F287477E3307BA6111AEA7C89E7B3CEADF408476F7AD9E25A5D320769",
+        "state": "FAILED"
+      }
+    ],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"","sha256":""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_ADMIN_READ_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path":"","sha256":""},
+    "installedConfigEvidence": {"path":"","sha256":""},
+    "capabilityEvidence": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3TR1/O3TR1_REHEARSAL_CAPABILITY_INVENTORY.json",
+      "sha256": "A4B1046B8961758129821B9D86060AD4044E72C03B287629C9CD609680FC8BE9"
+    },
+    "qualifiedEndpointGate": {"path":"","sha256":""},
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3TR1/O3TR1_REHEARSAL_AUTHORIZATION_GATE.json",
+      "sha256": "38E5E669AAB5588C0FCF1B9588E95D0D805BE27FC2CC449C6FF3E2D600837A5E"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "work/OPENCV_EDGE_NOTCH_O3TR1/O3TR1_FIXED_SCALAR.ps1",
+        "sourceSchema": "exact hash-pinned fixed scalar plus deterministic comment padding",
+        "selector": "one fresh console on exact hostname A1025645101",
+        "uniquenessKey": "rehearsalCommandSha256",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": [
+      "freshConsoleWithoutOriginalConsoleInput",
+      "exactHostnameGate",
+      "completePastedCommandLengthCalculation",
+      "equalOrGreaterLengthFixedScalarCommand",
+      "boundedNonceAndCommandHashTextReturn",
+      "nonTruncatedExactScalarValidation"
+    ],
+    "requestedFields": [
+      "computerName",
+      "nonce",
+      "commandSha256",
+      "remoteState",
+      "truncated",
+      "resultScalar",
+      "originalConsoleUntouched",
+      "targetPersistentMutationPerformed"
+    ],
+    "decisionOptions": ["A","B","C","D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path":"","sha256":""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "incidentTransportFailure": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_DIRECT_RUNTIME_OBSERVATION_TIMEOUT_GATE.json",
+    "sha256": "DF16C06EBDD822E28135220E22E23D70C90D4D345CCEDE9A0C1D73C74B909E7F",
+    "state": "TIMEOUT_NO_RESULT",
+    "sameNamespaceReusable": false
+  },
+  "scope": {
+    "sameRequestReplayAllowed": false,
+    "requestRetryAuthorized": false,
+    "maximumObservationExecutions": 1,
+    "targetWriteAllowed": false,
+    "taskOrProcessManagementAllowed": false,
+    "providerActivationAllowed": false,
+    "protectedProcessorChangeAllowed": false,
+    "originalConsoleInputAllowed": false,
+    "freshConsoleOnly": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

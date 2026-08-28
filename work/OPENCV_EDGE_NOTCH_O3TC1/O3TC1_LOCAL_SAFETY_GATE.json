@@ -1,0 +1,100 @@
+{
+  "schema": "argos_o3tc1_local_safety_gate_v1",
+  "createdUtc": "2026-08-28T12:55:01.5519988Z",
+  "state": "PASS_O3TC1_LOCAL_SAFETY_GATES",
+  "artifactLifecycle": "FROZEN",
+  "recoveryIntent": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_RECOVERY_INTENT.json",
+    "sha256": "DE6017E92FDF83DF74367DD40955E6AF4AF12F927E3C3760D0B155610A0697E4",
+    "preflightState": "PASS_ARGOS_RECOVERY_INTENT",
+    "mode": "OBSERVE",
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 2,
+    "mutationStopLossActive": false
+  },
+  "authorization": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_AUTHORIZATION_GATE.json",
+    "sha256": "1F215110438BEC79BC8703F4AD04576BA7E9ED83C9274CC567724E915AF81E23",
+    "maximumExecutions": 1,
+    "retryAuthorized": false
+  },
+  "capabilityInventory": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_CAPABILITY_INVENTORY.json",
+    "sha256": "7C09398E1E12E27837CB0BD078BF56382F0A1DFB5122B046F3DDD47432E6BA33",
+    "state": "PASS_O3TC1_STATIC_CAPABILITY_INVENTORY"
+  },
+  "entrypoint": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TC1/Invoke-O3TC1FreshConsoleShortTrigger.ps1",
+    "sha256": "E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB",
+    "parserErrors": 0,
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "windowsPowerShell51DirectPreflightState": "PASS_O3TC1_FRESH_CONSOLE_SHORT_TRIGGER_PREFLIGHT",
+    "windowsPowerShell51CmdBoundaryPreflightState": "PASS_O3TC1_FRESH_CONSOLE_SHORT_TRIGGER_PREFLIGHT",
+    "dotNetSha256HelperUsed": true,
+    "getFileHashDependencyUsed": false
+  },
+  "payload": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_FIXED_SCALAR_PAYLOAD.ps1",
+    "sha256": "58392D0F704F7C8C7FC6BCC677C34C84FC210C8288257607CF53299AE6541AFF",
+    "characters": 1736,
+    "parserErrors": 0,
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "windowsPowerShell51PreflightState": "PASS_O3TC1_FIXED_SCALAR_PAYLOAD_PREFLIGHT"
+  },
+  "cmdWrapper": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TC1/RUN_O3TC1.cmd",
+    "sha256": "3903D491AF0C925B6CBEF3E94B154BFD5D7723DDEDD33E2E77A7436E72DF4C4F",
+    "automaticallyRunsExactPreflightBeforeGate": true
+  },
+  "invocationManifest": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_INVOCATION.json",
+    "sha256": "9751CE1AF919749FCFEE926A3EA98C77D47856BE48A36D701907E5257B10FAEC",
+    "artifactLifecycle": "FROZEN"
+  },
+  "cloneLiteralRemediation": {
+    "manifestPath": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256": "D95ECDAAC19B06CAEC929EFD788537A61746280EC4A0636107FC6AAB05890CD9",
+    "gatePath": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_CLONE_LITERAL_REMEDIATION_GATE.json",
+    "gateSha256": "A5999F7E2E2D18FF25AC2C72CCDA2F5554D0293BF32B81248A885A0CB75F0F40",
+    "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"
+  },
+  "qualifiedSourceReuse": {
+    "shortTriggerRunnerPath": "work/OPENCV_SCRIBE_O2D10/direct_control_r4/Invoke-ArgosAdminInboundRelayObservationR4.ps1",
+    "shortTriggerRunnerSha256": "732D1B4C16728D0AD624E3112C31ECD8C92C6FF550ACA46968B0A677243FB966",
+    "successfulReadOnlyEvidenceSha256": "A5910A390159B00533CFA5D29CA26D9AFF1391F2B53B96D941D9099A9A569039",
+    "freshConsoleSourcePath": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+    "freshConsoleSourceSha256": "CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D"
+  },
+  "submissionContract": {
+    "completeLongPasteRequired": false,
+    "fileBackedClipboardPayload": true,
+    "typedHostnameGate": "hostname|clip",
+    "typedHostnameGateCharacters": 13,
+    "typedPayloadTrigger": "iex(gcb -r)",
+    "typedPayloadTriggerCharacters": 11,
+    "nativeEnterKey": "VK_RETURN_0x0D_KEYDOWN_KEYUP",
+    "expectedNonce": "O3TC1_FIXED_SCALAR_20260828_7D9332A9",
+    "expectedScalar": "PASS_O3TC1_FRESH_CONSOLE_SHORT_TRIGGER_NATIVE_ENTER_20260828"
+  },
+  "pathGate": {
+    "state": "PASS_PATH_BUDGET",
+    "candidateCount": 6,
+    "maximumPathLength": 121,
+    "reservedSuffixCharacters": 32,
+    "maximumEffectiveLength": 153,
+    "maximumLongestComponentLength": 41
+  },
+  "draftOnlyCorrections": [
+    "PAYLOAD_DECLARED_EXACT_NON_MUTATING_PREFLIGHT",
+    "CMD_WRAPPER_CHANGED_TO_EXPLICIT_WINDOWS_POWERSHELL_51_AND_ARGOS_SCRIPT_MANIFEST_VARIABLES",
+    "DRAFT_PREFLIGHT_ALLOWED_WHILE_GATE_REQUIRES_FROZEN"
+  ],
+  "plannedTerminalGatePath": "work/OPENCV_EDGE_NOTCH_O3TC1/O3TC1_TERMINAL_GATE.json",
+  "plannedTerminalGateExists": false,
+  "remoteInputSent": false,
+  "targetExecuted": false,
+  "targetPersistentMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

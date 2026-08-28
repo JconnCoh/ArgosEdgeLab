@@ -1,0 +1,29 @@
+{
+  "schema": "argos_direct_observation_request_v1",
+  "revision": "O3SO3_SCHEMA_DRIVEN_O3RO1_PROCESS_STATE_20260828",
+  "requestSchemaSha256": "EAF4AE35296570B95DF885F9AC88D980BFFFED3AC657F1E1642BA3A2F1D8D50F",
+  "resultSchemaSha256": "B8FDE1122A182ABB7B2D96C79230CEC9C0591D5DC259FF409DF90FB0B3AD615A",
+  "nonce": "O3SO3_PROCESS_STATE_20260828_1EF0368A",
+  "expectedComputerName": "A1025645101",
+  "operation": "WINDOWS_PROCESS_SNAPSHOT",
+  "operationTimeoutSeconds": 8,
+  "maximumRows": 8,
+  "maximumFieldCharacters": 2048,
+  "expectedScalar": "PASS_O3SO3_EXACT_O3RO1_PROCESS_STATE_SCHEMA_OBSERVATION_20260828",
+  "parameters": {
+    "processName": "python.exe",
+    "exactExecutablePath": "D:\\AFCV1\\rt\\python.exe",
+    "commandLineContains": "import json,platform,cv2,numpy as np"
+  },
+  "authority": {
+    "reviewOnly": true,
+    "taskOrProcessManagementAllowed": false,
+    "imageReadAllowed": false,
+    "sourceMutationAllowed": false,
+    "targetPersistentMutationAllowed": false,
+    "providerActivationAllowed": false,
+    "productionRoutingAllowed": false,
+    "retryAuthorized": false,
+    "maximumExecutions": 1
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T13:49:01.3442126Z",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 6,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {"path":"work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_SIGNED_TERMINAL_RESPONSE_GATE.json","sha256":"56D64F2F287477E3307BA6111AEA7C89E7B3CEADF408476F7AD9E25A5D320769","state":"FAILED"},
+      {"path":"work/OPENCV_EDGE_NOTCH_O3TR1/O3TR1_LOCAL_LAUNCH_FAILURE_GATE.json","sha256":"4BA0E4B1404946EB69D1DE73F748AFC357B5A8F8016522F45981BF8FA98452EE","state":"WITHDRAWN_LOCAL_REHEARSAL_FAILURE"},
+      {"path":"work/OPENCV_EDGE_NOTCH_O3TR2/O3TR2_WITHDRAWAL_GATE.json","sha256":"D3B2A98F0A49BA34279E7488A9394E96D1C8D9600F971B04F737054079CC6D99","state":"WITHDRAWN_LOCAL_REHEARSAL_FAILURE"},
+      {"path":"work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_LOCAL_FAILURE_GATE.json","sha256":"43999C0C4B22E480D9238DE3619C964490F1418FC565D5B8909F420E5C98DBBA","state":"WITHDRAWN_LOCAL_REHEARSAL_FAILURE"},
+      {"path":"work/OPENCV_EDGE_NOTCH_O3RO2/O3RO2_WITHDRAWAL_GATE.json","sha256":"8324D53489C5899A539B537122D98E140F701A6900EED41CF24E8C63918FC160","state":"WITHDRAWN_LOCAL_REHEARSAL_FAILURE"},
+      {"path":"work/OPENCV_EDGE_NOTCH_O3RO3/O3RO3_WITHDRAWAL_GATE.json","sha256":"81D6732DD958B229C7CF713AEF27328A0B78F91F9F058DA0DEC70CE594EC3A30","state":"WITHDRAWN_LOCAL_REHEARSAL_FAILURE"},
+      {"path":"work/OPENCV_EDGE_NOTCH_O3SO1/O3SO1_WITHDRAWAL_GATE.json","sha256":"5DE59E9FF04CBFEB097F60FF3E48C5B113F43A1D144F8971899CC39A2B3713EF","state":"WITHDRAWN_LOCAL_REHEARSAL_FAILURE"}
+    ],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"","sha256":""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_ADMIN_READ_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path":"","sha256":""},
+    "installedConfigEvidence": {"path":"","sha256":""},
+    "capabilityEvidence": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3SO2/O3SO2_CAPABILITY_INVENTORY.json",
+      "sha256": "256BF0461806EF7E9FA6F53C0270307CB99289273BFDD2BF797EFF08286CE741"
+    },
+    "qualifiedEndpointGate": {"path":"","sha256":""},
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3SO2/O3SO2_AUTHORIZATION_GATE.json",
+      "sha256": "D687E64472D23942ED4E85245F29DE0CE1B7BC581AABEDF51E01C7FB8C1A2CA5"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "Get-Process python exact executable-path prefilter plus PID-scoped Win32_Process",
+        "sourceSchema": "argos_direct_observation_result_v1 bounded process identity, path, command line, and creation time",
+        "selector": "Name=python.exe, exact D:/AFCV1/rt/python.exe, exact O3RO1 import marker on A1025645101",
+        "uniquenessKey": "processId",
+        "maximumRows": 8
+      }
+    ],
+    "requestedCapabilities": [
+      "schemaPinnedReadOnlyObservationRequestAndResult",
+      "getProcessExactExecutablePathPrefilter",
+      "exactPidCimQueryWithOperationTimeoutSecAndTotalDeadline",
+      "joinedSuccessFailureAndTransportConsumerContract"
+    ],
+    "requestedFields": [
+      "computerName","candidateProcessCount","exactExecutablePathProcessCount",
+      "exactMatchCount","processId","executablePath","commandLine","creationUtc",
+      "operationState","taskOrProcessManagementPerformed"
+    ],
+    "decisionOptions": ["A","B","C","D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path":"","sha256":""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "scope": {
+    "sameRequestReplayAllowed": false,
+    "requestRetryAuthorized": false,
+    "maximumObservationExecutions": 1,
+    "targetWriteAllowed": false,
+    "taskOrProcessManagementAllowed": false,
+    "providerActivationAllowed": false,
+    "protectedProcessorChangeAllowed": false,
+    "existingConsoleInputAllowed": false,
+    "disposableFreshConsoleOnly": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "argos_o3ro3_post_timeout_progress_gate_v1",
+  "createdUtc": "2026-08-28T13:33:46.7226614Z",
+  "state": "PASS_O3RO3_PAYLOAD_STARTED_THEN_STALLED_BEFORE_TERMINAL_RESULT",
+  "artifactLifecycle": "FROZEN",
+  "terminalGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO3/O3RO3_TRANSPORT_TERMINAL_GATE.json",
+    "sha256": "DF6BA2761E1DE33518F077DA92E62EBE97F3BB560891CE6207EEB889DE796128",
+    "state": "FAIL_O3TC1_FRESH_CONSOLE_SHORT_TRIGGER",
+    "stage": "WAIT_EXACT_NONCE_RESULT"
+  },
+  "expectedTerminal": {
+    "schema": "argos_o3ro3_process_state_result_v1",
+    "nonce": "O3RO3_PROCESS_STATE_20260828_912FB64C"
+  },
+  "observedProgress": {
+    "schema": "argos_o3ro3_process_state_progress_v1",
+    "state": "STARTED_O3RO3_PROCESS_STATE_OBSERVATION",
+    "nonce": "O3RO3_PROCESS_STATE_20260828_912FB64C",
+    "computerName": "A1025645101",
+    "clipboardCharacters": 221,
+    "clipboardSha256": "D895F05275CDEDC9F30B0684D9A0AA5688EFB5FFCB1C26FEFADA0F9D8AEB08AB"
+  },
+  "checks": [
+    {
+      "ordinal": 1,
+      "timing": "IMMEDIATELY_AFTER_TRANSPORT_TIMEOUT",
+      "exactProgressMarkerStillPresent": true,
+      "matchingTerminalResultPresent": false,
+      "remoteInputSent": false
+    },
+    {
+      "ordinal": 2,
+      "timing": "AT_LEAST_36_SECONDS_AFTER_FIRST_CHECK",
+      "exactProgressMarkerStillPresent": true,
+      "matchingTerminalResultPresent": false,
+      "remoteInputSent": false
+    }
+  ],
+  "classification": {
+    "shortTriggerExecuted": true,
+    "payloadStarted": true,
+    "payloadReachedProgressMarkerBeforeProcessQuery": true,
+    "processQueryReturned": false,
+    "runtimeOrProcessStateObserved": false,
+    "causeClass": "PAYLOAD_STARTED_CIM_PROCESS_QUERY_DID_NOT_RETURN"
+  },
+  "taskOrProcessManagementPerformed": false,
+  "existingConsoleInputSent": false,
+  "imageBytesRead": false,
+  "sourceMutationPerformed": false,
+  "targetPersistentMutationPerformed": false,
+  "retryAuthorized": false
+}

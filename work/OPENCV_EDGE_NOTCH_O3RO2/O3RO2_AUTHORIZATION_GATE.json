@@ -1,0 +1,38 @@
+{
+  "schema": "argos_direct_admin_read_only_authorization_gate_v1",
+  "revision": "O3RO2_EXACT_O3RO1_PYTHON_PROCESS_STATE_AUTHORIZATION_20260828",
+  "createdUtc": "2026-08-28T13:16:33.3370090Z",
+  "state": "PASS_O3RO2_ONE_FRESH_PROCESS_STATE_OBSERVATION_AUTHORIZATION",
+  "readOnly": true,
+  "taskActionsAllowed": false,
+  "processActionsAllowed": false,
+  "installedChangesAllowed": false,
+  "authoritySource": [
+    "operator directed active continuation until notch completion or a genuine blocker",
+    "operator authorized bounded work while preserving the already working JBOD/Argos access mechanism",
+    "O3RO1 timeout checkpoint requires exact process-state evidence before another runtime query"
+  ],
+  "authorizedAction": {
+    "route": "QUALIFIED_O3TC1_FRESH_CONSOLE_SHORT_TRIGGER_TRANSPORT",
+    "requiredComputerName": "A1025645101",
+    "commandClass": "EXACT_O3RO1_D_AFCV1_PYTHON_PROCESS_STATE_OBSERVATION",
+    "exactProcessName": "python.exe",
+    "exactExecutablePath": "D:/AFCV1/rt/python.exe",
+    "exactCommandMarker": "import json,platform,cv2,numpy as np",
+    "returnedFields": ["processId","executablePath","commandLine","creationUtc","exactO3RO1ProcessCount"],
+    "maximumRows": 8,
+    "maximumExecutions": 1,
+    "retryAuthorized": false,
+    "freshConsoleOnly": true,
+    "allExistingConsolesMustRemainUntouched": true
+  },
+  "notAuthorized": [
+    "RERUN_REPLAY_OR_PATCH_O3RO1",
+    "INPUT_TO_ANY_EXISTING_CONSOLE",
+    "TERMINATE_RESTART_SUSPEND_RESUME_OR_OTHERWISE_MANAGE_ANY_PROCESS",
+    "IMAGE_READ_SOURCE_MUTATION_TASK_PROCESS_MANAGEMENT_QUEUE_LEDGER_PROVIDER_PROCESSOR_THRESHOLD_ALGORITHM_HOLD_TRAINING_XML_OR_PRODUCTION_ACTION",
+    "ANOTHER_RUNTIME_VERSION_QUERY_OR_NUMERIC_SUCCESSOR_BEFORE_O3RO2_CLASSIFICATION"
+  ],
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

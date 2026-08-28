@@ -1,0 +1,23 @@
+{
+  "schema": "argos_o3ro1_local_failure_gate_v1",
+  "createdUtc": "2026-08-28T13:16:33.3370090Z",
+  "state": "WITHDRAWN",
+  "failureClass": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE",
+  "withdrawalGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_WITHDRAWAL_GATE.json",
+    "sha256": "074DDEEC848BF9BA84EF2BBF218B3ECE289235B7EE13FC1F642553E42D50BFC4",
+    "state": "WITHDRAWN_O3RO1_TIMEOUT_NO_MATCHING_RESULT"
+  },
+  "terminalGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_TRANSPORT_TERMINAL_GATE.json",
+    "sha256": "3A242FCD9265A3DFAD21D41A1B110AA34AB7CB31A7EF2E6A4F15F8BFD20F7385",
+    "state": "FAIL_O3TC1_FRESH_CONSOLE_SHORT_TRIGGER",
+    "stage": "WAIT_EXACT_NONCE_RESULT"
+  },
+  "executionCount": 1,
+  "retryAuthorized": false,
+  "rerunAllowed": false,
+  "targetPersistentMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

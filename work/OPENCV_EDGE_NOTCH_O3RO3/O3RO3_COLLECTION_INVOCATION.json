@@ -1,0 +1,39 @@
+{
+  "schema": "argos_o3ro3_process_state_collection_invocation_v1",
+  "revision": "O3RO3_PROCESS_STATE_OBSERVATION_COLLECTION_20260828",
+  "createdUtc": "2026-08-28T13:26:45.6415210Z",
+  "artifactLifecycle": "FROZEN",
+  "projectRoot": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab",
+  "collectionInvocationPath": "work/OPENCV_EDGE_NOTCH_O3RO3/O3RO3_COLLECTION_INVOCATION.json",
+  "collector": {"path":"work/OPENCV_EDGE_NOTCH_O3RO3/Collect-O3RO3ProcessStateObservation.ps1","sha256":"7FB90781B09E7C86D718BF2E62BBCEF73FEC4E5618A6715120E90985641E4359"},
+  "entrypoint": {"path":"work/OPENCV_EDGE_NOTCH_O3TC1/Invoke-O3TC1FreshConsoleShortTrigger.ps1","sha256":"E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB"},
+  "sourceInvocation": {"path":"work/OPENCV_EDGE_NOTCH_O3RO3/O3RO3_INVOCATION.json","sha256":"0BCA571C07E81105FA3A915F35DEC78B9D40EE77F9FBB13643EB8BA1C5779ED5"},
+  "payload": {"path":"work/OPENCV_EDGE_NOTCH_O3RO3/O3RO3_PROCESS_STATE_PAYLOAD.ps1","sha256":"A60E6FECA5CD83178FCF576E72B6A801C33BB06C8B7D6D1B02BF3D02A43E29E8"},
+  "transportTerminal": {"path":"work/OPENCV_EDGE_NOTCH_O3RO3/O3RO3_TRANSPORT_TERMINAL_GATE.json","mustExistForCollect":true},
+  "observationGate": {"path":"work/OPENCV_EDGE_NOTCH_O3RO3/O3RO3_OBSERVATION_GATE.json","createNew":true},
+  "expected": {
+    "schema": "argos_o3ro3_process_state_result_v1",
+    "state": "PASS_O3RO3_PROCESS_STATE_OBSERVATION",
+    "nonce": "O3RO3_PROCESS_STATE_20260828_912FB64C",
+    "scalar": "PASS_O3RO3_EXACT_PROCESS_STATE_OBSERVATION_20260828",
+    "computerName": "A1025645101",
+    "executablePath": "D:\\AFCV1\\rt\\python.exe",
+    "commandMarker": "import json,platform,cv2,numpy as np",
+    "maximumRows": 8,
+    "maximumCommandLineCharacters": 2048
+  },
+  "collectionContract": {
+    "maximumCollections": 1,
+    "remoteInputAllowed": false,
+    "clipboardTextOnly": true,
+    "maximumClipboardCharacters": 65536,
+    "zeroOneManyRowsSupported": true,
+    "exactRunnerResultPropertyContractRequired": true,
+    "localCreateNewEvidenceOnly": true,
+    "taskOrProcessManagementAllowed": false,
+    "targetPersistentMutationAllowed": false,
+    "retryAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

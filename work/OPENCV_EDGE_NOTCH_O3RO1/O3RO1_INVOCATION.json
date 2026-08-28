@@ -1,0 +1,52 @@
+{
+  "schema": "argos_o3tc1_fresh_console_short_trigger_invocation_v1",
+  "revision": "O3RO1_RUNTIME_VERSION_OBSERVATION_20260828",
+  "createdUtc": "2026-08-28T13:01:10.7192409Z",
+  "artifactLifecycle": "FROZEN",
+  "projectRoot": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab",
+  "entrypoint": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3TC1/Invoke-O3TC1FreshConsoleShortTrigger.ps1",
+    "sha256": "E9A5A9CA4F8A356ECE8E9F5E22258EF30D53C7C419E472EE37029C199B0C79EB"
+  },
+  "payload": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_RUNTIME_VERSION_PAYLOAD.ps1",
+    "sha256": "3FF90CF8ED092D747BE09F85BAA648ABF0DC4B1ABE371E89502066E618CEF3B0",
+    "characters": 4069
+  },
+  "terminalGatePath": "work/OPENCV_EDGE_NOTCH_O3RO1/O3RO1_TRANSPORT_TERMINAL_GATE.json",
+  "expectedComputerName": "A1025645101",
+  "rustDeskWindowTitle": "10.66.81.84",
+  "typedHostnameGate": "hostname|clip",
+  "typedPayloadTrigger": "iex(gcb -r)",
+  "maximumTypedCharacters": 32,
+  "timeoutSeconds": 90,
+  "freshConsole": {
+    "taskbarX": 337,
+    "taskbarY": 1118,
+    "fullScreenWidth": 1920,
+    "fullScreenHeight": 1200,
+    "openMethod": "MIDDLE_CLICK_PINNED_POWERSHELL_ICON"
+  },
+  "expectedResult": {
+    "schema": "argos_o3ro1_runtime_versions_result_v1",
+    "state": "PASS_O3RO1_RUNTIME_VERSION_OBSERVATION",
+    "nonce": "O3RO1_RUNTIME_VERSIONS_20260828_24B91C6E",
+    "scalar": "PASS_O3RO1_RUNTIME_VERSION_OBSERVATION_20260828"
+  },
+  "executionContract": {
+    "maximumExecutions": 1,
+    "retryAuthorized": false,
+    "freshConsoleOnly": true,
+    "allExistingConsolesMustRemainUntouched": true,
+    "exactSources": [
+      "D:/AFCV1/rt/python.exe",
+      "D:/AFCV1/INSTALLATION.json",
+      "Python imports platform, cv2, and numpy"
+    ],
+    "targetPersistentMutationAllowed": false,
+    "taskOrProcessManagementAllowed": false,
+    "imageReadAllowed": false,
+    "providerActivationAllowed": false,
+    "productionRoutingAllowed": false
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "argos_direct_observer_test_invocation_v1",
+  "createdUtc": "2026-08-28T13:42:54.4886133Z",
+  "artifactLifecycle": "FROZEN",
+  "projectRoot": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab",
+  "windowsPowerShell51": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "executor": {
+    "path": "work/ARGOS_DIRECT_OBSERVER_V1/Invoke-ArgosDirectObservation.ps1",
+    "sha256": "7F2051AC0EA16BE0D20E3EEEC86FBFBE9F4E5C982EF17E0EB1F7F2F877A8545C"
+  },
+  "request": {
+    "path": "work/ARGOS_DIRECT_OBSERVER_V1/LOCAL_PS51_GATE_REQUEST.json",
+    "sha256": "BCE0933FD68041F479ECBEA868D76907ADA96295A9EED1DCC425B7F6BC7F23ED"
+  },
+  "requestSchema": {
+    "path": "work/ARGOS_DIRECT_OBSERVER_V1/ARGOS_DIRECT_OBSERVATION_REQUEST.schema.json",
+    "sha256": "EAF4AE35296570B95DF885F9AC88D980BFFFED3AC657F1E1642BA3A2F1D8D50F"
+  },
+  "resultSchema": {
+    "path": "work/ARGOS_DIRECT_OBSERVER_V1/ARGOS_DIRECT_OBSERVATION_RESULT.schema.json",
+    "sha256": "B8FDE1122A182ABB7B2D96C79230CEC9C0591D5DC259FF409DF90FB0B3AD615A"
+  },
+  "expectedScalar": "PASS_ARGOS_DIRECT_OBSERVER_LOCAL_PS51_GATE_20260828",
+  "gatePath": "work/ARGOS_DIRECT_OBSERVER_V1/ARGOS_DIRECT_OBSERVER_V1_LOCAL_GATE.json",
+  "executionContract": {
+    "preflightCases": ["ZERO", "ONE", "MANY", "ERROR", "TIMEOUT"],
+    "rehearsalCases": ["ZERO", "ONE", "MANY", "ERROR", "TIMEOUT"],
+    "liveProviderExecutions": 1,
+    "remoteInputAllowed": false,
+    "clipboardChangeAllowed": false,
+    "taskOrProcessManagementAllowed": false,
+    "imageReadAllowed": false,
+    "targetPersistentMutationAllowed": false,
+    "productionRoutingAllowed": false
+  }
+}
