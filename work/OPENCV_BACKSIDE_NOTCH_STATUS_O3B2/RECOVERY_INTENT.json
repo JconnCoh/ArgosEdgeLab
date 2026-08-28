@@ -1,0 +1,77 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T20:00:00Z",
+  "incidentId": "OCV03_BACKSIDE_NOTCH_SOURCE_METADATA_CAPABILITY",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": true,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/pkg/payload/W.ps1",
+      "sha256": "750022568C62C2C049D04CE0D49E2FD52B5030A9701D8E453152129EB48D6F08"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_BACKSIDE_NOTCH_STATUS_DRAFT/O3B1_DRAFT_CONTRACT.json",
+      "sha256": "2542159E3F372B670D041A7C4DAB43D0781E504C910AF6AFCE6BC55AA39E0DCB"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_EXACT_ENDPOINT_GATE.json",
+      "sha256": "BC97C8D81F439D239CBF59B41EC1F663F2039751AD506FE59B279C72B21A8F45"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [{
+      "sourcePath": "D:/KLARFExport/PatternedFront/Lot_62627-193/62627-193_20260820124250/Slot01",
+      "sourceSchema": "argos_ocv00_deepest_alias_inventory_v1",
+      "selector": "exact configured JBOD_KLARF_EXPORT root plus signed safe relative subtree",
+      "uniquenessKey": "canonicalProvenancePath",
+      "maximumRows": 4096
+    }],
+    "requestedCapabilities": ["exactSubtreeMetadataInventory"],
+    "requestedFields": ["directories", "bmpLeaves", "byteLengths", "channelNames"],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "D",
+    "supportingObservation": {
+      "path": "work/OPENCV_BACKSIDE_NOTCH_STATUS_O3B2/CAPABILITY_GAP_OBSERVATION_EVIDENCE.json",
+      "sha256": "2A20A68E539D6AB219942E1F303C72686C79DA50140FFC210FEE730C0353FDD4"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "operatorAuthorization": "User message on 2026-08-28: Promote",
+    "boundedChange": "Add one configuration-pinned optional metadataInventory field to qualified STATUS; no task/process action and no image-byte read."
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

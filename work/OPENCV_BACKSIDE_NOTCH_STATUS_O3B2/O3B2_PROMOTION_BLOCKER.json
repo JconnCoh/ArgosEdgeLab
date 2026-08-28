@@ -1,0 +1,31 @@
+{
+  "schema": "argos_o3b2_promotion_blocker_v1",
+  "createdUtc": "2026-08-28T21:50:00Z",
+  "state": "BLOCKED_EXACT_INSTALLED_CONFIG_BYTES_REQUIRED",
+  "artifactLifecycle": "DRAFT",
+  "workerPayloadSha256": "70010A341A50369049AAE1FFCFB92CCF74555231582BE11793648758C054A7C1",
+  "configPayloadSha256": "DA034E3B1C060E09412A643E387DDBF2FFC695C4757EFC9CD2EC50E7B9FFA0E1",
+  "entrypointPayloadSha256": "D5FA66B9B47D2BBBCD30534CA5CBEA204372ADE5B318A9BD557B2A932C51E469",
+  "requiredPredecessor": {
+    "installedPath": "C:/ProgramData/ArgosProjectPortalRO/config/endpoint_jbod.json",
+    "bytes": 3144,
+    "sha256": "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F",
+    "rawBytesAvailableLocally": false
+  },
+  "searchEvidence": {
+    "trackedEndpointConfigCandidates": 1,
+    "exactMatches": 0,
+    "signedParsedEvidencePath": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+    "signedParsedEvidenceSha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+  },
+  "failedRehearsals": [
+    "work/OPENCV_BACKSIDE_NOTCH_STATUS_O3B2/O3B2_R1_REHEARSAL_FAILURE.json",
+    "work/OPENCV_BACKSIDE_NOTCH_STATUS_O3B2/O3B2_R2_REHEARSAL_FAILURE.json"
+  ],
+  "signingAuthorized": false,
+  "publicationAuthorized": false,
+  "portalOrJbodMutation": false,
+  "requiredNextEvidence": "byte-for-byte read-only acquisition of the exact installed endpoint_jbod.json predecessor",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

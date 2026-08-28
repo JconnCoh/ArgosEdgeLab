@@ -1,0 +1,47 @@
+diff --git a/work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/pkg/payload/W.ps1 b/work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/pkg/payload/W.ps1
+--- a/work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/pkg/payload/W.ps1
++++ b/work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/pkg/payload/W.ps1
+@@ -236,3 +236,3 @@
+ function Invoke-StatusHandler {
+     param([object]$Manifest,[string]$ResultRoot)
++    $parameters=Get-MemberValue $Manifest 'parameters' $null
++    $metadataRequest=Get-MemberValue $parameters 'metadataInventory' $null
++    $metadataInventory=$null
++    if($null-ne$metadataRequest-and[bool](Get-MemberValue $metadataRequest 'enabled' $false)){
++        $capability=Get-MemberValue $script:config 'metadataInventory' $null
++        if($null-eq$capability-or-not[bool](Get-MemberValue $capability 'enabled' $false)){throw 'STATUS metadata inventory is not configured.'}
++        $providerPath=[IO.Path]::GetFullPath([string](Get-MemberValue $capability 'providerPath' ''))
++        $providerSha=([string](Get-MemberValue $capability 'providerSha256' '')).ToUpperInvariant()
++        if($providerSha-notmatch'^[A-F0-9]{64}$'-or-not(Test-Path -LiteralPath $providerPath -PathType Leaf)){throw 'STATUS metadata inventory provider is not pinned and installed.'}
++        if((Get-FileHash -LiteralPath $providerPath -Algorithm SHA256).Hash-ne$providerSha){throw 'STATUS metadata inventory provider hash mismatch.'}
++        $rootName=[string](Get-MemberValue $capability 'approvedDataRoot' '')
++        $mapping=@($script:config.approvedDataRoots|Where-Object{[string]$_.name-eq$rootName})|Select-Object -First 1
++        if($null-eq$mapping){throw 'STATUS metadata inventory approved root is not configured.'}
++        $approvedRoot=[IO.Path]::GetFullPath([string]$mapping.path).TrimEnd('\')
++        $relativeSubtree=[string](Get-MemberValue $metadataRequest 'relativeSubtree' '')
++        if([string]::IsNullOrWhiteSpace($relativeSubtree)-or[IO.Path]::IsPathRooted($relativeSubtree)-or$relativeSubtree-match'(^|[\\/])\.\.?(?:[\\/]|$)'-or$relativeSubtree.IndexOfAny([char[]]'*?[]')-ge0){throw 'STATUS metadata inventory subtree is unsafe.'}
++        $aliasName=[string](Get-MemberValue $capability 'aliasName' '')
++        $maximumDepth=[int](Get-MemberValue $capability 'maximumDepth' 0)
++        $maximumEntries=[int](Get-MemberValue $capability 'maximumEntries' 0)
++        $maximumDirectories=[int](Get-MemberValue $capability 'maximumDirectories' 0)
++        $maximumBmpLeaves=[int](Get-MemberValue $capability 'maximumBmpLeaves' 0)
++        $timeoutSeconds=[int](Get-MemberValue $capability 'timeoutSeconds' 0)
++        if($aliasName-notmatch'^[A-Z]$'-or$maximumDepth-lt1-or$maximumDepth-gt8-or$maximumEntries-lt1-or$maximumEntries-gt20000-or$maximumDirectories-lt1-or$maximumDirectories-gt2048-or$maximumBmpLeaves-lt1-or$maximumBmpLeaves-gt2048-or$timeoutSeconds-lt30-or$timeoutSeconds-gt300){throw 'STATUS metadata inventory configured limits are invalid.'}
++        $inventoryPath=Join-Path $ResultRoot 'METADATA_INVENTORY.json'
++        $stderrPath=Join-Path $ResultRoot 'METADATA_INVENTORY.stderr.txt'
++        $arguments=@('-Inventory','-ApprovedRoot',$approvedRoot,'-RelativeSubtree',$relativeSubtree,'-AliasName',$aliasName,'-MaximumDepth',[string]$maximumDepth,'-MaximumEntries',[string]$maximumEntries,'-MaximumDirectories',[string]$maximumDirectories,'-MaximumBmpLeaves',[string]$maximumBmpLeaves,'-CanonicalProvenanceRoot',$approvedRoot)
++        $exit=Invoke-CapturedPowerShell -ScriptPath $providerPath -Arguments $arguments -Stdout $inventoryPath -Stderr $stderrPath -TimeoutSeconds $timeoutSeconds
++        if($exit-ne0){throw "STATUS metadata inventory provider failed with exit code $exit."}
++        $inventory=Get-Content -LiteralPath $inventoryPath -Raw|ConvertFrom-Json
++        if([string]$inventory.schema-ne'argos_ocv00_deepest_alias_inventory_v1'-or[string]$inventory.state-ne'COMPLETE'-or-not[bool]$inventory.complete-or-not[bool]$inventory.rootExists-or[string]$inventory.relativeSubtree-ne$relativeSubtree-or[string]$inventory.aliasAnchor-ne'EXACT_REQUESTED_SUBTREE_ROOT'){throw 'STATUS metadata inventory did not return the exact complete subtree.'}
++        if([int]$inventory.skippedPathRowCount-ne0-or[int]$inventory.accessErrorCount-ne0-or[int]$inventory.depthBoundaryDirectoryCount-ne0-or[bool]$inventory.truncated-or[bool]$inventory.filesRead-or[bool]$inventory.imageBytesRead-or[bool]$inventory.sourceHashingPerformed-or[bool]$inventory.mutationsPerformed){throw 'STATUS metadata inventory crossed or failed its read-only completeness boundary.'}
++        if([bool]$inventory.processLocalAlias.persistent-or-not[bool]$inventory.processLocalAlias.removed){throw 'STATUS metadata inventory alias cleanup failed.'}
++        $metadataInventory=[ordered]@{state='COMPLETE';providerSha256=$providerSha;approvedDataRoot=$rootName;relativeSubtree=$relativeSubtree;inventoryFile='METADATA_INVENTORY.json';directoryCount=[int]$inventory.directoryCount;bmpLeafCount=[int]$inventory.bmpLeafCount;otherLeafCount=[int]$inventory.otherLeafCount;filesRead=$false;imageBytesRead=$false;sourceHashingPerformed=$false;mutationsPerformed=$false}
++    }
+     $tasks=@()
+@@ -257,4 +291,3 @@
+-    $parameters=Get-MemberValue $Manifest 'parameters' $null
+     $environmentInventory=Get-EnvironmentInventory -Parameters $parameters
+-    Write-NewUtf8Json -Path (Join-Path $ResultRoot 'RESULT.json') -Value ([ordered]@{schema='argos_project_portal_status_result_v1';createdUtc=(Get-Date).ToUniversalTime().ToString('o');role=[string]$script:config.role;state='PASS_STATUS_COLLECTED';tasks=$tasks;installedHashes=$hashes;jsonStates=$jsonStates;logs=$logs;environmentInventory=$environmentInventory;reviewOnly=$true;productionRoutingEnabled=$false})
++    Write-NewUtf8Json -Path (Join-Path $ResultRoot 'RESULT.json') -Value ([ordered]@{schema='argos_project_portal_status_result_v1';createdUtc=(Get-Date).ToUniversalTime().ToString('o');role=[string]$script:config.role;state='PASS_STATUS_COLLECTED';tasks=$tasks;installedHashes=$hashes;jsonStates=$jsonStates;logs=$logs;environmentInventory=$environmentInventory;metadataInventory=$metadataInventory;reviewOnly=$true;productionRoutingEnabled=$false})
+     return 'PASS_STATUS_COLLECTED'

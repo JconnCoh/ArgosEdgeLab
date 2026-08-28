@@ -1,0 +1,42 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-28T21:45:00Z",
+  "incidentId": "OCV03_BACKSIDE_NOTCH_SOURCE_METADATA_CAPABILITY",
+  "state": "PASS_O3B2_BACKSIDE_METADATA_CAPABILITY_GAP_OBSERVED",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": true,
+  "mutationsPerformed": false,
+  "sources": [
+    {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "5EE1B37E88DE021E60E56EB30244CE86E878E90B1FDB064E76219EE676FB92CD",
+      "observed": "signature-verified JBOD endpoint configuration and approved JBOD_KLARF_EXPORT root"
+    },
+    {
+      "path": "work/OPENCV_OLS4/OLS4_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "2FE715B1ABCBAC8CCB5E09F2298C34FFEBB65F1D5D9A4130AFBB448DDC46E36D",
+      "observed": "signed terminal proof of the exact installed metadata-only deepest-subtree provider"
+    },
+    {
+      "path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json",
+      "sha256": "12BFF65114DFB1C20B8B4271CD592D80857CFE446595CB9F303868288F62F65E",
+      "observed": "qualified STATUS cannot enumerate a requested subtree and DATA_PULL requires exact leaf names"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3D2/O3D2_ADDITIONAL_BACKSIDE_CHIPOUT_REGRESSION_CANDIDATE.json",
+      "sha256": "0EA6FA053388FEE8E572CD7D896BEA8A16B4337F6AA950E477733A8632002832",
+      "observed": "exact lot/run/slot/backside directory is known while clean leaf, hash, and paired channel remain unresolved"
+    }
+  ],
+  "expectedObserved": [
+    {"field": "backside.cleanBmpLeaf", "expected": "one exact clean BrightfieldBacksideWafer BMP leaf", "observed": "UNAVAILABLE"},
+    {"field": "backside.pairedChannelLeaf", "expected": "one exact DarkfieldBacksideWafer BMP leaf for the same physical wafer", "observed": "UNAVAILABLE"},
+    {"field": "status.exactSubtreeMetadataInventory", "expected": "bounded complete metadata-only enumeration through the installed provider", "observed": "UNAVAILABLE_THROUGH_QUALIFIED_READ_ONLY_ROUTE"}
+  ],
+  "supportedDecision": "D",
+  "decision": "ONE_BOUNDED_GENERIC_READ_ONLY_ENDPOINT_CAPABILITY_IMPROVEMENT",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

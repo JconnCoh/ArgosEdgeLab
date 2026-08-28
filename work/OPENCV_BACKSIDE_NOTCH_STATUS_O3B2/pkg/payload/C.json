@@ -1,0 +1,62 @@
+{
+  "schema": "argos_project_portal_endpoint_config_v1",
+  "role": "JBOD",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false,
+  "incomingRoot": "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending",
+  "processedRoot": "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed",
+  "responseOutbox": "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending",
+  "stateRoot": "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state",
+  "requestVerifierPath": "C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Test-SignedPortalPackage.ps1",
+  "laptopSignerCertificatePath": "C:\\ProgramData\\ArgosProjectPortalRO\\certs\\ARGOS_PROJECT_PORTAL_LAPTOP_SIGNER_PUBLIC.cer",
+  "endpointSignerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+  "endpointSignerStoreLocation": "LocalMachine",
+  "approvedMaintenanceRoots": [
+    "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2"
+  ],
+  "approvedDataRoots": [
+    {
+      "name": "JBOD_PROCESSOR_REVIEW",
+      "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2"
+    },
+    {
+      "name": "JBOD_KLARF_EXPORT",
+      "path": "D:\\KLARFExport"
+    }
+  ],
+  "status": {
+    "tasks": [
+      "ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2",
+      "ArgosEdgeLab.ScribeProposal.ReviewOnly.V2",
+      "ArgosEdgeLab.InsiteBridge.Worker.ReviewOnly.V1",
+      "ArgosEdgeLab.InsiteBridge.Relay.ReviewOnly.V1",
+      "ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2"
+    ],
+    "hashFiles": [
+      "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Invoke-JbodAllWaferProcessingPass.ps1",
+      "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Reevaluate-JbodHeldScribeProposals.ps1",
+      "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Monitor-JbodAllWaferProcessor.ps1"
+    ],
+    "jsonFiles": [
+      "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json",
+      "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\SCRIBE_WORKER_STATUS.json",
+      "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_STATUS.json"
+    ],
+    "logs": [
+      "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\logs\\processor.log"
+    ]
+  },
+  "handlers": [],
+  "metadataInventory": {
+    "enabled": true,
+    "providerPath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03_MetadataProviderV1.ps1",
+    "providerSha256": "DFF2B3A54E9C6D30A003CF4CFC283FECA0F104B5D5A2929296A81D283CAA5675",
+    "approvedDataRoot": "JBOD_KLARF_EXPORT",
+    "aliasName": "F",
+    "maximumDepth": 8,
+    "maximumEntries": 20000,
+    "maximumDirectories": 2048,
+    "maximumBmpLeaves": 2048,
+    "timeoutSeconds": 120
+  }
+}

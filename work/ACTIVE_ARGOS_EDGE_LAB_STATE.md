@@ -1,8 +1,27 @@
-# Active ArgosEdgeLab state - OCV-03 O3Q8 signed Slot16 numeric hold - 2026-08-28
+# Active ArgosEdgeLab state - OCV-03 O3B3 backside metadata capability promoted locally - 2026-08-28
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3B3 backside metadata capability promoted locally — 2026-08-28
+
+Signed request `REQ_O3B3` has passed its final local package gate and is
+promoted locally but remains unpublished. It changes only the existing JBOD
+endpoint worker to add bounded read-only `STATUS.parameters.metadataInventory`
+support through the already-installed, hash-pinned provider. No endpoint
+configuration change is required. Final ZIP SHA-256 is
+`9CD28F3E60B7B949D676419E61015CDB83BDD056FBC8AEE2B5B8C2FFAD8104E6`;
+final gate SHA-256 is
+`10AD736B1F4F57705B7375055AF4CC12BEC2CE35DAD8412CFFE7A3131DCB6EF4`.
+
+Current checkpoint is
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B3_BACKSIDE_METADATA_CAPABILITY_PROMOTED_LOCAL_20260828.md`,
+SHA-256 `7006C828396C881FC8AB7599F6248D7BC73C2B558E9601FA48741848047EF2A1`.
+Stop before publication. An explicit `PUBLISH` is required for the one-shot,
+no-retry O3B3 transaction. Only after its matching signed response passes may
+a separate read-only STATUS request inventory the Slot01 backside BF/DF leaves.
+The frontside hotspot remains parked and the normal POST2 baseline is unchanged.
 
 ## OCV-03 O3Q8 signed Slot16 numeric hold — 2026-08-28
 

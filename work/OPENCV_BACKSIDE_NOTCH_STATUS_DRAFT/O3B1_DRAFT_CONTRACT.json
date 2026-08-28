@@ -1,0 +1,61 @@
+{
+  "schema": "argos_o3b1_status_metadata_inventory_draft_v1",
+  "state": "PASS_LOCAL_DRAFT_PATCH_PARSE",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "workerPredecessor": {
+    "path": "work/FIDUCIAL_JBOD_INVENTORY_CAPABILITY_FIC1/pkg/payload/W.ps1",
+    "sha256": "750022568C62C2C049D04CE0D49E2FD52B5030A9701D8E453152129EB48D6F08"
+  },
+  "endpointConfigPredecessor": {
+    "evidencePath": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+    "evidenceSha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "installedPath": "C:\\ProgramData\\ArgosProjectPortalRO\\config\\endpoint_jbod.json",
+    "installedSha256": "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F"
+  },
+  "patch": {
+    "path": "work/OPENCV_BACKSIDE_NOTCH_STATUS_DRAFT/O3B1_STATUS_METADATA_INVENTORY.patch",
+    "sha256": "FE21B00E8D5F68FD71A15FE03FDBCDD731AB012F78F8279898FECCCE4B79D66F",
+    "addedLines": 35,
+    "removedLines": 2,
+    "patchedWorkerSha256": "70010A341A50369049AAE1FFCFB92CCF74555231582BE11793648758C054A7C1"
+  },
+  "installedConfigurationAddition": {
+    "metadataInventory": {
+      "enabled": true,
+      "providerPath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03_MetadataProviderV1.ps1",
+      "providerSha256": "DFF2B3A54E9C6D30A003CF4CFC283FECA0F104B5D5A2929296A81D283CAA5675",
+      "approvedDataRoot": "JBOD_KLARF_EXPORT",
+      "aliasName": "F",
+      "maximumDepth": 8,
+      "maximumEntries": 20000,
+      "maximumDirectories": 2048,
+      "maximumBmpLeaves": 2048,
+      "timeoutSeconds": 120
+    }
+  },
+  "firstRequestParameters": {
+    "metadataInventory": {
+      "enabled": true,
+      "relativeSubtree": "PatternedFront/Lot_62627-193/62627-193_20260820124250/Slot01"
+    }
+  },
+  "expectedResult": {
+    "state": "PASS_STATUS_COLLECTED",
+    "metadataInventoryState": "COMPLETE",
+    "inventoryFile": "METADATA_INVENTORY.json",
+    "requiredBacksideChannels": [
+      "BrightfieldBacksideWafer",
+      "DarkfieldBacksideWafer"
+    ]
+  },
+  "sourceImageBytesRead": false,
+  "sourceHashingPerformed": false,
+  "sourceDeletionPerformed": false,
+  "taskActions": [],
+  "processActions": [],
+  "publicationAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

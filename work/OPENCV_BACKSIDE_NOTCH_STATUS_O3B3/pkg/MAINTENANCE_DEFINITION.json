@@ -1,0 +1,30 @@
+{
+  "targetRole":"JBOD",
+  "jobClass":"MAINTENANCE_PATCH",
+  "maxResultBytes":2097152,
+  "entryPoint":"payload/E.ps1",
+  "changes":[{
+    "source":"payload/E.ps1",
+    "destination":"C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03_O3B3_STATUS_CAPABILITY.ps1",
+    "approvedPredecessorSha256":["50F44439FEB90314D63620D6501E6C9650A0D3ADDDA2F3EEA227987D9E717E12"],
+    "installedSha256":"50F44439FEB90314D63620D6501E6C9650A0D3ADDDA2F3EEA227987D9E717E12",
+    "allowCreate":true
+  }],
+  "entryPointMutations":[{
+    "destination":"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosProjectPortalEndpointWorker.ps1",
+    "approvedPredecessorSha256":["750022568C62C2C049D04CE0D49E2FD52B5030A9701D8E453152129EB48D6F08","047BB0D79999F1FF2A9FF9373C9B34C9A7BDE82AAFE0605E1929A10ACBEBF988"],
+    "installedSha256":"047BB0D79999F1FF2A9FF9373C9B34C9A7BDE82AAFE0605E1929A10ACBEBF988",
+    "transaction":"ENTRYPOINT_ATOMIC_SELF_UPDATE_WITH_HASH_PINNED_PROVIDER_AND_ROLLBACK"
+  }],
+  "entryPointOutputs":[{
+    "path":"C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03_O3B3_STATUS_CAPABILITY.json",
+    "mode":"CREATE_NEW",
+    "schema":"argos_o3b3_status_capability_result_v1",
+    "requiredState":"PASS_O3B3_STATUS_METADATA_CAPABILITY_INSTALLED"
+  }],
+  "allowedTaskActions":[],
+  "allowedProcessActions":[],
+  "rehearsal":{"requiredState":"PASS_O3B3_STATUS_METADATA_CAPABILITY_INSTALLED"},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

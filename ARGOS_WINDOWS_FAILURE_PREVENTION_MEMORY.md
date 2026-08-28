@@ -1,5 +1,13 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### Casting a parsed JSON object to string before `ConvertTo-Json` destroys the predecessor bytes
+
+- Signature: an exact predecessor rehearsal is refused because the fixture config hash differs from the pinned installed config even though its source evidence contains the correct parsed object.
+- Cause: the fixture used `[string]$evidence.endpointConfig | ConvertTo-Json`; the cast occurred before serialization and converted the object to a display string rather than JSON object data.
+- Preflight: pipe the parsed object itself to `ConvertTo-Json` under the exact installed Windows PowerShell host, then require the reconstructed byte count and SHA-256 to equal the signed installed-config evidence before launching the entrypoint.
+- Recovery: preserve the failed fixture root and executed harness revision, create a fresh harness and fixture root, remove the premature string cast, and rerun all parser, harness, preaction, and predecessor gates. Do not loosen the production predecessor hash.
+- First observed: OCV-03 O3B2 local entrypoint rehearsal R1 on 2026-08-28. The installer stopped before swapping either target file; no portal, JBOD, task, process, source, image, wafer, or production action occurred.
+
 ### Raster provenance and DOM gates do not prove that a detector contour is semantically correct
 
 - Signature: a hash-complete, mask-bounded, real-browser-loaded gallery is
