@@ -1,0 +1,14 @@
+{
+  "schema":"argos_recovery_intent_v1",
+  "createdUtc":"2026-08-28T22:12:20Z",
+  "incidentId":"OCV03_O3B3_STALE_PREDECESSOR_TO_O3B5_EXISTING_STATUS_OBSERVATION",
+  "mode":"OBSERVE",
+  "artifactLifecycle":"DRAFT",
+  "policy":{"path":"work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json","sha256":"F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory":{"signedPremiseFailures":1,"localPremiseFailures":0,"directObservationAfterLastSignedFailure":true,"mutationStopLossExplicitlyCleared":false,"failureEvidence":[{"path":"work/OPENCV_BACKSIDE_NOTCH_STATUS_O3B5/O3B3_SIGNED_FAILURE_CLASSIFICATION.json","sha256":"309D0E565E5452F6C768D6CAFFBD7B8E2B622894A3B18104274D415520F7732A","state":"FAILED"}],"postFailureObservation":{"path":"work/OPENCV_BACKSIDE_NOTCH_STATUS_O3B5/O3B3_POST_FAILURE_OBSERVATION.json","sha256":"DBAF488A00C8E4B45DFAEEA58B64E19856D6DAD01AB1D2BD1706A5C007E1916C"},"workflowReviewClearance":{"path":"","sha256":""}},
+  "route":{"type":"STATUS","jobClass":"STATUS","installedCodeChange":false,"helperInstall":false,"taskActions":[],"processActions":[],"queueMutation":false,"ledgerMutation":false,"sourceMutation":false,"imageRead":false,"waferAction":false,"inheritsQualifiedEndpointGate":true,"endpointWorker":{"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},"installedConfigEvidence":{"path":"work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json","sha256":"465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"},"capabilityEvidence":{"path":"work/OPENCV_BACKSIDE_NOTCH_STATUS_O3B5/STATUS_CAPABILITY_INVENTORY.json","sha256":"8CAE1C8A6E5749191CB819E52FF76AEA54FAD96EE207CC26AE760DB697F24AE7"},"qualifiedEndpointGate":{"path":"work/OPENCV_OLS3/OLS3_COMPLETE_ROUTE_GATE.json","sha256":"932C792DA3095FA43FF1749775D7F4BD3473FA6043ABE86C449FBA16A3914F3A"},"qualifiedAdminGate":{"path":"","sha256":""}},
+  "observation":{"exactSources":[{"sourcePath":"JBOD_KLARF_EXPORT/PatternedFront/Lot_62627-193/62627-193_20260820124250/Slot01","sourceSchema":"argos_bounded_subtree_inventory_v1","selector":"exact configured-root-relative subtree","uniquenessKey":"relativePath","maximumRows":10000}],"requestedCapabilities":["environmentInventory.boundedSubtreeInventory"],"requestedFields":["directories","bmpLeaves","counts","completeness","path budgets","read/mutation flags"],"decisionOptions":["A","B","C","D"],"mutationDecisionDeferred":true},
+  "mutation":{"supportedRemedy":"","supportingObservation":{"path":"","sha256":""},"endpointMutationNecessary":false,"singleMutationAttemptAuthorized":false},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

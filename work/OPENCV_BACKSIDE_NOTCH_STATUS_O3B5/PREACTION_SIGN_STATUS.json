@@ -1,0 +1,25 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v2",
+  "revision":"OCV03_O3B5_SIGN_EXISTING_STATUS_OBSERVATION_20260828",
+  "createdUtc":"2026-08-28T22:13:53Z",
+  "state":"PASS_PREACTION_CONTRACT",
+  "actionType":"SIGN_ONE_READ_ONLY_STATUS_REQUEST_USING_INSTALLED_QUALIFIED_OLS3_CAPABILITY",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies":[
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_STATUS_O3B5/RECOVERY_INTENT.json","sha256":"98B7A38014D8CA02E9F832F83B14FA5E6E4F2B3D76AC625DA391F867C7A14458"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_STATUS_O3B5/STATUS_DEFINITION.json","sha256":"293AF2CCD33B455B6AD063E1DC93C2A7B8141553A830A82326F18DAA3CFB0AC1"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_STATUS_O3B5/O3B3_SIGNED_FAILURE_CLASSIFICATION.json","sha256":"309D0E565E5452F6C768D6CAFFBD7B8E2B622894A3B18104274D415520F7732A"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_STATUS_O3B5/O3B3_POST_FAILURE_OBSERVATION.json","sha256":"DBAF488A00C8E4B45DFAEEA58B64E19856D6DAD01AB1D2BD1706A5C007E1916C"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_STATUS_O3B5/STATUS_CAPABILITY_INVENTORY.json","sha256":"8CAE1C8A6E5749191CB819E52FF76AEA54FAD96EE207CC26AE760DB697F24AE7"},
+    {"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    {"path":"work/OPENCV_OLS3/OLS3_COMPLETE_ROUTE_GATE.json","sha256":"932C792DA3095FA43FF1749775D7F4BD3473FA6043ABE86C449FBA16A3914F3A"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/New-SignedPortalPackage.ps1","sha256":"8AF7AF26B6899CB6475735FEE8AB6E5A29231AAED8EDA898F1E7F4B04A2A403F"}
+  ],
+  "controls":{"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence":{"path":"work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json","sha256":"17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":["O3B3","O3B4"]},
+  "boundedAction":{"signaturesMaximum":1,"publicationsMaximum":0,"jobClass":"STATUS","installedCodeChange":false,"taskActions":[],"processActions":[],"imageRead":false,"sourceHashing":false,"sourceMutation":false,"sourceDeletion":false,"waferAction":false},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}
