@@ -4,24 +4,26 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
-## OCV-03 O3Q5 local runtime-gate consumer contract repair pass — 2026-08-28
+## OCV-03 O3Q5 local package consumer pass — 2026-08-28
 
 - Current checkpoint:
-  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q5_LOCAL_RUNTIME_GATE_CONSUMER_CONTRACT_REPAIR_PASS_20260828.md`,
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q5_LOCAL_PACKAGE_CONSUMER_PASS_20260828.md`,
   SHA-256
-  `9ED5426C5D9518EB0CC453D09BE0DFB4A1DE213960C3B0CC30A46A81E8CC7842`.
-- Exact O3Q4 runtime-gate SHA-256
-  `09DEEF0BC1C0DC9464F5BF5CE93EF590F2780F3123BB13AB6080358E562C68C4`
-  reproduced the old consumer rejection and passed the O3Q5 adapter with zero
-  image reads. Four bounded wrong-hash/state/version cases rejected.
-- O3Q5 adapter SHA-256 is
-  `4A641397B787767ECCAABF3345490AF0E9E5F0C26F7EE8498CF58319E07D85F3`;
-  it delegates detector behavior to unchanged O3P8 SHA-256
-  `41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36`.
+  `DF4617B432C96834BA6BF08768F9AD1C7A094CA70B2E5D438A88D6251051008A`.
+- Local package:
+  `work/OPENCV_EDGE_NOTCH_O3Q5/package/O3Q5_LOCAL_PACKAGE.ready.zip`,
+  SHA-256
+  `1136ECB0B33EB356B15ECB3833B901DC2DC7BB85DF91D0134773AB7FABDE5EB5`.
+  It is unsigned, unpublished, and `DIAGNOSTIC_ONLY`.
+- The exact packaged adapter accepted the byte-exact gate; wrong hash, wrong
+  expected state, failed state, and wrong NumPy version rejected. Image reads
+  and live actions were zero. Machine-gate SHA-256 is
+  `110CCDF9ACDBB43774183E7F89DADA478FC77E183EA5366C64CB950216B1F41A`.
 - Runtime is closed at Python `3.13.2`, OpenCV `5.0.0`, and NumPy `2.5.2`.
-  Do not re-observe it or use substitute fixtures. No live request is
-  authorized; next is only fresh O3Q5 local endpoint/job integration plus the
-  exact packaged-consumer test. All withdrawals, holds, and authority remain.
+  Do not re-observe it or use substitute fixtures. Next is one fresh O3Q6
+  Slot16 numeric successor using locked BF/DF hashes and unchanged O3P8
+  detector/config, with full exact-package gates before signing/publication.
+  No live request is authorized by this checkpoint; all holds remain.
 
 ## OCV-03 O3SO3 schema observer process-API timeout / capability gap — 2026-08-28
 

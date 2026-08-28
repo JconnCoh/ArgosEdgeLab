@@ -1,8 +1,41 @@
-# Active ArgosEdgeLab state - OCV-03 O3Q5 local runtime-gate consumer contract repair pass - 2026-08-28
+# Active ArgosEdgeLab state - OCV-03 O3Q5 local package consumer pass - 2026-08-28
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3Q5 local package consumer pass — 2026-08-28
+
+Unsigned local package
+`work/OPENCV_EDGE_NOTCH_O3Q5/package/O3Q5_LOCAL_PACKAGE.ready.zip`, SHA-256
+`1136ECB0B33EB356B15ECB3833B901DC2DC7BB85DF91D0134773AB7FABDE5EB5`,
+was built exactly once from the repaired adapter, unchanged frozen O3P8
+engine, byte-exact captured runtime gate, and file-backed job-runtime contract.
+It is frozen local `DIAGNOSTIC_ONLY` evidence, not a signed or published live
+request.
+
+The exact adapter extracted from the ZIP accepted the exact gate and rejected
+wrong hash, wrong expected state, failed state, and wrong NumPy version. Image
+reads and live/task/process/provider/source/hold/algorithm actions were zero.
+Machine gate SHA-256 is
+`110CCDF9ACDBB43774183E7F89DADA478FC77E183EA5366C64CB950216B1F41A`.
+Runtime remains closed at Python `3.13.2`, OpenCV `5.0.0`, and NumPy `2.5.2`;
+do not observe it again or use a substitute fixture.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q5_LOCAL_PACKAGE_CONSUMER_PASS_20260828.md`,
+SHA-256 `DF4617B432C96834BA6BF08768F9AD1C7A094CA70B2E5D438A88D6251051008A`.
+
+Exact next action is one fresh independent O3Q6 Slot16 numeric successor using
+the locked BF/DF hashes, unchanged O3P8 detector/configuration, and O3Q5
+adapter/job-runtime contract as locked inputs. Its final endpoint/job package
+must pass all exact construction, path, route, wrapper/harness, recurrence,
+and packaged-consumer gates before signing or publication. This checkpoint
+does not authorize a live request. O3Q2/O3Q4 and all earlier artifacts retain
+their withdrawal/no-retry/non-parent state. All stranded console/process,
+BF Slot16 partial-coverage, backside, fiducial/map/pose/registration/coverage/
+sensitivity/alignment, XML, training, production, provider, processor, source,
+and hold restrictions remain unchanged.
 
 ## OCV-03 O3Q5 local runtime-gate consumer contract repair pass — 2026-08-28
 

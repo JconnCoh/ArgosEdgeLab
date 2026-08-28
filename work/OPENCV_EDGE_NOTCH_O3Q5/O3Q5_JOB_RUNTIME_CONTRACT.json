@@ -1,0 +1,35 @@
+{
+  "schema": "argos_ocv03_o3q5_job_runtime_contract_v1",
+  "revision": "OCV03_O3Q5_LOCAL_PACKAGE_INTEGRATION_20260828",
+  "createdUtc": "2026-08-28T16:33:05Z",
+  "state": "LOCKED_INPUT",
+  "consumerJobSchema": "argos_ocv03_o3p8_front_split_notch_job_v1",
+  "packagedRuntimeGatePath": "payload/runtime/O3Q4_RUNTIME_GATE.json",
+  "packagedRuntimeGateSha256": "09DEEF0BC1C0DC9464F5BF5CE93EF590F2780F3123BB13AB6080358E562C68C4",
+  "requiredJobFields": {
+    "expectedRuntimeGateSchema": "argos_ocv03_o3q4_jbod_runtime_binding_gate_v1",
+    "expectedRuntimeGateState": "PASS_O3RV1_FILE_BACKED_JBOD_RUNTIME_PREMISE",
+    "expectedRuntimeTargetRole": "JBOD",
+    "expectedPythonVersion": "3.13.2",
+    "expectedRuntimeSha256": "7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1",
+    "expectedRuntimeInstallationSha256": "1289EC11F092233D3AAB5ACF416B0212F1874F698F9BBC2B474829939BCDF596",
+    "expectedOpenCvVersion": "5.0.0",
+    "expectedNumpyVersion": "2.5.2"
+  },
+  "authority": {
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "providerActivationAllowed": false,
+    "runtimeReobservationAllowed": false,
+    "imageReadAllowedByContractTest": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "taskActionAllowed": false,
+    "processActionAllowed": false,
+    "holdClearanceAllowed": false,
+    "thresholdOrAlgorithmChangeAllowed": false
+  }
+}

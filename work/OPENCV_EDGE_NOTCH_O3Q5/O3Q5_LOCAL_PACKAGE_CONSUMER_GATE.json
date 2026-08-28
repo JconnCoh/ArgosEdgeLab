@@ -1,0 +1,88 @@
+{
+  "schema": "argos_ocv03_o3q5_local_package_consumer_gate_v1",
+  "revision": "OCV03_O3Q5_LOCAL_PACKAGE_CONSUMER_PASS_20260828",
+  "createdUtc": "2026-08-28T16:37:24Z",
+  "state": "PASS_O3Q5_LOCAL_PACKAGE_CONSUMER",
+  "classification": "DIAGNOSTIC_ONLY",
+  "packageLifecycle": "FROZEN_LOCAL_TESTED_UNSIGNED_NOT_PUBLISHED",
+  "preactionContract": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q5/PREACTION_O3Q5_LOCAL_PACKAGE_INTEGRATION.json",
+    "sha256": "BEFDF7BF92B0E69434FF5FAB90034356D433415CCECD0E96932673F749B90476",
+    "resultState": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION",
+    "dependencyCount": 14
+  },
+  "package": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q5/package/O3Q5_LOCAL_PACKAGE.ready.zip",
+    "sha256": "1136ECB0B33EB356B15ECB3833B901DC2DC7BB85DF91D0134773AB7FABDE5EB5",
+    "byteLength": 11444,
+    "memberCount": 5,
+    "buildCount": 1,
+    "published": false,
+    "signed": false,
+    "liveReusable": false
+  },
+  "manifest": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q5/O3Q5_LOCAL_PACKAGE_MANIFEST.json",
+    "sha256": "FDCE2B01CE5A15A1A28A75F9CB738B8A143B9543E2786B62D43338466C61655E"
+  },
+  "implementation": {
+    "builderPath": "work/OPENCV_EDGE_NOTCH_O3Q5/Build-O3Q5LocalPackage.py",
+    "builderSha256": "48D0ADFD58A9C1EEEF20E1E6FDBBE9CB4034D5D690929727F8D7CC3EDEE6DFDC",
+    "testerPath": "work/OPENCV_EDGE_NOTCH_O3Q5/Test-O3Q5LocalPackage.py",
+    "testerSha256": "F671D50DF209A217A593A282E7B516668B9CD0BCF4F0D697B6DC7EE33BBE42A3",
+    "consumerContractTestPath": "work/OPENCV_EDGE_NOTCH_O3Q5/Test-O3Q5RuntimeGateConsumer.py",
+    "consumerContractTestSha256": "9E1B2C693ADF9B18ECCE302EF60FF7708B1EC73F7E680A03E48376039C585271",
+    "pythonAstParsePassed": true,
+    "powershellWrapperGateApplicable": false,
+    "powershellHarnessGateApplicable": false,
+    "cloneLiteralRemediationGateApplicable": false
+  },
+  "payload": {
+    "adapterSha256": "4A641397B787767ECCAABF3345499AF0E9E5F0C26F7EE8498CF58319E07D85F3",
+    "frozenO3P8EngineSha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36",
+    "exactRuntimeGateSha256": "09DEEF0BC1C0DC9464F5BF5CE93EF590F2780F3123BB13AB6080358E562C68C4",
+    "jobRuntimeContractSha256": "9BEE718266F63F4576AE3821E8A19548A285DF3BCFC62F5070532F4FAC9555A7",
+    "withdrawnO3Q4EndpointOrExecutionParentIncluded": false
+  },
+  "pathSafety": {
+    "gatePath": "work/OPENCV_EDGE_NOTCH_O3Q5/O3Q5_LOCAL_PACKAGE_PATH_GATE.json",
+    "gateSha256": "C90711FEE9604DB5C134241D488DA471867391759A3EA7BF81D8C49F6E111FDD",
+    "state": "PASS_PATH_BUDGET",
+    "maximumEffectiveLength": 186,
+    "maximumComponentLength": 36
+  },
+  "consumerCases": [
+    {"caseId": "EXACT_O3Q4_GATE", "passed": true, "observedError": ""},
+    {"caseId": "WRONG_GATE_HASH", "passed": true, "observedError": "O3P8 runtime gate changed."},
+    {"caseId": "WRONG_EXPECTED_STATE", "passed": true, "observedError": "O3P8 runtime gate state changed."},
+    {"caseId": "FAILED_GATE_STATE", "passed": true, "observedError": "O3P8 runtime gate state changed."},
+    {"caseId": "WRONG_GATE_NUMPY_VERSION", "passed": true, "observedError": "O3P8 runtime gate NumPy version changed."}
+  ],
+  "runtimeEvidenceDisposition": {
+    "runtimeReobserved": false,
+    "substituteRuntimeGateFixtureUsed": false,
+    "exactCapturedRuntimeGateConsumed": true,
+    "pythonVersion": "3.13.2",
+    "opencvVersion": "5.0.0",
+    "numpyVersion": "2.5.2"
+  },
+  "executionCounts": {
+    "imageReadCount": 0,
+    "liveRequestCount": 0,
+    "taskActionCount": 0,
+    "processActionCount": 0,
+    "providerActivationCount": 0,
+    "sourceMutationCount": 0,
+    "sourceDeletionCount": 0,
+    "holdClearanceCount": 0,
+    "thresholdOrAlgorithmChangeCount": 0
+  },
+  "authority": {
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "liveRequestAuthorized": false
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema": "argos_ocv03_o3q5_local_consumer_package_v1",
+  "revision": "OCV03_O3Q5_LOCAL_PACKAGE_INTEGRATION_20260828",
+  "createdUtc": "2026-08-28T16:33:05Z",
+  "state": "DRAFT_LOCAL_BUILD",
+  "packageManifestPath": "O3Q5_LOCAL_PACKAGE_MANIFEST.json",
+  "outputRelativePath": "work/OPENCV_EDGE_NOTCH_O3Q5/package/O3Q5_LOCAL_PACKAGE.ready.zip",
+  "preactionContract": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q5/PREACTION_O3Q5_LOCAL_PACKAGE_INTEGRATION.json",
+    "schema": "argos_zero_recurrence_preaction_v2",
+    "revision": "OCV03_O3Q5_LOCAL_PACKAGE_INTEGRATION_20260828",
+    "requiredState": "PASS_PREACTION_CONTRACT"
+  },
+  "pathSafetyGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q5/O3Q5_LOCAL_PACKAGE_PATH_GATE.json",
+    "sha256": "C90711FEE9604DB5C134241D488DA471867391759A3EA7BF81D8C49F6E111FDD",
+    "maximumEffectiveLengthExclusive": 200,
+    "maximumComponentLength": 80,
+    "suffixReserve": 16
+  },
+  "payload": [
+    {
+      "role": "O3Q5_RUNTIME_GATE_ADAPTER",
+      "sourcePath": "work/OPENCV_EDGE_NOTCH_O3Q5/Detect-O3Q5FrontSplitNotches.py",
+      "sha256": "4A641397B787767ECCAABF3345499AF0E9E5F0C26F7EE8498CF58319E07D85F3",
+      "packagePath": "payload/OPENCV_EDGE_NOTCH_O3Q5/Detect-O3Q5FrontSplitNotches.py"
+    },
+    {
+      "role": "FROZEN_O3P8_DETECTOR",
+      "sourcePath": "work/OPENCV_EDGE_NOTCH_O3P8/Detect-O3P8FrontSplitNotches.py",
+      "sha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36",
+      "packagePath": "payload/OPENCV_EDGE_NOTCH_O3P8/Detect-O3P8FrontSplitNotches.py"
+    },
+    {
+      "role": "EXACT_FILE_BACKED_RUNTIME_GATE",
+      "sourcePath": "work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_RUNTIME_GATE.json",
+      "sha256": "09DEEF0BC1C0DC9464F5BF5CE93EF590F2780F3123BB13AB6080358E562C68C4",
+      "packagePath": "payload/runtime/O3Q4_RUNTIME_GATE.json"
+    },
+    {
+      "role": "JOB_PINNED_RUNTIME_CONTRACT",
+      "sourcePath": "work/OPENCV_EDGE_NOTCH_O3Q5/O3Q5_JOB_RUNTIME_CONTRACT.json",
+      "sha256": "9BEE718266F63F4576AE3821E8A19548A285DF3BCFC62F5070532F4FAC9555A7",
+      "packagePath": "payload/contracts/O3Q5_JOB_RUNTIME_CONTRACT.json"
+    }
+  ],
+  "requiredNestedRelationship": {
+    "adapterPackagePath": "payload/OPENCV_EDGE_NOTCH_O3Q5/Detect-O3Q5FrontSplitNotches.py",
+    "frozenEnginePackagePath": "payload/OPENCV_EDGE_NOTCH_O3P8/Detect-O3P8FrontSplitNotches.py"
+  },
+  "runtimeBinding": {
+    "schema": "argos_ocv03_o3q4_jbod_runtime_binding_gate_v1",
+    "state": "PASS_O3RV1_FILE_BACKED_JBOD_RUNTIME_PREMISE",
+    "targetRole": "JBOD",
+    "pythonVersion": "3.13.2",
+    "pythonSha256": "7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1",
+    "installationSha256": "1289EC11F092233D3AAB5ACF416B0212F1874F698F9BBC2B474829939BCDF596",
+    "opencvVersion": "5.0.0",
+    "numpyVersion": "2.5.2"
+  },
+  "withdrawnArtifactBoundary": {
+    "withdrawnArtifactIds": ["O3Q2", "O3Q4"],
+    "endpointOrExecutionParentInherited": false,
+    "exactRuntimeEvidenceRetainedAsLockedInput": true
+  },
+  "authority": {
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "liveRequestAuthorized": false,
+    "providerActivationAllowed": false,
+    "runtimeReobservationAllowed": false,
+    "imageReadAllowed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "taskActionAllowed": false,
+    "processActionAllowed": false,
+    "holdClearanceAllowed": false,
+    "thresholdOrAlgorithmChangeAllowed": false
+  }
+}
