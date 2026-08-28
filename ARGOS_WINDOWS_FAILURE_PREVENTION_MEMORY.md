@@ -9737,3 +9737,60 @@ than rerunning it.
   contract.  Use a fresh O3P8 namespace with unchanged detector, job values,
   and thresholds; add the terminal-schema fixture gate, then perform at most
   one fresh POST2 run.
+
+## 2026-08-28 — PowerShell keywords require token separation from type literals
+
+- Failure signature: the first exact O3Q1 signed-package rehearsal extracted
+  and signature-verified the frozen request and created only bounded local
+  predecessor fixtures under `C:\A3Q1R`, then stopped with `The term
+  'return[ordered]@' is not recognized` while entering the invocation-object
+  helper.  No endpoint preflight or execution occurred, no image bytes were
+  read, `S:` was never created, and neither `C:\A3Q1F` nor `C:\A3Q1P` was
+  created.
+- Cause: the generated Windows PowerShell 5.1 harness omitted required token
+  separation between the `return` keyword and the `[ordered]` type literal.
+  The AST parser accepted the text, but runtime command resolution treated the
+  joined token as a command name.
+- Mandatory preflight: reject keyword/type, keyword/quoted-string, and
+  keyword/expression adjacency in generated PowerShell (`return[`, `throw'`,
+  `throw"`, `throw(`, and equivalent forms).  Exercise
+  every helper at least once through the exact Windows PowerShell 5.1
+  preflight branch; parsing and static harness inspection do not prove that a
+  helper's body tokenizes as intended at runtime.
+- Recovery: preserve `Test-O3Q1FinalPackage.ps1` and `C:\A3Q1R` as withdrawn
+  harness evidence.  Do not reuse their namespace.  Use a fresh R2 harness,
+  `C:\A3Q1R2`, injected-failure root `C:\A3Q1F2`, success root
+  `C:\A3Q1P2`, and a create-new R2 gate.  The signed O3Q1 ZIP is unchanged
+  and remains eligible for exact-package rehearsal because the failure was in
+  the external local harness before endpoint invocation.
+
+- Follow-on application: O3Q1 package rehearsal R3 proved its success path,
+  timeout quarantine, and alias cleanup, but its captured injected-failure
+  message exposed `throw'O3Q1 ...'` inside the already signed endpoint.  That
+  signed request was withdrawn before publication.  A successor must use a
+  fresh request/output namespace and prove the intended timeout exception text
+  as well as quarantine and cleanup; the signed O3Q1 ZIP is not reusable.
+
+## 2026-08-28 — Rehearsal alias and frozen job paths must name the same drive
+
+- Failure signature: O3Q1 exact-package rehearsal R2 signature-verified the
+  signed ZIP, passed the extracted endpoint preflight, and proved the injected
+  timeout was quarantined under `C:\A3Q1F2.failed`.  Its subsequent success
+  case created and verified `S:`, but the frozen local rehearsal job contract
+  still named `Q:`.  The unchanged engine therefore failed resolving the BF
+  leaf before hashing or decoding; the endpoint quarantined the attempt under
+  `C:\A3Q1P2.failed` and removed `S:`.
+- Cause: the outer harness independently selected the process-local alias
+  drive without mechanically comparing it to the drive prefix of every frozen
+  source path in the job contract.  Endpoint preflight proved seed/config and
+  terminal schemas but did not assert that relationship.
+- Mandatory preflight: parse every frozen input source path, require one exact
+  common drive prefix, and require it to equal `sourceAliasDrive` before alias
+  creation or output write.  Package rehearsals must use that exact drive and
+  exercise both injected-failure and success paths.  Alias existence alone is
+  insufficient.
+- Recovery: preserve the R2 harness, `C:\A3Q1R2`,
+  `C:\A3Q1F2.failed`, and `C:\A3Q1P2.failed` as withdrawn local evidence.
+  Use a fresh R3 harness with `Q:` and fresh `C:\A3Q1R3`,
+  `C:\A3Q1F3`, and `C:\A3Q1P3` namespaces.  The signed live O3Q1 request is
+  unchanged: its frozen job sources and invocation both name `F:`.

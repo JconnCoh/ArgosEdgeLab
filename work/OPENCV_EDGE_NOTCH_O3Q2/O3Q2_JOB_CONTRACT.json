@@ -1,0 +1,81 @@
+{
+  "schema": "argos_ocv03_o3q1_job_contract_v1",
+  "revision": "O3Q2_SLOT16_HOTSPOT_BF_TOPOLOGY_DF_RADIAL_20260828",
+  "engineJobSchema": "argos_ocv03_o3p8_front_split_notch_job_v1",
+  "expectedEngineSha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36",
+  "expectedSeedCandidateCount": 21,
+  "expectedInputCount": 1,
+  "channelMethods": {
+    "BF": "O3L8_TOP_CONNECTED_TOPOLOGY_MEASURED_CONTOUR",
+    "DF": "FROZEN_R6_OUTER_EDGE_RADIAL_FULL_360"
+  },
+  "crop": {"widthPx": 1000, "inwardPx": 420, "outwardPx": 180},
+  "topologyConfig": {
+    "revision": "O3L8_TOPOLOGY_AXIS_CONTOUR_OVERLAY_V1",
+    "clahe": 2.5,
+    "exteriorStartY": 510,
+    "exteriorEndY": 585,
+    "minimumExteriorScale": 3.0,
+    "waferDistanceThreshold": 2.5,
+    "dieStreetCloseKernelPx": 17,
+    "topContactRowsPx": 12,
+    "minimumTopContactPixels": 100,
+    "minimumWaferAreaPx": 150000,
+    "maximumInwardPx": 180,
+    "maximumOutwardPx": 55,
+    "supportSampleOffsetPx": 8,
+    "minimumContourCoverage": 0.95,
+    "maximumInterpolatedGapPx": 20
+  },
+  "corroboration": {
+    "contourSmoothingSigmaPx": 2.0,
+    "shoulderSpansPx": [64, 96, 128, 160, 200],
+    "seedIntervalMarginDegrees": 0.75,
+    "unseededSearchHalfWidthDegrees": 2.0,
+    "minimumContourProminencePx": 3.0,
+    "minimumTopologyToDfRadialDepthRatio": 0.10,
+    "minimumMeanSupport": 0.45,
+    "minimumTipSupport": 0.30,
+    "minimumDfRadialIntervalWidthDegrees": 0.9,
+    "maximumDfRadialIntervalWidthEnabled": false,
+    "maximumBfDfAngleDifferenceDegrees": 1.5,
+    "maximumSeedCountPerWafer": 64,
+    "multipleEligibleDecision": "HOLD",
+    "zeroEligibleDecision": "HOLD"
+  },
+  "candidateLocalTopologyErrors": [
+    "Lower-side contour-noise population is empty.",
+    "No top-connected wafer component qualified.",
+    "Top-connected wafer component has no external contour.",
+    "Wafer contour covers fewer than two columns."
+  ],
+  "input": {
+    "identity": "62629-419_20260824112405_SLOT16",
+    "bf": {
+      "path": "F:/62629-419_20260824112405/Slot16/BrightfieldFrontsideWafer/resizedImage/62629-419_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "bytes": 475379874,
+      "sha256": "3F98D5B506B3EF6E18BF9C24A64DC4516F024248DE994BD3DCBD5C8680EB7E90"
+    },
+    "df": {
+      "path": "F:/62629-419_20260824112405/Slot16/DarkfieldFrontsideWafer/resizedImage/62629-419_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "bytes": 475379874,
+      "sha256": "E293D3155A50554104A232C1FF9F1BDA7E6935D798C7266A2C8A0F90FC0A098B"
+    }
+  },
+  "sourceRoot": "D:/KLARFExport/PatternedFront/Lot_62629-419_NotchBad_Hotspot",
+  "outputRoot": "D:/A2/o/ocv/O3Q2_20260828T032500Z",
+  "knownNotchLocationConsumed": false,
+  "notchAnglePriorConsumed": false,
+  "fixedAngularSearchWindowConsumed": false,
+  "scorerInputsPresent": false,
+  "sourceMutationAllowed": false,
+  "rasterOutputAllowed": false,
+  "liveProviderActivation": false,
+  "backsidePixelsConsumed": false,
+  "dfTopologyInvocationAllowed": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

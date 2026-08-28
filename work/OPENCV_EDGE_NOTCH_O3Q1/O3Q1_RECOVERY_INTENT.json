@@ -1,0 +1,142 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T02:51:36Z",
+  "incidentId": "OCV03_O3Q1_SLOT16_FRONT_HOTSPOT_INDEPENDENT_VALIDATION_20260828",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_LOCAL_REHEARSAL_FAILURE_20260828.json",
+        "sha256": "17071FE62710CCEB551E2B5C1C47BE1B4B415F892B1F3583342F736223C3D48C",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q1/O3Q1_SUPPORTING_OBSERVATION.json",
+      "sha256": "D8457FF1089522808FFE96E2E0460C2D09CD0234EB0E951EF3D22518B9B41462"
+    },
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3N1/O3N1_COMPLETE_ROUTE_GATE.json",
+      "sha256": "C46F4C24150E4799A373224DF421A8A08872FC7921309F8F9DD87C033C86E94D"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3D3/O3D3R4_COMPLETE_ROUTE_GATE.json",
+      "sha256": "41A4A1B808E40E7A14A8F22BA7BF9189C0B00B16639A43DDF5AB9A3FC70385D2"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [
+      "F:/62629-419_20260824112405/Slot16/BrightfieldFrontsideWafer/resizedImage/62629-419_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "F:/62629-419_20260824112405/Slot16/DarkfieldFrontsideWafer/resizedImage/62629-419_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp"
+    ],
+    "requestedCapabilities": [
+      "O3P8_UNCHANGED_BF_TOPOLOGY_REFINEMENT",
+      "O3P8_UNCHANGED_DF_RADIAL_ELIGIBILITY",
+      "ALL_21_FULL_360_DF_SEED_CANDIDATES",
+      "NUMERIC_REVIEW_ONLY_UNIQUE_ELIGIBILITY_DECISION"
+    ],
+    "requestedFields": [
+      "SOURCE_HASHES",
+      "SEED_PROJECTION_HASH_AND_CARDINALITY",
+      "CANDIDATE_LOCAL_METRICS",
+      "ELIGIBLE_CANDIDATE_COUNT",
+      "EXPLICIT_HOLDS"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "D",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q1/O3Q1_SUPPORTING_OBSERVATION.json",
+      "sha256": "D8457FF1089522808FFE96E2E0460C2D09CD0234EB0E951EF3D22518B9B41462"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "scope": {
+    "freshNamespace": "work/OPENCV_EDGE_NOTCH_O3Q1",
+    "liveRequestIdPrefix": "OCV03-O3Q1-S16-HOTSPOT",
+    "liveEndpointRequestsMaximum": 1,
+    "maximumFreshSlot16Attempts": 1,
+    "requestRetryAuthorized": false,
+    "requestDuplicationAllowed": false,
+    "detectorPath": "work/OPENCV_EDGE_NOTCH_O3P8/Detect-O3P8FrontSplitNotches.py",
+    "detectorSha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36",
+    "detectorAlgorithmChangeAllowed": false,
+    "detectorThresholdChangeAllowed": false,
+    "detectorConfigurationChangeAllowed": false,
+    "sourceSetChangeAllowed": false,
+    "seedSourcePath": "work/OPENCV_EDGE_NOTCH_O3N1/local_review_r2/assets/MANIFEST.json",
+    "seedSourceSha256": "69FDAD4AB4DCF06A8A38C76EA009F0DA178896E8D0291668670AB9ADD24A05C8",
+    "seedCandidateCount": 21,
+    "sourceRecordPath": "work/O3J1R/files/S16.json",
+    "sourceRecordSha256": "FBBF0609AD337D495E90E73C6F175E6D255287730B81498CE23C4C83536760B1",
+    "knownAngleOrLocationInputAllowed": false,
+    "argosRotationOrientationLocationInputAllowed": false,
+    "postInferenceHotspotMembershipOnly": true,
+    "backsidePixelsConsumed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "taskOrManagedProcessActionAllowed": false,
+    "providerActivationAllowed": false,
+    "protectedProcessorChangeAllowed": false,
+    "failedO3N1OrO3P7ParentageAllowed": false
+  },
+  "authorizationBoundary": {
+    "localDesignAndWindowsPowerShell51ProofAuthorized": true,
+    "packageBuildAuthorized": true,
+    "signatureAuthorized": true,
+    "livePublicationAuthorized": true,
+    "liveEndpointRequestsMaximum": 1,
+    "liveEndpointRequestSequence": [
+      "ONE_FRESH_O3Q1_MAINTENANCE_PATCH_NUMERIC_REVIEW_ONLY_REQUEST_WITH_NO_RETRY"
+    ],
+    "operatorAuthorization": "2026-08-28 delegated continuation of the existing nine-hour notch work order under the exact checkpoint holds and no-retry constraint",
+    "authorizedPurpose": "Run the unchanged O3P8 detector and configuration once against exact locked Slot16 BF/DF sources using all 21 frozen full-360 DF seed candidates, without any location prior, and collect only the matching JBOD-signed numeric terminal response."
+  },
+  "sourceImageBytesReadAllowed": true,
+  "sourceImageReadAllowlistCount": 2,
+  "sourceMutationAllowed": false,
+  "detectorRerunAllowed": true,
+  "thresholdOrAlgorithmChangeAllowed": false,
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

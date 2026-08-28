@@ -1,8 +1,32 @@
-# Active ArgosEdgeLab state - OCV-03 O3P8 POST2 front split-method development pass / hotspot validation next - 2026-08-28
+# Active ArgosEdgeLab state - OCV-03 O3Q2 Slot16 numeric request publication ready - 2026-08-28
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3Q2 exact Slot16 numeric request publication ready — 2026-08-28
+
+Fresh request `REQ_20260828T033000222Z_62629419O3Q2` is signed and not
+published. Its 48,540-byte ZIP SHA-256 is
+`F107CB94E8580EB018C373F2995BC6D817D7E4337D351F875E861B5A42D1AACC`.
+The unchanged O3P8 detector consumes all 21 frozen DF seeds and the exact
+locked BF/DF hashes with no known-location, hotspot, Argos pose/orientation/
+rotation, scorer, or backside input.
+
+Fresh local endpoint rehearsal, exact Windows PowerShell 5.1 signed-package
+success plus injected-timeout quarantine, and the complete 55-leaf route gate
+all pass. The route maximum effective length is 187. Persistent `U:` has the
+locked `Get-PSDrive` and `Win32_LogicalDisk` mapping and zero pending requests.
+O3Q1 was never published and is withdrawn/non-reusable.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q2_SLOT16_NUMERIC_REQUEST_PUBLICATION_READY_20260828.md`,
+SHA-256 `CF7F7A95FEA2D9D0FA21476A93CC0546ADDA8C5957A714F12300D21D59594683`.
+Next is one exact no-retry publication from a clean matching local/remote tip,
+then collection of only the matching JBOD-signed terminal response. No gateway
+acceptance may be treated as execution. All provider, processor, source,
+backside, task/process, threshold/algorithm, hold, training, XML, production,
+fiducial, and alignment-transfer holds remain.
 
 ## OCV-03 O3C1 exact signed hotspot inventory complete — 2026-08-27
 

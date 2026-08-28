@@ -1,0 +1,51 @@
+{
+  "schema": "argos_ocv03_o3q1_terminal_gate_fixture_v1",
+  "engineTerminal": {
+    "state": "COMPLETE_O3P8_POST2_BF_TOPOLOGY_DF_RADIAL_REVIEW_ONLY",
+    "outputPath": "D:/A2/o/ocv/O3Q2_FIXTURE.partial/O3Q2_RESULT.json",
+    "outputSha256": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "inputCount": 1,
+    "states": ["PASS_REVIEW_ONLY_UNIQUE_BF_TOPOLOGY_DF_RADIAL_NOTCH"],
+    "dfTopologyInvocationCount": 0
+  },
+  "engineOutput": {
+    "schema": "argos_ocv03_o3p8_front_split_notch_result_v1",
+    "revision": "O3Q2_SLOT16_HOTSPOT_BF_TOPOLOGY_DF_RADIAL_20260828",
+    "state": "COMPLETE_O3P8_POST2_BF_TOPOLOGY_DF_RADIAL_REVIEW_ONLY",
+    "inputCount": 1,
+    "rows": [
+      {
+        "identity": "62629-419_20260824112405_SLOT16",
+        "state": "PASS_REVIEW_ONLY_UNIQUE_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+        "seedCount": 21,
+        "eligibleCount": 1,
+        "candidateLocalTopologyInsufficiencyCount": 0,
+        "selected": {"seedId": "D001", "seedAngleDegrees": 1.127477490414154},
+        "seeds": []
+      }
+    ],
+    "dfTopologyInvocationCount": 0,
+    "maximumDfRadialIntervalWidthEnabled": false,
+    "knownNotchLocationConsumed": false,
+    "notchAnglePriorConsumed": false,
+    "fixedAngularSearchWindowConsumed": false,
+    "scorerInputsConsumed": false,
+    "backsidePixelsConsumed": false,
+    "imageBytesEmittedToStdout": false,
+    "rasterOutputCreated": false,
+    "sourceMutationPerformed": false,
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false
+  },
+  "expectedTerminal": {
+    "state": "COMPLETE_O3Q2_NUMERIC_REVIEW_ONLY",
+    "numericIndependentPass": true,
+    "seedCount": 21,
+    "eligibleCount": 1,
+    "knownNotchLocationConsumed": false,
+    "hotspotMembershipConsumed": false
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-28T02:54:00Z",
+  "state": "PASS_O3Q1_SLOT16_HOTSPOT_SUPPORTING_OBSERVATION",
+  "incidentId": "OCV03_O3Q1_SLOT16_FRONT_HOTSPOT_INDEPENDENT_VALIDATION_20260828",
+  "sourceEvidence": {
+    "matchingSignedSlot16Response": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3J1/O3J1_EXACT_RESPONSE_COLLECTION_GATE.json",
+      "sha256": "4C277E2F92BC33D61F29BBF41E0E79D3371A8258365522B100DC606C02EB2748"
+    },
+    "exactSlot16NumericRecord": {
+      "path": "work/O3J1R/files/S16.json",
+      "sha256": "FBBF0609AD337D495E90E73C6F175E6D255287730B81498CE23C4C83536760B1"
+    },
+    "full360DfSeedManifest": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3N1/local_review_r2/assets/MANIFEST.json",
+      "sha256": "69FDAD4AB4DCF06A8A38C76EA009F0DA178896E8D0291668670AB9ADD24A05C8"
+    },
+    "frozenPost2Result": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P8/O3P8_POST2_RESULT.json",
+      "sha256": "5B7D2D93959F3AA97885682E3909D5C8E736F2E23084C5D84AB5094B58E1E6F8"
+    },
+    "frozenSyntheticGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P8/O3P8_SYNTHETIC_GATE.json",
+      "sha256": "CEE4B1849042C86938084F91A4892118BE1E43D1648B587280113C3FFFA67A63"
+    },
+    "governingCheckpoint": {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3P8_POST2_FRONT_SPLIT_DEVELOPMENT_PASS_HOTSPOT_VALIDATION_NEXT_20260828.md",
+      "sha256": "0B8C9931F48F83B4E263BAECD469BF285BDFE00F5603E0547D9F0BCD2EF45189"
+    }
+  },
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "mutationsPerformed": false,
+  "expectedObserved": [
+    {
+      "identity": "62629-419_20260824112405_SLOT16_BF",
+      "expectedBytes": 475379874,
+      "observedBytes": 475379874,
+      "expectedSha256": "3F98D5B506B3EF6E18BF9C24A64DC4516F024248DE994BD3DCBD5C8680EB7E90",
+      "observedSha256": "3F98D5B506B3EF6E18BF9C24A64DC4516F024248DE994BD3DCBD5C8680EB7E90"
+    },
+    {
+      "identity": "62629-419_20260824112405_SLOT16_DF",
+      "expectedBytes": 475379874,
+      "observedBytes": 475379874,
+      "expectedSha256": "E293D3155A50554104A232C1FF9F1BDA7E6935D798C7266A2C8A0F90FC0A098B",
+      "observedSha256": "E293D3155A50554104A232C1FF9F1BDA7E6935D798C7266A2C8A0F90FC0A098B"
+    },
+    {
+      "field": "FROZEN_FULL_360_DF_SEED_SET",
+      "expected": "ALL_CANDIDATES_FROM_EXACT_O3N1_MANIFEST_WITH_NO_LOCATION_FILTER",
+      "observed": "21_DF_CANDIDATES_AVAILABLE_FOR_MECHANICAL_PROJECTION"
+    },
+    {
+      "field": "O3P8_METHOD_STATE",
+      "expected": "DEVELOPMENT_AND_SYNTHETIC_PASS_BEFORE_INDEPENDENT_COHORT",
+      "observed": "EXACT_POST2_AND_SYNTHETIC_GATES_PASS_WITH_FROZEN_DETECTOR_AND_CONFIGURATION"
+    },
+    {
+      "field": "NEXT_AUTHORIZED_ACTION",
+      "expected": "ONE_FRESH_NUMERIC_SLOT16_HOTSPOT_REQUEST_NO_RETRY",
+      "observed": "CHECKPOINT_AUTHORIZES_O3Q1_WITH_ZERO_PRIOR_O3Q1_PUBLICATIONS"
+    }
+  ],
+  "observationConclusion": "Exact signed Slot16 source evidence, the complete frozen 21-candidate DF seed set, and the independently frozen O3P8 detector gates support one fresh numeric O3Q1 review-only validation with no location prior and no retry.",
+  "imageBytesReadByThisObservation": false,
+  "sourceHashingPerformedByThisObservation": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

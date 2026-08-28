@@ -1,0 +1,56 @@
+{
+  "schema": "argos_ocv03_o3q1_endpoint_rehearsal_gate_v1",
+  "createdUtc": "2026-08-28T03:04:57Z",
+  "state": "PASS_O3Q1_ENDPOINT_REHEARSAL",
+  "revision": "FMOCV03_O3Q1_REHEARSAL_20260828T030000Z",
+  "endpoint": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q1/Invoke-O3Q1Slot16NumericEndpoint.ps1",
+    "sha256": "6B61E80C6BB3B347B9AAD74469E51D3BD3D42EE0B305C8996217FE1DEC758AB9"
+  },
+  "invocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q1/O3Q1_ENDPOINT_REHEARSAL_INVOCATION.json",
+    "sha256": "C966E46900EB7D624EECC267B7AE464E397B0F22153BE3E11D798E3D6EA73C5A"
+  },
+  "preflightState": "PASS_O3Q1_ENDPOINT_PREFLIGHT",
+  "executionState": "COMPLETE_O3Q1_NUMERIC_REVIEW_ONLY",
+  "engineState": "COMPLETE_O3P8_POST2_BF_TOPOLOGY_DF_RADIAL_REVIEW_ONLY",
+  "numericDecision": "PASS_REVIEW_ONLY_UNIQUE_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+  "numericIndependentPass": true,
+  "identity": "62546-481_POST2_SLOT17",
+  "seedCount": 1,
+  "eligibleCount": 1,
+  "selectedSeedId": "D001",
+  "selectedDfSeedAngleDegrees": 89.64755723590974,
+  "selectedBfTipAngleDegrees": 89.64190648741422,
+  "bfDfAngleDifferenceDegrees": 0.005650748495526159,
+  "job": {
+    "path": "C:/A3Q1O/O3Q1_JOB.json",
+    "bytes": 6300,
+    "sha256": "FAFCBBE869EC564B77B9833462F576ED5E21AAC6331BBADDB363A687BB452A56"
+  },
+  "engineOutput": {
+    "path": "C:/A3Q1O/O3Q1_RESULT.json",
+    "bytes": 6970,
+    "sha256": "5470B55A09EF944B56B7B88BBD091C0BD5F945993D908D9DEF71204BE3C21FB1"
+  },
+  "unchangedO3P8EngineSha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36",
+  "unchangedO3P8ConfigEquivalenceGateSha256": "CF896E114179370BC9C8A58D64FDD3470EDCAB1A96836252693C935845224F95",
+  "sourceHashesVerifiedByEngineBeforeDecode": true,
+  "terminalFixturePassedBeforeImageRead": true,
+  "sourceAliasRemoved": true,
+  "processorIdentityUnchanged": true,
+  "dfTopologyInvocationCount": 0,
+  "rasterOutputCreated": false,
+  "knownNotchLocationConsumed": false,
+  "hotspotMembershipConsumed": false,
+  "argosRotationMetadataConsumed": false,
+  "backsidePixelsConsumed": false,
+  "sourceMutationPerformed": false,
+  "providerActivated": false,
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

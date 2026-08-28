@@ -1,0 +1,19 @@
+{
+  "schema":"argos_recovery_observation_evidence_v1","createdUtc":"2026-08-28T03:22:00Z","state":"PASS_O3Q2_SUPPORTING_OBSERVATION","incidentId":"OCV03_O3Q2_SLOT16_FRONT_HOTSPOT_SIGNED_PACKAGE_SUCCESSOR_20260828",
+  "sourceEvidence":{
+    "matchingSignedSlot16Response":{"path":"work/OPENCV_EDGE_NOTCH_O3J1/O3J1_EXACT_RESPONSE_COLLECTION_GATE.json","sha256":"4C277E2F92BC33D61F29BBF41E0E79D3371A8258365522B100DC606C02EB2748"},
+    "withdrawnO3Q1SignedPackage":{"path":"work/OPENCV_EDGE_NOTCH_O3Q1/O3Q1_SIGNED_PACKAGE_WITHDRAWAL.json","sha256":"FD8A3540B0D5D78756821E5BF068E671123D2B8A126E909CB50C791E2862A1B2"},
+    "full360DfSeedManifest":{"path":"work/OPENCV_EDGE_NOTCH_O3N1/local_review_r2/assets/MANIFEST.json","sha256":"69FDAD4AB4DCF06A8A38C76EA009F0DA178896E8D0291668670AB9ADD24A05C8"},
+    "frozenPost2Result":{"path":"work/OPENCV_EDGE_NOTCH_O3P8/O3P8_POST2_RESULT.json","sha256":"5B7D2D93959F3AA97885682E3909D5C8E736F2E23084C5D84AB5094B58E1E6F8"}
+  },
+  "exactSourcesProved":true,"fieldSpecificExpectedObservedRecorded":true,"directEndpointEvidence":false,"matchingSignedTerminalResponse":true,"mutationsPerformed":false,
+  "expectedObserved":[
+    {"identity":"62629-419_20260824112405_SLOT16_BF","expectedSha256":"3F98D5B506B3EF6E18BF9C24A64DC4516F024248DE994BD3DCBD5C8680EB7E90","observedSha256":"3F98D5B506B3EF6E18BF9C24A64DC4516F024248DE994BD3DCBD5C8680EB7E90"},
+    {"identity":"62629-419_20260824112405_SLOT16_DF","expectedSha256":"E293D3155A50554104A232C1FF9F1BDA7E6935D798C7266A2C8A0F90FC0A098B","observedSha256":"E293D3155A50554104A232C1FF9F1BDA7E6935D798C7266A2C8A0F90FC0A098B"},
+    {"field":"O3Q1_PUBLICATION_COUNT","expected":0,"observed":0},
+    {"field":"O3Q1_FAILURE_CLASS","expected":"LOCAL_EXACT_PACKAGE_REHEARSAL_BEFORE_PUBLICATION","observed":"SIGNED_ZIP_WITHDRAWN_FOR_ENDPOINT_TIMEOUT_EXCEPTION_TOKENIZATION"},
+    {"field":"O3Q2_ALLOWED_CHANGE","expected":"FRESH_NAMESPACE_AND_TOKEN_SEPARATION_ONLY","observed":"DETECTOR_SEEDS_CONFIG_SOURCES_AND_AUTHORITY_REMAIN_FROZEN"}
+  ],
+  "observationConclusion":"The exact Slot16 evidence and O3P8 method remain qualified. O3Q1 was never published and is withdrawn solely for a frozen endpoint timeout-exception tokenization defect. One fresh O3Q2 request may correct token separation without changing detector behavior, inputs, thresholds, authority, or retry count.",
+  "imageBytesReadByThisObservation":false,"sourceHashingPerformedByThisObservation":false,"reviewOnly":true,"trainingEligible":false,"xmlEligible":false,"productionEligible":false,"productionRoutingEnabled":false
+}

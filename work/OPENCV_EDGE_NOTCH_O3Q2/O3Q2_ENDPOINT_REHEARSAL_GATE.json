@@ -1,0 +1,61 @@
+{
+  "schema": "argos_ocv03_o3q1_endpoint_rehearsal_gate_v1",
+  "createdUtc": "2026-08-28T03:30:12Z",
+  "state": "PASS_O3Q2_ENDPOINT_REHEARSAL",
+  "revision": "FMOCV03_O3Q2_REHEARSAL_20260828T033500Z",
+  "endpoint": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/Invoke-O3Q2Slot16NumericEndpoint.ps1",
+    "sha256": "34998072D7F58D554CFDDE9C0645FBC7CF03A7B6D7EC8F0FD3F905A0929A3A52"
+  },
+  "invocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_ENDPOINT_REHEARSAL_INVOCATION.json",
+    "sha256": "3B29EE98214FBF080F8D470D15D0AEA658D42BC0C867B153B1D2B10C53C41B66"
+  },
+  "cloneLiteralGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_ENDPOINT_CLONE_LITERAL_GATE.json",
+    "sha256": "A8561A5AD3AE6BAA76CCD1793FB794AAAEBB638C0CEB3F5F873CDA9FE9E5C081"
+  },
+  "engineSha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36",
+  "detectorConfigEquivalenceGateSha256": "CF896E114179370BC9C8A58D64FDD3470EDCAB1A96836252693C935845224F95",
+  "input": {
+    "identity": "62546-481_POST2_SLOT17",
+    "bfSha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94",
+    "dfSha256": "9AB0AA6942948F54635C51B173618FC8478C75791E9F859FDD135FFDE52C153C",
+    "seedSha256": "0372C4E4BA29B8A8D4A7D1961BF1CAB7AA36C7E5F0553480AF82E605B399E770",
+    "seedCandidateCount": 1
+  },
+  "output": {
+    "path": "C:/A3Q2O/O3Q2_RESULT.json",
+    "sha256": "DDE52682FD7FC32E35BCB856252CBF6D529900FDD40614E0469D1E8D73FA8D1A",
+    "engineState": "COMPLETE_O3P8_POST2_BF_TOPOLOGY_DF_RADIAL_REVIEW_ONLY",
+    "numericDecision": "PASS_REVIEW_ONLY_UNIQUE_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+    "numericIndependentPass": true,
+    "eligibleCount": 1,
+    "selectedSeedId": "D001",
+    "selectedSeedAngleDegrees": 89.64755723590974,
+    "selectedTipAngleDegrees": 89.64190648741422,
+    "bfTopologyDfRadialAngleDifferenceDegrees": 0.005650748495526159,
+    "jobSha256": "E59F2BEA610C031975749C4C08D974B03881C5E85BAF63DAE3A8E4DB05D9DED9"
+  },
+  "sourceAliasDrive": "Q:",
+  "sourceAliasRemoved": true,
+  "sourceHashesVerifiedBeforeDecode": true,
+  "sourceImageBytesRead": true,
+  "rasterOutputCreated": false,
+  "sourceMutationPerformed": false,
+  "sourceDeletionPerformed": false,
+  "processorProcessCountBefore": 0,
+  "processorProcessCountAfter": 0,
+  "processorIdentityUnchanged": true,
+  "providerActivated": false,
+  "taskActions": 0,
+  "backsidePixelsConsumed": false,
+  "knownNotchLocationConsumed": false,
+  "hotspotMembershipConsumed": false,
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}
