@@ -1,0 +1,47 @@
+{
+  "schema": "argos_ocv03_o3q3_local_rehearsal_failure_gate_v1",
+  "createdUtc": "2026-08-28T15:17:10Z",
+  "state": "WITHDRAWN_O3Q3_LOCAL_REHEARSAL_POWERSHELL_AUTOMATIC_VARIABLE_COLLISION",
+  "lifecycle": "WITHDRAWN",
+  "endpoint": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q3/Invoke-O3Q3Slot16Numeric.ps1",
+    "sha256": "93C60FD0583F58B0F1ECA577C9E587B37F16362AA6E2B35A35B74430D265EB53"
+  },
+  "invocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q3/O3Q3_ENDPOINT_REHEARSAL_INVOCATION.json",
+    "sha256": "887D1E9EC988E7A6354375F71356D404BC69204FB90C9946B2ECB405736F56B9"
+  },
+  "failure": {
+    "host": "Windows PowerShell 5.1",
+    "line": 73,
+    "statement": "$pid = [int]$child.Id",
+    "fullyQualifiedErrorId": "VariableNotWritable",
+    "message": "Cannot overwrite variable PID because it is read-only or constant.",
+    "cause": "PowerShell variable names are case-insensitive and $pid collided with the read-only $PID automatic variable."
+  },
+  "observedImmediatelyAfterFailure": {
+    "outputRoot": "C:\\A3Q3O",
+    "outputRootExisted": false,
+    "ownedChildState": "UNKNOWN_NOT_QUERIED_OR_TOUCHED",
+    "existingProcessQueryCount": 0,
+    "taskActionCount": 0
+  },
+  "disposition": {
+    "endpointReusable": false,
+    "invocationReusable": false,
+    "executionParentEligible": false,
+    "retryAuthorized": false,
+    "liveSlot16SuccessorConsumed": false,
+    "freshNamespaceRequired": "O3Q4_OR_LATER"
+  },
+  "sourceMutationPathPresent": false,
+  "sourceDeletionPathPresent": false,
+  "providerActivationPerformed": false,
+  "liveRequestPublished": false,
+  "backsidePixelsConsumed": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

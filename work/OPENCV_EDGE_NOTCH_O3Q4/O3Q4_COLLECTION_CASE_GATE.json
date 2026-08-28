@@ -1,0 +1,44 @@
+{
+    "schema":  "argos_powershell_collection_case_gate_v1",
+    "createdUtc":  "2026-08-28T15:24:30Z",
+    "state":  "PASS_ARGOS_POWERSHELL_COLLECTION_CASES",
+    "windowsPowerShell":  {
+                                 "major":  5,
+                                 "minor":  1,
+                                 "edition":  "Desktop"
+                             },
+    "caseIds":  [
+                    "ZERO",
+                    "ONE",
+                    "MANY"
+                ],
+    "cases":  [
+                  {
+                      "id":  "ZERO",
+                      "inputCardinality":  0,
+                      "observedCount":  0,
+                      "state":  "PASS"
+                  },
+                  {
+                      "id":  "ONE",
+                      "inputCardinality":  1,
+                      "observedCount":  1,
+                      "state":  "PASS"
+                  },
+                  {
+                      "id":  "MANY",
+                      "inputCardinality":  2,
+                      "observedCount":  2,
+                      "state":  "PASS"
+                  }
+              ],
+    "sourceFiles":  [
+                         {
+                             "path":  "work/OPENCV_EDGE_NOTCH_O3Q4/Invoke-O3Q4Slot16Numeric.ps1",
+                             "sha256":  "167002F5096F04125259EEE27979FDF433A61D4608C04D46373DD0F41C842151"
+                         }
+                     ],
+    "mutationsPerformed":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

@@ -1,0 +1,58 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T15:13:00Z",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path":"work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json","sha256":"F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {"path":"work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_SIGNED_TERMINAL_RESPONSE_GATE.json","sha256":"56D64F2F287477E3307BA6111AEA7C89E7B3CEADF408476F7AD9E25A5D320769","state":"FAILED"}
+    ],
+    "postFailureObservation": {"path":"work/OPENCV_EDGE_NOTCH_O3RV1/O3RV1_POST_FAILURE_OBSERVATION.json","sha256":"D95AEBE08314F4CD4B67DEC6E6BBE1AFA96D7F43E3ADECD42C807BF697BED61C"},
+    "workflowReviewClearance": {"path":"","sha256":""}
+  },
+  "route": {
+    "type": "PROJECT_PORTAL_SIGNED_MAINTENANCE",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": ["START_AND_TIMEOUT_ONLY_OWNED_OPENCV_O3Q3_CHILD"],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    "installedConfigEvidence": {"path":"work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json","sha256":"465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"},
+    "capabilityEvidence": {"path":"work/OPENCV_EDGE_NOTCH_O3RV1/O3RV1_RUNTIME_PREMISE_REVIEW.json","sha256":"22557FFA8DE03DBD8690376EBCF2AF1D77A5A4CD3CFF14DFEB492ED47ADE494C"},
+    "qualifiedEndpointGate": {"path":"work/OPENCV_SCRIBE_O2D23/O2D23_COMPLETE_ROUTE_GATE_R3.json","sha256":"04AC15694066C3CE4971DC946F77AF3CDB6814920CAB8B3DCCEA4CDCE4B535D3"},
+    "qualifiedAdminGate": {"path":"","sha256":""}
+  },
+  "observation": {
+    "exactSources": [
+      {"sourcePath":"D:/AFCV1/rt/python.exe","sourceSchema":"PE_EXECUTABLE","selector":"EXACT_PATH_AND_SHA256","uniquenessKey":"normalizedPath","maximumRows":1},
+      {"sourcePath":"D:/AFCV1/INSTALLATION.json","sourceSchema":"argos_foi1_installation_v1","selector":"EXACT_PATH_AND_SHA256","uniquenessKey":"normalizedPath","maximumRows":1}
+    ],
+    "requestedCapabilities": ["EXACT_RUNTIME_VERSION_EVIDENCE"],
+    "requestedFields": ["pythonVersion","opencvVersion","numpyVersion"],
+    "decisionOptions": ["A","B","C","D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {"path":"work/OPENCV_EDGE_NOTCH_O3RV1/O3RV1_POST_FAILURE_OBSERVATION.json","sha256":"D95AEBE08314F4CD4B67DEC6E6BBE1AFA96D7F43E3ADECD42C807BF697BED61C"},
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "runtimeBytesChanged": false,
+    "invalidTargetRuntimePreconditionCorrected": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

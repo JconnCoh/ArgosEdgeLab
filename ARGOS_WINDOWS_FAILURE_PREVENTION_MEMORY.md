@@ -10203,3 +10203,77 @@ than rerunning it.
   process state and command execution as unknown and stop before another live
   process query, runtime-version attempt, or numeric successor unless a
   separately authorized timeout-isolated endpoint capability is available.
+
+## 2026-08-28 — A target runtime premise cannot inherit a different interpreter's module version
+
+- Failure signature: O3Q2 pinned exact JBOD paths and hashes for
+  `D:\AFCV1\rt\python.exe` and `D:\AFCV1\INSTALLATION.json`, but its runtime
+  gate retained state `PASS_O3P2_LOCAL_RUNTIME_INSTALLED` and NumPy `2.5.1`
+  from the laptop-only `C:\A3P2R` CPython 3.14 rehearsal. The original FOI1
+  portable runtime and installer had already frozen JBOD CPython `3.13.2`,
+  OpenCV `5.0.0`, and NumPy `2.5.2`. O3Q2 therefore returned a signed premise
+  failure before image read even though the exact JBOD executable and
+  installation-manifest hashes matched.
+- Cause: target runtime identity and local rehearsal compatibility were
+  conflated. Exact path/hash checks correctly proved which JBOD runtime was
+  present, but the expected NumPy value was copied from a different Python
+  ABI/runtime root instead of being derived from the target runtime's own
+  qualified installation evidence.
+- Mandatory preflight: every runtime-binding contract must mechanically join
+  runtime role, Python path/hash/version, installation-manifest path/hash,
+  bundle or wheel identity, OpenCV version, and NumPy version. Reject any
+  target gate whose state token names a different runtime, whose module
+  versions come only from another interpreter/ABI, or whose expected versions
+  contradict the target's original signed install gate or a newer exact signed
+  observation with the same executable and installation hashes. A local
+  rehearsal proves algorithm compatibility only; it never supplies the live
+  target's version premise.
+- Recovery: preserve O3Q2 as withdrawn/no-retry and preserve its signed failure
+  as evidence. Use the original FOI1 portable/install gates plus O3EI1's exact
+  signed version observation to correct the false contract premise to NumPy
+  `2.5.2` without changing runtime bytes. Any later numeric execution must be a
+  fresh independent namespace using the unchanged detector/config and locked
+  sources; neither O3Q2 nor O3EI1 is an execution parent.
+
+## 2026-08-28 — A PowerShell `foreach` statement cannot feed a pipeline without an expression boundary
+
+- Failure signature: two bounded local evidence-inventory commands ended in
+  parser error `An empty pipe element is not allowed` at `} | ConvertTo-Json`.
+- Cause: a statement-form `foreach (...) { ... }` was placed directly before a
+  pipeline. Windows PowerShell and PowerShell 7 require that output to be
+  materialized or enclosed as an expression before it can feed the next
+  command.
+- Mandatory preflight: never emit `} |` after a statement-form loop. Use
+  `$rows = @(foreach (...) { ... })` and pipe `$rows`, or wrap the complete loop
+  in `@( ... )` before the pipeline. Apply this shape mechanically to bounded
+  JSON evidence inventories.
+- Recovery: the failed commands were read-only and wrote no artifact. Preserve
+  no output from them; rerun only the corrected materialized-array form.
+
+## 2026-08-28 — PowerShell variable names collide case-insensitively with automatic variables
+
+- Failure signature: the first O3Q3 local endpoint rehearsal started its owned
+  Python child and then failed at `$pid = [int]$child.Id` with `Cannot
+  overwrite variable PID because it is read-only or constant`. No terminal
+  result or output root was produced by the PowerShell endpoint.
+- Cause: PowerShell variable names are case-insensitive. The local name `$pid`
+  therefore addressed the built-in read-only `$PID` automatic variable rather
+  than a new writable variable. Static parsing and the non-executing preflight
+  path did not exercise this assignment after child creation.
+- Mandatory preflight: no new or changed PowerShell harness may assign to a
+  name that case-insensitively matches a built-in read-only automatic
+  variable. At minimum, mechanically reject assignments to `PID`, `HOME`,
+  `Host`, `MyInvocation`, `PSCommandPath`, and `PSScriptRoot`; also avoid local
+  names that shadow other automatic variables such as `Error`, `Args`,
+  `Input`, or `Matches`. Deliberate assignments to governing preference
+  variables such as `$ErrorActionPreference = 'Stop'` remain allowed. Exercise
+  the exact owned-child start/result-construction path with a bounded benign
+  fixture before any image-processing rehearsal.
+- Recovery: do not query, stop, or otherwise touch the child that may have
+  started; retain its state as unknown. Withdraw the executed O3Q3 rehearsal
+  namespace and do not reuse its endpoint or invocation as an execution
+  parent. Create a fresh rehearsal namespace and output root, rename the local
+  field to an unambiguous name such as `$ownedChildProcessId`, rerun all exact
+  static, collection, recovery, wrapper, path, and zero-recurrence gates, and
+  only then run one fresh local rehearsal. This local failure did not publish
+  or consume the one authorized live Slot16 successor.

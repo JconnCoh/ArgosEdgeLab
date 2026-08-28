@@ -1,0 +1,78 @@
+{
+  "schema": "argos_ocv03_o3q4_endpoint_rehearsal_gate_v1",
+  "createdUtc": "2026-08-28T15:27:20Z",
+  "state": "PASS_O3Q4_POST2_NUMERIC_REHEARSAL",
+  "lifecycle": "FROZEN_REHEARSAL_EVIDENCE",
+  "preaction": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q4/PREACTION_O3Q4_LOCAL_REHEARSAL.json",
+    "sha256": "EFD340C039B8977F420736CE4D5C63290AD23B139AFEAE652046DC24C4762E2F",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"
+  },
+  "ownedChildFixture": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_OWNED_CHILD_PROCESS_GATE.json",
+    "sha256": "AFD6C984FEF559AAC7BA94AFD856FEDC9872D1E85CE5D8AEA7D21103005DFA61",
+    "state": "PASS_O3Q4_OWNED_CHILD_PROCESS_ASSIGNMENT_AND_COLLECTION"
+  },
+  "endpoint": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q4/Invoke-O3Q4Slot16Numeric.ps1",
+    "sha256": "167002F5096F04125259EEE27979FDF433A61D4608C04D46373DD0F41C842151"
+  },
+  "invocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_ENDPOINT_REHEARSAL_INVOCATION.json",
+    "sha256": "6EC64D39AC376026F2F4F36F2472B3555DD5AE171F2B06979C107988F8450F4E"
+  },
+  "terminal": {
+    "createdUtc": "2026-08-28T15:27:04.4477072Z",
+    "state": "COMPLETE_O3Q4_NUMERIC_REVIEW_ONLY",
+    "revision": "FMOCV03_O3Q4_20260828T151900Z",
+    "rehearsal": true,
+    "engineState": "COMPLETE_O3P8_POST2_BF_TOPOLOGY_DF_RADIAL_REVIEW_ONLY",
+    "numericDecision": "PASS_REVIEW_ONLY_UNIQUE_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+    "numericIndependentPass": true,
+    "identity": "62546-481_POST2_SLOT17",
+    "seedCount": 1,
+    "eligibleCount": 1,
+    "candidateLocalTopologyInsufficiencyCount": 0,
+    "selectedSeedId": "D001",
+    "ownedChildProcessId": 17820,
+    "ownedChildStartedUtc": "2026-08-28T15:26:58.6375614Z",
+    "ownedChildTimedOut": false,
+    "ownedChildKilledOnTimeout": false,
+    "existingProcessQueryCount": 0,
+    "taskActionCount": 0,
+    "sourceAliasRemoved": true
+  },
+  "durableOutput": {
+    "jobPath": "C:\\A3Q4O\\O3Q4_JOB.json",
+    "jobSha256": "75F8291FD43FCC8C63C7A2D7B3ECB5B990B270541AE3D6C4373FD0C58CC4419B",
+    "jobBytes": 6224,
+    "resultPath": "C:\\A3Q4O\\O3Q4_RESULT.json",
+    "resultSha256": "3EAB6BAAB6C0EA77B2C20B06FC9935DB7E6DAE42ADC807F1076A1EBD2DA3FA1D",
+    "resultBytes": 6951,
+    "outputRootFileCount": 2,
+    "partialRootExists": false
+  },
+  "controls": {
+    "allFrozenDfSeedsConsumed": true,
+    "dfTopologyInvocationCount": 0,
+    "knownNotchLocationConsumed": false,
+    "notchAnglePriorConsumed": false,
+    "fixedAngularSearchWindowConsumed": false,
+    "scorerInputsConsumed": false,
+    "argosRotationMetadataConsumed": false,
+    "hotspotMembershipConsumed": false,
+    "backsidePixelsConsumed": false,
+    "rasterOutputCreated": false,
+    "sourceMutationPerformed": false,
+    "sourceDeletionPerformed": false,
+    "providerActivated": false,
+    "protectedProcessorTouched": false,
+    "requestRetryAuthorized": false
+  },
+  "liveSlot16ExecutionPerformed": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

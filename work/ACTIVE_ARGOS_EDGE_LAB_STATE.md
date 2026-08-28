@@ -8597,3 +8597,40 @@ Stop at the runtime premise hold. BF Slot16 partial coverage, backside-
 unconsumed state, every fiducial/alignment prerequisite, and XML/training/
 production holds remain unchanged. All earlier withdrawn artifacts remain
 no-retry/non-parent, and every stranded console/process stays untouched.
+
+## 2026-08-28 — OCV-03 O3Q4 corrected-runtime Slot16 numeric request publish ready
+
+The runtime-version issue was a stale cross-runtime O3Q2 contract premise,
+not an unknown or changed JBOD runtime. Original FOI1 and signed O3EI1 evidence
+prove unchanged JBOD Python `3.13.2`, OpenCV `5.0.0`, and NumPy `2.5.2`.
+File-backed premise review SHA-256 is
+`22557FFA8DE03DBD8690376EBCF2AF1D77A5A4CD3CFF14DFEB492ED47ADE494C`.
+
+O3Q3 is withdrawn after its local `$pid`/`$PID` collision; its possible child
+was not queried or touched and no live successor was consumed. Fresh O3Q4
+passed the exact unchanged-O3P8 POST2 rehearsal, benign owned-child gate,
+signed 12-payload package build, exact-package predecessor/timeout/alias
+rehearsal, 53-path round trip, and zero-pending persistent-U observation.
+
+Request `REQ_20260828T152800444Z_62629419O3Q4` is signed but unpublished.
+ZIP SHA-256 is
+`648F5F8F278DA6BE3718386E0BC99EC043C41E77E7808101CB2214A5533F96F1`;
+exact-package rehearsal is
+`EE58430102DB4D7222E9E088829D803C6F1410A67F8BFA4D86CABA1952811F9B`;
+route gate is
+`886FD5E402072CA330BF32CDE7FCD88DA16C1DA38BAA44F0A5BA3C7F20E51155`;
+share observation is
+`1295F75CF598D3D794740C28760CF6C49DE20F3AADBE7DC5AF71648BB51757DF`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q4_SLOT16_NUMERIC_REQUEST_PUBLISH_READY_20260828.md`,
+SHA-256 `D2927B22AEECDB2E367AE556ABA4E7E54357D30015B18E47910193B11DB32CAC`.
+
+Exact next action: after continuity/session gates and a clean pushed branch
+with matching tips, publish this exact ZIP once and collect only its matching
+JBOD-signed terminal response. No retry. All withdrawn/non-parent records,
+stranded consoles/processes, BF Slot16 partial coverage, backside-unconsumed
+state, every fiducial/alignment prerequisite, and XML/training/production
+holds remain unchanged. No provider activation, protected-processor action,
+source mutation/deletion, existing-process/task action, threshold/algorithm
+change, wafer action, or hold clearance is authorized.

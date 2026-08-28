@@ -1,0 +1,127 @@
+{
+  "schema": "argos_ocv03_o3rv1_runtime_premise_review_v1",
+  "createdUtc": "2026-08-28T15:03:23.7057111Z",
+  "state": "PASS_O3RV1_FILE_BACKED_JBOD_RUNTIME_PREMISE",
+  "disposition": "LOCKED_INPUT",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "mode": "OBSERVE_LOCAL_FILE_BACKED",
+  "decisionQuestion": "Which module versions belong to the unchanged hash-pinned D:/AFCV1 JBOD runtime?",
+  "evidence": {
+    "localRehearsalRuntime": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P2_LOCAL_RUNTIME_GATE.json",
+      "sha256": "E22C0E27D3966B17DF83F205291CEB6B1C5B12A14EE306D157383514E1419FB9",
+      "runtimeRoot": "C:/A3P2R",
+      "pythonVersion": "3.14.7",
+      "opencvVersion": "5.0.0",
+      "numpyVersion": "2.5.1",
+      "targetRole": "LAPTOP_REHEARSAL_ONLY"
+    },
+    "portableJbodRuntime": {
+      "path": "work/FIDUCIAL_OPENCV_V1/portable/FIDCV1_PORTABLE_RUNTIME_GATE.json",
+      "sha256": "6BCA2B3FA69416BE9E7DE9D02B606081A24C976275C5A4D1B1E83D133D30A409",
+      "bundleSha256": "467B210E941725724AE7F6F90CF5F7C162A51BD2E9018A7A0A768CA7AEE777D8",
+      "pythonVersion": "3.13.2",
+      "opencvVersion": "5.0.0",
+      "numpyVersion": "2.5.2",
+      "plannedRuntimeRoot": "D:/AFCV1/rt",
+      "targetRole": "JBOD"
+    },
+    "jbodInstaller": {
+      "path": "work/FIDUCIAL_OPENCV_JBOD_INSTALL_FOI1/pkg/payload/E.ps1",
+      "sha256": "2B92CA14A979105B76D24929F27EB77710D4D6BD6D1E84578F965E6002008AC5",
+      "requiredPythonVersion": "3.13.2",
+      "requiredOpenCvVersion": "5.0.0",
+      "requiredNumpyVersion": "2.5.2",
+      "pythonSha256": "7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1"
+    },
+    "signedJbodInstall": {
+      "path": "work/FIDUCIAL_OPENCV_JBOD_INSTALL_FOI1/FOI1_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "E54585857204BDC2FE9A4632BAF3308987F195F91FFE00B9E98A0D78E56B169C",
+      "state": "PASS_FOI1_SIGNED_TERMINAL_RESPONSE",
+      "runtimeRoot": "D:/AFCV1/rt",
+      "installationSha256": "1289EC11F092233D3AAB5ACF416B0212F1874F698F9BBC2B474829939BCDF596",
+      "signatureVerified": true
+    },
+    "originalInstallCheckpoint": {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/FIDUCIAL_OPENCV_V1_JBOD_RUNTIME_INSTALLED_INTEGRATION_BOUNDARY_CHECKPOINT_20260822.md",
+      "sha256": "38D5788412B962CE84041AE5524C1A376A9A36DB25E4FBE664255EF45E9C52F9"
+    },
+    "incorrectO3Q2TargetGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_RUNTIME_GATE.json",
+      "sha256": "301BA078FDC1A267438AB217D29D67492AE4D544FD188919E43AC7DB2E5008BC",
+      "runtimeRoot": "D:/AFCV1",
+      "stateToken": "PASS_O3P2_LOCAL_RUNTIME_INSTALLED",
+      "numpyVersion": "2.5.1",
+      "classification": "WITHDRAWN_CROSS_RUNTIME_PREMISE_TRANSCRIPTION"
+    },
+    "o3q2SignedFailure": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_SIGNED_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "56D64F2F287477E3307BA6111AEA7C89E7B3CEADF408476F7AD9E25A5D320769",
+      "state": "FAIL_O3Q2_AUTHENTIC_SIGNED_TERMINAL_NUMPY_VERSION_PREMISE",
+      "imageReadBeforeFailure": false,
+      "numericResultProduced": false,
+      "retryAuthorized": false
+    },
+    "exactSignedCurrentObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3EI1/O3EI1_EXACT_RESPONSE_COLLECTION_GATE.json",
+      "sha256": "A8437E04071F4429734BC791F23E1D537FB0CD6DB36ADD9399830ED83D924756",
+      "pythonSha256": "7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1",
+      "installationSha256": "1289EC11F092233D3AAB5ACF416B0212F1874F698F9BBC2B474829939BCDF596",
+      "pythonVersion": "3.13.2",
+      "opencvVersion": "5.0.0",
+      "numpyVersion": "2.5.2",
+      "signatureVerified": true,
+      "ownedChildTimedOut": false
+    },
+    "conditionalSuccessorAuthority": {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3SO3_SCHEMA_OBSERVER_PROCESS_API_TIMEOUT_CAPABILITY_GAP_20260828.md",
+      "sha256": "6FB7BF866E29095037C17E2993EF8033FA1674C202C9B1809572500175D212F9",
+      "condition": "ONLY_AFTER_EXACT_RUNTIME_VERSION_EVIDENCE_PASSES_ONE_FRESH_INDEPENDENT_SLOT16_NUMERIC_SUCCESSOR"
+    }
+  },
+  "comparison": {
+    "pythonExecutableHashMatchesOriginalInstall": true,
+    "installationManifestHashMatchesOriginalSignedInstall": true,
+    "currentVersionsMatchOriginalPortableJbodBundle": true,
+    "o3q2ExpectedNumpyMatchesJbodBundle": false,
+    "o3q2ExpectedNumpyMatchesLaptopRehearsal": true,
+    "o3q2TargetGateStateNamesLaptopRuntime": true,
+    "jbodRuntimeMutationProved": false,
+    "crossRuntimePremiseTranscriptionProved": true
+  },
+  "decision": {
+    "supportedRemedy": "B",
+    "remedyDescription": "Correct the invalid target-runtime precondition without changing installed runtime bytes or detector semantics.",
+    "qualifiedJbodPythonVersion": "3.13.2",
+    "qualifiedJbodOpenCvVersion": "5.0.0",
+    "qualifiedJbodNumpyVersion": "2.5.2",
+    "runtimePremisePass": true,
+    "runtimeReinstallAuthorized": false,
+    "runtimeMutationRequired": false,
+    "o3q2RetryAuthorized": false,
+    "o3ei1RetryAuthorized": false,
+    "freshIndependentSlot16NumericSuccessorAuthorized": true,
+    "maximumFreshNumericSuccessors": 1
+  },
+  "successorBoundary": {
+    "mustUseUnchangedO3P8DetectorAndConfig": true,
+    "mustUseLockedSlot16BfDfHashes": true,
+    "mustUseQualifiedJbodNumpyVersion": "2.5.2",
+    "mustPinExactPythonAndInstallationHashes": true,
+    "mustRemainIndependentOfO3Q2AndO3EI1AsExecutionParents": true,
+    "automaticRetryAllowed": false,
+    "taskOrExistingProcessActionAllowed": false,
+    "providerActivationAllowed": false,
+    "thresholdOrAlgorithmChangeAllowed": false
+  },
+  "observationOnly": true,
+  "jbodContacted": false,
+  "imageBytesRead": false,
+  "sourceHashingPerformed": false,
+  "installedBytesChanged": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

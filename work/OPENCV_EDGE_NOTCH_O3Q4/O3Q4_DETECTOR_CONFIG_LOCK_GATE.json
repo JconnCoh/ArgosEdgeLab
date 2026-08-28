@@ -1,0 +1,31 @@
+{
+  "schema": "argos_ocv03_o3q4_detector_config_lock_gate_v1",
+  "checkedUtc": "2026-08-28T15:24:30Z",
+  "state": "PASS_O3Q4_UNCHANGED_O3P8_DETECTOR_AND_CONFIG",
+  "lockedO3P8Job": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P8/O3P8_POST2_SHORT_ALIAS_JOB.json",
+    "sha256": "2C2D656A879BBA1DEC6377D1855A949459C7AC6F50145761B8D283076FEAD1F9"
+  },
+  "engine": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P8/Detect-O3P8FrontSplitNotches.py",
+    "sha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36",
+    "hashMatchesLiveContract": true
+  },
+  "priorEquivalenceGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P8/O3P8_DETECTOR_CONFIG_EQUIVALENCE_GATE.json",
+    "sha256": "CF896E114179370BC9C8A58D64FDD3470EDCAB1A96836252693C935845224F95"
+  },
+  "candidateContracts": [
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_JOB_CONTRACT.json","sha256":"16109E6E788FED7886300ADB13DD52A86BF41A94D6852B471150C2E74215ADA7","role":"JBOD_LIVE"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3Q4/O3Q4_REHEARSAL_JOB_CONTRACT.json","sha256":"467E43AA433D56C2F1AB52C7BC40F87FF9752CD93A8D705AE49C0C7C9EC80E0B","role":"LAPTOP_REHEARSAL"}
+  ],
+  "exactGroupsCompared": ["channelMethods","crop","topologyConfig","corroboration","candidateLocalTopologyErrors"],
+  "liveGroupsMatch": true,
+  "rehearsalGroupsMatch": true,
+  "thresholdChangeCount": 0,
+  "algorithmChangeCount": 0,
+  "lockedBfSha256": "3F98D5B506B3EF6E18BF9C24A64DC4516F024248DE994BD3DCBD5C8680EB7E90",
+  "lockedDfSha256": "E293D3155A50554104A232C1FF9F1BDA7E6935D798C7266A2C8A0F90FC0A098B",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

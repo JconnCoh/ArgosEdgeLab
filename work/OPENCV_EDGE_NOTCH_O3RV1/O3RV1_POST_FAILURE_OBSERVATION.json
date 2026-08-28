@@ -1,0 +1,43 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-28T15:12:00Z",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "state": "PASS_O3RV1_POST_FAILURE_RUNTIME_OBSERVATION",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "sources": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3EI1/O3EI1_EXACT_RESPONSE_COLLECTION_GATE.json",
+      "sha256": "A8437E04071F4429734BC791F23E1D537FB0CD6DB36ADD9399830ED83D924756",
+      "responseId": "R_43E71FD9A091_20260828144836355_489915ba",
+      "signatureVerified": true
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3RV1/O3RV1_RUNTIME_PREMISE_REVIEW.json",
+      "sha256": "22557FFA8DE03DBD8690376EBCF2AF1D77A5A4CD3CFF14DFEB492ED47ADE494C"
+    }
+  ],
+  "expectedObserved": [
+    {"field":"pythonExecutableSha256","expected":"7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1","observed":"7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1"},
+    {"field":"installationManifestSha256","expected":"1289EC11F092233D3AAB5ACF416B0212F1874F698F9BBC2B474829939BCDF596","observed":"1289EC11F092233D3AAB5ACF416B0212F1874F698F9BBC2B474829939BCDF596"},
+    {"field":"pythonVersion","expected":"3.13.2","observed":"3.13.2"},
+    {"field":"opencvVersion","expected":"5.0.0","observed":"5.0.0"},
+    {"field":"numpyVersion","expected":"2.5.2","observed":"2.5.2"}
+  ],
+  "capabilityInstallationOccurredInSameSignedTransaction": true,
+  "capabilityInstallationWasSeparatelyAuthorized": true,
+  "installedRuntimeBytesChanged": false,
+  "observationQueryMutatedRuntimeOrSource": false,
+  "mutationsPerformed": false,
+  "imageBytesRead": false,
+  "sourceHashingPerformed": false,
+  "sourceMutationPerformed": false,
+  "taskActions": 0,
+  "existingProcessActions": 0,
+  "healthyProcessorTouched": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
