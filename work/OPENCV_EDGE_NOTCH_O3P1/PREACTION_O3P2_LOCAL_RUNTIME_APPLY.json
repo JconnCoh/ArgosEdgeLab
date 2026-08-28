@@ -1,0 +1,105 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3P2_LOCAL_OPENCV_RUNTIME_APPLY_20260828",
+  "createdUtc": "2026-08-28T01:09:45.4339839Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "CREATE_FRESH_OFFLINE_LOCAL_OPENCV_REVIEW_RUNTIME_AT_C_A3P2R_WITH_FILE_BACKED_VERIFIER",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/New-O3P2LocalRuntime.ps1",
+      "sha256": "52D0DDF209891A4382327980CAAA5AB3DE2FA2FCB2E4290ADC2974742DBF4EA6"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P2_LOCAL_RUNTIME_INVOCATION.json",
+      "sha256": "96CC6AA51FC8BF46C3385D989D6B56646C40BC909F32174C85963906A1DA1D88"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/Verify-O3P2LocalRuntime.py",
+      "sha256": "0A2C3D4781FDFC5126E3729115DD52C2D5C85BFC2FB5CF66AEF0E3111D7BA068"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P2_LOCAL_RUNTIME_VERIFY_REHEARSAL.json",
+      "sha256": "6816A5D02FD8A01752C86155EC0381D931A85FCED13DCF558A16EE28524731AA"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P2_LOCAL_RUNTIME_VERIFY_APPLY.json",
+      "sha256": "F36A10E3953FC2867FE44221765D026EDAF69844B5EB1403ECDDE7271B08A33F"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P2_LOCAL_RUNTIME_RECOVERY_INTENT.json",
+      "sha256": "9A500695C48B71D13864736698185854B7D6E7899AB0488EA23CD0FBD8254B03"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_LOCAL_RUNTIME_FAILURE_20260828.json",
+      "sha256": "FF9615AF0AC7ABF52AA1E980E8AAFAC6DE9A09D8743F6D29119980FF55A9244E"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_LOCAL_RUNTIME_POST_FAILURE_OBSERVATION.json",
+      "sha256": "CD470DEAC62F5D7B2CC9A1C3ECE84E6C479862C7EB820C9E656CAC2933C67943"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P2_LOCAL_RUNTIME_PATH_BUDGET_GATE.json",
+      "sha256": "E77069889ED8226CA712658D1883C227BABB29208E22ED91BE5FE3715BEE4177"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P2_LOCAL_RUNTIME_PREFLIGHT_GATE.json",
+      "sha256": "6065128973372C9AF689293B287A8828D0F02E01AF1A9BEAC9A890C3FE5FB616"
+    },
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "D3E9AC0F43F7FA08FFC46DDDA517AE99BF8A7A3B1AF8CC9F4EA8B162AFAC2383"
+    },
+    {
+      "path": "C:/Python314/python.exe",
+      "sha256": "4942B86A6597E5AEE0128DAA00050ED79BC21F6E709A78EB19CBFEB0C2F39AC9"
+    },
+    {
+      "path": "C:/Argos_Python_Wheels/numpy-2.5.1-cp314-cp314-win_amd64.whl",
+      "sha256": "24D0EB82C0541D3415A33425DB64AE439DFFCCD7B4DBCB30E7C35120205C506A"
+    },
+    {
+      "path": "C:/Argos_Python_Wheels/opencv_python-5.0.0.93-cp37-abi3-win_amd64.whl",
+      "sha256": "F90BA04B8F73BC5C3814037699739F0156F597338A98F05956C684E7C3CA10D2"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      "C:/A3P1R"
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

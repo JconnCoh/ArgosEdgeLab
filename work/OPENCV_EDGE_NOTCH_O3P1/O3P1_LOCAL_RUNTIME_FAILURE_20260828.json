@@ -1,0 +1,35 @@
+{
+  "schema": "argos_ocv03_o3p1_local_runtime_failure_v1",
+  "incidentId": "O3P1_LOCAL_RUNTIME_VERIFY_QUOTING_20260828",
+  "createdUtc": "2026-08-28T01:02:48.8854694Z",
+  "state": "WITHDRAWN",
+  "classification": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE",
+  "attemptedAction": "CREATE_FRESH_OFFLINE_LOCAL_OPENCV_REVIEW_RUNTIME_AT_C_A3P1R",
+  "attemptedScript": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P1/New-O3P1LocalRuntime.ps1",
+    "sha256": "FB1506E7B5AA2E0B96E20C52D9DDEE64B08F7F822277E2CE771AC5F5B3DBD26A"
+  },
+  "invocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_LOCAL_RUNTIME_INVOCATION.json",
+    "sha256": "94F2E59CE369D9B47276E4EBD862C41831394A9F81A45298B1BE6853260508C5"
+  },
+  "preaction": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P1/PREACTION_O3P1_LOCAL_RUNTIME_APPLY.json",
+    "sha256": "2335ED39EBFF8292E266C4B6744AA92E971530328E6D47B0EC3881B6E470A4D5"
+  },
+  "failureSignature": "The offline wheels installed, then PowerShell external native-argument processing stripped the inner double quotes from the Python -c JSON expression. Python received unquoted dictionary keys and separators and raised SyntaxError before import verification.",
+  "failedStage": "POST_INSTALL_IMPORT_VERIFICATION",
+  "processExitCode": 1,
+  "targetRoot": "C:/A3P1R",
+  "targetRootDisposition": "FAILED_NON_REUSABLE_EVIDENCE_DO_NOT_RETRY_DO_NOT_REPAIR",
+  "gatePath": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_LOCAL_RUNTIME_GATE.json",
+  "gateWritten": false,
+  "partialGateWritten": false,
+  "networkUsed": false,
+  "sourceMutationPerformed": false,
+  "jbodContacted": false,
+  "liveProviderTouched": false,
+  "processorTouched": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,57 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "incidentId": "OCV03_O3N1_PERIODIC_DF_TRACE_OPERATOR_REJECTION_20260827",
+  "createdUtc": "2026-08-28T00:48:20Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "mutationsPerformed": false,
+  "sources": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3N1/O3N1_LOCAL_SLOT16_GALLERY_R2_WITHDRAWAL.json",
+      "sha256": "771677E4DDF0B8438207A5E30270844A1B3C92A592224CB45CF9BFC202B15E23",
+      "role": "OPERATOR_REJECTED_SIGNED_RESULT_WITHDRAWAL"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3L8/O3L8_OPERATOR_FEEDBACK_20260827.json",
+      "sha256": "462BB62796A2D3E424DF1C6FC05AAC39EF40CCB4AAF0C4D6BF73417CE33120DD",
+      "role": "OPERATOR_CHANNEL_JUDGMENTS"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_OPERATOR_BASELINE_20260827.json",
+      "sha256": "3FCB84A45222DE536BC1CD11B84B3BAE455943CED9E7719BAA0C1DCB2D7CF333",
+      "role": "CORRECTED_SUCCESSOR_CONTRACT"
+    }
+  ],
+  "observations": [
+    {
+      "field": "signedDetectorState",
+      "expected": "ONE_RECONCILED_PHYSICAL_SLOT16_NOTCH_OR_EXPLICIT_HOLD_WITH_SEMANTICALLY_VALID_CONTOURS",
+      "observed": "HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH_ZERO_PHYSICAL_ZERO_ELIGIBLE"
+    },
+    {
+      "field": "dfChannelResponses",
+      "expected": "BOUNDED_PHYSICAL_OUTER_EDGE_CANDIDATES",
+      "observed": "TWENTY_ONE_PERIODIC_PATTERNED_DIE_RESPONSES"
+    },
+    {
+      "field": "acceptedBaseline",
+      "expected": "OPERATOR_IDENTIFIES_LOCKED_REFERENCE",
+      "observed": "O3L8_CONTOUR_EVIDENCE_SELECTED_AND_O3N1_REJECTED"
+    },
+    {
+      "field": "argosPosePrior",
+      "expected": "NOT_CONSUMED",
+      "observed": "NOT_CONSUMED_AND_REMAINS_FORBIDDEN"
+    }
+  ],
+  "decision": "REMEDY_B_RESTORE_THE_USEFUL_O3L8_CONTOUR_EVIDENCE_AS_SUCCESSOR_BASELINE_AND_REPLACE_ONLY_THE_UNQUALIFIED_CLASSIFIER_OR_CHANNEL_METHOD_IN_A_FRESH_NAMESPACE",
+  "sourceMutationPerformed": false,
+  "imageBytesRead": false,
+  "providerActivated": false,
+  "processorTouched": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

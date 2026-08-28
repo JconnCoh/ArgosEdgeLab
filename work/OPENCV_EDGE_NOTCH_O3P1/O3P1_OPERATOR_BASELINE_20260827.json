@@ -1,0 +1,116 @@
+{
+  "schema": "argos_ocv03_o3p1_operator_baseline_v1",
+  "revision": "OCV03_O3P1_OPERATOR_CONFIRMED_O3L8_CONTOUR_BASELINE_20260827",
+  "createdUtc": "2026-08-28T00:48:20Z",
+  "state": "APPROVED_BASELINE_O3L8_CONTOUR_EVIDENCE_O3N1_WITHDRAWN",
+  "disposition": "APPROVED_BASELINE",
+  "baselineScope": "SUCCESSOR_CONTOUR_EVIDENCE_AND_OPERATOR_REGRESSION_CONTRACT_ONLY",
+  "baselineArtifacts": {
+    "engine": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3L8/WaferTopologyAxisOpenCv.py",
+      "sha256": "D8897C1A5B60CB5AA9B0343CF8C9E5A249CCC5DEF5FBCDFE645EC08C354EF3BD"
+    },
+    "reviewManifest": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3L8/review/MANIFEST.json",
+      "sha256": "4D7ACA7A1EC90393AB21A3B58D7CD763B1B499CCFA6128110D168374E039544F"
+    },
+    "gallery": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3L8/gallery.html",
+      "sha256": "0AFD7DDECDB351EB926748DDD4C5A7042043D73D54059200F76E04D3432ABDBC"
+    },
+    "operatorFeedback": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3L8/O3L8_OPERATOR_FEEDBACK_20260827.json",
+      "sha256": "462BB62796A2D3E424DF1C6FC05AAC39EF40CCB4AAF0C4D6BF73417CE33120DD"
+    }
+  },
+  "operatorJudgments": [
+    {
+      "id": "S17-C1-DF",
+      "judgment": "GREAT_POSITIVE_CONTROL"
+    },
+    {
+      "id": "S17-C1-BF",
+      "judgment": "GREAT_POSITIVE_CONTROL"
+    },
+    {
+      "id": "S16-C1-DF",
+      "judgment": "NO_NOTCH_IN_PRESENTED_IMAGE_INCOMPLETE_CONTOUR_NEGATIVE",
+      "coverageFraction": 0.829,
+      "longestUnsupportedOrInterpolatedGapPx": 171,
+      "displayRule": "UNSUPPORTED_SPAN_MUST_NOT_BE_RENDERED_AS_MEASURED_CYAN"
+    },
+    {
+      "id": "S17-C2-DF",
+      "judgment": "GREAT_EDGE_TRACE_POSITIVE_CONTROL"
+    },
+    {
+      "id": "S17-C2-BF",
+      "judgment": "GOOD_EDGE_TRACE_WITH_TINY_LEFT_JUT_NOISE_CONTROL"
+    },
+    {
+      "id": "S16-C1-BF",
+      "judgment": "GOOD_EDGE_TRACE_WITH_HOTSPOT_TRANSITION_NOISE_CONTROL"
+    }
+  ],
+  "diagnosis": {
+    "o3l8EdgeTracingFailure": false,
+    "o3l8SecondStageClassifierMiss": true,
+    "frozenAbsoluteDepthGatePx": 20.0,
+    "frozenMinimumWidthGatePx": 18,
+    "s17c1BfPeakDepthPx": 76.52395629882812,
+    "s17c1DfPeakDepthPx": 72.17041015625,
+    "failureMode": "THE_ABSOLUTE_GATE_WAS_TOO_SPECIFIC_TO_THE_DEEP_S17_C1_NOTCH_AND_DID_NOT_QUALIFY_SHALLOW_OR_BROAD_VARIANTS; BASELINE_FITTING_CAN_REDUCE_MEASURED_PROMINENCE",
+    "o3n1FailureMode": "DF_RADIAL_SCAN_FOLLOWED_REPEATING_PATTERNED_DIE_TEETH_AND_EMITTED_A_CHANNEL_ONLY_CANDIDATE_STORM",
+    "o3n1SuccessorParentAllowed": false
+  },
+  "successorContract": {
+    "preserveUsefulMeasuredContourTracing": true,
+    "classifierMayUseProminenceCurvatureAndPairedChannelPositionEvidence": true,
+    "channelSpecificBfAndDfMethodsAllowed": true,
+    "frontsideAndBacksideMethodsMayDiffer": true,
+    "backsideIsSeparateAppearanceRegime": true,
+    "backsidePixelsConsumedByThisBaseline": false,
+    "searchRawFullPerimeterDegrees": 360,
+    "argosRotationMetadataAllowed": false,
+    "argosOrientationMetadataAllowed": false,
+    "argosLocationPriorAllowed": false,
+    "knownSlot16UpperRightLocationAllowedAsDetectorInput": false,
+    "knownSlot16UpperRightLocationUse": "POST_INFERENCE_REGRESSION_SCORING_ONLY",
+    "unsupportedContourMustRemainVisiblyDistinctFromMeasuredContour": true,
+    "physicalNotchContourMustBeMouthToMouthAndContourHugging": true,
+    "thresholdOrAlgorithmFrozenByThisRecord": false,
+    "newAlgorithmRequiresFreshNamespaceAndGates": true
+  },
+  "withdrawnSuccessor": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3N1/O3N1_LOCAL_SLOT16_GALLERY_R2_WITHDRAWAL.json",
+    "sha256": "771677E4DDF0B8438207A5E30270844A1B3C92A592224CB45CF9BFC202B15E23",
+    "immutableEvidenceOnly": true,
+    "futureReuseAllowed": false
+  },
+  "preservedHolds": [
+    "O3N1_HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+    "BF_PARTIAL_TOPOLOGY_COVERAGE",
+    "FIDUCIAL_DESIGNATION",
+    "MAP_POSE_REGISTRATION",
+    "COVERAGE",
+    "SENSITIVITY",
+    "INDEPENDENT_ALIGNMENT_TRANSFER",
+    "XML",
+    "TRAINING",
+    "PRODUCTION_ROUTING"
+  ],
+  "actionsPerformed": {
+    "imageBytesRead": false,
+    "detectorRerun": false,
+    "thresholdOrAlgorithmChanged": false,
+    "sourceMutationOrDeletion": false,
+    "providerActivation": false,
+    "processorTaskOrProcessAction": false,
+    "holdClearance": false
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

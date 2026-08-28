@@ -1,0 +1,25 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "revision": "O3P1_LOCAL_READ_ONLY_POST_FAILURE_CAPABILITIES_20260828",
+  "state": "PASS_O3P1_LOCAL_READ_ONLY_CAPABILITY_INVENTORY",
+  "routes": [
+    {
+      "type": "DIRECT_ADMIN_READ_ONLY",
+      "capabilities": [
+        "EXACT_LOCAL_DIRECTORY_FILE_COUNT",
+        "EXACT_LOCAL_DIRECTORY_BYTE_COUNT",
+        "EXACT_LOCAL_TOP_LEVEL_NAMES",
+        "EXACT_LOCAL_PATH_EXISTENCE",
+        "EXACT_LOCAL_IMPORT_VERSION_READ"
+      ]
+    }
+  ],
+  "taskActions": [],
+  "processActions": [],
+  "installedChangesAllowed": false,
+  "imageReadAllowed": false,
+  "networkAllowed": false,
+  "maximumRows": 2000,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

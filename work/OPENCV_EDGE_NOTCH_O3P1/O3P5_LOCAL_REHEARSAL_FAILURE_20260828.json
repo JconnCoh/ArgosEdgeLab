@@ -1,0 +1,48 @@
+{
+  "schema": "argos_ocv03_o3p5_local_rehearsal_failure_v1",
+  "incidentId": "O3P5_POST2_UNOBSERVED_CANDIDATE_ABORT_20260828",
+  "createdUtc": "2026-08-28T01:38:26Z",
+  "state": "WITHDRAWN",
+  "classification": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE",
+  "attemptedAction": "RUN_LOCKED_O3P5_FRONT_TOPOLOGY_CORROBORATOR_ON_THREE_POST2_BF_DF_PAIRS_THROUGH_TEMPORARY_VERIFIED_R_ALIAS",
+  "failedArtifactLifecycle": "FROZEN_AND_EXECUTED_LOCAL_REHEARSAL",
+  "failedNamespace": "O3P5",
+  "replayAllowed": false,
+  "successorParentAllowed": false,
+  "freshNamespaceRequired": true,
+  "engine": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P1/Corroborate-O3P4FrontNotches.py",
+    "sha256": "3FE7CA9455FF1DFDB666BEC9D3A5763506C54400808E1BBF6D1D94ECD6C158C9"
+  },
+  "job": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_POST2_SHORT_ALIAS_JOB.json",
+    "sha256": "86D6C7B04CF49214C5B6FD3EF0CF63C2CE28369447905BAAD6B8C1068AD02C0B"
+  },
+  "launcher": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P1/Invoke-O3P5Post2ShortAlias.ps1",
+    "sha256": "1A0D597D051B5107F85259B72B8029D348BFD8B45546421D41DF25E4934BEBF6"
+  },
+  "preaction": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P1/PREACTION_O3P5_POST2_SHORT_ALIAS_RUN.json",
+    "sha256": "869FAC3549D13EC0E267B79CCA4B1A5567E09DD1B7D40A153A2DC7ED1733A31B"
+  },
+  "failureSignature": "A radial seed crop contained fewer than two observed wafer-contour columns. WaferTopologyAxisOpenCv.topology_edge raised ValueError and the O3P5 batch engine did not convert that expected candidate-level insufficiency into a rejected-candidate record, so the whole three-wafer batch terminated.",
+  "exceptionType": "ValueError",
+  "exceptionMessage": "Wafer contour covers fewer than two columns.",
+  "failedEngineLine": 235,
+  "failedTopologyLine": 107,
+  "processExitCode": 1,
+  "outputPath": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_POST2_CORROBORATION.json",
+  "outputWritten": false,
+  "launchGatePath": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_POST2_LAUNCH_GATE.json",
+  "launchGateWritten": false,
+  "aliasDrive": "R:",
+  "aliasRemovedAfterFailure": true,
+  "sourceMutationPerformed": false,
+  "jbodContacted": false,
+  "liveProviderTouched": false,
+  "processorTouched": false,
+  "retryPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

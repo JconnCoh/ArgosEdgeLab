@@ -1,0 +1,107 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T00:48:20Z",
+  "incidentId": "OCV03_O3N1_PERIODIC_DF_TRACE_OPERATOR_REJECTION_20260827",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {
+      "path": "",
+      "sha256": ""
+    },
+    "workflowReviewClearance": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "route": {
+    "type": "LOCAL_OPENCV_DEVELOPMENT",
+    "jobClass": "LOCAL_OPENCV_REVIEW_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {
+      "path": "",
+      "sha256": ""
+    },
+    "installedConfigEvidence": {
+      "path": "",
+      "sha256": ""
+    },
+    "capabilityEvidence": {
+      "path": "",
+      "sha256": ""
+    },
+    "qualifiedEndpointGate": {
+      "path": "",
+      "sha256": ""
+    },
+    "qualifiedAdminGate": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_SUPPORTING_OBSERVATION.json",
+      "sha256": "0D166EE648A8C57E9E431DCFAADC78C40DC3915249AA82256DECDAEB25611B01"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "scope": {
+    "freshNamespace": "work/OPENCV_EDGE_NOTCH_O3P1",
+    "firstMutation": "FRONTSIDE_SUCCESSOR_ONLY",
+    "baseline": "O3L8_MEASURED_CONTOUR_EVIDENCE",
+    "o3n1ParentAllowed": false,
+    "rawFullPerimeterDegrees": 360,
+    "argosRotationOrientationLocationMetadataAllowed": false,
+    "knownNotchLocationUse": "POST_INFERENCE_REGRESSION_SCORING_ONLY",
+    "bfDfChannelSpecificMethodsAllowed": true,
+    "unsupportedContourRenderedAsMeasuredAllowed": false,
+    "post2DevelopmentBeforeHotspot": true,
+    "backsideRequiresSeparateLaterIntent": true
+  },
+  "authorizationBoundary": {
+    "localAlgorithmDevelopmentAuthorized": true,
+    "sourceImageReadAuthorized": true,
+    "sourceMutationAuthorized": false,
+    "reviewOnlyExecutionAuthorized": true,
+    "livePortalPublicationAuthorizedByThisIntent": false,
+    "providerActivationAuthorized": false,
+    "protectedProcessorActionAuthorized": false,
+    "trainingXmlOrProductionAuthorized": false,
+    "operatorAuthorization": "2026-08-27 operator directed Codex to get frontside notches right, test POST2 and hotspot, then develop and verify backside separately and fan out to additional lots."
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

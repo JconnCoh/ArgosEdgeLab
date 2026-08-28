@@ -1,0 +1,36 @@
+{
+  "schema": "argos_ocv03_o3p2_local_runtime_preflight_gate_v1",
+  "checkedUtc": "2026-08-28T01:08:53Z",
+  "state": "PASS_O3P2_LOCAL_RUNTIME_FULL_PREFLIGHT",
+  "script": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P1/New-O3P2LocalRuntime.ps1",
+    "sha256": "52D0DDF209891A4382327980CAAA5AB3DE2FA2FCB2E4290ADC2974742DBF4EA6"
+  },
+  "invocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P2_LOCAL_RUNTIME_INVOCATION.json",
+    "sha256": "96CC6AA51FC8BF46C3385D989D6B56646C40BC909F32174C85963906A1DA1D88"
+  },
+  "verifier": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P1/Verify-O3P2LocalRuntime.py",
+    "sha256": "0A2C3D4781FDFC5126E3729115DD52C2D5C85BFC2FB5CF66AEF0E3111D7BA068"
+  },
+  "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+  "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+  "exactWindowsPowerShell51PreflightState": "PASS_O3P2_LOCAL_RUNTIME_PREFLIGHT",
+  "fileBackedVerifierRehearsalState": "PASS_O3P2_LOCAL_RUNTIME_VERIFICATION",
+  "fileBackedVerifierRehearsalRoot": "C:/A3P1R",
+  "fileBackedVerifierRehearsalInventoryStable": true,
+  "freshTargetRoot": "C:/A3P2R",
+  "freshTargetAbsent": true,
+  "finalGateAbsent": true,
+  "partialGateAbsent": true,
+  "pathBudget": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P2_LOCAL_RUNTIME_PATH_BUDGET_GATE.json",
+    "sha256": "E77069889ED8226CA712658D1883C227BABB29208E22ED91BE5FE3715BEE4177",
+    "state": "PASS_PATH_BUDGET"
+  },
+  "networkUsed": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

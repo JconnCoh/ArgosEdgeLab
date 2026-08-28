@@ -1,0 +1,95 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "incidentId": "O3P1_LOCAL_RUNTIME_VERIFY_QUOTING_20260828",
+  "observedUtc": "2026-08-28T01:04:07.2136277Z",
+  "state": "PASS_O3P1_LOCAL_RUNTIME_POST_FAILURE_OBSERVATION",
+  "intent": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_LOCAL_RUNTIME_POST_FAILURE_OBSERVE_INTENT.json",
+    "sha256": "A89A6C391465D0A46D374983A7D9F3880003DE9AAB3EF16367EEAF021E038C8C"
+  },
+  "routeType": "DIRECT_ADMIN_READ_ONLY",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "sources": [
+    {
+      "sourcePath": "C:/A3P1R",
+      "selector": "recursive files only plus one Python -B import/version read with PYTHONDONTWRITEBYTECODE=1",
+      "maximumRows": 2000,
+      "observedRows": 1420
+    },
+    {
+      "sourcePath": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_LOCAL_RUNTIME_GATE.json",
+      "selector": "exact final and .partial gate path existence",
+      "maximumRows": 2,
+      "observedRows": 2
+    }
+  ],
+  "expectedObserved": {
+    "targetExists": {
+      "expected": true,
+      "observed": true
+    },
+    "fileCount": {
+      "expectedMaximum": 2000,
+      "observed": 1420
+    },
+    "byteCount": {
+      "expectedMaximum": 268435456,
+      "observed": 172144614
+    },
+    "topLevelNames": {
+      "expected": [
+        "bin",
+        "cv2",
+        "numpy",
+        "numpy-2.5.1.dist-info",
+        "numpy.libs",
+        "opencv_python-5.0.0.93.dist-info"
+      ],
+      "observed": [
+        "bin",
+        "cv2",
+        "numpy",
+        "numpy-2.5.1.dist-info",
+        "numpy.libs",
+        "opencv_python-5.0.0.93.dist-info"
+      ]
+    },
+    "gateExists": {
+      "expected": false,
+      "observed": false
+    },
+    "partialGateExists": {
+      "expected": false,
+      "observed": false
+    },
+    "pythonVersion": {
+      "expected": "3.14.7",
+      "observed": "3.14.7"
+    },
+    "opencvVersion": {
+      "expected": "5.0.0",
+      "observed": "5.0.0"
+    },
+    "numpyVersion": {
+      "expected": "2.5.1",
+      "observed": "2.5.1"
+    }
+  },
+  "importReadControls": {
+    "pythonNoBytecodeSwitch": true,
+    "pythonDontWriteBytecodeEnvironment": true,
+    "fileCountBeforeAfterEqual": true,
+    "byteCountBeforeAfterEqual": true
+  },
+  "decision": "D",
+  "decisionMeaning": "Withdraw the failed namespace and design a fresh, file-backed verification path; do not retry or repair C:/A3P1R.",
+  "mutationsPerformed": false,
+  "imageBytesRead": false,
+  "networkUsed": false,
+  "jbodContacted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

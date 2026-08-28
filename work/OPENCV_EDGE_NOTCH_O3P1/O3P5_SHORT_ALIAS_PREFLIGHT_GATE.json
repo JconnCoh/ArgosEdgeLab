@@ -1,0 +1,34 @@
+{
+  "schema": "argos_ocv03_o3p5_short_alias_preflight_gate_v1",
+  "revision": "O3P5_POST2_SHORT_ALIAS_PREFLIGHT_GATE_20260828",
+  "checkedUtc": "2026-08-28T01:36:30Z",
+  "state": "PASS_O3P5_POST2_SHORT_ALIAS_PREFLIGHT_GATE",
+  "windowsPowerShell": {
+    "version": "5.1",
+    "harnessSafetyState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "harnessParserErrorCount": 0,
+    "harnessViolationCount": 0,
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "launcherState": "PASS_O3P5_SHORT_ALIAS_LAUNCH_PREFLIGHT"
+  },
+  "dependencies": [
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/Invoke-O3P5Post2ShortAlias.ps1", "sha256": "1A0D597D051B5107F85259B72B8029D348BFD8B45546421D41DF25E4934BEBF6"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_SHORT_ALIAS_LAUNCH_INVOCATION.json", "sha256": "918EC327F6780FFC2BA29399AA92DB804029952CDECDC1D462E41EA506E9BA72"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_POST2_SHORT_ALIAS_JOB.json", "sha256": "86D6C7B04CF49214C5B6FD3EF0CF63C2CE28369447905BAAD6B8C1068AD02C0B"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/Corroborate-O3P4FrontNotches.py", "sha256": "3FE7CA9455FF1DFDB666BEC9D3A5763506C54400808E1BBF6D1D94ECD6C158C9"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P4_SYNTHETIC_GATE.json", "sha256": "52A9CD82097C71C58C6046D04F7E5260E68CD78112A50FF4F4B1822ECAE6131B"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P2_LOCAL_RUNTIME_GATE.json", "sha256": "E22C0E27D3966B17DF83F205291CEB6B1C5B12A14EE306D157383514E1419FB9"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_SHORT_ALIAS_PATH_GATE.json", "sha256": "76F4622C19410230328B084AA04048A079F3356DDFDD387394D564D5719C6E6A"}
+  ],
+  "syntheticGateState": "PASS_O3P4_FRONT_NOTCH_SYNTHETIC_GATE",
+  "aliasDrive": "R:",
+  "aliasUnused": true,
+  "outputAbsent": true,
+  "launchGateAbsent": true,
+  "sourceMutationAllowed": false,
+  "imageBytesDecoded": false,
+  "metadataOnly": true,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

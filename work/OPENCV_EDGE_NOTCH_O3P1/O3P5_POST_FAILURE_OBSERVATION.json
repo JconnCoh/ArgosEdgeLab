@@ -1,0 +1,83 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "incidentId": "O3P5_POST2_UNOBSERVED_CANDIDATE_ABORT_20260828",
+  "observedUtc": "2026-08-28T01:41:45.9788861Z",
+  "state": "PASS_O3P5_POST_FAILURE_OBSERVATION",
+  "intent": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_POST_FAILURE_OBSERVE_INTENT.json",
+    "sha256": "2539404EBA86B6AFC5AAA8B5A5107366C36EE35A27D74A3F91757260B3028C87"
+  },
+  "routeType": "DIRECT_ADMIN_READ_ONLY",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "sources": [
+    {
+      "sourcePath": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_POST2_CORROBORATION.json",
+      "selector": "exact final output and .partial leaf existence",
+      "maximumRows": 2,
+      "observedRows": 2
+    },
+    {
+      "sourcePath": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_POST2_LAUNCH_GATE.json",
+      "selector": "exact final launch gate and .partial leaf existence",
+      "maximumRows": 2,
+      "observedRows": 2
+    },
+    {
+      "sourcePath": "R:",
+      "selector": "exact subst mapping row for R drive",
+      "maximumRows": 1,
+      "observedRows": 0
+    },
+    {
+      "sourcePath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1",
+      "selector": "six literal BF/DF leaves; length and last-write UTC metadata only",
+      "maximumRows": 6,
+      "observedRows": 6
+    },
+    {
+      "sourcePath": "work/OPENCV_EDGE_NOTCH_O3P1",
+      "selector": "frozen O3P5 engine, job, and launcher exact text hashes",
+      "maximumRows": 3,
+      "observedRows": 3
+    }
+  ],
+  "expectedObserved": {
+    "outputExists": {"expected": false, "observed": false},
+    "outputPartialExists": {"expected": false, "observed": false},
+    "launchGateExists": {"expected": false, "observed": false},
+    "launchGatePartialExists": {"expected": false, "observed": false},
+    "rDriveMapped": {"expected": false, "observed": false},
+    "sourceMetadataUnchangedFromFrozenJob": {"expected": true, "observed": true},
+    "failedArtifactHashesUnchanged": {"expected": true, "observed": true}
+  },
+  "sourceMetadata": [
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot01/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot01_BrightfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "lastWriteUtc": "2026-07-13T21:11:27.0000000Z"},
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot01/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot01_DarkfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "lastWriteUtc": "2026-07-13T21:11:41.0000000Z"},
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot03/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot03_BrightfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "lastWriteUtc": "2026-07-13T21:09:44.0000000Z"},
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot03/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot03_DarkfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "lastWriteUtc": "2026-07-13T21:09:57.0000000Z"},
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot17/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_BrightfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "lastWriteUtc": "2026-07-13T21:05:23.0000000Z"},
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot17/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_DarkfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "lastWriteUtc": "2026-07-13T21:05:37.0000000Z"}
+  ],
+  "failedArtifactHashes": [
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/Corroborate-O3P4FrontNotches.py", "sha256": "3FE7CA9455FF1DFDB666BEC9D3A5763506C54400808E1BBF6D1D94ECD6C158C9"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_POST2_SHORT_ALIAS_JOB.json", "sha256": "86D6C7B04CF49214C5B6FD3EF0CF63C2CE28369447905BAAD6B8C1068AD02C0B"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/Invoke-O3P5Post2ShortAlias.ps1", "sha256": "1A0D597D051B5107F85259B72B8029D348BFD8B45546421D41DF25E4934BEBF6"}
+  ],
+  "preIntentProbe": {
+    "promotedAsObservationEvidence": false,
+    "imageHashReadOccurred": true,
+    "mutationsPerformed": false,
+    "reasonNotPromoted": "The recovery intent had not yet passed; the gated observation was rerun afterward without reading image bytes."
+  },
+  "decision": "D",
+  "decisionMeaning": "Withdraw O3P5. In a fresh namespace, mechanically convert an expected per-seed or per-channel topology insufficiency into a non-corroborated record, add exact synthetic exception-path coverage, and retain batch-fatal behavior only for infrastructure or contract failures.",
+  "mutationsPerformed": false,
+  "imageBytesRead": false,
+  "networkUsed": false,
+  "jbodContacted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

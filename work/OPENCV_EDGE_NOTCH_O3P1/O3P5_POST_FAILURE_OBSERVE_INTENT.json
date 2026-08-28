@@ -1,0 +1,115 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T01:41:00Z",
+  "incidentId": "O3P5_POST2_UNOBSERVED_CANDIDATE_ABORT_20260828",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_LOCAL_REHEARSAL_FAILURE_20260828.json",
+        "sha256": "00D37F7EBB7642967E5FDBE8BA5F4C50FA8A29E893E6EA073BA187C549370C64",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "STATUS",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_LOCAL_READ_ONLY_CAPABILITY_INVENTORY.json",
+      "sha256": "C91BC2567F987EC7E43A80AEB128D66DBF02AE374A84914ACAF3CF6E3D89CF74"
+    },
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_LOCAL_READ_ONLY_ADMIN_GATE.json",
+      "sha256": "F229919DBDF48961FEA8B3BF122EBDEAC9A832BA5DDBBB60C0931470A767FCA4"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_POST2_CORROBORATION.json",
+        "sourceSchema": "local_path_existence_v1",
+        "selector": "exact final output and .partial leaf existence only",
+        "uniquenessKey": "normalizedFullPath",
+        "maximumRows": 2
+      },
+      {
+        "sourcePath": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_POST2_LAUNCH_GATE.json",
+        "sourceSchema": "local_path_existence_v1",
+        "selector": "exact final launch gate and .partial leaf existence only",
+        "uniquenessKey": "normalizedFullPath",
+        "maximumRows": 2
+      },
+      {
+        "sourcePath": "R:",
+        "sourceSchema": "subst_drive_mapping_state_v1",
+        "selector": "exact R drive mapping row only",
+        "uniquenessKey": "driveLetter",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1",
+        "sourceSchema": "exact_six_source_file_metadata_v1",
+        "selector": "six literal BF/DF leaves from frozen O3P5 job; length and last-write UTC only; no content read",
+        "uniquenessKey": "normalizedFullPath",
+        "maximumRows": 6
+      },
+      {
+        "sourcePath": "work/OPENCV_EDGE_NOTCH_O3P1",
+        "sourceSchema": "exact_three_text_artifact_hashes_v1",
+        "selector": "frozen O3P5 engine, job, and launcher leaves only",
+        "uniquenessKey": "normalizedFullPath",
+        "maximumRows": 3
+      }
+    ],
+    "requestedCapabilities": [
+      "EXACT_LOCAL_PATH_EXISTENCE",
+      "EXACT_LOCAL_DRIVE_MAPPING_STATE",
+      "EXACT_LOCAL_FILE_METADATA",
+      "EXACT_LOCAL_TEXT_ARTIFACT_HASH"
+    ],
+    "requestedFields": [
+      "outputExists",
+      "outputPartialExists",
+      "launchGateExists",
+      "launchGatePartialExists",
+      "rDriveMapped",
+      "sourceFileMetadata",
+      "failedArtifactHashes"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

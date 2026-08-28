@@ -1,0 +1,53 @@
+{
+  "schema": "argos_ocv03_o3p6_local_rehearsal_failure_v1",
+  "incidentId": "O3P5_O3P6_FRONT_CORROBORATOR_RECOVERY_20260828",
+  "createdUtc": "2026-08-28T01:56:30Z",
+  "state": "WITHDRAWN",
+  "classification": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE",
+  "attemptedAction": "RUN_O3P6_BLIND_FRONT_CORROBORATOR_ON_THREE_POST2_BF_DF_PAIRS",
+  "failedArtifactLifecycle": "FROZEN_AND_EXECUTED_LOCAL_REHEARSAL",
+  "failedNamespace": "O3P6",
+  "replayAllowed": false,
+  "successorParentAllowed": false,
+  "freshNamespaceRequired": true,
+  "blindInferenceFreeze": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_BLIND_INFERENCE_FREEZE.json",
+    "sha256": "851BB3805A148F039D2D7D7807BD526E905A613048071B76D98A9B5D430E9EDC"
+  },
+  "scorerGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_SCORER_GATE.json",
+    "sha256": "0E53F1AEC0F2E8328357E90BD5E65897EBDC47681AA6EAEA237D009E843799BF",
+    "state": "FAIL_O3P6_POST2_SCORER_GATE_CHANNEL_METHOD_CONTRACT_VIOLATION"
+  },
+  "engine": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P6/Corroborate-O3P6FrontNotches.py",
+    "sha256": "C4CD5AC8FFE1856B3354ED384B2B0D848F84DF25E3EE817AECC45E0E35CA89EA"
+  },
+  "job": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_SHORT_ALIAS_JOB.json",
+    "sha256": "C76683195731426813A6C2064D51B725198F76072A25A85594B767D47D4C807D"
+  },
+  "output": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_CORROBORATION.json",
+    "sha256": "554518BC8EA2306EB3AC0753D3BA69DFABA222F47172CF797F724FC552E66D86"
+  },
+  "launchGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_LAUNCH_GATE.json",
+    "sha256": "73CF8301BF9BCD24EA18C8BD9FA31FF24CDA1FC04BE9B7983F2FCF3EABD37F75"
+  },
+  "failureSignature": "O3P6 forced DF through the BF top-connected topology segmentation and required that DF topology result for eligibility, recurring the documented O3M5 channel-appearance failure. Slot03 and Slot17 therefore held despite correct BF topology and qualified DF radial measurements; Slot01 admitted an unrelated DF-only response as a second topology-correlated candidate.",
+  "documentedPriorViolated": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md section Frontside BF and DF edge appearance regimes must not be forced through one segmentation method",
+  "correctFrozenSplitContract": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3M6/O3M6_R6_SPLIT_METHOD_PREFLIGHT_GATE.json",
+    "sha256": "B70A5C2E527F8EF26071A7EBEDC95D59DADA7ADB98930FCB54D1BBA30624DA7B"
+  },
+  "processExitCode": 0,
+  "terminalGateWritten": true,
+  "sourceMutationPerformed": false,
+  "jbodContacted": false,
+  "liveProviderTouched": false,
+  "processorTouched": false,
+  "retryPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

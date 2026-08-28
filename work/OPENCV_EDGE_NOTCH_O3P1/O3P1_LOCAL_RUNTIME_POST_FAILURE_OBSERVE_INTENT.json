@@ -1,0 +1,120 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T01:02:48.8854694Z",
+  "incidentId": "O3P1_LOCAL_RUNTIME_VERIFY_QUOTING_20260828",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_LOCAL_RUNTIME_FAILURE_20260828.json",
+        "sha256": "FF9615AF0AC7ABF52AA1E980E8AAFAC6DE9A09D8743F6D29119980FF55A9244E",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "",
+      "sha256": ""
+    },
+    "workflowReviewClearance": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "STATUS",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {
+      "path": "",
+      "sha256": ""
+    },
+    "installedConfigEvidence": {
+      "path": "",
+      "sha256": ""
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_LOCAL_READ_ONLY_CAPABILITY_INVENTORY.json",
+      "sha256": "60FEFA51F0325DC14FB8A2812FFA494E8ACE40F903553D29F1786BD9DBD3C3BC"
+    },
+    "qualifiedEndpointGate": {
+      "path": "",
+      "sha256": ""
+    },
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_LOCAL_READ_ONLY_ADMIN_GATE.json",
+      "sha256": "6D0CA32CE1678DF165B9FD5BAD569874014123475E446FCFA2E6B25D5080EF33"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "C:/A3P1R",
+        "sourceSchema": "local_directory_inventory_v1",
+        "selector": "recursive files only; names, lengths, and aggregate counts; maximum 2000 rows; no content read",
+        "uniquenessKey": "normalizedFullPath",
+        "maximumRows": 2000
+      },
+      {
+        "sourcePath": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_LOCAL_RUNTIME_GATE.json",
+        "sourceSchema": "local_path_existence_v1",
+        "selector": "exact final and .partial gate path existence",
+        "uniquenessKey": "normalizedFullPath",
+        "maximumRows": 2
+      }
+    ],
+    "requestedCapabilities": [
+      "EXACT_LOCAL_DIRECTORY_FILE_COUNT",
+      "EXACT_LOCAL_DIRECTORY_BYTE_COUNT",
+      "EXACT_LOCAL_TOP_LEVEL_NAMES",
+      "EXACT_LOCAL_PATH_EXISTENCE",
+      "EXACT_LOCAL_IMPORT_VERSION_READ"
+    ],
+    "requestedFields": [
+      "targetExists",
+      "fileCount",
+      "byteCount",
+      "topLevelNames",
+      "gateExists",
+      "partialGateExists",
+      "pythonVersion",
+      "opencvVersion",
+      "numpyVersion"
+    ],
+    "decisionOptions": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {
+      "path": "",
+      "sha256": ""
+    },
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

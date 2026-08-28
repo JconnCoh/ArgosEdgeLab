@@ -1,0 +1,20 @@
+{
+  "schema": "argos_ocv03_o3p8_post2_scorer_gate_v1",
+  "createdUtc": "2026-08-28T02:28:00Z",
+  "state": "PASS_O3P8_POST2_DEVELOPMENT_REGRESSION_SCORER_GATE",
+  "inferenceFreeze": {"path": "work/OPENCV_EDGE_NOTCH_O3P8/O3P8_POST2_INFERENCE_FREEZE.json", "sha256": "1112411F82714DAC589AEF53B756095F2FCF663B1BAA10BBD14FA7D5842F6821"},
+  "scorerLabels": {"path": "work/OPENCV_EDGE_NOTCH_O3D2/O3D2_POST2_SCORER_ONLY_LABELS.json", "sha256": "F8337BB2DDA12DBBA5769677C5A1A31E54CDD54659E0137F2EB9694EC2CCA668"},
+  "members": [
+    {"identity": "62546-481_POST2_SLOT01", "expectedAngleDegrees": 89.9, "maximumAbsoluteErrorDegrees": 0.8, "bfTipAngleDegrees": 90.04732196373999, "bfAbsoluteErrorDegrees": 0.14732196373999, "dfCenterAngleDegrees": 90.03556734938735, "dfAbsoluteErrorDegrees": 0.13556734938735, "knownChipoutAngleDegrees": 85.50363964412367, "chipoutSelected": false, "passed": true},
+    {"identity": "62546-481_POST2_SLOT03", "expectedAngleDegrees": 89.55, "maximumAbsoluteErrorDegrees": 0.8, "bfTipAngleDegrees": 89.63519434998574, "bfAbsoluteErrorDegrees": 0.08519434998574, "dfCenterAngleDegrees": 89.64385690044607, "dfAbsoluteErrorDegrees": 0.09385690044607, "passed": true},
+    {"identity": "62546-481_POST2_SLOT17", "expectedAngleDegrees": 89.6, "maximumAbsoluteErrorDegrees": 0.8, "bfTipAngleDegrees": 89.6753506577232, "bfAbsoluteErrorDegrees": 0.0753506577232, "dfCenterAngleDegrees": 89.64755723590974, "dfAbsoluteErrorDegrees": 0.04755723590974, "passed": true}
+  ],
+  "passedMemberCount": 3,
+  "failedMemberCount": 0,
+  "developmentRegressionOnly": true,
+  "independentValidationClaimed": false,
+  "scorerUsedAsDetectorInput": false,
+  "thresholdChangeAfterScoring": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

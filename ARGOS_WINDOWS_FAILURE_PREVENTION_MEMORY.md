@@ -1,5 +1,94 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### Raster provenance and DOM gates do not prove that a detector contour is semantically correct
+
+- Signature: a hash-complete, mask-bounded, real-browser-loaded gallery is
+  visually rejected because the DF cyan trace walks repeating die-edge teeth
+  around the crop, twenty-one periodic texture gaps are presented as candidate
+  notches, and localized red marks do not hug the actual manufactured notch.
+  The page nevertheless calls itself a contour-hugging gallery.
+- Cause: the raster gate correctly proved current asset lineage and zero
+  changes outside each provider mask, while the browser gate correctly proved
+  URL, revision, cardinality, loading, and toggle isolation. Neither gate
+  proved the detector's semantic claim. The returned detector had already
+  failed closed with `HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH`, zero physical
+  candidates, and zero eligible physical candidates; presenting its 21 DF
+  channel-only responses under a contour-hugging review title overstated the
+  evidence.
+- Preflight: before any raster page is classified `RELEASED_REVIEW_ONLY`,
+  separate lineage correctness from semantic correctness. When the detector
+  returns zero reconciled physical candidates or a candidate storm, label the
+  page diagnostic-only and keep it operator-visible only as failure evidence.
+  Require operator visual review of the exact current revision before calling
+  any contour notch-hugging, accepted, correct, or review-ready. A DOM/browser
+  load pass and an outside-mask pixel count can never substitute for this
+  semantic gate.
+- Recovery: retain the presented R2 gallery unchanged as terminal rejected
+  evidence, record the exact operator rejection and screenshot lineage in a
+  separate create-new feedback root, withdraw the release classification, and
+  keep `HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH`. Do not hide cards, relabel the
+  candidate storm, patch the presented root, tune thresholds/algorithms, or
+  create a successor renderer without explicit authority and a fresh
+  namespace.
+- First observed: OCV-03 O3N1 Slot16 gallery R2 on 2026-08-27. Operator
+  rejection identified DF candidates 19-21 as representative visible examples
+  of the repeated-tooth trace and non-notch red marks. No provider, processor,
+  task/process, source, threshold, algorithm, or production action followed.
+
+### Raster overlays must be audited against their actual provider base, not a sibling clean asset
+
+- Signature: an OpenCV raster-provenance audit fails closed with `Overlay
+  changed pixels outside mask` on the first candidate even though the frozen
+  renderer asserted its own overlay/mask invariant and no audit gate was
+  written.
+- Cause: the audit compared the returned overlay to the sibling `clean` crop.
+  The frozen renderer writes four distinct assets: raw `clean`, processed
+  `enhanced`, `overlay` composited on `enhanced`, and the overlay `mask`.
+  CLAHE/enhancement changes nearly the entire crop relative to `clean`, so
+  those legitimate base changes appear outside the annotation mask. The
+  renderer's exact source shows both BF and DF overlays are derived from the
+  enhanced base and verifies the mask against that base before writing.
+- Preflight: trace and pin the exact overlay-construction base from the frozen
+  provider before a pixel audit. Require `clean` to remain a separate locked
+  `CLEAN_BASE`; audit `overlay` against the exact `enhanced` provider base and
+  record that base path/hash explicitly in the current-layer lineage. Reject
+  any audit that infers the base from a sibling filename or role label.
+- Recovery: preserve the failed frozen audit provider, job, and preaction as
+  withdrawn and non-reusable. Prove no audit gate or raster write occurred.
+  Use a fresh provider/job/output namespace that verifies clean, enhanced,
+  overlay, and mask hashes and computes outside-mask changes only between the
+  overlay and its exact enhanced base. Do not modify, recompose, or rename any
+  returned raster.
+- First observed: OCV-03 O3N1 returned-raster audit R1 on 2026-08-27. The
+  exact 90 returned rasters and signed review ZIP remained unchanged; the R1
+  audit gate was absent.
+
+### `System.IO.Compression.FileSystem` alone does not expose `ZipArchiveMode` in Windows PowerShell 5.1
+
+- Signature: an exact Windows PowerShell 5.1 collector preflight reaches an
+  in-memory ZIP boundary test and fails with `Unable to find type
+  [IO.Compression.ZipArchiveMode]` before any extraction root or collection
+  gate is created.
+- Cause: the collector loaded only `System.IO.Compression.FileSystem`. The new
+  zero/one/many byte-array test directly constructed `ZipArchive` objects and
+  used the `ZipArchiveMode` enum, whose assembly was not explicitly loaded in
+  that Windows PowerShell 5.1 process.
+- Preflight: before invoking any function that constructs a `ZipArchive` or
+  references `ZipArchiveMode`, explicitly load both `System.IO.Compression`
+  and `System.IO.Compression.FileSystem`. Require the exact Windows PowerShell
+  5.1 non-mutating preflight to execute the zero/one/many cases, not merely
+  parse the type names.
+- Recovery: preserve the failed frozen collector, invocation, preaction, and
+  clone gate as withdrawn and non-reusable. Prove the response root, payload
+  root, and collection gate are absent. Create a fresh collector namespace
+  from the qualified source with both assemblies loaded before the test; rerun
+  clone, wrapper, harness, zero-recurrence, and exact Windows PowerShell 5.1
+  gates. Do not republish the request or alter the signed response.
+- First observed: OCV-03 O3N1 DATA_PULL collector R1 on 2026-08-27. The signed
+  response ZIP remained unchanged at SHA-256
+  `4BCF17CDCB84EA06FAB931776763FE3966F87197089A688823796E6586481C28`;
+  `C:\O3N1P`, `C:\O3N1D`, and the collection gate were absent.
+
 ### Adjacent parenthesized positional expressions are not valid PowerShell command arguments
 
 - Signature: a frozen PowerShell harness is rejected by the static wrapper
@@ -9460,6 +9549,19 @@ than rerunning it.
   provider.  Reuse frozen R6 radial parameters and O3L8 BF topology values;
   change no threshold, use no Argos rotation/orientation input, and do not
   consume backside pixels.
+- O3P6 recurrence: the O3P6 corroborator correctly isolated candidate-local
+  topology exceptions but nevertheless invoked the BF top-connected topology
+  method on DF and required that DF topology result for eligibility.  Its blind
+  POST2 output therefore held Slot03 and Slot17 despite correct BF topology and
+  qualified DF radial measurements, and admitted an unrelated DF-only response
+  as a second Slot01 topology-correlated candidate.  The output was frozen
+  before scorer labels were read, failed 0 of 3 as an implemented detector,
+  and is withdrawn.  Future gates must mechanically assert that DF pixels never
+  enter the BF topology function, that eligibility consumes only BF topology
+  plus DF outer-edge radial evidence, and that one-channel responses remain
+  negative controls.  A prose declaration of channel-specific methods is not
+  sufficient; the exact invoked functions and per-channel result fields must be
+  checked in the synthetic and real-output gates.
 
 ## 2026-08-27 — PowerShell keyword boundaries require whitespace even when the AST parses
 
@@ -9540,3 +9642,98 @@ than rerunning it.
   and signature hashes as terminal local evidence.  Build any successor under
   a fresh request/package namespace, rerun all gates, and publish it at most
   once with no retry.
+
+## 2026-08-27 — Native Python `-c` verification cannot depend on inner JSON quotes surviving PowerShell
+
+- Failure signature: the O3P1 offline local-runtime apply installed the pinned
+  NumPy and OpenCV wheels into `C:\A3P1R`, then its post-install verification
+  failed with Python `SyntaxError`.  The received expression had unquoted JSON
+  dictionary keys and an invalid `separators=(,,:)` tuple.  No PASS gate was
+  written, no network or source mutation occurred, and JBOD was not contacted.
+- Cause: the Windows PowerShell 5.1 to native-process argument boundary removed
+  the inner double quotes from a Python `-c` expression that constructed JSON.
+  PowerShell AST parsing, harness safety, and wrapper-manifest compatibility do
+  not prove preservation of nested language quoting inside a native argument.
+- Mandatory preflight: do not pass structured Python source containing quoted
+  JSON keys or delimiters through an external `-c` boundary.  Put nontrivial
+  verification code in an exact, hash-pinned file-backed Python script and pass
+  only bounded scalar paths after its filename.  Exercise that exact apply-only
+  verification code in a non-mutating rehearsal against an already isolated
+  runtime before a create-new install is authorized.
+- Recovery: preserve `C:\A3P1R` as failed, non-reusable evidence and never
+  retry or repair it.  Pin a direct read-only inventory proving the installed
+  versions and absent final/partial gate, then use a fresh runtime namespace
+  with a file-backed verifier, refreshed hashes, recovery intent, wrapper,
+  harness, path, and zero-recurrence gates.
+
+## 2026-08-27 — Candidate-level contour insufficiency must not abort a multi-wafer batch
+
+- Failure signature: the frozen O3P5 local POST2 run decoded its first exact
+  full-resolution frontside inputs, then an R6-proposed crop supplied fewer
+  than two observed wafer-contour columns to the unchanged topology provider.
+  The provider correctly raised `ValueError: Wafer contour covers fewer than
+  two columns`, but the new corroborator did not bound that expected
+  candidate-level insufficiency.  The exception escaped the seed/channel loop
+  and terminated the entire three-wafer batch.  No output or partial output,
+  launch gate, source change, JBOD contact, or provider activation occurred;
+  the launcher's `finally` path removed the temporary `R:` alias.
+- Cause: the synthetic suite tested explicit missing-contour feature records
+  but did not exercise the real delegated topology provider's exception path.
+  The batch engine therefore treated an ordinary rejected seed as an
+  infrastructure failure.  A preliminary post-failure probe also hashed the
+  six source rasters before the exact `OBSERVE` intent had passed; that probe
+  was not promoted as recovery evidence, and the observation was rerun under a
+  passed intent using metadata only and no image-byte read.
+- Mandatory preflight: every multi-seed/multi-channel image provider must
+  mechanically classify documented candidate-local insufficiency exceptions
+  inside the innermost candidate boundary and emit an explicit non-eligible
+  reason record.  Contract, hash, decode, runtime, or output-commit failures
+  remain batch-fatal.  The frozen synthetic suite must inject the exact
+  delegated-provider exception and prove that later candidates and later
+  wafers still complete, with zero/one/many decision semantics unchanged.
+  After any failed frozen rehearsal, create and pass the exact recovery intent
+  before even a read-only source hash or image-byte probe; the observation lane
+  may inspect only the fields its passed route contract permits.
+- Recovery: preserve O3P5 and its executed engine, job, launcher, and preaction
+  as withdrawn, non-replayable evidence.  Use a fresh namespace for the
+  candidate-boundary repair and its new output root, pin the post-failure
+  metadata-only observation, rerun synthetic exception-continuation coverage,
+  and perform at most one fresh POST2 run.  Do not change any contour,
+  prominence, support, angle-agreement, or radial/topology threshold.
+
+## 2026-08-28 — A post-engine launcher gate must consume the exact engine terminal schema
+
+- Failure signature: the frozen O3P7 POST2 launcher passed its exact Windows
+  PowerShell 5.1, harness, wrapper, path, continuity, session, synthetic, and
+  zero-recurrence gates; created and verified only its temporary `R:` alias;
+  hash-verified and decoded the six locked POST2 frontside rasters; and wrote a
+  complete three-row numeric result with one BF-topology/DF-radial candidate
+  per wafer and zero DF-topology calls.  After the engine succeeded, the
+  launcher failed while constructing its terminal gate because strict mode
+  could not find `candidateLocalTopologyInsufficiencyCount` on the engine's
+  one-line terminal object.  That property existed only on each result row.
+  The `finally` path removed `R:`; no launch gate or partial remained, no
+  source was changed, and no network, task, process, provider, or JBOD action
+  occurred.
+- Cause: the launcher and engine were frozen against different terminal-result
+  schemas.  The engine returned `state`, output identity/hash, input count,
+  member states, and `dfTopologyInvocationCount`; the launcher additionally
+  dereferenced an aggregate candidate-insufficiency property that the engine
+  never emitted.  Syntax, wrapper, synthetic detector behavior, and a
+  non-mutating launcher preflight did not exercise this post-engine gate-
+  construction contract.
+- Mandatory preflight: freeze the exact engine terminal JSON field set and run
+  the launcher's post-engine gate construction against a bounded file-backed
+  terminal-object fixture before any source-image execution.  Every consumed
+  property must either exist in that frozen terminal schema or be derived from
+  the hash-verified output document under an explicit zero/one/many collection
+  test.  Strict-mode property access that is absent from the fixture is a hard
+  stop before image decode.  The generated launch gate must also assert the
+  output hash, member count/states, and zero DF-topology invocations.
+- Recovery: preserve O3P7, its numeric output, engine, job, launcher,
+  invocation, and preaction as failed frozen evidence; never rerun or repair
+  that executed namespace.  Pin a direct post-failure observation proving the
+  output hash/state, absent gate/partial, removed alias, and unchanged source
+  contract.  Use a fresh O3P8 namespace with unchanged detector, job values,
+  and thresholds; add the terminal-schema fixture gate, then perform at most
+  one fresh POST2 run.

@@ -1,0 +1,331 @@
+{
+  "schema": "argos_ocv03_o3p7_front_split_notch_synthetic_gate_v1",
+  "createdUtc": "2026-08-28T02:07:28.690439Z",
+  "state": "PASS_O3P7_FRONT_SPLIT_NOTCH_SYNTHETIC_GATE",
+  "invocationPath": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3P7\\O3P7_SYNTHETIC_INVOCATION.json",
+  "invocationSha256": "EA323A75BDA53358D01274CBE0F80EE89679EA50CD4CB0F1CFC644168EF8563C",
+  "cases": [
+    {
+      "caseId": "DEEP_PAIRED_NOTCH",
+      "bf": {
+        "topologyObservationState": "OBSERVED",
+        "topologyEvidence": {
+          "topConnectedComponentCount": 1,
+          "selectedComponentAreaPx": 405584,
+          "dieStreetCloseKernelPx": 17,
+          "externalContourFillApplied": true,
+          "observedColumnCount": 1000,
+          "coverageFraction": 1.0,
+          "longestInterpolatedGapPx": 0,
+          "medianExteriorLevel": 2.999999523162842,
+          "medianExteriorMad": 4.76837158203125e-07
+        },
+        "contourComplete": true,
+        "feature": {
+          "spanPx": 200,
+          "tipX": 500,
+          "leftX": 300,
+          "rightX": 700,
+          "widthPx": 401,
+          "tipAngleDegrees": 120.00563048145918,
+          "leftAngleDegrees": 117.78073212357181,
+          "rightAngleDegrees": 122.23038081957912,
+          "pairedShoulderProminencePx": 63.86304783821106,
+          "closingDepthPx": 63.89645004272461,
+          "shoulderLevelDifferencePx": 0.03884482383728027,
+          "meanSupport": 0.9838399887084961,
+          "minimumSupport": 0.06846978515386581,
+          "tipSupport": 1.0,
+          "allowedCenterDegrees": 120.0,
+          "allowedHalfWidthDegrees": 2.0
+        },
+        "topologyToDfRadialDepthRatio": 0.9123292548315866,
+        "topologyPassed": true
+      },
+      "dfRadial": {
+        "centerAngleDegrees": 120.0,
+        "widthDegrees": 2.0,
+        "maximumDepthPx": 70.0
+      },
+      "dfRadialIntervalWidthPassed": true,
+      "angleDifferenceDegrees": 0.005630481459178327,
+      "expectedEligible": true,
+      "observedEligible": true,
+      "passed": true
+    },
+    {
+      "caseId": "SHALLOW_PAIRED_NOTCH",
+      "bf": {
+        "topologyObservationState": "OBSERVED",
+        "topologyEvidence": {
+          "topConnectedComponentCount": 1,
+          "selectedComponentAreaPx": 413989,
+          "dieStreetCloseKernelPx": 17,
+          "externalContourFillApplied": true,
+          "observedColumnCount": 1000,
+          "coverageFraction": 1.0,
+          "longestInterpolatedGapPx": 0,
+          "medianExteriorLevel": 2.999999523162842,
+          "medianExteriorMad": 4.76837158203125e-07
+        },
+        "contourComplete": true,
+        "feature": {
+          "spanPx": 200,
+          "tipX": 500,
+          "leftX": 316,
+          "rightX": 683,
+          "widthPx": 368,
+          "tipAngleDegrees": 120.00556702088933,
+          "leftAngleDegrees": 117.95895296095588,
+          "rightAngleDegrees": 122.04104703904412,
+          "pairedShoulderProminencePx": 6.215307712554932,
+          "closingDepthPx": 6.215090274810791,
+          "shoulderLevelDifferencePx": 5.7220458984375e-06,
+          "meanSupport": 1.0,
+          "minimumSupport": 1.0,
+          "tipSupport": 1.0,
+          "allowedCenterDegrees": 120.0,
+          "allowedHalfWidthDegrees": 2.0
+        },
+        "topologyToDfRadialDepthRatio": 0.6215307712554932,
+        "topologyPassed": true
+      },
+      "dfRadial": {
+        "centerAngleDegrees": 120.0,
+        "widthDegrees": 1.2,
+        "maximumDepthPx": 10.0
+      },
+      "dfRadialIntervalWidthPassed": true,
+      "angleDifferenceDegrees": 0.005567020889316154,
+      "expectedEligible": true,
+      "observedEligible": true,
+      "passed": true
+    },
+    {
+      "caseId": "BROAD_PAIRED_NOTCH_NO_MAXIMUM_WIDTH",
+      "bf": {
+        "topologyObservationState": "OBSERVED",
+        "topologyEvidence": {
+          "topConnectedComponentCount": 1,
+          "selectedComponentAreaPx": 413695,
+          "dieStreetCloseKernelPx": 17,
+          "externalContourFillApplied": true,
+          "observedColumnCount": 1000,
+          "coverageFraction": 1.0,
+          "longestInterpolatedGapPx": 0,
+          "medianExteriorLevel": 2.999999523162842,
+          "medianExteriorMad": 4.76837158203125e-07
+        },
+        "contourComplete": true,
+        "feature": {
+          "spanPx": 200,
+          "tipX": 500,
+          "leftX": 316,
+          "rightX": 683,
+          "widthPx": 368,
+          "tipAngleDegrees": 120.00556918542696,
+          "leftAngleDegrees": 117.95895296095588,
+          "rightAngleDegrees": 122.04104703904412,
+          "pairedShoulderProminencePx": 8.215368747711182,
+          "closingDepthPx": 8.215150833129883,
+          "shoulderLevelDifferencePx": 5.7220458984375e-06,
+          "meanSupport": 1.0,
+          "minimumSupport": 1.0,
+          "tipSupport": 1.0,
+          "allowedCenterDegrees": 120.0,
+          "allowedHalfWidthDegrees": 2.0
+        },
+        "topologyToDfRadialDepthRatio": 0.6846140623092651,
+        "topologyPassed": true
+      },
+      "dfRadial": {
+        "centerAngleDegrees": 120.0,
+        "widthDegrees": 5.8,
+        "maximumDepthPx": 12.0
+      },
+      "dfRadialIntervalWidthPassed": true,
+      "angleDifferenceDegrees": 0.005569185426963941,
+      "expectedEligible": true,
+      "observedEligible": true,
+      "passed": true
+    },
+    {
+      "caseId": "NARROW_PERIODIC_DF_RESPONSE",
+      "bf": {
+        "topologyObservationState": "OBSERVED",
+        "topologyEvidence": {
+          "topConnectedComponentCount": 1,
+          "selectedComponentAreaPx": 413066,
+          "dieStreetCloseKernelPx": 17,
+          "externalContourFillApplied": true,
+          "observedColumnCount": 1000,
+          "coverageFraction": 1.0,
+          "longestInterpolatedGapPx": 0,
+          "medianExteriorLevel": 2.999999523162842,
+          "medianExteriorMad": 4.76837158203125e-07
+        },
+        "contourComplete": true,
+        "feature": {
+          "spanPx": 200,
+          "tipX": 500,
+          "leftX": 317,
+          "rightX": 682,
+          "widthPx": 366,
+          "tipAngleDegrees": 120.00557351945649,
+          "leftAngleDegrees": 117.970066502244,
+          "rightAngleDegrees": 122.029933497756,
+          "pairedShoulderProminencePx": 12.179842233657837,
+          "closingDepthPx": 12.179630279541016,
+          "shoulderLevelDifferencePx": 5.4836273193359375e-06,
+          "meanSupport": 1.0,
+          "minimumSupport": 1.0,
+          "tipSupport": 1.0,
+          "allowedCenterDegrees": 120.0,
+          "allowedHalfWidthDegrees": 2.0
+        },
+        "topologyToDfRadialDepthRatio": 0.4059947411219279,
+        "topologyPassed": true
+      },
+      "dfRadial": {
+        "centerAngleDegrees": 120.0,
+        "widthDegrees": 0.4,
+        "maximumDepthPx": 30.0
+      },
+      "dfRadialIntervalWidthPassed": false,
+      "angleDifferenceDegrees": 0.005573519456504528,
+      "expectedEligible": false,
+      "observedEligible": false,
+      "passed": true
+    },
+    {
+      "caseId": "BF_NO_NOTCH",
+      "bf": {
+        "topologyObservationState": "OBSERVED",
+        "topologyEvidence": {
+          "topConnectedComponentCount": 1,
+          "selectedComponentAreaPx": 414864,
+          "dieStreetCloseKernelPx": 17,
+          "externalContourFillApplied": true,
+          "observedColumnCount": 1000,
+          "coverageFraction": 1.0,
+          "longestInterpolatedGapPx": 0,
+          "medianExteriorLevel": 2.999999523162842,
+          "medianExteriorMad": 4.76837158203125e-07
+        },
+        "contourComplete": true,
+        "feature": {
+          "spanPx": 64,
+          "tipX": 422,
+          "leftX": 382,
+          "rightX": 435,
+          "widthPx": 54,
+          "tipAngleDegrees": 119.13801446780835,
+          "leftAngleDegrees": 118.69324591271435,
+          "rightAngleDegrees": 119.28272805729338,
+          "pairedShoulderProminencePx": 0.7217122316360474,
+          "closingDepthPx": 0.7111848592758179,
+          "shoulderLevelDifferencePx": 0.07823944091796875,
+          "meanSupport": 1.0,
+          "minimumSupport": 1.0,
+          "tipSupport": 1.0,
+          "allowedCenterDegrees": 120.0,
+          "allowedHalfWidthDegrees": 2.0
+        },
+        "topologyToDfRadialDepthRatio": 0.03608561158180237,
+        "topologyPassed": false
+      },
+      "dfRadial": {
+        "centerAngleDegrees": 120.0,
+        "widthDegrees": 2.0,
+        "maximumDepthPx": 20.0
+      },
+      "dfRadialIntervalWidthPassed": true,
+      "angleDifferenceDegrees": 0.8619855321916532,
+      "expectedEligible": false,
+      "observedEligible": false,
+      "passed": true
+    },
+    {
+      "caseId": "CROSS_METHOD_ANGLE_MISMATCH",
+      "bf": {
+        "topologyObservationState": "OBSERVED",
+        "topologyEvidence": {
+          "topConnectedComponentCount": 1,
+          "selectedComponentAreaPx": 413066,
+          "dieStreetCloseKernelPx": 17,
+          "externalContourFillApplied": true,
+          "observedColumnCount": 1000,
+          "coverageFraction": 1.0,
+          "longestInterpolatedGapPx": 0,
+          "medianExteriorLevel": 2.999999523162842,
+          "medianExteriorMad": 4.76837158203125e-07
+        },
+        "contourComplete": true,
+        "feature": {
+          "spanPx": 200,
+          "tipX": 500,
+          "leftX": 317,
+          "rightX": 682,
+          "widthPx": 366,
+          "tipAngleDegrees": 120.00557351945649,
+          "leftAngleDegrees": 117.970066502244,
+          "rightAngleDegrees": 122.029933497756,
+          "pairedShoulderProminencePx": 12.179842233657837,
+          "closingDepthPx": 12.179630279541016,
+          "shoulderLevelDifferencePx": 5.4836273193359375e-06,
+          "meanSupport": 1.0,
+          "minimumSupport": 1.0,
+          "tipSupport": 1.0,
+          "allowedCenterDegrees": 120.0,
+          "allowedHalfWidthDegrees": 2.0
+        },
+        "topologyToDfRadialDepthRatio": 0.6089921116828918,
+        "topologyPassed": true
+      },
+      "dfRadial": {
+        "centerAngleDegrees": 124.0,
+        "widthDegrees": 2.0,
+        "maximumDepthPx": 20.0
+      },
+      "dfRadialIntervalWidthPassed": true,
+      "angleDifferenceDegrees": 3.9944264805434955,
+      "expectedEligible": false,
+      "observedEligible": false,
+      "passed": true
+    }
+  ],
+  "decisionControls": {
+    "zero": "HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+    "one": "PASS_REVIEW_ONLY_UNIQUE_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+    "two": "HOLD_MULTIPLE_BF_TOPOLOGY_DF_RADIAL_NOTCHES"
+  },
+  "decisionControlsPassed": true,
+  "structuralControls": {
+    "topologyEdgeSourceInvocationCount": 1,
+    "onlyBfRefineFunctionInvokesTopology": true,
+    "dfTopologyInvocationAllowed": false,
+    "candidateSeedClasses": [
+      "R6_BF_DF_PHYSICAL",
+      "R6_DF_ONLY"
+    ],
+    "bfOnlySeedExcluded": true,
+    "passed": true
+  },
+  "exceptionControls": {
+    "exactDelegatedException": "Wafer contour covers fewer than two columns.",
+    "laterCandidateContinued": true,
+    "laterWaferContinued": true,
+    "unknownExceptionRemainedBatchFatal": true,
+    "passed": true
+  },
+  "dfTopologyInvocationCount": 0,
+  "broadNotchControlIncluded": true,
+  "narrowPeriodicNegativeIncluded": true,
+  "oneChannelSeedExclusionIncluded": true,
+  "maximumDfRadialIntervalWidthEnabled": false,
+  "knownNotchLocationConsumed": false,
+  "rasterOutputCreated": false,
+  "sourceMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

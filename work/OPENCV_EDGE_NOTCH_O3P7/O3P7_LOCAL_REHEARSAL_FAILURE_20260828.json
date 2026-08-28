@@ -1,0 +1,66 @@
+{
+  "schema": "argos_ocv03_o3p7_local_rehearsal_failure_v1",
+  "incidentId": "O3P7_POST_ENGINE_LAUNCH_GATE_SCHEMA_FAILURE_20260828",
+  "createdUtc": "2026-08-28T02:15:00Z",
+  "state": "WITHDRAWN",
+  "classification": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE",
+  "attemptedAction": "RUN_O3P7_BF_TOPOLOGY_DF_RADIAL_ON_THREE_POST2_BF_DF_PAIRS_AND_WRITE_TERMINAL_LAUNCH_GATE",
+  "failedArtifactLifecycle": "FROZEN_AND_EXECUTED_LOCAL_REHEARSAL",
+  "failedNamespace": "O3P7",
+  "replayAllowed": false,
+  "successorParentAllowed": false,
+  "freshNamespaceRequired": true,
+  "engine": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P7/Detect-O3P7FrontSplitNotches.py",
+    "sha256": "B52A512F493A838CF054292EB57C12C5CE67E12B5F76FC3CDCB6530A2991FEE2"
+  },
+  "job": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_POST2_SHORT_ALIAS_JOB.json",
+    "sha256": "AEAD178BAB85436006E8039E4C65DB4F84B9F46B4194F68587EC1C56737D410F"
+  },
+  "launcher": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P7/Invoke-O3P7Post2ShortAlias.ps1",
+    "sha256": "03F753E7CBA5760F3BBA53510CED529CF99CDE058B7BFB8F8C95F66FF932A99C"
+  },
+  "invocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_SHORT_ALIAS_LAUNCH_INVOCATION.json",
+    "sha256": "0F5A9F27FF06E7B0F4A72073570547C28A8D1B8EEE234253707FDB69EEC4E318"
+  },
+  "preaction": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P7/PREACTION_O3P7_POST2_SHORT_ALIAS_RUN.json",
+    "sha256": "D5C7C4DDB219B536D43C5C21AF175C2A989001221B7997B0714B421242A08821"
+  },
+  "output": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_POST2_RESULT.json",
+    "sha256": "FAFBCAB111B4D6B755C534A5EF49C069D8D246F63E0910D1094B5ED28F46E07B",
+    "state": "COMPLETE_O3P7_POST2_BF_TOPOLOGY_DF_RADIAL_REVIEW_ONLY",
+    "rowCount": 3,
+    "rowStates": [
+      "PASS_REVIEW_ONLY_UNIQUE_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+      "PASS_REVIEW_ONLY_UNIQUE_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+      "PASS_REVIEW_ONLY_UNIQUE_BF_TOPOLOGY_DF_RADIAL_NOTCH"
+    ],
+    "dfTopologyInvocationCount": 0
+  },
+  "launchGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_POST2_LAUNCH_GATE.json",
+    "exists": false,
+    "partialExists": false
+  },
+  "failureSignature": "After the O3P7 engine completed and committed its exact numeric output, Windows PowerShell strict mode failed while the launcher built its terminal gate because candidateLocalTopologyInsufficiencyCount was absent from the engine terminal object. The property existed only on each output row.",
+  "failureMessage": "The property 'candidateLocalTopologyInsufficiencyCount' cannot be found on this object. Verify that the property exists.",
+  "documentedPrevention": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md section A post-engine launcher gate must consume the exact engine terminal schema",
+  "processExitCode": 1,
+  "engineOutputCommitted": true,
+  "terminalGateWritten": false,
+  "terminalGatePartialWritten": false,
+  "aliasRemoved": true,
+  "sourceMutationPerformed": false,
+  "networkUsed": false,
+  "jbodContacted": false,
+  "liveProviderTouched": false,
+  "processorTouched": false,
+  "retryPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3P7_FRONT_SPLIT_SYNTHETIC_GATE_20260828",
+  "createdUtc": "2026-08-28T02:08:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "GENERATE_IN_MEMORY_BF_TOPOLOGY_AND_DF_RADIAL_SYNTHETIC_CONTROLS_AND_WRITE_ONE_CREATE_NEW_O3P7_NUMERIC_GATE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P7/Test-O3P7FrontSplitNotches.py", "sha256": "752BFEC945CB2940F5004FA6662D06915472031284856CB8DCDF2E13A1EF47EB"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_SYNTHETIC_INVOCATION.json", "sha256": "EA323A75BDA53358D01274CBE0F80EE89679EA50CD4CB0F1CFC644168EF8563C"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P7/Detect-O3P7FrontSplitNotches.py", "sha256": "B52A512F493A838CF054292EB57C12C5CE67E12B5F76FC3CDCB6530A2991FEE2"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_POST2_SHORT_ALIAS_JOB.json", "sha256": "AEAD178BAB85436006E8039E4C65DB4F84B9F46B4194F68587EC1C56737D410F"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3L8/WaferTopologyAxisOpenCv.py", "sha256": "D8897C1A5B60CB5AA9B0343CF8C9E5A249CCC5DEF5FBCDFE645EC08C354EF3BD"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P2_LOCAL_RUNTIME_GATE.json", "sha256": "E22C0E27D3966B17DF83F205291CEB6B1C5B12A14EE306D157383514E1419FB9"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_SYNTHETIC_PATH_GATE.json", "sha256": "DC48E34260762FD0514A37E3BB60AF89F0E5DA318CEAE075D86C167435B7F5AA"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_SYNTHETIC_PREFLIGHT_GATE.json", "sha256": "4EC15B910A051E1CFE08CF7C8D7F5C7BA8215B9FD4AF5D22B6D8DA8DC1E2B42A"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P7_SPLIT_CLASSIFIER_RECOVERY_INTENT.json", "sha256": "8AB98E9A86DE886F55F71EC4D56144D0642B63A57E99EEF1F5BC4609F91B38D2"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST_FAILURE_OBSERVATION.json", "sha256": "21FA6A5C3FA741EB2E6301ED818578A7B21A028D4873B63E84200E2F9027471C"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3M6/O3M6_R6_SPLIT_METHOD_PREFLIGHT_GATE.json", "sha256": "B70A5C2E527F8EF26071A7EBEDC95D59DADA7ADB98930FCB54D1BBA30624DA7B"},
+    {"path": "work/O3M6/T6/SYNTHETIC_GATE.json", "sha256": "A4A85A46B61701EA9973DA768AF77D5240A682DBE4D1085FAF14BEAB21F8D937"},
+    {"path": "work/O3M6/P6/MANIFEST.json", "sha256": "3BFF993166ACE3A11086DBF96D292C9B43BAA38A0C512E1DB6E9D63370264B1C"},
+    {"path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "358B9424DDDB759EB7E3985D74660EDC0170E09E0D600B37DE136153E3C75CD0"},
+    {"path": "C:/Python314/python.exe", "sha256": "4942B86A6597E5AEE0128DAA00050ED79BC21F6E709A78EB19CBFEB0C2F39AC9"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": ["work/OPENCV_EDGE_NOTCH_O3N1", "work/OPENCV_EDGE_NOTCH_O3P6", "C:/A3P1R"]
+  },
+  "sourceImageReadAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

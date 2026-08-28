@@ -1,0 +1,92 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T01:04:07.2136277Z",
+  "incidentId": "O3P1_LOCAL_RUNTIME_VERIFY_QUOTING_20260828",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_LOCAL_RUNTIME_FAILURE_20260828.json",
+        "sha256": "FF9615AF0AC7ABF52AA1E980E8AAFAC6DE9A09D8743F6D29119980FF55A9244E",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_LOCAL_RUNTIME_POST_FAILURE_OBSERVATION.json",
+      "sha256": "CD470DEAC62F5D7B2CC9A1C3ECE84E6C479862C7EB820C9E656CAC2933C67943"
+    },
+    "workflowReviewClearance": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "route": {
+    "type": "LOCAL_FILESYSTEM_CREATE_NEW",
+    "jobClass": "LOCAL_REVIEW_RUNTIME",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {
+      "path": "",
+      "sha256": ""
+    },
+    "installedConfigEvidence": {
+      "path": "",
+      "sha256": ""
+    },
+    "capabilityEvidence": {
+      "path": "",
+      "sha256": ""
+    },
+    "qualifiedEndpointGate": {
+      "path": "",
+      "sha256": ""
+    },
+    "qualifiedAdminGate": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "D",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_LOCAL_RUNTIME_POST_FAILURE_OBSERVATION.json",
+      "sha256": "CD470DEAC62F5D7B2CC9A1C3ECE84E6C479862C7EB820C9E656CAC2933C67943"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "freshTargetRoot": "C:/A3P2R",
+    "requiredVerifierMode": "HASH_PINNED_FILE_BACKED_PYTHON_SCRIPT",
+    "failedTargetReuseAllowed": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "argos_ocv03_o3p6_blind_inference_freeze_v1",
+  "createdUtc": "2026-08-28T01:53:00Z",
+  "state": "FROZEN_O3P6_POST2_BLIND_INFERENCE",
+  "output": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_CORROBORATION.json",
+    "sha256": "554518BC8EA2306EB3AC0753D3BA69DFABA222F47172CF797F724FC552E66D86",
+    "bytes": 77122,
+    "state": "COMPLETE_O3P6_POST2_TOPOLOGY_CORROBORATION_REVIEW_ONLY"
+  },
+  "launchGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_LAUNCH_GATE.json",
+    "sha256": "73CF8301BF9BCD24EA18C8BD9FA31FF24CDA1FC04BE9B7983F2FCF3EABD37F75",
+    "bytes": 1466,
+    "state": "PASS_O3P6_POST2_SHORT_ALIAS_EXECUTION"
+  },
+  "job": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_SHORT_ALIAS_JOB.json",
+    "sha256": "C76683195731426813A6C2064D51B725198F76072A25A85594B767D47D4C807D"
+  },
+  "engine": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P6/Corroborate-O3P6FrontNotches.py",
+    "sha256": "C4CD5AC8FFE1856B3354ED384B2B0D848F84DF25E3EE817AECC45E0E35CA89EA"
+  },
+  "rowStates": [
+    "HOLD_MULTIPLE_TOPOLOGY_CORROBORATED_NOTCHES",
+    "HOLD_NO_TOPOLOGY_CORROBORATED_NOTCH",
+    "HOLD_NO_TOPOLOGY_CORROBORATED_NOTCH"
+  ],
+  "candidateLocalTopologyInsufficiencyCount": 5,
+  "knownNotchLocationConsumed": false,
+  "notchAnglePriorConsumed": false,
+  "scorerInputsConsumed": false,
+  "scorerLabelFileReadBeforeFreeze": false,
+  "thresholdTuningAfterInferenceAllowed": false,
+  "sourceMutationPerformed": false,
+  "rasterOutputCreated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

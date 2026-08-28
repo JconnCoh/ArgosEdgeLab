@@ -938,3 +938,22 @@ task from changing which revision, UI, evidence, or next action is active.
 - Controlled-browser gap: local `file://` URL rejected by browser policy; no workaround or screenshot used. Operator manual review is required before the provenance release gate.
 - Exact next action: operator opens the local gallery with its manifest query, uses Clean/Overlay/Blink, and classifies the overlays and whether S17-C1/S17-C2 are same-family, distinct types, a non-notch competitor, or ambiguous.
 - Authority: no detector rerun/tuning, provider activation, processor/task/process/source/wafer/hold action; review-only true, training/XML/production false, every prerequisite preserved.
+
+## 2026-08-27 — OCV-03 O3L8 contour baseline confirmed / O3P1 program next
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3L8_BASELINE_CONFIRMED_20260827.md`
+- SHA-256: `A514E9C3C75073A46E10A7368170FAA80E3857F414F7C35FC5BE2ED6AEEF2C8A`
+- Operator baseline: `work/OPENCV_EDGE_NOTCH_O3P1/O3P1_OPERATOR_BASELINE_20260827.json`, SHA-256 `3FCB84A45222DE536BC1CD11B84B3BAE455943CED9E7719BAA0C1DCB2D7CF333`.
+- Decision: preserve O3L8 measured contour evidence and channel judgments; treat held shallow/broad rows as second-stage classifier misses; never use withdrawn O3N1's periodic DF trace as a successor parent.
+- Exact next action: one fresh gated O3P1 frontside successor on POST2, then frozen hotspot testing; afterward a separately intended backside appearance regime, POST2/hotspot verification, and frozen fanout to additional qualified lots. Resume paused fiducial work only if the notch program completes with time remaining.
+- Authority: raw full 360-degree inference; no Argos rotation/orientation/location prior; known Slot16 location post-inference only; review-only true; provider/processor/source/hold/training/XML/production boundaries preserved.
+
+## 2026-08-28 — OCV-03 O3P8 POST2 front split-method development pass / hotspot validation next
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3P8_POST2_FRONT_SPLIT_DEVELOPMENT_PASS_HOTSPOT_VALIDATION_NEXT_20260828.md`
+- SHA-256: `0B8C9931F48F83B4E263BAECD469BF285BDFE00F5603E0547D9F0BCD2EF45189`
+- Result: all three POST2 members selected exactly one BF-topology/DF-radial candidate; maximum frozen-location error was under 0.148 degrees and the known Slot01 chipout was not selected.
+- Frozen evidence: config equivalence `CF896E114179370BC9C8A58D64FDD3470EDCAB1A96836252693C935845224F95`; launch gate `62934E335640DE0C8A5FDB2965284C1E99557B6FFDD1C4050BD94E3FEE479843`; inference freeze `1112411F82714DAC589AEF53B756095F2FCF663B1BAA10BBD14FA7D5842F6821`; scorer `FD005EB32416892CAF3819484F56C67DF56A6AE368810AAFB3DFF2B8F7B3960D`.
+- Recovery: O3P7 is withdrawn and non-reusable after its launcher consumed the wrong terminal schema; O3P8 is a fresh namespace with detector algorithm, thresholds, and source set unchanged.
+- Exact next action: one fresh O3Q1 numeric Slot16 hotspot request with the frozen exact BF/DF hashes, O3P8 detector logic unchanged, all full-360 DF seed candidates, no Argos/operator location prior, one persistent-U publication, no retry, and matching JBOD-signed terminal response only. Render and DATA_PULL only a selected contour after numeric validation passes.
+- Authority: POST2 is development regression only; O3N1/O3P7 remain withdrawn and non-parent; backside is separate and unconsumed; no provider/processor/source/task/process/hold/training/XML/production action.

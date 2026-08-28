@@ -1,0 +1,48 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "O3P8_TERMINAL_SCHEMA_RECOVERY_FROM_WITHDRAWN_O3P7_20260828",
+  "pairs": [
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3P7/Detect-O3P7FrontSplitNotches.py",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3P8/Detect-O3P8FrontSplitNotches.py",
+      "sourceSha256": "B52A512F493A838CF054292EB57C12C5CE67E12B5F76FC3CDCB6530A2991FEE2",
+      "generatedSha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36",
+      "rootRules": [{"sourceRoot": "", "generatedRoot": "", "disposition": "NO_LITERAL_ROOTS"}]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3P7/Test-O3P7FrontSplitNotches.py",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3P8/Test-O3P8FrontSplitNotches.py",
+      "sourceSha256": "752BFEC945CB2940F5004FA6662D06915472031284856CB8DCDF2E13A1EF47EB",
+      "generatedSha256": "A638C81085502AFEFD154634FE59182D68918BD0D2774DF6B3F1555DEC7E8A82",
+      "rootRules": [{"sourceRoot": "", "generatedRoot": "", "disposition": "NO_LITERAL_ROOTS"}]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_POST2_SHORT_ALIAS_JOB.json",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3P8/O3P8_POST2_SHORT_ALIAS_JOB.json",
+      "sourceSha256": "AEAD178BAB85436006E8039E4C65DB4F84B9F46B4194F68587EC1C56737D410F",
+      "generatedSha256": "2C2D656A879BBA1DEC6377D1855A949459C7AC6F50145761B8D283076FEAD1F9",
+      "rootRules": [{"sourceRoot": "", "generatedRoot": "", "disposition": "NO_LITERAL_ROOTS"}],
+      "forwardSlashRootRules": [
+        {"sourceRoot": "C:/A3P2R", "generatedRoot": "C:/A3P2R", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "R:/work", "generatedRoot": "R:/work", "disposition": "UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3P7/Invoke-O3P7Post2ShortAlias.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3P8/Invoke-O3P8Post2ShortAlias.ps1",
+      "sourceSha256": "03F753E7CBA5760F3BBA53510CED529CF99CDE058B7BFB8F8C95F66FF932A99C",
+      "generatedSha256": "33798DA9B8D4C218702CC20344FC5B62ADB7AB4154DBEBF43EAF2AE2854F50CC",
+      "rootRules": [
+        {"sourceRoot": "C:\\Users", "generatedRoot": "C:\\Users", "disposition": "UNCHANGED_ALLOWED"}
+      ],
+      "constructedRootRules": [
+        {"sourceRoot": "R:\\", "generatedRoot": "R:\\", "disposition": "UNCHANGED_ALLOWED"}
+      ]
+    }
+  ],
+  "undeclaredRootAllowed": false,
+  "predecessorOutputRootReuseAllowed": false,
+  "failedO3P7ExecutionArtifactReuseAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

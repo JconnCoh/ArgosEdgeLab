@@ -1,0 +1,79 @@
+{
+  "schema": "argos_ocv03_o3p6_post2_scorer_gate_v1",
+  "createdUtc": "2026-08-28T01:56:00Z",
+  "state": "FAIL_O3P6_POST2_SCORER_GATE_CHANNEL_METHOD_CONTRACT_VIOLATION",
+  "blindInferenceFreeze": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_BLIND_INFERENCE_FREEZE.json",
+    "sha256": "851BB3805A148F039D2D7D7807BD526E905A613048071B76D98A9B5D430E9EDC"
+  },
+  "blindOutput": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_CORROBORATION.json",
+    "sha256": "554518BC8EA2306EB3AC0753D3BA69DFABA222F47172CF797F724FC552E66D86"
+  },
+  "scorerLabels": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3D2/O3D2_POST2_SCORER_ONLY_LABELS.json",
+    "sha256": "F8337BB2DDA12DBBA5769677C5A1A31E54CDD54659E0137F2EB9694EC2CCA668",
+    "readAfterBlindFreeze": true,
+    "detectorInputAllowed": false,
+    "thresholdSourceAllowed": false,
+    "candidateFilterAllowed": false,
+    "tieBreakerAllowed": false
+  },
+  "rows": [
+    {
+      "identity": "62546-481_POST2_SLOT01",
+      "expectedAngleDegrees": 89.9,
+      "maximumAbsoluteErrorDegrees": 0.8,
+      "blindState": "HOLD_MULTIPLE_TOPOLOGY_CORROBORATED_NOTCHES",
+      "blindSelectedCount": 2,
+      "blindSelectedAngleDegrees": null,
+      "passed": false,
+      "pairedPhysicalSeedDiagnostic": {
+        "seedId": "P001",
+        "bfTopologyTipAngleDegrees": 90.04732196373999,
+        "dfRadialAngleDegrees": 90.03556734938735,
+        "bfAbsoluteScorerErrorDegrees": 0.14732196373999,
+        "dfAbsoluteScorerErrorDegrees": 0.13556734938735
+      }
+    },
+    {
+      "identity": "62546-481_POST2_SLOT03",
+      "expectedAngleDegrees": 89.55,
+      "maximumAbsoluteErrorDegrees": 0.8,
+      "blindState": "HOLD_NO_TOPOLOGY_CORROBORATED_NOTCH",
+      "blindSelectedCount": 0,
+      "blindSelectedAngleDegrees": null,
+      "passed": false,
+      "pairedPhysicalSeedDiagnostic": {
+        "seedId": "P001",
+        "bfTopologyTipAngleDegrees": 89.63519434998574,
+        "dfRadialAngleDegrees": 89.64385690044607,
+        "bfAbsoluteScorerErrorDegrees": 0.08519434998574,
+        "dfAbsoluteScorerErrorDegrees": 0.09385690044607
+      }
+    },
+    {
+      "identity": "62546-481_POST2_SLOT17",
+      "expectedAngleDegrees": 89.6,
+      "maximumAbsoluteErrorDegrees": 0.8,
+      "blindState": "HOLD_NO_TOPOLOGY_CORROBORATED_NOTCH",
+      "blindSelectedCount": 0,
+      "blindSelectedAngleDegrees": null,
+      "passed": false,
+      "pairedPhysicalSeedDiagnostic": {
+        "seedId": "P001",
+        "bfTopologyTipAngleDegrees": 89.6753506577232,
+        "dfRadialAngleDegrees": 89.64755723590974,
+        "bfAbsoluteScorerErrorDegrees": 0.0753506577232,
+        "dfAbsoluteScorerErrorDegrees": 0.04755723590974
+      }
+    }
+  ],
+  "passedCount": 0,
+  "failedCount": 3,
+  "diagnosis": "O3P6 incorrectly required DF to pass the BF top-connected topology method. The frozen O3M6 split-method contract required BF topology and DF outer-edge radial evidence. Slot03 and Slot17 contain the correct BF topology and DF radial measurements, but O3P6 rejected them on DF topology. Slot01 also admitted a DF-only response because it evaluated unpaired topology in both channels.",
+  "thresholdTuningPerformed": false,
+  "sourceMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

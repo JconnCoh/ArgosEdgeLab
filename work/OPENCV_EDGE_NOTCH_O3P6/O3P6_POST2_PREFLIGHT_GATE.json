@@ -1,0 +1,38 @@
+{
+  "schema": "argos_ocv03_o3p6_post2_preflight_gate_v1",
+  "revision": "O3P6_POST2_PREFLIGHT_GATE_20260828",
+  "checkedUtc": "2026-08-28T01:50:02.6842577Z",
+  "state": "PASS_O3P6_POST2_PREFLIGHT_GATE",
+  "windowsPowerShell": {
+    "version": "5.1",
+    "harnessSafetyState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "harnessParserErrorCount": 0,
+    "harnessViolationCount": 0,
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "launcherState": "PASS_O3P6_SHORT_ALIAS_LAUNCH_PREFLIGHT"
+  },
+  "dependencies": [
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P6/Invoke-O3P6Post2ShortAlias.ps1", "sha256": "151B57E162F1693C1CDD684BC802337B47940205931B982A7ED7F9C3E19EC53A"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_SHORT_ALIAS_LAUNCH_INVOCATION.json", "sha256": "9789418BFC13B45C0781E81FE4490D0C8DEFA8811F8ADBA4819A24C546134CCD"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_SHORT_ALIAS_JOB.json", "sha256": "C76683195731426813A6C2064D51B725198F76072A25A85594B767D47D4C807D"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P6/Corroborate-O3P6FrontNotches.py", "sha256": "C4CD5AC8FFE1856B3354ED384B2B0D848F84DF25E3EE817AECC45E0E35CA89EA"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_SYNTHETIC_GATE.json", "sha256": "392AF87B1FDD85E3C517622B7BB46FEC42ECFEF6163EDAF2A01F2E3C96B64BFF"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P2_LOCAL_RUNTIME_GATE.json", "sha256": "E22C0E27D3966B17DF83F205291CEB6B1C5B12A14EE306D157383514E1419FB9"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_SHORT_ALIAS_PATH_GATE.json", "sha256": "05048F6C4692D0E17994B8A8A6EF67019B7859693DA433C0F97B5AA8B7121586"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_CONFIG_EQUIVALENCE_GATE.json", "sha256": "45DA0689A32281216058F896B967D11DF6036E6F3B24F50FF5A61E086819C411"}
+  ],
+  "syntheticGateState": "PASS_O3P6_FRONT_NOTCH_SYNTHETIC_GATE",
+  "topologyConfigExactlyEqualToO3P5": true,
+  "corroborationConfigExactlyEqualToO3P5": true,
+  "thresholdChangeCount": 0,
+  "aliasDrive": "R:",
+  "aliasUnused": true,
+  "outputAbsent": true,
+  "launchGateAbsent": true,
+  "sourceMutationAllowed": false,
+  "imageBytesDecoded": false,
+  "metadataOnly": true,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

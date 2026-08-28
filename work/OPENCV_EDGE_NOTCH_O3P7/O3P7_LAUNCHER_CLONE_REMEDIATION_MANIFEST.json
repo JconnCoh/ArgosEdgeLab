@@ -1,0 +1,32 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "O3P7_POST2_SHORT_ALIAS_LAUNCHER_FROM_GUARDED_O3P6_20260828",
+  "pairs": [
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3P6/Invoke-O3P6Post2ShortAlias.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3P7/Invoke-O3P7Post2ShortAlias.ps1",
+      "sourceSha256": "151B57E162F1693C1CDD684BC802337B47940205931B982A7ED7F9C3E19EC53A",
+      "generatedSha256": "03F753E7CBA5760F3BBA53510CED529CF99CDE058B7BFB8F8C95F66FF932A99C",
+      "rootRules": [
+        {
+          "sourceRoot": "C:\\Users",
+          "generatedRoot": "C:\\Users",
+          "disposition": "UNCHANGED_ALLOWED",
+          "reason": "Exact workspace root is unchanged; only the bounded O3P6/O3P7 descendant and output names differ."
+        }
+      ],
+      "constructedRootRules": [
+        {
+          "sourceRoot": "R:\\",
+          "generatedRoot": "R:\\",
+          "disposition": "UNCHANGED_ALLOWED",
+          "reason": "The temporary verified subst alias remains R: and is created and removed inside the launcher failure boundary."
+        }
+      ]
+    }
+  ],
+  "undeclaredRootAllowed": false,
+  "predecessorOutputRootReuseAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

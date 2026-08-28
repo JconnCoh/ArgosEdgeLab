@@ -1,0 +1,49 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "incidentId": "O3P6_CHANNEL_METHOD_RECURRENCE_20260828",
+  "observedUtc": "2026-08-28T01:58:08.6587004Z",
+  "state": "PASS_O3P6_POST_FAILURE_OBSERVATION",
+  "intent": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST_FAILURE_OBSERVE_INTENT.json",
+    "sha256": "F01AFBDF0F498AAC62D281DB0BF93CE112FBBB4B9DF63E503F760445A729ABC1"
+  },
+  "routeType": "DIRECT_ADMIN_READ_ONLY",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "sources": [
+    {"sourcePath": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_CORROBORATION.json", "selector": "exact hash, state, three row states, and source-mutation field", "maximumRows": 3, "observedRows": 3},
+    {"sourcePath": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_LAUNCH_GATE.json", "selector": "exact hash, terminal state, and alias-removed field", "maximumRows": 1, "observedRows": 1},
+    {"sourcePath": "work/OPENCV_EDGE_NOTCH_O3P6/O3P6_POST2_SCORER_GATE.json", "selector": "exact hash, failure state, and three score rows", "maximumRows": 3, "observedRows": 3},
+    {"sourcePath": "R:", "selector": "exact subst mapping row", "maximumRows": 1, "observedRows": 0},
+    {"sourcePath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1", "selector": "six literal BF/DF leaves; length and last-write UTC metadata only", "maximumRows": 6, "observedRows": 6}
+  ],
+  "expectedObserved": {
+    "outputExists": {"expected": true, "observed": true},
+    "outputSha256": {"expected": "554518BC8EA2306EB3AC0753D3BA69DFABA222F47172CF797F724FC552E66D86", "observed": "554518BC8EA2306EB3AC0753D3BA69DFABA222F47172CF797F724FC552E66D86"},
+    "outputState": {"expected": "COMPLETE_O3P6_POST2_TOPOLOGY_CORROBORATION_REVIEW_ONLY", "observed": "COMPLETE_O3P6_POST2_TOPOLOGY_CORROBORATION_REVIEW_ONLY"},
+    "launchGateSha256": {"expected": "73CF8301BF9BCD24EA18C8BD9FA31FF24CDA1FC04BE9B7983F2FCF3EABD37F75", "observed": "73CF8301BF9BCD24EA18C8BD9FA31FF24CDA1FC04BE9B7983F2FCF3EABD37F75"},
+    "launchGateState": {"expected": "PASS_O3P6_POST2_SHORT_ALIAS_EXECUTION", "observed": "PASS_O3P6_POST2_SHORT_ALIAS_EXECUTION"},
+    "scorerGateState": {"expected": "FAIL_O3P6_POST2_SCORER_GATE_CHANNEL_METHOD_CONTRACT_VIOLATION", "observed": "FAIL_O3P6_POST2_SCORER_GATE_CHANNEL_METHOD_CONTRACT_VIOLATION"},
+    "rDriveMapped": {"expected": false, "observed": false},
+    "sourceMetadataUnchanged": {"expected": true, "observed": true},
+    "sourceMutationPerformed": {"expected": false, "observed": false}
+  },
+  "sourceMetadata": [
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot01/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot01_BrightfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "lastWriteUtc": "2026-07-13T21:11:27.0000000Z"},
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot01/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot01_DarkfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "lastWriteUtc": "2026-07-13T21:11:41.0000000Z"},
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot03/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot03_BrightfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "lastWriteUtc": "2026-07-13T21:09:44.0000000Z"},
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot03/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot03_DarkfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "lastWriteUtc": "2026-07-13T21:09:57.0000000Z"},
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot17/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_BrightfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "lastWriteUtc": "2026-07-13T21:05:23.0000000Z"},
+    {"path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot17/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_DarkfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "lastWriteUtc": "2026-07-13T21:05:37.0000000Z"}
+  ],
+  "decision": "D",
+  "decisionMeaning": "Withdraw O3P6 and restore the previously frozen BF-topology/DF-radial split contract mechanically in a fresh namespace. Do not tune thresholds or consume scorer labels as detector inputs.",
+  "mutationsPerformed": false,
+  "imageBytesRead": false,
+  "networkUsed": false,
+  "jbodContacted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

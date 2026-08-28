@@ -1,0 +1,198 @@
+{
+  "schema": "argos_ocv03_o3p6_front_notch_synthetic_gate_v1",
+  "createdUtc": "2026-08-28T01:48:21.702146Z",
+  "state": "PASS_O3P6_FRONT_NOTCH_SYNTHETIC_GATE",
+  "invocationPath": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3P6\\O3P6_SYNTHETIC_INVOCATION.json",
+  "invocationSha256": "981944E5A4F2C4CD1E10D0C1EAA988DDA1938837359C12C6B1963E2D926E347C",
+  "cases": [
+    {
+      "caseId": "DEEP_PAIRED_NOTCH",
+      "bf": {
+        "contourComplete": true,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "prominencePx": 63.86304783821106,
+        "tipAngleDegrees": 120.00563048145918,
+        "meanSupport": 0.9838399887084961,
+        "tipSupport": 1.0,
+        "topologyToRadialDepthRatio": 0.7095894204245673,
+        "channelCorroborated": true
+      },
+      "df": {
+        "contourComplete": true,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "prominencePx": 66.86474972963333,
+        "tipAngleDegrees": 120.00563491138713,
+        "meanSupport": 0.9810309410095215,
+        "tipSupport": 1.0,
+        "topologyToRadialDepthRatio": 0.6965078096836805,
+        "channelCorroborated": true
+      },
+      "refinedAngleDifferenceDegrees": 4.429927969340497e-06,
+      "expectedCorroborated": true,
+      "observedCorroborated": true,
+      "passed": true
+    },
+    {
+      "caseId": "SHALLOW_PAIRED_NOTCH_BELOW_OLD_20PX_FLOOR",
+      "bf": {
+        "contourComplete": true,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "prominencePx": 6.215307712554932,
+        "tipAngleDegrees": 120.00556702088933,
+        "meanSupport": 1.0,
+        "tipSupport": 1.0,
+        "topologyToRadialDepthRatio": 0.6215307712554932,
+        "channelCorroborated": true
+      },
+      "df": {
+        "contourComplete": true,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "prominencePx": 6.396028757095337,
+        "tipAngleDegrees": 119.99443189701918,
+        "meanSupport": 1.0,
+        "tipSupport": 1.0,
+        "topologyToRadialDepthRatio": 0.5814571597359397,
+        "channelCorroborated": true
+      },
+      "refinedAngleDifferenceDegrees": 0.011135123870133157,
+      "expectedCorroborated": true,
+      "observedCorroborated": true,
+      "passed": true
+    },
+    {
+      "caseId": "ONE_CHANNEL_RESPONSE",
+      "bf": {
+        "contourComplete": true,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "prominencePx": 24.109248638153076,
+        "tipAngleDegrees": 120.0055865619473,
+        "meanSupport": 1.0,
+        "tipSupport": 1.0,
+        "topologyToRadialDepthRatio": 0.7534140199422836,
+        "channelCorroborated": true
+      },
+      "df": {
+        "contourComplete": true,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "prominencePx": 0.7655220031738281,
+        "tipAngleDegrees": 120.9177664182727,
+        "meanSupport": 1.0,
+        "tipSupport": 1.0,
+        "topologyToRadialDepthRatio": 0.09569025039672852,
+        "channelCorroborated": false
+      },
+      "refinedAngleDifferenceDegrees": 0.9121798563253947,
+      "expectedCorroborated": false,
+      "observedCorroborated": false,
+      "passed": true
+    },
+    {
+      "caseId": "PATTERNED_NO_NOTCH",
+      "bf": {
+        "contourComplete": true,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "prominencePx": 0.7217122316360474,
+        "tipAngleDegrees": 119.13801446780835,
+        "meanSupport": 1.0,
+        "tipSupport": 1.0,
+        "topologyToRadialDepthRatio": 0.09021402895450592,
+        "channelCorroborated": false
+      },
+      "df": {
+        "contourComplete": true,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "prominencePx": 0.7655220031738281,
+        "tipAngleDegrees": 120.9177664182727,
+        "meanSupport": 1.0,
+        "tipSupport": 1.0,
+        "topologyToRadialDepthRatio": 0.09569025039672852,
+        "channelCorroborated": false
+      },
+      "refinedAngleDifferenceDegrees": 1.7797519504643446,
+      "expectedCorroborated": false,
+      "observedCorroborated": false,
+      "passed": true
+    },
+    {
+      "caseId": "MISSING_CONTOUR_NEGATIVE",
+      "bf": {
+        "contourComplete": false,
+        "coverageFraction": 0.433,
+        "longestInterpolatedGapPx": 567,
+        "prominencePx": 3.904393196105957,
+        "tipAngleDegrees": 120.00557568891905,
+        "meanSupport": 0.6502605676651001,
+        "tipSupport": 1.9868215517249155e-08,
+        "topologyToRadialDepthRatio": 0.12201228737831116,
+        "channelCorroborated": false
+      },
+      "df": {
+        "contourComplete": true,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "prominencePx": 24.28448736667633,
+        "tipAngleDegrees": 120.00558765158294,
+        "meanSupport": 1.0,
+        "tipSupport": 1.0,
+        "topologyToRadialDepthRatio": 0.7588902302086353,
+        "channelCorroborated": true
+      },
+      "expectedCorroborated": false,
+      "observedCorroborated": false,
+      "passed": true
+    }
+  ],
+  "candidateBoundaryControl": {
+    "exactDelegatedException": "Wafer contour covers fewer than two columns.",
+    "rejectedCandidate": {
+      "channel": "BF",
+      "cropCenterAngleDegrees": 120.0,
+      "radialCandidatePresent": true,
+      "radialCandidate": {
+        "centerAngleDegrees": 120.0,
+        "widthDegrees": 3.0,
+        "maximumDepthPx": 20.0
+      },
+      "topologyObservationState": "REJECTED_CANDIDATE_LOCAL_TOPOLOGY_INSUFFICIENCY",
+      "topologyInsufficiencyReason": "Wafer contour covers fewer than two columns.",
+      "topologyEvidence": null,
+      "contourComplete": false,
+      "feature": null,
+      "topologyToRadialDepthRatio": null,
+      "channelCorroborated": false,
+      "cleanCropPersisted": false,
+      "rasterOutputCreated": false
+    },
+    "laterCandidateContinued": true,
+    "laterWaferContinued": true,
+    "unknownExceptionRemainedBatchFatal": true,
+    "passed": true
+  },
+  "countDecisionControls": {
+    "zero": "HOLD_NO_TOPOLOGY_CORROBORATED_NOTCH",
+    "one": "PASS_REVIEW_ONLY_UNIQUE_TOPOLOGY_CORROBORATED_NOTCH",
+    "two": "HOLD_MULTIPLE_TOPOLOGY_CORROBORATED_NOTCHES"
+  },
+  "countDecisionControlsPassed": true,
+  "thresholdValuesChangedFromO3P4": false,
+  "pairedShallowNotchControlIncluded": true,
+  "oneChannelNegativeIncluded": true,
+  "patternedNoNotchNegativeIncluded": true,
+  "missingContourNegativeIncluded": true,
+  "exactDelegatedExceptionContinuationIncluded": true,
+  "unknownExceptionBatchFatalIncluded": true,
+  "multipleCandidateHoldIncluded": true,
+  "knownNotchLocationConsumed": false,
+  "rasterOutputCreated": false,
+  "sourceMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

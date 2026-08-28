@@ -1,4 +1,4 @@
-# Active ArgosEdgeLab state - OCV-03 signed hotspot inventory complete / source freeze next - 2026-08-27
+# Active ArgosEdgeLab state - OCV-03 O3P8 POST2 front split-method development pass / hotspot validation next - 2026-08-28
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
@@ -8187,3 +8187,158 @@ Slot16 contour review, BF partial coverage, raster release, fiducial and
 alignment-transfer prerequisites, and every training/XML/production hold
 remain pending. Backside pixels and Argos orientation metadata remain
 unconsumed; the live provider and protected processor remain untouched.
+
+## 2026-08-27 — OCV-03 O3N1 Slot16 contour gallery released review-only
+
+The exact one-file DATA_PULL `REQ_20260827T235851191Z_95B56EC29E54` was
+published exactly once with no retry. Matching JBOD response
+`R_D4D7A979EB0F_20260828000500750_2d4a2909` is signature-verified; response
+ZIP SHA-256 is
+`4BCF17CDCB84EA06FAB931776763FE3966F87197089A688823796E6586481C28`.
+The exact 15,166,219-byte Slot16 review ZIP was reconstituted at SHA-256
+`93B2A18D70CAD29B321818EDCD5F1F39C0F189C44DA9F2495BF4AE5AAECD7B2D`.
+
+The file-backed gallery is
+`work/OPENCV_EDGE_NOTCH_O3N1/local_review_r2/gallery.html`, SHA-256
+`9B8F1E79B0C3391594B2E41F3EBF61B4AB3CB26F9A52AFFEE5A760263D91CE0A`.
+The OpenCV R2 audit verified all 22 raw-clean/enhanced/overlay/mask groups,
+with 1,455,718 changed pixels inside their exact current masks and zero
+outside. The 44-entry raster provenance release gate passes with its rendered
+browser audit verified. The real browser loaded the exact encoded manifest
+URL, title, review ID, 22 candidate cards, and 24 images, and exercised every
+clean/enhanced/current-overlay/full-perimeter control without screenshots or
+image-byte return.
+
+The detector remains `HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH`: BF has one
+partial-coverage candidate, DF has twenty-one radial candidates, and there
+are zero physical and zero eligible physical candidates. The gallery is
+released only for operator review and is not operator-approved. Backside,
+orientation/location priors, provider, processor, JBOD tasks/processes,
+sources, thresholds, algorithms, holds, training, XML, and production remain
+unchanged.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3N1_SLOT16_CONTOUR_GALLERY_RELEASED_REVIEW_ONLY_20260827.md`,
+SHA-256 `5603281F6A9A94827487909636D8D536DAFC099C0112EF32673A902FABD4173F`.
+The exact next action is operator review of the current BF/DF contours and
+candidate identities. Feedback does not clear the detector hold or authorize
+tuning, provider activation, training, XML, or production routing.
+
+## 2026-08-27 — OCV-03 O3N1 Slot16 gallery R2 withdrawn after operator rejection
+
+The operator visually rejected the exact O3N1 page. DF candidates 19-21 show
+the representative failure: the cyan trace walks repeating patterned-die
+teeth, twenty-one periodic texture responses were exposed as candidate
+notches, and the local red marks do not hug the actual manufactured notch.
+The page's contour-hugging title was invalid for a signed detector result of
+`HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH` with zero physical and zero eligible
+physical candidates.
+
+The presented R2 root remains immutable terminal evidence and is withdrawn,
+non-reusable, and not a successor parent. Withdrawal gate SHA-256 is
+`771677E4DDF0B8438207A5E30270844A1B3C92A592224CB45CF9BFC202B15E23`.
+The exact operator feedback record SHA-256 is
+`24A255815781497A88BEDD091404311356B757F5114C1C688B501B120703446B`;
+its separately preserved screenshot SHA-256 is
+`3596B7C189933331CB131498BE66FA6F8528333C57E5917BB4BD8EE7EF8CCDA5`.
+
+The O3N1 successor did not overwrite the earlier work. The O3L8 gallery still
+hashes to `0AFD7DDECDB351EB926748DDD4C5A7042043D73D54059200F76E04D3432ABDBC`,
+and the O3K1 actual-pixel gallery still hashes to
+`6B929D147DE393F93BADA05AF55485B30D7C6A9B54604FC1C87683CF21E78623`.
+No threshold/algorithm, provider, processor, JBOD task/process, source,
+backside/orientation/location prior, hold, training, XML, or production action
+followed the rejection.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3N1_SLOT16_GALLERY_R2_WITHDRAWN_OPERATOR_REJECTED_20260827.md`,
+SHA-256 `9F979FAD1F8841D33F91624E5F1D11A6488A24F4ACAF47314205EB0673DCBA4C`.
+Before any successor, the operator must identify whether the earlier accepted-
+looking reference was the exact O3L8 or O3K1 page. Only an exact metadata/source
+diff from that locked hash is authorized; no new processing or mutation is.
+
+## 2026-08-27 — OCV-03 O3L8 contour baseline operator-confirmed / O3P1 front development authorized
+
+The operator selected O3L8 as the correct contour-evidence direction. The
+useful cyan wafer-edge traces are the successor baseline; the held rows expose
+an over-specific second-stage classifier, not an edge-tracing failure. Exact
+channel judgments are frozen in
+`work/OPENCV_EDGE_NOTCH_O3P1/O3P1_OPERATOR_BASELINE_20260827.json`, SHA-256
+`3FCB84A45222DE536BC1CD11B84B3BAE455943CED9E7719BAA0C1DCB2D7CF333`.
+
+S17-C1 BF/DF and S17-C2 DF are positive controls. S17-C2 BF's tiny left jut and
+S16-C1 BF's hotspot transition are channel-noise controls. S16-C1 DF is a no-
+notch/incomplete-contour negative with 0.829 coverage and a 171-pixel
+unsupported gap; that span must not be rendered as measured cyan. The frozen
+O3L8 20-pixel-depth/18-pixel-width classifier is not accepted as sufficient
+for shallow or broad notch variants.
+
+O3N1 remains immutable withdrawn evidence and is not a successor parent. The
+successor must search raw 360 degrees with no Argos rotation, orientation, or
+location prior. The known upper-right Slot16 display location is post-inference
+scoring only. BF/DF and frontside/backside may use separate methods; backside
+requires its own appearance-regime intent and freeze.
+
+The operator authorized review-only frontside repair and POST2/hotspot testing,
+then separate backside development and verification, followed by frozen
+front/back fanout to additional qualified lots. Fiducial work may resume only
+after that notch program and if time remains. O3P1 recovery-intent preflight
+passed at SHA-256
+`17AD9B59BCCA0A06C71ABE58F97EA1DFB1E53473BE74831B61970C8A22439A80`;
+checkpoint pre-action passed at SHA-256
+`05114FE72CAEE28C665F91FADD6A43C87C14B5A3A927146B421B0314044712BE`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3L8_BASELINE_CONFIRMED_20260827.md`,
+SHA-256 `A514E9C3C75073A46E10A7368170FAA80E3857F414F7C35FC5BE2ED6AEEF2C8A`.
+No image bytes, algorithm, provider, processor, task/process, source, hold,
+training, XML, or production state changed during baseline promotion. All
+recorded prerequisites remain in force.
+
+## 2026-08-28 — OCV-03 O3P8 POST2 front split-method development pass / independent hotspot validation next
+
+O3P8 completed the exact three-member POST2 development regression with one
+unique BF-topology/DF-radial candidate on each member. Slot01 selected BF
+`90.04732196373999` and DF `90.03556734938735` degrees and did not select the
+known `85.503639`-degree chipout. Slot03 selected BF `89.63519434998574` and DF
+`89.64385690044607`; Slot17 selected BF `89.6753506577232` and DF
+`89.64755723590974`. The post-inference scorer passed all three frozen controls.
+
+The exact algorithm, thresholds, and POST2 source set are unchanged from O3P7.
+O3P8 is a fresh namespace that corrects only output/gate plumbing after O3P7's
+launcher incorrectly expected a per-row insufficiency property on aggregate
+engine terminal stdout. O3P7 is withdrawn, observed directly, and cannot be
+rerun or reused. The durable failure-prevention memory now requires a launcher
+gate to consume the exact engine terminal schema.
+
+Frozen O3P8 evidence:
+
+- config-equivalence gate `CF896E114179370BC9C8A58D64FDD3470EDCAB1A96836252693C935845224F95`
+- synthetic gate `CEE4B1849042C86938084F91A4892118BE1E43D1648B587280113C3FFFA67A63`
+- exact Windows PowerShell 5.1 preflight `DAF738CB29ED4CB0F6974CC3F222BB33C2A75ED2118384F00FF8BFFCB03ABDAB`
+- execution result `5B7D2D93959F3AA97885682E3909D5C8E736F2E23084C5D84AB5094B58E1E6F8`
+- launch gate `62934E335640DE0C8A5FDB2965284C1E99557B6FFDD1C4050BD94E3FEE479843`
+- inference freeze `1112411F82714DAC589AEF53B756095F2FCF663B1BAA10BBD14FA7D5842F6821`
+- development scorer `FD005EB32416892CAF3819484F56C67DF56A6AE368810AAFB3DFF2B8F7B3960D`
+- checkpoint-promotion preaction `85DD219EEA935F894CCE1E1A2B08619AF293010EA4B2E15DFC66DD71A1A23919`
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3P8_POST2_FRONT_SPLIT_DEVELOPMENT_PASS_HOTSPOT_VALIDATION_NEXT_20260828.md`,
+SHA-256 `0B8C9931F48F83B4E263BAECD469BF285BDFE00F5603E0547D9F0BCD2EF45189`.
+
+POST2 remains development evidence, not independent validation. At a clean
+matching local/remote tip, the next action is one fresh O3Q1 numeric Slot16
+hotspot request using the exact frozen BF/DF hashes and O3P8 detector logic,
+all full-360 DF seed candidates, no Argos or operator location prior, one
+persistent-`U:` publication, and no retry. Only the matching JBOD-signed
+terminal response is execution evidence. A selected contour may be rendered
+and pulled only after numeric validation passes; the withdrawn O3N1 tooth
+gallery must never be presented again.
+
+Backside remains unconsumed and requires a separate appearance-regime intent
+and method after the frontside hotspot gate. O3N1/O3P7 remain withdrawn and
+non-parent. Live provider, protected processor, tasks/processes, source bytes,
+holds, XML, training, and production routing remain untouched or disabled.
+BF Slot16 partial coverage and all fiducial designation, map, pose,
+registration, coverage, sensitivity, and independent alignment-transfer gates
+remain pending.

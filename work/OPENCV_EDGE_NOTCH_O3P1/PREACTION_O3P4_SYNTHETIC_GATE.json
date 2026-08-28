@@ -1,0 +1,52 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3P4_FRONT_NOTCH_CORROBORATION_SYNTHETIC_GATE_20260828",
+  "createdUtc": "2026-08-28T01:28:06.5718289Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "GENERATE_IN_MEMORY_SYNTHETIC_CROPS_AND_WRITE_CREATE_NEW_O3P4_NUMERIC_GATE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/Test-O3P4FrontNotchCorroboration.py", "sha256": "8CA64349C0200FDEF00FC8F8821D76446600225F9173F2A5581752588E961D01"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P4_SYNTHETIC_INVOCATION.json", "sha256": "26974EC893E3D2C4D74024718E8570678586ECD703373D4EB5700EF6B4551A15"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/Corroborate-O3P4FrontNotches.py", "sha256": "3FE7CA9455FF1DFDB666BEC9D3A5763506C54400808E1BBF6D1D94ECD6C158C9"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P4_POST2_JOB.json", "sha256": "BDCAA59424F97598CDFC74782A0EC433D1189DD6938112E46A1451C7DFE0D092"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3L8/WaferTopologyAxisOpenCv.py", "sha256": "D8897C1A5B60CB5AA9B0343CF8C9E5A249CCC5DEF5FBCDFE645EC08C354EF3BD"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P2_LOCAL_RUNTIME_GATE.json", "sha256": "E22C0E27D3966B17DF83F205291CEB6B1C5B12A14EE306D157383514E1419FB9"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P4_SYNTHETIC_PATH_GATE.json", "sha256": "E83FD8882405AEC43E553D78ACB0E09A9D0741D2AC40EF0FD52324FBC8609C42"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P4_SYNTHETIC_PREFLIGHT_GATE.json", "sha256": "A5EA38E2D6B89624A18384F6CCBDBCAA49E88DA801848AAF93B35D68C48B9449"},
+    {"path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "D3E9AC0F43F7FA08FFC46DDDA517AE99BF8A7A3B1AF8CC9F4EA8B162AFAC2383"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": ["work/OPENCV_EDGE_NOTCH_O3N1", "C:/A3P1R"]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

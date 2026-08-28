@@ -1,0 +1,88 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T01:43:00Z",
+  "incidentId": "O3P5_POST2_UNOBSERVED_CANDIDATE_ABORT_20260828",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_LOCAL_REHEARSAL_FAILURE_20260828.json",
+        "sha256": "00D37F7EBB7642967E5FDBE8BA5F4C50FA8A29E893E6EA073BA187C549370C64",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_POST_FAILURE_OBSERVATION.json",
+      "sha256": "CD6952BD3B29B6D687FBA0B0C8B47583366922B0BD25090821D513656DF8CEAD"
+    },
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "LOCAL_REVIEW_PROVIDER_CREATE_NEW",
+    "jobClass": "LOCAL_OPENCV_REVIEW_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {"path": "", "sha256": ""},
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "D",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P5_POST_FAILURE_OBSERVATION.json",
+      "sha256": "CD6952BD3B29B6D687FBA0B0C8B47583366922B0BD25090821D513656DF8CEAD"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "scope": {
+    "freshNamespace": "work/OPENCV_EDGE_NOTCH_O3P6",
+    "allowedCodeChange": "CATCH_ONLY_DOCUMENTED_CANDIDATE_LOCAL_TOPOLOGY_INSUFFICIENCY_MESSAGES_INSIDE_SEED_CHANNEL_REFINEMENT_AND_EMIT_NON_ELIGIBLE_REASON",
+    "documentedCandidateLocalMessages": [
+      "No top-connected wafer component qualified.",
+      "Top-connected wafer component has no external contour.",
+      "Wafer contour covers fewer than two columns.",
+      "Lower-side contour-noise population is empty."
+    ],
+    "unknownExceptionDisposition": "BATCH_FATAL",
+    "syntheticRequirement": "INJECT_EXACT_DELEGATED_PROVIDER_VALUEERROR_AND_PROVE_LATER_SEED_AND_LATER_WAFER_CONTINUE",
+    "thresholdChangeAllowed": false,
+    "contourAlgorithmChangeAllowed": false,
+    "radialAlgorithmChangeAllowed": false,
+    "knownAngleOrLabelInputAllowed": false,
+    "failedO3P5ReuseAllowed": false,
+    "post2ImageReadAllowedBeforeSyntheticPass": false
+  },
+  "failureMemory": {
+    "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+    "sha256": "BE7FBE08CD5F33A74442BFDC0503BE71E028519C9E6BFCDAC66010B3D0D61948"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

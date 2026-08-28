@@ -1,0 +1,101 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T02:18:00Z",
+  "incidentId": "O3P7_POST_ENGINE_LAUNCH_GATE_SCHEMA_FAILURE_20260828",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_LOCAL_REHEARSAL_FAILURE_20260828.json",
+        "sha256": "17071FE62710CCEB551E2B5C1C47BE1B4B415F892B1F3583342F736223C3D48C",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_POST_FAILURE_OBSERVATION.json",
+      "sha256": "7C24B0C659D48CEE6E920D1EE39DD683C677DBE9A9EEDE399B7292744056F455"
+    },
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "LOCAL_REVIEW_PROVIDER_CREATE_NEW",
+    "jobClass": "LOCAL_OPENCV_REVIEW_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {"path": "", "sha256": ""},
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "D",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_POST_FAILURE_OBSERVATION.json",
+      "sha256": "7C24B0C659D48CEE6E920D1EE39DD683C677DBE9A9EEDE399B7292744056F455"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "scope": {
+    "freshNamespace": "work/OPENCV_EDGE_NOTCH_O3P8",
+    "allowedChanges": [
+      "FRESH_O3P8_SCHEMA_REVISION_AND_OUTPUT_NAMES",
+      "FILE_BACKED_ENGINE_TERMINAL_OBJECT_FIXTURE",
+      "LAUNCHER_PREFLIGHT_EXERCISES_EXACT_POST_ENGINE_GATE_CONSTRUCTION",
+      "CANDIDATE_LOCAL_INSUFFICIENCY_COUNT_DERIVED_FROM_HASH_VERIFIED_OUTPUT_ROWS"
+    ],
+    "detectorAlgorithmChangeAllowed": false,
+    "detectorThresholdChangeAllowed": false,
+    "sourceSetChangeAllowed": false,
+    "channelMethods": {
+      "BF": "O3L8_TOP_CONNECTED_TOPOLOGY_MEASURED_CONTOUR",
+      "DF": "FROZEN_R6_OUTER_EDGE_RADIAL_FULL_360"
+    },
+    "dfTopologyInvocationAllowed": false,
+    "bfOnlySeedEligibilityAllowed": false,
+    "minimumDfRadialIntervalWidthDegrees": 0.9,
+    "maximumDfRadialIntervalWidthEnabled": false,
+    "bfTopologyProminencePx": 3.0,
+    "minimumTopologyToDfRadialDepthRatio": 0.1,
+    "maximumBfDfAngleDifferenceDegrees": 1.5,
+    "knownAngleOrLocationInputAllowed": false,
+    "argosRotationOrientationLocationInputAllowed": false,
+    "backsidePixelsConsumed": false,
+    "failedO3P7ReuseAllowed": false,
+    "post2SourceImageReadAllowedBeforeTerminalFixtureAndSyntheticPass": false,
+    "maximumFreshPost2Attempts": 1
+  },
+  "priorEvidence": [
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_POST2_RESULT.json", "sha256": "FAFBCAB111B4D6B755C534A5EF49C069D8D246F63E0910D1094B5ED28F46E07B"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P7/O3P7_SYNTHETIC_GATE.json", "sha256": "173F74E046CC72948DD86325BB9B2239FDACA2EC0D5E4A0622A21CE08ADF8CBA"},
+    {"path": "work/OPENCV_EDGE_NOTCH_O3P1/O3P1_OPERATOR_BASELINE_20260827.json", "sha256": "3FCB84A45222DE536BC1CD11B84B3BAE455943CED9E7719BAA0C1DCB2D7CF333"},
+    {"path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "019DC0CE4E677E157B790E1211440724BE7A62E1B37544747B2B8DF4E7D3BF6F"}
+  ],
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

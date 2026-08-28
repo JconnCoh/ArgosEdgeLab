@@ -1,0 +1,606 @@
+{
+  "schema": "argos_ocv03_o3p1_crop_profile_measurement_v1",
+  "createdUtc": "2026-08-28T01:13:43.745905Z",
+  "state": "PASS_O3P1_CROP_PROFILE_MEASUREMENT",
+  "invocationPath": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3P1\\O3P1_CROP_PROFILE_MEASUREMENT_INVOCATION.json",
+  "invocationSha256": "2BF646ADD7B3B1A86159693FA218BA745CD8BB64F080C28C3E63D5E927F17359",
+  "runtime": {
+    "root": "C:\\A3P2R",
+    "gatePath": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3P1\\O3P2_LOCAL_RUNTIME_GATE.json",
+    "gateSha256": "E22C0E27D3966B17DF83F205291CEB6B1C5B12A14EE306D157383514E1419FB9",
+    "opencvVersion": "5.0.0",
+    "numpyVersion": "2.5.1",
+    "opencvModulePath": "C:\\A3P2R\\cv2\\__init__.py",
+    "numpyModulePath": "C:\\A3P2R\\numpy\\__init__.py"
+  },
+  "o3l8EngineSha256": "D8897C1A5B60CB5AA9B0343CF8C9E5A249CCC5DEF5FBCDFE645EC08C354EF3BD",
+  "o3l8JobSha256": "3A4DDE120086E8915829C25371E33941F4A6DE080158A9942B7E84701098DE6D",
+  "inputCount": 6,
+  "rows": [
+    {
+      "id": "S16-C1-BF",
+      "pairId": "S16-C1",
+      "channel": "BF",
+      "source": {
+        "path": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3K1\\local_review\\assets\\s16c1_bf_clean.png",
+        "sha256": "D6FA45D15A59AF068F86F8628307127364AB77F7782892B1A915388DC93EDDCF"
+      },
+      "topologyEvidence": {
+        "topConnectedComponentCount": 1,
+        "selectedComponentAreaPx": 404837,
+        "dieStreetCloseKernelPx": 17,
+        "externalContourFillApplied": true,
+        "observedColumnCount": 1000,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "medianExteriorLevel": 5.334787368774414,
+        "medianExteriorMad": 0.19535231590270996
+      },
+      "depthPopulation": {
+        "medianPx": -0.04398011416196823,
+        "lowerSideNoiseSigmaPx": 0.9296629785776138,
+        "minimumPx": -3.580714225769043,
+        "maximumPx": 2.2934536933898926,
+        "p95Px": 1.8861497640609741,
+        "p99Px": 2.255727529525757,
+        "p995Px": 2.2853548526763916
+      },
+      "thresholdSweeps": [
+        {
+          "absoluteFloorPx": 4.0,
+          "effectiveThresholdPx": 4.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 6.0,
+          "effectiveThresholdPx": 6.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 8.0,
+          "effectiveThresholdPx": 8.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 10.0,
+          "effectiveThresholdPx": 10.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 12.0,
+          "effectiveThresholdPx": 12.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 16.0,
+          "effectiveThresholdPx": 16.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 20.0,
+          "effectiveThresholdPx": 20.0,
+          "segments": []
+        }
+      ]
+    },
+    {
+      "id": "S16-C1-DF",
+      "pairId": "S16-C1",
+      "channel": "DF",
+      "source": {
+        "path": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3K1\\local_review\\assets\\s16c1_df_clean.png",
+        "sha256": "854A509245239D3406D704CC328F3110BB44AD9C3858DF39A7A60068EF1771EF"
+      },
+      "topologyEvidence": {
+        "topConnectedComponentCount": 1,
+        "selectedComponentAreaPx": 273003,
+        "dieStreetCloseKernelPx": 17,
+        "externalContourFillApplied": true,
+        "observedColumnCount": 757,
+        "coverageFraction": 0.757,
+        "longestInterpolatedGapPx": 243,
+        "medianExteriorLevel": 2.999999523162842,
+        "medianExteriorMad": 4.76837158203125e-07
+      },
+      "depthPopulation": {
+        "medianPx": -0.0864802896976471,
+        "lowerSideNoiseSigmaPx": 1.0309610683321953,
+        "minimumPx": -9.192801475524902,
+        "maximumPx": 18.557809829711914,
+        "p95Px": 3.3817272186279297,
+        "p99Px": 16.903526306152344,
+        "p995Px": 18.118549346923828
+      },
+      "thresholdSweeps": [
+        {
+          "absoluteFloorPx": 4.0,
+          "effectiveThresholdPx": 4.037363983631134,
+          "segments": [
+            {
+              "leftX": 317,
+              "rightX": 345,
+              "widthPx": 29,
+              "tipX": 331,
+              "peakDepthPx": 18.557809829711914,
+              "meanSupport": 0.3502591848373413
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 6.0,
+          "effectiveThresholdPx": 6.0,
+          "segments": [
+            {
+              "leftX": 319,
+              "rightX": 343,
+              "widthPx": 25,
+              "tipX": 331,
+              "peakDepthPx": 18.557809829711914,
+              "meanSupport": 0.29344865679740906
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 8.0,
+          "effectiveThresholdPx": 8.0,
+          "segments": [
+            {
+              "leftX": 320,
+              "rightX": 341,
+              "widthPx": 22,
+              "tipX": 331,
+              "peakDepthPx": 18.557809829711914,
+              "meanSupport": 0.24473951756954193
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 10.0,
+          "effectiveThresholdPx": 10.0,
+          "segments": [
+            {
+              "leftX": 322,
+              "rightX": 340,
+              "widthPx": 19,
+              "tipX": 331,
+              "peakDepthPx": 18.557809829711914,
+              "meanSupport": 0.2546803951263428
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 12.0,
+          "effectiveThresholdPx": 12.0,
+          "segments": [
+            {
+              "leftX": 323,
+              "rightX": 339,
+              "widthPx": 17,
+              "tipX": 331,
+              "peakDepthPx": 18.557809829711914,
+              "meanSupport": 0.26559266448020935
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 16.0,
+          "effectiveThresholdPx": 16.0,
+          "segments": [
+            {
+              "leftX": 326,
+              "rightX": 336,
+              "widthPx": 11,
+              "tipX": 331,
+              "peakDepthPx": 18.557809829711914,
+              "meanSupport": 0.09700701385736465
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 20.0,
+          "effectiveThresholdPx": 20.0,
+          "segments": []
+        }
+      ]
+    },
+    {
+      "id": "S17-C1-BF",
+      "pairId": "S17-C1",
+      "channel": "BF",
+      "source": {
+        "path": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3K1\\local_review\\assets\\s17c1_bf_clean.png",
+        "sha256": "89B7F5031DE99A05719BFA089DF96C1D7C95941026F310C40B48236EFB1661EE"
+      },
+      "topologyEvidence": {
+        "topConnectedComponentCount": 1,
+        "selectedComponentAreaPx": 399783,
+        "dieStreetCloseKernelPx": 17,
+        "externalContourFillApplied": true,
+        "observedColumnCount": 1000,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "medianExteriorLevel": 7.370030403137207,
+        "medianExteriorMad": 0.4639546871185303
+      },
+      "depthPopulation": {
+        "medianPx": -0.0015919380821287632,
+        "lowerSideNoiseSigmaPx": 0.5,
+        "minimumPx": -0.6813597679138184,
+        "maximumPx": 68.67609405517578,
+        "p95Px": 67.30022430419922,
+        "p99Px": 68.63268280029297,
+        "p995Px": 68.66656494140625
+      },
+      "thresholdSweeps": [
+        {
+          "absoluteFloorPx": 4.0,
+          "effectiveThresholdPx": 4.0,
+          "segments": [
+            {
+              "leftX": 535,
+              "rightX": 764,
+              "widthPx": 230,
+              "tipX": 644,
+              "peakDepthPx": 68.67609405517578,
+              "meanSupport": 0.8116769790649414
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 6.0,
+          "effectiveThresholdPx": 6.0,
+          "segments": [
+            {
+              "leftX": 540,
+              "rightX": 759,
+              "widthPx": 220,
+              "tipX": 644,
+              "peakDepthPx": 68.67609405517578,
+              "meanSupport": 0.8216076493263245
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 8.0,
+          "effectiveThresholdPx": 8.0,
+          "segments": [
+            {
+              "leftX": 543,
+              "rightX": 756,
+              "widthPx": 214,
+              "tipX": 644,
+              "peakDepthPx": 68.67609405517578,
+              "meanSupport": 0.8225966095924377
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 10.0,
+          "effectiveThresholdPx": 10.0,
+          "segments": [
+            {
+              "leftX": 546,
+              "rightX": 753,
+              "widthPx": 208,
+              "tipX": 644,
+              "peakDepthPx": 68.67609405517578,
+              "meanSupport": 0.818679928779602
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 12.0,
+          "effectiveThresholdPx": 12.0,
+          "segments": [
+            {
+              "leftX": 548,
+              "rightX": 751,
+              "widthPx": 204,
+              "tipX": 644,
+              "peakDepthPx": 68.67609405517578,
+              "meanSupport": 0.8153812289237976
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 16.0,
+          "effectiveThresholdPx": 16.0,
+          "segments": [
+            {
+              "leftX": 552,
+              "rightX": 746,
+              "widthPx": 195,
+              "tipX": 644,
+              "peakDepthPx": 68.67609405517578,
+              "meanSupport": 0.8068602681159973
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 20.0,
+          "effectiveThresholdPx": 20.0,
+          "segments": [
+            {
+              "leftX": 556,
+              "rightX": 742,
+              "widthPx": 187,
+              "tipX": 644,
+              "peakDepthPx": 68.67609405517578,
+              "meanSupport": 0.7985976934432983
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S17-C1-DF",
+      "pairId": "S17-C1",
+      "channel": "DF",
+      "source": {
+        "path": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3K1\\local_review\\assets\\s17c1_df_clean.png",
+        "sha256": "DCD82C5E5CD9CF101084F16537DD4962FD79402493CB782FFBC56219A6869E99"
+      },
+      "topologyEvidence": {
+        "topConnectedComponentCount": 1,
+        "selectedComponentAreaPx": 387424,
+        "dieStreetCloseKernelPx": 17,
+        "externalContourFillApplied": true,
+        "observedColumnCount": 1000,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "medianExteriorLevel": 2.999999523162842,
+        "medianExteriorMad": 4.76837158203125e-07
+      },
+      "depthPopulation": {
+        "medianPx": 0.03549649938941002,
+        "lowerSideNoiseSigmaPx": 0.5,
+        "minimumPx": -0.7755236625671387,
+        "maximumPx": 72.71416473388672,
+        "p95Px": 68.58810424804688,
+        "p99Px": 72.59418487548828,
+        "p995Px": 72.69684600830078
+      },
+      "thresholdSweeps": [
+        {
+          "absoluteFloorPx": 4.0,
+          "effectiveThresholdPx": 4.0,
+          "segments": [
+            {
+              "leftX": 482,
+              "rightX": 689,
+              "widthPx": 208,
+              "tipX": 583,
+              "peakDepthPx": 72.71416473388672,
+              "meanSupport": 0.9635192155838013
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 6.0,
+          "effectiveThresholdPx": 6.0,
+          "segments": [
+            {
+              "leftX": 485,
+              "rightX": 686,
+              "widthPx": 202,
+              "tipX": 583,
+              "peakDepthPx": 72.71416473388672,
+              "meanSupport": 0.9624357223510742
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 8.0,
+          "effectiveThresholdPx": 8.0,
+          "segments": [
+            {
+              "leftX": 487,
+              "rightX": 683,
+              "widthPx": 197,
+              "tipX": 583,
+              "peakDepthPx": 72.71416473388672,
+              "meanSupport": 0.9614823460578918
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 10.0,
+          "effectiveThresholdPx": 10.0,
+          "segments": [
+            {
+              "leftX": 490,
+              "rightX": 681,
+              "widthPx": 192,
+              "tipX": 583,
+              "peakDepthPx": 72.71416473388672,
+              "meanSupport": 0.9607438445091248
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 12.0,
+          "effectiveThresholdPx": 12.0,
+          "segments": [
+            {
+              "leftX": 492,
+              "rightX": 679,
+              "widthPx": 188,
+              "tipX": 583,
+              "peakDepthPx": 72.71416473388672,
+              "meanSupport": 0.9604169130325317
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 16.0,
+          "effectiveThresholdPx": 16.0,
+          "segments": [
+            {
+              "leftX": 496,
+              "rightX": 675,
+              "widthPx": 180,
+              "tipX": 583,
+              "peakDepthPx": 72.71416473388672,
+              "meanSupport": 0.9603865146636963
+            }
+          ]
+        },
+        {
+          "absoluteFloorPx": 20.0,
+          "effectiveThresholdPx": 20.0,
+          "segments": [
+            {
+              "leftX": 499,
+              "rightX": 671,
+              "widthPx": 173,
+              "tipX": 583,
+              "peakDepthPx": 72.71416473388672,
+              "meanSupport": 0.9593151211738586
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S17-C2-BF",
+      "pairId": "S17-C2",
+      "channel": "BF",
+      "source": {
+        "path": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3K1\\local_review\\assets\\s17c2_bf_clean.png",
+        "sha256": "34C1FDA71BCCAA4B85F88D113FC8C3801FC20C0141D9138934852FA6CC563AF2"
+      },
+      "topologyEvidence": {
+        "topConnectedComponentCount": 1,
+        "selectedComponentAreaPx": 409531,
+        "dieStreetCloseKernelPx": 17,
+        "externalContourFillApplied": true,
+        "observedColumnCount": 1000,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "medianExteriorLevel": 7.03947639465332,
+        "medianExteriorMad": 0.4778127670288086
+      },
+      "depthPopulation": {
+        "medianPx": -0.0659053772687912,
+        "lowerSideNoiseSigmaPx": 0.5,
+        "minimumPx": -7.4069318771362305,
+        "maximumPx": 0.4501664638519287,
+        "p95Px": 0.38164734840393066,
+        "p99Px": 0.42960280179977417,
+        "p995Px": 0.43478912115097046
+      },
+      "thresholdSweeps": [
+        {
+          "absoluteFloorPx": 4.0,
+          "effectiveThresholdPx": 4.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 6.0,
+          "effectiveThresholdPx": 6.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 8.0,
+          "effectiveThresholdPx": 8.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 10.0,
+          "effectiveThresholdPx": 10.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 12.0,
+          "effectiveThresholdPx": 12.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 16.0,
+          "effectiveThresholdPx": 16.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 20.0,
+          "effectiveThresholdPx": 20.0,
+          "segments": []
+        }
+      ]
+    },
+    {
+      "id": "S17-C2-DF",
+      "pairId": "S17-C2",
+      "channel": "DF",
+      "source": {
+        "path": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3K1\\local_review\\assets\\s17c2_df_clean.png",
+        "sha256": "86145587C033CA7BFC4EDB5356D0A1975C36F7E126BFCD7C9A37532EC9398874"
+      },
+      "topologyEvidence": {
+        "topConnectedComponentCount": 1,
+        "selectedComponentAreaPx": 391116,
+        "dieStreetCloseKernelPx": 17,
+        "externalContourFillApplied": true,
+        "observedColumnCount": 1000,
+        "coverageFraction": 1.0,
+        "longestInterpolatedGapPx": 0,
+        "medianExteriorLevel": 2.999999523162842,
+        "medianExteriorMad": 4.76837158203125e-07
+      },
+      "depthPopulation": {
+        "medianPx": -0.09689602255821228,
+        "lowerSideNoiseSigmaPx": 0.5,
+        "minimumPx": -0.694750964641571,
+        "maximumPx": 0.5084964632987976,
+        "p95Px": 0.270149290561676,
+        "p99Px": 0.4846128821372986,
+        "p995Px": 0.5034228563308716
+      },
+      "thresholdSweeps": [
+        {
+          "absoluteFloorPx": 4.0,
+          "effectiveThresholdPx": 4.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 6.0,
+          "effectiveThresholdPx": 6.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 8.0,
+          "effectiveThresholdPx": 8.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 10.0,
+          "effectiveThresholdPx": 10.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 12.0,
+          "effectiveThresholdPx": 12.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 16.0,
+          "effectiveThresholdPx": 16.0,
+          "segments": []
+        },
+        {
+          "absoluteFloorPx": 20.0,
+          "effectiveThresholdPx": 20.0,
+          "segments": []
+        }
+      ]
+    }
+  ],
+  "operatorLabelsConsumedByMeasurement": false,
+  "knownNotchLocationConsumed": false,
+  "imageBytesEmittedToStdout": false,
+  "sourceMutationPerformed": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

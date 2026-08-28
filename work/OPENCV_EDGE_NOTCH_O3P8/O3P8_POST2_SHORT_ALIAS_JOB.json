@@ -1,0 +1,92 @@
+{
+  "schema": "argos_ocv03_o3p8_front_split_notch_job_v1",
+  "revision": "O3P8_POST2_BF_TOPOLOGY_DF_RADIAL_20260828",
+  "workspaceAlias": {"drive": "R:", "target": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab"},
+  "runtimeRoot": "C:/A3P2R",
+  "runtimeGate": {"path": "R:/work/OPENCV_EDGE_NOTCH_O3P1/O3P2_LOCAL_RUNTIME_GATE.json", "sha256": "E22C0E27D3966B17DF83F205291CEB6B1C5B12A14EE306D157383514E1419FB9"},
+  "topologyEngine": {"path": "R:/work/OPENCV_EDGE_NOTCH_O3L8/WaferTopologyAxisOpenCv.py", "sha256": "D8897C1A5B60CB5AA9B0343CF8C9E5A249CCC5DEF5FBCDFE645EC08C354EF3BD"},
+  "cropEngine": {"path": "R:/work/OPENCV_EDGE_NOTCH_O3K1/OCV03_NotchReviewOpenCvV1.py", "sha256": "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4"},
+  "expectedOpenCvVersion": "5.0.0",
+  "expectedNumpyVersion": "2.5.1",
+  "channelMethods": {
+    "BF": "O3L8_TOP_CONNECTED_TOPOLOGY_MEASURED_CONTOUR",
+    "DF": "FROZEN_R6_OUTER_EDGE_RADIAL_FULL_360"
+  },
+  "crop": {"widthPx": 1000, "inwardPx": 420, "outwardPx": 180},
+  "topologyConfig": {
+    "revision": "O3L8_TOPOLOGY_AXIS_CONTOUR_OVERLAY_V1",
+    "clahe": 2.5,
+    "exteriorStartY": 510,
+    "exteriorEndY": 585,
+    "minimumExteriorScale": 3.0,
+    "waferDistanceThreshold": 2.5,
+    "dieStreetCloseKernelPx": 17,
+    "topContactRowsPx": 12,
+    "minimumTopContactPixels": 100,
+    "minimumWaferAreaPx": 150000,
+    "maximumInwardPx": 180,
+    "maximumOutwardPx": 55,
+    "supportSampleOffsetPx": 8,
+    "minimumContourCoverage": 0.95,
+    "maximumInterpolatedGapPx": 20
+  },
+  "corroboration": {
+    "contourSmoothingSigmaPx": 2.0,
+    "shoulderSpansPx": [64, 96, 128, 160, 200],
+    "seedIntervalMarginDegrees": 0.75,
+    "unseededSearchHalfWidthDegrees": 2.0,
+    "minimumContourProminencePx": 3.0,
+    "minimumTopologyToDfRadialDepthRatio": 0.10,
+    "minimumMeanSupport": 0.45,
+    "minimumTipSupport": 0.30,
+    "minimumDfRadialIntervalWidthDegrees": 0.9,
+    "maximumDfRadialIntervalWidthEnabled": false,
+    "maximumBfDfAngleDifferenceDegrees": 1.5,
+    "maximumSeedCountPerWafer": 64,
+    "multipleEligibleDecision": "HOLD",
+    "zeroEligibleDecision": "HOLD"
+  },
+  "candidateLocalTopologyErrors": [
+    "Lower-side contour-noise population is empty.",
+    "No top-connected wafer component qualified.",
+    "Top-connected wafer component has no external contour.",
+    "Wafer contour covers fewer than two columns."
+  ],
+  "outputPath": "R:/work/OPENCV_EDGE_NOTCH_O3P8/O3P8_POST2_RESULT.json",
+  "expectedInputCount": 3,
+  "inputs": [
+    {
+      "identity": "62546-481_POST2_SLOT01",
+      "r6SeedResult": {"path": "R:/work/O3D2/R6/62546-481_POST2_SLOT01/NATIVE_WAFER_POSE_OPENCV_V2.json", "sha256": "27C8FA9C3F308DC50B81D5DB4A145E402C3CB0CE55A93BF8574AEF7B4C693659"},
+      "bf": {"path": "R:/work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot01/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot01_BrightfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "sha256": "D03C10550401B3AC2AFE42CC066E192DA9CC8D3FFC8F1E2497FA9C7C39CA5052"},
+      "df": {"path": "R:/work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot01/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot01_DarkfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "sha256": "C1759B44CE9D7ACA18D87413D10936578A67D35C018A0D646A78C45AFE5AA536"}
+    },
+    {
+      "identity": "62546-481_POST2_SLOT03",
+      "r6SeedResult": {"path": "R:/work/O3D2/R6/62546-481_POST2_SLOT03/NATIVE_WAFER_POSE_OPENCV_V2.json", "sha256": "A2721C6834623B8315BEDCF8FEC221850CBA87D9BA594970C6BC62E64B267AD1"},
+      "bf": {"path": "R:/work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot03/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot03_BrightfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "sha256": "55B290A566FC243C81D1EB5E364D56DBB4DBC7A27AE81EA40E1CBF7CB6E570B3"},
+      "df": {"path": "R:/work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot03/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot03_DarkfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "sha256": "2EF13BB346E381217F6D8DA4C732C5B97C8EABCD062CBE73FD02BD5DD064DFD5"}
+    },
+    {
+      "identity": "62546-481_POST2_SLOT17",
+      "r6SeedResult": {"path": "R:/work/O3D2/R6/62546-481_POST2_SLOT17/NATIVE_WAFER_POSE_OPENCV_V2.json", "sha256": "4ED3D611A2C69F4F9B3BC26F6ECCC5DDDFD7339F8CE6252B7FF83A74C8D1C3F8"},
+      "bf": {"path": "R:/work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot17/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_BrightfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "sha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94"},
+      "df": {"path": "R:/work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot17/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_DarkfieldFrontsideWafer_PM2_resizedImage.bmp", "bytes": 475379874, "sha256": "9AB0AA6942948F54635C51B173618FC8478C75791E9F859FDD135FFDE52C153C"}
+    }
+  ],
+  "knownNotchLocationConsumed": false,
+  "notchAnglePriorConsumed": false,
+  "fixedAngularSearchWindowConsumed": false,
+  "scorerInputsPresent": false,
+  "sourceMutationAllowed": false,
+  "rasterOutputAllowed": false,
+  "liveProviderActivation": false,
+  "backsidePixelsConsumed": false,
+  "dfTopologyInvocationAllowed": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}
+
