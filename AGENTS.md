@@ -2,6 +2,28 @@
 
 These instructions apply to the entire workspace.
 
+## Highest-priority small-patch lane
+
+When the operator requests a bounded local code/configuration correction, or
+uses `SMALL PATCH:`, make the edit immediately without asking for approval.
+This lane is limited to at most three existing files and 150 changed lines.
+Within those limits, this section overrides the workspace's checkpoint,
+continuity, ledger, recovery-intent, pre-action-contract, packaging, signing,
+publication, and task-rollover procedures for the local draft patch only.
+
+Use existing file-backed facts and pinned runtime information; do not
+rediscover them. Do not create a namespace, package, checkpoint, ledger row,
+schema, recovery intent, pre-action contract, or route gate. Run only the
+smallest relevant local test. A failing draft test is corrected in place.
+Do not inspect or act on live providers, tasks, processes, queues, images, or
+JBOD state, and do not publish, sign, promote, delete, or perform an external
+mutation in this lane.
+
+If the requested correction cannot stay within the file/line limits, stop and
+report the exact additional scope required; do not expand the work silently.
+Promotion or publication is a separate operation requiring an explicit
+`PROMOTE` or `PUBLISH` instruction and the applicable full gates.
+
 ## Mandatory Windows/JBOD failure-prevention memory
 
 Before building or launching any Windows batch, mapped-drive analysis,
