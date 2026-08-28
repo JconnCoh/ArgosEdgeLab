@@ -1,8 +1,41 @@
-# Active ArgosEdgeLab state - OCV-03 O3B3 backside metadata capability promoted locally - 2026-08-28
+# Active ArgosEdgeLab state - OCV-03 O3B6 exact backside pair frozen / transfer capability gap - 2026-08-28
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3B6 exact backside pair frozen / transfer capability gap — 2026-08-28
+
+The exact clean Slot01 backside BF/DF pair is now file-backed and frozen in
+`work/OPENCV_BACKSIDE_NOTCH_STATUS_O3B5/O3B5_EXACT_BACKSIDE_PAIR_FREEZE.json`
+(SHA-256 `CEF8688BEE1B59DE36C952CA47EE7750BA7D1A235919D2870F131729DE9E3187`).
+Both clean BMPs are 475,379,874 bytes. The separate operator-marked
+`Chipoutlocation.bmp` is excluded from detector input.
+
+O3B3 published once and failed safely before mutation because the installed
+worker predecessor was the known OLS3 worker, SHA-256
+`CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250`.
+O3B5 then proved the installed STATUS route does not return the requested
+extended inventory; it is terminal/no-retry. Direct read-only inventory on the
+exact JBOD resolved the clean pair. O3B6 published once and returned signed
+terminal failure before source read because the legacy DATA_PULL path gate
+measured the BF source at effective length 208. Its terminal gate SHA-256 is
+`E8E1AA105CA753591574F89EEF49D127297AE0DFB7D128C712C1D614648858B5`.
+
+A separate direct hash attempt may still be completing after its transport
+wait expired. Do not query, stop, reuse, or send input to that possible
+console/process, and do not retry O3B6. No images or source hashes have returned
+locally yet. The next bounded action is one separately qualified timeout-safe
+JBOD D-drive output/return route using an exact-ancestor process-local alias for
+the frozen pair. Stay on Medium for that transport work; switch to High only
+after the exact images and hashes are local for OpenCV backside analysis.
+
+Current checkpoint is
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B6_EXACT_BACKSIDE_PAIR_FROZEN_TRANSFER_PATH_CAPABILITY_GAP_20260828.md`,
+SHA-256 `C39E46423FEB94D6A0AB05BD730F6ABC243D09C91334CEAC0865761371524CE7`.
+The frontside hotspot remains parked; normal POST2 remains unchanged. All prior
+backside, fiducial/alignment, XML, training, production, source, task/process,
+provider, threshold, algorithm, and hold restrictions remain in force.
 
 ## OCV-03 O3B3 backside metadata capability promoted locally — 2026-08-28
 
