@@ -1,8 +1,22 @@
-# Active ArgosEdgeLab state - OCV-03 O3Q8 pattern-suppressed Slot16 publish ready - 2026-08-28
+# Active ArgosEdgeLab state - OCV-03 O3Q8 signed Slot16 numeric hold - 2026-08-28
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3Q8 signed Slot16 numeric hold — 2026-08-28
+
+The one authorized publication completed with verified signed JBOD response
+`R_D8A136259807_20260828195148218_4a34f203`. Endpoint execution passed and
+the owned child exited 0, but the actual result is
+`HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH`: 21 seeds, 0 eligible candidates,
+`numericIndependentPass=false`. Result SHA-256 is
+`C4958D4A3585C9D20E4AD1EC07C653162828A749463E8686159B33BE4E7B7118`.
+O3Q8 is terminal/no-retry. Current checkpoint is
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q8_SIGNED_SLOT16_NUMERIC_HOLD_20260828.md`,
+SHA-256 `9BFC852F1CBC035771587127C27F888415EEA909BE261F30C2052BD62E28BC17`.
+Do not publish another detector. A later explicit diagnostic may only pull the
+existing result JSON through an already qualified read-only route.
 
 ## OCV-03 O3Q8 pattern-suppressed Slot16 request publish ready — 2026-08-28
 
