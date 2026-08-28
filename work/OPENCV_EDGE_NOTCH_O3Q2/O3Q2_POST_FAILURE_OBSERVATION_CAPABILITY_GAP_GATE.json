@@ -1,0 +1,68 @@
+{
+  "schema": "argos_recovery_observation_capability_gap_v1",
+  "createdUtc": "2026-08-28T03:59:00Z",
+  "state": "STOP_RECOVERY_OBSERVATION_CAPABILITY_GAP",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "signedPremiseFailure": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_SIGNED_TERMINAL_RESPONSE_GATE.json",
+    "sha256": "56D64F2F287477E3307BA6111AEA7C89E7B3CEADF408476F7AD9E25A5D320769",
+    "count": 1,
+    "expectedNumpyVersion": "2.5.1",
+    "actualNumpyVersion": null
+  },
+  "responseCollection": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_TERMINAL_RESPONSE_COLLECTION_GATE.json",
+    "sha256": "1A5F2D1433464DA180F0EAEEB733C1625139F72E0706030E396E41468A0F6DDA",
+    "state": "PASS_O3Q2_SIGNED_TERMINAL_RESPONSE_COLLECTED"
+  },
+  "recoveryIntent": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_POST_FAILURE_RECOVERY_INTENT.json",
+    "sha256": "CDE16CF24B12527D83577BC07A1A0B462A0CA96423703087A3B47A0332BA2B2B",
+    "mode": "OBSERVE",
+    "preflightState": "PASS_ARGOS_RECOVERY_INTENT"
+  },
+  "portalCapability": {
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "statusProvidesActivePythonModuleVersions": false,
+    "dataPullApprovedRoots": [
+      "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2",
+      "D:/KLARFExport"
+    ],
+    "runtimeRoot": "D:/AFCV1",
+    "runtimeRootApprovedForDataPull": false,
+    "canAnswerDecisionQuestion": false
+  },
+  "directAdminCapability": {
+    "requiredTransportInventorySha256": "853776763BF5449E582CE5E1E163E7D44EED511ED43CD34A90A23ACD3C00720B",
+    "blockGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_DIRECT_TRANSPORT_HARNESS_BLOCK_GATE.json",
+      "sha256": "80A5D606E0A5CC6DA94750BC680B6FAAB82F1D3FEF9BD7484C8D4C9FDBFD8344"
+    },
+    "transportInventoryHarnessQualified": false,
+    "remoteInputSent": false,
+    "canAnswerDecisionQuestion": false
+  },
+  "requiredCapabilityChange": {
+    "maximumCount": 1,
+    "alternatives": [
+      "Qualify one installed read-only STATUS or DATA_PULL capability that returns the exact active D:/AFCV1 NumPy and OpenCV versions.",
+      "Provide one fresh harness-qualified revision of Get-ArgosControlTransportState.ps1, then refresh every direct-observation gate before a single hostname-gated read-only command."
+    ],
+    "sameO3Q2RequestReplayAllowed": false,
+    "newLiveNumericSuccessorAuthorized": false
+  },
+  "directObservationAfterLastSignedFailure": false,
+  "mutationBlocked": true,
+  "frontsideValidationComplete": false,
+  "backsideStartAllowed": false,
+  "fiducialResumeAllowed": false,
+  "requestPublicationCount": 1,
+  "requestRetryAuthorized": false,
+  "requestRetryPerformed": false,
+  "targetMutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

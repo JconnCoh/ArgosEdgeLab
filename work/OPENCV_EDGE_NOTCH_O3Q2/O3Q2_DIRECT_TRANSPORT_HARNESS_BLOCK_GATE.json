@@ -1,0 +1,48 @@
+{
+  "schema": "argos_o3q2_direct_transport_harness_block_gate_v1",
+  "createdUtc": "2026-08-28T03:58:30Z",
+  "state": "STOP_O3Q2_DIRECT_TRANSPORT_HARNESS_BLOCK",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "transportInventory": {
+    "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Get-ArgosControlTransportState.ps1",
+    "sha256": "853776763BF5449E582CE5E1E163E7D44EED511ED43CD34A90A23ACD3C00720B",
+    "bytes": 5532,
+    "parserErrors": 0,
+    "declaredParameters": ["ValidateWinRm"],
+    "nonMutatingModeDeclared": false
+  },
+  "harnessPreflight": {
+    "checkedUtc": "2026-08-28T03:56:29.6830467Z",
+    "state": "FAIL_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "metadataOnly": true,
+    "targetExecuted": false,
+    "violations": [
+      {
+        "code": "MISSING_NON_MUTATING_MODE",
+        "line": 1,
+        "message": "Harness must declare Preflight or Rehearsal."
+      },
+      {
+        "code": "CONDITIONAL_COLLECTION_ASSIGNMENT_CAN_SCALARIZE",
+        "line": 123,
+        "message": "Conditional output assigned directly to $state can unwrap zero or one items under StrictMode."
+      }
+    ]
+  },
+  "preactionBeforeDiscovery": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/PREACTION_O3Q2_DIRECT_RUNTIME_OBSERVATION.json",
+    "sha256": "0ACD1D0A95D0D9801A1CC7145551C24CEC54151A0EF28FAD05942863A07438CC",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION",
+    "futureReuseAllowed": false,
+    "reason": "The failure-prevention memory changed after this new failure signature was discovered."
+  },
+  "remoteTransportInventoryExecuted": false,
+  "rustDeskInputSent": false,
+  "rdpInputSent": false,
+  "jbodCommandExecuted": false,
+  "targetMutationsPerformed": false,
+  "requestRepublished": false,
+  "requestRetried": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

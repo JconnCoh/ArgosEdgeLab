@@ -1,0 +1,102 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-28T03:57:00Z",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_SIGNED_TERMINAL_RESPONSE_GATE.json",
+        "sha256": "56D64F2F287477E3307BA6111AEA7C89E7B3CEADF408476F7AD9E25A5D320769",
+        "state": "FAILED"
+      }
+    ],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"","sha256":""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_ADMIN_READ_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path":"","sha256":""},
+    "installedConfigEvidence": {"path":"","sha256":""},
+    "capabilityEvidence": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_RUNTIME_OBSERVATION_CAPABILITY_INVENTORY.json",
+      "sha256": "8C883BA4C7A980D94A928883EB54E61F6AF47918939BEB01B120A70356CE71B9"
+    },
+    "qualifiedEndpointGate": {"path":"","sha256":""},
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_RUNTIME_OBSERVATION_AUTHORIZATION_GATE.json",
+      "sha256": "D2FAFCA8F8C8E35CE613274625B9732C29D806E29CCE319694E26582084BA788"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "D:/AFCV1/rt/python.exe",
+        "sourceSchema": "exact file identity plus bounded imported module version strings",
+        "selector": "exact runtime path on hostname A1025645101",
+        "uniquenessKey": "fullPath",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "D:/AFCV1/INSTALLATION.json",
+        "sourceSchema": "exact file hash metadata",
+        "selector": "exact installation record path on hostname A1025645101",
+        "uniquenessKey": "fullPath",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": [
+      "exactHostnameGate",
+      "exactFileSha256",
+      "exactPythonModuleVersionStrings",
+      "boundedNonceBoundTextReturn"
+    ],
+    "requestedFields": [
+      "computerName",
+      "pythonSha256",
+      "installationSha256",
+      "opencvVersion",
+      "numpyVersion",
+      "targetMutationsPerformed"
+    ],
+    "decisionOptions": ["A","B","C","D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path":"","sha256":""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "scope": {
+    "sameRequestReplayAllowed": false,
+    "requestRetryAuthorized": false,
+    "maximumObservationExecutions": 1,
+    "targetWriteAllowed": false,
+    "taskOrProcessManagementAllowed": false,
+    "providerActivationAllowed": false,
+    "protectedProcessorChangeAllowed": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "argos_ocv03_o3q2_signed_terminal_response_gate_v1",
+  "createdUtc": "2026-08-28T03:56:00Z",
+  "state": "FAIL_O3Q2_AUTHENTIC_SIGNED_TERMINAL_NUMPY_VERSION_PREMISE",
+  "responseState": "FAILED",
+  "request": {
+    "requestId": "REQ_20260828T033000222Z_62629419O3Q2",
+    "requestZipSha256": "F107CB94E8580EB018C373F2995BC6D817D7E4337D351F875E861B5A42D1AACC",
+    "publicationGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_NUMERIC_PUBLISH_GATE.json",
+      "sha256": "4196CA751A0EC3F078AF60394D91BDE93C55BFF63B7C87A4DC1FA9FE884633E0"
+    },
+    "publicationCount": 1,
+    "retryAuthorized": false
+  },
+  "response": {
+    "sourcePath": "U:/ProjectPortalRO/responses/R_1B7D26E4FA16_20260828034551022_4d1f22f6.ready.zip",
+    "responseId": "R_1B7D26E4FA16_20260828034551022_4d1f22f6",
+    "zipBytes": 2620,
+    "zipSha256": "519E0B1C9EB6A2F0EE036E356E9CDB1FC3A6D72D0B38DF9AE7831CCF25C2A23E",
+    "lastWriteTimeUtc": "2026-08-28T03:46:54.9864896Z",
+    "manifestSha256": "6B459171A9E300F1755EBC8E1714D63312B371B9C7FA487FA17C7B93E868322A",
+    "signatureSha256": "77596F5E476397B40F0775CC6EDF1D446D0828EE2B397478E62D38E7CB0E1373",
+    "signatureAlgorithm": "RSA-SHA256-PKCS1",
+    "signatureVerified": true,
+    "sourceRole": "JBOD",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "signerCertificateSha256": "5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B",
+    "manifestState": "FAILED",
+    "declaredFileCount": 3,
+    "allDeclaredFilesVerified": true,
+    "files": [
+      {"path":"FAILURE.json","bytes":687,"sha256":"3B48E865B93AD2B3562F23AACB318A2AD2FEBA2A4D1A3B5C2ECE73FF3EBDCDF7"},
+      {"path":"MAINTENANCE.stderr.txt","bytes":3006,"sha256":"BB7E27D4DA03E1FF6710A1F692FCD646FE0C554A385D5ADBA57AA4496824C1D0"},
+      {"path":"MAINTENANCE.stdout.txt","bytes":0,"sha256":"E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"}
+    ]
+  },
+  "failure": {
+    "failureCreatedUtc": "2026-08-28T03:45:51.0220796Z",
+    "detail": "Maintenance verifier failed with exit code 1. Exact stderr is attached.",
+    "engineException": "ValueError: O3P8 NumPy version changed.",
+    "failedInvariant": "np.__version__ equals frozen expectedNumpyVersion",
+    "expectedNumpyVersion": "2.5.1",
+    "actualNumpyVersion": null,
+    "engineReached": true,
+    "imageReadBeforeFailure": false,
+    "numericResultProduced": false,
+    "rasterResultProduced": false,
+    "providerActivated": false
+  },
+  "recovery": {
+    "signedPremiseFailureCount": 1,
+    "nextModeRequired": "OBSERVE",
+    "mutationBlockedUntilDirectPostFailureObservationPinned": true,
+    "sameRequestReplayAllowed": false,
+    "automaticRetryAllowed": false
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

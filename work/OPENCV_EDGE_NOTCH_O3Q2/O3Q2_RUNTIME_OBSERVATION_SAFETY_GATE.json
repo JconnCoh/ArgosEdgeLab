@@ -1,0 +1,46 @@
+{
+  "schema": "argos_o3q2_runtime_observation_safety_gate_v1",
+  "createdUtc": "2026-08-28T03:55:00Z",
+  "state": "PASS_O3Q2_RUNTIME_OBSERVATION_SAFETY_GATES",
+  "recoveryIntent": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_POST_FAILURE_RECOVERY_INTENT.json",
+    "sha256": "CDE16CF24B12527D83577BC07A1A0B462A0CA96423703087A3B47A0332BA2B2B",
+    "preflightState": "PASS_ARGOS_RECOVERY_INTENT",
+    "signedPremiseFailures": 1,
+    "mutationStopLossActive": false
+  },
+  "observationSource": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/Observe-O3Q2RuntimeVersions.ps1",
+    "sha256": "9DED5B3AC1B1EE64CA771D34D8B07D291D7662B013E7E0DA2D46074874C78B8A",
+    "bytes": 1826,
+    "windowsPowerShell51PreflightState": "PASS_O3Q2_RUNTIME_VERSION_OBSERVATION_PREFLIGHT",
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "parserErrors": 0,
+    "pathState": "PASS_PATH_BUDGET",
+    "pathLength": 110,
+    "reservedSuffixCharacters": 16,
+    "effectiveLength": 126,
+    "longestComponentLength": 31
+  },
+  "directRunner": {
+    "path": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+    "sha256": "CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D",
+    "bytes": 56593,
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "parserErrors": 0
+  },
+  "invocation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3Q2/O3Q2_RUNTIME_OBSERVATION_INVOCATION.json",
+    "sha256": "561BF250322CCB2B15D96B755C7E12A9BDE4D14860C9D3AD8926D9F0B42F0CE3",
+    "action": "Invoke",
+    "maximumExecutions": 1,
+    "retryAuthorized": false,
+    "maximumResultCharacters": 4096
+  },
+  "targetInputSent": false,
+  "targetMutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

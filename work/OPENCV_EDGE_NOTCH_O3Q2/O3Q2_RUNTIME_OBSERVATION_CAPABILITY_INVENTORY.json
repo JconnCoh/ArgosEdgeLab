@@ -1,0 +1,37 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-08-28T03:56:00Z",
+  "state": "PASS_ARGOS_ENDPOINT_STATIC_CAPABILITY_INVENTORY",
+  "incidentId": "OCV03_O3Q2_NUMPY_RUNTIME_PREMISE_20260828",
+  "routes": [
+    {
+      "type": "DIRECT_ADMIN_READ_ONLY",
+      "transport": "existing RustDesk gateway to existing Argos RDP to existing JBOD RDP",
+      "requiredComputerName": "A1025645101",
+      "runnerPath": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+      "runnerSha256": "CE10569FEAC2FF03C04BC0603011AD92A6DABB6C911A80F5E0546A785D232C3D",
+      "capabilities": [
+        "exactHostnameGate",
+        "exactFileSha256",
+        "exactPythonModuleVersionStrings",
+        "boundedNonceBoundTextReturn"
+      ]
+    }
+  ],
+  "exactSources": [
+    {"path":"D:/AFCV1/rt/python.exe","maximumRows":1,"maximumBytesRead":0},
+    {"path":"D:/AFCV1/INSTALLATION.json","maximumRows":1,"maximumBytesRead":0},
+    {"path":"python imports cv2 and numpy","maximumRows":2,"maximumReturnedCharacters":128}
+  ],
+  "targetFileContentReadRequired": false,
+  "imageBytesReadRequired": false,
+  "installedCodeChangeRequired": false,
+  "helperInstallRequired": false,
+  "taskActionRequired": false,
+  "processManagementActionRequired": false,
+  "queueOrLedgerMutationRequired": false,
+  "sourceMutationRequired": false,
+  "waferActionRequired": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

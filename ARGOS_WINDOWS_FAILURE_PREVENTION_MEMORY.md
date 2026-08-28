@@ -9794,3 +9794,36 @@ than rerunning it.
   Use a fresh R3 harness with `Q:` and fresh `C:\A3Q1R3`,
   `C:\A3Q1F3`, and `C:\A3Q1P3` namespaces.  The signed live O3Q1 request is
   unchanged: its frozen job sources and invocation both name `F:`.
+
+## 2026-08-28 — Direct-control transport inventory must pass the current harness policy before use
+
+- Failure signature: after the authentic signed O3Q2 terminal response proved
+  a live NumPy-version premise failure, the incident-bound recovery intent,
+  observation source, direct runner, wrapper, path, continuity, session, and
+  zero-recurrence gates passed.  The mandatory harness-safety preflight then
+  rejected the unchanged skill dependency
+  `Get-ArgosControlTransportState.ps1` with
+  `MISSING_NON_MUTATING_MODE` and
+  `CONDITIONAL_COLLECTION_ASSIGNMENT_CAN_SCALARIZE` at its `$state`
+  assignment.  The inventory script was not executed and no RustDesk/RDP or
+  JBOD input was sent.
+- Cause: the transport inventory predates the current mandatory harness
+  contract.  It declares only `ValidateWinRm`, not a distinct `Preflight` or
+  `Rehearsal` mode, and assigns the output of a conditional containing an
+  array branch directly to `$state`.  A skill instruction requiring the
+  script does not exempt that relied-upon runner from the project harness
+  gate.
+- Mandatory preflight: before every direct-control transport inventory, pin
+  the exact inventory-script hash and run
+  `Confirm-ArgosPowerShellHarnessSafety.ps1 -Preflight` before executing the
+  script or sending GUI input.  Require a declared strictly non-mutating mode
+  and place any array boundary around the complete conditional assignment.
+  A parser pass or an established historical use is not sufficient.
+- Recovery: preserve the rejected hash
+  `853776763BF5449E582CE5E1E163E7D44EED511ED43CD34A90A23ACD3C00720B`
+  as non-executable evidence for this incident.  Do not bypass the transport
+  preflight with `Invoke-ArgosJbodDirect.ps1 -Action Probe`.  A future direct
+  observation requires a separately authorized, fresh, harness-qualified
+  transport-inventory revision (and refreshed intent, path, wrapper,
+  zero-recurrence, continuity, and session gates) or one bounded installed
+  portal observation capability that can return the required runtime version.
