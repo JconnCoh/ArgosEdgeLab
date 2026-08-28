@@ -18,8 +18,8 @@ final gate SHA-256 is
 Current checkpoint is
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B3_BACKSIDE_METADATA_CAPABILITY_PROMOTED_LOCAL_20260828.md`,
 SHA-256 `7006C828396C881FC8AB7599F6248D7BC73C2B558E9601FA48741848047EF2A1`.
-Stop before publication. An explicit `PUBLISH` is required for the one-shot,
-no-retry O3B3 transaction. Only after its matching signed response passes may
+The operator supplied explicit `PUBLISH` authority for the one-shot, no-retry
+O3B3 transaction. Only after its matching signed response passes may
 a separate read-only STATUS request inventory the Slot01 backside BF/DF leaves.
 The frontside hotspot remains parked and the normal POST2 baseline is unchanged.
 
