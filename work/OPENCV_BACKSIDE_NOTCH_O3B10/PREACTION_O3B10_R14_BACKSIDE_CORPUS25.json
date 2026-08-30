@@ -1,0 +1,59 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3B10_R14_BACKSIDE_CORPUS25_20260829",
+  "createdUtc": "2026-08-29T15:19:08.5045049Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "START_ONE_OWNED_REVIEW_ONLY_R14_BACKSIDE_CORPUS_WORKER",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/OPENCV_BACKSIDE_NOTCH_O3B10/Detect-BacksideNotchOpenCvR14.py",
+      "sha256": "E8627409BC4134AFD653603DDE1795861ACEF46C8ED240F69CACBAD90A14F10D"
+    },
+    {
+      "path": "work/OPENCV_BACKSIDE_NOTCH_O3B10/Invoke-O3B10R14BacksideCorpus25.ps1",
+      "sha256": "4C160F986D52FB498EDF66F64B3887C11B9BE556BDA4C316559A16EE968E9EED"
+    },
+    {
+      "path": "work/OPENCV_BACKSIDE_NOTCH_O3B10/R14_BACKSIDE_CORPUS25_DEFINITION.json",
+      "sha256": "E442DA7F5F2FEA53D5897A00F56BB4EB12491F5BE77A81D178A67AE3EBE685E5"
+    },
+    {
+      "path": "work/OPENCV_BACKSIDE_NOTCH_O3B10/Run-OpenCvKlarfCorpusR2.py",
+      "sha256": "20102DD8502EEC798BE1199B1B074922D24A8AE8343A180762EA1CD78BB8EFF6"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

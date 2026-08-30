@@ -1,5 +1,31 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### A development target asserted as a proven control can discard the evidence needed to tune it
+
+- Signature: a signed actual-wafer regression runs its earlier proven controls,
+  reaches the intended fixture-ambiguity development wafer, and returns only a
+  compact failure saying the expected unique result was not obtained; the
+  candidate metrics and review images already produced before the assertion are
+  absent from the signed response.
+- Cause: the runner classified an unvalidated target outcome as `UNIQUE` and
+  threw before serializing its bounded diagnostic result. A development target
+  is evidence to observe, not a release control to assert before its first run.
+- Preflight: divide every cohort manifest mechanically into frozen positive
+  controls, frozen negative controls, and development observations. Assertions
+  may abort only on the frozen controls. Every development observation must be
+  serialized with its exact state, candidates, metrics, and review rasters even
+  when its intended improvement does not occur.
+- Recovery: preserve the signed failed package and compact response as terminal
+  evidence. Use a fresh namespace and create-new output roots, keep the detector
+  semantics unchanged for the evidence run, change the target case to
+  `OBSERVE`, and return the complete bounded cohort. Tune only from those actual
+  returned metrics; do not infer why the detector held from the assertion text.
+- First observed: OCV-03 O3B10 R16 actual-wafer regression on 2026-08-29.
+  Proven chipout, BowComp, split-channel, coverage, and width cases ran before
+  the fixture target stopped the runner. The signed endpoint rolled back the
+  create-only R16 install; no existing Argos task/process, source image, wafer,
+  provider activation, hold, training, XML, or production state was changed.
+
 ### Casting a parsed JSON object to string before `ConvertTo-Json` destroys the predecessor bytes
 
 - Signature: an exact predecessor rehearsal is refused because the fixture config hash differs from the pinned installed config even though its source evidence contains the correct parsed object.
@@ -10404,6 +10430,28 @@ than rerunning it.
   `return[` and reject it before execution. Exercise every helper function in
   the exact local rehearsal, not only the script parser and top-level
   preflight branch.
+
+## 2026-08-29 — Manually reproduced regression manifests can corrupt pinned hashes and paths
+
+- Failure signature: the signed R19 backside-notch actual-wafer regression
+  stopped before image decode on its first case with `DF source changed`.
+  Exact comparison to the frozen R18 case manifest proved the R19 DF SHA-256
+  was truncated from 64 to 55 characters; two later source paths had also been
+  silently changed while reproducing the JSON. The detector never started and
+  no test output was created.
+- Cause: a frozen regression case manifest was manually retyped instead of
+  mechanically cloned and compared. JSON parsing, PowerShell parsing, package
+  signature validation, and source-file existence do not prove that copied
+  hash/path fields equal the predecessor.
+- Mandatory preflight: mechanically compare every successor case to its frozen
+  predecessor. Require exact equality for identity, BF/DF paths, BF/DF hashes,
+  and expected state; permit only explicitly declared output-root changes.
+  Independently require every SHA-256 field to match `^[A-F0-9]{64}$` before
+  signing. Any difference must be emitted as a bounded machine-readable row
+  and is a hard stop.
+- Recovery: R19 is signed-terminal failed, withdrawn, no-retry, and non-parent.
+  Pin one read-only post-failure rollback observation, then use a fresh
+  namespace whose case manifest is mechanically derived from exact R18 bytes.
 - Recovery: correct only the unfrozen local harness token, rerun harness
   safety and the exact success/injected-failure rehearsal, and preserve the
   abandoned create-new fixture under a clearly failed local-evidence name.

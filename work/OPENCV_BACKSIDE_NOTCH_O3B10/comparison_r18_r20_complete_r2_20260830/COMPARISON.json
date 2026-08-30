@@ -1,0 +1,364 @@
+{
+  "schema": "argos_o3b10_r14_r15_backside_corpus_comparison_v1",
+  "state": "COMPLETE_O3B10_R14_R15_BACKSIDE_CORPUS_COMPARISON",
+  "createdUtc": "2026-08-30T00:04:26.3400433+00:00",
+  "inputs": {
+    "r14": {
+      "path": "C:\\R20T1D\\data\\JBOD_KLARF_EXPORT\\_ArgosReview\\C15RUN3\\RESULTS.csv",
+      "sha256": "6DC96A70DAB8EFA6D25208E2192F648168B90EDBF519F4B3BAC76FCE9099847A",
+      "rows": 953
+    },
+    "r15": {
+      "path": "C:\\R20T1D\\data\\JBOD_KLARF_EXPORT\\_ArgosReview\\C15RUN4\\RESULTS.csv",
+      "sha256": "B74B86ED07D9632B61A5B4BB02B61597AC364E132645648202EA92F3138D5DE5",
+      "rows": 953
+    }
+  },
+  "identityCounts": {
+    "common": 953,
+    "onlyR14": 0,
+    "onlyR15": 0
+  },
+  "outcomeCounts": {
+    "samePass": 908,
+    "rescued": 23,
+    "regressed": 0,
+    "sameHold": 22,
+    "changedHold": 0
+  },
+  "transitionMatrix": [
+    {
+      "r14State": "HOLD_BACK_NOTCH_CHANNEL_ANALYSIS_FAILED",
+      "r15State": "HOLD_BACK_NOTCH_CHANNEL_ANALYSIS_FAILED",
+      "count": 1
+    },
+    {
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "count": 23
+    },
+    {
+      "r14State": "HOLD_BACK_NOTCH_NOT_FOUND",
+      "r15State": "HOLD_BACK_NOTCH_NOT_FOUND",
+      "count": 21
+    },
+    {
+      "r14State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "count": 908
+    }
+  ],
+  "samePassAngleDeltaDegrees": {
+    "count": 908,
+    "median": 0.0,
+    "p90": 0.0,
+    "p95": 0.0,
+    "p99": 0.0,
+    "maximum": 0.0
+  },
+  "regressions": [],
+  "rescued": [
+    {
+      "identity": "BackSide_BowComp\\Lot_62625-956\\62625-956_20260729122701\\Slot23|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "89.92672484494162",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.05344968988316623",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\BackSide_BowComp_Lot_62625-956_62625-956_2_b2682b0944\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\BackSide_BowComp_Lot_62625-956_62625-956_2_b2682b0944\\back_notch"
+    },
+    {
+      "identity": "BackSide_BowComp\\Lot_62625-957\\62625-957_20260729124737\\Slot25|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "89.68660945424297",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.02678109151409558",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\BackSide_BowComp_Lot_62625-957_62625-957_2_ae16b27075\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\BackSide_BowComp_Lot_62625-957_62625-957_2_ae16b27075\\back_notch"
+    },
+    {
+      "identity": "BackSide_BowComp\\Lot_62627-140\\62627-140_20260802120300\\Slot23|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "90.01260486162681",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.02520972325359594",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\BackSide_BowComp_Lot_62627-140_62627-140_2_19d4e66b81\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\BackSide_BowComp_Lot_62627-140_62627-140_2_19d4e66b81\\back_notch"
+    },
+    {
+      "identity": "BackSide_BowComp\\Lot_62627-174\\62627-174_20260730160310\\Slot22|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "89.71245465075238",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.024909301504692394",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\BackSide_BowComp_Lot_62627-174_62627-174_2_36365996e5\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\BackSide_BowComp_Lot_62627-174_62627-174_2_36365996e5\\back_notch"
+    },
+    {
+      "identity": "BackSide_BowComp\\Lot_62629-319\\62629-319_20260729144528\\Slot23|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "90.12370384530139",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.04740769060282446",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\BackSide_BowComp_Lot_62629-319_62629-319_2_ab8337d613\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\BackSide_BowComp_Lot_62629-319_62629-319_2_ab8337d613\\back_notch"
+    },
+    {
+      "identity": "BackSide_BowComp\\Lot_62629-319\\62629-319_20260729173821\\Slot20|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "89.80757715042671",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.015154300853367886",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\BackSide_BowComp_Lot_62629-319_62629-319_2_2290a53fd9\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\BackSide_BowComp_Lot_62629-319_62629-319_2_2290a53fd9\\back_notch"
+    },
+    {
+      "identity": "BackSide_BowComp\\Lot_62629-327\\62629-327_20260730215320\\Slot20|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "89.70520041478774",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.010400829575530679",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\BackSide_BowComp_Lot_62629-327_62629-327_2_94bbb46e54\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\BackSide_BowComp_Lot_62629-327_62629-327_2_94bbb46e54\\back_notch"
+    },
+    {
+      "identity": "BackSide_BowComp\\Lot_62630-456\\62630-456_20260730164345\\Slot24|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "90.08604029278148",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.027919414437093337",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\BackSide_BowComp_Lot_62630-456_62630-456_2_b81f6b97a8\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\BackSide_BowComp_Lot_62630-456_62630-456_2_b81f6b97a8\\back_notch"
+    },
+    {
+      "identity": "BackSide_BowComp\\Lot_62630-456\\62630-456_20260730164345\\Slot25|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "90.07200386012634",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.05599227974732912",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\BackSide_BowComp_Lot_62630-456_62630-456_2_3c8d0d35f5\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\BackSide_BowComp_Lot_62630-456_62630-456_2_3c8d0d35f5\\back_notch"
+    },
+    {
+      "identity": "BackSide_BowComp\\Lot_62631-535\\62631-535_20260731134801\\Slot02|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "90.0065384322861",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.013076864572269642",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\BackSide_BowComp_Lot_62631-535_62631-535_2_dbb6064756\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\BackSide_BowComp_Lot_62631-535_62631-535_2_dbb6064756\\back_notch"
+    },
+    {
+      "identity": "PatternedFront\\Lot_62629-419_NotchBad_Hotspot\\62629-419_20260824112405\\Slot24|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "89.71024174598848",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.020483491976960977",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\PatternedFront_Lot_62629-419_NotchBad_Hots_269f3fa92a\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\PatternedFront_Lot_62629-419_NotchBad_Hots_269f3fa92a\\back_notch"
+    },
+    {
+      "identity": "PatternedFront\\Lot_62629-419_NotchBad_Hotspot\\62629-419_20260824112405\\Slot25|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "89.77486894435191",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.050262111296177636",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\PatternedFront_Lot_62629-419_NotchBad_Hots_4de07f2486\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\PatternedFront_Lot_62629-419_NotchBad_Hots_4de07f2486\\back_notch"
+    },
+    {
+      "identity": "PatternedFront\\Lot_62631-535\\62631-535_20260810121122\\Slot16|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "90.0054551025624",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.01091020512473051",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\PatternedFront_Lot_62631-535_62631-535_202_0eb696a2f1\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\PatternedFront_Lot_62631-535_62631-535_202_0eb696a2f1\\back_notch"
+    },
+    {
+      "identity": "PatternedFront\\Lot_62631-535\\62631-535_20260810121122\\Slot17|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "90.02050972755922",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.041019455118430415",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\PatternedFront_Lot_62631-535_62631-535_202_46d2fb83b3\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\PatternedFront_Lot_62631-535_62631-535_202_46d2fb83b3\\back_notch"
+    },
+    {
+      "identity": "PatternedFront\\Lot_62631-535\\62631-535_20260817034308\\Slot01|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "89.99488871284649",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.010222574307078958",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\PatternedFront_Lot_62631-535_62631-535_202_b8c43af80d\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\PatternedFront_Lot_62631-535_62631-535_202_b8c43af80d\\back_notch"
+    },
+    {
+      "identity": "PatternedFront\\Lot_62631-535\\62631-535_20260817034308\\Slot05|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "90.00789765970518",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.015795319410329967",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\PatternedFront_Lot_62631-535_62631-535_202_70d8c3de41\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\PatternedFront_Lot_62631-535_62631-535_202_70d8c3de41\\back_notch"
+    },
+    {
+      "identity": "PatternedFront\\Lot_62631-535\\62631-535_20260817034308\\Slot06|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "90.01383655227369",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.02767310454737526",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\PatternedFront_Lot_62631-535_62631-535_202_04c945f535\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\PatternedFront_Lot_62631-535_62631-535_202_04c945f535\\back_notch"
+    },
+    {
+      "identity": "PatternedFront\\Lot_62631-535\\62631-535_20260817034308\\Slot07|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "90.00306889903209",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.006137798064230537",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\PatternedFront_Lot_62631-535_62631-535_202_30e936ebed\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\PatternedFront_Lot_62631-535_62631-535_202_30e936ebed\\back_notch"
+    },
+    {
+      "identity": "PatternedFront\\Lot_62631-535\\62631-535_20260817034308\\Slot09|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "90.00596562781419",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.011931255628411463",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\PatternedFront_Lot_62631-535_62631-535_202_97840a9572\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\PatternedFront_Lot_62631-535_62631-535_202_97840a9572\\back_notch"
+    },
+    {
+      "identity": "PatternedFront\\Lot_62631-535\\62631-535_20260817034308\\Slot10|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "90.22077845309788",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.041556906195779675",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\PatternedFront_Lot_62631-535_62631-535_202_1db28e6b79\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\PatternedFront_Lot_62631-535_62631-535_202_1db28e6b79\\back_notch"
+    },
+    {
+      "identity": "PatternedFront\\Lot_62631-536\\62631-536_20260817043239\\Slot02|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "90.00778390468292",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.015567809365791163",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\PatternedFront_Lot_62631-536_62631-536_202_f39152b4d3\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\PatternedFront_Lot_62631-536_62631-536_202_f39152b4d3\\back_notch"
+    },
+    {
+      "identity": "PST_BREAK_DIELECTRIC\\Lot_62624-866_20260715121335\\62624-866_20260715121335\\Slot06|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "89.81299649397312",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.02599298794618221",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\PST_BREAK_DIELECTRIC_Lot_62624-866_2026071_659e1f0890\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\PST_BREAK_DIELECTRIC_Lot_62624-866_2026071_659e1f0890\\back_notch"
+    },
+    {
+      "identity": "UnpatternedFront\\Lot_62635-944\\62635-944_20260829105914\\Slot02|BACK",
+      "classification": "RESCUED",
+      "r14State": "HOLD_BACK_NOTCH_MULTIPLE_BF_DF_MATCHES",
+      "r15State": "PASS_REVIEW_ONLY_UNIQUE_BACK_BF_DF_NOTCH",
+      "r14AngleDegrees": "",
+      "r15AngleDegrees": "89.79058162273975",
+      "angleDeltaDegrees": "",
+      "r14BfDfDifferenceDegrees": "",
+      "r15BfDfDifferenceDegrees": "0.018836754520492605",
+      "r14DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN3\\i\\UnpatternedFront_Lot_62635-944_62635-944_2_563d72639b\\back_notch",
+      "r15DiagnosticRoot": "D:\\KLARFExport\\_ArgosReview\\C15RUN4\\i\\UnpatternedFront_Lot_62635-944_62635-944_2_563d72639b\\back_notch"
+    }
+  ],
+  "newR15": [],
+  "sourceMutationPerformed": false,
+  "reviewOnly": true
+}

@@ -1,0 +1,17 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 100663296,
+  "entryPoint": "payload/Invoke-O3B10R8Regression.ps1",
+  "changes": [
+    {
+      "source": "payload/Detect-BacksideNotchOpenCvR8.py",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_BacksideNotchDevelopment_O3B10R8.py",
+      "approvedPredecessorSha256": ["64970C7E12DC80AA6934D41E6328FF964E44ACF81AAD75A8A6CDA2BB6FB90096"],
+      "installedSha256": "64970C7E12DC80AA6934D41E6328FF964E44ACF81AAD75A8A6CDA2BB6FB90096",
+      "allowCreate": true
+    }
+  ],
+  "allowedTaskActions": [],
+  "rehearsal": { "requiredState": "PASS_O3B10_R8_REGRESSION_EXECUTED" }
+}

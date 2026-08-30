@@ -1,0 +1,78 @@
+{
+  "schema": "argos_ocv03_o3b10_r11_backside_corpus25_result_v1",
+  "createdUtc": "2026-08-29T14:47:05.2972486Z",
+  "state": "PENDING_GATE_ONE_PERIMETER_TRACE_HOLD",
+  "disposition": "PENDING_GATE",
+  "detector": {
+    "path": "work/OPENCV_BACKSIDE_NOTCH_O3B10/Detect-BacksideNotchOpenCvR11.py",
+    "sha256": "E56C185E65E1CAECC6604519082F039279F0A12DA9ED1318AD38DBC5413C3B4B"
+  },
+  "configuration": {
+    "path": "work/OPENCV_BACKSIDE_NOTCH_O3B10/BACKSIDE_NOTCH_CONFIG_R2.json",
+    "sha256": "38F9DFD4724EF12674FB27408539BF8525173B91DF9066573829DC02F6D20184"
+  },
+  "runner": {
+    "path": "work/OPENCV_BACKSIDE_NOTCH_O3B10/Run-OpenCvKlarfCorpusR2.py",
+    "sha256": "20102DD8502EEC798BE1199B1B074922D24A8AE8343A180762EA1CD78BB8EFF6",
+    "side": "BACK",
+    "maximumPairs": 25
+  },
+  "launch": {
+    "requestId": "REQ_20260829T143036230Z_599D1B6EA133",
+    "requestZipSha256": "A65DABA1724A43C162BDD5F8FB2DCF30BE0BFE71C0A4AF0AE46103EE6A8E13A0",
+    "responseId": "R_34E2EA0108F4_20260829143012051_6ec6a180",
+    "responseZipSha256": "73563DE870F213BF542CCB879FA9132ECB7568D5664DC0645DA7FD91BA84A440",
+    "signedResponseState": "PASS_MAINTENANCE_PATCH",
+    "workerPid": 28768,
+    "workerCreationTimeUtc": "2026-08-29T14:30:08.9797704Z",
+    "outputRoot": "D:/KLARFExport/_ArgosReview/C11RUN1",
+    "existingProcessActionPerformed": false,
+    "sourceImagesMutated": false
+  },
+  "summary": {
+    "sha256": "EB8BB9B8FDA3A8BCD246F50178AA1EB0E7693C208062C142E788D7B3C26CBD4F",
+    "signedPullResponseId": "R_40049BF4472B_20260829143337413_e4a664f1",
+    "signedPullResponseZipSha256": "C0C23BA43976B9BB40F8824DBE1D6B43D84811A9BF7272BEDE9EA613B5B9487E",
+    "complete": true,
+    "pairCount": 25,
+    "sourceProblemCount": 0,
+    "uniqueBackBfDfNotchPassCount": 24,
+    "holdCount": 1
+  },
+  "heldCase": {
+    "identity": "BackSide_BowComp/Lot_62625-956/62625-956_20260729122701/Slot22|BACK",
+    "reasonCode": "BACK_CHANNEL_ANALYSIS_FAILED",
+    "physicalNotchVisibleAtApproximatelySixOClockInBothReviewImages": true,
+    "notchAbsenceDisproved": true,
+    "patternInterferenceObserved": false,
+    "bf": {
+      "inlierFraction": 0.9238694905552376,
+      "angularCoverageFraction": 0.9861111111111112,
+      "rmsResidualPx": 10.939014613320946,
+      "maximumAllowedRmsResidualPx": 4.0,
+      "qualificationFailure": "FIT_RMS_RESIDUAL"
+    },
+    "df": {
+      "inlierFraction": 0.9280517380759903,
+      "angularCoverageFraction": 0.8472222222222222,
+      "minimumRequiredAngularCoverageFraction": 0.85,
+      "rmsResidualPx": 1.3913981399428292,
+      "qualificationFailure": "ANGULAR_COVERAGE"
+    },
+    "diagnosticSuccessor": {
+      "path": "work/OPENCV_BACKSIDE_NOTCH_O3B10/Detect-BacksideNotchOpenCvR12.py",
+      "sha256": "D3D53827AEDA01658188CDC1ED3FC34ADC5BF73B427227FE00D55563B756B8A6",
+      "algorithmChanged": false,
+      "thresholdChanged": false,
+      "diagnosticRecordingOnly": true,
+      "signedResponseId": "R_0C5161DE8424_20260829144233692_a76ae03e",
+      "signedResponseZipSha256": "53E607AB7B0239DF83C5C24B6D855FF79232E8B798DBCC820207B771EC7C676C"
+    }
+  },
+  "nextAction": "Analyze and correct BF outer-edge-family tracing on Slot22 without relaxing global qualification or manufactured-notch morphology thresholds; retain DF coverage shortfall as explicit evidence. Regress the correction against the three visually verified controls and a fresh independent backside cohort before corpus fanout.",
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

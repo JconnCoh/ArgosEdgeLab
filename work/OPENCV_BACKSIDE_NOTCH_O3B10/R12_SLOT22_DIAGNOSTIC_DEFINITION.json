@@ -1,0 +1,17 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Invoke-O3B10R12Slot22Diagnostic.ps1",
+  "changes": [
+    {
+      "source": "payload/Detect-BacksideNotchOpenCvR12.py",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_BacksideNotchDevelopment_O3B10R12.py",
+      "approvedPredecessorSha256": ["D3D53827AEDA01658188CDC1ED3FC34ADC5BF73B427227FE00D55563B756B8A6"],
+      "installedSha256": "D3D53827AEDA01658188CDC1ED3FC34ADC5BF73B427227FE00D55563B756B8A6",
+      "allowCreate": true
+    }
+  ],
+  "allowedTaskActions": [],
+  "rehearsal": {"requiredState": "PASS_O3B10_R12_SLOT22_DIAGNOSTIC_EXECUTED"}
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "argos_o3b10_r20_terminal_corpus_analysis_v1",
+  "state": "PASS_O3B10_R20_TERMINAL_CORPUS_REGRESSION_ANALYSIS",
+  "createdLocal": "2026-08-29T19:20:00-05:00",
+  "disposition": "APPROVED_BASELINE",
+  "authority": "REVIEW_ONLY",
+  "launchRequestId": "REQ_20260829T222021984Z_9E00A678C4B4",
+  "outputRoot": "D:/KLARFExport/_ArgosReview/C15RUN4",
+  "terminalEvidence": {
+    "summaryPullRequestId": "REQ_20260829T235903099Z_3DEA5A0CFBEC",
+    "summaryPullResponseId": "R_ACFCC0B16850_20260829235940385_765b5aca",
+    "summaryPullResponseZipSha256": "B01EC9E716925052FF2C3D12FC853DA146585EB2F87A37B749D10EFBA1ECCE06",
+    "summaryJsonSha256": "4852D80B4D1A45063154DE74B538E9279EAAB8B18B71396343F136B84FFB8246",
+    "resultsCsvSha256": "B74B86ED07D9632B61A5B4BB02B61597AC364E132645648202EA92F3138D5DE5",
+    "failuresJsonSha256": "01025DACD167930D9C88D1AA364D4CE3AAED27D4819CEC41FCA0864FEF127B71",
+    "pairCount": 953,
+    "passCount": 931,
+    "holdCount": 22,
+    "notFoundHoldCount": 21,
+    "channelAnalysisHoldCount": 1,
+    "sourceProblemCount": 0
+  },
+  "terminalTablesPull": {
+    "requestId": "REQ_20260830T000151511Z_E475DF8723B6",
+    "responseId": "R_40BF5D5CB7E8_20260830000226652_ad1a186f",
+    "responseZipSha256": "F082AD4F0BE18FEE831ACDD0459A555055B2FBC326621656DBBF0643F74EB866",
+    "definitionSha256": "4899C379696CF1C8C4E283BD8763E5189C0719D8C69095E551EBF989CA505C33"
+  },
+  "comparisons": {
+    "r15ToR20": {
+      "path": "work/OPENCV_BACKSIDE_NOTCH_O3B10/comparison_r15_r20_complete_r2_20260830/COMPARISON.json",
+      "sha256": "751C042D3E05EDC0CA3E9990B8F0983A5BB70E85F2F87085E13C77AB27710FF2",
+      "commonIdentityCount": 953,
+      "missingIdentityCount": 0,
+      "newIdentityCount": 0,
+      "samePassCount": 898,
+      "rescuedCount": 33,
+      "regressedCount": 0,
+      "sameHoldCount": 22,
+      "changedHoldCount": 0,
+      "sharedPassMaximumAngleDeltaDegrees": 0.0
+    },
+    "r18ToR20": {
+      "path": "work/OPENCV_BACKSIDE_NOTCH_O3B10/comparison_r18_r20_complete_r2_20260830/COMPARISON.json",
+      "sha256": "021ED6D99DF3FB2227345D61502E1612FFD2C8028C6C977ADA7452DC6883699F",
+      "commonIdentityCount": 953,
+      "missingIdentityCount": 0,
+      "newIdentityCount": 0,
+      "samePassCount": 908,
+      "rescuedCount": 23,
+      "regressedCount": 0,
+      "sameHoldCount": 22,
+      "changedHoldCount": 0,
+      "sharedPassMaximumAngleDeltaDegrees": 0.0
+    }
+  },
+  "holdEvidence": {
+    "requestId": "REQ_20260830T001125397Z_5C302488FE6E",
+    "responseId": "R_FC0C44141459_20260830001144274_8e9255a6",
+    "responseZipSha256": "E80BFD54824BB2272A0BCD629E62090F1C5F1B24A388B8F0E049F99227C3F06C",
+    "definitionSha256": "88F9429B8F90E77B13584130C7921D907FC49EAF7F9C80E89B8FB1EB5C12D56C",
+    "fileCount": 66,
+    "resultJsonCount": 22,
+    "bfReviewCount": 22,
+    "dfReviewCount": 22,
+    "visuallyInspectedReviewRasterCount": 44,
+    "allHoldIdentitiesInspected": true,
+    "regressionCountRequiringInspection": 0,
+    "notFoundEvidenceConclusion": "Twenty-one identities produced no unique eligible cross-channel BF/DF pair. Their actual paired review rasters were inspected before classification; visible fixture contacts, edge texture, or unconfirmed edge irregularities were conservatively rejected rather than selected as a notch.",
+    "channelAnalysisEvidenceConclusion": "PST_BRKFULLMETAL/Lot_LotIDStringNotSet/ProcessJob11/Slot25|BACK retained the only channel-analysis hold because its DF wafer trace failed the radial-profile qualification. Its BF/DF review rasters were inspected and no notch result was inferred from the failed channel.",
+    "heldIdentityFamilies": {
+      "Coherent_W2W": 13,
+      "PST_BREAK_RESIST": 1,
+      "PST_BRKFULLMETAL": 2,
+      "PST_BRKFULLMETAL_BOWCOMP": 2,
+      "PST_BRK_PATTERNED_BOWCOMP": 4
+    }
+  },
+  "conclusions": {
+    "allIdentitiesMechanicallyCompared": true,
+    "allStatesMechanicallyCompared": true,
+    "allSharedPassAnglesMechanicallyCompared": true,
+    "r20RegressionCount": 0,
+    "r20ImprovesR18PassCountBy": 23,
+    "r20ImprovesR15PassCountBy": 33,
+    "r20BacksideReviewOnlyBaselineAccepted": true,
+    "remainingHoldsRetained": true,
+    "detectorTuningAuthorizedFromHolds": false
+  },
+  "sourceMutationPerformed": false,
+  "sourceDeletionPerformed": false,
+  "existingTaskOrProcessActionPerformed": false,
+  "protectedProcessorTouched": false,
+  "thresholdOrAlgorithmChanged": false,
+  "holdsCleared": false,
+  "backsideConsumed": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

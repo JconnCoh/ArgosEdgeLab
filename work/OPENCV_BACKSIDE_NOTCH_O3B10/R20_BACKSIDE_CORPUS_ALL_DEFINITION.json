@@ -1,0 +1,12 @@
+{
+  "targetRole":"JBOD",
+  "jobClass":"MAINTENANCE_PATCH",
+  "maxResultBytes":1048576,
+  "entryPoint":"payload/Invoke-O3B10R20BacksideCorpusAll.ps1",
+  "changes":[
+    {"source":"payload/Detect-BacksideNotchOpenCvR20.py","destination":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_BacksideNotchDevelopment_O3B10R20.py","approvedPredecessorSha256":["B10AC6F0E0500AC3D14713232FCEDC5C209FBACF56AD7826AF87443C2587C46C"],"installedSha256":"B10AC6F0E0500AC3D14713232FCEDC5C209FBACF56AD7826AF87443C2587C46C","allowCreate":true},
+    {"source":"payload/BACKSIDE_NOTCH_CONFIG_R8.json","destination":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/BACKSIDE_NOTCH_CONFIG_R8.json","approvedPredecessorSha256":["CEECD910C2EE7CFE0DA1486B72DEC5F59CE3F66C4219CB55BB4C10263D436E2A"],"installedSha256":"CEECD910C2EE7CFE0DA1486B72DEC5F59CE3F66C4219CB55BB4C10263D436E2A","allowCreate":true}
+  ],
+  "allowedTaskActions":[],
+  "rehearsal":{"requiredState":"PASS_O3B10_R20_BACKSIDE_CORPUS_ALL_LAUNCHED"}
+}

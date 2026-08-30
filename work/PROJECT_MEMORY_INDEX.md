@@ -4,6 +4,26 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 autonomous detector sequence rollover — 2026-08-30
+
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_AUTONOMOUS_DETECTOR_SEQUENCE_ROLLOVER_20260830.md`,
+  SHA-256
+  `7D4FB96F6A84DD5CE51C62F5B01B4921D922C467311383F77F12955417B3C275`.
+- Autonomous order: backside notch/edge, frontside notch/edge, complete scribe
+  corpus, combined regression, then fiducials.
+- Immediate scope is detector-only backside OpenCV work: local channel-derived
+  holder exclusion before candidate formation plus Coherent-DF and BowComp-BF
+  appearance correction. Regress the frozen ten controls, all 22 holds, and
+  new sole-holder/notch-adjacent controls before a full corpus.
+- No heartbeat or recurring automation. Use the recorded detector-results
+  route once; a route failure is reported without retry or infrastructure
+  debugging. Human-only ambiguity becomes an explicit hold and does not stop
+  the remaining corpus.
+- R20 remains valid regression evidence but is not an activation/publication
+  parent. All review-only, training/XML/production, source, processor,
+  task/process, withdrawal, no-retry, and hold restrictions remain.
+
 ## Durable GUI requirement — held inspections remain visible
 
 - Inspection-held wafers must remain visible in the dashboard with the rest

@@ -1,0 +1,19 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v2","revision":"O3B10_R19_ACTUAL_WAFER_REGRESSION_20260829","createdUtc":"2026-08-29T21:41:00Z","state":"PASS_PREACTION_CONTRACT","actionType":"ONE_SIGNED_REVIEW_ONLY_R19_ACTUAL_WAFER_REGRESSION_WITH_TEN_OWNED_CHILD_PROCESSES",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json","historyAuditSha256":"D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies":[
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/R19_REGRESSION_DEFINITION.json","sha256":"075ADAB0FCA6C47D40442448A20ACB08EA5924CD70D2FAD93F34E3796922A4BD"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/Invoke-O3B10R19Regression.ps1","sha256":"6582B7ABB517F976CFC6D0E91963473D7F9E360975E4480D23AB9D426663728A"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/R19_REGRESSION_CASES.json","sha256":"9FCE3CC7274FC54BB188427D24C129FC89E6F7222825468B9E464D91F73551C7"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/Detect-BacksideNotchOpenCvR19.py","sha256":"FD6ED2A8C52584490EAEBA6836581A15BAD9479732746039F14E4C175A9004B8"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/BACKSIDE_NOTCH_CONFIG_R7.json","sha256":"9C40E9FE99735B8E49BC3713204E0A301A82D68D3A80EEA37894F66EB284DE03"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/R19_REGRESSION_CLONE_LITERAL_GATE.json","sha256":"1B751D635AE0EF42C3263004133C4B6C9A714A3C29750A84DC4AED353592F3DD"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/Detect-BacksideNotchOpenCvR18.py","sha256":"DA1305841E8592FCD8AC5C6A4C5981A4BEC7AC741BA75BC47CAE3B16F5DF372A"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/Detect-BacksideNotchOpenCvR17.py","sha256":"B480B40435EE80527B00074FC4E7A69F423033D5AF02DA659E9193145B6CD713"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/Detect-BacksideNotchOpenCvR15.py","sha256":"F16A024EEA34F01502BD62B9C750FD6AA95D6BD75D9F8A03D07FBF7B2A0EB64C"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/New-SignedPortalPackage.ps1","sha256":"8AF7AF26B6899CB6475735FEE8AB6E5A29231AAED8EDA898F1E7F4B04A2A403F"}
+  ],
+  "controls":{"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence":{"path":"work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json","sha256":"17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":[]},"reviewOnly":true,"productionRoutingEnabled":false
+}

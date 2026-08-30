@@ -1,0 +1,17 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Invoke-O3B10R11BacksideCorpus25.ps1",
+  "changes": [
+    {
+      "source": "payload/Run-OpenCvKlarfCorpusR2.py",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR2/Run-OpenCvKlarfCorpusR2.py",
+      "approvedPredecessorSha256": ["20102DD8502EEC798BE1199B1B074922D24A8AE8343A180762EA1CD78BB8EFF6"],
+      "installedSha256": "20102DD8502EEC798BE1199B1B074922D24A8AE8343A180762EA1CD78BB8EFF6",
+      "allowCreate": true
+    }
+  ],
+  "allowedTaskActions": [],
+  "rehearsal": {"requiredState": "PASS_O3B10_R11_BACKSIDE_CORPUS25_LAUNCHED"}
+}

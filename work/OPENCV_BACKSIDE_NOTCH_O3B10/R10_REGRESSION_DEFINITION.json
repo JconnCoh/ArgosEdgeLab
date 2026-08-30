@@ -1,0 +1,17 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 100663296,
+  "entryPoint": "payload/Invoke-O3B10R10Regression.ps1",
+  "changes": [
+    {
+      "source": "payload/BACKSIDE_NOTCH_CONFIG_R2.json",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/BACKSIDE_NOTCH_CONFIG_R2.json",
+      "approvedPredecessorSha256": ["38F9DFD4724EF12674FB27408539BF8525173B91DF9066573829DC02F6D20184"],
+      "installedSha256": "38F9DFD4724EF12674FB27408539BF8525173B91DF9066573829DC02F6D20184",
+      "allowCreate": true
+    }
+  ],
+  "allowedTaskActions": [],
+  "rehearsal": { "requiredState": "PASS_O3B10_R10_REGRESSION_EXECUTED" }
+}

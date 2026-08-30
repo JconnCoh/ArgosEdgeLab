@@ -1,0 +1,21 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Confirm-O3B10FrontDependency.ps1",
+  "changes": [
+    {
+      "source": "payload/NativeFrontsideWaferPoseOpenCvV2R5.py",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/NativeFrontsideWaferPoseOpenCvV2R5.py",
+      "approvedPredecessorSha256": [
+        "47F70976D0F3AE0461166D7D3438FE7B11FFE71E8257FD918554F7909E0B9E24"
+      ],
+      "installedSha256": "47F70976D0F3AE0461166D7D3438FE7B11FFE71E8257FD918554F7909E0B9E24",
+      "allowCreate": true
+    }
+  ],
+  "allowedTaskActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_O3B10_FRONT_DEPENDENCY_INSTALLED"
+  }
+}

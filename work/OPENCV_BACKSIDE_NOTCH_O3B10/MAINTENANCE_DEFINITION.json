@@ -1,0 +1,30 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 16777216,
+  "entryPoint": "payload/Invoke-O3B10PortalEndpoint.ps1",
+  "changes": [
+    {
+      "source": "payload/Detect-BacksideNotchOpenCv.py",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_BacksideNotchDevelopment_O3B10R5.py",
+      "approvedPredecessorSha256": [
+        "147E67CB4048653769BD9906251D1B670B6803BE28D592D8368717C4ECCFEA0C"
+      ],
+      "installedSha256": "147E67CB4048653769BD9906251D1B670B6803BE28D592D8368717C4ECCFEA0C",
+      "allowCreate": true
+    },
+    {
+      "source": "payload/NativeFrontsideWaferPoseOpenCvV2.py",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/NativeFrontsideWaferPoseOpenCvV2_O3B10R4.py",
+      "approvedPredecessorSha256": [
+        "304219822CC3C7CC8E0ED81BD89E230529057E47E0E7DA4C95FE041F3AF69FAC"
+      ],
+      "installedSha256": "304219822CC3C7CC8E0ED81BD89E230529057E47E0E7DA4C95FE041F3AF69FAC",
+      "allowCreate": true
+    }
+  ],
+  "allowedTaskActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_O3B10_BACKSIDE_CHIPOUT_DETECTOR_EXECUTED"
+  }
+}

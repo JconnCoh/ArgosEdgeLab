@@ -1,0 +1,100 @@
+{
+  "schema": "argos_opencv_backside_notch_holder_channel_gap_analysis_v1",
+  "revision": "O3B10_R20_HOLDER_CHANNEL_GAP_ANALYSIS_20260830",
+  "state": "PENDING_HOLDER_SUPPRESSION_AND_CHANNEL_APPEARANCE_REGRESSION_GATE",
+  "disposition": "PENDING_GATE",
+  "scope": "READ_ONLY_FILE_BACKED_ANALYSIS_OF_COMPLETED_R20_CORPUS",
+  "terminalCorpus": {
+    "pairCount": 953,
+    "passCount": 931,
+    "notFoundHoldCount": 21,
+    "channelAnalysisHoldCount": 1,
+    "sourceProblemCount": 0,
+    "summarySha256": "4852D80B4D1A45063154DE74B538E9279EAAB8B18B71396343F136B84FFB8246",
+    "resultsSha256": "B74B86ED07D9632B61A5B4BB02B61597AC364E132645648202EA92F3138D5DE5",
+    "failuresSha256": "01025DACD167930D9C88D1AA364D4CE3AAED27D4819CEC41FCA0864FEF127B71"
+  },
+  "comparisonScope": {
+    "r20VersusR18RegressionCount": 0,
+    "r20VersusR15RegressionCount": 0,
+    "sharedPassMaximumAngleDeltaDegrees": 0.0,
+    "provenMeaning": "R20 DID NOT LOSE A PASS RELATIVE TO R18 OR R15",
+    "notProven": [
+      "EVERY R20 PASS IS THE PHYSICAL NOTCH",
+      "A SOLE PAIRED HOLDER CANNOT PASS",
+      "THE 22 HOLDS ARE IRREDUCIBLE"
+    ]
+  },
+  "holdEvidence": {
+    "reviewRastersInspected": 44,
+    "resultJsonInspected": 22,
+    "coherentChannelAsymmetry": {
+      "count": 13,
+      "finding": "BF FORMS ONE MORPHOLOGY-ELIGIBLE CANDIDATE AT THE SAME ANGLE AS SAME-ACQUISITION PASS PEERS; DF HAS A CANDIDATE WITHIN 0.14 TO 1.47 DEGREES BUT REJECTS ITS MORPHOLOGY",
+      "causeClass": "DF_NOTCH_APPEARANCE_OR_PROFILE_FORMATION_GAP"
+    },
+    "bowCompChannelAsymmetry": {
+      "count": 6,
+      "finding": "DF FORMS A MORPHOLOGY-ELIGIBLE CANDIDATE WITHIN 0.01 TO 0.69 DEGREES OF SAME-ACQUISITION PASS PEERS; BF FORMS NO ELIGIBLE CANDIDATE AND ITS NEAREST RAW RESPONSE IS 20.10 TO 25.60 DEGREES AWAY",
+      "causeClass": "BF_NOTCH_APPEARANCE_OR_PROFILE_FORMATION_GAP"
+    },
+    "fullMetalSlot19": {
+      "count": 1,
+      "finding": "NEITHER CHANNEL HAS AN ELIGIBLE CANDIDATE; DF HAS A RAW CANDIDATE 1.51 DEGREES FROM THE SAME-ACQUISITION PEER MEDIAN",
+      "causeClass": "BOTH_CHANNEL_MORPHOLOGY_GAP"
+    },
+    "breakResistSlot25": {
+      "count": 1,
+      "finding": "ONE BF AND TWO DF ELIGIBLE CANDIDATES DO NOT FORM A UNIQUE PAIR; NO SAME-ACQUISITION PASS PEER EXISTS",
+      "causeClass": "UNASSIGNED_PENDING_IMAGE_FIRST_LOCAL_DIAGNOSIS"
+    },
+    "fullMetalSlot25": {
+      "count": 1,
+      "finding": "DF RADIAL QUALIFICATION FAILED BEFORE CANDIDATE PAIRING",
+      "causeClass": "DF_RADIAL_QUALIFICATION_GAP"
+    }
+  },
+  "holderEvidence": {
+    "bfRawCandidateCountAcrossNotFoundHolds": 117,
+    "dfRawCandidateCountAcrossNotFoundHolds": 160,
+    "recurringBfFiveDegreeBins": {
+      "225": 20,
+      "70": 18,
+      "295": 18,
+      "135": 17,
+      "5": 16
+    },
+    "finding": "THE SAME VISIBLE HOLDER CONTACTS RECUR THROUGH THE HELD BF/DF PERIMETERS AND DOMINATE RAW CANDIDATE POPULATIONS",
+    "currentR20Gap": "R20 CLASSIFIES EXTERIOR FIXTURE EVIDENCE ONLY AFTER BF/DF PAIRING AND REMOVES FIXTURE-LIKE PAIRS ONLY WHEN MORE THAN ONE PAIRED CANDIDATE EXISTS AND A NON-FIXTURE ALTERNATIVE IS AVAILABLE",
+    "soleHolderRisk": "A SOLE PAIRED HOLDER-LIKE CANDIDATE IS NOT SUPPRESSED BY THE CURRENT R20 BRANCH",
+    "sourceLocation": "work/OPENCV_BACKSIDE_NOTCH_O3B10/Detect-BacksideNotchOpenCvR20.py:52"
+  },
+  "qualifiedPriorMechanism": {
+    "sourcePath": "work/BARE_SURFACE_INSPECTION_REVIEW/src/NativePhysicalEligibilityReview.cs",
+    "entrypoint": "BuildBowCompLocalHolderMask",
+    "mechanism": "IMAGE-DERIVED OUTSIDE-CONNECTED HOLDER BODY QUALIFICATION WITH LOCAL COMPONENT EXCLUSION BEFORE CANDIDATE FORMATION",
+    "reuseBoundary": "PORT THE GEOMETRIC PRINCIPLE INTO THE CONFIGURATION-SELECTED OPENCV BACKSIDE PROVIDER; DO NOT HARD-CODE HOLDER ANGLES OR COPY CSHARP PIXEL PROCESSING INTO POWERSHELL"
+  },
+  "requiredSuccessorBoundary": {
+    "holderMask": "DETECT EACH VISIBLE HOLDER BODY FROM IMAGE EVIDENCE AND EXCLUDE ONLY ITS LOCAL WAFER-OVERLAP SPAN BEFORE PERIMETER FITTING AND NOTCH CANDIDATE FORMATION",
+    "notchProtection": "REQUIRE A QUALIFIED EXTERIOR HARDWARE BODY CONTINUING AWAY FROM THE WAFER; A DARK EXTERIOR BESIDE A LOCAL WAFER INDENTATION IS NOT A HOLDER",
+    "channelHandling": "KEEP BF AND DF PREPROCESSING AND MORPHOLOGY CHANNEL-LOCAL; CALIBRATE THE COHERENT DF AND BOWCOMP BF APPEARANCE GAPS WITHOUT USING LOT, SLOT, OR KNOWN NOTCH ANGLE",
+    "diagnostics": "RETURN HOLDER MASKS, EXCLUDED ANGULAR SPANS, RAW AND RETAINED CANDIDATES, AND EXPLICIT HOLD REASONS",
+    "regressionOrder": [
+      "FROZEN TEN-CASE R20 CONTROL",
+      "ALL TWENTY-TWO CURRENT HOLDS",
+      "SOLE-HOLDER NEGATIVE AND NOTCH-ADJACENT-TO-HOLDER CONTROLS",
+      "FULL 953-PAIR CORPUS WITH VISUAL REVIEW OF EVERY STATE CHANGE AND EVERY OUTLIER PASS"
+    ]
+  },
+  "activationReady": false,
+  "r20MayRemainRegressionEvidence": true,
+  "r20MayBePublicationOrActivationParent": false,
+  "priorApprovedBaselineConclusionSuperseded": true,
+  "sourceMutationPerformed": false,
+  "taskOrProcessActionPerformed": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

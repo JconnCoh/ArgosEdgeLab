@@ -1,0 +1,28 @@
+{
+  "schema":"argos_recovery_observation_evidence_v1",
+  "createdUtc":"2026-08-29T21:55:00Z",
+  "incidentId":"OCV03_O3B10_R19_PACKAGE_CONTRACT_20260829",
+  "state":"PASS_ARGOS_RECOVERY_OBSERVATION",
+  "exactSourcesProved":true,
+  "fieldSpecificExpectedObservedRecorded":true,
+  "directEndpointEvidence":false,
+  "matchingSignedTerminalResponse":true,
+  "sources":[
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/R18_REGRESSION_CASES.json","sha256":"7F2BF805CC35893B307557680251A94A49F28305E20E3735931F064E82650DF4","role":"FROZEN_SUCCESSFUL_PREDECESSOR_CASES"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/R19_REGRESSION_CASES.json","sha256":"9FCE3CC7274FC54BB188427D24C129FC89E6F7222825468B9E464D91F73551C7","role":"WITHDRAWN_FAILED_CASES"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/R19_SIGNED_TERMINAL_PACKAGE_CONTRACT_FAILURE.json","sha256":"B89276CF9249770E1FFA4E264C5B1B298A5B76868C223EE697ACF154E280DA1C","role":"MATCHING_SIGNED_TERMINAL_FAILURE"}
+  ],
+  "expectedObserved":[
+    {"caseId":"62627-193_SLOT01_CHIPOUT_CONTROL","field":"dfSha256","expected":"8546F979E83B9749CCFEB1241DAF0393D24534DB8F5E94706DFCD8D3FDC9BB7C","observed":"8546F979E83B9741DAF0393D24534DB8F5E94706DFCD8D3FDC9BB7C","expectedLength":64,"observedLength":55},
+    {"caseId":"62628-233_SLOT20_0632_BROAD_CHANNEL","field":"bf","expected":"D:/KLARFExport/Coherent_W2W/Lot_62628-233/62628-233_20260729063218/Slot20/BrightfieldBacksideWafer/resizedImage/62628-233_Slot20_BrightfieldBacksideWafer_PM2_resizedImage.bmp","observed":"D:/KLARFExport/Coherent_W2W/Lot_62628-233/62628-233_20260729063218/Slot20/BrightfieldBacksideWafer/resizedImage/LotIDStringNotSet_Slot20_BrightfieldBacksideWafer_PM2_resizedImage.bmp"},
+    {"caseId":"62628-233_SLOT20_0632_BROAD_CHANNEL","field":"df","expected":"D:/KLARFExport/Coherent_W2W/Lot_62628-233/62628-233_20260729063218/Slot20/DarkfieldBacksideWafer/resizedImage/62628-233_Slot20_DarkfieldBacksideWafer_PM2_resizedImage.bmp","observed":"D:/KLARFExport/Coherent_W2W/Lot_62628-233/62628-233_20260729063218/Slot20/DarkfieldBacksideWafer/resizedImage/LotIDStringNotSet_Slot20_DarkfieldBacksideWafer_PM2_resizedImage.bmp"}
+  ],
+  "classification":"SIGNED_ARTIFACT_CONTRACT_FAILURE_NOT_LIVE_STATE_PREMISE_FAILURE",
+  "supportedRemedy":"B",
+  "remedyDetail":"Remove the invalid manually reproduced case manifest by consuming the exact frozen R18 manifest byte-for-byte and deriving only fresh output roots in the R20 runner.",
+  "filesRead":true,
+  "imageBytesRead":false,
+  "mutationsPerformed":false,
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

@@ -1,0 +1,26 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 67108864,
+  "entryPoint": "payload/Invoke-O3B10R15Regression.ps1",
+  "changes": [
+    {
+      "source": "payload/Detect-BacksideNotchOpenCvR15.py",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_BacksideNotchDevelopment_O3B10R15.py",
+      "approvedPredecessorSha256": ["F16A024EEA34F01502BD62B9C750FD6AA95D6BD75D9F8A03D07FBF7B2A0EB64C"],
+      "installedSha256": "F16A024EEA34F01502BD62B9C750FD6AA95D6BD75D9F8A03D07FBF7B2A0EB64C",
+      "allowCreate": true
+    },
+    {
+      "source": "payload/BACKSIDE_NOTCH_CONFIG_R3.json",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/BACKSIDE_NOTCH_CONFIG_R3.json",
+      "approvedPredecessorSha256": ["B3AD3EBDA8B89A6862E99E38D68BB05B939742A38A86A5B3A982745B1801B821"],
+      "installedSha256": "B3AD3EBDA8B89A6862E99E38D68BB05B939742A38A86A5B3A982745B1801B821",
+      "allowCreate": true
+    }
+  ],
+  "allowedTaskActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_O3B10_R15_REGRESSION_EXECUTED"
+  }
+}

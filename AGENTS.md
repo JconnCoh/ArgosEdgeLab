@@ -24,6 +24,35 @@ report the exact additional scope required; do not expand the work silently.
 Promotion or publication is a separate operation requiring an explicit
 `PROMOTE` or `PUBLISH` instruction and the applicable full gates.
 
+## Highest-priority detector-results lane
+
+When the operator requests detector development, correction, tuning, or real-
+image results, treat all recorded access, transport, runtime, source-path,
+source-hash, and JBOD topology facts as frozen dependencies. The only mutable
+source scope is the explicitly named OpenCV detector/provider code. Do not
+audit, rediscover, redesign, patch, replace, or rehearse access runners,
+RustDesk/RDP input, Project Portal transport, mapped drives, runtime discovery,
+wrappers, launchers, schemas, checkpoints, ledgers, or continuity machinery.
+Those are separate infrastructure work and require an explicit operator request.
+
+Use the already recorded working route immediately and byte-for-byte. Detector
+iteration may transfer the exact draft detector to its existing JBOD development
+root, run it in the foreground against the already named and hash-locked source
+images, create a fresh result root, and return/display the resulting measurements
+and overlays. It must not mutate or delete source images, manage existing tasks
+or processes, or change production authority. A physical Enter already known to
+be required by the recorded route is an operator input, not a reason to modify
+or debug transport.
+
+If the unchanged recorded route fails once, stop that execution attempt and
+report the single exact blocker. Do not retry it, open additional consoles,
+change delivery code, invent another route, or convert detector work into an
+infrastructure investigation. Progress is defined by a new real-image detector
+result or overlay, not by support scripts, schemas, gates, or transport evidence.
+This lane overrides checkpoint, continuity, ledger, recovery-intent,
+pre-action-contract, packaging, and task-rollover work for draft detector
+iteration only. Promotion and publication remain separate explicit operations.
+
 ## Mandatory Windows/JBOD failure-prevention memory
 
 Before building or launching any Windows batch, mapped-drive analysis,

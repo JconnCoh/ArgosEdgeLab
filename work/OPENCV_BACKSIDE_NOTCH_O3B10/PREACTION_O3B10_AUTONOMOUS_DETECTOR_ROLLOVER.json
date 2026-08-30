@@ -1,0 +1,55 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3B10_AUTONOMOUS_DETECTOR_SEQUENCE_ROLLOVER_20260830",
+  "createdUtc": "2026-08-30T01:10:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "PROMOTE_AUTONOMOUS_REVIEW_ONLY_DETECTOR_SEQUENCE_ROLLOVER_CHECKPOINT",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R20_CORPUS_COMPLETE_HOLDER_CHANNEL_GAPS_20260830.md",
+      "sha256": "21023F5CBAF4426B194C4D0CB1B85AA5ADE0C195EBCF9D6F1B7A57340E18E3C2"
+    },
+    {
+      "path": "work/ARGOS_OPENCV_ALL_IMAGE_PROCESSING_MIGRATION.json",
+      "sha256": "C1EF35002EB8A294221DB9FF2E15FC7CB4ED48F1299EFC7AD0774BF5B82194B4"
+    },
+    {
+      "path": "work/ARGOS_CODEX_TASK_ROLLOVER.json",
+      "sha256": "7E97A0987B092476DC4F4ECB89E47C015B8338652FD112814BF17D2347F10D37"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

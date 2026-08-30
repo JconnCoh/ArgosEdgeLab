@@ -1,0 +1,12 @@
+{
+  "targetRole":"JBOD",
+  "jobClass":"MAINTENANCE_PATCH",
+  "maxResultBytes":1048576,
+  "entryPoint":"payload/Invoke-O3B10CorpusLaunch.ps1",
+  "changes":[
+    {"source":"payload/Run-OpenCvKlarfCorpus.py","destination":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/Run-OpenCvKlarfCorpus.py","approvedPredecessorSha256":["5223057E1B5E00ECD042F88BE76496E1E6350A67FA2F9C1C0AB8BFFB61606DE7","37B2205F2C871A3F37C791DFF7CDFC216E249EEBDD97A0116DD9E151AFE5E884"],"installedSha256":"37B2205F2C871A3F37C791DFF7CDFC216E249EEBDD97A0116DD9E151AFE5E884","allowCreate":false},
+    {"source":"payload/ArgosOpenCvScribeV1R5.py","destination":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/ArgosOpenCvScribeV1R5.py","approvedPredecessorSha256":["F61F5954A77E6F730A2BF0D110A468535C4595D25DB21AFFE1573EF08B8139AB"],"installedSha256":"F61F5954A77E6F730A2BF0D110A468535C4595D25DB21AFFE1573EF08B8139AB","allowCreate":true}
+  ],
+  "allowedTaskActions":[],
+  "rehearsal":{"requiredState":"PASS_O3B10_CORPUS_WORKER_LAUNCHED"}
+}

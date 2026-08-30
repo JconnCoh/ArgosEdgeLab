@@ -1,0 +1,15 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Invoke-O3B10CorpusInventory.ps1",
+  "changes": [
+    {"source":"payload/Run-OpenCvKlarfCorpus.py","destination":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/Run-OpenCvKlarfCorpus.py","approvedPredecessorSha256":["5223057E1B5E00ECD042F88BE76496E1E6350A67FA2F9C1C0AB8BFFB61606DE7"],"installedSha256":"5223057E1B5E00ECD042F88BE76496E1E6350A67FA2F9C1C0AB8BFFB61606DE7","allowCreate":true},
+    {"source":"payload/BACKSIDE_NOTCH_CONFIG.json","destination":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/BACKSIDE_NOTCH_CONFIG.json","approvedPredecessorSha256":["D52E9DC5A328E83A482DAD6A30349E9AC771650F142112EA1CC24D7CFB58403C"],"installedSha256":"D52E9DC5A328E83A482DAD6A30349E9AC771650F142112EA1CC24D7CFB58403C","allowCreate":true},
+    {"source":"payload/FullPerimeterWaferTopologyOpenCvR7.py","destination":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/FullPerimeterWaferTopologyOpenCvR7.py","approvedPredecessorSha256":["A6E63914D8669E3E733EA2BFC78FAF78F77B1FC5A54E9CC4D051F2AC34D2296B"],"installedSha256":"A6E63914D8669E3E733EA2BFC78FAF78F77B1FC5A54E9CC4D051F2AC34D2296B","allowCreate":true},
+    {"source":"payload/NativeFrontsideWaferPoseOpenCvV2R6.py","destination":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/NativeFrontsideWaferPoseOpenCvV2R6.py","approvedPredecessorSha256":["90839F14CEEED7C2DFC6E1601195F6927C4631E508F9EB859E77A93745D3FB30"],"installedSha256":"90839F14CEEED7C2DFC6E1601195F6927C4631E508F9EB859E77A93745D3FB30","allowCreate":true},
+    {"source":"payload/WaferTopologyAxisOpenCv.py","destination":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/WaferTopologyAxisOpenCv.py","approvedPredecessorSha256":["D8897C1A5B60CB5AA9B0343CF8C9E5A249CCC5DEF5FBCDFE645EC08C354EF3BD"],"installedSha256":"D8897C1A5B60CB5AA9B0343CF8C9E5A249CCC5DEF5FBCDFE645EC08C354EF3BD","allowCreate":true}
+  ],
+  "allowedTaskActions": [],
+  "rehearsal": {"requiredState":"PASS_O3B10_CORPUS_INVENTORY"}
+}

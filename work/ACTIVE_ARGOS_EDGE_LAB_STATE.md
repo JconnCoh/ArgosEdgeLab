@@ -1,8 +1,64 @@
-# Active ArgosEdgeLab state - OCV-03 O3B8 signed stage pass / O3B9 approved return stage local pass - 2026-08-28
+# Active ArgosEdgeLab state - OCV-03 autonomous detector sequence rollover - 2026-08-30
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 autonomous detector sequence rollover — 2026-08-30
+
+The operator authorized autonomous review-only continuation in this exact
+order: finish backside perimeter/notch, complete frontside perimeter/notch,
+decipher the complete scribe corpus, run the combined corpus regression, and
+only then resume fiducials. No heartbeat or recurring automation is permitted.
+
+The fresh task begins only with the bounded backside OpenCV successor. It adds
+channel-local image-derived local holder exclusion before perimeter/candidate
+formation and corrects the Coherent-DF and BowComp-BF appearance gaps. The
+first real-image gate is the frozen ten controls, all 22 R20 holds, and new
+sole-holder/notch-adjacent controls. Full-corpus, frontside, scribe, fiducial,
+infrastructure, publication, and activation work wait until that gate passes.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_AUTONOMOUS_DETECTOR_SEQUENCE_ROLLOVER_20260830.md`,
+SHA-256 `7D4FB96F6A84DD5CE51C62F5B01B4921D922C467311383F77F12955417B3C275`.
+R20 remains regression evidence and a non-activation parent. Every prior hold,
+withdrawal, no-retry restriction, and review-only/training/XML/production
+boundary remains unchanged.
+
+## OCV-03 O3B10 R20 corpus complete / holder and channel gaps — 2026-08-30
+
+R20 completed all 953 backside pairs: 931 review-only unique-notch passes,
+twenty-one not-found holds, one DF channel-analysis hold, and zero source
+problems. Mechanical R20 comparison against both frozen R18 and R15 has zero
+missing/new identities, zero regressions, zero changed holds, and exactly zero
+degrees of shared-pass angle drift. R20 rescues 23 R18 holds and 33 R15 holds.
+
+All 22 held identities were collected through the qualified signed route and
+all 44 BF/DF review rasters were inspected. The 21 not-found rows have no
+unique eligible cross-channel pair; fixture contacts, edge texture, and
+unconfirmed edge irregularities were rejected rather than promoted. The sole
+channel-analysis row is ProcessJob11 Slot25, whose DF trace failed radial
+qualification. These explicit holds remain and are not R20 regressions.
+
+The predecessor comparison was insufficient to approve R20 as an activation
+baseline. Exact hold analysis proves 13 Coherent rows have the physical-notch
+candidate in BF but DF rejects its morphology; six BowComp rows have it in DF
+but BF does not form an eligible candidate. R20 also classifies holder evidence
+only after pairing and suppresses it only when an alternative non-holder pair
+exists, so a sole paired holder remains an untested false-pass risk. The prior
+baseline conclusion is superseded/non-parent; its terminal corpus remains
+valid regression evidence.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R20_CORPUS_COMPLETE_HOLDER_CHANNEL_GAPS_20260830.md`,
+SHA-256 `21023F5CBAF4426B194C4D0CB1B85AA5ADE0C195EBCF9D6F1B7A57340E18E3C2`.
+Next is one bounded local OpenCV successor: image-derived local holder masking
+before perimeter/candidate formation plus channel-local Coherent-DF and
+BowComp-BF appearance correction. Regress the frozen ten controls, all 22
+holds, and new sole-holder/notch-adjacent controls before a full corpus. The
+hotspot remains parked, all 22 backside holds remain visible, and all
+provider/process/source/XML/training/production and earlier withdrawn/no-retry
+restrictions remain unchanged.
 
 ## OCV-03 O3B8 signed stage pass / O3B9 approved return stage local pass — 2026-08-28
 
@@ -8880,3 +8936,268 @@ remains unchanged.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3Q4_SIGNED_RUNTIME_GATE_STATE_COMPATIBILITY_FAILURE_HOLD_20260828.md`,
 SHA-256 `4E39B50320EB7C37D7E1EFCDFBE03F5868B8AED39D814FC17DEAC5A86A16B530`.
+
+## 2026-08-29 — OCV-03 O3B10 R14 corpus-25 pass / full backside corpus active
+
+R14 backside detector SHA-256 is
+`E8627409BC4134AFD653603DDE1795861ACEF46C8ED240F69CACBAD90A14F10D`.
+It retains the full-360 no-prior manufactured-notch search and unique BF/DF
+pairing while correcting only backside trace qualification: BF uses its
+existing local high-pass suppression instead of raw circle RMS as a veto, and
+the 72-bin coverage comparison receives half-bin quantization tolerance.
+
+The exact four-pair regression passed all four cases, including the Slot01
+chipout control and the former 62625-956 Slot22 hold. The subsequent signed
+25-pair corpus completed 25/25 unique-notch passes with zero source problems
+and zero holds. Mechanical comparison against R11 proved 24 rows unchanged;
+Slot22 was the sole changed row, now passing at `89.4823624433` degrees with
+BF/DF mismatch `0.0352751133` degrees.
+
+Full backside-only request `REQ_20260829T153027001Z_0C74C60A95A2` is active
+in create-new output root `D:/KLARFExport/_ArgosReview/C15RUN1` under worker
+PID `36328`, creation time `2026-08-29T15:29:28.3951014Z`, with `943`
+expected exact BACK BF/DF pairs. Its first signed atomic summary proved 22/943
+processed, all 22 unique-notch passes, zero holds/failures, and zero source
+problems. Existing processes, protected processor, and source images were not
+touched.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R14_CORPUS25_PASS_FULL_BACKSIDE_CORPUS_ACTIVE_20260829.md`,
+SHA-256 `AAD9F76DF3B0813C4DE04BF6B168DA2FBA5C99FB56D852CF67E4E3ED5EE5D57C`.
+
+Continue signed file-backed observation until all 943 rows are terminal.
+Inspect every returned hold from its exact result and overlays before changing
+the detector. Every prior withdrawal, no-retry/non-parent record, stranded
+process/console, frontside hotspot deferral, fiducial/alignment prerequisite,
+and XML/training/production hold remains unchanged.
+
+## 2026-08-29 — OCV-03 O3B10 R14 corpus-943 complete / R15 full corpus ready
+
+R14 completed all 943 exact BACK BF/DF pairs at
+`D:/KLARFExport/_ArgosReview/C15RUN1`: 803 unique-notch passes, 140 explicit
+holds (30 channel-analysis and 110 no-pair), and zero source problems. The
+final signed summary SHA-256 is
+`2EE840467C74978E7C6B19F3AA413736E4D60E5075785D5D3FC257EF597DED0D`;
+matching response ZIP SHA-256 is
+`4D0E0FD2A5925CC20F6CA007643C3203ECCB30F7264AC803CBA7F68C58991F4E`.
+
+R15 remains frozen at detector
+`F16A024EEA34F01502BD62B9C750FD6AA95D6BD75D9F8A03D07FBF7B2A0EB64C`
+and configuration
+`B3AD3EBDA8B89A6862E99E38D68BB05B939742A38A86A5B3A982745B1801B821`.
+Its eight-case signed regression passed seven unique physical notches and the
+one intended broad-DF hold. The fresh full-corpus launcher targets only
+create-new `C15RUN2`, starts one owned review-only child, and takes no action
+against existing tasks/processes or the protected processor.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R14_CORPUS943_COMPLETE_R15_FULL_CORPUS_READY_20260829.md`,
+SHA-256 `4CAB17A9B4E15E86BFECBF39F91E5ACB21B46B1691D33EFF898C72D839AA4CA3`.
+
+Next: pass continuity/session safety, then build, path-gate, sign, and publish
+one pinned R15 full-backside corpus launch. Collect only its matching signed
+terminal response; no retry. Preserve every existing hold and prerequisite.
+# 2026-08-29 — OCV-03 O3B10 R15 full backside corpus launched; first 29/943 pass (`PENDING_GATE`)
+
+R15 was launched once through the signed Project Portal route at create-new
+`D:/KLARFExport/_ArgosReview/C15RUN2`. The matching JBOD response was signed and
+terminal. The first signed read-only summary contains 29 unique BF/DF notch
+passes, zero holds, and zero source problems. Continue signed observation to
+943; do not relaunch, retry, or touch the owned worker. Preserve all prior
+holds, withdrawals, and prerequisite ordering.
+# 2026-08-29 — OCV-03 O3B10 R15 436/943; hold evidence pinned (`PENDING_GATE`)
+
+The single R15 worker reached 436/943: 400 passes, 36 explicit holds, and zero
+source problems. Signed image and engine-result evidence proves the residual
+families are DF width expansion, narrow DF morphology-boundary misses, one
+fixture-contaminated multiple-pair hold, and the preserved damaged-wafer
+negative control. No detector/configuration change has been made. Continue the
+same worker to terminal completion, then compare all R14/R15 rows before the
+smallest bounded correction.
+
+# 2026-08-29 — OCV-03 O3B10 R15 corpus-953 complete / comparison pinned (`PENDING_GATE`)
+
+The single R15 backside worker is terminal at 953/953 exact BACK BF/DF
+identities: 898 unique-notch passes, 55 explicit holds (45 no-pair, nine
+channel-analysis, one multiple-pair), and zero source problems. Its signed
+terminal summary SHA-256 is
+`15179E7665FFC5B1E520E6AAC479F86EEC84492A9FB1A723DC9E25CEAE67362C`.
+
+The exact R14/R15 comparison covers all 943 common identities plus ten new
+R15 identities. It proves 801 unchanged passes, 87 hold-to-pass rescues, 53
+unchanged holds, ten new passes, and exactly two regressions. The regressions
+are one DF filled-gap width inflation and one safe multiple-pair hold caused
+by a fixture-contact response. Inspected traces remain on the full-360 wafer
+perimeter; no interior pattern response was selected as a notch edge.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R15_CORPUS953_COMPLETE_COMPARISON_PINNED_20260829.md`,
+SHA-256 `29653B2B3ADBE4B785C6DA079344D1408B78F4ACF42119DB8A2B70D4F8D5F020`.
+
+Next: pull the 55 terminal R15 `RESULT.json` records in one qualified signed
+read-only request, classify the complete residual set mechanically, then make
+the smallest detector-only correction and run frozen regression before one
+fresh full-corpus successor. Completed roots and existing tasks/processes
+remain untouched; every prior hold and authority limit remains in force.
+
+# 2026-08-29 — OCV-03 O3B10 R18 actual-wafer regression pass / full corpus ready (`PENDING_GATE`)
+
+R18 passed one signed ten-wafer review-only regression with nine unique
+backside notches and one deliberate damaged-wafer hold. It preserves the
+frozen R15/R17 full-360 perimeter implementation and changes only image-local
+cross-channel confirmation and fixture-contact suppression. The prior false
+224-degree fixture pair is suppressed while the physical 179.701-degree notch
+remains selected; both broad-channel cases are recovered; chipout, split,
+coverage, patterned, and BowComp controls remain correct. Returned BF/DF
+overlays were visually inspected and passed.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R18_ACTUAL_WAFER_REGRESSION_PASS_FULL_CORPUS_READY_20260829.md`,
+SHA-256 `5DA640443BCCBCE35B87EFECA02E68E1FB016143E0F837366CDC74F83F0F3FDF`.
+
+Next: launch one fresh R18 full backside corpus at a create-new JBOD `D:`
+root, monitor only file-backed progress, compare every terminal identity to
+R15, and inspect every regression and hold. Completed roots, existing tasks
+and processes, source bytes, and all authority limits remain untouched.
+
+# 2026-08-29 — OCV-03 O3B10 R18 full corpus launched / initial two fixture regressions (`PENDING_GATE`)
+
+R18 launched exactly once at create-new `C15RUN3`. Its matching JBOD-signed
+response confirms one owned worker, no existing-process action, and no source
+mutation. The first signed summary is 26/953: 24 unique notches, two holds,
+and zero source problems. Both holds are R15 pass-to-hold regressions. Exact
+BF/DF review images and candidate metrics prove the real notch near 90 degrees
+has zero exterior brightness while the second pair near 226 degrees is a
+chuck contact with strong BF but partial DF exterior illumination. Continue
+the same worker without runtime/process observation; do not tune until the
+complete regression family is known.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R18_FULL_CORPUS_LAUNCHED_INITIAL26_TWO_FIXTURE_REGRESSIONS_20260829.md`,
+SHA-256 `9B3BCC86F1154F7970F9473DF79CFEA9B66ED807D7B33637CEE523D9F20AA7FE`.
+
+# 2026-08-29 — OCV-03 O3B10 R18 corpus 137 / nine fixture regressions inspected (`PENDING_GATE`)
+
+The single R18 worker reached a signed 137/953: 128 unique notches, nine
+multiple-pair holds, and zero source problems. Every hold is an R15 regression;
+all nine exact BF/DF reviews and result metrics were inspected. Each physical
+notch is the bottom near-90-degree zero-exterior candidate. Each false second
+pair visibly follows a chuck contact near 134 or 226 degrees with strong
+exterior support in one channel and partial support in the other. This is one
+symmetric fixture-context boundary, not pattern response or perimeter failure.
+No detector change is allowed before terminal corpus comparison.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R18_CORPUS137_NINE_FIXTURE_REGRESSIONS_INSPECTED_20260829.md`,
+SHA-256 `76D2C71DB495242B1342D899E1DB8D868ED3200E548FBC5C7ACC3E660B00FCD5`.
+
+# 2026-08-29 — OCV-03 O3B10 R18 corpus 427 / eleven fixture regressions inspected (`PENDING_GATE`)
+
+The unchanged single R18 worker reached a matching signed 427/953 summary:
+402 unique-notch passes, eleven multiple-pair holds, fourteen not-found holds,
+and zero source problems. All fourteen not-found identities are unchanged R15
+holds. All eleven multiple-pair identities are R15 regressions, and every one
+has now been inspected from its exact BF/DF reviews and result metrics. Each
+has the true bottom notch near 90 degrees and a false visible chuck-contact
+pair near 134 or 226 degrees; perimeter tracking remains correct. No detector
+change is allowed until terminal corpus comparison.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R18_CORPUS427_ELEVEN_FIXTURE_REGRESSIONS_INSPECTED_20260829.md`,
+SHA-256 `6D74C115355BC84DC85A169E5A481EF16CFD56EA1B8A5D78F235E18ABC91A853`.
+
+# 2026-08-29 — OCV-03 O3B10 R18 corpus complete / R19 regression ready (`PENDING_GATE`)
+
+R18 completed all 953 backside BF/DF pairs with 908 unique-notch passes, 45
+explicit holds, and zero source problems. Exact comparison to R15 proves 875
+unchanged passes at zero angular delta, 33 rescues, 23 regressions, 22
+unchanged holds, and no changed-hold states. Every regression and hold was
+visually inspected. All 23 regressions are the same paired exterior
+chuck-contact family; none is pattern, chipout, hotspot, or perimeter failure.
+
+Fresh local R19 detector/config drafts use only paired exterior brightness and
+sustained support, with no angle, lot, wafer, slot, or notch-position prior.
+Static replay suppresses exactly 23 fixture rows and retains all 24 physical
+rows. The ten-wafer actual-image regression package has passed parser, harness,
+clone, path, and zero-recurrence preaction gates.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R18_CORPUS953_COMPLETE_R19_REGRESSION_READY_20260829.md`,
+SHA-256 `6FFABE2592C4BB7CE617CA141FD03CC987F1833757B080CBD6B0BE6686BEF0A5`.
+
+# 2026-08-29 — OCV-03 O3B10 R19 withdrawn / R20 regression publish ready (`PENDING_GATE`)
+
+R19 terminated before detector execution because its manually reproduced case
+manifest contained a truncated DF hash and two altered broad-channel paths.
+R19 is withdrawn, no-retry, and a non-parent. Mechanical recovery evidence
+classifies this as an artifact-contract failure, not a live detector/runtime
+premise failure.
+
+R20 consumes the exact successful frozen R18 ten-case manifest byte-for-byte
+and derives only fresh output roots. Its detector/config implement the frozen,
+position-independent paired exterior fixture-contact suppression; parser,
+harness, clone, recovery-intent, and zero-recurrence gates pass. Publish one
+signed no-retry actual-wafer regression, inspect every returned BF/DF overlay,
+then proceed to a fresh full corpus only if it passes.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R19_WITHDRAWN_R20_REGRESSION_PUBLISH_READY_20260829.md`,
+SHA-256 `B440E5CDA8695A3BA9CC914E3DD881D410F4BAFF69FC550D313A07B844DC060C`.
+
+# 2026-08-29 — OCV-03 O3B10 R20 actual-wafer regression pass / full corpus ready (`PENDING_GATE`)
+
+Matching signed R20 response returned nine intended physical notches and zero
+for the damaged negative. All twenty BF/DF reviews were hash-verified and
+visually inspected: every perimeter follows the wafer edge, every green marker
+is on the visible physical notch, and the fixture contacts remain unselected.
+Every selected angle is exactly unchanged from R18. R20 is ready for one fresh
+full 953-pair backside corpus at create-new `C15RUN4`.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R20_ACTUAL_WAFER_REGRESSION_PASS_FULL_CORPUS_READY_20260829.md`,
+SHA-256 `B308EA939BF921EE8473A37FCB661F14B3F481F4E423B23CD7EA8D07D01F4099`.
+
+# 2026-08-29 — OCV-03 O3B10 R20 full corpus launched / initial 27 pass (`PENDING_GATE`)
+
+One signed R20 worker is running at create-new `C15RUN4`. Its matching signed
+launch response reports 953 expected pairs, no source mutation, and no
+existing-process action. The first signed file-backed summary is 27/953: all
+27 unique-notch passes, zero holds, zero source problems. A 30-minute heartbeat
+continues proportional signed summary pulls and performs terminal comparison
+and failure-image inspection without process monitoring.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R20_FULL_CORPUS_LAUNCHED_INITIAL27_PASS_20260829.md`,
+SHA-256 `22CEE3505FCB91184D8936B1D8294C8C5DBE3D54B3FFD4414F196C287594754A`.
+
+# 2026-08-29 — OCV-03 O3B10 R20 corpus 453 / 439 pass / 14 hold (`PENDING_GATE`)
+
+One proportional signed file-backed heartbeat observation advanced the R20
+snapshot to 453/953: 439 unique-notch passes, fourteen not-found holds, and
+zero source problems. Summary SHA-256 is
+`5014A12C768F799FB7085C41F70618B3914A04AB8F67DB109591E6468063A50F`;
+matching response is `R_9226624639B7_20260829230200433_1ca182b1`.
+
+This snapshot is incomplete. No hold cause has been assigned and no detector
+change is allowed before terminal comparison. Continue one signed summary pull
+per heartbeat; leave the worker and every existing task/process untouched.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R20_CORPUS453_439_PASS_14_HOLD_20260829.md`,
+SHA-256 `069CC445CB0AFD46A62298CF27F70EF3FF1120F9E2055B0DE2B62F6F622D3746`.
+
+# 2026-08-29 — OCV-03 O3B10 R20 corpus 745 / 723 pass / 22 hold (`PENDING_GATE`)
+
+One proportional signed file-backed heartbeat observation advanced the R20
+snapshot to 745/953: 723 unique-notch passes, twenty-one not-found holds, one
+channel-analysis hold, and zero source problems. Summary SHA-256 is
+`B584FEB4B3520069FD11F6D83E3DB9FA33ED30E6D2935F6A1DD25846E7CE36CF`;
+matching response is `R_8BEB412AD83D_20260829232912793_ea521a93`.
+
+This snapshot is incomplete. No hold cause has been assigned and no detector
+change is allowed before terminal comparison. Continue one signed summary pull
+per heartbeat; leave the worker and every existing task/process untouched.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R20_CORPUS745_723_PASS_22_HOLD_20260829.md`,
+SHA-256 `66D990945E81561D9EBE986BEC3A38A9AECC854B1AB31A0AA3CB5F994D5DC37A`.
