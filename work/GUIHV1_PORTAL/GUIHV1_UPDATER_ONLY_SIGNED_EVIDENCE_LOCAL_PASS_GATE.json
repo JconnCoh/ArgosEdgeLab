@@ -1,0 +1,142 @@
+{
+  "schema": "argos_guihv1_updater_only_signed_evidence_local_pass_v1",
+  "createdUtc": "2026-08-31T18:39:00Z",
+  "state": "PASS_GUIHV1_UPDATER_ONLY_SIGNED_EVIDENCE_LOCAL_REHEARSAL",
+  "disposition": "PENDING_GATE",
+  "scope": {
+    "testedFiles": [
+      {
+        "path": "work/AVC1/payload/Update-JbodDashboardManifest.ps1",
+        "bytes": 18370,
+        "sha256": "73C2289B58F6F6B23DD2FA12E847AFF171B3FAC45153202E93EE00E0B7533FBA"
+      }
+    ],
+    "installedPredecessor": {
+      "path": "signed GUIPR1 data/JBOD_PROCESSOR_REVIEW/Update-JbodDashboardManifest.ps1",
+      "bytes": 15606,
+      "sha256": "F73AC7C38139098B079A23CC9C7653A93D7464BE1D4376708B25B3346B704E5D"
+    },
+    "updaterOnly": true,
+    "viewerOrGuiFilesIncluded": false,
+    "taskOrProcessActions": [],
+    "installedChanges": 0,
+    "jbodExecution": false
+  },
+  "signedAuthority": {
+    "requestId": "REQ_20260831T175803632Z_81BAFDA47A65",
+    "responseId": "R_39807C114944_20260831180751098_3671cbc0",
+    "responseZipSha256": "4893A57B235327808F9B4AE2B61D357759459889E357DF69E1E077911CE0F6D5",
+    "responseState": "PASS_DATA_PULL",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "signatureVerified": true,
+    "requiredReturnedFiles": 17,
+    "exactReturnedFileSetMatched": true,
+    "reconciliationGate": {
+      "path": "work/GUIHV1_PORTAL/GUIHV1_SIGNED_CURRENT_STATE_RECONCILIATION_GATE.json",
+      "sha256": "EB5255EC19ABC360146A0B644E855660E1BA9CFF65D8970366064D941857EEB8"
+    }
+  },
+  "rehearsal": {
+    "root": "C:/G1T",
+    "host": "Windows PowerShell 5.1.26100.9168",
+    "exitCode": 0,
+    "catalog": {
+      "bytes": 11885765,
+      "sha256": "514486499D777B27B03B49884F43A2B680895F78294BC07A3949A30DBCCF2C38",
+      "byteExactSignedCopy": true
+    },
+    "processorStatus": {
+      "bytes": 169414,
+      "sha256": "9BED51E2C9666927ECDEB285A22E0A2B9A3CCD701AB83393D4A3F866F0A88321",
+      "byteExactSignedCopy": true
+    },
+    "ledgerFixture": {
+      "bytes": 413721,
+      "sha256": "1777C5433EE10A4EA998559879FF5DD56D7D5DB83A95C58BB77526AE2D97B439",
+      "sourceRowCount": 600,
+      "jobKeysAndStatesUnchanged": true,
+      "onlyCurrentCompletedResultPathMapped": true,
+      "mappedCurrentCompletedRows": 234
+    },
+    "reviewPathMap": {
+      "bytes": 300946,
+      "sha256": "8799F13A413B2241FE6FD01957BC772B9EF1C5B2CEF98B82436190CC44FDE60F",
+      "entryCount": 1360,
+      "reversibleToSignedValues": true
+    },
+    "outputManifest": {
+      "bytes": 3148433,
+      "sha256": "8380227A2E5BF9F5283416FB2ADBD48FBCE973E08033512021AC3BCC2105D77E"
+    },
+    "outputStatus": {
+      "bytes": 491,
+      "sha256": "BB4A035BC264DAA96FD1378A551AD6A5D2B13F5DD3A9A053B0C200058C9B3DCE"
+    }
+  },
+  "completedRows": {
+    "signedCount": 234,
+    "actualCount": 234,
+    "signedCanonicalSha256": "FABD5502702187F4467747C72377DE2420BF54E80806804A06D53994D8B043CD",
+    "actualCanonicalSha256": "FABD5502702187F4467747C72377DE2420BF54E80806804A06D53994D8B043CD",
+    "exactRowsUnchangedAfterReversingFixturePaths": true,
+    "exactIdentitySetUnchanged": true,
+    "signedScanSessions": 39,
+    "actualScanSessions": 39
+  },
+  "heldRows": {
+    "expectedCount": 1662,
+    "actualCount": 1662,
+    "expectedCanonicalSha256": "4B979F0D6A92CE09632AA9FFBCF4C7CAFA7E9EA09C74A79C73918A1BEEE8D4FE",
+    "actualCanonicalSha256": "4B979F0D6A92CE09632AA9FFBCF4C7CAFA7E9EA09C74A79C73918A1BEEE8D4FE",
+    "exactIdentityReasonDetailSourceAndCurrentJobKeyRows": true,
+    "identityUnique": true,
+    "reasonSourceCounts": [
+      {"value": "CATALOG_ROUTE_STATE", "count": 1339},
+      {"value": "CURRENT_LEDGER_ROW", "count": 59},
+      {"value": "PROCESSOR_ROUTE_HOLD", "count": 264}
+    ]
+  },
+  "cardinality": {
+    "catalogAcquisitions": 1896,
+    "completedPlusHeld": 1896,
+    "completedHeldOverlap": 0,
+    "missingCatalogIdentities": [],
+    "extraDashboardIdentities": [],
+    "duplicateDashboardIdentities": 0,
+    "excludedRows": 0,
+    "supersededCompletedRows": 0,
+    "duplicateCurrentRowsCollapsed": 0
+  },
+  "liveStatusBinding": {
+    "requestId": "REQ_20260831T182801205Z_B9BF523CD1C1",
+    "responseId": "R_39B2CF8FE82D_20260831182852098_af3c20d5",
+    "responseZipSha256": "27C1FAD50AD831863B7C453EEC0FC7969D92CFCD7B662D90F6797FAA14180429",
+    "resultSha256": "705357D7BD2B0E35AAA7E798748F3C26EBD922A40F3938D83ECFA94B31599E6A",
+    "signatureVerified": true,
+    "state": "PASS_STATUS_COLLECTED",
+    "tasks": [
+      {"name": "ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2", "state": "Ready"},
+      {"name": "ArgosEdgeLab.ScribeProposal.ReviewOnly.V2", "state": "Ready"},
+      {"name": "ArgosEdgeLab.InsiteBridge.Worker.ReviewOnly.V1", "state": "Ready"},
+      {"name": "ArgosEdgeLab.InsiteBridge.Relay.ReviewOnly.V1", "state": "Running"},
+      {"name": "ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2", "state": "Running"}
+    ],
+    "configuredProcessorConfigExists": true,
+    "configuredLegacyTopLevelProcessorStatusExists": false,
+    "signedScribeWorkerStatusUpdatedUtc": "2026-08-24T10:17:19.3041868Z"
+  },
+  "safety": {
+    "reviewOnly": true,
+    "allHeldRowsReviewOnly": true,
+    "allHeldRowsXmlIneligible": true,
+    "xmlExportEnabled": false,
+    "xmlExportState": "DISABLED_PENDING_DATA_ENGINEERING_DEFECT_BINS_AND_COORDINATE_AUTHORITY",
+    "trainingEligible": false,
+    "productionEligible": false,
+    "sourceMutation": false,
+    "publicationPerformed": false,
+    "deploymentPerformed": false
+  },
+  "defects": [],
+  "nextAction": "Use this updater-only PASS as the local successor gate. Do not publish or deploy while the stale producer/task-state root cause and required producer repair remain unresolved."
+}
