@@ -1,0 +1,46 @@
+{
+  "schema": "argos_project_portal_request_manifest_v1",
+  "requestId": "REQ_20260831T191124226Z_B428348540C8",
+  "createdUtc": "2026-08-31T19:11:24.2264072+00:00",
+  "expiresUtc": "2026-09-01T19:11:24.2264072+00:00",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "handler": "",
+  "maxResultBytes": 1048576,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false,
+  "credentialsIncluded": false,
+  "signerThumbprint": "C82181052919C475CF888F49427C1B55AE65DC12",
+  "signatureAlgorithm": "RSA-SHA256-PKCS1",
+  "files": [
+    {
+      "path": "payload/Invoke-GUIPR1ForegroundRefresh.ps1",
+      "bytes": 13562,
+      "sha256": "E652829567F9C7FF8E83843A74B7FD68D97C04632C33155AF68F6E8AEB123BD6"
+    },
+    {
+      "path": "payload/PROCESSOR_CONFIG.json",
+      "bytes": 1964,
+      "sha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"
+    }
+  ],
+  "entryPoint": "payload/Invoke-GUIPR1ForegroundRefresh.ps1",
+  "changes": [
+    {
+      "source": "payload/PROCESSOR_CONFIG.json",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json",
+      "approvedPredecessorSha256": [
+        "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"
+      ],
+      "installedSha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8",
+      "allowCreate": false
+    }
+  ],
+  "allowedTaskActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_GUIPR1_FOREGROUND_PLAN_AND_UNCHANGED_DASHBOARD_REFRESH"
+  }
+}

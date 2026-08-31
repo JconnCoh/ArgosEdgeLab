@@ -1,0 +1,21 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Invoke-GUIPR1ForegroundRefresh.ps1",
+  "changes": [
+    {
+      "source": "payload/PROCESSOR_CONFIG.json",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json",
+      "approvedPredecessorSha256": [
+        "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"
+      ],
+      "installedSha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8",
+      "allowCreate": false
+    }
+  ],
+  "allowedTaskActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_GUIPR1_FOREGROUND_PLAN_AND_UNCHANGED_DASHBOARD_REFRESH"
+  }
+}

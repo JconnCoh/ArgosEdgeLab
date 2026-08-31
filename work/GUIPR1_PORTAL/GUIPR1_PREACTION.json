@@ -1,0 +1,72 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "GUIPR1_FOREGROUND_PRODUCER_REFRESH_20260831",
+  "createdUtc": "2026-08-31T19:09:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "SIGN_PUBLISH_EXECUTE_ONE_SAME_BYTES_FOREGROUND_PLAN_ONLY_PRODUCER_REFRESH",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C",
+  "dependencies": [
+    {"path":"AGENTS.md","sha256":"9B33DBD2EADCBA7D37E4AA444EC2A7E3CEF568A46EE4639AB06B0DB1FA13CBF3"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"09F03D73133023EF96C9737B626001B791C216A91F5F7044F004DE09CCA2F754"},
+    {"path":"work/GUIPR1_PORTAL/GUIPR1_RECOVERY_INTENT.json","sha256":"B31D8D6CBD5C04FD68DDDEA15641E0EFE03B647E20D5FB394697256B06BFC8B6"},
+    {"path":"work/GUIPR1_PORTAL/GUIPR1_OBSERVATION_EVIDENCE.json","sha256":"762AB303C266C21972F4F804C81397313CD3F143B2D78DA1346FA92B99C31AA5"},
+    {"path":"work/GUIPR1_PORTAL/GUIPR1_RECOVERY_DESIGN.json","sha256":"2558DACD580F211E6FBAED6B49EFBC93DC34DD550B288A25FC50DBD32A4C258D"},
+    {"path":"work/GUIPR1_PORTAL/source/MAINTENANCE_DEFINITION.json","sha256":"3E39174C9BD6AF949F80964182DFF12A64D836827A736443EB453A9C05090409"},
+    {"path":"work/GUIPR1_PORTAL/source/payload/Invoke-GUIPR1ForegroundRefresh.ps1","sha256":"E652829567F9C7FF8E83843A74B7FD68D97C04632C33155AF68F6E8AEB123BD6"},
+    {"path":"work/GUIPR1_PORTAL/source/payload/PROCESSOR_CONFIG.json","sha256":"CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"},
+    {"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    {"path":"work/OPENCV_SCRIBE_O2D10/O2D10_COMPLETE_ROUTE_GATE_R2.json","sha256":"6938DC3E37A5208DC1F3E2F8F7A5703CC9A6B70B7533556E584F531DCD310D81"},
+    {"path":"work/GUIHV1_PORTAL/GUIHV1_SIGNED_CURRENT_STATE_RECONCILIATION_GATE.json","sha256":"EB5255EC19ABC360146A0B644E855660E1BA9CFF65D8970366064D941857EEB8"},
+    {"path":"work/GUIPR1_PORTAL/GUIPR1_R21S1_TASK_STATUS_EVIDENCE.json","sha256":"FE1D96F6AE9561CB4DBCF377E0F2C614C35B3CF028113C90120F2201069BBE0F"},
+    {"path":"utilities/Confirm-ArgosRecoveryIntent.ps1","sha256":"84CE818367586DD725EB196387D28442278A0FB504A9284A36B5851E48ABA1B1"},
+    {"path":"utilities/Confirm-ArgosZeroRecurrencePreaction.ps1","sha256":"303EE814B441365120DE1083DE018513F3D1ABE523236291460336C4CB2DE5BB"},
+    {"path":"utilities/Confirm-ArgosPathBudget.ps1","sha256":"F8B0991231C213052B2FA31AAE67DB95E2C4DF831A9F717F91766318B19D4B0A"},
+    {"path":"utilities/Confirm-ArgosPowerShellHarnessSafety.ps1","sha256":"94CF79624915831B26E7CCF5B799B905EF16F43B601FE73B324630736D55B731"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_COLLECTION_CASE_GATE.json",
+    "sha256": "81A360B01F3E7BF82A5FF25BE1EEFC0A599BB5129B253692513778170A5F7AE0",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": ["R21P2"]
+  },
+  "boundedAction": {
+    "maximumRequests": 1,
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedSemanticChanges": 0,
+    "sameBytesConfigSelfSwap": true,
+    "taskActions": [],
+    "processActions": [],
+    "detectorScoring": false,
+    "imageProcessing": false,
+    "guiBytesChanged": false,
+    "xml": false,
+    "retryOnFailure": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

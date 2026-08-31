@@ -1,0 +1,54 @@
+{
+  "schema": "argos_guipr1_producer_recovery_design_v1",
+  "createdUtc": "2026-08-31T19:05:00Z",
+  "state": "DRAFT_BOUNDED_FOREGROUND_PRODUCER_REFRESH",
+  "classification": "MUTATE",
+  "incident": "GUI_AUTHORITATIVE_PRODUCER_STATE_STALE_AFTER_20260824",
+  "evidence": {
+    "signedReconciliation": {
+      "path": "work/GUIHV1_PORTAL/GUIHV1_SIGNED_CURRENT_STATE_RECONCILIATION_GATE.json",
+      "sha256": "EB5255EC19ABC360146A0B644E855660E1BA9CFF65D8970366064D941857EEB8",
+      "state": "PASS_GUIHV1_COMPLETE_BOUNDED_RECONCILIATION_PRODUCER_AND_CONSUMER_GAP_CONFIRMED"
+    },
+    "signedTaskStatus": {
+      "path": "work/O3B21/R21S1_SIGNED_STATUS_GATE.json",
+      "sha256": "8CEDD17228E6CB924BA3EF4141C908BE84FEA32A680E18AB1F97C2B0A63FAE16",
+      "processorTaskState": "Ready"
+    },
+    "installedRunnerSha256": "46661DB0FC7F12AE7146067403390AF7CC7D0DD933A67C601C56E0EECB4FE9A4",
+    "installedInventorySha256": "228D9EDD0EFF45E58682659DC6C807FB04F63DD55E48C7F70426BF272C08FA7C",
+    "installedProcessingPassSha256": "8050EEB71923DC69EBD0A81F6C95840A7BD6215998E8546F9170C5A051B936EB",
+    "installedScribeQueueSha256": "6185D960F32088120E304BE49D5BF99C525B07EE60F5D68017A40A93F68EC6A9",
+    "installedDashboardUpdaterSha256": "F73AC7C38139098B079A23CC9C7653A93D7464BE1D4376708B25B3346B704E5D",
+    "installedConfigSha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8",
+    "processorTaskDefinitionSha256": "6E306778640AF823C53422411E65F9A796075392DEA25306F59FE7EDB8259B17"
+  },
+  "action": {
+    "installedSemanticChanges": 0,
+    "endpointSwap": "EXACT_SAME_BYTES_PROCESSOR_CONFIG_SELF_SWAP",
+    "foregroundPlanOnly": "Run-JbodAllWaferProcessor.ps1 -ConfigPath PROCESSOR_CONFIG.json -Once -PlanOnly",
+    "dashboardProducer": "Update-JbodDashboardManifest.ps1 -ConfigPath PROCESSOR_CONFIG.json",
+    "taskActions": [],
+    "processActions": [],
+    "detectorScoring": false,
+    "imageProcessing": false,
+    "xml": false,
+    "guiBytes": false,
+    "retry": false
+  },
+  "requiredProof": [
+    "fresh catalog generatedUtc after entrypoint start",
+    "fresh scribe queue updatedUtc after entrypoint start",
+    "fresh PROCESSOR_STATUS updatedUtc with state PLAN_ONLY",
+    "fresh dashboard manifest and dashboard status after installed updater run",
+    "dashboard identity/domain set is a strict subset of catalog identity/domain set",
+    "at least one current catalog row remains silently absent from both dashboard and updater exclusions",
+    "processor scheduled task remains Ready and unchanged",
+    "no exact runner process remains after foreground completion"
+  ],
+  "nextGate": "SIGNED_TERMINAL_PASS_REQUIRED_BEFORE_ANY_GUI_MUTATION",
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

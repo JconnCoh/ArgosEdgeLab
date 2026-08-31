@@ -1,0 +1,75 @@
+{
+  "schema": "argos_guipr1_final_package_gate_v1",
+  "createdUtc": "2026-08-31T19:21:35.6451072Z",
+  "state": "PASS_GUIPR1_FINAL_SIGNED_MINIMUM_CHANGE_PACKAGE",
+  "lifecycle": "FROZEN",
+  "requestId": "REQ_20260831T191124226Z_B428348540C8",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "signedReadyRoot": "work/GUIPR1_PORTAL/final/REQ_20260831T191124226Z_B428348540C8.ready",
+  "finalZip": {
+    "path": "work/GUIPR1_PORTAL/final/REQ_20260831T191124226Z_B428348540C8.ready.zip",
+    "bytes": 6618,
+    "sha256": "6BD089A5E5DE19490F7A7815A6B0ED3E47B1549A20FCFB9222C81DA13BE22CB6",
+    "entryCount": 4,
+    "roundTripExtractionRoot": "work/GUIPR1_PORTAL/zip_rehearsal",
+    "signatureVerified": true
+  },
+  "requestManifest": {
+    "sha256": "33CAE44338E059C2E79F4DA805CBD8B910E9EF46D96D58E4DA310D38BB72008B",
+    "signatureSha256": "BE91B1C6CC69B7809EFCD270B8A02B5B3CF65BD9DD7DED11E161E16DAC977FAB",
+    "signerThumbprint": "C82181052919C475CF888F49427C1B55AE65DC12",
+    "createdUtc": "2026-08-31T14:11:24.2264072-05:00",
+    "expiresUtc": "2026-09-01T14:11:24.2264072-05:00"
+  },
+  "definition": {
+    "path": "work/GUIPR1_PORTAL/source/MAINTENANCE_DEFINITION.json",
+    "sha256": "3E39174C9BD6AF949F80964182DFF12A64D836827A736443EB453A9C05090409"
+  },
+  "entryPoint": {
+    "path": "work/GUIPR1_PORTAL/source/payload/Invoke-GUIPR1ForegroundRefresh.ps1",
+    "sha256": "E652829567F9C7FF8E83843A74B7FD68D97C04632C33155AF68F6E8AEB123BD6",
+    "windowsPowerShell51Parse": "PASS_PS51_PARSE",
+    "harnessSafety": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "successRehearsal": "PASS_GUIPR1_FOREGROUND_PLAN_AND_UNCHANGED_DASHBOARD_REFRESH",
+    "injectedFailureRehearsal": "INJECTED_GUIPR1_REHEARSAL_FAILURE"
+  },
+  "sameBytesConfigSwap": {
+    "sourceSha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8",
+    "approvedPredecessorSha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8",
+    "installedSha256": "CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8",
+    "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json",
+    "allowCreate": false
+  },
+  "recoveryIntent": {
+    "path": "work/GUIPR1_PORTAL/GUIPR1_RECOVERY_INTENT.json",
+    "sha256": "B31D8D6CBD5C04FD68DDDEA15641E0EFE03B647E20D5FB394697256B06BFC8B6",
+    "state": "PASS_ARGOS_RECOVERY_INTENT"
+  },
+  "preaction": {
+    "path": "work/GUIPR1_PORTAL/GUIPR1_PREACTION.json",
+    "sha256": "41ED69E55C4DC390DECC558B3E2DAEB1242EB69960871E4F67DEA665C69B8938",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"
+  },
+  "pathGate": {
+    "path": "work/GUIPR1_PORTAL/final/REQ_20260831T191124226Z_B428348540C8.ready.zip.path_gate.json",
+    "sha256": "3048A00581FE94F81A672E29D133865FCDFE4AA7E261F0936B4A396E04A6D71D",
+    "state": "PASS_GUIPR1_EXACT_REQUEST_PATH_BUDGET"
+  },
+  "installedRoute": {
+    "endpointWorkerSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "routeGateSha256": "6938DC3E37A5208DC1F3E2F8F7A5703CC9A6B70B7533556E584F531DCD310D81",
+    "queueSafetyGateSha256": "170015C817786111E68D6455964E49071D1E27BCB3CC250E25962FB417C30618"
+  },
+  "authorizedOperation": "ONE_SAME_BYTES_CONFIG_SWAP_AND_EXACT_INSTALLED_FOREGROUND_PLAN_ONLY_REFRESH",
+  "retryOnFailure": false,
+  "taskActions": [],
+  "processActions": [],
+  "taskDefinitionChange": false,
+  "detectorOrScoringExecution": false,
+  "guiByteChange": false,
+  "xmlEligible": false,
+  "imageRead": false,
+  "sourceMutation": false,
+  "productionRoutingEnabled": false
+}

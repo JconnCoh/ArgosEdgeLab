@@ -1,0 +1,33 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-31T19:02:00Z",
+  "state": "PASS_GUIPR1_SIGNED_PRODUCER_STALENESS_OBSERVATION",
+  "incidentId": "GUI_PRODUCER_STALE_CURRENT_CATALOG_GUIPR1_20260831",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "sourceRequestId": "REQ_20260831T175803632Z_81BAFDA47A65",
+  "sourceResponseId": "R_39807C114944_20260831180751098_3671cbc0",
+  "sourceGate": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_SIGNED_CURRENT_STATE_RECONCILIATION_GATE.json",
+    "sha256": "EB5255EC19ABC360146A0B644E855660E1BA9CFF65D8970366064D941857EEB8"
+  },
+  "observed": {
+    "catalogGeneratedUtc": "2026-08-24T10:17:09.8274833Z",
+    "scribeUpdatedUtc": "2026-08-24T10:17:19.1776496Z",
+    "ledgerUpdatedUtc": "2026-08-24T06:19:52.7772895Z",
+    "dashboardCreatedUtc": "2026-08-24T10:17:24.1346100Z",
+    "catalogAcquisitions": 1896,
+    "dashboardWafers": 234,
+    "predictedHeldAcquisitions": 1662,
+    "installedDashboardSilentlySkipsNoCurrentCompletedResult": true,
+    "producerRepairRequiredBeforeGuiMutation": true
+  },
+  "mutationsPerformed": false,
+  "taskActions": [],
+  "processActions": [],
+  "imageRead": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
