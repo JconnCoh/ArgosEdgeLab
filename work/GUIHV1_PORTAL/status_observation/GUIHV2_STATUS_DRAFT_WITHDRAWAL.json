@@ -1,0 +1,26 @@
+{
+  "schema": "argos_guihv2_status_draft_withdrawal_v1",
+  "createdUtc": "2026-08-31T18:31:00Z",
+  "state": "WITHDRAWN_DUPLICATE_STATUS_OBSERVATION_NOT_PUBLISHED",
+  "disposition": "WITHDRAWN",
+  "reason": "R21S1 is already the one signed STATUS request in flight and returns the same installed STATUS task-state capability. GUIHV2 must consume that signed result rather than publish a duplicate request.",
+  "definition": {
+    "path": "work/GUIHV1_PORTAL/status_observation/GUIHV2_STATUS_DEFINITION.json",
+    "sha256": "DBC9DB16D1C471A9055A18643ADF0DE448FA480FEFE9C56BD64ADC85B89ECA05"
+  },
+  "recoveryIntent": {
+    "path": "work/GUIHV1_PORTAL/status_observation/GUIHV2_STATUS_RECOVERY_INTENT.json",
+    "sha256": "46FCDBA5E6897D456AEB434F93D5B1C9A7D6B2CD9977CD3E137DC90AE525946A",
+    "preflightState": "PASS_ARGOS_RECOVERY_INTENT"
+  },
+  "requestIdAssigned": false,
+  "signed": false,
+  "published": false,
+  "externalMutationPerformed": false,
+  "retryAuthorized": false,
+  "publicationParentEligible": false,
+  "nextAction": "Consume and verify the matching signed R21S1 STATUS response, then bind its current task-state evidence into the GUI producer-repair diagnosis.",
+  "reviewOnly": true,
+  "xmlEligible": false,
+  "productionRoutingEnabled": false
+}
