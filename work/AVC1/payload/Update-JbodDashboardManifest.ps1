@@ -76,25 +76,19 @@ $appRoot = [IO.Path]::GetFullPath([string]$config.appRoot)
 $stateRoot = [IO.Path]::GetFullPath([string]$config.stateRoot)
 $catalogPath = Join-Path $stateRoot 'catalog\ALL_WAFER_CATALOG.json'
 $ledgerPath = Join-Path $stateRoot 'processor\PROCESSING_LEDGER.json'
+$processorStatusPath = Join-Path $stateRoot 'processor\PROCESSOR_STATUS.json'
 $readinessPath = Join-Path $stateRoot 'dashboard\DASHBOARD_CATALOG_STATUS.json'
 $manifestPath = Join-Path $appRoot 'dashboard_manifest.json'
 if (-not (Test-Path -LiteralPath $catalogPath -PathType Leaf)) {
     throw "All-wafer catalog is missing: $catalogPath"
 }
-if (-not (Test-Path -LiteralPath $ledgerPath -PathType Leaf)) {
-    Write-AtomicJson $readinessPath ([ordered]@{
-        schema='argos_jbod_dashboard_catalog_status_v1'
-        updatedUtc=[DateTime]::UtcNow.ToString('o')
-        state='WAITING_FOR_FIRST_COMPLETED_WAFER'
-        includedWafers=0
-        reviewOnly=$true
-        xmlExportEnabled=$false
-    })
-    return
-}
-
 $catalog = Get-Content -LiteralPath $catalogPath -Raw | ConvertFrom-Json
-$ledger = Get-Content -LiteralPath $ledgerPath -Raw | ConvertFrom-Json
+$ledger = if(Test-Path -LiteralPath $ledgerPath -PathType Leaf){
+    Get-Content -LiteralPath $ledgerPath -Raw | ConvertFrom-Json
+}else{[pscustomobject]@{rows=@()}}
+$processorStatus = if(Test-Path -LiteralPath $processorStatusPath -PathType Leaf){
+    Get-Content -LiteralPath $processorStatusPath -Raw | ConvertFrom-Json
+}else{$null}
 if (-not [bool]$catalog.reviewOnly -or [bool]$catalog.xmlExportEnabled) {
     throw 'Dashboard updater refused a non-review-only catalog.'
 }
@@ -105,8 +99,11 @@ foreach ($acquisition in @($catalog.acquisitions)) {
 }
 
 $included = New-Object Collections.Generic.List[object]
+$held = New-Object Collections.Generic.List[object]
 $excluded = New-Object Collections.Generic.List[object]
 $completedLedgerRows=@($ledger.rows|Where-Object{[string]$_.state-eq'COMPLETED'})
+$allLedgerRows=@($ledger.rows)
+$processorHoldRows=if($null-ne$processorStatus-and$processorStatus.PSObject.Properties.Name-contains'routeHolds'){@($processorStatus.routeHolds)}else{@()}
 $supersededCompletedRows=0
 $duplicateCurrentRowsCollapsed=0
 foreach ($catalogAcquisition in @($catalog.acquisitions)) {
@@ -117,6 +114,35 @@ foreach ($catalogAcquisition in @($catalog.acquisitions)) {
     $currentRows=@($identityRows|Where-Object{[string]$_.jobKey-eq$expectedJobKey})
     $supersededCompletedRows+=@($identityRows|Where-Object{[string]$_.jobKey-ne$expectedJobKey}).Count
     if($currentRows.Count-eq0){
+        $holdReason=Property-Text $catalogAcquisition 'routeState'
+        $holdDetail=''
+        $holdSource='CATALOG_ROUTE_STATE'
+        $currentNonCompleted=@($allLedgerRows|Where-Object{[string]$_.identity-eq$identity-and[string]$_.jobKey-eq$expectedJobKey-and[string]$_.state-ne'COMPLETED'}|Sort-Object finishedUtc -Descending)
+        $processorHold=@($processorHoldRows|Where-Object{[string]$_.identity-eq$identity}|Select-Object -First 1)
+        if($currentNonCompleted.Count-gt0){
+            $holdRow=$currentNonCompleted[0]
+            $holdReason=Property-Text $holdRow 'reason'
+            if([string]::IsNullOrWhiteSpace($holdReason)){$holdReason=Property-Text $holdRow 'state'}
+            $holdDetail=Property-Text $holdRow 'message'
+            $holdSource='CURRENT_LEDGER_ROW'
+        }elseif($processorHold.Count-gt0){
+            $holdReason=Property-Text $processorHold[0] 'state'
+            $holdDetail=Property-Text $processorHold[0] 'detail'
+            $holdSource='PROCESSOR_ROUTE_HOLD'
+        }elseif([string]::IsNullOrWhiteSpace($holdReason)){
+            $holdReason='WAITING_FOR_CURRENT_INSPECTION_RESULT'
+            $holdSource='DASHBOARD_CURRENT_RESULT_WAIT'
+        }
+        $held.Add([ordered]@{
+            identity=$identity;physicalIdentity=(Property-Text $catalogAcquisition 'physicalIdentity')
+            lot=(Property-Text $catalogAcquisition 'lot');scanTimestampLocal=(Property-Text $catalogAcquisition 'scanTimestampLocal')
+            slot=(Property-Text $catalogAcquisition 'slot');domain=(Property-Text $catalogAcquisition 'domain')
+            waferId=(Property-Text $catalogAcquisition 'waferId');product=(Property-Text $catalogAcquisition 'product')
+            processBlock=(Property-Text $catalogAcquisition 'processBlock');step=(Property-Text $catalogAcquisition 'step')
+            lastTool=(Property-Text $catalogAcquisition 'tool');holdReason=$holdReason;holdDetail=$holdDetail
+            holdSource=$holdSource;currentJobKey=$expectedJobKey;historicalCompletedRows=$identityRows.Count
+            reviewOnly=$true;xmlEligible=$false
+        })
         if($identityRows.Count-gt0){
             $excluded.Add([pscustomobject]@{
                 identity=$identity
@@ -188,7 +214,7 @@ foreach ($catalogAcquisition in @($catalog.acquisitions)) {
     })
 }
 
-if ($included.Count -eq 0) {
+if ($included.Count -eq 0 -and $held.Count -eq 0) {
     Write-AtomicJson $readinessPath ([ordered]@{
         schema='argos_jbod_dashboard_catalog_status_v1'
         updatedUtc=[DateTime]::UtcNow.ToString('o')
@@ -312,6 +338,7 @@ $manifest = [ordered]@{
         [ordered]@{label='Wafer ID';key='waferId';scope='wafer'}
     )
     scanSessions=@($sessions.ToArray() | Sort-Object scanTimestampLocal -Descending)
+    heldAcquisitions=@($held.ToArray() | Sort-Object scanTimestampLocal -Descending)
 }
 Write-AtomicJson $manifestPath $manifest 18
 Write-AtomicJson $readinessPath ([ordered]@{
@@ -321,6 +348,7 @@ Write-AtomicJson $readinessPath ([ordered]@{
     manifestPath=$manifestPath
     scanSessions=$sessions.Count
     includedWafers=$included.Count
+    heldWafers=$held.Count
     supersededCompletedRows=$supersededCompletedRows
     duplicateCurrentRowsCollapsed=$duplicateCurrentRowsCollapsed
     excluded=$excluded.ToArray()
@@ -333,6 +361,7 @@ Write-AtomicJson $readinessPath ([ordered]@{
     Manifest=$manifestPath
     ScanSessions=$sessions.Count
     Wafers=$included.Count
+    HeldWafers=$held.Count
     SupersededCompletedRows=$supersededCompletedRows
     DuplicateCurrentRowsCollapsed=$duplicateCurrentRowsCollapsed
     Excluded=$excluded.Count
