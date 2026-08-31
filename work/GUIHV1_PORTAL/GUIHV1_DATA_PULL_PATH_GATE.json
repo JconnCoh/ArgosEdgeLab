@@ -1,0 +1,68 @@
+{
+  "schema": "argos_project_portal_draft_path_gate_v1",
+  "createdUtc": "2026-08-31T17:38:10.4347510Z",
+  "state": "PASS_PATH_BUDGET",
+  "lifecycle": "DRAFT",
+  "requestIdAssigned": false,
+  "requestIdLengthModel": "REQ_20260831T173700000Z_XXXXXXXXXXXX",
+  "responseIdLengthModel": "R_XXXXXXXXXXXX_20260831173700000_XXXXXXXX",
+  "jobClass": "DATA_PULL",
+  "definition": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_DATA_PULL_DEFINITION.json",
+    "sha256": "8C5950029B2888EB20DAC89E2AA87FBB211E535259C54AD5A9682560FE45C2EE"
+  },
+  "requiredPresent": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_REQUIRED_PRESENT.json",
+    "sha256": "486CC0AEF06E6C8E327BF48A1AD61026D8661C3F27FA36A8FB6B7A947741C35E"
+  },
+  "installedRoute": {
+    "endpointWorkerSha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+    "endpointConfigEvidenceSha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "incomingRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/pending",
+    "processedRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/processed",
+    "responsePartialAndReadyRoot": "C:/ProgramData/ArgosProjectPortalRO/to_argos/pending",
+    "responseSenderSentRoot": "C:/ProgramData/ArgosProjectPortalRO/to_argos/sent",
+    "stateRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/state",
+    "shareRequestRoot": "U:/ProjectPortalRO/requests",
+    "shareResponseRoot": "U:/ProjectPortalRO/responses",
+    "plannedLocalPackageRoot": "C:/G1O",
+    "plannedLocalExtractionRoot": "C:/G1R"
+  },
+  "requestContract": {
+    "relativePathCount": 17,
+    "maximumFiles": 17,
+    "maximumBytes": 134217728,
+    "maxResultBytes": 134217728,
+    "optionalPathCount": 0,
+    "longestSourceRelativeLeaf": "metadata/verified/ACTIVE_VERIFIED_METADATA_OVERLAY.json",
+    "longestReturnedZipEntry": "data/JBOD_PROCESSOR_REVIEW/metadata/verified/ACTIVE_VERIFIED_METADATA_OVERLAY.json",
+    "sourcePathsPreservedInsideNestedZip": true,
+    "imageOrBinaryFilesRequested": 0
+  },
+  "reservedSuffixCharacters": 32,
+  "routeRows": [
+    {"hop":"localSignedManifest","pathLength":78,"effectiveLength":110,"longestComponentLength":42,"state":"PASS_PATH_BUDGET"},
+    {"hop":"localFinalZip","pathLength":53,"effectiveLength":85,"longestComponentLength":46,"state":"PASS_PATH_BUDGET"},
+    {"hop":"shareUpload","pathLength":74,"effectiveLength":106,"longestComponentLength":46,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointIncoming","pathLength":104,"effectiveLength":136,"longestComponentLength":46,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointProcessed","pathLength":106,"effectiveLength":138,"longestComponentLength":46,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointDataPullPartial","pathLength":110,"effectiveLength":142,"longestComponentLength":54,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponsePartial","pathLength":102,"effectiveLength":134,"longestComponentLength":49,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponsePayload","pathLength":122,"effectiveLength":154,"longestComponentLength":49,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponseManifest","pathLength":132,"effectiveLength":164,"longestComponentLength":49,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponseReady","pathLength":104,"effectiveLength":136,"longestComponentLength":51,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponseSent","pathLength":101,"effectiveLength":133,"longestComponentLength":51,"state":"PASS_PATH_BUDGET"},
+    {"hop":"shareResponse","pathLength":80,"effectiveLength":112,"longestComponentLength":51,"state":"PASS_PATH_BUDGET"},
+    {"hop":"laptopResponsePayload","pathLength":74,"effectiveLength":106,"longestComponentLength":47,"state":"PASS_PATH_BUDGET"},
+    {"hop":"laptopInnerLongest","pathLength":137,"effectiveLength":169,"longestComponentLength":47,"state":"PASS_PATH_BUDGET"}
+  ],
+  "maximumEffectiveLength": 169,
+  "maximumComponentLength": 54,
+  "signed": false,
+  "published": false,
+  "publicationAuthorized": false,
+  "maximumRequestsAuthorized": 0,
+  "retryOnFailure": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

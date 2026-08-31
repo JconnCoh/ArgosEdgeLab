@@ -1,0 +1,56 @@
+{
+  "schema": "argos_guihv1_data_pull_draft_gate_v1",
+  "createdUtc": "2026-08-31T17:32:20Z",
+  "state": "PASS_GUIHV1_READ_ONLY_OBSERVATION_DESIGN",
+  "lifecycle": "DRAFT",
+  "recoveryIntent": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_RECOVERY_INTENT.json",
+    "sha256": "95F491F60496D1776117085B17A5F42E38D8227C6CBA9D756958790E6C14AB23",
+    "preflightState": "PASS_ARGOS_RECOVERY_INTENT"
+  },
+  "requestDefinition": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_DATA_PULL_DEFINITION.json",
+    "sha256": "8C5950029B2888EB20DAC89E2AA87FBB211E535259C54AD5A9682560FE45C2EE",
+    "jobClass": "DATA_PULL",
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "maximumFiles": 17,
+    "maximumBytes": 134217728
+  },
+  "requiredPresent": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_REQUIRED_PRESENT.json",
+    "sha256": "486CC0AEF06E6C8E327BF48A1AD61026D8661C3F27FA36A8FB6B7A947741C35E"
+  },
+  "pathGate": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_DATA_PULL_PATH_GATE.json",
+    "sha256": "9855BC82FDFF81AC7581AF6A1AEFF5256694DF44E2E5A61DDD8CB1453ED125FB",
+    "maximumEffectiveLength": 169
+  },
+  "preaction": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_DATA_PULL_PREACTION.json",
+    "sha256": "725FDD538A3C8DA5DADB49BD865FEE13E027261DB5EBC0ED618EA07CB838D6F9",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"
+  },
+  "qualifiedCapability": {
+    "endpointWorkerSha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+    "installedConfigEvidenceSha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "capabilityInventorySha256": "381D3E9C4F17218DF37D8E8CE029853216E9BEA5A2FBDABC6AEB7861A29DC8A2",
+    "capability": "approvedRootExactFiles"
+  },
+  "requiredReconciliation": {
+    "completeBoundedCurrentCatalog": true,
+    "completeBoundedCurrentLedger": true,
+    "completeBoundedDashboard": true,
+    "exactScribeAndInspectionHoldReasons": true,
+    "installedDashboardProducerBytes": true,
+    "installedViewerSourceBytes": true,
+    "namedLotIsOnlyRegressionCohort": true
+  },
+  "requestIdAssigned": false,
+  "signed": false,
+  "published": false,
+  "deployed": false,
+  "externalMutationPerformed": false,
+  "reviewOnly": true,
+  "xmlExportEnabled": false,
+  "productionRoutingEnabled": false
+}

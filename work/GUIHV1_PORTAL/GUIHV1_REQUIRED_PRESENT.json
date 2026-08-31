@@ -1,0 +1,36 @@
+{
+  "schema": "argos_required_present_paths_v1",
+  "createdUtc": "2026-08-31T17:36:00Z",
+  "state": "LOCKED_INPUT",
+  "derivedFrom": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_POST_AVC1_VALIDATION_REQUIRED_PRESENT_20260822.json",
+    "role": "QUALIFIED_REQUIRED_PRESENT_PREDECESSOR_WITHOUT_STALE_LIVE_CONCLUSIONS"
+  },
+  "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+  "requiredRelativePaths": [
+    "identity/SCRIBE_IDENTITY_QUEUE.json",
+    "catalog/ALL_WAFER_CATALOG.json",
+    "identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json",
+    "metadata/verified/ACTIVE_VERIFIED_METADATA_OVERLAY.json",
+    "processor/PROCESSING_LEDGER.json",
+    "dashboard_manifest.json",
+    "dashboard/DASHBOARD_CATALOG_STATUS.json",
+    "processor/PROCESSOR_STATUS.json",
+    "PROCESSOR_CONFIG.json",
+    "state/STATUS.json",
+    "Run-JbodAllWaferProcessor.ps1",
+    "Invoke-JbodAllWaferInventory.ps1",
+    "Invoke-JbodAllWaferProcessingPass.ps1",
+    "Update-JbodDashboardManifest.ps1",
+    "Show-JbodAllWaferTray.ps1",
+    "Open-JbodCompletedLot.ps1",
+    "runtime/viewer/Program.cs"
+  ],
+  "requiredCount": 17,
+  "optionalRelativePaths": [],
+  "imageOrBinaryPaths": [],
+  "maximumRequests": 1,
+  "retryOnFailure": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

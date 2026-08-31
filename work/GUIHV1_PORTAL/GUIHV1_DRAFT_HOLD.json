@@ -1,0 +1,24 @@
+{
+  "schema": "argos_guihv1_draft_hold_v1",
+  "createdUtc": "2026-08-31T16:18:00Z",
+  "state": "PENDING_GATE",
+  "reason": "AUTHORITATIVE_CURRENT_CATALOG_LEDGER_DASHBOARD_RECONCILIATION_REQUIRED_BEFORE_GUI_MUTATION",
+  "localDiagnosis": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_DIAGNOSIS.json",
+    "role": "LOCAL_SOURCE_AND_FIXTURE_EVIDENCE_ONLY",
+    "directOrSignedObservation": false
+  },
+  "requiredObservation": {
+    "intent": "work/GUIHV1_PORTAL/GUIHV1_RECOVERY_INTENT.json",
+    "requestDefinition": "work/GUIHV1_PORTAL/GUIHV1_DATA_PULL_DEFINITION.json",
+    "signedReadOnlyDataPullRequired": true,
+    "requiredDecision": "Prove the complete bounded authoritative catalog and ledger expected identities already exist in the dashboard, then prove the unchanged installed viewer still omits them. If the dashboard lacks the rows, repair the producer or data state before any GUI change."
+  },
+  "draftPatchEligibleForSigning": false,
+  "draftPatchEligibleForPublication": false,
+  "draftPatchEligibleForDeployment": false,
+  "externalMutationPerformed": false,
+  "reviewOnly": true,
+  "xmlExportEnabled": false,
+  "productionRoutingEnabled": false
+}

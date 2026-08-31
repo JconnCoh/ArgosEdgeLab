@@ -1,0 +1,22 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "GUIHV1_FROM_RELEASED_GUIR9C3_DASHBOARD_HOLD_VISIBILITY",
+  "pairs": [
+    {
+      "source": "work/GUIR9C3_PORTAL/payload/Apply-GUIR9C3DirectGuiPatch.ps1",
+      "generated": "work/GUIHV1_PORTAL/source/payload/Apply-GUIHV1DirectGuiPatch.ps1",
+      "rootRules": [
+        {"sourceRoot": "C:\\ProgramData", "generatedRoot": "C:\\ProgramData", "disposition": "UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/GUIR9C3_PORTAL/MAINTENANCE_DEFINITION.json",
+      "generated": "work/GUIHV1_PORTAL/source/MAINTENANCE_DEFINITION.json",
+      "rootRules": [
+        {"sourceRoot": "\\\\ArgosEdgeLabRO\\AllWaferProcessorV2", "generatedRoot": "\\\\ArgosEdgeLabRO\\AllWaferProcessorV2", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "\\\\runtime\\viewer", "generatedRoot": "\\\\runtime\\viewer", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "C:\\ProgramData", "generatedRoot": "C:\\ProgramData", "disposition": "UNCHANGED_ALLOWED"}
+      ]
+    }
+  ]
+}

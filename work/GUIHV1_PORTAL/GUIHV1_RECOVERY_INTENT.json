@@ -1,0 +1,198 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-31T16:18:00Z",
+  "incidentId": "GUI_HOLD_VISIBILITY_CURRENT_CATALOG_20260831",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DATA_PULL",
+    "jobClass": "DATA_PULL",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/pkg/payload/W.ps1",
+      "sha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json",
+      "sha256": "381D3E9C4F17218DF37D8E8CE029853216E9BEA5A2FBDABC6AEB7861A29DC8A2"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_EXACT_ENDPOINT_GATE.json",
+      "sha256": "BC97C8D81F439D239CBF59B41EC1F663F2039751AD506FE59B279C72B21A8F45"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/catalog/ALL_WAFER_CATALOG.json",
+        "sourceSchema": "argos all-wafer catalog",
+        "selector": "complete bounded current acquisition set across all inspection families",
+        "uniquenessKey": "current acquisition identity and acquisition fingerprint",
+        "maximumRows": 10000
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json",
+        "sourceSchema": "argos confirmed scribe overlay",
+        "selector": "complete bounded current confirmed identity set",
+        "uniquenessKey": "physical identity",
+        "maximumRows": 10000
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/metadata/verified/ACTIVE_VERIFIED_METADATA_OVERLAY.json",
+        "sourceSchema": "argos verified metadata overlay",
+        "selector": "complete bounded current verified metadata set",
+        "uniquenessKey": "physical identity",
+        "maximumRows": 10000
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/processor/PROCESSING_LEDGER.json",
+        "sourceSchema": "argos processing ledger",
+        "selector": "complete bounded current and held processing set",
+        "uniquenessKey": "job key and current acquisition fingerprint",
+        "maximumRows": 10000
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/dashboard_manifest.json",
+        "sourceSchema": "argos dashboard manifest",
+        "selector": "complete bounded dashboard visible and held identity set",
+        "uniquenessKey": "physical identity, domain, and current acquisition fingerprint",
+        "maximumRows": 10000
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/dashboard/DASHBOARD_CATALOG_STATUS.json",
+        "sourceSchema": "argos dashboard catalog status",
+        "selector": "current refresh state and all explicit exclusion or hold reasons",
+        "uniquenessKey": "identity and reason",
+        "maximumRows": 10000
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/SCRIBE_IDENTITY_QUEUE.json",
+        "sourceSchema": "argos scribe identity queue",
+        "selector": "complete bounded queue state and exact hold reason set",
+        "uniquenessKey": "physical identity",
+        "maximumRows": 10000
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/processor/PROCESSOR_STATUS.json",
+        "sourceSchema": "argos processor status",
+        "selector": "latest producer state and output revision",
+        "uniquenessKey": "status revision",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/PROCESSOR_CONFIG.json",
+        "sourceSchema": "argos processor configuration",
+        "selector": "exact installed review-only configuration",
+        "uniquenessKey": "configuration revision",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/state/STATUS.json",
+        "sourceSchema": "argos aggregate status",
+        "selector": "latest aggregate state and hold counters",
+        "uniquenessKey": "status revision",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Run-JbodAllWaferProcessor.ps1",
+        "sourceSchema": "installed Windows PowerShell source",
+        "selector": "exact installed producer caller bytes and parameter surface",
+        "uniquenessKey": "normalized path",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Invoke-JbodAllWaferInventory.ps1",
+        "sourceSchema": "installed Windows PowerShell source",
+        "selector": "exact installed catalog producer predicates",
+        "uniquenessKey": "normalized path",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Invoke-JbodAllWaferProcessingPass.ps1",
+        "sourceSchema": "installed Windows PowerShell source",
+        "selector": "exact installed ledger producer predicates",
+        "uniquenessKey": "normalized path",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Update-JbodDashboardManifest.ps1",
+        "sourceSchema": "installed Windows PowerShell source",
+        "selector": "exact installed dashboard producer bytes and admission predicates",
+        "uniquenessKey": "normalized path",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Show-JbodAllWaferTray.ps1",
+        "sourceSchema": "installed Windows PowerShell source",
+        "selector": "exact installed tray refresh and viewer launch predicates",
+        "uniquenessKey": "normalized path",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Open-JbodCompletedLot.ps1",
+        "sourceSchema": "installed Windows PowerShell source",
+        "selector": "exact installed viewer launcher predicates",
+        "uniquenessKey": "normalized path",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/runtime/viewer/Program.cs",
+        "sourceSchema": "installed C Sharp viewer source",
+        "selector": "exact unchanged viewer model and tab predicates",
+        "uniquenessKey": "normalized path",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": ["approvedRootExactFiles"],
+    "requestedFields": [
+      "catalog.completeCurrentIdentitySet",
+      "ledger.completeCurrentCompletedAndHeldIdentitySet",
+      "dashboard.completeVisibleAndHeldIdentitySet",
+      "dashboard.allExclusionAndHoldReasons",
+      "dashboard.refreshRevision",
+      "scribeQueue.completeStateAndReasonSet",
+      "confirmedIdentity.completeCurrentSet",
+      "verifiedMetadata.completeCurrentSet",
+      "installedProducerAndConsumer.parameterSurfaces",
+      "installedDashboardProducer.exactBytes",
+      "installedViewerSource.exactBytes"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
