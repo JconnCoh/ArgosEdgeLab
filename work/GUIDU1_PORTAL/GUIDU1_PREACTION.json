@@ -1,0 +1,71 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "GUIDU1_UPDATER_ONLY_HOLD_VISIBILITY_20260831",
+  "createdUtc": "2026-08-31T19:58:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "SIGN_PUBLISH_EXECUTE_ONE_UPDATER_ONLY_HOLD_VISIBILITY_CORRECTION",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C",
+  "dependencies": [
+    {"path":"AGENTS.md","sha256":"9B33DBD2EADCBA7D37E4AA444EC2A7E3CEF568A46EE4639AB06B0DB1FA13CBF3"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"09F03D73133023EF96C9737B626001B791C216A91F5F7044F004DE09CCA2F754"},
+    {"path":"work/GUIDU1_PORTAL/GUIDU1_RECOVERY_INTENT.json","sha256":"16287857F038CEFA6FED1F7C2A9E4BD7B52C1CD09FE26AAFD1A9B61F017C4A53"},
+    {"path":"work/GUIDU1_PORTAL/GUIDU1_OBSERVATION_EVIDENCE.json","sha256":"81A4788F3D2AE0444E733D60CC8AF53A0545F52D7881B2756C231431E84E7F1F"},
+    {"path":"work/GUIDU1_PORTAL/GUIDU1_RECOVERY_DESIGN.json","sha256":"50BB9A5FD617DE21F03D78F4C5A5DFB7D0F7F4BD6A00824E168A06C4652CF44E"},
+    {"path":"work/GUIDU1_PORTAL/source/MAINTENANCE_DEFINITION.json","sha256":"45A3059F0337ACF7A15C659D3D06339B3EED238E8B2881DFD651D5541FFA6E53"},
+    {"path":"work/GUIDU1_PORTAL/source/payload/Invoke-GUIDU1DashboardUpdater.ps1","sha256":"EAA133145E32643855A6E9E33587908F738A9CF75F67ABBFD59944FA1810DA9E"},
+    {"path":"work/GUIDU1_PORTAL/source/payload/Update-JbodDashboardManifest.ps1","sha256":"73C2289B58F6F6B23DD2FA12E847AFF171B3FAC45153202E93EE00E0B7533FBA"},
+    {"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    {"path":"work/OPENCV_SCRIBE_O2D10/O2D10_COMPLETE_ROUTE_GATE_R2.json","sha256":"6938DC3E37A5208DC1F3E2F8F7A5703CC9A6B70B7533556E584F531DCD310D81"},
+    {"path":"work/GUIPR1_PORTAL/GUIPR1_RESPONSE_GATE.json","sha256":"186E3EC052129F93472B24008F586C5AC2AF65AFA2961B4F1B257E8D97735B50"},
+    {"path":"utilities/Confirm-ArgosRecoveryIntent.ps1","sha256":"84CE818367586DD725EB196387D28442278A0FB504A9284A36B5851E48ABA1B1"},
+    {"path":"utilities/Confirm-ArgosZeroRecurrencePreaction.ps1","sha256":"303EE814B441365120DE1083DE018513F3D1ABE523236291460336C4CB2DE5BB"},
+    {"path":"utilities/Confirm-ArgosPathBudget.ps1","sha256":"3A4820E81F25CEA9AB8EB5BE9E60B6324915DFC260132145CB8FB02970360835"},
+    {"path":"utilities/Confirm-ArgosPowerShellHarnessSafety.ps1","sha256":"94CF79624915831B26E7CCF5B799B905EF16F43B601FE73B324630736D55B731"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_COLLECTION_CASE_GATE.json",
+    "sha256": "81A360B01F3E7BF82A5FF25BE1EEFC0A599BB5129B253692513778170A5F7AE0",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": ["R21P2"]
+  },
+  "boundedAction": {
+    "maximumRequests": 1,
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedSemanticChanges": 1,
+    "sameBytesConfigSelfSwap": false,
+    "taskActions": [],
+    "processActions": [],
+    "detectorScoring": false,
+    "imageProcessing": false,
+    "guiBytesChanged": false,
+    "xml": false,
+    "retryOnFailure": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

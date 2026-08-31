@@ -1,0 +1,84 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-31T19:52:00Z",
+  "incidentId": "GUI_DASHBOARD_CURRENT_HOLD_OMISSION_GUIDU1_20260831",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": { "path": "", "sha256": "" },
+    "workflowReviewClearance": { "path": "", "sha256": "" }
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": true,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/GUIPR1_PORTAL/GUIPR1_RESPONSE_GATE.json",
+      "sha256": "186E3EC052129F93472B24008F586C5AC2AF65AFA2961B4F1B257E8D97735B50"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_COMPLETE_ROUTE_GATE_R2.json",
+      "sha256": "6938DC3E37A5208DC1F3E2F8F7A5703CC9A6B70B7533556E584F531DCD310D81"
+    },
+    "qualifiedAdminGate": { "path": "", "sha256": "" }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Update-JbodDashboardManifest.ps1",
+        "sourceSchema": "installed Windows PowerShell source",
+        "selector": "signed exact predecessor hash and ConfigPath parameter surface",
+        "uniquenessKey": "normalizedPath",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/runtime/viewer/Program.cs",
+        "sourceSchema": "installed GUI source",
+        "selector": "unchanged GUI byte hash",
+        "uniquenessKey": "normalizedPath",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": ["dashboardUpdaterInstall", "dashboardUpdaterRun", "holdSetValidation"],
+    "requestedFields": ["catalog.acquisitions", "manifest.scanSessions", "manifest.heldAcquisitions", "dashboardStatus"],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/GUIDU1_PORTAL/GUIDU1_OBSERVATION_EVIDENCE.json",
+      "sha256": "81A4788F3D2AE0444E733D60CC8AF53A0545F52D7881B2756C231431E84E7F1F"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

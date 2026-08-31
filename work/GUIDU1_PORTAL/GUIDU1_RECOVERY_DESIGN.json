@@ -1,0 +1,37 @@
+{
+  "schema": "argos_guidu1_updater_only_recovery_design_v1",
+  "createdUtc": "2026-08-31T19:52:00Z",
+  "state": "PASS_GUIDU1_UPDATER_ONLY_DESIGN",
+  "freshNamespace": "GUIDU1",
+  "change": {
+    "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Update-JbodDashboardManifest.ps1",
+    "approvedPredecessorSha256": "F73AC7C38139098B079A23CC9C7653A93D7464BE1D4376708B25B3346B704E5D",
+    "targetSha256": "73C2289B58F6F6B23DD2FA12E847AFF171B3FAC45153202E93EE00E0B7533FBA",
+    "allowCreate": false
+  },
+  "entryPointSha256": "EAA133145E32643855A6E9E33587908F738A9CF75F67ABBFD59944FA1810DA9E",
+  "validation": [
+    "producer terminal success precedes output validation",
+    "completed acquisition-domain row set unchanged",
+    "every current held acquisition-domain row present",
+    "hold reason/detail/source/currentJobKey exact",
+    "completed plus held rows exactly cover current catalog",
+    "GUI hashes, process snapshot, and Argos task snapshot unchanged"
+  ],
+  "rehearsal": {
+    "preflight": "PASS_GUIDU1_UPDATER_ONLY_PREFLIGHT",
+    "success": "PASS_GUIDU1_UPDATER_INSTALLED_RAN_AND_COMPLETE_HOLD_SET_VALIDATED",
+    "injectedFailure": "INJECTED_GUIDU1_POST_UPDATER_FAILURE",
+    "windowsPowerShell51": true,
+    "harnessSafety": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY"
+  },
+  "taskActions": [],
+  "processActions": [],
+  "guiBytesChanged": false,
+  "detectorScoring": false,
+  "imageProcessing": false,
+  "xml": false,
+  "retryOnFailure": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

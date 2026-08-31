@@ -1,0 +1,33 @@
+{
+  "schema":"argos_guidu1_project_portal_prepublication_path_gate_v1",
+  "createdUtc":"2026-08-31T20:01:00Z",
+  "state":"PASS_GUIDU1_EXACT_REQUEST_PATH_BUDGET",
+  "requestId":"REQ_20260831T195924993Z_C638A5B14C72",
+  "responseIdMaximumModel":"R_XXXXXXXXXXXX_20260831195924993_XXXXXXXX",
+  "requestManifestSha256":"77078BB41EF5C4C714A44F13A842D59D82CACE3F096EB3852FF615D8E5AA514F",
+  "installedRoute":{"endpointWorkerSha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250","routeGateSha256":"6938DC3E37A5208DC1F3E2F8F7A5703CC9A6B70B7533556E584F531DCD310D81","queueSafetyGateSha256":"170015C817786111E68D6455964E49071D1E27BCB3CC250E25962FB417C30618"},
+  "reservedSuffixCharacters":32,
+  "rows":[
+    {"hop":"localFinalZip","path":"C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-jbod-gui-xml-scribe-import\\work\\GUIDU1_PORTAL\\final\\REQ_20260831T195924993Z_C638A5B14C72.ready.zip","pathLength":149,"effectiveLength":181,"longestComponentLength":46,"state":"PASS_PATH_BUDGET"},
+    {"hop":"shareUpload","path":"U:\\ProjectPortalRO\\requests\\REQ_20260831T195924993Z_C638A5B14C72.ready.zip.upload","pathLength":81,"effectiveLength":113,"longestComponentLength":53,"state":"PASS_PATH_BUDGET"},
+    {"hop":"shareReady","path":"U:\\ProjectPortalRO\\requests\\REQ_20260831T195924993Z_C638A5B14C72.ready.zip","pathLength":74,"effectiveLength":106,"longestComponentLength":46,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointIncoming","path":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_20260831T195924993Z_C638A5B14C72.ready","pathLength":100,"effectiveLength":132,"longestComponentLength":42,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointProcessed","path":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\REQ_20260831T195924993Z_C638A5B14C72.ready","pathLength":102,"effectiveLength":134,"longestComponentLength":42,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointMaintenanceRoot","path":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\maintenance\\REQ_20260831T195924993Z_C638A5B14C72","pathLength":104,"effectiveLength":136,"longestComponentLength":36,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointPrior","path":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\maintenance\\REQ_20260831T195924993Z_C638A5B14C72\\prior\\Update-JbodDashboardManifest.ps1","pathLength":143,"effectiveLength":175,"longestComponentLength":36,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointFailedNew","path":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\maintenance\\REQ_20260831T195924993Z_C638A5B14C72\\failed_new\\Update-JbodDashboardManifest.ps1","pathLength":148,"effectiveLength":180,"longestComponentLength":36,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResult","path":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\maintenance\\REQ_20260831T195924993Z_C638A5B14C72\\result\\RESULT.json","pathLength":123,"effectiveLength":155,"longestComponentLength":36,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponsePartial","path":"C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_XXXXXXXXXXXX_20260831195924993_XXXXXXXX.partial","pathLength":102,"effectiveLength":134,"longestComponentLength":49,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponseResult","path":"C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_XXXXXXXXXXXX_20260831195924993_XXXXXXXX.partial\\RESULT.json","pathLength":114,"effectiveLength":146,"longestComponentLength":49,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponseManifest","path":"C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_XXXXXXXXXXXX_20260831195924993_XXXXXXXX.partial\\PORTAL_RESPONSE_MANIFEST.json","pathLength":132,"effectiveLength":164,"longestComponentLength":49,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponseReady","path":"C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_XXXXXXXXXXXX_20260831195924993_XXXXXXXX.ready","pathLength":100,"effectiveLength":132,"longestComponentLength":47,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponseSent","path":"C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\sent\\R_XXXXXXXXXXXX_20260831195924993_XXXXXXXX.ready","pathLength":97,"effectiveLength":129,"longestComponentLength":47,"state":"PASS_PATH_BUDGET"},
+    {"hop":"shareResponse","path":"U:\\ProjectPortalRO\\responses\\R_XXXXXXXXXXXX_20260831195924993_XXXXXXXX.ready.zip","pathLength":80,"effectiveLength":112,"longestComponentLength":51,"state":"PASS_PATH_BUDGET"},
+    {"hop":"laptopResponseResult","path":"C:\\GDU1R\\R_XXXXXXXXXXXX_20260831195924993_XXXXXXXX.ready\\RESULT.json","pathLength":68,"effectiveLength":100,"longestComponentLength":47,"state":"PASS_PATH_BUDGET"}
+  ],
+  "maximumEffectiveLength":181,
+  "maximumComponentLength":53,
+  "retryOnFailure":false,
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

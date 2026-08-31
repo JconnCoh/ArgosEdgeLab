@@ -1,0 +1,45 @@
+{
+  "schema": "argos_fixture_catalog_v1",
+  "reviewOnly": true,
+  "xmlExportEnabled": false,
+  "acquisitions": [
+    {
+      "identity": "ACQ-C1",
+      "physicalIdentity": "WAFER-C1",
+      "lot": "LOT-C",
+      "scanTimestampLocal": "2026-08-31T00:00:00",
+      "slot": "01",
+      "domain": "BARE_BACKSIDE",
+      "waferId": "ABCDEFGHIJKL",
+      "product": "P1",
+      "processBlock": "PB1",
+      "step": "S1",
+      "tool": "T1",
+      "routeState": "READY",
+      "metadataState": "SCRIBE_CONFIRMED_MES_SNAPSHOT",
+      "identityState": "HUMAN_CONFIRMED_REVIEW_ONLY",
+      "channels": {
+        "BF": { "path": "D:\\SRC\\C1.tif", "bytes": 1, "lastWriteUtc": "2026-08-31T00:00:00Z", "widthPx": 1, "heightPx": 1 }
+      }
+    },
+    {
+      "identity": "ACQ-H1",
+      "physicalIdentity": "WAFER-H1",
+      "lot": "LOT-H",
+      "scanTimestampLocal": "2026-08-31T00:01:00",
+      "slot": "02",
+      "domain": "BOWCOMP_BACKSIDE",
+      "waferId": "MNOPQRSTUVWX",
+      "product": "P2",
+      "processBlock": "PB2",
+      "step": "S2",
+      "tool": "T2",
+      "routeState": "",
+      "metadataState": "SCRIBE_CONFIRMED_MES_SNAPSHOT",
+      "identityState": "HUMAN_CONFIRMED_REVIEW_ONLY",
+      "channels": {
+        "BF": { "path": "D:\\SRC\\H1.tif", "bytes": 1, "lastWriteUtc": "2026-08-31T00:00:00Z", "widthPx": 1, "heightPx": 1 }
+      }
+    }
+  ]
+}

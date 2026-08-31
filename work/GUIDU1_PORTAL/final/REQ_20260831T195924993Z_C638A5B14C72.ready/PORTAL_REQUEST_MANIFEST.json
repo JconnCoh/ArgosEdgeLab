@@ -1,0 +1,46 @@
+{
+  "schema": "argos_project_portal_request_manifest_v1",
+  "requestId": "REQ_20260831T195924993Z_C638A5B14C72",
+  "createdUtc": "2026-08-31T19:59:24.9939252+00:00",
+  "expiresUtc": "2026-09-01T19:59:24.9939252+00:00",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "handler": "",
+  "maxResultBytes": 1048576,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false,
+  "credentialsIncluded": false,
+  "signerThumbprint": "C82181052919C475CF888F49427C1B55AE65DC12",
+  "signatureAlgorithm": "RSA-SHA256-PKCS1",
+  "files": [
+    {
+      "path": "payload/Invoke-GUIDU1DashboardUpdater.ps1",
+      "bytes": 15211,
+      "sha256": "EAA133145E32643855A6E9E33587908F738A9CF75F67ABBFD59944FA1810DA9E"
+    },
+    {
+      "path": "payload/Update-JbodDashboardManifest.ps1",
+      "bytes": 18370,
+      "sha256": "73C2289B58F6F6B23DD2FA12E847AFF171B3FAC45153202E93EE00E0B7533FBA"
+    }
+  ],
+  "entryPoint": "payload/Invoke-GUIDU1DashboardUpdater.ps1",
+  "changes": [
+    {
+      "source": "payload/Update-JbodDashboardManifest.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Update-JbodDashboardManifest.ps1",
+      "approvedPredecessorSha256": [
+        "F73AC7C38139098B079A23CC9C7653A93D7464BE1D4376708B25B3346B704E5D"
+      ],
+      "installedSha256": "73C2289B58F6F6B23DD2FA12E847AFF171B3FAC45153202E93EE00E0B7533FBA",
+      "allowCreate": false
+    }
+  ],
+  "allowedTaskActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_GUIDU1_UPDATER_INSTALLED_RAN_AND_COMPLETE_HOLD_SET_VALIDATED"
+  }
+}
