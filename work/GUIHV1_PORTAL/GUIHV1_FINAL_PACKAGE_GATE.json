@@ -1,0 +1,62 @@
+{
+  "schema": "argos_guihv1_final_package_gate_v1",
+  "createdUtc": "2026-08-31T18:01:34.0506031Z",
+  "state": "PASS_GUIHV1_FINAL_SIGNED_DATA_PULL_PACKAGE",
+  "lifecycle": "FROZEN",
+  "requestId": "REQ_20260831T175803632Z_81BAFDA47A65",
+  "targetRole": "JBOD",
+  "jobClass": "DATA_PULL",
+  "signedReadyRoot": "C:/G1O/REQ_20260831T175803632Z_81BAFDA47A65.ready",
+  "finalZip": {
+    "path": "work/GUIHV1_PORTAL/final/REQ_20260831T175803632Z_81BAFDA47A65.ready.zip",
+    "bytes": 1404,
+    "sha256": "194347D532E5722E2C738E3118820E3EC6B24C0BFAF1809D5EC2AC8E9133A2EF",
+    "entryCount": 2,
+    "roundTripExtractionRoot": "C:/G1R",
+    "signatureVerified": true
+  },
+  "requestManifest": {
+    "sha256": "7C104646F2B9CB084E8D90D8AC4F8DD331EE9CCE9EF807CBEE2362A6A10465F8",
+    "signatureSha256": "372E9C930A38161A78813DCC2F512D978A5B4D5CECB652EB505EA7B4D461458F",
+    "signerThumbprint": "C82181052919C475CF888F49427C1B55AE65DC12",
+    "createdUtc": "2026-08-31T17:58:03.6328363+00:00",
+    "expiresUtc": "2026-09-01T17:58:03.6328363+00:00"
+  },
+  "definition": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_DATA_PULL_DEFINITION.json",
+    "sha256": "8C5950029B2888EB20DAC89E2AA87FBB211E535259C54AD5A9682560FE45C2EE"
+  },
+  "requiredPresent": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_REQUIRED_PRESENT.json",
+    "sha256": "486CC0AEF06E6C8E327BF48A1AD61026D8661C3F27FA36A8FB6B7A947741C35E",
+    "requiredCount": 17,
+    "exactOrderAndSetMatched": true
+  },
+  "preaction": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_DATA_PULL_PREACTION.json",
+    "sha256": "725FDD538A3C8DA5DADB49BD865FEE13E027261DB5EBC0ED618EA07CB838D6F9",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"
+  },
+  "pathGate": {
+    "path": "work/GUIHV1_PORTAL/final/REQ_20260831T175803632Z_81BAFDA47A65.ready.zip.path_gate.json",
+    "sha256": "BAAF37FBAB2B19A55D87427DCEB473434CA0634A59EACF942C89739C6E8A9515",
+    "state": "PASS_GUIHV1_EXACT_REQUEST_PATH_BUDGET"
+  },
+  "bounds": {
+    "maximumFiles": 17,
+    "maximumBytes": 134217728,
+    "maxResultBytes": 134217728,
+    "payloadFiles": 0,
+    "imageOrBinaryPaths": 0
+  },
+  "authorizedOperation": "ONE_BOUNDED_READ_ONLY_CURRENT_VISIBILITY_DATA_PULL",
+  "retryOnFailure": false,
+  "taskActions": [],
+  "processActions": [],
+  "installedChanges": 0,
+  "imageRead": false,
+  "sourceMutation": false,
+  "queueOrLedgerMutation": false,
+  "xmlEligible": false,
+  "productionRoutingEnabled": false
+}
