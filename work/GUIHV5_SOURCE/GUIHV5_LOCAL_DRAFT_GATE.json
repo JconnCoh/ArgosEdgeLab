@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "revision": "GUIHV5",
+  "lifecycle": "DRAFT",
+  "disposition": "PASS_LOCAL_SUCCESSOR_DRAFT",
+  "sourcePredecessors": {
+    "Update-JbodDashboardManifest.ps1": {
+      "path": "work/AVC1/payload/Update-JbodDashboardManifest.ps1",
+      "sha256": "73C2289B58F6F6B23DD2FA12E847AFF171B3FAC45153202E93EE00E0B7533FBA"
+    },
+    "Program.cs": {
+      "path": "work/GUIHV4_PORTAL/source/payload/Program.cs",
+      "sha256": "DFEC0EA9E7A3C309CD7BD845099B23AB725A760035EBAC787340570C34181C76"
+    }
+  },
+  "draftSources": {
+    "Update-JbodDashboardManifest.ps1": {
+      "sha256": "DEFCC4B30DC888B771892F5E86D2FF4E58EE6868B9E3D5CBCD6CDB59EC5E9D2B",
+      "addedLines": 39,
+      "deletedLines": 0
+    },
+    "Program.cs": {
+      "sha256": "776BDD0F5D8F644851A8495187178417B021CF5350A988FD0DBFE94D0CFDEF0A",
+      "addedLines": 67,
+      "deletedLines": 6
+    },
+    "Test-GUIHV5ScribeHoldProjection.ps1": {
+      "sha256": "9C86DABC5C247F55040D983C4FD119BFFA09585EFCC3585BDFE51AF3C343EC92"
+    }
+  },
+  "signedFixtureInputs": {
+    "dashboardSha256": "E55F21FF680DD70AD2D71084B199F21862D91E9C4FC83D4943D0FF510846F16B",
+    "scribeQueueSha256": "9F8F5B0A0037DDDCA309579CF5A6339CF4215273ED153E46B3BD9D2E1E5D2541"
+  },
+  "regression": {
+    "state": "PASS_GUIHV5_EXACT_SIGNED_SCRIBE_HOLD_REGRESSION",
+    "acquisitionScribeHoldRows": 380,
+    "physicalScribeRows": 190,
+    "viewerDisplayRows": 1532,
+    "unrelatedHoldRows": 1342,
+    "missingQueueJoins": 0,
+    "queueStateCounts": {
+      "SCRIBE_IDENTITY_CONFIRMATION_HOLD": 126,
+      "PENDING_AUTOMATIC_NOTCH_AND_SEMI_M12_PROPOSAL": 55,
+      "PROPOSAL_READY_OPERATOR_CONFIRMATION_REQUIRED": 5,
+      "HOLD_HUMAN_VISIBLE_NONCANONICAL_CHECKSUM": 4
+    },
+    "operatorReviewReady": 5,
+    "unrelatedRowsUnchanged": true,
+    "viewerProjectionExitCode": 0,
+    "viewerProjectionArguments": [1532, 190, 5],
+    "compiledViewerSha256": "018A74CB5EFA08D59810B09BD16EEF5E3F0345A4C4335CB59ABE334ABE888AA7",
+    "derivedDashboardSha256": "A0D8276D3BF2DF3719AFE311506DB8A69F13EB37C89D7543D4BEC5138129725C"
+  },
+  "frozenArtifactsModified": false,
+  "jbodMutationPerformed": false,
+  "published": false,
+  "publicationHold": "DETECTOR_PORTAL_TERMINAL_AND_LANE_CLEAR_REQUIRED"
+}
