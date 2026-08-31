@@ -1481,7 +1481,7 @@ namespace ArgosEdgeLab.ReviewApp
 
         internal static DashboardManifest LoadManifest(string manifestPath)
         {
-            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            JavaScriptSerializer serializer = new JavaScriptSerializer { MaxJsonLength = 64 * 1024 * 1024 };
             DashboardManifest loaded = serializer.Deserialize<DashboardManifest>(File.ReadAllText(manifestPath));
             string appDir = Path.GetDirectoryName(Path.GetFullPath(manifestPath));
             if (loaded.shareImageQueueEnabled && !Path.IsPathRooted(loaded.shareImageQueueRoot))
