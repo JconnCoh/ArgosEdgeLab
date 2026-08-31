@@ -1,0 +1,70 @@
+{
+  "schema": "argos_guipr2_final_package_gate_v1",
+  "createdUtc": "2026-08-31T20:03:00Z",
+  "state": "PASS_GUIPR2_FINAL_SIGNED_CURRENT_BYTES_DATA_PULL_PACKAGE",
+  "lifecycle": "FROZEN",
+  "requestId": "REQ_20260831T200115797Z_25C5E103B730",
+  "targetRole": "JBOD",
+  "jobClass": "DATA_PULL",
+  "signedReadyRoot": "C:/G2O/REQ_20260831T200115797Z_25C5E103B730.ready",
+  "finalZip": {
+    "path": "work/GUIPR2_PORTAL/final/REQ_20260831T200115797Z_25C5E103B730.ready.zip",
+    "bytes": 1403,
+    "sha256": "E52512F7C75D6A422079209DE99E4DB4CFC4FD8284CD9644F228AE502795627E",
+    "entryCount": 2,
+    "roundTripExtractionRoot": "C:/G2R",
+    "signatureVerified": true
+  },
+  "requestManifest": {
+    "sha256": "E0D9070CCDF0DC2E5698913159FC75B032C693C1EFD32E9E244A2D6D729B12A6",
+    "signatureSha256": "F1EBDBA4CA35E0E9CCD79FC995E92C5136168ED67D6392688C7689115CBEAB2D",
+    "signerThumbprint": "C82181052919C475CF888F49427C1B55AE65DC12",
+    "createdUtc": "2026-08-31T15:01:15.7978154-05:00",
+    "expiresUtc": "2026-09-01T15:01:15.7978154-05:00"
+  },
+  "definition": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_DATA_PULL_DEFINITION.json",
+    "sha256": "8C5950029B2888EB20DAC89E2AA87FBB211E535259C54AD5A9682560FE45C2EE"
+  },
+  "requiredPresent": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_REQUIRED_PRESENT.json",
+    "sha256": "486CC0AEF06E6C8E327BF48A1AD61026D8661C3F27FA36A8FB6B7A947741C35E",
+    "requiredCount": 17,
+    "exactOrderAndSetMatched": true
+  },
+  "authoritativeProducerRefresh": {
+    "path": "work/GUIPR1_PORTAL/GUIPR1_RESPONSE_GATE.json",
+    "sha256": "186E3EC052129F93472B24008F586C5AC2AF65AFA2961B4F1B257E8D97735B50",
+    "catalogAcquisitions": 1956,
+    "dashboardRows": 234,
+    "silentOmissionCount": 1722
+  },
+  "preaction": {
+    "path": "work/GUIPR2_PORTAL/GUIPR2_DATA_PULL_PREACTION.json",
+    "sha256": "4A7F025FC0A6CB6C29D990C2010ED365C93EC36DDA7234562F6080503B8ACA44",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"
+  },
+  "pathGate": {
+    "path": "work/GUIPR2_PORTAL/final/REQ_20260831T200115797Z_25C5E103B730.ready.zip.path_gate.json",
+    "sha256": "CCC363F9C67176CEB3EF55BFDFDD9128A1E477235D61E1A4F1003EE1A7A55933",
+    "state": "PASS_GUIPR2_EXACT_REQUEST_PATH_BUDGET"
+  },
+  "bounds": {
+    "maximumFiles": 17,
+    "maximumBytes": 134217728,
+    "maxResultBytes": 134217728,
+    "payloadFiles": 0,
+    "imageOrBinaryPaths": 0
+  },
+  "authorizedOperation": "ONE_BOUNDED_READ_ONLY_POST_GUIPR1_CURRENT_BYTES_DATA_PULL",
+  "retryOnFailure": false,
+  "taskActions": [],
+  "processActions": [],
+  "installedChanges": 0,
+  "imageRead": false,
+  "sourceMutation": false,
+  "queueOrLedgerMutation": false,
+  "xmlEligible": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

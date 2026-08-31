@@ -1,0 +1,71 @@
+{
+  "schema": "argos_project_portal_draft_path_gate_v1",
+  "createdUtc": "2026-08-31T19:56:08.2592269Z",
+  "state": "PASS_PATH_BUDGET",
+  "lifecycle": "DRAFT",
+  "requestIdAssigned": false,
+  "requestIdLengthModel": "REQ_20260831T195600000Z_XXXXXXXXXXXX",
+  "responseIdLengthModel": "R_XXXXXXXXXXXX_20260831195600000_XXXXXXXX",
+  "jobClass": "DATA_PULL",
+  "definition": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_DATA_PULL_DEFINITION.json",
+    "sha256": "8C5950029B2888EB20DAC89E2AA87FBB211E535259C54AD5A9682560FE45C2EE"
+  },
+  "requiredPresent": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_REQUIRED_PRESENT.json",
+    "sha256": "486CC0AEF06E6C8E327BF48A1AD61026D8661C3F27FA36A8FB6B7A947741C35E"
+  },
+  "authoritativeRefresh": {
+    "path": "work/GUIPR1_PORTAL/GUIPR1_RESPONSE_GATE.json",
+    "sha256": "186E3EC052129F93472B24008F586C5AC2AF65AFA2961B4F1B257E8D97735B50"
+  },
+  "installedRoute": {
+    "endpointWorkerSha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+    "endpointConfigEvidenceSha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "incomingRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/pending",
+    "processedRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/processed",
+    "responsePartialAndReadyRoot": "C:/ProgramData/ArgosProjectPortalRO/to_argos/pending",
+    "responseSenderSentRoot": "C:/ProgramData/ArgosProjectPortalRO/to_argos/sent",
+    "stateRoot": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/state",
+    "shareRequestRoot": "U:/ProjectPortalRO/requests",
+    "shareResponseRoot": "U:/ProjectPortalRO/responses",
+    "plannedLocalPackageRoot": "C:/G2O",
+    "plannedLocalExtractionRoot": "C:/G2R"
+  },
+  "requestContract": {
+    "relativePathCount": 17,
+    "maximumFiles": 17,
+    "maximumBytes": 134217728,
+    "maxResultBytes": 134217728,
+    "optionalPathCount": 0,
+    "longestSourceRelativeLeaf": "metadata/verified/ACTIVE_VERIFIED_METADATA_OVERLAY.json",
+    "longestReturnedZipEntry": "data/JBOD_PROCESSOR_REVIEW/metadata/verified/ACTIVE_VERIFIED_METADATA_OVERLAY.json",
+    "sourcePathsPreservedInsideNestedZip": true,
+    "imageOrBinaryFilesRequested": 0
+  },
+  "reservedSuffixCharacters": 32,
+  "routeRows": [
+    {"hop":"localSignedManifest","pathLength":78,"effectiveLength":110,"longestComponentLength":42,"state":"PASS_PATH_BUDGET"},
+    {"hop":"localFinalZip","pathLength":149,"effectiveLength":181,"longestComponentLength":46,"state":"PASS_PATH_BUDGET"},
+    {"hop":"shareUpload","pathLength":81,"effectiveLength":113,"longestComponentLength":53,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointIncoming","pathLength":100,"effectiveLength":132,"longestComponentLength":42,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointProcessed","pathLength":102,"effectiveLength":134,"longestComponentLength":42,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointDataPullPartial","pathLength":110,"effectiveLength":142,"longestComponentLength":44,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponsePartial","pathLength":102,"effectiveLength":134,"longestComponentLength":49,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponsePayload","pathLength":124,"effectiveLength":156,"longestComponentLength":49,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponseManifest","pathLength":132,"effectiveLength":164,"longestComponentLength":49,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponseReady","pathLength":100,"effectiveLength":132,"longestComponentLength":47,"state":"PASS_PATH_BUDGET"},
+    {"hop":"endpointResponseSent","pathLength":97,"effectiveLength":129,"longestComponentLength":47,"state":"PASS_PATH_BUDGET"},
+    {"hop":"shareResponse","pathLength":80,"effectiveLength":112,"longestComponentLength":51,"state":"PASS_PATH_BUDGET"},
+    {"hop":"laptopResponsePayload","pathLength":76,"effectiveLength":108,"longestComponentLength":47,"state":"PASS_PATH_BUDGET"},
+    {"hop":"laptopInnerLongest","pathLength":145,"effectiveLength":177,"longestComponentLength":47,"state":"PASS_PATH_BUDGET"}
+  ],
+  "maximumEffectiveLength": 181,
+  "maximumComponentLength": 53,
+  "signed": false,
+  "published": false,
+  "maximumRequestsAuthorized": 1,
+  "retryOnFailure": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
