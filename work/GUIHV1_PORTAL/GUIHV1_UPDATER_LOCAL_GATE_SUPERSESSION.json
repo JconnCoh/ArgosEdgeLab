@@ -1,0 +1,25 @@
+{
+  "schema": "argos_guihv1_updater_local_gate_supersession_v1",
+  "createdUtc": "2026-08-31T20:12:00Z",
+  "state": "SUPERSEDED_PROVISIONAL_EVIDENCE",
+  "superseded": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_UPDATER_ONLY_SIGNED_EVIDENCE_LOCAL_PASS_GATE.json",
+    "sha256": "88F5A71C40B1485F27282A1F5F41EA673B9163A11063C08753DACD331CACCF56",
+    "reason": "The local test used the earlier August-24 GUIHV1 pull and is not authority for the post-GUIPR1 current state."
+  },
+  "successors": [
+    {
+      "path": "work/GUIDU1_PORTAL/GUIDU1_RESPONSE_GATE.json",
+      "sha256": "4C10E083B9DA53109F2464BEFB89758EBA39662752590F833BBBC82601010E07",
+      "role": "SIGNED_LIVE_UPDATER_EXECUTION_AND_EXACT_HOLD_VALIDATION"
+    },
+    {
+      "path": "work/GUIPR2_PORTAL/GUIPR2_POST_GUIDU1_SIGNED_CURRENT_STATE_RECONCILIATION_GATE.json",
+      "sha256": "4A551E6B94835A90A850421870BA621FADD83A095D720753AB1775226AA7E4A4",
+      "role": "SIGNED_POST_UPDATE_CURRENT_BYTES_RECONCILIATION"
+    }
+  ],
+  "provisionalGateMayBeUsedAsPublicationAuthority": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
