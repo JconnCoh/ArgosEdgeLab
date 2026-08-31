@@ -1,0 +1,29 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v2",
+  "revision":"GUIHV3_GUI_ONLY_HELD_ACQUISITION_DISPLAY_20260831",
+  "createdUtc":"2026-08-31T20:18:00Z",
+  "state":"PASS_PREACTION_CONTRACT",
+  "actionType":"SIGN_ONE_GUI_ONLY_HELD_ACQUISITION_DISPLAY_PACKAGE_AND_HOLD_PUBLICATION_FOR_R21M2",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C",
+  "dependencies":[
+    {"path":"AGENTS.md","sha256":"9B33DBD2EADCBA7D37E4AA444EC2A7E3CEF568A46EE4639AB06B0DB1FA13CBF3"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"09F03D73133023EF96C9737B626001B791C216A91F5F7044F004DE09CCA2F754"},
+    {"path":"work/GUIHV3_PORTAL/GUIHV3_RECOVERY_INTENT.json","sha256":"DB830222A0EAF214AF649D632FBA532805C6DFD856A86CC2C1830C67BF558CEA"},
+    {"path":"work/GUIHV3_PORTAL/GUIHV3_OBSERVATION_EVIDENCE.json","sha256":"A49F8A934CFF91BE5D01AE30B02DE0EAA4DE5FF978A9425F733A23D31B32A792"},
+    {"path":"work/GUIHV3_PORTAL/GUIHV3_RECOVERY_DESIGN.json","sha256":"57C63FF7580A9D7DF238F210F7CB1DD9B8D005F80BC64794948B36147C40BA33"},
+    {"path":"work/GUIHV3_PORTAL/source/MAINTENANCE_DEFINITION.json","sha256":"266CB3BF18C79DE6A27D75D32F5F042025306895D9AD4409D4DE658AD71AF446"},
+    {"path":"work/GUIHV3_PORTAL/source/payload/Apply-GUIHV3DirectGuiPatch.ps1","sha256":"95F7CCB6BB93683A7FBDD0FCD282D0EA2101FFD76415444D99FC099C6D40A76F"},
+    {"path":"work/GUIHV3_PORTAL/source/payload/ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe","sha256":"5A1320BD3E7430A054E859B3F26ACC3B665A89A687EFF4B6472E565BDF1278F1"},
+    {"path":"work/GUIHV3_PORTAL/source/payload/Program.cs","sha256":"CBF4CB8333D8E7F9A397F480E16F18DF9E1D7DFB789397D023A696E8DFC07944"},
+    {"path":"work/GUIDU1_PORTAL/GUIDU1_RESPONSE_GATE.json","sha256":"4C10E083B9DA53109F2464BEFB89758EBA39662752590F833BBBC82601010E07"},
+    {"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    {"path":"work/OPENCV_SCRIBE_O2D10/O2D10_COMPLETE_ROUTE_GATE_R2.json","sha256":"6938DC3E37A5208DC1F3E2F8F7A5703CC9A6B70B7533556E584F531DCD310D81"}
+  ],
+  "controls":{"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence":{"path":"work/GUIHV1_PORTAL/GUIHV1_COLLECTION_CASE_GATE.json","sha256":"81A360B01F3E7BF82A5FF25BE1EEFC0A599BB5129B253692513778170A5F7AE0","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":["R21P2"]},
+  "boundedAction":{"maximumRequests":1,"jobClass":"MAINTENANCE_PATCH","installedSemanticChanges":3,"sameBytesConfigSelfSwap":false,"taskActions":["STOP_IF_RUNNING:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2","START_ALWAYS:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2"],"processActions":["CLOSE_IF_RUNNING:ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe"],"detectorScoring":false,"imageProcessing":false,"guiBytesChanged":true,"xml":false,"retryOnFailure":false},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

@@ -1,0 +1,22 @@
+{
+  "schema":"argos_guihv3_gui_only_recovery_design_v1",
+  "createdUtc":"2026-08-31T20:16:00Z",
+  "state":"PASS_GUIHV3_GUI_ONLY_DESIGN",
+  "freshNamespace":"GUIHV3",
+  "targets":[
+    {"destination":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe","predecessorSha256":"FD2ABADC0494C0FABA81452B18FB7D860AF7B4F32CA086018D0907E2885B1225","targetSha256":"5A1320BD3E7430A054E859B3F26ACC3B665A89A687EFF4B6472E565BDF1278F1"},
+    {"destination":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/runtime/viewer/ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe","predecessorSha256":"FD2ABADC0494C0FABA81452B18FB7D860AF7B4F32CA086018D0907E2885B1225","targetSha256":"5A1320BD3E7430A054E859B3F26ACC3B665A89A687EFF4B6472E565BDF1278F1"},
+    {"destination":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/runtime/viewer/Program.cs","predecessorSha256":"CA69813161A862FF1623AE1989D18F8E6B1394901B2C1BAC279F97307AA07B2C","targetSha256":"CBF4CB8333D8E7F9A397F480E16F18DF9E1D7DFB789397D023A696E8DFC07944"}
+  ],
+  "entryPointSha256":"95F7CCB6BB93683A7FBDD0FCD282D0EA2101FFD76415444D99FC099C6D40A76F",
+  "guidu1UpdaterRequiredSha256":"73C2289B58F6F6B23DD2FA12E847AFF171B3FAC45153202E93EE00E0B7533FBA",
+  "authorizedActions":{"task":["STOP_IF_RUNNING:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2","START_ALWAYS:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2"],"process":["CLOSE_IF_RUNNING:ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe"]},
+  "processorSelectorStateUnchanged":true,
+  "updaterChanged":false,
+  "detectorScoring":false,
+  "imageProcessing":false,
+  "xml":false,
+  "retryOnFailure":false,
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

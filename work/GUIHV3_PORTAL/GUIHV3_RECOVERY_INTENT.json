@@ -1,0 +1,24 @@
+{
+  "schema":"argos_recovery_intent_v1",
+  "createdUtc":"2026-08-31T20:17:00Z",
+  "incidentId":"GUI_HELD_ACQUISITIONS_NOT_RENDERED_GUIHV3_20260831",
+  "mode":"MUTATE",
+  "artifactLifecycle":"DRAFT",
+  "policy":{"path":"work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json","sha256":"A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"},
+  "failureHistory":{"signedPremiseFailures":0,"localPremiseFailures":0,"directObservationAfterLastSignedFailure":false,"mutationStopLossExplicitlyCleared":false,"failureEvidence":[],"postFailureObservation":{"path":"","sha256":""},"workflowReviewClearance":{"path":"","sha256":""}},
+  "route":{
+    "type":"MAINTENANCE_PATCH","jobClass":"MAINTENANCE_PATCH","installedCodeChange":true,"helperInstall":false,
+    "taskActions":["STOP_IF_RUNNING:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2","START_ALWAYS:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2"],
+    "processActions":["CLOSE_IF_RUNNING:ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe"],
+    "queueMutation":true,"ledgerMutation":false,"sourceMutation":false,"imageRead":false,"waferAction":false,"inheritsQualifiedEndpointGate":true,
+    "endpointWorker":{"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    "installedConfigEvidence":{"path":"work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json","sha256":"465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"},
+    "capabilityEvidence":{"path":"work/GUIDU1_PORTAL/GUIDU1_RESPONSE_GATE.json","sha256":"4C10E083B9DA53109F2464BEFB89758EBA39662752590F833BBBC82601010E07"},
+    "qualifiedEndpointGate":{"path":"work/OPENCV_SCRIBE_O2D10/O2D10_COMPLETE_ROUTE_GATE_R2.json","sha256":"6938DC3E37A5208DC1F3E2F8F7A5703CC9A6B70B7533556E584F531DCD310D81"},
+    "qualifiedAdminGate":{"path":"","sha256":""}
+  },
+  "observation":{"exactSources":[{"sourcePath":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/dashboard_manifest.json","sourceSchema":"argos_lot_dashboard_catalog_v4_composite_accepted","selector":"heldAcquisitions and scanSessions exact signed GUIDU1 output","uniquenessKey":"identity|domain","maximumRows":1956}],"requestedCapabilities":["guiHeldAcquisitionRendering"],"requestedFields":["heldAcquisitions","holdReason","holdDetail","processorSelectorState"],"decisionOptions":["A","B","C","D"],"mutationDecisionDeferred":false},
+  "mutation":{"supportedRemedy":"B","supportingObservation":{"path":"work/GUIHV3_PORTAL/GUIHV3_OBSERVATION_EVIDENCE.json","sha256":"A49F8A934CFF91BE5D01AE30B02DE0EAA4DE5FF978A9425F733A23D31B32A792"},"endpointMutationNecessary":true,"singleMutationAttemptAuthorized":true},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}
