@@ -10455,3 +10455,22 @@ than rerunning it.
 - Recovery: correct only the unfrozen local harness token, rerun harness
   safety and the exact success/injected-failure rehearsal, and preserve the
   abandoned create-new fixture under a clearly failed local-evidence name.
+
+## 2026-08-31 — DATA_PULL response layouts must come from the installed producer contract
+
+- Failure signature: the successful signed GUIHV1 read-only response declared
+  `DATA_PULL_PAYLOAD.zip` at the response-package root, while the local
+  collection assumption and prepublication path row used
+  `payload/DATA_PULL.zip`. Signature verification passed and no target action
+  failed; the mismatch stopped only the first local nested-payload lookup.
+- Cause: the response payload leaf was reconstructed from a generic layout
+  assumption instead of copied from the qualified installed DATA_PULL
+  producer contract and frozen in the request-specific return-path gate.
+- Mandatory preflight: pin the exact installed producer's emitted response
+  leaf name and placement. Expand that literal leaf through response partial,
+  ready, sent, share, laptop archive, and extraction roots; after receipt,
+  require the signed manifest to declare the same literal leaf before lookup.
+- Recovery: keep the already verified response and request unchanged. Read the
+  manifest-declared `DATA_PULL_PAYLOAD.zip`, verify its declared hash, and
+  continue in the existing create-new short extraction root. Do not republish
+  or retry the request.
