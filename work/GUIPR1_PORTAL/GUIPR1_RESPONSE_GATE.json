@@ -1,0 +1,74 @@
+{
+  "schema": "argos_guipr1_signed_response_gate_v1",
+  "collectedUtc": "2026-08-31T19:37:56.2921451Z",
+  "state": "PASS_GUIPR1_SIGNED_FOREGROUND_REFRESH_RESPONSE",
+  "requestId": "REQ_20260831T191124226Z_B428348540C8",
+  "responseId": "R_2FFA1C095136_20260831193553711_4de68dfb",
+  "responseZip": {
+    "path": "work/GUIPR1_PORTAL/response/R_2FFA1C095136_20260831193553711_4de68dfb.ready.zip",
+    "bytes": 2965,
+    "sha256": "02522A42C469640749811DE8A9D3EA43A1E8F96F2660D9D268A7EC28D7DC4C18"
+  },
+  "signatureVerification": {
+    "state": "PASS_SIGNED_PORTAL_RESPONSE",
+    "sourceRole": "JBOD",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "responseManifestSha256": "1F5EF56EB4646EFFC8E33A6437B6068B0D3C0282DD029C35DC686E4C0CB3320D",
+    "responseSignatureSha256": "8A6058447C49872EE960AF8972E9F6162042E77A88013652B61AC836BCAB2B3B",
+    "payloadFilesVerified": 3
+  },
+  "endpoint": {
+    "state": "PASS_MAINTENANCE_PATCH",
+    "createdUtc": "2026-08-31T19:35:53.7097312Z",
+    "changedFiles": 1,
+    "entryPoint": "payload/Invoke-GUIPR1ForegroundRefresh.ps1",
+    "exitCode": 0,
+    "stderrBytes": 0,
+    "resultSha256": "CC2A46F5DD502BCA004F8EAA5EE034703E862F4B457D2B5CD4B11B240D3811B4",
+    "stdoutSha256": "E384FA86C9BB6E88CAE91B940AC7D27BFD06F460C542C075780095543BF5C5A2"
+  },
+  "foregroundRefresh": {
+    "state": "PASS_GUIPR1_FOREGROUND_PLAN_AND_UNCHANGED_DASHBOARD_REFRESH",
+    "createdUtc": "2026-08-31T19:35:53.6675988Z",
+    "catalogGeneratedUtc": "2026-08-31T19:35:37.3563719Z",
+    "scribeUpdatedUtc": "2026-08-31T19:35:39.7989260Z",
+    "processorStatusUpdatedUtc": "2026-08-31T19:35:41.1599403Z",
+    "processorStatusState": "PLAN_ONLY",
+    "dashboardCreatedUtc": "2026-08-31T19:35:52.9008674Z",
+    "dashboardStatusUpdatedUtc": "2026-08-31T19:35:52.9167272Z",
+    "catalogAcquisitions": 1956,
+    "dashboardRows": 234,
+    "missingDashboardRows": 1722,
+    "silentOmissionCount": 1722,
+    "dashboardNotCatalogRows": 0
+  },
+  "unchangedRuntime": {
+    "taskName": "ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2",
+    "taskState": "Ready",
+    "taskPrincipal": "SYSTEM",
+    "taskDefinitionSha256": "6E306778640AF823C53422411E65F9A796075392DEA25306F59FE7EDB8259B17",
+    "exactRunnerProcessCountAfter": 0,
+    "sameBytesConfigSelfSwap": true,
+    "taskActions": 0,
+    "detectorScoring": false,
+    "imageProcessing": false,
+    "guiBytesChanged": false,
+    "xmlExportEnabled": false,
+    "sourceDeletion": false,
+    "sourceMutation": false,
+    "retry": false
+  },
+  "publication": {
+    "publishGateSha256": "6746A7D52B779506CEDA05F426121E66020553D5362A3FAE5A21BADE6AF6CECE",
+    "finalPackageGateSha256": "825C0FD9707BF3BBF5CDEF8A311F548224705A8E8B3F2AA9F2E45B20AE582526",
+    "requestZipSha256": "6BD089A5E5DE19490F7A7815A6B0ED3E47B1549A20FCFB9222C81DA13BE22CB6",
+    "requestPublishedOnce": true,
+    "retryPerformed": false
+  },
+  "disposition": "AUTHORITATIVE_PRODUCER_REFRESH_PASS_AND_GUI_CONSUMER_OMISSION_CONFIRMED",
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}
