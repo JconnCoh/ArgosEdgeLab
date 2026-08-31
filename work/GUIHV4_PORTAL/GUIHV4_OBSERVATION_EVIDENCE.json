@@ -1,0 +1,18 @@
+{
+  "schema":"argos_recovery_observation_evidence_v1",
+  "incidentId":"GUI_COMPLETED_MANIFEST_AND_SCRIBE_IMPORT_GUIHV4_20260831",
+  "createdUtc":"2026-08-31T22:11:00Z",
+  "state":"PASS_GUIHV4_SIGNED_CURRENT_PREMISES",
+  "sources":[
+    {"path":"work/GUIHV3_PORTAL/GUIHV3_SIGNED_TERMINAL_AND_LIVE_VERIFICATION_GATE.json","sha256":"4D18810F4BD65046217DAA3B2106C7F99317A4BA2EC9209D76C6C16272E3D66B"},
+    {"path":"work/GUIPR2_PORTAL/GUIPR2_POST_GUIDU1_SIGNED_CURRENT_STATE_RECONCILIATION_GATE.json","sha256":"4A551E6B94835A90A850421870BA621FADD83A095D720753AB1775226AA7E4A4"}
+  ],
+  "observed":{"dashboardManifestBytes":3451199,"dashboardManifestSha256":"E55F21FF680DD70AD2D71084B199F21862D91E9C4FC83D4943D0FF510846F16B","catalogRows":1956,"completedRows":234,"heldRows":1722,"processorConfigSha256":"CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8","processorConfigSchema":"argos_jbod_all_wafer_processor_config_v3","reviewOnly":true,"xmlExportEnabled":false,"importerPredecessorSha256":"022FC1DF3C033B413E2F803E385C396524EE69E6E99D6F516721DD30DF2F2BA6"},
+  "expected":{"completedManifestLoadsWithoutDefaultJsonLimit":true,"safeV3ImporterConfigAccepted":true,"unsafeImporterConfigsRefused":true,"importerNotExecuted":true,"identityStateUnchanged":true},
+  "exactSourcesProved":true,
+  "fieldSpecificExpectedObservedRecorded":true,
+  "matchingSignedTerminalResponse":true,
+  "mutationsPerformed":false,
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}
