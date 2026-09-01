@@ -4,6 +4,10 @@ This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
 
+## Isolated OpenCV scribe R6V2 publication — 2026-09-01
+
+The exact frozen signed request `REQ_20260901T220000222Z_5A348AE509A4` was published exactly once with create-new semantics. The gateway share moved it to `requests/processed`, and the processed copy hash-matches frozen ZIP SHA-256 `1048FB48EFDB736D397A856E75AD1A3F8B0D59599766636F9ABB1353C2AB291D`. This proves gateway acceptance only, not JBOD execution. The request remains `PENDING_GATE` until its matching signed terminal response is validated; no retry or second publication is authorized. Review-only, activation, identity acceptance, hold clearance, XML, training, and production authority remain unchanged and false where applicable.
+
 ## OCV-03 autonomous detector sequence rollover — 2026-08-30
 
 The operator authorized autonomous review-only continuation in this exact
