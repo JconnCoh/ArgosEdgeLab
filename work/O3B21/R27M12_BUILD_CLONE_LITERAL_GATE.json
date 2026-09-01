@@ -1,0 +1,47 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-01T19:42:05.4248234Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\O3B21\\R27M12_BUILD_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "3ED2003B8EA7407FE3853E9E708B7BC7A0338B0E60262498B198D0D53E62ED75",
+    "pairCount":  2,
+    "pairs":  [
+                  {
+                      "source":  "work/O3B21/Build-R27B32R3Package.ps1",
+                      "generated":  "work/O3B21/Build-R27M12Package.ps1",
+                      "sourceSha256":  "776E9BC5ED165BE4A9208B3A5B1B05633FEAC24C9BCCEA388FAA27657793F945",
+                      "generatedSha256":  "A31BBEBE7782C8B235CC86EAA3C33DD8FD46F847EB4F43D709B5715671DCAC9D",
+                      "sourceRoots":  [
+                                          "C:\\R21P5",
+                                          "C:\\R27B32R3PK"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\R21P5",
+                                             "C:\\R27M12PK"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/O3B21/r27b32r3_generated/Invoke-R27B32R3.ps1",
+                      "generated":  "work/O3B21/r27m12_generated/Invoke-R27M12.ps1",
+                      "sourceSha256":  "55739ADD0019DD402EC0BB56209C74E738B7755241235992DBE76E14AA78BF32",
+                      "generatedSha256":  "682922B5B739B4FAFEDD9B5398BE0A081081B57A07E6FAD9245EA7E0C0B89E5D",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "D:\\AFCV1"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "D:\\AFCV1"
+                                         ],
+                      "ruleCount":  2
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}
