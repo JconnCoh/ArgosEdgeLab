@@ -9250,3 +9250,21 @@ fresh 953 corpus is unauthorized.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_CHIPOUT_RECONCILED_ROUTE_LAYOUT_BLOCKER_CHECKPOINT_20260831.md`,
 SHA-256 `C7B2B2A1132D96377D6EE29B8951618AC18BB3C6387227FD2A404AEF9C25408E`.
+
+# 2026-09-01 — OCV-03 O3B21 R25 direct probe pass / metadata query timeout blocker (`PENDING_GATE`)
+
+The operator exposed the recorded layout and one fresh unchanged probe passed
+exact JBOD `A1025645101` without mutation. One subsequent bounded read-only
+first-row query of the hash-locked R20 `RESULTS.csv` terminated at its exact
+60-second nonce-bound clipboard-response timeout. It was not retried and no
+alternate console, transport change, source-image read, detector/corpus run,
+task/process action, provider action, output-root creation, or source/wafer
+mutation occurred.
+
+The notch-adjacent source-evidence zero-set and ordinal 23 remain explicit
+holds. R25/R13 are unchanged, the chipout reconciliation remains closed, and
+the fresh 953 corpus plus all later phases remain unauthorized.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_DIRECT_PROBE_PASS_METADATA_QUERY_TIMEOUT_BLOCKER_CHECKPOINT_20260901.md`,
+SHA-256 `2A35A134198527EA8EEB0B6CEAE96BFCA8F0B6886E9193AE3EEE069BF848BBEB`.

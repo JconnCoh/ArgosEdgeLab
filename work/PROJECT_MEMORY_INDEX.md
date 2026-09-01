@@ -1077,3 +1077,11 @@ task from changing which revision, UI, evidence, or next action is active.
 - Chipout reconciliation: `work/O3B21/R25_ADDITIONAL_CHIPOUT_SOURCE_RECONCILIATION.json`, SHA-256 `D032C4204A4EDFB073BDFAFE3AE2FE5D118CF9688E15C9B30DDC477226F5F7EE`; the earlier record is the same exact acquisition as the signed, executed R25 ordinal-0 control, not a second unresolved physical wafer.
 - Route blocker: the single unchanged probe stopped before remote input because RustDesk was `160x28`, not the verified full-screen geometry. No retry or transport change occurred.
 - Exact next action: operator exposes the recorded full-screen RustDesk/nested-JBOD layout; then one fresh hostname-gated probe resumes only the notch-adjacent and ordinal-23 targeted gates. Fresh 953 remains unauthorized.
+
+## 2026-09-01 — OCV-03 O3B21 R25 direct probe pass / metadata query timeout blocker
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_DIRECT_PROBE_PASS_METADATA_QUERY_TIMEOUT_BLOCKER_CHECKPOINT_20260901.md`
+- SHA-256: `2A35A134198527EA8EEB0B6CEAE96BFCA8F0B6886E9193AE3EEE069BF848BBEB`
+- Route result: the fresh exact-host probe passed `A1025645101` with no mutation; the sole subsequent bounded read-only R20 metadata query timed out after 60 seconds without a nonce-bound clipboard response and is no-retry.
+- Holds: notch-adjacent source evidence and ordinal 23 remain explicit holds; R25/R13 are unchanged, chipout reconciliation remains closed, and fresh 953 plus every later phase remain unauthorized.
+- Exact next action: stop this execution attempt. A future continuation may use only one fresh bounded nonce-bound result on the already recorded route; do not retry the timed-out command namespace or investigate transport under detector authority.
