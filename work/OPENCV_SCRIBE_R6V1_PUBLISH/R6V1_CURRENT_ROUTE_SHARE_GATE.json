@@ -1,0 +1,59 @@
+{
+  "schema": "argos_r6v1_current_route_share_gate_v1",
+  "createdUtc": "2026-09-01T21:14:40.0240212Z",
+  "state": "PASS_R6V1_CURRENT_ROUTE_SHARE_AND_QUEUE_GATE",
+  "requestId": "REQ_20260901T160000111Z_7F77B8EFE092",
+  "requestZipSha256": "E4F62D6126F9FBEDD228CDDE8678136D7FDEFCF5CB2B3825BF1245E11BBF925D",
+  "completePathRouteGatePath": "work/OPENCV_SCRIBE_R6V1/R6V1_PATH_ROUTE_GATE.json",
+  "completePathRouteGateSha256": "C34C5163AE3DA95BF58179B2CCCBAF61D79C4A24ADC4167118C3376FFB93F9A0",
+  "mapping": {
+    "drive": "U:",
+    "expectedRoot": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs",
+    "psDriveDisplayRootExact": true,
+    "logicalDiskProviderExact": true,
+    "logicalDiskDriveType": 4,
+    "requestsRootReadable": true,
+    "responsesRootReadable": true
+  },
+  "queueObservation": {
+    "pendingRequestFileCount": 0,
+    "todayAcceptedRequestCount": 33,
+    "todayTerminalResponseCount": 33,
+    "unresolvedEarlierAcceptedRequestCount": 0,
+    "responseManifestScanCount": 200,
+    "responseManifestScanErrorCount": 0,
+    "exactRequestIdProcessedMatchCount": 0,
+    "exactRequestIdResponseMatchCount": 0,
+    "latestAcceptedRequestId": "REQ_20260901T204837729Z_FE997FDF83C6",
+    "latestTerminalResponse": "R_43247A7F250D_20260901205134388_9b20f910.ready.zip",
+    "latestTerminalResponseSha256": "0D6E1729CD94D08FAC0B76FA7C5DA564A46C63A3A51B7AE28C1348B6B5CA9A34",
+    "latestTerminalState": "FAILED"
+  },
+  "continuity": {
+    "state": "PASS_ARGOS_PROJECT_CONTINUITY",
+    "activePhase": "OCV03_O3B21_R28C953L1_INVENTORY_CARDINALITY_FAILURE",
+    "phaseCheckpointSha256": "029138CFEBE14EFB88F4B37910B22906FB06EC03E1B32C2138484F8F0ED77B65",
+    "portalLaneReleasedByMainCoordinator": true
+  },
+  "branchObservation": {
+    "branch": "codex/opencv-scribe-deciphering",
+    "localTip": "57fb6f4308160de33771c5d6e32b053e6d80a80f",
+    "remoteTip": "57fb6f4308160de33771c5d6e32b053e6d80a80f",
+    "tipsMatchedAtObservation": true
+  },
+  "publication": {
+    "authorized": true,
+    "maximumPublications": 1,
+    "retryAuthorized": false,
+    "overwriteAuthorized": false,
+    "matchingSignedTerminalResponseOnly": true,
+    "expectedResponseSignerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC"
+  },
+  "reviewOnly": true,
+  "automaticIdentityAuthority": false,
+  "mayClearHolds": false,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "providerActivated": false
+}
