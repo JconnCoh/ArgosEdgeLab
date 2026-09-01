@@ -9376,3 +9376,19 @@ NA1/O23 and every later phase remain held and unauthorized.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA1_SIGNED_TIMEOUT_POSTFAIL_OBS_BLOCKER_CHECKPOINT_20260901.md`,
 SHA-256 `93A2F064EE8AD3F636F34ED5A3DC4C9FC44AB95113DB52EE5BDBD39C9C69C03D`.
+
+# 2026-09-01 — OCV-03 O3B21 R25NA1 partial 17 / missing 7 resume (`PENDING_GATE`)
+
+Fresh exact-host, nonce-bound, non-truncated compact observation proves
+`D:/R25NA1` contains complete ordinals `00` through `16`, zero partial pairs,
+and wholly absent ordinals `17` through `23`. No image bytes or target state
+changed. Earlier malformed/verbose observations are withdrawn.
+
+Preserve the 17 completed outputs. The minimal successor verifies those exact
+results, executes only the seven missing ordinals with unchanged R25/R13 and
+the frozen selector/source contract, then aggregates all results without
+post-result relaxation. NA1/O23 and every later phase remain held.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA1_PARTIAL17_MISSING7_RESUME_CHECKPOINT_20260901.md`,
+SHA-256 `B74DE07880810C3755A91EAC1968CBB18C09F9CB6B9DF1C68126C91BA3EBB057`.

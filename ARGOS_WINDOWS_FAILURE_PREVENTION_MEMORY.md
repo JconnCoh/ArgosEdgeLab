@@ -886,6 +886,20 @@ and safe recovery are known. Chat history is not the authority.
   first pipeline token follows the closing brace of `foreach`, `if`, or
   `try/finally`; the static file checker cannot protect an unsaved command.
 
+### PowerShell array literals can bind a comma into a formatting/concatenation expression
+
+- Signature: an intended two-element path array such as `J00.json` and
+  `O00\RESULT.json` arrives as one space-joined scalar, producing half the
+  expected metadata rows and false absent-path evidence.
+- Cause: unparenthesized expression elements inside `@(...)` allowed the comma
+  to participate in the surrounding expression under Windows PowerShell 5.1.
+- Preflight: construct each scalar in its own assignment, then create the array
+  from those scalar variable names. Assert the exact element count and exact
+  normalized values before filesystem access.
+- Recovery: withdraw the executed observation result, preserve it as invalid
+  evidence, create a fresh observation namespace, and rerun only the unchanged
+  bounded read-only metadata query. Do not infer absence from combined paths.
+
 ### PowerShell automatic `$Matches` variable reused as an accumulator
 
 - Signature: adding an object to `$matches` fails with `A hash table can only
@@ -9173,6 +9187,21 @@ than rerunning it.
   Only when a remote parse/runtime error is visibly present may the existing
   bounded `CaptureConsoleText` action collect that already-visible text; any
   successor command requires a fresh separately governed namespace.
+
+## 2026-09-01 — A successful direct command can still return truncated JSON
+
+- Failure signature: the exact-host direct command returned its nonce, command
+  hash, and `PASS`, but `truncated=true` clipped a verbose 48-row metadata JSON
+  result before the terminal counts and final identities.
+- Cause: the observation serialized more result text than the direct runner's
+  bounded clipboard-result capture permits.
+- Mandatory preflight: estimate the returned result, not only command-source
+  length. Return compact scalar identity/state rows and assert their exact count
+  before serialization. Require `truncated=false` before using the observation
+  as complete evidence.
+- Recovery: withdraw the verbose observation as incomplete, create a fresh
+  namespace, and query only the compact deterministic states needed for the
+  decision. Do not infer missing tail rows from a clipped prefix.
 
 ## 2026-08-27 — A long encoded paste can remain in the console input buffer after the runner sends Enter
 

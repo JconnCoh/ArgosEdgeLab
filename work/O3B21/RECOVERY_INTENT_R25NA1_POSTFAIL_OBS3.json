@@ -1,0 +1,79 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-01T17:13:00Z",
+  "incidentId": "O3B21_R25NA1_SIGNED_TIMEOUT_20260901",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/O3B21/R25NA1_SIGNED_TERMINAL_FAILURE_GATE.json",
+        "sha256": "585680C539731BEDE1B7879CE2BE0B4E2D98C407E4B757AC3B9A9FCE445F6A86",
+        "state": "FAILED"
+      },
+      {
+        "path": "work/O3B21/R25NA1_POSTFAIL_OBS2_WITHDRAWN_GATE.json",
+        "sha256": "241E85C542AC12679B86852A98F14488AA2952AEBBFF778F3CCE5B9EE8C26D8A",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "STATUS",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {
+      "path": "work/O3B21/R25NA1_POSTFAIL_OBS1_CAPABILITY.json",
+      "sha256": "112174929EBB0C95B5FF8F2874384784585C00335E9149463DE38634180BD6F5"
+    },
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {
+      "path": "work/O3B21/R25NA1_POSTFAIL_OBS3_AUTHORIZATION.json",
+      "sha256": "AD09E1A5EE148EA297E1EBABA453C12289970448D0D3C9EFA433607FFCCA4177"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "D:\\R25NA1",
+        "sourceSchema": "bounded deterministic output leaf metadata",
+        "selector": "J00.json..J23.json and O00/RESULT.json..O23/RESULT.json only",
+        "uniquenessKey": "relativePath",
+        "maximumRows": 48
+      }
+    ],
+    "requestedCapabilities": ["exactBoundedOutputMetadata"],
+    "requestedFields": ["computerName", "outputRoot", "outputRootExists", "relativePath", "exists", "bytes", "lastWriteUtc"],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1130,3 +1130,10 @@ task from changing which revision, UI, evidence, or next action is active.
 - Gateway outcome: R25G1 restarted only ShareBridge (`Ready` to `Running`) and the importer consumed the exact R25NA1 ZIP; its envelope is terminal failed for a post-action state-label mismatch and is no-retry.
 - R25NA1 outcome: pinned-JBOD signature verifies terminal failure at the 900-second portal-child timeout; response ZIP `2248CA852A00CCA9566DBBD3B316EC1E8FB584B18077D4B02347DE98C5ACA2B9`.
 - Blocker: one exact-host metadata-only post-failure observation timed out after 60 seconds without a nonce-bound result. Output state is unproved; no retry/successor mutation, selector relaxation, 953 corpus, or later phase is authorized.
+
+## 2026-09-01 — OCV-03 O3B21 R25NA1 partial 17 / missing 7 resume
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA1_PARTIAL17_MISSING7_RESUME_CHECKPOINT_20260901.md`
+- SHA-256: `B74DE07880810C3755A91EAC1968CBB18C09F9CB6B9DF1C68126C91BA3EBB057`
+- Observation: exact JBOD compact gate `CF3441EDBDE76DF7C40B1B1FF54828F1D9CC89C5D3064A36C57436C37A6BFD71` proves complete ordinals `00-16`, absent ordinals `17-23`, and zero partial pairs without reading image bytes or changing target state.
+- Exact next action: preserve/reuse `00-16`; execute only missing `17-23` with unchanged R25/R13 and frozen selector/source evidence, then aggregate all results. No selector relaxation, 953 corpus, or later phase yet.
