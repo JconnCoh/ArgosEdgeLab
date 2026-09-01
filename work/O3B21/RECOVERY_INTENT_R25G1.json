@@ -1,0 +1,53 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-01T16:23:22Z",
+  "incidentId": "O3B21_R25NA1_GATEWAY_SHAREBRIDGE_NOT_CONSUMING_20260901",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "KERBEROS_JEA_DIRECT_MAINTENANCE",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": false,
+    "taskActions": ["RESTART:ArgosProjectPortal.Gateway.ShareBridge.RO"],
+    "processActions": [],
+    "queueMutation": true,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedFields": [],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "C",
+    "supportingObservation": {
+      "path": "work/O3B21/R25NA1_GATEWAY_OBS1_20260901.json",
+      "sha256": "BADB729C656E8EE7E72FFA961999F48C0CD39F741F8B8EC86B9501E8485D92FC"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "operatorAuthorization": "User explicitly directed: ok fix it so we can get this done.",
+    "boundedChange": "Install one fresh R25NA1-specific review-only entrypoint and marker through the qualified direct gateway endpoint, verify the exact pending request and qualified bridge/config hashes, and restart only ArgosProjectPortal.Gateway.ShareBridge.RO once. Do not republish or retry R25NA1."
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

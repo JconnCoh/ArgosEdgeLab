@@ -1,0 +1,62 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-01T16:17:58Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "O3B21_R25NA1_GATEWAY_SHAREBRIDGE_NOT_CONSUMING_20260901",
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "route": "KERBEROS_JEA_ARGOS_GATEWAY_MAINTENANCE_STATUS",
+  "computerName": "TXSH-DPMZ0295HR",
+  "caller": "AMER\\joshua.conn",
+  "endpointRoot": "C:\\ProgramData\\ArgosGatewayMaintenanceRO",
+  "endpointConfigSha256": "7162F48D17F7146C780E292913434C34D49CBFBF3AE1D1E05122CD40FBCA4488",
+  "requestId": "REQ_20260901T153112935Z_6B71EECCA83C",
+  "requestZipSha256": "A96E29988C4DC9DE3FF4495823409BA14A54E6138616A2D9E873A4EBB0461D0D",
+  "requestZipBytes": 45761,
+  "shareRoute": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs",
+  "shareDriveType": 4,
+  "pendingExactZipPresent": true,
+  "processedExactZipPresent": false,
+  "responseManifestFilesScanned": 500,
+  "matchingResponseManifestCount": 0,
+  "tasks": [
+    {
+      "name": "ArgosProjectPortal.Gateway.ShareBridge.RO",
+      "expected": "Running",
+      "observed": "Ready"
+    },
+    {
+      "name": "ArgosProjectPortal.Gateway.ResponseReceiver.RO",
+      "expected": "Running",
+      "observed": "Running"
+    }
+  ],
+  "installedHashes": [
+    {
+      "path": "C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-GatewayPortalShareBridge.ps1",
+      "exists": true,
+      "bytes": 18549,
+      "sha256": "EBEBA79A71402B55B5AAFBCD1A7A202BADA0E95ED6D55DBD7A05609C71879D23"
+    },
+    {
+      "path": "C:\\ProgramData\\ArgosProjectPortalRO\\config\\gateway_share.json",
+      "exists": true,
+      "bytes": 2810,
+      "sha256": "05E0DBD9234F74A2754E6EF3E5BE5C67C6529C2FC9034F980C94029FC396683B"
+    },
+    {
+      "path": "C:\\ProgramData\\ArgosProjectPortalRO\\config\\GATEWAY_RESPONSE_RECEIVER.json",
+      "exists": true,
+      "bytes": 958,
+      "sha256": "C2317E9C40FB51FDD24F3D765E60BFE2A6F9652C64AE5719FB5F2AFC379FFE5C"
+    }
+  ],
+  "decision": "C",
+  "supportedRemedy": "ONE_FRESH_SIGNED_DIRECT_REQUEST_RESTARTING_ONLY_ARGOSPROJECTPORTAL_GATEWAY_SHAREBRIDGE_RO",
+  "requestRetryAuthorized": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

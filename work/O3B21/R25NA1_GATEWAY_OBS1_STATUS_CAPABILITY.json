@@ -1,0 +1,36 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-09-01T16:14:40Z",
+  "state": "PASS_ARGOS_ENDPOINT_STATIC_CAPABILITY_INVENTORY",
+  "endpointName": "ArgosGatewayMaintenance",
+  "endpointSourcePackage": {
+    "path": "work/ARGOS_GATEWAY_RESPONSE_PUBLICATION_REPAIR_AND_ACCESS_V1_2.zip",
+    "sha256": "57414E74EDDBAE9C352084FEE149B372A05911715CAC42ED67DED3916E903BE4"
+  },
+  "installedEvidence": {
+    "path": "work/O3B21/GATEWAY_STATUS_20260831T151900Z.json",
+    "sha256": "657EB27A1039AEC77549F630C6FE10C6842367DEDF7B7C0895C8936BE22B79F0"
+  },
+  "routes": [
+    {
+      "type": "STATUS",
+      "function": "Get-ArgosGatewayMaintenanceStatus",
+      "capabilities": [
+        "taskState",
+        "configuredInstalledHashes"
+      ],
+      "limitations": [
+        "taskLastResult",
+        "eventLog",
+        "gatewayShareLogTail",
+        "queueMutation",
+        "taskAction"
+      ]
+    }
+  ],
+  "sourceInspectionOnly": true,
+  "endpointExecuted": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

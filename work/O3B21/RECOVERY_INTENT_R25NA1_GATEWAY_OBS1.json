@@ -1,0 +1,91 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-01T16:14:40Z",
+  "incidentId": "O3B21_R25NA1_GATEWAY_SHAREBRIDGE_NOT_CONSUMING_20260901",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "STATUS",
+    "jobClass": "STATUS",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/ARGOS_GATEWAY_RESPONSE_PUBLICATION_REPAIR_AND_ACCESS_V1_2.zip",
+      "sha256": "57414E74EDDBAE9C352084FEE149B372A05911715CAC42ED67DED3916E903BE4"
+    },
+    "installedConfigEvidence": {
+      "path": "work/O3B21/GATEWAY_STATUS_20260831T151900Z.json",
+      "sha256": "657EB27A1039AEC77549F630C6FE10C6842367DEDF7B7C0895C8936BE22B79F0"
+    },
+    "capabilityEvidence": {
+      "path": "work/O3B21/R25NA1_GATEWAY_OBS1_STATUS_CAPABILITY.json",
+      "sha256": "BF6B92BDEDFF6E1C9DF07BD443F5ADE8F06AAA3273D8A18678124AF74E6A4E7F"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/ARGOS_GATEWAY_RECOVERY_ACCESS_V1_2.GATE_PASS.json",
+      "sha256": "EA7AE4AE52582E6E80C17E782C94054D882DBB85A5E78D53EF0A491B00F1478B"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "Get-ArgosGatewayMaintenanceStatus.Tasks",
+        "sourceSchema": "ArgosGatewayMaintenanceStatus.Tasks[]",
+        "selector": "name in {ArgosProjectPortal.Gateway.ShareBridge.RO,ArgosProjectPortal.Gateway.ResponseReceiver.RO}",
+        "uniquenessKey": "name",
+        "maximumRows": 2
+      },
+      {
+        "sourcePath": "Get-ArgosGatewayMaintenanceStatus.InstalledHashes",
+        "sourceSchema": "ArgosGatewayMaintenanceStatus.InstalledHashes[]",
+        "selector": "exact configured bridge/share/receiver paths",
+        "uniquenessKey": "path",
+        "maximumRows": 3
+      }
+    ],
+    "requestedCapabilities": ["taskState", "configuredInstalledHashes"],
+    "requestedFields": [
+      "ComputerName",
+      "Caller",
+      "EndpointConfigSha256",
+      "Tasks.name",
+      "Tasks.state",
+      "InstalledHashes.path",
+      "InstalledHashes.exists",
+      "InstalledHashes.bytes",
+      "InstalledHashes.sha256"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

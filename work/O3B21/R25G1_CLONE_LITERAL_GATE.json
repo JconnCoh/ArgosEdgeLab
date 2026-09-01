@@ -1,0 +1,60 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-01T16:24:56.8661016Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\O3B21\\R25G1_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "4C4447E6CDC8741584A2F9A3ABC04ED1BD3E0A90B9FB17CCA4630B3427DE4A78",
+    "pairCount":  3,
+    "pairs":  [
+                  {
+                      "source":  "work/O3B21/R21G2_E.ps1",
+                      "generated":  "work/O3B21/R25G1_E.ps1",
+                      "sourceSha256":  "6078F956EC3DF67C9FAFC366913681F7AC1BEE63C6A32064ABF0A6354473A11B",
+                      "generatedSha256":  "2FBD3D885E89B40B780BF4756D3EAB51553852499A1FBDC4BD4C956AC6F937B2",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData"
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/O3B21/R21G2_M.json",
+                      "generated":  "work/O3B21/R25G1_M.json",
+                      "sourceSha256":  "4C214E7D77D8F47C1FD7404BF221BE13C0C554D051F7D871E41E3BCB38BFEC93",
+                      "generatedSha256":  "C283095BC100AF11DE378CFD8D963BAE67A9E022F88AD24B49893422CCD46453",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/O3B21/Build-R21G3Package.ps1",
+                      "generated":  "work/O3B21/Build-R25G1Package.ps1",
+                      "sourceSha256":  "172F8A893071F5EE1E10CD7A2D582639890ADDBA00A6A1ACA9BCC7D7E3C1A786",
+                      "generatedSha256":  "B541FFE2ED3899D2DAE5ADF1BBE0AEA1D52B33B3CBC23E9D664E9C5862C99796",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "C:\\R21G3",
+                                          "C:\\R21G3A"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "C:\\R25G1",
+                                             "C:\\R25G1A"
+                                         ],
+                      "ruleCount":  3
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

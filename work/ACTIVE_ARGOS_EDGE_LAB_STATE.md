@@ -9338,3 +9338,22 @@ NA1/O23 remain held; fresh 953 and later phases remain unauthorized.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA1_PUBLISHED_PORTAL_QUEUE_PENDING_CHECKPOINT_20260901.md`,
 SHA-256 `145B016DF7DEDA4DE6856E5C118994A6DF8E784E50CD35967DB3F1719B6EC8D1`.
+
+# 2026-09-01 — OCV-03 O3B21 R25G1 gateway recovery ready (`PENDING_GATE`)
+
+Fresh direct JEA observation proves the gateway ShareBridge is `Ready` while
+the response receiver is `Running`; the installed GWQ2 bridge/config hashes
+remain exact. R25NA1 is still pending at the share root with its original
+45,761-byte ZIP hash and has no processed copy or matching response.
+
+Fresh signed direct recovery request
+`REQ_20260901T161846627Z_6B71EECCA831`, ZIP SHA-256
+`F08FE0DD6E2A4ED7C54132239ED411D5F3F5D0445BB8C29B63AA04C3193A6F2B`,
+passed recovery, recurrence, clone, path, PS5.1 signature/extraction, and exact
+entrypoint rehearsal gates. It is not uploaded or invoked. Its only authorized
+action is restarting `ArgosProjectPortal.Gateway.ShareBridge.RO` after exact
+R25NA1 request/hash and installed-premise verification.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25G1_GATEWAY_RECOVERY_READY_CHECKPOINT_20260901.md`,
+SHA-256 `A6E4590E61D5557785207D1AEA2698EC4F4C9960F8D64EF958E42B1FA9CEF9D0`.
