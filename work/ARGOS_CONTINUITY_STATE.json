@@ -1,13 +1,13 @@
 {
   "schema": "argos_edge_lab_continuity_state_v1",
-  "updatedLocal": "2026-09-01T09:52:00-05:00",
+  "updatedLocal": "2026-09-01T10:03:00-05:00",
   "activeFamily": "OPENCV_ALL_IMAGE_PROCESSING_MIGRATION_REVIEW_ONLY",
-  "activePhase": "OCV03_O3B21_R25_NA1_EXACT_SOURCE_FREEZE_PASS",
+  "activePhase": "OCV03_O3B21_R25_NA1_SOURCE_FREEZE_PASS_PUBLISH_AUTHORITY_GAP",
   "activeStatePath": "work/ACTIVE_ARGOS_EDGE_LAB_STATE.md",
   "memoryIndexPath": "work/PROJECT_MEMORY_INDEX.md",
   "revisionLedgerPath": "work/ARGOS_REVISION_LEDGER.md",
-  "currentPhaseCheckpoint": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_NA1_EXACT_SOURCE_FREEZE_PASS_CHECKPOINT_20260901.md",
-  "currentPhaseCheckpointSha256": "16D31F92F94CE125A118B4AF98F8C4D708B8002CFC28C528D5BB88E6B7FEE8D2",
+  "currentPhaseCheckpoint": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_NA1_SOURCE_FREEZE_PASS_PUBLISH_AUTHORITY_GAP_CHECKPOINT_20260901.md",
+  "currentPhaseCheckpointSha256": "61864AF94C9914EDAF015DADE05B8E1B040DA549B86C0E80C991F63BCC9526F7",
   "ocv03BacksideNotchO3B10": {
     "revision": "O3B10_AUTONOMOUS_DETECTOR_SEQUENCE_ROLLOVER_20260830",
     "state": "PASS_AUTONOMOUS_REVIEW_ONLY_DETECTOR_SEQUENCE_ROLLOVER_READY",
@@ -8490,6 +8490,26 @@
     "xmlEligible": false,
     "productionEligible": false
   },
+  "ocv03O3B21R25Na1PublicationAuthorityGap": {
+    "revision": "OCV03_O3B21_R25_NA1_SOURCE_FREEZE_PASS_PUBLISH_AUTHORITY_GAP_20260901",
+    "state": "HOLD_EXPLICIT_PUBLISH_R25NA1_REQUIRED",
+    "disposition": "PENDING_GATE",
+    "checkpointPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_NA1_SOURCE_FREEZE_PASS_PUBLISH_AUTHORITY_GAP_CHECKPOINT_20260901.md",
+    "checkpointSha256": "61864AF94C9914EDAF015DADE05B8E1B040DA549B86C0E80C991F63BCC9526F7",
+    "sourceFreezeSha256": "D3481DA814F8F64EC6027FC8B9482924BDE5A2C572530FA36D8511E0C0804971",
+    "directFileTransferAvailable": false,
+    "concreteReusableTransientPayloadRootFrozen": false,
+    "infrastructureRediscoveryAllowed": false,
+    "publicationAuthorized": false,
+    "packageBuilt": false,
+    "packagePublished": false,
+    "detectorExecutionPerformed": false,
+    "fullCorpusAuthorized": false,
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false
+  },
   "edgeNotchRobustness": {
     "revision": "EDGE_NOTCH_ROBUSTNESS_ACCEPTANCE_20260826",
     "disposition": "LOCKED_INPUT",
@@ -8513,7 +8533,7 @@
     "reviewOnly": true,
     "productionRoutingEnabled": false
   },
-  "nextAction": "Design and execute only one bounded fresh R25/R13 NA1 real-image run over the exact 24 frozen pairs using the recorded working JBOD route and a create-new D: result root. Evaluate the unchanged selector mechanically without post-result tuning. Do not rerun completed R25 cases or infer ordinal 23. Fresh 953-pair R25 and every later phase remain unauthorized.",
+  "nextAction": "Operator explicitly authorizes PUBLISH R25NA1. Then build, gate, sign, and publish exactly one fresh review-only 24-pair NA1 request through the already recorded qualified portal route, with no automatic retry. Do not infer ordinal 23 or begin the 953 corpus.",
   "reviewOnly": true,
   "trainingEligible": false,
   "trainingScope": "NONE_REVIEW_ONLY_NOTCH_FRONT_BACK_DEVELOPMENT_FIDUCIAL_CONDITIONAL",

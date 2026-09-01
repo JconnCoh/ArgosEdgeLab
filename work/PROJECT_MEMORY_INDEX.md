@@ -1101,3 +1101,10 @@ task from changing which revision, UI, evidence, or next action is active.
 - Source freeze: `work/O3B21/R25_NA1_EXACT_SOURCE_RECORD_FREEZE.json`, SHA-256 `D3481DA814F8F64EC6027FC8B9482924BDE5A2C572530FA36D8511E0C0804971`; 24 exact BF/DF path/byte/hash records canonicalize to `EF8A4DBB63A821AA4B1BE412910AFF316288DCE8239FBA287C9AD1396497AF93`.
 - Correction: two invalid byte-sum namespaces remain withdrawn/no-retry; corrected command `AF623755869AA26C11931C1443FD0A4AA9AFFCCD44CEF67F8D24BC595BF640FB` removed only those diagnostics and showed no red error.
 - Exact next action: one bounded fresh R25/R13 NA1 run over the exact 24 frozen pairs; evaluate the unchanged selector without post-result tuning. O23 remains independent and held; fresh 953 unauthorized.
+
+## 2026-09-01 — OCV-03 O3B21 R25 NA1 source-freeze pass / publication authority gap
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_NA1_SOURCE_FREEZE_PASS_PUBLISH_AUTHORITY_GAP_CHECKPOINT_20260901.md`
+- SHA-256: `61864AF94C9914EDAF015DADE05B8E1B040DA549B86C0E80C991F63BCC9526F7`
+- Boundary: direct control cannot transfer the R25 dependency bundle and no reusable concrete transient payload root is frozen; route rediscovery and clipboard-split transfer remain forbidden.
+- Exact next action: explicit `PUBLISH R25NA1`, then exactly one fresh signed review-only 24-pair request through the recorded portal route. NA1/O23 held; fresh 953 unauthorized.

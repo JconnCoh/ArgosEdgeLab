@@ -9304,3 +9304,18 @@ remain held; fresh 953 and every later phase remain unauthorized.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_NA1_EXACT_SOURCE_FREEZE_PASS_CHECKPOINT_20260901.md`,
 SHA-256 `16D31F92F94CE125A118B4AF98F8C4D708B8002CFC28C528D5BB88E6B7FEE8D2`.
+
+# 2026-09-01 — OCV-03 O3B21 R25 NA1 source-freeze pass / publication authority gap (`PENDING_GATE`)
+
+The exact 24-pair source freeze is complete. Direct control has no file-transfer
+capability and no concrete reusable transient R25 payload root is frozen.
+Infrastructure rediscovery and clipboard-split payload transfer are forbidden.
+One fresh signed review-only portal package is the lawful next transfer, but
+publication requires explicit `PUBLISH R25NA1` authority.
+
+No package, detector, output, source, task/process, provider, wafer, selector,
+or hold state changed. NA1/O23 remain held; fresh 953 remains unauthorized.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_NA1_SOURCE_FREEZE_PASS_PUBLISH_AUTHORITY_GAP_CHECKPOINT_20260901.md`,
+SHA-256 `61864AF94C9914EDAF015DADE05B8E1B040DA549B86C0E80C991F63BCC9526F7`.
