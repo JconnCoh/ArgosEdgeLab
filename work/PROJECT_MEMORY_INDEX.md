@@ -1122,3 +1122,11 @@ task from changing which revision, UI, evidence, or next action is active.
 - SHA-256: `A6E4590E61D5557785207D1AEA2698EC4F4C9960F8D64EF958E42B1FA9CEF9D0`
 - Observation: direct JEA proves ShareBridge `Ready`, response receiver `Running`, and exact qualified GWQ2 bridge/config hashes; exact R25NA1 remains pending unchanged.
 - Recovery: fresh signed direct request `REQ_20260901T161846627Z_6B71EECCA831`, ZIP `F08FE0DD6E2A4ED7C54132239ED411D5F3F5D0445BB8C29B63AA04C3193A6F2B`, is gated but not uploaded or invoked. Only the ShareBridge restart is authorized; no retry or R25NA1 republication.
+
+## 2026-09-01 — OCV-03 O3B21 R25NA1 signed timeout / post-failure observation blocker
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA1_SIGNED_TIMEOUT_POSTFAIL_OBS_BLOCKER_CHECKPOINT_20260901.md`
+- SHA-256: `93A2F064EE8AD3F636F34ED5A3DC4C9FC44AB95113DB52EE5BDBD39C9C69C03D`
+- Gateway outcome: R25G1 restarted only ShareBridge (`Ready` to `Running`) and the importer consumed the exact R25NA1 ZIP; its envelope is terminal failed for a post-action state-label mismatch and is no-retry.
+- R25NA1 outcome: pinned-JBOD signature verifies terminal failure at the 900-second portal-child timeout; response ZIP `2248CA852A00CCA9566DBBD3B316EC1E8FB584B18077D4B02347DE98C5ACA2B9`.
+- Blocker: one exact-host metadata-only post-failure observation timed out after 60 seconds without a nonce-bound result. Output state is unproved; no retry/successor mutation, selector relaxation, 953 corpus, or later phase is authorized.

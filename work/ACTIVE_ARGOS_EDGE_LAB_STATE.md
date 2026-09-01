@@ -9357,3 +9357,22 @@ R25NA1 request/hash and installed-premise verification.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25G1_GATEWAY_RECOVERY_READY_CHECKPOINT_20260901.md`,
 SHA-256 `A6E4590E61D5557785207D1AEA2698EC4F4C9960F8D64EF958E42B1FA9CEF9D0`.
+
+# 2026-09-01 — OCV-03 O3B21 R25NA1 signed timeout / post-failure observation blocker (`PENDING_GATE`)
+
+R25G1 changed only the gateway ShareBridge task from `Ready` to `Running`;
+the unchanged importer then consumed the exact R25NA1 ZIP into `processed`.
+The direct maintenance envelope is nevertheless terminal `FAILED` because its
+frozen manifest required the rehearsal-state label after the authorized task
+action. R25G1 is no-retry and non-reusable.
+
+R25NA1 traversed the portal and returned a matching pinned-JBOD signed terminal
+`FAILED` response: the endpoint stopped `Invoke-R25NA1.ps1` at its fixed
+900-second child timeout. One required metadata-only post-failure observation
+followed a passing exact-host JBOD probe but timed out after 60 seconds without
+a nonce-bound result. That namespace is no-retry. Output-root state is unproved;
+NA1/O23 and every later phase remain held and unauthorized.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA1_SIGNED_TIMEOUT_POSTFAIL_OBS_BLOCKER_CHECKPOINT_20260901.md`,
+SHA-256 `93A2F064EE8AD3F636F34ED5A3DC4C9FC44AB95113DB52EE5BDBD39C9C69C03D`.
