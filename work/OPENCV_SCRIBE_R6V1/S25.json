@@ -1,0 +1,76 @@
+{
+  "schema": "argos_opencv_scribe_job_v1",
+  "revision": "OCV02_R6V1_20260901A",
+  "jobId": "R6V1_20260901A_62619-433_SLOT25",
+  "createdUtc": "2026-09-01T16:00:00Z",
+  "identity": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "slotId": "Slot25",
+    "physicalIdentity": "62619-433_20260824005735_Slot25"
+  },
+  "inputMode": "DEVELOPMENT_AUTO_LOCALIZED_WHOLE_IMAGE",
+  "rawSourceBinding": {
+    "state": "PASS_OCV00_EXACT_TWENTY_SOURCE_HASHES",
+    "evidencePath": "work/OPENCV_OLS6/OLS6_EXACT_TWENTY_SOURCE_HASHES.json",
+    "evidenceSha256": "E54A15301A2B4FE914E6315DDFB9628E1D1364B0553D2155E9D5387A88E7FF3B",
+    "upstreamProposalState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+    "upstreamFailure": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_MULTIPLE_OR_NO_NATIVE_MORPHOLOGY",
+    "upstreamHoldDoesNotSkipScribeDevelopment": true
+  },
+  "inputs": {
+    "bf": {
+      "path": "X:\\62619-433_20260824005735\\Slot25\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot25_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "canonicalProvenancePath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot25\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot25_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "ioPathClass": "SHORT_DOS_DEVICE_ALIAS",
+      "aliasName": "X:",
+      "aliasAnchorCanonicalPath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433",
+      "sha256": "3C97863D38BAC782ED3C19EA314F40E83C6201C22AA2E13AE3B076AFD40506E1",
+      "bytes": 475379874,
+      "coordinateFrameId": "LOT62619_433_SLOT25_RAW_BRIGHTFIELD_FRONT_WAFER"
+    },
+    "df": {
+      "path": "X:\\62619-433_20260824005735\\Slot25\\DarkfieldFrontsideWafer\\resizedImage\\62619-433_Slot25_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "canonicalProvenancePath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot25\\DarkfieldFrontsideWafer\\resizedImage\\62619-433_Slot25_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "ioPathClass": "SHORT_DOS_DEVICE_ALIAS",
+      "aliasName": "X:",
+      "aliasAnchorCanonicalPath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433",
+      "sha256": "41678156414CA7E601FF65CC5098D4A5E2DFF02710C0D1288C498849635B7782",
+      "bytes": 475379874,
+      "coordinateFrameId": "LOT62619_433_SLOT25_RAW_DARKFIELD_FRONT_WAFER"
+    }
+  },
+  "references": {
+    "manifestPath": "D:\\A2\\w\\ocv\\R6V1A\\refs\\PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "manifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "excludedPhysicalIdentity": "62619-433_20260824005735_Slot25",
+    "roots": [
+      {"relativePrefix": "glyphs", "path": "D:\\A2\\w\\ocv\\R6V1A\\refs\\glyphs"},
+      {"relativePrefix": "glyphs_v5_confirmed_20260806", "path": "D:\\A2\\w\\ocv\\R6V1A\\refs\\glyphs_v5_confirmed_20260806"}
+    ]
+  },
+  "search": {
+    "expectedRegions": [],
+    "boundedExceptionSearch": true,
+    "maximumWorkingDimension": 1600,
+    "maximumCandidates": 24,
+    "orientationStepDegrees": 15,
+    "developmentMaximumRegions": 2,
+    "developmentMinimumLocalizationScore": 0.0,
+    "developmentMinimumBandWidthPixels": 500,
+    "developmentOcrRegionWidthPixels": 1600,
+    "developmentOcrRegionHeightPixels": 400,
+    "developmentMinimumObservedHeightRatio": 0.2,
+    "developmentMinimumObservedWidthRatio": 0.5,
+    "developmentMaximumObservedWidthRatio": 1.25
+  },
+  "outputRoot": "D:\\A2\\o\\ocv\\R6V1A\\S25",
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}

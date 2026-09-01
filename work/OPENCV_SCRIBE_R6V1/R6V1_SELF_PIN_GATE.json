@@ -1,0 +1,59 @@
+{
+    "schema":  "argos_r6v1_self_pin_gate_v1",
+    "createdUtc":  "2026-09-01T15:46:56.7586485Z",
+    "state":  "PASS_R6V1_SELF_PIN_AND_LIVE_BRANCH_GATE",
+    "endpointSha256":  "F805E8336FF0A1847D0326ED8A77FFC39207128E8C69177559D0F6BE9E888A25",
+    "pins":  [
+                 {
+                     "id":  "engineSha",
+                     "endpointValue":  "1E4C55AA4ECFB4DA3CEA9DF577DCFE86C4A2FADCB23D29F78719F3E0AC55E0E9",
+                     "evidenceValue":  "1E4C55AA4ECFB4DA3CEA9DF577DCFE86C4A2FADCB23D29F78719F3E0AC55E0E9",
+                     "match":  true
+                 },
+                 {
+                     "id":  "batchSha",
+                     "endpointValue":  "7F77B8EFE0926E4AD37A737F07C98E1A3DF2E8F1392D0B47B886E05F9F52143B",
+                     "evidenceValue":  "7F77B8EFE0926E4AD37A737F07C98E1A3DF2E8F1392D0B47B886E05F9F52143B",
+                     "match":  true
+                 },
+                 {
+                     "id":  "refsSha",
+                     "endpointValue":  "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+                     "evidenceValue":  "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+                     "match":  true
+                 },
+                 {
+                     "id":  "installationSha",
+                     "endpointValue":  "1289EC11F092233D3AAB5ACF416B0212F1874F698F9BBC2B474829939BCDF596",
+                     "evidenceValue":  "1289EC11F092233D3AAB5ACF416B0212F1874F698F9BBC2B474829939BCDF596",
+                     "match":  true
+                 }
+             ],
+    "pinCount":  4,
+    "pinMatchCount":  4,
+    "jobPinCount":  4,
+    "liveBranchCases":  [
+                            {
+                                "id":  "GOOD_BATCH_AND_INSTALLATION",
+                                "state":  "PASS"
+                            },
+                            {
+                                "id":  "BAD_BATCH_HASH_REFUSED",
+                                "state":  "PASS",
+                                "failureBeforeImageRead":  true
+                            },
+                            {
+                                "id":  "BAD_INSTALLATION_HASH_REFUSED",
+                                "state":  "PASS",
+                                "failureBeforeImageRead":  true
+                            }
+                        ],
+    "normalLiveFixtureCallCount":  3,
+    "rehearsalBranchAloneSufficient":  false,
+    "targetExecuted":  false,
+    "mutationsPerformed":  false,
+    "imageBytesRead":  false,
+    "providerActivated":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

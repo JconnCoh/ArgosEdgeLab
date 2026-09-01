@@ -1,0 +1,89 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 16777216,
+  "entryPoint": "payload/Invoke-R6V1ScribeBatch.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-R6V1ScribeBatch.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R6V1.ps1",
+      "approvedPredecessorSha256": [
+        "159BD82528E505DE69BDEEE4C3A3B29402BA9281939C57F6187587E9047D9740"
+      ],
+      "installedSha256": "F805E8336FF0A1847D0326ED8A77FFC39207128E8C69177559D0F6BE9E888A25",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\A2\\w\\ocv\\R6V1A",
+      "mode": "CREATE_NEW_PROVIDER_WORK_TREE",
+      "failureQuarantine": "D:\\A2\\w\\ocv\\R6V1A.failed",
+      "payloads": [
+        {"path": "payload/ArgosOpenCvScribeV1R6.py", "sha256": "1E4C55AA4ECFB4DA3CEA9DF577DCFE86C4A2FADCB23D29F78719F3E0AC55E0E9"},
+        {"path": "payload/BATCH.json", "sha256": "7F77B8EFE0926E4AD37A737F07C98E1A3DF2E8F1392D0B47B886E05F9F52143B"},
+        {"path": "payload/S22.json", "sha256": "CBE13E1B27C818E9B2FA610E1A01792991B371145AC6A4BE5C848078EECBCAA0"},
+        {"path": "payload/S23.json", "sha256": "A05400FDC7E378205A0B6975626EECDDA1F1942AB4417AB1881DFA029C49F083"},
+        {"path": "payload/S24.json", "sha256": "3315AFC2DC2B7674B2C9A0EFC799758A8D37E0726E34607580A5AD01A2A9E6C9"},
+        {"path": "payload/S25.json", "sha256": "30D6AEC2A200772E0B1DE15E99261F9742CEA8A845A5B3A4D1113C2B18490442"},
+        {"path": "D:/O2D5/ARGOS_O2D5/O2D5_REFS.zip", "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6"}
+      ]
+    },
+    {
+      "targetRoot": "D:\\A2\\o\\ocv\\R6V1A",
+      "mode": "CREATE_NEW_PROVIDER_OUTPUT_TREE"
+    }
+  ],
+  "entryPointOutputs": [
+    {"path": "D:\\A2\\o\\ocv\\R6V1A\\Slot22\\RESULT.json", "mode": "CREATE_NEW", "schema": "argos_opencv_scribe_result_v2"},
+    {"path": "D:\\A2\\o\\ocv\\R6V1A\\Slot23\\RESULT.json", "mode": "CREATE_NEW", "schema": "argos_opencv_scribe_result_v2"},
+    {"path": "D:\\A2\\o\\ocv\\R6V1A\\Slot24\\RESULT.json", "mode": "CREATE_NEW", "schema": "argos_opencv_scribe_result_v2"},
+    {"path": "D:\\A2\\o\\ocv\\R6V1A\\Slot25\\RESULT.json", "mode": "CREATE_NEW", "schema": "argos_opencv_scribe_result_v2"},
+    {"path": "D:\\A2\\o\\ocv\\R6V1A\\BATCH_GATE.json", "mode": "CREATE_NEW", "schema": "argos_r6v1_scribe_batch_gate_v1", "requiredState": "PASS_R6V1_REAL_IMAGE_REVIEW_ONLY_BATCH"},
+    {"path": "D:\\A2\\o\\ocv\\R6V1A\\EXECUTION.json", "mode": "CREATE_NEW", "schema": "argos_r6v1_execution_v1", "requiredState": "PASS_R6V1_EXECUTION"}
+  ],
+  "sourceProcessingContract": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "physicalIdentities": [
+      "62619-433_20260824005735_Slot22",
+      "62619-433_20260824005735_Slot23",
+      "62619-433_20260824005735_Slot24",
+      "62619-433_20260824005735_Slot25"
+    ],
+    "inputMode": "DEVELOPMENT_AUTO_LOCALIZED_WHOLE_IMAGE",
+    "rawSourceEvidencePath": "work/OPENCV_OLS6/OLS6_EXACT_TWENTY_SOURCE_HASHES.json",
+    "rawSourceEvidenceSha256": "E54A15301A2B4FE914E6315DDFB9628E1D1364B0553D2155E9D5387A88E7FF3B",
+    "sourceAliasName": "X:",
+    "sourceAliasRoot": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433",
+    "referenceBundlePath": "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+    "referenceBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "sourceImageBytesReadAllowed": true,
+    "opencvPixelDecodeRequired": true,
+    "boundedExceptionSearchAllowed": true,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false,
+    "automaticIdentityAuthority": false
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 3000,
+    "opencvChildTimeoutSeconds": 600,
+    "maximumSequentialChildren": 4,
+    "outerCoversAllChildren": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_FOUR_SERIALIZED_BOUNDED_PORTABLE_OPENCV_SCRIBE_REVIEW_ONLY_CHILDREN"
+  ],
+  "rehearsal": {
+    "requiredState": "PASS_R6V1_REAL_IMAGE_REVIEW_ONLY_BATCH",
+    "gateState": "PASS_R6V1_ENTRYPOINT_TEST_GATE_R2",
+    "gateSha256": "2831A8F082E1B6B6D43B460665E875200B6D666B84E9320E49D51AB9C03859DA",
+    "selfPinGateState": "PASS_R6V1_SELF_PIN_AND_LIVE_BRANCH_GATE",
+    "selfPinGateSha256": "58A296205B0A8398087E4059539932F0E5A1570488C601902ADF8D952D0E5A46"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
