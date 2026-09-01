@@ -1,0 +1,61 @@
+{
+  "schema": "argos_r6v1_offline_milestone_v1",
+  "createdUtc": "2026-09-01T16:55:49.2064351Z",
+  "state": "PASS_R6V1_OFFLINE_POST_RESPONSE_AND_SEGMENTATION_BASELINE",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "frozenLiveRevision": {
+    "requestId": "REQ_20260901T160000111Z_7F77B8EFE092",
+    "requestZipSha256": "E4F62D6126F9FBEDD228CDDE8678136D7FDEFCF5CB2B3825BF1245E11BBF925D",
+    "endpointSha256": "F805E8336FF0A1847D0326ED8A77FFC39207128E8C69177559D0F6BE9E888A25",
+    "batchSha256": "7F77B8EFE0926E4AD37A737F07C98E1A3DF2E8F1392D0B47B886E05F9F52143B",
+    "changed": false,
+    "published": false
+  },
+  "postResponseAdjudication": {
+    "providerPath": "work/OPENCV_SCRIBE_R6V1_OFFLINE/ArgosR6V1PostResponseAdjudicator.py",
+    "providerSha256": "59E634C912D0E37822572AFE2F701396B0D944E872ECB379E2EBA718586A4A2D",
+    "testPath": "work/OPENCV_SCRIBE_R6V1_OFFLINE/Test-R6V1PostResponseAdjudicator.py",
+    "testSha256": "28A865332451BF33ABD76BD2C8FA058AE1F558B560A7F7DD328C8E0C4E0BC73E",
+    "gatePath": "work/OPENCV_SCRIBE_R6V1_OFFLINE/R6V1_POST_RESPONSE_ADJUDICATION_TEST.json",
+    "gateSha256": "C37F862C7558F16043B72A6CD6842F48427FDEEE4B0115BDE8B8613B49A0EA22",
+    "gateState": "PASS_R6V1_POST_RESPONSE_ADJUDICATION_TEST",
+    "testCaseCount": 5,
+    "validFourCaseFixturePassed": true,
+    "identityWideningHeld": true,
+    "sourceHashMismatchHeld": true,
+    "duplicateGeometryHeld": true,
+    "missingCoverageHoldHeld": true
+  },
+  "frozenControlSegmentation": {
+    "builderPath": "work/OPENCV_SCRIBE_R6V1_OFFLINE/Build-R6V1FrozenControlSegmentationEvidence.py",
+    "builderSha256": "31E4B922C058C4998DE1FD1189B828FC94C6801420ADD3F4F85E04E3F714432F",
+    "evidencePath": "work/OPENCV_SCRIBE_R6V1_OFFLINE/R6V1_FROZEN_CONTROL_SEGMENTATION_EVIDENCE.json",
+    "evidenceSha256": "F12B0E90C80517E1A6FD3F6D26254DA3D12075348651C4FC34D81FCF8EE8675F",
+    "evidenceState": "PASS_R6V1_FROZEN_15_CONTROL_SEGMENTATION_BASELINE",
+    "controlCount": 15,
+    "positionCount": 180,
+    "exactProposalCount": 15,
+    "characterCorrect": 169,
+    "truthInReportedCandidatePositions": 180,
+    "duplicateGroupCount": 4,
+    "duplicateAgreementCount": 4
+  },
+  "ocrExpansion": {
+    "runnerPath": "work/OPENCV_SCRIBE_R6V1_OFFLINE/Run-R6V1OcrSegmentationDiagnostics.py",
+    "runnerSha256": "A0B74DAF238C774B14D7A9ECB0A262D2587D1EDF0230ADB6A27D58C36D6602DE",
+    "plannedCellExpansionPixels": [0, 2, 4, 6, 8, 12],
+    "executionState": "PENDING_PINNED_LOCAL_OPENCV_RUNTIME",
+    "observedExpansionRows": 0,
+    "selectionOrThresholdFrozen": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "mayClearHolds": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "providerActivated": false
+  },
+  "nextAction": "Remain serialized behind the exact matching signed R25NA1 terminal. After explicit lane clear, run current route/share-health observation, publish frozen R6V1 exactly once, collect its signed terminal, and adjudicate the four real-image results."
+}

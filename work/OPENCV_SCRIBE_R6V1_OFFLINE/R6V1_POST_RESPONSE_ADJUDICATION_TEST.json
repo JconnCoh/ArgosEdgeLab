@@ -1,0 +1,58 @@
+{
+  "schema": "argos_r6v1_post_response_adjudication_test_v1",
+  "createdUtc": "2026-09-01T16:55:34.255373Z",
+  "state": "PASS_R6V1_POST_RESPONSE_ADJUDICATION_TEST",
+  "caseCount": 5,
+  "cases": [
+    {
+      "id": "GOOD",
+      "exitCode": 0,
+      "state": "PASS_R6V1_POST_RESPONSE_REVIEW_ONLY",
+      "failureCodes": [],
+      "passed": true
+    },
+    {
+      "id": "IDENTITY_ELIGIBLE",
+      "exitCode": 2,
+      "state": "HOLD_R6V1_POST_RESPONSE_ADJUDICATION",
+      "failureCodes": [
+        "Slot22_IDENTITY_ELIGIBLE"
+      ],
+      "passed": true
+    },
+    {
+      "id": "SOURCE_HASH",
+      "exitCode": 2,
+      "state": "HOLD_R6V1_POST_RESPONSE_ADJUDICATION",
+      "failureCodes": [
+        "Slot22_BF_SOURCE_HASH_MISMATCH"
+      ],
+      "passed": true
+    },
+    {
+      "id": "DUPLICATE_GEOMETRY",
+      "exitCode": 2,
+      "state": "HOLD_R6V1_POST_RESPONSE_ADJUDICATION",
+      "failureCodes": [
+        "Slot22_DUPLICATE_GEOMETRY_REGION_ID"
+      ],
+      "passed": true
+    },
+    {
+      "id": "MISSING_COVERAGE_HOLD",
+      "exitCode": 2,
+      "state": "HOLD_R6V1_POST_RESPONSE_ADJUDICATION",
+      "failureCodes": [
+        "Slot22_REFERENCE_COVERAGE_HOLD_MISMATCH"
+      ],
+      "passed": true
+    }
+  ],
+  "frozenPackageChanged": false,
+  "liveProviderRead": false,
+  "identityEligibleCount": 0,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}
