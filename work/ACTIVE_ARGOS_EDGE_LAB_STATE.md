@@ -9552,3 +9552,22 @@ retained and fresh frozen-953 remains unauthorized pending all expected passes.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R31VAL1_SIGNED_ALL_CURRENT_RECIPE_VALIDATION_READY_CHECKPOINT_20260901.md`,
 SHA-256 `C9F31BEC4D1AA5450B8C43DFA102E57593B611824C33F0AB59D564A5F5A1EA8B`.
+
+# 2026-09-01 — OCV-03 O3B21 R31VAL2 signed exact-298 validation ready (`PENDING_GATE`)
+
+R31VAL1 terminal signed failure proved 265 exact current production-recipe
+identities, not the provisional 37..87 bound, and stopped before detector child
+start or image decode. R31VAL1 is no-retry. The signed response is pinned as
+the post-failure exact-hash/cardinality observation and recovery intent passes.
+
+R31VAL2 retains identical R31 detector bytes, uses fresh `D:/R31VAL2`, and
+contains one batch of 32 frozen cases, Slot16, and all 265 current PatternedFront
+and UnpatternedFront identities: 298 total with four bounded children. Request
+`REQ_20260901T225534688Z_673F2FFD0E09`, ZIP
+`E107AB251E2CD4230247F69DCCC7BD0AFB1B1819AA3C1C36BB8646E30895D56B`,
+passes signature, PS5.1, 80 synthetic, path, clone, harness, recovery, and
+preaction gates. Not published. Holds remain and frozen-953 is unauthorized.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R31VAL2_SIGNED_EXACT_298_VALIDATION_READY_CHECKPOINT_20260901.md`,
+SHA-256 `148E9298D251C60E9CF9F198DC64DC8AD35384A1D7967A691D3FCE926373E9C5`.

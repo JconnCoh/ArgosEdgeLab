@@ -1,0 +1,28 @@
+{
+  "schema":"argos_recovery_intent_v1",
+  "createdUtc":"2026-09-01T22:57:00Z",
+  "incidentId":"O3B21_R31VAL1_CURRENT_RECIPE_CARDINALITY_20260901",
+  "mode":"MUTATE",
+  "artifactLifecycle":"DRAFT",
+  "policy":{"path":"work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json","sha256":"F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory":{
+    "signedPremiseFailures":1,
+    "localPremiseFailures":0,
+    "directObservationAfterLastSignedFailure":true,
+    "mutationStopLossExplicitlyCleared":false,
+    "failureEvidence":[{"path":"work/O3B21/R31VAL1_SIGNED_TERMINAL_FAILURE_GATE.json","sha256":"59013EE6C73CF9D60AE9516B7586BB85BB4AF18B0F4D08459F5DE0F2B32F87B3","state":"FAILED"}],
+    "postFailureObservation":{"path":"work/O3B21/R31VAL1_POST_FAILURE_OBSERVATION.json","sha256":"0CA8E62330E89E78C97394E3328D22B51C7D6E76DFEB79D97583A01429D64198"},
+    "workflowReviewClearance":{"path":"","sha256":""}
+  },
+  "route":{"type":"MAINTENANCE_PATCH","jobClass":"MAINTENANCE_PATCH","installedCodeChange":false,"helperInstall":false,"taskActions":[],"processActions":[],"queueMutation":false,"ledgerMutation":false,"sourceMutation":false,"imageRead":true,"waferAction":false,"inheritsQualifiedEndpointGate":true},
+  "observation":{"exactSources":[],"requestedCapabilities":[],"requestedFields":[],"decisionOptions":["A","B","C","D"],"mutationDecisionDeferred":false},
+  "mutation":{
+    "supportedRemedy":"B",
+    "supportingObservation":{"path":"work/O3B21/R31VAL1_POST_FAILURE_OBSERVATION.json","sha256":"0CA8E62330E89E78C97394E3328D22B51C7D6E76DFEB79D97583A01429D64198"},
+    "endpointMutationNecessary":true,
+    "singleMutationAttemptAuthorized":true,
+    "exactRemedy":"Use unchanged R31 detector and inventory hash with exact observed current-recipe count 265, fresh D:/R31VAL2, four children, 298 total cases, no retry"
+  },
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

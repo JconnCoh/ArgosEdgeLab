@@ -1,0 +1,49 @@
+R31VAL1 validation runner failed: Traceback (most recent call last):
+  File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260901T223823959Z_6B75D3448116.ready\payload\Ru
+n-R31ValidationBatch.py", line 180, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260901T223823959Z_6B75D3448116.ready\payload\Ru
+n-R31ValidationBatch.py", line 146, in main
+    cases, counts = build_cases(contract, Path(args.frozen_cases))
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260901T223823959Z_6B75D3448116.ready\payload\Ru
+n-R31ValidationBatch.py", line 112, in build_cases
+    require(int(inventory_contract["minimumCombinedCount"]) <= len(current_rows)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            <= int(inventory_contract["maximumCombinedCount"]),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            f"Current recipe combined cardinality outside frozen bound: {len(current_rows)}")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260901T223823959Z_6B75D3448116.ready\payload\Ru
+n-R31ValidationBatch.py", line 29, in require
+    raise RuntimeError(message)
+RuntimeError: Current recipe combined cardinality outside frozen bound: 265
+At C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260901T223823959Z_6B75D3448116.ready\payload\Invoke-
+R31VAL1.ps1:6 char:72
++ ... bool]$Condition,[string]$Message){if(-not$Condition){throw $Message}}
++                                                          ~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (R31VAL1 validat...en bound: 265
+:String) [], RuntimeException
+    + FullyQualifiedErrorId : R31VAL1 validation runner failed: Traceback (most recent call last):
+      File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260901T223823959Z_6B75D3448116.ready\paylo 
+   ad\Run-R31ValidationBatch.py", line 180, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+      File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260901T223823959Z_6B75D3448116.ready\paylo 
+   ad\Run-R31ValidationBatch.py", line 146, in main
+    cases, counts = build_cases(contract, Path(args.frozen_cases))
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260901T223823959Z_6B75D3448116.ready\paylo 
+   ad\Run-R31ValidationBatch.py", line 112, in build_cases
+    require(int(inventory_contract["minimumCombinedCount"]) <= len(current_rows)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            <= int(inventory_contract["maximumCombinedCount"]),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            f"Current recipe combined cardinality outside frozen bound: {len(current_rows)}")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260901T223823959Z_6B75D3448116.ready\paylo 
+   ad\Run-R31ValidationBatch.py", line 29, in require
+    raise RuntimeError(message)
+RuntimeError: Current recipe combined cardinality outside frozen bound: 265
+ 

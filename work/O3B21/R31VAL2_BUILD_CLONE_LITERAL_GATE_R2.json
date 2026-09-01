@@ -1,0 +1,47 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-01T22:54:30.3740084Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\O3B21\\R31VAL2_BUILD_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "44188C9F9D5C8BDD7ADD8529B39FD6538F28411525CC2B2C2DB988B17B2864A3",
+    "pairCount":  2,
+    "pairs":  [
+                  {
+                      "source":  "work/O3B21/Build-R31VAL1Package.ps1",
+                      "generated":  "work/O3B21/Build-R31VAL2Package.ps1",
+                      "sourceSha256":  "B88308FD331C5549AEF69D3CB94F6B48CA203574BD2E672DC768CC36FFD54ED5",
+                      "generatedSha256":  "34ECCA0E0EFEAF7B8B90AFAEAC2BD861CF9BAEA132B5B1B3CB0091DD6253188F",
+                      "sourceRoots":  [
+                                          "C:\\R21P5",
+                                          "C:\\R31VAL1PK"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\R21P5",
+                                             "C:\\R31VAL2PK"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/O3B21/Invoke-R31VAL1.ps1",
+                      "generated":  "work/O3B21/Invoke-R31VAL2.ps1",
+                      "sourceSha256":  "FAD0CC610C6BFE781FF4476BCC4CB328555452D993BD8392911C69F482049934",
+                      "generatedSha256":  "3A9E080638EDDA9D7E5566E56C7B2E0B47C4D227F3433ADCA143354B83B7A2CB",
+                      "sourceRoots":  [
+                                          "D:\\AFCV1",
+                                          "D:\\R31VAL1"
+                                      ],
+                      "generatedRoots":  [
+                                             "D:\\AFCV1",
+                                             "D:\\R31VAL2"
+                                         ],
+                      "ruleCount":  2
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}
