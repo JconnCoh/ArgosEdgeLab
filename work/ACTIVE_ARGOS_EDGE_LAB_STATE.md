@@ -9483,3 +9483,26 @@ reconciled frozen 953 identities under a fresh namespace.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R28C953_POST_FAILURE_INVENTORY_RECONCILED_ROTATION_DIAGNOSTIC_READY_CHECKPOINT_20260901.md`,
 SHA-256 `B7A99ED760FA2C04E11F08C0055BC893AC5909C76613D81918883111DF1C7A00`.
+
+# 2026-09-01 — OCV-03 O3B21 R29 signed 39-case validation ready (`PENDING_GATE`)
+
+The signed R28ROT1 response completed all eight orientation/holder executions.
+Slot20 remained a hold and Slot16 remained a pass under both original/CCW90
+orientation and exact/no-holder modes. This excludes angle-coordinate and
+holder-mask causes and isolates the Slot20 gap to BF-near-strict plus DF-broad
+appearance.
+
+R29 `72F0DAAE7DC66D4627F03A265B65C137D7362A60C27AA649BAFE564FC515EB65`
+adds only a holder/exterior-clear BF-near-strict plus DF-broad-strong pairing
+mode using frozen R13 thresholds. R28 remains hash-identical. The exact signed
+request `REQ_20260901T215551125Z_E3A895430234`, ZIP
+`F9803B8F4EF9747CB3EF6D14B07C0DC52AF22FAEA915E3A0DB39B1280E40B285`,
+passed Windows PowerShell 5.1 extraction/signature, packaged-entry, 46/46
+synthetic, path, harness, and preaction gates. Its one batch runs 32 frozen
+cases, Slot16, and three deterministic smoke pairs from each current
+`PatternedFront`/`UnpatternedFront` prefix. Not published yet. All holds remain;
+fresh 953 remains unauthorized until the 39 outcomes pass.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R29VAL1_SIGNED_39_CASE_VALIDATION_READY_CHECKPOINT_20260901.md`,
+SHA-256 `811F65DEDC2A103BD8B7A554DEED1AB0864263B736146CBF078313A690C01FEB`.
