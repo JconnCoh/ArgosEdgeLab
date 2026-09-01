@@ -1,0 +1,73 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R6V2_PUBLISH_20260901T230800Z",
+  "createdUtc": "2026-09-01T23:08:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "PUBLISH_EXACT_FROZEN_R6V2_REQUEST_ONCE_AND_COLLECT_ONLY_MATCHING_SIGNED_TERMINAL_NO_RETRY",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"9E1B43A170EC638DB4A3FA13886573DE181BEE964991024838FF0E1C7FC11C59"},
+    {"path":"work/ARGOS_CONTINUITY_STATE.json","sha256":"ADD00EF9CE752C21EEC5903C064D7041DE995448E6752DFC18F407F308A1E25C"},
+    {"path":"work/OPENCV_SCRIBE_R6V2_PUBLISH/Publish-R6V2.ps1","sha256":"680057ED030985CC8D18B9E96539AFFA195B5FF2233EEC1F2ADE8933F9EB772D"},
+    {"path":"work/OPENCV_SCRIBE_R6V2_PUBLISH/R6V2_PUBLISHER_HARNESS_GATE.json","sha256":"F736209CAAA017A238ABC8E27150B69EF5864392F72F51D890644107BDB2EE25"},
+    {"path":"work/OPENCV_SCRIBE_R6V2_PUBLISH/R6V2_CURRENT_ROUTE_SHARE_GATE.json","sha256":"408AC7832CA5DD9EF12F048E8448BF8E5F2F01341159646937C69A3FF4E01822"},
+    {"path":"work/OPENCV_SCRIBE_R6V2/R6V2_FINAL_PACKAGE_GATE.json","sha256":"AF461D346CF6A6FAFD9B3B63FF6F13E0DDB9EF84DEF0E3E1871D739D0B8545BA"},
+    {"path":"work/OPENCV_SCRIBE_R6V2/R6V2_PATH_ROUTE_GATE.json","sha256":"6AD3325DE6A8DDFC98D503731F69CC18C4A002674E58E0AAD0D874AA47FDE352"},
+    {"path":"work/OPENCV_SCRIBE_R6V2/R6V2_LOCAL_FREEZE_CHECKPOINT_20260901.md","sha256":"CB88202C3179D6F1BA1E0D03AFB35E75A45A5870C08E94B306BDE91DDC48CB80"},
+    {"path":"work/OPENCV_SCRIBE_R6V2/final/REQ_20260901T220000222Z_5A348AE509A4.ready.zip","sha256":"1048FB48EFDB736D397A856E75AD1A3F8B0D59599766636F9ABB1353C2AB291D"},
+    {"path":"work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_R6V1_SIGNED_LIVE_GEOMETRY_HOLD_20260901.md","sha256":"CEF8BE1AD3DF9A6B637980462EAE11C61A433ADD0BBB8BD4F59403514A87A5DD"},
+    {"path":"work/REVIEW_UI_CANONICAL/BOWCOMP_HIGHLIGHTER_V1_LOCK.json","sha256":"7F7F25DC65FA6AC219E730AC6F68AD38C6733374C0DDDBEBA5AE184B6BAFA1BD"},
+    {"path":"work/BOWCOMP_REVIEW_ONLY/reviewer_v1/index.html","sha256":"791842844CD76EC9A914EE914C5776D1DF3D58219FD627D59149B00DFFA470C1"},
+    {"path":"work/BOWCOMP_REVIEW_ONLY/reviewer_v1/app.js","sha256":"EE626D3A45810A7157228696F798FC388294637219C9753B9A95C56E457DE169"},
+    {"path":"work/BOWCOMP_REVIEW_ONLY/reviewer_v1/styles.css","sha256":"F0D1C31FE2DA28D00857486C9678A642B7AD1C837BB9249A1FB50BAB9036777E"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/OPENCV_SCRIBE_R6V1/R6V1_COLLECTION_CASE_GATE.json",
+    "sha256": "7A2ED39F1FACECDDEB4F7AAE648D3486F8C58BA1E1A070480EFF0C4894579ED3",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "filesystem": "ONE_CREATE_NEW_U_ALIAS_PUBLICATION",
+    "jbodExecution": true,
+    "requestId": "REQ_20260901T220000222Z_5A348AE509A4",
+    "maximumPublications": 1,
+    "retryAuthorized": false,
+    "matchingSignedResponseCollectionOnly": true,
+    "caseCount": 4,
+    "sourceImageBytesReadAllowedOnJbod": true,
+    "sourceMutationAllowed": false,
+    "providerActivationAllowed": false,
+    "identityAcceptanceAllowed": false,
+    "holdClearanceAllowed": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionRoutingEnabled": false
+}

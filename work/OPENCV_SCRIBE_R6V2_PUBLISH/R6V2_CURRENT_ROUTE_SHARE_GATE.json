@@ -1,0 +1,64 @@
+{
+  "schema": "argos_r6v2_current_route_share_gate_v1",
+  "createdUtc": "2026-09-01T23:06:02.9830703Z",
+  "state": "PASS_R6V2_CURRENT_ROUTE_SHARE_AND_QUEUE_GATE",
+  "requestId": "REQ_20260901T220000222Z_5A348AE509A4",
+  "requestZipSha256": "1048FB48EFDB736D397A856E75AD1A3F8B0D59599766636F9ABB1353C2AB291D",
+  "completePathRouteGatePath": "work/OPENCV_SCRIBE_R6V2/R6V2_PATH_ROUTE_GATE.json",
+  "completePathRouteGateSha256": "6AD3325DE6A8DDFC98D503731F69CC18C4A002674E58E0AAD0D874AA47FDE352",
+  "mapping": {
+    "drive": "U:",
+    "expectedRoot": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs",
+    "psDriveDisplayRootExact": true,
+    "logicalDiskProviderExact": true,
+    "logicalDiskDriveType": 4,
+    "requestsRootReadable": true,
+    "responsesRootReadable": true
+  },
+  "queueObservation": {
+    "pendingRequestFileCount": 0,
+    "acceptedRequestCountToday": 20,
+    "terminalResponseCountToday": 20,
+    "unresolvedEarlierAcceptedRequestCount": 0,
+    "responseManifestScanCount": 300,
+    "responseManifestScanErrorCount": 0,
+    "exactRequestIdProcessedMatchCount": 0,
+    "exactRequestIdResponseMatchCount": 0,
+    "latestAcceptedRequest": "REQ_20260901T225534688Z_673F2FFD0E09.ready.zip",
+    "latestTerminalResponse": "R_F0649B1D2841_20260901224320542_13e43d8b.ready.zip",
+    "latestTerminalResponseSha256": "954B88A253602BAD05BAE64F2F9994C7E4CDF988994926EFBE2D7947AAF47286",
+    "latestTerminalState": "FAILED"
+  },
+  "priorRequestTerminalEvidence": {
+    "requestId": "REQ_20260901T160000111Z_7F77B8EFE092",
+    "checkpointPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV02_R6V1_SIGNED_LIVE_GEOMETRY_HOLD_20260901.md",
+    "checkpointSha256": "CEF8BE1AD3DF9A6B637980462EAE11C61A433ADD0BBB8BD4F59403514A87A5DD",
+    "matchingSignedTerminalResponseRecorded": true
+  },
+  "continuity": {
+    "state": "PASS_ARGOS_PROJECT_CONTINUITY",
+    "canonicalReviewerFilesVerified": 3,
+    "sessionSafetyState": "PASS_SESSION_SIZE"
+  },
+  "branchObservation": {
+    "branch": "codex/opencv-scribe-deciphering",
+    "localTip": "d2890634f307350faf50b82d2b07e138918810b9",
+    "remoteTip": "d2890634f307350faf50b82d2b07e138918810b9",
+    "tipsMatchedAtObservation": true
+  },
+  "publication": {
+    "authorized": true,
+    "maximumPublications": 1,
+    "retryAuthorized": false,
+    "overwriteAuthorized": false,
+    "matchingSignedTerminalResponseOnly": true,
+    "expectedResponseSignerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC"
+  },
+  "reviewOnly": true,
+  "automaticIdentityAuthority": false,
+  "mayClearHolds": false,
+  "providerActivated": false,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}
