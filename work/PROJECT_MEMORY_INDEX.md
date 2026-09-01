@@ -1093,3 +1093,11 @@ task from changing which revision, UI, evidence, or next action is active.
 - Frozen selector/result: `DD642F800ED0C5140980348E13BCD5E06EA7730671360F3BDE0B39AE56ECBD31` / `3F5BFABB7E8C9221D07537F07D26F8AA95F8C372DB353CAEFD3EB8C731534FAC`; 24 deterministic R20-pass metadata identities, zero overlap with the exact 32 executed R25 identities, no identity/lot/slot/appearance/angle preference.
 - Blocker: the first source-record property-name observation timed out after 60 seconds without a nonce-bound result and is no-retry. No image read or detector/state mutation occurred.
 - Exact next action: one future fresh bounded nonce-bound observation may resolve source-record fields for the frozen cohort; then freeze exact BF/DF paths and hashes before any NA1 R25 run. O23 remains independent and held; fresh 953 remains unauthorized.
+
+## 2026-09-01 — OCV-03 O3B21 R25 NA1 exact source freeze pass
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_NA1_EXACT_SOURCE_FREEZE_PASS_CHECKPOINT_20260901.md`
+- SHA-256: `16D31F92F94CE125A118B4AF98F8C4D708B8002CFC28C528D5BB88E6B7FEE8D2`
+- Source freeze: `work/O3B21/R25_NA1_EXACT_SOURCE_RECORD_FREEZE.json`, SHA-256 `D3481DA814F8F64EC6027FC8B9482924BDE5A2C572530FA36D8511E0C0804971`; 24 exact BF/DF path/byte/hash records canonicalize to `EF8A4DBB63A821AA4B1BE412910AFF316288DCE8239FBA287C9AD1396497AF93`.
+- Correction: two invalid byte-sum namespaces remain withdrawn/no-retry; corrected command `AF623755869AA26C11931C1443FD0A4AA9AFFCCD44CEF67F8D24BC595BF640FB` removed only those diagnostics and showed no red error.
+- Exact next action: one bounded fresh R25/R13 NA1 run over the exact 24 frozen pairs; evaluate the unchanged selector without post-result tuning. O23 remains independent and held; fresh 953 unauthorized.

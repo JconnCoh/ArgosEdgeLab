@@ -1,0 +1,78 @@
+{
+  "schema": "argos_o3b21_r25_na1_exact_source_record_freeze_v1",
+  "createdUtc": "2026-09-01T14:34:00Z",
+  "state": "PASS_EXACT_24_SOURCE_RECORDS_CANONICALLY_FROZEN_BY_CORRECTED_NAMESPACE",
+  "disposition": "PENDING_GATE",
+  "selectorPath": "work/O3B21/R25_NA1_LEXICAL_PASS_SOURCE_DISCOVERY_SELECTOR.json",
+  "selectorSha256": "DD642F800ED0C5140980348E13BCD5E06EA7730671360F3BDE0B39AE56ECBD31",
+  "selectionResultPath": "work/O3B21/R25_NA1_LEXICAL_PASS_SOURCE_DISCOVERY_RESULT.json",
+  "selectionResultSha256": "3F5BFABB7E8C9221D07537F07D26F8AA95F8C372DB353CAEFD3EB8C731534FAC",
+  "qualifiedObservation": {
+    "runnerReportedState": "PASS_EXACT_JBOD_DIRECT_COMMAND",
+    "operatorVisibleState": "NO_RED_ERROR_OBSERVED",
+    "qualified": true,
+    "computerName": "A1025645101",
+    "nonce": "aaaa12c7a4d04f8c810f5ae87ee984bf",
+    "commandSha256": "AF623755869AA26C11931C1443FD0A4AA9AFFCCD44CEF67F8D24BC595BF640FB",
+    "commandCharacters": 985,
+    "truncated": false
+  },
+  "withdrawnPredecessorObservations": [
+    {
+      "commandSha256": "D59B6D07F1A0D965AF0F1F987F7DA7031CFA2415D7DD4A7405DC02065B8F00E1",
+      "nonce": "82eb84ca71af46daa2c25ffed199f1cf",
+      "state": "WITHDRAWN_OPERATOR_VISIBLE_NONTERMINATING_ERRORS_NO_RETRY"
+    },
+    {
+      "commandSha256": "E0CEBF0AEA6C6199E9E6BEA205BEFA83C931AEE5298EB7B2C1AA08E5A9B3E8AA",
+      "nonce": "6c6573d95d0b42f6b46176d0a5e149ba",
+      "state": "WITHDRAWN_AUTHORIZED_DIAGNOSTIC_REPLAY_NO_REUSE"
+    }
+  ],
+  "canonicalization": {
+    "host": "Windows PowerShell 5.1 on exact JBOD",
+    "encoding": "UTF8",
+    "format": "ConvertTo-Json -Compress -Depth 4",
+    "ordering": "identity ascending",
+    "fieldOrder": ["identity", "bfPath", "bfBytes", "bfSha256", "dfPath", "dfBytes", "dfSha256"],
+    "recordCount": 24,
+    "jsonCharacters": 16201,
+    "jsonSha256": "EF8A4DBB63A821AA4B1BE412910AFF316288DCE8239FBA287C9AD1396497AF93",
+    "qualifiedAsFreeze": true,
+    "reason": "Fresh corrected namespace removed only the invalid byte-sum diagnostics, returned the identical canonical JSON count, length, and SHA-256, and showed no operator-visible red error."
+  },
+  "discardedDiagnostics": {
+    "allBfBytes": 0,
+    "allDfBytes": 0,
+    "reason": "Measure-Object cannot project ordered-dictionary keys as properties. Both errored namespaces are withdrawn; sums are not evidence and were absent from the corrected command.",
+    "exactErrors": [
+      "The property bfBytes cannot be found in the input for any objects.",
+      "The property dfBytes cannot be found in the input for any objects."
+    ],
+    "fullyQualifiedErrorId": "GenericMeasurePropertyNotFound,Microsoft.PowerShell.Commands.MeasureObjectCommand"
+  },
+  "postResultConsoleTextCapture": {
+    "state": "TIMED_OUT_NO_CONSOLE_TEXT_RETURNED",
+    "timeoutSeconds": 15,
+    "responseReturned": false,
+    "exactRemoteErrorTextKnown": true,
+    "retryAllowed": false
+  },
+  "sourceImageBytesRead": false,
+  "detectorExecuted": false,
+  "routeObservation": {
+    "rustDeskClosedAfterQualifiedResponse": true,
+    "operatorReopenedRustDesk": true,
+    "causeKnown": false,
+    "investigationAuthorized": false,
+    "effectOnReturnedNonceBoundEvidence": "NONE_RESPONSE_ALREADY_RETURNED"
+  },
+  "namespaceRetryAllowed": false,
+  "selectorRelaxedAfterResults": false,
+  "holdCleared": false,
+  "fullCorpusAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

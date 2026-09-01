@@ -9287,3 +9287,20 @@ every later phase remain unauthorized.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_NA1_COHORT_FROZEN_SOURCE_RECORD_SCHEMA_TIMEOUT_CHECKPOINT_20260901.md`,
 SHA-256 `1CC977DF1A3D79F0C47722E9DBC34D823C9D5DB4F469628910A082A0B6D72AB6`.
+
+# 2026-09-01 — OCV-03 O3B21 R25 NA1 exact source freeze pass (`PENDING_GATE`)
+
+The operator confirmed physical Enter is the expected route input. Fresh
+parent-record and 24-record BF/DF metadata observations returned exact paths,
+byte counts, and hashes without reading image bytes. Two aggregate predecessors
+are withdrawn for invalid `Measure-Object` diagnostics. A fresh corrected
+namespace returned the same count, canonical length, and canonical SHA with no
+red error, qualifying the exact 24-pair source freeze.
+
+RustDesk closed after the qualified response and was reopened; transport is not
+being investigated. No detector or state mutation occurred. NA1 and ordinal 23
+remain held; fresh 953 and every later phase remain unauthorized.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_NA1_EXACT_SOURCE_FREEZE_PASS_CHECKPOINT_20260901.md`,
+SHA-256 `16D31F92F94CE125A118B4AF98F8C4D708B8002CFC28C528D5BB88E6B7FEE8D2`.
