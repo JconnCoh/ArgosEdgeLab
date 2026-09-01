@@ -1,0 +1,18 @@
+#Requires -Version 5.1
+[CmdletBinding(DefaultParameterSetName='Preflight')]
+param([Parameter(ParameterSetName='Preflight')][switch]$Preflight,[Parameter(Mandatory=$true,ParameterSetName='Publish')][switch]$Publish)
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+$requestId='REQ_20260901T213650233Z_5CC7C0A40DB7';$source='C:\R28ROT1PK\REQ_20260901T213650233Z_5CC7C0A40DB7.ready.zip';$sourceHash='B951D588FBEBE31C28F1F9E9CFB7D292CCE337D5235CA6358F7AB5F88EFF8769'
+$pathGate=Join-Path $PSScriptRoot 'R28ROT1_PREPUBLICATION_PATH_GATE.json';$pathGateHash='E43B4B42CB5FC385C0F4664E93D362390655C79D7F33B9B1A1300A9B5240B902'
+$rehearsalGate=Join-Path $PSScriptRoot 'R28ROT1_FINAL_ZIP_REHEARSAL_GATE.json';$rehearsalGateHash='3707F82951D6B90A367D38B36F87DB41E702EAB9C77CC42AD2A1CE327951C2E4'
+$expected='\\shm-cifs\Department\DE-1302_FAB_BE_Engineering\60_Saw_VI_Sort\600_General\Joshua.conn\AVI_Images\Argos\Uploads\InspectionRevs';$requests='U:\ProjectPortalRO\requests';$target=Join-Path $requests ($requestId+'.ready.zip');$upload=$target+'.upload';$gate=Join-Path $PSScriptRoot 'R28ROT1_PUBLISH_GATE.json'
+function Sha([string]$Path){(Get-FileHash -LiteralPath $Path -Algorithm SHA256 -ErrorAction Stop).Hash}
+function New-Json([string]$Path,[object]$Value){if(Test-Path -LiteralPath $Path){throw "Create-new path exists: $Path"};[IO.File]::WriteAllText($Path,(($Value|ConvertTo-Json -Depth 12)+[Environment]::NewLine),(New-Object Text.UTF8Encoding($false)))}
+if(-not(Test-Path -LiteralPath $source -PathType Leaf)-or(Sha $source)-ne$sourceHash){throw 'R28ROT1 signed ZIP absent or changed.'};if((Sha $pathGate)-ne$pathGateHash-or(Sha $rehearsalGate)-ne$rehearsalGateHash){throw 'R28ROT1 release gate changed.'}
+$ps=Get-PSDrive U -ErrorAction Stop;$disk=Get-CimInstance Win32_LogicalDisk -Filter "DeviceID='U:'" -ErrorAction Stop;if($ps.DisplayRoot-ne$expected-or$disk.ProviderName-ne$expected-or[int]$disk.DriveType-ne4){throw 'Qualified U mapping changed.'}
+if(@(Get-ChildItem -LiteralPath $requests -File -Filter '*.ready.zip' -ErrorAction Stop).Count-ne0){throw 'Portal request queue is not empty.'};if((Test-Path -LiteralPath $target)-or(Test-Path -LiteralPath $upload)-or(Test-Path -LiteralPath $gate)){throw 'R28ROT1 publication namespace exists.'}
+$project=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'));$head=[string](& git -C $project rev-parse HEAD);$origin=[string](& git -C $project rev-parse refs/remotes/origin/codex/fiducial-opencv-d-drive);if($LASTEXITCODE-ne0-or$head-ne$origin){throw 'Local/origin branch tips do not match.'}
+if($Preflight){[ordered]@{schema='argos_o3b21_r28rot1_publish_preflight_v1';state='PASS_R28ROT1_PUBLISH_PREFLIGHT';requestId=$requestId;sourceSha256=$sourceHash;pendingRequestCount=0;branchTip=$head;caseCount=2;executionCount=8;targetExecuted=$false;mutationsPerformed=$false}|ConvertTo-Json;return}
+[IO.File]::Copy($source,$upload,$false);if((Sha $upload)-ne$sourceHash){throw 'R28ROT1 upload hash changed.'};[IO.File]::Move($upload,$target);if((Sha $target)-ne$sourceHash){throw 'R28ROT1 published hash changed.'}
+$value=[ordered]@{schema='argos_o3b21_r28rot1_publish_gate_v1';createdUtc=[DateTime]::UtcNow.ToString('o');state='PASS_R28ROT1_PUBLISHED_EXACTLY_ONCE_AWAITING_SIGNED_RESPONSE';requestId=$requestId;publishedPath=$target;publishedSha256=$sourceHash;publishedBytes=(Get-Item -LiteralPath $target).Length;publishAttemptCount=1;automaticRetryAuthorized=$false;matchingSignedTerminalResponseRequired=$true;caseCount=2;executionCount=8;reviewOnly=$true;productionRoutingEnabled=$false};New-Json $gate $value;$value|ConvertTo-Json -Depth 8

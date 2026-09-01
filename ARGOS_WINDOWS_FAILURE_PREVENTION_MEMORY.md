@@ -10690,3 +10690,22 @@ than rerunning it.
 - Recovery: retain R27B32 as signed-terminal failed and no-retry. Use a fresh
   package and output namespace with unchanged detector, cases, thresholds,
   and 32-case gate; change only both generic-list snapshots to `.ToArray()`.
+
+## 2026-09-01 — One-letter PowerShell helper names can collide with built-in aliases
+
+- Failure signature: the bounded direct read-only R28 inventory reconciliation
+  reached the exact JBOD, but `H <identity-array>` resolved as the built-in
+  `Get-History` alias and attempted to convert the first wafer identity to an
+  `Int64` history ID. The command returned `FAIL` before producing inventory
+  evidence and performed no mutation.
+- Cause: the observation source used the one-letter function name `H` for an
+  in-memory SHA-256 helper. In the remote Windows PowerShell 5.1 invocation
+  context, command-name resolution selected the pre-existing alias instead of
+  the intended helper.
+- Mandatory preflight: reject one-letter helper names and every helper name
+  returned by `Get-Alias` for the exact Windows PowerShell 5.1 host. Use a
+  distinctive verb-noun name, and invoke it with the `function:` scope when
+  compact source must be transported through a wrapper.
+- Recovery: retain the failed read-only command bytes as terminal no-retry
+  evidence. A fresh read-only observation may use the same proven route and
+  premises with only the helper renamed and explicitly function-scoped.

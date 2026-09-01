@@ -9463,3 +9463,23 @@ count, broaden the corpus, or relax the frozen identity boundary.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R28C953L1_INVENTORY_CARDINALITY_FAILURE_CHECKPOINT_20260901.md`,
 SHA-256 `029138CFEBE14EFB88F4B37910B22906FB06EC03E1B32C2138484F8F0ED77B65`.
+
+# 2026-09-01 — OCV-03 O3B21 R28 inventory reconciled / rotation diagnostic ready (`PENDING_GATE`)
+
+The required exact-JBOD read-only observation passed. Current inventory
+`D:/R28C953INV/inventory.json` contains 978 BACK pairs and zero source
+problems. Mechanical reconciliation against frozen R20 proves exactly 25
+later `PatternedFront` additions, zero missing frozen identities, and zero
+changed frozen BF/DF source paths. The original 953 set remains mechanically
+selectable without broadening.
+
+Next is the bounded two-pair/eight-execution R28 rotation/holder diagnostic:
+left-notch failed Slot20 and same-scan passing Slot16, original and 90-degree
+counterclockwise, exact R28 and diagnostic-only no-holder. No-holder results
+cannot clear holds or become production logic. Do not launch another corpus
+until this diagnostic is interpreted; any later corpus must use only the exact
+reconciled frozen 953 identities under a fresh namespace.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R28C953_POST_FAILURE_INVENTORY_RECONCILED_ROTATION_DIAGNOSTIC_READY_CHECKPOINT_20260901.md`,
+SHA-256 `B7A99ED760FA2C04E11F08C0055BC893AC5909C76613D81918883111DF1C7A00`.
