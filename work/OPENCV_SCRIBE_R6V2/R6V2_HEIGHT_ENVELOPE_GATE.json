@@ -1,0 +1,51 @@
+{
+  "schema": "argos_r6v2_height_envelope_gate_v1",
+  "createdUtc": "2026-09-01T21:50:02.798061+00:00",
+  "state": "PASS_R6V2_FROZEN_HEIGHT_ENVELOPE",
+  "engineSha256": "1E4C55AA4ECFB4DA3CEA9DF577DCFE86C4A2FADCB23D29F78719F3E0AC55E0E9",
+  "configurationSha256": "C5343C53E94EB2297FBE0637D13E9684D1C11CC3134E856FACE5C57450CB3C92",
+  "positive": {
+    "source": "FROZEN_15_CONTROL_CORPUS_A01",
+    "minimumQualifiedHeightRatio": 0.3068176587422689
+  },
+  "negative": {
+    "source": "O2D20_SIGNED_STDOUT_SHA256_6A8F71C4141C31AA5EBA3956D8DB84A9C83D5CA069152854EA11FD398474FDCF",
+    "maximumHeightRatio": 0.10538907694518568,
+    "geometry": [
+      {
+        "regionId": "RECORDED_105",
+        "observedWidthPixels": 1228.8895260810853,
+        "observedHeightPixels": 42.15563077807427,
+        "observedToOcrWidthRatio": 0.7680559538006783,
+        "observedToOcrHeightRatio": 0.10538907694518568,
+        "qualified": false,
+        "rejection": "OBSERVED_GEOMETRY_DOES_NOT_SUPPORT_OCR_ENVELOPE"
+      }
+    ]
+  },
+  "derivedFloor": 0.2061033678437273,
+  "positiveMargin": 0.10071429089854161,
+  "negativeMargin": 0.10071429089854161,
+  "checks": {
+    "providerBytesUnchanged": true,
+    "configurationReviewOnly": true,
+    "positiveControlRecomputed": true,
+    "negativeControlRecomputed": true,
+    "midpointExact": true,
+    "positiveAccepted": true,
+    "falseTextureRejected": true,
+    "injectedBelowRejected": true,
+    "injectedBoundaryAccepted": true,
+    "widthEnvelopeUnchanged": true,
+    "duplicateCollapsePreserved": true,
+    "referenceCoverageHoldPreserved": true,
+    "developmentHoldPreserved": true,
+    "identityIneligible": true,
+    "widenedAuthorityRefused": true
+  },
+  "providerActivated": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

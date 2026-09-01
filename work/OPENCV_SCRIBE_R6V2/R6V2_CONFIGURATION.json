@@ -1,0 +1,46 @@
+{
+  "schema": "argos_opencv_scribe_provider_configuration_v1",
+  "revision": "OCV02_R6V2_20260901A",
+  "state": "DRAFT_OFFLINE_REVIEW_ONLY",
+  "providerId": "ARGOS_OPENCV_SCRIBE_V1R6",
+  "engine": {
+    "relativePath": "work/OPENCV_SCRIBE_V1R6/ArgosOpenCvScribeV1R6.py",
+    "sha256": "1E4C55AA4ECFB4DA3CEA9DF577DCFE86C4A2FADCB23D29F78719F3E0AC55E0E9",
+    "algorithmBytesChangedFromR6V1": false
+  },
+  "automaticLocalization": {
+    "maximumRegions": 2,
+    "minimumLocalizationScore": 0.0,
+    "minimumBandWidthPixels": 500,
+    "ocrRegionWidthPixels": 1600,
+    "ocrRegionHeightPixels": 400,
+    "minimumObservedHeightRatio": 0.2061033678437273,
+    "minimumObservedWidthRatio": 0.5,
+    "maximumObservedWidthRatio": 1.25
+  },
+  "calibration": {
+    "method": "MIDPOINT_BETWEEN_FROZEN_LOWEST_QUALIFIED_DEVELOPMENT_HEIGHT_AND_SIGNED_FALSE_TEXTURE_HEIGHT",
+    "positiveControl": "LOCKED_A01_DETECTOR_INPUT_FROM_FROZEN_15_CONTROL_CORPUS",
+    "positiveMinimumQualifiedHeightRatio": 0.3068176587422689,
+    "negativeControl": "O2D20_SIGNED_FALSE_TEXTURE_SHA256_6A8F71C4141C31AA5EBA3956D8DB84A9C83D5CA069152854EA11FD398474FDCF",
+    "negativeMaximumHeightRatio": 0.10538907694518568,
+    "derivedMidpoint": 0.2061033678437273,
+    "positiveMargin": 0.10071429089854161,
+    "negativeMargin": 0.10071429089854161,
+    "slot22Through25UsedToFitThreshold": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "mayClearHolds": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false
+  },
+  "integration": {
+    "sharedProcessorEntrypointChanged": false,
+    "activeBacksideProviderChanged": false,
+    "publicationAuthorized": false,
+    "activationAuthorized": false
+  }
+}

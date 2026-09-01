@@ -1,0 +1,32 @@
+{
+  "schema": "argos_opencv_scribe_r6v2_regression_gate_v1",
+  "createdUtc": "2026-09-01T22:10:00Z",
+  "state": "PASS_R6V2_BOUNDED_HEIGHT_CONFIGURATION_REGRESSION",
+  "providerAlgorithmSha256": "1E4C55AA4ECFB4DA3CEA9DF577DCFE86C4A2FADCB23D29F78719F3E0AC55E0E9",
+  "configurationSha256": "C5343C53E94EB2297FBE0637D13E9684D1C11CC3134E856FACE5C57450CB3C92",
+  "minimumObservedHeightRatio": 0.2061033678437273,
+  "evidence": {
+    "heightEnvelope": {"path": "work/OPENCV_SCRIBE_R6V2/R6V2_HEIGHT_ENVELOPE_GATE.json", "sha256": "6D607799FBFA1F3F8B020FE6EA1AC2CA542CE93D7C5795DCCF63D42EF3B57C10", "checkCount": 15, "checkPassCount": 15},
+    "fullControls": {"path": "work/OPENCV_SCRIBE_R6V2/R6V2_FULL_15_CONTROL_GATE.json", "sha256": "60383D6D704BC2F8920917C9868D8847753231B130B64CDFD4469A5453E67265", "exactCount": 15, "controlCount": 15, "duplicateAgreementCount": 4, "duplicateGroupCount": 4},
+    "ocrExpansion": {"path": "work/OPENCV_SCRIBE_R6V2/R6V2_OCR_EXPANSION_GATE.json", "sha256": "5E39634B662AA8169B93DB2EF04405996405AE9DAF949B186290A6ED3B0E40CB", "expansionPixels": [0,2,4,6,8,12], "exactAtEveryExpansion": 15, "duplicateAgreementAtEveryExpansion": 4},
+    "entrypoint": {"path": "work/OPENCV_SCRIBE_R6V2/R6V2_ENTRYPOINT_TEST_GATE_R2.json", "sha256": "F6FAEA24F31DE229B3061D0E38C92F9C3D49B0D4A796C4C24DEEDB578A34EAC5", "caseCount": 4},
+    "selfPins": {"path": "work/OPENCV_SCRIBE_R6V2/R6V2_SELF_PIN_GATE.json", "sha256": "9DBEB105E44DB39A2A3B06B70C356EA01E58D563AE7EF9B0E619B714DB16D253", "pinMatchCount": 5}
+  },
+  "negativeControls": {
+    "signedFalseTextureRejected": true,
+    "belowFloorRejected": true,
+    "atFloorAccepted": true,
+    "widenedIdentityAuthorityRefused": true,
+    "developmentGeometryHoldPreserved": true,
+    "referenceCoverageHoldPreserved": true
+  },
+  "algorithmBytesChanged": false,
+  "widthEnvelopeChanged": false,
+  "automaticIdentityAuthority": false,
+  "holdsCleared": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

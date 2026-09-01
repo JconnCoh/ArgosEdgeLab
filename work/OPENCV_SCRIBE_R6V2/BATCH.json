@@ -1,0 +1,68 @@
+{
+  "schema": "argos_opencv_scribe_batch_v1",
+  "revision": "OCV02_R6V2_20260901A",
+  "state": "FROZEN_REVIEW_ONLY_VALIDATION_INPUT",
+  "engine": {
+    "file": "ArgosOpenCvScribeV1R6.py",
+    "sha256": "1E4C55AA4ECFB4DA3CEA9DF577DCFE86C4A2FADCB23D29F78719F3E0AC55E0E9",
+    "revision": "ARGOS_OPENCV_SCRIBE_V1R6_20260901"
+  },
+  "configuration": {
+    "file": "R6V2_CONFIGURATION.json",
+    "sha256": "C5343C53E94EB2297FBE0637D13E9684D1C11CC3134E856FACE5C57450CB3C92",
+    "minimumObservedHeightRatio": 0.2061033678437273,
+    "algorithmBytesChangedFromR6V1": false
+  },
+  "referenceBundle": {
+    "path": "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+    "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "expectedReferenceCount": 456,
+    "referenceCoverageComplete": false,
+    "missingBodyReferenceLabels": "IJKOQVWXYZ"
+  },
+  "sourceAlias": {
+    "name": "X:",
+    "root": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433"
+  },
+  "workRoot": "D:\\A2\\w\\ocv\\R6V2A",
+  "outputRoot": "D:\\A2\\o\\ocv\\R6V2A",
+  "cases": [
+    {
+      "slot": "Slot22",
+      "physicalIdentity": "62619-433_20260824005735_Slot22",
+      "jobFile": "S22.json",
+      "jobSha256": "61E89F7B55606314267D2A74887E747FE212B107937D6445B6B2052E547F4405"
+    },
+    {
+      "slot": "Slot23",
+      "physicalIdentity": "62619-433_20260824005735_Slot23",
+      "jobFile": "S23.json",
+      "jobSha256": "EA1F500F0B8F5ADF5C598C431547E8DD10EBF41E0DC0A755C27476F853D712E5"
+    },
+    {
+      "slot": "Slot24",
+      "physicalIdentity": "62619-433_20260824005735_Slot24",
+      "jobFile": "S24.json",
+      "jobSha256": "2D809A00A589CA056C523498C2111015B67398BEBEC6DBF11C770C05FC60B5E0"
+    },
+    {
+      "slot": "Slot25",
+      "physicalIdentity": "62619-433_20260824005735_Slot25",
+      "jobFile": "S25.json",
+      "jobSha256": "1C916CFE42D480E673DFA9348F7B445BEE6A7573A2B8457ECE2104527587C431"
+    }
+  ],
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "mayClearHolds": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false
+  },
+  "serialization": {
+    "maximumConcurrentProviderChildren": 1,
+    "automaticRetryAllowed": false,
+    "caseFailureStopsBatch": true
+  }
+}
