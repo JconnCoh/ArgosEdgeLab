@@ -1,0 +1,451 @@
+{
+  "schema": "argos_opencv_scribe_r6_locked_parity_gate_v1",
+  "createdUtc": "2026-09-01T14:34:30.086105+00:00",
+  "state": "PASS_OCV02_R6_LOCKED_READER_AND_GEOMETRY_SEMANTICS",
+  "engine": {
+    "path": "work/OPENCV_SCRIBE_V1R6/ArgosOpenCvScribeV1R6.py",
+    "sha256": "1E4C55AA4ECFB4DA3CEA9DF577DCFE86C4A2FADCB23D29F78719F3E0AC55E0E9",
+    "revision": "ARGOS_OPENCV_SCRIBE_V1R6_20260901",
+    "opencvVersion": "5.0.0",
+    "numpyVersion": "2.5.2",
+    "configurationPath": "work/OPENCV_SCRIBE_V1R6/OCV02_R6_OFFLINE_CONFIGURATION.json",
+    "configurationSha256": "AAA111360E6DBF9A3E40D5A846C485E10BE420910BAE325F4986582D6E5D440A"
+  },
+  "dependencies": [
+    {
+      "path": "work/OPENCV_SCRIBE_V1/OCV02_SCRIBE_SEMANTIC_BASELINE.json",
+      "sha256": "14294BAB3C2B3CB1F9B7AF199F796BACD0BCE46BA555DCD772FC17ACF175F0CC",
+      "passed": true
+    },
+    {
+      "path": "work/SCRIBE_REVIEW_ONLY/tools/SemiM12DotMatrixImageReader.cs",
+      "sha256": "0E64D5FBE57556B7FC5A37D6764FDA65CBF780F96A3C994B73954CF985E67206",
+      "passed": true
+    },
+    {
+      "path": "work/SCRIBE_REVIEW_ONLY/tools/ScribeChannelPolarityVariants.cs",
+      "sha256": "94DFB1B7F38A1E5BF12C41F9D8FBEEDAFFDF888365E9646F1058C58A9F5DEF0C",
+      "passed": true
+    },
+    {
+      "path": "work/SCRIBE_REVIEW_ONLY/scratch/SCRIBE_READER_V5_MERGED_REFERENCES_20260806T203000Z/PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+      "sha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+      "passed": true
+    },
+    {
+      "path": "work/SCRIBE_REVIEW_ONLY/outputs/review_only/FS15_SCRIBE_READER_PHYSICAL_HOLDOUT_V4_20260804T204500Z/PHYSICAL_HOLDOUT_RESULTS.csv",
+      "sha256": "7BCA49CA6871615D1E84CAD0ED21F0577F93671AF0AB11043E089DF554F9B81B",
+      "passed": true
+    },
+    {
+      "path": "work/SCRIBE_REVIEW_ONLY/outputs/review_only/FS15_SCRIBE_READER_PHYSICAL_HOLDOUT_V4_20260804T204500Z/DUPLICATE_VIEW_AGREEMENT.csv",
+      "sha256": "BBADA2B29489487841E357D722D194034A19F5B411D9447C88DB3C1F5C60C468",
+      "passed": true
+    },
+    {
+      "path": "work/SCRIBE_REVIEW_ONLY/outputs/review_only/FS15_SCRIBE_READER_PHYSICAL_HOLDOUT_V4_20260804T204500Z/HOLDOUT_SUMMARY.json",
+      "sha256": "9B06357632EC8DA3520265DBB8020D154012EE151A113193E906873FCA0A4A77",
+      "passed": true
+    }
+  ],
+  "physicalHoldout": {
+    "mode": "LOCKED_ACCEPTED_GRID_RECOGNITION_PARITY",
+    "passCount": 15,
+    "caseCount": 15,
+    "cases": [
+      {
+        "alias": "A01",
+        "acquisitionKey": "62607-215_20260730053038_SLOT25",
+        "physicalWaferKey": "62607_215_SLOT25",
+        "inputSha256": "50ABDA519730E4CAD1014A14080264A403F19BB8CB1A7EE69821604652B8A150",
+        "excludedPhysicalIdentity": "62607_215_SLOT25",
+        "grid": {
+          "x": 381,
+          "y": 253,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "5565R022FEC5",
+        "proposedString": "5565R022FEG5",
+        "truth": "5565R022FEG5",
+        "passed": true
+      },
+      {
+        "alias": "A02",
+        "acquisitionKey": "62627-140_20260802111846_SLOT21",
+        "physicalWaferKey": "62627_140_SLOT21",
+        "inputSha256": "ABCDDF3B4D3C86119F25E46D528D77050D9644A8BB338ADF98D112613CA2EF8B",
+        "excludedPhysicalIdentity": "62627_140_SLOT21",
+        "grid": {
+          "x": 380,
+          "y": 275,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "0443S067FEE1",
+        "proposedString": "0443S067FEE1",
+        "truth": "0443S067FEE1",
+        "passed": true
+      },
+      {
+        "alias": "A03",
+        "acquisitionKey": "62627-140_20260802111846_SLOT25",
+        "physicalWaferKey": "62627_140_SLOT25",
+        "inputSha256": "A598B6C7F3C95295F35D6A393C60A314926FFBD197E8417E560BD1EA9B16E7D5",
+        "excludedPhysicalIdentity": "62627_140_SLOT25",
+        "grid": {
+          "x": 398,
+          "y": 275,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "147MH062SUE1",
+        "proposedString": "147MH062SUE1",
+        "truth": "147MH062SUE1",
+        "passed": true
+      },
+      {
+        "alias": "A04",
+        "acquisitionKey": "62627-140_20260802120300_SLOT21",
+        "physicalWaferKey": "62627_140_SLOT21",
+        "inputSha256": "F4214CA9FB9BA6DBCD27FCE4FE371F58A2FDAAF4701BF7026991CFFB1817C90F",
+        "excludedPhysicalIdentity": "62627_140_SLOT21",
+        "grid": {
+          "x": 379,
+          "y": 273,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "0443S067FEE1",
+        "proposedString": "0443S067FEE1",
+        "truth": "0443S067FEE1",
+        "passed": true
+      },
+      {
+        "alias": "A05",
+        "acquisitionKey": "62627-140_20260802120300_SLOT25",
+        "physicalWaferKey": "62627_140_SLOT25",
+        "inputSha256": "43F286D7E9313F9217D6A7093651AFCB044CAFFEBB35267695D36700A328F9BD",
+        "excludedPhysicalIdentity": "62627_140_SLOT25",
+        "grid": {
+          "x": 401,
+          "y": 276,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "147MH062SUE1",
+        "proposedString": "147MH062SUE1",
+        "truth": "147MH062SUE1",
+        "passed": true
+      },
+      {
+        "alias": "A06",
+        "acquisitionKey": "62627-198_20260730081958_SLOT16",
+        "physicalWaferKey": "62627_198_SLOT16",
+        "inputSha256": "3737657D773B41D0BC1D64DEDA6501B6B585A7372A555F22EAEFA9DD5BBBCF4E",
+        "excludedPhysicalIdentity": "62627_198_SLOT16",
+        "grid": {
+          "x": 388,
+          "y": 248,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "147MH099SUD1",
+        "proposedString": "147MH099SUD1",
+        "truth": "147MH099SUD1",
+        "passed": true
+      },
+      {
+        "alias": "A07",
+        "acquisitionKey": "62627-198_20260730081958_SLOT25",
+        "physicalWaferKey": "62627_198_SLOT25",
+        "inputSha256": "6384885AEF202ADCA3BC992BA49BAC74BD9AD3BBFBE6D05F66AB429D4F43C3A3",
+        "excludedPhysicalIdentity": "62627_198_SLOT25",
+        "grid": {
+          "x": 367,
+          "y": 272,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "9914R036FEC5",
+        "proposedString": "9914R036FEC5",
+        "truth": "9914R036FEC5",
+        "passed": true
+      },
+      {
+        "alias": "A08",
+        "acquisitionKey": "62627-198-POST-IVS_20260730103451_SLOT16",
+        "physicalWaferKey": "62627_198_SLOT16",
+        "inputSha256": "7B5037E19894CC0A234E7CC2AB5439134174D70B313E09C392621C05DDE14B9E",
+        "excludedPhysicalIdentity": "62627_198_SLOT16",
+        "grid": {
+          "x": 384,
+          "y": 245,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "147MH099SUD1",
+        "proposedString": "147MH099SUD1",
+        "truth": "147MH099SUD1",
+        "passed": true
+      },
+      {
+        "alias": "A09",
+        "acquisitionKey": "62627-198-POST-IVS_20260730103451_SLOT25",
+        "physicalWaferKey": "62627_198_SLOT25",
+        "inputSha256": "F17469E20ED5E352FCA60B02CAE4C80EFBAE22F409E85E4DA0D1130C5BCD4E8A",
+        "excludedPhysicalIdentity": "62627_198_SLOT25",
+        "grid": {
+          "x": 363,
+          "y": 270,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "9914R036FEC5",
+        "proposedString": "9914R036FEC5",
+        "truth": "9914R036FEC5",
+        "passed": true
+      },
+      {
+        "alias": "A10",
+        "acquisitionKey": "62631-536_20260731164616_SLOT04",
+        "physicalWaferKey": "62631_536_SLOT04",
+        "inputSha256": "F6F23A4B129FAA74F46DB482856C3F6D3279D93FAC4791BBEC6704B5E0DEC909",
+        "excludedPhysicalIdentity": "62631_536_SLOT04",
+        "grid": {
+          "x": 380,
+          "y": 286,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "9914R088FEE1",
+        "proposedString": "9914R088FEE1",
+        "truth": "9914R088FEE1",
+        "passed": true
+      },
+      {
+        "alias": "A11",
+        "acquisitionKey": "62631-536_20260731164616_SLOT22",
+        "physicalWaferKey": "62631_536_SLOT22",
+        "inputSha256": "E073DD3BE531B63B85EE1FE16B61DF53A287394D8EF018547B7B6AEA3698863E",
+        "excludedPhysicalIdentity": "62631_536_SLOT22",
+        "grid": {
+          "x": 397,
+          "y": 265,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "1483G010SUA0",
+        "proposedString": "1483G010SUH2",
+        "truth": "1483G010SUH2",
+        "passed": true
+      },
+      {
+        "alias": "A12",
+        "acquisitionKey": "62631-544_20260803105445_SLOT01",
+        "physicalWaferKey": "62631_544_SLOT01",
+        "inputSha256": "A5D92213CF43C31CB144FE6EF5A2514BF8868673F6DEBA0AC3AE267139466FC2",
+        "excludedPhysicalIdentity": "62631_544_SLOT01",
+        "grid": {
+          "x": 386,
+          "y": 258,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "0230S038FEF5",
+        "proposedString": "0230S038FEF5",
+        "truth": "0230S038FEF5",
+        "passed": true
+      },
+      {
+        "alias": "A13",
+        "acquisitionKey": "62631-544_20260803105445_SLOT10",
+        "physicalWaferKey": "62631_544_SLOT10",
+        "inputSha256": "B44C63EE54850E1789458611F16C7BA6A4DE19E125EDC8B8570732F49FDE5D06",
+        "excludedPhysicalIdentity": "62631_544_SLOT10",
+        "grid": {
+          "x": 406,
+          "y": 258,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "1483G012SUE4",
+        "proposedString": "1483G012SUB0",
+        "truth": "1483G012SUB0",
+        "passed": true
+      },
+      {
+        "alias": "A14",
+        "acquisitionKey": "62631-545_20260803104055_SLOT01",
+        "physicalWaferKey": "62631_545_SLOT01",
+        "inputSha256": "C96F0C8AA1E4ABE96F1FA3B2B8D676D390BBA82D37E61C6C47ECBB31CEBBD838",
+        "excludedPhysicalIdentity": "62631_545_SLOT01",
+        "grid": {
+          "x": 383,
+          "y": 256,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "0230S029FEF5",
+        "proposedString": "0230S029FEF3",
+        "truth": "0230S029FEF3",
+        "passed": true
+      },
+      {
+        "alias": "A15",
+        "acquisitionKey": "62631-545_20260803104055_SLOT10",
+        "physicalWaferKey": "62631_545_SLOT10",
+        "inputSha256": "33451E20B2806AC656145BDFFC350AD05AD6AFC5B084C8FEBD6A56B960E915FA",
+        "excludedPhysicalIdentity": "62631_545_SLOT10",
+        "grid": {
+          "x": 380,
+          "y": 262,
+          "cellWidth": 96,
+          "cellHeight": 230
+        },
+        "imageFirstString": "0230S035FEA0",
+        "proposedString": "0230S035FEA2",
+        "truth": "0230S035FEA2",
+        "passed": true
+      }
+    ]
+  },
+  "duplicateViewAgreement": {
+    "passCount": 4,
+    "groupCount": 4,
+    "groups": [
+      {
+        "physicalWaferKey": "62627_140_SLOT21",
+        "acquisitionCount": 2,
+        "proposedStrings": [
+          "0443S067FEE1"
+        ],
+        "truths": [
+          "0443S067FEE1"
+        ],
+        "passed": true
+      },
+      {
+        "physicalWaferKey": "62627_140_SLOT25",
+        "acquisitionCount": 2,
+        "proposedStrings": [
+          "147MH062SUE1"
+        ],
+        "truths": [
+          "147MH062SUE1"
+        ],
+        "passed": true
+      },
+      {
+        "physicalWaferKey": "62627_198_SLOT16",
+        "acquisitionCount": 2,
+        "proposedStrings": [
+          "147MH099SUD1"
+        ],
+        "truths": [
+          "147MH099SUD1"
+        ],
+        "passed": true
+      },
+      {
+        "physicalWaferKey": "62627_198_SLOT25",
+        "acquisitionCount": 2,
+        "proposedStrings": [
+          "9914R036FEC5"
+        ],
+        "truths": [
+          "9914R036FEC5"
+        ],
+        "passed": true
+      }
+    ]
+  },
+  "referenceCoverage": {
+    "manifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "referenceCount": 456,
+    "prototypeLabels": "0123456789ABCDEFGHLMNPRSTU",
+    "missingBodyReferenceLabels": "IJKOQVWXYZ",
+    "referenceCoverageComplete": false
+  },
+  "unqualifiedExceptionTextureNegativeGate": {
+    "diagnosticCandidateCount": 12,
+    "checks": {
+      "stateIsLocalizationHold": true,
+      "imageFirstEmpty": true,
+      "proposedStringEmpty": true,
+      "checksumNotEvaluated": true,
+      "identityCandidateCountZero": true,
+      "exceptionDiagnosticsIdentityIneligible": true,
+      "standardAndExceptionDistinct": true,
+      "referenceCoverageHoldPreserved": true
+    }
+  },
+  "autoLocalizedDevelopmentPositiveGate": {
+    "diagnosticCandidateCount": 12,
+    "eligibleBandCount": 1,
+    "promotedCandidateCount": 1,
+    "resultState": "SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID",
+    "checksumState": "SCRIBE_M12_IMAGE_FIRST_CHECKSUM_VALID_REVIEW_ONLY",
+    "candidateCount": 4,
+    "checks": {
+      "modeExplicit": true,
+      "diagnosticsPresent": true,
+      "ocrScaleBandsPreferred": true,
+      "boundedSubsetPromoted": true,
+      "duplicateGeometryCollapsed": true,
+      "observedGeometryQualified": true,
+      "geometryEvidenceRecorded": true,
+      "configuredEnvelopeRecorded": true,
+      "readerEvaluated": true,
+      "identityIneligible": true,
+      "automaticLocalizationHoldPresent": true,
+      "referenceCoverageHoldPreserved": true,
+      "exceptionDiagnosticsIdentityIneligible": true,
+      "productionAuthorityAbsent": true
+    }
+  },
+  "signedThinTextureRegressionGate": {
+    "source": "O2D20_SIGNED_STDOUT_SHA256_6A8F71C4141C31AA5EBA3956D8DB84A9C83D5CA069152854EA11FD398474FDCF",
+    "rawRegionCount": 4,
+    "uniqueRegionCount": 1,
+    "geometry": [
+      {
+        "regionId": "RECORDED_105",
+        "observedWidthPixels": 1228.8895260810853,
+        "observedHeightPixels": 42.15563077807427,
+        "observedToOcrWidthRatio": 0.7680559538006783,
+        "observedToOcrHeightRatio": 0.10538907694518568,
+        "qualified": false,
+        "rejection": "OBSERVED_GEOMETRY_DOES_NOT_SUPPORT_OCR_ENVELOPE"
+      }
+    ],
+    "checks": {
+      "fourSignedDetectionsPresent": true,
+      "sameRectangleCollapsed": true,
+      "thinObservedHeightRejected": true,
+      "rejectionExplicit": true
+    }
+  },
+  "configurationSelectionGate": {
+    "providerId": "ARGOS_OPENCV_SCRIBE_V1R6",
+    "configurationSha256": "AAA111360E6DBF9A3E40D5A846C485E10BE420910BAE325F4986582D6E5D440A",
+    "checks": {
+      "selectedProviderExact": true,
+      "configuredEngineHashExact": true,
+      "completeConfiguredJobAccepted": true,
+      "missingGeometryContractRefused": true,
+      "widenedAuthorityRefused": true
+    }
+  },
+  "evidencePartition": {
+    "kind": "LOCKED_LOCAL_REGRESSION_CORPUS",
+    "liveJbodImageRead": false
+  },
+  "providerActivated": false,
+  "sourceMutationPerformed": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}
