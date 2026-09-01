@@ -1,0 +1,91 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-31T19:50:00Z",
+  "incidentId": "O3B21_R21_TIMEOUT_MISSING_CASES",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": true,
+    "failureEvidence": [
+      {
+        "path": "work/O3B21/R21M1_PREDECESSOR_SIGNED_FAILURE_GATE.json",
+        "sha256": "E91A8DA13E716BA75424CE3706EF5AE6E3431B3E87A0D784F43A273F4535B62B",
+        "state": "FAILED"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/O3B21/R21M1_POST_FAILURE_OBSERVATION.json",
+      "sha256": "79D7659CAE2F48545C04CCA575B0E9836B13809640B16F2CD09C0BF9F29D9BFB"
+    },
+    "workflowReviewClearance": {
+      "path": "work/O3B21/R21M1_WORKFLOW_REVIEW_CLEARANCE.json",
+      "sha256": "08E0402DAB579D6991CB654E2C1004E0FA1C20D496C7FB477242D74925DDD56C"
+    }
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH_IDENTICAL_PROCESSOR_CONFIG_SELF_SWAP_FOR_MISSING_ONLY_DETECTOR_EVIDENCE",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": true,
+    "ledgerMutation": true,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "C:/ProgramData/ArgosProjectPortalRO/bin/Invoke-ArgosProjectPortalEndpointWorker.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "C:/ProgramData/ArgosProjectPortalRO/config/endpoint_jbod.json",
+      "sha256": "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F"
+    },
+    "capabilityEvidence": {
+      "path": "work/O3B21/R21P5_SIGNED_TERMINAL_GATE.json",
+      "sha256": "ACDB743F5DFF3D4B472FDF541E7E42AB70FAD4F8E062F23820C2B9FF4B77327A"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/ARGOS_PROJECT_PORTAL_ENDPOINT_V2_QUEUE_SAFETY_GATE.json",
+      "sha256": "E6212D7A0BA7899A334496A9FD7F35574DC3D3FCE0566689D657DCB61F37F656"
+    },
+    "qualifiedAdminGate": { "path": "", "sha256": "" }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "D:/R21TG1/J00.json through O33/DF_holder_exclusion.png exact deterministic leaf set",
+        "sourceSchema": "argos_r21p4_exact_inventory_result_v1",
+        "selector": "exact ordinals 00-33 and six deterministic leaves per ordinal",
+        "uniquenessKey": "relativePath",
+        "maximumRows": 204
+      }
+    ],
+    "requestedCapabilities": ["EXACT_SIGNED_MISSING_ONLY_REAL_IMAGE_EXECUTION"],
+    "requestedFields": ["ordinal", "identity", "result", "review rasters", "holder masks"],
+    "decisionOptions": ["RUN_EXACT_19_TO_33", "HOLD"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/O3B21/R21M1_POST_FAILURE_OBSERVATION.json",
+      "sha256": "79D7659CAE2F48545C04CCA575B0E9836B13809640B16F2CD09C0BF9F29D9BFB"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "operatorAuthorization": "Continue the R21 detector task using the same minimum signed Project Portal package method; do not rerun completed cases.",
+    "boundedChange": "One identical PROCESSOR_CONFIG carrier plus exact missing-only ordinals 19 through 33 in fresh D:/R21M1; no existing task/process action, provider activation, or source mutation."
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

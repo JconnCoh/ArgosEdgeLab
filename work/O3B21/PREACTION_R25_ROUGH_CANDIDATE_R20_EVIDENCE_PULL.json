@@ -1,0 +1,61 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3B21_R25_ROUGH_CANDIDATE_R20_EVIDENCE_PULL_20260901",
+  "createdUtc": "2026-09-01T01:48:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "READ_EXACT_EXISTING_R20_ROUGH_CANDIDATE_REVIEW_EVIDENCE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/O3B21/R25_ROUGH_CANDIDATE_R20_EVIDENCE_PULL.json",
+      "sha256": "9BA0040BC3D7FBE23186A4105B6DBAD02DB88758BC1B161E34F8F3F399206045"
+    },
+    {
+      "path": "C:/R20T1D/data/JBOD_KLARF_EXPORT/_ArgosReview/C15RUN4/RESULTS.csv",
+      "sha256": "B74B86ED07D9632B61A5B4BB02B61597AC364E132645648202EA92F3138D5DE5"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "requestCountMaximum": 1,
+    "automaticRetry": false,
+    "exactLeafCount": 6,
+    "sourceImageBytesRead": false,
+    "existingR20ResultAndReviewEvidenceOnly": true,
+    "taskOrProcessAction": false,
+    "packageOrProviderChange": false,
+    "holdClearance": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

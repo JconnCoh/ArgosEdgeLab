@@ -1,0 +1,78 @@
+{
+  "schema": "argos_o3b21_r25_known_chipout_cohort_gate_v1",
+  "createdUtc": "2026-09-01T01:31:00Z",
+  "state": "PARTIAL_PASS_ONE_EXECUTABLE_CONTROL_ONE_UNRESOLVED_CANDIDATE_HELD",
+  "detectorRevision": "O3B21_R25_SHALLOW_DEPTH_RATIO_HOLDER_EXCLUSION",
+  "detectorSha256": "6A7977E4DAFE692FCE6E7DE4740C94EE66D5F79ECD62FDF190CB5EE8E4862274",
+  "configRevision": "BACKSIDE_NOTCH_CONFIG_R13",
+  "configSha256": "27010B75F2E5CCB601E710A63D73F5483072F6EB797F9D72A0632F993E6E4AD3",
+  "cohortDefinition": {
+    "rule": "Every discoverable known chipout wafer in bounded Argos/KLARF evidence requires exact clean source identity, paired BF/DF leaves, source-byte hashes, and execution authority before image execution.",
+    "discoverableRecordCount": 2,
+    "executableRecordCount": 1,
+    "unresolvedRecordCount": 1,
+    "postResultSelectorChangeAllowed": false
+  },
+  "executableControls": [
+    {
+      "identity": "62627-193_SLOT01_CHIPOUT_CONTROL",
+      "sourceDefinition": "work/O3B21/REQ_20260831T135113536Z_EE76925FE71B.ready/payload/R18_REGRESSION_CASES.json",
+      "sourceDefinitionSha256": "7F2BF805CC35893B307557680251A94A49F28305E20E3735931F064E82650DF4",
+      "bfPath": "D:/KLARFExport/B8R1/BF.bmp",
+      "bfSha256": "F41BDF5CAAFDABF4C8A9BFCE21B0CB0587AA74C93354C3B41B099713B4CB290B",
+      "dfPath": "D:/KLARFExport/B8R1/DF.bmp",
+      "dfSha256": "8546F979E83B9749CCFEB1241DAF0393D24534DB8F5E94706DFCD8D3FDC9BB7C",
+      "r25Evidence": "work/O3B21/R25F10_SIGNED_TERMINAL_PASS_GATE.json",
+      "r25EvidenceSha256": "3F11487C592C1BCA99F78B99A2E5A4501CB92851BB628EA5BBDFD2CC7EACD35D",
+      "requestId": "REQ_20260831T235227344Z_187AC38B9B5E",
+      "responseId": "R_F52F798BC7CA_20260901000209404_811e5d27",
+      "ordinal": 0,
+      "pairedCandidateCount": 1,
+      "meanAngleDegrees": 89.987811,
+      "confirmationMode": "STRICT_BOTH_CHANNELS",
+      "chipoutSelectedAsNotch": false,
+      "state": "PASS_UNIQUE_MANUFACTURED_NOTCH_WITH_KNOWN_CHIPOUT_NOT_SELECTED"
+    }
+  ],
+  "heldCandidates": [
+    {
+      "record": "work/OPENCV_EDGE_NOTCH_O3D2/O3D2_ADDITIONAL_BACKSIDE_CHIPOUT_REGRESSION_CANDIDATE.json",
+      "recordSha256": "0EA6FA053388FEE8E572CD7D896BEA8A16B4337F6AA950E477733A8632002832",
+      "operatorReportedLot": "Lot_62627-193",
+      "operatorReportedSlot": "Slot01",
+      "operatorReportedDirectory": "D:/KLARFExport/PatternedFront/Lot_62627-193/62627-193_20260820124250/Slot01/BrightfieldBacksideWafer/resizedImage",
+      "state": "PENDING_GATE",
+      "holdReasons": [
+        "MARKED_COPY_EXACT_PATH_UNRESOLVED",
+        "CLEAN_SOURCE_EXACT_LEAF_UNRESOLVED",
+        "CLEAN_SOURCE_SHA256_UNRESOLVED",
+        "PAIRED_CHANNEL_UNRESOLVED",
+        "EXECUTION_NOT_AUTHORIZED"
+      ],
+      "markedCopyMayBeDetectorInput": false,
+      "executionAttempted": false,
+      "automaticRetryAllowed": false
+    }
+  ],
+  "gateConclusions": {
+    "lawfulKnownChipoutControlPassed": true,
+    "knownChipoutSelectedAsNotchCount": 0,
+    "unresolvedCandidateHoldPreserved": true,
+    "additionalCandidateExecutionAuthorized": false,
+    "fullCorpusAuthorizedByThisGate": false,
+    "frontsideAuthorizedByThisGate": false,
+    "scribeAuthorizedByThisGate": false,
+    "providerActivationAuthorized": false,
+    "holdClearancePerformed": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "sourceMutationPerformed": false,
+    "sourceDeletionPerformed": false,
+    "existingTaskOrProcessActionPerformed": false,
+    "providerActivationPerformed": false
+  }
+}

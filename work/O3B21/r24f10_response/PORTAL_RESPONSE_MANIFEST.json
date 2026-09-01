@@ -1,0 +1,34 @@
+{
+    "schema":  "argos_project_portal_response_manifest_v1",
+    "responseId":  "R_E6BB4D6E295D_20260831230739551_5d85d8c7",
+    "requestId":  "REQ_20260831T230644063Z_E1942A44F3FE",
+    "createdUtc":  "2026-08-31T23:07:39.5513282+00:00",
+    "sourceRole":  "JBOD",
+    "state":  "FAILED",
+    "detail":  "Maintenance verifier failed with exit code 1. Exact stderr is attached.",
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false,
+    "credentialsIncluded":  false,
+    "signerThumbprint":  "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "signatureAlgorithm":  "RSA-SHA256-PKCS1",
+    "files":  [
+                  {
+                      "path":  "FAILURE.json",
+                      "bytes":  687,
+                      "sha256":  "01B91384D57F276A702861C4E14F4FC6B9B994F1ED5C8713D8F1E3C50B8C5000"
+                  },
+                  {
+                      "path":  "MAINTENANCE.stderr.txt",
+                      "bytes":  711,
+                      "sha256":  "52C327FD496880EA01C9483A60A8BC370B771A78E4CF561068FF017B39102302"
+                  },
+                  {
+                      "path":  "MAINTENANCE.stdout.txt",
+                      "bytes":  0,
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  }
+              ]
+}

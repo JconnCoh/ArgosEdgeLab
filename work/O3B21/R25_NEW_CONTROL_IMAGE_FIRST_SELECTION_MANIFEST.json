@@ -1,0 +1,11 @@
+{
+  "schema":"argos_o3b21_r25_new_control_image_first_selection_v1","revision":"O3B21_R25_IMAGE_DERIVED_HOLDER_CONTROL_SELECTION_20260901","state":"PENDING_EXACT_R25_ALL22_RESULTS",
+  "supersedesFailedR20MetadataSelection":true,
+  "failedPredecessorSelection":{"soleHolder":"HOLD_NO_EXACT_R20_SOLE_PAIRED_HOLDER_CONTROL_FOUND","notchAdjacentHolder":"HOLD_NO_EXACT_R20_NOTCH_ADJACENT_PAIRED_HOLDER_CONTROL_FOUND","retryAllowed":false,"reason":"R20 post-pair fixture flags yielded no exact distinct controls and cannot be reused as an R25 pre-candidate holder-mask control selector."},
+  "requiredInputs":[{"path":"work/O3B21/R25H22A_SIGNED_TERMINAL_GATE.json","requiredState":"PASS_EXACT_9_HOLD_RESULTS"},{"path":"work/O3B21/R25H22B_SIGNED_TERMINAL_GATE.json","requiredState":"PASS_EXACT_13_HOLD_RESULTS"}],
+  "selectionPopulation":{"exactOrdinals":"10-31","exactCount":22,"source":"R25/R13 real-image outputs only","fullCorpusScanAllowed":false},
+  "soleHolderNegative":{"rule":"Select the lexical-first zero-pair held case having a channel-local image-derived holder span in both BF and DF, at least one raw candidate excluded by an overlapping local holder span, and no retained paired notch candidate.","expected":"ZERO_PAIRED_CANDIDATES_WITH_EXPLICIT_LOCAL_HOLDER_EXCLUSION","hardCodedIdentityOrAngleAllowed":false},
+  "notchAdjacentHolderControl":{"rule":"Select the lexical-first unique non-fixture retained notch whose mean angle is 2.0 to 12.0 degrees from the nearest channel-local image-derived holder-span boundary in both BF and DF, with the retained notch outside every excluded span.","minimumDistanceDegrees":2.0,"maximumDistanceDegrees":12.0,"expected":"ONE_RETAINED_NONFIXTURE_NOTCH_AND_DISTINCT_ADJACENT_HOLDER_EXCLUSION","hardCodedIdentityOrAngleAllowed":false},
+  "distinctControlCountRequired":2,"selectionMustPrecedeExactTwoCaseManifest":true,"operatorJudgmentRasterRequiredBeforeGateClearance":false,
+  "authority":{"reviewOnly":true,"trainingEligible":false,"xmlEligible":false,"productionEligible":false,"automaticHoldClearance":false,"sourceMutationAllowed":false,"existingTaskOrProcessActionAllowed":false,"providerActivationAllowed":false,"automaticRetryAllowed":false}
+}

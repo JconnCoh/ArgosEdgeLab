@@ -1,0 +1,96 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-31T20:32:00Z",
+  "incidentId": "O3B21_R21M2_CONTROL_SELECTION_HOLDS",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 2,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": true,
+    "failureEvidence": [
+      {
+        "path": "work/O3B21/R21M1_SIGNED_TERMINAL_FAILURE_GATE.json",
+        "sha256": "902A6AD0393C1C38F059B582CB7945ADFB57B375FA68B51F8A3F2DFAC259A4E8",
+        "state": "FAILED"
+      },
+      {
+        "path": "work/O3B21/R21M2_SIGNED_TERMINAL_FAILURE_GATE.json",
+        "sha256": "4FA3EDFA07108A23912A9BD1373540439F73F2B459611EB023B7F139C1871712",
+        "state": "FAILED"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/O3B21/R21M3_POST_FAILURE_OBSERVATION.json",
+      "sha256": "45FBB830A4721510E455E6E46F01F0EFAEBD9E360DB3E77852B4DAEB88274773"
+    },
+    "workflowReviewClearance": {
+      "path": "work/O3B21/R21M3_WORKFLOW_REVIEW_CLEARANCE.json",
+      "sha256": "32AC40FECE8A215BFEC61C09A48F42553193B9FDFF9A5607987E9F4ADAB20D1E"
+    }
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH_IDENTICAL_PROCESSOR_CONFIG_SELF_SWAP_WITH_DIRECT_PAYLOAD_DETECTOR",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": true,
+    "ledgerMutation": true,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "C:/ProgramData/ArgosProjectPortalRO/bin/Invoke-ArgosProjectPortalEndpointWorker.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/O3B21/R21M1_SIGNED_TERMINAL_FAILURE_GATE.json",
+      "sha256": "902A6AD0393C1C38F059B582CB7945ADFB57B375FA68B51F8A3F2DFAC259A4E8"
+    },
+    "capabilityEvidence": {
+      "path": "work/O3B21/R21P5_SIGNED_TERMINAL_GATE.json",
+      "sha256": "ACDB743F5DFF3D4B472FDF541E7E42AB70FAD4F8E062F23820C2B9FF4B77327A"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/O3B21/R21P5_SIGNED_TERMINAL_GATE.json",
+      "sha256": "ACDB743F5DFF3D4B472FDF541E7E42AB70FAD4F8E062F23820C2B9FF4B77327A"
+    },
+    "qualifiedAdminGate": { "path": "", "sha256": "" }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "D:/KLARFExport/_ArgosReview/C15RUN4/FAILURES.json",
+        "sourceSchema": "R20_FROZEN_HOLD_ROWS",
+        "selector": "SORT_IDENTITY_ORDINALS_19_THROUGH_31_AFTER_TEN_FROZEN_CONTROLS",
+        "uniquenessKey": "identity",
+        "maximumRows": 13
+      }
+    ],
+    "requestedCapabilities": ["DIRECT_PAYLOAD_DETECTOR_EXECUTION"],
+    "requestedFields": ["payloadDetectorSha256", "payloadConfigSha256", "ordinal", "result", "review rasters", "holder masks"],
+    "decisionOptions": ["PASS_REAL_IMAGE_RESULTS", "HOLD"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/O3B21/R21M3_POST_FAILURE_OBSERVATION.json",
+      "sha256": "45FBB830A4721510E455E6E46F01F0EFAEBD9E360DB3E77852B4DAEB88274773"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "operatorAuthorization": "Run the exact remaining 13 frozen R20 holds only, ordinals 19 through 31, with the exact draft detector and configuration payload bytes in fresh D:/R21M3; one publication and no retry.",
+    "boundedChange": "One identical PROCESSOR_CONFIG carrier; direct invocation of exact payload detector/config; fresh D:/R21M3; no cases 00-18 or 32-33, task/process action, source mutation, provider activation, or authority change."
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

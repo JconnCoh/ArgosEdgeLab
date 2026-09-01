@@ -1,0 +1,13 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v2","revision":"R21P4_DIRECT_204_LEAF_INVENTORY_20260831","createdUtc":"2026-08-31T19:11:00Z","state":"PASS_PREACTION_CONTRACT","actionType":"ONE_FRESH_SIGNED_DIRECT_READ_ONLY_R21_EXACT_LEAF_INVENTORY","historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json","historyAuditSha256":"D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies":[
+    {"path":"work/O3B21/R21P3_SIGNED_TERMINAL_FAILURE_GATE.json","sha256":"277EEF5F66B654D07B3FF053516B925FA2C7CFBC3026C13716A8E953057E118B"},
+    {"path":"work/O3B21/R21P4_DIRECT_INVENTORY_WORKFLOW_REVIEW.json","sha256":"955856FDDE44B87E026C55CF643FE6047B2522FEA3456F056EA143248B95868D"},
+    {"path":"work/O3B21/Invoke-R21P4ExactInventory.ps1","sha256":"1EDC9FBABD5720F003ECEE5027C8DAEEDED38BFCD452284EBA0586FCEDD8A5A7"},
+    {"path":"C:/R21P4/DEFINITION.json","sha256":"04B21C69E42FB330E80A08929E716A65FC2B487A9CE4B3971EA241E92620F074"},
+    {"path":"C:/R21P4/payload/C.json","sha256":"CDFD888129D0144C9942D027B0C4583FEEF3619D6D65B060B3001686357879D8"},
+    {"path":"C:/R21P4/payload/E.ps1","sha256":"1EDC9FBABD5720F003ECEE5027C8DAEEDED38BFCD452284EBA0586FCEDD8A5A7"}
+  ],
+  "controls":{"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence":{"path":"work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json","sha256":"17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11","requiredCaseIds":["ZERO","ONE","MANY"]},"legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":[]},"reviewOnly":true,"productionRoutingEnabled":false
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-31T18:11:00Z",
+  "state": "PASS_R21P1_HISTORICAL_CONFIG_AND_QUALIFIED_ENDPOINT_SUPPORT",
+  "incidentId": "OCV03_O3B21_R21_EXISTING_OUTPUT_CURRENT_PREMISE",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "sourceEvidence": [
+    {"path":"work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json","sha256":"465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB","expectedConfigSha256":"55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F","observedConfigSha256":"55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F"},
+    {"path":"work/O3B21/R21_SIGNED_TIMEOUT_RESPONSE_VALIDATION_GATE.json","sha256":"0DF701F89931A138975D1B67DEFD33587AA72D03397FB93C0629BD09B6DE4680","expectedSignerThumbprint":"DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC","observedSignerThumbprint":"DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC"}
+  ],
+  "purpose": "Support one predecessor-gated identical-config self-swap to obtain current endpoint/task/processor premises; this evidence is not itself accepted as the current premise.",
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

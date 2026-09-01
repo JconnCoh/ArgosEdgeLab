@@ -1,5 +1,98 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### Endpoint configuration is not an approved maintenance destination
+
+- Signature: a correctly signed JBOD `MAINTENANCE_PATCH` containing an exact
+  same-bytes `endpoint_jbod.json` self-swap returns signed `FAILED` before the
+  entrypoint runs with `Maintenance destination is outside approved roots`.
+- Cause: `endpoint_jbod.json` is under the Project Portal configuration root,
+  while the installed endpoint's `approvedMaintenanceRoots` authorizes only
+  the Argos processor root. Identical pre/post content and an approved
+  predecessor hash do not bypass the destination allowlist.
+- Preflight: mechanically compare every declared maintenance destination to
+  the exact current `approvedMaintenanceRoots` before signature. Do not use an
+  endpoint-config self-swap as the carrier for a read-only entrypoint unless
+  the configuration root is explicitly allowlisted.
+- Recovery: freeze the signed failure terminal and do not retry its namespace.
+  Obtain a fresh signed read-only `STATUS` post-failure observation, then use a
+  separately authorized fresh package whose exact same-bytes carrier is an
+  already pinned file inside an approved maintenance root. The carrier's
+  pre/post hash must be identical and no task/process action may occur.
+- First observed: R21P1 request
+  `REQ_20260831T182112798Z_73D78FD0510F`, response
+  `R_7AE4F5040EC0_20260831182310520_ceb9e279`. The entrypoint did not run,
+  endpoint configuration did not change, and no processor, detector, source,
+  output, task, or process action occurred.
+
+### A successful direct-maintenance entrypoint can retain an expired incident prerequisite
+
+- Signature: a fresh signed direct gateway request reaches the qualified JEA
+  endpoint but returns signed `FAILED` before its task action because the
+  unchanged entrypoint requires an older request package that has already left
+  the gateway outbox.
+- Cause: the previously successful GWQ2 entrypoint coupled bridge restart to
+  the exact 2026-08-18 interrupted-import package. Rewrapping those bytes in a
+  fresh request namespace did not make that historical queue prerequisite
+  current.
+- Preflight: before reusing a successful maintenance entrypoint, enumerate
+  every request ID, queue root, file hash, and existence predicate embedded in
+  the entrypoint and prove each against a direct post-incident observation.
+  Matching installed bridge/config hashes alone is insufficient.
+- Recovery: preserve the signed failure as terminal evidence, observe the
+  gateway again through `ArgosGatewayMaintenance`, and use a fresh entrypoint
+  that binds the already-published current request hash and restarts only the
+  exact stopped ShareBridge task.
+- First observed: R21G1 request
+  `REQ_20260831T152321980Z_0F7B21A5E991`, response
+  `R_00A948BB9DD1_20260831152743893_18e0e9af`. The entrypoint failed before a
+  task action; the post-failure status still showed ShareBridge `Ready`,
+  ResponseReceiver `Running`, and unchanged qualified bridge/config hashes.
+
+### A direct-control command can be destroyed by the caller shell before encoding
+
+- Signature: the hostname-gated direct-control invocation pastes an encoded
+  command whose inner assignment has lost its variable name (for example,
+  `&{='D:\R21TG1';...`) and no nonce-bound result returns before timeout.
+- Cause: a command string containing `$variable` references was placed inside
+  a double-quoted outer Windows PowerShell argument. The caller shell expanded
+  those references locally before `Invoke-ArgosJbodDirect.ps1` encoded the
+  command for the remote host.
+- Preflight: never put variable-bearing remote PowerShell source in a
+  double-quoted caller argument. Use a create-new, hash-pinned `-CommandPath`,
+  or a literal quoting form whose exact readback is asserted before the
+  direct-control runner starts.
+- Recovery: do not repeat the malformed invocation. Capture the already-visible
+  console once, preserve the decoded malformed source as evidence, and use a
+  fresh action namespace only if the observation is still required. The
+  malformed assignment fails during parsing and performs no target mutation.
+- First observed: the read-only OCV-03 R21 output-root presence check on
+  2026-08-31. The preceding exact JBOD hostname probe passed; console capture
+  proved the lost variable name and no detector, source, task, process, queue,
+  wafer, hold, XML, training, or production state changed.
+
+### A signed portal package built under a descriptive repository root can exceed the local staging budget
+
+- Signature: the final signed request directory is valid, but its longest
+  payload leaf has an effective path length above 200 after the mandatory
+  suffix reserve is applied.
+- Cause: the signer output used a descriptive nested repository directory;
+  the fixed request token and payload filename then pushed otherwise short
+  package content beyond the safe local staging budget.
+- Preflight: construct the longest final signed-package leaf before creating
+  the signer output root. Use a verified short create-new repository staging
+  root whenever the effective length would be 200 or more, and require every
+  package leaf plus suffix reserve to pass before signing.
+- Recovery: preserve the signed long-root package unchanged as withdrawn and
+  non-publishable. Reuse the unchanged frozen payload bytes only in a fresh
+  request namespace under a path-gated short signer root; never move, rename,
+  patch, or publish the withdrawn signed package.
+- First observed: OCV-03 O3B10 R21 targeted detector evidence on 2026-08-31.
+  Request `REQ_20260831T134824332Z_EDBF2DAC988A` was signed locally but never
+  published; its longest payload leaf measured 190 characters plus a
+  32-character reserve, for effective length 222. No share, portal, JBOD,
+  source, task, process, provider, wafer, hold, training, XML, or production
+  action occurred.
+
 ### A development target asserted as a proven control can discard the evidence needed to tune it
 
 - Signature: a signed actual-wafer regression runs its earlier proven controls,
@@ -10455,3 +10548,99 @@ than rerunning it.
 - Recovery: correct only the unfrozen local harness token, rerun harness
   safety and the exact success/injected-failure rehearsal, and preserve the
   abandoned create-new fixture under a clearly failed local-evidence name.
+
+## 2026-08-31 — A sequential multi-image detector run can exceed the portal-owned child timeout
+
+- Failure signature: the exact R21 backside-notch request reached JBOD and
+  began its 34-case sequential evidence runner, but the qualified endpoint
+  returned a signed `FAILED` response after its fixed 900-second owned-child
+  limit. The response contained no detector stdout or aggregate `RESULT.json`;
+  the runner's create-new `D:\R21TG1` root may contain only partial per-case
+  artifacts.
+- Cause: the request packaged all 34 real-image cases behind one foreground
+  child while the runner independently allowed as much as 900 seconds for
+  each case. The endpoint's outer 900-second limit was therefore shorter than
+  the declared maximum total execution time. The output root was also outside
+  the installed DATA_PULL allowlist (`D:\KLARFExport` and the processor root),
+  so any partial results could not be recovered through the unchanged
+  qualified read-only consumer.
+- Mandatory preflight: before signing a multi-case detector request, compute
+  and freeze the outer endpoint timeout, per-case timeout, case count, and
+  maximum total runtime. Require the outer owner to exceed the complete bound
+  with cleanup reserve, or split the work into independently terminal bounded
+  requests before the first execution. Place every review-result root beneath
+  an already qualified DATA_PULL root, and prove its exact result leaves and
+  return sizes through the complete route gate.
+- Recovery: treat the exact R21 request as signed-terminal and no-retry. Do not
+  rerun it, change the installed endpoint timeout, or use MAINTENANCE_PATCH as
+  an observation disguise. Preserve any partial `D:\R21TG1` bytes untouched.
+  Collection requires an already qualified read-only capability for that exact
+  root or explicit authority for one bounded endpoint capability improvement.
+
+## 2026-08-31 — Static Python compilation inside a frozen payload root contaminates the signed package
+
+- Failure signature: the R23T1 package builder froze a 12-file payload, but
+  the signing step reported 19 payload files. A post-build Python compile had
+  created seven `__pycache__` bytecode files beneath the payload root. The
+  request was signed locally but was not published or executed.
+- Cause: the static import/compile check targeted the final create-new payload
+  directory rather than a separate disposable validation copy. The signer
+  correctly included every recursive payload leaf, so generated bytecode
+  changed the frozen file cardinality after the build gate.
+- Mandatory preflight: never run Python compilation, import, formatting, or
+  any other tool that can create cache or metadata files inside a frozen
+  payload root. Immediately before signing, mechanically enumerate the exact
+  recursive payload-relative file set, require its count and names to equal
+  the build gate, and reject `__pycache__`, `*.pyc`, and every undeclared leaf.
+- Recovery: preserve signed R23T1 as withdrawn, no-retry, non-publishable
+  evidence. Create a fresh package and output namespace from the unchanged
+  detector/config inputs, perform static checks only against source or an
+  isolated disposable copy before freezing, require the exact clean payload
+  inventory, then sign and publish the fresh request at most once.
+
+## 2026-08-31 — Mechanical revision renaming can leave a generated entry-point manifest leaf unmatched
+
+- Failure signature: the signed R24F10 frozen-ten request reached JBOD but
+  failed before image decode because its generated entry point required
+  `R24F10_TARGET_CASES.json` while the exact payload leaf was
+  `R24F10_CASES.json`.
+- Cause: a broad revision-token replacement transformed the predecessor leaf
+  `R24T1_TARGET_CASES.json`; the builder renamed the payload manifest
+  independently and did not assert that every entry-point `Join-Path
+  $PSScriptRoot` dependency is present in the final recursive payload set.
+- Mandatory preflight: after generating an entry point, enumerate every
+  literal payload-relative dependency it resolves beneath `$PSScriptRoot` and
+  require an exact case-insensitive match in the final payload inventory.
+  Run the exact generated `-Preflight` against a fresh local package layout
+  whenever its checks are environment-independent; otherwise mechanically
+  bind every referenced payload leaf before signing.
+- Recovery: R24F10 is signed-terminal failed, withdrawn, no-retry, and
+  non-parent. Preserve its response and empty stdout. Pin the direct signed
+  post-failure observation, then use a fresh namespace with unchanged R24/R12
+  bytes and only the manifest-leaf wiring corrected and gated.
+
+## 2026-09-01 — DATA_PULL definition key must match the installed consumer contract
+
+- Failure signature: the signed R25 rough-candidate evidence request reached
+  the JBOD endpoint and returned terminal `FAILED` with `DATA_PULL approved
+  root is not configured:` followed by an empty value. The endpoint read no
+  requested evidence file and performed no task, process, provider, package,
+  or source-image action.
+- Cause: the request definition used `parameters.approvedRootId`, while the
+  exact installed DATA_PULL handler reads `parameters.approvedRoot`. Signing,
+  schema labeling, route path-budget checks, and package-signature validation
+  did not mechanically resolve the producer field against the installed
+  consumer parameter name.
+- Mandatory preflight: before signing a DATA_PULL request, resolve every
+  definition parameter against the exact installed endpoint consumer and a
+  known terminal predecessor request. Require the literal key
+  `parameters.approvedRoot`, require its nonblank value to equal a configured
+  root identifier, and reject `approvedRootId` unless a separately pinned
+  installed consumer explicitly declares it. Verify `relativePaths`,
+  `maximumFiles`, and `maximumBytes` the same way.
+- Recovery: preserve request
+  `REQ_20260901T013454751Z_2A933F8BE3DC` and response
+  `R_E97D7FB12E4B_20260901013640704_ce64ad7a` as signed-terminal failed,
+  withdrawn, no-retry evidence. Do not patch, republish, or reuse that
+  namespace. Any later authorized observation requires a fresh request after
+  the caller/consumer field contract is mechanically gated.

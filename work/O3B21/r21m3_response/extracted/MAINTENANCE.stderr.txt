@@ -1,0 +1,35 @@
+R21M3 detector failed: Coherent_W2W\Lot_62628-233\62628-233_20260729052723\Slot16|BACK: Traceback (most recent call 
+last):
+  File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260831T204346732Z_368B3ECD551E.ready\payload\De
+tect-BacksideNotchOpenCvR21.py", line 34, in <module>
+    R20 = load_r20()
+  File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260831T204346732Z_368B3ECD551E.ready\payload\De
+tect-BacksideNotchOpenCvR21.py", line 28, in load_r20
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1159, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1217, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\
+\REQ_20260831T204346732Z_368B3ECD551E.ready\\payload\\Detect-BacksideNotchOpenCvR20.py'
+At C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260831T204346732Z_368B3ECD551E.ready\payload\Invoke-
+R21M3MissingOnly.ps1:9 char:28
++     if (-not $Condition) { throw $Message }
++                            ~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (R21M3 detector ...OpenCvR20.py'
+:String) [], RuntimeException
+    + FullyQualifiedErrorId : R21M3 detector failed: Coherent_W2W\Lot_62628-233\62628-233_20260729052723\Slot16|BACK:  
+   Traceback (most recent call last):
+      File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260831T204346732Z_368B3ECD551E.ready\paylo 
+   ad\Detect-BacksideNotchOpenCvR21.py", line 34, in <module>
+    R20 = load_r20()
+      File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260831T204346732Z_368B3ECD551E.ready\paylo 
+   ad\Detect-BacksideNotchOpenCvR21.py", line 28, in load_r20
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1159, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1217, in get_data
+    FileNotFoundError: [Errno 2] No such file or directory: 'C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pen 
+   ding\\REQ_20260831T204346732Z_368B3ECD551E.ready\\payload\\Detect-BacksideNotchOpenCvR20.py'
+ 

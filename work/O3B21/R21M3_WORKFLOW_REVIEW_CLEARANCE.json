@@ -1,0 +1,20 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-08-31T20:31:30Z",
+  "state": "PASS_R21M3_THIRTEEN_HOLD_DIRECT_PAYLOAD_WORKFLOW_REVIEW_CLEARANCE",
+  "incidentId": "O3B21_R21M2_CONTROL_SELECTION_HOLDS",
+  "operatorInstruction": "Proceed immediately with fresh R21M3 using the same proven minimal signed Project Portal direct payload method: exact remaining 13 frozen R20 holds only (ordinals 19-31), no rerun 00-18, no cases 32-33, fresh D:/R21M3, same detector/config payload bytes, one publication/no retry, collect signed terminal response and real-image results. Keep the two new controls as separate explicit image-first control-discovery holds.",
+  "singleMutationAttemptAuthorized": true,
+  "automaticRetryAuthorized": false,
+  "processorTaskOrProcessActionAuthorized": false,
+  "detectorRerunAuthorized": false,
+  "missingOnlyDetectorExecutionAuthorized": true,
+  "installedR21ProviderAssumptionAllowed": false,
+  "selectedOrdinals": "19-31",
+  "selectedCount": 13,
+  "completedOrdinalsExcluded": "00-18",
+  "newControlOrdinalsExcluded": "32-33",
+  "newControlsRemainHeld": true,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

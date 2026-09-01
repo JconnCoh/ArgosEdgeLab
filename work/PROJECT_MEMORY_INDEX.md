@@ -1051,3 +1051,21 @@ task from changing which revision, UI, evidence, or next action is active.
 - Recovery: O3P7 is withdrawn and non-reusable after its launcher consumed the wrong terminal schema; O3P8 is a fresh namespace with detector algorithm, thresholds, and source set unchanged.
 - Exact next action: one fresh O3Q1 numeric Slot16 hotspot request with the frozen exact BF/DF hashes, O3P8 detector logic unchanged, all full-360 DF seed candidates, no Argos/operator location prior, one persistent-U publication, no retry, and matching JBOD-signed terminal response only. Render and DATA_PULL only a selected contour after numeric validation passes.
 - Authority: POST2 is development regression only; O3N1/O3P7 remain withdrawn and non-parent; backside is separate and unconsumed; no provider/processor/source/task/process/hold/training/XML/production action.
+
+## 2026-08-31 — OCV-03 O3B21 R21 signed timeout / output recovery design
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R21_SIGNED_TIMEOUT_OUTPUT_RECOVERY_DESIGN_CHECKPOINT_20260831.md`
+- SHA-256: `C1A149A1D6156545FAB8BFED439BCD122E585C4C70DE6B6B4F0985F3B91B92B8`
+- Signed response: request `REQ_20260831T135113536Z_EE76925FE71B`, response `R_67C3151F89AE_20260831155108572_3951800f`, ZIP SHA-256 `51613006CDB788441025E51646741400C3109BC91596CCB2E39914A41A49E5EE`; exact pinned-JBOD signature and all three declared files verified.
+- Result: endpoint-owned 900-second timeout; detector gate did not pass; R21 no-retry remains.
+- Local design: config-only dedicated `D:\R21TG1` DATA_PULL root plus STATUS hash inventory of 204 deterministic leaves; PS5 local gate passed, no payload/package/sign/publication/deployment.
+- Blockers: mutation stop-loss remains active and exact current endpoint config/task/processor premises are not pinned for mutation.
+- Exact next action: explicit stop-loss clearance, then one bounded read-only current-premise observation; never rerun R21.
+
+## 2026-08-31 — OCV-03 O3B21 R25 targeted backside evidence
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_TARGETED_BACKSIDE_EVIDENCE_CHECKPOINT_20260831.md`
+- Detector/config: R25 `6A7977E4DAFE692FCE6E7DE4740C94EE66D5F79ECD62FDF190CB5EE8E4862274` / R13 `27010B75F2E5CCB601E710A63D73F5483072F6EB797F9D72A0632F993E6E4AD3`.
+- Result: frozen ten and all 22 held-case executions passed their exact signed evidence gates; sole-holder, known-chipout, Coherent, BowComp, normal, and rough damaged-negative controls are preserved.
+- Holds: notch-adjacent exact selector zero-set, unresolved additional chipout source, and O23 BF-unqualified/two-DF-candidate ambiguity.
+- Exact next action: resolve those targeted backside prerequisites before one fresh 953-pair R25 corpus; only a complete backside gate permits the full applicable frontside phase.

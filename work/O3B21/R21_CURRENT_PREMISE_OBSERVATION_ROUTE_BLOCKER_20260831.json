@@ -1,0 +1,39 @@
+{
+  "schema": "argos_r21_current_premise_observation_route_blocker_v1",
+  "createdUtc": "2026-08-31T17:55:37.9618978Z",
+  "state": "HOLD_EXACT_JBOD_READ_ONLY_ROUTE_NOT_CURRENTLY_EXPOSED",
+  "classification": "OBSERVE_PREFLIGHT_ONLY",
+  "requiredTargetComputerName": "A1025645101",
+  "transportInventory": {
+    "state": "OBSERVED_NO_MATCHING_ARGOS_FORWARD",
+    "matchingForwardCount": 0,
+    "candidateListenerCount": 1,
+    "candidateListener": {
+      "processId": 10624,
+      "processName": "RustDesk",
+      "creationDate": "2026-08-31T11:24:16.7960104-05:00",
+      "localAddress": "0.0.0.0",
+      "localPort": 21118
+    },
+    "transportInventoryScriptSha256": "D582B80A7CF9AC4AB21FE2D228B875D8ED1503ACB50FB750EC008EEBFADED538"
+  },
+  "exactWindowGate": {
+    "runnerSha256": "764EB0F98B03A7E2FF32386A30CD553D2670234624A167ACA17E09E589B54BB2",
+    "action": "WindowInventory",
+    "expectedExactRustDeskConnectTitle": "10.66.81.84",
+    "observedExactWindowCount": 0,
+    "failure": "Expected one exact RustDesk --connect 10.66.81.84 desktop; observed 0.",
+    "stoppedBeforeRemoteInput": true
+  },
+  "requiredPremisesPinned": false,
+  "observationPayloadSent": false,
+  "remoteCommandExecuted": false,
+  "automaticRetryPerformed": false,
+  "mutationPackageConstructionAllowed": false,
+  "mutationPerformed": false,
+  "taskOrProcessActionPerformed": false,
+  "processorTouched": false,
+  "detectorRerun": false,
+  "sourceOrOutputBytesRead": false,
+  "nextAction": "Expose the existing exact RustDesk 10.66.81.84 desktop with the authenticated nested JBOD A1025645101 layer visible, then run one fresh bounded current-premise observation. Do not retry this route namespace or substitute an unqualified route."
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3B21_R21G1_DIRECT_GATEWAY_SHAREBRIDGE_RESUME_20260831",
+  "createdUtc": "2026-08-31T15:25:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "BUILD_SIGN_AND_INVOKE_ONE_FRESH_DIRECT_GATEWAY_SHAREBRIDGE_RESUME_REQUEST",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "work/O3B21/GATEWAY_STATUS_20260831T151900Z.json",
+      "sha256": "657EB27A1039AEC77549F630C6FE10C6842367DEDF7B7C0895C8936BE22B79F0"
+    },
+    {
+      "path": "work/O3B21/R21G1_PLAN.json",
+      "sha256": "19FB8961FEEF7A8536B2772DE5D24577765006A91FDDE77BC28DAB13C9C62358"
+    },
+    {
+      "path": "work/O3B21/Build-R21G1GatewayResume.ps1",
+      "sha256": "488D46B5B21582BAE5A93915110668736A1549F4A5DB3848C56E04591CA5D2D5"
+    },
+    {
+      "path": "work/GWQ2/final/REQ_20260819T000355413Z_0A168CBF22BF.ready.zip.gate.json",
+      "sha256": "DA6F0AEBF29DBE748AF0AD5EEF43DEF40DE3EB76C82C4FDF540C779045821336"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

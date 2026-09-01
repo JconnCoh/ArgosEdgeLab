@@ -1,0 +1,20 @@
+{
+  "schema":"argos_recovery_intent_v1","createdUtc":"2026-08-31T23:08:30Z","incidentId":"O3B21_R24F10_MANIFEST_LEAF_MISMATCH","mode":"MUTATE","artifactLifecycle":"DRAFT",
+  "policy":{"path":"work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json","sha256":"F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory":{"signedPremiseFailures":1,"localPremiseFailures":0,"directObservationAfterLastSignedFailure":true,"mutationStopLossExplicitlyCleared":true,
+    "failureEvidence":[{"path":"work/O3B21/R24F10_SIGNED_TERMINAL_FAILURE_GATE.json","sha256":"4F250C15E3176C4A6B9629075F2B582C6D7893BB7B8AA6544BA623D2C29EFC10","state":"FAILED"}],
+    "postFailureObservation":{"path":"work/O3B21/R24F10M1_POST_FAILURE_OBSERVATION.json","sha256":"D39E22F0679C3BE802A1297721B855ADA3C1146CCE6F2D95CFE8A1D678F79301"},
+    "workflowReviewClearance":{"path":"work/O3B21/R24F10M1_WORKFLOW_REVIEW_CLEARANCE.json","sha256":"5FC82C898CA431E8C67D50C88F458FB1F1DB0F95D32E14BF466391403AAFE368"}},
+  "route":{"type":"MAINTENANCE_PATCH_IDENTICAL_PROCESSOR_CONFIG_SELF_SWAP_WITH_DIRECT_PAYLOAD_DETECTOR","jobClass":"MAINTENANCE_PATCH","installedCodeChange":false,"helperInstall":false,
+    "taskActions":[],"processActions":[],"queueMutation":true,"ledgerMutation":true,"sourceMutation":false,"imageRead":true,"waferAction":false,"inheritsQualifiedEndpointGate":true,
+    "endpointWorker":{"path":"C:/ProgramData/ArgosProjectPortalRO/bin/Invoke-ArgosProjectPortalEndpointWorker.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    "installedConfigEvidence":{"path":"work/O3B21/R24T1_SIGNED_TERMINAL_PASS_GATE.json","sha256":"F75086426007D3827BE6354DEB2340D5CB4442A66BE37C83A9AE2B645C4AB2AF"},
+    "capabilityEvidence":{"path":"work/O3B21/R24T1_SIGNED_TERMINAL_PASS_GATE.json","sha256":"F75086426007D3827BE6354DEB2340D5CB4442A66BE37C83A9AE2B645C4AB2AF"},
+    "qualifiedEndpointGate":{"path":"work/O3B21/R24T1_SIGNED_TERMINAL_PASS_GATE.json","sha256":"F75086426007D3827BE6354DEB2340D5CB4442A66BE37C83A9AE2B645C4AB2AF"},"qualifiedAdminGate":{"path":"","sha256":""}},
+  "observation":{"exactSources":[{"sourcePath":"work/O3B21/r24f10_generated/Invoke-R24F10.ps1","sourceSchema":"POWERSHELL_ENTRY","selector":"MANIFEST_LEAF_LITERAL","uniquenessKey":"relativeFilename","maximumRows":1}],
+    "requestedCapabilities":["DIRECT_PAYLOAD_DETECTOR_EXECUTION"],"requestedFields":["entryExpectedLeaf","signedPayloadLeaf","failureStage","caseExecutionCount"],"decisionOptions":["CORRECT_LEAF","HOLD"],"mutationDecisionDeferred":false},
+  "mutation":{"supportedRemedy":"B","supportingObservation":{"path":"work/O3B21/R24F10M1_POST_FAILURE_OBSERVATION.json","sha256":"D39E22F0679C3BE802A1297721B855ADA3C1146CCE6F2D95CFE8A1D678F79301"},
+    "endpointMutationNecessary":true,"singleMutationAttemptAuthorized":true,"operatorAuthorization":"Proceed frozen-ten exact controls with fresh namespace, same R24/R12 bytes, no tuning, and exact packaged entry dry-run before signing.",
+    "boundedChange":"Fresh request/output namespace; correct only entry manifest leaf to R24F10M1_CASES.json; exact R24/R12 bytes; ten frozen controls only; no tasks, processes, source mutation, provider activation, or authority change."},
+  "reviewOnly":true,"productionRoutingEnabled":false
+}

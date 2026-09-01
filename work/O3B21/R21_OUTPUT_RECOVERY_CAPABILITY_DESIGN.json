@@ -1,0 +1,111 @@
+{
+  "schema": "argos_o3b21_r21_output_recovery_capability_design_v1",
+  "createdUtc": "2026-08-31T17:39:32Z",
+  "state": "DRAFT_LOCAL_DESIGN_BLOCKED_BY_MUTATION_STOP_LOSS_AND_CURRENT_CONFIG_PIN",
+  "classification": "MUTATE_ENDPOINT_CONFIGURATION_THEN_OBSERVE",
+  "objective": "Expose only the already-written R21 targeted job, result, and review-raster files under D:/R21TG1 without rerunning the detector.",
+  "targetComputerName": "A1025645101",
+  "installedEndpointWorker": {
+    "path": "C:/ProgramData/ArgosProjectPortalRO/bin/Invoke-ArgosProjectPortalEndpointWorker.ps1",
+    "sha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+    "codeChangeRequired": false
+  },
+  "lastFrozenEndpointConfigEvidence": {
+    "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+    "evidenceSha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "installedPath": "C:/ProgramData/ArgosProjectPortalRO/config/endpoint_jbod.json",
+    "installedBytes": 3144,
+    "installedSha256": "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F",
+    "capturedUtc": "2026-08-19T18:59:02.7030989Z",
+    "isSufficientAsCurrentMutationPremise": false
+  },
+  "requiredCurrentPremiseBeforePayloadConstruction": {
+    "state": "HOLD_CURRENT_ENDPOINT_CONFIG_BYTES_NOT_PINNED_FOR_MUTATION",
+    "requiredObservation": "One bounded direct read-only observation of the exact current endpoint_jbod.json bytes/hash, endpoint worker hash, endpoint task definition/principal/state, and healthy processor PID/creation time.",
+    "automaticRetryAllowed": false
+  },
+  "configurationDelta": {
+    "onlyInstalledFileChanged": "C:/ProgramData/ArgosProjectPortalRO/config/endpoint_jbod.json",
+    "addApprovedDataRoot": {
+      "name": "JBOD_R21_TARGETED_OUTPUT",
+      "path": "D:/R21TG1"
+    },
+    "appendStatusHashInventory": {
+      "caseIndexFirst": 0,
+      "caseIndexLast": 33,
+      "caseIndexWidth": 2,
+      "relativePathFormats": [
+        "J{index}.json",
+        "O{index}/RESULT.json",
+        "O{index}/BF_review.jpg",
+        "O{index}/DF_review.jpg",
+        "O{index}/BF_holder_exclusion.png",
+        "O{index}/DF_holder_exclusion.png"
+      ],
+      "absoluteRoot": "D:/R21TG1",
+      "exactExpectedLeafCount": 204,
+      "semantics": "STATUS returns exact exists/bytes/SHA256 rows for every deterministic expected leaf; absent and partially written leaves remain explicit and are never guessed."
+    },
+    "preserveAllOtherConfigFieldsByteSemantically": true,
+    "newHandlerInstalled": false,
+    "workerCodeChanged": false,
+    "sourceRootAdded": false
+  },
+  "activationBoundary": {
+    "endpointWorkerRestartRequired": true,
+    "allowedTaskActionCount": 1,
+    "allowedTaskName": "ArgosProjectPortalEndpointWorker.JBOD",
+    "exactInstalledTaskNameAndPrincipalMustBeConfirmedFromCurrentObservation": true,
+    "processorTaskOrProcessActionAllowed": false,
+    "detectorTaskOrProcessActionAllowed": false,
+    "scribeTaskOrProcessActionAllowed": false,
+    "rollbackRequiredOnAnyFailure": true
+  },
+  "postMutationObservationSequence": [
+    "ONE_SIGNED_STATUS_REQUEST_TO_RETURN_204_EXACT_EXISTENCE_BYTE_HASH_ROWS",
+    "FREEZE_ONLY_CONFIRMED_PRESENT_LEAVES",
+    "ONE_OR_TWO_SIGNED_DATA_PULL_REQUESTS_USING_APPROVED_ROOT_JBOD_R21_TARGETED_OUTPUT_AND_AT_MOST_128_EXACT_RELATIVE_PATHS_PER_REQUEST",
+    "VERIFY_SIGNED_RESPONSES_AND_EVERY_RETURNED_FILE_HASH",
+    "ANALYZE_EXISTING_RESULTS_AND_RASTERS_WITHOUT_RERUN"
+  ],
+  "worstCaseDataPull": {
+    "confirmedPresentLeafMaximum": 204,
+    "endpointMaximumFilesPerRequest": 128,
+    "maximumRequestCount": 2,
+    "chunkSizesWhenAllLeavesExist": [128, 76],
+    "missingFilesIncludedInDataPull": false,
+    "sourcePathsPreserved": true
+  },
+  "pathBudget": {
+    "reservedSuffixCharacters": 32,
+    "longestPlannedSourcePath": "D:/R21TG1/O33/DF_holder_exclusion.png",
+    "longestPlannedSourcePathLength": 37,
+    "maximumSourceEffectiveLength": 69,
+    "state": "PASS_LOCAL_SOURCE_PATH_DESIGN"
+  },
+  "stopLoss": {
+    "active": true,
+    "reason": "Two signed R21 gateway-recovery premise failures are already recorded.",
+    "workflowReviewAndExplicitClearanceRequiredBeforeAnyNewMutationArtifact": true,
+    "payloadConstructed": false,
+    "packageConstructed": false,
+    "signed": false,
+    "published": false,
+    "deployed": false
+  },
+  "invariants": {
+    "r21RequestRetried": false,
+    "r21DetectorRerun": false,
+    "existingR21OutputModified": false,
+    "sourceImageBytesRead": false,
+    "sourceMutationPerformed": false,
+    "sourceDeletionPerformed": false,
+    "existingTaskOrProcessActionPerformed": false,
+    "holdsCleared": false,
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false
+  }
+}

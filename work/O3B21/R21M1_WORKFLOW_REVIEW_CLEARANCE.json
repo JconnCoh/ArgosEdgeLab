@@ -1,0 +1,46 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-08-31T19:50:00Z",
+  "state": "PASS_R21M1_ONE_MISSING_ONLY_SUCCESSOR_AUTHORIZED",
+  "incidentId": "O3B21_R21_TIMEOUT_MISSING_CASES",
+  "operatorInstruction": "Continue the R21 detector task and use the known minimum signed Project Portal method; do not stop at the partial result.",
+  "singleMutationAttemptAuthorized": true,
+  "automaticRetryAuthorized": false,
+  "processorTaskOrProcessActionAuthorized": false,
+  "detectorRerunAuthorized": false,
+  "missingOnlyDetectorExecutionAuthorized": true,
+  "reviewConclusion": "One fresh missing-only successor containing exact ordinals 19 through 33 is authorized. It is not a retry of the withdrawn R21 namespace and it must not execute ordinals 00 through 18.",
+  "predecessor": {
+    "requestId": "REQ_20260831T135113536Z_EE76925FE71B",
+    "terminalState": "FAILED_ENDPOINT_TIMEOUT",
+    "noRetry": true,
+    "evidencePath": "work/O3B21/R21_SIGNED_TIMEOUT_RESPONSE_VALIDATION_GATE.json",
+    "evidenceSha256": "0DF701F89931A138975D1B67DEFD33587AA72D03397FB93C0629BD09B6DE4680"
+  },
+  "postFailureObservation": {
+    "inventoryGatePath": "work/O3B21/R21P4_SIGNED_TERMINAL_GATE.json",
+    "inventoryGateSha256": "998698FF7A3689E7DF29044D182A93B1D31F2939B142844A1E000E26AB1F2617",
+    "bundleGatePath": "work/O3B21/R21P5_SIGNED_TERMINAL_GATE.json",
+    "bundleGateSha256": "ACDB743F5DFF3D4B472FDF541E7E42AB70FAD4F8E062F23820C2B9FF4B77327A",
+    "analysisGatePath": "work/O3B21/R21P5_PARTIAL_CASE_ANALYSIS_GATE.json",
+    "analysisGateSha256": "4496A896D47D516042F0E6395F8B1D448B785F39C273C0B59C5727749338C142",
+    "observedCompleteOrdinals": "00-18",
+    "observedAbsentOrdinals": "19-33"
+  },
+  "successor": {
+    "namespace": "R21M1",
+    "outputRoot": "D:/R21M1",
+    "selectedOrdinals": "19-33",
+    "selectedCount": 15,
+    "completedCaseRerunCount": 0,
+    "automaticRetryAuthorized": false,
+    "taskOrProcessActions": [],
+    "sourceMutation": false,
+    "providerActivation": false,
+    "authorityChange": false
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

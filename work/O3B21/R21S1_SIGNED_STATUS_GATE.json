@@ -1,0 +1,30 @@
+{
+  "schema": "argos_r21s1_signed_status_gate_v1",
+  "createdUtc": "2026-08-31T18:30:30Z",
+  "state": "PASS_R21S1_SIGNED_POST_FAILURE_STATUS",
+  "requestId": "REQ_20260831T182801205Z_B9BF523CD1C1",
+  "requestZipSha256": "8CBA7DF9ECBB056CEA8FECB4E51C02035C072D782CAD34AC6F93AB675E5CC3E9",
+  "responseId": "R_39B2CF8FE82D_20260831182852098_af3c20d5",
+  "responseZipSha256": "27C1FAD50AD831863B7C453EEC0FC7969D92CFCD7B662D90F6797FAA14180429",
+  "responseManifestSha256": "F38C74EE87DEBCFBA55C388066439C061229949D694DC37F9F27902ED47531B5",
+  "responseSignatureSha256": "7ACCCD6D40E0A7E7C3106C1E64FE12554820B766715A3ABF406CC2E1E7C2EE1C",
+  "resultSha256": "705357D7BD2B0E35AAA7E798748F3C26EBD922A40F3938D83ECFA94B31599E6A",
+  "signatureVerified": true,
+  "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+  "responseState": "PASS_STATUS_COLLECTED",
+  "taskStates": {
+    "ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2": "Ready",
+    "ArgosEdgeLab.ScribeProposal.ReviewOnly.V2": "Ready",
+    "ArgosEdgeLab.InsiteBridge.Worker.ReviewOnly.V1": "Ready",
+    "ArgosEdgeLab.InsiteBridge.Relay.ReviewOnly.V1": "Running",
+    "ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2": "Running"
+  },
+  "processorConfigExists": true,
+  "processorStatusExistsAtConfiguredLegacyPath": false,
+  "endpointHealthyEnoughForFreshBoundedRequest": true,
+  "taskOrProcessActionPerformed": false,
+  "mutationsPerformed": false,
+  "requestRetried": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

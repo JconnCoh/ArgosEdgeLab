@@ -1,0 +1,32 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-31T19:49:05.4568933Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\O3B21\\R21M1_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "318502894E86C758644F77BCABE6CCA6F7B64A0DA34E5FA3E1B027927BA86455",
+    "pairCount":  1,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_BACKSIDE_NOTCH_O3B10/Invoke-O3B10R21TargetedEvidence.ps1",
+                      "generated":  "work/O3B21/Invoke-R21M1MissingOnly.ps1",
+                      "sourceSha256":  "77B7F0FCA4FF276917B935BC8BECBD71D8BD7FB870AF1BDC27CB126E752020BA",
+                      "generatedSha256":  "E29608364151BB7458FA07C50CFCCE389CEF412BB231E9FF95773A5AEB5DB27F",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "D:\\AFCV1"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "D:\\AFCV1"
+                                         ],
+                      "ruleCount":  2
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

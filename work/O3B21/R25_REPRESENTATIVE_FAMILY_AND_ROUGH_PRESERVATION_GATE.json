@@ -1,0 +1,107 @@
+{
+  "schema": "argos_ocv03_o3b21_r25_representative_family_and_rough_preservation_gate_v1",
+  "createdUtc": "2026-09-01T02:25:00Z",
+  "state": "PASS_REPRESENTATIVE_FAMILIES_AND_ROUGH_NEGATIVE_PRESERVED_O23_REMAINS_EXPLICIT_HOLD",
+  "revisionClass": "PENDING_GATE",
+  "detector": {
+    "path": "work/OPENCV_BACKSIDE_NOTCH_O3B10/Detect-BacksideNotchOpenCvR25.py",
+    "sha256": "6A7977E4DAFE692FCE6E7DE4740C94EE66D5F79ECD62FDF190CB5EE8E4862274"
+  },
+  "configuration": {
+    "path": "work/OPENCV_BACKSIDE_NOTCH_O3B10/BACKSIDE_NOTCH_CONFIG_R13.json",
+    "sha256": "27010B75F2E5CCB601E710A63D73F5483072F6EB797F9D72A0632F993E6E4AD3"
+  },
+  "signedEvidence": [
+    {
+      "gate": "work/O3B21/R25F10_SIGNED_TERMINAL_PASS_GATE.json",
+      "sha256": "3F11487C592C1BCA99F78B99A2E5A4501CB92851BB628EA5BBDFD2CC7EACD35D"
+    },
+    {
+      "gate": "work/O3B21/R25H22A_SIGNED_TERMINAL_GATE.json",
+      "sha256": "F1DDF267B2903C4E67F7D9FA7864FAD021F06A8A5CEA7EB286E0400F0523FB8B"
+    },
+    {
+      "gate": "work/O3B21/R25H22B_SIGNED_TERMINAL_GATE.json",
+      "sha256": "6BE8D3CE52ADF48ACCCBC69D6391BEB27405E52F5DFCFEA626613C6605A26619"
+    }
+  ],
+  "representatives": [
+    {
+      "appearance": "COHERENT",
+      "ordinal": 10,
+      "identity": "Coherent_W2W\\Lot_62626-015\\62626-015_20260728162412\\Slot07|BACK",
+      "pairedCandidateCount": 1,
+      "meanAngleDegrees": 179.565978,
+      "disposition": "PASS_UNIQUE_IMAGE_DERIVED_PAIR_HOLDER_SPANS_SEPARATE",
+      "bfReviewSha256": "5E74809D7199ABCA11999E086C6F5EA0088B223B0A40C8C183B5F39994BF1060",
+      "dfReviewSha256": "8AF42A62117497E3111FB0F4C7269B9381CAE74E680648C55054BA28EA05D560"
+    },
+    {
+      "appearance": "BOWCOMP_PATTERNED",
+      "ordinal": 24,
+      "identity": "PST_BRK_PATTERNED_BOWCOMP\\Lot_62624-803\\62624-803_20260720171228\\Slot04|BACK",
+      "pairedCandidateCount": 1,
+      "meanAngleDegrees": 89.070357,
+      "disposition": "PASS_UNIQUE_IMAGE_DERIVED_PAIR_HOLDER_SPANS_SEPARATE",
+      "bfReviewSha256": "C20228F832FD25219EAB2D3DB658D46DAD672C4E945C0B6FC41384735B700853",
+      "dfReviewSha256": "F49BF073865658274F02E84B1B21C36B557E1727040B85E15C6F176D7BCC2E09"
+    },
+    {
+      "appearance": "NORMAL_FULL_METAL",
+      "ordinal": 29,
+      "identity": "PST_BRKFULLMETAL\\Lot_LotIDStringNotSet\\ProcessJob11\\Slot25|BACK",
+      "pairedCandidateCount": 1,
+      "meanAngleDegrees": 178.936618,
+      "disposition": "PASS_UNIQUE_STRICT_BOTH_CHANNELS",
+      "bfReviewSha256": "6642C8608C352E5960C52FC170C79FEAEB178CFE143B634B5D650C31CFC41F4A",
+      "dfReviewSha256": "DF1F9144A848B20EB4A9A43FEC3B09D8CEAA2326472A5476CCF96E52474725ED"
+    },
+    {
+      "appearance": "ROUGH_DAMAGED_NEGATIVE",
+      "ordinal": 28,
+      "identity": "PST_BRKFULLMETAL\\Lot_LotIDStringNotSet\\ProcessJob11\\Slot19|BACK",
+      "frozenTenAlias": "PROCESSJOB11_SLOT19_DAMAGED_NEGATIVE",
+      "frozenTenOrdinal": 9,
+      "pairedCandidateCount": 0,
+      "expectedFrozenDisposition": "ZERO",
+      "bfSourceSha256": "28A601B80CC6FB982A82FC7DFE4D30134481BBFA10A08B552738CCD8A073C5FC",
+      "dfSourceSha256": "F0E6A1BCF8A5295A29A489A097D4CEBA1E75E37C13D730DD8AB7063F8BE22521",
+      "disposition": "PASS_DAMAGED_NEGATIVE_REMAINS_ZERO",
+      "bfReviewSha256": "43394DDDC0ADA7BC9B7C4B84B76B20A5088C0DB068C33055B3F5F0F607DF01C8",
+      "dfReviewSha256": "739397CCDA355D1EE4FDEE386B7AE35F74EB40F418A4377CB8C19277720A0221"
+    }
+  ],
+  "rejectedDevelopmentDirection": {
+    "description": "A strict BF candidate overlapping a broad rough DF response selected only the damaged-negative source across the frozen ten plus all 22 signed results.",
+    "selectedOccurrences": [
+      "R25F10 ordinal 9",
+      "R25H22B ordinal 28"
+    ],
+    "bfAngleDegrees": 176.377055,
+    "dfAngleDegrees": 181.159760,
+    "intervalOverlapDegrees": 3.217295,
+    "disposition": "REJECTED_BEFORE_EXTERNAL_TRANSFER_OR_EXECUTION",
+    "draftDetectorOrConfigurationRetained": false
+  },
+  "remainingExplicitHold": {
+    "ordinal": 23,
+    "identity": "PST_BREAK_RESIST\\Lot_62617-215D_20260715122804\\62617-215D_20260715122804\\Slot25|BACK",
+    "bfSourceSha256": "2878FE74D652F4FF1C1F45E0C0E60FB47A122550EC48719B6820BB3C1095583A",
+    "dfSourceSha256": "C80C857878F49DBB8644D26B17DB6748B5C5F4ABEA8173B764AEF2532B18C2A6",
+    "bfFitRmsResidualPx": 36.117,
+    "dfStrictCandidateAnglesDegrees": [89.977092, 133.000217],
+    "pairedCandidateCount": 0,
+    "reason": "BF perimeter is not qualified and DF has two independently formed strict candidates; no frozen image-derived selector establishes a unique physical notch.",
+    "disposition": "HOLD_NO_ANGLE_PATH_SLOT_OR_PEER_INFERENCE"
+  },
+  "sourceMutationPerformed": false,
+  "sourceDeletionPerformed": false,
+  "existingTaskOrProcessActionPerformed": false,
+  "providerActivationPerformed": false,
+  "externalExecutionPerformedForRejectedDraft": false,
+  "fullCorpusAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

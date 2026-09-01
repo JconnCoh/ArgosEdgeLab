@@ -1,0 +1,57 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-31T20:49:00Z",
+  "incidentId": "O3B21_R21M3_PAYLOAD_IMPORT_CLOSURE_ABSENT",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": { "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41" },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": true,
+    "failureEvidence": [
+      { "path": "work/O3B21/R21M3_SIGNED_TERMINAL_FAILURE_GATE.json", "sha256": "060E3AD69C1B02BFD5773C903C6EACAF003B7F751375AF03B43F2D7A733AD037", "state": "FAILED" }
+    ],
+    "postFailureObservation": { "path": "work/O3B21/R21M4_POST_FAILURE_OBSERVATION.json", "sha256": "9E0967249FB929A08333C962D371D0E02ED96DAC6380E7F54C7D2665CE9204C9" },
+    "workflowReviewClearance": { "path": "work/O3B21/R21M4_WORKFLOW_REVIEW_CLEARANCE.json", "sha256": "6D295371AABE0D685725AE86D5F39E648E0ACC7A7F58E7C11FA55F4A8B11A436" }
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH_IDENTICAL_PROCESSOR_CONFIG_SELF_SWAP_WITH_DIRECT_PAYLOAD_DETECTOR",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": true,
+    "ledgerMutation": true,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": { "path": "C:/ProgramData/ArgosProjectPortalRO/bin/Invoke-ArgosProjectPortalEndpointWorker.ps1", "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250" },
+    "installedConfigEvidence": { "path": "work/O3B21/R21M1_SIGNED_TERMINAL_FAILURE_GATE.json", "sha256": "902A6AD0393C1C38F059B582CB7945ADFB57B375FA68B51F8A3F2DFAC259A4E8" },
+    "capabilityEvidence": { "path": "work/O3B21/R21P5_SIGNED_TERMINAL_GATE.json", "sha256": "ACDB743F5DFF3D4B472FDF541E7E42AB70FAD4F8E062F23820C2B9FF4B77327A" },
+    "qualifiedEndpointGate": { "path": "work/O3B21/R21P5_SIGNED_TERMINAL_GATE.json", "sha256": "ACDB743F5DFF3D4B472FDF541E7E42AB70FAD4F8E062F23820C2B9FF4B77327A" },
+    "qualifiedAdminGate": { "path": "", "sha256": "" }
+  },
+  "observation": {
+    "exactSources": [
+      { "sourcePath": "work/OPENCV_BACKSIDE_NOTCH_O3B10/Detect-BacksideNotchOpenCvR21.py", "sourceSchema": "PYTHON_IMPORT_CHAIN", "selector": "TOP_LEVEL_SIBLING_IMPORT_CLOSURE", "uniquenessKey": "relativeFilename", "maximumRows": 4 }
+    ],
+    "requestedCapabilities": ["DIRECT_PAYLOAD_DETECTOR_EXECUTION"],
+    "requestedFields": ["payloadDetectorSha256", "payloadConfigSha256", "frozenImportClosure", "ordinal", "result", "review rasters", "holder masks"],
+    "decisionOptions": ["B", "HOLD"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": { "path": "work/O3B21/R21M4_POST_FAILURE_OBSERVATION.json", "sha256": "9E0967249FB929A08333C962D371D0E02ED96DAC6380E7F54C7D2665CE9204C9" },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "operatorAuthorization": "Run the same exact 13 frozen R20 holds with unchanged R21/config and exact frozen R20-R18-R17-R15 sibling import closure in fresh D:/R21M4; one publication and no retry.",
+    "boundedChange": "One identical PROCESSOR_CONFIG carrier; unchanged direct payload detector/config plus exact frozen import closure; fresh D:/R21M4; no completed cases or new controls, task/process action, source mutation, provider activation, or authority change."
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

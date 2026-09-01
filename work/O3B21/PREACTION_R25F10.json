@@ -1,0 +1,24 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v2",
+  "revision":"O3B21_R25F10_SHALLOW_DEPTH_RATIO_FROZEN_TEN_REGRESSION_20260831",
+  "createdUtc":"2026-08-31T23:51:30Z",
+  "state":"PASS_PREACTION_CONTRACT",
+  "actionType":"PUBLISH_EXACTLY_ONE_REVIEW_ONLY_R25_FROZEN_TEN_REGRESSION_PACKAGE",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies":[
+    {"path":"work/O3B21/R25T1_SIGNED_TERMINAL_PASS_GATE.json","sha256":"8F6594CB19FC5FAFD17024BDC9D6A63791FFA27FA6D622D11EDB66D08B241EFA"},
+    {"path":"work/O3B21/Build-R25F10Package.ps1","sha256":"55F59D8BFC13FA3CE0137AD61626231EC939523E7115018B9CE4597A0793EF0A"},
+    {"path":"work/O3B21/R25F10_CASES.json","sha256":"6CE25A52AF96A6AD0B2188EBF87535954B1FF8414C6721A655AE0DA9FD553258"},
+    {"path":"work/O3B21/R25F10_CLONE_LITERAL_GATE.json","sha256":"E63FFABD47636983DC86D716F7C1DE8338EAE8B0B8FF47206226BF0848F0B3AC"},
+    {"path":"work/O3B21/R25F10_PACKAGED_ENTRY_LEAF_GATE.json","sha256":"E89E7093512349C22D533A2835F9F52EC62B5ECCFC4CCE07C0DBC0F7D51A3A1B"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/Detect-BacksideNotchOpenCvR25.py","sha256":"6A7977E4DAFE692FCE6E7DE4740C94EE66D5F79ECD62FDF190CB5EE8E4862274"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/BACKSIDE_NOTCH_CONFIG_R13.json","sha256":"27010B75F2E5CCB601E710A63D73F5483072F6EB797F9D72A0632F993E6E4AD3"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"1AEDF7123C81ADE6002EE76F8A49455BBA94E5255AEAE828A655A3D68C285745"}
+  ],
+  "controls":{"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence":{"path":"work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json","sha256":"17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":["C:/R24F10PK/signed/REQ_20260831T230644063Z_E1942A44F3FE.ready","C:/R24F10M1PK/signed/REQ_20260831T231557393Z_5602A7064924.ready","C:/R25T1PK/signed/REQ_20260831T233739028Z_91E39482572D.ready"]},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

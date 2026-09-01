@@ -1,0 +1,18 @@
+{
+  "schema":"argos_r21p3_post_p2_workflow_review_v1",
+  "createdUtc":"2026-08-31T18:56:00Z",
+  "state":"STOP_LOSS_CLEARED_FOR_ONE_FRESH_CONFIG_ONLY_SUCCESSOR",
+  "operatorInstruction":"PUBLISH the GUI read-only observation and CLEAR R21 STOP-LOSS for the one config-only D:\\R21TG1 read-capability improvement.",
+  "p2Failure":{"gate":"work/O3B21/R21P2_SIGNED_TERMINAL_FAILURE_GATE.json","sha256":"63D7F38EBE5FB9F8F51B960B7A82E06A2B9AD5DCAC19EA7E525365663B239934","cause":"P2 pinned obsolete endpoint worker 244A5E from 2026-08-21 instead of current CB6700 frozen on 2026-08-26.","requestRetryAllowed":false,"artifactReusable":false},
+  "directPostFailureObservation":{"gate":"work/O3B21/R21S2_SIGNED_POST_FAILURE_STATUS_GATE.json","state":"PASS_R21S2_SIGNED_POST_FAILURE_STATUS","signatureVerified":true},
+  "currentRoute":{"gate":"work/OPENCV_SCRIBE_O2D10/O2D10_COMPLETE_ROUTE_GATE_R2.json","sha256":"6938DC3E37A5208DC1F3E2F8F7A5703CC9A6B70B7533556E584F531DCD310D81","endpointWorkerSha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250","endpointConfigSha256":"55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F","routeState":"PASS_O2D10_COMPLETE_ROUTE_GATE"},
+  "currentConfigCorroboration":"P2 entrypoint passed its endpoint-config 55A106 hash guard and failed on the immediately following worker-hash guard.",
+  "authorizedSuccessor":{"namespace":"R21P3","installedFileMaximum":1,"installedFile":"C:/ProgramData/ArgosProjectPortalRO/config/endpoint_jbod.json","addApprovedDataRoot":{"name":"JBOD_R21_TARGETED_OUTPUT","path":"D:/R21TG1"},"appendExactStatusHashFileCount":204,"workerCodeChange":false,"newHandler":false,"taskOrProcessActionCount":0,"detectorRerun":false,"automaticRetry":false,"publicationMaximum":1},
+  "reviewDisposition":"Fresh signed STATUS plus the signed current complete-route gate and P2 ordered hash-guard failure are sufficient to bind CB6700 and 55A106 for one fresh config-only package. The package must validate both again before its first endpoint-config write.",
+  "mutationStopLossActive":false,
+  "reviewOnly":true,
+  "trainingEligible":false,
+  "xmlEligible":false,
+  "productionEligible":false,
+  "productionRoutingEnabled":false
+}

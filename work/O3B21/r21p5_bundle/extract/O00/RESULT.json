@@ -1,0 +1,649 @@
+{
+  "state": "COMPLETE_BACKSIDE_NOTCH_DEVELOPMENT_DIAGNOSTIC",
+  "opencvVersion": "5.0.0",
+  "fullPerimeterInference": true,
+  "knownNotchLocationConsumed": false,
+  "patternSuppression": "FULL_360_OUTERMOST_DARK_EXTERIOR_BOUNDARY_BOTH_CHANNELS",
+  "bf": {
+    "channel": "BF",
+    "nativeShape": [
+      10995,
+      14411
+    ],
+    "analysisShape": [
+      1831,
+      2400
+    ],
+    "analysisScale": 0.16653944903198944,
+    "waferMaskMethod": "FROZEN_R6_OUTERMOST_DARK_EXTERIOR_BOUNDARY",
+    "patternSuppression": "FULL_360_CHANNEL_LOCAL_HOLDER_EXCLUDED_BOUNDARY",
+    "circle": {
+      "centerX": 1205.2134730204807,
+      "centerY": 904.5508663969772,
+      "radius": 859.0235917503819
+    },
+    "profileThresholdPx": 1.4818749132607036,
+    "profileMaximumDepthPx": 15.655114799458746,
+    "candidateCount": 5,
+    "candidates": [
+      {
+        "centerAngleDegrees": 67.72156015546098,
+        "startAngleDegrees": 66.90000220317157,
+        "endAngleDegrees": 68.19999893808927,
+        "widthDegrees": 1.4000000000000001,
+        "maximumDepthPx": 94.00244140625,
+        "medianDepthPx": 64.00244140625,
+        "sampleCount": 14,
+        "symmetryScore": 0.0,
+        "tipCenterOffsetFraction": 1.0,
+        "slopeConsistencyFraction": 1.0,
+        "maximumDepthNativePx": 94.00244140625,
+        "maximumDepthAnalysisPx": 15.655114799458746,
+        "manufacturedMorphologyPassed": false,
+        "candidateSource": "NATIVE_CHANNEL_LOCAL_HOLDER_EXCLUDED_RADIAL_PROFILE",
+        "exteriorContext": {
+          "referenceMedianIntensity": 1.0,
+          "referenceMadIntensity": 0.0,
+          "brightThresholdIntensity": 13.0,
+          "wedgeMedianIntensity": 6.0,
+          "wedgeP90Intensity": 6.0,
+          "brightPixelFraction": 0.03879310344827586,
+          "maximumAngularBrightSupportFraction": 0.3958333333333333
+        }
+      },
+      {
+        "centerAngleDegrees": 89.98938595332494,
+        "startAngleDegrees": 88.79999973900945,
+        "endAngleDegrees": 91.1999984397577,
+        "widthDegrees": 2.5,
+        "maximumDepthPx": 80.00244140625,
+        "medianDepthPx": 65.00244140625,
+        "sampleCount": 25,
+        "symmetryScore": 0.7840974979123839,
+        "tipCenterOffsetFraction": 0.16666666666666666,
+        "slopeConsistencyFraction": 1.0,
+        "maximumDepthNativePx": 80.00244140625,
+        "maximumDepthAnalysisPx": 13.323562513010893,
+        "manufacturedMorphologyPassed": true,
+        "candidateSource": "NATIVE_CHANNEL_LOCAL_HOLDER_EXCLUDED_RADIAL_PROFILE",
+        "exteriorContext": {
+          "referenceMedianIntensity": 1.0,
+          "referenceMadIntensity": 0.0,
+          "brightThresholdIntensity": 13.0,
+          "wedgeMedianIntensity": 1.0,
+          "wedgeP90Intensity": 1.0,
+          "brightPixelFraction": 0.0,
+          "maximumAngularBrightSupportFraction": 0.0
+        }
+      },
+      {
+        "centerAngleDegrees": 133.18820712893492,
+        "startAngleDegrees": 132.79999640996155,
+        "endAngleDegrees": 133.4999951772395,
+        "widthDegrees": 0.8,
+        "maximumDepthPx": 71.00244140625,
+        "medianDepthPx": 58.00244140625,
+        "sampleCount": 8,
+        "symmetryScore": 0.0,
+        "tipCenterOffsetFraction": 1.0,
+        "slopeConsistencyFraction": 1.0,
+        "maximumDepthNativePx": 71.00244140625,
+        "maximumDepthAnalysisPx": 11.82470747172299,
+        "manufacturedMorphologyPassed": false,
+        "candidateSource": "NATIVE_CHANNEL_LOCAL_HOLDER_EXCLUDED_RADIAL_PROFILE",
+        "exteriorContext": {
+          "referenceMedianIntensity": 1.0,
+          "referenceMadIntensity": 0.0,
+          "brightThresholdIntensity": 13.0,
+          "wedgeMedianIntensity": 6.0,
+          "wedgeP90Intensity": 13.0,
+          "brightPixelFraction": 0.10272988505747127,
+          "maximumAngularBrightSupportFraction": 0.4583333333333333
+        }
+      },
+      {
+        "centerAngleDegrees": 134.7487636914027,
+        "startAngleDegrees": 134.50000317362105,
+        "endAngleDegrees": 135.00000034162267,
+        "widthDegrees": 0.6000000000000001,
+        "maximumDepthPx": 88.00244140625,
+        "medianDepthPx": 88.00244140625,
+        "sampleCount": 6,
+        "symmetryScore": 0.0,
+        "tipCenterOffsetFraction": 1.0,
+        "slopeConsistencyFraction": 1.0,
+        "maximumDepthNativePx": 88.00244140625,
+        "maximumDepthAnalysisPx": 14.65587810526681,
+        "manufacturedMorphologyPassed": false,
+        "candidateSource": "NATIVE_CHANNEL_LOCAL_HOLDER_EXCLUDED_RADIAL_PROFILE",
+        "exteriorContext": {
+          "referenceMedianIntensity": 1.0,
+          "referenceMadIntensity": 0.0,
+          "brightThresholdIntensity": 13.0,
+          "wedgeMedianIntensity": 6.0,
+          "wedgeP90Intensity": 16.0,
+          "brightPixelFraction": 0.16666666666666666,
+          "maximumAngularBrightSupportFraction": 0.4791666666666667
+        }
+      },
+      {
+        "centerAngleDegrees": 136.2679400062233,
+        "startAngleDegrees": 135.9999946776259,
+        "endAngleDegrees": 136.59999947545484,
+        "widthDegrees": 0.7000000000000001,
+        "maximumDepthPx": 69.00244140625,
+        "medianDepthPx": 57.00244140625,
+        "sampleCount": 7,
+        "symmetryScore": 0.0,
+        "tipCenterOffsetFraction": 1.0,
+        "slopeConsistencyFraction": 1.0,
+        "maximumDepthNativePx": 69.00244140625,
+        "maximumDepthAnalysisPx": 11.49162857365901,
+        "manufacturedMorphologyPassed": false,
+        "candidateSource": "NATIVE_CHANNEL_LOCAL_HOLDER_EXCLUDED_RADIAL_PROFILE",
+        "exteriorContext": {
+          "referenceMedianIntensity": 1.0,
+          "referenceMadIntensity": 0.0,
+          "brightThresholdIntensity": 13.0,
+          "wedgeMedianIntensity": 6.0,
+          "wedgeP90Intensity": 7.0,
+          "brightPixelFraction": 0.040229885057471264,
+          "maximumAngularBrightSupportFraction": 0.2916666666666667
+        }
+      }
+    ],
+    "radialQualification": {
+      "qualified": true,
+      "state": "PASS_FULL_PERIMETER_CHANNEL_QUALIFIED",
+      "fit": {
+        "centerX": 7236.804733207562,
+        "centerY": 5431.451056519516,
+        "radius": 5158.078741964481,
+        "acceptedCount": 3094,
+        "inputCount": 3167,
+        "inlierFraction": 0.9769497947584465,
+        "angularCoverageFraction": 0.9861111111111112,
+        "rmsResidualPx": 1.198170206632933,
+        "p90AbsoluteResidualPx": 2.0048828125
+      },
+      "search": {
+        "mode": "FULL_360_CHANNEL_LOCAL_HOLDER_EXCLUDED_OUTERMOST_DARK_BOUNDARY",
+        "coarseRadiusMinimumPx": 3078.60009765625,
+        "coarseRadiusMaximumPx": 5388.60009765625,
+        "coarseAngleSamples": 1440,
+        "refineAngleSamples": 3600,
+        "coarseSupportedSamples": 1306,
+        "refineRawSupportedSamples": 3167,
+        "refineSupportedSamples": 3167,
+        "coarseAdaptiveContrastFloor": 20.91599941253662,
+        "refineAdaptiveContrastFloor": 21.50000076293945,
+        "knownNotchLocationConsumed": false,
+        "notchAnglePriorConsumed": false,
+        "fixedAngularSearchWindowConsumed": false
+      }
+    },
+    "holderExclusion": {
+      "state": "APPLIED_BEFORE_FINAL_PERIMETER_FIT_AND_CANDIDATE_FORMATION",
+      "maskSampleCount": 119,
+      "spans": [
+        {
+          "startAngleDegrees": 1.4000000000000001,
+          "endAngleDegrees": 4.3,
+          "widthDegrees": 2.9000000000000004
+        },
+        {
+          "startAngleDegrees": 68.60000000000001,
+          "endAngleDegrees": 71.60000000000001,
+          "widthDegrees": 3.0
+        },
+        {
+          "startAngleDegrees": 224.60000000000002,
+          "endAngleDegrees": 227.60000000000002,
+          "widthDegrees": 3.0
+        },
+        {
+          "startAngleDegrees": 292.5,
+          "endAngleDegrees": 295.5,
+          "widthDegrees": 3.0
+        }
+      ],
+      "rawCandidateCountBeforeExclusion": 5,
+      "rawCandidatesBeforeExclusion": [
+        {
+          "centerAngleDegrees": 67.72156015546098,
+          "startAngleDegrees": 66.90000220317157,
+          "endAngleDegrees": 68.19999893808927,
+          "widthDegrees": 1.4000000000000001,
+          "maximumDepthPx": 94.00244140625,
+          "medianDepthPx": 64.00244140625,
+          "sampleCount": 14,
+          "symmetryScore": 0.0,
+          "tipCenterOffsetFraction": 1.0,
+          "slopeConsistencyFraction": 1.0
+        },
+        {
+          "centerAngleDegrees": 89.98938595332494,
+          "startAngleDegrees": 88.79999973900945,
+          "endAngleDegrees": 91.1999984397577,
+          "widthDegrees": 2.5,
+          "maximumDepthPx": 80.00244140625,
+          "medianDepthPx": 65.00244140625,
+          "sampleCount": 25,
+          "symmetryScore": 0.7840974979123839,
+          "tipCenterOffsetFraction": 0.16666666666666666,
+          "slopeConsistencyFraction": 1.0
+        },
+        {
+          "centerAngleDegrees": 133.18820712893492,
+          "startAngleDegrees": 132.79999640996155,
+          "endAngleDegrees": 133.4999951772395,
+          "widthDegrees": 0.8,
+          "maximumDepthPx": 71.00244140625,
+          "medianDepthPx": 58.00244140625,
+          "sampleCount": 8,
+          "symmetryScore": 0.0,
+          "tipCenterOffsetFraction": 1.0,
+          "slopeConsistencyFraction": 1.0
+        },
+        {
+          "centerAngleDegrees": 134.7487636914027,
+          "startAngleDegrees": 134.50000317362105,
+          "endAngleDegrees": 135.00000034162267,
+          "widthDegrees": 0.6000000000000001,
+          "maximumDepthPx": 88.00244140625,
+          "medianDepthPx": 88.00244140625,
+          "sampleCount": 6,
+          "symmetryScore": 0.0,
+          "tipCenterOffsetFraction": 1.0,
+          "slopeConsistencyFraction": 1.0
+        },
+        {
+          "centerAngleDegrees": 136.2679400062233,
+          "startAngleDegrees": 135.9999946776259,
+          "endAngleDegrees": 136.59999947545484,
+          "widthDegrees": 0.7000000000000001,
+          "maximumDepthPx": 69.00244140625,
+          "medianDepthPx": 57.00244140625,
+          "sampleCount": 7,
+          "symmetryScore": 0.0,
+          "tipCenterOffsetFraction": 1.0,
+          "slopeConsistencyFraction": 1.0
+        }
+      ],
+      "retainedCandidateCountAfterExclusion": 5,
+      "referenceMedianIntensity": 1.0,
+      "referenceMadIntensity": 0.0,
+      "brightThresholdIntensity": 13.0,
+      "maximumRadialBrightSupportFraction": 1.0,
+      "maskPath": "D:\\R21TG1\\O00\\BF_holder_exclusion.png",
+      "maskSha256": "69748130A2122833FDE0F91D128DE940AA5C057E8AD88403F5FBE0E7AA99224E"
+    },
+    "backsideTraceQualification": {
+      "usable": true,
+      "strictUsable": true,
+      "inlierPassed": true,
+      "coveragePassedWithHalfBinTolerance": true,
+      "coverageHalfBinToleranceFraction": 0.006944444444444444,
+      "coverageDeferredToUniqueCrossChannelPair": false,
+      "minimumCrossChannelCompensatedDfCoverageFraction": 0.75,
+      "rawRmsPassed": true,
+      "bfLowFrequencyShapeSuppressed": false,
+      "manufacturedMorphologyAndCrossChannelPairingStillRequired": true
+    }
+  },
+  "df": {
+    "channel": "DF",
+    "nativeShape": [
+      10995,
+      14411
+    ],
+    "analysisShape": [
+      1831,
+      2400
+    ],
+    "analysisScale": 0.16653944903198944,
+    "waferMaskMethod": "FROZEN_R6_OUTERMOST_DARK_EXTERIOR_BOUNDARY",
+    "patternSuppression": "FULL_360_CHANNEL_LOCAL_HOLDER_EXCLUDED_BOUNDARY",
+    "circle": {
+      "centerX": 1205.1095060600953,
+      "centerY": 904.2735417997238,
+      "radius": 861.249437708855
+    },
+    "profileThresholdPx": 1.4814683228089653,
+    "profileMaximumDepthPx": 27.479009090278257,
+    "candidateCount": 6,
+    "candidates": [
+      {
+        "centerAngleDegrees": 0.8766393187983315,
+        "startAngleDegrees": 359.899988727707,
+        "endAngleDegrees": 1.5000000417413029,
+        "widthDegrees": 1.7000000000000002,
+        "maximumDepthPx": 165.0,
+        "medianDepthPx": 125.0,
+        "sampleCount": 17,
+        "symmetryScore": 0.9656565656565657,
+        "tipCenterOffsetFraction": 0.75,
+        "slopeConsistencyFraction": 1.0,
+        "maximumDepthNativePx": 165.0,
+        "maximumDepthAnalysisPx": 27.479009090278257,
+        "manufacturedMorphologyPassed": false,
+        "candidateSource": "NATIVE_CHANNEL_LOCAL_HOLDER_EXCLUDED_RADIAL_PROFILE",
+        "exteriorContext": {
+          "referenceMedianIntensity": 0.0,
+          "referenceMadIntensity": 0.0,
+          "brightThresholdIntensity": 12.0,
+          "wedgeMedianIntensity": 0.0,
+          "wedgeP90Intensity": 6.0,
+          "brightPixelFraction": 0.021551724137931036,
+          "maximumAngularBrightSupportFraction": 0.3541666666666667
+        }
+      },
+      {
+        "centerAngleDegrees": 4.895581414742054,
+        "startAngleDegrees": 4.2999998066080645,
+        "endAngleDegrees": 5.799999848349367,
+        "widthDegrees": 1.6,
+        "maximumDepthPx": 164.0,
+        "medianDepthPx": 126.0,
+        "sampleCount": 16,
+        "symmetryScore": 0.0,
+        "tipCenterOffsetFraction": 1.0,
+        "slopeConsistencyFraction": 1.0,
+        "maximumDepthNativePx": 164.0,
+        "maximumDepthAnalysisPx": 27.31246964124627,
+        "manufacturedMorphologyPassed": false,
+        "candidateSource": "NATIVE_CHANNEL_LOCAL_HOLDER_EXCLUDED_RADIAL_PROFILE",
+        "exteriorContext": {
+          "referenceMedianIntensity": 0.0,
+          "referenceMadIntensity": 0.0,
+          "brightThresholdIntensity": 12.0,
+          "wedgeMedianIntensity": 0.0,
+          "wedgeP90Intensity": 7.0,
+          "brightPixelFraction": 0.022270114942528736,
+          "maximumAngularBrightSupportFraction": 0.3541666666666667
+        }
+      },
+      {
+        "centerAngleDegrees": 10.081957448890114,
+        "startAngleDegrees": 9.899999763228411,
+        "endAngleDegrees": 10.199999600821942,
+        "widthDegrees": 0.4,
+        "maximumDepthPx": 158.0,
+        "medianDepthPx": 158.0,
+        "sampleCount": 4,
+        "symmetryScore": 0.6487341772151899,
+        "tipCenterOffsetFraction": 0.3333333333333333,
+        "slopeConsistencyFraction": 1.0,
+        "maximumDepthNativePx": 158.0,
+        "maximumDepthAnalysisPx": 26.31323294705433,
+        "manufacturedMorphologyPassed": false,
+        "candidateSource": "NATIVE_CHANNEL_LOCAL_HOLDER_EXCLUDED_RADIAL_PROFILE",
+        "exteriorContext": {
+          "referenceMedianIntensity": 0.0,
+          "referenceMadIntensity": 0.0,
+          "brightThresholdIntensity": 12.0,
+          "wedgeMedianIntensity": 0.0,
+          "wedgeP90Intensity": 0.0,
+          "brightPixelFraction": 0.0,
+          "maximumAngularBrightSupportFraction": 0.0
+        }
+      },
+      {
+        "centerAngleDegrees": 89.98623694579861,
+        "startAngleDegrees": 88.90000053864762,
+        "endAngleDegrees": 91.09999764011955,
+        "widthDegrees": 2.3000000000000003,
+        "maximumDepthPx": 73.0,
+        "medianDepthPx": 56.0,
+        "sampleCount": 23,
+        "symmetryScore": 0.7589041095890411,
+        "tipCenterOffsetFraction": 0.18181818181818182,
+        "slopeConsistencyFraction": 1.0,
+        "maximumDepthNativePx": 73.0,
+        "maximumDepthAnalysisPx": 12.15737977933523,
+        "manufacturedMorphologyPassed": true,
+        "candidateSource": "NATIVE_CHANNEL_LOCAL_HOLDER_EXCLUDED_RADIAL_PROFILE",
+        "exteriorContext": {
+          "referenceMedianIntensity": 0.0,
+          "referenceMadIntensity": 0.0,
+          "brightThresholdIntensity": 12.0,
+          "wedgeMedianIntensity": 0.0,
+          "wedgeP90Intensity": 0.0,
+          "brightPixelFraction": 0.0,
+          "maximumAngularBrightSupportFraction": 0.0
+        }
+      },
+      {
+        "centerAngleDegrees": 133.45848035776874,
+        "startAngleDegrees": 133.1999996085142,
+        "endAngleDegrees": 133.6999967765158,
+        "widthDegrees": 0.6000000000000001,
+        "maximumDepthPx": 79.0,
+        "medianDepthPx": 74.5,
+        "sampleCount": 6,
+        "symmetryScore": 0.9810126582278481,
+        "tipCenterOffsetFraction": 0.6,
+        "slopeConsistencyFraction": 1.0,
+        "maximumDepthNativePx": 79.0,
+        "maximumDepthAnalysisPx": 13.156616473527166,
+        "manufacturedMorphologyPassed": false,
+        "candidateSource": "NATIVE_CHANNEL_LOCAL_HOLDER_EXCLUDED_RADIAL_PROFILE",
+        "exteriorContext": {
+          "referenceMedianIntensity": 0.0,
+          "referenceMadIntensity": 0.0,
+          "brightThresholdIntensity": 12.0,
+          "wedgeMedianIntensity": 0.0,
+          "wedgeP90Intensity": 11.0,
+          "brightPixelFraction": 0.09554597701149425,
+          "maximumAngularBrightSupportFraction": 0.75
+        }
+      },
+      {
+        "centerAngleDegrees": 226.1000007040993,
+        "startAngleDegrees": 225.8999963824659,
+        "endAngleDegrees": 226.29999958101854,
+        "widthDegrees": 0.5,
+        "maximumDepthPx": 57.0,
+        "medianDepthPx": 56.0,
+        "sampleCount": 5,
+        "symmetryScore": 1.0,
+        "tipCenterOffsetFraction": 0.0,
+        "slopeConsistencyFraction": 1.0,
+        "maximumDepthNativePx": 57.0,
+        "maximumDepthAnalysisPx": 9.492748594823398,
+        "manufacturedMorphologyPassed": false,
+        "candidateSource": "NATIVE_CHANNEL_LOCAL_HOLDER_EXCLUDED_RADIAL_PROFILE",
+        "exteriorContext": {
+          "referenceMedianIntensity": 0.0,
+          "referenceMadIntensity": 0.0,
+          "brightThresholdIntensity": 12.0,
+          "wedgeMedianIntensity": 6.0,
+          "wedgeP90Intensity": 14.0,
+          "brightPixelFraction": 0.2492816091954023,
+          "maximumAngularBrightSupportFraction": 0.5208333333333334
+        }
+      }
+    ],
+    "radialQualification": {
+      "qualified": true,
+      "state": "PASS_FULL_PERIMETER_CHANNEL_QUALIFIED",
+      "fit": {
+        "centerX": 7236.180454930015,
+        "centerY": 5429.785837864925,
+        "radius": 5171.444019509296,
+        "acceptedCount": 3158,
+        "inputCount": 3253,
+        "inlierFraction": 0.9707961881340301,
+        "angularCoverageFraction": 0.9861111111111112,
+        "rmsResidualPx": 1.4304544028328845,
+        "p90AbsoluteResidualPx": 2.0029296875
+      },
+      "search": {
+        "mode": "FULL_360_CHANNEL_LOCAL_HOLDER_EXCLUDED_OUTERMOST_DARK_BOUNDARY",
+        "coarseRadiusMinimumPx": 3078.60009765625,
+        "coarseRadiusMaximumPx": 5388.60009765625,
+        "coarseAngleSamples": 1440,
+        "refineAngleSamples": 3600,
+        "coarseSupportedSamples": 1287,
+        "refineRawSupportedSamples": 3260,
+        "refineSupportedSamples": 3253,
+        "coarseAdaptiveContrastFloor": 10.0,
+        "refineAdaptiveContrastFloor": 10.0,
+        "knownNotchLocationConsumed": false,
+        "notchAnglePriorConsumed": false,
+        "fixedAngularSearchWindowConsumed": false
+      }
+    },
+    "holderExclusion": {
+      "state": "APPLIED_BEFORE_FINAL_PERIMETER_FIT_AND_CANDIDATE_FORMATION",
+      "maskSampleCount": 13,
+      "spans": [
+        {
+          "startAngleDegrees": 134.20000000000002,
+          "endAngleDegrees": 135.5,
+          "widthDegrees": 1.3
+        }
+      ],
+      "rawCandidateCountBeforeExclusion": 6,
+      "rawCandidatesBeforeExclusion": [
+        {
+          "centerAngleDegrees": 0.8766393187983315,
+          "startAngleDegrees": 359.899988727707,
+          "endAngleDegrees": 1.5000000417413029,
+          "widthDegrees": 1.7000000000000002,
+          "maximumDepthPx": 165.0,
+          "medianDepthPx": 125.0,
+          "sampleCount": 17,
+          "symmetryScore": 0.9656565656565657,
+          "tipCenterOffsetFraction": 0.75,
+          "slopeConsistencyFraction": 1.0
+        },
+        {
+          "centerAngleDegrees": 4.895581414742054,
+          "startAngleDegrees": 4.2999998066080645,
+          "endAngleDegrees": 5.799999848349367,
+          "widthDegrees": 1.6,
+          "maximumDepthPx": 164.0,
+          "medianDepthPx": 126.0,
+          "sampleCount": 16,
+          "symmetryScore": 0.0,
+          "tipCenterOffsetFraction": 1.0,
+          "slopeConsistencyFraction": 1.0
+        },
+        {
+          "centerAngleDegrees": 10.081957448890114,
+          "startAngleDegrees": 9.899999763228411,
+          "endAngleDegrees": 10.199999600821942,
+          "widthDegrees": 0.4,
+          "maximumDepthPx": 158.0,
+          "medianDepthPx": 158.0,
+          "sampleCount": 4,
+          "symmetryScore": 0.6487341772151899,
+          "tipCenterOffsetFraction": 0.3333333333333333,
+          "slopeConsistencyFraction": 1.0
+        },
+        {
+          "centerAngleDegrees": 89.98623694579861,
+          "startAngleDegrees": 88.90000053864762,
+          "endAngleDegrees": 91.09999764011955,
+          "widthDegrees": 2.3000000000000003,
+          "maximumDepthPx": 73.0,
+          "medianDepthPx": 56.0,
+          "sampleCount": 23,
+          "symmetryScore": 0.7589041095890411,
+          "tipCenterOffsetFraction": 0.18181818181818182,
+          "slopeConsistencyFraction": 1.0
+        },
+        {
+          "centerAngleDegrees": 133.45848035776874,
+          "startAngleDegrees": 133.1999996085142,
+          "endAngleDegrees": 133.6999967765158,
+          "widthDegrees": 0.6000000000000001,
+          "maximumDepthPx": 79.0,
+          "medianDepthPx": 74.5,
+          "sampleCount": 6,
+          "symmetryScore": 0.9810126582278481,
+          "tipCenterOffsetFraction": 0.6,
+          "slopeConsistencyFraction": 1.0
+        },
+        {
+          "centerAngleDegrees": 226.1000007040993,
+          "startAngleDegrees": 225.8999963824659,
+          "endAngleDegrees": 226.29999958101854,
+          "widthDegrees": 0.5,
+          "maximumDepthPx": 57.0,
+          "medianDepthPx": 56.0,
+          "sampleCount": 5,
+          "symmetryScore": 1.0,
+          "tipCenterOffsetFraction": 0.0,
+          "slopeConsistencyFraction": 1.0
+        }
+      ],
+      "retainedCandidateCountAfterExclusion": 6,
+      "referenceMedianIntensity": 0.0,
+      "referenceMadIntensity": 0.0,
+      "brightThresholdIntensity": 12.0,
+      "maximumRadialBrightSupportFraction": 0.7627118644067796,
+      "maskPath": "D:\\R21TG1\\O00\\DF_holder_exclusion.png",
+      "maskSha256": "8C41C03FE4DB8C61E4FA9B99BF74BB07BEC5235F0EB7E4E7F76ADA0A3FA42D4A"
+    },
+    "backsideTraceQualification": {
+      "usable": true,
+      "strictUsable": true,
+      "inlierPassed": true,
+      "coveragePassedWithHalfBinTolerance": true,
+      "coverageHalfBinToleranceFraction": 0.006944444444444444,
+      "coverageDeferredToUniqueCrossChannelPair": false,
+      "minimumCrossChannelCompensatedDfCoverageFraction": 0.75,
+      "rawRmsPassed": true,
+      "bfLowFrequencyShapeSuppressed": false,
+      "manufacturedMorphologyAndCrossChannelPairingStillRequired": true
+    }
+  },
+  "bfEligibleCandidateCount": 1,
+  "dfEligibleCandidateCount": 1,
+  "pairedCandidateCount": 1,
+  "pairedCandidates": [
+    {
+      "bfAngleDegrees": 89.98938595332494,
+      "dfAngleDegrees": 89.98623694579861,
+      "angleDifferenceDegrees": 0.0031490075263320705,
+      "meanAngleDegrees": 89.98781144956179,
+      "bfWidthDegrees": 2.5,
+      "dfWidthDegrees": 2.3000000000000003,
+      "bfDepthNativePx": 80.00244140625,
+      "dfDepthNativePx": 73.0,
+      "bfTipDepthAnalysisPx": 80.00244140625,
+      "dfTipDepthAnalysisPx": 12.15737977933523,
+      "confirmationMode": "STRICT_BOTH_CHANNELS",
+      "bfExteriorContext": {
+        "referenceMedianIntensity": 1.0,
+        "referenceMadIntensity": 0.0,
+        "brightThresholdIntensity": 13.0,
+        "wedgeMedianIntensity": 1.0,
+        "wedgeP90Intensity": 1.0,
+        "brightPixelFraction": 0.0,
+        "maximumAngularBrightSupportFraction": 0.0
+      },
+      "dfExteriorContext": {
+        "referenceMedianIntensity": 0.0,
+        "referenceMadIntensity": 0.0,
+        "brightThresholdIntensity": 12.0,
+        "wedgeMedianIntensity": 0.0,
+        "wedgeP90Intensity": 0.0,
+        "brightPixelFraction": 0.0,
+        "maximumAngularBrightSupportFraction": 0.0
+      },
+      "bothChannelsExteriorFixtureContact": false,
+      "score": 72.77084406434385
+    }
+  ],
+  "overlays": {
+    "BF": "D:\\R21TG1\\O00\\BF_overlay.png",
+    "DF": "D:\\R21TG1\\O00\\DF_overlay.png",
+    "BFReview": "D:\\R21TG1\\O00\\BF_review.jpg",
+    "DFReview": "D:\\R21TG1\\O00\\DF_review.jpg"
+  },
+  "sourceMutationPerformed": false,
+  "reviewOnly": true
+}

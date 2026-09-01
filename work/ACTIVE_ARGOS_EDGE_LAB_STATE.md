@@ -9201,3 +9201,34 @@ per heartbeat; leave the worker and every existing task/process untouched.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B10_R20_CORPUS745_723_PASS_22_HOLD_20260829.md`,
 SHA-256 `66D990945E81561D9EBE986BEC3A38A9AECC854B1AB31A0AA3CB5F994D5DC37A`.
+
+# 2026-08-31 — OCV-03 O3B21 R21 signed timeout / output recovery design (`PENDING_GATE`)
+
+R21 request `REQ_20260831T135113536Z_EE76925FE71B` returned a matching
+signature-verified JBOD terminal failure because the endpoint stopped its owned
+child at 900 seconds. The exact response is frozen; this is not a detector-gate
+pass and R21 must not be retried.
+
+A local config-only recovery design passed Windows PowerShell 5.1 checks. It
+would expose `D:\R21TG1` as one dedicated DATA_PULL root and inventory 204 exact
+expected leaves through STATUS before retrieving only confirmed-present files
+in at most two pulls. It changes no endpoint worker code and installs no
+handler. Mutation stop-loss and the missing current endpoint-config pin block
+payload construction, signing, publication, deployment, and restart.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R21_SIGNED_TIMEOUT_OUTPUT_RECOVERY_DESIGN_CHECKPOINT_20260831.md`,
+SHA-256 `C1A149A1D6156545FAB8BFED439BCD122E585C4C70DE6B6B4F0985F3B91B92B8`.
+
+# 2026-08-31 — OCV-03 O3B21 R25 targeted backside evidence (`PENDING_GATE`)
+
+R25 passed the frozen ten and both serialized all-22 hold partitions with all
+returned evidence hash-verified and no automatic hold clearance. The sole-
+holder negative, known-chipout, Coherent, BowComp, normal, and rough damaged-
+negative controls are preserved. Ordinal 23, the notch-adjacent zero-set, and
+the unresolved additional chipout source remain explicit holds. A fresh 953
+backside corpus and every later phase remain unauthorized until those targeted
+backside prerequisites pass.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_TARGETED_BACKSIDE_EVIDENCE_CHECKPOINT_20260831.md`.

@@ -1,0 +1,29 @@
+{
+  "schema": "argos_r21_output_recovery_stop_loss_clearance_v1",
+  "createdUtc": "2026-08-31T17:55:37.9618978Z",
+  "state": "STOP_LOSS_CLEARED_FOR_ONE_BOUNDED_CONFIG_ONLY_CAPABILITY_IMPROVEMENT",
+  "operatorInstruction": "CLEAR R21 STOP-LOSS for the one config-only D:\\R21TG1 read-capability improvement.",
+  "sourceCheckpoint": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R21_SIGNED_TIMEOUT_OUTPUT_RECOVERY_DESIGN_CHECKPOINT_20260831.md",
+  "sourceCheckpointSha256": "C1A149A1D6156545FAB8BFED439BCD122E585C4C70DE6B6B4F0985F3B91B92B8",
+  "authorizedMutation": {
+    "installedFileMaximum": 1,
+    "installedFile": "C:/ProgramData/ArgosProjectPortalRO/config/endpoint_jbod.json",
+    "addApprovedDataRoot": {
+      "name": "JBOD_R21_TARGETED_OUTPUT",
+      "path": "D:/R21TG1"
+    },
+    "appendExactStatusHashFileCount": 204,
+    "endpointWorkerCodeChangeAllowed": false,
+    "newHandlerAllowed": false,
+    "endpointWorkerRestartMaximum": 1,
+    "processorTaskOrProcessActionAllowed": false,
+    "detectorRerunAllowed": false,
+    "automaticRetryAllowed": false
+  },
+  "requiredBeforePayloadConstruction": "One bounded current-premise OBSERVE must pass and pin exact current endpoint_jbod.json bytes/hash, unchanged endpoint-worker hash, exact endpoint task identity/principal/state, and healthy processor PID/creation time.",
+  "publicationAuthorityGrantedByThisRecord": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

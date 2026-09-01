@@ -1,0 +1,54 @@
+{
+  "schema": "argos_r21g1_gateway_resume_plan_v1",
+  "requestId": "REQ_20260831T152321980Z_0F7B21A5E991",
+  "stageRoot": "C:\\R21G1",
+  "finalRoot": "C:\\R21G1A",
+  "payloads": [
+    {
+      "path": "payload/B.ps1",
+      "source": "work/GWQ2/pkg/payload/B.ps1",
+      "sha256": "EBEBA79A71402B55B5AAFBCD1A7A202BADA0E95ED6D55DBD7A05609C71879D23"
+    },
+    {
+      "path": "payload/E.ps1",
+      "source": "work/GWQ2/pkg/payload/E.ps1",
+      "sha256": "ACBC549FF33620D59990FA5C86F716FAE152A694450CBBC08D798B3F9FC76073"
+    },
+    {
+      "path": "payload/M.json",
+      "source": "work/GWQ2/pkg/payload/M.json",
+      "sha256": "B70CABA7663E7272FBC8DA79D00753D01DB234669C5B18BB12A3F20BA8EC1723"
+    }
+  ],
+  "entryPoint": "payload/E.ps1",
+  "changes": [
+    {
+      "source": "payload/E.ps1",
+      "destination": "C:\\ProgramData\\ArgosGatewayMaintenanceRO\\managed\\G2.ps1",
+      "approvedPredecessorSha256": [
+        "ACBC549FF33620D59990FA5C86F716FAE152A694450CBBC08D798B3F9FC76073"
+      ],
+      "installedSha256": "ACBC549FF33620D59990FA5C86F716FAE152A694450CBBC08D798B3F9FC76073",
+      "allowCreate": true
+    },
+    {
+      "source": "payload/M.json",
+      "destination": "C:\\ProgramData\\ArgosGatewayMaintenanceRO\\managed\\GWQ2.marker.json",
+      "approvedPredecessorSha256": [
+        "B70CABA7663E7272FBC8DA79D00753D01DB234669C5B18BB12A3F20BA8EC1723"
+      ],
+      "installedSha256": "B70CABA7663E7272FBC8DA79D00753D01DB234669C5B18BB12A3F20BA8EC1723",
+      "allowCreate": true
+    }
+  ],
+  "allowedTaskActions": [
+    "RESTART:ArgosProjectPortal.Gateway.ShareBridge.RO"
+  ],
+  "rehearsalRequiredState": "PASS_GWQ2_BRIDGE_PATCH_AND_EXACT_RESUME",
+  "sourceFinalPackageGate": "work/GWQ2/final/REQ_20260819T000355413Z_0A168CBF22BF.ready.zip.gate.json",
+  "sourceFinalPackageGateSha256": "DA6F0AEBF29DBE748AF0AD5EEF43DEF40DE3EB76C82C4FDF540C779045821336",
+  "currentR21RequestId": "REQ_20260831T135113536Z_EE76925FE71B",
+  "currentR21RequestZipSha256": "23CD3BAA020912F3EC7B88D2705970A895674F09558DD8644DA173D95949515F",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

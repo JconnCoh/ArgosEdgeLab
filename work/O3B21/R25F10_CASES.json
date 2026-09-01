@@ -1,0 +1,64 @@
+{
+  "schema": "argos_o3b21_r25f10_frozen_controls_v1",
+  "revision": "O3B21_R25F10_SHALLOW_DEPTH_RATIO_FROZEN_TEN_REGRESSION_20260831",
+  "state": "FROZEN_FOR_ONE_REVIEW_ONLY_REGRESSION_EVIDENCE_RUN",
+  "outputRoot": "D:/R25F10",
+  "maximumDimension": 2400,
+  "maximumReturnedRasterBytes": 50331648,
+  "caseSelection": {
+    "allCaseCount": 32,
+    "selectedOrdinals": [0,1,2,3,4,5,6,7,8,9],
+    "selectedCount": 10,
+    "r20CurrentHoldCount": 0,
+    "newControlCount": 0,
+    "frozenControlOrdinals": [0,1,2,3,4,5,6,7,8,9],
+    "expectedUniqueOrdinals": [0,1,2,3,4],
+    "expectedAmbiguousOrdinal": 5,
+    "expectedZeroOrdinals": [6,7,8,9],
+    "excludedNonRegressionOrdinals": "10-31",
+    "excludedUnresolvedNewControlOrdinals": "32-33"
+  },
+  "frozenControls": {
+    "relativePath": "R18_REGRESSION_CASES.json",
+    "sha256": "7F2BF805CC35893B307557680251A94A49F28305E20E3735931F064E82650DF4",
+    "count": 10
+  },
+  "r20Corpus": {
+    "root": "D:/KLARFExport/_ArgosReview/C15RUN4",
+    "pairCount": 953,
+    "holdCount": 22,
+    "summarySha256": "4852D80B4D1A45063154DE74B538E9279EAAB8B18B71396343F136B84FFB8246",
+    "resultsCsvSha256": "B74B86ED07D9632B61A5B4BB02B61597AC364E132645648202EA92F3138D5DE5",
+    "failuresSha256": "01025DACD167930D9C88D1AA364D4CE3AAED27D4819CEC41FCA0864FEF127B71"
+  },
+  "runtimeBoundary": {
+    "portalOwnedChildTimeoutSeconds": 900,
+    "maximumPerCaseSeconds": 120,
+    "executionMode": "SEQUENTIAL_EXACT_10_FROZEN_CONTROLS"
+  },
+  "payloadExecution": {
+    "detectorRelativePath": "Detect-BacksideNotchOpenCvR25.py",
+    "detectorSha256": "6A7977E4DAFE692FCE6E7DE4740C94EE66D5F79ECD62FDF190CB5EE8E4862274",
+    "configRelativePath": "BACKSIDE_NOTCH_CONFIG_R13.json",
+    "configSha256": "27010B75F2E5CCB601E710A63D73F5483072F6EB797F9D72A0632F993E6E4AD3",
+    "installedProviderRequired": false
+  },
+  "targetGate": {
+    "exactUniqueOrdinals": [0,1,2,3,4],
+    "exactAmbiguousOrdinalAndPairCount": {"ordinal":5,"pairedCandidateCount":2},
+    "exactZeroOrdinals": [6,7,8,9],
+    "ordinal8RequiredDiagnosticState": "APPLIED_NONSHALLOW_BF_RESPONSE_REMOVED",
+    "r25DepthRatioGateMayNotRemoveStrictPairs": true,
+    "exactExpectedOutcomesRequired": true
+  },
+  "authority": {
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "sourceMutationAllowed": false,
+    "existingTaskOrProcessActionAllowed": false,
+    "providerActivationAllowed": false,
+    "automaticRetryAllowed": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-31T15:19:00Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "O3B21_R21_GATEWAY_SHAREBRIDGE_NOT_CONSUMING_20260831",
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "route": "KERBEROS_JEA_ARGOS_GATEWAY_MAINTENANCE_STATUS",
+  "computerName": "TXSH-DPMZ0295HR",
+  "caller": "AMER\\joshua.conn",
+  "endpointRoot": "C:\\ProgramData\\ArgosGatewayMaintenanceRO",
+  "endpointConfigSha256": "7162F48D17F7146C780E292913434C34D49CBFBF3AE1D1E05122CD40FBCA4488",
+  "tasks": [
+    {
+      "name": "ArgosProjectPortal.Gateway.ShareBridge.RO",
+      "state": "Ready"
+    },
+    {
+      "name": "ArgosProjectPortal.Gateway.ResponseReceiver.RO",
+      "state": "Running"
+    }
+  ],
+  "installedHashes": [
+    {
+      "path": "C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-GatewayPortalShareBridge.ps1",
+      "exists": true,
+      "bytes": 18549,
+      "sha256": "EBEBA79A71402B55B5AAFBCD1A7A202BADA0E95ED6D55DBD7A05609C71879D23"
+    },
+    {
+      "path": "C:\\ProgramData\\ArgosProjectPortalRO\\config\\gateway_share.json",
+      "exists": true,
+      "bytes": 2810,
+      "sha256": "05E0DBD9234F74A2754E6EF3E5BE5C67C6529C2FC9034F980C94029FC396683B"
+    },
+    {
+      "path": "C:\\ProgramData\\ArgosProjectPortalRO\\config\\GATEWAY_RESPONSE_RECEIVER.json",
+      "exists": true,
+      "bytes": 958,
+      "sha256": "C2317E9C40FB51FDD24F3D765E60BFE2A6F9652C64AE5719FB5F2AFC379FFE5C"
+    }
+  ],
+  "decision": "C",
+  "supportedRemedy": "RESTART_ONLY_GATEWAY_SHARE_BRIDGE_USING_FRESH_SIGNED_DIRECT_REQUEST_AND_UNCHANGED_GWQ2_ENTRYPOINT",
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-31T20:31:30Z",
+  "state": "PASS_R21M3_SIGNED_POST_FAILURE_CONTROL_SELECTION_OBSERVATION",
+  "incidentId": "O3B21_R21M2_CONTROL_SELECTION_HOLDS",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": true,
+  "requestId": "REQ_20260831T202128019Z_A2072C9C748C",
+  "responseId": "R_E2D7A2043108_20260831202354727_8e612caa",
+  "responseZipSha256": "EB5374B4DA388785D8AE8E92E1D57F789F986D40DA493766ED62C2448CA2E7CE",
+  "observedFields": {
+    "r20HoldCasesAvailable": 22,
+    "remainingR20HoldOrdinals": "19-31",
+    "remainingR20HoldCount": 13,
+    "soleHolderControlState": "HOLD_NO_EXACT_R20_SOLE_PAIRED_HOLDER_CONTROL_FOUND",
+    "notchAdjacentControlState": "HOLD_NO_EXACT_R20_NOTCH_ADJACENT_PAIRED_HOLDER_CONTROL_FOUND",
+    "failureStage": "ENTRYPOINT_CONTROL_SELECTION_BEFORE_OUTPUT_ROOT_CREATION_OR_SOURCE_HASHING",
+    "detectorChildStarted": false,
+    "missingCaseExecutionCount": 0,
+    "completedCaseRerunCount": 0
+  },
+  "decision": "Run only the 13 remaining frozen R20 holds; retain the two new controls as separate image-first discovery holds.",
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

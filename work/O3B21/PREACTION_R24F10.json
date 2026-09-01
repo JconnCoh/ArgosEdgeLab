@@ -1,0 +1,30 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v2",
+  "revision":"O3B21_R24F10_FROZEN_TEN_REGRESSION_20260831",
+  "createdUtc":"2026-08-31T23:06:00Z",
+  "state":"PASS_PREACTION_CONTRACT",
+  "actionType":"PUBLISH_EXACTLY_ONE_REVIEW_ONLY_FROZEN_TEN_R24_REGRESSION_PACKAGE",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies":[
+    {"path":"work/O3B21/R24T1_SIGNED_TERMINAL_PASS_GATE.json","sha256":"F75086426007D3827BE6354DEB2340D5CB4442A66BE37C83A9AE2B645C4AB2AF"},
+    {"path":"work/O3B21/Build-R24F10Package.ps1","sha256":"05906F336B3D113A05BE02FB39D6232D2337FE7BFFFEBFBF59144351FED99EDB"},
+    {"path":"work/O3B21/R24F10_CASES.json","sha256":"BB4A84FC9A879B2920B918041076DE63B2B95596C9E888B37DC51206E6D9054F"},
+    {"path":"work/O3B21/R24F10_CLONE_LITERAL_GATE.json","sha256":"6380AC6EC1E1CF9D84121EDEA6DDAD3E494C3EF8A2459EDA2573E0404B55F80A"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/Detect-BacksideNotchOpenCvR24.py","sha256":"BDEAA9DBA4AA5FB1DEDF5FBBFA7C8F02C1860522E713EA1BE0BDB36539401477"},
+    {"path":"work/OPENCV_BACKSIDE_NOTCH_O3B10/BACKSIDE_NOTCH_CONFIG_R12.json","sha256":"20C016D2B50BC491C7ED09B568283FEE65A8146FD63D9CF4CD0A0D636E354A93"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"6F1E174805E918E6AC86F13CBC41E871479F44235DE10F9B6DB111EF307E163B"}
+  ],
+  "controls":{
+    "valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,
+    "installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,
+    "windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,
+    "zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,
+    "declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,
+    "queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true
+  },
+  "collectionCaseEvidence":{"path":"work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json","sha256":"17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":["C:/R23T1PK/signed/REQ_20260831T222430829Z_FF17919A87E9.ready"]},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-31T20:47:30Z",
+  "state": "PASS_R21M4_SIGNED_POST_FAILURE_IMPORT_CLOSURE_OBSERVATION",
+  "incidentId": "O3B21_R21M3_PAYLOAD_IMPORT_CLOSURE_ABSENT",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": true,
+  "requestId": "REQ_20260831T204346732Z_368B3ECD551E",
+  "responseId": "R_0D6D8CD36D8E_20260831204649961_ffddc54b",
+  "responseZipSha256": "50C657310EEB903234932AF97EC2697549A7C4812462602F5795AD9CC624B8C4",
+  "observedFields": {
+    "r21SiblingImport": "Detect-BacksideNotchOpenCvR20.py",
+    "r20SiblingImport": "Detect-BacksideNotchOpenCvR18.py",
+    "r18SiblingImport": "Detect-BacksideNotchOpenCvR17.py",
+    "r17SiblingImport": "Detect-BacksideNotchOpenCvR15.py",
+    "failureStage": "FIRST_SELECTED_CASE_DETECTOR_IMPORT_BEFORE_IMAGE_DECODE",
+    "detectorChildStarted": true,
+    "missingCaseExecutionCount": 0,
+    "completedCaseRerunCount": 0
+  },
+  "decision": "Carry the exact hash-pinned frozen R20-R18-R17-R15 import closure beside unchanged R21 in a fresh request and output root.",
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

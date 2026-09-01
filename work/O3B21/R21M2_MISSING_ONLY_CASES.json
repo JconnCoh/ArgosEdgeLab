@@ -1,0 +1,63 @@
+{
+  "schema": "argos_o3b21_r21m2_missing_only_cases_v1",
+  "revision": "O3B21_R21M2_DIRECT_PAYLOAD_MISSING_ONLY_20260831",
+  "state": "FROZEN_FOR_ONE_REVIEW_ONLY_MISSING_ONLY_EVIDENCE_RUN",
+  "outputRoot": "D:/R21M2",
+  "maximumDimension": 2400,
+  "maximumReturnedRasterBytes": 83886080,
+  "caseSelection": {
+    "allCaseCount": 34,
+    "firstOrdinalInclusive": 19,
+    "lastOrdinalInclusive": 33,
+    "selectedCount": 15,
+    "excludedCompletedOrdinals": "0-18",
+    "r20CurrentHoldCount": 13,
+    "newControlCount": 2
+  },
+  "frozenControls": {
+    "relativePath": "R18_REGRESSION_CASES.json",
+    "sha256": "7F2BF805CC35893B307557680251A94A49F28305E20E3735931F064E82650DF4",
+    "count": 10
+  },
+  "r20Corpus": {
+    "root": "D:/KLARFExport/_ArgosReview/C15RUN4",
+    "pairCount": 953,
+    "holdCount": 22,
+    "summarySha256": "4852D80B4D1A45063154DE74B538E9279EAAB8B18B71396343F136B84FFB8246",
+    "resultsCsvSha256": "B74B86ED07D9632B61A5B4BB02B61597AC364E132645648202EA92F3138D5DE5",
+    "failuresSha256": "01025DACD167930D9C88D1AA364D4CE3AAED27D4819CEC41FCA0864FEF127B71"
+  },
+  "newControlSelection": {
+    "maximumResultRowsScanned": 953,
+    "soleHolder": "LEXICALLY_FIRST_R20_UNIQUE_PAIR_WITH_BOTH_CHANNELS_EXTERIOR_FIXTURE_CONTACT",
+    "notchAdjacentHolder": "LEXICALLY_FIRST_R20_UNIQUE_NONFIXTURE_NOTCH_WITH_A_DISTINCT_PAIRED_FIXTURE_CANDIDATE_TWO_TO_TWELVE_DEGREES_AWAY",
+    "minimumAdjacentDistanceDegrees": 2.0,
+    "maximumAdjacentDistanceDegrees": 12.0,
+    "expectedDistinctControlCount": 2,
+    "assertionMode": "DEVELOPMENT_OBSERVATION"
+  },
+  "runtimeBoundary": {
+    "portalOwnedChildTimeoutSeconds": 900,
+    "maximumPerCaseSeconds": 120,
+    "executionMode": "SEQUENTIAL_EXACT_15_CASES",
+    "basis": "The withdrawn predecessor completed 19 exact cases before the 900-second endpoint timeout; this successor contains only 15 previously absent cases."
+  },
+  "payloadExecution": {
+    "detectorRelativePath": "Detect-BacksideNotchOpenCvR21.py",
+    "detectorSha256": "29B41CCE63BC91F99C4FFF24F2DFEECC9BDCDA8ED5314A7671EB40EEBA582A8E",
+    "configRelativePath": "BACKSIDE_NOTCH_CONFIG_R9.json",
+    "configSha256": "62591703B789D3981819E9AEE36C39DD187B2BC9A02BB335367206C78A064D73",
+    "installedR21ProviderRequired": false,
+    "installedR21ConfigRequired": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "sourceMutationAllowed": false,
+    "existingTaskOrProcessActionAllowed": false,
+    "providerActivationAllowed": false,
+    "automaticRetryAllowed": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema":"argos_o3b21_r25_r13_negative_control_design_gate_v1","createdUtc":"2026-08-31T23:30:00Z","state":"PASS_R25_R13_EIGHT_CASE_TARGET_DESIGN_READY",
+  "detectorPath":"work/OPENCV_BACKSIDE_NOTCH_O3B10/Detect-BacksideNotchOpenCvR25.py","detectorSha256":"6A7977E4DAFE692FCE6E7DE4740C94EE66D5F79ECD62FDF190CB5EE8E4862274",
+  "configPath":"work/OPENCV_BACKSIDE_NOTCH_O3B10/BACKSIDE_NOTCH_CONFIG_R13.json","configSha256":"27010B75F2E5CCB601E710A63D73F5483072F6EB797F9D72A0632F993E6E4AD3",
+  "frozenR24Sha256":"BDEAA9DBA4AA5FB1DEDF5FBBFA7C8F02C1860522E713EA1BE0BDB36539401477","staticCompilePassed":true,
+  "rule":{"scope":"R23 shallow and local-prominence confirmation modes only","maximumBfToDfDepthRatio":0.50,"strictModesExempt":true,"r24SingleSampleModeExempt":true},
+  "evidence":[
+    {"ordinal":24,"mode":"SHALLOW","bfDepth":10.991699,"dfDepth":80.008789,"ratio":0.137382,"expected":"RETAIN"},
+    {"ordinal":25,"mode":"SHALLOW","bfDepth":9.971191,"dfDepth":80.989258,"ratio":0.123116,"expected":"RETAIN"},
+    {"ordinal":27,"mode":"SHALLOW","bfDepth":9.005371,"dfDepth":79.970703,"ratio":0.112608,"expected":"RETAIN"},
+    {"ordinal":31,"mode":"SHALLOW","bfDepth":10.020996,"dfDepth":79.008301,"ratio":0.126833,"expected":"RETAIN"},
+    {"ordinal":8,"mode":"SHALLOW","bfDepth":74.987305,"dfDepth":80.990234,"ratio":0.925880,"expected":"REMOVE_NEGATIVE_CONTROL"},
+    {"ordinal":26,"mode":"R24_SINGLE_SAMPLE","bfDepth":74.0,"dfDepth":79.004883,"ratio":0.936650,"expected":"RETAIN_EXEMPT"},
+    {"ordinal":30,"mode":"R24_SINGLE_SAMPLE","bfDepth":75.0,"dfDepth":79.022949,"ratio":0.949092,"expected":"RETAIN_EXEMPT"},
+    {"ordinal":29,"mode":"STRICT","expected":"RETAIN_EXEMPT"}
+  ],
+  "lotProductSlotOrAngleLiteralAdded":false,"nextGate":"Exact seven prior targets plus frozen ordinal-8 negative control; no other frozen controls or corpus.",
+  "reviewOnly":true,"trainingEligible":false,"xmlEligible":false,"productionEligible":false
+}

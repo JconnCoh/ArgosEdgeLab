@@ -1,0 +1,42 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-31T15:28:00Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "O3B21_R21_GATEWAY_SHAREBRIDGE_NOT_CONSUMING_20260831",
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "signedFailureRequestId": "REQ_20260831T152321980Z_0F7B21A5E991",
+  "signedFailureResponseId": "R_00A948BB9DD1_20260831152743893_18e0e9af",
+  "signedFailureResponseManifestSha256": "55B1C2F7998C7C841774D53CADC251EDAFDD28C1A20B813F24A4B10D2D1CDE96",
+  "signedFailureCause": "QUALIFIED_GWQ2_ENTRYPOINT_RETAINED_ARCHIVED_20260818_OUTBOX_PRECONDITION",
+  "failureOccurredBeforeTaskAction": true,
+  "computerName": "TXSH-DPMZ0295HR",
+  "endpointConfigSha256": "7162F48D17F7146C780E292913434C34D49CBFBF3AE1D1E05122CD40FBCA4488",
+  "expectedObserved": [
+    {
+      "field": "ArgosProjectPortal.Gateway.ShareBridge.RO.state",
+      "expected": "Running",
+      "observed": "Ready"
+    },
+    {
+      "field": "ArgosProjectPortal.Gateway.ResponseReceiver.RO.state",
+      "expected": "Running",
+      "observed": "Running"
+    },
+    {
+      "field": "Invoke-GatewayPortalShareBridge.ps1.sha256",
+      "expected": "EBEBA79A71402B55B5AAFBCD1A7A202BADA0E95ED6D55DBD7A05609C71879D23",
+      "observed": "EBEBA79A71402B55B5AAFBCD1A7A202BADA0E95ED6D55DBD7A05609C71879D23"
+    },
+    {
+      "field": "gateway_share.json.sha256",
+      "expected": "05E0DBD9234F74A2754E6EF3E5BE5C67C6529C2FC9034F980C94029FC396683B",
+      "observed": "05E0DBD9234F74A2754E6EF3E5BE5C67C6529C2FC9034F980C94029FC396683B"
+    }
+  ],
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

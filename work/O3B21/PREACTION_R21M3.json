@@ -1,0 +1,53 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3B21_R21M3_DIRECT_PAYLOAD_THIRTEEN_HOLDS_20260831",
+  "createdUtc": "2026-08-31T20:42:15Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "BUILD_SIGN_PUBLISH_ONE_REVIEW_ONLY_DIRECT_PAYLOAD_THIRTEEN_HOLD_DETECTOR_PACKAGE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    { "path": "work/O3B21/RECOVERY_INTENT_R21M3.json", "sha256": "2939832A07A977E5022FE8A01B6FB822F8BB99D90D83BFED846742A9930A1C25" },
+    { "path": "work/O3B21/R21M3_POST_FAILURE_OBSERVATION.json", "sha256": "45FBB830A4721510E455E6E46F01F0EFAEBD9E360DB3E77852B4DAEB88274773" },
+    { "path": "work/O3B21/R21M3_WORKFLOW_REVIEW_CLEARANCE.json", "sha256": "32AC40FECE8A215BFEC61C09A48F42553193B9FDFF9A5607987E9F4ADAB20D1E" },
+    { "path": "work/O3B21/R21M2_SIGNED_TERMINAL_FAILURE_GATE.json", "sha256": "4FA3EDFA07108A23912A9BD1373540439F73F2B459611EB023B7F139C1871712" },
+    { "path": "work/O3B21/Build-R21M3Package.ps1", "sha256": "506BC2D00E3C981290AED21779295CACECEE6109D7B28FC12CED2D52A76A2A97" },
+    { "path": "work/O3B21/R21M3_MISSING_ONLY_CASES.json", "sha256": "B6D936439156C9B3113FC7914F53A66A28ABE8A7874801BC656730A127E5F5FB" },
+    { "path": "work/O3B21/R21M3_CLONE_LITERAL_GATE.json", "sha256": "7338A26ACC5D131ED2A20425950A26080DDCDBD417D8E670597E3BBAA1C56DE7" },
+    { "path": "work/OPENCV_BACKSIDE_NOTCH_O3B10/Detect-BacksideNotchOpenCvR21.py", "sha256": "29B41CCE63BC91F99C4FFF24F2DFEECC9BDCDA8ED5314A7671EB40EEBA582A8E" },
+    { "path": "work/OPENCV_BACKSIDE_NOTCH_O3B10/BACKSIDE_NOTCH_CONFIG_R9.json", "sha256": "62591703B789D3981819E9AEE36C39DD187B2BC9A02BB335367206C78A064D73" },
+    { "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "43311D6C4E21B733707868A5E96E0B3A515A2C64C5A41E723A70BBDDC404C050" }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

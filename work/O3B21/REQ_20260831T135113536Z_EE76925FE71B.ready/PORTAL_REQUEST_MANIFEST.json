@@ -1,0 +1,72 @@
+{
+    "schema":  "argos_project_portal_request_manifest_v1",
+    "requestId":  "REQ_20260831T135113536Z_EE76925FE71B",
+    "createdUtc":  "2026-08-31T13:51:13.5365950+00:00",
+    "expiresUtc":  "2026-09-01T13:51:13.5365950+00:00",
+    "targetRole":  "JBOD",
+    "jobClass":  "MAINTENANCE_PATCH",
+    "handler":  "",
+    "maxResultBytes":  134217728,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false,
+    "credentialsIncluded":  false,
+    "signerThumbprint":  "C82181052919C475CF888F49427C1B55AE65DC12",
+    "signatureAlgorithm":  "RSA-SHA256-PKCS1",
+    "files":  [
+                  {
+                      "path":  "payload/BACKSIDE_NOTCH_CONFIG_R9.json",
+                      "bytes":  4280,
+                      "sha256":  "62591703B789D3981819E9AEE36C39DD187B2BC9A02BB335367206C78A064D73"
+                  },
+                  {
+                      "path":  "payload/Detect-BacksideNotchOpenCvR21.py",
+                      "bytes":  18186,
+                      "sha256":  "29B41CCE63BC91F99C4FFF24F2DFEECC9BDCDA8ED5314A7671EB40EEBA582A8E"
+                  },
+                  {
+                      "path":  "payload/Invoke-O3B10R21TargetedEvidence.ps1",
+                      "bytes":  16204,
+                      "sha256":  "77B7F0FCA4FF276917B935BC8BECBD71D8BD7FB870AF1BDC27CB126E752020BA"
+                  },
+                  {
+                      "path":  "payload/R18_REGRESSION_CASES.json",
+                      "bytes":  5926,
+                      "sha256":  "7F2BF805CC35893B307557680251A94A49F28305E20E3735931F064E82650DF4"
+                  },
+                  {
+                      "path":  "payload/R21_TARGETED_CASES.json",
+                      "bytes":  1580,
+                      "sha256":  "7EBEDF8490CABC2427078418637CDEEF0EDD7DA96F2ACEE4AEDC113B60A16D63"
+                  }
+              ],
+    "entryPoint":  "payload/Invoke-O3B10R21TargetedEvidence.ps1",
+    "changes":  [
+                    {
+                        "source":  "payload/Detect-BacksideNotchOpenCvR21.py",
+                        "destination":  "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_BacksideNotchDevelopment_O3B10R21.py",
+                        "approvedPredecessorSha256":  [
+                                                          "29B41CCE63BC91F99C4FFF24F2DFEECC9BDCDA8ED5314A7671EB40EEBA582A8E"
+                                                      ],
+                        "installedSha256":  "29B41CCE63BC91F99C4FFF24F2DFEECC9BDCDA8ED5314A7671EB40EEBA582A8E",
+                        "allowCreate":  true
+                    },
+                    {
+                        "source":  "payload/BACKSIDE_NOTCH_CONFIG_R9.json",
+                        "destination":  "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/BACKSIDE_NOTCH_CONFIG_R9.json",
+                        "approvedPredecessorSha256":  [
+                                                          "62591703B789D3981819E9AEE36C39DD187B2BC9A02BB335367206C78A064D73"
+                                                      ],
+                        "installedSha256":  "62591703B789D3981819E9AEE36C39DD187B2BC9A02BB335367206C78A064D73",
+                        "allowCreate":  true
+                    }
+                ],
+    "allowedTaskActions":  [
+
+                           ],
+    "rehearsal":  {
+                      "requiredState":  "PASS_O3B10_R21_TARGETED_EVIDENCE_EXECUTED"
+                  }
+}

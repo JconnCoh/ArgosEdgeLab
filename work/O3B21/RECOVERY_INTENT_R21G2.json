@@ -1,0 +1,42 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-31T15:31:00Z",
+  "incidentId": "O3B21_R21_GATEWAY_SHAREBRIDGE_NOT_CONSUMING_20260831",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json", "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [{"path": "work/O3B21/GATEWAY_POSTFAILURE_STATUS_20260831T152800Z.json", "sha256": "B8BF6DA244383810065F55D96FE988E50DC2226068010D886606D0B946889B13", "state": "FAILED"}],
+    "postFailureObservation": {"path": "work/O3B21/GATEWAY_POSTFAILURE_STATUS_20260831T152800Z.json", "sha256": "B8BF6DA244383810065F55D96FE988E50DC2226068010D886606D0B946889B13"},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "KERBEROS_JEA_DIRECT_MAINTENANCE",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": false,
+    "taskActions": ["RESTART:ArgosProjectPortal.Gateway.ShareBridge.RO"],
+    "processActions": [],
+    "queueMutation": true,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true
+  },
+  "observation": {"exactSources": [], "requestedFields": [], "decisionOptions": ["A", "B", "C", "D"], "mutationDecisionDeferred": false},
+  "mutation": {
+    "supportedRemedy": "C",
+    "supportingObservation": {"path": "work/O3B21/GATEWAY_POSTFAILURE_STATUS_20260831T152800Z.json", "sha256": "B8BF6DA244383810065F55D96FE988E50DC2226068010D886606D0B946889B13"},
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "operatorAuthorization": "User directed Codex to figure out the R21 issue and continue using the known working direct gateway/JBOD method.",
+    "boundedChange": "Install one current-request-specific review-only entrypoint and marker, verify exact pending request and qualified bridge/config hashes, and restart only ArgosProjectPortal.Gateway.ShareBridge.RO."
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

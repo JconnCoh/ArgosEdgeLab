@@ -1,0 +1,30 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 134217728,
+  "entryPoint": "payload/Invoke-O3B10R21TargetedEvidence.ps1",
+  "changes": [
+    {
+      "source": "payload/Detect-BacksideNotchOpenCvR21.py",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_BacksideNotchDevelopment_O3B10R21.py",
+      "approvedPredecessorSha256": [
+        "29B41CCE63BC91F99C4FFF24F2DFEECC9BDCDA8ED5314A7671EB40EEBA582A8E"
+      ],
+      "installedSha256": "29B41CCE63BC91F99C4FFF24F2DFEECC9BDCDA8ED5314A7671EB40EEBA582A8E",
+      "allowCreate": true
+    },
+    {
+      "source": "payload/BACKSIDE_NOTCH_CONFIG_R9.json",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/BACKSIDE_NOTCH_CONFIG_R9.json",
+      "approvedPredecessorSha256": [
+        "62591703B789D3981819E9AEE36C39DD187B2BC9A02BB335367206C78A064D73"
+      ],
+      "installedSha256": "62591703B789D3981819E9AEE36C39DD187B2BC9A02BB335367206C78A064D73",
+      "allowCreate": true
+    }
+  ],
+  "allowedTaskActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_O3B10_R21_TARGETED_EVIDENCE_EXECUTED"
+  }
+}

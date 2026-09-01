@@ -1,0 +1,21 @@
+{
+  "schema":"argos_o3b21_r25f10_signed_terminal_pass_gate_v1","createdUtc":"2026-09-01T00:02:09Z","state":"PASS_R25F10_EXACT_FROZEN_TEN_REGRESSION","requestId":"REQ_20260831T235227344Z_187AC38B9B5E","responseId":"R_F52F798BC7CA_20260901000209404_811e5d27",
+  "responseZipSha256":"90845E046E7999A551F6E53500009874338F0F4D0F045513EB24CBE9E7D79A8B","responseZipBytes":6236164,"responseManifestSha256":"A93277E80C4CAA65BF65DF88318DCFE4475B0E39F2E53DE40DB5B36C86E1B669","responseSignatureSha256":"1F2D147DA3489653CBB41DEB29D9799F047E69723A4DE6F128A84C8B6DB17551",
+  "signedResponseVerification":"PASS_SIGNED_PORTAL_RESPONSE","endpointState":"PASS_MAINTENANCE_PATCH","entryExitCode":0,"entryStderrBytes":0,"detectorState":"PASS_O3B21_R25F10_MISSING_ONLY_EVIDENCE_EXECUTED","detectorGateState":"PASS_O3B21_R25F10_EXACT_CARDINALITY_GATE",
+  "caseCount":10,"elapsedSeconds":534.888,"assetCount":40,"assetBytes":6973645,"assetHashVerificationPassed":true,
+  "results":[
+    {"ordinal":0,"pairedCandidateCount":1,"meanAngleDegrees":89.987811,"confirmationMode":"STRICT_BOTH_CHANNELS","passed":true},
+    {"ordinal":1,"pairedCandidateCount":1,"meanAngleDegrees":89.747242,"confirmationMode":"STRICT_BOTH_CHANNELS","passed":true},
+    {"ordinal":2,"pairedCandidateCount":1,"meanAngleDegrees":179.695732,"confirmationMode":"STRICT_BOTH_CHANNELS","passed":true},
+    {"ordinal":3,"pairedCandidateCount":1,"meanAngleDegrees":90.163445,"confirmationMode":"STRICT_BOTH_CHANNELS","passed":true},
+    {"ordinal":4,"pairedCandidateCount":1,"meanAngleDegrees":180.202012,"confirmationMode":"STRICT_BF_CONFIRMED_BY_DF","passed":true},
+    {"ordinal":5,"pairedCandidateCount":2,"meanAngleDegrees":[223.912685,179.706226],"confirmationMode":["STRICT_BOTH_CHANNELS","STRICT_BOTH_CHANNELS"],"passed":true,"held":true},
+    {"ordinal":6,"pairedCandidateCount":0,"passed":true,"held":true},
+    {"ordinal":7,"pairedCandidateCount":0,"passed":true,"held":true},
+    {"ordinal":8,"pairedCandidateCount":0,"negativeControlState":"APPLIED_NONSHALLOW_BF_RESPONSE_REMOVED","inputPairCount":1,"retainedPairCount":0,"passed":true,"held":true},
+    {"ordinal":9,"pairedCandidateCount":0,"passed":true}
+  ],
+  "regressionCount":0,"all22HoldGateAuthorized":true,"newControlGateAuthorized":true,"fullCorpusAuthorized":false,
+  "sourceMutationPerformed":false,"sourceDeletionPerformed":false,"existingTaskOrProcessActionPerformed":false,"providerActivationPerformed":false,
+  "reviewOnly":true,"trainingEligible":false,"xmlEligible":false,"productionEligible":false
+}

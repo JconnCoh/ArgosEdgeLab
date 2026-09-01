@@ -1,0 +1,56 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-08-31T18:02:00Z",
+  "incidentId": "OCV03_O3B21_R21_EXISTING_OUTPUT_CURRENT_PREMISE",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path":"work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json","sha256":"F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": true,
+    "failureEvidence": [],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"work/O3B21/R21P1_WORKFLOW_REVIEW_CLEARANCE.json","sha256":"6D5CEC80BD87F03EBEF67F55F8F6E082C338065E2C18B758B62427E015C0BB81"}
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH_IDENTICAL_CONFIG_SELF_SWAP_FOR_OBSERVATION",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": true,
+    "ledgerMutation": true,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {"path":"C:/ProgramData/ArgosProjectPortalRO/bin/Invoke-ArgosProjectPortalEndpointWorker.ps1","sha256":"244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6"},
+    "installedConfigEvidence": {"path":"work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json","sha256":"465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"},
+    "capabilityEvidence": {"path":"work/O3B21/R21_OUTPUT_RECOVERY_CAPABILITY_DESIGN.json","sha256":"5DAE086932683AA7156A3862DF21F96FA87C2D304542AAF5D722D91272DA3ACF"},
+    "qualifiedEndpointGate": {"path":"work/O3B21/R21_SIGNED_TIMEOUT_RESPONSE_VALIDATION_GATE.json","sha256":"0DF701F89931A138975D1B67DEFD33587AA72D03397FB93C0629BD09B6DE4680"},
+    "qualifiedAdminGate": {"path":"","sha256":""}
+  },
+  "observation": {
+    "exactSources": [
+      {"sourcePath":"C:/ProgramData/ArgosProjectPortalRO/config/endpoint_jbod.json","sourceSchema":"argos_project_portal_endpoint_config_v1","selector":"EXACT_PATH_BYTES_HASH_AND_BASE64","uniquenessKey":"role=JBOD","maximumRows":1},
+      {"sourcePath":"C:/ProgramData/ArgosProjectPortalRO/bin/Invoke-ArgosProjectPortalEndpointWorker.ps1","sourceSchema":"POWERSHELL_SOURCE","selector":"EXACT_PATH_HASH","uniquenessKey":"sha256","maximumRows":1},
+      {"sourcePath":"ScheduledTask:ArgosProjectPortal.JBOD.Endpoint.RO","sourceSchema":"SCHEDULED_TASK","selector":"EXACT_NAME_DEFINITION_PRINCIPAL_STATE_ACTION","uniquenessKey":"TaskName","maximumRows":1},
+      {"sourcePath":"Win32_Process","sourceSchema":"CIM_PROCESS","selector":"GUIR9C3_EXACT_PROCESSOR_SELECTOR","uniquenessKey":"ProcessId","maximumRows":1}
+    ],
+    "requestedCapabilities": ["EXACT_CURRENT_MUTATION_PREMISE"],
+    "requestedFields": ["endpointConfigBytes","endpointConfigSha256","endpointWorkerSha256","endpointTaskIdentityPrincipalState","processorPidSessionCreationUtc"],
+    "decisionOptions": ["PREMISE_PASS_BUILD_CONFIG_CAPABILITY","HOLD_CONFIG_CHANGED","HOLD_WORKER_CHANGED","HOLD_TASK_CHANGED","HOLD_PROCESSOR_MISSING_OR_AMBIGUOUS"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {"path":"work/O3B21/R21P1_SUPPORTING_OBSERVATION.json","sha256":"461677D78545666ED85D7C7830B57918C22E92D12955F0EB69C47E80CF750092"},
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
