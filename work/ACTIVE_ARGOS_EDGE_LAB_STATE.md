@@ -9232,3 +9232,21 @@ backside prerequisites pass.
 
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_TARGETED_BACKSIDE_EVIDENCE_CHECKPOINT_20260831.md`.
+
+# 2026-08-31 — OCV-03 O3B21 R25 chipout reconciled / route layout blocker (`PENDING_GATE`)
+
+The earlier additional-chipout record is reconciled to the already executed
+exact `Lot_62627-193 / 62627-193_20260820124250 / Slot01` R25 control. O3B5
+froze the clean pair, O3B8 signed its exact BF/DF hashes, and R25 ordinal 0
+passed without selecting the chipout. The marked copy remains excluded and no
+second physical acquisition is file-backed.
+
+One unchanged hostname-gated direct-control probe stopped before remote input:
+RustDesk was `160x28`, not the verified full-screen geometry. It was not
+retried and no window, route, source, task, process, provider, wafer, or hold
+state changed. Notch-adjacent source evidence and ordinal 23 remain held; the
+fresh 953 corpus is unauthorized.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_CHIPOUT_RECONCILED_ROUTE_LAYOUT_BLOCKER_CHECKPOINT_20260831.md`,
+SHA-256 `C7B2B2A1132D96377D6EE29B8951618AC18BB3C6387227FD2A404AEF9C25408E`.

@@ -1069,3 +1069,11 @@ task from changing which revision, UI, evidence, or next action is active.
 - Result: frozen ten and all 22 held-case executions passed their exact signed evidence gates; sole-holder, known-chipout, Coherent, BowComp, normal, and rough damaged-negative controls are preserved.
 - Holds: notch-adjacent exact selector zero-set, unresolved additional chipout source, and O23 BF-unqualified/two-DF-candidate ambiguity.
 - Exact next action: resolve those targeted backside prerequisites before one fresh 953-pair R25 corpus; only a complete backside gate permits the full applicable frontside phase.
+
+## 2026-08-31 — OCV-03 O3B21 R25 chipout reconciled / route layout blocker
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_CHIPOUT_RECONCILED_ROUTE_LAYOUT_BLOCKER_CHECKPOINT_20260831.md`
+- SHA-256: `C7B2B2A1132D96377D6EE29B8951618AC18BB3C6387227FD2A404AEF9C25408E`
+- Chipout reconciliation: `work/O3B21/R25_ADDITIONAL_CHIPOUT_SOURCE_RECONCILIATION.json`, SHA-256 `D032C4204A4EDFB073BDFAFE3AE2FE5D118CF9688E15C9B30DDC477226F5F7EE`; the earlier record is the same exact acquisition as the signed, executed R25 ordinal-0 control, not a second unresolved physical wafer.
+- Route blocker: the single unchanged probe stopped before remote input because RustDesk was `160x28`, not the verified full-screen geometry. No retry or transport change occurred.
+- Exact next action: operator exposes the recorded full-screen RustDesk/nested-JBOD layout; then one fresh hostname-gated probe resumes only the notch-adjacent and ordinal-23 targeted gates. Fresh 953 remains unauthorized.
