@@ -9408,3 +9408,19 @@ NA1/O23 and all later phases remain held.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA2_SIGNED_MISSING7_READY_CHECKPOINT_20260901.md`,
 SHA-256 `5D196559884DD98C8BADCE23BC236D4F328108B5002C63BA1E6DE112840C70A9`.
+
+# 2026-09-01 — OCV-03 O3B21 R25NA2 complete / no eligible control hold (`PENDING_GATE`)
+
+Pinned-JBOD signed response `R_70A873A42FC1_20260901175547361_0322746f`
+passed. R25NA2 reused 17 completed results, executed seven missing cases, and
+evaluated all 24 frozen candidates in 842.795 seconds. No case rerun, selector
+relaxation, source mutation, existing task/process action, or hold clearance
+occurred.
+
+The selector gate completed with no eligible notch-adjacent control, so that
+prerequisite remains an explicit hold. Continue only O23 ambiguity evidence;
+fresh 953 and all later phases remain unauthorized.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA2_COMPLETE_NO_ELIGIBLE_CONTROL_HOLD_CHECKPOINT_20260901.md`,
+SHA-256 `F9785D16F658776B67774775F9F30DE8C246C2493F7462521B9E523D0369917C`.

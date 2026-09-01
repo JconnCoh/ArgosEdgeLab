@@ -1144,3 +1144,10 @@ task from changing which revision, UI, evidence, or next action is active.
 - SHA-256: `5D196559884DD98C8BADCE23BC236D4F328108B5002C63BA1E6DE112840C70A9`
 - Package: request `REQ_20260901T173550248Z_264B5F546DD5`, ZIP `99D91E4A8E39A7240C1E116FCC666A316002583A3A9272F2501BE5F1397A71FD`, 45,958 bytes; unchanged R25/R13 and selector, reuse `00-16`, execute only missing `17-23` under fresh `D:/R25NA2`.
 - Exact next action: after clean matching branch tips, publish exactly once and collect only the matching signed terminal response. No retry, selector relaxation, O23 inference, or 953 corpus yet.
+
+## 2026-09-01 — OCV-03 O3B21 R25NA2 complete / no eligible control hold
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA2_COMPLETE_NO_ELIGIBLE_CONTROL_HOLD_CHECKPOINT_20260901.md`
+- SHA-256: `F9785D16F658776B67774775F9F30DE8C246C2493F7462521B9E523D0369917C`
+- Signed result: response `R_70A873A42FC1_20260901175547361_0322746f`, ZIP `FA58C572E9714357020AAD36A90EB51C476DBAFDCB3018FCCC441FBAB045A59B`, passed; 17 reused plus seven new equals all 24 frozen candidates, with no eligible control and no selector relaxation.
+- Exact next action: retain notch-adjacent as an explicit hold and continue only O23 ambiguity evidence. Fresh 953 and later phases remain unauthorized.
