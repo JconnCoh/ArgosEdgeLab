@@ -6,7 +6,7 @@ quarantined task or from image payloads in chat.
 
 ## Isolated OpenCV scribe R6V2 publication — 2026-09-01
 
-The exact frozen signed request `REQ_20260901T220000222Z_5A348AE509A4` was published exactly once with create-new semantics. The gateway share moved it to `requests/processed`, and the processed copy hash-matches frozen ZIP SHA-256 `1048FB48EFDB736D397A856E75AD1A3F8B0D59599766636F9ABB1353C2AB291D`. This proves gateway acceptance only, not JBOD execution. The request remains `PENDING_GATE` until its matching signed terminal response is validated; no retry or second publication is authorized. Review-only, activation, identity acceptance, hold clearance, XML, training, and production authority remain unchanged and false where applicable.
+The exact frozen signed request `REQ_20260901T220000222Z_5A348AE509A4` was published exactly once with create-new semantics. Matching response `R_71E7438B5A18_20260901234419542_54c4855d`, ZIP SHA-256 `69C8BB46AD8453D1C38EA5A4AD6238398B0DB51BF9611C7A64B23FC2353BF841`, is present and all three declared file hashes pass. Its hash-consistent contents report endpoint and four-case batch PASS with zero eligible identities and geometry holds on Slots 22 through 25. The isolated worktree lacks the pinned JBOD public certificate and standard response verifier, so cryptographic signature verification and create-new collection remain blocked pending narrow file authority. No retry or second publication is authorized. Review-only, activation, identity acceptance, hold clearance, XML, training, and production authority remain unchanged and false where applicable.
 
 ## OCV-03 autonomous detector sequence rollover — 2026-08-30
 
