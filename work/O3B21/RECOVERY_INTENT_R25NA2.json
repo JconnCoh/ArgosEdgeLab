@@ -1,0 +1,77 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-01T17:27:00Z",
+  "incidentId": "O3B21_R25NA1_SIGNED_TIMEOUT_20260901",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 2,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/O3B21/R25NA1_SIGNED_TERMINAL_FAILURE_GATE.json",
+        "sha256": "585680C539731BEDE1B7879CE2BE0B4E2D98C407E4B757AC3B9A9FCE445F6A86",
+        "state": "FAILED"
+      },
+      {
+        "path": "work/O3B21/R25NA1_POSTFAIL_OBS2_WITHDRAWN_GATE.json",
+        "sha256": "241E85C542AC12679B86852A98F14488AA2952AEBBFF778F3CCE5B9EE8C26D8A",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      },
+      {
+        "path": "work/O3B21/R25NA1_POSTFAIL_OBS3_WITHDRAWN_GATE.json",
+        "sha256": "FB3FA37B176C2E4CD44944625A5544B2B4950AA29187498C146D6866745E765C",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/O3B21/R25NA1_POSTFAIL_OBS4_RECOVERY_EVIDENCE.json",
+      "sha256": "C5DD971AD4888B59CB085145D0FA0F4800B41ED6AEE5F400CCA5482574918AC6"
+    },
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "PROJECT_PORTAL",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {"path": "", "sha256": ""},
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/O3B21/R25NA1_POSTFAIL_OBS4_RECOVERY_EVIDENCE.json",
+      "sha256": "C5DD971AD4888B59CB085145D0FA0F4800B41ED6AEE5F400CCA5482574918AC6"
+    },
+    "boundedChange": "Replace the disproved create-new-all-24 precondition with exact reuse of complete ordinals 00-16 and execution of only absent ordinals 17-23 into fresh D:/R25NA2, preserving detector, config, source hashes, ordering, and selector semantics.",
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -9392,3 +9392,19 @@ post-result relaxation. NA1/O23 and every later phase remain held.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA1_PARTIAL17_MISSING7_RESUME_CHECKPOINT_20260901.md`,
 SHA-256 `B74DE07880810C3755A91EAC1968CBB18C09F9CB6B9DF1C68126C91BA3EBB057`.
+
+# 2026-09-01 — OCV-03 O3B21 R25NA2 signed missing-seven ready (`PENDING_GATE`)
+
+Fresh signed R25NA2 preserves R25/R13, the frozen 24-case order, source hashes,
+and selector. It verifies/reuses completed R25NA1 ordinals `00-16`, requires
+`17-23` absent, and writes only those missing cases under fresh `D:/R25NA2`.
+No completed case is rerun and portal raster embedding is disabled.
+
+Request `REQ_20260901T173550248Z_264B5F546DD5`, ZIP
+`99D91E4A8E39A7240C1E116FCC666A316002583A3A9272F2501BE5F1397A71FD`,
+45,958 bytes, passed all build/sign/path/final-ZIP gates. It is not published.
+NA1/O23 and all later phases remain held.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA2_SIGNED_MISSING7_READY_CHECKPOINT_20260901.md`,
+SHA-256 `5D196559884DD98C8BADCE23BC236D4F328108B5002C63BA1E6DE112840C70A9`.

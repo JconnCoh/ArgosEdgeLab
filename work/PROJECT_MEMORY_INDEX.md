@@ -1137,3 +1137,10 @@ task from changing which revision, UI, evidence, or next action is active.
 - SHA-256: `B74DE07880810C3755A91EAC1968CBB18C09F9CB6B9DF1C68126C91BA3EBB057`
 - Observation: exact JBOD compact gate `CF3441EDBDE76DF7C40B1B1FF54828F1D9CC89C5D3064A36C57436C37A6BFD71` proves complete ordinals `00-16`, absent ordinals `17-23`, and zero partial pairs without reading image bytes or changing target state.
 - Exact next action: preserve/reuse `00-16`; execute only missing `17-23` with unchanged R25/R13 and frozen selector/source evidence, then aggregate all results. No selector relaxation, 953 corpus, or later phase yet.
+
+## 2026-09-01 — OCV-03 O3B21 R25NA2 signed missing-seven ready
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA2_SIGNED_MISSING7_READY_CHECKPOINT_20260901.md`
+- SHA-256: `5D196559884DD98C8BADCE23BC236D4F328108B5002C63BA1E6DE112840C70A9`
+- Package: request `REQ_20260901T173550248Z_264B5F546DD5`, ZIP `99D91E4A8E39A7240C1E116FCC666A316002583A3A9272F2501BE5F1397A71FD`, 45,958 bytes; unchanged R25/R13 and selector, reuse `00-16`, execute only missing `17-23` under fresh `D:/R25NA2`.
+- Exact next action: after clean matching branch tips, publish exactly once and collect only the matching signed terminal response. No retry, selector relaxation, O23 inference, or 953 corpus yet.

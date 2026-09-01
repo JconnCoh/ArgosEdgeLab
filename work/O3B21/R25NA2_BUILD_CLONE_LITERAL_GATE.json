@@ -1,0 +1,49 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-01T17:29:13.6934795Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\O3B21\\R25NA2_BUILD_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "DA590C6910E7EFE24AC13065E2C8E53496A1F51DC88C1637575D7BC7301DC5A6",
+    "pairCount":  2,
+    "pairs":  [
+                  {
+                      "source":  "work/O3B21/Build-R25NA1Package.ps1",
+                      "generated":  "work/O3B21/Build-R25NA2Package.ps1",
+                      "sourceSha256":  "0BAE5AA20DAF75A585F325710E8B83E5CB5DB0223D7E3A28D937C76F069DFA7A",
+                      "generatedSha256":  "092FD1D5DF1BD66BE961AD6E71353BD28344A41177EAE5355AB85C9AA21EFF92",
+                      "sourceRoots":  [
+                                          "C:\\R21P5",
+                                          "C:\\R25NA1PK"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\R21P5",
+                                             "C:\\R25NA2PK"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/O3B21/r25na1_generated/Invoke-R25NA1.ps1",
+                      "generated":  "work/O3B21/r25na2_generated/Invoke-R25NA2.ps1",
+                      "sourceSha256":  "0B3158E9B60F43E818794E8C5A52D5E49A3A18558870FB1A6D453AD1D8A0A346",
+                      "generatedSha256":  "173C9C236351F22B60F66B67E96C76E8B3F586ECA83F89E6CEFCA76B111771EA",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "D:\\AFCV1"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "D:\\AFCV1",
+                                             "D:\\R25NA1",
+                                             "D:\\R25NA2"
+                                         ],
+                      "ruleCount":  4
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}
