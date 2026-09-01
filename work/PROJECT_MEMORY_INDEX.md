@@ -1108,3 +1108,10 @@ task from changing which revision, UI, evidence, or next action is active.
 - SHA-256: `61864AF94C9914EDAF015DADE05B8E1B040DA549B86C0E80C991F63BCC9526F7`
 - Boundary: direct control cannot transfer the R25 dependency bundle and no reusable concrete transient payload root is frozen; route rediscovery and clipboard-split transfer remain forbidden.
 - Exact next action: explicit `PUBLISH R25NA1`, then exactly one fresh signed review-only 24-pair request through the recorded portal route. NA1/O23 held; fresh 953 unauthorized.
+
+## 2026-09-01 — OCV-03 O3B21 R25NA1 published / portal queue pending
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA1_PUBLISHED_PORTAL_QUEUE_PENDING_CHECKPOINT_20260901.md`
+- SHA-256: `145B016DF7DEDA4DE6856E5C118994A6DF8E784E50CD35967DB3F1719B6EC8D1`
+- Publication: request `REQ_20260901T153112935Z_6B71EECCA83C`, ZIP SHA-256 `A96E29988C4DC9DE3FF4495823409BA14A54E6138616A2D9E873A4EBB0461D0D`, 45,761 bytes, published exactly once with automatic retry disabled.
+- Blocker: no matching signed terminal response; the exact ZIP remains in `U:/ProjectPortalRO/requests`, so importer consumption and endpoint execution are unproven. Do not retry or investigate portal infrastructure under detector authority. NA1/O23 held; fresh 953 unauthorized.
