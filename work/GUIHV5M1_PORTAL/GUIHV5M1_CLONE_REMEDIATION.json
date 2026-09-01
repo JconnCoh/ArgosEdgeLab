@@ -1,0 +1,32 @@
+{
+  "schema":"argos_clone_literal_remediation_manifest_v1",
+  "revision":"GUIHV5M1_FROM_WITHDRAWN_GUIHV5_REBASED_CURRENT_QUEUE",
+  "pairs":[
+    {
+      "source":"work/GUIHV5_PORTAL/source/payload/Apply-GUIHV5DirectGuiPatch.ps1",
+      "generated":"work/GUIHV5M1_PORTAL/source/payload/Apply-GUIHV5M1DirectGuiPatch.ps1",
+      "rootRules":[{"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"}]
+    },
+    {
+      "source":"work/GUIHV5_PORTAL/source/MAINTENANCE_DEFINITION.json",
+      "generated":"work/GUIHV5M1_PORTAL/source/MAINTENANCE_DEFINITION.json",
+      "rootRules":[
+        {"sourceRoot":"\\\\ArgosEdgeLabRO\\AllWaferProcessorV2","generatedRoot":"\\\\ArgosEdgeLabRO\\AllWaferProcessorV2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"\\\\runtime\\viewer","generatedRoot":"\\\\runtime\\viewer","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source":"work/GUIHV5_PORTAL/Test-GUIHV5MaintenancePackage.ps1",
+      "generated":"work/GUIHV5M1_PORTAL/Test-GUIHV5M1MaintenancePackage.ps1",
+      "rootRules":[
+        {"sourceRoot":"C:\\G4I","generatedRoot":"C:\\G4I","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\G5F5","generatedRoot":"C:\\G5MF3","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\G5P5","generatedRoot":"C:\\G5MP3","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\G5R5","generatedRoot":"C:\\G5MR3","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\G5S5","generatedRoot":"C:\\G5MS3","disposition":"REPLACED"},
+        {"sourceRoot":"","generatedRoot":"C:\\G5Q","disposition":"ADDED"}
+      ]
+    }
+  ]
+}

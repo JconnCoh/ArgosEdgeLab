@@ -1,0 +1,67 @@
+{
+  "schema": "argos_clone_literal_remediation_gate_v1",
+  "checkedUtc": "2026-09-01T00:28:30.1636962Z",
+  "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "mode": "GATE",
+  "manifest": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-jbod-gui-xml-scribe-import\\work\\GUIHV5M1_PORTAL\\GUIHV5M1_CLONE_REMEDIATION.json",
+  "manifestSha256": "F36464A197851C4C841E99B3FBC0DAB0D782A33CDF5FD337C53715140D3B0E21",
+  "pairCount": 3,
+  "pairs": [
+    {
+      "source": "work/GUIHV5_PORTAL/source/payload/Apply-GUIHV5DirectGuiPatch.ps1",
+      "generated": "work/GUIHV5M1_PORTAL/source/payload/Apply-GUIHV5M1DirectGuiPatch.ps1",
+      "sourceSha256": "120BC5BD757AC4C0DE3104A4634E5DE4934872680B605EF692BEC5BEDA5029DD",
+      "generatedSha256": "83386150E0AC4942FCFC4807DF2CCFC03D24BA53FF2CECE7C3EE2F5055126359",
+      "sourceRoots": [
+        "C:\\ProgramData"
+      ],
+      "generatedRoots": [
+        "C:\\ProgramData"
+      ],
+      "ruleCount": 1
+    },
+    {
+      "source": "work/GUIHV5_PORTAL/source/MAINTENANCE_DEFINITION.json",
+      "generated": "work/GUIHV5M1_PORTAL/source/MAINTENANCE_DEFINITION.json",
+      "sourceSha256": "E9BB2A05D7CBCD8ED4160D5BB9D2617537FE312F49DB60A48D1B6CC93F28CB75",
+      "generatedSha256": "9F0F50C69EFD5E8AF63FEDD0901E2702BCD5B8D78449D42A84E286162AAE8E99",
+      "sourceRoots": [
+        "\\\\ArgosEdgeLabRO\\AllWaferProcessorV2",
+        "\\\\runtime\\viewer",
+        "C:\\ProgramData"
+      ],
+      "generatedRoots": [
+        "\\\\ArgosEdgeLabRO\\AllWaferProcessorV2",
+        "\\\\runtime\\viewer",
+        "C:\\ProgramData"
+      ],
+      "ruleCount": 3
+    },
+    {
+      "source": "work/GUIHV5_PORTAL/Test-GUIHV5MaintenancePackage.ps1",
+      "generated": "work/GUIHV5M1_PORTAL/Test-GUIHV5M1MaintenancePackage.ps1",
+      "sourceSha256": "A834D890869FD47FEA3F1EA59BEF092C2B621B217FA01111361249DA3CAD9E2B",
+      "generatedSha256": "F2A9C5D1931714E8469418413461E0679676C9373107C3A7678DE9C783EB4E05",
+      "sourceRoots": [
+        "C:\\G4I",
+        "C:\\G5F5",
+        "C:\\G5P5",
+        "C:\\G5R5",
+        "C:\\G5S5"
+      ],
+      "generatedRoots": [
+        "C:\\G4I",
+        "C:\\G5MF3",
+        "C:\\G5MP3",
+        "C:\\G5MR3",
+        "C:\\G5MS3",
+        "C:\\G5Q"
+      ],
+      "ruleCount": 6
+    }
+  ],
+  "violations": [],
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "evidenceWritten": true
+}

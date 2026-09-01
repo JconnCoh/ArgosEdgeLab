@@ -1,0 +1,29 @@
+{
+  "schema":"argos_recovery_intent_v1",
+  "createdUtc":"2026-09-01T00:29:00Z",
+  "incidentId":"GUIHV5_SCRIBE_QUEUE_PREMISE_CHANGE_20260901",
+  "mode":"MUTATE",
+  "artifactLifecycle":"DRAFT",
+  "policy":{"path":"work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json","sha256":"A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"},
+  "failureHistory":{
+    "signedPremiseFailures":1,"localPremiseFailures":0,"directObservationAfterLastSignedFailure":true,"mutationStopLossExplicitlyCleared":false,
+    "failureEvidence":[{"path":"work/GUIHV5O1_PORTAL/GUIHV5O1_POST_FAILURE_EVIDENCE.json","sha256":"580ED1BF2FCFF3EB532A5A19273A80A11A16C47C114E5F8ABE2A970731C9213F","state":"FAILED"}],
+    "postFailureObservation":{"path":"work/GUIHV5M1_PORTAL/GUIHV5M1_OBSERVATION_EVIDENCE.json","sha256":"F0E0873E7A4CD53F01D8A9B52A700C15D0F85D7A53E944996C867E3E235ABF8A"},
+    "workflowReviewClearance":{"path":"","sha256":""}
+  },
+  "route":{
+    "type":"MAINTENANCE_PATCH","jobClass":"MAINTENANCE_PATCH","installedCodeChange":true,"helperInstall":false,
+    "taskActions":["STOP_IF_RUNNING:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2","START_ALWAYS:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2"],
+    "processActions":["CLOSE_IF_RUNNING:ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe"],
+    "queueMutation":true,"ledgerMutation":false,"sourceMutation":false,"imageRead":false,"waferAction":false,"inheritsQualifiedEndpointGate":true,
+    "endpointWorker":{"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    "installedConfigEvidence":{"path":"work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json","sha256":"465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"},
+    "capabilityEvidence":{"path":"work/GUIHV4_PORTAL/GUIHV4_SIGNED_TERMINAL_AND_LIVE_VERIFICATION_GATE.json","sha256":"4D18810F4BD65046217DAA3B2106C7F99317A4BA2EC9209D76C6C16272E3D66B"},
+    "qualifiedEndpointGate":{"path":"work/OPENCV_SCRIBE_O2D10/O2D10_COMPLETE_ROUTE_GATE_R2.json","sha256":"6938DC3E37A5208DC1F3E2F8F7A5703CC9A6B70B7533556E584F531DCD310D81"},
+    "qualifiedAdminGate":{"path":"","sha256":""}
+  },
+  "observation":{"exactSources":[{"sourcePath":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/SCRIBE_IDENTITY_QUEUE.json","sourceSchema":"argos_jbod_scribe_identity_queue_v1","selector":"exact signed current queue","uniquenessKey":"physicalIdentity","maximumRows":1200}],"requestedCapabilities":["scribeHoldPhysicalIdentityJoin"],"requestedFields":["state","nextAction","proposalSource","physicalIdentity","domain"],"decisionOptions":["A","B","C","D"],"mutationDecisionDeferred":false},
+  "mutation":{"supportedRemedy":"D","supportingObservation":{"path":"work/GUIHV5M1_PORTAL/GUIHV5M1_OBSERVATION_EVIDENCE.json","sha256":"F0E0873E7A4CD53F01D8A9B52A700C15D0F85D7A53E944996C867E3E235ABF8A"},"endpointMutationNecessary":true,"singleMutationAttemptAuthorized":true},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

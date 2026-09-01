@@ -1,0 +1,76 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-08-31T23:47:00Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "GUI_SCRIBE_HOLD_ACTIONABILITY_AND_PHYSICAL_DEDUP_GUIHV5_20260831",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "matchingSignedTerminal": {
+    "path": "work/GUIPR2_PORTAL/GUIPR2_RESPONSE_GATE.json",
+    "sha256": "26DBE4834AB418091A2554C6CD7FB69EF18701A447C83A78DC7BA9DDB1A63DC5",
+    "requestId": "REQ_20260831T200115797Z_25C5E103B730",
+    "responseId": "R_8D029794048B_20260831200657573_ff287557",
+    "signatureVerified": true
+  },
+  "sourceGate": {
+    "path": "work/GUIPR2_PORTAL/GUIPR2_POST_GUIDU1_SIGNED_CURRENT_STATE_RECONCILIATION_GATE.json",
+    "sha256": "4A551E6B94835A90A850421870BA621FADD83A095D720753AB1775226AA7E4A4"
+  },
+  "inputs": {
+    "dashboardSha256": "E55F21FF680DD70AD2D71084B199F21862D91E9C4FC83D4943D0FF510846F16B",
+    "dashboardBytes": 3451199,
+    "scribeQueueSha256": "9F8F5B0A0037DDDCA309579CF5A6339CF4215273ED153E46B3BD9D2E1E5D2541",
+    "scribeQueueRows": 978
+  },
+  "reconciliation": {
+    "heldAcquisitionDomainRows": 1722,
+    "genericScribeHeldAcquisitionDomainRows": 380,
+    "genericScribePhysicalRows": 190,
+    "domainsPerGenericScribePhysicalRow": ["FRONTSIDE", "BACKSIDE_PENDING_REGIME"],
+    "queueJoinMissing": 0,
+    "queueStateCountsForGenericScribePhysicalRows": {
+      "SCRIBE_IDENTITY_CONFIRMATION_HOLD": 126,
+      "PENDING_AUTOMATIC_NOTCH_AND_SEMI_M12_PROPOSAL": 55,
+      "PROPOSAL_READY_OPERATOR_CONFIRMATION_REQUIRED": 5,
+      "HOLD_HUMAN_VISIBLE_NONCANONICAL_CHECKSUM": 4
+    },
+    "operatorReviewReadyPhysicalRows": 5,
+    "unrelatedHeldAcquisitionDomainRows": 1342
+  },
+  "observations": [
+    {
+      "field": "genericScribeHeldAcquisitionDomainRows",
+      "expected": 380,
+      "observed": 380,
+      "decision": "JOIN_ALL_GENERIC_SCRIBE_HOLD_ROWS_TO_EXACT_PHYSICAL_IDENTITY_QUEUE"
+    },
+    {
+      "field": "genericScribePhysicalRows",
+      "expected": 190,
+      "observed": 190,
+      "decision": "DISPLAY_ONE_ROW_PER_PHYSICAL_WAFER_WITH_BOTH_AFFECTED_DOMAINS"
+    },
+    {
+      "field": "operatorReviewReadyPhysicalRows",
+      "expected": 5,
+      "observed": 5,
+      "decision": "ONLY_EXACT_READY_STATE_IS_ACTIONABLE_OPERATOR_REVIEW"
+    },
+    {
+      "field": "unrelatedHeldAcquisitionDomainRows",
+      "expected": 1342,
+      "observed": 1342,
+      "decision": "PRESERVE_UNRELATED_HOLDS_BYTE_SEMANTICS_AND_INDIVIDUAL_ROWS"
+    }
+  ],
+  "provedDefect": "THE_AUTHORITATIVE_DASHBOARD_EMITS_ACQUISITION_DOMAIN_ROWS_WITH_A_GENERIC_SCRIBE_HOLD_AND_DOES_NOT_JOIN_THE_EXISTING_PHYSICAL_IDENTITY_SCRIBE_QUEUE;THE_VIEWER_THEREFORE_DUPLICATES_PHYSICAL_HOLDS_AND_CANNOT_DISTINGUISH_5_READY_ROWS_FROM_185_NONACTIONABLE_ROWS",
+  "supportedRemedy": "D",
+  "dashboardContainsExpectedRows": true,
+  "unchangedGuiFailsRequiredProjection": true,
+  "imageBytesRead": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

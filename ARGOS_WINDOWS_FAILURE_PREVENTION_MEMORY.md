@@ -1,5 +1,80 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### Rebased state counts must update both producer assertions and invoked consumer arguments
+
+- Signature: a fresh local maintenance rehearsal proves the rebased producer
+  split, then the real viewer projection check rejects the ready-row count.
+- Cause: the entrypoint's producer assertion was rebased from five to three
+  operator-review-ready rows, but its exact viewer command still passed the
+  predecessor literal `--hold-projection-check 1532 190 5`.
+- Preflight: search every entrypoint, test harness, and invoked consumer argument
+  for predecessor cardinality literals; bind the consumer argument to the same
+  frozen rebased count and exercise the actual compiled consumer.
+- Recovery: retain the failed local roots, verify rollback, correct the
+  still-DRAFT entrypoint argument, and rerun all controls on fresh roots.
+- First observed: GUIHV5M1 local matrix on 2026-09-01. The entrypoint restored
+  all installed and producer-output fixture predecessors before tray relaunch;
+  no portal, JBOD, source-image, wafer, XML, or production state changed.
+
+### A bounded post-failure DATA_PULL is an overlay, not a complete fixture tree
+
+- Signature: a local package rehearsal extracts a successful post-failure
+  DATA_PULL and then cannot find `PROCESSOR_CONFIG.json` while constructing its
+  processor fixture.
+- Cause: the observation deliberately returned only the changed queue and its
+  two dashboard controls; the rehearsal incorrectly treated those three files
+  as a replacement for the previously signed complete processor-tree fixture.
+- Preflight: declare complete signed fixture evidence and current signed
+  observation evidence separately. Build from the complete fixture first, then
+  overlay only the exact current observation leaves and verify both ZIP hashes.
+- Recovery: preserve the incomplete fixture roots, keep product/package bytes
+  unchanged, correct the still-DRAFT harness, and rerun on fresh roots.
+- First observed: GUIHV5M1 local matrix on 2026-09-01. The stop occurred before
+  entrypoint execution; no portal, JBOD, task, process, installed Argos,
+  source-image, wafer, XML, or production state changed.
+
+### A final signed portal package does not retain its development definition file
+
+- Signature: an exact-final-ZIP rehearsal extracts and verifies the signed
+  request, then its local test harness stops while copying
+  `MAINTENANCE_DEFINITION.json` from the extracted request root.
+- Cause: the development source root contains the definition used to construct
+  the signed manifest, but the final portal request correctly carries the
+  entrypoint, changes, actions, and rehearsal contract in
+  `PORTAL_REQUEST_MANIFEST.json`; the definition is not a signed request leaf.
+- Preflight: a final-ZIP harness must require and verify the signed portal
+  manifest and signature. It may copy a development definition only when the
+  selected source is an unsigned development tree; it must not require that
+  file from a signed request.
+- Recovery: preserve the failed local package root, leave the signed ZIP bytes
+  unchanged, correct the still-DRAFT harness, and rerun the exact extracted ZIP
+  on fresh package and fixture roots.
+- First observed: GUIHV5 exact-final-ZIP rehearsal on 2026-08-31. The stop
+  occurred before fixture construction or entrypoint execution; no portal,
+  JBOD, installed Argos, task, process, source-image, wafer, XML, or production
+  state changed.
+
+### Waiting before draining redirected child output can deadlock a successful PowerShell gate
+
+- Signature: a locally launched Windows PowerShell 5.1 child remains in
+  `WaitForExit` until the harness timeout even though the same exact child
+  command completes in seconds when invoked directly, and the child made no
+  gated mutation.
+- Cause: the parent redirected stdout and stderr, waited for process exit, and
+  only then called `ReadToEnd`. The child's valid JSON exceeded the bounded OS
+  pipe buffer, so the child blocked writing while the parent blocked waiting.
+- Preflight: for every redirected child, start asynchronous stdout and stderr
+  drains immediately after `Start`, before `WaitForExit`; only consume the two
+  completed results after the child exits. Exercise a positive control whose
+  output is larger than 4 KiB.
+- Recovery: retain the timed-out fixture/package roots as failed local
+  evidence, do not reuse them, correct the still-DRAFT harness to drain both
+  streams asynchronously, and rerun on fresh path-gated fixture/package roots.
+- First observed: GUIHV5 local maintenance-package rehearsal on 2026-08-31.
+  Direct non-mutating preflight returned `PASS` in 2.6 seconds; no portal,
+  JBOD, installed Argos, source-image, task, process, wafer, XML, or production
+  state was changed.
+
 ### A development target asserted as a proven control can discard the evidence needed to tune it
 
 - Signature: a signed actual-wafer regression runs its earlier proven controls,

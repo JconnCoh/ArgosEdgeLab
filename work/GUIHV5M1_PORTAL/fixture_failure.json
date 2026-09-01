@@ -1,0 +1,7 @@
+{
+  "schema":"argos_guihv5m1_direct_patch_rehearsal_v1","rehearsal":true,"installRoot":"C:\\G5MF4",
+  "tasks":[
+    {"name":"ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2","taskPath":"\\","principal":"lwm","state":"Running","definitionSha256":"E3D78B9802BC4599CEC37BCC80F01BC8A0086B398CCABC25163DE4AEFC0C419F","actions":[{"execute":"powershell.exe","arguments":"-File C:\\G5MF4\\Show-JbodAllWaferTray.ps1"}]},
+    {"name":"ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2","taskPath":"\\","principal":"SYSTEM","state":"Ready","definitionSha256":"6E306778640AF823C53422411E65F9A796075392DEA25306F59FE7EDB8259B17","actions":[{"execute":"powershell.exe","arguments":"-File C:\\G5MF4\\Run-JbodAllWaferProcessor.ps1"}]}
+  ],"trayProcessesBefore":[{"processId":9702,"sessionId":2,"creationUtc":"2026-08-31T23:00:00Z"}],"processorProcesses":[],"viewerProcessCount":0,"failAfterTargetVerification":true
+}

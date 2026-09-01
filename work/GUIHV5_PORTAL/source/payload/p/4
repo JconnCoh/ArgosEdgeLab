@@ -44,16 +44,6 @@ function Property-Text {
     return [string]$property.Value
 }
 
-function Get-ScribeActionability([string]$State) {
-    switch ($State) {
-        'PROPOSAL_READY_OPERATOR_CONFIRMATION_REQUIRED' { return 'OPERATOR_REVIEW_READY' }
-        'PENDING_AUTOMATIC_NOTCH_AND_SEMI_M12_PROPOSAL' { return 'AUTOMATIC_PROPOSAL_PENDING' }
-        'SCRIBE_IDENTITY_CONFIRMATION_HOLD' { return 'INPUT_HOLD_NOT_REVIEWABLE' }
-        'HOLD_HUMAN_VISIBLE_NONCANONICAL_CHECKSUM' { return 'SEPARATE_AUTHORITY_REQUIRED' }
-        default { return 'SCRIBE_STATE_NOT_REVIEWABLE' }
-    }
-}
-
 function Get-Sha256Text {
     param([string]$Text)
     $sha=[Security.Cryptography.SHA256]::Create()
@@ -87,7 +77,6 @@ $stateRoot = [IO.Path]::GetFullPath([string]$config.stateRoot)
 $catalogPath = Join-Path $stateRoot 'catalog\ALL_WAFER_CATALOG.json'
 $ledgerPath = Join-Path $stateRoot 'processor\PROCESSING_LEDGER.json'
 $processorStatusPath = Join-Path $stateRoot 'processor\PROCESSOR_STATUS.json'
-$scribeQueuePath = Join-Path $stateRoot 'identity\SCRIBE_IDENTITY_QUEUE.json'
 $readinessPath = Join-Path $stateRoot 'dashboard\DASHBOARD_CATALOG_STATUS.json'
 $manifestPath = Join-Path $appRoot 'dashboard_manifest.json'
 if (-not (Test-Path -LiteralPath $catalogPath -PathType Leaf)) {
@@ -100,16 +89,6 @@ $ledger = if(Test-Path -LiteralPath $ledgerPath -PathType Leaf){
 $processorStatus = if(Test-Path -LiteralPath $processorStatusPath -PathType Leaf){
     Get-Content -LiteralPath $processorStatusPath -Raw | ConvertFrom-Json
 }else{$null}
-if (-not (Test-Path -LiteralPath $scribeQueuePath -PathType Leaf)) { throw "Scribe identity queue is missing: $scribeQueuePath" }
-$scribeQueue = Get-Content -LiteralPath $scribeQueuePath -Raw | ConvertFrom-Json
-$scribeByPhysical = @{}
-foreach ($row in @($scribeQueue.rows)) {
-    $physical = Property-Text $row 'physicalIdentity'
-    if ([string]::IsNullOrWhiteSpace($physical) -or $scribeByPhysical.ContainsKey($physical)) {
-        throw "Scribe identity queue has a missing or duplicate physical identity: $physical"
-    }
-    $scribeByPhysical[$physical] = $row
-}
 if (-not [bool]$catalog.reviewOnly -or [bool]$catalog.xmlExportEnabled) {
     throw 'Dashboard updater refused a non-review-only catalog.'
 }
@@ -127,7 +106,6 @@ $allLedgerRows=@($ledger.rows)
 $processorHoldRows=if($null-ne$processorStatus-and$processorStatus.PSObject.Properties.Name-contains'routeHolds'){@($processorStatus.routeHolds)}else{@()}
 $supersededCompletedRows=0
 $duplicateCurrentRowsCollapsed=0
-$scribeHoldQueueJoinRows=0
 foreach ($catalogAcquisition in @($catalog.acquisitions)) {
     $identity=[string]$catalogAcquisition.identity
     $fingerprint=Acquisition-Fingerprint $catalogAcquisition
@@ -155,18 +133,7 @@ foreach ($catalogAcquisition in @($catalog.acquisitions)) {
             $holdReason='WAITING_FOR_CURRENT_INSPECTION_RESULT'
             $holdSource='DASHBOARD_CURRENT_RESULT_WAIT'
         }
-        $scribeState='';$scribeNextAction='';$scribeProposalSource='';$scribeActionability=''
-        if($holdReason-eq'HOLD_SCRIBE_CONFIRMATION_REQUIRED_BEFORE_DETECTOR'){
-            $physicalIdentity=Property-Text $catalogAcquisition 'physicalIdentity'
-            if(-not$scribeByPhysical.ContainsKey($physicalIdentity)){throw "Scribe hold has no exact queue row: $physicalIdentity"}
-            $scribeRow=$scribeByPhysical[$physicalIdentity]
-            $scribeState=Property-Text $scribeRow 'state'
-            $scribeNextAction=Property-Text $scribeRow 'nextAction'
-            $scribeProposalSource=Property-Text $scribeRow 'proposalSource'
-            $scribeActionability=Get-ScribeActionability $scribeState
-            $scribeHoldQueueJoinRows++
-        }
-        $heldRow=[ordered]@{
+        $held.Add([ordered]@{
             identity=$identity;physicalIdentity=(Property-Text $catalogAcquisition 'physicalIdentity')
             lot=(Property-Text $catalogAcquisition 'lot');scanTimestampLocal=(Property-Text $catalogAcquisition 'scanTimestampLocal')
             slot=(Property-Text $catalogAcquisition 'slot');domain=(Property-Text $catalogAcquisition 'domain')
@@ -175,12 +142,7 @@ foreach ($catalogAcquisition in @($catalog.acquisitions)) {
             lastTool=(Property-Text $catalogAcquisition 'tool');holdReason=$holdReason;holdDetail=$holdDetail
             holdSource=$holdSource;currentJobKey=$expectedJobKey;historicalCompletedRows=$identityRows.Count
             reviewOnly=$true;xmlEligible=$false
-        }
-        if($holdReason-eq'HOLD_SCRIBE_CONFIRMATION_REQUIRED_BEFORE_DETECTOR'){
-            $heldRow.scribeQueueState=$scribeState;$heldRow.scribeNextAction=$scribeNextAction
-            $heldRow.scribeProposalSource=$scribeProposalSource;$heldRow.scribeActionability=$scribeActionability
-        }
-        $held.Add($heldRow)
+        })
         if($identityRows.Count-gt0){
             $excluded.Add([pscustomobject]@{
                 identity=$identity
@@ -387,9 +349,6 @@ Write-AtomicJson $readinessPath ([ordered]@{
     scanSessions=$sessions.Count
     includedWafers=$included.Count
     heldWafers=$held.Count
-    scribeHoldQueueJoinRows=$scribeHoldQueueJoinRows
-    scribeQueueRows=$scribeByPhysical.Count
-    scribeHoldQueueMissing=0
     supersededCompletedRows=$supersededCompletedRows
     duplicateCurrentRowsCollapsed=$duplicateCurrentRowsCollapsed
     excluded=$excluded.ToArray()
@@ -403,7 +362,6 @@ Write-AtomicJson $readinessPath ([ordered]@{
     ScanSessions=$sessions.Count
     Wafers=$included.Count
     HeldWafers=$held.Count
-    ScribeHoldQueueJoinRows=$scribeHoldQueueJoinRows
     SupersededCompletedRows=$supersededCompletedRows
     DuplicateCurrentRowsCollapsed=$duplicateCurrentRowsCollapsed
     Excluded=$excluded.Count

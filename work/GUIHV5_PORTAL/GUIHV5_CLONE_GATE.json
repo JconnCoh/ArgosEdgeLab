@@ -1,0 +1,47 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-08-31T23:46:35.0519658Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-jbod-gui-xml-scribe-import\\work\\GUIHV5_PORTAL\\GUIHV5_CLONE_REMEDIATION.json",
+    "manifestSha256":  "CAA3E56EFA3BC2273562744A0CFE100B026047B4BB82E0001FADCDF8E0B5BE47",
+    "pairCount":  2,
+    "pairs":  [
+                  {
+                      "source":  "work/GUIHV4_PORTAL/source/payload/Apply-GUIHV4DirectGuiPatch.ps1",
+                      "generated":  "work/GUIHV5_PORTAL/source/payload/Apply-GUIHV5DirectGuiPatch.ps1",
+                      "sourceSha256":  "90812BBE33FCB9A5834B100D06AC156045979DDE63EACD75126917089723D5FB",
+                      "generatedSha256":  "120BC5BD757AC4C0DE3104A4634E5DE4934872680B605EF692BEC5BEDA5029DD",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData"
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/GUIHV4_PORTAL/source/MAINTENANCE_DEFINITION.json",
+                      "generated":  "work/GUIHV5_PORTAL/source/MAINTENANCE_DEFINITION.json",
+                      "sourceSha256":  "CCB543445F3FDDBD04123E08FAD1748C6517ED0C22A4879AE149941BFD9962E5",
+                      "generatedSha256":  "E9BB2A05D7CBCD8ED4160D5BB9D2617537FE312F49DB60A48D1B6CC93F28CB75",
+                      "sourceRoots":  [
+                                          "\\\\ArgosEdgeLabRO\\AllWaferProcessorV2",
+                                          "\\\\runtime\\viewer",
+                                          "C:\\ProgramData"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\ArgosEdgeLabRO\\AllWaferProcessorV2",
+                                             "\\\\runtime\\viewer",
+                                             "C:\\ProgramData"
+                                         ],
+                      "ruleCount":  3
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

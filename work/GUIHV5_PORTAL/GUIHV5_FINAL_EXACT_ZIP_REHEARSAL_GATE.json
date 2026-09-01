@@ -1,0 +1,35 @@
+{
+    "schema":  "argos_guihv5_maintenance_package_rehearsal_gate_v1",
+    "createdUtc":  "2026-09-01T00:04:38.5632084Z",
+    "state":  "PASS_GUIHV5_MAINTENANCE_PACKAGE_REHEARSAL",
+    "windowsPowerShell51Preflight":  "PASS_GUIHV5_SCRIBE_HOLD_PROJECTION_MAINTENANCE_PATCH_PREFLIGHT",
+    "successState":  "PASS_GUIHV5_SCRIBE_HOLD_PROJECTION_PRODUCED_VALIDATED_AND_TRAY_ACTIVATED",
+    "injectedFailure":  "INJECTED_GUIHV5_POST_PRODUCER_VALIDATION_FAILURE",
+    "installedSourceRollbackVerified":  true,
+    "producerOutputRollbackVerified":  true,
+    "unapprovedPredecessorRefusedBeforeMutation":  true,
+    "exactRegression":  {
+                            "acquisitionRows":  380,
+                            "physicalRows":  190,
+                            "stateSplit":  [
+                                               126,
+                                               55,
+                                               5,
+                                               4
+                                           ],
+                            "readyRows":  5,
+                            "missingJoins":  0,
+                            "unrelatedRows":  1342
+                        },
+    "taskActions":  [
+                        "STOP_IF_RUNNING:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2",
+                        "START_ALWAYS:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2"
+                    ],
+    "processorTaskAction":  false,
+    "processorRestarted":  false,
+    "sourceMutation":  false,
+    "imageRead":  false,
+    "retry":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "GUIHV5_SINGLE_LIVE_PUBLISH_20260901",
+  "createdUtc": "2026-09-01T00:05:45Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "PUBLISH_ONE_FROZEN_GUIHV5_REVIEW_ONLY_MAINTENANCE_REQUEST",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"4C847A1953984368AB3F86E36EDD184B7CB5DB3E51C75BF86B7A057A699DDD66"},
+    {"path":"work/GUIHV5_PORTAL/GUIHV5_RECOVERY_INTENT.json","sha256":"14B511B548A8D06AD5F2A51D9585B148CFB48DD70123E7C3C288004366184C08"},
+    {"path":"work/GUIHV5_PORTAL/GUIHV5_OBSERVATION_EVIDENCE.json","sha256":"25288F48B5219B0048C8F303B7D970B38F994D6F443C44A366C0FB41B81AF5FA"},
+    {"path":"work/GUIHV5_PORTAL/GUIHV5_FINAL_EXACT_ZIP_REHEARSAL_GATE.json","sha256":"9C5CBC862FA47BB689A245107338CAAC72EE51B1F22381E671DD293C32AEBC60"},
+    {"path":"work/GUIHV5_PORTAL/final/REQ_G5_0831_A1.ready.zip","sha256":"96D00C870807C6332CADC8B2E806061E1B5821766F9E28B2FC2AD39CA8025AB6"},
+    {"path":"work/GUIHV5_PORTAL/GUIHV5_PREPUBLICATION_PATH_GATE.json","sha256":"6567C0A7859F4085CDC20EBE0BBECB5C9640EC2F67118395B5200D1BEEB42548"},
+    {"path":"U:/ProjectPortalRO/responses/R_F52F798BC7CA_20260901000209404_811e5d27.ready.zip","sha256":"90845E046E7999A551F6E53500009874338F0F4D0F045513EB24CBE9E7D79A8B"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/GUIHV1_PORTAL/GUIHV1_COLLECTION_CASE_GATE.json",
+    "sha256": "81A360B01F3E7BF82A5FF25BE1EEFC0A599BB5129B253692513778170A5F7AE0",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": ["R21P2"]
+  },
+  "boundedAction": {
+    "maximumRequests": 1,
+    "requestId": "REQ_G5_0831_A1",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedSemanticChanges": 4,
+    "taskActions": ["STOP_IF_RUNNING:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2", "START_ALWAYS:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2"],
+    "processActions": ["CLOSE_IF_RUNNING:ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe"],
+    "processorTaskActions": [],
+    "retryOnFailure": false
+  },
+  "clearance": {
+    "requestId": "REQ_20260831T235227344Z_187AC38B9B5E",
+    "responseId": "R_F52F798BC7CA_20260901000209404_811e5d27",
+    "signedTerminalState": "PASS_MAINTENANCE_PATCH",
+    "entryPoint": "payload/Invoke-R25F10.ps1",
+    "explicitLaneClearanceReceived": true
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

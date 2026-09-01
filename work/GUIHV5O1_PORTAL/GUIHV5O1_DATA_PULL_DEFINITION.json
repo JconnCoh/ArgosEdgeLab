@@ -1,0 +1,17 @@
+{
+  "schema":"argos_project_portal_request_definition_v1",
+  "targetRole":"JBOD",
+  "jobClass":"DATA_PULL",
+  "handler":"",
+  "maxResultBytes":16777216,
+  "parameters":{
+    "approvedRoot":"JBOD_PROCESSOR_REVIEW",
+    "relativePaths":[
+      "identity/SCRIBE_IDENTITY_QUEUE.json",
+      "dashboard_manifest.json",
+      "dashboard/DASHBOARD_CATALOG_STATUS.json"
+    ],
+    "maximumFiles":3,
+    "maximumBytes":16777216
+  }
+}

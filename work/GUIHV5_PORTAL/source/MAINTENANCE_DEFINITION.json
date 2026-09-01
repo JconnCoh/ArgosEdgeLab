@@ -1,0 +1,42 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Apply-GUIHV5DirectGuiPatch.ps1",
+  "changes": [
+    {
+      "source": "payload/ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe",
+      "approvedPredecessorSha256": ["D893CA3C8F7C4F2993BA4D412986EC30D8B113408039EF8E381F4025C1A04D82"],
+      "installedSha256": "018A74CB5EFA08D59810B09BD16EEF5E3F0345A4C4335CB59ABE334ABE888AA7",
+      "allowCreate": false
+    },
+    {
+      "source": "payload/ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\runtime\\viewer\\ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe",
+      "approvedPredecessorSha256": ["D893CA3C8F7C4F2993BA4D412986EC30D8B113408039EF8E381F4025C1A04D82"],
+      "installedSha256": "018A74CB5EFA08D59810B09BD16EEF5E3F0345A4C4335CB59ABE334ABE888AA7",
+      "allowCreate": false
+    },
+    {
+      "source": "payload/Program.cs",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\runtime\\viewer\\Program.cs",
+      "approvedPredecessorSha256": ["DFEC0EA9E7A3C309CD7BD845099B23AB725A760035EBAC787340570C34181C76"],
+      "installedSha256": "776BDD0F5D8F644851A8495187178417B021CF5350A988FD0DBFE94D0CFDEF0A",
+      "allowCreate": false
+    },
+    {
+      "source": "payload/Update-JbodDashboardManifest.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Update-JbodDashboardManifest.ps1",
+      "approvedPredecessorSha256": ["73C2289B58F6F6B23DD2FA12E847AFF171B3FAC45153202E93EE00E0B7533FBA"],
+      "installedSha256": "C6A862FE32BB1013626A2C70D97173732F24724D644F44D084EC67DBB3351299",
+      "allowCreate": false
+    }
+  ],
+  "allowedTaskActions": [
+    "STOP_IF_RUNNING:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2",
+    "START_ALWAYS:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2",
+    "CLOSE_IF_RUNNING:ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe"
+  ],
+  "rehearsal": { "requiredState": "PASS_GUIHV5_SCRIBE_HOLD_PROJECTION_PRODUCED_VALIDATED_AND_TRAY_ACTIVATED" }
+}

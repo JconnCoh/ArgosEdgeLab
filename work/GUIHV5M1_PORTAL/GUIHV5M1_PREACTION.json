@@ -1,0 +1,30 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v2",
+  "revision":"GUIHV5M1_SINGLE_LIVE_PUBLISH_20260901",
+  "createdUtc":"2026-09-01T00:30:45Z",
+  "state":"PASS_PREACTION_CONTRACT",
+  "actionType":"SIGN_AND_PUBLISH_ONE_FRESH_GUIHV5M1_REVIEW_ONLY_MAINTENANCE_REQUEST",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C",
+  "dependencies":[
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"2D7E52FCECE55815D246BECE231FE45E631EC99CD9A1E0310F9F963FD1A6532D"},
+    {"path":"work/GUIHV5M1_PORTAL/GUIHV5M1_RECOVERY_INTENT.json","sha256":"27AB4A55B231F408E6E39482C9E1395DFC9C522E554D7975F37106D674A10131"},
+    {"path":"work/GUIHV5M1_PORTAL/GUIHV5M1_OBSERVATION_EVIDENCE.json","sha256":"F0E0873E7A4CD53F01D8A9B52A700C15D0F85D7A53E944996C867E3E235ABF8A"},
+    {"path":"work/GUIHV5M1_PORTAL/GUIHV5M1_MAINTENANCE_PACKAGE_REHEARSAL_GATE.json","sha256":"5F8A002FD4408280243730EBF49B97E9D727CA911EFBFD63D967006350CBC35B"},
+    {"path":"work/GUIHV5M1_PORTAL/GUIHV5M1_CLONE_GATE.json","sha256":"5CEBDB88C4C9BB52AB137AA790E8F38FDFA4D6AC199AB164E1EBC0B072441E7F"},
+    {"path":"work/GUIHV5M1_PORTAL/GUIHV5M1_SIGNER_CLONE_GATE.json","sha256":"EC9BA9CFFD1468D24E015E8867824AC9397EC889968A83A057743718C08EAC4C"},
+    {"path":"work/GUIHV5M1_PORTAL/New-GUIHV5M1PortalRequest.ps1","sha256":"9046D47259B8F4193C09EFCB91769C2696FD9FDB12A5D498651D36B61D8F88C7"},
+    {"path":"work/GUIHV5M1_PORTAL/GUIHV5M1_PREPUBLICATION_PATH_GATE.json","sha256":"B8D15D0777FF4D49F645111794101C3CFA8E521152F14AE928D13E062AE3CE00"},
+    {"path":"work/GUIHV5M1_PORTAL/source/MAINTENANCE_DEFINITION.json","sha256":"9F0F50C69EFD5E8AF63FEDD0901E2702BCD5B8D78449D42A84E286162AAE8E99"},
+    {"path":"work/GUIHV5M1_PORTAL/source/payload/Apply-GUIHV5M1DirectGuiPatch.ps1","sha256":"83386150E0AC4942FCFC4807DF2CCFC03D24BA53FF2CECE7C3EE2F5055126359"}
+  ],
+  "controls":{"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence":{"path":"work/GUIHV1_PORTAL/GUIHV1_COLLECTION_CASE_GATE.json","sha256":"81A360B01F3E7BF82A5FF25BE1EEFC0A599BB5129B253692513778170A5F7AE0","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":["GUIHV5","R21P2"]},
+  "boundedAction":{"maximumRequests":1,"requestId":"REQ_G5M1_0901_A1","jobClass":"MAINTENANCE_PATCH","installedSemanticChanges":4,"producerRuns":["RUN_ONCE:Update-JbodDashboardManifest.ps1"],"taskActions":["STOP_IF_RUNNING:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2","START_ALWAYS:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2"],"processActions":["CLOSE_IF_RUNNING:ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe"],"processorTaskActions":[],"detectorScoring":false,"imageProcessing":false,"guiBytesChanged":true,"importerExecuted":false,"identityStateChanged":false,"xml":false,"retryOnFailure":false},
+  "reviewOnly":true,
+  "trainingEligible":false,
+  "xmlEligible":false,
+  "productionEligible":false,
+  "productionRoutingEnabled":false
+}

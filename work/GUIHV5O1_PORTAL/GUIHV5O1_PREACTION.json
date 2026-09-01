@@ -1,0 +1,25 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v2",
+  "revision":"GUIHV5O1_POST_FAILURE_EXACT_DATA_PULL_20260901",
+  "createdUtc":"2026-09-01T00:14:00Z",
+  "state":"PASS_PREACTION_CONTRACT",
+  "actionType":"SIGN_AND_PUBLISH_ONE_READ_ONLY_POST_FAILURE_DATA_PULL",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C",
+  "dependencies":[
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"4C847A1953984368AB3F86E36EDD184B7CB5DB3E51C75BF86B7A057A699DDD66"},
+    {"path":"work/GUIHV5O1_PORTAL/GUIHV5O1_RECOVERY_INTENT.json","sha256":"EEA4A3D41081B881DEDA1DE99269120EC7F9661630CAC9A3780962EC71A443C4"},
+    {"path":"work/GUIHV5O1_PORTAL/GUIHV5O1_DATA_PULL_DEFINITION.json","sha256":"D49C22DCE495E5572333F04BE698116FD763A52F81AB125E72B866193EBAEEEF"},
+    {"path":"work/GUIHV5O1_PORTAL/GUIHV5O1_PATH_GATE.json","sha256":"8B57D297ED74AD1704B94578C7422C428A902096C6C589D3408EBD716ACF78A1"},
+    {"path":"work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json","sha256":"381D3E9C4F17218DF37D8E8CE029853216E9BEA5A2FBDABC6AEB7861A29DC8A2"}
+  ],
+  "controls":{"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence":{"path":"work/GUIHV1_PORTAL/GUIHV1_COLLECTION_CASE_GATE.json","sha256":"81A360B01F3E7BF82A5FF25BE1EEFC0A599BB5129B253692513778170A5F7AE0","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":["GUIHV5"]},
+  "boundedAction":{"maximumRequests":1,"jobClass":"DATA_PULL","maximumFiles":3,"maximumBytes":16777216,"taskActions":[],"processActions":[],"installedChanges":0,"imageRead":false,"sourceMutation":false,"queueOrLedgerMutation":false,"retryOnFailure":false},
+  "reviewOnly":true,
+  "trainingEligible":false,
+  "xmlEligible":false,
+  "productionEligible":false,
+  "productionRoutingEnabled":false
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "argos_guihv5_scribe_hold_projection_maintenance_design_v1",
+  "createdUtc": "2026-08-31T23:47:00Z",
+  "state": "PASS_GUIHV5_SCRIBE_HOLD_PROJECTION_MAINTENANCE_DESIGN",
+  "freshNamespace": "GUIHV5",
+  "targets": [
+    {
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe",
+      "predecessorSha256": "D893CA3C8F7C4F2993BA4D412986EC30D8B113408039EF8E381F4025C1A04D82",
+      "targetSha256": "018A74CB5EFA08D59810B09BD16EEF5E3F0345A4C4335CB59ABE334ABE888AA7"
+    },
+    {
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/runtime/viewer/ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe",
+      "predecessorSha256": "D893CA3C8F7C4F2993BA4D412986EC30D8B113408039EF8E381F4025C1A04D82",
+      "targetSha256": "018A74CB5EFA08D59810B09BD16EEF5E3F0345A4C4335CB59ABE334ABE888AA7"
+    },
+    {
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/runtime/viewer/Program.cs",
+      "predecessorSha256": "DFEC0EA9E7A3C309CD7BD845099B23AB725A760035EBAC787340570C34181C76",
+      "targetSha256": "776BDD0F5D8F644851A8495187178417B021CF5350A988FD0DBFE94D0CFDEF0A"
+    },
+    {
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/Update-JbodDashboardManifest.ps1",
+      "predecessorSha256": "73C2289B58F6F6B23DD2FA12E847AFF171B3FAC45153202E93EE00E0B7533FBA",
+      "targetSha256": "C6A862FE32BB1013626A2C70D97173732F24724D644F44D084EC67DBB3351299"
+    }
+  ],
+  "entryPointSha256": "120BC5BD757AC4C0DE3104A4634E5DE4934872680B605EF692BEC5BEDA5029DD",
+  "signedProducerOutputPredecessors": {
+    "dashboardSha256": "E55F21FF680DD70AD2D71084B199F21862D91E9C4FC83D4943D0FF510846F16B",
+    "dashboardStatusSha256": "787BD3107214E3C50FF8589310D7C77AFE0A9D1584E733372F928A4AB671A189"
+  },
+  "authorizedActions": {
+    "task": ["STOP_IF_RUNNING:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2", "START_ALWAYS:ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2"],
+    "process": ["CLOSE_IF_RUNNING:ArgosEdgeLab.JbodCompositeAccepted.V1_2.exe"],
+    "producer": ["RUN_ONCE:Update-JbodDashboardManifest.ps1"]
+  },
+  "exactRegression": {
+    "acquisitionRows": 380,
+    "physicalRows": 190,
+    "stateSplit": [126, 55, 5, 4],
+    "operatorReviewReady": 5,
+    "missingQueueJoins": 0,
+    "unrelatedRowsUnchanged": 1342
+  },
+  "processorSelectorStateUnchanged": true,
+  "importerExecuted": false,
+  "identityStateChanged": false,
+  "xmlActivation": false,
+  "detectorScoring": false,
+  "imageProcessing": false,
+  "retryOnFailure": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
