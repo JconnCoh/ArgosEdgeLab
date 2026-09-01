@@ -10673,3 +10673,20 @@ than rerunning it.
   withdrawn, no-retry evidence. Do not patch, republish, or reuse that
   namespace. Any later authorized observation requires a fresh request after
   the caller/consumer field contract is mechanically gated.
+
+## 2026-09-01 — Windows PowerShell 5.1 generic-list array snapshots can fail at runtime
+
+- Failure signature: signed R27B32 reached JBOD and failed in
+  `Invoke-R27B32.ps1` with `Argument types do not match` before it could emit
+  batch stdout.
+- Cause: the concurrent runner used `@($running)` where `$running` was a
+  `Collections.Generic.List[object]`; Windows PowerShell 5.1 can fail binding
+  that array-subexpression even though the script parses and static harness
+  safety passes.
+- Mandatory preflight: for every Windows PowerShell 5.1 concurrent runner,
+  reject array-subexpressions over generic lists and execute a PS5.1 unit
+  rehearsal that snapshots a populated list. Use the list's typed
+  `.ToArray()` method for iteration snapshots.
+- Recovery: retain R27B32 as signed-terminal failed and no-retry. Use a fresh
+  package and output namespace with unchanged detector, cases, thresholds,
+  and 32-case gate; change only both generic-list snapshots to `.ToArray()`.
