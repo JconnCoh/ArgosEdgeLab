@@ -52,7 +52,7 @@ $pathGate = Get-Content -Raw -LiteralPath $pathGatePath | ConvertFrom-Json
 $routeGate = Get-Content -Raw -LiteralPath $routeGatePath | ConvertFrom-Json
 Assert-True ([string]$finalGate.state -eq 'PASS_R6V1_FINAL_PACKAGE_GATE' -and [string]$finalGate.requestId -eq $requestId -and [string]$finalGate.requestZipSha256 -eq $expectedZipSha) 'R6V1 final package identity changed.'
 Assert-True ([bool]$finalGate.exactFinalZipExtractionPassed -and [bool]$finalGate.exactFinalZipSignaturePassed -and -not [bool]$finalGate.publicationAuthorized) 'R6V1 frozen package contract changed.'
-Assert-True ([string]$pathGate.state -eq 'PASS_R6V1_COMPLETE_PATH_ROUTE_GATE' -and [int]$pathGate.maximumEffectiveLength -lt 200) 'R6V1 complete path route gate changed.'
+Assert-True ([string]$pathGate.state -eq 'PASS_R6V1_PATH_ROUTE_GATE' -and [int]$pathGate.maximumEffectiveLength -lt 200) 'R6V1 complete path route gate changed.'
 Assert-True ([string]$routeGate.state -eq 'PASS_R6V1_CURRENT_ROUTE_SHARE_AND_QUEUE_GATE' -and [string]$routeGate.requestId -eq $requestId) 'R6V1 current route gate changed.'
 Assert-True ([bool]$routeGate.publication.authorized -and [int]$routeGate.publication.maximumPublications -eq 1 -and -not [bool]$routeGate.publication.retryAuthorized -and [bool]$routeGate.publication.matchingSignedTerminalResponseOnly) 'R6V1 publication boundary changed.'
 Assert-True ([int]$routeGate.queueObservation.pendingRequestFileCount -eq 0 -and [int]$routeGate.queueObservation.unresolvedEarlierAcceptedRequestCount -eq 0 -and [int]$routeGate.queueObservation.exactRequestIdProcessedMatchCount -eq 0 -and [int]$routeGate.queueObservation.exactRequestIdResponseMatchCount -eq 0) 'R6V1 queue route is not clear.'

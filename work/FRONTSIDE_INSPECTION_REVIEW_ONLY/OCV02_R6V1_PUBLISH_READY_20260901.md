@@ -14,12 +14,14 @@ The main coordinator released the Project Portal lane after the backside live re
 ## Publication gates
 
 - Current route/share gate SHA-256: `9B80A94D052B8454372CEABEC90B7113C883F1638314A69AABD81EB5FF373A15`
-- Publisher SHA-256: `A7A0E164BF3F1A52D5CCAD0200E8E92C7F57B45D99E1DE295B5E4C3222376394`
-- Publisher harness gate SHA-256: `FC369FEE9E8FE25EB795F0BA570AEDF1E5856FDAD0C0C12EA3A708AD13E22FFD`
-- Publication pre-action SHA-256: `A7F1111887C38E35E12572B7EB14F7DDF95935518760E6E62083FC0FCA6322DD`
+- Publisher SHA-256: `33D1B1CBC9D91E8BA2B1F9A90C6F568211104D30576A0474F7E620CD832AB6F9`
+- Publisher harness gate SHA-256: `5CDBD621DCD4234F3ADCEE2E4B7FC6DDEDF9888399ED314D1EB5211A30592F10`
+- Publication pre-action SHA-256: `89F12ABA488DD43F3E7A2D3C6C32D40D5698F1DA84E82114AEB0480B45A50682`
 - Zero-recurrence guard: `PASS_ARGOS_ZERO_RECURRENCE_PREACTION`
 - Maximum publications: `1`
 - Retry authorized: `false`
 - Matching signed terminal response only: `true`
 
 All identity acceptance, hold clearance, XML, training, provider activation, and production authority remain disabled. The next action is to commit and push these exact gate bytes, require a clean matching branch, run the publisher's non-mutating preflight, publish once, and collect only the exact matching signed terminal response.
+
+The first non-mutating publisher preflight exposed a draft-only state-token typo (`PASS_R6V1_COMPLETE_PATH_ROUTE_GATE` versus the pinned gate's actual `PASS_R6V1_PATH_ROUTE_GATE`). No shared target bytes were written. The draft publisher assertion and dependent local hashes were corrected in place and the harness gate was rerun.
