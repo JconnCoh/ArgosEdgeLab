@@ -1151,3 +1151,11 @@ task from changing which revision, UI, evidence, or next action is active.
 - SHA-256: `F9785D16F658776B67774775F9F30DE8C246C2493F7462521B9E523D0369917C`
 - Signed result: response `R_70A873A42FC1_20260901175547361_0322746f`, ZIP `FA58C572E9714357020AAD36A90EB51C476DBAFDCB3018FCCC441FBAB045A59B`, passed; 17 reused plus seven new equals all 24 frozen candidates, with no eligible control and no selector relaxation.
 - Exact next action: retain notch-adjacent as an explicit hold and continue only O23 ambiguity evidence. Fresh 953 and later phases remain unauthorized.
+
+## 2026-09-01 — Project Portal PPL1 offline parallel-lane rehearsal
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/PROJECT_PORTAL_PARALLEL_LANES_PPL1_OFFLINE_REHEARSAL_CHECKPOINT_20260901.md`
+- SHA-256: `09346A00B8797ACB50A990E1A880700EEA01014D0A14A21820C4DB20595DE3BF`
+- Design: one serialized CONTROL lane plus isolated REVIEW_A and REVIEW_B queues, roots, locks, ledgers, outputs, and response correlation; unchanged current single-lane fallback.
+- Offline proof: Windows PowerShell 5.1 passed 14 checks including 1,240 ms detector/OCR handler overlap, one-lane crash/restart with peer success, response failure, poison, work collision, idempotency, CONTROL exclusion, 199/200/229/230 paths, and ZERO/ONE/MANY. Thirteen fixture terminal envelopes matched thirteen terminal ledgers.
+- Authority: `DIAGNOSTIC_ONLY`; no live contact, install, request, signature, publication, provider/image/GUI/XML action, or hold change. Live signed topology/capability observation and a separately authorized install/qualification revision remain required.

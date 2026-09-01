@@ -1,0 +1,50 @@
+{
+  "schema": "argos_project_portal_parallel_lanes_lock_matrix_v1",
+  "revision": "PPL1_OFFLINE_DESIGN_20260901",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "lockOrder": ["GLOBAL_MUTATION", "LANE"],
+  "resources": [
+    "SOURCE_READ",
+    "INSTALLED_CONFIGURATION",
+    "TASK_PROCESS_STATE",
+    "PROCESSOR_STATE",
+    "SOURCE_WRITE_DELETE",
+    "XML_OUTPUT",
+    "PRODUCTION_ROUTING"
+  ],
+  "classes": {
+    "CONTROL_READ": {
+      "jobClasses": ["STATUS", "DATA_PULL"],
+      "globalLock": "EXCLUSIVE",
+      "laneLock": "CONTROL_EXCLUSIVE",
+      "allowed": ["SOURCE_READ"]
+    },
+    "CONTROL_MUTATION": {
+      "jobClasses": ["MAINTENANCE_PATCH", "CONFIG_ACTION", "TASK_ACTION", "PROCESS_ACTION"],
+      "globalLock": "EXCLUSIVE",
+      "laneLock": "CONTROL_EXCLUSIVE",
+      "allowedOnlyByExactRequestAllowlist": ["INSTALLED_CONFIGURATION", "TASK_PROCESS_STATE"],
+      "alwaysDenied": ["SOURCE_WRITE_DELETE", "PRODUCTION_ROUTING"]
+    },
+    "REVIEW_COMPUTE": {
+      "jobClasses": ["REVIEW_DETECTOR", "REVIEW_OCR"],
+      "globalLock": "SHARED",
+      "laneLock": "OWN_LANE_EXCLUSIVE",
+      "allowed": ["SOURCE_READ"],
+      "alwaysDenied": [
+        "INSTALLED_CONFIGURATION",
+        "TASK_PROCESS_STATE",
+        "PROCESSOR_STATE",
+        "SOURCE_WRITE_DELETE",
+        "XML_OUTPUT",
+        "PRODUCTION_ROUTING"
+      ]
+    }
+  },
+  "concurrency": {
+    "REVIEW_A_WITH_REVIEW_B": true,
+    "CONTROL_READ_WITH_REVIEW": false,
+    "CONTROL_MUTATION_WITH_ANY_REVIEW": false,
+    "TWO_CONTROL_REQUESTS": false
+  }
+}

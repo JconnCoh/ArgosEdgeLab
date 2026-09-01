@@ -1,0 +1,26 @@
+{
+  "schema": "argos_project_portal_parallel_lanes_v1_path_gate",
+  "createdUtc": "2026-09-01T19:48:00Z",
+  "state": "PASS_PPL1_PROPOSED_ROOT_PATH_GATE",
+  "windowsPowerShell": "5.1.26100.9168",
+  "reservedSuffixCharacters": 32,
+  "maximumRequestIdLength": 52,
+  "maximumEffectiveLength": 109,
+  "maximumComponentLength": 66,
+  "roots": [
+    "C:/AP2/C", "C:/AP2/A", "C:/AP2/B",
+    "D:/AP2/C", "D:/AP2/A", "D:/AP2/B"
+  ],
+  "longestLeaf": "D:/AP2/B/r/REQ_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.terminal.json",
+  "cases": [
+    {"hostClass":"GATEWAY_OR_ARGOS","leaf":"C:/AP2/C/q/REQ_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.failed.json","effectiveLength":107,"maximumComponentLength":64,"state":"PASS_PATH_BUDGET"},
+    {"hostClass":"GATEWAY_OR_ARGOS","leaf":"C:/AP2/A/p/REQ_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.partial","effectiveLength":103,"maximumComponentLength":60,"state":"PASS_PATH_BUDGET"},
+    {"hostClass":"GATEWAY_OR_ARGOS","leaf":"C:/AP2/B/r/REQ_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.terminal.json","effectiveLength":109,"maximumComponentLength":66,"state":"PASS_PATH_BUDGET"},
+    {"hostClass":"JBOD","leaf":"D:/AP2/C/q/REQ_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.failed.json","effectiveLength":107,"maximumComponentLength":64,"state":"PASS_PATH_BUDGET"},
+    {"hostClass":"JBOD","leaf":"D:/AP2/A/p/REQ_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.partial","effectiveLength":103,"maximumComponentLength":60,"state":"PASS_PATH_BUDGET"},
+    {"hostClass":"JBOD","leaf":"D:/AP2/B/r/REQ_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.terminal.json","effectiveLength":109,"maximumComponentLength":66,"state":"PASS_PATH_BUDGET"}
+  ],
+  "liveRootsCreated": false,
+  "mutationsPerformed": false,
+  "liveQualified": false
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "PPL1_OFFLINE_DESIGN_CHECKPOINT_20260901",
+  "createdUtc": "2026-09-01T19:54:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "OFFLINE_INFRASTRUCTURE_DESIGN_CHECKPOINT_ONLY",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C",
+  "dependencies": [
+    {"path":"work/PROJECT_PORTAL_PARALLEL_LANES_V1/PPL1_SOURCE_FREEZE.json","sha256":"38A45AE6EDBCA22C10257E26E1A78C78E2235C5B4FCD9C63539BA83F83F5F242"},
+    {"path":"work/PROJECT_PORTAL_PARALLEL_LANES_V1/PPL1_OFFLINE_REHEARSAL_GATE.json","sha256":"91BD11D10B17A4E23877615175A1BB7E11C31405741441B076292CB0FD5708CF"},
+    {"path":"work/PROJECT_PORTAL_PARALLEL_LANES_V1/PPL1_PROPOSED_ROOT_PATH_GATE.json","sha256":"015679F4B359360B6B6F13F91E6EBB0C8BA8D1588FDD4FB00758C22F96DF8701"},
+    {"path":"work/O3B21/R25NA1_GATEWAY_OBS1_20260901.json","sha256":"A481408E9A2AD6CF7B1570153E057668FF23C20831BFF26911091BDF67A0C364"},
+    {"path":"work/O3B21/R25NA2_PREPUBLICATION_PATH_GATE.json","sha256":"A0CA54789F2EF32B35AD555CE99524B898F4AA1BDEDB797CCE8C7742F23CB9D9"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/PROJECT_PORTAL_PARALLEL_LANES_V1/PPL1_COLLECTION_CASE_GATE.json",
+    "sha256": "4C3FF6EB16E547141F5A4010464738617E232440642FBBD6ABBB4A44B1D48B9A",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

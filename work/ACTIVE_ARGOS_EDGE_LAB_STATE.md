@@ -9424,3 +9424,24 @@ fresh 953 and all later phases remain unauthorized.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA2_COMPLETE_NO_ELIGIBLE_CONTROL_HOLD_CHECKPOINT_20260901.md`,
 SHA-256 `F9785D16F658776B67774775F9F30DE8C246C2493F7462521B9E523D0369917C`.
+
+# 2026-09-01 — Project Portal PPL1 offline parallel-lane rehearsal (`DIAGNOSTIC_ONLY`)
+
+An isolated infrastructure worktree now contains a fixture-only three-lane
+design: one serialized CONTROL lane plus two independent review-compute lanes.
+The exact Windows PowerShell 5.1 rehearsal passed simultaneous detector/OCR,
+crash/restart, compact response failure, poisoned head, stale work collision,
+idempotent replay, CONTROL exclusion, path-boundary, and zero/one/many cases.
+It produced 13 integrity-sealed fixture terminals and 13 matching per-lane
+terminal ledgers with zero correlation mismatch.
+
+No live route, queue, task, process, file, request, provider, image, GUI, XML,
+wafer, or hold changed. The current single lane remains the unchanged fallback;
+PPL1 is not live-qualified or publishable. A signed topology/capability
+observation, fresh installable revision, real-signer package rehearsal,
+explicit publication authority, signed install response, rollback proof, and
+simultaneous live review-only qualification remain required.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/PROJECT_PORTAL_PARALLEL_LANES_PPL1_OFFLINE_REHEARSAL_CHECKPOINT_20260901.md`,
+SHA-256 `09346A00B8797ACB50A990E1A880700EEA01014D0A14A21820C4DB20595DE3BF`.

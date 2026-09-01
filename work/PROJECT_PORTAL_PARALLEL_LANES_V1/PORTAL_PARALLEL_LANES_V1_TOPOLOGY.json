@@ -1,0 +1,96 @@
+{
+  "schema": "argos_project_portal_parallel_lanes_topology_v1",
+  "revision": "PPL1_OFFLINE_DESIGN_20260901",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "liveQualified": false,
+  "offlineFixtureOnly": true,
+  "fallback": {
+    "state": "UNCHANGED_SINGLE_LANE",
+    "requestRoots": [
+      "U:/ProjectPortalRO/requests",
+      "C:/APR/S/requests",
+      "C:/ProgramData/ArgosProjectPortalRO/share/staging",
+      "C:/ProgramData/ArgosProjectPortalRO/requests_to_argos/pending",
+      "C:/ProgramData/ArgosProjectPortalRO/requests_from_gateway/pending",
+      "C:/ProgramData/ArgosProjectPortalRO/to_jbod/pending",
+      "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/pending"
+    ],
+    "responseRoots": [
+      "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/state/response_quarantine",
+      "C:/ProgramData/ArgosProjectPortalRO/to_argos/pending",
+      "C:/ProgramData/ArgosProjectPortalRO/from_jbod/pending",
+      "C:/ProgramData/ArgosProjectPortalRO/to_gateway/pending",
+      "C:/APR/R/pending",
+      "C:/ProgramData/ArgosProjectPortalRO/share/response_zip_archive",
+      "U:/ProjectPortalRO/responses"
+    ],
+    "sourceEvidence": "work/O3B21/R25NA2_PREPUBLICATION_PATH_GATE.json"
+  },
+  "proposed": {
+    "gatewayImporter": {
+      "host": "TXSH-DPMZ0295HR",
+      "mode": "PERSISTENT_NON_INTERACTIVE",
+      "principalRequirement": "DEDICATED_NON_INTERACTIVE_SERVICE_PRINCIPAL",
+      "interactiveLogonAllowed": false,
+      "requestShareRoots": {
+        "CONTROL": "U:/ProjectPortalRO/v2/c",
+        "REVIEW_A": "U:/ProjectPortalRO/v2/a",
+        "REVIEW_B": "U:/ProjectPortalRO/v2/b"
+      },
+      "localRoots": {
+        "CONTROL": "C:/AP2/C",
+        "REVIEW_A": "C:/AP2/A",
+        "REVIEW_B": "C:/AP2/B"
+      }
+    },
+    "argosRelay": {
+      "host": "DESKTOP-266P787",
+      "localRoots": {
+        "CONTROL": "C:/AP2/C",
+        "REVIEW_A": "C:/AP2/A",
+        "REVIEW_B": "C:/AP2/B"
+      }
+    },
+    "jbodEndpoint": {
+      "host": "A1025645101",
+      "localRoots": {
+        "CONTROL": "D:/AP2/C",
+        "REVIEW_A": "D:/AP2/A",
+        "REVIEW_B": "D:/AP2/B"
+      }
+    },
+    "laneLeafContract": {
+      "incoming": "i",
+      "work": "w",
+      "responsePartial": "p",
+      "responseReady": "r",
+      "quarantine": "q",
+      "ledger": "l",
+      "output": "o",
+      "compactFailure": "f",
+      "processed": "d"
+    },
+    "responseCorrelation": {
+      "requiredFields": ["requestId", "laneId", "jobClass", "terminalState", "requestSha256"],
+      "exactlyOneTerminalPerLaneRequest": true,
+      "crossLaneResponseAcceptance": false
+    }
+  },
+  "authority": {
+    "CONTROL": {
+      "jobClasses": ["STATUS", "DATA_PULL", "MAINTENANCE_PATCH", "CONFIG_ACTION", "TASK_ACTION", "PROCESS_ACTION"],
+      "serialized": true,
+      "productionRoutingEnabled": false
+    },
+    "REVIEW_A": {
+      "jobClasses": ["REVIEW_DETECTOR", "REVIEW_OCR"],
+      "mayMutateInstalledBytesTasksProcessesQueuesOrSources": false,
+      "productionRoutingEnabled": false
+    },
+    "REVIEW_B": {
+      "jobClasses": ["REVIEW_DETECTOR", "REVIEW_OCR"],
+      "mayMutateInstalledBytesTasksProcessesQueuesOrSources": false,
+      "productionRoutingEnabled": false
+    }
+  }
+}

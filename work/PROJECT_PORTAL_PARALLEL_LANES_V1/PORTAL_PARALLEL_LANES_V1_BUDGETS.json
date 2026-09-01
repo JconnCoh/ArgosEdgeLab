@@ -1,0 +1,19 @@
+{
+  "schema": "argos_project_portal_parallel_lanes_budgets_v1",
+  "revision": "PPL1_OFFLINE_DESIGN_20260901",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "reservedSuffixCharacters": 32,
+  "hardStopEffectivePathLength": 230,
+  "shortAliasRequiredEffectivePathLength": 200,
+  "newComponentMaximumLength": 80,
+  "lanes": {
+    "CONTROL": {"maximumCpuSeconds": 900, "maximumMemoryMiB": 1024, "maximumDiskMiB": 512, "maximumConcurrent": 1},
+    "REVIEW_A": {"maximumCpuSeconds": 1800, "maximumMemoryMiB": 8192, "maximumDiskMiB": 16384, "maximumConcurrent": 1},
+    "REVIEW_B": {"maximumCpuSeconds": 1800, "maximumMemoryMiB": 8192, "maximumDiskMiB": 16384, "maximumConcurrent": 1}
+  },
+  "enforcement": {
+    "admissionRejectsOverBudgetBeforeClaim": true,
+    "runtimeJobObjectAndDiskQuotaRequiredBeforeLiveQualification": true,
+    "offlineRehearsalModelsAdmissionOnly": true
+  }
+}

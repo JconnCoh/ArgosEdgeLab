@@ -1,0 +1,18 @@
+{
+  "schema": "argos_powershell_collection_case_gate_v1",
+  "createdUtc": "2026-09-01T19:53:00.1577261Z",
+  "state": "PASS_ARGOS_POWERSHELL_COLLECTION_CASES",
+  "windowsPowerShell": {"major": 5, "minor": 1, "version": "5.1.26100.9168"},
+  "caseIds": ["ZERO", "ONE", "MANY"],
+  "cases": [
+    {"caseId":"ZERO","state":"PASS","laneCount":3,"requestCount":0},
+    {"caseId":"ONE","state":"PASS","requestCountPerComputeLane":1,"terminalCount":2},
+    {"caseId":"MANY","state":"PASS","controlQueueCount":2,"serialized":true,"terminalCount":2}
+  ],
+  "sourceFiles": [
+    {"path":"work/PROJECT_PORTAL_PARALLEL_LANES_V1/Test-ArgosPortalParallelLanesV1.ps1","sha256":"0FD332857690238B8F6D89ED4148DD2B32637B1513D328682D4DD768511F2A2D"}
+  ],
+  "rehearsalGatePath": "work/PROJECT_PORTAL_PARALLEL_LANES_V1/PPL1_OFFLINE_REHEARSAL_GATE.json",
+  "mutationsPerformedOutsideFixture": false,
+  "liveQualified": false
+}

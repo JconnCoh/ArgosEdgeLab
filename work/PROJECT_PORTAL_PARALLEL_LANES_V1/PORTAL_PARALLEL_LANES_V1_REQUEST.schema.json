@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "argos_project_portal_parallel_lane_request_v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "requestId", "laneId", "jobClass", "authority", "budget", "outputRoot", "shortAliasVerified", "fixture"],
+  "properties": {
+    "schema": {"const": "argos_project_portal_parallel_lane_request_v1"},
+    "requestId": {"type": "string", "minLength": 12, "maxLength": 52, "pattern": "^REQ_[A-Z0-9_]+$"},
+    "laneId": {"enum": ["CONTROL", "REVIEW_A", "REVIEW_B"]},
+    "jobClass": {"enum": ["STATUS", "DATA_PULL", "MAINTENANCE_PATCH", "CONFIG_ACTION", "TASK_ACTION", "PROCESS_ACTION", "REVIEW_DETECTOR", "REVIEW_OCR"]},
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reviewOnly", "trainingEligible", "xmlEligible", "productionEligible", "sourceMutationAllowed", "taskProcessActionAllowed"],
+      "properties": {
+        "reviewOnly": {"const": true},
+        "trainingEligible": {"const": false},
+        "xmlEligible": {"const": false},
+        "productionEligible": {"const": false},
+        "sourceMutationAllowed": {"const": false},
+        "taskProcessActionAllowed": {"type": "boolean"}
+      }
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cpuSeconds", "memoryMiB", "diskMiB"],
+      "properties": {
+        "cpuSeconds": {"type": "integer", "minimum": 1},
+        "memoryMiB": {"type": "integer", "minimum": 1},
+        "diskMiB": {"type": "integer", "minimum": 1}
+      }
+    },
+    "outputRoot": {"type": "string", "minLength": 3},
+    "shortAliasVerified": {"type": "boolean"},
+    "fixture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["delayMilliseconds", "fault"],
+      "properties": {
+        "delayMilliseconds": {"type": "integer", "minimum": 0, "maximum": 10000},
+        "fault": {"enum": ["NONE", "PROCESS_TERMINATION_AFTER_HANDLER", "RESPONSE_CONSTRUCTION_FAILURE"]}
+      }
+    }
+  }
+}
