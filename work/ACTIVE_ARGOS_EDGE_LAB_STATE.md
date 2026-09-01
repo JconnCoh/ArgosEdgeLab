@@ -9445,3 +9445,21 @@ training, XML, production, or automatic hold-clearance authority is granted.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R28O23_PASS_BACKSIDE_PREREQUISITES_COMPLETE_CHECKPOINT_20260901.md`,
 SHA-256 `A78B337A745DC1640CD62E2EA33718515C9BAC57175CC0941BA063A11436BD1F`.
+
+# 2026-09-01 — OCV-03 O3B21 R28C953L1 inventory cardinality failure (`PENDING_GATE`)
+
+The one authorized launch returned matching signed JBOD terminal failure
+`R_43247A7F250D_20260901205134388_9b20f910`. Its exact prelaunch inventory
+completed but did not contain exactly 953 BACK pairs, so the guard stopped
+with `R28C953 pair cardinality changed.` No corpus worker or image processing
+started. No existing process, source, provider, training, XML, production, or
+hold state changed.
+
+R28C953L1 is terminal/no-retry. Before any later corpus mutation, obtain one
+direct read-only observation of `D:/R28C953INV/inventory.json` and reconcile
+its exact identities against the frozen R20 953 set. Do not guess the new
+count, broaden the corpus, or relax the frozen identity boundary.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R28C953L1_INVENTORY_CARDINALITY_FAILURE_CHECKPOINT_20260901.md`,
+SHA-256 `029138CFEBE14EFB88F4B37910B22906FB06EC03E1B32C2138484F8F0ED77B65`.
