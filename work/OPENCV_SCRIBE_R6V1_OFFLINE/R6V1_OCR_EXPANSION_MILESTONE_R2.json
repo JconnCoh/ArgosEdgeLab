@@ -1,0 +1,74 @@
+{
+  "schema": "argos_r6v1_ocr_expansion_milestone_v2",
+  "createdUtc": "2026-09-01T20:27:01.8437974Z",
+  "state": "PASS_R6V1_ACCEPTED_GRID_EXPANSION_DIAGNOSTIC",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "predecessorMilestone": {
+    "path": "work/OPENCV_SCRIBE_R6V1_OFFLINE/R6V1_OFFLINE_MILESTONE.json",
+    "sha256": "1007A447AB0EDDD5E9C340AF957EA099B0324A29D7EED9FE8D516C3567B4107B",
+    "state": "SUPERSEDED_DRAFT_EXPANSION_RUNNER",
+    "reason": "The predecessor pinned an unexecuted fail-fast draft; R1/R2 preserve the first executed diagnostic and its corrected comparator in fresh result namespaces."
+  },
+  "runtime": {
+    "pythonPath": "C:\\Python314\\python.exe",
+    "opencvVersion": "5.0.0",
+    "numpyVersion": "2.5.2"
+  },
+  "withdrawnR1": {
+    "state": "WITHDRAWN_COMPARATOR_MISMATCH",
+    "runnerPath": "work/OPENCV_SCRIBE_R6V1_OFFLINE/Run-R6V1OcrSegmentationDiagnostics.py",
+    "runnerSha256": "5FFD56B2F4AA3BB5A5F17CAE2D9825CD35FDEF4E88D57893832A67DE2D01A327",
+    "resultPath": "work/OPENCV_SCRIBE_R6V1_OFFLINE/R6V1_OCR_SEGMENTATION_DIAGNOSTIC.json",
+    "resultSha256": "54D3DED8A63D4AB195851EFEDF4FA5DD3404E76591E02C00FD4ABE86E97E0019",
+    "resultState": "HOLD_R6V1_DIAGNOSTIC_RUNTIME_BASELINE_DRIFT",
+    "committedSummaryPath": "work/OPENCV_SCRIBE_R6V1_OFFLINE/R6V1_OCR_SEGMENTATION_DIAGNOSTIC_R1_SUMMARY.json",
+    "committedSummarySha256": "942DDD01970C7EF3A986393FE7C95A1F77863CD163872D0CBEB4346327722FE2",
+    "cause": "R1 compared accepted-grid expansion zero against the independent full-localization refined grid.",
+    "targetMutationPerformed": false,
+    "reusableAsPublicationParent": false
+  },
+  "r2": {
+    "runnerPath": "work/OPENCV_SCRIBE_R6V1_OFFLINE/Run-R6V1OcrSegmentationDiagnosticsR2.py",
+    "runnerSha256": "31238F3611C338BAEE8EED9FEF68F1AC0E9D8AF11201E52D2BC94DC9037DA374",
+    "resultPath": "work/OPENCV_SCRIBE_R6V1_OFFLINE/R6V1_OCR_SEGMENTATION_DIAGNOSTIC_R2.json",
+    "resultSha256": "64CBFA6ED014C9024E2CEBA4726F60CD26D5FCECC1655A5F0B90B9CDBF245776",
+    "resultState": "PASS_R6V1_DIAGNOSTIC_ACCEPTED_GRID_EXPANSION",
+    "committedSummaryPath": "work/OPENCV_SCRIBE_R6V1_OFFLINE/R6V1_OCR_SEGMENTATION_DIAGNOSTIC_R2_SUMMARY.json",
+    "committedSummarySha256": "401AED64B1436EC619FE0E5E7C128FA5630A1A31D07E25A8B9655A7F16AEB257",
+    "baselineComparatorPath": "work/OPENCV_SCRIBE_V1R6/OCV02_R6_LOCKED_PARITY_GATE.json",
+    "baselineComparatorSha256": "267086773F7233246FE621EAA8824B495DD4CE4369CD95D92D29438D7B14DE8E",
+    "baselineMismatchCount": 0
+  },
+  "expansionSummaries": [
+    {"expansionPixels": 0, "exactProposalCount": 15, "characterCorrect": 173, "truthInBoundedCandidates": 180, "boundaryCompleteCount": 15, "duplicateAgreementCount": 4},
+    {"expansionPixels": 2, "exactProposalCount": 15, "characterCorrect": 175, "truthInBoundedCandidates": 180, "boundaryCompleteCount": 15, "duplicateAgreementCount": 4},
+    {"expansionPixels": 4, "exactProposalCount": 15, "characterCorrect": 176, "truthInBoundedCandidates": 180, "boundaryCompleteCount": 15, "duplicateAgreementCount": 4},
+    {"expansionPixels": 6, "exactProposalCount": 15, "characterCorrect": 177, "truthInBoundedCandidates": 180, "boundaryCompleteCount": 15, "duplicateAgreementCount": 4},
+    {"expansionPixels": 8, "exactProposalCount": 15, "characterCorrect": 177, "truthInBoundedCandidates": 180, "boundaryCompleteCount": 15, "duplicateAgreementCount": 4},
+    {"expansionPixels": 12, "exactProposalCount": 15, "characterCorrect": 176, "truthInBoundedCandidates": 180, "boundaryCompleteCount": 15, "duplicateAgreementCount": 4}
+  ],
+  "selection": {
+    "selectedExpansionPixels": null,
+    "thresholdFrozen": false,
+    "liveRevisionCreated": false,
+    "reason": "Frozen controls provide diagnostic sensitivity evidence only; no independent future transfer has been run."
+  },
+  "frozenLiveRevision": {
+    "requestId": "REQ_20260901T160000111Z_7F77B8EFE092",
+    "requestZipSha256": "E4F62D6126F9FBEDD228CDDE8678136D7FDEFCF5CB2B3825BF1245E11BBF925D",
+    "endpointSha256": "F805E8336FF0A1847D0326ED8A77FFC39207128E8C69177559D0F6BE9E888A25",
+    "batchSha256": "7F77B8EFE0926E4AD37A737F07C98E1A3DF2E8F1392D0B47B886E05F9F52143B",
+    "changed": false,
+    "published": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "mayClearHolds": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "providerActivated": false
+  },
+  "nextAction": "Keep the expansion matrix diagnostic-only. Remain serialized behind R25NA1 and wait for explicit portal lane clear before publishing the unchanged R6V1 request exactly once."
+}

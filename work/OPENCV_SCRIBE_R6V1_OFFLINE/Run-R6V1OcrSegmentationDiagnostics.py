@@ -199,6 +199,7 @@ def main() -> int:
     }
     prototypes, reference_evidence = engine.load_reference_prototypes(reference_manifest, REFERENCE_MANIFEST_SHA256, roots)
     controls = []
+    baseline_mismatches = []
     summaries = {expansion: {"expansionPixels": expansion, "exactProposalCount": 0, "characterCorrect": 0, "truthInBoundedCandidates": 0, "boundaryCompleteCount": 0} for expansion in EXPANSIONS}
     duplicate_groups: dict[str, list[dict[str, Any]]] = {}
     for corpus_row in corpus:
@@ -217,7 +218,13 @@ def main() -> int:
         expansion_rows = [evaluate_expansion(engine, residual, bank, accepted["grid"], truth, expansion) for expansion in EXPANSIONS]
         baseline = expansion_rows[0]
         if baseline.get("imageFirstString") != locked["imageFirstString"] or baseline.get("proposedString") != locked["proposedString"]:
-            raise RuntimeError(f"R6 baseline reproduction changed: {alias}")
+            baseline_mismatches.append({
+                "alias": alias,
+                "lockedImageFirstString": str(locked["imageFirstString"]),
+                "observedImageFirstString": str(baseline.get("imageFirstString", "")),
+                "lockedProposedString": str(locked["proposedString"]),
+                "observedProposedString": str(baseline.get("proposedString", "")),
+            })
         for row in expansion_rows:
             if not row.get("inBounds"):
                 continue
@@ -255,11 +262,11 @@ def main() -> int:
         summary["duplicateGroups"] = duplicate_rows
         summary_rows.append(summary)
     baseline_summary = summary_rows[0]
-    baseline_pass = baseline_summary["exactProposalCount"] == 15 and baseline_summary["characterCorrect"] == 169 and baseline_summary["truthInBoundedCandidates"] == 180
+    baseline_pass = not baseline_mismatches and baseline_summary["exactProposalCount"] == 15 and baseline_summary["characterCorrect"] == 169 and baseline_summary["truthInBoundedCandidates"] == 180
     report = {
         "schema": "argos_r6v1_ocr_segmentation_diagnostic_v1",
         "createdUtc": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-        "state": "PASS_R6V1_DIAGNOSTIC_15_CONTROL_SEGMENTATION" if baseline_pass else "HOLD_R6V1_DIAGNOSTIC_BASELINE_MISMATCH",
+        "state": "PASS_R6V1_DIAGNOSTIC_15_CONTROL_SEGMENTATION" if baseline_pass else "HOLD_R6V1_DIAGNOSTIC_RUNTIME_BASELINE_DRIFT",
         "disposition": "DIAGNOSTIC_ONLY",
         "method": {
             "provider": "ARGOS_OPENCV_SCRIBE_V1R6",
@@ -269,11 +276,13 @@ def main() -> int:
             "purpose": "Measure bounded cell-envelope sensitivity before any future OCR revision.",
         },
         "dependencies": dependency_rows,
+        "runtime": {"python": sys.version, "opencv": engine.cv2.__version__, "numpy": np.__version__},
         "referenceCoverage": reference_evidence,
         "controlCount": len(controls),
         "summaries": summary_rows,
         "controls": controls,
         "baselineReproduced": baseline_pass,
+        "baselineMismatches": baseline_mismatches,
         "identityEligibleCount": 0,
         "automaticIdentityAuthority": False,
         "mayClearHolds": False,

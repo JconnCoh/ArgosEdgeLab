@@ -1,0 +1,27 @@
+{
+  "schema": "argos_r6v1_ocr_segmentation_diagnostic_summary_v1",
+  "createdUtc": "2026-09-01T20:23:35.301907Z",
+  "state": "WITHDRAWN_COMPARATOR_MISMATCH",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "fullLocalEvidence": {
+    "path": "work/OPENCV_SCRIBE_R6V1_OFFLINE/R6V1_OCR_SEGMENTATION_DIAGNOSTIC.json",
+    "sha256": "54D3DED8A63D4AB195851EFEDF4FA5DD3404E76591E02C00FD4ABE86E97E0019",
+    "bytes": 1610620,
+    "retainedLocally": true,
+    "committed": false
+  },
+  "cause": "Accepted-grid expansion zero was compared to the independent full-localization refined grid.",
+  "baselineMismatches": [
+    {"alias": "A06", "lockedImageFirstString": "147MH099SUF1", "observedImageFirstString": "147MH099SUD1", "lockedProposedString": "147MH099SUD1", "observedProposedString": "147MH099SUD1"},
+    {"alias": "A08", "lockedImageFirstString": "147MH099SUF1", "observedImageFirstString": "147MH099SUD1", "lockedProposedString": "147MH099SUD1", "observedProposedString": "147MH099SUD1"},
+    {"alias": "A11", "lockedImageFirstString": "1483G010SUA7", "observedImageFirstString": "1483G010SUA0", "lockedProposedString": "1483G010SUH2", "observedProposedString": "1483G010SUH2"},
+    {"alias": "A15", "lockedImageFirstString": "0230S035FEA2", "observedImageFirstString": "0230S035FEA0", "lockedProposedString": "0230S035FEA2", "observedProposedString": "0230S035FEA2"}
+  ],
+  "reusableAsPublicationParent": false,
+  "targetMutationPerformed": false,
+  "identityEligibleCount": 0,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "providerActivated": false
+}

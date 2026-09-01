@@ -1,0 +1,37 @@
+{
+  "schema": "argos_r6v1_ocr_segmentation_diagnostic_summary_v2",
+  "createdUtc": "2026-09-01T20:26:47.339308Z",
+  "state": "PASS_R6V1_DIAGNOSTIC_ACCEPTED_GRID_EXPANSION",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "fullLocalEvidence": {
+    "path": "work/OPENCV_SCRIBE_R6V1_OFFLINE/R6V1_OCR_SEGMENTATION_DIAGNOSTIC_R2.json",
+    "sha256": "64CBFA6ED014C9024E2CEBA4726F60CD26D5FCECC1655A5F0B90B9CDBF245776",
+    "bytes": 1609937,
+    "retainedLocally": true,
+    "committed": false
+  },
+  "runtime": {"pythonPath": "C:\\Python314\\python.exe", "opencvVersion": "5.0.0", "numpyVersion": "2.5.2"},
+  "baselineComparator": {
+    "path": "work/OPENCV_SCRIBE_V1R6/OCV02_R6_LOCKED_PARITY_GATE.json",
+    "sha256": "267086773F7233246FE621EAA8824B495DD4CE4369CD95D92D29438D7B14DE8E",
+    "mismatchCount": 0
+  },
+  "expansionSummaries": [
+    {"expansionPixels": 0, "exactProposalCount": 15, "characterCorrect": 173, "truthInBoundedCandidates": 180, "boundaryCompleteCount": 15, "duplicateAgreementCount": 4},
+    {"expansionPixels": 2, "exactProposalCount": 15, "characterCorrect": 175, "truthInBoundedCandidates": 180, "boundaryCompleteCount": 15, "duplicateAgreementCount": 4},
+    {"expansionPixels": 4, "exactProposalCount": 15, "characterCorrect": 176, "truthInBoundedCandidates": 180, "boundaryCompleteCount": 15, "duplicateAgreementCount": 4},
+    {"expansionPixels": 6, "exactProposalCount": 15, "characterCorrect": 177, "truthInBoundedCandidates": 180, "boundaryCompleteCount": 15, "duplicateAgreementCount": 4},
+    {"expansionPixels": 8, "exactProposalCount": 15, "characterCorrect": 177, "truthInBoundedCandidates": 180, "boundaryCompleteCount": 15, "duplicateAgreementCount": 4},
+    {"expansionPixels": 12, "exactProposalCount": 15, "characterCorrect": 176, "truthInBoundedCandidates": 180, "boundaryCompleteCount": 15, "duplicateAgreementCount": 4}
+  ],
+  "selectedExpansionPixels": null,
+  "thresholdFrozen": false,
+  "liveRevisionCreated": false,
+  "identityEligibleCount": 0,
+  "automaticIdentityAuthority": false,
+  "mayClearHolds": false,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "providerActivated": false
+}
