@@ -1,0 +1,51 @@
+{
+  "schema": "argos_o3b21_r31val1_all_current_recipe_validation_v1",
+  "revision": "O3B21_R31_DF_STRICT_BF_SPLIT_FLANK_ALL_CURRENT_RECIPES_20260901",
+  "state": "FROZEN_FOR_ONE_REVIEW_ONLY_VALIDATION",
+  "outputRoot": "D:/R31VAL1",
+  "maximumDimension": 2400,
+  "maximumConcurrentChildren": 3,
+  "maximumPerCaseSeconds": 180,
+  "maximumTotalCaseCount": 120,
+  "frozenR20": {
+    "root": "D:/KLARFExport/_ArgosReview/C15RUN4",
+    "summarySha256": "4852D80B4D1A45063154DE74B538E9279EAAB8B18B71396343F136B84FFB8246",
+    "resultsCsvSha256": "B74B86ED07D9632B61A5B4BB02B61597AC364E132645648202EA92F3138D5DE5",
+    "failuresSha256": "01025DACD167930D9C88D1AA364D4CE3AAED27D4819CEC41FCA0864FEF127B71",
+    "expectedPairedCandidateCounts": [1,1,1,1,1,2,1,1,0,0,1,0,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1]
+  },
+  "sameScanControl": {
+    "id": "62628-233_0527_SLOT16_LEFT_PASS",
+    "bf": "D:/KLARFExport/Coherent_W2W/Lot_62628-233/62628-233_20260729052723/Slot16/BrightfieldBacksideWafer/resizedImage/62628-233_Slot16_BrightfieldBacksideWafer_PM2_resizedImage.bmp",
+    "bfSha256": "367774217E686115C8D0B2D87DCF67D508D12D6FD2B86DE3504ADE7F0F848E6E",
+    "df": "D:/KLARFExport/Coherent_W2W/Lot_62628-233/62628-233_20260729052723/Slot16/DarkfieldBacksideWafer/resizedImage/62628-233_Slot16_DarkfieldBacksideWafer_PM2_resizedImage.bmp",
+    "dfSha256": "A6DFEBF711AA6600D6652899FECBB701B0F1B40FA78CE666E1885AC471D8E183",
+    "expectedPairedCandidateCount": 1
+  },
+  "currentInventory": {
+    "path": "D:/R28C953INV/inventory.json",
+    "sha256": "D6DF4E260A9B6B559B2A13ED4159F6DA7F3648E3CFABBF080F2171BB4D5D110C",
+    "pairCount": 978,
+    "prefixes": ["PatternedFront\\", "UnpatternedFront\\"],
+    "selection": "ALL_EXACT_SORTED_IDENTITIES_UNDER_BOTH_CURRENT_PRODUCTION_RECIPE_PREFIXES",
+    "minimumCombinedCount": 37,
+    "maximumCombinedCount": 87,
+    "expectedPairedCandidateCount": 1
+  },
+  "operatorExcludedHold": {
+    "identity": "PST_BRKFULLMETAL\\Lot_LotIDStringNotSet\\ProcessJob11\\Slot19|BACK",
+    "expectedPairedCandidateCount": 0,
+    "automaticClearanceAllowed": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "sourceMutationAllowed": false,
+    "existingTaskOrProcessActionAllowed": false,
+    "providerActivationAllowed": false,
+    "automaticRetryAllowed": false,
+    "fullCorpusAuthorized": false
+  }
+}

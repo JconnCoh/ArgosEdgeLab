@@ -9530,3 +9530,25 @@ an exact 70/70 pass.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R30VAL1_SIGNED_70_CASE_VALIDATION_READY_CHECKPOINT_20260901.md`,
 SHA-256 `D6AAD0BDB909E1E37F016FC49C5BB3EF5212AAC890B1FAE348EFA817DC33A649`.
+
+# 2026-09-01 — OCV-03 O3B21 R31 signed all-current-recipe validation ready (`PENDING_GATE`)
+
+R30VAL1 returned matching signed response
+`R_17BA348847BC_20260901222717176_56fddc1e`: 69/70 expected outcomes,
+including all 12 sampled UnpatternedFront pairs. Its sole miss was current
+PatternedFront Slot02 with one strict DF notch split into two clean narrow BF
+flanks. R31 `34476F0109CE68FB6365A7C650CC6FFF2B874B64A38EAA0DA09542261427BCA7`
+adds only unique split-flank topology confirmation after an R30 zero result;
+36 existing current-recipe R30 pairs bypass unchanged and the new rule triggers
+only on Slot02 across all 37 fully returned current-recipe candidate sets.
+
+Exact signed request `REQ_20260901T223823959Z_6B75D3448116`, ZIP
+`EAB38DB1B50C95B4A025E04D8C0F8FA7D0886D43372EE48A380DE169BBD8C198`,
+passed signature, PS5.1 packaged-entry, 80 synthetic, path, clone, harness, and
+preaction gates. Its one batch includes 32 frozen cases, Slot16, and every
+current PatternedFront and UnpatternedFront pair. Not published. Every hold is
+retained and fresh frozen-953 remains unauthorized pending all expected passes.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R31VAL1_SIGNED_ALL_CURRENT_RECIPE_VALIDATION_READY_CHECKPOINT_20260901.md`,
+SHA-256 `C9F31BEC4D1AA5450B8C43DFA102E57593B611824C33F0AB59D564A5F5A1EA8B`.

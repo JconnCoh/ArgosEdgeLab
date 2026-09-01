@@ -1,0 +1,24 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v2",
+  "revision":"O3B21_R31VAL1_PUBLISH_20260901",
+  "createdUtc":"2026-09-01T22:41:00Z",
+  "state":"PASS_PREACTION_CONTRACT",
+  "actionType":"PUBLISH_R31VAL1_REVIEW_ONLY_ALL_CURRENT_RECIPE_VALIDATION",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies":[
+    {"path":"work/O3B21/Publish-R31VAL1Package.ps1","sha256":"B5A2CFB29B9192C9F259B7D8019848D664E1D635D4C51ADD04741DA330DD350B"},
+    {"path":"work/O3B21/R31VAL1_SIGN_GATE.json","sha256":"87646950A8E507819FA753330C715E7FEF0D43F08E337AFC429A2E2F2BF23E7D"},
+    {"path":"work/O3B21/R31VAL1_FINAL_ZIP_REHEARSAL_GATE.json","sha256":"40DDE88C8518D80F38098C3A52081F71ED72850799CC158237C56EBC801400D0"},
+    {"path":"work/O3B21/R31VAL1_PREPUBLICATION_PATH_GATE.json","sha256":"B51D7A05F46DE7BCF36981F495A3111601DBDECBB3F500009E3FBA6493BEB5F2"},
+    {"path":"work/O3B21/R30VAL1_SIGNED_TERMINAL_RESULT_GATE.json","sha256":"7A13EA7AD3125F6668E18F4A5652E261F712E8D14093814E1B429E18FAE20A9D"},
+    {"path":"work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R30VAL1_SIGNED_70_CASE_VALIDATION_READY_CHECKPOINT_20260901.md","sha256":"D6AAD0BDB909E1E37F016FC49C5BB3EF5212AAC890B1FAE348EFA817DC33A649"}
+  ],
+  "controls":{
+    "valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":true,"templateResidueAuditPassed":true,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":true,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":true,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true
+  },
+  "collectionCaseEvidence":{"path":"work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json","sha256":"17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11","requiredCaseIds":["ZERO","ONE","MANY"]},
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":[]},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}
