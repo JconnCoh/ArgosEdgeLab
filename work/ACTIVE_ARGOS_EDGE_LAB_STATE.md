@@ -9424,3 +9424,24 @@ fresh 953 and all later phases remain unauthorized.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25NA2_COMPLETE_NO_ELIGIBLE_CONTROL_HOLD_CHECKPOINT_20260901.md`,
 SHA-256 `F9785D16F658776B67774775F9F30DE8C246C2493F7462521B9E523D0369917C`.
+
+# 2026-09-01 — OCV-03 O3B21 R28 O23 pass / targeted backside prerequisites complete (`PENDING_GATE`)
+
+Matching signed JBOD response `R_F65B4A2D3410_20260901203939242_a4a6c520`
+passed. The exact R28 package ran 33/33 synthetic holder/angle/ambiguity tests,
+read-only verified all other 31 R27 outcomes and controls, and executed only
+fresh O23. O23 produced one holder-clear pair at mean 69.15864763295444
+degrees: two nearby DF-shallow proposals collapsed to one under the frozen
+2-degree cluster rule. No holder candidate, known-notch prior, threshold or
+post-result selector relaxation was consumed.
+
+The frozen 24-candidate notch-adjacent negative remains an explicit hold; the
+additional chipout source remains reconciled to the already executed same
+physical acquisition. With O23 resolved, the targeted backside prerequisites
+are complete and exactly one fresh 953-pair review-only R28/R13 corpus is now
+authorized on a fresh JBOD `D:` root. No retry, source/task/process/provider,
+training, XML, production, or automatic hold-clearance authority is granted.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R28O23_PASS_BACKSIDE_PREREQUISITES_COMPLETE_CHECKPOINT_20260901.md`,
+SHA-256 `A78B337A745DC1640CD62E2EA33718515C9BAC57175CC0941BA063A11436BD1F`.
