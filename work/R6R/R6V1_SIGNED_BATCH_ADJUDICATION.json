@@ -1,0 +1,43 @@
+{
+  "schema": "argos_r6v1_signed_batch_adjudication_v1",
+  "createdUtc": "2026-09-01T21:30:45.6305918Z",
+  "state": "HOLD_R6V1_LOCALIZATION_GEOMETRY_ENVELOPE",
+  "disposition": "PENDING_GATE",
+  "requestId": "REQ_20260901T160000111Z_7F77B8EFE092",
+  "responseId": "R_B4C04F87A1E5_20260901212658192_c4776b8b",
+  "signedBatchCarrier": "work/R6R/e/MAINTENANCE.stdout.txt",
+  "signedBatchCarrierSha256": "9356F3B9D6BBD9C94F89D10720CCA555FC4BD63D80CCA969BC62E593E57C7851",
+  "batchState": "PASS_R6V1_REAL_IMAGE_REVIEW_ONLY_BATCH",
+  "caseCount": 4,
+  "identityEligibleCount": 0,
+  "acceptedCaseCount": 0,
+  "heldCaseCount": 4,
+  "commonFinding": {
+    "code": "SCRIBE_AUTO_LOCALIZATION_GEOMETRY_HOLD",
+    "diagnosticCandidateCountPerCase": 4,
+    "uniqueGeometricCandidateCountPerCase": 1,
+    "geometryQualifiedCountPerCase": 0,
+    "geometryRejectedCountPerCase": 1,
+    "promotedCandidateCountPerCase": 0,
+    "observedToOcrWidthRatio": 0.7680559538006783,
+    "observedToOcrHeightRatio": 0.10538907694518568,
+    "configuredMinimumObservedHeightRatio": 0.2,
+    "interpretation": "All four real images independently localized the same deduplicated geometric candidate, but the configured height-ratio floor rejected it before OCR."
+  },
+  "cases": [
+    {"slot":"Slot22","physicalIdentity":"62619-433_20260824005735_Slot22","state":"SCRIBE_AUTO_LOCALIZATION_GEOMETRY_HOLD","resultSha256":"18B50BB037772F828A4D0A9FFB6346B59F1982D8C7FF4229C1F4C6AC329B48AA","identityEligible":false},
+    {"slot":"Slot23","physicalIdentity":"62619-433_20260824005735_Slot23","state":"SCRIBE_AUTO_LOCALIZATION_GEOMETRY_HOLD","resultSha256":"B84AB9FF3B42A293A68FC4EDAA627066098A17BCCEB7802CF259A04691759654","identityEligible":false},
+    {"slot":"Slot24","physicalIdentity":"62619-433_20260824005735_Slot24","state":"SCRIBE_AUTO_LOCALIZATION_GEOMETRY_HOLD","resultSha256":"2A343F4B1DD482E4AA1059CDA7F687825D7DA1325BFFDCD079D7D146FC09C675","identityEligible":false},
+    {"slot":"Slot25","physicalIdentity":"62619-433_20260824005735_Slot25","state":"SCRIBE_AUTO_LOCALIZATION_GEOMETRY_HOLD","resultSha256":"9273F569887AFB3AA2EF28FD7613DDDEAC94364487048B19500813F45E2650F8","identityEligible":false}
+  ],
+  "deepResultProvenanceAdjudication": "NOT_PERFORMED_RESPONSE_PACKAGE_DID_NOT_RETURN_OUTPUT_TREE",
+  "deepResultFilesReturned": 0,
+  "additionalSharedRequestAuthorized": false,
+  "automaticRetryAllowed": false,
+  "mayClearHolds": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}
