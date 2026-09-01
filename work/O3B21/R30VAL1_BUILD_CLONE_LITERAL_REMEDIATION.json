@@ -1,0 +1,23 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "OCV03_O3B21_R30VAL1_BUILD_20260901",
+  "state": "DRAFT",
+  "pairs": [
+    {
+      "source": "work/O3B21/Build-R29VAL1Package.ps1",
+      "generated": "work/O3B21/Build-R30VAL1Package.ps1",
+      "rootRules": [
+        {"sourceRoot": "C:\\R29VAL1PK", "generatedRoot": "C:\\R30VAL1PK", "disposition": "REPLACED"},
+        {"sourceRoot": "C:\\R21P5", "generatedRoot": "C:\\R21P5", "disposition": "UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/O3B21/Invoke-R29VAL1.ps1",
+      "generated": "work/O3B21/Invoke-R30VAL1.ps1",
+      "rootRules": [
+        {"sourceRoot": "D:\\AFCV1", "generatedRoot": "D:\\AFCV1", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "D:\\R29VAL1", "generatedRoot": "D:\\R30VAL1", "disposition": "REPLACED"}
+      ]
+    }
+  ]
+}

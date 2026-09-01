@@ -9506,3 +9506,27 @@ fresh 953 remains unauthorized until the 39 outcomes pass.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R29VAL1_SIGNED_39_CASE_VALIDATION_READY_CHECKPOINT_20260901.md`,
 SHA-256 `811F65DEDC2A103BD8B7A554DEED1AB0864263B736146CBF078313A690C01FEB`.
+
+# 2026-09-01 — OCV-03 O3B21 R30 signed 70-case validation ready (`PENDING_GATE`)
+
+R29VAL1 returned matching signed response
+`R_77199CE0FDDC_20260901220505464_293420ac`. The intended Slot20 left notch,
+same-scan Slot16, and all three PatternedFront smoke pairs passed. One
+UnpatternedFront scan contained its clean 90-degree strict pair plus a
+fixture-like 134-degree legacy soft pair whose BF and DF exterior contexts
+both fail the frozen R13 appearance-clear limits.
+
+R30 `A300D2667DE021A9C1E177CF475E4A04ED3B87F41D7BFA9DCEF0A1DB06BE8625`
+adds only a negative control removing those two legacy soft modes when both
+channels fail exterior-clear. No selector or threshold is relaxed. Exact
+signed request `REQ_20260901T221440855Z_AA1D598B751C`, ZIP
+`7A69ED41EF1CCD7F0B0E63EE3609B630B09979696E93B450EF2B98B85CEC726F`,
+passed packaged PS5.1/signature, 59/59 synthetic, 22-root path, harness,
+clone-remediation, and preaction gates. Its one batch covers 32 frozen cases,
+Slot16, all 25 new PatternedFront pairs, and 12 evenly spaced UnpatternedFront
+pairs. Not published yet. All holds remain; fresh 953 is unauthorized pending
+an exact 70/70 pass.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R30VAL1_SIGNED_70_CASE_VALIDATION_READY_CHECKPOINT_20260901.md`,
+SHA-256 `D6AAD0BDB909E1E37F016FC49C5BB3EF5212AAC890B1FAE348EFA817DC33A649`.
