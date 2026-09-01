@@ -1085,3 +1085,11 @@ task from changing which revision, UI, evidence, or next action is active.
 - Route result: the fresh exact-host probe passed `A1025645101` with no mutation; the sole subsequent bounded read-only R20 metadata query timed out after 60 seconds without a nonce-bound clipboard response and is no-retry.
 - Holds: notch-adjacent source evidence and ordinal 23 remain explicit holds; R25/R13 are unchanged, chipout reconciliation remains closed, and fresh 953 plus every later phase remain unauthorized.
 - Exact next action: stop this execution attempt. A future continuation may use only one fresh bounded nonce-bound result on the already recorded route; do not retry the timed-out command namespace or investigate transport under detector authority.
+
+## 2026-09-01 — OCV-03 O3B21 R25 NA1 cohort frozen / source-record schema timeout
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_NA1_COHORT_FROZEN_SOURCE_RECORD_SCHEMA_TIMEOUT_CHECKPOINT_20260901.md`
+- SHA-256: `1CC977DF1A3D79F0C47722E9DBC34D823C9D5DB4F469628910A082A0B6D72AB6`
+- Frozen selector/result: `DD642F800ED0C5140980348E13BCD5E06EA7730671360F3BDE0B39AE56ECBD31` / `3F5BFABB7E8C9221D07537F07D26F8AA95F8C372DB353CAEFD3EB8C731534FAC`; 24 deterministic R20-pass metadata identities, zero overlap with the exact 32 executed R25 identities, no identity/lot/slot/appearance/angle preference.
+- Blocker: the first source-record property-name observation timed out after 60 seconds without a nonce-bound result and is no-retry. No image read or detector/state mutation occurred.
+- Exact next action: one future fresh bounded nonce-bound observation may resolve source-record fields for the frozen cohort; then freeze exact BF/DF paths and hashes before any NA1 R25 run. O23 remains independent and held; fresh 953 remains unauthorized.

@@ -9268,3 +9268,22 @@ the fresh 953 corpus plus all later phases remain unauthorized.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_DIRECT_PROBE_PASS_METADATA_QUERY_TIMEOUT_BLOCKER_CHECKPOINT_20260901.md`,
 SHA-256 `2A35A134198527EA8EEB0B6CEAE96BFCA8F0B6886E9193AE3EEE069BF848BBEB`.
+
+# 2026-09-01 — OCV-03 O3B21 R25 NA1 cohort frozen / source-record schema timeout (`PENDING_GATE`)
+
+The exact-host probe, R20 header read, state count, and frozen lexical metadata
+selection all passed. A source-independent 24-identity NA1 cohort is now frozen
+before detector execution, with zero overlap against the exact 32 executed R25
+identities. The unchanged 2.0-to-12.0-degree both-channel holder-boundary rule
+remains frozen and no angle, identity, slot, lot, or appearance preference was
+used.
+
+One subsequent read-only source-record property-name query timed out after 60
+seconds without a nonce-bound response and is no-retry. No image bytes were
+read and no detector, corpus, source, task/process, provider, output, wafer, or
+hold state changed. NA1 eligibility and ordinal 23 remain held; fresh 953 and
+every later phase remain unauthorized.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_NA1_COHORT_FROZEN_SOURCE_RECORD_SCHEMA_TIMEOUT_CHECKPOINT_20260901.md`,
+SHA-256 `1CC977DF1A3D79F0C47722E9DBC34D823C9D5DB4F469628910A082A0B6D72AB6`.
