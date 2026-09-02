@@ -1,0 +1,117 @@
+{
+  "schema": "argos_ocv03_o3f6_r8_full_978_result_v1",
+  "createdUtc": "2026-09-02T21:38:30Z",
+  "state": "COMPLETE_O3F6_R8_MECHANICAL_FULL_978",
+  "disposition": "PENDING_GATE",
+  "sourceAcquisition": {
+    "root": "D:/O3F3C978",
+    "pairCount": 978,
+    "sourceProblemCount": 0,
+    "stderrBytes": 0,
+    "workerPidStillPresent": false,
+    "summarySha256": "5B24B86B3FD3BFEFF25F323148ECDEE1DB1EF955FC168EDE0C6C4F154BE96C2A",
+    "failuresSha256": "154B79D325A6BFC853981EC1E3C31F6027B3BD01AD59B70E54C8B34EFE084CD8"
+  },
+  "engines": {
+    "r7Sha256": "A6E63914D8669E3E733EA2BFC78FAF78F77B1FC5A54E9CC4D051F2AC34D2296B",
+    "r8Sha256": "068ECC0D4F547FCFD7A0A2AEDF673B71BB0C46207DE8EC0F47312A9030B0734B",
+    "r8Change": "Delete only the global BF incomplete-tile terminal veto after a unique locally complete cross-channel candidate is already established."
+  },
+  "mechanicalReconciliation": {
+    "runnerPath": "D:/O3F6RT/Run.py",
+    "runnerSha256": "CFE6EC159412D9EE4F899046162B468C9EC43F79E00D4432BFC8537ED4BE03CB",
+    "outputRoot": "D:/O3F6R8M",
+    "summarySha256": "A94E9EFF6E73713958E4F62AC0F2E6E121A9E2DE84D63633A8752652BF67A600",
+    "resultsSha256": "A933227FE4F41259D53D586CBB5189E1B6542B96B7585B606207DAFD35326BD8",
+    "pairCount": 978,
+    "stateChangeCount": 594,
+    "holdCount": 184,
+    "r8Counts": {
+      "PASS_REVIEW_ONLY_BF_TOPOLOGY_DF_RADIAL_NOTCH_CANDIDATE": 794,
+      "HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH": 129,
+      "HOLD_DF_RADIAL_FULL_PERIMETER_NOT_QUALIFIED": 50,
+      "HOLD_FRONT_NOTCH_PROVIDER_ERROR": 5
+    },
+    "imageBytesRead": false,
+    "imageBytesDecoded": false,
+    "sourceMutation": false,
+    "providerActivated": false,
+    "holdsAutomaticallyCleared": false
+  },
+  "currentRecipes": {
+    "UnpatternedFront": {
+      "pairCount": 49,
+      "passCount": 49,
+      "holdCount": 0
+    },
+    "PatternedFront": {
+      "pairCount": 216,
+      "passCount": 204,
+      "holdCount": 12,
+      "stateCounts": {
+        "HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH": 5,
+        "HOLD_DF_RADIAL_FULL_PERIMETER_NOT_QUALIFIED": 3,
+        "HOLD_FRONT_NOTCH_PROVIDER_ERROR": 4
+      },
+      "holds": [
+        "PatternedFront/Lot_62615-962/62615-962_20260830004716/Slot01|FRONT",
+        "PatternedFront/Lot_62615-962/62615-962_20260830004716/Slot02|FRONT",
+        "PatternedFront/Lot_62615-962/62615-962_20260830004716/Slot04|FRONT",
+        "PatternedFront/Lot_62615-962/62615-962_20260830004716/Slot08|FRONT",
+        "PatternedFront/Lot_62616-131/62616-131_20260825233731/Slot09|FRONT",
+        "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot16|FRONT",
+        "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot17|FRONT",
+        "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot18|FRONT",
+        "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot20|FRONT",
+        "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot21|FRONT",
+        "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot22|FRONT",
+        "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot23|FRONT"
+      ]
+    }
+  },
+  "rareHotspotHold": "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot16|FRONT",
+  "frontsideHolderFinding": {
+    "state": "CONFIRMED_IMPLEMENTATION_GAP_PENDING_TARGETED_EVIDENCE",
+    "topologySourcePath": "work/OPENCV_EDGE_NOTCH_O3L8/WaferTopologyAxisOpenCv.py",
+    "topologySourceSha256": "D8897C1A5B60CB5AA9B0343CF8C9E5A249CCC5DEF5FBCDFE645EC08C354EF3BD",
+    "finding": "The BF topology path selects the largest top-connected component and therefore rejects detached exterior structure, but it has no explicit frontside holder-exclusion mask when a rear holder becomes connected to the wafer component after thresholding. The cyan overlay is the measured contour and may expose this contamination.",
+    "detectorChanged": false
+  },
+  "operatorStitchEvidence": {
+    "state": "OPERATOR_CONFIRMED_DIAGNOSTIC_CLASSES",
+    "labels": [
+      "STITCH_VERTICAL_STEP",
+      "STITCH_LATERAL_SHIFT",
+      "HOLDER_EDGE_CONTAMINATION",
+      "NORMAL_NOTCH_VARIATION"
+    ],
+    "screenshots": [
+      {
+        "sha256": "9750F6C118EA11085A7E3E6C63813C80841546F0A3E917C6398BF3927FB7AD8F",
+        "observation": "Operator-circled localized notch-apex discontinuity."
+      },
+      {
+        "sha256": "715570FD0BA4CA926B29334F4D20F8E0023F6725D110F7993560C4351AE068F1",
+        "observation": "Operator-circled localized notch-apex discontinuity under a different appearance."
+      },
+      {
+        "sha256": "0782FE3926E649D73DC5565FF0FC0CBDF9FF1065C43926BDB7D63996F743C3C6",
+        "observation": "Operator-circled lateral/horizontal stitch displacement through the notch region."
+      },
+      {
+        "sha256": "7C24033DA190EAEF9D96E1DD550FEF260922CEA4B3550A499BC91F05D16D601F",
+        "observation": "Operator-circled duplicated/offset left notch flank consistent with lateral stitch displacement."
+      }
+    ],
+    "automaticExclusionAuthorized": false,
+    "selectorRelaxationAuthorized": false
+  },
+  "directEvidenceCommands": {
+    "completion": "9038F40DC9280F3D3EE5B011D31F8CA830C374912B83F025BC40AE28EADAB94C",
+    "mechanicalCompletionObservation": "1CB1F57FFE3167EE0D61D6E602E7CFD97C9112138C8AF9BBCF0E41A7752B201E",
+    "familyCounts": "B4FEDB3FAB1077A258BA0E143DEAA3919EAB4E82038D097D429F4CA5289338DC",
+    "remainingPatternedHolds": "E148BC72B58E382505C49792145A929883FF8C39808EE6659540C6F513E7E970",
+    "outputHashes": "FCAAE9737D8AB8F8DC8B4D47A504C7281A2E34709F7F03E6542CD67C0D56A2B3"
+  },
+  "nextAction": "Before detector design, freeze a small review cohort containing all 12 PatternedFront holds plus worst-contour PatternedFront and UnpatternedFront passing controls. Present existing notch-region BF/DF crops for operator labels that distinguish stitch steps, lateral stitch shifts, rear-holder contour contamination, and normal variation. Preserve all holds and do not tune from holdout outcomes."
+}

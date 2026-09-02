@@ -4,6 +4,36 @@ This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
 
+## OCV-03 O3F6 R8 full-978 complete / stitch-holder review pending — 2026-09-02
+
+O3F3 completed the exact 978 FRONT BF/DF pairs with zero source problems and
+empty stderr. Mechanical R8 reconciliation under fresh `D:/O3F6R8M` changed
+only the 594 validated R7 global-coverage false holds. Final counts are 794
+pass, 129 no-paired-candidate holds, 50 DF-perimeter qualification holds, and
+five provider errors. Output summary SHA-256 is
+`A94E9EFF6E73713958E4F62AC0F2E6E121A9E2DE84D63633A8752652BF67A600`;
+results SHA-256 is
+`A933227FE4F41259D53D586CBB5189E1B6542B96B7585B606207DAFD35326BD8`.
+
+Current `UnpatternedFront` is 49/49 pass. Current `PatternedFront` is 204/216
+pass with 12 explicit holds. Seven belong to the known hotspot lot, and rare
+hotspot Slot16 remains held. Operator-provided notch crops establish separate
+vertical-step and horizontal/lateral stitch-error appearances and show that a
+rear holder can contaminate the cyan measured contour without physically
+obscuring the front surface. Exact source review confirms the frontside BF
+path has no explicit holder mask when exterior structure merges into the
+selected top-connected wafer component.
+
+Before detector design, freeze a small review cohort containing all 12
+PatternedFront holds plus worst-contour current-recipe passing controls and use
+existing BF/DF notch crops for operator stitch/holder/normal labels. Do not
+clear holds or relax selectors. Notify the operator before detector design.
+After this targeted frontside gate closes, continue automatically to scribe.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F6_R8_FULL_978_COMPLETE_STITCH_HOLDER_REVIEW_PENDING_CHECKPOINT_20260902.md`.
+SHA-256 `FB1FD87FB338158C71469BE9F92B8081756146BA3869C8A8193FB3A8C3FCF746`.
+
 ## OCV-03 O3F4 R8 targeted pass / O3F3 acquisition continues — 2026-09-02
 
 R8 SHA-256 `068ECC0D4F547FCFD7A0A2AEDF673B71BB0C46207DE8EC0F47312A9030B0734B`

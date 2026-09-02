@@ -10888,6 +10888,11 @@ than rerunning it.
 - Recovery: preserve the failed outer command and output root. Persist child
   stdout/stderr before evaluating its exit code, and use a fresh runner/root
   with `throw 'message'` or an equivalent unambiguous construct.
+- Immediate recurrence: the first O3F3 completion watcher, authored before this
+  rule was frozen, emitted `throw'pid reused'`; its date-cast comparison also
+  entered that branch immediately. It performed no mutation or wait. Future
+  PID guards compare the recorded UTC `ToString('o')` value exactly and use a
+  monotonic stopwatch for timeout; all throws use `throw (...)`.
 
 ## 2026-09-02 — Resolve detector input cardinality before a real-image batch
 
