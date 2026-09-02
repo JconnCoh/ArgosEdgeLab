@@ -10875,3 +10875,29 @@ than rerunning it.
   provider invocation.
 - Recovery: preserve the failed no-image root and use a fresh result namespace
   with BOM-free JSON construction; do not rerun the failed case namespace.
+
+## 2026-09-02 — Separate PowerShell flow keywords from quoted operands
+
+- Failure signature: an outer direct-command guard reported that `throwrun`
+  was not recognized and masked the child Python exit detail.
+- Cause: generated compact PowerShell emitted `throw'run'` without whitespace;
+  Windows PowerShell parsed it as the command name `throwrun`.
+- Mandatory preflight: require whitespace after `throw`, `return`, and other
+  flow keywords in generated source, inject a nonzero child exit, and prove the
+  outer guard returns the preserved child stdout/stderr.
+- Recovery: preserve the failed outer command and output root. Persist child
+  stdout/stderr before evaluating its exit code, and use a fresh runner/root
+  with `throw 'message'` or an equivalent unambiguous construct.
+
+## 2026-09-02 — Resolve detector input cardinality before a real-image batch
+
+- Failure signature: the R8 targeted runner froze 13 development pairs but the
+  detector rejected its 26 input rows before creating the output root.
+- Cause: frozen R7/R8 `validate_job` accepts exactly two or six inputs—one or
+  three BF/DF pairs—not an arbitrary multi-pair job.
+- Mandatory preflight: inspect the exact installed consumer's cardinality and
+  run its non-image preflight against every generated batch shape. Partition
+  real cohorts only into accepted one- or three-pair invocations.
+- Recovery: preserve the failed no-image root as terminal. Reuse the exact
+  hash-locked selection in a fresh root, batch it as 3/3/3/3/1 and 3/1/1, and
+  persist per-batch stdout/stderr before proceeding.

@@ -4,6 +4,29 @@ This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
 
+## OCV-03 O3F4 R8 targeted pass / O3F3 acquisition continues — 2026-09-02
+
+R8 SHA-256 `068ECC0D4F547FCFD7A0A2AEDF673B71BB0C46207DE8EC0F47312A9030B0734B`
+is exact R7 with only its two-line global BF-coverage terminal veto removed.
+Candidate formation, thresholds, pairing, angles, images, overlays, and all
+incomplete-tile diagnostics are unchanged. Five synthetics, eight exposed R7
+coverage rows, three POST2 regressions, hotspot Slot16/19, and five untouched
+current-recipe holdouts passed the frozen gate. Slot16 remains an explicit
+zero-eligible hold; no holder rule was added to frontside.
+
+O3F4T is terminal/no-retry after a pre-image 13-pair cardinality rejection and
+an outer `throwrun` guard typo. Fresh O3F4T2 batched the same hash-locked 18
+pairs as allowed one/three-pair invocations and returned
+`PASS_O3F4_R8_TARGETED_18`. O3F3 PID 35628 remains the exact full-978 image
+acquisition; do not launch a redundant image run. On completion mechanically
+apply R8 terminal semantics, reconcile every remaining genuine hold and every
+PatternedFront/UnpatternedFront identity, preserve rare hotspot Slot16, then
+continue automatically to scribe.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F4_R8_TARGETED_PASS_O3F3_FULL_ACQUISITION_CONTINUES_CHECKPOINT_20260902.md`.
+SHA-256 `34AEA7B302892B28696624647C27A5708D49B58800C5C0A969C543CE18D08761`.
+
 ## OCV-03 O3F3 exact-978 frontside corpus running — 2026-09-02
 
 The exact frontside inventory contains 978 paired FRONT BF/DF acquisitions and
