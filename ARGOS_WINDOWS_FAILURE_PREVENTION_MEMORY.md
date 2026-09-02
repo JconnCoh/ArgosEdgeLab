@@ -10835,6 +10835,33 @@ than rerunning it.
 - Recovery: the failed command created no target file. Preserve it as no-retry
   evidence and use a fresh transfer command whose explicitly typed expression
   reproduces the detector SHA-256 in a Windows PowerShell 5.1 memory test.
+- Recurrence on 2026-09-02: O3F1 incorrectly used
+  `[GZipStream]::new($stream,0)` despite this record. It created only the fresh
+  empty runtime directory and stopped before wrapper, inventory, image, or
+  worker creation. O3F1 is terminal/no-retry. A transfer command is now blocked
+  until its exact constructor and final decompressed SHA-256 both pass in a
+  file-backed Windows PowerShell 5.1 rehearsal.
+
+## 2026-09-02 — Manually copied embedded Base64 must be decoded and hash-rehearsed exactly
+
+- Failure signature: a remote transfer command returns SHA-256
+  `E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855`
+  for the intended payload file.
+- Cause: the manually copied embedded Base64 contained one extra character,
+  and the PowerShell byte-array-to-memory-stream cast did not reproduce the
+  intended payload bytes. Constructor success alone did not detect either
+  problem.
+- Mandatory preflight: extract the exact embedded Base64 from the exact final
+  command file under Windows PowerShell 5.1, decode it with an explicit
+  `MemoryStream::new([byte[]]...)`, reset the stream position, decompress it,
+  and require the final in-memory SHA-256 to equal the canonical source hash.
+- Recovery: preserve the failed fresh runtime root and command as terminal
+  no-retry evidence. Use a new namespace only after the exact final command
+  passes the SHA rehearsal.
+- First observed: O3F2 on 2026-09-02. It created only an empty wrapper and the
+  copied frozen R2 runner; no inventory, image processing, or worker started.
+  O3F3 rehearsal then reproduced wrapper SHA-256
+  `EDD263C7A530AE12D8C963EFC60DD3F3B1A95DCF2A88440F823C32FE7C671499`.
 
 ## 2026-09-02 — Windows PowerShell 5.1 `Set-Content -Encoding UTF8` adds a BOM
 

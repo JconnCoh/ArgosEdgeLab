@@ -4,6 +4,28 @@ This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
 
+## OCV-03 O3F3 exact-978 frontside corpus running — 2026-09-02
+
+The exact frontside inventory contains 978 paired FRONT BF/DF acquisitions and
+zero source problems. It is frozen at `D:/O3F3INV/inventory.json`, SHA-256
+`7320331752A094F51C44F713A9C644AB41A059B0226DE0F8E0BD8E1D0ABCA056`.
+The unchanged qualified R7 front engine SHA-256 is
+`A6E63914D8669E3E733EA2BFC78FAF78F77B1FC5A54E9CC4D051F2AC34D2296B`.
+Exact selector wrapper SHA-256 is
+`EDD263C7A530AE12D8C963EFC60DD3F3B1A95DCF2A88440F823C32FE7C671499`;
+its five focused controls and exact PS5.1 transfer-hash rehearsal passed.
+
+Owned worker PID `35628`, created `2026-09-02T19:35:46.3829568Z`, runs under
+fresh `D:/O3F3C978`. O3F1/O3F2 initialization failures are terminal/no-retry
+and never reached inventory or image work. Observe O3F3 atomically without
+process action. Evaluate the notch stage independently from expected
+`HOLD_SCRIBE_ENGINE_NOT_CONFIGURED` markers; scribe follows separately.
+Preserve POST2 evidence and the rare Slot16 hotspot hold.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F3_EXACT_978_FRONT_CORPUS_RUNNING_CHECKPOINT_20260902.md`,
+SHA-256 `2B2DC59CF421E023B1FA7C43F1A38F48B88704B0CA90A7EE324E24C5F127AF83`.
+
 ## OCV-03 O3B21 R35 exact-953 backside gate complete / frontside next — 2026-09-02
 
 R35 `D:/R35C953` completed all 953 exact frozen BACK pairs: 945 unique-notch
