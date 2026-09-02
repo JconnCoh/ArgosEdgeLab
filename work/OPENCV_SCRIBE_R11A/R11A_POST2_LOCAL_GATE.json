@@ -2,7 +2,7 @@
   "schema": "argos_opencv_scribe_r11a_post2_local_gate_v1",
   "revision": "ARGOS_OPENCV_SCRIBE_V1R11_20260902",
   "lifecycle": "DRAFT",
-  "disposition": "PASS_R11A_POST2_LOCALIZATION_AND_KNOWN_IDENTITY_REGRESSION_WITH_S17_IDENTITY_HOLD",
+  "disposition": "PASS_R11A_POST2_LOCALIZATION_PAIRED_RESIDUAL_ANGLE_AND_KNOWN_IDENTITY_REGRESSION_WITH_S17_IDENTITY_HOLD",
   "scope": {
     "inspectionFamily": "SCRIBE_DECIPHERING",
     "cohort": "POST2_LOCAL_READ_ONLY_S01_S03_S17",
@@ -13,9 +13,9 @@
   },
   "engine": {
     "path": "work/OPENCV_SCRIBE_R11A/ArgosOpenCvScribeV1R11.py",
-    "sha256": "A10FE4DF2657BC38997145FDC3D3862E2D330D8CD200B0718BA38AC8FCCF6EEA",
+    "sha256": "7BC2EF6A9ED7BF21B4638D3F95CB9D818A2A40A3F42DF9299CFA2FC711904050",
     "configurationPath": "work/OPENCV_SCRIBE_R11A/R11A_CONFIGURATION.json",
-    "configurationSha256": "C9B22D2C857CF219E8CC2C300215D04CA6344BB2CF525B3DB3B20E8E2A85B09A",
+    "configurationSha256": "A0554C8A8DFAFB75E5F365590C804C525129073A4ED768AEFB5FFF2E6D4AFEB2",
     "frozenR9ProviderPath": "work/OPENCV_SCRIBE_R9A/ArgosOpenCvScribeV1R9.py",
     "frozenR9ProviderSha256": "4955AAAAD4C07D3B7BD87332E8956ECDCD291F5ACF1C6FC0E30B937DCB4C8E9F",
     "frozenR9BytesChanged": false
@@ -64,7 +64,7 @@
   "results": [
     {
       "slot": "S01",
-      "path": "C:/P2COHORT/results/R11A/S01_FINAL.json",
+      "path": "C:/P2COHORT/results/R11A/S01_PAIRED_PCA_FINAL.json",
       "sha256": "6F8AE563AB09D723D76BF89C1D05993CC9376110EC54D7A16A2E6CE2CB06BEFD",
       "state": "SCRIBE_REFERENCE_COVERAGE_HOLD",
       "knownIdentity": "3912P014FED2",
@@ -82,8 +82,8 @@
     },
     {
       "slot": "S03",
-      "path": "C:/P2COHORT/results/R11A/S03_FINAL.json",
-      "sha256": "122F541386E42686E25470FE5A6CEF8EB848157329427627A8D51D66019ABEE5",
+      "path": "C:/P2COHORT/results/R11A/S03_PAIRED_PCA_FINAL.json",
+      "sha256": "6917265EF9591821C88CAC0BFFC9157DAEB3BAD237D14EC96B9FEDF197C282D6",
       "state": "SCRIBE_REFERENCE_COVERAGE_HOLD",
       "knownIdentity": "2659P076FEF4",
       "imageFirstString": "2659P076FEF4",
@@ -100,8 +100,8 @@
     },
     {
       "slot": "S17",
-      "path": "C:/P2COHORT/results/R11A/S17_FINAL.json",
-      "sha256": "314104582D64C35BE8BCFE985A45F56BD14AE845C2CD7223BAAE63DEA47A4B22",
+      "path": "C:/P2COHORT/results/R11A/S17_PAIRED_PCA_FINAL.json",
+      "sha256": "74EC6C355E853F1C53B832750B394F1BE9692AF8118FAA682BEAAD0EEEB77D55",
       "state": "SCRIBE_PAIRED_ENHANCEMENT_IDENTITY_HOLD",
       "knownIdentity": null,
       "proposedString": "",
@@ -113,36 +113,36 @@
       "localizationScore": 0.98,
       "centerX": 7233.480032808243,
       "centerY": 10242.894503608755,
-      "angleDegrees": 185.0,
-      "pairedPeriodicityScore": 0.007185528748948053,
-      "pairedResponseSha256": "5750325E535F0D300F2905ED39EC9213BB2BDD254F54C21A412D4358442AF458",
+      "angleDegrees": 179.6249631657877,
+      "pairedPeriodicityScore": 0.0016358435301129738,
+      "pairedResponseSha256": "9BC5511A5F5FE1DB915A8DD4739E13F27CDD0B9CDFF48E4D010611D0E12AF8F3",
       "visualInspection": "PASS_LOCATION_ONLY_FAINT_SCRIBE_PRESENT_IDENTITY_REMAINS_UNRESOLVED"
     }
   ],
   "visualEvidence": [
     {
-      "path": "C:/P2COHORT/results/R11A/visuals/S01_whole_wafer_overlay.png",
-      "sha256": "278673F3081357B2542FA0C7B4BEF838B7E2806444CA6E21653A0F3BAA5C0A6B"
+      "path": "C:/P2COHORT/results/R11A/visuals_paired_pca/S01_whole_wafer_overlay.png",
+      "sha256": "D587A154CD5E0360F81E6347C8893D798DA22BF85782BD792EBC0CC438CA21CC"
     },
     {
-      "path": "C:/P2COHORT/results/R11A/visuals/S01_selected_bf_df_enhancement.png",
-      "sha256": "EA6831FB4C6B07E933975F7A329B2AEE1EDF0DF80CCCA027AEAB60844C193520"
+      "path": "C:/P2COHORT/results/R11A/visuals_paired_pca/S01_selected_bf_df_enhancement.png",
+      "sha256": "C66CB1C6B87F3A047FE4EFED0F5B0BE4E77FC97D26F8A399652566B27A7CDDD5"
     },
     {
-      "path": "C:/P2COHORT/results/R11A/visuals/S03_whole_wafer_overlay.png",
-      "sha256": "93F8DC7FB511F408207643E0CC7461C9AFFA0CC16285951341F6B2D3F6F9F66E"
+      "path": "C:/P2COHORT/results/R11A/visuals_paired_pca/S03_whole_wafer_overlay.png",
+      "sha256": "9AFE9FCB282E3C51AA48FFF42E99C4E722B8AC38CE486E1D6E44F5763F188FC9"
     },
     {
-      "path": "C:/P2COHORT/results/R11A/visuals/S03_selected_bf_df_enhancement.png",
-      "sha256": "82C67489C10445F7979E8E2322EB5FDA047D78D899745E996482B57958B09273"
+      "path": "C:/P2COHORT/results/R11A/visuals_paired_pca/S03_selected_bf_df_enhancement.png",
+      "sha256": "614BE45E4B7C906A50B025A7B3225910D39B1640A579E0484B3ADCE7A835E0A8"
     },
     {
-      "path": "C:/P2COHORT/results/R11A/visuals/S17_whole_wafer_overlay.png",
-      "sha256": "A45AC45BB5C7D93E666E289A27CDB04BDD0D7EAB64452AE49CA26A573C61F7A3"
+      "path": "C:/P2COHORT/results/R11A/visuals_paired_pca/S17_whole_wafer_overlay.png",
+      "sha256": "2121AAE43831D45959C7492F00899F4ED4AFC59EF98791BDBD2983EBCE2EECCB"
     },
     {
-      "path": "C:/P2COHORT/results/R11A/visuals/S17_selected_bf_df_enhancement.png",
-      "sha256": "CCA2140E70BA096A01E182B7DEEE1077C8B0DB848D9EA8DBBA9A6707B41D3D45"
+      "path": "C:/P2COHORT/results/R11A/visuals_paired_pca/S17_selected_bf_df_enhancement.png",
+      "sha256": "B6567530E634C167A7FF3D517CAF4634973BFB5A6F5A393DB4DEB3613768C188"
     }
   ],
   "gateAssertions": {
@@ -151,11 +151,16 @@
     "allReportedRegionsVisuallyInspected": true,
     "knownIdentityRegressionCount": 2,
     "knownIdentityExactMatchCount": 2,
+    "s17PairedAngleBeforeDegrees": 185.0,
+    "s17PairedAngleAfterDegrees": 179.6249631657877,
+    "s17AlignedComponentOcrSelectionScore": 0.5443127957975504,
+    "s17AlignedComponentOcrChecksumValid": false,
     "s17LocationFoundWithoutUsingMarkedRasterAsProviderInput": true,
     "s17IdentityHeld": true,
     "noIdentityInferredFromFilenameOrAnnotation": true,
     "noSourceImageMutation": true,
-    "noExternalMutation": true
+    "noExternalMutation": true,
+    "recommendedProductionOrdering": "NOTCH_POSE_THEN_POSE_BOUND_SCRIBE_OCR_WITH_LOCAL_RESIDUAL_ANGLE_REFINEMENT"
   },
   "authority": {
     "reviewOnly": true,

@@ -843,6 +843,37 @@ def _paired_dark_response(bf_patch: np.ndarray, df_patch: np.ndarray) -> np.ndar
     return cv2.subtract(normalized, line_response).astype(np.float32)
 
 
+def _paired_dot_centroids(response: np.ndarray) -> np.ndarray:
+    """Return bounded circular high-response components for residual-angle fitting."""
+    threshold = float(np.percentile(response, 99.5))
+    if threshold <= 0.0:
+        return np.empty((0, 2), dtype=np.float32)
+    count, _, stats, centroids = cv2.connectedComponentsWithStats(
+        (response >= threshold).astype(np.uint8), 8
+    )
+    points: list[np.ndarray] = []
+    for index in range(1, count):
+        width = int(stats[index, cv2.CC_STAT_WIDTH])
+        height = int(stats[index, cv2.CC_STAT_HEIGHT])
+        area = int(stats[index, cv2.CC_STAT_AREA])
+        fill = area / float(max(1, width * height))
+        ratio = width / float(max(1, height))
+        x, y = centroids[index]
+        if (
+            2 <= width <= 14
+            and 2 <= height <= 14
+            and 4 <= area <= 130
+            and 0.35 <= ratio <= 2.8
+            and fill >= 0.18
+            and 100.0 <= x <= response.shape[1] - 100.0
+            and 30.0 <= y <= response.shape[0] - 70.0
+        ):
+            points.append(centroids[index])
+    if not points:
+        return np.empty((0, 2), dtype=np.float32)
+    return np.asarray(points, dtype=np.float32)
+
+
 def _periodic_window(
     response: np.ndarray,
     window_width: int,
@@ -1025,7 +1056,27 @@ def _refine_region_angle(
             )
             if score > best[0]:
                 best = (score, float(candidate_angle))
-        return best[1]
+        coarse_angle = best[1]
+        native_patches = [
+            _rectified_preview(image, center, coarse_angle, 1600, 400)
+            for image in (bf, df)
+        ]
+        points = _paired_dot_centroids(
+            _paired_dark_response(native_patches[0], native_patches[1])
+        )
+        if len(points) < 100:
+            return coarse_angle
+        _, eigenvectors, _ = cv2.PCACompute2(points, mean=None)
+        correction = math.degrees(math.atan2(
+            float(eigenvectors[0, 1]), float(eigenvectors[0, 0])
+        ))
+        while correction > 45.0:
+            correction -= 180.0
+        while correction < -45.0:
+            correction += 180.0
+        if abs(correction) > 15.0:
+            return coarse_angle
+        return coarse_angle + correction
 
     patch = _rectified_preview(bf, center, angle_degrees, 1600, 400)
     residual = dark_residual_exact(patch, 12)
