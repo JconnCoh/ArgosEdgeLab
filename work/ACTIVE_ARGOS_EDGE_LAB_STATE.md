@@ -4,30 +4,30 @@ This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
 
-## OCV-03 O3B21 R34 exact-953 backside corpus running — 2026-09-02
+## OCV-03 O3B21 R35 targeted pass / exact-953 start awaiting Enter — 2026-09-02
 
-R34 passed one combined JBOD gate containing 141 synthetic assertions, nine
-targeted real-image cases, 301 union cases, and eight rotation/holder
-executions. Gate summary SHA-256 is
-`89A2736EF6CAAFD9598CF632ADBE5CA0F1DA1AF9B04E20F411215536BE8A6D42`;
-R34 detector SHA-256 is
-`3B3B9F6E461BC8F7C5498763A6ED9A46A404E55E5E3C69B10235C3489B3FF066`.
+R34 `D:/R34C953R2` completed 953/953 with 937 unique passes, nine multiple
+holds, seven not-found holds, zero source problems, and empty stderr under
+summary `44400306066C9ADF9B5DB630FEC97056680BEF0EC959597F025EE82B8C81C815`.
+Seven holds recur from R32; one new hold is the required O005 fixture ambiguity;
+eight new multiple holds are unintended collateral from R34 comparing clean
+notches against far-away exterior-dirty holder responses.
 
-The first `D:/R34C953` launch stopped before image read on a transient
-discovery-count mismatch and is failed/no-replay. Fresh metadata-only
-`D:/R34C953INV3/inventory.json` hash-matches the frozen 978 BACK-pair inventory
-exactly with zero added or missing rows and zero BACK source problems, so no
-selector or exclusion-set change was made. Fresh R34 worker PID 15648, created
-`2026-09-02T15:54:48.7853739Z`, is running under `D:/R34C953R2`; its first
-observation passed at 11/953 completed with zero failures and empty stderr.
+R35 `33740B900456B98E1EA3163D8323CA2717C308B53457B3BD51DAFA59228EC407`
+limits that conservative hold to a rotation-independent 60-degree competing
+neighborhood. R28-R35 pass 192/192 local assertions. Fresh JBOD targeted
+summary `DB79DBCA2C39972B5934B2EFE7458D4CFFEEBBFA0724801FF9AEEEF0D8865B51`
+passes 9/9, including residue alignment and preserved O005 ambiguity. Fresh
+`D:/R35T1/collateral2` passes all eight exact regressions with one selected
+exterior-clean pair each and unchanged BF/DF hashes.
 
 Current checkpoint:
-`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R34C953R2_DIRECT_EXACT_953_CORPUS_RUNNING_CHECKPOINT_20260902.md`,
-SHA-256 `EDD4396D2DDD19C62B576700BCCCB9F02745C79AAC4293AE64E186FA7307B659`.
-Allow only bounded read-only progress/completion observations. Do not retry,
-restart, stop, or modify the worker. At complete backside gate, preserve all
-explicit holds and continue automatically through frontside BF/DF, scribe,
-combined outputs, then fiducial/alignment prerequisites. Review-only remains;
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R35_TARGETED_PASS_FULL953_START_AWAITING_ENTER_CHECKPOINT_20260902.md`,
+SHA-256 `4F36636FB7699C23481A4F06DB338B3815AF4A49D501FDD772A261799BD8DC36`.
+The exact full-corpus start command is already pasted in the visible JBOD
+PowerShell window but has not executed because Enter did not land while the
+operator was AFK. Do not repaste it. Press Enter once, then observe the new
+`D:/R35C953` worker without retry or modification. Review-only remains;
 training, XML, production, provider activation, source mutation/deletion, and
 automatic hold clearance remain false.
 

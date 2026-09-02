@@ -1,0 +1,4 @@
+$ErrorActionPreference='Stop'
+$z=Get-Content 'D:\R34G1\targeted\O005\RESULT.json' -Raw|ConvertFrom-Json
+$d=$z.bf.multiPairExteriorCleanResolution;$p=@($z.pairedCandidates);$r=@($d.rows)
+[ordered]@{state='PASS_R34_O005_DIAGNOSTIC_OBSERVATION';pairCount=$p.Count;resolution=$d.state;cleanCount=$d.bothChannelsExteriorClearPairCount;cleanScore=$d.uniqueBothChannelsExteriorClearPairScore;dirtyMax=$d.maximumExteriorDirtyPairScore;dominant=$d.strictScoreDominancePassed;pairs=@(for($i=0;$i-lt$p.Count;$i++){[ordered]@{angle=$p[$i].meanAngleDegrees;bfAngle=$p[$i].bfAngleDegrees;dfAngle=$p[$i].dfAngleDegrees;angleDifference=$p[$i].angleDifferenceDegrees;score=$p[$i].score;mode=$p[$i].confirmationMode;bfClear=$r[$i].bfExteriorClear;dfClear=$r[$i].dfExteriorClear;bothClear=$r[$i].bothChannelsExteriorClear}});imageBytesReturned=$false;mutationsPerformed=$false}|ConvertTo-Json -Depth 5 -Compress

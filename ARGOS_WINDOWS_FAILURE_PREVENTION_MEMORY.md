@@ -10788,3 +10788,31 @@ than rerunning it.
 - Recovery: retain both failed observers as no-retry evidence. First enumerate
   the exact current revision's resolution-state set; then inspect only the
   relevant current candidate records without image-byte reads or mutation.
+
+## 2026-09-02 — Cast both arguments at PowerShell 5.1 compression constructors
+
+- Failure signature: the first R35 draft-detector transfer stopped before file
+  creation with `Multiple ambiguous overloads found for "GZipStream" and the
+  argument count: "2"`.
+- Cause: `New-Object IO.Compression.GZipStream($stream,0)` did not bind the
+  intended decompression constructor under Windows PowerShell 5.1.
+- Mandatory preflight: construct compression streams with explicit argument
+  types, for example `[GZipStream]::new([IO.Stream]$stream,
+  [CompressionMode]::Decompress)`, and execute the exact expression under
+  Windows PowerShell 5.1 before remote input.
+- Recovery: the failed command created no target file. Preserve it as no-retry
+  evidence and use a fresh transfer command whose explicitly typed expression
+  reproduces the detector SHA-256 in a Windows PowerShell 5.1 memory test.
+
+## 2026-09-02 — Windows PowerShell 5.1 `Set-Content -Encoding UTF8` adds a BOM
+
+- Failure signature: the first R35 collateral runner wrote a generated JSON
+  job whose first bytes were `EF BB BF 7B`; Python rejected it before image
+  read and created no detector output.
+- Cause: Windows PowerShell 5.1 `Set-Content -Encoding UTF8` emits a UTF-8 BOM,
+  while the pinned Python JSON reader requires BOM-free UTF-8.
+- Mandatory preflight: write generated Python-consumed JSON with
+  `System.Text.UTF8Encoding($false)` and assert the first byte is `{` before
+  provider invocation.
+- Recovery: preserve the failed no-image root and use a fresh result namespace
+  with BOM-free JSON construction; do not rerun the failed case namespace.
