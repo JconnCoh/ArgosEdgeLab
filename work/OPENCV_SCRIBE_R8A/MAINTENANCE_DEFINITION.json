@@ -1,0 +1,86 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 16777216,
+  "entryPoint": "payload/Invoke-R8AScribeSlot22.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-R8AScribeSlot22.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R8A.ps1",
+      "approvedPredecessorSha256": [
+        "159BD82528E505DE69BDEEE4C3A3B29402BA9281939C57F6187587E9047D9740"
+      ],
+      "installedSha256": "08CDC002580F4C84D735BE121BED54C9C1F55411B4DCB6918ADE717DED9C146C",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\A2\\w\\ocv\\R8A",
+      "mode": "CREATE_NEW_PROVIDER_WORK_TREE",
+      "failureQuarantine": "D:\\A2\\w\\ocv\\R8A.failed",
+      "payloads": [
+        {"path": "payload/ArgosOpenCvScribeV1R8.py", "sha256": "AE7647BA13973B9DC8E61222DFF53C58F6A943AEDC3BB2C399D21574AD468239"},
+        {"path": "payload/R8A_CONFIGURATION.json", "sha256": "5ACD542AECA6D4C4312712CFF101FC86E169440FE0DF780CD951DEC7053BD5D3"},
+        {"path": "payload/BATCH.json", "sha256": "3DC7C061A51CBF2CA86E5179173427A9527E474958DCCBB94FEB085304D98863"},
+        {"path": "payload/S22.json", "sha256": "8D18FFD1C3E3786E5026688C82869665F6CE638E4EF927F875BC9AE81E52A359"},
+        {"path": "D:/O2D5/ARGOS_O2D5/O2D5_REFS.zip", "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6"}
+      ]
+    },
+    {
+      "targetRoot": "D:\\A2\\o\\ocv\\R8A",
+      "mode": "CREATE_NEW_PROVIDER_OUTPUT_TREE"
+    }
+  ],
+  "entryPointOutputs": [
+    {"path": "D:\\A2\\o\\ocv\\R8A\\Slot22\\RESULT.json", "mode": "CREATE_NEW", "schema": "argos_opencv_scribe_result_v2"},
+    {"path": "D:\\A2\\o\\ocv\\R8A\\BATCH_GATE.json", "mode": "CREATE_NEW", "schema": "argos_r8a_scribe_batch_gate_v1", "requiredState": "PASS_R8A_REAL_IMAGE_REVIEW_ONLY_BATCH"},
+    {"path": "D:\\A2\\o\\ocv\\R8A\\EXECUTION.json", "mode": "CREATE_NEW", "schema": "argos_r8a_execution_v1", "requiredState": "PASS_R8A_EXECUTION"}
+  ],
+  "sourceProcessingContract": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "physicalIdentities": [
+      "62619-433_20260824005735_Slot22"
+    ],
+    "inputMode": "DEVELOPMENT_AUTO_LOCALIZED_WHOLE_IMAGE",
+    "rawSourceEvidencePath": "work/OPENCV_OLS6/OLS6_EXACT_TWENTY_SOURCE_HASHES.json",
+    "rawSourceEvidenceSha256": "E54A15301A2B4FE914E6315DDFB9628E1D1364B0553D2155E9D5387A88E7FF3B",
+    "sourceAliasName": "X:",
+    "sourceAliasRoot": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433",
+    "referenceBundlePath": "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+    "referenceBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "sourceImageBytesReadAllowed": true,
+    "opencvPixelDecodeRequired": true,
+    "boundedExceptionSearchAllowed": true,
+    "heightEnvelopeConfigurationSha256": "5ACD542AECA6D4C4312712CFF101FC86E169440FE0DF780CD951DEC7053BD5D3",
+    "minimumObservedHeightRatio": 0.9,
+    "providerAlgorithmBytesChangedFromR6V1": true,
+    "fullWaferPerimeterSweepRequired": true,
+    "fixedImageRectangleAllowed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false,
+    "automaticIdentityAuthority": false
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 1500,
+    "opencvChildTimeoutSeconds": 1200,
+    "maximumSequentialChildren": 1,
+    "outerCoversAllChildren": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_ONE_BOUNDED_PORTABLE_OPENCV_SCRIBE_REVIEW_ONLY_CHILD"
+  ],
+  "rehearsal": {
+    "requiredState": "PASS_R8A_REAL_IMAGE_REVIEW_ONLY_BATCH",
+    "gateState": "PASS_R8_UNMARKED_SLOT22_TRUE_SCRIBE_IN_TOP_EIGHT",
+    "gateSha256": "A1C5F39F2C65D77129EE107475823819A3A7E05A3F3DD71C511ABA673820F252",
+    "selfPinGateState": "PASS_R8_UNMARKED_SLOT22_TRUE_SCRIBE_IN_TOP_EIGHT",
+    "selfPinGateSha256": "A1C5F39F2C65D77129EE107475823819A3A7E05A3F3DD71C511ABA673820F252"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
