@@ -9614,3 +9614,20 @@ It is not published. All holds and no-retry artifacts remain.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R32C953L1_SIGNED_EXACT_953_CORPUS_READY_CHECKPOINT_20260901.md`,
 SHA-256 `6EFCE5E6DD501293B441FDE5AFA438DF6D135464A1CC58C7956F769A5122AFA7`.
+
+## OCV-03 O3B21 R32C953L1 signed exact-953 corpus running — 2026-09-01
+
+Disposition: `PENDING_GATE`
+
+Request `REQ_20260902T002021713Z_1A03204809E3` was published exactly once.
+Matching signed JBOD response `R_CF5E264DE71A_20260902002709584_f7714032`,
+ZIP `2FC41A63C9972680E258C7A8AFC55C057620B97A0240813040472930156928BF`,
+passed. The package verified 978 current pairs, excluded the exact reconciled
+25 additions, selected exactly 953 frozen predecessor identities, passed all
+95 detector and seven selection tests, and launched owned worker PID `15456`
+at `2026-09-02T00:27:06.5306629Z` under fresh `D:/R32C953`. No retry or hold
+clearance occurred.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R32C953L1_SIGNED_EXACT_953_CORPUS_RUNNING_CHECKPOINT_20260901.md`,
+SHA-256 `F8E4EF56F3F473358ECD1FC9B707B6A31BCB38D86FAEA89F536E909F92BC68E1`.
