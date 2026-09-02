@@ -4,6 +4,33 @@ This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
 
+## OCV-03 O3B21 R34 exact-953 backside corpus running — 2026-09-02
+
+R34 passed one combined JBOD gate containing 141 synthetic assertions, nine
+targeted real-image cases, 301 union cases, and eight rotation/holder
+executions. Gate summary SHA-256 is
+`89A2736EF6CAAFD9598CF632ADBE5CA0F1DA1AF9B04E20F411215536BE8A6D42`;
+R34 detector SHA-256 is
+`3B3B9F6E461BC8F7C5498763A6ED9A46A404E55E5E3C69B10235C3489B3FF066`.
+
+The first `D:/R34C953` launch stopped before image read on a transient
+discovery-count mismatch and is failed/no-replay. Fresh metadata-only
+`D:/R34C953INV3/inventory.json` hash-matches the frozen 978 BACK-pair inventory
+exactly with zero added or missing rows and zero BACK source problems, so no
+selector or exclusion-set change was made. Fresh R34 worker PID 15648, created
+`2026-09-02T15:54:48.7853739Z`, is running under `D:/R34C953R2`; its first
+observation passed at 11/953 completed with zero failures and empty stderr.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R34C953R2_DIRECT_EXACT_953_CORPUS_RUNNING_CHECKPOINT_20260902.md`,
+SHA-256 `EDD4396D2DDD19C62B576700BCCCB9F02745C79AAC4293AE64E186FA7307B659`.
+Allow only bounded read-only progress/completion observations. Do not retry,
+restart, stop, or modify the worker. At complete backside gate, preserve all
+explicit holds and continue automatically through frontside BF/DF, scribe,
+combined outputs, then fiducial/alignment prerequisites. Review-only remains;
+training, XML, production, provider activation, source mutation/deletion, and
+automatic hold clearance remain false.
+
 ## OCV-03 autonomous detector sequence rollover — 2026-08-30
 
 The operator authorized autonomous review-only continuation in this exact

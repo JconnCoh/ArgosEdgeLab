@@ -1,0 +1,3 @@
+$m=Get-Content -LiteralPath 'D:\R32M1\SUMMARY.json' -Raw|ConvertFrom-Json
+$groups=@(17,21,24|ForEach-Object{$slot=$_;$r=@($m.rows|Where-Object slot-eq$slot|Sort-Object revision);[ordered]@{slot=$slot;firstZeroRevision=($r|Where-Object pairCount-eq0|Select-Object -First 1 -ExpandProperty revision);trace=@($r|ForEach-Object{"$($_.revision):P$($_.pairCount):B$($_.bfCandidateCount):D$($_.dfCandidateCount):A$(@($_.angles)-join',')"})}})
+[ordered]@{state='PASS_R32M1_MATRIX_READ';summarySha256=(Get-FileHash -LiteralPath 'D:\R32M1\SUMMARY.json' -Algorithm SHA256).Hash;groups=$groups;imageBytesRead=$false;mutationsPerformed=$false}|ConvertTo-Json -Depth 5 -Compress

@@ -10727,3 +10727,64 @@ than rerunning it.
 - Recovery: retain R32C953L1 and `D:/R32C953` as withdrawn/no-retry evidence.
   Use a fresh runtime/output namespace with the corrected wrapper and unchanged
   detector/config; never weaken requested-side identity/path comparison.
+
+## 2026-09-02 — Pin every draft detector harness dependency before remote execution
+
+- Failure signature: the fresh R33T2 four-case detector harness completed its
+  first three case launches, then failed before O08 with `Cannot find path
+  'D:\R33T2RT\R18_REGRESSION_CASES.json' because it does not exist.`
+- Cause: the harness assumed the copied R32 runtime contained the frozen R18
+  case manifest without checking that exact leaf during local construction.
+- Mandatory preflight: resolve every file a draft detector harness will read
+  against the exact copied runtime inventory before launch. When the required
+  source identity is already frozen, embed its exact path and hashes rather
+  than assuming a package-layout leaf.
+- Recovery: retain `D:/R33T2` as failed/no-retry evidence and reuse only the
+  separately hash-verified immutable R33T2 runtime. Run a fresh T3 output
+  namespace whose O08 job is built from the frozen exact path and hashes; do
+  not change detector bytes, thresholds, source images, or prior results.
+
+## 2026-09-02 — Parse every compact direct-command source before GUI input
+
+- Failure signature: the R33U1 initializer was rejected by the local direct-
+  control parser with `Missing 'in' after variable in foreach loop`.
+- Cause: compact source joined PowerShell's `in` keyword directly to the loop
+  collection variable. The command never reached RustDesk and changed no JBOD
+  state.
+- Mandatory preflight: parse every exact generated direct-command file with
+  Windows PowerShell 5.1 before invoking the GUI route; character-count checks
+  alone are insufficient.
+- Recovery: correct the unexecuted draft initializer in place, regenerate all
+  exact command files, parse all of them, and then use the unchanged fresh
+  R33U1 namespace.
+
+## 2026-09-02 — Preserve semantic subgroup counts in a frozen union manifest
+
+- Failure signature: R33U1 exited before creating its output because the
+  298-case lock contained 10 `FROZEN_R20_CONTROL` and 22 `R20_CURRENT_HOLD`
+  rows, while the new union preflight incorrectly required 32 rows under the
+  first label.
+- Cause: total frozen/control cardinality was substituted for the manifest's
+  exact semantic group distribution.
+- Mandatory preflight: assert both total cardinality and every exact group
+  count from the locked case manifest; fixture tests must reproduce those
+  labels rather than collapsing them.
+- Recovery: retain R33U1 as a no-image preflight failure. Derive a fresh R33U2
+  runner from the frozen R33U1 bytes by changing only the exact group map to
+  `10 + 22 + 1 + 216 + 49 + 3`; keep detector, source, expected outcomes, and
+  every result invariant unchanged.
+
+## 2026-09-02 — Do not index-match candidate sets across detector revisions
+
+- Failure signature: a read-only R33 union evidence observer stopped at O93
+  with `pair/diagnostic mismatch` while joining R33 pre-resolution diagnostics
+  to R31 retained pairs by array index and equal cardinality.
+- Cause: R33 lawfully changes upstream candidate recovery, so its proposed
+  pair set is not guaranteed to equal R31's pair set even when both outputs
+  refer to the same frozen source identity.
+- Mandatory preflight: compare candidate evidence across revisions only by an
+  explicit stable identity or reconstruct it from the exact current-revision
+  candidate inputs. Never assume equal count, order, or membership.
+- Recovery: retain both failed observers as no-retry evidence. First enumerate
+  the exact current revision's resolution-state set; then inspect only the
+  relevant current candidate records without image-byte reads or mutation.
