@@ -1,0 +1,57 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Stage-R8E1Slot22Bf.ps1",
+  "changes": [
+    {
+      "source": "payload/Stage-R8E1Slot22Bf.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R8E1.ps1",
+      "approvedPredecessorSha256": [
+        "159BD82528E505DE69BDEEE4C3A3B29402BA9281939C57F6187587E9047D9740"
+      ],
+      "installedSha256": "170F35D5171935E7C2CB7B447806122E14E7323959F2DCA56BACFD257A4E1A1D",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\KLARFExport\\R8E1",
+      "mode": "CREATE_NEW_HASH_VERIFIED_REVIEW_ONLY_EVIDENCE_COPY",
+      "source": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot22\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot22_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sourceSha256": "5B7ADC1B1A52BE73A3C32D6663E92FC467C640D5502AA77A8309A059C444CDF5",
+      "sourceBytes": 475379874
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "D:\\KLARFExport\\R8E1\\S22U.bmp",
+      "mode": "CREATE_NEW",
+      "sha256": "5B7ADC1B1A52BE73A3C32D6663E92FC467C640D5502AA77A8309A059C444CDF5",
+      "bytes": 475379874
+    }
+  ],
+  "sourceProcessingContract": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "physicalIdentity": "62619-433_20260824005735_Slot22",
+    "sourceImageBytesReadAllowed": true,
+    "opencvPixelDecodeRequired": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "evidenceCopyCreateAllowed": true,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false,
+    "automaticIdentityAuthority": false
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 900,
+    "ownedChildTimeoutSeconds": 600,
+    "maximumSequentialChildren": 1,
+    "outerCoversAllChildren": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [],
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
