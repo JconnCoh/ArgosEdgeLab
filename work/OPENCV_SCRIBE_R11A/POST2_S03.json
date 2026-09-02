@@ -1,0 +1,69 @@
+{
+  "schema": "argos_opencv_scribe_job_v1",
+  "revision": "OCV02_R11A_20260902A",
+  "jobId": "R11A_POST2_S03",
+  "createdUtc": "2026-09-02T12:00:00Z",
+  "identity": {
+    "lotId": "Post2",
+    "slotId": "S03",
+    "physicalIdentity": "POST2_S03"
+  },
+  "inputMode": "DEVELOPMENT_AUTO_LOCALIZED_WHOLE_IMAGE",
+  "inputs": {
+    "bf": {
+      "path": "C:\\P2COHORT\\S03B.bmp",
+      "canonicalProvenancePath": "POST2_S03_BRIGHTFIELD_READ_ONLY_LOCAL_COPY",
+      "ioPathClass": "HASH_PINNED_READ_ONLY_LOCAL_COPY",
+      "aliasName": "",
+      "sha256": "55B290A566FC243C81D1EB5E364D56DBB4DBC7A27AE81EA40E1CBF7CB6E570B3",
+      "bytes": 475379874
+    },
+    "df": {
+      "path": "C:\\P2COHORT\\S03D.bmp",
+      "canonicalProvenancePath": "POST2_S03_DARKFIELD_READ_ONLY_LOCAL_COPY",
+      "ioPathClass": "HASH_PINNED_READ_ONLY_LOCAL_COPY",
+      "aliasName": "",
+      "sha256": "2EF13BB346E381217F6D8DA4C732C5B97C8EABCD062CBE73FD02BD5DD064DFD5",
+      "bytes": 475379874
+    }
+  },
+  "references": {
+    "manifestPath": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\SCRIBE_REVIEW_ONLY\\scratch\\SCRIBE_READER_V5_MERGED_REFERENCES_20260806T203000Z\\PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "manifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "excludedPhysicalIdentity": "POST2_S03",
+    "roots": [
+      {
+        "relativePrefix": "glyphs",
+        "path": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\SCRIBE_REVIEW_ONLY\\scratch\\SCRIBE_READER_V5_MERGED_REFERENCES_20260806T203000Z\\glyphs"
+      },
+      {
+        "relativePrefix": "glyphs_v5_confirmed_20260806",
+        "path": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\SCRIBE_REVIEW_ONLY\\scratch\\SCRIBE_READER_V5_MERGED_REFERENCES_20260806T203000Z\\glyphs_v5_confirmed_20260806"
+      }
+    ]
+  },
+  "search": {
+    "expectedRegions": [],
+    "boundedExceptionSearch": true,
+    "maximumWorkingDimension": 1600,
+    "maximumCandidates": 6,
+    "orientationStepDegrees": 15,
+    "developmentMaximumRegions": 6,
+    "developmentMinimumLocalizationScore": 0.0,
+    "developmentMinimumBandWidthPixels": 500,
+    "developmentOcrRegionWidthPixels": 1600,
+    "developmentOcrRegionHeightPixels": 400,
+    "developmentMinimumObservedHeightRatio": 0.9,
+    "developmentMinimumObservedWidthRatio": 0.9,
+    "developmentMaximumObservedWidthRatio": 1.1
+  },
+  "outputRoot": "C:\\P2COHORT\\results\\R11A\\S03",
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}
