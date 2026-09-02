@@ -1,0 +1,92 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-02T21:47:29.2895271Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R13B\\R13B_PACKAGE_TOOLING_CLONE_LITERAL_REMEDIATION_R2.json",
+    "manifestSha256":  "89B8A630327BBA417DC717DA5940EE1D9C8ABE49B10C17F4BBA828744B329D5D",
+    "pairCount":  5,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R6V2/Build-R6V2Request.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R13B/Build-R13BRequest.ps1",
+                      "sourceSha256":  "3E29BFAF687386B430403622E83371D3BAF369DCEE258E8F1EA0054151978D59",
+                      "generatedSha256":  "A625EA1C602083471717507D8D5E3B25F4C470DE6FEDC781940DE6A156912B62",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "D:\\A2"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "C:\\R13BR",
+                                             "D:\\A2"
+                                         ],
+                      "ruleCount":  3
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D23/Publish-O2D23.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R13B/Publish-R13B.ps1",
+                      "sourceSha256":  "65863D5F022DE3F821966978512B909EC27EB028A311C9F40490B6350EEC5038",
+                      "generatedSha256":  "EFEE3C32A713383F6C566593BE9E6BAD686B4CB8ED29CFD45FADBFC386679A6B",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D23/Collect-O2D23ResponseR2.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R13B/Collect-R13BResponseR2.ps1",
+                      "sourceSha256":  "FB9DA34FC516AAD90C322D7C26BD9DE17919267C3C9215ACDA83224CF3C76922",
+                      "generatedSha256":  "578C49EE34BAD1456783F9CDF62853A969A6A3199FAE224ADEDF98A7E03EE408",
+                      "sourceRoots":  [
+                                          "C:\\O2D23R2_3C97863D",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "C:\\R13BR",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  3
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D23/Get-O2D23CurrentShareObservation.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R13B/Get-R13BCurrentShareObservation.ps1",
+                      "sourceSha256":  "8DF0CB709D56E55F4B9C306F894E47CD501772615414494CD05113CC104DF0DA",
+                      "generatedSha256":  "C548609DE563F632A375867A3B6438792A7216A9EC038285E012BD566D55FD15",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D23/New-O2D23CompleteRouteGate.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R13B/Test-R13BCompleteRoute.ps1",
+                      "sourceSha256":  "A38C33E543F4F517195EC65F954A7E35809B329E5AFD72B7BE334480CFCAA2F0",
+                      "generatedSha256":  "1D76526F97FA3E2A25720092F7F49022985C3F74E2B6A1F0C986F65E6C61DDF8",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\R13BR"
+                                         ],
+                      "ruleCount":  1
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

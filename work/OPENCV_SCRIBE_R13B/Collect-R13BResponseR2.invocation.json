@@ -1,0 +1,56 @@
+{
+  "schema": "argos_r13b_response_collection_r2_invocation_v1",
+  "requestId": "REQ_20260902T204408092Z_R13B",
+  "collectorSha256": "578C49EE34BAD1456783F9CDF62853A969A6A3199FAE224ADEDF98A7E03EE408",
+  "maximumMatchingResponses": 1,
+  "requestRetryAuthorized": false,
+  "matchingSignedTerminalResponseOnly": true,
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "providerActivationAllowed": false
+  },
+  "requiredGates": [
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_FINAL_PACKAGE_GATE.json", "sha256": "CA7644B6C4E89D4E8CEEB53651B6AE80FF6F9DD254A015787CCB7C5C7837BCF2", "stateProperty": "state", "requiredState": "PASS_R13B_FINAL_SIGNED_PACKAGE"},
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_COMPLETE_ROUTE_PACKAGE_BINDING_GATE.json", "sha256": "CCBFAC4807A31CE048A208DF8DF75406149DF927CF218128EB1A00CFA35055FF", "stateProperty": "state", "requiredState": "PASS_R13B_COMPLETE_ROUTE_PACKAGE_BINDING_GATE"},
+    {"path": "work/OPENCV_SCRIBE_R13B/PREACTION_BUILD_SIGN_PUBLISH_R13B_R2.json", "sha256": "EB390B751CFCD93C696144A807A00E8231E180322942400A9311C9498712AAD4", "stateProperty": "state", "requiredState": "PASS_PREACTION_CONTRACT"},
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_PACKAGE_TOOLING_CLONE_LITERAL_GATE_R2.json", "sha256": "EEB22080934B7AAA3CB5C8178B45808DD0FA0103D92EB6F35F073F4D292E2D35", "stateProperty": "state", "requiredState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"},
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_COLLECTOR_ZIP_LOOKUP_REHEARSAL_GATE_R2.json", "sha256": "2B57E573D73E417EECE6A26B8BADD48673041F8B1B9283A0F7CA5026B06BB1D4", "stateProperty": "state", "requiredState": "PASS_R13B_COLLECTOR_ZIP_LOOKUP_REHEARSAL"}
+  ],
+  "responseSigner": {
+    "certificatePath": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer",
+    "certificateSha256": "5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B",
+    "verifierPath": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalResponse.ps1",
+    "verifierSha256": "4AF5901A7B9DFFF5A4DAF128960173D67501ABF6FF87C586BA526643B1C1449C",
+    "thumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC"
+  },
+  "route": {
+    "inspectionRevsUnc": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs"
+  },
+  "limits": {
+    "maximumResponseFiles": 2000,
+    "maximumResponseZipEntries": 16,
+    "maximumManifestBytes": 1048576,
+    "maximumSignatureBytes": 8192,
+    "maximumStdoutBytes": 16777216,
+    "maximumSmallResponseFileBytes": 1048576,
+    "maximumBundleBytes": 8388608,
+    "maximumBundleBase64Characters": 12582912,
+    "maximumBundleEntries": 128,
+    "maximumBundleEntryBytes": 8388608,
+    "maximumBundleExpandedBytes": 67108864,
+    "maximumJsonBytes": 1048576
+  },
+  "allowedTerminalStates": [
+    "PASS_MAINTENANCE_PATCH",
+    "FAILED",
+    "FAILED_RESPONSE_CONSTRUCTION"
+  ],
+  "expectedCaseIds": ["K25V", "X18V", "JQ16D", "JQ20V"],
+  "outputRoot": "work/OPENCV_SCRIBE_R13B_RESPONSE",
+  "shortExtractionRoot": "C:\\R13BR"
+}

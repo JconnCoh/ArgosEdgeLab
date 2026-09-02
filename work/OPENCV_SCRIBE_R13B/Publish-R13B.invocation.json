@@ -1,0 +1,43 @@
+{
+  "schema": "argos_r13b_publication_invocation_v1",
+  "requestId": "REQ_20260902T204408092Z_R13B",
+  "requiredBranch": "codex/opencv-scribe-deciphering",
+  "publisherSha256": "EFEE3C32A713383F6C566593BE9E6BAD686B4CB8ED29CFD45FADBFC386679A6B",
+  "authority": {
+    "publicationAuthorized": true,
+    "maximumPublications": 1,
+    "retryAuthorized": false,
+    "matchingSignedTerminalResponseOnly": true,
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "providerActivationAllowed": false
+  },
+  "requestZip": {
+    "path": "work/OPENCV_SCRIBE_R13B/final/REQ_20260902T204408092Z_R13B.ready.zip",
+    "sha256": "E03EF601339101663E4AABC1889A08C9DB92005F84F56DB3CF08955C8325A889",
+    "bytes": 59619
+  },
+  "requiredGates": [
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_FINAL_PACKAGE_GATE.json", "sha256": "CA7644B6C4E89D4E8CEEB53651B6AE80FF6F9DD254A015787CCB7C5C7837BCF2", "stateProperty": "state", "requiredState": "PASS_R13B_FINAL_SIGNED_PACKAGE"},
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_COMPLETE_ROUTE_PACKAGE_BINDING_GATE.json", "sha256": "CCBFAC4807A31CE048A208DF8DF75406149DF927CF218128EB1A00CFA35055FF", "stateProperty": "state", "requiredState": "PASS_R13B_COMPLETE_ROUTE_PACKAGE_BINDING_GATE"},
+    {"path": "work/OPENCV_SCRIBE_R13B/PREACTION_BUILD_SIGN_PUBLISH_R13B.json", "sha256": "FAAF2DBA154AA9AB25604DBDD9ED14D0BB22FB681008D5974525EAC710B394F5", "stateProperty": "state", "requiredState": "PASS_PREACTION_CONTRACT"},
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_COMPLETE_ROUTE_GATE_R3.json", "sha256": "235034A7B75669F6E8DD6731EA407932901B4CCD46679E48C21A5BDB6250A47F", "stateProperty": "state", "requiredState": "PASS_R13B_COMPLETE_ROUTE_GATE"},
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_PACKAGE_TOOLING_CLONE_LITERAL_GATE.json", "sha256": "CA171F4E820DC8CBA4FB7CF63456959D92025A99DDA2643A344BB84A32F3478C", "stateProperty": "state", "requiredState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"},
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_ENDPOINT_CLONE_LITERAL_REMEDIATION_GATE.json", "sha256": "5AFFA1AEB0BA998458B30C57F9CE683E6812F280C44EDC12BF13486E383EBFEB", "stateProperty": "state", "requiredState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"}
+  ],
+  "freshQueueObservation": {
+    "scriptPath": "work/OPENCV_SCRIBE_R13B/Get-R13BCurrentShareObservation.ps1",
+    "scriptSha256": "C548609DE563F632A375867A3B6438792A7216A9EC038285E012BD566D55FD15",
+    "invocationPath": "work/OPENCV_SCRIBE_R13B/Get-R13BCurrentShareObservation.invocation.json",
+    "invocationSha256": "E86362C8E2E255273DF7D033FED67CBA49070A482308A172FAE3DB90B6673143",
+    "maximumAgeSeconds": 120
+  },
+  "route": {
+    "inspectionRevsUnc": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs"
+  },
+  "publishGatePath": "work/OPENCV_SCRIBE_R13B/R13B_PUBLISH_GATE.json"
+}

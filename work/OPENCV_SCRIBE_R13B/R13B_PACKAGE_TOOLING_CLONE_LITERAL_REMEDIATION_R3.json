@@ -1,0 +1,73 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R13B_PACKAGE_TOOLING_CLONE_LITERAL_REMEDIATION_R3_20260902",
+  "purpose": "Current successor classification for every literal Windows or UNC root after binding the R2 publisher to the exact R2 collector and create-new publication gate.",
+  "supersedes": {
+    "manifestPath": "work/OPENCV_SCRIBE_R13B/R13B_PACKAGE_TOOLING_CLONE_LITERAL_REMEDIATION_R2.json",
+    "manifestSha256": "89B8A630327BBA417DC717DA5940EE1D9C8ABE49B10C17F4BBA828744B329D5D",
+    "gatePath": "work/OPENCV_SCRIBE_R13B/R13B_PACKAGE_TOOLING_CLONE_LITERAL_GATE_R2.json",
+    "gateSha256": "EEB22080934B7AAA3CB5C8178B45808DD0FA0103D92EB6F35F073F4D292E2D35",
+    "predecessorDisposition": "DIAGNOSTIC_ONLY_SUPERSEDED_FOR_PUBLICATION_TOOLING",
+    "reason": "The predecessor gate binds the withdrawn collector hash and cannot authorize R13B publication or collection."
+  },
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R6V2/Build-R6V2Request.ps1",
+      "sourceSha256": "3E29BFAF687386B430403622E83371D3BAF369DCEE258E8F1EA0054151978D59",
+      "generated": "work/OPENCV_SCRIBE_R13B/Build-R13BRequest.ps1",
+      "generatedSha256": "A625EA1C602083471717507D8D5E3B25F4C470DE6FEDC781940DE6A156912B62",
+      "rootRules": [
+        {"sourceRoot": "C:\\ProgramData", "generatedRoot": "C:\\ProgramData", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "D:\\A2", "generatedRoot": "D:\\A2", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "", "generatedRoot": "C:\\R13BR", "disposition": "ADDED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2D23/Publish-O2D23.ps1",
+      "sourceSha256": "65863D5F022DE3F821966978512B909EC27EB028A311C9F40490B6350EEC5038",
+      "generated": "work/OPENCV_SCRIBE_R13B/Publish-R13B_R2.ps1",
+      "generatedSha256": "5698FDE56FD9FE3B3F96A4E283009D9FB56B71E74DCE3A0A699BAACCCB322939",
+      "rootRules": [
+        {"sourceRoot": "\\\\shm-cifs\\Department", "generatedRoot": "\\\\shm-cifs\\Department", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "U:\\ProjectPortalRO", "generatedRoot": "U:\\ProjectPortalRO", "disposition": "UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2D23/Collect-O2D23ResponseR2.ps1",
+      "sourceSha256": "FB9DA34FC516AAD90C322D7C26BD9DE17919267C3C9215ACDA83224CF3C76922",
+      "generated": "work/OPENCV_SCRIBE_R13B/Collect-R13BResponseR2.ps1",
+      "generatedSha256": "556FC3FDD0B174D1ED1BBA752F044A13619EFDE2C00FA17C2FA534822695E5E0",
+      "rootRules": [
+        {"sourceRoot": "C:\\O2D23R2_3C97863D", "generatedRoot": "C:\\R13BR", "disposition": "REPLACED"},
+        {"sourceRoot": "U:\\ProjectPortalRO", "generatedRoot": "U:\\ProjectPortalRO", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "", "generatedRoot": "\\\\shm-cifs\\Department", "disposition": "ADDED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2D23/Get-O2D23CurrentShareObservation.ps1",
+      "sourceSha256": "8DF0CB709D56E55F4B9C306F894E47CD501772615414494CD05113CC104DF0DA",
+      "generated": "work/OPENCV_SCRIBE_R13B/Get-R13BCurrentShareObservation.ps1",
+      "generatedSha256": "C548609DE563F632A375867A3B6438792A7216A9EC038285E012BD566D55FD15",
+      "rootRules": [
+        {"sourceRoot": "\\\\shm-cifs\\Department", "generatedRoot": "\\\\shm-cifs\\Department", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "U:\\ProjectPortalRO", "generatedRoot": "U:\\ProjectPortalRO", "disposition": "UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2D23/New-O2D23CompleteRouteGate.ps1",
+      "sourceSha256": "A38C33E543F4F517195EC65F954A7E35809B329E5AFD72B7BE334480CFCAA2F0",
+      "generated": "work/OPENCV_SCRIBE_R13B/Test-R13BCompleteRoute.ps1",
+      "generatedSha256": "1D76526F97FA3E2A25720092F7F49022985C3F74E2B6A1F0C986F65E6C61DDF8",
+      "rootRules": [
+        {"sourceRoot": "", "generatedRoot": "C:\\R13BR", "disposition": "ADDED"}
+      ]
+    }
+  ],
+  "authority": {
+    "metadataOnly": true,
+    "targetExecuted": false,
+    "publicationAuthorized": false,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  }
+}

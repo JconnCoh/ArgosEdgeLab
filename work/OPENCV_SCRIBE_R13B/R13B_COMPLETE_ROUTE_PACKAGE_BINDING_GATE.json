@@ -1,0 +1,55 @@
+{
+  "schema": "argos_r13b_complete_route_package_binding_gate_v1",
+  "createdUtc": "2026-09-02T21:32:20Z",
+  "state": "PASS_R13B_COMPLETE_ROUTE_PACKAGE_BINDING_GATE",
+  "classification": "FROZEN_REVIEW_ONLY",
+  "requestId": "REQ_20260902T204408092Z_R13B",
+  "prebuildRouteGate": {
+    "path": "work/OPENCV_SCRIBE_R13B/R13B_COMPLETE_ROUTE_GATE_R3.json",
+    "sha256": "235034A7B75669F6E8DD6731EA407932901B4CCD46679E48C21A5BDB6250A47F",
+    "state": "PASS_R13B_COMPLETE_ROUTE_GATE",
+    "routePathRowsEvaluated": 209,
+    "maximumEffectiveLength": 193,
+    "maximumComponentLength": 67,
+    "packageBindingState": "PRE_BUILD_ROUTE_BYTES_UNBOUND"
+  },
+  "finalPackageGate": {
+    "path": "work/OPENCV_SCRIBE_R13B/R13B_FINAL_PACKAGE_GATE.json",
+    "sha256": "CA7644B6C4E89D4E8CEEB53651B6AE80FF6F9DD254A015787CCB7C5C7837BCF2",
+    "state": "PASS_R13B_FINAL_SIGNED_PACKAGE",
+    "completeRouteGateSha256": "235034A7B75669F6E8DD6731EA407932901B4CCD46679E48C21A5BDB6250A47F",
+    "completeRoutePackageBindingPassed": true
+  },
+  "requestPackage": {
+    "path": "work/OPENCV_SCRIBE_R13B/final/REQ_20260902T204408092Z_R13B.ready.zip",
+    "bytes": 59619,
+    "sha256": "E03EF601339101663E4AABC1889A08C9DB92005F84F56DB3CF08955C8325A889",
+    "requestManifestSha256": "19EC131F8C73D8CBAB835776BA4390FECA5E8AF164D3C77224A61ACA5EDF9F77",
+    "requestSignatureSha256": "556CEAEFDB5961DCD94F66A24CF5CD789286941E3C9D950C793B9CBFCA44E19F",
+    "exactFinalZipExtractionPassed": true,
+    "exactFinalZipSignaturePassed": true
+  },
+  "binding": {
+    "routeGateUnmodified": true,
+    "routeGateIsSolePrebuildPassParent": true,
+    "finalPackageBindsExactRouteGate": true,
+    "finalZipHashAndBytesBound": true,
+    "publicationMustPinThisSuccessorGate": true
+  },
+  "authority": {
+    "publicationAuthorizedByThisGate": false,
+    "maximumPublications": 1,
+    "retryAuthorized": false,
+    "matchingSignedTerminalResponseOnly": true,
+    "targetExecuted": false,
+    "sourceImagesRead": false,
+    "sourceMutationPerformed": false,
+    "providerActivated": false,
+    "automaticIdentityAuthority": false,
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false
+  }
+}

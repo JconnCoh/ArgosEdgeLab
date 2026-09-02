@@ -1,0 +1,79 @@
+{
+  "schema": "argos_r13b_complete_route_package_and_current_tooling_binding_gate_v3",
+  "createdUtc": "2026-09-02T21:55:00Z",
+  "state": "PASS_R13B_COMPLETE_ROUTE_PACKAGE_AND_CURRENT_TOOLING_BINDING_GATE_R3",
+  "classification": "FROZEN_REVIEW_ONLY",
+  "requestId": "REQ_20260902T204408092Z_R13B",
+  "supersedesForPublication": {
+    "path": "work/OPENCV_SCRIBE_R13B/R13B_COMPLETE_ROUTE_PACKAGE_BINDING_GATE_R2.json",
+    "sha256": "E23781585EA52B4DACB2621A7886A438F2AE58BEDE7ECF5B4C365608586855EE",
+    "state": "PASS_R13B_COMPLETE_ROUTE_PACKAGE_AND_CURRENT_TOOLING_BINDING_GATE",
+    "disposition": "DIAGNOSTIC_ONLY_SUPERSEDED_FOR_PUBLICATION",
+    "reason": "The predecessor predates the final create-new publication-gate binding between publisher and collector."
+  },
+  "prebuildRouteGate": {
+    "path": "work/OPENCV_SCRIBE_R13B/R13B_COMPLETE_ROUTE_GATE_R3.json",
+    "sha256": "235034A7B75669F6E8DD6731EA407932901B4CCD46679E48C21A5BDB6250A47F",
+    "state": "PASS_R13B_COMPLETE_ROUTE_GATE",
+    "routePathRowsEvaluated": 209,
+    "maximumEffectiveLength": 193,
+    "maximumComponentLength": 67
+  },
+  "finalPackageGate": {
+    "path": "work/OPENCV_SCRIBE_R13B/R13B_FINAL_PACKAGE_GATE.json",
+    "sha256": "CA7644B6C4E89D4E8CEEB53651B6AE80FF6F9DD254A015787CCB7C5C7837BCF2",
+    "state": "PASS_R13B_FINAL_SIGNED_PACKAGE",
+    "completeRouteGateSha256": "235034A7B75669F6E8DD6731EA407932901B4CCD46679E48C21A5BDB6250A47F",
+    "completeRoutePackageBindingPassed": true
+  },
+  "requestPackage": {
+    "path": "work/OPENCV_SCRIBE_R13B/final/REQ_20260902T204408092Z_R13B.ready.zip",
+    "bytes": 59619,
+    "sha256": "E03EF601339101663E4AABC1889A08C9DB92005F84F56DB3CF08955C8325A889",
+    "requestManifestSha256": "19EC131F8C73D8CBAB835776BA4390FECA5E8AF164D3C77224A61ACA5EDF9F77",
+    "requestSignatureSha256": "556CEAEFDB5961DCD94F66A24CF5CD789286941E3C9D950C793B9CBFCA44E19F",
+    "exactFinalZipExtractionPassed": true,
+    "exactFinalZipSignaturePassed": true,
+    "unchangedAfterCollectorCorrection": true
+  },
+  "currentPublicationTooling": {
+    "preaction": {"path": "work/OPENCV_SCRIBE_R13B/PREACTION_BUILD_SIGN_PUBLISH_R13B_R3.json", "sha256": "F5C3B27D05509AE441502469BB7065CFF1B02BD4A4B6521F23587696634B7FE2", "state": "PASS_PREACTION_CONTRACT", "zeroRecurrencePreflightState": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"},
+    "cloneManifest": {"path": "work/OPENCV_SCRIBE_R13B/R13B_PACKAGE_TOOLING_CLONE_LITERAL_REMEDIATION_R3.json", "sha256": "ABD098D3F9EE034865971E0C8E4F16CCF51C6F38D1A580816F4567268F28D39B"},
+    "cloneGate": {"path": "work/OPENCV_SCRIBE_R13B/R13B_PACKAGE_TOOLING_CLONE_LITERAL_GATE_R3.json", "sha256": "C5C0C5A5F89D6CDB22C069094DB40CDFBFC7202D96E8265A5F53F979A34DF714", "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"},
+    "collector": {"path": "work/OPENCV_SCRIBE_R13B/Collect-R13BResponseR2.ps1", "sha256": "556FC3FDD0B174D1ED1BBA752F044A13619EFDE2C00FA17C2FA534822695E5E0"},
+    "collectorWrapper": {"path": "work/OPENCV_SCRIBE_R13B/Collect-R13BResponseR2.cmd", "sha256": "209CA9E994CA5D12D5EC7D06AB63F36A0C14E1EB6532DAAF3D6D51A4679ADE92"},
+    "collectorInvocation": {"path": "work/OPENCV_SCRIBE_R13B/Collect-R13BResponseR2B.invocation.json", "sha256": "8C28C2DE0750A92FB36FE5854826037DDBCEDD4D2AE89DD553848D4037CBD09F"},
+    "collectorRehearsalInvocation": {"path": "work/OPENCV_SCRIBE_R13B/Test-R13BCollectorR2B.invocation.json", "sha256": "2153A192CD07C03E4A636227D2973C57BA3B8F5021955F56E0F6073D266708F4"},
+    "collectorRehearsalGate": {"path": "work/OPENCV_SCRIBE_R13B/R13B_COLLECTOR_ZIP_LOOKUP_REHEARSAL_GATE_R2B.json", "sha256": "11A6567907C71F73C4C9FC3FFCDEA7D7E6E2DDCF003ED345B2152ED8A5B3BAF3", "state": "PASS_R13B_COLLECTOR_ZIP_LOOKUP_REHEARSAL", "windowsPowerShellVersion": "5.1.26100.9168", "rawNestedEntry": "CASE01\\CASE_RESULT.json", "exactNestedBytesRead": true, "exactNormalizedFileSetClosed": true, "undeclaredExtraEntryRejected": true, "directoryEntryRejected": true, "normalizedDuplicateEntryRejected": true},
+    "publisher": {"path": "work/OPENCV_SCRIBE_R13B/Publish-R13B_R2.ps1", "sha256": "5698FDE56FD9FE3B3F96A4E283009D9FB56B71E74DCE3A0A699BAACCCB322939"},
+    "publisherWrapper": {"path": "work/OPENCV_SCRIBE_R13B/Publish-R13B_R2.cmd", "sha256": "14D493A709D2E23A3946C0BB882C4A30BABEB85687BC9C39771F8AA2177D237B"},
+    "observer": {"path": "work/OPENCV_SCRIBE_R13B/Get-R13BCurrentShareObservation.ps1", "sha256": "C548609DE563F632A375867A3B6438792A7216A9EC038285E012BD566D55FD15"},
+    "observerInvocation": {"path": "work/OPENCV_SCRIBE_R13B/Get-R13BCurrentShareObservation.invocation.json", "sha256": "E86362C8E2E255273DF7D033FED67CBA49070A482308A172FAE3DB90B6673143"}
+  },
+  "binding": {
+    "routeAndSignedRequestBytesUnmodified": true,
+    "currentCollectorScriptAndRuntimeInvocationBound": true,
+    "windowsPowerShell51BackslashEntryRegressionPassed": true,
+    "exactNormalizedReturnedFileSetClosurePassed": true,
+    "predecessorPackageToolingGateNotReusableForPublication": true,
+    "publisherEmitsExactCollectorRuntimeBinding": true,
+    "collectorRequiresExactCreateNewPublicationGate": true,
+    "publicationMustPinThisR3SuccessorGate": true
+  },
+  "authority": {
+    "publicationAuthorizedByThisGate": false,
+    "maximumPublications": 1,
+    "retryAuthorized": false,
+    "matchingSignedTerminalResponseOnly": true,
+    "targetExecuted": false,
+    "sourceImagesRead": false,
+    "sourceMutationPerformed": false,
+    "providerActivated": false,
+    "automaticIdentityAuthority": false,
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false
+  }
+}

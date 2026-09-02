@@ -1,0 +1,156 @@
+{
+  "schema": "argos_r13b_complete_route_invocation_v1",
+  "requestId": "REQ_20260902T204408092Z_R13B",
+  "maximumResponseIdentity": "R_0123456789AB_20260902235959999_a1b2c3d4",
+  "routeTesterSha256": "1D76526F97FA3E2A25720092F7F49022985C3F74E2B6A1F0C986F65E6C61DDF8",
+  "reservedSuffixCharacters": 32,
+  "maximumEffectiveLengthExclusive": 200,
+  "maximumComponentLength": 80,
+  "pathTool": {
+    "path": "utilities/Confirm-ArgosPathBudget.ps1",
+    "sha256": "F8B0991231C213052B2FA31AAE67DB95E2C4DF831A9F717F91766318B19D4B0A"
+  },
+  "inheritedRecords": {
+    "r6v2": {
+      "path": "work/OPENCV_SCRIBE_R6V2/R6V2_PATH_ROUTE_GATE.json",
+      "sha256": "6AD3325DE6A8DDFC98D503731F69CC18C4A002674E58E0AAD0D874AA47FDE352"
+    },
+    "o2d23": {
+      "path": "work/OPENCV_SCRIBE_O2D23/O2D23_COMPLETE_ROUTE_GATE.json",
+      "sha256": "D161C4891688D6A76F7AD84EBBC935B7D14488CF21D7CF91E6F9944197B8706E"
+    },
+    "o2d23Pass": {
+      "path": "work/OPENCV_SCRIBE_O2D23/O2D23_COMPLETE_ROUTE_GATE_R3.json",
+      "sha256": "04AC15694066C3CE4971DC946F77AF3CDB6814920CAB8B3DCCEA4CDCE4B535D3"
+    }
+  },
+  "requestExtractedLeaves": [
+    "PORTAL_REQUEST_MANIFEST.json",
+    "PORTAL_REQUEST_MANIFEST.sig",
+    "payload/Invoke-R13B.ps1",
+    "payload/R13B.py",
+    "payload/R11.py",
+    "payload/R12A.py",
+    "payload/R12B.py",
+    "payload/CFG.json",
+    "payload/LIVE.json"
+  ],
+  "localFinalExtractRoot": "work/OPENCV_SCRIBE_R13B/final/extract",
+  "installedRequestExtractRootTemplates": [
+    "C:\\ProgramData\\ArgosProjectPortalRO\\requests_to_argos\\pending\\{REQUEST_ID}.ready",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\requests_from_gateway\\pending\\{REQUEST_ID}.ready",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\pending\\{REQUEST_ID}.ready",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\sent\\{REQUEST_ID}.ready",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\{REQUEST_ID}.ready",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\completed\\{REQUEST_ID}.ready",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\failed\\{REQUEST_ID}.ready",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\replayed\\{REQUEST_ID}.ready",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\work\\J_0123456789AB_01234567\\package"
+  ],
+  "requestZipPathTemplates": [
+    "U:\\ProjectPortalRO\\requests\\{REQUEST_ID}.ready.zip.upload",
+    "U:\\ProjectPortalRO\\requests\\{REQUEST_ID}.ready.zip",
+    "U:\\ProjectPortalRO\\requests\\processed\\{REQUEST_ID}.ready.zip",
+    "C:\\APR\\S\\requests\\{REQUEST_ID}.ready.zip",
+    "C:\\APR\\S\\requests\\processed\\{REQUEST_ID}.ready.zip",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\share\\staging\\{REQUEST_ID}.ready.zip",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\share\\request_archive\\{REQUEST_ID}.ready.zip"
+  ],
+  "responseLeaves": [
+    "PORTAL_RESPONSE_MANIFEST.json",
+    "PORTAL_RESPONSE_MANIFEST.sig",
+    "MAINTENANCE.stdout.txt",
+    "MAINTENANCE.stderr.txt",
+    "RESULT.json"
+  ],
+  "installedResponseExtractRootTemplates": [
+    "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\{RESPONSE_ID}.ready.partial",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\{RESPONSE_ID}.ready.partial",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\{RESPONSE_ID}.ready",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\sent\\{RESPONSE_ID}.ready",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\from_jbod\\pending\\{RESPONSE_ID}.ready",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\pending\\{RESPONSE_ID}.ready",
+    "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\sent\\{RESPONSE_ID}.ready",
+    "C:\\APR\\R\\pending\\{RESPONSE_ID}.ready",
+    "C:\\APR\\A\\{RESPONSE_ID}.ready",
+    "C:\\A6R\\{RESPONSE_ID}.ready"
+  ],
+  "shortResponseExtractRoot": "C:\\R13BR\\r",
+  "responseZipPathTemplates": [
+    "C:\\ProgramData\\ArgosProjectPortalRO\\share\\response_zip_archive\\{RESPONSE_ID}.ready.zip",
+    "U:\\ProjectPortalRO\\responses\\{RESPONSE_ID}.ready.zip",
+    "C:\\A6R\\{RESPONSE_ID}.ready.zip",
+    "C:\\R13BR\\z.zip"
+  ],
+  "localPaths": [
+    "work/OPENCV_SCRIBE_R13B/R13B_COMPLETE_ROUTE_GATE_R3.json",
+    "work/OPENCV_SCRIBE_R13B/R13B_FINAL_PACKAGE_GATE.json",
+    "work/OPENCV_SCRIBE_R13B/final/REQ_20260902T204408092Z_R13B.ready.zip",
+    "work/OPENCV_SCRIBE_R13B_RESPONSE.partial/response/transport.ready.zip",
+    "work/OPENCV_SCRIBE_R13B_RESPONSE.partial/evidence/R13B_RETURN.zip",
+    "work/OPENCV_SCRIBE_R13B_RESPONSE.partial/evidence/bundle/JQ20V/targets/P05_Q.png",
+    "work/OPENCV_SCRIBE_R13B_RESPONSE/evidence/bundle/JQ20V/targets/P05_Q.png",
+    "work/OPENCV_SCRIBE_R13B_RESPONSE/R13B_EXACT_RESPONSE_COLLECTION_GATE.json"
+  ],
+  "remoteWorkOutputAndBundlePaths": [
+    "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R13B.ps1",
+    "D:\\A2\\w\\ocv\\R13B.partial\\refs\\glyphs_v5_confirmed_20260806\\028_62630_456_SLOT25_P04_S.png",
+    "D:\\A2\\w\\ocv\\R13B.failed\\refs\\glyphs_v5_confirmed_20260806\\028_62630_456_SLOT25_P04_S.png",
+    "D:\\A2\\w\\ocv\\R13B\\R13B.py",
+    "D:\\A2\\w\\ocv\\R13B\\R11.py",
+    "D:\\A2\\w\\ocv\\R13B\\R12A.py",
+    "D:\\A2\\w\\ocv\\R13B\\R12B.py",
+    "D:\\A2\\w\\ocv\\R13B\\CFG.json",
+    "D:\\A2\\w\\ocv\\R13B\\LIVE.json",
+    "D:\\A2\\w\\ocv\\R13B\\refs\\PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "D:\\A2\\w\\ocv\\R13B\\refs\\glyphs_v5_confirmed_20260806\\028_62630_456_SLOT25_P04_S.png",
+    "D:\\A2\\w\\ocv\\R13B\\jobs\\JQ20V.json",
+    "D:\\A2\\w\\ocv\\R13B\\failed\\JQ20V\\committed\\selected_grid.png",
+    "D:\\A2\\w\\ocv\\R13B\\failed\\JQ20V\\committed\\cells\\P12_6.png",
+    "D:\\A2\\w\\ocv\\R13B\\failed\\JQ20V\\committed\\targets\\P05_Q.png",
+    "D:\\A2\\w\\ocv\\R13B\\failed\\JQ20V\\partial\\CASE_RESULT.json",
+    "D:\\A2\\w\\ocv\\R13B\\failed\\JQ20V\\partial\\selected_grid.png",
+    "D:\\A2\\w\\ocv\\R13B\\failed\\JQ20V\\partial\\cells\\P12_6.png",
+    "D:\\A2\\w\\ocv\\R13B\\failed\\JQ20V\\partial\\targets\\P05_Q.png",
+    "D:\\A2\\o\\ocv\\R13B.partial\\JQ20V.partial\\CASE_RESULT.json",
+    "D:\\A2\\o\\ocv\\R13B.partial\\JQ20V.partial\\selected_grid.png",
+    "D:\\A2\\o\\ocv\\R13B.partial\\JQ20V.partial\\cells\\P12_6.png",
+    "D:\\A2\\o\\ocv\\R13B.partial\\JQ20V.partial\\targets\\P05_Q.png",
+    "D:\\A2\\o\\ocv\\R13B.partial\\JQ20V\\targets\\P05_Q.png",
+    "D:\\A2\\o\\ocv\\R13B\\K25V\\CASE_RESULT.json",
+    "D:\\A2\\o\\ocv\\R13B\\X18V\\CASE_RESULT.json",
+    "D:\\A2\\o\\ocv\\R13B\\JQ16D\\CASE_RESULT.json",
+    "D:\\A2\\o\\ocv\\R13B\\JQ20V\\CASE_RESULT.json",
+    "D:\\A2\\o\\ocv\\R13B\\JQ20V\\selected_grid.png",
+    "D:\\A2\\o\\ocv\\R13B\\JQ20V\\cells\\P12_6.png",
+    "D:\\A2\\o\\ocv\\R13B\\JQ20V\\targets\\P05_Q.png",
+    "D:\\A2\\o\\ocv\\R13B\\BATCH_GATE.json",
+    "D:\\A2\\o\\ocv\\R13B\\EXECUTION.json",
+    "D:\\A2\\o\\ocv\\R13B_RETURN.zip.partial",
+    "D:\\A2\\o\\ocv\\R13B_RETURN.zip",
+    "C:\\R13BR\\R13B_RETURN.zip",
+    "C:\\R13BR\\b\\JQ20V\\targets\\P05_Q.png"
+  ],
+  "shortAliasedSourcePaths": [
+    "X:\\Slot25\\BrightfieldFrontsideWafer\\resizedImage\\62546-481_Slot25_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "X:\\Slot25\\DarkfieldFrontsideWafer\\resizedImage\\62546-481_Slot25_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "X:\\Slot18\\BrightfieldFrontsideWafer\\resizedImage\\62625-907_PRE_Slot18_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "X:\\Slot18\\DarkfieldFrontsideWafer\\resizedImage\\62625-907_PRE_Slot18_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "X:\\Slot16\\BrightfieldFrontsideWafer\\resizedImage\\62625-956_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "X:\\Slot16\\DarkfieldFrontsideWafer\\resizedImage\\62625-956_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "X:\\Slot20\\BrightfieldFrontsideWafer\\resizedImage\\62625-956_Slot20_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "X:\\Slot20\\DarkfieldFrontsideWafer\\resizedImage\\62625-956_Slot20_DarkfieldFrontsideWafer_PM2_resizedImage.bmp"
+  ],
+  "outputPath": "work/OPENCV_SCRIBE_R13B/R13B_COMPLETE_ROUTE_GATE_R3.json",
+  "authority": {
+    "reviewOnly": true,
+    "externalRouteAccessAllowed": false,
+    "publicationAuthorized": false,
+    "retryAuthorized": false,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false
+  }
+}

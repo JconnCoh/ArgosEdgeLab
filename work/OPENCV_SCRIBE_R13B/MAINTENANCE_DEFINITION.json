@@ -1,0 +1,111 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 16777216,
+  "entryPoint": "payload/Invoke-R13B.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-R13B.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R13B.ps1",
+      "approvedPredecessorSha256": [
+        "159BD82528E505DE69BDEEE4C3A3B29402BA9281939C57F6187587E9047D9740"
+      ],
+      "installedSha256": "4E7A7BFAE134FF8867F9D606ECB9B7BB32B51885D2594A3D0712FD150B4FBAE2",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\A2\\w\\ocv\\R13B",
+      "mode": "CREATE_NEW_PROVIDER_WORK_TREE",
+      "failureQuarantine": "D:\\A2\\w\\ocv\\R13B.failed",
+      "payloads": [
+        {"path": "payload/Invoke-R13B.ps1", "sha256": "4E7A7BFAE134FF8867F9D606ECB9B7BB32B51885D2594A3D0712FD150B4FBAE2"},
+        {"path": "payload/R13B.py", "sha256": "995587862B6FA280C1D48907254AA82B5C4120F4B26A10CFE559A1E27BD9E0B3"},
+        {"path": "payload/R11.py", "sha256": "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9"},
+        {"path": "payload/R12A.py", "sha256": "F5EB8FB3281D7D55CDD9FA4A3530A32BD33BBA3B8DB69E0A247C20935F6AD429"},
+        {"path": "payload/R12B.py", "sha256": "D670CFCE64BF5FDF5307E69ED69A05CB7B404A78B521AB889C7F35044D666FDC"},
+        {"path": "payload/CFG.json", "sha256": "1F58C66A18C4ED58B5ED3EEE27BACF9D65948140F8609A194CFE8A68501D6F42"},
+        {"path": "payload/LIVE.json", "sha256": "34BE97AEB60E726666A18DB1AB4556A4C38DFBB91518ED0C2C145C131FDC10B9"},
+        {"path": "D:/O2D5/ARGOS_O2D5/O2D5_REFS.zip", "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6"}
+      ]
+    },
+    {
+      "targetRoot": "D:\\A2\\o\\ocv\\R13B",
+      "mode": "CREATE_NEW_PROVIDER_OUTPUT_TREE"
+    },
+    {
+      "targetPath": "D:\\A2\\o\\ocv\\R13B_RETURN.zip",
+      "mode": "CREATE_NEW_COMPACT_RETURN_BUNDLE"
+    }
+  ],
+  "entryPointOutputs": [
+    {"path": "D:\\A2\\o\\ocv\\R13B\\K25V\\CASE_RESULT.json", "mode": "CREATE_NEW", "schema": "argos_opencv_scribe_alphabet_crop_case_result_v1"},
+    {"path": "D:\\A2\\o\\ocv\\R13B\\X18V\\CASE_RESULT.json", "mode": "CREATE_NEW", "schema": "argos_opencv_scribe_alphabet_crop_case_result_v1"},
+    {"path": "D:\\A2\\o\\ocv\\R13B\\JQ16D\\CASE_RESULT.json", "mode": "CREATE_NEW", "schema": "argos_opencv_scribe_alphabet_crop_case_result_v1"},
+    {"path": "D:\\A2\\o\\ocv\\R13B\\JQ20V\\CASE_RESULT.json", "mode": "CREATE_NEW", "schema": "argos_opencv_scribe_alphabet_crop_case_result_v1"},
+    {"path": "D:\\A2\\o\\ocv\\R13B\\BATCH_GATE.json", "mode": "CREATE_NEW", "schema": "argos_opencv_scribe_r13b_batch_gate_v1", "requiredState": "PASS_R13B_BATCH_COMPLETE"},
+    {"path": "D:\\A2\\o\\ocv\\R13B\\EXECUTION.json", "mode": "CREATE_NEW", "schema": "argos_opencv_scribe_r13b_execution_v1", "requiredState": "PASS_R13B_EXECUTION"},
+    {"path": "D:\\A2\\o\\ocv\\R13B_RETURN.zip", "mode": "CREATE_NEW", "maximumBytes": 8388608},
+    {"transport": "MAINTENANCE.stdout.txt", "schema": "argos_opencv_scribe_r13b_maintenance_envelope_v1", "requiredState": "PASS_R13B_SIGNED_RETURN_READY", "maximumBase64Characters": 12582912}
+  ],
+  "sourceProcessingContract": {
+    "sourcePlanPath": "work/OPENCV_SCRIBE_R13A/R13A_ALPHABET_HARVEST_PLAN.json",
+    "sourcePlanSha256": "7F1F9DB9582E57B2F7608DEE013F969B6A1C25FD227DC8CB7A88BB15910DE2D1",
+    "physicalIdentities": [
+      "62546-481_20260707164232_Slot25",
+      "62625-907-PRE_20260709123021_Slot18",
+      "62625-956_20260729122701_Slot16",
+      "62625-956_20260729122701_Slot20"
+    ],
+    "inputMode": "REVIEW_ONLY_AUTO_LOCALIZED_WHOLE_IMAGE_ALPHABET_CROP",
+    "sourceAliasName": "X:",
+    "sourceAliasChangesPerCaseOnly": true,
+    "referenceBundlePath": "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+    "referenceBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "sourceImageBytesReadAllowed": true,
+    "sourceImagesProcessedReadOnlyInPlace": true,
+    "sourceHashBeforeOpenCvDecodeRequired": true,
+    "opencvPixelDecodeRequired": true,
+    "fullSourceImageReturnAllowed": false,
+    "compactGridCellAndTargetCropReturnOnly": true,
+    "truthUse": "REVIEW_ONLY_GRID_SELECTION_NOT_IDENTITY_ACCEPTANCE",
+    "automaticReferenceAdmissionAllowed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false,
+    "automaticIdentityAuthority": false
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 3000,
+    "opencvChildTimeoutSeconds": 600,
+    "maximumSequentialChildren": 4,
+    "maximumConcurrentChildren": 1,
+    "outerCoversAllChildren": true,
+    "automaticRetryAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_FOUR_SERIALIZED_BOUNDED_PORTABLE_OPENCV_SCRIBE_REVIEW_ONLY_CHILDREN"
+  ],
+  "rehearsal": {
+    "requiredState": "PASS_R13B_SIGNED_RETURN_READY",
+    "gateState": "PASS_R13B_ENDPOINT_REHEARSAL",
+    "gatePath": "work/OPENCV_SCRIBE_R13B/R13B_ENDPOINT_REHEARSAL_GATE.json",
+    "gateSha256": "8F4DD8E8D4D0A70B88C27290165CA45048DC83EAF0854CE9FBE89751DCC6116E",
+    "endpointTestPath": "work/OPENCV_SCRIBE_R13B/Test-R13BEndpoint.ps1",
+    "endpointTestSha256": "E141C3F63319308F36D7D064B8A5104762840F57DFF70FBF4AC877FF36CBEED8",
+    "endpointSha256": "4E7A7BFAE134FF8867F9D606ECB9B7BB32B51885D2594A3D0712FD150B4FBAE2",
+    "successInvocationSha256": "F1B8A43CA6DE54AC3386E9E819B071ADF42FFF2094CF097C99DDB19CA02178DD",
+    "failureInvocationSha256": "DF6F92EA93A5A2AAADCA073A9788CD4043CEFA3C9FB1170CDEFD56D26A9FDB06",
+    "localRealImageGateState": "PASS_R13B_LOCAL_REAL_IMAGE_REHEARSAL_HOLD_SAFE",
+    "localRealImageGateSha256": "CA0B6227641D5D21E569020A1408B778A95C92533041A30CAC32C98A6C225E83",
+    "exactNoArgumentLivePathStaticBranchPinned": true,
+    "rehearsalUsesExplicitInvocation": true,
+    "exactNoArgumentLiveExecutionPerformed": false,
+    "successAndInjectedFailureConstructionPassed": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

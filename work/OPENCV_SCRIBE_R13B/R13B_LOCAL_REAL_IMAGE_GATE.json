@@ -1,0 +1,220 @@
+{
+  "schema": "argos_opencv_scribe_r13b_local_real_image_gate_v1",
+  "revision": "OCV02_R13B_S17_LOCAL_REAL_IMAGE_GATE_20260902",
+  "classification": "PENDING_GATE",
+  "state": "PASS_R13B_LOCAL_REAL_IMAGE_REHEARSAL_HOLD_SAFE",
+  "checkedUtc": "2026-09-02T21:03:46.2588662Z",
+  "scope": {
+    "worktree": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab-scribe-opencv",
+    "resultRoot": "C:/R13BT/S17",
+    "externalAccessPerformedByThisVerification": false,
+    "sourceImageBytesRereadByThisVerification": false,
+    "sourceMutationPerformed": false,
+    "sourceDeletionPerformed": false
+  },
+  "execution": {
+    "providerExitCode": 0,
+    "providerCompleted": true,
+    "providerExitEvidence": "COORDINATOR_EXECUTION_TELEMETRY_AND_EXACT_PROVIDER_CONTROL_FLOW_ONLY_RUN_CASE_SUCCESS_RETURNS_HOLD_R13B_REVIEW_ONLY_GRID_SELECTED_WITH_ARTIFACTS_AND_EXIT_ZERO",
+    "fullBrightfieldAndDarkfieldRunCompleted": true,
+    "caseId": "S17R",
+    "jobId": "R13B_REHEARSAL_S17",
+    "physicalIdentity": "62546-481_POST2_SLOT17",
+    "purpose": "DEVELOPMENT",
+    "caseState": "HOLD_R13B_REVIEW_ONLY_GRID_SELECTED",
+    "caseClassification": "PENDING_GATE"
+  },
+  "exactHashes": {
+    "job": {
+      "path": "work/OPENCV_SCRIBE_R13B/R13B_REHEARSAL_S17.json",
+      "sha256": "D8114189563D87476BD4EC500ED3F7C851443F7508E02093E85C4F49C29EBE8D",
+      "matchesCaseResult": true
+    },
+    "result": {
+      "path": "C:/R13BT/S17/CASE_RESULT.json",
+      "sha256": "82121BD709FA09AEA6CE0C8019D37AB79E8C1D61038D6A16CA48E44B65F3E639"
+    },
+    "provider": {
+      "path": "work/OPENCV_SCRIBE_R13B/ArgosOpenCvScribeAlphabetCropR13B.py",
+      "sha256": "995587862B6FA280C1D48907254AA82B5C4120F4B26A10CFE559A1E27BD9E0B3",
+      "matchesExecutedProviderEvidence": true
+    },
+    "executedConfigurationSemantics": {
+      "path": "work/OPENCV_SCRIBE_R13B/R13B_CONFIGURATION.json",
+      "sha256AtRehearsal": "C818FA7368D2776B0E8A5FECA637ECC8EC3F2DD54A745562134DE887104572AB",
+      "directlyReadByProvider": false,
+      "semanticsSuppliedByJob": true
+    },
+    "frozenPackageConfiguration": {
+      "path": "work/OPENCV_SCRIBE_R13B/R13B_CONFIGURATION.json",
+      "sha256": "1F58C66A18C4ED58B5ED3EEE27BACF9D65948140F8609A194CFE8A68501D6F42",
+      "onlyPostRehearsalChange": "state:DRAFT_REVIEW_ONLY_TO_FROZEN_REVIEW_ONLY",
+      "automaticLocalizationBlobGridCellOutputAndAuthorityUnchanged": true
+    },
+    "dependencies": [
+      {
+        "id": "R11",
+        "path": "work/OPENCV_SCRIBE_R11A/ArgosOpenCvScribeV1R11.py",
+        "sha256": "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9",
+        "matchesResultAndConfiguration": true
+      },
+      {
+        "id": "R12A",
+        "path": "work/OPENCV_SCRIBE_R12A/Run-ArgosOpenCvScribeR12BlobDiagnostic.py",
+        "sha256": "F5EB8FB3281D7D55CDD9FA4A3530A32BD33BBA3B8DB69E0A247C20935F6AD429",
+        "matchesResultAndConfiguration": true
+      },
+      {
+        "id": "R12B",
+        "path": "work/OPENCV_SCRIBE_R12B/Run-ArgosOpenCvScribeR12BBlobTopology.py",
+        "sha256": "D670CFCE64BF5FDF5307E69ED69A05CB7B404A78B521AB889C7F35044D666FDC",
+        "matchesResultAndConfiguration": true
+      }
+    ],
+    "frozenReferenceManifest": {
+      "path": "work/SCRIBE_REVIEW_ONLY/scratch/SCRIBE_READER_V5_MERGED_REFERENCES_20260806T203000Z/PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+      "sha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+      "matchesResultAndJob": true,
+      "mutated": false
+    },
+    "r13aLocalGate": {
+      "path": "work/OPENCV_SCRIBE_R13A/R13A_LOCAL_GATE.json",
+      "sha256": "3F3A782CE7267FFB2C35AAD7C5F970B0A33A25DEEF072AD4C4AD7B087619E5A7"
+    },
+    "r13aCandidateManifest": {
+      "path": "work/OPENCV_SCRIBE_R13A/S17E_20260902/candidate_manifest.json",
+      "sha256": "78A0718980AFDEF5109E87B00A0884C3BEAB4EF682E8AFBA50129B260E65F8EE"
+    },
+    "operatorTruthRecord": {
+      "path": "work/OPENCV_SCRIBE_R12B/S17_OPERATOR_CONFIRMED_REGRESSION.json",
+      "sha256": "B8CCC273321F15FA03C7F1025500585ECC14562A79A723033767B50679BBECEC"
+    }
+  },
+  "sourceVerification": {
+    "canonicalTruth": "6KB71041XDE5",
+    "canonicalTruthUse": "REVIEW_ONLY_GRID_SELECTION_NOT_IDENTITY_ACCEPTANCE",
+    "brightfield": {
+      "canonicalProvenancePath": "POST2_S17_BRIGHTFIELD_READ_ONLY_LOCAL_COPY",
+      "sha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94",
+      "expectedBytes": 475379874,
+      "resultRecordedBytes": 475379874,
+      "width": 14411,
+      "height": 10995,
+      "hashVerifiedBeforeDecode": true,
+      "decodeCount": 1
+    },
+    "darkfield": {
+      "canonicalProvenancePath": "POST2_S17_DARKFIELD_READ_ONLY_LOCAL_COPY",
+      "sha256": "9AB0AA6942948F54635C51B173618FC8478C75791E9F859FDD135FFDE52C153C",
+      "expectedBytes": 475379874,
+      "resultRecordedBytes": 475379874,
+      "width": 14411,
+      "height": 10995,
+      "hashVerifiedBeforeDecode": true,
+      "decodeCount": 1
+    },
+    "sourcePairSha256": "B03799462D6A4A7F380DC44553EE14E30491BD10409DD22C0B820013C26B6D75",
+    "sourcePairHashRecomputedFromPinnedHashes": true,
+    "sourceByteLengthMatchesFileBackedBaseline": true,
+    "sourceMtimeVerification": "NOT_EVALUABLE_NO_FILE_BACKED_PRE_RUN_MTIME_BASELINE",
+    "sourceMutationInvariantReportedByExactResult": false
+  },
+  "analysis": {
+    "r11ResultSha256": "078421336540504B53E1B95CC1D03D118A6A4A6214D3453C28B4A7023A59BE84",
+    "r11State": "SCRIBE_PAIRED_ENHANCEMENT_IDENTITY_HOLD",
+    "pairedRegionCount": 3,
+    "expectedRegionChannelDirectionAttempts": 12,
+    "actualRegionChannelDirectionAttempts": 12,
+    "allBoundedPairedRegionsChannelsAndDirectionsAttempted": true,
+    "evaluableGridCount": 64,
+    "selectedCandidateId": "PERIMETER_PAIRED_BF_DF_01_BF_FORWARD_G04",
+    "selectedImageFirstString": "6KB71041XDE5",
+    "selectedProposedString": "6KB71041XDE5",
+    "checksumValid": true,
+    "nonTargetCanonicalPositionCount": 10,
+    "nonTargetCanonicalMatchCount": 10,
+    "nonTargetCanonicalMismatchCount": 0,
+    "identityAccepted": false
+  },
+  "artifactChain": {
+    "sourceToGridHashChainPassed": true,
+    "gridToCellHashChainPassed": true,
+    "cellToTargetHashChainPassed": true,
+    "chainComplete": true,
+    "declaredArtifactCount": 15,
+    "actualArtifactCount": 15,
+    "totalResultTreeFileCount": 16,
+    "missingArtifactCount": 0,
+    "unexpectedFileCount": 0,
+    "allDeclaredFilesExist": true,
+    "allDeclaredHashesMatch": true,
+    "selectedGridMatchesR13A": true,
+    "targetCellsMatchR13A": true,
+    "artifacts": [
+      {"kind": "ORIENTED_GRID", "relativePath": "selected_grid.png", "sha256": "D7E63122DF62D0711420DF629454014BEB0157754B14FC232B6B5E8699814507", "width": 1164, "height": 210, "channels": 3},
+      {"kind": "AUDIT_CELL", "relativePath": "cells/P01_6.png", "sha256": "07B4DFECD653BD79A001ECEEAEF0ED4CC0F4C44C1AD610FFB708D137AFDF6F12", "width": 96, "height": 230, "channels": 3},
+      {"kind": "AUDIT_CELL", "relativePath": "cells/P02_K.png", "sha256": "7FFFC74241EE61A5173423451B3202AFA3E0F1C2ACA5F522F7B4869857756938", "width": 96, "height": 230, "channels": 3},
+      {"kind": "TARGET_GLYPH", "relativePath": "targets/P02_K.png", "sha256": "7FFFC74241EE61A5173423451B3202AFA3E0F1C2ACA5F522F7B4869857756938", "byteIdenticalToSourceCell": true, "referenceAdmissionEligible": false},
+      {"kind": "AUDIT_CELL", "relativePath": "cells/P03_B.png", "sha256": "A8BD922F4DF038295D4F8D28B09715D1A13EFEFB41CB64427C3C6AEB7D63B162", "width": 96, "height": 230, "channels": 3},
+      {"kind": "AUDIT_CELL", "relativePath": "cells/P04_7.png", "sha256": "B1B50D841C8FBBA2A2F7B90B1ABF5069E9633A0280AE51611542983D5074401E", "width": 96, "height": 230, "channels": 3},
+      {"kind": "AUDIT_CELL", "relativePath": "cells/P05_1.png", "sha256": "C061722E527CD84ECB3DF86B7BED7691F33BE1A63F2E69224B5998E86F87987D", "width": 96, "height": 230, "channels": 3},
+      {"kind": "AUDIT_CELL", "relativePath": "cells/P06_0.png", "sha256": "01694541F45919F125FB603C38C6662DC4D438F1720D6F79A37745214F59135F", "width": 96, "height": 230, "channels": 3},
+      {"kind": "AUDIT_CELL", "relativePath": "cells/P07_4.png", "sha256": "5FA0F016D7391C0B8262D68DB56ED48C46EDA8D26B3949D83DC0743FFD82A945", "width": 96, "height": 230, "channels": 3},
+      {"kind": "AUDIT_CELL", "relativePath": "cells/P08_1.png", "sha256": "65E38375875223AECA7D4C3E138FF2197F3C794F0D7578B036D412734CFC9C01", "width": 96, "height": 230, "channels": 3},
+      {"kind": "AUDIT_CELL", "relativePath": "cells/P09_X.png", "sha256": "65165E6917694A7809AF9B0280A99163405170E2BF1E56114E56E47B98BDE9A3", "width": 96, "height": 230, "channels": 3},
+      {"kind": "TARGET_GLYPH", "relativePath": "targets/P09_X.png", "sha256": "65165E6917694A7809AF9B0280A99163405170E2BF1E56114E56E47B98BDE9A3", "byteIdenticalToSourceCell": true, "referenceAdmissionEligible": false},
+      {"kind": "AUDIT_CELL", "relativePath": "cells/P10_D.png", "sha256": "7001EF550556052C3A8C04542DBA04574C04F99C04CF9C08A7F1B08B3E0F69F4", "width": 96, "height": 230, "channels": 3},
+      {"kind": "AUDIT_CELL", "relativePath": "cells/P11_E.png", "sha256": "988DE814D04E7762EE0C637010C08EBDC059A906759ED7CAFDE809B3F337E5C7", "width": 96, "height": 230, "channels": 3},
+      {"kind": "AUDIT_CELL", "relativePath": "cells/P12_5.png", "sha256": "E6D89F8341BD2724C519E7BE69CC2C57416C72828347A7EA4BFC07716A04B4C6", "width": 96, "height": 230, "channels": 3}
+    ]
+  },
+  "pathBudget": {
+    "policyPath": "work/ARGOS_PATH_LENGTH_SAFETY.md",
+    "policySha256": "346AD03EBB77005B5189CD81234665BCE3930F9A8B7661BFD69D85EE6AA13370",
+    "utilityPath": "utilities/Confirm-ArgosPathBudget.ps1",
+    "utilitySha256": "F8B0991231C213052B2FA31AAE67DB95E2C4DF831A9F717F91766318B19D4B0A",
+    "state": "PASS_PATH_BUDGET",
+    "reservedSuffixCharacters": 32,
+    "warningEffectiveLength": 200,
+    "hardStopEffectiveLength": 230,
+    "maximumComponentLength": 80,
+    "maximumResultTreeEffectiveLength": 62,
+    "gatePathEffectiveLength": 152
+  },
+  "cleanliness": {
+    "pycacheRootsChecked": [
+      "work/OPENCV_SCRIBE_R13B",
+      "C:/R13BT/S17"
+    ],
+    "pycacheCount": 0,
+    "noPycache": true
+  },
+  "holds": [
+    {
+      "code": "SCRIBE_ALPHABET_REFERENCE_ADMISSION_HOLD",
+      "preserved": true,
+      "detail": "Candidate crops are review-only and cannot be admitted automatically; the frozen reference manifest remains unchanged."
+    },
+    {
+      "code": "SCRIBE_PAIRED_ENHANCEMENT_IDENTITY_HOLD",
+      "preserved": true,
+      "detail": "The exact R11 analysis remained identity-held; R13B crop selection does not grant automatic identity authority."
+    }
+  ],
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "automaticReferenceAdmissionAllowed": false,
+    "referenceAdmissionEligible": false,
+    "trainingAuthorized": false,
+    "trainingEligible": false,
+    "trainingExecuted": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "providerActivated": false,
+    "mayClearHolds": false,
+    "automaticRetryPerformed": false
+  },
+  "disposition": "PASS_LOCAL_REAL_IMAGE_EVIDENCE_FOR_BOUNDED_R13B_PUBLICATION_GATING_ONLY"
+}

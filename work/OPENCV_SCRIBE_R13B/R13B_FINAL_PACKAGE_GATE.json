@@ -1,0 +1,110 @@
+{
+    "schema":  "argos_r13b_final_package_gate_v1",
+    "createdUtc":  "2026-09-02T21:32:10.0870335Z",
+    "state":  "PASS_R13B_FINAL_SIGNED_PACKAGE",
+    "classification":  "FROZEN_REVIEW_ONLY",
+    "requestId":  "REQ_20260902T204408092Z_R13B",
+    "invocationManifestSha256":  "CD6B4B5C00ADB474CFA83762C9792B6888D564EED332A23C6BB942DC31B2CDF8",
+    "requestZip":  "work/OPENCV_SCRIBE_R13B/final/REQ_20260902T204408092Z_R13B.ready.zip",
+    "requestZipBytes":  59619,
+    "requestZipSha256":  "E03EF601339101663E4AABC1889A08C9DB92005F84F56DB3CF08955C8325A889",
+    "requestManifestSha256":  "19EC131F8C73D8CBAB835776BA4390FECA5E8AF164D3C77224A61ACA5EDF9F77",
+    "requestSignatureSha256":  "556CEAEFDB5961DCD94F66A24CF5CD789286941E3C9D950C793B9CBFCA44E19F",
+    "maintenanceDefinitionSha256":  "4D057C3CD8CA80B6BA09E118E896A2BA41D43F895820C682D149C39468E039EE",
+    "payloadFileCount":  7,
+    "payloads":  [
+                     {
+                         "path":  "payload/Invoke-R13B.ps1",
+                         "bytes":  54543,
+                         "sha256":  "4E7A7BFAE134FF8867F9D606ECB9B7BB32B51885D2594A3D0712FD150B4FBAE2"
+                     },
+                     {
+                         "path":  "payload/R13B.py",
+                         "bytes":  39325,
+                         "sha256":  "995587862B6FA280C1D48907254AA82B5C4120F4B26A10CFE559A1E27BD9E0B3"
+                     },
+                     {
+                         "path":  "payload/R11.py",
+                         "bytes":  81305,
+                         "sha256":  "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9"
+                     },
+                     {
+                         "path":  "payload/R12A.py",
+                         "bytes":  13013,
+                         "sha256":  "F5EB8FB3281D7D55CDD9FA4A3530A32BD33BBA3B8DB69E0A247C20935F6AD429"
+                     },
+                     {
+                         "path":  "payload/R12B.py",
+                         "bytes":  14908,
+                         "sha256":  "D670CFCE64BF5FDF5307E69ED69A05CB7B404A78B521AB889C7F35044D666FDC"
+                     },
+                     {
+                         "path":  "payload/CFG.json",
+                         "bytes":  2297,
+                         "sha256":  "1F58C66A18C4ED58B5ED3EEE27BACF9D65948140F8609A194CFE8A68501D6F42"
+                     },
+                     {
+                         "path":  "payload/LIVE.json",
+                         "bytes":  6344,
+                         "sha256":  "34BE97AEB60E726666A18DB1AB4556A4C38DFBB91518ED0C2C145C131FDC10B9"
+                     }
+                 ],
+    "exactFinalZipExtractionPassed":  true,
+    "exactFinalZipSignaturePassed":  true,
+    "requiredGates":  [
+                          {
+                              "path":  "work/OPENCV_SCRIBE_R13B/R13B_ENDPOINT_REHEARSAL_GATE.json",
+                              "sha256":  "8F4DD8E8D4D0A70B88C27290165CA45048DC83EAF0854CE9FBE89751DCC6116E",
+                              "stateProperty":  "state",
+                              "requiredState":  "PASS_R13B_ENDPOINT_REHEARSAL"
+                          },
+                          {
+                              "path":  "work/OPENCV_SCRIBE_R13B/R13B_LOCAL_REAL_IMAGE_GATE.json",
+                              "sha256":  "CA0B6227641D5D21E569020A1408B778A95C92533041A30CAC32C98A6C225E83",
+                              "stateProperty":  "state",
+                              "requiredState":  "PASS_R13B_LOCAL_REAL_IMAGE_REHEARSAL_HOLD_SAFE"
+                          },
+                          {
+                              "path":  "work/OPENCV_SCRIBE_R13B/R13B_COMPLETE_ROUTE_GATE_R3.json",
+                              "sha256":  "235034A7B75669F6E8DD6731EA407932901B4CCD46679E48C21A5BDB6250A47F",
+                              "stateProperty":  "state",
+                              "requiredState":  "PASS_R13B_COMPLETE_ROUTE_GATE"
+                          },
+                          {
+                              "path":  "work/OPENCV_SCRIBE_R13B/R13B_PACKAGE_TOOLING_CLONE_LITERAL_GATE.json",
+                              "sha256":  "CA171F4E820DC8CBA4FB7CF63456959D92025A99DDA2643A344BB84A32F3478C",
+                              "stateProperty":  "state",
+                              "requiredState":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"
+                          },
+                          {
+                              "path":  "work/OPENCV_SCRIBE_R13B/R13B_ENDPOINT_CLONE_LITERAL_REMEDIATION_GATE.json",
+                              "sha256":  "5AFFA1AEB0BA998458B30C57F9CE683E6812F280C44EDC12BF13486E383EBFEB",
+                              "stateProperty":  "state",
+                              "requiredState":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"
+                          },
+                          {
+                              "path":  "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+                              "sha256":  "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+                              "stateProperty":  "state",
+                              "requiredState":  "PASS_JBOD_PORTAL_QUEUE_RECOVERY_V2_1_REHEARSAL"
+                          }
+                      ],
+    "completeRouteGateSha256":  "235034A7B75669F6E8DD6731EA407932901B4CCD46679E48C21A5BDB6250A47F",
+    "completeRoutePackageBindingPassed":  true,
+    "pathState":  "PASS_PATH_BUDGET",
+    "pathCount":  57,
+    "maximumEffectiveLength":  199,
+    "maximumPublications":  1,
+    "retryAuthorized":  false,
+    "publicationAuthorized":  false,
+    "targetExecuted":  false,
+    "sourceImagesRead":  false,
+    "sourceMutationPerformed":  false,
+    "providerActivated":  false,
+    "automaticIdentityAuthority":  false,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false
+}

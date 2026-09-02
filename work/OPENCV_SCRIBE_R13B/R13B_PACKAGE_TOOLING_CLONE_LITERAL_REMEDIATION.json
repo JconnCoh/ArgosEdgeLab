@@ -1,0 +1,65 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R13B_PACKAGE_TOOLING_CLONE_LITERAL_REMEDIATION_20260902",
+  "purpose": "Classify every literal Windows or UNC root in the exact predecessor and generated R13B package-tooling harnesses before build, signature, publication, or collection.",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R6V2/Build-R6V2Request.ps1",
+      "sourceSha256": "3E29BFAF687386B430403622E83371D3BAF369DCEE258E8F1EA0054151978D59",
+      "generated": "work/OPENCV_SCRIBE_R13B/Build-R13BRequest.ps1",
+      "generatedSha256": "A625EA1C602083471717507D8D5E3B25F4C470DE6FEDC781940DE6A156912B62",
+      "rootRules": [
+        {"sourceRoot": "C:\\ProgramData", "generatedRoot": "C:\\ProgramData", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "D:\\A2", "generatedRoot": "D:\\A2", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "", "generatedRoot": "C:\\R13BR", "disposition": "ADDED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2D23/Publish-O2D23.ps1",
+      "sourceSha256": "65863D5F022DE3F821966978512B909EC27EB028A311C9F40490B6350EEC5038",
+      "generated": "work/OPENCV_SCRIBE_R13B/Publish-R13B.ps1",
+      "generatedSha256": "EFEE3C32A713383F6C566593BE9E6BAD686B4CB8ED29CFD45FADBFC386679A6B",
+      "rootRules": [
+        {"sourceRoot": "\\\\shm-cifs\\Department", "generatedRoot": "\\\\shm-cifs\\Department", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "U:\\ProjectPortalRO", "generatedRoot": "U:\\ProjectPortalRO", "disposition": "UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2D23/Collect-O2D23ResponseR2.ps1",
+      "sourceSha256": "FB9DA34FC516AAD90C322D7C26BD9DE17919267C3C9215ACDA83224CF3C76922",
+      "generated": "work/OPENCV_SCRIBE_R13B/Collect-R13BResponse.ps1",
+      "generatedSha256": "AD24EBD57C426DDB3264121E2EE2EBD2E71F0AB52D37287D2BC9850DA87CEBB0",
+      "rootRules": [
+        {"sourceRoot": "C:\\O2D23R2_3C97863D", "generatedRoot": "C:\\R13BR", "disposition": "REPLACED"},
+        {"sourceRoot": "U:\\ProjectPortalRO", "generatedRoot": "U:\\ProjectPortalRO", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "", "generatedRoot": "\\\\shm-cifs\\Department", "disposition": "ADDED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2D23/Get-O2D23CurrentShareObservation.ps1",
+      "sourceSha256": "8DF0CB709D56E55F4B9C306F894E47CD501772615414494CD05113CC104DF0DA",
+      "generated": "work/OPENCV_SCRIBE_R13B/Get-R13BCurrentShareObservation.ps1",
+      "generatedSha256": "C548609DE563F632A375867A3B6438792A7216A9EC038285E012BD566D55FD15",
+      "rootRules": [
+        {"sourceRoot": "\\\\shm-cifs\\Department", "generatedRoot": "\\\\shm-cifs\\Department", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "U:\\ProjectPortalRO", "generatedRoot": "U:\\ProjectPortalRO", "disposition": "UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_O2D23/New-O2D23CompleteRouteGate.ps1",
+      "sourceSha256": "A38C33E543F4F517195EC65F954A7E35809B329E5AFD72B7BE334480CFCAA2F0",
+      "generated": "work/OPENCV_SCRIBE_R13B/Test-R13BCompleteRoute.ps1",
+      "generatedSha256": "1D76526F97FA3E2A25720092F7F49022985C3F74E2B6A1F0C986F65E6C61DDF8",
+      "rootRules": [
+        {"sourceRoot": "", "generatedRoot": "C:\\R13BR", "disposition": "ADDED"}
+      ]
+    }
+  ],
+  "authority": {
+    "metadataOnly": true,
+    "targetExecuted": false,
+    "publicationAuthorized": false,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  }
+}

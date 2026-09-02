@@ -1,0 +1,55 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-02T21:29:03.2949831Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R13B\\R13B_ENDPOINT_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "FD4FF3ED94033464343972689DFEF1CCD72B2B4D391F905B00952E3C0D6CAE01",
+    "pairCount":  2,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D23/Invoke-O2D23ScribeEndpoint.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R13B/Invoke-R13BAlphabetHarvest.ps1",
+                      "sourceSha256":  "6D221C95652FC0C9F933E4298183177EBE269300CA70664887927920EEB95E5D",
+                      "generatedSha256":  "4E7A7BFAE134FF8867F9D606ECB9B7BB32B51885D2594A3D0712FD150B4FBAE2",
+                      "sourceRoots":  [
+                                          "D:\\A2",
+                                          "D:\\AFCV1",
+                                          "D:\\KLARFExport",
+                                          "D:\\O2D5",
+                                          "X:"
+                                      ],
+                      "generatedRoots":  [
+                                             "D:",
+                                             "D:\\A2",
+                                             "D:\\KLARFExport",
+                                             "X:"
+                                         ],
+                      "ruleCount":  5
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_O2D23/Test-O2D23Endpoint.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R13B/Test-R13BEndpoint.ps1",
+                      "sourceSha256":  "A4CCB94F23F42CEE143BEF5BF0F7F0D6B39E1AB0EF231D96C7ECBE5604082AEE",
+                      "generatedSha256":  "E141C3F63319308F36D7D064B8A5104762840F57DFF70FBF4AC877FF36CBEED8",
+                      "sourceRoots":  [
+                                          "C:\\O2D23T_3C97863D",
+                                          "X:",
+                                          "X:\\BF.png",
+                                          "X:\\DF.png"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\Python314",
+                                             "C:\\R13BG_",
+                                             "X:"
+                                         ],
+                      "ruleCount":  5
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

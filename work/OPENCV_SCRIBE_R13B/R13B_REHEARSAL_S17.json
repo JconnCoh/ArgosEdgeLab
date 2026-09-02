@@ -1,0 +1,80 @@
+{
+  "schema": "argos_opencv_scribe_alphabet_crop_job_v1",
+  "revision": "OCV02_R13B_ALPHABET_CROP_20260902A",
+  "jobId": "R13B_REHEARSAL_S17",
+  "caseId": "S17R",
+  "physicalIdentity": "62546-481_POST2_SLOT17",
+  "purpose": "DEVELOPMENT",
+  "canonicalTruth": "6KB71041XDE5",
+  "targetPositions": [
+    {"position": 2, "label": "K"},
+    {"position": 9, "label": "X"}
+  ],
+  "inputMode": "DEVELOPMENT_AUTO_LOCALIZED_WHOLE_IMAGE",
+  "inputs": {
+    "bf": {
+      "path": "C:\\P2COHORT\\S17B.bmp",
+      "canonicalProvenancePath": "POST2_S17_BRIGHTFIELD_READ_ONLY_LOCAL_COPY",
+      "ioPathClass": "HASH_PINNED_READ_ONLY_LOCAL_COPY",
+      "aliasName": "",
+      "sha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94",
+      "bytes": 475379874
+    },
+    "df": {
+      "path": "C:\\P2COHORT\\S17D.bmp",
+      "canonicalProvenancePath": "POST2_S17_DARKFIELD_READ_ONLY_LOCAL_COPY",
+      "ioPathClass": "HASH_PINNED_READ_ONLY_LOCAL_COPY",
+      "aliasName": "",
+      "sha256": "9AB0AA6942948F54635C51B173618FC8478C75791E9F859FDD135FFDE52C153C",
+      "bytes": 475379874
+    }
+  },
+  "references": {
+    "manifestPath": "C:\\R13BT\\refs\\PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "manifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "excludedPhysicalIdentity": "62546-481_POST2_SLOT17",
+    "roots": [
+      {"relativePrefix": "glyphs", "path": "C:\\R13BT\\refs\\glyphs"},
+      {"relativePrefix": "glyphs_v5_confirmed_20260806", "path": "C:\\R13BT\\refs\\glyphs_v5_confirmed_20260806"}
+    ]
+  },
+  "search": {
+    "expectedRegions": [],
+    "boundedExceptionSearch": true,
+    "maximumWorkingDimension": 1600,
+    "maximumCandidates": 6,
+    "orientationStepDegrees": 15,
+    "developmentMaximumRegions": 6,
+    "developmentMinimumLocalizationScore": 0.0,
+    "developmentMinimumBandWidthPixels": 500,
+    "developmentOcrRegionWidthPixels": 1600,
+    "developmentOcrRegionHeightPixels": 400,
+    "developmentMinimumObservedHeightRatio": 0.9,
+    "developmentMinimumObservedWidthRatio": 0.9,
+    "developmentMaximumObservedWidthRatio": 1.1
+  },
+  "blobGrid": {
+    "minimumDotSize": 2.0,
+    "maximumDotSize": 4.5,
+    "maximumPairedRegionsEvaluated": 6,
+    "directions": ["FORWARD", "REVERSE_180"]
+  },
+  "outputRoot": "C:\\R13BT\\S17",
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "automaticReferenceAdmissionAllowed": false,
+    "trainingAuthorized": false,
+    "trainingEligible": false,
+    "trainingExecuted": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "mayClearHolds": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "taskOrProcessRestartAllowed": false,
+    "providerActivationAllowed": false,
+    "retryAuthorized": false
+  }
+}
