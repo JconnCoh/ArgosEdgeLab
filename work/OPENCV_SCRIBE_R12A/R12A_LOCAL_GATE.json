@@ -1,0 +1,83 @@
+{
+  "schema": "argos_opencv_scribe_r12a_local_gate_v1",
+  "revision": "ARGOS_OPENCV_SCRIBE_R12A_BLOB_DIAGNOSTIC_20260902",
+  "createdUtc": "2026-09-02T19:25:41.466Z",
+  "status": "PASS_DIAGNOSTIC_ONLY",
+  "scope": {
+    "description": "Notch-independent sparse-blob OCR fallback for legacy checksum failures.",
+    "sourceImagesReadOnly": true,
+    "externalExecution": false,
+    "jbodAccess": false,
+    "publication": false
+  },
+  "diagnosticRunner": {
+    "path": "work/OPENCV_SCRIBE_R12A/Run-ArgosOpenCvScribeR12BlobDiagnostic.py",
+    "sha256": "F5EB8FB3281D7D55CDD9FA4A3530A32BD33BBA3B8DB69E0A247C20935F6AD429",
+    "r11ProviderDependencySha256": "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9"
+  },
+  "controls": [
+    {
+      "jobId": "R11A_POST2_S01",
+      "jobSha256": "4EB84709B9989EF5D8F80C2CC66B7045C80F2C90798300537F390EB18B2F2AB7",
+      "legacyResultSha256": "6F8AE563AB09D723D76BF89C1D05993CC9376110EC54D7A16A2E6CE2CB06BEFD",
+      "resultSha256": "657F9F9D7A6F0F0B573639B20B6D2ED838F1D3EEB74229E01D4886CEEA986258",
+      "state": "LEGACY_CHECKSUM_VALID_BLOB_FALLBACK_SKIPPED",
+      "imageFirstString": "3912P014FED2",
+      "proposedString": "3912P014FED2",
+      "blobDiagnosticCount": 0
+    },
+    {
+      "jobId": "R11A_POST2_S03",
+      "jobSha256": "4F3CDBB7F60C98D7A9AAEA1B3F0B04DD9A1ABB8A785972ECCFCBC3C38B932E18",
+      "legacyResultSha256": "6917265EF9591821C88CAC0BFFC9157DAEB3BAD237D14EC96B9FEDF197C282D6",
+      "resultSha256": "B3B31C2A0B113049AD6BD0AF3CC74668ED8932D8C598D67B0F18A20CEBA9BDF4",
+      "state": "LEGACY_CHECKSUM_VALID_BLOB_FALLBACK_SKIPPED",
+      "imageFirstString": "2659P076FEF4",
+      "proposedString": "2659P076FEF4",
+      "blobDiagnosticCount": 0
+    }
+  ],
+  "heldCase": {
+    "jobId": "R11A_POST2_S17",
+    "jobSha256": "66A8FC2BBF7C8C64338A4E514FDC0F78587E82A7C38541691D8AB898EBE52628",
+    "legacyResultSha256": "74EC6C355E853F1C53B832750B394F1BE9692AF8118FAA682BEAAD0EEEB77D55",
+    "sourceSha256": {
+      "bf": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94",
+      "df": "9AB0AA6942948F54635C51B173618FC8478C75791E9F859FDD135FFDE52C153C"
+    },
+    "selectedRegionId": "PERIMETER_PAIRED_BF_DF_01",
+    "selectedRegionScore": 0.98,
+    "state": "SCRIBE_BLOB_DIAGNOSTIC_CHECKSUM_ALTERNATIVE_HOLD",
+    "bestChannel": "BF",
+    "bestDirection": "FORWARD",
+    "imageFirstString": "60B71041SDE5",
+    "proposedString": "613710418DE5",
+    "checksumValidImageFirst": false,
+    "identityEligible": false,
+    "topConsensus": [
+      {
+        "string": "613710418DE5",
+        "weightedScore": 12.306160127402755,
+        "gridCount": 4
+      },
+      {
+        "string": "613716414DE5",
+        "weightedScore": 9.267607835405377,
+        "gridCount": 5
+      }
+    ],
+    "resultPath": "C:/P2COHORT/results/R12A_BLOB_DIAGNOSTIC_FINAL_20260902/S17/result.json",
+    "resultSha256": "76EE495451C3B42C5E24CA26BC0F5A0DF9636830140EF41E1DF525D761D15B3C",
+    "bfBlobRasterPath": "C:/P2COHORT/results/R12A_BLOB_DIAGNOSTIC_FINAL_20260902/S17/BF_FORWARD_blobs.png",
+    "bfBlobRasterSha256": "9C7378101E507DD308F0CEA56D61BE41048B1FE576072D0FB1F517A8547F71D4",
+    "deterministicFreshRerunMatch": true
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}
