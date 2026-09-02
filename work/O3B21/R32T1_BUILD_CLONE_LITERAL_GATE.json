@@ -1,0 +1,47 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-02T00:00:43.8039074Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\O3B21\\R32T1_BUILD_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "D271A1521135C9C4B206A2BA2B8EBEE3887B475CD31E197D5B4BD67B5327D403",
+    "pairCount":  2,
+    "pairs":  [
+                  {
+                      "source":  "work/O3B21/Build-R31VAL1Package.ps1",
+                      "generated":  "work/O3B21/Build-R32T1Package.ps1",
+                      "sourceSha256":  "B88308FD331C5549AEF69D3CB94F6B48CA203574BD2E672DC768CC36FFD54ED5",
+                      "generatedSha256":  "32C64299BDF885D24C8F9A86521CEEE9D2BF5EA5466EA9416B6A496E5025F709",
+                      "sourceRoots":  [
+                                          "C:\\R21P5",
+                                          "C:\\R31VAL1PK"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\R21P5",
+                                             "C:\\R32T1PK"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/O3B21/Invoke-R31VAL1.ps1",
+                      "generated":  "work/O3B21/Invoke-R32T1.ps1",
+                      "sourceSha256":  "FAD0CC610C6BFE781FF4476BCC4CB328555452D993BD8392911C69F482049934",
+                      "generatedSha256":  "FAA1C2C2066CF60BCE1B98AD9542A2E1CB42DD848ED27D6DF093D59ACAF8A662",
+                      "sourceRoots":  [
+                                          "D:\\AFCV1",
+                                          "D:\\R31VAL1"
+                                      ],
+                      "generatedRoots":  [
+                                             "D:\\AFCV1",
+                                             "D:\\R32T1"
+                                         ],
+                      "ruleCount":  2
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

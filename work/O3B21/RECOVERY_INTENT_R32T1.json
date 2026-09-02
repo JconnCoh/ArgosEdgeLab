@@ -1,0 +1,70 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-02T00:02:30Z",
+  "incidentId": "O3B21_R31_VALIDATION_20260901",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 2,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": true,
+    "failureEvidence": [
+      {
+        "path": "work/O3B21/R31VAL1_SIGNED_TERMINAL_FAILURE_GATE.json",
+        "sha256": "59013EE6C73CF9D60AE9516B7586BB85BB4AF18B0F4D08459F5DE0F2B32F87B3",
+        "state": "FAILED"
+      },
+      {
+        "path": "work/O3B21/R31VAL2_SIGNED_TERMINAL_FAILURE_GATE.json",
+        "sha256": "34A466855CB13AC344D0D564FFCFEB8805D9B3B6E6406DE247814BB83BF4FD67",
+        "state": "FAILED"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/O3B21/R31VAL2_POSTFAIL_DIRECT_OBSERVATION_GATE.json",
+      "sha256": "7219BFB9AF5BE5D68F57FA509717743F0663E3EE991C5FDD96CA93EB0A72461A"
+    },
+    "workflowReviewClearance": {
+      "path": "work/O3B21/R31_R32_STOP_LOSS_REVIEW.json",
+      "sha256": "5B3166AB8C635B7810E7CA7C48B3C524AF2ED7E24010A75B4423A8E20B870B6D"
+    }
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/O3B21/R31VAL2_POSTFAIL_DIRECT_OBSERVATION_GATE.json",
+      "sha256": "7219BFB9AF5BE5D68F57FA509717743F0663E3EE991C5FDD96CA93EB0A72461A"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "exactRemedy": "Run exact R32 against only the hash-locked Slot03 residue ambiguity into fresh D:/R32T1; preserve all source bytes, tasks, processes, installed semantics, provider activation, and holds"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

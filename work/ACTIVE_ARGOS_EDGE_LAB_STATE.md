@@ -9571,3 +9571,27 @@ preaction gates. Not published. Holds remain and frozen-953 is unauthorized.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R31VAL2_SIGNED_EXACT_298_VALIDATION_READY_CHECKPOINT_20260901.md`,
 SHA-256 `148E9298D251C60E9CF9F198DC64DC8AD35384A1D7967A691D3FCE926373E9C5`.
+
+# 2026-09-01 — OCV-03 O3B21 R32T1 signed residue-alignment validation ready (`PENDING_GATE`)
+
+R31VAL2's portal envelope timed out after 900 seconds, but exact-JBOD direct
+observation proved all 298 detector jobs/results and the final summary exist.
+The actual outcome is 297/298 expected: frozen plus Slot16 33/33,
+UnpatternedFront 49/49, and PatternedFront 215/216. The only ambiguity is
+`62626-043 / Slot03`: true notch 89.6383 degrees versus a residue-induced
+134.3371-degree extra pair. Locked C15RUN4 independently places the notch at
+89.6828 degrees; the operator requires alignment, not a waived hold.
+
+R32 `2E9D19DDCCCA751C21C545AF5E2B6AB62596E86891374AB0E13C84BEDEA48012`
+resolves only a multiple-pair result having exactly one pair exterior-clear in
+both channels under frozen R30/R13 limits. It does not alter single-pair or
+unresolved multiple-pair outcomes, holder masks, candidate formation, or any
+numeric threshold. Focused tests pass 15/15 and the signed package passes all
+95 R28-R32 packaged synthetic tests. Exact one-case request
+`REQ_20260902T000345586Z_B6D71E241DEC`, ZIP
+`139083AD1E7893BE4E84C191B7A1F05D084C6F0CBD45672132D4FF91A35E0F9E`,
+is signed and fully gated but not published. All holds remain.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R32T1_SIGNED_RESIDUE_ALIGNMENT_VALIDATION_READY_CHECKPOINT_20260901.md`,
+SHA-256 `A108D9F4A83205BACBD9F4D19C88AFAD5B1AC02276554FBF96B47530467F4434`.
