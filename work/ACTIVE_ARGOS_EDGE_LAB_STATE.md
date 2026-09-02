@@ -9631,3 +9631,22 @@ clearance occurred.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R32C953L1_SIGNED_EXACT_953_CORPUS_RUNNING_CHECKPOINT_20260901.md`,
 SHA-256 `F8E4EF56F3F473358ECD1FC9B707B6A31BCB38D86FAEA89F536E909F92BC68E1`.
+
+## OCV-03 O3B21 R32C953L2 direct exact-953 corpus running — 2026-09-02
+
+Disposition: `PENDING_GATE`
+
+R32C953L1 stopped before its first image because its selection wrapper compared
+the now mixed 1,956-pair FRONT/BACK discovery against the frozen 978-BACK set
+before side filtering. Exact metadata proves 978 FRONT additions, zero removals,
+zero source problems, and all 978 frozen BACK identities unchanged. L1 is
+withdrawn/no-retry; the R32 detector did not fail.
+
+The 22-line wrapper/test correction filters to BACK before the frozen-set gate
+and passes the mixed-side regression. Fresh direct review-only worker PID
+`30804`, created `2026-09-02T12:31:48.2177164Z`, runs under
+`D:/R32C953L2RT` -> `D:/R32C953L2`. It passed the prior failure point and the
+first observation records 16 completed pairs, three retained holds, and empty
+stderr. No source/task/process/provider/authority or hold-clearance action
+occurred. Await one bounded completion observation, then continue the recorded
+sequence.

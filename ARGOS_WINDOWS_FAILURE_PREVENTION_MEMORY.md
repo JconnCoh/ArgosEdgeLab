@@ -10709,3 +10709,21 @@ than rerunning it.
 - Recovery: retain the failed read-only command bytes as terminal no-retry
   evidence. A fresh read-only observation may use the same proven route and
   premises with only the helper renamed and explicitly function-scoped.
+
+## 2026-09-02 — Apply corpus side filtering before frozen side-specific inventory comparison
+
+- Failure signature: R32C953L1 launched successfully but stopped before its
+  first image with `RuntimeError: Current discovery count changed` after the
+  root grew from 978 BACK pairs to 1,956 mixed FRONT/BACK pairs.
+- Cause: the selection monkeypatch compared the unfiltered discovery against
+  the frozen BACK inventory before the unchanged runner applied `--side BACK`.
+  Exact metadata showed 978 FRONT additions, zero removals, zero source
+  problems, and no change to the frozen BACK identity/path set.
+- Mandatory preflight: every side-specific frozen corpus wrapper must filter
+  both pairs and source problems to the requested side before cardinality and
+  exact-set comparison. Rehearse a mixed-side root containing a complete
+  unrelated opposite-side mirror and require the frozen requested-side set to
+  pass unchanged.
+- Recovery: retain R32C953L1 and `D:/R32C953` as withdrawn/no-retry evidence.
+  Use a fresh runtime/output namespace with the corrected wrapper and unchanged
+  detector/config; never weaken requested-side identity/path comparison.

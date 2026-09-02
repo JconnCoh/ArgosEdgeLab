@@ -49,6 +49,14 @@ def canonical(row: dict) -> tuple[str, str, str]:
     )
 
 
+def backside_only(pairs: list[dict], problems: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Keep unrelated frontside arrivals outside the frozen backside gate."""
+    return (
+        [row for row in pairs if str(row.get("side", "")).upper() == "BACK"],
+        [row for row in problems if str(row.get("side", "")).upper() == "BACK"],
+    )
+
+
 def select_exact(pairs: list[dict], problems: list, contract: dict, pinned_rows: list[tuple[str, str, str]]) -> list[dict]:
     """Return only the frozen 953 identities after exact current-inventory verification."""
     require(len(pairs) == int(contract["currentPairCount"]), "Current discovery count changed")
@@ -89,6 +97,7 @@ def main() -> int:
 
     def discover_exact(root: Path, cap: int):
         pairs, problems = original_discover(root, cap)
+        pairs, problems = backside_only(pairs, problems)
         return select_exact(pairs, problems, contract, pinned_rows), problems
 
     r2.discover_pairs = discover_exact

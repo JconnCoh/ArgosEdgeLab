@@ -40,7 +40,19 @@ def main() -> None:
     }
     pinned = [module.canonical(row) for row in pairs]
 
-    selected = module.select_exact(copy.deepcopy(pairs), [], contract, pinned)
+    front_pairs = [
+        {"identity": identity.replace("|BACK", "|FRONT"), "side": "FRONT", "bf": row["bf"], "df": row["df"]}
+        for identity, row in zip(identities, pairs)
+    ]
+    back_pairs = [dict(row, side="BACK") for row in pairs]
+    filtered_pairs, filtered_problems = module.backside_only(
+        back_pairs + front_pairs,
+        [{"identity": "front-hold", "side": "FRONT"}],
+    )
+    assert len(filtered_pairs) == 978
+    assert filtered_problems == []
+
+    selected = module.select_exact(copy.deepcopy(filtered_pairs), filtered_problems, contract, pinned)
     assert len(selected) == 953
     assert {row["identity"] for row in selected} == set(retained)
 
