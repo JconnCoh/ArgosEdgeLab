@@ -1,0 +1,86 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 16777216,
+  "entryPoint": "payload/Invoke-R9AScribeSlot22.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-R9AScribeSlot22.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R9A.ps1",
+      "approvedPredecessorSha256": [
+        "159BD82528E505DE69BDEEE4C3A3B29402BA9281939C57F6187587E9047D9740"
+      ],
+      "installedSha256": "DDA1DF1AD1CA34BABD805B690D3F21544F4F692ED9162935CA7A545FABE4F2E0",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\A2\\w\\ocv\\R9A",
+      "mode": "CREATE_NEW_PROVIDER_WORK_TREE",
+      "failureQuarantine": "D:\\A2\\w\\ocv\\R9A.failed",
+      "payloads": [
+        {"path": "payload/ArgosOpenCvScribeV1R9.py", "sha256": "4955AAAAD4C07D3B7BD87332E8956ECDCD291F5ACF1C6FC0E30B937DCB4C8E9F"},
+        {"path": "payload/R9A_CONFIGURATION.json", "sha256": "4733CDB0ED14D08D8742F4F481DE51BC7A9B1A717E43087EC0994095EA76CF7E"},
+        {"path": "payload/BATCH.json", "sha256": "6807B84AB3B84E915FBBF340ADE13D0B01989E1CA0F1331E3344D85F2CDBC015"},
+        {"path": "payload/S22.json", "sha256": "F3BFE228A5EE6D9320DBD32AB9A01FAC062BFAFBD08E1FF87CF907EFEC89A7D5"},
+        {"path": "D:/O2D5/ARGOS_O2D5/O2D5_REFS.zip", "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6"}
+      ]
+    },
+    {
+      "targetRoot": "D:\\A2\\o\\ocv\\R9A",
+      "mode": "CREATE_NEW_PROVIDER_OUTPUT_TREE"
+    }
+  ],
+  "entryPointOutputs": [
+    {"path": "D:\\A2\\o\\ocv\\R9A\\Slot22\\RESULT.json", "mode": "CREATE_NEW", "schema": "argos_opencv_scribe_result_v2"},
+    {"path": "D:\\A2\\o\\ocv\\R9A\\BATCH_GATE.json", "mode": "CREATE_NEW", "schema": "argos_r9a_scribe_batch_gate_v1", "requiredState": "PASS_R9A_REAL_IMAGE_REVIEW_ONLY_BATCH"},
+    {"path": "D:\\A2\\o\\ocv\\R9A\\EXECUTION.json", "mode": "CREATE_NEW", "schema": "argos_r9a_execution_v1", "requiredState": "PASS_R9A_EXECUTION"}
+  ],
+  "sourceProcessingContract": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "physicalIdentities": [
+      "62619-433_20260824005735_Slot22"
+    ],
+    "inputMode": "DEVELOPMENT_AUTO_LOCALIZED_WHOLE_IMAGE",
+    "rawSourceEvidencePath": "work/OPENCV_OLS6/OLS6_EXACT_TWENTY_SOURCE_HASHES.json",
+    "rawSourceEvidenceSha256": "E54A15301A2B4FE914E6315DDFB9628E1D1364B0553D2155E9D5387A88E7FF3B",
+    "sourceAliasName": "X:",
+    "sourceAliasRoot": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433",
+    "referenceBundlePath": "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+    "referenceBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "sourceImageBytesReadAllowed": true,
+    "opencvPixelDecodeRequired": true,
+    "boundedExceptionSearchAllowed": true,
+    "heightEnvelopeConfigurationSha256": "4733CDB0ED14D08D8742F4F481DE51BC7A9B1A717E43087EC0994095EA76CF7E",
+    "minimumObservedHeightRatio": 0.9,
+    "providerAlgorithmBytesChangedFromR6V1": true,
+    "fullWaferPerimeterSweepRequired": true,
+    "fixedImageRectangleAllowed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false,
+    "automaticIdentityAuthority": false
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 1500,
+    "opencvChildTimeoutSeconds": 1200,
+    "maximumSequentialChildren": 1,
+    "outerCoversAllChildren": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_ONE_BOUNDED_PORTABLE_OPENCV_SCRIBE_REVIEW_ONLY_CHILD"
+  ],
+  "rehearsal": {
+    "requiredState": "PASS_R9A_REAL_IMAGE_REVIEW_ONLY_BATCH",
+    "gateState": "PASS_R9_CHANNEL_BALANCED_UNMARKED_SLOT22_TOP_EIGHT",
+    "gateSha256": "EEFF0D7BEB7A6C1E1FCDFFE6DEFFEA2A477581038CD6FCAB178B57B0E8DE7191",
+    "selfPinGateState": "PASS_R9_CHANNEL_BALANCED_UNMARKED_SLOT22_TOP_EIGHT",
+    "selfPinGateSha256": "EEFF0D7BEB7A6C1E1FCDFFE6DEFFEA2A477581038CD6FCAB178B57B0E8DE7191"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

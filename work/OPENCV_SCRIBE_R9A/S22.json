@@ -1,0 +1,76 @@
+{
+  "schema": "argos_opencv_scribe_job_v1",
+  "revision": "OCV02_R9A_20260902A",
+  "jobId": "R9A_20260902A_62619-433_SLOT22",
+  "createdUtc": "2026-09-02T01:15:00Z",
+  "identity": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "slotId": "Slot22",
+    "physicalIdentity": "62619-433_20260824005735_Slot22"
+  },
+  "inputMode": "DEVELOPMENT_AUTO_LOCALIZED_WHOLE_IMAGE",
+  "rawSourceBinding": {
+    "state": "PASS_OCV00_EXACT_TWENTY_SOURCE_HASHES",
+    "evidencePath": "work/OPENCV_OLS6/OLS6_EXACT_TWENTY_SOURCE_HASHES.json",
+    "evidenceSha256": "E54A15301A2B4FE914E6315DDFB9628E1D1364B0553D2155E9D5387A88E7FF3B",
+    "upstreamProposalState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+    "upstreamFailure": "FRONTSIDE_NOTCH_ALIGNMENT_HOLD_MULTIPLE_OR_NO_NATIVE_MORPHOLOGY",
+    "upstreamHoldDoesNotSkipScribeDevelopment": true
+  },
+  "inputs": {
+    "bf": {
+      "path": "X:\\62619-433_20260824005735\\Slot22\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot22_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "canonicalProvenancePath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot22\\BrightfieldFrontsideWafer\\resizedImage\\62619-433_Slot22_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "ioPathClass": "SHORT_DOS_DEVICE_ALIAS",
+      "aliasName": "X:",
+      "aliasAnchorCanonicalPath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433",
+      "sha256": "5B7ADC1B1A52BE73A3C32D6663E92FC467C640D5502AA77A8309A059C444CDF5",
+      "bytes": 475379874,
+      "coordinateFrameId": "LOT62619_433_SLOT22_RAW_BRIGHTFIELD_FRONT_WAFER"
+    },
+    "df": {
+      "path": "X:\\62619-433_20260824005735\\Slot22\\DarkfieldFrontsideWafer\\resizedImage\\62619-433_Slot22_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "canonicalProvenancePath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433\\62619-433_20260824005735\\Slot22\\DarkfieldFrontsideWafer\\resizedImage\\62619-433_Slot22_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "ioPathClass": "SHORT_DOS_DEVICE_ALIAS",
+      "aliasName": "X:",
+      "aliasAnchorCanonicalPath": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433",
+      "sha256": "3A923FD19A8E625D3023BACFAA0481A1E73CE0EB6859E3327760269B2D90E840",
+      "bytes": 475379874,
+      "coordinateFrameId": "LOT62619_433_SLOT22_RAW_DARKFIELD_FRONT_WAFER"
+    }
+  },
+  "references": {
+    "manifestPath": "D:\\A2\\w\\ocv\\R9A\\refs\\PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "manifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "excludedPhysicalIdentity": "62619-433_20260824005735_Slot22",
+    "roots": [
+      {"relativePrefix": "glyphs", "path": "D:\\A2\\w\\ocv\\R9A\\refs\\glyphs"},
+      {"relativePrefix": "glyphs_v5_confirmed_20260806", "path": "D:\\A2\\w\\ocv\\R9A\\refs\\glyphs_v5_confirmed_20260806"}
+    ]
+  },
+  "search": {
+    "expectedRegions": [],
+    "boundedExceptionSearch": true,
+    "maximumWorkingDimension": 1600,
+    "maximumCandidates": 24,
+    "orientationStepDegrees": 15,
+    "developmentMaximumRegions": 8,
+    "developmentMinimumLocalizationScore": 0.0,
+    "developmentMinimumBandWidthPixels": 500,
+    "developmentOcrRegionWidthPixels": 1600,
+    "developmentOcrRegionHeightPixels": 400,
+    "developmentMinimumObservedHeightRatio": 0.9,
+    "developmentMinimumObservedWidthRatio": 0.9,
+    "developmentMaximumObservedWidthRatio": 1.1
+  },
+  "outputRoot": "D:\\A2\\o\\ocv\\R9A\\S22",
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}
