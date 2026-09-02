@@ -1,0 +1,109 @@
+{
+  "schema": "argos_opencv_scribe_r13b_return_review_gate_v1",
+  "createdUtc": "2026-09-02T23:16:00Z",
+  "state": "HOLD_R13B_ALL_FOUR_CASES_GRID_NON_TARGET_TRUTH_MISMATCH",
+  "classification": "PENDING_GATE",
+  "requestId": "REQ_20260902T204408092Z_R13B",
+  "responseId": "R_CC03FC22AD6B_20260902231013867_6fb787f9",
+  "transport": {
+    "responseZipSha256": "345153CD7AB1D251B0422DDE7429882C5993E907FDB1D60E9AEFCFDEDBFF27E8",
+    "responseZipBytes": 138092,
+    "endpointState": "PASS_MAINTENANCE_PATCH",
+    "signatureVerified": true,
+    "sourceRole": "JBOD",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC"
+  },
+  "bundle": {
+    "sha256": "337C6E4151D8B5AC2CD1FA70401D87432EDFC8052C03396BC307650E9B10ACAB",
+    "bytes": 141141,
+    "entryCount": 64,
+    "collectionGateSha256": "E10E34E2D2E86AB2581DD4F87F1D96E23C0EE6646BFB32C943639F5BDBFCA27C",
+    "batchGateSha256": "A3FB87FEA6946CAFF25C3DCBFE98814243E24D1FA186D731F362B732D2F297B9",
+    "executionSha256": "FDBFB9C9651EB3D9C2226131F0424C60A0C4F4F7061F69A4B2FF31485B130236",
+    "batchState": "PASS_R13B_BATCH_COMPLETE",
+    "executionState": "PASS_R13B_EXECUTION",
+    "providerCompletedCount": 4,
+    "caseLaunchFailureCount": 0
+  },
+  "provenanceValidation": {
+    "state": "PASS_LOCAL_RETURN_PROVENANCE",
+    "caseResultHashCount": 4,
+    "artifactHashCount": 58,
+    "targetGlyphCount": 6,
+    "targetCellsByteIdentical": true,
+    "sourceMutationPerformed": false
+  },
+  "cases": [
+    {
+      "caseId": "K25V",
+      "physicalIdentity": "62546-481_20260707164232_Slot25",
+      "canonicalTruth": "13DCK076SUG1",
+      "target": "P05_K",
+      "caseResultSha256": "72C55AC68DAE0B0A34C704EFE55B825EE5D946388A7B1D06877001D3701D7160",
+      "selectedGridSha256": "931ED0F32E1058682A642CF71E9984B6279E1349E2054F290DF20347E93D2122",
+      "evaluableGridCount": 96,
+      "nonTargetCanonicalMatchCount": 3,
+      "nonTargetCanonicalPositionCount": 11,
+      "visualAssessment": "Selected grid is sparse and does not contain a coherent 12-character scribe.",
+      "state": "HOLD_R13B_GRID_NON_TARGET_TRUTH_MISMATCH",
+      "referenceAdmissionEligible": false
+    },
+    {
+      "caseId": "X18V",
+      "physicalIdentity": "62625-907-PRE_20260709123021_Slot18",
+      "canonicalTruth": "146XF111SUG7",
+      "target": "P04_X",
+      "caseResultSha256": "2E81F8A6D8A84C8C08A8EFB3BFC4728095111115E8C206C7F7642EEF8F1D9719",
+      "selectedGridSha256": "977440688237BD8C18F95E2358497334686AD39B024FB2CBB53AB4A8BCA5343D",
+      "evaluableGridCount": 32,
+      "nonTargetCanonicalMatchCount": 2,
+      "nonTargetCanonicalPositionCount": 11,
+      "visualAssessment": "Selected grid is sparse/off-target and is not a trustworthy X reference crop.",
+      "state": "HOLD_R13B_GRID_NON_TARGET_TRUTH_MISMATCH",
+      "referenceAdmissionEligible": false
+    },
+    {
+      "caseId": "JQ16D",
+      "physicalIdentity": "62625-956_20260729122701_Slot16",
+      "canonicalTruth": "147JQ122SUB6",
+      "targets": ["P04_J", "P05_Q"],
+      "caseResultSha256": "4C6665DFFE4784DC973551A2AC9FE27A99B38A5C3189B0298BC5F74E4784F2EB",
+      "selectedGridSha256": "A11D196C1DCBB6151E33A353495A03C8E888A7F41F40C244518B553DBF30329B",
+      "evaluableGridCount": 32,
+      "nonTargetCanonicalMatchCount": 2,
+      "nonTargetCanonicalPositionCount": 10,
+      "visualAssessment": "Selected grid contains strong dot-matrix character structure, but its non-target positions do not establish the canonical 12-character alignment.",
+      "state": "HOLD_R13B_GRID_NON_TARGET_TRUTH_MISMATCH",
+      "referenceAdmissionEligible": false
+    },
+    {
+      "caseId": "JQ20V",
+      "physicalIdentity": "62625-956_20260729122701_Slot20",
+      "canonicalTruth": "147JQ117SUD6",
+      "targets": ["P04_J", "P05_Q"],
+      "caseResultSha256": "B8F13A8E5A64A3074E3F8E0528D5F6C993531A2C6BD8A2C51914A36C7EAA97CC",
+      "selectedGridSha256": "948097B8D0BBC02F9E97759DFA57B52FB8BF546048A7ECD9AB27BE6CBE06FE42",
+      "evaluableGridCount": 32,
+      "nonTargetCanonicalMatchCount": 2,
+      "nonTargetCanonicalPositionCount": 10,
+      "visualAssessment": "Selected grid contains strong dot-matrix character structure, but its non-target positions do not establish the canonical 12-character alignment.",
+      "state": "HOLD_R13B_GRID_NON_TARGET_TRUTH_MISMATCH",
+      "referenceAdmissionEligible": false
+    }
+  ],
+  "conclusion": {
+    "safeToUseAsDiagnosticEvidence": true,
+    "safeToAdmitAsCharacterReferences": false,
+    "automaticReferenceAdmissionPerformed": false,
+    "nextDetectorWork": "Improve full-perimeter scribe/grid localization and canonical non-target alignment before extracting target character references; K25V and X18V are the clearest localization-selection failures."
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "providerActivationAllowed": false
+  }
+}
