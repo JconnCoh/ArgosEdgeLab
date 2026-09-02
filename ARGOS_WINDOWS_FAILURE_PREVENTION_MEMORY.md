@@ -10906,3 +10906,21 @@ than rerunning it.
 - Recovery: preserve the failed no-image root as terminal. Reuse the exact
   hash-locked selection in a fresh root, batch it as 3/3/3/3/1 and 3/1/1, and
   persist per-batch stdout/stderr before proceeding.
+
+## 2026-09-02 — Do not pass Python source through Windows PowerShell 5.1 `-c`
+
+- Failure signature: the O3F7 metadata-only cohort freezer returned no stdout
+  and created no output root. A read-only stderr capture proved Python received
+  `pathlib.Path(rD:\\...)`, unquoted dictionary keys, and unquoted string
+  literals, then raised `SyntaxError` before any write.
+- Cause: Windows PowerShell 5.1 native-process argument reconstruction stripped
+  the embedded double quotes from Python source supplied through `python -c`,
+  even though the PowerShell variable contained the intended source text.
+- Mandatory preflight: Python logic with string literals, paths, dictionaries,
+  lambdas, or expressions must be transferred as an exact hash-verified `.py`
+  file and invoked with `-File`-equivalent path arguments. Never use `python
+  -c` for an Argos JBOD workflow.
+- Recovery: retain the failed command hashes and direct observation proving no
+  `D:/O3F7SEL` root or selection file. Use one fresh file-backed script and
+  output namespace, persist stdout/stderr, and verify its source and output
+  hashes before accepting results.

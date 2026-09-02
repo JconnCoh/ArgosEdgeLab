@@ -1,0 +1,59 @@
+{
+  "schema": "argos_ocv03_o3f7_existing_crop_review_selection_result_v1",
+  "state": "PASS_O3F7_EXISTING_CROP_REVIEW_READY",
+  "createdDate": "2026-09-02",
+  "sourceResults": {
+    "path": "D:/O3F6R8M/RESULTS.json",
+    "sha256": "A933227FE4F41259D53D586CBB5189E1B6542B96B7585B606207DAFD35326BD8",
+    "rowCount": 978
+  },
+  "selector": {
+    "localPath": "work/O3F7/Freeze-O3F7ReviewSelection.py",
+    "jbodPath": "D:/O3F7RT/Run.py",
+    "sha256": "47D28C9E183BD459F83E60A10D5DD5FE6E1CEA7AB81479064F1A45A268307031",
+    "selfTest": "PASS_O3F7_SELECTION_SELF_TEST"
+  },
+  "output": {
+    "root": "D:/O3F7SEL2",
+    "selectionSha256": "EA5D2D0D03C4DA4CDDA781600CD176A7F6F2497C5BEC8BDCC8034DE85C1E82E9",
+    "reviewOrderSha256": "D57DFE4301FEE2144D18EF4DB2BFD0A323EB095C117BBF10A856A691A8E73BBA",
+    "reviewTextSha256": "752890A3EF5DC83CD756FE168809D3FB5D66D1CC1AB187D98A5A56C2B934E1C9",
+    "summarySha256": "A8F6330C406E13E3BAC517079A8D0EE9796FF23ACFB3E337444B78AC9882ECD6",
+    "caseCount": 24,
+    "caseWithExistingAssetsCount": 20,
+    "providerErrorWithoutAssetsCount": 4,
+    "patternedHoldCount": 12,
+    "patternedPassControlCount": 5,
+    "unpatternedPassControlCount": 5,
+    "operatorExampleCount": 2
+  },
+  "operatorExamples": [
+    "UnpatternedFront/Lot_LotIDStringNotSet/62631-586_20260819173317/Slot06|FRONT",
+    "UnpatternedFront/Lot_LotIDStringNotSet/62631-586_20260819173317/Slot10|FRONT"
+  ],
+  "reviewLabels": [
+    "STITCH_VERTICAL_STEP",
+    "STITCH_LATERAL_SHIFT",
+    "HOLDER_EDGE_CONTAMINATION",
+    "NORMAL_NOTCH_VARIATION"
+  ],
+  "verification": {
+    "executionCommandSha256": "0279D05A3B1001AB7AD179A08F3E7CDFDA8DDCD0D89E3D746463F70D68AD300E",
+    "operatorIdentityReadCommandSha256": "EA076540E3DE274873B0783136724348FFE392215736283EBAD72767F5FFFF7B",
+    "boundedReviewReadCommandSha256": "31FB3367793A436F3D772194F1BF539DC0B93D1EF5624534C92B793E575580BC",
+    "computerName": "A1025645101",
+    "stderrBytes": 0
+  },
+  "invariants": {
+    "selectionFrozenBeforeNewImageInspection": true,
+    "nearestUnpairedCandidatesAreDiagnosticOnly": true,
+    "pngBytesReadBySelector": false,
+    "imagesCopiedOrChanged": false,
+    "sourceMutation": false,
+    "detectorChanged": false,
+    "selectorRelaxation": false,
+    "automaticHoldClearance": false,
+    "providerActivation": false,
+    "productionAuthority": false
+  }
+}
