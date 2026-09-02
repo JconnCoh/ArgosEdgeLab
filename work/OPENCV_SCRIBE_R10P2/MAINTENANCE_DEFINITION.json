@@ -1,0 +1,68 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 2097152,
+  "entryPoint": "payload/Stage-R10P2Post2Bf.ps1",
+  "changes": [
+    {
+      "source": "payload/Stage-R10P2Post2Bf.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R10P2.ps1",
+      "approvedPredecessorSha256": [
+        "159BD82528E505DE69BDEEE4C3A3B29402BA9281939C57F6187587E9047D9740"
+      ],
+      "installedSha256": "9637400CDCB41916DA4DFC3F7C66583A55A4CDFD57596B8D83F429CA4B4BA617",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\KLARFExport\\R10P2",
+      "mode": "CREATE_NEW_HASH_VERIFIED_REVIEW_ONLY_EVIDENCE_COPY",
+      "source": "D:\\KLARFExport\\PST_BRKFULLMETAL\\Lot_Lot_62546-481_POST2\\Lot_62546-481_POST2\\Slot01\\BrightfieldFrontsideWafer\\resizedImage\\Lot_62546-481_POST2_Slot01_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sourceSha256": "D03C10550401B3AC2AFE42CC066E192DA9CC8D3FFC8F1E2497FA9C7C39CA5052",
+      "sourceBytes": 475379874
+    },
+    {
+      "targetRoot": "D:\\KLARFExport\\R10P2",
+      "mode": "CREATE_NEW_HASH_VERIFIED_REVIEW_ONLY_EVIDENCE_COPY",
+      "source": "D:\\KLARFExport\\PST_BRKFULLMETAL\\Lot_Lot_62546-481_POST2\\Lot_62546-481_POST2\\Slot03\\BrightfieldFrontsideWafer\\resizedImage\\Lot_62546-481_POST2_Slot03_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sourceSha256": "55B290A566FC243C81D1EB5E364D56DBB4DBC7A27AE81EA40E1CBF7CB6E570B3",
+      "sourceBytes": 475379874
+    },
+    {
+      "targetRoot": "D:\\KLARFExport\\R10P2",
+      "mode": "CREATE_NEW_HASH_VERIFIED_REVIEW_ONLY_EVIDENCE_COPY",
+      "source": "D:\\KLARFExport\\PST_BRKFULLMETAL\\Lot_Lot_62546-481_POST2\\Lot_62546-481_POST2\\Slot17\\BrightfieldFrontsideWafer\\resizedImage\\Lot_62546-481_POST2_Slot17_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sourceSha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94",
+      "sourceBytes": 475379874
+    }
+  ],
+  "entryPointOutputs": [
+    {"path": "D:\\KLARFExport\\R10P2\\S01B.bmp", "mode": "CREATE_NEW", "sha256": "D03C10550401B3AC2AFE42CC066E192DA9CC8D3FFC8F1E2497FA9C7C39CA5052", "bytes": 475379874},
+    {"path": "D:\\KLARFExport\\R10P2\\S03B.bmp", "mode": "CREATE_NEW", "sha256": "55B290A566FC243C81D1EB5E364D56DBB4DBC7A27AE81EA40E1CBF7CB6E570B3", "bytes": 475379874},
+    {"path": "D:\\KLARFExport\\R10P2\\S17B.bmp", "mode": "CREATE_NEW", "sha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94", "bytes": 475379874}
+  ],
+  "sourceProcessingContract": {
+    "lotId": "62546-481_POST2",
+    "acquisitionId": "Lot_62546-481_POST2",
+    "physicalIdentities": ["62546-481_POST2_SLOT01", "62546-481_POST2_SLOT03", "62546-481_POST2_SLOT17"],
+    "sourceImageBytesReadAllowed": true,
+    "opencvPixelDecodeRequired": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "evidenceCopyCreateAllowed": true,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false,
+    "automaticIdentityAuthority": false
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 900,
+    "ownedChildTimeoutSeconds": 600,
+    "maximumSequentialChildren": 1,
+    "outerCoversAllChildren": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [],
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
