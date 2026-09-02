@@ -4,32 +4,30 @@ This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
 
-## OCV-03 O3B21 R35 exact-953 backside corpus running — 2026-09-02
+## OCV-03 O3B21 R35 exact-953 backside gate complete / frontside next — 2026-09-02
 
-R34 `D:/R34C953R2` completed 953/953 with 937 unique passes, nine multiple
-holds, seven not-found holds, zero source problems, and empty stderr under
-summary `44400306066C9ADF9B5DB630FEC97056680BEF0EC959597F025EE82B8C81C815`.
-Seven holds recur from R32; one new hold is the required O005 fixture ambiguity;
-eight new multiple holds are unintended collateral from R34 comparing clean
-notches against far-away exterior-dirty holder responses.
+R35 `D:/R35C953` completed all 953 exact frozen BACK pairs: 945 unique-notch
+passes, seven not-found holds, one multiple-pair hold, zero source problems,
+and empty stderr. Summary SHA-256 is
+`ACC45CF167366B734160ED349897398385F85E1665B3E08552758A322A9CD62F`;
+failures SHA-256 is
+`73E227CB97160258720D3ADBCCA6D35C1F0BCA13C3E854D9647E555D784DA775`.
 
-R35 `33740B900456B98E1EA3163D8323CA2717C308B53457B3BD51DAFA59228EC407`
-limits that conservative hold to a rotation-independent 60-degree competing
-neighborhood. R28-R35 pass 192/192 local assertions. Fresh JBOD targeted
-summary `DB79DBCA2C39972B5934B2EFE7458D4CFFEEBBFA0724801FF9AEEEF0D8865B51`
-passes 9/9, including residue alignment and preserved O005 ambiguity. Fresh
-`D:/R35T1/collateral2` passes all eight exact regressions with one selected
-exterior-clean pair each and unchanged BF/DF hashes.
+Exact identity reconciliation passed. The seven R32-recurring failures remain
+holds, O005 is the sole fixture multiple, the three intended R33 BowComp
+recoveries remain passes, and all eight unintended R34 far-holder regressions
+are gone. The residue-bearing current PatternedFront Slot03 remains correctly
+aligned and passes. No hold record was automatically cleared.
 
 Current checkpoint:
-`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R35C953_DIRECT_EXACT_953_CORPUS_RUNNING_CHECKPOINT_20260902.md`,
-SHA-256 `CA01F78D0580D917798862347B504E08F1E91CFA780CDAF75005EFDA3EE81145`.
-The already-pasted command executed after the operator supplied Enter and
-returned `PASS_R35C953_STARTED`. Owned worker PID `12496`, created
-`2026-09-02T17:48:45.2740425Z`, is running under fresh `D:/R35C953`. Observe
-it read-only; do not retry, restart, stop, or modify it. Review-only remains;
-training, XML, production, provider activation, source mutation/deletion, and
-automatic hold clearance remain false.
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R35C953_BACKSIDE_GATE_COMPLETE_FRONTSIDE_NEXT_CHECKPOINT_20260902.md`,
+SHA-256 `442297EA14EA9C1A5F07EC9C32C71CD4A66D5D6B52C004EBED1DA8DFD70E665A`.
+The backside gate is complete. Bind and process the exact recorded applicable
+FRONT BF/DF acquisition set next, preserve POST2 development evidence, and
+retain the rare Slot16 hotspot as an explicit hold if unresolved. Review-only
+remains; training, XML, production, provider activation, source mutation or
+deletion, retry, existing task/process action, and automatic hold clearance
+remain false.
 
 ## OCV-03 autonomous detector sequence rollover — 2026-08-30
 

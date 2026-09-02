@@ -1,5 +1,37 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### Direct-control wait requests cannot exceed the controller's 3600-second bound
+
+- Signature: `Invoke-ArgosJbodDirect.ps1` rejects `-TimeoutSeconds 5400` locally
+  with a parameter-validation error before any command is delivered.
+- Cause: the controller validates `TimeoutSeconds` in the closed range ending at
+  3600 even when the remote read-only watcher has a longer internal deadline.
+- Preflight: read the exact controller parameter metadata and require every
+  invocation timeout to be at most 3600 seconds before starting the route.
+- Recovery: because validation occurs before delivery, reuse the unchanged
+  command bytes with a controller timeout at or below 3600; do not classify the
+  pre-delivery rejection as a JBOD execution or retry.
+- First observed: R35C953 completion watcher on 2026-09-02. The unchanged
+  watcher SHA-256 `16B70D884B1B3AA9865BFE7928322273FEAF09C45ECD9F4FC0B3194E19151940`
+  subsequently completed through a 3600-second controller wait.
+
+### Compact `Where-Object` comparisons require explicit script-block spacing
+
+- Signature: a read-only identity assertion returns an empty filtered set even
+  though the source rows visibly contain the requested state.
+- Cause: compact syntax such as `? state-eq'VALUE'` can bind `state-eq` as the
+  property token instead of parsing `-eq` as the comparison operator.
+- Preflight: use `Where-Object { $_.state -eq 'VALUE' }` for machine assertions
+  and rehearse the exact predicate locally with one matching and one negative
+  object before remote observation.
+- Recovery: preserve the earlier read-only diagnostic output, create a fresh
+  observer filename, correct only the predicate, and rerun without repeating
+  detector or corpus work.
+- First observed: R35C953 hold reconciliation observers 1 and 2 on 2026-09-02;
+  observer 3 SHA-256
+  `E05F126E1C05760906045CE81616FB085DEED1128568BF4CC4E5C3B29163A3F5`
+  passed against the unchanged terminal summaries.
+
 ### Endpoint configuration is not an approved maintenance destination
 
 - Signature: a correctly signed JBOD `MAINTENANCE_PATCH` containing an exact
