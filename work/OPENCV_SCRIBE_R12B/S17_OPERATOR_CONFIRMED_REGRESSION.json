@@ -1,0 +1,46 @@
+{
+  "schema": "argos_opencv_scribe_operator_confirmed_regression_v1",
+  "revision": "ARGOS_OPENCV_SCRIBE_R12B_S17_OPERATOR_REGRESSION_20260902",
+  "createdUtc": "2026-09-02T19:45:27.735Z",
+  "classification": "LOCKED_INPUT_REGRESSION_ONLY",
+  "caseId": "POST2_S17",
+  "operatorConfirmedString": "6KB71041XDE5",
+  "semiM12": {
+    "body": "6KB71041XD",
+    "observedCheckCharacters": "E5",
+    "expectedCheckCharacters": "E5",
+    "remainder": 0,
+    "valid": true
+  },
+  "sourceEvidence": {
+    "bf": {
+      "path": "C:/P2COHORT/S17B.bmp",
+      "sha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94"
+    },
+    "df": {
+      "path": "C:/P2COHORT/S17D.bmp",
+      "sha256": "9AB0AA6942948F54635C51B173618FC8478C75791E9F859FDD135FFDE52C153C"
+    },
+    "blobRaster": {
+      "path": "C:/P2COHORT/results/R12B_BLOB_TOPOLOGY_LOCKED_20260902/S17/BF_FORWARD_blobs.png",
+      "sha256": "9C7378101E507DD308F0CEA56D61BE41048B1FE576072D0FB1F517A8547F71D4"
+    }
+  },
+  "detectorRegression": {
+    "resultPath": "C:/P2COHORT/results/R12B_BLOB_TOPOLOGY_LOCKED_20260902/S17/result.json",
+    "resultSha256": "05500C9BEE17F4A1736795ADDCFA618A78E6B0D6C25E08D665D24EF679D6667E",
+    "descriptorOnlyString": "60B71041SDE5",
+    "topologyDirectString": "6KB71041XDE5",
+    "matchesOperatorConfirmedString": true,
+    "checksumValid": true,
+    "identityEligible": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}

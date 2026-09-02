@@ -1,0 +1,155 @@
+{
+  "schema": "argos_opencv_scribe_r12b_local_gate_v1",
+  "revision": "ARGOS_OPENCV_SCRIBE_R12B_BLOB_TOPOLOGY_20260902",
+  "createdUtc": "2026-09-02T19:45:27.735Z",
+  "status": "PASS_DIAGNOSTIC_ONLY",
+  "scope": {
+    "description": "Notch-independent missing-reference glyph recovery from sparse-blob line topology.",
+    "sourceImagesReadOnly": true,
+    "externalExecution": false,
+    "jbodAccess": false,
+    "publication": false
+  },
+  "r12aFinding": {
+    "referenceCount": 456,
+    "prototypeLabels": "0123456789ABCDEFGHLMNPRSTU",
+    "missingBodyReferenceLabels": "IJKOQVWXYZ",
+    "kRankAvailable": false,
+    "xRankAvailable": false,
+    "cause": "The descriptor ranker skipped labels absent from the reference bank, so R12A could not emit K or X and checksum consensus substituted reachable wrong characters.",
+    "r12aBytesPreserved": true
+  },
+  "correction": {
+    "method": "Apply generic Hough line-topology tests to every body cell only for labels missing from the active reference bank.",
+    "kRule": "long left vertical spine plus opposing diagonal arms",
+    "xRule": "two long opposing diagonals with a central intersection and no long vertical spine",
+    "checksumRole": "validator_only",
+    "checksumCandidateSubstitution": false,
+    "hardCodedLot": false,
+    "hardCodedString": false
+  },
+  "artifacts": {
+    "runner": {
+      "path": "work/OPENCV_SCRIBE_R12B/Run-ArgosOpenCvScribeR12BBlobTopology.py",
+      "sha256": "D670CFCE64BF5FDF5307E69ED69A05CB7B404A78B521AB889C7F35044D666FDC"
+    },
+    "r12aDependency": {
+      "path": "work/OPENCV_SCRIBE_R12A/Run-ArgosOpenCvScribeR12BlobDiagnostic.py",
+      "sha256": "F5EB8FB3281D7D55CDD9FA4A3530A32BD33BBA3B8DB69E0A247C20935F6AD429"
+    },
+    "r11ProviderDependency": {
+      "path": "work/OPENCV_SCRIBE_R11A/ArgosOpenCvScribeV1R11.py",
+      "sha256": "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9"
+    },
+    "operatorRegression": {
+      "path": "work/OPENCV_SCRIBE_R12B/S17_OPERATOR_CONFIRMED_REGRESSION.json",
+      "sha256": "B8CCC273321F15FA03C7F1025500585ECC14562A79A723033767B50679BBECEC"
+    }
+  },
+  "controls": [
+    {
+      "jobId": "R11A_POST2_S01",
+      "jobSha256": "4EB84709B9989EF5D8F80C2CC66B7045C80F2C90798300537F390EB18B2F2AB7",
+      "legacyResultSha256": "6F8AE563AB09D723D76BF89C1D05993CC9376110EC54D7A16A2E6CE2CB06BEFD",
+      "resultSha256": "CB7B4BF7923A0132F9A5198040B1F16C00F6CE75A24444A48DF09BB11762351F",
+      "state": "LEGACY_CHECKSUM_VALID_BLOB_TOPOLOGY_SKIPPED",
+      "imageFirstString": "3912P014FED2",
+      "proposedString": "3912P014FED2",
+      "blobTopologyDiagnosticCount": 0
+    },
+    {
+      "jobId": "R11A_POST2_S03",
+      "jobSha256": "4F3CDBB7F60C98D7A9AAEA1B3F0B04DD9A1ABB8A785972ECCFCBC3C38B932E18",
+      "legacyResultSha256": "6917265EF9591821C88CAC0BFFC9157DAEB3BAD237D14EC96B9FEDF197C282D6",
+      "resultSha256": "629E4CB531A6A16646F33EE5A901F19798A0ED5162EE0E13D665B50DCB460FA0",
+      "state": "LEGACY_CHECKSUM_VALID_BLOB_TOPOLOGY_SKIPPED",
+      "imageFirstString": "2659P076FEF4",
+      "proposedString": "2659P076FEF4",
+      "blobTopologyDiagnosticCount": 0
+    }
+  ],
+  "s17Regression": {
+    "jobId": "R11A_POST2_S17",
+    "jobSha256": "66A8FC2BBF7C8C64338A4E514FDC0F78587E82A7C38541691D8AB898EBE52628",
+    "legacyResultSha256": "74EC6C355E853F1C53B832750B394F1BE9692AF8118FAA682BEAAD0EEEB77D55",
+    "operatorConfirmedString": "6KB71041XDE5",
+    "descriptorOnlyString": "60B71041SDE5",
+    "topologyDirectString": "6KB71041XDE5",
+    "expectedCheckCharacters": "E5",
+    "observedCheckCharacters": "E5",
+    "checksumValid": true,
+    "topologySubstitutions": [
+      {
+        "position": 2,
+        "descriptorCharacter": "0",
+        "topologyCharacter": "K",
+        "verticalRatio": 0.516068,
+        "positiveDiagonalRatio": 0.326077,
+        "negativeDiagonalRatio": 0.587801,
+        "leftSpine": true
+      },
+      {
+        "position": 9,
+        "descriptorCharacter": "S",
+        "topologyCharacter": "X",
+        "verticalRatio": 0.259949,
+        "positiveDiagonalRatio": 0.599508,
+        "negativeDiagonalRatio": 0.600246,
+        "centralDiagonalIntersection": true
+      }
+    ],
+    "resultPath": "C:/P2COHORT/results/R12B_BLOB_TOPOLOGY_LOCKED_20260902/S17/result.json",
+    "resultSha256": "05500C9BEE17F4A1736795ADDCFA618A78E6B0D6C25E08D665D24EF679D6667E",
+    "bfBlobRasterPath": "C:/P2COHORT/results/R12B_BLOB_TOPOLOGY_LOCKED_20260902/S17/BF_FORWARD_blobs.png",
+    "bfBlobRasterSha256": "9C7378101E507DD308F0CEA56D61BE41048B1FE576072D0FB1F517A8547F71D4",
+    "referenceCoverageHold": true,
+    "identityEligible": false
+  },
+  "negativeTopologyControls": {
+    "method": "Run the exact R12B classifier over blob-normalized frozen reference glyph crops.",
+    "labels": [
+      {
+        "label": "1",
+        "sampleCount": 40,
+        "falseKOrXCount": 0,
+        "maximumOpposingDiagonalRatio": 0.207621,
+        "maximumVerticalRatio": 0.727809
+      },
+      {
+        "label": "8",
+        "sampleCount": 20,
+        "falseKOrXCount": 0,
+        "maximumOpposingDiagonalRatio": 0.381577,
+        "maximumVerticalRatio": 0.548943
+      },
+      {
+        "label": "S",
+        "sampleCount": 24,
+        "falseKOrXCount": 0,
+        "maximumOpposingDiagonalRatio": 0.260211,
+        "maximumVerticalRatio": 0.291373
+      }
+    ],
+    "totalSamples": 84,
+    "totalFalseKOrXCount": 0
+  },
+  "determinism": {
+    "repeatResultPath": "C:/P2COHORT/results/R12B_BLOB_TOPOLOGY_LOCKED_REPEAT_20260902/S17/result.json",
+    "repeatResultSha256": "05500C9BEE17F4A1736795ADDCFA618A78E6B0D6C25E08D665D24EF679D6667E",
+    "resultHashMatch": true,
+    "rasterHashMatch": true
+  },
+  "withdrawnDraftOutput": {
+    "path": "C:/P2COHORT/results/R12B_BLOB_TOPOLOGY_20260902/S17",
+    "classification": "WITHDRAWN",
+    "reason": "Pre-freeze JSON circular-reference serialization failure; never used as gate evidence."
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}
