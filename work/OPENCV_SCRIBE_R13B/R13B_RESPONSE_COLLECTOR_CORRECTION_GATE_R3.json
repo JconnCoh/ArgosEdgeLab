@@ -1,0 +1,60 @@
+{
+  "schema": "argos_r13b_response_collector_scope_correction_gate_v1",
+  "createdUtc": "2026-09-02T23:12:44.0074173Z",
+  "state": "PASS_R13B_EXACT_RESPONSE_COLLECTOR_CORRECTION_R3",
+  "classification": "FROZEN_REVIEW_ONLY",
+  "requestId": "REQ_20260902T204408092Z_R13B",
+  "responseId": "R_CC03FC22AD6B_20260902231013867_6fb787f9",
+  "supersededCollector": {
+    "path": "work/OPENCV_SCRIBE_R13B/Collect-R13BResponseR2.ps1",
+    "sha256": "556FC3FDD0B174D1ED1BBA752F044A13619EFDE2C00FA17C2FA534822695E5E0",
+    "invocationPath": "work/OPENCV_SCRIBE_R13B/Collect-R13BResponseR2B.invocation.json",
+    "invocationSha256": "8C28C2DE0750A92FB36FE5854826037DDBCEDD4D2AE89DD553848D4037CBD09F",
+    "disposition": "WITHDRAWN_FOR_COLLECTION",
+    "failure": "The collector applied the exact R13B response ZIP entry bound to unrelated historical response ZIPs before request-ID correlation."
+  },
+  "currentCollector": {
+    "path": "work/OPENCV_SCRIBE_R13B/Collect-R13BResponseR3.ps1",
+    "sha256": "1AC7DD66FD2AD6F9A027E30601EECCDC5B96F4BC711FFC2C097A749FA29AE684",
+    "invocationPath": "work/OPENCV_SCRIBE_R13B/Collect-R13BResponseR3.invocation.json",
+    "invocationSha256": "21A29B99174D95558FEB7929A562AD10BE72686268D683B8842D056B625E93A7",
+    "correction": "Apply the R13B response entry bound only after the manifest requestId exactly matches the authorized request.",
+    "harnessSafetyState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY"
+  },
+  "publication": {
+    "gatePath": "work/OPENCV_SCRIBE_R13B/R13B_PUBLISH_GATE.json",
+    "gateSha256": "699FE2FBFE314B63358CD1193579FFB411935EE0244FF28854B63DADD2F06C22",
+    "state": "PASS_R13B_EXACT_SIGNED_REQUEST_PUBLISHED_CREATE_NEW",
+    "publicationCount": 1,
+    "retryAuthorized": false
+  },
+  "verifiedResponse": {
+    "zipSha256": "345153CD7AB1D251B0422DDE7429882C5993E907FDB1D60E9AEFCFDEDBFF27E8",
+    "zipBytes": 138092,
+    "endpointState": "PASS_MAINTENANCE_PATCH",
+    "sourceRole": "JBOD",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "signatureVerifiedInMemory": true,
+    "matchingResponseCount": 1,
+    "bundleSha256": "337C6E4151D8B5AC2CD1FA70401D87432EDFC8052C03396BC307650E9B10ACAB",
+    "bundleBytes": 141141,
+    "pathState": "PASS_PATH_BUDGET",
+    "maximumEffectiveLength": 177
+  },
+  "safety": {
+    "collectorPreflightOnly": true,
+    "collectionPerformed": false,
+    "externalWritesPerformed": false,
+    "requestRepublished": false,
+    "sourceMutationPerformed": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "providerActivationAllowed": false
+  }
+}
