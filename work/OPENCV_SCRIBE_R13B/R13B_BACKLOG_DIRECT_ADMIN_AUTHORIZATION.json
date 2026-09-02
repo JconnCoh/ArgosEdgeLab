@@ -1,0 +1,31 @@
+{
+  "schema": "argos_direct_admin_read_only_authorization_gate_v1",
+  "createdUtc": "2026-09-02T22:28:30Z",
+  "state": "PASS_R13B_BACKLOG_DIRECT_ADMIN_READ_ONLY_AUTHORIZATION",
+  "incidentId": "OCV02_R13B_PREPUBLICATION_BACKLOG_20260902",
+  "authoritySource": "Operator explicitly replied do it to one bounded read-only endpoint audit of the three unresolved accepted request IDs.",
+  "action": "ExactThreeRequestEndpointFilesystemStateObservation",
+  "targetComputerName": "A1025645101",
+  "runnerPath": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosJbodDirect.ps1",
+  "runnerSha256": "764EB0F98B03A7E2FF32386A30CD553D2670234624A167ACA17E09E589B54BB2",
+  "commandSourcePath": "work/OPENCV_SCRIBE_R13B/Get-R13BBacklogEndpointState.ps1",
+  "commandSourceSha256": "52F07D4DAF4657AF8962EC23096605096F2D88961F30612D71525A89A6109989",
+  "commandSourceCharacters": 1976,
+  "requestIds": [
+    "REQ_20260902T001500111Z_62619433S22M",
+    "REQ_20260902T002400222Z_62619433S22P",
+    "REQ_20260902T003000333Z_62619433S22S"
+  ],
+  "oneObservationExecutionAuthorized": true,
+  "readOnly": true,
+  "taskActionsAllowed": false,
+  "processActionsAllowed": false,
+  "installedChangesAllowed": false,
+  "queueActionsAllowed": false,
+  "ledgerActionsAllowed": false,
+  "imageBytesAllowed": false,
+  "publicationAllowed": false,
+  "retryAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

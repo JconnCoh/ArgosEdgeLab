@@ -1,0 +1,48 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-02T22:36:45Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "OCV02_R13B_PREPUBLICATION_BACKLOG_20260902",
+  "source": "HOSTNAME_GATED_NONCE_BOUND_JBOD_DIRECT_CONTROL",
+  "computerName": "A1025645101",
+  "nonce": "77cc25cd9b9c40999c9be31e0499d4f8",
+  "commandSha256": "52F07D4DAF4657AF8962EC23096605096F2D88961F30612D71525A89A6109989",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "requestRows": [
+    {
+      "requestId": "REQ_20260902T001500111Z_62619433S22M",
+      "expected": "ONE_OF_PENDING_COMPLETED_FAILED_REPLAYED_WORK_OR_QUARANTINE",
+      "observed": "processed/completed",
+      "path": "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\completed\\REQ_20260902T001500111Z_62619433S22M.ready",
+      "lastWriteUtc": "2026-09-02T00:16:32.0393465Z"
+    },
+    {
+      "requestId": "REQ_20260902T002400222Z_62619433S22P",
+      "expected": "ONE_OF_PENDING_COMPLETED_FAILED_REPLAYED_WORK_OR_QUARANTINE",
+      "observed": "processed/failed",
+      "path": "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\failed\\REQ_20260902T002400222Z_62619433S22P.ready",
+      "lastWriteUtc": "2026-09-02T00:19:57.0264638Z"
+    },
+    {
+      "requestId": "REQ_20260902T003000333Z_62619433S22S",
+      "expected": "ONE_OF_PENDING_COMPLETED_FAILED_REPLAYED_WORK_OR_QUARANTINE",
+      "observed": "processed/completed",
+      "path": "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\completed\\REQ_20260902T003000333Z_62619433S22S.ready",
+      "lastWriteUtc": "2026-09-02T00:22:25.7063328Z"
+    }
+  ],
+  "endpointPendingCountForExactRequests": 0,
+  "endpointWorkCountForExactRequests": 0,
+  "endpointTerminalCountForExactRequests": 3,
+  "endpointCompletedCountForExactRequests": 2,
+  "endpointFailedCountForExactRequests": 1,
+  "responseQuarantineCountForExactRequests": 0,
+  "decision": "ENDPOINT_QUEUE_NOT_BLOCKED_RESPONSE_RETURN_PATH_REMAINS_UNPROVED",
+  "publicationSafe": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

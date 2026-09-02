@@ -1,0 +1,54 @@
+{
+  "schema": "argos_r13b_publication_r2_invocation_v1",
+  "requestId": "REQ_20260902T204408092Z_R13B",
+  "requiredBranch": "codex/opencv-scribe-deciphering",
+  "publisherSha256": "5698FDE56FD9FE3B3F96A4E283009D9FB56B71E74DCE3A0A699BAACCCB322939",
+  "authority": {
+    "publicationAuthorized": true,
+    "maximumPublications": 1,
+    "retryAuthorized": false,
+    "matchingSignedTerminalResponseOnly": true,
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "providerActivationAllowed": false
+  },
+  "requestZip": {
+    "path": "work/OPENCV_SCRIBE_R13B/final/REQ_20260902T204408092Z_R13B.ready.zip",
+    "sha256": "E03EF601339101663E4AABC1889A08C9DB92005F84F56DB3CF08955C8325A889",
+    "bytes": 59619
+  },
+  "requiredGates": [
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_FINAL_PACKAGE_GATE.json", "sha256": "CA7644B6C4E89D4E8CEEB53651B6AE80FF6F9DD254A015787CCB7C5C7837BCF2", "stateProperty": "state", "requiredState": "PASS_R13B_FINAL_SIGNED_PACKAGE"},
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_COMPLETE_ROUTE_PACKAGE_BINDING_GATE_R3.json", "sha256": "BC5370F045471C9B49307F054897A5A37EBEBECB955149595891D36361B84212", "stateProperty": "state", "requiredState": "PASS_R13B_COMPLETE_ROUTE_PACKAGE_AND_CURRENT_TOOLING_BINDING_GATE_R3"},
+    {"path": "work/OPENCV_SCRIBE_R13B/PREACTION_BUILD_SIGN_PUBLISH_R13B_R3.json", "sha256": "F5C3B27D05509AE441502469BB7065CFF1B02BD4A4B6521F23587696634B7FE2", "stateProperty": "state", "requiredState": "PASS_PREACTION_CONTRACT"},
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_COMPLETE_ROUTE_GATE_R3.json", "sha256": "235034A7B75669F6E8DD6731EA407932901B4CCD46679E48C21A5BDB6250A47F", "stateProperty": "state", "requiredState": "PASS_R13B_COMPLETE_ROUTE_GATE"},
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_PACKAGE_TOOLING_CLONE_LITERAL_GATE_R3.json", "sha256": "C5C0C5A5F89D6CDB22C069094DB40CDFBFC7202D96E8265A5F53F979A34DF714", "stateProperty": "state", "requiredState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"},
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_COLLECTOR_ZIP_LOOKUP_REHEARSAL_GATE_R2B.json", "sha256": "11A6567907C71F73C4C9FC3FFCDEA7D7E6E2DDCF003ED345B2152ED8A5B3BAF3", "stateProperty": "state", "requiredState": "PASS_R13B_COLLECTOR_ZIP_LOOKUP_REHEARSAL"},
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_TOOLING_SUPERSESSION_GATE_R3.json", "sha256": "67D69283583A23FA1AE11F2B6728115C4C14267583FD4BB01E5ACE2E743B2A0C", "stateProperty": "state", "requiredState": "PASS_R13B_CURRENT_PUBLICATION_TOOLING_ONLY_R3"},
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_QUEUE_OBSERVER_CORRECTION_GATE_R4.json", "sha256": "4FC86B805C64DA6B30348FEE21724BA4009A3AB87757C6A6CAF145C33F521421", "stateProperty": "state", "requiredState": "PASS_R13B_QUEUE_OBSERVER_SCOPE_AND_CORRELATION_CORRECTION_R4"},
+    {"path": "work/OPENCV_SCRIBE_R13B/R13B_ENDPOINT_CLONE_LITERAL_REMEDIATION_GATE.json", "sha256": "5AFFA1AEB0BA998458B30C57F9CE683E6812F280C44EDC12BF13486E383EBFEB", "stateProperty": "state", "requiredState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"}
+  ],
+  "responseCollector": {
+    "scriptPath": "work/OPENCV_SCRIBE_R13B/Collect-R13BResponseR2.ps1",
+    "scriptSha256": "556FC3FDD0B174D1ED1BBA752F044A13619EFDE2C00FA17C2FA534822695E5E0",
+    "invocationPath": "work/OPENCV_SCRIBE_R13B/Collect-R13BResponseR2B.invocation.json",
+    "invocationSha256": "8C28C2DE0750A92FB36FE5854826037DDBCEDD4D2AE89DD553848D4037CBD09F",
+    "rehearsalGatePath": "work/OPENCV_SCRIBE_R13B/R13B_COLLECTOR_ZIP_LOOKUP_REHEARSAL_GATE_R2B.json",
+    "rehearsalGateSha256": "11A6567907C71F73C4C9FC3FFCDEA7D7E6E2DDCF003ED345B2152ED8A5B3BAF3"
+  },
+  "freshQueueObservation": {
+    "scriptPath": "work/OPENCV_SCRIBE_R13B/Get-R13BCurrentShareObservationR2.ps1",
+    "scriptSha256": "DCF2CB7B8ADE3B4D7FEEFE06F3E80AB01D1904990F08B2F4975EC9015F58ACE6",
+    "invocationPath": "work/OPENCV_SCRIBE_R13B/Get-R13BCurrentShareObservationR2.invocation.json",
+    "invocationSha256": "079AA083683F9DA823E09642EF6FDA28ECE14874DAB2306E963EEB99E6526C01",
+    "maximumAgeSeconds": 120
+  },
+  "route": {
+    "inspectionRevsUnc": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs"
+  },
+  "publishGatePath": "work/OPENCV_SCRIBE_R13B/R13B_PUBLISH_GATE.json"
+}

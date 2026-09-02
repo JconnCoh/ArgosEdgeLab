@@ -1,0 +1,23 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-09-02T22:28:30Z",
+  "state": "PASS_R13B_BACKLOG_DIRECT_ADMIN_READ_ONLY_CAPABILITY",
+  "incidentId": "OCV02_R13B_PREPUBLICATION_BACKLOG_20260902",
+  "routes": [
+    {
+      "type": "DIRECT_ADMIN_READ_ONLY",
+      "action": "ExactThreeRequestEndpointFilesystemStateObservation",
+      "targetComputerName": "A1025645101",
+      "capabilities": [
+        "exactBoundedEndpointRequestState",
+        "hostnameGatedNonceBoundReturn",
+        "boundedManifestCorrelation"
+      ]
+    }
+  ],
+  "maximumEvidenceRows": 32,
+  "commandSourceSha256": "52F07D4DAF4657AF8962EC23096605096F2D88961F30612D71525A89A6109989",
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

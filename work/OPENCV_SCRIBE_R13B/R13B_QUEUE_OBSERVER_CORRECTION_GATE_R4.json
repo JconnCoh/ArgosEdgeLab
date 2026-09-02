@@ -1,0 +1,61 @@
+{
+  "schema": "argos_r13b_queue_observer_scope_and_correlation_correction_gate_v1",
+  "createdUtc": "2026-09-02T22:54:00Z",
+  "state": "PASS_R13B_QUEUE_OBSERVER_SCOPE_AND_CORRELATION_CORRECTION_R4",
+  "classification": "FROZEN_REVIEW_ONLY",
+  "requestId": "REQ_20260902T204408092Z_R13B",
+  "supersededObserver": {
+    "path": "work/OPENCV_SCRIBE_R13B/Get-R13BCurrentShareObservation.ps1",
+    "sha256": "C548609DE563F632A375867A3B6438792A7216A9EC038285E012BD566D55FD15",
+    "disposition": "WITHDRAWN_FOR_PUBLICATION",
+    "failure": "Scanned unrelated pre-boundary historical response ZIPs and required responseCreatedUtc to be at or after requestCreatedUtc."
+  },
+  "currentObserver": {
+    "path": "work/OPENCV_SCRIBE_R13B/Get-R13BCurrentShareObservationR2.ps1",
+    "sha256": "DCF2CB7B8ADE3B4D7FEEFE06F3E80AB01D1904990F08B2F4975EC9015F58ACE6",
+    "invocationPath": "work/OPENCV_SCRIBE_R13B/Get-R13BCurrentShareObservationR2.invocation.json",
+    "invocationSha256": "079AA083683F9DA823E09642EF6FDA28ECE14874DAB2306E963EEB99E6526C01",
+    "responseScanScope": "POST_PROVEN_ZERO_UNRESOLVED_BOUNDARY_ONLY",
+    "responseCorrelationMode": "SIGNED_EXACT_REQUEST_ID",
+    "harnessSafetyState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY"
+  },
+  "directEvidence": {
+    "jbodEndpointObservationPath": "work/OPENCV_SCRIBE_R13B/R13B_BACKLOG_DIRECT_OBSERVATION.json",
+    "jbodEndpointObservationSha256": "5A202B19968B02CA529C8E8BEC517A40E025A01A833ACB4B307FC5073A2921DC",
+    "argosReturnObservationPath": "work/OPENCV_SCRIBE_R13B/R13B_ARGOS_RETURN_HOP_OBSERVATION_R4.json",
+    "argosReturnObservationSha256": "63A3720F7DEEA2B3CA33D5AFF810F4CB282425BECDB394E96625725C5B75ABFC",
+    "exactPriorRequestCount": 3,
+    "exactPriorEndpointTerminalCount": 3,
+    "exactPriorArgosSentResponseCount": 3,
+    "mutationsPerformed": false
+  },
+  "currentShareObservation": {
+    "path": "work/OPENCV_SCRIBE_R13B/R13B_CURRENT_SHARE_OBSERVATION.json",
+    "sha256": "D01BDE41622D69A421935C52180975D7489CD0184E41489A2584025E2FC60A15",
+    "state": "PASS_R13B_CURRENT_SHARE_AND_QUEUE_OBSERVATION",
+    "acceptedAfterBoundary": 18,
+    "signedTerminalResponses": 20,
+    "resolvedAcceptedRequests": 18,
+    "unresolvedAcceptedRequests": 0,
+    "ambiguousAcceptedRequests": 0,
+    "pendingRequests": 0,
+    "targetAbsent": true
+  },
+  "requestPackage": {
+    "path": "work/OPENCV_SCRIBE_R13B/final/REQ_20260902T204408092Z_R13B.ready.zip",
+    "sha256": "E03EF601339101663E4AABC1889A08C9DB92005F84F56DB3CF08955C8325A889",
+    "bytes": 59619,
+    "unchanged": true
+  },
+  "authority": {
+    "publicationAuthorizedByThisGate": false,
+    "maximumPublications": 1,
+    "retryAuthorized": false,
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false
+  }
+}

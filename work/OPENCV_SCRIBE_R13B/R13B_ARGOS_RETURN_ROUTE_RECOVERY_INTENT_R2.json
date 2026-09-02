@@ -1,0 +1,108 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-02T22:40:30Z",
+  "incidentId": "OCV02_R13B_PREPUBLICATION_RETURN_ROUTE_20260902",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_ADMIN_READ_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {
+      "path": "work/OPENCV_SCRIBE_R13B/R13B_ARGOS_RETURN_ROUTE_CAPABILITY_R2.json",
+      "sha256": "48194ED5397C70032DD009AABB963F3FF0C8BF653504C84D8EF578E6BF49B149"
+    },
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_SCRIBE_R13B/R13B_ARGOS_RETURN_ROUTE_AUTHORIZATION_R2.json",
+      "sha256": "B63742483E25CAE3DC8B8217795AECE83F86898D20240969C798A59A29E196F8"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "C:\\ProgramData\\ArgosProjectPortalRO\\from_jbod\\pending|receipts",
+        "sourceSchema": "bounded_response_manifest_route_inventory_v1",
+        "selector": "exact three request IDs across at most 256 direct children per root",
+        "uniquenessKey": "requestId+responseId+relativeRoot",
+        "maximumRows": 512
+      },
+      {
+        "sourcePath": "C:\\ProgramData\\ArgosProjectPortalRO\\responses_from_jbod\\pending|receipts",
+        "sourceSchema": "bounded_response_manifest_route_inventory_v1",
+        "selector": "exact three request IDs across at most 256 direct children per root",
+        "uniquenessKey": "requestId+responseId+relativeRoot",
+        "maximumRows": 512
+      },
+      {
+        "sourcePath": "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\pending|sent|sent\\acks",
+        "sourceSchema": "bounded_response_manifest_route_inventory_v1",
+        "selector": "exact three request IDs across at most 256 direct children per root",
+        "uniquenessKey": "requestId+responseId+relativeRoot",
+        "maximumRows": 768
+      },
+      {
+        "sourcePath": "ScheduledTask:ArgosProjectPortal.Argos.ResponseRelay.RO",
+        "sourceSchema": "scheduled_task_runtime_v1",
+        "selector": "exact task name",
+        "uniquenessKey": "taskName",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": [
+      "shortClipboardPasteHostnameGate",
+      "boundedExactResponseManifestCorrelation",
+      "boundedReturnRelayTaskObservation",
+      "structuredLocalFailureEvidence"
+    ],
+    "requestedFields": [
+      "computerName",
+      "administrativeToken",
+      "requestId",
+      "responseId",
+      "responseState",
+      "relativeRoot",
+      "lastWriteUtc",
+      "taskName",
+      "taskState",
+      "principal",
+      "lastTaskResult",
+      "returnRelayHealthy",
+      "mutationsPerformed"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

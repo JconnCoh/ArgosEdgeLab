@@ -1,0 +1,32 @@
+{
+  "schema": "argos_direct_admin_read_only_authorization_gate_v1",
+  "createdUtc": "2026-09-02T22:40:00Z",
+  "state": "PASS_R13B_ARGOS_RETURN_ROUTE_READ_ONLY_AUTHORIZATION",
+  "incidentId": "OCV02_R13B_PREPUBLICATION_RETURN_ROUTE_20260902",
+  "authoritySource": "Operator exposed DESKTOP-266P787 and replied done after the exact bounded response-return-hop audit was requested.",
+  "action": "R13BExactThreeRequestArgosReturnRouteObservation",
+  "targetComputerName": "DESKTOP-266P787",
+  "runnerPath": "C:/Users/joshua.conn/.codex/skills/argos-jbod-direct-control/scripts/Invoke-ArgosAdminClipboardAction.ps1",
+  "runnerSha256": "A8591DF4FDABB4C0B6DB1B338D4EA48D2BF5892FEF8560A555EAC92FCE4B93E8",
+  "payloadPath": "work/OPENCV_SCRIBE_R13B/Get-R13BArgosReturnRouteObservation.ps1",
+  "payloadSha256": "321540F0144CFF2DF5BE6B1B5338F8BE9562233554E6626B886E52EFC861068A",
+  "requiredRuntimeGates": [
+    "EXACT_RUSTDESK_WINDOW_AND_1920X1200_FULLSCREEN",
+    "EXACT_ARGOS_HOSTNAME_DESKTOP_266P787",
+    "ADMINISTRATIVE_TOKEN_TRUE",
+    "PROTECTED_PORTAL_ROOT_READABLE_TRUE"
+  ],
+  "oneObservationExecutionAuthorized": true,
+  "readOnly": true,
+  "taskActionsAllowed": false,
+  "processActionsAllowed": false,
+  "installedChangesAllowed": false,
+  "queueActionsAllowed": false,
+  "ledgerActionsAllowed": false,
+  "imageBytesAllowed": false,
+  "jbodContactAllowed": false,
+  "publicationAllowed": false,
+  "retryAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

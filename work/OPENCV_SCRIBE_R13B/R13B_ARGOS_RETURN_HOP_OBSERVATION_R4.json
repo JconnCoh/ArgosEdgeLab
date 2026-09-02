@@ -1,0 +1,89 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-09-02T22:51:48.0155581Z",
+    "state":  "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+    "actionId":  "R13B_ARGOS_RETURN_HOP_20260902_A4",
+    "stage":  "COMPLETE",
+    "computerName":  "DESKTOP-266P787",
+    "runnerSha256":  "A8591DF4FDABB4C0B6DB1B338D4EA48D2BF5892FEF8560A555EAC92FCE4B93E8",
+    "payloadSha256":  "AE514C26E5FA27E683474B825765C47B7AC3F7C28E8E57812243A129FCB48036",
+    "expectedResultSchema":  "argos_r13b_argos_return_route_observation_v2",
+    "hostnameGatePassed":  true,
+    "hostnameUsesShortClipboardPaste":  true,
+    "payloadTransferred":  true,
+    "typedTrigger":  "iex(gcb -r)",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "schema":  "argos_r13b_argos_return_route_observation_v2",
+                         "createdUtc":  "2026-09-02T22:51:47.5475302Z",
+                         "state":  "PASS_R13B_ARGOS_RETURN_ROUTE_R2_READ_ONLY_OBSERVATION",
+                         "computerName":  "DESKTOP-266P787",
+                         "administrativeToken":  true,
+                         "requestIds":  [
+                                            "REQ_20260902T001500111Z_62619433S22M",
+                                            "REQ_20260902T002400222Z_62619433S22P",
+                                            "REQ_20260902T003000333Z_62619433S22S"
+                                        ],
+                         "rootRows":  [
+                                          {
+                                              "relativeRoot":  "to_gateway\\pending",
+                                              "exists":  true,
+                                              "itemCount":  0,
+                                              "truncated":  false
+                                          },
+                                          {
+                                              "relativeRoot":  "to_gateway\\sent",
+                                              "exists":  true,
+                                              "itemCount":  538,
+                                              "truncated":  false
+                                          }
+                                      ],
+                         "matchRows":  [
+                                           {
+                                               "requestId":  "REQ_20260902T003000333Z_62619433S22S",
+                                               "responseId":  "R_01635D36C4B9_20260902002230623_f8d07c71",
+                                               "responseState":  "PASS_DATA_PULL",
+                                               "relativeRoot":  "to_gateway\\sent",
+                                               "name":  "R_01635D36C4B9_20260902002230623_f8d07c71.ready",
+                                               "lastWriteUtc":  "2026-09-02T00:23:12.2017244Z"
+                                           },
+                                           {
+                                               "requestId":  "REQ_20260902T001500111Z_62619433S22M",
+                                               "responseId":  "R_9D03623E2FC6_20260902001636908_a563741d",
+                                               "responseState":  "PASS_STATUS_COLLECTED",
+                                               "relativeRoot":  "to_gateway\\sent",
+                                               "name":  "R_9D03623E2FC6_20260902001636908_a563741d.ready",
+                                               "lastWriteUtc":  "2026-09-02T00:16:51.2065090Z"
+                                           },
+                                           {
+                                               "requestId":  "REQ_20260902T002400222Z_62619433S22P",
+                                               "responseId":  "R_BA4CA7F9EB86_20260902001958594_9008033c",
+                                               "responseState":  "FAILED",
+                                               "relativeRoot":  "to_gateway\\sent",
+                                               "name":  "R_BA4CA7F9EB86_20260902001958594_9008033c.ready",
+                                               "lastWriteUtc":  "2026-09-02T00:20:12.0989493Z"
+                                           }
+                                       ],
+                         "matchCount":  3,
+                         "taskRows":  [
+                                          {
+                                              "taskName":  "ArgosProjectPortal.Argos.ResponseRelay.RO",
+                                              "state":  "Running",
+                                              "principal":  "SYSTEM",
+                                              "lastRunUtc":  "2026-08-19T12:24:24.0000000Z",
+                                              "lastTaskResult":  267009
+                                          }
+                                      ],
+                         "returnRelayHealthy":  true,
+                         "errors":  [
+
+                                    ],
+                         "errorCount":  0,
+                         "queueMutationPerformed":  false,
+                         "taskOrProcessActionPerformed":  false,
+                         "imageBytesRead":  false,
+                         "mutationsPerformed":  false,
+                         "reviewOnly":  true,
+                         "productionRoutingEnabled":  false
+                     }
+}
