@@ -874,6 +874,40 @@ def _paired_dot_centroids(response: np.ndarray) -> np.ndarray:
     return np.asarray(points, dtype=np.float32)
 
 
+def _evaluate_paired_residual_diagnostic(
+    response: np.ndarray,
+    prototypes: list[Prototype],
+    excluded_identity: str,
+) -> dict[str, Any] | None:
+    """Evaluate one narrow dot-derived grid without granting identity authority."""
+    points = _paired_dot_centroids(response)
+    if len(points) < 20:
+        return None
+    bank = PrototypeBank.from_prototypes(
+        filtered_prototypes(prototypes, excluded_identity)
+    )
+    center_y = 0.5 * (
+        float(np.quantile(points[:, 1], 0.02))
+        + float(np.quantile(points[:, 1], 0.98))
+    )
+    minimum_x = float(np.quantile(points[:, 0], 0.02))
+    best: dict[str, Any] | None = None
+    for cell_width in (94, 96, 98, 100):
+        expected_x = int(round(minimum_x - 0.30 * cell_width))
+        expected_y = int(round(center_y - 115.0))
+        for y in range(max(0, expected_y - 8), min(response.shape[0] - 230, expected_y + 8) + 1, 4):
+            for x in range(max(0, expected_x - 8), min(response.shape[1] - 12 * cell_width, expected_x + 8) + 1, 4):
+                best = better_grid(
+                    best,
+                    evaluate_grid(response, bank, x, y, cell_width, 230),
+                )
+    if best is None:
+        return None
+    output = finalize_grid(best)
+    output["dotComponentCount"] = int(len(points))
+    return output
+
+
 def _periodic_window(
     response: np.ndarray,
     window_width: int,
@@ -1429,6 +1463,34 @@ def analyze_images(
             response = _paired_dark_response(small_bf, small_df)
             score, x, y = _periodic_window(response, 600, 80, 22, 27, 20, 10)
             response_bytes = np.clip(response, 0.0, 255.0).astype(np.uint8).tobytes()
+            ocr_diagnostics: list[dict[str, Any]] = []
+            native_response = _paired_dark_response(bf_patch, df_patch)
+            for direction, oriented_response in (
+                ("FORWARD", native_response),
+                ("REVERSE_180", cv2.rotate(native_response, cv2.ROTATE_180)),
+            ):
+                evaluated = _evaluate_paired_residual_diagnostic(
+                    oriented_response,
+                    prototypes,
+                    str(job.get("references", {}).get("excludedPhysicalIdentity", "")),
+                )
+                if evaluated is None:
+                    continue
+                ocr_diagnostics.append({
+                    "direction": direction,
+                    "imageFirstString": str(evaluated["imageFirstString"]),
+                    "proposedString": str(evaluated["proposedString"]),
+                    "selectionScore": float(evaluated["selectionScore"]),
+                    "boundaryComplete": bool(evaluated["boundaryComplete"]),
+                    "checksumValid": bool(evaluated["checksumValid"]),
+                    "checksumAlternatives": evaluated["checksumAlternatives"][:5],
+                    "gridX": int(evaluated["x"]),
+                    "gridY": int(evaluated["y"]),
+                    "cellWidth": int(evaluated["cellWidth"]),
+                    "cellHeight": int(evaluated["cellHeight"]),
+                    "dotComponentCount": int(evaluated["dotComponentCount"]),
+                    "identityEligible": False,
+                })
             paired_enhancement_diagnostics.append({
                 "regionId": region.region_id,
                 "regionSource": region.source,
@@ -1441,6 +1503,7 @@ def analyze_images(
                 "periodicWindowHeight": 80,
                 "periodicityScore": score,
                 "responseSha256": hashlib.sha256(response_bytes).hexdigest().upper(),
+                "ocrDiagnostics": ocr_diagnostics,
                 "identityEligible": False,
             })
             continue

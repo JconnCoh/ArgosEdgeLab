@@ -13,9 +13,9 @@
   },
   "engine": {
     "path": "work/OPENCV_SCRIBE_R11A/ArgosOpenCvScribeV1R11.py",
-    "sha256": "7BC2EF6A9ED7BF21B4638D3F95CB9D818A2A40A3F42DF9299CFA2FC711904050",
+    "sha256": "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9",
     "configurationPath": "work/OPENCV_SCRIBE_R11A/R11A_CONFIGURATION.json",
-    "configurationSha256": "A0554C8A8DFAFB75E5F365590C804C525129073A4ED768AEFB5FFF2E6D4AFEB2",
+    "configurationSha256": "82FD4B420F23BD254CB906CBA8E0B6753F4052F5EE92063689EB43DF11157DC2",
     "frozenR9ProviderPath": "work/OPENCV_SCRIBE_R9A/ArgosOpenCvScribeV1R9.py",
     "frozenR9ProviderSha256": "4955AAAAD4C07D3B7BD87332E8956ECDCD291F5ACF1C6FC0E30B937DCB4C8E9F",
     "frozenR9BytesChanged": false
@@ -64,8 +64,8 @@
   "results": [
     {
       "slot": "S01",
-      "path": "C:/P2COHORT/results/R11A/S01_PAIRED_PCA_FINAL.json",
-      "sha256": "6F8AE563AB09D723D76BF89C1D05993CC9376110EC54D7A16A2E6CE2CB06BEFD",
+      "path": "C:/P2COHORT/results/R11A/S01_PAIRED_OCR_DIAGNOSTIC.json",
+      "sha256": "0BD338C17BFE8895A788F3A63F1439694BFEB04896FEC1A2B5B0629B05B2E345",
       "state": "SCRIBE_REFERENCE_COVERAGE_HOLD",
       "knownIdentity": "3912P014FED2",
       "imageFirstString": "3912P014FED2",
@@ -82,8 +82,8 @@
     },
     {
       "slot": "S03",
-      "path": "C:/P2COHORT/results/R11A/S03_PAIRED_PCA_FINAL.json",
-      "sha256": "6917265EF9591821C88CAC0BFFC9157DAEB3BAD237D14EC96B9FEDF197C282D6",
+      "path": "C:/P2COHORT/results/R11A/S03_PAIRED_OCR_DIAGNOSTIC.json",
+      "sha256": "7A9FB0A7F283A8BF32D14F148AEF730BDDDF21AC135612F10BB7059AE27B7D37",
       "state": "SCRIBE_REFERENCE_COVERAGE_HOLD",
       "knownIdentity": "2659P076FEF4",
       "imageFirstString": "2659P076FEF4",
@@ -100,8 +100,8 @@
     },
     {
       "slot": "S17",
-      "path": "C:/P2COHORT/results/R11A/S17_PAIRED_PCA_FINAL.json",
-      "sha256": "74EC6C355E853F1C53B832750B394F1BE9692AF8118FAA682BEAAD0EEEB77D55",
+      "path": "C:/P2COHORT/results/R11A/S17_PAIRED_OCR_DIAGNOSTIC.json",
+      "sha256": "678BC8BDFD07FA2A8859650A8936EAC5ECF90AAFD1D7B56AB814EE1D7B88024D",
       "state": "SCRIBE_PAIRED_ENHANCEMENT_IDENTITY_HOLD",
       "knownIdentity": null,
       "proposedString": "",
@@ -155,12 +155,16 @@
     "s17PairedAngleAfterDegrees": 179.6249631657877,
     "s17AlignedComponentOcrSelectionScore": 0.5443127957975504,
     "s17AlignedComponentOcrChecksumValid": false,
+    "pairedResidualDiagnosticOcrEnabled": true,
+    "pairedResidualDiagnosticIdentityEligible": false,
+    "s17PairedResidualDiagnosticViewCount": 5,
+    "s17PairedResidualDiagnosticChecksumValidCount": 0,
     "s17LocationFoundWithoutUsingMarkedRasterAsProviderInput": true,
     "s17IdentityHeld": true,
     "noIdentityInferredFromFilenameOrAnnotation": true,
     "noSourceImageMutation": true,
     "noExternalMutation": true,
-    "recommendedProductionOrdering": "NOTCH_POSE_THEN_POSE_BOUND_SCRIBE_OCR_WITH_LOCAL_RESIDUAL_ANGLE_REFINEMENT"
+    "recommendedProductionOrdering": "SCRIBE_LOCALIZATION_AND_LOCAL_ORIENTATION_INDEPENDENT_OF_NOTCH;NOTCH_POSE_OPTIONAL_METADATA_ONLY"
   },
   "authority": {
     "reviewOnly": true,
