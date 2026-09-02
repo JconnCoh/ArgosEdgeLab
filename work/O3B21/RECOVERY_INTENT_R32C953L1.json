@@ -1,0 +1,60 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-02T00:22:00Z",
+  "incidentId": "O3B21_R28C953_CORPUS_20260901",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [{
+      "path": "work/O3B21/R28C953L1_RECOVERY_FAILURE_GATE.json",
+      "sha256": "F6AEA1B94D4F67E8BA723822890C11D823EE2B828DAD344A6A336C016E913C63",
+      "state": "FAILED"
+    }],
+    "postFailureObservation": {
+      "path": "work/O3B21/R28C953_POSTFAIL_DIRECT_OBSERVATION_GATE.json",
+      "sha256": "9BCCCD91E9900932AA05CFE774186C24E2223DE97C59A95200FAF45455DC45FB"
+    },
+    "workflowReviewClearance": null
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/O3B21/R28C953_POSTFAIL_DIRECT_OBSERVATION_GATE.json",
+      "sha256": "9BCCCD91E9900932AA05CFE774186C24E2223DE97C59A95200FAF45455DC45FB"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "exactRemedy": "Launch one fresh review-only R32 corpus on the exact frozen 953 predecessor identities selected from the pinned current 978-pair inventory by excluding the exact reconciled 25 added PatternedFront identities; no retry, source mutation, existing task/process action, provider activation, or hold clearance"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

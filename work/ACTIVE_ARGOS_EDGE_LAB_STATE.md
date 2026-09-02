@@ -9595,3 +9595,22 @@ is signed and fully gated but not published. All holds remain.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R32T1_SIGNED_RESIDUE_ALIGNMENT_VALIDATION_READY_CHECKPOINT_20260901.md`,
 SHA-256 `A108D9F4A83205BACBD9F4D19C88AFAD5B1AC02276554FBF96B47530467F4434`.
+
+## OCV-03 O3B21 R32C953L1 signed exact-953 corpus ready — 2026-09-01
+
+Disposition: `PENDING_GATE`
+
+R32T1 passed the exact residue-bearing Slot03 alignment at 89.638289 degrees,
+0.044491 degrees from the locked baseline, with one retained pair and the
+134.337-degree residue response excluded. Fresh request
+`REQ_20260902T002021713Z_1A03204809E3`, ZIP
+`AADEA88B0D3EE28743A2A73A573BB92565EE8197D92A151855AE24D8714BEBB8`,
+is signed and fully gated for one exact-frozen-953 R32/R13 review-only corpus.
+The package verifies the pinned current 978 inventory and exact identity/path
+set, excludes only the reconciled 25 added PatternedFront identities, and
+fails closed unless 953 remain. All 95 detector and seven selector tests pass.
+It is not published. All holds and no-retry artifacts remain.
+
+Checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R32C953L1_SIGNED_EXACT_953_CORPUS_READY_CHECKPOINT_20260901.md`,
+SHA-256 `6EFCE5E6DD501293B441FDE5AFA438DF6D135464A1CC58C7956F769A5122AFA7`.

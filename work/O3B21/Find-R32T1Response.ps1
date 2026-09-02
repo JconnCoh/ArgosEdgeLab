@@ -1,0 +1,14 @@
+#Requires -Version 5.1
+[CmdletBinding()]
+param([switch]$Preflight)
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+if(-not$Preflight){throw 'R32T1 response discovery is preflight-only.'}
+function Sha([string]$Path){$stream=[IO.File]::Open($Path,[IO.FileMode]::Open,[IO.FileAccess]::Read,[IO.FileShare]::ReadWrite);$hash=[Security.Cryptography.SHA256]::Create();try{return([BitConverter]::ToString($hash.ComputeHash($stream))).Replace('-','')}finally{$hash.Dispose();$stream.Dispose()}}
+$requestId='REQ_20260902T000345586Z_B6D71E241DEC';$publishedUtc=[DateTime]::Parse('2026-09-02T00:10:31.0260213Z').ToUniversalTime();$cohortStartUtc=$publishedUtc.AddMinutes(-1);$root='U:\ProjectPortalRO\responses'
+if(-not(Test-Path -LiteralPath $root -PathType Container)){throw 'R32T1 response root unavailable.'}
+$candidates=New-Object Collections.Generic.List[string];foreach($path in [IO.Directory]::EnumerateFiles($root,'*.ready.zip',[IO.SearchOption]::TopDirectoryOnly)){$item=Get-Item -LiteralPath $path;if($item.LastWriteTimeUtc-lt$cohortStartUtc){continue};$candidates.Add($item.FullName);if($candidates.Count-ge21){break}}
+if($candidates.Count-gt20){throw 'R32T1 post-publication response cohort exceeded 20 ZIPs.'}
+Add-Type -AssemblyName System.IO.Compression.FileSystem;$matches=New-Object Collections.Generic.List[object];foreach($path in @($candidates)){$item=Get-Item -LiteralPath $path;$archive=[IO.Compression.ZipFile]::OpenRead($item.FullName);try{$entry=$archive.GetEntry('PORTAL_RESPONSE_MANIFEST.json');if($null-eq$entry-or$entry.Length-gt65536){continue};$reader=New-Object IO.StreamReader($entry.Open(),[Text.Encoding]::UTF8,$true);try{$manifest=$reader.ReadToEnd()|ConvertFrom-Json}finally{$reader.Dispose()};if([string]$manifest.requestId-eq$requestId){$matches.Add([pscustomobject]@{responseId=[string]$manifest.responseId;requestId=[string]$manifest.requestId;sourceRole=[string]$manifest.sourceRole;endpointState=[string]$manifest.state;sourceZip=$item.FullName;sourceZipBytes=[int64]$item.Length;sourceZipSha256=Sha $item.FullName;lastWriteUtc=$item.LastWriteTimeUtc.ToString('o');manifestEntryBytes=[int64]$entry.Length})}}finally{$archive.Dispose()}}
+if($matches.Count-gt1){throw 'R32T1 found multiple matching response ZIPs.'}
+[ordered]@{schema='argos_o3b21_r32t1_response_discovery_v1';observedUtc=[DateTime]::UtcNow.ToString('o');state=if($matches.Count-eq1){'PASS_R32T1_ONE_MATCHING_RESPONSE_LOCATED'}else{'PENDING_R32T1_MATCHING_RESPONSE'};requestId=$requestId;publishedUtc=$publishedUtc.ToString('o');boundedCandidateZipCount=$candidates.Count;matchingResponseCount=$matches.Count;match=if($matches.Count-eq1){$matches[0]}else{$null};remoteMutationsPerformed=$false;requestRepublished=$false;requestRetryAuthorized=$false;imageBytesRead=$false;existingProcessesQueried=$false;taskActions=0;providerActivated=$false;reviewOnly=$true;productionRoutingEnabled=$false}|ConvertTo-Json -Depth 8
