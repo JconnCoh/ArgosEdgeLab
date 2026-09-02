@@ -1,0 +1,146 @@
+{
+  "schema": "argos_opencv_scribe_alphabet_harvest_input_v1",
+  "revision": "ARGOS_OPENCV_SCRIBE_R13A_METADATA_HARVEST_20260902",
+  "classification": "LOCKED_INPUT",
+  "evidence": {
+    "signedAuditGate": {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_READ_ONLY_LIVE_AUDIT_PASS_20260821.json",
+      "sha256": "D914EFB748932FE4C4CF4D5192C6DF0E63A64F8D25E1CA2D6047E9464B25B497",
+      "schema": "argos_all_valid_inspections_read_only_live_audit_v1",
+      "state": "PASS_SIGNED_READ_ONLY_LIVE_AUDIT"
+    },
+    "response": {
+      "responseId": "R_E3DAC141D1B8_20260821204234226_d8edfaff",
+      "state": "PASS_DATA_PULL",
+      "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+      "zipPath": "C:/L586R2/R_E3DAC141D1B8_20260821204234226_d8edfaff.ready.zip",
+      "zipBytes": 485146,
+      "zipSha256": "229C9B649716BF37883563DCC16B4DC69C3285A7D5F8546EBB248F04F92574BC",
+      "payloadMember": "DATA_PULL_PAYLOAD.zip"
+    },
+    "overlay": {
+      "member": "data/JBOD_PROCESSOR_REVIEW/identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json",
+      "bytes": 884842,
+      "sha256": "FFB1F4D0084BDF198AFE66403F26B4405D2FC9F0C4F98489E0865F7E46F2EB10",
+      "schema": "argos_confirmed_scribe_overlay_v1",
+      "state": "CONFIRMED_REVIEW_ONLY",
+      "expectedRows": 795,
+      "expectedConfirmedScribes": 319
+    },
+    "catalog": {
+      "member": "data/JBOD_PROCESSOR_REVIEW/catalog/ALL_WAFER_CATALOG.json",
+      "bytes": 12415878,
+      "sha256": "DE957D63D512F90412B6DB59A7C982629183787811EC2D70190B9D07C366AA5B",
+      "schema": "argos_jbod_all_wafer_catalog_v1",
+      "scanMethod": "FILENAME_METADATA_AND_54_BYTE_BMP_HEADER_ONLY",
+      "detectorExecution": "ROUTE_ONLY_NO_DETECTOR_EXECUTION",
+      "expectedAcquisitions": 1932,
+      "expectedFrontsideAcquisitions": 966
+    }
+  },
+  "frozenReferenceManifest": {
+    "path": "work/SCRIBE_REVIEW_ONLY/scratch/SCRIBE_READER_V5_MERGED_REFERENCES_20260806T203000Z/PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "sha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "schema": "argos_portable_scribe_glyph_references_v1",
+    "expectedCount": 456,
+    "expectedMissingLabels": "IJKOQVWXYZ"
+  },
+  "referenceAdmissionContract": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/UNIVERSAL_REFERENCE_ADMISSION_CHECKPOINT_20260807.md",
+    "sha256": "8DD1012F9F3E2FF9947AA70408E94D8BC32C0F084D2CE3C28E35225B9772D495"
+  },
+  "plannerPin": {
+    "path": "work/OPENCV_SCRIBE_R13A/Plan-ArgosOpenCvScribeAlphabetHarvest.py",
+    "sha256": "75B5C088FE112E88494F5EE58476EDF2CE204FC8FB1B5270E0ABFD8EF1F6A631"
+  },
+  "providerPins": [
+    {
+      "path": "work/OPENCV_SCRIBE_R11A/ArgosOpenCvScribeV1R11.py",
+      "sha256": "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R11A/R11A_CONFIGURATION.json",
+      "sha256": "82FD4B420F23BD254CB906CBA8E0B6753F4052F5EE92063689EB43DF11157DC2"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R12B/Run-ArgosOpenCvScribeR12BBlobTopology.py",
+      "sha256": "D670CFCE64BF5FDF5307E69ED69A05CB7B404A78B521AB889C7F35044D666FDC"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R12B/R12B_LOCAL_GATE.json",
+      "sha256": "766DAD71D1276EA6B2BE82ED1077B160553172B9093FC811F707B414AF57E0B2"
+    }
+  ],
+  "localDevelopmentFixtures": [
+    {
+      "caseId": "POST2_S17",
+      "physicalIdentity": "62546-481_POST2_SLOT17",
+      "lotFamily": "62546-481",
+      "truth": "6KB71041XDE5",
+      "truthRecord": {
+        "path": "work/OPENCV_SCRIBE_R12B/S17_OPERATOR_CONFIRMED_REGRESSION.json",
+        "sha256": "B8CCC273321F15FA03C7F1025500585ECC14562A79A723033767B50679BBECEC"
+      },
+      "sourceMapping": {
+        "path": "work/OPENCV_SCRIBE_R10P2B/Stage-R10P2BPost2Pairs.ps1",
+        "sha256": "5C6D98D1CA94EFD05ED6C61D3300EFA51DECA04D80129B9D438A23C4B154D099"
+      },
+      "channels": {
+        "FRONTSIDE_BF": {
+          "localPath": "C:/P2COHORT/S17B.bmp",
+          "originalPath": "D:/KLARFExport/PST_BRKFULLMETAL/Lot_Lot_62546-481_POST2/Lot_62546-481_POST2/Slot17/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+          "sha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94"
+        },
+        "FRONTSIDE_DF": {
+          "localPath": "C:/P2COHORT/S17D.bmp",
+          "originalPath": "D:/KLARFExport/PST_BRKFULLMETAL/Lot_Lot_62546-481_POST2/Lot_62546-481_POST2/Slot17/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+          "sha256": "9AB0AA6942948F54635C51B173618FC8478C75791E9F859FDD135FFDE52C153C"
+        }
+      }
+    }
+  ],
+  "expectedRemoteDevelopmentPhysicalIdentities": [
+    "62625-956_20260729122701_Slot16"
+  ],
+  "expectedConfirmedCoverableLabels": "JKQX",
+  "expectedNoConfirmedExampleLabels": "IOVWYZ",
+  "validationCohort": [
+    {
+      "physicalIdentity": "62625-956_20260729122701_Slot20",
+      "targetCharacters": ["J", "Q"]
+    },
+    {
+      "physicalIdentity": "62546-481_20260707164232_Slot25",
+      "targetCharacters": ["K"]
+    },
+    {
+      "physicalIdentity": "62625-907-PRE_20260709123021_Slot18",
+      "targetCharacters": ["X"]
+    }
+  ],
+  "selectionPolicy": {
+    "alphabet": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "productionLotRegex": "^\\d{5}-\\d{3}(?:-[A-Z0-9]+)*$",
+    "requiredDomain": "FRONTSIDE",
+    "requiredChannels": ["FRONTSIDE_BF", "FRONTSIDE_DF"],
+    "requiredHeaderState": "BMP_HEADER_VALID",
+    "requiredIdentityState": "HUMAN_CONFIRMED_REVIEW_ONLY",
+    "requiredOperatorDisposition": "CONFIRMED_VISIBLE_STRING",
+    "remoteDevelopmentSelection": "GREEDY_MAXIMUM_UNCOVERED_LABELS_THEN_EARLIEST_SCAN_THEN_IDENTITY",
+    "validationSelection": "PINNED_MINIMUM_SOURCE_COHORT_WITH_EXACT_ACQUISITION_AND_STRING_SELF_EXCLUSION",
+    "cellIndexing": "ONE_BASED_LEFT_TO_RIGHT",
+    "maximumActiveVariantsPerLabel": 24
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingAuthorized": false,
+    "trainingEligible": false,
+    "trainingExecuted": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false,
+    "portalPublicationAuthorizedByThisInput": false,
+    "jbodExecutionAuthorizedByThisInput": false
+  }
+}

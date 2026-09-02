@@ -1,0 +1,309 @@
+{
+  "schema": "argos_opencv_scribe_candidate_glyph_manifest_v1",
+  "revision": "ARGOS_OPENCV_SCRIBE_R13A_S17_LOCAL_CANDIDATES_20260902",
+  "classification": "PENDING_GATE",
+  "state": "LOCAL_CANDIDATES_EXTRACTED_AWAITING_INDEPENDENT_PHYSICAL_VALIDATION",
+  "caseId": "POST2_S17",
+  "physicalIdentity": "62546-481_POST2_SLOT17",
+  "operatorConfirmedString": "6KB71041XDE5",
+  "targetLabels": [
+    "K",
+    "X"
+  ],
+  "candidateCount": 2,
+  "inputEvidence": {
+    "harvestInputPath": "work/OPENCV_SCRIBE_R13A/R13A_ALPHABET_HARVEST_INPUT.json",
+    "harvestInputSha256": "EBE19AF2023F26B413D760857C57AC6E9A43E0AC00C68C7FC107EBDCAB647FE7",
+    "harvestPlanPath": "work/OPENCV_SCRIBE_R13A/R13A_ALPHABET_HARVEST_PLAN.json",
+    "harvestPlanSha256": "7F1F9DB9582E57B2F7608DEE013F969B6A1C25FD227DC8CB7A88BB15910DE2D1",
+    "extractorPath": "work/OPENCV_SCRIBE_R13A/Extract-ArgosOpenCvScribeCandidateCells.py",
+    "extractorSha256": "CC8D87C0D228D2E2BED942CA2DF2F8248756B7B1F3D060B09A64777AEF43C90A",
+    "truthRecordPath": "work/OPENCV_SCRIBE_R12B/S17_OPERATOR_CONFIRMED_REGRESSION.json",
+    "truthRecordSha256": "B8CCC273321F15FA03C7F1025500585ECC14562A79A723033767B50679BBECEC",
+    "detectorResultPath": "C:\\P2COHORT\\results\\R12B_BLOB_TOPOLOGY_LOCKED_20260902\\S17\\result.json",
+    "detectorResultSha256": "05500C9BEE17F4A1736795ADDCFA618A78E6B0D6C25E08D665D24EF679D6667E",
+    "blobRasterPath": "C:\\P2COHORT\\results\\R12B_BLOB_TOPOLOGY_LOCKED_20260902\\S17\\BF_FORWARD_blobs.png",
+    "blobRasterSha256": "9C7378101E507DD308F0CEA56D61BE41048B1FE576072D0FB1F517A8547F71D4",
+    "sourceWaferImageBytesReadByExtractor": false,
+    "blobRasterBytesReadByExtractor": true
+  },
+  "sourceImageEvidence": {
+    "FRONTSIDE_BF": {
+      "path": "C:/P2COHORT/S17B.bmp",
+      "sha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94",
+      "byteState": "PINNED_NOT_REREAD_BY_CANDIDATE_EXTRACTOR"
+    },
+    "FRONTSIDE_DF": {
+      "path": "C:/P2COHORT/S17D.bmp",
+      "sha256": "9AB0AA6942948F54635C51B173618FC8478C75791E9F859FDD135FFDE52C153C",
+      "byteState": "PINNED_NOT_REREAD_BY_CANDIDATE_EXTRACTOR"
+    }
+  },
+  "selectedGrid": {
+    "channel": "BF",
+    "direction": "FORWARD",
+    "x": 207,
+    "y": 61,
+    "cellWidth": 97,
+    "cellHeight": 210,
+    "cellCount": 12,
+    "relativePath": "selected_grid.png",
+    "sha256": "D7E63122DF62D0711420DF629454014BEB0157754B14FC232B6B5E8699814507",
+    "foregroundPixels": 10912
+  },
+  "normalization": {
+    "implementation": "OPENCV_CENTER_CROP_OR_ZERO_PAD_NO_RESAMPLING",
+    "outputWidth": 96,
+    "outputHeight": 230,
+    "outputChannels": 3,
+    "opencvVersion": "5.0.0",
+    "numpyVersion": "2.5.2"
+  },
+  "auditCells": [
+    {
+      "position": 1,
+      "label": "6",
+      "relativePath": "cells/P01_6.png",
+      "sha256": "A85D87C7CF7A6FEF815CB3CA7EFD75B8CE7EDF010F4EACAE58E58967668F3D2B",
+      "sourceBounds": {
+        "x": 207,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 2,
+      "label": "K",
+      "relativePath": "cells/P02_K.png",
+      "sha256": "BE5A4EDBEE6C69B19FC4BFB28FDE55AB0F24A1A1F3E80F41701E8A57769C75CB",
+      "sourceBounds": {
+        "x": 304,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 3,
+      "label": "B",
+      "relativePath": "cells/P03_B.png",
+      "sha256": "E160495C321DF505D1A825FEB8A9F8E3A1AB3C6FC54AFEBB80D248DEF76BF254",
+      "sourceBounds": {
+        "x": 401,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 4,
+      "label": "7",
+      "relativePath": "cells/P04_7.png",
+      "sha256": "211EB0BE6B68988F9BE4B18A0C6D771CC41586A1E7BA2755DC92F3911B6A7147",
+      "sourceBounds": {
+        "x": 498,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 5,
+      "label": "1",
+      "relativePath": "cells/P05_1.png",
+      "sha256": "37B7A1F95E5D72427C10BB60EF2D0B6EB084144059E51083C727FB72A6BDCB9A",
+      "sourceBounds": {
+        "x": 595,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 6,
+      "label": "0",
+      "relativePath": "cells/P06_0.png",
+      "sha256": "9C4991AF29DBD620DB626B4EDE3FCF45942A299D36528DBDF56BCDC8A584D112",
+      "sourceBounds": {
+        "x": 692,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 7,
+      "label": "4",
+      "relativePath": "cells/P07_4.png",
+      "sha256": "33D4C34B140E82F94A92D20D5C3B31EF426F791B1902B25B18C999A676C705C4",
+      "sourceBounds": {
+        "x": 789,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 8,
+      "label": "1",
+      "relativePath": "cells/P08_1.png",
+      "sha256": "FB76D3C5FDD47781169A30566E161CB1BB79ED346B4AD3A15E3BAAB7CBDD0D7A",
+      "sourceBounds": {
+        "x": 886,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 9,
+      "label": "X",
+      "relativePath": "cells/P09_X.png",
+      "sha256": "B862D1376246DF8E05E9A94990F5AF492FE72E2D789C7F56A002A9A0976680B1",
+      "sourceBounds": {
+        "x": 983,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 10,
+      "label": "D",
+      "relativePath": "cells/P10_D.png",
+      "sha256": "3A8DED6EE74A736BD53AE3AA5432752BEEECA6361FA61AD86347AC1AD37EE7E7",
+      "sourceBounds": {
+        "x": 1080,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 11,
+      "label": "E",
+      "relativePath": "cells/P11_E.png",
+      "sha256": "45E5DD664E0B9A16E0895A58A8D98BDA14B152E4FF63585535F9747DE4F95A0F",
+      "sourceBounds": {
+        "x": 1177,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 12,
+      "label": "5",
+      "relativePath": "cells/P12_5.png",
+      "sha256": "D6F60EEAC2114C45DB10A4F54BDA3B46A448B6CB6E1F9970AA2298C748028791",
+      "sourceBounds": {
+        "x": 1274,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    }
+  ],
+  "candidateReferences": [
+    {
+      "position": 2,
+      "label": "K",
+      "relativePath": "cells/P02_K.png",
+      "sha256": "BE5A4EDBEE6C69B19FC4BFB28FDE55AB0F24A1A1F3E80F41701E8A57769C75CB",
+      "sourceBounds": {
+        "x": 304,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3,
+      "physicalIdentity": "62546-481_POST2_SLOT17",
+      "source": "OPERATOR_CONFIRMED_R12B_BLOB_GRID_LOCAL_CANDIDATE",
+      "labelAuthority": "OPERATOR_CONFIRMED_VISIBLE_STRING",
+      "exactAcquisitionSelfExclusionRequired": true,
+      "referenceAdmissionEligible": false,
+      "trainingEligible": false
+    },
+    {
+      "position": 9,
+      "label": "X",
+      "relativePath": "cells/P09_X.png",
+      "sha256": "B862D1376246DF8E05E9A94990F5AF492FE72E2D789C7F56A002A9A0976680B1",
+      "sourceBounds": {
+        "x": 983,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3,
+      "physicalIdentity": "62546-481_POST2_SLOT17",
+      "source": "OPERATOR_CONFIRMED_R12B_BLOB_GRID_LOCAL_CANDIDATE",
+      "labelAuthority": "OPERATOR_CONFIRMED_VISIBLE_STRING",
+      "exactAcquisitionSelfExclusionRequired": true,
+      "referenceAdmissionEligible": false,
+      "trainingEligible": false
+    }
+  ],
+  "admission": {
+    "frozenReferenceManifestMutated": false,
+    "candidateNamespaceOnly": true,
+    "maximumActiveVariantsPerLabel": 24,
+    "exactAcquisitionSelfExclusionRequired": true,
+    "freshPhysicalWaferValidationRequired": true,
+    "validationSourcesMayContributeReferences": false,
+    "referenceAdmissionEligible": false,
+    "operatorConfirmationRemainsRequired": true
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingAuthorized": false,
+    "trainingEligible": false,
+    "trainingExecuted": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  },
+  "nextAction": "ACQUIRE_PINNED_REMOTE_DEVELOPMENT_AND_WITHHELD_VALIDATION_CROPS_AFTER_EXPLICIT_PUBLISH"
+}

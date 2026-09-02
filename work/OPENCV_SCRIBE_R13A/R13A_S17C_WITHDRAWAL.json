@@ -1,0 +1,50 @@
+{
+  "schema": "argos_opencv_scribe_candidate_withdrawal_v1",
+  "revision": "ARGOS_OPENCV_SCRIBE_R13A_S17C_WITHDRAWAL_20260902",
+  "classification": "WITHDRAWN",
+  "state": "WITHDRAWN_REFERENCE_LOADER_POLARITY_MISMATCH",
+  "artifactRoot": "work/OPENCV_SCRIBE_R13A/S17C_20260902",
+  "candidateManifestSha256": "6D918440BF02865A20BC4B0BDCBD9E9FB89334EBD01D227DB71ECF4CE3EF1664",
+  "extractorSha256": "CC8D87C0D228D2E2BED942CA2DF2F8248756B7B1F3D060B09A64777AEF43C90A",
+  "cause": "The source blob canvas and emitted cells use white dots on black, while the unchanged R11 reference loader applies dark_residual_exact to ordinary dark-on-light glyph rasters.",
+  "measuredDescriptorCosine": {
+    "K": {
+      "withdrawnLoaderPath": 0.63867,
+      "polarityCorrectedDiagnostic": 0.99852
+    },
+    "X": {
+      "withdrawnLoaderPath": 0.45324,
+      "polarityCorrectedDiagnostic": 0.99827
+    }
+  },
+  "candidateReferences": [
+    {
+      "label": "K",
+      "path": "work/OPENCV_SCRIBE_R13A/S17C_20260902/cells/P02_K.png",
+      "sha256": "BE5A4EDBEE6C69B19FC4BFB28FDE55AB0F24A1A1F3E80F41701E8A57769C75CB"
+    },
+    {
+      "label": "X",
+      "path": "work/OPENCV_SCRIBE_R13A/S17C_20260902/cells/P09_X.png",
+      "sha256": "B862D1376246DF8E05E9A94990F5AF492FE72E2D789C7F56A002A9A0976680B1"
+    }
+  ],
+  "disposition": {
+    "referenceAdmissionEligible": false,
+    "trainingEligible": false,
+    "validationEligible": false,
+    "reusableAsTemplate": false,
+    "frozenReferenceManifestMutated": false,
+    "replacementNamespace": "work/OPENCV_SCRIBE_R13A/S17D_20260902"
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingAuthorized": false,
+    "trainingEligible": false,
+    "trainingExecuted": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}

@@ -1,0 +1,664 @@
+{
+  "schema": "argos_opencv_scribe_alphabet_harvest_plan_v1",
+  "revision": "ARGOS_OPENCV_SCRIBE_R13A_METADATA_HARVEST_20260902",
+  "classification": "PENDING_GATE",
+  "disposition": "HOLD_EXPLICIT_PUBLISH_FOR_BOUNDED_REMOTE_CROP_ACQUISITION",
+  "evidence": {
+    "inputDocumentSha256": "EBE19AF2023F26B413D760857C57AC6E9A43E0AC00C68C7FC107EBDCAB647FE7",
+    "plannerSha256": "75B5C088FE112E88494F5EE58476EDF2CE204FC8FB1B5270E0ABFD8EF1F6A631",
+    "signedResponseId": "R_E3DAC141D1B8_20260821204234226_d8edfaff",
+    "signedResponseZipSha256": "229C9B649716BF37883563DCC16B4DC69C3285A7D5F8546EBB248F04F92574BC",
+    "overlaySha256": "FFB1F4D0084BDF198AFE66403F26B4405D2FC9F0C4F98489E0865F7E46F2EB10",
+    "catalogSha256": "DE957D63D512F90412B6DB59A7C982629183787811EC2D70190B9D07C366AA5B",
+    "frozenReferenceManifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "referenceAdmissionContractPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/UNIVERSAL_REFERENCE_ADMISSION_CHECKPOINT_20260807.md",
+    "referenceAdmissionContractSha256": "8DD1012F9F3E2FF9947AA70408E94D8BC32C0F084D2CE3C28E35225B9772D495",
+    "verificationState": "PASS_ALL_PINNED_METADATA_BYTES",
+    "waferImageBytesReadByPlanner": false
+  },
+  "population": {
+    "overlayRows": 795,
+    "humanConfirmedReviewOnlyRows": 731,
+    "catalogAcquisitions": 1932,
+    "frontsideCatalogAcquisitions": 966,
+    "eligibleMissingLabelCandidateRows": 157
+  },
+  "referenceCoverage": {
+    "frozenReferenceCount": 456,
+    "coveredLabels": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "L",
+      "M",
+      "N",
+      "P",
+      "R",
+      "S",
+      "T",
+      "U"
+    ],
+    "missingGenericLabels": [
+      "I",
+      "J",
+      "K",
+      "O",
+      "Q",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z"
+    ],
+    "confirmedCoverableNow": [
+      "J",
+      "K",
+      "Q",
+      "X"
+    ],
+    "noConfirmedExampleInOverlay": [
+      "I",
+      "O",
+      "V",
+      "W",
+      "Y",
+      "Z"
+    ],
+    "absenceMeaning": "CATALOG_COVERAGE_GAP_ONLY_NOT_PROOF_OF_THE_PRODUCTION_ALPHABET"
+  },
+  "missingLabelAudit": [
+    {
+      "label": "I",
+      "allOverlayRowsContaining": 0,
+      "humanConfirmedRowsContaining": 0,
+      "eligibleStableProductionPairRowsContaining": 0,
+      "uniqueConfirmedScribes": 0,
+      "eligibleLotFamilies": [],
+      "state": "NO_CONFIRMED_EXAMPLE_IN_795_ROW_OVERLAY"
+    },
+    {
+      "label": "J",
+      "allOverlayRowsContaining": 28,
+      "humanConfirmedRowsContaining": 28,
+      "eligibleStableProductionPairRowsContaining": 28,
+      "uniqueConfirmedScribes": 18,
+      "eligibleLotFamilies": [
+        "62625-956",
+        "62627-098",
+        "62627-127"
+      ],
+      "state": "CONFIRMED_EXAMPLES_READY_FOR_SOURCE_HASH_AND_CROP_ACQUISITION"
+    },
+    {
+      "label": "K",
+      "allOverlayRowsContaining": 128,
+      "humanConfirmedRowsContaining": 128,
+      "eligibleStableProductionPairRowsContaining": 111,
+      "uniqueConfirmedScribes": 12,
+      "eligibleLotFamilies": [
+        "62546-481"
+      ],
+      "state": "CONFIRMED_EXAMPLES_READY_FOR_SOURCE_HASH_AND_CROP_ACQUISITION"
+    },
+    {
+      "label": "O",
+      "allOverlayRowsContaining": 0,
+      "humanConfirmedRowsContaining": 0,
+      "eligibleStableProductionPairRowsContaining": 0,
+      "uniqueConfirmedScribes": 0,
+      "eligibleLotFamilies": [],
+      "state": "NO_CONFIRMED_EXAMPLE_IN_795_ROW_OVERLAY"
+    },
+    {
+      "label": "Q",
+      "allOverlayRowsContaining": 6,
+      "humanConfirmedRowsContaining": 6,
+      "eligibleStableProductionPairRowsContaining": 4,
+      "uniqueConfirmedScribes": 6,
+      "eligibleLotFamilies": [
+        "62625-956"
+      ],
+      "state": "CONFIRMED_EXAMPLES_READY_FOR_SOURCE_HASH_AND_CROP_ACQUISITION"
+    },
+    {
+      "label": "V",
+      "allOverlayRowsContaining": 0,
+      "humanConfirmedRowsContaining": 0,
+      "eligibleStableProductionPairRowsContaining": 0,
+      "uniqueConfirmedScribes": 0,
+      "eligibleLotFamilies": [],
+      "state": "NO_CONFIRMED_EXAMPLE_IN_795_ROW_OVERLAY"
+    },
+    {
+      "label": "W",
+      "allOverlayRowsContaining": 0,
+      "humanConfirmedRowsContaining": 0,
+      "eligibleStableProductionPairRowsContaining": 0,
+      "uniqueConfirmedScribes": 0,
+      "eligibleLotFamilies": [],
+      "state": "NO_CONFIRMED_EXAMPLE_IN_795_ROW_OVERLAY"
+    },
+    {
+      "label": "X",
+      "allOverlayRowsContaining": 23,
+      "humanConfirmedRowsContaining": 23,
+      "eligibleStableProductionPairRowsContaining": 18,
+      "uniqueConfirmedScribes": 5,
+      "eligibleLotFamilies": [
+        "62546-481",
+        "62625-907"
+      ],
+      "state": "CONFIRMED_EXAMPLES_READY_FOR_SOURCE_HASH_AND_CROP_ACQUISITION"
+    },
+    {
+      "label": "Y",
+      "allOverlayRowsContaining": 0,
+      "humanConfirmedRowsContaining": 0,
+      "eligibleStableProductionPairRowsContaining": 0,
+      "uniqueConfirmedScribes": 0,
+      "eligibleLotFamilies": [],
+      "state": "NO_CONFIRMED_EXAMPLE_IN_795_ROW_OVERLAY"
+    },
+    {
+      "label": "Z",
+      "allOverlayRowsContaining": 0,
+      "humanConfirmedRowsContaining": 0,
+      "eligibleStableProductionPairRowsContaining": 0,
+      "uniqueConfirmedScribes": 0,
+      "eligibleLotFamilies": [],
+      "state": "NO_CONFIRMED_EXAMPLE_IN_795_ROW_OVERLAY"
+    }
+  ],
+  "development": {
+    "localPinnedSources": [
+      {
+        "caseId": "POST2_S17",
+        "physicalIdentity": "62546-481_POST2_SLOT17",
+        "lotFamily": "62546-481",
+        "confirmedScribe": "6KB71041XDE5",
+        "targetCharacters": [
+          "K",
+          "X"
+        ],
+        "targetPositions": {
+          "K": [
+            2
+          ],
+          "X": [
+            9
+          ]
+        },
+        "channels": {
+          "FRONTSIDE_BF": {
+            "localPath": "C:/P2COHORT/S17B.bmp",
+            "originalPath": "D:/KLARFExport/PST_BRKFULLMETAL/Lot_Lot_62546-481_POST2/Lot_62546-481_POST2/Slot17/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "expectedSha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94",
+            "sourceByteState": "PINNED_NOT_REREAD_BY_METADATA_PLANNER"
+          },
+          "FRONTSIDE_DF": {
+            "localPath": "C:/P2COHORT/S17D.bmp",
+            "originalPath": "D:/KLARFExport/PST_BRKFULLMETAL/Lot_Lot_62546-481_POST2/Lot_62546-481_POST2/Slot17/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "expectedSha256": "9AB0AA6942948F54635C51B173618FC8478C75791E9F859FDD135FFDE52C153C",
+            "sourceByteState": "PINNED_NOT_REREAD_BY_METADATA_PLANNER"
+          }
+        },
+        "admissionState": "LOCAL_CANDIDATE_EXTRACTION_NOT_YET_RUN"
+      }
+    ],
+    "remoteSources": [
+      {
+        "physicalIdentity": "62625-956_20260729122701_Slot16",
+        "lot": "62625-956",
+        "lotFamily": "62625-956",
+        "slot": "Slot16",
+        "scanTimestampLocal": "2026-07-29T12:27:01",
+        "confirmedScribe": "147JQ122SUB6",
+        "targetCharacters": [
+          "J",
+          "Q"
+        ],
+        "targetPositions": {
+          "J": [
+            4
+          ],
+          "Q": [
+            5
+          ]
+        },
+        "sourceResponse": "C:\\Users\\lwm\\Downloads\\SCRIBE_VERIFICATION_RESPONSE (14).json",
+        "channels": {
+          "FRONTSIDE_BF": {
+            "path": "D:\\KLARFExport\\BackSide_BowComp\\Lot_62625-956\\62625-956_20260729122701\\Slot16\\BrightfieldFrontsideWafer\\resizedImage\\62625-956_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          },
+          "FRONTSIDE_DF": {
+            "path": "D:\\KLARFExport\\BackSide_BowComp\\Lot_62625-956\\62625-956_20260729122701\\Slot16\\DarkfieldFrontsideWafer\\resizedImage\\62625-956_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          }
+        }
+      }
+    ],
+    "coveredLabels": [
+      "J",
+      "K",
+      "Q",
+      "X"
+    ]
+  },
+  "independentValidation": {
+    "minimumSourcePinnedCohort": [
+      {
+        "physicalIdentity": "62625-956_20260729122701_Slot20",
+        "lot": "62625-956",
+        "lotFamily": "62625-956",
+        "slot": "Slot20",
+        "scanTimestampLocal": "2026-07-29T12:27:01",
+        "confirmedScribe": "147JQ117SUD6",
+        "targetCharacters": [
+          "J",
+          "Q"
+        ],
+        "targetPositions": {
+          "J": [
+            4
+          ],
+          "Q": [
+            5
+          ]
+        },
+        "sourceResponse": "C:\\Users\\lwm\\Downloads\\SCRIBE_VERIFICATION_RESPONSE (15).json",
+        "channels": {
+          "FRONTSIDE_BF": {
+            "path": "D:\\KLARFExport\\BackSide_BowComp\\Lot_62625-956\\62625-956_20260729122701\\Slot20\\BrightfieldFrontsideWafer\\resizedImage\\62625-956_Slot20_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          },
+          "FRONTSIDE_DF": {
+            "path": "D:\\KLARFExport\\BackSide_BowComp\\Lot_62625-956\\62625-956_20260729122701\\Slot20\\DarkfieldFrontsideWafer\\resizedImage\\62625-956_Slot20_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          }
+        },
+        "independenceByCharacter": {
+          "J": {
+            "differentPhysicalAcquisition": true,
+            "differentConfirmedString": true,
+            "differentLotFamily": false,
+            "differentCellPosition": false,
+            "differentLotFamilyAvailableInEligiblePool": true
+          },
+          "Q": {
+            "differentPhysicalAcquisition": true,
+            "differentConfirmedString": true,
+            "differentLotFamily": false,
+            "differentCellPosition": false,
+            "differentLotFamilyAvailableInEligiblePool": false
+          }
+        }
+      },
+      {
+        "physicalIdentity": "62546-481_20260707164232_Slot25",
+        "lot": "62546-481",
+        "lotFamily": "62546-481",
+        "slot": "Slot25",
+        "scanTimestampLocal": "2026-07-07T16:42:32",
+        "confirmedScribe": "13DCK076SUG1",
+        "targetCharacters": [
+          "K"
+        ],
+        "targetPositions": {
+          "K": [
+            5
+          ]
+        },
+        "sourceResponse": "C:\\Users\\lwm\\Downloads\\SCRIBE_VERIFICATION_RESPONSE (34).json",
+        "channels": {
+          "FRONTSIDE_BF": {
+            "path": "D:\\KLARFExport\\PST_BRKFULLMETAL\\Lot_62546-481\\62546-481\\Slot25\\BrightfieldFrontsideWafer\\resizedImage\\62546-481_Slot25_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          },
+          "FRONTSIDE_DF": {
+            "path": "D:\\KLARFExport\\PST_BRKFULLMETAL\\Lot_62546-481\\62546-481\\Slot25\\DarkfieldFrontsideWafer\\resizedImage\\62546-481_Slot25_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          }
+        },
+        "independenceByCharacter": {
+          "K": {
+            "differentPhysicalAcquisition": true,
+            "differentConfirmedString": true,
+            "differentLotFamily": false,
+            "differentCellPosition": true,
+            "differentLotFamilyAvailableInEligiblePool": false
+          }
+        }
+      },
+      {
+        "physicalIdentity": "62625-907-PRE_20260709123021_Slot18",
+        "lot": "62625-907-PRE",
+        "lotFamily": "62625-907",
+        "slot": "Slot18",
+        "scanTimestampLocal": "2026-07-09T12:30:21",
+        "confirmedScribe": "146XF111SUG7",
+        "targetCharacters": [
+          "X"
+        ],
+        "targetPositions": {
+          "X": [
+            4
+          ]
+        },
+        "sourceResponse": "C:\\Users\\lwm\\Downloads\\SCRIBE_VERIFICATION_RESPONSE_20260807T130645Z.json",
+        "channels": {
+          "FRONTSIDE_BF": {
+            "path": "D:\\KLARFExport\\PST_BREAK_BARE\\Lot_62625-907_PRE\\62625-907_PRE\\Slot18\\BrightfieldFrontsideWafer\\resizedImage\\62625-907_PRE_Slot18_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          },
+          "FRONTSIDE_DF": {
+            "path": "D:\\KLARFExport\\PST_BREAK_BARE\\Lot_62625-907_PRE\\62625-907_PRE\\Slot18\\DarkfieldFrontsideWafer\\resizedImage\\62625-907_PRE_Slot18_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          }
+        },
+        "independenceByCharacter": {
+          "X": {
+            "differentPhysicalAcquisition": true,
+            "differentConfirmedString": true,
+            "differentLotFamily": true,
+            "differentCellPosition": true,
+            "differentLotFamilyAvailableInEligiblePool": true
+          }
+        }
+      }
+    ],
+    "exactAcquisitionSelfExclusion": true,
+    "differentConfirmedStringRequired": true,
+    "allSelectionsDifferFromDevelopmentPhysicalAcquisitions": true
+  },
+  "futureAuthorizedRemoteAcquisition": {
+    "uniquePhysicalAcquisitionCount": 4,
+    "sourceImageCount": 8,
+    "acquisitions": [
+      {
+        "physicalIdentity": "62546-481_20260707164232_Slot25",
+        "lot": "62546-481",
+        "lotFamily": "62546-481",
+        "slot": "Slot25",
+        "scanTimestampLocal": "2026-07-07T16:42:32",
+        "confirmedScribe": "13DCK076SUG1",
+        "sourceResponse": "C:\\Users\\lwm\\Downloads\\SCRIBE_VERIFICATION_RESPONSE (34).json",
+        "channels": {
+          "FRONTSIDE_BF": {
+            "path": "D:\\KLARFExport\\PST_BRKFULLMETAL\\Lot_62546-481\\62546-481\\Slot25\\BrightfieldFrontsideWafer\\resizedImage\\62546-481_Slot25_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          },
+          "FRONTSIDE_DF": {
+            "path": "D:\\KLARFExport\\PST_BRKFULLMETAL\\Lot_62546-481\\62546-481\\Slot25\\DarkfieldFrontsideWafer\\resizedImage\\62546-481_Slot25_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          }
+        },
+        "purposes": [
+          "INDEPENDENT_VALIDATION"
+        ],
+        "targetCharacters": [
+          "K"
+        ],
+        "targetPositions": {
+          "K": [
+            5
+          ]
+        }
+      },
+      {
+        "physicalIdentity": "62625-907-PRE_20260709123021_Slot18",
+        "lot": "62625-907-PRE",
+        "lotFamily": "62625-907",
+        "slot": "Slot18",
+        "scanTimestampLocal": "2026-07-09T12:30:21",
+        "confirmedScribe": "146XF111SUG7",
+        "sourceResponse": "C:\\Users\\lwm\\Downloads\\SCRIBE_VERIFICATION_RESPONSE_20260807T130645Z.json",
+        "channels": {
+          "FRONTSIDE_BF": {
+            "path": "D:\\KLARFExport\\PST_BREAK_BARE\\Lot_62625-907_PRE\\62625-907_PRE\\Slot18\\BrightfieldFrontsideWafer\\resizedImage\\62625-907_PRE_Slot18_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          },
+          "FRONTSIDE_DF": {
+            "path": "D:\\KLARFExport\\PST_BREAK_BARE\\Lot_62625-907_PRE\\62625-907_PRE\\Slot18\\DarkfieldFrontsideWafer\\resizedImage\\62625-907_PRE_Slot18_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          }
+        },
+        "purposes": [
+          "INDEPENDENT_VALIDATION"
+        ],
+        "targetCharacters": [
+          "X"
+        ],
+        "targetPositions": {
+          "X": [
+            4
+          ]
+        }
+      },
+      {
+        "physicalIdentity": "62625-956_20260729122701_Slot16",
+        "lot": "62625-956",
+        "lotFamily": "62625-956",
+        "slot": "Slot16",
+        "scanTimestampLocal": "2026-07-29T12:27:01",
+        "confirmedScribe": "147JQ122SUB6",
+        "sourceResponse": "C:\\Users\\lwm\\Downloads\\SCRIBE_VERIFICATION_RESPONSE (14).json",
+        "channels": {
+          "FRONTSIDE_BF": {
+            "path": "D:\\KLARFExport\\BackSide_BowComp\\Lot_62625-956\\62625-956_20260729122701\\Slot16\\BrightfieldFrontsideWafer\\resizedImage\\62625-956_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          },
+          "FRONTSIDE_DF": {
+            "path": "D:\\KLARFExport\\BackSide_BowComp\\Lot_62625-956\\62625-956_20260729122701\\Slot16\\DarkfieldFrontsideWafer\\resizedImage\\62625-956_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          }
+        },
+        "purposes": [
+          "DEVELOPMENT"
+        ],
+        "targetCharacters": [
+          "J",
+          "Q"
+        ],
+        "targetPositions": {
+          "J": [
+            4
+          ],
+          "Q": [
+            5
+          ]
+        }
+      },
+      {
+        "physicalIdentity": "62625-956_20260729122701_Slot20",
+        "lot": "62625-956",
+        "lotFamily": "62625-956",
+        "slot": "Slot20",
+        "scanTimestampLocal": "2026-07-29T12:27:01",
+        "confirmedScribe": "147JQ117SUD6",
+        "sourceResponse": "C:\\Users\\lwm\\Downloads\\SCRIBE_VERIFICATION_RESPONSE (15).json",
+        "channels": {
+          "FRONTSIDE_BF": {
+            "path": "D:\\KLARFExport\\BackSide_BowComp\\Lot_62625-956\\62625-956_20260729122701\\Slot20\\BrightfieldFrontsideWafer\\resizedImage\\62625-956_Slot20_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          },
+          "FRONTSIDE_DF": {
+            "path": "D:\\KLARFExport\\BackSide_BowComp\\Lot_62625-956\\62625-956_20260729122701\\Slot20\\DarkfieldFrontsideWafer\\resizedImage\\62625-956_Slot20_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+            "bytes": 475379874,
+            "widthPx": 14411,
+            "heightPx": 10995,
+            "bitsPerPixel": 24,
+            "headerState": "BMP_HEADER_VALID",
+            "stable": true,
+            "catalogSha256State": "DEFERRED_UNTIL_DETECTOR_ADMISSION",
+            "acquisitionRequirement": "HASH_SOURCE_BYTES_BEFORE_AUTHORIZED_OPENCV_DECODE"
+          }
+        },
+        "purposes": [
+          "INDEPENDENT_VALIDATION"
+        ],
+        "targetCharacters": [
+          "J",
+          "Q"
+        ],
+        "targetPositions": {
+          "J": [
+            4
+          ],
+          "Q": [
+            5
+          ]
+        }
+      }
+    ],
+    "executionMode": "READ_ONLY_OPENCV_IN_PLACE_ON_JBOD_D_DRIVE",
+    "returnScope": "ORIENTED_GRID_PLUS_12_AUDIT_CELLS_PLUS_TARGET_GLYPH_CROPS_AND_PROVENANCE_ONLY",
+    "sourceHashRequirement": "HASH_EACH_BF_DF_SOURCE_BEFORE_DECODE_AND_RETURN_EXACT_HASHES",
+    "cropHashRequirement": "RETURN_EXACT_SOURCE_TO_GRID_TO_CELL_TO_TARGET_CROP_SHA256_PROVENANCE",
+    "publicationState": "NOT_PUBLISHED_EXPLICIT_PUBLISH_REQUIRED",
+    "automaticRetry": false
+  },
+  "admissionContract": {
+    "candidateNamespaceRequired": true,
+    "frozenReferenceManifestMutationAllowed": false,
+    "canonicalHumanConfirmedTruthRequired": true,
+    "exactAcquisitionSelfExclusionRequired": true,
+    "maximumActiveVariantsPerLabel": 24,
+    "freshPhysicalWaferValidationRequired": true,
+    "validationSourcesMayContributeReferences": false,
+    "operatorConfirmationRemainsRequired": true
+  },
+  "nextAction": "OPERATOR_MUST_SAY_PUBLISH_TO_AUTHORIZE_ONE_BOUNDED_REMOTE_CROP_ACQUISITION",
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingAuthorized": false,
+    "trainingEligible": false,
+    "trainingExecuted": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false,
+    "portalPublicationAuthorizedByThisInput": false,
+    "jbodExecutionAuthorizedByThisInput": false
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "schema": "argos_opencv_scribe_alphabet_harvest_local_gate_v1",
+  "revision": "ARGOS_OPENCV_SCRIBE_R13A_METADATA_HARVEST_20260902",
+  "classification": "PENDING_GATE",
+  "state": "PASS_METADATA_SELECTION_AND_LOCAL_KX_R11_COMPATIBLE_CANDIDATES",
+  "disposition": "HOLD_EXPLICIT_PUBLISH_FOR_BOUNDED_REMOTE_CROP_ACQUISITION",
+  "artifacts": {
+    "input": {
+      "path": "work/OPENCV_SCRIBE_R13A/R13A_ALPHABET_HARVEST_INPUT.json",
+      "sha256": "EBE19AF2023F26B413D760857C57AC6E9A43E0AC00C68C7FC107EBDCAB647FE7"
+    },
+    "planner": {
+      "path": "work/OPENCV_SCRIBE_R13A/Plan-ArgosOpenCvScribeAlphabetHarvest.py",
+      "sha256": "75B5C088FE112E88494F5EE58476EDF2CE204FC8FB1B5270E0ABFD8EF1F6A631"
+    },
+    "plan": {
+      "path": "work/OPENCV_SCRIBE_R13A/R13A_ALPHABET_HARVEST_PLAN.json",
+      "sha256": "7F1F9DB9582E57B2F7608DEE013F969B6A1C25FD227DC8CB7A88BB15910DE2D1"
+    },
+    "extractor": {
+      "path": "work/OPENCV_SCRIBE_R13A/Extract-ArgosOpenCvScribeCandidateCells.py",
+      "sha256": "DF32BB561F438094A083AB28E4EC31E1DF1091C0D57952DBF8D86236E0B46B30"
+    },
+    "localCandidateManifest": {
+      "path": "work/OPENCV_SCRIBE_R13A/S17E_20260902/candidate_manifest.json",
+      "sha256": "78A0718980AFDEF5109E87B00A0884C3BEAB4EF682E8AFBA50129B260E65F8EE"
+    },
+    "withdrawnWhiteOnBlackCandidate": {
+      "path": "work/OPENCV_SCRIBE_R13A/R13A_S17C_WITHDRAWAL.json",
+      "sha256": "B7135BDA03199900F19BDDF628674E9A020AC08574AA2D4BE408C2F04FF7290D"
+    },
+    "withdrawnCoordinatePhaseCandidate": {
+      "path": "work/OPENCV_SCRIBE_R13A/R13A_S17D_WITHDRAWAL.json",
+      "sha256": "E1BAD35C39BAB7D3E9151A845CE20BDADF8A733246DCE792ED0CBBB32A5173C1"
+    },
+    "frozenReferenceManifest": {
+      "path": "work/SCRIBE_REVIEW_ONLY/scratch/SCRIBE_READER_V5_MERGED_REFERENCES_20260806T203000Z/PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+      "sha256BeforeAndAfter": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+      "mutated": false
+    }
+  },
+  "pathBudget": {
+    "policySha256": "346AD03EBB77005B5189CD81234665BCE3930F9A8B7661BFD69D85EE6AA13370",
+    "utilitySha256": "F8B0991231C213052B2FA31AAE67DB95E2C4DF831A9F717F91766318B19D4B0A",
+    "state": "PASS_PATH_BUDGET",
+    "checkedBeforeEveryOutputRootWrite": true,
+    "reservedSuffixCharacters": 32,
+    "maximumEffectiveLength": 166,
+    "hardStopEffectiveLength": 230,
+    "maximumComponentLength": 80
+  },
+  "tests": [
+    {"name": "PLANNER_PYTHON_AST_PARSE", "state": "PASS"},
+    {"name": "EXTRACTOR_PYTHON_AST_PARSE", "state": "PASS"},
+    {"name": "EXPECTED_PLAN_BYTE_EXACT_REGENERATION", "state": "PASS"},
+    {"name": "DETERMINISTIC_DOUBLE_BUILD", "state": "PASS"},
+    {"name": "AUTHORITY_TAMPER_FAIL_CLOSED", "state": "PASS"},
+    {"name": "MAXIMUM_VARIANTS_TAMPER_FAIL_CLOSED", "state": "PASS"},
+    {"name": "REQUIRED_CHANNEL_DUPLICATION_FAIL_CLOSED", "state": "PASS"},
+    {"name": "SELECTION_ALGORITHM_TOKEN_TAMPER_FAIL_CLOSED", "state": "PASS"},
+    {"name": "EXPECTED_COVERAGE_TAMPER_FAIL_CLOSED", "state": "PASS"},
+    {"name": "DEVELOPMENT_COHORT_TAMPER_FAIL_CLOSED", "state": "PASS"},
+    {"name": "VALIDATION_SELF_LEAK_FAIL_CLOSED", "state": "PASS"},
+    {"name": "PLANNER_CASE_DATA_SEPARATION", "state": "PASS"},
+    {"name": "EXTRACTOR_CASE_LOGIC_SEPARATION", "state": "PASS"},
+    {"name": "EXTRACTOR_BAD_HASH_FAILS_BEFORE_WRITE", "state": "PASS"},
+    {"name": "CANDIDATE_TREE_INTEGRITY", "state": "PASS"},
+    {"name": "R11_REFERENCE_LOADER_COMPATIBILITY", "state": "PASS", "minimumCosine": 0.995},
+    {"name": "NO_PARTIAL_OUTPUT_ROOT", "state": "PASS"},
+    {"name": "NO_PYCACHE_ARTIFACT", "state": "PASS"},
+    {"name": "GIT_DIFF_CHECK", "state": "PASS"}
+  ],
+  "population": {
+    "signedOverlayRows": 795,
+    "humanConfirmedReviewOnlyRows": 731,
+    "catalogAcquisitions": 1932,
+    "frontsideCatalogAcquisitions": 966,
+    "eligibleMissingLabelCandidateRows": 157
+  },
+  "coverage": {
+    "frozenReferenceCount": 456,
+    "missingGenericLabels": ["I", "J", "K", "O", "Q", "V", "W", "X", "Y", "Z"],
+    "confirmedCoverableNow": ["J", "K", "Q", "X"],
+    "noConfirmedExampleInOverlay": ["I", "O", "V", "W", "Y", "Z"],
+    "absenceMeaning": "CATALOG_COVERAGE_GAP_ONLY_NOT_PROOF_OF_THE_PRODUCTION_ALPHABET"
+  },
+  "development": [
+    {
+      "physicalIdentity": "62546-481_POST2_SLOT17",
+      "scribe": "6KB71041XDE5",
+      "characters": ["K", "X"],
+      "sourceState": "LOCAL_R11_COMPATIBLE_CANDIDATES_EXTRACTED_NOT_ADMITTED"
+    },
+    {
+      "physicalIdentity": "62625-956_20260729122701_Slot16",
+      "scribe": "147JQ122SUB6",
+      "characters": ["J", "Q"],
+      "sourceState": "REMOTE_CATALOG_PAIR_AWAITING_SOURCE_BYTE_HASH"
+    }
+  ],
+  "localCandidateExtraction": {
+    "physicalIdentity": "62546-481_POST2_SLOT17",
+    "operatorConfirmedString": "6KB71041XDE5",
+    "outputRoot": "work/OPENCV_SCRIBE_R13A/S17E_20260902",
+    "selectedGrid": {
+      "path": "work/OPENCV_SCRIBE_R13A/S17E_20260902/selected_grid.png",
+      "sha256": "D7E63122DF62D0711420DF629454014BEB0157754B14FC232B6B5E8699814507"
+    },
+    "candidateReferences": [
+      {
+        "label": "K",
+        "position": 2,
+        "path": "work/OPENCV_SCRIBE_R13A/S17E_20260902/cells/P02_K.png",
+        "sha256": "7FFFC74241EE61A5173423451B3202AFA3E0F1C2ACA5F522F7B4869857756938",
+        "fullCanvasToReferenceLoaderDescriptorCosine": 0.998471643
+      },
+      {
+        "label": "X",
+        "position": 9,
+        "path": "work/OPENCV_SCRIBE_R13A/S17E_20260902/cells/P09_X.png",
+        "sha256": "65165E6917694A7809AF9B0280A99163405170E2BF1E56114E56E47B98BDE9A3",
+        "fullCanvasToReferenceLoaderDescriptorCosine": 0.998202035
+      }
+    ],
+    "cellDimensions": {"width": 96, "height": 230, "channels": 3},
+    "sourcePolarity": "WHITE_DOTS_ON_BLACK_RESIDUAL_BLOB_CANVAS",
+    "outputPolarity": "BLACK_DOTS_ON_WHITE_R11_REFERENCE_RASTER",
+    "candidateCount": 2,
+    "referenceAdmissionEligible": false,
+    "trainingEligible": false,
+    "freshPhysicalWaferValidationRequired": true
+  },
+  "withdrawnLocalCandidateRoots": [
+    {
+      "root": "work/OPENCV_SCRIBE_R13A/S17C_20260902",
+      "state": "WITHDRAWN_REFERENCE_LOADER_POLARITY_MISMATCH"
+    },
+    {
+      "root": "work/OPENCV_SCRIBE_R13A/S17D_20260902",
+      "state": "WITHDRAWN_REFERENCE_DESCRIPTOR_COORDINATE_PHASE_GATE"
+    }
+  ],
+  "independentValidation": [
+    {
+      "physicalIdentity": "62625-956_20260729122701_Slot20",
+      "scribe": "147JQ117SUD6",
+      "characters": ["J", "Q"]
+    },
+    {
+      "physicalIdentity": "62546-481_20260707164232_Slot25",
+      "scribe": "13DCK076SUG1",
+      "characters": ["K"]
+    },
+    {
+      "physicalIdentity": "62625-907-PRE_20260709123021_Slot18",
+      "scribe": "146XF111SUG7",
+      "characters": ["X"]
+    }
+  ],
+  "futureAuthorizedRemoteAcquisition": {
+    "uniquePhysicalAcquisitions": 4,
+    "bfDfSourceImages": 8,
+    "fullImagePullRequired": false,
+    "inPlaceOpenCvReadOnlyRequired": true,
+    "sourceHashesRequiredBeforeDecode": true,
+    "sourceToCropHashProvenanceRequired": true,
+    "automaticRetry": false,
+    "published": false
+  },
+  "safety": {
+    "waferImageBytesReadByMetadataPlanner": false,
+    "sourceWaferImageBytesReadByCandidateExtractor": false,
+    "derivedBlobRasterBytesReadByCandidateExtractor": true,
+    "jbodAccessPerformed": false,
+    "portalPublicationPerformed": false,
+    "externalMutationPerformed": false,
+    "frozenReferenceAdmissionPerformed": false,
+    "trainingPerformed": false,
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  },
+  "nextAction": "OPERATOR_MUST_SAY_PUBLISH_TO_AUTHORIZE_ONE_BOUNDED_REMOTE_CROP_ACQUISITION"
+}

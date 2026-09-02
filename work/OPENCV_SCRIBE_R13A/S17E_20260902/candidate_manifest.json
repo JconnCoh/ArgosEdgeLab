@@ -1,0 +1,314 @@
+{
+  "schema": "argos_opencv_scribe_candidate_glyph_manifest_v1",
+  "revision": "ARGOS_OPENCV_SCRIBE_R13A_METADATA_HARVEST_20260902_POLARITY_CORRECT_CANDIDATES",
+  "classification": "PENDING_GATE",
+  "state": "LOCAL_CANDIDATES_EXTRACTED_AWAITING_INDEPENDENT_PHYSICAL_VALIDATION",
+  "caseId": "POST2_S17",
+  "physicalIdentity": "62546-481_POST2_SLOT17",
+  "operatorConfirmedString": "6KB71041XDE5",
+  "targetLabels": [
+    "K",
+    "X"
+  ],
+  "candidateCount": 2,
+  "inputEvidence": {
+    "harvestInputPath": "work/OPENCV_SCRIBE_R13A/R13A_ALPHABET_HARVEST_INPUT.json",
+    "harvestInputSha256": "EBE19AF2023F26B413D760857C57AC6E9A43E0AC00C68C7FC107EBDCAB647FE7",
+    "harvestPlanPath": "work/OPENCV_SCRIBE_R13A/R13A_ALPHABET_HARVEST_PLAN.json",
+    "harvestPlanSha256": "7F1F9DB9582E57B2F7608DEE013F969B6A1C25FD227DC8CB7A88BB15910DE2D1",
+    "extractorPath": "work/OPENCV_SCRIBE_R13A/Extract-ArgosOpenCvScribeCandidateCells.py",
+    "extractorSha256": "DF32BB561F438094A083AB28E4EC31E1DF1091C0D57952DBF8D86236E0B46B30",
+    "truthRecordPath": "work/OPENCV_SCRIBE_R12B/S17_OPERATOR_CONFIRMED_REGRESSION.json",
+    "truthRecordSha256": "B8CCC273321F15FA03C7F1025500585ECC14562A79A723033767B50679BBECEC",
+    "detectorResultPath": "C:\\P2COHORT\\results\\R12B_BLOB_TOPOLOGY_LOCKED_20260902\\S17\\result.json",
+    "detectorResultSha256": "05500C9BEE17F4A1736795ADDCFA618A78E6B0D6C25E08D665D24EF679D6667E",
+    "blobRasterPath": "C:\\P2COHORT\\results\\R12B_BLOB_TOPOLOGY_LOCKED_20260902\\S17\\BF_FORWARD_blobs.png",
+    "blobRasterSha256": "9C7378101E507DD308F0CEA56D61BE41048B1FE576072D0FB1F517A8547F71D4",
+    "sourceWaferImageBytesReadByExtractor": false,
+    "blobRasterBytesReadByExtractor": true
+  },
+  "sourceImageEvidence": {
+    "FRONTSIDE_BF": {
+      "path": "C:/P2COHORT/S17B.bmp",
+      "sha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94",
+      "byteState": "PINNED_NOT_REREAD_BY_CANDIDATE_EXTRACTOR"
+    },
+    "FRONTSIDE_DF": {
+      "path": "C:/P2COHORT/S17D.bmp",
+      "sha256": "9AB0AA6942948F54635C51B173618FC8478C75791E9F859FDD135FFDE52C153C",
+      "byteState": "PINNED_NOT_REREAD_BY_CANDIDATE_EXTRACTOR"
+    }
+  },
+  "selectedGrid": {
+    "channel": "BF",
+    "direction": "FORWARD",
+    "x": 207,
+    "y": 61,
+    "cellWidth": 97,
+    "cellHeight": 210,
+    "cellCount": 12,
+    "relativePath": "selected_grid.png",
+    "sha256": "D7E63122DF62D0711420DF629454014BEB0157754B14FC232B6B5E8699814507",
+    "foregroundPixels": 10912
+  },
+  "normalization": {
+    "implementation": "OPENCV_CENTER_CROP_OR_ZERO_PAD_NO_RESAMPLING_THEN_BITWISE_INVERT",
+    "sourcePolarity": "WHITE_DOTS_ON_BLACK_RESIDUAL_BLOB_CANVAS",
+    "outputPolarity": "BLACK_DOTS_ON_WHITE_R11_REFERENCE_RASTER",
+    "consumerSemantics": "R11_DECODE_GRAY_THEN_DARK_RESIDUAL_EXACT",
+    "verticalPlacement": "CENTER_PAD_ADJUSTED_UP_ONE_PIXEL_WHEN_NEEDED_TO_PRESERVE_SOURCE_Y_PARITY_FOR_ROUND_TO_EVEN",
+    "sourceYParity": 1,
+    "outputWidth": 96,
+    "outputHeight": 230,
+    "outputChannels": 3,
+    "opencvVersion": "5.0.0",
+    "numpyVersion": "2.5.2"
+  },
+  "auditCells": [
+    {
+      "position": 1,
+      "label": "6",
+      "relativePath": "cells/P01_6.png",
+      "sha256": "07B4DFECD653BD79A001ECEEAEF0ED4CC0F4C44C1AD610FFB708D137AFDF6F12",
+      "sourceBounds": {
+        "x": 207,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 2,
+      "label": "K",
+      "relativePath": "cells/P02_K.png",
+      "sha256": "7FFFC74241EE61A5173423451B3202AFA3E0F1C2ACA5F522F7B4869857756938",
+      "sourceBounds": {
+        "x": 304,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 3,
+      "label": "B",
+      "relativePath": "cells/P03_B.png",
+      "sha256": "A8BD922F4DF038295D4F8D28B09715D1A13EFEFB41CB64427C3C6AEB7D63B162",
+      "sourceBounds": {
+        "x": 401,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 4,
+      "label": "7",
+      "relativePath": "cells/P04_7.png",
+      "sha256": "B1B50D841C8FBBA2A2F7B90B1ABF5069E9633A0280AE51611542983D5074401E",
+      "sourceBounds": {
+        "x": 498,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 5,
+      "label": "1",
+      "relativePath": "cells/P05_1.png",
+      "sha256": "C061722E527CD84ECB3DF86B7BED7691F33BE1A63F2E69224B5998E86F87987D",
+      "sourceBounds": {
+        "x": 595,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 6,
+      "label": "0",
+      "relativePath": "cells/P06_0.png",
+      "sha256": "01694541F45919F125FB603C38C6662DC4D438F1720D6F79A37745214F59135F",
+      "sourceBounds": {
+        "x": 692,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 7,
+      "label": "4",
+      "relativePath": "cells/P07_4.png",
+      "sha256": "5FA0F016D7391C0B8262D68DB56ED48C46EDA8D26B3949D83DC0743FFD82A945",
+      "sourceBounds": {
+        "x": 789,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 8,
+      "label": "1",
+      "relativePath": "cells/P08_1.png",
+      "sha256": "65E38375875223AECA7D4C3E138FF2197F3C794F0D7578B036D412734CFC9C01",
+      "sourceBounds": {
+        "x": 886,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 9,
+      "label": "X",
+      "relativePath": "cells/P09_X.png",
+      "sha256": "65165E6917694A7809AF9B0280A99163405170E2BF1E56114E56E47B98BDE9A3",
+      "sourceBounds": {
+        "x": 983,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 10,
+      "label": "D",
+      "relativePath": "cells/P10_D.png",
+      "sha256": "7001EF550556052C3A8C04542DBA04574C04F99C04CF9C08A7F1B08B3E0F69F4",
+      "sourceBounds": {
+        "x": 1080,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 11,
+      "label": "E",
+      "relativePath": "cells/P11_E.png",
+      "sha256": "988DE814D04E7762EE0C637010C08EBDC059A906759ED7CAFDE809B3F337E5C7",
+      "sourceBounds": {
+        "x": 1177,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    },
+    {
+      "position": 12,
+      "label": "5",
+      "relativePath": "cells/P12_5.png",
+      "sha256": "E6D89F8341BD2724C519E7BE69CC2C57416C72828347A7EA4BFC07716A04B4C6",
+      "sourceBounds": {
+        "x": 1274,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3
+    }
+  ],
+  "candidateReferences": [
+    {
+      "position": 2,
+      "label": "K",
+      "relativePath": "cells/P02_K.png",
+      "sha256": "7FFFC74241EE61A5173423451B3202AFA3E0F1C2ACA5F522F7B4869857756938",
+      "sourceBounds": {
+        "x": 304,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3,
+      "physicalIdentity": "62546-481_POST2_SLOT17",
+      "source": "OPERATOR_CONFIRMED_R12B_BLOB_GRID_LOCAL_CANDIDATE",
+      "labelAuthority": "OPERATOR_CONFIRMED_VISIBLE_STRING",
+      "exactAcquisitionSelfExclusionRequired": true,
+      "referenceAdmissionEligible": false,
+      "trainingEligible": false
+    },
+    {
+      "position": 9,
+      "label": "X",
+      "relativePath": "cells/P09_X.png",
+      "sha256": "65165E6917694A7809AF9B0280A99163405170E2BF1E56114E56E47B98BDE9A3",
+      "sourceBounds": {
+        "x": 983,
+        "y": 61,
+        "width": 97,
+        "height": 210
+      },
+      "outputWidth": 96,
+      "outputHeight": 230,
+      "outputChannels": 3,
+      "physicalIdentity": "62546-481_POST2_SLOT17",
+      "source": "OPERATOR_CONFIRMED_R12B_BLOB_GRID_LOCAL_CANDIDATE",
+      "labelAuthority": "OPERATOR_CONFIRMED_VISIBLE_STRING",
+      "exactAcquisitionSelfExclusionRequired": true,
+      "referenceAdmissionEligible": false,
+      "trainingEligible": false
+    }
+  ],
+  "admission": {
+    "frozenReferenceManifestMutated": false,
+    "candidateNamespaceOnly": true,
+    "maximumActiveVariantsPerLabel": 24,
+    "exactAcquisitionSelfExclusionRequired": true,
+    "freshPhysicalWaferValidationRequired": true,
+    "validationSourcesMayContributeReferences": false,
+    "referenceAdmissionEligible": false,
+    "operatorConfirmationRemainsRequired": true
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingAuthorized": false,
+    "trainingEligible": false,
+    "trainingExecuted": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  },
+  "nextAction": "ACQUIRE_PINNED_REMOTE_DEVELOPMENT_AND_WITHHELD_VALIDATION_CROPS_AFTER_EXPLICIT_PUBLISH"
+}

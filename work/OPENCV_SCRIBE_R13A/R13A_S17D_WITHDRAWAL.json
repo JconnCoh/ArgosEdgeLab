@@ -1,0 +1,45 @@
+{
+  "schema": "argos_opencv_scribe_candidate_withdrawal_v1",
+  "revision": "ARGOS_OPENCV_SCRIBE_R13A_S17D_WITHDRAWAL_20260902",
+  "classification": "WITHDRAWN",
+  "state": "WITHDRAWN_REFERENCE_DESCRIPTOR_COORDINATE_PHASE_GATE",
+  "artifactRoot": "work/OPENCV_SCRIBE_R13A/S17D_20260902",
+  "candidateManifestSha256": "4330F30B61793CA4D3F896667607A5164C5A602A2095C5F5238C9EDE5C9F6655",
+  "extractorSha256": "BD45B56F372540B24B255A5D21776BABF878F1688E160A900C9946CF5C353B34",
+  "cause": "Polarity was corrected, but centered vertical padding changed the Python round-to-even coordinate phase for K relative to the selected full-canvas detector cell.",
+  "measuredFullCanvasToReferenceLoaderDescriptorCosine": {
+    "K": 0.982867735,
+    "X": 0.998202035
+  },
+  "requiredMinimumCosine": 0.995,
+  "candidateReferences": [
+    {
+      "label": "K",
+      "path": "work/OPENCV_SCRIBE_R13A/S17D_20260902/cells/P02_K.png",
+      "sha256": "ACA2FE1209F9A7639355F7F7CA54D45AED50D68EBFFD198AE0669B06083AECE7"
+    },
+    {
+      "label": "X",
+      "path": "work/OPENCV_SCRIBE_R13A/S17D_20260902/cells/P09_X.png",
+      "sha256": "7C5229842E27E1C9ED7F5682E473467BB0D98DCFDD33921D204150C4882F5701"
+    }
+  ],
+  "disposition": {
+    "referenceAdmissionEligible": false,
+    "trainingEligible": false,
+    "validationEligible": false,
+    "reusableAsTemplate": false,
+    "frozenReferenceManifestMutated": false,
+    "replacementNamespace": "work/OPENCV_SCRIBE_R13A/S17E_20260902"
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingAuthorized": false,
+    "trainingEligible": false,
+    "trainingExecuted": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}
