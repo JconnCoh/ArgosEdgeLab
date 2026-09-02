@@ -4,7 +4,7 @@ This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
 
-## OCV-03 O3B21 R35 targeted pass / exact-953 start awaiting Enter — 2026-09-02
+## OCV-03 O3B21 R35 exact-953 backside corpus running — 2026-09-02
 
 R34 `D:/R34C953R2` completed 953/953 with 937 unique passes, nine multiple
 holds, seven not-found holds, zero source problems, and empty stderr under
@@ -22,12 +22,12 @@ passes 9/9, including residue alignment and preserved O005 ambiguity. Fresh
 exterior-clean pair each and unchanged BF/DF hashes.
 
 Current checkpoint:
-`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R35_TARGETED_PASS_FULL953_START_AWAITING_ENTER_CHECKPOINT_20260902.md`,
-SHA-256 `4F36636FB7699C23481A4F06DB338B3815AF4A49D501FDD772A261799BD8DC36`.
-The exact full-corpus start command is already pasted in the visible JBOD
-PowerShell window but has not executed because Enter did not land while the
-operator was AFK. Do not repaste it. Press Enter once, then observe the new
-`D:/R35C953` worker without retry or modification. Review-only remains;
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R35C953_DIRECT_EXACT_953_CORPUS_RUNNING_CHECKPOINT_20260902.md`,
+SHA-256 `CA01F78D0580D917798862347B504E08F1E91CFA780CDAF75005EFDA3EE81145`.
+The already-pasted command executed after the operator supplied Enter and
+returned `PASS_R35C953_STARTED`. Owned worker PID `12496`, created
+`2026-09-02T17:48:45.2740425Z`, is running under fresh `D:/R35C953`. Observe
+it read-only; do not retry, restart, stop, or modify it. Review-only remains;
 training, XML, production, provider activation, source mutation/deletion, and
 automatic hold clearance remain false.
 
