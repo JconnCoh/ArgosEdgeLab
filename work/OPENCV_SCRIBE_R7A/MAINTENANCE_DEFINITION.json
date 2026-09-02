@@ -1,0 +1,86 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 16777216,
+  "entryPoint": "payload/Invoke-R7AScribeSlot22.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-R7AScribeSlot22.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R7A.ps1",
+      "approvedPredecessorSha256": [
+        "159BD82528E505DE69BDEEE4C3A3B29402BA9281939C57F6187587E9047D9740"
+      ],
+      "installedSha256": "A1E80FC5BC02DF7290F1166647F35D504015B78F39945434990A8CD71427E312",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\A2\\w\\ocv\\R7A",
+      "mode": "CREATE_NEW_PROVIDER_WORK_TREE",
+      "failureQuarantine": "D:\\A2\\w\\ocv\\R7A.failed",
+      "payloads": [
+        {"path": "payload/ArgosOpenCvScribeV1R7.py", "sha256": "7202937B06296B7E36AD4E44E90FF946A47B30DC4B5CF3EE9656DB6003807316"},
+        {"path": "payload/R7A_CONFIGURATION.json", "sha256": "7D77C1E44975A38F480D3C329E9F86AACBFB4377D9182C62E61C0D42D3395292"},
+        {"path": "payload/BATCH.json", "sha256": "92E768FADE776A36A897E3A032876CD10576D147E6247D705994C4F6E1DDAAA3"},
+        {"path": "payload/S22.json", "sha256": "DCC307913078F6562A9057F445963FD9F19EF21E3C1A1BA9FEC0B0C648DDB0B7"},
+        {"path": "D:/O2D5/ARGOS_O2D5/O2D5_REFS.zip", "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6"}
+      ]
+    },
+    {
+      "targetRoot": "D:\\A2\\o\\ocv\\R7A",
+      "mode": "CREATE_NEW_PROVIDER_OUTPUT_TREE"
+    }
+  ],
+  "entryPointOutputs": [
+    {"path": "D:\\A2\\o\\ocv\\R7A\\Slot22\\RESULT.json", "mode": "CREATE_NEW", "schema": "argos_opencv_scribe_result_v2"},
+    {"path": "D:\\A2\\o\\ocv\\R7A\\BATCH_GATE.json", "mode": "CREATE_NEW", "schema": "argos_r7a_scribe_batch_gate_v1", "requiredState": "PASS_R7A_REAL_IMAGE_REVIEW_ONLY_BATCH"},
+    {"path": "D:\\A2\\o\\ocv\\R7A\\EXECUTION.json", "mode": "CREATE_NEW", "schema": "argos_r7a_execution_v1", "requiredState": "PASS_R7A_EXECUTION"}
+  ],
+  "sourceProcessingContract": {
+    "lotId": "62619-433",
+    "acquisitionId": "62619-433_20260824005735",
+    "physicalIdentities": [
+      "62619-433_20260824005735_Slot22"
+    ],
+    "inputMode": "DEVELOPMENT_AUTO_LOCALIZED_WHOLE_IMAGE",
+    "rawSourceEvidencePath": "work/OPENCV_OLS6/OLS6_EXACT_TWENTY_SOURCE_HASHES.json",
+    "rawSourceEvidenceSha256": "E54A15301A2B4FE914E6315DDFB9628E1D1364B0553D2155E9D5387A88E7FF3B",
+    "sourceAliasName": "X:",
+    "sourceAliasRoot": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433",
+    "referenceBundlePath": "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+    "referenceBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "sourceImageBytesReadAllowed": true,
+    "opencvPixelDecodeRequired": true,
+    "boundedExceptionSearchAllowed": true,
+    "heightEnvelopeConfigurationSha256": "7D77C1E44975A38F480D3C329E9F86AACBFB4377D9182C62E61C0D42D3395292",
+    "minimumObservedHeightRatio": 0.9,
+    "providerAlgorithmBytesChangedFromR6V1": true,
+    "fullWaferPerimeterSweepRequired": true,
+    "fixedImageRectangleAllowed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false,
+    "automaticIdentityAuthority": false
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 1500,
+    "opencvChildTimeoutSeconds": 1200,
+    "maximumSequentialChildren": 1,
+    "outerCoversAllChildren": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_ONE_BOUNDED_PORTABLE_OPENCV_SCRIBE_REVIEW_ONLY_CHILD"
+  ],
+  "rehearsal": {
+    "requiredState": "PASS_R7A_REAL_IMAGE_REVIEW_ONLY_BATCH",
+    "gateState": "PASS_R7_MARKED_SLOT22_LOCATION_AND_DETERMINISM",
+    "gateSha256": "714E024B7A33B25137587A2F2D83A30DCBD314656ACB04D18DBC13B33E48C91D",
+    "selfPinGateState": "PASS_R7A_STATIC_PACKAGE_GATE",
+    "selfPinGateSha256": "07E4E51F0C8AAAD1D36EBCDA972EFBEFD937EA60385B4C0533569B62216F5BBF"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "argos_opencv_scribe_provider_configuration_v1",
+  "revision": "OCV02_R7A_20260902A",
+  "state": "DRAFT_OFFLINE_REVIEW_ONLY",
+  "providerId": "ARGOS_OPENCV_SCRIBE_V1R7",
+  "engine": {
+    "relativePath": "work/OPENCV_SCRIBE_V1R7/ArgosOpenCvScribeV1R7.py",
+    "sha256": "7202937B06296B7E36AD4E44E90FF946A47B30DC4B5CF3EE9656DB6003807316",
+    "algorithmBytesChangedFromR6V1": true
+  },
+  "automaticLocalization": {
+    "maximumRegions": 8,
+    "minimumLocalizationScore": 0.0,
+    "minimumBandWidthPixels": 500,
+    "ocrRegionWidthPixels": 1600,
+    "ocrRegionHeightPixels": 400,
+    "minimumObservedHeightRatio": 0.9,
+    "minimumObservedWidthRatio": 0.9,
+    "maximumObservedWidthRatio": 1.1,
+    "locationMethod": "FULL_WAFER_PERIMETER_SWEEP",
+    "enhancementFamily": "CLAHE_DARK_BRIGHT_GAUSSIAN_RESIDUALS_AND_SOBEL",
+    "fixedImageRectangle": false
+  },
+  "calibration": {
+    "method": "MARKED_SLOT22_LOCATION_TRUTH_WITH_MARKER_EXCLUDED_FROM_PROVIDER_INPUTS",
+    "localGate": "work/OPENCV_SCRIBE_V1R7/R7_MARKED_SLOT22_LOCAL_GATE.json",
+    "localGateState": "PASS_R7_MARKED_SLOT22_LOCATION_AND_DETERMINISM",
+    "markedSlot22UsedToTuneLocationRanking": true,
+    "markedSlot22UsedToTuneGlyphIdentity": false,
+    "unmarkedSlot22IsIndependentExecutionGate": true
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "mayClearHolds": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false
+  },
+  "integration": {
+    "sharedProcessorEntrypointChanged": false,
+    "activeBacksideProviderChanged": false,
+    "publicationAuthorized": false,
+    "activationAuthorized": false
+  }
+}

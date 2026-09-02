@@ -1,0 +1,50 @@
+{
+  "schema": "argos_opencv_scribe_r7_marked_slot22_local_gate_v1",
+  "createdUtc": "2026-09-02T00:55:00Z",
+  "state": "PASS_R7_MARKED_SLOT22_LOCATION_AND_DETERMINISM",
+  "disposition": "DRAFT_REVIEW_ONLY_DETECTOR_EVIDENCE",
+  "engineRevision": "ARGOS_OPENCV_SCRIBE_V1R7_20260902",
+  "engineSha256": "7202937B06296B7E36AD4E44E90FF946A47B30DC4B5CF3EE9656DB6003807316",
+  "gateHarnessSha256": "78B5AA3E53C39BEE461B97C5C6D477310D60E77623B1F2BA9E58E76D3ED0C78E",
+  "markedImage": {
+    "sha256": "F120E4351FA02BDEC3FFCDC4A80D5D13E1C6C99044492ADD18E1A988370DF6F0",
+    "bytes": 475379874,
+    "width": 14411,
+    "height": 10995,
+    "sourceRole": "OPERATOR_MARKED_LOCATION_TRUTH_ONLY"
+  },
+  "providerContract": {
+    "markerPixelsSuppliedToProvider": true,
+    "markerOrTruthBoxUsedByLocator": false,
+    "fixedImageRectangleUsed": false,
+    "fullPerimeterSweepUsed": true,
+    "multiScaleEnhancementUsed": true,
+    "candidateLimit": 16
+  },
+  "repeatRuns": [
+    {
+      "run": "R4",
+      "gateSha256": "99D7419AA940CC61C72912B455622D61856C56AF83DF30E32507656829BDE235",
+      "candidateCount": 16,
+      "firstTruthMatchingRank": 5
+    },
+    {
+      "run": "R5",
+      "gateSha256": "99D7419AA940CC61C72912B455622D61856C56AF83DF30E32507656829BDE235",
+      "candidateCount": 16,
+      "firstTruthMatchingRank": 5
+    }
+  ],
+  "deterministicCandidateTable": true,
+  "fullScribeVisibleInRefinedCropsAtRanks": [5, 7],
+  "nextGate": "RUN_EXACT_UNMARKED_SLOT22_BF_DF_REVIEW_ONLY",
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "mayClearHolds": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "providerActivationAuthorized": false
+  }
+}

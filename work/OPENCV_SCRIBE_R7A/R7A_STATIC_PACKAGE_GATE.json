@@ -1,0 +1,58 @@
+{
+  "schema": "argos_opencv_scribe_r7a_static_package_gate_v1",
+  "createdUtc": "2026-09-02T00:48:08Z",
+  "state": "PASS_R7A_STATIC_PACKAGE_GATE",
+  "revision": "OCV02_R7A_20260902A",
+  "requestId": "REQ_20260902T011500444Z_22R7A",
+  "files": {
+    "entryPoint": {
+      "path": "work/OPENCV_SCRIBE_R7A/Invoke-R7AScribeSlot22.ps1",
+      "sha256": "A1E80FC5BC02DF7290F1166647F35D504015B78F39945434990A8CD71427E312"
+    },
+    "engine": {
+      "path": "work/OPENCV_SCRIBE_R7A/ArgosOpenCvScribeV1R7.py",
+      "sha256": "7202937B06296B7E36AD4E44E90FF946A47B30DC4B5CF3EE9656DB6003807316"
+    },
+    "configuration": {
+      "path": "work/OPENCV_SCRIBE_R7A/R7A_CONFIGURATION.json",
+      "sha256": "7D77C1E44975A38F480D3C329E9F86AACBFB4377D9182C62E61C0D42D3395292"
+    },
+    "batch": {
+      "path": "work/OPENCV_SCRIBE_R7A/BATCH.json",
+      "sha256": "92E768FADE776A36A897E3A032876CD10576D147E6247D705994C4F6E1DDAAA3"
+    },
+    "job": {
+      "path": "work/OPENCV_SCRIBE_R7A/S22.json",
+      "sha256": "DCC307913078F6562A9057F445963FD9F19EF21E3C1A1BA9FEC0B0C648DDB0B7"
+    },
+    "markedLocalizationGate": {
+      "path": "work/OPENCV_SCRIBE_V1R7/R7_MARKED_SLOT22_LOCAL_GATE.json",
+      "sha256": "714E024B7A33B25137587A2F2D83A30DCBD314656ACB04D18DBC13B33E48C91D"
+    }
+  },
+  "checks": {
+    "pythonAstParse": true,
+    "windowsPowerShellParserErrors": 0,
+    "jsonDocumentsParsed": 4,
+    "sourceCaseCount": 1,
+    "sourceCase": "62619-433_20260824005735_Slot22",
+    "originalUnmarkedBfSha256": "5B7ADC1B1A52BE73A3C32D6663E92FC467C640D5502AA77A8309A059C444CDF5",
+    "originalUnmarkedDfSha256": "3A923FD19A8E625D3023BACFAA0481A1E73CE0EB6859E3327760269B2D90E840",
+    "maximumCandidateRegions": 8,
+    "fullWaferPerimeterSweep": true,
+    "fixedImageRectangle": false,
+    "pathBudgetState": "PASS_PATH_BUDGET",
+    "maximumEffectivePathLength": 157,
+    "maximumSequentialChildren": 1,
+    "automaticRetryAllowed": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "mayClearHolds": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "providerActivationAuthorized": false
+  }
+}

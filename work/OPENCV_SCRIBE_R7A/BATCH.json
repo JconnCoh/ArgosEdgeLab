@@ -1,0 +1,50 @@
+{
+  "schema": "argos_opencv_scribe_batch_v1",
+  "revision": "OCV02_R7A_20260902A",
+  "state": "DRAFT_REVIEW_ONLY_UNMARKED_SLOT22_GATE",
+  "engine": {
+    "file": "ArgosOpenCvScribeV1R7.py",
+    "sha256": "7202937B06296B7E36AD4E44E90FF946A47B30DC4B5CF3EE9656DB6003807316",
+    "revision": "ARGOS_OPENCV_SCRIBE_V1R7_20260902"
+  },
+  "configuration": {
+    "file": "R7A_CONFIGURATION.json",
+    "sha256": "7D77C1E44975A38F480D3C329E9F86AACBFB4377D9182C62E61C0D42D3395292",
+    "minimumObservedHeightRatio": 0.9,
+    "algorithmBytesChangedFromR6V1": true
+  },
+  "referenceBundle": {
+    "path": "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+    "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "expectedReferenceCount": 456,
+    "referenceCoverageComplete": false,
+    "missingBodyReferenceLabels": "IJKOQVWXYZ"
+  },
+  "sourceAlias": {
+    "name": "X:",
+    "root": "D:\\KLARFExport\\PatternedFront\\Lot_62619-433"
+  },
+  "workRoot": "D:\\A2\\w\\ocv\\R7A",
+  "outputRoot": "D:\\A2\\o\\ocv\\R7A",
+  "cases": [
+    {
+      "slot": "Slot22",
+      "physicalIdentity": "62619-433_20260824005735_Slot22",
+      "jobFile": "S22.json",
+      "jobSha256": "DCC307913078F6562A9057F445963FD9F19EF21E3C1A1BA9FEC0B0C648DDB0B7"
+    }
+  ],
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "mayClearHolds": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false
+  },
+  "serialization": {
+    "maximumConcurrentProviderChildren": 1,
+    "automaticRetryAllowed": false,
+    "caseFailureStopsBatch": true
+  }
+}
