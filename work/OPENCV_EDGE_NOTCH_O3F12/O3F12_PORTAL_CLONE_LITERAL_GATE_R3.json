@@ -1,0 +1,88 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-03T04:04:15.1232957Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3F12\\O3F12_PORTAL_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "967E047AD3DCC14E4040FA135BD90CEB4375B68313639CB0ACF44A366CE526F4",
+    "pairCount":  5,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F11/Invoke-O3F11StagedEndpoint.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F12/Invoke-O3F12StagedEndpoint.ps1",
+                      "sourceSha256":  "B07B46554BB731F22763CF0A31BC58AB64CB1A5528543120158B682A8AB7E2EF",
+                      "generatedSha256":  "D2CF3B63B590E21BB8292BF23B79259D8BDACAD308CC32494A7C3867EA704DC1",
+                      "sourceRoots":  [
+                                          "D:\\O3F9D11",
+                                          "D:\\O3F9G11"
+                                      ],
+                      "generatedRoots":  [
+                                             "D:\\O3F9D12",
+                                             "D:\\O3F9G12"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F11/Test-O3F11Routes.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F12/Test-O3F12Routes.ps1",
+                      "sourceSha256":  "43C53E790A9A7B80DD80387636CC9D6E16D8E9124E43A237AF34593774E1F0E2",
+                      "generatedSha256":  "9DE4A97F3C947591DA324E9A8A70121B79CE4EEA2CCF3D2016C252935979FDF3",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F11/Publish-O3F11Request.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F12/Publish-O3F12Request.ps1",
+                      "sourceSha256":  "851AE6ED71F7EC18713EC5AD1D7221BB555D9A152FDE0F6CB4998D233543719E",
+                      "generatedSha256":  "40FEF9282A250144FADF900FFA283706A184407AC6DB9F8088C7CC49BF359381",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F11/Collect-O3F11Response.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F12/Collect-O3F12Response.ps1",
+                      "sourceSha256":  "A1F6C423F59C2F3F6473F15C6B497A94E1852057DE6D8B0BD77ED4D34719CA66",
+                      "generatedSha256":  "BC601EAB8B171A3531AF4FCF940584A75FE913DFBBF8BA0DBCDC4411C9A0E865",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F11/Observe-O3F11PortalShare.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F12/Observe-O3F12PortalShare.ps1",
+                      "sourceSha256":  "9F7B42B6A22B939F6484A49A3195A8FF0DADE1127D452B03717B7DCB345BA3D5",
+                      "generatedSha256":  "1BF8D5DC0D793375D1D1E131B4188FD22745D7804A2592703A298ACBA1A424C8",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  2
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

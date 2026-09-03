@@ -1,0 +1,2261 @@
+{
+    "schema":  "argos_ocv03_o3f12_complete_route_gate_v1",
+    "state":  "PASS_O3F12_COMPLETE_ROUTE_GATE",
+    "requestId":  "REQ_O3F12_20260902A",
+    "jobClass":  "MAINTENANCE_PATCH",
+    "routePathRowsEvaluated":  361,
+    "reservedSuffixCharacters":  32,
+    "maximumPlannedEffectiveLength":  227,
+    "maximumActionableEffectiveLength":  193,
+    "maximumPlannedComponentLength":  72,
+    "longestPath":  "D:\\KLARFExport\\PatternedFront\\Lot_62629-419_NotchBad_Hotspot\\62629-419_20260824112405\\Slot16\\BrightfieldFrontsideWafer\\resizedImage\\62629-419_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "longestActionablePath":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\R_0123456789AB_20260902235959999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.json",
+    "canonicalAliasRequiredCount":  12,
+    "actionableAliasPassCount":  12,
+    "sourceAliasPlanSha256":  "2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C",
+    "safeIdAlgorithm":  "REGEX_CLEAN_PREFIX42_PLUS_SHA256_UTF8_PREFIX10",
+    "dev6SafeIds":  [
+                        {
+                            "ordinal":  1,
+                            "identity":  "PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot01|FRONT",
+                            "safeId":  "PatternedFront_Lot_62615-962_62615-962_202_746c357524",
+                            "stem":  "patternedfront_lot_62615962_62615962_202_746c357524",
+                            "digest":  "78312717f1d5acde"
+                        },
+                        {
+                            "ordinal":  2,
+                            "identity":  "PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot02|FRONT",
+                            "safeId":  "PatternedFront_Lot_62615-962_62615-962_202_fb64860b9a",
+                            "stem":  "patternedfront_lot_62615962_62615962_202_fb64860b9a",
+                            "digest":  "a5ea9e6928113818"
+                        },
+                        {
+                            "ordinal":  3,
+                            "identity":  "PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot04|FRONT",
+                            "safeId":  "PatternedFront_Lot_62615-962_62615-962_202_bd9355d99d",
+                            "stem":  "patternedfront_lot_62615962_62615962_202_bd9355d99d",
+                            "digest":  "060ffce4e2fdd1d3"
+                        },
+                        {
+                            "ordinal":  4,
+                            "identity":  "PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot08|FRONT",
+                            "safeId":  "PatternedFront_Lot_62615-962_62615-962_202_bc9635f9a8",
+                            "stem":  "patternedfront_lot_62615962_62615962_202_bc9635f9a8",
+                            "digest":  "7788452f1238dad9"
+                        },
+                        {
+                            "ordinal":  5,
+                            "identity":  "PatternedFront\\Lot_62616-131\\62616-131_20260825233731\\Slot09|FRONT",
+                            "safeId":  "PatternedFront_Lot_62616-131_62616-131_202_aae0de7fdf",
+                            "stem":  "patternedfront_lot_62616131_62616131_202_aae0de7fdf",
+                            "digest":  "fde351a32888ca86"
+                        },
+                        {
+                            "ordinal":  6,
+                            "identity":  "PatternedFront\\Lot_62629-419_NotchBad_Hotspot\\62629-419_20260824112405\\Slot16|FRONT",
+                            "safeId":  "PatternedFront_Lot_62629-419_NotchBad_Hots_5b0a0bfeaa",
+                            "stem":  "patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa",
+                            "digest":  "071610e058f9242d"
+                        }
+                    ],
+    "exactGateOutputLeafCount":  16,
+    "exactDev6OutputLeafCount":  266,
+    "payloadLeaves":  [
+                          "Invoke-O3F12StagedEndpoint.ps1",
+                          "Run-O3F12Staged.py",
+                          "Run-O3F8Staged.py",
+                          "FullPerimeterWaferTopologyOpenCvR10.py",
+                          "FullPerimeterWaferTopologyOpenCvR9.py",
+                          "FullPerimeterWaferTopologyOpenCvR8.py",
+                          "Detect-O3P8FrontSplitNotches.py",
+                          "Test-O3F8SymmetricRecovery.py",
+                          "O3P8_POST2_SHORT_ALIAS_JOB.json",
+                          "O3M9_SLOT16_JOB.json",
+                          "OCV03_NotchReviewOpenCvV1.py",
+                          "O3F12FixtureRunner.py",
+                          "O3F12RootContractProbe.py",
+                          "O3F12_DEV6_SOURCE_ALIAS_PLAN.json",
+                          "O3F12_ENDPOINT_LIVE_INVOCATION.json"
+                      ],
+    "maximumResultBytes":  2097152,
+    "endpointWorkerSha256":  "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "installedConfigEvidenceSha256":  "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "inheritedQueueSafetyGateSha256":  "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+    "matchingSignedTerminalResponseRequired":  true,
+    "gatewayAcceptanceIsExecutionEvidence":  false,
+    "requestRetryAuthorized":  false,
+    "rows":  [
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\Invoke-O3F12StagedEndpoint.ps1",
+                     "effectiveLength":  154,
+                     "longestComponentLength":  30,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\Run-O3F12Staged.py",
+                     "effectiveLength":  142,
+                     "longestComponentLength":  25,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\Run-O3F8Staged.py",
+                     "effectiveLength":  141,
+                     "longestComponentLength":  25,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\FullPerimeterWaferTopologyOpenCvR10.py",
+                     "effectiveLength":  162,
+                     "longestComponentLength":  38,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\FullPerimeterWaferTopologyOpenCvR9.py",
+                     "effectiveLength":  161,
+                     "longestComponentLength":  37,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\FullPerimeterWaferTopologyOpenCvR8.py",
+                     "effectiveLength":  161,
+                     "longestComponentLength":  37,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\Detect-O3P8FrontSplitNotches.py",
+                     "effectiveLength":  155,
+                     "longestComponentLength":  31,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\Test-O3F8SymmetricRecovery.py",
+                     "effectiveLength":  153,
+                     "longestComponentLength":  29,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\O3P8_POST2_SHORT_ALIAS_JOB.json",
+                     "effectiveLength":  155,
+                     "longestComponentLength":  31,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\O3M9_SLOT16_JOB.json",
+                     "effectiveLength":  144,
+                     "longestComponentLength":  25,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\OCV03_NotchReviewOpenCvV1.py",
+                     "effectiveLength":  152,
+                     "longestComponentLength":  28,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\O3F12FixtureRunner.py",
+                     "effectiveLength":  145,
+                     "longestComponentLength":  25,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\O3F12RootContractProbe.py",
+                     "effectiveLength":  149,
+                     "longestComponentLength":  25,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\O3F12_DEV6_SOURCE_ALIAS_PLAN.json",
+                     "effectiveLength":  157,
+                     "longestComponentLength":  33,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_O3F12_20260902A.ready\\payload\\O3F12_ENDPOINT_LIVE_INVOCATION.json",
+                     "effectiveLength":  159,
+                     "longestComponentLength":  35,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12\\SUMMARY.json.partial",
+                     "effectiveLength":  63,
+                     "longestComponentLength":  20,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12.failed\\SUMMARY.json.partial",
+                     "effectiveLength":  70,
+                     "longestComponentLength":  20,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12\\R10_SYMMETRIC_GATE.json",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  23,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12.failed\\R10_SYMMETRIC_GATE.json",
+                     "effectiveLength":  73,
+                     "longestComponentLength":  23,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12\\LOCAL.stdout.txt",
+                     "effectiveLength":  59,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12.failed\\LOCAL.stdout.txt",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12\\LOCAL.stderr.txt",
+                     "effectiveLength":  59,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12.failed\\LOCAL.stderr.txt",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12\\INHERITED.stdout.txt",
+                     "effectiveLength":  63,
+                     "longestComponentLength":  20,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12.failed\\INHERITED.stdout.txt",
+                     "effectiveLength":  70,
+                     "longestComponentLength":  20,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12\\INHERITED.stderr.txt",
+                     "effectiveLength":  63,
+                     "longestComponentLength":  20,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12.failed\\INHERITED.stderr.txt",
+                     "effectiveLength":  70,
+                     "longestComponentLength":  20,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12\\R10_INHERITED_SYNTHETIC\\upper_right_315_df_c01_enhanced.png",
+                     "effectiveLength":  102,
+                     "longestComponentLength":  35,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12.failed\\R10_INHERITED_SYNTHETIC\\upper_right_315_df_c01_enhanced.png",
+                     "effectiveLength":  109,
+                     "longestComponentLength":  35,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12\\R10_INHERITED_SYNTHETIC\\SYNTHETIC_GATE.json.partial",
+                     "effectiveLength":  94,
+                     "longestComponentLength":  27,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12.failed\\R10_INHERITED_SYNTHETIC\\SYNTHETIC_GATE.json.partial",
+                     "effectiveLength":  101,
+                     "longestComponentLength":  27,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\SUMMARY.json.partial",
+                     "effectiveLength":  63,
+                     "longestComponentLength":  20,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\jobs\\J0001.json.partial",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  18,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\C0001.stdout.txt",
+                     "effectiveLength":  59,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\C0001.stderr.txt",
+                     "effectiveLength":  59,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\MANIFEST.json.partial",
+                     "effectiveLength":  76,
+                     "longestComponentLength":  21,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_bf_overview.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_df_overview.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_bf_c24_clean.png",
+                     "effectiveLength":  123,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_df_c24_clean.png",
+                     "effectiveLength":  123,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\78312717f1d5acde_bf_o3p8_recovery_clean.png",
+                     "effectiveLength":  98,
+                     "longestComponentLength":  43,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\78312717f1d5acde_df_r10_recovery_clean.png",
+                     "effectiveLength":  97,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_bf_c24_enhanced.png",
+                     "effectiveLength":  126,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_df_c24_enhanced.png",
+                     "effectiveLength":  126,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\78312717f1d5acde_bf_o3p8_recovery_enhanced.png",
+                     "effectiveLength":  101,
+                     "longestComponentLength":  46,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\78312717f1d5acde_df_r10_recovery_enhanced.png",
+                     "effectiveLength":  100,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_bf_c24_overlay.png",
+                     "effectiveLength":  125,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_df_c24_overlay.png",
+                     "effectiveLength":  125,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\78312717f1d5acde_bf_o3p8_recovery_overlay.png",
+                     "effectiveLength":  100,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\78312717f1d5acde_df_r10_recovery_overlay.png",
+                     "effectiveLength":  99,
+                     "longestComponentLength":  44,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_bf_c24_mask.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_df_c24_mask.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\78312717f1d5acde_bf_o3p8_recovery_mask.png",
+                     "effectiveLength":  97,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0001\\78312717f1d5acde_df_r10_recovery_mask.png",
+                     "effectiveLength":  96,
+                     "longestComponentLength":  41,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\jobs\\J0002.json.partial",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  18,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\C0002.stdout.txt",
+                     "effectiveLength":  59,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\C0002.stderr.txt",
+                     "effectiveLength":  59,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\MANIFEST.json.partial",
+                     "effectiveLength":  76,
+                     "longestComponentLength":  21,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_bf_overview.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_df_overview.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_bf_c24_clean.png",
+                     "effectiveLength":  123,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_df_c24_clean.png",
+                     "effectiveLength":  123,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\a5ea9e6928113818_bf_o3p8_recovery_clean.png",
+                     "effectiveLength":  98,
+                     "longestComponentLength":  43,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\a5ea9e6928113818_df_r10_recovery_clean.png",
+                     "effectiveLength":  97,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_bf_c24_enhanced.png",
+                     "effectiveLength":  126,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_df_c24_enhanced.png",
+                     "effectiveLength":  126,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\a5ea9e6928113818_bf_o3p8_recovery_enhanced.png",
+                     "effectiveLength":  101,
+                     "longestComponentLength":  46,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\a5ea9e6928113818_df_r10_recovery_enhanced.png",
+                     "effectiveLength":  100,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_bf_c24_overlay.png",
+                     "effectiveLength":  125,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_df_c24_overlay.png",
+                     "effectiveLength":  125,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\a5ea9e6928113818_bf_o3p8_recovery_overlay.png",
+                     "effectiveLength":  100,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\a5ea9e6928113818_df_r10_recovery_overlay.png",
+                     "effectiveLength":  99,
+                     "longestComponentLength":  44,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_bf_c24_mask.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_df_c24_mask.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\a5ea9e6928113818_bf_o3p8_recovery_mask.png",
+                     "effectiveLength":  97,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0002\\a5ea9e6928113818_df_r10_recovery_mask.png",
+                     "effectiveLength":  96,
+                     "longestComponentLength":  41,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\jobs\\J0003.json.partial",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  18,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\C0003.stdout.txt",
+                     "effectiveLength":  59,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\C0003.stderr.txt",
+                     "effectiveLength":  59,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\MANIFEST.json.partial",
+                     "effectiveLength":  76,
+                     "longestComponentLength":  21,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_bf_overview.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_df_overview.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_bf_c24_clean.png",
+                     "effectiveLength":  123,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_df_c24_clean.png",
+                     "effectiveLength":  123,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\060ffce4e2fdd1d3_bf_o3p8_recovery_clean.png",
+                     "effectiveLength":  98,
+                     "longestComponentLength":  43,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\060ffce4e2fdd1d3_df_r10_recovery_clean.png",
+                     "effectiveLength":  97,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_bf_c24_enhanced.png",
+                     "effectiveLength":  126,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_df_c24_enhanced.png",
+                     "effectiveLength":  126,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\060ffce4e2fdd1d3_bf_o3p8_recovery_enhanced.png",
+                     "effectiveLength":  101,
+                     "longestComponentLength":  46,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\060ffce4e2fdd1d3_df_r10_recovery_enhanced.png",
+                     "effectiveLength":  100,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_bf_c24_overlay.png",
+                     "effectiveLength":  125,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_df_c24_overlay.png",
+                     "effectiveLength":  125,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\060ffce4e2fdd1d3_bf_o3p8_recovery_overlay.png",
+                     "effectiveLength":  100,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\060ffce4e2fdd1d3_df_r10_recovery_overlay.png",
+                     "effectiveLength":  99,
+                     "longestComponentLength":  44,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_bf_c24_mask.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_df_c24_mask.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\060ffce4e2fdd1d3_bf_o3p8_recovery_mask.png",
+                     "effectiveLength":  97,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0003\\060ffce4e2fdd1d3_df_r10_recovery_mask.png",
+                     "effectiveLength":  96,
+                     "longestComponentLength":  41,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\jobs\\J0004.json.partial",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  18,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\C0004.stdout.txt",
+                     "effectiveLength":  59,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\C0004.stderr.txt",
+                     "effectiveLength":  59,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\MANIFEST.json.partial",
+                     "effectiveLength":  76,
+                     "longestComponentLength":  21,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_bf_overview.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_df_overview.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_bf_c24_clean.png",
+                     "effectiveLength":  123,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_df_c24_clean.png",
+                     "effectiveLength":  123,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\7788452f1238dad9_bf_o3p8_recovery_clean.png",
+                     "effectiveLength":  98,
+                     "longestComponentLength":  43,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\7788452f1238dad9_df_r10_recovery_clean.png",
+                     "effectiveLength":  97,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_bf_c24_enhanced.png",
+                     "effectiveLength":  126,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_df_c24_enhanced.png",
+                     "effectiveLength":  126,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\7788452f1238dad9_bf_o3p8_recovery_enhanced.png",
+                     "effectiveLength":  101,
+                     "longestComponentLength":  46,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\7788452f1238dad9_df_r10_recovery_enhanced.png",
+                     "effectiveLength":  100,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_bf_c24_overlay.png",
+                     "effectiveLength":  125,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_df_c24_overlay.png",
+                     "effectiveLength":  125,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\7788452f1238dad9_bf_o3p8_recovery_overlay.png",
+                     "effectiveLength":  100,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\7788452f1238dad9_df_r10_recovery_overlay.png",
+                     "effectiveLength":  99,
+                     "longestComponentLength":  44,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_bf_c24_mask.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_df_c24_mask.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\7788452f1238dad9_bf_o3p8_recovery_mask.png",
+                     "effectiveLength":  97,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0004\\7788452f1238dad9_df_r10_recovery_mask.png",
+                     "effectiveLength":  96,
+                     "longestComponentLength":  41,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\jobs\\J0005.json.partial",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  18,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\C0005.stdout.txt",
+                     "effectiveLength":  59,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\C0005.stderr.txt",
+                     "effectiveLength":  59,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\MANIFEST.json.partial",
+                     "effectiveLength":  76,
+                     "longestComponentLength":  21,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_bf_overview.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_df_overview.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_bf_c24_clean.png",
+                     "effectiveLength":  123,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_df_c24_clean.png",
+                     "effectiveLength":  123,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\fde351a32888ca86_bf_o3p8_recovery_clean.png",
+                     "effectiveLength":  98,
+                     "longestComponentLength":  43,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\fde351a32888ca86_df_r10_recovery_clean.png",
+                     "effectiveLength":  97,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_bf_c24_enhanced.png",
+                     "effectiveLength":  126,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_df_c24_enhanced.png",
+                     "effectiveLength":  126,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\fde351a32888ca86_bf_o3p8_recovery_enhanced.png",
+                     "effectiveLength":  101,
+                     "longestComponentLength":  46,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\fde351a32888ca86_df_r10_recovery_enhanced.png",
+                     "effectiveLength":  100,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_bf_c24_overlay.png",
+                     "effectiveLength":  125,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_df_c24_overlay.png",
+                     "effectiveLength":  125,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\fde351a32888ca86_bf_o3p8_recovery_overlay.png",
+                     "effectiveLength":  100,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\fde351a32888ca86_df_r10_recovery_overlay.png",
+                     "effectiveLength":  99,
+                     "longestComponentLength":  44,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_bf_c24_mask.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_df_c24_mask.png",
+                     "effectiveLength":  122,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\fde351a32888ca86_bf_o3p8_recovery_mask.png",
+                     "effectiveLength":  97,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0005\\fde351a32888ca86_df_r10_recovery_mask.png",
+                     "effectiveLength":  96,
+                     "longestComponentLength":  41,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\jobs\\J0006.json.partial",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  18,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\C0006.stdout.txt",
+                     "effectiveLength":  59,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\C0006.stderr.txt",
+                     "effectiveLength":  59,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\MANIFEST.json.partial",
+                     "effectiveLength":  76,
+                     "longestComponentLength":  21,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_bf_overview.png",
+                     "effectiveLength":  123,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_df_overview.png",
+                     "effectiveLength":  123,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_bf_c24_clean.png",
+                     "effectiveLength":  124,
+                     "longestComponentLength":  69,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_df_c24_clean.png",
+                     "effectiveLength":  124,
+                     "longestComponentLength":  69,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\071610e058f9242d_bf_o3p8_recovery_clean.png",
+                     "effectiveLength":  98,
+                     "longestComponentLength":  43,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\071610e058f9242d_df_r10_recovery_clean.png",
+                     "effectiveLength":  97,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_bf_c24_enhanced.png",
+                     "effectiveLength":  127,
+                     "longestComponentLength":  72,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_df_c24_enhanced.png",
+                     "effectiveLength":  127,
+                     "longestComponentLength":  72,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\071610e058f9242d_bf_o3p8_recovery_enhanced.png",
+                     "effectiveLength":  101,
+                     "longestComponentLength":  46,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\071610e058f9242d_df_r10_recovery_enhanced.png",
+                     "effectiveLength":  100,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_bf_c24_overlay.png",
+                     "effectiveLength":  126,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_df_c24_overlay.png",
+                     "effectiveLength":  126,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\071610e058f9242d_bf_o3p8_recovery_overlay.png",
+                     "effectiveLength":  100,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\071610e058f9242d_df_r10_recovery_overlay.png",
+                     "effectiveLength":  99,
+                     "longestComponentLength":  44,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_bf_c24_mask.png",
+                     "effectiveLength":  123,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_df_c24_mask.png",
+                     "effectiveLength":  123,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\071610e058f9242d_bf_o3p8_recovery_mask.png",
+                     "effectiveLength":  97,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\cases\\C0006\\071610e058f9242d_df_r10_recovery_mask.png",
+                     "effectiveLength":  96,
+                     "longestComponentLength":  41,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\SUMMARY.json.partial",
+                     "effectiveLength":  70,
+                     "longestComponentLength":  20,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\jobs\\J0001.json.partial",
+                     "effectiveLength":  73,
+                     "longestComponentLength":  18,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\C0001.stdout.txt",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\C0001.stderr.txt",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\MANIFEST.json.partial",
+                     "effectiveLength":  83,
+                     "longestComponentLength":  21,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_bf_overview.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_df_overview.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_bf_c24_clean.png",
+                     "effectiveLength":  130,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_df_c24_clean.png",
+                     "effectiveLength":  130,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\78312717f1d5acde_bf_o3p8_recovery_clean.png",
+                     "effectiveLength":  105,
+                     "longestComponentLength":  43,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\78312717f1d5acde_df_r10_recovery_clean.png",
+                     "effectiveLength":  104,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_bf_c24_enhanced.png",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_df_c24_enhanced.png",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\78312717f1d5acde_bf_o3p8_recovery_enhanced.png",
+                     "effectiveLength":  108,
+                     "longestComponentLength":  46,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\78312717f1d5acde_df_r10_recovery_enhanced.png",
+                     "effectiveLength":  107,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_bf_c24_overlay.png",
+                     "effectiveLength":  132,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_df_c24_overlay.png",
+                     "effectiveLength":  132,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\78312717f1d5acde_bf_o3p8_recovery_overlay.png",
+                     "effectiveLength":  107,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\78312717f1d5acde_df_r10_recovery_overlay.png",
+                     "effectiveLength":  106,
+                     "longestComponentLength":  44,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_bf_c24_mask.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\patternedfront_lot_62615962_62615962_202_746c357524_df_c24_mask.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\78312717f1d5acde_bf_o3p8_recovery_mask.png",
+                     "effectiveLength":  104,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0001\\78312717f1d5acde_df_r10_recovery_mask.png",
+                     "effectiveLength":  103,
+                     "longestComponentLength":  41,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\jobs\\J0002.json.partial",
+                     "effectiveLength":  73,
+                     "longestComponentLength":  18,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\C0002.stdout.txt",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\C0002.stderr.txt",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\MANIFEST.json.partial",
+                     "effectiveLength":  83,
+                     "longestComponentLength":  21,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_bf_overview.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_df_overview.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_bf_c24_clean.png",
+                     "effectiveLength":  130,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_df_c24_clean.png",
+                     "effectiveLength":  130,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\a5ea9e6928113818_bf_o3p8_recovery_clean.png",
+                     "effectiveLength":  105,
+                     "longestComponentLength":  43,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\a5ea9e6928113818_df_r10_recovery_clean.png",
+                     "effectiveLength":  104,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_bf_c24_enhanced.png",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_df_c24_enhanced.png",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\a5ea9e6928113818_bf_o3p8_recovery_enhanced.png",
+                     "effectiveLength":  108,
+                     "longestComponentLength":  46,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\a5ea9e6928113818_df_r10_recovery_enhanced.png",
+                     "effectiveLength":  107,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_bf_c24_overlay.png",
+                     "effectiveLength":  132,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_df_c24_overlay.png",
+                     "effectiveLength":  132,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\a5ea9e6928113818_bf_o3p8_recovery_overlay.png",
+                     "effectiveLength":  107,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\a5ea9e6928113818_df_r10_recovery_overlay.png",
+                     "effectiveLength":  106,
+                     "longestComponentLength":  44,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_bf_c24_mask.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\patternedfront_lot_62615962_62615962_202_fb64860b9a_df_c24_mask.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\a5ea9e6928113818_bf_o3p8_recovery_mask.png",
+                     "effectiveLength":  104,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0002\\a5ea9e6928113818_df_r10_recovery_mask.png",
+                     "effectiveLength":  103,
+                     "longestComponentLength":  41,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\jobs\\J0003.json.partial",
+                     "effectiveLength":  73,
+                     "longestComponentLength":  18,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\C0003.stdout.txt",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\C0003.stderr.txt",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\MANIFEST.json.partial",
+                     "effectiveLength":  83,
+                     "longestComponentLength":  21,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_bf_overview.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_df_overview.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_bf_c24_clean.png",
+                     "effectiveLength":  130,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_df_c24_clean.png",
+                     "effectiveLength":  130,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\060ffce4e2fdd1d3_bf_o3p8_recovery_clean.png",
+                     "effectiveLength":  105,
+                     "longestComponentLength":  43,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\060ffce4e2fdd1d3_df_r10_recovery_clean.png",
+                     "effectiveLength":  104,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_bf_c24_enhanced.png",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_df_c24_enhanced.png",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\060ffce4e2fdd1d3_bf_o3p8_recovery_enhanced.png",
+                     "effectiveLength":  108,
+                     "longestComponentLength":  46,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\060ffce4e2fdd1d3_df_r10_recovery_enhanced.png",
+                     "effectiveLength":  107,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_bf_c24_overlay.png",
+                     "effectiveLength":  132,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_df_c24_overlay.png",
+                     "effectiveLength":  132,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\060ffce4e2fdd1d3_bf_o3p8_recovery_overlay.png",
+                     "effectiveLength":  107,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\060ffce4e2fdd1d3_df_r10_recovery_overlay.png",
+                     "effectiveLength":  106,
+                     "longestComponentLength":  44,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_bf_c24_mask.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\patternedfront_lot_62615962_62615962_202_bd9355d99d_df_c24_mask.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\060ffce4e2fdd1d3_bf_o3p8_recovery_mask.png",
+                     "effectiveLength":  104,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0003\\060ffce4e2fdd1d3_df_r10_recovery_mask.png",
+                     "effectiveLength":  103,
+                     "longestComponentLength":  41,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\jobs\\J0004.json.partial",
+                     "effectiveLength":  73,
+                     "longestComponentLength":  18,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\C0004.stdout.txt",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\C0004.stderr.txt",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\MANIFEST.json.partial",
+                     "effectiveLength":  83,
+                     "longestComponentLength":  21,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_bf_overview.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_df_overview.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_bf_c24_clean.png",
+                     "effectiveLength":  130,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_df_c24_clean.png",
+                     "effectiveLength":  130,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\7788452f1238dad9_bf_o3p8_recovery_clean.png",
+                     "effectiveLength":  105,
+                     "longestComponentLength":  43,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\7788452f1238dad9_df_r10_recovery_clean.png",
+                     "effectiveLength":  104,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_bf_c24_enhanced.png",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_df_c24_enhanced.png",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\7788452f1238dad9_bf_o3p8_recovery_enhanced.png",
+                     "effectiveLength":  108,
+                     "longestComponentLength":  46,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\7788452f1238dad9_df_r10_recovery_enhanced.png",
+                     "effectiveLength":  107,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_bf_c24_overlay.png",
+                     "effectiveLength":  132,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_df_c24_overlay.png",
+                     "effectiveLength":  132,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\7788452f1238dad9_bf_o3p8_recovery_overlay.png",
+                     "effectiveLength":  107,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\7788452f1238dad9_df_r10_recovery_overlay.png",
+                     "effectiveLength":  106,
+                     "longestComponentLength":  44,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_bf_c24_mask.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\patternedfront_lot_62615962_62615962_202_bc9635f9a8_df_c24_mask.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\7788452f1238dad9_bf_o3p8_recovery_mask.png",
+                     "effectiveLength":  104,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0004\\7788452f1238dad9_df_r10_recovery_mask.png",
+                     "effectiveLength":  103,
+                     "longestComponentLength":  41,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\jobs\\J0005.json.partial",
+                     "effectiveLength":  73,
+                     "longestComponentLength":  18,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\C0005.stdout.txt",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\C0005.stderr.txt",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\MANIFEST.json.partial",
+                     "effectiveLength":  83,
+                     "longestComponentLength":  21,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_bf_overview.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_df_overview.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_bf_c24_clean.png",
+                     "effectiveLength":  130,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_df_c24_clean.png",
+                     "effectiveLength":  130,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\fde351a32888ca86_bf_o3p8_recovery_clean.png",
+                     "effectiveLength":  105,
+                     "longestComponentLength":  43,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\fde351a32888ca86_df_r10_recovery_clean.png",
+                     "effectiveLength":  104,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_bf_c24_enhanced.png",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_df_c24_enhanced.png",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\fde351a32888ca86_bf_o3p8_recovery_enhanced.png",
+                     "effectiveLength":  108,
+                     "longestComponentLength":  46,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\fde351a32888ca86_df_r10_recovery_enhanced.png",
+                     "effectiveLength":  107,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_bf_c24_overlay.png",
+                     "effectiveLength":  132,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_df_c24_overlay.png",
+                     "effectiveLength":  132,
+                     "longestComponentLength":  70,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\fde351a32888ca86_bf_o3p8_recovery_overlay.png",
+                     "effectiveLength":  107,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\fde351a32888ca86_df_r10_recovery_overlay.png",
+                     "effectiveLength":  106,
+                     "longestComponentLength":  44,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_bf_c24_mask.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\patternedfront_lot_62616131_62616131_202_aae0de7fdf_df_c24_mask.png",
+                     "effectiveLength":  129,
+                     "longestComponentLength":  67,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\fde351a32888ca86_bf_o3p8_recovery_mask.png",
+                     "effectiveLength":  104,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0005\\fde351a32888ca86_df_r10_recovery_mask.png",
+                     "effectiveLength":  103,
+                     "longestComponentLength":  41,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\jobs\\J0006.json.partial",
+                     "effectiveLength":  73,
+                     "longestComponentLength":  18,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\C0006.stdout.txt",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\C0006.stderr.txt",
+                     "effectiveLength":  66,
+                     "longestComponentLength":  16,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\MANIFEST.json.partial",
+                     "effectiveLength":  83,
+                     "longestComponentLength":  21,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_bf_overview.png",
+                     "effectiveLength":  130,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_df_overview.png",
+                     "effectiveLength":  130,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_bf_c24_clean.png",
+                     "effectiveLength":  131,
+                     "longestComponentLength":  69,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_df_c24_clean.png",
+                     "effectiveLength":  131,
+                     "longestComponentLength":  69,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\071610e058f9242d_bf_o3p8_recovery_clean.png",
+                     "effectiveLength":  105,
+                     "longestComponentLength":  43,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\071610e058f9242d_df_r10_recovery_clean.png",
+                     "effectiveLength":  104,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_bf_c24_enhanced.png",
+                     "effectiveLength":  134,
+                     "longestComponentLength":  72,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_df_c24_enhanced.png",
+                     "effectiveLength":  134,
+                     "longestComponentLength":  72,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\071610e058f9242d_bf_o3p8_recovery_enhanced.png",
+                     "effectiveLength":  108,
+                     "longestComponentLength":  46,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\071610e058f9242d_df_r10_recovery_enhanced.png",
+                     "effectiveLength":  107,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_bf_c24_overlay.png",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_df_c24_overlay.png",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  71,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\071610e058f9242d_bf_o3p8_recovery_overlay.png",
+                     "effectiveLength":  107,
+                     "longestComponentLength":  45,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\071610e058f9242d_df_r10_recovery_overlay.png",
+                     "effectiveLength":  106,
+                     "longestComponentLength":  44,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_bf_c24_mask.png",
+                     "effectiveLength":  130,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\patternedfront_lot_62629419_notchbad_hots_5b0a0bfeaa_df_c24_mask.png",
+                     "effectiveLength":  130,
+                     "longestComponentLength":  68,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\071610e058f9242d_bf_o3p8_recovery_mask.png",
+                     "effectiveLength":  104,
+                     "longestComponentLength":  42,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\cases\\C0006\\071610e058f9242d_df_r10_recovery_mask.png",
+                     "effectiveLength":  103,
+                     "longestComponentLength":  41,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3F12\\final_o3f12\\REQ_O3F12_20260902A.ready.zip",
+                     "effectiveLength":  153,
+                     "longestComponentLength":  29,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "U:\\ProjectPortalRO\\requests\\REQ_O3F12_20260902A.ready.zip.upload",
+                     "effectiveLength":  96,
+                     "longestComponentLength":  36,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "U:\\ProjectPortalRO\\requests\\REQ_O3F12_20260902A.ready.zip",
+                     "effectiveLength":  89,
+                     "longestComponentLength":  29,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\S\\requests\\REQ_O3F12_20260902A.ready.zip",
+                     "effectiveLength":  79,
+                     "longestComponentLength":  29,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\S\\requests\\processed\\REQ_O3F12_20260902A.ready.zip",
+                     "effectiveLength":  89,
+                     "longestComponentLength":  29,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\share\\staging\\REQ_O3F12_20260902A.ready.zip",
+                     "effectiveLength":  111,
+                     "longestComponentLength":  29,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\share\\request_archive\\REQ_O3F12_20260902A.ready.zip",
+                     "effectiveLength":  119,
+                     "longestComponentLength":  29,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_to_argos\\pending\\REQ_O3F12_20260902A.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "effectiveLength":  148,
+                     "longestComponentLength":  28,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\requests_from_gateway\\pending\\REQ_O3F12_20260902A.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "effectiveLength":  152,
+                     "longestComponentLength":  28,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\pending\\REQ_O3F12_20260902A.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "effectiveLength":  138,
+                     "longestComponentLength":  28,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_jbod\\sent\\REQ_O3F12_20260902A.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "effectiveLength":  135,
+                     "longestComponentLength":  28,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\completed\\REQ_O3F12_20260902A.ready\\PORTAL_REQUEST_MANIFEST.json",
+                     "effectiveLength":  156,
+                     "longestComponentLength":  28,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\work\\J_0123456789AB_01234567\\MAINTENANCE.stdout.txt",
+                     "effectiveLength":  139,
+                     "longestComponentLength":  23,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\work\\J_0123456789AB_01234567\\MAINTENANCE.stderr.txt",
+                     "effectiveLength":  139,
+                     "longestComponentLength":  23,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\work\\J_0123456789AB_01234567\\RESULT.json",
+                     "effectiveLength":  128,
+                     "longestComponentLength":  23,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\compact\\C_0123456789AB_01234567\\FAILURE.json",
+                     "effectiveLength":  132,
+                     "longestComponentLength":  23,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\ledger\\REQ_O3F12_20260902A.json",
+                     "effectiveLength":  119,
+                     "longestComponentLength":  24,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\maintenance\\REQ_O3F12_20260902A\\prior\\M000_0123456789_0123456789.prior",
+                     "effectiveLength":  158,
+                     "longestComponentLength":  32,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\maintenance\\REQ_O3F12_20260902A\\failed_new\\M000_0123456789_0123456789.rollback",
+                     "effectiveLength":  166,
+                     "longestComponentLength":  35,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\.M000_0123456789_0123456789.stage",
+                     "effectiveLength":  115,
+                     "longestComponentLength":  33,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\.M000_0123456789_0123456789.restore",
+                     "effectiveLength":  117,
+                     "longestComponentLength":  35,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03_NotchReviewOpenCvV1.py",
+                     "effectiveLength":  110,
+                     "longestComponentLength":  28,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12\\SUMMARY.json",
+                     "effectiveLength":  55,
+                     "longestComponentLength":  12,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9G12.failed\\SUMMARY.json",
+                     "effectiveLength":  62,
+                     "longestComponentLength":  14,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12\\SUMMARY.json",
+                     "effectiveLength":  55,
+                     "longestComponentLength":  12,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\O3F9D12.failed\\SUMMARY.json",
+                     "effectiveLength":  62,
+                     "longestComponentLength":  14,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\R_0123456789AB_20260902235959999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.json",
+                     "effectiveLength":  193,
+                     "longestComponentLength":  55,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260902235959999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.json",
+                     "effectiveLength":  170,
+                     "longestComponentLength":  55,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_0123456789AB_20260902235959999_a1b2c3d4.ready\\MAINTENANCE.stdout.txt",
+                     "effectiveLength":  155,
+                     "longestComponentLength":  47,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\sent\\R_0123456789AB_20260902235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "effectiveLength":  159,
+                     "longestComponentLength":  47,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\from_jbod\\pending\\R_0123456789AB_20260902235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "effectiveLength":  163,
+                     "longestComponentLength":  47,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\pending\\R_0123456789AB_20260902235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "effectiveLength":  164,
+                     "longestComponentLength":  47,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_gateway\\sent\\R_0123456789AB_20260902235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "effectiveLength":  161,
+                     "longestComponentLength":  47,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\R\\pending\\R_0123456789AB_20260902235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "effectiveLength":  126,
+                     "longestComponentLength":  47,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\APR\\A\\R_0123456789AB_20260902235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "effectiveLength":  118,
+                     "longestComponentLength":  47,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\ProgramData\\ArgosProjectPortalRO\\share\\response_zip_archive\\R_0123456789AB_20260902235959999_a1b2c3d4.ready.zip",
+                     "effectiveLength":  146,
+                     "longestComponentLength":  51,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "U:\\ProjectPortalRO\\responses\\R_0123456789AB_20260902235959999_a1b2c3d4.ready.zip",
+                     "effectiveLength":  112,
+                     "longestComponentLength":  51,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\A12C\\R_0123456789AB_20260902235959999_a1b2c3d4.ready.zip",
+                     "effectiveLength":  91,
+                     "longestComponentLength":  51,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\A12C\\R_0123456789AB_20260902235959999_a1b2c3d4.ready\\PORTAL_RESPONSE_MANIFEST.json",
+                     "effectiveLength":  117,
+                     "longestComponentLength":  47,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "C:\\A12C\\R_0123456789AB_20260902235959999_a1b2c3d4.ready\\MAINTENANCE.stdout.txt",
+                     "effectiveLength":  110,
+                     "longestComponentLength":  47,
+                     "state":  "PASS_PATH_BUDGET"
+                 },
+                 {
+                     "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot01\\BrightfieldFrontsideWafer\\resizedImage\\62615-962_Slot01_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  210,
+                     "longestComponentLength":  63,
+                     "state":  "CANONICAL_PROVENANCE_SHORT_ALIAS_REQUIRED"
+                 },
+                 {
+                     "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot01\\DarkfieldFrontsideWafer\\resizedImage\\62615-962_Slot01_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  206,
+                     "longestComponentLength":  61,
+                     "state":  "CANONICAL_PROVENANCE_SHORT_ALIAS_REQUIRED"
+                 },
+                 {
+                     "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot02\\BrightfieldFrontsideWafer\\resizedImage\\62615-962_Slot02_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  210,
+                     "longestComponentLength":  63,
+                     "state":  "CANONICAL_PROVENANCE_SHORT_ALIAS_REQUIRED"
+                 },
+                 {
+                     "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot02\\DarkfieldFrontsideWafer\\resizedImage\\62615-962_Slot02_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  206,
+                     "longestComponentLength":  61,
+                     "state":  "CANONICAL_PROVENANCE_SHORT_ALIAS_REQUIRED"
+                 },
+                 {
+                     "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot04\\BrightfieldFrontsideWafer\\resizedImage\\62615-962_Slot04_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  210,
+                     "longestComponentLength":  63,
+                     "state":  "CANONICAL_PROVENANCE_SHORT_ALIAS_REQUIRED"
+                 },
+                 {
+                     "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot04\\DarkfieldFrontsideWafer\\resizedImage\\62615-962_Slot04_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  206,
+                     "longestComponentLength":  61,
+                     "state":  "CANONICAL_PROVENANCE_SHORT_ALIAS_REQUIRED"
+                 },
+                 {
+                     "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot08\\BrightfieldFrontsideWafer\\resizedImage\\62615-962_Slot08_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  210,
+                     "longestComponentLength":  63,
+                     "state":  "CANONICAL_PROVENANCE_SHORT_ALIAS_REQUIRED"
+                 },
+                 {
+                     "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot08\\DarkfieldFrontsideWafer\\resizedImage\\62615-962_Slot08_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  206,
+                     "longestComponentLength":  61,
+                     "state":  "CANONICAL_PROVENANCE_SHORT_ALIAS_REQUIRED"
+                 },
+                 {
+                     "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62616-131\\62616-131_20260825233731\\Slot09\\BrightfieldFrontsideWafer\\resizedImage\\62616-131_Slot09_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  210,
+                     "longestComponentLength":  63,
+                     "state":  "CANONICAL_PROVENANCE_SHORT_ALIAS_REQUIRED"
+                 },
+                 {
+                     "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62616-131\\62616-131_20260825233731\\Slot09\\DarkfieldFrontsideWafer\\resizedImage\\62616-131_Slot09_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  206,
+                     "longestComponentLength":  61,
+                     "state":  "CANONICAL_PROVENANCE_SHORT_ALIAS_REQUIRED"
+                 },
+                 {
+                     "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62629-419_NotchBad_Hotspot\\62629-419_20260824112405\\Slot16\\BrightfieldFrontsideWafer\\resizedImage\\62629-419_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  227,
+                     "longestComponentLength":  63,
+                     "state":  "CANONICAL_PROVENANCE_SHORT_ALIAS_REQUIRED"
+                 },
+                 {
+                     "path":  "D:\\KLARFExport\\PatternedFront\\Lot_62629-419_NotchBad_Hotspot\\62629-419_20260824112405\\Slot16\\DarkfieldFrontsideWafer\\resizedImage\\62629-419_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  223,
+                     "longestComponentLength":  61,
+                     "state":  "CANONICAL_PROVENANCE_SHORT_ALIAS_REQUIRED"
+                 },
+                 {
+                     "path":  "Q:\\BrightfieldFrontsideWafer\\resizedImage\\62615-962_Slot01_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  137,
+                     "longestComponentLength":  63,
+                     "state":  "ACTIONABLE_TEMPORARY_Q_ALIAS_PASS"
+                 },
+                 {
+                     "path":  "Q:\\DarkfieldFrontsideWafer\\resizedImage\\62615-962_Slot01_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  61,
+                     "state":  "ACTIONABLE_TEMPORARY_Q_ALIAS_PASS"
+                 },
+                 {
+                     "path":  "Q:\\BrightfieldFrontsideWafer\\resizedImage\\62615-962_Slot02_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  137,
+                     "longestComponentLength":  63,
+                     "state":  "ACTIONABLE_TEMPORARY_Q_ALIAS_PASS"
+                 },
+                 {
+                     "path":  "Q:\\DarkfieldFrontsideWafer\\resizedImage\\62615-962_Slot02_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  61,
+                     "state":  "ACTIONABLE_TEMPORARY_Q_ALIAS_PASS"
+                 },
+                 {
+                     "path":  "Q:\\BrightfieldFrontsideWafer\\resizedImage\\62615-962_Slot04_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  137,
+                     "longestComponentLength":  63,
+                     "state":  "ACTIONABLE_TEMPORARY_Q_ALIAS_PASS"
+                 },
+                 {
+                     "path":  "Q:\\DarkfieldFrontsideWafer\\resizedImage\\62615-962_Slot04_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  61,
+                     "state":  "ACTIONABLE_TEMPORARY_Q_ALIAS_PASS"
+                 },
+                 {
+                     "path":  "Q:\\BrightfieldFrontsideWafer\\resizedImage\\62615-962_Slot08_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  137,
+                     "longestComponentLength":  63,
+                     "state":  "ACTIONABLE_TEMPORARY_Q_ALIAS_PASS"
+                 },
+                 {
+                     "path":  "Q:\\DarkfieldFrontsideWafer\\resizedImage\\62615-962_Slot08_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  61,
+                     "state":  "ACTIONABLE_TEMPORARY_Q_ALIAS_PASS"
+                 },
+                 {
+                     "path":  "Q:\\BrightfieldFrontsideWafer\\resizedImage\\62616-131_Slot09_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  137,
+                     "longestComponentLength":  63,
+                     "state":  "ACTIONABLE_TEMPORARY_Q_ALIAS_PASS"
+                 },
+                 {
+                     "path":  "Q:\\DarkfieldFrontsideWafer\\resizedImage\\62616-131_Slot09_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  61,
+                     "state":  "ACTIONABLE_TEMPORARY_Q_ALIAS_PASS"
+                 },
+                 {
+                     "path":  "Q:\\BrightfieldFrontsideWafer\\resizedImage\\62629-419_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  137,
+                     "longestComponentLength":  63,
+                     "state":  "ACTIONABLE_TEMPORARY_Q_ALIAS_PASS"
+                 },
+                 {
+                     "path":  "Q:\\DarkfieldFrontsideWafer\\resizedImage\\62629-419_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+                     "effectiveLength":  133,
+                     "longestComponentLength":  61,
+                     "state":  "ACTIONABLE_TEMPORARY_Q_ALIAS_PASS"
+                 }
+             ],
+    "mutationsPerformed":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false,
+    "requestZipSha256":  "040A2302EC953B92A946863AB4D306174623E217D43BF6E445E1B54AA4525DB3",
+    "requestManifestSha256":  "9E7C61B2C25BCA8576FDBB208A5E11468AB41F37D5FC631FE3E6C83084E6B0DF",
+    "requestSignatureSha256":  "896573844D946570425EB90B9CF6159BD904FD30437D5FC98962DC4C972E1333"
+}

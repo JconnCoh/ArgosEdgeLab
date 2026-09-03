@@ -1,0 +1,30 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "O3F12_COMPLETE_PACKAGE_TEST_CLONE_LITERAL_ACCOUNTING_20260903",
+  "scope": "METADATA_ONLY_NO_EXECUTION",
+  "qualifiedSource": "O3N1_EXACT_PACKAGE_REHEARSAL_LINEAGE",
+  "diagnosticDiffSource": {
+    "namespace": "work/OPENCV_EDGE_NOTCH_O3F11",
+    "classification": "WITHDRAWN_DIAGNOSTIC_DIFF_SOURCE_ONLY",
+    "futureReuseAllowed": false,
+    "publicationParentAllowed": false
+  },
+  "pairs": [
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F11/Test-O3F11FinalPackage.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F12/Test-O3F12FinalPackage.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "C:\\A11R",
+          "generatedRoot": "C:\\A12R",
+          "disposition": "REPLACED"
+        },
+        {
+          "sourceRoot": "",
+          "generatedRoot": "Q:",
+          "disposition": "ADDED"
+        }
+      ]
+    }
+  ]
+}

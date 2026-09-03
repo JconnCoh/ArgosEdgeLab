@@ -1,0 +1,84 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "O3F12_COMPLETE_PORTAL_CLONE_LITERAL_ACCOUNTING_20260903",
+  "scope": "METADATA_ONLY_NO_EXECUTION",
+  "qualifiedSource": "O3Q8_OWNED_CHILD_AND_O3N1_PORTAL_ROUTE_LINEAGE",
+  "diagnosticDiffSource": {
+    "namespace": "work/OPENCV_EDGE_NOTCH_O3F11",
+    "classification": "WITHDRAWN_DIAGNOSTIC_DIFF_SOURCE_ONLY",
+    "futureReuseAllowed": false,
+    "publicationParentAllowed": false
+  },
+  "pairs": [
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F11/Invoke-O3F11StagedEndpoint.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F12/Invoke-O3F12StagedEndpoint.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "D:\\O3F9G11",
+          "generatedRoot": "D:\\O3F9G12",
+          "disposition": "REPLACED"
+        },
+        {
+          "sourceRoot": "D:\\O3F9D11",
+          "generatedRoot": "D:\\O3F9D12",
+          "disposition": "REPLACED"
+        }
+      ]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F11/Test-O3F11Routes.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F12/Test-O3F12Routes.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "",
+          "generatedRoot": "",
+          "disposition": "NO_LITERAL_ROOTS"
+        }
+      ]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F11/Publish-O3F11Request.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F12/Publish-O3F12Request.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "\\\\shm-cifs\\Department",
+          "generatedRoot": "\\\\shm-cifs\\Department",
+          "disposition": "UNCHANGED_ALLOWED"
+        },
+        {
+          "sourceRoot": "U:\\ProjectPortalRO",
+          "generatedRoot": "U:\\ProjectPortalRO",
+          "disposition": "UNCHANGED_ALLOWED"
+        }
+      ]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F11/Collect-O3F11Response.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F12/Collect-O3F12Response.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "",
+          "generatedRoot": "",
+          "disposition": "NO_LITERAL_ROOTS"
+        }
+      ]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F11/Observe-O3F11PortalShare.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F12/Observe-O3F12PortalShare.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "\\\\shm-cifs\\Department",
+          "generatedRoot": "\\\\shm-cifs\\Department",
+          "disposition": "UNCHANGED_ALLOWED"
+        },
+        {
+          "sourceRoot": "U:\\ProjectPortalRO",
+          "generatedRoot": "U:\\ProjectPortalRO",
+          "disposition": "UNCHANGED_ALLOWED"
+        }
+      ]
+    }
+  ]
+}

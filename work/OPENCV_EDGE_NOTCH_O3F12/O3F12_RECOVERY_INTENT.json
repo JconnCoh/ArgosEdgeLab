@@ -1,0 +1,116 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-03T03:38:51Z",
+  "incidentId": "OCV03_O3F12_R10_STAGED_DEV6",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "PROJECT_PORTAL",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [
+      "OWNED_BOUNDED_OPENCV_CHILDREN",
+      "OWNED_TEMPORARY_Q_SOURCE_ALIAS"
+    ],
+    "queueMutation": true,
+    "ledgerMutation": true,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q8/O3Q8_SIGNED_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "A0E60D4E97654F569FAE148DC835BE8B60C4D29C1BF92425B62D6EE6969CFD8C"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+      "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": ["MAINTENANCE_PATCH_OWNED_CHILD"],
+    "requestedFields": ["SIGNED_TERMINAL_STDOUT"],
+    "decisionOptions": ["RETAIN_HOLDS", "ADVANCE_TARGETED_GATE"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F12/O3F12_RECOVERY_OBSERVATION_EVIDENCE.json",
+      "sha256": "888325E43DF42F705DFF08D6432ACA1A67975A8C1DF17D7FF94D6625701B174D"
+    },
+    "endpointMutationNecessary": true,
+    "endpointCodeMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "operatorAuthorization": "2026-09-02 operator authorized automatic portal publication when ready; 2026-09-02 operator prohibited further manual PowerShell input and directed portal-only execution tonight",
+    "boundedChange": "Keep the R10 detector, thresholds, source identities, and result selectors byte-for-byte unchanged. For each frozen DEV6 case only, create Q: to the exact slot anchor, verify the exact mapping and same-file identity, use only the frozen short BF/DF leaves, and remove only the owned exact mapping in finally and endpoint timeout cleanup. Reject a preoccupied or mismatched Q: without deletion."
+  },
+  "scope": {
+    "newNamespace": "work/OPENCV_EDGE_NOTCH_O3F12",
+    "liveRequestAuthorized": true,
+    "maximumLocalPackageBuilds": 1,
+    "maximumLocalEndpointRehearsals": 1,
+    "detectorImageAlgorithmChangeAllowed": false,
+    "detectorThresholdChangeAllowed": false,
+    "taskOrExistingProcessActionAllowed": false,
+    "ownedFixtureChildAllowed": true,
+    "temporaryOwnedSourceAliasAllowed": true,
+    "providerActivationAllowed": false,
+    "requestRetryAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false,
+  "signedArtifactFailure": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3F11/O3F11_SIGNED_TERMINAL_FAILURE_GATE.json",
+    "sha256": "8F86C3B31067A0B3643C973054EB4BE4F4D0D08CDD691F4423E88DA6F91F7EA4",
+    "classification": "SIGNED_ARTIFACT_SOURCE_PATH_ALIAS_CONTRACT_FAILURE_NOT_LIVE_STATE_PREMISE_FAILURE"
+  },
+  "blockedArtifacts": [
+    {
+      "namespace": "work/OPENCV_EDGE_NOTCH_O3F9",
+      "classification": "WITHDRAWN_DIAGNOSTIC_EVIDENCE_ONLY",
+      "futureReuseAllowed": false,
+      "publicationParentAllowed": false,
+      "requestRetryAuthorized": false
+    },
+    {
+      "namespace": "work/OPENCV_EDGE_NOTCH_O3F10",
+      "classification": "WITHDRAWN_DIAGNOSTIC_DIFF_SOURCE_ONLY",
+      "futureReuseAllowed": false,
+      "publicationParentAllowed": false,
+      "requestRetryAuthorized": false
+    },
+    {
+      "namespace": "work/OPENCV_EDGE_NOTCH_O3F11",
+      "classification": "SIGNED_TERMINAL_FAILURE_DIAGNOSTIC_DIFF_SOURCE_ONLY",
+      "futureReuseAllowed": false,
+      "publicationParentAllowed": false,
+      "requestRetryAuthorized": false
+    }
+  ]
+}

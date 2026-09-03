@@ -1,0 +1,95 @@
+{
+  "schema": "argos_project_portal_maintenance_definition_v1",
+  "revision": "OCV03_O3F12_R10_STAGED_DEV6_20260902A",
+  "state": "FROZEN_FOR_BUILD",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "entryPoint": "payload/Invoke-O3F12StagedEndpoint.ps1",
+  "maxResultBytes": 2097152,
+  "changes": [
+    {
+      "source": "payload/OCV03_NotchReviewOpenCvV1.py",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_NotchReviewOpenCvV1.py",
+      "approvedPredecessorSha256": [
+        "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4"
+      ],
+      "installedSha256": "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+      "allowCreate": false
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:/O3F9G12",
+      "mode": "CREATE_NEW_GATE_OUTPUT_TREE",
+      "failureQuarantine": "D:/O3F9G12.failed"
+    },
+    {
+      "targetRoot": "D:/O3F9D12",
+      "mode": "CREATE_NEW_DEV6_OUTPUT_TREE",
+      "failureQuarantine": "D:/O3F9D12.failed"
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "D:/O3F9G12/SUMMARY.json",
+      "mode": "CREATE_NEW",
+      "requiredState": "COMPLETE_O3F12_GATE"
+    },
+    {
+      "path": "D:/O3F9D12/SUMMARY.json",
+      "mode": "CREATE_NEW",
+      "requiredState": "COMPLETE_O3F12_DEV6"
+    }
+  ],
+  "sourceProcessingContract": {
+    "sourceImageReadAuthorized": true,
+    "detectorDevelopmentAllowed": true,
+    "thresholdOrAlgorithmChangeAllowed": false,
+    "stages": [
+      "SELF_TEST",
+      "PREFLIGHT",
+      "ROOT_CONTRACT",
+      "GATE",
+      "DEV6"
+    ],
+    "dev6Cardinality": 6,
+    "sourceAliasPlan": "payload/O3F12_DEV6_SOURCE_ALIAS_PLAN.json",
+    "sourceAliasPlanSha256": "2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C",
+    "temporarySourceAliasDrive": "Q:",
+    "temporarySourceAliasRequired": true,
+    "temporarySourceAliasMayReplaceExistingMapping": false,
+    "postResultSelectorRelaxationAllowed": false,
+    "holdClearanceAllowed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "taskRestartAllowed": false,
+    "existingProcessActionAllowed": false,
+    "processorRestartAllowed": false,
+    "providerActivationAllowed": false,
+    "waferActionAllowed": false,
+    "protocolAnchorInstalledBytesExpectedUnchanged": true,
+    "protocolAnchorExecutedByEntrypoint": false
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 1800,
+    "ownedOpenCvChildMaximumSeconds": 900,
+    "sequentialOwnedChildMaximumSeconds": 1440,
+    "outerCoversSequentialChildren": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_FIVE_SEQUENTIAL_BOUNDED_OWNED_O3F12_CHILDREN_ONLY",
+    "CREATE_QUERY_VERIFY_REMOVE_TEMPORARY_Q_SOURCE_ALIAS_PER_DEV6_CASE_WITH_ENDPOINT_TIMEOUT_CLEANUP_BACKSTOP"
+  ],
+  "rehearsal": {
+    "requiredState": "COMPLETE_O3F12_GATE_AND_DEV6_REVIEW_ONLY",
+    "gateState": "PASS_O3F12_EXACT_ENTRYPOINT_REHEARSAL",
+    "gateSha256": "27B00263A2926B5BEA59679B0942383621414B7A8947212F033B6F2F6167D887"
+  },
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

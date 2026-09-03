@@ -9878,3 +9878,35 @@ production scoring remains blocked.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F11_SOURCE_PATH_FAILURE_CHECKPOINT_20260902.md`,
 SHA-256 `60DADC2CE0E71837E96B23B24323E9BE795C4D5650FDD666A53AF0BDE041F573`.
+
+## OCV-03 O3F12 R10 DEV6 signed portal ready — 2026-09-02
+
+Disposition: `PENDING_GATE`
+
+O3F12 keeps exact R10
+`0EEEE7A396E918AF44082EC0930871A6A94C1FBB59D3F5CEF1AC34D1273745FA`
+and changes only staged-runner path access. Its frozen six-case/twelve-leaf
+plan maps temporary `Q:` to each exact selected slot root, verifies the exact
+mapping, reads only alias leaves, and removes its own mapping in `finally`.
+Endpoint timeout cleanup is also frozen. Fresh GATE and DEV6 roots are
+`D:/O3F9G12` and `D:/O3F9D12`.
+
+Exact endpoint, alias-lifecycle, signed-package Windows PowerShell 5.1,
+predecessor/idempotency, full 361-row route, and zero-pending share gates pass.
+Signed request `REQ_O3F12_20260902A`, ZIP
+`040A2302EC953B92A946863AB4D306174623E217D43BF6E445E1B54AA4525DB3`,
+is not published. O3F9/O3F10/O3F11 remain terminal, withdrawn, no-retry, and
+ineligible as publication parents.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F12_R10_DEV6_SIGNED_PORTAL_READY_CHECKPOINT_20260902.md`,
+SHA-256 `DE1997691C24C74F38F024285215FC87F056719115FD043007C88E73C8CA1446`.
+
+Exact next action: publish O3F12 exactly once through the recorded Project
+Portal route, without RustDesk, clipboard, PowerShell GUI, operator Enter, or
+retry, then collect only its matching signed terminal response. Preserve all
+184 O3F6/O3F7 holds, all twelve current `PatternedFront` holds, and rare
+hotspot Slot16; do not relax selectors or clear holds automatically. After a
+successful six-case result, continue automatically to targeted frontside BF/DF
+reconciliation, scribe, combined corpus/unified outputs, and site-bound
+fiducial/alignment prerequisites. Production scoring remains blocked.

@@ -1,0 +1,65 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "state": "PASS_O3F12_SIGNED_SOURCE_PATH_FAILURE_AND_FROZEN_ALIAS_REMEDY_EVIDENCE",
+  "incidentId": "OCV03_O3F12_R10_STAGED_DEV6",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "sources": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F11/O3F11_SIGNED_TERMINAL_FAILURE_GATE.json",
+      "sha256": "8F86C3B31067A0B3643C973054EB4BE4F4D0D08CDD691F4423E88DA6F91F7EA4",
+      "expected": {
+        "classification": "SIGNED_ARTIFACT_SOURCE_PATH_ALIAS_CONTRACT_FAILURE_NOT_LIVE_STATE_PREMISE_FAILURE",
+        "requestId": "REQ_O3F11_20260902A",
+        "sourceImageBytesRead": false,
+        "canonicalSourceEffectiveLength": 210,
+        "dev6ImageExecutionStarted": false
+      },
+      "observed": {
+        "classification": "SIGNED_ARTIFACT_SOURCE_PATH_ALIAS_CONTRACT_FAILURE_NOT_LIVE_STATE_PREMISE_FAILURE",
+        "requestId": "REQ_O3F11_20260902A",
+        "sourceImageBytesRead": false,
+        "canonicalSourceEffectiveLength": 210,
+        "dev6ImageExecutionStarted": false
+      }
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F12/O3F12_DEV6_SOURCE_ALIAS_PLAN.json",
+      "sha256": "2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C",
+      "expected": {
+        "state": "FROZEN_FOR_BUILD",
+        "aliasDrive": "Q:",
+        "caseCount": 6,
+        "sourceLeafCount": 12,
+        "pathSuffixReserve": 32
+      },
+      "observed": {
+        "state": "FROZEN_FOR_BUILD",
+        "aliasDrive": "Q:",
+        "caseCount": 6,
+        "sourceLeafCount": 12,
+        "pathSuffixReserve": 32
+      }
+    },
+    {
+      "path": "work/O3F8/Run-O3F12Staged.py",
+      "sha256": "7FA26CF830CAE3FFEB1B34295408E6551F96003A9AC3E07896F750BE5B8492A1",
+      "expected": {
+        "detectorSha256": "0EEEE7A396E918AF44082EC0930871A6A94C1FBB59D3F5CEF1AC34D1273745FA",
+        "sourceAliasPlanSha256": "2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C",
+        "postResultSelectorRelaxation": false
+      },
+      "observed": {
+        "detectorSha256": "0EEEE7A396E918AF44082EC0930871A6A94C1FBB59D3F5CEF1AC34D1273745FA",
+        "sourceAliasPlanSha256": "2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C",
+        "postResultSelectorRelaxation": false
+      }
+    }
+  ],
+  "observationOnly": true,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

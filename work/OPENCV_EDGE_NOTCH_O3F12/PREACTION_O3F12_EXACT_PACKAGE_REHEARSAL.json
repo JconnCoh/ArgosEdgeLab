@@ -1,0 +1,71 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3F12_EXACT_PACKAGE_AND_WORKER_REHEARSAL_20260903T035746Z",
+  "createdUtc": "2026-09-03T03:57:46Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "WINDOWS_POWERSHELL_51_O3F12_EXACT_SIGNED_PACKAGE_AND_MAINTENANCE_WORKER_REHEARSAL",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"A05EC5EABA61E95AEF2DE9BF28DF127DF81643F121D66DE598A7E46B9B162F27"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F12/Test-O3F12FinalPackage.ps1","sha256":"3AB8FC341C96AE3082A534B4DD183AC10937122AFA67CFE6FAA12666951D5E24"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F12/O3F12_PACKAGE_TEST_CLONE_LITERAL_GATE_R2.json","sha256":"DA5BDA76F6FE7C6CB0679C32862D64AA0CA0F64573A23A4F4A43AC1C6040B41A"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F12/final_o3f12/REQ_O3F12_20260902A.ready.zip","sha256":"040A2302EC953B92A946863AB4D306174623E217D43BF6E445E1B54AA4525DB3"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F12/O3F12_FINAL_PACKAGE_GATE.json","sha256":"8686D7F30ECD807D941D1929619EFB6615DF0A69612E4BA14E3826F7C8FC54C3"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F12/O3F12_ENDPOINT_REHEARSAL_GATE.json","sha256":"27B00263A2926B5BEA59679B0942383621414B7A8947212F033B6F2F6167D887"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F12/O3F12_BUILD_SIGN_PREACTION_GATE.json","sha256":"B15C600B19C969F7253F95576A6598B805A54E16AF426421CADFBB9E3E82AEDA"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalPackage.ps1","sha256":"6CA21D7DE97EDE88F2C41F91D5B7801C688982C8C5A422987EB9528E1E9A084B"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalResponse.ps1","sha256":"4AF5901A7B9DFFF5A4DAF128960173D67501ABF6FF87C586BA526643B1C1449C"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/state/LAPTOP_SIGNING_IDENTITY.json","sha256":"3FD8164D1869375156FB7566D206FEAB97AE8A9E7D377B0AD4E03739ED697289"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/ARGOS_PROJECT_PORTAL_LAPTOP_SIGNER_PUBLIC.cer","sha256":"2B434D0CF6A0D6D69AAE3D280032EFF00807D423CA3B3D7F2EFC1C6BB628BFFF"},
+    {"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    {"path":"work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json","sha256":"170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"},
+    {"path":"work/FIDUCIAL_OPENCV_V1/portable/stage/python.exe","sha256":"7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":[]},
+  "blockedArtifacts": [
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F9","classification":"WITHDRAWN_DIAGNOSTIC_DIFF_SOURCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F10","classification":"SIGNED_TERMINAL_FAILURE_DIAGNOSTIC_SOURCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F11","classification":"SIGNED_TERMINAL_FAILURE_DIAGNOSTIC_SOURCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false}
+  ],
+  "scope": {
+    "classification": "LOCAL_EXACT_SIGNED_PACKAGE_AND_PINNED_WORKER_REHEARSAL",
+    "fixtureRoot": "C:/A12R",
+    "workerCases": ["APPROVED", "IDEMPOTENT", "UNAPPROVED"],
+    "maximumHarnessExecutions": 1,
+    "localFixtureSigningOnly": true,
+    "externalPublication": false,
+    "jbodExecution": false,
+    "sourceImageBytesRead": false,
+    "sourceMutation": false,
+    "taskOrExistingProcessAction": false,
+    "providerActivation": false,
+    "requestRetryAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
