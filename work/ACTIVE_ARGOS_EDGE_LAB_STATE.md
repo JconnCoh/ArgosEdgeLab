@@ -9425,3 +9425,22 @@ bounded blind validation, including independent W/Z examples if present. Keep
 `I/O/V/Y` as explicit coverage holds and do not run the full KLARF directory.
 No activation, identity acceptance, hold clearance, XML, training, production,
 JBOD, portal, queue, task/process, source-image, or wafer action is authorized.
+
+# 2026-09-03 — OCV-02 R18E pixel-blind cohort frozen (`PENDING_GATE`)
+
+Fresh R18E selects eight still-unresolved current-reader acquisitions across
+six lot families, with zero R17A/R18A overlap and no newly selected pixels
+read. The development/blind split includes two unseen W-family neighbors,
+fresh K/X-family cases, a difficult Post2 case, and three additional reader
+failures. Lot context selects candidates only and assigns no truth.
+
+The exact future pull is limited to 24 already existing proposal and paired
+BF/DF oriented-crop files beneath `JBOD_PROCESSOR_REVIEW`, with a 50 MiB cap.
+Checkpoint:
+`work/OPENCV_SCRIBE_R18E/R18E_PIXEL_BLIND_COHORT_FROZEN_CHECKPOINT_20260903.md`,
+SHA-256 `09B3B108D1690AC98DE28E85CA569CDFEDA431BA8D13BDF383006546DF3B9D99`.
+
+Exact next scribe-lane action: build and locally gate one fresh signed R18E
+`DATA_PULL` package. Do not publish until the operator explicitly says
+`PUBLISH` for R18E. No retry, activation, identity acceptance, hold clearance,
+XML, training, production, source, queue, task/process, or wafer action.

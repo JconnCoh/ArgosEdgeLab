@@ -1,0 +1,130 @@
+{
+  "authority": {
+    "automaticHoldClearance": false,
+    "identityAcceptance": false,
+    "maximumPublicationsAfterExplicitPublish": 1,
+    "portalPublicationAuthorized": false,
+    "productionEligible": false,
+    "providerActivation": false,
+    "retryAuthorized": false,
+    "reviewOnly": true,
+    "trainingAuthorized": false,
+    "xmlEligible": false
+  },
+  "classification": "PENDING_GATE",
+  "decisionContract": {
+    "automaticIdentityAssignment": false,
+    "blankOrNotLocalizedMayProduceString": false,
+    "checksumRole": "VERIFY_IMAGE_FIRST_ONLY",
+    "imageFirstRequired": true,
+    "lotFamilyMaySuggestCandidateVocabularyButMayNotAssignTruth": true,
+    "missingReferenceAdmission": false,
+    "operatorConfirmationRequired": true
+  },
+  "frozenReader": {
+    "algorithmPath": "work/OPENCV_SCRIBE_R18C/ArgosOpenCvScribeV1R18C.py",
+    "algorithmSha256": "44654C1B3136F8BF93E84D93D272DA020D6C33E26E7DC5B66EF7F00D32518C17",
+    "diagnosticProviderPath": "work/OPENCV_SCRIBE_R18D/ArgosOpenCvScribeV1R18D.py",
+    "diagnosticProviderSha256": "39E44AE48A76DA0BDF25490BD3EFE49EC98770B0B10BE6DF0FF57373951B95A1",
+    "supplementalManifestSha256": "8B7F0BAC5892DA7BBB4D25CDD058CC995042A0C596F3790FE333AAAEEE43D60A"
+  },
+  "partitions": {
+    "blindPixelsMayBeInspectedOnlyAfterFrozenReaderVerified": true,
+    "blindValidation": [
+      {
+        "installedReaderFailure": "BOUNDED_IMAGE_SUPPORTED_M12_RERANK",
+        "installedReaderState": "PROPOSAL_READY_OPERATOR_CONFIRMATION_REQUIRED",
+        "metadataSelectionRationale": "W_FAMILY_ADJACENT_UNSEEN_NO_TRUTH_INFERRED",
+        "physicalIdentity": "62633-726_20260818204139_Slot21",
+        "recordedProposal": "148AU101SUB6",
+        "visibleTruthKnownBeforePixelReview": false
+      },
+      {
+        "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL",
+        "installedReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+        "metadataSelectionRationale": "DIFFICULT_POST2_READER_FAILURE",
+        "physicalIdentity": "Lot-62546-481-POST2_20260713155808_Slot14",
+        "recordedProposal": "",
+        "visibleTruthKnownBeforePixelReview": false
+      },
+      {
+        "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL",
+        "installedReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+        "metadataSelectionRationale": "DISTINCT_BOWCOMP_READER_FAILURE",
+        "physicalIdentity": "62624-869_20260720115731_Slot02",
+        "recordedProposal": "",
+        "visibleTruthKnownBeforePixelReview": false
+      },
+      {
+        "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL",
+        "installedReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+        "metadataSelectionRationale": "JQ_FAMILY_READER_FAILURE_NO_TRUTH_INFERRED",
+        "physicalIdentity": "62625-956_20260729122701_Slot18",
+        "recordedProposal": "",
+        "visibleTruthKnownBeforePixelReview": false
+      }
+    ],
+    "development": [
+      {
+        "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL",
+        "installedReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+        "metadataSelectionRationale": "W_FAMILY_ADJACENT_UNSEEN_NO_TRUTH_INFERRED",
+        "physicalIdentity": "62633-726_20260818204139_Slot20",
+        "recordedProposal": "",
+        "visibleTruthKnownBeforePixelReview": false
+      },
+      {
+        "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL",
+        "installedReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+        "metadataSelectionRationale": "KX_FAMILY_FRESH_ACQUISITION_NO_TRUTH_INFERRED",
+        "physicalIdentity": "62546-481-POST_20260713041740_Slot22",
+        "recordedProposal": "",
+        "visibleTruthKnownBeforePixelReview": false
+      },
+      {
+        "installedReaderFailure": "NO_PROPOSAL_SEGMENTATION_INCOMPLETE",
+        "installedReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+        "metadataSelectionRationale": "X_FAMILY_DIFFERENT_SLOT_NO_TRUTH_INFERRED",
+        "physicalIdentity": "62625-907-PRE_20260709123021_Slot14",
+        "recordedProposal": "",
+        "visibleTruthKnownBeforePixelReview": false
+      },
+      {
+        "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL",
+        "installedReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+        "metadataSelectionRationale": "JQ_FAMILY_READER_FAILURE_NO_TRUTH_INFERRED",
+        "physicalIdentity": "62627-098_20260729105955_Slot16",
+        "recordedProposal": "",
+        "visibleTruthKnownBeforePixelReview": false
+      }
+    ],
+    "distinctLotFamilyCount": 6,
+    "exactPhysicalAcquisitionOverlap": 0,
+    "priorCohortOverlap": 0
+  },
+  "revision": "OCV02_R18E_FRESH_FAILURE_FIRST_20260903",
+  "schema": "argos_opencv_scribe_r18e_failure_first_cohort_v1",
+  "selectionEvidence": {
+    "eligibleUnusedRowsBeforeSelection": 136,
+    "queuePath": "C:\\L586R2\\R_E3DAC141D1B8_20260821204234226_d8edfaff.ready\\DATA_PULL_PAYLOAD\\data\\JBOD_PROCESSOR_REVIEW\\identity\\SCRIBE_IDENTITY_QUEUE.json",
+    "queueRows": 966,
+    "queueSha256": "BB740FEA504FCA97E1AA98EAF03C65B348875CF325D8EB7A671A80A41C05BA81",
+    "r17aExcludedAcquisitions": 8,
+    "r18aExcludedAcquisitions": 8,
+    "waferPixelsReadForSelection": false
+  },
+  "sourceContract": {
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "existingFilesOnly": true,
+    "fullWaferTransfer": false,
+    "maximumBytes": 50331648,
+    "newCropGeneration": false,
+    "perAcquisitionFiles": [
+      "SCRIBE_PROPOSAL.json",
+      "scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png"
+    ],
+    "requestedFiles": 24,
+    "sourceMutation": false
+  }
+}
