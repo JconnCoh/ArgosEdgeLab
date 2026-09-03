@@ -10204,3 +10204,45 @@ fixed, and RustDesk/operator input remain prohibited.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L3_LOCAL_DIAGNOSTIC_PASS_CHECKPOINT_20260903.md`,
 SHA-256 `9E9FA5E8D88CE2BCB4D9E40F5B5AAA51EBBB0468BC967B75E14EC444B9D48816`.
+
+## OCV-03 O3F15L3 signed portal diagnostic ready — 2026-09-03
+
+Disposition: `PENDING_GATE`
+
+Fresh request `REQ_20260903T090514331Z_84BB875EEFD2`, ZIP
+`CD681FD47BFF21DE532AC430176D543FF93EF19E1AE8462BE6745A6ECCA86FEA`,
+is signed, exact-package rehearsed, completely path-gated, and unpublished.
+Clone `11139451098E54C9AC41BAD04B9E8E5BA5603AB94222AA36589D352D1747BF91`,
+build `98EE31BAADDB444CAE42E0B15987902A2EB469DF9440FDB3AAD2F198FD954DDE`,
+sign `9BC1A9AE28B25A7E26E9B1BD1250780E43CB70EDDD848CE2C2C643151B37970E`,
+exact PS5.1 ZIP rehearsal
+`C7CF8D164E70B2ACD8BE155FAAA622C11E6186347C93204B4F7B698ACD522B65`,
+and adjacent route/path
+`801BA0AD71EB4FE340DF414FCB120D52474AD9B95911B6B41D9606D3FE61916D`
+gates pass. The route covers 101 actionable leaves at maximum effective length
+193 and exercises effective boundaries 199, 200, 229, and 230.
+
+All five packaged diagnostic projections preserve raw child exit/stdout/stderr
+before success interpretation and use exactly one owned fixture child. The
+same extracted package passes approved, idempotent, and unapproved predecessor
+cases through the unchanged endpoint worker. The signed live request authorizes
+only `python.exe -I -B Run-O3F15FrontReconcile.py PREFLIGHT`; SELF_TEST, other
+tests, GATE, RUN, result roots, image reads, full corpus, existing task/process
+action, provider activation, retry, and hold clearance remain false.
+
+All 184 frontside and twelve current `PatternedFront` holds remain explicit,
+including Slot02 ambiguity and rare-hotspot Slot16. L2 remains terminal,
+withdrawn, no-retry, non-reusable, and non-parent. Every scribe, combined-
+output, fiducial, map, pose, coverage, sensitivity, registration, and alignment
+prerequisite remains in order.
+
+Create the one-publication preaction and frozen invocation, commit/push the
+exact bytes, then publish this request once through the unchanged Project
+Portal route and collect only its matching signed terminal response. A child
+PASS or FAIL is diagnostic evidence; stop after collection without retry.
+Review-only remains true; training, XML, production eligibility, and production
+routing remain false. No RustDesk or operator input is permitted.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L3_SIGNED_PORTAL_READY_CHECKPOINT_20260903.md`,
+SHA-256 `1C97A841150F1539F4298635A2FFF5BC17FFE46DBBB5E84B20985EBC2EC876B8`.

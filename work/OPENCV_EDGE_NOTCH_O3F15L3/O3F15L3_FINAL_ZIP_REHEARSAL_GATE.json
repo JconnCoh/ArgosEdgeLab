@@ -1,0 +1,121 @@
+{
+    "schema":  "argos_ocv03_o3f15l3_final_zip_rehearsal_gate_v1",
+    "createdUtc":  "2026-09-03T09:08:42.0851086Z",
+    "state":  "PASS_O3F15L3_FINAL_ZIP_WINDOWS_PS51_REHEARSAL",
+    "requestId":  "REQ_20260903T090514331Z_84BB875EEFD2",
+    "packageZipPath":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3F15L3\\final_o3f15l3\\REQ_20260903T090514331Z_84BB875EEFD2.ready.zip",
+    "packageZipBytes":  118133,
+    "packageZipSha256":  "CD681FD47BFF21DE532AC430176D543FF93EF19E1AE8462BE6745A6ECCA86FEA",
+    "windowsPowerShell":  {
+                              "major":  5,
+                              "minor":  1
+                          },
+    "exactSignedZipExtracted":  true,
+    "signatureVerified":  true,
+    "payloadHashCount":  16,
+    "packageLeafState":  "PASS_O3F15L3_EXACT_PACKAGED_DIAGNOSTIC_LEAVES",
+    "exactDiagnosticCaseCount":  5,
+    "diagnosticCases":  [
+                            {
+                                "mode":  "PASS",
+                                "childOutcome":  "PASS",
+                                "childExitCode":  0,
+                                "childTimedOut":  false,
+                                "stdoutSha256":  "8F8B09F78B563417E28DB143DCAA45E52EC90229569F85155ECAADE7A87BF96D",
+                                "stderrSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                            },
+                            {
+                                "mode":  "NONZERO_BOTH",
+                                "childOutcome":  "FAIL",
+                                "childExitCode":  7,
+                                "childTimedOut":  false,
+                                "stdoutSha256":  "04E0B4277988290225165117851F5177D45292986E9D80E76BC20EB5CB2351D1",
+                                "stderrSha256":  "E3BAE573DEE9BC543442213A967DD9496208B91804D903BAFBB96DE79E937565"
+                            },
+                            {
+                                "mode":  "ZERO_STDERR",
+                                "childOutcome":  "FAIL",
+                                "childExitCode":  0,
+                                "childTimedOut":  false,
+                                "stdoutSha256":  "8F8B09F78B563417E28DB143DCAA45E52EC90229569F85155ECAADE7A87BF96D",
+                                "stderrSha256":  "2B63C34BE2B02B09775C9CF86B3194FB86E258036A00455DD900FD5DDE7302C2"
+                            },
+                            {
+                                "mode":  "MALFORMED",
+                                "childOutcome":  "FAIL",
+                                "childExitCode":  0,
+                                "childTimedOut":  false,
+                                "stdoutSha256":  "D486E2C07CC0ABDADE38050008A60A1DEE2BCCDC1CD531240A5D3A58D824B9B0",
+                                "stderrSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                            },
+                            {
+                                "mode":  "TIMEOUT",
+                                "childOutcome":  "FAIL",
+                                "childExitCode":  -1,
+                                "childTimedOut":  true,
+                                "stdoutSha256":  "CED3012600C30172F53D58E32D82AF04F17C7D228F589CC1571550E683467A43",
+                                "stderrSha256":  "CB58E01544F4FE5B97A131DDEFDA47B2E9B74F2357CA4082B016A2587E8D5E24"
+                            }
+                        ],
+    "rawStreamsProjectedBeforeSuccessPredicate":  true,
+    "exactOwnedChildCountPerCase":  1,
+    "selfTestStarted":  false,
+    "gateStarted":  false,
+    "runStarted":  false,
+    "detectorResultRootCreated":  false,
+    "imageBytesRead":  false,
+    "maintenanceValidationCaseCount":  3,
+    "maintenanceValidationCases":  [
+                                       {
+                                           "case":  "APPROVED",
+                                           "endpointState":  "PASS_MAINTENANCE_PATCH",
+                                           "requestManifestSha256":  "2602F57783354FEE9ADDEF96153D34E7D408FB26914F7C5B88ABB1D5127F06E4",
+                                           "approvedPredecessor":  true,
+                                           "beforeSha256":  "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+                                           "afterSha256":  "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+                                           "installLeafCount":  1,
+                                           "refusedBeforeMutation":  false
+                                       },
+                                       {
+                                           "case":  "IDEMPOTENT",
+                                           "endpointState":  "PASS_MAINTENANCE_PATCH",
+                                           "requestManifestSha256":  "28DDE037353C091C0E4FB85A14ACFB3D47E7D4FDC006B63233504A0D0A14AECE",
+                                           "approvedPredecessor":  true,
+                                           "beforeSha256":  "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+                                           "afterSha256":  "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+                                           "installLeafCount":  1,
+                                           "refusedBeforeMutation":  false
+                                       },
+                                       {
+                                           "case":  "UNAPPROVED",
+                                           "endpointState":  "FAILED",
+                                           "requestManifestSha256":  "A030243AC1BADCC4A531DAA13E4487F79448F10EA2AD18B4A6B52A1B946A70DF",
+                                           "approvedPredecessor":  false,
+                                           "beforeSha256":  "316E5C59AD3CBB1249441537B145E0F0D6CAE764C1580362FD8746365DF1F3D7",
+                                           "afterSha256":  "316E5C59AD3CBB1249441537B145E0F0D6CAE764C1580362FD8746365DF1F3D7",
+                                           "installLeafCount":  1,
+                                           "refusedBeforeMutation":  true
+                                       }
+                                   ],
+    "approvedPredecessorExercisedThroughEndpointWorker":  true,
+    "targetHashIdempotentCasePassed":  true,
+    "unapprovedPredecessorRefusedBeforeMutation":  true,
+    "endpointWorkerSha256":  "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "installedRouteConfigEvidenceSha256":  "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "queueSafetyGateSha256":  "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+    "exactEndpointQueueRollbackRehearsalInherited":  true,
+    "fixtureRoot":  "C:\\O3F15L3V1",
+    "fixturePreserved":  true,
+    "targetOrJbodAccessed":  false,
+    "sourceImageBytesRead":  false,
+    "existingProcessesQueried":  false,
+    "existingProcessOrTaskActionPerformed":  false,
+    "providerActivated":  false,
+    "requestRetryAuthorized":  false,
+    "mutationsPerformed":  false,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false
+}

@@ -1,0 +1,67 @@
+{
+    "schema":  "argos_ocv03_o3f15l3_complete_route_gate_v1",
+    "createdUtc":  "2026-09-03T09:08:53.2218340Z",
+    "state":  "PASS_O3F15L3_SIGNED_AND_PATH_GATED",
+    "requestId":  "REQ_20260903T090514331Z_84BB875EEFD2",
+    "finalRoot":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3F15L3\\final_o3f15l3",
+    "packageZipPath":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3F15L3\\final_o3f15l3\\REQ_20260903T090514331Z_84BB875EEFD2.ready.zip",
+    "pathGatePath":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3F15L3\\final_o3f15l3\\O3F15L3_PREPUBLICATION_PATH_GATE.json",
+    "packageZipAndPathGateAdjacent":  true,
+    "packageZipSha256":  "CD681FD47BFF21DE532AC430176D543FF93EF19E1AE8462BE6745A6ECCA86FEA",
+    "requestManifestSha256":  "654163E54DC0166EEA56704772810A7002A57A57354D52FBAAFC99CC3208215F",
+    "requestSignatureSha256":  "1551E1CC4681AEC5B51803AB7F3C627D8A5E956D28973EEDC97BA9F27C4344FC",
+    "installedRouteConfigRevisionSha256":  "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "endpointWorkerSha256":  "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "queueSafetyGateSha256":  "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+    "queueSafetyChecksInherited":  [
+                                       "PATH_BOUNDARIES_199_200_229_230",
+                                       "STALE_WORK_COLLISION_AND_SECOND_QUEUE_ITEM",
+                                       "INJECTED_RESPONSE_FAILURE_COMPACT_AND_QUEUE_ADVANCE",
+                                       "FORCED_TERMINATION_AND_RESTART",
+                                       "REQUEST_REPLAY_NO_DUPLICATE_RESPONSE",
+                                       "UNAPPROVED_PREDECESSOR_REFUSED_BEFORE_MUTATION"
+                                   ],
+    "reservedSuffixCharacters":  32,
+    "actionablePathCount":  101,
+    "maximumActionableEffectiveLength":  193,
+    "maximumActionableComponentLength":  55,
+    "longestActionablePath":  "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\R_0123456789AB_20260903235959999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.json",
+    "exactBoundaryTests":  [
+                               {
+                                   "effectiveLength":  199,
+                                   "state":  "PASS_PATH_BUDGET",
+                                   "exitCode":  0,
+                                   "candidate":  "C:\\O3F15L3B\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\x"
+                               },
+                               {
+                                   "effectiveLength":  200,
+                                   "state":  "SHORT_ALIAS_REQUIRED_BEFORE_WRITE_OR_LAUNCH",
+                                   "exitCode":  1,
+                                   "candidate":  "C:\\O3F15L3B\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\xx"
+                               },
+                               {
+                                   "effectiveLength":  229,
+                                   "state":  "SHORT_ALIAS_REQUIRED_BEFORE_WRITE_OR_LAUNCH",
+                                   "exitCode":  1,
+                                   "candidate":  "C:\\O3F15L3B\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\xxxxxxxxx"
+                               },
+                               {
+                                   "effectiveLength":  230,
+                                   "state":  "HARD_STOP_SHORTEN_BEFORE_WRITE_OR_LAUNCH",
+                                   "exitCode":  2,
+                                   "candidate":  "C:\\O3F15L3B\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\1234567890\\xxxxxxxxxx"
+                               }
+                           ],
+    "payloadFileCount":  16,
+    "longestRelativePayloadLeaf":  "payload/FullPerimeterWaferTopologyOpenCvR11.py",
+    "maximumResultBytes":  1048576,
+    "expandedSigningRootIsShortPhysicalRoot":  true,
+    "resultRootCreationAuthorized":  false,
+    "imageReadsAuthorized":  false,
+    "matchingSignedTerminalResponseRequired":  true,
+    "gatewayAcceptanceIsExecutionEvidence":  false,
+    "requestRetryAuthorized":  false,
+    "mutationsPerformed":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}
