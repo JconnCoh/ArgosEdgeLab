@@ -1,0 +1,101 @@
+{
+  "schema": "argos_opencv_scribe_r17b_local_gate_v1",
+  "revision": "ARGOS_OPENCV_SCRIBE_V1R17B_20260903",
+  "createdUtc": "2026-09-03T15:55:27.1359352Z",
+  "status": "PASS_DIAGNOSTIC_ONLY",
+  "classification": "DIAGNOSTIC_ONLY",
+  "purpose": "Require independent twelve-cell dot-matrix evidence before any OCR or checksum scoring.",
+  "artifacts": {
+    "provider": {
+      "path": "work/OPENCV_SCRIBE_R17B/ArgosOpenCvScribeV1R17B.py",
+      "sha256": "67B18CEDDAE25E186B60C1A78F3685A81C5B300224BC0E29448BE5DD99A5D5F9"
+    },
+    "test": {
+      "path": "work/OPENCV_SCRIBE_R17B/Test-ArgosOpenCvScribeR17B.py",
+      "sha256": "D1ECD92E80C784D7E3EE79791FAFA138979F558AA453AEF6F4A309D8FE3375CC"
+    },
+    "r11DependencySha256": "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9",
+    "r12bDependencySha256": "D670CFCE64BF5FDF5307E69ED69A05CB7B404A78B521AB889C7F35044D666FDC",
+    "r16bSupplementLoaderSha256": "3D074A9F1031A8243F49748E560EC802611765528BD49D554201CDB1F0BD5BCD",
+    "supplementalManifestSha256": "9F78AD34B8707DBB925AE5D569785FD5F67782B92E9FC35A664CD8887C63BBEC"
+  },
+  "developmentCases": [
+    {
+      "caseId": "Lot-62546-481-POST2_20260713155808_Slot02",
+      "bfSha256": "16D4F8456F638AE0365DD20D96411BFFBE410942E3A4E98E471D6A97BC551A17",
+      "dfSha256": "7395DE5E3D20314102BFA48B86E95278803217B3EE0899E5ABAC889B7C2EBD53",
+      "expected": "SCRIBE_PRESENT_FOR_OCR",
+      "actual": "SCRIBE_PRESENT_FOR_OCR"
+    },
+    {
+      "caseId": "Lot-62546-481-POST2_20260713155808_Slot18",
+      "bfSha256": "CD24F8EFBAA9067DE2AE422D26EF38F8D9A26CB72C0B99906739885F50C39205",
+      "dfSha256": "6CC2238AA53FE0103DCD98D2CF09F87E9720FFB32A0C20EC510A3569190AAF97",
+      "expected": "HOLD_SCRIBE_NOT_LOCALIZED",
+      "actual": "HOLD_SCRIBE_NOT_LOCALIZED",
+      "predecessorFalseProposalRejected": "FGECCG0029C4"
+    },
+    {
+      "caseId": "62620-548_20260810154124_Slot01",
+      "bfSha256": "E7AF941AE50D85F9E09AD995977EA8E0576A86CF14C15C564CAB1F9BDC961848",
+      "dfSha256": "0D47655AB33E92C67B00EAC3330484862B3B74ED21A267FC45B8B9388D749A79",
+      "expected": "SCRIBE_PRESENT_FOR_OCR",
+      "actual": "SCRIBE_PRESENT_FOR_OCR"
+    },
+    {
+      "caseId": "dev-01-post-8-19_20260819164148_Slot01",
+      "bfSha256": "2C213D86448BABB29923E3B80E69AC9CDF2DEADC8B781DB39C359ADE8E097C1E",
+      "dfSha256": "B82BE2D4AC38BF78DD5C9FE58ADF915C7781484DE2BC3AF70C0D76016506F324",
+      "expected": "HOLD_SCRIBE_NOT_LOCALIZED",
+      "actual": "HOLD_SCRIBE_NOT_LOCALIZED"
+    }
+  ],
+  "wholeWaferRegressions": [
+    {
+      "caseId": "POST2_S01",
+      "string": "3912P014FED2",
+      "checksumValid": true,
+      "candidateCount": 1,
+      "resultSha256": "3E9E19B2A4D86B2B6849BE39590115BA209A076055D1D106544D4431F8D71D70"
+    },
+    {
+      "caseId": "POST2_S03",
+      "string": "2659P076FEF4",
+      "checksumValid": true,
+      "candidateCount": 1,
+      "resultSha256": "4030A5E79CF8A8D8BB2307BE43877A5F8B4550CEC4D7DE2823FF59315B4173D1"
+    },
+    {
+      "caseId": "POST2_S17_MISPLACED",
+      "string": "6KB71041XDE5",
+      "checksumValid": true,
+      "route": "PERIMETER_PAIRED_BF_DF_01_TO_R12B_BLOB_TOPOLOGY",
+      "resultSha256": "733FE47413409AB96D3DA86DFDD5C9BD28A4A35A120425CD7889162147AA4D4F"
+    }
+  ],
+  "invariants": {
+    "blankCropMayEmitString": false,
+    "checksumMayRescueAbsentStructure": false,
+    "notLocalizedImageFirstString": "",
+    "notLocalizedProposedString": "",
+    "notLocalizedCandidateCount": 0,
+    "blindCasesReadBeforeFreeze": 0
+  },
+  "blindCohort": [
+    "Lot-62546-481-POST2_20260713155808_Slot20",
+    "Lot-62546-481-POST2_20260713155808_Slot23",
+    "62627-193_20260820124250_Slot01",
+    "62625-956_20260729122701_Slot17"
+  ],
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "identityAdmissionAuthorized": false,
+    "activationAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "mayClearHolds": false,
+    "publicationAuthorized": false
+  }
+}
