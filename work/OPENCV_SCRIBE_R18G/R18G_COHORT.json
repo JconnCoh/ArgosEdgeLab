@@ -1,0 +1,139 @@
+{
+  "authority": {
+    "automaticHoldClearance": false,
+    "identityAcceptance": false,
+    "maximumPublicationsAfterExplicitPublish": 1,
+    "portalPublicationAuthorized": false,
+    "productionEligible": false,
+    "providerActivation": false,
+    "retryAuthorized": false,
+    "reviewOnly": true,
+    "trainingAuthorized": false,
+    "xmlEligible": false
+  },
+  "classification": "PENDING_GATE",
+  "decisionContract": {
+    "automaticIdentityAssignment": false,
+    "blankOrNotLocalizedMayProduceString": false,
+    "checksumRole": "VERIFY_IMAGE_FIRST_ONLY",
+    "imageFirstRequired": true,
+    "lotFamilyMaySuggestCandidateVocabularyButMayNotAssignTruth": true,
+    "missingReferenceAdmission": false,
+    "operatorConfirmationRequired": true
+  },
+  "frozenReader": {
+    "loaderPath": "work/OPENCV_SCRIBE_R18F/ArgosOpenCvScribeSupplementLoaderR18F.py",
+    "loaderSha256": "D458E7D97B846A6DE44175CDDC70928E48632C3EFBE3014DC5555026C64BE2D5",
+    "missingReferenceLabels": [
+      "I",
+      "O",
+      "V",
+      "Y"
+    ],
+    "providerPath": "work/OPENCV_SCRIBE_R18F/ArgosOpenCvScribeV1R18F.py",
+    "providerSha256": "0E2CD994BB389F1DB5A50FCB2C5C9D0DD6C906925E206C913CB0FCEC1B1543B1",
+    "supplementalManifestSha256": "FD60D494A25B489A8F1D8581217457AD67B02C98D54CA0A5400FAC0611537114"
+  },
+  "partitions": {
+    "blindPixelsMayBeInspectedOnlyAfterFrozenReaderVerified": true,
+    "blindValidation": [
+      {
+        "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL",
+        "installedReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+        "metadataSelectionRationale": "DIFFICULT_POST2_CHECKSUM_INVALID",
+        "physicalIdentity": "Lot-62546-481-POST2_20260713155808_Slot25",
+        "recordedProposal": "",
+        "visibleTruthKnownBeforePixelReview": false
+      },
+      {
+        "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL",
+        "installedReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+        "metadataSelectionRationale": "CHECKSUM_INVALID_NEW_LOT_FAMILY",
+        "physicalIdentity": "62618-252_20260715115352_Slot02",
+        "recordedProposal": "",
+        "visibleTruthKnownBeforePixelReview": false
+      },
+      {
+        "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL",
+        "installedReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+        "metadataSelectionRationale": "CHECKSUM_INVALID_NEW_LOT_FAMILY",
+        "physicalIdentity": "62625-957_20260729124737_Slot25",
+        "recordedProposal": "",
+        "visibleTruthKnownBeforePixelReview": false
+      },
+      {
+        "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL",
+        "installedReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+        "metadataSelectionRationale": "CHECKSUM_INVALID_NEW_LOT_FAMILY",
+        "physicalIdentity": "62627-127_20260728152158_Slot17",
+        "recordedProposal": "",
+        "visibleTruthKnownBeforePixelReview": false
+      }
+    ],
+    "development": [
+      {
+        "installedReaderFailure": "BOUNDED_IMAGE_SUPPORTED_M12_RERANK",
+        "installedReaderState": "PROPOSAL_READY_OPERATOR_CONFIRMATION_REQUIRED",
+        "metadataSelectionRationale": "DIFFICULT_POST2_RERANK_FAILURE",
+        "physicalIdentity": "Lot-62546-481-POST2_20260713155808_Slot17",
+        "recordedProposal": "00B0000669E4",
+        "visibleTruthKnownBeforePixelReview": false
+      },
+      {
+        "installedReaderFailure": "NO_PROPOSAL_SEGMENTATION_INCOMPLETE",
+        "installedReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+        "metadataSelectionRationale": "SEGMENTATION_INCOMPLETE_NEW_LOT_FAMILY",
+        "physicalIdentity": "62620-548_20260810154124_Slot05",
+        "recordedProposal": "",
+        "visibleTruthKnownBeforePixelReview": false
+      },
+      {
+        "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL",
+        "installedReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+        "metadataSelectionRationale": "CHECKSUM_INVALID_NEW_LOT_FAMILY",
+        "physicalIdentity": "62624-855_20260721120719_Slot08",
+        "recordedProposal": "",
+        "visibleTruthKnownBeforePixelReview": false
+      },
+      {
+        "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL",
+        "installedReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+        "metadataSelectionRationale": "POST_CONTEXT_CHECKSUM_INVALID_NEW_ACQUISITION",
+        "physicalIdentity": "62625-907-POST-20260714155300_20260714155354_Slot22",
+        "recordedProposal": "",
+        "visibleTruthKnownBeforePixelReview": false
+      }
+    ],
+    "distinctLotFamilyCount": 7,
+    "exactPhysicalAcquisitionOverlap": 0,
+    "priorCohortOverlap": 0
+  },
+  "revision": "OCV02_R18G_POST2_WEIGHTED_FAILURE_FIRST_20260903",
+  "schema": "argos_opencv_scribe_r18g_failure_first_cohort_v1",
+  "selectionEvidence": {
+    "eligiblePost2RowsBeforeSelection": 2,
+    "eligibleUnusedRowsBeforeSelection": 128,
+    "queuePath": "C:\\L586R2\\R_E3DAC141D1B8_20260821204234226_d8edfaff.ready\\DATA_PULL_PAYLOAD\\data\\JBOD_PROCESSOR_REVIEW\\identity\\SCRIBE_IDENTITY_QUEUE.json",
+    "queueRows": 966,
+    "queueSha256": "BB740FEA504FCA97E1AA98EAF03C65B348875CF325D8EB7A671A80A41C05BA81",
+    "r17aExcludedAcquisitions": 8,
+    "r18aExcludedAcquisitions": 8,
+    "r18eExcludedAcquisitions": 8,
+    "selectedPost2Rows": 2,
+    "waferPixelsReadForSelection": false
+  },
+  "sourceContract": {
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "existingFilesOnly": true,
+    "fullWaferTransfer": false,
+    "maximumBytes": 50331648,
+    "newCropGeneration": false,
+    "perAcquisitionFiles": [
+      "SCRIBE_PROPOSAL.json",
+      "scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png"
+    ],
+    "requestedFiles": 24,
+    "sourceMutation": false
+  }
+}

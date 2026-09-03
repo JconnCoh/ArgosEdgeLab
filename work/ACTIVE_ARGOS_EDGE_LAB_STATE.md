@@ -9616,3 +9616,28 @@ failure-first cohort weighted toward POST2 and other current-reader failures,
 without prior-cohort overlap. Keep missing `I/O/V/Y` coverage held; pull only
 existing scribe crops after fresh gates and explicit publication authority.
 Do not run the full KLARF directory yet.
+
+# 2026-09-03 — OCV-02 R18G POST2-weighted pixel-blind cohort (`PENDING_GATE`)
+
+Metadata-only selection froze eight fresh unresolved current-reader failures
+across seven lot families with zero R17A/R18A/R18E acquisition overlap. Both
+remaining eligible POST2 rows are included. The partitions also cover one
+additional POST acquisition, one segmentation-incomplete failure, and four
+checksum-invalid failures. No new pixels were transferred, decoded, or
+inspected.
+
+Cohort SHA-256 is
+`91A367581F02709301A03D972E7A96C68FC1371A33DC7E13B02997442220E2BA`;
+the exact 24-existing-file pull definition is
+`D38269F2D4C04D6EC130E616800AFFDBC70835DF62CC35117625A3A0EED29C72`;
+selection gate is
+`980A86CEF6CCD2324EAD4CD3297ACF1E10B1A9C20559EB7A3F9020650E8D3B6F`.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18G/R18G_POST2_WEIGHTED_PIXEL_BLIND_COHORT_CHECKPOINT_20260903.md`,
+SHA-256 `1AEAA6BB5AA882B965F5ABEEDEB60FA21355FAAF267BAEB4ECB09012377F4B04`.
+
+Exact next scribe-lane action: build and locally gate one fresh signed R18G
+`DATA_PULL` package. Publication requires an explicit R18G `PUBLISH`; one
+publication maximum and no retry. Missing `I/O/V/Y` reference coverage and all
+review-only authority holds remain unchanged. Do not run the full corpus.
