@@ -1,0 +1,136 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R15E_BUILD_SIGN_20260903A",
+  "createdUtc": "2026-09-03T12:45:34.8208337Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "BUILD_SIGN_REVIEW_ONLY_R15E_DIAGNOSTIC_PORTAL_REQUEST_WITHOUT_PUBLICATION",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "EE163B0AEE9F2F7ECFC9C5DC354E54E52EAEAC4303B1A816F96AB07F17910068"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/ArgosOpenCvScribeGridDiagnosticR15E.py",
+      "sha256": "3551B50F0A87D6C43B4170C6B22D4C9C5E10BE5F2500E0E2E26FC8785AB7B66C"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/Invoke-R15E.ps1",
+      "sha256": "8B49AA580B1F81F95F97B51296978A2AFC2B1E8A3533687B23DE7DDC56F7EB9A"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_CONFIGURATION.json",
+      "sha256": "67EA0C3678AB7AADF0F589A54D367F9281F6D79775671ED74BBA11FD5C922F36"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_LIVE_INVOCATION.json",
+      "sha256": "253AC661BF27C6D6CDF2453A34496719674DC2C78BA717D7B0256D1FE9510E92"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_ENDPOINT_REHEARSAL_GATE.json",
+      "sha256": "FB2CE40ED26C2BC3717777711AC551D88352A5B717B643787BC3A53867FDDE93"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_LOCAL_SYNTHETIC_UNIT_GATE.json",
+      "sha256": "4B3FC7DA61338887946763414E33F566703B31B7AD25B2F00687D3948196920F"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_COMPLETE_ROUTE_GATE.json",
+      "sha256": "E0EAE7BBECDE766E6E78D86074A098465F3117B737146DDF4FF32D1D4953ED2C"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_CLONE_LITERAL_GATE.json",
+      "sha256": "FF51042CBE6CB3B518CE58B5FF8270603780B2C8A476FC9168058C2C6F615D0E"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_MAINTENANCE_DEFINITION.json",
+      "sha256": "12038B1FBE3DE033D66B698BD7B84A67DA5F673BDF4406E10575BA3C06DF49C6"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_REQUEST_CONTRACT.json",
+      "sha256": "42CD34A91C0BE8C2399FD52CBF8E3E9FD6E71FA334C0A920BCB7D9AD5F98EBB6"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/Build-R15ERequest.ps1",
+      "sha256": "68BC67881AD54A08AF5ED73B28BA622903ECFD825F7CADD66EE8ADDE3D1D39CC"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/Build-R15ERequest.cmd",
+      "sha256": "C21E0CD0FFC1DBB0574698FF45C6850E02CC5FEF291D5F0B99A288CDC2AB0048"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/Build-R15ERequest.invocation.json",
+      "sha256": "F491A08D92517B8B4ECB44F15BFB6DBEE4ABCF14AFAF0FC00EBA2872F4CA002B"
+    },
+    {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+      "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/state/LAPTOP_SIGNING_IDENTITY.json",
+      "sha256": "3FD8164D1869375156FB7566D206FEAB97AE8A9E7D377B0AD4E03739ED697289"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/ARGOS_PROJECT_PORTAL_LAPTOP_SIGNER_PUBLIC.cer",
+      "sha256": "2B434D0CF6A0D6D69AAE3D280032EFF00807D423CA3B3D7F2EFC1C6BB628BFFF"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalPackage.ps1",
+      "sha256": "6CA21D7DE97EDE88F2C41F91D5B7801C688982C8C5A422987EB9528E1E9A084B"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/OPENCV_SCRIBE_R6V1/R6V1_COLLECTION_CASE_GATE.json",
+    "sha256": "7A2ED39F1FACECDDEB4F7AAE648D3486F8C58BA1E1A070480EFF0C4894579ED3",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "scope": {
+    "requestId": "REQ_20260903T124500000Z_R15E",
+    "sourceImagesReadOnly": true,
+    "fullSourceImageReturnAllowed": false,
+    "compactReviewCropReturnOnly": false,
+    "maximumSequentialProviderChildren": 4,
+    "maximumConcurrentProviderChildren": 1,
+    "maximumPublications": 0,
+    "retryAuthorized": false,
+    "automaticIdentityAuthority": false,
+    "providerActivationAllowed": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "exactRectifiedRegionAndGridHypothesisSheetsReturnOnly": true
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

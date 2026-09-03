@@ -1,0 +1,186 @@
+{
+  "schema": "argos_opencv_scribe_alphabet_crop_live_invocation_v1",
+  "revision": "OCV02_R15D_GRID_DIAGNOSTIC_20260903A",
+  "requestId": "REQ_20260903T130000000Z_R15D",
+  "state": "FROZEN",
+  "expectedComputerName": "A1025645101",
+  "runtime": {
+    "root": "D:\\AFCV1\\rt",
+    "python": "D:\\AFCV1\\rt\\python.exe",
+    "installationEvidence": "D:\\AFCV1\\INSTALLATION.json",
+    "installationSha256": "1289EC11F092233D3AAB5ACF416B0212F1874F698F9BBC2B474829939BCDF596",
+    "pythonVersion": "3.13.2",
+    "opencvVersion": "5.0.0",
+    "numpyVersion": "2.5.2"
+  },
+  "referenceBundle": {
+    "path": "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+    "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "referenceCount": 456,
+    "manifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "missingLabels": "IJKOQVWXYZ"
+  },
+  "roots": {
+    "work": "D:\\A2\\w\\ocv\\R15D",
+    "workPartial": "D:\\A2\\w\\ocv\\R15D.partial",
+    "workFailed": "D:\\A2\\w\\ocv\\R15D.failed",
+    "output": "D:\\A2\\o\\ocv\\R15D",
+    "outputPartial": "D:\\A2\\o\\ocv\\R15D.partial",
+    "bundle": "D:\\A2\\o\\ocv\\R15D_RETURN.zip",
+    "sourceAlias": "X:"
+  },
+  "payload": {
+    "provider": {
+      "file": "R15D.py",
+      "sha256": "EAD634E14F133C36AF498BD1B4713416D075A0FD6542F03A1C4C583C5157E2B7"
+    },
+    "configuration": {
+      "file": "CFG.json",
+      "sha256": "93EA2EC1BE848C6E44C93E1C119062F013D71F70809637586D1F6345199A99BC"
+    },
+    "dependencies": {
+      "r11": {
+        "file": "R11.py",
+        "sha256": "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9"
+      },
+      "r12a": {
+        "file": "R12A.py",
+        "sha256": "F5EB8FB3281D7D55CDD9FA4A3530A32BD33BBA3B8DB69E0A247C20935F6AD429"
+      },
+      "r12b": {
+        "file": "R12B.py",
+        "sha256": "D670CFCE64BF5FDF5307E69ED69A05CB7B404A78B521AB889C7F35044D666FDC"
+      }
+    }
+  },
+  "cases": [
+    {
+      "caseId": "K25V",
+      "physicalIdentity": "62546-481_20260707164232_Slot25",
+      "purpose": "INDEPENDENT_VALIDATION",
+      "confirmedScribe": "13DCK076SUG1",
+      "targetPositions": [
+        {
+          "position": 5,
+          "label": "K"
+        }
+      ],
+      "aliasAnchorCanonicalPath": "D:\\KLARFExport\\PST_BRKFULLMETAL\\Lot_62546-481\\62546-481",
+      "bfRelativePath": "Slot25\\BrightfieldFrontsideWafer\\resizedImage\\62546-481_Slot25_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "dfRelativePath": "Slot25\\DarkfieldFrontsideWafer\\resizedImage\\62546-481_Slot25_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sourceBytesPerImage": 475379874,
+      "referenceAdmissionEligible": false,
+      "diagnosticRegionId": "PERIMETER_SMOOTH_DF_BRIGHT_00"
+    },
+    {
+      "caseId": "X18V",
+      "physicalIdentity": "62625-907-PRE_20260709123021_Slot18",
+      "purpose": "INDEPENDENT_VALIDATION",
+      "confirmedScribe": "146XF111SUG7",
+      "targetPositions": [
+        {
+          "position": 4,
+          "label": "X"
+        }
+      ],
+      "aliasAnchorCanonicalPath": "D:\\KLARFExport\\PST_BREAK_BARE\\Lot_62625-907_PRE\\62625-907_PRE",
+      "bfRelativePath": "Slot18\\BrightfieldFrontsideWafer\\resizedImage\\62625-907_PRE_Slot18_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "dfRelativePath": "Slot18\\DarkfieldFrontsideWafer\\resizedImage\\62625-907_PRE_Slot18_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sourceBytesPerImage": 475379874,
+      "referenceAdmissionEligible": false,
+      "diagnosticRegionId": "PERIMETER_SMOOTH_DF_BRIGHT_02"
+    },
+    {
+      "caseId": "JQ16D",
+      "physicalIdentity": "62625-956_20260729122701_Slot16",
+      "purpose": "DEVELOPMENT",
+      "confirmedScribe": "147JQ122SUB6",
+      "targetPositions": [
+        {
+          "position": 4,
+          "label": "J"
+        },
+        {
+          "position": 5,
+          "label": "Q"
+        }
+      ],
+      "aliasAnchorCanonicalPath": "D:\\KLARFExport\\BackSide_BowComp\\Lot_62625-956\\62625-956_20260729122701",
+      "bfRelativePath": "Slot16\\BrightfieldFrontsideWafer\\resizedImage\\62625-956_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "dfRelativePath": "Slot16\\DarkfieldFrontsideWafer\\resizedImage\\62625-956_Slot16_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sourceBytesPerImage": 475379874,
+      "referenceAdmissionEligible": false,
+      "diagnosticRegionId": "PERIMETER_SMOOTH_DF_BRIGHT_02"
+    },
+    {
+      "caseId": "JQ20V",
+      "physicalIdentity": "62625-956_20260729122701_Slot20",
+      "purpose": "INDEPENDENT_VALIDATION",
+      "confirmedScribe": "147JQ117SUD6",
+      "targetPositions": [
+        {
+          "position": 4,
+          "label": "J"
+        },
+        {
+          "position": 5,
+          "label": "Q"
+        }
+      ],
+      "aliasAnchorCanonicalPath": "D:\\KLARFExport\\BackSide_BowComp\\Lot_62625-956\\62625-956_20260729122701",
+      "bfRelativePath": "Slot20\\BrightfieldFrontsideWafer\\resizedImage\\62625-956_Slot20_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "dfRelativePath": "Slot20\\DarkfieldFrontsideWafer\\resizedImage\\62625-956_Slot20_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "sourceBytesPerImage": 475379874,
+      "referenceAdmissionEligible": false,
+      "diagnosticRegionId": "PERIMETER_SMOOTH_DF_BRIGHT_00"
+    }
+  ],
+  "execution": {
+    "maximumSequentialProviderChildren": 4,
+    "maximumConcurrentProviderChildren": 1,
+    "providerChildTimeoutSeconds": 600,
+    "endpointWorkerOuterTimeoutSeconds": 3000,
+    "automaticRetryAllowed": false,
+    "caseFailureStopsBatch": false,
+    "sourceHashBeforeOpenCvDecodeRequired": true,
+    "sourceImagesProcessedReadOnlyInPlace": true,
+    "fullSourceImageReturnAllowed": false
+  },
+  "outputContract": {
+    "caseRequiredLeaves": [
+      "CASE_RESULT.json",
+      "rectified_BF.png",
+      "rectified_DF.png",
+      "hypotheses_BF_FORWARD.png",
+      "hypotheses_BF_REVERSE_180.png",
+      "hypotheses_DF_FORWARD.png",
+      "hypotheses_DF_REVERSE_180.png"
+    ],
+    "batchLeaves": [
+      "BATCH_GATE.json",
+      "EXECUTION.json"
+    ],
+    "bundlePath": "D:\\A2\\o\\ocv\\R15D_RETURN.zip",
+    "maximumBundleBytes": 8388608,
+    "maximumBundleBase64Characters": 12582912,
+    "portalResponseTransport": "MAINTENANCE_STDOUT_COMPACT_JSON_BASE64",
+    "sourceToRegionToHypothesisSha256Required": true
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingAuthorized": false,
+    "trainingEligible": false,
+    "trainingExecuted": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "mayClearHolds": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "taskOrProcessRestartAllowed": false,
+    "providerActivationAllowed": false,
+    "maximumPublications": 1,
+    "retryAuthorized": false
+  }
+}

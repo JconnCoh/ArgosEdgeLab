@@ -1,0 +1,68 @@
+{
+  "schema": "argos_clone_literal_remediation_gate_v1",
+  "checkedUtc": "2026-09-03T12:44:51.9747245Z",
+  "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "mode": "GATE",
+  "manifest": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R15E\\R15E_CLONE_LITERAL_REMEDIATION.json",
+  "manifestSha256": "907A1FFB4681882BC63C44D08C4104EA0011CB7F149132DC09C1F50CF491A28A",
+  "pairCount": 3,
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R14/Invoke-R14P.ps1",
+      "generated": "work/OPENCV_SCRIBE_R15E/Invoke-R15E.ps1",
+      "sourceSha256": "65BEC4B588BD7E35C597B133087E7758432A8763BBE7F424CDD80B45B028D4D2",
+      "generatedSha256": "8B49AA580B1F81F95F97B51296978A2AFC2B1E8A3533687B23DE7DDC56F7EB9A",
+      "sourceRoots": [
+        "D:",
+        "D:\\A2",
+        "D:\\KLARFExport",
+        "X:"
+      ],
+      "generatedRoots": [
+        "D:",
+        "D:\\A2",
+        "D:\\KLARFExport",
+        "X:"
+      ],
+      "ruleCount": 4
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R14/Test-R14PEndpoint.ps1",
+      "generated": "work/OPENCV_SCRIBE_R15E/Test-R15EEndpoint.ps1",
+      "sourceSha256": "9E6CA54756BDED3C10470647F2C93962E5057E0FB9B89A0339A9471EDA82B12F",
+      "generatedSha256": "EAA5B6751765BE3076E35AB97790758C19C3A5D3F3C9193A72EB0707B34F77F2",
+      "sourceRoots": [
+        "C:\\Python314",
+        "C:\\R14PG_",
+        "X:"
+      ],
+      "generatedRoots": [
+        "C:\\Python314",
+        "C:\\R15EG_",
+        "X:"
+      ],
+      "ruleCount": 3
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R14/Build-R14PRequest.ps1",
+      "generated": "work/OPENCV_SCRIBE_R15E/Build-R15ERequest.ps1",
+      "sourceSha256": "28C09C40716413BD4B2237A0C522335E25F653B57215CEC53CEFB61A9A84A7C3",
+      "generatedSha256": "68BC67881AD54A08AF5ED73B28BA622903ECFD825F7CADD66EE8ADDE3D1D39CC",
+      "sourceRoots": [
+        "C:\\ProgramData",
+        "C:\\R14PR",
+        "D:\\A2"
+      ],
+      "generatedRoots": [
+        "C:\\ProgramData",
+        "C:\\R15ER",
+        "D:\\A2"
+      ],
+      "ruleCount": 3
+    }
+  ],
+  "violations": [],
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "evidenceWritten": true
+}

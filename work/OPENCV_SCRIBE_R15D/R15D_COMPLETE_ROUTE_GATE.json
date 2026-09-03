@@ -1,0 +1,55 @@
+{
+  "schema": "argos_opencv_scribe_r15d_complete_route_gate_v1",
+  "checkedUtc": "2026-09-03T12:38:18.7759446Z",
+  "state": "PASS_R15D_COMPLETE_ROUTE_GATE",
+  "classification": "PENDING_GATE",
+  "requestId": "REQ_20260903T130000000Z_R15D",
+  "inheritedQualifiedRoute": {
+    "path": "work/OPENCV_SCRIBE_R14/R14P_COMPLETE_ROUTE_GATE_R3.json",
+    "sha256": "CFFD7C0EB8EE9953D938B10F8461A50C157BC06013237486F1E1257B2C9C8708",
+    "state": "PASS_R14P_COMPLETE_ROUTE_GATE",
+    "endpointAndRelayImplementationUnchanged": true
+  },
+  "queueSafety": {
+    "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+    "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+    "state": "PASS_JBOD_PORTAL_QUEUE_RECOVERY_V2_1_REHEARSAL"
+  },
+  "pathBudget": {
+    "state": "PASS_PATH_BUDGET",
+    "candidateCount": 16,
+    "reservedSuffixCharacters": 32,
+    "maximumEffectiveLength": 193,
+    "hardStopEffectiveLength": 230,
+    "maximumComponentLength": 0,
+    "paths": [
+      "U:\\ProjectPortalRO\\requests\\REQ_20260903T130000000Z_R15D.ready.zip.upload",
+      "U:\\ProjectPortalRO\\requests\\REQ_20260903T130000000Z_R15D.ready.zip",
+      "U:\\ProjectPortalRO\\requests\\processed\\REQ_20260903T130000000Z_R15D.ready.zip",
+      "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_20260903T130000000Z_R15D.ready\\payload\\Invoke-R15D.ps1",
+      "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\failed\\REQ_20260903T130000000Z_R15D.ready\\PORTAL_REQUEST_MANIFEST.json",
+      "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\R_0123456789AB_20260903235959999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.json",
+      "D:\\A2\\w\\ocv\\R15D.partial\\refs\\glyphs_v5_confirmed_20260806\\028_62630_456_SLOT25_P04_S.png",
+      "D:\\A2\\w\\ocv\\R15D\\LIVE.json",
+      "D:\\A2\\w\\ocv\\R15D\\jobs\\JQ20V.json",
+      "D:\\A2\\w\\ocv\\R15D\\failed\\JQ20V\\committed\\hypotheses_DF_REVERSE_180.png",
+      "D:\\A2\\o\\ocv\\R15D.partial\\JQ20V.partial\\hypotheses_DF_REVERSE_180.png",
+      "D:\\A2\\o\\ocv\\R15D\\JQ20V\\hypotheses_DF_REVERSE_180.png",
+      "D:\\A2\\o\\ocv\\R15D_RETURN.zip.partial",
+      "D:\\A2\\o\\ocv\\R15D_RETURN.zip",
+      "C:\\R15DR\\R15D_RETURN.zip",
+      "C:\\R15DR\\b\\JQ20V\\hypotheses_DF_REVERSE_180.png"
+    ]
+  },
+  "roots": {
+    "work": "D:\\A2\\w\\ocv\\R15D",
+    "output": "D:\\A2\\o\\ocv\\R15D",
+    "bundle": "D:\\A2\\o\\ocv\\R15D_RETURN.zip",
+    "laptopExtraction": "C:\\R15DR"
+  },
+  "automaticRetryAllowed": false,
+  "sourceMutationAllowed": false,
+  "providerActivationAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

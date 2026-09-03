@@ -9272,3 +9272,25 @@ the fresh 953 corpus plus all later phases remain unauthorized.
 Checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3B21_R25_DIRECT_PROBE_PASS_METADATA_QUERY_TIMEOUT_BLOCKER_CHECKPOINT_20260901.md`,
 SHA-256 `2A35A134198527EA8EEB0B6CEAE96BFCA8F0B6886E9193AE3EEE069BF848BBEB`.
+
+# 2026-09-03 — OCV-02 R15E scribe-grid diagnostic publication ready (`PENDING_GATE`)
+
+R15D was signed locally but never published and is withdrawn because its
+final-package gate recorded the old R14 directory. Fresh R15E corrects that
+declaration and mechanically proves its recorded ZIP path resolves to the
+exact signed ZIP.
+
+R15E request `REQ_20260903T124500000Z_R15E`, ZIP SHA-256
+`8016B63D69CE01972079378FE66556D3733C17BEC6AAA21452FC74C4BEA2CAB7`,
+is ready for one publication. It returns the exact pinned 1600×400 BF/DF
+regions and all internal-grid hypothesis contact sheets for K25V, X18V,
+JQ16D, and JQ20V. It performs no OCR tuning or identity selection.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R15E/R15E_PUBLICATION_READY_CHECKPOINT_20260903.md`,
+SHA-256 `F346E28AD532F62EAE1735B98354963399180836F203454EA44FD0E5DE3BAB54`.
+
+Exact next scribe-lane action: commit/push, publish R15E exactly once, and
+collect only its matching signed terminal response. No retry. All identity,
+admission, training, XML, production, activation, mutation, and hold-clearance
+authority remains false.

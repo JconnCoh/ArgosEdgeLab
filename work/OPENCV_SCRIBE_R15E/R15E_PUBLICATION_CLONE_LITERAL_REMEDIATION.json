@@ -1,0 +1,59 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "createdUtc": "2026-09-03T12:49:53.6871946Z",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R14/Publish-R14P.ps1",
+      "generated": "work/OPENCV_SCRIBE_R15E/Publish-R15E.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "\\\\shm-cifs\\Department",
+          "generatedRoot": "\\\\shm-cifs\\Department",
+          "disposition": "UNCHANGED_ALLOWED"
+        },
+        {
+          "sourceRoot": "U:\\ProjectPortalRO",
+          "generatedRoot": "U:\\ProjectPortalRO",
+          "disposition": "UNCHANGED_ALLOWED"
+        }
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R14/Collect-R14PResponse.ps1",
+      "generated": "work/OPENCV_SCRIBE_R15E/Collect-R15EResponseR2.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "C:\\R14R",
+          "generatedRoot": "C:\\R15ER",
+          "disposition": "REPLACED"
+        },
+        {
+          "sourceRoot": "U:\\ProjectPortalRO",
+          "generatedRoot": "U:\\ProjectPortalRO",
+          "disposition": "UNCHANGED_ALLOWED"
+        },
+        {
+          "sourceRoot": "\\\\shm-cifs\\Department",
+          "generatedRoot": "\\\\shm-cifs\\Department",
+          "disposition": "UNCHANGED_ALLOWED"
+        }
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R14/Get-R14PCurrentShareObservationR2.ps1",
+      "generated": "work/OPENCV_SCRIBE_R15E/Get-R15ECurrentShareObservation.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "\\\\shm-cifs\\Department",
+          "generatedRoot": "\\\\shm-cifs\\Department",
+          "disposition": "UNCHANGED_ALLOWED"
+        },
+        {
+          "sourceRoot": "U:\\ProjectPortalRO",
+          "generatedRoot": "U:\\ProjectPortalRO",
+          "disposition": "UNCHANGED_ALLOWED"
+        }
+      ]
+    }
+  ]
+}

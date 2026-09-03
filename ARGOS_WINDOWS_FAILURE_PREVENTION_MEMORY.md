@@ -10644,3 +10644,17 @@ than rerunning it.
   withdrawn, no-retry evidence. Do not patch, republish, or reuse that
   namespace. Any later authorized observation requires a fresh request after
   the caller/consumer field contract is mechanically gated.
+
+## 2026-09-03 — Final-package gate must assert its own exact release directory
+
+- Failure signature: unpublished R15D built and signed successfully, but its
+  local final-package gate recorded `work/OPENCV_SCRIBE_R14/final/...` while
+  the ZIP actually existed under `work/OPENCV_SCRIBE_R15D/final/...`.
+- Cause: the cloned builder retained one hard-coded R14 gate-display path that
+  was not covered by its existing path-plan or extraction assertions.
+- Mandatory preflight: before signing, require the builder's literal
+  `requestZip` evidence prefix to equal its configured `outputs.finalRoot`;
+  after build, require the recorded path to resolve to the exact ZIP whose
+  size and SHA-256 the gate reports.
+- Recovery: R15D is withdrawn, unpublished, no-retry, and non-parent. Use a
+  fresh namespace and add the exact release-directory assertion before build.

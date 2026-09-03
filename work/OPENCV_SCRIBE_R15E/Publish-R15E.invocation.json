@@ -1,0 +1,87 @@
+{
+  "schema": "argos_r15e_publication_r2_invocation_v1",
+  "requestId": "REQ_20260903T124500000Z_R15E",
+  "requiredBranch": "codex/opencv-scribe-deciphering",
+  "publisherSha256": "4FFB93F2FA12A40624F5195E37C4BCDD29E3411C9864A95D92ACB753F14201C2",
+  "authority": {
+    "publicationAuthorized": true,
+    "maximumPublications": 1,
+    "retryAuthorized": false,
+    "matchingSignedTerminalResponseOnly": true,
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "providerActivationAllowed": false
+  },
+  "requestZip": {
+    "path": "work/OPENCV_SCRIBE_R15E/final/REQ_20260903T124500000Z_R15E.ready.zip",
+    "sha256": "8016B63D69CE01972079378FE66556D3733C17BEC6AAA21452FC74C4BEA2CAB7",
+    "bytes": 54760
+  },
+  "requiredGates": [
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_FINAL_PACKAGE_GATE.json",
+      "sha256": "04D279BEA38AB1AB69ED79670A5618E0108331BB2B67404CFF951AF3F05EABC6",
+      "stateProperty": "state",
+      "requiredState": "PASS_R15E_FINAL_SIGNED_PACKAGE"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_COMPLETE_ROUTE_PACKAGE_BINDING_GATE.json",
+      "sha256": "2EC237F84A438E632F2E9C68D1CD92C1054F9A1A8B0C473438D1C3F83C756808",
+      "stateProperty": "state",
+      "requiredState": "PASS_R15E_COMPLETE_ROUTE_PACKAGE_AND_TOOLING_BINDING_GATE"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/PREACTION_PUBLISH_R15E.json",
+      "sha256": "4ECF9F92B0BFAE9D91D7984406826CB0E7C1F5A7F7D9C4A497304C6AA381AC3B",
+      "stateProperty": "state",
+      "requiredState": "PASS_PREACTION_CONTRACT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_COMPLETE_ROUTE_GATE.json",
+      "sha256": "E0EAE7BBECDE766E6E78D86074A098465F3117B737146DDF4FF32D1D4953ED2C",
+      "stateProperty": "state",
+      "requiredState": "PASS_R15E_COMPLETE_ROUTE_GATE"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_PUBLICATION_CLONE_LITERAL_GATE.json",
+      "sha256": "95DDDAE11802A10E849BE2080DCB19BA21B749A856A3D63F2204A02E95891F93",
+      "stateProperty": "state",
+      "requiredState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_COLLECTOR_ZIP_LOOKUP_REHEARSAL_GATE_R2.json",
+      "sha256": "2D32ACACB87E423C9DFB6634482031918064F57C0486BD8E91876866908F319A",
+      "stateProperty": "state",
+      "requiredState": "PASS_R15E_COLLECTOR_ZIP_LOOKUP_REHEARSAL"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_CLONE_LITERAL_GATE.json",
+      "sha256": "FF51042CBE6CB3B518CE58B5FF8270603780B2C8A476FC9168058C2C6F615D0E",
+      "stateProperty": "state",
+      "requiredState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"
+    }
+  ],
+  "responseCollector": {
+    "scriptPath": "work/OPENCV_SCRIBE_R15E/Collect-R15EResponseR2.ps1",
+    "scriptSha256": "2DBDDE205550BFF8A0E5B8037391ABC44BC092A25FD79D30E9AC0BD394D8313E",
+    "invocationPath": "work/OPENCV_SCRIBE_R15E/Collect-R15EResponseR2.invocation.json",
+    "invocationSha256": "A46859FE4FD51AE7C3F86A8FFBF1929369AE5A156EF3AD0DC3F3B93721473D9C",
+    "rehearsalGatePath": "work/OPENCV_SCRIBE_R15E/R15E_COLLECTOR_ZIP_LOOKUP_REHEARSAL_GATE_R2.json",
+    "rehearsalGateSha256": "2D32ACACB87E423C9DFB6634482031918064F57C0486BD8E91876866908F319A"
+  },
+  "freshQueueObservation": {
+    "scriptPath": "work/OPENCV_SCRIBE_R15E/Get-R15ECurrentShareObservation.ps1",
+    "scriptSha256": "F148C4FBDAE9A365082C08564E76DC7728FED920159F77B5F838C1CE67FE3C1E",
+    "invocationPath": "work/OPENCV_SCRIBE_R15E/Get-R15ECurrentShareObservation.invocation.json",
+    "invocationSha256": "38B9CA3BDD603EFF0345EF41ABEE757A87A1E7331218984F0EE2678E06C862F3",
+    "maximumAgeSeconds": 120
+  },
+  "route": {
+    "inspectionRevsUnc": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs"
+  },
+  "publishGatePath": "work/OPENCV_SCRIBE_R15E/R15E_PUBLISH_GATE.json"
+}

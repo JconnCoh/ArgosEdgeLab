@@ -1,0 +1,171 @@
+{
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 16777216,
+  "entryPoint": "payload/Invoke-R15E.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-R15E.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R15E.ps1",
+      "approvedPredecessorSha256": [
+        "159BD82528E505DE69BDEEE4C3A3B29402BA9281939C57F6187587E9047D9740"
+      ],
+      "installedSha256": "8B49AA580B1F81F95F97B51296978A2AFC2B1E8A3533687B23DE7DDC56F7EB9A",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\A2\\w\\ocv\\R15E",
+      "mode": "CREATE_NEW_PROVIDER_WORK_TREE",
+      "failureQuarantine": "D:\\A2\\w\\ocv\\R15E.failed",
+      "payloads": [
+        {
+          "path": "payload/Invoke-R15E.ps1",
+          "sha256": "8B49AA580B1F81F95F97B51296978A2AFC2B1E8A3533687B23DE7DDC56F7EB9A"
+        },
+        {
+          "path": "payload/R15E.py",
+          "sha256": "3551B50F0A87D6C43B4170C6B22D4C9C5E10BE5F2500E0E2E26FC8785AB7B66C"
+        },
+        {
+          "path": "payload/R11.py",
+          "sha256": "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9"
+        },
+        {
+          "path": "payload/R12A.py",
+          "sha256": "F5EB8FB3281D7D55CDD9FA4A3530A32BD33BBA3B8DB69E0A247C20935F6AD429"
+        },
+        {
+          "path": "payload/R12B.py",
+          "sha256": "D670CFCE64BF5FDF5307E69ED69A05CB7B404A78B521AB889C7F35044D666FDC"
+        },
+        {
+          "path": "payload/CFG.json",
+          "sha256": "67EA0C3678AB7AADF0F589A54D367F9281F6D79775671ED74BBA11FD5C922F36"
+        },
+        {
+          "path": "payload/LIVE.json",
+          "sha256": "253AC661BF27C6D6CDF2453A34496719674DC2C78BA717D7B0256D1FE9510E92"
+        },
+        {
+          "path": "D:/O2D5/ARGOS_O2D5/O2D5_REFS.zip",
+          "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6"
+        }
+      ]
+    },
+    {
+      "targetRoot": "D:\\A2\\o\\ocv\\R15E",
+      "mode": "CREATE_NEW_PROVIDER_OUTPUT_TREE"
+    },
+    {
+      "targetPath": "D:\\A2\\o\\ocv\\R15E_RETURN.zip",
+      "mode": "CREATE_NEW_COMPACT_RETURN_BUNDLE"
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "D:\\A2\\o\\ocv\\R15E\\K25V\\CASE_RESULT.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_opencv_scribe_grid_diagnostic_case_result_v1"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R15E\\X18V\\CASE_RESULT.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_opencv_scribe_grid_diagnostic_case_result_v1"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R15E\\JQ16D\\CASE_RESULT.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_opencv_scribe_grid_diagnostic_case_result_v1"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R15E\\JQ20V\\CASE_RESULT.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_opencv_scribe_grid_diagnostic_case_result_v1"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R15E\\BATCH_GATE.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_opencv_scribe_r15e_batch_gate_v1",
+      "requiredState": "PASS_R15E_BATCH_COMPLETE"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R15E\\EXECUTION.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_opencv_scribe_r15e_execution_v1",
+      "requiredState": "PASS_R15E_EXECUTION"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R15E_RETURN.zip",
+      "mode": "CREATE_NEW",
+      "maximumBytes": 8388608
+    },
+    {
+      "transport": "MAINTENANCE.stdout.txt",
+      "schema": "argos_opencv_scribe_r15e_maintenance_envelope_v1",
+      "requiredState": "PASS_R15E_SIGNED_RETURN_READY",
+      "maximumBase64Characters": 12582912
+    }
+  ],
+  "sourceProcessingContract": {
+    "sourcePlanPath": "work/OPENCV_SCRIBE_R13A/R13A_ALPHABET_HARVEST_PLAN.json",
+    "sourcePlanSha256": "7F1F9DB9582E57B2F7608DEE013F969B6A1C25FD227DC8CB7A88BB15910DE2D1",
+    "physicalIdentities": [
+      "62546-481_20260707164232_Slot25",
+      "62625-907-PRE_20260709123021_Slot18",
+      "62625-956_20260729122701_Slot16",
+      "62625-956_20260729122701_Slot20"
+    ],
+    "inputMode": "REVIEW_ONLY_PINNED_REGION_GRID_DIAGNOSTIC",
+    "sourceAliasName": "X:",
+    "sourceAliasChangesPerCaseOnly": true,
+    "referenceBundlePath": "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+    "referenceBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "sourceImageBytesReadAllowed": true,
+    "sourceImagesProcessedReadOnlyInPlace": true,
+    "sourceHashBeforeOpenCvDecodeRequired": true,
+    "opencvPixelDecodeRequired": true,
+    "fullSourceImageReturnAllowed": false,
+    "compactGridCellAndTargetCropReturnOnly": false,
+    "truthUse": "DIAGNOSTIC_LABEL_ONLY_NOT_GRID_SELECTION_OR_IDENTITY_ACCEPTANCE",
+    "automaticReferenceAdmissionAllowed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false,
+    "automaticIdentityAuthority": false,
+    "exactRectifiedRegionAndAllGridHypothesisSheetsReturnOnly": true
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 3000,
+    "opencvChildTimeoutSeconds": 600,
+    "maximumSequentialChildren": 4,
+    "maximumConcurrentChildren": 1,
+    "outerCoversAllChildren": true,
+    "automaticRetryAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_FOUR_SERIALIZED_BOUNDED_PORTABLE_OPENCV_SCRIBE_DIAGNOSTIC_CHILDREN"
+  ],
+  "rehearsal": {
+    "requiredState": "PASS_R15E_SIGNED_RETURN_READY",
+    "gateState": "PASS_R15E_ENDPOINT_REHEARSAL",
+    "gatePath": "work/OPENCV_SCRIBE_R15E/R15E_ENDPOINT_REHEARSAL_GATE.json",
+    "gateSha256": "FB2CE40ED26C2BC3717777711AC551D88352A5B717B643787BC3A53867FDDE93",
+    "endpointTestPath": "work/OPENCV_SCRIBE_R15E/Test-R15EEndpoint.ps1",
+    "endpointTestSha256": "EAA5B6751765BE3076E35AB97790758C19C3A5D3F3C9193A72EB0707B34F77F2",
+    "endpointSha256": "8B49AA580B1F81F95F97B51296978A2AFC2B1E8A3533687B23DE7DDC56F7EB9A",
+    "successInvocationSha256": "837492F6D54D04497133B7B1508334132628DF7CD0F15D3F3963870F32A09AEE",
+    "failureInvocationSha256": "5CF923CFE2D26B6E0835046E867C205CED0951C254A2FEE715FC627022F5D191",
+    "localRealImageGateState": "NOT_CLAIMED_DIAGNOSTIC_ACQUISITION_IS_THE_REAL_IMAGE_GATE",
+    "localRealImageGateSha256": "4B3FC7DA61338887946763414E33F566703B31B7AD25B2F00687D3948196920F",
+    "exactNoArgumentLivePathStaticBranchPinned": true,
+    "rehearsalUsesExplicitInvocation": true,
+    "exactNoArgumentLiveExecutionPerformed": false,
+    "successAndInjectedFailureConstructionPassed": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

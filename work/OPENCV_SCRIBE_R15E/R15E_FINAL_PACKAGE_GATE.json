@@ -1,0 +1,98 @@
+{
+    "schema":  "argos_r15e_final_package_gate_v1",
+    "createdUtc":  "2026-09-03T12:46:33.0965155Z",
+    "state":  "PASS_R15E_FINAL_SIGNED_PACKAGE",
+    "classification":  "FROZEN_REVIEW_ONLY",
+    "requestId":  "REQ_20260903T124500000Z_R15E",
+    "invocationManifestSha256":  "F491A08D92517B8B4ECB44F15BFB6DBEE4ABCF14AFAF0FC00EBA2872F4CA002B",
+    "requestZip":  "work/OPENCV_SCRIBE_R15E/final/REQ_20260903T124500000Z_R15E.ready.zip",
+    "requestZipBytes":  54760,
+    "requestZipSha256":  "8016B63D69CE01972079378FE66556D3733C17BEC6AAA21452FC74C4BEA2CAB7",
+    "requestManifestSha256":  "4DC8EBE24229D9A30C66C24E1670562D16E9826F955774567811ACDF99C66374",
+    "requestSignatureSha256":  "18C9F69663D25D67B014B8E0980890638A99E9473F6FCFB36121C1EEAFAEB9BC",
+    "maintenanceDefinitionSha256":  "12038B1FBE3DE033D66B698BD7B84A67DA5F673BDF4406E10575BA3C06DF49C6",
+    "payloadFileCount":  7,
+    "payloads":  [
+                     {
+                         "path":  "payload/Invoke-R15E.ps1",
+                         "bytes":  54318,
+                         "sha256":  "8B49AA580B1F81F95F97B51296978A2AFC2B1E8A3533687B23DE7DDC56F7EB9A"
+                     },
+                     {
+                         "path":  "payload/R15E.py",
+                         "bytes":  16509,
+                         "sha256":  "3551B50F0A87D6C43B4170C6B22D4C9C5E10BE5F2500E0E2E26FC8785AB7B66C"
+                     },
+                     {
+                         "path":  "payload/R11.py",
+                         "bytes":  81305,
+                         "sha256":  "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9"
+                     },
+                     {
+                         "path":  "payload/R12A.py",
+                         "bytes":  13013,
+                         "sha256":  "F5EB8FB3281D7D55CDD9FA4A3530A32BD33BBA3B8DB69E0A247C20935F6AD429"
+                     },
+                     {
+                         "path":  "payload/R12B.py",
+                         "bytes":  14908,
+                         "sha256":  "D670CFCE64BF5FDF5307E69ED69A05CB7B404A78B521AB889C7F35044D666FDC"
+                     },
+                     {
+                         "path":  "payload/CFG.json",
+                         "bytes":  2308,
+                         "sha256":  "67EA0C3678AB7AADF0F589A54D367F9281F6D79775671ED74BBA11FD5C922F36"
+                     },
+                     {
+                         "path":  "payload/LIVE.json",
+                         "bytes":  7071,
+                         "sha256":  "253AC661BF27C6D6CDF2453A34496719674DC2C78BA717D7B0256D1FE9510E92"
+                     }
+                 ],
+    "exactFinalZipExtractionPassed":  true,
+    "exactFinalZipSignaturePassed":  true,
+    "requiredGates":  [
+                          {
+                              "path":  "work/OPENCV_SCRIBE_R15E/R15E_ENDPOINT_REHEARSAL_GATE.json",
+                              "sha256":  "FB2CE40ED26C2BC3717777711AC551D88352A5B717B643787BC3A53867FDDE93",
+                              "stateProperty":  "state",
+                              "requiredState":  "PASS_R15E_ENDPOINT_REHEARSAL"
+                          },
+                          {
+                              "path":  "work/OPENCV_SCRIBE_R15E/R15E_LOCAL_SYNTHETIC_UNIT_GATE.json",
+                              "sha256":  "4B3FC7DA61338887946763414E33F566703B31B7AD25B2F00687D3948196920F",
+                              "stateProperty":  "state",
+                              "requiredState":  "PASS_R15E_LOCAL_SYNTHETIC_UNIT"
+                          },
+                          {
+                              "path":  "work/OPENCV_SCRIBE_R15E/R15E_COMPLETE_ROUTE_GATE.json",
+                              "sha256":  "E0EAE7BBECDE766E6E78D86074A098465F3117B737146DDF4FF32D1D4953ED2C",
+                              "stateProperty":  "state",
+                              "requiredState":  "PASS_R15E_COMPLETE_ROUTE_GATE"
+                          },
+                          {
+                              "path":  "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+                              "sha256":  "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+                              "stateProperty":  "state",
+                              "requiredState":  "PASS_JBOD_PORTAL_QUEUE_RECOVERY_V2_1_REHEARSAL"
+                          }
+                      ],
+    "completeRouteGateSha256":  "E0EAE7BBECDE766E6E78D86074A098465F3117B737146DDF4FF32D1D4953ED2C",
+    "completeRoutePackageBindingPassed":  true,
+    "pathState":  "PASS_PATH_BUDGET",
+    "pathCount":  57,
+    "maximumEffectiveLength":  199,
+    "maximumPublications":  1,
+    "retryAuthorized":  false,
+    "publicationAuthorized":  false,
+    "targetExecuted":  false,
+    "sourceImagesRead":  false,
+    "sourceMutationPerformed":  false,
+    "providerActivated":  false,
+    "automaticIdentityAuthority":  false,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false
+}

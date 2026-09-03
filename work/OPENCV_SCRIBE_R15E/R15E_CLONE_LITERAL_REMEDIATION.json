@@ -1,0 +1,74 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "createdUtc": "2026-09-03T12:40:44.5002406Z",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R14/Invoke-R14P.ps1",
+      "generated": "work/OPENCV_SCRIBE_R15E/Invoke-R15E.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "D:",
+          "generatedRoot": "D:",
+          "disposition": "UNCHANGED_ALLOWED"
+        },
+        {
+          "sourceRoot": "D:\\A2",
+          "generatedRoot": "D:\\A2",
+          "disposition": "UNCHANGED_ALLOWED"
+        },
+        {
+          "sourceRoot": "D:\\KLARFExport",
+          "generatedRoot": "D:\\KLARFExport",
+          "disposition": "UNCHANGED_ALLOWED"
+        },
+        {
+          "sourceRoot": "X:",
+          "generatedRoot": "X:",
+          "disposition": "UNCHANGED_ALLOWED"
+        }
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R14/Test-R14PEndpoint.ps1",
+      "generated": "work/OPENCV_SCRIBE_R15E/Test-R15EEndpoint.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "C:\\Python314",
+          "generatedRoot": "C:\\Python314",
+          "disposition": "UNCHANGED_ALLOWED"
+        },
+        {
+          "sourceRoot": "C:\\R14PG_",
+          "generatedRoot": "C:\\R15EG_",
+          "disposition": "REPLACED"
+        },
+        {
+          "sourceRoot": "X:",
+          "generatedRoot": "X:",
+          "disposition": "UNCHANGED_ALLOWED"
+        }
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R14/Build-R14PRequest.ps1",
+      "generated": "work/OPENCV_SCRIBE_R15E/Build-R15ERequest.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "C:\\ProgramData",
+          "generatedRoot": "C:\\ProgramData",
+          "disposition": "UNCHANGED_ALLOWED"
+        },
+        {
+          "sourceRoot": "C:\\R14PR",
+          "generatedRoot": "C:\\R15ER",
+          "disposition": "REPLACED"
+        },
+        {
+          "sourceRoot": "D:\\A2",
+          "generatedRoot": "D:\\A2",
+          "disposition": "UNCHANGED_ALLOWED"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "argos_r15e_complete_route_package_and_tooling_binding_gate_v1",
+  "createdUtc": "2026-09-03T12:50:49.1926678Z",
+  "state": "PASS_R15E_COMPLETE_ROUTE_PACKAGE_AND_TOOLING_BINDING_GATE",
+  "classification": "FROZEN_REVIEW_ONLY",
+  "requestId": "REQ_20260903T124500000Z_R15E",
+  "requestPackage": {
+    "path": "work/OPENCV_SCRIBE_R15E/final/REQ_20260903T124500000Z_R15E.ready.zip",
+    "bytes": 54760,
+    "sha256": "8016B63D69CE01972079378FE66556D3733C17BEC6AAA21452FC74C4BEA2CAB7",
+    "recordedPathResolvedToExactZip": true
+  },
+  "dependencies": [
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_FINAL_PACKAGE_GATE.json",
+      "sha256": "04D279BEA38AB1AB69ED79670A5618E0108331BB2B67404CFF951AF3F05EABC6",
+      "state": "PASS_R15E_FINAL_SIGNED_PACKAGE"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_COMPLETE_ROUTE_GATE.json",
+      "sha256": "E0EAE7BBECDE766E6E78D86074A098465F3117B737146DDF4FF32D1D4953ED2C",
+      "state": "PASS_R15E_COMPLETE_ROUTE_GATE"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_PUBLICATION_CLONE_LITERAL_GATE.json",
+      "sha256": "95DDDAE11802A10E849BE2080DCB19BA21B749A856A3D63F2204A02E95891F93",
+      "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_COLLECTOR_ZIP_LOOKUP_REHEARSAL_GATE_R2.json",
+      "sha256": "2D32ACACB87E423C9DFB6634482031918064F57C0486BD8E91876866908F319A",
+      "state": "PASS_R15E_COLLECTOR_ZIP_LOOKUP_REHEARSAL"
+    }
+  ],
+  "binding": {
+    "oneTimePublicationOnly": true,
+    "exactRequestCorrelationRequired": true,
+    "collectorExactNormalizedFileSetClosed": true,
+    "matchingSignedTerminalResponseOnly": true
+  },
+  "authority": {
+    "publicationAuthorizedByThisGate": false,
+    "maximumPublications": 1,
+    "retryAuthorized": false,
+    "targetExecuted": false,
+    "sourceMutationPerformed": false,
+    "providerActivated": false,
+    "automaticIdentityAuthority": false,
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false
+  }
+}

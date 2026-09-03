@@ -1,0 +1,62 @@
+{
+  "schema": "argos_clone_literal_remediation_gate_v1",
+  "checkedUtc": "2026-09-03T12:50:22.3323649Z",
+  "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "mode": "GATE",
+  "manifest": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R15E\\R15E_PUBLICATION_CLONE_LITERAL_REMEDIATION.json",
+  "manifestSha256": "B71858854D68C1E082EE3CFB6511AE6D8661C672F07FCBFCAE455FD66605ACAC",
+  "pairCount": 3,
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R14/Publish-R14P.ps1",
+      "generated": "work/OPENCV_SCRIBE_R15E/Publish-R15E.ps1",
+      "sourceSha256": "833B95A877FADEAE37128F0ADB9ECCF2B81C5D0D9366A037208B09D85B3836B7",
+      "generatedSha256": "4FFB93F2FA12A40624F5195E37C4BCDD29E3411C9864A95D92ACB753F14201C2",
+      "sourceRoots": [
+        "\\\\shm-cifs\\Department",
+        "U:\\ProjectPortalRO"
+      ],
+      "generatedRoots": [
+        "\\\\shm-cifs\\Department",
+        "U:\\ProjectPortalRO"
+      ],
+      "ruleCount": 2
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R14/Collect-R14PResponse.ps1",
+      "generated": "work/OPENCV_SCRIBE_R15E/Collect-R15EResponseR2.ps1",
+      "sourceSha256": "2068B35DF35B0DBD7E26DE12B4509F3BA39AF53F67F730133DE06781DA6733FC",
+      "generatedSha256": "2DBDDE205550BFF8A0E5B8037391ABC44BC092A25FD79D30E9AC0BD394D8313E",
+      "sourceRoots": [
+        "\\\\shm-cifs\\Department",
+        "C:\\R14R",
+        "U:\\ProjectPortalRO"
+      ],
+      "generatedRoots": [
+        "\\\\shm-cifs\\Department",
+        "C:\\R15ER",
+        "U:\\ProjectPortalRO"
+      ],
+      "ruleCount": 3
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R14/Get-R14PCurrentShareObservationR2.ps1",
+      "generated": "work/OPENCV_SCRIBE_R15E/Get-R15ECurrentShareObservation.ps1",
+      "sourceSha256": "9AD30C37A3E638749F21BEE0C4D0A660B89D116CAD28B926D5794C3F60B63034",
+      "generatedSha256": "F148C4FBDAE9A365082C08564E76DC7728FED920159F77B5F838C1CE67FE3C1E",
+      "sourceRoots": [
+        "\\\\shm-cifs\\Department",
+        "U:\\ProjectPortalRO"
+      ],
+      "generatedRoots": [
+        "\\\\shm-cifs\\Department",
+        "U:\\ProjectPortalRO"
+      ],
+      "ruleCount": 2
+    }
+  ],
+  "violations": [],
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "evidenceWritten": true
+}

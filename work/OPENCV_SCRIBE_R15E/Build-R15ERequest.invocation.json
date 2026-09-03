@@ -1,0 +1,127 @@
+{
+  "schema": "argos_r15e_build_invocation_v1",
+  "requestId": "REQ_20260903T124500000Z_R15E",
+  "requiredBranch": "codex/opencv-scribe-deciphering",
+  "builderSha256": "68BC67881AD54A08AF5ED73B28BA622903ECFD825F7CADD66EE8ADDE3D1D39CC",
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "providerActivationAllowed": false,
+    "maximumPublications": 1,
+    "retryAuthorized": false
+  },
+  "requestContract": {
+    "path": "work/OPENCV_SCRIBE_R15E/R15E_REQUEST_CONTRACT.json",
+    "sha256": "42CD34A91C0BE8C2399FD52CBF8E3E9FD6E71FA334C0A920BCB7D9AD5F98EBB6"
+  },
+  "maintenanceDefinition": {
+    "path": "work/OPENCV_SCRIBE_R15E/R15E_MAINTENANCE_DEFINITION.json",
+    "sha256": "12038B1FBE3DE033D66B698BD7B84A67DA5F673BDF4406E10575BA3C06DF49C6"
+  },
+  "entryPoint": "payload/Invoke-R15E.ps1",
+  "payloads": [
+    {
+      "sourcePath": "work/OPENCV_SCRIBE_R15E/Invoke-R15E.ps1",
+      "packagePath": "payload/Invoke-R15E.ps1",
+      "sha256": "8B49AA580B1F81F95F97B51296978A2AFC2B1E8A3533687B23DE7DDC56F7EB9A"
+    },
+    {
+      "sourcePath": "work/OPENCV_SCRIBE_R15E/ArgosOpenCvScribeGridDiagnosticR15E.py",
+      "packagePath": "payload/R15E.py",
+      "sha256": "3551B50F0A87D6C43B4170C6B22D4C9C5E10BE5F2500E0E2E26FC8785AB7B66C"
+    },
+    {
+      "sourcePath": "work/OPENCV_SCRIBE_R11A/ArgosOpenCvScribeV1R11.py",
+      "packagePath": "payload/R11.py",
+      "sha256": "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9"
+    },
+    {
+      "sourcePath": "work/OPENCV_SCRIBE_R12A/Run-ArgosOpenCvScribeR12BlobDiagnostic.py",
+      "packagePath": "payload/R12A.py",
+      "sha256": "F5EB8FB3281D7D55CDD9FA4A3530A32BD33BBA3B8DB69E0A247C20935F6AD429"
+    },
+    {
+      "sourcePath": "work/OPENCV_SCRIBE_R12B/Run-ArgosOpenCvScribeR12BBlobTopology.py",
+      "packagePath": "payload/R12B.py",
+      "sha256": "D670CFCE64BF5FDF5307E69ED69A05CB7B404A78B521AB889C7F35044D666FDC"
+    },
+    {
+      "sourcePath": "work/OPENCV_SCRIBE_R15E/R15E_CONFIGURATION.json",
+      "packagePath": "payload/CFG.json",
+      "sha256": "67EA0C3678AB7AADF0F589A54D367F9281F6D79775671ED74BBA11FD5C922F36"
+    },
+    {
+      "sourcePath": "work/OPENCV_SCRIBE_R15E/R15E_LIVE_INVOCATION.json",
+      "packagePath": "payload/LIVE.json",
+      "sha256": "253AC661BF27C6D6CDF2453A34496719674DC2C78BA717D7B0256D1FE9510E92"
+    }
+  ],
+  "requiredGates": [
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_ENDPOINT_REHEARSAL_GATE.json",
+      "sha256": "FB2CE40ED26C2BC3717777711AC551D88352A5B717B643787BC3A53867FDDE93",
+      "stateProperty": "state",
+      "requiredState": "PASS_R15E_ENDPOINT_REHEARSAL"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_LOCAL_SYNTHETIC_UNIT_GATE.json",
+      "sha256": "4B3FC7DA61338887946763414E33F566703B31B7AD25B2F00687D3948196920F",
+      "stateProperty": "state",
+      "requiredState": "PASS_R15E_LOCAL_SYNTHETIC_UNIT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_COMPLETE_ROUTE_GATE.json",
+      "sha256": "E0EAE7BBECDE766E6E78D86074A098465F3117B737146DDF4FF32D1D4953ED2C",
+      "stateProperty": "state",
+      "requiredState": "PASS_R15E_COMPLETE_ROUTE_GATE"
+    },
+    {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+      "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+      "stateProperty": "state",
+      "requiredState": "PASS_JBOD_PORTAL_QUEUE_RECOVERY_V2_1_REHEARSAL"
+    }
+  ],
+  "signing": {
+    "identityPath": "work/PROJECT_PORTAL_REVIEW_ONLY/state/LAPTOP_SIGNING_IDENTITY.json",
+    "identitySha256": "3FD8164D1869375156FB7566D206FEAB97AE8A9E7D377B0AD4E03739ED697289",
+    "publicCertificatePath": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/ARGOS_PROJECT_PORTAL_LAPTOP_SIGNER_PUBLIC.cer",
+    "publicCertificateSha256": "2B434D0CF6A0D6D69AAE3D280032EFF00807D423CA3B3D7F2EFC1C6BB628BFFF",
+    "packageTesterPath": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalPackage.ps1",
+    "packageTesterSha256": "6CA21D7DE97EDE88F2C41F91D5B7801C688982C8C5A422987EB9528E1E9A084B",
+    "expectedThumbprint": "C82181052919C475CF888F49427C1B55AE65DC12"
+  },
+  "outputs": {
+    "signedRoot": "work/OPENCV_SCRIBE_R15E/signed",
+    "finalRoot": "work/OPENCV_SCRIBE_R15E/final",
+    "finalGatePath": "work/OPENCV_SCRIBE_R15E/R15E_FINAL_PACKAGE_GATE.json"
+  },
+  "pathPlan": {
+    "remoteFinalLeaves": [
+      "U:\\ProjectPortalRO\\requests\\REQ_20260903T124500000Z_R15E.ready.zip.upload",
+      "U:\\ProjectPortalRO\\requests\\REQ_20260903T124500000Z_R15E.ready.zip",
+      "U:\\ProjectPortalRO\\requests\\processed\\REQ_20260903T124500000Z_R15E.ready.zip",
+      "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_20260903T124500000Z_R15E.ready\\payload\\Invoke-R15E.ps1",
+      "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\failed\\REQ_20260903T124500000Z_R15E.ready\\PORTAL_REQUEST_MANIFEST.json",
+      "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\R_0123456789AB_20260903235959999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.json",
+      "D:\\A2\\w\\ocv\\R15E.partial\\refs\\glyphs_v5_confirmed_20260806\\028_62630_456_SLOT25_P04_S.png",
+      "D:\\A2\\w\\ocv\\R15E\\LIVE.json",
+      "D:\\A2\\w\\ocv\\R15E\\refs\\PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+      "D:\\A2\\w\\ocv\\R15E\\refs\\glyphs_v5_confirmed_20260806\\028_62630_456_SLOT25_P04_S.png",
+      "D:\\A2\\w\\ocv\\R15E\\jobs\\JQ20V.json",
+      "D:\\A2\\w\\ocv\\R15E\\failed\\JQ20V\\committed\\hypotheses_DF_REVERSE_180.png",
+      "D:\\A2\\w\\ocv\\R15E\\failed\\JQ20V\\partial\\hypotheses_DF_REVERSE_180.png",
+      "D:\\A2\\o\\ocv\\R15E.partial\\JQ20V.partial\\hypotheses_DF_REVERSE_180.png",
+      "D:\\A2\\o\\ocv\\R15E\\JQ20V\\hypotheses_DF_REVERSE_180.png",
+      "D:\\A2\\o\\ocv\\R15E_RETURN.zip.partial",
+      "D:\\A2\\o\\ocv\\R15E_RETURN.zip",
+      "C:\\R15ER\\R15E_RETURN.zip",
+      "C:\\R15ER\\b\\JQ20V\\hypotheses_DF_REVERSE_180.png"
+    ]
+  },
+  "expiresAfterHours": 24
+}

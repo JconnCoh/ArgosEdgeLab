@@ -1,0 +1,78 @@
+{
+    "schema":  "argos_opencv_scribe_r15d_endpoint_rehearsal_gate_v1",
+    "revision":  "OCV02_R15D_GRID_DIAGNOSTIC_20260903A",
+    "classification":  "PENDING_GATE",
+    "checkedUtc":  "2026-09-03T12:37:49.9036306Z",
+    "state":  "PASS_R15D_ENDPOINT_REHEARSAL",
+    "endpoint":  {
+                     "path":  "work/OPENCV_SCRIBE_R15D/Invoke-R15D.ps1",
+                     "sha256":  "D26C8D465AC5FBDBBAED24341E477C16875504A7AA19CB0164F910F2CD5E6B77",
+                     "windowsPowerShellVersion":  "5.1.26100.9168",
+                     "sevenPayloadPackageShapePassed":  true,
+                     "liveRuntimeAndSourcePinsRemainRequired":  true
+                 },
+    "preflight":  {
+                      "successState":  "PASS_R15D_STRICTLY_NONMUTATING_PREFLIGHT",
+                      "failureState":  "PASS_R15D_STRICTLY_NONMUTATING_PREFLIGHT",
+                      "sourceImageBytesRead":  false,
+                      "pixelsDecoded":  false,
+                      "childProcessStarted":  false,
+                      "filesystemMutationPerformed":  false
+                  },
+    "success":  {
+                    "invocationEvidence":  "work/OPENCV_SCRIBE_R15D/R15D_ENDPOINT_SUCCESS_REHEARSAL_INVOCATION.json",
+                    "invocationSha256":  "837492F6D54D04497133B7B1508334132628DF7CD0F15D3F3963870F32A09AEE",
+                    "providerStubSha256":  "3F689C2A4E5AB2F04E3DB922FEEE4AD7D2CF155FF3F3B5FC3DA397CE46AADF4D",
+                    "bundleSha256":  "8A8C7500771009448CB6A0806749CC7ACEADFA9FDA3152873FED525E72BAD79F",
+                    "caseCount":  4,
+                    "providerCompletedCount":  4,
+                    "caseLaunchFailureCount":  0,
+                    "artifactAndLineageValidationPassed":  true
+                },
+    "injectedFailure":  {
+                            "invocationEvidence":  "work/OPENCV_SCRIBE_R15D/R15D_ENDPOINT_FAILURE_REHEARSAL_INVOCATION.json",
+                            "invocationSha256":  "5CF923CFE2D26B6E0835046E867C205CED0951C254A2FEE715FC627022F5D191",
+                            "providerStubSha256":  "E68F84627D4BB61556BC58B40C031468F1635293C4A869431EF6933B2E8BBBA6",
+                            "bundleSha256":  "96B83905F5F090601446D88CB0331D604A9E0629C0DD736442DFCE47FAC70AAD",
+                            "caseCount":  4,
+                            "providerCompletedCount":  0,
+                            "caseLaunchFailureCount":  4,
+                            "compactFailureConstructionPassed":  true,
+                            "recoverableQuarantinePassed":  true,
+                            "laterCasesProcessed":  true
+                        },
+    "exactDependencies":  {
+                              "configurationSha256":  "93EA2EC1BE848C6E44C93E1C119062F013D71F70809637586D1F6345199A99BC",
+                              "installationFixtureSha256":  "7EA60AC1E8867B1BCA06408CFB8B29FBC63BE946BD83C2D696BCBCCDBA2B7CED",
+                              "referenceBundleSha256":  "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+                              "dependencySha256":  [
+                                                       {
+                                                           "name":  "R11.py",
+                                                           "sha256":  "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9"
+                                                       },
+                                                       {
+                                                           "name":  "R12A.py",
+                                                           "sha256":  "F5EB8FB3281D7D55CDD9FA4A3530A32BD33BBA3B8DB69E0A247C20935F6AD429"
+                                                       },
+                                                       {
+                                                           "name":  "R12B.py",
+                                                           "sha256":  "D670CFCE64BF5FDF5307E69ED69A05CB7B404A78B521AB889C7F35044D666FDC"
+                                                       }
+                                                   ]
+                          },
+    "invariants":  {
+                       "sourceFixtureHashesUnchanged":  true,
+                       "sourceMutationPerformed":  false,
+                       "sourceDeletionPerformed":  false,
+                       "aliasRemoved":  true,
+                       "taskOrProcessRestarted":  false,
+                       "providerActivated":  false,
+                       "automaticRetryPerformed":  false,
+                       "reviewOnly":  true,
+                       "trainingEligible":  false,
+                       "xmlEligible":  false,
+                       "productionEligible":  false,
+                       "productionRoutingEnabled":  false
+                   },
+    "disposition":  "PASS_LOCAL_ENDPOINT_CONSTRUCTION_GATES_FOR_PACKAGE_FREEZE"
+}

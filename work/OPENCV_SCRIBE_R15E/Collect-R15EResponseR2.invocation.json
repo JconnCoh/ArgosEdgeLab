@@ -1,0 +1,95 @@
+{
+  "schema": "argos_r15e_response_collection_r2_invocation_v1",
+  "requestId": "REQ_20260903T124500000Z_R15E",
+  "collectorSha256": "2DBDDE205550BFF8A0E5B8037391ABC44BC092A25FD79D30E9AC0BD394D8313E",
+  "maximumMatchingResponses": 1,
+  "requestRetryAuthorized": false,
+  "matchingSignedTerminalResponseOnly": true,
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "providerActivationAllowed": false
+  },
+  "requiredGates": [
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_FINAL_PACKAGE_GATE.json",
+      "sha256": "04D279BEA38AB1AB69ED79670A5618E0108331BB2B67404CFF951AF3F05EABC6",
+      "stateProperty": "state",
+      "requiredState": "PASS_R15E_FINAL_SIGNED_PACKAGE"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_COMPLETE_ROUTE_PACKAGE_BINDING_GATE.json",
+      "sha256": "2EC237F84A438E632F2E9C68D1CD92C1054F9A1A8B0C473438D1C3F83C756808",
+      "stateProperty": "state",
+      "requiredState": "PASS_R15E_COMPLETE_ROUTE_PACKAGE_AND_TOOLING_BINDING_GATE"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/PREACTION_PUBLISH_R15E.json",
+      "sha256": "4ECF9F92B0BFAE9D91D7984406826CB0E7C1F5A7F7D9C4A497304C6AA381AC3B",
+      "stateProperty": "state",
+      "requiredState": "PASS_PREACTION_CONTRACT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_PUBLICATION_CLONE_LITERAL_GATE.json",
+      "sha256": "95DDDAE11802A10E849BE2080DCB19BA21B749A856A3D63F2204A02E95891F93",
+      "stateProperty": "state",
+      "requiredState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_COLLECTOR_ZIP_LOOKUP_REHEARSAL_GATE_R2.json",
+      "sha256": "2D32ACACB87E423C9DFB6634482031918064F57C0486BD8E91876866908F319A",
+      "stateProperty": "state",
+      "requiredState": "PASS_R15E_COLLECTOR_ZIP_LOOKUP_REHEARSAL"
+    }
+  ],
+  "requestZip": {
+    "path": "work/OPENCV_SCRIBE_R15E/final/REQ_20260903T124500000Z_R15E.ready.zip",
+    "sha256": "8016B63D69CE01972079378FE66556D3733C17BEC6AAA21452FC74C4BEA2CAB7",
+    "bytes": 54760
+  },
+  "publicationGate": {
+    "path": "work/OPENCV_SCRIBE_R15E/R15E_PUBLISH_GATE.json",
+    "collectorRehearsalGateSha256": "2D32ACACB87E423C9DFB6634482031918064F57C0486BD8E91876866908F319A"
+  },
+  "responseSigner": {
+    "certificatePath": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer",
+    "certificateSha256": "5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B",
+    "verifierPath": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalResponse.ps1",
+    "verifierSha256": "4AF5901A7B9DFFF5A4DAF128960173D67501ABF6FF87C586BA526643B1C1449C",
+    "thumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC"
+  },
+  "route": {
+    "inspectionRevsUnc": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs"
+  },
+  "limits": {
+    "maximumResponseFiles": 2000,
+    "maximumResponseZipEntries": 16,
+    "maximumManifestBytes": 1048576,
+    "maximumSignatureBytes": 8192,
+    "maximumStdoutBytes": 16777216,
+    "maximumSmallResponseFileBytes": 1048576,
+    "maximumBundleBytes": 8388608,
+    "maximumBundleBase64Characters": 12582912,
+    "maximumBundleEntries": 128,
+    "maximumBundleEntryBytes": 8388608,
+    "maximumBundleExpandedBytes": 67108864,
+    "maximumJsonBytes": 1048576
+  },
+  "allowedTerminalStates": [
+    "PASS_MAINTENANCE_PATCH",
+    "FAILED",
+    "FAILED_RESPONSE_CONSTRUCTION"
+  ],
+  "expectedCaseIds": [
+    "K25V",
+    "X18V",
+    "JQ16D",
+    "JQ20V"
+  ],
+  "outputRoot": "work/OPENCV_SCRIBE_R15E_RESPONSE",
+  "shortExtractionRoot": "C:\\R15ER"
+}
