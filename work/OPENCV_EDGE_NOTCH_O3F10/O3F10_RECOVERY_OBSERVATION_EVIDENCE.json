@@ -1,0 +1,40 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "state": "PASS_O3F10_SIGNED_FAILURE_CLASSIFICATION_AND_FROZEN_DETECTOR_EVIDENCE",
+  "incidentId": "OCV03_O3F10_R10_STAGED_DEV6",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "sources": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F9/O3F9_SIGNED_TERMINAL_FAILURE_GATE.json",
+      "sha256": "AF2617E0177360D02450E09DE39835804B2F1BC322BA08019B74C0F43821A75F",
+      "expected": {
+        "classification": "SIGNED_ARTIFACT_CALLER_CONSUMER_CONTRACT_FAILURE_NOT_LIVE_STATE_PREMISE_FAILURE",
+        "sourceImageBytesRead": false,
+        "resultRootCreated": false
+      },
+      "observed": {
+        "classification": "SIGNED_ARTIFACT_CALLER_CONSUMER_CONTRACT_FAILURE_NOT_LIVE_STATE_PREMISE_FAILURE",
+        "sourceImageBytesRead": false,
+        "resultRootCreated": false
+      }
+    },
+    {
+      "path": "work/O3F8/O3F8_R10_SYMMETRIC_GATE_R3.json",
+      "sha256": "BA661D01D1320AA2CDD9BBB40873B5354DC9290639E011AE3858EC40BBD5F4EE",
+      "expected": {
+        "state": "PASS_O3F8_R10_SYMMETRIC_GATE"
+      },
+      "observed": {
+        "state": "PASS_O3F8_R10_SYMMETRIC_GATE"
+      }
+    }
+  ],
+  "observationOnly": true,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
+

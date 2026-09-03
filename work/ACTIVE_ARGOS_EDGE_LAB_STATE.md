@@ -9775,3 +9775,37 @@ Exact next action: commit/push, publish this request once through Project Portal
 collect only its matching signed terminal response, and inspect the six results.
 RustDesk and operator clipboard/Enter input are not part of this route. All O3F6
 and O3F7 holds, including rare hotspot Slot16, remain explicit.
+
+## OCV-03 O3F10 R10 DEV6 signed portal ready — 2026-09-02
+
+Disposition: `PENDING_GATE`
+
+O3F9 was published once and returned matching signed terminal failure
+`R_763701FC91CC_20260903012427794_6cd8c644`, ZIP
+`6C75B41A724F06F2F8D34AC88104A18AE7EF980A47F338B8867E45F2EEA93B83`,
+before PREFLIGHT/GATE/DEV6 or any image read. Its endpoint compared structured
+SELF_TEST JSON to a bare token. O3F9 is withdrawn, no-retry, and non-parent;
+failure gate is
+`AF2617E0177360D02450E09DE39835804B2F1BC322BA08019B74C0F43821A75F`.
+
+O3F10 keeps R10 detector
+`0EEEE7A396E918AF44082EC0930871A6A94C1FBB59D3F5CEF1AC34D1273745FA`
+and runner
+`606AFE5DF058F0298CFE333D9091DF3F5F0B5F222EC03C40E73006773F587D72`
+unchanged. Exact endpoint and separate real/fixture SELF_TEST contract gates
+pass. Fresh signed request `REQ_O3F10_20260902A`, ZIP
+`2B93471DD8450DF8A4A6128B5295D5F6D7031BCB06C985FEE3387EC44694B4CD`,
+passes exact packaged PS5.1/signature/predecessor/idempotency/refusal,
+image-free extracted-endpoint, 54-path round-trip, and zero-pending share
+gates. It is not published.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F10_R10_DEV6_SIGNED_PORTAL_READY_CHECKPOINT_20260902.md`,
+SHA-256 `877DB2F8A8BB6BF52ED4DCA681447D28641648E12C88794B6557FB6D9B92040E`.
+
+Exact next action: commit/push, refresh the zero-pending share observation,
+publish O3F10 once through Project Portal, and collect only its matching signed
+terminal response. Do not use RustDesk or operator input and do not retry.
+Inspect all six results before any broader frontside run. Preserve every hold,
+including rare hotspot Slot16; selector relaxation and automatic hold clearance
+remain prohibited.

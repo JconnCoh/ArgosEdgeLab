@@ -10936,3 +10936,22 @@ than rerunning it.
   exact ACK arrives. Do not advance a chunk on local clipboard write alone.
 - Recovery: preserve the failed namespace, use a fresh in-memory receiver, and
   write target bytes only after every chunk and the final payload hash pass.
+
+## 2026-09-02 — Exercise the exact real child output contract in endpoint rehearsal
+
+- Failure signature: signed O3F9 request `REQ_O3F9_20260902A` failed at the
+  first owned `SELF_TEST` child with `O3F9 SELF_TEST state changed.` before any
+  GATE/DEV6 image processing or result-root creation.
+- Cause: the exact real runner emits one JSON object with `state` and
+  `mutationsPerformed`, while the endpoint compared its raw stdout to a bare
+  state string. The fixture runner emitted the bare string, so the fixture-only
+  endpoint rehearsal did not exercise the real caller/consumer shape.
+- Mandatory preflight: every packaged child stage must be run through the exact
+  endpoint with the exact real child at least through its non-mutating mode, and
+  the rehearsal fixture must preserve the real stdout schema. Structured child
+  output must be parsed and its named fields asserted; never compare structured
+  JSON stdout to a bare state token.
+- Recovery: preserve O3F9 as terminal/no-retry, create a fresh request and output
+  namespace, change only the endpoint `SELF_TEST` assertion to parse the existing
+  JSON contract, and rerun exact-real-runner plus injected-failure rehearsals
+  before one separately signed publication.

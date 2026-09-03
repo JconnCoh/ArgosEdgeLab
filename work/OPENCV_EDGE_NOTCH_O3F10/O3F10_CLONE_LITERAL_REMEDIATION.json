@@ -1,0 +1,39 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "O3F10_QUALIFIED_O3Q8_STRUCTURE_WITH_O3F9_DIAGNOSTIC_DIFF_20260902",
+  "qualifiedSource": "O3Q8_SIGNED_PASS_MAINTENANCE_PATCH_OWNED_CHILD_STRUCTURE",
+  "diagnosticDiffSource": {
+    "namespace": "work/OPENCV_EDGE_NOTCH_O3F9",
+    "classification": "WITHDRAWN_DIAGNOSTIC_DIFF_SOURCE_ONLY",
+    "futureReuseAllowed": false,
+    "publicationParentAllowed": false
+  },
+  "pairs": [
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F9/Build-O3F9Package.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F10/Build-O3F10Package.ps1",
+      "rootRules": [
+        {
+          "sourceRoot": "C:\\A9F",
+          "generatedRoot": "C:\\A10F",
+          "disposition": "REPLACED"
+        }
+      ]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F9/Test-O3F9Endpoint.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F10/Test-O3F10Endpoint.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\A9U","generatedRoot":"C:\\A10U","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\A9V","generatedRoot":"C:\\A10V","disposition":"REPLACED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F9/O3F9FixtureRunner.py",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F10/O3F10FixtureRunner.py",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}
+      ]
+    }
+  ]
+}
