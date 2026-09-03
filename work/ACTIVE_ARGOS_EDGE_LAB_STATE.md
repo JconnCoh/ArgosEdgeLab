@@ -10325,3 +10325,25 @@ Portal route without operator input; RustDesk remains prohibited.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L3_REVIEW_L4_LOCAL_NEXT_20260903.md`,
 SHA-256 `B13F374D799037F4DA453800F704E0D5BF01F425D3D5A9C0E868345DC7BA54DB`.
+
+## OCV-03 O3F15L4 local image-free pass — 2026-09-03
+
+Disposition: `PENDING_GATE`
+
+Fresh DRAFT runner `C65E4337E7D6909FA24CE413EBEA6302101C81EE5CCF451FAEBD5A947FFE68D6`
+and focused test `C8E0B2CC40124056634F076B2009EC5BC72AAD333AF9F142599BEA101D49168E`
+pass the lexical-only canonical and O3F15-owned alias contract. One image-free
+invocation passed all eight regressions, including Slot19 `207/239 -> 114/146`,
+boundaries 199/200/229/230, zero-canonical job/API use, flat dependencies,
+fresh L4 roots/provenance, failure artifact salvage, safe job identity, alias
+lifecycle, R11 hash-before-decode, 978 plans, and a later control. Frozen O3F14
+and R11 are unchanged; the O3F14 runtime/dependency preflight remains required.
+
+No live, image, source, task/process, provider, build, signature, publication,
+retry, selector/threshold, or hold action occurred. All 184/12 holds including
+Slot02 and Slot16 remain. Await separate package/build/sign/publish authority;
+all later live work remains portal-only without operator input or RustDesk.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4_LOCAL_IMAGE_FREE_PASS_CHECKPOINT_20260903.md`,
+SHA-256 `20C8884F6C15C7F1E234682A61482ED491AE30F5AE2471312D165BC053731B8C`.
