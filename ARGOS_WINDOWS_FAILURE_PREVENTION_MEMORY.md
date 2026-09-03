@@ -10924,3 +10924,15 @@ than rerunning it.
   `D:/O3F7SEL` root or selection file. Use one fresh file-backed script and
   output namespace, persist stdout/stderr, and verify its source and output
   hashes before accepting results.
+## 2026-09-02 — Pace bidirectional nested-RDP clipboard chunk acknowledgements
+
+- Failure signature: an in-memory chunk receiver accepted chunk 0, returned
+  ACK 1, then timed out although the laptop set chunk 1 immediately after
+  observing that ACK. No target file or output root was created.
+- Cause: the immediate reverse-direction clipboard update raced the still-
+  propagating ACK across RustDesk plus two nested RDP clipboard chains.
+- Mandatory preflight: after each exact ACK, pause before setting the next
+  bounded chunk and retry that same chunk at a bounded interval until the next
+  exact ACK arrives. Do not advance a chunk on local clipboard write alone.
+- Recovery: preserve the failed namespace, use a fresh in-memory receiver, and
+  write target bytes only after every chunk and the final payload hash pass.

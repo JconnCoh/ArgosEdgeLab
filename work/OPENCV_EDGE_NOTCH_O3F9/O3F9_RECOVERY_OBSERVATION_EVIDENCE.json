@@ -1,0 +1,27 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "state": "PASS_O3F9_QUALIFIED_ROUTE_AND_LOCAL_DETECTOR_EVIDENCE",
+  "incidentId": "OCV03_O3F9_R10_STAGED_DEV6",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "sources": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q8/O3Q8_SIGNED_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "A0E60D4E97654F569FAE148DC835BE8B60C4D29C1BF92425B62D6EE6969CFD8C",
+      "expected": {"responseState": "PASS_MAINTENANCE_PATCH", "sourceRole": "JBOD"},
+      "observed": {"responseState": "PASS_MAINTENANCE_PATCH", "sourceRole": "JBOD"}
+    },
+    {
+      "path": "work/O3F8/O3F8_R10_SYMMETRIC_GATE_R3.json",
+      "sha256": "BA661D01D1320AA2CDD9BBB40873B5354DC9290639E011AE3858EC40BBD5F4EE",
+      "expected": {"state": "PASS_O3F8_R10_SYMMETRIC_GATE"},
+      "observed": {"state": "PASS_O3F8_R10_SYMMETRIC_GATE"}
+    }
+  ],
+  "observationOnly": true,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

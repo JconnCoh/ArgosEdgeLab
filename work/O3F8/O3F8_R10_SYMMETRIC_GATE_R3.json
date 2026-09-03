@@ -1,0 +1,180 @@
+{
+  "schema": "argos_ocv03_o3f8_r10_symmetric_recovery_local_gate_v1",
+  "state": "PASS_O3F8_R10_SYMMETRIC_RECOVERY_LOCAL_GATE",
+  "r9Sha256": "DB44AD35205AC088FE7E24C1CC8FA9291311922A7D31E0F1C055BA92EAFD2FC1",
+  "r10Sha256": "0EEEE7A396E918AF44082EC0930871A6A94C1FBB59D3F5CEF1AC34D1273745FA",
+  "testSha256": "7125CF87F9B094B23D77A4A8F9347FC0F95C9719FDCEA98CF33185A7B67E0092",
+  "inheritance": {
+    "r9FunctionsPreserved": true,
+    "r9CorroborationConstantsUnchanged": true,
+    "r9SourceSha256": "DB44AD35205AC088FE7E24C1CC8FA9291311922A7D31E0F1C055BA92EAFD2FC1",
+    "rows": [
+      {
+        "function": "circular_gap",
+        "unchanged": true
+      },
+      {
+        "function": "circular_owner",
+        "unchanged": true
+      },
+      {
+        "function": "depth_profile",
+        "unchanged": true
+      },
+      {
+        "function": "enrich_candidate",
+        "unchanged": true
+      },
+      {
+        "function": "honest_overlay",
+        "unchanged": true
+      },
+      {
+        "function": "honest_radial_overlay",
+        "unchanged": true
+      },
+      {
+        "function": "load_module",
+        "unchanged": true
+      },
+      {
+        "function": "local_grid_maps",
+        "unchanged": true
+      },
+      {
+        "function": "main",
+        "unchanged": true
+      },
+      {
+        "function": "observed_columns",
+        "unchanged": true
+      },
+      {
+        "function": "pair_candidates",
+        "unchanged": true
+      },
+      {
+        "function": "parameters_from_job",
+        "unchanged": true
+      },
+      {
+        "function": "patterned_wafer",
+        "unchanged": true
+      },
+      {
+        "function": "r9_state",
+        "unchanged": true
+      },
+      {
+        "function": "radial_channel_from_base",
+        "unchanged": true
+      },
+      {
+        "function": "radial_crop_measurement",
+        "unchanged": true
+      },
+      {
+        "function": "read_json",
+        "unchanged": true
+      },
+      {
+        "function": "render_candidate_assets",
+        "unchanged": true
+      },
+      {
+        "function": "render_o3p8_recovery_assets",
+        "unchanged": true
+      },
+      {
+        "function": "render_overview",
+        "unchanged": true
+      },
+      {
+        "function": "render_radial_candidate_assets",
+        "unchanged": true
+      },
+      {
+        "function": "require",
+        "unchanged": true
+      },
+      {
+        "function": "run_polylines",
+        "unchanged": true
+      },
+      {
+        "function": "scan_channel",
+        "unchanged": true
+      },
+      {
+        "function": "sha256_file",
+        "unchanged": true
+      },
+      {
+        "function": "synthetic_gate",
+        "unchanged": true
+      },
+      {
+        "function": "topology_measurement",
+        "unchanged": true
+      },
+      {
+        "function": "validate_topology_config",
+        "unchanged": true
+      },
+      {
+        "function": "write_json",
+        "unchanged": true
+      },
+      {
+        "function": "write_png",
+        "unchanged": true
+      }
+    ]
+  },
+  "geometry": {
+    "c5PositiveOverlapDegrees": 0.14100000000000534,
+    "c5CenterGapDegrees": 1.9309999999999832,
+    "c5UsesMouthOverlap": true,
+    "c5OldCenterOnlyRejected": true,
+    "c5R10Accepted": true,
+    "sameGapWithoutOverlapRejected": true,
+    "wraparoundOverlapAccepted": true,
+    "touchOnlyIsNotPositiveOverlap": true
+  },
+  "localDfExtractor": {
+    "candidateCount": 1,
+    "thresholdPx": 6.0,
+    "noiseSigmaPx": 0.028373185995982052,
+    "usesActualLocalAngles": true,
+    "centerNearSeed": true,
+    "largeChannelFitOffsetRecoveredByLocalBaseline": true,
+    "localBaselineMethodRecorded": true
+  },
+  "bfSeededCases": {
+    "c1UnqualifiedGlobalDfUniqueLocalPass": true,
+    "c2SpuriousBfWithoutDfCorroborationSuppressed": true,
+    "c2TwoCorroboratedSitesRemainAmbiguous": true,
+    "c4QualifiedDfZeroGlobalCandidatesCanRecoverLocally": true,
+    "poorLocalDfSupportHolds": true,
+    "incompleteBfTopologySeedHolds": true,
+    "globalDfQualificationNotRequired": true,
+    "globalDfQualificationRecorded": true
+  },
+  "selection": {
+    "reciprocalDirectionsDeduplicateToOneCluster": true,
+    "reciprocalUniqueClusterPasses": true,
+    "uniqueSelectionPresent": true,
+    "c6TwentyOneDistinctSeedsHold": true,
+    "c6ClusterCountPreserved": true,
+    "c6HasNoSelectedCluster": true,
+    "zeroRecoveryPreservesExactHold": true,
+    "existingPassNotInvoked": true,
+    "multipleNeverRanked": true
+  },
+  "numericThresholdRelaxationPerformed": false,
+  "expectedAnglePriorConsumed": false,
+  "bfDfFitAveragingPerformed": false,
+  "sourceMutation": false,
+  "providerActivated": false,
+  "jbodAccessed": false
+}

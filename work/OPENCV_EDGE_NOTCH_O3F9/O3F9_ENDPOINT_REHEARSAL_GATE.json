@@ -1,0 +1,35 @@
+{
+    "schema":  "argos_ocv03_o3f9_endpoint_rehearsal_gate_v1",
+    "state":  "PASS_O3F9_EXACT_ENTRYPOINT_REHEARSAL",
+    "endpointSha256":  "B6A0A97C4604D1B06DA500A3E802F651B63A427E15311906BD86A0F9BCE3E4CC",
+    "fixtureRunnerSha256":  "FA64C06601936A36E79514C3E5A693003044F1705D2959ED249937022C561B31",
+    "pythonSha256":  "4942B86A6597E5AEE0128DAA00050ED79BC21F6E709A78EB19CBFEB0C2F39AC9",
+    "cases":  [
+                  {
+                      "caseId":  "SUCCESS",
+                      "passed":  true,
+                      "failureInjected":  false,
+                      "imageBytesRead":  false
+                  },
+                  {
+                      "caseId":  "INJECTED_DEV6_FAILURE",
+                      "passed":  true,
+                      "failureInjected":  true,
+                      "imageBytesRead":  false
+                  }
+              ],
+    "successStages":  [
+                          "SELF_TEST",
+                          "PREFLIGHT",
+                          "GATE",
+                          "DEV6"
+                      ],
+    "injectedFailureStage":  "DEV6",
+    "sourceImageBytesRead":  false,
+    "taskActionCount":  0,
+    "existingProcessActionCount":  0,
+    "sourceMutationPerformed":  false,
+    "providerActivated":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

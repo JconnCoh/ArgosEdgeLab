@@ -1,0 +1,105 @@
+{
+  "schema": "argos_ocv03_split_method_full_perimeter_synthetic_gate_v1",
+  "state": "PASS_O3M6_SPLIT_METHOD_FULL_PERIMETER_SYNTHETIC_GATE",
+  "rows": [
+    {
+      "caseId": "UPPER_RIGHT_315",
+      "eligiblePhysicalCandidateCount": 1,
+      "expectedCount": 1,
+      "detectedAngleDegrees": 314.9866252837817,
+      "expectedAngleScorerOnly": 315.0,
+      "passed": true
+    },
+    {
+      "caseId": "ANGLE_037",
+      "eligiblePhysicalCandidateCount": 1,
+      "expectedCount": 1,
+      "detectedAngleDegrees": 36.99294999607354,
+      "expectedAngleScorerOnly": 37.0,
+      "passed": true
+    },
+    {
+      "caseId": "NO_NOTCH_PERIODIC",
+      "eligiblePhysicalCandidateCount": 0,
+      "expectedCount": 0,
+      "detectedAngleDegrees": null,
+      "expectedAngleScorerOnly": null,
+      "passed": true
+    },
+    {
+      "caseId": "TWO_NOTCH_AMBIGUITY",
+      "eligiblePhysicalCandidateCount": 2,
+      "expectedCount": 2,
+      "detectedAngleDegrees": null,
+      "expectedAngleScorerOnly": null,
+      "passed": true
+    },
+    {
+      "caseId": "CHIPOUT_NOT_PAIRED",
+      "eligiblePhysicalCandidateCount": 1,
+      "expectedCount": 1,
+      "detectedAngleDegrees": 217.01965833737125,
+      "expectedAngleScorerOnly": 217.0,
+      "passed": true
+    }
+  ],
+  "channelMethods": {
+    "BF": "TOP_CONNECTED_TOPOLOGY_FULL_360",
+    "DF": "OUTER_EDGE_RADIAL_FULL_360"
+  },
+  "backsidePixelsConsumed": false,
+  "dfRadialContourOverlayControl": {
+    "clean": {
+      "path": "upper_right_315_df_c01_clean.png",
+      "bytes": 25761,
+      "sha256": "F3302A12B1A2DDBF080089F41590D71F88B58121C2704ED8764F833D58DA0669",
+      "operatorFeedbackRasterized": false,
+      "inheritedReviewRasterUsed": false
+    },
+    "enhanced": {
+      "path": "upper_right_315_df_c01_enhanced.png",
+      "bytes": 29189,
+      "sha256": "971D905947946BFCFA5DE817A22566873F30013128362CFD435FED4AD466A69B",
+      "operatorFeedbackRasterized": false,
+      "inheritedReviewRasterUsed": false
+    },
+    "overlay": {
+      "path": "upper_right_315_df_c01_overlay.png",
+      "bytes": 35326,
+      "sha256": "5D0914B680E895D7CB23E879CE52F5BC7664AA033D936D37EF89A294338E279D",
+      "operatorFeedbackRasterized": false,
+      "inheritedReviewRasterUsed": false
+    },
+    "mask": {
+      "path": "upper_right_315_df_c01_mask.png",
+      "bytes": 3929,
+      "sha256": "696887CC778AAAE6170865D0C18765C9E718AE873580E38095166F55AAD05364",
+      "operatorFeedbackRasterized": false,
+      "inheritedReviewRasterUsed": false
+    },
+    "radialContourEvidence": {
+      "method": "OUTER_EDGE_RADIAL_PARALLEL_CROP_CONTOUR",
+      "supportedColumnCount": 1000,
+      "supportedColumnFraction": 1.0,
+      "adaptiveContrastFloor": 46.199999999999996,
+      "minimumBoundaryContrast": 8.0,
+      "outerEdgeRelativeContrast": 0.35,
+      "radialSmoothingWidthPx": 5,
+      "radialContrastSpanPx": 8,
+      "state": "DF_RADIAL_MEASURED_NOTCH_CONTOUR",
+      "redMeasuredContourColumnCount": 92,
+      "mouthPointCount": 2,
+      "straightRedAxisLineRendered": false,
+      "interpolatedContourRenderedAsMeasured": false
+    }
+  },
+  "full360Search": true,
+  "upperRightPositiveIncluded": true,
+  "periodicDiePatternIncluded": true,
+  "noNotchNegativeIncluded": true,
+  "twoNotchAmbiguityIncluded": true,
+  "chipoutPairingNegativeIncluded": true,
+  "argosRotationMetadataConsumed": false,
+  "knownNotchLocationConsumed": false,
+  "expectedAnglesUsedOnlyAfterInference": true
+}

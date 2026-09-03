@@ -1,0 +1,71 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-03T01:15:04.7080114Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3F9\\O3F9_PORTAL_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "D9C8F7B2A6CD706F267C2FAF91E7CEDFC157C52FAFDA6B4CBB1CEF7437A3AAF2",
+    "pairCount":  4,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3N1/Invoke-O3N1Slot16Endpoint.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F9/Invoke-O3F9StagedEndpoint.ps1",
+                      "sourceSha256":  "192C2A0D93031FF8184B3D2796D8845AB07492CA1D5FD378A735491067960840",
+                      "generatedSha256":  "B6A0A97C4604D1B06DA500A3E802F651B63A427E15311906BD86A0F9BCE3E4CC",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3N1/Test-O3N1Routes.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F9/Test-O3F9Routes.ps1",
+                      "sourceSha256":  "848FDAD15D7C3A0EEB621D49140F2C15B3505C502475B86B73279D43056210DA",
+                      "generatedSha256":  "78FA61C1FB0E1A6128997EC4253998F037A7C9A0634610614B33BA320180B07C",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3N1/Publish-O3N1RenderRequest.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F9/Publish-O3F9Request.ps1",
+                      "sourceSha256":  "69A1400018E14BCBF03C84CBCB623AECDF75C0464C4CA01734849C312DB448EA",
+                      "generatedSha256":  "482771541EE21043241ADA6A73E51CED55E4E39D75BFD10ADC47AC5DBF127EA4",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3N1/Collect-O3N1RenderResponseR3.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F9/Collect-O3F9Response.ps1",
+                      "sourceSha256":  "CC6047F5503FD060E4531FBEDD3AFCA077065215AFD707C0E3247FC1E115D28D",
+                      "generatedSha256":  "FDDA588CB895B96B65122E9DFBD30A9AEC04CD567793D692A39A962AFD36F149",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+
+                                         ],
+                      "ruleCount":  1
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

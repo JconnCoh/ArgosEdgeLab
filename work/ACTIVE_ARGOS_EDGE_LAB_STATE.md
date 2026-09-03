@@ -9750,3 +9750,28 @@ first observation records 16 completed pairs, three retained holds, and empty
 stderr. No source/task/process/provider/authority or hold-clearance action
 occurred. Await one bounded completion observation, then continue the recorded
 sequence.
+
+## OCV-03 O3F9 R10 DEV6 signed portal ready — 2026-09-02
+
+Disposition: `PENDING_GATE`
+
+The operator completed the bounded O3F7 review and authorized a small detector
+test. R10 `0EEEE7A396E918AF44082EC0930871A6A94C1FBB59D3F5CEF1AC34D1273745FA`
+preserves the frozen 1.5-degree correspondence and all multiple-cluster holds,
+adding only positive mouth-interval overlap and BF-seeded channel-local DF
+recovery after a zero baseline result. Focused and inherited synthetic gates
+pass. Fresh runner `606AFE5DF058F0298CFE333D9091DF3F5F0B5F222EC03C40E73006773F587D72`
+is limited to SELF_TEST/PREFLIGHT/GATE/DEV6 and preserves detector holds.
+
+Signed request `REQ_O3F9_20260902A`, ZIP
+`5C93DD867E8C3D818BAFAB283AF79545ACC84B3B3106393768D34F02AC85D8F4`,
+passed exact entrypoint, packaged PowerShell 5.1, signature, predecessor,
+idempotency, and 54-path round-trip gates. It is not published. It creates only
+fresh `D:/O3F9G1` and `D:/O3F9D1`, uses the unchanged qualified endpoint, and
+allows no source/task/existing-process/provider/training/XML/production/wafer,
+retry, selector-relaxation, or hold-clearance action.
+
+Exact next action: commit/push, publish this request once through Project Portal,
+collect only its matching signed terminal response, and inspect the six results.
+RustDesk and operator clipboard/Enter input are not part of this route. All O3F6
+and O3F7 holds, including rare hotspot Slot16, remain explicit.
