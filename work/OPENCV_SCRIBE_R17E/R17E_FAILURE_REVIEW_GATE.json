@@ -1,0 +1,56 @@
+{
+  "schema": "argos_opencv_scribe_r17e_failure_review_gate_v1",
+  "revision": "OCV02_R17E_FAILURE_REVIEW_20260903A",
+  "state": "PASS_DIAGNOSTIC_ONLY",
+  "authority": {
+    "reviewOnly": true,
+    "publicationAuthorized": false,
+    "activationAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "automaticHoldClearanceAuthorized": false
+  },
+  "inputs": {
+    "providerSha256": "A2E124FD794C1F97C4C202995DFAB09D4C984862C7E292C1D82034D487A901CA",
+    "testSha256": "401CFBC82C28BBBFBA67EBBDC558523715C38353B07392080FB2E122DA81B751",
+    "builderSha256": "3CF56D7866A2A3B35D9CF86F76CEA81E0F7729612FB5D39DC468C017452C88CA",
+    "localGateSha256": "A2C1BC7D974670C481F4D510051AF2699080B20ECE93BE60536771F35E310DE2"
+  },
+  "result": {
+    "root": "C:\\P2COHORT\\results\\R17E_PREDECESSOR_FAILURE_REVIEW_20260903A",
+    "summarySha256": "171912A4F224755B062A2D16C3BCAE2E22F733C3DFC9DC3CDEB8298DD140BF1F",
+    "caseCount": 8,
+    "visibleScribeCount": 5,
+    "exactImageFirstCount": 5,
+    "notLocalizedCount": 3,
+    "blankFalseStringCount": 0,
+    "checksumRole": "VERIFY_IMAGE_FIRST_ONLY"
+  },
+  "clarification": {
+    "caseId": "62620-548_20260810154124_Slot01",
+    "correctImageFirstString": "L0751043FEC4",
+    "r17eReaderFailure": false,
+    "predecessorReaderFailure": true,
+    "predecessorImageFirstString": "0201E42FECE3",
+    "predecessorState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD_SEGMENTATION_INCOMPLETE",
+    "bfAndDfIndependentAgreement": true,
+    "checksumVerifiedOnly": true
+  },
+  "visuallyInspectedArtifacts": [
+    {
+      "relativePath": "62620-548_20260810154124_Slot01/GRID_OVERLAY.png",
+      "sha256": "D4E3B9B770792BB82ACB17DBF0CF5875B2A165F02097ADA825085DB1131C7290"
+    },
+    {
+      "relativePath": "62627-193_20260820124250_Slot01/CHARACTER_SHEET.png",
+      "sha256": "43529AF014A9000F76077CB8934F3B807623AA2A1DCFF8844F2C2AFD284720AB"
+    },
+    {
+      "relativePath": "Lot-62546-481-POST2_20260713155808_Slot18/NOT_LOCALIZED_PAIR.png",
+      "sha256": "0893290A1488B53B7498D1C1AA83823CE2B0E34A3279746E2240BDF16BC1778C"
+    }
+  ],
+  "disposition": "LOCAL_DIAGNOSTIC_COMPLETE_NOT_PUBLISHED"
+}

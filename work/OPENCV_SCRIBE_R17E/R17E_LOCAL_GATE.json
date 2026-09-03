@@ -1,0 +1,131 @@
+{
+  "schema": "argos_opencv_scribe_r17e_local_gate_v1",
+  "revision": "OCV02_R17E_LOCAL_20260903A",
+  "state": "PASS_DIAGNOSTIC_ONLY",
+  "provider": {
+    "relativePath": "work/OPENCV_SCRIBE_R17E/ArgosOpenCvScribeV1R17E.py",
+    "sha256": "A2E124FD794C1F97C4C202995DFAB09D4C984862C7E292C1D82034D487A901CA"
+  },
+  "test": {
+    "relativePath": "work/OPENCV_SCRIBE_R17E/Test-ArgosOpenCvScribeR17E.py",
+    "sha256": "401CFBC82C28BBBFBA67EBBDC558523715C38353B07392080FB2E122DA81B751"
+  },
+  "predecessor": {
+    "revision": "OCV02_R17D_LOCAL_20260903A",
+    "gateSha256": "A6F4F2F46EC60A615DB2170AB19FEC8F12E1C0D1C6E3D6F33B5F52557E2DFBFA",
+    "providerChanged": false
+  },
+  "checksumContract": {
+    "role": "VERIFY_IMAGE_FIRST_ONLY",
+    "mayRewriteGlyphs": false,
+    "maySelectAnotherHypothesis": false,
+    "invalidImageFirstState": "SCRIBE_IMAGE_FIRST_CHECKSUM_HOLD",
+    "invalidImageFirstProposedString": "",
+    "alternativesDiagnosticOnly": true,
+    "blankOrNotLocalizedMayProduceString": false,
+    "passed": true
+  },
+  "predecessorFailureRecoveryCohort": {
+    "sourceRoot": "C:\\R17A2\\data\\JBOD_PROCESSOR_REVIEW\\identity\\proposals",
+    "sourceImagesReadOnly": true,
+    "visibleScribeCount": 5,
+    "notLocalizedCropCount": 3,
+    "exactImageFirstCount": 5,
+    "checksumVerifiedExactCount": 5,
+    "blankFalseStringCount": 0,
+    "rows": [
+      {
+        "caseId": "Lot-62546-481-POST2_20260713155808_Slot02",
+        "inputs": {"bfSha256": "16D4F8456F638AE0365DD20D96411BFFBE410942E3A4E98E471D6A97BC551A17", "dfSha256": "7395DE5E3D20314102BFA48B86E95278803217B3EE0899E5ABAC889B7C2EBD53"},
+        "predecessorInstalledReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD_NO_VALID_PROPOSAL",
+        "channelPolarity": "DF_BRIGHT",
+        "grid": {"x": 367, "y": 279, "cellWidth": 98, "cellHeight": 230},
+        "imageFirstString": "1878P076FEE6",
+        "proposedString": "1878P076FEE6",
+        "checksumValid": true
+      },
+      {
+        "caseId": "62620-548_20260810154124_Slot01",
+        "inputs": {"bfSha256": "E7AF941AE50D85F9E09AD995977EA8E0576A86CF14C15C564CAB1F9BDC961848", "dfSha256": "0D47655AB33E92C67B00EAC3330484862B3B74ED21A267FC45B8B9388D749A79"},
+        "predecessorInstalledReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD_SEGMENTATION_INCOMPLETE",
+        "channelPolarity": "BF_DARK",
+        "grid": {"x": 351, "y": 193, "cellWidth": 100, "cellHeight": 230},
+        "imageFirstString": "L0751043FEC4",
+        "proposedString": "L0751043FEC4",
+        "checksumValid": true,
+        "independentDfBrightRepeat": "L0751043FEC4"
+      },
+      {
+        "caseId": "Lot-62546-481-POST2_20260713155808_Slot20",
+        "inputs": {"bfSha256": "BEA5E169767EFA0D31E35712B40A7BA36C5BE936B0A3AFA56CD20473DC41960E", "dfSha256": "8C91745A1E8D282EE2BBB569D1FA403B7B33F9D65AEF14E4777D5DC4A38B0127"},
+        "predecessorInstalledReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD_NO_VALID_PROPOSAL",
+        "channelPolarity": "DF_BRIGHT",
+        "grid": {"x": 362, "y": 274, "cellWidth": 98, "cellHeight": 230},
+        "imageFirstString": "8365N004FEC6",
+        "proposedString": "8365N004FEC6",
+        "checksumValid": true
+      },
+      {
+        "caseId": "62627-193_20260820124250_Slot01",
+        "inputs": {"bfSha256": "BFC3F57E38EF8D07EA391669E01D82682701F974136D7FF0E937C83405DF1AA9", "dfSha256": "85D8FB86A126EBDA683BEED9260815E653EB1F09F9683A1E50631ACECED97F96"},
+        "predecessorInstalledReaderState": "SCRIBE_M12_RERANKED_CONFIRMATION_REQUIRED",
+        "channelPolarity": "BF_DARK",
+        "grid": {"x": 404, "y": 260, "cellWidth": 96, "cellHeight": 230},
+        "imageFirstString": "1484P068SUD6",
+        "proposedString": "1484P068SUD6",
+        "checksumValid": true
+      },
+      {
+        "caseId": "62625-956_20260729122701_Slot17",
+        "inputs": {"bfSha256": "C4CD01EC1403650274B4FE2882978A169B75C3B193A80B92F906EC22C0E9C5FF", "dfSha256": "51D3F931F786C7D368FD743CE53B4547E9106ABDF1574DD908DBF51779F56C89"},
+        "predecessorInstalledReaderState": "SCRIBE_IDENTITY_CONFIRMATION_HOLD_NO_VALID_PROPOSAL",
+        "channelPolarity": "BF_DARK",
+        "grid": {"x": 419, "y": 257, "cellWidth": 96, "cellHeight": 230},
+        "imageFirstString": "147JQ121SUE7",
+        "proposedString": "147JQ121SUE7",
+        "checksumValid": true
+      },
+      {
+        "caseId": "Lot-62546-481-POST2_20260713155808_Slot18",
+        "inputs": {"bfSha256": "CD24F8EFBAA9067DE2AE422D26EF38F8D9A26CB72C0B99906739885F50C39205", "dfSha256": "6CC2238AA53FE0103DCD98D2CF09F87E9720FFB32A0C20EC510A3569190AAF97"},
+        "decision": "HOLD_SCRIBE_NOT_LOCALIZED",
+        "imageFirstString": "",
+        "proposedString": ""
+      },
+      {
+        "caseId": "dev-01-post-8-19_20260819164148_Slot01",
+        "inputs": {"bfSha256": "2C213D86448BABB29923E3B80E69AC9CDF2DEADC8B781DB39C359ADE8E097C1E", "dfSha256": "B82BE2D4AC38BF78DD5C9FE58ADF915C7781484DE2BC3AF70C0D76016506F324"},
+        "decision": "HOLD_SCRIBE_NOT_LOCALIZED",
+        "imageFirstString": "",
+        "proposedString": ""
+      },
+      {
+        "caseId": "Lot-62546-481-POST2_20260713155808_Slot23",
+        "inputs": {"bfSha256": "00438EC0E63F0C0DCC76332EFA5359D00B042FCF0C2848760CBD41CBF7AB421B", "dfSha256": "1DF47322EFF9CEB1D620D56664B8758F18122CCCA582F1E004F2DA502FE7A4E0"},
+        "decision": "HOLD_SCRIBE_NOT_LOCALIZED",
+        "imageFirstString": "",
+        "proposedString": ""
+      }
+    ],
+    "truthDisposition": "VISIBLE_CHECKSUM_VERIFIED_DIAGNOSTIC_OPERATOR_CONFIRMATION_REQUIRED",
+    "passed": true
+  },
+  "remainingGates": {
+    "missingGenericReferences": "IOVWYZ",
+    "independentLargerUnreadCohortRequired": true,
+    "failureReviewArtifactsRequired": true,
+    "operatorIdentityAcceptanceRequired": true
+  },
+  "authority": {
+    "reviewOnly": true,
+    "identityAcceptanceAuthorized": false,
+    "activationAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "automaticHoldClearanceAuthorized": false,
+    "publicationAuthorized": false
+  },
+  "eligibleForPublication": false,
+  "eligibleForActivation": false
+}
