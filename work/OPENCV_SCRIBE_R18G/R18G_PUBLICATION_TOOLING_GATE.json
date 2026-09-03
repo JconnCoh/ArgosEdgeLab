@@ -1,0 +1,32 @@
+{
+  "schema": "argos_opencv_scribe_r18g_publication_tooling_gate_v1",
+  "checkedUtc": "2026-09-03T22:09:59.9312663Z",
+  "state": "PASS_R18G_PUBLICATION_TOOLING_GATE",
+  "publisher": {
+    "path": "work/OPENCV_SCRIBE_R18G/Publish-R18G.ps1",
+    "sha256": "5BEAE428E072319BEE6E65C943FDFB68E546D3169362BA73CF3B16DA083BF352",
+    "windowsPowerShell51ParserPassed": true,
+    "harnessSafetyPassed": true,
+    "wrapperSafetyPassed": true,
+    "nonMutatingPreflightPresent": true
+  },
+  "cloneLiteralGate": {
+    "path": "work/OPENCV_SCRIBE_R18G/R18G_PUBLICATION_CLONE_LITERAL_GATE.json",
+    "sha256": "BCAC1E7BAB293AC05DEE261B7EF5C5DC200D09494AD1CB68153499918BA280A4",
+    "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"
+  },
+  "authority": {
+    "path": "work/OPENCV_SCRIBE_R18G/R18G_PUBLICATION_AUTHORITY.json",
+    "sha256": "448C9589C747B006746D0C3E59D6A20630F92F0A65E468D51CB05BC23A8F08AE",
+    "state": "OPERATOR_AUTHORIZED_R18G_PUBLISH_ONCE"
+  },
+  "preaction": {
+    "path": "work/OPENCV_SCRIBE_R18G/PREACTION_R18G_ONE_TIME_PUBLICATION.json",
+    "sha256": "4E3B727B4D3FF24F4D6F2EBA8D370EA6028D2610636A6C24ADF5DAC58A2E660B",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"
+  },
+  "maximumPublications": 1,
+  "retryAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
