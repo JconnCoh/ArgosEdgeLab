@@ -9999,3 +9999,47 @@ true; training/XML/production remain false.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F13_SIGNED_R10_RESULTS_TWO_PROVIDER_HOLDS_O3F14_NEXT_CHECKPOINT_20260902.md`,
 SHA-256 `ACD0C032F9F78EA25097549D90D339EFC3986BEE67041AF055F39F4EE4C66D82`.
+
+## OCV-03 O3F14 R11 DEV6 signed portal ready — 2026-09-03
+
+Fresh request `REQ_O3F14_20260902A` is frozen and signed but unpublished and
+unexecuted. ZIP
+`BD45851010D4683218DA3F431CBCF37FED3799BCA7FF2BA4D9698230FA26C9A4`,
+manifest
+`F1AF92C99E6477861BF175FB37EFB4ACDFD4E5DA5BA8F80FAC52CCA405379C5D`,
+and signature
+`E7DB5308834347F33F15EB62C3917E512E1E0DEC4A80DB1110B27B1C2283B947`
+are exact. Frozen R11
+`B477C290EC9D3AE388BE4EE31049B2B8094F5F30FC6E0DD68AB4A03926EE4059`
+changes only DF seed start/end propagation; runner
+`CAAFD1AC8C19E33D95BA8283963A4D0ED0189FF566C9923822BF3EC37956171E`,
+thresholds, selectors, six sources, and the `Q:` alias contract remain fixed.
+
+Endpoint rehearsal
+`F068228C654CFA83FB69DEE47B07DE0A344D7780929ED11F9F7C98AA2F213C02`,
+final package
+`46FED06B6EE6035B905FE91D48821DA301B26C4541B79C5BCAB4E5F99606D2A8`,
+exact Windows PowerShell 5.1 package rehearsal
+`CD788368AEA454DC71DD0AAF184AF3AD9819A3473A82DB4BF7912ACD20AAC87F`,
+2,602-leaf route gate
+`C9FFC71C2A80D83CE3393AAEAD037A00E4AC63144E4B15C5C83ADAA2950FE373`,
+and zero-pending share observation
+`6E8EAE1AEBFA903948FA665CF9ECE21210EA7C8567E4440C9B35D9A65B57A69D`
+pass. Maximum planned/actionable route lengths are 227/193 with all twelve
+canonical leaves aliased. Core and portal clone gates
+`14E5DD18C550E2105A919FA76A7F13FB3DF8449E59588D14A64E4221E2A97F6A`
+and
+`47F08112CBDB8AF8121F547BBCF3652A4E0A7A13A4F69B9F8581229EAA3C147B`
+retain O3F13 only as proven source structure; it remains terminal, no-retry,
+non-reusable, and non-parent.
+
+Next is exactly one portal publication and only its matching signed response,
+with no RustDesk, clipboard, PowerShell GUI, operator input, or retry. All 184
+O3F6/O3F7 holds, all twelve current `PatternedFront` holds, Slot02 ambiguity,
+Slot09 provider hold, rare-hotspot Slot16, and every later prerequisite remain
+explicit. No threshold/selector relaxation or automatic hold clearance;
+review-only remains true and training/XML/production remain false.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F14_R11_DEV6_SIGNED_PORTAL_READY_CHECKPOINT_20260903.md`,
+SHA-256 `772E76AB89347BB2F6B7BCDF4B5231BE15C5B679A03CF2CB6E4318F8EA476AF5`.

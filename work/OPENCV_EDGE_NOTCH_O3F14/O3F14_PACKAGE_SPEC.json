@@ -1,0 +1,132 @@
+{
+  "schema": "argos_ocv03_o3f14_package_spec_v1",
+  "revision": "OCV03_O3F14_R11_DF_INTERVAL_FIX_DEV6_20260902A",
+  "state": "FROZEN_FOR_BUILD",
+  "requestId": "REQ_O3F14_20260902A",
+  "requestReadyName": "REQ_O3F14_20260902A.ready",
+  "stageRoot": "C:/A14F",
+  "finalRoot": "work/OPENCV_EDGE_NOTCH_O3F14/final_o3f14",
+  "entryPoint": "payload/Invoke-O3F14StagedEndpoint.ps1",
+  "endpointSource": "work/OPENCV_EDGE_NOTCH_O3F14/Invoke-O3F14StagedEndpoint.ps1",
+  "runnerSource": "work/O3F8/Run-O3F14Staged.py",
+  "runnerSha256": "CAAFD1AC8C19E33D95BA8283963A4D0ED0189FF566C9923822BF3EC37956171E",
+  "sourceAliasPlanSource": "work/OPENCV_EDGE_NOTCH_O3F12/O3F12_DEV6_SOURCE_ALIAS_PLAN.json",
+  "sourceAliasPlanSha256": "2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C",
+  "sourceAliasDrive": "Q:",
+  "substPath": "C:/Windows/System32/subst.exe",
+  "substSha256": "158598ED3D590937C964B43DD91546FFCABAB5636B6CE619B4FFC43224013BB6",
+  "gateOutputRoot": "D:/O3F9G14",
+  "dev6OutputRoot": "D:/O3F9D14",
+  "realRunnerGateContractRoot": "D:/O3F9G14",
+  "realRunnerDev6ContractRoot": "D:/O3F9D14",
+  "runtimePath": "D:/AFCV1/rt/python.exe",
+  "runtimeSha256": "7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1",
+  "expectedComputerName": "A1025645101",
+  "expectedSelfTestState": "PASS_O3F14_STAGED_RUNNER_SELF_TEST",
+  "expectedPreflightState": "PASS_O3F14_STAGED_PREFLIGHT",
+  "expectedGateState": "COMPLETE_O3F14_GATE",
+  "expectedDev6PassState": "COMPLETE_O3F14_DEV6",
+  "expectedDev6HoldState": "HOLD_O3F14_DEV6_EXECUTION",
+  "timeouts": {
+    "selfTestSeconds": 60,
+    "preflightSeconds": 120,
+    "rootContractSeconds": 60,
+    "gateSeconds": 300,
+    "dev6Seconds": 900,
+    "endpointOuterSeconds": 1800
+  },
+  "maximumChildOutputBytes": 1048576,
+  "maximumTerminalOutputBytes": 1048576,
+  "maximumPortalResultBytes": 2097152,
+  "payloadSources": [
+    {
+      "role": "baseRunner",
+      "source": "work/O3F8/Run-O3F8Staged.py",
+      "path": "Run-O3F8Staged.py",
+      "sha256": "44B378616CCCFEB0C67DF09196D0B7CDD515DBE35CEA84F4DBEB69DE326AD8C7"
+    },
+    {
+      "role": "r11Detector",
+      "source": "work/O3F8/FullPerimeterWaferTopologyOpenCvR11.py",
+      "path": "FullPerimeterWaferTopologyOpenCvR11.py",
+      "sha256": "B477C290EC9D3AE388BE4EE31049B2B8094F5F30FC6E0DD68AB4A03926EE4059"
+    },
+    {
+      "role": "r10Detector",
+      "source": "work/O3F8/FullPerimeterWaferTopologyOpenCvR10.py",
+      "path": "FullPerimeterWaferTopologyOpenCvR10.py",
+      "sha256": "0EEEE7A396E918AF44082EC0930871A6A94C1FBB59D3F5CEF1AC34D1273745FA"
+    },
+    {
+      "role": "r9Detector",
+      "source": "work/O3F8/FullPerimeterWaferTopologyOpenCvR9.py",
+      "path": "FullPerimeterWaferTopologyOpenCvR9.py",
+      "sha256": "DB44AD35205AC088FE7E24C1CC8FA9291311922A7D31E0F1C055BA92EAFD2FC1"
+    },
+    {
+      "role": "r8Detector",
+      "source": "work/O3F4/FullPerimeterWaferTopologyOpenCvR8.py",
+      "path": "FullPerimeterWaferTopologyOpenCvR8.py",
+      "sha256": "068ECC0D4F547FCFD7A0A2AEDF673B71BB0C46207DE8EC0F47312A9030B0734B"
+    },
+    {
+      "role": "o3p8Detector",
+      "source": "work/OPENCV_EDGE_NOTCH_O3P8/Detect-O3P8FrontSplitNotches.py",
+      "path": "Detect-O3P8FrontSplitNotches.py",
+      "sha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36"
+    },
+    {
+      "role": "localGate",
+      "source": "work/O3F8/Test-O3F14R11SeedAngles.py",
+      "path": "Test-O3F14R11SeedAngles.py",
+      "sha256": "03EBD2130C17FEA0DDDEB36F3A5E75DAA0014440734C7767690E2A47348435AA"
+    },
+    {
+      "role": "o3p8Job",
+      "source": "work/OPENCV_EDGE_NOTCH_O3P8/O3P8_POST2_SHORT_ALIAS_JOB.json",
+      "path": "O3P8_POST2_SHORT_ALIAS_JOB.json",
+      "sha256": "2C2D656A879BBA1DEC6377D1855A949459C7AC6F50145761B8D283076FEAD1F9"
+    },
+    {
+      "role": "canonicalJob",
+      "source": "work/OPENCV_EDGE_NOTCH_O3M9/O3M9_SLOT16_JOB.json",
+      "path": "O3M9_SLOT16_JOB.json",
+      "sha256": "E384ABD12E9B77DB9B4492504A5D792E316C5396C3B0A3E1D2B1AB11BB4C7DD3"
+    },
+    {
+      "role": "protocolAnchor",
+      "source": "work/OPENCV_EDGE_NOTCH_O3K1/OCV03_NotchReviewOpenCvV1.py",
+      "path": "OCV03_NotchReviewOpenCvV1.py",
+      "sha256": "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4"
+    },
+    {
+      "role": "rehearsalRunner",
+      "source": "work/OPENCV_EDGE_NOTCH_O3F14/O3F14FixtureRunner.py",
+      "path": "O3F14FixtureRunner.py",
+      "sha256": "77AC6166B45851CC941A7F7F76D39A82A0E0D03BDEC7FAE379411F87868A9C38"
+    },
+    {
+      "role": "rootContractProbe",
+      "source": "work/OPENCV_EDGE_NOTCH_O3F14/O3F14RootContractProbe.py",
+      "path": "O3F14RootContractProbe.py",
+      "sha256": "C9B2E9EA5EED006E6D765C82CA59064952B8B8F4E803FAF616C0A84BF736C94F"
+    },
+    {
+      "role": "sourceAliasPlan",
+      "source": "work/OPENCV_EDGE_NOTCH_O3F12/O3F12_DEV6_SOURCE_ALIAS_PLAN.json",
+      "path": "O3F12_DEV6_SOURCE_ALIAS_PLAN.json",
+      "sha256": "2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C"
+    }
+  ],
+  "inheritedRoute": {
+    "endpointWorkerSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "installedRouteConfigEvidenceSha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "queueSafetyGateSha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"
+  },
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

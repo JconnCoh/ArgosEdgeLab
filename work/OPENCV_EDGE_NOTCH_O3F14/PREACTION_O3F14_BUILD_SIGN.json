@@ -1,0 +1,73 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3F14_SINGLE_BUILD_AND_SIGN_20260903T053359Z",
+  "createdUtc": "2026-09-03T05:33:59Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "WINDOWS_POWERSHELL_51_O3F14_SINGLE_EXACT_R11_PACKAGE_BUILD_AND_SIGN",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"80767BFACCE9B4DAA78BB52C013C4BCB2D536FA38AACA2149B12EF0B81C4A8DC"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F14/Build-O3F14Package.ps1","sha256":"F59F18DC6FD5A51FFAACB8E36A897DE553F0EB92525484F69ADFE9999FACFF9D"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F14/O3F14_PACKAGE_SPEC.json","sha256":"35112867968C60D7B227E7529054AF5FB7109B998D06966A432C858FD0E94B53"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F14/MAINTENANCE_DEFINITION.json","sha256":"255B6259BE1FE092AF73E2455D8490A19088CDF89380B9969F1BDB34EF48BB01"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F14/O3F14_ENDPOINT_REHEARSAL_GATE.json","sha256":"F068228C654CFA83FB69DEE47B07DE0A344D7780929ED11F9F7C98AA2F213C02"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F14/O3F14_ENDPOINT_REHEARSAL_PREACTION_GATE.json","sha256":"477E2C2A9CF8CE5DCDF3B4A208F7533DC51EC3D95753B3C95259157BE231A8C7"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F14/O3F14_CLONE_LITERAL_GATE.json","sha256":"FCE3D3632205D884559547B99ABDEE008F2D0E1F641C12D4DC658C3854A59375"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F14/O3F14_PORTAL_CLONE_LITERAL_GATE.json","sha256":"31DDD29D6A012D9A9FD7FC5849CE70951330DF2746E586DA1800DCDE7ED95EBC"},
+    {"path":"work/O3F8/Run-O3F14Staged.py","sha256":"CAAFD1AC8C19E33D95BA8283963A4D0ED0189FF566C9923822BF3EC37956171E"},
+    {"path":"work/O3F8/FullPerimeterWaferTopologyOpenCvR11.py","sha256":"B477C290EC9D3AE388BE4EE31049B2B8094F5F30FC6E0DD68AB4A03926EE4059"},
+    {"path":"work/O3F8/Test-O3F14R11SeedAngles.py","sha256":"03EBD2130C17FEA0DDDEB36F3A5E75DAA0014440734C7767690E2A47348435AA"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F12/O3F12_DEV6_SOURCE_ALIAS_PLAN.json","sha256":"2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F13/O3F13_RESPONSE_COLLECTION_GATE.json","sha256":"05BFFB010EFA370112ECD1B4295F5EBB606FE97ED0DE66F2EF14EE62B8AA06FF"},
+    {"path":"work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F13_SIGNED_R10_RESULTS_TWO_PROVIDER_HOLDS_O3F14_NEXT_CHECKPOINT_20260902.md","sha256":"ACD0C032F9F78EA25097549D90D339EFC3986BEE67041AF055F39F4EE4C66D82"},
+    {"path":"work/ARGOS_CONTINUITY_STATE.json","sha256":"1BA948FD66E6029E61CC678BC876A2DFDF289B2E6A16DEE86FCE5EC61D7D4579"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":[]},
+  "blockedArtifacts": [
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F9","classification":"WITHDRAWN_DIAGNOSTIC_DIFF_SOURCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F10","classification":"SIGNED_TERMINAL_FAILURE_DIAGNOSTIC_SOURCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F11","classification":"SIGNED_TERMINAL_FAILURE_DIAGNOSTIC_SOURCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F12","classification":"SIGNED_TERMINAL_FAILURE_DIAGNOSTIC_DIFF_SOURCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false}
+  ],
+  "scope": {
+    "classification": "LOCAL_SINGLE_EXACT_R11_PACKAGE_BUILD_AND_SIGN",
+    "stageRoot": "C:/A14F",
+    "finalRoot": "work/OPENCV_EDGE_NOTCH_O3F14/final_o3f14",
+    "maximumPackageBuilds": 1,
+    "acceptedDev6ExitStatePairCount": 2,
+    "externalPublication": false,
+    "jbodExecution": false,
+    "sourceImageBytesRead": false,
+    "sourceMutation": false,
+    "taskOrExistingProcessAction": false,
+    "providerActivation": false,
+    "requestRetryAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

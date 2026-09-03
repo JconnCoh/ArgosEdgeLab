@@ -1,0 +1,102 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "O3F14_COMPLETE_PACKAGE_PORTAL_CLONE_LITERAL_ACCOUNTING_R4_20260903",
+  "scope": "METADATA_ONLY_NO_EXECUTION",
+  "forwardSlashRootAccountingComplete": true,
+  "qualifiedSource": "O3F13_SIGNED_TERMINAL_RESPONSE_PACKAGE_AND_PORTAL_ROUTE_STRUCTURE",
+  "diagnosticDiffSource": {
+    "namespace": "work/OPENCV_EDGE_NOTCH_O3F13",
+    "classification": "SIGNED_TERMINAL_RESPONSE_PROVEN_STRUCTURE_ONLY",
+    "futureReuseAllowed": false,
+    "publicationParentAllowed": false,
+    "provenSourceStructureCloneAllowed": true
+  },
+  "pairs": [
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F13/Build-O3F13Package.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F14/Build-O3F14Package.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\A13F","generatedRoot":"C:\\A14F","disposition":"REPLACED"}
+      ],
+      "forwardSlashRootRules": [
+        {"sourceRoot":"D:/O3F9D13","generatedRoot":"D:/O3F9D14","disposition":"REPLACED"},
+        {"sourceRoot":"D:/O3F9G13","generatedRoot":"D:/O3F9G14","disposition":"REPLACED"}
+      ],
+      "bareDriveRootRules": []
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F13/Test-O3F13FinalPackage.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F14/Test-O3F14FinalPackage.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\A13R","generatedRoot":"C:\\A14R","disposition":"REPLACED"},
+        {"sourceRoot":"Q:","generatedRoot":"Q:","disposition":"UNCHANGED_ALLOWED"}
+      ],
+      "forwardSlashRootRules": [
+        {"sourceRoot":"C:/Windows","generatedRoot":"C:/Windows","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:/AFCV1","generatedRoot":"D:/AFCV1","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:/O3F9D13","generatedRoot":"D:/O3F9D14","disposition":"REPLACED"},
+        {"sourceRoot":"D:/O3F9G13","generatedRoot":"D:/O3F9G14","disposition":"REPLACED"}
+      ],
+      "bareDriveRootRules": [
+        {"sourceRoot":"Q:","generatedRoot":"Q:","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F13/Test-O3F13Routes.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F14/Test-O3F14Routes.ps1",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}
+      ],
+      "forwardSlashRootRules": [
+        {"sourceRoot":"C:/A13C","generatedRoot":"C:/A14C","disposition":"REPLACED"},
+        {"sourceRoot":"C:/APR","generatedRoot":"C:/APR","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:/ProgramData","generatedRoot":"C:/ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:/O3F9D13","generatedRoot":"D:/O3F9D14","disposition":"REPLACED"},
+        {"sourceRoot":"D:/O3F9D13.failed","generatedRoot":"D:/O3F9D14.failed","disposition":"REPLACED"},
+        {"sourceRoot":"D:/O3F9G13","generatedRoot":"D:/O3F9G14","disposition":"REPLACED"},
+        {"sourceRoot":"D:/O3F9G13.failed","generatedRoot":"D:/O3F9G14.failed","disposition":"REPLACED"},
+        {"sourceRoot":"U:/ProjectPortalRO","generatedRoot":"U:/ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ],
+      "bareDriveRootRules": []
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F13/Publish-O3F13Request.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F14/Publish-O3F14Request.ps1",
+      "rootRules": [
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ],
+      "forwardSlashRootRules": [],
+      "bareDriveRootRules": [
+        {"sourceRoot":"U:","generatedRoot":"U:","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F13/Collect-O3F13Response.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F14/Collect-O3F14Response.ps1",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}
+      ],
+      "forwardSlashRootRules": [
+        {"sourceRoot":"C:/Windows","generatedRoot":"C:/Windows","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:/O3F9D13","generatedRoot":"D:/O3F9D14","disposition":"REPLACED"},
+        {"sourceRoot":"D:/O3F9G13","generatedRoot":"D:/O3F9G14","disposition":"REPLACED"}
+      ],
+      "bareDriveRootRules": [
+        {"sourceRoot":"Q:","generatedRoot":"Q:","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F13/Observe-O3F13PortalShare.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F14/Observe-O3F14PortalShare.ps1",
+      "rootRules": [
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ],
+      "forwardSlashRootRules": [],
+      "bareDriveRootRules": [
+        {"sourceRoot":"U:","generatedRoot":"U:","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    }
+  ]
+}
