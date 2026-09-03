@@ -1,0 +1,18 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R14P_PUBLICATION_TOOLING_R2_20260903",
+  "purpose": "Fresh successor root classification for the corrected post-boundary-only R14P queue observer.",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R13B/Get-R13BCurrentShareObservationR3.ps1",
+      "sourceSha256": "7FC685CF3CA9642D6407120F3A488726024667E16519A8B295FF4E2E6446E792",
+      "generated": "work/OPENCV_SCRIBE_R14/Get-R14PCurrentShareObservationR2.ps1",
+      "generatedSha256": "9AD30C37A3E638749F21BEE0C4D0A660B89D116CAD28B926D5794C3F60B63034",
+      "rootRules": [
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    }
+  ],
+  "authority": {"metadataOnly":true,"targetExecuted":false,"publicationAuthorized":false,"reviewOnly":true,"productionRoutingEnabled":false}
+}

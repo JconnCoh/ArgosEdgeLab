@@ -1,0 +1,89 @@
+{
+  "schema": "argos_r14p_current_share_observation_invocation_v2",
+  "actionClassification": "OBSERVE_REMOTE_READ_ONLY_LOCAL_EVIDENCE_CREATE_NEW",
+  "requestId": "REQ_20260902T204408092Z_R14P",
+  "driveName": "U",
+  "expectedInspectionRevsUnc": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs",
+  "portalRelativeRoot": "ProjectPortalRO",
+  "requestsRelativeRoot": "ProjectPortalRO\\requests",
+  "processedRelativeRoot": "ProjectPortalRO\\requests\\processed",
+  "responsesRelativeRoot": "ProjectPortalRO\\responses",
+  "acceptedSinceUtc": "2026-09-01T23:06:02.9830703Z",
+  "acceptedSinceBoundaryMode": "EXCLUSIVE_PRIOR_ZERO_UNRESOLVED_GATE_CREATED_UTC",
+  "responseScanScope": "POST_PROVEN_ZERO_UNRESOLVED_BOUNDARY_ONLY",
+  "responseCorrelationMode": "SIGNED_EXACT_REQUEST_ID",
+  "priorZeroUnresolvedBoundary": {
+    "path": "work/OPENCV_SCRIBE_R6V2_PUBLISH/R6V2_CURRENT_ROUTE_SHARE_GATE.json",
+    "sha256": "408AC7832CA5DD9EF12F048E8448BF8E5F2F01341159646937C69A3FF4E01822",
+    "stateProperty": "state",
+    "requiredState": "PASS_R6V2_CURRENT_ROUTE_SHARE_AND_QUEUE_GATE",
+    "createdUtc": "2026-09-01T23:06:02.9830703Z",
+    "requiredUnresolvedEarlierAcceptedRequestCount": 0
+  },
+  "terminalResponseStates": [
+    "PASS_STATUS_COLLECTED",
+    "PASS_DATA_PULL",
+    "PASS_INSITE_DIAGNOSTIC",
+    "PASS_MAINTENANCE_PATCH",
+    "FAILED",
+    "FAILED_RESPONSE_CONSTRUCTION"
+  ],
+  "outputLeaf": "R14P_CURRENT_SHARE_OBSERVATION.json",
+  "scanBounds": {
+    "maximumTopLevelRequestFiles": 1000,
+    "maximumProcessedFiles": 2000,
+    "maximumResponseFiles": 2000,
+    "maximumZipEntriesPerPackage": 256,
+    "maximumManifestBytes": 1048576,
+    "maximumSignatureBytes": 8192,
+    "maximumCorrelationRows": 512,
+    "maximumRecordedErrorRows": 64
+  },
+  "requestSigner": {
+    "certificateRelativePath": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/ARGOS_PROJECT_PORTAL_LAPTOP_SIGNER_PUBLIC.cer",
+    "certificateSha256": "2B434D0CF6A0D6D69AAE3D280032EFF00807D423CA3B3D7F2EFC1C6BB628BFFF",
+    "thumbprint": "C82181052919C475CF888F49427C1B55AE65DC12"
+  },
+  "responseSigner": {
+    "certificateRelativePath": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer",
+    "certificateSha256": "5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B",
+    "thumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "sourceRole": "JBOD"
+  },
+  "referencePatterns": [
+    {
+      "path": "work/OPENCV_SCRIBE_O2D23/Get-O2D23CurrentShareObservation.ps1",
+      "sha256": "8DF0CB709D56E55F4B9C306F894E47CD501772615414494CD05113CC104DF0DA",
+      "referenceOnly": true,
+      "publicationParent": false
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R6V2_PUBLISH/R6V2_CURRENT_ROUTE_SHARE_GATE.json",
+      "sha256": "408AC7832CA5DD9EF12F048E8448BF8E5F2F01341159646937C69A3FF4E01822",
+      "referenceOnly": true,
+      "publicationParent": false
+    }
+  ],
+  "publicationParent": null,
+  "requirements": {
+    "requireZeroPendingRequestFiles": true,
+    "requireZeroUnresolvedEarlierAcceptedRequests": true,
+    "requireStableQueueSnapshot": true,
+    "requireTargetAbsentFromPendingProcessedAndResponses": true,
+    "requirePriorZeroUnresolvedBoundary": true,
+    "requireOnlyExplicitTerminalResponseStates": true,
+    "shareWritesAllowed": false,
+    "mappingChangesAllowed": false,
+    "automaticRetryAllowed": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "publicationAuthorizedByObservation": false,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "mayClearHolds": false
+  }
+}

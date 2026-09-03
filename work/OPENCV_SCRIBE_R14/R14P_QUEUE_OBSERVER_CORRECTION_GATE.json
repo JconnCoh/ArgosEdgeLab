@@ -1,0 +1,11 @@
+{
+  "schema": "argos_r14p_queue_observer_preflight_correction_gate_v1",
+  "createdUtc": "2026-09-03T11:59:00Z",
+  "state": "PASS_R14P_QUEUE_OBSERVER_PREFLIGHT_CORRECTION_R2",
+  "classification": "FROZEN_REVIEW_ONLY",
+  "requestId": "REQ_20260902T204408092Z_R14P",
+  "supersededObserver": {"path":"work/OPENCV_SCRIBE_R14/Get-R14PCurrentShareObservation.ps1","sha256":"3AFD8A6C14A3CBCC86BC7544F37112E17D917D11347BF22C891868A5196AEB25","disposition":"WITHDRAWN_FOR_PUBLICATION","failure":"Preflight rejected invalid historical response signatures that predate the frozen zero-unresolved boundary."},
+  "currentObserver": {"path":"work/OPENCV_SCRIBE_R14/Get-R14PCurrentShareObservationR2.ps1","sha256":"9AD30C37A3E638749F21BEE0C4D0A660B89D116CAD28B926D5794C3F60B63034","invocationPath":"work/OPENCV_SCRIBE_R14/Get-R14PCurrentShareObservationR2.invocation.json","invocationSha256":"37B1B293DF17E45D1B541616C60B51F80E5A700C0B312A387F8D68B3333DFC0A","responseScanScope":"POST_PROVEN_ZERO_UNRESOLVED_BOUNDARY_ONLY","responseCorrelationMode":"SIGNED_EXACT_REQUEST_ID"},
+  "safety": {"failedPreflightExternalWrites":false,"publicationPerformed":false,"retryConsumed":false,"frozenObserverModified":false,"freshNamespaceUsed":true},
+  "authority": {"publicationAuthorizedByThisGate":false,"maximumPublications":1,"retryAuthorized":false,"reviewOnly":true,"automaticIdentityAuthority":false,"trainingEligible":false,"xmlEligible":false,"productionEligible":false,"productionRoutingEnabled":false}
+}
