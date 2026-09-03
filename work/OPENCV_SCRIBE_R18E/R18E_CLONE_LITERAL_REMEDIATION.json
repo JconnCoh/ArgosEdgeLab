@@ -1,0 +1,20 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "OCV02_R18E_BUILD_CLONE_REMEDIATION_20260903",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18A/Build-R18ARequest.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18E/Build-R18ERequest.ps1",
+      "rootRules": [
+        {"sourceRoot": "C:\\R18A", "generatedRoot": "C:\\R18E", "disposition": "REPLACED"},
+        {"sourceRoot": "C:\\R18AB", "generatedRoot": "C:\\R18EB", "disposition": "REPLACED"},
+        {"sourceRoot": "C:\\R18AR", "generatedRoot": "C:\\R18ER", "disposition": "REPLACED"},
+        {"sourceRoot": "C:\\R18AV", "generatedRoot": "C:\\R18EV", "disposition": "REPLACED"},
+        {"sourceRoot": "C:\\APR", "generatedRoot": "C:\\APR", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "C:\\ProgramData", "generatedRoot": "C:\\ProgramData", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "U:\\ProjectPortalRO", "generatedRoot": "U:\\ProjectPortalRO", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "\\\\shm-cifs\\Department", "generatedRoot": "\\\\shm-cifs\\Department", "disposition": "UNCHANGED_ALLOWED"}
+      ]
+    }
+  ]
+}
