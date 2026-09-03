@@ -1,0 +1,37 @@
+{
+  "schema": "argos_opencv_scribe_r18b_blind_execution_control_v1",
+  "state": "PASS_AUTHORITATIVE_R1_WITHDRAW_DUPLICATE_R2",
+  "cause": "The shell wrapper timed out at 124 seconds, but its child Python process continued and completed all four blind cases. A second fresh-root process was started for the three cases then believed incomplete.",
+  "authoritativeRoot": "C:/P2COHORT/results/R18A_FROZEN_R17E_BLIND_20260903A",
+  "authoritativeGateSha256": "604A6D4D280F67DF86AB208FEB578635002DF3911B486B2D46F99B64CEC92901",
+  "authoritativeRunnerSha256": "27A090F4CAE14B526A3C9CE997ED032773938A3C3942D7852539DA2FF224C412",
+  "withdrawnDuplicateRoot": "C:/P2COHORT/results/R18A_FROZEN_R17E_BLIND_REMAINING_20260903A",
+  "withdrawnDuplicateGateSha256": "0E7F4BDA669DEFB25E8C3A61746E5C3FD47F93BDDCEE574EEFFD88F0D025015A",
+  "withdrawnDuplicateRunnerSha256": "6355BF94F886D0873811D84ACA796544D47D9B536250DE979BBCEE4EFC893A5D",
+  "duplicatedCases": [
+    "62624-855_20260721120719_Slot07",
+    "62623-743_20260720111120_Slot04",
+    "62618-252_20260715115352_Slot01"
+  ],
+  "semanticComparison": {
+    "differenceCountPerCase": 2,
+    "differencesOnly": [
+      "/jobId",
+      "/provenance/sources/jobSha256"
+    ],
+    "allPixelMeasurementsHypothesesAndDecisionsIdentical": true
+  },
+  "disposition": {
+    "authoritativeResultCount": 4,
+    "duplicateResultsCountedAsValidation": false,
+    "withdrawnDuplicateMayBeTrainingInput": false,
+    "furtherBlindExecutionAuthorized": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "identityAcceptanceAuthorized": false,
+    "activationAuthorized": false,
+    "trainingAuthorized": false,
+    "productionAuthorized": false
+  }
+}

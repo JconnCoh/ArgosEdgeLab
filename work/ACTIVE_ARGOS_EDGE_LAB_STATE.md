@@ -9374,3 +9374,30 @@ decoding pixels. The request must not be republished or retried.
 
 Exact next scribe-lane action: commit/push the pinned collector, then collect
 create-new into `C:\R18AR` and `C:\R18A`. All authority limits remain.
+
+# 2026-09-03 — OCV-02 R18C local development / W-Z confirmation pending (`DIAGNOSTIC_ONLY`)
+
+R18A is terminal: its one publication returned a matching signed 24-file
+response, and create-new collection under `C:\R18A2` hash-matches every member.
+Frozen R17E then evaluated four blind and four development wafers. Three blind
+strings are visibly exact; a fourth exposes a missing `Z`. Development exposes
+a missing `W`, one clear BF-forward view wrongly rejected by the old texture
+gate, and two patterned blanks that the old gate allowed to populate diagnostic
+strings.
+
+R18C draft SHA-256
+`44654C1B3136F8BF93E84D93D272DA020D6C33E26E7DC5B66EF7F00D32518C17`
+uses a checksum-independent post-grid image score floor. It recovers visible
+`1484P102SUC0`, makes both patterned blanks empty, preserves all five proven
+visible regressions, and keeps all three proven blank/wrong-location controls
+empty. Exact `W` and `Z` candidate cells are prepared but not admitted.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18C/R18C_LOCAL_DEVELOPMENT_CHECKPOINT_20260903.md`,
+SHA-256 `78202D0301E9C9E480B4C36C6CABCBF58070F8CB47829BF10FDD94B02F218646`.
+
+Exact next scribe-lane action: obtain operator confirmation for admission of
+only the displayed `W` and `Z` cells into a fresh supplemental reference
+revision, rerun local gates, then select a fresh blind cohort. Do not run the
+full KLARF directory. R18A is no-retry. No provider activation, identity
+acceptance, automatic hold clearance, XML, training, or production authority.
