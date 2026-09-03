@@ -1,0 +1,109 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-03T14:15:00Z",
+  "incidentId": "O3F15L4D2_RESPONSE_FINDER_MATCHES_COLLISION_20260903",
+  "mode": "OBSERVE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3F15L4D2F2/O3F15L4D2F2_SIGNED_READ_ONLY_FINDER_FAILURE_GATE.json",
+        "sha256": "7A6FF629A5072CDD6B1DD50570376CA5C9BC6E6CF4ECABE5CC149BCA2139F355",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "DIRECT_ADMIN_READ_ONLY",
+    "jobClass": "DIRECT_ADMIN_READ_ONLY",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L4D2F3/O3F15L4D2F3_READ_ONLY_CAPABILITY_INVENTORY.json",
+      "sha256": "94E843A5E92595C7E07391C6BBB67FB3248E0692F1FB004E14ABFE97B51D5388"
+    },
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L4D2F3/O3F15L4D2F3_DIRECT_READ_ONLY_AUTHORIZATION_GATE.json",
+      "sha256": "6CAD82E067F64F1F62B72C3696324255149CD70C81C63D4C15BC2E803AC1502F"
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "work/OPENCV_EDGE_NOTCH_O3F15L4D2/O3F15L4D2_PUBLISH_GATE.json",
+        "sourceSchema": "argos_ocv03_o3f15l4d2_publish_gate_v1",
+        "selector": "exact hash-pinned one-time publication identity",
+        "uniquenessKey": "requestId",
+        "maximumRows": 1
+      },
+      {
+        "sourcePath": "U:/ProjectPortalRO/responses",
+        "sourceSchema": "direct-child ready ZIP metadata plus bounded response.json identity",
+        "selector": "post-publication cohort only, followed by exact requestId equality",
+        "uniquenessKey": "requestId",
+        "maximumRows": 805
+      }
+    ],
+    "requestedCapabilities": [
+      "exactPersistentUShareVerification",
+      "boundedRetainedReadyZipEnumeration",
+      "boundedReadyZipManifestIdentityRead",
+      "exactRequestIdentityCorrelation",
+      "boundedJsonReturn"
+    ],
+    "requestedFields": [
+      "persistentShareIdentity",
+      "retainedReadyZipCount",
+      "boundedPostPublicationCandidateZipCount",
+      "requestId",
+      "responseId",
+      "endpointState",
+      "sourceZip",
+      "sourceZipSha256"
+    ],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": true
+  },
+  "mutation": {
+    "supportedRemedy": "",
+    "supportingObservation": {"path": "", "sha256": ""},
+    "endpointMutationNecessary": false,
+    "singleMutationAttemptAuthorized": false
+  },
+  "scope": {
+    "maximumObservationExecutions": 1,
+    "cohortLookbackSeconds": 60,
+    "retainedResponseZipsMaximum": 805,
+    "matchingResponseZipsMaximum": 1,
+    "manifestBytesMaximum": 65536,
+    "responseZipBytesMaximum": 16777216,
+    "requestRetryAuthorized": false,
+    "requestRepublishAuthorized": false,
+    "targetWriteAllowed": false,
+    "taskOrProcessManagementAllowed": false,
+    "providerActivationAllowed": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

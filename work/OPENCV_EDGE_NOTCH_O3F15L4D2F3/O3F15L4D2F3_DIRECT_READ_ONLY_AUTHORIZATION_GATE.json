@@ -1,0 +1,32 @@
+{
+  "schema": "argos_direct_admin_read_only_authorization_gate_v1",
+  "createdUtc": "2026-09-03T14:15:00Z",
+  "state": "PASS_O3F15L4D2F3_DIRECT_READ_ONLY_AUTHORIZATION",
+  "incidentId": "O3F15L4D2_RESPONSE_FINDER_MATCHES_COLLISION_20260903",
+  "authoritySource": "Operator explicitly directed correction of the exact error and continuation without another error loop.",
+  "oneObservationExecutionAuthorized": true,
+  "readOnly": true,
+  "allowedSources": [
+    "the exact hash-pinned O3F15L4D2 publication gate",
+    "the qualified persistent U: mapping identity",
+    "at most 805 direct-child U:/ProjectPortalRO/responses/*.ready.zip leaves",
+    "only the bounded response.json manifest entry needed for exact request identity correlation"
+  ],
+  "allowedOutput": "one bounded JSON exact-response discovery result on local stdout",
+  "taskActionsAllowed": false,
+  "processActionsAllowed": false,
+  "installedChangesAllowed": false,
+  "durableTargetWritesAllowed": false,
+  "queueMutationAllowed": false,
+  "ledgerMutationAllowed": false,
+  "sourceMutationAllowed": false,
+  "imageReadAllowed": false,
+  "zipContentReadAllowed": true,
+  "zipContentReadScope": "response.json manifest entry only; maximum 65536 bytes per eligible ZIP",
+  "waferActionAllowed": false,
+  "providerActivationAllowed": false,
+  "requestRetryAuthorized": false,
+  "requestRepublishAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

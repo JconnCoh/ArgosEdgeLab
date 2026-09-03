@@ -1,0 +1,28 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-09-03T14:15:00Z",
+  "state": "PASS_O3F15L4D2F3_READ_ONLY_CAPABILITY_INVENTORY",
+  "incidentId": "O3F15L4D2_RESPONSE_FINDER_MATCHES_COLLISION_20260903",
+  "routes": [
+    {
+      "type": "DIRECT_ADMIN_READ_ONLY",
+      "capabilities": [
+        "exactPersistentUShareVerification",
+        "boundedRetainedReadyZipEnumeration",
+        "boundedReadyZipManifestIdentityRead",
+        "exactRequestIdentityCorrelation",
+        "boundedJsonReturn"
+      ]
+    }
+  ],
+  "maximumRows": 805,
+  "maximumManifestEntryBytes": 65536,
+  "taskActionsAllowed": false,
+  "processActionsAllowed": false,
+  "installedChangesAllowed": false,
+  "queueMutationAllowed": false,
+  "sourceMutationAllowed": false,
+  "imageReadAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

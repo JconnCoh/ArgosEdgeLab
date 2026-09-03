@@ -11310,3 +11310,30 @@ than rerunning it.
   authority; it must change only the cohort-capacity handling and retain the
   same request ID, publish-gate hash, qualified share, no-retry rule, and exact
   signed response identity requirements.
+
+## 2026-09-03 — Never use `$matches` as a collection across a regex match
+
+- Failure signature: the sole frozen O3F15L4D2F2 read-only finder invocation
+  passed its pinned 549-row capacity observation and 805-row
+  observed-plus-reserve design, then Windows PowerShell 5.1 stopped with
+  `Cannot find an overload for "Add" and the argument count: "1"`. No response
+  was selected or collected, and no request was retried or republished.
+- Cause: PowerShell variable names are case-insensitive and `$Matches` is an
+  automatic variable populated by a successful `-match` or `-cmatch`. F2 used
+  `$matches` for its response collection, then validated `responseId` with
+  `-cmatch`; that replaced the list with a hashtable. The following
+  `$matches.Add(oneObject)` therefore bound to `Hashtable.Add(key,value)` and
+  reported that no one-argument overload existed. The candidate-list Add was
+  not the cause and passed the exact local PowerShell 5.1 reproduction.
+- Mandatory preflight: never name a persistent collection `$matches` anywhere
+  a regex operator can execute before its next use. Use a nonautomatic name
+  such as `$responseMatches`, and exercise the exact sequence collection
+  creation → successful regex match → collection Add under Windows PowerShell
+  5.1. Preserve the observed root count plus stated arrival reserve and the
+  post-publication eligibility filter before any ZIP-content read.
+- Recovery: F2 is withdrawn, immutable, no-retry, and non-parent. A fresh F3
+  read-only successor may change only the response-collection variable from
+  `$matches` to `$responseMatches` while retaining request ID, publication
+  gate, 549-plus-256 capacity bound, 60-second cohort lookback, exact
+  manifest-only correlation, duplicate hard stop, and every
+  no-mutation/no-retry control.
