@@ -9596,3 +9596,23 @@ Exact next scribe-lane action: commit/push the unrevealed freeze, verify clean
 matching branch tips, then inspect the exact four BF/DF crops against these
 already-frozen strings. Any mismatch remains held. No full KLARF run or
 authority expansion.
+
+# 2026-09-03 — OCV-02 R18F four-of-four blind visual pass (`DIAGNOSTIC_ONLY`)
+
+After the blind outputs were frozen and committed, all four exact BF/DF pairs
+were inspected. Each clear BF scribe matches its frozen image-first string
+character-for-character, and each DF crop corroborates it: `148AW101SUC4`,
+`2969P018FEE3`, `1478T009SUA0`, and `147JQ120SUA5`. Visual mismatch count is
+zero. All four strings pass checksum only as downstream verification.
+
+Visual gate SHA-256:
+`39D34627E7C1DC00A9943F5810B2F4FEF255F9A705A6007FBA9DF8885D2D21F2`.
+Checkpoint:
+`work/OPENCV_SCRIBE_R18F/R18F_BLIND_VISUAL_PASS_CHECKPOINT_20260903.md`,
+SHA-256 `3B9ABF804DCD78C57433F5F4A14E725AD7E5CFA2635B3A0F2568C402311A895B`.
+
+Exact next scribe-lane action: select another small metadata-only
+failure-first cohort weighted toward POST2 and other current-reader failures,
+without prior-cohort overlap. Keep missing `I/O/V/Y` coverage held; pull only
+existing scribe crops after fresh gates and explicit publication authority.
+Do not run the full KLARF directory yet.
