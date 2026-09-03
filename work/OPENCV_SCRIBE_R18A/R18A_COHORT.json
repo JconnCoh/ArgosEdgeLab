@@ -1,0 +1,74 @@
+{
+  "schema": "argos_opencv_scribe_r18a_failure_cohort_v1",
+  "revision": "OCV02_R18A_FRESH_LOT_FAILURE_COHORT_20260903",
+  "classification": "PENDING_GATE",
+  "selectionEvidence": {
+    "queuePath": "C:/L586R2/R_E3DAC141D1B8_20260821204234226_d8edfaff.ready/DATA_PULL_PAYLOAD/data/JBOD_PROCESSOR_REVIEW/identity/SCRIBE_IDENTITY_QUEUE.json",
+    "queueSha256": "BB740FEA504FCA97E1AA98EAF03C65B348875CF325D8EB7A671A80A41C05BA81",
+    "queueRows": 966,
+    "eligibleUnresolvedRowsBeforeR17A": 152,
+    "r17aExcludedAcquisitions": 8,
+    "remainingEligibleRows": 144,
+    "waferPixelsReadForSelection": false
+  },
+  "frozenReader": {
+    "revision": "OCV02_R17E_LOCAL_20260903A",
+    "commit": "5be1b46c2a736a5a7b2b72e650ec7678f3278755",
+    "providerPath": "work/OPENCV_SCRIBE_R17E/ArgosOpenCvScribeV1R17E.py",
+    "providerSha256": "A2E124FD794C1F97C4C202995DFAB09D4C984862C7E292C1D82034D487A901CA",
+    "gatePath": "work/OPENCV_SCRIBE_R17E/R17E_LOCAL_GATE.json",
+    "gateSha256": "A2C1BC7D974670C481F4D510051AF2699080B20ECE93BE60536771F35E310DE2"
+  },
+  "partitions": {
+    "development": [
+      {"physicalIdentity": "62633-726_20260818204139_Slot19", "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL"},
+      {"physicalIdentity": "62627-182_20260810050905_Slot23", "installedReaderFailure": "NO_PROPOSAL_SEGMENTATION_INCOMPLETE"},
+      {"physicalIdentity": "62625-957_20260729124737_Slot24", "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL"},
+      {"physicalIdentity": "62613-842A-test_20260730053955_Slot25", "installedReaderFailure": "NO_PROPOSAL_SEGMENTATION_INCOMPLETE"}
+    ],
+    "blindValidation": [
+      {"physicalIdentity": "62619-451-PRE_20260723105349_Slot05", "installedReaderFailure": "NO_PROPOSAL_SEGMENTATION_INCOMPLETE"},
+      {"physicalIdentity": "62624-855_20260721120719_Slot07", "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL"},
+      {"physicalIdentity": "62623-743_20260720111120_Slot04", "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL"},
+      {"physicalIdentity": "62618-252_20260715115352_Slot01", "installedReaderFailure": "NO_CHECKSUM_VALID_PROPOSAL"}
+    ],
+    "exactPhysicalAcquisitionOverlap": 0,
+    "distinctLotFamilyCount": 8,
+    "priorR17ACohortOverlap": 0,
+    "blindPixelsMayBeInspectedOnlyAfterFrozenReaderVerified": true
+  },
+  "sourceContract": {
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "perAcquisitionFiles": [
+      "SCRIBE_PROPOSAL.json",
+      "scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png"
+    ],
+    "requestedFiles": 24,
+    "maximumBytes": 50331648,
+    "existingFilesOnly": true,
+    "newCropGeneration": false,
+    "fullWaferTransfer": false,
+    "sourceMutation": false
+  },
+  "decisionContract": {
+    "imageFirstRequired": true,
+    "checksumRole": "VERIFY_IMAGE_FIRST_ONLY",
+    "blankOrNotLocalizedMayProduceString": false,
+    "automaticIdentityAssignment": false,
+    "missingReferenceAdmission": false,
+    "operatorConfirmationRequired": true
+  },
+  "authority": {
+    "reviewOnly": true,
+    "portalPublicationAuthorized": true,
+    "maximumPublications": 1,
+    "retryAuthorized": false,
+    "providerActivation": false,
+    "identityAcceptance": false,
+    "trainingAuthorized": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "automaticHoldClearance": false
+  }
+}

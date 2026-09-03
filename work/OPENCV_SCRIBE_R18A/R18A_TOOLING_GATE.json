@@ -1,0 +1,33 @@
+{
+  "schema": "argos_opencv_scribe_r18a_tooling_gate_v1",
+  "checkedUtc": "2026-09-03T17:17:11.6720316Z",
+  "state": "PASS_R18A_TOOLING_GATE",
+  "builder": {
+    "path": "work/OPENCV_SCRIBE_R18A/Build-R18ARequest.ps1",
+    "sha256": "A4693ABA2B00F7D4C831DA5AC791E8AC26E3EBF7BB11DBBD0948E7863178365F",
+    "windowsPowerShellParserPassed": true,
+    "harnessSafetyPassed": true,
+    "wrapperSafetyPassed": true,
+    "nonMutatingPreflightPresent": true
+  },
+  "publisher": {
+    "path": "work/OPENCV_SCRIBE_R18A/Publish-R18A.ps1",
+    "sha256": "B567238621B9BBA8C4A8F45E8E5096A76B6CE0F6AAD8E53E06670F1A55A8D609",
+    "windowsPowerShellParserPassed": true,
+    "harnessSafetyPassed": true,
+    "wrapperSafetyPassed": true,
+    "nonMutatingPreflightPresent": true
+  },
+  "cloneLiteralGate": {
+    "path": "work/OPENCV_SCRIBE_R18A/R18A_CLONE_LITERAL_GATE.json",
+    "sha256": "D68EB2DAE0EC9C84D20602651895CCA9E98C7633E399B29B0BF61C88FAAD145F",
+    "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"
+  },
+  "preaction": {
+    "path": "work/OPENCV_SCRIBE_R18A/PREACTION_R18A_ONE_TIME_PUBLICATION.json",
+    "sha256": "BD80A13C187DC5F7811F0640B021ADB3428D4D68A475C641157E3647175FC9C1",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
