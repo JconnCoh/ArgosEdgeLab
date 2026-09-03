@@ -1,0 +1,14 @@
+{
+  "schema":"argos_r14p_exact_response_collector_correction_gate_v3",
+  "createdUtc":"2026-09-03T12:15:00Z",
+  "state":"PASS_R14P_EXACT_RESPONSE_COLLECTOR_CORRECTION_R4",
+  "classification":"FROZEN_REVIEW_ONLY",
+  "requestId":"REQ_20260902T204408092Z_R14P",
+  "response":{"fileName":"R_EBC95A67AB32_20260903120903951_4583d653.ready.zip","bytes":176461,"sha256":"E0D7510A65931CDB036E3E63F17A315A442E18C69D239EE1362E2F5D514D8D7A","entryCount":5,"requestIdObserved":"REQ_20260902T204408092Z_R14P","signedEnvelopeState":"PASS_R14P_SIGNED_RETURN_READY","bundleBytes":180012,"bundleSha256":"CDBF65F8BF1FE91A486BABD0CC9707BF3672CCAF087124E9C38F279C36A6E534","bundleEntryCount":64},
+  "caseResultJsonBytes":{"K25V":1232771,"X18V":431375,"JQ16D":544728,"JQ20V":450971,"maximumObserved":1232771,"newMaximum":2097152,"existingMaximumBundleEntryBytes":8388608,"allWithinNewMaximum":true},
+  "supersededCollector":{"path":"work/OPENCV_SCRIBE_R14/Collect-R14PResponseR3.ps1","sha256":"5267D0A8F2F440D31D70421A60E3972921F4D703228FC515BDFE7B9279F325FC","disposition":"WITHDRAWN_BEFORE_COLLECTION","failure":"The generic 1 MiB JSON cap was incorrectly applied to case evidence; K25V is 1232771 bytes while remaining below the signed 8 MiB bundle-entry contract."},
+  "currentCollector":{"path":"work/OPENCV_SCRIBE_R14/Collect-R14PResponseR4.ps1","sha256":"6B4D11ABE836D0639C13AFE7ABB4D046FD7CD2F348006CD9735E59D66A5F610E","selectionMode":"EXACT_OBSERVED_RESPONSE_LEAF_WITH_PINNED_BYTES_AND_SHA256","signatureVerificationRequired":true,"exactRequestIdRequired":true,"manifestJsonMaximumBytes":1048576,"caseResultJsonMaximumBytes":2097152,"allScratchRoots":"C:\\R14R4"},
+  "cloneGate":{"path":"work/OPENCV_SCRIBE_R14/R14P_RESPONSE_COLLECTOR_CLONE_LITERAL_GATE_R4.json","sha256":"0DD1C4C6E71AA513F3BAB2BF1CC72AD64BE2B970B9C9F39B090EF10D7EFBF6A2","state":"PASS_ARGOS_CLONE_LITERAL_REMEDIATION"},
+  "safety":{"failedPreflightExternalWrites":false,"publicationPerformedExactlyOnce":true,"requestRetryPerformed":false,"responseExtractionPerformed":false,"freshCollectorNamespaceUsed":true},
+  "authority":{"reviewOnly":true,"automaticIdentityAuthority":false,"trainingEligible":false,"xmlEligible":false,"productionEligible":false,"productionRoutingEnabled":false,"providerActivationAllowed":false}
+}

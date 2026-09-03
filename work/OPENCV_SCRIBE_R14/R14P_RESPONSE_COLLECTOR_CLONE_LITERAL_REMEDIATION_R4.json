@@ -1,0 +1,17 @@
+{
+  "schema":"argos_clone_literal_remediation_manifest_v1",
+  "revision":"R14P_RESPONSE_COLLECTOR_R4_20260903",
+  "purpose":"Fresh collector successor with an evidence-backed case-result JSON bound and a fresh scratch root.",
+  "pairs":[{
+    "source":"work/OPENCV_SCRIBE_R14/Collect-R14PResponseR3.ps1",
+    "sourceSha256":"5267D0A8F2F440D31D70421A60E3972921F4D703228FC515BDFE7B9279F325FC",
+    "generated":"work/OPENCV_SCRIBE_R14/Collect-R14PResponseR4.ps1",
+    "generatedSha256":"6B4D11ABE836D0639C13AFE7ABB4D046FD7CD2F348006CD9735E59D66A5F610E",
+    "rootRules":[
+      {"sourceRoot":"C:\\R14R3","generatedRoot":"C:\\R14R4","disposition":"REPLACED"},
+      {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"},
+      {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"}
+    ]
+  }],
+  "authority":{"metadataOnly":true,"targetExecuted":false,"publicationAuthorized":false,"reviewOnly":true,"productionRoutingEnabled":false}
+}
