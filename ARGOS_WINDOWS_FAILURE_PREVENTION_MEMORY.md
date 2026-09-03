@@ -11127,3 +11127,38 @@ than rerunning it.
   roots, and authority bounds unchanged, then repeat all build/sign/exact-ZIP/
   route gates once. No JBOD, portal, image, task, process, provider, or
   production state was touched by O3F15L1.
+
+## 2026-09-03 — Preserve bounded child diagnostics before asserting a live runner preflight pass
+
+- Failure signature: published O3F15L2 request
+  `REQ_20260903T074847542Z_A0FB32A19F06` returned matching signed terminal
+  response `R_56C9B84BB3F6_20260903075729363_bd875f13` with state `FAILED` and
+  outer error `O3F15L2 runner PREFLIGHT failed.` The response contained no
+  child exit code, child stdout, or child stderr, so the exact internal runner
+  assertion is not proved. The endpoint failed before GATE, result-root
+  creation, image scoring, or full-corpus launch.
+- Cause: `Invoke-O3F15L2.ps1` collected the child result, then asserted the
+  combined exit-zero/empty-stderr predicate before parsing or projecting the
+  child output. The wrapper consequently replaced the decision-bearing child
+  diagnostic with a generic exception. Local package rehearsal exercised a
+  launch fixture and therefore did not prove the exact real runner preflight or
+  its nonzero diagnostic projection.
+- Mandatory preflight: every package that relies on a child preflight must
+  project a bounded child exit code, stdout, and stderr before applying the
+  success predicate. Exercise at least a successful child, nonzero child with
+  stderr, and nonzero child with structured stdout through the exact packaged
+  endpoint, and require exactly one bounded JSON result for each. A rehearsal
+  fixture cannot support a declaration that the real live dependency preflight
+  passed. A failed preflight must stop before GATE, output-root creation, image
+  read, or background launch while preserving the exact diagnostic needed to
+  choose the next remedy.
+- Recovery: O3F15L2 is terminal, withdrawn, no-retry, and non-parent. Preserve
+  its signed response and extracted failure leaves. The only authorized fresh
+  successor is diagnostic-only O3F15L3: keep the detector, runner, thresholds,
+  selectors, source identities, live roots, and holds unchanged; launch exactly
+  one child with `python.exe -I -B Run-O3F15FrontReconcile.py PREFLIGHT`;
+  return one signed child-diagnostic object; and stop afterward regardless of
+  the preflight result. SELF_TEST, focused tests, GATE, RUN, and every other
+  child invocation are prohibited. A full 978-pair successor remains
+  unauthorized until that evidence identifies and separately gates the actual
+  preflight correction.

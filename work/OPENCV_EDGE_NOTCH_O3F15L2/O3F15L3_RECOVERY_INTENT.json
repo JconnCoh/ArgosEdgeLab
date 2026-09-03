@@ -1,0 +1,160 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-03T08:11:00Z",
+  "incidentId": "O3F15L2_RUNNER_PREFLIGHT_DIAGNOSTIC_GAP_20260903",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3F15/O3F15L1_LOCAL_REHEARSAL_FAILURE.json",
+        "sha256": "89288A4C0C1B0343613007EF732F8C7A7681D49AD8EDD88AC59708CC6A52EBC5",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      },
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3F15L2/O3F15L2_SIGNED_TERMINAL_FAILURE_GATE.json",
+        "sha256": "FF012FF2EC5B668A776AFB921A5F14AD707636388E8C254B14E70B39E738BB79",
+        "state": "FAILED"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L2/O3F15L2_POST_FAILURE_OBSERVATION.json",
+      "sha256": "F5C572E8FD15F5A8A987A0FD3849CBDB861174A7A666925E0B147AE1409ACE4E"
+    },
+    "workflowReviewClearance": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "route": {
+    "type": "PROJECT_PORTAL",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [
+      "OWNED_BOUNDED_RUNNER_PREFLIGHT_CHILD"
+    ],
+    "queueMutation": true,
+    "ledgerMutation": true,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q8/O3Q8_SIGNED_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "A0E60D4E97654F569FAE148DC835BE8B60C4D29C1BF92425B62D6EE6969CFD8C"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+      "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"
+    },
+    "qualifiedAdminGate": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "work/O3F8/Run-O3F15FrontReconcile.py",
+        "sourceSchema": "argos_ocv03_o3f15_preflight_v1",
+        "selector": "exactly one child process: python.exe -I -B Run-O3F15FrontReconcile.py PREFLIGHT; stop afterward regardless of result",
+        "uniquenessKey": "fresh O3F15L3 requestId|PREFLIGHT",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": [
+      "MAINTENANCE_PATCH_OWNED_CHILD"
+    ],
+    "requestedFields": [
+      "preflightExitCode",
+      "preflightStdout",
+      "preflightStderr",
+      "gateStarted",
+      "corpusStarted",
+      "imageBytesRead"
+    ],
+    "decisionOptions": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L2/O3F15L2_POST_FAILURE_OBSERVATION.json",
+      "sha256": "F5C572E8FD15F5A8A987A0FD3849CBDB861174A7A666925E0B147AE1409ACE4E"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "exactChange": "Create one fresh O3F15L3 diagnostic-only endpoint that changes only child-result projection and launches exactly one child process with the exact argument vector python.exe -I -B Run-O3F15FrontReconcile.py PREFLIGHT. Preserve bounded PREFLIGHT exit code/stdout/stderr in exactly one signed JSON result and stop immediately afterward. A failed PREFLIGHT is returned as an explicit diagnostic hold instead of being collapsed into a generic wrapper exception. SELF_TEST, focused tests, GATE, RUN, and every other child invocation are prohibited.",
+    "detectorOrRunnerChangeAllowed": false,
+    "liveRootChangeAllowed": false,
+    "numericThresholdChangeAllowed": false,
+    "selectorChangeAllowed": false,
+    "fullCorpusExecutionAllowed": false,
+    "resultRootCreationAllowed": false,
+    "imageByteReadAllowed": false
+  },
+  "scope": {
+    "freshNamespace": "work/OPENCV_EDGE_NOTCH_O3F15L3",
+    "diagnosticOnly": true,
+    "maximumOwnedChildProcesses": 1,
+    "exactOwnedChildArgumentVector": [
+      "python.exe",
+      "-I",
+      "-B",
+      "Run-O3F15FrontReconcile.py",
+      "PREFLIGHT"
+    ],
+    "selfTestAllowed": false,
+    "otherTestAllowed": false,
+    "maximumLocalPackageBuilds": 1,
+    "maximumLocalEndpointRehearsals": 1,
+    "maximumPortalPublications": 1,
+    "requestRetryAuthorized": false,
+    "o3f15l2Withdrawn": true,
+    "o3f15l2PublicationParentAllowed": false,
+    "o3f15l2SourceStructureMayBeAudited": true,
+    "detectorImageAlgorithmChangeAllowed": false,
+    "detectorThresholdChangeAllowed": false,
+    "postResultSelectorRelaxationAllowed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "existingTaskOrProcessActionAllowed": false,
+    "providerActivationAllowed": false,
+    "automaticHoldClearanceAllowed": false
+  },
+  "preservedHolds": {
+    "fullFrontsideHoldCount": 184,
+    "currentPatternedFrontHoldCount": 12,
+    "slot02MultipleCandidateAmbiguity": true,
+    "rareHotspotSlot16": true,
+    "allBacksideAndLaterPrerequisites": true
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,109 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-03T08:10:00Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "O3F15L2_RUNNER_PREFLIGHT_DIAGNOSTIC_GAP_20260903",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "signedFailureGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3F15L2/O3F15L2_SIGNED_TERMINAL_FAILURE_GATE.json",
+    "sha256": "FF012FF2EC5B668A776AFB921A5F14AD707636388E8C254B14E70B39E738BB79"
+  },
+  "exactSources": [
+    {
+      "path": "C:/O3F15L2F1/PORTAL_RESPONSE_MANIFEST.json",
+      "sha256": "823DB416C9AC7074300A41DA5620A034219F83E1DB568C9ACD999EA30DF6AFF0",
+      "selector": "requestId == REQ_20260903T074847542Z_A0FB32A19F06 and responseId == R_56C9B84BB3F6_20260903075729363_bd875f13",
+      "uniquenessKey": "requestId|responseId",
+      "maximumRows": 1
+    },
+    {
+      "path": "C:/O3F15L2F1/MAINTENANCE.stderr.txt",
+      "sha256": "DDA9E4D15FB2517A080AFB536DF39A18846A37B3AF2394B7CE47C921C06BDBD5",
+      "selector": "exact signed-response stderr leaf",
+      "uniquenessKey": "requestId|MAINTENANCE.stderr.txt",
+      "maximumRows": 1
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L2/Invoke-O3F15L2.ps1",
+      "sha256": "6E8FBA054F4F52C722607D4117FCB50C4512A12AABFF6AFCBF3F12CB4921BF66",
+      "selector": "Invoke-OwnedPython runner PREFLIGHT result is reduced by Require before Read-ChildJson",
+      "uniquenessKey": "runner PREFLIGHT invocation",
+      "maximumRows": 1
+    },
+    {
+      "path": "work/O3F8/Run-O3F15FrontReconcile.py",
+      "sha256": "DCE1E1F3B42FBD38ED73FF7D346F19C3BAE013EE3003B3485E91A41DAF573C48",
+      "selector": "PREFLIGHT calls preflight_context before emitting its success JSON",
+      "uniquenessKey": "PREFLIGHT stage",
+      "maximumRows": 1
+    }
+  ],
+  "fieldEvidence": [
+    {
+      "field": "response.state",
+      "expected": "COMPLETED",
+      "observed": "FAILED"
+    },
+    {
+      "field": "response.signatureVerified",
+      "expected": true,
+      "observed": true
+    },
+    {
+      "field": "runner.PREFLIGHT.exitClass",
+      "expected": "ZERO_WITH_EMPTY_STDERR",
+      "observed": "NONZERO_OR_NONEMPTY_STDERR"
+    },
+    {
+      "field": "signedResponse.outerError",
+      "expected": "bounded exact child diagnostic",
+      "observed": "O3F15L2 runner PREFLIGHT failed."
+    },
+    {
+      "field": "signedResponse.childExitCode",
+      "expected": "present",
+      "observed": "absent"
+    },
+    {
+      "field": "signedResponse.childStdout",
+      "expected": "bounded present or explicitly empty",
+      "observed": "absent"
+    },
+    {
+      "field": "signedResponse.childStderr",
+      "expected": "bounded present or explicitly empty",
+      "observed": "absent"
+    },
+    {
+      "field": "executionBoundary.gateStarted",
+      "expected": false,
+      "observed": false
+    },
+    {
+      "field": "executionBoundary.corpusStarted",
+      "expected": false,
+      "observed": false
+    },
+    {
+      "field": "requestRetryAuthorized",
+      "expected": false,
+      "observed": false
+    }
+  ],
+  "cause": "The signed response proves a real runner PREFLIGHT failure, but the exact endpoint asserts the combined success predicate before parsing or projecting the child result. That wrapper boundary discards the child exit code/stdout/stderr from the terminal evidence, so no deterministic internal runner assertion can lawfully be named yet.",
+  "supportedRemedy": "B",
+  "requiredCorrection": "Use one fresh diagnostic-only O3F15L3 endpoint namespace that preserves bounded runner PREFLIGHT exit code, stdout, and stderr in exactly one signed result object. It must stop after PREFLIGHT and must not enter GATE, create result roots, read detector image bytes, or launch the full corpus.",
+  "detectorOrRunnerChangeRequired": false,
+  "liveRootChangeRequired": false,
+  "selectorOrThresholdChangeRequired": false,
+  "fullCorpusRunRequired": false,
+  "mutationsPerformed": false,
+  "taskActionsPerformed": false,
+  "existingProcessActionsPerformed": false,
+  "sourceImageBytesReadByObservation": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -10133,3 +10133,49 @@ and training/XML/production remain false.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L2_SIGNED_PORTAL_READY_CHECKPOINT_20260903.md`,
 SHA-256 `00277E1867A16F80A1BA8C85A36D9826C49B17B160DE2D68C94D9AFE92081963`.
+
+## OCV-03 O3F15L2 signed failure / O3F15L3 diagnostic next — 2026-09-03
+
+Disposition: `PENDING_GATE`
+
+O3F15L2 request `REQ_20260903T074847542Z_A0FB32A19F06`, ZIP
+`5B4F26D672029D5D0885A2E74DCD4D7A40787D3E2404A09F8723BCFA312B42E7`,
+was published exactly once from commit
+`47356CF99C0DB16FEF16390B26C10FEB77612F6D`. Matching pinned-JBOD signed
+response `R_56C9B84BB3F6_20260903075729363_bd875f13`, ZIP
+`32AA6D6BF7B29025527BD03F0BCAE530BF564B6B072FFFAD572A9E7B947FB647`,
+is terminal `FAILED` at the real runner PREFLIGHT. Exact failure gate
+`FF012FF2EC5B668A776AFB921A5F14AD707636388E8C254B14E70B39E738BB79`
+proves the endpoint discarded the child exit code/stdout/stderr behind the
+generic outer error `O3F15L2 runner PREFLIGHT failed.` The inner Python
+assertion is unknown and must not be guessed.
+
+L2 never entered GATE, created a detector result root, read an image, emitted
+a detector result or overlay, started the 978-pair corpus, or launched its
+background worker. It is withdrawn, terminal, no-retry, non-reusable, and
+non-parent. Post-failure observation
+`F5C572E8FD15F5A8A987A0FD3849CBDB861174A7A666925E0B147AE1409ACE4E`
+and MUTATE recovery intent
+`9863D76D28988595EDC11C8745B6E2C1263380FECABA1C26AFD65CAD1A9818C9`
+pass recovery-intent gate
+`4D0F8D767F509D150EFE1AAC5DFEFD9ADDB3AEAB23BBA4AA7259F45E9D4CE000`.
+One signed and one local premise failure are recorded; mutation stop-loss is
+not active.
+
+Only fresh portal-only O3F15L3 diagnostic work is authorized. It may execute
+exactly one owned `python.exe -I -B Run-O3F15FrontReconcile.py PREFLIGHT`
+child, return bounded child exit/stdout/stderr evidence, and stop. SELF_TEST,
+focused tests, GATE, RUN, result-root creation, image reads, corpus work,
+detector/runner/threshold/selector changes, and hold clearance are prohibited.
+The full frontside corpus remains unauthorized.
+
+All 184 frontside and twelve current `PatternedFront` holds remain unchanged,
+including Slot02 ambiguity and rare-hotspot Slot16. Continue only after the
+diagnostic and a separately gated exact correction, then preserve the recorded
+scribe, combined/unified, and site-bound fiducial/alignment order. Do not use
+RustDesk or operator input. Review-only remains true; training, XML,
+production eligibility, and production routing remain false.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L2_FAILURE_O3F15L3_DIAGNOSTIC_NEXT_CHECKPOINT_20260903.md`,
+SHA-256 `DF849FF2676A0EA25AAB1654F9606EBB05F86C9581EBDA1C5B2F56196292360C`.
