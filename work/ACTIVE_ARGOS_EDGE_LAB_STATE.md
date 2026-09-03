@@ -9745,3 +9745,23 @@ SHA-256 `6B10205C724B9E95480C8EC7F77601F202C989D3D444ECCCDADC0A9D7370A787`.
 
 Next: execute B once and freeze its outputs before visual review. Read zero
 blind acquisitions; never retry or republish the R18G portal request.
+
+# 2026-09-03 — OCV-02 R18G development run B timeout withdrawn (`WITHDRAWN`)
+
+The single B execution reached its declared 600-second caller ceiling after
+completing two development cases and starting a third. It emitted no stdout
+and did not create the required four-case aggregate gate. Preserved
+`C:\R18GDB` contains two result JSONs, three job JSONs, no third result, no
+fourth job, and no aggregate. Zero blind acquisitions were read and no
+development image was visually inspected.
+
+Run B is withdrawn and its partial results are not detector evidence. The root
+must not be resumed, patched, deleted, or reviewed. R18G was already published
+exactly once and must not be retried or republished.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18G/R18G_DEVELOPMENT_RUN_B_TIMEOUT_WITHDRAWN_CHECKPOINT_20260903.md`.
+
+Exact next scribe-lane action: stop. A later explicitly authorized local
+continuation requires a fresh namespace, one declared development case per
+bounded run, and a separate hash-only aggregate after all four complete.

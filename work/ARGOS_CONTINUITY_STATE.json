@@ -8866,8 +8866,8 @@
     "nextAction": "Select another small metadata-only failure-first cohort weighted toward difficult POST2 and other current-reader failures, with no overlap with prior cohorts. Keep I/O/V/Y as explicit coverage holds. Pull only existing proposal/BF/DF scribe crops after fresh local gates and explicit publication authority; do not run the full KLARF directory."
   },
   "opencvScribeR18GCohort": {
-    "state": "OCV02_SCRIBE_R18G_DEVELOPMENT_RUN_A_TIMEOUT_WITHDRAWN_B_READY",
-    "disposition": "PENDING_GATE",
+    "state": "OCV02_SCRIBE_R18G_DEVELOPMENT_RUN_B_TIMEOUT_WITHDRAWN_STOP",
+    "disposition": "WITHDRAWN",
     "plannerPath": "work/OPENCV_SCRIBE_R18G/Plan-R18GFailureFirst.py",
     "plannerSha256": "A40E736F3025727C7EAFA2926F0ED13E424AC71F582A8105F7D1D471EA2EA9B0",
     "cohortPath": "work/OPENCV_SCRIBE_R18G/R18G_COHORT.json",
@@ -8927,8 +8927,15 @@
     "developmentRunBRunnerSha256": "3D32E23FE501CB8363B2D46D1536967A113D7F74F3C1C33B4BA27AA43D1A0582",
     "developmentRunBOutputRoot": "C:\\R18GDB",
     "developmentRunBCallerTimeoutSeconds": 600,
-    "checkpointPath": "work/OPENCV_SCRIBE_R18G/R18G_DEVELOPMENT_RUN_A_TIMEOUT_WITHDRAWN_CHECKPOINT_20260903.md",
-    "checkpointSha256": "6B10205C724B9E95480C8EC7F77601F202C989D3D444ECCCDADC0A9D7370A787",
+    "developmentRunBState": "WITHDRAWN_CALLER_TIMEOUT_PARTIAL_NO_AGGREGATE",
+    "developmentRunBCompletedResultCount": 2,
+    "developmentRunBStartedJobCount": 3,
+    "developmentRunBAggregateGatePresent": false,
+    "developmentRunBBlindAcquisitionCount": 0,
+    "developmentRunBVisualReviewPerformed": false,
+    "failurePreventionMemorySha256": "664B49D79ADBA6DADAE2D0B37011BC62F77D0A7B6007B508B990D22244A21A2B",
+    "checkpointPath": "work/OPENCV_SCRIBE_R18G/R18G_DEVELOPMENT_RUN_B_TIMEOUT_WITHDRAWN_CHECKPOINT_20260903.md",
+    "checkpointSha256": "64FB1DD3E5CF9AF65B498F4D2F454FE18CE1916A499BC7603A0431EE8E3F1724",
     "selectedAcquisitionCount": 8,
     "selectedPost2Count": 2,
     "distinctLotFamilyCount": 7,
@@ -8947,7 +8954,7 @@
     "trainingEligible": false,
     "xmlEligible": false,
     "productionEligible": false,
-    "nextAction": "Run fresh development namespace B once with the 600-second caller window and unchanged frozen R18F/input/partition pins. Freeze outputs before visual review; read zero blind acquisitions. Never resume C:\\R18GD or retry/republish R18G."
+    "nextAction": "Stop. Do not retry, resume, patch, delete, or visually review C:\\R18GD or C:\\R18GDB. A later explicitly authorized local continuation requires fresh one-case namespaces and separate hash-only aggregation while blind reads remain zero. Never retry or republish R18G."
   },
   "nextAction": "Stop the current execution attempt. Do not retry the timed-out R20 metadata command namespace, open an alternate console, or investigate transport under detector authority. A future continuation requires one fresh bounded nonce-bound result on the already recorded route before lawful notch-adjacent source evidence or ordinal-23 work can resume. Fresh 953-pair R25 and every later phase remain unauthorized.",
   "reviewOnly": true,

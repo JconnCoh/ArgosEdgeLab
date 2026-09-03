@@ -10699,3 +10699,23 @@ than rerunning it.
   run the pinned canonical signature verifier, and collect create-new. Any
   successor collector must use a fresh local revision and rehearse a foreign
   response whose valid entry set exceeds the target-specific bound.
+
+## 2026-09-03 — A four-case local OpenCV cohort can exceed a ten-minute caller ceiling
+
+- Failure signature: frozen R18G development runner B completed two cases,
+  began the third case, and was terminated by its declared 600-second caller
+  ceiling before producing the four-case aggregate gate.
+- Cause: the ceiling was increased from the disproven 120-second predecessor
+  but still was not derived from a completed worst-case measurement. The two
+  completed cases consumed about 473 seconds, so a four-case aggregate could
+  not be guaranteed inside 600 seconds.
+- Mandatory preflight: never start a multi-case local OpenCV cohort under a
+  caller ceiling unless the ceiling is derived from measured worst-case case
+  duration plus aggregate-write reserve. When no such measurement exists,
+  run and freeze one declared development case per create-new namespace, then
+  aggregate only complete hash-pinned results in a separate non-image step.
+- Recovery: preserve `C:\R18GDB` unchanged as withdrawn partial evidence. Do
+  not inspect its images, resume it, treat its two results as a complete gate,
+  or retry the unchanged multi-case execution. Any later authorized execution
+  requires a fresh namespace and a case-bounded design that cannot lose the
+  whole cohort to one caller timeout.
