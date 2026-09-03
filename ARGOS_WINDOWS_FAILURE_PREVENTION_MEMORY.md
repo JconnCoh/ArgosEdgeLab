@@ -10998,3 +10998,34 @@ than rerunning it.
   published, or externally executed, correct it in place, supersede its stale
   draft-only clone evidence, and rerun every source/generated harness, clone,
   endpoint, and exact-package gate before freezing and building once.
+## 2026-09-02 — O3F11 repeated the documented long native-source path failure because its package gate omitted the real DEV6 leaves
+
+- Failure signature: signed review-only request `REQ_O3F11_20260902A` passed
+  SELF_TEST, PREFLIGHT, exact-runner root/schema validation, and GATE, then the
+  DEV6 child stopped before its first image read with
+  `Source path plus suffix reserve is unsafe`. The first frozen BF source was
+  178 characters and 210 with the mandatory 32-character reserve. The matching
+  signed terminal response is
+  `R_D10B22A1CF01_20260903030025206_0398b818`.
+- Cause: the 55-row O3F11 path gate exhaustively covered package, endpoint,
+  output, quarantine, and return leaves but failed to include the twelve real
+  BF/DF DEV6 source leaves. Its exact packaged rehearsal substituted an
+  image-free fixture for the later stage and therefore never exercised the
+  already-documented requirement for a verified short alias to native
+  patterned-front paths. Route completeness was incorrectly treated as source
+  I/O path completeness.
+- Mandatory preflight: every future real-image staged-runner package must
+  freeze the exact selected canonical source set before signature, run the path
+  budget over every canonical leaf, and include both canonical provenance and
+  actionable alias leaves in the signed route/path gate. A canonical effective
+  length from 200 through 229 requires a temporary verified `subst` alias rooted
+  deeply enough that every actionable leaf is below 200 with reserve. The exact
+  packaged rehearsal must execute the same alias planner and the real alias
+  create/query/target-verify/exception-cleanup/remove path; a fixture that omits
+  selected source strings cannot satisfy this gate.
+- Recovery: O3F11 is `WITHDRAWN`, no-retry, non-reusable, and non-parent. Its
+  GATE root was moved to `D:/O3F9G11.failed`; DEV6 created no result root and
+  read no source image bytes. Use a fresh namespace only, preserve all holds,
+  query `subst.exe` without a drive argument, reject any occupied alias before
+  creation, verify the exact alias target before image launch, and remove only
+  the exact created mapping in `finally`.

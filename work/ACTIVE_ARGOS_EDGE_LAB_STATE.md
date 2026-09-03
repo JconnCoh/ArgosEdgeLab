@@ -9849,3 +9849,32 @@ reconciliation, scribe, combined corpus/unified outputs, and finally the
 site-bound fiducial/alignment gates. All map, pose, coverage, sensitivity,
 paired BF/DF validation, and transfer holds remain; production scoring stays
 blocked.
+
+## OCV-03 O3F11 source-path failure / O3F12 next — 2026-09-02
+
+Disposition: `PENDING_GATE`
+
+O3F11 request `REQ_O3F11_20260902A` was published exactly once. Matching
+signed response `R_D10B22A1CF01_20260903030025206_0398b818`, ZIP
+`9D7367EBA280B8E26BB3A9640B42D32E36E78FF3E2D01EB26D294BDA4B408447`,
+is signature-verified and terminal `FAILED`. GATE passed and was quarantined
+at `D:/O3F9G11.failed`; DEV6 stopped before image read or result-root creation
+because its first canonical BF source was 178 characters, 210 with the
+mandatory 32-character reserve. Failure gate
+`8F86C3B31067A0B3643C973054EB4BE4F4D0D08CDD691F4423E88DA6F91F7EA4`
+is exact. O3F11 is withdrawn, no-retry, non-reusable, and non-parent.
+
+Only fresh O3F12 is next. R10 remains byte-identical. Freeze the twelve exact
+DEV6 leaves, change only staged-runner path access, and use one temporary `Q:`
+alias remapped per case to the selected slot root with exact absent/create,
+zero-argument query, target verification, `finally` removal, and endpoint
+timeout cleanup. After full gates, publish exactly one fresh six-case portal
+request without RustDesk or operator input. Preserve all 184 full-corpus and
+twelve current `PatternedFront` holds, including rare Slot16, with no selector
+relaxation or hold clearance. Then continue targeted frontside reconciliation,
+scribe, combined outputs, and fiducial/alignment prerequisites in order;
+production scoring remains blocked.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F11_SOURCE_PATH_FAILURE_CHECKPOINT_20260902.md`,
+SHA-256 `60DADC2CE0E71837E96B23B24323E9BE795C4D5650FDD666A53AF0BDE041F573`.
