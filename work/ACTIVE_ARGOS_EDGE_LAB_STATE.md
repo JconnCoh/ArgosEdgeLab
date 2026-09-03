@@ -10347,3 +10347,29 @@ all later live work remains portal-only without operator input or RustDesk.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4_LOCAL_IMAGE_FREE_PASS_CHECKPOINT_20260903.md`,
 SHA-256 `20C8884F6C15C7F1E234682A61482ED491AE30F5AE2471312D165BC053731B8C`.
+
+## OCV-03 O3F15L4 DRAFT correction: synthetic pass, actual 978 pending — 2026-09-03
+
+Disposition: `PENDING_GATE`
+
+Corrected runner `EEE52358472C7B8086327C2B37E54BEDCE89BFF13154D6E3BD18EA9325F5FF99`
+and focused test `564DB7C7097A4965F6864B813B2889E1972CF54D3696F307B83200BE3B7C54A9`
+pass 8/8 image-free tests. The predecessor gate is superseded: its 978 rows
+were synthetic and run-one recovery claims were static. New gate
+`8BA2205E7D29F18878D8670310A7CF059DF2B460A32E76CE34EC99EC3EB223E6`
+labels `SYNTHETIC_978`, distinguishes executed from static coverage, proves
+1,956 unique synthetic source-leaf records and per-class cardinality, accepts
+a safe absolute ProgramData GATE path to an identical-hash fresh flat
+`D:\O3F15*RT` RUN path, and proves owned wrong-target Q cleanup plus
+preexisting-Q non-removal.
+
+Actual frozen 978 classification remains pending and may be emitted only by a
+real pinned PREFLIGHT/GATE. It must enumerate every source leaf by class with
+exact counts, metrics, and ordered hashes. No build, signature, publication,
+live/image/source/task/process/provider/retry/hold action occurred or is
+authorized. All 184/12 holds, including Slot02 and Slot16, remain; review-only
+is true and training/XML/production remain false.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4_DRAFT_CORRECTION_SYNTHETIC_PASS_ACTUAL_978_PENDING_CHECKPOINT_20260903.md`,
+SHA-256 `D0440CD594ABEFD9199329079A73B648ACE020A7A122081E7386C948051AF3E4`.

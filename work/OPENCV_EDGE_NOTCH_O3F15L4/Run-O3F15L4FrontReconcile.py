@@ -19,9 +19,9 @@ HERE = Path(__file__).resolve().parent
 RUNNER_PATH = Path(__file__).resolve()
 
 
-def dependency_path(name: str) -> Path:
-    flat = HERE / name
-    repository = HERE.parent / "O3F8" / name
+def dependency_path(name: str, here: Path = HERE, repository_root: Path | None = None) -> Path:
+    flat = here / name
+    repository = (here.parent / "O3F8" if repository_root is None else repository_root) / name
     return flat if flat.is_file() else repository
 
 
@@ -32,11 +32,12 @@ FOCUSED_TEST = HERE / "Test-O3F15L4PathHolds.py"
 GATE_ROOT = Path(r"D:\O3F15L4G")
 RUN_ROOT = Path(r"D:\O3F15L4C")
 MIRROR_ROOT = Path(r"D:\KLARFExport\_ArgosReview\F15L4S")
+RUNNER_LEAF = "Run-O3F15L4FrontReconcile.py"
 
 O3F15_SHA256 = "DCE1E1F3B42FBD38ED73FF7D346F19C3BAE013EE3003B3485E91A41DAF573C48"
 O3F14_SHA256 = "CAAFD1AC8C19E33D95BA8283963A4D0ED0189FF566C9923822BF3EC37956171E"
 R11_SHA256 = "B477C290EC9D3AE388BE4EE31049B2B8094F5F30FC6E0DD68AB4A03926EE4059"
-FOCUSED_TEST_SHA256 = "C8E0B2CC40124056634F076B2009EC5BC72AAD333AF9F142599BEA101D49168E"
+FOCUSED_TEST_SHA256 = "564DB7C7097A4965F6864B813B2889E1972CF54D3696F307B83200BE3B7C54A9"
 
 EXPORT_ROOT = PureWindowsPath(r"D:\KLARFExport")
 ALIAS_DRIVE = "Q:"
@@ -47,6 +48,7 @@ DIRECT_HARD_STOP = 230
 MAX_COMPONENT_LENGTH = 80
 
 _O3F15: Any | None = None
+_LAST_FROZEN_CLASSIFICATION: dict[str, Any] | None = None
 
 
 class L4AliasContractError(RuntimeError):
@@ -120,6 +122,45 @@ def require_short_path(value: str | PureWindowsPath, label: str) -> dict[str, An
     return result
 
 
+def runner_stage_path_evidence(value: str | PureWindowsPath, stage: str) -> dict[str, Any]:
+    """Validate a short GATE path or flat fresh D: RUN stage without filesystem I/O."""
+    text = str(value)
+    pure = PureWindowsPath(text)
+    stage_name = stage.upper()
+    need(stage_name in {"GATE", "RUN"}, "Runner stage must be GATE or RUN")
+    need(pure.is_absolute(), f"{stage_name} runner path must be absolute")
+    need(pure.name == RUNNER_LEAF, f"{stage_name} runner leaf changed")
+    root_leaf = pure.parent.name.upper()
+    if stage_name == "RUN":
+        need(pure.drive.upper() == "D:", "RUN runner must be on D:")
+        need(pure.parent.parent == PureWindowsPath("D:\\"), "RUN runner must be in a flat D: stage root")
+        need(root_leaf.startswith("O3F15"), "RUN runner root must begin O3F15")
+        need(root_leaf.endswith("RT"), "RUN runner root must end RT")
+    return {
+        "stage": stage_name,
+        "path": text,
+        "rootLeaf": pure.parent.name,
+        "runnerLeaf": pure.name,
+        "budget": require_short_path(text, f"{stage_name} runner stage path"),
+    }
+
+
+def validate_runner_stage_handoff(gate_path: str, gate_sha256: str, run_path: str, run_sha256: str) -> dict[str, Any]:
+    """Authorize a path-changing GATE-to-RUN handoff only for identical runner bytes."""
+    gate_hash = required_sha256(gate_sha256, "GATE runner")
+    run_hash = required_sha256(run_sha256, "RUN runner")
+    gate_evidence = runner_stage_path_evidence(gate_path, "GATE")
+    run_evidence = runner_stage_path_evidence(run_path, "RUN")
+    need(gate_hash == run_hash, "GATE-to-RUN runner SHA-256 mismatch")
+    return {
+        "gate": gate_evidence,
+        "run": run_evidence,
+        "pathsDiffer": normalized_windows_path(gate_path) != normalized_windows_path(run_path),
+        "runnerSha256": run_hash,
+        "authorization": "EXACT_BYTES_LOCATION_AGNOSTIC_GATE_TO_FLAT_D_RUN_STAGE",
+    }
+
+
 def identity_slot_anchor(identity: str) -> str:
     marker = "|FRONT"
     offset = identity.find(marker)
@@ -179,6 +220,65 @@ def generalized_alias_plans(selected: list[dict[str, Any]], _o3f14: Any = None, 
     return plans
 
 
+def frozen_classification_evidence(plans: list[dict[str, Any]], corpus: str = "ACTUAL_FROZEN_978") -> dict[str, Any]:
+    need(corpus in {"ACTUAL_FROZEN_978", "SYNTHETIC_978"}, "Classification corpus label is not explicit")
+    need(len(plans) == 978 and [int(plan["ordinal"]) for plan in plans] == list(range(1, 979)), "Actual frozen classification ordinals changed")
+    need(len({str(plan["identity"]) for plan in plans}) == 978, "Actual frozen classification identities are not unique")
+    severity = {"DIRECT_SAFE": 0, "VERIFIED_SHORT_ALIAS_REQUIRED": 1, "DIRECT_USE_HARD_STOP_ALIAS_ONLY": 2}
+    leaf_counts = {name: 0 for name in severity}
+    pair_counts = {name: 0 for name in severity}
+    class_leaves: dict[str, list[str]] = {name: [] for name in severity}
+    source_leaves_by_class: dict[str, list[dict[str, Any]]] = {name: [] for name in severity}
+    ordered_source_leaves: list[dict[str, Any]] = []
+    ordered_leaf_keys: list[str] = []
+    records: list[dict[str, Any]] = []
+    hard_stops: list[dict[str, Any]] = []
+    for plan in plans:
+        channel_classes = {key: str(plan[key]["canonicalClassification"]["classification"]) for key in ("bf", "df")}
+        pair_class = max(channel_classes.values(), key=lambda value: severity[value])
+        pair_counts[pair_class] += 1
+        record = {"ordinal": int(plan["ordinal"]), "identity": str(plan["identity"]), "safeId": str(plan["safeId"]), "pairClass": pair_class, "channels": {}}
+        for key in ("bf", "df"):
+            channel = plan[key]
+            path_text = str(channel["canonicalPath"])
+            path_class = channel_classes[key]
+            leaf_counts[path_class] += 1
+            class_leaves[path_class].append(f"{plan['identity']}|{key.upper()}")
+            canonical_metrics = channel["canonicalClassification"]
+            leaf_record = {
+                "ordinal": int(plan["ordinal"]),
+                "identity": str(plan["identity"]),
+                "channel": key.upper(),
+                "class": path_class,
+                "canonicalPath": path_text,
+                "canonicalLexicalSha256": hashlib.sha256(path_text.encode("utf-8")).hexdigest().upper(),
+                "rawLength": int(canonical_metrics["rawPathLength"]),
+                "effectiveLength": int(canonical_metrics["effectivePathLength"]),
+                "maximumComponentLength": int(canonical_metrics["maximumComponentLength"]),
+                "sourceSha256": str(channel["sha256"]),
+                "bytes": int(channel["bytes"]),
+            }
+            if path_class != "DIRECT_SAFE":
+                alias_budget = channel["aliasBudget"]
+                leaf_record.update({"aliasPath": str(channel["aliasPath"]), "aliasPlannedRawLength": int(alias_budget["rawPathLength"]), "aliasPlannedEffectiveLength": int(alias_budget["effectivePathLength"]), "aliasPlannedMaximumComponentLength": int(alias_budget["maximumComponentLength"])})
+            leaf_key = f"{plan['ordinal']}|{plan['identity']}|{key.upper()}"
+            ordered_leaf_keys.append(leaf_key)
+            ordered_source_leaves.append(leaf_record)
+            source_leaves_by_class[path_class].append(leaf_record)
+            record["channels"][key] = leaf_record
+        records.append(record)
+        if pair_class == "DIRECT_USE_HARD_STOP_ALIAS_ONLY":
+            hard_stops.append({"ordinal": record["ordinal"], "identity": record["identity"], "channels": record["channels"]})
+    encoded_records = (json.dumps(records, separators=(",", ":"), ensure_ascii=False) + "\n").encode("utf-8")
+    encoded_leaves = (json.dumps(ordered_source_leaves, separators=(",", ":"), ensure_ascii=False) + "\n").encode("utf-8")
+    identity_bytes = ("\n".join(str(plan["identity"]) for plan in plans) + "\n").encode("utf-8")
+    class_hashes = {name: hashlib.sha256(("\n".join(values) + ("\n" if values else "")).encode("utf-8")).hexdigest().upper() for name, values in class_leaves.items()}
+    need(len(ordered_source_leaves) == 1956 and len(set(ordered_leaf_keys)) == 1956, "Classification does not contain 1956 unique ordered source leaves")
+    need(sum(leaf_counts.values()) == 1956, "Source-leaf classification counts do not total 1956")
+    need(all(len(source_leaves_by_class[name]) == leaf_counts[name] for name in severity), "Source-leaf class lists do not match classification counts")
+    return {"corpus": corpus, "complete": True, "pairCount": 978, "identityCount": 978, "sourceLeafCount": 1956, "uniqueOrderedSourceLeafCount": 1956, "pairClassificationCounts": pair_counts, "sourceLeafClassificationCounts": leaf_counts, "orderedIdentitySha256": hashlib.sha256(identity_bytes).hexdigest().upper(), "orderedClassificationRecordSha256": hashlib.sha256(encoded_records).hexdigest().upper(), "orderedSourceLeafRecordSha256": hashlib.sha256(encoded_leaves).hexdigest().upper(), "classificationLeafIdentitySha256": class_hashes, "sourceLeavesByClass": source_leaves_by_class, "hardStopIdentities": hard_stops}
+
+
 def alias_file_size(alias_text: str) -> int | None:
     need(PureWindowsPath(alias_text).drive.upper() == ALIAS_DRIVE, "Metadata probe is not bound to Q:")
     alias = Path(alias_text)
@@ -223,10 +323,21 @@ def owned_case_alias(
         created = True
         current, current_snapshot = o3f14.query_all_subst_mappings()
         evidence["afterCreateAllMappings"] = current_snapshot
-        verify_owned_mapping(current, str(plan["slotRoot"]), "after create")
-        expected = dict(before)
-        expected[ALIAS_DRIVE] = str(plan["slotRoot"])
-        need(mappings_match(current, expected), "Q: creation changed an unrelated subst mapping")
+        observed_target = current.get(ALIAS_DRIVE)
+        target_matches = (
+            observed_target is not None
+            and normalized_windows_path(observed_target)
+            == normalized_windows_path(str(plan["slotRoot"]))
+        )
+        evidence["afterCreateTarget"] = observed_target
+        evidence["afterCreateTargetMatched"] = target_matches
+        unrelated_preserved = set(current) == set(before) | {ALIAS_DRIVE} and all(
+            normalized_windows_path(current[key]) == normalized_windows_path(value)
+            for key, value in before.items()
+        )
+        evidence["unrelatedMappingsPreservedOnCreate"] = unrelated_preserved
+        need(unrelated_preserved, "Q: creation changed an unrelated subst mapping")
+        need(target_matches, "after create: Q: mapping target mismatch")
         need(o3f14.logical_drive_present(ALIAS_DRIVE), "Q: did not become a logical drive after creation")
         for key in ("bf", "df"):
             observed_bytes = metadata_probe(str(plan[key]["aliasPath"]))
@@ -239,11 +350,22 @@ def owned_case_alias(
             try:
                 current, current_snapshot = o3f14.query_all_subst_mappings()
                 evidence["beforeRemoveAllMappings"] = current_snapshot
-                verify_owned_mapping(current, str(plan["slotRoot"]), "before remove")
-                expected = dict(before)
-                expected[ALIAS_DRIVE] = str(plan["slotRoot"])
-                need(mappings_match(current, expected), "An unrelated subst mapping changed while Q: was owned")
-                evidence["remove"] = o3f14.subst_action([ALIAS_DRIVE, "/D"], "owned Q: alias removal")
+                observed_target = current.get(ALIAS_DRIVE)
+                evidence["beforeRemoveTarget"] = observed_target
+                evidence["beforeRemoveTargetMatched"] = (
+                    observed_target is not None
+                    and normalized_windows_path(observed_target)
+                    == normalized_windows_path(str(plan["slotRoot"]))
+                )
+                evidence["unrelatedMappingsPreservedBeforeRemove"] = all(
+                    key in current
+                    and normalized_windows_path(current[key]) == normalized_windows_path(value)
+                    for key, value in before.items()
+                )
+                if ALIAS_DRIVE in current:
+                    evidence["remove"] = o3f14.subst_action([ALIAS_DRIVE, "/D"], "owned Q: alias removal")
+                else:
+                    evidence["removeSkippedAlreadyAbsent"] = True
                 after, after_snapshot = o3f14.query_all_subst_mappings()
                 evidence["afterRemoveAllMappings"] = after_snapshot
                 need(ALIAS_DRIVE not in after, "Owned Q: mapping remained after removal")
@@ -291,6 +413,7 @@ def lexical_source_binding(actual: dict[str, Any], expected: dict[str, Any], saf
 
 def preflight_context() -> dict[str, Any]:
     """Rebuild predecessor context without its canonical source filesystem probes."""
+    global _LAST_FROZEN_CLASSIFICATION
     frozen = load_frozen_o3f15()
     base, o3f14 = frozen.dependencies()
     need(FOCUSED_TEST.is_file() and sha256(FOCUSED_TEST) == FOCUSED_TEST_SHA256, "O3F15L4 focused-test pin changed")
@@ -322,7 +445,9 @@ def preflight_context() -> dict[str, Any]:
         prior[identity] = {"classification": "PINNED_EXECUTABLE", "priorResult": result, "priorEvidence": prior_evidence}
     need(len(prior) == 978 and sum(value["classification"] == "FRESH_PRIOR_PROVIDER_ERROR" for value in prior.values()) == 5, "Prior evidence coverage changed")
     plans = generalized_alias_plans(cohorts["ordered978"])
-    return {"base": base, "o3f14": O3F14AliasFacade(o3f14), "rows": rows, "cases": cases, "cohorts": cohorts, "comparison": comparison, "canonicalFixed": fixed, "prior": prior, "plans": plans}
+    actual_classification = frozen_classification_evidence(plans)
+    _LAST_FROZEN_CLASSIFICATION = actual_classification
+    return {"base": base, "o3f14": O3F14AliasFacade(o3f14), "rows": rows, "cases": cases, "cohorts": cohorts, "comparison": comparison, "canonicalFixed": fixed, "prior": prior, "plans": plans, "actualFrozen978LexicalClassification": actual_classification}
 
 
 def alias_only_job_inputs(plan: dict[str, Any], safe_id: str) -> list[dict[str, Any]]:
@@ -337,15 +462,24 @@ def validate_gate(path: Path, expected_sha256: str) -> dict[str, Any]:
     gate, actual = frozen.read_json_and_sha256(path)
     need(actual == required_sha256(expected_sha256, "O3F15L4 GATE prerequisite"), "O3F15L4 GATE summary hash changed")
     need(gate.get("schema") == "argos_ocv03_o3f15l4_gate_result_v1" and gate.get("state") == "COMPLETE_O3F15L4_GATE", "O3F15L4 GATE did not pass")
-    need(gate.get("runnerSha256") == sha256(RUNNER_PATH) and gate.get("runnerPath") == str(RUNNER_PATH), "O3F15L4 GATE runner provenance changed")
+    run_hash = sha256(RUNNER_PATH)
+    need(gate.get("runnerSha256") == run_hash, "O3F15L4 GATE runner bytes changed")
+    recorded_gate_stage = runner_stage_path_evidence(str(gate.get("runnerPath") or ""), "GATE")
+    need(gate.get("runnerStagePathEvidence") == recorded_gate_stage, "O3F15L4 GATE stage-path evidence changed")
+    handoff = validate_runner_stage_handoff(str(gate["runnerPath"]), str(gate["runnerSha256"]), str(RUNNER_PATH), run_hash)
     need(gate.get("focusedTestSha256") == FOCUSED_TEST_SHA256 and gate.get("r11Sha256") == R11_SHA256, "O3F15L4 GATE dependency provenance changed")
-    need(gate.get("complete978LexicalClassification") is True and int(gate.get("plannedPairCount", -1)) == 978, "O3F15L4 GATE lacks complete 978 lexical classification")
+    actual_classification = gate.get("actualFrozen978LexicalClassification")
+    need(_LAST_FROZEN_CLASSIFICATION is not None, "RUN preflight did not classify the actual frozen 978 corpus")
+    need(actual_classification == _LAST_FROZEN_CLASSIFICATION, "O3F15L4 GATE actual frozen 978 classification changed")
+    need(isinstance(actual_classification, dict) and actual_classification.get("corpus") == "ACTUAL_FROZEN_978" and actual_classification.get("complete") is True, "O3F15L4 GATE lacks actual frozen 978 classification")
+    need(int(actual_classification.get("pairCount", -1)) == 978 and int(actual_classification.get("sourceLeafCount", -1)) == 1956, "O3F15L4 GATE actual frozen corpus cardinality changed")
     need(gate.get("sourceResultsSha256") == frozen.SOURCE_RESULTS_SHA256 and gate.get("reviewOrderSha256") == frozen.REVIEW_ORDER_SHA256 and gate.get("o3f14SummarySha256") == frozen.O3F14_SUMMARY_SHA256, "O3F15L4 GATE inputs changed")
-    return {"path": str(path.resolve(strict=True)), "sha256": actual}
+    return {"path": str(path.resolve(strict=True)), "sha256": actual, "runnerStageHandoff": handoff, "actualFrozen978LexicalClassification": actual_classification}
 
 
 def run_gate(output_root: Path) -> dict[str, Any]:
     frozen = load_frozen_o3f15()
+    runner_stage_evidence = runner_stage_path_evidence(str(RUNNER_PATH), "GATE")
     context = preflight_context()
     output_root = frozen.validate_exact_root(output_root, GATE_ROOT, "O3F15L4 GATE output root")
     output_root.mkdir()
@@ -363,21 +497,25 @@ def run_gate(output_root: Path) -> dict[str, Any]:
     seed_value = frozen.read_json_and_sha256(seed)[0] if seed.is_file() else {}
     inherited_path = synthetic / "SYNTHETIC_GATE.json"
     inherited_value = frozen.read_json_and_sha256(inherited_path)[0] if inherited_path.is_file() else {}
-    complete978 = focused_value.get("complete978LexicalClassification") is True and int(focused_value.get("plannedPairCount", -1)) == 978
-    passed = all(command["returnCode"] == 0 and command["stderrBytes"] == 0 for command in commands) and focused_value.get("state") == "PASS_O3F15L4_FOCUSED_IMAGE_FREE" and complete978 and seed_value.get("state") == "PASS_O3F14_R11_SEED_ANGLE_REGRESSION" and inherited_value.get("state") == "PASS_O3M6_SPLIT_METHOD_FULL_PERIMETER_SYNTHETIC_GATE"
+    synthetic978 = focused_value.get("synthetic978LexicalClassification") is True and int(focused_value.get("syntheticPlannedPairCount", -1)) == 978 and focused_value.get("actualFrozenCorpusClassified") is False
+    actual_classification = context["actualFrozen978LexicalClassification"]
+    actual_complete = actual_classification.get("corpus") == "ACTUAL_FROZEN_978" and actual_classification.get("complete") is True and int(actual_classification.get("pairCount", -1)) == 978 and int(actual_classification.get("sourceLeafCount", -1)) == 1956
+    passed = all(command["returnCode"] == 0 and command["stderrBytes"] == 0 for command in commands) and focused_value.get("state") == "PASS_O3F15L4_FOCUSED_IMAGE_FREE" and synthetic978 and actual_complete and seed_value.get("state") == "PASS_O3F14_R11_SEED_ANGLE_REGRESSION" and inherited_value.get("state") == "PASS_O3M6_SPLIT_METHOD_FULL_PERIMETER_SYNTHETIC_GATE"
     summary = {
         "schema": "argos_ocv03_o3f15l4_gate_result_v1",
         "state": "COMPLETE_O3F15L4_GATE" if passed else "HOLD_O3F15L4_GATE",
         "stage": "GATE",
         "runnerPath": str(RUNNER_PATH),
         "runnerSha256": sha256(RUNNER_PATH),
+        "runnerStagePathEvidence": runner_stage_evidence,
+        "runnerStageHandoffPolicy": {"authorization": "EXACT_BYTES_LOCATION_AGNOSTIC_GATE_TO_FLAT_D_RUN_STAGE", "gatePath": "ABSOLUTE_LOCATION_AGNOSTIC", "runRoot": "D:\\O3F15*RT", "runnerLeaf": RUNNER_LEAF, "effectivePathLimitExclusive": 200},
         "focusedTestSha256": FOCUSED_TEST_SHA256,
         "r11Sha256": R11_SHA256,
         "sourceResultsSha256": frozen.SOURCE_RESULTS_SHA256,
         "reviewOrderSha256": frozen.REVIEW_ORDER_SHA256,
         "o3f14SummarySha256": frozen.O3F14_SUMMARY_SHA256,
-        "plannedPairCount": 978,
-        "complete978LexicalClassification": complete978,
+        "syntheticFocusedTest": {"pairCount": 978, "complete": synthetic978, "actualFrozenCorpusClassified": False},
+        "actualFrozen978LexicalClassification": actual_classification,
         "cohortCounts": {"HOLDOUT18": 18, "CURRENT_TAIL": 247, "FULL_TAIL": 713, "FULL978": 978},
         "commands": commands,
         "sourceImageBytesRead": False,
@@ -504,11 +642,11 @@ def main() -> int:
         rows, cases = frozen.synthetic_frozen_inputs()
         cohorts = frozen.partition(rows, cases)
         need([len(cohorts[key]) for key in ("holdout18", "currentTail247", "fullTail713", "ordered978")] == [18, 247, 713, 978], "Synthetic cohort partition failed")
-        result = {"schema": "argos_ocv03_o3f15l4_self_test_v1", "state": "PASS_O3F15L4_FRONT_RECONCILE_SELF_TEST", "runnerPath": str(RUNNER_PATH), "runnerSha256": sha256(RUNNER_PATH), "focusedTestSha256": FOCUSED_TEST_SHA256, "mutationsPerformed": False}
+        result = {"schema": "argos_ocv03_o3f15l4_self_test_v1", "state": "PASS_O3F15L4_FRONT_RECONCILE_SELF_TEST", "runnerPath": str(RUNNER_PATH), "runnerSha256": sha256(RUNNER_PATH), "focusedTestSha256": FOCUSED_TEST_SHA256, "syntheticCorpus": True, "actualFrozenCorpusClassified": False, "mutationsPerformed": False}
     elif args.stage == "PREFLIGHT":
         need(not any(supplied), "PREFLIGHT accepts no paths")
         context = preflight_context()
-        result = {"schema": "argos_ocv03_o3f15l4_preflight_v1", "state": "PASS_O3F15L4_FRONT_RECONCILE_PREFLIGHT", "runnerPath": str(RUNNER_PATH), "runnerSha256": sha256(RUNNER_PATH), "focusedTestSha256": FOCUSED_TEST_SHA256, "cohortCounts": {"HOLDOUT18": len(context["cohorts"]["holdout18"]), "CURRENT_TAIL": len(context["cohorts"]["currentTail247"]), "FULL_TAIL": len(context["cohorts"]["fullTail713"]), "FULL978": len(context["cohorts"]["ordered978"])}, "complete978LexicalClassification": len(context["plans"]) == 978, "mutationsPerformed": False}
+        result = {"schema": "argos_ocv03_o3f15l4_preflight_v1", "state": "PASS_O3F15L4_FRONT_RECONCILE_PREFLIGHT", "runnerPath": str(RUNNER_PATH), "runnerSha256": sha256(RUNNER_PATH), "focusedTestSha256": FOCUSED_TEST_SHA256, "cohortCounts": {"HOLDOUT18": len(context["cohorts"]["holdout18"]), "CURRENT_TAIL": len(context["cohorts"]["currentTail247"]), "FULL_TAIL": len(context["cohorts"]["fullTail713"]), "FULL978": len(context["cohorts"]["ordered978"])}, "actualFrozen978LexicalClassification": context["actualFrozen978LexicalClassification"], "mutationsPerformed": False}
     else:
         need(args.output_root, "--output-root is required")
         if args.stage == "GATE":

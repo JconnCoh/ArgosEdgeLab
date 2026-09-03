@@ -12,6 +12,7 @@ import json
 import os
 from pathlib import Path, PureWindowsPath
 import sys
+import tempfile
 import unittest
 from typing import Any
 
@@ -20,9 +21,9 @@ HERE = Path(__file__).resolve().parent
 RUNNER_PATH = HERE / "Run-O3F15L4FrontReconcile.py"
 
 
-def dependency_path(name: str) -> Path:
-    flat = HERE / name
-    repository = HERE.parent / "O3F8" / name
+def dependency_path(name: str, here: Path = HERE, repository_root: Path | None = None) -> Path:
+    flat = here / name
+    repository = (here.parent / "O3F8" if repository_root is None else repository_root) / name
     return flat if flat.is_file() else repository
 
 
@@ -66,7 +67,7 @@ def slot19_row() -> dict[str, Any]:
     return {"identity": SLOT19_IDENTITY, "safeId": "SLOT19", "bf": source(SLOT19_BF, 8001), "df": source(str(df), 8002)}
 
 
-def full978() -> list[dict[str, Any]]:
+def synthetic978() -> list[dict[str, Any]]:
     rows = [ordinary_row(i, i <= 265) for i in range(1, 979)]
     rows[265] = slot19_row()
     return rows
@@ -124,7 +125,7 @@ class FakeO3F14:
 class O3F15L4FocusedTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        rows = full978()
+        rows = synthetic978()
         original_path = L4.Path
         L4.Path = ForbiddenFilesystemPath
         try:
@@ -169,6 +170,24 @@ class O3F15L4FocusedTests(unittest.TestCase):
         self.assertEqual(L4.require_short_path(path_with_raw_length("Q:", 167), "alias")["effectivePathLength"], 199)
         with self.assertRaises(L4.L4AliasContractError):
             L4.require_short_path(path_with_raw_length("Q:", 168), "alias")
+        runner_hash = hashlib.sha256(RUNNER_PATH.read_bytes()).hexdigest().upper()
+        handoff = L4.validate_runner_stage_handoff(
+            r"C:\ProgramData\Argos\ProjectPortal\work\REQ-O3F15L4\payload\Run-O3F15L4FrontReconcile.py",
+            runner_hash,
+            r"D:\O3F15L4RT\Run-O3F15L4FrontReconcile.py",
+            runner_hash,
+        )
+        self.assertTrue(handoff["pathsDiffer"])
+        self.assertEqual(handoff["gate"]["stage"], "GATE")
+        self.assertEqual(handoff["run"]["rootLeaf"], "O3F15L4RT")
+        self.assertEqual(handoff["authorization"], "EXACT_BYTES_LOCATION_AGNOSTIC_GATE_TO_FLAT_D_RUN_STAGE")
+        with self.assertRaisesRegex(L4.L4AliasContractError, "SHA-256 mismatch"):
+            L4.validate_runner_stage_handoff(
+                r"C:\ProgramData\Argos\ProjectPortal\work\REQ-O3F15L4\payload\Run-O3F15L4FrontReconcile.py",
+                runner_hash,
+                r"D:\O3F15L4RT\Run-O3F15L4FrontReconcile.py",
+                "0" * 64,
+            )
         unsafe = copy.deepcopy(self.slot_plan)
         unsafe["slotRoot"] = path_with_raw_length("D:", 168)
         fake = FakeO3F14()
@@ -194,10 +213,25 @@ class O3F15L4FocusedTests(unittest.TestCase):
             self.assertTrue(evidence[key])
 
     def test_collision_wrong_mapping_missing_and_size_mismatch_never_yield(self) -> None:
+        preexisting = FakeO3F14(initial={"P:": r"D:\Preserved", "Q:": r"D:\Occupied"})
+        with self.assertRaises(L4.L4AliasContractError):
+            with L4.owned_case_alias(self.slot_plan, {}, preexisting, self.probe(self.slot_plan)):
+                self.fail("preexisting Q: yielded")
+        self.assertEqual(preexisting.actions, [])
+        self.assertEqual(preexisting.mappings, {"P:": r"D:\Preserved", "Q:": r"D:\Occupied"})
+
+        wrong = FakeO3F14(wrong_create_target=True)
+        wrong_evidence: dict[str, Any] = {}
+        with self.assertRaisesRegex(L4.L4AliasContractError, "target mismatch"):
+            with L4.owned_case_alias(self.slot_plan, wrong_evidence, wrong, self.probe(self.slot_plan)):
+                self.fail("wrong Q: target yielded")
+        self.assertFalse(wrong_evidence["afterCreateTargetMatched"])
+        self.assertEqual(wrong.actions[-1][0], ["Q:", "/D"])
+        self.assertNotIn("Q:", wrong.mappings)
+        self.assertEqual(wrong.mappings, {"P:": r"D:\Preserved"})
+
         scenarios = [
-            (FakeO3F14(initial={"Q:": r"D:\Occupied"}), self.probe(self.slot_plan)),
             (FakeO3F14(logical_collision=True), self.probe(self.slot_plan)),
-            (FakeO3F14(wrong_create_target=True), self.probe(self.slot_plan)),
             (FakeO3F14(), self.probe(self.slot_plan, missing=self.slot_plan["bf"]["aliasPath"])),
             (FakeO3F14(), self.probe(self.slot_plan, mismatch=self.slot_plan["df"]["aliasPath"])),
         ]
@@ -226,7 +260,7 @@ class O3F15L4FocusedTests(unittest.TestCase):
         self.assertEqual(cleanup.actions[-1][0], ["Q:", "/D"])
         self.assertIn("injected cleanup failure", evidence["cleanupError"])
 
-    def test_canonical_never_enters_filesystem_api_child_or_job(self) -> None:
+    def test_static_canonical_and_recovery_coverage_plus_flat_dependency_fixture(self) -> None:
         runner_text = RUNNER_PATH.read_text(encoding="utf-8")
         for forbidden in ("canonical.is_file", "canonical.stat", "canonical.resolve", "canonical.open", "samefile(", "sha256(canonical"):
             self.assertNotIn(forbidden, runner_text)
@@ -234,27 +268,58 @@ class O3F15L4FocusedTests(unittest.TestCase):
         self.assertEqual(len(inputs), 2)
         self.assertTrue(all("canonicalPath" not in row and PureWindowsPath(row["path"]).drive.upper() == "Q:" for row in inputs))
         self.assertNotIn(SLOT19_BF, json.dumps(inputs))
-        self.assertLess(runner_text.index("flat = HERE / name"), runner_text.index("repository = HERE.parent / \"O3F8\" / name"))
+        self.assertLess(runner_text.index("flat = here / name"), runner_text.index("repository = (here.parent / \"O3F8\""))
         self.assertEqual(L4.FOCUSED_TEST, RUNNER_PATH.with_name("Test-O3F15L4PathHolds.py"))
         self.assertEqual((str(L4.GATE_ROOT), str(L4.RUN_ROOT), str(L4.MIRROR_ROOT)), (r"D:\O3F15L4G", r"D:\O3F15L4C", r"D:\KLARFExport\_ArgosReview\F15L4S"))
         for required in ("frozen.__file__ = str(RUNNER_PATH)", "FOCUSED_TEST_SHA256", "PASS_O3F15L4_FOCUSED_IMAGE_FREE", "COMPLETE_O3F15L4_GATE", "runnerSha256"):
             self.assertIn(required, runner_text)
         for recovery in ("recovery_errors", "TimeoutExpired", "MANIFEST.json.partial", "recovery-log-errors", "R11 job path changed"):
             self.assertIn(recovery, runner_text)
+        with tempfile.TemporaryDirectory() as temporary:
+            fixture = Path(temporary)
+            flat = fixture / "flat"
+            repository = fixture / "repository"
+            flat.mkdir()
+            repository.mkdir()
+            flat_name = "FlatDependency.py"
+            fallback_name = "RepositoryDependency.py"
+            (flat / flat_name).write_bytes(b"flat-exact-bytes")
+            (repository / flat_name).write_bytes(b"repository-shadow")
+            (repository / fallback_name).write_bytes(b"repository-fallback")
+            self.assertEqual(L4.dependency_path(flat_name, flat, repository), flat / flat_name)
+            self.assertEqual(dependency_path(flat_name, flat, repository), flat / flat_name)
+            self.assertEqual(L4.dependency_path(fallback_name, flat, repository), repository / fallback_name)
+            self.assertEqual(dependency_path(fallback_name, flat, repository), repository / fallback_name)
         test_text = Path(__file__).read_text(encoding="utf-8")
-        self.assertLess(test_text.index("flat = HERE / name"), test_text.index("repository = HERE.parent / \"O3F8\" / name"))
+        self.assertLess(test_text.index("flat = here / name"), test_text.index("repository = (here.parent / \"O3F8\""))
         self.assertEqual(R11_PATH, (HERE / R11_PATH.name) if (HERE / R11_PATH.name).is_file() else HERE.parent / "O3F8" / R11_PATH.name)
         for envelope in ("PASS_O3F15L4_FRONT_RECONCILE_SELF_TEST", "PASS_O3F15L4_FRONT_RECONCILE_PREFLIGHT"):
             self.assertIn(envelope, runner_text)
         self.assertNotIn("return int(frozen.main())", runner_text)
 
-    def test_full978_complete_and_later_control_scheduled(self) -> None:
+    def test_synthetic978_complete_and_later_control_scheduled(self) -> None:
         self.assertEqual(len(self.plans), 978)
         self.assertEqual([plan["ordinal"] for plan in self.plans], list(range(1, 979)))
         self.assertEqual(len({plan["identity"] for plan in self.plans}), 978)
         self.assertEqual(self.plans[265]["identity"], SLOT19_IDENTITY)
         self.assertEqual(self.plans[266]["identity"], r"BackSide_BowComp\Lot0267\Scan0267\Slot18|FRONT")
         self.assertEqual(self.plans[266]["ordinal"], 267)
+        evidence = L4.frozen_classification_evidence(self.plans, corpus="SYNTHETIC_978")
+        self.assertEqual((evidence["corpus"], evidence["sourceLeafCount"], evidence["uniqueOrderedSourceLeafCount"]), ("SYNTHETIC_978", 1956, 1956))
+        leaves = [leaf for class_name in ("DIRECT_SAFE", "VERIFIED_SHORT_ALIAS_REQUIRED", "DIRECT_USE_HARD_STOP_ALIAS_ONLY") for leaf in evidence["sourceLeavesByClass"][class_name]]
+        keys = {(leaf["ordinal"], leaf["identity"], leaf["channel"]) for leaf in leaves}
+        self.assertEqual((len(leaves), len(keys)), (1956, 1956))
+        for class_name, expected_count in evidence["sourceLeafClassificationCounts"].items():
+            class_leaves = evidence["sourceLeavesByClass"][class_name]
+            self.assertEqual(len(class_leaves), expected_count)
+            for leaf in class_leaves:
+                self.assertEqual(leaf["class"], class_name)
+                self.assertEqual(leaf["effectiveLength"], leaf["rawLength"] + 32)
+                if class_name != "DIRECT_SAFE":
+                    self.assertLess(leaf["aliasPlannedEffectiveLength"], 200)
+                    self.assertEqual(leaf["aliasPlannedEffectiveLength"], leaf["aliasPlannedRawLength"] + 32)
+        ordered = sorted(leaves, key=lambda leaf: (leaf["ordinal"], 0 if leaf["channel"] == "BF" else 1))
+        self.assertEqual([(leaf["ordinal"], leaf["channel"]) for leaf in ordered], [(ordinal, channel) for ordinal in range(1, 979) for channel in ("BF", "DF")])
 
     def test_r11_hash_mismatch_is_before_decode(self) -> None:
         data = R11_PATH.read_bytes()
@@ -274,7 +339,24 @@ def main() -> int:
     suite = unittest.defaultTestLoader.loadTestsFromTestCase(O3F15L4FocusedTests)
     captured = io.StringIO()
     result = unittest.TextTestRunner(stream=captured if args.output else sys.stderr, verbosity=2).run(suite)
-    summary = {"schema": "argos_ocv03_o3f15l4_focused_image_free_test_v1", "state": "PASS_O3F15L4_FOCUSED_IMAGE_FREE" if result.wasSuccessful() else "FAIL_O3F15L4_FOCUSED_IMAGE_FREE", "testsRun": result.testsRun, "failures": len(result.failures), "errors": len(result.errors), "plannedPairCount": 978, "complete978LexicalClassification": result.wasSuccessful(), "laterControlScheduled": result.wasSuccessful(), "sourceImageBytesRead": False, "sourceMutation": False, "childProcessLaunched": False, "substExecuted": False}
+    summary = {
+        "schema": "argos_ocv03_o3f15l4_focused_image_free_test_v1",
+        "state": "PASS_O3F15L4_FOCUSED_IMAGE_FREE" if result.wasSuccessful() else "FAIL_O3F15L4_FOCUSED_IMAGE_FREE",
+        "testsRun": result.testsRun,
+        "failures": len(result.failures),
+        "errors": len(result.errors),
+        "syntheticPlannedPairCount": 978,
+        "synthetic978LexicalClassification": result.wasSuccessful(),
+        "actualFrozenCorpusClassified": False,
+        "actualFrozenClassificationCounts": None,
+        "executedCoverage": ["SLOT19_AND_PATH_BOUNDARIES", "STAGE_PATH_HANDOFF_MATCH_AND_HASH_MISMATCH", "OWNED_Q_WRONG_TARGET_CLEANUP", "PREEXISTING_Q_NON_REMOVAL", "ALIAS_METADATA_AND_CLEANUP", "FLAT_DEPENDENCY_SELECTION_FIXTURE"],
+        "staticSourceCoverage": ["CANONICAL_LEAF_EXCLUSION", "RUN_ONE_TIMEOUT_CAPTURE", "RUN_ONE_CLEANUP_AFTER_CHILD", "RUN_ONE_STDOUT_STDERR_PRESERVATION", "RUN_ONE_FINAL_AND_PARTIAL_MANIFEST_SALVAGE", "RUN_ONE_SAFE_JOB_PATH_IDENTITY", "RUNNER_PROVENANCE_BINDINGS"],
+        "laterControlScheduled": result.wasSuccessful(),
+        "sourceImageBytesRead": False,
+        "sourceMutation": False,
+        "childProcessLaunched": False,
+        "substExecuted": False,
+    }
     if args.output:
         output = Path(args.output)
         partial = output.with_name(output.name + ".partial")
