@@ -1,0 +1,34 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "createdUtc": "2026-09-03T00:35:00Z",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R13B/Invoke-R13BAlphabetHarvest.ps1",
+      "generated": "work/OPENCV_SCRIBE_R14/Invoke-R14P.ps1",
+      "rootRules": [
+        {"sourceRoot":"D:","generatedRoot":"D:","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\KLARFExport","generatedRoot":"D:\\KLARFExport","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"X:","generatedRoot":"X:","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R13B/Test-R13BEndpoint.ps1",
+      "generated": "work/OPENCV_SCRIBE_R14/Test-R14PEndpoint.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\Python314","generatedRoot":"C:\\Python314","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\R13BG_","generatedRoot":"C:\\R14PG_","disposition":"REPLACED"},
+        {"sourceRoot":"X:","generatedRoot":"X:","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R13B/Build-R13BRequest.ps1",
+      "generated": "work/OPENCV_SCRIBE_R14/Build-R14PRequest.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\R13BR","generatedRoot":"C:\\R14PR","disposition":"REPLACED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    }
+  ]
+}

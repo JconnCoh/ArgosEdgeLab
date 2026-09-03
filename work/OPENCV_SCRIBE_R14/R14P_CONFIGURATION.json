@@ -1,0 +1,64 @@
+{
+  "schema": "argos_opencv_scribe_alphabet_crop_configuration_v1",
+  "revision": "OCV02_R14P_ALPHABET_CROP_20260902A",
+  "state": "FROZEN_REVIEW_ONLY",
+  "providerId": "ARGOS_OPENCV_SCRIBE_ALPHABET_CROP_R14P",
+  "providerSourceName": "ArgosOpenCvScribeAlphabetCropR14.py",
+  "packagedProviderName": "R14P.py",
+  "dependencies": {
+    "r11": {
+      "packagedName": "R11.py",
+      "sha256": "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9"
+    },
+    "r12a": {
+      "packagedName": "R12A.py",
+      "sha256": "F5EB8FB3281D7D55CDD9FA4A3530A32BD33BBA3B8DB69E0A247C20935F6AD429"
+    },
+    "r12b": {
+      "packagedName": "R12B.py",
+      "sha256": "D670CFCE64BF5FDF5307E69ED69A05CB7B404A78B521AB889C7F35044D666FDC"
+    }
+  },
+  "automaticLocalization": {
+    "maximumWorkingDimension": 1600,
+    "maximumCandidates": 6,
+    "orientationStepDegrees": 15,
+    "developmentMaximumRegions": 6,
+    "developmentMinimumLocalizationScore": 0.0,
+    "developmentMinimumBandWidthPixels": 500,
+    "developmentOcrRegionWidthPixels": 1600,
+    "developmentOcrRegionHeightPixels": 400,
+    "developmentMinimumObservedHeightRatio": 0.9,
+    "developmentMinimumObservedWidthRatio": 0.9,
+    "developmentMaximumObservedWidthRatio": 1.1,
+    "fixedImageRectangle": false
+  },
+  "blobGrid": {
+    "minimumDotSize": 2.0,
+    "maximumDotSize": 4.5,
+    "maximumPerimeterRegionsEvaluated": 6,
+    "directions": ["FORWARD", "REVERSE_180"],
+    "selection": "MAX_NON_TARGET_CANONICAL_MATCH_THEN_R12B_CHECKSUM_SELECTION_AND_MEAN_SCORE",
+    "truthUse": "REVIEW_ONLY_GRID_SELECTION_FOR_OPERATOR_CONFIRMED_REFERENCE_HARVEST_NOT_IDENTITY_ACCEPTANCE"
+  },
+  "cellOutput": {
+    "width": 96,
+    "height": 230,
+    "channels": 3,
+    "normalization": "CENTER_CROP_OR_ZERO_PAD_NO_RESAMPLING_THEN_BITWISE_INVERT",
+    "sourcePolarity": "WHITE_DOTS_ON_BLACK_RESIDUAL_BLOB_CANVAS",
+    "outputPolarity": "BLACK_DOTS_ON_WHITE_R11_REFERENCE_RASTER",
+    "preserveSourceYParity": true
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "automaticReferenceAdmissionAllowed": false,
+    "trainingAuthorized": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "mayClearHolds": false
+  }
+}

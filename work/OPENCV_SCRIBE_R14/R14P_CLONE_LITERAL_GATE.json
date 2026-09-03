@@ -1,0 +1,70 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-03T00:35:20.2711587Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R14\\R14P_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "2680320838D1010F38D14B8ABC540D35D226B0E12DF5BFB78CE05C086D55712B",
+    "pairCount":  3,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R13B/Invoke-R13BAlphabetHarvest.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R14/Invoke-R14P.ps1",
+                      "sourceSha256":  "4E7A7BFAE134FF8867F9D606ECB9B7BB32B51885D2594A3D0712FD150B4FBAE2",
+                      "generatedSha256":  "65BEC4B588BD7E35C597B133087E7758432A8763BBE7F424CDD80B45B028D4D2",
+                      "sourceRoots":  [
+                                          "D:",
+                                          "D:\\A2",
+                                          "D:\\KLARFExport",
+                                          "X:"
+                                      ],
+                      "generatedRoots":  [
+                                             "D:",
+                                             "D:\\A2",
+                                             "D:\\KLARFExport",
+                                             "X:"
+                                         ],
+                      "ruleCount":  4
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R13B/Test-R13BEndpoint.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R14/Test-R14PEndpoint.ps1",
+                      "sourceSha256":  "E141C3F63319308F36D7D064B8A5104762840F57DFF70FBF4AC877FF36CBEED8",
+                      "generatedSha256":  "9E6CA54756BDED3C10470647F2C93962E5057E0FB9B89A0339A9471EDA82B12F",
+                      "sourceRoots":  [
+                                          "C:\\Python314",
+                                          "C:\\R13BG_",
+                                          "X:"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\Python314",
+                                             "C:\\R14PG_",
+                                             "X:"
+                                         ],
+                      "ruleCount":  3
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R13B/Build-R13BRequest.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R14/Build-R14PRequest.ps1",
+                      "sourceSha256":  "A625EA1C602083471717507D8D5E3B25F4C470DE6FEDC781940DE6A156912B62",
+                      "generatedSha256":  "28C09C40716413BD4B2237A0C522335E25F653B57215CEC53CEFB61A9A84A7C3",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "C:\\R13BR",
+                                          "D:\\A2"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "C:\\R14PR",
+                                             "D:\\A2"
+                                         ],
+                      "ruleCount":  3
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

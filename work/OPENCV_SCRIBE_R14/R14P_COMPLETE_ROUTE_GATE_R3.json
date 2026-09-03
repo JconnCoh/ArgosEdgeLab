@@ -1,0 +1,37 @@
+{
+  "schema": "argos_opencv_scribe_r14p_complete_route_gate_v1",
+  "checkedUtc": "2026-09-03T00:32:01Z",
+  "state": "PASS_R14P_COMPLETE_ROUTE_GATE",
+  "classification": "PENDING_GATE",
+  "requestId": "REQ_20260902T204408092Z_R14P",
+  "inheritedQualifiedRoute": {
+    "path": "work/OPENCV_SCRIBE_R13B/R13B_COMPLETE_ROUTE_GATE_R3.json",
+    "sha256": "235034A7B75669F6E8DD6731EA407932901B4CCD46679E48C21A5BDB6250A47F",
+    "state": "PASS_R13B_COMPLETE_ROUTE_GATE",
+    "endpointAndRelayImplementationUnchanged": true
+  },
+  "queueSafety": {
+    "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+    "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+    "state": "PASS_JBOD_PORTAL_QUEUE_RECOVERY_V2_1_REHEARSAL"
+  },
+  "pathBudget": {
+    "state": "PASS_PATH_BUDGET",
+    "candidateCount": 19,
+    "reservedSuffixCharacters": 32,
+    "maximumEffectiveLength": 193,
+    "hardStopEffectiveLength": 230,
+    "maximumComponentLength": 55
+  },
+  "roots": {
+    "work": "D:\\A2\\w\\ocv\\R14P",
+    "output": "D:\\A2\\o\\ocv\\R14P",
+    "bundle": "D:\\A2\\o\\ocv\\R14P_RETURN.zip",
+    "laptopExtraction": "C:\\R14PR"
+  },
+  "automaticRetryAllowed": false,
+  "sourceMutationAllowed": false,
+  "providerActivationAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

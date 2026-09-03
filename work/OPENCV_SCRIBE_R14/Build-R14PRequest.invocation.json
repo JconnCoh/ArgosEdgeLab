@@ -1,0 +1,79 @@
+{
+  "schema": "argos_r14p_build_invocation_v1",
+  "requestId": "REQ_20260902T204408092Z_R14P",
+  "requiredBranch": "codex/opencv-scribe-deciphering",
+  "builderSha256": "28C09C40716413BD4B2237A0C522335E25F653B57215CEC53CEFB61A9A84A7C3",
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "providerActivationAllowed": false,
+    "maximumPublications": 1,
+    "retryAuthorized": false
+  },
+  "requestContract": {
+    "path": "work/OPENCV_SCRIBE_R14/R14P_REQUEST_CONTRACT.json",
+    "sha256": "0A2BBA88D340C39014139EB921B0C1C0D423F76C6BF7FD2698C6AA689CA13550"
+  },
+  "maintenanceDefinition": {
+    "path": "work/OPENCV_SCRIBE_R14/R14P_MAINTENANCE_DEFINITION.json",
+    "sha256": "5D239F7C489A549EAE0C075FBA34775C59962752BAE11FFEB9FA53E768810B91"
+  },
+  "entryPoint": "payload/Invoke-R14P.ps1",
+  "payloads": [
+    {"sourcePath": "work/OPENCV_SCRIBE_R14/Invoke-R14P.ps1", "packagePath": "payload/Invoke-R14P.ps1", "sha256": "65BEC4B588BD7E35C597B133087E7758432A8763BBE7F424CDD80B45B028D4D2"},
+    {"sourcePath": "work/OPENCV_SCRIBE_R14/ArgosOpenCvScribeAlphabetCropR14.py", "packagePath": "payload/R14P.py", "sha256": "E87230012CB4AEB2D5BDACBB46162270244BFAE4FBB64CDAA47C78C5B1948DD5"},
+    {"sourcePath": "work/OPENCV_SCRIBE_R11A/ArgosOpenCvScribeV1R11.py", "packagePath": "payload/R11.py", "sha256": "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9"},
+    {"sourcePath": "work/OPENCV_SCRIBE_R12A/Run-ArgosOpenCvScribeR12BlobDiagnostic.py", "packagePath": "payload/R12A.py", "sha256": "F5EB8FB3281D7D55CDD9FA4A3530A32BD33BBA3B8DB69E0A247C20935F6AD429"},
+    {"sourcePath": "work/OPENCV_SCRIBE_R12B/Run-ArgosOpenCvScribeR12BBlobTopology.py", "packagePath": "payload/R12B.py", "sha256": "D670CFCE64BF5FDF5307E69ED69A05CB7B404A78B521AB889C7F35044D666FDC"},
+    {"sourcePath": "work/OPENCV_SCRIBE_R14/R14P_CONFIGURATION.json", "packagePath": "payload/CFG.json", "sha256": "F4D8C7CC631F351D4FEF680C30AF228942E9B9E2CCC0ABE458CB186A612EE601"},
+    {"sourcePath": "work/OPENCV_SCRIBE_R14/R14P_LIVE_INVOCATION.json", "packagePath": "payload/LIVE.json", "sha256": "628BE7A7E96B8924D81D4A312243F3FEB622B437AC58696FE283FE2F2E3CB5E8"}
+  ],
+  "requiredGates": [
+    {"path": "work/OPENCV_SCRIBE_R14/R14P_ENDPOINT_REHEARSAL_GATE.json", "sha256": "9675E7C52C1D07969AA62439F3F069DE63C123952D8772F4D48F21F53CDAB11B", "stateProperty": "state", "requiredState": "PASS_R14P_ENDPOINT_REHEARSAL"},
+    {"path": "work/OPENCV_SCRIBE_R14/R14P_LOCAL_REAL_IMAGE_GATE.json", "sha256": "32916BE25A2162E44AD9DA2C1396FBD3C49FB31EB7BF212846EEEBCC4BE7660A", "stateProperty": "state", "requiredState": "PASS_R14P_LOCAL_REAL_IMAGE_REPLAY_HOLD_SAFE"},
+    {"path": "work/OPENCV_SCRIBE_R14/R14P_COMPLETE_ROUTE_GATE_R3.json", "sha256": "CFFD7C0EB8EE9953D938B10F8461A50C157BC06013237486F1E1257B2C9C8708", "stateProperty": "state", "requiredState": "PASS_R14P_COMPLETE_ROUTE_GATE"},
+    {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json", "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D", "stateProperty": "state", "requiredState": "PASS_JBOD_PORTAL_QUEUE_RECOVERY_V2_1_REHEARSAL"}
+  ],
+  "signing": {
+    "identityPath": "work/PROJECT_PORTAL_REVIEW_ONLY/state/LAPTOP_SIGNING_IDENTITY.json",
+    "identitySha256": "3FD8164D1869375156FB7566D206FEAB97AE8A9E7D377B0AD4E03739ED697289",
+    "publicCertificatePath": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/ARGOS_PROJECT_PORTAL_LAPTOP_SIGNER_PUBLIC.cer",
+    "publicCertificateSha256": "2B434D0CF6A0D6D69AAE3D280032EFF00807D423CA3B3D7F2EFC1C6BB628BFFF",
+    "packageTesterPath": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalPackage.ps1",
+    "packageTesterSha256": "6CA21D7DE97EDE88F2C41F91D5B7801C688982C8C5A422987EB9528E1E9A084B",
+    "expectedThumbprint": "C82181052919C475CF888F49427C1B55AE65DC12"
+  },
+  "outputs": {
+    "signedRoot": "work/OPENCV_SCRIBE_R14/signed",
+    "finalRoot": "work/OPENCV_SCRIBE_R14/final",
+    "finalGatePath": "work/OPENCV_SCRIBE_R14/R14P_FINAL_PACKAGE_GATE.json"
+  },
+  "pathPlan": {
+    "remoteFinalLeaves": [
+      "U:\\ProjectPortalRO\\requests\\REQ_20260902T204408092Z_R14P.ready.zip.upload",
+      "U:\\ProjectPortalRO\\requests\\REQ_20260902T204408092Z_R14P.ready.zip",
+      "U:\\ProjectPortalRO\\requests\\processed\\REQ_20260902T204408092Z_R14P.ready.zip",
+      "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\pending\\REQ_20260902T204408092Z_R14P.ready\\payload\\Invoke-R14P.ps1",
+      "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\processed\\failed\\REQ_20260902T204408092Z_R14P.ready\\PORTAL_REQUEST_MANIFEST.json",
+      "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\response_quarantine\\R_0123456789AB_20260902235959999_a1b2c3d4.ready.partial\\PORTAL_RESPONSE_MANIFEST.json",
+      "D:\\A2\\w\\ocv\\R14P.partial\\refs\\glyphs_v5_confirmed_20260806\\028_62630_456_SLOT25_P04_S.png",
+      "D:\\A2\\w\\ocv\\R14P\\LIVE.json",
+      "D:\\A2\\w\\ocv\\R14P\\refs\\PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+      "D:\\A2\\w\\ocv\\R14P\\refs\\glyphs_v5_confirmed_20260806\\028_62630_456_SLOT25_P04_S.png",
+      "D:\\A2\\w\\ocv\\R14P\\jobs\\JQ20V.json",
+      "D:\\A2\\w\\ocv\\R14P\\failed\\JQ20V\\committed\\targets\\P05_Q.png",
+      "D:\\A2\\w\\ocv\\R14P\\failed\\JQ20V\\partial\\targets\\P05_Q.png",
+      "D:\\A2\\o\\ocv\\R14P.partial\\JQ20V.partial\\targets\\P05_Q.png",
+      "D:\\A2\\o\\ocv\\R14P\\JQ20V\\targets\\P05_Q.png",
+      "D:\\A2\\o\\ocv\\R14P_RETURN.zip.partial",
+      "D:\\A2\\o\\ocv\\R14P_RETURN.zip",
+      "C:\\R14PR\\R14P_RETURN.zip",
+      "C:\\R14PR\\b\\JQ20V\\targets\\P05_Q.png"
+    ]
+  },
+  "expiresAfterHours": 24
+}
