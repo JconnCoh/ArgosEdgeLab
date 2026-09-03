@@ -10443,3 +10443,34 @@ training/XML/production are prohibited.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4D2_SIGNED_PORTAL_READY_CHECKPOINT_20260903.md`,
 SHA-256 `A538358E77AE8B1C3BD6B6AA4ABE550F96859E7824899807CDA8488BAA374B95`.
+
+## OCV-03 O3F15L4D2 published / response-finder capacity hold — 2026-09-03
+
+Disposition: `PENDING_GATE`
+
+Request `REQ_20260903T125334383Z_CA2B943D4CB0` was published exactly once
+through the qualified persistent-`U:` Project Portal route. Publication gate
+`D3C9C088A533D81354332C9F0E2906A3A0BC62743666C2A57EDB607AC2341BD4`
+proves one 142,688-byte create-new upload of signed ZIP
+`EF541A5803EF1319D9850A97E87239B02A7406081E3DE44A7874A749240B2EC5`,
+with no overwrite, retry, mapping change, or second publication.
+
+The first and only unchanged read-only finder invocation stopped because the
+retained response cohort exceeded its frozen 512-ZIP maximum. This is a local
+response-discovery capacity hold; no signed response has been collected, and
+no JBOD or detector outcome is inferred. Do not rerun the frozen finder or
+republish the request. A fresh bounded read-only finder revision requires
+explicit infrastructure authority and must retain exact request-manifest
+identity matching, the publication-gate hash, the qualified share, and the
+no-retry rule.
+
+All 184 frontside holds and twelve PatternedFront holds remain, including
+Slot02 ambiguity and rare-hotspot Slot16. Full frontside remains blocked before
+scribe, combined/unified outputs, and fiducial/alignment. Review-only remains
+true; RustDesk/operator input, image reads, training, XML, production, provider
+activation, selector/threshold changes, and automatic hold clearance remain
+prohibited.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4D2_PUBLISHED_RESPONSE_FINDER_CAPACITY_HOLD_CHECKPOINT_20260903.md`,
+SHA-256 `854A2341FB1D314446112A6BC3EDE775F8E7988A5224BB924D4086D1CABE72DE`.

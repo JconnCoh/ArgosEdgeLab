@@ -11288,3 +11288,25 @@ than rerunning it.
   detector bytes remain unchanged; no publication, portal/JBOD contact, image
   read, task/process action, provider change, selector change, or hold change
   occurred.
+
+## 2026-09-03 — Freeze a response-discovery bound that covers the live retained cohort
+
+- Failure signature: after O3F15L4D2 was published exactly once, its first and
+  only unchanged read-only response-finder invocation stopped before inspecting
+  response manifests because `U:\ProjectPortalRO\responses` contained more than
+  the frozen maximum of 512 `*.ready.zip` candidates.
+- Cause: the finder correctly rejected an unexpectedly larger retained response
+  cohort, but its prepublication bound was frozen without proving that the live
+  response-root cardinality remained at or below 512 through publication.
+- Mandatory preflight: before freezing a future response finder, obtain a
+  bounded metadata-only count from the qualified persistent response root and
+  set a mechanically enforced maximum that covers that observed cohort plus a
+  stated arrival reserve. Keep exact request-manifest identity matching; never
+  substitute filename or timestamp selection, and never read source images.
+- Recovery: do not retry the frozen O3F15L4D2 finder and do not republish its
+  request. Preserve the successful publication gate and record this as a local
+  response-discovery capability gap, not a detector or JBOD execution failure.
+  A fresh bounded read-only finder revision requires explicit infrastructure
+  authority; it must change only the cohort-capacity handling and retain the
+  same request ID, publish-gate hash, qualified share, no-retry rule, and exact
+  signed response identity requirements.

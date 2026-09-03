@@ -1161,3 +1161,11 @@ task from changing which revision, UI, evidence, or next action is active.
 - Publisher: compatibility-only P2 `AF37914CE37F3A5E42D8BCF59E4E71B94CC6341A6C23B3188E35AB2C13054145`; preflight proves exact persistent U mapping, queue NEW, and zero pending.
 - Exact next action: commit/push the signed-ready state, publish exactly once through Project Portal, and collect only the matching signed terminal response. No retry or RustDesk/operator input.
 - Authority: sole live child is metadata-only `D:/AFCV1/rt/python.exe -I -B Run-O3F15L4FrontReconcile.py PREFLIGHT`; full 978 frontside remains blocked pending signed complete 978/1,956 evidence; all 184/12 holds, Slot02, Slot16, later order, and review-only/training/XML/production boundaries remain.
+
+## 2026-09-03 — OCV-03 O3F15L4D2 published / response-finder capacity hold
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4D2_PUBLISHED_RESPONSE_FINDER_CAPACITY_HOLD_CHECKPOINT_20260903.md`
+- SHA-256: `854A2341FB1D314446112A6BC3EDE775F8E7988A5224BB924D4086D1CABE72DE`
+- Publication: request `REQ_20260903T125334383Z_CA2B943D4CB0`, signed ZIP `EF541A5803EF1319D9850A97E87239B02A7406081E3DE44A7874A749240B2EC5`, 142,688 bytes, published exactly once; gate `D3C9C088A533D81354332C9F0E2906A3A0BC62743666C2A57EDB607AC2341BD4` proves no overwrite or retry.
+- Blocker: the first and only unchanged read-only finder invocation stopped because the response cohort exceeded its frozen 512-ZIP maximum. No matching response was collected, and no JBOD or detector outcome is inferred.
+- Exact next action: do not rerun the frozen finder or republish. Resolve only the bounded read-only finder-capacity gap under explicit infrastructure authority, then collect only the exact matching signed response. Preserve all holds, phase order, and review-only boundaries.
