@@ -1,0 +1,78 @@
+{
+  "schema": "argos_ocv03_o3f15l3_workflow_review_path_gate_v1",
+  "createdUtc": "2026-09-03T09:45:00Z",
+  "state": "PASS_O3F15L3_WORKFLOW_REVIEW_PATH_CLASSIFICATION",
+  "policy": {
+    "path": "work/ARGOS_PATH_LENGTH_SAFETY.md",
+    "sha256": "BEED1B1F76EEA75E1DDEC102CF1C9ABD7F72BFAC816CAF6D15925700C428ED01"
+  },
+  "validator": {
+    "path": "utilities/Confirm-ArgosPathBudget.ps1",
+    "sha256": "3A4820E81F25CEA9AB8EB5BE9E60B6324915DFC260132145CB8FB02970360835"
+  },
+  "limits": {
+    "suffixReserve": 32,
+    "warningEffectiveLength": 200,
+    "hardStopEffectiveLength": 230,
+    "maximumComponentLength": 80
+  },
+  "failedCanonical": {
+    "rawLength": 207,
+    "effectiveLength": 239,
+    "maximumComponentLength": 72,
+    "disposition": "HARD_STOP_FOR_DIRECT_USE_VERIFIED_SHORT_ALIAS_REQUIRED",
+    "directUseAllowed": false,
+    "pairHoldRequired": false,
+    "hardStopRelaxedOrBypassed": false,
+    "canonicalFilesystemTouchAllowed": false
+  },
+  "laterConsumerAlias": {
+    "rawLength": 114,
+    "effectiveLength": 146,
+    "maximumComponentLength": 72,
+    "disposition": "PASS_PATH_BUDGET",
+    "soleChildInput": true,
+    "canonicalHardStopStillForbidsDirectUse": true,
+    "existingO3F14SamefileCanonicalVerificationAllowed": false,
+    "requiredVerification": "pre-gated slot root plus exact normalized subst mapping plus exact lexical relative suffix plus alias-only is_file/stat/hash"
+  },
+  "boundarySemantics": {
+    "directSafe": "effective length less than 200",
+    "verifiedShortAliasRequired": "effective length 200 through 229",
+    "directUseHardStop": "effective length 230 or greater",
+    "aliasMitigationAtOrAbove230": "allowed only when canonical remains lexical provenance and every filesystem/process access uses a separately pre-gated alias"
+  },
+  "reviewEvidenceOutputs": {
+    "checkedUtc": "2026-09-03T09:40:51.5253636Z",
+    "candidateCount": 8,
+    "maximumRawLength": 135,
+    "maximumEffectiveLength": 167,
+    "maximumComponentLength": 46,
+    "state": "PASS_PATH_BUDGET"
+  },
+  "futureLocalDraftOutputs": {
+    "checkedUtc": "2026-09-03T09:43:22.3074647Z",
+    "candidates": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3F15L4/Run-O3F15L4FrontReconcile.py",
+        "rawLength": 110,
+        "effectiveLength": 142,
+        "maximumComponentLength": 28,
+        "disposition": "PASS_PATH_BUDGET"
+      },
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3F15L4/Test-O3F15L4PathHolds.py",
+        "rawLength": 106,
+        "effectiveLength": 138,
+        "maximumComponentLength": 25,
+        "disposition": "PASS_PATH_BUDGET"
+      }
+    ]
+  },
+  "metadataOnly": true,
+  "fileContentReadByPathValidator": false,
+  "targetExecuted": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

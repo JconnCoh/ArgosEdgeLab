@@ -1,0 +1,126 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-03T09:48:00Z",
+  "incidentId": "O3F15L2_RUNNER_PREFLIGHT_DIAGNOSTIC_GAP_20260903",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 2,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": true,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3F15/O3F15L1_LOCAL_REHEARSAL_FAILURE.json",
+        "sha256": "89288A4C0C1B0343613007EF732F8C7A7681D49AD8EDD88AC59708CC6A52EBC5",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      },
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3F15L2/O3F15L2_SIGNED_TERMINAL_FAILURE_GATE.json",
+        "sha256": "FF012FF2EC5B668A776AFB921A5F14AD707636388E8C254B14E70B39E738BB79",
+        "state": "FAILED"
+      },
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3F15L3/O3F15L3_FAIL_CLASS.json",
+        "sha256": "657ACE8E03F4BB24B42D3B08F1B25DE17F17FFCCC11C6F2F08EE4AE7B7598DC2",
+        "state": "FAILED"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L3/O3F15L3_POSTFAIL_OBSERVATION.json",
+      "sha256": "E80112B31B8DD36FD1ABCB461CA5CE9FD3131F95F6EF4B8F4104511C526B0E2C"
+    },
+    "workflowReviewClearance": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L3/O3F15L3_STOP_LOSS_REVIEW.json",
+      "sha256": "9B68606B1B0D06B7FE28072221D1E87BA31D9479CF1AE0F26AA269C4F23E94DE"
+    }
+  },
+  "route": {
+    "type": "LOCAL_REPOSITORY_CONTRACT_REPAIR",
+    "jobClass": "LOCAL_CONTRACT_TEST",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "", "sha256": ""},
+    "installedConfigEvidence": {"path": "", "sha256": ""},
+    "capabilityEvidence": {"path": "", "sha256": ""},
+    "qualifiedEndpointGate": {"path": "", "sha256": ""},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L3/O3F15L3_POSTFAIL_OBSERVATION.json",
+      "sha256": "E80112B31B8DD36FD1ABCB461CA5CE9FD3131F95F6EF4B8F4104511C526B0E2C"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "validatorSemanticNote": "endpointMutationNecessary is the recovery-intent validator's required MUTATE assertion; this intent authorizes only a local repository draft correction and no installed endpoint mutation.",
+    "exactChange": "Create one fresh O3F15L4 local draft runner and focused test. Treat canonicalPath as lexical provenance only: remove canonical is_file/stat and never call resolve, hash, open, samefile, or any filesystem API on a direct-use-unsafe canonical leaf. Classify effective length below 200 as direct-safe, 200 through 229 as verified-alias-required, and 230 or greater as direct-use hard stop with verified-alias-only access. Pre-gate the slot root and alias below 200. Implement an O3F15-owned Q: context using the frozen O3F14 low-level mapping/query/create/remove primitives, exact normalized mapping and lexical suffix verification, and alias-only is_file/stat. Do not reuse O3F14 owned_case_alias or modify frozen O3F14/R11. R11 receives, stats, hashes, and decodes aliasPath only. Do not add a source-path hold or physical staging copy for the signed Slot19 row.",
+    "detectorOrProviderAlgorithmChangeAllowed": false,
+    "numericThresholdChangeAllowed": false,
+    "selectorChangeAllowed": false,
+    "canonicalDirectUseRelaxationAllowed": false,
+    "aliasBudgetRelaxationAllowed": false,
+    "canonicalFilesystemTouchAllowed": false,
+    "o3f14SourceChangeAllowed": false,
+    "r11SourceChangeAllowed": false,
+    "o3f15OwnedAliasContextRequired": true,
+    "o3f14OwnedCaseAliasReuseAllowed": false,
+    "physicalStagingCopyAllowed": false,
+    "sourcePathHoldForAliasableRowAllowed": false
+  },
+  "scope": {
+    "freshRevision": "O3F15L4",
+    "newNamespace": "work/OPENCV_EDGE_NOTCH_O3F15L4",
+    "maximumLocalImplementationAttempts": 1,
+    "maximumLocalDraftSourceAndTestFiles": 2,
+    "localSyntheticOrFileBackedTestsAllowed": true,
+    "complete978DirectUseClassificationGateRequiredBeforeBuild": true,
+    "maximumLocalPackageBuilds": 0,
+    "maximumSignatures": 0,
+    "maximumPortalPublications": 0,
+    "liveRequestAuthorized": false,
+    "successorExecutionAuthorized": false,
+    "sourceImageReadAllowed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "taskOrProcessActionAllowed": false,
+    "providerActivationAllowed": false,
+    "requestRetryAuthorized": false,
+    "rustDeskAllowed": false,
+    "operatorInputAllowed": false,
+    "allLaterLiveWorkRoute": "RECORDED_SIGNED_PROJECT_PORTAL"
+  },
+  "preservedHolds": {
+    "fullFrontsideHoldCount": 184,
+    "currentPatternedFrontHoldCount": 12,
+    "slot02MultipleCandidateAmbiguity": true,
+    "rareHotspotSlot16": true,
+    "allBacksideAndLaterPrerequisites": true,
+    "automaticHoldClearanceAllowed": false
+  },
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

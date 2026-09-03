@@ -1,0 +1,128 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-09-03T09:47:00Z",
+  "state": "PASS_O3F15L3_STOP_LOSS_REVIEW_ONE_LOCAL_DRAFT_ATTEMPT",
+  "incidentId": "O3F15L2_RUNNER_PREFLIGHT_DIAGNOSTIC_GAP_20260903",
+  "reviewMode": "BOUNDED_LOCAL_READ_ONLY",
+  "signedPremiseFailureCount": 2,
+  "localPremiseFailureCount": 1,
+  "failureEvidence": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L2/O3F15L2_SIGNED_TERMINAL_FAILURE_GATE.json",
+      "sha256": "FF012FF2EC5B668A776AFB921A5F14AD707636388E8C254B14E70B39E738BB79"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L3/O3F15L3_FAIL_CLASS.json",
+      "sha256": "657ACE8E03F4BB24B42D3B08F1B25DE17F17FFCCC11C6F2F08EE4AE7B7598DC2"
+    }
+  ],
+  "postFailureObservation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3F15L3/O3F15L3_POSTFAIL_OBSERVATION.json",
+    "sha256": "E80112B31B8DD36FD1ABCB461CA5CE9FD3131F95F6EF4B8F4104511C526B0E2C"
+  },
+  "pathGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3F15L3/O3F15L3_REVIEW_PATH_GATE.json",
+    "sha256": "82E1976283C138FE8FFB00F1AC299BC20330D901C2B3F7438E96B6D62923B879"
+  },
+  "mechanicalFailureFinding": {
+    "canonicalHardStopExpected": "effective path 230 or greater must never be used directly",
+    "canonicalRawLength": 207,
+    "suffixReserve": 32,
+    "canonicalEffectiveLength": 239,
+    "canonicalDirectUseAllowed": false,
+    "laterAliasEffectiveLength": 146,
+    "laterAliasUseAllowedAfterExactMappingAndLexicalSuffixVerification": true,
+    "canonicalFilesystemTouchAllowed": false,
+    "existingO3F14OwnedCaseAliasReusable": false,
+    "aliasCreationReachedInFailedRun": false,
+    "completeHistoricalAliasRequiredSetKnown": false,
+    "all265CurrentRowsTraversedBeforeFailure": true,
+    "cause": "The runner calls canonical.is_file/stat and an asserting direct-use budget before the alias, while the later O3F14 owned alias context would call os.path.samefile on the same 239-effective canonical leaf. R11 itself receives only aliasPath."
+  },
+  "sourceHandlingOptions": [
+    {
+      "option": "A",
+      "name": "PREDECLARED_SOURCE_PATH_HOLDS_AND_ELIGIBLE_EXECUTION",
+      "selected": false,
+      "lawful": true,
+      "design": "Record every canonical-direct-use-unsafe historical row as a source-path hold and execute all remaining eligible pairs.",
+      "rejectionReason": "This preserves safety but unnecessarily withholds a pair whose unchanged provider-facing path is already the exact same bytes through a verified 146-effective-character alias. It would convert transport-path provenance into a detector hold."
+    },
+    {
+      "option": "B",
+      "name": "SHORT_PHYSICAL_SAME_HASH_STAGING_COPY",
+      "selected": false,
+      "lawfulOnlyWithAdditionalAuthority": [
+        "Enumerate the complete alias-required set.",
+        "Prove a fresh short D: staging root, free space, collision behavior, and full return-path budget.",
+        "Read source bytes through a safe verified alias, stream-copy to create-new partial files, verify bytes and SHA-256, atomically finalize, and sign canonical-to-stage mappings.",
+        "Define retained/quarantined staging and exact owned cleanup semantics without source deletion."
+      ],
+      "rejectionReason": "The child contract already accepts the short alias path, and the selected O3F15-owned context can prove its exact mapping without touching the canonical leaf. Physical copying adds image reads, destination writes, disk-capacity and rollback premises, and staging lifecycle without shortening the consumer path."
+    },
+    {
+      "option": "C",
+      "name": "NONASSERTING_CANONICAL_DIRECT_USE_CLASSIFICATION_WITH_REQUIRED_VERIFIED_ALIAS",
+      "selected": true,
+      "lawfulDesign": [
+        "Measure and classify every canonical provenance path lexically; never call is_file, stat, resolve, hash, open, samefile, or any other filesystem API on a canonical leaf whose direct use is unsafe.",
+        "Use exact boundary semantics: effective length below 200 is direct-safe; 200 through 229 requires a verified short alias; 230 or greater is a hard stop for direct use and may proceed only through a separately pre-gated alias with zero canonical filesystem touch.",
+        "For the signed 239-effective canonical leaf, record directUseAllowed=false and verifiedShortAliasRequired=true; never place canonicalPath in a child argument or job input path.",
+        "Pre-gate both the short slot root and constructed alias below 200 before mapping, output-root creation, job creation, or process launch.",
+        "Implement an O3F15-owned Q: context using only the frozen O3F14 low-level mapping inventory/query/create/remove primitives. Do not modify O3F14 and do not reuse its owned_case_alias context.",
+        "Verify the exact normalized subst target, the exact lexical canonical slot-root plus BF/DF relative suffix relationship, and alias-only is_file/stat metadata before yield. R11 then performs stat, pinned hash verification, and decode only through aliasPath.",
+        "Preserve canonicalPath only as immutable lexical provenance; never append suffixes, write through it, rename it, or pass it to R11.",
+        "Finally remove only the owned Q: mapping and prove unrelated mappings remain unchanged.",
+        "Classify all 978 rows completely before build/live authority and require zero unknown, duplicate, or omitted identities."
+      ],
+      "minimumNegativeControls": [
+        "Exact Slot19 BF raw 207 plus reserve 32 records directUseAllowed=false and verifiedShortAliasRequired=true while alias effective 146 passes.",
+        "Canonical effective 199 is direct-safe; 200 and 229 require an alias; 230 is a direct-use hard stop and allows only the zero-canonical-touch alias path.",
+        "Slot-root and alias effective 199 pass; either at effective 200 fails closed before mapping, output-root creation, or child launch.",
+        "A canonical-direct-use-unsafe row is never passed to is_file, stat, resolve, hash, open, samefile, a child argument, or a job input path.",
+        "A failed Q: ownership, exact mapping, lexical suffix, alias-only metadata, or cleanup assertion remains a technical hold with no retry.",
+        "A safe control following an alias-required historical row remains scheduled in the synthetic/file-backed harness."
+      ],
+      "whySmallest": "It replaces the incorrect canonical filesystem/direct-use premise and adds only an O3F15-owned zero-canonical-touch alias context. The frozen O3F14 and R11 bytes stay unchanged. No image copy, new staging root, detector hold, threshold change, or selector change is needed."
+    }
+  ],
+  "selectedSourceHandlingOption": "C",
+  "policySupportedRemedy": "B",
+  "policySupportedRemedyMeaning": "One bounded local contract correction removes every unsafe canonical filesystem touch while preserving the direct-use hard stop, verified alias requirement, frozen O3F14/R11, and all detector invariants.",
+  "singleMutationAttemptAuthorized": true,
+  "clearanceScope": {
+    "freshRevision": "O3F15L4",
+    "freshNamespace": "work/OPENCV_EDGE_NOTCH_O3F15L4",
+    "localDraftCorrectionAuthorized": true,
+    "localSyntheticOrFileBackedPathGateAuthorized": true,
+    "complete978DirectUseClassificationGateRequiredBeforeBuild": true,
+    "buildAuthorized": false,
+    "signatureAuthorized": false,
+    "publicationAuthorized": false,
+    "portalActionAuthorized": false,
+    "liveExecutionAuthorized": false,
+    "imageReadAuthorized": false,
+    "sourceMutationAuthorized": false,
+    "sourceDeletionAuthorized": false,
+    "existingTaskOrProcessActionAuthorized": false,
+    "providerActivationAuthorized": false,
+    "thresholdOrSelectorChangeAuthorized": false,
+    "automaticHoldClearanceAuthorized": false,
+    "automaticRetryAuthorized": false
+  },
+  "preservedHolds": {
+    "fullFrontsideHoldCount": 184,
+    "currentPatternedFrontHoldCount": 12,
+    "slot02MultipleCandidateAmbiguity": true,
+    "rareHotspotSlot16": true,
+    "allLaterPrerequisites": true
+  },
+  "allLaterLiveWorkRoute": "RECORDED_SIGNED_PROJECT_PORTAL_NO_OPERATOR_INPUT",
+  "rustDeskAuthorized": false,
+  "operatorInputAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

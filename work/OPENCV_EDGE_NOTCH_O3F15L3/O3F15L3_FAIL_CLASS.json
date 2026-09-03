@@ -1,0 +1,123 @@
+{
+  "schema": "argos_ocv03_o3f15l3_signed_premise_failure_classification_v1",
+  "createdUtc": "2026-09-03T09:45:00Z",
+  "state": "FAIL_O3F15L3_SIGNED_PREFLIGHT_CANONICAL_PATH_HARD_STOP",
+  "incidentId": "O3F15L2_RUNNER_PREFLIGHT_DIAGNOSTIC_GAP_20260903",
+  "responseState": "FAILED",
+  "responseStateMeaning": "The matching signed diagnostic proves the authorized PREFLIGHT child failed its required premise; the raw endpoint carrier state remains separately recorded as PASS_MAINTENANCE_PATCH.",
+  "rawEndpointResponseState": "PASS_MAINTENANCE_PATCH",
+  "requestId": "REQ_20260903T090514331Z_84BB875EEFD2",
+  "requestZipSha256": "CD681FD47BFF21DE532AC430176D543FF93EF19E1AE8462BE6745A6ECCA86FEA",
+  "responseId": "R_B8A16CFA33BC_20260903092008761_68e46cd3",
+  "responseZipBytes": 3247,
+  "responseZipSha256": "EBA59835968348AFEBAB8A35ED45A546D7E7EB8865C64A28597B9A3952BA133E",
+  "responseManifestSha256": "C0A7B6C35002F6B613A11CA2771509AAFD78C0FA40550D8BE616DC4E3D54DFF9",
+  "responseSignatureSha256": "53817A4E244A73D83B9B3991EC84FFA84044A21250573A81DE07C65E8B115537",
+  "responseSignatureVerified": true,
+  "collectionGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3F15L3/O3F15L3_RESPONSE_COLLECTION_R2_GATE.json",
+    "sha256": "1DAD141DA1DD4CD5855CC0F6F231C2969306D6563467426EAF9D92D159DCC9D9"
+  },
+  "terminalCheckpoint": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L3_SIGNED_TERMINAL_PREFLIGHT_PATH_FAILURE_STOP_LOSS_CHECKPOINT_20260903.md",
+    "sha256": "443CC00443B391E9ADF3C429FFDA44A362B7C8D56BC1AE3E4BA28403E9611D1D"
+  },
+  "diagnostic": {
+    "state": "COMPLETE_O3F15L3_PREFLIGHT_DIAGNOSTIC_CAPTURED",
+    "childOutcome": "FAIL",
+    "childExitCode": 1,
+    "childTimedOut": false,
+    "exactOwnedChildCount": 1,
+    "childExecutable": "D:/AFCV1/rt/python.exe",
+    "childArguments": ["-I", "-B", "Run-O3F15FrontReconcile.py", "PREFLIGHT"],
+    "stdoutSha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "stderrSha256": "917A4091DDDCFD55C12B2948B06FB5ADBC4E2E988EE3051C228A7834769430EE"
+  },
+  "failure": {
+    "class": "FROZEN_CANONICAL_PATH_BUDGET_HARD_STOP",
+    "identity": "BackSide_BowComp/Lot_62627-198-POST-IVS/62627-198-POST-IVS_20260730103451/Slot19|FRONT",
+    "channel": "BF",
+    "canonicalPath": "D:\\KLARFExport\\BackSide_BowComp\\Lot_62627-198-POST-IVS\\62627-198-POST-IVS_20260730103451\\Slot19\\BrightfieldFrontsideWafer\\resizedImage\\62627-198-POST-IVS_Slot19_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "canonicalRawLength": 207,
+    "suffixReserve": 32,
+    "canonicalEffectiveLength": 239,
+    "canonicalEffectiveLimitExclusive": 230,
+    "canonicalDirectUseAllowed": false,
+    "verifiedShortAliasRequired": true,
+    "maximumComponentLength": 72,
+    "componentLimitInclusive": 80,
+    "exactError": "BF canonical effective path is unsafe",
+    "canonicalHardStopPreserved": true,
+    "canonicalUsedAsChildInput": false
+  },
+  "laterConsumerAlias": {
+    "path": "Q:\\BrightfieldFrontsideWafer\\resizedImage\\62627-198-POST-IVS_Slot19_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "rawLength": 114,
+    "suffixReserve": 32,
+    "effectiveLength": 146,
+    "effectiveLimitExclusive": 200,
+    "pathPass": true,
+    "createdDuringFailedPreflight": false,
+    "consumerStarted": false,
+    "existingOwnedCaseAliasWouldCallSamefileOnCanonical": true,
+    "existingOwnedCaseAliasReusableForL4": false,
+    "meaning": "The alias is the sole intended child input, but the frozen O3F14 owned_case_alias would still call os.path.samefile(aliasPath, canonicalPath). L4 must not reuse that context because the 239-effective canonical leaf may not be filesystem-touched."
+  },
+  "mechanicalCause": "Run-O3F15FrontReconcile.py calls canonical.is_file/stat and then an asserting direct-use path budget on the 239-effective canonical leaf before alias creation. Its later frozen O3F14 context would also call os.path.samefile on that canonical leaf. L4 must treat canonicalPath as a lexical provenance string only and implement an O3F15-owned short-alias context whose filesystem operations use only the pre-gated slot root and alias.",
+  "requiredL4AccessBoundary": {
+    "canonicalLexicalClassificationOnly": true,
+    "canonicalFilesystemTouchAllowed": false,
+    "canonicalIsFileStatResolveHashOpenOrSamefileAllowed": false,
+    "slotRootAndAliasMustPassBelow200BeforeMappingOrLaunch": true,
+    "reuseFrozenO3F14LowLevelMappingQueryCreateRemoveAllowed": true,
+    "reuseFrozenO3F14OwnedCaseAliasAllowed": false,
+    "mappingVerification": "exact normalized subst target plus exact lexical relative suffix",
+    "sourceMetadataVerification": "alias-only is_file and stat",
+    "r11SourceAccess": "aliasPath-only stat, hash, and decode"
+  },
+  "runner": {
+    "path": "work/O3F8/Run-O3F15FrontReconcile.py",
+    "sha256": "DCE1E1F3B42FBD38ED73FF7D346F19C3BAE013EE3003B3485E91A41DAF573C48"
+  },
+  "aliasHelper": {
+    "path": "work/O3F8/Run-O3F14Staged.py",
+    "sha256": "CAAFD1AC8C19E33D95BA8283963A4D0ED0189FF566C9923822BF3EC37956171E"
+  },
+  "launchContract": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3F15L2/O3F15L2_LAUNCH_CONTRACT.json",
+    "sha256": "2DA5A59B755B9DDB9DD1F72CDC2E3D5EA8212263DB11E087CBA7A5471B83BF92",
+    "declaredMaximumCanonicalRawLength": 197,
+    "declaredMaximumCanonicalEffectiveLength": 229,
+    "observedSignedCanonicalRawLength": 207,
+    "observedSignedCanonicalEffectiveLength": 239,
+    "classification": "PREPUBLICATION_CANONICAL_PATH_MAXIMUM_PREMISE_DISPROVED"
+  },
+  "executionBoundary": {
+    "selfTestStarted": false,
+    "gateStarted": false,
+    "runStarted": false,
+    "resultRootCreated": false,
+    "corpusStarted": false,
+    "imageBytesRead": false,
+    "canonicalFileMetadataTouchedBeforeRejection": true,
+    "sourceMutationPerformed": false,
+    "sourceDeletionPerformed": false,
+    "existingTaskActionCount": 0,
+    "existingProcessActionCount": 0,
+    "providerActivated": false,
+    "holdsAutomaticallyCleared": false
+  },
+  "signedPremiseFailureOrdinalInIncident": 2,
+  "requestRetryAuthorized": false,
+  "publicationParentAllowed": false,
+  "freshNamespaceRequired": true,
+  "fullFrontsideHoldCountPreserved": 184,
+  "currentPatternedFrontHoldCountPreserved": 12,
+  "slot02AmbiguityPreserved": true,
+  "rareHotspotSlot16Preserved": true,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

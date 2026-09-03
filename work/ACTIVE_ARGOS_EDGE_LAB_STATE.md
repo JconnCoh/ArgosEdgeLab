@@ -10284,3 +10284,44 @@ true; training, XML, production eligibility, and production routing stay false.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L3_SIGNED_TERMINAL_PREFLIGHT_PATH_FAILURE_STOP_LOSS_CHECKPOINT_20260903.md`,
 SHA-256 `443CC00443B391E9ADF3C429FFDA44A362B7C8D56BC1AE3E4BA28403E9611D1D`.
+
+## OCV-03 O3F15L3 stop-loss review / O3F15L4 local next — 2026-09-03
+
+Disposition: `PENDING_GATE`
+
+Signed-response observation
+`E80112B31B8DD36FD1ABCB461CA5CE9FD3131F95F6EF4B8F4104511C526B0E2C`
+and workflow review
+`9B68606B1B0D06B7FE28072221D1E87BA31D9479CF1AE0F26AA269C4F23E94DE`
+mechanically isolate the failure: canonical provenance is 207 characters and
+239 with reserve, so direct use and canonical filesystem access remain
+forbidden; the intended `Q:` alias is 146 effective characters and is the sole
+R11 input. The runner touched canonical metadata and asserted its direct-use
+budget before alias creation, while frozen O3F14 would later `samefile` the
+canonical leaf. That context is not reusable by L4.
+
+Predeclared source-path holds are safe but unnecessarily convert provenance
+length into a detector/source hold. A physical staging copy adds image reads,
+writes, capacity, rollback, and cleanup premises without shortening the child
+path. The selected smallest design uses lexical-only canonical classification:
+below 200 is direct-safe, 200–229 requires an alias, and 230 or greater is a
+direct-use hard stop. L4 must implement an O3F15-owned context that pre-gates
+the slot root and alias below 200, verifies exact normalized mapping plus
+lexical suffix, uses alias-only `is_file/stat`, passes only aliasPath to R11,
+and removes its owned mapping. Frozen O3F14 and R11 remain unchanged.
+
+Fresh O3F15L4 intent
+`754DCC0D57D8483B2021061E642D8C73710E09A6CE71463FF5BA92C96BB528C8`
+passes recovery gate
+`D6F5AEEAB213AF19B3DADAD75400511B1C28F8B25DB68AB778529910C219DF1E`.
+Stop-loss is cleared only for one local DRAFT correction and image-free focused
+test. Build, signature, publication, live execution, image reads, retry, and
+all external mutation remain blocked until complete 978-row classification.
+
+All 184/12 holds, Slot02 ambiguity, rare-hotspot Slot16, and all later
+prerequisites remain. Any later live work must use the recorded signed Project
+Portal route without operator input; RustDesk remains prohibited.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L3_REVIEW_L4_LOCAL_NEXT_20260903.md`,
+SHA-256 `B13F374D799037F4DA453800F704E0D5BF01F425D3D5A9C0E868345DC7BA54DB`.

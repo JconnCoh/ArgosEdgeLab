@@ -1,0 +1,144 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-03T09:45:00Z",
+  "state": "PASS_O3F15L3_POST_FAILURE_SIGNED_PATH_OBSERVATION",
+  "incidentId": "O3F15L2_RUNNER_PREFLIGHT_DIAGNOSTIC_GAP_20260903",
+  "observationMode": "LOCAL_READ_ONLY_MATCHING_SIGNED_RESPONSE_REVIEW",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "mutationsPerformed": false,
+  "observedAfterLastSignedFailure": true,
+  "sources": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L3/O3F15L3_RESPONSE_COLLECTION_R2_GATE.json",
+      "sha256": "1DAD141DA1DD4CD5855CC0F6F231C2969306D6563467426EAF9D92D159DCC9D9",
+      "role": "signature-verified matching-response collection gate"
+    },
+    {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L3_SIGNED_TERMINAL_PREFLIGHT_PATH_FAILURE_STOP_LOSS_CHECKPOINT_20260903.md",
+      "sha256": "443CC00443B391E9ADF3C429FFDA44A362B7C8D56BC1AE3E4BA28403E9611D1D",
+      "role": "terminal incident checkpoint"
+    },
+    {
+      "path": "work/O3F8/Run-O3F15FrontReconcile.py",
+      "sha256": "DCE1E1F3B42FBD38ED73FF7D346F19C3BAE013EE3003B3485E91A41DAF573C48",
+      "role": "exact failed runner"
+    },
+    {
+      "path": "work/O3F8/Run-O3F14Staged.py",
+      "sha256": "CAAFD1AC8C19E33D95BA8283963A4D0ED0189FF566C9923822BF3EC37956171E",
+      "role": "exact canonical and alias path-budget implementation"
+    },
+    {
+      "path": "C:/O3F15L3C2/R_B8A16CFA33BC_20260903092008761_68e46cd3.ready.zip",
+      "sha256": "EBA59835968348AFEBAB8A35ED45A546D7E7EB8865C64A28597B9A3952BA133E",
+      "role": "already-collected matching signed response ZIP"
+    },
+    {
+      "path": "C:/O3F15L3C2/R_B8A16CFA33BC_20260903092008761_68e46cd3.ready/PORTAL_RESPONSE_MANIFEST.json",
+      "sha256": "C0A7B6C35002F6B613A11CA2771509AAFD78C0FA40550D8BE616DC4E3D54DFF9",
+      "role": "signed response manifest"
+    },
+    {
+      "path": "C:/O3F15L3C2/R_B8A16CFA33BC_20260903092008761_68e46cd3.ready/PORTAL_RESPONSE_MANIFEST.sig",
+      "sha256": "53817A4E244A73D83B9B3991EC84FFA84044A21250573A81DE07C65E8B115537",
+      "role": "response signature"
+    },
+    {
+      "path": "C:/O3F15L3C2/R_B8A16CFA33BC_20260903092008761_68e46cd3.ready/MAINTENANCE.stdout.txt",
+      "sha256": "C5F71F01FCC3F5AC395D9DC67B9FAD562C1B2D1460E9407F5463ECCC86B6FB3B",
+      "role": "signed bounded diagnostic envelope"
+    },
+    {
+      "path": "C:/O3F15L3C2/R_B8A16CFA33BC_20260903092008761_68e46cd3.ready/RESULT.json",
+      "sha256": "172F757723A7098EDEFD4726E28890A0D851AE71391BCDBD8CFB1BD22759E7A6",
+      "role": "carrier result"
+    }
+  ],
+  "expectedObserved": [
+    {
+      "field": "canonicalEffectivePathLength",
+      "expected": "less than 230",
+      "observed": 239,
+      "result": "DIRECT_USE_HARD_STOP_VERIFIED_SHORT_ALIAS_REQUIRED"
+    },
+    {
+      "field": "canonicalRawPathLength",
+      "expected": "at most 197 under the predecessor launch-contract premise",
+      "observed": 207,
+      "result": "PREMISE_DISPROVED"
+    },
+    {
+      "field": "pathSuffixReserve",
+      "expected": 32,
+      "observed": 32,
+      "result": "MATCH"
+    },
+    {
+      "field": "providerFacingAliasEffectivePathLength",
+      "expected": "less than 200 if reached",
+      "observed": 146,
+      "result": "LEXICALLY_SAFE_BUT_NOT_REACHED_AND_EXISTING_SAMEFILE_CONTEXT_NOT_REUSABLE"
+    },
+    {
+      "field": "currentPairOrdering",
+      "expected": "all current PatternedFront and UnpatternedFront pairs precede historical rows",
+      "observed": "265 current pairs precede 713 historical rows; the signed failure is in BackSide_BowComp",
+      "result": "ALL_265_CURRENT_ROWS_TRAVERSED_THE_SAME_PATH_BUDGET_BEFORE_FAILURE"
+    },
+    {
+      "field": "completeHistoricalUnsafeSet",
+      "expected": "complete direct-use-versus-alias-required classification before any successor launch",
+      "observed": "not available because the exact planner fails on the first unsafe historical row",
+      "result": "FUTURE_EXACT_LEDGER_GATE_REQUIRED_BEFORE_BUILD_OR_LIVE_ACTION"
+    }
+  ],
+  "mechanicalFindings": {
+    "provedUnsafePairChannelCount": 1,
+    "completeHistoricalUnsafeCountKnown": false,
+    "currentPairCount": 265,
+    "currentPatternedFrontPairCount": 216,
+    "currentUnpatternedFrontPairCount": 49,
+    "currentRowsPathBudgetPassedBeforeHistoricalFailure": true,
+    "canonicalBudgetRunsBeforeAliasCreation": true,
+    "assertingCanonicalDirectUseCheckCausedQueueWidePreflightFailure": true,
+    "canonicalDirectUseAllowedForFailedRow": false,
+    "verifiedShortAliasRequiredForFailedRow": true,
+    "pairSourcePathHoldRequiredForFailedRow": false,
+    "aliasWouldBeConsumedByChild": true,
+    "aliasWasCreatedInFailedRun": false,
+    "canonicalIsFileAndStatOccurredBeforeBudgetFailure": true,
+    "existingOwnedAliasWouldLaterSamefileCanonical": true,
+    "canonicalFilesystemTouchAllowedInSuccessor": false,
+    "o3f15OwnedAliasContextRequired": true,
+    "directSafeEffectiveRange": "0..199",
+    "verifiedAliasRequiredEffectiveRange": "200..229",
+    "directUseHardStopEffectiveMinimum": 230
+  },
+  "executionBoundary": {
+    "selfTestStarted": false,
+    "gateStarted": false,
+    "runStarted": false,
+    "resultRootCreated": false,
+    "corpusStarted": false,
+    "imageBytesRead": false,
+    "canonicalFileMetadataTouched": true,
+    "sourceMutationPerformed": false,
+    "sourceDeletionPerformed": false,
+    "existingTaskActionCount": 0,
+    "existingProcessActionCount": 0,
+    "providerActivated": false
+  },
+  "liveObservationPerformedThisReview": false,
+  "portalActionPerformedThisReview": false,
+  "rustDeskUsed": false,
+  "operatorInputRequired": false,
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}
