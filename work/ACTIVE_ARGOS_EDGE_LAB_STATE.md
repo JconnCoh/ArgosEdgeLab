@@ -9512,3 +9512,20 @@ SHA-256 `5D1E16B3EB8AFA02CFF895094D7F1D78280725112E1A70FD81A55536AC252709`.
 Exact next scribe-lane action: commit/push the publication and collector state,
 then collect create-new into `C:\R18ER` and `C:\R18E`. Verify frozen R18D
 before inspecting blind pixels. No retry, republish, or authority expansion.
+
+# 2026-09-03 — OCV-02 R18E signed terminal crops collected (`APPROVED_BASELINE`)
+
+The matching signed JBOD response is collected create-new under `C:\R18ER`
+and `C:\R18E`. Standard certificate verification and exact member/hash gates
+passed for all 24 files. Terminal collection gate SHA-256 is
+`9AD57983849DCBF7AAA3B021A9E5045C421456664A6A86E03EDE90AD6465B140`.
+No pixels were decoded during collection. R18E remains one-publication terminal
+evidence and must never be retried or republished.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18E/R18E_SIGNED_TERMINAL_COLLECTION_CHECKPOINT_20260903.md`,
+SHA-256 `26A60B66FA53743EAD4A6EC73547AD14EB50FB7A153E489B9FE3D021860E05E3`.
+
+Exact next scribe-lane action: verify frozen R18D and all returned hashes, run
+only the four development acquisitions, and freeze their outputs before opening
+the four blind acquisitions. No full KLARF run or authority expansion.
