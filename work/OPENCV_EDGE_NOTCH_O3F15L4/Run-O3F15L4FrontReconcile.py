@@ -37,7 +37,7 @@ RUNNER_LEAF = "Run-O3F15L4FrontReconcile.py"
 O3F15_SHA256 = "DCE1E1F3B42FBD38ED73FF7D346F19C3BAE013EE3003B3485E91A41DAF573C48"
 O3F14_SHA256 = "CAAFD1AC8C19E33D95BA8283963A4D0ED0189FF566C9923822BF3EC37956171E"
 R11_SHA256 = "B477C290EC9D3AE388BE4EE31049B2B8094F5F30FC6E0DD68AB4A03926EE4059"
-FOCUSED_TEST_SHA256 = "564DB7C7097A4965F6864B813B2889E1972CF54D3696F307B83200BE3B7C54A9"
+FOCUSED_TEST_SHA256 = "E98A90ADCF9E705BCA0B57979167FB7F0DAFE526D24FA015EC85DEA6F184BBE0"
 
 EXPORT_ROOT = PureWindowsPath(r"D:\KLARFExport")
 ALIAS_DRIVE = "Q:"
@@ -46,6 +46,7 @@ PATH_SUFFIX_RESERVE = 32
 DIRECT_SAFE_LIMIT = 200
 DIRECT_HARD_STOP = 230
 MAX_COMPONENT_LENGTH = 80
+CLASSIFICATION_EVIDENCE_LIMIT_BYTES = 4 * 1024 * 1024
 
 _O3F15: Any | None = None
 _LAST_FROZEN_CLASSIFICATION: dict[str, Any] | None = None
@@ -251,12 +252,9 @@ def frozen_classification_evidence(plans: list[dict[str, Any]], corpus: str = "A
                 "channel": key.upper(),
                 "class": path_class,
                 "canonicalPath": path_text,
-                "canonicalLexicalSha256": hashlib.sha256(path_text.encode("utf-8")).hexdigest().upper(),
                 "rawLength": int(canonical_metrics["rawPathLength"]),
                 "effectiveLength": int(canonical_metrics["effectivePathLength"]),
                 "maximumComponentLength": int(canonical_metrics["maximumComponentLength"]),
-                "sourceSha256": str(channel["sha256"]),
-                "bytes": int(channel["bytes"]),
             }
             if path_class != "DIRECT_SAFE":
                 alias_budget = channel["aliasBudget"]
@@ -265,10 +263,12 @@ def frozen_classification_evidence(plans: list[dict[str, Any]], corpus: str = "A
             ordered_leaf_keys.append(leaf_key)
             ordered_source_leaves.append(leaf_record)
             source_leaves_by_class[path_class].append(leaf_record)
-            record["channels"][key] = leaf_record
+            hash_record = dict(leaf_record)
+            hash_record.update({"canonicalLexicalSha256": hashlib.sha256(path_text.encode("utf-8")).hexdigest().upper(), "sourceSha256": str(channel["sha256"]), "bytes": int(channel["bytes"])})
+            record["channels"][key] = hash_record
         records.append(record)
         if pair_class == "DIRECT_USE_HARD_STOP_ALIAS_ONLY":
-            hard_stops.append({"ordinal": record["ordinal"], "identity": record["identity"], "channels": record["channels"]})
+            hard_stops.append({"ordinal": record["ordinal"], "identity": record["identity"], "channels": [key.upper() for key in ("bf", "df") if channel_classes[key] == "DIRECT_USE_HARD_STOP_ALIAS_ONLY"]})
     encoded_records = (json.dumps(records, separators=(",", ":"), ensure_ascii=False) + "\n").encode("utf-8")
     encoded_leaves = (json.dumps(ordered_source_leaves, separators=(",", ":"), ensure_ascii=False) + "\n").encode("utf-8")
     identity_bytes = ("\n".join(str(plan["identity"]) for plan in plans) + "\n").encode("utf-8")
@@ -276,7 +276,11 @@ def frozen_classification_evidence(plans: list[dict[str, Any]], corpus: str = "A
     need(len(ordered_source_leaves) == 1956 and len(set(ordered_leaf_keys)) == 1956, "Classification does not contain 1956 unique ordered source leaves")
     need(sum(leaf_counts.values()) == 1956, "Source-leaf classification counts do not total 1956")
     need(all(len(source_leaves_by_class[name]) == leaf_counts[name] for name in severity), "Source-leaf class lists do not match classification counts")
-    return {"corpus": corpus, "complete": True, "pairCount": 978, "identityCount": 978, "sourceLeafCount": 1956, "uniqueOrderedSourceLeafCount": 1956, "pairClassificationCounts": pair_counts, "sourceLeafClassificationCounts": leaf_counts, "orderedIdentitySha256": hashlib.sha256(identity_bytes).hexdigest().upper(), "orderedClassificationRecordSha256": hashlib.sha256(encoded_records).hexdigest().upper(), "orderedSourceLeafRecordSha256": hashlib.sha256(encoded_leaves).hexdigest().upper(), "classificationLeafIdentitySha256": class_hashes, "sourceLeavesByClass": source_leaves_by_class, "hardStopIdentities": hard_stops}
+    result = {"corpus": corpus, "complete": True, "pairCount": 978, "identityCount": 978, "sourceLeafCount": 1956, "uniqueOrderedSourceLeafCount": 1956, "pairClassificationCounts": pair_counts, "sourceLeafClassificationCounts": leaf_counts, "orderedIdentitySha256": hashlib.sha256(identity_bytes).hexdigest().upper(), "orderedClassificationRecordSha256": hashlib.sha256(encoded_records).hexdigest().upper(), "orderedSourceLeafRecordSha256": hashlib.sha256(encoded_leaves).hexdigest().upper(), "classificationLeafIdentitySha256": class_hashes, "sourceLeavesByClass": source_leaves_by_class, "hardStopIdentities": hard_stops}
+    serialized_bytes = len(json.dumps(result, separators=(",", ":"), ensure_ascii=False).encode("utf-8"))
+    need(serialized_bytes <= CLASSIFICATION_EVIDENCE_LIMIT_BYTES, "Classification evidence exceeds its 4 MiB serialized bound")
+    result.update({"serializedCoreBytes": serialized_bytes, "serializedEvidenceLimitBytes": CLASSIFICATION_EVIDENCE_LIMIT_BYTES})
+    return result
 
 
 def alias_file_size(alias_text: str) -> int | None:

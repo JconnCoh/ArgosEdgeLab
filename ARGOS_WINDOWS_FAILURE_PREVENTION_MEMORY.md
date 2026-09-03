@@ -11162,3 +11162,39 @@ than rerunning it.
   child invocation are prohibited. A full 978-pair successor remains
   unauthorized until that evidence identifies and separately gates the actual
   preflight correction.
+
+## 2026-09-03 — An overlong canonical provenance path must not be touched before its verified short alias
+
+- Failure signature: published O3F15L3 request
+  `REQ_20260903T090514331Z_84BB875EEFD2` returned matching signed terminal
+  response `R_B8A16CFA33BC_20260903092008761_68e46cd3`. Its sole `PREFLIGHT`
+  child stopped before GATE, result-root creation, source-image reads, or corpus
+  launch because the Slot19 BF canonical path was 207 characters plus the
+  mandatory 32-character suffix reserve, for effective length 239. The same
+  source through the planned `Q:` alias was 114 characters, effective 146.
+- Cause: the inherited preflight asserted the canonical direct-use budget and
+  called canonical-leaf filesystem probes before entering the alias context;
+  the inherited alias context would also have called `samefile` on that
+  overlong canonical leaf. The 230-or-greater hard stop was correct for direct
+  use, but the implementation incorrectly treated canonical provenance as the
+  provider-facing path even when a separately verified short alias existed.
+- Mandatory preflight: before any future full-corpus build or signature,
+  classify the complete frozen ordered source set lexically with 32 characters
+  of reserve and record every identity/channel. Effective length below 200 is
+  direct-safe; 200 through 229 requires a verified short alias; 230 or greater
+  remains a hard stop for direct use and may proceed only through an alias whose
+  own effective length is below 200. For every non-direct leaf, do not call
+  `is_file`, `stat`, `resolve`, `open`, hash, `samefile`, or any other filesystem
+  API on the canonical spelling. Pre-gate the slot root and alias, prove the
+  exact normalized `subst` target and lexical relative suffix, then perform
+  existence, size, hash, and decode only through the alias. Prove that an owned
+  `Q:` mapping is removed on every exit while a preexisting mapping is never
+  removed. Include all canonical, alias, runtime, output, and return leaves in
+  the signed path gate.
+- Recovery: retain O3F15L3 and its signed response as terminal, withdrawn,
+  no-retry evidence. Use fresh O3F15L4 artifacts with frozen O3F14/R11 bytes,
+  unchanged thresholds and selectors, and an O3F15-owned alias context that
+  keeps canonical paths as lexical provenance only. Acquire the actual 978-pair
+  classification through one separately gated portal-only metadata diagnostic
+  before authorizing the full run; preserve every hold and use a fresh package
+  and result namespace for the later corpus.

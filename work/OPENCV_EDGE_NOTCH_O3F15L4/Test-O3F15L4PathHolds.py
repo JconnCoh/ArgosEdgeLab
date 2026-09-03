@@ -306,6 +306,9 @@ class O3F15L4FocusedTests(unittest.TestCase):
         self.assertEqual(self.plans[266]["ordinal"], 267)
         evidence = L4.frozen_classification_evidence(self.plans, corpus="SYNTHETIC_978")
         self.assertEqual((evidence["corpus"], evidence["sourceLeafCount"], evidence["uniqueOrderedSourceLeafCount"]), ("SYNTHETIC_978", 1956, 1956))
+        self.assertLess(evidence["serializedCoreBytes"], 700000)
+        self.assertEqual(evidence["serializedEvidenceLimitBytes"], 4 * 1024 * 1024)
+        self.assertLess(len(json.dumps(evidence, separators=(",", ":"), ensure_ascii=False).encode("utf-8")), evidence["serializedEvidenceLimitBytes"])
         leaves = [leaf for class_name in ("DIRECT_SAFE", "VERIFIED_SHORT_ALIAS_REQUIRED", "DIRECT_USE_HARD_STOP_ALIAS_ONLY") for leaf in evidence["sourceLeavesByClass"][class_name]]
         keys = {(leaf["ordinal"], leaf["identity"], leaf["channel"]) for leaf in leaves}
         self.assertEqual((len(leaves), len(keys)), (1956, 1956))
