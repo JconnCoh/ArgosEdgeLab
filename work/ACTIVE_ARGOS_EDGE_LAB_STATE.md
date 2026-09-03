@@ -9467,3 +9467,27 @@ Exact next scribe-lane action: commit/push the frozen package and checkpoint,
 verify the dedicated branch clean and matching origin, then wait. After an
 explicit R18E `PUBLISH`, publish exactly once and collect only its matching
 signed terminal response. No retry or authority expansion.
+
+# 2026-09-03 — OCV-02 R18E publication authorized and ready (`PENDING_GATE`)
+
+The operator explicitly authorized `Publish` for exact request
+`REQ_20260903T192241716Z_R18E`, ZIP SHA-256
+`C0218B20414CB2DF0B1C11F5273BD0C989CB6EE550D048C6163F5E21E8A2A502`.
+The authority is bounded to one create-new publication, no retry, and only the
+matching signed terminal response may be collected.
+
+Publisher SHA-256 is
+`ABA04A90BB1885446BFCDB3DFB770FF69AE9B170FFDA0CC4B7705D13AF0CE191`;
+publication pre-action SHA-256 is
+`C368C9D88BDD5AFFB816168C0AAB1CAB8938FA01930AAB4CD9C44CC31D046D53`.
+PS5 parser, harness, wrapper, clone, complete-route/path, exact-package, and
+zero-recurrence gates pass.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18E/R18E_PUBLICATION_READY_CHECKPOINT_20260903.md`,
+SHA-256 `69FE7BCC16CCBDA5C1AC97473408595968AA26B71BA8B395AB5FB0E9F66EFD7D`.
+
+Exact next scribe-lane action: commit/push this exact publication state, require
+a clean branch matching origin and an empty queue, run non-mutating preflight,
+then publish once. Never retry or republish. Gateway acceptance alone is not
+execution evidence; await only the matching signed terminal response.
