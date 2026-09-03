@@ -4,6 +4,21 @@ This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
 
+## Isolated OpenCV scribe R16A local supplemental glyphs — 2026-09-03
+
+Exact-hash local OpenCV processing of the four R15E BF rectified rasters now
+finds exactly twelve separated character runs on every wafer and emits 48
+complete cells. Six correct supplemental references cover `J/K/Q/X`: J and Q
+each have independent JQ16D/JQ20V agreement; K and X are explicitly
+single-example provisional. The frozen-base missing set therefore narrows from
+`IJKOQVWXYZ` to `IOVWYZ`. The unchanged S17 record still proves
+`6KB71041XDE5`. This is `DIAGNOSTIC_ONLY`; nothing was published, activated,
+admitted, trained, routed to XML/production, or used to clear a hold.
+
+Current scribe checkpoint:
+`work/OPENCV_SCRIBE_R16A/R16A_LOCAL_SUPPLEMENT_CHECKPOINT_20260903.md`,
+SHA-256 `4C45249D9134BAFC711CB7E0C3B9A5853903E8765B8DA84DD4D1C829D8621F1B`.
+
 ## Isolated OpenCV scribe R15E signed terminal diagnostic — 2026-09-03
 
 Exact request `REQ_20260903T124500000Z_R15E`, ZIP
