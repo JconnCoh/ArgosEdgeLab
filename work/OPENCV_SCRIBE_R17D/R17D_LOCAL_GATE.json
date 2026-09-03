@@ -1,0 +1,106 @@
+{
+  "schema": "argos_opencv_scribe_r17d_local_gate_v1",
+  "revision": "OCV02_R17D_LOCAL_20260903A",
+  "state": "PASS_DIAGNOSTIC_ONLY",
+  "provider": {
+    "relativePath": "work/OPENCV_SCRIBE_R17D/ArgosOpenCvScribeV1R17D.py",
+    "sha256": "41FE84C07081DF715469022519BD002BA44230910EBF3FAF20A6622EF1CE5B31"
+  },
+  "test": {
+    "relativePath": "work/OPENCV_SCRIBE_R17D/Test-ArgosOpenCvScribeR17D.py",
+    "sha256": "4CF9F062C770E346C5B295FBF9E89A23F87859D4E0019F818F2DBA69A9322DD9"
+  },
+  "cause": {
+    "failedCaseId": "62627-193_20260820124250_Slot01",
+    "truth": "1484P068SUD6",
+    "failedImageFirst": "1484B068SUD6",
+    "failedProposed": "1484P068SUD6",
+    "defect": "The appearance descriptor allowed same-acquisition background similarity and legacy neighboring-cell pixels to outweigh the missing lower bowl that distinguishes P from B.",
+    "checksumWasIncorrectlyNeededToCorrectImageFirst": true
+  },
+  "correction": {
+    "gridSelectionChanged": false,
+    "presenceGateChanged": false,
+    "sharedGlyphCorrection": "APPEARANCE_WITH_BOUNDED_GLYPH_TOPOLOGY_ARBITRATION",
+    "topologyOverrideMinimumScore": 0.9,
+    "topologyOverrideMinimumMargin": 0.15,
+    "topologyOverrideMaximumAppearanceScore": 0.85,
+    "topologyOverrideMaximumAppearanceDeficit": 0.12,
+    "checksumUsedForImageFirst": false
+  },
+  "referenceGate": {
+    "baseReferenceCount": 456,
+    "supplementalReferenceCount": 6,
+    "leavePhysicalIdentityOutBaselineCorrect": 375,
+    "leavePhysicalIdentityOutR17dCorrect": 382,
+    "changedDecisions": 9,
+    "correctedDecisions": 7,
+    "previouslyCorrectDecisionsHarmed": 0,
+    "passed": true
+  },
+  "cropOcrGate": [
+    {
+      "caseId": "Lot-62546-481-POST2_20260713155808_Slot20",
+      "channelPolarity": "DF_BRIGHT",
+      "grid": {"x": 362, "y": 274, "cellWidth": 98, "cellHeight": 230},
+      "imageFirstString": "8365N004FEC6",
+      "proposedString": "8365N004FEC6",
+      "checksumValid": true,
+      "topologyOverridePositions": []
+    },
+    {
+      "caseId": "62627-193_20260820124250_Slot01",
+      "channelPolarity": "BF_DARK",
+      "grid": {"x": 404, "y": 260, "cellWidth": 96, "cellHeight": 230},
+      "appearanceFirstPosition5": "B",
+      "topologyFirstPosition5": "P",
+      "topologyFirstScorePosition5": 0.9602440865072331,
+      "topologyMarginPosition5": 0.2095006592130534,
+      "imageFirstString": "1484P068SUD6",
+      "proposedString": "1484P068SUD6",
+      "checksumValid": true,
+      "topologyOverridePositions": [5]
+    },
+    {
+      "caseId": "62625-956_20260729122701_Slot17",
+      "channelPolarity": "BF_DARK",
+      "grid": {"x": 419, "y": 257, "cellWidth": 96, "cellHeight": 230},
+      "imageFirstString": "147JQ121SUE7",
+      "proposedString": "147JQ121SUE7",
+      "checksumValid": true,
+      "topologyOverridePositions": []
+    }
+  ],
+  "automaticGridRepeat": {
+    "frozenCoordinatesSupplied": false,
+    "allThreeGridsRediscoveredExactly": true,
+    "allThreeImageFirstStringsExact": true,
+    "allThreeChecksumsVerified": true,
+    "passed": true
+  },
+  "presenceGate": {
+    "caseCount": 8,
+    "scribePresentCount": 5,
+    "scribeNotLocalizedCount": 3,
+    "blankFalseStringCount": 0,
+    "visibleScribeFalseNegativeCount": 0,
+    "passed": true
+  },
+  "frozenWholeWaferRegressionEvidence": {
+    "S01": {"imageFirstString": "3912P014FED2", "checksumValid": true},
+    "S03": {"imageFirstString": "2659P076FEF4", "checksumValid": true},
+    "S17Misplaced": {"imageFirstString": "6KB71041XDE5", "checksumValid": true}
+  },
+  "authority": {
+    "reviewOnly": true,
+    "identityAcceptanceAuthorized": false,
+    "activationAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "automaticHoldClearanceAuthorized": false,
+    "publicationAuthorized": false
+  },
+  "eligibleForPublication": false,
+  "eligibleForActivation": false
+}
