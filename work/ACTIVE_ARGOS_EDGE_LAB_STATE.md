@@ -1,8 +1,29 @@
-# Active ArgosEdgeLab state - OCV-03 autonomous detector sequence rollover - 2026-08-30
+# Active ArgosEdgeLab state - OCV-03 frontside O3F8 R13 T5 targeted child binding ready - 2026-09-03
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3F8 R13 T5 signed targeted child-binding ready — 2026-09-03
+
+T4 reached the JBOD endpoint but its 11 targeted rows are diagnostic execution
+errors: `run_one()` still used the cached O3F15 child module bound to R11 even
+though the outer L4 module was rebound to R13. Five rows hit the historical R11
+DF resource cap and six lacked the R13 `candidateResourceLimit` field. T5 changes
+only that child-module binding after independently validating frozen R11.
+
+The image-free execution-binding test passes. Exact signed request
+`REQ_20260903T233132021Z_2FA7A30A3BB4`, ZIP SHA-256
+`23801D5C86CFB90C377A83369ED45727AFB6DF4702B3D5F51ABFA62454AC6CA9`
+(192,653 bytes), is ready. Its complete 443-path route gate passes with maximum
+effective path 193, and publisher preflight reports queue `NEW` with zero pending
+requests. Publish once and collect only the matching signed response. Stop for
+Ultra before any real-image detector judgment or tuning. If the 11-pair gate
+passes unchanged, run one fresh complete 978-pair frontside corpus and reconcile
+all holds. This worktree stops at frontside completion; scribe is owned elsewhere.
+
+All 184 full-frontside holds, 12 PatternedFront holds, Slot02 ambiguity, Slot16
+rare hotspot, no-retry, review-only, and later prerequisite restrictions remain.
 
 ## OCV-03 O3F6 R8 full-978 complete / stitch-holder review pending — 2026-09-02
 

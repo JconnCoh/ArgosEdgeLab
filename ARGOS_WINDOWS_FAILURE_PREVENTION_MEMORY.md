@@ -1,5 +1,13 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### PowerShell `$LASTEXITCODE` can remain stale after a successful script invocation
+
+- Signature: a nonce-bound direct-control command returns `PASS_EXACT_JBOD_DIRECT_COMMAND`, but its local caller throws because `$LASTEXITCODE` still contains a nonzero value from an earlier native process.
+- Cause: invoking a PowerShell script with `&` does not guarantee that the script refreshes `$LASTEXITCODE`; treating that variable as the script result can create a false failure after the remote action succeeded.
+- Preflight: set `$LASTEXITCODE = 0` immediately before each native command that is intentionally checked, and use terminating exceptions plus the returned direct-control state for PowerShell-script success.
+- Recovery: preserve the proved remote PASS, do not replay it, remove the stale `$LASTEXITCODE` assertion from the unfrozen local loop, and continue only the not-yet-executed steps.
+- First observed: OCV-03 annular diagnostic transfer chunk 1 on 2026-09-03; chunk 1 completed once on `A1025645101` and chunks 2 onward remained unexecuted.
+
 ### Direct-control wait requests cannot exceed the controller's 3600-second bound
 
 - Signature: `Invoke-ArgosJbodDirect.ps1` rejects `-TimeoutSeconds 5400` locally
@@ -11365,3 +11373,141 @@ than rerunning it.
   255-character ceiling for existing components, and keep the same lexical
   identity/source hashes and alias suffix. It must run the full boundary set
   in one local package gate before one new portal publication.
+
+## 2026-09-03 — Frozen gate-root assertions cannot be revised in a hash-bound runner
+
+- Failure signature: O3F15L4E2 returned a signed terminal `FAILED` response
+  with `O3F15L4E2 runner GATE failed` after its runner changed only the frozen
+  gate root from `D:\O3F15L4G` to `D:\O3F15L4E2G`.
+- Cause: the unchanged focused regression explicitly requires the original
+  `D:\O3F15L4G` root. Changing the runner to obtain a fresh gate namespace
+  therefore invalidates the frozen focused contract before the full worker
+  can launch.
+- Mandatory preflight: before changing a hash-bound runner constant, search
+  its frozen focused regression for an exact assertion on that constant. A
+  fresh artifact root must not be obtained by revising mutually bound runner
+  and focused-test bytes.
+- Recovery: E2 is immutable and no-retry. Keep the original runner and focused
+  test byte-for-byte; validate and reuse the exact passed E1 focused and R11
+  synthetic evidence, run only the formerly blocked R10-dependent seed gate,
+  and compose a fresh complete prerequisite summary before launch.
+
+## 2026-09-03 — Package the complete transitive import closure for isolated Python gates
+
+- Failure signature: O3F15L4E3 reached the fresh R11 seed gate, imported the
+  packaged R10 detector, and stopped at R10 line 63 because
+  `NativeFrontsideWaferPoseOpenCvV2R6.py` was absent from the payload directory.
+  The full 978 worker never started.
+- Cause: the package added the directly missing R10 file but did not inventory
+  R10's complete same-directory import closure. R10 requires R6, topology, and
+  O3P8; R6 then requires R5, and R5 requires the V2 core. Installed copies do
+  not satisfy an isolated gate whose default dependency root is `$PSScriptRoot`.
+- Mandatory preflight: before freezing a Python gate payload, recursively
+  inventory every literal same-directory `Path(__file__)`, `with_name`, and
+  default-root import through closure. Require every leaf, exact hash, and
+  payload-relative name in the package manifest, and reject an undeclared or
+  missing closure member before signing.
+- Recovery: E3 is immutable and no-retry. A fresh successor may keep all
+  detector, selector, runner, source, and passed-gate bytes unchanged and add
+  the exact four missing closure files: R6, R5, V2 core, and topology. Gate the
+  complete closure in one package before a single new portal publication.
+
+## 2026-09-03 — Pin child dependency-root environment variables to the packaged closure
+
+- Failure signature: O3F15L4E4 packaged the complete R10 dependency closure,
+  but the fresh seed test still resolved `ARGOS_O3F8_DEPENDENCY_ROOT` and
+  `ARGOS_O3P8_ROOT` from the endpoint work directory and stopped before the
+  full 978 worker launched.
+- Cause: the recovery process launched the frozen seed test without overriding
+  its independent default dependency roots. Package presence alone did not
+  make those files reachable through the test's frozen root-selection logic.
+- Mandatory preflight: for every isolated child gate, inventory and pin every
+  root-selection environment variable used by the child and its imports.
+  Assert that each resolves to the packaged payload directory before launch.
+- Recovery: E4 is immutable and no-retry. A fresh successor may change only
+  the immediate child environment so `ARGOS_O3F8_DEPENDENCY_ROOT` and
+  `ARGOS_O3P8_ROOT` both resolve to the packaged payload directory. Detector,
+  selector, runner, tests, sources, thresholds, and holds remain unchanged.
+
+## 2026-09-03 — PowerShell Boolean guards must receive Boolean expressions
+
+- Failure signature: the local O3F8R13T1 packaged rehearsal returned
+  `Cannot process argument transformation on parameter 'Condition'` before
+  creating any rehearsal root because a nonempty invocation-manifest string
+  was passed directly to a `[bool]` guard parameter.
+- Cause: Windows PowerShell 5.1 does not implicitly convert an arbitrary
+  `System.String` during advanced-function parameter binding to a mandatory
+  Boolean guard.
+- Mandatory preflight: every call to a typed `[bool]` assertion helper must
+  pass an explicit Boolean expression; string presence checks use
+  `-not [string]::IsNullOrWhiteSpace(...)`.
+- Recovery: while unsigned and before any external mutation, correct the
+  single guard call, refresh its exact payload and contract hashes, rebuild
+  the local package, and rerun the same packaged rehearsal.
+
+## 2026-09-03 — Focused Python gates must resolve the packaged flat dependency root
+
+- Failure signature: the one published O3F8R13T1 request returned a signed
+  terminal `FAILED` response at `R13 limit test failed`; its worker never
+  launched and no source images were read.
+- Cause: the focused test passed from `work/O3F8` by resolving dependencies
+  beneath its parent work tree, but the signed package flattened the detector
+  and dependency closure into one runtime directory. The same calculation
+  resolved `D:\` on JBOD instead of the packaged runtime directory.
+- Mandatory preflight: execute every packaged Python gate from a fresh flat
+  directory containing the exact declared payload closure. A gate that supports
+  both layouts must prefer verified same-directory dependencies and use the
+  source-tree fallback only when those same-directory files are absent.
+- Recovery: T1 is immutable and no-retry. A fresh successor may change only
+  the focused test's dependency-root selection and bounded child-error
+  reporting, retain the exact R13 detector bytes, and publish only after the
+  exact flat-layout test passes.
+
+## 2026-09-03 — Fresh-engine substitution must not overwrite historical evidence pins
+
+- Failure signature: the single O3F8R13T2 request passed its corrected flat
+  R13 test, then returned signed terminal `FAILED` at `Targeted PREFLIGHT
+  failed`; the worker never launched and no source images were read.
+- Cause: `load_l4()` put R13 into the L4 fresh-run module, which was correct,
+  but then also assigned R13 to the returned frozen O3F15 module. Its
+  `validate_o3f14()` consequently compared the historical O3F14 summary's
+  R11 hash against R13 and rejected the still-valid predecessor evidence.
+- Mandatory preflight: a fresh-engine substitution test must separately assert
+  the fresh execution module's engine hash and the historical evidence
+  module's predecessor hash. They must not be represented by one mutable
+  global pin.
+- Recovery: T2 is immutable and no-retry. A fresh successor may remove only
+  the two returned-frozen-module R13 assignments, retain R13 in the L4
+  fresh-run module, use fresh output roots, and propagate bounded stderr for
+  every child preflight.
+
+## 2026-09-03 — Run the packaged prerequisite-closure assertion before publication
+
+- Failure signature: the single O3F8R13T3 request returned signed terminal
+  `FAILED` in `Run-O3F14Staged.assert_package_pins()` because
+  `Test-O3F14R11SeedAngles.py` was absent from the flat runtime payload. The
+  worker never launched and no source images were read.
+- Cause: the package contained the detector and most inherited O3F14 files,
+  but omitted one exact file required by the inherited nine-file package-pin
+  assertion.
+- Mandatory preflight: from the exact freshly built flat payload, import the
+  packaged `Run-O3F14Staged.py` and execute `assert_package_pins()`. Publication
+  is prohibited unless every inherited dependency exists and matches its
+  frozen hash.
+- Recovery: T3 is immutable and no-retry. T4 adds only the exact missing
+  `Test-O3F14R11SeedAngles.py` plus a focused closure test; detector bytes and
+  all detection semantics remain unchanged.
+
+## 2026-09-03 — Fresh execution must bind the cached child module to the successor engine
+
+- Failure signature: O3F8R13T4 launched its 11-case targeted worker, but all
+  executions used R11: five exceeded R11's DF candidate cap and six lacked
+  R13-only `candidateResourceLimit` evidence.
+- Cause: T4 changed the outer L4 module's R11 path, while `run_one()` launched
+  through the separately cached frozen O3F15 child module whose R11 binding
+  remained unchanged.
+- Mandatory preflight: after historical R11 validation and before `run_one()`,
+  assert that the cached child module resolves the exact pinned R13 path/hash.
+- Recovery: T4 is terminal and no-retry. T5 changes only that fresh child
+  binding, retains historical R11 validation, and keeps all detector semantics,
+  sources, selectors, thresholds, and holds unchanged.

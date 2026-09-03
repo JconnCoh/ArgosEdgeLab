@@ -4,6 +4,20 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 O3F8 R13 T5 targeted child-binding publication — 2026-09-03
+
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F8R13T5_SIGNED_TARGETED_CHILD_BINDING_READY_CHECKPOINT_20260903.md`,
+  SHA-256 `61FC10C6EFA6C93C8690E1A249D4306E7ADC50DF65519152062942992FCB9C56`.
+- Exact signed request `REQ_20260903T233132021Z_2FA7A30A3BB4`, ZIP SHA-256
+  `23801D5C86CFB90C377A83369ED45727AFB6DF4702B3D5F51ABFA62454AC6CA9`,
+  is ready for one publication through the recorded persistent `U:` route.
+- T5 changes only the cached child-module R11-to-R13 execution binding. No
+  selector or threshold changed. Stop for Ultra before image-based tuning.
+- After targeted acceptance, run one fresh full 978 frontside corpus and
+  reconcile holds. Stop this worktree at frontside completion; do not enter
+  scribe.
+
 ## OCV-03 autonomous detector sequence rollover — 2026-08-30
 
 - Current checkpoint:

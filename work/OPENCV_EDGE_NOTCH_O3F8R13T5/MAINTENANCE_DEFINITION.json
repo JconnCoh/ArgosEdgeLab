@@ -1,0 +1,63 @@
+{
+  "schema": "argos_ocv03_o3f8r13t5_maintenance_definition_v1",
+  "revision": "OCV03_O3F8R13T5_TARGETED_DF_RESOURCE_LIMIT_20260903",
+  "state": "FROZEN_FOR_SIGNING",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Invoke-O3F8R13T5.ps1",
+  "changes": [{
+    "source": "payload/OCV03_NotchReviewOpenCvV1.py",
+    "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_NotchReviewOpenCvV1.py",
+    "approvedPredecessorSha256": ["6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4"],
+    "installedSha256": "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+    "allowCreate": false
+  }],
+  "entryPointMutations": [
+    {"action":"CREATE_FRESH_OWNED_RUNTIME_AND_COPY_PINNED_PAYLOAD","targetRoot":"D:/O3F8R13T5RT"},
+    {"action":"START_ONE_OWNED_BACKGROUND_TARGETED_R13_RUN","targetRoot":"D:/O3F8R13T5C"},
+    {"action":"OWNED_CHILD_CREATES_PORTAL_READABLE_STATUS_MIRROR","targetRoot":"D:/KLARFExport/_ArgosReview/F8R13T5S"}
+  ],
+  "entryPointOutputs": [
+    {"path":"D:/O3F8R13T5C/PROGRESS.json","requiredAtLaunch":false},
+    {"path":"D:/O3F8R13T5C/RESULTS.json","requiredAtLaunch":false},
+    {"path":"D:/KLARFExport/_ArgosReview/F8R13T5S/PROGRESS.json","requiredAtLaunch":true},
+    {"path":"D:/KLARFExport/_ArgosReview/F8R13T5S/RESULTS.json","requiredAtLaunch":false}
+  ],
+  "sourceProcessingContract": {
+    "side":"FRONT",
+    "expectedPairCount":11,
+    "hotspotCount":10,
+    "providerErrorCount":5,
+    "unionCount":11,
+    "inventoryPath":"D:/O3F3INV/inventory.json",
+    "inventorySha256":"7320331752A094F51C44F713A9C644AB41A059B0226DE0F8E0BD8E1D0ABCA056",
+    "o3f6ResultsPath":"D:/O3F6R8M/RESULTS.json",
+    "o3f6ResultsSha256":"A933227FE4F41259D53D586CBB5189E1B6542B96B7585B606207DAFD35326BD8",
+    "detectorRevision":"R13",
+    "detectorSha256":"507ED5B9DE13F9DF70AC65E9C714E5E89F52885AA9DF389076E93500E2123EE8",
+    "bfCandidateLimit":24,
+    "dfCandidateResourceLimit":64,
+    "candidateGenerationChanged":false,
+    "candidateOrderingChanged":false,
+    "numericThresholdRelaxationAllowed":false,
+    "postResultSelectorRelaxationAllowed":false,
+    "automaticHoldClearanceAllowed":false
+  },
+  "timeoutContract": {"localRegressionSeconds":120,"preflightSeconds":900,"launchSurvivalProbeSeconds":3,"bootstrapProgressSeconds":600,"endpointResponseIsLaunchOnly":true,"backgroundCompletionIsNotClaimedByLaunchResponse":true},
+  "allowedTaskActions": [],
+  "allowedProcessActions": ["START_ONE_BOUNDED_OWNED_O3F8_R13_TARGETED_CHILD_ONLY","TERMINATE_ONLY_NEWLY_OWNED_CHILD_ON_BOOTSTRAP_FAILURE"],
+  "rehearsal": {
+    "requiredState": "PASS_O3F8R13T5_TARGETED_WORKER_LAUNCHED",
+    "localRehearsalState": "PASS_O3F8R13T5_REHEARSAL_WORKER_LAUNCHED",
+    "normalFixtureMode": "NORMAL",
+    "immediateExitFixtureMode": "IMMEDIATE_EXIT",
+    "collisionRefusalRequired": true
+  },
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

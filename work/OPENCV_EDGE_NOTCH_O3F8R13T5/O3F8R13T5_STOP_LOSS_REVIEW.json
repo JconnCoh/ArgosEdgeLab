@@ -1,0 +1,23 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-09-03T23:16:00Z",
+  "state": "PASS_O3F8R13T5_WORKFLOW_REVIEW_STOP_LOSS_CLEARED",
+  "incidentId": "O3F8R13T4_WRONG_CHILD_ENGINE_BINDING_20260903",
+  "singleMutationAttemptAuthorized": true,
+  "latestFailureObservation": "work/OPENCV_EDGE_NOTCH_O3F8R13T5/O3F8R13T4_FAILURE_OBSERVATION.json",
+  "latestFailureObservationSha256": "EAE8003C96F140C0957AF123F588452962DB370A605F61FC4C6A2BA00EF85AEF",
+  "operatorClearance": "Proceed with T5; stop for Ultra only if real image-analysis judgment is required.",
+  "disallowedNextActions": ["RETRY_T4", "CHANGE_R13_DETECTOR", "RUN_FULL_978", "CHANGE_PORTAL_ROUTE", "RELAX_SELECTOR_OR_THRESHOLD", "CLEAR_HOLDS"],
+  "clearedSuccessor": "O3F8R13T5",
+  "clearedDesign": "Preserve historical R11 validation, then bind only the cached fresh-execution child module to exact pinned R13 before run_one.",
+  "bindingTestPath": "work/O3F8/Test-O3F8R13ExecutionBindingT5.py",
+  "bindingTestSha256": "3CB17343FE5F31B2EBB1DD6FBF5095D686A517368A81988F39D389454A239233",
+  "runnerPath": "work/OPENCV_EDGE_NOTCH_O3F8R13T5/Run-O3F8R13Targeted.py",
+  "runnerSha256": "C170C2411651A5D003FEBE306069BF2798A2FAE5109C1CF1C4A952F1672E056B",
+  "sourceMutationAllowed": false,
+  "existingTaskOrProcessActionAllowed": false,
+  "providerActivationAllowed": false,
+  "automaticRetryAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
