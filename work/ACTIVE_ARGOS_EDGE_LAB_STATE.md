@@ -9641,3 +9641,27 @@ Exact next scribe-lane action: build and locally gate one fresh signed R18G
 `DATA_PULL` package. Publication requires an explicit R18G `PUBLISH`; one
 publication maximum and no retry. Missing `I/O/V/Y` reference coverage and all
 review-only authority holds remain unchanged. Do not run the full corpus.
+
+# 2026-09-03 — OCV-02 R18G exact signed pull ready locally (`PENDING_GATE`)
+
+R18G request `REQ_20260903T220000000Z_R18G` is signed and frozen locally.
+Its 1,414-byte ZIP has SHA-256
+`B78FE1E9112FEEEB22FBDA3AA442B81237A207C26F6A62E4E1AAADFD5DA5AEE4`
+and requests only the frozen cohort's 24 existing proposal/BF/DF crop files.
+Windows PowerShell 5.1 parser, signature/extraction, clone, harness,
+zero-recurrence, and complete-route path gates pass. The 26 modeled route
+leaves remain below effective length 200.
+
+The request ID is absent from portal upload, ready, and processed paths. No
+publication or JBOD action occurred; the package and route gates explicitly
+record that publication is unauthorized and requires a fresh explicit
+`PUBLISH` for R18G.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18G/R18G_LOCAL_PACKAGE_READY_CHECKPOINT_20260903.md`,
+SHA-256 `FA3830F24D1BC500E61806059DFAB5F46599AC3559B17AF76BB9792DE244BA75`.
+
+Exact next scribe-lane action: commit/push the frozen package and checkpoint,
+verify the dedicated branch clean and matching origin, then wait. After an
+explicit R18G `PUBLISH`, publish exactly once and collect only its matching
+signed terminal response. No retry, full-corpus run, or authority expansion.
