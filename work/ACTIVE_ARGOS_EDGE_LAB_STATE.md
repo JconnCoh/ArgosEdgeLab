@@ -9401,3 +9401,27 @@ only the displayed `W` and `Z` cells into a fresh supplemental reference
 revision, rerun local gates, then select a fresh blind cohort. Do not run the
 full KLARF directory. R18A is no-retry. No provider activation, identity
 acceptance, automatic hold clearance, XML, training, or production authority.
+
+# 2026-09-03 — OCV-02 R18D W/Z local reference gate (`DIAGNOSTIC_ONLY`)
+
+The operator confirmed the exact displayed W and Z glyph cells. Fresh R18D
+uses their native 96×230 OpenCV crops, not the enlarged review images, and
+leaves the frozen R16A supplement unchanged. The new diagnostic supplement
+has SHA-256
+`8B7F0BAC5892DA7BBB4D25CDD058CC995042A0C596F3790FE333AAAEEE43D60A`.
+
+W now reads exact `148AW103SUD5` and Z reads exact `147Z6157SUA5`. The local
+gate preserves nine additional known-visible exact strings and keeps all five
+known blank/wrong-location crops empty. Missing reference coverage is now
+`I/O/V/Y`; W/Z still require independent fresh-wafer validation because the
+confirmed integrations necessarily use their own admitted examples.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18D/R18D_WZ_REFERENCE_LOCAL_CHECKPOINT_20260903.md`,
+SHA-256 `815853F1F701370CF630B4E951B8F1930B3CF516F850BA2E83742159D7AD952C`.
+
+Exact next scribe-lane action: select a fresh failure-first cohort and perform
+bounded blind validation, including independent W/Z examples if present. Keep
+`I/O/V/Y` as explicit coverage holds and do not run the full KLARF directory.
+No activation, identity acceptance, hold clearance, XML, training, production,
+JBOD, portal, queue, task/process, source-image, or wafer action is authorized.
