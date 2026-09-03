@@ -9784,3 +9784,18 @@ Checkpoint:
 
 Next: commit/push the freeze, then visually review only the four development
 BF/DF crops. Keep the four blind acquisitions unopened.
+
+# 2026-09-03 — OCV-02 R18G development visual review (`DIAGNOSTIC_ONLY`)
+
+Three of four development outcomes are correct: POST2 Slot17 is a valid
+no-scribe localization hold, Slot05 is exact `L0751037FEA2`, and POST Slot22
+is exact `146XF113SUA5`. Slot08 visibly reads `1478T161SUG7`; image-first OCR
+returned `14787161SUG7` because `7` exceeded `T` by only `0.007726` at position
+5. The checksum diagnostic contains the visible string but did not select it.
+
+Visual gate SHA-256:
+`6961A9423C10A4D12248EB7B8F1FE4761E457DEF975E7F3976BF43198D6E9538`.
+Zero blind R18G acquisitions were opened.
+
+Next: make an image-only `T/7` ranking correction and run the smallest local
+visible/blank regression before blind review.

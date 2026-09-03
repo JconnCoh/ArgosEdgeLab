@@ -1,0 +1,51 @@
+{
+  "schema": "argos_opencv_scribe_r18g_development_visual_review_gate_v1",
+  "state": "COMPLETE_R18G_DEVELOPMENT_VISUAL_REVIEW_ONE_OCR_DEFECT",
+  "frozenDevelopmentGateSha256": "00171687AA7D9C860E294546E498613D17C44B1751DBDA6F2E4F5A2CD2C1820E",
+  "reviewedDevelopmentCount": 4,
+  "exactOrCorrectHoldCount": 3,
+  "ocrDefectCount": 1,
+  "blindAcquisitionsRead": 0,
+  "rows": [
+    {
+      "physicalIdentity": "Lot-62546-481-POST2_20260713155808_Slot17",
+      "frozenImageFirstString": "",
+      "visibleReviewCandidateString": "",
+      "assessment": "CORRECT_SCRIBE_NOT_LOCALIZED_HOLD",
+      "note": "The installed oriented crop contains wafer edge and patterned fields but no visible scribe."
+    },
+    {
+      "physicalIdentity": "62620-548_20260810154124_Slot05",
+      "frozenImageFirstString": "L0751037FEA2",
+      "visibleReviewCandidateString": "L0751037FEA2",
+      "assessment": "EXACT_VISIBLE_STRING"
+    },
+    {
+      "physicalIdentity": "62624-855_20260721120719_Slot08",
+      "frozenImageFirstString": "14787161SUG7",
+      "visibleReviewCandidateString": "1478T161SUG7",
+      "assessment": "OCR_DEFECT_POSITION_5_T_MISREAD_AS_7",
+      "imageFirstTopCharacter": "7",
+      "imageFirstTopAppearanceScore": 0.7116968125187093,
+      "visibleCharacter": "T",
+      "visibleCharacterAppearanceScore": 0.7039707517526532,
+      "appearanceScoreGap": 0.0077260607660561,
+      "checksumAlternativeString": "1478T161SUG7",
+      "checksumUsedForGlyphSelection": false,
+      "note": "Visible T must be selected image-first; checksum remains verification only."
+    },
+    {
+      "physicalIdentity": "62625-907-POST-20260714155300_20260714155354_Slot22",
+      "frozenImageFirstString": "146XF113SUA5",
+      "visibleReviewCandidateString": "146XF113SUA5",
+      "assessment": "EXACT_VISIBLE_STRING"
+    }
+  ],
+  "reviewOnly": true,
+  "identityAcceptanceAuthorized": false,
+  "automaticReferenceAdmissionAuthorized": false,
+  "trainingAuthorized": false,
+  "activationAuthorized": false,
+  "productionAuthorized": false,
+  "nextAction": "Correct the image-first T-versus-7 ranking defect without checksum selection, then run the smallest local visible/blank regression before any blind R18G pixel read."
+}
