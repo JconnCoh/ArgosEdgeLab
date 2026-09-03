@@ -1,0 +1,13 @@
+{
+  "schema":"argos_r14p_exact_response_collector_correction_gate_v2",
+  "createdUtc":"2026-09-03T12:13:00Z",
+  "state":"PASS_R14P_EXACT_RESPONSE_COLLECTOR_CORRECTION_R3",
+  "classification":"FROZEN_REVIEW_ONLY",
+  "requestId":"REQ_20260902T204408092Z_R14P",
+  "response":{"fileName":"R_EBC95A67AB32_20260903120903951_4583d653.ready.zip","bytes":176461,"sha256":"E0D7510A65931CDB036E3E63F17A315A442E18C69D239EE1362E2F5D514D8D7A","entryCount":5,"requestIdObserved":"REQ_20260902T204408092Z_R14P"},
+  "supersededCollector":{"path":"work/OPENCV_SCRIBE_R14/Collect-R14PResponseR2.ps1","sha256":"DCAD95EF5D35F5746A828241C1049B6B1FA5A2E24D0649AF639201B26F29FABB","disposition":"WITHDRAWN_BEFORE_COLLECTION","failure":"Clone-root gate found the unchanged C:\\R14R literal alongside the new C:\\R14R2 root."},
+  "currentCollector":{"path":"work/OPENCV_SCRIBE_R14/Collect-R14PResponseR3.ps1","sha256":"5267D0A8F2F440D31D70421A60E3972921F4D703228FC515BDFE7B9279F325FC","selectionMode":"EXACT_OBSERVED_RESPONSE_LEAF_WITH_PINNED_BYTES_AND_SHA256","signatureVerificationRequired":true,"exactRequestIdRequired":true,"allScratchRoots":"C:\\R14R3"},
+  "cloneGate":{"path":"work/OPENCV_SCRIBE_R14/R14P_RESPONSE_COLLECTOR_CLONE_LITERAL_GATE_R3.json","sha256":"819734B12BB07E0388DA58A44F0295AEC15982A9434C25771344AF8B075E7687","state":"PASS_ARGOS_CLONE_LITERAL_REMEDIATION"},
+  "safety":{"failedPreflightExternalWrites":false,"publicationPerformedExactlyOnce":true,"requestRetryPerformed":false,"responseExtractionPerformed":false,"freshCollectorNamespaceUsed":true},
+  "authority":{"reviewOnly":true,"automaticIdentityAuthority":false,"trainingEligible":false,"xmlEligible":false,"productionEligible":false,"productionRoutingEnabled":false,"providerActivationAllowed":false}
+}

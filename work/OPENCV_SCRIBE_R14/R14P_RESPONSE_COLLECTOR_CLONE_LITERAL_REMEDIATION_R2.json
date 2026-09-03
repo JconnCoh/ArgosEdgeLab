@@ -1,0 +1,17 @@
+{
+  "schema":"argos_clone_literal_remediation_manifest_v1",
+  "revision":"R14P_RESPONSE_COLLECTOR_R2_20260903",
+  "purpose":"Classify exact roots for the fresh exact-response R14P collector successor.",
+  "pairs":[{
+    "source":"work/OPENCV_SCRIBE_R14/Collect-R14PResponse.ps1",
+    "sourceSha256":"2068B35DF35B0DBD7E26DE12B4509F3BA39AF53F67F730133DE06781DA6733FC",
+    "generated":"work/OPENCV_SCRIBE_R14/Collect-R14PResponseR2.ps1",
+    "generatedSha256":"DCAD95EF5D35F5746A828241C1049B6B1FA5A2E24D0649AF639201B26F29FABB",
+    "rootRules":[
+      {"sourceRoot":"C:\\R14R","generatedRoot":"C:\\R14R2","disposition":"REPLACED"},
+      {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"},
+      {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"}
+    ]
+  }],
+  "authority":{"metadataOnly":true,"targetExecuted":false,"publicationAuthorized":false,"reviewOnly":true,"productionRoutingEnabled":false}
+}

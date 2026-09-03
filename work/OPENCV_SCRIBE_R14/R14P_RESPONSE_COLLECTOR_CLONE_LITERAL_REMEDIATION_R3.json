@@ -1,0 +1,18 @@
+{
+  "schema":"argos_clone_literal_remediation_manifest_v1",
+  "revision":"R14P_RESPONSE_COLLECTOR_R3_20260903",
+  "purpose":"Fresh successor classification that removes both predecessor scratch-root literals from the exact-response collector.",
+  "pairs":[{
+    "source":"work/OPENCV_SCRIBE_R14/Collect-R14PResponseR2.ps1",
+    "sourceSha256":"DCAD95EF5D35F5746A828241C1049B6B1FA5A2E24D0649AF639201B26F29FABB",
+    "generated":"work/OPENCV_SCRIBE_R14/Collect-R14PResponseR3.ps1",
+    "generatedSha256":"5267D0A8F2F440D31D70421A60E3972921F4D703228FC515BDFE7B9279F325FC",
+    "rootRules":[
+      {"sourceRoot":"C:\\R14R","generatedRoot":"C:\\R14R3","disposition":"REPLACED"},
+      {"sourceRoot":"C:\\R14R2","generatedRoot":"C:\\R14R3","disposition":"REPLACED"},
+      {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"},
+      {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"}
+    ]
+  }],
+  "authority":{"metadataOnly":true,"targetExecuted":false,"publicationAuthorized":false,"reviewOnly":true,"productionRoutingEnabled":false}
+}

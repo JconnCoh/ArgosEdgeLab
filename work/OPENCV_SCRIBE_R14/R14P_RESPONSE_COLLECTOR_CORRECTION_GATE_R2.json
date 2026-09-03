@@ -1,0 +1,12 @@
+{
+  "schema": "argos_r14p_exact_response_collector_correction_gate_v1",
+  "createdUtc": "2026-09-03T12:10:00Z",
+  "state": "PASS_R14P_EXACT_RESPONSE_COLLECTOR_CORRECTION_R2",
+  "classification": "FROZEN_REVIEW_ONLY",
+  "requestId": "REQ_20260902T204408092Z_R14P",
+  "response": {"fileName":"R_EBC95A67AB32_20260903120903951_4583d653.ready.zip","bytes":176461,"sha256":"E0D7510A65931CDB036E3E63F17A315A442E18C69D239EE1362E2F5D514D8D7A","entryCount":5,"requestIdObserved":"REQ_20260902T204408092Z_R14P"},
+  "supersededCollector": {"path":"work/OPENCV_SCRIBE_R14/Collect-R14PResponse.ps1","sha256":"2068B35DF35B0DBD7E26DE12B4509F3BA39AF53F67F730133DE06781DA6733FC","disposition":"WITHDRAWN_FOR_COLLECTION","failure":"The all-history scan encountered an unrelated historical response archive above its outer ZIP entry cap before reaching the exact R14P response."},
+  "currentCollector": {"path":"work/OPENCV_SCRIBE_R14/Collect-R14PResponseR2.ps1","sha256":"DCAD95EF5D35F5746A828241C1049B6B1FA5A2E24D0649AF639201B26F29FABB","selectionMode":"EXACT_OBSERVED_RESPONSE_LEAF_WITH_PINNED_BYTES_AND_SHA256","signatureVerificationRequired":true,"exactRequestIdRequired":true},
+  "safety": {"failedPreflightExternalWrites":false,"publicationPerformedExactlyOnce":true,"requestRetryPerformed":false,"responseExtractionPerformed":false,"freshCollectorNamespaceUsed":true},
+  "authority": {"reviewOnly":true,"automaticIdentityAuthority":false,"trainingEligible":false,"xmlEligible":false,"productionEligible":false,"productionRoutingEnabled":false,"providerActivationAllowed":false}
+}
