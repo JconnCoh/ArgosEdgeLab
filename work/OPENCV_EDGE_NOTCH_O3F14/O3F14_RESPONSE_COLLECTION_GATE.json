@@ -1,0 +1,346 @@
+{
+    "schema":  "argos_ocv03_o3f14_response_collection_gate_v1",
+    "state":  "PASS_O3F14_MATCHING_SIGNED_RESPONSE_COLLECTED",
+    "requestId":  "REQ_O3F14_20260902A",
+    "responseId":  "R_0290E79CBA3A_20260903060812341_5cf7d402",
+    "responseZipPath":  "C:\\A14C\\R_0290E79CBA3A_20260903060812341_5cf7d402.ready.zip",
+    "responseZipSha256":  "E2BA34B0FD0C1FC3A3968FC81E197FFDE6AB6F6B120B6DDEDEEF3D8DD7182776",
+    "signatureVerified":  true,
+    "endpointState":  "COMPLETE_O3F14_GATE_AND_DEV6_RESULTS_RETURNED_REVIEW_ONLY",
+    "stages":  [
+                   "SELF_TEST",
+                   "PREFLIGHT",
+                   "ROOT_CONTRACT",
+                   "GATE",
+                   "DEV6"
+               ],
+    "ownedChildCount":  5,
+    "runnerSha256":  "CAAFD1AC8C19E33D95BA8283963A4D0ED0189FF566C9923822BF3EC37956171E",
+    "sourceAliasPlanSha256":  "2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C",
+    "rootContract":  {
+                         "schema":  "argos_ocv03_o3f14_exact_runner_root_contract_v1",
+                         "state":  "PASS_O3F14_EXACT_REAL_RUNNER_ROOT_CONTRACT",
+                         "runnerSha256":  "CAAFD1AC8C19E33D95BA8283963A4D0ED0189FF566C9923822BF3EC37956171E",
+                         "gateRoot":  "D:/O3F9G14",
+                         "dev6Root":  "D:/O3F9D14",
+                         "simulatedFilesystem":  false,
+                         "incompatibleO3F14PrefixRejected":  true,
+                         "gateTerminalKeys":  [
+                                                  "commands",
+                                                  "stage",
+                                                  "state",
+                                                  "summarySha256"
+                                              ],
+                         "dev6TerminalKeys":  [
+                                                  "aliasEvidence",
+                                                  "executedCount",
+                                                  "newProviderHoldCount",
+                                                  "results",
+                                                  "selectedCount",
+                                                  "stage",
+                                                  "state",
+                                                  "stateCounts",
+                                                  "summarySha256"
+                                              ],
+                         "aliasContract":  {
+                                               "planSha256":  "2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C",
+                                               "schema":  "argos_ocv03_o3f12_dev6_source_alias_plan_v1",
+                                               "state":  "FROZEN_FOR_BUILD",
+                                               "aliasDrive":  "Q:",
+                                               "caseCount":  6,
+                                               "canonicalLeafCount":  12,
+                                               "aliasLeafCount":  12,
+                                               "minimumCanonicalEffectiveLength":  206,
+                                               "maximumCanonicalEffectiveLength":  227,
+                                               "maximumAliasEffectiveLength":  137,
+                                               "slot16BroadRootMinimumEffectiveLength":  211,
+                                               "broadRootSlot16Rejected":  true,
+                                               "sourceImageBytesRead":  false,
+                                               "substPath":  "C:\\Windows\\System32\\subst.exe",
+                                               "substSha256":  "158598ED3D590937C964B43DD91546FFCABAB5636B6CE619B4FFC43224013BB6",
+                                               "lifecycle":  {
+                                                                 "exercised":  false,
+                                                                 "metadataStaticChecksOnly":  true
+                                                             }
+                                           },
+                         "sourceImageBytesRead":  false,
+                         "outputCreated":  false,
+                         "mutationsPerformed":  false
+                     },
+    "aliasEvidence":  {
+                          "state":  "COMPLETE_O3F14_Q_ALIAS_LIFECYCLE",
+                          "aliasDrive":  "Q:",
+                          "aliasAnchorKind":  "CASE_SLOT_ROOT",
+                          "sourceAliasPlanSha256":  "2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C",
+                          "frozenPlanExactOrderedMatch":  true,
+                          "prevalidatedCaseCount":  6,
+                          "executedCaseCount":  6,
+                          "allMappingsRemovedAndVerifiedAbsent":  true,
+                          "cases":  [
+                                        {
+                                            "ordinal":  1,
+                                            "identity":  "PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot01|FRONT",
+                                            "exactTargetVerified":  true,
+                                            "sameFileVerified":  true,
+                                            "ownedMappingRemoved":  true,
+                                            "verifiedAbsentAfterRemove":  true
+                                        },
+                                        {
+                                            "ordinal":  2,
+                                            "identity":  "PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot02|FRONT",
+                                            "exactTargetVerified":  true,
+                                            "sameFileVerified":  true,
+                                            "ownedMappingRemoved":  true,
+                                            "verifiedAbsentAfterRemove":  true
+                                        },
+                                        {
+                                            "ordinal":  3,
+                                            "identity":  "PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot04|FRONT",
+                                            "exactTargetVerified":  true,
+                                            "sameFileVerified":  true,
+                                            "ownedMappingRemoved":  true,
+                                            "verifiedAbsentAfterRemove":  true
+                                        },
+                                        {
+                                            "ordinal":  4,
+                                            "identity":  "PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot08|FRONT",
+                                            "exactTargetVerified":  true,
+                                            "sameFileVerified":  true,
+                                            "ownedMappingRemoved":  true,
+                                            "verifiedAbsentAfterRemove":  true
+                                        },
+                                        {
+                                            "ordinal":  5,
+                                            "identity":  "PatternedFront\\Lot_62616-131\\62616-131_20260825233731\\Slot09|FRONT",
+                                            "exactTargetVerified":  true,
+                                            "sameFileVerified":  true,
+                                            "ownedMappingRemoved":  true,
+                                            "verifiedAbsentAfterRemove":  true
+                                        },
+                                        {
+                                            "ordinal":  6,
+                                            "identity":  "PatternedFront\\Lot_62629-419_NotchBad_Hotspot\\62629-419_20260824112405\\Slot16|FRONT",
+                                            "exactTargetVerified":  true,
+                                            "sameFileVerified":  true,
+                                            "ownedMappingRemoved":  true,
+                                            "verifiedAbsentAfterRemove":  true
+                                        }
+                                    ]
+                      },
+    "endpointAliasCleanupBackstop":  {
+                                         "aliasDrive":  "Q:",
+                                         "mappingObserved":  false,
+                                         "removedByBackstop":  false,
+                                         "verifiedAbsent":  true,
+                                         "matchedAllowedTarget":  false
+                                     },
+    "temporarySourceAliasDrive":  "Q:",
+    "temporarySourceAliasVerifiedAbsentAfterDev6":  true,
+    "sourceImageBytesRead":  true,
+    "holdsAutomaticallyCleared":  false,
+    "gateState":  "COMPLETE_O3F14_GATE",
+    "gateSummarySha256":  "6FADF86A5737D33CBB605D8928F720DA86733BFA2CDEDFBAE76641909C416255",
+    "dev6ChildExitCode":  0,
+    "dev6State":  "COMPLETE_O3F14_DEV6",
+    "dev6Disposition":  "COMPLETE",
+    "dev6SelectedCount":  6,
+    "dev6ExecutedCount":  6,
+    "dev6NewProviderHoldCount":  0,
+    "dev6SummarySha256":  "22B2CE0A05D2AD5802717CAE13F5E425DAB77D16B224CEE6FBBED3782E0050B3",
+    "dev6StateCounts":  {
+                            "PASS_REVIEW_ONLY_R10_SYMMETRIC_LOCAL_CROSS_CHANNEL_NOTCH_CANDIDATE":  4,
+                            "HOLD_MULTIPLE_R10_SYMMETRIC_LOCAL_CROSS_CHANNEL_NOTCHES":  1,
+                            "HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH":  1
+                        },
+    "dev6Cases":  [
+                      {
+                          "identity":  "PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot01|FRONT",
+                          "safeId":  "PatternedFront_Lot_62615-962_62615-962_202_746c357524",
+                          "priorR8State":  "HOLD_DF_RADIAL_FULL_PERIMETER_NOT_QUALIFIED",
+                          "baselineR8State":  "HOLD_DF_RADIAL_FULL_PERIMETER_NOT_QUALIFIED",
+                          "inheritedR9State":  "HOLD_DF_RADIAL_FULL_PERIMETER_NOT_QUALIFIED",
+                          "finalState":  "PASS_REVIEW_ONLY_R10_SYMMETRIC_LOCAL_CROSS_CHANNEL_NOTCH_CANDIDATE",
+                          "r11Invoked":  true,
+                          "physicalClusterCount":  1,
+                          "selectedClusterDirections":  [
+                                                            "BF_SEEDED_LOCAL_DF"
+                                                        ],
+                          "dfSeedCount":  0,
+                          "dfHypothesisCount":  0,
+                          "dfEligibleCount":  0,
+                          "bfSeedCount":  2,
+                          "bfHypothesisCount":  2,
+                          "bfEligibleCount":  1,
+                          "eligibleHypothesisCount":  1,
+                          "eligibleCorrespondence":  [
+                                                         {
+                                                             "hypothesisId":  "B002-D001",
+                                                             "direction":  "BF_SEEDED_LOCAL_DF",
+                                                             "correspondenceMethod":  "CENTER_TOLERANCE",
+                                                             "centerGapDegrees":  0.7075226946914484,
+                                                             "mouthIntervalOverlapDegrees":  1.300937677693497
+                                                         }
+                                                     ],
+                          "error":  ""
+                      },
+                      {
+                          "identity":  "PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot02|FRONT",
+                          "safeId":  "PatternedFront_Lot_62615-962_62615-962_202_fb64860b9a",
+                          "priorR8State":  "HOLD_DF_RADIAL_FULL_PERIMETER_NOT_QUALIFIED",
+                          "baselineR8State":  "HOLD_DF_RADIAL_FULL_PERIMETER_NOT_QUALIFIED",
+                          "inheritedR9State":  "HOLD_DF_RADIAL_FULL_PERIMETER_NOT_QUALIFIED",
+                          "finalState":  "HOLD_MULTIPLE_R10_SYMMETRIC_LOCAL_CROSS_CHANNEL_NOTCHES",
+                          "r11Invoked":  true,
+                          "physicalClusterCount":  2,
+                          "selectedClusterDirections":  [
+
+                                                        ],
+                          "dfSeedCount":  0,
+                          "dfHypothesisCount":  0,
+                          "dfEligibleCount":  0,
+                          "bfSeedCount":  2,
+                          "bfHypothesisCount":  5,
+                          "bfEligibleCount":  2,
+                          "eligibleHypothesisCount":  2,
+                          "eligibleCorrespondence":  [
+                                                         {
+                                                             "hypothesisId":  "B001-D003",
+                                                             "direction":  "BF_SEEDED_LOCAL_DF",
+                                                             "correspondenceMethod":  "CENTER_TOLERANCE",
+                                                             "centerGapDegrees":  1.3599320450582297,
+                                                             "mouthIntervalOverlapDegrees":  0.0
+                                                         },
+                                                         {
+                                                             "hypothesisId":  "B002-D001",
+                                                             "direction":  "BF_SEEDED_LOCAL_DF",
+                                                             "correspondenceMethod":  "CENTER_TOLERANCE",
+                                                             "centerGapDegrees":  0.7211576117919662,
+                                                             "mouthIntervalOverlapDegrees":  1.3456796109710467
+                                                         }
+                                                     ],
+                          "error":  ""
+                      },
+                      {
+                          "identity":  "PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot04|FRONT",
+                          "safeId":  "PatternedFront_Lot_62615-962_62615-962_202_bd9355d99d",
+                          "priorR8State":  "HOLD_DF_RADIAL_FULL_PERIMETER_NOT_QUALIFIED",
+                          "baselineR8State":  "HOLD_DF_RADIAL_FULL_PERIMETER_NOT_QUALIFIED",
+                          "inheritedR9State":  "HOLD_DF_RADIAL_FULL_PERIMETER_NOT_QUALIFIED",
+                          "finalState":  "PASS_REVIEW_ONLY_R10_SYMMETRIC_LOCAL_CROSS_CHANNEL_NOTCH_CANDIDATE",
+                          "r11Invoked":  true,
+                          "physicalClusterCount":  1,
+                          "selectedClusterDirections":  [
+                                                            "BF_SEEDED_LOCAL_DF"
+                                                        ],
+                          "dfSeedCount":  0,
+                          "dfHypothesisCount":  0,
+                          "dfEligibleCount":  0,
+                          "bfSeedCount":  1,
+                          "bfHypothesisCount":  1,
+                          "bfEligibleCount":  1,
+                          "eligibleHypothesisCount":  1,
+                          "eligibleCorrespondence":  [
+                                                         {
+                                                             "hypothesisId":  "B001-D001",
+                                                             "direction":  "BF_SEEDED_LOCAL_DF",
+                                                             "correspondenceMethod":  "CENTER_TOLERANCE",
+                                                             "centerGapDegrees":  0.9387280420685045,
+                                                             "mouthIntervalOverlapDegrees":  1.3149988053215793
+                                                         }
+                                                     ],
+                          "error":  ""
+                      },
+                      {
+                          "identity":  "PatternedFront\\Lot_62615-962\\62615-962_20260830004716\\Slot08|FRONT",
+                          "safeId":  "PatternedFront_Lot_62615-962_62615-962_202_bc9635f9a8",
+                          "priorR8State":  "HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+                          "baselineR8State":  "HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+                          "inheritedR9State":  "HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+                          "finalState":  "PASS_REVIEW_ONLY_R10_SYMMETRIC_LOCAL_CROSS_CHANNEL_NOTCH_CANDIDATE",
+                          "r11Invoked":  true,
+                          "physicalClusterCount":  1,
+                          "selectedClusterDirections":  [
+                                                            "BF_SEEDED_LOCAL_DF"
+                                                        ],
+                          "dfSeedCount":  0,
+                          "dfHypothesisCount":  0,
+                          "dfEligibleCount":  0,
+                          "bfSeedCount":  1,
+                          "bfHypothesisCount":  1,
+                          "bfEligibleCount":  1,
+                          "eligibleHypothesisCount":  1,
+                          "eligibleCorrespondence":  [
+                                                         {
+                                                             "hypothesisId":  "B001-D001",
+                                                             "direction":  "BF_SEEDED_LOCAL_DF",
+                                                             "correspondenceMethod":  "CENTER_TOLERANCE",
+                                                             "centerGapDegrees":  0.059158969483860346,
+                                                             "mouthIntervalOverlapDegrees":  1.8049539057130488
+                                                         }
+                                                     ],
+                          "error":  ""
+                      },
+                      {
+                          "identity":  "PatternedFront\\Lot_62616-131\\62616-131_20260825233731\\Slot09|FRONT",
+                          "safeId":  "PatternedFront_Lot_62616-131_62616-131_202_aae0de7fdf",
+                          "priorR8State":  "HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+                          "baselineR8State":  "HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+                          "inheritedR9State":  "PASS_REVIEW_ONLY_O3P8_DF_SEEDED_LOCAL_BF_NOTCH_CANDIDATE",
+                          "finalState":  "PASS_REVIEW_ONLY_R10_SYMMETRIC_LOCAL_CROSS_CHANNEL_NOTCH_CANDIDATE",
+                          "r11Invoked":  true,
+                          "physicalClusterCount":  1,
+                          "selectedClusterDirections":  [
+                                                            "DF_SEEDED_LOCAL_BF"
+                                                        ],
+                          "dfSeedCount":  3,
+                          "dfHypothesisCount":  3,
+                          "dfEligibleCount":  1,
+                          "bfSeedCount":  1,
+                          "bfHypothesisCount":  1,
+                          "bfEligibleCount":  0,
+                          "eligibleHypothesisCount":  1,
+                          "eligibleCorrespondence":  [
+                                                         {
+                                                             "hypothesisId":  "DF-D001",
+                                                             "direction":  "DF_SEEDED_LOCAL_BF",
+                                                             "correspondenceMethod":  "MOUTH_INTERVAL_OVERLAP",
+                                                             "centerGapDegrees":  1.9314853135348358,
+                                                             "mouthIntervalOverlapDegrees":  0.14109426658845337
+                                                         }
+                                                     ],
+                          "error":  ""
+                      },
+                      {
+                          "identity":  "PatternedFront\\Lot_62629-419_NotchBad_Hotspot\\62629-419_20260824112405\\Slot16|FRONT",
+                          "safeId":  "PatternedFront_Lot_62629-419_NotchBad_Hots_5b0a0bfeaa",
+                          "priorR8State":  "HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+                          "baselineR8State":  "HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+                          "inheritedR9State":  "HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+                          "finalState":  "HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH",
+                          "r11Invoked":  true,
+                          "physicalClusterCount":  0,
+                          "selectedClusterDirections":  [
+
+                                                        ],
+                          "dfSeedCount":  21,
+                          "dfHypothesisCount":  21,
+                          "dfEligibleCount":  0,
+                          "bfSeedCount":  1,
+                          "bfHypothesisCount":  1,
+                          "bfEligibleCount":  0,
+                          "eligibleHypothesisCount":  0,
+                          "eligibleCorrespondence":  [
+
+                                                     ],
+                          "error":  ""
+                      }
+                  ],
+    "explicitProviderHoldCases":  [
+
+                                  ],
+    "requestRetryAuthorized":  false,
+    "sourceMutationPerformed":  false,
+    "providerActivated":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}
