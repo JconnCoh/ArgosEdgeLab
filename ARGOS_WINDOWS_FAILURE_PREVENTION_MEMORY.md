@@ -11337,3 +11337,31 @@ than rerunning it.
   gate, 549-plus-256 capacity bound, 60-second cohort lookback, exact
   manifest-only correlation, duplicate hard stop, and every
   no-mutation/no-retry control.
+
+## 2026-09-03 — Existing source components are not newly created alias components
+
+- Failure signature: the one published O3F15L4D2 metadata-only PREFLIGHT
+  child exited `1` in `generalized_alias_plans` with
+  `L4AliasContractError: BF alias component exceeds 80 characters`. The signed
+  response is terminal `FAILED` / `CHILD_NONZERO`; no image bytes, Q mapping,
+  detector result root, source mutation, task/process action, provider action,
+  retry, or hold clearance occurred.
+- Cause: the focused synthetic 978 corpus used short generated source leaves
+  and its one real-shaped Slot19 control also stayed below the 80-character
+  component boundary. The runner then applied the new-component limit to
+  every component of an alias made entirely from the already existing,
+  exact-suffix-proven source path. The actual frozen metadata contains at
+  least one longer existing component, so the diagnostic stopped before it
+  could emit the complete 978/1,956 classification.
+- Mandatory preflight: every path-planning test must include existing source
+  components at 80, 81, and the Windows 255-character ceiling, rejection at
+  256, plus an independently new 81-character component. Existing components may be
+  carried through an exact normalized source suffix only when no directory or
+  leaf is created; newly created components remain capped at 80. Effective
+  path limits and suffix reserve remain unchanged.
+- Recovery: D2 is immutable and no-retry. A fresh diagnostic successor may
+  distinguish exact existing source components from introduced components,
+  retain the 80-character hard stop for every introduced component, retain a
+  255-character ceiling for existing components, and keep the same lexical
+  identity/source hashes and alias suffix. It must run the full boundary set
+  in one local package gate before one new portal publication.

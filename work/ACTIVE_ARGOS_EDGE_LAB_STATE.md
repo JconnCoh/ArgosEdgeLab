@@ -10474,3 +10474,64 @@ prohibited.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4D2_PUBLISHED_RESPONSE_FINDER_CAPACITY_HOLD_CHECKPOINT_20260903.md`,
 SHA-256 `854A2341FB1D314446112A6BC3EDE775F8E7988A5224BB924D4086D1CABE72DE`.
+
+## OCV-03 O3F15L4D2 signed terminal existing-component failure / D3 next — 2026-09-03
+
+Disposition: `DIAGNOSTIC_ONLY`
+
+Fresh read-only F3 finder
+`6644B225495F7575681E1825E6F98EA6D54DC742031F90B35EA06AF467986A40`
+ran once and found exactly one signed response for the already published D2
+request. Response `R_ACB193568962_20260903133607394_714fcac9`, ZIP
+`4A26C88AF87D958BEC63A1140534CE67D540E9F4158BC58298C5774B71F245FF`,
+verifies and is terminal `FAILED` / `CHILD_NONZERO`. Its sole metadata-only
+child stopped in `generalized_alias_plans` with `BF alias component exceeds 80
+characters`; zero image/Q/GATE/RUN/result-root/source/task/process/provider or
+hold action occurred. Collection gate
+`695E8B1E0C6C6A3588BBA1DEFE223D47465108C88F36CC7C4C2050913534D18C`
+is diagnostic-only. D2 is immutable and no-retry.
+
+The local synthetic corpus missed the boundary because its generated leaves
+and Slot19 control were shorter than 81 characters. Fresh D3 may correct only
+the path classifier and exact tests/contracts: preserve canonical path/hash/
+bytes, distinguish exact pre-existing source components from newly introduced
+components, retain the 80-character new-component cap and 32-character suffix
+reserve, test existing-source boundaries 80/81/255, reject existing 256, and
+reject a new 81-character component in one batch. It remains one metadata-only PREFLIGHT
+publication with no detector or image action.
+
+Full frontside remains blocked pending signed complete 978/1,956 metadata.
+All 184/12 holds, Slot02, Slot16, and frontside → scribe → combined/unified →
+fiducial/alignment order remain. RustDesk/operator input and training/XML/
+production remain prohibited.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4D2_SIGNED_TERMINAL_EXISTING_COMPONENT_FAILURE_D3_NEXT_CHECKPOINT_20260903.md`,
+SHA-256 `683FB8F8DE63BECE20D31762FE574D3E16F99BA259CCCBE9ECF23EC8DEDA2A22`.
+
+## OCV-03 O3F15L4D3 signed metadata classification pass / FULL978 next — 2026-09-03
+
+Disposition: `PENDING_GATE`
+
+D3 request `REQ_20260903T144556528Z_174122D626E3` returned matching signed
+response `R_9D6D7AFDEF41_20260903144903125_c4aaf28b`, ZIP
+`C0672454CBDD9204A2F4F7F0FD1292232B5018D7E5D85EFE61BAD18AA3B7E8E1`.
+The endpoint and diagnostic passed with the exact frozen 978 identities and
+1,956 ordered leaves: 187 pairs direct-safe, 747 verified-short-alias
+required, and 44 direct-use-hard-stop/alias-only. Ordered identity, source-leaf,
+and classification hashes are `74421A97B91D6A436649E6AB291B992F39C5CA69FB3DC37C8DF45F36CC89CE09`,
+`9B2066EB3F0CC764A1C738C72140179776C9B1C943A1863557D37BF6CDF061BD`,
+and `6BE619CAF12D70B91EE7621A0D2096E4A724517ED04317376A9F9ABF55FF3FA5`.
+
+One fresh portal-only FULL978 launch is authorized with runner
+`3C403376521B74E3A6DB1C4E008CE8DB36D8D99AE9A0FD7C1FA51481024DBEF4`
+and roots `D:/O3F15L4RT`, `D:/O3F15L4G`, `D:/O3F15L4C`, and
+`D:/KLARFExport/_ArgosReview/F15L4S`. No local detector/test run, retry,
+RustDesk/operator input, root reuse/deletion, source mutation, existing
+task/process action, provider activation, selector/threshold relaxation, or
+hold clearance is authorized. All 184/12 holds, Slot02, Slot16, and later
+prerequisite order remain.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4D3_SIGNED_METADATA_CLASSIFICATION_PASS_FULL978_RUN_NEXT_CHECKPOINT_20260903.md`,
+SHA-256 `79C602ECEA58567C81C6CD5F913EC6C07BC1B5B6BB5FF936F04E2E58F16677BB`.

@@ -1,0 +1,152 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3F15L4D3_EXACT_SIGNED_FINAL_REHEARSAL_20260903T125500Z",
+  "createdUtc": "2026-09-03T12:55:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "WINDOWS_POWERSHELL_51_O3F15L4D3_EXACT_SIGNED_FINAL_ZIP_AND_ENDPOINT_WORKER_REHEARSAL",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "709DE69D866BA46E94C8F58D1165DD151F0C6EE52833F3433BF6D15A18A6907B"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L4D3/O3F15L4D3_DIAGNOSTIC_CONTRACT.json",
+      "sha256": "6248EA9BA52BE8405828A559E46223F9902401566A155F2DB97C87AF02FA5317"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L4D3/MAINTENANCE_DEFINITION.json",
+      "sha256": "E69C63B04EB9B8FFA768197B89CB014A30026F12551EC23756ABD185BDBAA51C"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L4D3/O3F15L4D3_FREEZE_RECORD.json",
+      "sha256": "31CE41784E5DAA09F9B6B4AF50F7637EE94752F172B5EFA9C4919955264D8E01"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L4D3/Test-O3F15L4D3FinalZip.ps1",
+      "sha256": "CAE1DEF0EBAE8E3087C9E35B06D615F6E91000C9FA4B2E80AA6F00DB612C20CB"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L4D3/Sign-O3F15L4D3Package.ps1",
+      "sha256": "BB969BF43C8BDFAA966F2771DA45B0E8DF9FAF66970E46AF3832CB75AF5F75E4"
+    },
+    {
+      "path": "C:/O3F15L4D3PK/build.ready/O3F15L4D3_BUILD_GATE.json",
+      "sha256": "3EA8F62DF733BAD7CDB3DF6C3437F01FA91AD8ADF772711C8847A8A69C4FC303"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L4D3/final_o3f15l4d3/O3F15L4D3_SIGN_GATE.json",
+      "sha256": "1766F78E0F413A344FF8E1CBF8089A2E23E17914A5F71BC441F024625A2192B0"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L4D3/final_o3f15l4d3/REQ_20260903T125334383Z_CA2B943D4CB0.ready.zip",
+      "sha256": "EF541A5803EF1319D9850A97E87239B02A7406081E3DE44A7874A749240B2EC5"
+    },
+    {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+      "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/ARGOS_PROJECT_PORTAL_LAPTOP_SIGNER_PUBLIC.cer",
+      "sha256": "2B434D0CF6A0D6D69AAE3D280032EFF00807D423CA3B3D7F2EFC1C6BB628BFFF"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer",
+      "sha256": "5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/state/LAPTOP_SIGNING_IDENTITY.json",
+      "sha256": "3FD8164D1869375156FB7566D206FEAB97AE8A9E7D377B0AD4E03739ED697289"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalPackage.ps1",
+      "sha256": "6CA21D7DE97EDE88F2C41F91D5B7801C688982C8C5A422987EB9528E1E9A084B"
+    },
+    {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalResponse.ps1",
+      "sha256": "4AF5901A7B9DFFF5A4DAF128960173D67501ABF6FF87C586BA526643B1C1449C"
+    },
+    {
+      "path": "work/FIDUCIAL_OPENCV_V1/portable/stage/python.exe",
+      "sha256": "7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1"
+    },
+    {
+      "path": "utilities/Confirm-ArgosPathBudget.ps1",
+      "sha256": "3A4820E81F25CEA9AB8EB5BE9E60B6324915DFC260132145CB8FB02970360835"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "recoveryBoundary": {
+    "mode": "MUTATE",
+    "signedPremiseFailureCount": 2,
+    "localPremiseFailureCount": 2,
+    "postFailureObservationPinned": true,
+    "mutationStopLossActive": false,
+    "freshAuthorshipVerified": true,
+    "withdrawnAncestorsReusable": false
+  },
+  "scope": {
+    "classification": "LOCAL_EXACT_SIGNED_O3F15L4D3_FINAL_ZIP_AND_ENDPOINT_WORKER_REHEARSAL",
+    "packageRoot": "C:/O3F15L4D3PK",
+    "requestId": "REQ_20260903T125334383Z_CA2B943D4CB0",
+    "maximumFinalRehearsalExecutions": 1,
+    "exactWorkerCases": [
+      "APPROVED",
+      "IDEMPOTENT",
+      "UNAPPROVED",
+      "ABSENT_ALLOW_CREATE_FALSE"
+    ],
+    "externalPublication": false,
+    "jbodExecution": false,
+    "sourceImageBytesRead": false,
+    "sourceMutation": false,
+    "sourceDeletion": false,
+    "taskOrExistingProcessAction": false,
+    "providerActivation": false,
+    "requestRetryAuthorized": false,
+    "fullFrontsideHoldCount": 184,
+    "currentPatternedFrontHoldCount": 12,
+    "slot02AmbiguityPreserved": true,
+    "slot16RareHotspotPreserved": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
