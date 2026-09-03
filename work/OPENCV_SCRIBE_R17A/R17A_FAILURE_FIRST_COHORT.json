@@ -1,0 +1,161 @@
+{
+  "schema": "argos_opencv_scribe_failure_first_cohort_v1",
+  "revision": "OCV02_R17A_FAILURE_FIRST_EXISTING_CROPS_20260903",
+  "classification": "PENDING_GATE",
+  "disposition": "READY_FOR_LOCAL_PUBLICATION_GATES_EXPLICIT_PUBLISH_REQUIRED",
+  "evidence": {
+    "signedAuditGate": {
+      "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/ARGOS_ALL_VALID_INSPECTIONS_READ_ONLY_LIVE_AUDIT_PASS_20260821.json",
+      "sha256": "D914EFB748932FE4C4CF4D5192C6DF0E63A64F8D25E1CA2D6047E9464B25B497"
+    },
+    "response": {
+      "responseId": "R_E3DAC141D1B8_20260821204234226_d8edfaff",
+      "zipPath": "C:/L586R2/R_E3DAC141D1B8_20260821204234226_d8edfaff.ready.zip",
+      "zipBytes": 485146,
+      "zipSha256": "229C9B649716BF37883563DCC16B4DC69C3285A7D5F8546EBB248F04F92574BC",
+      "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+      "payloadMember": "DATA_PULL_PAYLOAD.zip"
+    },
+    "queue": {
+      "member": "data/JBOD_PROCESSOR_REVIEW/identity/SCRIBE_IDENTITY_QUEUE.json",
+      "bytes": 633568,
+      "sha256": "BB740FEA504FCA97E1AA98EAF03C65B348875CF325D8EB7A671A80A41C05BA81",
+      "schema": "argos_jbod_scribe_identity_queue_v1"
+    },
+    "catalog": {
+      "member": "data/JBOD_PROCESSOR_REVIEW/catalog/ALL_WAFER_CATALOG.json",
+      "bytes": 12415878,
+      "sha256": "DE957D63D512F90412B6DB59A7C982629183787811EC2D70190B9D07C366AA5B",
+      "schema": "argos_jbod_all_wafer_catalog_v1"
+    },
+    "overlay": {
+      "member": "data/JBOD_PROCESSOR_REVIEW/identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json",
+      "bytes": 884842,
+      "sha256": "FFB1F4D0084BDF198AFE66403F26B4405D2FC9F0C4F98489E0865F7E46F2EB10",
+      "schema": "argos_confirmed_scribe_overlay_v1"
+    }
+  },
+  "population": {
+    "currentReaderQueueRows": 966,
+    "unresolvedWithoutWaferId": 156,
+    "unresolvedWithRecordedProposalAndBfDfSources": 152,
+    "selectionMeaning": "EXACT_CURRENT_READER_UNRESOLVED_ROWS_NOT_CATALOG_ABSENCE",
+    "waferImageBytesReadForSelection": false
+  },
+  "partitions": {
+    "development": [
+      {
+        "physicalIdentity": "Lot-62546-481-POST2_20260713155808_Slot02",
+        "expectedFailureClass": "NO_CHECKSUM_VALID_PROPOSAL",
+        "recordedProposal": ""
+      },
+      {
+        "physicalIdentity": "Lot-62546-481-POST2_20260713155808_Slot18",
+        "expectedFailureClass": "BOUNDED_IMAGE_SUPPORTED_M12_RERANK",
+        "recordedProposal": "FGECCG0029C4"
+      },
+      {
+        "physicalIdentity": "62620-548_20260810154124_Slot01",
+        "expectedFailureClass": "NO_PROPOSAL_SEGMENTATION_INCOMPLETE",
+        "recordedProposal": ""
+      },
+      {
+        "physicalIdentity": "dev-01-post-8-19_20260819164148_Slot01",
+        "expectedFailureClass": "NO_PROPOSAL_SEGMENTATION_INCOMPLETE",
+        "recordedProposal": ""
+      }
+    ],
+    "blindValidation": [
+      {
+        "physicalIdentity": "Lot-62546-481-POST2_20260713155808_Slot20",
+        "expectedFailureClass": "NO_CHECKSUM_VALID_PROPOSAL",
+        "recordedProposal": ""
+      },
+      {
+        "physicalIdentity": "Lot-62546-481-POST2_20260713155808_Slot23",
+        "expectedFailureClass": "BOUNDED_IMAGE_SUPPORTED_M12_RERANK",
+        "recordedProposal": "E89999996CF2"
+      },
+      {
+        "physicalIdentity": "62627-193_20260820124250_Slot01",
+        "expectedFailureClass": "BOUNDED_IMAGE_SUPPORTED_M12_RERANK",
+        "recordedProposal": "1484DU68SUD6"
+      },
+      {
+        "physicalIdentity": "62625-956_20260729122701_Slot17",
+        "expectedFailureClass": "NO_CHECKSUM_VALID_PROPOSAL",
+        "recordedProposal": ""
+      }
+    ],
+    "independence": {
+      "exactPhysicalAcquisitionOverlap": 0,
+      "blindValidationPixelsMayBeInspectedBeforeDetectorFreeze": false,
+      "lotFamilyIndependenceClaimed": false,
+      "reason": "Two unseen Post2 acquisitions deliberately test same-regime transfer; the next batch must add fresh lot-family validation."
+    }
+  },
+  "existingCropContract": {
+    "sourceRoot": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2",
+    "perAcquisitionFiles": [
+      "SCRIBE_PROPOSAL.json",
+      "scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png"
+    ],
+    "fullWaferBmpTransferRequired": false,
+    "newCropGenerationRequired": false,
+    "notchAlignmentRequired": false,
+    "sourceMutationAllowed": false
+  },
+  "lotContextPolicy": {
+    "useConfirmedSiblingScribesAsDiagnosticCandidateVocabulary": true,
+    "mayAssignSelectedWaferIdentityFromSiblingList": false,
+    "mayTreatFolderLotAsPhysicalLotTruth": false,
+    "reason": "The signed catalog contains heterogeneous confirmed strings under some folder-level lot labels; lot context may rank or audit OCR but never replace visible evidence."
+  },
+  "localRegressionEvidence": {
+    "misplacedS17": {
+      "path": "work/OPENCV_SCRIBE_R12B/S17_OPERATOR_CONFIRMED_REGRESSION.json",
+      "sha256": "B8CCC273321F15FA03C7F1025500585ECC14562A79A723033767B50679BBECEC"
+    },
+    "clearControls": {
+      "path": "work/OPENCV_SCRIBE_R16A/R16A_INPUTS.json",
+      "sha256": "9D80D8743E8175E888174870BE26A1FC2744E251D8F2740CFCC3771A574B921C"
+    },
+    "r16aGate": {
+      "path": "work/OPENCV_SCRIBE_R16A_LOCAL_RESULT_R3/R16A_LOCAL_GATE.json",
+      "sha256": "7829946E283FE1CD22C10D6F86A8CDB0A912FF71A2302B2CAFE321E77A7D864D"
+    },
+    "r16bGate": {
+      "path": "work/OPENCV_SCRIBE_R16B/R16B_LOCAL_GATE.json",
+      "sha256": "519593BA4FC757409801733AA3416935FFB6DDBFF33DDA616257687967712FF0"
+    },
+    "requiredEveryDetectorIteration": true
+  },
+  "analysisContract": {
+    "primaryInput": "EXISTING_ORIENTED_SCRIBE_CROPS",
+    "fullWaferUse": "PROVENANCE_AND_ESCALATION_ONLY",
+    "paths": [
+      "GEOMETRY_FIRST_CLEAR_SCRIBE",
+      "OCR_DRIVEN_GRID_DIFFICULT_OR_MISPLACED_SCRIBE"
+    ],
+    "arbitration": {
+      "agree": "CANDIDATE_MAY_PROCEED_TO_CONFIDENCE_AND_CHECKSUM_GATES",
+      "oneStrongOtherNoCandidate": "CANDIDATE_MAY_PROCEED_ONLY_UNDER_STRICT_SINGLE_PATH_GATE",
+      "disagree": "HOLD_PATH_DISAGREEMENT",
+      "neitherStrong": "HOLD_DIFFICULT_LOCALIZATION_PENDING_CONFIRMATION"
+    },
+    "leastBadCandidateSelectionAllowed": false,
+    "automaticIdentityAssignmentAllowed": false
+  },
+  "nextAction": "RUN_LOCAL_PUBLICATION_GATES_THEN_WAIT_FOR_EXPLICIT_PUBLISH",
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingAuthorized": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false,
+    "portalPublicationAuthorizedByThisRecord": false,
+    "jbodExecutionAuthorizedByThisRecord": false
+  }
+}

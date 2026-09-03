@@ -1,0 +1,35 @@
+{
+  "schema": "argos_opencv_scribe_r17a_local_gate_v1",
+  "createdUtc": "2026-09-03T14:15:28.2770993Z",
+  "state": "PASS_METADATA_ONLY_FAILURE_FIRST_COHORT",
+  "validator": {
+    "path": "work/OPENCV_SCRIBE_R17A/Validate-R17AFailureFirstCohort.py",
+    "sha256": "431111146EC310EB78AABB06D39848E8BFBD929E2DF1E8E69AC2700A6F7FCA2E"
+  },
+  "cohort": {
+    "path": "work/OPENCV_SCRIBE_R17A/R17A_FAILURE_FIRST_COHORT.json",
+    "sha256": "EA15D1AE228DB1FD1307D2F4209D57C61572D192FFE1D807EDA3D2C00472499D"
+  },
+  "dataPullDefinition": {
+    "path": "work/OPENCV_SCRIBE_R17A/R17A_DATA_PULL_DEFINITION.json",
+    "sha256": "3266EFC50A4517278512CC07C4D623D20483351C2DACDF83C226B3BA26665246"
+  },
+  "signedResponseSha256": "229C9B649716BF37883563DCC16B4DC69C3285A7D5F8546EBB248F04F92574BC",
+  "unresolvedCurrentReaderRows": 156,
+  "cropAddressableUnresolvedRows": 152,
+  "selectedRemoteFailures": 8,
+  "developmentFailures": 4,
+  "blindValidationFailures": 4,
+  "post2Failures": 4,
+  "failureClasses": [
+    "NO_CHECKSUM_VALID_PROPOSAL",
+    "NO_PROPOSAL_SEGMENTATION_INCOMPLETE",
+    "BOUNDED_IMAGE_SUPPORTED_M12_RERANK"
+  ],
+  "pullFiles": 24,
+  "waferImageBytesRead": false,
+  "portalPublished": false,
+  "jbodExecuted": false,
+  "reviewOnly": true,
+  "productionEligible": false
+}
