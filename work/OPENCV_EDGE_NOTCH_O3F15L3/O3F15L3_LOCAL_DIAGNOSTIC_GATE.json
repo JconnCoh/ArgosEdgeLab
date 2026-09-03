@@ -1,0 +1,78 @@
+{
+    "schema":  "argos_ocv03_o3f15l3_local_diagnostic_gate_v1",
+    "createdUtc":  "2026-09-03T08:28:00.1242856Z",
+    "state":  "PASS_O3F15L3_BOUNDED_PREFLIGHT_DIAGNOSTIC_PROJECTION",
+    "endpointSha256":  "7E2CE32275B29C0A3497869399F5B07A27250A52F1F2259E0A144BEC5E25CD82",
+    "contractSha256":  "B548FCBE7245F6CF376F10294583022E9F0F28CAF8037D4C5C4C559EE4481015",
+    "fixtureSha256":  "8E79087933B57B08FD909F1673D209D06B524CC9918FF832B7B9006167169D2C",
+    "windowsPowerShell":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "pythonPath":  "C:\\Python314\\python.exe",
+    "pythonSha256":  "4942B86A6597E5AEE0128DAA00050ED79BC21F6E709A78EB19CBFEB0C2F39AC9",
+    "testRoot":  "C:\\O3F15L3T\\6df9706c0627",
+    "cases":  [
+                  {
+                      "mode":  "PASS",
+                      "childOutcome":  "PASS",
+                      "childExitCode":  0,
+                      "childTimedOut":  false,
+                      "stdoutBytes":  119,
+                      "stdoutSha256":  "8F8B09F78B563417E28DB143DCAA45E52EC90229569F85155ECAADE7A87BF96D",
+                      "stderrBytes":  0,
+                      "stderrSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "mode":  "NONZERO_BOTH",
+                      "childOutcome":  "FAIL",
+                      "childExitCode":  7,
+                      "childTimedOut":  false,
+                      "stdoutBytes":  31,
+                      "stdoutSha256":  "04E0B4277988290225165117851F5177D45292986E9D80E76BC20EB5CB2351D1",
+                      "stderrBytes":  44,
+                      "stderrSha256":  "E3BAE573DEE9BC543442213A967DD9496208B91804D903BAFBB96DE79E937565"
+                  },
+                  {
+                      "mode":  "ZERO_STDERR",
+                      "childOutcome":  "FAIL",
+                      "childExitCode":  0,
+                      "childTimedOut":  false,
+                      "stdoutBytes":  119,
+                      "stdoutSha256":  "8F8B09F78B563417E28DB143DCAA45E52EC90229569F85155ECAADE7A87BF96D",
+                      "stderrBytes":  43,
+                      "stderrSha256":  "2B63C34BE2B02B09775C9CF86B3194FB86E258036A00455DD900FD5DDE7302C2"
+                  },
+                  {
+                      "mode":  "MALFORMED",
+                      "childOutcome":  "FAIL",
+                      "childExitCode":  0,
+                      "childTimedOut":  false,
+                      "stdoutBytes":  34,
+                      "stdoutSha256":  "D486E2C07CC0ABDADE38050008A60A1DEE2BCCDC1CD531240A5D3A58D824B9B0",
+                      "stderrBytes":  0,
+                      "stderrSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "mode":  "TIMEOUT",
+                      "childOutcome":  "FAIL",
+                      "childExitCode":  -1,
+                      "childTimedOut":  true,
+                      "stdoutBytes":  47,
+                      "stdoutSha256":  "CED3012600C30172F53D58E32D82AF04F17C7D228F589CC1571550E683467A43",
+                      "stderrBytes":  47,
+                      "stderrSha256":  "CB58E01544F4FE5B97A131DDEFDA47B2E9B74F2357CA4082B016A2587E8D5E24"
+                  }
+              ],
+    "exactFixtureCaseCount":  5,
+    "exactOwnedChildCountPerCase":  1,
+    "rawStreamsPreservedBeforeInterpretation":  true,
+    "selfTestStarted":  false,
+    "gateStarted":  false,
+    "runStarted":  false,
+    "detectorResultRootCreated":  false,
+    "imageBytesRead":  false,
+    "targetExecuted":  false,
+    "sourceMutation":  false,
+    "providerActivated":  false,
+    "mutationsPerformed":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

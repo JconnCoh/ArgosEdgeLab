@@ -10179,3 +10179,28 @@ production eligibility, and production routing remain false.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L2_FAILURE_O3F15L3_DIAGNOSTIC_NEXT_CHECKPOINT_20260903.md`,
 SHA-256 `DF849FF2676A0EA25AAB1654F9606EBB05F86C9581EBDA1C5B2F56196292360C`.
+
+## OCV-03 O3F15L3 local diagnostic pass — 2026-09-03
+
+Disposition: `PENDING_GATE`
+
+O3F15L3 local gate
+`BF7BD7CBC0C66DC9816C10EB9359EFB0591F3562156D3559A061B1D479DC5C49`
+passed `PASS`, `NONZERO_BOTH`, `ZERO_STDERR`, `MALFORMED`, and `TIMEOUT`.
+Endpoint `7E2CE32275B29C0A3497869399F5B07A27250A52F1F2259E0A144BEC5E25CD82`,
+contract `B548FCBE7245F6CF376F10294583022E9F0F28CAF8037D4C5C4C559EE4481015`,
+and fixture `8E79087933B57B08FD909F1673D209D06B524CC9918FF832B7B9006167169D2C`
+are pinned. Core PS5.1/harness/wrapper gate
+`E221C59D54E61576F022EEC6954F492D9674985B3D128C00828E8FAB864C1705`
+also passes. Every case launched exactly one owned child and preserved bounded
+streams; target execution, images, result roots, and mutations were zero.
+
+Complete package/rehearsal/signature gates, then publish at most one
+portal-only diagnostic and collect its signed response. Its sole live child is
+`PREFLIGHT`; SELF_TEST/GATE/RUN/full corpus remain unauthorized. L2 stays
+withdrawn/no-retry/non-parent, every 184/12 hold and later prerequisite stays
+fixed, and RustDesk/operator input remain prohibited.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L3_LOCAL_DIAGNOSTIC_PASS_CHECKPOINT_20260903.md`,
+SHA-256 `9E9FA5E8D88CE2BCB4D9E40F5B5AAA51EBBB0468BC967B75E14EC444B9D48816`.

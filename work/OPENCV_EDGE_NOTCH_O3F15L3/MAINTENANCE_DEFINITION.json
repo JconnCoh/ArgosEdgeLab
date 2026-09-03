@@ -1,0 +1,72 @@
+{
+  "schema": "argos_ocv03_o3f15l3_maintenance_definition_v1",
+  "revision": "OCV03_O3F15L3_EXACT_PREFLIGHT_DIAGNOSTIC_20260903",
+  "state": "FROZEN_FOR_SIGNING",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Invoke-O3F15L3.ps1",
+  "changes": [
+    {
+      "source": "payload/OCV03_NotchReviewOpenCvV1.py",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_NotchReviewOpenCvV1.py",
+      "approvedPredecessorSha256": [
+        "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4"
+      ],
+      "installedSha256": "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+      "allowCreate": false
+    }
+  ],
+  "entryPointMutations": [],
+  "entryPointOutputs": [],
+  "sourceProcessingContract": {
+    "side": "FRONT",
+    "operation": "PREFLIGHT_DIAGNOSTIC_ONLY",
+    "expectedPairCount": 978,
+    "runnerSha256": "DCE1E1F3B42FBD38ED73FF7D346F19C3BAE013EE3003B3485E91A41DAF573C48",
+    "detectorSha256": "B477C290EC9D3AE388BE4EE31049B2B8094F5F30FC6E0DD68AB4A03926EE4059",
+    "exactChildArguments": [
+      "-I",
+      "-B",
+      "Run-O3F15FrontReconcile.py",
+      "PREFLIGHT"
+    ],
+    "maximumOwnedChildCount": 1,
+    "expectedDiagnosticSchema": "argos_ocv03_o3f15l3_preflight_diagnostic_v1",
+    "expectedDiagnosticState": "COMPLETE_O3F15L3_PREFLIGHT_DIAGNOSTIC_CAPTURED",
+    "childFailureIsCapturedDiagnostic": true,
+    "selfTestAllowed": false,
+    "focusedTestAllowed": false,
+    "gateAllowed": false,
+    "runAllowed": false,
+    "resultRootCreationAllowed": false,
+    "imageBytesReadAllowed": false,
+    "postResultSelectorRelaxationAllowed": false,
+    "automaticHoldClearanceAllowed": false
+  },
+  "timeoutContract": {
+    "preflightSeconds": 600,
+    "endpointResponseIsCompleteDiagnostic": true,
+    "backgroundProcessAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_EXACTLY_ONE_BOUNDED_OWNED_O3F15_PREFLIGHT_CHILD_ONLY"
+  ],
+  "rehearsal": {
+    "requiredState": "COMPLETE_O3F15L3_PREFLIGHT_DIAGNOSTIC_CAPTURED",
+    "fixtureModes": [
+      "PASS",
+      "NONZERO_BOTH",
+      "ZERO_STDERR",
+      "MALFORMED",
+      "TIMEOUT"
+    ]
+  },
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}
