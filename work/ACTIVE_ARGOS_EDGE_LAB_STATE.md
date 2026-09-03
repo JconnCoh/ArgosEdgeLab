@@ -9765,3 +9765,22 @@ Checkpoint:
 Exact next scribe-lane action: stop. A later explicitly authorized local
 continuation requires a fresh namespace, one declared development case per
 bounded run, and a separate hash-only aggregate after all four complete.
+
+# 2026-09-03 — OCV-02 R18G four development outputs frozen unreviewed (`PENDING_GATE`)
+
+The operator directed completing only the two unfinished cases. Slot08 and
+POST Slot22 completed independently under fresh roots in 243.5 and 179.6
+seconds; the two prior complete, hash-pinned run-B results were not rerun.
+Aggregate gate SHA-256 is
+`00171687AA7D9C860E294546E498613D17C44B1751DBDA6F2E4F5A2CD2C1820E`.
+
+Frozen outputs are: empty localization hold, `L0751037FEA2`,
+`14787161SUG7` checksum hold, and `146XF113SUA5`. Zero blind acquisitions
+were read and no development image was visually reviewed. Strings remain
+diagnostic and unaccepted.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18G/R18G_DEVELOPMENT_OUTPUTS_FROZEN_UNREVIEWED_CHECKPOINT_20260903.md`.
+
+Next: commit/push the freeze, then visually review only the four development
+BF/DF crops. Keep the four blind acquisitions unopened.
