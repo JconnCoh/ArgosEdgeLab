@@ -9444,3 +9444,26 @@ Exact next scribe-lane action: build and locally gate one fresh signed R18E
 `DATA_PULL` package. Do not publish until the operator explicitly says
 `PUBLISH` for R18E. No retry, activation, identity acceptance, hold clearance,
 XML, training, production, source, queue, task/process, or wafer action.
+
+# 2026-09-03 — OCV-02 R18E exact signed pull ready locally (`PENDING_GATE`)
+
+R18E request `REQ_20260903T192241716Z_R18E` is signed and frozen locally. Its
+1,414-byte ZIP has SHA-256
+`C0218B20414CB2DF0B1C11F5273BD0C989CB6EE550D048C6163F5E21E8A2A502`
+and requests only the frozen cohort's 24 existing proposal/BF/DF crop files.
+Windows PowerShell 5.1 parser, signature/extraction, clone, harness, pre-action,
+and full-route path gates pass. The 26 modeled route leaves remain below an
+effective length of 200.
+
+The request ID is absent from portal upload, ready, and processed paths. No
+publication or JBOD action occurred; package and route gates explicitly record
+that publication is not authorized and requires a fresh explicit `PUBLISH`.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18E/R18E_LOCAL_PACKAGE_READY_CHECKPOINT_20260903.md`,
+SHA-256 `D5554ACAA58D5219D105E34157BFD38D1C81F3B597C3AF2F25D10C0353536222`.
+
+Exact next scribe-lane action: commit/push the frozen package and checkpoint,
+verify the dedicated branch clean and matching origin, then wait. After an
+explicit R18E `PUBLISH`, publish exactly once and collect only its matching
+signed terminal response. No retry or authority expansion.
