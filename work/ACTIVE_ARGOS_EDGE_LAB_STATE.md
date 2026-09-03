@@ -9553,3 +9553,27 @@ fresh R18F before opening any blind acquisitions. R18E remains no-retry and
 no-republish. No activation, identity acceptance, automatic admission, hold
 clearance, XML, training, production, JBOD, portal, task/process, source, or
 wafer authority.
+
+# 2026-09-03 — OCV-02 R18F local gate pass / blind validation ready (`DIAGNOSTIC_ONLY`)
+
+The operator confirmed Slot22 position 2 as `3` and position 5 as `K`.
+R18F admits only the native K cell as a diagnostic reference and lowers the
+generic topology-override margin from `0.15` to the already-regressed `0.12`.
+R18D and the R18C image algorithm remain unchanged.
+
+R18F passes all 9 frozen visible strings and all 5 blank/wrong-location
+controls. Its four development results are exact `148AW102SUG6`, exact
+`13DCK060SUF5`, one empty `HOLD_SCRIBE_NOT_LOCALIZED`, and exact
+`1480J017SUH0`. Zero blind acquisitions have been read. Missing reference
+coverage remains `I/O/V/Y`.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18F/R18F_LOCAL_FREEZE_BLIND_VALIDATION_READY_CHECKPOINT_20260903.md`,
+SHA-256 `DE07B268838E3067F4ACA0EB4C44A63B8B0E599FF59CA8DBE97C585F1A3D72EB`.
+
+Exact next scribe-lane action: commit and push exact frozen R18F, verify a
+clean branch matching origin, then run only the four frozen R18E blind cases
+and freeze their outputs before visual review. Do not run the full KLARF
+directory. No activation, identity acceptance, automatic admission, hold
+clearance, XML, training, production, JBOD, portal, task/process, source, or
+wafer authority.
