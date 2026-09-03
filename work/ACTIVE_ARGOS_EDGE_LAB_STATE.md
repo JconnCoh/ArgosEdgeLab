@@ -10535,3 +10535,22 @@ prerequisite order remain.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4D3_SIGNED_METADATA_CLASSIFICATION_PASS_FULL978_RUN_NEXT_CHECKPOINT_20260903.md`,
 SHA-256 `79C602ECEA58567C81C6CD5F913EC6C07BC1B5B6BB5FF936F04E2E58F16677BB`.
+
+## OCV-03 O3F15L4E1 signed GATE failure / observation capability gap — 2026-09-03
+
+Disposition: `DIAGNOSTIC_ONLY`
+
+E1 request `REQ_20260903T152724035Z_C40EAE44A93E` was published once. Matching
+signed response `R_F6AD346BE549_20260903153244176_32884878`, ZIP
+`3EF4968EC3E8C360ADF875DFE3A34B188B757B02A824DB9118213E66F1F22E2B`,
+is terminal `FAILED` with returned stderr `O3F15L4E1 runner GATE failed.` The
+inner Python stderr was not returned. FULL978 did not launch and E1 is no-retry.
+
+The fresh gate evidence is under `D:/O3F15L4G`, outside the installed DATA_PULL
+roots. A bounded endpoint capability improvement needs explicit authority before
+that direct post-failure observation can be collected. All holds and review-only
+boundaries remain.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4E1_SIGNED_GATE_FAILURE_OBSERVATION_CAPABILITY_GAP_CHECKPOINT_20260903.md`,
+SHA-256 `0B08D6559A422EE243C21B1AB5DB0B40CDB1536B7A3F7B39FC0B1E012AB148A2`.
