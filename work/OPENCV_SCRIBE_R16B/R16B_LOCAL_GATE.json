@@ -1,0 +1,70 @@
+{
+  "schema": "argos_opencv_scribe_r16b_local_gate_v1",
+  "revision": "OCV02_R16B_SUPPLEMENT_LOADER_AND_REMAINING_INVENTORY_20260903A",
+  "state": "PASS_R16B_LOCAL_SUPPLEMENT_LOADER",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "loader": {
+    "path": "work/OPENCV_SCRIBE_R16B/ArgosOpenCvScribeSupplementLoaderR16B.py",
+    "sha256": "3D074A9F1031A8243F49748E560EC802611765528BD49D554201CDB1F0BD5BCD",
+    "testPath": "work/OPENCV_SCRIBE_R16B/Test-R16BSupplementLoader.py",
+    "testSha256": "F352A5C4FD833A878B42E4E3049A73E1E9BD19E8BA4B5BFD64CDF657584652B9",
+    "testState": "PASS_R16B_SUPPLEMENT_LOADER_LOCAL",
+    "supplementalReferenceCount": 6,
+    "combinedMissingLabels": "IOVWYZ",
+    "failClosedChecks": [
+      "MANIFEST_SHA256",
+      "SCHEMA",
+      "DIAGNOSTIC_ONLY_DISPOSITION",
+      "AUTHORITY_FALSE",
+      "CONTAINED_RELATIVE_PATH",
+      "REFERENCE_SHA256",
+      "UNIQUE_LABEL_CASE_POSITION",
+      "DECLARED_LABEL_COUNTS"
+    ]
+  },
+  "independentKxEvidence": {
+    "truth": "6KB71041XDE5",
+    "candidateManifestPath": "work/OPENCV_SCRIBE_R13A/S17E_20260902/candidate_manifest.json",
+    "candidateManifestSha256": "78A0718980AFDEF5109E87B00A0884C3BEAB4EF682E8AFBA50129B260E65F8EE",
+    "k": {
+      "path": "work/OPENCV_SCRIBE_R13A/S17E_20260902/cells/P02_K.png",
+      "sha256": "7FFFC74241EE61A5173423451B3202AFA3E0F1C2ACA5F522F7B4869857756938",
+      "peerCase": "K25V",
+      "peerCosineSimilarity": 0.5244059562683105,
+      "predictedWithinJkqxBank": "K",
+      "runnerUp": "Q",
+      "runnerUpScore": 0.21424885094165802
+    },
+    "x": {
+      "path": "work/OPENCV_SCRIBE_R13A/S17E_20260902/cells/P09_X.png",
+      "sha256": "65165E6917694A7809AF9B0280A99163405170E2BF1E56114E56E47B98BDE9A3",
+      "peerCase": "X18V",
+      "peerCosineSimilarity": 0.6813099980354309,
+      "predictedWithinJkqxBank": "X",
+      "runnerUp": "J",
+      "runnerUpScore": 0.2165646106004715
+    },
+    "availableForFreshSupplementRevision": true,
+    "alreadyAdmittedToR16A": false
+  },
+  "remainingLabelInventory": {
+    "r13aInputPath": "work/OPENCV_SCRIBE_R13A/R13A_ALPHABET_HARVEST_INPUT.json",
+    "r13aInputSha256": "EBE19AF2023F26B413D760857C57AC6E9A43E0AC00C68C7FC107EBDCAB647FE7",
+    "r13aPlanPath": "work/OPENCV_SCRIBE_R13A/R13A_ALPHABET_HARVEST_PLAN.json",
+    "r13aPlanSha256": "7F1F9DB9582E57B2F7608DEE013F969B6A1C25FD227DC8CB7A88BB15910DE2D1",
+    "confirmedOverlayExpectedRows": 795,
+    "confirmedOverlayExpectedUniqueScribes": 319,
+    "confirmedCoverableLabels": "JKQX",
+    "noConfirmedExampleLabels": "IOVWYZ",
+    "conclusion": "The existing hash-locked 319-confirmed-scribe overlay has no file-backed I/O/V/W/Y/Z example. Those labels require a broader authoritative lot/inspector source before image selection; they cannot be invented from the current confirmed overlay."
+  },
+  "sourceMutationPerformed": false,
+  "jbodAccessPerformed": false,
+  "portalPublicationPerformed": false,
+  "providerActivated": false,
+  "identityAdmissionAuthorized": false,
+  "automaticHoldClearanceAuthorized": false,
+  "trainingAuthorized": false,
+  "xmlAuthorized": false,
+  "productionAuthorized": false
+}

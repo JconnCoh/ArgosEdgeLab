@@ -4,6 +4,21 @@ This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
 
+## Isolated OpenCV scribe R16B supplemental loader/inventory — 2026-09-03
+
+The fresh hash-locked loader combines R16A supplemental references with an
+unchanged base bank and fails closed on manifest, path, file, count, and
+authority drift. Local combined accounting passes with `IOVWYZ` still absent.
+Existing S17 cells independently support both K and X and are ready for the
+next fresh supplement. The prior exact 319-confirmed-scribe inventory contains
+no confirmed `I/O/V/W/Y/Z`; selecting those wafers requires a broader
+authoritative lot/inspector truth lookup. This remains `DIAGNOSTIC_ONLY` with
+no JBOD or portal action.
+
+Current scribe checkpoint:
+`work/OPENCV_SCRIBE_R16B/R16B_LOCAL_LOADER_INVENTORY_CHECKPOINT_20260903.md`,
+SHA-256 `F5F3F7577D84CDDD934277E76F297A3801D756F94E7AD0F2A3B32C2EA8AD450E`.
+
 ## Isolated OpenCV scribe R16A local supplemental glyphs — 2026-09-03
 
 Exact-hash local OpenCV processing of the four R15E BF rectified rasters now
