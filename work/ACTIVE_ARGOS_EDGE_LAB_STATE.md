@@ -9363,3 +9363,14 @@ Exact next scribe-lane action: commit/push the frozen request, publish it once,
 and collect only the matching signed terminal response. No retry. Review-only
 remains true; identity acceptance, activation, training, XML, production,
 source/wafer/task/process action, and automatic hold clearance remain false.
+
+# 2026-09-03 — OCV-02 R18A published / response collection ready (`PENDING_GATE`)
+
+R18A was published exactly once and gateway acceptance was immediate. Matching
+response `R_84B9CB78722E_20260903172040421_2b8e31ed`, SHA-256
+`CBA4E0A078D867BD13FD77F49628B32F83B72FC203BC6C302C39D33352600F7B`,
+passed the pinned JBOD signature and exact 24-member/hash preflight without
+decoding pixels. The request must not be republished or retried.
+
+Exact next scribe-lane action: commit/push the pinned collector, then collect
+create-new into `C:\R18AR` and `C:\R18A`. All authority limits remain.
