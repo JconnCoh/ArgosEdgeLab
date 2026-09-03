@@ -4,6 +4,26 @@ This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
 
+## Isolated OpenCV scribe R15E signed terminal diagnostic — 2026-09-03
+
+Exact request `REQ_20260903T124500000Z_R15E`, ZIP
+`8016B63D69CE01972079378FE66556D3733C17BEC6AAA21452FC74C4BEA2CAB7`, was
+published exactly once and has matching signed JBOD response
+`R_DFC67231460F_20260903130325702_19f6600d`, response ZIP
+`2E424D1DCC9AC1E0C2ACD0E2EFE14725432EEF03B8242A70C5A4F53DA76FC1E5`.
+Signature, declared leaves, exact 30-entry evidence bundle, case/artifact
+hashes, and OpenCV raster decoding passed. All four 1600×400 BF crops contain
+the full plainly visible scribe; DF also contains it. Localization passed, and
+the remaining defect is grid/character scoring plus missing frozen reference
+labels `IJKOQVWXYZ`. Zero identities were proposed or accepted and all four
+cases remain diagnostic holds. No retry, republish, activation, admission,
+training, XML, production, source mutation, task/process action, or hold
+clearance is authorized.
+
+Current scribe checkpoint:
+`work/OPENCV_SCRIBE_R15E/R15E_SIGNED_TERMINAL_GRID_DIAGNOSTIC_CHECKPOINT_20260903.md`,
+SHA-256 `3C86F0BA082A2A7769C69327916BE6527EFD69F25766ACA5C28756FA0176EF93`.
+
 ## Isolated OpenCV scribe R6V2 publication — 2026-09-01
 
 The exact frozen signed request `REQ_20260901T220000222Z_5A348AE509A4` was published exactly once with create-new semantics. Matching response `R_71E7438B5A18_20260901234419542_54c4855d`, ZIP SHA-256 `69C8BB46AD8453D1C38EA5A4AD6238398B0DB51BF9611C7A64B23FC2353BF841`, is cryptographically verified against pinned JBOD signer `DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC` and collected create-new. Endpoint and batch execution passed safely, but all four slots remain geometry/reference/development held with zero proposed or eligible identities. The result is terminal review-only evidence, not deciphering success. No retry or second publication is authorized; activation, identity acceptance, hold clearance, XML, training, and production authority remain false.

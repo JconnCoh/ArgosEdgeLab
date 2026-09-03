@@ -10658,3 +10658,22 @@ than rerunning it.
   size and SHA-256 the gate reports.
 - Recovery: R15D is withdrawn, unpublished, no-retry, and non-parent. Use a
   fresh namespace and add the exact release-directory assertion before build.
+
+## 2026-09-03 — Response-shape bounds belong after request correlation
+
+- Failure signature: the frozen R15E R2 collector stopped with `Response ZIP
+  entry bound was exceeded` while no matching R15E response yet existed. It
+  had opened an unrelated historical response containing more than the R15E
+  five-entry transport contract.
+- Cause: the collector enforced the target response's exact entry-count bound
+  before reading the bounded response manifest and comparing `requestId`.
+- Mandatory preflight: bound the total candidate count and bounded manifest
+  read first, correlate the exact request ID, and only then enforce the
+  target-specific exact ZIP entry set and entry-count limit. Foreign response
+  shapes must be skipped after a bounded manifest read, not evaluated against
+  the target schema.
+- Recovery: do not modify the published/frozen collector or republish the
+  request. Correlate the one matching response read-only, verify it in memory,
+  run the pinned canonical signature verifier, and collect create-new. Any
+  successor collector must use a fresh local revision and rehearse a foreign
+  response whose valid entry set exceeds the target-specific bound.
