@@ -9724,3 +9724,24 @@ SHA-256 `271985561A8DA34BA1A5DC661BC26A9A8E74181499EEBF94B17FC7E3EFB6A5C7`.
 R18G is no-retry/no-republish. Next: verify frozen R18F and returned hashes,
 run only the four development acquisitions, and freeze those outputs before
 opening any blind crop. Do not run the full corpus.
+
+# 2026-09-03 — OCV-02 R18G development run A timeout withdrawn / B ready (`PENDING_GATE`)
+
+The first local development execution was terminated by its 120-second caller
+limit before the difficult first POST2 case returned. Preserved `C:\R18GD`
+contains one job JSON and zero results or aggregate gates; zero blind cases
+were read. This is an orchestration-timeout failure, not detector evidence.
+Run A is withdrawn and the root will not be resumed or patched.
+
+The new failure prevention is recorded in the Windows memory. Fresh runner B
+SHA-256 is
+`3D32E23FE501CB8363B2D46D1536967A113D7F74F3C1C33B4BA27AA43D1A0582`;
+it retains the exact provider, inputs, and four-case development partition and
+uses fresh root `C:\R18GDB` with a 600-second caller window.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18G/R18G_DEVELOPMENT_RUN_A_TIMEOUT_WITHDRAWN_CHECKPOINT_20260903.md`,
+SHA-256 `6B10205C724B9E95480C8EC7F77601F202C989D3D444ECCCDADC0A9D7370A787`.
+
+Next: execute B once and freeze its outputs before visual review. Read zero
+blind acquisitions; never retry or republish the R18G portal request.

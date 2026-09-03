@@ -1,5 +1,27 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### Local OpenCV runs need a timeout derived from measured case duration
+
+- Signature: a frozen multi-case development runner is terminated by the
+  caller timeout while the first difficult POST2 case is still inside the
+  provider; the create-new root contains only `SCRIBE_JOB.json`, with no
+  result and no aggregate gate.
+- Cause: the orchestration command used a 120-second ceiling without evidence
+  that one difficult scribe case, much less four, completes inside that bound.
+- Preflight: for a long-running local OpenCV cohort, derive the caller timeout
+  from prior measured per-case duration with explicit cohort headroom. Use a
+  fresh short output root and confirm the provider runner itself has no shorter
+  internal timeout. A missing result at caller timeout is orchestration
+  failure, not detector evidence.
+- Recovery: preserve the incomplete root unchanged and mark that execution
+  namespace withdrawn. Create a fresh runner/output namespace, retain exact
+  input/provider hashes and case partition, and use the preflighted longer
+  caller window. Never resume or patch the partial root.
+- First observed: R18G development run A on 2026-09-03. `C:\R18GD` contains
+  only the first POST2 job JSON, SHA-256
+  `835D402BE19D45EABB2EFD16155D2BEED39BA0A70E5269B3EEA85F195A394308`;
+  no result or aggregate gate exists, and zero blind acquisitions were read.
+
 ### Endpoint configuration is not an approved maintenance destination
 
 - Signature: a correctly signed JBOD `MAINTENANCE_PATCH` containing an exact
