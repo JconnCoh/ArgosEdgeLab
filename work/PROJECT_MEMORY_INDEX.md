@@ -1151,3 +1151,13 @@ task from changing which revision, UI, evidence, or next action is active.
 - SHA-256: `F9785D16F658776B67774775F9F30DE8C246C2493F7462521B9E523D0369917C`
 - Signed result: response `R_70A873A42FC1_20260901175547361_0322746f`, ZIP `FA58C572E9714357020AAD36A90EB51C476DBAFDCB3018FCCC441FBAB045A59B`, passed; 17 reused plus seven new equals all 24 frozen candidates, with no eligible control and no selector relaxation.
 - Exact next action: retain notch-adjacent as an explicit hold and continue only O23 ambiguity evidence. Fresh 953 and later phases remain unauthorized.
+
+## 2026-09-03 — OCV-03 O3F15L4D2 signed portal diagnostic ready
+
+- Checkpoint: `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4D2_SIGNED_PORTAL_READY_CHECKPOINT_20260903.md`
+- SHA-256: `A538358E77AE8B1C3BD6B6AA4ABE550F96859E7824899807CDA8488BAA374B95`
+- Package: request `REQ_20260903T125334383Z_CA2B943D4CB0`, signed ZIP `EF541A5803EF1319D9850A97E87239B02A7406081E3DE44A7874A749240B2EC5`, 142,688 bytes; built and signed once, unpublished and unexecuted.
+- Gates: R2 exact Windows PowerShell 5.1 rehearsal `BC82A3DE1F092BC469D8F841B7693F8CF7801CFF6108170567C67FA7AEEE458A`; R4 complete route `35D81C3FBFAC16C77A582AADB49C6E132C552804C914DF5D3F7CA93374EB35A8`; publication preaction `885830BE308238D9670351DB960617AC317B7F517B475E983FA4F518CE4EA2CC`; independent review `90221A6CC4CA62A4BFDD219646AD1D254BB5D346D097E8F0FC109CC3F061EC87`.
+- Publisher: compatibility-only P2 `AF37914CE37F3A5E42D8BCF59E4E71B94CC6341A6C23B3188E35AB2C13054145`; preflight proves exact persistent U mapping, queue NEW, and zero pending.
+- Exact next action: commit/push the signed-ready state, publish exactly once through Project Portal, and collect only the matching signed terminal response. No retry or RustDesk/operator input.
+- Authority: sole live child is metadata-only `D:/AFCV1/rt/python.exe -I -B Run-O3F15L4FrontReconcile.py PREFLIGHT`; full 978 frontside remains blocked pending signed complete 978/1,956 evidence; all 184/12 holds, Slot02, Slot16, later order, and review-only/training/XML/production boundaries remain.

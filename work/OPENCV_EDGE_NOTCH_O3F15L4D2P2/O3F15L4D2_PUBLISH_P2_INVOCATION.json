@@ -1,0 +1,43 @@
+{
+  "schema": "argos_ocv03_o3f15l4d2_publish_p2_invocation_v1",
+  "state": "FROZEN_O3F15L4D2_EXACTLY_ONCE_PUBLICATION_P2_INVOCATION",
+  "publisherSha256": "AF37914CE37F3A5E42D8BCF59E4E71B94CC6341A6C23B3188E35AB2C13054145",
+  "requestId": "REQ_20260903T125334383Z_CA2B943D4CB0",
+  "sourceZip": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab/work/OPENCV_EDGE_NOTCH_O3F15L4D2/final_o3f15l4d2/REQ_20260903T125334383Z_CA2B943D4CB0.ready.zip",
+  "sourceZipBytes": 142688,
+  "sourceZipSha256": "EF541A5803EF1319D9850A97E87239B02A7406081E3DE44A7874A749240B2EC5",
+  "routeGatePath": "work/OPENCV_EDGE_NOTCH_O3F15L4D2/final_o3f15l4d2/O3F15L4D2_PREPUBLICATION_PATH_R4_GATE.json",
+  "routeGateSha256": "35D81C3FBFAC16C77A582AADB49C6E132C552804C914DF5D3F7CA93374EB35A8",
+  "preactionGatePath": "work/OPENCV_EDGE_NOTCH_O3F15L4D2/O3F15L4D2_PUBLISH_PREACTION_GATE.json",
+  "preactionGateSha256": "885830BE308238D9670351DB960617AC317B7F517B475E983FA4F518CE4EA2CC",
+  "expectedPreactionGateState": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION",
+  "priorAcceptedRequestClosure": {
+    "scope": "IMMEDIATE_PRIOR_SERIAL_REQUEST_CHAIN",
+    "completeSerialChain": true,
+    "acceptedRequestCount": 1,
+    "unresolvedCount": 0,
+    "records": [
+      {
+        "requestId": "REQ_20260903T090514331Z_84BB875EEFD2",
+        "responseId": "R_B8A16CFA33BC_20260903092008761_68e46cd3",
+        "terminal": true,
+        "responseSignatureVerified": true,
+        "retryPending": false,
+        "acceptanceEvidencePath": "work/OPENCV_EDGE_NOTCH_O3F15L3/O3F15L3_PUBLISH_GATE.json",
+        "acceptanceEvidenceSha256": "51782860EB94544E4E00F5F3A49559B6C8971D87A8715E453A5DF88D15D1BB16",
+        "terminalEvidencePath": "work/OPENCV_EDGE_NOTCH_O3F15L3/O3F15L3_RESPONSE_COLLECTION_R2_GATE.json",
+        "terminalEvidenceSha256": "1DAD141DA1DD4CD5855CC0F6F231C2969306D6563467426EAF9D92D159DCC9D9"
+      }
+    ]
+  },
+  "expectedPersistentShare": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs",
+  "publicationGatePath": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab/work/OPENCV_EDGE_NOTCH_O3F15L4D2/O3F15L4D2_PUBLISH_GATE.json",
+  "publicationAttemptPath": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab/work/OPENCV_EDGE_NOTCH_O3F15L4D2/O3F15L4D2_PUBLISH_ATTEMPT.json",
+  "maximumPublications": 1,
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

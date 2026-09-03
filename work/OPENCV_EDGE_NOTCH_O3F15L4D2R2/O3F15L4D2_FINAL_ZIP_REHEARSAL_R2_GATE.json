@@ -1,0 +1,181 @@
+{
+    "schema":  "argos_ocv03_o3f15l4d2_final_zip_rehearsal_r2_gate_v1",
+    "createdUtc":  "2026-09-03T13:05:39.6160594Z",
+    "state":  "PASS_O3F15L4D2_FINAL_ZIP_WINDOWS_PS51_REHEARSAL_R2",
+    "requestId":  "REQ_20260903T125334383Z_CA2B943D4CB0",
+    "packageZipPath":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3F15L4D2\\final_o3f15l4d2\\REQ_20260903T125334383Z_CA2B943D4CB0.ready.zip",
+    "packageZipBytes":  142688,
+    "packageZipSha256":  "EF541A5803EF1319D9850A97E87239B02A7406081E3DE44A7874A749240B2EC5",
+    "exactSignedZipExtracted":  true,
+    "signatureVerified":  true,
+    "releaseSignatureCount":  1,
+    "localRehearsalRequestSignatureCount":  4,
+    "localRehearsalResponseSignatureCount":  4,
+    "payloadHashCount":  18,
+    "diagnosticCaseRowRuntimeType":  "System.Management.Automation.PSCustomObject",
+    "workerCaseRowRuntimeType":  "System.Management.Automation.PSCustomObject",
+    "diagnosticCases":  [
+                            {
+                                "mode":  "PASS",
+                                "state":  "COMPLETE_O3F15L4D2_METADATA_DIAGNOSTIC",
+                                "failureCode":  null,
+                                "emittedJsonBytes":  617727,
+                                "combinedChildBytes":  615667
+                            },
+                            {
+                                "mode":  "PASS_ONE_ALIAS",
+                                "state":  "COMPLETE_O3F15L4D2_METADATA_DIAGNOSTIC",
+                                "failureCode":  null,
+                                "emittedJsonBytes":  618378,
+                                "combinedChildBytes":  616308
+                            },
+                            {
+                                "mode":  "PASS_MANY_ALIAS",
+                                "state":  "COMPLETE_O3F15L4D2_METADATA_DIAGNOSTIC",
+                                "failureCode":  null,
+                                "emittedJsonBytes":  621075,
+                                "combinedChildBytes":  619004
+                            },
+                            {
+                                "mode":  "CLASSIFICATION_OVERSIZE",
+                                "state":  "HOLD_O3F15L4D2_METADATA_DIAGNOSTIC",
+                                "failureCode":  "CLASSIFICATION_INVALID",
+                                "emittedJsonBytes":  20082,
+                                "combinedChildBytes":  615687
+                            },
+                            {
+                                "mode":  "ZERO_STDERR",
+                                "state":  "HOLD_O3F15L4D2_METADATA_DIAGNOSTIC",
+                                "failureCode":  "CHILD_STDERR",
+                                "emittedJsonBytes":  20064,
+                                "combinedChildBytes":  615688
+                            },
+                            {
+                                "mode":  "NONZERO",
+                                "state":  "HOLD_O3F15L4D2_METADATA_DIAGNOSTIC",
+                                "failureCode":  "CHILD_NONZERO",
+                                "emittedJsonBytes":  1502,
+                                "combinedChildBytes":  28
+                            },
+                            {
+                                "mode":  "MALFORMED",
+                                "state":  "HOLD_O3F15L4D2_METADATA_DIAGNOSTIC",
+                                "failureCode":  "CHILD_JSON_MALFORMED",
+                                "emittedJsonBytes":  1568,
+                                "combinedChildBytes":  9
+                            },
+                            {
+                                "mode":  "TIMEOUT",
+                                "state":  "HOLD_O3F15L4D2_METADATA_DIAGNOSTIC",
+                                "failureCode":  "CHILD_TIMEOUT",
+                                "emittedJsonBytes":  1469,
+                                "combinedChildBytes":  0
+                            },
+                            {
+                                "mode":  "OVERSIZE",
+                                "state":  "HOLD_O3F15L4D2_METADATA_DIAGNOSTIC",
+                                "failureCode":  "CHILD_OUTPUT_OVERSIZE",
+                                "emittedJsonBytes":  17902,
+                                "combinedChildBytes":  5242881
+                            },
+                            {
+                                "mode":  "EXACT_CAP",
+                                "state":  "HOLD_O3F15L4D2_METADATA_DIAGNOSTIC",
+                                "failureCode":  "CHILD_JSON_MALFORMED",
+                                "emittedJsonBytes":  19897,
+                                "combinedChildBytes":  5242880
+                            },
+                            {
+                                "mode":  "SPLIT_OVER",
+                                "state":  "HOLD_O3F15L4D2_METADATA_DIAGNOSTIC",
+                                "failureCode":  "CHILD_OUTPUT_OVERSIZE",
+                                "emittedJsonBytes":  34297,
+                                "combinedChildBytes":  5242881
+                            }
+                        ],
+    "exactEndpointWorkerCases":  [
+                                     {
+                                         "case":  "APPROVED",
+                                         "disposition":  "APPROVED",
+                                         "endpointState":  "PASS_MAINTENANCE_PATCH",
+                                         "beforeExists":  true,
+                                         "afterExists":  true,
+                                         "beforeSha256":  "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+                                         "afterSha256":  "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+                                         "requestManifestSha256":  "5AAC561FB1173DC49E8A98F41D0F2AB01A6E54E020909A63AC419BB27F80EDD8",
+                                         "requestSignatureSha256":  "2BCC4C77766BF34D399A59FA70D77D0CCEB0B3FD2DB8BA27268AD742DE3CAD2A",
+                                         "responseSignatureSha256":  "D34A2B52C5209C63E01291E48AFCEE1D69CEE5C8B22246BEB5016EC6485B5A48",
+                                         "localRehearsalRequestSignatureCount":  1,
+                                         "localRehearsalResponseSignatureCount":  1,
+                                         "refusedBeforeMutation":  false
+                                     },
+                                     {
+                                         "case":  "IDEMPOTENT",
+                                         "disposition":  "IDEMPOTENT",
+                                         "endpointState":  "PASS_MAINTENANCE_PATCH",
+                                         "beforeExists":  true,
+                                         "afterExists":  true,
+                                         "beforeSha256":  "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+                                         "afterSha256":  "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+                                         "requestManifestSha256":  "D3FF1AFB0D6A8242A5BF66F5415076C833B77B6DF40DBEA55506DE02B056BA76",
+                                         "requestSignatureSha256":  "39FE43EE0E3914EC6B1C0892D2C691ABD4E9D65F96973642BA61E2E2A9CBCC4C",
+                                         "responseSignatureSha256":  "BFE7D9A5330227058C712E9A88E3CA52A554EA1977B5CBCDB6B943FBFCF9228A",
+                                         "localRehearsalRequestSignatureCount":  1,
+                                         "localRehearsalResponseSignatureCount":  1,
+                                         "refusedBeforeMutation":  false
+                                     },
+                                     {
+                                         "case":  "UNAPPROVED",
+                                         "disposition":  "UNAPPROVED",
+                                         "endpointState":  "FAILED",
+                                         "beforeExists":  true,
+                                         "afterExists":  true,
+                                         "beforeSha256":  "D80CCB4A8700D473F212259D9F5485868DA62FF9DDA2662CB6E0B4949EC26A61",
+                                         "afterSha256":  "D80CCB4A8700D473F212259D9F5485868DA62FF9DDA2662CB6E0B4949EC26A61",
+                                         "requestManifestSha256":  "7B44A9A1929C6BD5C8D0E3B35B6178540850E79C3D1581BD5DA08CFDD2872255",
+                                         "requestSignatureSha256":  "DAC3F1F232913FADED3E9F2F6511BDE899C5B7AAE99C45D98861CABA33E36645",
+                                         "responseSignatureSha256":  "87CD5D5972850B4E326BD3A89C4B5D6A2C4E6E2B56F8FDE3F9B8641B0F377CAB",
+                                         "localRehearsalRequestSignatureCount":  1,
+                                         "localRehearsalResponseSignatureCount":  1,
+                                         "refusedBeforeMutation":  true
+                                     },
+                                     {
+                                         "case":  "ABSENT",
+                                         "disposition":  "ABSENT",
+                                         "endpointState":  "FAILED",
+                                         "beforeExists":  false,
+                                         "afterExists":  false,
+                                         "beforeSha256":  null,
+                                         "afterSha256":  null,
+                                         "requestManifestSha256":  "B8579F7575AC7C8C632FE2F03A8072CF642FF824D65AF95770BDEE8370CB734B",
+                                         "requestSignatureSha256":  "18FF3289BFDE915D96BEA921293BFA26FDEC2FF461F9A611E2C18C6285CF5218",
+                                         "responseSignatureSha256":  "19EB35428D010B962377A00B07D65610E2C94A4E00676263EDB195E99B746F54",
+                                         "localRehearsalRequestSignatureCount":  1,
+                                         "localRehearsalResponseSignatureCount":  1,
+                                         "refusedBeforeMutation":  true
+                                     }
+                                 ],
+    "approvedPredecessorPassed":  true,
+    "targetHashIdempotentPassed":  true,
+    "unapprovedPredecessorRefusedBeforeMutation":  true,
+    "allowCreateFalseRefusedBeforeMutation":  true,
+    "exactEndpointWorkerCasesExecuted":  true,
+    "endpointWorkerSha256":  "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "queueSafetyGateSha256":  "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+    "queueSafetyCheckCount":  16,
+    "constructedResponseBytes":  7341695,
+    "maximumResultBytes":  8388608,
+    "responseSignatureBytesDerivedFromActiveJbodEndpointCertificate":  384,
+    "activeJbodEndpointCertificateSha256":  "5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B",
+    "activeJbodEndpointSignerThumbprint":  "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "targetOrJbodAccessed":  false,
+    "sourceImageBytesRead":  false,
+    "existingProcessOrTaskActionPerformed":  false,
+    "providerActivated":  false,
+    "requestRetryAuthorized":  false,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false
+}

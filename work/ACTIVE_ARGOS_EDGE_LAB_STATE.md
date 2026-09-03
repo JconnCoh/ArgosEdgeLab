@@ -10405,3 +10405,41 @@ true; training/XML/production remain false.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4D2_METADATA_DIAGNOSTIC_PREBUILD_AUTHORITY_CHECKPOINT_20260903.md`,
 SHA-256 `27A0A60E899D8119CD076DF18270FB8C53510EF4B857610E2D804238CE181CC1`.
+
+## OCV-03 O3F15L4D2 signed portal diagnostic ready — 2026-09-03
+
+Disposition: `PENDING_GATE`
+
+Exact request `REQ_20260903T125334383Z_CA2B943D4CB0`, signed ZIP
+`EF541A5803EF1319D9850A97E87239B02A7406081E3DE44A7874A749240B2EC5`
+(142,688 bytes), is built, signed, fully rehearsed, route-gated, independently
+reviewed, and still unpublished/unexecuted. Build/sign gates are
+`3EA8F62DF733BAD7CDB3DF6C3437F01FA91AD8ADF772711C8847A8A69C4FC303`
+and `1766F78E0F413A344FF8E1CBF8089A2E23E17914A5F71BC441F024625A2192B0`.
+Exact Windows PowerShell 5.1 final-ZIP rehearsal R2
+`BC82A3DE1F092BC469D8F841B7693F8CF7801CFF6108170567C67FA7AEEE458A`
+passes eleven diagnostics and four endpoint-worker cases. Fresh route R4
+`35D81C3FBFAC16C77A582AADB49C6E132C552804C914DF5D3F7CA93374EB35A8`
+passes 322 rows with maximum effective/component lengths 193/55.
+
+Compatibility-only publisher P2
+`AF37914CE37F3A5E42D8BCF59E4E71B94CC6341A6C23B3188E35AB2C13054145`
+pins R4 while preserving the unchanged portal delivery and canonical D2
+publication records. Its preaction gate
+`885830BE308238D9670351DB960617AC317B7F517B475E983FA4F518CE4EA2CC`
+and independent review
+`90221A6CC4CA62A4BFDD219646AD1D254BB5D346D097E8F0FC109CC3F061EC87`
+pass. Publisher preflight proves exact persistent `U:` identity, queue `NEW`,
+and zero pending requests.
+
+Publish exactly once after clean matching branch tips, then collect only the
+matching signed response. The only live child is
+`D:/AFCV1/rt/python.exe -I -B Run-O3F15L4FrontReconcile.py PREFLIGHT`.
+Full frontside remains blocked pending signed complete 978/1,956 metadata.
+All 184/12 holds, Slot02, Slot16, later prerequisite order, no-retry, and
+review-only authority remain; RustDesk/operator input and
+training/XML/production are prohibited.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4D2_SIGNED_PORTAL_READY_CHECKPOINT_20260903.md`,
+SHA-256 `A538358E77AE8B1C3BD6B6AA4ABE550F96859E7824899807CDA8488BAA374B95`.

@@ -11218,3 +11218,73 @@ than rerunning it.
   it as a template, publication parent, or reusable artifact. Fresh-author
   O3F15L4D2, repeat all draft gates, freeze once, then perform at most one build
   and one signature.
+
+## 2026-09-03 — Windows PowerShell 5.1 Measure-Object does not project OrderedDictionary keys
+
+- Failure signature: the sole local O3F15L4D2 signed-ZIP rehearsal completed
+  all eleven diagnostic child cases, then stopped before the endpoint-worker
+  cases and before writing its terminal gate. `Measure-Object -Property
+  emittedJsonBytes` reported that the property was absent from every input
+  object.
+- Cause: `Invoke-DiagnosticCase` returned `[ordered]@{...}`, whose runtime type
+  is `OrderedDictionary`. Direct dotted key access succeeds, and PowerShell 7
+  happens to project the key for `Measure-Object`, but Windows PowerShell 5.1
+  does not. The same latent defect also applied to the later worker-case sum.
+- Mandatory preflight: every row later consumed by `Measure-Object`,
+  `Where-Object`, sorting, grouping, or property projection under Windows
+  PowerShell 5.1 must be emitted as an explicit `[pscustomobject]`, not a raw
+  ordered dictionary. Exercise the exact typed row through the intended
+  consumer before the one-shot test and assert the runtime type plus the
+  projected property result.
+- Recovery: preserve the failed R1 rehearsal root and frozen R1 harness as
+  terminal local evidence; do not rerun either. Validate the unchanged signed
+  D2 package with one fresh R2 harness and fresh output root whose only
+  behavioral correction is explicit `[pscustomobject]` case rows. No portal,
+  JBOD, source-image, task/process, provider, selector, threshold, or hold
+  action occurred.
+
+## 2026-09-03 — Compare path-budget cardinality against unique path strings
+
+- Failure signature: the first O3F15L4D2 R2 route preflight stopped before a
+  gate write because the path-budget utility returned fewer rows than the
+  route checker's stage/path item count.
+- Cause: the route checker retained the same filesystem path once per semantic
+  stage, while `Confirm-ArgosPathBudget.ps1` intentionally normalizes and
+  deduplicates path strings before returning measurements. The checker
+  compared unlike cardinalities.
+- Mandatory preflight: preserve semantic stage rows when useful, but derive
+  the path-budget input as exact normalized unique path strings and compare the
+  utility result only to that unique set. Then require every semantic row to
+  resolve through the measurement map. Also emit route rows as explicit
+  `[pscustomobject]` values before later property aggregation in Windows
+  PowerShell 5.1.
+- Recovery: retain the failed R2 route preflight artifact as withdrawn local
+  evidence and do not rerun it. Use a fresh R3 route harness/invocation and a
+  fresh gate leaf with both bounded corrections. No request was published and
+  no portal, JBOD, source, process/task, provider, selector, threshold, or hold
+  state changed.
+
+## 2026-09-03 — Normalize path-budget identities before cardinality comparison and lookup
+
+- Failure signature: the first O3F15L4D2 R3 route preflight still stopped
+  before a gate write with `D2 path utility did not return every constructed
+  route path`, even after exact input strings were deduplicated.
+- Cause: `Confirm-ArgosPathBudget.ps1` applies `[IO.Path]::GetFullPath` before
+  its own uniqueness step. The route set contains equivalent path spellings,
+  including slash variants, which remain distinct before normalization but
+  collapse afterward. R3 compared pre-normalization unique strings to
+  post-normalization utility rows and would also have looked up measurements
+  by the unnormalized spelling.
+- Mandatory preflight: derive candidate identities with the same
+  `[IO.Path]::GetFullPath` normalization used by the pinned path utility before
+  `Sort-Object -Unique`, compare only that normalized set to utility output,
+  and use the normalized identity for every semantic-row measurement lookup.
+  Preserve semantic stage rows separately and keep them explicit
+  `[pscustomobject]` values for Windows PowerShell 5.1 property consumers.
+- Recovery: retain R3 as withdrawn, preflight-only, and no-retry. Use one fresh
+  R4 checker cloned from the original D2 route checker with all three bounded
+  corrections: normalized unique utility inputs, normalized measurement
+  lookups, and explicit PSCustomObject route rows. The signed request ZIP and
+  detector bytes remain unchanged; no publication, portal/JBOD contact, image
+  read, task/process action, provider change, selector change, or hold change
+  occurred.
