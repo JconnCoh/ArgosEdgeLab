@@ -9705,3 +9705,22 @@ pixels.
 Checkpoint:
 `work/OPENCV_SCRIBE_R18G/R18G_PUBLISHED_ONCE_RESPONSE_PENDING_CHECKPOINT_20260903.md`,
 SHA-256 `1E0A3B64F4F616C0E8E5CBECC64EA41F3ABF1ECB24D5016F20C72E6AF6C99881`.
+
+# 2026-09-03 — OCV-02 R18G signed terminal crops collected (`APPROVED_BASELINE`)
+
+Matching response `R_5FAB56656B2D_20260903221148575_65bcc5ed`, ZIP SHA-256
+`EDE6F6BD15762499621B013613915EB29981CF48C67A4D771AE94FAC280F2DE9`,
+passed the pinned JBOD signature, exact identity, member, size, and hash gates.
+All 24 requested existing files were collected create-new under `C:\R18GR`
+and `C:\R18G`; total source bytes are 27,411,116. No pixels were decoded or
+inspected during discovery, verification, or collection.
+
+Terminal gate SHA-256:
+`4ED056AD8B7A1FD4FEA3494E82FBCA8D324AB21E5629524B1A4745418C39E873`.
+Checkpoint:
+`work/OPENCV_SCRIBE_R18G/R18G_SIGNED_TERMINAL_COLLECTION_CHECKPOINT_20260903.md`,
+SHA-256 `271985561A8DA34BA1A5DC661BC26A9A8E74181499EEBF94B17FC7E3EFB6A5C7`.
+
+R18G is no-retry/no-republish. Next: verify frozen R18F and returned hashes,
+run only the four development acquisitions, and freeze those outputs before
+opening any blind crop. Do not run the full corpus.
