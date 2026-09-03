@@ -9968,3 +9968,34 @@ training/XML/production remain false.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F13_R10_DEV6_SIGNED_PORTAL_READY_CHECKPOINT_20260902.md`,
 SHA-256 `C9F78DEAEF778B4A7ADB96C920E1D8E63C1E535B2301234F0463CF52FFAA0F01`.
+
+## OCV-03 O3F13 signed R10 results / two provider holds / O3F14 next — 2026-09-03
+
+O3F13 was published once from commit
+`696ced76ba580261764b1e2af85862bcdc82996e`. Matching signed response
+`R_01BB3D1DD345_20260903050345709_42ca30c9`, ZIP
+`EEF55807A793D685AD8548E3183DFC19961FC9225E4D79C3E450BE55A5B9ABED`,
+was collected under gate
+`05BFFB010EFA370112ECD1B4295F5EBB606FE97ED0DE66F2EF14EE62B8AA06FF`.
+The endpoint completed and correctly projected structured exit-2 hold JSON.
+Of six selected cases, four executed: three diagnostic passes and one Slot02
+multiple-candidate hold. Slot09 and rare-hotspot Slot16 retain provider holds
+from the same `leftAngleDegrees` `KeyError` in `candidate_mouth_interval`.
+O3F13 is terminal/no-retry; R10 remains diagnostic and non-parent.
+
+R11 draft
+`B477C290EC9D3AE388BE4EE31049B2B8094F5F30FC6E0DD68AB4A03926EE4059`
+adds only exact DF start/end propagation plus its documentation revision.
+Local runtime, dual-seed microtest, and five-case synthetic gate
+`A4A85A46B61701EA9973DA768AF77D5240A682DBE4D1085FAF14BEAB21F8D937`
+pass, but R11 is not frozen or packaged. Finish its permanent regression,
+then make one fresh fully gated O3F14 six-case portal run. No threshold or
+selector relaxation and no retry.
+
+All 184 O3F6/O3F7 holds, all twelve current `PatternedFront` holds, Slot02,
+Slot16, and every recorded prerequisite remain explicit. Review-only stays
+true; training/XML/production remain false.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F13_SIGNED_R10_RESULTS_TWO_PROVIDER_HOLDS_O3F14_NEXT_CHECKPOINT_20260902.md`,
+SHA-256 `ACD0C032F9F78EA25097549D90D339EFC3986BEE67041AF055F39F4EE4C66D82`.

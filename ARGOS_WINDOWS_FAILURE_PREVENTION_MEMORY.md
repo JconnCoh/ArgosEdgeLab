@@ -11056,3 +11056,26 @@ than rerunning it.
   `HOLD_O3F12_DEV6_EXECUTION`, returning both as signed review results. Do not
   infer or clear the inner provider hold until its structured result is
   actually returned.
+
+## 2026-09-02 — Preserve exact mouth endpoints when reducing a candidate to a cross-channel seed
+
+- Failure signature: signed review-only O3F13 returned all six structured DEV6
+  results, but Slot09 and rare-hotspot Slot16 were explicit provider holds with
+  `KeyError: 'leftAngleDegrees'` in `candidate_mouth_interval`; Slots01, 04, and
+  08 passed and Slot02 remained an independent two-candidate ambiguity hold.
+- Cause: the frozen R10 DF-seeded recovery reduced a valid full-perimeter DF
+  candidate to center, width, and depth. R10's later correspondence gate needs
+  the exact mouth interval, checks for `startAngleDegrees` plus
+  `endAngleDegrees`, and otherwise expects topology-style `leftAngleDegrees`
+  plus `rightAngleDegrees`. The reduced DF seed had neither interval schema.
+- Mandatory preflight: every candidate projection consumed by a later geometry
+  gate must enumerate that consumer's exact required keys. Permanently exercise
+  both the physical-pair and DF-only seed constructors through correspondence,
+  and assert that the original DF start/end angles are forwarded byte-for-value;
+  do not synthesize endpoints from center and width.
+- Recovery: retain O3F13 as terminal/no-retry structured evidence and keep every
+  hold. In a fresh detector/package namespace, copy only the source DF
+  `startAngleDegrees` and `endAngleDegrees` into both reduced seed forms, preserve
+  all thresholds and selectors, rerun the existing positive/no-notch/ambiguity/
+  chipout synthetic controls plus the two seed-schema regressions, then perform
+  one fresh six-case review-only portal run.
