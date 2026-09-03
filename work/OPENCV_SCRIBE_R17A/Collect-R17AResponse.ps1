@@ -17,8 +17,8 @@ $preactionTool = Join-Path $project 'utilities\Confirm-ArgosZeroRecurrencePreact
 $responseTester = Join-Path $project 'work\PROJECT_PORTAL_REVIEW_ONLY\scripts\Test-SignedPortalResponse.ps1'
 $endpointCertificate = Join-Path $project 'work\PROJECT_PORTAL_REVIEW_ONLY\enrollment\active\JBOD_ENDPOINT_SIGNER.cer'
 $responseRoot = 'U:\ProjectPortalRO\responses'
-$outerExtractRoot = 'C:\R17AR'
-$payloadExtractRoot = 'C:\R17A'
+$outerExtractRoot = 'C:\R17A2R'
+$payloadExtractRoot = 'C:\R17A2'
 $metadataRoot = Join-Path $PSScriptRoot 'collected_metadata'
 $terminalGatePath = Join-Path $PSScriptRoot 'R17A_TERMINAL_RESPONSE_GATE.json'
 $definitionSha256 = '3266EFC50A4517278512CC07C4D623D20483351C2DACDF83C226B3BA26665246'
@@ -59,7 +59,7 @@ Assert-True ([string]$routeGate.state -eq 'PASS_R17A_COMPLETE_ROUTE_GATE' -and [
 Assert-True (Test-Path -LiteralPath $responseRoot -PathType Container) 'Portal response share is unavailable.'
 
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-$responseFiles = @(Get-ChildItem -LiteralPath $responseRoot -File -Filter '*.ready.zip' -ErrorAction Stop | Select-Object -First 500)
+$responseFiles = @(Get-ChildItem -LiteralPath $responseRoot -File -Filter '*.ready.zip' -ErrorAction Stop | Sort-Object LastWriteTimeUtc -Descending | Select-Object -First 500)
 $matches = New-Object Collections.Generic.List[object]
 foreach ($candidate in $responseFiles) {
     try {
