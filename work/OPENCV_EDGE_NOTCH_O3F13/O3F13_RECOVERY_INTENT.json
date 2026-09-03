@@ -1,0 +1,97 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-03T04:24:00Z",
+  "incidentId": "OCV03_O3F13_DEV6_RESULT_PROJECTION_RECOVERY",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"","sha256":""}
+  },
+  "route": {
+    "type": "PROJECT_PORTAL",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": ["OWNED_BOUNDED_OPENCV_CHILDREN", "OWNED_TEMPORARY_Q_SOURCE_ALIAS"],
+    "queueMutation": true,
+    "ledgerMutation": true,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3Q8/O3Q8_SIGNED_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "A0E60D4E97654F569FAE148DC835BE8B60C4D29C1BF92425B62D6EE6969CFD8C"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+      "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"
+    },
+    "qualifiedAdminGate": {"path":"","sha256":""}
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": ["MAINTENANCE_PATCH_OWNED_CHILD"],
+    "requestedFields": ["SIGNED_TERMINAL_STRUCTURED_DEV6_RESULT"],
+    "decisionOptions": ["RETAIN_HOLDS", "ADVANCE_TARGETED_GATE"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F13/O3F13_RECOVERY_OBSERVATION_EVIDENCE.json",
+      "sha256": "76A7B8291ACE0E67B677192A683478C534ABD6A5AF7E43392B37E9A284A2F174"
+    },
+    "endpointMutationNecessary": true,
+    "endpointCodeMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "operatorAuthorization": "2026-09-02 operator authorized automatic portal publication when ready and prohibited further manual PowerShell input, requiring portal-only execution tonight",
+    "boundedChange": "Fresh O3F13 keeps the exact O3F12 R10 detector, staged runner, thresholds, selectors, six source identities, and Q alias lifecycle. Change only the endpoint child-result consumer so DEV6 exit 0 must map to COMPLETE_O3F12_DEV6 and exit 2 must map to HOLD_O3F12_DEV6_EXECUTION, with one bounded JSON object parsed and exact fields validated before returning signed review results. Timeout, nonempty stderr, malformed JSON, and every other exit code remain failures."
+  },
+  "scope": {
+    "newNamespace": "work/OPENCV_EDGE_NOTCH_O3F13",
+    "liveRequestAuthorized": true,
+    "maximumLocalPackageBuilds": 1,
+    "maximumLocalEndpointRehearsals": 1,
+    "maximumPortalPublications": 1,
+    "detectorImageAlgorithmChangeAllowed": false,
+    "detectorThresholdChangeAllowed": false,
+    "taskOrExistingProcessActionAllowed": false,
+    "ownedFixtureChildAllowed": true,
+    "temporaryOwnedSourceAliasAllowed": true,
+    "providerActivationAllowed": false,
+    "requestRetryAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false,
+  "signedArtifactFailure": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3F12/O3F12_SIGNED_TERMINAL_FAILURE_GATE.json",
+    "sha256": "8C38FE83BDB145F76CFED9129239A0AE2DE34CDCFC5CA8CF4ECD19B6CCD2ADB7",
+    "classification": "SIGNED_ARTIFACT_DEV6_NONZERO_STRUCTURED_RESULT_PROJECTION_FAILURE_NOT_LIVE_STATE_PREMISE_FAILURE"
+  },
+  "blockedArtifacts": [
+    {"namespace":"work/OPENCV_EDGE_NOTCH_O3F9","classification":"WITHDRAWN_DIAGNOSTIC_EVIDENCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false},
+    {"namespace":"work/OPENCV_EDGE_NOTCH_O3F10","classification":"WITHDRAWN_DIAGNOSTIC_EVIDENCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false},
+    {"namespace":"work/OPENCV_EDGE_NOTCH_O3F11","classification":"SIGNED_TERMINAL_FAILURE_DIAGNOSTIC_EVIDENCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false},
+    {"namespace":"work/OPENCV_EDGE_NOTCH_O3F12","classification":"SIGNED_TERMINAL_FAILURE_DIAGNOSTIC_DIFF_SOURCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false}
+  ]
+}

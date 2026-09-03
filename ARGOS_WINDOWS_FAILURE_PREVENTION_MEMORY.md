@@ -11029,3 +11029,30 @@ than rerunning it.
   query `subst.exe` without a drive argument, reject any occupied alias before
   creation, verify the exact alias target before image launch, and remove only
   the exact created mapping in `finally`.
+
+## 2026-09-02 — Parse a bounded structured hold result before rejecting its nonzero review exit code
+
+- Failure signature: signed review-only request `REQ_O3F12_20260902A`
+  returned terminal response `R_54F106F81E95_20260903041718428_977693bc`
+  with empty maintenance stdout and exact stderr `O3F12 DEV6 child failed:`.
+  The DEV6 child itself wrote no stderr.
+- Cause: `Run-O3F12Staged.py` deliberately prints a bounded
+  `HOLD_O3F12_DEV6_EXECUTION` JSON summary and exits 2 when any provider
+  execution becomes an explicit hold. `Invoke-O3F12StagedEndpoint.ps1`
+  asserted exit code zero before parsing stdout, so it discarded the six-case
+  structured result and substituted an empty-stderr exception. The exact
+  package rehearsal covered success, timeout, and injected exception but not
+  the child's documented structured-hold exit.
+- Mandatory preflight: for every child whose nonzero code represents a
+  bounded domain result rather than a crash, freeze the allowed exit-code to
+  state mapping, parse and validate the single bounded JSON object before
+  deciding endpoint success, and rehearse both the pass and structured-hold
+  exits through the exact packaged worker. Unhandled errors, malformed JSON,
+  nonempty stderr, timeout, or any other exit code still fail closed.
+- Recovery: preserve O3F12 as terminal/no-retry and retain every hold. Use a
+  fresh namespace with unchanged detector, runner, thresholds, selector, and
+  source-alias lifecycle; change only the endpoint consumer so exit 0 maps to
+  `COMPLETE_O3F12_DEV6` and exit 2 maps to
+  `HOLD_O3F12_DEV6_EXECUTION`, returning both as signed review results. Do not
+  infer or clear the inner provider hold until its structured result is
+  actually returned.

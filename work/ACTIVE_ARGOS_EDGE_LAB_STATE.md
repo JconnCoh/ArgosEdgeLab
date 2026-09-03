@@ -9910,3 +9910,36 @@ hotspot Slot16; do not relax selectors or clear holds automatically. After a
 successful six-case result, continue automatically to targeted frontside BF/DF
 reconciliation, scribe, combined corpus/unified outputs, and site-bound
 fiducial/alignment prerequisites. Production scoring remains blocked.
+
+## OCV-03 O3F12 signed terminal failure / O3F13 next — 2026-09-02
+
+O3F12 `REQ_O3F12_20260902A` was published exactly once. Matching signed
+response `R_54F106F81E95_20260903041718428_977693bc`, ZIP
+`BF715C256BC7566BE02BB5E3F8A5B0567CB1ECA4215889E41D5F95E99EE4624C`,
+is `FAILED`; terminal gate
+`8C38FE83BDB145F76CFED9129239A0AE2DE34CDCFC5CA8CF4ECD19B6CCD2ADB7`
+proves a packaged result-projection contract failure. The runner returned
+bounded `HOLD_O3F12_DEV6_EXECUTION` JSON with exit 2, but the endpoint asserted
+zero before parsing stdout, so no case results or inner hold identity were
+returned. O3F12 is withdrawn, diagnostic-only, no-retry, and non-parent.
+
+Fresh O3F13 observation
+`76A7B8291ACE0E67B677192A683478C534ABD6A5AF7E43392B37E9A284A2F174`
+and intent
+`7F5CC35D9D822D00795FF7653ABFDB6D0F2F40D298ECD93DA7F12C9B8C64B402`
+support only a bounded endpoint-consumer correction: parse one DEV6 JSON
+object and map documented exit 0 to completion or exit 2 to an explicit hold.
+R10, runner, thresholds, selectors, six identities, and `Q:` alias lifecycle
+remain unchanged. After full gates, publish O3F13 once by Project Portal and
+collect only its matching signed response; no manual PowerShell/RustDesk input
+or retry.
+
+All 184 O3F6/O3F7 holds, all twelve current `PatternedFront` holds, rare
+hotspot Slot16, and every backside/scribe/fiducial/map/pose/coverage/
+sensitivity/registration/alignment prerequisite remain explicit. No selector
+relaxation or automatic hold clearance; review-only remains true and
+training/XML/production remain false.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F12_SIGNED_TERMINAL_FAILURE_O3F13_NEXT_CHECKPOINT_20260902.md`,
+SHA-256 `72EF51D754D0250C8321EAD8226CA81D84E20963456078CBB10E6AA9FC08325A`.
