@@ -1,0 +1,44 @@
+{
+  "schema": "argos_clone_literal_remediation_gate_v1",
+  "checkedUtc": "2026-09-03T07:39:40Z",
+  "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "mode": "PREFLIGHT",
+  "toolPath": "utilities/Confirm-ArgosCloneLiteralRemediation.ps1",
+  "toolSha256": "514F9019E4711F1D24DAFE4E80C44CA24D8936C40A5C4E54B5E5A1E013F19BBF",
+  "manifest": "work/OPENCV_EDGE_NOTCH_O3F15/observer_harness/O3F15_OBSERVER_CLONE_LITERAL_REMEDIATION.json",
+  "manifestSha256": "31CF5E61A54A265696885B6E95EFD07BAC77CB310B154DF91D077A796697FA8C",
+  "pairCount": 3,
+  "pairs": [
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3K1/Build-O3K1DataPullRequest.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F15/observer_harness/Build-O3F15ObserverRequest.ps1",
+      "sourceSha256": "2F9D29D6668E5606EB7565149C2AF77AEFD697F5806CFFF7B02D2A29BF7EDFA0",
+      "generatedSha256": "525B39B617879EC9E19F92925ED81E21B15FAD6A68A9816178E583476BDD0525",
+      "sourceRoots": ["C:/APR", "C:/O3K1D", "C:/O3K1P", "C:/ProgramData", "U:/ProjectPortalRO"],
+      "generatedRoots": ["C:/APR", "C:/F15O", "C:/ProgramData", "D:/KLARFExport", "U:/ProjectPortalRO"],
+      "ruleCount": 6
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3K1/Publish-O3K1DataPullRequest.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F15/observer_harness/Publish-O3F15ObserverRequest.ps1",
+      "sourceSha256": "799122B6076302A4893F0500563D2C8898E1F04093A2549C6A3020D04EA6C159",
+      "generatedSha256": "106CB924CBEC7EBB5C8A80EC4461542F5342459ABFF43F1F7E7634FD4EA51856",
+      "sourceRoots": ["//shm-cifs/Department", "U:/ProjectPortalRO"],
+      "generatedRoots": ["//shm-cifs/Department", "U:/ProjectPortalRO"],
+      "ruleCount": 2
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3K1/Collect-O3K1DataPullResponse.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_O3F15/observer_harness/Collect-O3F15ObserverResponse.ps1",
+      "sourceSha256": "924C385287D875FDC4847445C74944159674708816CF8EE591947AF1CB8F32D5",
+      "generatedSha256": "972E582AB10E5AFC267702EA5A443313897116D69C68B62A2E11F8C3A2E81904",
+      "sourceRoots": [],
+      "generatedRoots": [],
+      "ruleCount": 1
+    }
+  ],
+  "violationCount": 0,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "evidenceWrittenByPreflight": false
+}

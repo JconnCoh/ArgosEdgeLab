@@ -1,0 +1,62 @@
+{
+  "schema": "argos_ocv03_o3f15_observer_contract_gate_v1",
+  "checkedUtc": "2026-09-03T07:39:40Z",
+  "state": "PASS_O3F15_OBSERVER_CONTRACT_GATE",
+  "contractPath": "work/OPENCV_EDGE_NOTCH_O3F15/observer_harness/O3F15_OBSERVER_CONTRACT.json",
+  "contractSha256": "7FE49D22B0D79DB9D1398718447826C5B760379AF0988803E7E09F6A3E0F149B",
+  "contractState": "FROZEN_OBSERVER_HARNESSES_READY_NO_REQUEST_CREATED",
+  "classification": "OBSERVE",
+  "transport": "SIGNED_PROJECT_PORTAL_DATA_PULL_ONLY",
+  "approvedRoot": "JBOD_KLARF_EXPORT",
+  "mirrorRoot": "D:/KLARFExport/_ArgosReview/F15S",
+  "qualifiedRouteAnchorSha256": "F8AB82BB364AD6DBADF2C40AE0BFE7F18B646013D89F9A8663924E0770D06247",
+  "endpointWorkerSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+  "installedConfigEvidenceSha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+  "inheritedQueueSafetyGateSha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+  "flows": {
+    "P1": {
+      "fileCount": 1,
+      "oneShot": true,
+      "eligibleOnlyAfter": "FUTURE_NON_WITHDRAWN_SIGNED_O3F15_L2_OR_LATER_LAUNCH_BINDING"
+    },
+    "F1": {
+      "fileCount": 3,
+      "oneShot": true,
+      "eligibleOnlyAfter": "SIGNED_P1_PROGRESS_IS_COMPLETE_OR_HOLD_EXECUTION"
+    },
+    "T1": {
+      "fileCount": 1,
+      "automaticEligibility": false,
+      "eligibleOnlyAfter": "SIGNED_LAUNCH_OR_SIGNED_P1_EVIDENCE_EXPLICITLY_PROVES_ARTIFACT_FAILURE"
+    }
+  },
+  "definitionHashes": {
+    "P1": "5F9DB8A1B877BF2082BF091F8F33D81143ED1E89511C2029FE17CCBDD5EDDEBD",
+    "F1": "87E5A165A3E5E6526011D06A50F4A15F0D16CE458D94FFF74F76EDFCE9ACCD59",
+    "T1": "DE67AB7C3BD8B9B20865EAE7CF84F1C0B7E150307C0DAC7DD09AE9495194A6E2"
+  },
+  "scriptHashes": {
+    "Build-O3F15ObserverRequest.ps1": "525B39B617879EC9E19F92925ED81E21B15FAD6A68A9816178E583476BDD0525",
+    "Publish-O3F15ObserverRequest.ps1": "106CB924CBEC7EBB5C8A80EC4461542F5342459ABFF43F1F7E7634FD4EA51856",
+    "Find-O3F15ObserverResponse.ps1": "ED8934E79EBFFE3AEF4EE7E06910E84D25E06C4F0EBB2D39C1C79EF49DF2FEB0",
+    "Collect-O3F15ObserverResponse.ps1": "972E582AB10E5AFC267702EA5A443313897116D69C68B62A2E11F8C3A2E81904",
+    "New-O3F15ObserverPreaction.ps1": "49F0DBC173D5A1CE2090532E4AFC5D2A29C4FE7CB545A5584DBAD71FD9C12633",
+    "Test-O3F15ObserverHarness.ps1": "6D14A8ED5C9791588E93048865A25C4C61C370FEEC52C951EEEE3D122A88924E"
+  },
+  "terminalProgressStates": [
+    "COMPLETE_O3F15_FULL978",
+    "HOLD_O3F15_EXECUTION_STOPPED"
+  ],
+  "parserErrors": 0,
+  "zeroOneManyPassed": true,
+  "sourceImageBytesRequested": false,
+  "mutationsPerformed": false,
+  "requestBuilt": false,
+  "requestSigned": false,
+  "requestPublished": false,
+  "jbodContacted": false,
+  "rustDeskUsed": false,
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

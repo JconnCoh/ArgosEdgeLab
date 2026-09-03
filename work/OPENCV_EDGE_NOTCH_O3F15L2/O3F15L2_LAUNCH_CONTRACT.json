@@ -1,0 +1,278 @@
+{
+  "schema": "argos_ocv03_o3f15l2_launch_contract_v1",
+  "revision": "OCV03_O3F15L2_R11_EXACT_978_FRONT_RECONCILIATION_20260903",
+  "state": "FROZEN_FOR_BUILD",
+  "expectedComputerName": "A1025645101",
+  "side": "FRONT",
+  "sourceRoot": "D:/KLARFExport",
+  "runtimeRoot": "D:/O3F15RT",
+  "gateRoot": "D:/O3F15G",
+  "corpusRoot": "D:/O3F15C",
+  "mirrorRoot": "D:/KLARFExport/_ArgosReview/F15S",
+  "progressPath": "D:/O3F15C/PROGRESS.json",
+  "summaryPath": "D:/O3F15C/SUMMARY.json",
+  "mirrorProgressPath": "D:/KLARFExport/_ArgosReview/F15S/PROGRESS.json",
+  "terminalFailurePath": "D:/O3F15C/TERMINAL_FAILURE.json",
+  "mirrorTerminalFailurePath": "D:/KLARFExport/_ArgosReview/F15S/TERMINAL_FAILURE.json",
+  "inventoryPath": "D:/O3F3INV/inventory.json",
+  "inventorySha256": "7320331752A094F51C44F713A9C644AB41A059B0226DE0F8E0BD8E1D0ABCA056",
+  "o3f6ResultsPath": "D:/O3F6R8M/RESULTS.json",
+  "o3f6ResultsSha256": "A933227FE4F41259D53D586CBB5189E1B6542B96B7585B606207DAFD35326BD8",
+  "reviewOrderPath": "D:/O3F7SEL2/REVIEW_ORDER.json",
+  "reviewOrderSha256": "D57DFE4301FEE2144D18EF4DB2BFD0A323EB095C117BBF10A856A691A8E73BBA",
+  "o3f14SummaryPath": "D:/O3F9D14/SUMMARY.json",
+  "o3f14SummarySha256": "22B2CE0A05D2AD5802717CAE13F5E425DAB77D16B224CEE6FBBED3782E0050B3",
+  "runtimePath": "D:/AFCV1/rt/python.exe",
+  "runtimeSha256": "7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1",
+  "substPath": "C:/Windows/System32/subst.exe",
+  "substSha256": "158598ED3D590937C964B43DD91546FFCABAB5636B6CE619B4FFC43224013BB6",
+  "detectorSha256": "B477C290EC9D3AE388BE4EE31049B2B8094F5F30FC6E0DD68AB4A03926EE4059",
+  "expectedPairCount": 978,
+  "expectedSourceProblemCount": 0,
+  "cohortCounts": {
+    "HOLDOUT18": 18,
+    "CURRENT_TAIL": 247,
+    "FULL_TAIL": 713,
+    "FULL978": 978
+  },
+  "executionOrder": [
+    "HOLDOUT18",
+    "CURRENT_TAIL247",
+    "FULL_TAIL713"
+  ],
+  "expectedPackageLeafState": "PASS_O3F15L2_EXACT_PACKAGED_LAUNCH_LEAVES",
+  "expectedPreflightState": "PASS_O3F15L2_TARGET_PREFLIGHT",
+  "expectedRehearsalState": "PASS_O3F15L2_REHEARSAL_WORKER_LAUNCHED",
+  "expectedLaunchState": "PASS_O3F15L2_FRESH_EXACT_978_FRONT_CORPUS_LAUNCHED",
+  "expectedFocusedTestSchema": "argos_ocv03_o3f15_front_reconcile_focused_gate_v1",
+  "expectedFocusedTestState": "PASS_O3F15_FRONT_RECONCILE_FOCUSED_GATE",
+  "expectedSelfTestSchema": "argos_ocv03_o3f15_self_test_v1",
+  "expectedSelfTestState": "PASS_O3F15_FRONT_RECONCILE_SELF_TEST",
+  "expectedRunnerPreflightSchema": "argos_ocv03_o3f15_preflight_v1",
+  "expectedRunnerPreflightState": "PASS_O3F15_FRONT_RECONCILE_PREFLIGHT",
+  "expectedGateSchema": "argos_ocv03_o3f15_gate_result_v1",
+  "expectedGateState": "COMPLETE_O3F15_GATE",
+  "expectedProgressSchema": "argos_ocv03_o3f15_progress_v1",
+  "expectedBootstrapProgressState": "RUNNING_O3F15_FULL978",
+  "expectedSummarySchema": "argos_ocv03_o3f15_front_reconciliation_summary_v1",
+  "expectedCompletionState": "COMPLETE_O3F15_FULL978",
+  "expectedTechnicalStopState": "HOLD_O3F15_EXECUTION_STOPPED",
+  "expectedTerminalFailureSchema": "argos_ocv03_o3f15_terminal_failure_v1",
+  "expectedTerminalFailureState": "HOLD_O3F15_ARTIFACT_COMMIT_FAILURE",
+  "acceptedPostLaunchObservationStates": [
+    "RUNNING_O3F15_FULL978",
+    "COMPLETE_O3F15_FULL978",
+    "HOLD_O3F15_EXECUTION_STOPPED",
+    "HOLD_O3F15_ARTIFACT_COMMIT_FAILURE"
+  ],
+  "testTimeoutSeconds": 120,
+  "preflightTimeoutSeconds": 600,
+  "gateTimeoutSeconds": 900,
+  "survivalProbeSeconds": 3,
+  "bootstrapProgressTimeoutSeconds": 600,
+  "inheritedRoute": {
+    "sourceRevision": "O3F14",
+    "endpointWorkerSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "installedRouteConfigEvidenceSha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "queueSafetyGateSha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+    "routeImplementationChanged": false
+  },
+  "targetPins": [
+    {
+      "label": "runtime",
+      "path": "D:/AFCV1/rt/python.exe",
+      "sha256": "7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1"
+    },
+    {
+      "label": "subst",
+      "path": "C:/Windows/System32/subst.exe",
+      "sha256": "158598ED3D590937C964B43DD91546FFCABAB5636B6CE619B4FFC43224013BB6"
+    },
+    {
+      "label": "front-inventory",
+      "path": "D:/O3F3INV/inventory.json",
+      "sha256": "7320331752A094F51C44F713A9C644AB41A059B0226DE0F8E0BD8E1D0ABCA056"
+    },
+    {
+      "label": "r8-results",
+      "path": "D:/O3F6R8M/RESULTS.json",
+      "sha256": "A933227FE4F41259D53D586CBB5189E1B6542B96B7585B606207DAFD35326BD8"
+    },
+    {
+      "label": "review-order",
+      "path": "D:/O3F7SEL2/REVIEW_ORDER.json",
+      "sha256": "D57DFE4301FEE2144D18EF4DB2BFD0A323EB095C117BBF10A856A691A8E73BBA"
+    },
+    {
+      "label": "o3f14-summary",
+      "path": "D:/O3F9D14/SUMMARY.json",
+      "sha256": "22B2CE0A05D2AD5802717CAE13F5E425DAB77D16B224CEE6FBBED3782E0050B3"
+    },
+    {
+      "label": "installed-r6",
+      "path": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/NativeFrontsideWaferPoseOpenCvV2R6.py",
+      "sha256": "90839F14CEEED7C2DFC6E1601195F6927C4631E508F9EB859E77A93745D3FB30"
+    },
+    {
+      "label": "installed-topology",
+      "path": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03CorpusR1/WaferTopologyAxisOpenCv.py",
+      "sha256": "D8897C1A5B60CB5AA9B0343CF8C9E5A249CCC5DEF5FBCDFE645EC08C354EF3BD"
+    },
+    {
+      "label": "same-bytes-carrier",
+      "path": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_NotchReviewOpenCvV1.py",
+      "sha256": "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4"
+    }
+  ],
+  "payloadFiles": [
+    {
+      "name": "Invoke-O3F15L2.ps1",
+      "source": "work/OPENCV_EDGE_NOTCH_O3F15L2/Invoke-O3F15L2.ps1",
+      "sha256": "6E8FBA054F4F52C722607D4117FCB50C4512A12AABFF6AFCBF3F12CB4921BF66",
+      "copyToRuntime": false
+    },
+    {
+      "name": "O3F15L2LaunchFixture.py",
+      "source": "work/OPENCV_EDGE_NOTCH_O3F15L2/O3F15L2LaunchFixture.py",
+      "sha256": "5EA53940E894A3CEA10237EA96C619F06293AB81CFAC671234CD6A08673D3DD4",
+      "copyToRuntime": true
+    },
+    {
+      "name": "Run-O3F15FrontReconcile.py",
+      "source": "work/O3F8/Run-O3F15FrontReconcile.py",
+      "sha256": "DCE1E1F3B42FBD38ED73FF7D346F19C3BAE013EE3003B3485E91A41DAF573C48",
+      "copyToRuntime": true
+    },
+    {
+      "name": "Test-O3F15FrontReconcile.py",
+      "source": "work/O3F8/Test-O3F15FrontReconcile.py",
+      "sha256": "37F1D9980CA0635673D39B3E9B5EBC2BCF21021EB329ABD8C64820F518FC6C47",
+      "copyToRuntime": true
+    },
+    {
+      "name": "Run-O3F8Staged.py",
+      "source": "work/O3F8/Run-O3F8Staged.py",
+      "sha256": "44B378616CCCFEB0C67DF09196D0B7CDD515DBE35CEA84F4DBEB69DE326AD8C7",
+      "copyToRuntime": true
+    },
+    {
+      "name": "Run-O3F14Staged.py",
+      "source": "work/O3F8/Run-O3F14Staged.py",
+      "sha256": "CAAFD1AC8C19E33D95BA8283963A4D0ED0189FF566C9923822BF3EC37956171E",
+      "copyToRuntime": true
+    },
+    {
+      "name": "FullPerimeterWaferTopologyOpenCvR11.py",
+      "source": "work/O3F8/FullPerimeterWaferTopologyOpenCvR11.py",
+      "sha256": "B477C290EC9D3AE388BE4EE31049B2B8094F5F30FC6E0DD68AB4A03926EE4059",
+      "copyToRuntime": true
+    },
+    {
+      "name": "FullPerimeterWaferTopologyOpenCvR9.py",
+      "source": "work/O3F8/FullPerimeterWaferTopologyOpenCvR9.py",
+      "sha256": "DB44AD35205AC088FE7E24C1CC8FA9291311922A7D31E0F1C055BA92EAFD2FC1",
+      "copyToRuntime": true
+    },
+    {
+      "name": "FullPerimeterWaferTopologyOpenCvR8.py",
+      "source": "work/O3F4/FullPerimeterWaferTopologyOpenCvR8.py",
+      "sha256": "068ECC0D4F547FCFD7A0A2AEDF673B71BB0C46207DE8EC0F47312A9030B0734B",
+      "copyToRuntime": true
+    },
+    {
+      "name": "Detect-O3P8FrontSplitNotches.py",
+      "source": "work/OPENCV_EDGE_NOTCH_O3P8/Detect-O3P8FrontSplitNotches.py",
+      "sha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36",
+      "copyToRuntime": true
+    },
+    {
+      "name": "Test-O3F14R11SeedAngles.py",
+      "source": "work/O3F8/Test-O3F14R11SeedAngles.py",
+      "sha256": "03EBD2130C17FEA0DDDEB36F3A5E75DAA0014440734C7767690E2A47348435AA",
+      "copyToRuntime": true
+    },
+    {
+      "name": "O3P8_POST2_SHORT_ALIAS_JOB.json",
+      "source": "work/OPENCV_EDGE_NOTCH_O3P8/O3P8_POST2_SHORT_ALIAS_JOB.json",
+      "sha256": "2C2D656A879BBA1DEC6377D1855A949459C7AC6F50145761B8D283076FEAD1F9",
+      "copyToRuntime": true
+    },
+    {
+      "name": "O3M9_SLOT16_JOB.json",
+      "source": "work/OPENCV_EDGE_NOTCH_O3M9/O3M9_SLOT16_JOB.json",
+      "sha256": "E384ABD12E9B77DB9B4492504A5D792E316C5396C3B0A3E1D2B1AB11BB4C7DD3",
+      "copyToRuntime": true
+    },
+    {
+      "name": "O3F12_DEV6_SOURCE_ALIAS_PLAN.json",
+      "source": "work/OPENCV_EDGE_NOTCH_O3F12/O3F12_DEV6_SOURCE_ALIAS_PLAN.json",
+      "sha256": "2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C",
+      "copyToRuntime": true
+    },
+    {
+      "name": "OCV03_NotchReviewOpenCvV1.py",
+      "source": "work/OPENCV_EDGE_NOTCH_O3K1/OCV03_NotchReviewOpenCvV1.py",
+      "sha256": "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+      "copyToRuntime": false
+    }
+  ],
+  "routeBudget": {
+    "pathSuffixReserve": 32,
+    "canonicalEffectiveHardStop": 230,
+    "aliasEffectiveHardStop": 200,
+    "maximumCanonicalSourcePathLength": 197,
+    "maximumAliasSourcePathLength": 167,
+    "maximumCanonicalSourceEffectiveLength": 229,
+    "maximumAliasSourceEffectiveLength": 199,
+    "maximumCorpusPathLength": 105,
+    "maximumCorpusEffectivePathLength": 137,
+    "maximumGeneratedComponentLength": 80,
+    "representativeCanonicalSourcePath": "D:/KLARFExport/PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot16/BrightfieldFrontsideWafer/resizedImage/62629-419_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "representativeAliasSourcePath": "Q:/BrightfieldFrontsideWafer/resizedImage/62629-419_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "maximumRuntimeRelativeLeaf": "FullPerimeterWaferTopologyOpenCvR11.py",
+    "maximumGateRelativeLeaf": "R11_SYNTHETIC/UPPER_RIGHT_315_df_r10_recovery_enhanced.png",
+    "maximumCorpusBoundaryLeaf": "cases/C0978/xx/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "maximumMirrorRelativeLeaf": "TERMINAL_FAILURE.json.partial",
+    "maximumGeneratedLeaf": "D:/O3F15C/cases/C0978/xx/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "maximumAliasLeaf": "Q:/BrightfieldFrontsideWafer/resizedImage/62629-419_Slot16_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "canonicalSourceLeafCount": 1956,
+    "aliasSourceLeafCount": 1956,
+    "runEnumeratedLeafCount": 15658,
+    "runFixedLeafCount": 10,
+    "runPerCaseLeafCount": 16,
+    "caseCount": 978,
+    "sourceChannelCount": 2,
+    "maximumCandidateCountPerChannel": 24,
+    "candidateAssetSuffixCount": 4,
+    "plannedRenderedAssetLeafCountPerCase": 12,
+    "mirrorFinalLeafCount": 4,
+    "maximumMirrorLeafBytesExclusive": 2097152,
+    "observedFull978SourceMaximaAvailableLaptopSide": false,
+    "actualSourceAndOutputPlansValidatedByRunnerPreflight": true
+  },
+  "rehearsal": {
+    "invocationSchema": "argos_ocv03_o3f15l2_rehearsal_invocation_v1",
+    "normalFixtureMode": "NORMAL",
+    "immediateExitFixtureMode": "IMMEDIATE_EXIT",
+    "collisionState": "HOLD_O3F15L2_REHEARSAL_CREATE_NEW_COLLISION",
+    "immediateExitState": "HOLD_O3F15L2_REHEARSAL_WORKER_EXITED_IMMEDIATELY",
+    "bootstrapProgressRequired": true,
+    "targetRootsAndImagesAllowed": false
+  },
+  "allPairsFreshlyExecutedExactlyOnceRequired": true,
+  "ordinaryDetectorHoldsPreserved": true,
+  "postResultSelectorRelaxationAllowed": false,
+  "numericThresholdRelaxationAllowed": false,
+  "sourceMutationAllowed": false,
+  "sourceDeletionAllowed": false,
+  "existingTaskOrProcessActionAllowed": false,
+  "ownedWorkerLaunchAllowed": true,
+  "providerActivationAllowed": false,
+  "automaticHoldClearanceAllowed": false,
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

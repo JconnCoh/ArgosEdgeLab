@@ -1,0 +1,17 @@
+{
+  "schema": "argos_project_portal_request_definition_v1",
+  "targetRole": "JBOD",
+  "jobClass": "DATA_PULL",
+  "handler": "",
+  "maxResultBytes": 8388608,
+  "parameters": {
+    "approvedRoot": "JBOD_KLARF_EXPORT",
+    "relativePaths": [
+      "_ArgosReview/F15S/PROGRESS.json",
+      "_ArgosReview/F15S/SUMMARY.json",
+      "_ArgosReview/F15S/RESULTS.json"
+    ],
+    "maximumFiles": 3,
+    "maximumBytes": 4194304
+  }
+}

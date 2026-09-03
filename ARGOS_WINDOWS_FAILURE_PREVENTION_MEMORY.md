@@ -11079,3 +11079,51 @@ than rerunning it.
   all thresholds and selectors, rerun the existing positive/no-notch/ambiguity/
   chipout synthetic controls plus the two seed-schema regressions, then perform
   one fresh six-case review-only portal run.
+
+## 2026-09-03 — Keep expanded signed-package staging on the short root when the final ZIP moves beside its route gate
+
+- Failure signature: O3F15L1 build completed locally, but the first non-mutating
+  signing preflight stopped with `O3F15L1 final package path gate failed` before
+  creating a signing directory, signature, request manifest, or final ZIP.
+- Cause: the adjacent-artifact correction moved both the canonical ZIP and the
+  expanded `.ready` signing tree beneath the deep repository
+  `final_o3f15` directory. The expanded payload leaf exceeded the mandatory
+  effective-length budget even though the final ZIP and its adjacent path-gate
+  leaf were safe.
+- Mandatory preflight: budget expanded signing leaves separately from final
+  publication artifacts. Keep the expanded `.partial`/`.ready` tree under the
+  already-approved short build root, while placing only the canonical ZIP and
+  its machine-readable prepublication path gate together under the durable
+  final-artifact directory. Require both roots absent before the one signing
+  action.
+- Recovery: retain the already-built byte-identical payload, because the failed
+  step was preflight-only and changed no signing or publication target. Correct
+  only the local signing layout, create a fresh exact sign preaction revision,
+  rerun parser/harness/wrapper and path preflights, and sign once. No JBOD,
+  portal, source-image, task, process, provider, or production state was touched.
+
+## 2026-09-03 — Rehearsal failure projection must use script-shared fixture state
+
+- Failure signature: the exact signed O3F15L1 ZIP passed signature, packaged
+  focused-test, and normal launch rehearsal, then its deliberate create-new
+  collision case emitted no JSON. Direct inspection of the preserved collision
+  fixture returned `The variable '$fixtureMode' cannot be retrieved because it
+  has not been set.`
+- Cause: `Invoke-O3F15L1Main` assigned `fixtureMode` in function-local scope,
+  while the outer script-level `catch` tried to serialize that local variable.
+  Strict mode therefore replaced the intended bounded collision hold with a
+  second wrapper exception.
+- Mandatory preflight: initialize failure-projection context in explicit
+  script-shared state before invoking the main function, update it immediately
+  after a rehearsal manifest is validated, and require the outer catch to read
+  only that shared state. Exercise normal, create-new collision, and immediate
+  child-exit paths through the exact signed ZIP and require one bounded JSON
+  object from every documented outcome.
+- Recovery: O3F15L1 request
+  `REQ_20260903T073146289Z_52B5864F4522` is signed but unpublished, withdrawn,
+  no-retry, and non-parent. Preserve its fixture root as failure evidence. Use a
+  fresh O3F15L2 package namespace, change only the endpoint's rehearsal-context
+  scope, keep R11, runner, thresholds, selectors, source identities, live JBOD
+  roots, and authority bounds unchanged, then repeat all build/sign/exact-ZIP/
+  route gates once. No JBOD, portal, image, task, process, provider, or
+  production state was touched by O3F15L1.

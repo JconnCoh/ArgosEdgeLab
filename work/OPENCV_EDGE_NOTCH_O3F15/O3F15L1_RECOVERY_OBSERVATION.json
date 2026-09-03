@@ -1,0 +1,41 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-03T07:34:00Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "O3F15L1_REHEARSAL_FIXTURE_SCOPE_20260903",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "sources": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15/Invoke-O3F15L1.ps1",
+      "sha256": "05B9A6A2FC37AFBD65366E8C62C1BFAA5FE43F4E3EC779CD2D8E67AF44890B7D",
+      "packagedExtractedSha256": "05B9A6A2FC37AFBD65366E8C62C1BFAA5FE43F4E3EC779CD2D8E67AF44890B7D"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15/final_o3f15/REQ_20260903T073146289Z_52B5864F4522.ready.zip",
+      "sha256": "AEEA0E60DA44E4C333528EEEE1DE5F1CD8AF2CCB6045ACC8E1F7EBDC059F7EA1"
+    }
+  ],
+  "expected": {
+    "collisionExitCode": 2,
+    "collisionState": "HOLD_O3F15L1_REHEARSAL_CREATE_NEW_COLLISION",
+    "stdoutJsonObjectCount": 1
+  },
+  "observed": {
+    "collisionExitCode": 1,
+    "collisionState": null,
+    "stdoutJsonObjectCount": 0,
+    "error": "The variable '$fixtureMode' cannot be retrieved because it has not been set."
+  },
+  "cause": "fixtureMode was function-local but read by the outer script-level catch under StrictMode",
+  "supportedRemedy": "B",
+  "requiredCorrection": "Initialize and update explicit script-shared rehearsal context and read only that value in the outer catch",
+  "detectorOrRunnerChangeRequired": false,
+  "liveRootChangeRequired": false,
+  "selectorOrThresholdChangeRequired": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

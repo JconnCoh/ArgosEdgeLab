@@ -1,0 +1,75 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-03T07:34:30Z",
+  "incidentId": "O3F15L1_REHEARSAL_FIXTURE_SCOPE_20260903",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 1,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_EDGE_NOTCH_O3F15/O3F15L1_LOCAL_REHEARSAL_FAILURE.json",
+        "sha256": "89288A4C0C1B0343613007EF732F8C7A7681D49AD8EDD88AC59708CC6A52EBC5",
+        "state": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+      }
+    ],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "LOCAL_DRAFT_PATCH",
+    "jobClass": "LOCAL_REVIEW_ONLY_PACKAGE_SUCCESSOR",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {"path": "work/OPENCV_OLS3/pkg/payload/W.ps1", "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    "installedConfigEvidence": {"path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json", "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"},
+    "capabilityEvidence": {"path": "", "sha256": ""},
+    "qualifiedEndpointGate": {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json", "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "work/OPENCV_EDGE_NOTCH_O3F15/Invoke-O3F15L1.ps1",
+        "sourceSchema": "argos_ocv03_o3f15l1_rehearsal_launch_v1",
+        "selector": "deliberate create-new collision after a passing NORMAL rehearsal",
+        "uniquenessKey": "REQ_20260903T073146289Z_52B5864F4522|COLLISION",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": ["LOCAL_EXACT_SIGNED_ZIP_REHEARSAL"],
+    "requestedFields": ["exitCode", "stdoutJsonObjectCount", "state", "error"],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15/O3F15L1_RECOVERY_OBSERVATION.json",
+      "sha256": "31E5645EF92552D4DC2F16FEE2DD79D5A1660C735E78214D610FBF290985CAFB"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "exactChange": "Use explicit script-shared rehearsal fixture state in the fresh O3F15L2 endpoint catch",
+    "detectorOrRunnerChangeAllowed": false,
+    "liveRootChangeAllowed": false,
+    "selectorOrThresholdChangeAllowed": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

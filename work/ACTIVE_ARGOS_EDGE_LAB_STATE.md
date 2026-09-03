@@ -10074,3 +10074,62 @@ training/XML/production remain false.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F14_R11_DEV6_COMPLETE_FRONT_RECON_NEXT_CHECKPOINT_20260903.md`,
 SHA-256 `24C9CFA7A7DDFEE10ACBB1C9066636CDDAC1F11EA92A9392FA919A10FFF6F456`.
+
+## OCV-03 O3F15L1 local signed-rehearsal failure / O3F15L2 next — 2026-09-03
+
+Disposition: `PENDING_GATE`
+
+O3F15L1 request `REQ_20260903T073146289Z_52B5864F4522`, ZIP
+`AEEA0E60DA44E4C333528EEEE1DE5F1CD8AF2CCB6045ACC8E1F7EBDC059F7EA1`,
+was signed but never published and never reached JBOD. Its exact local
+signed-ZIP rehearsal passed the normal launch, then the deliberate collision
+case exposed an outer-catch scope bug: function-local `$fixtureMode` was not
+available under script-level StrictMode. Exact failure
+`89288A4C0C1B0343613007EF732F8C7A7681D49AD8EDD88AC59708CC6A52EBC5`
+and recovery observation
+`31E5645EF92552D4DC2F16FEE2DD79D5A1660C735E78214D610FBF290985CAFB`
+are pinned. Recovery intent
+`5A3C42E68D63895F47D964F662AD34246C360A1C1820845AC4F883DD1EC3EF76`
+passes gate
+`DFA605564C01AE108CA338A44C8703EBE4B685D012912BA86829ABEE284BD19A`.
+
+O3F15L1 is withdrawn/no-retry/non-parent. Only fresh O3F15L2 may proceed,
+changing solely to explicit script-shared rehearsal context. R11, runner,
+thresholds, selectors, exact 978 identities, live roots, all holds, and every
+later prerequisite remain unchanged. No RustDesk/operator input is permitted;
+review-only remains true and training/XML/production remain false.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L1_LOCAL_SIGNED_REHEARSAL_FAILURE_O3F15L2_NEXT_CHECKPOINT_20260903.md`,
+SHA-256 `BB3DFF900896413AA3AA0E4EDC1F77A3234317974DD4A36F7186DA9978EEE481`.
+
+## OCV-03 O3F15L2 signed portal ready — 2026-09-03
+
+Disposition: `PENDING_GATE`
+
+Fresh review-only request `REQ_20260903T074847542Z_A0FB32A19F06`, ZIP
+`5B4F26D672029D5D0885A2E74DCD4D7A40787D3E2404A09F8723BCFA312B42E7`,
+is frozen, signed, and unpublished. O3F15L2 changes only the script-shared
+rehearsal fixture context needed for bounded collision/error JSON. Independent
+normalization proves R11, runner, focused test, thresholds, selectors, all 978
+identities, live roots, and authority are unchanged. O3F15L1 remains
+withdrawn/no-retry/non-parent.
+
+Build `5DCE0DE968D93C20B439D51FE5C320116734F37066801ED65BDAE29206666195`,
+sign `90B06CCA463AC14ACB3070A79AC5ADCDF0F9C0E204ECC22B54DBE68064FC3E4F`,
+exact Windows PowerShell 5.1 rehearsal
+`DC5AC5A7868E6E7762915D6EDF3F13C0B1E07563EC7A154F87F4DC36A2E76BF5`,
+and adjacent route/path
+`2632E16195A1AABBEBBC5FBDF05BDAEBCD82AF389A428618EFCF2C725007E0FF`
+gates pass. NORMAL, collision, immediate-exit, approved-predecessor,
+idempotent-target, and unapproved-predecessor cases all returned the expected
+bounded result; no JBOD contact or source image read occurred.
+
+All 184/12 holds, Slot02 ambiguity, rare-hotspot Slot16, and every backside,
+scribe, combined-output, fiducial, registration, and alignment prerequisite
+remain explicit. No RustDesk/operator input/retry; review-only remains true
+and training/XML/production remain false.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L2_SIGNED_PORTAL_READY_CHECKPOINT_20260903.md`,
+SHA-256 `00277E1867A16F80A1BA8C85A36D9826C49B17B160DE2D68C94D9AFE92081963`.

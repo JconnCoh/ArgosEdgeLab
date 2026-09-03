@@ -1,0 +1,89 @@
+{
+  "schema": "argos_ocv03_o3f15_portal_observer_contract_v1",
+  "revision": "O3F15_PORTAL_OBSERVERS_P1_F1_T1_20260903",
+  "state": "FROZEN_OBSERVER_HARNESSES_READY_NO_REQUEST_CREATED",
+  "classification": "OBSERVE",
+  "transport": "SIGNED_PROJECT_PORTAL_DATA_PULL_ONLY",
+  "approvedRoot": "JBOD_KLARF_EXPORT",
+  "approvedRootPath": "D:/KLARFExport",
+  "mirrorRoot": "D:/KLARFExport/_ArgosReview/F15S",
+  "routePins": {
+    "qualifiedRouteAnchor": "work/OPENCV_EDGE_NOTCH_O3K1/O3K1_DATA_PULL_COMPLETE_ROUTE_GATE.json",
+    "qualifiedRouteAnchorSha256": "F8AB82BB364AD6DBADF2C40AE0BFE7F18B646013D89F9A8663924E0770D06247",
+    "endpointWorkerSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "installedConfigEvidenceSha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+    "inheritedQueueSafetyGateSha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"
+  },
+  "flows": {
+    "P1": {
+      "state": "FROZEN_ONE_SHOT_PROGRESS_OBSERVER",
+      "definition": "O3F15_P1_DATA_PULL_DEFINITION.json",
+      "relativePaths": [
+        "_ArgosReview/F15S/PROGRESS.json"
+      ],
+      "localRoot": "C:/F15O/P1",
+      "buildSignPreactionPath": "work/OPENCV_EDGE_NOTCH_O3F15/observer_harness/PREACTION_O3F15_P1_BUILD_SIGN.json",
+      "publishPreactionPath": "C:/F15O/P1/PREACTION_PUBLISH.json",
+      "publishInvocationPath": "C:/F15O/P1/PUBLISH_INVOCATION.json",
+      "eligibleOnlyAfter": "FUTURE_NON_WITHDRAWN_SIGNED_O3F15_L2_OR_LATER_LAUNCH_BINDING",
+      "terminalProgressStates": [
+        "COMPLETE_O3F15_FULL978",
+        "HOLD_O3F15_EXECUTION_STOPPED"
+      ],
+      "maximumPublications": 1,
+      "retryAuthorized": false
+    },
+    "F1": {
+      "state": "FROZEN_ONE_SHOT_TERMINAL_CORPUS_OBSERVER",
+      "definition": "O3F15_F1_DATA_PULL_DEFINITION.json",
+      "relativePaths": [
+        "_ArgosReview/F15S/PROGRESS.json",
+        "_ArgosReview/F15S/SUMMARY.json",
+        "_ArgosReview/F15S/RESULTS.json"
+      ],
+      "localRoot": "C:/F15O/F1",
+      "buildSignPreactionPath": "work/OPENCV_EDGE_NOTCH_O3F15/observer_harness/PREACTION_O3F15_F1_BUILD_SIGN.json",
+      "publishPreactionPath": "C:/F15O/F1/PREACTION_PUBLISH.json",
+      "publishInvocationPath": "C:/F15O/F1/PUBLISH_INVOCATION.json",
+      "eligibleOnlyAfter": "SIGNED_P1_PROGRESS_IS_COMPLETE_OR_HOLD_EXECUTION",
+      "maximumPublications": 1,
+      "retryAuthorized": false
+    },
+    "T1": {
+      "state": "DOCUMENTED_DISABLED_UNLESS_ARTIFACT_FAILURE_IS_PROVED",
+      "definition": "O3F15_T1_DATA_PULL_DEFINITION.json",
+      "relativePaths": [
+        "_ArgosReview/F15S/TERMINAL_FAILURE.json"
+      ],
+      "localRoot": "C:/F15O/T1",
+      "buildSignPreactionPath": "work/OPENCV_EDGE_NOTCH_O3F15/observer_harness/PREACTION_O3F15_T1_BUILD_SIGN.json",
+      "publishPreactionPath": "C:/F15O/T1/PREACTION_PUBLISH.json",
+      "publishInvocationPath": "C:/F15O/T1/PUBLISH_INVOCATION.json",
+      "eligibleOnlyAfter": "SIGNED_LAUNCH_OR_SIGNED_P1_EVIDENCE_EXPLICITLY_PROVES_ARTIFACT_FAILURE",
+      "automaticEligibility": false,
+      "maximumPublications": 1,
+      "retryAuthorized": false
+    }
+  },
+  "expectedSchemas": {
+    "PROGRESS.json": "argos_ocv03_o3f15_progress_v1",
+    "SUMMARY.json": "argos_ocv03_o3f15_front_reconciliation_summary_v1",
+    "RESULTS.json": "argos_ocv03_o3f15_front_reconciliation_results_v1",
+    "TERMINAL_FAILURE.json": "argos_ocv03_o3f15_terminal_failure_v1"
+  },
+  "invariants": {
+    "sourceImageBytesRequested": false,
+    "sourceMutationAuthorized": false,
+    "sourceDeletionAuthorized": false,
+    "existingTaskOrProcessActionAuthorized": false,
+    "providerActivationAuthorized": false,
+    "automaticHoldClearanceAuthorized": false,
+    "requestRetryAuthorized": false,
+    "rustDeskUsed": false,
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false
+  }
+}
