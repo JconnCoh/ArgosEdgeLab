@@ -1,0 +1,45 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R14P_PUBLICATION_TOOLING_20260903",
+  "purpose": "Classify every literal Windows and UNC root in the mechanically derived R14P one-time publisher, signed-response collector, and read-only queue observer.",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R13B/Publish-R13B_R2.ps1",
+      "sourceSha256": "5698FDE56FD9FE3B3F96A4E283009D9FB56B71E74DCE3A0A699BAACCCB322939",
+      "generated": "work/OPENCV_SCRIBE_R14/Publish-R14P.ps1",
+      "generatedSha256": "833B95A877FADEAE37128F0ADB9ECCF2B81C5D0D9366A037208B09D85B3836B7",
+      "rootRules": [
+        {"sourceRoot": "\\\\shm-cifs\\Department", "generatedRoot": "\\\\shm-cifs\\Department", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "U:\\ProjectPortalRO", "generatedRoot": "U:\\ProjectPortalRO", "disposition": "UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R13B/Collect-R13BResponseR2.ps1",
+      "sourceSha256": "556FC3FDD0B174D1ED1BBA752F044A13619EFDE2C00FA17C2FA534822695E5E0",
+      "generated": "work/OPENCV_SCRIBE_R14/Collect-R14PResponse.ps1",
+      "generatedSha256": "2068B35DF35B0DBD7E26DE12B4509F3BA39AF53F67F730133DE06781DA6733FC",
+      "rootRules": [
+        {"sourceRoot": "C:\\R13BR", "generatedRoot": "C:\\R14R", "disposition": "REPLACED"},
+        {"sourceRoot": "U:\\ProjectPortalRO", "generatedRoot": "U:\\ProjectPortalRO", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "\\\\shm-cifs\\Department", "generatedRoot": "\\\\shm-cifs\\Department", "disposition": "UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R13B/Get-R13BCurrentShareObservation.ps1",
+      "sourceSha256": "C548609DE563F632A375867A3B6438792A7216A9EC038285E012BD566D55FD15",
+      "generated": "work/OPENCV_SCRIBE_R14/Get-R14PCurrentShareObservation.ps1",
+      "generatedSha256": "3AFD8A6C14A3CBCC86BC7544F37112E17D917D11347BF22C891868A5196AEB25",
+      "rootRules": [
+        {"sourceRoot": "\\\\shm-cifs\\Department", "generatedRoot": "\\\\shm-cifs\\Department", "disposition": "UNCHANGED_ALLOWED"},
+        {"sourceRoot": "U:\\ProjectPortalRO", "generatedRoot": "U:\\ProjectPortalRO", "disposition": "UNCHANGED_ALLOWED"}
+      ]
+    }
+  ],
+  "authority": {
+    "metadataOnly": true,
+    "targetExecuted": false,
+    "publicationAuthorized": false,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  }
+}

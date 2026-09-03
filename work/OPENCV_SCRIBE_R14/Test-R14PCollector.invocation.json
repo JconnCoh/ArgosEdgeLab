@@ -1,0 +1,28 @@
+{
+  "schema": "argos_r14p_collector_r2_rehearsal_invocation_v1",
+  "requestId": "REQ_20260902T204408092Z_R14P",
+  "collectorSha256": "2068B35DF35B0DBD7E26DE12B4509F3BA39AF53F67F730133DE06781DA6733FC",
+  "maximumMatchingResponses": 1,
+  "requestRetryAuthorized": false,
+  "matchingSignedTerminalResponseOnly": true,
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "providerActivationAllowed": false
+  },
+  "limits": {
+    "maximumBundleEntries": 128,
+    "maximumBundleEntryBytes": 8388608,
+    "maximumBundleExpandedBytes": 67108864,
+    "maximumJsonBytes": 1048576
+  },
+  "rehearsal": {
+    "normalizedNestedEntry": "CASE01/CASE_RESULT.json",
+    "rawNestedEntry": "CASE01\\CASE_RESULT.json",
+    "gatePath": "work/OPENCV_SCRIBE_R14/R14P_COLLECTOR_ZIP_LOOKUP_REHEARSAL_GATE_R2B.json"
+  }
+}
