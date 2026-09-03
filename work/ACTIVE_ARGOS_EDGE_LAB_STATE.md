@@ -10246,3 +10246,41 @@ routing remain false. No RustDesk or operator input is permitted.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L3_SIGNED_PORTAL_READY_CHECKPOINT_20260903.md`,
 SHA-256 `1C97A841150F1539F4298635A2FFF5BC17FFE46DBBB5E84B20985EBC2EC876B8`.
+
+## OCV-03 O3F15L3 signed terminal PREFLIGHT path failure / stop-loss — 2026-09-03
+
+Disposition: `DIAGNOSTIC_ONLY`
+
+Request `REQ_20260903T090514331Z_84BB875EEFD2`, ZIP
+`CD681FD47BFF21DE532AC430176D543FF93EF19E1AE8462BE6745A6ECCA86FEA`,
+was published exactly once from commit
+`c06f759d40c634dd9d93f3e3084b472b9a1e6cc8`. Matching signed response
+`R_B8A16CFA33BC_20260903092008761_68e46cd3`, ZIP
+`EBA59835968348AFEBAB8A35ED45A546D7E7EB8865C64A28597B9A3952BA133E`,
+was collected through gate
+`1DAD141DA1DD4CD5855CC0F6F231C2969306D6563467426EAF9D92D159DCC9D9`.
+
+The endpoint envelope passed, but its sole authorized `PREFLIGHT` child exited
+`1`. The signed diagnostic proves the Slot19 BF canonical path has raw length
+207 and effective length 239 with the frozen 32-character reserve, violating
+the exclusive `<230` O3F14 canonical limit. It stopped before SELF_TEST, GATE,
+RUN, result roots, corpus, or image reads. No source, existing task/process,
+provider, selector, threshold, or hold was changed.
+
+The first local collector preflight created no output and was withdrawn after
+the documented PS5.1 byte-array `ComputeHash` ambiguity. Typed-byte R2 collector
+`0510602617F885814013D30E1F9CEFD50BD655770D117525EE7ABD3D42768D82`
+passed exact harness/wrapper/clone/path/signature gates and collected the same
+pinned response into fresh local root `C:\O3F15L3C2`; there was no request
+retry or republish.
+
+All 184 frontside and twelve current PatternedFront holds remain explicit,
+including Slot02 ambiguity and rare-hotspot Slot16. With O3F15L2 and O3F15L3
+now two signed premise failures in one incident, mutation stop-loss is active.
+Do not publish, retry, create, sign, or execute another successor until workflow
+review and a fresh explicit recovery intent clear stop-loss. Review-only stays
+true; training, XML, production eligibility, and production routing stay false.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L3_SIGNED_TERMINAL_PREFLIGHT_PATH_FAILURE_STOP_LOSS_CHECKPOINT_20260903.md`,
+SHA-256 `443CC00443B391E9ADF3C429FFDA44A362B7C8D56BC1AE3E4BA28403E9611D1D`.
