@@ -9529,3 +9529,27 @@ SHA-256 `26A60B66FA53743EAD4A6EC73547AD14EB50FB7A153E489B9FE3D021860E05E3`.
 Exact next scribe-lane action: verify frozen R18D and all returned hashes, run
 only the four development acquisitions, and freeze their outputs before opening
 the four blind acquisitions. No full KLARF run or authority expansion.
+
+# 2026-09-03 — OCV-02 R18E development / K confirmation pending (`PENDING_GATE`)
+
+Frozen R18D read exactly the four predeclared development crops and zero blind
+acquisitions. It exactly read `148AW102SUG6` (independent W validation) and
+`1480J017SUH0`, correctly returned no string for one blank/wrong-location crop,
+and localized the clear Slot22 grid but read `11DCR060SUF5` instead of visible
+`13DCK060SUF5`.
+
+A local in-memory topology-margin experiment corrected position 2 from `1` to
+`3` without checksum and preserved all 9 visible plus 5 blank controls. The
+clear position-5 `K` remains a reference-generalization failure: the existing
+single K example does not rank it correctly. No K reference has been admitted.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18E/R18E_DEVELOPMENT_K_CONFIRMATION_PENDING_CHECKPOINT_20260903.md`,
+SHA-256 `B449711F659FC5D1D688F055312C7620E7D9E49CD70B7DC5735D05F770A4E4B2`.
+
+Exact next scribe-lane action: obtain explicit operator confirmation that the
+boxed Slot22 position-5 glyph is `K` in `13DCK060SUF5`; then build and regress
+fresh R18F before opening any blind acquisitions. R18E remains no-retry and
+no-republish. No activation, identity acceptance, automatic admission, hold
+clearance, XML, training, production, JBOD, portal, task/process, source, or
+wafer authority.
