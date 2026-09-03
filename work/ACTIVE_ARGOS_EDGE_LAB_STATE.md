@@ -9491,3 +9491,24 @@ Exact next scribe-lane action: commit/push this exact publication state, require
 a clean branch matching origin and an empty queue, run non-mutating preflight,
 then publish once. Never retry or republish. Gateway acceptance alone is not
 execution evidence; await only the matching signed terminal response.
+
+# 2026-09-03 — OCV-02 R18E published / matching response verified (`PENDING_GATE`)
+
+R18E was published exactly once. The gateway processed copy hash-matches exact
+request ZIP `C0218B20414CB2DF0B1C11F5273BD0C989CB6EE550D048C6163F5E21E8A2A502`.
+Matching response `R_D1D4956AA344_20260903194752479_47abca21`, ZIP SHA-256
+`72FA6467CC8DF2020B7D21027BCEFEFC50B93AA0035FD74DF6B4619498C747C2`,
+arrived immediately.
+
+PS5 in-memory preflight verified the pinned JBOD signature, exact identity,
+`PASS_DATA_PULL`, the exact 24 requested paths and payload entries, all sizes,
+and all hashes. Total source bytes are 26,073,436. No pixels were decoded.
+R18E is now no-retry/no-republish.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18E/R18E_PUBLISHED_MATCHING_RESPONSE_READY_CHECKPOINT_20260903.md`,
+SHA-256 `5D1E16B3EB8AFA02CFF895094D7F1D78280725112E1A70FD81A55536AC252709`.
+
+Exact next scribe-lane action: commit/push the publication and collector state,
+then collect create-new into `C:\R18ER` and `C:\R18E`. Verify frozen R18D
+before inspecting blind pixels. No retry, republish, or authority expansion.
