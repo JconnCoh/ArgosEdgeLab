@@ -9577,3 +9577,22 @@ and freeze their outputs before visual review. Do not run the full KLARF
 directory. No activation, identity acceptance, automatic admission, hold
 clearance, XML, training, production, JBOD, portal, task/process, source, or
 wafer authority.
+
+# 2026-09-03 — OCV-02 R18F blind outputs frozen / review pending (`PENDING_GATE`)
+
+Frozen R18F processed exactly the four predeclared blind acquisitions with no
+expected strings or visible-truth input. All four result files and aggregate
+gate were completed before any visual inspection. The frozen image-first
+outputs are `148AW101SUC4`, `2969P018FEE3`, `1478T009SUA0`, and
+`147JQ120SUA5`; they remain unreviewed.
+
+Blind gate SHA-256 is
+`7745BAF3B909712076327659F22940162A134E6CFCBA3168FF7C1A10F0A4D695`.
+Checkpoint:
+`work/OPENCV_SCRIBE_R18F/R18F_BLIND_OUTPUTS_FROZEN_UNREVIEWED_CHECKPOINT_20260903.md`,
+SHA-256 `9BF4366D2E5538A43EF48AAC1AB16A6FEE1F840B6A5C13BB9533E0FF9BF2DD67`.
+
+Exact next scribe-lane action: commit/push the unrevealed freeze, verify clean
+matching branch tips, then inspect the exact four BF/DF crops against these
+already-frozen strings. Any mismatch remains held. No full KLARF run or
+authority expansion.
