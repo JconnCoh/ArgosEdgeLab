@@ -1,0 +1,105 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-09-03T11:06:02.3042265Z",
+  "state": "PASS_O3F15L4D1_STOP_LOSS_REVIEW_ONE_METADATA_DIAGNOSTIC",
+  "incidentId": "O3F15L2_RUNNER_PREFLIGHT_DIAGNOSTIC_GAP_20260903",
+  "reviewMode": "BOUNDED_PORTAL_ONLY_METADATA_DIAGNOSTIC",
+  "signedPremiseFailureCount": 2,
+  "localPremiseFailureCount": 1,
+  "failureEvidence": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15/O3F15L1_LOCAL_REHEARSAL_FAILURE.json",
+      "sha256": "89288A4C0C1B0343613007EF732F8C7A7681D49AD8EDD88AC59708CC6A52EBC5",
+      "classification": "WITHDRAWN_LOCAL_REHEARSAL_FAILURE"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L2/O3F15L2_SIGNED_TERMINAL_FAILURE_GATE.json",
+      "sha256": "FF012FF2EC5B668A776AFB921A5F14AD707636388E8C254B14E70B39E738BB79"
+    },
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L3/O3F15L3_FAIL_CLASS.json",
+      "sha256": "657ACE8E03F4BB24B42D3B08F1B25DE17F17FFCCC11C6F2F08EE4AE7B7598DC2"
+    }
+  ],
+  "postFailureObservation": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3F15L3/O3F15L3_POSTFAIL_OBSERVATION.json",
+    "sha256": "E80112B31B8DD36FD1ABCB461CA5CE9FD3131F95F6EF4B8F4104511C526B0E2C"
+  },
+  "correctedLocalEvidence": {
+    "runnerPath": "work/OPENCV_EDGE_NOTCH_O3F15L4/Run-O3F15L4FrontReconcile.py",
+    "runnerSha256": "0D43F29355B7C8CCB1A9FB3A5275E752D305B61710B17F4E293518A3A94D1B81",
+    "focusedTestPath": "work/OPENCV_EDGE_NOTCH_O3F15L4/Test-O3F15L4PathHolds.py",
+    "focusedTestSha256": "E98A90ADCF9E705BCA0B57979167FB7F0DAFE526D24FA015EC85DEA6F184BBE0",
+    "pushedCommit": "96bb83424d811957670678619f8fdde57783cc7a",
+    "failurePreventionMemoryPath": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+    "failurePreventionMemorySha256": "5E7DEA1E71C2AAD74A75C071D1B01958A2F6BC259F3F2292B4D6F2CFB85831AB"
+  },
+  "structuralReferences": {
+    "o3f15l2": "WITHDRAWN_BLOCKED_REFERENCE_NEVER_PUBLICATION_PARENT",
+    "o3f15l3": "WITHDRAWN_BLOCKED_REFERENCE_NEVER_PUBLICATION_PARENT",
+    "l2L3ArtifactPublicationParentAllowed": false,
+    "l2L3HarnessOrRequestTemplateUseAllowed": false,
+    "d1HarnessesFreshlyAuthoredFromD1Contract": true,
+    "qualifiedSameBytesCarrierPath": "work/OPENCV_EDGE_NOTCH_O3K1/OCV03_NotchReviewOpenCvV1.py",
+    "qualifiedSameBytesCarrierSha256": "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+    "qualifiedSameBytesCarrierReusable": true
+  },
+  "policySupportedRemedy": "B",
+  "singleMutationAttemptAuthorized": true,
+  "mutationStopLossExplicitlyCleared": true,
+  "clearanceScope": {
+    "freshRevision": "O3F15L4D1",
+    "freshNamespace": "work/OPENCV_EDGE_NOTCH_O3F15L4D1",
+    "maximumPackageBuilds": 1,
+    "maximumSignatures": 1,
+    "maximumPortalPublications": 1,
+    "oneShotPublicationAuthorizedAfterSignedReadyIndependentReview": true,
+    "publicationPerformedByThisSubtask": false,
+    "portalOrJbodAccessPerformedByThisSubtask": false,
+    "soleLiveChild": "D:/AFCV1/rt/python.exe -I -B Run-O3F15L4FrontReconcile.py PREFLIGHT",
+    "selfTestAuthorized": false,
+    "focusedTestAuthorizedLive": false,
+    "gateAuthorized": false,
+    "runAuthorized": false,
+    "qSubstAuthorized": false,
+    "detectorResultRootCreationAuthorized": false,
+    "imageReadAuthorized": false,
+    "backgroundLaunchAuthorized": false,
+    "existingTaskOrProcessActionAuthorized": false,
+    "providerActivationAuthorized": false,
+    "thresholdOrSelectorChangeAuthorized": false,
+    "automaticHoldClearanceAuthorized": false,
+    "automaticRetryAuthorized": false
+  },
+  "requiredTerminalEvidence": {
+    "runnerSchema": "argos_ocv03_o3f15l4_preflight_v1",
+    "runnerState": "PASS_O3F15L4_FRONT_RECONCILE_PREFLIGHT",
+    "envelopeSchema": "argos_ocv03_o3f15l4d1_metadata_diagnostic_v1",
+    "envelopeState": "COMPLETE_O3F15L4D1_METADATA_DIAGNOSTIC",
+    "classificationCorpus": "ACTUAL_FROZEN_978",
+    "uniqueOrderedIdentityCount": 978,
+    "uniqueOrderedSourceLeafCount": 1956,
+    "requiredClassCountsListsMetricsAndHashes": true,
+    "maximumClassificationEvidenceBytes": 4194304,
+    "maximumChildOutputBytes": 5242880,
+    "d1ContractRehearsedResponseLayoutCeilingBytes": 8388608,
+    "inheritedEndpointMaintenanceResponseCeilingClaimed": false,
+    "fullRunBuildProhibitedUntilMatchingSignedResponse": true
+  },
+  "preservedHolds": {
+    "fullFrontsideHoldCount": 184,
+    "currentPatternedFrontHoldCount": 12,
+    "slot02MultipleCandidateAmbiguity": true,
+    "rareHotspotSlot16": true,
+    "allLaterPrerequisites": true
+  },
+  "portalOnly": true,
+  "rustDeskAuthorized": false,
+  "clipboardOrGuiPowerShellAuthorized": false,
+  "operatorEnterAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

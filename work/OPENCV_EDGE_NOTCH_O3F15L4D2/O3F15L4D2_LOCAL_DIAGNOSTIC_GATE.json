@@ -1,0 +1,18 @@
+{
+  "schema":"argos_ocv03_o3f15l4d2_local_diagnostic_gate_v1","createdUtc":"2026-09-03T12:13:41.1768784Z","state":"PASS_O3F15L4D2_LOCAL_DIAGNOSTIC_GATE","caseCount":12,
+  "cases":[
+    {"mode":"ZERO_ARG_PRECHILD","state":"HOLD_O3F15L4D2_METADATA_DIAGNOSTIC","failureCode":"PRECHILD_PIN_OR_CONTRACT_FAILURE","emittedJsonBytes":1443,"childCombinedBytes":0},
+    {"mode":"PASS","state":"COMPLETE_O3F15L4D2_METADATA_DIAGNOSTIC","failureCode":null,"emittedJsonBytes":617680,"childCombinedBytes":615644},
+    {"mode":"PASS_ONE_ALIAS","state":"COMPLETE_O3F15L4D2_METADATA_DIAGNOSTIC","failureCode":null,"emittedJsonBytes":618332,"childCombinedBytes":616285},
+    {"mode":"PASS_MANY_ALIAS","state":"COMPLETE_O3F15L4D2_METADATA_DIAGNOSTIC","failureCode":null,"emittedJsonBytes":621029,"childCombinedBytes":618981},
+    {"mode":"CLASSIFICATION_OVERSIZE","state":"HOLD_O3F15L4D2_METADATA_DIAGNOSTIC","failureCode":"CLASSIFICATION_INVALID","emittedJsonBytes":20059,"childCombinedBytes":615664},
+    {"mode":"ZERO_STDERR","state":"HOLD_O3F15L4D2_METADATA_DIAGNOSTIC","failureCode":"CHILD_STDERR","emittedJsonBytes":20041,"childCombinedBytes":615665},
+    {"mode":"NONZERO","state":"HOLD_O3F15L4D2_METADATA_DIAGNOSTIC","failureCode":"CHILD_NONZERO","emittedJsonBytes":1479,"childCombinedBytes":28},
+    {"mode":"MALFORMED","state":"HOLD_O3F15L4D2_METADATA_DIAGNOSTIC","failureCode":"CHILD_JSON_MALFORMED","emittedJsonBytes":1545,"childCombinedBytes":9},
+    {"mode":"TIMEOUT","state":"HOLD_O3F15L4D2_METADATA_DIAGNOSTIC","failureCode":"CHILD_TIMEOUT","emittedJsonBytes":1447,"childCombinedBytes":0},
+    {"mode":"OVERSIZE","state":"HOLD_O3F15L4D2_METADATA_DIAGNOSTIC","failureCode":"CHILD_OUTPUT_OVERSIZE","emittedJsonBytes":17879,"childCombinedBytes":5242881},
+    {"mode":"EXACT_CAP","state":"HOLD_O3F15L4D2_METADATA_DIAGNOSTIC","failureCode":"CHILD_JSON_MALFORMED","emittedJsonBytes":19874,"childCombinedBytes":5242880},
+    {"mode":"SPLIT_OVER","state":"HOLD_O3F15L4D2_METADATA_DIAGNOSTIC","failureCode":"CHILD_OUTPUT_OVERSIZE","emittedJsonBytes":34274,"childCombinedBytes":5242881}
+  ],
+  "runtimeSha256":"7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1","fixtureSha256":"6436C878E8164F748E562235F82F2679F8AE105DFF749F9DE0CD9C559E760783","canonicalRawPathAbove260Covered":true,"zeroArgumentPrechildFailureCovered":true,"targetImagesRead":false,"externalMutationPerformed":false,"reviewOnly":true,"productionRoutingEnabled":false
+}

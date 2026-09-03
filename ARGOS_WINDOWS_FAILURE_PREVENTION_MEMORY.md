@@ -11198,3 +11198,23 @@ than rerunning it.
   classification through one separately gated portal-only metadata diagnostic
   before authorizing the full run; preserve every hold and use a fresh package
   and result namespace for the later corpus.
+
+## 2026-09-03 — Do not label draft package contracts frozen before tests and audit stabilize
+
+- Failure signature: local O3F15L4D1 contract and maintenance-definition bytes
+  were labeled frozen before draft tests and independent audit were stable,
+  then changed. No package was built or signed and no external mutation
+  occurred, but the namespace became ineligible for reuse.
+- Cause: lifecycle labels were advanced during authoring instead of at the
+  single final freeze boundary.
+- Mandatory preflight: require the contract and maintenance definition to
+  remain explicitly `DRAFT` through all local corrections, tests, parse and
+  parameter checks, harness/path gates, and independent read-only audit.
+  Immediately before the sole build, verify those draft gates, change both
+  lifecycle labels exactly once, record their final hashes, and prohibit any
+  later byte change in that namespace.
+- Recovery: retain O3F15L4D1 only as
+  `WITHDRAWN_LOCAL_PREBUILD_FROZEN_BYTES_CHANGED` incident evidence. Never use
+  it as a template, publication parent, or reusable artifact. Fresh-author
+  O3F15L4D2, repeat all draft gates, freeze once, then perform at most one build
+  and one signature.

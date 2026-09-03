@@ -10373,3 +10373,35 @@ is true and training/XML/production remain false.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4_DRAFT_CORRECTION_SYNTHETIC_PASS_ACTUAL_978_PENDING_CHECKPOINT_20260903.md`,
 SHA-256 `D0440CD594ABEFD9199329079A73B648ACE020A7A122081E7386C948051AF3E4`.
+
+## OCV-03 O3F15L4D2 metadata diagnostic pre-build authority — 2026-09-03
+
+Disposition: `PENDING_GATE`
+
+The operator's portal-only one-shot direction supersedes the prior local
+no-build wait only for fresh O3F15L4D2. Frozen D2 contract
+`6248EA9BA52BE8405828A559E46223F9902401566A155F2DB97C87AF02FA5317`,
+definition `E69C63B04EB9B8FFA768197B89CB014A30026F12551EC23756ABD185BDBAA51C`,
+freeze record
+`31CE41784E5DAA09F9B6B4AF50F7637EE94752F172B5EFA9C4919955264D8E01`,
+and zero-recurrence gate
+`34A5F7ACC8DE1C591EEFABD0C4364CC4C53030FB8078EAEC1DD4F12C0B596F77`
+authorize at most one build, one release signature, and, after independent
+signed-ready review, one portal publication. D1 remains withdrawn/non-parent.
+No build, signature, publication, or live execution has yet occurred.
+
+The only live child may be
+`D:/AFCV1/rt/python.exe -I -B Run-O3F15L4FrontReconcile.py PREFLIGHT`.
+It may return metadata only. No RustDesk, operator PowerShell/clipboard/Enter,
+retry, images, `Q:`, `GATE`, `RUN`, result root, existing task/process, source,
+provider, selector/threshold, or hold action is authorized.
+
+A matching signed complete D2 response proving all 978 identities and 1,956
+ordered source leaves is mandatory before any full frontside corpus package.
+All 184/12 holds, Slot02, Slot16, and the frontside → scribe →
+combined/unified → fiducial/alignment order remain explicit. Review-only is
+true; training/XML/production remain false.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4D2_METADATA_DIAGNOSTIC_PREBUILD_AUTHORITY_CHECKPOINT_20260903.md`,
+SHA-256 `27A0A60E899D8119CD076DF18270FB8C53510EF4B857610E2D804238CE181CC1`.
