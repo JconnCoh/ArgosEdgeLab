@@ -1,0 +1,51 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-03T14:25:52.111Z",
+  "state": "PASS_R17A_SUPPORTING_OBSERVATION",
+  "incidentId": "OCV02_R17A_FAILURE_FIRST_EXISTING_CROPS_20260903",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "mutationsPerformed": false,
+  "sourceEvidence": {
+    "path": "work/OPENCV_SCRIBE_R17A/R17A_LOCAL_COHORT_GATE.json",
+    "sha256": "92AE770FD1EFA8C6C4475FA4D4D13C1EC2AE0753534BE99E3183AD67BB138D96"
+  },
+  "priorSignedTerminalEvidence": {
+    "path": "work/OPENCV_SCRIBE_R15E/R15E_SIGNED_TERMINAL_GRID_DIAGNOSTIC_CHECKPOINT_20260903.md",
+    "sha256": "3C86F0BA082A2A7769C69327916BE6527EFD69F25766ACA5C28756FA0176EF93"
+  },
+  "expectedObserved": [
+    {
+      "field": "currentReaderUnresolvedRows",
+      "expected": "current queue rows lacking a usable waferId",
+      "observed": 156
+    },
+    {
+      "field": "addressableExistingCropRows",
+      "expected": "unresolved rows with recorded proposal and BF/DF source paths",
+      "observed": 152
+    },
+    {
+      "field": "selectedFailureFirstAcquisitions",
+      "expected": 8,
+      "observed": 8
+    },
+    {
+      "field": "selectedRequiredFiles",
+      "expected": 24,
+      "observed": 24
+    },
+    {
+      "field": "sourceMutationRequired",
+      "expected": false,
+      "observed": false
+    }
+  ],
+  "supportedDecision": "B_EXACT_BOUNDED_EXISTING_CROP_DATA_PULL_WITHOUT_PIXEL_DECODE_DURING_COLLECTION",
+  "imageBytesRead": false,
+  "pixelsDecoded": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
