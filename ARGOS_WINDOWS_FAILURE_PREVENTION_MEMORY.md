@@ -10955,3 +10955,46 @@ than rerunning it.
   namespace, change only the endpoint `SELF_TEST` assertion to parse the existing
   JSON contract, and rerun exact-real-runner plus injected-failure rehearsals
   before one separately signed publication.
+
+## 2026-09-02 — Exercise the exact real child with every live root contract
+
+- Failure signature: signed O3F10 request `REQ_O3F10_20260902A` passed the real
+  runner SELF_TEST and standalone PREFLIGHT, then failed at the first GATE
+  output-root validation because the endpoint supplied `D:/O3F10G1` while the
+  unchanged runner requires a drive-root child whose name starts `O3F9`.
+- Cause: the exact endpoint rehearsal used the real runner only for SELF_TEST;
+  its fixture handled GATE and DEV6 and accepted the O3F10 roots. The packaged
+  real runner's frozen output-root prefix contract was therefore not exercised.
+- Mandatory preflight: before signing a successor that reuses an exact real
+  child, mechanically compare every live argument and root against that child's
+  own validation predicates. Execute the exact real child through each
+  non-image stage that validates those arguments; a schema-matching fixture is
+  not evidence of real-child path or namespace compatibility.
+- Recovery: preserve O3F10 as terminal/no-retry, use a fresh request and fresh
+  create-new roots that satisfy the unchanged runner's exact D-drive prefix
+  contract, and add an exact-real-runner GATE root-contract check before one
+  separately signed publication. Do not change detector thresholds or selector
+  behavior.
+
+## 2026-09-02 — Match exact child terminal fields and bind them to the signed live invocation
+
+- Failure signature: static O3F11 draft inspection found that the fixture added
+  `preservedProviderHoldCount`, which the frozen real DEV6 runner does not emit,
+  while omitting the real GATE `commands` and DEV6 `results` fields. The endpoint
+  would have completed real image processing and then failed under strict mode
+  while reading the nonexistent property.
+- Cause: the rehearsal checked desired values from a permissive fixture rather
+  than mechanically matching the exact real child's terminal property sets; the
+  draft also recomputed the runner hash and reconstructed safe live-invocation
+  fields instead of proving the fields that would be signed.
+- Mandatory preflight: derive and freeze the exact real child terminal key sets
+  without image execution, require the fixture and endpoint consumer to match
+  those sets, pin the real child hash independently, and inspect the exact
+  packaged live invocation for its runtime, roots, timeouts, payload hashes,
+  authority Booleans, and eligibility Booleans. Rehearsal evidence must bind the
+  exact endpoint, fixture, schema probe, real child, and semantic live-root
+  contract that the builder later signs.
+- Recovery: because O3F11 was still DRAFT and had not been built, signed,
+  published, or externally executed, correct it in place, supersede its stale
+  draft-only clone evidence, and rerun every source/generated harness, clone,
+  endpoint, and exact-package gate before freezing and building once.

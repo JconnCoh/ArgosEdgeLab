@@ -1,0 +1,65 @@
+{
+    "schema":  "argos_ocv03_o3f11_endpoint_rehearsal_gate_v1",
+    "state":  "PASS_O3F11_EXACT_ENTRYPOINT_REHEARSAL",
+    "packageSpecSha256":  "7E14C541DD5C9AE53E2277B1FABB908CDBEBD1FD7CBCB01B76EC983D791DD74E",
+    "packageSpecRevision":  "OCV03_O3F11_R10_STAGED_DEV6_20260902A",
+    "packageSpecRequestId":  "REQ_O3F11_20260902A",
+    "packageSpecRunnerSha256":  "606AFE5DF058F0298CFE333D9091DF3F5F0B5F222EC03C40E73006773F587D72",
+    "packageSpecGateOutputRoot":  "D:/O3F9G11",
+    "packageSpecDev6OutputRoot":  "D:/O3F9D11",
+    "endpointSha256":  "B07B46554BB731F22763CF0A31BC58AB64CB1A5528543120158B682A8AB7E2EF",
+    "fixtureRunnerSha256":  "F885793EA8926157D237D630590A9B33A49B2FEB68E456BB36E475165CBEDF79",
+    "rootContractProbeSha256":  "4E237600EEB27B14FCC321B8F0E96A884477A6374DC86C5AA43C37F24B7FA1EF",
+    "realRunnerSha256":  "606AFE5DF058F0298CFE333D9091DF3F5F0B5F222EC03C40E73006773F587D72",
+    "realRunnerSelfTestState":  "PASS_O3F9_STAGED_RUNNER_SELF_TEST",
+    "realRunnerSelfTestMutationsPerformed":  false,
+    "realRunnerGateContractRoot":  "D:/O3F9G11",
+    "realRunnerDev6ContractRoot":  "D:/O3F9D11",
+    "realRunnerGateTerminalKeys":  [
+                                       "commands",
+                                       "stage",
+                                       "state",
+                                       "summarySha256"
+                                   ],
+    "realRunnerDev6TerminalKeys":  [
+                                       "executedCount",
+                                       "newProviderHoldCount",
+                                       "results",
+                                       "selectedCount",
+                                       "stage",
+                                       "state",
+                                       "stateCounts",
+                                       "summarySha256"
+                                   ],
+    "incompatibleO3F11PrefixRejected":  true,
+    "pythonSha256":  "4942B86A6597E5AEE0128DAA00050ED79BC21F6E709A78EB19CBFEB0C2F39AC9",
+    "cases":  [
+                  {
+                      "caseId":  "SUCCESS",
+                      "passed":  true,
+                      "failureInjected":  false,
+                      "imageBytesRead":  false
+                  },
+                  {
+                      "caseId":  "INJECTED_DEV6_FAILURE",
+                      "passed":  true,
+                      "failureInjected":  true,
+                      "imageBytesRead":  false
+                  }
+              ],
+    "successStages":  [
+                          "SELF_TEST",
+                          "PREFLIGHT",
+                          "ROOT_CONTRACT",
+                          "GATE",
+                          "DEV6"
+                      ],
+    "injectedFailureStage":  "DEV6",
+    "sourceImageBytesRead":  false,
+    "taskActionCount":  0,
+    "existingProcessActionCount":  0,
+    "sourceMutationPerformed":  false,
+    "providerActivated":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

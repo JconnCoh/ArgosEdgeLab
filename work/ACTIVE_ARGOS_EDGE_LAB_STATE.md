@@ -9809,3 +9809,43 @@ terminal response. Do not use RustDesk or operator input and do not retry.
 Inspect all six results before any broader frontside run. Preserve every hold,
 including rare hotspot Slot16; selector relaxation and automatic hold clearance
 remain prohibited.
+
+## OCV-03 O3F11 R10 DEV6 signed portal ready — 2026-09-02
+
+Disposition: `PENDING_GATE`
+
+O3F10 was published once and returned matching signed terminal failure
+`R_755F12A1AB64_20260903020711521_6971d61c`, ZIP
+`8EA7014BFCB07340424FBCE898704F04D6EDF461FAC66AE588156C3E2404EC58`.
+Its GATE root used an O3F10 prefix that the unchanged frozen runner correctly
+rejected before synthetic tests, DEV6, image reads, or result-root creation.
+O3F10 is withdrawn, no-retry, non-reusable, and non-parent; exact failure gate
+is `EB24B2376DDCCBFAEE4E8359ED2DF7876FA150225185D3A874B725F59DA0E902`.
+
+O3F11 retains exact R10
+`0EEEE7A396E918AF44082EC0930871A6A94C1FBB59D3F5CEF1AC34D1273745FA`
+and runner
+`606AFE5DF058F0298CFE333D9091DF3F5F0B5F222EC03C40E73006773F587D72`,
+changing only the invocation to accepted fresh roots `D:/O3F9G11` and
+`D:/O3F9D11`. Exact real-runner root/schema probes, endpoint rehearsal,
+signed-package PS5.1 rehearsal, 55-path round-trip, and zero-pending share
+gates pass. Fresh signed request `REQ_O3F11_20260902A`, ZIP
+`1D347F6E758F066F79114492679F42C5E08917B7CB561F265F47C95C5C70FAB5`,
+is not published.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F11_R10_DEV6_SIGNED_PORTAL_READY_CHECKPOINT_20260902.md`,
+SHA-256 `59E03A08BD951B7E8523E881B9ED92E2C1A857FB1833428EB025B4621850A1A3`.
+
+Exact next action: commit/push, refresh the zero-pending share observation,
+publish O3F11 exactly once through Project Portal, and collect only its matching
+signed terminal response. RustDesk and operator input are prohibited; there is
+no retry. Inspect all six results before any broader frontside run. Every hold,
+including rare hotspot Slot16, remains explicit; no selector relaxation or
+automatic hold clearance is authorized.
+
+After those six cases, the fixed order is targeted frontside BF/DF hold
+reconciliation, scribe, combined corpus/unified outputs, and finally the
+site-bound fiducial/alignment gates. All map, pose, coverage, sensitivity,
+paired BF/DF validation, and transfer holds remain; production scoring stays
+blocked.

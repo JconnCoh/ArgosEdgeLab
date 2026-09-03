@@ -1,0 +1,47 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "state": "PASS_O3F11_SIGNED_FAILURE_CLASSIFICATION_AND_FROZEN_RUNNER_EVIDENCE",
+  "incidentId": "OCV03_O3F11_R10_STAGED_DEV6",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "sources": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F10/O3F10_SIGNED_TERMINAL_FAILURE_GATE.json",
+      "sha256": "EB24B2376DDCCBFAEE4E8359ED2DF7876FA150225185D3A874B725F59DA0E902",
+      "expected": {
+        "classification": "SIGNED_ARTIFACT_OUTPUT_ROOT_PREFIX_CONTRACT_FAILURE_NOT_LIVE_STATE_PREMISE_FAILURE",
+        "requestId": "REQ_O3F10_20260902A",
+        "responseId": "R_755F12A1AB64_20260903020711521_6971d61c",
+        "sourceImageBytesRead": false,
+        "gateResultRootCreated": false,
+        "dev6StageStarted": false,
+        "dev6ResultRootCreated": false
+      },
+      "observed": {
+        "classification": "SIGNED_ARTIFACT_OUTPUT_ROOT_PREFIX_CONTRACT_FAILURE_NOT_LIVE_STATE_PREMISE_FAILURE",
+        "requestId": "REQ_O3F10_20260902A",
+        "responseId": "R_755F12A1AB64_20260903020711521_6971d61c",
+        "sourceImageBytesRead": false,
+        "gateResultRootCreated": false,
+        "dev6StageStarted": false,
+        "dev6ResultRootCreated": false
+      }
+    },
+    {
+      "path": "work/O3F8/Run-O3F9Staged.py",
+      "sha256": "606AFE5DF058F0298CFE333D9091DF3F5F0B5F222EC03C40E73006773F587D72",
+      "expected": {
+        "requiredOutputRootPrefix": "O3F9"
+      },
+      "observed": {
+        "requiredOutputRootPrefix": "O3F9"
+      }
+    }
+  ],
+  "observationOnly": true,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

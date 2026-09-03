@@ -1,0 +1,58 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-03T02:43:34.3679470Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3F11\\O3F11_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "579CC02E9499832C8FD13DCF0EF86FE0E1FEB28DA6124EAAA86F1F8305996006",
+    "pairCount":  3,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F10/Build-O3F10Package.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F11/Build-O3F11Package.ps1",
+                      "sourceSha256":  "8BD7C5D81255F4374454A43CD7FABF9E8777FE5818EB1BBB2FA2FB8B9F5CF34F",
+                      "generatedSha256":  "9ED0EC6D19EB964AC7BFAFC0197D161C1E7ED26D7B8791D6368C33B9B7A3F5BB",
+                      "sourceRoots":  [
+                                          "C:\\A10F"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\A11F"
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F10/Test-O3F10Endpoint.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F11/Test-O3F11Endpoint.ps1",
+                      "sourceSha256":  "2868E0C2C8116B6FFDF1A45CBFBE2419ACDE95F54D5E5310415245CF5327FB3B",
+                      "generatedSha256":  "CA9D149AC43037AE2B163C7006F4711E61F025C0A32E750D722C796A08F4AD75",
+                      "sourceRoots":  [
+                                          "C:\\A10U",
+                                          "C:\\A10V"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\A11U",
+                                             "C:\\A11V"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F10/O3F10FixtureRunner.py",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F11/O3F11FixtureRunner.py",
+                      "sourceSha256":  "81A7FD17E1052477743E18FAD726FD6EFEDC201787A433F6B4CCC16485FA7963",
+                      "generatedSha256":  "F885793EA8926157D237D630590A9B33A49B2FEB68E456BB36E475165CBEDF79",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+
+                                         ],
+                      "ruleCount":  1
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

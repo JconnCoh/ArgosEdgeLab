@@ -1,0 +1,69 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3F11_EXACT_ENDPOINT_ROOT_SCHEMA_REHEARSAL_20260903T024359Z",
+  "createdUtc": "2026-09-03T02:43:59Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "WINDOWS_POWERSHELL_51_O3F11_EXACT_REAL_SELF_TEST_ROOT_SCHEMA_AND_FIXTURE_REHEARSAL",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"5A68E9C59CA1889629C3D1DB6C13882D36A252D5E97AA20CA0B6B8D98CD47ACE"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F11/Test-O3F11Endpoint.ps1","sha256":"CA9D149AC43037AE2B163C7006F4711E61F025C0A32E750D722C796A08F4AD75"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F11/Invoke-O3F11StagedEndpoint.ps1","sha256":"B07B46554BB731F22763CF0A31BC58AB64CB1A5528543120158B682A8AB7E2EF"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F11/O3F11FixtureRunner.py","sha256":"F885793EA8926157D237D630590A9B33A49B2FEB68E456BB36E475165CBEDF79"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F11/O3F11RootContractProbe.py","sha256":"4E237600EEB27B14FCC321B8F0E96A884477A6374DC86C5AA43C37F24B7FA1EF"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F11/O3F11_PACKAGE_SPEC.json","sha256":"7E14C541DD5C9AE53E2277B1FABB908CDBEBD1FD7CBCB01B76EC983D791DD74E"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F11/O3F11_RECOVERY_INTENT.json","sha256":"BE8BBAD1E981F213A140A3C45CA6DC82ADD4FB7BC6530039C21DC7BB92818E8D"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F11/O3F11_CLONE_LITERAL_GATE.json","sha256":"5ABB6AD6B1DA74316152E380886E28E363582400AE8C00D4C44F930EF90847A4"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F11/O3F11_PORTAL_CLONE_LITERAL_GATE.json","sha256":"3D34101DCD75AD6C882A05EC303745B4B2BD719F280232B39182B1E94D424381"},
+    {"path":"work/O3F8/Run-O3F9Staged.py","sha256":"606AFE5DF058F0298CFE333D9091DF3F5F0B5F222EC03C40E73006773F587D72"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F10/O3F10_SIGNED_TERMINAL_FAILURE_GATE.json","sha256":"EB24B2376DDCCBFAEE4E8359ED2DF7876FA150225185D3A874B725F59DA0E902"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":[]},
+  "blockedArtifacts": [
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F9","classification":"WITHDRAWN_DIAGNOSTIC_DIFF_SOURCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F10","classification":"SIGNED_TERMINAL_FAILURE_DIAGNOSTIC_SOURCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false}
+  ],
+  "scope": {
+    "classification": "LOCAL_EXACT_REAL_SELF_TEST_ROOT_SCHEMA_AND_FIXTURE_REHEARSAL",
+    "successRoot": "C:/A11U",
+    "injectedFailureRoot": "C:/A11V",
+    "maximumHarnessExecutions": 1,
+    "exactRealRunnerSelfTestThroughEndpoint": true,
+    "exactRealRunnerRootAndTerminalSchemaProbeThroughEndpoint": true,
+    "fixtureUsedOnlyAfterExactRealChecks": true,
+    "sourceImageBytesRead": false,
+    "externalPublication": false,
+    "jbodExecution": false,
+    "sourceMutation": false,
+    "taskOrExistingProcessAction": false,
+    "providerActivation": false,
+    "requestRetryAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
