@@ -9344,3 +9344,22 @@ Exact next scribe-lane action: commit/push, publish R15E exactly once, and
 collect only its matching signed terminal response. No retry. All identity,
 admission, training, XML, production, activation, mutation, and hold-clearance
 authority remains false.
+
+# 2026-09-03 — OCV-02 R18A fresh-lot crop pull ready (`PENDING_GATE`)
+
+R17E is frozen at commit `5be1b46c2a736a5a7b2b72e650ec7678f3278755`.
+Fresh R18A request `REQ_20260903T171128612Z_R18A` selects eight unresolved
+acquisitions from eight distinct lot families and requests only their existing
+proposal JSON plus paired BF/DF oriented scribe crops. The exact signed ZIP is
+1,429 bytes with SHA-256
+`FBE411874B3772B807CD7F4BE6F7AD0730C3311CFAB902A997E842992CC463B5`.
+All local package, signature, path, clone, harness, and preaction gates pass.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18A/R18A_PUBLICATION_READY_CHECKPOINT_20260903.md`,
+SHA-256 `004DCFB2EBAC19DA8F753E8FF1E874FAC85AD56D89E98188208C3760D5DFE70F`.
+
+Exact next scribe-lane action: commit/push the frozen request, publish it once,
+and collect only the matching signed terminal response. No retry. Review-only
+remains true; identity acceptance, activation, training, XML, production,
+source/wafer/task/process action, and automatic hold clearance remain false.
