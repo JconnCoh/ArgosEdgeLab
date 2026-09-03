@@ -1,0 +1,232 @@
+{
+    "schema":  "argos_ocv03_o3f13_exact_package_rehearsal_gate_v1",
+    "state":  "PASS_O3F13_EXACT_PACKAGE_REHEARSAL",
+    "requestId":  "REQ_O3F13_20260902A",
+    "requestZipSha256":  "6CD1551EB5E7B71FD58542E6313B9528DB37E2CA35884B4BA3BAB39CBB701063",
+    "windowsPowerShell":  {
+                              "major":  5,
+                              "minor":  1
+                          },
+    "exactSignedZipExtracted":  true,
+    "signatureVerified":  true,
+    "payloadHashCount":  15,
+    "changeCount":  1,
+    "allowCreateFalseCasePassed":  true,
+    "approvedPredecessorExercisedThroughEndpointWorker":  true,
+    "targetHashIdempotentCasePassed":  true,
+    "unapprovedPredecessorRefusedBeforeMutation":  true,
+    "maintenanceValidationFixtureDerivedFromExactExtractedPayload":  true,
+    "maintenanceValidationCaseCount":  3,
+    "maintenanceValidationCases":  [
+                                       {
+                                           "case":  "APPROVED",
+                                           "endpointState":  "PASS_MAINTENANCE_PATCH",
+                                           "requestManifestSha256":  "B23A780E16D12FF4C00449965496DFBE56914B4596DD5604F28FECA7E16DAA2F",
+                                           "signatureVerified":  true,
+                                           "approvedPredecessor":  true,
+                                           "beforeSha256":  "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+                                           "afterSha256":  "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+                                           "installLeafCount":  1,
+                                           "refusedBeforeMutation":  false
+                                       },
+                                       {
+                                           "case":  "IDEMPOTENT",
+                                           "endpointState":  "PASS_MAINTENANCE_PATCH",
+                                           "requestManifestSha256":  "9F2D77DE0D4D6EF2C788B0AD98449573EF312762BED3F8E1883DA01B9A5C1532",
+                                           "signatureVerified":  true,
+                                           "approvedPredecessor":  true,
+                                           "beforeSha256":  "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+                                           "afterSha256":  "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+                                           "installLeafCount":  1,
+                                           "refusedBeforeMutation":  false
+                                       },
+                                       {
+                                           "case":  "UNAPPROVED",
+                                           "endpointState":  "FAILED",
+                                           "requestManifestSha256":  "DA0D95E62A1FCFBC9817F7FC1A4549F2DDD7CB2737E7B2B9074DB620F69909EB",
+                                           "signatureVerified":  true,
+                                           "approvedPredecessor":  false,
+                                           "beforeSha256":  "C4DBECC4FC3977346D4C7097DEA56D60414E7A9AECAF0CF9DCA6D3C580DA220B",
+                                           "afterSha256":  "C4DBECC4FC3977346D4C7097DEA56D60414E7A9AECAF0CF9DCA6D3C580DA220B",
+                                           "installLeafCount":  1,
+                                           "refusedBeforeMutation":  true
+                                       }
+                                   ],
+    "exactLiveInvocationSha256":  "03CDF6095F004089DD217B54BF87023DE86DF214496E28E1BCB74720B9B93866",
+    "exactLiveGateOutputRoot":  "D:/O3F9G13",
+    "exactLiveDev6OutputRoot":  "D:/O3F9D13",
+    "exactLiveRunnerSha256":  "7FA26CF830CAE3FFEB1B34295408E6551F96003A9AC3E07896F750BE5B8492A1",
+    "exactSourceAliasPlanSha256":  "2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C",
+    "substSha256":  "158598ED3D590937C964B43DD91546FFCABAB5636B6CE619B4FFC43224013BB6",
+    "exactExtractedEndpointPreflightState":  "PASS_O3F13_ENDPOINT_PREFLIGHT",
+    "exactExtractedEndpointRehearsalState":  "COMPLETE_O3F13_GATE_AND_DEV6_RESULTS_RETURNED_REVIEW_ONLY",
+    "exactExtractedPassDev6ChildExitCode":  0,
+    "exactExtractedPassDev6State":  "COMPLETE_O3F12_DEV6",
+    "exactExtractedStructuredHoldEndpointState":  "COMPLETE_O3F13_GATE_AND_DEV6_RESULTS_RETURNED_REVIEW_ONLY",
+    "exactExtractedStructuredHoldDev6ChildExitCode":  2,
+    "exactExtractedStructuredHoldDev6State":  "HOLD_O3F12_DEV6_EXECUTION",
+    "exactExtractedStructuredHoldCaseCount":  6,
+    "exactExtractedRealSelfTestState":  "PASS_O3F12_STAGED_RUNNER_SELF_TEST",
+    "exactExtractedRealRunnerSha256":  "7FA26CF830CAE3FFEB1B34295408E6551F96003A9AC3E07896F750BE5B8492A1",
+    "exactExtractedRootContractState":  "PASS_O3F13_EXACT_REAL_RUNNER_ROOT_CONTRACT",
+    "exactExtractedRootContractProbeSha256":  "D6DCC9DBCFFA47914E80B3FEAB7A0D18A1FBA6106D6A2500F25AFCD29E361884",
+    "exactExtractedRootContractGateRoot":  "D:/O3F9G13",
+    "exactExtractedRootContractDev6Root":  "D:/O3F9D13",
+    "exactExtractedAliasContract":  {
+                                        "planSha256":  "2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C",
+                                        "schema":  "argos_ocv03_o3f12_dev6_source_alias_plan_v1",
+                                        "state":  "FROZEN_FOR_BUILD",
+                                        "aliasDrive":  "Q:",
+                                        "caseCount":  6,
+                                        "canonicalLeafCount":  12,
+                                        "aliasLeafCount":  12,
+                                        "minimumCanonicalEffectiveLength":  206,
+                                        "maximumCanonicalEffectiveLength":  227,
+                                        "maximumAliasEffectiveLength":  137,
+                                        "slot16BroadRootMinimumEffectiveLength":  211,
+                                        "broadRootSlot16Rejected":  true,
+                                        "sourceImageBytesRead":  false,
+                                        "substPath":  "C:\\Windows\\System32\\subst.exe",
+                                        "substSha256":  "158598ED3D590937C964B43DD91546FFCABAB5636B6CE619B4FFC43224013BB6",
+                                        "lifecycle":  {
+                                                          "exercised":  true,
+                                                          "fixtureRoot":  "C:\\A13R\\q",
+                                                          "fixtureFileCount":  2,
+                                                          "substZeroArgumentQueryUsed":  true,
+                                                          "success":  {
+                                                                          "beforeAllMappings":  {
+                                                                                                    "mappingCount":  0,
+                                                                                                    "mappedDrives":  [
+
+                                                                                                                     ],
+                                                                                                    "stdoutBytes":  0,
+                                                                                                    "stdoutSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                                                                                                },
+                                                                          "create":  {
+                                                                                         "returnCode":  0,
+                                                                                         "stdoutBytes":  0,
+                                                                                         "stdoutSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                                                                                     },
+                                                                          "afterCreateAllMappings":  {
+                                                                                                         "mappingCount":  1,
+                                                                                                         "mappedDrives":  [
+                                                                                                                              "Q:"
+                                                                                                                          ],
+                                                                                                         "stdoutBytes":  20,
+                                                                                                         "stdoutSha256":  "5464E595FD5C9F7622D73893138EAA8925DDF9DB57E61408AED6B0A7A347F98F"
+                                                                                                     },
+                                                                          "exactTargetVerified":  true,
+                                                                          "sameFileVerified":  true,
+                                                                          "unrelatedMappingsPreservedOnCreate":  true,
+                                                                          "sourceImageReadWindow":  "OWNED_EXACT_Q_MAPPING_ONLY",
+                                                                          "beforeRemoveAllMappings":  {
+                                                                                                          "mappingCount":  1,
+                                                                                                          "mappedDrives":  [
+                                                                                                                               "Q:"
+                                                                                                                           ],
+                                                                                                          "stdoutBytes":  20,
+                                                                                                          "stdoutSha256":  "5464E595FD5C9F7622D73893138EAA8925DDF9DB57E61408AED6B0A7A347F98F"
+                                                                                                      },
+                                                                          "remove":  {
+                                                                                         "returnCode":  0,
+                                                                                         "stdoutBytes":  0,
+                                                                                         "stdoutSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                                                                                     },
+                                                                          "afterRemoveAllMappings":  {
+                                                                                                         "mappingCount":  0,
+                                                                                                         "mappedDrives":  [
+
+                                                                                                                          ],
+                                                                                                         "stdoutBytes":  0,
+                                                                                                         "stdoutSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                                                                                                     },
+                                                                          "ownedMappingRemoved":  true,
+                                                                          "verifiedAbsentAfterRemove":  true,
+                                                                          "unrelatedMappingsPreservedAfterRemove":  true
+                                                                      },
+                                                          "injectedException":  {
+                                                                                    "beforeAllMappings":  {
+                                                                                                              "mappingCount":  0,
+                                                                                                              "mappedDrives":  [
+
+                                                                                                                               ],
+                                                                                                              "stdoutBytes":  0,
+                                                                                                              "stdoutSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                                                                                                          },
+                                                                                    "create":  {
+                                                                                                   "returnCode":  0,
+                                                                                                   "stdoutBytes":  0,
+                                                                                                   "stdoutSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                                                                                               },
+                                                                                    "afterCreateAllMappings":  {
+                                                                                                                   "mappingCount":  1,
+                                                                                                                   "mappedDrives":  [
+                                                                                                                                        "Q:"
+                                                                                                                                    ],
+                                                                                                                   "stdoutBytes":  20,
+                                                                                                                   "stdoutSha256":  "5464E595FD5C9F7622D73893138EAA8925DDF9DB57E61408AED6B0A7A347F98F"
+                                                                                                               },
+                                                                                    "exactTargetVerified":  true,
+                                                                                    "sameFileVerified":  true,
+                                                                                    "unrelatedMappingsPreservedOnCreate":  true,
+                                                                                    "sourceImageReadWindow":  "OWNED_EXACT_Q_MAPPING_ONLY",
+                                                                                    "beforeRemoveAllMappings":  {
+                                                                                                                    "mappingCount":  1,
+                                                                                                                    "mappedDrives":  [
+                                                                                                                                         "Q:"
+                                                                                                                                     ],
+                                                                                                                    "stdoutBytes":  20,
+                                                                                                                    "stdoutSha256":  "5464E595FD5C9F7622D73893138EAA8925DDF9DB57E61408AED6B0A7A347F98F"
+                                                                                                                },
+                                                                                    "remove":  {
+                                                                                                   "returnCode":  0,
+                                                                                                   "stdoutBytes":  0,
+                                                                                                   "stdoutSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                                                                                               },
+                                                                                    "afterRemoveAllMappings":  {
+                                                                                                                   "mappingCount":  0,
+                                                                                                                   "mappedDrives":  [
+
+                                                                                                                                    ],
+                                                                                                                   "stdoutBytes":  0,
+                                                                                                                   "stdoutSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                                                                                                               },
+                                                                                    "ownedMappingRemoved":  true,
+                                                                                    "verifiedAbsentAfterRemove":  true,
+                                                                                    "unrelatedMappingsPreservedAfterRemove":  true
+                                                                                },
+                                                          "qAbsentAfterBoth":  true,
+                                                          "beforeAllMappings":  {
+                                                                                    "mappingCount":  0,
+                                                                                    "mappedDrives":  [
+
+                                                                                                     ],
+                                                                                    "stdoutBytes":  0,
+                                                                                    "stdoutSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                                                                                }
+                                                      }
+                                    },
+    "incompatibleO3F13PrefixRejected":  true,
+    "exactExtractedFixtureDev6CaseCount":  6,
+    "qAbsentAfterExactPackageRehearsal":  true,
+    "exactExtractedEndpointSha256":  "812391373F107130509A1C19C8D6645C9212C533D69ED738706DAF9DB2563D7B",
+    "protocolAnchorSha256":  "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+    "protocolAnchorExpectedByteIdentical":  true,
+    "protocolAnchorExecutedByEntrypoint":  false,
+    "endpointWorkerSha256":  "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "inheritedQueueSafetyGateSha256":  "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+    "exactEndpointQueueRollbackRehearsalInherited":  true,
+    "fixtureRoot":  "C:\\A13R",
+    "fixturePreserved":  true,
+    "sourceImageBytesRead":  false,
+    "sourceMutationPerformed":  false,
+    "taskActionCount":  0,
+    "existingProcessActionCount":  0,
+    "providerActivated":  false,
+    "requestRetryAuthorized":  false,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false
+}

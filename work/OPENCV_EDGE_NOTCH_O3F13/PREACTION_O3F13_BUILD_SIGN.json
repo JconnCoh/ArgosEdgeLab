@@ -1,0 +1,70 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "O3F13_SINGLE_BUILD_AND_SIGN_20260903T044900Z",
+  "createdUtc": "2026-09-03T04:49:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "WINDOWS_POWERSHELL_51_O3F13_SINGLE_EXACT_PACKAGE_BUILD_AND_SIGN",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"03AC364A8EB9D3311344E2C71AA3C8034933A5DE5E1EE03BE062FD4ADA3E64A5"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F13/Build-O3F13Package.ps1","sha256":"C56D7EE94FAA2087C097D7BEF37BAA21A29BC8D7436793AA0055287368F75B99"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F13/O3F13_PACKAGE_SPEC.json","sha256":"2AD0F9235FFC5709BA1A6CE26A32847305065CAAD10CB2AD090BBC9E271810A8"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F13/MAINTENANCE_DEFINITION.json","sha256":"D6EC019AE07C81D9B2E053F714F0BF5D18F12F1E49103BD8F8196D34DE90F38A"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F13/O3F13_ENDPOINT_REHEARSAL_GATE.json","sha256":"73C92FC2A90EDF71B6F62B69823800C63D93A7E3D5A7C069A99D6E33DBD0E675"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F13/O3F13_ENDPOINT_REHEARSAL_PREACTION_GATE.json","sha256":"CD64F7C11853D7A828FA7BE449770AA41D95AB2F347D699A0CEFE9BE87160624"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F13/O3F13_RECOVERY_INTENT.json","sha256":"7F5CC35D9D822D00795FF7653ABFDB6D0F2F40D298ECD93DA7F12C9B8C64B402"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F13/O3F13_CLONE_LITERAL_GATE.json","sha256":"334D629306DF308265E58CFEBE765315EE5C0FAB6F37946A712813E064A3722B"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F13/O3F13_PORTAL_CLONE_LITERAL_GATE.json","sha256":"8B37DB993965729EFF28DEF3A04F62FF5B4987C83ECE932AE501A02ABC4FCCA1"},
+    {"path":"work/O3F8/Run-O3F12Staged.py","sha256":"7FA26CF830CAE3FFEB1B34295408E6551F96003A9AC3E07896F750BE5B8492A1"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F12/O3F12_DEV6_SOURCE_ALIAS_PLAN.json","sha256":"2ACA89A702CCC9E8B346EF2E31EF3C34382DF59D23D9DF3E5B431A4E37AD7D9C"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F12/O3F12_SIGNED_TERMINAL_FAILURE_GATE.json","sha256":"8C38FE83BDB145F76CFED9129239A0AE2DE34CDCFC5CA8CF4ECD19B6CCD2ADB7"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "legacyEvidenceException": {"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":[]},
+  "blockedArtifacts": [
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F9","classification":"WITHDRAWN_DIAGNOSTIC_DIFF_SOURCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F10","classification":"SIGNED_TERMINAL_FAILURE_DIAGNOSTIC_SOURCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F11","classification":"SIGNED_TERMINAL_FAILURE_DIAGNOSTIC_SOURCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F12","classification":"SIGNED_TERMINAL_FAILURE_DIAGNOSTIC_DIFF_SOURCE_ONLY","futureReuseAllowed":false,"publicationParentAllowed":false,"requestRetryAuthorized":false}
+  ],
+  "scope": {
+    "classification": "LOCAL_SINGLE_EXACT_PACKAGE_BUILD_AND_SIGN",
+    "stageRoot": "C:/A13F",
+    "finalRoot": "work/OPENCV_EDGE_NOTCH_O3F13/final_o3f13",
+    "maximumPackageBuilds": 1,
+    "acceptedDev6ExitStatePairCount": 2,
+    "externalPublication": false,
+    "jbodExecution": false,
+    "sourceImageBytesRead": false,
+    "sourceMutation": false,
+    "taskOrExistingProcessAction": false,
+    "providerActivation": false,
+    "requestRetryAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

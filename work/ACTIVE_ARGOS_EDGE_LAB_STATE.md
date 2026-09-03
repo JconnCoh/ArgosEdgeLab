@@ -9943,3 +9943,28 @@ training/XML/production remain false.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F12_SIGNED_TERMINAL_FAILURE_O3F13_NEXT_CHECKPOINT_20260902.md`,
 SHA-256 `72EF51D754D0250C8321EAD8226CA81D84E20963456078CBB10E6AA9FC08325A`.
+
+## OCV-03 O3F13 R10 DEV6 signed portal ready — 2026-09-02
+
+Fresh request `REQ_O3F13_20260902A` is frozen and signed but not published or
+executed. ZIP
+`6CD1551EB5E7B71FD58542E6313B9528DB37E2CA35884B4BA3BAB39CBB701063`,
+manifest
+`B90F557E75F7D0B852A4908F402D5124F54E9B18682EBAC2200621590691F301`,
+and signature
+`F19EB4ED3F5EDAC1DA6152159314F37C1F0142F51C4B3A0754792BD9CECFAD29`
+are exact. Endpoint, exact-package, route, and zero-pending share gates pass.
+The bounded endpoint consumer now accepts only documented exit 0/completion
+and exit 2/explicit-hold pairs; R10, runner, selectors, six sources, and `Q:`
+alias lifecycle remain unchanged. O3F12 remains withdrawn/no-retry/non-parent.
+
+Next action is exactly one Project Portal publication and only its matching
+signed response, with no manual PowerShell/RustDesk input or retry. All 184
+O3F6/O3F7 holds, all twelve current `PatternedFront` holds, rare hotspot
+Slot16, and every recorded prerequisite remain explicit. No selector
+relaxation or hold clearance; review-only remains true and
+training/XML/production remain false.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F13_R10_DEV6_SIGNED_PORTAL_READY_CHECKPOINT_20260902.md`,
+SHA-256 `C9F78DEAEF778B4A7ADB96C920E1D8E63C1E535B2301234F0463CF52FFAA0F01`.

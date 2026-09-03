@@ -1,0 +1,85 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-03T04:42:11.7269894Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3F13\\O3F13_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "715924393EECA0878F05D391F29167F2C42C32EF8ED5BF60DD35328ABDEFB31E",
+    "pairCount":  4,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F12/Invoke-O3F12StagedEndpoint.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F13/Invoke-O3F13StagedEndpoint.ps1",
+                      "sourceSha256":  "D2CF3B63B590E21BB8292BF23B79259D8BDACAD308CC32494A7C3867EA704DC1",
+                      "generatedSha256":  "812391373F107130509A1C19C8D6645C9212C533D69ED738706DAF9DB2563D7B",
+                      "sourceRoots":  [
+                                          "D:\\O3F9D12",
+                                          "D:\\O3F9G12"
+                                      ],
+                      "generatedRoots":  [
+                                             "D:\\O3F9D13",
+                                             "D:\\O3F9G13"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F12/Test-O3F12Endpoint.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F13/Test-O3F13Endpoint.ps1",
+                      "sourceSha256":  "92044A4268994CCDD837401E2729E53F79DCEE07A2879D13762BFD086FBD4559",
+                      "generatedSha256":  "5EBBB67E5C1FA7FE2BA8A0E139303FCC4503BBDA8382B50E1DA9FE6C46C57DE4",
+                      "sourceRoots":  [
+                                          "C:\\A12Q",
+                                          "C:\\A12U",
+                                          "C:\\A12V",
+                                          "C:\\A12W",
+                                          "Q:"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\A13H",
+                                             "C:\\A13Q",
+                                             "C:\\A13U",
+                                             "C:\\A13V",
+                                             "C:\\A13W",
+                                             "C:\\A13X",
+                                             "Q:"
+                                         ],
+                      "ruleCount":  7
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F12/O3F12FixtureRunner.py",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F13/O3F13FixtureRunner.py",
+                      "sourceSha256":  "969F32E4EDEA83807AEA9745427D2C74EC5C154DCDE02B780412BFEECA2295F2",
+                      "generatedSha256":  "FB0A901D492C3CD593A58DD852496ACEEEE68523D6ACC73864924064B8AD0B05",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F12/O3F12RootContractProbe.py",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F13/O3F13RootContractProbe.py",
+                      "sourceSha256":  "90E653DA0E0C68715F2658C69168993B9ED89BA06B3AE8EDC8B90148FA3C7000",
+                      "generatedSha256":  "D6DCC9DBCFFA47914E80B3FEAB7A0D18A1FBA6106D6A2500F25AFCD29E361884",
+                      "sourceRoots":  [
+                                          "D:\\O3F9",
+                                          "Q:\\BrightfieldFrontsideWafer",
+                                          "Q:\\DarkfieldFrontsideWafer"
+                                      ],
+                      "generatedRoots":  [
+                                             "D:\\O3F9",
+                                             "Q:\\BrightfieldFrontsideWafer",
+                                             "Q:\\DarkfieldFrontsideWafer"
+                                         ],
+                      "ruleCount":  3
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}
