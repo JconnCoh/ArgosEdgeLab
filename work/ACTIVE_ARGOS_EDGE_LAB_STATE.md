@@ -9688,3 +9688,20 @@ SHA-256 `C58F926D37EC966A8E42074333F0AB4F9810D124F30A2E57A7FCBC8871013076`.
 Exact next scribe-lane action: commit/push this state, require clean matching
 branch tips and an empty queue, run non-mutating preflight, then publish once.
 Never retry or republish. Await only the matching signed terminal response.
+
+# 2026-09-03 — OCV-02 R18G published once / matching response pending (`PENDING_GATE`)
+
+R18G was published exactly once at `2026-09-03T22:11:59.2143991Z`.
+The gateway processed copy hash-matches exact request ZIP
+`B78FE1E9112FEEEB22FBDA3AA442B81237A207C26F6A62E4E1AAADFD5DA5AEE4`.
+Publish gate SHA-256 is
+`B1677C6A424C791B28F194C2A77B7071B75FA76CC7B14212C7931A258145C325`.
+
+This proves gateway acceptance only. R18G is no-retry/no-republish. Continue
+only bounded read-only discovery, signature verification, and create-new local
+collection of its one matching signed terminal response without decoding
+pixels.
+
+Checkpoint:
+`work/OPENCV_SCRIBE_R18G/R18G_PUBLISHED_ONCE_RESPONSE_PENDING_CHECKPOINT_20260903.md`,
+SHA-256 `1E0A3B64F4F616C0E8E5CBECC64EA41F3ABF1ECB24D5016F20C72E6AF6C99881`.
