@@ -1,8 +1,24 @@
-# Active ArgosEdgeLab state - OCV-03 O3F16 U12 visual hold / U13 local ready - 2026-09-04
+# Active ArgosEdgeLab state - OCV-03 O3F16 U13 signed four-case ready - 2026-09-04
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3F16 U13 signed four-case ready — 2026-09-04
+
+Fresh signed request `REQ_20260904T141542420Z_8D4D2F19B527`, ZIP SHA-256
+`16389EEC08CBDB4B3723BB522B3AE56DCF43A7FF3D19FEC15C04E170116FF82F`,
+contains exact R13 and is unpublished. Path, harness, clone-remediation, signer,
+and extracted package-leaf checks pass. Two local preparation errors occurred;
+neither built an invalid package nor reached the portal. The operator stop-loss
+triggers only if the count exceeds three.
+
+Next, publish this exact request once with no retry and collect only its matching
+signed terminal response. On pass, return and inspect the exact U13 archive.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U13_SIGNED_FOUR_CASE_READY_CHECKPOINT_20260904.md`,
+SHA-256 `C2CA923F5CB21EA782061CA081A0B27821825E88D42AFD69AE34DB8EDADAFD1A`.
 
 ## OCV-03 O3F16 U12 visual hold / U13 local ready — 2026-09-04
 

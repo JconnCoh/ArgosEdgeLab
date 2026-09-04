@@ -1,0 +1,53 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-04T14:15:28.2066483Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_UNWRAP_O3F16U13\\O3F16U13_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "4F3810600EF14B9B78AD99524DAC6F6EEAB31328ECD12C7858ADFC9DDFAA34D7",
+    "pairCount":  2,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_EDGE_UNWRAP_O3F16U12/Invoke-O3F16U12.ps1",
+                      "generated":  "work/OPENCV_EDGE_UNWRAP_O3F16U13/Invoke-O3F16U13.ps1",
+                      "sourceSha256":  "0B556B98243C09939F0AFF3AD7749A66ED994497AA33CA264438E65D362AE594",
+                      "generatedSha256":  "ABE77E0744D6A844F7DCD084019CCBDA9FFA88CDB0BB5B9F66397EFF4A60E8AD",
+                      "sourceRoots":  [
+                                          "D:\\AFCV1",
+                                          "D:\\KLARFExport",
+                                          "D:\\O3F15L4E5RT",
+                                          "D:\\O3F16U12"
+                                      ],
+                      "generatedRoots":  [
+                                             "D:\\AFCV1",
+                                             "D:\\KLARFExport",
+                                             "D:\\O3F15L4E5RT",
+                                             "D:\\O3F16U13"
+                                         ],
+                      "ruleCount":  4
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_UNWRAP_O3F16U12/BuildSignPublish-O3F16U12.ps1",
+                      "generated":  "work/OPENCV_EDGE_UNWRAP_O3F16U13/BuildSignPublish-O3F16U13.ps1",
+                      "sourceSha256":  "31BC457CA7907F72ED062A56734CA1F594486D6DC382C5AB89FA3F8EDAE67BD9",
+                      "generatedSha256":  "B73F92BB42150A1E138EAACBB238F3A34C7307B450E40B9FC4C26036ADB822A1",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "C:\\O3F16U12PK1",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "C:\\O3F16U13PK1",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  3
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}
