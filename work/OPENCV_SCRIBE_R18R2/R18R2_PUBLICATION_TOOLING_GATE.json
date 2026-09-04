@@ -1,0 +1,51 @@
+{
+  "schema": "argos_opencv_scribe_r18r2_publication_tooling_gate_v1",
+  "checkedUtc": "2026-09-04T23:39:30Z",
+  "state": "PASS_R18R2_PUBLICATION_TOOLING_GATE",
+  "requestId": "REQ_R18R2",
+  "publisher": {
+    "path": "work/OPENCV_SCRIBE_R18R2/Publish-R18R2.ps1",
+    "sha256": "FFD80247B56BF05EC46A4690683BBF51E0D6FB5244BC16015AC48B6BEF7E3BFF",
+    "sourceTemplatePath": "work/OPENCV_SCRIBE_R18P/Publish-R18P.ps1",
+    "sourceTemplateSha256": "D470863C11CAEA944545A8ED96C00216CA9B515DDAD2D5F211017206429AC144",
+    "sourceTemplateHarnessSafetyPassed": true,
+    "windowsPowerShell51ParserPassed": true,
+    "harnessSafetyPassed": true,
+    "wrapperSafetyPassed": true,
+    "nonMutatingPreflightPresent": true
+  },
+  "responseFinder": {
+    "path": "work/OPENCV_SCRIBE_R18R2/Find-R18R2Response.ps1",
+    "sha256": "7590560204ECAE3F74A64264844635BDEAFEA82DEB01D42370371535087CEAF6",
+    "sourceTemplatePath": "work/OPENCV_SCRIBE_R18G/Find-R18GResponse.ps1",
+    "sourceTemplateSha256": "522A0E78324CDF3AF5E464B47E2586A5600D8E7CF5EC69E62B78EA42BE2FBECF",
+    "sourceTemplateHarnessSafetyPassed": true,
+    "windowsPowerShell51ParserPassed": true,
+    "harnessSafetyPassed": true,
+    "wrapperSafetyPassed": true,
+    "nonMutatingOnly": true
+  },
+  "publicationAuthority": {
+    "path": "work/OPENCV_SCRIBE_R18R2/R18R2_PUBLICATION_AUTHORITY.json",
+    "sha256": "4A32BF9E63179AF982F03F04402EFC91760C3D7708A09D80F7233120742C5258"
+  },
+  "publicationPreaction": {
+    "path": "work/OPENCV_SCRIBE_R18R2/PREACTION_R18R2_REFERENCE_ISOLATED_PUBLICATION.json",
+    "sha256": "17A8B17C6FD9321B87DD46CCE8B31289E5D5C9146812D67922307522C484D424",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"
+  },
+  "cloneRemediation": {
+    "manifestPath": "work/OPENCV_SCRIBE_R18R2/R18R2_PUBLICATION_CLONE_REMEDIATION.json",
+    "manifestSha256": "E0DB3D2A8C4DD813E6FDD4EACEC8437D87683BE96C91B64F3F6B9B8B14414FFA",
+    "gatePath": "work/OPENCV_SCRIBE_R18R2/R18R2_PUBLICATION_CLONE_GATE.json",
+    "gateSha256": "B9F044F07D73687726FD50A08EB5AC8985FCDA51A3D3BF843AD165ED6EE32E0F",
+    "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"
+  },
+  "requestZipSha256": "E541EB7FCCD19A04BFE401D6FCFB70B7976C0F47E9F4F1AD8E1FCC1626EEF300",
+  "maximumPublications": 1,
+  "retryAuthorized": false,
+  "externalMutationPerformed": false,
+  "targetExecuted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
