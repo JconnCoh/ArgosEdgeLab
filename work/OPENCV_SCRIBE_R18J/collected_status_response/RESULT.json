@@ -1,0 +1,131 @@
+{
+    "schema":  "argos_project_portal_status_result_v1",
+    "createdUtc":  "2026-09-04T02:09:40.1987107Z",
+    "role":  "JBOD",
+    "state":  "PASS_STATUS_COLLECTED",
+    "tasks":  [
+                  {
+                      "name":  "ArgosEdgeLab.AllWaferProcessor.ReviewOnly.V2",
+                      "state":  "Ready"
+                  },
+                  {
+                      "name":  "ArgosEdgeLab.ScribeProposal.ReviewOnly.V2",
+                      "state":  "Ready"
+                  },
+                  {
+                      "name":  "ArgosEdgeLab.InsiteBridge.Worker.ReviewOnly.V1",
+                      "state":  "Ready"
+                  },
+                  {
+                      "name":  "ArgosEdgeLab.InsiteBridge.Relay.ReviewOnly.V1",
+                      "state":  "Running"
+                  },
+                  {
+                      "name":  "ArgosEdgeLab.AllWaferMonitor.ReviewOnly.V2",
+                      "state":  "Running"
+                  }
+              ],
+    "installedHashes":  [
+                            {
+                                "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Invoke-JbodAllWaferProcessingPass.ps1",
+                                "exists":  true,
+                                "sha256":  "8050EEB71923DC69EBD0A81F6C95840A7BD6215998E8546F9170C5A051B936EB",
+                                "bytes":  41491
+                            },
+                            {
+                                "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Reevaluate-JbodHeldScribeProposals.ps1",
+                                "exists":  true,
+                                "sha256":  "8D1BF403F0FE792804635C15497B4D6AC740D219488965E39869EF560EC5EA06",
+                                "bytes":  12038
+                            },
+                            {
+                                "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\Monitor-JbodAllWaferProcessor.ps1",
+                                "exists":  false,
+                                "sha256":  null,
+                                "bytes":  null
+                            }
+                        ],
+    "jsonStates":  [
+                       {
+                           "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json",
+                           "exists":  true,
+                           "value":  {
+                                         "schema":  "argos_jbod_all_wafer_processor_config_v3",
+                                         "appRoot":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2",
+                                         "rawSearchRoot":  "D:\\KLARFExport",
+                                         "stateRoot":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2",
+                                         "relayQueueRoot":  "C:\\ProgramData\\ArgosRelayRO\\queue",
+                                         "outputRoot":  "D:\\A2\\o",
+                                         "dashboardOutputRoot":  "D:\\A2\\d",
+                                         "cacheRoot":  "D:\\A2\\c",
+                                         "processorCooperativeHold":  false,
+                                         "processorCooperativeHoldId":  "",
+                                         "pollSeconds":  15,
+                                         "stableAgeSeconds":  120,
+                                         "stablePasses":  2,
+                                         "queueRelaySummary":  true,
+                                         "bowCompWorkerCount":  8,
+                                         "maximumJobsPerCatalogPass":  20,
+                                         "inventoryRescanAfterQueueBatch":  true,
+                                         "metadataLookupAuthority":  "CONFIRMED_SCRIBE_ONLY",
+                                         "metadataSnapshotRoot":  "D:\\A2\\m\\verified",
+                                         "unconfirmedScribeState":  "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+                                         "automaticScribeProposalEnabled":  true,
+                                         "scribeProposalsPerCatalogPass":  1,
+                                         "frontsideDefectInspectionEnabled":  false,
+                                         "referenceRoot":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\references",
+                                         "referenceCacheEnabled":  false,
+                                         "referenceCacheGate":  "REQUIRES_PASS_EXACT_EQUIVALENCE_AND_OPERATOR_APPROVAL",
+                                         "automaticReferencePromotionEnabled":  false,
+                                         "reviewOnly":  true,
+                                         "detectorExecutionEnabled":  true,
+                                         "detectorExecutionState":  "ENABLED_REVIEW_ONLY_SEPARATE_BARE_AND_BOWCOMP",
+                                         "xmlExportEnabled":  false,
+                                         "xmlExportState":  "DISABLED_PENDING_DATA_ENGINEERING_DEFECT_BINS_AND_COORDINATE_AUTHORITY",
+                                         "trainingEligible":  false,
+                                         "productionEligible":  false,
+                                         "requireConfirmedScribeMesBeforeDetector":  true,
+                                         "frontsideScratchTestReviewOnlyEnabled":  true,
+                                         "frontsideScratchTestRouteAuthority":  "INSITE_MOVEIN_HISTORY_BEFORE_EXACT_ARGOS_ACQUISITION",
+                                         "frontsideScratchTestRecipeFolderAuthority":  false,
+                                         "frontsideScratchTestMinimumPhysicalWafersPerAcquisition":  3,
+                                         "frontsideScratchTestTargetExcludedPeerMinimum":  2,
+                                         "bowCompReferenceCacheRoot":  "D:\\ArgosEdgeLabRO\\cache\\bowcomp"
+                                     },
+                           "readError":  null
+                       },
+                       {
+                           "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\SCRIBE_WORKER_STATUS.json",
+                           "exists":  true,
+                           "value":  {
+                                         "schema":  "argos_jbod_scribe_worker_status_v1",
+                                         "updatedUtc":  "2026-08-24T10:17:19.3041868Z",
+                                         "state":  "PROCESSING_PROPOSALS",
+                                         "detail":  "Running one bounded reference-update reevaluation and one bounded notch-relative SEMI M12 image-first proposal.",
+                                         "authority":  "IMAGE_FIRST_EXACT_PREVIOUS_HUMAN_SCRIBE_MATCH_MAY_ADVANCE_OTHERWISE_OPERATOR_CONFIRMATION_REQUIRED",
+                                         "lotSlotIdentityAuthorityUsed":  false,
+                                         "frontsideDefectInspectionPerformed":  false,
+                                         "reviewOnly":  true,
+                                         "xmlEligible":  false,
+                                         "productionEligible":  false
+                                     },
+                           "readError":  null
+                       },
+                       {
+                           "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_STATUS.json",
+                           "exists":  false,
+                           "value":  null,
+                           "readError":  null
+                       }
+                   ],
+    "logs":  [
+                 {
+                     "path":  "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\logs\\processor.log",
+                     "tail":  {
+
+                              }
+                 }
+             ],
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

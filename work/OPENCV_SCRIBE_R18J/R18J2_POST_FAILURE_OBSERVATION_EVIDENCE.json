@@ -1,0 +1,73 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-04T02:10:10Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "R18J2_PROPOSAL_ROOT_PREMISE_20260904",
+  "requestId": "REQ_20260904T021000000Z_R18J2OBS",
+  "requestZipSha256": "D9CC21A529212FDF65B4FCDE08F499FED1E6CC820C2A30E07F1726FC26BC6140",
+  "responseId": "R_CA2B1B0B66DF_20260904020940206_5f4ff22e",
+  "responseZipSha256": "A402C855AA141545B0EC6AE33FBEE6F67C8CC91449110A29EC93F08E9AD9D47C",
+  "responseManifest": {
+    "path": "work/OPENCV_SCRIBE_R18J/collected_status_response/PORTAL_RESPONSE_MANIFEST.json",
+    "sha256": "D6FE1036218AC68EED1292627C5E1A72EF5E6F0BDCEB59CD5A884CF0C4B74C5C"
+  },
+  "responseSignature": {
+    "path": "work/OPENCV_SCRIBE_R18J/collected_status_response/PORTAL_RESPONSE_MANIFEST.sig",
+    "sha256": "66425F84FDE967F777A37981E5F80B738549D83962A14E36F2D59B944E067EFF"
+  },
+  "result": {
+    "path": "work/OPENCV_SCRIBE_R18J/collected_status_response/RESULT.json",
+    "sha256": "36B5FF455963AFCF2CB7733B2B2CFFEEF9F204116C8B459FFFFEA34F07CB9056"
+  },
+  "signatureVerification": {
+    "state": "PASS_SIGNED_PORTAL_RESPONSE",
+    "sourceRole": "JBOD",
+    "endpointState": "PASS_STATUS_COLLECTED",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "fileCount": 1
+  },
+  "exactSources": [
+    {
+      "sourcePath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json",
+      "sourceSchema": "argos_jbod_all_wafer_processor_config_v3",
+      "selector": "jsonStates[path='C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json']",
+      "uniquenessKey": "path",
+      "maximumRows": 1,
+      "observedRows": 1,
+      "exists": true
+    }
+  ],
+  "expectedObserved": [
+    {
+      "field": "PROCESSOR_CONFIG.json.stateRoot",
+      "expectedFromInstalledContract": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2",
+      "observed": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2",
+      "match": true
+    },
+    {
+      "field": "derivedProposalRoot",
+      "derivation": "Join-Path PROCESSOR_CONFIG.json.stateRoot 'identity\\proposals'",
+      "disprovedValue": "D:\\AFCV1\\review\\identity\\proposals",
+      "observedInstalledValue": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+      "match": true
+    },
+    {
+      "field": "PROCESSOR_CONFIG.json.rawSearchRoot",
+      "expected": "D:\\KLARFExport",
+      "observed": "D:\\KLARFExport",
+      "match": true
+    }
+  ],
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "mutationsPerformed": false,
+  "imageBytesRead": false,
+  "readerChanged": false,
+  "referenceLibraryChanged": false,
+  "supportedRemedy": "B",
+  "decision": "Replace only the disproved proposal-root precondition in a fresh successor namespace; preserve all frozen reader, crop, reference, source, output, and authority bytes.",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

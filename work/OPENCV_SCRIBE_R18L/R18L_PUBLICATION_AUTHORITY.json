@@ -1,0 +1,34 @@
+{
+  "schema": "argos_opencv_scribe_r18l_publication_authority_v1",
+  "createdUtc": "2026-09-04T02:21:00Z",
+  "state": "PASS_R18L_PUBLICATION_AUTHORITY",
+  "operatorAuthority": [
+    "PUBLISH",
+    "If corrected cropping returns Slot24 truth 143B0083SUE6, proceed to the full KLARF decipher on JBOD.",
+    "go"
+  ],
+  "slot24Truth": "143B0083SUE6",
+  "slot24CropGate": {
+    "path": "work/OPENCV_SCRIBE_R18I/R18I_SLOT24_CROP_DEMONSTRATION_GATE.json",
+    "sha256": "CB13E9BD9F4C8854BD07D02866D3702366BFFA85ADB2B108981D56BE7B2690AC"
+  },
+  "postFailureObservation": {
+    "path": "work/OPENCV_SCRIBE_R18J/R18J2_POST_FAILURE_OBSERVATION_EVIDENCE.json",
+    "sha256": "084B2698CDE397CE39B4BE315B9FDEE4F578B50B631192977B5BDEAE398BBB17"
+  },
+  "withdrawnUnpublishedPredecessor": {
+    "path": "work/OPENCV_SCRIBE_R18K/R18K_SIGNED_UNPUBLISHED_PATH_WITHDRAWAL.json",
+    "sha256": "D07987EED674F6805B468628227ADE52EAA8451F1F037E850DAD5572E125D417"
+  },
+  "freshNamespace": "R18L",
+  "shortRequestId": "REQ_R18L_20260904A",
+  "maximumRequests": 1,
+  "retryAuthorized": false,
+  "identityAcceptanceAuthorized": false,
+  "referenceAdmissionAuthorized": false,
+  "trainingAuthorized": false,
+  "xmlAuthorized": false,
+  "productionAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

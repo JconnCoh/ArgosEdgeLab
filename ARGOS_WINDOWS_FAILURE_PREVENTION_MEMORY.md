@@ -1,5 +1,27 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### Portal path gates must include the deepest expanded payload leaf at every extraction hop
+
+- Signature: a signed but unpublished portal package appears below the path
+  limit when only manifests, ZIP leaves, and runtime output leaves are checked,
+  but the endpoint's extracted `request.ready\payload\files\...` leaf reaches an
+  effective length of 200 or more.
+- Cause: the complete-route gate combined the longest payload-relative leaf
+  with some local extraction roots but omitted that same leaf under the exact
+  installed endpoint pending/extraction root.
+- Preflight: before the first signature, cross-product the longest packaged
+  relative leaf with every hop that expands the ZIP, including endpoint
+  pending/work roots, and reserve 32 suffix characters. An effective length of
+  200 or more requires a shorter request/package namespace before any write.
+- Recovery: keep the signed unsafe namespace unpublished and immutable, record
+  a withdrawal, choose a fresh shorter request namespace, recompute all
+  expanded-hop leaves, and rebuild/sign only after the maximum effective length
+  is below 200.
+- First observed: unpublished R18K request
+  `REQ_20260904T022000000Z_R18K` on 2026-09-04. The deepest endpoint pending
+  payload leaf measured 174 characters, or 206 with the required 32-character
+  reserve. Nothing was published or executed on JBOD.
+
 ### Portal package verification requires an idempotent installed hash for create-allowed changes
 
 - Signature: a newly signed `MAINTENANCE_PATCH` draft with `allowCreate=true`
