@@ -1,0 +1,71 @@
+{
+  "schema": "argos_ocv03_o3f16_u10_operator_review_supersession_gate_v1",
+  "revision": "O3F16U10_OPERATOR_REVIEW_SUPERSESSION_20260904",
+  "createdUtc": "2026-09-04T12:57:25.3899723Z",
+  "state": "PASS_U10_PROVENANCE_RETAINED_VISUAL_PASS_SUPERSEDED",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "supersededCheckpoint": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U10_EXISTING_RESULT_VISUAL_PASS_NO_TUNING_CHECKPOINT_20260903.md",
+    "sha256": "DCA428738FAEBF846D2F724925090264C07C902447F68D47BEBEB7F418FD509C"
+  },
+  "supersededVisualGate": {
+    "path": "work/OPENCV_EDGE_UNWRAP_O3F16U10/O3F16U10_OBS1_TERMINAL_VISUAL_GATE.json",
+    "sha256": "7F0CDF880CD8A4E5FB348068830339486630C8AA6911F8CC1131C33DDFB46BF9",
+    "provenanceEvidenceRetained": true,
+    "visualPassDecisionReusable": false
+  },
+  "u10Summary": {
+    "path": "C:/O3F16U10OBS1A/u10/SUMMARY.json",
+    "sha256": "2D1A46CBB7C69782CF60C621A4F746998F18F392F42748537EC2433DF792C378",
+    "caseCount": 4,
+    "channelCount": 8,
+    "maximumUnsupportedRunColumns": 3692,
+    "maximumUnsupportedRunDegrees": 41.072,
+    "maximumCyclicPathJumpPx": 18.0,
+    "notchSelectionPerformed": false,
+    "holderClassificationPerformed": false
+  },
+  "operatorFindings": {
+    "darkSectorPathDriftObserved": true,
+    "stitchLikePresentationObserved": true,
+    "notchNotVisibleOrIdentified": true,
+    "imageEnhancementRequiredForReview": true,
+    "u10AcceptedForBroaderUse": false
+  },
+  "analysis": {
+    "reviewPanelBoundaryMaximumJumpPx": 1.0,
+    "panelStackingIsPresentationArtifact": true,
+    "darkSectorTrackingFailureIsDetectorBehavior": true,
+    "claheForDetectorPixelsRejected": true,
+    "globalMinmaxForReviewSelected": true
+  },
+  "argosExample": {
+    "unprocessedSha256": "21C2256670C01FE3B01ADA434BBC6CDF0307DEFE66DD4034B4A0C0E1D73A0990",
+    "processedSha256": "DAAC709E4F058F65024764F1C98E10853FEA78242F0AC2FB7394295132106C4D",
+    "shapeRows": 45,
+    "shapeColumns": 5994,
+    "processing": "OPENCV_GLOBAL_MINMAX_NORMALIZATION",
+    "geometryChanged": false,
+    "observedNotchStartColumn": 3082,
+    "observedNotchEndColumnInclusive": 3118,
+    "observedNotchCenterColumn": 3100
+  },
+  "r12Draft": {
+    "path": "work/O3F8/AnnularUnwrapDiagnosticOpenCvR12.py",
+    "sha256": "1696DBE407E4461B351C6B939C591A4E652E558DF15BF4AC5CEFB369950FF7F6",
+    "commit": "65f71d73707fac8395ca428bd6b4f18326824399",
+    "runtimeExecuted": false,
+    "packageBuilt": false,
+    "providerActivated": false
+  },
+  "nextAction": "After continuity supersession, locally gate the exact R12 draft and execute at most one fresh four-case review-only JBOD development run under a create-new root. Do not rerun U10. Stop on one unchanged-route failure. Inspect every raw, globally enhanced, and full-band BF/DF strip before notch work. After the strip gate passes, regress POST2 Slots01/03/17 and then acquire the exact operator-named genuine microchipout lot as a positive transfer cohort before any broader corpus.",
+  "sourceMutationOrDeletionPerformed": false,
+  "existingTaskOrProcessActionPerformed": false,
+  "providerActivated": false,
+  "automaticHoldClearancePerformed": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

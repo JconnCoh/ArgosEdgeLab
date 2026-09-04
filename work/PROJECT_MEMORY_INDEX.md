@@ -4,6 +4,24 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 O3F16 U10 operator review supersession / R12 draft next — 2026-09-04
+
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U10_OPERATOR_REVIEW_SUPERSEDES_VISUAL_PASS_R12_DRAFT_NEXT_CHECKPOINT_20260904.md`,
+  SHA-256 `06C467240D3F5394118896D4AA2728881BA1C0533FD0BBE4E28B5EBA453332E5`.
+- Supersession gate:
+  `work/OPENCV_EDGE_UNWRAP_O3F16U12/O3F16U10_OPERATOR_REVIEW_SUPERSESSION_GATE.json`,
+  SHA-256 `E70FF601E348BAA19086CFF3FF163C26BFDB4BB346EE8D51ACC352709CDE571C`.
+- U10 provenance is retained, but its AI-only pass/no-tuning decision is
+  superseded. Unsupported spans reach 3,692 columns and path jumps reach 18
+  pixels; notch selection was never performed.
+- R12 draft SHA-256 is
+  `1696DBE407E4461B351C6B939C591A4E652E558DF15BF4AC5CEFB369950FF7F6`.
+  It has not run on JBOD. Next is one fresh four-case strip gate, followed only
+  after pass by frozen POST2 and then the exact genuine microchipout lot.
+- T5, targeted 11, full 978, scribe, activation, hold clearance, training, XML,
+  and production remain unauthorized.
+
 ## OCV-03 O3F16 U10 existing-result visual pass / no tuning — 2026-09-03
 
 - Current checkpoint:
