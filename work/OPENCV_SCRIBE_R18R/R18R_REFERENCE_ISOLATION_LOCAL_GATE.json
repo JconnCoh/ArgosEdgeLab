@@ -1,0 +1,59 @@
+{
+  "schema": "argos_opencv_scribe_r18r_reference_isolation_local_gate_v1",
+  "createdUtc": "2026-09-04T22:15:00Z",
+  "state": "PASS_R18R_REFERENCE_ISOLATION_LOCAL_GATE",
+  "artifactLifecycle": "DRAFT",
+  "runner": {
+    "path": "work/OPENCV_SCRIBE_R18R/Run-R18RReferenceIsolatedCorpus.py",
+    "bytes": 9145,
+    "sha256": "B826767EA21BB148DD30A719595B23DD818FD9CFC08B347FEAFD9FD4959F4E3C"
+  },
+  "engineSourcesScanned": {
+    "selection": "ALL_PAYLOAD_MANIFEST_PYTHON_FILES",
+    "payloadManifestPath": "work/OPENCV_SCRIBE_R18R/R18R_PAYLOAD_MANIFEST.json",
+    "payloadManifestSha256": "251F028EFC852B74FAB961CF92E36538D01345C58D03757DDFB81B5EA4EA141B",
+    "count": 15,
+    "allHashAndBytePinsMatched": true
+  },
+  "test": {
+    "path": "work/OPENCV_SCRIBE_R18R/Test-R18RReferenceIsolation.py",
+    "bytes": 8777,
+    "sha256": "657E7F780AA69D5E2AF0601C36A73424E387A6BB5735C051ED1B59D2EFB23EE5",
+    "packageExcluded": true
+  },
+  "cohort": {
+    "path": "work/OPENCV_SCRIBE_R18R/R18R_REVIEW_COHORT.json",
+    "bytes": 7211,
+    "sha256": "78771AA262F5663AAAB3BFCCFD3E7ACC0EC0AC337DDA879BA2AF7F29C271425C",
+    "state": "DRAFT_CONFIGURATION_SELECTED_COHORT",
+    "caseCount": 21,
+    "uniqueSourcePairCount": 21,
+    "knownTruthControlCount": 2,
+    "reciprocalMarginControlExpectedTruthPresent": false
+  },
+  "references": {
+    "baseBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "baseManifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "supplementalManifestSha256": "FD60D494A25B489A8F1D8581217457AD67B02C98D54CA0A5400FAC0611537114"
+  },
+  "gates": {
+    "pythonNoBytecodeMode": true,
+    "sourceHashExclusionPassed": true,
+    "engineSourceCount": 15,
+    "engineHashMismatchCount": 0,
+    "hardCodedEngineLiteralCount": 0,
+    "configurationLiteralLeakCount": 0,
+    "sameLineageReferenceSurvivorCount": 0,
+    "knownTruthMinimumExcludedReferenceIdentityCount": 2
+  },
+  "imageBytesRead": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "identityAccepted": false,
+  "preSubmissionContract": {
+    "builderMustInvokeExactGate": true,
+    "builderMustPinGateAndAllEngineHashes": true,
+    "testAndGateMustRemainOutsideRuntimeZip": true,
+    "publicationAuthorized": false
+  }
+}

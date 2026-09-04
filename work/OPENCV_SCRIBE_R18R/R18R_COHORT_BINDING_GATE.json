@@ -1,0 +1,31 @@
+{
+  "schema": "argos_opencv_scribe_r18r_cohort_binding_gate_v1",
+  "createdUtc": "2026-09-04T22:16:00Z",
+  "state": "PASS_R18R_COHORT_BINDING_GATE",
+  "artifactLifecycle": "DRAFT",
+  "caseCount": 21,
+  "uniqueSourcePairCount": 21,
+  "cohortSha256": "78771AA262F5663AAAB3BFCCFD3E7ACC0EC0AC337DDA879BA2AF7F29C271425C",
+  "bindingRowsSha256": "D00C6393FD07FF31339DC8EC37933651CF7CA7AE5C372BD739B26055F7A64608",
+  "predecessorCohort": {
+    "path": "work/OPENCV_SCRIBE_R18P/R18P_REVIEW_COHORT.json",
+    "sha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661",
+    "exactPrefixRowCount": 20,
+    "exactPrefixMatched": true
+  },
+  "appendedControlEvidence": {
+    "source": "work/OPENCV_SCRIBE_R18Q/R18Q_LOCAL_GATE_FIXTURES.json#slot24",
+    "sourceSha256": "2B09530AFEABE3425F0E8D47F0BFD630DE81E32430B2F34D1C332B4223EB2E3A",
+    "supportingLocalGatePath": "work/OPENCV_SCRIBE_R18Q/R18Q_LOCAL_GATE.json",
+    "supportingLocalGateSha256": "E080BDC20040973E6E9F533B2C650B60FFBD7BA939A375ABC9E33F6C4AE53111",
+    "rowCount": 1,
+    "expectedTruthPresent": false,
+    "sourceHashesMatched": true
+  },
+  "mismatchCount": 0,
+  "imageBytesRead": false,
+  "sourceMutationPerformed": false,
+  "runtimeHardCodeCreated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

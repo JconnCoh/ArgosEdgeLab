@@ -1,0 +1,625 @@
+{
+  "authoritativeFixtureBinding": {
+    "allExact": true,
+    "blankControlCount": 5,
+    "completeScribeManifestSha256": "1AF8D4150B26DB7666900C5B0508C8A3723B635CB6C1D6DC02CA53469CA6D3C2",
+    "isolatedTruthCount": 2,
+    "r18pReviewCohortSha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661",
+    "visibleStringCount": 21
+  },
+  "authority": {
+    "activationAuthorized": false,
+    "automaticReferenceAdmissionAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "productionAuthorized": false,
+    "reviewOnly": true,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false
+  },
+  "blankControls": {
+    "caseCount": 5,
+    "evaluatedViewCount": 40,
+    "rows": [
+      {
+        "decision": "HOLD_SCRIBE_NOT_LOCALIZED",
+        "evaluatedViewCount": 8,
+        "maximumSelectionScore": 0.4100775678102052,
+        "outputStringAllowed": false,
+        "physicalIdentity": "Lot-62546-481-POST2_20260713155808_Slot18",
+        "presenceFloor": 0.6
+      },
+      {
+        "decision": "HOLD_SCRIBE_NOT_LOCALIZED",
+        "evaluatedViewCount": 8,
+        "maximumSelectionScore": 0.2795050625023278,
+        "outputStringAllowed": false,
+        "physicalIdentity": "dev-01-post-8-19_20260819164148_Slot01",
+        "presenceFloor": 0.6
+      },
+      {
+        "decision": "HOLD_SCRIBE_NOT_LOCALIZED",
+        "evaluatedViewCount": 8,
+        "maximumSelectionScore": 0.4117022512613591,
+        "outputStringAllowed": false,
+        "physicalIdentity": "Lot-62546-481-POST2_20260713155808_Slot23",
+        "presenceFloor": 0.6
+      },
+      {
+        "decision": "HOLD_SCRIBE_NOT_LOCALIZED",
+        "evaluatedViewCount": 8,
+        "maximumSelectionScore": 0.4153806639783699,
+        "outputStringAllowed": false,
+        "physicalIdentity": "62627-182_20260810050905_Slot23",
+        "presenceFloor": 0.6
+      },
+      {
+        "decision": "HOLD_SCRIBE_NOT_LOCALIZED",
+        "evaluatedViewCount": 8,
+        "maximumSelectionScore": 0.3162538797967302,
+        "outputStringAllowed": false,
+        "physicalIdentity": "62613-842A-test_20260730053955_Slot25",
+        "presenceFloor": 0.6
+      }
+    ]
+  },
+  "canonicalLineageReferenceSweep": {
+    "changedCount": 2,
+    "changes": [
+      {
+        "after": "G",
+        "appearanceDeficit": 0.18197179560424304,
+        "before": "B",
+        "excludedPrototypeCount": 12,
+        "physicalIdentity": "62627_174_SLOT22",
+        "referenceIndex": 384,
+        "runStructureDistance": 0.41716007926353077,
+        "runStructureMargin": 0.2857490799859928,
+        "truth": "G"
+      },
+      {
+        "after": "K",
+        "appearanceDeficit": 0.20414239786881816,
+        "before": "R",
+        "excludedPrototypeCount": 13,
+        "physicalIdentity": "62546-481-POST_20260713041740_Slot22",
+        "referenceIndex": 464,
+        "runStructureDistance": 0.40892804952913847,
+        "runStructureMargin": 0.28827856251640444,
+        "truth": "K"
+      }
+    ],
+    "harmedPreviouslyCorrectCount": 0,
+    "predecessorCorrect": 387,
+    "reciprocalKr": {
+      "crossConfusionCount": 0,
+      "kDistinctLineageCount": 2,
+      "kExact": 2,
+      "kLineages": [
+        "62546-481|SLOT22",
+        "62546-481|SLOT25"
+      ],
+      "kTotal": 2,
+      "rDistinctLineageCount": 3,
+      "rExact": 4,
+      "rLineages": [
+        "62607-215|SLOT25",
+        "62627-198|SLOT25",
+        "62631-536|SLOT4"
+      ],
+      "rTotal": 4,
+      "rows": [
+        {
+          "excludedPrototypeCount": 12,
+          "lineage": "62607-215|SLOT25",
+          "physicalIdentity": "62607_215_SLOT25",
+          "predecessor": "R",
+          "referenceIndex": 411,
+          "runStructureDistance": 0.10032140923887109,
+          "runStructureFirst": "R",
+          "runStructureMargin": 0.7169476153807463,
+          "strongStructureApplied": false,
+          "successor": "R",
+          "truth": "R"
+        },
+        {
+          "excludedPrototypeCount": 24,
+          "lineage": "62627-198|SLOT25",
+          "physicalIdentity": "62627_198_SLOT25",
+          "predecessor": "R",
+          "referenceIndex": 412,
+          "runStructureDistance": 0.08496952636865668,
+          "runStructureFirst": "R",
+          "runStructureMargin": 0.7418201552839467,
+          "strongStructureApplied": false,
+          "successor": "R",
+          "truth": "R"
+        },
+        {
+          "excludedPrototypeCount": 24,
+          "lineage": "62627-198|SLOT25",
+          "physicalIdentity": "62627_198_SLOT25",
+          "predecessor": "R",
+          "referenceIndex": 413,
+          "runStructureDistance": 0.08685167756944144,
+          "runStructureFirst": "R",
+          "runStructureMargin": 0.7116939755209675,
+          "strongStructureApplied": false,
+          "successor": "R",
+          "truth": "R"
+        },
+        {
+          "excludedPrototypeCount": 12,
+          "lineage": "62631-536|SLOT4",
+          "physicalIdentity": "62631_536_SLOT04",
+          "predecessor": "R",
+          "referenceIndex": 414,
+          "runStructureDistance": 0.05058227461574271,
+          "runStructureFirst": "R",
+          "runStructureMargin": 0.7560627928304997,
+          "strongStructureApplied": false,
+          "successor": "R",
+          "truth": "R"
+        },
+        {
+          "excludedPrototypeCount": 13,
+          "lineage": "62546-481|SLOT25",
+          "physicalIdentity": "62546-481_20260707164232_Slot25",
+          "predecessor": "K",
+          "referenceIndex": 456,
+          "runStructureDistance": 0.4093399475289166,
+          "runStructureFirst": "K",
+          "runStructureMargin": 0.279880760801594,
+          "strongStructureApplied": false,
+          "successor": "K",
+          "truth": "K"
+        },
+        {
+          "excludedPrototypeCount": 13,
+          "lineage": "62546-481|SLOT22",
+          "physicalIdentity": "62546-481-POST_20260713041740_Slot22",
+          "predecessor": "R",
+          "referenceIndex": 464,
+          "runStructureDistance": 0.40892804952913847,
+          "runStructureFirst": "K",
+          "runStructureMargin": 0.28827856251640444,
+          "strongStructureApplied": true,
+          "successor": "K",
+          "truth": "K"
+        }
+      ]
+    },
+    "referenceCount": 465,
+    "selectedScoreNeverIncreased": true,
+    "successorCorrect": 389
+  },
+  "checksumVectors": {
+    "allValid": true,
+    "count": 19,
+    "sha256": "3D79AC44366F778D051FA1415343C39E92A2D21AE65A0A1F609B13C82FFD3B5E"
+  },
+  "classification": "WITHDRAWN",
+  "displacedS17": {
+    "allArbitrationModes": [
+      "APPEARANCE",
+      "APPEARANCE",
+      "APPEARANCE",
+      "APPEARANCE",
+      "APPEARANCE",
+      "APPEARANCE",
+      "APPEARANCE",
+      "APPEARANCE",
+      "APPEARANCE",
+      "APPEARANCE",
+      "APPEARANCE",
+      "APPEARANCE"
+    ],
+    "caseResultSha256": "82121BD709FA09AEA6CE0C8019D37AB79E8C1D61038D6A16CA48E44B65F3E639",
+    "checksumValid": true,
+    "frozenState": "HOLD_R13B_REVIEW_ONLY_GRID_SELECTED",
+    "holdPreserved": true,
+    "identityAccepted": false,
+    "imageFirstString": "6KB71041XDE5",
+    "inheritedLocalizationGateSha256": "CA0B6227641D5D21E569020A1408B778A95C92533041A30CAC32C98A6C225E83",
+    "physicalIdentity": "POST2_S17_MISPLACED",
+    "proposedString": "6KB71041XDE5",
+    "scope": "FROZEN_R13B_SELECTED_GRID_ARBITRATION_REPLAY_NOT_RELOCALIZATION",
+    "selectedGridDimensions": [
+      1164,
+      210
+    ],
+    "selectedGridPath": "C:/R13BT/S17/selected_grid.png",
+    "selectedGridSha256": "D7E63122DF62D0711420DF629454014BEB0157754B14FC232B6B5E8699814507",
+    "strongStructureAppliedPositions": []
+  },
+  "fixturesSha256": "2B09530AFEABE3425F0E8D47F0BFD630DE81E32430B2F34D1C332B4223EB2E3A",
+  "frozenVisibleRegression": {
+    "count": 21,
+    "rows": [
+      {
+        "expected": "1878P076FEE6",
+        "group": "ESTABLISHED",
+        "imageFirstString": "1878P076FEE6",
+        "physicalIdentity": "Lot-62546-481-POST2_20260713155808_Slot02",
+        "selectionScore": 0.9824515186217997
+      },
+      {
+        "expected": "L0751043FEC4",
+        "group": "ESTABLISHED",
+        "imageFirstString": "L0751043FEC4",
+        "physicalIdentity": "62620-548_20260810154124_Slot01",
+        "selectionScore": 0.8477118354883663
+      },
+      {
+        "expected": "8365N004FEC6",
+        "group": "ESTABLISHED",
+        "imageFirstString": "8365N004FEC6",
+        "physicalIdentity": "Lot-62546-481-POST2_20260713155808_Slot20",
+        "selectionScore": 0.9636699050807227
+      },
+      {
+        "expected": "1484P068SUD6",
+        "group": "ESTABLISHED",
+        "imageFirstString": "1484P068SUD6",
+        "physicalIdentity": "62627-193_20260820124250_Slot01",
+        "selectionScore": 0.9513279495503746
+      },
+      {
+        "expected": "147JQ121SUE7",
+        "group": "ESTABLISHED",
+        "imageFirstString": "147JQ121SUE7",
+        "physicalIdentity": "62625-956_20260729122701_Slot17",
+        "selectionScore": 0.9469760155445939
+      },
+      {
+        "expected": "L0751037FEA2",
+        "group": "R18G",
+        "imageFirstString": "L0751037FEA2",
+        "physicalIdentity": "62620-548_20260810154124_Slot05",
+        "selectionScore": 0.8414583251470624
+      },
+      {
+        "expected": "1478T161SUG7",
+        "group": "R18G",
+        "imageFirstString": "1478T161SUG7",
+        "physicalIdentity": "62624-855_20260721120719_Slot08",
+        "selectionScore": 0.9745961988190179
+      },
+      {
+        "expected": "146XF113SUA5",
+        "group": "R18G",
+        "imageFirstString": "146XF113SUA5",
+        "physicalIdentity": "62625-907-POST-20260714155300_20260714155354_Slot22",
+        "selectionScore": 0.9554794142374784
+      },
+      {
+        "expected": "1484P102SUC0",
+        "group": "ESTABLISHED",
+        "imageFirstString": "1484P102SUC0",
+        "physicalIdentity": "62625-957_20260729124737_Slot24",
+        "selectionScore": 0.969321867822383
+      },
+      {
+        "expected": "9508R043FED4",
+        "group": "ESTABLISHED",
+        "imageFirstString": "9508R043FED4",
+        "physicalIdentity": "62619-451-PRE_20260723105349_Slot05",
+        "selectionScore": 0.9879781705954085
+      },
+      {
+        "expected": "1478T158SUC5",
+        "group": "ESTABLISHED",
+        "imageFirstString": "1478T158SUC5",
+        "physicalIdentity": "62624-855_20260721120719_Slot07",
+        "selectionScore": 0.9734826279999068
+      },
+      {
+        "expected": "146J7043SUE2",
+        "group": "ESTABLISHED",
+        "imageFirstString": "146J7043SUE2",
+        "physicalIdentity": "62618-252_20260715115352_Slot01",
+        "selectionScore": 0.9722858549726353
+      },
+      {
+        "expected": "148AW101SUC4",
+        "group": "R18F_BLIND",
+        "imageFirstString": "148AW101SUC4",
+        "physicalIdentity": "62633-726_20260818204139_Slot21",
+        "selectionScore": 0.9532609330087312
+      },
+      {
+        "expected": "2969P018FEE3",
+        "group": "R18F_BLIND",
+        "imageFirstString": "2969P018FEE3",
+        "physicalIdentity": "Lot-62546-481-POST2_20260713155808_Slot14",
+        "selectionScore": 0.9877684604303747
+      },
+      {
+        "expected": "1478T009SUA0",
+        "group": "R18F_BLIND",
+        "imageFirstString": "1478T009SUA0",
+        "physicalIdentity": "62624-869_20260720115731_Slot02",
+        "selectionScore": 0.9640824007616049
+      },
+      {
+        "expected": "147JQ120SUA5",
+        "group": "R18F_BLIND",
+        "imageFirstString": "147JQ120SUA5",
+        "physicalIdentity": "62625-956_20260729122701_Slot18",
+        "selectionScore": 0.9667039268145363
+      },
+      {
+        "expected": "148AW102SUG6",
+        "group": "DEVELOPMENT",
+        "imageFirstString": "148AW102SUG6",
+        "physicalIdentity": "62633-726_20260818204139_Slot20",
+        "selectionScore": 0.9365752089453245
+      },
+      {
+        "expected": "13DCK060SUF5",
+        "group": "DEVELOPMENT",
+        "imageFirstString": "13DCK060SUF5",
+        "physicalIdentity": "62546-481-POST_20260713041740_Slot22",
+        "selectionScore": 0.9505840620496798
+      },
+      {
+        "expected": "1480J017SUH0",
+        "group": "DEVELOPMENT",
+        "imageFirstString": "1480J017SUH0",
+        "physicalIdentity": "62627-098_20260729105955_Slot16",
+        "selectionScore": 0.9700952082651632
+      },
+      {
+        "expected": "148AW103SUD5",
+        "group": "WZ_INTEGRATION",
+        "imageFirstString": "148AW103SUD5",
+        "physicalIdentity": "62633-726_20260818204139_Slot19",
+        "selectionScore": 0.9524287762780597
+      },
+      {
+        "expected": "147Z6157SUA5",
+        "group": "WZ_INTEGRATION",
+        "imageFirstString": "147Z6157SUA5",
+        "physicalIdentity": "62623-743_20260720111120_Slot04",
+        "selectionScore": 0.9682191120501498
+      }
+    ]
+  },
+  "fullKlarfReady": false,
+  "hardcodeGate": {
+    "glyphPairExceptions": 0,
+    "notchDependency": false,
+    "resolverForbiddenDecisionTokenCount": 0,
+    "runtimeSources": [
+      {
+        "path": "work/OPENCV_SCRIBE_R18R/ArgosOpenCvScribeV1R18R.py",
+        "sha256": "3FB13496D8AE928D7FCE4EF782F055805D849B861A4C98D2D25EC690BBE3243B"
+      },
+      {
+        "path": "work/OPENCV_SCRIBE_R18R/Run-R18RReferenceIsolatedCorpus.py",
+        "sha256": "A19967F20404F18719ABA8856550632352FBE7D9109C986239B915238A04CD06"
+      }
+    ],
+    "syntheticDots": false,
+    "violations": 0
+  },
+  "invariants": {
+    "checksumRole": "VERIFY_IMAGE_FIRST_ONLY",
+    "externalAccess": false,
+    "fullWaferImagesRead": false,
+    "identityAccepted": false,
+    "readerCropReferencesModified": false
+  },
+  "knownHolds": {
+    "missingBodyReferenceLabels": "IOVY",
+    "singleLineageOnlyLabels": "WZ",
+    "slot08And10ExactRemoteReplay": "REQUIRED_BEFORE_RELEASE",
+    "slot25ExactPair": "PENDING_MISSING_LOCAL_PAIR"
+  },
+  "labelRenamingBehavioralInvariant": {
+    "allInvariant": true,
+    "bijectionOffset": 7,
+    "caseCount": 7,
+    "rows": [
+      {
+        "expectedRenamedWinner": "N",
+        "originalWinner": "G",
+        "referenceIndex": 384,
+        "renamedWinner": "N"
+      },
+      {
+        "expectedRenamedWinner": "Y",
+        "originalWinner": "R",
+        "referenceIndex": 411,
+        "renamedWinner": "Y"
+      },
+      {
+        "expectedRenamedWinner": "Y",
+        "originalWinner": "R",
+        "referenceIndex": 412,
+        "renamedWinner": "Y"
+      },
+      {
+        "expectedRenamedWinner": "Y",
+        "originalWinner": "R",
+        "referenceIndex": 413,
+        "renamedWinner": "Y"
+      },
+      {
+        "expectedRenamedWinner": "Y",
+        "originalWinner": "R",
+        "referenceIndex": 414,
+        "renamedWinner": "Y"
+      },
+      {
+        "expectedRenamedWinner": "R",
+        "originalWinner": "K",
+        "referenceIndex": 456,
+        "renamedWinner": "R"
+      },
+      {
+        "expectedRenamedWinner": "R",
+        "originalWinner": "K",
+        "referenceIndex": 464,
+        "renamedWinner": "R"
+      }
+    ]
+  },
+  "nextAction": "Do not use this superseded draft. Use work/OPENCV_SCRIBE_R18R/R18R_LOCAL_GATE.json and its exact SHA-256.",
+  "provider": {
+    "path": "work/OPENCV_SCRIBE_R18R/ArgosOpenCvScribeV1R18R.py",
+    "revision": "ARGOS_OPENCV_SCRIBE_V1R18R_RECIPROCAL_MARGIN_20260904",
+    "sha256": "3FB13496D8AE928D7FCE4EF782F055805D849B861A4C98D2D25EC690BBE3243B"
+  },
+  "publicationReady": false,
+  "runner": {
+    "path": "work/OPENCV_SCRIBE_R18R/Run-R18RReferenceIsolatedCorpus.py",
+    "revision": "ARGOS_OPENCV_SCRIBE_R18R_REFERENCE_ISOLATED_CORPUS_20260904",
+    "sha256": "A19967F20404F18719ABA8856550632352FBE7D9109C986239B915238A04CD06"
+  },
+  "schema": "argos_opencv_scribe_r18r_local_gate_v1",
+  "slot22": {
+    "checksumRole": "VERIFY_IMAGE_FIRST_ONLY",
+    "existingCropWrapper": {
+      "checksumValid": true,
+      "closeImageFirstStrings": [
+        "13DCK060SUF5"
+      ],
+      "hypothesisCount": 4,
+      "identityAccepted": false,
+      "imageFirstString": "13DCK060SUF5",
+      "proposedString": "13DCK060SUF5",
+      "referenceExclusion": {
+        "caseLineage": "62546-481|SLOT22",
+        "excludedPhysicalIdentities": [
+          "62546-481-POST_20260713041740_Slot22",
+          "62546_481_SLOT22"
+        ],
+        "excludedPrototypeCount": 13,
+        "identityNameAffectsSelection": false,
+        "mode": "SOURCE_HASH_AND_CANONICAL_LOT_SLOT_LINEAGE",
+        "sourceHashMatchedPhysicalIdentities": [
+          "62546-481-POST_20260713041740_Slot22"
+        ]
+      },
+      "state": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE"
+    },
+    "fixedGrid": {
+      "checksumValid": true,
+      "expected": "13DCK060SUF5",
+      "imageFirstString": "13DCK060SUF5",
+      "physicalIdentity": "62546-481-POST_20260713041740_Slot22",
+      "position5Arbitration": {
+        "appearanceDeficit": 0.1991815864215184,
+        "appearanceFirst": "R",
+        "appearanceGap": 0.032949352548327315,
+        "mode": "RUN_STRUCTURE_STRONG_CONSENSUS_OVERRIDE",
+        "overrideApplied": false,
+        "runStructureApplied": true,
+        "runStructureFirst": "K",
+        "runStructureFirstDistance": 0.40892804952913847,
+        "runStructureMargin": 0.28827856251640444,
+        "strongStructureAppearanceDeficit": 0.2041372924292154,
+        "strongStructureAppearanceRank": 12,
+        "strongStructureApplied": true,
+        "topologyFirst": "L",
+        "topologyFirstScore": 0.5696705006317688,
+        "topologyMargin": 0.007462466126976985
+      },
+      "proposedString": "13DCK060SUF5",
+      "referenceExclusion": {
+        "caseLineage": "62546-481|SLOT22",
+        "excludedPhysicalIdentities": [
+          "62546-481-POST_20260713041740_Slot22",
+          "62546_481_SLOT22"
+        ],
+        "excludedPrototypeCount": 13,
+        "identityNameAffectsSelection": false,
+        "mode": "SOURCE_HASH_AND_CANONICAL_LOT_SLOT_LINEAGE",
+        "sourceHashMatchedPhysicalIdentities": [
+          "62546-481-POST_20260713041740_Slot22"
+        ]
+      },
+      "selectionScore": 0.9176312092038174
+    },
+    "locallyAvailableExact": 1,
+    "locallyAvailableTotal": 1,
+    "missingExactLocalFixture": {
+      "bfSha256": "2AD91F530FEDCBA7B6F30FA43B0017991419F4D8772FACD5A1B8CD2BF659A738",
+      "dfSha256": "7472E279D26DA8E473C2E54D56208A6720FAC392B8510B0D2E303F19707B6A3A",
+      "expected": "13DCK076SUG1",
+      "physicalIdentity": "62546-481_20260707164232_Slot25",
+      "state": "MISSING_EXACT_PERMITTED_LOCAL_PAIR",
+      "truthMayNotSelectGlyph": true
+    }
+  },
+  "slot24": {
+    "ambiguityResolution": {
+      "applied": true,
+      "checksumUsed": false,
+      "comparisons": [
+        {
+          "checks": [
+            {
+              "dominated": true,
+              "positions": [
+                {
+                  "arbitrationModes": [
+                    "APPEARANCE",
+                    "APPEARANCE"
+                  ],
+                  "leaderCharacter": "4",
+                  "leaderMargin": 0.3931235896129808,
+                  "leaderMarginAdvantage": 0.20402669336441132,
+                  "passed": true,
+                  "position": 2,
+                  "rivalCharacter": "0",
+                  "rivalMargin": 0.18909689624856946
+                }
+              ]
+            }
+          ],
+          "rivalString": "103B0083SUE6"
+        }
+      ],
+      "method": "RECIPROCAL_DISPUTED_POSITION_APPEARANCE_MARGIN",
+      "minimumMargin": 0.02
+    },
+    "checksumMetadataAbsentDecisionEqual": true,
+    "checksumMetadataInvertedDecisionEqual": true,
+    "decisionCloseImageFirstStrings": [
+      "143B0083SUE6"
+    ],
+    "failClosed": {
+      "duplicatePosition": "HOLD_SCRIBE_MULTIPLE_CLOSE_IMAGE_FIRST_STRINGS",
+      "missingPosition": "HOLD_SCRIBE_MULTIPLE_CLOSE_IMAGE_FIRST_STRINGS",
+      "nonFiniteScore": "HOLD_SCRIBE_MULTIPLE_CLOSE_IMAGE_FIRST_STRINGS",
+      "structuralArbitration": "HOLD_SCRIBE_MULTIPLE_CLOSE_IMAGE_FIRST_STRINGS"
+    },
+    "hypothesisCount": 4,
+    "identityAccepted": false,
+    "imageFirstString": "143B0083SUE6",
+    "inputOrderPermutationCount": 24,
+    "labelBijectionInvariant": true,
+    "missingChecksumRejectedByRunner": true,
+    "normalChecksumValid": true,
+    "normalProposedString": "143B0083SUE6",
+    "rawCloseImageFirstStrings": [
+      "103B0083SUE6",
+      "143B0083SUE6"
+    ],
+    "selectionScore": 0.8622604309561613,
+    "state": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+    "structureEligibilityOnly": true
+  },
+  "state": "WITHDRAWN_R18R_LOCAL_GATE_SUPERSEDED_DRAFT",
+  "supersededBy": "work/OPENCV_SCRIBE_R18R/R18R_LOCAL_GATE.json",
+  "t7NearTieRegression": {
+    "appearanceFirst": "7",
+    "mode": "RUN_STRUCTURE_CONSENSUS_TIE_BREAK",
+    "physicalIdentity": "62624-855_20260721120719_Slot08",
+    "position": 5,
+    "runStructureFirst": "T",
+    "strongStructureApplied": false
+  },
+  "testSha256": "362B586F0F6C999D1651A118F1C9A619065D2979DB2DD379B6BF59F2BD158F62"
+}

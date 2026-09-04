@@ -10789,3 +10789,25 @@ than rerunning it.
   fresh namespace, renewed stop-loss review/intent, and a short request or
   staging layout whose longest actual ZIP member is below the effective
   200-character threshold before the first external write.
+
+## 2026-09-04 — A cloned test must adapt to the current runtime API outside the payload
+
+- Failure signature: the draft R18R reference-isolation test stopped before
+  reading images because it expected `physical_lineage_key` as a direct
+  export of the successor runner, while the current runner exposes that
+  inherited helper through its pinned R18P module wrapper.
+- Cause: the package-local test was mechanically cloned across a runner
+  architecture change and treated a predecessor test API as a production
+  compatibility requirement.
+- Mandatory preflight: run every cloned test against the exact successor API
+  before payload freeze. If only test wiring is stale, adapt the explicitly
+  package-excluded test to the real API; reject any proposed production alias,
+  checksum override, monkeypatch hook, fixture, or compatibility shim added
+  solely to make that test pass. Enumerate the final payload and reject all
+  `Test*.py`, fixtures, cache files, and injected test tokens before signing,
+  then repeat the same scan against the extracted final ZIP.
+- Recovery: the failing test remained a local draft and caused no image read,
+  package freeze, signature, publication, or external mutation. Keep runtime
+  bytes unchanged, replace only the package-excluded test wiring, rerun with
+  bytecode disabled, and require both the isolation gate and packaged-runtime
+  contamination gate before any successor can be signed.

@@ -1,0 +1,125 @@
+{
+  "schema": "argos_opencv_scribe_r18r_maintenance_definition_v1",
+  "revision": "R18R_RECIPROCAL_MARGIN_REFERENCE_ISOLATED_REVIEW_ONLY_20260904A",
+  "state": "DRAFT_UNPUBLISHED",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Invoke-R18RReferenceIsolatedLaunch.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-R18RReferenceIsolatedLaunch.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R18R.ps1",
+      "approvedPredecessorSha256": ["CC31B338074A0C00C53E8980F775C8D90280A4AF14DBC5D20A22AEB38F2147DA"],
+      "installedSha256": "CC31B338074A0C00C53E8980F775C8D90280A4AF14DBC5D20A22AEB38F2147DA",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\A2\\w\\ocv\\R18R1",
+      "mode": "CREATE_NEW_SCRIBE_ONLY_WORK_TREE",
+      "failureQuarantine": "D:\\A2\\w\\ocv\\R18R1.failed",
+      "payloadManifestSha256": "251F028EFC852B74FAB961CF92E36538D01345C58D03757DDFB81B5EA4EA141B"
+    },
+    {
+      "targetRoot": "D:\\A2\\o\\ocv\\R18R1",
+      "mode": "CREATE_NEW_RESUMABLE_REVIEW_ONLY_CORPUS_OUTPUT"
+    },
+    {
+      "mode": "START_ONE_OWNED_BACKGROUND_SCRIBE_CORPUS_WORKER",
+      "runnerSha256": "B826767EA21BB148DD30A719595B23DD818FD9CFC08B347FEAFD9FD4959F4E3C",
+      "workerRevision": "ARGOS_OPENCV_SCRIBE_R18R_REFERENCE_ISOLATED_CORPUS_20260904",
+      "maximumOwnedWorkerCount": 1,
+      "automaticRetryAllowed": false
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "D:\\A2\\o\\ocv\\R18R1\\LAUNCH.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_opencv_scribe_r18r_reference_isolated_launch_v1",
+      "requiredState": "PASS_R18R_REFERENCE_ISOLATED_WORKER_STARTED"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18R1\\RUNNING.json",
+      "mode": "WORKER_ATOMIC_PROGRESS",
+      "schema": "argos_opencv_scribe_r18p_reference_isolated_progress_v1"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18R1\\COMPLETE.json",
+      "mode": "WORKER_TERMINAL_WHEN_CORPUS_FINISHES",
+      "schema": "argos_opencv_scribe_r18p_reference_isolated_complete_v1",
+      "requiredState": "PASS_R18P_REFERENCE_ISOLATED_REVIEW_ONLY_COMPLETE",
+      "emitterNote": "The frozen R18P runner owns envelope serialization; the R18R wrapper changes OCR evaluation and revision only."
+    }
+  ],
+  "workerEnvelopeContract": {
+    "caseSchema": "argos_opencv_scribe_r18p_reference_isolated_case_v1",
+    "progressSchema": "argos_opencv_scribe_r18p_reference_isolated_progress_v1",
+    "completeSchema": "argos_opencv_scribe_r18p_reference_isolated_complete_v1",
+    "completeState": "PASS_R18P_REFERENCE_ISOLATED_REVIEW_ONLY_COMPLETE",
+    "serializationOwner": "FROZEN_R18P_RUNNER"
+  },
+  "sourceProcessingContract": {
+    "proposalRoot": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+    "proposalRootEvidenceSha256": "084B2698CDE397CE39B4BE315B9FDEE4F578B50B631192977B5BDEAE398BBB17",
+    "inputSelection": "CONFIGURATION_SELECTED_UNIQUE_BF_DF_SCRIBE_ORIENTED_DETECTOR_INPUT_PAIRS",
+    "configuredCaseCount": 21,
+    "uniqueSourcePairCount": 21,
+    "cohortSha256": "78771AA262F5663AAAB3BFCCFD3E7ACC0EC0AC337DDA879BA2AF7F29C271425C",
+    "reciprocalMarginControlExpectedTruthPresent": false,
+    "referenceExclusion": "SOURCE_HASH_AND_CANONICAL_LOT_SLOT_LINEAGE_BEFORE_OCR",
+    "existingCropOnly": true,
+    "wholeWaferFallbackAllowed": false,
+    "fullWaferImageReadAllowed": false,
+    "providerSha256": "51C95B3279D253EF717F663F3860CC6B4CA38517706E08E9FE2302BE02CD2BB5",
+    "providerRevision": "ARGOS_OPENCV_SCRIBE_V1R18R_RECIPROCAL_MARGIN_20260904",
+    "structuralProviderSha256": "AB20CFB25D223D40D31237118436446018AE213F800ECF1652213EB942C40DC1",
+    "frozenReaderSha256": "3AF68D778E297531DD527DD9D65C75FD17BD1FB9C2EC797CB840B10A674532AD",
+    "cropSweepSha256": "EF4C58589CA8885B5CBDE0A989D3F94EE8C447925818DC0FA4E50B26B87A8B9F",
+    "baseReferenceBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "supplementalReferenceManifestSha256": "FD60D494A25B489A8F1D8581217457AD67B02C98D54CA0A5400FAC0611537114",
+    "sourceImageBytesReadAllowed": true,
+    "opencvPixelDecodeRequired": true,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "syntheticDotReconstructionAllowed": false,
+    "notchGridOrLineAlignmentRequired": false,
+    "checksumVerificationRequired": true,
+    "checksumUsedForImageFirst": false,
+    "runtimeChecksumOverrideAllowed": false,
+    "runtimeThresholdOverrideAllowed": false,
+    "runtimeTestOrMonkeypatchHookAllowed": false,
+    "automaticIdentityAuthority": false,
+    "automaticReferenceAdmissionAllowed": false,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false,
+    "trainingAllowed": false,
+    "xmlAllowed": false,
+    "productionAllowed": false
+  },
+  "artifactPins": {
+    "launcherSha256": "CC31B338074A0C00C53E8980F775C8D90280A4AF14DBC5D20A22AEB38F2147DA",
+    "payloadManifestSha256": "251F028EFC852B74FAB961CF92E36538D01345C58D03757DDFB81B5EA4EA141B",
+    "cohortSha256": "78771AA262F5663AAAB3BFCCFD3E7ACC0EC0AC337DDA879BA2AF7F29C271425C",
+    "providerSha256": "51C95B3279D253EF717F663F3860CC6B4CA38517706E08E9FE2302BE02CD2BB5",
+    "runnerSha256": "B826767EA21BB148DD30A719595B23DD818FD9CFC08B347FEAFD9FD4959F4E3C"
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 300,
+    "launchConfirmationSeconds": 2,
+    "corpusWorkerPersistsAfterPortalResponse": true,
+    "corpusCompletionNotRequiredForLaunchResponse": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": ["START_ONE_OWNED_BACKGROUND_R18R_REFERENCE_ISOLATED_SCRIBE_OCR_WORKER"],
+  "publication": {
+    "maximumRequests": 1,
+    "retryAuthorized": false,
+    "explicitOperatorAuthorityPresent": false,
+    "freshSuccessorAfterSignedObservation": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
