@@ -1,8 +1,35 @@
-# Active ArgosEdgeLab state - OCV-03 O3F16 U10 annular edge-unwrapping handoff corrected - 2026-09-03
+# Active ArgosEdgeLab state - OCV-03 O3F16 U10 existing-result visual pass - 2026-09-03
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3F16 U10 existing-result visual pass / no tuning — 2026-09-03
+
+The existing `D:/O3F16U10` result was observed without rerunning it. One
+signed, first-attempt `DATA_PULL` returned the exact staged 49-file tree.
+`SUMMARY.json` SHA-256 is
+`2D1A46CBB7C69782CF60C621A4F746998F18F392F42748537EC2433DF792C378`;
+all 48 declared BF/DF assets match their summary byte counts and hashes.
+
+Every clean, mask, overlay, edge-review, normalized-review, and damage-review
+raster was inspected at original detail. All four cases show genuine
+path-centered straightening, retain the full 180-in/55-out radial damage
+context, keep local edge relief, and show no artificial review-sheet or 0/360
+stitch break. Holder-like structures remain visible but do not capture the
+accepted path. Imputed magenta segments remain ineligible as notch or damage
+evidence. Visual result: pass with zero detector errors; R10 stays unchanged
+and no successor detector package is warranted.
+
+Next detector-only work may use R10 as the annular reference for edge-damage
+or notch interpretation while preserving every gap as non-evidence. Add an
+explicit numeric 0/360 seam assertion before any broader corpus. This does not
+authorize T5, the frontside 978 corpus, provider activation, hold clearance,
+or scribe work.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U10_EXISTING_RESULT_VISUAL_PASS_NO_TUNING_CHECKPOINT_20260903.md`,
+SHA-256 `DCA428738FAEBF846D2F724925090264C07C902447F68D47BEBEB7F418FD509C`.
 
 ## OCV-03 O3F16 U10 annular edge-unwrapping handoff correction — 2026-09-03
 

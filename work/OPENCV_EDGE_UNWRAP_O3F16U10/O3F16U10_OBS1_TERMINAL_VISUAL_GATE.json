@@ -1,0 +1,253 @@
+{
+  "schema": "argos_ocv03_o3f16u10_obs1_terminal_visual_gate_v1",
+  "createdLocal": "2026-09-03T20:29:25-05:00",
+  "state": "PASS_EXISTING_U10_PROVENANCE_AND_VISUAL_UNWRAP_NO_TUNING_REQUIRED",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "activeStream": "O3F16_ANNULAR_EDGE_UNWRAP",
+  "handoff": {
+    "checkpointPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U10_ANNULAR_UNWRAP_HANDOFF_CORRECTION_CHECKPOINT_20260903.md",
+    "checkpointSha256": "8F00B84084FAEB89DCA551C73F6B76673BE69B7375F818A18BFB85DEE9196CD6",
+    "branch": "codex/fiducial-opencv-d-drive",
+    "requiredTip": "eaf3c867230d37569ab420f617c54b7ac5dd59e4",
+    "tipAndOriginVerifiedBeforeAction": true
+  },
+  "detector": {
+    "localCorePath": "work/O3F8/AnnularUnwrapDiagnosticOpenCvR1.py",
+    "localCoreSha256": "6B28925E04839D411838CB3D6C7D39E523AFC3AE89EDBAC83034351D27ED814C",
+    "installedCoreName": "AnnularUnwrapDiagnosticOpenCvR10.py",
+    "loaderPath": "work/O3F8/AnnularUnwrapDiagnosticOpenCvR11.py",
+    "loaderSha256": "DE8BD27DC9731AEE4739531F58F18B365FA1423A861DB4B90CD21A68C361C4FE",
+    "engineHashInReturnedSummaryMatched": true,
+    "detectorChangedAfterVisualReview": false,
+    "tuningRequired": false,
+    "numericThresholdRelaxationPerformed": false,
+    "postResultSelectorRelaxationPerformed": false
+  },
+  "observation": {
+    "classification": "OBSERVE",
+    "sourceResultRoot": "D:/O3F16U10",
+    "u10RerunPerformed": false,
+    "sourceFileCount": 49,
+    "sourceBytes": 97198423,
+    "stageGatePath": "work/OPENCV_EDGE_UNWRAP_O3F16U10/OBS1_U10_STAGE_RESULT.json",
+    "stageGateSha256": "AD3C59F2C817F0F69C6A200300427010E24DDF6D5F310B79E545905857509573",
+    "stagedArchivePath": "D:/KLARFExport/_ArgosReview/O3F16U10OBS1_20260903.zip",
+    "stagedArchiveBytes": 76479713,
+    "stagedArchiveSha256": "5947DD4FE271C2F275630679A8CB9FAF3523059C31D9ACBE63881980D991E5B4",
+    "sourceRootModified": false,
+    "sourceDeleted": false,
+    "existingTaskOrProcessActionPerformed": false,
+    "providerActivated": false
+  },
+  "portalRoundTrip": {
+    "requestId": "REQ_20260904T011547893Z_A5EB49CD10A1",
+    "requestDefinitionPath": "work/OPENCV_EDGE_UNWRAP_O3F16U10/OBS1_U10_ARCHIVE_PULL_DEFINITION.json",
+    "requestDefinitionSha256": "2D0321BC79BF122C8EEEB8D5B68AF6BA26F7C4BF31EE0B1794D16A34E5ACB71B",
+    "requestManifestSha256": "9CB73119430967977B0D2D8B893D9FE4376A8DC76AD59408C01EC8F50891F75D",
+    "requestSignatureSha256": "99A103577D6C1C1D1012149372765502A8C64A5121BC9E3A4B9D9FAD55F0BD95",
+    "requestZipBytes": 1166,
+    "requestZipSha256": "A325CE2DC80E7323DC4F913F4F997A9BADF99B1F2CCA620F6766BB309217220C",
+    "publicationCount": 1,
+    "requestRetryPerformed": false,
+    "prepublicationPathGatePath": "C:/O3F16U10OBS1A/archive/OBS1_PREPUBLICATION_PATH_GATE.json",
+    "prepublicationPathGateSha256": "E20EE58D67A43600B92C241CE6D5972556C50BB29D2F73D45C8E25E2F87D2E22",
+    "prepublicationPathGateState": "PASS_O3F16U10_OBS1_COMPLETE_ROUTE_PATH_GATE",
+    "maximumEffectivePathLength": 164,
+    "maximumComponentLength": 49,
+    "responseId": "R_61F3CAD40107_20260904011738470_715b8268",
+    "responseState": "PASS_DATA_PULL",
+    "responseZipBytes": 76513176,
+    "responseZipSha256": "AFE0B706C55295D6AAE0668AB56815586CAA94ED775B544D1FD3A605A1E80A04",
+    "responseManifestSha256": "6B8D95C634D7EAA1CE43AB09BB76AB37FD843F46E399BE0EA8120F474275D2B4",
+    "responseSignatureSha256": "79D3CE1344DD863F82ECA7448FF2AAA0FA208E9D032DDD3231005B00CC213CA6",
+    "resultSha256": "889F0A7CB0F830B08722C50E8A6CC022999E108D7FCA50751EAD00696F38AA9B",
+    "payloadZipBytes": 76491608,
+    "payloadZipSha256": "2909A41AA4D0949A287518CBF0C59CE4D329E8F0608DDA81E32C2588EA0AECAF",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "signatureVerified": true,
+    "returnedArchiveMatchedStagedBytes": true
+  },
+  "returnedResult": {
+    "localExtractionRoot": "C:/O3F16U10OBS1A/u10",
+    "fileCount": 49,
+    "totalBytes": 97198423,
+    "summaryPath": "SUMMARY.json",
+    "summaryBytes": 81358,
+    "summarySha256": "2D1A46CBB7C69782CF60C621A4F746998F18F392F42748537EC2433DF792C378",
+    "summarySchema": "argos_ocv03_annular_unwrap_diagnostic_v1",
+    "summaryState": "COMPLETE_DIAGNOSTIC_ONLY_ANNULAR_UNWRAP",
+    "requestedCaseCount": 4,
+    "completedCaseCount": 4,
+    "assetManifestRowCount": 48,
+    "uniqueAssetCount": 48,
+    "assetHashOrByteMismatchCount": 0,
+    "assetBytes": 97117065,
+    "assetRoleCounts": {
+      "clean": 8,
+      "mask": 8,
+      "overlay": 8,
+      "edge_review": 8,
+      "normalized_review": 8,
+      "damage_review": 8
+    },
+    "channels": {
+      "BF": 24,
+      "DF": 24
+    },
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false
+  },
+  "caseReview": [
+    {
+      "ordinal": 1,
+      "identity": "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot16|FRONT",
+      "safeAssetStem": "071610e058f9242d",
+      "BF": {
+        "sampleCount": 32361,
+        "measuredFraction": 0.8833472389604771,
+        "imputedColumnCount": 3775,
+        "rescuedOffLaneColumnCount": 28,
+        "largestGapColumns": 3692,
+        "largestGapDegrees": [178.89311207935478, 219.96477241123574],
+        "maximumCyclicJumpPx": 5.0,
+        "p95CyclicJumpPx": 1.0
+      },
+      "DF": {
+        "sampleCount": 32463,
+        "measuredFraction": 0.9073098604565197,
+        "imputedColumnCount": 3009,
+        "rescuedOffLaneColumnCount": 0,
+        "largestGapColumns": 225,
+        "largestGapDegrees": [204.51344607707236, 207.00859439977822],
+        "maximumCyclicJumpPx": 14.0,
+        "p95CyclicJumpPx": 0.8092163801193237
+      },
+      "visualDecision": "PASS_STRAIGHTENED_MEASURED_EDGE_WITH_BROAD_BF_NON_EVIDENCE_RETAINED",
+      "visualNotes": "The normalized measured edge is horizontal while the fixed-circle trace retains its radial drift. The broad BF 178.893-219.965 degree dark/occluded sector remains magenta, is not represented as measured evidence, and crosses review-sheet boundaries continuously. DF reacquires the same wafer-side edge across its shorter holder-like gaps. Full radial damage views retain jagged edge and bay context without clipping."
+    },
+    {
+      "ordinal": 2,
+      "identity": "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot17|FRONT",
+      "safeAssetStem": "12494dd9aa944c3a",
+      "BF": {
+        "sampleCount": 32425,
+        "measuredFraction": 0.9666306861989206,
+        "imputedColumnCount": 1082,
+        "rescuedOffLaneColumnCount": 24,
+        "largestGapColumns": 829,
+        "largestGapDegrees": [81.64811102544333, 90.85212027756361],
+        "maximumCyclicJumpPx": 5.0,
+        "p95CyclicJumpPx": 1.0
+      },
+      "DF": {
+        "sampleCount": 32494,
+        "measuredFraction": 0.8781928971502431,
+        "imputedColumnCount": 3958,
+        "rescuedOffLaneColumnCount": 0,
+        "largestGapColumns": 590,
+        "largestGapDegrees": [8.143041792330893, 14.679633163045485],
+        "maximumCyclicJumpPx": 11.0,
+        "p95CyclicJumpPx": 0.10256433486938477
+      },
+      "visualDecision": "PASS_HOLDER_LIKE_OCCLUSIONS_BRIDGED_WITH_CYCLIC_JOIN_CONTINUOUS",
+      "visualNotes": "The large rear-holder-like feature at approximately 82-91 degrees is bridged in magenta rather than traced. DF also preserves a lawful wraparound bridge across 359.258-4.487 degrees. Measured normalized edge sections remain level, local edge relief remains visible in the full radial views, and no 2048-column sheet join creates an artificial step."
+    },
+    {
+      "ordinal": 3,
+      "identity": "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot18|FRONT",
+      "safeAssetStem": "c4f7fc42efc2de1c",
+      "BF": {
+        "sampleCount": 32423,
+        "measuredFraction": 0.9301113407149246,
+        "imputedColumnCount": 2266,
+        "rescuedOffLaneColumnCount": 27,
+        "largestGapColumns": 2093,
+        "largestGapDegrees": [72.58180920951176, 95.82086790241495],
+        "maximumCyclicJumpPx": 7.0,
+        "p95CyclicJumpPx": 1.0
+      },
+      "DF": {
+        "sampleCount": 32498,
+        "measuredFraction": 0.8850698504523355,
+        "imputedColumnCount": 3735,
+        "rescuedOffLaneColumnCount": 0,
+        "largestGapColumns": 589,
+        "largestGapDegrees": [178.6706874269186, 185.19539663979322],
+        "maximumCyclicJumpPx": 9.0,
+        "p95CyclicJumpPx": 0.5
+      },
+      "visualDecision": "PASS_FIXTURE_SECTORS_EXCLUDED_AND_LOCAL_RELIEF_RETAINED",
+      "visualNotes": "Global circular rise and fall are removed in the normalized views while local scallops remain. Bright blade and round rear-holder-like structures do not capture the path. The large BF 72.582-95.821 degree low-evidence sector is honestly bridged, and both the 0/360 join and review-sheet joins remain visually continuous."
+    },
+    {
+      "ordinal": 4,
+      "identity": "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot20|FRONT",
+      "safeAssetStem": "e6dd795d71bc69f3",
+      "BF": {
+        "sampleCount": 32354,
+        "measuredFraction": 0.9908512085059035,
+        "imputedColumnCount": 296,
+        "rescuedOffLaneColumnCount": 40,
+        "largestGapColumns": 194,
+        "largestGapDegrees": [88.6703344254188, 90.82895468875564],
+        "maximumCyclicJumpPx": 7.0,
+        "p95CyclicJumpPx": 1.0
+      },
+      "DF": {
+        "sampleCount": 32463,
+        "measuredFraction": 0.8950497489449527,
+        "imputedColumnCount": 3407,
+        "rescuedOffLaneColumnCount": 3,
+        "largestGapColumns": 466,
+        "largestGapDegrees": [179.9500970335459, 185.11782644857223],
+        "maximumCyclicJumpPx": 18.0,
+        "p95CyclicJumpPx": 1.0
+      },
+      "visualDecision": "PASS_JAGGED_EDGE_AND_WRAP_CONTINUITY_RETAINED",
+      "visualNotes": "The normalized edge is globally level while the jagged physical edge around 0/360 and other local relief remain present as red support plus short magenta interpolation. Holder-like sectors near 90 degrees and broad rear-support regions do not capture the selected edge. No radial clipping, strip-boundary step, or wrap seam is visible."
+    }
+  ],
+  "crossCaseVisualGate": {
+    "caseCountInspected": 4,
+    "channelCountInspected": 8,
+    "assetCountInspectedAtOriginalDetail": 48,
+    "actualPathCenteredStraighteningPassed": true,
+    "chipoutEvidenceEnvelopeInwardPx": 180,
+    "chipoutEvidenceEnvelopeOutwardPx": 55,
+    "chipoutRetainingRadialWidthPassed": true,
+    "notchOrPhysicalEdgeReliefPreserved": true,
+    "artificialReviewStripStitchDiscontinuityObserved": false,
+    "cyclicZeroThreeSixtyDiscontinuityObserved": false,
+    "holderLikeContaminationCapturedAsMeasuredEdge": false,
+    "holderClassificationPerformed": false,
+    "holderInterpretationQualifier": "Visual correspondence only; U10 did not perform automatic holder classification.",
+    "imputedReferenceSegmentsEligibleAsNotchOrDamageEvidence": false,
+    "detectorErrorCount": 0,
+    "detectorTuneRequired": false,
+    "decision": "RETAIN_R10_UNCHANGED_AND_PRESERVE_MAGENTA_SEGMENTS_AS_NON_EVIDENCE"
+  },
+  "operatorStopLoss": {
+    "failureClass": "DETECTOR_OR_SUCCESSOR_DETECTOR_PACKAGE_EXECUTION_FAILURE",
+    "stopWhenFailureCountExceeds": 3,
+    "observedFailureCount": 0,
+    "triggered": false,
+    "observationDataPullPackageBuiltAndPublished": true,
+    "successorDetectorPackageBuildRequiredAfterReview": false
+  },
+  "authority": {
+    "full978Authorized": false,
+    "t5Resumed": false,
+    "scribeTouched": false,
+    "sourceImageMutationOrDeletionPerformed": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "productionRoutingEnabled": false,
+    "automaticHoldClearancePerformed": false,
+    "reviewOnly": true
+  },
+  "nextAction": "Use R10 unchanged as the diagnostic annular reference for the next detector-only edge-damage/notch interpretation step. Keep every imputed magenta interval ineligible as notch or damage evidence, preserve the 180-in/55-out review envelope, and add an explicit numeric 0/360 seam assertion in a future diagnostic revision before any broader corpus. Do not authorize the frontside 978 corpus or enter scribe from this worktree."
+}

@@ -4,6 +4,25 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 O3F16 U10 existing-result visual pass / no tuning — 2026-09-03
+
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U10_EXISTING_RESULT_VISUAL_PASS_NO_TUNING_CHECKPOINT_20260903.md`,
+  SHA-256 `DCA428738FAEBF846D2F724925090264C07C902447F68D47BEBEB7F418FD509C`.
+- Terminal visual gate:
+  `work/OPENCV_EDGE_UNWRAP_O3F16U10/O3F16U10_OBS1_TERMINAL_VISUAL_GATE.json`,
+  SHA-256 `7F0CDF880CD8A4E5FB348068830339486630C8AA6911F8CC1131C33DDFB46BF9`.
+- Existing U10 summary SHA-256 is
+  `2D1A46CBB7C69782CF60C621A4F746998F18F392F42748537EC2433DF792C378`;
+  4/4 cases and all 48 BF/DF assets were hash-verified and inspected at
+  original detail.
+- Visual result: real straightening, full 180-in/55-out damage context, no
+  artificial strip/wrap seam, and no holder-like path capture. No detector
+  error or tuning need was found; R10 remains unchanged.
+- Next detector-only work may interpret damage/notch evidence from measured
+  support only and should add a numeric 0/360 seam assertion. T5, full 978,
+  hold clearance, provider activation, and scribe remain unauthorized here.
+
 ## OCV-03 O3F16 U10 annular edge-unwrapping handoff correction — 2026-09-03
 
 - Current checkpoint:
