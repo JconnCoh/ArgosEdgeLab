@@ -1,0 +1,74 @@
+{
+  "schema": "argos_opencv_scribe_r18n_published_stop_blocked_v1",
+  "createdUtc": "2026-09-04T13:27:00Z",
+  "state": "HOLD_R18N_OWNED_WORKER_STOP_ACCESS_DENIED",
+  "disposition": "PENDING_GATE",
+  "requestId": "REQ_R18N1",
+  "publication": {
+    "state": "PASS_R18N_EXACT_SIGNED_MAINTENANCE_PUBLISHED_CREATE_NEW",
+    "publishedUtc": "2026-09-04T12:59:51.1709793Z",
+    "requestZipSha256": "198F365EF1B21739A9D6D7E67628F45751641ECE17112C01CE9A3F586431BEE4",
+    "publishGatePath": "work/OPENCV_SCRIBE_R18N/R18N_PUBLISH_GATE.json",
+    "publishGateSha256": "5696ED8317627214E999DCCF839B844B9C3C844A05058DE2B50F95F8F5CCD75F",
+    "maximumPublications": 1,
+    "retryAuthorized": false
+  },
+  "portalState": {
+    "shareProcessed": true,
+    "processedZipBytes": 150135,
+    "processedZipSha256": "198F365EF1B21739A9D6D7E67628F45751641ECE17112C01CE9A3F586431BEE4",
+    "matchingSignedTerminalResponseCollected": false,
+    "executionInferredFromProcessedState": false
+  },
+  "directLaunchObservation": {
+    "computerName": "A1025645101",
+    "launchState": "PASS_R18J_CORPUS_WORKER_STARTED",
+    "launchCreatedUtc": "2026-09-04T12:59:47.3974542Z",
+    "processId": 32132,
+    "processStartTimeUtc": "2026-09-04T12:59:45.3495262Z",
+    "runnerSha256": "E8C193024317C683EA0E8DC999F3D632BF113B65C1E6F528949AE5B33F83A069",
+    "outputRoot": "D:\\A2\\o\\ocv\\R18N1",
+    "workRoot": "D:\\A2\\w\\ocv\\R18N1",
+    "sourceRoot": "D:\\KLARFExport",
+    "proposalRoot": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+    "nonce": "b1943c8bb9ef4eb6b327bc0eb9d11dd7",
+    "commandSha256": "D02A0BD434049BB155164003CF0643FC50A22A54626D13A09FF42BA3B1013343"
+  },
+  "operatorObservations": [
+    {"caseId":"EED6B66B52679FAF","observation":"CROP_CORRECT"},
+    {"caseId":"333AFA446849C72F","observation":"CROP_INCORRECT"},
+    {"caseId":"AF1ABF1870CF145E","observation":"RESULT_NOT_YET_POPULATED"}
+  ],
+  "cropFailureLead": {
+    "cropSweepSha256": "EF4C58589CA8885B5CBDE0A989D3F94EE8C447925818DC0FA4E50B26B87A8B9F",
+    "angleOffsetsDegrees": [-6, 0, 6],
+    "normalOffsetsPixels": [0, 150, 300],
+    "windowWidth": 2000,
+    "windowHeight": 800,
+    "maximumDiscoveredRegions": 8,
+    "maximumPromotedRegions": 2,
+    "interpretation": "The one-sided bounded normal-offset sweep and top-two promotion are a credible localization-failure mechanism. This is diagnostic only and authorizes no code change."
+  },
+  "stopAttempt": {
+    "operatorRequestedStop": true,
+    "commandPath": "work/OPENCV_SCRIBE_R18N/Stop-R18NOwnedCorpusWorker.ps1",
+    "commandSha256": "5A6514A342E8D9627C91C0CFC1A707394E783A596CA65E5401347E4D7DF88573",
+    "targetProcessId": 32132,
+    "targetOwnershipBoundByLaunchJson": true,
+    "nonce": "9ff6b7306e2a424fb20fa8f73e6ad296",
+    "remoteState": "FAIL",
+    "exactFailure": "Cannot stop process \"python (32132)\" because of the following error: Access is denied",
+    "retryPerformed": false,
+    "unrelatedProcessesTouched": false
+  },
+  "requiredOperatorAction": "On JBOD A1025645101, use an elevated token to stop only PID 32132, then report completion for one read-only presence verification.",
+  "readerModified": false,
+  "referenceLibraryModified": false,
+  "sourceMutationPerformed": false,
+  "identityAccepted": false,
+  "trainingAuthorized": false,
+  "xmlAuthorized": false,
+  "productionAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
