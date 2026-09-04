@@ -1,0 +1,95 @@
+{
+  "schema": "argos_clone_literal_remediation_gate_v1",
+  "checkedUtc": "2026-09-04T14:03:22.8416918Z",
+  "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "mode": "GATE",
+  "manifest": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R18O\\R18O_CLONE_REMEDIATION.json",
+  "manifestSha256": "63A33D6562D390CEE1EEFF17E2B5DBFFE0CB6C0721A64DEF6B4FD129DB67F0D0",
+  "pairCount": 4,
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18N/Invoke-R18NCorpusLaunch.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18O/Invoke-R18OExistingCropLaunch.ps1",
+      "sourceSha256": "0B75F178A4D73668DBD76E0F07A820E16897DA40D0466A6FBA84806A8AFCD746",
+      "generatedSha256": "5E2D1E7FF5C45D530463C325492A646FB9F7DBD2E28728C9624D1061D86259EE",
+      "sourceRoots": [
+        "C:\\ProgramData",
+        "D:\\A2",
+        "D:\\AFCV1",
+        "D:\\KLARFExport",
+        "D:\\O2D5"
+      ],
+      "generatedRoots": [
+        "C:\\ProgramData",
+        "D:\\A2",
+        "D:\\AFCV1",
+        "D:\\KLARFExport",
+        "D:\\O2D5"
+      ],
+      "ruleCount": 5
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18N/Build-R18NRequest.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18O/Build-R18ORequest.ps1",
+      "sourceSha256": "0997194A0AFAE05D0D92725C20F5B839A343303C0CE6295AF77F7521ABDD3C5E",
+      "generatedSha256": "278115A93E766A67EE14960107B0971E8045904B7B3521C682C6D33D237F971F",
+      "sourceRoots": [
+        "C:\\ProgramData",
+        "C:\\Python314",
+        "C:\\R18J_CORPUS_FIXTURE",
+        "C:\\R18NFO",
+        "C:\\R18NFW",
+        "C:\\R18NP",
+        "C:\\R18NV",
+        "D:\\A2",
+        "U:\\ProjectPortalRO"
+      ],
+      "generatedRoots": [
+        "C:\\ProgramData",
+        "C:\\Python314",
+        "C:\\R18J_CORPUS_FIXTURE",
+        "C:\\R18OFO",
+        "C:\\R18OFW",
+        "C:\\R18OP",
+        "C:\\R18OV",
+        "D:\\A2",
+        "U:\\ProjectPortalRO"
+      ],
+      "ruleCount": 9
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18N/Publish-R18N.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18O/Publish-R18O.ps1",
+      "sourceSha256": "E1E4D36D1E304DB14D96835DD130698B4E76370E6F6086D4951A773516F5BEAF",
+      "generatedSha256": "9772AC0318588FEEE272921D39849E618B85F2B7D6ACB2E0A863938971357997",
+      "sourceRoots": [
+        "\\\\shm-cifs\\Department",
+        "C:\\ProgramData",
+        "D:\\A2",
+        "D:\\KLARFExport",
+        "U:\\ProjectPortalRO"
+      ],
+      "generatedRoots": [
+        "\\\\shm-cifs\\Department",
+        "C:\\ProgramData",
+        "D:\\A2",
+        "D:\\KLARFExport",
+        "U:\\ProjectPortalRO"
+      ],
+      "ruleCount": 5
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18N/Test-R18NExactPackagePaths.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18O/Test-R18OExactPackagePaths.ps1",
+      "sourceSha256": "5075A52EC8A6DCE435517A38EA83C6E176406023F0FCA46D7D1AC90590F9B057",
+      "generatedSha256": "D369A440F7D1A959FAAD5F0C9A1F6493266E508510ED7A4A369DB757A6370644",
+      "sourceRoots": [],
+      "generatedRoots": [],
+      "ruleCount": 1
+    }
+  ],
+  "violations": [],
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "evidenceWritten": true
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "createdUtc": "2026-09-04T13:56:00Z",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18N/Invoke-R18NCorpusLaunch.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18O/Invoke-R18OExistingCropLaunch.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\AFCV1","generatedRoot":"D:\\AFCV1","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\KLARFExport","generatedRoot":"D:\\KLARFExport","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\O2D5","generatedRoot":"D:\\O2D5","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18N/Build-R18NRequest.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18O/Build-R18ORequest.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\Python314","generatedRoot":"C:\\Python314","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\R18J_CORPUS_FIXTURE","generatedRoot":"C:\\R18J_CORPUS_FIXTURE","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\R18NFO","generatedRoot":"C:\\R18OFO","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18NFW","generatedRoot":"C:\\R18OFW","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18NP","generatedRoot":"C:\\R18OP","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18NV","generatedRoot":"C:\\R18OV","disposition":"REPLACED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18N/Publish-R18N.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18O/Publish-R18O.ps1",
+      "rootRules": [
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\KLARFExport","generatedRoot":"D:\\KLARFExport","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18N/Test-R18NExactPackagePaths.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18O/Test-R18OExactPackagePaths.ps1",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}
+      ]
+    }
+  ]
+}
