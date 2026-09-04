@@ -1,0 +1,46 @@
+{
+  "schema": "argos_opencv_scribe_r18r2_collector_tooling_gate_v1",
+  "checkedUtc": "2026-09-04T23:47:45Z",
+  "state": "PASS_R18R2_COLLECTOR_TOOLING_GATE",
+  "requestId": "REQ_R18R2",
+  "responseId": "R_932D503BB922_20260904234107020_0a55ed37",
+  "responseZipSha256": "D310854F22538041C1E8D1318A70F2EA7B54D02C912000124A15C4FD83B4B6A5",
+  "collector": {
+    "path": "work/OPENCV_SCRIBE_R18R2/Collect-R18R2LaunchResponse.ps1",
+    "sha256": "7A508816A5F2A873BC71B15AC09C121BAAB2DADE59A532701AA1E2C79983F1BF",
+    "sourceTemplatePath": "work/OPENCV_SCRIBE_R18G/Collect-R18GResponse.ps1",
+    "sourceTemplateSha256": "38F8A4129EC13F88C504CBFE4E5BBA52DE36FAB2065CF99D60776074B814D19B",
+    "sourceTemplateHarnessSafetyPassed": true,
+    "windowsPowerShell51ParserPassed": true,
+    "harnessSafetyPassed": true,
+    "wrapperSafetyPassed": true,
+    "nonMutatingPreflightPassed": true,
+    "preflightState": "PASS_R18R2_LAUNCH_RESPONSE_COLLECTION_PREFLIGHT"
+  },
+  "preaction": {
+    "path": "work/OPENCV_SCRIBE_R18R2/PREACTION_R18R2_LAUNCH_RESPONSE_COLLECTION.json",
+    "sha256": "5FAD63618FAA2E4E1FDCF7E3B3B34BFF838514F7569B8E3322ED6CD401E7E448",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION"
+  },
+  "cloneRemediation": {
+    "manifestPath": "work/OPENCV_SCRIBE_R18R2/R18R2_COLLECTOR_CLONE_REMEDIATION.json",
+    "manifestSha256": "14ACACA5DC43E4FC89B4F16221FFD1C613443645CE87CFC8BE2EE91292787D96",
+    "gatePath": "work/OPENCV_SCRIBE_R18R2/R18R2_COLLECTOR_CLONE_GATE.json",
+    "gateSha256": "7A6DF2EA76B838B7B9654831E14807BC9BC3AC08C3C488C842BF6C4B0545B953",
+    "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"
+  },
+  "collectionPathGate": {
+    "state": "PASS_PATH_BUDGET",
+    "maximumEffectiveLength": 177,
+    "reservedSuffixCharacters": 32,
+    "maximumComponentLength": 80
+  },
+  "outerExtractionRoot": "C:/R18R2R",
+  "metadataRoot": "work/OPENCV_SCRIBE_R18R2/collected_launch_response",
+  "signatureVerificationPendingCollection": false,
+  "localCollectionPerformed": false,
+  "requestRetried": false,
+  "sourceImagesRead": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

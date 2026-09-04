@@ -1,0 +1,71 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R18R2_LAUNCH_RESPONSE_COLLECTION_20260904A",
+  "createdUtc": "2026-09-04T23:43:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "COLLECT_ONLY_THE_ONE_EXACT_MATCHING_SIGNED_R18R2_LAUNCH_RESPONSE",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C",
+  "dependencies": [
+    {"path":"AGENTS.md","sha256":"BD81AF4FE798D2DAF3C728EC2C0939DD4925B86ED762EF59C2DAE84A54F5F7B8"},
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"D16FA7A8213551F1FD7290E88FC2925B66D8B7EC0A707FA649C4349569317182"},
+    {"path":"work/OPENCV_SCRIBE_R18R2/R18R2_SIGNED_UNPUBLISHED_READY_CHECKPOINT_20260904.md","sha256":"A7F9F2D05A4DEC2C3EC64D003D0C555A66ACBBFF4B824EB034062AB429385CCD"},
+    {"path":"work/OPENCV_SCRIBE_R18R2/R18R2_PUBLICATION_AUTHORITY.json","sha256":"4A32BF9E63179AF982F03F04402EFC91760C3D7708A09D80F7233120742C5258"},
+    {"path":"work/OPENCV_SCRIBE_R18R2/R18R2_PUBLICATION_TOOLING_GATE.json","sha256":"B6BDA610F512F59EA09EF40AECC4D1A08EE21E76947F970B4E75AC0CDC3A6589"},
+    {"path":"work/OPENCV_SCRIBE_R18R2/R18R2_PUBLISH_GATE.json","sha256":"41FEFC9846BFF325C1656B17C64F11835C3ECB9E92FEF063FB051706DAB32A29"},
+    {"path":"work/OPENCV_SCRIBE_R18R2/R18R2_RESPONSE_DISCOVERY_GATE.json","sha256":"B141669141DFF96AC06D07D666EC57A4B59D2146C6313A50F3A6AC9D2BAF9B9E"},
+    {"path":"work/OPENCV_SCRIBE_R18R2/Find-R18R2Response.ps1","sha256":"7590560204ECAE3F74A64264844635BDEAFEA82DEB01D42370371535087CEAF6"},
+    {"path":"work/OPENCV_SCRIBE_R18R2/R18R_FINAL_PACKAGE_GATE.json","sha256":"3970AE7F63E5309DD6425EEEC72865AF56215B4226398064F324162E3DB2F4A4"},
+    {"path":"work/OPENCV_SCRIBE_R18R2/final/REQ_R18R2.ready.zip","sha256":"E541EB7FCCD19A04BFE401D6FCFB70B7976C0F47E9F4F1AD8E1FCC1626EEF300"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer","sha256":"5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B"},
+    {"path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalResponse.ps1","sha256":"4AF5901A7B9DFFF5A4DAF128960173D67501ABF6FF87C586BA526643B1C1449C"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/OPENCV_SCRIBE_R17A/R17A_POWERSHELL_COLLECTION_CASE_GATE.json",
+    "sha256": "323068E3401E070FA3089D4734B2D304CA5BA4BC4E850A669D5B3FE691E3BE6D",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "requestId": "REQ_R18R2",
+    "responseId": "R_932D503BB922_20260904234107020_0a55ed37",
+    "responseZipSha256": "D310854F22538041C1E8D1318A70F2EA7B54D02C912000124A15C4FD83B4B6A5",
+    "maximumMatchingResponses": 1,
+    "requestRetryAuthorized": false,
+    "outerExtractionRoot": "C:/R18R2R",
+    "metadataRoot": "work/OPENCV_SCRIBE_R18R2/collected_launch_response",
+    "outputRootProvedByLaunch": "D:/A2/o/ocv/R18R2",
+    "sourceImageRead": false,
+    "sourceMutation": false,
+    "identityAcceptance": false,
+    "training": false,
+    "xml": false,
+    "production": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": ["REQ_R18R1"]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
