@@ -1,0 +1,56 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-04T03:05:00Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "R18M_FINAL_ZIP_PATH_ENUMERATION_20260904",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "matchingSignedTerminal": {
+    "path": "work/OPENCV_SCRIBE_R18M/R18M_SIGNED_TERMINAL_FAILURE_GATE.json",
+    "sha256": "6D80CED476B7504E86A948DA95F8273AD86ED7ADE0EB29EDD6256A976875FA43",
+    "signatureVerified": true
+  },
+  "observations": [
+    {
+      "field": "completeRouteGateMaximumPathLength",
+      "expected": 173,
+      "observed": 164
+    },
+    {
+      "field": "actualRejectedPayloadLeafLength",
+      "expected": 173,
+      "observed": 173
+    },
+    {
+      "field": "actualRejectedEffectiveLengthWithReserve",
+      "expectedMaximumExclusive": 200,
+      "observed": 205
+    },
+    {
+      "field": "workerStarted",
+      "expected": false,
+      "observed": false
+    },
+    {
+      "field": "sourceImagesRead",
+      "expected": false,
+      "observed": false
+    },
+    {
+      "field": "workOrOutputRootCreated",
+      "expected": false,
+      "observed": false
+    }
+  ],
+  "supportedRemedy": "B",
+  "supportedAction": "Use a fresh short request namespace, make the entrypoint defaults match its declared work/output roots, and derive the complete route gate from every actual final signed ZIP member at every extraction hop.",
+  "mutationsPerformed": false,
+  "sourceMutationPerformed": false,
+  "taskOrProcessActionPerformed": false,
+  "queueOrLedgerMutationPerformed": false,
+  "providerActivated": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

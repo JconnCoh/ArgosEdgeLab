@@ -1,0 +1,78 @@
+{
+  "schema": "argos_opencv_scribe_r18n_maintenance_definition_v1",
+  "revision": "R18N_FULL_KLARF_JBOD_REVIEW_ONLY_20260904A",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Invoke-R18NCorpusLaunch.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-R18NCorpusLaunch.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R18N.ps1",
+      "approvedPredecessorSha256": ["0B75F178A4D73668DBD76E0F07A820E16897DA40D0466A6FBA84806A8AFCD746"],
+      "installedSha256": "0B75F178A4D73668DBD76E0F07A820E16897DA40D0466A6FBA84806A8AFCD746",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\A2\\w\\ocv\\R18N1",
+      "mode": "CREATE_NEW_SCRIBE_ONLY_WORK_TREE",
+      "failureQuarantine": "D:\\A2\\w\\ocv\\R18N1.failed",
+      "payloadManifestSha256": "BF2D0E809915ADEB503E2B7ADEFB3DCAC30903025D851B26067C9FB5B90DC57D"
+    },
+    {"targetRoot":"D:\\A2\\o\\ocv\\R18N1","mode":"CREATE_NEW_RESUMABLE_REVIEW_ONLY_CORPUS_OUTPUT"},
+    {
+      "mode": "START_ONE_OWNED_BACKGROUND_SCRIBE_CORPUS_WORKER",
+      "runnerSha256": "E8C193024317C683EA0E8DC999F3D632BF113B65C1E6F528949AE5B33F83A069",
+      "automaticRetryAllowed": false
+    }
+  ],
+  "entryPointOutputs": [
+    {"path":"D:\\A2\\o\\ocv\\R18N1\\LAUNCH.json","mode":"CREATE_NEW","schema":"argos_opencv_scribe_r18j_corpus_launch_v1","requiredState":"PASS_R18J_CORPUS_WORKER_STARTED"},
+    {"path":"D:\\A2\\o\\ocv\\R18N1\\RUNNING.json","mode":"WORKER_ATOMIC_PROGRESS"},
+    {"path":"D:\\A2\\o\\ocv\\R18N1\\COMPLETE.json","mode":"WORKER_TERMINAL_WHEN_CORPUS_FINISHES","schema":"argos_opencv_scribe_r18j_corpus_complete_v1"}
+  ],
+  "sourceProcessingContract": {
+    "sourceRoot": "D:\\KLARFExport",
+    "proposalRoot": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+    "proposalRootEvidenceSha256": "084B2698CDE397CE39B4BE315B9FDEE4F578B50B631192977B5BDEAE398BBB17",
+    "inputSelection": "PAIRED_FRONTSIDE_BF_DF_FULL_WAFER_SOURCES",
+    "existingCropFirst": true,
+    "wholeWaferFallbackOnlyForMissingBlankOrStructurallyUnusableCrop": true,
+    "wholeWaferFallbackMethod": "BOUNDED_SOURCE_PIXEL_CROP_SWEEP_NO_NOTCH_GRID_OR_LINE_ALIGNMENT",
+    "providerSha256": "3AF68D778E297531DD527DD9D65C75FD17BD1FB9C2EC797CB840B10A674532AD",
+    "cropSweepSha256": "EF4C58589CA8885B5CBDE0A989D3F94EE8C447925818DC0FA4E50B26B87A8B9F",
+    "baseReferenceBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "supplementalReferenceManifestSha256": "FD60D494A25B489A8F1D8581217457AD67B02C98D54CA0A5400FAC0611537114",
+    "sourceImageBytesReadAllowed": true,
+    "opencvPixelDecodeRequired": true,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "syntheticDotReconstructionAllowed": false,
+    "notchGridOrLineAlignmentRequired": false,
+    "automaticIdentityAuthority": false,
+    "automaticReferenceAdmissionAllowed": false,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false,
+    "trainingAllowed": false,
+    "xmlAllowed": false,
+    "productionAllowed": false
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 300,
+    "launchConfirmationSeconds": 2,
+    "corpusWorkerPersistsAfterPortalResponse": true,
+    "corpusCompletionNotRequiredForLaunchResponse": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": ["START_ONE_OWNED_BACKGROUND_R18J_SCRIBE_CORPUS_WORKER"],
+  "publication": {
+    "maximumRequests": 1,
+    "retryAuthorized": false,
+    "explicitOperatorAuthorityPresent": false,
+    "freshSuccessorAfterSignedObservation": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
