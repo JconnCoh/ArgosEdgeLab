@@ -1,0 +1,80 @@
+{
+  "schema": "argos_opencv_scribe_job_v1",
+  "revision": "OCV02_R18I_62629_401_RESIST_DEVELOPMENT_20260903A",
+  "jobId": "R18I_62629_401_SLOT24_DEVELOPMENT",
+  "createdUtc": "2026-09-03T23:30:00Z",
+  "identity": {
+    "lotId": "62629-401",
+    "acquisitionId": "62629-401_20260902002921",
+    "slotId": "Slot24",
+    "physicalIdentity": "62629-401_20260902002921_Slot24"
+  },
+  "inputMode": "DEVELOPMENT_AUTO_LOCALIZED_WHOLE_IMAGE",
+  "rawSourceBinding": {
+    "state": "PASS_EXACT_FRONT_SIDE_BF_DF_SOURCE_HASHES_FROZEN",
+    "evidencePath": "work/OPENCV_SCRIBE_R18I/R18I_62629_401_SOURCE_HASH_GATE.json",
+    "evidenceSha256": "B125865BC44DEEA34AF8A82C31079D6169DCDF226A9671EAD309204C98178617",
+    "appearanceRegime": "OPERATOR_SUSPECTED_RESIST_DEVELOPMENT_OBSERVATION"
+  },
+  "inputs": {
+    "bf": {
+      "path": "U:\\ProjectPortalRO\\responses\\Lot_62629-401\\62629-401_20260902002921\\Slot24\\BrightfieldFrontsideWafer\\resizedImage\\62629-401_Slot24_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "canonicalProvenancePath": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs\\ProjectPortalRO\\responses\\Lot_62629-401\\62629-401_20260902002921\\Slot24\\BrightfieldFrontsideWafer\\resizedImage\\62629-401_Slot24_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "ioPathClass": "VERIFIED_PERSISTENT_INSPECTIONREVS_MAPPING",
+      "aliasName": "U:",
+      "sha256": "8EEF767A67DFDF78EE501489C5C61970AB60F0DB221C2EB792EAAF8F337059A6",
+      "bytes": 475379874,
+      "coordinateFrameId": "LOT62629_401_SLOT24_RAW_BRIGHTFIELD_FRONT_WAFER"
+    },
+    "df": {
+      "path": "U:\\ProjectPortalRO\\responses\\Lot_62629-401\\62629-401_20260902002921\\Slot24\\DarkfieldFrontsideWafer\\resizedImage\\62629-401_Slot24_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "canonicalProvenancePath": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs\\ProjectPortalRO\\responses\\Lot_62629-401\\62629-401_20260902002921\\Slot24\\DarkfieldFrontsideWafer\\resizedImage\\62629-401_Slot24_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+      "ioPathClass": "VERIFIED_PERSISTENT_INSPECTIONREVS_MAPPING",
+      "aliasName": "U:",
+      "sha256": "87DA35AF613BDC2E521EE1E916224D2FBAA54162345C9ADB0A1A9EEED753BA9A",
+      "bytes": 475379874,
+      "coordinateFrameId": "LOT62629_401_SLOT24_RAW_DARKFIELD_FRONT_WAFER"
+    }
+  },
+  "references": {
+    "manifestPath": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\SCRIBE_REVIEW_ONLY\\scratch\\SCRIBE_READER_V5_MERGED_REFERENCES_20260806T203000Z\\PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "manifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "supplementalManifestPath": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R18F\\reference_bank\\SUPPLEMENTAL_GLYPH_REFERENCE_MANIFEST.json",
+    "supplementalManifestSha256": "FD60D494A25B489A8F1D8581217457AD67B02C98D54CA0A5400FAC0611537114",
+    "excludedPhysicalIdentity": "62629-401_20260902002921_Slot24",
+    "roots": [
+      {
+        "relativePrefix": "glyphs",
+        "path": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\SCRIBE_REVIEW_ONLY\\scratch\\SCRIBE_READER_V5_MERGED_REFERENCES_20260806T203000Z\\glyphs"
+      },
+      {
+        "relativePrefix": "glyphs_v5_confirmed_20260806",
+        "path": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\SCRIBE_REVIEW_ONLY\\scratch\\SCRIBE_READER_V5_MERGED_REFERENCES_20260806T203000Z\\glyphs_v5_confirmed_20260806"
+      }
+    ]
+  },
+  "search": {
+    "expectedRegions": [],
+    "boundedExceptionSearch": true,
+    "maximumWorkingDimension": 1600,
+    "maximumCandidates": 24,
+    "orientationStepDegrees": 15,
+    "developmentMaximumRegions": 2,
+    "developmentMinimumLocalizationScore": 0.0,
+    "developmentMinimumBandWidthPixels": 500,
+    "developmentOcrRegionWidthPixels": 1600,
+    "developmentOcrRegionHeightPixels": 400,
+    "developmentMinimumObservedHeightRatio": 0.2061033678437273,
+    "developmentMinimumObservedWidthRatio": 0.5,
+    "developmentMaximumObservedWidthRatio": 1.25
+  },
+  "outputRoot": "C:\\R18I\\S24",
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false
+  }
+}

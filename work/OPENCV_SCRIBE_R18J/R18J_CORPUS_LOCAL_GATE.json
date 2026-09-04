@@ -1,0 +1,49 @@
+{
+  "schema": "argos_opencv_scribe_r18j_corpus_local_gate_v1",
+  "state": "PASS_R18J_CORPUS_LOCAL_GATE",
+  "createdUtc": "2026-09-04T01:40:00Z",
+  "physicalIdentity": "62629-401_20260902002921_Slot24",
+  "userConfirmedTruth": "143B0083SUE6",
+  "result": {
+    "completePath": "C:/R18JOR4/COMPLETE.json",
+    "completeSha256": "5DA9E83AA6E31504B3380CFE144DCB3A682AD476B7D0D8BEA92F3E38D5E72AA0",
+    "launchPath": "C:/R18JOR4/LAUNCH.json",
+    "launchSha256": "C6B69B91A88A3540D4AA24D9D91631615A21B468E0BF5EE955005ED2A2088962",
+    "launchState": "PASS_R18J_CORPUS_WORKER_STARTED",
+    "completeState": "PASS_R18J_FULL_KLARF_REVIEW_ONLY_COMPLETE",
+    "caseState": "HOLD_SCRIBE_MULTIPLE_CLOSE_IMAGE_FIRST_STRINGS",
+    "imageFirstString": "143B0083SUE6",
+    "selectionMode": "EXISTING_PROCESSOR_SCRIBE_CROP",
+    "wholeWaferFallbackUsed": false,
+    "closeImageFirstStrings": [
+      "103B0083SUE6",
+      "143B0083SUE6"
+    ],
+    "hypothesisCount": 4,
+    "identityAccepted": false
+  },
+  "implementation": {
+    "runnerPath": "work/OPENCV_SCRIBE_R18J/Run-R18JScribeCorpus.py",
+    "runnerSha256": "E8C193024317C683EA0E8DC999F3D632BF113B65C1E6F528949AE5B33F83A069",
+    "entryPointPath": "work/OPENCV_SCRIBE_R18J/Invoke-R18JCorpusLaunch.ps1",
+    "entryPointSha256": "00805DF38D1F78D576CE6245A5534E26E19706B1F02A08A65B67E2DBDD1BA24A",
+    "cropSweepPath": "work/OPENCV_SCRIBE_R18J/ArgosOpenCvScribeCropSweepR18J.py",
+    "cropSweepSha256": "EF4C58589CA8885B5CBDE0A989D3F94EE8C447925818DC0FA4E50B26B87A8B9F",
+    "providerPath": "work/OPENCV_SCRIBE_R18H/ArgosOpenCvScribeV1R18H.py",
+    "providerSha256": "3AF68D778E297531DD527DD9D65C75FD17BD1FB9C2EC797CB840B10A674532AD",
+    "readerModified": false,
+    "referenceLibraryModified": false,
+    "structureChoosesOcrChannelOrPolarity": false,
+    "syntheticDotReconstructionUsed": false,
+    "lineGridOrNotchAlignmentUsed": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "identityAcceptanceAuthorized": false,
+    "automaticReferenceAdmissionAuthorized": false,
+    "trainingAuthorized": false,
+    "activationAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false
+  }
+}

@@ -1041,6 +1041,18 @@ explicitly labeled display/detector variants. Start from the expected
 notch-relative location, but use a bounded exception search when the scribe is
 not present there.
 
+Never reconstruct, redraw, or synthesize scribe glyph dots by replacing
+absolute-intensity threshold components, blob detections, or connected-
+component centroids with artificial marks. Such a representation can omit
+real character strokes and invent or move apparent dots under resist, smear,
+or illumination variation. It is forbidden as OCR input, character-ranking or
+identity evidence, a reference or training source, a reviewer source layer, or
+validation evidence. Component analysis may still locate a candidate region,
+but the frozen reader must receive a provenance-bound crop or explicitly
+labeled nonsynthetic enhancement derived from the original raster pixels.
+Synthetic dot maps are diagnostic failures only and must never be admitted to
+the scribe corpus or used to change the reader.
+
 Use
 `work/SCRIBE_REVIEW_ONLY/SEMI_M12_SCRIBE_VALIDATION_METHOD.md` as the
 deterministic 12-character whole-string validation contract. Its source is

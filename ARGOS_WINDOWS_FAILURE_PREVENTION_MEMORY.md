@@ -1,5 +1,31 @@
 # Argos Windows/JBOD Failure-Prevention Memory
 
+### Portal package verification requires an idempotent installed hash for create-allowed changes
+
+- Signature: a newly signed `MAINTENANCE_PATCH` draft with `allowCreate=true`
+  and an empty `approvedPredecessorSha256` array is rejected by the canonical
+  local verifier with `Maintenance change lacks approved predecessor hashes.`
+- Cause: the canonical signed-package contract requires every maintenance
+  change to name at least one allowed installed hash even when an absent target
+  may be created.
+- Preflight: before the first signature, require every maintenance change to
+  contain a nonempty allowed-installed set. For a fresh create-only destination,
+  bind that set only to the exact target hash so the permitted states are
+  absent or byte-identical/idempotent; never invent or inherit an unrelated
+  predecessor hash.
+- Recovery: preserve the locally signed rejected namespace unchanged and do
+  not publish it. Record its manifest and signature hashes, create a fresh
+  request/staging namespace, update the exact definition/pre-action pins, and
+  rerun the canonical verifier before ZIP creation.
+- First observed: R18J local package build for
+  `REQ_20260904T014500000Z_R18J` on 2026-09-04. The rejected manifest SHA-256
+  is `7930497F843612DC342562EE48F38D93A60707BD75AF3F990BE390C2C0F22490`
+  and signature SHA-256 is
+  `9C9AAC22E145B82530A185185F76B1866A1028FC60F7BB6A34B8BEFDB13B5BD1`.
+  No ZIP was created, no request was published, and no JBOD, source, task,
+  process, queue, identity, reader, reference, XML, training, or production
+  state changed.
+
 ### Local OpenCV runs need a timeout derived from measured case duration
 
 - Signature: a frozen multi-case development runner is terminated by the
