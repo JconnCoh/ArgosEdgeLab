@@ -1,0 +1,72 @@
+{
+  "schema": "argos_ocv03_o3f16u10_handoff_correction_v1",
+  "state": "PASS_HANDOFF_STREAM_CORRECTED_EXISTING_U10_OBSERVATION_REQUIRED",
+  "disposition": "PENDING_GATE",
+  "correctedActiveStream": "O3F16_ANNULAR_EDGE_UNWRAP",
+  "supersededHandoff": {
+    "checkpointPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F8R13T5_TARGETED_COMPLETE_OVERLAY_ANALYSIS_NEXT_CHECKPOINT_20260903.md",
+    "checkpointSha256": "9E0E10DBEF2A66D9782621187432791F7FDE257AF254980E4464E853CF1202FD",
+    "reason": "The rollover selected the later T5 notch/topology record instead of preserving the operator's unfinished annular edge-unwrapping stream. The active annular detector files were ignored by /work/* and were therefore absent from the rollover commit.",
+    "t5EvidenceDeleted": false,
+    "t5EvidenceMayAuthorizeFull978": false
+  },
+  "pinnedDetector": {
+    "localCorePath": "work/O3F8/AnnularUnwrapDiagnosticOpenCvR1.py",
+    "localCoreSha256": "6B28925E04839D411838CB3D6C7D39E523AFC3AE89EDBAC83034351D27ED814C",
+    "installedCoreName": "AnnularUnwrapDiagnosticOpenCvR10.py",
+    "wrapperPath": "work/O3F8/AnnularUnwrapDiagnosticOpenCvR11.py",
+    "wrapperSha256": "DE8BD27DC9731AEE4739531F58F18B365FA1423A861DB4B90CD21A68C361C4FE",
+    "installRecordPath": "work/OPENCV_EDGE_UNWRAP_O3F16U10/Install-O3F16U10.ps1",
+    "installRecordSha256": "A92C651C2A64D23140231879929FD0C4845648E96266B7EC351CFC73097D70FC",
+    "readProjectionPath": "work/OPENCV_EDGE_UNWRAP_O3F16U10/Read-O3F16U10.ps1",
+    "readProjectionSha256": "F97D25C11F05C7871FF3DC3554A7EFFF67185E36B2EA2066C887FA05AA4D3F37",
+    "detectorChange": "Compute adaptive maxima, normalization, and support eligibility from the same plus-or-minus-12-pixel selectable lane; report rescued columns and largest imputed angular runs.",
+    "numericThresholdRelaxationPerformed": false,
+    "holderRuleChanged": false,
+    "notchSelectorChanged": false,
+    "smoothingChanged": false,
+    "evidenceEligibilityRelaxed": false
+  },
+  "frozenCohort": [
+    "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot16|FRONT",
+    "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot17|FRONT",
+    "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot18|FRONT",
+    "PatternedFront/Lot_62629-419_NotchBad_Hotspot/62629-419_20260824112405/Slot20|FRONT"
+  ],
+  "u8Predecessor": {
+    "outputRoot": "D:/O3F16U8",
+    "summarySha256": "BD2D48C793F1AC8A15FBA80A5CC679A469CB3942B1F0F12F2530293B906CF7DE",
+    "completedCaseCount": 4,
+    "completedChannelCount": 8,
+    "hashVerifiedReviewAssetCount": 48,
+    "longExcludedBfArcsObservedPx": [3692, 2093],
+    "candidateSelectionPerformed": false
+  },
+  "u10ExistingRun": {
+    "outputRoot": "D:/O3F16U10",
+    "sameFrozenFourWaferCohort": true,
+    "previouslyObservedComplete": true,
+    "rescuedBfColumnsPerWaferRange": [28, 40],
+    "largeGapPatternPreviouslyObserved": "Cases 2-4 cluster near 90 degrees in BF and DF; case 1 BF spans approximately 179-220 degrees with DF centered near 205.8 degrees; additional DF gaps cluster near 0 and 180 degrees.",
+    "summaryDirectlyRecollectedForThisGate": false,
+    "summarySha256": null,
+    "reviewAssetsDirectlyRecollectedForThisGate": false,
+    "rerunAuthorized": false
+  },
+  "nextAction": {
+    "classification": "OBSERVE",
+    "instruction": "Resume from the existing D:/O3F16U10 output without rerunning it. Use the unchanged recorded route once to return and hash-pin SUMMARY.json plus the existing narrow annular clean/mask/overlay assets. Inspect the four BF/DF edge strips for genuine straightened edge geometry, crop width sufficient for chipouts, notch/stitch discontinuities, and rear-holder contamination. Only after that visual gate may detector-only work continue. Do not return to T5 or authorize the 978 frontside corpus yet.",
+    "sourceImageReadAuthorized": false,
+    "existingResultReadAuthorized": true,
+    "existingTaskOrProcessActionAuthorized": false,
+    "providerActivationAuthorized": false,
+    "automaticHoldClearanceAuthorized": false,
+    "requestRetryAuthorized": false
+  },
+  "scribeOwnedBySeparateWorktree": true,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

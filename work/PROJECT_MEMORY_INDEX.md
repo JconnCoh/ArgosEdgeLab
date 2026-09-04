@@ -4,6 +4,23 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 O3F16 U10 annular edge-unwrapping handoff correction — 2026-09-03
+
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U10_ANNULAR_UNWRAP_HANDOFF_CORRECTION_CHECKPOINT_20260903.md`,
+  SHA-256 `8F00B84084FAEB89DCA551C73F6B76673BE69B7375F818A18BFB85DEE9196CD6`.
+- Handoff gate:
+  `work/OPENCV_EDGE_UNWRAP_O3F16U10/O3F16U10_HANDOFF_CORRECTION_GATE.json`,
+  SHA-256 `CD915D70AA873030620C01D62F2E791CA4885020D5035535C7C04F3DA8A55CCA`.
+- Corrected annular core SHA-256 is
+  `6B28925E04839D411838CB3D6C7D39E523AFC3AE89EDBAC83034351D27ED814C`;
+  R11 loader SHA-256 is
+  `DE8BD27DC9731AEE4739531F58F18B365FA1423A861DB4B90CD21A68C361C4FE`.
+- Resume from the existing `D:/O3F16U10` output without rerunning it. Return
+  and hash-pin its summary and existing narrow annular assets, then inspect all
+  four BF/DF strips. T5 is preserved as separate diagnostic history, but the
+  978 run is not authorized. This worktree does not perform scribe.
+
 ## OCV-03 O3F8 R13 T5 targeted complete / overlay analysis next — 2026-09-03
 
 - Current checkpoint:

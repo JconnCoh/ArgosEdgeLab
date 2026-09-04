@@ -1,8 +1,36 @@
-# Active ArgosEdgeLab state - OCV-03 O3F8 R13 T5 targeted complete / overlay analysis next - 2026-09-03
+# Active ArgosEdgeLab state - OCV-03 O3F16 U10 annular edge-unwrapping handoff corrected - 2026-09-03
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3F16 U10 annular edge-unwrapping handoff correction — 2026-09-03
+
+The prior rollover handoff was wrong: it selected the later O3F8 R13 T5
+notch/topology checkpoint even though the operator's unfinished stream was the
+O3F16 annular edge unwrap. The active annular files under `work/O3F8` were
+ignored by `/work/*` and therefore omitted from the rollover commit. They are
+now explicitly pinned. T5 evidence remains preserved as separate diagnostic
+history and does not authorize the 978-pair run.
+
+Current annular core SHA-256 is
+`6B28925E04839D411838CB3D6C7D39E523AFC3AE89EDBAC83034351D27ED814C`;
+the installed-name mapping is `AnnularUnwrapDiagnosticOpenCvR10.py`, with R11
+loader SHA-256
+`DE8BD27DC9731AEE4739531F58F18B365FA1423A861DB4B90CD21A68C361C4FE`.
+U8 remains frozen at `D:/O3F16U8`, summary SHA-256
+`BD2D48C793F1AC8A15FBA80A5CC679A469CB3942B1F0F12F2530293B906CF7DE`.
+The same four-wafer successor exists at `D:/O3F16U10`; do not rerun it.
+
+Next, use the unchanged recorded route once to return and hash-pin the existing
+U10 summary and narrow annular assets, then visually judge straightening,
+chipout-retaining radial width, notch/stitch discontinuities, and rear-holder
+contamination. Do not resume T5 or authorize the full 978 yet. Scribe remains
+owned by its separate worktree.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U10_ANNULAR_UNWRAP_HANDOFF_CORRECTION_CHECKPOINT_20260903.md`,
+SHA-256 `8F00B84084FAEB89DCA551C73F6B76673BE69B7375F818A18BFB85DEE9196CD6`.
 
 ## OCV-03 O3F8 R13 T5 targeted complete / overlay analysis next — 2026-09-03
 
