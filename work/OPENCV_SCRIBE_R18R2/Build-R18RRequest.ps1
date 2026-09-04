@@ -1,8 +1,7 @@
 #Requires -Version 5.1
 # Clone-audit historical rehearsal root only: U:\ProjectPortalRO is not accessed by the R18R build.
-# DRAFT only. This builder cannot reach signer access or create a package until
-# the R18R cohort/definition/path plan are frozen and exact preaction and
-# canonical-checksum gate hashes replace the deliberately empty pins below.
+# Fresh REQ_R18R2 successor after the signed local REQ_R18R1 build was
+# withdrawn before publication for a stale packaged-launcher manifest pin.
 [CmdletBinding()]
 param([switch]$Preflight, [switch]$Build)
 
@@ -42,8 +41,8 @@ function Write-JsonNew([string]$Path, [object]$Value, [int]$Depth = 32) {
 }
 
 $project = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
-$requestId = 'REQ_R18R1'
-$revision = 'R18R_RECIPROCAL_MARGIN_REFERENCE_ISOLATED_REVIEW_ONLY_20260904A'
+$requestId = 'REQ_R18R2'
+$revision = 'R18R_RECIPROCAL_MARGIN_REFERENCE_ISOLATED_REVIEW_ONLY_20260904B'
 $payloadRevision = $revision
 $entrypoint = Join-Path $PSScriptRoot 'Invoke-R18RReferenceIsolatedLaunch.ps1'
 $payloadManifestPath = Join-Path $PSScriptRoot 'R18R_PAYLOAD_MANIFEST.json'
@@ -61,10 +60,10 @@ $canonicalVectorPath = Join-Path $project 'work\SCRIBE_REVIEW_ONLY\SEMI_M12_VERI
 $r18qProviderPath = Join-Path $project 'work\OPENCV_SCRIBE_R18Q\ArgosOpenCvScribeV1R18Q.py'
 $r18rProviderPath = Join-Path $project 'work\OPENCV_SCRIBE_R18R\ArgosOpenCvScribeV1R18R.py'
 $r18rRunnerPath = Join-Path $project 'work\OPENCV_SCRIBE_R18R\Run-R18RReferenceIsolatedCorpus.py'
-$stageRoot = 'C:\R18RP'
+$stageRoot = 'C:\R18R2P'
 $readyRoot = Join-Path $stageRoot ($requestId + '.ready')
 $stageZip = Join-Path $stageRoot ($requestId + '.ready.zip')
-$verifyRoot = 'C:\R18RV'
+$verifyRoot = 'C:\R18R2V'
 $finalRoot = Join-Path $PSScriptRoot 'final'
 $finalPartial = Join-Path $PSScriptRoot 'final.partial'
 $zipName = $requestId + '.ready.zip'
@@ -81,14 +80,14 @@ $localPythonSha = 'D70FCED7F461F38F9F224D8673FB74E96E4FACB4283FF4E8697543B457FEA
 $localRefs = Join-Path $project 'work\OPENCV_SCRIBE_O2D5\final\extract\O2D5_REFS.zip'
 $localProposals = 'C:\R18J_CORPUS_FIXTURE\proposals'
 
-$entrypointSha = 'DE8A26F105D6F36208CBFB8CC262C836932C1DB3405812C1C9CF4C714328C1B3'
-$payloadManifestSha = 'DFEA7A6077FE17A0DF07E7DDE9041E717289BEC0CDA01989101B006E00A99E72'
-$definitionSha = 'F48805DC22C7CFF357DACA7EF6B0D57B66994B0BE18E40FA08452A3C179C654A'
-$cohortSha = 'D7149DB518D38E76BAA6EDBC64E1C1937C13F0D05479769D1A73A5B55027554E'
+$entrypointSha = 'A0283E05F71240A2ABA74E2BB5DCDB8C905E3769564BC5504CCCEC604258D6A3'
+$payloadManifestSha = '52114D3C344F9864918844A987B59984AB5578A076AE403701894A52DA551FD8'
+$definitionSha = 'FA9714B86ED327E33FB0F2FD02A9BDAE5E0A435D78D037B48AB131D59BADA399'
+$cohortSha = '7393A6CB84F3CF246DCA3751DFCCB76422198C25270CA2759FBF260D2DE8AF56'
 $localGateSha = '566EB33649697713F5E0EFD3E0F04F9861333103BBBC1C1BACFEDE3CD184C82A'
-$pathGateSha = 'A6F41E809F9A40197E36DC82D396F695B120E4DA8F0F35291EE4939DF9CFC94C'
-$cohortBindingGateSha = '77BABAD33560C48C311ACD4E497B09A560A422ACF3C75B6C45DA04D199B162B7'
-$referenceIsolationGateSha = 'AAAB160D516EC8DCF775E081996424E236E59B1C86BC3811D1392D189832AE82'
+$pathGateSha = '616761ADFAC1A764521A133A5614835CA54404839A1C219E6376B912C7D31BF9'
+$cohortBindingGateSha = '866AA2921A01BF6CE91CEDD71DE53841723131C60A6119B3BA36844B3328434D'
+$referenceIsolationGateSha = '9E645CCEE7BB4C62610AD1D93418985F2F3FB3A3DCD68007A3ECA56D30784471'
 $referenceGateTestSha = '657E7F780AA69D5E2AF0601C36A73424E387A6BB5735C051ED1B59D2EFB23EE5'
 $semanticBaselineSha = 'CE1EDE3164D204173DFDC17E9AF4A6F15E4C9C7B4DCD634CB00337A74784A0CD'
 $semiMethodSha = 'E5B78AFBA2614A3D4186298C84CF8E46F4816B0A9F3B2BC3DE751E854C014C2C'
@@ -101,7 +100,7 @@ $certificateSha = '2B434D0CF6A0D6D69AAE3D280032EFF00807D423CA3B3D7F2EFC1C6BB628B
 $testerSha = '6CA21D7DE97EDE88F2C41F91D5B7801C688982C8C5A422987EB9528E1E9A084B'
 $expectedLeafSetSha = 'CD49F02C4708E66DF6807D96A8E99E942536C150864F20794B6B852FBEB3E994'
 
-$preactionSha = '38A27C8642119D347DF3929077838806A2136C2797154A5C78B04D7EF44E984C'
+$preactionSha = 'CFF735C0D213367034673BFE0AB58DE5F733AD47AC1F4087AB95F4C24E325F1D'
 $canonicalChecksumGateSha = 'BB0F36B38A7CB697087B324CDE2037E8F2B8ED184BCE8DB71EA1BCB3DB787407'
 
 function Confirm-R18RRuntimeAllowlist(
@@ -343,7 +342,7 @@ Require (@($definition.allowedTaskActions).Count -eq 0 -and @($definition.allowe
 Require ([int]$definition.sourceProcessingContract.configuredCaseCount -eq 21 -and [int]$definition.sourceProcessingContract.uniqueSourcePairCount -eq 21 -and [string]$definition.sourceProcessingContract.cohortSha256 -eq $cohortSha) 'R18R bounded cohort contract changed.'
 Require ([string]$definition.sourceProcessingContract.providerSha256 -eq $r18rProviderSha -and [string]$definition.sourceProcessingContract.structuralProviderSha256 -eq $r18qProviderSha) 'R18R provider chain changed.'
 Require ([bool]$definition.sourceProcessingContract.checksumVerificationRequired -and -not [bool]$definition.sourceProcessingContract.checksumUsedForImageFirst -and -not [bool]$definition.sourceProcessingContract.runtimeChecksumOverrideAllowed -and -not [bool]$definition.sourceProcessingContract.runtimeThresholdOverrideAllowed -and -not [bool]$definition.sourceProcessingContract.runtimeTestOrMonkeypatchHookAllowed) 'R18R checksum or runtime-override boundary changed.'
-Require ([string]$definition.entryPointMutations[0].targetRoot -eq 'D:\A2\w\ocv\R18R1' -and [string]$definition.entryPointMutations[1].targetRoot -eq 'D:\A2\o\ocv\R18R1') 'R18R declared roots changed.'
+    Require ([string]$definition.entryPointMutations[0].targetRoot -eq 'D:\A2\w\ocv\R18R2' -and [string]$definition.entryPointMutations[1].targetRoot -eq 'D:\A2\o\ocv\R18R2') 'R18R declared roots changed.'
 Require (-not [bool]$definition.publication.explicitOperatorAuthorityPresent) 'R18R preparation cannot claim publication authority.'
 Require ([bool]$definition.reviewOnly -and -not [bool]$definition.productionRoutingEnabled -and -not [bool]$definition.sourceProcessingContract.automaticIdentityAuthority -and -not [bool]$definition.sourceProcessingContract.sourceMutationAllowed -and -not [bool]$definition.sourceProcessingContract.sourceDeletionAllowed) 'R18R authority changed.'
 
@@ -393,21 +392,6 @@ Require-Pin $cohortBindingGatePath $cohortBindingGateSha 'PASS_R18R_COHORT_BINDI
 $preactionResult = (& $preactionTool -AuditPath $historyAudit -ContractPath $preactionPath -ProjectRoot $project -Preflight | Out-String) | ConvertFrom-Json
 Require ([string]$preactionResult.state -eq 'PASS_ARGOS_ZERO_RECURRENCE_PREACTION') 'R18R preaction gate changed.'
 
-# Signing material is inaccessible until every gate above passes.
-Require-Pin $identityPath $identitySha
-Require-Pin $publicCertificate $certificateSha
-Require-Pin $packageTester $testerSha
-$identity = Get-Content -Raw -LiteralPath $identityPath | ConvertFrom-Json
-$thumbprint = ([string]$identity.thumbprint).Replace(' ','').ToUpperInvariant()
-$store = New-Object Security.Cryptography.X509Certificates.X509Store('My', [Security.Cryptography.X509Certificates.StoreLocation]::CurrentUser)
-$store.Open([Security.Cryptography.X509Certificates.OpenFlags]::ReadOnly)
-try {
-    $matches = @($store.Certificates | Where-Object { ([string]$_.Thumbprint).Replace(' ','').ToUpperInvariant() -eq $thumbprint })
-    Require ($matches.Count -eq 1 -and $matches[0].HasPrivateKey) 'R18R signer certificate or private key changed.'
-    $certificate = $matches[0]
-}
-finally { $store.Close(); $store.Dispose() }
-
 foreach ($path in @($stageRoot,$readyRoot,$stageZip,$verifyRoot,$finalRoot,$finalPartial,$finalGatePath)) {
     Require (-not (Test-Path -LiteralPath $path)) "R18R build fresh output exists: $path"
 }
@@ -427,6 +411,25 @@ foreach ($file in $payloadFiles) {
     $manifestFiles.Add([ordered]@{path=$packagePath;bytes=[int64]$file.bytes;sha256=[string]$file.sha256})
 }
 Require ($manifestFiles.Count -eq 29) 'R18R signed request payload-file cardinality changed.'
+$preSignaturePackagedPreflight = (& (Join-Path $readyRoot 'payload\Invoke-R18RReferenceIsolatedLaunch.ps1') -Preflight -Rehearsal -PayloadRoot (Join-Path $readyRoot 'payload') -WorkRoot 'C:\R18R2PFW' -OutputRoot 'C:\R18R2PFO' -ProposalRoot $localProposals -PythonPath $localPython -ExpectedPythonSha256 $localPythonSha -ReferenceBundlePath $localRefs -ExpectedComputerName $env:COMPUTERNAME | Out-String) | ConvertFrom-Json
+Require ([string]$preSignaturePackagedPreflight.state -eq 'PASS_R18R_REFERENCE_ISOLATED_LAUNCH_PREFLIGHT' -and -not [bool]$preSignaturePackagedPreflight.mutationsPerformed -and -not [bool]$preSignaturePackagedPreflight.processStarted -and [bool]$preSignaturePackagedPreflight.checksumVerificationRequired -and -not [bool]$preSignaturePackagedPreflight.checksumUsedForImageFirst -and [int]$preSignaturePackagedPreflight.runtimeOverrideCount -eq 0) 'R18R pre-signature packaged entrypoint preflight failed.'
+
+# Signing material remains inaccessible until the staged payload has executed
+# its exact non-mutating launcher preflight with every internal hash pin.
+Require-Pin $identityPath $identitySha
+Require-Pin $publicCertificate $certificateSha
+Require-Pin $packageTester $testerSha
+$identity = Get-Content -Raw -LiteralPath $identityPath | ConvertFrom-Json
+$thumbprint = ([string]$identity.thumbprint).Replace(' ','').ToUpperInvariant()
+$store = New-Object Security.Cryptography.X509Certificates.X509Store('My', [Security.Cryptography.X509Certificates.StoreLocation]::CurrentUser)
+$store.Open([Security.Cryptography.X509Certificates.OpenFlags]::ReadOnly)
+try {
+    $matches = @($store.Certificates | Where-Object { ([string]$_.Thumbprint).Replace(' ','').ToUpperInvariant() -eq $thumbprint })
+    Require ($matches.Count -eq 1 -and $matches[0].HasPrivateKey) 'R18R signer certificate or private key changed.'
+    $certificate = $matches[0]
+}
+finally { $store.Close(); $store.Dispose() }
+
 $created = [DateTimeOffset]::UtcNow
 $requestManifest = [ordered]@{
     schema='argos_project_portal_request_manifest_v1';requestId=$requestId;createdUtc=$created.ToString('o');expiresUtc=$created.AddHours(24).ToString('o');
@@ -471,7 +474,7 @@ $extractedRuntimeGate = Confirm-R18RRuntimeAllowlist 'EXTRACTED_FINAL_ZIP' $payl
 
 $priorFailureLeaf = 'payload/files/OPENCV_SCRIBE_R18F/reference_bank/SUPPLEMENTAL_GLYPH_REFERENCE_MANIFEST.json'
 Require ($actualLeaves -contains $priorFailureLeaf) 'R18R prior failing leaf is absent from exact enumeration.'
-$expandedRoots = @($readyRoot,$verifyRoot,'C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_R18R1.ready')
+$expandedRoots = @($readyRoot,$verifyRoot,'C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_R18R2.ready')
 $pathRows = New-Object Collections.Generic.List[object]
 foreach ($expandedRoot in $expandedRoots) {
     foreach ($leaf in $actualLeaves) {
@@ -481,7 +484,7 @@ foreach ($expandedRoot in $expandedRoots) {
         $pathRows.Add([pscustomobject]@{path=$candidate;length=$candidate.Length;effectiveLength=$candidate.Length+32;maximumComponentLength=$component})
     }
 }
-foreach ($workRoot in @('D:\A2\w\ocv\R18R1.partial','D:\A2\w\ocv\R18R1')) {
+foreach ($workRoot in @('D:\A2\w\ocv\R18R2.partial','D:\A2\w\ocv\R18R2')) {
     foreach ($file in $payloadFiles) {
         $candidate = [IO.Path]::Combine($workRoot, ([string]$file.installRelativePath).Replace('/','\'))
         $parts = @($candidate.Split([char[]]@('\','/'), [StringSplitOptions]::RemoveEmptyEntries))
@@ -493,7 +496,7 @@ $longest = @($pathRows | Sort-Object effectiveLength -Descending | Select-Object
 Require ($pathRows.Count -eq 147) 'R18R exact expanded path cardinality changed.'
 Require ([int]$longest.effectiveLength -eq 196 -and [int]$longest.effectiveLength -lt 200) "R18R exact final ZIP member path budget changed: $($longest.path)"
 Require ([int](($pathRows | Measure-Object maximumComponentLength -Maximum).Maximum) -le 80) 'R18R exact final ZIP member component exceeds path budget.'
-$packagedPreflight = (& (Join-Path $verifyRoot 'payload\Invoke-R18RReferenceIsolatedLaunch.ps1') -Preflight -Rehearsal -PayloadRoot (Join-Path $verifyRoot 'payload') -WorkRoot 'C:\R18RFW' -OutputRoot 'C:\R18RFO' -ProposalRoot $localProposals -PythonPath $localPython -ExpectedPythonSha256 $localPythonSha -ReferenceBundlePath $localRefs -ExpectedComputerName $env:COMPUTERNAME | Out-String) | ConvertFrom-Json
+$packagedPreflight = (& (Join-Path $verifyRoot 'payload\Invoke-R18RReferenceIsolatedLaunch.ps1') -Preflight -Rehearsal -PayloadRoot (Join-Path $verifyRoot 'payload') -WorkRoot 'C:\R18R2FW' -OutputRoot 'C:\R18R2FO' -ProposalRoot $localProposals -PythonPath $localPython -ExpectedPythonSha256 $localPythonSha -ReferenceBundlePath $localRefs -ExpectedComputerName $env:COMPUTERNAME | Out-String) | ConvertFrom-Json
 Require ([string]$packagedPreflight.state -eq 'PASS_R18R_REFERENCE_ISOLATED_LAUNCH_PREFLIGHT' -and -not [bool]$packagedPreflight.mutationsPerformed -and -not [bool]$packagedPreflight.processStarted -and [bool]$packagedPreflight.checksumVerificationRequired -and -not [bool]$packagedPreflight.checksumUsedForImageFirst -and [int]$packagedPreflight.runtimeOverrideCount -eq 0) 'R18R exact packaged entrypoint preflight failed.'
 
 [void](New-Item -ItemType Directory -Path $finalPartial)
@@ -536,19 +539,19 @@ Write-JsonNew $exactRouteGatePath $exactRouteGate 32
 $exactRouteGateSha = Get-Sha256 $exactRouteGatePath
 $finalGate = [ordered]@{
     schema='argos_opencv_scribe_r18r_final_package_gate_v1';createdUtc=[DateTime]::UtcNow.ToString('o');state='PASS_R18R_FINAL_PACKAGE_GATE';
-    requestId=$requestId;requestZip=('work/OPENCV_SCRIBE_R18R/final/'+$zipName);
+    requestId=$requestId;requestZip=('work/OPENCV_SCRIBE_R18R2/final/'+$zipName);
     requestZipBytes=[int64](Get-Item -LiteralPath $stageZip).Length;requestZipSha256=Get-Sha256 $stageZip;
     requestManifestSha256=Get-Sha256 $requestManifestPath;requestSignatureSha256=Get-Sha256 $signaturePath;
     entrypointSha256=$entrypointSha;payloadManifestSha256=$payloadManifestSha;definitionSha256=$definitionSha;
     cohortSha256=$cohortSha;localGateSha256=$localGateSha;pathPlanGateSha256=$pathGateSha;
     preactionSha256=$preactionSha;cohortBindingGateSha256=$cohortBindingGateSha;referenceIsolationGateSha256=$referenceIsolationGateSha;
-    completeRouteGateSha256=$exactRouteGateSha;packagedRuntimeGatePath='work/OPENCV_SCRIBE_R18R/final/R18R_PACKAGED_RUNTIME_GATE.json';
+    completeRouteGateSha256=$exactRouteGateSha;packagedRuntimeGatePath='work/OPENCV_SCRIBE_R18R2/final/R18R_PACKAGED_RUNTIME_GATE.json';
     packagedRuntimeGateSha256=$packagedRuntimeGateSha;semanticBaselineSha256=$semanticBaselineSha;
     semiM12MethodSha256=$semiMethodSha;canonicalVectorSha256=$canonicalVectorSha;canonicalVectorCount=19;canonicalVectorPassCount=19;
     payloadManifestFileCount=27;packagedPayloadFileCount=29;finalZipFileCount=31;engineSourceCount=15;
     hardCodedEngineLiteralCount=0;configurationLiteralLeakCount=0;runtimeTestArtifactCount=0;runtimeOverrideCount=0;
-    exactFinalZipExtractionPassed=$true;exactFinalZipSignaturePassed=$true;exactPackagedEntrypointPreflightPassed=$true;
-    packagedPreflightState=[string]$packagedPreflight.state;finalZipMemberSetSha256=$actualLeafSetSha;
+    exactFinalZipExtractionPassed=$true;exactFinalZipSignaturePassed=$true;preSignaturePackagedEntrypointPreflightPassed=$true;exactPackagedEntrypointPreflightPassed=$true;
+    preSignaturePackagedPreflightState=[string]$preSignaturePackagedPreflight.state;packagedPreflightState=[string]$packagedPreflight.state;finalZipMemberSetSha256=$actualLeafSetSha;
     expandedCandidateCount=147;maximumEffectiveLength=[int]$longest.effectiveLength;
     checksumVerificationRequired=$true;checksumUsedForImageFirst=$false;publicationAuthorized=$false;
     explicitPublishStillRequired=$true;maximumPublications=1;retryAuthorized=$false;targetExecuted=$false;sourceImagesRead=$false;

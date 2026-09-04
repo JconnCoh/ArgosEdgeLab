@@ -10811,3 +10811,23 @@ than rerunning it.
   bytes unchanged, replace only the package-excluded test wiring, rerun with
   bytecode disabled, and require both the isolation gate and packaged-runtime
   contamination gate before any successor can be signed.
+
+## 2026-09-04 — Freeze every internal payload hash pin before signing a package
+
+- Failure signature: the signed local `REQ_R18R1` build passed source gates,
+  signature verification, ZIP extraction, and runtime contamination checks,
+  then its exact packaged launcher preflight rejected `R18R payload manifest
+  changed` before any work/output root or process action.
+- Cause: freezing the cohort changed the payload-manifest hash, and the
+  manifest, definition, builder, and launcher cohort pin were rebound, but the
+  launcher's separate internal `$manifestSha` pin retained the draft hash.
+- Mandatory preflight: before signer access, enumerate every exact hash
+  literal in each packaged entrypoint and require each dependency pin to equal
+  the file that will enter the ZIP. Then run that exact entrypoint preflight
+  from a pre-signature staging copy. Signature and extraction verification do
+  not prove that an entrypoint's internal dependency pins are current.
+- Recovery: preserve the signed local `REQ_R18R1` ZIP and extraction as
+  withdrawn no-retry evidence. Do not publish it. Correct the draft launcher,
+  create a fresh request ID and fresh staging/verification/output roots,
+  regenerate every dependent hash and gate, and sign only the successor after
+  the pre-signature packaged-entrypoint rehearsal passes.

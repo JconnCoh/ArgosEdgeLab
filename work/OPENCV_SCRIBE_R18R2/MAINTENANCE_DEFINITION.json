@@ -1,6 +1,6 @@
 {
   "schema": "argos_opencv_scribe_r18r_maintenance_definition_v1",
-  "revision": "R18R_RECIPROCAL_MARGIN_REFERENCE_ISOLATED_REVIEW_ONLY_20260904A",
+  "revision": "R18R_RECIPROCAL_MARGIN_REFERENCE_ISOLATED_REVIEW_ONLY_20260904B",
   "state": "FROZEN_UNPUBLISHED",
   "targetRole": "JBOD",
   "jobClass": "MAINTENANCE_PATCH",
@@ -9,21 +9,21 @@
   "changes": [
     {
       "source": "payload/Invoke-R18RReferenceIsolatedLaunch.ps1",
-      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R18R.ps1",
-      "approvedPredecessorSha256": ["DE8A26F105D6F36208CBFB8CC262C836932C1DB3405812C1C9CF4C714328C1B3"],
-      "installedSha256": "DE8A26F105D6F36208CBFB8CC262C836932C1DB3405812C1C9CF4C714328C1B3",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R18R2.ps1",
+      "approvedPredecessorSha256": ["A0283E05F71240A2ABA74E2BB5DCDB8C905E3769564BC5504CCCEC604258D6A3"],
+      "installedSha256": "A0283E05F71240A2ABA74E2BB5DCDB8C905E3769564BC5504CCCEC604258D6A3",
       "allowCreate": true
     }
   ],
   "entryPointMutations": [
     {
-      "targetRoot": "D:\\A2\\w\\ocv\\R18R1",
+      "targetRoot": "D:\\A2\\w\\ocv\\R18R2",
       "mode": "CREATE_NEW_SCRIBE_ONLY_WORK_TREE",
-      "failureQuarantine": "D:\\A2\\w\\ocv\\R18R1.failed",
-      "payloadManifestSha256": "DFEA7A6077FE17A0DF07E7DDE9041E717289BEC0CDA01989101B006E00A99E72"
+      "failureQuarantine": "D:\\A2\\w\\ocv\\R18R2.failed",
+      "payloadManifestSha256": "52114D3C344F9864918844A987B59984AB5578A076AE403701894A52DA551FD8"
     },
     {
-      "targetRoot": "D:\\A2\\o\\ocv\\R18R1",
+      "targetRoot": "D:\\A2\\o\\ocv\\R18R2",
       "mode": "CREATE_NEW_RESUMABLE_REVIEW_ONLY_CORPUS_OUTPUT"
     },
     {
@@ -36,18 +36,18 @@
   ],
   "entryPointOutputs": [
     {
-      "path": "D:\\A2\\o\\ocv\\R18R1\\LAUNCH.json",
+      "path": "D:\\A2\\o\\ocv\\R18R2\\LAUNCH.json",
       "mode": "CREATE_NEW",
       "schema": "argos_opencv_scribe_r18r_reference_isolated_launch_v1",
       "requiredState": "PASS_R18R_REFERENCE_ISOLATED_WORKER_STARTED"
     },
     {
-      "path": "D:\\A2\\o\\ocv\\R18R1\\RUNNING.json",
+      "path": "D:\\A2\\o\\ocv\\R18R2\\RUNNING.json",
       "mode": "WORKER_ATOMIC_PROGRESS",
       "schema": "argos_opencv_scribe_r18p_reference_isolated_progress_v1"
     },
     {
-      "path": "D:\\A2\\o\\ocv\\R18R1\\COMPLETE.json",
+      "path": "D:\\A2\\o\\ocv\\R18R2\\COMPLETE.json",
       "mode": "WORKER_TERMINAL_WHEN_CORPUS_FINISHES",
       "schema": "argos_opencv_scribe_r18p_reference_isolated_complete_v1",
       "requiredState": "PASS_R18P_REFERENCE_ISOLATED_REVIEW_ONLY_COMPLETE",
@@ -67,7 +67,7 @@
     "inputSelection": "CONFIGURATION_SELECTED_UNIQUE_BF_DF_SCRIBE_ORIENTED_DETECTOR_INPUT_PAIRS",
     "configuredCaseCount": 21,
     "uniqueSourcePairCount": 21,
-    "cohortSha256": "D7149DB518D38E76BAA6EDBC64E1C1937C13F0D05479769D1A73A5B55027554E",
+    "cohortSha256": "7393A6CB84F3CF246DCA3751DFCCB76422198C25270CA2759FBF260D2DE8AF56",
     "reciprocalMarginControlExpectedTruthPresent": false,
     "referenceExclusion": "SOURCE_HASH_AND_CANONICAL_LOT_SLOT_LINEAGE_BEFORE_OCR",
     "existingCropOnly": true,
@@ -100,9 +100,9 @@
     "productionAllowed": false
   },
   "artifactPins": {
-    "launcherSha256": "DE8A26F105D6F36208CBFB8CC262C836932C1DB3405812C1C9CF4C714328C1B3",
-    "payloadManifestSha256": "DFEA7A6077FE17A0DF07E7DDE9041E717289BEC0CDA01989101B006E00A99E72",
-    "cohortSha256": "D7149DB518D38E76BAA6EDBC64E1C1937C13F0D05479769D1A73A5B55027554E",
+    "launcherSha256": "A0283E05F71240A2ABA74E2BB5DCDB8C905E3769564BC5504CCCEC604258D6A3",
+    "payloadManifestSha256": "52114D3C344F9864918844A987B59984AB5578A076AE403701894A52DA551FD8",
+    "cohortSha256": "7393A6CB84F3CF246DCA3751DFCCB76422198C25270CA2759FBF260D2DE8AF56",
     "providerSha256": "51C95B3279D253EF717F663F3860CC6B4CA38517706E08E9FE2302BE02CD2BB5",
     "runnerSha256": "B826767EA21BB148DD30A719595B23DD818FD9CFC08B347FEAFD9FD4959F4E3C"
   },
