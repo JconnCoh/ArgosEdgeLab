@@ -1,0 +1,33 @@
+{
+  "schema": "argos_r18j2_post_failure_status_complete_route_gate_v1",
+  "createdUtc": "2026-09-04T02:04:31.2758984Z",
+  "state": "PASS_R18J2_POST_FAILURE_STATUS_COMPLETE_ROUTE_GATE",
+  "requestId": "REQ_20260904T021000000Z_R18J2OBS",
+  "jobClass": "STATUS",
+  "definitionPath": "work/OPENCV_SCRIBE_R18J/R18J2_POST_FAILURE_STATUS_DEFINITION.json",
+  "reservedSuffixCharacters": 32,
+  "warningEffectiveLength": 200,
+  "hardStopEffectiveLength": 230,
+  "maximumComponentLength": 80,
+  "maximumObservedComponentLength": 51,
+  "maximumEffectiveLength": 167,
+  "routeRows": [
+    {"hop":"laptop_stage","root":"C:\\R18J2O1","maximumEffectiveLength":110},
+    {"hop":"engineering_share_request","root":"U:\\ProjectPortalRO\\requests","maximumEffectiveLength":112},
+    {"hop":"gateway_request_receive","root":"C:\\APR\\S\\requests","maximumEffectiveLength":92},
+    {"hop":"gateway_share_staging","root":"C:\\ProgramData\\ArgosProjectPortalRO\\share\\staging","maximumEffectiveLength":124},
+    {"hop":"gateway_share_archive","root":"C:\\ProgramData\\ArgosProjectPortalRO\\share\\request_archive","maximumEffectiveLength":132},
+    {"hop":"jbod_endpoint_work","root":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\work","maximumEffectiveLength":128},
+    {"hop":"jbod_response_partial","root":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\responses\\partial","maximumEffectiveLength":167},
+    {"hop":"jbod_response_ready","root":"C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\responses\\ready","maximumEffectiveLength":155},
+    {"hop":"jbod_response_sender_sent","root":"C:\\ProgramData\\ArgosProjectPortalRO\\response_sender\\sent","maximumEffectiveLength":140},
+    {"hop":"gateway_response_receive","root":"C:\\APR\\S\\responses\\receive","maximumEffectiveLength":110},
+    {"hop":"gateway_response_archive","root":"C:\\APR\\S\\responses\\archive","maximumEffectiveLength":110},
+    {"hop":"engineering_share_response","root":"U:\\ProjectPortalRO\\responses","maximumEffectiveLength":112},
+    {"hop":"laptop_response_extract","root":"C:\\R18J2O1R","maximumEffectiveLength":103}
+  ],
+  "environmentInventoryEnabled": false,
+  "imageBytesRead": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "argos_clone_literal_remediation_gate_v1",
+  "checkedUtc": "2026-09-04T02:08:21.4365146Z",
+  "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "mode": "GATE",
+  "manifest": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R18J\\R18J2_POST_FAILURE_STATUS_CLONE_REMEDIATION.json",
+  "manifestSha256": "D92F3E243741C3D60C444AE4736E4D60E07AC7C3B12DF697D03EAAF7A36E5788",
+  "pairCount": 1,
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_SLOT22_MARKED_PULL/Invoke-Slot22MarkedMetadataRequest.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18J/Publish-R18J2PostFailureStatus.ps1",
+      "sourceSha256": "059123E3254B2B4196CBBC9F79E1C472499BC0B61CD4E5659DDAAC64BEFAD96A",
+      "generatedSha256": "9A002B02BCC0638F181B2A51EFAD589BFBF5872C398461DB74070070BF20A997",
+      "sourceRoots": [
+        "\\\\shm-cifs\\Department",
+        "C:\\APR",
+        "C:\\ProgramData",
+        "C:\\S22M1",
+        "C:\\S22M1R",
+        "U:\\ProjectPortalRO"
+      ],
+      "generatedRoots": [
+        "\\\\shm-cifs\\Department",
+        "C:\\R18J2O1",
+        "U:\\ProjectPortalRO"
+      ],
+      "ruleCount": 6
+    }
+  ],
+  "violations": [],
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "evidenceWritten": true
+}

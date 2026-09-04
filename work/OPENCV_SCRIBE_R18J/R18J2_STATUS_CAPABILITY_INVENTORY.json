@@ -1,0 +1,27 @@
+{
+  "schema": "argos_endpoint_read_only_capability_inventory_v1",
+  "createdUtc": "2026-09-04T02:07:00Z",
+  "state": "PASS_ENDPOINT_READ_ONLY_CAPABILITY_INVENTORY",
+  "endpointWorkerSha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+  "routes": [
+    {
+      "type": "STATUS",
+      "jobClass": "STATUS",
+      "capabilities": [
+        "READ_PROCESSOR_CONFIG_JSON_STATE",
+        "READ_INSTALLED_PROCESSOR_HASHES"
+      ],
+      "installedCodeChange": false,
+      "imageRead": false,
+      "sourceMutation": false
+    }
+  ],
+  "capabilityProof": {
+    "signedResponseResultPath": "work/OPENCV_SCRIBE_SLOT22_MARKED_PULL/metadata_response/R_9D03623E2FC6_20260902001636908_a563741d.ready/RESULT.json",
+    "signedResponseResultSha256": "B2A105E58FA5A4484D2E19C3814E0F4576118AA921C6FD94CC938676DB260231",
+    "observedProcessorConfigPath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json",
+    "observedProcessorConfigSchema": "argos_jbod_all_wafer_processor_config_v3"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
