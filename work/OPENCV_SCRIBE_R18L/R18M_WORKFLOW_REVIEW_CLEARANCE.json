@@ -1,0 +1,37 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-09-04T02:32:00Z",
+  "state": "PASS_R18M_WORKFLOW_REVIEW_CLEARANCE",
+  "incidentId": "R18J2_PROPOSAL_ROOT_PREMISE_20260904",
+  "signedPremiseFailureCount": 2,
+  "failureEvidence": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18J/R18J2_SIGNED_TERMINAL_FAILURE_GATE.json",
+      "sha256": "2907832D0C9475DF66A60A428FCE8D3094D45EA485B907877226DD7A9C51AE98"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18L/R18L_SIGNED_TERMINAL_FAILURE_GATE.json",
+      "sha256": "DDB962620207A13B5580416837A26EF8155A2DFC4E71177B90B0932E24BDB37C"
+    }
+  ],
+  "postSecondFailureObservation": {
+    "path": "work/OPENCV_SCRIBE_R18L/R18L_POST_FAILURE_INVOCATION_OBSERVATION.json",
+    "sha256": "AB5B6325CD206260AE13DD76BD2776AA39FBB4D12186EEA375B2EBD7540CE476"
+  },
+  "reviewFindings": [
+    "R18J2 failed because the entrypoint default named a nonexistent proposal root.",
+    "A fresh signed STATUS response proved PROCESSOR_CONFIG.json.stateRoot is C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2.",
+    "R18L carried the corrected proposal root only in a manifest contract field, but the portal does not translate that field into a command-line argument.",
+    "R18L's unchanged entrypoint therefore used its old default and failed at the same preflight assertion before worker start."
+  ],
+  "rootCause": "The corrected live root was not embedded in the actual no-argument entrypoint default used by the endpoint.",
+  "authorizedCorrection": "In a fresh R18M namespace, change only Invoke-R18JCorpusLaunch.ps1 parameter ProposalRoot default from D:\\AFCV1\\review\\identity\\proposals to C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals, then rerun all exact local and publication gates.",
+  "readerChangesAuthorized": false,
+  "cropChangesAuthorized": false,
+  "referenceChangesAuthorized": false,
+  "workerChangesAuthorized": false,
+  "singleMutationAttemptAuthorized": true,
+  "automaticRetryAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

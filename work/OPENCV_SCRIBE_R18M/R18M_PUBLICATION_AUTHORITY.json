@@ -1,0 +1,33 @@
+{
+  "schema": "argos_opencv_scribe_r18m_publication_authority_v1",
+  "createdUtc": "2026-09-04T02:35:00Z",
+  "state": "PASS_R18M_PUBLICATION_AUTHORITY",
+  "operatorAuthority": [
+    "PUBLISH",
+    "If corrected cropping returns Slot24 truth 143B0083SUE6, proceed to the full KLARF decipher on JBOD.",
+    "go"
+  ],
+  "slot24Truth": "143B0083SUE6",
+  "postSecondFailureObservation": {
+    "path": "work/OPENCV_SCRIBE_R18L/R18L_POST_FAILURE_INVOCATION_OBSERVATION.json",
+    "sha256": "AB5B6325CD206260AE13DD76BD2776AA39FBB4D12186EEA375B2EBD7540CE476"
+  },
+  "workflowReviewClearance": {
+    "path": "work/OPENCV_SCRIBE_R18L/R18M_WORKFLOW_REVIEW_CLEARANCE.json",
+    "sha256": "4954AD4E53DA319812206DC0E5074EF644316AB19D33ECDAD3363166A29EA238"
+  },
+  "freshNamespace": "R18M",
+  "shortRequestId": "REQ_R18M_20260904A",
+  "singleChangedByteScope": "Invoke-R18MCorpusLaunch.ps1 ProposalRoot default only",
+  "maximumRequests": 1,
+  "retryAuthorized": false,
+  "readerChangesAuthorized": false,
+  "cropChangesAuthorized": false,
+  "referenceChangesAuthorized": false,
+  "identityAcceptanceAuthorized": false,
+  "trainingAuthorized": false,
+  "xmlAuthorized": false,
+  "productionAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,94 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-04T02:33:00Z",
+  "incidentId": "R18J2_PROPOSAL_ROOT_PREMISE_20260904",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 2,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": true,
+    "failureEvidence": [
+      {
+        "path": "work/OPENCV_SCRIBE_R18J/R18J2_SIGNED_TERMINAL_FAILURE_GATE.json",
+        "sha256": "2907832D0C9475DF66A60A428FCE8D3094D45EA485B907877226DD7A9C51AE98",
+        "state": "FAILED"
+      },
+      {
+        "path": "work/OPENCV_SCRIBE_R18L/R18L_SIGNED_TERMINAL_FAILURE_GATE.json",
+        "sha256": "DDB962620207A13B5580416837A26EF8155A2DFC4E71177B90B0932E24BDB37C",
+        "state": "FAILED"
+      }
+    ],
+    "postFailureObservation": {
+      "path": "work/OPENCV_SCRIBE_R18L/R18L_POST_FAILURE_INVOCATION_OBSERVATION.json",
+      "sha256": "AB5B6325CD206260AE13DD76BD2776AA39FBB4D12186EEA375B2EBD7540CE476"
+    },
+    "workflowReviewClearance": {
+      "path": "work/OPENCV_SCRIBE_R18L/R18M_WORKFLOW_REVIEW_CLEARANCE.json",
+      "sha256": "4954AD4E53DA319812206DC0E5074EF644316AB19D33ECDAD3363166A29EA238"
+    }
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": ["START_ONE_OWNED_BACKGROUND_R18J_SCRIBE_CORPUS_WORKER"],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_SCRIBE_R18J/R18J2_STATUS_ENDPOINT_WORKER_EVIDENCE.json",
+      "sha256": "71D5747EB28E94837FCACD72000AE8028A6C0F394C6DDEE379EC24A25AAFF85A"
+    },
+    "installedConfigEvidence": {
+      "path": "work/OPENCV_SCRIBE_R18J/collected_status_response/RESULT.json",
+      "sha256": "36B5FF455963AFCF2CB7733B2B2CFFEEF9F204116C8B459FFFFEA34F07CB9056"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_SCRIBE_R18J/R18J2_STATUS_CAPABILITY_INVENTORY.json",
+      "sha256": "562D324FD8EC6D5D08F26D81DC73241EB6FB0B22F7B096C37720416123FA92C9"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+      "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [
+      {
+        "sourcePath": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\PROCESSOR_CONFIG.json",
+        "sourceSchema": "argos_jbod_all_wafer_processor_config_v3",
+        "selector": "stateRoot",
+        "uniquenessKey": "path",
+        "maximumRows": 1
+      }
+    ],
+    "requestedCapabilities": ["READ_PROCESSOR_CONFIG_JSON_STATE"],
+    "requestedFields": ["stateRoot"],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_SCRIBE_R18L/R18L_POST_FAILURE_INVOCATION_OBSERVATION.json",
+      "sha256": "AB5B6325CD206260AE13DD76BD2776AA39FBB4D12186EEA375B2EBD7540CE476"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

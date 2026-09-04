@@ -1,0 +1,62 @@
+{
+  "schema": "argos_clone_literal_remediation_gate_v1",
+  "checkedUtc": "2026-09-04T02:40:43.0264050Z",
+  "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "mode": "GATE",
+  "manifest": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R18M\\R18M_CLONE_REMEDIATION.json",
+  "manifestSha256": "713853627FD8EFCB350607F3998DC6F4A4D7E37C313976CB4340725E6F5C7769",
+  "pairCount": 2,
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18J/Invoke-R18JCorpusLaunch.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18M/Invoke-R18MCorpusLaunch.ps1",
+      "sourceSha256": "00805DF38D1F78D576CE6245A5534E26E19706B1F02A08A65B67E2DBDD1BA24A",
+      "generatedSha256": "52249A9DF21D0B9D655A970B6E098771EB4838B8F56F56BCBFA27685591A7C54",
+      "sourceRoots": [
+        "D:\\A2",
+        "D:\\AFCV1",
+        "D:\\KLARFExport",
+        "D:\\O2D5"
+      ],
+      "generatedRoots": [
+        "C:\\ProgramData",
+        "D:\\A2",
+        "D:\\AFCV1",
+        "D:\\KLARFExport",
+        "D:\\O2D5"
+      ],
+      "ruleCount": 5
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18L/Build-R18LRequest.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18M/Build-R18MRequest.ps1",
+      "sourceSha256": "58A8547E2E58EF7FD9079DC21D4672A49E836C31C503999C2EE479BD21960FE1",
+      "generatedSha256": "566EBCBA86CC8F1460A7B8D066B6FB1829122D7474D3CEB64EA97800EA681D01",
+      "sourceRoots": [
+        "C:\\ProgramData",
+        "C:\\Python314",
+        "C:\\R18J_CORPUS_FIXTURE",
+        "C:\\R18LFO",
+        "C:\\R18LFW",
+        "C:\\R18LP",
+        "C:\\R18LV",
+        "U:\\ProjectPortalRO"
+      ],
+      "generatedRoots": [
+        "C:\\ProgramData",
+        "C:\\Python314",
+        "C:\\R18J_CORPUS_FIXTURE",
+        "C:\\R18MFO",
+        "C:\\R18MFW",
+        "C:\\R18MP",
+        "C:\\R18MV",
+        "U:\\ProjectPortalRO"
+      ],
+      "ruleCount": 8
+    }
+  ],
+  "violations": [],
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "evidenceWritten": true
+}

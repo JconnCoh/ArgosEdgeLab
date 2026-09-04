@@ -1,0 +1,63 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-04T02:31:00Z",
+  "state": "PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId": "R18J2_PROPOSAL_ROOT_PREMISE_20260904",
+  "requestId": "REQ_R18L_20260904A",
+  "responseId": "R_0BAA46B74576_20260904022907025_f2db8854",
+  "exactSources": [
+    {
+      "sourcePath": "work/OPENCV_SCRIBE_R18L/signed_request_evidence/PORTAL_REQUEST_MANIFEST.json",
+      "sourceSchema": "argos_project_portal_request_manifest_v1",
+      "selector": "sourceProcessingContract.proposalRoot",
+      "uniquenessKey": "requestId",
+      "maximumRows": 1,
+      "sha256": "71A47924E44F0BFF786B67FB583ED0044ED56F68D1713522A0A82E00A3692FB2"
+    },
+    {
+      "sourcePath": "work/OPENCV_SCRIBE_R18L/signed_request_evidence/Invoke-R18JCorpusLaunch.ps1",
+      "sourceSchema": "powershell_entrypoint",
+      "selector": "param.ProposalRoot.default",
+      "uniquenessKey": "sha256",
+      "maximumRows": 1,
+      "sha256": "00805DF38D1F78D576CE6245A5534E26E19706B1F02A08A65B67E2DBDD1BA24A"
+    },
+    {
+      "sourcePath": "work/OPENCV_SCRIBE_R18L/collected_response/MAINTENANCE.stderr.txt",
+      "sourceSchema": "exact_endpoint_stderr",
+      "selector": "first_line",
+      "uniquenessKey": "responseId",
+      "maximumRows": 1,
+      "sha256": "DDFF1D4DAA1DCFDC2ED1FF98793A7ED4C0EBE75482018443DD4C381DD0F32B85"
+    }
+  ],
+  "expectedObserved": [
+    {
+      "field": "signedManifest.sourceProcessingContract.proposalRoot",
+      "expected": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+      "observed": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+      "match": true
+    },
+    {
+      "field": "signedEntrypoint.param.ProposalRoot.default",
+      "expectedForSuccessfulNoArgumentPortalInvocation": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+      "observed": "D:\\AFCV1\\review\\identity\\proposals",
+      "match": false
+    },
+    {
+      "field": "signedEndpointResponse.exactMissingPath",
+      "expectedIfManifestFieldWereTranslatedToArgument": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+      "observed": "D:\\AFCV1\\review\\identity\\proposals",
+      "match": false
+    }
+  ],
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "mutationsPerformed": false,
+  "observationConclusion": "The endpoint does not translate sourceProcessingContract.proposalRoot into an entrypoint parameter. Successful no-argument invocation requires the observed proposal root to be the entrypoint default itself.",
+  "eligibleCorrection": "Create a fresh entrypoint namespace changing only the ProposalRoot default; retain the reader, crop sweep, worker, payload files, source/output policies, and review-only authority unchanged.",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

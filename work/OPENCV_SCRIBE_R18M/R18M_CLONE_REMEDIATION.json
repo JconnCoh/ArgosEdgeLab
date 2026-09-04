@@ -1,0 +1,31 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "createdUtc": "2026-09-04T02:36:30Z",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18J/Invoke-R18JCorpusLaunch.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18M/Invoke-R18MCorpusLaunch.ps1",
+      "rootRules": [
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\AFCV1","generatedRoot":"D:\\AFCV1","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\KLARFExport","generatedRoot":"D:\\KLARFExport","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\O2D5","generatedRoot":"D:\\O2D5","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"","generatedRoot":"C:\\ProgramData","disposition":"ADDED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18L/Build-R18LRequest.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18M/Build-R18MRequest.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\Python314","generatedRoot":"C:\\Python314","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\R18J_CORPUS_FIXTURE","generatedRoot":"C:\\R18J_CORPUS_FIXTURE","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\R18LFO","generatedRoot":"C:\\R18MFO","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18LFW","generatedRoot":"C:\\R18MFW","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18LP","generatedRoot":"C:\\R18MP","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18LV","generatedRoot":"C:\\R18MV","disposition":"REPLACED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    }
+  ]
+}
