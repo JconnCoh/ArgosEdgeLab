@@ -1,8 +1,31 @@
-# Active ArgosEdgeLab state - OCV-03 O3F16 U12 launch terminal / archive pull ready - 2026-09-04
+# Active ArgosEdgeLab state - OCV-03 O3F16 U12 visual hold / U13 local ready - 2026-09-04
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3F16 U12 visual hold / U13 local ready — 2026-09-04
+
+The first-attempt U12 DATA_PULL returned the exact R12 archive and verified all
+80 declared assets. Ultra review confirms one-pixel numeric wrap continuity and
+no artificial stitching, but U12 remains visually held: its magenta line draws
+held interpolation through unsupported sectors, the narrow strip clips wider
+notch/fixture context, and notch/holder geometry is not classified.
+
+R13 SHA-256
+`35940B211AEB51898B7BA9F279004D404D1C0AF2013B933414D1F58B30EF7748`
+keeps R12 tracking and thresholds unchanged. It adds review-only CLAHE, clean
+236-row full-band context, red measured points only, and a separate held-column
+bar/mask. Its exact eight-channel local gate passes and all 16 full/edge review
+sheets were inspected at original detail.
+
+Next, run exact R13 once through the unchanged portal route into fresh
+`D:/O3F16U13`, then pull, hash-verify, and inspect its complete four-case output.
+No retry. POST2 and the exact genuine microchipout lot remain later gates.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U12_VISUAL_HOLD_O3F16U13_LOCAL_READY_CHECKPOINT_20260904.md`,
+SHA-256 `CBB4B1A155CB212873BB05CD114F8DC2F3119A014A33066DFB91E0D63BDE89F8`.
 
 ## OCV-03 O3F16 U12 launch terminal / archive pull ready — 2026-09-04
 

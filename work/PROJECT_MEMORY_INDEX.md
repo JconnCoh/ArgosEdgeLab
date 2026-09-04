@@ -4,6 +4,25 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 O3F16 U12 visual hold / U13 local ready — 2026-09-04
+
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U12_VISUAL_HOLD_O3F16U13_LOCAL_READY_CHECKPOINT_20260904.md`,
+  SHA-256 `CBB4B1A155CB212873BB05CD114F8DC2F3119A014A33066DFB91E0D63BDE89F8`.
+- U12 pull terminal visual gate:
+  `work/OPENCV_EDGE_UNWRAP_O3F16U12/O3F16U12_PULL_TERMINAL_VISUAL_GATE.json`,
+  SHA-256 `F41EA5ADDAC954299971BD733775D4D023F97F8519826DBA10531F63D62214F4`.
+- U12 provenance and all 80 assets pass; visual approval is held because held
+  interpolation was drawn as a path and notch/holder sectors are unclassified.
+- R13 SHA-256 is
+  `35940B211AEB51898B7BA9F279004D404D1C0AF2013B933414D1F58B30EF7748`.
+  Its eight-channel local render gate
+  `1E5CEAE8319BD183682E4E981715BEE210793CD84EFA8DB6EA31FF9B5C61E852`
+  passes without changing R12 tracking, thresholds, or selectors.
+- Next: one fresh R13 four-case live run and read-only return through the
+  unchanged route; then POST2 and the exact genuine microchipout lot only after
+  a clean strip gate. All holds and review-only boundaries remain.
+
 ## OCV-03 O3F16 U12 launch terminal / archive pull ready — 2026-09-04
 
 - Current checkpoint:
