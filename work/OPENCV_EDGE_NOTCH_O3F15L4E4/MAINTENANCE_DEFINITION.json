@@ -1,0 +1,140 @@
+{
+  "schema": "argos_ocv03_o3f15l4e4_maintenance_definition_v1",
+  "revision": "OCV03_O3F15L4E4_R11_EXACT_978_FRONT_RECONCILIATION_20260903",
+  "state": "FROZEN_FOR_SIGNING",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Invoke-O3F15L4E4.ps1",
+  "changes": [
+    {
+      "source": "payload/OCV03_NotchReviewOpenCvV1.py",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_NotchReviewOpenCvV1.py",
+      "approvedPredecessorSha256": [
+        "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4"
+      ],
+      "installedSha256": "6B7CC6E643265545297BA4DED1E6B37AB262349572194B13F79264EF77D8DCE4",
+      "allowCreate": false
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "action": "CREATE_FRESH_OWNED_RUNTIME_AND_COPY_PINNED_PAYLOAD",
+      "targetRoot": "D:/O3F15L4E4RT"
+    },
+    {
+      "action": "CREATE_FRESH_REVIEW_ONLY_GATE_OUTPUT",
+      "targetRoot": "D:/O3F15L4E4G"
+    },
+    {
+      "action": "START_ONE_OWNED_BACKGROUND_FRONT_RECONCILIATION_WHICH_CREATES_FRESH_OUTPUT",
+      "targetRoot": "D:/O3F15L4C"
+    },
+    {
+      "action": "OWNED_BACKGROUND_FRONT_RECONCILIATION_CREATES_PORTAL_READABLE_STATUS_MIRROR",
+      "targetRoot": "D:/KLARFExport/_ArgosReview/F15L4S"
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "D:/O3F15L4C/PROGRESS.json",
+      "requiredAtLaunch": false
+    },
+    {
+      "path": "D:/O3F15L4C/RESULTS.json",
+      "requiredAtLaunch": false
+    },
+    {
+      "path": "D:/O3F15L4C/SUMMARY.json",
+      "requiredAtLaunch": false
+    },
+    {
+      "path": "D:/O3F15L4C/HOLDOUT18.json",
+      "requiredAtLaunch": false
+    },
+    {
+      "path": "D:/O3F15L4C/CURRENT265.json",
+      "requiredAtLaunch": false
+    },
+    {
+      "path": "D:/O3F15L4C/TERMINAL_FAILURE.json",
+      "requiredAtLaunch": false
+    },
+    {
+      "path": "D:/KLARFExport/_ArgosReview/F15L4S/PROGRESS.json",
+      "requiredAtLaunch": false
+    },
+    {
+      "path": "D:/KLARFExport/_ArgosReview/F15L4S/RESULTS.json",
+      "requiredAtLaunch": false
+    },
+    {
+      "path": "D:/KLARFExport/_ArgosReview/F15L4S/SUMMARY.json",
+      "requiredAtLaunch": false
+    },
+    {
+      "path": "D:/KLARFExport/_ArgosReview/F15L4S/TERMINAL_FAILURE.json",
+      "requiredAtLaunch": false
+    }
+  ],
+  "sourceProcessingContract": {
+    "side": "FRONT",
+    "expectedPairCount": 978,
+    "expectedSourceProblemCount": 0,
+    "inventoryPath": "D:/O3F3INV/inventory.json",
+    "inventorySha256": "7320331752A094F51C44F713A9C644AB41A059B0226DE0F8E0BD8E1D0ABCA056",
+    "o3f6ResultsPath": "D:/O3F6R8M/RESULTS.json",
+    "o3f6ResultsSha256": "A933227FE4F41259D53D586CBB5189E1B6542B96B7585B606207DAFD35326BD8",
+    "detectorRevision": "R11",
+    "detectorSha256": "B477C290EC9D3AE388BE4EE31049B2B8094F5F30FC6E0DD68AB4A03926EE4059",
+    "orderedStages": [
+      "PACKAGE_LEAF_PREFLIGHT",
+      "SELF_TEST",
+      "PREFLIGHT",
+      "GATE_WITH_FOCUSED_IMAGE_FREE_REGRESSION",
+      "FRESH_EXACT_978_FRONT_BACKGROUND_LAUNCH"
+    ],
+    "focusedTestSchema": "argos_ocv03_o3f15l4_focused_image_free_test_v1",
+    "focusedTestState": "PASS_O3F15L4_FOCUSED_IMAGE_FREE",
+    "selfTestSchema": "argos_ocv03_o3f15l4_self_test_v1",
+    "selfTestState": "PASS_O3F15L4_FRONT_RECONCILE_SELF_TEST",
+    "preflightSchema": "argos_ocv03_o3f15l4_preflight_v1",
+    "preflightState": "PASS_O3F15L4_FRONT_RECONCILE_PREFLIGHT",
+    "gateSchema": "argos_ocv03_o3f15l4_gate_result_v1",
+    "gateState": "COMPLETE_O3F15L4_GATE",
+    "summarySchema": "argos_ocv03_o3f15_front_reconciliation_summary_v1",
+    "acceptedSummaryStates": [
+      "COMPLETE_O3F15_FULL978",
+      "HOLD_O3F15_EXECUTION_STOPPED"
+    ],
+    "terminalFailureSchema": "argos_ocv03_o3f15_terminal_failure_v1",
+    "terminalFailureState": "HOLD_O3F15_ARTIFACT_COMMIT_FAILURE",
+    "postResultSelectorRelaxationAllowed": false,
+    "automaticHoldClearanceAllowed": false
+  },
+  "timeoutContract": {
+    "localRegressionSeconds": 120,
+    "gateSeconds": 900,
+    "launchSurvivalProbeSeconds": 3,
+    "bootstrapProgressSeconds": 600,
+    "endpointResponseIsLaunchOnly": true,
+    "backgroundCompletionIsNotClaimedByLaunchResponse": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_ONE_BOUNDED_OWNED_O3F15_FRONT_RECONCILIATION_CHILD_ONLY",
+    "TERMINATE_ONLY_THE_NEWLY_OWNED_O3F15_CHILD_ON_BOOTSTRAP_FAILURE"
+  ],
+  "rehearsal": {
+    "requiredState": "PASS_O3F15L4E4_REHEARSAL_WORKER_LAUNCHED",
+    "normalFixtureMode": "NORMAL",
+    "immediateExitFixtureMode": "IMMEDIATE_EXIT",
+    "collisionRefusalRequired": true
+  },
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

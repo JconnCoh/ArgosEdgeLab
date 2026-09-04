@@ -1,0 +1,70 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-03T22:08:00Z",
+  "incidentId": "O3F8R13T1_FLAT_PACKAGE_ROOT_FAILURE_20260903",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {"path":"work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json","sha256":"F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {
+    "signedPremiseFailures": 1,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": true,
+    "mutationStopLossExplicitlyCleared": true,
+    "failureEvidence": [{"path":"work/OPENCV_EDGE_NOTCH_O3F8R13T2/O3F8R13T1_TERMINAL_FAILURE_GATE.json","sha256":"1A8861D4F9D448DB2E4B6E3DE5C831CAAC30A549D1642E71ADBEA51CB3059EF5","state":"FAILED"}],
+    "postFailureObservation": {"path":"work/OPENCV_EDGE_NOTCH_O3F8R13T2/O3F8R13T1_FAILURE_OBSERVATION.json","sha256":"E57A6BA3E5861E305469A6983173939E0E396AFEFBCB72DCF0BFE4D3E57BA1E0"},
+    "workflowReviewClearance": {"path":"work/OPENCV_EDGE_NOTCH_O3F8R13T2/O3F8R13T2_STOP_LOSS_REVIEW.json","sha256":"E59846CFE25A8DF9F10F18AB714DCAF7D3E239DC054E69DA0908AA050CB05444"}
+  },
+  "route": {
+    "type":"PROJECT_PORTAL","jobClass":"MAINTENANCE_PATCH","installedCodeChange":false,"helperInstall":false,"taskActions":[],"processActions":["OWNED_TARGETED_R13_CHILD"],"queueMutation":true,"ledgerMutation":true,"sourceMutation":false,"imageRead":true,"waferAction":false,"inheritsQualifiedEndpointGate":true,
+    "endpointWorker":{"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    "installedConfigEvidence":{"path":"work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json","sha256":"465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"},
+    "capabilityEvidence":{"path":"work/OPENCV_EDGE_NOTCH_O3F15L4D3/O3F15L4D3_ROUTE_CAPABILITY_INVENTORY.json","sha256":"6AF747EF748ABF9EC5727C983F9D87F178EE47A50BEA40178654B3A86241A43C"},
+    "qualifiedEndpointGate":{"path":"work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json","sha256":"170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"},
+    "qualifiedAdminGate":{"path":"","sha256":""}
+  },
+  "observation": {
+    "exactSources": [{"sourcePath":"work/OPENCV_EDGE_NOTCH_O3F8R13T1/response_R_4BFFB09EAA3E/MAINTENANCE.stderr.txt","sourceSchema":"TEXT","selector":"exact signed T1 stderr leaf","uniquenessKey":"5DEEF5CF1407FF6950B9907480EA77F9D52ACA6812E3AFAFE3DCD7FE183AE851","maximumRows":1}],
+    "requestedCapabilities":["MAINTENANCE_PATCH_OWNED_CHILD"],
+    "requestedFields":["all five provider-error results","ten hotspot controls","DF candidate counts","R13 final states"],
+    "decisionOptions":["PASS_TARGETED","HOLD_TARGETED"],
+    "mutationDecisionDeferred":false
+  },
+  "mutation": {
+    "supportedRemedy":"B",
+    "supportingObservation":{"path":"work/OPENCV_EDGE_NOTCH_O3F8R13T2/O3F8R13T1_FAILURE_OBSERVATION.json","sha256":"E57A6BA3E5861E305469A6983173939E0E396AFEFBCB72DCF0BFE4D3E57BA1E0"},
+    "endpointMutationNecessary":true,
+    "singleMutationAttemptAuthorized":true,
+    "exactChange":"Use same-directory packaged dependencies in the focused test and return bounded child stderr; detector and targeted runner remain byte-for-byte unchanged.",
+    "detectorOrRunnerChangeAllowed":false,
+    "liveRootChangeAllowed":true,
+    "numericThresholdChangeAllowed":false,
+    "selectorChangeAllowed":false,
+    "fullCorpusExecutionAllowed":false,
+    "detectorResultRootCreationAllowed":true,
+    "imageByteReadAllowed":true
+  },
+  "scope": {
+    "freshNamespace":"work/OPENCV_EDGE_NOTCH_O3F8R13T2",
+    "runnerSha256":"4B10CBCADE119E1AF3EDE845C4C9CFD426D7E2AE39281D2A3372F0F3C6FDB762",
+    "r13Sha256":"507ED5B9DE13F9DF70AC65E9C714E5E89F52885AA9DF389076E93500E2123EE8",
+    "dependencyClosureGateSha256":"6BEB0CF1D4DE0E014CEA35CA22778BC403AAB4327326330BC063240BA98B35C4",
+    "maximumSignatures":1,
+    "maximumPortalPublications":1,
+    "requestRetryAuthorized":false,
+    "sourceMutationAllowed":false,
+    "sourceDeletionAllowed":false,
+    "existingTaskOrProcessActionAllowed":false,
+    "providerActivationAllowed":false,
+    "automaticHoldClearanceAllowed":false
+  },
+  "preservedHolds":{"fullFrontsideHoldCount":184,"currentPatternedFrontHoldCount":12,"slot02MultipleCandidateAmbiguity":true,"rareHotspotSlot16":true,"allBacksideAndLaterPrerequisites":true},
+  "portalOnly":true,
+  "rustDeskAllowed":false,
+  "clipboardOrGuiPowerShellAllowed":false,
+  "operatorInputAllowed":false,
+  "reviewOnly":true,
+  "trainingEligible":false,
+  "xmlEligible":false,
+  "productionEligible":false,
+  "productionRoutingEnabled":false
+}

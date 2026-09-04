@@ -1,0 +1,21 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-09-03T22:07:00Z",
+  "state": "PASS_O3F8R13T2_WORKFLOW_REVIEW_STOP_LOSS_CLEARED",
+  "incidentId": "O3F8R13T1_FLAT_PACKAGE_ROOT_FAILURE_20260903",
+  "singleMutationAttemptAuthorized": true,
+  "signedFailureCount": 1,
+  "latestFailureEvidence": "work/OPENCV_EDGE_NOTCH_O3F8R13T2/O3F8R13T1_TERMINAL_FAILURE_GATE.json",
+  "latestFailureEvidenceSha256": "1A8861D4F9D448DB2E4B6E3DE5C831CAAC30A549D1642E71ADBEA51CB3059EF5",
+  "disallowedNextActions": ["RETRY_T1", "CHANGE_R13_DETECTOR", "CHANGE_TARGET_RUNNER", "CHANGE_PORTAL_ROUTE", "RUN_FULL_978", "RELAX_SELECTOR_OR_NUMERIC_THRESHOLD", "CLEAR_HOLDS"],
+  "clearedSuccessor": "O3F8R13T2",
+  "clearedDesign": "Use the exact T1 detector and targeted runner with only a flat-package-aware focused test and bounded test-error propagation, then run the same asserted 11-identity union once.",
+  "flatPackageGateSha256": "6BEB0CF1D4DE0E014CEA35CA22778BC403AAB4327326330BC063240BA98B35C4",
+  "packagedRehearsalGateSha256": "77D925CBA645C7AA8A048403F84D4F57E98CEEEAFE6BDE1C5AE076ED5B5B3D49",
+  "sourceMutationAllowed": false,
+  "existingTaskOrProcessActionAllowed": false,
+  "providerActivationAllowed": false,
+  "automaticRetryAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

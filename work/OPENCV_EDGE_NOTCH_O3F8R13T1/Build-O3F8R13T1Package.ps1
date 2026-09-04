@@ -1,0 +1,31 @@
+#Requires -Version 5.1
+[CmdletBinding()]
+param([switch]$Preflight,[switch]$Build)
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+if(([bool]$Preflight)-eq([bool]$Build)){throw 'Specify exactly one of -Preflight or -Build.'}
+function Require([bool]$Condition,[string]$Message){if(-not$Condition){throw $Message}}
+function Sha([string]$Path){(Get-FileHash -LiteralPath $Path -Algorithm SHA256 -ErrorAction Stop).Hash}
+function New-Json([string]$Path,[object]$Value){Require (-not(Test-Path -LiteralPath $Path)) "Create-new JSON exists: $Path";[IO.File]::WriteAllText($Path,(($Value|ConvertTo-Json -Depth 20)+[Environment]::NewLine),(New-Object Text.UTF8Encoding($false)))}
+$project=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
+$contractPath=Join-Path $PSScriptRoot 'O3F8R13T1_LAUNCH_CONTRACT.json';$contractHash='768B635CE97C28862A2C1B4BA4B0EBACE55ED3C80D8A682E2B85013593589BC0'
+$definitionSource=Join-Path $PSScriptRoot 'MAINTENANCE_DEFINITION.json';$root='C:\O3F8R13T1PKR1';$payload=Join-Path $root 'payload';$definitionTarget=Join-Path $root 'DEFINITION.json';$gatePath=Join-Path $PSScriptRoot 'O3F8R13T1_BUILD_GATE_R1.json'
+Require ((Sha $contractPath)-eq$contractHash) 'Launch contract changed'
+$contract=Get-Content -LiteralPath $contractPath -Raw|ConvertFrom-Json;$definition=Get-Content -LiteralPath $definitionSource -Raw|ConvertFrom-Json
+Require ([string]$contract.schema-eq'argos_ocv03_o3f8r13t1_launch_contract_v1'-and[string]$contract.state-eq'FROZEN_FOR_BUILD'-and[int]$contract.expectedPairCount-eq11) 'Contract identity changed'
+Require ([string]$definition.schema-eq'argos_ocv03_o3f8r13t1_maintenance_definition_v1'-and[string]$definition.state-eq'FROZEN_FOR_SIGNING'-and[string]$definition.entryPoint-eq'payload/Invoke-O3F8R13T1.ps1') 'Definition identity changed'
+Require ([bool]$definition.reviewOnly-and-not[bool]$definition.productionRoutingEnabled-and-not[bool]$definition.requestRetryAuthorized-and@($definition.allowedTaskActions).Count-eq0-and@($definition.allowedProcessActions).Count-eq2) 'Authority widened'
+$rows=New-Object Collections.Generic.List[object]
+foreach($record in @($contract.payloadFiles)){$name=[string]$record.name;$source=Join-Path $project ([string]$record.source);Require (-not[IO.Path]::IsPathRooted($name)-and$name-notmatch'[\\/]') "Unsafe payload name: $name";Require (Test-Path -LiteralPath $source -PathType Leaf) "Payload source absent: $source";Require ((Sha $source)-eq[string]$record.sha256) "Payload source changed: $name";$rows.Add([pscustomobject]@{path=$name;source=$source;bytes=[int64](Get-Item $source).Length;sha256=[string]$record.sha256;copyToRuntime=[bool]$record.copyToRuntime})}
+$rows.Add([pscustomobject]@{path='O3F8R13T1_LAUNCH_CONTRACT.json';source=$contractPath;bytes=[int64](Get-Item $contractPath).Length;sha256=$contractHash;copyToRuntime=$false});$sources=$rows.ToArray()
+Require ($sources.Count-eq25-and@($sources.path|Sort-Object -Unique).Count-eq25-and@($sources|Where-Object{[bool]$_.copyToRuntime}).Count-eq22) 'Payload cardinality changed'
+foreach($required in @('Invoke-O3F8R13T1.ps1','Run-O3F8R13Targeted.py','FullPerimeterWaferTopologyOpenCvR13.py','FullPerimeterWaferTopologyOpenCvR11.py','Run-O3F15L4FrontReconcile.py','Test-O3F8R13DfCandidateLimit.py','OCV03_NotchReviewOpenCvV1.py')){Require (@($sources|Where-Object{[string]$_.path-eq$required}).Count-eq1) "Required payload absent: $required"}
+$planned=@($root,$payload,$definitionTarget,$gatePath,(Join-Path $payload 'FullPerimeterWaferTopologyOpenCvR13.py'))
+$pathGate=& (Join-Path $project 'utilities\Confirm-ArgosPathBudget.ps1') -CandidatePath $planned -ReservedSuffixCharacters 32 -AsJson|ConvertFrom-Json;Require ([string]$pathGate.state-eq'PASS_PATH_BUDGET') 'Build path budget failed'
+if($Preflight){[ordered]@{schema='argos_ocv03_o3f8r13t1_build_preflight_v1';state='PASS_O3F8R13T1_BUILD_PREFLIGHT';contractSha256=$contractHash;definitionSha256=Sha $definitionSource;payloadFileCount=$sources.Count;runtimeCopyFileCount=@($sources|Where-Object{[bool]$_.copyToRuntime}).Count;expectedPairCount=11;hotspotCount=10;providerErrorCount=5;pathState=[string]$pathGate.state;targetExecuted=$false;mutationsPerformed=$false;reviewOnly=$true}|ConvertTo-Json -Depth 6;return}
+foreach($path in @($root,$gatePath)){Require (-not(Test-Path -LiteralPath $path)) "Create-new build target exists: $path"}
+[void](New-Item -ItemType Directory -Path $payload -Force);foreach($row in $sources){[IO.File]::Copy([string]$row.source,(Join-Path $payload ([string]$row.path)),$false)};[IO.File]::Copy($definitionSource,$definitionTarget,$false)
+$actual=@(Get-ChildItem -LiteralPath $payload -File|Sort-Object Name);Require ($actual.Count-eq$sources.Count) 'Built payload cardinality changed'
+$payloadFiles=@($actual|ForEach-Object{[ordered]@{path=$_.Name;bytes=[int64]$_.Length;sha256=Sha $_.FullName}})
+$gate=[ordered]@{schema='argos_ocv03_o3f8r13t1_build_gate_v1';createdUtc=[DateTime]::UtcNow.ToString('o');state='PASS_O3F8R13T1_UNSIGNED_TARGETED_PACKAGE_BUILT';buildRoot=$root;payloadFileCount=$payloadFiles.Count;runtimeCopyFileCount=22;payloadFiles=$payloadFiles;contractSha256=$contractHash;definitionSha256=Sha $definitionTarget;entrySha256=Sha (Join-Path $payload 'Invoke-O3F8R13T1.ps1');runnerSha256=Sha (Join-Path $payload 'Run-O3F8R13Targeted.py');r13Sha256=Sha (Join-Path $payload 'FullPerimeterWaferTopologyOpenCvR13.py');r11Sha256=Sha (Join-Path $payload 'FullPerimeterWaferTopologyOpenCvR11.py');carrierSha256=Sha (Join-Path $payload 'OCV03_NotchReviewOpenCvV1.py');endpointWorkerSha256=[string]$contract.inheritedRoute.endpointWorkerSha256;installedRouteConfigEvidenceSha256=[string]$contract.inheritedRoute.installedRouteConfigEvidenceSha256;queueSafetyGateSha256=[string]$contract.inheritedRoute.queueSafetyGateSha256;expectedPairCount=11;hotspotCount=10;providerErrorCount=5;sameBytesCarrier=$true;installedSemanticChange=$false;taskActionCount=0;signed=$false;published=$false;targetExecuted=$false;mutationsPerformed=$false;reviewOnly=$true;productionRoutingEnabled=$false}
+New-Json $gatePath $gate;$gate|ConvertTo-Json -Depth 10

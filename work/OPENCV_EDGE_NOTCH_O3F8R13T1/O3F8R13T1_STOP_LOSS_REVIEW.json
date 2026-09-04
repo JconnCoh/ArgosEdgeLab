@@ -1,0 +1,19 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-09-03T21:43:00Z",
+  "state": "PASS_O3F8R13T1_WORKFLOW_REVIEW_STOP_LOSS_CLEARED",
+  "incidentId": "O3F15L4E5_FULL978_PROVIDER_ERROR_STOP_20260903",
+  "singleMutationAttemptAuthorized": true,
+  "signedFailureCount": 5,
+  "latestFailureEvidence": "work/OPENCV_EDGE_NOTCH_O3F8R13T1/O3F15L4E5_TERMINAL_FAILURE_GATE.json",
+  "latestFailureEvidenceSha256": "D8C3C0FFF655A7C1AD9583169DE13BF6F7BE413B0607BC16504B6CC027711A69",
+  "disallowedNextActions": ["RETRY_E5", "RUN_FULL978", "CHANGE_PORTAL_ROUTE", "RELAX_SELECTOR_OR_NUMERIC_THRESHOLD", "CLEAR_HOLDS"],
+  "clearedSuccessor": "O3F8R13T1",
+  "clearedDesign": "Run R13 once on the exact union of the frozen ten-wafer hotspot cohort and all five historical R8 provider-error identities. Change only the DF raw-candidate resource-limit binding from the BF topology ceiling 24 to the already-frozen O3P8 maximumSeedCountPerWafer ceiling 64; preserve BF 24 and every candidate generator, ordering, pairing, morphology, selector, threshold, hold, and source byte.",
+  "sourceMutationAllowed": false,
+  "existingTaskOrProcessActionAllowed": false,
+  "providerActivationAllowed": false,
+  "automaticRetryAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

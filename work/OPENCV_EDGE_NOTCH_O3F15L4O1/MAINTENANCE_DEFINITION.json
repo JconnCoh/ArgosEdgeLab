@@ -1,0 +1,52 @@
+{
+  "schema": "argos_ocv03_o3f15l4o1_maintenance_definition_v1",
+  "revision": "OCV03_O3F15L4O1_GATE_JSON_CAPABILITY_20260903",
+  "state": "FROZEN_FOR_SIGNING",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 8388608,
+  "entryPoint": "payload/Invoke-O3F15L4O1GateJsonEndpoint.ps1",
+  "changes": [
+    {
+      "source": "payload/OCV03_ResultJsonProviderV1.ps1",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_ResultJsonProviderV1.ps1",
+      "approvedPredecessorSha256": ["EF9773ADAC624A7A8A689989AB0EE404C2863B4E32B2666F437331E8CC9CAE67"],
+      "installedSha256": "EF9773ADAC624A7A8A689989AB0EE404C2863B4E32B2666F437331E8CC9CAE67",
+      "allowCreate": true
+    },
+    {
+      "source": "payload/O3F15L4O1_GATE_JSON_CONFIG.json",
+      "destination": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV03_O3F15L4_GATE_JSON_CONFIG.json",
+      "approvedPredecessorSha256": ["A4B1ACF76F1BE60506AAA9EFD61521AC87C44DB0A92AA906D5C3789EDE1CB3DB"],
+      "installedSha256": "A4B1ACF76F1BE60506AAA9EFD61521AC87C44DB0A92AA906D5C3789EDE1CB3DB",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [],
+  "entryPointOutputs": [],
+  "jsonReadContract": {
+    "mode": "EXACT_FROZEN_ALLOWLIST_JSON_TEXT_ONLY",
+    "approvedRootName": "O3F15L4_GATE_EVIDENCE",
+    "approvedRootPath": "D:/O3F15L4G",
+    "allowedExtension": ".json",
+    "exactFileCount": 1,
+    "maximumFileBytes": 4194304,
+    "maximumTotalBytes": 4194304,
+    "returnChannel": "SIGNED_MAINTENANCE_STDOUT",
+    "sourceJsonContentReadAllowed": true,
+    "sourceImageBytesReadAllowed": false,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "taskOrProcessActionAllowed": false,
+    "providerActivationAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [],
+  "rehearsal": {"requiredState": "PASS_O3F15L4O1_GATE_JSON_CAPABILITY"},
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

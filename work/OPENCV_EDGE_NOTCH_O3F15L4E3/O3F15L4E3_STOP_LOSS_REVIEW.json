@@ -1,0 +1,41 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-09-03T16:18:00Z",
+  "state": "PASS_O3F15L4E3_WORKFLOW_REVIEW_STOP_LOSS_CLEARED",
+  "incidentId": "O3F15L4_FRONT_GATE_AND_FULL978_LAUNCH_20260903",
+  "singleMutationAttemptAuthorized": true,
+  "incident": "O3F15L4_FRONT_GATE_AND_FULL978_LAUNCH",
+  "signedFailures": [
+    {
+      "revision": "O3F15L4E1",
+      "cause": "R10 dependency omitted from the signed payload",
+      "failureEvidence": "work/OPENCV_EDGE_NOTCH_O3F15L4E1/O3F15L4E1_TERMINAL_FAILURE_GATE.json",
+      "sha256": "0514EE4474AF499B7618E27F02E151B010B9FAF8E4DCE555BBD4061F613870CB"
+    },
+    {
+      "revision": "O3F15L4E2",
+      "cause": "fresh gate-root edit contradicted the unchanged focused test exact-root assertion",
+      "failureEvidence": "work/OPENCV_EDGE_NOTCH_O3F15L4E2/O3F15L4E2_SIGNED_GATE_FAILURE.json",
+      "sha256": "B2FC68FB714CCD7188BF38E8EFC71FE247C3317459C2967B4FE4BE1E43E434E2"
+    }
+  ],
+  "disallowedNextActions": [
+    "RETRY_E1_OR_E2",
+    "EDIT_ORIGINAL_RUNNER_OR_FOCUSED_TEST",
+    "RERUN_ALREADY_PASSED_FOCUSED_OR_SYNTHETIC_TARGET_GATES",
+    "RELAX_SELECTOR_OR_THRESHOLD"
+  ],
+  "clearedSuccessor": "O3F15L4E3",
+  "clearedDesign": "Validate and reuse exact hash-pinned E1 focused and synthetic evidence, run only the R10-dependent seed gate with the now-packaged R10 file, compose a fresh complete prerequisite summary, and launch the unchanged original runner.",
+  "originalRunnerSha256": "3C403376521B74E3A6DB1C4E008CE8DB36D8D99AE9A0FD7C1FA51481024DBEF4",
+  "sourceSummarySha256": "D5B1FDD0D04EE14AA4FB7DFB90A4170BAF9A07AAEDFABB102B779FF64AD33CCF",
+  "sourceFocusedSha256": "A6ACBAD28F17039F97DC211CAC4873ABB0E5B4AF93D6FF45CDD66930B7C6F929",
+  "sourceSyntheticSha256": "A4A85A46B61701EA9973DA768AF77D5240A682DBE4D1085FAF14BEAB21F8D937",
+  "r10Sha256": "0EEEE7A396E918AF44082EC0930871A6A94C1FBB59D3F5CEF1AC34D1273745FA",
+  "sourceMutationAllowed": false,
+  "existingTaskOrProcessActionAllowed": false,
+  "providerActivationAllowed": false,
+  "automaticRetryAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

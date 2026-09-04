@@ -1,0 +1,29 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-03T17:05:00Z",
+  "state": "PASS_O3F15L4E5_EXACT_POSTFAIL_OBSERVATION",
+  "incidentId": "O3F15L4_FRONT_GATE_AND_FULL978_LAUNCH_20260903",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": true,
+  "requestId": "REQ_20260903T164503516Z_EE1927560A46",
+  "responseId": "R_CAEC226461A1_20260903164953033_587db049",
+  "responseZipSha256": "5941F2FAD95BD36FCED3696C64CE072B040E7F48BC9DE7684C8F344A418C9489",
+  "responseSignatureVerified": true,
+  "directEvidencePath": "U:/ProjectPortalRO/responses/O3F15L4E4G/R11_SEED.stderr.txt",
+  "directEvidenceSha256": "BB8D1B6D7CEE6239E4163CE5B97B2FB249DC5E2C40AB158C6AD5CDF0B90EC81A",
+  "observations": [
+    {"field":"endpointState","expected":"terminal","observed":"FAILED"},
+    {"field":"failedGate","expected":"R11_SEED","observed":"R11_SEED"},
+    {"field":"failedFile","expected":"exact traceback","observed":"FullPerimeterWaferTopologyOpenCvR10.py"},
+    {"field":"failedLine","expected":"exact traceback","observed":63},
+    {"field":"resolvedDependencyRoot","expected":"packaged payload directory","observed":"endpoint pending work directory"},
+    {"field":"full978WorkerStarted","expected":false,"observed":false}
+  ],
+  "supportedRemedy": "B",
+  "remedyMeaning": "Set only ARGOS_O3F8_DEPENDENCY_ROOT and ARGOS_O3P8_ROOT to the packaged payload directory in the immediate seed child environment.",
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

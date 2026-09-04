@@ -1,0 +1,29 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-03T16:40:00Z",
+  "state": "PASS_O3F15L4E4_EXACT_POSTFAIL_OBSERVATION",
+  "incidentId": "O3F15L4_FRONT_GATE_AND_FULL978_LAUNCH_20260903",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": true,
+  "requestId": "REQ_20260903T162443258Z_5A337C6D86A7",
+  "responseId": "R_C3BFC2A45730_20260903162653798_d6f780cc",
+  "responseZipSha256": "2FC74C530F05B40040F38E197690770421EDD3E9CDBFEA6D62DD73C26FA5F4F4",
+  "responseSignatureVerified": true,
+  "directEvidencePath": "U:/ProjectPortalRO/responses/O3F15L4E3G/R11_SEED.stderr.txt",
+  "directEvidenceSha256": "BC72620B239B68B7779C1329D0661AE59899A7CD8E57DB7F13BAC8C3F9E9F82A",
+  "observations": [
+    {"field":"endpointState","expected":"terminal","observed":"FAILED"},
+    {"field":"failedGate","expected":"R11_SEED","observed":"R11_SEED"},
+    {"field":"failedFile","expected":"exact traceback","observed":"FullPerimeterWaferTopologyOpenCvR10.py"},
+    {"field":"failedLine","expected":"exact traceback","observed":63},
+    {"field":"missingDependency","expected":"exact traceback","observed":"NativeFrontsideWaferPoseOpenCvV2R6.py"},
+    {"field":"full978WorkerStarted","expected":false,"observed":false}
+  ],
+  "supportedRemedy": "B",
+  "remedyMeaning": "Keep detector, selector, runner, source, and passed evidence exact; add the complete four-file transitive closure omitted from E3.",
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

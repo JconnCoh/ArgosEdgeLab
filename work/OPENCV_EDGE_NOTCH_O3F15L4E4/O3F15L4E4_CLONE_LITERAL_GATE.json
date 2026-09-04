@@ -1,0 +1,75 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-03T16:44:06.0403622Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_O3F15L4E4\\O3F15L4E4_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "C957C4C930789D9B3E6FAEA92EEED7DAB90D9695A5F2241ED74271A0EEFCCABF",
+    "pairCount":  4,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F15L4E1/Invoke-O3F15L4E1.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F15L4E4/Invoke-O3F15L4E4.ps1",
+                      "sourceSha256":  "C3794B8004DF8961483087B9F7D69C9720F4DAC7F31B599C66715DEC32FC4416",
+                      "generatedSha256":  "7663D66F89840F4AD875B5ED3797E55E81E94FB284389B1F268EB7F67AA996D4",
+                      "sourceRoots":  [
+                                          "D:\\KLARFExport",
+                                          "D:\\O3F15",
+                                          "Q:"
+                                      ],
+                      "generatedRoots":  [
+                                             "D:\\KLARFExport",
+                                             "D:\\O3F15",
+                                             "Q:"
+                                         ],
+                      "ruleCount":  3
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F15L4E1/Build-O3F15L4E1Package.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F15L4E4/Build-O3F15L4E4Package.ps1",
+                      "sourceSha256":  "0E88F14A18C03F6D449A89DA3505838A1FE11E0D047FE512F18A141BDA2D16AF",
+                      "generatedSha256":  "565933F2633E099E4E360A64E047831C5DD39A7CE0453572740A851F2D892137",
+                      "sourceRoots":  [
+                                          "C:\\O3F15L4E1PK"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\O3F15L4E4PK"
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F15L4E1/Sign-O3F15L4E1Package.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F15L4E4/Sign-O3F15L4E4Package.ps1",
+                      "sourceSha256":  "540D7573203EF6B39ACC82FBC2D3F7381A64DAC4CEEA49EF2F6897FAE15B6CCD",
+                      "generatedSha256":  "CEA4FE365C9787FBACC80126CF1D43F69EEA9D4C02F1A1B5F722E20871AFCE99",
+                      "sourceRoots":  [
+                                          "C:\\O3F15L4E1PK"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\O3F15L4E4PK"
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F15L4E1/Publish-O3F15L4E1Package.ps1",
+                      "generated":  "work/OPENCV_EDGE_NOTCH_O3F15L4E4/Publish-O3F15L4E4Package.ps1",
+                      "sourceSha256":  "4BA461C0E84B9C7760C26E05491A832A97BFE68A81B1832368C615AADB9E0142",
+                      "generatedSha256":  "479A4E9515E23A6667318320D9297B6F25E8814386905B53092E17B73B63A658",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  2
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

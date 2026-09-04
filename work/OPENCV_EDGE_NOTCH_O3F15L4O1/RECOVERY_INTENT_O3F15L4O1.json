@@ -1,0 +1,54 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-03T15:50:00Z",
+  "incidentId": "O3F15L4E1_GATE_INNER_DIAGNOSTIC_20260903",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""}
+  },
+  "route": {
+    "type": "PROJECT_PORTAL",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": true,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {"path": "work/OPENCV_OLS3/pkg/payload/W.ps1", "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    "installedConfigEvidence": {"path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json", "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"},
+    "capabilityEvidence": {"path": "work/OPENCV_EDGE_NOTCH_O3F15L4O1/O3F15L4O1_ROUTE_CAPABILITY_INVENTORY.json", "sha256": "EB406CC39E4B1C8DD07712FB3AADB2A58D814CA3949B9BA037007EC0C5A24362"},
+    "qualifiedEndpointGate": {"path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json", "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"},
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [{"sourcePath": "D:/O3F15L4G/SUMMARY.json", "sourceSchema": "argos_ocv03_o3f15l4_gate_result_v1", "selector": "EXACT_ONE_JSON_ALLOWLIST", "uniquenessKey": "relativePath=SUMMARY.json", "maximumRows": 1}],
+    "requestedCapabilities": ["EXACT_JSON_ALLOWLIST_CONFIG_INSTALL"],
+    "requestedFields": ["rawJsonText"],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "D",
+    "supportingObservation": {"path": "work/OPENCV_EDGE_NOTCH_O3F15L4O1/O3F15L4O1_CAPABILITY_GAP_OBSERVATION.json", "sha256": "6F8CBA85884DBF47A6048A48644EBDEE4B564F4C422C4023B4144E3EF310F945"},
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

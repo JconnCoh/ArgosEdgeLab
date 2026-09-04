@@ -1,0 +1,27 @@
+{
+  "schema":"argos_recovery_intent_v1",
+  "createdUtc":"2026-09-03T22:39:54Z",
+  "incidentId":"O3F8R13T3_TARGETED_PREFLIGHT_MISSING_PACKAGE_PIN_20260903",
+  "mode":"MUTATE",
+  "artifactLifecycle":"FROZEN",
+  "policy":{"path":"work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json","sha256":"F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory":{
+    "signedPremiseFailures":1,"localPremiseFailures":0,"directObservationAfterLastSignedFailure":true,"mutationStopLossExplicitlyCleared":true,
+    "failureEvidence":[{"path":"work/OPENCV_EDGE_NOTCH_O3F8R13T4/O3F8R13T3_TERMINAL_FAILURE_GATE.json","sha256":"4F85991615AF330FF0F80C452B23E3DEF9C0AA8439B8ED6778BED782137CF994","state":"FAILED"}],
+    "postFailureObservation":{"path":"work/OPENCV_EDGE_NOTCH_O3F8R13T4/O3F8R13T3_FAILURE_OBSERVATION.json","sha256":"E2257E8DAD4377AA2DAE50410E192E9E4E5EA431E3586262A312FB5CE9066F07"},
+    "workflowReviewClearance":{"path":"work/OPENCV_EDGE_NOTCH_O3F8R13T4/O3F8R13T4_STOP_LOSS_REVIEW.json","sha256":"A615C85CDF9ECDA746C0E58B9F6A91824E0B2C9A1F1D08ADFF8B6C3A1C43C484"}
+  },
+  "route":{
+    "type":"PROJECT_PORTAL","jobClass":"MAINTENANCE_PATCH","installedCodeChange":false,"helperInstall":false,"taskActions":[],"processActions":["OWNED_TARGETED_R13_CHILD"],"queueMutation":true,"ledgerMutation":true,"sourceMutation":false,"imageRead":true,"waferAction":false,"inheritsQualifiedEndpointGate":true,
+    "endpointWorker":{"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"},
+    "installedConfigEvidence":{"path":"work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json","sha256":"465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"},
+    "capabilityEvidence":{"path":"work/OPENCV_EDGE_NOTCH_O3F15L4D3/O3F15L4D3_ROUTE_CAPABILITY_INVENTORY.json","sha256":"6AF747EF748ABF9EC5727C983F9D87F178EE47A50BEA40178654B3A86241A43C"},
+    "qualifiedEndpointGate":{"path":"work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json","sha256":"170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"},
+    "qualifiedAdminGate":{"path":"","sha256":""}
+  },
+  "observation":{"exactSources":[{"sourcePath":"work/OPENCV_EDGE_NOTCH_O3F8R13T3/response_R_B10893491CAE/MAINTENANCE.stderr.txt","sourceSchema":"TEXT","selector":"exact signed T3 stderr leaf plus hash-pinned assert_package_pins path","uniquenessKey":"BEAE3431074FB0F09F40C4197BD79E4ACF2AC6E2C8E44C9710BEDF9B54003A0B","maximumRows":1}],"requestedCapabilities":["MAINTENANCE_PATCH_OWNED_CHILD"],"requestedFields":["11 targeted R13 results","DF candidate counts","final states"],"decisionOptions":["PASS_TARGETED","HOLD_TARGETED"],"mutationDecisionDeferred":false},
+  "mutation":{"supportedRemedy":"B","supportingObservation":{"path":"work/OPENCV_EDGE_NOTCH_O3F8R13T4/O3F8R13T3_FAILURE_OBSERVATION.json","sha256":"E2257E8DAD4377AA2DAE50410E192E9E4E5EA431E3586262A312FB5CE9066F07"},"endpointMutationNecessary":true,"singleMutationAttemptAuthorized":true,"exactChange":"Add exact Test-O3F14R11SeedAngles.py to the flat runtime closure, execute assert_package_pins before target preflight, and use fresh T4 roots; detector unchanged.","detectorOrRunnerChangeAllowed":true,"liveRootChangeAllowed":true,"numericThresholdChangeAllowed":false,"selectorChangeAllowed":false,"fullCorpusExecutionAllowed":false,"detectorResultRootCreationAllowed":true,"imageByteReadAllowed":true},
+  "scope":{"freshNamespace":"work/OPENCV_EDGE_NOTCH_O3F8R13T4","runnerSha256":"7E65B996D1834871F1D7ABA78A7F83E1B273D3BC5530301ECE77B585424C09BF","r13Sha256":"507ED5B9DE13F9DF70AC65E9C714E5E89F52885AA9DF389076E93500E2123EE8","dependencyClosureGateSha256":"481A289E264BE69FF3412B0F4EA6A78F3C0E35757BED9337AC2F60BF60DCC852","maximumSignatures":1,"maximumPortalPublications":1,"requestRetryAuthorized":false,"sourceMutationAllowed":false,"sourceDeletionAllowed":false,"existingTaskOrProcessActionAllowed":false,"providerActivationAllowed":false,"automaticHoldClearanceAllowed":false},
+  "preservedHolds":{"fullFrontsideHoldCount":184,"currentPatternedFrontHoldCount":12,"slot02MultipleCandidateAmbiguity":true,"rareHotspotSlot16":true,"allBacksideAndLaterPrerequisites":true},
+  "portalOnly":true,"rustDeskAllowed":false,"clipboardOrGuiPowerShellAllowed":false,"operatorInputAllowed":false,"reviewOnly":true,"trainingEligible":false,"xmlEligible":false,"productionEligible":false,"productionRoutingEnabled":false
+}

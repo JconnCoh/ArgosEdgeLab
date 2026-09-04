@@ -1,0 +1,98 @@
+{
+  "schema": "argos_r34_composite_plan_v1",
+  "runtime": "D:\\R34G1RT",
+  "output": "D:\\R34G1",
+  "python": {
+    "path": "D:\\AFCV1\\rt\\python.exe",
+    "sha256": "7D96A4ED35D6E596CD9DD8933FEAFC66349CC21F75BE3B15C89FD336E50140C1"
+  },
+  "detector": {
+    "path": "D:\\R34G1RT\\Detect-BacksideNotchOpenCvR34.py",
+    "sha256": "3B3B9F6E461BC8F7C5498763A6ED9A46A404E55E5E3C69B10235C3489B3FF066"
+  },
+  "config": {
+    "path": "D:\\R34G1RT\\BACKSIDE_NOTCH_CONFIG_R13.json",
+    "sha256": "27010B75F2E5CCB601E710A63D73F5483072F6EB797F9D72A0632F993E6E4AD3"
+  },
+  "cases": {
+    "path": "D:\\R33U2\\FROZEN_CASES.json",
+    "sha256": "48AA1CABC1B2DCD41B8A2A63361AECE0CF5A22A74BEE252E88D229BBE6E57E4F"
+  },
+  "baseCases": {
+    "path": "D:\\R31VAL2\\FROZEN_CASES.json",
+    "sha256": "CF13707EC49ED3DED99CA077D6F92ECB0D6FED234E9BB51E3E72AFD7581A96AE"
+  },
+  "extraCases": {
+    "path": "D:\\R34G1RT\\EXTRA_CASES.json",
+    "sha256": "F10A71C89A873EC2A671ED00803E84152711D22E7A3800F516ECB6BA5AF98681"
+  },
+  "sourceJobs": "D:\\R33U2\\jobs",
+  "rotationCases": {
+    "path": "D:\\R34G1RT\\R28ROT1_CASES.json",
+    "sha256": "90D4DC156D85F2F684E616248E23729E3E0F0111D64E456891DDDB519F2AD6AB"
+  },
+  "targetedRunner": {
+    "path": "D:\\R34G1RT\\Run-R34TargetedGate.py",
+    "sha256": "C12719CE9613780B54272F09EF2FF2AB9F68F62D7D96AA0D633FE91AE36123AE"
+  },
+  "unionRunner": {
+    "path": "D:\\R34G1RT\\Run-R34Union.py",
+    "sha256": "9ACBDE5167035A932CE0FCB69843803E702FA39DA27DF5CAEF5035812D0529E6"
+  },
+  "rotationRunner": {
+    "path": "D:\\R34G1RT\\Diagnose-R34RotationHolderAblation.py",
+    "sha256": "F98DD900FE21CC64662B913B71F81CBCD80C86179C426DF024B84E74A6F569DD"
+  },
+  "syntheticTests": [
+    {
+      "path": "D:\\R34G1RT\\Test-BacksideNotchOpenCvR28.py",
+      "sha256": "0BF3E7DE98D586833FA392D686ADFA4CB341F73672B6C7113728604E2AD4901F",
+      "expectedStdout": "PASS_R28_PACKAGED_SYNTHETIC_33_OF_33"
+    },
+    {
+      "path": "D:\\R34G1RT\\Test-BacksideNotchOpenCvR29.py",
+      "sha256": "C62054EFC2C2F573D48C452196D28B18B6BC5C0045DCA45CD2ABA1269FD1E1E7",
+      "expectedStdout": "PASS_R29_PACKAGED_SYNTHETIC_13_OF_13"
+    },
+    {
+      "path": "D:\\R34G1RT\\Test-BacksideNotchOpenCvR30.py",
+      "sha256": "E22233AEA4FA9757448B6BE27119E557C16D05CFEE05E67BD4941BFD29EBEA8B",
+      "expectedStdout": "PASS_R30_PACKAGED_SYNTHETIC_13_OF_13"
+    },
+    {
+      "path": "D:\\R34G1RT\\Test-BacksideNotchOpenCvR31.py",
+      "sha256": "AB66EA7229238195BABF48AB11BB21922FDF2F807EEB52B5C9B8C828B0272A9D",
+      "expectedStdout": "PASS_R31_PACKAGED_SYNTHETIC_21_OF_21"
+    },
+    {
+      "path": "D:\\R34G1RT\\Test-BacksideNotchOpenCvR32.py",
+      "sha256": "A59F9C85D8AB210FAEA78F458342AEE29D1B38E460EFEE9A700085D2AB6B49D2",
+      "expectedStdout": "PASS_R32_PACKAGED_SYNTHETIC_15_OF_15"
+    },
+    {
+      "path": "D:\\R34G1RT\\Test-BacksideNotchOpenCvR33.py",
+      "sha256": "B6B8998964380F55F07BF4F18185F6164E894B240840813371026073C017AB5F",
+      "expectedStdout": "PASS_R33_PACKAGED_SYNTHETIC_13_OF_13"
+    },
+    {
+      "path": "D:\\R34G1RT\\Test-BacksideNotchOpenCvR34.py",
+      "sha256": "F5F8EC8D94FCDCED128C08AFDCFB57B2FFFAB5E5D6A6BC62388FCB6B49BC711F",
+      "expectedStdout": "PASS_R34_PACKAGED_SYNTHETIC_33_OF_33"
+    }
+  ],
+  "workers": 4,
+  "maximumPerCaseSeconds": 180,
+  "phaseTimeoutSeconds": {
+    "synthetic": 120,
+    "targeted": 1800,
+    "union": 18000,
+    "rotation": 1200
+  },
+  "authority": {
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "automaticHoldClearanceAllowed": false
+  }
+}

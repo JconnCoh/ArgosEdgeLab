@@ -1,0 +1,31 @@
+{
+  "schema": "argos_ocv03_o3f8r13t2_packaged_rehearsal_gate_v1",
+  "checkedUtc": "2026-09-03T22:05:00Z",
+  "state": "PASS_O3F8R13T2_PACKAGED_REHEARSAL",
+  "windowsPowerShellVersion": "5.1",
+  "packageRoot": "C:/O3F8R13T2PKR2",
+  "entryPoint": "C:/O3F8R13T2PKR2/payload/Invoke-O3F8R13T2.ps1",
+  "entryPointSha256": "8A4966408285B33B5F0ECD5DB823C09B92E0ED6FDF1A9AFFFD455F7E10052F8C",
+  "flatPackageTestState": "PASS_O3F8R13T2_EXACT_FLAT_PACKAGE_TEST",
+  "normal": {
+    "progressPath": "C:/O3F8R13T2RM/PROGRESS.json",
+    "progressSchema": "argos_ocv03_o3f8_r13_targeted_progress_v1",
+    "progressState": "RUNNING_O3F8_R13_TARGETED",
+    "scheduledCount": 11,
+    "ownedWorkerCreatedProgress": true
+  },
+  "collision": {
+    "state": "HOLD_O3F8R13T2_REHEARSAL_CREATE_NEW_COLLISION",
+    "refusedBeforeSecondWorker": true
+  },
+  "immediateExit": {
+    "state": "HOLD_O3F8R13T2_REHEARSAL_WORKER_EXITED_IMMEDIATELY",
+    "exitCode": 7,
+    "failureReturned": true
+  },
+  "sourceImageBytesRead": false,
+  "targetExecuted": false,
+  "externalMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

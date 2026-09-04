@@ -1,0 +1,20 @@
+{
+  "schema":"argos_recovery_workflow_review_clearance_v1",
+  "createdUtc":"2026-09-03T22:39:54Z",
+  "state":"PASS_O3F8R13T4_WORKFLOW_REVIEW_STOP_LOSS_CLEARED",
+  "incidentId":"O3F8R13T3_TARGETED_PREFLIGHT_MISSING_PACKAGE_PIN_20260903",
+  "singleMutationAttemptAuthorized":true,
+  "signedFailureCount":1,
+  "latestFailureEvidence":"work/OPENCV_EDGE_NOTCH_O3F8R13T4/O3F8R13T3_TERMINAL_FAILURE_GATE.json",
+  "latestFailureEvidenceSha256":"4F85991615AF330FF0F80C452B23E3DEF9C0AA8439B8ED6778BED782137CF994",
+  "disallowedNextActions":["RETRY_T3","CHANGE_R13_DETECTOR","RUN_FULL_978","CHANGE_PORTAL_ROUTE","RELAX_SELECTOR_OR_THRESHOLD","CLEAR_HOLDS"],
+  "clearedSuccessor":"O3F8R13T4",
+  "clearedDesign":"Keep R13 and the T3 runner correction unchanged; add the one missing frozen dependency and require the exact flat package to pass the complete inherited pin assertion.",
+  "pinAndPackageGateSha256":"481A289E264BE69FF3412B0F4EA6A78F3C0E35757BED9337AC2F60BF60DCC852",
+  "sourceMutationAllowed":false,
+  "existingTaskOrProcessActionAllowed":false,
+  "providerActivationAllowed":false,
+  "automaticRetryAllowed":false,
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

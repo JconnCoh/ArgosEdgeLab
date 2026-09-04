@@ -1,0 +1,24 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-09-03T17:06:00Z",
+  "state": "PASS_O3F15L4E5_WORKFLOW_REVIEW_STOP_LOSS_CLEARED",
+  "incidentId": "O3F15L4_FRONT_GATE_AND_FULL978_LAUNCH_20260903",
+  "singleMutationAttemptAuthorized": true,
+  "signedFailureCount": 4,
+  "latestFailureEvidence": "work/OPENCV_EDGE_NOTCH_O3F15L4E4/O3F15L4E4_TERMINAL_FAILURE_GATE.json",
+  "latestFailureEvidenceSha256": "73BFF3674B446637CCA2508C513E5DFD5AA2AEF33D9BC6A3344A47E078174529",
+  "disallowedNextActions": [
+    "RETRY_E1_E2_E3_OR_E4",
+    "EDIT_DETECTOR_SELECTOR_RUNNER_OR_TEST",
+    "RELAX_SELECTOR_OR_THRESHOLD",
+    "CHANGE_PORTAL_ROUTE"
+  ],
+  "clearedSuccessor": "O3F15L4E5",
+  "clearedDesign": "Keep the complete E4 payload exact except for the fresh E5 wrapper identity; set the two frozen child dependency-root environment values to the packaged payload directory and propagate bounded child stderr in any signed failure response.",
+  "sourceMutationAllowed": false,
+  "existingTaskOrProcessActionAllowed": false,
+  "providerActivationAllowed": false,
+  "automaticRetryAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

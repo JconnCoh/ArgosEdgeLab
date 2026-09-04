@@ -1,0 +1,27 @@
+{
+  "schema":"argos_zero_recurrence_preaction_v2",
+  "revision":"O3F9_BUILD_SIGN_PUBLISH_20260902A",
+  "createdUtc":"2026-09-03T01:00:00Z",
+  "state":"DRAFT_AWAITING_FINAL_HASHES",
+  "actionType":"BUILD_SIGN_PUBLISH_ONE_REVIEW_ONLY_MAINTENANCE_PATCH",
+  "historyAuditPath":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256":"PENDING",
+  "dependencies":[
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F9/O3F9_PACKAGE_SPEC.json","sha256":"PENDING"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F9/MAINTENANCE_DEFINITION.json","sha256":"PENDING"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F9/Invoke-O3F9StagedEndpoint.ps1","sha256":"PENDING"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F9/Build-O3F9Package.ps1","sha256":"PENDING"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F9/Test-O3F9Endpoint.ps1","sha256":"PENDING"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F9/O3F9_ENDPOINT_REHEARSAL_GATE.json","sha256":"PENDING"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F9/final_o3f9/O3F9_PREPUBLICATION_PATH_GATE.json","sha256":"PENDING"},
+    {"path":"work/OPENCV_EDGE_NOTCH_O3F9/O3F9_RECOVERY_INTENT.json","sha256":"PENDING"},
+    {"path":"work/O3F8/Run-O3F9Staged.py","sha256":"606AFE5DF058F0298CFE333D9091DF3F5F0B5F222EC03C40E73006773F587D72"},
+    {"path":"work/O3F8/FullPerimeterWaferTopologyOpenCvR10.py","sha256":"0EEEE7A396E918AF44082EC0930871A6A94C1FBB59D3F5CEF1AC34D1273745FA"},
+    {"path":"work/O3F8/Test-O3F8SymmetricRecovery.py","sha256":"7125CF87F9B094B23D77A4A8F9347FC0F95C9719FDCEA98CF33185A7B67E0092"}
+  ],
+  "controls":{"valuesDerivedFromCurrentFileEvidence":true,"dependencyHashesPinned":false,"templateResidueAuditPassed":false,"installedRootAndTaskIdentityPinned":true,"pathAndWrapperGatesPassedWhenApplicable":false,"compoundCommandsFileBacked":true,"windowsPowerShell51ParserPassedWhenApplicable":true,"externalEvidenceJsonRehydrated":true,"arrayBoundaryModeSafe":true,"zeroOneManyCollectionCasesPassed":false,"optionalPropertiesPresenceTested":true,"residentConsumersInventoried":true,"declaredActionMatchesImplementation":true,"expectedFailureCaptureSafe":true,"optionalToolsDiscoveredBeforeUse":true,"queueAndReturnRouteTerminalGatePlanned":true,"historyAuditCompleteBeforeCheckpoint":true},
+  "collectionCaseEvidence":{"path":"work/OPENCV_EDGE_NOTCH_O3F9/O3F9_ENDPOINT_REHEARSAL_GATE.json","sha256":"PENDING","requiredCaseIds":["SUCCESS","INJECTED_DEV6_FAILURE"]},
+  "legacyEvidenceException":{"used":false,"newExecutionAuthorized":false,"futureReuseAllowed":false,"blockedArtifacts":[]},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

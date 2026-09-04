@@ -1,0 +1,31 @@
+{
+  "schema":"argos_recovery_observation_evidence_v1",
+  "createdUtc":"2026-09-03T22:39:54Z",
+  "state":"PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId":"O3F8R13T3_TARGETED_PREFLIGHT_MISSING_PACKAGE_PIN_20260903",
+  "exactSourcesProved":true,
+  "fieldSpecificExpectedObservedRecorded":true,
+  "directEndpointEvidence":false,
+  "matchingSignedTerminalResponse":true,
+  "mutationsPerformed":false,
+  "requestId":"REQ_20260903T222942032Z_142EFC7E3A86",
+  "responseId":"R_B10893491CAE_20260903223211953_2cdb1d76",
+  "responseSignatureVerified":true,
+  "observations":[
+    {"field":"targetedPreflight","expected":"PASS_O3F8_R13_TARGETED_PREFLIGHT","observed":"FAILED_BEFORE_WORKER_LAUNCH"},
+    {"field":"inheritedPinClosure","expected":"9 hash-pinned files","observed":"8 present; Test-O3F14R11SeedAngles.py absent"},
+    {"field":"t4FlatPackageClosure","expected":"all 9 pins pass","observed":"PASS_O3F8_R13_PACKAGE_CLOSURE_T4"}
+  ],
+  "terminalFailureGatePath":"work/OPENCV_EDGE_NOTCH_O3F8R13T4/O3F8R13T3_TERMINAL_FAILURE_GATE.json",
+  "terminalFailureGateSha256":"4F85991615AF330FF0F80C452B23E3DEF9C0AA8439B8ED6778BED782137CF994",
+  "pinAndPackageGatePath":"work/OPENCV_EDGE_NOTCH_O3F8R13T4/O3F8R13T4_PIN_AND_PACKAGE_GATE.json",
+  "pinAndPackageGateSha256":"481A289E264BE69FF3412B0F4EA6A78F3C0E35757BED9337AC2F60BF60DCC852",
+  "supportedRemedy":"B",
+  "exactCorrection":"Add the exact missing frozen seed-angle test and execute the inherited package-pin assertion from the exact flat payload before publication.",
+  "detectorChangedFromT3":false,
+  "selectorOrThresholdChanged":false,
+  "workerStarted":false,
+  "sourceImageBytesRead":false,
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

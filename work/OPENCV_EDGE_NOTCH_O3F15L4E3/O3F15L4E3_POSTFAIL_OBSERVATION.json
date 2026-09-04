@@ -1,0 +1,26 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-03T16:21:00Z",
+  "state": "PASS_O3F15L4E3_EXACT_POSTFAIL_OBSERVATION",
+  "incidentId": "O3F15L4_FRONT_GATE_AND_FULL978_LAUNCH_20260903",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "requestId": "REQ_20260903T160913268Z_F8A07CFA345E",
+  "responseId": "R_BE83F07DE6AD_20260903161350667_e63dc3b0",
+  "responseZipSha256": "818CE894D16B649D51EF8D962D3554B5733B5FA64FE0DF7DC685BEA21D3D68DA",
+  "responseSignatureVerified": true,
+  "observations": [
+    {"field":"endpointState","expected":"terminal","observed":"FAILED"},
+    {"field":"stderr","expected":"exact bounded failure","observed":"O3F15L4E2 runner GATE failed."},
+    {"field":"changedRunnerGateRoot","expected":"D:/O3F15L4E2G","observed":"D:/O3F15L4E2G"},
+    {"field":"unchangedFocusedExpectedGateRoot","expected":"D:/O3F15L4G","observed":"D:/O3F15L4G"},
+    {"field":"runnerHashChanged","expected":true,"observed":true}
+  ],
+  "supportedRemedy": "B",
+  "remedyMeaning": "Keep the original hash-bound runner and focused test, reuse only exact passed E1 gate components, and execute the missing R10 seed gate.",
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

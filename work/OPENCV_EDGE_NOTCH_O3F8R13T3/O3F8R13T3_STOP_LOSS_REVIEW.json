@@ -1,0 +1,20 @@
+{
+  "schema":"argos_recovery_workflow_review_clearance_v1",
+  "createdUtc":"2026-09-03T22:21:00Z",
+  "state":"PASS_O3F8R13T3_WORKFLOW_REVIEW_STOP_LOSS_CLEARED",
+  "incidentId":"O3F8R13T2_TARGETED_PREFLIGHT_PIN_OVERWRITE_20260903",
+  "singleMutationAttemptAuthorized":true,
+  "signedFailureCount":1,
+  "latestFailureEvidence":"work/OPENCV_EDGE_NOTCH_O3F8R13T3/O3F8R13T2_TERMINAL_FAILURE_GATE.json",
+  "latestFailureEvidenceSha256":"51D02E0CC9719F89F590B08156C744A666DB345591A52D4BA1A05995AB545FD2",
+  "disallowedNextActions":["RETRY_T2","CHANGE_R13_DETECTOR","RUN_FULL_978","CHANGE_PORTAL_ROUTE","RELAX_SELECTOR_OR_THRESHOLD","CLEAR_HOLDS"],
+  "clearedSuccessor":"O3F8R13T3",
+  "clearedDesign":"Keep R13 unchanged, isolate fresh R13 execution from historical R11 evidence validation, use fresh T3 roots, and expose bounded stderr for all child gates.",
+  "pinAndPackageGateSha256":"0FF64ABC4C5887805192B0FF15658E3965DB1A05302295A134E2EE374B2717A7",
+  "sourceMutationAllowed":false,
+  "existingTaskOrProcessActionAllowed":false,
+  "providerActivationAllowed":false,
+  "automaticRetryAllowed":false,
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

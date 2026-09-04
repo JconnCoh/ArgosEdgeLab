@@ -1,0 +1,48 @@
+{
+  "schema": "argos_recovery_workflow_review_clearance_v1",
+  "createdUtc": "2026-09-03T16:41:00Z",
+  "state": "PASS_O3F15L4E4_WORKFLOW_REVIEW_STOP_LOSS_CLEARED",
+  "incidentId": "O3F15L4_FRONT_GATE_AND_FULL978_LAUNCH_20260903",
+  "singleMutationAttemptAuthorized": true,
+  "incident": "O3F15L4_FRONT_GATE_AND_FULL978_LAUNCH",
+  "signedFailures": [
+    {
+      "revision": "O3F15L4E1",
+      "cause": "R10 dependency omitted from the signed payload",
+      "failureEvidence": "work/OPENCV_EDGE_NOTCH_O3F15L4E1/O3F15L4E1_TERMINAL_FAILURE_GATE.json",
+      "sha256": "0514EE4474AF499B7618E27F02E151B010B9FAF8E4DCE555BBD4061F613870CB"
+    },
+    {
+      "revision": "O3F15L4E2",
+      "cause": "fresh gate-root edit contradicted the unchanged focused test exact-root assertion",
+      "failureEvidence": "work/OPENCV_EDGE_NOTCH_O3F15L4E2/O3F15L4E2_SIGNED_GATE_FAILURE.json",
+      "sha256": "B2FC68FB714CCD7188BF38E8EFC71FE247C3317459C2967B4FE4BE1E43E434E2"
+    },
+    {
+      "revision": "O3F15L4E3",
+      "cause": "R10 transitive same-directory dependency closure omitted from the signed payload",
+      "failureEvidence": "work/OPENCV_EDGE_NOTCH_O3F15L4E3/O3F15L4E3_TERMINAL_FAILURE_GATE.json",
+      "sha256": "17E85C3CD87EECD83DA2649D0A0364BB64473758411608B27FA79896E0C3F491"
+    }
+  ],
+  "disallowedNextActions": [
+    "RETRY_E1_E2_OR_E3",
+    "EDIT_DETECTOR_SELECTOR_RUNNER_OR_FOCUSED_TEST",
+    "RELAX_SELECTOR_OR_THRESHOLD",
+    "ADD_ONLY_THE_FIRST_MISSING_IMPORT_WITHOUT_CLOSURE"
+  ],
+  "clearedSuccessor": "O3F15L4E4",
+  "clearedDesign": "Keep all detector, selector, runner, source, and passed-gate bytes exact; add the complete statically proven R10 transitive payload closure R6, R5, V2 core, and topology in one fresh package.",
+  "dependencyClosureGate": {
+    "path": "work/OPENCV_EDGE_NOTCH_O3F15L4E4/O3F15L4E4_PYTHON_DEPENDENCY_CLOSURE_GATE.json",
+    "sha256": "51D7F5EA0572C49997BD15A1E876DDDBC498FBC9960B666621005C657E1B968D"
+  },
+  "originalRunnerSha256": "3C403376521B74E3A6DB1C4E008CE8DB36D8D99AE9A0FD7C1FA51481024DBEF4",
+  "r10Sha256": "0EEEE7A396E918AF44082EC0930871A6A94C1FBB59D3F5CEF1AC34D1273745FA",
+  "sourceMutationAllowed": false,
+  "existingTaskOrProcessActionAllowed": false,
+  "providerActivationAllowed": false,
+  "automaticRetryAllowed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

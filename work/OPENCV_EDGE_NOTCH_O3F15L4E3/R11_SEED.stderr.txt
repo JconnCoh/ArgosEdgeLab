@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260903T162443258Z_5A337C6D86A7.ready\payload\Test-O3F14R11SeedAngles.py", line 257, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260903T162443258Z_5A337C6D86A7.ready\payload\Test-O3F14R11SeedAngles.py", line 161, in main
+    r10 = load("argos_o3f14_r10_predecessor", R10_PATH)
+  File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260903T162443258Z_5A337C6D86A7.ready\payload\Test-O3F14R11SeedAngles.py", line 43, in load
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260903T162443258Z_5A337C6D86A7.ready\payload\FullPerimeterWaferTopologyOpenCvR10.py", line 63, in <module>
+    require(dependency_path.is_file(), f"Frozen dependency is missing: {dependency_path}")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260903T162443258Z_5A337C6D86A7.ready\payload\FullPerimeterWaferTopologyOpenCvR10.py", line 35, in require
+    raise ValueError(message)
+ValueError: Frozen dependency is missing: C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\work\OPENCV_EDGE_NOTCH_O3M9\NativeFrontsideWaferPoseOpenCvV2R6.py

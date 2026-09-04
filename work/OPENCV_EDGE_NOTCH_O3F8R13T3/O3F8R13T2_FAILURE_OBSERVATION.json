@@ -1,0 +1,32 @@
+{
+  "schema":"argos_recovery_observation_evidence_v1",
+  "createdUtc":"2026-09-03T22:20:00Z",
+  "state":"PASS_ARGOS_RECOVERY_OBSERVATION",
+  "incidentId":"O3F8R13T2_TARGETED_PREFLIGHT_PIN_OVERWRITE_20260903",
+  "exactSourcesProved":true,
+  "fieldSpecificExpectedObservedRecorded":true,
+  "directEndpointEvidence":false,
+  "matchingSignedTerminalResponse":true,
+  "mutationsPerformed":false,
+  "requestId":"REQ_20260903T221126334Z_53906DE4237E",
+  "responseId":"R_DEDB859387B6_20260903221447809_249692c0",
+  "responseSignatureVerified":true,
+  "observations":[
+    {"field":"targetedPreflight","expected":"PASS_O3F8_R13_TARGETED_PREFLIGHT","observed":"FAILED_BEFORE_WORKER_LAUNCH"},
+    {"field":"freshExecutionEngine","expected":"R13","observed":"R13"},
+    {"field":"historicalEvidenceEngineBeforeCorrection","expected":"R11","observed":"OVERWRITTEN_TO_R13"},
+    {"field":"historicalEvidenceEngineAfterCorrection","expected":"R11","observed":"R11"}
+  ],
+  "terminalFailureGatePath":"work/OPENCV_EDGE_NOTCH_O3F8R13T3/O3F8R13T2_TERMINAL_FAILURE_GATE.json",
+  "terminalFailureGateSha256":"51D02E0CC9719F89F590B08156C744A666DB345591A52D4BA1A05995AB545FD2",
+  "pinAndPackageGatePath":"work/OPENCV_EDGE_NOTCH_O3F8R13T3/O3F8R13T3_PIN_AND_PACKAGE_GATE.json",
+  "pinAndPackageGateSha256":"0FF64ABC4C5887805192B0FF15658E3965DB1A05302295A134E2EE374B2717A7",
+  "supportedRemedy":"B",
+  "exactCorrection":"Remove only the two assignments that overwrite the returned historical module's R11 path/hash; retain R13 in the L4 fresh-execution module and use fresh T3 output roots.",
+  "detectorChangedFromT2":false,
+  "selectorOrThresholdChanged":false,
+  "workerStarted":false,
+  "sourceImageBytesRead":false,
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

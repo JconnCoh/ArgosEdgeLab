@@ -1,0 +1,31 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-03T15:48:00Z",
+  "state": "PASS_O3F15L4O1_CAPABILITY_GAP_OBSERVATION",
+  "incidentId": "O3F15L4E1_GATE_INNER_DIAGNOSTIC_20260903",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": false,
+  "matchingSignedTerminalResponse": true,
+  "sources": [
+    {
+      "path": "work/OPENCV_EDGE_NOTCH_O3F15L4E1/O3F15L4E1_SIGNED_GATE_FAILURE.json",
+      "sha256": "C53832283CF4647CE0D42EC6CD67B64D7EAC6D392A718D50299133C6AB30667D",
+      "expected": "matching signed terminal response with inner GATE evidence returned",
+      "observed": "matching signed terminal response returned only O3F15L4E1 runner GATE failed"
+    },
+    {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB",
+      "expected": "installed DATA_PULL root covers D:/O3F15L4G",
+      "observed": "two installed DATA_PULL roots cover only the processor review root and D:/KLARFExport"
+    }
+  ],
+  "supportedRemedy": "D",
+  "capabilityChange": "Install one exact JSON allowlist configuration while reusing the qualified generic JSON reader byte-for-byte.",
+  "mutationsPerformed": false,
+  "imageBytesRead": false,
+  "taskOrProcessActionPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

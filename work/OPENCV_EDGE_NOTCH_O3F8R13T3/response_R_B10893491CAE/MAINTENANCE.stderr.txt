@@ -1,0 +1,41 @@
+Targeted PREFLIGHT failed: Traceback (most recent call last):
+  File "D:\O3F8R13T3RT\Run-O3F8R13Targeted.py", line 246, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "D:\O3F8R13T3RT\Run-O3F8R13Targeted.py", line 237, in main
+    result = preflight()
+  File "D:\O3F8R13T3RT\Run-O3F8R13Targeted.py", line 97, in preflight
+    context = l4.preflight_context()
+  File "D:\O3F8R13T3RT\Run-O3F15L4FrontReconcile.py", line 425, in preflight_context
+    o3f14.preflight()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\O3F8R13T3RT\Run-O3F14Staged.py", line 513, in preflight
+    assert_package_pins()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "D:\O3F8R13T3RT\Run-O3F14Staged.py", line 500, in assert_package_pins
+    need(path.is_file() and sha256(path) == expected, f"{label} pin changed: {path}")
+    ~~~~^^^^^
+At C:\ProgramData\ArgosProjectPortalRO\endpoint_jbod\pending\REQ_20260903T222942032Z_142EFC7E3A86.ready\payload\Invoke-
+O3F8R13T3.ps1:86 char:290
++ ... bstring(0,800)};throw ('Targeted PREFLIGHT failed: '+$detail)};$preJs ...
++                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Targeted PREFLI...
+    ~~~~^^^^^:String) [], RuntimeException
+    + FullyQualifiedErrorId : Targeted PREFLIGHT failed: Traceback (most recent call last):
+  File "D:\O3F8R13T3RT\Run-O3F8R13Targeted.py", line 246, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "D:\O3F8R13T3RT\Run-O3F8R13Targeted.py", line 237, in main
+    result = preflight()
+  File "D:\O3F8R13T3RT\Run-O3F8R13Targeted.py", line 97, in preflight
+    context = l4.preflight_context()
+  File "D:\O3F8R13T3RT\Run-O3F15L4FrontReconcile.py", line 425, in preflight_context
+    o3f14.preflight()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\O3F8R13T3RT\Run-O3F14Staged.py", line 513, in preflight
+    assert_package_pins()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "D:\O3F8R13T3RT\Run-O3F14Staged.py", line 500, in assert_package_pins
+    need(path.is_file() and sha256(path) == expected, f"{label} pin changed: {path}")
+    ~~~~^^^^^
+ 
