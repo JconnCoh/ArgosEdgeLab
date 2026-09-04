@@ -4,6 +4,19 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 O3F16 U12 signed four-case package ready — 2026-09-04
+
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U12_SIGNED_FOUR_CASE_PACKAGE_READY_CHECKPOINT_20260904.md`,
+  SHA-256 `8F11EC27D80F2A73D2FFCD7BDE7812C6D628E19AEB41C6E2BE958A09DB2A7D87`.
+- Signed request `REQ_20260904T132109333Z_DEF3809379EC`, ZIP SHA-256
+  `1907EEA13D9EF0888434B160F366F12FE36903891B192EBEC693CE7EC8014147`,
+  is unpublished and unexecuted. R12 SHA-256 remains
+  `1696DBE407E4461B351C6B939C591A4E652E558DF15BF4AC5CEFB369950FF7F6`.
+- Next: publish exactly once, collect only the matching signed terminal
+  response, then pull and inspect the exact U12 archive. No retry, T5,
+  targeted-11, 978, scribe, provider, hold, training, XML, or production action.
+
 ## OCV-03 O3F16 U10 operator review supersession / R12 draft next — 2026-09-04
 
 - Current checkpoint:

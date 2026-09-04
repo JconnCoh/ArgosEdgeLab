@@ -1,36 +1,32 @@
-# Active ArgosEdgeLab state - OCV-03 O3F16 U10 operator supersession / R12 draft - 2026-09-04
+# Active ArgosEdgeLab state - OCV-03 O3F16 U12 signed four-case package ready - 2026-09-04
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
 
-## OCV-03 O3F16 U10 operator review supersedes visual pass / R12 draft next — 2026-09-04
+## OCV-03 O3F16 U12 signed four-case package ready — 2026-09-04
 
-The prior AI-only U10 visual pass is superseded. Signed provenance and all
-returned U10 bytes remain valid diagnostic evidence, but U10 is not approved:
-operator review found unstable lines in dark sectors, stitch-like presentation,
-and no visible or identified notch. Measured unsupported spans reach 3,692
-columns and cyclic path jumps reach 18 radial pixels. The 2,048-column sheet
-cuts are presentation artifacts with at most one-pixel boundary changes, but
-the dark-sector instability is real detector behavior.
+The exact R12 local gate passes and the fresh four-case Project Portal request
+`REQ_20260904T132109333Z_DEF3809379EC` is signed but unpublished. Its 15,674-byte
+ZIP SHA-256 is
+`1907EEA13D9EF0888434B160F366F12FE36903891B192EBEC693CE7EC8014147`.
+R12 remains SHA-256
+`1696DBE407E4461B351C6B939C591A4E652E558DF15BF4AC5CEFB369950FF7F6`.
+Windows PowerShell 5.1 package preflight, harness safety, signed-package
+verification, and the inherited route/path gate pass; the maximum planned
+effective path length is 177.
 
-R12 draft SHA-256
-`1696DBE407E4461B351C6B939C591A4E652E558DF15BF4AC5CEFB369950FF7F6`
-is committed and pushed. It preserves R10, uses global min/max enhancement,
-holds continuity-adjusted pixels out of measured evidence, limits adjacent
-path movement to one pixel, and emits unsegmented 236-by-about-32,000 raw,
-enhanced, and overlay strips. R12 has not executed on JBOD.
-
-Next, finish the exact local R12 gate and use the unchanged recorded route at
-most once for one fresh four-case review-only run. Do not rerun U10 and stop on
-one route failure. After the strip gate passes, run frozen POST2 Slots01/03/17,
-then the exact operator-named genuine microchipout lot as the positive transfer
-cohort before any targeted-11 or 978 expansion. The microchipout lot identity
-is not yet file-backed.
+Next, publish this exact request once with no retry and collect only its
+matching JBOD-signed terminal response. On pass, pull the exact staged U12 ZIP
+read-only and inspect all four BF/DF native-width raw, enhanced, full-band, and
+overlay strips at original detail. After a strip pass, run frozen POST2
+Slots01/03/17, then the exact operator-named genuine microchipout lot before any
+targeted-11 or 978 expansion. The microchipout lot identity is not yet
+file-backed.
 
 Current checkpoint:
-`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U10_OPERATOR_REVIEW_SUPERSEDES_VISUAL_PASS_R12_DRAFT_NEXT_CHECKPOINT_20260904.md`,
-SHA-256 `06C467240D3F5394118896D4AA2728881BA1C0533FD0BBE4E28B5EBA453332E5`.
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U12_SIGNED_FOUR_CASE_PACKAGE_READY_CHECKPOINT_20260904.md`,
+SHA-256 `8F11EC27D80F2A73D2FFCD7BDE7812C6D628E19AEB41C6E2BE958A09DB2A7D87`.
 
 ## OCV-03 O3F16 U10 existing-result visual pass / no tuning — 2026-09-03
 
