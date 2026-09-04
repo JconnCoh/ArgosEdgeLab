@@ -1,0 +1,330 @@
+{
+  "schema": "argos_opencv_scribe_complete_rollover_manifest_v1",
+  "createdLocal": "2026-09-04",
+  "state": "PASS_COMPLETE_SCRIBE_ROLLOVER_CONTEXT_FROZEN",
+  "disposition": "PENDING_GATE",
+  "supersedesCheckpoint": {
+    "path": "work/OPENCV_SCRIBE_R18N/R18N_SIGNED_UNPUBLISHED_READY_CHECKPOINT_20260904.md",
+    "sha256": "79D34E5068616F8386C29579CE3BCD1006C54142CE95C51D616A033B9FAA31B7",
+    "reason": "The predecessor checkpoint accurately described R18N but did not carry the complete scribe-reader lineage, behavioral invariants, validated strings, failure-analysis plan, or isolated-worktree rollover hazards."
+  },
+  "workspace": {
+    "onlyAuthorizedWorktree": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv",
+    "branch": "codex/opencv-scribe-deciphering",
+    "preHandoffCommit": "1de1e880d620d6f326bf914a76d0365e86fb1d89",
+    "successorThreadId": "01a06c5f-6e03-7e01-b6f0-e4486a98eebc",
+    "successorSavedCwdIsNotAuthority": true,
+    "requiredFirstAction": "Set-Location to onlyAuthorizedWorktree and verify branch, clean state, local HEAD, and origin branch tip against the exact handoff commit named in the delegation before reading or acting.",
+    "forbiddenRoots": [
+      "C:\\Users\\joshua.conn\\.codex\\worktrees\\c290\\ArgosEdgeLab",
+      "C:\\Users\\joshua.conn\\.codex\\worktrees\\ea39\\ArgosEdgeLab",
+      "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab"
+    ],
+    "forbiddenGitActions": [
+      "merge",
+      "rebase",
+      "reset",
+      "checkout",
+      "branch switch"
+    ],
+    "globalContinuityCaveat": "The branch copy of work/ARGOS_CONTINUITY_STATE.json points to the separate targeted-backside lane. Read it only for global governance and preserved authority; do not follow or modify its backside currentPhaseCheckpoint, activePhase, or nextAction in this isolated scribe task. This manifest and its companion comprehensive checkpoint are the authoritative scribe continuation."
+  },
+  "sessionSafety": {
+    "sourceSessionId": "01a05f15-7a31-7f12-b420-f19745a811e6",
+    "measuredUtc": "2026-09-04T12:38:00.1890777Z",
+    "measuredBytes": 597938927,
+    "measuredMebibytes": 570.239,
+    "disposition": "HARD_STOP_START_FRESH_TASK",
+    "metadataOnly": true,
+    "sessionContentRead": false,
+    "operatorReportedContinuityDegradation": true,
+    "reportedFailure": "A prior rollover supplied too narrow a checkpoint, leaving the successor without the complete scribe context and creating risk of repeated or harmful work.",
+    "healthProbeState": "FAIL_ARGOS_CODEX_SESSION_HEALTH",
+    "healthProbeInputs": {
+      "observedInteractionHealth": "FAIL_DEGRADATION",
+      "unexpectedRetryCount": 0,
+      "repeatedWorkCount": 1,
+      "continuityErrorCount": 1
+    },
+    "mitigation": "The successor was paused before mutation; resume it only with this comprehensive checkpoint and inspect its first actions before allowing independent continuation."
+  },
+  "authority": {
+    "reviewOnly": true,
+    "r18nPublicationAuthorized": false,
+    "literalPublishRequiredAfterThisCheckpoint": true,
+    "maximumR18nPublicationsAfterAuthority": 1,
+    "retryAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "automaticReferenceAdmissionAuthorized": false,
+    "automaticHoldClearanceAuthorized": false,
+    "activationAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "sourceMutationOrDeletionAuthorized": false,
+    "unrelatedTaskProcessQueueOrJbodActionAuthorized": false
+  },
+  "governingFiles": [
+    {"path": "AGENTS.md", "sha256": "BD81AF4FE798D2DAF3C728EC2C0939DD4925B86ED762EF59C2DAE84A54F5F7B8"},
+    {"path": "work/ARGOS_OPENCV_ALL_IMAGE_PROCESSING_MIGRATION.md", "sha256": "A215FABD2325A7D462E8EEC4915FE3E227DD025D5B11143655285FEAE95ACA19"},
+    {"path": "work/ARGOS_OPENCV_ALL_IMAGE_PROCESSING_MIGRATION.json", "sha256": "D495C7459CF5B657B73B35F005BA558BD6C06C1C592D655D3F955A7179646EE4"},
+    {"path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "22377EE66D1D8CE4704C64418DD8C07567821ABB181A6B72E32A241E6D406240"},
+    {"path": "work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md", "sha256": "9C542CF7CB86555E5A357AC492C63B891691D7C9F0DA1103A68079CB01AA1F04"},
+    {"path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.md", "sha256": "F676D392A9E5FF7F7480E3106985170D8366F6B1AC2F3EB54EC9653D38021A49"},
+    {"path": "work/ARGOS_PATH_LENGTH_SAFETY.md", "sha256": "346AD03EBB77005B5189CD81234665BCE3930F9A8B7661BFD69D85EE6AA13370"},
+    {"path": "work/ARGOS_POWERSHELL_WRAPPER_SAFETY.md", "sha256": "9B1F03BEE110D8339B7D39475F24028701A56DA8742A82DB7BDA1BBAC08C0BF3"},
+    {"path": "work/ARGOS_POWERSHELL_HARNESS_SAFETY.md", "sha256": "DA16C7A00356F14E0A12EC440BFCCF6D356CA3CC8CF84D1861507E3F9619B8B5"},
+    {"path": "work/ARGOS_CODEX_TASK_ROLLOVER.md", "sha256": "79E4D3F9324F06A69564CE0A764DA711060941880DB20CD3A61A323C4DC12AF3"},
+    {"path": "work/ARGOS_CODEX_TASK_ROLLOVER.json", "sha256": "E5D2515051DD6B4F84F85738E55007C21EA8F7C1E5BA19F7970BD99F3F170174"},
+    {"path": "work/ARGOS_CODEX_SESSION_SAFETY.md", "sha256": "2E54C32FBC4FA674A63BB116FED1734110016444820AEA48DC90F7E51C73A766"}
+  ],
+  "frozenImplementation": {
+    "reader": {
+      "path": "work/OPENCV_SCRIBE_R18H/ArgosOpenCvScribeV1R18H.py",
+      "sha256": "3AF68D778E297531DD527DD9D65C75FD17BD1FB9C2EC797CB840B10A674532AD"
+    },
+    "cropSweep": {
+      "path": "work/OPENCV_SCRIBE_R18J/ArgosOpenCvScribeCropSweepR18J.py",
+      "sha256": "EF4C58589CA8885B5CBDE0A989D3F94EE8C447925818DC0FA4E50B26B87A8B9F"
+    },
+    "corpusWorker": {
+      "path": "work/OPENCV_SCRIBE_R18J/Run-R18JScribeCorpus.py",
+      "sha256": "E8C193024317C683EA0E8DC999F3D632BF113B65C1E6F528949AE5B33F83A069"
+    },
+    "baseReferenceManifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "supplementalReferenceManifest": {
+      "path": "work/OPENCV_SCRIBE_R18F/reference_bank/SUPPLEMENTAL_GLYPH_REFERENCE_MANIFEST.json",
+      "sha256": "FD60D494A25B489A8F1D8581217457AD67B02C98D54CA0A5400FAC0611537114",
+      "counts": {
+        "J": 2,
+        "K": 2,
+        "Q": 2,
+        "W": 1,
+        "X": 1,
+        "Z": 1
+      },
+      "missingBodyLabels": ["I", "O", "V", "Y"]
+    },
+    "payloadManifest": {
+      "path": "work/OPENCV_SCRIBE_R18J/R18J_PAYLOAD_MANIFEST.json",
+      "sha256": "BF2D0E809915ADEB503E2B7ADEFB3DCAC30903025D851B26067C9FB5B90DC57D"
+    }
+  },
+  "lineageEvidence": [
+    {"path": "work/OPENCV_SCRIBE_R18D/R18D_WZ_REFERENCE_LOCAL_CHECKPOINT_20260903.md", "sha256": "815853F1F701370CF630B4E951B8F1930B3CF516F850BA2E83742159D7AD952C"},
+    {"path": "work/OPENCV_SCRIBE_R18D/R18D_LOCAL_GATE.json", "sha256": "0E3D94DBA81B37C83667FE7AE61E17D06476DDC4B466F86C58502EA52471609D"},
+    {"path": "work/OPENCV_SCRIBE_R18F/R18F_LOCAL_FREEZE_BLIND_VALIDATION_READY_CHECKPOINT_20260903.md", "sha256": "DE07B268838E3067F4ACA0EB4C44A63B8B0E599FF59CA8DBE97C585F1A3D72EB"},
+    {"path": "work/OPENCV_SCRIBE_R18F/R18F_BLIND_VISUAL_REVIEW_GATE.json", "sha256": "39D34627E7C1DC00A9943F5810B2F4FEF255F9A705A6007FBA9DF8885D2D21F2"},
+    {"path": "work/OPENCV_SCRIBE_R18G/R18G_DEVELOPMENT_VISUAL_REVIEW_GATE.json", "sha256": "6961A9423C10A4D12248EB7B8F1FE4761E457DEF975E7F3976BF43198D6E9538"},
+    {"path": "work/OPENCV_SCRIBE_R18H/R18H_GENERIC_RUN_STRUCTURE_ROOT_FIX_CHECKPOINT_20260903.md", "sha256": "83A5802BA1FAF90335CC533E8D2B7E7027FBA4EFC064B8113CD0D7E4114FD0ED"},
+    {"path": "work/OPENCV_SCRIBE_R18H/R18H_PRE_FULL_KLARF_WORK_PLAN_20260903.md", "sha256": "6C4861291E3AB35FE05C65CF720177BE237FE202AF25E3B81D69885969EDD1D8"},
+    {"path": "work/OPENCV_SCRIBE_R18I/R18I_62629_401_METADATA_AND_SPLIT.json", "sha256": "8B006A9802266FA8533DA227CFFFF63708B47809734FF5A2F4E324FE299AD9E1"},
+    {"path": "work/OPENCV_SCRIBE_R18I/R18I_62629_401_SOURCE_HASH_GATE.json", "sha256": "B125865BC44DEEA34AF8A82C31079D6169DCDF226A9671EAD309204C98178617"},
+    {"path": "work/OPENCV_SCRIBE_R18N/R18N_SIGNED_UNPUBLISHED_READY_CHECKPOINT_20260904.md", "sha256": "79D34E5068616F8386C29579CE3BCD1006C54142CE95C51D616A033B9FAA31B7"}
+  ],
+  "behavioralInvariants": [
+    "Use existing processor BF/DF oriented scribe crops first.",
+    "A missing, blank, structurally unusable, boundary-incomplete, or below-floor existing crop may enter only the bounded whole-wafer fallback.",
+    "A blank or wrong-location crop must produce no string and an explicit hold; never choose the least-bad OCR string.",
+    "Whole-wafer fallback uses source-pixel 2000x800 candidate crops and may inspect BF and DF, DARK and BRIGHT polarity, and bounded direction hypotheses.",
+    "Do not depend on notch alignment, a fixed notch-relative scribe position, die grid, repeating grid, or a solid line below the scribe.",
+    "A coherent structure score may prove that a crop contains a scribe band but may not choose OCR channel, polarity, direction, character, or identity.",
+    "Darkfield is not privileged; select only by image evidence while retaining close BF/DF alternatives as holds.",
+    "Never reconstruct, redraw, synthesize, or rank characters from artificial dot maps, threshold-component centroids, or hallucinated blob dots.",
+    "Checksum is VERIFY_IMAGE_FIRST_ONLY. It may verify or create a disagreement hold, but it may not rewrite a glyph, select a hypothesis, or rescue a weak crop.",
+    "Lot/MES information may locate candidate examples and verify an image-first read; it may not select the string.",
+    "R18H's generic run-structure tie-break applies to all body labels only when the two appearance leaders are within 0.02 and structural margin is at least 0.20; it is not a T/7 exception.",
+    "Any close-character change must regress all frozen visible strings, blank controls, blind strings, and leave-one-physical-identity-out references; never fix only the exposed pair.",
+    "Every result remains a proposal or hold with identityAccepted=false."
+  ],
+  "validatedEvidence": {
+    "misplacedScribe": {
+      "physicalIdentity": "POST2_S17_MISPLACED",
+      "string": "6KB71041XDE5",
+      "evidencePath": "work/OPENCV_SCRIBE_R13B/R13B_LOCAL_REAL_IMAGE_GATE.json",
+      "evidenceSha256": "CA0B6227641D5D21E569020A1408B778A95C92533041A30CAC32C98A6C225E83",
+      "mustRemainExact": true
+    },
+    "r18hFrozenVisibleStrings": [
+      "1878P076FEE6",
+      "L0751043FEC4",
+      "8365N004FEC6",
+      "1484P068SUD6",
+      "147JQ121SUE7",
+      "1484P102SUC0",
+      "9508R043FED4",
+      "1478T158SUC5",
+      "146J7043SUE2"
+    ],
+    "r18fBlindStrings": [
+      "148AW101SUC4",
+      "2969P018FEE3",
+      "1478T009SUA0",
+      "147JQ120SUA5"
+    ],
+    "r18gDevelopmentStrings": [
+      "L0751037FEA2",
+      "1478T161SUG7",
+      "146XF113SUA5"
+    ],
+    "additionalDevelopmentStrings": [
+      "148AW102SUG6",
+      "13DCK060SUF5",
+      "1480J017SUH0",
+      "148AW103SUD5",
+      "147Z6157SUA5"
+    ],
+    "operatorConfirmedGlyphFacts": [
+      "13DCK060SUF5 position 2 is 3 and position 5 is K.",
+      "The W in 148AW103SUD5 and the Z in 147Z6157SUA5 were explicitly confirmed; their single examples remain provisional references, not identity acceptance.",
+      "Slot24 in 62629-401_20260902002921 is 143B0083SUE6."
+    ],
+    "blankWrongLocationControls": [
+      "Lot-62546-481-POST2_20260713155808_Slot18",
+      "dev-01-post-8-19_20260819164148_Slot01",
+      "Lot-62546-481-POST2_20260713155808_Slot23",
+      "62627-182_20260810050905_Slot23",
+      "62613-842A-test_20260730053955_Slot25"
+    ],
+    "r18hGate": {
+      "path": "work/OPENCV_SCRIBE_R18H/R18H_FAST_GATE.json",
+      "sha256": "33719DE1119BC87906B6BD0501B8F2A1A4462F1F111915C4E245B7BF789E4508",
+      "visibleExact": 9,
+      "r18gDevelopmentExact": 3,
+      "leaveOnePhysicalIdentityOutReferences": 465,
+      "previouslyCorrectHarmed": 0
+    },
+    "slot24CropGate": {
+      "path": "work/OPENCV_SCRIBE_R18I/R18I_SLOT24_CROP_DEMONSTRATION_GATE.json",
+      "sha256": "CB13E9BD9F4C8854BD07D02866D3702366BFFA85ADB2B108981D56BE7B2690AC",
+      "string": "143B0083SUE6",
+      "crop": "BF DARK 2000x800 source pixels",
+      "notchGridLineOrSyntheticDotsUsed": false
+    },
+    "localCorpusGate": {
+      "path": "work/OPENCV_SCRIBE_R18J/R18J_CORPUS_LOCAL_GATE.json",
+      "sha256": "2803AEE7EF2C1C8993BF279F4F3C1F305B375E4018E1DFC344A8A678A76EA03E",
+      "topImageFirstString": "143B0083SUE6",
+      "closeAlternative": "103B0083SUE6",
+      "state": "HOLD_SCRIBE_MULTIPLE_CLOSE_IMAGE_FIRST_STRINGS"
+    }
+  },
+  "terminalAttemptHistory": [
+    {
+      "revision": "R18J2",
+      "requestId": "REQ_20260904T014700000Z_R18J2",
+      "outcome": "SIGNED_TERMINAL_FAILURE_NO_RETRY",
+      "cause": "Nonexistent proposal root D:\\AFCV1\\review\\identity\\proposals.",
+      "gatePath": "work/OPENCV_SCRIBE_R18J/R18J2_SIGNED_TERMINAL_FAILURE_GATE.json",
+      "gateSha256": "2907832D0C9475DF66A60A428FCE8D3094D45EA485B907877226DD7A9C51AE98"
+    },
+    {
+      "revision": "R18J2_POST_FAILURE_OBSERVATION",
+      "outcome": "PASS_SIGNED_OBSERVATION",
+      "fact": "Installed proposal root is C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals.",
+      "gatePath": "work/OPENCV_SCRIBE_R18J/R18J2_POST_FAILURE_OBSERVATION_EVIDENCE.json",
+      "gateSha256": "084B2698CDE397CE39B4BE315B9FDEE4F578B50B631192977B5BDEAE398BBB17"
+    },
+    {
+      "revision": "R18K",
+      "outcome": "SIGNED_LOCAL_WITHDRAWN_UNPUBLISHED",
+      "cause": "Deep packaged leaf effective path length 206; never published or executed.",
+      "gatePath": "work/OPENCV_SCRIBE_R18K/R18K_SIGNED_UNPUBLISHED_PATH_WITHDRAWAL.json",
+      "gateSha256": "D07987EED674F6805B468628227ADE52EAA8451F1F037E850DAD5572E125D417"
+    },
+    {
+      "revision": "R18L",
+      "requestId": "REQ_R18L_20260904A",
+      "outcome": "SIGNED_TERMINAL_FAILURE_NO_RETRY",
+      "cause": "Portal did not translate manifest proposalRoot into a CLI argument, so the old entrypoint default was used.",
+      "gatePath": "work/OPENCV_SCRIBE_R18L/R18L_SIGNED_TERMINAL_FAILURE_GATE.json",
+      "gateSha256": "DDB962620207A13B5580416837A26EF8155A2DFC4E71177B90B0932E24BDB37C"
+    },
+    {
+      "revision": "R18M",
+      "requestId": "REQ_R18M_20260904A",
+      "outcome": "SIGNED_TERMINAL_FAILURE_NO_RETRY",
+      "cause": "The route gate omitted the actual 173-character supplemental-manifest payload leaf; effective length 205 was rejected before write.",
+      "gatePath": "work/OPENCV_SCRIBE_R18M/R18M_SIGNED_TERMINAL_FAILURE_GATE.json",
+      "gateSha256": "6D80CED476B7504E86A948DA95F8273AD86ED7ADE0EB29EDD6256A976875FA43"
+    }
+  ],
+  "r18n": {
+    "requestId": "REQ_R18N1",
+    "state": "SIGNED_LOCAL_UNPUBLISHED",
+    "readyZipPath": "work/OPENCV_SCRIBE_R18N/final/REQ_R18N1.ready.zip",
+    "readyZipBytes": 150135,
+    "readyZipSha256": "198F365EF1B21739A9D6D7E67628F45751641ECE17112C01CE9A3F586431BEE4",
+    "requestManifestSha256": "2031B32D26DF561F3A8ADD35C3D60EF853CB9A630B1993F899A71ECF993B8A0E",
+    "requestSignatureSha256": "DE65F4464919E1B2730CEA81DAFE87EEF2378E01E5F8229F30A21D0C5DBD9632",
+    "entrypointPath": "work/OPENCV_SCRIBE_R18N/Invoke-R18NCorpusLaunch.ps1",
+    "entrypointSha256": "0B75F178A4D73668DBD76E0F07A820E16897DA40D0466A6FBA84806A8AFCD746",
+    "sourceRoot": "D:\\KLARFExport",
+    "proposalRoot": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+    "workRoot": "D:\\A2\\w\\ocv\\R18N1",
+    "outputRoot": "D:\\A2\\o\\ocv\\R18N1",
+    "actualZipMemberCount": 27,
+    "actualZipMemberSetSha256": "02D888A6921BF16695C262B821FF894DE5BCF3AF42F5E192B544491C233003B8",
+    "expandedPathCandidateCount": 127,
+    "roundTripPathCandidateCount": 26,
+    "maximumEffectiveLengthWith32Reserve": 196,
+    "unsafePathCount": 0,
+    "finalPackageGate": {
+      "path": "work/OPENCV_SCRIBE_R18N/R18N_FINAL_PACKAGE_GATE.json",
+      "sha256": "865B96A8775F30A7D4DC7B81A65C428B4CB2B816EF3B5D5160F4CE221BD41A73"
+    },
+    "roundTripPathGate": {
+      "path": "work/OPENCV_SCRIBE_R18N/R18N_FULL_ROUND_TRIP_PATH_GATE.json",
+      "sha256": "D7230106F89C80062E2C64D018441554A0ED64D5FD25959792930F3DA71C7967"
+    },
+    "exactPackagePathGate": {
+      "path": "work/OPENCV_SCRIBE_R18N/R18N_EXACT_PACKAGE_PATH_GATE.json",
+      "sha256": "7265749BAF77759B973CB58BDCAA33094B4A7A353AE165E8B1E3AC095891AF74"
+    },
+    "workflowReviewClearance": {
+      "path": "work/OPENCV_SCRIBE_R18N/R18N_WORKFLOW_REVIEW_CLEARANCE.json",
+      "sha256": "E82EECA3204683FF99FCA23DE58F5A05D0DDA8B2F2E45F5447B5D4C8C3496F5D"
+    },
+    "preactionSha256": "AAF77F58FCF74002EDA06012207182D0A80459153D43A962684FE4A2D94E1460",
+    "recoveryIntentSha256": "A8B192B886A00FDE58D235F720845C58456B06346AFDD7947A75693DF28904C2",
+    "externalMutationPerformed": false,
+    "workerStarted": false,
+    "imageBytesRead": false
+  },
+  "nextAction": {
+    "beforeLiteralPublish": "Wait. Do not create publication authority, publisher, queue request, response collector, JBOD action, or any external mutation.",
+    "afterLiteralPublish": [
+      "Re-hash the unchanged R18N ZIP and all pinned gates; do not rebuild or resign it.",
+      "Create a fresh narrow R18N publication-authority record and exact R18N publisher only.",
+      "Run required governance, clone-remediation, PowerShell harness/wrapper, continuity, exact queue-state, path, signature, branch, and create-new preflight gates.",
+      "Require the dedicated worktree clean and local HEAD equal origin/codex/opencv-scribe-deciphering.",
+      "Require zero pending portal requests and absence of REQ_R18N1 at upload, ready, and processed paths.",
+      "Publish work/OPENCV_SCRIBE_R18N/final/REQ_R18N1.ready.zip exactly once with create-new semantics.",
+      "Collect only the matching signed terminal response and verify sourceRole JBOD plus signer thumbprint DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC.",
+      "If the response is FAILED, preserve terminal evidence and stop with no retry.",
+      "If launch passes, verify LAUNCH.json names D:\\A2\\o\\ocv\\R18N1 and the owned worker before claiming execution; portal acceptance alone is not launch proof."
+    ],
+    "postLaunchCorpus": [
+      "Treat LAUNCH.json as launch evidence only; do not claim corpus completion until COMPLETE.json exists and is collected from the exact fresh output root.",
+      "Monitor only the R18N-owned output and process through separately authorized bounded read-only/status actions; do not touch unrelated processes, tasks, queues, or roots.",
+      "Expected outputs are INVENTORY.json, RUNNING.json, per-case c/<safe-id>/RESULT.json, and terminal COMPLETE.json under D:\\A2\\o\\ocv\\R18N1.",
+      "Verify every result has identityAccepted=false, reviewOnly=true, no source mutation, and a state/proposal/hold consistent with its evidence.",
+      "Create a failure-first analysis queue grouped by inventory/source pairing, existing-crop localization, whole-wafer localization, appearance/channel/polarity, segmentation/grid boundary, missing I/O/V/Y reference, close-character arbitration, checksum disagreement, and confidence/hold reason.",
+      "Do not alter the frozen reader or references from corpus output. Any proposed correction requires a fresh namespace, frozen development/independent split, smallest regression, and explicit authority.",
+      "The suspected-resist lot 62629-401_20260902002921 remains a mandatory appearance-regime check; Slot24 truth 143B0083SUE6 is the cropping acceptance case and Slot25 remains the independent partition unless later file-backed evidence supersedes it."
+    ]
+  },
+  "requiredReadOrderAfterWorkspaceVerification": [
+    "AGENTS.md",
+    "work/OPENCV_SCRIBE_R18N/R18N_COMPLETE_SCRIBE_ROLLOVER_CHECKPOINT_20260904.md",
+    "work/OPENCV_SCRIBE_R18N/R18N_COMPLETE_SCRIBE_ROLLOVER_MANIFEST.json",
+    "work/OPENCV_SCRIBE_R18N/R18N_SIGNED_UNPUBLISHED_READY_CHECKPOINT_20260904.md",
+    "work/OPENCV_SCRIBE_R18H/R18H_GENERIC_RUN_STRUCTURE_ROOT_FIX_CHECKPOINT_20260903.md",
+    "work/OPENCV_SCRIBE_R18H/R18H_PRE_FULL_KLARF_WORK_PLAN_20260903.md",
+    "work/OPENCV_SCRIBE_R18I/R18I_SLOT24_CROP_DEMONSTRATION_GATE.json",
+    "work/OPENCV_SCRIBE_R18J/R18J_CORPUS_LOCAL_GATE.json",
+    "work/OPENCV_SCRIBE_R18N/R18N_WORKFLOW_REVIEW_CLEARANCE.json",
+    "work/OPENCV_SCRIBE_R18N/R18N_FULL_ROUND_TRIP_PATH_GATE.json",
+    "work/OPENCV_SCRIBE_R18N/R18N_FINAL_PACKAGE_GATE.json"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "argos_opencv_scribe_complete_rollover_gate_v1",
+  "createdLocal": "2026-09-04",
+  "state": "PASS_COMPLETE_SCRIBE_ROLLOVER_VALIDATION",
+  "disposition": "PENDING_GATE",
+  "worktree": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv",
+  "branch": "codex/opencv-scribe-deciphering",
+  "preHandoffCommit": "1de1e880d620d6f326bf914a76d0365e86fb1d89",
+  "checkpoint": {
+    "path": "work/OPENCV_SCRIBE_R18N/R18N_COMPLETE_SCRIBE_ROLLOVER_CHECKPOINT_20260904.md",
+    "bytes": 17434,
+    "sha256": "898F79913F3E210D8D074C895D4F0742CAB2C585D99A1CE6AEC53E5A0BDC2484"
+  },
+  "manifest": {
+    "path": "work/OPENCV_SCRIBE_R18N/R18N_COMPLETE_SCRIBE_ROLLOVER_MANIFEST.json",
+    "sha256": "1AF8D4150B26DB7666900C5B0508C8A3723B635CB6C1D6DC02CA53469CA6D3C2"
+  },
+  "validation": {
+    "fileHashChecks": 43,
+    "requiredReadPaths": 11,
+    "allFilesPresent": true,
+    "allHashesMatched": true,
+    "jsonParsed": true,
+    "gitDiffCheckPassed": true,
+    "frozenReaderMatched": true,
+    "frozenCropSweepMatched": true,
+    "frozenCorpusWorkerMatched": true,
+    "frozenReferenceManifestMatched": true,
+    "globalProjectContinuityPassed": true,
+    "globalContinuityPointerIsOutOfScopeBackside": true,
+    "sessionSafetyState": "HARD_STOP_START_FRESH_TASK",
+    "sessionHealthState": "FAIL_ARGOS_CODEX_SESSION_HEALTH",
+    "sessionContentRead": false
+  },
+  "r18n": {
+    "requestId": "REQ_R18N1",
+    "readyZipPath": "work/OPENCV_SCRIBE_R18N/final/REQ_R18N1.ready.zip",
+    "readyZipBytes": 150135,
+    "readyZipSha256": "198F365EF1B21739A9D6D7E67628F45751641ECE17112C01CE9A3F586431BEE4",
+    "signed": true,
+    "published": false,
+    "externalMutationPerformed": false,
+    "workerStarted": false,
+    "imagesRead": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "literalPublishStillRequired": true,
+    "publicationAuthorized": false,
+    "retryAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "automaticReferenceAdmissionAuthorized": false,
+    "automaticHoldClearanceAuthorized": false,
+    "activationAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false
+  },
+  "successorThread": {
+    "threadId": "01a06c5f-6e03-7e01-b6f0-e4486a98eebc",
+    "pausedBeforeMutation": true,
+    "mustBeResumedWithSupersedingCheckpoint": true,
+    "firstWorkMustBeInspectedBySourceTask": true
+  },
+  "nextAction": "Commit and push this handoff, require clean matching dedicated branch tips, resume the paused successor with the exact handoff commit/checkpoint/manifest/gate hashes, and inspect its first response. Do not publish R18N until the operator separately says literal PUBLISH."
+}
