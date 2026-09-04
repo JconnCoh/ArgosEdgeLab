@@ -1,8 +1,24 @@
-# Active ArgosEdgeLab state - OCV-03 frontside O3F8 R13 T5 targeted child binding ready - 2026-09-03
+# Active ArgosEdgeLab state - OCV-03 O3F8 R13 T5 targeted complete / overlay analysis next - 2026-09-03
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3F8 R13 T5 targeted complete / overlay analysis next — 2026-09-03
+
+The exact T5 launch response and one read-only results response both verify
+against the pinned JBOD signer. All 11 targeted pairs executed under R13 with
+zero execution errors. Ten report review-only candidate passes; only the known
+rare-hotspot `PatternedFront ... Slot16|FRONT` remains
+`HOLD_NO_BF_TOPOLOGY_DF_RADIAL_NOTCH`. Maximum DF candidates were 41 against
+the frozen resource ceiling 64. No numeric threshold or post-result selector
+was relaxed.
+
+This proves execution, not visual correctness. No T5 manifest or overlay has
+yet been collected or inspected, and the full 978 run is not authorized. The
+next fresh task must pull all 11 case manifests and detector-produced review
+overlays/crops once, verify provenance, and inspect every case in Ultra. Scribe
+remains owned by the separate worktree.
 
 ## OCV-03 O3F8 R13 T5 signed targeted child-binding ready — 2026-09-03
 

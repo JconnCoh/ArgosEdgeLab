@@ -4,6 +4,20 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 O3F8 R13 T5 targeted complete / overlay analysis next — 2026-09-03
+
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F8R13T5_TARGETED_COMPLETE_OVERLAY_ANALYSIS_NEXT_CHECKPOINT_20260903.md`,
+  SHA-256 `9E0E10DBEF2A66D9782621187432791F7FDE257AF254980E4464E853CF1202FD`.
+- Terminal gate:
+  `work/OPENCV_EDGE_NOTCH_O3F8R13T5/O3F8R13T5_TARGETED_TERMINAL_GATE.json`,
+  SHA-256 `37F2182B7864215F362B96F69A4FC57C12A0F6DEFE12F94B8BFFB849C39B379D`.
+- Result: 11/11 R13 executions, zero execution errors, ten candidate passes,
+  and only the existing rare-hotspot Slot16 detector hold. No relaxation.
+- Next: one bounded read-only pull of all 11 case manifests and review
+  overlays/crops, then complete Ultra visual inspection. Full 978 remains
+  unauthorized until that passes. This worktree does not perform scribe.
+
 ## OCV-03 O3F8 R13 T5 targeted child-binding publication — 2026-09-03
 
 - Current checkpoint:
