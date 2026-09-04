@@ -1,32 +1,29 @@
-# Active ArgosEdgeLab state - OCV-03 O3F16 U12 signed four-case package ready - 2026-09-04
+# Active ArgosEdgeLab state - OCV-03 O3F16 U12 launch terminal / archive pull ready - 2026-09-04
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
 
-## OCV-03 O3F16 U12 signed four-case package ready — 2026-09-04
+## OCV-03 O3F16 U12 launch terminal / archive pull ready — 2026-09-04
 
-The exact R12 local gate passes and the fresh four-case Project Portal request
-`REQ_20260904T132109333Z_DEF3809379EC` is signed but unpublished. Its 15,674-byte
-ZIP SHA-256 is
-`1907EEA13D9EF0888434B160F366F12FE36903891B192EBEC693CE7EC8014147`.
-R12 remains SHA-256
+The exact four-case R12 request ran once and matching JBOD-signed response
+`R_3E3DDEADD12A_20260904132820956_b463faaa` is terminal PASS. All four cases
+completed under exact R12 SHA-256
 `1696DBE407E4461B351C6B939C591A4E652E558DF15BF4AC5CEFB369950FF7F6`.
-Windows PowerShell 5.1 package preflight, harness safety, signed-package
-verification, and the inherited route/path gate pass; the maximum planned
-effective path length is 177.
+Fresh `D:/O3F16U12` contains 81 files; summary SHA-256 is
+`7B5760BEBFB4C5096201A8D81535D27807D6EA6331510BC85C194065303A8CBC`.
+The staged archive is 134,273,367 bytes with SHA-256
+`5B80DBF6F71E2DF01D8850F2D2301C9DBE27D258416D2058E5F93DEE9FD3C4F2`.
 
-Next, publish this exact request once with no retry and collect only its
-matching JBOD-signed terminal response. On pass, pull the exact staged U12 ZIP
-read-only and inspect all four BF/DF native-width raw, enhanced, full-band, and
-overlay strips at original detail. After a strip pass, run frozen POST2
-Slots01/03/17, then the exact operator-named genuine microchipout lot before any
-targeted-11 or 978 expansion. The microchipout lot identity is not yet
-file-backed.
+Fresh read-only DATA_PULL request `REQ_20260904T133028436Z_0AF28A2F2529`
+is signed but unpublished. Next, publish it once with no retry, collect only
+its matching signed response, verify and extract the exact U12 archive, and
+inspect every BF/DF strip at original detail. POST2 Slots01/03/17 and the exact
+genuine microchipout lot remain sequenced after a clean U12 strip gate.
 
 Current checkpoint:
-`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U12_SIGNED_FOUR_CASE_PACKAGE_READY_CHECKPOINT_20260904.md`,
-SHA-256 `8F11EC27D80F2A73D2FFCD7BDE7812C6D628E19AEB41C6E2BE958A09DB2A7D87`.
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U12_LAUNCH_TERMINAL_ARCHIVE_PULL_READY_CHECKPOINT_20260904.md`,
+SHA-256 `C5E94DA80620DBCF47DEEF85A805B45B3BDEB82469C27AEF80D6A1A84496A248`.
 
 ## OCV-03 O3F16 U10 existing-result visual pass / no tuning — 2026-09-03
 

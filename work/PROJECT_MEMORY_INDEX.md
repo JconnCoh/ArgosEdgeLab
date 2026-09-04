@@ -4,6 +4,20 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 O3F16 U12 launch terminal / archive pull ready — 2026-09-04
+
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U12_LAUNCH_TERMINAL_ARCHIVE_PULL_READY_CHECKPOINT_20260904.md`,
+  SHA-256 `C5E94DA80620DBCF47DEEF85A805B45B3BDEB82469C27AEF80D6A1A84496A248`.
+- Four-case R12 launch is JBOD-signed terminal PASS. Summary SHA-256 is
+  `7B5760BEBFB4C5096201A8D81535D27807D6EA6331510BC85C194065303A8CBC`;
+  exact staged archive SHA-256 is
+  `5B80DBF6F71E2DF01D8850F2D2301C9DBE27D258416D2058E5F93DEE9FD3C4F2`.
+- Signed unpublished DATA_PULL `REQ_20260904T133028436Z_0AF28A2F2529`, ZIP
+  SHA-256 `F0C5C934E35A28C3161623617BF8E1CC762568A702A35215A73F1F525505BDAB`,
+  requests only that archive. Publish once/no retry, verify and inspect all U12
+  strips. POST2 and the genuine microchipout lot follow only after strip pass.
+
 ## OCV-03 O3F16 U12 signed four-case package ready — 2026-09-04
 
 - Current checkpoint:
