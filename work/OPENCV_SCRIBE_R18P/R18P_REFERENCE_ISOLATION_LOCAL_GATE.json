@@ -1,0 +1,56 @@
+{
+  "schema": "argos_opencv_scribe_r18p_reference_isolation_local_gate_v1",
+  "createdUtc": "2026-09-04T17:10:00Z",
+  "state": "PASS_R18P_REFERENCE_ISOLATION_LOCAL_GATE",
+  "runner": {
+    "path": "work/OPENCV_SCRIBE_R18P/Run-R18PReferenceIsolatedCorpus.py",
+    "bytes": 22040,
+    "sha256": "5B6AA224E844FCEA22DEC6A9D10C863437F039CA73EC258C263DF539905791D0"
+  },
+  "engineSourcesScanned": {
+    "selection": "ALL_PAYLOAD_MANIFEST_PYTHON_FILES",
+    "payloadManifestPath": "work/OPENCV_SCRIBE_R18P/R18P_PAYLOAD_MANIFEST.json",
+    "payloadManifestSha256": "B5E6296C8266542CB34B53F53033858948F7259A7BA5B8D06ED594947F7B7EF6",
+    "count": 12,
+    "allHashAndBytePinsMatched": true
+  },
+  "test": {
+    "path": "work/OPENCV_SCRIBE_R18P/Test-R18PReferenceIsolation.py",
+    "bytes": 8274,
+    "sha256": "551DA6AEACAACEA8C191C0C1CE029681B582317B1136EF667A7827690E7D3A9F"
+  },
+  "cohort": {
+    "path": "work/OPENCV_SCRIBE_R18P/R18P_REVIEW_COHORT.json",
+    "bytes": 6875,
+    "sha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661",
+    "caseCount": 20,
+    "uniqueSourcePairCount": 20,
+    "knownTruthControlCount": 2
+  },
+  "references": {
+    "baseBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "baseManifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "supplementalManifestSha256": "FD60D494A25B489A8F1D8581217457AD67B02C98D54CA0A5400FAC0611537114"
+  },
+  "gates": {
+    "pythonCompilationPassed": true,
+    "aliasInvariantPassed": true,
+    "sourceHashExclusionPassed": true,
+    "engineSourceCount": 12,
+    "engineHashMismatchCount": 0,
+    "hardCodedEngineLiteralCount": 0,
+    "configurationLiteralLeakCount": 0,
+    "sameLineageReferenceSurvivorCount": 0,
+    "knownTruthMinimumExcludedReferenceIdentityCount": 2
+  },
+  "imageBytesRead": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "identityAccepted": false,
+  "preSubmissionContract": {
+    "builderMustInvokeExactGate": true,
+    "builderMustPinGateAndAllEngineHashes": true,
+    "publisherMustRequireFinalPackageGate": true,
+    "publicationAuthorized": false
+  }
+}
