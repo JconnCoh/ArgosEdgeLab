@@ -10767,3 +10767,25 @@ than rerunning it.
   or retry the unchanged multi-case execution. Any later authorized execution
   requires a fresh namespace and a case-bounded design that cannot lose the
   whole cohort to one caller timeout.
+
+## 2026-09-03 — Path gates must enumerate actual final ZIP membership
+
+- Failure signature: signed request `REQ_R18M_20260904A` returned terminal
+  `FAILED` before creating a work/output root or starting the corpus worker.
+  The packaged entrypoint rejected the actual 173-character leaf
+  `payload/files/OPENCV_SCRIBE_R18F/reference_bank/SUPPLEMENTAL_GLYPH_REFERENCE_MANIFEST.json`;
+  with the required 32-character suffix reserve its effective length was 205.
+- Cause: the complete-route gate selected a different 164-character leaf as
+  longest and did not enumerate every actual member of the final signed ZIP at
+  every extraction hop. Its reported maximum effective length of 196 was
+  therefore false for the package it authorized.
+- Mandatory preflight: derive the payload-relative leaf set by enumerating the
+  exact final signed ZIP, not a hand-maintained or predecessor list. Construct
+  every leaf at every extraction root and run the path-budget guard over the
+  complete Cartesian set. Assert that the gate's tested membership count and
+  sorted relative-path hashes equal the final ZIP membership before publish.
+- Recovery: R18M is signed-terminal failed, withdrawn, no-retry, and
+  non-parent. Preserve its exact signed response. Any successor requires a
+  fresh namespace, renewed stop-loss review/intent, and a short request or
+  staging layout whose longest actual ZIP member is below the effective
+  200-character threshold before the first external write.
