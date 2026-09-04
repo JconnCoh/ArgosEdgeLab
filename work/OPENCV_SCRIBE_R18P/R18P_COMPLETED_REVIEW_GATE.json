@@ -1,0 +1,91 @@
+{
+  "schema": "argos_opencv_scribe_r18p_completed_review_gate_v1",
+  "createdUtc": "2026-09-04T17:46:00Z",
+  "state": "HOLD_R18P_K_TO_R_REFERENCE_ISOLATION_REGRESSION",
+  "disposition": "PENDING_GATE",
+  "requestId": "REQ_R18P1",
+  "publication": {
+    "publishedExactlyOnce": true,
+    "requestZipSha256": "0975925ED1079D042701882BE9D61A24CA0BD1977C6078B18E9633E26ECAEEFD",
+    "publishGateSha256": "5AB60C40415549DBB22A008226E0DE196AD7D19D9FBC0032656822A61399D0FA",
+    "retryAuthorized": false
+  },
+  "signedResponse": {
+    "responseId": "R_34D1E491F130_20260904173426235_2683e92e",
+    "responseZipSha256": "961ED9E6461E7A6C96C942F27D532B6DBD5D04A376B9BC1336DA3CE1552E0F02",
+    "state": "PASS_MAINTENANCE_PATCH",
+    "sourceRole": "JBOD",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "signatureVerified": true,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  },
+  "completion": {
+    "outputRoot": "D:\\A2\\o\\ocv\\R18P1",
+    "state": "PASS_R18P_REFERENCE_ISOLATED_REVIEW_ONLY_COMPLETE",
+    "completedUtc": "2026-09-04T17:34:26.204824Z",
+    "completeSha256": "89E8749AC7278EF07BC0562D4F2995124EE593C2DF4446F7CEC61ED9E36B8417",
+    "caseCount": 20,
+    "resultCount": 20,
+    "passStateCount": 18,
+    "ambiguityHoldCount": 2,
+    "caseExecutionErrorCount": 0,
+    "identityAcceptedCount": 0,
+    "authorityViolationCount": 0,
+    "fullWaferImageReadCount": 0
+  },
+  "truthReview": {
+    "configuredTruthCount": 2,
+    "exactCount": 1,
+    "mismatchCount": 1,
+    "mismatch": {
+      "physicalIdentity": "62546-481-POST_20260713041740_Slot22",
+      "expectedTruth": "13DCK060SUF5",
+      "imageFirstString": "13DCR060SUF5",
+      "proposedString": "139CE060SHF5",
+      "selectionScore": 0.9301575105333384,
+      "checksumValid": false,
+      "state": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "caseLineage": "62546-481|SLOT22",
+      "excludedPrototypeCount": 13,
+      "failureClass": "K_TO_R_GENERALIZATION_AFTER_REQUIRED_SAME_LINEAGE_REFERENCE_EXCLUSION"
+    }
+  },
+  "additionalReviewQueue": {
+    "ambiguityHolds": [
+      {
+        "physicalIdentity": "62546-481_20260707164232_Slot08",
+        "closeImageFirstStrings": ["K9663019FEB7", "K9663W19FEB7"]
+      },
+      {
+        "physicalIdentity": "62546-481_20260707164232_Slot10",
+        "closeImageFirstStrings": ["L0430010FEB1", "L04B0010FEB1"]
+      }
+    ],
+    "unverifiedChecksumDisagreement": {
+      "physicalIdentity": "62546-481_20260707164232_Slot21",
+      "imageFirstString": "11HFX135SUE3",
+      "proposedString": "12UFX135SUG3",
+      "checksumValid": false,
+      "truthAvailable": false
+    }
+  },
+  "referenceIsolation": {
+    "sameLineageExclusionExecuted": true,
+    "casesWithExcludedPrototypes": 4,
+    "configuredTruthUsedForSelection": false,
+    "hardCodedLotProductSlotOrTruthAllowed": false
+  },
+  "authority": {
+    "fullKlarfDevelopmentAllowedByThisGate": false,
+    "fullKlarfPublicationAllowedByThisGate": false,
+    "identityAcceptanceAuthorized": false,
+    "automaticReferenceAdmissionAuthorized": false,
+    "trainingAuthorized": false,
+    "activationAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "reviewOnly": true
+  },
+  "nextAction": "Do not build or publish a full-KLARF successor. Correct the generic K-versus-R reference-isolated generalization defect in a fresh development namespace, then rerun the smallest independent truth and frozen regression gate before reconsidering a full corpus request."
+}
