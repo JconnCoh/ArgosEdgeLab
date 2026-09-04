@@ -1,8 +1,23 @@
-# Active ArgosEdgeLab state - OCV-03 O3F16 U13 published / awaiting terminal - 2026-09-04
+# Active ArgosEdgeLab state - OCV-03 O3F16 U13 route blocked / terminal unknown - 2026-09-04
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3F16 U13 route blocked / terminal unknown — 2026-09-04
+
+The one R13 request was accepted into `requests/processed`, but no matching
+signed terminal response returned by the declared 1,800-second boundary and the
+operator observed `D:/O3F16U13` absent. Detector start and completion are both
+unproven. The unchanged route has failed once, so this execution attempt is
+stopped with no retry, alternate route, or task/process action.
+
+If the matching signed terminal response later appears, observe and preserve
+it only. Any route investigation requires separately explicit authority.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U13_ROUTE_BLOCKED_TERMINAL_UNKNOWN_CHECKPOINT_20260904.md`,
+SHA-256 `1E3D9C95080ADE71E5AA5D6A49914E525AF17576CEA39A662C45BC8C82BA90A4`.
 
 ## OCV-03 O3F16 U13 published / awaiting terminal — 2026-09-04
 

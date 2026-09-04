@@ -4,6 +4,20 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 O3F16 U13 route blocked / terminal unknown — 2026-09-04
+
+- Request `REQ_20260904T141542420Z_8D4D2F19B527` was accepted by the gateway,
+  but no matching signed terminal response returned by the declared timeout
+  boundary and `D:/O3F16U13` was observed absent by the operator.
+- Blocker gate:
+  `work/OPENCV_EDGE_UNWRAP_O3F16U13/O3F16U13_ROUTE_BLOCKER_GATE.json`, SHA-256
+  `E322E3EDCBF806454FD02A0EE3F05BD410254FAA8C4190670DD8CBEB2C7FD8FB`.
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U13_ROUTE_BLOCKED_TERMINAL_UNKNOWN_CHECKPOINT_20260904.md`,
+  SHA-256 `1E3D9C95080ADE71E5AA5D6A49914E525AF17576CEA39A662C45BC8C82BA90A4`.
+- Stop: no retry, alternate route, task/process action, or infrastructure
+  investigation. A late matching terminal response may be observed only.
+
 ## OCV-03 O3F16 U13 published / awaiting terminal — 2026-09-04
 
 - Request `REQ_20260904T141542420Z_8D4D2F19B527` was published once and was
