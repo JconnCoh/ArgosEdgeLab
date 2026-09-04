@@ -236,7 +236,7 @@ $disk = Get-CimInstance Win32_LogicalDisk -Filter "DeviceID='U:'" -ErrorAction S
 Require ([string]$drive.DisplayRoot -ceq $expectedShare -and [string]$disk.ProviderName -ceq $expectedShare -and [int]$disk.DriveType -eq 4) 'O3F16U12 persistent U: mapping changed.'
 Require (Test-Path -LiteralPath $requestRoot -PathType Container) 'O3F16U12 request root unavailable.'
 $pending = @(Get-ChildItem -LiteralPath $requestRoot -File | Where-Object { $_.Name -cmatch '\.ready\.zip(?:\.upload)?$' })
-Require ($pending.Count -eq 0) ('O3F16U12 blocked by pending request: ' + (($pending.Name) -join ', '))
+Require ($pending.Count -eq 0) ('O3F16U12 blocked by pending request: ' + (($pending | ForEach-Object { $_.Name }) -join ', '))
 $requestId = [string]$sign.requestId
 $readyPath = Join-Path $requestRoot ($requestId + '.ready.zip')
 $uploadPath = $readyPath + '.upload'
