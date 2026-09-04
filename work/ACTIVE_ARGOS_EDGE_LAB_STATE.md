@@ -1,8 +1,18 @@
-# Active ArgosEdgeLab state - OCV-03 O3F16 U13 signed four-case ready - 2026-09-04
+# Active ArgosEdgeLab state - OCV-03 O3F16 U13 published / awaiting terminal - 2026-09-04
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3F16 U13 published / awaiting terminal — 2026-09-04
+
+Request `REQ_20260904T141542420Z_8D4D2F19B527` was published exactly once and
+accepted by the gateway importer. No matching signed terminal response is yet
+present. Continue read-only waiting only; do not republish or retry.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U13_PUBLISHED_AWAITING_TERMINAL_CHECKPOINT_20260904.md`,
+SHA-256 `E87C1E21EB0D614986BB5ACF1F0FE333889FC19989078A766E34EC8BAF455B95`.
 
 ## OCV-03 O3F16 U13 signed four-case ready — 2026-09-04
 

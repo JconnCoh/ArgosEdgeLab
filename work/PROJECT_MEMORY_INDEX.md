@@ -4,6 +4,16 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 O3F16 U13 published / awaiting terminal — 2026-09-04
+
+- Request `REQ_20260904T141542420Z_8D4D2F19B527` was published once and was
+  accepted into `requests/processed`; no matching terminal response existed at
+  checkpoint time. Publication gate SHA-256 is
+  `F1087C68BDB13E7916CA3F75FD17EC191D35095A1A4B0F83C09E784F05E4D384`.
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U13_PUBLISHED_AWAITING_TERMINAL_CHECKPOINT_20260904.md`,
+  SHA-256 `E87C1E21EB0D614986BB5ACF1F0FE333889FC19989078A766E34EC8BAF455B95`.
+
 ## OCV-03 O3F16 U13 signed four-case ready — 2026-09-04
 
 - Current checkpoint:
