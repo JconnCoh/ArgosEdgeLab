@@ -1,0 +1,70 @@
+{
+  "schema": "argos_r18uq1_argos_route_qualification_gate_v1",
+  "checkedUtc": "2026-09-05T15:46:00Z",
+  "state": "HOLD_R18UQ1_ARGOS_ENDPOINT_NOT_EXACTLY_QUALIFIED",
+  "requestId": "REQ_U1_20260905T154017612Z_81F8670E855F",
+  "decision": "STOP_UNSIGNED",
+  "requiredStateBeforeSignature": "PASS_EXACT_QUALIFIED_ARGOS_ENDPOINT_CONFIG_AND_QUEUE_SAFETY",
+  "availableEvidence": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18U/ARGOS_ACTIVE_ENDPOINT_EVIDENCE_20260905.json",
+      "sha256": "E4D330228416BA04826E0F0CC3181E881D757719A3C1E1D6229D062EF46135A1",
+      "state": "HOLD_INFERRED_ACTIVE_ARGOS_ENDPOINT_NOT_DIRECTLY_HASHED_OR_QUEUE_SAFETY_QUALIFIED"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_RELAY_R4.json",
+      "sha256": "A5910A390159B00533CFA5D29CA26D9AFF1391F2B53B96D941D9099A9A569039",
+      "state": "PASS_EXACT_ARGOS_ADMIN_INBOUND_RELAY_READ_ONLY_OBSERVATION"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/R18UQ0_SIGNED_UNPUBLISHED_WITHDRAWAL.json",
+      "sha256": "6E41DCD1E4F902A8E96E0CB5CF2F20BD4CFE93D842332DF7B83A095FE0661D06",
+      "state": "WITHDRAWN"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ1/R18UQ1_NAMESPACE_ABSENCE_GATE.json",
+      "sha256": "39BE5A20906983A1F0B0A275B424E24F74D195FA2EC09618A43D3F52605C6985",
+      "state": "PASS_R18UQ1_FRESH_REQUEST_NAMESPACE_ABSENT"
+    }
+  ],
+  "observedRouteFacts": {
+    "targetRole": "ARGOS",
+    "jobClass": "MAINTENANCE_PATCH",
+    "endpointTask": "ArgosProjectPortal.Argos.Endpoint.RO",
+    "endpointConfigPath": "C:/ProgramData/ArgosProjectPortalRO/config/endpoint_argos.json",
+    "directlyObservedEndpointConfigSha256": "D55373206CA6E4DAA557A4BD422DA95C9D5784F9339AF71BFAD836735542A550",
+    "endpointWorkerPath": "C:/ProgramData/ArgosProjectPortalRO/bin/Invoke-ArgosProjectPortalEndpointWorker.ps1",
+    "inferredEndpointWorkerSha256": "AA8CF83463E9C1850AB0D2CE1D639EC8E9A0EA1FEEFA43BA57207C50A1637842",
+    "currentEndpointWorkerBytesDirectlyObserved": false,
+    "currentEndpointProcessContinuityProved": false,
+    "queueSafetyPublicationQualified": false
+  },
+  "unresolvedMandatoryControls": [
+    "exact active endpoint-worker bytes and SHA-256",
+    "exact installed endpoint config content and approved-maintenance-root set",
+    "per-request work and response construction inside the failure boundary",
+    "compact signed fallback response",
+    "failed-attempt quarantine",
+    "pre-existing work/partial collision handling",
+    "termination-before-response-commit restart/idempotence",
+    "second queued control request",
+    "manifest-bound complete round-trip path roots and exact endpoint work layout"
+  ],
+  "prohibitedInference": "The fresh request-ID absence result and operator publication authority do not convert an explicitly unqualified endpoint into a queue-safety PASS.",
+  "artifactState": {
+    "requestManifestCreated": false,
+    "signatureCreated": false,
+    "zipCreated": false,
+    "finalPackageGateCreated": false,
+    "signingKeyAccessed": false,
+    "published": false
+  },
+  "auditBoundary": {
+    "portalOrShareAccessedByThisSubagent": false,
+    "argosOrJbodAccessedByThisSubagent": false,
+    "queuesTasksProcessesOrImagesAccessedByThisSubagent": false,
+    "externalMutationPerformedByThisSubagent": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

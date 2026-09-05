@@ -1,0 +1,108 @@
+{
+  "schema": "argos_r18w3_presignature_freeze_gate_v1",
+  "createdUtc": "2026-09-05T17:55:04.7964120Z",
+  "state": "PASS_R18W3_PRESIGNATURE_FREEZE",
+  "lifecycle": "FROZEN_UNSIGNED_UNPUBLISHED",
+  "requestId": "REQ_R18W3",
+  "requestPurpose": "CORRECTED_EIGHT_PHYSICAL_LINEAGE_DEVELOPMENT_CROP_AND_PROPOSAL_PULL",
+  "frozenInputs": [
+    {"path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "00509B849F821FCFC5E1D6BF52902D6ECD548F988C7FCAE2A5D3BD1DDBD64685"},
+    {"path": "work/OPENCV_SCRIBE_R18W1_WITHDRAWAL/R18W1_SIGNED_UNPUBLISHED_WITHDRAWAL.json", "sha256": "8874C09378DC9B8F530087B7A69535D4BDC320EEE0D872A832DBB6FECCD33CD1"},
+    {"path": "work/OPENCV_SCRIBE_R18W2/Build-R18W2Request.ps1", "sha256": "9D83D995DD9F372415812A143B2B0CFF7D6A327CEAF4AC68F9A8FB4862CB4D87"},
+    {"path": "work/OPENCV_SCRIBE_R18UJ3/R18UJ3_LIVE_RECONCILIATION.json", "sha256": "419A6A0172C675F4A8DF42EE5ED152846E690D3A667435A89F91B344AD4A5B64"},
+    {"path": "work/OPENCV_SCRIBE_R18UQ3/R18UQ3_LIVE_INSITEREAD_ROSTER.json", "sha256": "CE108A3726EFDD53651453CB3310E06051D6E53DDD3654A304446D9070C19DAB"},
+    {"path": "work/OPENCV_SCRIBE_R18X/R18X_EXACT_SCRIBE_LINEAGE_CROSSWALK.json", "sha256": "EAF725D04C899CCEFC70E29DDA990D4058F226D7C602C1607D7ADB2E9CED1099"},
+    {"path": "work/OPENCV_SCRIBE_R18W3/R18W3_SELECTION.json", "sha256": "48795396398ED73F73C87509803FC1B647389872CDDC5F31B532995906181D7E"},
+    {"path": "work/OPENCV_SCRIBE_R18W3/R18W3_DATA_PULL_DEFINITION.json", "sha256": "5D7A8B30462AED9B29CE1C94BB5559305283E5D1E694DF1D22BE9723A0747372"},
+    {"path": "work/OPENCV_SCRIBE_R18W3/R18W3_ROUTE_PINS.json", "sha256": "898EBFA7DE906B89CACE0CD20E03656C7B4A917F401C49EB3FB8579426F52728"},
+    {"path": "work/OPENCV_SCRIBE_R18W3/PREACTION_R18W3_LOCAL_PACKAGE_PREPARATION.json", "sha256": "3EE6E9D5EA74C40FB11AC7A5EA9728B46379932DB78C6C9880E10D8978971382"},
+    {"path": "work/OPENCV_SCRIBE_R18W3/R18W3_CLONE_LITERAL_REMEDIATION_V2.json", "sha256": "CFA99769E19D57BE0122E57EC9A3961DD67A7CE8D17A9A4366B4269B575E6FDB"},
+    {"path": "work/OPENCV_SCRIBE_R18W3/R18W3_CLONE_LITERAL_GATE.json", "sha256": "3D208472FD6AA822E030476464EC77F22E0078E9F9C1AE86E736A6F70BF6DCA9"},
+    {"path": "work/OPENCV_SCRIBE_R18W3/R18W3_HARNESS_GATE.json", "sha256": "93B5B15EFCA7A82DDFF76E22007F0C13B395A6628FB16A2BFEA159524F1BD218"},
+    {"path": "work/OPENCV_SCRIBE_R18W3/R18W3_WRAPPER_APPLICABILITY_GATE.json", "sha256": "BED55C37FACF4A8236F62B33E98C9506D8BA74433204A2C4CAEFC8A9D29B1B89"},
+    {"path": "work/OPENCV_SCRIBE_R18W3/Build-R18W3Request.ps1", "sha256": "5CEEBC73B97D236B77F5CABA5FB411DBDF9DBC4C93F797E1BAF6EC5ED667457C"}
+  ],
+  "orderedHarnessBoundary": {
+    "sourceGuardCheckedUtc": "2026-09-05T17:47:54.6681264Z",
+    "cloneManifestCreatedAfterSourceGuard": true,
+    "cloneGateCheckedUtc": "2026-09-05T17:53:30.1618784Z",
+    "postCloneGeneratedGuardCheckedUtc": "2026-09-05T17:53:38.7699910Z",
+    "fileBackedHarnessGateCheckedUtc": "2026-09-05T17:53:59.5919006Z",
+    "strictChronologyPassed": true,
+    "generatedSha256": "5CEEBC73B97D236B77F5CABA5FB411DBDF9DBC4C93F797E1BAF6EC5ED667457C",
+    "cloneAndGeneratedHashMatch": true
+  },
+  "preflight": {
+    "checkedUtc": "2026-09-05T17:53:53.5066559Z",
+    "state": "PASS_R18W3_BUILD_PREFLIGHT_LOCAL_ONLY",
+    "windowsPowerShellMajor": 5,
+    "windowsPowerShellMinor": 1,
+    "selectedAcquisitionCount": 8,
+    "independentPhysicalLineageCount": 8,
+    "exactScribeTruthCount": 8,
+    "referenceExactScribeLineageCount": 41,
+    "selectionReferenceTruthOverlapCount": 0,
+    "selectionReservedValidationTruthOverlapCount": 0,
+    "reservedValidationTruth": "13HFX135SUE3",
+    "requestedFileCount": 24,
+    "proposalFileCount": 8,
+    "imageFileCount": 16,
+    "overlayFileCount": 0,
+    "maximumFiles": 24,
+    "maximumBytes": 50331648,
+    "routePathCount": 60,
+    "maximumEffectiveLength": 183,
+    "maximumComponentLength": 51,
+    "reservedSuffixCharacters": 32,
+    "plannedPackageMembers": ["PORTAL_REQUEST_MANIFEST.json", "PORTAL_REQUEST_MANIFEST.sig"],
+    "plannedPackageMembershipSha256": "BD698D496C10E1A691DFAF08014474690D6E269968D4ACC9C3BD5C12AB5A9832"
+  },
+  "selectionBoundary": {
+    "requiredXReplacement": {
+      "requestIdentity": "62625-907-POST-20260714155300_20260714155354_Slot14",
+      "issuedWaferContainer": "62625-907-060",
+      "scribe": "146XF109SUG7",
+      "independentLineageKey": "62625-907|62625-907-060|146XF109SUG7"
+    },
+    "requiredRReplacement": {
+      "requestIdentity": "62619-451-PRE_20260717143452_Slot01",
+      "issuedWaferContainer": "62619-451-010",
+      "scribe": "146AR068SUC7",
+      "independentLineageKey": "62619-451|62619-451-010|146AR068SUC7"
+    },
+    "sameTruthPostSlot21Excluded": "62546-481-POST_20260708155428_Slot21",
+    "currentValidationSlot21Excluded": "62546-481_20260707164232_Slot21",
+    "localOnlyFixtureSlot24Excluded": "62629-401_20260902002921_Slot24",
+    "removedReferenceTruthExcluded": "5565R022FEG5",
+    "zeroReferenceTruthOverlap": true,
+    "zeroReservedValidationTruthOverlap": true,
+    "acquisitionIdentityUsedAsPhysicalLineageAuthority": false
+  },
+  "route": {
+    "targetRole": "JBOD",
+    "jobClass": "DATA_PULL",
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "installedEndpointWorkerSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "r18gRouteGateSha256": "5F4E1434B142EED5C85517AEFD11614D0D8380424219BB5B6A9BE219403E2646",
+    "r15eRouteGateSha256": "E0EAE7BBECDE766E6E78D86074A098465F3117B737146DDF4FF32D1D4953ED2C",
+    "c1eQueueSafetyGateSha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+    "c1eCapabilityInventorySha256": "381D3E9C4F17218DF37D8E8CE029853216E9BEA5A2FBDABC6AEB7861A29DC8A2"
+  },
+  "supersededDraftEvidence": [
+    "work/OPENCV_SCRIBE_R18W3/R18W3_CLONE_LITERAL_REMEDIATION.json"
+  ],
+  "authority": {
+    "publicationAuthorized": false,
+    "maximumPublications": 0,
+    "retryAuthorized": false,
+    "externalRouteContactAuthorizedDuringBuild": false,
+    "sourceMutationAuthorized": false,
+    "imageDecodeAuthorizedDuringBuild": false,
+    "taskProcessOrQueueManagementAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "reviewOnly": true
+  }
+}

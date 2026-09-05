@@ -1,0 +1,59 @@
+{
+  "schema": "argos_opencv_scribe_r18w2_route_pins_v1",
+  "revision": "R18W2_INHERITED_QUALIFIED_DATA_PULL_ROUTE_20260905A",
+  "createdUtc": "2026-09-05T17:18:00.0000000Z",
+  "state": "PASS_R18W2_INHERITED_ROUTE_PINS",
+  "requestId": "REQ_R18W2",
+  "route": {
+    "targetRole": "JBOD",
+    "jobClass": "DATA_PULL",
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "installedEndpointWorkerSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "workerSource": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "E070135E8C211F2869623553C04AE2DDE65244760FC60457356B2FEEEFEED4EB"
+    },
+    "r18gCompleteRouteGate": {
+      "path": "work/OPENCV_SCRIBE_R18G/R18G_COMPLETE_ROUTE_GATE.json",
+      "sha256": "5F4E1434B142EED5C85517AEFD11614D0D8380424219BB5B6A9BE219403E2646",
+      "state": "PASS_R18G_COMPLETE_ROUTE_GATE"
+    },
+    "r15eInheritedRouteGate": {
+      "path": "work/OPENCV_SCRIBE_R15E/R15E_COMPLETE_ROUTE_GATE.json",
+      "sha256": "E0EAE7BBECDE766E6E78D86074A098465F3117B737146DDF4FF32D1D4953ED2C",
+      "state": "PASS_R15E_COMPLETE_ROUTE_GATE"
+    },
+    "c1eQueueSafetyGate": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+      "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+      "state": "PASS_JBOD_PORTAL_QUEUE_RECOVERY_V2_1_REHEARSAL"
+    },
+    "c1eReadOnlyCapabilityInventory": {
+      "path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json",
+      "sha256": "381D3E9C4F17218DF37D8E8CE029853216E9BEA5A2FBDABC6AEB7861A29DC8A2",
+      "capability": "approvedRootExactFiles"
+    },
+    "priorExactLeafEvidence": {
+      "path": "work/OPENCV_SCRIBE_R18U/R18U_EXISTING_VERIFIED_ROSTER_EVIDENCE.json",
+      "sha256": "FE554020619F4D3B3B58E440EEB19037561A5DB26B91D6916E30E47BDFC5AC3C"
+    }
+  },
+  "signing": {
+    "identityPath": "work/PROJECT_PORTAL_REVIEW_ONLY/state/LAPTOP_SIGNING_IDENTITY.json",
+    "identitySha256": "3FD8164D1869375156FB7566D206FEAB97AE8A9E7D377B0AD4E03739ED697289",
+    "signerThumbprint": "C82181052919C475CF888F49427C1B55AE65DC12",
+    "publicCertificatePath": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/ARGOS_PROJECT_PORTAL_LAPTOP_SIGNER_PUBLIC.cer",
+    "publicCertificateSha256": "2B434D0CF6A0D6D69AAE3D280032EFF00807D423CA3B3D7F2EFC1C6BB628BFFF",
+    "packageVerifierPath": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalPackage.ps1",
+    "packageVerifierSha256": "6CA21D7DE97EDE88F2C41F91D5B7801C688982C8C5A422987EB9528E1E9A084B"
+  },
+  "authority": {
+    "publicationAuthorized": false,
+    "maximumPublications": 0,
+    "retryAuthorized": false,
+    "matchingSignedTerminalResponseOnly": true,
+    "externalRouteContactedDuringPreparation": false,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  }
+}

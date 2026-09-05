@@ -1,0 +1,72 @@
+{
+    "schema":  "argos_r18uq1_maintenance_semantics_rehearsal_gate_v1",
+    "checkedUtc":  "2026-09-05T15:53:20.2983745Z",
+    "state":  "PASS_R18UQ1_LOCAL_MAINTENANCE_SEMANTICS_REHEARSAL",
+    "windowsPowerShell":  {
+                              "major":  5,
+                              "minor":  1,
+                              "version":  "5.1.26100.9168"
+                          },
+    "definitionSha256":  "CD58D52CE01DD5ECBD5D2BA0DA331AA79C1F9077CC6D7DC78A12BFC54F9132EC",
+    "querySha256":  "B74E4C5FA522C896E08CE15517C94A14C2FFA36802DB8927C1E9F0B81018DF76",
+    "caseIds":  [
+                    "ABSENT_CREATE",
+                    "ABSENT_CREATE_ROLLBACK",
+                    "TARGET_IDEMPOTENT",
+                    "UNAPPROVED_REFUSED",
+                    "EXISTING_TARGET_ROLLBACK"
+                ],
+    "cases":  [
+                  {
+                      "id":  "ABSENT_CREATE",
+                      "state":  "PASS",
+                      "before":  "ABSENT",
+                      "after":  "B74E4C5FA522C896E08CE15517C94A14C2FFA36802DB8927C1E9F0B81018DF76",
+                      "mutated":  true
+                  },
+                  {
+                      "id":  "ABSENT_CREATE_ROLLBACK",
+                      "state":  "PASS",
+                      "before":  "ABSENT",
+                      "after":  "ABSENT",
+                      "failedNewSha256":  "B74E4C5FA522C896E08CE15517C94A14C2FFA36802DB8927C1E9F0B81018DF76",
+                      "mutated":  true
+                  },
+                  {
+                      "id":  "TARGET_IDEMPOTENT",
+                      "state":  "PASS",
+                      "before":  "B74E4C5FA522C896E08CE15517C94A14C2FFA36802DB8927C1E9F0B81018DF76",
+                      "after":  "B74E4C5FA522C896E08CE15517C94A14C2FFA36802DB8927C1E9F0B81018DF76",
+                      "mutated":  true
+                  },
+                  {
+                      "id":  "UNAPPROVED_REFUSED",
+                      "state":  "PASS",
+                      "before":  "65F477475DE2FD67266D3AC15353D53DF2ECD52C65D53500D1982F3521FD5BD8",
+                      "after":  "65F477475DE2FD67266D3AC15353D53DF2ECD52C65D53500D1982F3521FD5BD8",
+                      "mutated":  false
+                  },
+                  {
+                      "id":  "EXISTING_TARGET_ROLLBACK",
+                      "state":  "PASS",
+                      "before":  "B74E4C5FA522C896E08CE15517C94A14C2FFA36802DB8927C1E9F0B81018DF76",
+                      "after":  "B74E4C5FA522C896E08CE15517C94A14C2FFA36802DB8927C1E9F0B81018DF76",
+                      "failedBytesQuarantined":  true,
+                      "mutated":  true
+                  }
+              ],
+    "absentCreatePassed":  true,
+    "absentCreateRollbackPassed":  true,
+    "targetIdempotenceAccepted":  true,
+    "unapprovedPredecessorRefusedBeforeMutation":  true,
+    "existingTargetRollbackPassed":  true,
+    "simulationOnly":  true,
+    "exactEndpointWorkerInvoked":  false,
+    "endpointQueueSafetyProved":  false,
+    "signingKeyAccessed":  false,
+    "portalOrShareAccessed":  false,
+    "argosOrJbodAccessed":  false,
+    "taskOrProcessActionPerformed":  false,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false
+}

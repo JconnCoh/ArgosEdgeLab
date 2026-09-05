@@ -1,0 +1,63 @@
+{
+  "schema": "argos_r18uq1_unsigned_local_scaffold_gate_v1",
+  "checkedUtc": "2026-09-05T15:54:00Z",
+  "state": "PASS_R18UQ1_UNSIGNED_LOCAL_SCAFFOLD_ROUTE_BLOCKED",
+  "requestId": "REQ_U1_20260905T154017612Z_81F8670E855F",
+  "artifactLifecycle": "DRAFT",
+  "sources": [
+    {"path":"work/OPENCV_SCRIBE_R18UQ1/E.ps1","bytes":4370,"sha256":"B3E43D9CA7745B9E76D0574D4B6703D0D6723659AB029C34F88B09B5AD8D6828"},
+    {"path":"work/OPENCV_SCRIBE_R18UQ1/Q.ps1","bytes":28466,"sha256":"B74E4C5FA522C896E08CE15517C94A14C2FFA36802DB8927C1E9F0B81018DF76"},
+    {"path":"work/OPENCV_SCRIBE_R18UQ1/I.json","bytes":1431,"sha256":"68947C5434B844A65EF094FBF29E85901ADE66F844254940C9D243FC19F5B84A"},
+    {"path":"work/OPENCV_SCRIBE_R18UQ1/Test-Q.ps1","bytes":8101,"sha256":"E89A20A60BF5C70F72F94076E375284C9052ECF4E5F798D3B4AD43D115ECCBC3"},
+    {"path":"work/OPENCV_SCRIBE_R18UQ1/Test-E.ps1","bytes":6703,"sha256":"973B72414C106B52AB9FAA9B41518DD6B734CB78D190D50785DF28987DAAB460"},
+    {"path":"work/OPENCV_SCRIBE_R18UQ1/Test-M.ps1","bytes":8505,"sha256":"E97DCBE8838DDACDAB3FEF5CA9171A5400B196814E060E9BC68A8B4984DEF151"},
+    {"path":"work/OPENCV_SCRIBE_R18UQ1/MAINTENANCE_DEFINITION.json","sha256":"CD58D52CE01DD5ECBD5D2BA0DA331AA79C1F9077CC6D7DC78A12BFC54F9132EC"}
+  ],
+  "localGates": [
+    {"path":"work/OPENCV_SCRIBE_R18UQ1/R18UQ1_ENTRYPOINT_REHEARSAL_GATE.json","sha256":"D79288FB9C6CB31809FD0A9C9CCEDD693CE636F9FE89AA02A90B4D5566C4B523","state":"PASS_R18UQ1_EXACT_NO_ARGUMENT_ENTRYPOINT_REHEARSAL"},
+    {"path":"work/OPENCV_SCRIBE_R18UQ1/R18UQ1_MAINTENANCE_SEMANTICS_GATE.json","sha256":"4EE263139229C37D6B632D0F7730A9A1D2AC884FA24413A3980CBE565446EA6E","state":"PASS_R18UQ1_LOCAL_MAINTENANCE_SEMANTICS_REHEARSAL"},
+    {"path":"work/OPENCV_SCRIBE_R18UQ1/R18UQ1_RECOVERY_INTENT_GATE.json","sha256":"3C6C4A9FEA8C37E9092789C5B46C01E8D906FEB68F4626E6A6D3FDEE10A25F25","state":"PASS_ARGOS_RECOVERY_INTENT"},
+    {"path":"work/OPENCV_SCRIBE_R18UQ1/R18UQ1_NAMESPACE_ABSENCE_GATE.json","sha256":"39BE5A20906983A1F0B0A275B424E24F74D195FA2EC09618A43D3F52605C6985","state":"PASS_R18UQ1_FRESH_REQUEST_NAMESPACE_ABSENT"}
+  ],
+  "validatedBehavior": {
+    "focusedQueryCompleteCasePassed": true,
+    "focusedQueryHoldCasePassed": true,
+    "exactQueryLotCount": 50,
+    "exactNoArgumentEntrypointRehearsed": true,
+    "fileBackedSyntheticSqlRowsUsed": true,
+    "credentialEnvelopeScopePropertyRequired": false,
+    "absentCreatePassed": true,
+    "absentCreateRollbackPassed": true,
+    "targetIdempotenceAccepted": true,
+    "unapprovedPredecessorRefusedBeforeMutation": true,
+    "existingTargetRollbackPassed": true,
+    "powershell51HarnessAndWrapperPassedForAllFiveScripts": true,
+    "liveSqlExecuted": false,
+    "credentialAccessed": false,
+    "taskOrProcessActionPerformed": false,
+    "imagesAccessed": false,
+    "jbodAccessed": false
+  },
+  "blockingGate": {
+    "path": "work/OPENCV_SCRIBE_R18UQ1/R18UQ1_ARGOS_ROUTE_QUALIFICATION_BLOCKER.json",
+    "sha256": "51D7C0BEB1B82163BC29FB266C8EE9BBF92D3931D1AD707F06B12E2481D18345",
+    "state": "HOLD_R18UQ1_ARGOS_ENDPOINT_NOT_EXACTLY_QUALIFIED",
+    "requiredBeforeSignature": true
+  },
+  "notCreatedBecauseBlocked": [
+    "final request manifest",
+    "manifest-bound complete round-trip path gate",
+    "exact endpoint queue-safety rehearsal gate",
+    "zero-recurrence publication preaction",
+    "request signature",
+    "request ZIP",
+    "final signed-package gate"
+  ],
+  "signingKeyAccessed": false,
+  "published": false,
+  "portalOrShareAccessedByThisSubagent": false,
+  "argosOrJbodAccessedByThisSubagent": false,
+  "externalMutationPerformedByThisSubagent": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

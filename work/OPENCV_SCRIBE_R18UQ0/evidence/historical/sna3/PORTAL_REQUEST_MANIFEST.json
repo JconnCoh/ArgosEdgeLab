@@ -1,0 +1,73 @@
+{
+    "schema":  "argos_project_portal_request_manifest_v1",
+    "requestId":  "REQ_20260820T195250327Z_F186115B5A33",
+    "createdUtc":  "2026-08-20T19:52:50.3270824+00:00",
+    "expiresUtc":  "2026-08-21T19:52:50.3270824+00:00",
+    "targetRole":  "ARGOS",
+    "jobClass":  "MAINTENANCE_PATCH",
+    "handler":  "SIGNED_REVIEW_ONLY_PATCH_V1",
+    "maxResultBytes":  1048576,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false,
+    "credentialsIncluded":  false,
+    "signerThumbprint":  "C82181052919C475CF888F49427C1B55AE65DC12",
+    "signatureAlgorithm":  "RSA-SHA256-PKCS1",
+    "files":  [
+                  {
+                      "path":  "payload/ArgosCandidateSnapshotEnvelope.psm1",
+                      "bytes":  3698,
+                      "sha256":  "03F518AE42CB3F2E09BB1806C9E76C647D644CA2E17550748F788FCCAEB5EAD4"
+                  },
+                  {
+                      "path":  "payload/ArgosInsiteRequestCanonical.psm1",
+                      "bytes":  1808,
+                      "sha256":  "E1DF58C58A14B9BC0D98729CC839AE59D9380FE74A3E1E3301778C6172B455B2"
+                  },
+                  {
+                      "path":  "payload/ArgosScribeCandidateInsiteContract.psm1",
+                      "bytes":  10290,
+                      "sha256":  "AFAB222E8C59CD2681D3525739BBD88EE76D3C7323EE6CAB6BA2AB0261BC83D7"
+                  },
+                  {
+                      "path":  "payload/ArgosScribeCandidateMesResolver.psm1",
+                      "bytes":  5134,
+                      "sha256":  "18D550F47103C3735536B1CA60600A4F0341E0F0E957F75C2D904CEC824AB541"
+                  },
+                  {
+                      "path":  "payload/Invoke-ArgosAutomaticInsiteBridgeWorker.ps1",
+                      "bytes":  7511,
+                      "sha256":  "38CEF173CD4D4F9C8357C3F1879D27C16BC31B26AD3E3CE369473A3D5C608402"
+                  },
+                  {
+                      "path":  "payload/Invoke-ArgosCandidateInsiteRequest.ps1",
+                      "bytes":  3417,
+                      "sha256":  "826ED301EF8197E17BD2AA4DD3389B4FC2B4EFDB2B7B4236DBC0B33BC732300F"
+                  },
+                  {
+                      "path":  "payload/SNA3.ps1",
+                      "bytes":  14529,
+                      "sha256":  "C00BA62B44A76094E96B52B114EF8864A12DC1A457BA8CEC4A9A4C338873156B"
+                  }
+              ],
+    "entryPoint":  "payload/SNA3.ps1",
+    "changes":  [
+                    {
+                        "source":  "payload/SNA3.ps1",
+                        "destination":  "C:\\ProgramData\\ArgosInsiteBridgeRO\\hotfixes\\SNA3.ps1",
+                        "approvedPredecessorSha256":  [
+                                                          "C00BA62B44A76094E96B52B114EF8864A12DC1A457BA8CEC4A9A4C338873156B"
+                                                      ],
+                        "installedSha256":  "C00BA62B44A76094E96B52B114EF8864A12DC1A457BA8CEC4A9A4C338873156B",
+                        "allowCreate":  true
+                    }
+                ],
+    "allowedTaskActions":  [
+                               "RESTART:ArgosEdgeLab.InsiteBridge.Worker.ReviewOnly.V1"
+                           ],
+    "rehearsal":  {
+                      "requiredState":  "PASS_SNA3_ARGOS_CANDIDATE_MES_QUERY_PATCH_REVIEW_ONLY"
+                  }
+}

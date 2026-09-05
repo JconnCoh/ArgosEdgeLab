@@ -1,0 +1,81 @@
+{
+  "schema": "argos_r18w3_ordered_source_clone_generated_harness_gate_v1",
+  "checkedUtc": "2026-09-05T17:53:59.5919006Z",
+  "state": "PASS_R18W3_SOURCE_AND_GENERATED_HARNESS_SAFETY",
+  "requiredOrder": [
+    "SOURCE_HARNESS_GUARD",
+    "CLONE_LITERAL_GATE",
+    "GENERATED_HARNESS_GUARD_AFTER_CLONE_GATE",
+    "FILE_BACKED_ORDERED_HARNESS_GATE"
+  ],
+  "orderedEvidence": [
+    {
+      "ordinal": 1,
+      "action": "SOURCE_HARNESS_GUARD",
+      "checkedUtc": "2026-09-05T17:47:54.6681264Z",
+      "path": "work/OPENCV_SCRIBE_R18W2/Build-R18W2Request.ps1",
+      "sha256": "9D83D995DD9F372415812A143B2B0CFF7D6A327CEAF4AC68F9A8FB4862CB4D87",
+      "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "parserErrors": 0,
+      "violations": []
+    },
+    {
+      "ordinal": 2,
+      "action": "CLONE_LITERAL_GATE",
+      "checkedUtc": "2026-09-05T17:53:30.1618784Z",
+      "path": "work/OPENCV_SCRIBE_R18W3/R18W3_CLONE_LITERAL_GATE.json",
+      "sha256": "3D208472FD6AA822E030476464EC77F22E0078E9F9C1AE86E736A6F70BF6DCA9",
+      "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+      "generatedSha256": "5CEEBC73B97D236B77F5CABA5FB411DBDF9DBC4C93F797E1BAF6EC5ED667457C"
+    },
+    {
+      "ordinal": 3,
+      "action": "GENERATED_HARNESS_GUARD_AFTER_CLONE_GATE",
+      "checkedUtc": "2026-09-05T17:53:38.7699910Z",
+      "path": "work/OPENCV_SCRIBE_R18W3/Build-R18W3Request.ps1",
+      "sha256": "5CEEBC73B97D236B77F5CABA5FB411DBDF9DBC4C93F797E1BAF6EC5ED667457C",
+      "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "parserErrors": 0,
+      "violations": []
+    },
+    {
+      "ordinal": 4,
+      "action": "FILE_BACKED_ORDERED_HARNESS_GATE",
+      "checkedUtc": "2026-09-05T17:53:59.5919006Z",
+      "state": "PASS_R18W3_SOURCE_AND_GENERATED_HARNESS_SAFETY"
+    }
+  ],
+  "chronologyVerified": true,
+  "strictlyIncreasingCheckedUtc": true,
+  "cloneGatePrecedesGeneratedGuard": true,
+  "cloneGateAndGeneratedGuardHashMatch": true,
+  "postCloneGeneratedGuardPresent": true,
+  "windowsPowerShell": {
+    "major": 5,
+    "minor": 1,
+    "edition": "Desktop"
+  },
+  "generatedPowerShellScript": "work/OPENCV_SCRIBE_R18W3/Build-R18W3Request.ps1",
+  "generatedPowerShellScriptSha256": "5CEEBC73B97D236B77F5CABA5FB411DBDF9DBC4C93F797E1BAF6EC5ED667457C",
+  "exactGeneratedPreflight": {
+    "checkedUtc": "2026-09-05T17:53:53.5066559Z",
+    "state": "PASS_R18W3_BUILD_PREFLIGHT_LOCAL_ONLY",
+    "selectedAcquisitionCount": 8,
+    "independentPhysicalLineageCount": 8,
+    "referenceExactScribeLineageCount": 41,
+    "selectionReferenceTruthOverlapCount": 0,
+    "selectionReservedValidationTruthOverlapCount": 0,
+    "requestedFileCount": 24,
+    "proposalFileCount": 8,
+    "imageFileCount": 16,
+    "overlayFileCount": 0,
+    "routePathCount": 60,
+    "maximumEffectiveLength": 183,
+    "maximumComponentLength": 51,
+    "mutationsPerformed": false,
+    "externalRouteContacted": false,
+    "imageFilesOpened": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

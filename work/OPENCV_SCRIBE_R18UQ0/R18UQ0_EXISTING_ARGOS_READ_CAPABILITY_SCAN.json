@@ -1,0 +1,91 @@
+{
+  "schema": "argos_r18uq0_existing_argos_read_capability_scan_v1",
+  "createdUtc": "2026-09-05T14:10:19.5240921Z",
+  "state": "PASS_R18UQ0_ARGOS_SOURCE_PULL_CAPABILITY_GAP_CONFIRMED",
+  "source": {
+    "portalArchiveRoot": "U:/ProjectPortalRO/requests/processed",
+    "archiveZipCountOpened": 599,
+    "manifestEntry": "PORTAL_REQUEST_MANIFEST.json",
+    "targetRole": "ARGOS",
+    "acceptedReadJobClasses": [
+      "STATUS",
+      "DATA_PULL",
+      "INSITE_DIAGNOSTIC"
+    ],
+    "matchingRequestCount": 7
+  },
+  "matchingRequests": [
+    {
+      "requestId": "REQ_20260814T203757990Z_9A9183E6666D",
+      "jobClass": "STATUS",
+      "handler": "",
+      "capability": "fixed endpoint status only"
+    },
+    {
+      "requestId": "REQ_20260814T200029476Z_6640F65076E8",
+      "jobClass": "STATUS",
+      "handler": "COLLECT_REVIEW_STATUS_V1",
+      "capability": "task states, installed hashes, and bounded log lines only"
+    },
+    {
+      "requestId": "REQ_20260810T224611304Z_CB2441A1E15B",
+      "jobClass": "STATUS",
+      "handler": "",
+      "capability": "fixed endpoint status only"
+    },
+    {
+      "requestId": "REQ_20260810T214500865Z_22003759D77A",
+      "jobClass": "STATUS",
+      "handler": "",
+      "capability": "fixed endpoint status only"
+    },
+    {
+      "requestId": "REQ_20260809T044410593Z_DFB40DEA257B",
+      "jobClass": "DATA_PULL",
+      "handler": "",
+      "capability": "one fixed result ZIP under approvedRoot ARGOS_INSITE_RESULTS"
+    },
+    {
+      "requestId": "REQ_20260809T015623898Z_1C1BAE00F331",
+      "jobClass": "DATA_PULL",
+      "handler": "",
+      "capability": "one fixed result ZIP under approvedRoot ARGOS_INSITE_RESULTS"
+    },
+    {
+      "requestId": "REQ_20260809T014400257Z_274636FCB62A",
+      "jobClass": "INSITE_DIAGNOSTIC",
+      "handler": "FRONT_METAL_RESIST_HISTORY_V1",
+      "capability": "fixed installed eleven-lot front-metal/resist history query"
+    }
+  ],
+  "requiredButUnavailableThroughExistingReadRoutes": [
+    "current endpoint_argos.json exact bytes",
+    "current Argos endpoint worker exact bytes",
+    "current Insite query-worker and provider/helper exact bytes",
+    "current Get-Command parameter signatures",
+    "sanitized credential-envelope metadata",
+    "current Argos public response certificate"
+  ],
+  "conclusion": {
+    "existingStatusSufficient": false,
+    "existingDataPullSufficient": false,
+    "existingInsiteDiagnosticSufficient": false,
+    "arbitraryPathOrSqlInjectionAllowed": false,
+    "oneCapabilityBootstrapNecessary": true,
+    "bootstrapClassification": "MUTATE",
+    "subsequentRosterClassification": "MUTATE_READ_ONLY_QUERY_ENTRYPOINT",
+    "noCredentialContentRequired": true
+  },
+  "invariants": {
+    "requestPayloadBytesRead": false,
+    "responsePayloadBytesRead": false,
+    "imageBytesRead": false,
+    "credentialContentRead": false,
+    "portalQueueMutated": false,
+    "remoteTaskOrProcessActionPerformed": false,
+    "jbodContacted": false,
+    "mutationsPerformed": false,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "schema": "argos_opencv_scribe_r18w1_signed_unpublished_withdrawal_v1",
+  "createdUtc": "2026-09-05T17:32:43.6409795Z",
+  "state": "WITHDRAWN_NONPUBLISHABLE_GATE_ORDER",
+  "classification": "WITHDRAWN",
+  "artifactLifecycle": "SIGNED_UNPUBLISHED_WITHDRAWN",
+  "revision": "OCV02_R18W1_SIGNED_UNPUBLISHED_WITHDRAWN_20260905",
+  "requestId": "REQ_R18W1",
+  "withdrawalReasons": [
+    {
+      "code": "GENERATED_HARNESS_GUARD_PRECEDED_CLONE_REMEDIATION_GATE",
+      "failedGate": "ORDERED_SOURCE_CLONE_GENERATED_HARNESS_EVIDENCE",
+      "detail": "The combined source/generated harness guard was checked before the clone-remediation GATE. Matching builder hashes do not create the missing post-clone generated guard."
+    },
+    {
+      "code": "RESERVED_VALIDATION_PHYSICAL_LINEAGE_LEAKED_INTO_DEVELOPMENT",
+      "failedGate": "ZERO_DEVELOPMENT_VALIDATION_TRUTH_OVERLAP",
+      "detail": "Development acquisition 62546-481-POST_20260708155428_Slot21 and reserved validation acquisition 62546-481_20260707164232_Slot21 are separate acquisitions of the same exact database-resolved wafer/scribe lineage 13HFX135SUE3."
+    },
+    {
+      "code": "SELECTED_TRUTH_ALREADY_PRESENT_IN_FROZEN_REFERENCE_LINEAGES",
+      "failedGate": "ZERO_SELECTION_REFERENCE_TRUTH_OVERLAP",
+      "detail": "Selected acquisition 62607-215_20260730053038_Slot25 has exact truth 5565R022FEG5, already present in the frozen R18X reference set as SCRIBE:5565R022FEG5 at legacy physical identity 62607_215_SLOT25, so it cannot increase independent-lineage coverage."
+    }
+  ],
+  "gateOrderEvidence": {
+    "requiredOrder": [
+      "SOURCE_TEMPLATE_HARNESS_GUARD",
+      "CLONE_LITERAL_REMEDIATION_GATE",
+      "GENERATED_SCRIPT_HARNESS_GUARD_AFTER_CLONE_GATE",
+      "FILE_BACKED_ORDERED_HARNESS_GATE",
+      "PRESIGNATURE_FREEZE",
+      "SIGNATURE"
+    ],
+    "observedCombinedSourceAndGeneratedHarnessGuardCheckedUtc": "2026-09-05T17:10:06.0491819Z",
+    "observedCloneGateCheckedUtc": "2026-09-05T17:10:51.8362795Z",
+    "observedHarnessGateFileLastWriteUtc": "2026-09-05T17:11:16.2540109Z",
+    "observedPresignatureFreezeCreatedUtc": "2026-09-05T17:12:00Z",
+    "observedSignedFinalPackageGateCreatedUtc": "2026-09-05T17:13:29.4642129Z",
+    "generatedBuilderSha256": "02045ADB36F948C0EDB79AA1860D66E7066F45E3504AE26B6EFD4610A4F29030",
+    "cloneGateGeneratedBuilderSha256": "02045ADB36F948C0EDB79AA1860D66E7066F45E3504AE26B6EFD4610A4F29030",
+    "generatedBytesMismatchObserved": false,
+    "postCloneGeneratedGuardPresent": false,
+    "chronologicalOrderPassed": false
+  },
+  "physicalLineageEvidence": {
+    "sourceReconciliation": {
+      "path": "work/OPENCV_SCRIBE_R18UJ3/R18UJ3_LIVE_RECONCILIATION.json",
+      "sha256": "419A6A0172C675F4A8DF42EE5ED152846E690D3A667435A89F91B344AD4A5B64"
+    },
+    "referenceCrosswalk": {
+      "path": "work/OPENCV_SCRIBE_R18X/R18X_EXACT_SCRIBE_LINEAGE_CROSSWALK.json",
+      "sha256": "EAF725D04C899CCEFC70E29DDA990D4058F226D7C602C1607D7ADB2E9CED1099"
+    },
+    "developmentValidationCollision": {
+      "developmentRequestIdentity": "62546-481-POST_20260708155428_Slot21",
+      "reservedValidationRequestIdentity": "62546-481_20260707164232_Slot21",
+      "queryLot": "62546-481",
+      "issuedWaferContainer": "62546-481-010",
+      "exactConfirmedScribe": "13HFX135SUE3",
+      "independentLineageKey": "62546-481|62546-481-010|13HFX135SUE3",
+      "separateAcquisitionIdentityOnly": true,
+      "independentPhysicalLineage": false
+    },
+    "developmentReferenceCollision": {
+      "developmentRequestIdentity": "62607-215_20260730053038_Slot25",
+      "queryLot": "62607-215",
+      "issuedWaferContainer": "62607-215-030",
+      "exactConfirmedScribe": "5565R022FEG5",
+      "referenceLineageKey": "SCRIBE:5565R022FEG5",
+      "referenceLegacyPhysicalIdentity": "62607_215_SLOT25",
+      "increasesIndependentLineageCoverage": false
+    }
+  },
+  "signedPackage": {
+    "path": "work/OPENCV_SCRIBE_R18W1/final/REQ_R18W1.ready.zip",
+    "bytes": 1386,
+    "sha256": "954D2E68A4B304581EEE3290177CF892F05834727421EDDD35F922FB50AC9F53",
+    "requestManifestSha256": "07531C7317633E770AE320A7216ADBDFA79A6992A939BE5E5BB2BFF943895497",
+    "requestSignatureSha256": "921BB7B017A2F73FBBFB74659A2A98D44288B2313361E213B9256B8F985C9B2F",
+    "signatureVerified": true,
+    "exactFinalZipExtractionPassed": true,
+    "exactFinalZipMembershipPassed": true
+  },
+  "preservedR18W1Inventory": [
+    {"path": "work/OPENCV_SCRIBE_R18W1/Build-R18W1Request.ps1", "bytes": 30126, "sha256": "02045ADB36F948C0EDB79AA1860D66E7066F45E3504AE26B6EFD4610A4F29030"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/final/REQ_R18W1.ready.zip", "bytes": 1386, "sha256": "954D2E68A4B304581EEE3290177CF892F05834727421EDDD35F922FB50AC9F53"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/final/REQ_R18W1.ready.zip.path_gate.json", "bytes": 35940, "sha256": "67193460F088AC9AB55EFE2C7E66FE5E7E6C8757C7FD06E3D0A7F31340120892"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/PREACTION_R18W1_LOCAL_PACKAGE_PREPARATION.json", "bytes": 5898, "sha256": "54E59E6D76E1B2683C1713E5D76E2DA20FA6C5C061D73A68AE8281BCFFA503F1"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_CLONE_LITERAL_GATE.json", "bytes": 2256, "sha256": "5E05FC77FC8AD808DD38089F78F131F0F4E12C9DD745F18E6B0D5BC41A3CC3D6"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_CLONE_LITERAL_REMEDIATION.json", "bytes": 1174, "sha256": "9F3391739F435694EEE071F9BA1F3D1DD509838A3454FC28DADC56706C0E12D5"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_COMPLETE_ROUTE_GATE.json", "bytes": 35940, "sha256": "67193460F088AC9AB55EFE2C7E66FE5E7E6C8757C7FD06E3D0A7F31340120892"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_DATA_PULL_DEFINITION.json", "bytes": 2694, "sha256": "26EE307D838ABC31D832B0C8859797F0C8B0FAE18530DF585AD1F6F9007B2972"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_FINAL_PACKAGE_GATE.json", "bytes": 2706, "sha256": "1196691C1F0A52C6194B3077B847F20C533BBA728EF3033EFB8924B373D00133"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_HARNESS_GATE.json", "bytes": 1519, "sha256": "9D61E850C0E6A257A73125BD69BDF94ADCA6FB9C9AD02F8480E1B749CC1F8670"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_PRESIGNATURE_FREEZE_GATE.json", "bytes": 4204, "sha256": "1A4F2D66F93425CB77AE051C245FDFC4FB8BC103DABCE0ABAF88CC7107A318C7"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_ROUTE_PINS.json", "bytes": 2601, "sha256": "05AEA97A1321BB4E6256615558BC78746338EE011368E150815157614232D1A0"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_SELECTION.json", "bytes": 4513, "sha256": "6B078984F7BC66770D9855864BD44FC1D50BD67D0E4C7B992B789BFA3A7160C8"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_WRAPPER_APPLICABILITY_GATE.json", "bytes": 980, "sha256": "99D2E03F7B7F39846D6B4C1D322BC9AB3F62A8CFFF04A04BC059DD76EE882352"}
+  ],
+  "failurePreventionMemory": {
+    "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+    "sha256": "00509B849F821FCFC5E1D6BF52902D6ECD548F988C7FCAE2A5D3BD1DDBD64685",
+    "rulesRecorded": [
+      "Generated harness guard must follow clone-remediation GATE.",
+      "Acquisition identity is not physical-lineage independence.",
+      "Selection truths must have zero overlap with frozen reference and reserved validation truths before freeze."
+    ]
+  },
+  "lifecycle": {
+    "signed": true,
+    "published": false,
+    "publicationCount": 0,
+    "acceptedByGatewayShareImporter": false,
+    "targetExecuted": false,
+    "matchingTerminalResponseObserved": false,
+    "externalRouteContacted": false,
+    "jbodContacted": false,
+    "imageBytesRead": false,
+    "pixelsDecoded": false,
+    "taskProcessOrQueueManagementPerformed": false,
+    "sourceMutationPerformed": false,
+    "externalMutationPerformed": false
+  },
+  "authority": {
+    "futurePublicationAllowed": false,
+    "futureExecutionAllowed": false,
+    "futureTemplateUseAllowed": false,
+    "requestRetryAuthorized": false,
+    "automaticRetryAuthorized": false,
+    "publicationParentAllowed": false,
+    "executionParentAllowed": false,
+    "requestNamespaceReuseAllowed": false,
+    "terminalEvidenceRetentionAllowed": true,
+    "freshSuccessorNamespaceRequired": true,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  },
+  "recovery": {
+    "successorNamespace": "R18W2",
+    "requiredGateOrder": "source guard -> clone-remediation GATE -> post-clone generated guard -> file-backed harness gate -> freeze -> signature",
+    "requiredSelectionCorrections": [
+      "Exclude both exact-scribe Slot21 acquisitions from development.",
+      "Replace the selected 5565R022FEG5 acquisition because it already exists in the frozen reference lineages.",
+      "Require zero selection truth overlap with all frozen reference truths and all reserved validation truths."
+    ]
+  },
+  "audit": {
+    "w1BytesModified": false,
+    "externalAccessPerformedForWithdrawal": false,
+    "portalAccessPerformedForWithdrawal": false,
+    "jbodAccessPerformedForWithdrawal": false,
+    "imagesAccessedForWithdrawal": false,
+    "tasksProcessesOrQueuesAccessedForWithdrawal": false
+  }
+}

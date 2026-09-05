@@ -1,0 +1,3364 @@
+{
+  "classification": "DIAGNOSTIC_ONLY",
+  "inputPins": [
+    {
+      "bytes": 6875,
+      "relativePath": "work/OPENCV_SCRIBE_R18T/R18T_LIVE_REVIEW_COHORT.json",
+      "sha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661"
+    },
+    {
+      "bytes": 2412069,
+      "relativePath": "work/OPENCV_SCRIBE_R18U/evidence/VERIFIED_METADATA_OVERLAY_20260814.json",
+      "sha256": "AB800600F24BC2163010580DB1E2D910CA42C882218F4CFC6D60C9371511D5D0"
+    },
+    {
+      "bytes": 6012,
+      "relativePath": "work/OPENCV_SCRIBE_R18F/reference_bank/SUPPLEMENTAL_GLYPH_REFERENCE_MANIFEST.json",
+      "sha256": "FD60D494A25B489A8F1D8581217457AD67B02C98D54CA0A5400FAC0611537114"
+    },
+    {
+      "bytes": 391091,
+      "relativePath": "work/OPENCV_SCRIBE_R18UQ3/R18UQ3_LIVE_INSITEREAD_ROSTER.json",
+      "sha256": "CE108A3726EFDD53651453CB3310E06051D6E53DDD3654A304446D9070C19DAB"
+    }
+  ],
+  "invariants": {
+    "checksumUsedAsTruthAuthority": false,
+    "exactAcquisitionJoinRequired": true,
+    "externalMutationPerformed": false,
+    "fallbackTruthRequiresOperatorConfirmationAndSourceHashBinding": true,
+    "identityAcceptanceAuthorized": false,
+    "imageBytesDecoded": false,
+    "lotOrSlotInferenceUsed": false,
+    "providerActivationAuthorized": false,
+    "publicationAuthorized": false,
+    "resultClaimedPassUsedAsTruth": false,
+    "signedTerminalExecutionClaimed": false,
+    "sourceImagesRead": false,
+    "trainingAuthorized": false
+  },
+  "nextAction": "Build exact-scribe-lineage-separated per-character envelopes from development-only evidence, then rerun the untouched current Slot21 BF/DF pair as independent validation.",
+  "operatorSuppliedResultZip": {
+    "bytes": 116912,
+    "imageMemberBodiesRead": 0,
+    "jsonResultBodiesRead": 20,
+    "operatorSuppliedWorkerResultArtifact": true,
+    "path": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs\\ProjectPortalRO\\responses\\R18T1.zip",
+    "sha256": "B87C8E0A4DAF9E106C60C21FC5726DFE6671D28F7E321B3347E90C3DADC7F945",
+    "signedPortalTerminalResponse": false
+  },
+  "regraderSha256": "BBDAA1BECAEAF42E7BFC2A559565E5125EC323B1690186DE121FC710B540DA99",
+  "results": [
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "0303N049FEB3",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.9783565429570832
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "44939949FEA3",
+          "mismatches": [
+            {
+              "candidate": "4",
+              "position1Based": 1,
+              "truth": "0"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 2,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 5,
+              "truth": "N"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "A",
+              "position1Based": 11,
+              "truth": "B"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5328885113783322
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "F00004464FF6",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 2,
+              "truth": "3"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 4,
+              "truth": "3"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 5,
+              "truth": "N"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 8,
+              "truth": "9"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 11,
+              "truth": "B"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 12,
+              "truth": "3"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5268753416382529
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "0303N049FEB3",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.9718283781103912
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "0303N049FEB3",
+      "physicalIdentity": "62546-481-POST_20260708155428_Slot04",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "0303N049FEB3",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/D8752BD6B66A6111/RESULT.json",
+      "sources": {
+        "BF": "F3D1DA2938C4B970CE7E99378467A3BCA8961B42ACCD0FFC380C19681A8EFF35",
+        "DF": "C707FDA47C6AD85F00B998ED1D018F4B79F6DFA1DD20BC881CFD2C05B2FE2479"
+      },
+      "truth": "0303N049FEB3",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": true,
+        "historyBaseLot": "62546-481",
+        "issuedWaferContainer": "62546-481-040"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "0572N084FEB3",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.9801124803889588
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "198729904FE0",
+          "mismatches": [
+            {
+              "candidate": "1",
+              "position1Based": 1,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 2,
+              "truth": "5"
+            },
+            {
+              "candidate": "8",
+              "position1Based": 3,
+              "truth": "7"
+            },
+            {
+              "candidate": "7",
+              "position1Based": 4,
+              "truth": "2"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 5,
+              "truth": "N"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 7,
+              "truth": "8"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 8,
+              "truth": "4"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "B"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 12,
+              "truth": "3"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5094510219783049
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "F29P29084FE6",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "0"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 2,
+              "truth": "5"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "7"
+            },
+            {
+              "candidate": "P",
+              "position1Based": 4,
+              "truth": "2"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 5,
+              "truth": "N"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "8"
+            },
+            {
+              "candidate": "8",
+              "position1Based": 8,
+              "truth": "4"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "B"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 12,
+              "truth": "3"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5159527807372246
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "0572N084FEB3",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.9758976937957438
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "0572N084FEB3",
+      "physicalIdentity": "62546-481-POST_20260708155428_Slot07",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "0572N084FEB3",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/B2D77803F2CA16B1/RESULT.json",
+      "sources": {
+        "BF": "BC0145D7C0DFD02F959EC0BAFF7F487803846E188BA651FE4860FAB27AAFB3D8",
+        "DF": "730E094D9B020E2149EE957897B87AB6B35EE128C88BB9FA3DB3A68050BA4674"
+      },
+      "truth": "0572N084FEB3",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": true,
+        "historyBaseLot": "62546-481",
+        "issuedWaferContainer": "62546-481-080"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "K9560015FEE0",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.813781881606599
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "FF9969011FE0",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "K"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 2,
+              "truth": "9"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "5"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 4,
+              "truth": "6"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 5,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "1"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 8,
+              "truth": "5"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5329403871511442
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "FF9969011FE0",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "K"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 2,
+              "truth": "9"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "5"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 4,
+              "truth": "6"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 5,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "1"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 8,
+              "truth": "5"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5271526258197375
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "K9560015FEE0",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.801051886921336
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "K9560015FEE0",
+      "physicalIdentity": "62546-481-POST_20260708155428_Slot12",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "K9560015FEE0",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/BC1FC7C67C230B23/RESULT.json",
+      "sources": {
+        "BF": "A2EBFF20D385735E7B2E98E92CF83B86F4AC5526B2197CC7E6A4214CA438EB2F",
+        "DF": "663C59F7E46CD65E2935CA2EDBE7522A6BC5A78ACD1FE62B2D7F16663212A482"
+      },
+      "truth": "K9560015FEE0",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": false,
+        "historyBaseLot": "62508-168",
+        "issuedWaferContainer": "62508-168-040"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "K9663017FEA6",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.7941122614916525
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "F6966901PPE6",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "K"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 2,
+              "truth": "9"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "6"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 5,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "1"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 8,
+              "truth": "7"
+            },
+            {
+              "candidate": "P",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "P",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "A"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5470081391491216
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "F6966901PFE6",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "K"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 2,
+              "truth": "9"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "6"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 5,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "1"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 8,
+              "truth": "7"
+            },
+            {
+              "candidate": "P",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "A"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5430003576055447
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "K9663017FEA6",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.7736048108683367
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "K9663017FEA6",
+      "physicalIdentity": "62546-481-POST_20260708155428_Slot23",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "K9663017FEA6",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/07007F95AB0811CC/RESULT.json",
+      "sources": {
+        "BF": "9C1ADC780B8D5972A8896912053659C2D4C8AAFDB01B290D32BA7E7EF55B99BF",
+        "DF": "513CFDD3CE3058FE6341762F6ECFADF9BAE4497665E22D82A5636F8B82EADF2C"
+      },
+      "truth": "K9663017FEA6",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": false,
+        "historyBaseLot": "62508-168",
+        "issuedWaferContainer": "62508-168-100"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "13DCK060SUF5",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.9174050306351367
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "9P2291991UF5",
+          "mismatches": [
+            {
+              "candidate": "9",
+              "position1Based": 1,
+              "truth": "1"
+            },
+            {
+              "candidate": "P",
+              "position1Based": 2,
+              "truth": "3"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 3,
+              "truth": "D"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 4,
+              "truth": "C"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 5,
+              "truth": "K"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 7,
+              "truth": "6"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 8,
+              "truth": "0"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 9,
+              "truth": "S"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5025424642106658
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "9P2292991UF5",
+          "mismatches": [
+            {
+              "candidate": "9",
+              "position1Based": 1,
+              "truth": "1"
+            },
+            {
+              "candidate": "P",
+              "position1Based": 2,
+              "truth": "3"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 3,
+              "truth": "D"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 4,
+              "truth": "C"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 5,
+              "truth": "K"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 7,
+              "truth": "6"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 8,
+              "truth": "0"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 9,
+              "truth": "S"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5030520794994944
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "13DCK060SUF5",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.9021667601561859
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "13DCK060SUF5",
+      "physicalIdentity": "62546-481-POST_20260713041740_Slot22",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "13DCK060SUF5",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/D9CD191357366B35/RESULT.json",
+      "sources": {
+        "BF": "3D41F41B0E6F99940ED8C7243DE665FC063EDB4A8408A442C3EDBDD844E40F18",
+        "DF": "7EEC139165406CC81A150AF0744116FE0ABCB61945B7E7A436A54D42782EA243"
+      },
+      "truth": "13DCK060SUF5",
+      "truthEvidence": {
+        "supplementalReferenceCount": 1
+      },
+      "truthSource": "FROZEN_OPERATOR_CONFIRMED_SOURCE_HASH_BOUND_REFERENCE"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "0303N050FEE4",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.990653170510479
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "9993N050FEE4",
+          "mismatches": [
+            {
+              "candidate": "9",
+              "position1Based": 1,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 2,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "0"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5413197049337425
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "29999050FEE4",
+          "mismatches": [
+            {
+              "candidate": "2",
+              "position1Based": 1,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 2,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 4,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 5,
+              "truth": "N"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5252142338311646
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "0303N050FEE4",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.9778917119005525
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "0303N050FEE4",
+      "physicalIdentity": "62546-481_20260707164232_Slot03",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "0303N050FEE4",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/D13ED9B05187C37E/RESULT.json",
+      "sources": {
+        "BF": "A083698DBAB9DF7818357DFED7AEA3197D99BB232380C3B28603B65554D16C88",
+        "DF": "ECE5BCD11AA00D6315935982B5CC5A5EB901C5EC8A09682538FFF68A4C16B0E6"
+      },
+      "truth": "0303N050FEE4",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": true,
+        "historyBaseLot": "62546-481",
+        "issuedWaferContainer": "62546-481-030"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "0303N049FEB3",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.9788085955643369
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "F00004464FF6",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 2,
+              "truth": "3"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 4,
+              "truth": "3"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 5,
+              "truth": "N"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 8,
+              "truth": "9"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 11,
+              "truth": "B"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 12,
+              "truth": "3"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5289411126553514
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "F00004464FF6",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 2,
+              "truth": "3"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 4,
+              "truth": "3"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 5,
+              "truth": "N"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 8,
+              "truth": "9"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 11,
+              "truth": "B"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 12,
+              "truth": "3"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5276160133103999
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "0303N049FEB3",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.9742173034580534
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "0303N049FEB3",
+      "physicalIdentity": "62546-481_20260707164232_Slot04",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "0303N049FEB3",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/D772487FFB144590/RESULT.json",
+      "sources": {
+        "BF": "19DF39A9AC77D9BC923F91D98F6752B04B8ABAA9797C4736C8E03A40FD53B0DD",
+        "DF": "CE3BE481841B91195B041668E3715CF9F09BD2958FE4996EA83D19FADA819BC4"
+      },
+      "truth": "0303N049FEB3",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": true,
+        "historyBaseLot": "62546-481",
+        "issuedWaferContainer": "62546-481-040"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "0303N047FEA2",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.9870321355517886
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "F99904047FE6",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 2,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 4,
+              "truth": "3"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 5,
+              "truth": "N"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "4"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 8,
+              "truth": "7"
+            },
+            {
+              "candidate": "7",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "A"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 12,
+              "truth": "2"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5421276548346071
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "F99904047FE6",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 2,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 4,
+              "truth": "3"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 5,
+              "truth": "N"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "4"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 8,
+              "truth": "7"
+            },
+            {
+              "candidate": "7",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "A"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 12,
+              "truth": "2"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5433396585491884
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "0303N047FEA2",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.9784484643442152
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "0303N047FEA2",
+      "physicalIdentity": "62546-481_20260707164232_Slot05",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "0303N047FEA2",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/A930FE78026C8A8E/RESULT.json",
+      "sources": {
+        "BF": "ADA31D183F63728E9DCA631902C7F4B41358FD0141E02532BEACA2B7B240715B",
+        "DF": "224D8F55B0E8910A2BA26D61C9B8427236FCA9E1235AA9D9CE43834C204F492F"
+      },
+      "truth": "0303N047FEA2",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": true,
+        "historyBaseLot": "62546-481",
+        "issuedWaferContainer": "62546-481-060"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "0572N085FEF5",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.9813322628744052
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "F9972N085FE1",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 2,
+              "truth": "5"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "7"
+            },
+            {
+              "candidate": "7",
+              "position1Based": 4,
+              "truth": "2"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 5,
+              "truth": "N"
+            },
+            {
+              "candidate": "N",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "8"
+            },
+            {
+              "candidate": "8",
+              "position1Based": 8,
+              "truth": "5"
+            },
+            {
+              "candidate": "5",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "F"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 12,
+              "truth": "5"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5196587600817317
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "F99724085FE6",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 2,
+              "truth": "5"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "7"
+            },
+            {
+              "candidate": "7",
+              "position1Based": 4,
+              "truth": "2"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 5,
+              "truth": "N"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "8"
+            },
+            {
+              "candidate": "8",
+              "position1Based": 8,
+              "truth": "5"
+            },
+            {
+              "candidate": "5",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "F"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 12,
+              "truth": "5"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5191090114683615
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "0572N085FEF5",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.980321176113006
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "0572N085FEF5",
+      "physicalIdentity": "62546-481_20260707164232_Slot06",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "0572N085FEF5",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/BA207AE01077DCE0/RESULT.json",
+      "sources": {
+        "BF": "B6A7E288F05B7413331308133ADF003832DE5A350C09AC511801C2C75BA79F65",
+        "DF": "C93573A69D2B166B650C520712F60AC3487B43A786DF3EDCB757B563E850768C"
+      },
+      "truth": "0572N085FEF5",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": true,
+        "historyBaseLot": "62546-481",
+        "issuedWaferContainer": "62546-481-070"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "0572N084FEB3",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.9758213473367284
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "F99P0N084FE6",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 2,
+              "truth": "5"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "7"
+            },
+            {
+              "candidate": "P",
+              "position1Based": 4,
+              "truth": "2"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 5,
+              "truth": "N"
+            },
+            {
+              "candidate": "N",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "8"
+            },
+            {
+              "candidate": "8",
+              "position1Based": 8,
+              "truth": "4"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "B"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 12,
+              "truth": "3"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5221658542235365
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "F29P09084FE6",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "0"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 2,
+              "truth": "5"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "7"
+            },
+            {
+              "candidate": "P",
+              "position1Based": 4,
+              "truth": "2"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 5,
+              "truth": "N"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "8"
+            },
+            {
+              "candidate": "8",
+              "position1Based": 8,
+              "truth": "4"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "B"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 12,
+              "truth": "3"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5159275043028488
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "0572N084FEB3",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.972056666165115
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "0572N084FEB3",
+      "physicalIdentity": "62546-481_20260707164232_Slot07",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "0572N084FEB3",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/6CC89D2942F8BF5E/RESULT.json",
+      "sources": {
+        "BF": "DA9CE2C2005BDC9A97AF9457266145837885531274F7DD5B0322F76642B0D5EC",
+        "DF": "C065AFE01B51F774D18F2167927275AD18F3770B70CC42AAEB921C5F29A9E56F"
+      },
+      "truth": "0572N084FEB3",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": true,
+        "historyBaseLot": "62546-481",
+        "issuedWaferContainer": "62546-481-080"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": false,
+      "claimedReviewState": "HOLD_SCRIBE_MULTIPLE_CLOSE_IMAGE_FIRST_STRINGS",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "K9663019FEB7",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.7776305932019838
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "FF9669019FE0",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "K"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 2,
+              "truth": "9"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "6"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 5,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "1"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 8,
+              "truth": "9"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "B"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 12,
+              "truth": "7"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5809606631041795
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "FF9669019FE0",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "K"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 2,
+              "truth": "9"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "6"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 5,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "1"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 8,
+              "truth": "9"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "B"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 12,
+              "truth": "7"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5659394165247795
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "K9663W19FEB7",
+          "mismatches": [
+            {
+              "candidate": "W",
+              "position1Based": 6,
+              "truth": "0"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.7657247571552919
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "K9663019FEB7",
+      "physicalIdentity": "62546-481_20260707164232_Slot08",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "K9663019FEB7",
+      "regradeState": "OCR_EXACT_BUT_WORKFLOW_HELD",
+      "resultMember": "R18T1/c/9FA1A0844FA3CFAC/RESULT.json",
+      "sources": {
+        "BF": "AA43B714B4C2AD69AF48008C7CD01BE115745BE95837C8ED0F1322A984DA4992",
+        "DF": "C72DC11BF3A2AC8F2B39225B82576377AAB228107D80F96D277FA740DCC15CED"
+      },
+      "truth": "K9663019FEB7",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": false,
+        "historyBaseLot": "62508-168",
+        "issuedWaferContainer": "62508-168-090"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "L0038038FEC6",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.7983805768888821
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "69299990FEC6",
+          "mismatches": [
+            {
+              "candidate": "6",
+              "position1Based": 1,
+              "truth": "L"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 2,
+              "truth": "0"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 3,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 4,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 5,
+              "truth": "8"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 7,
+              "truth": "3"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 8,
+              "truth": "8"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5680841242893954
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "69999908FEC6",
+          "mismatches": [
+            {
+              "candidate": "6",
+              "position1Based": 1,
+              "truth": "L"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 2,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 4,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 5,
+              "truth": "8"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "3"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5678271233338983
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "L0038038FEC6",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.7878008654052371
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "L0038038FEC6",
+      "physicalIdentity": "62546-481_20260707164232_Slot09",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "L0038038FEC6",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/D3E9AF15DF7E8E9D/RESULT.json",
+      "sources": {
+        "BF": "605818900AAEA3C0C28C2C4B2DDC4FFB4107BF3A8A743CDA62A878964CF68381",
+        "DF": "1014EEE5491B6A69AB3D802A44FCAFC326CBCEE54B80F18EC40797ECE8E3353A"
+      },
+      "truth": "L0038038FEC6",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": false,
+        "historyBaseLot": "62450-866",
+        "issuedWaferContainer": "62450-866-100"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": false,
+      "claimedReviewState": "HOLD_SCRIBE_MULTIPLE_CLOSE_IMAGE_FIRST_STRINGS",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "L0430010FEB1",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.7958967808933942
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "F19790010FE0",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "L"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 2,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "4"
+            },
+            {
+              "candidate": "7",
+              "position1Based": 4,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 5,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "1"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 8,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "B"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 12,
+              "truth": "1"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5593748382866555
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "F19790010FE0",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "L"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 2,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "4"
+            },
+            {
+              "candidate": "7",
+              "position1Based": 4,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 5,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "1"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 8,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "B"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 12,
+              "truth": "1"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5552314331955406
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "L04B0010FEB1",
+          "mismatches": [
+            {
+              "candidate": "B",
+              "position1Based": 4,
+              "truth": "3"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.7720669392691023
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "L0430010FEB1",
+      "physicalIdentity": "62546-481_20260707164232_Slot10",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "L0430010FEB1",
+      "regradeState": "OCR_EXACT_BUT_WORKFLOW_HELD",
+      "resultMember": "R18T1/c/DBE8E9E8E9EE9483/RESULT.json",
+      "sources": {
+        "BF": "87EE3F775E32DF8F7E38A48C6F3BB29E69F97842921EA04EA8C503139ADEE156",
+        "DF": "AB3743A49E640A404AB2E5FE4A568680F883B868467008333BEDF7E6EB92D2ED"
+      },
+      "truth": "L0430010FEB1",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": false,
+        "historyBaseLot": "62450-867",
+        "issuedWaferContainer": "62450-867-030"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "L0430008FEB1",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.8062516605424294
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "19439008FEB1",
+          "mismatches": [
+            {
+              "candidate": "1",
+              "position1Based": 1,
+              "truth": "L"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 2,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 5,
+              "truth": "0"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5531543633650807
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "19430008FEE1",
+          "mismatches": [
+            {
+              "candidate": "1",
+              "position1Based": 1,
+              "truth": "L"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 2,
+              "truth": "0"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "B"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5584101734699624
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "L0430008FEB1",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.7768323085861916
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "L0430008FEB1",
+      "physicalIdentity": "62546-481_20260707164232_Slot11",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "L0430008FEB1",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/061E59583604B66E/RESULT.json",
+      "sources": {
+        "BF": "8E78A85AB8DCC0E16541D0C28B2458C24E10C01B127BAD4820554AAC2809EC72",
+        "DF": "666C3B21C87BF412B5265D0BBA0EA150C0679A01C7F44EC67771F03C4A743F76"
+      },
+      "truth": "L0430008FEB1",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": false,
+        "historyBaseLot": "62450-867",
+        "issuedWaferContainer": "62450-867-040"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "K9560015FEE0",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.818942952587045
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "FF9969011FE0",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "K"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 2,
+              "truth": "9"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "5"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 4,
+              "truth": "6"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 5,
+              "truth": "0"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "1"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 8,
+              "truth": "5"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.532191693478428
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "22919A66CFE1",
+          "mismatches": [
+            {
+              "candidate": "2",
+              "position1Based": 1,
+              "truth": "K"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 2,
+              "truth": "9"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "5"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 4,
+              "truth": "6"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 5,
+              "truth": "0"
+            },
+            {
+              "candidate": "A",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 7,
+              "truth": "1"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 8,
+              "truth": "5"
+            },
+            {
+              "candidate": "C",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 12,
+              "truth": "0"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5373830074498316
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "K9560015FEE0",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.7979940142923118
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "K9560015FEE0",
+      "physicalIdentity": "62546-481_20260707164232_Slot12",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "K9560015FEE0",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/88DD0E7F1BF6B274/RESULT.json",
+      "sources": {
+        "BF": "7BA4E747A5C6E2E004E939AD1DDB56117E97DB0F3AFBD48124CD973D97628900",
+        "DF": "FE3B2023D35B362AC3C58E5F96AF86D04485DDFB5539B2CACED15CFEFA6A832D"
+      },
+      "truth": "K9560015FEE0",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": false,
+        "historyBaseLot": "62508-168",
+        "issuedWaferContainer": "62508-168-040"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "K9663024FEH2",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.7922841335724348
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "J59660024FE4",
+          "mismatches": [
+            {
+              "candidate": "J",
+              "position1Based": 1,
+              "truth": "K"
+            },
+            {
+              "candidate": "5",
+              "position1Based": 2,
+              "truth": "9"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "6"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 5,
+              "truth": "3"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "2"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 8,
+              "truth": "4"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "H"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 12,
+              "truth": "2"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5580926413594348
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "FE9660024FE4",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "K"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 2,
+              "truth": "9"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "6"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 5,
+              "truth": "3"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "2"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 8,
+              "truth": "4"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "H"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 12,
+              "truth": "2"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.554810881741412
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "K9663024FEH2",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.7797923953547203
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "K9663024FEH2",
+      "physicalIdentity": "62546-481_20260707164232_Slot17",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "K9663024FEH2",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/78A92CB774737D27/RESULT.json",
+      "sources": {
+        "BF": "526F50C266FBEDCDA558F536961F11EF16F40B0C21EB84177BB79FF580532AC6",
+        "DF": "6865B318D9A7F9CD85A67459C605A1C2BCAAE34FD1BDE0857B3B9D71A404E649"
+      },
+      "truth": "K9663024FEH2",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": false,
+        "historyBaseLot": "62508-168",
+        "issuedWaferContainer": "62508-168-070"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "K9663023FED0",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.7893167834541622
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "FF9660020FE1",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "K"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 2,
+              "truth": "9"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "6"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 5,
+              "truth": "3"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 7,
+              "truth": "2"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 8,
+              "truth": "3"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 11,
+              "truth": "D"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 12,
+              "truth": "0"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5566522191694342
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "F6966933PFF6",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "K"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 2,
+              "truth": "9"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "6"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 5,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "3",
+              "position1Based": 7,
+              "truth": "2"
+            },
+            {
+              "candidate": "P",
+              "position1Based": 9,
+              "truth": "F"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 11,
+              "truth": "D"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 12,
+              "truth": "0"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5611897529458089
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "K9663023FED0",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.7682002245826383
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "K9663023FED0",
+      "physicalIdentity": "62546-481_20260707164232_Slot18",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "K9663023FED0",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/8C1611D92A42E578/RESULT.json",
+      "sources": {
+        "BF": "48F802C50BEB2C9B987B9117845B318390A382655CE9A3C373F8A9D4015F1F37",
+        "DF": "CC4C1937AC47609E04237CF92DFBCF1297699B1F3806E3688195A0B1DC880120"
+      },
+      "truth": "K9663023FED0",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": false,
+        "historyBaseLot": "62508-168",
+        "issuedWaferContainer": "62508-168-080"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "11HFX135SUE3",
+          "mismatches": [
+            {
+              "candidate": "1",
+              "position1Based": 2,
+              "truth": "3"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.9109583474880026
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "712F91385UE3",
+          "mismatches": [
+            {
+              "candidate": "7",
+              "position1Based": 1,
+              "truth": "1"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 2,
+              "truth": "3"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 3,
+              "truth": "H"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 5,
+              "truth": "X"
+            },
+            {
+              "candidate": "8",
+              "position1Based": 8,
+              "truth": "5"
+            },
+            {
+              "candidate": "5",
+              "position1Based": 9,
+              "truth": "S"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.47418015104889366
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "8P2F0135SUE3",
+          "mismatches": [
+            {
+              "candidate": "8",
+              "position1Based": 1,
+              "truth": "1"
+            },
+            {
+              "candidate": "P",
+              "position1Based": 2,
+              "truth": "3"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 3,
+              "truth": "H"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 5,
+              "truth": "X"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.46628501057446253
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "13HFX135SUE4",
+          "mismatches": [
+            {
+              "candidate": "4",
+              "position1Based": 12,
+              "truth": "3"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.8593589253800766
+        },
+        {
+          "channel": "BF",
+          "direction": "REVERSE_180",
+          "imageFirstString": "E3HS8ETX0HE1",
+          "mismatches": [
+            {
+              "candidate": "E",
+              "position1Based": 1,
+              "truth": "1"
+            },
+            {
+              "candidate": "S",
+              "position1Based": 4,
+              "truth": "F"
+            },
+            {
+              "candidate": "8",
+              "position1Based": 5,
+              "truth": "X"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 6,
+              "truth": "1"
+            },
+            {
+              "candidate": "T",
+              "position1Based": 7,
+              "truth": "3"
+            },
+            {
+              "candidate": "X",
+              "position1Based": 8,
+              "truth": "5"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 9,
+              "truth": "S"
+            },
+            {
+              "candidate": "H",
+              "position1Based": 10,
+              "truth": "U"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 12,
+              "truth": "3"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.7215775596451176
+        },
+        {
+          "channel": "BF",
+          "direction": "REVERSE_180",
+          "imageFirstString": "F397562ALHH4",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "1"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "H"
+            },
+            {
+              "candidate": "7",
+              "position1Based": 4,
+              "truth": "F"
+            },
+            {
+              "candidate": "5",
+              "position1Based": 5,
+              "truth": "X"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 6,
+              "truth": "1"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 7,
+              "truth": "3"
+            },
+            {
+              "candidate": "A",
+              "position1Based": 8,
+              "truth": "5"
+            },
+            {
+              "candidate": "L",
+              "position1Based": 9,
+              "truth": "S"
+            },
+            {
+              "candidate": "H",
+              "position1Based": 10,
+              "truth": "U"
+            },
+            {
+              "candidate": "H",
+              "position1Based": 11,
+              "truth": "E"
+            },
+            {
+              "candidate": "4",
+              "position1Based": 12,
+              "truth": "3"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.42743470025769764
+        },
+        {
+          "channel": "DF",
+          "direction": "REVERSE_180",
+          "imageFirstString": "F399552FL6H6",
+          "mismatches": [
+            {
+              "candidate": "F",
+              "position1Based": 1,
+              "truth": "1"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "H"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 4,
+              "truth": "F"
+            },
+            {
+              "candidate": "5",
+              "position1Based": 5,
+              "truth": "X"
+            },
+            {
+              "candidate": "5",
+              "position1Based": 6,
+              "truth": "1"
+            },
+            {
+              "candidate": "2",
+              "position1Based": 7,
+              "truth": "3"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 8,
+              "truth": "5"
+            },
+            {
+              "candidate": "L",
+              "position1Based": 9,
+              "truth": "S"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 10,
+              "truth": "U"
+            },
+            {
+              "candidate": "H",
+              "position1Based": 11,
+              "truth": "E"
+            },
+            {
+              "candidate": "6",
+              "position1Based": 12,
+              "truth": "3"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.429005565425157
+        },
+        {
+          "channel": "DF",
+          "direction": "REVERSE_180",
+          "imageFirstString": "E3HS8ETX0HE1",
+          "mismatches": [
+            {
+              "candidate": "E",
+              "position1Based": 1,
+              "truth": "1"
+            },
+            {
+              "candidate": "S",
+              "position1Based": 4,
+              "truth": "F"
+            },
+            {
+              "candidate": "8",
+              "position1Based": 5,
+              "truth": "X"
+            },
+            {
+              "candidate": "E",
+              "position1Based": 6,
+              "truth": "1"
+            },
+            {
+              "candidate": "T",
+              "position1Based": 7,
+              "truth": "3"
+            },
+            {
+              "candidate": "X",
+              "position1Based": 8,
+              "truth": "5"
+            },
+            {
+              "candidate": "0",
+              "position1Based": 9,
+              "truth": "S"
+            },
+            {
+              "candidate": "H",
+              "position1Based": 10,
+              "truth": "U"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 12,
+              "truth": "3"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.7169826968836067
+        }
+      ],
+      "imageFirstExact": false,
+      "imageFirstMismatches": [
+        {
+          "candidate": "1",
+          "position1Based": 2,
+          "truth": "3"
+        }
+      ],
+      "imageFirstString": "11HFX135SUE3",
+      "physicalIdentity": "62546-481_20260707164232_Slot21",
+      "proposedExact": false,
+      "proposedMismatches": [
+        {
+          "candidate": "2",
+          "position1Based": 2,
+          "truth": "3"
+        },
+        {
+          "candidate": "U",
+          "position1Based": 3,
+          "truth": "H"
+        },
+        {
+          "candidate": "G",
+          "position1Based": 11,
+          "truth": "E"
+        }
+      ],
+      "proposedString": "12UFX135SUG3",
+      "regradeState": "OCR_WRONG_DESPITE_CLAIMED_PASS",
+      "resultMember": "R18T1/c/4D3AA5EBF7D10373/RESULT.json",
+      "sources": {
+        "BF": "96046D91BBD6DF81E678224525560BD9C77C0DC09DD89A25992B07F8D1213B93",
+        "DF": "8DFD50AE1E0958CE01D7E32E0936978F157C2FECD0CB910BCC27DF9F7CE63CB8"
+      },
+      "truth": "13HFX135SUE3",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": true,
+        "historyBaseLot": "62546-481",
+        "issuedWaferContainer": "62546-481-010"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "K9663017FEA6",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.8028669817874083
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "69669917FEA6",
+          "mismatches": [
+            {
+              "candidate": "6",
+              "position1Based": 1,
+              "truth": "K"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 5,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.5580884775056779
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "69669917FFA6",
+          "mismatches": [
+            {
+              "candidate": "6",
+              "position1Based": 1,
+              "truth": "K"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 5,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "F",
+              "position1Based": 10,
+              "truth": "E"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.5520342127992146
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "K9663017FEA6",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.7862876060743149
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "K9663017FEA6",
+      "physicalIdentity": "62546-481_20260707164232_Slot23",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "K9663017FEA6",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/CE0A5D1314F3E2F5/RESULT.json",
+      "sources": {
+        "BF": "9FEFB42EB6C677348AB1412AC385A44FF9626B422D91D955074A9A6C0ACABBC9",
+        "DF": "77AB18C1B9FB4E0539B57C69E0D1E99A0E83FC0C693BACFF6F259BC47DAF6EB1"
+      },
+      "truth": "K9663017FEA6",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": false,
+        "historyBaseLot": "62508-168",
+        "issuedWaferContainer": "62508-168-100"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    },
+    {
+      "claimedPass": true,
+      "claimedReviewState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "hypotheses": [
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "13DCK076SUG1",
+          "mismatches": [],
+          "polarity": "DARK",
+          "selectionScore": 0.9395018609221361
+        },
+        {
+          "channel": "BF",
+          "direction": "FORWARD",
+          "imageFirstString": "13DC10591UD1",
+          "mismatches": [
+            {
+              "candidate": "1",
+              "position1Based": 5,
+              "truth": "K"
+            },
+            {
+              "candidate": "5",
+              "position1Based": 7,
+              "truth": "7"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 8,
+              "truth": "6"
+            },
+            {
+              "candidate": "1",
+              "position1Based": 9,
+              "truth": "S"
+            },
+            {
+              "candidate": "D",
+              "position1Based": 11,
+              "truth": "G"
+            }
+          ],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.49762710324754145
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "119999865UG1",
+          "mismatches": [
+            {
+              "candidate": "1",
+              "position1Based": 2,
+              "truth": "3"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 3,
+              "truth": "D"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 4,
+              "truth": "C"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 5,
+              "truth": "K"
+            },
+            {
+              "candidate": "9",
+              "position1Based": 6,
+              "truth": "0"
+            },
+            {
+              "candidate": "8",
+              "position1Based": 7,
+              "truth": "7"
+            },
+            {
+              "candidate": "5",
+              "position1Based": 9,
+              "truth": "S"
+            }
+          ],
+          "polarity": "DARK",
+          "selectionScore": 0.45662042753276866
+        },
+        {
+          "channel": "DF",
+          "direction": "FORWARD",
+          "imageFirstString": "13DCK076SUG1",
+          "mismatches": [],
+          "polarity": "BRIGHT",
+          "selectionScore": 0.9210510678909744
+        }
+      ],
+      "imageFirstExact": true,
+      "imageFirstMismatches": [],
+      "imageFirstString": "13DCK076SUG1",
+      "physicalIdentity": "62546-481_20260707164232_Slot25",
+      "proposedExact": true,
+      "proposedMismatches": [],
+      "proposedString": "13DCK076SUG1",
+      "regradeState": "OCR_EXACT_REVIEW_ONLY",
+      "resultMember": "R18T1/c/2B83EAF1CF7DB09B/RESULT.json",
+      "sources": {
+        "BF": "2AD91F530FEDCBA7B6F30FA43B0017991419F4D8772FACD5A1B8CD2BF659A738",
+        "DF": "7472E279D26DA8E473C2E54D56208A6720FAC392B8510B0D2E303F19707B6A3A"
+      },
+      "truth": "13DCK076SUG1",
+      "truthEvidence": {
+        "exactTriplePresentInCurrent50LotRoster": false,
+        "historyBaseLot": "62535-687",
+        "issuedWaferContainer": "62535-687-070"
+      },
+      "truthSource": "FROZEN_EXACT_ACQUISITION_METADATA"
+    }
+  ],
+  "revision": "OCV02_R18UR_R18T1_EXACT_MES_TRUTH_REGRADE_20260905",
+  "schema": "argos_opencv_scribe_r18ur_r18t1_exact_truth_regrade_v1",
+  "slot21RootFailureEvidence": {
+    "bfDarkForward": {
+      "channel": "BF",
+      "direction": "FORWARD",
+      "imageFirstString": "11HFX135SUE3",
+      "mismatches": [
+        {
+          "candidate": "1",
+          "position1Based": 2,
+          "truth": "3"
+        }
+      ],
+      "polarity": "DARK",
+      "selectionScore": 0.9109583474880026
+    },
+    "dfBrightForward": {
+      "channel": "DF",
+      "direction": "FORWARD",
+      "imageFirstString": "13HFX135SUE4",
+      "mismatches": [
+        {
+          "candidate": "4",
+          "position1Based": 12,
+          "truth": "3"
+        }
+      ],
+      "polarity": "BRIGHT",
+      "selectionScore": 0.8593589253800766
+    },
+    "finding": "BF-dark confuses truth 3 with 1 at position 2; DF-bright confuses truth 3 with 4 at position 12. Both are per-character structural-envelope failures.",
+    "physicalIdentity": "62546-481_20260707164232_Slot21",
+    "topSelectedHypothesis": {
+      "imageFirstString": "11HFX135SUE3",
+      "mismatches": [
+        {
+          "candidate": "1",
+          "position1Based": 2,
+          "truth": "3"
+        }
+      ]
+    },
+    "truth": "13HFX135SUE3"
+  },
+  "state": "FAIL_R18T1_ONE_WRONG_CLAIMED_PASS_19_EXACT_IMAGE_FIRST",
+  "summary": {
+    "claimedHoldCases": 2,
+    "claimedPassAndExactCases": 17,
+    "claimedPassButWrongCases": 1,
+    "claimedPassCases": 18,
+    "configuredCases": 20,
+    "exactButHeldCases": 2,
+    "exactTruthResolvedCases": 20,
+    "imageFirstExactCases": 19,
+    "imageFirstWrongCases": 1,
+    "metadataTruthCases": 19,
+    "operatorConfirmedSourceHashBoundTruthCases": 1,
+    "proposedExactCases": 19,
+    "proposedWrongCases": 1,
+    "regradeStateCounts": {
+      "OCR_EXACT_BUT_WORKFLOW_HELD": 2,
+      "OCR_EXACT_REVIEW_ONLY": 17,
+      "OCR_WRONG_DESPITE_CLAIMED_PASS": 1
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+    "schema":  "argos_project_portal_request_manifest_v1",
+    "requestId":  "REQ_20260814T210525052Z_33D0245F4E05",
+    "createdUtc":  "2026-08-14T21:05:25.0529602+00:00",
+    "expiresUtc":  "2026-08-15T21:05:25.0529602+00:00",
+    "targetRole":  "ARGOS",
+    "jobClass":  "MAINTENANCE_PATCH",
+    "handler":  "",
+    "maxResultBytes":  104857600,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false,
+    "credentialsIncluded":  false,
+    "signerThumbprint":  "C82181052919C475CF888F49427C1B55AE65DC12",
+    "signatureAlgorithm":  "RSA-SHA256-PKCS1",
+    "files":  [
+                  {
+                      "path":  "payload/APPLY_ARGOS_DIRECT_UNIT_CONTAINER_QUERY.ps1",
+                      "bytes":  12217,
+                      "sha256":  "788BF4434885A3CFDB94812669C4198F1ACA79EB5E64C96E074E6627BE4895CA"
+                  },
+                  {
+                      "path":  "payload/Invoke-ArgosMesVisualStateSnapshot.ps1",
+                      "bytes":  17270,
+                      "sha256":  "D15DA5FEE86B528F12B61B5DD0B4A510593D1A7AA5B60D6491DD951AEF4053CB"
+                  },
+                  {
+                      "path":  "payload/Resolve-ArgosExactScribeLineage.ps1",
+                      "bytes":  3634,
+                      "sha256":  "45DEDB48B7DAFA634A8CB86ABE46314E0644ED9DA5506999A8FAA7BB022E0186"
+                  }
+              ],
+    "entryPoint":  "payload/APPLY_ARGOS_DIRECT_UNIT_CONTAINER_QUERY.ps1",
+    "changes":  [
+                    {
+                        "source":  "payload/Invoke-ArgosMesVisualStateSnapshot.ps1",
+                        "destination":  "C:\\ProgramData\\ArgosInsiteBridgeRO\\query\\Invoke-ArgosMesVisualStateSnapshot.ps1",
+                        "approvedPredecessorSha256":  [
+                                                          "04634C171F563CE4A46CBC44B0F69E88AF7EBD2BED0CF0253282BDEB34C0E35F",
+                                                          "D15DA5FEE86B528F12B61B5DD0B4A510593D1A7AA5B60D6491DD951AEF4053CB"
+                                                      ],
+                        "installedSha256":  "D15DA5FEE86B528F12B61B5DD0B4A510593D1A7AA5B60D6491DD951AEF4053CB",
+                        "allowCreate":  false
+                    },
+                    {
+                        "source":  "payload/Resolve-ArgosExactScribeLineage.ps1",
+                        "destination":  "C:\\ProgramData\\ArgosInsiteBridgeRO\\query\\Resolve-ArgosExactScribeLineage.ps1",
+                        "approvedPredecessorSha256":  [
+                                                          "45DEDB48B7DAFA634A8CB86ABE46314E0644ED9DA5506999A8FAA7BB022E0186"
+                                                      ],
+                        "installedSha256":  "45DEDB48B7DAFA634A8CB86ABE46314E0644ED9DA5506999A8FAA7BB022E0186",
+                        "allowCreate":  true
+                    }
+                ],
+    "allowedTaskActions":  [
+                               "STOP_EXACT_INSITE_QUERY_WORKER",
+                               "START_EXACT_INSITE_QUERY_WORKER"
+                           ],
+    "rehearsal":  {
+                      "requiredState":  "PASS_ARGOS_DIRECT_UNIT_CONTAINER_QUERY_PATCH_REVIEW_ONLY"
+                  }
+}

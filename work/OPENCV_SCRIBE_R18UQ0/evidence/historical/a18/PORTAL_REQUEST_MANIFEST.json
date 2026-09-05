@@ -1,0 +1,49 @@
+{
+    "schema":  "argos_project_portal_request_manifest_v1",
+    "requestId":  "REQ_A18_0821_1430_X1",
+    "createdUtc":  "2026-08-21T14:38:20.8915529+00:00",
+    "expiresUtc":  "2026-08-22T14:38:20.8915529+00:00",
+    "targetRole":  "ARGOS",
+    "jobClass":  "MAINTENANCE_PATCH",
+    "handler":  "",
+    "maxResultBytes":  2097152,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false,
+    "credentialsIncluded":  false,
+    "signerThumbprint":  "C82181052919C475CF888F49427C1B55AE65DC12",
+    "signatureAlgorithm":  "RSA-SHA256-PKCS1",
+    "files":  [
+                  {
+                      "path":  "payload/A18.ps1",
+                      "bytes":  2696,
+                      "sha256":  "F254C16605023C1E0BC24C1663BF89DC3C1AA3B6EAFDB1DB963850AF25C10521"
+                  },
+                  {
+                      "path":  "payload/Invoke-ArgosPendingInsiteRequest.ps1",
+                      "bytes":  21599,
+                      "sha256":  "54EBD1A13B3EEAFE810378A1684917AC8461545FC5C89462C5E6352EAA13BD00"
+                  }
+              ],
+    "entryPoint":  "payload/A18.ps1",
+    "changes":  [
+                    {
+                        "source":  "payload/Invoke-ArgosPendingInsiteRequest.ps1",
+                        "destination":  "C:\\ProgramData\\ArgosInsiteBridgeRO\\query\\Invoke-ArgosPendingInsiteRequest.ps1",
+                        "installedSha256":  "54EBD1A13B3EEAFE810378A1684917AC8461545FC5C89462C5E6352EAA13BD00",
+                        "approvedPredecessorSha256":  [
+                                                          "85E3FB69F3EEC913AF2DA68A38924F451D0C9499124585144034AFBF8F7C4502",
+                                                          "54EBD1A13B3EEAFE810378A1684917AC8461545FC5C89462C5E6352EAA13BD00"
+                                                      ]
+                    }
+                ],
+    "allowedTaskActions":  [
+
+                           ],
+    "rehearsal":  {
+                      "required":  true,
+                      "requiredState":  "PASS_A18_QUALIFIED_CVD_TOOL_FAMILY_CLASSIFIER_INSTALLED"
+                  }
+}

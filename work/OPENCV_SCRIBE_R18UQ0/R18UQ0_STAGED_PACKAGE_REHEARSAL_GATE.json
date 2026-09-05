@@ -1,0 +1,61 @@
+{
+    "schema":  "argos_r18uq0_package_rehearsal_v1",
+    "checkedUtc":  "2026-09-05T14:33:16.5570114Z",
+    "state":  "PASS_R18UQ0_PACKAGE_REHEARSAL",
+    "requestId":  "REQ_R18UQ0",
+    "requestManifestSha256":  "AB3F101C15223D1BE4AB948453BA15CABBB8DF88BB8AE58C83132D5DC06A65FA",
+    "requestSignatureSha256":  "5768EABCD3BA33FA4CDFA9AD313046D32413B84DDB07E49802BC72742F2824CC",
+    "payloadSha256":  "B6E5A12E2A3D2E5B1397F9CB169E82E32419A8BA21F2DF0B5CE71718D465F1AF",
+    "requestSignatureVerified":  true,
+    "forbiddenOperationHits":  [
+
+                               ],
+    "taskActionCount":  0,
+    "reviewOnly":  true,
+    "productionRoutingEnabled":  false,
+    "caseIds":  [
+                    "CREATE",
+                    "TARGET_IDEMPOTENT",
+                    "UNAPPROVED_REFUSED",
+                    "POST_SWAP_ROLLBACK"
+                ],
+    "cases":  [
+                  {
+                      "id":  "CREATE",
+                      "state":  "PASS",
+                      "predecessor":  "ABSENT",
+                      "installedSha256":  "B6E5A12E2A3D2E5B1397F9CB169E82E32419A8BA21F2DF0B5CE71718D465F1AF",
+                      "mutated":  true
+                  },
+                  {
+                      "id":  "TARGET_IDEMPOTENT",
+                      "state":  "PASS",
+                      "predecessor":  "B6E5A12E2A3D2E5B1397F9CB169E82E32419A8BA21F2DF0B5CE71718D465F1AF",
+                      "installedSha256":  "B6E5A12E2A3D2E5B1397F9CB169E82E32419A8BA21F2DF0B5CE71718D465F1AF",
+                      "mutated":  true
+                  },
+                  {
+                      "id":  "UNAPPROVED_REFUSED",
+                      "state":  "PASS",
+                      "predecessor":  "65F477475DE2FD67266D3AC15353D53DF2ECD52C65D53500D1982F3521FD5BD8",
+                      "installedSha256":  "65F477475DE2FD67266D3AC15353D53DF2ECD52C65D53500D1982F3521FD5BD8",
+                      "mutated":  false
+                  },
+                  {
+                      "id":  "POST_SWAP_ROLLBACK",
+                      "state":  "PASS",
+                      "predecessor":  "B6E5A12E2A3D2E5B1397F9CB169E82E32419A8BA21F2DF0B5CE71718D465F1AF",
+                      "installedSha256":  "B6E5A12E2A3D2E5B1397F9CB169E82E32419A8BA21F2DF0B5CE71718D465F1AF",
+                      "failedBytesQuarantined":  true,
+                      "mutated":  true
+                  }
+              ],
+    "approvedPredecessorExercised":  true,
+    "targetIdempotenceAccepted":  true,
+    "unapprovedPredecessorRefusedBeforeMutation":  true,
+    "injectedPostSwapRollbackPassed":  true,
+    "failedBytesQuarantined":  true,
+    "packagedEntrypointPreflightState":  "PASS_R18UQ0_ENTRYPOINT_PREFLIGHT",
+    "entrypointPreflightWritesPerformed":  false,
+    "mutationsPerformed":  true
+}

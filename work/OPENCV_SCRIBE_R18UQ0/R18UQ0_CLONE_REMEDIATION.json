@@ -1,0 +1,29 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "createdUtc": "2026-09-05T14:21:12.5962353Z",
+  "revision": "R18UQ0_ARGOS_INSITE_RUNTIME_AUDIT_FROM_SIGNED_D3_PRECEDENT",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18UQ0/evidence/historical/d3/payload/D3.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18UQ0/payload/R18UQ0.ps1",
+      "sourceSha256": "904A4B410F1ECCD61B9CEEDD5CCFEACB7C22498534B26675A159ACFDC74081C5",
+      "generatedSha256": "B6E5A12E2A3D2E5B1397F9CB169E82E32419A8BA21F2DF0B5CE71718D465F1AF",
+      "rootRules": [
+        {
+          "sourceRoot": "C:\\ProgramData",
+          "generatedRoot": "C:\\ProgramData",
+          "disposition": "UNCHANGED_ALLOWED",
+          "reason": "The accepted Argos Insite bridge and portal roots remain the exact installed roots."
+        }
+      ]
+    }
+  ],
+  "semanticChanges": [
+    "D3 task/hash audit expanded to a fixed-whitelist source/runtime contract pull.",
+    "Argos response signer corrected and pinned to 5C00B8E35A9F5AC21DC051D7C2D9FD68D9361E48.",
+    "Credential evidence is sanitized metadata only; DPAPI unprotect and credential content return are prohibited.",
+    "No task/process/query/image/JBOD action is added."
+  ],
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

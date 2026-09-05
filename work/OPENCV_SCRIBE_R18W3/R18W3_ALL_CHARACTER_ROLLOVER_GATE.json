@@ -1,0 +1,269 @@
+{
+  "schema": "argos_opencv_scribe_r18w3_all_character_rollover_gate_v1",
+  "createdUtc": "2026-09-05T18:23:51.2607433Z",
+  "state": "PASS_R18W3_ALL_CHARACTER_ROLLOVER_GATE",
+  "disposition": "FROZEN_CHECKPOINT_FIRST_HANDOFF_READY_FOR_COMMIT_PUSH_AND_SUCCESSOR_AUDIT",
+  "workspace": {
+    "onlyAuthorizedWorktree": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv",
+    "requiredBranch": "codex/opencv-scribe-deciphering",
+    "taskStartHead": "b33773bd8673e244a98e26ce7afcafc1ba5f9256",
+    "preHandoffLocalHead": "b33773bd8673e244a98e26ce7afcafc1ba5f9256",
+    "preHandoffRecordedOriginTip": "b33773bd8673e244a98e26ce7afcafc1ba5f9256",
+    "taskStartedCleanAndMatching": true,
+    "handoffCommitRule": "The later commit containing this PASS gate, its exact checkpoint and manifest, and all frozen task artifacts must be pushed and supplied literally to the successor; local HEAD and recorded origin tip must match it and the worktree must be clean before the audit.",
+    "savedProjectCwdAuthorized": false,
+    "otherWorktreesAuthorized": false,
+    "fetchAllowedDuringSuccessorFirstTurnAudit": false,
+    "unrelatedGlobalContinuityPointerFollowedOrModified": false
+  },
+  "rolloverThreshold": {
+    "taskStartCommit": "b33773bd8673e244a98e26ce7afcafc1ba5f9256",
+    "cumulativeChangedSourceLines": 13194,
+    "changedFilesBeforeRolloverTrioAndForcedIgnoredEvidence": 136,
+    "changedLineThreshold": 10000,
+    "changedFileThreshold": 150,
+    "trigger": "CHANGED_LINES_THRESHOLD",
+    "atomicOperationComplete": true,
+    "predecessorMayPerformExternalMutationAfterGate": false
+  },
+  "handoffArtifacts": {
+    "checkpoint": {
+      "path": "work/OPENCV_SCRIBE_R18W3/R18W3_ALL_CHARACTER_ROLLOVER_CHECKPOINT_20260905.md",
+      "bytes": 26547,
+      "sha256": "B21A7382DF7AEA70C681A288D032BC0080CD90C5957B1D92292BB78C99C3AF16"
+    },
+    "manifest": {
+      "path": "work/OPENCV_SCRIBE_R18W3/R18W3_ALL_CHARACTER_ROLLOVER_MANIFEST.json",
+      "bytes": 41397,
+      "sha256": "0C7F039DD1348FA7F1D117B28E0D0072B7AA1B03AFE922D118915437DFD91344"
+    },
+    "requiredReadOrderCount": 92,
+    "requiredReadOrderVerified": 92,
+    "missingPaths": 0,
+    "byteMismatches": 0,
+    "hashMismatches": 0,
+    "jsonParsed": true
+  },
+  "predecessorHandoff": {
+    "v3": {
+      "state": "HISTORICAL_AUTHORITY_FOR_FROZEN_BASELINE_AND_WITHDRAWALS",
+      "checkpointSha256": "5D315EA623299BD8E0171E4A2A907A587F8EA1F6DF0664170FA891B3CC5A9E0A",
+      "manifestSha256": "B4A783C97192D1B73F7ED5C869730C7412AAD303EE0A060C58D9BD6ED474E7FF",
+      "gateSha256": "0C7A800C0D80AD7DC0C6622277F48DD54795CAE198685F0B82C506887A48A1ED"
+    },
+    "v1": {
+      "state": "WITHDRAWN_PRECOMMIT_AUDIT_BLOCKERS_NOT_AUTHORITY",
+      "checkpointSha256": "03BEFE22AD1CC55319B6497DBABDD42D0CDCB387E25FE92CAE24B0FB49CA4B2B",
+      "manifestSha256": "CE8ACE68A42AA2EC0445187B4DB6187D039EE4D0E8A11BBB109D66C0F3D0B022",
+      "gateSha256": "A8A30F81528AA31961BC3CF1B51EF230C430281F53D1547CBCD85709D7DB2A9D"
+    },
+    "v2": {
+      "state": "WITHDRAWN_PRECOMMIT_WHITESPACE_GATE_FAILURE_NOT_AUTHORITY",
+      "checkpointSha256": "94AF9F992093A05DE2E581CD3B1DE93DD095F0A203F71E37CE51DFDFBF86C20A",
+      "manifestSha256": "AD2E09B20E5041E622930BF215EA72F607A2144EBAED89AE65B8B0DBCA9EDBFA",
+      "gateSha256": "5D7805A803F176226121B9FB1358C239A807A889E1B38291DFA99B8615140974"
+    }
+  },
+  "authoritativeEvidenceChecks": {
+    "r18uq3": {
+      "state": "PASS_USABLE_WITH_HOLDS",
+      "rosterSha256": "CE108A3726EFDD53651453CB3310E06051D6E53DDD3654A304446D9070C19DAB",
+      "lotsRepresented": 50,
+      "queryLots": 50,
+      "resolvedMembers": 384,
+      "heldMembers": 1,
+      "invalidRows": 0,
+      "unresolvedLots": 0,
+      "unisolatedAmbiguities": 0,
+      "exactSlot21Truth": "13HFX135SUE3",
+      "heldUnit": "62631-586-070"
+    },
+    "r18uj3": {
+      "state": "HOLD_R18UJ3_RECONCILIATION_INCOMPLETE",
+      "classification": "DIAGNOSTIC_ONLY",
+      "outputSha256": "419A6A0172C675F4A8DF42EE5ED152846E690D3A667435A89F91B344AD4A5B64",
+      "joinedRows": 502,
+      "independentMesLineages": 239,
+      "rosterMembersWithoutAcquisition": 145,
+      "joinedRowsWithSourcePathAndHash": 0,
+      "lotPlusSlotAliasAcceptedAsLineage": false
+    },
+    "r18ur": {
+      "state": "PASS_EXACT_TRUTH_REGRADE_WITH_ONE_REVOKED_CLAIMED_PASS",
+      "outputSha256": "14E3FF1434DB605886C1A7A7944538E39C7F8BE31004E90CE0EE0A7AB089FB26",
+      "truthResolved": 20,
+      "imageFirstExact": 19,
+      "claimedPassRows": 18,
+      "claimedPassExact": 17,
+      "claimedPassWrong": 1,
+      "wrongPhysicalIdentity": "62546-481_20260707164232_Slot21",
+      "truth": "13HFX135SUE3",
+      "bfCandidate": "11HFX135SUE3",
+      "dfCandidate": "13HFX135SUE4",
+      "checksumProposalAcceptedAsTruth": false
+    },
+    "r18vGateSha256": "BEA75FAC417BEE9D0DB5B3302AEEAD15053C46A2AC434BBB7A49E04AADC437C9",
+    "r18xCrosswalkSha256": "EAF725D04C899CCEFC70E29DDA990D4058F226D7C602C1607D7ADB2E9CED1099",
+    "r18yGateSha256": "166BF86170A50D84CCB02F196B55A59DEB1C3764E1EC2A2FECD351BC0AD25F81",
+    "r18yReferenceQueries": 465,
+    "r18yAccepted": 273,
+    "r18yAcceptedCorrect": 273,
+    "r18yAcceptedWrong": 0,
+    "r18yHeld": 192,
+    "currentSlot21ValidatedThroughR18y": false
+  },
+  "referenceChecks": {
+    "localBaseReferenceZip": "work/OPENCV_SCRIBE_O2D5/final/extract/O2D5_REFS.zip",
+    "installedBaseReferencePin": "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+    "installedBaseReferenceLiveReadThisTask": false,
+    "baseReferenceBytes": 14855150,
+    "baseReferenceSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "embeddedMember": "refs/PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "embeddedMemberBytes": 207802,
+    "embeddedMemberSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "expandedLocalMember": "work/SCRIBE_REVIEW_ONLY/scratch/SCRIBE_READER_V5_MERGED_REFERENCES_20260806T203000Z/PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "expandedLocalMemberSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "supplementalManifestSha256": "FD60D494A25B489A8F1D8581217457AD67B02C98D54CA0A5400FAC0611537114",
+    "verifiedReferenceFiles": 465,
+    "exactIndependentScribeLineages": 41
+  },
+  "packageChecks": {
+    "r18w1": {
+      "state": "WITHDRAWN_NONPUBLISHABLE_NO_RETRY",
+      "zipSha256": "954D2E68A4B304581EEE3290177CF892F05834727421EDDD35F922FB50AC9F53",
+      "withdrawalSha256": "8874C09378DC9B8F530087B7A69535D4BDC320EEE0D872A832DBB6FECCD33CD1",
+      "publications": 0
+    },
+    "r18w2": {
+      "state": "SIGNED_UNPUBLISHED",
+      "zipSha256": "F1C77DCDC4962FEF7983CC93C9CE01F79C4B9E0CA54ADCEFAD9725AD5EF66D8E",
+      "signatureVerified": true,
+      "finalGateSha256": "E824A18819B1F6E058AE337D107C0CECB97AEFBAD8418FC88CC36C8E7A473CA1",
+      "routeGateSha256": "5359058FE1CDB9ACBA11DFBE0317B208B063E5FF1F3BB496C81E565D6AF093B5",
+      "relativeLeaves": 1,
+      "publicationAuthorized": false,
+      "retryAuthorized": false
+    },
+    "r18w3": {
+      "state": "SIGNED_UNPUBLISHED",
+      "zipSha256": "41113CE44CFB56D64EC2253D475CDD764EC84D759B5F360BE81D6CD325DCCCD6",
+      "signatureVerified": true,
+      "finalGateSha256": "452558FCFBCDCBC9949D1947A300EE3E67B12DE52CB6C861669B25F55DCCAB40",
+      "routeGateSha256": "EF3601249B470A7B50DEC85F380855BE6444E72731D0D9CF5FB1DA5F24895931",
+      "lineages": 8,
+      "relativeLeaves": 24,
+      "referenceTruthOverlap": 0,
+      "reservedValidationTruthOverlap": 0,
+      "currentSlot21Excluded": true,
+      "packageExcludedSlot24Absent": true,
+      "publicationAuthorized": false,
+      "retryAuthorized": false
+    },
+    "sequentialPublicationRuleVerified": true
+  },
+  "focusedLocalTests": [
+    {
+      "name": "R18UQ3",
+      "state": "PASS_R18UQ3_FOCUSED_LOCAL_REHEARSAL",
+      "assertions": 39,
+      "liveDatabaseAccessed": false
+    },
+    {
+      "name": "R18UJ3",
+      "state": "PASS_R18UJ3_FOCUSED_R18UQ3_CONTRACT_TEST"
+    },
+    {
+      "name": "R18UR",
+      "state": "PASS_R18UR_FOCUSED_EXACT_TRUTH_REGRADE",
+      "assertions": 35
+    },
+    {
+      "name": "R18V",
+      "state": "PASS_R18V_ZERO_WRONG_ACCEPTED_LINEAGE_GLYPH_ENVELOPES",
+      "verifiedReferenceFiles": 465
+    },
+    {
+      "name": "R18X",
+      "state": "PASS_R18X_FOCUSED_LOCAL_REHEARSAL",
+      "assertions": 30
+    },
+    {
+      "name": "R18Y",
+      "state": "PASS_R18Y_ZERO_WRONG_ACCEPTED_EXACT_SCRIBE_LINEAGE_LOO"
+    }
+  ],
+  "invariants": {
+    "displacedS17Held": "6KB71041XDE5",
+    "blankCases": 5,
+    "blankViews": 40,
+    "blankStringEmitted": false,
+    "packageExcludedFixture": "62629-401_20260902002921_Slot24",
+    "packageExcludedFixtureTruth": "143B0083SUE6",
+    "syntheticDotsAllowed": false,
+    "notchDependenceAllowed": false,
+    "fixedGridOrSolidLineDependenceAllowed": false,
+    "checksumAuthority": "VERIFY_ONLY",
+    "wholeWaferFallbackAllowed": false,
+    "fullKlarfAuthorized": false,
+    "r18sAuthorized": false
+  },
+  "accessAndMutationAudit": {
+    "rolloverFilesystemWrites": [
+      ".gitattributes exact-path whitespace classification preserving the already pinned R18V gate bytes",
+      "checkpoint",
+      "manifest",
+      "gate"
+    ],
+    "frozenR18vGateRewritten": false,
+    "rolloverGitIndexWritesBeforeFinalGateRevision": true,
+    "rolloverCommitsBeforeFinalGateRevision": 0,
+    "rolloverPushesBeforeFinalGateRevision": 0,
+    "rolloverExternalContacts": 0,
+    "rolloverExternalMutations": 0,
+    "r18w2Publications": 0,
+    "r18w3Publications": 0,
+    "directJbodOrGuiAccesses": 0,
+    "taskProcessQueueAccesses": 0,
+    "sourceImageBodiesRead": 0,
+    "unrelatedGlobalContinuityWrites": 0,
+    "credentialPersistedOrReturned": false
+  },
+  "hookLimitation": {
+    "currentCoverage": "SINGLE_PHASE_THRESHOLD_AND_PREDECESSOR_STOP_GUARD_ONLY",
+    "taskIdRecordProvesSuccessorAcceptance": false,
+    "guardsDedicatedWorktreeFromSavedCwd": false,
+    "twoPhaseHookQualified": false,
+    "manualStepsRequired": [
+      "Create audit-only successor after commit and push.",
+      "Inspect the successor's actual first-turn response.",
+      "Independently recheck the shared dedicated worktree.",
+      "Send explicit acceptance only after zero mutation and zero regression are proven."
+    ]
+  },
+  "successorContract": {
+    "firstTurnVerificationOnly": true,
+    "firstTurnWritesAllowed": false,
+    "firstTurnGitWritesAllowed": false,
+    "firstTurnFetchAllowed": false,
+    "firstTurnExternalContactsAllowed": false,
+    "firstTurnPortalJbodQueueTaskProcessOrImageAccessAllowed": false,
+    "mustVerifyAllRequiredReadEntries": true,
+    "mustStopForPredecessorAcceptance": true
+  },
+  "nextAction": {
+    "beforeAcceptedSuccessorAudit": "STOP_NO_EXTERNAL_MUTATION",
+    "afterAcceptedSuccessorAudit": "AWAIT_FRESH_LITERAL_PUBLISH_FOR_REQ_R18W2",
+    "exactLiteral": "PUBLISH for REQ_R18W2",
+    "r18w2MaximumPublicationsAfterFreshAuthority": 1,
+    "r18w2RetryAuthorized": false,
+    "r18w3BlockedUntilR18w2SignedTerminalResponseFrozen": true,
+    "r18w3RequiresSeparateFreshLiteral": "PUBLISH for REQ_R18W3",
+    "slot21ValidationOrder": [
+      "Authenticate and source/hash-validate returned R18W3 bytes.",
+      "Admit only the declared requested glyphs.",
+      "Pass fresh exact-lineage zero-wrong leave-one-out gating.",
+      "Run untouched current Slot21 BF/DF independent validation.",
+      "Rerun the bounded 20-case cohort and require zero wrong accepted."
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema": "argos_opencv_scribe_r18w2_crosswalk_scope_v1",
+  "revision": "R18W2_QWZ_CURRENT_CONFIRMED_OVERLAY_CROSSWALK_20260905A",
+  "createdUtc": "2026-09-05T17:18:00.0000000Z",
+  "state": "PASS_R18W2_EXACT_UNRESOLVED_QWZ_SCOPE_FROZEN",
+  "classification": "PENDING_GATE",
+  "purpose": "Acquire the exact current confirmed-scribe overlay so the 14 unresolved Q/W/Z MES members can be joined to actual acquisition identities without inferring a lot, slot, or acquisition key.",
+  "inputs": {
+    "mesRoster": {
+      "path": "work/OPENCV_SCRIBE_R18UQ3/R18UQ3_LIVE_INSITEREAD_ROSTER.json",
+      "sha256": "CE108A3726EFDD53651453CB3310E06051D6E53DDD3654A304446D9070C19DAB"
+    },
+    "reconciliation": {
+      "path": "work/OPENCV_SCRIBE_R18UJ3/R18UJ3_LIVE_RECONCILIATION.json",
+      "sha256": "419A6A0172C675F4A8DF42EE5ED152846E690D3A667435A89F91B344AD4A5B64"
+    },
+    "priorVerifiedOverlayEvidence": {
+      "path": "work/OPENCV_SCRIBE_R18U/R18U_EXISTING_VERIFIED_ROSTER_EVIDENCE.json",
+      "sha256": "FE554020619F4D3B3B58E440EEB19037561A5DB26B91D6916E30E47BDFC5AC3C",
+      "priorObservedBytes": 884842,
+      "priorObservedSha256": "FFB1F4D0084BDF198AFE66403F26B4405D2FC9F0C4F98489E0865F7E46F2EB10",
+      "use": "PATH_AND_SCHEMA_PRECEDENT_ONLY_CURRENT_BYTES_MUST_BE_RETURNED_FRESH"
+    }
+  },
+  "requestedCurrentLeaf": "identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json",
+  "members": [
+    {"character": "Q", "queryLot": "62625-956", "unitContainer": "62625-956-010", "scribe": "147JQ111SUA3"},
+    {"character": "Q", "queryLot": "62625-956", "unitContainer": "62625-956-020", "scribe": "147JQ112SUE5"},
+    {"character": "Q", "queryLot": "62625-956", "unitContainer": "62625-956-030", "scribe": "147JQ113SUB4"},
+    {"character": "Q", "queryLot": "62625-956", "unitContainer": "62625-956-040", "scribe": "147JQ114SUF6"},
+    {"character": "Q", "queryLot": "62625-956", "unitContainer": "62625-956-050", "scribe": "147JQ116SUG7"},
+    {"character": "Q", "queryLot": "62625-956", "unitContainer": "62625-956-070", "scribe": "147JQ118SUA5"},
+    {"character": "W", "queryLot": "62633-726", "unitContainer": "62633-726-010", "scribe": "148AW093SUA6"},
+    {"character": "W", "queryLot": "62633-726", "unitContainer": "62633-726-020", "scribe": "148AW095SUB7"},
+    {"character": "W", "queryLot": "62633-726", "unitContainer": "62633-726-030", "scribe": "148AW099SUE1"},
+    {"character": "W", "queryLot": "62633-726", "unitContainer": "62633-726-040", "scribe": "148AW100SUF5"},
+    {"character": "W", "queryLot": "62633-726", "unitContainer": "62633-726-080", "scribe": "148AW104SUA4"},
+    {"character": "Z", "queryLot": "62623-743", "unitContainer": "62623-743-040", "scribe": "147Z6155SUG7"},
+    {"character": "Z", "queryLot": "62623-743", "unitContainer": "62623-743-050", "scribe": "147Z6156SUD6"},
+    {"character": "Z", "queryLot": "62623-743", "unitContainer": "62623-743-070", "scribe": "147Z6158SUE7"}
+  ],
+  "counts": {
+    "total": 14,
+    "Q": 6,
+    "W": 5,
+    "Z": 3
+  },
+  "crosswalkContract": {
+    "joinKey": ["queryLot", "scribe", "issuedWaferContainer"],
+    "acquisitionKeyInferenceAllowed": false,
+    "unitSuffixToSlotConversionAllowed": false,
+    "lotPrefixMatchAllowed": false,
+    "unmatchedMembersRemainHold": true,
+    "multipleExactMatchesRemainHold": true,
+    "currentReturnedOverlayRequired": true
+  },
+  "authority": {
+    "publicationAuthorized": false,
+    "retryAuthorized": false,
+    "sourceMutationAuthorized": false,
+    "imageReadAuthorized": false,
+    "taskProcessOrQueueManagementAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "reviewOnly": true
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-05T15:50:00Z",
+  "state": "PASS_R18UQ1_QUERY_CAPABILITY_NEED_OBSERVED",
+  "incidentId": "R18U_ALL_KNOWN_LOT_SCRIBE_ROSTER_20260905",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "sources": [
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_RELAY_R4.json",
+      "sha256": "A5910A390159B00533CFA5D29CA26D9AFF1391F2B53B96D941D9099A9A569039",
+      "expected": "direct bounded Argos endpoint/config/task identity evidence",
+      "observed": "DESKTOP-266P787 endpoint task and endpoint_argos config identity/hash are present; endpoint worker bytes and current queue-safety qualification are not proved"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18U/R18U_ROSTER_CATALOG_INPUT.json",
+      "sha256": "89F37687D0E669A11671C2222CC495333C932C9CCCAA0BE277946AE30EBCDAB5",
+      "expected": "bounded exhaustive production-lot query input",
+      "observed": "exactly 50 unique normalized parent-lot keys"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18U/R18U_EXISTING_VERIFIED_ROSTER_EVIDENCE.json",
+      "sha256": "FE554020619F4D3B3B58E440EEB19037561A5DB26B91D6916E30E47BDFC5AC3C",
+      "expected": "existing signed evidence proves complete membership for all 50 lots",
+      "observed": "positive associations cover 47 of 50 keys but do not prove exhaustive per-lot membership"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18U/ARGOS_ACTIVE_ENDPOINT_EVIDENCE_20260905.json",
+      "sha256": "E4D330228416BA04826E0F0CC3181E881D757719A3C1E1D6229D062EF46135A1",
+      "expected": "a currently qualified endpoint route for the missing exhaustive query",
+      "observed": "current endpoint worker is inferred rather than directly byte-observed and queue-safety publicationQualified is false"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/R18UQ0_SIGNED_UNPUBLISHED_WITHDRAWAL.json",
+      "sha256": "6E41DCD1E4F902A8E96E0CB5CF2F20BD4CFE93D842332DF7B83A095FE0661D06",
+      "expected": "R18UQ0 can be reused as a publication parent",
+      "observed": "R18UQ0 is signed-unpublished WITHDRAWN, no-retry, and forbidden as a template or publication parent"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ1/Q.ps1",
+      "sha256": "B74E4C5FA522C896E08CE15517C94A14C2FFA36802DB8927C1E9F0B81018DF76",
+      "expected": "one bounded read-only query implementing current containment plus issue-history reconciliation",
+      "observed": "query is locally present and does not require a credential-envelope scope property"
+    }
+  ],
+  "decision": {
+    "mode": "MUTATE",
+    "remedy": "B",
+    "supportedAction": "install exactly one read-only R18UQ1 query under the fixed Argos Insite diagnostics root and execute it once only after an exact endpoint/config/queue-safety gate passes",
+    "installedFileCount": 1,
+    "taskActions": [],
+    "processActions": [],
+    "imagesAllowed": false,
+    "jbodContactAllowed": false,
+    "automaticRetryAllowed": false,
+    "publicationCurrentlyBlocked": true
+  },
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

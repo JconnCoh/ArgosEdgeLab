@@ -10890,3 +10890,58 @@ than rerunning it.
   fresh bounded JBOD cohort containing only preflight-proven live crop pairs.
   Full-corpus development remains blocked until that bounded live regression
   and the separate frozen Slot24 gate are both clean.
+
+## 2026-09-05 — A generated harness guard must follow the clone-remediation gate
+
+- Failure signature: signed-unpublished request `REQ_R18W1` carried a
+  generated-harness guard checked at `2026-09-05T17:10:06.0491819Z`, while
+  its clone-remediation GATE was checked later at
+  `2026-09-05T17:10:51.8362795Z`. The later-created summary harness gate
+  repeated the earlier guard result; it did not prove a fresh generated guard
+  after clone remediation.
+- Cause: the evidence assembly treated exact generated-byte hash equality as
+  a substitute for the mandatory chronological sequence. A guard result can
+  prove the bytes it inspected, but cannot retroactively prove that the clone
+  GATE preceded that inspection.
+- Mandatory preflight: for every mechanically generated harness, persist and
+  mechanically enforce this strict order before freeze or signer access:
+  source harness guard, clone-remediation GATE, generated harness guard, then
+  a file-backed ordered harness gate. Require strictly increasing checked
+  timestamps, require the clone GATE and post-clone generated guard to name
+  the same exact generated SHA-256, and reject a summary assembled from any
+  pre-clone generated-guard result.
+- Recovery: preserve every R18W1 byte. R18W1 is signed-unpublished, withdrawn,
+  non-publishable, no-retry, and non-parent. Do not patch or retroactively
+  bless its evidence. Use a fresh request namespace and rerun the complete
+  ordered sequence before freeze and signature.
+
+## 2026-09-05 — Acquisition identity is not physical-lineage independence
+
+- Failure signature: R18W1 selected development acquisition
+  `62546-481-POST_20260708155428_Slot21` while reserving
+  `62546-481_20260707164232_Slot21` as untouched validation. Exact database
+  reconciliation maps both acquisitions to unit `62546-481-010`, scribe
+  `13HFX135SUE3`, and independent-lineage key
+  `62546-481|62546-481-010|13HFX135SUE3`.
+- Cause: different acquisition keys and timestamps were treated as if they
+  established different physical wafers. They establish separate image
+  acquisitions only; they do not establish independent physical lineage.
+- Repeated observation: R18W1 also selected
+  `62607-215_20260730053038_Slot25` / `5565R022FEG5` as new R coverage even
+  though the frozen base reference already contains exact scribe lineage
+  `SCRIBE:5565R022FEG5` at legacy physical identity
+  `62607_215_SLOT25`. A newly requested acquisition cannot increase lineage
+  coverage when its exact truth already belongs to the frozen reference bank.
+- Mandatory preflight: before freezing a development/validation split, join
+  every selected and reserved acquisition to the exact database-resolved
+  issued wafer and exact confirmed 12-character scribe, group by the frozen
+  physical-lineage key, and reject every cross-split collision. Mechanically
+  compare selection truths against both every frozen reference-lineage truth
+  and every reserved-validation truth; require zero overlap before freeze.
+  Acquisition-key uniqueness and distinct timestamps are never substitutes
+  for physical-lineage independence.
+- Recovery: preserve R18W1 unchanged and withdraw it independently for this
+  validation leakage as well as its gate-order defect. Exclude both Slot21
+  acquisitions from development. A fresh successor may replace the leaking
+  row only with an exact database-reconciled acquisition whose physical
+  lineage is distinct from every reserved validation lineage.

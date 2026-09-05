@@ -1,0 +1,89 @@
+{
+  "schema": "argos_r18w2_presignature_freeze_gate_v1",
+  "createdUtc": "2026-09-05T17:39:52.1818771Z",
+  "state": "PASS_R18W2_PRESIGNATURE_FREEZE",
+  "lifecycle": "FROZEN_UNSIGNED_UNPUBLISHED",
+  "requestId": "REQ_R18W2",
+  "requestPurpose": "CURRENT_CONFIRMED_SCRIBE_OVERLAY_CROSSWALK_FOR_EXACT_NONINFERRED_JOIN",
+  "frozenInputs": [
+    {"path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md", "sha256": "00509B849F821FCFC5E1D6BF52902D6ECD548F988C7FCAE2A5D3BD1DDBD64685"},
+    {"path": "work/OPENCV_SCRIBE_R18W1_WITHDRAWAL/R18W1_SIGNED_UNPUBLISHED_WITHDRAWAL.json", "sha256": "8874C09378DC9B8F530087B7A69535D4BDC320EEE0D872A832DBB6FECCD33CD1"},
+    {"path": "work/OPENCV_SCRIBE_R18UQ3/R18UQ3_LIVE_INSITEREAD_ROSTER.json", "sha256": "CE108A3726EFDD53651453CB3310E06051D6E53DDD3654A304446D9070C19DAB"},
+    {"path": "work/OPENCV_SCRIBE_R18UJ3/R18UJ3_LIVE_RECONCILIATION.json", "sha256": "419A6A0172C675F4A8DF42EE5ED152846E690D3A667435A89F91B344AD4A5B64"},
+    {"path": "work/OPENCV_SCRIBE_R18U/R18U_EXISTING_VERIFIED_ROSTER_EVIDENCE.json", "sha256": "FE554020619F4D3B3B58E440EEB19037561A5DB26B91D6916E30E47BDFC5AC3C"},
+    {"path": "work/OPENCV_SCRIBE_R18W2/R18W2_CROSSWALK_SCOPE.json", "sha256": "0A6CF71F00AB4CA895E61A14A55933CD2EB6D86C91388B0CA8DD66CEDA3E6AF3"},
+    {"path": "work/OPENCV_SCRIBE_R18W2/R18W2_DATA_PULL_DEFINITION.json", "sha256": "A69CD37017378C3D7DD6EAEB08FA9BEDB75B83746BC1EA569ABB31AE9A38C460"},
+    {"path": "work/OPENCV_SCRIBE_R18W2/R18W2_ROUTE_PINS.json", "sha256": "5C244B674CEF0CBE14899013B8371CD57302549A64F55D72E879C660D58A9BE0"},
+    {"path": "work/OPENCV_SCRIBE_R18W2/PREACTION_R18W2_LOCAL_PACKAGE_PREPARATION_V2.json", "sha256": "AC0DBE2FBBAB2A649E768382B40E6DF1FB8AC2414DE436AC49845CDA27276362"},
+    {"path": "work/OPENCV_SCRIBE_R18W2/R18W2_CLONE_LITERAL_REMEDIATION.json", "sha256": "E5BA596AFC87AF7399919DBC0BFC5ECFC565C34323B647CB1D3024CCD089E9C6"},
+    {"path": "work/OPENCV_SCRIBE_R18W2/R18W2_CLONE_LITERAL_GATE_V2.json", "sha256": "07101913491BAE1BFCB97AC2A415DFE5307DED6977BA432A7E845CCCCD837FC3"},
+    {"path": "work/OPENCV_SCRIBE_R18W2/R18W2_HARNESS_GATE_V2.json", "sha256": "F3672E22185DEC11181EA7B15118A7077575A404A40401021ACD96A0E39294D4"},
+    {"path": "work/OPENCV_SCRIBE_R18W2/R18W2_WRAPPER_APPLICABILITY_GATE_V2.json", "sha256": "9C963A0BCBB89105A23329AA61BFE67F25F3890FAD11895B8F8C6407C3712A83"},
+    {"path": "work/OPENCV_SCRIBE_R18W2/Build-R18W2Request.ps1", "sha256": "9D83D995DD9F372415812A143B2B0CFF7D6A327CEAF4AC68F9A8FB4862CB4D87"}
+  ],
+  "orderedHarnessBoundary": {
+    "sourceGuardCheckedUtc": "2026-09-05T17:38:04.9335449Z",
+    "cloneGateCheckedUtc": "2026-09-05T17:38:14.2121503Z",
+    "postCloneGeneratedGuardCheckedUtc": "2026-09-05T17:38:30.0227315Z",
+    "fileBackedHarnessGateCheckedUtc": "2026-09-05T17:38:44.0287569Z",
+    "strictChronologyPassed": true,
+    "generatedSha256": "9D83D995DD9F372415812A143B2B0CFF7D6A327CEAF4AC68F9A8FB4862CB4D87",
+    "cloneAndGeneratedHashMatch": true
+  },
+  "preflight": {
+    "checkedUtc": "2026-09-05T17:38:44.0287569Z",
+    "state": "PASS_R18W2_BUILD_PREFLIGHT_LOCAL_ONLY",
+    "windowsPowerShellMajor": 5,
+    "windowsPowerShellMinor": 1,
+    "crosswalkMemberCount": 14,
+    "requestedFileCount": 1,
+    "maximumFiles": 1,
+    "maximumBytes": 16777216,
+    "routePathCount": 37,
+    "maximumEffectiveLength": 164,
+    "maximumComponentLength": 51,
+    "reservedSuffixCharacters": 32,
+    "plannedPackageMembers": ["PORTAL_REQUEST_MANIFEST.json", "PORTAL_REQUEST_MANIFEST.sig"],
+    "plannedPackageMembershipSha256": "BD698D496C10E1A691DFAF08014474690D6E269968D4ACC9C3BD5C12AB5A9832"
+  },
+  "crosswalkBoundary": {
+    "requestedLeaf": "identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json",
+    "joinKey": ["queryLot", "scribe", "issuedWaferContainer"],
+    "acquisitionKeyInferenceAllowed": false,
+    "unitSuffixToSlotConversionAllowed": false,
+    "lotPrefixMatchAllowed": false,
+    "unmatchedMembersRemainHold": true,
+    "multipleExactMatchesRemainHold": true,
+    "currentReturnedOverlayRequired": true
+  },
+  "route": {
+    "targetRole": "JBOD",
+    "jobClass": "DATA_PULL",
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "installedEndpointWorkerSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "r18gRouteGateSha256": "5F4E1434B142EED5C85517AEFD11614D0D8380424219BB5B6A9BE219403E2646",
+    "r15eRouteGateSha256": "E0EAE7BBECDE766E6E78D86074A098465F3117B737146DDF4FF32D1D4953ED2C",
+    "c1eQueueSafetyGateSha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+    "c1eCapabilityInventorySha256": "381D3E9C4F17218DF37D8E8CE029853216E9BEA5A2FBDABC6AEB7861A29DC8A2"
+  },
+  "supersededDraftEvidence": [
+    "work/OPENCV_SCRIBE_R18W2/PREACTION_R18W2_LOCAL_PACKAGE_PREPARATION.json",
+    "work/OPENCV_SCRIBE_R18W2/R18W2_CLONE_LITERAL_GATE.json",
+    "work/OPENCV_SCRIBE_R18W2/R18W2_HARNESS_GATE.json",
+    "work/OPENCV_SCRIBE_R18W2/R18W2_WRAPPER_APPLICABILITY_GATE.json"
+  ],
+  "authority": {
+    "publicationAuthorized": false,
+    "maximumPublications": 0,
+    "retryAuthorized": false,
+    "externalRouteContactAuthorizedDuringBuild": false,
+    "sourceMutationAuthorized": false,
+    "imageDecodeAuthorizedDuringBuild": false,
+    "taskProcessOrQueueManagementAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "reviewOnly": true
+  }
+}

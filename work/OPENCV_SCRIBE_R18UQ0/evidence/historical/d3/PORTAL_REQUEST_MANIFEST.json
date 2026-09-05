@@ -1,0 +1,43 @@
+{
+    "schema":  "argos_project_portal_request_manifest_v1",
+    "requestId":  "REQ_20260820T194528920Z_EDC4819E0A62",
+    "createdUtc":  "2026-08-20T19:45:28.9206907+00:00",
+    "expiresUtc":  "2026-08-21T19:45:28.9206907+00:00",
+    "targetRole":  "ARGOS",
+    "jobClass":  "MAINTENANCE_PATCH",
+    "handler":  "SIGNED_REVIEW_ONLY_PATCH_V1",
+    "maxResultBytes":  1048576,
+    "reviewOnly":  true,
+    "trainingEligible":  false,
+    "xmlEligible":  false,
+    "productionEligible":  false,
+    "productionRoutingEnabled":  false,
+    "credentialsIncluded":  false,
+    "signerThumbprint":  "C82181052919C475CF888F49427C1B55AE65DC12",
+    "signatureAlgorithm":  "RSA-SHA256-PKCS1",
+    "files":  [
+                  {
+                      "path":  "payload/D3.ps1",
+                      "bytes":  2390,
+                      "sha256":  "904A4B410F1ECCD61B9CEEDD5CCFEACB7C22498534B26675A159ACFDC74081C5"
+                  }
+              ],
+    "entryPoint":  "payload/D3.ps1",
+    "changes":  [
+                    {
+                        "source":  "payload/D3.ps1",
+                        "destination":  "C:\\ProgramData\\ArgosInsiteBridgeRO\\hotfixes\\D3.ps1",
+                        "approvedPredecessorSha256":  [
+                                                          "904A4B410F1ECCD61B9CEEDD5CCFEACB7C22498534B26675A159ACFDC74081C5"
+                                                      ],
+                        "installedSha256":  "904A4B410F1ECCD61B9CEEDD5CCFEACB7C22498534B26675A159ACFDC74081C5",
+                        "allowCreate":  true
+                    }
+                ],
+    "allowedTaskActions":  [
+
+                           ],
+    "rehearsal":  {
+                      "requiredState":  "PASS_SNA3_ARGOS_TASK_ACTION_AUDIT"
+                  }
+}

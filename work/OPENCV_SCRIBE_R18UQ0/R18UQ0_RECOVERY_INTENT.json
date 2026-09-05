@@ -1,0 +1,110 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-05T14:10:19.5240921Z",
+  "incidentId": "R18U_ALL_KNOWN_LOT_SCRIBE_ROSTER_20260905",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {
+      "path": "",
+      "sha256": ""
+    },
+    "workflowReviewClearance": {
+      "path": "",
+      "sha256": ""
+    },
+    "classificationNote": "This is a capability bootstrap, not a failed-request retry. The endpoint necessarily installs the exact one-file audit entrypoint, so the request is classified MUTATE even though the entrypoint itself only reads a fixed metadata/source whitelist."
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": true,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_RELAY_R4.json",
+      "sha256": "A5910A390159B00533CFA5D29CA26D9AFF1391F2B53B96D941D9099A9A569039"
+    },
+    "installedConfigEvidence": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_RELAY_R4.json",
+      "sha256": "A5910A390159B00533CFA5D29CA26D9AFF1391F2B53B96D941D9099A9A569039"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/R18UQ0_EXISTING_ARGOS_READ_CAPABILITY_SCAN.json",
+      "sha256": "D13DE4800CB8AA6697D871A1541FE47DA95BA0B4CC46AE08A12F06A68DE540EF"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/ZR_SNA3_ARGOS_TASK_ACTION_AUDIT_20260820.json",
+      "sha256": "FD0256025C5041526BBCC48A29AE64869560D7EE3A00D07D8F472621786092A0"
+    },
+    "qualifiedAdminGate": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/R18UQ0_CAPABILITY_GAP_OBSERVATION.json",
+      "sha256": "F2B10369BE1E7E4B0F9A7CC353CE063C6BB8080F96B6A2126AEF90E4F173F54A"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "singleMutationAttemptScope": "Install exactly one create-new/idempotent R18UQ0 audit script under the existing Argos Insite hotfix root, execute its fixed read whitelist once, and return one signed terminal response.",
+    "publicationAuthorized": true,
+    "automaticRetryAuthorized": false
+  },
+  "scope": {
+    "requestId": "REQ_R18UQ0",
+    "targetHost": "DESKTOP-266P787",
+    "targetRole": "ARGOS",
+    "destination": "C:/ProgramData/ArgosInsiteBridgeRO/hotfixes/R18UQ0.ps1",
+    "installedFileCount": 1,
+    "taskActions": [],
+    "processActions": [],
+    "sourceImagesAllowed": false,
+    "jbodContactAllowed": false,
+    "credentialContentAllowed": false,
+    "privateKeyAccessAllowed": false,
+    "queryExecutionAllowed": false
+  },
+  "authority": {
+    "operatorApprovedPackagesForArgosJbod": true,
+    "operatorApprovedExecutableRosterPlan": true,
+    "onePublicationAuthorized": true,
+    "retryAuthorized": false,
+    "fullKlarfAuthorizedBeforeBoundedTruthGate": false,
+    "ocrProviderMutationAuthorizedByThisIntent": false,
+    "productionRoutingAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

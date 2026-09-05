@@ -1,0 +1,43 @@
+{
+  "schema": "argos_r18w1_source_and_generated_harness_safety_gate_v1",
+  "checkedUtc": "2026-09-05T17:10:06.0491819Z",
+  "state": "PASS_R18W1_SOURCE_AND_GENERATED_HARNESS_SAFETY",
+  "windowsPowerShell": {
+    "major": 5,
+    "minor": 1,
+    "edition": "Desktop"
+  },
+  "source": {
+    "path": "work/OPENCV_SCRIBE_R18G/Build-R18GRequest.ps1",
+    "sha256": "729C0923FFAEE7F3964B704E8185FF563F6DA19CA552B09439BD3B320A98E0E5",
+    "guardState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "parserErrors": 0,
+    "violations": []
+  },
+  "generated": {
+    "path": "work/OPENCV_SCRIBE_R18W1/Build-R18W1Request.ps1",
+    "sha256": "02045ADB36F948C0EDB79AA1860D66E7066F45E3504AE26B6EFD4610A4F29030",
+    "guardState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "parserErrors": 0,
+    "declaredParameters": ["Preflight", "Build"],
+    "nonMutatingModeDeclared": true,
+    "topLevelMutationCount": 6,
+    "preflightReturnGuardCount": 1,
+    "conditionalCollectionAssignmentCount": 0,
+    "violations": []
+  },
+  "generatedPowerShellScriptSha256": "02045ADB36F948C0EDB79AA1860D66E7066F45E3504AE26B6EFD4610A4F29030",
+  "exactGeneratedPreflight": {
+    "state": "PASS_R18W1_BUILD_PREFLIGHT_LOCAL_ONLY",
+    "selectedAcquisitionCount": 8,
+    "requestedFileCount": 24,
+    "routePathCount": 60,
+    "maximumEffectiveLength": 168,
+    "maximumComponentLength": 51,
+    "mutationsPerformed": false,
+    "externalRouteContacted": false,
+    "imageFilesOpened": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

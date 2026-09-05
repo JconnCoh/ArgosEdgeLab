@@ -1,0 +1,167 @@
+{
+  "schema": "argos_opencv_scribe_r18w3_selection_v1",
+  "revision": "R18W3_CORRECTED_EIGHT_PHYSICAL_LINEAGES_20260905A",
+  "createdUtc": "2026-09-05T17:44:41.0879747Z",
+  "state": "PASS_R18W3_CORRECTED_EIGHT_SELECTION_VALIDATED",
+  "lifecycle": "DRAFT_VALIDATED_UNFROZEN",
+  "classification": "PENDING_GATE",
+  "inputs": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18UJ3/R18UJ3_LIVE_RECONCILIATION.json",
+      "sha256": "419A6A0172C675F4A8DF42EE5ED152846E690D3A667435A89F91B344AD4A5B64",
+      "array": "resolvedRosterToAcquisitionRows"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18X/R18X_EXACT_SCRIBE_LINEAGE_CROSSWALK.json",
+      "sha256": "EAF725D04C899CCEFC70E29DDA990D4058F226D7C602C1607D7ADB2E9CED1099",
+      "arrays": ["baseLineages", "supplementalLineages"]
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18W1_WITHDRAWAL/R18W1_SIGNED_UNPUBLISHED_WITHDRAWAL.json",
+      "sha256": "8874C09378DC9B8F530087B7A69535D4BDC320EEE0D872A832DBB6FECCD33CD1"
+    }
+  ],
+  "selectionMethod": "CORRECTED_EIGHT_EXACT_J3_ROWS_WITH_ZERO_REFERENCE_AND_RESERVED_VALIDATION_TRUTH_OVERLAP",
+  "selectedCount": 8,
+  "selected": [
+    {
+      "ordinal": 1,
+      "sourceAcquisitionKey": "62627-140_20260802111846_SLOT24",
+      "requestIdentity": "62627-140_20260802111846_Slot24",
+      "queryLot": "62627-140",
+      "issuedWaferContainer": "62627-140-020",
+      "scribe": "147MH067SUD2",
+      "requestedGlyphLabels": ["D", "H", "M"],
+      "independentLineageKey": "62627-140|62627-140-020|147MH067SUD2"
+    },
+    {
+      "ordinal": 2,
+      "sourceAcquisitionKey": "62625-907-POST-20260714155300_20260714155354_SLOT14",
+      "requestIdentity": "62625-907-POST-20260714155300_20260714155354_Slot14",
+      "queryLot": "62625-907",
+      "issuedWaferContainer": "62625-907-060",
+      "scribe": "146XF109SUG7",
+      "requestedGlyphLabels": ["X"],
+      "independentLineageKey": "62625-907|62625-907-060|146XF109SUG7"
+    },
+    {
+      "ordinal": 3,
+      "sourceAcquisitionKey": "62546-481-POST_20260708155428_SLOT03",
+      "requestIdentity": "62546-481-POST_20260708155428_Slot03",
+      "queryLot": "62546-481",
+      "issuedWaferContainer": "62546-481-030",
+      "scribe": "0303N050FEE4",
+      "requestedGlyphLabels": ["N"],
+      "independentLineageKey": "62546-481|62546-481-030|0303N050FEE4"
+    },
+    {
+      "ordinal": 4,
+      "sourceAcquisitionKey": "62546-481-POST_20260708155428_SLOT04",
+      "requestIdentity": "62546-481-POST_20260708155428_Slot04",
+      "queryLot": "62546-481",
+      "issuedWaferContainer": "62546-481-040",
+      "scribe": "0303N049FEB3",
+      "requestedGlyphLabels": ["N"],
+      "independentLineageKey": "62546-481|62546-481-040|0303N049FEB3"
+    },
+    {
+      "ordinal": 5,
+      "sourceAcquisitionKey": "62546-481_20260707164232_SLOT05",
+      "requestIdentity": "62546-481_20260707164232_Slot05",
+      "queryLot": "62546-481",
+      "issuedWaferContainer": "62546-481-060",
+      "scribe": "0303N047FEA2",
+      "requestedGlyphLabels": ["N"],
+      "independentLineageKey": "62546-481|62546-481-060|0303N047FEA2"
+    },
+    {
+      "ordinal": 6,
+      "sourceAcquisitionKey": "62619-451-PRE_20260717143452_SLOT01",
+      "requestIdentity": "62619-451-PRE_20260717143452_Slot01",
+      "queryLot": "62619-451",
+      "issuedWaferContainer": "62619-451-010",
+      "scribe": "146AR068SUC7",
+      "requestedGlyphLabels": ["R"],
+      "independentLineageKey": "62619-451|62619-451-010|146AR068SUC7"
+    },
+    {
+      "ordinal": 7,
+      "sourceAcquisitionKey": "62619-451-PRE_20260717143452_SLOT09",
+      "requestIdentity": "62619-451-PRE_20260717143452_Slot09",
+      "queryLot": "62619-451",
+      "issuedWaferContainer": "62619-451-090",
+      "scribe": "1478T059SUA3",
+      "requestedGlyphLabels": ["T"],
+      "independentLineageKey": "62619-451|62619-451-090|1478T059SUA3"
+    },
+    {
+      "ordinal": 8,
+      "sourceAcquisitionKey": "62620-548_20260810154124_SLOT02",
+      "requestIdentity": "62620-548_20260810154124_Slot02",
+      "queryLot": "62620-548",
+      "issuedWaferContainer": "62620-548-020",
+      "scribe": "L0751042FEF5",
+      "requestedGlyphLabels": ["L"],
+      "independentLineageKey": "62620-548|62620-548-020|L0751042FEF5"
+    }
+  ],
+  "partitionBoundary": {
+    "purpose": "DEVELOPMENT_REFERENCE_ENRICHMENT_ONLY",
+    "reservedValidationAcquisition": "62546-481_20260707164232_Slot21",
+    "reservedValidationTruth": "13HFX135SUE3",
+    "reservedValidationIncluded": false,
+    "sameTruthPostAcquisition": "62546-481-POST_20260708155428_Slot21",
+    "sameTruthPostAcquisitionIncluded": false,
+    "localOnlyPackageExcluded": "62629-401_20260902002921_Slot24",
+    "localOnlyPackageExcludedIncluded": false,
+    "otherSlot24IdentitiesAllowed": true
+  },
+  "overlapContract": {
+    "referenceCrosswalkExpectedExactScribeLineages": 41,
+    "selectionExactScribeCount": 8,
+    "selectionIndependentLineageCount": 8,
+    "selectionReferenceTruthOverlapRequired": 0,
+    "selectionReservedValidationTruthOverlapRequired": 0,
+    "acquisitionIdentityTreatedAsPhysicalLineageAuthority": false,
+    "exactConfirmedScribeRequired": true
+  },
+  "w1Corrections": {
+    "removed": [
+      {
+        "requestIdentity": "62546-481-POST_20260708155428_Slot21",
+        "scribe": "13HFX135SUE3",
+        "reason": "SAME_EXACT_PHYSICAL_LINEAGE_AS_RESERVED_CURRENT_VALIDATION"
+      },
+      {
+        "requestIdentity": "62607-215_20260730053038_Slot25",
+        "scribe": "5565R022FEG5",
+        "reason": "EXACT_TRUTH_ALREADY_PRESENT_IN_FROZEN_R18X_REFERENCE_LINEAGES"
+      }
+    ],
+    "added": [
+      {
+        "requestIdentity": "62625-907-POST-20260714155300_20260714155354_Slot14",
+        "scribe": "146XF109SUG7",
+        "purpose": "DISTINCT_X_PHYSICAL_LINEAGE"
+      },
+      {
+        "requestIdentity": "62619-451-PRE_20260717143452_Slot01",
+        "scribe": "146AR068SUC7",
+        "purpose": "DISTINCT_R_PHYSICAL_LINEAGE"
+      }
+    ]
+  },
+  "authority": {
+    "portalPublicationAuthorized": false,
+    "maximumPublications": 0,
+    "retryAuthorized": false,
+    "sourceMutationAuthorized": false,
+    "taskProcessOrQueueManagementAuthorized": false,
+    "imageDecodeAuthorizedDuringLocalPreparation": false,
+    "identityAcceptanceAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "reviewOnly": true
+  }
+}

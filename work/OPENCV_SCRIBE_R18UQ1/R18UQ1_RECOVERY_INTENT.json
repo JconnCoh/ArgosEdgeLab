@@ -1,0 +1,95 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-05T15:52:00Z",
+  "incidentId": "R18U_ALL_KNOWN_LOT_SCRIBE_ROSTER_20260905",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path": "", "sha256": ""},
+    "workflowReviewClearance": {"path": "", "sha256": ""},
+    "classificationNote": "R18UQ0 was withdrawn before publication or execution and is not counted as a signed premise failure. R18UQ1 is a fresh one-file capability addition, but external mutation and publication remain blocked until the active Argos endpoint/config/queue-safety route is exactly qualified."
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": true,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": false,
+    "endpointWorker": {
+      "path": "work/OPENCV_SCRIBE_R18U/ARGOS_ACTIVE_ENDPOINT_EVIDENCE_20260905.json",
+      "sha256": "E4D330228416BA04826E0F0CC3181E881D757719A3C1E1D6229D062EF46135A1"
+    },
+    "installedConfigEvidence": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_RELAY_R4.json",
+      "sha256": "A5910A390159B00533CFA5D29CA26D9AFF1391F2B53B96D941D9099A9A569039"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_SCRIBE_R18UQ1/R18UQ1_CAPABILITY_SUPPORTING_OBSERVATION.json",
+      "sha256": "35612368E0466085C7812CF67BF17EFB77884C53C4058057473A99D3D2E5E3CD"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/OPENCV_SCRIBE_R18UQ1/R18UQ1_ARGOS_ROUTE_QUALIFICATION_BLOCKER.json",
+      "sha256": "51D7C0BEB1B82163BC29FB266C8EE9BBF92D3931D1AD707F06B12E2481D18345"
+    },
+    "qualifiedAdminGate": {"path": "", "sha256": ""}
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A", "B", "C", "D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_SCRIBE_R18UQ1/R18UQ1_CAPABILITY_SUPPORTING_OBSERVATION.json",
+      "sha256": "35612368E0466085C7812CF67BF17EFB77884C53C4058057473A99D3D2E5E3CD"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "singleMutationAttemptScope": "Install only C:/ProgramData/ArgosInsiteBridgeRO/diagnostics/R18UQ1.ps1 and execute one bounded read-only 50-lot query after a fresh exact route PASS; never retry.",
+    "externalMutationAttemptAuthorizedNow": false,
+    "publicationAuthorizedNow": false,
+    "automaticRetryAuthorized": false
+  },
+  "scope": {
+    "requestId": "REQ_U1_20260905T154017612Z_81F8670E855F",
+    "targetHost": "DESKTOP-266P787",
+    "targetRole": "ARGOS",
+    "destination": "C:/ProgramData/ArgosInsiteBridgeRO/diagnostics/R18UQ1.ps1",
+    "installedFileCount": 1,
+    "taskActions": [],
+    "processActions": [],
+    "sourceImagesAllowed": false,
+    "jbodContactAllowed": false,
+    "credentialContentReturnAllowed": false,
+    "queryExecutionAllowedAfterRoutePass": true
+  },
+  "authority": {
+    "operatorApprovedExecutableRosterPlan": true,
+    "oneFuturePublicationAuthorizedAfterAllGates": true,
+    "retryAuthorized": false,
+    "fullKlarfAuthorizedBeforeBoundedTruthGate": false,
+    "ocrProviderMutationAuthorizedByThisIntent": false,
+    "productionRoutingAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

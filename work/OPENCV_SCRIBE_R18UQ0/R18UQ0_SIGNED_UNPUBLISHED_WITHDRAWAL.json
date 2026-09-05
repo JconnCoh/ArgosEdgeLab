@@ -1,0 +1,161 @@
+{
+  "schema": "argos_opencv_scribe_r18uq0_signed_unpublished_withdrawal_v1",
+  "createdUtc": "2026-09-05T14:54:51.3175354Z",
+  "state": "WITHDRAWN",
+  "revision": "OCV02_R18UQ0_SIGNED_UNPUBLISHED_WITHDRAWN_20260905",
+  "requestId": "REQ_R18UQ0",
+  "requestZip": {
+    "path": "work/OPENCV_SCRIBE_R18UQ0/final/REQ_R18UQ0.ready.zip",
+    "bytes": 10968,
+    "sha256": "7DA7922BE356786B251B4ADD0656119A72474F456EA1BAC6B1E7DFCA49FE77C4"
+  },
+  "signedMembers": {
+    "requestManifestSha256": "AB3F101C15223D1BE4AB948453BA15CABBB8DF88BB8AE58C83132D5DC06A65FA",
+    "requestSignatureSha256": "5768EABCD3BA33FA4CDFA9AD313046D32413B84DDB07E49802BC72742F2824CC",
+    "payloadPath": "payload/R18UQ0.ps1",
+    "payloadSha256": "B6E5A12E2A3D2E5B1397F9CB169E82E32419A8BA21F2DF0B5CE71718D465F1AF",
+    "signerCertificate": {
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/ARGOS_PROJECT_PORTAL_LAPTOP_SIGNER_PUBLIC.cer",
+      "sha256": "2B434D0CF6A0D6D69AAE3D280032EFF00807D423CA3B3D7F2EFC1C6BB628BFFF",
+      "thumbprint": "C82181052919C475CF888F49427C1B55AE65DC12"
+    },
+    "rsaSha256Pkcs1SignatureVerified": true
+  },
+  "exposingArtifacts": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/R18UQ0_FINAL_PACKAGE_GATE.json",
+      "sha256": "1561391F8E58938FF02FFD33ECC7E28066D2FDBD17DAF472FD08881102D4B34D"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/R18UQ0_FINAL_EXTRACTED_PACKAGE_REHEARSAL_GATE.json",
+      "sha256": "461228B3A978762F3E17CEE53372DD8301E65C8B9E6B0F53C7D39D8E37265928"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/R18UQ0_STAGED_PACKAGE_REHEARSAL_GATE.json",
+      "sha256": "B689192296ACB856A1CF2B72D1879ED113E34535723E5B55215DD26BA588B491"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/R18UQ0_PATH_GATE.json",
+      "sha256": "A8BE45C14ED02B9C4212C30C0842475B7C3A0800DABC8B1F6DD2988AD7BAA797"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/R18UQ0_RECOVERY_INTENT.json",
+      "sha256": "D67407C520CF797ABBC15BC62C64D7B388D05D09CC65D408B075CEE1670A8649"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/R18UQ0_RECOVERY_INTENT_GATE.json",
+      "sha256": "D0C84A849EE66ACD76769751C9E50E1F33A63004E61A6C1AC0C418DB232384A5"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/R18UQ0_CAPABILITY_GAP_OBSERVATION.json",
+      "sha256": "F2B10369BE1E7E4B0F9A7CC353CE063C6BB8080F96B6A2126AEF90E4F173F54A"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/R18UQ0_PUBLICATION_AUTHORITY.json",
+      "sha256": "2E8E59B92BEC9A12B5800A4EAA5A2DE0BA14B036A99B762B6441FE633C49E492",
+      "invalidatedByWithdrawal": true
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/PREACTION_R18UQ0_PUBLICATION.json",
+      "sha256": "44202B252A4F24A918E3C983CFA61A593300462279BCC73D8917AFBB0913ED87",
+      "invalidatedByWithdrawal": true
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/Publish-R18UQ0.ps1",
+      "sha256": "96E6CC17DA92E3BACDDA11D03A6D7A23F358C98A151D420E493FEC1A0739E314",
+      "invalidatedByWithdrawal": true
+    }
+  ],
+  "withdrawalReasons": [
+    {
+      "code": "CURRENT_ARGOS_ENDPOINT_NOT_EXACTLY_PINNED",
+      "detail": "The recovery intent explicitly sets inheritsQualifiedEndpointGate=false. The cited observation pins endpoint_argos.json but not the exact active Invoke-ArgosProjectPortalEndpointWorker.ps1 bytes/hash."
+    },
+    {
+      "code": "SYNTHETIC_REHEARSAL_DID_NOT_INVOKE_INSTALLED_ENDPOINT",
+      "detail": "The staged and extracted rehearsals simulate replacement locally; they do not invoke the exact Argos endpoint worker, handler, response construction, replay/restart path, or a second queued control request."
+    },
+    {
+      "code": "NO_ARGUMENT_ENDPOINT_INVOCATION_NOT_REHEARSED",
+      "detail": "The signed payload supports only an explicit -Preflight switch for local rehearsal. Its normal no-argument endpoint invocation and request-specific file-backed fixture transport were not exercised before signature."
+    },
+    {
+      "code": "STATIC_REQUEST_ID",
+      "detail": "REQ_R18UQ0 is a short static identity and was signed without the required high-entropy timestamp/GUID identity and complete accessible-namespace collision proof."
+    },
+    {
+      "code": "CREATE_FROM_ABSENT_ROLLBACK_NOT_TESTED",
+      "detail": "The signed manifest declares allowCreate=true, but rollback evidence covers only an existing destination and does not exercise the absent/create failure branch."
+    },
+    {
+      "code": "PATH_GATE_NOT_COMPLETE_OR_MANIFEST_BOUND",
+      "detail": "The path gate omits installed endpoint/response construction and several staging/result leaves, models the endpoint work-root shape incorrectly, and is not bound to the final request-manifest hash and exact installed route/config revision."
+    },
+    {
+      "code": "CREDENTIAL_SCOPE_DECLARATION_MISMATCH",
+      "detail": "Authority forbids credential-content access, but normal payload execution reads the credential JSON and decodes protectedPassword and entropy fields."
+    },
+    {
+      "code": "TASK_READ_SCOPE_DECLARATION_MISMATCH",
+      "detail": "Normal payload execution performs an undeclared and unnecessary scheduled-task state/action read although the source-bootstrap action requires no task or process evidence."
+    },
+    {
+      "code": "OBSERVATION_OVERCLAIM",
+      "detail": "R18UQ0_CAPABILITY_GAP_OBSERVATION.json claims matchingSignedTerminalResponse=true and exactSourcesProved=true without pinning a matching response that returned the exact current source bytes."
+    }
+  ],
+  "failurePreventionMemory": [
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "lines": "4458-4476",
+      "rule": "Exercise the exact endpoint no-argument invocation and request-specific environment/file-backed transport before first signature; a signed stale artifact is withdrawn and never reused."
+    },
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "lines": "4943-4962",
+      "rule": "Use a high-entropy timestamp/GUID request ID, prove namespace absence before first signature, and bind response collection to the exact signed manifest and publication boundary."
+    }
+  ],
+  "externalPresenceAudit": {
+    "checkedUtc": "2026-09-05T14:54:51.3175354Z",
+    "requestAndProcessedNamePattern": "*R18UQ0*",
+    "requestAndProcessedRoots": [
+      "U:/ProjectPortalRO/requests",
+      "U:/ProjectPortalRO/requests/processed"
+    ],
+    "requestAndProcessedNameMatches": 0,
+    "processedRequestManifestCount": 599,
+    "processedRequestManifestParseErrors": 0,
+    "processedRequestManifestRequestIdMatches": 0,
+    "responseRoot": "U:/ProjectPortalRO/responses",
+    "responseZipCountScanned": 585,
+    "responseManifestsParsed": 581,
+    "responseManifestParseErrors": 0,
+    "zipFilesWithoutResponseManifest": 4,
+    "responseManifestRequestId": "REQ_R18UQ0",
+    "responseManifestMatches": 0
+  },
+  "lifecycle": {
+    "signed": true,
+    "published": false,
+    "publicationCount": 0,
+    "acceptedByGatewayShareImporter": false,
+    "targetExecuted": false,
+    "matchingTerminalResponseObserved": false,
+    "externalMutationPerformed": false,
+    "taskOrProcessActionPerformed": false,
+    "imageBytesRead": false,
+    "jbodContacted": false
+  },
+  "authority": {
+    "futurePublicationAllowed": false,
+    "futureExecutionAllowed": false,
+    "futureTemplateUseAllowed": false,
+    "requestRetryAuthorized": false,
+    "publicationParentAllowed": false,
+    "freshSuccessorNamespaceRequired": true,
+    "freshHighEntropyRequestIdRequired": true,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  }
+}

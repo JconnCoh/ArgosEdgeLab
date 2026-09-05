@@ -1,0 +1,131 @@
+{
+  "schema": "argos_opencv_scribe_r18u_active_argos_endpoint_evidence_v1",
+  "createdUtc": "2026-09-05T14:54:51.3175354Z",
+  "state": "HOLD_INFERRED_ACTIVE_ARGOS_ENDPOINT_NOT_DIRECTLY_HASHED_OR_QUEUE_SAFETY_QUALIFIED",
+  "purpose": "Separate direct observations from the bounded inference about the Argos Project Portal worker so an unsafe package route is not used to acquire the R18U roster.",
+  "directObservations": {
+    "argosAdminObservation": {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_RELAY_R4.json",
+      "sha256": "A5910A390159B00533CFA5D29CA26D9AFF1391F2B53B96D941D9099A9A569039",
+      "createdUtc": "2026-08-26T17:57:40.0677681Z",
+      "state": "PASS_EXACT_ARGOS_ADMIN_INBOUND_RELAY_READ_ONLY_OBSERVATION",
+      "computerName": "DESKTOP-266P787",
+      "endpointTask": {
+        "name": "ArgosProjectPortal.Argos.Endpoint.RO",
+        "state": "Running",
+        "principal": "SYSTEM",
+        "scriptPath": "C:/ProgramData/ArgosProjectPortalRO/bin/Invoke-ArgosProjectPortalEndpointWorker.ps1",
+        "configPath": "C:/ProgramData/ArgosProjectPortalRO/config/endpoint_argos.json"
+      },
+      "endpointProcess": {
+        "processId": 10304,
+        "creationUtc": "2026-08-09T01:32:50.973811Z"
+      },
+      "endpointConfig": {
+        "bytes": 2961,
+        "sha256": "D55373206CA6E4DAA557A4BD422DA95C9D5784F9339AF71BFAD836735542A550"
+      },
+      "workerScriptBytesReturned": false,
+      "workerScriptHashReturned": false,
+      "workerRowsContainedOnlyTransportExecutable": true
+    },
+    "initialPortalInstaller": {
+      "path": "U:/ARGOS_PROJECT_PORTAL_REVIEW_ONLY_V1_0_1_20260809T012211Z.zip",
+      "bytes": 59387,
+      "sha256": "A5EBD9FB7EF582485AC28A0AEF295A845259B12A230A6388917BF4F24F03F1C1",
+      "packageManifest": {
+        "member": "PACKAGE_MANIFEST.json",
+        "bytes": 6277,
+        "sha256": "F6DC2BAA583D23D808DF5D56A53A59C2D3C626E57895E804D7A515B7508FDB32"
+      },
+      "endpointWorker": {
+        "member": "payload/Invoke-ArgosProjectPortalEndpointWorker.ps1",
+        "bytes": 23249,
+        "sha256": "AA8CF83463E9C1850AB0D2CE1D639EC8E9A0EA1FEEFA43BA57207C50A1637842"
+      },
+      "installer": {
+        "member": "scripts/Install-ProjectPortalStage.ps1",
+        "bytes": 42400,
+        "sha256": "27FF3A190DE1C70AE325E3727B6F15EAF753D193D0BB469B4143EEDEE654253C"
+      }
+    },
+    "signedArgosStackFingerprint": {
+      "requestId": "REQ_A13_0821_0819_X1",
+      "responseId": "R_F5062D7A1753_20260821082535581",
+      "responseZip": "U:/ProjectPortalRO/responses/R_F5062D7A1753_20260821082535581.ready.zip",
+      "responseZipSha256": "BF609A71D629BCA22CE928A26663B084CA77ABFC78173CEC76359BBEB8D81EB0",
+      "responseManifestSha256": "A387A7B21E431BF9FD1A2A0AF7B78AEC51AD949F8E44FF2BA6505C071A57750B",
+      "responseSignatureSha256": "85350E91A15F3CCF564843E26BE3E44E47F647CDB4FA16AC89E94ED23DBE5CC5",
+      "failureSha256": "5BE60306D86500D642D2C9B881A037ED7F05A957B4C82E381652E03C72BFF916",
+      "sourceRole": "ARGOS",
+      "state": "FAILED",
+      "scriptStackLines": [186, 264, 294],
+      "signerCertificate": {
+        "path": "work/OPENCV_SCRIBE_R18UQ0/evidence/ARGOS_ENDPOINT_SIGNER.cer",
+        "sha256": "ED1AD2F0AB8377EF8303EB67947B7B86B074F318F90163A87BFD7DF03C978CB7",
+        "thumbprint": "5C00B8E35A9F5AC21DC051D7C2D9FD68D9361E48"
+      },
+      "rsaSha256Pkcs1SignatureVerified": true,
+      "declaredFailureHashVerified": true,
+      "stackUniquelyMatchesInitialWorker": true
+    },
+    "archiveScans": {
+      "topLevelPackageZipCount": 42,
+      "workerBearingPackageCount": 6,
+      "candidateWorkerHashes": [
+        "AA8CF83463E9C1850AB0D2CE1D639EC8E9A0EA1FEEFA43BA57207C50A1637842",
+        "CBB1D168DACF392259C93898D8CE725BED7C917571937207757423A05FAC4DE0",
+        "64F1BFA34A2F54F6D84D14C5D91BC270346E88E3D95E2E303C0A858206E770B2",
+        "5A861FB4BF95A9A7978057B20101B2A6C1F2E4CA8332D6BAC8AF4EDBB6767D7A"
+      ],
+      "processedRequestManifestCount": 599,
+      "processedRequestManifestParseErrors": 0,
+      "argosMaintenancePatchCount": 31,
+      "endpointWorkerOrConfigChangeCount": 0,
+      "r18uq0ProcessedRequestCount": 0,
+      "responseZipCount": 585,
+      "responseManifestCount": 581,
+      "responseManifestParseErrors": 0,
+      "r18uq0ResponseCount": 0
+    }
+  },
+  "inference": {
+    "asOfUtc": "2026-08-26T17:57:40.0677681Z",
+    "workerSha256": "AA8CF83463E9C1850AB0D2CE1D639EC8E9A0EA1FEEFA43BA57207C50A1637842",
+    "basis": [
+      "The observed endpoint process began immediately after the initial installer epoch and remained the same process on 2026-08-26.",
+      "Signed Argos failure responses expose the unique 186/264/294 stack-line fingerprint of the initial AA8CF834 worker.",
+      "All 599 processed request manifests contain zero declared replacements of the Argos endpoint worker or endpoint_argos.json."
+    ],
+    "confidence": "STRONG_BUT_NOT_DIRECT_BYTE_OBSERVATION",
+    "currentLiveBytesProved": false,
+    "currentProcessContinuityAfterObservationProved": false
+  },
+  "queueSafetyAssessment": {
+    "assessedSourceSha256": "AA8CF83463E9C1850AB0D2CE1D639EC8E9A0EA1FEEFA43BA57207C50A1637842",
+    "resultRootCollisionOutsidePerRequestFailureBoundary": true,
+    "workRootCollisionBeforePerRequestTry": true,
+    "normalResponseConstructionOutsidePerRequestFailureBoundary": true,
+    "processedArchiveCollisionOutsidePerRequestFailureBoundary": true,
+    "compactSignedFallbackProved": false,
+    "failedAttemptQuarantineProved": false,
+    "restartIdempotenceAndSecondControlProved": false,
+    "publicationQualified": false
+  },
+  "decision": {
+    "publishThroughCurrentArgosEndpoint": false,
+    "useR18UQ0": false,
+    "forceEndpointBootstrap": false,
+    "preferredAlternative": "USE_ALREADY_SIGNED_AND_HASHED_ROSTER_EVIDENCE_WHERE_COVERAGE_IS_SUFFICIENT",
+    "reviewOnly": true,
+    "productionRoutingEnabled": false
+  },
+  "auditBoundary": {
+    "filesystemWritesOtherThanThisLocalEvidenceRecord": false,
+    "gitWrites": false,
+    "requestPublished": false,
+    "argosOrJbodMutation": false,
+    "taskOrProcessAccess": false,
+    "imageBytesRead": false
+  }
+}

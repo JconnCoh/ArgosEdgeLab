@@ -1,0 +1,30 @@
+{
+  "schema": "argos_r18uq1_namespace_absence_gate_v1",
+  "checkedUtc": "2026-09-05T15:41:46.8230695Z",
+  "state": "PASS_R18UQ1_FRESH_REQUEST_NAMESPACE_ABSENT",
+  "requestId": "REQ_U1_20260905T154017612Z_81F8670E855F",
+  "observer": "PREDECESSOR_ROOT_BOUNDED_NAMESPACE_AUDIT",
+  "scope": {
+    "requestFilenameMatches": 0,
+    "processedFilenameMatches": 0,
+    "responseFilenameMatches": 0,
+    "processedAndResponseZipManifestsScanned": 1184,
+    "manifestParseErrors": 0,
+    "requestIdManifestMatches": 0
+  },
+  "conclusion": {
+    "freshHighEntropyRequestId": true,
+    "accessibleNamespaceCollisionObserved": false,
+    "authorizesSignatureByItself": false,
+    "remainingRequiredGate": "PASS_EXACT_QUALIFIED_ARGOS_ENDPOINT_CONFIG_AND_QUEUE_SAFETY"
+  },
+  "auditBoundary": {
+    "auditPerformedOutsideThisSubagent": true,
+    "thisSubagentAccessedPortalOrShare": false,
+    "thisSubagentAccessedArgosOrJbod": false,
+    "thisSubagentAccessedQueuesTasksProcessesOrImages": false,
+    "thisSubagentPerformedExternalMutation": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

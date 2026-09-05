@@ -1,0 +1,117 @@
+{
+  "schema": "argos_opencv_scribe_r18w1_selection_v1",
+  "revision": "R18W1_FIRST_EIGHT_R18UJ3_REFERENCE_ENRICHMENT_20260905A",
+  "createdUtc": "2026-09-05T17:00:00.0000000Z",
+  "state": "PASS_R18W1_FIRST_EIGHT_SELECTION_FROZEN",
+  "classification": "PENDING_GATE",
+  "input": {
+    "path": "work/OPENCV_SCRIBE_R18UJ3/R18UJ3_LIVE_RECONCILIATION.json",
+    "sha256": "419A6A0172C675F4A8DF42EE5ED152846E690D3A667435A89F91B344AD4A5B64",
+    "array": "nextDataPullSelection.selected"
+  },
+  "selectionMethod": "FIRST_EIGHT_IN_EXISTING_ARRAY_ORDER_AFTER_EXACT_INPUT_HASH_VERIFICATION",
+  "selectedCount": 8,
+  "selected": [
+    {
+      "ordinal": 1,
+      "sourceAcquisitionKey": "62627-140_20260802111846_SLOT24",
+      "requestIdentity": "62627-140_20260802111846_Slot24",
+      "queryLot": "62627-140",
+      "issuedWaferContainer": "62627-140-020",
+      "scribe": "147MH067SUD2",
+      "requestedGlyphLabels": ["D", "H", "M"],
+      "independentLineageKey": "62627-140|62627-140-020|147MH067SUD2"
+    },
+    {
+      "ordinal": 2,
+      "sourceAcquisitionKey": "62546-481-POST_20260708155428_SLOT21",
+      "requestIdentity": "62546-481-POST_20260708155428_Slot21",
+      "queryLot": "62546-481",
+      "issuedWaferContainer": "62546-481-010",
+      "scribe": "13HFX135SUE3",
+      "requestedGlyphLabels": ["X"],
+      "independentLineageKey": "62546-481|62546-481-010|13HFX135SUE3"
+    },
+    {
+      "ordinal": 3,
+      "sourceAcquisitionKey": "62546-481-POST_20260708155428_SLOT03",
+      "requestIdentity": "62546-481-POST_20260708155428_Slot03",
+      "queryLot": "62546-481",
+      "issuedWaferContainer": "62546-481-030",
+      "scribe": "0303N050FEE4",
+      "requestedGlyphLabels": ["N"],
+      "independentLineageKey": "62546-481|62546-481-030|0303N050FEE4"
+    },
+    {
+      "ordinal": 4,
+      "sourceAcquisitionKey": "62546-481-POST_20260708155428_SLOT04",
+      "requestIdentity": "62546-481-POST_20260708155428_Slot04",
+      "queryLot": "62546-481",
+      "issuedWaferContainer": "62546-481-040",
+      "scribe": "0303N049FEB3",
+      "requestedGlyphLabels": ["N"],
+      "independentLineageKey": "62546-481|62546-481-040|0303N049FEB3"
+    },
+    {
+      "ordinal": 5,
+      "sourceAcquisitionKey": "62546-481_20260707164232_SLOT05",
+      "requestIdentity": "62546-481_20260707164232_Slot05",
+      "queryLot": "62546-481",
+      "issuedWaferContainer": "62546-481-060",
+      "scribe": "0303N047FEA2",
+      "requestedGlyphLabels": ["N"],
+      "independentLineageKey": "62546-481|62546-481-060|0303N047FEA2"
+    },
+    {
+      "ordinal": 6,
+      "sourceAcquisitionKey": "62607-215_20260730053038_SLOT25",
+      "requestIdentity": "62607-215_20260730053038_Slot25",
+      "queryLot": "62607-215",
+      "issuedWaferContainer": "62607-215-030",
+      "scribe": "5565R022FEG5",
+      "requestedGlyphLabels": ["R"],
+      "independentLineageKey": "62607-215|62607-215-030|5565R022FEG5"
+    },
+    {
+      "ordinal": 7,
+      "sourceAcquisitionKey": "62619-451-PRE_20260717143452_SLOT09",
+      "requestIdentity": "62619-451-PRE_20260717143452_Slot09",
+      "queryLot": "62619-451",
+      "issuedWaferContainer": "62619-451-090",
+      "scribe": "1478T059SUA3",
+      "requestedGlyphLabels": ["T"],
+      "independentLineageKey": "62619-451|62619-451-090|1478T059SUA3"
+    },
+    {
+      "ordinal": 8,
+      "sourceAcquisitionKey": "62620-548_20260810154124_SLOT02",
+      "requestIdentity": "62620-548_20260810154124_Slot02",
+      "queryLot": "62620-548",
+      "issuedWaferContainer": "62620-548-020",
+      "scribe": "L0751042FEF5",
+      "requestedGlyphLabels": ["L"],
+      "independentLineageKey": "62620-548|62620-548-020|L0751042FEF5"
+    }
+  ],
+  "partitionBoundary": {
+    "purpose": "DEVELOPMENT_REFERENCE_ENRICHMENT_ONLY",
+    "independentValidationReserved": "62546-481_20260707164232_Slot21",
+    "independentValidationIncluded": false,
+    "postAcquisitionSlot21Included": "62546-481-POST_20260708155428_Slot21",
+    "localOnlyPackageExcluded": "62629-401_20260902002921_Slot24",
+    "localOnlyPackageExcludedIncluded": false,
+    "otherSlot24IdentitiesAllowed": true
+  },
+  "authority": {
+    "portalPublicationAuthorized": false,
+    "retryAuthorized": false,
+    "sourceMutationAuthorized": false,
+    "taskProcessOrQueueManagementAuthorized": false,
+    "imageDecodeAuthorizedDuringLocalPreparation": false,
+    "identityAcceptanceAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "reviewOnly": true
+  }
+}

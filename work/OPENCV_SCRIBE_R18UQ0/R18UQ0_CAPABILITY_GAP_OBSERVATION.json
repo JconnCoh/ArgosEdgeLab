@@ -1,0 +1,56 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-05T14:10:19.5240921Z",
+  "state": "PASS_R18UQ0_ARGOS_INSITE_CAPABILITY_GAP_OBSERVED",
+  "incidentId": "R18U_ALL_KNOWN_LOT_SCRIBE_ROSTER_20260905",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": true,
+  "sources": [
+    {
+      "path": "work/OPENCV_SCRIBE_O2D10/O2D10_ARGOS_ADMIN_RELAY_R4.json",
+      "sha256": "A5910A390159B00533CFA5D29CA26D9AFF1391F2B53B96D941D9099A9A569039",
+      "expected": "direct read-only Argos endpoint/config/task observation",
+      "observed": "DESKTOP-266P787 endpoint_argos config and endpoint worker task identities are present; exact current source bytes were not returned"
+    },
+    {
+      "path": "work/ZR_SNA3_ARGOS_TASK_ACTION_AUDIT_20260820.json",
+      "sha256": "FD0256025C5041526BBCC48A29AE64869560D7EE3A00D07D8F472621786092A0",
+      "expected": "signed historical Argos task-action audit precedent",
+      "observed": "one self-installed MAINTENANCE_PATCH audit returned task/action/hash evidence and a signed terminal Argos response"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18U/R18U_ROSTER_CATALOG_INPUT.json",
+      "sha256": "89F37687D0E669A11671C2222CC495333C932C9CCCAA0BE277946AE30EBCDAB5",
+      "expected": "bounded fixed query input",
+      "observed": "50 unique normalized production lot-family keys"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/R18UQ0_EXISTING_ARGOS_READ_CAPABILITY_SCAN.json",
+      "sha256": "D13DE4800CB8AA6697D871A1541FE47DA95BA0B4CC46AE08A12F06A68DE540EF",
+      "expected": "existing read route capable of returning current source/runtime contracts",
+      "observed": "no existing STATUS, DATA_PULL, or INSITE_DIAGNOSTIC request contract supplies the required evidence"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18UQ0/evidence/ARGOS_ENDPOINT_SIGNER.cer",
+      "sha256": "ED1AD2F0AB8377EF8303EB67947B7B86B074F318F90163A87BFD7DF03C978CB7",
+      "expected": "Argos response signer thumbprint 5C00B8E35A9F5AC21DC051D7C2D9FD68D9361E48",
+      "observed": "exact enrollment DER hash and derived thumbprint match"
+    }
+  ],
+  "decision": {
+    "mode": "MUTATE",
+    "remedy": "B",
+    "supportedAction": "install exactly one self-contained, fixed-whitelist Argos audit entrypoint and return bounded source/runtime evidence",
+    "installedFileCount": 1,
+    "taskActions": [],
+    "processActions": [],
+    "imagesAllowed": false,
+    "jbodContactAllowed": false,
+    "automaticRetryAllowed": false
+  },
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

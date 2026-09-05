@@ -1,0 +1,75 @@
+{
+  "schema": "argos_r18w2_ordered_source_clone_generated_harness_gate_v2",
+  "checkedUtc": "2026-09-05T17:38:44.0287569Z",
+  "state": "PASS_R18W2_SOURCE_AND_GENERATED_HARNESS_SAFETY",
+  "requiredOrder": [
+    "SOURCE_HARNESS_GUARD",
+    "CLONE_LITERAL_GATE",
+    "GENERATED_HARNESS_GUARD_AFTER_CLONE_GATE",
+    "FILE_BACKED_ORDERED_HARNESS_GATE"
+  ],
+  "orderedEvidence": [
+    {
+      "ordinal": 1,
+      "action": "SOURCE_HARNESS_GUARD",
+      "checkedUtc": "2026-09-05T17:38:04.9335449Z",
+      "path": "work/OPENCV_SCRIBE_R18W1/Build-R18W1Request.ps1",
+      "sha256": "02045ADB36F948C0EDB79AA1860D66E7066F45E3504AE26B6EFD4610A4F29030",
+      "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "parserErrors": 0,
+      "violations": []
+    },
+    {
+      "ordinal": 2,
+      "action": "CLONE_LITERAL_GATE",
+      "checkedUtc": "2026-09-05T17:38:14.2121503Z",
+      "path": "work/OPENCV_SCRIBE_R18W2/R18W2_CLONE_LITERAL_GATE_V2.json",
+      "sha256": "07101913491BAE1BFCB97AC2A415DFE5307DED6977BA432A7E845CCCCD837FC3",
+      "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+      "generatedSha256": "9D83D995DD9F372415812A143B2B0CFF7D6A327CEAF4AC68F9A8FB4862CB4D87"
+    },
+    {
+      "ordinal": 3,
+      "action": "GENERATED_HARNESS_GUARD_AFTER_CLONE_GATE",
+      "checkedUtc": "2026-09-05T17:38:30.0227315Z",
+      "path": "work/OPENCV_SCRIBE_R18W2/Build-R18W2Request.ps1",
+      "sha256": "9D83D995DD9F372415812A143B2B0CFF7D6A327CEAF4AC68F9A8FB4862CB4D87",
+      "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "parserErrors": 0,
+      "violations": []
+    },
+    {
+      "ordinal": 4,
+      "action": "FILE_BACKED_ORDERED_HARNESS_GATE",
+      "checkedUtc": "2026-09-05T17:38:44.0287569Z",
+      "state": "PASS_R18W2_SOURCE_AND_GENERATED_HARNESS_SAFETY"
+    }
+  ],
+  "chronologyVerified": true,
+  "strictlyIncreasingCheckedUtc": true,
+  "cloneGatePrecedesGeneratedGuard": true,
+  "cloneGateAndGeneratedGuardHashMatch": true,
+  "postCloneGeneratedGuardPresent": true,
+  "windowsPowerShell": {
+    "major": 5,
+    "minor": 1,
+    "edition": "Desktop"
+  },
+  "generatedPowerShellScript": "work/OPENCV_SCRIBE_R18W2/Build-R18W2Request.ps1",
+  "generatedPowerShellScriptSha256": "9D83D995DD9F372415812A143B2B0CFF7D6A327CEAF4AC68F9A8FB4862CB4D87",
+  "exactGeneratedPreflight": {
+    "checkedUtc": "2026-09-05T17:38:44.0287569Z",
+    "state": "PASS_R18W2_BUILD_PREFLIGHT_LOCAL_ONLY",
+    "requestedLeaf": "identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json",
+    "crosswalkMemberCount": 14,
+    "requestedFileCount": 1,
+    "routePathCount": 37,
+    "maximumEffectiveLength": 164,
+    "maximumComponentLength": 51,
+    "mutationsPerformed": false,
+    "externalRouteContacted": false,
+    "imageFilesOpened": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

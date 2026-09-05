@@ -1,0 +1,67 @@
+{
+  "schema": "argos_r18uq1_maintenance_definition_v1",
+  "createdUtc": "2026-09-05T15:52:00Z",
+  "state": "DRAFT_UNSIGNED_ROUTE_BLOCKED",
+  "requestId": "REQ_U1_20260905T154017612Z_81F8670E855F",
+  "targetRole": "ARGOS",
+  "jobClass": "MAINTENANCE_PATCH",
+  "handler": "SIGNED_REVIEW_ONLY_PATCH_V1",
+  "entryPoint": "payload/E.ps1",
+  "maxResultBytes": 33554432,
+  "files": [
+    {"path":"payload/E.ps1","bytes":4370,"sha256":"B3E43D9CA7745B9E76D0574D4B6703D0D6723659AB029C34F88B09B5AD8D6828"},
+    {"path":"payload/Q.ps1","bytes":28466,"sha256":"B74E4C5FA522C896E08CE15517C94A14C2FFA36802DB8927C1E9F0B81018DF76"},
+    {"path":"payload/I.json","bytes":1431,"sha256":"68947C5434B844A65EF094FBF29E85901ADE66F844254940C9D243FC19F5B84A"}
+  ],
+  "changes": [
+    {
+      "source": "payload/Q.ps1",
+      "destination": "C:\\ProgramData\\ArgosInsiteBridgeRO\\diagnostics\\R18UQ1.ps1",
+      "bytes": 28466,
+      "installedSha256": "B74E4C5FA522C896E08CE15517C94A14C2FFA36802DB8927C1E9F0B81018DF76",
+      "approvedPredecessorSha256": ["B74E4C5FA522C896E08CE15517C94A14C2FFA36802DB8927C1E9F0B81018DF76"],
+      "allowCreate": true
+    }
+  ],
+  "allowedTaskActions": [],
+  "allowedProcessActions": [],
+  "rehearsal": {
+    "required": true,
+    "requiredState": "PASS_R18UQ1_READ_ONLY_QUERY_EXECUTED",
+    "localStaticPreflightState": "PASS_R18UQ1_ENTRYPOINT_PREFLIGHT",
+    "localExactNoArgumentState": "PASS_R18UQ1_EXACT_NO_ARGUMENT_ENTRYPOINT_REHEARSAL"
+  },
+  "mutationClassification": {
+    "mode": "MUTATE",
+    "remedy": "B",
+    "endpointManagedInstalledFileCount": 1,
+    "entryPointWritesPerformed": false,
+    "taskOrProcessActionPerformed": false,
+    "imageBytesRead": false,
+    "jbodContacted": false
+  },
+  "publication": {
+    "publicationAuthorizedByOperator": true,
+    "publicationMechanicallyBlockedByRouteGate": true,
+    "maximumFuturePublicationsAfterAllGates": 1,
+    "retryAuthorized": false,
+    "matchingSignedTerminalResponseRequired": true
+  },
+  "requiredBeforeSignature": {
+    "freshNamespaceGate": "work/OPENCV_SCRIBE_R18UQ1/R18UQ1_NAMESPACE_ABSENCE_GATE.json",
+    "exactQualifiedArgosRouteGate": "UNRESOLVED",
+    "manifestBoundFullRoundTripPathGate": "UNRESOLVED",
+    "exactEndpointQueueSafetyRehearsalGate": "UNRESOLVED",
+    "zeroRecurrencePreaction": "UNRESOLVED"
+  },
+  "authority": {
+    "reviewOnly": true,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "productionRoutingEnabled": false,
+    "credentialContentReturnAuthorized": false,
+    "sourceImageReadAuthorized": false,
+    "jbodAccessAuthorized": false
+  }
+}

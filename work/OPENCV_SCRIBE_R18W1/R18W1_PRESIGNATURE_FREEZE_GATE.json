@@ -1,0 +1,73 @@
+{
+  "schema": "argos_r18w1_presignature_freeze_gate_v1",
+  "createdUtc": "2026-09-05T17:12:00.0000000Z",
+  "state": "PASS_R18W1_PRESIGNATURE_FREEZE",
+  "lifecycle": "FROZEN_UNSIGNED_UNPUBLISHED",
+  "requestId": "REQ_R18W1",
+  "requestPurpose": "BOUNDED_DEVELOPMENT_REFERENCE_ENRICHMENT_SOURCE_ACQUISITION",
+  "frozenInputs": [
+    {"path": "work/OPENCV_SCRIBE_R18UJ3/R18UJ3_LIVE_RECONCILIATION.json", "sha256": "419A6A0172C675F4A8DF42EE5ED152846E690D3A667435A89F91B344AD4A5B64"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_SELECTION.json", "sha256": "6B078984F7BC66770D9855864BD44FC1D50BD67D0E4C7B992B789BFA3A7160C8"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_DATA_PULL_DEFINITION.json", "sha256": "26EE307D838ABC31D832B0C8859797F0C8B0FAE18530DF585AD1F6F9007B2972"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_ROUTE_PINS.json", "sha256": "05AEA97A1321BB4E6256615558BC78746338EE011368E150815157614232D1A0"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/PREACTION_R18W1_LOCAL_PACKAGE_PREPARATION.json", "sha256": "54E59E6D76E1B2683C1713E5D76E2DA20FA6C5C061D73A68AE8281BCFFA503F1"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_CLONE_LITERAL_REMEDIATION.json", "sha256": "9F3391739F435694EEE071F9BA1F3D1DD509838A3454FC28DADC56706C0E12D5"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_CLONE_LITERAL_GATE.json", "sha256": "5E05FC77FC8AD808DD38089F78F131F0F4E12C9DD745F18E6B0D5BC41A3CC3D6"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_HARNESS_GATE.json", "sha256": "9D61E850C0E6A257A73125BD69BDF94ADCA6FB9C9AD02F8480E1B749CC1F8670"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/R18W1_WRAPPER_APPLICABILITY_GATE.json", "sha256": "99D2E03F7B7F39846D6B4C1D322BC9AB3F62A8CFFF04A04BC059DD76EE882352"},
+    {"path": "work/OPENCV_SCRIBE_R18W1/Build-R18W1Request.ps1", "sha256": "02045ADB36F948C0EDB79AA1860D66E7066F45E3504AE26B6EFD4610A4F29030"}
+  ],
+  "preflight": {
+    "state": "PASS_R18W1_BUILD_PREFLIGHT_LOCAL_ONLY",
+    "windowsPowerShellMajor": 5,
+    "windowsPowerShellMinor": 1,
+    "selectedAcquisitionCount": 8,
+    "requestedFileCount": 24,
+    "proposalCount": 8,
+    "imageCount": 16,
+    "maximumFiles": 24,
+    "maximumBytes": 50331648,
+    "routePathCount": 60,
+    "maximumEffectiveLength": 168,
+    "maximumComponentLength": 51,
+    "reservedSuffixCharacters": 32,
+    "plannedPackageMembers": ["PORTAL_REQUEST_MANIFEST.json", "PORTAL_REQUEST_MANIFEST.sig"],
+    "plannedPackageMembershipSha256": "BD698D496C10E1A691DFAF08014474690D6E269968D4ACC9C3BD5C12AB5A9832"
+  },
+  "selectionBoundary": {
+    "firstEightOnly": true,
+    "independentValidationReserved": "62546-481_20260707164232_Slot21",
+    "selectedPostSlot21": "62546-481-POST_20260708155428_Slot21",
+    "localOnlyPackageExcluded": "62629-401_20260902002921_Slot24",
+    "otherSlot24Excluded": false
+  },
+  "deferredFreshNamespaceEvidence": {
+    "relativePath": "identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json",
+    "includedInR18W1": false,
+    "reason": "The exact proven overlay leaf was identified after the R18W1 selection, definition, and preaction were frozen and independently shared by hash. Lifecycle rules prohibit changing R18W1; a fresh successor namespace is required.",
+    "acquisitionKeysMayBeGuessed": false
+  },
+  "route": {
+    "targetRole": "JBOD",
+    "jobClass": "DATA_PULL",
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "installedEndpointWorkerSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "r18gRouteGateSha256": "5F4E1434B142EED5C85517AEFD11614D0D8380424219BB5B6A9BE219403E2646",
+    "c1eQueueSafetyGateSha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+    "c1eCapabilityInventorySha256": "381D3E9C4F17218DF37D8E8CE029853216E9BEA5A2FBDABC6AEB7861A29DC8A2"
+  },
+  "authority": {
+    "publicationAuthorized": false,
+    "maximumPublications": 0,
+    "retryAuthorized": false,
+    "externalRouteContactAuthorizedDuringBuild": false,
+    "sourceMutationAuthorized": false,
+    "imageDecodeAuthorizedDuringBuild": false,
+    "taskProcessOrQueueManagementAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "reviewOnly": true
+  }
+}

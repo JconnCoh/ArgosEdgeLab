@@ -1,0 +1,70 @@
+{
+  "schema": "argos_r18w2_ordered_source_clone_generated_harness_gate_v1",
+  "checkedUtc": "2026-09-05T17:25:19.3701373Z",
+  "state": "PASS_R18W2_SOURCE_AND_GENERATED_HARNESS_SAFETY",
+  "requiredOrder": [
+    "SOURCE_HARNESS_GUARD",
+    "CLONE_LITERAL_GATE",
+    "GENERATED_HARNESS_GUARD_AFTER_CLONE_GATE"
+  ],
+  "orderedEvidence": [
+    {
+      "ordinal": 1,
+      "action": "SOURCE_HARNESS_GUARD",
+      "checkedUtc": "2026-09-05T17:16:59.4126134Z",
+      "path": "work/OPENCV_SCRIBE_R18W1/Build-R18W1Request.ps1",
+      "sha256": "02045ADB36F948C0EDB79AA1860D66E7066F45E3504AE26B6EFD4610A4F29030",
+      "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY"
+    },
+    {
+      "ordinal": 2,
+      "action": "CLONE_LITERAL_GATE",
+      "checkedUtc": "2026-09-05T17:25:10.0750533Z",
+      "path": "work/OPENCV_SCRIBE_R18W2/R18W2_CLONE_LITERAL_GATE.json",
+      "sha256": "5F40D34C3919DFFAFECE152DD7F6F77D7237F5726BDA22ECA361B8055D3B0296",
+      "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION"
+    },
+    {
+      "ordinal": 3,
+      "action": "GENERATED_HARNESS_GUARD_AFTER_CLONE_GATE",
+      "checkedUtc": "2026-09-05T17:25:19.3701373Z",
+      "path": "work/OPENCV_SCRIBE_R18W2/Build-R18W2Request.ps1",
+      "sha256": "1DD1EFB274B3B0E88D5ABE64353288487D42B8A1621AF6E0D19B1BC9B8ED6FFC",
+      "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY"
+    }
+  ],
+  "chronologyVerified": true,
+  "cloneGatePrecedesGeneratedGuard": true,
+  "windowsPowerShell": {
+    "major": 5,
+    "minor": 1,
+    "edition": "Desktop"
+  },
+  "generated": {
+    "path": "work/OPENCV_SCRIBE_R18W2/Build-R18W2Request.ps1",
+    "sha256": "1DD1EFB274B3B0E88D5ABE64353288487D42B8A1621AF6E0D19B1BC9B8ED6FFC",
+    "guardState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "parserErrors": 0,
+    "declaredParameters": ["Preflight", "Build"],
+    "nonMutatingModeDeclared": true,
+    "topLevelMutationCount": 6,
+    "preflightReturnGuardCount": 1,
+    "conditionalCollectionAssignmentCount": 0,
+    "violations": []
+  },
+  "generatedPowerShellScriptSha256": "1DD1EFB274B3B0E88D5ABE64353288487D42B8A1621AF6E0D19B1BC9B8ED6FFC",
+  "exactGeneratedPreflight": {
+    "state": "PASS_R18W2_BUILD_PREFLIGHT_LOCAL_ONLY",
+    "requestedLeaf": "identity/confirmed/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json",
+    "crosswalkMemberCount": 14,
+    "requestedFileCount": 1,
+    "routePathCount": 37,
+    "maximumEffectiveLength": 164,
+    "maximumComponentLength": 51,
+    "mutationsPerformed": false,
+    "externalRouteContacted": false,
+    "imageFilesOpened": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

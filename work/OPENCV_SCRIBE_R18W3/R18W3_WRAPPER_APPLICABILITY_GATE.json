@@ -1,0 +1,23 @@
+{
+  "schema": "argos_r18w3_wrapper_applicability_gate_v1",
+  "checkedUtc": "2026-09-05T17:53:59.5919006Z",
+  "state": "PASS_R18W3_WRAPPER_NOT_APPLICABLE",
+  "powerShellScript": "work/OPENCV_SCRIBE_R18W3/Build-R18W3Request.ps1",
+  "powerShellScriptSha256": "5CEEBC73B97D236B77F5CABA5FB411DBDF9DBC4C93F797E1BAF6EC5ED667457C",
+  "cmdWrapperCreated": false,
+  "invocationManifestRequired": false,
+  "reason": "R18W3 has no operator launcher or CMD wrapper; the exact builder is invoked directly with one scalar -File path and one switch under Windows PowerShell 5.1.",
+  "directInvocation": {
+    "host": "%SystemRoot%/System32/WindowsPowerShell/v1.0/powershell.exe",
+    "noProfile": true,
+    "executionPolicy": "Bypass",
+    "fileArgumentCount": 1,
+    "arrayOrExpressionArguments": false,
+    "commandModeUsed": false,
+    "startProcessUsed": false,
+    "preflightSwitch": "-Preflight",
+    "buildSwitch": "-Build"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
