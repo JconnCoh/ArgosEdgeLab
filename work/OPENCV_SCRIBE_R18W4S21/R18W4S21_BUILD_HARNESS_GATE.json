@@ -1,0 +1,26 @@
+{
+  "schema":"argos_r18w4s21_ordered_source_clone_generated_harness_gate_v1",
+  "checkedUtc":"2026-09-05T22:44:57Z",
+  "state":"PASS_R18W4S21_SOURCE_AND_GENERATED_HARNESS_SAFETY",
+  "requiredOrder":["SOURCE_HARNESS_GUARD","CLONE_LITERAL_GATE","GENERATED_HARNESS_GUARD_AFTER_CLONE_GATE","UNIQUENESS_SCANNER_HARNESS_GUARD","WINDOWS_POWERSHELL_5_1_EXACT_PREFLIGHT","FILE_BACKED_ORDERED_HARNESS_GATE"],
+  "orderedEvidence":[
+    {"ordinal":1,"action":"SOURCE_HARNESS_GUARD","checkedUtc":"2026-09-05T22:32:01.4103722Z","path":"work/OPENCV_SCRIBE_R18W3/Build-R18W3Request.ps1","sha256":"5CEEBC73B97D236B77F5CABA5FB411DBDF9DBC4C93F797E1BAF6EC5ED667457C","state":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","parserErrors":0,"violations":[]},
+    {"ordinal":2,"action":"CLONE_LITERAL_GATE","checkedUtc":"2026-09-05T22:44:51.8976305Z","path":"work/OPENCV_SCRIBE_R18W4S21/R18W4S21_BUILD_CLONE_LITERAL_GATE.json","sha256":"64724398045BA8F7F24FD8C0FD6653414A2FF08B658AB968A5C1F0571E500D8D","state":"PASS_ARGOS_CLONE_LITERAL_REMEDIATION","generatedSha256":"C16EFCBDD75C3BD52FBB6FEF753D74005539412361E0E38CD833FAC2583D81F3"},
+    {"ordinal":3,"action":"GENERATED_HARNESS_GUARD_AFTER_CLONE_GATE","checkedUtc":"2026-09-05T22:44:52.4781851Z","path":"work/OPENCV_SCRIBE_R18W4S21/Build-R18W4S21Request.ps1","sha256":"C16EFCBDD75C3BD52FBB6FEF753D74005539412361E0E38CD833FAC2583D81F3","state":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","parserErrors":0,"violations":[]},
+    {"ordinal":4,"action":"UNIQUENESS_SCANNER_HARNESS_GUARD","checkedUtc":"2026-09-05T22:44:52.6549108Z","path":"work/OPENCV_SCRIBE_R18W4S21/Test-R18W4S21RequestIdUniqueness.ps1","sha256":"21DAD58056AA2AAC3D2210885B551D487172DF8CBFFF7C2D117BB599C3EBF588","state":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","parserErrors":0,"violations":[]},
+    {"ordinal":5,"action":"WINDOWS_POWERSHELL_5_1_EXACT_PREFLIGHT","checkedUtc":"2026-09-05T22:44:56.6134326Z","state":"PASS_R18W4S21_BUILD_PREFLIGHT_LOCAL_ONLY"},
+    {"ordinal":6,"action":"FILE_BACKED_ORDERED_HARNESS_GATE","checkedUtc":"2026-09-05T22:44:57Z","state":"PASS_R18W4S21_SOURCE_AND_GENERATED_HARNESS_SAFETY"}
+  ],
+  "chronologyVerified":true,
+  "strictlyIncreasingCheckedUtc":true,
+  "cloneGatePrecedesGeneratedGuard":true,
+  "cloneGateAndGeneratedGuardHashMatch":true,
+  "postCloneGeneratedGuardPresent":true,
+  "windowsPowerShell":{"major":5,"minor":1,"edition":"Desktop"},
+  "generatedPowerShellScript":"work/OPENCV_SCRIBE_R18W4S21/Build-R18W4S21Request.ps1",
+  "generatedPowerShellScriptSha256":"C16EFCBDD75C3BD52FBB6FEF753D74005539412361E0E38CD833FAC2583D81F3",
+  "uniquenessScannerSha256":"21DAD58056AA2AAC3D2210885B551D487172DF8CBFFF7C2D117BB599C3EBF588",
+  "exactGeneratedPreflight":{"state":"PASS_R18W4S21_BUILD_PREFLIGHT_LOCAL_ONLY","requestedFileCount":2,"bfFileCount":1,"dfFileCount":1,"proposalFileCount":0,"overlayFileCount":0,"routePathCount":40,"finalPartialIncluded":true,"maximumEffectiveLength":198,"maximumComponentLength":66,"mutationsPerformed":false,"externalRouteContacted":false,"imageFilesOpened":false},
+  "reviewOnly":true,
+  "productionRoutingEnabled":false
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R18W4S21_BUILD_FROM_R18W3_GENERATED_HARNESS_REMEDIATION_20260905A",
+  "createdUtc": "2026-09-05T22:40:00Z",
+  "sourceGuard": {
+    "checkedUtc": "2026-09-05T22:32:01.4103722Z",
+    "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "source": "work/OPENCV_SCRIBE_R18W3/Build-R18W3Request.ps1",
+    "sha256": "5CEEBC73B97D236B77F5CABA5FB411DBDF9DBC4C93F797E1BAF6EC5ED667457C"
+  },
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18W3/Build-R18W3Request.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18W4S21/Build-R18W4S21Request.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\R18W3","generatedRoot":"C:\\R18W4S21","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18W3B","generatedRoot":"C:\\R18W4S21B","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18W3R","generatedRoot":"C:\\R18W4S21R","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18W3V","generatedRoot":"C:\\R18W4S21V","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\APR","generatedRoot":"C:\\APR","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    }
+  ]
+}
