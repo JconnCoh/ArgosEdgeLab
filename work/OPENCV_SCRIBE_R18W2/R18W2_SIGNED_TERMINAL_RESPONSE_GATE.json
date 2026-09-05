@@ -1,0 +1,52 @@
+{
+  "schema": "argos_opencv_scribe_r18w2_signed_terminal_response_checkpoint_gate_v1",
+  "createdUtc": "2026-09-05T19:18:30Z",
+  "state": "PASS_R18W2_SIGNED_TERMINAL_RESPONSE_CHECKPOINT_GATE",
+  "disposition": "FROZEN_CURRENT_LANE_CHECKPOINT",
+  "checkpoint": {
+    "path": "work/OPENCV_SCRIBE_R18W2/R18W2_SIGNED_TERMINAL_RESPONSE_CHECKPOINT_20260905.md",
+    "bytes": 3465,
+    "sha256": "34CDFECAE297CE99529C9AF3B069926D8C729AF50DA6FBA19BDE86F782D5B37E"
+  },
+  "manifest": {
+    "path": "work/OPENCV_SCRIBE_R18W2/R18W2_SIGNED_TERMINAL_RESPONSE_MANIFEST.json",
+    "bytes": 2838,
+    "sha256": "5C69FE37C1F6BA8C7578E154B8709DB2D0EECE64AADEAC3D9F0F06C661D1AC34"
+  },
+  "terminalResponse": {
+    "requestId": "REQ_R18W2",
+    "responseId": "R_FADCA24C1D79_20260905191141560_093c0c66",
+    "state": "PASS_DATA_PULL",
+    "signedResponseVerified": true,
+    "sourceZipSha256": "18B4F8EED464DF4D0ADBC1345F7C2AB753B6F9ADDB18538D8955B8A5180F9F8E",
+    "terminalGateSha256": "ECF6DCDEA606573E485D8F392DADB3ACC21DDC02405A5EAB68DB9A0181335E14"
+  },
+  "overlay": {
+    "bytes": 914680,
+    "sha256": "E284BB6549969734A7153AB702E8A125E85B4064DDE36982DD1887D0B19D5CCF",
+    "rows": 814
+  },
+  "crosswalk": {
+    "sha256": "AD4C26F996C38021C5E4BF34FBD666E8F2E7714617029ADCC4041ADB1D249418",
+    "scopeMembers": 14,
+    "resolvedExact": 2,
+    "unmatched": 12,
+    "multiple": 0,
+    "unmatchedOrMultipleRemainHold": true,
+    "identityAccepted": false
+  },
+  "controls": {
+    "requestPublishedExactlyOnce": true,
+    "requestRetried": false,
+    "signatureAndDeclaredHashesVerified": true,
+    "imageBytesRead": false,
+    "taskOrProcessActionPerformed": false,
+    "sourceMutationPerformed": false,
+    "trainingPerformed": false,
+    "xmlProduced": false,
+    "productionRoutingEnabled": false,
+    "r18w3PublicationAuthorized": false
+  },
+  "nextAction": "AWAIT_FRESH_LITERAL_PUBLISH_FOR_REQ_R18W3",
+  "requiredFreshLiteral": "PUBLISH for REQ_R18W3"
+}

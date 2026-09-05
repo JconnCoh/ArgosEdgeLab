@@ -1,0 +1,66 @@
+{
+  "schema": "argos_opencv_scribe_r18w2_signed_terminal_response_manifest_v1",
+  "createdUtc": "2026-09-05T19:18:00Z",
+  "state": "PASS_R18W2_SIGNED_CURRENT_OVERLAY_COLLECTED_WITH_EXACT_CROSSWALK_HOLDS",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "workspace": {
+    "worktree": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv",
+    "branch": "codex/opencv-scribe-deciphering"
+  },
+  "request": {
+    "requestId": "REQ_R18W2",
+    "zipBytes": 1159,
+    "zipSha256": "F1C77DCDC4962FEF7983CC93C9CE01F79C4B9E0CA54ADCEFAD9725AD5EF66D8E",
+    "publishedUtc": "2026-09-05T19:11:57.3083719Z",
+    "publicationGateSha256": "36ED33ED38B4AEA79032A4DDAE5E1CA80277049A3314ED6B99387DF80B5BBE6E",
+    "publicationCount": 1,
+    "retryAuthorized": false
+  },
+  "response": {
+    "responseId": "R_FADCA24C1D79_20260905191141560_093c0c66",
+    "sourceRole": "JBOD",
+    "endpointState": "PASS_DATA_PULL",
+    "zipBytes": 33334,
+    "zipSha256": "18B4F8EED464DF4D0ADBC1345F7C2AB753B6F9ADDB18538D8955B8A5180F9F8E",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "signatureVerified": true,
+    "manifestSha256": "2C05A3206F3A366E04CC45B31667CB0AC296823F7845DB0B16A899CEF896F0F3",
+    "signatureSha256": "CB01DA9649E070F1C52435F9628301AD67E58AC5E539565DB6A3C6626C56E649",
+    "resultSha256": "ACE84EA595DDF6E80C597393B9EC475B29342F6C76E987D3BD3D2494897C2DFD",
+    "payloadSha256": "96DAA8E610D3C6F4707185ADF20D936A803EA84173B141F8FE26012D0572487E",
+    "terminalGateSha256": "ECF6DCDEA606573E485D8F392DADB3ACC21DDC02405A5EAB68DB9A0181335E14"
+  },
+  "overlay": {
+    "path": "work/OPENCV_SCRIBE_R18W2/collected_overlay/ACTIVE_CONFIRMED_SCRIBE_OVERLAY.json",
+    "bytes": 914680,
+    "sha256": "E284BB6549969734A7153AB702E8A125E85B4064DDE36982DD1887D0B19D5CCF",
+    "rows": 814
+  },
+  "crosswalk": {
+    "path": "work/OPENCV_SCRIBE_R18W2/R18W2_EXACT_OVERLAY_CROSSWALK.json",
+    "sha256": "AD4C26F996C38021C5E4BF34FBD666E8F2E7714617029ADCC4041ADB1D249418",
+    "scopeMembers": 14,
+    "resolvedExact": 2,
+    "unmatched": 12,
+    "multiple": 0,
+    "resolved": [
+      {"queryLot":"62625-956","unitContainer":"62625-956-030","scribe":"147JQ113SUB4","acquisitionKey":"62625-956_20260729122701_Slot23"},
+      {"queryLot":"62625-956","unitContainer":"62625-956-050","scribe":"147JQ116SUG7","acquisitionKey":"62625-956_20260729122701_Slot21"}
+    ],
+    "identityAccepted": false
+  },
+  "accessAudit": {
+    "requestRetried": false,
+    "taskOrProcessActionPerformed": false,
+    "sourceMutationPerformed": false,
+    "imageBytesRead": false,
+    "trainingPerformed": false,
+    "xmlProduced": false,
+    "productionRoutingEnabled": false
+  },
+  "authority": {
+    "r18w3PublicationAuthorized": false,
+    "requiredFreshLiteral": "PUBLISH for REQ_R18W3"
+  },
+  "nextAction": "AWAIT_FRESH_LITERAL_PUBLISH_FOR_REQ_R18W3"
+}
