@@ -1,0 +1,19 @@
+{
+  "schema":"argos_opencv_scribe_r18w4s21_slot21_r18z_evaluation_gate_v1",
+  "createdUtc":"2026-09-05T23:25:00Z",
+  "state":"PASS_R18W4S21_SLOT21_R18Z_IMAGE_FIRST_EVALUATION_HELD",
+  "disposition":"DIAGNOSTIC_ONLY",
+  "requestId":"REQ_S21_20260905212322_S9RHWN0X00G4K59QB7Q1120VDR",
+  "responseId":"R_8C756EDA3176_20260905231521702_f4fecab3",
+  "physicalIdentity":"62546-481_20260707164232_Slot21",
+  "truthComparedOnlyAfterSelection":"13HFX135SUE3",
+  "terminalResponseCheckpointGateSha256":"AFE5D75B4ED250C961961A756A52B0BA8D46E50B336E9B11924CBCD9F6E1F335",
+  "evaluator":{"path":"work/OPENCV_SCRIBE_R18W4S21/Evaluate-R18W4S21Slot21.py","bytes":8301,"sha256":"73AD6C88483F4594E92AFBE7126421DF4FC64B7AE5C6F73EE3D6A3F6969F711C","pythonAstParsed":true,"referenceCount":475,"exactLineageFoldCount":49,"currentSlot21MappedToReferenceLineage":false,"oneShotExecuted":true,"reusable":false},
+  "evidence":{"path":"work/OPENCV_SCRIBE_R18W4S21/evidence/R18W4S21_SLOT21_R18Z_EVALUATION.json","bytes":246283,"sha256":"F91C6EC94C111301D4ACF13AEF8E523AB7D5610451D4B65F4D79902EAE392DCC","pixelsDecoded":true,"checksumUsedForImageFirst":false},
+  "channels":[
+    {"channel":"BF","sourceBytes":2298990,"sourceSha256":"96046D91BBD6DF81E678224525560BD9C77C0DC09DD89A25992B07F8D1213B93","imageFirstString":"11HFX135SUE3","imageFirstCorrect":false,"mismatchPositions":[2],"envelopePassed":false,"envelopeDecision":"HOLD_ONE_OR_MORE_SELECTED_GLYPHS_NOT_ENVELOPED","heldPositions":[{"position":2,"diagnosticLabel":"1","decision":"HOLD_ALTERNATIVE_LABEL_NOT_DEEP_INSIDE_ENVELOPE"},{"position":3,"diagnosticLabel":"H","decision":"HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES"},{"position":5,"diagnosticLabel":"X","decision":"HOLD_SELECTED_LABEL_SPARSE"}],"acceptedWrong":false},
+    {"channel":"DF","sourceBytes":1785517,"sourceSha256":"8DFD50AE1E0958CE01D7E32E0936978F157C2FECD0CB910BCC27DF9F7CE63CB8","imageFirstString":"8P2F0135SUE3","imageFirstCorrect":false,"mismatchPositions":[1,2,3,5],"envelopePassed":false,"envelopeDecision":"HOLD_ONE_OR_MORE_SELECTED_GLYPHS_NOT_ENVELOPED","heldPositionCount":12,"heldPositions":[{"position":1,"diagnosticLabel":"8","decision":"HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES"},{"position":2,"diagnosticLabel":"P","decision":"HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES"},{"position":3,"diagnosticLabel":"2","decision":"HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES"},{"position":4,"diagnosticLabel":"F","decision":"HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES"},{"position":5,"diagnosticLabel":"0","decision":"HOLD_NEAREST_RIVAL_NOT_RECIPROCALLY_SEPARATED"},{"position":6,"diagnosticLabel":"1","decision":"HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES"},{"position":7,"diagnosticLabel":"3","decision":"HOLD_NEAREST_RIVAL_NOT_RECIPROCALLY_SEPARATED"},{"position":8,"diagnosticLabel":"5","decision":"HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES"},{"position":9,"diagnosticLabel":"S","decision":"HOLD_NEAREST_RIVAL_NOT_RECIPROCALLY_SEPARATED"},{"position":10,"diagnosticLabel":"U","decision":"HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES"},{"position":11,"diagnosticLabel":"E","decision":"HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES"},{"position":12,"diagnosticLabel":"3","decision":"HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES"}],"acceptedWrong":false}
+  ],
+  "projectionCorrection":{"affectedField":"channels[].heldPositions","v1TopLevelProjectionIncorrectlyRead":"ocrEnvelope.positions","authoritativeField":"channels[].ocrEnvelope.heldPositions","canonicalEvaluationBytesChanged":false,"evaluationRerun":false,"effectOnImageFirstOrEnvelopeDecision":false},
+  "conclusions":{"bfPosition2CorrectedFromPriorOneToTruthThree":false,"dfPosition12CorrectedFromPriorFourToTruthThree":true,"expectedSparseXPosition5HoldObservedInBf":true,"anyChannelAccepted":false,"anyWrongAccepted":false,"identityAccepted":false,"referenceAdmissionPerformed":false,"trainingEligible":false,"xmlEligible":false,"productionEligible":false,"productionRoutingEnabled":false}
+}
