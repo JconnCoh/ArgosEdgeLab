@@ -1,0 +1,68 @@
+{
+  "schema": "argos_opencv_scribe_r18t1_package_only_observe_capability_gap_gate_v1",
+  "createdUtc": "2026-09-05T12:26:16.0940284Z",
+  "state": "BLOCKED_NO_QUALIFIED_TEXT_ONLY_ROUTE_TO_R18T_OUTPUT_ROOT",
+  "requestId": "REQ_R18T1",
+  "outputRoot": "D:/A2/o/ocv/R18T1",
+  "signedLaunchCheckpointGate": {
+    "path": "work/OPENCV_SCRIBE_R18T/R18T1_SIGNED_LAUNCH_RESPONSE_CHECKPOINT_GATE.json",
+    "sha256": "DFE9E2FC8B428245AED0BE9CD123E74AD71EFA8442F02FFECA4AF99EA17D73D8",
+    "launchState": "PASS_R18T_LIVE_ONLY_WORKER_STARTED",
+    "configuredCaseCount": 20,
+    "signedTerminalPerCaseOutcomeCount": 0
+  },
+  "qualifiedEndpointEvidence": {
+    "entrypointTestGate": {
+      "path": "work/OPENCV_OLS3/OLS3_ENTRYPOINT_TEST_GATE.json",
+      "sha256": "4BECCB3A5C1A7EF5A3E508CE11CA41854EEC77C06181EAB0000876AE750AF95B",
+      "state": "PASS_OLS3_ENTRYPOINT_TEST_GATE",
+      "unapprovedRootRefusalPassed": true
+    },
+    "completeRouteGate": {
+      "path": "work/OPENCV_OLS3/OLS3_COMPLETE_ROUTE_GATE.json",
+      "sha256": "932C792DA3095FA43FF1749775D7F4BD3473FA6043ABE86C449FBA16A3914F3A",
+      "state": "PASS_OLS3_COMPLETE_ROUTE_GATE"
+    },
+    "statusCapabilityInventory": {
+      "path": "work/OPENCV_BACKSIDE_NOTCH_STATUS_O3B5/STATUS_CAPABILITY_INVENTORY.json",
+      "sha256": "FA0FCB880AC845FBE7D674C4B039F75543A467E25B0D228E6ADB8324D480CAB9",
+      "requestSpecificJsonSelector": false,
+      "recordedApprovedDataRoot": "JBOD_KLARF_EXPORT"
+    }
+  },
+  "capabilityAssessment": {
+    "statusCanSelectR18TJsonPaths": false,
+    "dataPullHasFrozenApprovedMappingForR18TOutputRoot": false,
+    "safeChildTraversalEscapeAllowed": false,
+    "qualifiedRequestCanBeExactlyPreactionGated": false
+  },
+  "actionAudit": {
+    "observeRequestBuilt": false,
+    "observeRequestSigned": false,
+    "observePublicationCount": 0,
+    "r18t1Republished": false,
+    "executionRetried": false,
+    "maintenancePatchUsed": false,
+    "guiOrRdpAccessCount": 0,
+    "directJbodAccessCount": 0,
+    "taskOrProcessStateReadCount": 0,
+    "sourceImageAccessCount": 0,
+    "cropOrOverlayAccessCount": 0,
+    "imageMemberBodyAccessCount": 0
+  },
+  "signedEvidenceOutcome": {
+    "state": "PENDING_UNPROVEN",
+    "configuredCaseCount": 20,
+    "signedTerminalPerCaseOutcomeCount": 0,
+    "passCount": null,
+    "holdCount": null,
+    "failureCount": null
+  },
+  "holdsPreserved": 6,
+  "slot24PackageExcluded": true,
+  "automaticRetryAllowed": false,
+  "identityAccepted": false,
+  "r18sAuthorized": false,
+  "productionRoutingEnabled": false,
+  "nextAction": "STOP_UNTIL_AN_ALREADY_INSTALLED_INDEPENDENTLY_QUALIFIED_READ_ONLY_R18T_OUTPUT_MAPPING_OR_SELECTOR_IS_PROVIDED"
+}
