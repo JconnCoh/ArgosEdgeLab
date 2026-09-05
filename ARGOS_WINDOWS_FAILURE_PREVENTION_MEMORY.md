@@ -10831,3 +10831,62 @@ than rerunning it.
   create a fresh request ID and fresh staging/verification/output roots,
   regenerate every dependent hash and gate, and sign only the successor after
   the pre-signature packaged-entrypoint rehearsal passes.
+
+## 2026-09-04 — An asynchronous worker must persist its own terminal failure
+
+- Failure signature: signed `REQ_R18R2` launch evidence proved that PID 37456
+  started and remained alive through the launcher's two-second confirmation,
+  but the process later exited while the exact output root remained
+  `LAUNCH_ONLY`: no `INVENTORY.json`, `RUNNING.json`, case directory, result,
+  `COMPLETE.json`, or worker-owned failure record existed.
+- Cause: the launcher redirected the asynchronous Python worker's stdout and
+  stderr into anonymous pipes, never drained or persisted either stream, and
+  returned before the worker's terminal state. The worker had no top-level
+  exception boundary that could commit its own compact failure record. An
+  exception before inventory creation therefore became unrecoverable after
+  the launcher process exited.
+- Mandatory preflight: every background worker must own a top-level exception
+  boundary and atomically commit a compact terminal failure record containing
+  exception class, bounded detail, stage, exit code, and frozen dependency
+  hashes. Redirect stdout/stderr only to create-new files that remain readable
+  after launcher exit, or actively drain both streams for the worker lifetime.
+  Rehearse an injected pre-inventory exception from the exact packaged bytes
+  and require terminal failure evidence plus no false `PASS` completion.
+- Recovery: preserve R18R2 as terminal failed, unpublished-successor-blocking,
+  and no-retry evidence. Do not infer the lost exception or rerun its namespace.
+  Use a fresh review-only namespace with durable worker failure capture before
+  any new corpus execution; a full-corpus successor remains blocked until its
+  bounded predecessor gate completes cleanly.
+
+## 2026-09-04 — A configured review cohort must be reconciled to the live input root before launch
+
+- Failure signature: `REQ_R18R2` started its signed review-only worker, which
+  exited before `INVENTORY.json` because the 21-case configuration named
+  `62629-401_20260902002921_Slot24` while that exact identity directory was
+  absent from the configured JBOD proposal root. The other 20 identities had
+  both exact nested `scribe\BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png` and
+  `scribe\DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png` leaves.
+- Cause: the packaged launcher verified the proposal root, payload, cohort
+  bytes, and cohort cardinality, but never reconciled every configuration-
+  selected identity and required nested input leaf against the live proposal
+  root before creating the output root and starting the background worker.
+  Slot24 was a real-image local regression fixture under
+  `C:\R18J_CORPUS_FIXTURE\proposals`, sourced from `C:\R18IR8`, whose identity
+  and hashes were copied into the JBOD cohort without proving that the same
+  identity existed under the JBOD proposal root. The runner performed that
+  reconciliation only after startup and raised before writing any inventory
+  or terminal status.
+- Mandatory preflight: from the configuration alone, mechanically enumerate
+  every required identity-relative input leaf and require an exact one-to-one
+  live match before output-root creation or process start. Record absent,
+  extra, duplicate, unsafe, and mismatched rows explicitly. The implementation
+  must be generic and must reject any code-level lot, slot, product, identity,
+  truth, or expected-count literal. Rehearse one missing configured identity
+  and require rejection before worker start, plus a worker-owned compact
+  terminal failure if an equivalent drift occurs after launch.
+- Recovery: withdraw R18R2 with no retry and do not infer an OCR outcome. Do
+  not copy or package the local Slot24 fixture into JBOD. Keep its exact
+  real-image result as package-excluded local regression evidence, and use a
+  fresh bounded JBOD cohort containing only preflight-proven live crop pairs.
+  Full-corpus development remains blocked until that bounded live regression
+  and the separate frozen Slot24 gate are both clean.

@@ -1,0 +1,113 @@
+{
+  "schema": "argos_opencv_scribe_r18r2_failed_run_review_gate_v1",
+  "createdUtc": "2026-09-05T00:31:33.3123656Z",
+  "state": "HOLD_R18R2_WORKER_EXITED_BEFORE_INVENTORY_WITHOUT_TERMINAL_EVIDENCE",
+  "disposition": "WITHDRAWN",
+  "requestId": "REQ_R18R2",
+  "publication": {
+    "publishedExactlyOnce": true,
+    "requestZipSha256": "E541EB7FCCD19A04BFE401D6FCFB70B7976C0F47E9F4F1AD8E1FCC1626EEF300",
+    "retryAuthorized": false
+  },
+  "signedLaunch": {
+    "responseZipSha256": "D310854F22538041C1E8D1318A70F2EA7B54D02C912000124A15C4FD83B4B6A5",
+    "signatureVerified": true,
+    "computerName": "A1025645101",
+    "processId": 37456,
+    "processStartUtc": "2026-09-04T23:41:03.1289081Z",
+    "outputRoot": "D:/A2/o/ocv/R18R2"
+  },
+  "terminalObservation": {
+    "observedUtc": "2026-09-05T00:24:31.4486211Z",
+    "operatorAuthorizedRustDeskRetry": true,
+    "progressCommandSha256": "C530C1EF72A011A316FBC84A0D027FCAF8EC223137B949C82241EE2C7AC6CFDC",
+    "progressNonce": "d34edb36ea95459db0bbbf9210cf9c64",
+    "state": "LAUNCH_ONLY",
+    "inventoryPresent": false,
+    "runningPresent": false,
+    "completePresent": false,
+    "caseDirectoryCount": 0,
+    "resultCount": 0,
+    "launchedProcessPresent": false,
+    "processPresenceNonce": "0cef4cebabe246a6b90946f637d8d427",
+    "workerFailureRecordPresent": false
+  },
+  "installedStateObservation": {
+    "checkedUtc": "2026-09-05T00:28:22.2301449Z",
+    "commandSha256": "09D6AB09EC45F64A5C5D6906D69E90BF27F2AF7877FCF3E2A95700FC16CDBFE7",
+    "nonce": "29653858338e40ffb373732672d916b9",
+    "runtimeConfigurationSha256": "CA7436B5C68043922698B18BFA8EE5CD378074119F658597871296B7697889E2",
+    "runtimeConfigurationBytes": 11803,
+    "reviewCaseCount": 21,
+    "runnerSha256": "B826767EA21BB148DD30A719595B23DD818FD9CFC08B347FEAFD9FD4959F4E3C",
+    "providerSha256": "51C95B3279D253EF717F663F3860CC6B4CA38517706E08E9FE2302BE02CD2BB5",
+    "envelopeWorkerSha256": "5B6AA224E844FCEA22DEC6A9D10C863437F039CA73EC258C263DF539905791D0",
+    "frozenHashesMatched": true,
+    "runtimeConfigurationPresent": true
+  },
+  "boundedPrerequisiteObservation": {
+    "commandSha256": "2CDF12936CA383DF3915CA023709CFD5AA15504C9B2A8BE6846ADC6750AAAA0E",
+    "nonce": "f4dd03964fd446978c0857efa8f5f365",
+    "nonceBoundResultReturned": true,
+    "timedOutBeforeOperatorSubmittedPastedCommand": true,
+    "diagnosticValidity": "INVALID_FOR_CROP_PRESENCE",
+    "invalidReason": "The observer omitted the required nested scribe directory from each BF/DF path.",
+    "mutationsPerformed": false
+  },
+  "correctedStartupPrerequisiteObservation": {
+    "checkedUtc": "2026-09-05T00:34:46.5990559Z",
+    "commandSha256": "E5A81C5FA281752AAD9742FC10A9F3A085C6E630D34301CD52AF97F86722DEB1",
+    "nonce": "7029c19b43094b55b6cdd95f66573742",
+    "reviewCaseCount": 21,
+    "missingCaseCount": 1,
+    "missingPhysicalIdentity": "62629-401_20260902002921_Slot24",
+    "missingIdentityDirectory": true,
+    "otherCasesWithExactNestedPairCount": 20,
+    "duplicateConfiguredSourcePairCount": 0,
+    "baseReferenceManifestPresent": true,
+    "supplementalReferenceManifestPresent": true,
+    "sourceImageBytesRead": false,
+    "mutationsPerformed": false
+  },
+  "slot24ConfigurationProvenance": {
+    "liveJbodProposalIdentityPresent": false,
+    "localFixtureWrapperRoot": "C:/R18J_CORPUS_FIXTURE/proposals",
+    "localFixtureSourcePath": "C:/R18IR8/BF_BRIGHT_BEST_SOURCE_WINDOW.png",
+    "bfSha256": "F67972F31B30C9BE42615DF7FBDC0E64D642F89860A38F4D8172365C7C261201",
+    "dfSha256": "2D4B7AC5861BE87B2876842C3010B15E268DC7150FFAF84B290EF01E9BFC1386",
+    "testFixturePackagedOrCopiedToJbod": false,
+    "failure": "Local fixture identity and hashes were admitted to the JBOD cohort without a live-root existence gate."
+  },
+  "failureClassification": {
+    "class": "CONFIGURED_REVIEW_CASE_ABSENT_AND_ASYNCHRONOUS_WORKER_TERMINAL_EVIDENCE_LOSS",
+    "scientificOcrOutcomeAvailable": false,
+    "packageOrRuntimeHashDriftObserved": false,
+    "mechanicallyImpliedPythonException": "Configured review-case identities are absent: ['62629-401_20260902002921_Slot24']",
+    "capturedWorkerStderrAvailable": false,
+    "cause": "The frozen runner requires every configured identity to exist before inventory creation, but Slot24 was absent from the live proposal root. The launcher did not reconcile configured inputs before worker start, redirected asynchronous stdout/stderr to anonymous pipes, did not drain or persist them, and the worker had no top-level terminal-failure writer."
+  },
+  "requiredPrevention": {
+    "genericConfigurationToLiveInputReconciliationBeforeWorkerStart": true,
+    "hardCodedLotSlotProductIdentityTruthOrCountForbidden": true,
+    "packageExcludedLocalFixtureEvidenceRequired": true,
+    "localFixtureTransferToJbodForbidden": true,
+    "durableStdoutStderr": true,
+    "workerOwnedTopLevelFailureRecord": true,
+    "injectedPreInventoryFailureRehearsal": true,
+    "falsePassForbidden": true,
+    "freshNamespaceRequired": true
+  },
+  "authority": {
+    "fullCorpusDevelopmentAllowedByThisGate": false,
+    "fullCorpusPublicationAllowedByThisGate": false,
+    "automaticRetryAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "automaticReferenceAdmissionAuthorized": false,
+    "trainingAuthorized": false,
+    "activationAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "reviewOnly": true
+  },
+  "nextAction": "Do not retry R18R2 and do not build R18S. If authorized, create a fresh bounded review-only namespace containing only preflight-proven live JBOD crop pairs, preserve Slot24 solely as package-excluded frozen local real-image regression evidence, and add generic prelaunch input reconciliation plus durable asynchronous-worker terminal evidence. Require both gates clean before reconsidering full-corpus development."
+}

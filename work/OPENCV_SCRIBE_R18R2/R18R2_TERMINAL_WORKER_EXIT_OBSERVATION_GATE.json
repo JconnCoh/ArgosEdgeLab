@@ -1,0 +1,37 @@
+{
+  "schema": "argos_opencv_scribe_r18r2_terminal_worker_exit_observation_v1",
+  "observedUtc": "2026-09-05T00:24:31.4486211Z",
+  "state": "HOLD_R18R2_WORKER_EXITED_BEFORE_INVENTORY",
+  "disposition": "PENDING_GATE",
+  "requestId": "REQ_R18R2",
+  "outputRoot": "D:/A2/o/ocv/R18R2",
+  "operatorAuthorizedRustDeskRetry": true,
+  "transportState": "OBSERVED_NO_MATCHING_ARGOS_FORWARD",
+  "windowInventoryState": "PASS_EXACT_JBOD_DIRECT_WINDOW_INVENTORY",
+  "hostnameProbeState": "PASS_EXACT_JBOD_DIRECT_CONTROL_PROBE",
+  "computerName": "A1025645101",
+  "progressObservation": {
+    "nonce": "d34edb36ea95459db0bbbf9210cf9c64",
+    "commandSha256": "C530C1EF72A011A316FBC84A0D027FCAF8EC223137B949C82241EE2C7AC6CFDC",
+    "remoteState": "PASS",
+    "state": "LAUNCH_ONLY",
+    "runningPresent": false,
+    "completePresent": false,
+    "caseDirectoryCount": 0,
+    "resultCount": 0
+  },
+  "launchedWorker": {
+    "processId": 37456,
+    "startedUtc": "2026-09-04T23:41:03.1289081Z",
+    "presentAtTerminalObservation": false,
+    "presenceObservationNonce": "0cef4cebabe246a6b90946f637d8d427"
+  },
+  "conclusion": "The owned R18R2 worker exited after signed launch confirmation and before writing INVENTORY.json, RUNNING.json, any case directory, or COMPLETE.json.",
+  "fullCorpusSuccessConditionMet": false,
+  "automaticRetryAuthorized": false,
+  "sourceImagesReadByObservation": false,
+  "taskOrProcessMutationPerformed": false,
+  "queueMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
