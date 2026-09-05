@@ -15,7 +15,7 @@ The installed qualified read-only capability evidence does not establish a safe 
 
 - `STATUS` reads only the endpoint configuration's fixed `status.jsonFiles` and fixed log paths. A request cannot select an R18T JSON path.
 - `DATA_PULL` accepts relative leaf paths only under a named entry in the endpoint configuration's `approvedDataRoots` and refuses an unconfigured root before reading it.
-- `STATUS_CAPABILITY_INVENTORY.json` records `requestSpecificJsonSelector` as a limitation and records the only exercised approved data root as `JBOD_KLARF_EXPORT`.
+- `STATUS_CAPABILITY_INVENTORY.json` records `requestSpecificJsonSelector` as a limitation. The preserved qualified STATUS and DATA_PULL definitions exercise only `JBOD_KLARF_EXPORT`.
 - The preserved live endpoint-config evidence file named by prior gates is not present in this dedicated worktree; only its recorded hash is retained. No frozen record establishes `D:\A2\o\ocv\R18T1` (or `D:\A2\o`) as an approved data root or fixed STATUS JSON target.
 - Path traversal from `JBOD_KLARF_EXPORT` is prohibited by the qualified worker's safe-child check and is not an acceptable substitute.
 
