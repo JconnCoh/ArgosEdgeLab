@@ -1,0 +1,60 @@
+{
+  "schema": "argos_opencv_scribe_r18t1_operator_supplied_unsigned_result_candidate_gate_v1",
+  "createdUtc": "2026-09-05T12:33:17.4741946Z",
+  "state": "BLOCKED_UNSIGNED_R18T1_RESULT_CANDIDATE",
+  "candidate": {
+    "path": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs\\ProjectPortalRO\\responses\\R18T1.zip",
+    "bytes": 116912,
+    "sha256": "B87C8E0A4DAF9E106C60C21FC5726DFE6671D28F7E321B3347E90C3DADC7F945",
+    "centralDirectoryEntryCount": 48,
+    "directoryEntryCount": 22,
+    "fileEntryCount": 26,
+    "caseResultNameCount": 20,
+    "completeMemberNamePresent": true,
+    "portalResponseManifestPresent": false,
+    "portalResponseSignaturePresent": false
+  },
+  "comparisonToFrozenLaunchResponse": {
+    "sameArtifact": false,
+    "frozenLaunchResponseBytes": 3299,
+    "frozenLaunchResponseSha256": "E642397BB1BA3DBD39E8B15248D8E5CB85E2239DC80796ECC06EEBC2EC909AF6"
+  },
+  "authentication": {
+    "expectedRequestId": "REQ_R18T1",
+    "expectedSignerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "requestIdVerified": false,
+    "signerVerified": false,
+    "rsaSha256Pkcs1Verified": false,
+    "declaredMemberSetVerified": false,
+    "declaredHashesVerified": false
+  },
+  "accessAudit": {
+    "wholeZipHashed": true,
+    "centralDirectoryInspected": true,
+    "memberBodiesOpened": 0,
+    "imageMemberBodiesOpened": 0,
+    "candidateCopied": false,
+    "candidateExtracted": false,
+    "publicationCount": 0,
+    "executionRetryCount": 0,
+    "guiOrRdpAccessCount": 0,
+    "directJbodAccessCount": 0,
+    "taskOrProcessAccessCount": 0,
+    "sourceImageAccessCount": 0
+  },
+  "signedEvidenceOutcome": {
+    "state": "PENDING_UNPROVEN",
+    "configuredCaseCount": 20,
+    "authenticatedTerminalPerCaseOutcomeCount": 0,
+    "passCount": null,
+    "holdCount": null,
+    "failureCount": null
+  },
+  "holdsPreserved": 6,
+  "slot24PackageExcluded": true,
+  "automaticRetryAllowed": false,
+  "identityAccepted": false,
+  "r18sAuthorized": false,
+  "productionRoutingEnabled": false,
+  "nextAction": "REQUIRE_SIGNED_PORTAL_RESPONSE_FOR_REQ_R18T1_BEFORE_READING_RESULT_MEMBER_BODIES"
+}
