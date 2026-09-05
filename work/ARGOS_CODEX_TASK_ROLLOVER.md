@@ -1,6 +1,6 @@
 # Argos automatic Codex task rollover
 
-Revision: `ARGOS_CODEX_TASK_ROLLOVER_V1_20260824`
+Revision: `ARGOS_CODEX_TASK_ROLLOVER_V2_20260904`
 
 Disposition: `APPROVED_BASELINE`
 
@@ -23,27 +23,55 @@ commit. That baseline survives commits made inside the task. All untracked
 paths count as changed files. Only known source-text extensions are opened to
 count untracked lines; unknown and binary files are never opened by the guard.
 
+## Checkpoint-before-rollover contract
+
+Task creation is prohibited until a complete immutable checkpoint, machine
+companion, and PASS gate are written, hashed, committed, pushed, and verified
+on a clean matching local/origin branch tip. The handoff set must carry every
+decision and exact data location needed to continue without chat reconstruction,
+including frozen artifact hashes, authority, holds, unresolved gates, signed
+request/response and external state, withdrawals/no-retry rules, next action,
+prohibitions, and a hashed required-read order. The checkpoint must name the
+actual active worktree and branch; a hard-coded historical branch or unrelated
+global continuity checkpoint is not authority for an isolated lane.
+
 ## Automatic safe-boundary sequence
 
 When the hook reports `ARGOS_AUTOMATIC_ROLLOVER_REQUIRED`:
 
 1. Finish only the current atomic operation. Do not start a new external
    mutation merely to make the rollover look complete.
-2. Record the real state in a current file-backed checkpoint. A pending signed
-   request may remain pending and transfer unchanged to the fresh task.
+2. Record the real state in the complete checkpoint/companion/gate set above.
+   A pending signed request may remain pending and transfer unchanged.
 3. Update continuity, active state, project memory, and the revision ledger
    when the completed work constitutes a project milestone.
 4. Run project continuity and metadata-only session safety. Run the health
    probe when the session-size contract requires it.
 5. Commit and push all authorized task work, fetch `origin`, and require the
-   local and remote `codex/fiducial-opencv-d-drive` tips to match with a clean
+   checkpoint's exact local and origin branch tips to match with a clean
    worktree.
-6. Create one fresh Codex task in this exact Desktop project. Its prompt must
-   contain only the checkpoint path and hash, continuity path, exact branch,
-   preserved authority/holds, and next action. Never fork or attach the old
-   transcript.
-7. Record the new task ID with the hook's `--complete-handoff` command. The old
-   task may then end.
+6. Create one fresh Codex task from the exact checkpoint, companion, and gate
+   paths/hashes. Never fork or attach the old transcript.
+7. Keep the predecessor active. Require the successor's first turn to be a
+   zero-mutation audit that independently verifies every handoff hash and the
+   exact worktree/branch/HEAD/origin/clean state, then restates the decisions,
+   locations, authority, holds, prohibitions, and next action.
+8. Inspect the actual successor response and recheck the shared worktree. If it
+   diverged, mutated, omitted context, or followed an unrelated continuity
+   pointer, pause it and supersede the deficient handoff; do not end the
+   predecessor.
+9. Only after exact no-regression acceptance may the predecessor record the new
+   task ID with `--complete-handoff` and end.
+
+The currently qualified hook is only a threshold and predecessor-stop guard;
+its task-ID record does not itself prove successor acceptance. Until a tested
+two-phase hook is separately qualified, the predecessor must enforce steps
+7-9 directly and must not call `--complete-handoff` early.
+
+The machine policy's legacy `projectRoot` and `requiredBranch` fields serve
+only the present single-phase hook. They are not isolated-lane handoff
+authority, and the hook does not guard a saved-CWD task that operates in a
+separate dedicated worktree; the frozen checkpoint controls that boundary.
 
 The project hook is intentionally not a scheduled automation, heartbeat, or
 cron job. It checks at task start and before a turn stops, so it adds no delay

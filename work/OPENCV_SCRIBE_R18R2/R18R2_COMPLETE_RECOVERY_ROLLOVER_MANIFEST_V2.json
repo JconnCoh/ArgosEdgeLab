@@ -1,0 +1,519 @@
+{
+  "schema": "argos_opencv_scribe_r18r2_complete_recovery_rollover_manifest_v2",
+  "createdLocal": "2026-09-04",
+  "state": "PASS_COMPLETE_R18R2_FAILURE_RECOVERY_CONTEXT_SUPERSEDING_FROZEN",
+  "disposition": "PENDING_GATE",
+  "sourceTask": {
+    "threadId": "01a06c5f-6e03-7e01-b6f0-e4486a98eebc",
+    "taskStartCommit": "8368e138e8654098c3aeb39fe33af8ec14876b3d",
+    "checkpointParentCommit": "0b3d5c58a1b6890ff39b890605c4b586d65c5dc8",
+    "handoffCommitRule": "The exact commit containing this manifest, its companion checkpoint, and validation gate is supplied after commit/push and must equal local HEAD and origin/codex/opencv-scribe-deciphering before successor audit.",
+    "cumulativeChangedLinesAtRolloverDetection": 18540,
+    "cumulativeChangedFilesAtRolloverDetection": 152,
+    "rolloverRequired": true,
+    "rolloverReason": [
+      "CHANGED_LINES_THRESHOLD",
+      "CHANGED_FILES_THRESHOLD"
+    ]
+  },
+  "workspace": {
+    "onlyAuthorizedWorktree": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv",
+    "branch": "codex/opencv-scribe-deciphering",
+    "savedTaskCwdIsAuthority": false,
+    "requiredFirstAction": "Set-Location to onlyAuthorizedWorktree before every filesystem or Git read, then verify branch, clean state, local HEAD, and origin branch tip against the exact handoff commit.",
+    "forbiddenRoots": [
+      "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab",
+      "C:\\Users\\joshua.conn\\.codex\\worktrees\\c290\\ArgosEdgeLab",
+      "C:\\Users\\joshua.conn\\.codex\\worktrees\\ea39\\ArgosEdgeLab"
+    ],
+    "forbiddenGitActions": [
+      "merge",
+      "rebase",
+      "reset",
+      "checkout",
+      "branch switch"
+    ],
+    "globalContinuityCaveat": "The global continuity pointer names the unrelated targeted-backside phase. Read it only for global governance; do not follow or modify its backside activePhase, currentPhaseCheckpoint, or nextAction. This manifest and its companion checkpoint are authoritative for the isolated scribe lane."
+  },
+  "rolloverGovernance": {
+    "operatorRule": "No rollover before a complete immutable checkpoint, companion, and PASS gate; the predecessor must inspect the successor's actual read-only audit and verify no mutation or regression before yielding.",
+    "agentsPath": "AGENTS.md",
+    "agentsSha256": "9B8F686F00A0E0EC83034C3A61313FFC909EAD4168168C6637DAA64E8F22738A",
+    "policyPath": "work/ARGOS_CODEX_TASK_ROLLOVER.md",
+    "policySha256": "B9F288027C05A501213D34077AC26830CBFF5D20ED2936F8C1D5060B6AF2DCAC",
+    "machinePolicyPath": "work/ARGOS_CODEX_TASK_ROLLOVER.json",
+    "machinePolicySha256": "792524340D30A91BD582D1DD668A622CE2580B7C1BCE75A292D13F84416F7BDB",
+    "currentSinglePhaseHookProvesSuccessorAcceptance": false,
+    "manualPredecessorVerificationRequired": true,
+    "twoPhaseHookQualificationDeferred": true,
+    "predecessorMustRemainActiveUntilAuditAccepted": true,
+    "legacyProjectRootAndRequiredBranchAreIsolatedLaneAuthority": false,
+    "currentHookGuardsSavedCwdTaskUsingDedicatedScribeWorktree": false,
+    "checkpointControlsIsolatedLaneWorktreeAndBranch": true
+  },
+  "decisions": [
+    "R18N is published once and non-retry. Its whole-wafer crop search produced operator-observed bad crops and was stopped by the operator; it is not a scientific or packaging parent.",
+    "R18O2 is a published once, operator-stopped existing-crop diagnostic. Partial output may remain evidence, but R18O2 completion is not claimed and it is not a successor parent.",
+    "R18P1 completed its exact 20-case reference-isolated crop cohort. Eighteen image-first passes and two intended ambiguity holds completed with zero execution errors, but Slot22 K was read as R, so full-corpus work remained blocked.",
+    "R18Q added generic label-agnostic strong run-structure arbitration and passed its local gates without hard-coded K/R behavior, but exact Slot25 whole-crop replay was still pending.",
+    "R18R resolved both the general K/R defect and Slot24 reciprocal ambiguity from image evidence only. The frozen local gate preserves all visible, blank, displaced-scribe, checksum, reference-isolation, and no-hardcode invariants.",
+    "Signed local R18R1 is withdrawn and unpublished because a stale internal payload-manifest hash pin failed exact packaged-entrypoint preflight. It is no-retry and not a parent.",
+    "Published R18R2 launched the exact frozen worker but failed before inventory because its 21-case configuration included one local-only Slot24 fixture absent from the live JBOD proposal root. It produced no OCR outcome and must not be retried.",
+    "The fresh bounded successor is R18T / REQ_R18T1. R18S remains reserved and blocked for the later full existing-crop corpus.",
+    "R18T uses the exact frozen ordered 20-case R18P cohort, mechanically proven equal to the live subset of R18R2. Slot24 remains package-excluded local real-image regression evidence and is never copied to JBOD.",
+    "R18T changes only the execution envelope: generic double live path/hash reconciliation before any write or process, dynamic cardinalities, durable worker logs, and worker-owned atomic terminal failure. OCR provider, evaluator, crop, and reference bytes remain frozen.",
+    "No executable source may contain a concrete lot, slot, product, physical identity, expected truth, fixture value, or fixed expected cohort count. Enumerated identities and optional truths may exist only in the frozen cohort data file and cannot influence image-first selection.",
+    "A clean R18T live completion plus the unchanged package-excluded Slot24 gate is required before R18S may be built. R18S is never automatically published."
+  ],
+  "dataLocations": {
+    "installedProposalRoot": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+    "requiredNestedCropLeaves": [
+      "scribe\\BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "scribe\\DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png"
+    ],
+    "localSlot24FixtureWrapperRoot": "C:\\R18J_CORPUS_FIXTURE\\proposals",
+    "localSlot24SourcePath": "C:\\R18IR8\\BF_BRIGHT_BEST_SOURCE_WINDOW.png",
+    "localSlot24BfSha256": "F67972F31B30C9BE42615DF7FBDC0E64D642F89860A38F4D8172365C7C261201",
+    "localSlot24DfSha256": "2D4B7AC5861BE87B2876842C3010B15E268DC7150FFAF84B290EF01E9BFC1386",
+    "r18nWorkRoot": "D:\\A2\\w\\ocv\\R18N1",
+    "r18nOutputRoot": "D:\\A2\\o\\ocv\\R18N1",
+    "r18o2WorkRoot": "D:\\A2\\w\\ocv\\R18O2",
+    "r18o2OutputRoot": "D:\\A2\\o\\ocv\\R18O2",
+    "r18p1WorkRoot": "D:\\A2\\w\\ocv\\R18P1",
+    "r18p1OutputRoot": "D:\\A2\\o\\ocv\\R18P1",
+    "r18r2WorkRoot": "D:\\A2\\w\\ocv\\R18R2",
+    "r18r2OutputRoot": "D:\\A2\\o\\ocv\\R18R2",
+    "r18t1PlannedWorkRoot": "D:\\A2\\w\\ocv\\R18T1",
+    "r18t1PlannedOutputRoot": "D:\\A2\\o\\ocv\\R18T1",
+    "r18t1PlannedInstalledLauncher": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R18T1.ps1",
+    "r18t1PlannedReadyZip": "work/OPENCV_SCRIBE_R18T/final/REQ_R18T1.ready.zip",
+    "operatorSuppliedR18nResponseRoot": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs\\ProjectPortalRO\\responses\\R18N1\\R18N1",
+    "operatorSuppliedR18o2ResponseRoot": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs\\ProjectPortalRO\\responses\\R18O2",
+    "r18r2SignedResponseZip": "U:\\ProjectPortalRO\\responses\\R_932D503BB922_20260904234107020_0a55ed37.ready.zip",
+    "r18r2CollectedLaunchResponseMetadataRoot": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R18R2\\collected_launch_response",
+    "baseReferenceLocalZip": "work/OPENCV_SCRIBE_O2D5/final/extract/O2D5_REFS.zip",
+    "baseReferenceInstalledZip": "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+    "baseReferenceZipBytes": 14855150,
+    "baseReferenceEmbeddedManifestMember": "refs/PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "baseReferenceEmbeddedManifestBytes": 207802
+  },
+  "frozenImplementation": {
+    "reader": {
+      "path": "work/OPENCV_SCRIBE_R18H/ArgosOpenCvScribeV1R18H.py",
+      "sha256": "3AF68D778E297531DD527DD9D65C75FD17BD1FB9C2EC797CB840B10A674532AD"
+    },
+    "cropSweep": {
+      "path": "work/OPENCV_SCRIBE_R18J/ArgosOpenCvScribeCropSweepR18J.py",
+      "sha256": "EF4C58589CA8885B5CBDE0A989D3F94EE8C447925818DC0FA4E50B26B87A8B9F"
+    },
+    "referenceIsolatedEnvelope": {
+      "path": "work/OPENCV_SCRIBE_R18P/Run-R18PReferenceIsolatedCorpus.py",
+      "sha256": "5B6AA224E844FCEA22DEC6A9D10C863437F039CA73EC258C263DF539905791D0"
+    },
+    "scientificWrapper": {
+      "path": "work/OPENCV_SCRIBE_R18R/Run-R18RReferenceIsolatedCorpus.py",
+      "sha256": "B826767EA21BB148DD30A719595B23DD818FD9CFC08B347FEAFD9FD4959F4E3C"
+    },
+    "provider": {
+      "path": "work/OPENCV_SCRIBE_R18R/ArgosOpenCvScribeV1R18R.py",
+      "sha256": "51C95B3279D253EF717F663F3860CC6B4CA38517706E08E9FE2302BE02CD2BB5"
+    },
+    "genericStructureProvider": {
+      "path": "work/OPENCV_SCRIBE_R18Q/ArgosOpenCvScribeV1R18Q.py",
+      "sha256": "AB20CFB25D223D40D31237118436446018AE213F800ECF1652213EB942C40DC1"
+    },
+    "baseReferenceZipSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "baseReferenceManifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "supplementalReferenceManifest": {
+      "path": "work/OPENCV_SCRIBE_R18F/reference_bank/SUPPLEMENTAL_GLYPH_REFERENCE_MANIFEST.json",
+      "sha256": "FD60D494A25B489A8F1D8581217457AD67B02C98D54CA0A5400FAC0611537114",
+      "missingBodyLabels": [
+        "I",
+        "O",
+        "V",
+        "Y"
+      ]
+    },
+    "baseReferenceBundle": {
+      "localPath": "work/OPENCV_SCRIBE_O2D5/final/extract/O2D5_REFS.zip",
+      "installedPath": "D:\\O2D5\\ARGOS_O2D5\\O2D5_REFS.zip",
+      "bytes": 14855150,
+      "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+      "embeddedManifestMember": "refs/PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+      "embeddedManifestBytes": 207802,
+      "embeddedManifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229"
+    },
+    "referenceIsolationGate": {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R_REFERENCE_ISOLATION_LOCAL_GATE.json",
+      "sha256": "9E645CCEE7BB4C62610AD1D93418985F2F3FB3A3DCD68007A3ECA56D30784471"
+    },
+    "canonicalChecksumGate": {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R_CANONICAL_CHECKSUM_GATE.json",
+      "sha256": "BB0F36B38A7CB697087B324CDE2037E8F2B8ED184BCE8DB71EA1BCB3DB787407"
+    }
+  },
+  "cropAndOcrInvariants": {
+    "existingProcessorPairedCropsFirst": true,
+    "displacedS17": {
+      "identity": "POST2_S17_MISPLACED",
+      "imageFirstString": "6KB71041XDE5",
+      "state": "HOLD_R13B_REVIEW_ONLY_GRID_SELECTED",
+      "mustRemainExact": true
+    },
+    "blankControlCount": 5,
+    "blankEvaluatedViewCount": 40,
+    "blankRequiredState": "HOLD_SCRIBE_NOT_LOCALIZED",
+    "blankOutputStringForbidden": true,
+    "slot24": {
+      "physicalIdentity": "62629-401_20260902002921_Slot24",
+      "imageFirstString": "143B0083SUE6",
+      "checksumValid": true,
+      "localGateMustRemainExact": true,
+      "packageExcluded": true,
+      "copyToJbodAllowed": false
+    },
+    "syntheticDotsAllowed": false,
+    "notchDependenceAllowed": false,
+    "fixedNotchGridOrSolidLineDependenceAllowed": false,
+    "checksumRole": "VERIFY_IMAGE_FIRST_ONLY",
+    "checksumMaySelectInventOrRewriteGlyph": false,
+    "identityAccepted": false,
+    "fullWaferFallbackAllowedForR18T": false
+  },
+  "cohortBinding": {
+    "r18pExactLiveCohort": {
+      "path": "work/OPENCV_SCRIBE_R18P/R18P_REVIEW_COHORT.json",
+      "sha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661",
+      "caseCount": 20
+    },
+    "r18r2FailedCohort": {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R_REVIEW_COHORT.json",
+      "sha256": "7393A6CB84F3CF246DCA3751DFCCB76422198C25270CA2759FBF260D2DE8AF56",
+      "caseCount": 21
+    },
+    "requiredDifference": "R18R2 equals the ordered R18P set plus only the package-excluded local Slot24 fixture.",
+    "liveObservation": "Twenty exact nested BF/DF pairs present, sole missing identity Slot24, zero duplicate configured source pairs, both reference manifests present.",
+    "liveCropBytesHashedByObservation": false,
+    "r18tMustDoubleHashReconcileBeforeAnyWriteOrProcess": true
+  },
+  "attemptHistory": [
+    {
+      "revision": "R18N1",
+      "requestId": "REQ_R18N1",
+      "requestZipSha256": "198F365EF1B21739A9D6D7E67628F45751641ECE17112C01CE9A3F586431BEE4",
+      "state": "PUBLISHED_ONCE_OPERATOR_STOPPED_BAD_CROP_DIAGNOSTIC",
+      "retryAuthorized": false
+    },
+    {
+      "revision": "R18O2",
+      "requestId": "REQ_R18O2",
+      "requestZipSha256": "0DC7D8D3FE59AD2296A036DCE04AA425CA20C859EAB2B7B0F1EEC9A8A9A09B36",
+      "state": "PUBLISHED_ONCE_OPERATOR_STOPPED_PARTIAL_EXISTING_CROP_DIAGNOSTIC",
+      "completionClaimed": false,
+      "retryAuthorized": false
+    },
+    {
+      "revision": "R18P1",
+      "requestId": "REQ_R18P1",
+      "requestZipSha256": "0975925ED1079D042701882BE9D61A24CA0BD1977C6078B18E9633E26ECAEEFD",
+      "signedResponseZipSha256": "961ED9E6461E7A6C96C942F27D532B6DBD5D04A376B9BC1336DA3CE1552E0F02",
+      "completeSha256": "89E8749AC7278EF07BC0562D4F2995124EE593C2DF4446F7CEC61ED9E36B8417",
+      "state": "COMPLETE_SCIENTIFIC_REGRESSION_FOUND_K_TO_R",
+      "retryAuthorized": false
+    },
+    {
+      "revision": "R18R1",
+      "requestId": "REQ_R18R1",
+      "state": "SIGNED_LOCAL_WITHDRAWN_PACKAGED_ENTRYPOINT_INTERNAL_PIN_FAILURE",
+      "gateSha256": "9E85F7C07867DB1EE5DDEDB93C00CCF2AF2DDC68985FF5593C89DF09312FF650",
+      "published": false,
+      "retryAuthorized": false
+    },
+    {
+      "revision": "R18R2",
+      "requestId": "REQ_R18R2",
+      "requestZipSha256": "E541EB7FCCD19A04BFE401D6FCFB70B7976C0F47E9F4F1AD8E1FCC1626EEF300",
+      "signedLaunchResponseZipSha256": "D310854F22538041C1E8D1318A70F2EA7B54D02C912000124A15C4FD83B4B6A5",
+      "state": "WITHDRAWN_WORKER_EXITED_PRE_INVENTORY",
+      "scientificOcrOutcomeAvailable": false,
+      "retryAuthorized": false
+    }
+  ],
+  "r18pOutcome": {
+    "caseCount": 20,
+    "completedCount": 20,
+    "imageFirstPassCount": 18,
+    "intendedAmbiguityHoldCount": 2,
+    "caseExecutionErrorCount": 0,
+    "knownTruthExactCount": 1,
+    "knownTruthMismatchCount": 1,
+    "blockingMismatch": "62546-481-POST_20260713041740_Slot22: expected 13DCK060SUF5, image-first 13DCR060SUF5",
+    "completionReviewGateSha256": "018F3CA26CF5D8F63D9BD28C346100999C3407AFA2E31AC4DD646E8C8AF24B11"
+  },
+  "r18rLocalOutcome": {
+    "slot24ImageFirstString": "143B0083SUE6",
+    "slot24State": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+    "slot22ImageFirstString": "13DCK060SUF5",
+    "frozenReferenceLineageCorrect": 389,
+    "previouslyCorrectHarmed": 0,
+    "visibleExactCount": 21,
+    "blankViewHoldCount": 40,
+    "hardCodedExecutableLiteralCount": 0,
+    "localGateSha256": "566EB33649697713F5E0EFD3E0F04F9861333103BBBC1C1BACFEDE3CD184C82A",
+    "referenceIsolationGateSha256": "9E645CCEE7BB4C62610AD1D93418985F2F3FB3A3DCD68007A3ECA56D30784471",
+    "canonicalChecksumGateSha256": "BB0F36B38A7CB697087B324CDE2037E8F2B8ED184BCE8DB71EA1BCB3DB787407",
+    "referenceIsolationGatePath": "work/OPENCV_SCRIBE_R18R2/R18R_REFERENCE_ISOLATION_LOCAL_GATE.json",
+    "canonicalChecksumGatePath": "work/OPENCV_SCRIBE_R18R2/R18R_CANONICAL_CHECKSUM_GATE.json"
+  },
+  "r18r2Failure": {
+    "computerName": "A1025645101",
+    "launchedProcessId": 37456,
+    "outputRoot": "D:\\A2\\o\\ocv\\R18R2",
+    "terminalObservedState": "LAUNCH_ONLY",
+    "launchedProcessPresentAtTerminalObservation": false,
+    "inventoryPresent": false,
+    "runningPresent": false,
+    "completePresent": false,
+    "caseDirectoryCount": 0,
+    "resultCount": 0,
+    "workerFailureRecordPresent": false,
+    "configuredCaseCount": 21,
+    "exactLivePairCount": 20,
+    "missingIdentity": "62629-401_20260902002921_Slot24",
+    "rootCause": "A local-only fixture row entered the JBOD cohort without live-root reconciliation, and anonymous undrained worker pipes plus no top-level failure writer lost the exception.",
+    "terminalCheckpointSha256": "C5FD8423B3DD276D26643E6A2212FAB1D249F57B1FEBA960AE53895285DF0471",
+    "failedReviewGateSha256": "FF09E5D455752299E8EA47E7D9BDD47E11A47F2C4F6C6B2D94073C4A6FA4AADE",
+    "workerExitObservationSha256": "4BA3157A138B7C6418D47E27B6856B9926D5DFA4071E99861DB11A070CCD2345"
+  },
+  "recoveryClassification": {
+    "incidentId": "R18R2_LIVE_SET_AND_TERMINAL_EVIDENCE_20260904",
+    "nextMode": "MUTATE",
+    "supportedRemedy": "B",
+    "description": "Correct invalid package input and terminal-evidence preconditions while preserving frozen OCR science.",
+    "signedTerminalFailedResponseCount": 0,
+    "reasonSignedFailureCountIsZero": "R18R2's matching signed portal response was a launch PASS; the later worker failure was proved by direct endpoint observation, not by a signed terminal FAILED response.",
+    "mutationStopLossActive": false,
+    "directObservationMustBePinnedAsSupportingObservation": true,
+    "freshNamespaceRequired": true,
+    "publicationAuthoritySeparate": true
+  },
+  "r18tRequiredDesign": [
+    "Create R18T_LIVE_REVIEW_COHORT.json as an exact ordered clone of the frozen 20-row R18P cohort and mechanically prove the R18R2 set difference is solely local Slot24.",
+    "Create a thin R18T execution-envelope worker that delegates unchanged to the frozen R18R scientific wrapper, owns create-new stdout/stderr logs, and atomically commits a bounded FAILURE.json for any top-level exception or nonzero return.",
+    "Before any New-Item, work/output creation, or process start, validate generic safe identities, unique casefold identities, unique BF/DF pairs, exact nested leaves, and exact live hashes. Repeat immediately before launch and require identical bindings.",
+    "Make all case, payload, ZIP, and path cardinalities derived from actual collections. Do not encode expected 20, 21, or other corpus counts in executable source.",
+    "Scan every packaged executable and extracted ZIP for concrete lot/slot/product/identity/truth/fixture values, fixed expected counts, runtime test hooks, checksum overrides, threshold overrides, whole-wafer fallback, notch dependence, and synthetic dots.",
+    "Rehearse from exact staged bytes a dynamically omitted configured case and an injected pre-inventory worker failure. Require prelaunch rejection before writes/process for the first, durable atomic failure and no false COMPLETE for the second.",
+    "Run canonical checksum, reference isolation, Slot24, displaced S17, visible, blank, T/7, and K/R gates without modifying frozen runtime or reference bytes.",
+    "Pass recovery intent, zero recurrence, clone remediation, Windows PowerShell 5.1 parser/harness/wrapper, path, exact membership, signature, extraction, and contamination gates before calling the package ready."
+  ],
+  "authority": {
+    "reviewOnly": true,
+    "localCorrectionAndPackagePreparationAuthorized": true,
+    "r18tPublicationAuthorized": false,
+    "freshLiteralPublishRequiredForReqR18t1": true,
+    "maximumPublicationsAfterFreshAuthority": 1,
+    "automaticRetryAuthorized": false,
+    "r18sBuildAuthorized": false,
+    "r18sPublicationAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "automaticReferenceAdmissionAuthorized": false,
+    "automaticHoldClearanceAuthorized": false,
+    "activationAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "sourceMutationOrDeletionAuthorized": false,
+    "unrelatedTaskProcessQueueImageOrJbodActionAuthorized": false
+  },
+  "externalActivityDisclosure": {
+    "subagentAccidentalGitFetchOccurred": true,
+    "command": "git fetch origin --quiet",
+    "scope": "Repository-origin read and local remote-tracking refresh only.",
+    "originWritePerformed": false,
+    "remoteTipBeforeAndAfter": "0b3d5c58a1b6890ff39b890605c4b586d65c5dc8",
+    "worktreeContentChanged": false,
+    "jbodPortalQueueProcessOrImageAccessOccurred": false,
+    "disposition": "DISCLOSED_PROCEDURAL_SCOPE_ERROR_DO_NOT_REPEAT"
+  },
+  "requiredReadOrderAfterWorkspaceVerification": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "9B8F686F00A0E0EC83034C3A61313FFC909EAD4168168C6637DAA64E8F22738A"
+    },
+    {
+      "path": "work/ARGOS_CODEX_TASK_ROLLOVER.md",
+      "sha256": "B9F288027C05A501213D34077AC26830CBFF5D20ED2936F8C1D5060B6AF2DCAC"
+    },
+    {
+      "path": "work/ARGOS_CODEX_TASK_ROLLOVER.json",
+      "sha256": "792524340D30A91BD582D1DD668A622CE2580B7C1BCE75A292D13F84416F7BDB"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_TERMINAL_FAILURE_CHECKPOINT_20260904.md",
+      "sha256": "C5FD8423B3DD276D26643E6A2212FAB1D249F57B1FEBA960AE53895285DF0471"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_FAILED_RUN_REVIEW_GATE.json",
+      "sha256": "FF09E5D455752299E8EA47E7D9BDD47E11A47F2C4F6C6B2D94073C4A6FA4AADE"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_TERMINAL_WORKER_EXIT_OBSERVATION_GATE.json",
+      "sha256": "4BA3157A138B7C6418D47E27B6856B9926D5DFA4071E99861DB11A070CCD2345"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18P/R18P_COMPLETED_REVIEW_BLOCKER_CHECKPOINT_20260904.md",
+      "sha256": "3B090BAF57320C9B3B473CE58BAE213C88BCFEA269A16F025CDEF591D9254FBD"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18P/R18P_COMPLETED_REVIEW_GATE.json",
+      "sha256": "018F3CA26CF5D8F63D9BD28C346100999C3407AFA2E31AC4DD646E8C8AF24B11"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18Q/R18Q_GENERIC_STRUCTURE_LOCAL_GATE_CHECKPOINT_20260904.md",
+      "sha256": "DF139C66A28898454291F46894727C13FFDE53E4761CD5052E3043E97E4D6FE5"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18R/R18R_SLOT24_LOCAL_PASS_DRAFT_PACKAGE_BLOCKER_CHECKPOINT_20260904.md",
+      "sha256": "0D2CC3C8C179BEB6B68676F538FA3FF4B90FB4D4DF7DC394811D1800A5CF2EF3"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18R/R18R_LOCAL_GATE.json",
+      "sha256": "566EB33649697713F5E0EFD3E0F04F9861333103BBBC1C1BACFEDE3CD184C82A"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_LAUNCH_RESPONSE_GATE.json",
+      "sha256": "ECD1E67112AA9ED5FCDEE97895088A3A46D25EA3E820C275527679F4887824EE"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18P/R18P_REVIEW_COHORT.json",
+      "sha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R_REVIEW_COHORT.json",
+      "sha256": "7393A6CB84F3CF246DCA3751DFCCB76422198C25270CA2759FBF260D2DE8AF56"
+    },
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "804DC714FBDD4F854091AF8BA09F0FBC0623FEED567897530C8617CFD313EF5E"
+    },
+    {
+      "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.md",
+      "sha256": "F676D392A9E5FF7F7480E3106985170D8366F6B1AC2F3EB54EC9653D38021A49"
+    },
+    {
+      "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+      "sha256": "A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"
+    },
+    {
+      "path": "work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md",
+      "sha256": "9C542CF7CB86555E5A357AC492C63B891691D7C9F0DA1103A68079CB01AA1F04"
+    },
+    {
+      "path": "work/ARGOS_OPENCV_ALL_IMAGE_PROCESSING_MIGRATION.md",
+      "sha256": "A215FABD2325A7D462E8EEC4915FE3E227DD025D5B11143655285FEAE95ACA19"
+    },
+    {
+      "path": "work/ARGOS_OPENCV_ALL_IMAGE_PROCESSING_MIGRATION.json",
+      "sha256": "D495C7459CF5B657B73B35F005BA558BD6C06C1C592D655D3F955A7179646EE4"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R_REFERENCE_ISOLATION_LOCAL_GATE.json",
+      "sha256": "9E645CCEE7BB4C62610AD1D93418985F2F3FB3A3DCD68007A3ECA56D30784471"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R_CANONICAL_CHECKSUM_GATE.json",
+      "sha256": "BB0F36B38A7CB697087B324CDE2037E8F2B8ED184BCE8DB71EA1BCB3DB787407"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_O2D5/final/extract/O2D5_REFS.zip",
+      "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6"
+    }
+  ],
+  "successorFirstTurnContract": {
+    "auditOnly": true,
+    "filesystemWrites": 0,
+    "gitWrites": 0,
+    "externalContacts": 0,
+    "externalMutations": 0,
+    "queueTaskProcessImageAccess": 0,
+    "mustReport": [
+      "exact worktree, branch, HEAD, origin tip, and clean state",
+      "checkpoint, manifest, and gate hashes",
+      "frozen implementation/reference hashes",
+      "crop/OCR invariants including displaced S17, blanks, Slot24, no synthetic dots, no notch dependence, and checksum verify-only",
+      "R18R2 failure and exact live-set evidence",
+      "R18T/R18S decision, authority, blockers, and exact next action",
+      "zero mutation/access audit statement",
+      "the V1 precommit withdrawal, V2 supersession, legacy hook-scope limitation, and explicit holds/unresolved gates"
+    ],
+    "predecessorMustInspectActualResponse": true,
+    "predecessorMustRecheckSharedWorktree": true,
+    "handoffAcceptanceRequiresNoMutationOrRegression": true
+  },
+  "nextAction": [
+    "In the fresh task, perform the required audit-only first turn from this V2 superseding set and wait for predecessor acceptance before editing.",
+    "Explicitly report that the current single-phase hook does not guard this saved-CWD/dedicated-worktree lane and that the checkpoint, not its legacy root/branch fields, controls the isolated lane.",
+    "Create a machine-readable direct-observation supporting record for the R18R2 post-launch failure without falsely classifying the signed launch PASS as a terminal signed failure.",
+    "Create and pass the R18T MUTATE/B recovery intent, explicitly keeping publication authority false.",
+    "Implement and locally gate the R18T 20-case live-only execution-envelope successor exactly as specified above.",
+    "Stop at signed-unpublished. Do not create publication authority or publisher and do not access the portal/JBOD until a fresh literal PUBLISH for REQ_R18T1 is received."
+  ],
+  "supersession": {
+    "authoritativeRevision": 2,
+    "priorSetAuthoritative": false,
+    "priorSetDisposition": "WITHDRAWN_PRECOMMIT_INDEPENDENT_AUDIT_BLOCKERS",
+    "priorSetPreservedUnchanged": true,
+    "reason": [
+      "The prior machine rollover policy pin retained unexplained canonical-root and historical-branch fields.",
+      "The prior handoff omitted exact paths for the frozen reference-isolation and checksum gates and omitted the base-reference bundle location."
+    ],
+    "priorCheckpoint": {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_COMPLETE_FAILURE_RECOVERY_ROLLOVER_CHECKPOINT_20260904.md",
+      "bytes": 17436,
+      "sha256": "03BEFE22AD1CC55319B6497DBABDD42D0CDCB387E25FE92CAE24B0FB49CA4B2B"
+    },
+    "priorManifest": {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_COMPLETE_RECOVERY_ROLLOVER_MANIFEST.json",
+      "bytes": 22891,
+      "sha256": "CE8ACE68A42AA2EC0445187B4DB6187D039EE4D0E8A11BBB109D66C0F3D0B022"
+    },
+    "priorGate": {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_COMPLETE_FAILURE_RECOVERY_ROLLOVER_GATE.json",
+      "bytes": 6452,
+      "sha256": "A8A30F81528AA31961BC3CF1B51EF230C430281F53D1547CBCD85709D7DB2A9D"
+    }
+  },
+  "holdsAndUnresolvedGates": [
+    {
+      "id": "R18R2_WITHDRAWN_PRE_INVENTORY",
+      "state": "WITHDRAWN",
+      "rule": "No retry and no OCR conclusion; only the fresh R18T execution-envelope successor may proceed."
+    },
+    {
+      "id": "R18T_PUBLICATION",
+      "state": "PENDING_FRESH_LITERAL_PUBLISH",
+      "rule": "Local correction, gating, packaging, and signing may proceed after rollover acceptance; publication remains false."
+    },
+    {
+      "id": "R18S_FULL_EXISTING_CROP_CORPUS",
+      "state": "BLOCKED",
+      "rule": "Requires clean 20-case R18T live completion plus unchanged package-excluded Slot24 local gate; build and publication are both unauthorized now."
+    },
+    {
+      "id": "SLOT24_LOCAL_REAL_IMAGE_REGRESSION",
+      "state": "PACKAGE_EXCLUDED",
+      "rule": "Must remain exact locally and must not be copied to JBOD."
+    },
+    {
+      "id": "SUPPLEMENTAL_REFERENCE_COVERAGE",
+      "state": "KNOWN_LIMITATION",
+      "rule": "Body labels I, O, V, and Y remain absent; no automatic reference admission is authorized."
+    },
+    {
+      "id": "ROLLOVER_TWO_PHASE_HOOK",
+      "state": "DEFERRED_UNQUALIFIED_IMPLEMENTATION",
+      "rule": "The binding rule is manual until the separate hook implementation, tests, stable hashes, and gate are qualified."
+    }
+  ]
+}

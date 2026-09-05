@@ -520,19 +520,45 @@ the count. The existing 128/256/384/512 MiB session gates and abnormal-growth
 stop remain independently mandatory.
 
 At rollover, finish only the current atomic operation. Do not begin a new
-external mutation merely to reach a cleaner handoff. Write or confirm the exact
-file-backed checkpoint, preserve every hold and pending signed request, run
-project continuity and metadata-only session safety, commit and push authorized
-work, fetch `origin`, and require a clean worktree with matching local/remote
-`codex/fiducial-opencv-d-drive` tips. Then create one fresh Codex task in this
-exact Desktop project using only the checkpoint path/hash, continuity path,
-branch, authority/holds, and next action. Never fork or attach the prior
-transcript. Record the new task ID with the hook's `--complete-handoff` action
-before ending the old task. If the task-creation capability is unavailable,
-stop after the safe checkpoint and report that exact capability gap.
+external mutation merely to reach a cleaner handoff. A rollover must never be
+created before a complete, immutable, hash-verified checkpoint, machine
+companion, and PASS validation gate exist. Together they must enumerate the
+exact authorized worktree, branch, HEAD/origin commit, decisions, data
+locations, frozen artifacts and hashes, authority, holds and unresolved gates,
+request/response and external state, withdrawn/no-retry attempts, next action,
+prohibited actions, and exact hashed required-read order. A short checkpoint
+or the unrelated global continuity pointer is not a valid lane handoff.
+
+Run project continuity and metadata-only session safety, commit and push all
+authorized work, fetch `origin`, and require the checkpoint's exact active
+branch to be clean with matching local/origin tips. Then create one fresh Codex
+task using the checkpoint, companion, and validation-gate paths/hashes. Never
+fork or attach the prior transcript.
+
+The predecessor task remains active after task creation. The successor's first
+turn is audit-only: it must reject any non-authoritative saved CWD, read the
+exact required list, independently verify worktree/branch/HEAD/origin/clean
+state and every handoff hash, restate the decisions, locations, authority,
+holds, prohibitions, and next action, and perform zero filesystem/Git writes,
+external contacts or mutations, and queue/task/process/image access. The
+predecessor must inspect the actual successor response, compare it to the
+machine companion, and recheck the shared worktree before recording handoff
+completion. The hook's task-ID record alone is never acceptance.
+
+Only after that inspection proves exact continuation with no mutation or
+regression may the predecessor invoke `--complete-handoff` and end. On any
+mismatch, pause the successor and keep the predecessor active. Supersede an
+incomplete checkpoint with a new immutable checkpoint/companion/gate; never
+patch a frozen handoff in place. If task creation or successor inspection is
+unavailable, stop after the safe checkpoint and report that exact capability
+gap.
 
 The project-local `.codex/hooks.json` is the enforcement trigger. Review and
 trust its exact hash when Codex requests the one-time hook approval. Do not
+mistake the machine policy's legacy `projectRoot` and `requiredBranch` fields
+for isolated-lane authority: they describe only the current single-phase
+hook's historical scope, and that hook does not guard a saved-CWD task using a
+separate dedicated worktree.
 replace it with a scheduled automation, cron task, or active-task heartbeat;
 those mechanisms either create task-list spam or grow the task being guarded.
 

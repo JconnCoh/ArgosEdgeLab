@@ -1,10 +1,17 @@
 {
   "schema": "argos_codex_task_rollover_v1",
-  "revision": "ARGOS_CODEX_TASK_ROLLOVER_V1_20260824",
+  "revision": "ARGOS_CODEX_TASK_ROLLOVER_V2_20260904",
   "disposition": "APPROVED_BASELINE",
   "authority": "OPERATOR_APPROVED_AUTOMATIC_SAFE_CHECKPOINT_AND_FRESH_TASK_HANDOFF",
   "projectRoot": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab",
   "requiredBranch": "codex/fiducial-opencv-d-drive",
+  "legacySinglePhaseHookScope": {
+    "fieldNames": ["projectRoot", "requiredBranch"],
+    "authoritativeForIsolatedLaneHandoff": false,
+    "guardsSavedCwdTaskUsingSeparateDedicatedWorktree": false,
+    "purpose": "Compatibility inputs for the current historical single-phase hook only; the exact frozen checkpoint controls an isolated lane.",
+    "manualCheckpointBoundAcceptanceRequired": true
+  },
   "changeThresholds": {
     "warningChangedLines": 8000,
     "rolloverChangedLines": 10000,
@@ -27,7 +34,45 @@
     "continuityAndSessionSafetyMustPass": true,
     "workingTreeMustBeClean": true,
     "localAndOriginBranchTipsMustMatch": true,
-    "freshTaskMustUseFilesystemCheckpointNotForkedTranscript": true
+    "freshTaskMustUseFilesystemCheckpointNotForkedTranscript": true,
+    "checkpointCompanionAndPassGateMustExistBeforeTaskCreation": true,
+    "checkpointMustNameActualWorktreeBranchHeadAndOrigin": true,
+    "checkpointMustCarryCompleteDecisionsLocationsHashesAuthorityHoldsAndExternalState": true,
+    "unrelatedGlobalContinuityPointerCannotReplaceLaneCheckpoint": true,
+    "predecessorMustRemainActiveThroughSuccessorAudit": true,
+    "successorFirstTurnMustBeReadOnly": true,
+    "predecessorMustInspectActualSuccessorResponse": true,
+    "sharedWorktreeMustBeRecheckedAfterSuccessorAudit": true,
+    "completeHandoffForbiddenBeforeNoRegressionAcceptance": true,
+    "deficientFrozenHandoffMustBeSuperseded": true
+  },
+  "checkpointRequiredSections": [
+    "workspace_branch_head_origin",
+    "decisions",
+    "data_locations",
+    "frozen_artifacts_and_hashes",
+    "authority",
+    "holds_and_unresolved_gates",
+    "requests_responses_and_external_state",
+    "withdrawn_and_no_retry_attempts",
+    "next_action",
+    "prohibited_actions",
+    "hashed_required_read_order"
+  ],
+  "successorAudit": {
+    "savedCwdMayBeAuthority": false,
+    "filesystemWritesAllowed": false,
+    "gitWritesAllowed": false,
+    "externalContactsAllowed": false,
+    "externalMutationsAllowed": false,
+    "queueTaskProcessOrImageAccessAllowed": false,
+    "exactContextRestatementRequired": true,
+    "predecessorInspectionRequired": true,
+    "noMutationOrRegressionRequired": true
+  },
+  "implementationQualification": {
+    "currentSinglePhaseHookProvesSuccessorAcceptance": false,
+    "manualPredecessorVerificationRequiredUntilTwoPhaseHookQualified": true
   },
   "hook": {
     "configPath": ".codex/hooks.json",
