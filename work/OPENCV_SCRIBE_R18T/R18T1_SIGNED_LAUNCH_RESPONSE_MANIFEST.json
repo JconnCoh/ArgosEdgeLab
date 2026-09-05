@@ -1,0 +1,78 @@
+{
+  "schema": "argos_opencv_scribe_r18t1_signed_launch_response_manifest_v1",
+  "createdUtc": "2026-09-05T12:21:00Z",
+  "state": "PASS_R18T1_SIGNED_PORTAL_TRANSACTION_LAUNCH_PROVED_CORPUS_PENDING",
+  "requestId": "REQ_R18T1",
+  "checkpoint": {
+    "path": "work/OPENCV_SCRIBE_R18T/R18T1_SIGNED_LAUNCH_RESPONSE_CHECKPOINT_20260905.md",
+    "sha256": "39A1FEDDA4C4C181A20163843E6F5D3F4CE6B4205221CAA6916A108F0C16A226"
+  },
+  "response": {
+    "responseId": "R_D65714DE5125_20260905121421282_631e5003",
+    "zipBytes": 3299,
+    "zipSha256": "E642397BB1BA3DBD39E8B15248D8E5CB85E2239DC80796ECC06EEBC2EC909AF6",
+    "manifestSha256": "2B823D5AD12EAD94F479023A52B07EDA9A57DCB150E2D4FA9318A0747C3A02BC",
+    "signatureSha256": "AF90F27D4053B5693CD27D2DC66BCE512A431D69F73F1646108B7165E2ABEBF3",
+    "resultSha256": "BE4AB83C9AEF6E3A5ED088E92159793A5F5A8CA7121A6374211A669444B3B9B6",
+    "stdoutSha256": "FB32762D23331509CA7230C26CA983EA59F0C71C88C551F70C47F5EE4ECA9EC8",
+    "stderrSha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "rsaSha256Pkcs1Verified": true,
+    "allDeclaredFileHashesAndLengthsMatched": true,
+    "endpointState": "PASS_MAINTENANCE_PATCH",
+    "maintenanceResultState": "PASS_MAINTENANCE_PATCH",
+    "collectedCreateNew": true,
+    "collectedRoot": "work/OPENCV_SCRIBE_R18T/collected_launch_response"
+  },
+  "launch": {
+    "state": "PASS_R18T_LIVE_ONLY_WORKER_STARTED",
+    "computerName": "A1025645101",
+    "processId": 39140,
+    "processStartTimeUtc": "2026-09-05T11:56:41.1535433Z",
+    "workRoot": "D:/A2/w/ocv/R18T1",
+    "outputRoot": "D:/A2/o/ocv/R18T1",
+    "configuredCaseCount": 20,
+    "cohortSha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661",
+    "liveBindingPassCount": 2,
+    "sourceImageBytesHashed": true,
+    "pixelsDecodedByLauncher": false,
+    "ownedProcessStarted": true,
+    "automaticRetryAllowed": false
+  },
+  "corpusEvidenceBoundary": {
+    "inventoryIncluded": false,
+    "runningIncluded": false,
+    "completeIncluded": false,
+    "failureIncluded": false,
+    "perCaseResultsIncluded": false,
+    "signedTerminalPerCaseOutcomeCount": 0,
+    "configuredCaseCount": 20,
+    "corpusCompletionProved": false,
+    "negativeOcrConclusionAvailable": false,
+    "hold": "HOLD_R18T_CORPUS_TERMINAL_OUTCOME_NOT_INCLUDED_IN_SIGNED_LAUNCH_RESPONSE"
+  },
+  "authority": {
+    "requestRepublished": false,
+    "executionRetried": false,
+    "secondRequestCreated": false,
+    "identityAccepted": false,
+    "slot24PackageExcluded": true,
+    "sixExistingHoldsPreserved": true,
+    "r18sAuthorized": false,
+    "entireKlarfAuthorized": false,
+    "sourceMutationAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionRoutingEnabled": false
+  },
+  "accessAudit": {
+    "projectPortalResponseObservationCount": 1,
+    "guiOrRdpAccessCount": 0,
+    "directJbodObservationCount": 0,
+    "taskOrProcessActionCount": 0,
+    "sourceImageAccessCount": 0,
+    "imageMemberBodyAccessCount": 0,
+    "unrelatedGlobalPhaseModified": false
+  },
+  "nextAction": "STOP_AND_REQUEST_SEPARATE_AUTHORITY_FOR_PACKAGE_ONLY_TERMINAL_CORPUS_OBSERVATION_IF_REQUIRED"
+}
