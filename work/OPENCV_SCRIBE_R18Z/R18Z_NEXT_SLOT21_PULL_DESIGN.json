@@ -1,0 +1,118 @@
+{
+  "schema": "argos_opencv_scribe_r18z_next_slot21_pull_design_v1",
+  "createdUtc": "2026-09-05T21:35:19.1859087Z",
+  "state": "PASS_DESIGN_ONLY_UNSIGNED_UNPUBLISHED",
+  "disposition": "PENDING_FRESH_NAMESPACE_PACKAGE_PREPARATION",
+  "freshNamespace": "work/OPENCV_SCRIBE_R18W4S21",
+  "requestId": "REQ_S21_20260905212322_S9RHWN0X00G4K59QB7Q1120VDR",
+  "requestIdEntropy": {
+    "utcComponent": "20260905212322",
+    "guid": "541E71CA-001D-4920-9537-59EE10881B6E",
+    "crockfordBase32": "S9RHWN0X00G4K59QB7Q1120VDR",
+    "worktreeTextCollisionCountAtDesign": 0,
+    "externalNamespaceCollisionScanPerformed": false,
+    "externalNamespaceCollisionScanRequiredBeforeFirstSignature": true,
+    "externalNamespaceCollisionScanRequiredAgainBeforePublication": true
+  },
+  "route": {
+    "targetRole": "JBOD",
+    "jobClass": "DATA_PULL",
+    "handler": "",
+    "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+    "maximumFiles": 2,
+    "maximumBytes": 50331648,
+    "maxResultBytes": 50331648,
+    "relativePaths": [
+      "identity/proposals/62546-481_20260707164232_Slot21/scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "identity/proposals/62546-481_20260707164232_Slot21/scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png"
+    ],
+    "proposalJsonIncluded": false,
+    "overlayIncluded": false,
+    "incidentalFilesAllowed": false
+  },
+  "slot21Binding": {
+    "physicalIdentity": "62546-481_20260707164232_Slot21",
+    "issuedWaferContainer": "62546-481-010",
+    "exactTruth": "13HFX135SUE3",
+    "bfSha256": "96046D91BBD6DF81E678224525560BD9C77C0DC09DD89A25992B07F8D1213B93",
+    "dfSha256": "8DFD50AE1E0958CE01D7E32E0936978F157C2FECD0CB910BCC27DF9F7CE63CB8",
+    "classification": "UNTOUCHED_CURRENT_INDEPENDENT_VALIDATION",
+    "mappedToReferenceLineage": false,
+    "identityAccepted": false,
+    "referenceAdmissionAuthorized": false
+  },
+  "plannedLocalRoots": {
+    "signingStage": "C:\\R18W4S21B",
+    "verification": "C:\\R18W4S21V",
+    "outerResponse": "C:\\R18W4S21R",
+    "payload": "C:\\R18W4S21"
+  },
+  "modeledRouteBudget": {
+    "candidatePathCount": 40,
+    "reservedSuffixCharacters": 32,
+    "maximumEffectiveLength": 198,
+    "maximumComponentLength": 66,
+    "modelOnly": true,
+    "exactGeneratedRouteGateStillRequired": true,
+    "finalPartialMustBeIncluded": true
+  },
+  "requiredPreparationOrder": [
+    "VERIFY_R18Z_PREREQUISITE_AND_CLEAN_MATCHING_BRANCH_TIP",
+    "RUN_SOURCE_HARNESS_GUARD",
+    "CREATE_FRESH_NAMESPACE_AND_CLONE_REMEDIATION_MANIFEST",
+    "RUN_CLONE_REMEDIATION_GATE",
+    "RUN_POST_CLONE_GENERATED_HARNESS_GUARD",
+    "RUN_WINDOWS_POWERSHELL_5_1_PARSER_AND_NONMUTATING_PREFLIGHT",
+    "RUN_WRAPPER_APPLICABILITY_GATE",
+    "RUN_ZERO_RECURRENCE_PREACTION",
+    "RUN_EXTERNAL_REQUEST_RESPONSE_LEDGER_ID_ZERO_SCAN",
+    "RUN_COMPLETE_ROUTE_AND_PATH_GATE",
+    "FREEZE_EXACT_UNSIGNED_MANIFEST_BYTES",
+    "RUN_PRESIGNATURE_FREEZE_GATE",
+    "SIGN_FROZEN_MANIFEST_BYTES_ONCE",
+    "VERIFY_EXTRACTED_SIGNATURE_AND_TWO_MEMBER_ZIP",
+    "FINALIZE_CREATE_NEW_FROM_FINAL_PARTIAL"
+  ],
+  "requiredPreparationArtifacts": [
+    "R18W4S21_SLOT21_BINDING.json",
+    "R18W4S21_DATA_PULL_DEFINITION.json",
+    "R18W4S21_ROUTE_PINS.json",
+    "Build-R18W4S21Request.ps1",
+    "Test-R18W4S21RequestIdUniqueness.ps1",
+    "PREACTION_R18W4S21_LOCAL_PACKAGE_PREPARATION.json",
+    "R18W4S21_BUILD_CLONE_LITERAL_REMEDIATION.json",
+    "R18W4S21_BUILD_CLONE_LITERAL_GATE.json",
+    "R18W4S21_BUILD_HARNESS_GATE.json",
+    "R18W4S21_WRAPPER_APPLICABILITY_GATE.json",
+    "R18W4S21_REQUEST_ID_UNIQUENESS_GATE.json",
+    "R18W4S21_PRESIGNATURE_FREEZE_GATE.json",
+    "R18W4S21_FINAL_PACKAGE_GATE.json",
+    "R18W4S21_COMPLETE_ROUTE_GATE.json",
+    "final/REQ_S21_20260905212322_S9RHWN0X00G4K59QB7Q1120VDR.ready.zip",
+    "final/R18W4S21_PATH_GATE.json"
+  ],
+  "finalZipMembership": [
+    "PORTAL_REQUEST_MANIFEST.json",
+    "PORTAL_REQUEST_MANIFEST.sig"
+  ],
+  "publication": {
+    "authorized": false,
+    "maximumPublications": 0,
+    "retryAuthorized": false,
+    "requiredFreshLiteral": "PUBLISH for REQ_S21_20260905212322_S9RHWN0X00G4K59QB7Q1120VDR",
+    "r18w3AuthorityReusable": false
+  },
+  "invariants": {
+    "reviewOnly": true,
+    "truthOrChecksumUsedForSelection": false,
+    "identityAccepted": false,
+    "referenceAdmissionAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "sourceMutationAuthorized": false,
+    "taskProcessOrQueueManagementAuthorized": false,
+    "fullKlarfAuthorized": false
+  },
+  "note": "This is a design authority only. It creates no publication, signature, package, queue entry, response expectation, or retry authority."
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "argos_opencv_scribe_r18z_v2_batch_hold_v1",
+  "state": "HOLD_R18Z_V2_EXACT_GRID_CONSENSUS_TOO_STRICT",
+  "classification": "DIAGNOSTIC_ONLY",
+  "builderSha256": "2F990E0483C5E038668D1628E40CECCB0E06E343BB047D1B39F142E569437FF0",
+  "sourceBindingGateSha256": "EB7C323DBA5F17A2BA3A8D899B79D0F2AE59BAEE7EE42385C8B3E5B73BBA2360",
+  "passedOrdinalsBeforeBatchStop": [1, 2, 3, 4, 7],
+  "heldOrdinal": 6,
+  "heldCloseGrids": [
+    {"x": 403, "y": 274, "cellWidth": 98, "cellHeight": 230},
+    {"x": 403, "y": 275, "cellWidth": 98, "cellHeight": 230}
+  ],
+  "heldCloseImageFirstStrings": ["146AR068SUC7"],
+  "notCompletedAfterParallelBatchStop": [5, 8],
+  "slot09ExactGridConsensusPassed": true,
+  "slot09CloseImageFirstStrings": ["14787059SUA3", "1478T059SUA3"],
+  "cause": "V2 required exact grid consensus even when all close image-only hypotheses already agreed on the complete forward OCR string.",
+  "successorPrevention": "Apply one uniform disjunctive gate: close hypotheses must have either one image-first string or one exact grid tuple. Both dimensions may not be ambiguous. Truth and checksum remain excluded from both tests.",
+  "truthUsedForResolution": false,
+  "checksumUsedForResolution": false,
+  "sourceMutationPerformed": false,
+  "identityAccepted": false,
+  "trainingAuthorized": false,
+  "xmlAuthorized": false,
+  "productionAuthorized": false
+}

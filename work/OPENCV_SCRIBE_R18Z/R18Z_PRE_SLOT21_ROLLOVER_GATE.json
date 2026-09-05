@@ -1,0 +1,125 @@
+{
+  "schema": "argos_opencv_scribe_r18z_pre_slot21_rollover_gate_v1",
+  "createdUtc": "2026-09-05T21:58:00Z",
+  "state": "PASS_R18Z_PRE_SLOT21_CHECKPOINT_FIRST_ROLLOVER_GATE",
+  "disposition": "FROZEN_CHECKPOINT_FIRST_HANDOFF_READY_FOR_COMMIT_PUSH_AND_SUCCESSOR_AUDIT",
+  "workspace": {
+    "onlyAuthorizedWorktree": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv",
+    "requiredBranch": "codex/opencv-scribe-deciphering",
+    "taskStartCommit": "bb5769b2ea70ebabef44e1abc68f55b11118a484",
+    "preRolloverHeadAndOrigin": "5d83bd8b075488769e2b263282165705ed0a2be2",
+    "handoffCommitRule": "The later pushed commit containing this exact gate/checkpoint/manifest and every ordered pin must equal clean local HEAD and origin tip before successor audit.",
+    "fetchAllowedDuringSuccessorAudit": false
+  },
+  "rolloverThreshold": {
+    "preTrioChangedLines": 8660,
+    "preTrioChangedFiles": 53,
+    "warningChangedLines": 8000,
+    "hardChangedLines": 10000,
+    "hardChangedFiles": 150,
+    "trigger": "WARNING_THRESHOLD_REACHED_AND_NEXT_ATOMIC_PACKAGE_PROJECTED_TO_CROSS_HARD_THRESHOLD",
+    "atomicR18zOperationComplete": true,
+    "slot21PackageStarted": false
+  },
+  "handoffArtifacts": {
+    "checkpoint": {
+      "path": "work/OPENCV_SCRIBE_R18Z/R18Z_PRE_SLOT21_ROLLOVER_CHECKPOINT_20260905.md",
+      "bytes": 17933,
+      "sha256": "5605D855A090AE68E2F10830343040A423E9EF17D2F3E8CBFBA9E8B0EABD36BC"
+    },
+    "manifest": {
+      "path": "work/OPENCV_SCRIBE_R18Z/R18Z_PRE_SLOT21_ROLLOVER_MANIFEST.json",
+      "bytes": 15270,
+      "sha256": "6215CFD8537FF36B14F8A6A23280CEB577FBA4ADB01173B0310FE6FFFB8AE2E6"
+    },
+    "requiredReadOrderCount": 46,
+    "requiredReadOrderVerified": 46,
+    "missingPaths": 0,
+    "byteMismatches": 0,
+    "hashMismatches": 0,
+    "jsonParsed": true
+  },
+  "r18w2": {
+    "publishedExactlyOnce": true,
+    "retryAuthorized": false,
+    "signedTerminalResponseVerified": true,
+    "responseId": "R_FADCA24C1D79_20260905191141560_093c0c66",
+    "responseZipSha256": "18B4F8EED464DF4D0ADBC1345F7C2AB753B6F9ADDB18538D8955B8A5180F9F8E",
+    "payloadSha256": "96DAA8E610D3C6F4707185ADF20D936A803EA84173B141F8FE26012D0572487E",
+    "overlaySha256": "E284BB6549969734A7153AB702E8A125E85B4064DDE36982DD1887D0B19D5CCF",
+    "crosswalkResolved": 2,
+    "crosswalkUnmatched": 12,
+    "crosswalkMultiple": 0,
+    "identityAccepted": false
+  },
+  "r18w3": {
+    "publishedExactlyOnce": true,
+    "retryAuthorized": false,
+    "signedTerminalResponseVerified": true,
+    "responseId": "R_EB5FC8126975_20260905194132964_5d52a580",
+    "responseZipSha256": "1F7EF72AA6F035510CF13A634FA9F694A3EA3414380EF832096E7F2F1B7693DF",
+    "payloadSha256": "F9C88A59EE8411D922732F114E7742DD58E4D21D6616CD8EE2FCBC76F6230E6E",
+    "returnedFileCount": 24,
+    "terminal": true
+  },
+  "r18z": {
+    "sourceBindingPassed": true,
+    "declaredSupplementOnly": true,
+    "referenceCount": 475,
+    "exactScribeLineageCount": 49,
+    "looAcceptedCorrect": 273,
+    "looAcceptedWrong": 0,
+    "looHeld": 202,
+    "newSparseLabelAcceptedGains": 0,
+    "fullChainRuntimeGateSha256": "7D19ABFCC70755805221423451BDF9B2CF07AA6E4B70B97E4BBE5228A296FE87",
+    "fullOuterToNestedRunnerExercised": true,
+    "priorRecursionHazardRemoved": true,
+    "sharedRuntimeLockVerified": true,
+    "runtimeBindingsRestoredAfterInjectedFailure": true,
+    "gateReproducedByteForByte": true,
+    "currentSlot21Evaluated": false,
+    "identityAccepted": false,
+    "providerActivationAuthorized": false
+  },
+  "currentSlot21": {
+    "physicalIdentity": "62546-481_20260707164232_Slot21",
+    "exactTruth": "13HFX135SUE3",
+    "bfSha256": "96046D91BBD6DF81E678224525560BD9C77C0DC09DD89A25992B07F8D1213B93",
+    "dfSha256": "8DFD50AE1E0958CE01D7E32E0936978F157C2FECD0CB910BCC27DF9F7CE63CB8",
+    "sourceBytesAvailableLocally": false,
+    "freshTwoFileDataPullRequired": true
+  },
+  "accessAndMutationAudit": {
+    "r18w3Publications": 1,
+    "r18w3Retries": 0,
+    "r18w3MatchingAuthenticatedResponseCollections": 1,
+    "postResponseExternalContacts": 0,
+    "directJbodGuiRdpOrRustdeskAccess": 0,
+    "taskProcessOrQueueActions": 0,
+    "sourceImageMutations": 0,
+    "r18w3DevelopmentPairsDecodedLocally": 8,
+    "distinctPinnedRuntimeCropsDecodedLocally": 1,
+    "trainingActions": 0,
+    "xmlActions": 0,
+    "identityAcceptances": 0,
+    "productionRoutingEnabled": false
+  },
+  "successorContract": {
+    "firstTurnVerificationOnly": true,
+    "firstTurnFilesystemWritesAllowed": false,
+    "firstTurnGitWritesAllowed": false,
+    "firstTurnFetchAllowed": false,
+    "firstTurnExternalContactsAllowed": false,
+    "firstTurnPortalJbodQueueTaskProcessOrImageAccessAllowed": false,
+    "mustVerifyAllRequiredReadEntries": true,
+    "mustRestateExactContext": true,
+    "mustStopForPredecessorAcceptance": true
+  },
+  "nextAction": {
+    "beforeAcceptedSuccessorAudit": "STOP_NO_MUTATION",
+    "afterAcceptedSuccessorAudit": "PREPARE_AND_SIGN_FRESH_R18W4S21_TWO_FILE_DATA_PULL_WITHOUT_PUBLICATION",
+    "requestId": "REQ_S21_20260905212322_S9RHWN0X00G4K59QB7Q1120VDR",
+    "publicationAuthorized": false,
+    "futureExactLiteral": "PUBLISH for REQ_S21_20260905212322_S9RHWN0X00G4K59QB7Q1120VDR"
+  }
+}

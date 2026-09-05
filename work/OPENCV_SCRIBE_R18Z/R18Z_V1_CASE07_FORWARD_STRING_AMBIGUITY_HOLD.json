@@ -1,0 +1,27 @@
+{
+  "schema": "argos_opencv_scribe_r18z_v1_case_hold_v1",
+  "recordedUtc": "2026-09-05T20:31:58.3640221Z",
+  "state": "HOLD_R18Z_V1_FORWARD_IMAGE_FIRST_STRINGS_AMBIGUOUS",
+  "classification": "DIAGNOSTIC_ONLY",
+  "builderSha256": "D45EB2ED57EABF059472F1E6A44BA849B5F0BF3093494B65ACE43B9DAA2C2687",
+  "sourceBindingGateSha256": "9AE78CF3394BC078459DDF4271D120A28C1EA48791B9295AD6EFE340CABBD95D",
+  "ordinal": 7,
+  "physicalIdentity": "62619-451-PRE_20260717143452_Slot09",
+  "freshOutputRoot": "C:\\R18ZC07",
+  "outputRootFileCount": 0,
+  "observedCloseImageFirstStrings": [
+    "14787059SUA3",
+    "1478T059SUA3"
+  ],
+  "cause": "The V1 extractor coupled grid acceptance to unique close OCR text even though its authorized purpose is source-grid derivation for a deliberately sparse glyph.",
+  "successorPrevention": "Apply one generic rule to every fresh case: all close image-only hypotheses must have one exact grid tuple; OCR-string disagreement cannot select or reject that grid. Select the highest image score only after exact grid consensus, and continue to hold any case with multiple close grids.",
+  "truthUsedForResolution": false,
+  "checksumUsedForResolution": false,
+  "glyphWritten": false,
+  "sourceMutationPerformed": false,
+  "identityAccepted": false,
+  "retryOfPortalRequestAuthorized": false,
+  "trainingAuthorized": false,
+  "xmlAuthorized": false,
+  "productionAuthorized": false
+}

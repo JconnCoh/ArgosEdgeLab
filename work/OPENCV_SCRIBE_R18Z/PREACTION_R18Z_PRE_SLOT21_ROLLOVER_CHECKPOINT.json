@@ -1,0 +1,122 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "R18Z_PRE_SLOT21_ROLLOVER_CHECKPOINT_20260905C",
+  "createdUtc": "2026-09-05T22:10:56Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "PROMOTE_LOCAL_R18Z_PRE_SLOT21_ROLLOVER_CHECKPOINT_WITHOUT_EXTERNAL_ACTION",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C",
+  "dependencies": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "9B8F686F00A0E0EC83034C3A61313FFC909EAD4168168C6637DAA64E8F22738A"
+    },
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "00509B849F821FCFC5E1D6BF52902D6ECD548F988C7FCAE2A5D3BD1DDBD64685"
+    },
+    {
+      "path": "work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md",
+      "sha256": "9C542CF7CB86555E5A357AC492C63B891691D7C9F0DA1103A68079CB01AA1F04"
+    },
+    {
+      "path": "work/ARGOS_CODEX_TASK_ROLLOVER.md",
+      "sha256": "B9F288027C05A501213D34077AC26830CBFF5D20ED2936F8C1D5060B6AF2DCAC"
+    },
+    {
+      "path": "work/ARGOS_CODEX_TASK_ROLLOVER.json",
+      "sha256": "792524340D30A91BD582D1DD668A622CE2580B7C1BCE75A292D13F84416F7BDB"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18W3/R18W3_SIGNED_TERMINAL_RESPONSE_GATE.json",
+      "sha256": "CE21F263DCA2A26184C704AA552A63C7C4104AEE44D08F4E13B80C3D20097AFD"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18Z/reference_bank/R18Z_REFERENCE_BUILD_GATE.json",
+      "sha256": "81BFDA2F7427BBC83F603B22D695086722B6CAA268602C6440CCEC0C0E997039"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18Z/evidence/R18Z_EXACT_LINEAGE_LOO_GATE.json",
+      "sha256": "D8F0C0923BFDD6B82C4B0B0C57142825C08C0DB3F5395210A5DD7FE2E6E8DAD8"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18Z/evidence/R18Z_RUNTIME_PROVIDER_FULL_CHAIN_GATE.json",
+      "sha256": "7D19ABFCC70755805221423451BDF9B2CF07AA6E4B70B97E4BBE5228A296FE87"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18Z/ArgosOpenCvScribeV1R18Z.py",
+      "sha256": "54BB0152420B5F197C1F0B353AEDF021185BBBA2EBD415B05320CFF92DD02DA2"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18Z/ArgosOpenCvScribeV1R18ZV.py",
+      "sha256": "BA85E9594562334C54A7CC7A0D7B2DDA3868714D8A87A223E2B2A04F589FDC0B"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18Z/Test-R18ZRuntimeProvider.py",
+      "sha256": "F2A6FA26CD0C5DDF40AC91A046B1482159A4423DE631DAFCCAE48BDD79FA7A9B"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18Z/R18Z_PROVIDER_CLONE_LITERAL_REMEDIATION_GATE_V4.json",
+      "sha256": "0D0AF94C3A8DEC3F8C568FA7F3377C15E5E7F126BDDF75BFB8850DBBCA6D8B74"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18Z/R18Z_RUNTIME_TEST_CLONE_LITERAL_REMEDIATION_GATE_V4.json",
+      "sha256": "39C9FFA778E7FC9619462D9EBA826ACEC1B5A6F8E513FA195B30E46DE8A45BE3"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/OPENCV_SCRIBE_R17A/R17A_POWERSHELL_COLLECTION_CASE_GATE.json",
+    "sha256": "323068E3401E070FA3089D4734B2D304CA5BA4BC4E850A669D5B3FE691E3BE6D",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "scope": {
+    "checkpointFamily": "OPENCV_SCRIBE_R18Z",
+    "checkpointOnly": true,
+    "externalContact": false,
+    "externalMutation": false,
+    "portalAccess": false,
+    "jbodAccess": false,
+    "queueTaskOrProcessAction": false,
+    "imageReadOrDecodeDuringCheckpointPromotion": false,
+    "publicationAuthorized": false,
+    "retryAuthorized": false,
+    "reviewOnly": true,
+    "identityAccepted": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": [
+      "REQ_R18W1"
+    ]
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
