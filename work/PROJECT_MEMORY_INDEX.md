@@ -4,6 +4,43 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 O3F16 R23 rollover / R24 candidate-first next — 2026-09-04
+
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16R23_R24_ROLLOVER_20260904.md`,
+  SHA-256 `F335161BD260AC602AA6E78D8B180F0A61A64BDAA0CFD97456BEF419AF633619`.
+- Complete 64-file hash/path/context manifest:
+  `work/O3F16R23_ROLLOVER.json`, SHA-256
+  `7B05BF8F710E6DC684F71D62E19661C6D85F417397B8271E74828E0618DF2A2C`.
+- Rollover verification gate: `work/O3F16R23_ROLLOVER_GATE.json`, SHA-256
+  `A65140C99AE76019DE6B5556CA9EA661E7B1162268A17928E27F487C4A6D5FFA`;
+  zero missing/mismatched pins and ten operator-feedback copies hash-matched.
+- Active source chain is R18–R23, now force-tracked despite `/work/*` ignore.
+  R21/R22/R23 hashes are `794F7500…C3F4`, `CEC62EEB…5C07`, and
+  `E21FA14B…360B` respectively; use the full digests in the manifest.
+- R22 completed three POST2 pairs/six channels with zero member errors and all
+  assets verified. Its sole failed check is unresolved notch ownership. R23
+  preserves that hold and performs no chipout scoring or selection.
+- Operator diagnosis: candidate-specific native contour evidence is currently
+  evaluated too late. R24 must trace channel-local raw-supported brightness
+  contours for every candidate before manufactured-notch selection, retain
+  irregular responses as neutral, keep cyan fixed and yellow exactly 20 px
+  inward, and never fit an ideal arch then pull pixels to it.
+- R6 angles are secondary post-contour corroboration only. POST2 scorer labels
+  are consumed only after the complete neutral population is frozen. Same-
+  chuck DF may transfer an angle when BF is held, but no DF pixel coordinate
+  transfers and BF remains held.
+- Next: hash verify, author fresh
+  `work/O3F8/AnnularUnwrapCandidateFirstOpenCvR24.py`, run minimal source
+  checks, then one bounded local full-resolution POST2 plus prior-hotspot
+  regression via the unchanged alias route into fresh
+  `C:/O3F16U24P2_CANDIDATE_DRAFT1`; stop on one route failure or for operator
+  review.
+- No package is authorized now. If separately authorized later, maximum three
+  package attempts, no fourth, and no automatic retry. U13 remains terminal-
+  unknown/no-retry; T5, 11, 978, scribe, provider, holds, training, XML, and
+  production remain untouched.
+
 ## OCV-03 O3F16 U13 route blocked / terminal unknown — 2026-09-04
 
 - Request `REQ_20260904T141542420Z_8D4D2F19B527` was accepted by the gateway,

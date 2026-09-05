@@ -1,0 +1,311 @@
+{
+  "schema": "argos_native_frontside_wafer_pose_opencv_v2",
+  "identity": "62546-481_POST2_SLOT03",
+  "state": "PASS_REVIEW_ONLY_MANUFACTURED_NOTCH_CANDIDATE",
+  "bf": {
+    "channel": "BF",
+    "qualified": true,
+    "state": "PASS_FULL_PERIMETER_CHANNEL_QUALIFIED",
+    "widthPx": 14411,
+    "heightPx": 10995,
+    "search": {
+      "mode": "FULL_360_OUTERMOST_DARK_EXTERIOR_BOUNDARY",
+      "coarseRadiusMinimumPx": 3078.60009765625,
+      "coarseRadiusMaximumPx": 5388.60009765625,
+      "coarseAngleSamples": 1440,
+      "refineAngleSamples": 3600,
+      "coarseSupportedSamples": 1358,
+      "refineSupportedSamples": 3361,
+      "coarseAdaptiveContrastFloor": 57.59599914550781,
+      "refineAdaptiveContrastFloor": 62.49999923706054,
+      "knownNotchLocationConsumed": false,
+      "notchAnglePriorConsumed": false,
+      "fixedAngularSearchWindowConsumed": false
+    },
+    "coarseFit": {
+      "centerX": 7216.5168982747155,
+      "centerY": 5458.355238920828,
+      "radius": 5149.764932729906,
+      "acceptedCount": 1333,
+      "inputCount": 1358,
+      "inlierFraction": 0.9815905743740795,
+      "rmsResidualPx": 2.2990074379474175,
+      "p90AbsoluteResidualPx": 3.787792921066284
+    },
+    "fit": {
+      "centerX": 7216.543907770282,
+      "centerY": 5458.4464137545265,
+      "radius": 5149.534510393302,
+      "acceptedCount": 3317,
+      "inputCount": 3361,
+      "inlierFraction": 0.9869086581374591,
+      "angularCoverageFraction": 0.9861111111111112,
+      "rmsResidualPx": 2.163906491161352,
+      "p90AbsoluteResidualPx": 3.076171875,
+      "angularCoveragePopulation": "SUPPORTED_BOUNDARY_SAMPLES_BEFORE_ROBUST_CIRCLE_INLIER_REJECTION"
+    },
+    "candidateDepthThresholdPx": 8.93612734375,
+    "baselineNoiseSigmaPx": 1.4826,
+    "candidates": [
+      {
+        "centerAngleDegrees": 88.88917570479818,
+        "startAngleDegrees": 88.49999734009499,
+        "endAngleDegrees": 89.10000213792392,
+        "widthDegrees": 0.7000000000000001,
+        "maximumDepthPx": 61.04052734375,
+        "medianDepthPx": 38.04052734375,
+        "sampleCount": 7,
+        "symmetryScore": 0.0,
+        "tipCenterOffsetFraction": 1.0,
+        "slopeConsistencyFraction": 1.0
+      },
+      {
+        "centerAngleDegrees": 90.01343213566035,
+        "startAngleDegrees": 89.49999850628738,
+        "endAngleDegrees": 90.80000207139425,
+        "widthDegrees": 1.4000000000000001,
+        "maximumDepthPx": 74.04052734375,
+        "medianDepthPx": 64.04052734375,
+        "sampleCount": 14,
+        "symmetryScore": 0.0,
+        "tipCenterOffsetFraction": 1.0,
+        "slopeConsistencyFraction": 1.0
+      }
+    ]
+  },
+  "df": {
+    "channel": "DF",
+    "qualified": true,
+    "state": "PASS_FULL_PERIMETER_CHANNEL_QUALIFIED",
+    "widthPx": 14411,
+    "heightPx": 10995,
+    "search": {
+      "mode": "FULL_360_OUTERMOST_DARK_EXTERIOR_BOUNDARY",
+      "coarseRadiusMinimumPx": 3078.60009765625,
+      "coarseRadiusMaximumPx": 5388.60009765625,
+      "coarseAngleSamples": 1440,
+      "refineAngleSamples": 3600,
+      "coarseSupportedSamples": 1410,
+      "refineSupportedSamples": 3048,
+      "coarseAdaptiveContrastFloor": 67.48000106811523,
+      "refineAdaptiveContrastFloor": 18.300000953674314,
+      "knownNotchLocationConsumed": false,
+      "notchAnglePriorConsumed": false,
+      "fixedAngularSearchWindowConsumed": false
+    },
+    "coarseFit": {
+      "centerX": 7216.174437832992,
+      "centerY": 5457.775516072602,
+      "radius": 5168.034324344679,
+      "acceptedCount": 1074,
+      "inputCount": 1410,
+      "inlierFraction": 0.7617021276595745,
+      "rmsResidualPx": 1.807940569061197,
+      "p90AbsoluteResidualPx": 3.0665040016174316
+    },
+    "fit": {
+      "centerX": 7216.281018534413,
+      "centerY": 5457.778069764289,
+      "radius": 5168.126063310148,
+      "acceptedCount": 2985,
+      "inputCount": 3048,
+      "inlierFraction": 0.9793307086614174,
+      "angularCoverageFraction": 0.9722222222222222,
+      "rmsResidualPx": 1.9694822251582351,
+      "p90AbsoluteResidualPx": 3.03955078125,
+      "angularCoveragePopulation": "SUPPORTED_BOUNDARY_SAMPLES_BEFORE_ROBUST_CIRCLE_INLIER_REJECTION"
+    },
+    "candidateDepthThresholdPx": 8.89511171875,
+    "baselineNoiseSigmaPx": 1.4826,
+    "candidates": [
+      {
+        "centerAngleDegrees": 89.64385690044607,
+        "startAngleDegrees": 88.49999734009499,
+        "endAngleDegrees": 90.80000207139425,
+        "widthDegrees": 2.4000000000000004,
+        "maximumDepthPx": 78.99951171875,
+        "medianDepthPx": 59.49951171875,
+        "sampleCount": 24,
+        "symmetryScore": 0.8078238985087944,
+        "tipCenterOffsetFraction": 0.13043478260869565,
+        "slopeConsistencyFraction": 1.0
+      },
+      {
+        "centerAngleDegrees": 169.6401388254335,
+        "startAngleDegrees": 169.49999617903075,
+        "endAngleDegrees": 169.80000540813438,
+        "widthDegrees": 0.4,
+        "maximumDepthPx": 76.99951171875,
+        "medianDepthPx": 76.99951171875,
+        "sampleCount": 4,
+        "symmetryScore": 0.0,
+        "tipCenterOffsetFraction": 1.0,
+        "slopeConsistencyFraction": 1.0
+      },
+      {
+        "centerAngleDegrees": 177.15046084913817,
+        "startAngleDegrees": 176.99999468018999,
+        "endAngleDegrees": 177.30000390929362,
+        "widthDegrees": 0.4,
+        "maximumDepthPx": 162.99951171875,
+        "medianDepthPx": 162.99951171875,
+        "sampleCount": 4,
+        "symmetryScore": 0.9938650122969358,
+        "tipCenterOffsetFraction": 0.3333333333333333,
+        "slopeConsistencyFraction": 1.0
+      }
+    ]
+  },
+  "channelComparison": {
+    "evaluated": true,
+    "centerDifferencePx": 0.7181883037351012,
+    "radiusDifferencePx": 18.591552916846013,
+    "poseAveraged": false,
+    "qualified": true
+  },
+  "physicalIndentationCandidates": [
+    {
+      "bfAngleDegrees": 90.01343213566035,
+      "dfAngleDegrees": 89.64385690044607,
+      "reviewAngleDegrees": 90.01343213566035,
+      "reviewAngleChannel": "BF",
+      "channelAngleDifferenceDegrees": 0.3695752352142847,
+      "crossChannelOverlapFraction": 0.6743221114858607,
+      "combinedWidthDegrees": 1.4000000000000001,
+      "combinedWidthSemantics": "NARROWER_CHANNEL_RESPONSE_WITH_BF_DF_PHYSICAL_OVERLAP_REQUIRED",
+      "combinedSymmetryScore": 0.8078238985087944,
+      "combinedTipCenterOffsetFraction": 0.13043478260869565,
+      "combinedSlopeConsistencyFraction": 1.0,
+      "manufacturedNotchMorphologyEligible": true,
+      "bf": {
+        "centerAngleDegrees": 90.01343213566035,
+        "startAngleDegrees": 89.49999850628738,
+        "endAngleDegrees": 90.80000207139425,
+        "widthDegrees": 1.4000000000000001,
+        "maximumDepthPx": 74.04052734375,
+        "medianDepthPx": 64.04052734375,
+        "sampleCount": 14,
+        "symmetryScore": 0.0,
+        "tipCenterOffsetFraction": 1.0,
+        "slopeConsistencyFraction": 1.0
+      },
+      "df": {
+        "centerAngleDegrees": 89.64385690044607,
+        "startAngleDegrees": 88.49999734009499,
+        "endAngleDegrees": 90.80000207139425,
+        "widthDegrees": 2.4000000000000004,
+        "maximumDepthPx": 78.99951171875,
+        "medianDepthPx": 59.49951171875,
+        "sampleCount": 24,
+        "symmetryScore": 0.8078238985087944,
+        "tipCenterOffsetFraction": 0.13043478260869565,
+        "slopeConsistencyFraction": 1.0
+      },
+      "evidence": "BF_DF_INDEPENDENT_FULL_PERIMETER_GLOBAL_INTERVAL_OVERLAP_ASSIGNMENT"
+    }
+  ],
+  "bfOnlyBoundaryCandidates": [
+    {
+      "centerAngleDegrees": 88.88917570479818,
+      "startAngleDegrees": 88.49999734009499,
+      "endAngleDegrees": 89.10000213792392,
+      "widthDegrees": 0.7000000000000001,
+      "maximumDepthPx": 61.04052734375,
+      "medianDepthPx": 38.04052734375,
+      "sampleCount": 7,
+      "symmetryScore": 0.0,
+      "tipCenterOffsetFraction": 1.0,
+      "slopeConsistencyFraction": 1.0
+    }
+  ],
+  "dfOnlyBoundaryCandidates": [
+    {
+      "centerAngleDegrees": 169.6401388254335,
+      "startAngleDegrees": 169.49999617903075,
+      "endAngleDegrees": 169.80000540813438,
+      "widthDegrees": 0.4,
+      "maximumDepthPx": 76.99951171875,
+      "medianDepthPx": 76.99951171875,
+      "sampleCount": 4,
+      "symmetryScore": 0.0,
+      "tipCenterOffsetFraction": 1.0,
+      "slopeConsistencyFraction": 1.0
+    },
+    {
+      "centerAngleDegrees": 177.15046084913817,
+      "startAngleDegrees": 176.99999468018999,
+      "endAngleDegrees": 177.30000390929362,
+      "widthDegrees": 0.4,
+      "maximumDepthPx": 162.99951171875,
+      "medianDepthPx": 162.99951171875,
+      "sampleCount": 4,
+      "symmetryScore": 0.9938650122969358,
+      "tipCenterOffsetFraction": 0.3333333333333333,
+      "slopeConsistencyFraction": 1.0
+    }
+  ],
+  "selectedReviewOnlyManufacturedNotch": {
+    "bfAngleDegrees": 90.01343213566035,
+    "dfAngleDegrees": 89.64385690044607,
+    "reviewAngleDegrees": 90.01343213566035,
+    "reviewAngleChannel": "BF",
+    "channelAngleDifferenceDegrees": 0.3695752352142847,
+    "crossChannelOverlapFraction": 0.6743221114858607,
+    "combinedWidthDegrees": 1.4000000000000001,
+    "combinedWidthSemantics": "NARROWER_CHANNEL_RESPONSE_WITH_BF_DF_PHYSICAL_OVERLAP_REQUIRED",
+    "combinedSymmetryScore": 0.8078238985087944,
+    "combinedTipCenterOffsetFraction": 0.13043478260869565,
+    "combinedSlopeConsistencyFraction": 1.0,
+    "manufacturedNotchMorphologyEligible": true,
+    "bf": {
+      "centerAngleDegrees": 90.01343213566035,
+      "startAngleDegrees": 89.49999850628738,
+      "endAngleDegrees": 90.80000207139425,
+      "widthDegrees": 1.4000000000000001,
+      "maximumDepthPx": 74.04052734375,
+      "medianDepthPx": 64.04052734375,
+      "sampleCount": 14,
+      "symmetryScore": 0.0,
+      "tipCenterOffsetFraction": 1.0,
+      "slopeConsistencyFraction": 1.0
+    },
+    "df": {
+      "centerAngleDegrees": 89.64385690044607,
+      "startAngleDegrees": 88.49999734009499,
+      "endAngleDegrees": 90.80000207139425,
+      "widthDegrees": 2.4000000000000004,
+      "maximumDepthPx": 78.99951171875,
+      "medianDepthPx": 59.49951171875,
+      "sampleCount": 24,
+      "symmetryScore": 0.8078238985087944,
+      "tipCenterOffsetFraction": 0.13043478260869565,
+      "slopeConsistencyFraction": 1.0
+    },
+    "evidence": "BF_DF_INDEPENDENT_FULL_PERIMETER_GLOBAL_INTERVAL_OVERLAP_ASSIGNMENT"
+  },
+  "manufacturedNotchSelectedForReview": true,
+  "rotationAuthorityGranted": false,
+  "bfDfPoseAveraged": false,
+  "knownNotchLocationConsumed": false,
+  "notchAnglePriorConsumed": false,
+  "fixedAngularSearchWindowConsumed": false,
+  "regressionLabelThresholdConsumed": false,
+  "regressionLabelCandidateFilterConsumed": false,
+  "regressionLabelTieBreakerConsumed": false,
+  "fullPerimeterInference": true,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "developmentCohortUnlabeledGeometryUsedForGenericGateRevision": true,
+  "historicalNotchLabelsConsumed": false,
+  "historicalNotchLocationUsedToDeriveThreshold": false,
+  "sources": {
+    "bfPath": "work\\FRONTSIDE_INSPECTION_REVIEW_ONLY\\staging\\POST2_FRONT_EDGE_V1\\Slot03\\BrightfieldFrontsideWafer\\resizedImage\\Lot_62546-481_POST2_Slot03_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "bfBytes": 475379874,
+    "bfSha256": "55B290A566FC243C81D1EB5E364D56DBB4DBC7A27AE81EA40E1CBF7CB6E570B3",
+    "dfPath": "work\\FRONTSIDE_INSPECTION_REVIEW_ONLY\\staging\\POST2_FRONT_EDGE_V1\\Slot03\\DarkfieldFrontsideWafer\\resizedImage\\Lot_62546-481_POST2_Slot03_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+    "dfBytes": 475379874,
+    "dfSha256": "2EF13BB346E381217F6D8DA4C732C5B97C8EABCD062CBE73FD02BD5DD064DFD5"
+  }
+}

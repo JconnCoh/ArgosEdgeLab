@@ -1,0 +1,632 @@
+{
+  "schema": "argos_ocv03_o3f16_r23_r24_rollover_v1",
+  "revision": "OCV03_O3F16R23_R24_CANDIDATE_FIRST_ROLLOVER_20260904",
+  "createdLocal": "2026-09-04T20:04:07-05:00",
+  "disposition": "PENDING_GATE",
+  "activeStream": "O3F16_ANNULAR_EDGE_UNWRAPPING_AND_NOTCH_CHIPOUT_SEPARATION",
+  "notActiveStream": "O3F8R13T5_TARGETED_11_OR_FULL_978",
+  "authority": {
+    "reviewOnly": true,
+    "detectorOnlyLocalDevelopmentAuthorized": true,
+    "boundedHashLockedRealImageEvaluationAuthorized": true,
+    "packageBuildAuthorized": false,
+    "packagePublicationAuthorized": false,
+    "providerActivationAuthorized": false,
+    "existingTaskOrProcessActionAuthorized": false,
+    "sourceImageMutationOrDeletionAuthorized": false,
+    "automaticHoldClearanceAuthorized": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "scribeOwnedBySeparateWorktree": true
+  },
+  "repository": {
+    "projectRoot": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab",
+    "branch": "codex/fiducial-opencv-d-drive",
+    "preRolloverHead": "18db8af23f54fea31450bab5a79ed694fa3620dc",
+    "preRolloverOriginTip": "18db8af23f54fea31450bab5a79ed694fa3620dc",
+    "finalHandoffTipRule": "THE_SUCCESSOR_PROMPT_AND_ROLLOVER_HOOK_MUST_SUPPLY_THE_EXACT_POST_COMMIT_LOCAL_ORIGIN_MATCHING_TIP",
+    "currentTaskId": "01a069bb-7913-7572-a2a0-91c445faad82"
+  },
+  "governingFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "05797298FF26A4E223232B5C77DF935B57CB7C2BEB3662042BE8F7FFBED044E5"
+    },
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "0A1472402849EE420C1E69ACE311550A0D13084D16A06F1DB4A106D6BC66784F"
+    },
+    {
+      "path": "work/ARGOS_CODEX_TASK_ROLLOVER.md",
+      "sha256": "F80ACD51E6100962D80ABD7594B825C7F4CADF76465CCDAC06F9B9E1F7E2285C"
+    },
+    {
+      "path": "work/ARGOS_CODEX_TASK_ROLLOVER.json",
+      "sha256": "7E97A0987B092476DC4F4ECB89E47C015B8338652FD112814BF17D2347F10D37"
+    },
+    {
+      "path": "work/ARGOS_CODEX_SESSION_SAFETY.md",
+      "sha256": "68BEB214CAAD941DDB0BC0C48359F110831BF24E4E4A631C7AA64E2A3497895F"
+    },
+    {
+      "path": "work/ARGOS_OPENCV_ALL_IMAGE_PROCESSING_MIGRATION.md",
+      "sha256": "A5E93D72409FD4A5627970EAF4CABDE3AEAC3A088F4394F09649B7B7B19D701C"
+    },
+    {
+      "path": "work/ARGOS_OPENCV_ALL_IMAGE_PROCESSING_MIGRATION.json",
+      "sha256": "C1EF35002EB8A294221DB9FF2E15FC7CB4ED48F1299EFC7AD0774BF5B82194B4"
+    },
+    {
+      "path": "work/ARGOS_PATH_LENGTH_SAFETY.md",
+      "sha256": "BEED1B1F76EEA75E1DDEC102CF1C9ABD7F72BFAC816CAF6D15925700C428ED01"
+    },
+    {
+      "path": "utilities/Confirm-ArgosProjectContinuity.ps1",
+      "sha256": "7E1F9D9B9325AA4BA6AF7DDB157795A806A6CBFE1FA0BA29176C5808CE6E62E4"
+    },
+    {
+      "path": "utilities/Confirm-ArgosCodexSessionSafety.ps1",
+      "sha256": "3474408D888FAEBDCEBB0B25BA6337A30298D77BAFBD2BFD023263C3EE429E8F"
+    },
+    {
+      "path": ".codex/hooks/argos_task_rollover.py",
+      "sha256": "517922B30A0995FD90597BC31030253F3EE4900A45D2FFA9BA6F64D33896C42D"
+    }
+  ],
+  "preservedPriorActiveHold": {
+    "checkpointPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16U13_ROUTE_BLOCKED_TERMINAL_UNKNOWN_CHECKPOINT_20260904.md",
+    "checkpointSha256": "1E3D9C95080ADE71E5AA5D6A49914E525AF17576CEA39A662C45BC8C82BA90A4",
+    "requestId": "REQ_20260904T141542420Z_8D4D2F19B527",
+    "requestZipSha256": "16389EEC08CBDB4B3723BB522B3AE56DCF43A7FF3D19FEC15C04E170116FF82F",
+    "state": "TERMINAL_UNKNOWN_OUTPUT_ROOT_OBSERVED_ABSENT",
+    "unchangedRouteFailureCount": 1,
+    "retryAuthorized": false,
+    "instruction": "DO_NOT_RETRY_OR_REPUBLISH_U13; A_LATE_MATCHING_SIGNED_RESPONSE_MAY_ONLY_BE_OBSERVED_AND_PRESERVED"
+  },
+  "runtime": {
+    "python": {
+      "path": "C:/ArgosPy313/Scripts/python.exe",
+      "bytes": 254832,
+      "sha256": "D70FCED7F461F38F9F224D8673FB74E96E4FACB4283FF4E8697543B457FEA8A0",
+      "version": "3.13.2"
+    },
+    "opencvVersion": "5.0.0",
+    "numpyVersion": "2.5.2",
+    "subst": {
+      "path": "C:/Windows/System32/subst.exe",
+      "bytes": 40960,
+      "sha256": "158598ED3D590937C964B43DD91546FFCABAB5636B6CE619B4FFC43224013BB6"
+    },
+    "rolloverObservation": {
+      "rAliasPresent": false,
+      "pythonProcessPresent": false,
+      "note": "R22_AND_R23_REMOVED_THEIR_TEMPORARY_R_ALIAS; DO_NOT_INFER_A_FAILED_RUN_FROM_ITS_ABSENCE"
+    }
+  },
+  "detectorLineage": [
+    {
+      "revision": "R13",
+      "path": "work/O3F8/AnnularUnwrapDiagnosticOpenCvR13.py",
+      "bytes": 7005,
+      "sha256": "35940B211AEB51898B7BA9F279004D404D1C0AF2013B933414D1F58B30EF7748"
+    },
+    {
+      "revision": "R18",
+      "path": "work/O3F8/AnnularUnwrapDiagnosticOpenCvR18.py",
+      "bytes": 113552,
+      "sha256": "510F75463E8494A67442AEACBB7A16F71FE7B307EFEA9231F7CDD7FF6FE34317",
+      "byteIdenticalExternalPath": "C:/O3F16U16PROBE2/engine/AnnularUnwrapDiagnosticOpenCvR18.py"
+    },
+    {
+      "revision": "R19",
+      "path": "work/O3F8/AnnularUnwrapDiagnosticOpenCvR19.py",
+      "bytes": 20366,
+      "sha256": "AFD995353F36BA30078F42D0AB3D53D8B7FDDA20A649C3300A837944CE5CAE31"
+    },
+    {
+      "revision": "R20",
+      "path": "work/O3F8/AnnularUnwrapDiagnosticOpenCvR20.py",
+      "bytes": 8110,
+      "sha256": "8703BC3D3E1B2FB685FD70AA4D13E28BE1A9026D5BB548A298AFB9104049828D"
+    },
+    {
+      "revision": "R21",
+      "path": "work/O3F8/AnnularUnwrapDiagnosticOpenCvR21.py",
+      "bytes": 46372,
+      "sha256": "794F750078F323B99AB17802549ACBBBF61973380982F2A4D53A20E1FCE2C3F4"
+    },
+    {
+      "revision": "R22",
+      "path": "work/O3F8/AnnularUnwrapPost2ComparisonOpenCvR22.py",
+      "bytes": 43684,
+      "sha256": "CEC62EEBBF71B633D3371BD6AA5372F49E430110F4382BAC568167A1DDAA5C07"
+    },
+    {
+      "revision": "R23",
+      "path": "work/O3F8/AnnularUnwrapPost2HeldReviewOpenCvR23.py",
+      "bytes": 16984,
+      "sha256": "E21FA14B88248AE9F50A2022A53FF4F7C7201E8B6DF74B3FAB3FD2DC475B360B"
+    }
+  ],
+  "loadedR21DependencyClosure": [
+    {
+      "path": "C:/O3F16U16PROBE2/engine/AnnularUnwrapDiagnosticOpenCvR12.py",
+      "bytes": 16886,
+      "sha256": "1696DBE407E4461B351C6B939C591A4E652E558DF15BF4AC5CEFB369950FF7F6"
+    },
+    {
+      "path": "C:/O3F16U16PROBE2/engine/AnnularUnwrapDiagnosticOpenCvR13.py",
+      "bytes": 7005,
+      "sha256": "35940B211AEB51898B7BA9F279004D404D1C0AF2013B933414D1F58B30EF7748"
+    },
+    {
+      "path": "C:/O3F16U16PROBE2/engine/AnnularUnwrapDiagnosticOpenCvR18.py",
+      "bytes": 113552,
+      "sha256": "510F75463E8494A67442AEACBB7A16F71FE7B307EFEA9231F7CDD7FF6FE34317"
+    },
+    {
+      "path": "C:/O3F16U16PROBE2/engine/Detect-O3P8FrontSplitNotches.py",
+      "bytes": 21270,
+      "sha256": "41F60AF393E0B2C752AF6B33BB6673145490AE2BB346A4DA8E59A2D42E383E36"
+    },
+    {
+      "path": "C:/O3F16U16PROBE2/engine/FullPerimeterWaferTopologyOpenCvR11.py",
+      "bytes": 86325,
+      "sha256": "B477C290EC9D3AE388BE4EE31049B2B8094F5F30FC6E0DD68AB4A03926EE4059"
+    },
+    {
+      "path": "C:/O3F16U16PROBE2/engine/NativeFrontsideWaferPoseOpenCvV2.py",
+      "bytes": 41486,
+      "sha256": "304219822CC3C7CC8E0ED81BD89E230529057E47E0E7DA4C95FE041F3AF69FAC"
+    },
+    {
+      "path": "C:/O3F16U16PROBE2/engine/NativeFrontsideWaferPoseOpenCvV2R5.py",
+      "bytes": 10649,
+      "sha256": "47F70976D0F3AE0461166D7D3438FE7B11FFE71E8257FD918554F7909E0B9E24"
+    },
+    {
+      "path": "C:/O3F16U16PROBE2/engine/NativeFrontsideWaferPoseOpenCvV2R6.py",
+      "bytes": 9432,
+      "sha256": "90839F14CEEED7C2DFC6E1601195F6927C4631E508F9EB859E77A93745D3FB30"
+    },
+    {
+      "path": "C:/O3F16U16PROBE2/engine/Run-O3F15FrontReconcile.py",
+      "bytes": 41783,
+      "sha256": "DCE1E1F3B42FBD38ED73FF7D346F19C3BAE013EE3003B3485E91A41DAF573C48"
+    },
+    {
+      "path": "C:/O3F16U16PROBE2/engine/Run-O3F15L4FrontReconcile.py",
+      "bytes": 42427,
+      "sha256": "3C403376521B74E3A6DB1C4E008CE8DB36D8D99AE9A0FD7C1FA51481024DBEF4"
+    },
+    {
+      "path": "C:/O3F16U16PROBE2/engine/WaferTopologyAxisOpenCv.py",
+      "bytes": 20511,
+      "sha256": "D8897C1A5B60CB5AA9B0343CF8C9E5A249CCC5DEF5FBCDFE645EC08C354EF3BD"
+    }
+  ],
+  "frozenPredecessorResults": [
+    {
+      "revision": "R15",
+      "path": "C:/O3F16U15LAB_DRAFT4/SUMMARY.json",
+      "bytes": 143148,
+      "sha256": "9EB2D63E2F677177B35EE9AD0EF4A35B3379E2B6845025ABB7D549E4FF1AEEA9"
+    },
+    {
+      "revision": "R18",
+      "path": "C:/O3F16U18LAB_DRAFT1/SUMMARY.json",
+      "bytes": 240860,
+      "sha256": "3B7C3E32307351453F4F0F8A9146703F203B21906D619FE48252E8CAF78709B5"
+    },
+    {
+      "revision": "R20",
+      "path": "C:/O3F16U20LAB_DRAFT1/SUMMARY.json",
+      "bytes": 307006,
+      "sha256": "90FDD521B6322836692754FD88670BB9275EBE12E34F376C0D4B9996382411E6"
+    }
+  ],
+  "r21Result": {
+    "outputRoot": "C:/O3F16U21LAB_DRAFT2",
+    "summary": {
+      "path": "C:/O3F16U21LAB_DRAFT2/SUMMARY.json",
+      "bytes": 495341,
+      "sha256": "FEE52EC0EDE95F1C359071E5742B4596FC750F6DCAC29871892DCF5DA9F2EF32"
+    },
+    "gate": {
+      "path": "C:/O3F16U21LAB_DRAFT2/LOCAL_DETECTOR_GATE.json",
+      "bytes": 2064,
+      "sha256": "B78DE5AF8C3633161AF2B565083B2526062F27425696B1BF9A4A9B4E76EBF6C6",
+      "state": "HOLD_R21_LOCAL_CYAN_AND_CHANNEL_CONTOUR_REVIEW_REQUIRED"
+    },
+    "caseCount": 4,
+    "acceptedNativeContourCount": 6,
+    "bfContourHoldCount": 2,
+    "dfContourHoldCount": 0,
+    "cyanGeometryHoldCount": 4,
+    "allCirclesCenterLocked": true,
+    "maximumEdgeZoneSpacingErrorPx": 0.0,
+    "crossChannelPixelCoordinateTransferPerformed": false,
+    "templateModelUsed": false,
+    "curveFitUsedToPlacePixels": false,
+    "postResultSelectorRelaxationPerformed": false,
+    "operatorJudgment": "GEOMETRY_AND_MOST_CONTOURS_LOOK_GOOD_ENOUGH; MINOR_OUTWARD_ORANGE_SHOULDER_HOOK_AND_BRIGHTNESS_CONTOUR_OWNERSHIP_REMAIN"
+  },
+  "post2Inputs": {
+    "sourceJob": {
+      "path": "work/O3F8/bundle_verify_r4/O3P8_POST2_SHORT_ALIAS_JOB.json",
+      "bytes": 5564,
+      "sha256": "2C2D656A879BBA1DEC6377D1855A949459C7AC6F50145761B8D283076FEAD1F9"
+    },
+    "geometryJob": {
+      "path": "work/O3F8/bundle_verify_r4/O3M9_SLOT16_JOB.json",
+      "bytes": 3278,
+      "sha256": "E384ABD12E9B77DB9B4492504A5D792E316C5396C3B0A3E1D2B1AB11BB4C7DD3"
+    },
+    "ioRoute": {
+      "authorityRoot": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab",
+      "temporaryAliasRoot": "R:/",
+      "aliasSentinelRelativePath": "work/O3F8/bundle_verify_r4/O3P8_POST2_SHORT_ALIAS_JOB.json",
+      "aliasSentinelSha256": "2C2D656A879BBA1DEC6377D1855A949459C7AC6F50145761B8D283076FEAD1F9",
+      "canonicalEffectivePathRangeWith32Reserve": "216_TO_220",
+      "canonicalDisposition": "SHORT_ALIAS_REQUIRED",
+      "aliasWasByteIdentityVerified": true,
+      "aliasWasRemovedAfterRun": true,
+      "instruction": "USE_THE_UNCHANGED_RECORDED_ALIAS_ROUTE_ONLY; IF_IT_FAILS_ONCE_STOP_WITH_THE_EXACT_BLOCKER"
+    },
+    "rasters": [
+      {
+        "identity": "62546-481_POST2_SLOT01",
+        "channel": "BF",
+        "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot01/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot01_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+        "bytes": 475379874,
+        "widthPx": 14411,
+        "heightPx": 10995,
+        "sha256": "D03C10550401B3AC2AFE42CC066E192DA9CC8D3FFC8F1E2497FA9C7C39CA5052"
+      },
+      {
+        "identity": "62546-481_POST2_SLOT01",
+        "channel": "DF",
+        "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot01/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot01_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+        "bytes": 475379874,
+        "widthPx": 14411,
+        "heightPx": 10995,
+        "sha256": "C1759B44CE9D7ACA18D87413D10936578A67D35C018A0D646A78C45AFE5AA536"
+      },
+      {
+        "identity": "62546-481_POST2_SLOT03",
+        "channel": "BF",
+        "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot03/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot03_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+        "bytes": 475379874,
+        "widthPx": 14411,
+        "heightPx": 10995,
+        "sha256": "55B290A566FC243C81D1EB5E364D56DBB4DBC7A27AE81EA40E1CBF7CB6E570B3"
+      },
+      {
+        "identity": "62546-481_POST2_SLOT03",
+        "channel": "DF",
+        "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot03/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot03_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+        "bytes": 475379874,
+        "widthPx": 14411,
+        "heightPx": 10995,
+        "sha256": "2EF13BB346E381217F6D8DA4C732C5B97C8EABCD062CBE73FD02BD5DD064DFD5"
+      },
+      {
+        "identity": "62546-481_POST2_SLOT17",
+        "channel": "BF",
+        "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot17/BrightfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_BrightfieldFrontsideWafer_PM2_resizedImage.bmp",
+        "bytes": 475379874,
+        "widthPx": 14411,
+        "heightPx": 10995,
+        "sha256": "148040E21415909932DAE2C70F6F50DB025769F45238970743B421503AE86F94"
+      },
+      {
+        "identity": "62546-481_POST2_SLOT17",
+        "channel": "DF",
+        "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/staging/POST2_FRONT_EDGE_V1/Slot17/DarkfieldFrontsideWafer/resizedImage/Lot_62546-481_POST2_Slot17_DarkfieldFrontsideWafer_PM2_resizedImage.bmp",
+        "bytes": 475379874,
+        "widthPx": 14411,
+        "heightPx": 10995,
+        "sha256": "9AB0AA6942948F54635C51B173618FC8478C75791E9F859FDD135FFDE52C153C"
+      }
+    ],
+    "seedDocuments": [
+      {
+        "identity": "62546-481_POST2_SLOT01",
+        "path": "work/O3D2/R6/62546-481_POST2_SLOT01/NATIVE_WAFER_POSE_OPENCV_V2.json",
+        "bytes": 18940,
+        "sha256": "27C8FA9C3F308DC50B81D5DB4A145E402C3CB0CE55A93BF8574AEF7B4C693659",
+        "reviewAngleDegrees": 90.03556734938732
+      },
+      {
+        "identity": "62546-481_POST2_SLOT03",
+        "path": "work/O3D2/R6/62546-481_POST2_SLOT03/NATIVE_WAFER_POSE_OPENCV_V2.json",
+        "bytes": 11653,
+        "sha256": "A2721C6834623B8315BEDCF8FEC221850CBA87D9BA594970C6BC62E64B267AD1",
+        "reviewAngleDegrees": 90.01343213566035
+      },
+      {
+        "identity": "62546-481_POST2_SLOT17",
+        "path": "work/O3D2/R6/62546-481_POST2_SLOT17/NATIVE_WAFER_POSE_OPENCV_V2.json",
+        "bytes": 9208,
+        "sha256": "4ED3D611A2C69F4F9B3BC26F6ECCC5DDDFD7339F8CE6252B7FF83A74C8D1C3F8",
+        "reviewAngleDegrees": 89.68100140621877
+      }
+    ],
+    "scorerLabels": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3D2/O3D2_POST2_SCORER_ONLY_LABELS.json",
+      "bytes": 1537,
+      "sha256": "F8337BB2DDA12DBBA5769677C5A1A31E54CDD54659E0137F2EB9694EC2CCA668",
+      "readBeforeInferenceFreezeAllowed": false,
+      "slot01KnownChipoutCenterDegrees": 85.50363964412367,
+      "slot01KnownChipoutIntervalDegrees": [
+        83.59982579481118,
+        87.39625458844023
+      ],
+      "controlIdentities": [
+        "62546-481_POST2_SLOT03",
+        "62546-481_POST2_SLOT17"
+      ]
+    }
+  },
+  "r22Inference": {
+    "outputRoot": "C:/O3F16U22P2_INFER_DRAFT1",
+    "summary": {
+      "path": "C:/O3F16U22P2_INFER_DRAFT1/SUMMARY.json",
+      "bytes": 560984,
+      "sha256": "9818ADAC53A39E969F9A368098E5842083475BE990B8AFF6D3850BD8152E1564",
+      "state": "COMPLETE_DIAGNOSTIC_ONLY_R22_POST2_INFERENCE"
+    },
+    "gate": {
+      "path": "C:/O3F16U22P2_INFER_DRAFT1/INFERENCE_GATE.json",
+      "bytes": 1021,
+      "sha256": "8262ED3CB363377828D1037008E920182E594F2282A07EAD08F95FBD55970BF2",
+      "state": "HOLD_R22_POST2_INFERENCE_CONTRACT_FAILURE"
+    },
+    "requestedMembers": 3,
+    "completedMembers": 3,
+    "completedChannels": 6,
+    "memberErrorCount": 0,
+    "assetRecordCount": 204,
+    "allAssetRecordsHashVerified": true,
+    "soleFailedGateCheck": "allNotchOwnershipUnambiguous",
+    "full360InferenceBeforeLabels": true,
+    "allChannelCirclesQualified": true,
+    "cyanGeometryVerifiedChannelCount": 1,
+    "candidateOutcomes": [
+      {
+        "identity": "62546-481_POST2_SLOT01",
+        "eligiblePairCount": 2,
+        "pairState": "HOLD_DIAGNOSTIC_AMBIGUOUS_MANUFACTURED_NOTCH_GRAPH",
+        "pairs": [
+          {
+            "bfAngleDegrees": 86.24350395636647,
+            "dfAngleDegrees": 85.90293025565222,
+            "meaningBeforeLabels": "NEUTRAL_PHYSICAL_INDENTATION_COMPETITOR"
+          },
+          {
+            "bfAngleDegrees": 90.0134476604567,
+            "dfAngleDegrees": 90.02133833741311,
+            "meaningBeforeLabels": "NEUTRAL_PHYSICAL_INDENTATION_COMPETITOR"
+          }
+        ]
+      },
+      {
+        "identity": "62546-481_POST2_SLOT03",
+        "eligiblePairCount": 0,
+        "pairState": "HOLD_DIAGNOSTIC_NO_MANUFACTURED_NOTCH_PAIR",
+        "observedPhysicalPair": {
+          "bfAngleDegrees": 89.65515588093582,
+          "dfAngleDegrees": 89.63451756026612,
+          "manufacturedNotchMorphologyEligible": false
+        }
+      },
+      {
+        "identity": "62546-481_POST2_SLOT17",
+        "eligiblePairCount": 0,
+        "pairState": "HOLD_DIAGNOSTIC_NO_MANUFACTURED_NOTCH_PAIR",
+        "dfCandidateAngleDegrees": 89.6431,
+        "bfMergedResponseDegrees": [
+          73.70,
+          90.93
+        ],
+        "bfMergedResponseCenterDegrees": 84.2625
+      }
+    ],
+    "notchOwnershipStateAllChannels": "HOLD_NO_UNIQUE_R21_CONTOUR_OWNERSHIP_METRICS",
+    "notchOwnedColumnCountAllChannels": 0,
+    "zeroOwnedColumnsMeansClear": false,
+    "oneSecondWrapperTimeoutBeforeActualRun": {
+      "occurred": true,
+      "outputRootCreated": false,
+      "pythonProcessRetained": false,
+      "rAliasRetained": false,
+      "detectorMemberError": false,
+      "packageAttempt": false,
+      "instruction": "PRESERVE_AS_ORCHESTRATION_METADATA_ONLY; DO_NOT_COUNT_AS_A_DETECTOR_OR_PACKAGE_FAILURE"
+    }
+  },
+  "r23HeldReview": {
+    "outputRoot": "C:/O3F16U23P2_HELD_REVIEW_DRAFT1",
+    "summary": {
+      "path": "C:/O3F16U23P2_HELD_REVIEW_DRAFT1/SUMMARY.json",
+      "bytes": 28962,
+      "sha256": "6A7D841E390B67D764BAB01CB6C653493653AB3DE6EB47CB73C65D318CD9ADB2",
+      "state": "HOLD_R23_POST2_VISUAL_COMPARISON_NOTCH_OWNERSHIP_UNRESOLVED"
+    },
+    "gate": {
+      "path": "C:/O3F16U23P2_HELD_REVIEW_DRAFT1/REVIEW_GATE.json",
+      "bytes": 944,
+      "sha256": "BE0922CC30DE828AED88C38FFA715DE633CA173F68E3BC44B52F387CE79A6CB8",
+      "state": "HOLD_R23_OPERATOR_VISUAL_REVIEW_READY_NOTCH_OWNERSHIP_UNRESOLVED"
+    },
+    "physicalFrontierSheet": {
+      "path": "C:/O3F16U23P2_HELD_REVIEW_DRAFT1/POST2_HELD_PHYSICAL_FRONTIER_COMPARISON.png",
+      "bytes": 1941969,
+      "sha256": "1B4FB3B9C1E39D5B341D37583331BB190CD95E739A1EA538457BB91431100DFF"
+    },
+    "composedTraceSheet": {
+      "path": "C:/O3F16U23P2_HELD_REVIEW_DRAFT1/POST2_HELD_COMPOSED_TRACE_COMPARISON.png",
+      "bytes": 1928851,
+      "sha256": "AA1DAA2A28E93846DD90EE1E8C15606924AFEB1C4FAD68E9A11696E2BA9415C8"
+    },
+    "summaryRecordCount": 61,
+    "outputAssetCount": 50,
+    "allOutputAssetsHashVerified": true,
+    "visualSemantics": {
+      "magentaFullWidthBar": "UNRESOLVED_NOTCH_OWNERSHIP_NOT_ALL_PIXELS_INVALID",
+      "red": "PRE_COMPOSITION_PHYSICAL_FRONTIER",
+      "greenAndOrange": "COMPOSED_TRACE_CONTEXT_ONLY",
+      "chipoutScoringPerformed": false,
+      "selectionPerformed": false,
+      "holdClearancePerformed": false
+    }
+  },
+  "operatorFeedbackFiles": [
+    {
+      "path": "work/O3F16R23_FEEDBACK/01_edge_zone_and_third_line.png",
+      "bytes": 15403,
+      "sha256": "5F96DB2AAFDC507D6AF5F7A0164F31F1819287A8642525B3578201A9EADC0DDC",
+      "meaning": "20PX_INNER_ZONE_PREFERRED_OVER_32PX_AND_THIRD_BRIGHT_PIXEL_EDGE_PROPOSED"
+    },
+    {
+      "path": "work/O3F16R23_FEEDBACK/02_bf_cyan_and_notch_concern.png",
+      "bytes": 81830,
+      "sha256": "676B243CCD042FE3F4F9930A01B5596A9A4A375A61A4813E2C04840AFD7E554C",
+      "meaning": "BF_CYAN_APPEARED_FARTHER_OUT_AND_ORANGE_NOTCH_CONTOUR_SPOTTY"
+    },
+    {
+      "path": "work/O3F16R23_FEEDBACK/03_hotspot_bf_notch_concern.png",
+      "bytes": 310500,
+      "sha256": "10DE91E0AB046CDA6082A97F1602DF4C0D500E16511C89EB7F750D1BC4C26CBD",
+      "meaning": "HOTSPOT_BF_NOTCH_DARK_AND_DIE_EDGE_FALSE_RESPONSES"
+    },
+    {
+      "path": "work/O3F16R23_FEEDBACK/04_circle_only_missing_green.png",
+      "bytes": 659456,
+      "sha256": "6E1320BEFF9ACC43E63F3EAF953C3CD5403710E096D9BA66AA8525D57731EF57",
+      "meaning": "GREEN_PIXEL_EDGE_SHOULD_EXIST_ON_CIRCLE_ONLY_FOR_LATER_CHIPOUT_BEVEL_EVIDENCE"
+    },
+    {
+      "path": "work/O3F16R23_FEEDBACK/05_bf_high_contrast_notch.png",
+      "bytes": 163413,
+      "sha256": "6F9172A402CDC7752E317D1EAF0E1264F29A623AB23E92AD99D068BEA2AD5294",
+      "meaning": "OBVIOUS_HIGH_CONTRAST_BF_NOTCH_SHOULD_BE_CONTOURABLE"
+    },
+    {
+      "path": "work/O3F16R23_FEEDBACK/06_forced_notch_shape_flaw.png",
+      "bytes": 116624,
+      "sha256": "CC037594D5FC43F06198A0CE1236AC5DF125A956C942DE2CFBC88A3CADFA1EE0",
+      "meaning": "DIE_PATTERN_WAS_FORCED_INTO_NOTCH_LIKE_CURVE_EXPOSING_SELECTOR_ORDERING_FLAW"
+    },
+    {
+      "path": "work/O3F16R23_FEEDBACK/07_df_same_chuck_notch.png",
+      "bytes": 292305,
+      "sha256": "FD282C869DF10001F71FDF4C4386447F7DD571E4D698AE79A3DF7598FDB5938A",
+      "meaning": "DF_CLEAN_NOTCH_AND_SAME_CHUCK_RELATION_CAN_SUPPORT_BF_ANGULAR_POSE_WITHOUT_PIXEL_COPY"
+    },
+    {
+      "path": "work/O3F16R23_FEEDBACK/08_minor_notch_shoulder_hook.png",
+      "bytes": 142815,
+      "sha256": "12A7C4C139ACEC84FC4BA52C56C29FA91F4A749938B92CE98919A55650D7D869",
+      "meaning": "R21_LOOKED_GOOD_ENOUGH_EXCEPT_MINOR_OUTWARD_SHOULDER_HOOK"
+    },
+    {
+      "path": "work/O3F16R23_FEEDBACK/09_notch_brightness_comparison.png",
+      "bytes": 318181,
+      "sha256": "C75EE7F21983605B5466363E5DE785A077DD46982654368D4BB5439E32D54E0E",
+      "meaning": "BRIGHTNESS_SUPPORTED_CONTOUR_SHOULD_DIFFERENTIATE_SMOOTH_NOTCH_FROM_IRREGULAR_RESPONSE"
+    },
+    {
+      "path": "work/O3F16R23_FEEDBACK/10_post2_brightness_vs_chipout.png",
+      "bytes": 352524,
+      "sha256": "859EC7D1B6D8695927E8834D57216E43C38EC6AC0FD5D544B4702AEF1FDC724E",
+      "meaning": "POST2_NOTCH_AND_LARGE_FRONT_CHIPOUT_COMPARISON"
+    }
+  ],
+  "operatorConclusions": [
+    "KEEP_FIXED_CENTER_TRUE_CIRCLE_OUTER_GEOMETRY_AND_EXACT_20PX_INNER_CIRCLE_EDGE_ZONE",
+    "DO_NOT_REINTRODUCE_PATH_CENTERED_WAVY_RECENTERING_STRETCHING_OR_STITCH_MORPHING",
+    "TRACE_THE_ACTUAL_BRIGHTNESS_SUPPORTED_EDGE_BEFORE_DECIDING_WHICH_CANDIDATE_IS_A_NOTCH",
+    "THE_BRIGHT_PIXEL_EDGE_LAYER_MUST_APPEAR_ON_CIRCLE_ONLY_AS_WELL_AS_NOTCH_OUTPUTS_FOR_LATER_CHIPOUT_BEVEL_EVIDENCE",
+    "BF_NOTCH_MUST_BE_ATTEMPTED_INDEPENDENTLY_EVEN_WHEN_DF_IS_CLEARER",
+    "SAME_CHUCK_DF_POSE_MAY_BOUND_BF_ANGULAR_LOCATION_WHEN_BF_CONTOUR_IS_HELD_BUT_MUST_NOT_COPY_DF_PIXELS_OR_CLEAR_THE_BF_HOLD",
+    "DF_IS_THE_LATER_CHIPOUT_DETECTION_CHANNEL_AND_BF_IS_EVIDENCE_OR_CORROBORATION",
+    "POST2_HAS_A_LARGE_FRONTSIDE_CHIPOUT_POSITIVE_ON_SLOT01; THE_EARLIER_MICROCHIPOUT_DESCRIPTION_WAS_CORRECTED_AS_BACKSIDE_AND_IS_NOT_THIS_TEST"
+  ],
+  "diagnosis": {
+    "mainIssue": "R22_EVALUATES_NOTCH_PAIR_SELECTION_BEFORE_THE_CANDIDATE_SPECIFIC_NATIVE_BRIGHTNESS_CONTOUR_THAT_COULD_DISAMBIGUATE_NOTCH_FROM_CHIPOUT_OR_DIE_PATTERN",
+    "greenTraceIssue": "THE_NORMAL_BEVEL_GREEN_TRACE_IS_REMOVED_INSIDE_CANDIDATE_COLUMNS_SO_IT_CANNOT_BY_ITSELF_SHOW_THE_FULL_NOTCH_CONTOUR",
+    "redTraceIssue": "THE_RED_PRE_COMPOSITION_DEEP_FRONTIER_IS_UNSMOOTHED_AND_CAN_SWITCH_BETWEEN_PARALLEL_BRIGHTNESS_BANDS",
+    "orangeTraceIssue": "THE_ORANGE_NATIVE_CONTOUR_RUNS_ONLY_AFTER_A_UNIQUE_BF_DF_PAIR_SO_USEFUL_SHAPE_EVIDENCE_ARRIVES_TOO_LATE",
+    "darkWaferConclusion": "DARK_HOTSPOT_BF_REMAINS_A_REAL_CHANNEL_LIMIT_BUT_IS_NOT_THE_PRIMARY_CAUSE_OF_THE_OBVIOUS_POST2_BF_CONTOUR_FAILURES",
+    "prohibitedShortcut": "DO_NOT_FIT_AN_IDEAL_NOTCH_FIRST_AND_PULL_PIXELS_TO_IT; THAT_CAN_FORCE_DIE_OR_CHIPOUT_RESPONSE_INTO_A_MANUFACTURED_ARCH"
+  },
+  "r24DesignContract": {
+    "plannedSourcePath": "work/O3F8/AnnularUnwrapCandidateFirstOpenCvR24.py",
+    "plannedSourceSha256": null,
+    "plannedOutputRoot": "C:/O3F16U24P2_CANDIDATE_DRAFT1",
+    "freshRootRequired": true,
+    "preserveR21R22R23Bytes": true,
+    "sequence": [
+      "ENUMERATE_ALL_FULL_360_INDENTATION_CANDIDATES_WITHOUT_LABEL_OR_FIXED_NOTCH_WINDOW",
+      "FOR_EACH_CANDIDATE_AND_CHANNEL_TRACE_A_SHOULDER_TO_SHOULDER_CONTINUOUS_NATIVE_EDGE_FROM_BRIGHTNESS_SUPPORT",
+      "ALLOW_ENHANCEMENT_TO_LOCATE_SUPPORT_BUT_REQUIRE_EVERY_ACCEPTED_COORDINATE_TO_RETAIN_RAW_NATIVE_POLARITY_OR_TRANSITION_SUPPORT",
+      "MEASURE_SINGLE_APEX_MONOTONIC_SIDES_RETURN_TO_THE_SAME_FIXED_CIRCLE_SMOOTHNESS_BRANCHING_JAGGEDNESS_AND_CURVATURE_REVERSALS",
+      "PAIR_ONLY_AFTER_CHANNEL_LOCAL_CONTOUR_METRICS_EXIST_AND_MEASURE_BF_DF_ANGULAR_AND_SHAPE_AGREEMENT",
+      "CLASSIFY_SMOOTH_MANUFACTURED_ARCH_AS_NOTCH_CANDIDATE_AND_RETAIN_IRREGULAR_OR_BRANCHED_RESPONSE_AS_NEUTRAL_NON_NOTCH_DEEP_EDGE_RESPONSE",
+      "USE_FROZEN_R6_SEED_ANGLE_ONLY_AS_SECONDARY_CORROBORATION_OR_TIE_BREAK_AFTER_CANDIDATE_FIRST_CONTOURING_WITH_UNCHANGED_0_8_DEGREE_TOLERANCE",
+      "WHEN_BF_IS_UNREADABLE_AND_DF_HAS_EXACTLY_ONE_QUALIFIED_CONTOUR_USE_DF_SAME_CHUCK_ANGLE_ONLY_WHILE_RETAINING_BF_CONTOUR_HOLD_AND_TRANSFERRING_ZERO_PIXEL_COORDINATES",
+      "FREEZE_AND_HASH_THE_COMPLETE_NEUTRAL_NON_NOTCH_POPULATION_BEFORE_READING_POST2_SCORER_LABELS"
+    ],
+    "requiredMeasurements": [
+      "RAW_SUPPORTED_COLUMN_COUNT_AND_FRACTION",
+      "MAXIMUM_CONTIGUOUS_UNSUPPORTED_RUN",
+      "SHOULDER_RETURN_RESIDUAL_LEFT_AND_RIGHT_TO_FIXED_OUTER_CIRCLE",
+      "APEX_COUNT_AND_APEX_OFFSET",
+      "LEFT_AND_RIGHT_MONOTONIC_SLOPE_SUPPORT",
+      "CURVATURE_REVERSAL_COUNT",
+      "BRANCH_OR_PARALLEL_BAND_SWITCH_COUNT",
+      "CONTOUR_JAGGEDNESS_AND_SMOOTHNESS",
+      "ANGULAR_WIDTH_AND_FULL_INWARD_DEPTH",
+      "BF_DF_CENTER_WIDTH_DEPTH_AND_SHAPE_AGREEMENT"
+    ],
+    "acceptanceChecksBeforeLabels": [
+      "SLOT01_SMOOTH_APPROXIMATELY_90_DEGREE_NOTCH_REMAINS_SEPARATE_FROM_IRREGULAR_APPROXIMATELY_86_DEGREE_RESPONSE",
+      "SLOT03_DF_AND_WHEN_SUPPORTED_BF_RECOVER_THE_OBVIOUS_APPROXIMATELY_90_DEGREE_NOTCH_WITHOUT_FORCING_PIXELS_TO_AN_IDEAL_ARCH",
+      "SLOT17_DF_RECOVERS_THE_APPROXIMATELY_89_64_DEGREE_NOTCH_AND_THE_BROAD_BF_MERGED_RESPONSE_REMAINS_HELD_WHOLE_IF_NOT_SEPARABLE",
+      "HOTSPOT_REGRESSION_PRESERVES_DF_NOTCH_AND_DOES_NOT_FABRICATE_A_BF_CONTOUR",
+      "CYAN_OUTER_CIRCLE_AND_YELLOW_20PX_INNER_CIRCLE_DO_NOT_MOVE_FROM_R21_GEOMETRY",
+      "NO_WAVY_RECENTERING_RESAMPLING_STRETCHING_OR_ARTIFICIAL_STITCH_DISCONTINUITY",
+      "GREEN_BRIGHT_EDGE_EVIDENCE_IS_RENDERED_ON_CIRCLE_ONLY_AND_NOTCH_REVIEW_OUTPUTS",
+      "ALL_EXISTING_R21_R22_R23_AND_U13_HOLDS_REMAIN_VISIBLE_AND_UNCLEARED"
+    ],
+    "postFreezeEvaluation": [
+      "READ_THE_HASH_PINNED_SCORER_LABEL_ONLY_AFTER_NEUTRAL_POPULATION_FREEZE",
+      "COMPARE_SLOT01_KNOWN_LARGE_FRONTSIDE_CHIPOUT_RESPONSE_AGAINST_SAME_ANGLE_SLOT03_AND_SLOT17_CONTROLS",
+      "KEEP_DF_AS_DETECTION_CHANNEL_AND_BF_AS_CORROBORATING_EVIDENCE",
+      "STOP_FOR_OPERATOR_VISUAL_REVIEW_BEFORE_ANY_PACKAGE_PUBLICATION_OR_BROADER_CORPUS"
+    ]
+  },
+  "packageStopLoss": {
+    "appliesTo": "ANY_LATER_R24_OR_SUCCESSOR_PACKAGE_IF_SEPARATELY_AUTHORIZED",
+    "packageAttemptCountAtRollover": 0,
+    "maximumPackageAttempts": 3,
+    "fourthPackageAttemptAuthorized": false,
+    "automaticPackageRetryAuthorized": false,
+    "countingRule": "ONCE_PACKAGE_CONSTRUCTION_BEGINS_EACH_FRESH_PACKAGE_NAMESPACE_THAT_FAILS_BUILD_REHEARSAL_SIGNATURE_PUBLICATION_OR_EXECUTION_COUNTS_AS_ONE_ATTEMPT",
+    "sourceOnlyDraftCorrectionsBeforeAny_PACKAGE_NAMESPACE": "NOT_A_PACKAGE_ATTEMPT",
+    "stricterRouteRule": "IF_THE_UNCHANGED_RECORDED_LIVE_ROUTE_FAILS_ONCE_STOP_THAT_EXECUTION_ATTEMPT_REGARDLESS_OF_REMAINING_PACKAGE_BUDGET",
+    "currentInstruction": "NO_PACKAGE_IS_AUTHORIZED_NOW; DO_NOT_BUILD_ONE_DURING_THE_IMMEDIATE_R24_LOCAL_DETECTOR_STEP"
+  },
+  "exactNextAction": "VERIFY_THE_HASH_PINNED_R18_THROUGH_R23_LINEAGE_AND_POST2_INPUTS; AUTHOR_A_FRESH_R24_DETECTOR_ONLY_SOURCE_REVISION_IMPLEMENTING_CANDIDATE_FIRST_CHANNEL_LOCAL_NATIVE_BRIGHTNESS_CONTOURS_WITHOUT_LABEL_INPUT_OR_GEOMETRY_MOVEMENT; RUN_THE_SMALLEST_SOURCE_ONLY_CHECKS; THEN_RUN_ONE_BOUNDED_FULL_RES_LOCAL_POST2_PLUS_PRIOR_HOTSPOT_REGRESSION_THROUGH_THE_UNCHANGED_RECORDED_ALIAS_ROUTE_INTO_A_FRESH_OUTPUT_ROOT; FREEZE_THE_COMPLETE_NEUTRAL_RESPONSE_POPULATION_BEFORE_LABEL_READ; STOP_ON_ONE_ROUTE_FAILURE_OR_FOR_OPERATOR_VISUAL_REVIEW; DO_NOT_BUILD_OR_PUBLISH_A_PACKAGE",
+  "successorAcknowledgementRequirements": [
+    "STATE_THAT_ACTIVE_WORK_IS_O3F16_ANNULAR_EDGE_UNWRAPPING_NOT_T5",
+    "STATE_THAT_R24_IS_CANDIDATE_FIRST_BRIGHTNESS_SUPPORTED_CONTOURING_BEFORE_NOTCH_SELECTION",
+    "STATE_THAT_R6_ANGLES_ARE_SECONDARY_ONLY_AND_POST2_LABELS_ARE_POST_FREEZE_ONLY",
+    "STATE_THAT_CYAN_GEOMETRY_AND_20PX_YELLOW_ZONE_REMAIN_FIXED",
+    "STATE_THAT_DF_MAY_SUPPLY_SAME_CHUCK_ANGLE_ONLY_WITH_ZERO_CROSS_CHANNEL_PIXEL_TRANSFER",
+    "STATE_THAT_NO_PACKAGE_IS_CURRENTLY_AUTHORIZED_AND_THERE_CAN_NEVER_BE_A_FOURTH_PACKAGE_ATTEMPT",
+    "NAME_THE_FIRST_CONCRETE_ACTION_AS_HASH_VERIFY_THEN_AUTHOR_FRESH_R24_SOURCE"
+  ]
+}

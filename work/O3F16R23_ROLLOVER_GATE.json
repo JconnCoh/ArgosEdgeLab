@@ -1,0 +1,44 @@
+{
+  "schema": "argos_ocv03_o3f16_r23_r24_rollover_gate_v1",
+  "createdLocal": "2026-09-04T20:04:07-05:00",
+  "state": "PASS_O3F16_R23_R24_FILE_BACKED_ROLLOVER_READY",
+  "disposition": "PENDING_GATE",
+  "manifest": {
+    "path": "work/O3F16R23_ROLLOVER.json",
+    "bytes": 29209,
+    "sha256": "7B05BF8F710E6DC684F71D62E19661C6D85F417397B8271E74828E0618DF2A2C"
+  },
+  "checks": {
+    "manifestJsonParsed": true,
+    "allPinnedExistingFilesPresent": true,
+    "allPinnedExistingFileHashesMatch": true,
+    "pinnedExistingFileCount": 64,
+    "detectorR18ThroughR23Recorded": true,
+    "r21R22R23OutputsRecorded": true,
+    "allSixPost2BmpHashesRecomputedAndMatched": true,
+    "allThreeR6SeedHashesMatched": true,
+    "scorerLabelsPinnedAndPostFreezeOnly": true,
+    "tenOperatorFeedbackFilesCopiedSeparately": true,
+    "tenOperatorFeedbackCopiesHashMatchOriginals": true,
+    "u13TerminalUnknownHoldPreserved": true,
+    "r22AndR23NotchOwnershipHoldsPreserved": true,
+    "candidateFirstR24DesignRecorded": true,
+    "noDetectorSourceChangedDuringRollover": true,
+    "noImageSourceChangedOrDeleted": true,
+    "noJbodPortalTaskProcessOrProviderAction": true,
+    "noPackageBuiltOrPublished": true,
+    "packageAttemptCountZeroForR24": true,
+    "maximumPackageAttemptsThree": true,
+    "noFourthPackageAttempt": true,
+    "scribeUntouched": true,
+    "reviewOnly": true,
+    "trainingXmlProductionFalse": true
+  },
+  "handoff": {
+    "checkpointPath": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16R23_R24_ROLLOVER_20260904.md",
+    "checkpointSha256Binding": "EXTERNAL_IN_CONTINUITY_AND_HANDOFF_PAYLOAD_TO_AVOID_SELF_REFERENCE",
+    "continuityPath": "work/ARGOS_CONTINUITY_STATE.json",
+    "branch": "codex/fiducial-opencv-d-drive",
+    "finalCommit": "SUPPLIED_BY_CREATE_THREAD_PROMPT_AND_COMPLETE_HANDOFF_HOOK"
+  }
+}

@@ -1,8 +1,56 @@
-# Active ArgosEdgeLab state - OCV-03 O3F16 U13 route blocked / terminal unknown - 2026-09-04
+# Active ArgosEdgeLab state - OCV-03 O3F16 R23 rollover / R24 candidate-first next - 2026-09-04
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3F16 R23 rollover / R24 candidate-first next — 2026-09-04
+
+The active stream is O3F16 annular edge unwrapping and notch/chipout
+separation, not O3F8R13T5. Exact ignored R18–R23 detector bytes and ten recent
+operator-feedback screenshots are now preserved as tracked, hash-pinned files.
+The complete 64-file dependency/evidence inventory passes with zero missing or
+mismatched hashes.
+
+R21 keeps a center-locked true cyan outer circle and exactly-20-pixel inward
+yellow circle without path-centered resampling or wavy geometry. R22 completed
+all three POST2 members/six channels with zero execution errors, but correctly
+held because notch ownership was not unique. R23 preserved that hold and made
+the actual problem clear: green is removed in candidate columns, red can jump
+between parallel brightness bands, and the candidate-specific native contour
+is evaluated only after notch-pair selection.
+
+R24 must reverse that ordering. Trace an actual shoulder-to-shoulder,
+channel-local, raw-supported brightness contour for every full-360 candidate;
+measure apex, monotonic sides, circle return, smoothness, branches, band
+switches, width, and depth; only then decide notch compatibility. Irregular
+responses remain neutral `NON_NOTCH_DEEP_EDGE_RESPONSE`. R6 angles are
+secondary post-contour corroboration only; POST2 chipout labels remain
+post-freeze only. DF may supply same-chuck angle when BF is held, but no DF
+pixel coordinate may transfer and no BF hold may clear.
+
+Next, verify the pinned lineage and inputs, author fresh
+`work/O3F8/AnnularUnwrapCandidateFirstOpenCvR24.py`, run minimal source checks,
+then perform one bounded full-resolution local POST2 plus prior-hotspot
+regression through the unchanged short-alias route into fresh
+`C:/O3F16U24P2_CANDIDATE_DRAFT1`. Freeze the neutral population before labels
+and stop for operator review. One route failure stops the attempt.
+
+No package is currently authorized. If packaging is separately authorized
+later, the R24 successor line has a hard maximum of three package attempts and
+no fourth attempt; automatic retry is prohibited. U13 remains terminal-unknown
+and no-retry. T5, targeted 11, full 978, scribe, tasks/processes, provider
+activation, source mutation/deletion, hold clearance, training, XML, and
+production remain unauthorized.
+
+Rollover manifest: `work/O3F16R23_ROLLOVER.json`, SHA-256
+`7B05BF8F710E6DC684F71D62E19661C6D85F417397B8271E74828E0618DF2A2C`.
+Rollover gate: `work/O3F16R23_ROLLOVER_GATE.json`, SHA-256
+`A65140C99AE76019DE6B5556CA9EA661E7B1162268A17928E27F487C4A6D5FFA`.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16R23_R24_ROLLOVER_20260904.md`,
+SHA-256 `F335161BD260AC602AA6E78D8B180F0A61A64BDAA0CFD97456BEF419AF633619`.
 
 ## OCV-03 O3F16 U13 route blocked / terminal unknown — 2026-09-04
 
