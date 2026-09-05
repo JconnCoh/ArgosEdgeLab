@@ -1,0 +1,28 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R18W3_COLLECT_FROM_R18W2_COLLECTOR_REMEDIATION_20260905A",
+  "createdUtc": "2026-09-05T19:45:00Z",
+  "sourceGuard": {
+    "checkedUtc": "2026-09-05T19:43:18.9244041Z",
+    "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "source": "work/OPENCV_SCRIBE_R18W2/Collect-R18W2Response.ps1",
+    "sha256": "A1AC31B69AF76A8544293EA295779E64F4998409A30B566270FF4BCECCEC882B"
+  },
+  "identifierRemediation": [
+    {"source":"REQ_R18W2","generated":"REQ_R18W3","disposition":"REPLACED"},
+    {"source":"R18W2","generated":"R18W3","disposition":"REPLACED"},
+    {"source":"single overlay and Q/W/Z crosswalk","generated":"24-file proposal/BF/DF inventory","disposition":"REPLACED"},
+    {"source":"fixed predecessor response","generated":"fixed authenticated R18W3 response plus archive-uniqueness and publication-boundary binding","disposition":"REPLACED"}
+  ],
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18W2/Collect-R18W2Response.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18W3/Collect-R18W3Response.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\R18W2R","generatedRoot":"C:\\R18W3R","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18W2D","generatedRoot":"C:\\R18W3","disposition":"REPLACED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    }
+  ]
+}

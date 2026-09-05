@@ -1,0 +1,82 @@
+{
+  "schema": "argos_opencv_scribe_r18w3_collection_tooling_gate_v1",
+  "checkedUtc": "2026-09-05T19:56:00Z",
+  "state": "PASS_R18W3_COLLECTION_TOOLING_GATE",
+  "requestId": "REQ_R18W3",
+  "responseId": "R_EB5FC8126975_20260905194132964_5d52a580",
+  "collector": {
+    "path": "work/OPENCV_SCRIBE_R18W3/Collect-R18W3Response.ps1",
+    "bytes": 21642,
+    "sha256": "2FE3DABE68A69ECAF1702BED76C60A6098B28D0FEE56A546E661375A35DB36D7",
+    "sourceTemplate": "work/OPENCV_SCRIBE_R18W2/Collect-R18W2Response.ps1",
+    "sourceTemplateSha256": "A1AC31B69AF76A8544293EA295779E64F4998409A30B566270FF4BCECCEC882B",
+    "cloneLiteralRemediationManifestSha256": "292C645871C8575811D09F82CE60DAD550724DDA31999FBB48A76C283A02B1DF",
+    "finalCloneLiteralGateSha256": "57B70026FBAF0C85FAE4A20D116B27A7FE6279566976C4A31ACEB07C24623712",
+    "cloneLiteralRemediationState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "harnessSafetyState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "harnessViolationCount": 0,
+    "wrapperSafetyState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "windowsPowerShell51PreflightPassed": true,
+    "nonMutatingPreflightPresent": true,
+    "prohibitedPredecessorResidueMatchCount": 0
+  },
+  "supersededNonMutatingDraftEvidence": [
+    {
+      "cloneGate": "work/OPENCV_SCRIBE_R18W3/R18W3_COLLECTION_CLONE_LITERAL_GATE.json",
+      "sha256": "F2DCF6146F48C495225410042578554B089C9405DAC3DF40EEE0DDE54AA94484",
+      "preflightOutcome": "HOLD_RESPONSE_ARCHIVE_COUNT_583_EXCEEDED_CONSERVATIVE_512_CAP",
+      "writesOrExtractionPerformed": false
+    },
+    {
+      "cloneGate": "work/OPENCV_SCRIBE_R18W3/R18W3_COLLECTION_CLONE_LITERAL_GATE_V2.json",
+      "sha256": "6944C8F6DFDFAB36C1B7EDFF6060874C1277D08CDDE38453BCBA329F915FBAF7",
+      "preflightOutcome": "HOLD_WINDOWS_POWERSHELL_5_1_ORDERED_DICTIONARY_MEASURE_OBJECT_SHAPING",
+      "writesOrExtractionPerformed": false
+    }
+  ],
+  "publicationGate": {
+    "path": "work/OPENCV_SCRIBE_R18W3/R18W3_PUBLISH_GATE.json",
+    "bytes": 5241,
+    "sha256": "9B46E7BA5447B1931AFD65A27ABBD5223FEFCC79D765550422EE4F611E5DB3CA",
+    "state": "PASS_R18W3_EXACT_SIGNED_DATA_PULL_PUBLISHED_CREATE_NEW",
+    "publishedUtc": "2026-09-05T19:41:49.5530993Z",
+    "publicationCount": 1,
+    "retryAuthorized": false
+  },
+  "responseZip": {
+    "path": "U:\\ProjectPortalRO\\responses\\R_EB5FC8126975_20260905194132964_5d52a580.ready.zip",
+    "bytes": 28029870,
+    "sha256": "1F7EF72AA6F035510CF13A634FA9F694A3EA3414380EF832096E7F2F1B7693DF"
+  },
+  "signatureVerified": true,
+  "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+  "endpointState": "PASS_DATA_PULL",
+  "responseManifestSha256": "DAFFB9EE8844ADE24CFD5DFCF8836A550AAAE69C5B54C821C0C6103E45AC6799",
+  "responseSignatureSha256": "6F10213DC16A1EE327A4DAB00EA5093ECB2A30CD0F9B40D680980E42D8529F3E",
+  "resultSha256": "E2CAEC97E1E7A8C1B2846980BB2990C47A8D6B23007E4662E156ADBDF74DDB35",
+  "payloadBytes": 28036009,
+  "payloadSha256": "F9C88A59EE8411D922732F114E7742DD58E4D21D6616CD8EE2FCBC76F6230E6E",
+  "returnedFileCount": 24,
+  "proposalFiles": 8,
+  "bfOrientedInputPngFiles": 8,
+  "dfOrientedInputPngFiles": 8,
+  "totalSourceBytes": 28024108,
+  "responseArchiveReadyZipCount": 583,
+  "matchingAuthenticatedRequestIdResponseCount": 1,
+  "prepublicationStaticResponseArchiveCheckPerformed": false,
+  "compensatingPostpublicationArchiveUniquenessPassed": true,
+  "responseCreatedUtc": "2026-09-05T14:41:32.9645949-05:00",
+  "signedClockDeltaSeconds": -16.5885044,
+  "clockSkewAllowanceSeconds": 30,
+  "responseShareLastWriteUtc": "2026-09-05T19:42:03.3978398Z",
+  "shareLastWriteAfterPublication": true,
+  "requestRetried": false,
+  "externalMutationPerformedByCollectionPreflight": false,
+  "opaqueImageFiles": 16,
+  "imageBytesReadForHashVerification": true,
+  "pixelsDecoded": false,
+  "identityAccepted": false,
+  "referenceAdmissionPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

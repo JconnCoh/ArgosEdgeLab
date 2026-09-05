@@ -1,0 +1,62 @@
+{
+  "schema": "argos_opencv_scribe_r18w3_signed_terminal_response_checkpoint_gate_v1",
+  "createdUtc": "2026-09-05T20:00:00Z",
+  "state": "PASS_R18W3_SIGNED_TERMINAL_RESPONSE_CHECKPOINT_GATE",
+  "disposition": "FROZEN_CURRENT_LANE_CHECKPOINT",
+  "checkpoint": {
+    "path": "work/OPENCV_SCRIBE_R18W3/R18W3_SIGNED_TERMINAL_RESPONSE_CHECKPOINT_20260905.md",
+    "bytes": 5211,
+    "sha256": "722BD38D92A967CF2E6C045B8B9D5B623746F0FB7441906D287C83E7C3002450"
+  },
+  "manifest": {
+    "path": "work/OPENCV_SCRIBE_R18W3/R18W3_SIGNED_TERMINAL_RESPONSE_MANIFEST.json",
+    "bytes": 5563,
+    "sha256": "E2E67FA849869DA456B56166D638A0679045233A25DDD87F1E7EFA00678CFD10"
+  },
+  "publication": {
+    "requestId": "REQ_R18W3",
+    "requestZipSha256": "41113CE44CFB56D64EC2253D475CDD764EC84D759B5F360BE81D6CD325DCCCD6",
+    "publicationGateSha256": "9B46E7BA5447B1931AFD65A27ABBD5223FEFCC79D765550422EE4F611E5DB3CA",
+    "publishedExactlyOnce": true,
+    "requestRetried": false
+  },
+  "terminalResponse": {
+    "responseId": "R_EB5FC8126975_20260905194132964_5d52a580",
+    "state": "PASS_DATA_PULL",
+    "signedResponseVerified": true,
+    "sourceZipBytes": 28029870,
+    "sourceZipSha256": "1F7EF72AA6F035510CF13A634FA9F694A3EA3414380EF832096E7F2F1B7693DF",
+    "payloadBytes": 28036009,
+    "payloadSha256": "F9C88A59EE8411D922732F114E7742DD58E4D21D6616CD8EE2FCBC76F6230E6E",
+    "terminalGateSha256": "925B47C4C04CEB916D312C34B842DDEE9FE54327E55AF4F851729744800A474F"
+  },
+  "returnedEvidence": {
+    "inventorySha256": "3ABE5D9E4D328917318C72CD6EC1AD84D56E92C99AB71FF11C1BEF05B330A281",
+    "returnedFileCount": 24,
+    "proposalFiles": 8,
+    "bfOrientedInputPngFiles": 8,
+    "dfOrientedInputPngFiles": 8,
+    "allDeclaredAndExtractedHashesPassed": true,
+    "pixelsDecoded": false,
+    "identityAccepted": false,
+    "referenceAdmissionPerformed": false
+  },
+  "bindingDisclosure": {
+    "prepublicationStaticResponseArchiveCheckPerformed": false,
+    "omissionDisclosedAndNonReusable": true,
+    "matchingAuthenticatedRequestIdResponseCount": 1,
+    "compensatingPostpublicationArchiveUniquenessPassed": true,
+    "signedClockDeltaWithinFrozenAllowance": true,
+    "shareLastWriteAfterPublication": true
+  },
+  "controls": {
+    "requestRetried": false,
+    "taskOrProcessActionPerformed": false,
+    "queueMutationPerformed": false,
+    "sourceMutationPerformed": false,
+    "trainingPerformed": false,
+    "xmlProduced": false,
+    "productionRoutingEnabled": false
+  },
+  "nextAction": "VALIDATE_PROPOSALS_ADMIT_DECLARED_GLYPHS_THEN_FRESH_ZERO_WRONG_EXACT_LINEAGE_LOO"
+}
