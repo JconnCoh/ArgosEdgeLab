@@ -1,0 +1,64 @@
+{
+  "schema": "argos_opencv_scribe_r18t1_published_response_pending_manifest_v1",
+  "createdUtc": "2026-09-05T12:08:00Z",
+  "state": "PUBLISHED_ONCE_RESPONSE_PENDING_STOPPED_AFTER_COLLECTION_ROUTE_TIMEOUT",
+  "requestId": "REQ_R18T1",
+  "checkpoint": {
+    "path": "work/OPENCV_SCRIBE_R18T/R18T1_PUBLISHED_RESPONSE_PENDING_CHECKPOINT_20260905.md",
+    "sha256": "C71E66BB2DC263691D7623C4C1787D9FD3D077E9F2B37F5169EB13796875C428"
+  },
+  "workspace": {
+    "worktree": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv",
+    "branch": "codex/opencv-scribe-deciphering",
+    "prepublicationLocalAndOriginTip": "fd51c74c3ff1e5a5ec5ffff9b9a6ff7fcc2e2f15",
+    "unrelatedGlobalPhaseModified": false
+  },
+  "publication": {
+    "publishedExactlyOnce": true,
+    "publishedUtc": "2026-09-05T11:56:53.8094858Z",
+    "publishedPath": "U:\\ProjectPortalRO\\requests\\REQ_R18T1.ready.zip",
+    "requestZipBytes": 171623,
+    "requestZipSha256": "3A6CDE8E0702D4BCE6D24A8AFF178376509A422E3DBDFD06B7FE517A99483313",
+    "publishGatePath": "work/OPENCV_SCRIBE_R18T/R18T1_PUBLISH_GATE.json",
+    "publishGateSha256": "DBFB4E71740536BAD7B5F148DB9A7D4511382460B3B2C91FBAC0B691E7954F4E",
+    "gatewayProcessedExactHashObserved": true,
+    "gatewayProcessedIsExecutionProof": false,
+    "retryAuthorized": false,
+    "overwritePerformed": false,
+    "persistentUMappingPreserved": true
+  },
+  "collection": {
+    "matchingSignedTerminalResponseAvailable": false,
+    "successfulZeroMatchScanCount": 10,
+    "boundedResponseManifestLimitPerScan": 500,
+    "lastSuccessfulZeroMatchUtc": "2026-09-05T12:05:36.8668576Z",
+    "lastInvocationTimedOut": true,
+    "callerTimeoutSeconds": 60,
+    "finderRetriedAfterTimeout": false,
+    "alternateRouteUsed": false,
+    "requestRetried": false,
+    "gatewayProcessedStateUsedAsExecutionProof": false
+  },
+  "blocker": "MATCHING_SIGNED_TERMINAL_RESPONSE_FOR_REQ_R18T1_NOT_AVAILABLE_BEFORE_BOUNDED_COLLECTION_ROUTE_TIMEOUT",
+  "holdsPreserved": 6,
+  "scope": {
+    "configuredCaseCount": 20,
+    "slot24PackageExcluded": true,
+    "frozenScienceOrReferenceModified": false,
+    "sourceImageMutationOrDeletion": false,
+    "identityAccepted": false,
+    "r18sAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionRoutingEnabled": false
+  },
+  "accessAudit": {
+    "manualGuiInputCount": 0,
+    "rustDeskOrRdpInputCount": 0,
+    "directJbodObservationCount": 0,
+    "sourceImageAccessCount": 0,
+    "imageMemberBodyOpenCount": 0,
+    "secondPublicationCount": 0
+  },
+  "nextAction": "STOP_NO_RETRY_AWAIT_MATCHING_SIGNED_TERMINAL_RESPONSE_OR_FRESH_OPERATOR_DIRECTION"
+}
