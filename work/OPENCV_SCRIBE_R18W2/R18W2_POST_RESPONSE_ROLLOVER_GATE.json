@@ -1,0 +1,41 @@
+{
+  "schema": "argos_opencv_scribe_r18w2_post_response_rollover_gate_v1",
+  "createdUtc": "2026-09-05T19:21:00Z",
+  "state": "PASS_R18W2_POST_RESPONSE_ROLLOVER_GATE",
+  "disposition": "FROZEN_CHECKPOINT_FIRST_HANDOFF_READY_FOR_COMMIT_PUSH_AND_SUCCESSOR_AUDIT",
+  "workspace": {
+    "onlyAuthorizedWorktree": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv",
+    "requiredBranch": "codex/opencv-scribe-deciphering",
+    "taskStartCommit": "f8c6c98923c036d7a5462e12d3876d88d65ffb0d",
+    "preRolloverHeadAndOrigin": "cbf1e561b8dd0ce4a7e2a7af7f847a66556c27bc",
+    "handoffCommitRule": "The later pushed commit containing this exact gate/checkpoint/manifest must equal clean local HEAD and origin tip before successor audit.",
+    "fetchAllowedDuringSuccessorAudit": false
+  },
+  "rolloverThreshold": {"changedLines":15535,"changedFiles":16,"threshold":10000,"trigger":"CHANGED_LINES_THRESHOLD","atomicOperationComplete":true},
+  "handoffArtifacts": {
+    "checkpoint": {"path":"work/OPENCV_SCRIBE_R18W2/R18W2_POST_RESPONSE_ROLLOVER_CHECKPOINT_20260905.md","bytes":4364,"sha256":"CEE1EF6E06E9F9AA5712DF0C798BA6D8407CB20DAB79E9946B065D5CB44FDD24"},
+    "manifest": {"path":"work/OPENCV_SCRIBE_R18W2/R18W2_POST_RESPONSE_ROLLOVER_MANIFEST.json","bytes":7913,"sha256":"FB3CAF0357E158D434CF27B4ADD3E19F181FA50AAFE59E17BB706091EDA57B2B"},
+    "requiredReadOrderCount":35,
+    "requiredReadOrderVerified":35,
+    "missingPaths":0,
+    "byteMismatches":0,
+    "hashMismatches":0,
+    "jsonParsed":true
+  },
+  "r18w2": {
+    "publishedExactlyOnce":true,
+    "retryAuthorized":false,
+    "signedTerminalResponseVerified":true,
+    "responseId":"R_FADCA24C1D79_20260905191141560_093c0c66",
+    "responseZipSha256":"18B4F8EED464DF4D0ADBC1345F7C2AB753B6F9ADDB18538D8955B8A5180F9F8E",
+    "overlaySha256":"E284BB6549969734A7153AB702E8A125E85B4064DDE36982DD1887D0B19D5CCF",
+    "crosswalkResolved":2,
+    "crosswalkUnmatched":12,
+    "crosswalkMultiple":0,
+    "identityAccepted":false
+  },
+  "r18w3": {"state":"SIGNED_UNPUBLISHED","publicationAuthorized":false,"requiredFreshLiteral":"PUBLISH for REQ_R18W3"},
+  "accessAndMutationAudit": {"r18w2Publications":1,"r18w2Retries":0,"imageBytesRead":0,"taskOrProcessActions":0,"sourceMutations":0,"trainingActions":0,"xmlActions":0,"productionRoutingEnabled":false,"directGuiRdpOrJbodAccess":0},
+  "successorContract": {"firstTurnVerificationOnly":true,"firstTurnWritesAllowed":false,"firstTurnGitWritesAllowed":false,"firstTurnFetchAllowed":false,"firstTurnExternalContactsAllowed":false,"mustVerifyAllRequiredReadEntries":true,"mustStopForPredecessorAcceptance":true},
+  "nextAction": {"beforeAcceptedSuccessorAudit":"STOP_NO_EXTERNAL_MUTATION","afterAcceptedSuccessorAudit":"AWAIT_FRESH_LITERAL_PUBLISH_FOR_REQ_R18W3","exactLiteral":"PUBLISH for REQ_R18W3"}
+}
