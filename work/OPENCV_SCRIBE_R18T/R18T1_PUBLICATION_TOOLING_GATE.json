@@ -1,0 +1,54 @@
+{
+  "schema": "argos_opencv_scribe_r18t1_publication_tooling_gate_v1",
+  "checkedUtc": "2026-09-05T11:56:00Z",
+  "state": "PASS_R18T1_PUBLICATION_TOOLING_GATE",
+  "requestId": "REQ_R18T1",
+  "publisher": {
+    "path": "work/OPENCV_SCRIBE_R18T/Publish-R18T1.ps1",
+    "sha256": "B48180AF1E78A4904AF0FE76614F4CF38919BE4DB71382AC6FAF6FBA0623E5A9",
+    "independentlyAuthoredForExactR18T1Contract": true,
+    "windowsPowerShell51ParserPassed": true,
+    "harnessSafetyState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "harnessViolationCount": 0,
+    "wrapperSafetyState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "nonMutatingPreflightPresent": true
+  },
+  "responseFinder": {
+    "path": "work/OPENCV_SCRIBE_R18T/Find-R18T1Response.ps1",
+    "sha256": "AFEF233BC33C6D0E1EBD6B957DEA1F3E40E334D9F9BF7AB18C2AFECFBA2571EC",
+    "independentlyAuthoredForExactR18T1Contract": true,
+    "windowsPowerShell51ParserPassed": true,
+    "harnessSafetyState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "harnessViolationCount": 0,
+    "wrapperSafetyState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+    "nonMutatingOnly": true
+  },
+  "publicationAuthority": {
+    "path": "work/OPENCV_SCRIBE_R18T/R18T_PUBLICATION_AUTHORITY.json",
+    "sha256": "491616206D540BD41C4057477881F5B8A84D377B2000844AF370053A77748A47",
+    "literalAuthority": "PUBLISH for REQ_R18T1"
+  },
+  "publicationPreaction": {
+    "path": "work/OPENCV_SCRIBE_R18T/PREACTION_R18T_PUBLICATION.json",
+    "sha256": "8B200F76423DF42E78C56F50D6327659FAB2566A545C4AB57B04FF8996735471",
+    "state": "PASS_ARGOS_ZERO_RECURRENCE_PREACTION",
+    "dependencyCount": 17
+  },
+  "pathBudget": {
+    "state": "PASS_PATH_BUDGET",
+    "reservedSuffixCharacters": 32,
+    "maximumEffectiveLength": 143,
+    "maximumComponentLength": 26,
+    "unsafePathCount": 0
+  },
+  "requestZipSha256": "3A6CDE8E0702D4BCE6D24A8AFF178376509A422E3DBDFD06B7FE517A99483313",
+  "configuredCaseCount": 20,
+  "maximumPublications": 1,
+  "retryAuthorized": false,
+  "externalMutationPerformed": false,
+  "targetExecuted": false,
+  "sourceImagesRead": false,
+  "r18sAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
