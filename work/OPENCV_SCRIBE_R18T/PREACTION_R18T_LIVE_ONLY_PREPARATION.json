@@ -1,0 +1,166 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R18T_LIVE_ONLY_LOCAL_PREPARATION_20260905A",
+  "createdUtc": "2026-09-05T01:56:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "PREPARE_AND_LOCALLY_GATE_R18T_LIVE_ONLY_EXECUTION_ENVELOPE_WITHOUT_EXTERNAL_ACCESS_OR_PUBLICATION",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C",
+  "dependencies": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "9B8F686F00A0E0EC83034C3A61313FFC909EAD4168168C6637DAA64E8F22738A"
+    },
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "804DC714FBDD4F854091AF8BA09F0FBC0623FEED567897530C8617CFD313EF5E"
+    },
+    {
+      "path": "work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md",
+      "sha256": "9C542CF7CB86555E5A357AC492C63B891691D7C9F0DA1103A68079CB01AA1F04"
+    },
+    {
+      "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+      "sha256": "A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_COMPLETE_FAILURE_RECOVERY_ROLLOVER_CHECKPOINT_V3_20260904.md",
+      "sha256": "5D315EA623299BD8E0171E4A2A907A587F8EA1F6DF0664170FA891B3CC5A9E0A"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_COMPLETE_RECOVERY_ROLLOVER_MANIFEST_V3.json",
+      "sha256": "B4A783C97192D1B73F7ED5C869730C7412AAD303EE0A060C58D9BD6ED474E7FF"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_COMPLETE_FAILURE_RECOVERY_ROLLOVER_GATE_V3.json",
+      "sha256": "0C7A800C0D80AD7DC0C6622277F48DD54795CAE198685F0B82C506887A48A1ED"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18T/R18R2_POST_LAUNCH_DIRECT_OBSERVATION_SUPPORTING_RECORD.json",
+      "sha256": "69E4B77D0449D47B583C1CD1AD3F25B33066DB7689DE00B57D12AA334CFA042F"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18T/R18T_RECOVERY_INTENT.json",
+      "sha256": "0FDAFD81135ADD3396A64843D98B3DD83D74DADDA6650E3C43963EF35A0549C7"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18T/R18T_RECOVERY_INTENT_GATE.json",
+      "sha256": "2C264EA96DB29CDB42800656282CDA290927EF6415C66E3DE88205C5BB285E0C"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18T/R18T_FROZEN_SCIENCE_AND_SLOT24_EXCLUSION_GATE.json",
+      "sha256": "ED68B3B229D525ADF178975AC33A713211928560357B86F06241C5ABA996FAE5"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18T/R18T_ROUND_TRIP_PATH_PLAN_INPUT.json",
+      "sha256": "A205D335054D875A823BBD2B461E76BC517025B94A1B1E99CE1A50D001C5CAF0"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18T/R18T_LIVE_REVIEW_COHORT.json",
+      "sha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18T/R18T.LiveBinding.psm1",
+      "sha256": "A4CC721663B69CB44CE52EC5155FCFA9576309A74E5ADBADF81BE2403C732670"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18T/R18T_LIVE_BINDING_GATE.json",
+      "sha256": "C812C22D9D3553B5E1C9827106101193F752A59CDC8AD23E976CCABB8834E8F0"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18T/Run-R18TExecutionEnvelope.py",
+      "sha256": "23F52C8FEC096F6587521B78AF8242C80E8687040457F9AE197858DB0B00AED7"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18T/R18T_EXECUTION_ENVELOPE_GATE.json",
+      "sha256": "EF9D1821A3C4F1924B84215DA3BD814FB1AA3693D7E97E0A82EBBF78FF272FDA"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "controlEvidence": {
+    "actionBoundary": "This contract authorizes only local evidence, implementation, gating, package preparation, and eventual signing. It authorizes no publication, portal/JBOD access, installed write, task/process action, queue action, image access, or source mutation.",
+    "installedRoot": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2",
+    "installedLauncherPlanned": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV02_R18T1.ps1",
+    "taskActions": [],
+    "futureProcessAction": "START_ONE_OWNED_BACKGROUND_R18T_EXECUTION_ENVELOPE_WORKER_ONLY_AFTER_FRESH_LITERAL_PUBLISH",
+    "workRootPlanned": "D:/A2/w/ocv/R18T1",
+    "outputRootPlanned": "D:/A2/o/ocv/R18T1",
+    "pathPlanKnownLexicalState": "PASS_PATH_BUDGET",
+    "pathPlanKnownMaximumEffectiveLength": 196,
+    "finalPathGatePassed": false,
+    "wrapperExistsForThisPreparationAction": false,
+    "wrapperGateApplicableNow": false,
+    "installedSchemaChangedByThisPreparationAction": false,
+    "residentConsumerRefreshApplicableNow": false,
+    "terminalResponseRequirement": "A later authorized publication must collect only the matching signed terminal response for REQ_R18T1; launch PASS alone is not corpus completion."
+  },
+  "collectionCaseEvidence": {
+    "path": "work/OPENCV_SCRIBE_R17A/R17A_POWERSHELL_COLLECTION_CASE_GATE.json",
+    "sha256": "323068E3401E070FA3089D4734B2D304CA5BA4BC4E850A669D5B3FE691E3BE6D",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "scope": {
+    "revision": "R18T_LIVE_ONLY_EXECUTION_ENVELOPE_CORRECTION_REVIEW_ONLY_20260904A",
+    "requestId": "REQ_R18T1",
+    "localPreparationAuthorized": true,
+    "signingTarget": "SIGNED_UNPUBLISHED",
+    "publicationAuthorized": false,
+    "freshLiteralPublishRequired": "PUBLISH for REQ_R18T1",
+    "maximumFuturePublicationsAfterFreshAuthority": 1,
+    "automaticRetryAuthorized": false,
+    "slot24PackageExcluded": true,
+    "imageDerivedGatesHashPinnedNotRerun": true,
+    "r18sBuildAuthorized": false,
+    "r18sPublicationAuthorized": false
+  },
+  "unresolvedBeforeSignedUnpublished": [
+    "FINAL_R18T_LAUNCHER_PATH_AND_SHA256",
+    "FINAL_MAINTENANCE_DEFINITION_PATH_AND_SHA256",
+    "FINAL_PAYLOAD_MANIFEST_PATH_AND_SHA256",
+    "FINAL_BUILDER_SIGNER_AND_EXACT_INVOCATION_MANIFEST_HASHES",
+    "FINAL_CLONE_REMEDIATION_HARNESS_WRAPPER_AND_PS51_GATES",
+    "FINAL_SIGNED_ZIP_PATH_SHA256_MEMBER_COUNT_AND_MEMBER_SET_SHA256",
+    "FINAL_EXACT_MEMBERSHIP_AND_SLOT24_EXCLUSION_GATE",
+    "FINAL_COMPLETE_ROUND_TRIP_PATH_GATE_FROM_EXACT_SIGNED_MEMBERS",
+    "FINAL_CONTAMINATION_AND_FROZEN_HASH_INHERITANCE_GATE"
+  ],
+  "unresolvedBeforePublication": [
+    "FRESH_LITERAL_PUBLISH_FOR_REQ_R18T1",
+    "PUBLICATION_TIME_QUEUE_AND_NAMESPACE_RECHECK",
+    "EXACT_PUBLICATION_AUTHORITY_RECORD",
+    "MATCHING_SIGNED_TERMINAL_RESPONSE_COLLECTION_PLAN"
+  ],
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "publicationAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

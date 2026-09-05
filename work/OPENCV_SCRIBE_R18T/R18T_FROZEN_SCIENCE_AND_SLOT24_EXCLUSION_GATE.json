@@ -1,0 +1,161 @@
+{
+  "schema": "argos_opencv_scribe_r18t_frozen_science_and_slot24_exclusion_gate_v1",
+  "createdUtc": "2026-09-05T01:56:00Z",
+  "state": "PASS_R18T_FROZEN_SCIENCE_INHERITANCE_AND_SLOT24_EXCLUSION_CONTRACT",
+  "artifactLifecycle": "FROZEN",
+  "revision": "R18T_LIVE_ONLY_EXECUTION_ENVELOPE_CORRECTION_REVIEW_ONLY_20260904A",
+  "requestId": "REQ_R18T1",
+  "authority": {
+    "path": "work/OPENCV_SCRIBE_R18R2/R18R2_COMPLETE_RECOVERY_ROLLOVER_MANIFEST_V3.json",
+    "sha256": "B4A783C97192D1B73F7ED5C869730C7412AAD303EE0A060C58D9BD6ED474E7FF",
+    "checkpointPath": "work/OPENCV_SCRIBE_R18R2/R18R2_COMPLETE_FAILURE_RECOVERY_ROLLOVER_CHECKPOINT_V3_20260904.md",
+    "checkpointSha256": "5D315EA623299BD8E0171E4A2A907A587F8EA1F6DF0664170FA891B3CC5A9E0A"
+  },
+  "inheritanceMode": "EXACT_HASH_PIN_ONLY_NO_SCIENCE_OR_REFERENCE_CHANGE",
+  "frozenImplementation": [
+    {
+      "role": "reader",
+      "path": "work/OPENCV_SCRIBE_R18H/ArgosOpenCvScribeV1R18H.py",
+      "sha256": "3AF68D778E297531DD527DD9D65C75FD17BD1FB9C2EC797CB840B10A674532AD"
+    },
+    {
+      "role": "cropSweep",
+      "path": "work/OPENCV_SCRIBE_R18J/ArgosOpenCvScribeCropSweepR18J.py",
+      "sha256": "EF4C58589CA8885B5CBDE0A989D3F94EE8C447925818DC0FA4E50B26B87A8B9F"
+    },
+    {
+      "role": "referenceIsolatedEnvelope",
+      "path": "work/OPENCV_SCRIBE_R18P/Run-R18PReferenceIsolatedCorpus.py",
+      "sha256": "5B6AA224E844FCEA22DEC6A9D10C863437F039CA73EC258C263DF539905791D0"
+    },
+    {
+      "role": "scientificWrapper",
+      "path": "work/OPENCV_SCRIBE_R18R/Run-R18RReferenceIsolatedCorpus.py",
+      "sha256": "B826767EA21BB148DD30A719595B23DD818FD9CFC08B347FEAFD9FD4959F4E3C"
+    },
+    {
+      "role": "r18rProvider",
+      "path": "work/OPENCV_SCRIBE_R18R/ArgosOpenCvScribeV1R18R.py",
+      "sha256": "51C95B3279D253EF717F663F3860CC6B4CA38517706E08E9FE2302BE02CD2BB5"
+    },
+    {
+      "role": "r18qGenericStructureProvider",
+      "path": "work/OPENCV_SCRIBE_R18Q/ArgosOpenCvScribeV1R18Q.py",
+      "sha256": "AB20CFB25D223D40D31237118436446018AE213F800ECF1652213EB942C40DC1"
+    }
+  ],
+  "frozenReferences": {
+    "baseReferenceBundle": {
+      "localPath": "work/OPENCV_SCRIBE_O2D5/final/extract/O2D5_REFS.zip",
+      "installedPath": "D:/O2D5/ARGOS_O2D5/O2D5_REFS.zip",
+      "bytes": 14855150,
+      "sha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+      "hashVerificationModeThisAction": "INHERITED_FROM_HASH_VERIFIED_V3_HANDOFF_NO_ARCHIVE_READ"
+    },
+    "embeddedBaseManifest": {
+      "member": "refs/PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+      "bytes": 207802,
+      "sha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+      "memberExtractionPerformedThisAction": false
+    },
+    "supplementalManifest": {
+      "path": "work/OPENCV_SCRIBE_R18F/reference_bank/SUPPLEMENTAL_GLYPH_REFERENCE_MANIFEST.json",
+      "sha256": "FD60D494A25B489A8F1D8581217457AD67B02C98D54CA0A5400FAC0611537114",
+      "missingBodyLabels": [
+        "I",
+        "O",
+        "V",
+        "Y"
+      ],
+      "automaticAdmissionAuthorized": false
+    }
+  },
+  "imageDerivedGateInheritance": {
+    "mode": "HASH_PINNED_NOT_RERUN_UNDER_NO_IMAGE_AUTHORITY",
+    "gates": [
+      {
+        "path": "work/OPENCV_SCRIBE_R18R/R18R_LOCAL_GATE.json",
+        "sha256": "566EB33649697713F5E0EFD3E0F04F9861333103BBBC1C1BACFEDE3CD184C82A"
+      },
+      {
+        "path": "work/OPENCV_SCRIBE_R18R2/R18R_REFERENCE_ISOLATION_LOCAL_GATE.json",
+        "sha256": "9E645CCEE7BB4C62610AD1D93418985F2F3FB3A3DCD68007A3ECA56D30784471"
+      },
+      {
+        "path": "work/OPENCV_SCRIBE_R18R2/R18R_CANONICAL_CHECKSUM_GATE.json",
+        "sha256": "BB0F36B38A7CB697087B324CDE2037E8F2B8ED184BCE8DB71EA1BCB3DB787407"
+      }
+    ],
+    "imageDerivedGatesRerunThisAction": false,
+    "sourceImagesReadThisAction": false,
+    "pixelsDecodedThisAction": false,
+    "overlaysOrCropsGeneratedThisAction": false,
+    "reasonNotRerun": "The accepted image-derived gates are frozen and hash-pinned by the authoritative V3 handoff; this local evidence action has no image-access authority."
+  },
+  "cohortInheritance": {
+    "frozenLiveSource": {
+      "path": "work/OPENCV_SCRIBE_R18P/R18P_REVIEW_COHORT.json",
+      "sha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661",
+      "caseCount": 20
+    },
+    "r18tExactClone": {
+      "path": "work/OPENCV_SCRIBE_R18T/R18T_LIVE_REVIEW_COHORT.json",
+      "sha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661",
+      "caseCount": 20,
+      "byteForByteMatch": true
+    },
+    "withdrawnR18r2Cohort": {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R_REVIEW_COHORT.json",
+      "sha256": "7393A6CB84F3CF246DCA3751DFCCB76422198C25270CA2759FBF260D2DE8AF56",
+      "caseCount": 21
+    },
+    "bindingEvidence": {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R_COHORT_BINDING_GATE.json",
+      "sha256": "866AA2921A01BF6CE91CEDD71DE53841723131C60A6119B3BA36844B3328434D",
+      "exactOrderedPrefixCount": 20,
+      "soleDifference": "62629-401_20260902002921_Slot24"
+    }
+  },
+  "slot24PackageExclusion": {
+    "physicalIdentity": "62629-401_20260902002921_Slot24",
+    "imageFirstResult": "143B0083SUE6",
+    "checksumState": "VALID_VERIFY_ONLY",
+    "localFixtureWrapperRoot": "C:/R18J_CORPUS_FIXTURE/proposals",
+    "localFixtureSourcePath": "C:/R18IR8/BF_BRIGHT_BEST_SOURCE_WINDOW.png",
+    "bfSha256": "F67972F31B30C9BE42615DF7FBDC0E64D642F89860A38F4D8172365C7C261201",
+    "dfSha256": "2D4B7AC5861BE87B2876842C3010B15E268DC7150FFAF84B290EF01E9BFC1386",
+    "allowedInLocalRegressionGate": true,
+    "allowedInR18tLiveCohort": false,
+    "allowedInPackage": false,
+    "allowedToCopyOrTransferToJbod": false,
+    "localFixtureFilesReadThisAction": false,
+    "finalPackageMemberExclusionVerified": false,
+    "finalPackageMemberExclusionGatePending": true
+  },
+  "preservedInvariants": {
+    "existingProcessorPairedScribeCropsFirst": true,
+    "displacedS17Identity": "6KB71041XDE5",
+    "displacedS17State": "HOLD_R13B_REVIEW_ONLY_GRID_SELECTED",
+    "blankControlCount": 5,
+    "blankViewCount": 40,
+    "blankState": "HOLD_SCRIBE_NOT_LOCALIZED",
+    "blankEmittedStringCount": 0,
+    "syntheticDotsAllowed": false,
+    "notchDependenceAllowed": false,
+    "fixedNotchGridOrSolidLineDependenceAllowed": false,
+    "checksumRole": "VERIFY_IMAGE_FIRST_ONLY",
+    "checksumMaySelectInventOrRewriteGlyph": false,
+    "wholeWaferFallbackAllowed": false,
+    "identityAcceptanceAuthorized": false
+  },
+  "pendingBeforeSignedUnpublished": [
+    "VERIFY_FINAL_PACKAGE_MEMBER_SET_EXCLUDES_SLOT24_IDENTITY_FIXTURE_ROOT_AND_SOURCE_HASHES",
+    "VERIFY_PACKAGED_FROZEN_IMPLEMENTATION_AND_REFERENCE_HASHES",
+    "VERIFY_NO_RUNTIME_CHECKSUM_THRESHOLD_TEST_OR_WHOLE_WAFER_OVERRIDE"
+  ],
+  "publicationAuthorized": false,
+  "externalAccessPerformed": false,
+  "sourceMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,118 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-05T01:44:16.2622246Z",
+  "incidentId": "R18R2_LIVE_SET_AND_TERMINAL_EVIDENCE_20260904",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {
+      "path": "",
+      "sha256": ""
+    },
+    "workflowReviewClearance": {
+      "path": "",
+      "sha256": ""
+    },
+    "classificationNote": "The matching signed R18R2 response was a launch PASS, not a terminal FAILED response. The later worker exit is pinned direct endpoint evidence and is not counted as a signed premise failure."
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [
+      "START_ONE_OWNED_BACKGROUND_R18T_EXECUTION_ENVELOPE_WORKER"
+    ],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "E070135E8C211F2869623553C04AE2DDE65244760FC60457356B2FEEEFEED4EB"
+    },
+    "installedConfigEvidence": {
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_LAUNCH_RESPONSE_GATE.json",
+      "sha256": "ECD1E67112AA9ED5FCDEE97895088A3A46D25EA3E820C275527679F4887824EE"
+    },
+    "capabilityEvidence": {
+      "path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json",
+      "sha256": "381D3E9C4F17218DF37D8E8CE029853216E9BEA5A2FBDABC6AEB7861A29DC8A2"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+      "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"
+    },
+    "qualifiedAdminGate": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_SCRIBE_R18T/R18R2_POST_LAUNCH_DIRECT_OBSERVATION_SUPPORTING_RECORD.json",
+      "sha256": "69E4B77D0449D47B583C1CD1AD3F25B33066DB7689DE00B57D12AA334CFA042F"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "singleMutationAttemptScope": "LOCAL_BUILD_GATE_AND_SIGN_ONLY_UNTIL_FRESH_LITERAL_PUBLISH_FOR_REQ_R18T1",
+    "externalMutationAttemptAuthorized": false,
+    "publicationAuthorized": false,
+    "automaticRetryAuthorized": false
+  },
+  "scope": {
+    "revision": "R18T_LIVE_ONLY_EXECUTION_ENVELOPE_CORRECTION_REVIEW_ONLY_20260904A",
+    "requestId": "REQ_R18T1",
+    "workRoot": "D:/A2/w/ocv/R18T1",
+    "outputRoot": "D:/A2/o/ocv/R18T1",
+    "installedLauncher": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV02_R18T1.ps1",
+    "liveCohortSource": "work/OPENCV_SCRIBE_R18P/R18P_REVIEW_COHORT.json",
+    "liveCohortSha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661",
+    "slot24PackageExcluded": true,
+    "frozenOcrScienceChanged": false,
+    "stopAtSignedUnpublished": true
+  },
+  "authority": {
+    "localCorrectionAndPackagePreparationAuthorized": true,
+    "publicationAuthorized": false,
+    "freshLiteralPublishRequired": "PUBLISH for REQ_R18T1",
+    "maximumFuturePublicationsAfterAuthority": 1,
+    "r18sBuildAuthorized": false,
+    "r18sPublicationAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "automaticReferenceAdmissionAuthorized": false,
+    "automaticHoldClearanceAuthorized": false,
+    "activationAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "sourceMutationOrDeletionAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

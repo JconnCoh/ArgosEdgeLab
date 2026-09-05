@@ -1,0 +1,202 @@
+{
+  "schema": "argos_opencv_scribe_r18t_maintenance_definition_v1",
+  "revision": "R18T_LIVE_ONLY_EXECUTION_ENVELOPE_CORRECTION_REVIEW_ONLY_20260904A",
+  "requestId": "REQ_R18T1",
+  "state": "FROZEN_UNPUBLISHED",
+  "disposition": "PENDING_GATE",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Invoke-R18TLiveOnlyLaunch.ps1",
+  "changes": [
+    {
+      "source": "payload/Invoke-R18TLiveOnlyLaunch.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R18T1.ps1",
+      "approvedPredecessorSha256": [
+        "8667C009631D49916B1A1CFCC78FFA67FF10D7088DCA6FFADD9E28D71DEBE00C"
+      ],
+      "installedSha256": "8667C009631D49916B1A1CFCC78FFA67FF10D7088DCA6FFADD9E28D71DEBE00C",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\A2\\w\\ocv\\R18T1",
+      "mode": "CREATE_NEW_SCRIBE_ONLY_WORK_TREE",
+      "failureQuarantine": "D:\\A2\\w\\ocv\\R18T1.failed",
+      "payloadManifestSha256": "1B0CBDA330DF8756EE57F6B7C6F14EC1F271BB67F3C047DC0ECD0D0FB443F5AD"
+    },
+    {
+      "targetRoot": "D:\\A2\\o\\ocv\\R18T1",
+      "mode": "CREATE_NEW_REVIEW_ONLY_CORPUS_OUTPUT"
+    },
+    {
+      "mode": "START_ONE_OWNED_BACKGROUND_R18T_EXECUTION_ENVELOPE_WORKER",
+      "liveBindingModuleSha256": "A4CC721663B69CB44CE52EC5155FCFA9576309A74E5ADBADF81BE2403C732670",
+      "executionEnvelopeSha256": "23F52C8FEC096F6587521B78AF8242C80E8687040457F9AE197858DB0B00AED7",
+      "scientificDelegateSha256": "B826767EA21BB148DD30A719595B23DD818FD9CFC08B347FEAFD9FD4959F4E3C",
+      "workerRevision": "R18T_LIVE_ONLY_EXECUTION_ENVELOPE_CORRECTION_REVIEW_ONLY_20260904A",
+      "maximumOwnedWorkerCount": 1,
+      "automaticRetryAllowed": false
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "D:\\A2\\o\\ocv\\R18T1\\LAUNCH.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_opencv_scribe_r18t_live_only_launch_v1",
+      "requiredState": "PASS_R18T_LIVE_ONLY_WORKER_STARTED"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18T1\\WORKER.stdout.log",
+      "mode": "WORKER_CREATE_NEW_DURABLE_STDOUT"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18T1\\WORKER.stderr.log",
+      "mode": "WORKER_CREATE_NEW_DURABLE_STDERR"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18T1\\FAILURE.json",
+      "mode": "WORKER_ATOMIC_TERMINAL_FAILURE",
+      "schema": "argos_opencv_scribe_r18t_worker_failure_v1",
+      "requiredState": "HOLD_R18T_WORKER_FAILURE"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18T1\\INVENTORY.json",
+      "mode": "FROZEN_DELEGATE_CREATE_NEW_INVENTORY",
+      "schema": "argos_opencv_scribe_r18p_reference_isolated_inventory_v1"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18T1\\RUNNING.json",
+      "mode": "FROZEN_DELEGATE_ATOMIC_PROGRESS",
+      "schema": "argos_opencv_scribe_r18p_reference_isolated_progress_v1"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18T1\\COMPLETE.json",
+      "mode": "FROZEN_DELEGATE_TERMINAL_WHEN_CORPUS_FINISHES",
+      "schema": "argos_opencv_scribe_r18p_reference_isolated_complete_v1",
+      "requiredState": "PASS_R18P_REFERENCE_ISOLATED_REVIEW_ONLY_COMPLETE"
+    }
+  ],
+  "workerEnvelopeContract": {
+    "executionEnvelopePath": "OPENCV_SCRIBE_R18T/Run-R18TExecutionEnvelope.py",
+    "executionEnvelopeSha256": "23F52C8FEC096F6587521B78AF8242C80E8687040457F9AE197858DB0B00AED7",
+    "scientificDelegatePath": "OPENCV_SCRIBE_R18R/Run-R18RReferenceIsolatedCorpus.py",
+    "scientificDelegateSha256": "B826767EA21BB148DD30A719595B23DD818FD9CFC08B347FEAFD9FD4959F4E3C",
+    "caseSchema": "argos_opencv_scribe_r18p_reference_isolated_case_v1",
+    "progressSchema": "argos_opencv_scribe_r18p_reference_isolated_progress_v1",
+    "completeSchema": "argos_opencv_scribe_r18p_reference_isolated_complete_v1",
+    "completeState": "PASS_R18P_REFERENCE_ISOLATED_REVIEW_ONLY_COMPLETE",
+    "failureSchema": "argos_opencv_scribe_r18t_worker_failure_v1",
+    "failureState": "HOLD_R18T_WORKER_FAILURE",
+    "stdoutMode": "CREATE_NEW_DURABLE",
+    "stderrMode": "CREATE_NEW_DURABLE",
+    "failureCommitMode": "CREATE_NEW_ATOMIC",
+    "delegateSerializationOwner": "FROZEN_R18P_RUNNER",
+    "terminalFailureOwner": "R18T_EXECUTION_ENVELOPE"
+  },
+  "liveInputBindingContract": {
+    "modulePath": "OPENCV_SCRIBE_R18T/R18T.LiveBinding.psm1",
+    "moduleSha256": "A4CC721663B69CB44CE52EC5155FCFA9576309A74E5ADBADF81BE2403C732670",
+    "cohortPath": "OPENCV_SCRIBE_R18T/R18T_LIVE_REVIEW_COHORT.json",
+    "cohortSha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661",
+    "bfRelativeLeaf": "scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+    "dfRelativeLeaf": "scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+    "identityRule": "GENERIC_SAFE_SINGLE_COMPONENT",
+    "casefoldIdentityUniqueRequired": true,
+    "bfDfPairUniqueRequired": true,
+    "exactExpectedHashRequired": true,
+    "firstBindingBeforeAnyWrite": true,
+    "secondBindingImmediatelyBeforeProcessStart": true,
+    "identicalBindingSha256Required": true,
+    "sourceImageBytesHashed": true,
+    "pixelsDecodedByLauncher": false,
+    "sourceMutationAllowed": false
+  },
+  "sourceProcessingContract": {
+    "proposalRoot": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+    "proposalRootEvidenceSha256": "084B2698CDE397CE39B4BE315B9FDEE4F578B50B631192977B5BDEAE398BBB17",
+    "inputSelection": "CONFIGURATION_SELECTED_UNIQUE_BF_DF_SCRIBE_ORIENTED_DETECTOR_INPUT_PAIRS",
+    "configuredCaseCount": 20,
+    "configuredCaseCountSource": "ACTUAL_FROZEN_COHORT_COLLECTION",
+    "uniqueSourcePairCount": 20,
+    "uniqueSourcePairCountSource": "ACTUAL_FROZEN_COHORT_COLLECTION",
+    "payloadManifestFileCount": 29,
+    "payloadManifestFileCountSource": "ACTUAL_MANIFEST_COLLECTION",
+    "cohortSha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661",
+    "referenceExclusion": "SOURCE_HASH_AND_CANONICAL_LOT_SLOT_LINEAGE_BEFORE_OCR",
+    "existingCropOnly": true,
+    "wholeWaferFallbackAllowed": false,
+    "fullWaferImageReadAllowed": false,
+    "providerSha256": "51C95B3279D253EF717F663F3860CC6B4CA38517706E08E9FE2302BE02CD2BB5",
+    "providerRevision": "ARGOS_OPENCV_SCRIBE_V1R18R_RECIPROCAL_MARGIN_20260904",
+    "structuralProviderSha256": "AB20CFB25D223D40D31237118436446018AE213F800ECF1652213EB942C40DC1",
+    "frozenReaderSha256": "3AF68D778E297531DD527DD9D65C75FD17BD1FB9C2EC797CB840B10A674532AD",
+    "cropSweepSha256": "EF4C58589CA8885B5CBDE0A989D3F94EE8C447925818DC0FA4E50B26B87A8B9F",
+    "frozenReferenceIsolatedEnvelopeSha256": "5B6AA224E844FCEA22DEC6A9D10C863437F039CA73EC258C263DF539905791D0",
+    "scientificDelegateSha256": "B826767EA21BB148DD30A719595B23DD818FD9CFC08B347FEAFD9FD4959F4E3C",
+    "baseReferenceBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "baseReferenceManifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "supplementalReferenceManifestSha256": "FD60D494A25B489A8F1D8581217457AD67B02C98D54CA0A5400FAC0611537114",
+    "sourceImageBytesReadAllowed": true,
+    "opencvPixelDecodeRequired": true,
+    "sourceMutationAllowed": false,
+    "sourceDeletionAllowed": false,
+    "syntheticDotReconstructionAllowed": false,
+    "notchGridOrLineAlignmentRequired": false,
+    "checksumVerificationRequired": true,
+    "checksumUsedForImageFirst": false,
+    "runtimeChecksumOverrideAllowed": false,
+    "runtimeThresholdOverrideAllowed": false,
+    "runtimeTestOrMonkeypatchHookAllowed": false,
+    "automaticIdentityAuthority": false,
+    "automaticReferenceAdmissionAllowed": false,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false,
+    "trainingAllowed": false,
+    "xmlAllowed": false,
+    "productionAllowed": false
+  },
+  "artifactPins": {
+    "launcherSha256": "8667C009631D49916B1A1CFCC78FFA67FF10D7088DCA6FFADD9E28D71DEBE00C",
+    "payloadManifestSha256": "1B0CBDA330DF8756EE57F6B7C6F14EC1F271BB67F3C047DC0ECD0D0FB443F5AD",
+    "cohortSha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661",
+    "liveBindingModuleSha256": "A4CC721663B69CB44CE52EC5155FCFA9576309A74E5ADBADF81BE2403C732670",
+    "executionEnvelopeSha256": "23F52C8FEC096F6587521B78AF8242C80E8687040457F9AE197858DB0B00AED7",
+    "providerSha256": "51C95B3279D253EF717F663F3860CC6B4CA38517706E08E9FE2302BE02CD2BB5",
+    "scientificDelegateSha256": "B826767EA21BB148DD30A719595B23DD818FD9CFC08B347FEAFD9FD4959F4E3C"
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 300,
+    "launchConfirmationSeconds": 2,
+    "corpusWorkerPersistsAfterPortalResponse": true,
+    "corpusCompletionNotRequiredForLaunchResponse": true
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_ONE_OWNED_BACKGROUND_R18T_EXECUTION_ENVELOPE_WORKER"
+  ],
+  "publication": {
+    "publicationAuthorized": false,
+    "explicitOperatorAuthorityPresent": false,
+    "freshLiteralPublishRequired": true,
+    "requiredLiteralRequestId": "REQ_R18T1",
+    "maximumRequestsAfterFreshAuthority": 1,
+    "retryAuthorized": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "publicationAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "automaticReferenceAdmissionAuthorized": false,
+    "holdClearanceAuthorized": false,
+    "activationAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "sourceMutationAuthorized": false,
+    "sourceDeletionAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

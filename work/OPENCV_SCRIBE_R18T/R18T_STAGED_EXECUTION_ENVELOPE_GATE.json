@@ -1,0 +1,33 @@
+{
+  "schema": "argos_opencv_scribe_r18t_execution_envelope_gate_v1",
+  "state": "PASS_R18T_EXECUTION_ENVELOPE_GATE",
+  "artifactLifecycle": "FROZEN",
+  "workerSha256": "23F52C8FEC096F6587521B78AF8242C80E8687040457F9AE197858DB0B00AED7",
+  "caseResults": [
+    {
+      "caseId": "SUCCESS",
+      "state": "PASS",
+      "exitCode": 0
+    },
+    {
+      "caseId": "INJECTED_PRE_INVENTORY_FAILURE",
+      "state": "PASS_DURABLE_FAILURE_NO_FALSE_COMPLETE",
+      "exitCode": 1,
+      "failureSha256": "5B43FA4AE33C5EF79F3A336522A5746B342936445760948BD4F4AD1FE34B8A96"
+    }
+  ],
+  "caseResultCount": 2,
+  "exactWorkerBytesExercised": true,
+  "exactUnsignedStagedBytesExercised": true,
+  "createNewDurableLogs": true,
+  "atomicFailureCommit": true,
+  "falseCompleteCount": 0,
+  "automaticRetryAllowed": false,
+  "syntheticNonImageBytesOnly": true,
+  "imageBytesRead": false,
+  "externalAccess": false,
+  "sourceMutationPerformed": false,
+  "identityAccepted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

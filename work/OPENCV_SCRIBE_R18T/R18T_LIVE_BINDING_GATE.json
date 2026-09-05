@@ -1,0 +1,45 @@
+{
+  "schema": "argos_opencv_scribe_r18t_live_binding_gate_v1",
+  "state": "PASS_R18T_LIVE_BINDING_GATE",
+  "moduleSha256": "A4CC721663B69CB44CE52EC5155FCFA9576309A74E5ADBADF81BE2403C732670",
+  "caseResults": [
+    {
+      "caseId": "ONE",
+      "state": "PASS",
+      "actualCount": 1,
+      "bindingSha256": "5CC23136299B2C10DD9D6228115F1F85CB1E86DF1409004BC3CC6E61A196E15B"
+    },
+    {
+      "caseId": "MANY",
+      "state": "PASS",
+      "actualCount": 3,
+      "bindingSha256": "C9D95BB043BB81C6F5F0248C28BBF8176EA7A4F2788C85DC955B5AF7DAF8DD10"
+    },
+    {
+      "caseId": "ZERO",
+      "state": "PASS_EXPECTED_REJECTION",
+      "detail": "Cohort must contain at least one review case."
+    },
+    {
+      "caseId": "DYNAMIC_OMISSION",
+      "state": "PASS_REJECTED_BEFORE_TARGET_WRITE_OR_PROCESS",
+      "detail": "Required live input is absent: C:\\R18TLB1\\missing\\CASE_OMITTED"
+    },
+    {
+      "caseId": "CASEFOLD_DUPLICATE",
+      "state": "PASS_EXPECTED_REJECTION",
+      "detail": "Duplicate case-insensitive cohort identity: case_dup"
+    }
+  ],
+  "caseResultCount": 5,
+  "allCardinalitiesDerivedFromCollections": true,
+  "dynamicOmissionRejectedBeforeTargetWriteOrProcess": true,
+  "sourceImageBytesHashed": false,
+  "syntheticNonImageBytesOnly": true,
+  "pixelsDecoded": false,
+  "externalAccess": false,
+  "sourceMutationPerformed": false,
+  "identityAccepted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

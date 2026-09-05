@@ -1,0 +1,123 @@
+{
+  "schema": "argos_opencv_scribe_r18t_powershell_safety_gate_v1",
+  "checkedUtc": "2026-09-05T02:26:20.9102496Z",
+  "state": "PASS_R18T_POWERSHELL_SAFETY_GATE",
+  "windowsPowerShell": {
+    "executable": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "version": "5.1.26100.9168",
+    "edition": "Desktop",
+    "exactHostRequiredByBuilder": true
+  },
+  "guardUtilities": [
+    {
+      "path": "utilities/Confirm-ArgosPowerShellHarnessSafety.ps1",
+      "sha256": "94CF79624915831B26E7CCF5B799B905EF16F43B601FE73B324630736D55B731"
+    },
+    {
+      "path": "utilities/Confirm-ArgosPowerShellWrapper.ps1",
+      "sha256": "58D5DCFA48B7F7B809A0FB55C0730146A6FC1A1B78DFD559368BF70771F0F596"
+    }
+  ],
+  "scriptChecks": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18T/Build-R18TRequest.ps1",
+      "sha256": "DFE403C179142BD03A43DB23BFCC65F8E7D48F8768E503D441F879AE9E711F8F",
+      "declaredParameters": ["Build", "Preflight"],
+      "parserErrors": 0,
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18T/Invoke-R18TLiveOnlyLaunch.ps1",
+      "sha256": "8667C009631D49916B1A1CFCC78FFA67FF10D7088DCA6FFADD9E28D71DEBE00C",
+      "declaredParameters": ["ExpectedComputerName", "ExpectedPythonSha256", "OutputRoot", "PackageValidationOnly", "PayloadRoot", "Preflight", "ProposalRoot", "PythonPath", "ReferenceBundlePath", "Rehearsal", "WorkRoot"],
+      "parserErrors": 0,
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18T/Test-R18TLiveBinding.ps1",
+      "sha256": "01B0D55DC17B83249D8EEFD84BD3EE1BE338AE3246ADCF29883BB64C5F25703A",
+      "declaredParameters": ["Gate", "Preflight"],
+      "parserErrors": 0,
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18T/Test-R18TExactPackagePaths.ps1",
+      "sha256": "749068E9029F4874033917B42292734693A9657F9E2563A401EC4B88AC6EA576",
+      "declaredParameters": ["Gate", "OutputPath", "Preflight"],
+      "parserErrors": 0,
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    }
+  ],
+  "callerConsumerChecks": [
+    {
+      "caller": "work/OPENCV_SCRIBE_R18T/Build-R18TRequest.ps1",
+      "consumer": "work/OPENCV_SCRIBE_R18T/Invoke-R18TLiveOnlyLaunch.ps1",
+      "consumerSha256": "8667C009631D49916B1A1CFCC78FFA67FF10D7088DCA6FFADD9E28D71DEBE00C",
+      "namedArguments": ["ExpectedComputerName", "ExpectedPythonSha256", "OutputRoot", "PackageValidationOnly", "PayloadRoot", "Preflight", "ProposalRoot", "PythonPath", "ReferenceBundlePath", "Rehearsal", "WorkRoot"],
+      "getCommandHost": "Windows PowerShell 5.1",
+      "allNamedArgumentsResolved": true
+    },
+    {
+      "caller": "work/OPENCV_SCRIBE_R18T/Build-R18TRequest.ps1",
+      "consumer": "utilities/Confirm-ArgosZeroRecurrencePreaction.ps1",
+      "consumerSha256": "303EE814B441365120DE1083DE018513F3D1ABE523236291460336C4CB2DE5BB",
+      "namedArguments": ["AuditPath", "ContractPath", "Preflight", "ProjectRoot"],
+      "getCommandHost": "Windows PowerShell 5.1",
+      "allNamedArgumentsResolved": true
+    },
+    {
+      "caller": "work/OPENCV_SCRIBE_R18T/Build-R18TRequest.ps1",
+      "consumer": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalPackage.ps1",
+      "consumerSha256": "6CA21D7DE97EDE88F2C41F91D5B7801C688982C8C5A422987EB9528E1E9A084B",
+      "namedArguments": ["ExpectedJobClass", "ExpectedTargetRole", "PackagePath", "SignerCertificatePath"],
+      "getCommandHost": "Windows PowerShell 5.1",
+      "allNamedArgumentsResolved": true
+    },
+    {
+      "caller": "work/OPENCV_SCRIBE_R18T/Invoke-R18TLiveOnlyLaunch.ps1 and work/OPENCV_SCRIBE_R18T/Test-R18TLiveBinding.ps1",
+      "consumer": "Get-R18TLiveBinding in work/OPENCV_SCRIBE_R18T/R18T.LiveBinding.psm1",
+      "consumerSha256": "A4CC721663B69CB44CE52EC5155FCFA9576309A74E5ADBADF81BE2403C732670",
+      "namedArguments": ["CohortPath", "ProposalRoot"],
+      "getCommandHost": "Windows PowerShell 5.1",
+      "allNamedArgumentsResolved": true
+    }
+  ],
+  "pythonArgumentChecks": [
+    {
+      "caller": "work/OPENCV_SCRIBE_R18T/Invoke-R18TLiveOnlyLaunch.ps1",
+      "consumer": "work/OPENCV_SCRIBE_R18T/Run-R18TExecutionEnvelope.py",
+      "consumerSha256": "23F52C8FEC096F6587521B78AF8242C80E8687040457F9AE197858DB0B00AED7",
+      "namedArguments": ["--configuration", "--delegate", "--delegate-sha256", "--output-root"],
+      "allNamedArgumentsDeclared": true
+    },
+    {
+      "caller": "work/OPENCV_SCRIBE_R18T/Run-R18TExecutionEnvelope.py",
+      "consumer": "work/OPENCV_SCRIBE_R18R/Run-R18RReferenceIsolatedCorpus.py -> work/OPENCV_SCRIBE_R18P/Run-R18PReferenceIsolatedCorpus.py",
+      "consumerSha256": "B826767EA21BB148DD30A719595B23DD818FD9CFC08B347FEAFD9FD4959F4E3C",
+      "inheritedParserSha256": "5B6AA224E844FCEA22DEC6A9D10C863437F039CA73EC258C263DF539905791D0",
+      "namedArguments": ["--configuration", "--output-root"],
+      "allNamedArgumentsDeclared": true
+    }
+  ],
+  "cloneRemediationManifestSha256": "CF0D9B35C4306D252D4737781115A1967DE47622610AE21FB75D5131331EBBE3",
+  "cloneGateSha256": "93E41D02395D32AA6658CEC9C44917FB2D909C78B51DE481BB79DBA03BE30FDC",
+  "cloneGateState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "allParserChecksPassed": true,
+  "allHarnessChecksPassed": true,
+  "allWrapperChecksPassed": true,
+  "allCallerConsumerChecksPassed": true,
+  "arbitraryArgumentForwarding": false,
+  "startProcessWrapperHop": false,
+  "sourceWaferImagesRead": false,
+  "pixelsDecoded": false,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "publicationAuthorized": false,
+  "publicationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

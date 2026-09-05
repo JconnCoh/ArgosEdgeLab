@@ -1,0 +1,365 @@
+{
+  "schema": "argos_opencv_scribe_r18t_round_trip_path_plan_input_v1",
+  "createdUtc": "2026-09-05T01:56:00Z",
+  "state": "READY_R18T_KNOWN_ROUTE_PATH_PLAN_INPUT_FINAL_MEMBERSHIP_PENDING",
+  "artifactLifecycle": "DRAFT",
+  "revision": "R18T_LIVE_ONLY_EXECUTION_ENVELOPE_CORRECTION_REVIEW_ONLY_20260904A",
+  "requestId": "REQ_R18T1",
+  "derivation": {
+    "mode": "LEXICAL_SUBSTITUTION_FROM_FROZEN_R18R2_ROUTE_EVIDENCE_ONLY",
+    "sourceRequestId": "REQ_R18R2",
+    "sourceWorkToken": "R18R2",
+    "replacementWorkToken": "R18T1",
+    "routeRootsChanged": false,
+    "sourceEvidence": [
+      {
+        "path": "work/OPENCV_SCRIBE_R18R2/R18R_FULL_ROUND_TRIP_PATH_GATE.json",
+        "sha256": "CD6AB17E09C12B23557048B3B3A7AB0EC2DFDFF68439A01474B41240CB66C81C"
+      },
+      {
+        "path": "work/OPENCV_SCRIBE_R18R2/final/REQ_R18R2.ready.zip.complete_route_gate.json",
+        "sha256": "C66F9E564639E5080E76D14BDDBA0B01E3CB7F96FB53CDB9E29F1EBFB2E3F617"
+      },
+      {
+        "path": "work/OPENCV_SCRIBE_R18R2/R18R_PATH_PLAN_GATE.json",
+        "sha256": "616761ADFAC1A764521A133A5614835CA54404839A1C219E6376B912C7D31BF9"
+      }
+    ]
+  },
+  "pathBudget": {
+    "reservedSuffixCharacters": 32,
+    "warningEffectiveLength": 200,
+    "hardStopEffectiveLength": 230,
+    "maximumComponentLength": 80,
+    "calculationMode": "LEXICAL_ONLY_NO_TEST_PATH_NO_PROVIDER_RESOLUTION",
+    "knownCandidateCount": 35,
+    "knownMaximumPathLength": 164,
+    "knownMaximumEffectiveLength": 196,
+    "knownMaximumComponentLength": 55,
+    "knownLexicalDisposition": "PASS_PATH_BUDGET",
+    "filesystemPathPreflightExecuted": false,
+    "reasonFilesystemPathPreflightNotExecuted": "The no-external-access boundary forbids Test-Path against U:, installed, portal, relay, and JBOD roots. The exact final ZIP member set and returned result layout do not exist yet."
+  },
+  "tokenContract": {
+    "requestId": "REQ_R18T1",
+    "requestIdLength": 9,
+    "maximumResponseTokenExample": "R_0123456789AB_20260905235959999_a1b2c3d4",
+    "maximumResponseTokenLength": 41,
+    "longestKnownInheritedRelativeLeaf": "payload/files/OPENCV_SCRIBE_R18F/reference_bank/SUPPLEMENTAL_GLYPH_REFERENCE_MANIFEST.json",
+    "longestKnownInheritedRelativeLeafLength": 90
+  },
+  "candidatePaths": [
+    {
+      "id": "LOCAL_FINAL_ZIP",
+      "hop": "local_final",
+      "path": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab-scribe-opencv/work/OPENCV_SCRIBE_R18T/final/REQ_R18T1.ready.zip",
+      "pathLength": 114,
+      "effectiveLength": 146,
+      "longestComponentLength": 26
+    },
+    {
+      "id": "LOCAL_PUBLICATION_UPLOAD",
+      "hop": "local_publish_stage",
+      "path": "C:/R18T1P/REQ_R18T1.ready.zip.upload",
+      "pathLength": 36,
+      "effectiveLength": 68,
+      "longestComponentLength": 26
+    },
+    {
+      "id": "LOCAL_PUBLICATION_READY",
+      "hop": "local_publish_stage",
+      "path": "C:/R18T1P/REQ_R18T1.ready.zip",
+      "pathLength": 29,
+      "effectiveLength": 61,
+      "longestComponentLength": 19
+    },
+    {
+      "id": "LOCAL_STAGED_LONGEST_MEMBER",
+      "hop": "local_extract",
+      "path": "C:/R18T1P/REQ_R18T1.ready/payload/files/OPENCV_SCRIBE_R18F/reference_bank/SUPPLEMENTAL_GLYPH_REFERENCE_MANIFEST.json",
+      "pathLength": 116,
+      "effectiveLength": 148,
+      "longestComponentLength": 42
+    },
+    {
+      "id": "LOCAL_VERIFICATION_LONGEST_MEMBER",
+      "hop": "local_verify_extract",
+      "path": "C:/R18T1V/payload/files/OPENCV_SCRIBE_R18F/reference_bank/SUPPLEMENTAL_GLYPH_REFERENCE_MANIFEST.json",
+      "pathLength": 100,
+      "effectiveLength": 132,
+      "longestComponentLength": 42
+    },
+    {
+      "id": "SHARE_REQUEST_UPLOAD",
+      "hop": "gateway_share_request",
+      "path": "U:/ProjectPortalRO/requests/REQ_R18T1.ready.zip.upload",
+      "pathLength": 54,
+      "effectiveLength": 86,
+      "longestComponentLength": 26
+    },
+    {
+      "id": "SHARE_REQUEST_READY",
+      "hop": "gateway_share_request",
+      "path": "U:/ProjectPortalRO/requests/REQ_R18T1.ready.zip",
+      "pathLength": 47,
+      "effectiveLength": 79,
+      "longestComponentLength": 19
+    },
+    {
+      "id": "SHARE_REQUEST_PROCESSED",
+      "hop": "gateway_share_archive",
+      "path": "U:/ProjectPortalRO/requests/processed/REQ_R18T1.ready.zip",
+      "pathLength": 57,
+      "effectiveLength": 89,
+      "longestComponentLength": 19
+    },
+    {
+      "id": "GATEWAY_SHAREBRIDGE_PROCESSED",
+      "hop": "gateway_ingress_archive",
+      "path": "C:/APR/S/requests/processed/REQ_R18T1.ready.zip",
+      "pathLength": 47,
+      "effectiveLength": 79,
+      "longestComponentLength": 19
+    },
+    {
+      "id": "GATEWAY_TO_ARGOS_PENDING",
+      "hop": "gateway_to_argos",
+      "path": "C:/ProgramData/ArgosProjectPortalRO/requests_to_argos/pending/REQ_R18T1.ready.zip",
+      "pathLength": 81,
+      "effectiveLength": 113,
+      "longestComponentLength": 20
+    },
+    {
+      "id": "ARGOS_FROM_GATEWAY_PENDING",
+      "hop": "argos_receive",
+      "path": "C:/ProgramData/ArgosProjectPortalRO/requests_from_gateway/pending/REQ_R18T1.ready.zip",
+      "pathLength": 85,
+      "effectiveLength": 117,
+      "longestComponentLength": 21
+    },
+    {
+      "id": "ARGOS_TO_JBOD_PENDING",
+      "hop": "argos_to_jbod",
+      "path": "C:/ProgramData/ArgosProjectPortalRO/to_jbod/pending/REQ_R18T1.ready.zip",
+      "pathLength": 71,
+      "effectiveLength": 103,
+      "longestComponentLength": 20
+    },
+    {
+      "id": "JBOD_ENDPOINT_PENDING_LONGEST_MEMBER",
+      "hop": "jbod_endpoint_extract",
+      "path": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/pending/REQ_R18T1.ready/payload/files/OPENCV_SCRIBE_R18F/reference_bank/SUPPLEMENTAL_GLYPH_REFERENCE_MANIFEST.json",
+      "pathLength": 164,
+      "effectiveLength": 196,
+      "longestComponentLength": 42
+    },
+    {
+      "id": "JBOD_ENDPOINT_PROCESSED_COMPLETE",
+      "hop": "jbod_endpoint_archive",
+      "path": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/processed/completed/REQ_R18T1.ready.zip",
+      "pathLength": 89,
+      "effectiveLength": 121,
+      "longestComponentLength": 20
+    },
+    {
+      "id": "JBOD_ENDPOINT_PROCESSED_FAILURE",
+      "hop": "jbod_endpoint_failure_archive",
+      "path": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/processed/failed/REQ_R18T1.ready/PORTAL_REQUEST_MANIFEST.json",
+      "pathLength": 111,
+      "effectiveLength": 143,
+      "longestComponentLength": 28
+    },
+    {
+      "id": "JBOD_ENDPOINT_WORK_PARTIAL",
+      "hop": "jbod_endpoint_work",
+      "path": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/state/work/REQ_R18T1.ready.partial/PORTAL_REQUEST_MANIFEST.json",
+      "pathLength": 113,
+      "effectiveLength": 145,
+      "longestComponentLength": 28
+    },
+    {
+      "id": "JBOD_RESPONSE_QUARANTINE_PARTIAL",
+      "hop": "jbod_response_quarantine",
+      "path": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/state/response_quarantine/R_0123456789AB_20260905235959999_a1b2c3d4.ready.partial/PORTAL_RESPONSE_MANIFEST.json",
+      "pathLength": 161,
+      "effectiveLength": 193,
+      "longestComponentLength": 55
+    },
+    {
+      "id": "JBOD_FROM_ENDPOINT_PENDING",
+      "hop": "jbod_response_sender_watch",
+      "path": "C:/ProgramData/ArgosProjectPortalRO/from_jbod/pending/R_0123456789AB_20260905235959999_a1b2c3d4.ready.zip",
+      "pathLength": 105,
+      "effectiveLength": 137,
+      "longestComponentLength": 51
+    },
+    {
+      "id": "ARGOS_FROM_JBOD_PENDING",
+      "hop": "argos_response_receive",
+      "path": "C:/ProgramData/ArgosProjectPortalRO/to_argos/pending/R_0123456789AB_20260905235959999_a1b2c3d4.ready.zip",
+      "pathLength": 104,
+      "effectiveLength": 136,
+      "longestComponentLength": 51
+    },
+    {
+      "id": "ARGOS_FROM_JBOD_SENT",
+      "hop": "argos_response_archive",
+      "path": "C:/ProgramData/ArgosProjectPortalRO/to_argos/sent/R_0123456789AB_20260905235959999_a1b2c3d4.ready.zip",
+      "pathLength": 101,
+      "effectiveLength": 133,
+      "longestComponentLength": 51
+    },
+    {
+      "id": "ARGOS_TO_GATEWAY_PENDING",
+      "hop": "argos_to_gateway",
+      "path": "C:/ProgramData/ArgosProjectPortalRO/to_gateway/pending/R_0123456789AB_20260905235959999_a1b2c3d4.ready.zip",
+      "pathLength": 106,
+      "effectiveLength": 138,
+      "longestComponentLength": 51
+    },
+    {
+      "id": "GATEWAY_RESPONSE_PENDING",
+      "hop": "gateway_response_receive",
+      "path": "C:/APR/R/pending/R_0123456789AB_20260905235959999_a1b2c3d4.ready.zip",
+      "pathLength": 68,
+      "effectiveLength": 100,
+      "longestComponentLength": 51
+    },
+    {
+      "id": "GATEWAY_RESPONSE_ARCHIVE",
+      "hop": "gateway_response_archive",
+      "path": "C:/APR/A/R_0123456789AB_20260905235959999_a1b2c3d4.ready.zip",
+      "pathLength": 60,
+      "effectiveLength": 92,
+      "longestComponentLength": 51
+    },
+    {
+      "id": "SHARE_RESPONSE_READY",
+      "hop": "gateway_share_response",
+      "path": "U:/ProjectPortalRO/responses/R_0123456789AB_20260905235959999_a1b2c3d4.ready.zip",
+      "pathLength": 80,
+      "effectiveLength": 112,
+      "longestComponentLength": 51
+    },
+    {
+      "id": "LOCAL_RESPONSE_EXTRACT_MANIFEST",
+      "hop": "local_response_extract",
+      "path": "C:/R18T1R/R_0123456789AB_20260905235959999_a1b2c3d4.ready/PORTAL_RESPONSE_MANIFEST.json",
+      "pathLength": 87,
+      "effectiveLength": 119,
+      "longestComponentLength": 47
+    },
+    {
+      "id": "INSTALLED_LAUNCHER",
+      "hop": "installed_target",
+      "path": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV02_R18T1.ps1",
+      "pathLength": 65,
+      "effectiveLength": 97,
+      "longestComponentLength": 19
+    },
+    {
+      "id": "JBOD_WORK_PARTIAL_LONGEST_MEMBER",
+      "hop": "jbod_work_partial",
+      "path": "D:/A2/w/ocv/R18T1.partial/OPENCV_SCRIBE_R18F/reference_bank/SUPPLEMENTAL_GLYPH_REFERENCE_MANIFEST.json",
+      "pathLength": 102,
+      "effectiveLength": 134,
+      "longestComponentLength": 42
+    },
+    {
+      "id": "JBOD_WORK_LONGEST_MEMBER",
+      "hop": "jbod_work",
+      "path": "D:/A2/w/ocv/R18T1/OPENCV_SCRIBE_R18F/reference_bank/SUPPLEMENTAL_GLYPH_REFERENCE_MANIFEST.json",
+      "pathLength": 94,
+      "effectiveLength": 126,
+      "longestComponentLength": 42
+    },
+    {
+      "id": "JBOD_OUTPUT_INVENTORY",
+      "hop": "jbod_output",
+      "path": "D:/A2/o/ocv/R18T1/INVENTORY.json",
+      "pathLength": 32,
+      "effectiveLength": 64,
+      "longestComponentLength": 14
+    },
+    {
+      "id": "JBOD_OUTPUT_RUNNING",
+      "hop": "jbod_output",
+      "path": "D:/A2/o/ocv/R18T1/RUNNING.json",
+      "pathLength": 30,
+      "effectiveLength": 62,
+      "longestComponentLength": 12
+    },
+    {
+      "id": "JBOD_OUTPUT_COMPLETE",
+      "hop": "jbod_output",
+      "path": "D:/A2/o/ocv/R18T1/COMPLETE.json",
+      "pathLength": 31,
+      "effectiveLength": 63,
+      "longestComponentLength": 13
+    },
+    {
+      "id": "JBOD_OUTPUT_FAILURE",
+      "hop": "jbod_output",
+      "path": "D:/A2/o/ocv/R18T1/FAILURE.json",
+      "pathLength": 30,
+      "effectiveLength": 62,
+      "longestComponentLength": 12
+    },
+    {
+      "id": "JBOD_OUTPUT_STDOUT",
+      "hop": "jbod_output",
+      "path": "D:/A2/o/ocv/R18T1/WORKER.stdout.log",
+      "pathLength": 35,
+      "effectiveLength": 67,
+      "longestComponentLength": 17
+    },
+    {
+      "id": "JBOD_OUTPUT_STDERR",
+      "hop": "jbod_output",
+      "path": "D:/A2/o/ocv/R18T1/WORKER.stderr.log",
+      "pathLength": 35,
+      "effectiveLength": 67,
+      "longestComponentLength": 17
+    },
+    {
+      "id": "JBOD_OUTPUT_CASE_RESULT",
+      "hop": "jbod_output_case",
+      "path": "D:/A2/o/ocv/R18T1/c/0123456789ABCDEF/RESULT.json",
+      "pathLength": 48,
+      "effectiveLength": 80,
+      "longestComponentLength": 16
+    }
+  ],
+  "knownRouteCoverage": {
+    "localBuildAndFinalZip": true,
+    "localPublicationStaging": true,
+    "gatewayShareRequestAndArchive": true,
+    "gatewayToArgosRelay": true,
+    "argosToJbodRelay": true,
+    "jbodEndpointPendingWorkCompleteAndFailure": true,
+    "compactFailureQuarantine": true,
+    "responseSenderWatchAndSent": true,
+    "argosToGatewayReturn": true,
+    "gatewayShareResponse": true,
+    "localResponseExtraction": true,
+    "installedLauncher": true,
+    "jbodWorkAndOutput": true
+  },
+  "pendingExactInputs": [
+    "FINAL_SIGNED_ZIP_MEMBER_COUNT_AND_MEMBER_SET_SHA256",
+    "FINAL_PORTAL_REQUEST_MANIFEST_SHA256",
+    "FINAL_PAYLOAD_MANIFEST_SHA256",
+    "ACTUAL_LONGEST_FINAL_ZIP_MEMBER_AFTER_BUILDER_CREATION",
+    "FINAL_MAINTENANCE_MAXIMUM_RESULT_LAYOUT_AND_FILES_PATHS",
+    "FINAL_LOCAL_BUILDER_PUBLISHER_AND_COLLECTOR_ROOTS",
+    "EXACT_R18T_COMPLETE_ROUTE_GATE_FROM_FINAL_SIGNED_BYTES"
+  ],
+  "requiredNextGate": "Run Confirm-ArgosPathBudget under Windows PowerShell 5.1 against a complete file-backed candidate array derived from the exact final signed ZIP, then construct the R18T complete round-trip gate before publication authority can be considered.",
+  "finalPathGatePassed": false,
+  "publicationAuthorized": false,
+  "externalPathExistenceChecked": false,
+  "externalAccessPerformed": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

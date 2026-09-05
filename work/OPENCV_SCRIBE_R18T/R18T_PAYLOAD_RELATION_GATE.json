@@ -1,0 +1,38 @@
+{
+  "schema": "argos_opencv_scribe_r18t_payload_relation_gate_v1",
+  "state": "PASS_R18T_PAYLOAD_RELATION_GATE",
+  "artifactLifecycle": "FROZEN",
+  "predecessorManifest": {
+    "path": "work/OPENCV_SCRIBE_R18R2/R18R_PAYLOAD_MANIFEST.json",
+    "sha256": "52114D3C344F9864918844A987B59984AB5578A076AE403701894A52DA551FD8",
+    "fileCount": 27
+  },
+  "successorManifest": {
+    "path": "work/OPENCV_SCRIBE_R18T/R18T_PAYLOAD_MANIFEST.json",
+    "sha256": "1B0CBDA330DF8756EE57F6B7C6F14EC1F271BB67F3C047DC0ECD0D0FB443F5AD",
+    "fileCount": 29
+  },
+  "unchangedPredecessorRowsExpected": 26,
+  "unchangedPredecessorRowsExact": 26,
+  "unchangedPredecessorRowMismatchCount": 0,
+  "removedRows": [
+    "work/OPENCV_SCRIBE_R18R2/R18R_REVIEW_COHORT.json"
+  ],
+  "addedRows": [
+    "work/OPENCV_SCRIBE_R18T/R18T_LIVE_REVIEW_COHORT.json",
+    "work/OPENCV_SCRIBE_R18T/R18T.LiveBinding.psm1",
+    "work/OPENCV_SCRIBE_R18T/Run-R18TExecutionEnvelope.py"
+  ],
+  "successorCohortSha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661",
+  "slot24IdentityOrSourceHashTokenCount": 0,
+  "slot24PackageExcluded": true,
+  "frozenScientificOrReferenceRowModifiedCount": 0,
+  "cardinalityEvidenceOnlyNotExecutableExpectation": true,
+  "pixelsDecoded": false,
+  "sourceWaferImagesRead": false,
+  "externalAccess": false,
+  "sourceMutationPerformed": false,
+  "identityAccepted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

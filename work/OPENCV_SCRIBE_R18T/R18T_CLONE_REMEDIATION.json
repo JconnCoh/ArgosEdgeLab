@@ -1,0 +1,98 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "createdUtc": "2026-09-05T02:12:00Z",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18R2/Invoke-R18RReferenceIsolatedLaunch.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18T/Invoke-R18TLiveOnlyLaunch.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\AFCV1","generatedRoot":"D:\\AFCV1","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\KLARFExport","generatedRoot":"D:\\A2","disposition":"REPLACED"},
+        {"sourceRoot":"D:\\O2D5","generatedRoot":"D:\\O2D5","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18R2/Build-R18RRequest.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18T/Build-R18TRequest.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\ArgosPy313","generatedRoot":"C:\\ArgosPy313","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\R18J_CORPUS_FIXTURE","generatedRoot":"C:\\R18T_PROPOSALS_NOT_ACCESSED","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18R2FO","generatedRoot":"C:\\R18T1SO","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18R2FW","generatedRoot":"C:\\R18T1SW","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18R2P","generatedRoot":"C:\\R18T1P","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18R2PFO","generatedRoot":"C:\\R18T1SO","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18R2PFW","generatedRoot":"C:\\R18T1SW","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18R2V","generatedRoot":"C:\\R18T1V","disposition":"REPLACED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"C:\\R18T1P","disposition":"REPLACED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18R2/MAINTENANCE_DEFINITION.json",
+      "generated": "work/OPENCV_SCRIBE_R18T/MAINTENANCE_DEFINITION.json",
+      "rootRules": [
+        {"sourceRoot":"\\\\ArgosEdgeLabRO\\AllWaferProcessorV2","generatedRoot":"\\\\ArgosEdgeLabRO\\AllWaferProcessorV2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"\\\\identity\\proposals","generatedRoot":"\\\\identity\\proposals","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"\\\\o\\ocv","generatedRoot":"\\\\o\\ocv","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"\\\\R18R2\\COMPLETE.json","generatedRoot":"\\\\R18T1\\COMPLETE.json","disposition":"REPLACED"},
+        {"sourceRoot":"\\\\R18R2\\LAUNCH.json","generatedRoot":"\\\\R18T1\\LAUNCH.json","disposition":"REPLACED"},
+        {"sourceRoot":"\\\\R18R2\\RUNNING.json","generatedRoot":"\\\\R18T1\\RUNNING.json","disposition":"REPLACED"},
+        {"sourceRoot":"","generatedRoot":"\\\\R18T1\\FAILURE.json","disposition":"ADDED"},
+        {"sourceRoot":"","generatedRoot":"\\\\R18T1\\INVENTORY.json","disposition":"ADDED"},
+        {"sourceRoot":"","generatedRoot":"\\\\R18T1\\WORKER.stderr.log","disposition":"ADDED"},
+        {"sourceRoot":"","generatedRoot":"\\\\R18T1\\WORKER.stdout.log","disposition":"ADDED"},
+        {"sourceRoot":"\\\\w\\ocv","generatedRoot":"\\\\w\\ocv","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18R2/R18R_PAYLOAD_MANIFEST.json",
+      "generated": "work/OPENCV_SCRIBE_R18T/R18T_PAYLOAD_MANIFEST.json",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18P/R18P_REVIEW_COHORT.json",
+      "generated": "work/OPENCV_SCRIBE_R18T/R18T_LIVE_REVIEW_COHORT.json",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18R/Test-R18RReferenceIsolation.py",
+      "generated": "work/OPENCV_SCRIBE_R18T/Test-R18TReferenceIsolation.py",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18R2/R18R_FULL_ROUND_TRIP_PATH_GATE.json",
+      "generated": "work/OPENCV_SCRIBE_R18T/R18T_ROUND_TRIP_PATH_PLAN_INPUT.json",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18R2/Test-R18RExactPackagePaths.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18T/Test-R18TExactPackagePaths.ps1",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"C:\\ProgramData","disposition":"ADDED"},
+        {"sourceRoot":"","generatedRoot":"C:\\R18T1P","disposition":"ADDED"},
+        {"sourceRoot":"","generatedRoot":"C:\\R18T1V","disposition":"ADDED"},
+        {"sourceRoot":"","generatedRoot":"D:\\A2","disposition":"ADDED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18R2/PREACTION_R18R_REFERENCE_ISOLATED_PREPARATION.json",
+      "generated": "work/OPENCV_SCRIBE_R18T/PREACTION_R18T_LIVE_ONLY_PREPARATION.json",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}
+      ]
+    }
+  ]
+}

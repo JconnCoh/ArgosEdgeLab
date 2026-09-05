@@ -1,0 +1,107 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-05T01:44:16.2622246Z",
+  "state": "PASS_R18R2_POST_LAUNCH_DIRECT_OBSERVATION_SUPPORT",
+  "incidentId": "R18R2_LIVE_SET_AND_TERMINAL_EVIDENCE_20260904",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "mutationsPerformed": false,
+  "signedTerminalFailureClassification": {
+    "signedLaunchResponsePresent": true,
+    "signedLaunchResponseState": "PASS_R18R_REFERENCE_ISOLATED_WORKER_STARTED",
+    "signedLaunchResponseIsTerminalExecutionSuccess": false,
+    "signedLaunchResponseIsTerminalFailedResponse": false,
+    "signedTerminalFailedResponseCount": 0,
+    "directObservationIsSignedTerminalResponse": false
+  },
+  "sourceEvidence": [
+    {
+      "role": "SIGNED_LAUNCH_ONLY_EVIDENCE",
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_LAUNCH_RESPONSE_GATE.json",
+      "sha256": "ECD1E67112AA9ED5FCDEE97895088A3A46D25EA3E820C275527679F4887824EE"
+    },
+    {
+      "role": "DIRECT_WORKER_EXIT_OBSERVATION",
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_TERMINAL_WORKER_EXIT_OBSERVATION_GATE.json",
+      "sha256": "4BA3157A138B7C6418D47E27B6856B9926D5DFA4071E99861DB11A070CCD2345"
+    },
+    {
+      "role": "CORRECTED_LIVE_INPUT_AND_FAILURE_CLASSIFICATION",
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_FAILED_RUN_REVIEW_GATE.json",
+      "sha256": "FF09E5D455752299E8EA47E7D9BDD47E11A47F2C4F6C6B2D94073C4A6FA4AADE"
+    },
+    {
+      "role": "TERMINAL_HUMAN_READABLE_CHECKPOINT",
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_TERMINAL_FAILURE_CHECKPOINT_20260904.md",
+      "sha256": "C5FD8423B3DD276D26643E6A2212FAB1D249F57B1FEBA960AE53895285DF0471"
+    },
+    {
+      "role": "AUTHORITATIVE_RECOVERY_HANDOFF",
+      "path": "work/OPENCV_SCRIBE_R18R2/R18R2_COMPLETE_RECOVERY_ROLLOVER_MANIFEST_V3.json",
+      "sha256": "B4A783C97192D1B73F7ED5C869730C7412AAD303EE0A060C58D9BD6ED474E7FF"
+    }
+  ],
+  "expectedObserved": [
+    {
+      "field": "signedResponseScope",
+      "expected": "launch confirmation only",
+      "observed": "PID 37456 launched on A1025645101; no terminal execution result was signed"
+    },
+    {
+      "field": "terminalWorkerPresence",
+      "expected": "owned worker remains present or emits terminal evidence",
+      "observed": false
+    },
+    {
+      "field": "terminalOutputState",
+      "expected": "INVENTORY, RUNNING, COMPLETE, or worker-owned FAILURE evidence",
+      "observed": "LAUNCH_ONLY"
+    },
+    {
+      "field": "configuredCaseCount",
+      "expected": 21,
+      "observed": 21
+    },
+    {
+      "field": "exactLiveNestedBfDfPairCount",
+      "expected": 21,
+      "observed": 20
+    },
+    {
+      "field": "soleMissingPhysicalIdentity",
+      "expected": "all configured identities present under the installed proposal root",
+      "observed": "62629-401_20260902002921_Slot24"
+    },
+    {
+      "field": "duplicateConfiguredSourcePairCount",
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "field": "frozenReferenceManifestsPresent",
+      "expected": 2,
+      "observed": 2
+    },
+    {
+      "field": "scientificOcrOutcomeAvailable",
+      "expected": false,
+      "observed": false
+    }
+  ],
+  "supportedDecision": "B_CORRECT_INVALID_LIVE_INPUT_AND_TERMINAL_EVIDENCE_PRECONDITIONS_WITH_FROZEN_OCR_SCIENCE",
+  "observationBoundary": {
+    "newEndpointObservationPerformed": false,
+    "recordDerivedOnlyFromPinnedPriorDirectEvidence": true,
+    "sourceImageBytesRead": false,
+    "pixelsDecoded": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "sourceMutation": false,
+    "publicationPerformed": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

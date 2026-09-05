@@ -1,0 +1,85 @@
+{
+  "schema": "argos_opencv_scribe_r18t_frozen_science_prepackage_gate_v1",
+  "state": "PASS_R18T_FROZEN_SCIENCE_PREPACKAGE_GATE",
+  "artifactLifecycle": "FROZEN",
+  "revision": "R18T_LIVE_ONLY_EXECUTION_ENVELOPE_CORRECTION_REVIEW_ONLY_20260904A",
+  "preparationInheritanceGate": {
+    "path": "work/OPENCV_SCRIBE_R18T/R18T_FROZEN_SCIENCE_AND_SLOT24_EXCLUSION_GATE.json",
+    "sha256": "ED68B3B229D525ADF178975AC33A713211928560357B86F06241C5ABA996FAE5"
+  },
+  "frozenScientificBytes": {
+    "readerSha256": "3AF68D778E297531DD527DD9D65C75FD17BD1FB9C2EC797CB840B10A674532AD",
+    "cropSweepSha256": "EF4C58589CA8885B5CBDE0A989D3F94EE8C447925818DC0FA4E50B26B87A8B9F",
+    "referenceIsolatedEnvelopeSha256": "5B6AA224E844FCEA22DEC6A9D10C863437F039CA73EC258C263DF539905791D0",
+    "scientificDelegateSha256": "B826767EA21BB148DD30A719595B23DD818FD9CFC08B347FEAFD9FD4959F4E3C",
+    "r18rProviderSha256": "51C95B3279D253EF717F663F3860CC6B4CA38517706E08E9FE2302BE02CD2BB5",
+    "r18qProviderSha256": "AB20CFB25D223D40D31237118436446018AE213F800ECF1652213EB942C40DC1"
+  },
+  "frozenReferenceBytes": {
+    "baseBundleLocalPath": "work/OPENCV_SCRIBE_O2D5/final/extract/O2D5_REFS.zip",
+    "baseBundleInstalledPath": "D:/O2D5/ARGOS_O2D5/O2D5_REFS.zip",
+    "baseBundleSha256": "56DF00E37A195E7BC3E026E4950DFB5A0AA7E7AF49A6FF39020B071840CCFBD6",
+    "baseManifestMember": "refs/PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "baseManifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "supplementalManifestSha256": "FD60D494A25B489A8F1D8581217457AD67B02C98D54CA0A5400FAC0611537114"
+  },
+  "nonImageGatesRerun": [
+    {
+      "role": "canonicalChecksum",
+      "path": "work/OPENCV_SCRIBE_R18T/R18T_CANONICAL_CHECKSUM_RERUN_GATE.json",
+      "sha256": "BB0F36B38A7CB697087B324CDE2037E8F2B8ED184BCE8DB71EA1BCB3DB787407",
+      "state": "PASS_R18R_CANONICAL_CHECKSUM_GATE"
+    },
+    {
+      "role": "dynamicReferenceIsolation",
+      "path": "work/OPENCV_SCRIBE_R18T/R18T_REFERENCE_ISOLATION_RERUN_GATE.json",
+      "sha256": "B8C23DF2749F88FC2B8176C31BF21A80C7832DC3F7F5CD18F1AA86C733FA2376",
+      "state": "PASS_R18T_REFERENCE_ISOLATION_GATE"
+    }
+  ],
+  "imageDerivedGate": {
+    "path": "work/OPENCV_SCRIBE_R18R/R18R_LOCAL_GATE.json",
+    "sha256": "566EB33649697713F5E0EFD3E0F04F9861333103BBBC1C1BACFEDE3CD184C82A",
+    "mode": "HASH_PINNED_NOT_RERUN_UNDER_NO_IMAGE_AUTHORITY",
+    "covers": [
+      "PACKAGE_EXCLUDED_SLOT24",
+      "DISPLACED_S17",
+      "VISIBLE_CONTROLS",
+      "FIVE_BLANKS_40_VIEWS",
+      "T7",
+      "KR"
+    ]
+  },
+  "cohortRelationGate": {
+    "path": "work/OPENCV_SCRIBE_R18T/R18T_COHORT_RELATION_GATE.json",
+    "sha256": "6F153B59223370A655098B55D704530BF2248F38331FDDCA1062C493D8574410"
+  },
+  "payloadRelationGate": {
+    "path": "work/OPENCV_SCRIBE_R18T/R18T_PAYLOAD_RELATION_GATE.json",
+    "sha256": "D5F6AF047EDB8C9FBE7E4E7B17B7C6C5A0868B67076D36CEC425CF8706EBA169"
+  },
+  "sourcePackageContaminationGate": {
+    "path": "work/OPENCV_SCRIBE_R18T/R18T_SOURCE_PACKAGE_CONTAMINATION_GATE.json",
+    "sha256": "C2899604411EC7E260695E7B21059084AFDB09FC9938DF21A0C4A4E0C109B64E"
+  },
+  "invariants": {
+    "slot24PackageExcluded": true,
+    "displacedS17Preserved": true,
+    "blankControlCount": 5,
+    "blankViewCount": 40,
+    "syntheticDotsAllowed": false,
+    "notchDependenceAllowed": false,
+    "wholeWaferFallbackAllowed": false,
+    "checksumRole": "VERIFY_IMAGE_FIRST_ONLY",
+    "checksumMaySelectInventOrRewriteGlyph": false
+  },
+  "finalExtractedPackageExclusionPendingBuild": true,
+  "sourceWaferImagesRead": false,
+  "pixelsDecoded": false,
+  "externalAccess": false,
+  "sourceMutationPerformed": false,
+  "publicationAuthorized": false,
+  "identityAccepted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

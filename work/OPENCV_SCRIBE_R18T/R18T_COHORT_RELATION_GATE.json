@@ -1,0 +1,40 @@
+{
+  "schema": "argos_opencv_scribe_r18t_cohort_relation_gate_v1",
+  "state": "PASS_R18T_EXACT_LIVE_COHORT_RELATION",
+  "artifactLifecycle": "FROZEN",
+  "r18pCohort": {
+    "path": "work/OPENCV_SCRIBE_R18P/R18P_REVIEW_COHORT.json",
+    "sha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661",
+    "rowCount": 20
+  },
+  "r18r2Cohort": {
+    "path": "work/OPENCV_SCRIBE_R18R2/R18R_REVIEW_COHORT.json",
+    "sha256": "7393A6CB84F3CF246DCA3751DFCCB76422198C25270CA2759FBF260D2DE8AF56",
+    "rowCount": 21
+  },
+  "r18tCohort": {
+    "path": "work/OPENCV_SCRIBE_R18T/R18T_LIVE_REVIEW_COHORT.json",
+    "sha256": "62A5E864C174A6E2C7F368E784E8DD0F86A11828036401351B2FCBB6336A2661",
+    "rowCount": 20
+  },
+  "r18tByteForByteEqualsR18p": true,
+  "r18r2OrderedPrefixEqualsR18p": true,
+  "orderedPrefixMismatchCount": 0,
+  "r18r2AdditionalRowCount": 1,
+  "soleAdditionalRow": {
+    "physicalIdentity": "62629-401_20260902002921_Slot24",
+    "bfSha256": "F67972F31B30C9BE42615DF7FBDC0E64D642F89860A38F4D8172365C7C261201",
+    "dfSha256": "2D4B7AC5861BE87B2876842C3010B15E268DC7150FFAF84B290EF01E9BFC1386",
+    "classification": "RECIPROCAL_MARGIN_AMBIGUITY_RESOLUTION_CONTROL",
+    "packageExcluded": true
+  },
+  "relation": "R18R2_EQUALS_ORDERED_R18P_PLUS_ONLY_PACKAGE_EXCLUDED_LOCAL_SLOT24",
+  "cardinalityEvidenceOnlyNotExecutableExpectation": true,
+  "imageBytesRead": false,
+  "pixelsDecoded": false,
+  "externalAccess": false,
+  "sourceMutationPerformed": false,
+  "identityAccepted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
