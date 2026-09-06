@@ -1,0 +1,69 @@
+{
+  "schema": "argos_opencv_scribe_r18w4s21_post_evaluation_withdrawal_v1",
+  "createdUtc": "2026-09-05T23:59:00Z",
+  "state": "WITHDRAWN_INVALID_PARTIAL_HYPOTHESIS_INVOCATION",
+  "disposition": "WITHDRAWN",
+  "scope": "R18W4S21_POST_EVALUATION_ONLY",
+  "preservedAuthority": {
+    "signedDataPullRemainsValid": true,
+    "authenticatedBfDfExtractionRemainsValid": true,
+    "requestRetryAuthorized": false,
+    "publicationAuthorized": false
+  },
+  "withdrawnArtifacts": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18W4S21/Evaluate-R18W4S21Slot21.py",
+      "bytes": 8301,
+      "sha256": "73AD6C88483F4594E92AFBE7126421DF4FC64B7AE5C6F73EE3D6A3F6969F711C"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18W4S21/evidence/R18W4S21_SLOT21_R18Z_EVALUATION.json",
+      "bytes": 246283,
+      "sha256": "F91C6EC94C111301D4ACF13AEF8E523AB7D5610451D4B65F4D79902EAE392DCC"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18W4S21/R18W4S21_SLOT21_R18Z_EVALUATION_GATE.json",
+      "bytes": 3914,
+      "sha256": "3133C468E3192848F143BF082272A1E7923DCC4687332BFEB5A1406F28D81765"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18W4S21/R18W4S21_POST_EVALUATION_CHECKPOINT_20260905.md",
+      "bytes": 2214,
+      "sha256": "49E25AD200132285A2D426BE5B55DDFA4EE675652437244A1F2B84BFB80169D7"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18W4S21/R18W4S21_POST_EVALUATION_MANIFEST.json",
+      "bytes": 1520,
+      "sha256": "5CF6BD4920A755D976D92EF3280EFF629CAAAEED5454297820FE68B1726D5378"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18W4S21/R18W4S21_POST_EVALUATION_CHECKPOINT_GATE.json",
+      "bytes": 1209,
+      "sha256": "2B202DD52A2D640AE53B8EF3FAAE8FD75F4D6F75F9EC99C00B645703E50C4417"
+    }
+  ],
+  "cause": {
+    "publicProviderRunJobCalled": false,
+    "normalHypothesisPipelineEntered": false,
+    "evaluatedHypotheses": [
+      "BF/DARK/FORWARD",
+      "DF/DARK/FORWARD"
+    ],
+    "missingHypothesisDimensions": [
+      "BRIGHT_POLARITY",
+      "REVERSE_180_DIRECTION",
+      "CROSS_CHANNEL_SELECTION"
+    ],
+    "dfResultWasHistoricalRawDarkForwardBranch": true,
+    "dfPosition12CorrectionClaimValid": false,
+    "heldPositionProjectionUsedWrongField": "ocrEnvelope.positions",
+    "requiredHeldPositionField": "ocrEnvelope.heldPositions"
+  },
+  "reuseAllowed": false,
+  "rerunAllowed": false,
+  "supersessionRequired": true,
+  "identityAccepted": false,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false
+}

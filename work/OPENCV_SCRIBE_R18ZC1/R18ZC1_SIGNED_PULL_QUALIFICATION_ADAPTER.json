@@ -1,0 +1,76 @@
+{
+  "schema": "argos_opencv_scribe_authenticated_data_pull_qualification_adapter_v1",
+  "createdUtc": "2026-09-05T23:59:00Z",
+  "state": "LOCAL_AUTHENTICATED_SIGNED_PULL_ORIENTED_DETECTOR_INPUT",
+  "qualificationScope": "EXACT_LOCAL_COPY_FROM_AUTHENTICATED_SIGNED_DATA_PULL_OF_ORIENTED_DETECTOR_INPUTS_ONLY",
+  "physicalIdentity": "62546-481_20260707164232_Slot21",
+  "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+  "request": {
+    "requestId": "REQ_S21_20260905212322_S9RHWN0X00G4K59QB7Q1120VDR",
+    "publishedExactlyOnce": true,
+    "retried": false,
+    "requestZipSha256": "CF86A6880CB6FB343DE440CD50865583C97608E1768C104B444706C5C7E45749"
+  },
+  "response": {
+    "responseId": "R_8C756EDA3176_20260905231521702_f4fecab3",
+    "state": "PASS_DATA_PULL",
+    "signedResponseVerified": true,
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "terminalGateSha256": "83DB7BE565D9545FACE7FBC1AB6A65E1088BAA0D11BD1C1ACAA3E73B4808DB5F",
+    "terminalManifestSha256": "EAA38E6AC485FCA533513687E0CF5094BC183AA0482CFE7AAD09B857CBC23543",
+    "collectedManifestSha256": "29AEDB6C8758938B13EB9E881DF7BE15AC0116E6F541AC3EEBEFFCE74902BCF2",
+    "collectedSignatureSha256": "981EE431727563E56D1987BC5AF36237CE42877C07CE814F529F00F0E275FB04",
+    "collectedResultSha256": "AC7A1087BEAB6BB2C676FF627F0A82C0ECCD0F44EF8EE358277585DB7EAA3A7F",
+    "payloadSha256": "11EFDC996334C4645F943AFE3DF3D6474FA7A2E6AE8827A0377F3BC153E3EACF"
+  },
+  "terminalResponseCheckpointGate": {
+    "path": "work/OPENCV_SCRIBE_R18W4S21/R18W4S21_SIGNED_TERMINAL_RESPONSE_CHECKPOINT_GATE.json",
+    "sha256": "AFE5D75B4ED250C961961A756A52B0BA8D46E50B336E9B11924CBCD9F6E1F335",
+    "state": "PASS_R18W4S21_SIGNED_TERMINAL_RESPONSE_CHECKPOINT_GATE"
+  },
+  "inventory": {
+    "path": "work/OPENCV_SCRIBE_R18W4S21/R18W4S21_RETURNED_FILE_INVENTORY.json",
+    "sha256": "24B2629838E774938CF69D69EE7DD863413E29136145B56A2734FCAB16113E8F",
+    "returnedFileCount": 2,
+    "orderedChannels": [
+      "BF",
+      "DF"
+    ]
+  },
+  "inputs": [
+    {
+      "channel": "BF",
+      "relativePath": "identity/proposals/62546-481_20260707164232_Slot21/scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "bytes": 2298990,
+      "sha256": "96046D91BBD6DF81E678224525560BD9C77C0DC09DD89A25992B07F8D1213B93"
+    },
+    {
+      "channel": "DF",
+      "relativePath": "identity/proposals/62546-481_20260707164232_Slot21/scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "bytes": 1785517,
+      "sha256": "8DFD50AE1E0958CE01D7E32E0936978F157C2FECD0CB910BCC27DF9F7CE63CB8"
+    }
+  ],
+  "qualificationTranslation": {
+    "from": "LOCAL_AUTHENTICATED_SIGNED_PULL_ORIENTED_DETECTOR_INPUT",
+    "toInternalExecutionMode": "QUALIFIED_INSTALLED_ORIENTED_DETECTOR_INPUT",
+    "purpose": "Enter the unchanged public R18Z run_job and analyze_images multi-hypothesis path after validating the signed-pull-qualified local copies.",
+    "changesDetectorPixelsOrHypothesisSelection": false
+  },
+  "legacyProducerEvidence": {
+    "proposalMetadataIncluded": false,
+    "multiChannelSummaryIncluded": false,
+    "proposalOrSummaryPathsSynthesized": false,
+    "proposalOrSummaryHashesSynthesized": false,
+    "extractedFilesRepresentedAsInstalledProvenance": false
+  },
+  "truthIncluded": false,
+  "checksumMaySelectOrRewrite": false,
+  "identityAccepted": false,
+  "reviewOnly": true,
+  "referenceAdmissionAuthorized": false,
+  "trainingAuthorized": false,
+  "xmlAuthorized": false,
+  "productionAuthorized": false,
+  "providerActivationAuthorized": false
+}

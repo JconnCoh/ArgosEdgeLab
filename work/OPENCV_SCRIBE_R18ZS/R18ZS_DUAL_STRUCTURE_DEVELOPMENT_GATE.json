@@ -1,0 +1,210 @@
+{
+  "candidateLeaveOneExactLineageOut": {
+    "accepted": 273,
+    "acceptedCorrect": 273,
+    "acceptedWrong": 0,
+    "changedUpstreamRows": [
+      {
+        "after": "1",
+        "before": "L",
+        "harmed": false,
+        "improved": true,
+        "referenceIndex": 58,
+        "truth": "1"
+      },
+      {
+        "after": "6",
+        "before": "1",
+        "harmed": false,
+        "improved": true,
+        "referenceIndex": 195,
+        "truth": "6"
+      },
+      {
+        "after": "6",
+        "before": "8",
+        "harmed": false,
+        "improved": true,
+        "referenceIndex": 206,
+        "truth": "6"
+      },
+      {
+        "after": "9",
+        "before": "0",
+        "harmed": false,
+        "improved": true,
+        "referenceIndex": 275,
+        "truth": "9"
+      },
+      {
+        "after": "G",
+        "before": "B",
+        "harmed": false,
+        "improved": true,
+        "referenceIndex": 384,
+        "truth": "G"
+      }
+    ],
+    "foldCount": 49,
+    "genericEnvelopeCorrections": 4,
+    "held": 202,
+    "newReferenceQueries": [
+      {
+        "accepted": false,
+        "acceptedCorrect": false,
+        "acceptedWrong": false,
+        "decision": "HOLD_SELECTED_LABEL_SPARSE",
+        "exactScribeLineage": "147MH067SUD2",
+        "referenceIndex": 465,
+        "selected": "D",
+        "truth": "D",
+        "upstream": "D"
+      },
+      {
+        "accepted": false,
+        "acceptedCorrect": false,
+        "acceptedWrong": false,
+        "decision": "HOLD_SELECTED_LABEL_SPARSE",
+        "exactScribeLineage": "147MH067SUD2",
+        "referenceIndex": 466,
+        "selected": "H",
+        "truth": "H",
+        "upstream": "H"
+      },
+      {
+        "accepted": false,
+        "acceptedCorrect": false,
+        "acceptedWrong": false,
+        "decision": "HOLD_SELECTED_LABEL_SPARSE",
+        "exactScribeLineage": "147MH067SUD2",
+        "referenceIndex": 467,
+        "selected": "M",
+        "truth": "M",
+        "upstream": "M"
+      },
+      {
+        "accepted": false,
+        "acceptedCorrect": false,
+        "acceptedWrong": false,
+        "decision": "HOLD_SELECTED_LABEL_SPARSE",
+        "exactScribeLineage": "146XF109SUG7",
+        "referenceIndex": 468,
+        "selected": "X",
+        "truth": "X",
+        "upstream": "X"
+      },
+      {
+        "accepted": false,
+        "acceptedCorrect": false,
+        "acceptedWrong": false,
+        "decision": "HOLD_SELECTED_LABEL_SPARSE",
+        "exactScribeLineage": "0303N050FEE4",
+        "referenceIndex": 469,
+        "selected": "N",
+        "truth": "N",
+        "upstream": "N"
+      },
+      {
+        "accepted": false,
+        "acceptedCorrect": false,
+        "acceptedWrong": false,
+        "decision": "HOLD_SELECTED_LABEL_SPARSE",
+        "exactScribeLineage": "0303N049FEB3",
+        "referenceIndex": 470,
+        "selected": "N",
+        "truth": "N",
+        "upstream": "N"
+      },
+      {
+        "accepted": false,
+        "acceptedCorrect": false,
+        "acceptedWrong": false,
+        "decision": "HOLD_SELECTED_LABEL_SPARSE",
+        "exactScribeLineage": "0303N047FEA2",
+        "referenceIndex": 471,
+        "selected": "N",
+        "truth": "N",
+        "upstream": "N"
+      },
+      {
+        "accepted": false,
+        "acceptedCorrect": false,
+        "acceptedWrong": false,
+        "decision": "HOLD_SELECTED_LABEL_SPARSE",
+        "exactScribeLineage": "146AR068SUC7",
+        "referenceIndex": 472,
+        "selected": "R",
+        "truth": "R",
+        "upstream": "R"
+      },
+      {
+        "accepted": false,
+        "acceptedCorrect": false,
+        "acceptedWrong": false,
+        "decision": "HOLD_SELECTED_LABEL_SPARSE",
+        "exactScribeLineage": "1478T059SUA3",
+        "referenceIndex": 473,
+        "selected": "T",
+        "truth": "T",
+        "upstream": "T"
+      },
+      {
+        "accepted": false,
+        "acceptedCorrect": false,
+        "acceptedWrong": false,
+        "decision": "HOLD_SELECTED_LABEL_SPARSE",
+        "exactScribeLineage": "L0751042FEF5",
+        "referenceIndex": 474,
+        "selected": "L",
+        "truth": "L",
+        "upstream": "L"
+      }
+    ],
+    "queryResultFingerprint": "C90844F179F53751E7785357B8AA920E97BCFCF03B5C2031B353C21ABB217E73",
+    "referenceQueries": 475,
+    "upstreamCorrect": 404
+  },
+  "classification": "DIAGNOSTIC_ONLY",
+  "criteria": {
+    "acceptedWrongCount": 0,
+    "all475QueriesEvaluated": true,
+    "changedUpstreamCount": 5,
+    "hardcodedValidationLiteralCount": 0,
+    "harmedPreviouslyUpstreamCorrectIndices": [],
+    "improvedUpstreamCount": 5,
+    "lostFrozenAcceptedCorrectIndices": [],
+    "newSparseReferenceAcceptedCount": 0
+  },
+  "genericRule": {
+    "maximumAppearanceDeficit": 0.22,
+    "maximumAppearanceLeaderScore": 0.85,
+    "newThresholdIntroduced": false,
+    "requiresTopologyAndRunStructureSameWinner": true,
+    "runMinimumMargin": 0.02,
+    "topologyMinimumMargin": 0.12
+  },
+  "invariants": {
+    "checksumUsedForSelection": false,
+    "frozenBeforeSlot21Evaluation": true,
+    "identityAccepted": false,
+    "productionEligible": false,
+    "publicationAuthorized": false,
+    "r18zEnvelopeThresholdChanged": false,
+    "slotLotOrLabelExceptionUsed": false,
+    "trainingEligible": false,
+    "truthComparedOnlyAfterRanking": true,
+    "xmlEligible": false
+  },
+  "mappingFingerprint": "F7B3DC43CAB192EFED2AE9C7B378BB3022D549FC3E40C6DE10F4A8C0D21392A2",
+  "provider": {
+    "path": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R18ZS\\ArgosOpenCvScribeV1R18ZS.py",
+    "revision": "ARGOS_OPENCV_SCRIBE_V1R18ZS_DUAL_STRUCTURE_CONSENSUS_DIAGNOSTIC_20260906",
+    "sha256": "FD46B5F91189691A469B72EC29D8C07FA7FE0119950D24AD8FFD549AE01FF094"
+  },
+  "schema": "argos_opencv_scribe_r18zs_dual_structure_development_gate_v1",
+  "state": "PASS_R18ZS_DUAL_STRUCTURE_FROZEN_BEFORE_SLOT21",
+  "test": {
+    "path": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R18ZS\\Test-R18ZSDevelopmentGate.py",
+    "sha256": "5A61B75FE6B5205EED0517DB2DFBB76ECC21EE4BF1BC6F08465B143D907605DE"
+  }
+}
