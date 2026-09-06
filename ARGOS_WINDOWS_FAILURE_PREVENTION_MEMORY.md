@@ -11511,3 +11511,37 @@ than rerunning it.
 - Recovery: T4 is terminal and no-retry. T5 changes only that fresh child
   binding, retains historical R11 validation, and keeps all detector semantics,
   sources, selectors, thresholds, and holds unchanged.
+
+## 2026-09-06 — Queue recovery must exercise the exact mutating job class after handler completion
+
+- Failure signature: prepublication review of the exact current Project Portal
+  endpoint worker (`CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250`)
+  found that a `MAINTENANCE_PATCH` request interrupted after its entrypoint
+  completes but before its signed response commits cannot resume. On restart,
+  the retained request reaches the deterministic
+  `state\maintenance\<requestId>` directory and stops with `Maintenance request
+  work root already exists.` No frontside or backside KLARF package was built,
+  signed, published, or executed when this capability gap was found.
+- Cause: the inherited queue rehearsal's forced-termination control used an
+  idle worker followed by a `DATA_PULL`; it never terminated the exact
+  `MAINTENANCE_PATCH` path after handler completion. Its path-boundary controls
+  likewise allowed the data handler to write before response-path rejection,
+  while compact failure construction reused the same unsafe response outbox.
+  Unrelated stale directories therefore did not prove exact per-request
+  maintenance-root resume, quarantine, or terminal advancement.
+- Mandatory preflight: for every newly published `MAINTENANCE_PATCH`, run the
+  exact current worker and exact job class through termination after entrypoint
+  completion but before response commit, restart, idempotent receipt, and a
+  second queued control. Exercise effective response-path boundaries below 200,
+  at 200, at 229, and at 230 or more. Prove rejection before handler or target
+  writes, or prove a signed compact failure from an independently path-gated
+  reserved short outbox. An inherited gate for another worker, an idle-worker
+  termination, or a `DATA_PULL` control is not sufficient.
+- Recovery: hold publication without consuming a detector-package attempt.
+  Request explicit authority for one endpoint-infrastructure capability
+  improvement that classifies an existing exact maintenance root as resumable,
+  terminal, quarantinable, or held without rerunning the entrypoint; provides a
+  separately safe compact-response return path; terminally advances the request
+  and queue; and passes the complete exact-worker rehearsal. Do not weaken the
+  package gate, retry a request, or disguise the endpoint change as detector
+  work.
