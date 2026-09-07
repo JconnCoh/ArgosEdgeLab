@@ -11101,3 +11101,22 @@ than rerunning it.
   type defect in an immutable withdrawal addendum. Use fresh V7/P7 scripts and
   evidence; do not publish, collect, or access the portal until their complete
   post-clone, wrapper, path, preaction, post-freeze, and invocation chain passes.
+
+## 2026-09-07 — Validate the exact nested terminal-response schema before route access
+
+- Failure signature: the local `R18ZT` V7 publisher preflight rejected the
+  pinned R18W4S21 signed terminal checkpoint before route/share checks even
+  though its authenticated terminal response is `PASS_DATA_PULL` for the exact
+  predecessor request. The failed preflight wrote nothing and performed no
+  external access or publication.
+- Cause: the publisher read nonexistent top-level `state`, `requestId`, and
+  `signedResponseVerified` properties. The exact gate stores those fields under
+  `terminalResponse`.
+- Mandatory preflight: freeze the exact prior-terminal gate hash, parse its
+  schema, assert exactly one `terminalResponse` object, and exercise the precise
+  nested selectors under Windows PowerShell 5.1 before freezing the publisher.
+- Prevention and recovery: preserve V7/P7 as withdrawn and non-parent. In fresh
+  V8/P8 bytes, change only the three selectors to
+  `priorTerminal.terminalResponse.*`, keep the signed package unchanged, and
+  rebuild the complete clone, wrapper, path, preaction, and post-freeze chain
+  before any publisher preflight or external route read.

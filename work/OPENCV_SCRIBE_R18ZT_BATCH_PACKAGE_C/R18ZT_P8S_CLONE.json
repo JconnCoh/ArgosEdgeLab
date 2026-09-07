@@ -1,0 +1,39 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_v8_scanner_v6_clone_gate_v1",
+  "checkedUtc": "2026-09-07T19:35:17.0221811Z",
+  "state": "PASS_R18ZT_PUBLICATION_V8_SCANNER_V6_CLONE_GATE",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "remediationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8S_REM.json",
+  "remediationBytes": 1748,
+  "remediationSha256": "03C5497ED7E0CC47FCD3FD02A378A36E14FA069B727DBED1324B20FB284B8131",
+  "rawGatePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8S_RAW.json",
+  "rawGateBytes": 1743,
+  "rawGateSha256": "29F886C4396DCD93D57F8A3798B8BF16182F34DA5B8324AB2BEF3E2971DE7B01",
+  "rawGateCheckedUtc": "2026-09-07T19:34:45.1606862Z",
+  "sourceTemplatesGuardedBeforeRemediation": true,
+  "remediationFrozenBeforeGeneration": true,
+  "generatedArtifactsGuardedAfterCloneGate": true,
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV5.ps1",
+      "sourceSha256": "31E4AD9C73CFEA5E42E16BD704581A27B9C5374D9898AF8F36B381E593557872",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV6.ps1",
+      "generatedBytes": 12165,
+      "generatedSha256": "0FFC9A373F8DC8E8CB758E8B8148FD8825E65F131C8C209AA76368E1B2984A9F",
+      "postCloneHarnessCheckedUtc": "2026-09-07T19:35:04.5853753Z",
+      "postCloneWrapperCheckedUtc": "2026-09-07T19:35:05.6400371Z"
+    }
+  ],
+  "pairCount": 1,
+  "violationCount": 0,
+  "onlyGateOutputLeafChanged": true,
+  "preflightSchemaUnchanged": "argos_r18zt1_request_id_uniqueness_preflight_v3",
+  "gateSchemaUnchanged": "argos_r18zt1_request_id_uniqueness_gate_v3",
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "publicationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

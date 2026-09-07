@@ -1,0 +1,230 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R18ZT_PUBLICATION_V8_ONE_SHOT_20260907A",
+  "createdUtc": "2026-09-07T19:42:19.6088664Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "actionType": "PUBLISH_EXACTLY_ONE_SIGNED_REVIEW_ONLY_REQ_R18ZT1_VIA_CREATE_NEW_UPLOAD_AND_ATOMIC_READY_RENAME_THEN_COLLECT_ONE_SIGNED_LAUNCH_RESPONSE_WITH_NO_RETRY_V8",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C",
+  "dependencies": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "9B8F686F00A0E0EC83034C3A61313FFC909EAD4168168C6637DAA64E8F22738A"
+    },
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "15246A9749F28A0B732A9297C978E261DE5547A766085C531E2D323F1EB008D6"
+    },
+    {
+      "path": "work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md",
+      "sha256": "9C542CF7CB86555E5A357AC492C63B891691D7C9F0DA1103A68079CB01AA1F04"
+    },
+    {
+      "path": "work/templates/ARGOS_ZERO_RECURRENCE_PREACTION.template.json",
+      "sha256": "7A04B1D770AE3649FD20BC238B72F0AA3F7C3FC2B3D81EE0044A3A652227B6EC"
+    },
+    {
+      "path": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+      "sha256": "F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V8.ps1",
+      "sha256": "574E72BCD2EF8411C5DF3B80B212D0785D00D98DB4B84D4E14265AB7B7F74AFC"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV8.ps1",
+      "sha256": "159CA5EC48F8005892588191AB73D8CEE5228F7E88A356248E7A6060CDAC4727"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV6.ps1",
+      "sha256": "0FFC9A373F8DC8E8CB758E8B8148FD8825E65F131C8C209AA76368E1B2984A9F"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8_REM.json",
+      "sha256": "E328C77DFA2B486D5E1A7B02FE4BDA99380142605CFE3CDE0B1BF0E9F3B9B808"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8_RAW.json",
+      "sha256": "CE4635CCC9B125CB54D8D8D925F015CA9CD30315FFA437F55C99EAE0B37248B8"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8_CLONE.json",
+      "sha256": "AEB24A35D4181186E75C47FDF9F09E83A1D3AEBF37F4ED20B2FF693C3A649C9B"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8_PS.json",
+      "sha256": "27218C726AEE36F4ECCF113F0767652820457D4CA02365D2254DF3D3534D7428"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8S_REM.json",
+      "sha256": "03C5497ED7E0CC47FCD3FD02A378A36E14FA069B727DBED1324B20FB284B8131"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8S_RAW.json",
+      "sha256": "29F886C4396DCD93D57F8A3798B8BF16182F34DA5B8324AB2BEF3E2971DE7B01"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8S_CLONE.json",
+      "sha256": "92BE933699DEC0E04915F513EFF144116A09147FB9FDBC7C82D23A29D7D9D980"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8S_PS.json",
+      "sha256": "C7620C8EB6DA64BC97BB277681CDA1C7EB2ED8E7F787A4A246FDE7B4FE6795E9"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8_PATH.json",
+      "sha256": "579799BB5F1E8422BCF76AFFECFD746A394D763835EA6282CD5900D490C24F37"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P3_STALE_GATE_WITHDRAWAL.json",
+      "sha256": "CBD3C7A197CABF7AD4D7FEBAA9CB35BDEDAEEE7FD260D0473740CE141372CC6B"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P4_STALE_GATE_WITHDRAWAL.json",
+      "sha256": "F7742E4A80780EFB894FF2866395B5EA0F73C947D352417A08292FD265878B0D"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P4_WITHDRAWAL_AUDIT_ADDENDUM.json",
+      "sha256": "C80A4D42C2E2CAEF575CA0956BD8456FD420D72B02FCE9818C8486DED6CD6EEA"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P5_STALE_GATE_WITHDRAWAL.json",
+      "sha256": "FDEF4CAB68CD9C194D9960ADF14D54048EBEEF790675A5465CD79F0FA3455E97"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P6_STALE_GATE_WITHDRAWAL.json",
+      "sha256": "770B40634DE8978F874B59B9603D54421E32E84B36846255490481373FD8199F"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P6_WITHDRAWAL_AUDIT_ADDENDUM.json",
+      "sha256": "AA691F56F8BF5F9B0BD813D280F470F826139748F2DCEC9B8BE0AAE9B84DDBC6"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P7_STALE_GATE_WITHDRAWAL.json",
+      "sha256": "51B9847B5E1F4CB4CC21CE8AD3A9BBC05DE71F2CA078C9289F08BC9FE98DEBE4"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18W4S21/R18W4S21_SIGNED_TERMINAL_RESPONSE_CHECKPOINT_GATE.json",
+      "sha256": "AFE5D75B4ED250C961961A756A52B0BA8D46E50B336E9B11924CBCD9F6E1F335"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18W4S21/R18W4S21_RETURNED_FILE_INVENTORY.json",
+      "sha256": "24B2629838E774938CF69D69EE7DD863413E29136145B56A2734FCAB16113E8F"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_FROZEN_PACKAGE_BINDINGS_V5.json",
+      "sha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/final/REQ_R18ZT1.ready.zip",
+      "sha256": "98527BD9ACFACB4CE8E4202BCB0ECBD72E9AE73F2AC63385614463FD059BD049"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_FINAL_PACKAGE_GATE_V2.json",
+      "sha256": "9F594BB5CD3A40788CF82A44D0331E2C29C2570213F17B9E5333F6E78CF8BFE9"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/final/REQ_R18ZT1.ready.zip.complete_route_gate.json",
+      "sha256": "64404EA48998C82B87264D9D39D36AA882143A1688196164FDE7624D4BAAE57C"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R17A/R17A_POWERSHELL_COLLECTION_CASE_GATE.json",
+      "sha256": "323068E3401E070FA3089D4734B2D304CA5BA4BC4E850A669D5B3FE691E3BE6D"
+    },
+    {
+      "path": "utilities/Confirm-ArgosZeroRecurrencePreaction.ps1",
+      "sha256": "303EE814B441365120DE1083DE018513F3D1ABE523236291460336C4CB2DE5BB"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true,
+    "mainPublisherCollectorCloneChainPassed": true,
+    "supplementalCollisionScannerCloneChainPassed": true,
+    "terminalResponseCheckpointTopLevelStateValidated": true,
+    "terminalResponseNestedStateRequestAndSignatureValidated": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/OPENCV_SCRIBE_R17A/R17A_POWERSHELL_COLLECTION_CASE_GATE.json",
+    "sha256": "323068E3401E070FA3089D4734B2D304CA5BA4BC4E850A669D5B3FE691E3BE6D",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "controlEvidence": {
+    "maximumPublications": 1,
+    "automaticRetryAuthorized": false,
+    "durableApplyIntentBeforeExternalWrite": true,
+    "publisherGateAtomicCommit": true,
+    "collectorGateAtomicCommit": true,
+    "collisionGateAtomicCommit": true,
+    "collisionGateRetainedPartialHardStop": true,
+    "localAndExternalMutationReportingSeparated": true,
+    "collisionTraversalBoundedBeforeMaterialization": true,
+    "collectorExactFinalRootRecovery": true,
+    "invalidExistingPublishGateHardStop": true,
+    "wrongPathTypeHardStop": true,
+    "routeLeafWrongPathTypeHardStop": true,
+    "recoveredEnvelopeBoundToSelectedArchive": true,
+    "zipPayloadAndImageReadsReportedSeparately": true,
+    "responseZipStableAcrossSecondOpenAndFinalCommit": true,
+    "allAccessibleNamespaceCollisionScanImmediatelyBeforeExternalWrite": true,
+    "finalNoOtherPendingCheckInCollisionGate": true,
+    "collisionPreflightSchema": "argos_r18zt1_request_id_uniqueness_preflight_v3",
+    "collisionGateSchema": "argos_r18zt1_request_id_uniqueness_gate_v3",
+    "responseSnapshotMetadataCap": 4096,
+    "recentResponseCandidateCap": 16,
+    "responsePayloadValidatedInMemoryBeforeExtraction": true,
+    "postFreezeInvocationWrapperGateRequired": true,
+    "terminalResponseCheckpointTopLevelState": "PASS_R18W4S21_SIGNED_TERMINAL_RESPONSE_CHECKPOINT_GATE",
+    "terminalResponseNestedState": "PASS_DATA_PULL",
+    "terminalResponseNestedRequestId": "REQ_S21_20260905212322_S9RHWN0X00G4K59QB7Q1120VDR",
+    "terminalResponseNestedSignedResponseVerified": true
+  },
+  "scope": {
+    "requestId": "REQ_R18ZT1",
+    "publicationAuthorizedByOperator": true,
+    "maximumPublications": 1,
+    "automaticRetryAuthorized": false,
+    "taskActions": [],
+    "sourceImageAccessAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false
+  },
+  "expectedOutputs": [
+    "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8_COLLISION.json",
+    "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8_COLLISION.json.partial",
+    "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8_APPLY_INTENT.json",
+    "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT1V8_PUBLISH_GATE.json",
+    "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT1V8_LR_GATE.json"
+  ],
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

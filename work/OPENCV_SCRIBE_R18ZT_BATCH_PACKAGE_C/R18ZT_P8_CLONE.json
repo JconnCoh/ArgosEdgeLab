@@ -1,0 +1,47 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_v8_clone_gate_v1",
+  "checkedUtc": "2026-09-07T19:29:03.4631135Z",
+  "state": "PASS_R18ZT_PUBLICATION_V8_CLONE_GATE",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "remediationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8_REM.json",
+  "remediationBytes": 2568,
+  "remediationSha256": "E328C77DFA2B486D5E1A7B02FE4BDA99380142605CFE3CDE0B1BF0E9F3B9B808",
+  "rawGatePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P8_RAW.json",
+  "rawGateBytes": 2690,
+  "rawGateSha256": "CE4635CCC9B125CB54D8D8D925F015CA9CD30315FFA437F55C99EAE0B37248B8",
+  "rawGateCheckedUtc": "2026-09-07T19:28:18.3541605Z",
+  "sourceTemplatesGuardedBeforeRemediation": true,
+  "remediationFrozenBeforeGeneration": true,
+  "generatedArtifactsGuardedAfterCloneGate": true,
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V7.ps1",
+      "sourceSha256": "1EDC3A7FA89B15BB057C070BBCC6070F698C1A22EBB37CE954FCC58CA807CFBD",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V8.ps1",
+      "generatedBytes": 53803,
+      "generatedSha256": "574E72BCD2EF8411C5DF3B80B212D0785D00D98DB4B84D4E14265AB7B7F74AFC",
+      "postCloneHarnessCheckedUtc": "2026-09-07T19:28:43.2308054Z",
+      "postCloneWrapperCheckedUtc": "2026-09-07T19:28:44.6276365Z"
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV7.ps1",
+      "sourceSha256": "27D8B08EA2411B9BC60F38310D8009913301297716D3BF5D86B15E70762E1909",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV8.ps1",
+      "generatedBytes": 42677,
+      "generatedSha256": "159CA5EC48F8005892588191AB73D8CEE5228F7E88A356248E7A6060CDAC4727",
+      "postCloneHarnessCheckedUtc": "2026-09-07T19:28:46.7569898Z",
+      "postCloneWrapperCheckedUtc": "2026-09-07T19:28:47.7903561Z"
+    }
+  ],
+  "pairCount": 2,
+  "violationCount": 0,
+  "supersedesWithdrawalPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P7_STALE_GATE_WITHDRAWAL.json",
+  "supersedesWithdrawalSha256": "51B9847B5E1F4CB4CC21CE8AD3A9BBC05DE71F2CA078C9289F08BC9FE98DEBE4",
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "publicationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
