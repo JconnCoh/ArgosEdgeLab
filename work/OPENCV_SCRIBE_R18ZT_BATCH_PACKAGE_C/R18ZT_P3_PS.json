@@ -1,0 +1,67 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_v3_powershell_gate_v1",
+  "checkedUtc": "2026-09-07T16:51:15.2508194Z",
+  "state": "PASS_R18ZT_PUBLICATION_V3_POWERSHELL_GATE",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "cloneGatePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P3_CLONE.json",
+  "cloneGateSha256": "711B79627D161F6671246C49CC873F0C4F71AF9924875E2FD1A3EEEB797E26F7",
+  "windowsPowerShell51": true,
+  "allParserChecksPassed": true,
+  "allHarnessChecksPassed": true,
+  "allWrapperChecksPassed": true,
+  "allCallerConsumerChecksPassed": true,
+  "sourceTemplateChecks": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Publish-R18ZT1V2.ps1",
+      "sha256": "B75B5BF38A6D71562DC8E9853958DBC0E67CA60B295C53BEE7D094954649EB67",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "parserErrors": 0,
+      "violations": 0,
+      "warnings": 0
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Collect-R18ZT1LaunchResponseV2.ps1",
+      "sha256": "9C8837782406FFE74AA18722A52492F99CB40BD86E36E06C26801D64DEEA4B70",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "parserErrors": 0,
+      "violations": 0,
+      "warnings": 0
+    }
+  ],
+  "scriptChecks": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V3.ps1",
+      "bytes": 47285,
+      "sha256": "4769EAA9A848D0047639EE16853F523E0D18B81670DAFB2DCC8CD1DDF3B27961",
+      "harnessCheckedUtc": "2026-09-07T16:51:11.3200508Z",
+      "wrapperCheckedUtc": "2026-09-07T16:51:12.4501900Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "parserErrors": 0,
+      "violations": 0,
+      "warnings": 0
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV3.ps1",
+      "bytes": 28416,
+      "sha256": "5E9933883F52FBFCE09441ADC8DB0B796F6ED1409AAA01F39ECF28F42795F8AE",
+      "harnessCheckedUtc": "2026-09-07T16:51:14.1820892Z",
+      "wrapperCheckedUtc": "2026-09-07T16:51:15.2508194Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "parserErrors": 0,
+      "violations": 0,
+      "warnings": 0
+    }
+  ],
+  "externalPowerShellTypedObjectAssumptions": 0,
+  "formatDependentEvidence": 0,
+  "broadRecursiveWorkspaceEnumeration": 0,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "publicationPerformed": false
+}

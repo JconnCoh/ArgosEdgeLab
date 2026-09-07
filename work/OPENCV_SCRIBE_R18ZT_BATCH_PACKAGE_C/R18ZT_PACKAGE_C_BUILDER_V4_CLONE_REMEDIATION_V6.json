@@ -1,0 +1,66 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R18ZT_PACKAGE_C_BUILDER_V4_PS51_DECIMAL_CORRECTION_20260906A",
+  "state": "FROZEN_PRE_GENERATION",
+  "requestId": "REQ_R18ZT1",
+  "semanticPackageRevision": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906C",
+  "withdrawnPredecessor": {
+    "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PACKAGE_C_BUILDER_V3_PREFLIGHT_WITHDRAWAL.json",
+    "bytes": 3660,
+    "sha256": "999EA5D69073C4DF063789231FBD794788850B652FA1792FA4A80DAF6C987078",
+    "disposition": "WITHDRAWN_NON_REUSABLE_NON_PARENT"
+  },
+  "preGenerationOrder": {
+    "thisArtifactCreatedBeforeGeneratedPath": true,
+    "sourceHarnessGuardAlreadyPassed": true,
+    "sourceHarnessPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PACKAGE_B_BUILDER_SOURCE_HARNESS_RAW.json",
+    "sourceHarnessSha256": "B05098394F047B16AD5C90ED81665EB36C36184A048FA661288B947341C69E44",
+    "sourceHarnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "generatedHarnessRequiredAfterGeneration": true,
+    "gatesRunByThisManifest": false,
+    "testsRunByThisManifest": false
+  },
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Build-R18ZTBatchRequest.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV4.ps1",
+      "sourceGuardSha256": "882679584A018B93DA351A9481FE8C18EC194782EA16FABCFF4F1C881148468C",
+      "sourceHarnessDisposition": {
+        "observedState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+        "rawResultPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PACKAGE_B_BUILDER_SOURCE_HARNESS_RAW.json",
+        "rawResultSha256": "B05098394F047B16AD5C90ED81665EB36C36184A048FA661288B947341C69E44",
+        "parserErrors": 0,
+        "violationCount": 0,
+        "warningCount": 0,
+        "metadataOnly": true,
+        "targetExecuted": false
+      },
+      "generatedHarnessRequirement": {
+        "requiredStateBeforeExecution": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+        "officialGateRunsSoFar": 0,
+        "gateExecutedByThisManifest": false
+      },
+      "rootRules": [
+        {"sourceRoot":"C:\\ArgosPy313","generatedRoot":"C:\\ArgosPy313","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\R18ZT_PROPOSALS_NOT_ACCESSED","generatedRoot":"C:\\R18ZT1C3_PROPOSALS_NOT_ACCESSED","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1P","generatedRoot":"C:\\R18ZT1C3P","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1V","generatedRoot":"C:\\R18ZT1C3V","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1T","generatedRoot":"C:\\R18ZT1C3T","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1TW","generatedRoot":"C:\\R18ZT1C3TW","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1TO","generatedRoot":"C:\\R18ZT1C3TO","disposition":"REPLACED"}
+      ]
+    }
+  ],
+  "globalRules": {
+    "freshBuilderArtifact": true,
+    "generatedFileMayNotExecuteBeforeExactHarnessPass": true,
+    "failedBuilderMayNotBeTemplate": true,
+    "sourceIsLastSafePassedBuilderTemplate": true,
+    "frozenPayloadAndScienceInputsReusedWithoutModification": true,
+    "externalAccessPerformed": false,
+    "targetExecuted": false,
+    "publicationPerformed": false
+  }
+}

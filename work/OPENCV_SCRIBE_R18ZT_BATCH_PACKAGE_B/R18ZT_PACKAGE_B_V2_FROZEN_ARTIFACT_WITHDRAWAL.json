@@ -1,0 +1,59 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_package_artifact_withdrawal_v2",
+  "state": "WITHDRAWN_R18ZT_PACKAGE_B_V2_BINDING_AND_DESIGN_NON_REUSABLE_NON_PARENT",
+  "requestId": "REQ_R18ZT1",
+  "packageRevision": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906B",
+  "reason": "The V2 binding was labeled frozen while it retained the stale case schema, stale V1 artifact paths, and incomplete route/path evidence. The V2 package design was labeled frozen without the pinned source-worker role, explicit non-equivalence of the three worker hashes, the 20-character case-ID contract, or the exact longest atomic case-output facts. Neither artifact may be reused as a package, gate, template, or publication parent.",
+  "withdrawn": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_FROZEN_PACKAGE_BINDINGS_V2.json",
+      "sha256": "876EA004765EB5BD1A9F456CB5E2C63E8DCA33FBC985180AB2261536C3D4C6F7",
+      "statePreservedInArtifact": "FROZEN_R18ZT_PACKAGE_B_V2_BINDINGS",
+      "defects": [
+        "STALE_CASE_SCHEMA",
+        "STALE_V1_ARTIFACT_PATHS",
+        "MISSING_ROUTE_SOURCE_WORKER_ROLE",
+        "MISSING_CASE_ID_AND_EXACT_LONGEST_OUTPUT_PATH_FACTS"
+      ]
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_BATCH_PACKAGE_DESIGN_V2.json",
+      "sha256": "7AB32D088ACDD5EF77B0B5EB2CD4E10BE312C17FD11B60E0E570F523170923C2",
+      "statePreservedInArtifact": "FROZEN_UNPUBLISHED",
+      "defects": [
+        "MISSING_ROUTE_SOURCE_WORKER_ROLE_AND_EXPLICIT_NO_EQUALITY_CLAIM",
+        "MISSING_CASE_ID_AND_EXACT_LONGEST_OUTPUT_PATH_FACTS"
+      ]
+    }
+  ],
+  "retainedVerifiedFrozenArtifacts": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/MAINTENANCE_DEFINITION_V2.json",
+      "sha256": "3BAE55419BF753F35691E6E21AFD987103F890444DA3B906DF320CA11D470DF6",
+      "disposition": "RETAINED_BYTE_FOR_BYTE_AFTER_EXACT_PIN_AND_CONTRACT_VERIFICATION"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PACKAGE_B_CLONE_REMEDIATION_V2.json",
+      "sha256": "423C8C9EA538D6F371FAC8070259742CD577570DC6C8B33FD8EB1B509A30630C",
+      "disposition": "RETAINED_BYTE_FOR_BYTE_AFTER_ALL_THREE_SOURCE_GUARDS_AND_JUNCTION_LITERAL_VERIFICATION"
+    }
+  ],
+  "successors": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_BATCH_PACKAGE_DESIGN_V3.json",
+      "sha256OmittedUntilDraftFreeze": true
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_FROZEN_PACKAGE_BINDINGS_V3.json",
+      "sha256SelfCycleOmitted": true
+    }
+  ],
+  "requestIdReusedBecauseNoV2PackageWasSignedOrPublished": true,
+  "v2SignatureCreated": false,
+  "v2PublicationPerformed": false,
+  "v2TargetExecuted": false,
+  "v2MayBePublicationParent": false,
+  "v2MayBeTemplate": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

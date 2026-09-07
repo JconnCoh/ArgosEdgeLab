@@ -1,0 +1,35 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_package_c10_withdrawal_v1",
+  "createdUtc": "2026-09-07T15:54:25.5889822Z",
+  "state": "WITHDRAWN_R18ZT_PACKAGE_C10_WINDOWS_POWERSHELL_SET_HASH_MISMATCH",
+  "requestId": "REQ_R18ZT1",
+  "failedAction": "LOCAL_METADATA_ONLY_BUILDER_PREFLIGHT",
+  "failureMessage": "R18ZT path-gate membership changed.",
+  "cause": "HOST_DEFAULT_SORT_OBJECT_ORDER_DIFFERS_BETWEEN_POWERSHELL_7_AND_WINDOWS_POWERSHELL_5_1",
+  "facts": {
+    "exactMemberCount": 49,
+    "frozenCanonicalMemberSetSha256": "AB10C93FDA4A920FD87EF1FB4C7F7140B3D3F7EC8FD9D49978FE7C553A67DC9E",
+    "windowsPowerShell51DefaultSortSha256": "4C5548674A9C2BA55A497E0BFE1349874106396D0530CF18723C540A6F2A1151",
+    "exactMembershipMismatchCount": 0,
+    "diagnosticPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Diagnose-R18ZTMemberSet.ps1",
+    "diagnosticSha256": "5A47198AB6CBCE772F9262F97883386BDA5381649B771C55F104B843EBCAF994"
+  },
+  "withdrawn": [
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV7.ps1","sha256":"5B37D95E00E41428B4B46CB674B26692EBFB0B72D8BF53B7D77FD3E25BE86607"},
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C10_CLONE.json","sha256":"21BB45061AE6607FBDC0E575048760CFD4B1C2A792A2D58473A1D2AD473210A4"},
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C10_PS.json","sha256":"98CCD7FE1C3551E9B09C79E8EB3B01257B306816F6D2B0B0DDA079692E9AF7DB"},
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C10_PRE.json","sha256":"D7C1542EFE09EEFAE5C343DC14C5AD6B0E723051C1056AB88DDE7C48CBE5F0BE"}
+  ],
+  "scannerV2Disposition": "UNCHANGED_GUARDED_SOURCE_ONLY_FOR_FRESH_SCANNER_V3_NO_EXECUTION_OR_EXTERNAL_ACCESS_OCCURRED",
+  "builderTestPerformed": false,
+  "builderBuildPerformed": false,
+  "signatureCreated": false,
+  "signerAccessed": false,
+  "externalAccessPerformed": false,
+  "publicationPerformed": false,
+  "targetExecuted": false,
+  "mayBePackageParent": false,
+  "mayBePublicationParent": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

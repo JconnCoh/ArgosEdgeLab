@@ -1,0 +1,92 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_package_c_v10_powershell_safety_gate_v1",
+  "checkedUtc": "2026-09-07T16:24:44.4932516Z",
+  "state": "PASS_R18ZT_PACKAGE_C_POWERSHELL_SAFETY",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "cloneGateSha256": "ED9538AF489B02FDDF0FEA177EF5BCF51C336DB629517D58627A4508459C2820",
+  "windowsPowerShell51": true,
+  "allParserChecksPassed": true,
+  "allHarnessChecksPassed": true,
+  "allWrapperChecksPassed": true,
+  "allCallerConsumerChecksPassed": true,
+  "orderedGenerationEvidence": {
+    "sourceHarnessesCheckedBeforeRemediation": true,
+    "remediationCreatedBeforeGeneratedBytes": true,
+    "cloneGateCheckedUtc": "2026-09-07T16:24:17.9630237Z",
+    "generatedHarnessesAfterCloneGate": true
+  },
+  "launcherPreflightSchema": {
+    "stagedAndExtractedPredicatesIdentical": true,
+    "sourceInventoryAndHashingDeferredToOwnedWorkerRequiredTrue": true,
+    "sourceImageBytesHashedRequiredFalse": true,
+    "pixelsDecodedRequiredFalse": true,
+    "withdrawnSourceImageBytesReadPropertyAbsent": true
+  },
+  "decimalCompatibility": {
+    "diagnosticPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Diagnose-R18ZTV4Decimal.ps1",
+    "diagnosticBytes": 1845,
+    "diagnosticSha256": "A479B336AA2A31D57D5CC1C0E2DA80733DD5C80A822573B1BCB69FF3D6070D05",
+    "state": "PASS_R18ZT_V4_PS51_DECIMAL_PREDICATES",
+    "finishDecimalEqual": true,
+    "resultDecimalEqual": true,
+    "withdrawnDoublePredicatesBothFalse": true
+  },
+  "setHashCompatibility": {
+    "diagnosticPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Diagnose-R18ZTMemberSet.ps1",
+    "diagnosticBytes": 2650,
+    "diagnosticSha256": "5A47198AB6CBCE772F9262F97883386BDA5381649B771C55F104B843EBCAF994",
+    "frozenCanonicalSha256": "AB10C93FDA4A920FD87EF1FB4C7F7140B3D3F7EC8FD9D49978FE7C553A67DC9E",
+    "windowsPowerShell51DefaultSortSha256": "4C5548674A9C2BA55A497E0BFE1349874106396D0530CF18723C540A6F2A1151",
+    "exactMembershipMismatchCount": 0,
+    "hostDefaultSortRemovedFromCanonicalValidation": true
+  },
+  "scriptChecks": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Invoke-R18ZTBatchLaunchV3.ps1",
+      "bytes": 79724,
+      "sha256": "61A8C1BE7B987338F077CAA30EA6152E7ACE9780DE49C2A70D195227E3D70AB9",
+      "harnessCheckedUtc": "2026-09-07T16:24:37.7093235Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperCheckedUtc": "2026-09-07T16:24:38.8668486Z",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV10.ps1",
+      "bytes": 73620,
+      "sha256": "A86EC60302EDE387F7963B02BFA0F2B28EBE7084739EF53D4F3F59FFC88EBD1E",
+      "harnessCheckedUtc": "2026-09-07T16:24:41.0286149Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperCheckedUtc": "2026-09-07T16:24:42.0095215Z",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV3.ps1",
+      "bytes": 8093,
+      "sha256": "D4AC4547C3CFD86FB6BD1EEA8F8EC21B967F63F822FF55F5C3C9527F916804F9",
+      "harnessCheckedUtc": "2026-09-07T16:24:43.5240144Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperCheckedUtc": "2026-09-07T16:24:44.4932516Z",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    }
+  ],
+  "conditionalScalarizationViolations": 0,
+  "externalPowerShellTypedObjectAssumptions": 0,
+  "formatDependentEvidence": 0,
+  "broadRecursiveWorkspaceEnumeration": false,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalMutationPerformed": false
+}

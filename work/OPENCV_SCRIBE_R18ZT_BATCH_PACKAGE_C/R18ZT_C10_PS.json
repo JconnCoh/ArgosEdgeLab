@@ -1,0 +1,81 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_package_c_v7_powershell_safety_gate_v1",
+  "checkedUtc": "2026-09-07T15:33:07.5672211Z",
+  "state": "PASS_R18ZT_PACKAGE_C_POWERSHELL_SAFETY",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "cloneGateSha256": "21BB45061AE6607FBDC0E575048760CFD4B1C2A792A2D58473A1D2AD473210A4",
+  "windowsPowerShell51": true,
+  "allParserChecksPassed": true,
+  "allHarnessChecksPassed": true,
+  "allWrapperChecksPassed": true,
+  "allCallerConsumerChecksPassed": true,
+  "orderedGenerationEvidence": {
+    "sourceHarnessesCheckedBeforeRemediation": true,
+    "remediationCreatedBeforeGeneratedBytes": true,
+    "cloneGateCheckedUtc": "2026-09-07T15:32:31.5169300Z",
+    "generatedHarnessesAfterCloneGate": true
+  },
+  "decimalCompatibility": {
+    "diagnosticPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Diagnose-R18ZTV4Decimal.ps1",
+    "diagnosticBytes": 1845,
+    "diagnosticSha256": "A479B336AA2A31D57D5CC1C0E2DA80733DD5C80A822573B1BCB69FF3D6070D05",
+    "state": "PASS_R18ZT_V4_PS51_DECIMAL_PREDICATES",
+    "finishDecimalEqual": true,
+    "resultDecimalEqual": true,
+    "withdrawnDoublePredicatesBothFalse": true
+  },
+  "scriptChecks": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Invoke-R18ZTBatchLaunchV3.ps1",
+      "bytes": 79724,
+      "sha256": "61A8C1BE7B987338F077CAA30EA6152E7ACE9780DE49C2A70D195227E3D70AB9",
+      "harnessCheckedUtc": "2026-09-07T15:33:00.9125876Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperCheckedUtc": "2026-09-07T15:33:01.9710191Z",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV7.ps1",
+      "bytes": 73575,
+      "sha256": "5B37D95E00E41428B4B46CB674B26692EBFB0B72D8BF53B7D77FD3E25BE86607",
+      "harnessCheckedUtc": "2026-09-07T15:33:04.2978043Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperCheckedUtc": "2026-09-07T15:33:05.3521624Z",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV2.ps1",
+      "bytes": 8093,
+      "sha256": "D4AC4547C3CFD86FB6BD1EEA8F8EC21B967F63F822FF55F5C3C9527F916804F9",
+      "harnessCheckedUtc": "2026-09-07T15:33:06.6767395Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperCheckedUtc": "2026-09-07T15:33:07.5672211Z",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    }
+  ],
+  "supersedes": {
+    "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C9_PS.json",
+    "sha256": "F6182EF409346886D46BEC4F94152144DF4BA797C57A09E3E484704F070D5D3F",
+    "reason": "SCANNER_RESULT_OMITTED_BINDING_RECORD_SHA256"
+  },
+  "conditionalScalarizationViolations": 0,
+  "externalPowerShellTypedObjectAssumptions": 0,
+  "formatDependentEvidence": 0,
+  "broadRecursiveWorkspaceEnumeration": false,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalMutationPerformed": false
+}

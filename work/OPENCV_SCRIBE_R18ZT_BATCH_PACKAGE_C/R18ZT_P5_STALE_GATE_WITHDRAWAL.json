@@ -1,0 +1,28 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_withdrawal_v1",
+  "createdUtc": "2026-09-07T17:55:51.1599607Z",
+  "state": "WITHDRAWN_R18ZT_PUBLICATION_P5_PREGENERATION_CHRONOLOGY_DEFECT",
+  "requestId": "REQ_R18ZT1",
+  "withdrawnRevision": "V5/P5",
+  "cause": "R18ZT_P5_REM.json declared createdUtc 2026-09-07T17:21:37.0917439Z and FROZEN_PRE_GENERATION, but the exact V3 scanner source guard ran at 2026-09-07T17:23:53.2526488Z and the scanner pair was appended only afterward. The required source-guard-before-remediation chronology was therefore not truthfully represented.",
+  "withdrawnPins": [
+    { "name": "remediation", "bytes": 2925, "sha256": "175DB993B83719900EEDC494A9D957C1CEB78FCE1962425B02425C78CF6C1A95" },
+    { "name": "rawCloneGate", "bytes": 3801, "sha256": "3D5781906DA16D792B2AB35C7A22541729171A03415D0204F179ED1923D2003B" },
+    { "name": "cloneGate", "bytes": 2945, "sha256": "C9F33A327388079264789182636FEFEBB88CF19B51D4BD00B09DFD01ECCA018E" },
+    { "name": "powerShellGate", "bytes": 3046, "sha256": "4AE0E03C0D5E7090FFC26B942C51EC19E0683D54B318C506E75AC942AE838F09" },
+    { "name": "pathGate", "bytes": 2794, "sha256": "EA1FA568411ADA4A5B7250C8787EA6829DFD748FAE8692EFCFACFEAD1A64C396" },
+    { "name": "preaction", "bytes": 7235, "sha256": "83B7925AC09AF64EE2601B80FCD48833FC36E7CA67C56DF345AA5F5CB451E5D0" },
+    { "name": "preInvocationTooling", "bytes": 3860, "sha256": "998AB012252A069608A9F9F122F69BBDCDA8593C93F4874C956B7D9307C613D0" },
+    { "name": "invocation", "bytes": 21738, "sha256": "CBBE53E4A1ED816627633C3DDD7F56290C212E642A9CDD44096FF47E2E8BDAE4" },
+    { "name": "postFreezeTooling", "bytes": 5122, "sha256": "98C9B050F71EFE3A22E2F558D75F8449CEF08DE256983C257BF20F0DF96D0182" }
+  ],
+  "publicationPerformed": false,
+  "externalAccessPerformed": false,
+  "publisherApplyExecuted": false,
+  "collectorExecuted": false,
+  "futureReuseAllowed": false,
+  "successorParentAllowed": false,
+  "expectedSuccessor": "V6/P6",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

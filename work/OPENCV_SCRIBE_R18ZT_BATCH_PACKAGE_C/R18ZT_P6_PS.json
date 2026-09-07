@@ -1,0 +1,31 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_v6_powershell_gate_v1",
+  "checkedUtc": "2026-09-07T18:00:57.3777297Z",
+  "state": "PASS_R18ZT_PUBLICATION_V6_POWERSHELL_GATE",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "cloneGatePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P6_CLONE.json",
+  "cloneGateBytes": 2652,
+  "cloneGateSha256": "BCF5E4D2B07C67ABE720998CB8DC961B33A0076E416B0873CBC410E07E01BF50",
+  "cloneGateCheckedUtc": "2026-09-07T18:00:05.8413381Z",
+  "harnessUtilityPath": "utilities/Confirm-ArgosPowerShellHarnessSafety.ps1",
+  "harnessUtilitySha256": "94CF79624915831B26E7CCF5B799B905EF16F43B601FE73B324630736D55B731",
+  "wrapperUtilityPath": "utilities/Confirm-ArgosPowerShellWrapper.ps1",
+  "wrapperUtilitySha256": "58D5DCFA48B7F7B809A0FB55C0730146A6FC1A1B78DFD559368BF70771F0F596",
+  "windowsPowerShell": { "edition": "Desktop", "major": 5, "minor": 1 },
+  "sourceTemplatesGuardedBeforeRemediation": true,
+  "cloneRemediationGatePrecededGeneratedGuards": true,
+  "allParserChecksPassed": true,
+  "allHarnessChecksPassed": true,
+  "allScriptOnlyWrapperChecksPassed": true,
+  "postFreezeInvocationWrapperChecksPending": true,
+  "scriptChecks": [
+    { "role": "publisher", "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V6.ps1", "bytes": 53098, "sha256": "1A57D56955FF4307DD159060FC03D14EFF11C495C330BB2E2035E94A32A3EF4A", "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY", "harnessCheckedUtc": "2026-09-07T17:59:44.5742842Z", "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT", "wrapperCheckedUtc": "2026-09-07T17:59:45.5157444Z", "parserErrors": 0, "violations": 0, "warnings": 0 },
+    { "role": "collector", "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV6.ps1", "bytes": 38010, "sha256": "157326A42763D17C53A077592656BD41DB8D5CFBCB9BA09BF3B0C1F3F7B9052C", "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY", "harnessCheckedUtc": "2026-09-07T17:59:47.4556119Z", "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT", "wrapperCheckedUtc": "2026-09-07T17:59:48.8413332Z", "parserErrors": 0, "violations": 0, "warnings": 0 },
+    { "role": "collisionScanner", "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV4.ps1", "bytes": 10052, "sha256": "3BC1AED9C716FF5FF854CAB68E53A76CA386F3622559D0D65594CA9D701AB9F2", "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY", "harnessCheckedUtc": "2026-09-07T17:59:50.5939699Z", "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT", "wrapperCheckedUtc": "2026-09-07T17:59:51.8523936Z", "parserErrors": 0, "violations": 0, "warnings": 0 }
+  ],
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "publicationPerformed": false
+}

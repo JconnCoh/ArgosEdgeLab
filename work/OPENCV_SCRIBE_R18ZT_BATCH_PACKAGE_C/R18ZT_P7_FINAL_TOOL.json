@@ -1,0 +1,154 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_v7_postfreeze_tooling_gate_v1",
+  "checkedUtc": "2026-09-07T18:54:16.9344553Z",
+  "state": "PASS_R18ZT_PUBLICATION_V7_POSTFREEZE_TOOLING_GATE",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "invocationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PUBLICATION_INVOCATION_V7.json",
+  "invocationBytes": 22809,
+  "invocationSha256": "D27577E8C6BEF5B8D7A2CF7F6E5BBD170F30F58AAE660F7532703CF701BE58AA",
+  "dependencyPins": [
+    {
+      "name": "publisher",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V7.ps1",
+      "bytes": 53642,
+      "sha256": "1EDC3A7FA89B15BB057C070BBCC6070F698C1A22EBB37CE954FCC58CA807CFBD"
+    },
+    {
+      "name": "collector",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV7.ps1",
+      "bytes": 42677,
+      "sha256": "27D8B08EA2411B9BC60F38310D8009913301297716D3BF5D86B15E70762E1909"
+    },
+    {
+      "name": "collisionScanner",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV5.ps1",
+      "bytes": 12165,
+      "sha256": "31E4AD9C73CFEA5E42E16BD704581A27B9C5374D9898AF8F36B381E593557872"
+    },
+    {
+      "name": "publisherRemediation",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P7_REM.json",
+      "bytes": 3248,
+      "sha256": "39BAA7C36A9BAB7DF992518BECA019FF9E0E3A48C5F9804E02B49967029A0F9D"
+    },
+    {
+      "name": "publisherCloneRawGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P7_RAW.json",
+      "bytes": 3801,
+      "sha256": "26B299B7505B93A4A7BF9B5304EAC72A003F44BD949D64258BD4A9A5A67F73ED"
+    },
+    {
+      "name": "publisherCloneGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P7_CLONE.json",
+      "bytes": 3196,
+      "sha256": "67C95750DEBF73AA716BDC61A0FA0CE880009E54268CAB41F7D559EA4BF18A83"
+    },
+    {
+      "name": "publisherHarnessGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P7_PS.json",
+      "bytes": 3048,
+      "sha256": "5AA0AAD30E937611FA7904323F6C7C9C2A3A86A9C4C7E522AB320ABAAEE29722"
+    },
+    {
+      "name": "publicationPathGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P7_PATH.json",
+      "bytes": 2977,
+      "sha256": "A08FDBF22AF618F39C2DA96E0D7FAC019EA6E279AE679AA00DCCAA8089F80112"
+    },
+    {
+      "name": "preactionContract",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P7_PRE.json",
+      "bytes": 8429,
+      "sha256": "3EEE4F82B5761C7775C75FAF0742D3D7336B015DD144D55AB2579F9F4E934C27"
+    },
+    {
+      "name": "publicationToolingGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P7_TOOL.json",
+      "bytes": 4835,
+      "sha256": "A448BA0806AF3E19E9FAE2825B9E347C689B999B5FA015D5B13A6AD86CBC59FF"
+    },
+    {
+      "name": "failurePreventionMemory",
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "bytes": 730998,
+      "sha256": "6B8549F22ED1625E0BCE62EC80930332272F385FB74D1D7C9352C7B53FC32B97"
+    },
+    {
+      "name": "p3Withdrawal",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P3_STALE_GATE_WITHDRAWAL.json",
+      "bytes": 911,
+      "sha256": "CBD3C7A197CABF7AD4D7FEBAA9CB35BDEDAEEE7FD260D0473740CE141372CC6B"
+    },
+    {
+      "name": "p4Withdrawal",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P4_STALE_GATE_WITHDRAWAL.json",
+      "bytes": 1795,
+      "sha256": "F7742E4A80780EFB894FF2866395B5EA0F73C947D352417A08292FD265878B0D"
+    },
+    {
+      "name": "p4WithdrawalAddendum",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P4_WITHDRAWAL_AUDIT_ADDENDUM.json",
+      "bytes": 2608,
+      "sha256": "C80A4D42C2E2CAEF575CA0956BD8456FD420D72B02FCE9818C8486DED6CD6EEA"
+    },
+    {
+      "name": "p5Withdrawal",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P5_STALE_GATE_WITHDRAWAL.json",
+      "bytes": 2030,
+      "sha256": "FDEF4CAB68CD9C194D9960ADF14D54048EBEEF790675A5465CD79F0FA3455E97"
+    },
+    {
+      "name": "p6Withdrawal",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P6_STALE_GATE_WITHDRAWAL.json",
+      "bytes": 1300,
+      "sha256": "770B40634DE8978F874B59B9603D54421E32E84B36846255490481373FD8199F"
+    },
+    {
+      "name": "p6WithdrawalAddendum",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P6_WITHDRAWAL_AUDIT_ADDENDUM.json",
+      "bytes": 1336,
+      "sha256": "AA691F56F8BF5F9B0BD813D280F470F826139748F2DCEC9B8BE0AAE9B84DDBC6"
+    }
+  ],
+  "wrapperChecks": [
+    {
+      "role": "publisher",
+      "scriptDependency": "publisher",
+      "state": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "checkedUtc": "2026-09-07T18:53:59.6340593Z",
+      "scriptSha256": "1EDC3A7FA89B15BB057C070BBCC6070F698C1A22EBB37CE954FCC58CA807CFBD",
+      "invocationSha256": "D27577E8C6BEF5B8D7A2CF7F6E5BBD170F30F58AAE660F7532703CF701BE58AA",
+      "powerShellEdition": "Desktop",
+      "powerShellMajor": 5,
+      "powerShellMinor": 1,
+      "metadataOnly": true,
+      "targetExecuted": false
+    },
+    {
+      "role": "collector",
+      "scriptDependency": "collector",
+      "state": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "checkedUtc": "2026-09-07T18:54:00.8818967Z",
+      "scriptSha256": "27D8B08EA2411B9BC60F38310D8009913301297716D3BF5D86B15E70762E1909",
+      "invocationSha256": "D27577E8C6BEF5B8D7A2CF7F6E5BBD170F30F58AAE660F7532703CF701BE58AA",
+      "powerShellEdition": "Desktop",
+      "powerShellMajor": 5,
+      "powerShellMinor": 1,
+      "metadataOnly": true,
+      "targetExecuted": false
+    }
+  ],
+  "windowsPowerShell51Passed": true,
+  "postFreezeInvocationWrapperChecksPassed": true,
+  "acyclicBinding": true,
+  "integrityAnchor": "CLEAN_LOCAL_HEAD_EQUALS_LOCALLY_RECORDED_ORIGIN_TIP_NO_FETCH",
+  "publisherApplyExecuted": false,
+  "collectorExecuted": false,
+  "externalAccessPerformed": false,
+  "publicationPerformed": false,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

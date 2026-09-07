@@ -1,0 +1,51 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_batch_configuration_v1",
+  "batchId": "R18ZT1",
+  "revision": "R18ZT_EXISTING_ORIENTED_CROPS_PUBLIC_PROVIDER_BATCH_20260906A",
+  "proposalRoot": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+  "outputRoot": "D:\\A2\\o\\ocv\\R18ZT1",
+  "provider": {
+    "path": "D:\\A2\\w\\ocv\\R18ZT1\\OPENCV_SCRIBE_R18ZT\\ArgosOpenCvScribeV1R18ZT.py",
+    "sha256": "AEF048D3CCEAF378A9FF43D5844DD1A28431E662F5BC54AFF384C4DB73A2C793",
+    "revision": "ARGOS_OPENCV_SCRIBE_V1R18ZT_GENERIC_HOLD_RESCUE_DIAGNOSTIC_20260906"
+  },
+  "references": {
+    "manifestPath": "D:\\A2\\w\\ocv\\R18ZT1\\refs\\PORTABLE_GLYPH_REFERENCE_MANIFEST.json",
+    "manifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "roots": [
+      {
+        "relativePrefix": "glyphs",
+        "path": "D:\\A2\\w\\ocv\\R18ZT1\\refs\\glyphs"
+      },
+      {
+        "relativePrefix": "glyphs_v5_confirmed_20260806",
+        "path": "D:\\A2\\w\\ocv\\R18ZT1\\refs\\glyphs_v5_confirmed_20260806"
+      }
+    ],
+    "supplementalManifestPath": "D:\\A2\\w\\ocv\\R18ZT1\\OPENCV_SCRIBE_R18Z\\reference_bank\\SUPPLEMENTAL_GLYPH_REFERENCE_MANIFEST.json",
+    "supplementalManifestSha256": "C7BD53925A522C21B8BAAE3E7A9B8B3817234A0665239FC1629CA3B09C9741DD",
+    "r18zExactLineageLooGatePath": "D:\\A2\\w\\ocv\\R18ZT1\\OPENCV_SCRIBE_R18Z\\evidence\\R18Z_EXACT_LINEAGE_LOO_GATE.json",
+    "r18zExactLineageLooGateSha256": "D8F0C0923BFDD6B82C4B0B0C57142825C08C0DB3F5395210A5DD7FE2E6E8DAD8",
+    "exactScribeLineageCrosswalkPath": "D:\\A2\\w\\ocv\\R18ZT1\\OPENCV_SCRIBE_R18Z\\reference_bank\\R18Z_EXACT_SCRIBE_LINEAGE_CROSSWALK.json",
+    "exactScribeLineageCrosswalkSha256": "84637040AF7920706616C6769D9AFEEC969895FBCE5070C52AA2ADAD1FF1ABA2"
+  },
+  "limits": {
+    "maximumDirectChildren": 10000,
+    "maximumIdentityCharacters": 160,
+    "maximumJsonBytes": 16777216,
+    "maximumOrientedInputBytes": 67108864,
+    "maximumProviderResultBytes": 67108864
+  },
+  "authority": {
+    "reviewOnly": true,
+    "automaticIdentityAuthority": false,
+    "automaticReferenceAdmissionAuthorized": false,
+    "trainingEligible": false,
+    "activationAuthorized": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "mayClearHolds": false,
+    "sourceMutationAllowed": false,
+    "automaticRetryAllowed": false
+  }
+}

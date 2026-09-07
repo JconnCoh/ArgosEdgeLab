@@ -1,0 +1,69 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_package_c_builder_preflight_withdrawal_v1",
+  "createdUtc": "2026-09-06T04:29:00Z",
+  "state": "WITHDRAWN_R18ZT_PACKAGE_C_BUILDER_V3_PS51_DECIMAL_PREFLIGHT_FAILURE_NON_REUSABLE_NON_PARENT",
+  "requestId": "REQ_R18ZT1",
+  "packageRevision": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906C",
+  "failureCountAfterThisFailure": 4,
+  "failureStopLimit": 5,
+  "failedInvocation": {
+    "host": "Windows PowerShell 5.1.26100.9168",
+    "mode": "Preflight",
+    "state": "FAIL_R18ZT_PACKAGE_C_BUILD_PREFLIGHT",
+    "message": "R18ZT exact deciphering finish changed.",
+    "failedAssertionLine": 292,
+    "targetWritesPerformed": false,
+    "signerAccessed": false,
+    "signatureCreated": false,
+    "publicationPerformed": false,
+    "externalAccessPerformed": false,
+    "targetExecuted": false
+  },
+  "cause": {
+    "jsonSelectionScore": "0.9117836040446633",
+    "windowsPowerShell51JsonNumberType": "System.Decimal",
+    "failedPredicate": "[double]$finish.selectionScore -eq [double]0.9117836040446633",
+    "exactDiagnosis": "CROSS_HOST_DECIMAL_TO_DOUBLE_EXACT_EQUALITY_DIVERGENCE",
+    "allOtherFinishPredicatesTrue": true,
+    "correctedPredicateValidated": "[decimal]$finish.selectionScore -eq [decimal]::Parse('0.9117836040446633', InvariantCulture)"
+  },
+  "diagnostic": {
+    "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Diagnose-R18ZTPackageCPreflightFailure.ps1",
+    "bytes": 2264,
+    "sha256": "C548C697F45BE76756E11280991C26BDBBD563FC2DA744E1F2EAD40A7A5AA03F",
+    "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "failedDoublePredicate": true,
+    "correctedDecimalPredicate": true,
+    "targetWritesPerformed": false
+  },
+  "failureMemory": {
+    "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+    "bytes": 722030,
+    "sha256": "19EAE2E4258DC571E43869B9E4C673F8D631C0F9AA26099DDA52B1B907A001D3"
+  },
+  "withdrawn": [
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV3.ps1","bytes":72326,"sha256":"414999A30C0AF78657FECD9EE6C2EB6D0347A04BE8E3BFFD25D3D4994C28AC9C","reason":"EXECUTED_PREFLIGHT_FAILURE"},
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PACKAGE_C_CLONE_LITERAL_RAW_GATE_V5.json","bytes":5170,"sha256":"0DF2045C542EAD839C5B397AEE91BD145677F010F8DE80B8E7D730DA2AC3DC78","reason":"PINS_WITHDRAWN_BUILDER"},
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PACKAGE_C_CLONE_GATE_V5.json","bytes":2062,"sha256":"B8CCD99CC400B2E1728650BDF5FE2AD58AF369862DB5BCD145D1B3F6A28F9328","reason":"PINS_WITHDRAWN_BUILDER"},
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_POWERSHELL_SAFETY_GATE_V2.json","bytes":2021,"sha256":"7D36986480DA94043F8A185C7F82490E6CB5A751BA298EF31CDC52697756D95D","reason":"PINS_WITHDRAWN_BUILDER"},
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/PREACTION_R18ZT_SIGNED_UNPUBLISHED_PACKAGE_V2.json","bytes":11726,"sha256":"F4887AF33EFDD152503D54EEAFB7D1663EDC379F926FC285F8D9DAD123DBF0A6","reason":"PINS_WITHDRAWN_BUILDER"}
+  ],
+  "preservedReusableFrozenInputs": [
+    "R18ZT_PAYLOAD_MANIFEST_V2.json",
+    "Invoke-R18ZTBatchLaunchV3.ps1",
+    "MAINTENANCE_DEFINITION_V4.json",
+    "R18ZT_BATCH_PACKAGE_DESIGN_V5.json",
+    "R18ZT_FROZEN_PACKAGE_BINDINGS_V5.json",
+    "R18ZT_PATH_PLAN_GATE_V3.json",
+    "R18ZT_SCIENCE_GATE_V2.json",
+    "R18ZT_PROPOSAL_JUNCTION_GATE_V2.json",
+    "R18ZT_RECOVERY_INTENT_V2.json",
+    "R18ZT_RECOVERY_INTENT_GATE_V2.json"
+  ],
+  "mayBePackageParent": false,
+  "mayBePublicationParent": false,
+  "mayBeTemplate": false,
+  "retryOfFailedBuilderAuthorized": false,
+  "freshBuilderArtifactRequired": true,
+  "fifthFailureWouldStop": true
+}

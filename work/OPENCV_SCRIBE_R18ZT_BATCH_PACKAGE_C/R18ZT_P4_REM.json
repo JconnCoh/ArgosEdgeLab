@@ -1,0 +1,58 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R18ZT_PACKAGE_C_PUBLICATION_V3_CLONE_20260907B",
+  "state": "FROZEN_PRE_GENERATION",
+  "createdUtc": "2026-09-07T16:57:42.7667906Z",
+  "requestId": "REQ_R18ZT1",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V3.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V4.ps1",
+      "sourceGuardSha256": "1EE0FF51F716A7B6B827DCC01ED9A875347132326AE2B3C0F01B1EA11CEB24FF",
+      "rootRules": [
+        {
+          "sourceRoot": "C:\\ProgramData",
+          "generatedRoot": "C:\\ProgramData",
+          "disposition": "UNCHANGED_ALLOWED"
+        },
+        {
+          "sourceRoot": "U:\\ProjectPortalRO",
+          "generatedRoot": "U:\\ProjectPortalRO",
+          "disposition": "UNCHANGED_ALLOWED"
+        },
+        {
+          "sourceRoot": "\\\\shm-cifs\\Department",
+          "generatedRoot": "\\\\shm-cifs\\Department",
+          "disposition": "UNCHANGED_ALLOWED"
+        }
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV3.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV4.ps1",
+      "sourceGuardSha256": "298594BB2B81CCDE3FB850EC03630DEC93516DA0A974AE018658CD28CDEA2162",
+      "rootRules": [
+        {
+          "sourceRoot": "U:\\ProjectPortalRO",
+          "generatedRoot": "U:\\ProjectPortalRO",
+          "disposition": "UNCHANGED_ALLOWED"
+        },
+        {
+          "sourceRoot": "\\\\shm-cifs\\Department",
+          "generatedRoot": "\\\\shm-cifs\\Department",
+          "disposition": "UNCHANGED_ALLOWED"
+        }
+      ]
+    }
+  ],
+  "globalRules": {
+    "freshPackageNamespace": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C",
+    "freshPublicationRevision": "V4",
+    "requestId": "REQ_R18ZT1",
+    "sourceTemplatesGuardedBeforeGeneration": true,
+    "allLiteralRootsClassified": true,
+    "hashLiteralsNeverMechanicallyRewritten": true,
+    "externalRouteRootsUnchanged": true,
+    "automaticRetryAuthorized": false
+  }
+}

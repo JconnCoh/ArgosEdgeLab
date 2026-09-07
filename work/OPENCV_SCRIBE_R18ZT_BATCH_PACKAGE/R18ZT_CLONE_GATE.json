@@ -1,0 +1,92 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-06T01:50:25.2569323Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE\\R18ZT_CLONE_REMEDIATION.json",
+    "manifestSha256":  "59FFF6DF29DD893C63487A183018CAE924636820036691AE722CC28749E3D776",
+    "pairCount":  4,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18T/Invoke-R18TLiveOnlyLaunch.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE/Invoke-R18ZTBatchLaunch.ps1",
+                      "sourceSha256":  "8667C009631D49916B1A1CFCC78FFA67FF10D7088DCA6FFADD9E28D71DEBE00C",
+                      "generatedSha256":  "6C5F9B9D59E4669B8716B721B8455197545BDDAA054766C5B3D1F32430B29AB9",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "D:\\A2",
+                                          "D:\\AFCV1",
+                                          "D:\\O2D5"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "D:\\A2",
+                                             "D:\\AFCV1",
+                                             "D:\\O2D5"
+                                         ],
+                      "ruleCount":  4
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18T/Build-R18TRequest.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE/Build-R18ZTBatchRequest.ps1",
+                      "sourceSha256":  "DFE403C179142BD03A43DB23BFCC65F8E7D48F8768E503D441F879AE9E711F8F",
+                      "generatedSha256":  "07802C509E3A890D25196781EC5899671127976D1660A78FE762E8FACD892065",
+                      "sourceRoots":  [
+                                          "C:\\ArgosPy313",
+                                          "C:\\ProgramData",
+                                          "C:\\R18T_PROPOSALS_NOT_ACCESSED",
+                                          "C:\\R18T1P",
+                                          "C:\\R18T1SO",
+                                          "C:\\R18T1SW",
+                                          "C:\\R18T1V",
+                                          "D:\\A2"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ArgosPy313",
+                                             "C:\\ProgramData",
+                                             "C:\\R18ZT_PROPOSALS_NOT_ACCESSED",
+                                             "C:\\R18ZT1P",
+                                             "C:\\R18ZT1T",
+                                             "C:\\R18ZT1TO",
+                                             "C:\\R18ZT1TW",
+                                             "C:\\R18ZT1V",
+                                             "D:\\A2"
+                                         ],
+                      "ruleCount":  9
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18T/Publish-R18T1.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE/Publish-R18ZT1.ps1",
+                      "sourceSha256":  "B48180AF1E78A4904AF0FE76614F4CF38919BE4DB71382AC6FAF6FBA0623E5A9",
+                      "generatedSha256":  "1C708450D8EC7915162A158E00EB3C2A84AEBECB630FC3B10D1E254670FCC65A",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18T/Run-R18TExecutionEnvelope.py",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE/Run-R18ZTBatchExecutionEnvelope.py",
+                      "sourceSha256":  "23F52C8FEC096F6587521B78AF8242C80E8687040457F9AE197858DB0B00AED7",
+                      "generatedSha256":  "E34C78C52B30AA7745DC71008E35BE97B4CB3256C46C20FEBCF579C15C9E2240",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+
+                                         ],
+                      "ruleCount":  1
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

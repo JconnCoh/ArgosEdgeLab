@@ -1,0 +1,26 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_batch_revision_withdrawal_v1",
+  "recordedUtc": "2026-09-06T02:27:19.8923651Z",
+  "state": "WITHDRAWN_NON_REUSABLE_NON_PACKAGE_PARENT",
+  "withdrawnRevision": "R18ZT_EXISTING_ORIENTED_CROPS_PUBLIC_PROVIDER_BATCH_20260906B",
+  "withdrawnRunner": {
+    "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_B/Run-R18ZTExistingOrientedCrops.py",
+    "bytes": 62703,
+    "sha256": "B85A9297F4BCA98CA8D9E2102DF273B4D71678A02171DCD2E4927B47DE4060DE"
+  },
+  "withdrawnTest": {
+    "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_B/Test-R18ZTExistingOrientedCrops.py",
+    "bytes": 21595,
+    "sha256": "24E41ECAA88B37BD7A11638C6C609BA855BFED975E16E2922B81C5FF3D0E3E8A"
+  },
+  "cause": "B performs per-leaf canonical filesystem I/O in source_fingerprints and inventory_cases. At the allowed 80-character identity, the canonical multi-channel summary path is at least 200 characters before the required suffix reserve, so canonical is_file/stat/open/samefile/resolve calls defeat the verified short proposal-root junction.",
+  "forbiddenReuse": [
+    "DO_NOT_EDIT_OR_RERUN_B",
+    "DO_NOT_USE_B_AS_PACKAGE_PARENT",
+    "DO_NOT_PERFORM_CANONICAL_LEAF_FILESYSTEM_IO"
+  ],
+  "supersededBy": "work/OPENCV_SCRIBE_R18ZT_BATCH_C",
+  "supersessionRequirement": "All per-leaf existence, stat, hash, and JSON reads occur only through the verified short alias; canonical leaf strings remain lexical provenance only.",
+  "publicationPerformed": false,
+  "externalMutationPerformed": false
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_package_c_c11_signed_build_withdrawal_v1",
+  "createdUtc": "2026-09-07T16:16:30Z",
+  "state": "WITHDRAWN_R18ZT_C11_SIGNED_STAGING_PACKAGE_NON_REUSABLE_NON_PUBLISHABLE",
+  "requestId": "REQ_R18ZT1",
+  "packageRevision": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906C",
+  "failure": {
+    "builderPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV8.ps1",
+    "builderBytes": 73430,
+    "builderSha256": "BDAE1F72E8E8AAE2383FDB8667CE13B117777F7650C056A8FCBAEC4520C9731C",
+    "failedPredicateLine": 596,
+    "exception": "The property 'sourceImageBytesRead' cannot be found on this object.",
+    "cause": "The builder asserted a field not emitted by the launcher preflight schema. The launcher emits sourceImageBytesHashed=false and pixelsDecoded=false.",
+    "finalPackageRootCreated": false,
+    "finalPackageGateCreated": false
+  },
+  "withdrawnSignedStagingArtifact": {
+    "readyRoot": "C:/R18ZT1C3P/REQ_R18ZT1.ready",
+    "zipPath": "C:/R18ZT1C3P/REQ_R18ZT1.ready.zip",
+    "zipBytes": 310185,
+    "zipSha256": "E9333C067183A92BC190D8F585EFEE02082EE06DB18C831292BCBB0A7C23B09C",
+    "requestManifestBytes": 29075,
+    "requestManifestSha256": "0796684B605E5D2B7DFFB0BD29611526AAA7ADCE75AA2CDFD32C48980C8E3A58",
+    "requestSignatureBytes": 384,
+    "requestSignatureSha256": "035464246462F6E320251CFE198BBA619BAA7B0B446181B3C3490565A08C5DF6",
+    "signedPackageVerificationState": "PASS_SIGNED_PORTAL_PACKAGE",
+    "payloadFileCount": 47,
+    "preservedInPlace": true,
+    "mayBeReused": false,
+    "mayBePublished": false,
+    "mayBePublicationParent": false,
+    "mayBeTemplate": false
+  },
+  "prevention": {
+    "freshSuccessorBuilder": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV9.ps1",
+    "freshSuccessorGateNamespace": "R18ZT_C12",
+    "freshStageRoot": "C:/R18ZT1C4P",
+    "freshVerifyRoot": "C:/R18ZT1C4V",
+    "stagedAndExtractedPredicatesMustMatchLauncherSchema": true,
+    "requiredFalseFields": ["sourceImageBytesHashed", "pixelsDecoded"],
+    "freshCloneHarnessWrapperPreactionRequired": true,
+    "freshCollisionScanRequiredBeforeSignerAccess": true
+  },
+  "actions": {
+    "signerAccessed": true,
+    "signatureCreated": true,
+    "preBuildCollisionReadPerformed": true,
+    "buildAttemptExternalAccessPerformed": false,
+    "publicationPerformed": false,
+    "targetExecuted": false,
+    "sourceImageAccessPerformed": false,
+    "pixelDecodePerformed": false,
+    "taskOrProcessActionPerformed": false
+  }
+}

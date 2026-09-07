@@ -1,0 +1,108 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_package_b_v3_frozen_artifact_withdrawal_v1",
+  "createdUtc": "2026-09-06T03:53:08.9000801Z",
+  "state": "WITHDRAWN_R18ZT_PACKAGE_B_V3_HARNESS_FAILURE_NON_REUSABLE_NON_PARENT",
+  "requestId": "REQ_R18ZT1",
+  "packageRevision": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906B",
+  "cause": "The frozen Package B launcher failed the official PowerShell harness-safety preflight because a JunctionGate filesystem mutation was top-level before the normal Preflight return guard.",
+  "failureEvidence": {
+    "state": "FAIL_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "launcherPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Invoke-R18ZTBatchLaunch.ps1",
+    "launcherBytes": 79108,
+    "launcherSha256": "4CB92574D45A36F819E565DE04482AE9CE79430E3B1C93F2FD621C9EF10549A2",
+    "parserErrors": 0,
+    "topLevelMutationCount": 14,
+    "preflightReturnGuardCount": 1,
+    "violationCount": 1,
+    "violationCode": "MUTATION_BEFORE_PREFLIGHT_RETURN",
+    "violationLine": 625,
+    "warningCount": 0,
+    "metadataOnly": true,
+    "targetExecuted": false,
+    "rawFilePersisted": false,
+    "consoleResultPreservedInTaskAudit": true
+  },
+  "withdrawn": [
+    {
+      "role": "launcher",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Invoke-R18ZTBatchLaunch.ps1",
+      "bytes": 79108,
+      "sha256": "4CB92574D45A36F819E565DE04482AE9CE79430E3B1C93F2FD621C9EF10549A2"
+    },
+    {
+      "role": "maintenanceDefinition",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/MAINTENANCE_DEFINITION_V2.json",
+      "bytes": 11012,
+      "sha256": "3BAE55419BF753F35691E6E21AFD987103F890444DA3B906DF320CA11D470DF6"
+    },
+    {
+      "role": "packageDesign",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_BATCH_PACKAGE_DESIGN_V3.json",
+      "bytes": 8535,
+      "sha256": "68FE5BBEEC2ECEB804065CE6EE742CDBD71D5618EEDE2E567161E2121BCA2A5D"
+    },
+    {
+      "role": "frozenBinding",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_FROZEN_PACKAGE_BINDINGS_V3.json",
+      "bytes": 13483,
+      "sha256": "FF7B2C75B0A3C7DD29A5249D92E947424DDB407243B52C5B04FAC36DCF9AE3F1"
+    },
+    {
+      "role": "cloneRemediation",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PACKAGE_B_CLONE_REMEDIATION_V2.json",
+      "bytes": 3577,
+      "sha256": "423C8C9EA538D6F371FAC8070259742CD577570DC6C8B33FD8EB1B509A30630C"
+    },
+    {
+      "role": "cloneLiteralRawGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PACKAGE_B_CLONE_LITERAL_RAW_GATE_V2.json",
+      "bytes": 4290,
+      "sha256": "734B22B98E7FF143E948B043D662A744FC25375A5D98B0A369D873E36DA3092E"
+    },
+    {
+      "role": "cloneLiteralGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PACKAGE_B_CLONE_GATE_V2.json",
+      "bytes": 2131,
+      "sha256": "85DE643E89ECD63464D8CF4C5613C827599532AC5446134B798771C6451B1B9E"
+    },
+    {
+      "role": "pathPlanGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PATH_PLAN_GATE_V2.json",
+      "bytes": 9823,
+      "sha256": "8E300734FD99EB28729D50AE8683B5CDF948A07730BD44B506A876EBBDE9EF2B"
+    }
+  ],
+  "preservedReusableEvidence": {
+    "scienceGatePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_SCIENCE_GATE.json",
+    "scienceGateBytes": 3155,
+    "scienceGateSha256": "E82712E24487DE75AFC69A018A1EADE6D52D7B5F5A02310E263EC108FBC13706",
+    "scienceGateState": "PASS_R18ZT_BATCH_SCIENCE_GATE",
+    "disposition": "PRESERVED_SCIENCE_EVIDENCE_NOT_CURRENT_PACKAGE_C_BINDING_GATE",
+    "mayBeReopenedAsReusableScienceEvidence": true,
+    "mayBeClaimedAsCurrentPackageGate": false
+  },
+  "prevention": {
+    "freshNamespace": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C",
+    "freshSemanticRevision": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906C",
+    "junctionGateBodyMustHaveFunctionAncestor": true,
+    "launcherSelfPathMustBeCapturedAtScriptScopeAndPassedExplicitly": true,
+    "generatedLauncherMustPassOfficialHarnessBeforeFreeze": true,
+    "failedLauncherHarnessMustNotBeRerunOrRelabeledPass": true
+  },
+  "failureCounter": {
+    "count": 3,
+    "maximum": 5,
+    "thisWithdrawalChangesCount": false
+  },
+  "actions": {
+    "signatureCreated": false,
+    "publicationPerformed": false,
+    "externalAccessPerformed": false,
+    "targetExecuted": false,
+    "sourceImageAccessPerformed": false,
+    "taskOrProcessActionPerformed": false
+  },
+  "mayBePackageParent": false,
+  "mayBePublicationParent": false,
+  "mayBeTemplate": false
+}

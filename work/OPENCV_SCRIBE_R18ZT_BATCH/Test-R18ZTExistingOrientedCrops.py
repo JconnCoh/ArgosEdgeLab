@@ -1,0 +1,368 @@
+#!/usr/bin/env python3
+"""Non-image tests for the R18ZT existing-oriented-crop batch runner."""
+
+from __future__ import annotations
+
+import hashlib
+import importlib.util
+import json
+import sys
+import tempfile
+import unittest
+from pathlib import Path
+from typing import Any
+
+
+HERE = Path(__file__).resolve().parent
+RUNNER_PATH = HERE / "Run-R18ZTExistingOrientedCrops.py"
+
+
+def load_runner() -> Any:
+    spec = importlib.util.spec_from_file_location("r18zt_batch_runner_tested", RUNNER_PATH)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(RUNNER_PATH)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+RUNNER = load_runner()
+FAKE_PROVIDER_REVISION = "FAKE_R18ZT_PUBLIC_PROVIDER_NON_IMAGE_TEST_V1"
+
+
+def write_json(path: Path, value: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(value, indent=2) + "\n", encoding="utf-8")
+
+
+def sha256_file(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest().upper()
+
+
+FAKE_PROVIDER_SOURCE = r'''from __future__ import annotations
+import hashlib
+import json
+from types import SimpleNamespace
+
+REVISION = "FAKE_R18ZT_PUBLIC_PROVIDER_NON_IMAGE_TEST_V1"
+CALL_COUNT = 0
+
+def _sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest().upper()
+
+class FakeR11:
+    def __init__(self):
+        self.identity = ""
+        self.evaluation_index = 0
+
+    def evaluate_detector_input(self, _view):
+        index = self.evaluation_index
+        self.evaluation_index += 1
+        if self.identity.endswith("_Slot08") and index == 7:
+            raise ValueError("synthetic rejected eighth view")
+        return {
+            "selectionScore": 0.9,
+            "imageFirstString": "13HFX135SUE3",
+            "proposedString": "13HFX135SUE3",
+            "ocrEnvelope": {"decision": "PASS_TEST", "heldPositions": []},
+        }
+
+    def analyze_images(self, job):
+        self.identity = job["identity"]["physicalIdentity"]
+        self.evaluation_index = 0
+        hypotheses = []
+        for channel in ("BF", "DF"):
+            for polarity in ("DARK", "BRIGHT"):
+                for direction in ("FORWARD", "REVERSE_180"):
+                    try:
+                        evaluated = self.evaluate_detector_input(None)
+                    except ValueError:
+                        continue
+                    hypotheses.append({
+                        "channel": channel,
+                        "polarity": polarity,
+                        "direction": direction,
+                        **evaluated,
+                    })
+        return {
+            "schema": "fake_argos_opencv_scribe_result_v1",
+            "revision": REVISION,
+            "jobId": job["jobId"],
+            "state": "SCRIBE_UNCALIBRATED_CONFIDENCE_HOLD",
+            "eligibleIdentity": False,
+            "imageFirstString": "13HFX135SUE3",
+            "proposedString": "13HFX135SUE3",
+            "hypotheses": hypotheses,
+            "selectedHypothesis": hypotheses[0],
+            "holds": [{"code": "SCRIBE_UNCALIBRATED_CONFIDENCE_HOLD"}],
+            "authority": {
+                "reviewOnly": True,
+                "automaticIdentityAuthority": False,
+                "trainingEligible": False,
+                "xmlEligible": False,
+                "productionEligible": False,
+                "mayClearHolds": False,
+            },
+        }
+
+R11_INSTANCE = FakeR11()
+R17D = SimpleNamespace(
+    R17C=SimpleNamespace(
+        R17B=SimpleNamespace(_load_r11=lambda: R11_INSTANCE)
+    )
+)
+
+def run_job(job_path, result_path):
+    global CALL_COUNT
+    CALL_COUNT += 1
+    job = json.loads(job_path.read_text(encoding="utf-8"))
+    result = R17D.R17C.R17B._load_r11().analyze_images(job)
+    if job["identity"]["slotId"] == "Slot09":
+        result["hypotheses"].pop()
+    sources = {
+        channel: {"sha256": job["inputs"][channel]["sha256"]}
+        for channel in ("bf", "df")
+    }
+    sources["jobSha256"] = _sha(job_path)
+    result["provenance"] = {
+        "sources": sources,
+        "runtimeExpectedTruthUsedForGlyphSelection": False,
+        "checksumMaySelectHypothesis": False,
+        "checksumMayRewriteGlyphs": False,
+    }
+    result["fakePublicRunOrdinal"] = CALL_COUNT
+    with result_path.open("x", encoding="utf-8", newline="\n") as stream:
+        json.dump(result, stream, indent=2)
+        stream.write("\n")
+    return 0
+'''
+
+
+class R18ZTBatchRunnerTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.temporary = tempfile.TemporaryDirectory(prefix="_r18zt_batch_test_", dir=HERE)
+        self.root = Path(self.temporary.name)
+        self.proposals = self.root / "proposals"
+        self.proposals.mkdir()
+        self.provider = self.root / "FakeProvider.py"
+        self.provider.write_text(FAKE_PROVIDER_SOURCE, encoding="utf-8")
+        self.refs = self.root / "refs"
+        (self.refs / "glyphs").mkdir(parents=True)
+        (self.refs / "glyphs_v5_confirmed_20260806").mkdir()
+        self.reference_files: dict[str, Path] = {}
+        for name in ("base", "supplemental", "loo", "crosswalk"):
+            path = self.refs / f"{name}.json"
+            write_json(path, {"fixture": name})
+            self.reference_files[name] = path
+
+    def tearDown(self) -> None:
+        self.temporary.cleanup()
+
+    def make_case(
+        self,
+        identity: str,
+        *,
+        include_summary: bool = True,
+        summary_identity: str | None = None,
+    ) -> dict[str, str]:
+        directory = self.proposals / identity
+        scribe = directory / "scribe"
+        bf = scribe / "BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png"
+        df = scribe / "DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png"
+        scribe.mkdir(parents=True)
+        bf.write_bytes(("BF NON IMAGE " + identity).encode("ascii"))
+        df.write_bytes(("DF NON IMAGE " + identity).encode("ascii"))
+        proposal = directory / "SCRIBE_PROPOSAL.json"
+        write_json(proposal, {
+            "schema": "argos_jbod_scribe_proposal_v1",
+            "state": "SCRIBE_IDENTITY_CONFIRMATION_HOLD",
+            "readerState": "SCRIBE_M12_CANDIDATES_REQUIRE_EXACT_MES_VERIFICATION",
+            "physicalIdentity": identity,
+            "bfOrientedReviewPath": str(bf),
+            "dfOrientedReviewPath": str(df),
+            "eligibleIdentity": True,
+        })
+        if include_summary:
+            write_json(scribe / "multi_channel/MULTI_CHANNEL_READER_SUMMARY.json", {
+                "schema": "argos_scribe_multi_channel_polarity_reader_v1",
+                "state": "SCRIBE_M12_CANDIDATES_REQUIRE_EXACT_MES_VERIFICATION",
+                "acquisitionKey": (summary_identity or identity).upper(),
+                "consensusState": "MULTIPLE_IMAGE_SUPPORTED_M12_CANDIDATES",
+            })
+        return {
+            "proposal": sha256_file(proposal),
+            "bf": sha256_file(bf),
+            "df": sha256_file(df),
+        }
+
+    def make_config(self, output_root: Path) -> dict[str, Any]:
+        return {
+            "schema": RUNNER.CONFIG_SCHEMA,
+            "batchId": "R18ZT1_NON_IMAGE_TEST",
+            "revision": RUNNER.REVISION,
+            "proposalRoot": str(self.proposals),
+            "outputRoot": str(output_root),
+            "provider": {
+                "path": str(self.provider),
+                "sha256": sha256_file(self.provider),
+                "revision": FAKE_PROVIDER_REVISION,
+            },
+            "references": {
+                "manifestPath": str(self.reference_files["base"]),
+                "manifestSha256": sha256_file(self.reference_files["base"]),
+                "roots": [
+                    {"relativePrefix": "glyphs", "path": str(self.refs / "glyphs")},
+                    {
+                        "relativePrefix": "glyphs_v5_confirmed_20260806",
+                        "path": str(self.refs / "glyphs_v5_confirmed_20260806"),
+                    },
+                ],
+                "supplementalManifestPath": str(self.reference_files["supplemental"]),
+                "supplementalManifestSha256": sha256_file(self.reference_files["supplemental"]),
+                "r18zExactLineageLooGatePath": str(self.reference_files["loo"]),
+                "r18zExactLineageLooGateSha256": sha256_file(self.reference_files["loo"]),
+                "exactScribeLineageCrosswalkPath": str(self.reference_files["crosswalk"]),
+                "exactScribeLineageCrosswalkSha256": sha256_file(self.reference_files["crosswalk"]),
+            },
+            "limits": {
+                "maximumDirectChildren": 100,
+                "maximumIdentityCharacters": 100,
+                "maximumJsonBytes": 1024 * 1024,
+                "maximumOrientedInputBytes": 1024 * 1024,
+                "maximumProviderResultBytes": 1024 * 1024,
+            },
+            "authority": {
+                "reviewOnly": True,
+                "automaticIdentityAuthority": False,
+                "automaticReferenceAdmissionAuthorized": False,
+                "trainingEligible": False,
+                "activationAuthorized": False,
+                "xmlEligible": False,
+                "productionEligible": False,
+                "mayClearHolds": False,
+                "sourceMutationAllowed": False,
+                "automaticRetryAllowed": False,
+            },
+        }
+
+    def test_non_image_batch_has_atomic_bounded_pointer_contract(self) -> None:
+        identities = (
+            "62600-001_20260901010101_Slot01",
+            "62600-001_20260901010101_Slot02",
+        )
+        before = {identity: self.make_case(identity) for identity in identities}
+        self.make_case("62600-001_20260901010101_Slot03", include_summary=False)
+        nested_parent = self.proposals / "NOT_A_DIRECT_CASE"
+        nested_parent.mkdir()
+        nested = nested_parent / "62600-001_20260901010101_Slot04"
+        nested.mkdir()
+
+        output = self.root / "output"
+        output.mkdir()
+        (output / "WORKER.stdout.log").write_text("", encoding="utf-8")
+        (output / "WORKER.stderr.log").write_text("", encoding="utf-8")
+        write_json(output / "LAUNCH.json", {"state": "PASS_TEST_LAUNCH"})
+        complete = RUNNER.execute_batch(
+            self.make_config(output), output, require_d_drive=False
+        )
+
+        self.assertEqual(complete["state"], "COMPLETE_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY")
+        self.assertEqual(complete["qualifiedCaseCount"], 2)
+        self.assertEqual(complete["completedCount"], 2)
+        self.assertEqual(complete["providerRunCount"], 2)
+        self.assertEqual(complete["comparableResultCount"], 2)
+        self.assertFalse((output / "FAILURE.json").exists())
+        status = json.loads((output / "STATUS.json").read_text(encoding="utf-8"))
+        running = json.loads((output / "RUNNING.json").read_text(encoding="utf-8"))
+        terminal = json.loads((output / "COMPLETE.json").read_text(encoding="utf-8"))
+        self.assertEqual(status["state"], "COMPLETE_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY")
+        self.assertEqual(running["state"], status["state"])
+        self.assertEqual(running["schema"], RUNNER.PROGRESS_SCHEMA)
+        self.assertEqual(terminal["aggregate"]["sha256"], sha256_file(Path(terminal["aggregate"]["path"])))
+        self.assertEqual(terminal["caseIndex"]["sha256"], sha256_file(Path(terminal["caseIndex"]["path"])))
+        self.assertLess((output / "STATUS.json").stat().st_size, 16384)
+        self.assertLess((output / "RUNNING.json").stat().st_size, 16384)
+
+        inventory = json.loads((output / "INVENTORY.json").read_text(encoding="utf-8"))
+        self.assertEqual(inventory["directChildCount"], 4)
+        self.assertEqual(inventory["qualifiedCaseCount"], 2)
+        self.assertEqual(inventory["inventoryHoldCount"], 2)
+        self.assertFalse(inventory["recursiveEnumerationPerformed"])
+        index = json.loads((output / "CASE_INDEX.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(index["rows"]), 2)
+        for row in index["rows"]:
+            self.assertEqual(row["providerRunCount"], 1)
+            self.assertTrue(row["providerResultComparable"])
+            case_result = json.loads(Path(row["caseResultPath"]).read_text(encoding="utf-8"))
+            self.assertTrue(case_result["allEightNormalHypothesesAttempted"])
+            self.assertFalse(case_result["identityAccepted"])
+            job_text = Path(case_result["job"]["path"]).read_text(encoding="utf-8")
+            self.assertNotIn("expectedTruth", job_text)
+            self.assertNotIn("checksumMaySelect", job_text)
+
+        for identity in identities:
+            directory = self.proposals / identity
+            self.assertEqual(before[identity]["proposal"], sha256_file(directory / "SCRIBE_PROPOSAL.json"))
+            self.assertEqual(before[identity]["bf"], sha256_file(directory / RUNNER.BF_RELATIVE))
+            self.assertEqual(before[identity]["df"], sha256_file(directory / RUNNER.DF_RELATIVE))
+
+    def test_rejected_view_is_still_a_comparable_eight_attempt_run(self) -> None:
+        self.make_case("62600-001_20260901010101_Slot08")
+        output = self.root / "output"
+        output.mkdir()
+        complete = RUNNER.execute_batch(
+            self.make_config(output), output, require_d_drive=False
+        )
+        self.assertEqual(complete["comparableResultCount"], 1)
+        index = json.loads((output / "CASE_INDEX.json").read_text(encoding="utf-8"))
+        row = index["rows"][0]
+        self.assertTrue(row["providerResultComparable"])
+        result = json.loads(Path(row["providerResultPath"]).read_text(encoding="utf-8"))
+        self.assertEqual(len(result["normalHypothesisAttempts"]), 8)
+        self.assertEqual(len(result["hypotheses"]), 7)
+        self.assertEqual(
+            sum(item["state"] == "HOLD_EVALUATION_REJECTED" for item in result["normalHypothesisAttempts"]),
+            1,
+        )
+
+    def test_retained_evaluated_mismatch_is_noncomparable_hold(self) -> None:
+        self.make_case("62600-001_20260901010101_Slot09")
+        output = self.root / "output"
+        output.mkdir()
+        complete = RUNNER.execute_batch(
+            self.make_config(output), output, require_d_drive=False
+        )
+        self.assertEqual(complete["completedCount"], 1)
+        self.assertEqual(complete["comparableResultCount"], 0)
+        self.assertEqual(complete["noncomparableOrFailedCount"], 1)
+        index = json.loads((output / "CASE_INDEX.json").read_text(encoding="utf-8"))
+        row = index["rows"][0]
+        self.assertEqual(row["providerRunCount"], 1)
+        self.assertEqual(row["state"], "HOLD_R18ZT_PROVIDER_RESULT_NOT_COMPARABLE")
+        case_result = json.loads(Path(row["caseResultPath"]).read_text(encoding="utf-8"))
+        self.assertIn("RETAINED_HYPOTHESES_DO_NOT_MATCH_EVALUATED_ATTEMPTS", case_result["comparisonFailures"])
+        self.assertTrue(case_result["allEightNormalHypothesesAttempted"])
+
+    def test_live_output_must_be_d_drive_and_envelope_root_must_be_fresh(self) -> None:
+        self.make_case("62600-001_20260901010101_Slot01")
+        output = self.root / "output"
+        output.mkdir()
+        config = self.make_config(output)
+        with self.assertRaisesRegex(ValueError, "must be on D"):
+            RUNNER.validate_configuration(config, output, require_d_drive=True)
+        (output / "unexpected.txt").write_text("not allowed", encoding="utf-8")
+        with self.assertRaisesRegex(FileExistsError, "Unexpected pre-existing"):
+            RUNNER.execute_batch(config, output, require_d_drive=False)
+
+    def test_runner_has_no_direct_structural_or_image_execution_path(self) -> None:
+        source = RUNNER_PATH.read_text(encoding="utf-8")
+        self.assertNotIn("evaluate_detector_input_structural(", source)
+        self.assertNotIn("import cv2", source)
+        self.assertNotIn("os.walk(", source)
+        self.assertNotIn(".rglob(", source)
+        self.assertNotIn("subprocess", source)
+
+
+if __name__ == "__main__":
+    unittest.main(verbosity=2)

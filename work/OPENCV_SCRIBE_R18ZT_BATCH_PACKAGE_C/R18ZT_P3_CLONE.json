@@ -1,0 +1,38 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_v3_clone_gate_v1",
+  "checkedUtc": "2026-09-07T16:51:58.5227403Z",
+  "state": "PASS_R18ZT_PUBLICATION_V3_CLONE_GATE",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "remediationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P3_REM.json",
+  "remediationSha256": "31C4A8245642A34D8B46F689CA1D44B75747B334FF8EC1A6E1DFBCF3E3394E9E",
+  "rawGatePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P3_RAW.json",
+  "rawGateSha256": "1DFE3610B0FC0FF4C66E2F0E32D22371E9DB9C06F5184B0D5A0955540A6B88FD",
+  "rawGateState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "sourceTemplatesGuardedBeforeGeneration": true,
+  "generatedArtifactsGuardedAfterGeneration": true,
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Publish-R18ZT1V2.ps1",
+      "sourceSha256": "B75B5BF38A6D71562DC8E9853958DBC0E67CA60B295C53BEE7D094954649EB67",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V3.ps1",
+      "generatedBytes": 47285,
+      "generatedSha256": "4769EAA9A848D0047639EE16853F523E0D18B81670DAFB2DCC8CD1DDF3B27961"
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Collect-R18ZT1LaunchResponseV2.ps1",
+      "sourceSha256": "9C8837782406FFE74AA18722A52492F99CB40BD86E36E06C26801D64DEEA4B70",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV3.ps1",
+      "generatedBytes": 28416,
+      "generatedSha256": "5E9933883F52FBFCE09441ADC8DB0B796F6ED1409AAA01F39ECF28F42795F8AE"
+    }
+  ],
+  "pairCount": 2,
+  "violationCount": 0,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "publicationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

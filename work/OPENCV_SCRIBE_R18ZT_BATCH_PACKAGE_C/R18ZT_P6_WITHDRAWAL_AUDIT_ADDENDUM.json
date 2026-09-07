@@ -1,0 +1,24 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_withdrawal_audit_addendum_v1",
+  "createdUtc": "2026-09-07T18:19:45.9111422Z",
+  "state": "WITHDRAWAL_AUDIT_ADDENDUM_R18ZT_PUBLICATION_P6_COMPLETE_DEFECT_SET",
+  "requestId": "REQ_R18ZT1",
+  "withdrawalPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P6_STALE_GATE_WITHDRAWAL.json",
+  "withdrawalBytes": 1300,
+  "withdrawalSha256": "770B40634DE8978F874B59B9603D54421E32E84B36846255490481373FD8199F",
+  "additionalDefects": [
+    {
+      "id": "RECOVERY_ROUTE_LEAF_WRONG_TYPE_NOT_REJECTED",
+      "cause": "Collector missing-publish-gate recovery could treat an existing ready, processed, or upload route path of the wrong filesystem type as absence rather than an invalid route state.",
+      "prevention": "Test untyped existence for the exact ready, processed, and upload paths; require every existing route object to be a leaf before deciding ready-versus-processed state; require upload absence; then require exactly one ready or processed leaf bound byte-for-byte to the durable apply intent."
+    }
+  ],
+  "p6PublicationPerformed": false,
+  "p6ExternalAccessPerformed": false,
+  "p6PublisherApplyExecuted": false,
+  "p6CollectorExecuted": false,
+  "p6FutureReuseAllowed": false,
+  "expectedSuccessor": "V7/P7",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

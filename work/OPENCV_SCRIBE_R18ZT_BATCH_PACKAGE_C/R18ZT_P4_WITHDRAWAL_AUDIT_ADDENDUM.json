@@ -1,0 +1,42 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_withdrawal_audit_addendum_v1",
+  "createdUtc": "2026-09-07T17:26:56.1702549Z",
+  "state": "WITHDRAWAL_AUDIT_ADDENDUM_R18ZT_PUBLICATION_P4_COMPLETE_DEFECT_SET",
+  "requestId": "REQ_R18ZT1",
+  "withdrawalPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P4_STALE_GATE_WITHDRAWAL.json",
+  "withdrawalBytes": 1795,
+  "withdrawalSha256": "F7742E4A80780EFB894FF2866395B5EA0F73C947D352417A08292FD265878B0D",
+  "additionalDefects": [
+    {
+      "id": "COLLISION_ZIP_RESULT_READ_FALSE_DECLARATION",
+      "cause": "Test-R18ZT1RequestIdUniquenessV2.ps1 read selected ZIP JSON members including RESULT.json but emitted zipPayloadOrImageMembersRead=false.",
+      "prevention": "The successor scanner must truthfully declare ZIP payload-member reads separately from image-member reads, and the publisher must require the exact truthful fields."
+    },
+    {
+      "id": "RECOVERED_RESPONSE_ENVELOPE_NOT_BOUND_TO_SELECTED_ARCHIVE",
+      "cause": "Collector final-root recovery verified the extracted signature and payloads but did not require the recovered PORTAL_RESPONSE_MANIFEST.json and signature hashes to equal the selected response archive envelope hashes.",
+      "prevention": "Hash both recovered envelope files and require exact equality to the already authenticated selected archive manifest and signature hashes before citing that archive."
+    },
+    {
+      "id": "WRONG_PATH_TYPE_TREATED_AS_ABSENCE",
+      "cause": "A publish-gate path of the wrong type and a final-extraction path of the wrong type could be treated as absent instead of invalid.",
+      "prevention": "Test existence independently from expected path type and hard-stop when an existing path has the wrong type."
+    },
+    {
+      "id": "POST_FREEZE_WRAPPER_EVIDENCE_NOT_FILE_BOUND",
+      "cause": "P4 PowerShell evidence did not pin the final invocation hash and its checks predated the frozen invocation.",
+      "prevention": "Use an acyclic post-freeze tooling gate that pins the frozen invocation, exact scripts, pre-invocation gates, and official Windows PowerShell 5.1 wrapper results."
+    },
+    {
+      "id": "NON_MONOTONIC_INTERNAL_GATE_CHRONOLOGY",
+      "cause": "P4 evidence timestamps did not represent a monotonic generation order.",
+      "prevention": "Record actual successor event times in creation order and do not backdate generated evidence."
+    }
+  ],
+  "p4PublicationPerformed": false,
+  "p4ExternalAccessPerformed": false,
+  "p4FutureReuseAllowed": false,
+  "expectedSuccessor": "V5/P5",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

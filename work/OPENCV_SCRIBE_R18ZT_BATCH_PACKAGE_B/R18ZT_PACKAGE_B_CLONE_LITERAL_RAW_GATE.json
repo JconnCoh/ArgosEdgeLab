@@ -1,0 +1,78 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-06T03:21:58.2544430Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B\\R18ZT_PACKAGE_B_CLONE_REMEDIATION_V2.json",
+    "manifestSha256":  "423C8C9EA538D6F371FAC8070259742CD577570DC6C8B33FD8EB1B509A30630C",
+    "pairCount":  3,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE/Invoke-R18ZTBatchLaunch.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Invoke-R18ZTBatchLaunch.ps1",
+                      "sourceSha256":  "1AB69CB2DE9D03BCDF5C346AE2D6B37FEFFD450FF9A8CFF511ED3EAA5883A999",
+                      "generatedSha256":  "4CB92574D45A36F819E565DE04482AE9CE79430E3B1C93F2FD621C9EF10549A2",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "D:\\A2",
+                                          "D:\\AFCV1",
+                                          "D:\\O2D5"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "C:\\R18ZT1JG",
+                                             "D:\\A2",
+                                             "D:\\AFCV1",
+                                             "D:\\O2D5"
+                                         ],
+                      "ruleCount":  5
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18T/Build-R18TRequest.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Build-R18ZTBatchRequest.ps1",
+                      "sourceSha256":  "DFE403C179142BD03A43DB23BFCC65F8E7D48F8768E503D441F879AE9E711F8F",
+                      "generatedSha256":  "B01BDBA86BF89EF172A2EC0BACAEDF9E74B7D3ACC7BDDD21DF2B5EC60BA61824",
+                      "sourceRoots":  [
+                                          "C:\\ArgosPy313",
+                                          "C:\\ProgramData",
+                                          "C:\\R18T_PROPOSALS_NOT_ACCESSED",
+                                          "C:\\R18T1P",
+                                          "C:\\R18T1SO",
+                                          "C:\\R18T1SW",
+                                          "C:\\R18T1V",
+                                          "D:\\A2"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ArgosPy313",
+                                             "C:\\ProgramData",
+                                             "C:\\R18ZT_PROPOSALS_NOT_ACCESSED",
+                                             "C:\\R18ZT1P",
+                                             "C:\\R18ZT1T",
+                                             "C:\\R18ZT1TO",
+                                             "C:\\R18ZT1TW",
+                                             "C:\\R18ZT1V",
+                                             "D:\\A2"
+                                         ],
+                      "ruleCount":  9
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE/Run-R18ZTBatchExecutionEnvelope.py",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Run-R18ZTBatchExecutionEnvelope.py",
+                      "sourceSha256":  "E34C78C52B30AA7745DC71008E35BE97B4CB3256C46C20FEBCF579C15C9E2240",
+                      "generatedSha256":  "29271D74CF9225BC0E5B0AA3ED459864B5F49E3BF852B4294FB5743F95DF86E2",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+
+                                         ],
+                      "ruleCount":  1
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

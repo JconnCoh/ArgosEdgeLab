@@ -1,0 +1,50 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R18ZT_BATCH_PACKAGE_CLONE_REMEDIATION_20260906_V2",
+  "state": "FROZEN_PRE_GATE",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18T/Invoke-R18TLiveOnlyLaunch.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE/Invoke-R18ZTBatchLaunch.ps1",
+      "sourceGuardSha256": "8667C009631D49916B1A1CFCC78FFA67FF10D7088DCA6FFADD9E28D71DEBE00C",
+      "rootRules": [
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\AFCV1","generatedRoot":"D:\\AFCV1","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\O2D5","generatedRoot":"D:\\O2D5","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18T/Build-R18TRequest.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE/Build-R18ZTBatchRequest.ps1",
+      "sourceGuardSha256": "DFE403C179142BD03A43DB23BFCC65F8E7D48F8768E503D441F879AE9E711F8F",
+      "rootRules": [
+        {"sourceRoot":"C:\\ArgosPy313","generatedRoot":"C:\\ArgosPy313","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\R18T_PROPOSALS_NOT_ACCESSED","generatedRoot":"C:\\R18ZT_PROPOSALS_NOT_ACCESSED","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18T1P","generatedRoot":"C:\\R18ZT1P","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18T1V","generatedRoot":"C:\\R18ZT1V","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18T1SW","generatedRoot":"C:\\R18ZT1TW","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18T1SO","generatedRoot":"C:\\R18ZT1TO","disposition":"REPLACED"},
+        {"sourceRoot":"","generatedRoot":"C:\\R18ZT1T","disposition":"ADDED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18T/Run-R18TExecutionEnvelope.py",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE/Run-R18ZTBatchExecutionEnvelope.py",
+      "sourceGuardSha256": "23F52C8FEC096F6587521B78AF8242C80E8687040457F9AE197858DB0B00AED7",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}
+      ]
+    }
+  ],
+  "globalRules": {
+    "freshRequestId": "REQ_R18ZT1",
+    "freshWorkRoot": "D:\\A2\\w\\ocv\\R18ZT1",
+    "freshOutputRoot": "D:\\A2\\o\\ocv\\R18ZT1",
+    "freshInstalledLauncher": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R18ZT1.ps1",
+    "publisherExcludedUntilPostBuildPublicationToolingGate": true,
+    "hashLiteralsNeverMechanicallyRewritten": true
+  }
+}

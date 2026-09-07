@@ -1,0 +1,28 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_withdrawal_v1",
+  "createdUtc": "2026-09-07T18:09:03.7425592Z",
+  "state": "WITHDRAWN_R18ZT_PUBLICATION_P6_PREFREEZE_STATIC_AUDIT_DEFECTS",
+  "requestId": "REQ_R18ZT1",
+  "withdrawnRevision": "V6/P6",
+  "defects": [
+    "Collision Gate wrote a local gate while declaring unqualified mutationsPerformed=false.",
+    "Collector did not prove the selected response ZIP remained byte-identical across its second-open extraction or final-root recovery verification.",
+    "Collision enumeration capped only after full recursive materialization rather than before materialization.",
+    "The generic no-other-pending request check was outside the literal final collision-scanner result immediately before publication."
+  ],
+  "lastCreatedArtifact": {
+    "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P6_TOOL.json",
+    "bytes": 3821,
+    "sha256": "76C1869C9109E2342257D9CADDDED30798243286F7A9876C91BC265D951C518E"
+  },
+  "invocationCreated": false,
+  "publicationPerformed": false,
+  "externalAccessPerformed": false,
+  "publisherApplyExecuted": false,
+  "collectorExecuted": false,
+  "futureReuseAllowed": false,
+  "successorParentAllowed": false,
+  "expectedSuccessor": "V7/P7",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

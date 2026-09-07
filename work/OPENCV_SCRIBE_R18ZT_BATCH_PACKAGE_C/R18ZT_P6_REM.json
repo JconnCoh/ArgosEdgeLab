@@ -1,0 +1,53 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R18ZT_PACKAGE_C_PUBLICATION_V6_CLONE_20260907A",
+  "state": "FROZEN_PRE_GENERATION",
+  "createdUtc": "2026-09-07T17:55:51.1599607Z",
+  "requestId": "REQ_R18ZT1",
+  "sourceGuardSequence": [
+    { "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V5.ps1", "harnessCheckedUtc": "2026-09-07T17:55:12.3551284Z", "wrapperCheckedUtc": "2026-09-07T17:55:13.3932111Z" },
+    { "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV5.ps1", "harnessCheckedUtc": "2026-09-07T17:55:14.992494Z", "wrapperCheckedUtc": "2026-09-07T17:55:15.801861Z" },
+    { "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV3.ps1", "harnessCheckedUtc": "2026-09-07T17:55:17.1378469Z", "wrapperCheckedUtc": "2026-09-07T17:55:18.0369842Z" }
+  ],
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V5.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V6.ps1",
+      "sourceGuardSha256": "219964AB2C63A30F9C20E08B2C029DA7CC060E0E2EEA0A6D01CABE1465E2F6F1",
+      "rootRules": [
+        { "sourceRoot": "C:\\ProgramData", "generatedRoot": "C:\\ProgramData", "disposition": "UNCHANGED_ALLOWED" },
+        { "sourceRoot": "U:\\ProjectPortalRO", "generatedRoot": "U:\\ProjectPortalRO", "disposition": "UNCHANGED_ALLOWED" },
+        { "sourceRoot": "\\\\shm-cifs\\Department", "generatedRoot": "\\\\shm-cifs\\Department", "disposition": "UNCHANGED_ALLOWED" }
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV5.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV6.ps1",
+      "sourceGuardSha256": "9754926272C9F5292B5A9F23BBA7926C4261BF0376433F90A39601226D271334",
+      "rootRules": [
+        { "sourceRoot": "U:\\ProjectPortalRO", "generatedRoot": "U:\\ProjectPortalRO", "disposition": "UNCHANGED_ALLOWED" },
+        { "sourceRoot": "\\\\shm-cifs\\Department", "generatedRoot": "\\\\shm-cifs\\Department", "disposition": "UNCHANGED_ALLOWED" }
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV3.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV4.ps1",
+      "sourceGuardSha256": "3BC1AED9C716FF5FF854CAB68E53A76CA386F3622559D0D65594CA9D701AB9F2",
+      "rootRules": [
+        { "sourceRoot": "C:\\ProgramData", "generatedRoot": "C:\\ProgramData", "disposition": "UNCHANGED_ALLOWED" },
+        { "sourceRoot": "U:\\ProjectPortalRO", "generatedRoot": "U:\\ProjectPortalRO", "disposition": "UNCHANGED_ALLOWED" },
+        { "sourceRoot": "\\\\shm-cifs\\Department", "generatedRoot": "\\\\shm-cifs\\Department", "disposition": "UNCHANGED_ALLOWED" }
+      ]
+    }
+  ],
+  "globalRules": {
+    "freshPackageNamespace": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C",
+    "freshPublicationRevision": "V6",
+    "requestId": "REQ_R18ZT1",
+    "sourceTemplatesGuardedBeforeGeneration": true,
+    "allLiteralRootsClassified": true,
+    "hashLiteralsNeverMechanicallyRewritten": true,
+    "externalRouteRootsUnchanged": true,
+    "automaticRetryAuthorized": false
+  }
+}

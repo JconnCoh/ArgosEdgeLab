@@ -1,0 +1,70 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_package_c_powershell_safety_gate_v4",
+  "checkedUtc": "2026-09-07T15:06:43.3799211Z",
+  "state": "PASS_R18ZT_PACKAGE_C_POWERSHELL_SAFETY",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "cloneGateSha256": "64C23B2E3EEE4EE7382F53E6F628AC32E0CA77FA7759DE3B51A17598E6FB8EF5",
+  "windowsPowerShell51": true,
+  "allParserChecksPassed": true,
+  "allHarnessChecksPassed": true,
+  "allWrapperChecksPassed": true,
+  "allCallerConsumerChecksPassed": true,
+  "orderedGenerationEvidence": {
+    "sourceHarnessCheckedUtc": "2026-09-07T15:00:35.9244136Z",
+    "sourceHarnessCheckedBeforeRemediation": true,
+    "remediationCreatedBeforeGeneratedBytes": true,
+    "cloneGateCheckedUtc": "2026-09-07T15:04:47.9191014Z",
+    "generatedHarnessCheckedUtc": "2026-09-07T15:06:42.1617939Z",
+    "generatedHarnessAfterCloneGate": true
+  },
+  "decimalCompatibility": {
+    "diagnosticPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Diagnose-R18ZTV4Decimal.ps1",
+    "diagnosticBytes": 1845,
+    "diagnosticSha256": "A479B336AA2A31D57D5CC1C0E2DA80733DD5C80A822573B1BCB69FF3D6070D05",
+    "state": "PASS_R18ZT_V4_PS51_DECIMAL_PREDICATES",
+    "finishDecimalEqual": true,
+    "resultDecimalEqual": true,
+    "withdrawnDoublePredicatesBothFalse": true
+  },
+  "scriptChecks": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Invoke-R18ZTBatchLaunchV3.ps1",
+      "bytes": 79724,
+      "sha256": "61A8C1BE7B987338F077CAA30EA6152E7ACE9780DE49C2A70D195227E3D70AB9",
+      "harnessCheckedUtc": "2026-09-07T15:06:38.8342564Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperCheckedUtc": "2026-09-07T15:06:39.7074304Z",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV5.ps1",
+      "bytes": 72151,
+      "sha256": "52C8BC4D041239228B30EADFF592A43011F8DCA15928CF78B7448FD47D710A48",
+      "harnessCheckedUtc": "2026-09-07T15:06:42.1617939Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperCheckedUtc": "2026-09-07T15:06:43.3799211Z",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    }
+  ],
+  "supersedes": {
+    "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_POWERSHELL_SAFETY_GATE_V3.json",
+    "sha256": "14DA6387EC5F4C16F4CD41BE4CDDBF4BDB058D7285C5E45C54808FBC88AE2567",
+    "reason": "UPSTREAM_CLONE_SUMMARY_CONTAINED_TRUNCATED_RAW_GATE_SHA256"
+  },
+  "conditionalScalarizationViolations": 0,
+  "externalPowerShellTypedObjectAssumptions": 0,
+  "formatDependentEvidence": 0,
+  "broadRecursiveWorkspaceEnumeration": false,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalMutationPerformed": false
+}

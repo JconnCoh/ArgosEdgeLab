@@ -1,0 +1,44 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_package_artifact_withdrawal_v1",
+  "state": "WITHDRAWN_R18ZT_PACKAGE_B_V1_FROZEN_ARTIFACTS_NON_REUSABLE_NON_PARENT",
+  "requestId": "REQ_R18ZT1",
+  "packageRevision": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906B",
+  "reason": "The V1 binding, maintenance definition, and package design were labeled frozen before the exact 52-character atomic-output suffix reserve correction. Their later in-place correction was invalid under the lifecycle rule. The first package clone remediation also omitted the added C:\\R18ZT1JG literal root. All V1 rows are withdrawn and may not be reused as a package, gate, template, or publication parent.",
+  "withdrawn": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_FROZEN_PACKAGE_BINDINGS.json",
+      "firstFrozenSha256": "3FABB32C88E5A71F6F578DC03B37652D19BDF46869F386FE722A9741A50BB709",
+      "postFreezeMutatedSha256": "9D2022E17C06B54B2AA43F053A5E279BE8032A5131C5BE00041E90B07E01F24A"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/MAINTENANCE_DEFINITION.json",
+      "firstFrozenSha256": "02F2065F35524D16771EBD347D51B53D3FED2AD79E135A79807FC01274139599",
+      "postFreezeMutatedSha256": "38341C6D86EC5CAF8E6844C2EC4D4D3F8D0F3A58A2A72D1690F7540881B0B91E"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_BATCH_PACKAGE_DESIGN.json",
+      "firstFrozenSha256": "D9A772F02AD667D431FC0230AA46D42F326633B35C47F445F97DFDF045F3DEE5",
+      "postFreezeMutatedSha256": "5D2FD5D2DD6E621218C76E587EFD2E3CCB580C771AD0B14C61800E542C310FEA"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PACKAGE_B_CLONE_REMEDIATION.json",
+      "firstFrozenSha256": "139F281416D1AB3C2A313EE32B52DB2FAF319B9B5A28556D1A5A8141440607D9",
+      "postFreezeMutatedSha256": null,
+      "defect": "MISSING_ADDED_LITERAL_ROOT_C:\\R18ZT1JG"
+    }
+  ],
+  "successors": [
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/MAINTENANCE_DEFINITION_V2.json","sha256":"3BAE55419BF753F35691E6E21AFD987103F890444DA3B906DF320CA11D470DF6"},
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_BATCH_PACKAGE_DESIGN_V2.json","sha256":"7AB32D088ACDD5EF77B0B5EB2CD4E10BE312C17FD11B60E0E570F523170923C2"},
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PACKAGE_B_CLONE_REMEDIATION_V2.json","sha256":"423C8C9EA538D6F371FAC8070259742CD577570DC6C8B33FD8EB1B509A30630C"},
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_FROZEN_PACKAGE_BINDINGS_V2.json","sha256SelfCycleOmitted":true}
+  ],
+  "requestIdReusedBecauseNoV1PackageWasSignedOrPublished": true,
+  "v1SignatureCreated": false,
+  "v1PublicationPerformed": false,
+  "v1TargetExecuted": false,
+  "v1MayBePublicationParent": false,
+  "v1MayBeTemplate": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

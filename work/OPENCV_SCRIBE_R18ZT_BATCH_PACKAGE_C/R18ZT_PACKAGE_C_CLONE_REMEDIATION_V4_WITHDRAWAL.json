@@ -1,0 +1,56 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_clone_remediation_withdrawal_v1",
+  "createdUtc": "2026-09-06T03:48:45.8609408Z",
+  "state": "WITHDRAWN_R18ZT_PACKAGE_C_CLONE_REMEDIATION_V4_NON_REUSABLE_NON_PARENT",
+  "requestId": "REQ_R18ZT1",
+  "withdrawn": {
+    "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PACKAGE_C_CLONE_REMEDIATION_V4.json",
+    "bytes": 6629,
+    "sha256": "933E3A6339E29336EC853D23505DEB171497C63E83DD8320CB6F724B3FF2C49F",
+    "priorState": "FROZEN_PRE_GENERATION"
+  },
+  "cause": "The V4 remediation was frozen before the exact Package B builder source template received its required official PowerShell harness-safety guard. Its NOT_RUN source-guard row proves the ordering defect. No generated successor was created under V4.",
+  "prevention": "A fresh V5 remediation may be frozen only after the exact builder source guard PASS is pinned. All fresh generated V3/V2 successors remain absent until V5 is independently audited.",
+  "builderSourceGuard": {
+    "sourcePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Build-R18ZTBatchRequest.ps1",
+    "sourceSha256": "882679584A018B93DA351A9481FE8C18EC194782EA16FABCFF4F1C881148468C",
+    "rawResultPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PACKAGE_B_BUILDER_SOURCE_HARNESS_RAW.json",
+    "rawResultBytes": 1686,
+    "rawResultSha256": "B05098394F047B16AD5C90ED81665EB36C36184A048FA661288B947341C69E44",
+    "state": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "parserErrors": 0,
+    "violationCount": 0,
+    "warningCount": 0,
+    "metadataOnly": true,
+    "targetExecuted": false,
+    "performedAfterWithdrawnV4WasFrozen": true
+  },
+  "failedLauncherSourceGuard": {
+    "sourcePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Invoke-R18ZTBatchLaunch.ps1",
+    "sourceSha256": "4CB92574D45A36F819E565DE04482AE9CE79430E3B1C93F2FD621C9EF10549A2",
+    "state": "FAIL_ARGOS_POWERSHELL_HARNESS_SAFETY",
+    "violationCode": "MUTATION_BEFORE_PREFLIGHT_RETURN",
+    "violationLine": 625,
+    "expectedFailurePreserved": true,
+    "rerunAllowed": false
+  },
+  "failureCounter": {
+    "before": 3,
+    "after": 3,
+    "maximum": 5,
+    "sourceBuilderGuardPassed": true,
+    "v4OrderingWithdrawalIsNotAPackageOrWrapperCodingFailure": true
+  },
+  "actions": {
+    "v4GeneratedSuccessorCount": 0,
+    "packageGateRun": false,
+    "packageTestRun": false,
+    "signatureCreated": false,
+    "publicationPerformed": false,
+    "externalAccessPerformed": false,
+    "targetExecuted": false
+  },
+  "mayBePackageParent": false,
+  "mayBePublicationParent": false,
+  "mayBeTemplate": false
+}

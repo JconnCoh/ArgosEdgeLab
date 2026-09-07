@@ -1,0 +1,38 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_package_b_clone_gate_v1",
+  "checkedUtc": "2026-09-06T03:21:58.2544430Z",
+  "state": "PASS_R18ZT_PACKAGE_B_CLONE_LITERAL_GATE",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "FF7B2C75B0A3C7DD29A5249D92E947424DDB407243B52C5B04FAC36DCF9AE3F1",
+  "utilityState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "rawUtilityGatePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PACKAGE_B_CLONE_LITERAL_RAW_GATE.json",
+  "rawUtilityGateSha256": "9BADC500F8B887CA233F95C2E37E02269BA5CB9FEBBF909CED2C546F4973D2B1",
+  "rawUtilityGateBytes": 4290,
+  "packageCloneRemediationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PACKAGE_B_CLONE_REMEDIATION_V2.json",
+  "packageCloneRemediationSha256": "423C8C9EA538D6F371FAC8070259742CD577570DC6C8B33FD8EB1B509A30630C",
+  "publisherCloneRemediationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PUBLISHER_CLONE_REMEDIATION.json",
+  "publisherCloneRemediationSha256": "20A6A765A2E0B6353116FBE4B1048514D79CA8A3543D3031EE9B3E8093A4523A",
+  "sourceTemplatesGuardedBeforeGeneration": true,
+  "generatedArtifactsGuardedAfterGeneration": true,
+  "generatedArtifacts": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Invoke-R18ZTBatchLaunch.ps1",
+      "sha256": "4CB92574D45A36F819E565DE04482AE9CE79430E3B1C93F2FD621C9EF10549A2"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Build-R18ZTBatchRequest.ps1",
+      "sha256": "B01BDBA86BF89EF172A2EC0BACAEDF9E74B7D3ACC7BDDD21DF2B5EC60BA61824"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Run-R18ZTBatchExecutionEnvelope.py",
+      "sha256": "29271D74CF9225BC0E5B0AA3ED459864B5F49E3BF852B4294FB5743F95DF86E2"
+    }
+  ],
+  "publisherIncluded": false,
+  "publisherRequiresSeparatePostBuildCloneAndHarnessGate": true,
+  "violationCount": 0,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

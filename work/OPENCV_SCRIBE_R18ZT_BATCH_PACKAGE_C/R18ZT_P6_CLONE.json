@@ -1,0 +1,32 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_v6_clone_gate_v1",
+  "checkedUtc": "2026-09-07T18:00:05.8413381Z",
+  "state": "PASS_R18ZT_PUBLICATION_V6_CLONE_GATE",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "remediationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P6_REM.json",
+  "remediationBytes": 3247,
+  "remediationSha256": "417BD551093B745939364214E772066131D7F552688C9C288DFAA0D016726768",
+  "rawGatePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P6_RAW.json",
+  "rawGateBytes": 3801,
+  "rawGateSha256": "DFFF39C08DAAD91DF2BA8B6E523194B56FFA02785B5BCCD42DA5EC9FA7E126AA",
+  "rawGateCheckedUtc": "2026-09-07T17:59:22.9923538Z",
+  "sourceTemplatesGuardedBeforeRemediation": true,
+  "remediationFrozenBeforeGeneration": true,
+  "generatedArtifactsGuardedAfterCloneGate": true,
+  "pairs": [
+    { "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V5.ps1", "sourceSha256": "219964AB2C63A30F9C20E08B2C029DA7CC060E0E2EEA0A6D01CABE1465E2F6F1", "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V6.ps1", "generatedBytes": 53098, "generatedSha256": "1A57D56955FF4307DD159060FC03D14EFF11C495C330BB2E2035E94A32A3EF4A", "postCloneHarnessCheckedUtc": "2026-09-07T17:59:44.5742842Z" },
+    { "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV5.ps1", "sourceSha256": "9754926272C9F5292B5A9F23BBA7926C4261BF0376433F90A39601226D271334", "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV6.ps1", "generatedBytes": 38010, "generatedSha256": "157326A42763D17C53A077592656BD41DB8D5CFBCB9BA09BF3B0C1F3F7B9052C", "postCloneHarnessCheckedUtc": "2026-09-07T17:59:47.4556119Z" },
+    { "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV3.ps1", "sourceSha256": "3BC1AED9C716FF5FF854CAB68E53A76CA386F3622559D0D65594CA9D701AB9F2", "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV4.ps1", "generatedBytes": 10052, "generatedSha256": "3BC1AED9C716FF5FF854CAB68E53A76CA386F3622559D0D65594CA9D701AB9F2", "postCloneHarnessCheckedUtc": "2026-09-07T17:59:50.5939699Z" }
+  ],
+  "pairCount": 3,
+  "violationCount": 0,
+  "supersedesWithdrawalPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P5_STALE_GATE_WITHDRAWAL.json",
+  "supersedesWithdrawalSha256": "FDEF4CAB68CD9C194D9960ADF14D54048EBEEF790675A5465CD79F0FA3455E97",
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "publicationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

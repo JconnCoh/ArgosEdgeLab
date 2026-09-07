@@ -1,0 +1,47 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_package_c_v8_clone_gate_v11",
+  "checkedUtc": "2026-09-07T15:58:29.7213015Z",
+  "state": "PASS_R18ZT_PACKAGE_C_CLONE_LITERAL_GATE",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "utilityState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "rawUtilityGatePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C11_RAW.json",
+  "rawUtilityGateSha256": "BDB6B26531CBF688704304195100A1B2D67A9ECF422F43111618C62A3A22A36E",
+  "rawUtilityGateBytes": 3580,
+  "builderCorrectionRemediationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C11_REM.json",
+  "builderCorrectionRemediationSha256": "5EA207A259D551ABAFA4C9241A89429093180E293C9BC368435887E8F0674196",
+  "packageCloneRemediationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PACKAGE_C_CLONE_REMEDIATION_V5.json",
+  "packageCloneRemediationSha256": "F8E8E6D61D630DDCC2AA72A592DA68802F81ACC6CBB8973732B3EA3DB36B3B11",
+  "publisherCloneRemediationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PUBLISHER_CLONE_REMEDIATION.json",
+  "publisherCloneRemediationSha256": "20A6A765A2E0B6353116FBE4B1048514D79CA8A3543D3031EE9B3E8093A4523A",
+  "sourceTemplatesGuardedBeforeGeneration": true,
+  "generatedArtifactsGuardedAfterGeneration": true,
+  "rawUtilityGateCheckedUtc": "2026-09-07T15:57:54.1018563Z",
+  "generatedArtifacts": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV8.ps1",
+      "sha256": "BDAE1F72E8E8AAE2383FDB8667CE13B117777F7650C056A8FCBAEC4520C9731C",
+      "harnessCheckedUtc": "2026-09-07T15:58:26.1164488Z",
+      "wrapperCheckedUtc": "2026-09-07T15:58:27.2208778Z"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV3.ps1",
+      "sha256": "D4AC4547C3CFD86FB6BD1EEA8F8EC21B967F63F822FF55F5C3C9527F916804F9",
+      "harnessCheckedUtc": "2026-09-07T15:58:28.7377702Z",
+      "wrapperCheckedUtc": "2026-09-07T15:58:29.7213015Z"
+    }
+  ],
+  "supersedes": {
+    "withdrawalPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C10_WD.json",
+    "withdrawalSha256": "D7D994D5A490A340D13886BBCCD42C92F4313D0533BC9A10E84F31792E0475C6",
+    "reason": "HOST_DEFAULT_SET_SORT_HASH_MISMATCH"
+  },
+  "inheritedFrozenPayloadArtifactsUnchanged": true,
+  "publisherIncluded": false,
+  "publisherRequiresSeparatePostBuildCloneAndHarnessGate": true,
+  "violationCount": 0,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_package_c_c12_scaffold_abandonment_v1",
+  "createdUtc": "2026-09-07T16:21:00Z",
+  "state": "ABANDONED_R18ZT_C12_PRE_GATE_SCAFFOLD_NON_REUSABLE_NON_PARENT",
+  "requestId": "REQ_R18ZT1",
+  "reason": "C12 named the withdrawn signed V8 builder as its clone source; a signed-withdrawn artifact cannot be a template.",
+  "artifacts": [
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C12_SRC.json"},
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C12_REM.json"},
+    {"path":"work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV9.ps1","bytes":73464,"sha256":"93501747AD1C8F1C37F84453ABC6CB3791886AFB3A126D50E74A39E6053A5DE4"}
+  ],
+  "actions": {
+    "cloneUtilityRun": false,
+    "generatedHarnessRun": false,
+    "builderExecuted": false,
+    "signerAccessed": false,
+    "signatureCreated": false,
+    "externalAccessPerformed": false,
+    "publicationPerformed": false,
+    "targetExecuted": false,
+    "imageAccessPerformed": false
+  },
+  "mayBePackageParent": false,
+  "mayBePublicationParent": false,
+  "mayBeTemplate": false,
+  "successor": {
+    "gateNamespace": "R18ZT_C13",
+    "builder": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV10.ps1",
+    "cleanSource": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV6.ps1"
+  }
+}

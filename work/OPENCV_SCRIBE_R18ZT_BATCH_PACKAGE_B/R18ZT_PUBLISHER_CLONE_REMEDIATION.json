@@ -1,0 +1,24 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R18ZT_BATCH_PACKAGE_B_PUBLISHER_CLONE_REMEDIATION_20260906A",
+  "state": "FROZEN_PRE_GENERATION",
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE/Publish-R18ZT1.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Publish-R18ZT1.ps1",
+      "sourceGuardSha256": "1C708450D8EC7915162A158E00EB3C2A84AEBECB630FC3B10D1E254670FCC65A",
+      "rootRules": [
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    }
+  ],
+  "globalRules": {
+    "freshPackageNamespace": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B",
+    "freshRequestId": "REQ_R18ZT1",
+    "publicationRequiresSeparateFreshCloneGate": true,
+    "hashLiteralsNeverMechanicallyRewritten": true
+  }
+}

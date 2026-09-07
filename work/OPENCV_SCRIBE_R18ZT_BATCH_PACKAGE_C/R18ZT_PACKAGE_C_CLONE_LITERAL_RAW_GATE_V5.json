@@ -1,0 +1,93 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-06T04:14:19.3376048Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C\\R18ZT_PACKAGE_C_CLONE_REMEDIATION_V5.json",
+    "manifestSha256":  "F8E8E6D61D630DDCC2AA72A592DA68802F81ACC6CBB8973732B3EA3DB36B3B11",
+    "pairCount":  4,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Invoke-R18ZTBatchLaunch.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Invoke-R18ZTBatchLaunchV3.ps1",
+                      "sourceSha256":  "4CB92574D45A36F819E565DE04482AE9CE79430E3B1C93F2FD621C9EF10549A2",
+                      "generatedSha256":  "61A8C1BE7B987338F077CAA30EA6152E7ACE9780DE49C2A70D195227E3D70AB9",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "C:\\R18ZT1JG",
+                                          "D:\\A2",
+                                          "D:\\AFCV1",
+                                          "D:\\O2D5"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "C:\\R18ZT1C3JG",
+                                             "D:\\A2",
+                                             "D:\\AFCV1",
+                                             "D:\\O2D5"
+                                         ],
+                      "ruleCount":  5
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Build-R18ZTBatchRequest.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV3.ps1",
+                      "sourceSha256":  "882679584A018B93DA351A9481FE8C18EC194782EA16FABCFF4F1C881148468C",
+                      "generatedSha256":  "414999A30C0AF78657FECD9EE6C2EB6D0347A04BE8E3BFFD25D3D4994C28AC9C",
+                      "sourceRoots":  [
+                                          "C:\\ArgosPy313",
+                                          "C:\\ProgramData",
+                                          "C:\\R18ZT_PROPOSALS_NOT_ACCESSED",
+                                          "C:\\R18ZT1P",
+                                          "C:\\R18ZT1T",
+                                          "C:\\R18ZT1TO",
+                                          "C:\\R18ZT1TW",
+                                          "C:\\R18ZT1V",
+                                          "D:\\A2"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ArgosPy313",
+                                             "C:\\ProgramData",
+                                             "C:\\R18ZT1C3_PROPOSALS_NOT_ACCESSED",
+                                             "C:\\R18ZT1C3P",
+                                             "C:\\R18ZT1C3T",
+                                             "C:\\R18ZT1C3TO",
+                                             "C:\\R18ZT1C3TW",
+                                             "C:\\R18ZT1C3V",
+                                             "D:\\A2"
+                                         ],
+                      "ruleCount":  9
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Run-R18ZTBatchExecutionEnvelope.py",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Run-R18ZTBatchExecutionEnvelopeV2.py",
+                      "sourceSha256":  "29271D74CF9225BC0E5B0AA3ED459864B5F49E3BF852B4294FB5743F95DF86E2",
+                      "generatedSha256":  "A1377797A502292CF9C11C3CABCDC371B7469E536515FD97F222E3A4894E055C",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+
+                                         ],
+                      "ruleCount":  1
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Test-R18ZTBatchExecutionEnvelope.py",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZTBatchExecutionEnvelopeV2.py",
+                      "sourceSha256":  "28C523561580355F9FB30C0E82FB532FB2974A898DBEAB28BF0784B7151C3652",
+                      "generatedSha256":  "28C523561580355F9FB30C0E82FB532FB2974A898DBEAB28BF0784B7151C3652",
+                      "sourceRoots":  [
+
+                                      ],
+                      "generatedRoots":  [
+
+                                         ],
+                      "ruleCount":  1
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

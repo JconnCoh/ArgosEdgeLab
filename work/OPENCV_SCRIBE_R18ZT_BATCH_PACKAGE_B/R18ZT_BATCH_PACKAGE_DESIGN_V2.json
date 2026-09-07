@@ -1,0 +1,147 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_batch_package_design_v1",
+  "artifactNamespace": "R18ZT_PACKAGE_B_V2_AFTER_OUTPUT_SUFFIX_RESERVE_CORRECTION",
+  "revision": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906B",
+  "requestId": "REQ_R18ZT1",
+  "state": "FROZEN_UNPUBLISHED",
+  "artifactLifecycle": "FROZEN",
+  "route": {
+    "targetRole": "JBOD",
+    "jobClass": "MAINTENANCE_PATCH",
+    "endpointWorkerSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "queueSafetyGateSha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D",
+    "queueSafetyGateNature": "INHERITED_GENERIC_QUEUE_SAFETY_EVIDENCE_NOT_AN_EXACT_CURRENT_WORKER_REHEARSAL",
+    "queueSafetyGateTargetWorkerSha256": "244A5ECD88020BF80C217271368C836E0AB82E7B76FDEA9D0D9AC07E0AA034E6",
+    "currentInstalledWorkerSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250",
+    "routePinsSha256": "D1CDD46C70BFF4003E46D35BFC77754F9A9A742E51CA14D5AEAD2377E75B1D5E",
+    "latestSignedTerminalCheckpointSha256": "AFE5D75B4ED250C961961A756A52B0BA8D46E50B336E9B11924CBCD9F6E1F335"
+  },
+  "roots": {
+    "installedLauncher": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R18ZT1.ps1",
+    "canonicalProposalRoot": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+    "proposalAlias": "D:\\A2\\w\\ocv\\R18ZT1\\p",
+    "workRoot": "D:\\A2\\w\\ocv\\R18ZT1",
+    "workPartialRoot": "D:\\A2\\w\\ocv\\R18ZT1.partial",
+    "workFailureRoot": "D:\\A2\\w\\ocv\\R18ZT1.failed",
+    "outputRoot": "D:\\A2\\o\\ocv\\R18ZT1",
+    "localStageRoot": "C:\\R18ZT1P",
+    "localVerifyRoot": "C:\\R18ZT1V",
+    "localTestRoot": "C:\\R18ZT1T"
+  },
+  "seams": {
+    "inventoryParent": "R18O_DIRECT_CHILD_EXISTING_CROP_SEMANTICS_ONLY",
+    "transportParent": "R18T_ASYNC_SIGNED_MAINTENANCE_MECHANICS_ONLY",
+    "scientificParent": "R18ZT_GENERIC_HOLD_RESCUE_PUBLIC_RUN_JOB_PROVIDER_AEF048D3CCEAF378A9FF43D5844DD1A28431E662F5BC54AFF384C4DB73A2C793",
+    "r18oWorkerReusable": false,
+    "r18tScientificDelegateReusable": false,
+    "publicRunJobOnly": true,
+    "normalHypothesisAttemptCount": 8,
+    "normalHypothesisAttemptMeaning": "EXACT_ORDERED_ATTEMPTS_NOT_RETAINED_RESULT_COUNT",
+    "retainedHypothesisCountFixedAtEight": false
+  },
+  "proposalAliasContract": {
+    "type": "DIRECTORY_JUNCTION",
+    "createdInsideFreshWorkRoot": true,
+    "resolvedTargetMustEqualCanonicalProposalRoot": true,
+    "identityCharacterLimit": 80,
+    "actualDirectChildFourSourceLeavesBudgetedBeforeFirstWrite": true,
+    "actualFourSourceLeafIoUsesProposalAliasOnly": true,
+    "identityOver80IsGlobalPrelaunchPathHold": true,
+    "sourceLeafSuffixReserveCharacters": 32,
+    "outputAtomicSuffixReserveCharacters": 52,
+    "sourceMutation": false,
+    "removeOwnedAliasOnPrelaunchFailure": true,
+    "liveAliasPersistsForOwnedBackgroundWorker": true
+  },
+  "launchSemantics": {
+    "asynchronous": true,
+    "maximumOwnedWorkerCount": 1,
+    "executionEnvelopeDelegateMode": "IN_PROCESS_PUBLIC_MAIN_NO_SUBPROCESS",
+    "postStartFailureRequiresConfirmedSoleWorkerExitBeforeRollback": true,
+    "fastExitZeroAcceptedOnlyWithExactCompleteV2": true,
+    "completeValidationCrossBindsInventoryCaseIndexAggregate": true,
+    "invalidCompleteQuarantinedBeforeSoleFailure": true,
+    "exactCompletePreservedWithoutContradictoryFailure": true,
+    "existingTaskEnumerationAllowed": false,
+    "existingProcessEnumerationAllowed": false,
+    "existingTaskOrProcessMutationAllowed": false,
+    "launchResponseIsCompletion": false,
+    "launchState": "PASS_R18ZT_BATCH_WORKER_STARTED",
+    "runningPointer": "RUNNING.json",
+    "runningPointerAllowedStates": [
+      "RUNNING_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+      "COMPLETE_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+      "HOLD_R18ZT_NO_QUALIFIED_EXISTING_ORIENTED_CROPS",
+      "HOLD_R18ZT_SOURCE_CHANGED_STOP_NO_RETRY",
+      "HOLD_R18ZT_BATCH_FATAL_NO_RETRY"
+    ],
+    "completionPointer": "COMPLETE.json",
+    "failurePointer": "FAILURE.json",
+    "statusJsonIsTerminalSubstitute": false,
+    "terminalStatusState": "COMPLETE_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+    "automaticRetryAllowed": false
+  },
+  "boundedFollowup": {
+    "notBeforeHoursAfterLaunch": 12,
+    "singleExactLeafProbe": [
+      "LAUNCH.json",
+      "RUNNING.json",
+      "COMPLETE.json",
+      "FAILURE.json"
+    ],
+    "maximumBytesPerLeaf": 1048576,
+    "treeEnumerationAllowed": false,
+    "processOrTaskQueryAllowed": false,
+    "retrieveOnlyAggregatePinnedByComplete": true
+  },
+  "artifactPins": {
+    "launcherSha256": "4CB92574D45A36F819E565DE04482AE9CE79430E3B1C93F2FD621C9EF10549A2",
+    "payloadManifestSha256": "C3A6153AA298D40F6D9808BAB2A5BD2105547C603AE9F6FFF0C01167754074EB",
+    "configurationSha256": "35AA8D910AEB2A3DD68BB8FF06D396FD2E4F9702660DAEA067A1DDC242F2918C",
+    "executionEnvelopeSha256": "29271D74CF9225BC0E5B0AA3ED459864B5F49E3BF852B4294FB5743F95DF86E2",
+    "runnerSha256": "B830F642C4308F542E9D662F93193714EC54933B47999750C0521E62A827A30C",
+    "providerSha256": "AEF048D3CCEAF378A9FF43D5844DD1A28431E662F5BC54AFF384C4DB73A2C793",
+    "developmentGateSha256": "D71C6356D7FD091274C80E25F1B840C537A1325939DB444AEB729A1E42866FAD"
+  },
+  "finalizationRequirements": {
+    "payloadManifestFinalized": true,
+    "providerTransitiveClosurePinned": true,
+    "runnerAndProviderHashesPinned": true,
+    "orderedSourceAndPostCloneGuardsRequired": true,
+    "cloneLiteralGateRequired": true,
+    "pathGateForActualZipMembershipRequired": true,
+    "wrapperAndHarnessGatesRequired": true,
+    "preactionGateRequired": true,
+    "syntheticRuntimeGateRequired": true,
+    "exactSlot21PassRequiredBeforeSigningAndPublication": true,
+    "preSignatureCollisionAbsenceRequired": true,
+    "signedByThisDesign": false,
+    "publishedByThisDesign": false
+  },
+  "collisionScans": {
+    "requiredBeforeSignature": true,
+    "requiredScopes": [
+      "LIVE_REQUEST_ROOT",
+      "LIVE_PROCESSED_ARCHIVE",
+      "GATEWAY_REQUEST_INVENTORY",
+      "LOCAL_PUBLICATION_ARCHIVE"
+    ],
+    "allFourMustBeAvailableAndProveAbsent": true,
+    "performedByFrozenDesign": false,
+    "requiredImmediatelyBeforeSignatureAndAgainBeforePublication": true
+  },
+  "authority": {
+    "localScaffoldAuthorized": true,
+    "conditionalPublicationAuthorityText": "Do the work, if it is successful - as in deciphering correctly. PUBLISH the package to JBOD.",
+    "conditionalPublicationAuthorityRequiresExactSlot21Pass": true,
+    "freshRequestIdSpecificLiteralRequired": false,
+    "signatureAuthorizedByThisArtifact": false,
+    "publicationAuthorizedByThisArtifact": false,
+    "jbodExecutionAuthorizedByThisArtifact": false,
+    "sourceMutationAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false
+  }
+}

@@ -10945,3 +10945,159 @@ than rerunning it.
   acquisitions from development. A fresh successor may replace the leaking
   row only with an exact database-reconciled acquisition whose physical
   lineage is distinct from every reserved validation lineage.
+
+## 2026-09-06 — Compare JSON decimal evidence as decimal under Windows PowerShell 5.1
+
+- Failure signature: the metadata-only `R18ZT` Package C builder preflight
+  rejected `R18ZT exact deciphering finish changed` although the pinned JSON
+  contained selection score `0.9117836040446633` and every non-score predicate
+  was true. No package output, signature, publication, or external mutation
+  occurred.
+- Cause: Windows PowerShell 5.1 `ConvertFrom-Json` materialized that JSON
+  number as `System.Decimal`, while the builder coerced both operands through
+  `[double]` and compared them for exact equality. PowerShell 5.1's conversion
+  of the decimal value and its numeric literal did not produce an exact-equal
+  pair; the same expression happened to return true under PowerShell 7.
+- Mandatory preflight: when a signed JSON decimal participates in exact
+  evidence validation, exercise the predicate under the exact installed
+  Windows PowerShell 5.1 host and compare invariant-culture decimal values.
+  Never infer cross-host numeric equality from PowerShell 7 or from a
+  reserialized display string.
+- Recovery: preserve the failed Package C builder and its dependent gates as
+  withdrawn diagnostic evidence. Use a fresh builder artifact, parse the
+  expected value with `System.Decimal` and invariant culture, regenerate all
+  builder-bound clone, harness, wrapper, and preaction evidence, and do not
+  spend the fifth allowed coding-failure slot until the exact corrected
+  predicate passes a dedicated Windows PowerShell 5.1 diagnostic.
+
+## 2026-09-07 — Do not use host-default Sort-Object order for signed set hashes
+
+- Failure signature: the metadata-only `R18ZT` Package C V7 builder preflight
+  rejected `R18ZT path-gate membership changed` even though all 49 expected ZIP
+  members exactly matched the frozen path gate. The same member set hashed to
+  `AB10C93F...` under PowerShell 7 but `4C554867...` under Windows PowerShell
+  5.1 when both used host-default `Sort-Object`. No package output, signer
+  access, external access, publication, or target execution occurred.
+- Cause: a set hash was defined by the host's default culture-sensitive sort
+  order. PowerShell 7 and Windows PowerShell 5.1 can order the same mixed-case
+  path strings differently, so exact bytes and exact membership do not imply
+  the same default-sort serialization across hosts.
+- Mandatory preflight: never use host-default `Sort-Object` to define or
+  rederive a signed set hash across PowerShell hosts. Pin the frozen canonical
+  set hash, independently compare exact set membership with no missing, extra,
+  or duplicate members, and carry the canonical hash forward only after that
+  comparison passes. If a new serialization is required, freeze an explicit
+  comparer and line-ending contract and exercise it under every allowed host.
+- Recovery: preserve V7 and its C10 gate chain as failed local diagnostic
+  evidence. Use a fresh builder namespace that validates the frozen canonical
+  hash and exact membership separately, then rerun clone, harness, wrapper,
+  preaction, and builder preflight before any test, signature, or external read.
+
+## 2026-09-07 — A package builder must assert the schema its launcher actually emits
+
+- Failure signature: `R18ZT` Package C V8 successfully created and verified a
+  local signed staging package, then failed while validating the extracted
+  launcher's non-mutating preflight because the builder read absent property
+  `sourceImageBytesRead` under strict mode. The launcher preflight actually
+  emits `sourceImageBytesHashed=false` and `pixelsDecoded=false`. No final
+  package root or final package gate was created, and no publication or target
+  execution occurred.
+- Cause: the build path used a property name emitted by a different launcher
+  evidence object. The unsigned test did not expose the mismatch because its
+  staged-preflight predicate checked neither exact no-image field, while the
+  extracted-preflight predicate referenced the nonexistent field only after
+  signature and ZIP extraction.
+- Mandatory preflight: for each invoked JSON-producing entry point, freeze and
+  mechanically assert its exact output field set before signer access. Apply
+  the same exact no-image predicates to staged and extracted launcher
+  preflights, and exercise the complete post-signature validation path with a
+  disposable signer-independent fixture or equivalent schema contract before
+  the real signature boundary.
+- Recovery: preserve the V8/C11 signed staging ZIP, manifest, and signature as
+  withdrawn, non-reusable, non-publishable evidence. Do not edit or rerun V8.
+  Use fresh V9/C12 build roots, replace the invalid predicate with exact
+  `sourceImageBytesHashed=false` and `pixelsDecoded=false` checks in both
+  staged and extracted validation, regenerate builder-bound clone, harness,
+  wrapper, and preaction evidence, and perform a fresh collision scan before
+  the next single signing attempt.
+
+## 2026-09-07 — Recovery evidence must distinguish absence, path type, envelope identity, and payload reads
+
+- Failure signature: pre-publication review of the local `R18ZT` V4 collector
+  found that any malformed or semantically invalid existing publication gate
+  was caught and treated as absent, so durable-intent recovery could proceed.
+  The same review found that an existing final-extraction path of the wrong
+  type could be treated as absent, and final-root recovery did not bind the
+  extracted response manifest and signature hashes to the selected archive.
+- Cause: expected path type was used as the existence test; a broad catch
+  collapsed invalid evidence into missing evidence; and recovery verified a
+  valid extracted envelope without proving it was the exact envelope selected
+  from the bounded authenticated archive scan.
+- Mandatory preflight: test existence separately from expected path type. An
+  existing path of the wrong type and every read, parse, hash, schema, binding,
+  semantic, or timestamp failure for an existing gate must hard-stop. Permit
+  durable-intent recovery only when the gate path is genuinely absent. Before
+  citing a selected response archive during final-root recovery, hash recovered
+  `PORTAL_RESPONSE_MANIFEST.json` and `.sig` and require exact equality to the
+  selected archive's already authenticated manifest and signature hashes.
+- Related evidence defect: the V2 request-ID scanner read selected ZIP JSON
+  members including `RESULT.json` while declaring
+  `zipPayloadOrImageMembersRead=false`. Successor scanners must report ZIP
+  payload-member reads and image-member reads as separate truthful fields;
+  publishers must assert those exact fields and must never equate reading
+  bounded JSON payload evidence with reading image members.
+- Recovery: withdraw V4/P4 without publication or external access. Use a fresh
+  V5/P5 lineage with missing-only recovery, hard path-type gates, exact response
+  envelope binding, truthful collision evidence, and post-freeze Windows
+  PowerShell 5.1 wrapper evidence that pins the exact frozen invocation.
+
+## 2026-09-07 — Publication evidence must remain truthful, bounded, stable, final, and type-safe
+
+- Failure signature: the local `R18ZT` P6 collision gate wrote a durable local
+  JSON artifact while declaring the unqualified field
+  `mutationsPerformed=false`.
+- Cause: the evidence model collapsed local evidence-file mutation and external
+  portal mutation into one Boolean.
+- Mandatory preflight: every publisher and collision gate must report
+  `localGateMutationPerformed`, `externalMutationsPerformed`, and the aggregate
+  `mutationsPerformed` separately. A durable local gate write requires the
+  first and aggregate fields to be true while the external field remains false.
+- Failure signature: the P6 collision scanner applied its entry cap only after
+  recursive enumeration had already materialized the complete namespace.
+- Cause: a bounded result was mistaken for a bounded traversal.
+- Mandatory preflight: apply the hard entry limit in the enumeration pipeline
+  before materialization, fail closed at the first over-limit sentinel row, and
+  cap recorded errors independently. Do not claim a bounded scan from a later
+  slice of an already unbounded collection.
+- Failure signature: the P6 collector authenticated a response wrapper once but
+  did not prove that the same wrapper bytes remained stable across its second
+  open, locked extraction or recovery use, close, and final gate commit.
+- Cause: envelope authentication and later filesystem reuse were treated as one
+  atomic observation even though the file was reopened.
+- Mandatory preflight: pin the initial full-wrapper SHA-256; require matching
+  pre-open, locked-pre-use, locked-post-use, post-close, and final SHA-256 values;
+  and record all five values plus a completed stability disposition in the
+  collection gate. Preflight must leave those values null and explicitly mark
+  the stability check pending.
+- Failure signature: P6 checked for unrelated pending portal requests outside
+  the literal final collision-scanner result rather than immediately before the
+  publication decision.
+- Cause: an earlier namespace observation was allowed to stand in for the final
+  no-other-pending publication predicate.
+- Mandatory preflight: the scanner's final operation before its atomic gate
+  write must rescan the exact top-level ready and upload leaves with zero request
+  exclusions, require both counts to be zero, and emit
+  `noOtherPendingRequests=true`. The publisher must require those exact fields.
+- Failure signature: P6 missing-publish-gate recovery could treat an existing
+  ready, processed, or upload route object of the wrong filesystem type as if it
+  were absent.
+- Cause: expected path type was again used as the existence test at route leaves.
+- Mandatory preflight: test untyped existence for every exact route leaf, require
+  every existing object to be a file, require upload absence, then require
+  exactly one ready or processed file bound byte-for-byte and timestamp-for-
+  timestamp to the durable apply intent. A wrong-type object is a hard stop.
+- Recovery: preserve V6/P6 and its local tooling gate as withdrawn,
+  non-publishable, non-parent evidence. Record the subsequently discovered route
+  type defect in an immutable withdrawal addendum. Use fresh V7/P7 scripts and
+  evidence; do not publish, collect, or access the portal until their complete
+  post-clone, wrapper, path, preaction, post-freeze, and invocation chain passes.

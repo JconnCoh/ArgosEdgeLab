@@ -1,0 +1,48 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R18ZT_PACKAGE_C_V10_LAUNCH_PREFLIGHT_SCHEMA_20260907A",
+  "state": "FROZEN_PRE_GENERATION",
+  "requestId": "REQ_R18ZT1",
+  "semanticPackageRevision": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906C",
+  "supersedes": {
+    "signedWithdrawalPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C11_SIGNED_BUILD_WITHDRAWAL.json",
+    "scaffoldAbandonmentPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C12_SCAFFOLD_ABANDONMENT.json",
+    "reason": "REGENERATE_FROM_LAST_CLEAN_UNSIGNED_BUILDER_LINEAGE",
+    "disposition": "FRESH_BUILD_AND_STAGE_NAMESPACE_REQUIRED"
+  },
+  "preGenerationOrder": {
+    "thisArtifactCreatedBeforeGeneratedV10Bytes": true,
+    "sourceHarnessesGuardedBeforeGeneration": true,
+    "sourceHarnessPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C13_SRC.json",
+    "generatedHarnessRequiredAfterCloneGate": true,
+    "gatesRunByThisManifest": false,
+    "testsRunByThisManifest": false
+  },
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV6.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV10.ps1",
+      "sourceGuardSha256": "2E500CA245B9C633588BFB498AF7A164AF199CF62EDEAE5478B4C110417AF8C8",
+      "rootRules": [
+        {"sourceRoot":"C:\\ArgosPy313","generatedRoot":"C:\\ArgosPy313","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\R18ZT1C3_PROPOSALS_NOT_ACCESSED","generatedRoot":"C:\\R18ZT1C4_PROPOSALS_NOT_ACCESSED","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1C3P","generatedRoot":"C:\\R18ZT1C4P","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1C3V","generatedRoot":"C:\\R18ZT1C4V","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1C3T","generatedRoot":"C:\\R18ZT1C4T","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1C3TW","generatedRoot":"C:\\R18ZT1C4TW","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1C3TO","generatedRoot":"C:\\R18ZT1C4TO","disposition":"REPLACED"}
+      ]
+    }
+  ],
+  "globalRules": {
+    "freshSuccessorBuilderBytes": true,
+    "withdrawnSignedBuilderNotUsedAsTemplate": true,
+    "stagedAndExtractedPreflightSchemasAssertedIdentically": true,
+    "generatedFileMayNotExecuteBeforeExactHarnessPass": true,
+    "externalAccessPerformed": false,
+    "targetExecuted": false,
+    "publicationPerformed": false
+  }
+}

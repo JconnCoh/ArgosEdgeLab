@@ -1,0 +1,506 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_invocation_v3",
+  "state": "DRAFT_R18ZT1_PUBLICATION_INVOCATION_V3_LOCAL_FINALIZATION",
+  "lifecycle": "DRAFT",
+  "requestId": "REQ_R18ZT1",
+  "packageRevision": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906C",
+  "allowedAbsoluteLocalReadRoots": [
+    "C:\\R18ZTS21A"
+  ],
+  "authority": {
+    "operatorAuthorityText": "Do the work, if it is successful - as in deciphering correctly. PUBLISH the package to JBOD.",
+    "maximumPublications": 1,
+    "retryAuthorized": false,
+    "reviewOnly": true,
+    "identityAcceptanceAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false
+  },
+  "git": {
+    "branch": "codex/opencv-scribe-deciphering",
+    "fetchAuthorized": false,
+    "runtimeRequirement": "EXACT_BRANCH_CLEAN_LOCAL_HEAD_EQUALS_LOCALLY_RECORDED_ORIGIN_TIP_NO_FETCH"
+  },
+  "tools": {
+    "publisherDependency": "publisher",
+    "collectorDependency": "collector",
+    "windowsPowerShell": "5.1 Desktop",
+    "publisherRuntimeSelfHashRequired": true,
+    "preactionMayPinPublisherButMustNotPinInvocation": true
+  },
+  "packageBinding": {
+    "dependency": "packageBinding",
+    "expectedSchema": "argos_opencv_scribe_r18zt_package_bindings_v5",
+    "expectedState": "FROZEN_R18ZT_PACKAGE_C_V5_BINDINGS",
+    "forbiddenSchemas": [
+      "argos_opencv_scribe_r18zt_package_bindings_v1",
+      "argos_opencv_scribe_r18zt_package_bindings_v2"
+    ]
+  },
+  "dependencies": [
+    {
+      "name": "publisher",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V3.ps1",
+      "bytes": 47285,
+      "sha256": "4769EAA9A848D0047639EE16853F523E0D18B81670DAFB2DCC8CD1DDF3B27961"
+    },
+    {
+      "name": "collector",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV3.ps1",
+      "bytes": 28416,
+      "sha256": "5E9933883F52FBFCE09441ADC8DB0B796F6ED1409AAA01F39ECF28F42795F8AE"
+    },
+    {
+      "name": "packageBinding",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_FROZEN_PACKAGE_BINDINGS_V5.json",
+      "bytes": 16006,
+      "sha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86"
+    },
+    {
+      "name": "launcher",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Invoke-R18ZTBatchLaunchV3.ps1",
+      "bytes": 79724,
+      "sha256": "61A8C1BE7B987338F077CAA30EA6152E7ACE9780DE49C2A70D195227E3D70AB9"
+    },
+    {
+      "name": "requestZip",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/final/REQ_R18ZT1.ready.zip",
+      "bytes": 310185,
+      "sha256": "98527BD9ACFACB4CE8E4202BCB0ECBD72E9AE73F2AC63385614463FD059BD049"
+    },
+    {
+      "name": "finalPackageGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_FINAL_PACKAGE_GATE_V2.json",
+      "bytes": 3153,
+      "sha256": "9F594BB5CD3A40788CF82A44D0331E2C29C2570213F17B9E5333F6E78CF8BFE9"
+    },
+    {
+      "name": "completeRouteGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/final/REQ_R18ZT1.ready.zip.complete_route_gate.json",
+      "bytes": 1461,
+      "sha256": "64404EA48998C82B87264D9D39D36AA882143A1688196164FDE7624D4BAAE57C"
+    },
+    {
+      "name": "pathGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PATH_PLAN_GATE_V3.json",
+      "bytes": 9856,
+      "sha256": "FEF8DB1737C9EC5FA4F949CD9DF53D390F6AB4D909519C922B81DB34782E1BAA"
+    },
+    {
+      "name": "scienceGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_SCIENCE_GATE_V2.json",
+      "bytes": 3163,
+      "sha256": "9589306528B61B3689FC8702160339578F1F106D0DE057FB74108CFEDF213E99"
+    },
+    {
+      "name": "signedUnpublishedGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_FINAL_PACKAGE_GATE_V2.json",
+      "bytes": 3153,
+      "sha256": "9F594BB5CD3A40788CF82A44D0331E2C29C2570213F17B9E5333F6E78CF8BFE9"
+    },
+    {
+      "name": "publicationToolingGate",
+      "path": "PENDING_PUBLICATION_TOOLING_GATE_PATH",
+      "bytes": "PENDING",
+      "sha256": "PENDING_PUBLICATION_TOOLING_GATE_SHA256"
+    },
+    {
+      "name": "publisherCloneGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P3_CLONE.json",
+      "bytes": 1841,
+      "sha256": "711B79627D161F6671246C49CC873F0C4F71AF9924875E2FD1A3EEEB797E26F7"
+    },
+    {
+      "name": "publisherHarnessGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P3_PS.json",
+      "bytes": 2741,
+      "sha256": "0D57D36533163F3F578D486A2835AF63D552324AF9DFD98AF5EE23281321636A"
+    },
+    {
+      "name": "collectorCloneGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P3_CLONE.json",
+      "bytes": 1841,
+      "sha256": "711B79627D161F6671246C49CC873F0C4F71AF9924875E2FD1A3EEEB797E26F7"
+    },
+    {
+      "name": "collectorHarnessGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P3_PS.json",
+      "bytes": 2741,
+      "sha256": "0D57D36533163F3F578D486A2835AF63D552324AF9DFD98AF5EE23281321636A"
+    },
+    {
+      "name": "publicationPathGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P3_PATH.json",
+      "bytes": 1774,
+      "sha256": "DE688C92165D071A730E8F979A7832160B105DA89A9FE8802905F263A6920DEF"
+    },
+    {
+      "name": "collisionScanner",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV2.ps1",
+      "bytes": 8093,
+      "sha256": "D4AC4547C3CFD86FB6BD1EEA8F8EC21B967F63F822FF55F5C3C9527F916804F9"
+    },
+    {
+      "name": "builder",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV10.ps1",
+      "bytes": 73620,
+      "sha256": "A86EC60302EDE387F7963B02BFA0F2B28EBE7084739EF53D4F3F59FFC88EBD1E"
+    },
+    {
+      "name": "buildCollisionGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_REQUEST_ID_COLLISION_GATE_V3.json",
+      "bytes": 5242,
+      "sha256": "9D8DD552B26E67C6FCDD5E7E5853977E97D45BB0D42735729645A9ABF2CD8546"
+    },
+    {
+      "name": "packageCloneGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C13_CLONE.json",
+      "bytes": 2527,
+      "sha256": "ED9538AF489B02FDDF0FEA177EF5BCF51C336DB629517D58627A4508459C2820"
+    },
+    {
+      "name": "packagePowerShellGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C13_PS.json",
+      "bytes": 4136,
+      "sha256": "F4221BC53139916E747BDC7DC5C10DD1CBA608F4FF03AEAEA7CE2587FA49C2B0"
+    },
+    {
+      "name": "preactionContract",
+      "path": "PENDING_FRESH_PUBLICATION_PREACTION_PATH",
+      "bytes": "PENDING",
+      "sha256": "PENDING_FRESH_PUBLICATION_PREACTION_SHA256"
+    },
+    {
+      "name": "preactionTool",
+      "path": "utilities/Confirm-ArgosZeroRecurrencePreaction.ps1",
+      "bytes": 10766,
+      "sha256": "303EE814B441365120DE1083DE018513F3D1ABE523236291460336C4CB2DE5BB"
+    },
+    {
+      "name": "historyAudit",
+      "path": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+      "bytes": 18406,
+      "sha256": "F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C"
+    },
+    {
+      "name": "requestSignerCertificate",
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/ARGOS_PROJECT_PORTAL_LAPTOP_SIGNER_PUBLIC.cer",
+      "bytes": 1101,
+      "sha256": "2B434D0CF6A0D6D69AAE3D280032EFF00807D423CA3B3D7F2EFC1C6BB628BFFF"
+    },
+    {
+      "name": "responseVerifier",
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalResponse.ps1",
+      "bytes": 3942,
+      "sha256": "4AF5901A7B9DFFF5A4DAF128960173D67501ABF6FF87C586BA526643B1C1449C"
+    },
+    {
+      "name": "responseSignerCertificate",
+      "path": "work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer",
+      "bytes": 1080,
+      "sha256": "5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B"
+    },
+    {
+      "name": "priorTerminalCheckpoint",
+      "path": "work/OPENCV_SCRIBE_R18W4S21/R18W4S21_SIGNED_TERMINAL_RESPONSE_CHECKPOINT_GATE.json",
+      "bytes": 1280,
+      "sha256": "AFE5D75B4ED250C961961A756A52B0BA8D46E50B336E9B11924CBCD9F6E1F335"
+    },
+    {
+      "name": "slot21Adjudication",
+      "path": "work/OPENCV_SCRIBE_R18ZT_SLOT21/R18ZT_SLOT21_POST_RESULT_ADJUDICATION_GATE_20260906A.json",
+      "bytes": 14233,
+      "sha256": "E526EDF07597D3F71A52FABAD7E93941A0FE3CD34003B6F0595C9D3992234A7D"
+    },
+    {
+      "name": "slot21Runner",
+      "path": "work/OPENCV_SCRIBE_R18ZT_SLOT21/Run-R18ZTSlot21.py",
+      "bytes": 30087,
+      "sha256": "0EDCF71ACB454B0BF71B982A7172707D92E6B71373E9F6FA0DD8BC61AC9F667F"
+    },
+    {
+      "name": "provider",
+      "path": "work/OPENCV_SCRIBE_R18ZT/ArgosOpenCvScribeV1R18ZT.py",
+      "bytes": 17391,
+      "sha256": "AEF048D3CCEAF378A9FF43D5844DD1A28431E662F5BC54AFF384C4DB73A2C793"
+    },
+    {
+      "name": "developmentGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT/R18ZT_DEVELOPMENT_GATE_20260906C/R18ZT_GENERIC_HOLD_RESCUE_DEVELOPMENT_GATE.json",
+      "bytes": 52026,
+      "sha256": "D71C6356D7FD091274C80E25F1B840C537A1325939DB444AEB729A1E42866FAD"
+    },
+    {
+      "name": "preValidationGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_PRE_SLOT/R18ZT_PRE_VALIDATION_GATE_20260906A/R18ZT_PRE_VALIDATION_BOUNDED_REGRESSION_GATE.json",
+      "bytes": 34243,
+      "sha256": "A5054CB689B257819AD00B639FA9B55E2078B9193DDCB41776F7B39987606B52"
+    },
+    {
+      "name": "slot21Result",
+      "path": "C:\\R18ZTS21A\\R18ZT_SLOT21_PROVIDER_RESULT.json",
+      "bytes": 641749,
+      "sha256": "0EFA3C24CE3B037DA0EB6683955673110A6D58F88EAA4ABD057CDAA5F73871ED"
+    },
+    {
+      "name": "slot21ExecutionGate",
+      "path": "C:\\R18ZTS21A\\R18ZT_SLOT21_VALIDATION_GATE.json",
+      "bytes": 21491,
+      "sha256": "E58D2F0967AADA1B50DE7903E83DA6235DFA786977D144880A116E4DF36E402D"
+    }
+  ],
+  "bindingConsumers": [
+    {
+      "dependency": "finalPackageGate",
+      "stateProperty": "state",
+      "expectedState": "PASS_R18ZT_SIGNED_UNPUBLISHED_PACKAGE_GATE",
+      "bindingHashProperty": "bindingRecordSha256",
+      "requestIdProperty": "requestId"
+    },
+    {
+      "dependency": "completeRouteGate",
+      "stateProperty": "state",
+      "expectedState": "PASS_R18ZT_COMPLETE_ROUTE_GATE_SIGNED_UNPUBLISHED",
+      "bindingHashProperty": "bindingRecordSha256",
+      "requestIdProperty": "requestId"
+    },
+    {
+      "dependency": "pathGate",
+      "stateProperty": "state",
+      "expectedState": "PASS_R18ZT_PACKAGE_C_PATH_BUDGET",
+      "bindingHashProperty": "bindingRecordSha256",
+      "requestIdProperty": "requestId"
+    },
+    {
+      "dependency": "scienceGate",
+      "stateProperty": "state",
+      "expectedState": "PASS_R18ZT_BATCH_SCIENCE_GATE",
+      "bindingHashProperty": "bindingRecordSha256",
+      "requestIdProperty": "requestId"
+    },
+    {
+      "dependency": "signedUnpublishedGate",
+      "stateProperty": "state",
+      "expectedState": "PASS_R18ZT_SIGNED_UNPUBLISHED_PACKAGE_GATE",
+      "bindingHashProperty": "bindingRecordSha256",
+      "requestIdProperty": "requestId"
+    },
+    {
+      "dependency": "publicationToolingGate",
+      "stateProperty": "state",
+      "expectedState": "PASS_R18ZT_PUBLICATION_V3_TOOLING_GATE",
+      "bindingHashProperty": "bindingRecordSha256",
+      "requestIdProperty": "requestId"
+    }
+  ],
+  "gateSemantics": [
+    {
+      "name": "FINAL_PACKAGE",
+      "dependency": "finalPackageGate",
+      "requestZipSha256Property": "requestZipSha256",
+      "requestZipBytesProperty": "requestZipBytes",
+      "signatureVerifiedProperty": "exactFinalZipSignaturePassed",
+      "publishedProperty": "publicationPerformed",
+      "completionClaimedProperty": "completionClaimed",
+      "retryAuthorizedProperty": "retryAuthorized"
+    },
+    {
+      "name": "COMPLETE_ROUTE",
+      "dependency": "completeRouteGate",
+      "requestZipSha256Property": "requestZipSha256",
+      "publicationCollisionRecheckProperty": "publicationMustRecheckAllAccessibleCollisionNamespaces",
+      "maximumEffectiveLengthProperty": "maximumEffectiveLength",
+      "maximumComponentLengthProperty": "maximumComponentLength",
+      "unsafePathCountProperty": "unsafePathCount",
+      "completionClaimedProperty": "completionClaimed"
+    },
+    {
+      "name": "PATH_BUDGET",
+      "dependency": "pathGate",
+      "maximumEffectiveLengthProperty": "maximumEffectiveLength",
+      "maximumComponentLengthProperty": "maximumComponentLength",
+      "unsafePathCountProperty": "unsafePathCount",
+      "maximumSuffixReserveProperty": "outputAtomicSuffixReserveCharacters",
+      "requiredRouteCoverageProperties": [
+        "routeCoverage.localBuildAndFinalZip",
+        "routeCoverage.localPublicationStaging",
+        "routeCoverage.gatewayShareRequestAndArchive",
+        "routeCoverage.gatewayToArgosRelay",
+        "routeCoverage.argosToJbodRelay",
+        "routeCoverage.jbodEndpointPendingWorkCompleteAndFailure",
+        "routeCoverage.compactFailureQuarantine",
+        "routeCoverage.responseSenderWatchAndSent",
+        "routeCoverage.argosToGatewayReturn",
+        "routeCoverage.gatewayShareResponse",
+        "routeCoverage.localResponseExtraction",
+        "routeCoverage.installedLauncher",
+        "routeCoverage.jbodWorkAndOutput"
+      ]
+    },
+    {
+      "name": "SCIENCE",
+      "dependency": "scienceGate",
+      "imageFirstStringProperty": "exactImageFirstString",
+      "exactFinishPassedProperty": "exactDecipheringFinish",
+      "wrongAcceptedCountProperty": "developmentAcceptedWrong",
+      "providerRerunProperty": "providerRerunForAdjudication"
+    },
+    {
+      "name": "SIGNED_UNPUBLISHED",
+      "dependency": "signedUnpublishedGate",
+      "requestZipSha256Property": "requestZipSha256",
+      "signatureVerifiedProperty": "exactFinalZipSignaturePassed",
+      "publishedProperty": "publicationPerformed",
+      "completionClaimedProperty": "completionClaimed",
+      "retryAuthorizedProperty": "retryAuthorized"
+    },
+    {
+      "name": "PUBLICATION_TOOLING",
+      "dependency": "publicationToolingGate",
+      "publisherSha256Property": "publisherSha256",
+      "collectorSha256Property": "collectorSha256",
+      "windowsPowerShell51PassedProperty": "windowsPowerShell51Passed",
+      "cloneGatesPassedProperty": "cloneGatesPassed",
+      "harnessGatesPassedProperty": "harnessGatesPassed",
+      "preactionCycleAbsentProperty": "preactionCycleAbsent"
+    }
+  ],
+  "science": {
+    "adjudicationBindingArtifactName": "slot21Adjudication",
+    "adjudicationPins": [
+      {
+        "pinName": "runner",
+        "dependency": "slot21Runner",
+        "bindingArtifactName": "slot21Runner"
+      },
+      {
+        "pinName": "provider",
+        "dependency": "provider",
+        "bindingArtifactName": "provider"
+      },
+      {
+        "pinName": "developmentGate",
+        "dependency": "developmentGate",
+        "bindingArtifactName": "developmentGate"
+      },
+      {
+        "pinName": "preValidationGate",
+        "dependency": "preValidationGate",
+        "bindingArtifactName": "prevalidationGate"
+      },
+      {
+        "pinName": "executedResult",
+        "dependency": "slot21Result",
+        "bindingArtifactName": "slot21Result"
+      },
+      {
+        "pinName": "executedGate",
+        "dependency": "slot21ExecutionGate",
+        "bindingArtifactName": "slot21ExecutionGate"
+      }
+    ]
+  },
+  "preaction": {
+    "contractDependency": "preactionContract",
+    "toolDependency": "preactionTool",
+    "historyDependency": "historyAudit",
+    "publisherRuntimeHashMustBeDependency": true,
+    "invocationDependencyForbiddenToAvoidHashCycle": true
+  },
+  "signedRequest": {
+    "maximumZipBytes": 67108864,
+    "maximumEntryCount": 64,
+    "change": {
+      "launcherDependency": "launcher",
+      "source": "payload/Invoke-R18ZTBatchLaunch.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R18ZT1.ps1",
+      "installedSha256": "61A8C1BE7B987338F077CAA30EA6152E7ACE9780DE49C2A70D195227E3D70AB9",
+      "approvedPredecessorSha256": [
+        "61A8C1BE7B987338F077CAA30EA6152E7ACE9780DE49C2A70D195227E3D70AB9"
+      ],
+      "allowCreate": true
+    }
+  },
+  "collision": {
+    "scannerDependency": "collisionScanner",
+    "gateOutputPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P3_COLLISION.json",
+    "expectedPreflightSchema": "argos_r18zt1_request_id_uniqueness_preflight_v1",
+    "expectedPreflightState": "PASS_R18ZT1_REQUEST_ID_UNIQUENESS_PREFLIGHT",
+    "expectedGateSchema": "argos_r18zt1_request_id_uniqueness_gate_v1",
+    "expectedGateState": "PASS_R18ZT1_REQUEST_ID_UNIQUENESS_ZERO_COLLISIONS",
+    "maximumStdoutBytes": 1048576,
+    "maximumDurationSeconds": 300,
+    "maximumAgeSeconds": 120,
+    "clockSkewAllowanceSeconds": 30,
+    "requiredNamespaceIds": [
+      "SHARE_REQUEST_UPLOAD_PROCESSED_ARCHIVE",
+      "SHARE_RESPONSE_ARCHIVE"
+    ],
+    "optionalNamespaceIds": [
+      "LOCAL_ROUTE_REQUEST_TO_ARGOS",
+      "LOCAL_ROUTE_REQUEST_FROM_GATEWAY",
+      "LOCAL_ROUTE_TO_JBOD",
+      "LOCAL_ENDPOINT_LEDGER",
+      "LOCAL_ROUTE_TO_ARGOS",
+      "LOCAL_ROUTE_FROM_JBOD",
+      "LOCAL_ROUTE_TO_GATEWAY"
+    ],
+    "optionalUnavailableAccepted": true,
+    "allAccessibleNamespacesMustBeScanned": true,
+    "mustRunImmediatelyBeforeFirstExternalWrite": true,
+    "localGateWriteBeforeExternalWrite": true
+  },
+  "route": {
+    "shareRoot": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs",
+    "requestRoot": "U:\\ProjectPortalRO\\requests",
+    "responseRoot": "U:\\ProjectPortalRO\\responses",
+    "readyPath": "U:\\ProjectPortalRO\\requests\\REQ_R18ZT1.ready.zip",
+    "uploadPath": "U:\\ProjectPortalRO\\requests\\REQ_R18ZT1.ready.zip.upload",
+    "processedPath": "U:\\ProjectPortalRO\\requests\\processed\\REQ_R18ZT1.ready.zip",
+    "persistentMappingMustRemain": true,
+    "createNew": true,
+    "sameDirectoryAtomicRename": true,
+    "automaticRetry": false
+  },
+  "collector": {
+    "responseFilePattern": "*.ready.zip",
+    "maximumTopLevelResponseFiles": 4096,
+    "maximumNewResponseCandidates": 16,
+    "maximumResponseZipBytes": 67108864,
+    "maximumResponseEntries": 16,
+    "maximumExtractedBytes": 67108864,
+    "maximumResultJsonBytes": 1048576,
+    "maximumStdoutJsonBytes": 1048576,
+    "clockSkewAllowanceSeconds": 60,
+    "expectedResponseState": "PASS_MAINTENANCE_PATCH",
+    "expectedPayloadPaths": [
+      "MAINTENANCE.stderr.txt",
+      "MAINTENANCE.stdout.txt",
+      "RESULT.json"
+    ],
+    "resultPayloadPath": "RESULT.json",
+    "stdoutPayloadPath": "MAINTENANCE.stdout.txt",
+    "resultRequestIdProperty": "requestId",
+    "resultStateProperty": "state",
+    "expectedResultState": "PASS_MAINTENANCE_PATCH",
+    "expectedJbodOutputRoot": "D:\\A2\\o\\ocv\\R18ZT1",
+    "partialExtractionRoot": "C:\\R18ZT1L3.partial",
+    "finalExtractionRoot": "C:\\R18ZT1L3",
+    "allowedAbsoluteLocalWriteRoots": [
+      "C:\\R18ZT1L3.partial",
+      "C:\\R18ZT1L3"
+    ],
+    "pollingAuthorized": false,
+    "completionCollectionAuthorized": false
+  },
+  "outputs": {
+    "invocationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PUBLICATION_INVOCATION_V3.json",
+    "applyIntentPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P3_APPLY_INTENT.json",
+    "publishGatePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT1V3_PUBLISH_GATE.json",
+    "publishGatePartialPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT1V3_PUBLISH_GATE.partial",
+    "collectionGatePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT1V3_LAUNCH_RESPONSE_GATE.json",
+    "collectionGatePartialPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT1V3_LAUNCH_RESPONSE_GATE.partial",
+    "collectionGateRecoveryPartialPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT1V3_LAUNCH_RESPONSE_GATE.recovery.partial"
+  }
+}

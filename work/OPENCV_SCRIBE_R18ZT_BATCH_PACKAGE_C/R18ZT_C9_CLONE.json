@@ -1,0 +1,47 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_package_c_v6_clone_gate_v9",
+  "checkedUtc": "2026-09-07T15:20:14.6251739Z",
+  "state": "PASS_R18ZT_PACKAGE_C_CLONE_LITERAL_GATE",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "utilityState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "rawUtilityGatePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C9_RAW.json",
+  "rawUtilityGateSha256": "1698F527BA33624086B9E567078C28DD8373B41EBD9C0DCC5CFA4DBCD743768A",
+  "rawUtilityGateBytes": 3572,
+  "builderCorrectionRemediationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C9_REMEDIATION.json",
+  "builderCorrectionRemediationSha256": "F3E48BD459522A09D450B1536F6CCE66F02EFB740C6E3A705F2681747A0EF264",
+  "packageCloneRemediationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PACKAGE_C_CLONE_REMEDIATION_V5.json",
+  "packageCloneRemediationSha256": "F8E8E6D61D630DDCC2AA72A592DA68802F81ACC6CBB8973732B3EA3DB36B3B11",
+  "publisherCloneRemediationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PUBLISHER_CLONE_REMEDIATION.json",
+  "publisherCloneRemediationSha256": "20A6A765A2E0B6353116FBE4B1048514D79CA8A3543D3031EE9B3E8093A4523A",
+  "sourceTemplatesGuardedBeforeGeneration": true,
+  "generatedArtifactsGuardedAfterGeneration": true,
+  "rawUtilityGateCheckedUtc": "2026-09-07T15:19:41.0408848Z",
+  "generatedArtifacts": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV6.ps1",
+      "sha256": "2E500CA245B9C633588BFB498AF7A164AF199CF62EDEAE5478B4C110417AF8C8",
+      "harnessCheckedUtc": "2026-09-07T15:20:11.2187223Z",
+      "wrapperCheckedUtc": "2026-09-07T15:20:12.1415976Z"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniqueness.ps1",
+      "sha256": "F4921DD9BEBBB0703439166B8E774A6D63449DE5725B4D4C0D2B16C30F198A5A",
+      "harnessCheckedUtc": "2026-09-07T15:20:13.7008203Z",
+      "wrapperCheckedUtc": "2026-09-07T15:20:14.6251739Z"
+    }
+  ],
+  "supersedes": {
+    "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_C8_CLONE.json",
+    "sha256": "64C23B2E3EEE4EE7382F53E6F628AC32E0CA77FA7759DE3B51A17598E6FB8EF5",
+    "reason": "BUILDER_V5_COLLISION_SCOPE_ASSUMPTION_NOT_EVIDENCE_BACKED"
+  },
+  "inheritedFrozenPayloadArtifactsUnchanged": true,
+  "publisherIncluded": false,
+  "publisherRequiresSeparatePostBuildCloneAndHarnessGate": true,
+  "violationCount": 0,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

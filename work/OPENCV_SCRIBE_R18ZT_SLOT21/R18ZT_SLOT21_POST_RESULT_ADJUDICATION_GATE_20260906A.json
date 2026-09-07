@@ -1,0 +1,419 @@
+{
+  "authority": {
+    "holdClearingAuthority": false,
+    "identityAuthority": false,
+    "operatorExactDecipheringFinishCriterionPassed": true,
+    "productionAuthority": false,
+    "publicationSelfAuthority": false
+  },
+  "builder": {
+    "path": "work/OPENCV_SCRIBE_R18ZT_SLOT21/Build-R18ZTSlot21PostResultAdjudication.py",
+    "pythonBytecodeWritesDisabled": true,
+    "sha256": "DAFC8410FD7A063B162F8B0927B57DD3289EC805C8973CEA9B4B6275199D23A1"
+  },
+  "classification": "DIAGNOSTIC_ONLY",
+  "currentEvidenceIsUnique": {
+    "ambiguityResolution": {
+      "closeImageFirstStrings": [
+        "13HFX135SUE3"
+      ],
+      "comparisons": [],
+      "equalTopHypothesisCount": 0,
+      "equalTopScoreStrings": [],
+      "rawCloseImageFirstStrings": [
+        "13HFX135SUE3"
+      ],
+      "reciprocalMarginApplied": false,
+      "reciprocalMarginMinimum": 0.02,
+      "state": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+      "topScoreTieAbsoluteTolerance": 1e-12
+    },
+    "candidateCount": 1,
+    "checksumState": "SCRIBE_M12_IMAGE_FIRST_CHECKSUM_VALID_REVIEW_ONLY",
+    "checksumValidRetainedHypothesisCount": 1,
+    "checksumVerifiedHypotheses": [
+      {
+        "channels": [
+          "BF"
+        ],
+        "checksumRole": "VERIFIED_IMAGE_FIRST_DIAGNOSTIC",
+        "directions": [
+          "FORWARD"
+        ],
+        "maximumSelectionScore": 0.9117836040446633,
+        "polarities": [
+          "DARK"
+        ],
+        "regions": [
+          "QUALIFIED_INSTALLED_ORIENTED_DETECTOR_INPUT"
+        ],
+        "string": "13HFX135SUE3"
+      }
+    ],
+    "passed": true
+  },
+  "decipheringFinish": {
+    "correctImageFirstCount": 1,
+    "criterion": "EXACT_IMAGE_FIRST_STRING_WITH_DEFENSIBLE_GENERIC_SUPPORT_AND_ZERO_WRONG_ACCEPTED",
+    "developmentAcceptedWrongCount": 0,
+    "exact": true,
+    "genericHoldRescues": [
+      {
+        "allCoveredRivalsOutside": true,
+        "appearanceFirst": "H",
+        "independentPhysicalLineageCount": 0,
+        "label": "H",
+        "mode": "COVERED_TAIL_CROSS_MODAL_RECIPROCAL_SUPPORT",
+        "originalDecision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+        "passed": true,
+        "position": 3,
+        "runStructureFirst": "X",
+        "topologyFirst": "H"
+      },
+      {
+        "allCoveredRivalsOutside": true,
+        "appearanceFirst": "X",
+        "independentPhysicalLineageCount": 2,
+        "label": "X",
+        "mode": "SPARSE_MULTI_LINEAGE_THREE_MODAL_RECIPROCAL_SUPPORT",
+        "originalDecision": "HOLD_SELECTED_LABEL_SPARSE",
+        "passed": true,
+        "position": 5,
+        "runStructureFirst": "X",
+        "topologyFirst": "X"
+      }
+    ],
+    "imageFirstString": "13HFX135SUE3",
+    "selectedChannel": "BF",
+    "selectedDirection": "FORWARD",
+    "selectedGlyphEnvelopePassed": true,
+    "selectedPolarity": "DARK",
+    "selectionScore": 0.9117836040446633,
+    "truth": "13HFX135SUE3",
+    "truthComparedOnlyAfterProviderResult": true,
+    "validationCaseCount": 1,
+    "wrongImageFirstAcceptedCount": 0
+  },
+  "executedRun": {
+    "analyzeImagesCallCount": 1,
+    "attemptCount": 8,
+    "attempts": [
+      {
+        "channel": "BF",
+        "direction": "FORWARD",
+        "envelopeDecision": "PASS_ALL_SELECTED_GLYPHS_ENVELOPED_OR_GENERICALLY_SUPPORTED",
+        "genericHoldRescuePositions": [
+          {
+            "label": "H",
+            "mode": "COVERED_TAIL_CROSS_MODAL_RECIPROCAL_SUPPORT",
+            "originalDecision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "position": 3
+          },
+          {
+            "label": "X",
+            "mode": "SPARSE_MULTI_LINEAGE_THREE_MODAL_RECIPROCAL_SUPPORT",
+            "originalDecision": "HOLD_SELECTED_LABEL_SPARSE",
+            "position": 5
+          }
+        ],
+        "heldPositions": [],
+        "imageFirstString": "13HFX135SUE3",
+        "polarity": "DARK",
+        "selectionScore": 0.9117836040446633,
+        "state": "EVALUATED"
+      },
+      {
+        "channel": "BF",
+        "direction": "REVERSE_180",
+        "envelopeDecision": "HOLD_ONE_OR_MORE_SELECTED_GLYPHS_NOT_ENVELOPED",
+        "genericHoldRescuePositions": [],
+        "heldPositions": [
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "E",
+            "position": 1
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "3",
+            "position": 2
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "H",
+            "position": 3
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "8",
+            "position": 5
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "E",
+            "position": 6
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "T",
+            "position": 7
+          },
+          {
+            "decision": "HOLD_SELECTED_LABEL_SPARSE",
+            "diagnosticLabel": "X",
+            "position": 8
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "0",
+            "position": 9
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "H",
+            "position": 10
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "E",
+            "position": 11
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "1",
+            "position": 12
+          }
+        ],
+        "imageFirstString": "E3HS8ETX0HE1",
+        "polarity": "DARK",
+        "selectionScore": 0.7340882264060611,
+        "state": "EVALUATED"
+      },
+      {
+        "channel": "BF",
+        "detail": "HOLD_SCRIBE_NOT_LOCALIZED",
+        "direction": "FORWARD",
+        "polarity": "BRIGHT",
+        "state": "HOLD_EVALUATION_REJECTED"
+      },
+      {
+        "channel": "BF",
+        "detail": "HOLD_SCRIBE_NOT_LOCALIZED",
+        "direction": "REVERSE_180",
+        "polarity": "BRIGHT",
+        "state": "HOLD_EVALUATION_REJECTED"
+      },
+      {
+        "channel": "DF",
+        "detail": "HOLD_SCRIBE_NOT_LOCALIZED",
+        "direction": "FORWARD",
+        "polarity": "DARK",
+        "state": "HOLD_EVALUATION_REJECTED"
+      },
+      {
+        "channel": "DF",
+        "detail": "HOLD_SCRIBE_NOT_LOCALIZED",
+        "direction": "REVERSE_180",
+        "polarity": "DARK",
+        "state": "HOLD_EVALUATION_REJECTED"
+      },
+      {
+        "channel": "DF",
+        "direction": "FORWARD",
+        "envelopeDecision": "HOLD_ONE_OR_MORE_SELECTED_GLYPHS_NOT_ENVELOPED",
+        "genericHoldRescuePositions": [
+          {
+            "label": "X",
+            "mode": "SPARSE_MULTI_LINEAGE_THREE_MODAL_RECIPROCAL_SUPPORT",
+            "originalDecision": "HOLD_SELECTED_LABEL_SPARSE",
+            "position": 5
+          }
+        ],
+        "heldPositions": [
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "H",
+            "position": 3
+          },
+          {
+            "decision": "HOLD_ALTERNATIVE_LABEL_NOT_DEEP_INSIDE_ENVELOPE",
+            "diagnosticLabel": "4",
+            "position": 12
+          }
+        ],
+        "imageFirstString": "13HFX135SUE4",
+        "polarity": "BRIGHT",
+        "selectionScore": 0.8646494432099159,
+        "state": "EVALUATED"
+      },
+      {
+        "channel": "DF",
+        "direction": "REVERSE_180",
+        "envelopeDecision": "HOLD_ONE_OR_MORE_SELECTED_GLYPHS_NOT_ENVELOPED",
+        "genericHoldRescuePositions": [
+          {
+            "label": "X",
+            "mode": "SPARSE_MULTI_LINEAGE_THREE_MODAL_RECIPROCAL_SUPPORT",
+            "originalDecision": "HOLD_SELECTED_LABEL_SPARSE",
+            "position": 8
+          }
+        ],
+        "heldPositions": [
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "E",
+            "position": 1
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "3",
+            "position": 2
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "H",
+            "position": 3
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "8",
+            "position": 5
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "E",
+            "position": 6
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "T",
+            "position": 7
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "0",
+            "position": 9
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "H",
+            "position": 10
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "E",
+            "position": 11
+          },
+          {
+            "decision": "HOLD_OUTSIDE_ALL_ENFORCEABLE_ENVELOPES",
+            "diagnosticLabel": "1",
+            "position": 12
+          }
+        ],
+        "imageFirstString": "E3HS8ETX0HE1",
+        "polarity": "BRIGHT",
+        "selectionScore": 0.7246115556762248,
+        "state": "EVALUATED"
+      }
+    ],
+    "directStructuralEvaluatorCallsByHarness": 0,
+    "orderedAttemptKeysExact": true,
+    "providerRerunByThisAdjudication": false,
+    "providerRunCount": 1,
+    "retainedHypothesisCount": 4,
+    "retainedKeysEqualEvaluatedKeys": true,
+    "retryPerformed": false
+  },
+  "holdsAndAuthority": {
+    "ambiguityStateCleared": false,
+    "coverageHoldCleared": false,
+    "eligibleIdentity": false,
+    "identityAccepted": false,
+    "legacyAmbiguityStatePreserved": true,
+    "missingBodyReferenceLabels": "IOVY",
+    "onlyResultHoldRowIsGlobalReferenceCoverage": true,
+    "productionEligible": false,
+    "providerActivationAuthorized": false,
+    "publicationAuthorizedByThisGate": false,
+    "resultHoldsPreserved": [
+      {
+        "code": "SCRIBE_REFERENCE_COVERAGE_HOLD",
+        "detail": "The frozen reference set does not cover every generic uppercase body label."
+      }
+    ],
+    "reviewOnly": true,
+    "trainingEligible": false,
+    "xmlEligible": false
+  },
+  "invariants": {
+    "executedGateModified": false,
+    "executedResultModified": false,
+    "externalAccessPerformed": false,
+    "providerExecutedByThisAdjudication": false,
+    "providerRerunAuthorized": false,
+    "publicationPerformed": false,
+    "truthOrChecksumUsedForSelection": false,
+    "wrongAccepted": false
+  },
+  "legacyStateAdjudication": {
+    "cause": {
+      "applyResultWritesResultStateOnlyOnResolverFailure": true,
+      "consequence": "A pre-existing legacy result state can remain unchanged when the reciprocal ambiguity resolver passes; that stale state is not evidence of multiple current valid strings.",
+      "legacyEnforcerRunsBeforeAmbiguityResolutionIsRecorded": true,
+      "resolveThenEnforceWritesResultStateOnlyOnResolverFailure": true,
+      "resolverPassStateNormalizerPresent": false
+    },
+    "executedGateOnlyGlobalReferenceCoverageHoldField": false,
+    "executedGateStatePreserved": "HOLD_R18ZT_SLOT21_FINISH_CRITERIA_NOT_MET_NO_RETRY",
+    "explanation": "The reciprocal resolver and current checksum evidence are uniquely exact. The legacy M12 state survived because the frozen R18ZT integration normalizes result state only on resolver failure, not on resolver PASS. This adjudication records that mismatch without mutating or clearing it.",
+    "legacyM12AmbiguityStateCleared": false,
+    "resultStatePreserved": "SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID",
+    "staleRelativeToCurrentUniqueEvidence": true
+  },
+  "nextAction": "Use this exact read-only deciphering PASS as detector evidence. Preserve the coverage hold and legacy M12 state unless a separately frozen generic state-reconciliation change is authorized and regressed.",
+  "pins": [
+    {
+      "name": "runner",
+      "path": "work/OPENCV_SCRIBE_R18ZT_SLOT21/Run-R18ZTSlot21.py",
+      "sha256": "0EDCF71ACB454B0BF71B982A7172707D92E6B71373E9F6FA0DD8BC61AC9F667F"
+    },
+    {
+      "name": "provider",
+      "path": "work/OPENCV_SCRIBE_R18ZT/ArgosOpenCvScribeV1R18ZT.py",
+      "sha256": "AEF048D3CCEAF378A9FF43D5844DD1A28431E662F5BC54AFF384C4DB73A2C793"
+    },
+    {
+      "name": "developmentGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT/R18ZT_DEVELOPMENT_GATE_20260906C/R18ZT_GENERIC_HOLD_RESCUE_DEVELOPMENT_GATE.json",
+      "sha256": "D71C6356D7FD091274C80E25F1B840C537A1325939DB444AEB729A1E42866FAD"
+    },
+    {
+      "name": "preValidationGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_PRE_SLOT/R18ZT_PRE_VALIDATION_GATE_20260906A/R18ZT_PRE_VALIDATION_BOUNDED_REGRESSION_GATE.json",
+      "sha256": "A5054CB689B257819AD00B639FA9B55E2078B9193DDCB41776F7B39987606B52"
+    },
+    {
+      "name": "executedResult",
+      "path": "C:\\R18ZTS21A\\R18ZT_SLOT21_PROVIDER_RESULT.json",
+      "sha256": "0EFA3C24CE3B037DA0EB6683955673110A6D58F88EAA4ABD057CDAA5F73871ED"
+    },
+    {
+      "name": "executedGate",
+      "path": "C:\\R18ZTS21A\\R18ZT_SLOT21_VALIDATION_GATE.json",
+      "sha256": "E58D2F0967AADA1B50DE7903E83DA6235DFA786977D144880A116E4DF36E402D"
+    }
+  ],
+  "runtimeRestoration": {
+    "analyze": true,
+    "apply": true,
+    "enforce": true,
+    "evaluate": true,
+    "loader": true,
+    "revision": true,
+    "sharedLockAvailableAfterRun": true,
+    "validate": true
+  },
+  "schema": "argos_opencv_scribe_r18zt_slot21_post_result_adjudication_gate_v1",
+  "scope": "READ_ONLY_POST_RESULT_ADJUDICATION_NO_PROVIDER_RERUN",
+  "state": "PASS_R18ZT_SLOT21_EXACT_DECIPHERING_FINISH_POST_RESULT_ADJUDICATION"
+}

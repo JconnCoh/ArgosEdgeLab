@@ -1,0 +1,58 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_v7_clone_gate_v1",
+  "checkedUtc": "2026-09-07T18:35:31.1791576Z",
+  "state": "PASS_R18ZT_PUBLICATION_V7_CLONE_GATE",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "remediationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P7_REM.json",
+  "remediationBytes": 3248,
+  "remediationSha256": "39BAA7C36A9BAB7DF992518BECA019FF9E0E3A48C5F9804E02B49967029A0F9D",
+  "rawGatePath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P7_RAW.json",
+  "rawGateBytes": 3801,
+  "rawGateSha256": "26B299B7505B93A4A7BF9B5304EAC72A003F44BD949D64258BD4A9A5A67F73ED",
+  "rawGateCheckedUtc": "2026-09-07T18:32:59.1826401Z",
+  "sourceTemplatesGuardedBeforeRemediation": true,
+  "remediationFrozenBeforeGeneration": true,
+  "generatedArtifactsGuardedAfterCloneGate": true,
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V6.ps1",
+      "sourceSha256": "1A57D56955FF4307DD159060FC03D14EFF11C495C330BB2E2035E94A32A3EF4A",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V7.ps1",
+      "generatedBytes": 53642,
+      "generatedSha256": "1EDC3A7FA89B15BB057C070BBCC6070F698C1A22EBB37CE954FCC58CA807CFBD",
+      "postCloneHarnessCheckedUtc": "2026-09-07T18:35:11.7563543Z",
+      "postCloneWrapperCheckedUtc": "2026-09-07T18:35:12.7285633Z"
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV6.ps1",
+      "sourceSha256": "157326A42763D17C53A077592656BD41DB8D5CFBCB9BA09BF3B0C1F3F7B9052C",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV7.ps1",
+      "generatedBytes": 42677,
+      "generatedSha256": "27D8B08EA2411B9BC60F38310D8009913301297716D3BF5D86B15E70762E1909",
+      "postCloneHarnessCheckedUtc": "2026-09-07T18:35:15.1333131Z",
+      "postCloneWrapperCheckedUtc": "2026-09-07T18:35:16.4008034Z"
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV4.ps1",
+      "sourceSha256": "3BC1AED9C716FF5FF854CAB68E53A76CA386F3622559D0D65594CA9D701AB9F2",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV5.ps1",
+      "generatedBytes": 12165,
+      "generatedSha256": "31E4AD9C73CFEA5E42E16BD704581A27B9C5374D9898AF8F36B381E593557872",
+      "postCloneHarnessCheckedUtc": "2026-09-07T18:35:17.8396202Z",
+      "postCloneWrapperCheckedUtc": "2026-09-07T18:35:18.7416045Z"
+    }
+  ],
+  "pairCount": 3,
+  "violationCount": 0,
+  "supersedesWithdrawalPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P6_STALE_GATE_WITHDRAWAL.json",
+  "supersedesWithdrawalSha256": "770B40634DE8978F874B59B9603D54421E32E84B36846255490481373FD8199F",
+  "withdrawalAuditAddendumPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P6_WITHDRAWAL_AUDIT_ADDENDUM.json",
+  "withdrawalAuditAddendumSha256": "AA691F56F8BF5F9B0BD813D280F470F826139748F2DCEC9B8BE0AAE9B84DDBC6",
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "publicationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,121 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-06T04:18:05.6268989Z",
+  "state": "FROZEN_R18ZT_PACKAGE_C_RECOVERY_INTENT",
+  "requestId": "REQ_R18ZT1",
+  "bindingRecordSha256": "23F68B7A1C744E57508D89FE10B48ADF07C50E641EC70CBA1213EDE0388C5E86",
+  "builderSha256": "414999A30C0AF78657FECD9EE6C2EB6D0347A04BE8E3BFFD25D3D4994C28AC9C",
+  "incidentId": "R18R2_LIVE_SET_AND_TERMINAL_EVIDENCE_20260904",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {
+      "path": "",
+      "sha256": ""
+    },
+    "workflowReviewClearance": {
+      "path": "",
+      "sha256": ""
+    },
+    "classificationNote": "The matching signed R18R2 response was a launch PASS, not a terminal FAILED response. The later worker exit is pinned direct endpoint evidence and is not counted as a signed premise failure. Package B V3 failed only a frozen local harness gate, performed no target mutation, and is separately withdrawn; it does not add a signed or local live-premise failure to this incident."
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [
+      "START_ONE_OWNED_BACKGROUND_R18ZT_BATCH_EXECUTION_ENVELOPE_WORKER"
+    ],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "E070135E8C211F2869623553C04AE2DDE65244760FC60457356B2FEEEFEED4EB"
+    },
+    "installedConfigEvidence": {
+      "path": "work/OPENCV_SCRIBE_R18W4S21/R18W4S21_ROUTE_PINS.json",
+      "sha256": "D1CDD46C70BFF4003E46D35BFC77754F9A9A742E51CA14D5AEAD2377E75B1D5E"
+    },
+    "capabilityEvidence": {
+      "path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json",
+      "sha256": "381D3E9C4F17218DF37D8E8CE029853216E9BEA5A2FBDABC6AEB7861A29DC8A2"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+      "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"
+    },
+    "qualifiedAdminGate": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_SCRIBE_R18T/R18R2_POST_LAUNCH_DIRECT_OBSERVATION_SUPPORTING_RECORD.json",
+      "sha256": "69E4B77D0449D47B583C1CD1AD3F25B33066DB7689DE00B57D12AA334CFA042F"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "singleMutationAttemptScope": "LOCAL_PACKAGE_C_GATE_BUILD_TEST_AND_SIGN_ONLY_UNTIL_PUBLICATION_AUTHORITY_FOR_REQ_R18ZT1",
+    "externalMutationAttemptAuthorized": false,
+    "publicationAuthorized": false,
+    "automaticRetryAuthorized": false
+  },
+  "scope": {
+    "revision": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906C",
+    "runnerRevision": "R18ZT_EXISTING_ORIENTED_CROPS_PUBLIC_PROVIDER_BATCH_20260906C",
+    "requestId": "REQ_R18ZT1",
+    "workRoot": "D:/A2/w/ocv/R18ZT1",
+    "outputRoot": "D:/A2/o/ocv/R18ZT1",
+    "proposalAlias": "D:/A2/w/ocv/R18ZT1/p",
+    "canonicalProposalRoot": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals",
+    "installedLauncher": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV02_R18ZT1.ps1",
+    "allExistingQualifiedOrientedCropPairs": true,
+    "frozenOcrScienceChanged": false,
+    "stopAtSignedUnpublished": true
+  },
+  "authority": {
+    "localPackagePreparationAndSigningAuthorized": true,
+    "publicationAuthorized": false,
+    "maximumPublicationsAuthorizedByThisIntent": 0,
+    "automaticRetryAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "automaticReferenceAdmissionAuthorized": false,
+    "automaticHoldClearanceAuthorized": false,
+    "providerActivationAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "sourceMutationOrDeletionAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

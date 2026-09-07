@@ -1,0 +1,36 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_withdrawal_v1",
+  "createdUtc": "2026-09-07T17:21:37.0917439Z",
+  "state": "WITHDRAWN_R18ZT_PUBLICATION_P4_INVALID_GATE_FALLBACK_DEFECT",
+  "requestId": "REQ_R18ZT1",
+  "withdrawnRevision": "V4/P4",
+  "cause": "Collect-R18ZT1LaunchResponseV4.ps1 caught every validation failure for an existing publication gate and converted the invalid existing gate to an absent gate, allowing apply-intent recovery outside the authorized missing-gate recovery case.",
+  "requiredCorrection": "A missing publication gate may use the durable apply-intent recovery path. If the publication gate path exists, every read, hash, schema, binding, semantic, or timestamp failure must hard-stop without fallback.",
+  "withdrawnArtifacts": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V4.ps1",
+      "sha256": "A0269B1156387003543C4E6F39CD8E48E9BCAA7549493E9AC12BC032270B7970"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV4.ps1",
+      "sha256": "22DA67B3DD9487E5E189D25547337CDF3D99CB8E524E8D6F3D0DB834C3A58598"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PUBLICATION_INVOCATION_V4.json",
+      "sha256": "A89CE8760F10BD9AA3DD0631C83746740BB7F411D7B205B670636D9FB2C3AE94"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_P4_TOOL.json",
+      "sha256": "B1125D9F3F9B5E528349E75949371435B7C8FA1E5FA3DB520166ADB85086DEE5"
+    }
+  ],
+  "publicationPerformed": false,
+  "externalAccessPerformed": false,
+  "publisherApplyExecuted": false,
+  "collectorExecuted": false,
+  "futureReuseAllowed": false,
+  "successorParentAllowed": false,
+  "expectedSuccessor": "V5/P5",
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

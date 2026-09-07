@@ -1,0 +1,121 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R18ZT_BATCH_PACKAGE_C_CLONE_REMEDIATION_20260906D",
+  "state": "FROZEN_PRE_GENERATION",
+  "requestId": "REQ_R18ZT1",
+  "semanticPackageRevision": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906C",
+  "preGenerationOrder": {
+    "thisArtifactCreatedBeforeEveryGeneratedPath": true,
+    "abandonedScaffoldPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PACKAGE_C_PRE_REMEDIATION_SCAFFOLD_ABANDONMENT.json",
+    "abandonedScaffoldBytes": 6518,
+    "abandonedScaffoldSha256": "E8B00517F6B7E767E972324D58A78C1CB3A82045E4097CD9E33D3619ABC87069",
+    "abandonedScaffoldState": "ABANDONED_R18ZT_PACKAGE_C_PRE_REMEDIATION_SCAFFOLD_NON_REUSABLE_NON_PARENT"
+  },
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Invoke-R18ZTBatchLaunch.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Invoke-R18ZTBatchLaunchV3.ps1",
+      "sourceGuardSha256": "4CB92574D45A36F819E565DE04482AE9CE79430E3B1C93F2FD621C9EF10549A2",
+      "sourceHarnessDisposition": {
+        "observedState": "FAIL_ARGOS_POWERSHELL_HARNESS_SAFETY",
+        "violationCode": "MUTATION_BEFORE_PREFLIGHT_RETURN",
+        "violationLine": 625,
+        "metadataOnly": true,
+        "targetExecuted": false,
+        "expectedFailurePreserved": true,
+        "rerunAllowed": false,
+        "mayPassByDeclaration": false,
+        "mayBePackageParent": false
+      },
+      "generatedHarnessRequirement": {
+        "requiredStateBeforeFreeze": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+        "officialGateRunsSoFar": 0,
+        "gateExecutedByThisManifest": false
+      },
+      "rootRules": [
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\AFCV1","generatedRoot":"D:\\AFCV1","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\O2D5","generatedRoot":"D:\\O2D5","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\R18ZT1JG","generatedRoot":"C:\\R18ZT1C3JG","disposition":"REPLACED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Build-R18ZTBatchRequest.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV3.ps1",
+      "sourceGuardSha256": "882679584A018B93DA351A9481FE8C18EC194782EA16FABCFF4F1C881148468C",
+      "sourceHarnessDisposition": {
+        "expectedStateBeforeGeneratedGuard": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+        "observedState": "NOT_RUN_BY_THIS_PRE_GENERATION_MANIFEST",
+        "mustRemainSeparateFromFailedLauncherSourceGuard": true
+      },
+      "generatedHarnessRequirement": {
+        "requiredStateBeforeFreeze": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+        "officialGateRunsSoFar": 0,
+        "gateExecutedByThisManifest": false
+      },
+      "rootRules": [
+        {"sourceRoot":"C:\\ArgosPy313","generatedRoot":"C:\\ArgosPy313","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\R18ZT_PROPOSALS_NOT_ACCESSED","generatedRoot":"C:\\R18ZT1C3_PROPOSALS_NOT_ACCESSED","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1P","generatedRoot":"C:\\R18ZT1C3P","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1V","generatedRoot":"C:\\R18ZT1C3V","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1T","generatedRoot":"C:\\R18ZT1C3T","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1TW","generatedRoot":"C:\\R18ZT1C3TW","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1TO","generatedRoot":"C:\\R18ZT1C3TO","disposition":"REPLACED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Run-R18ZTBatchExecutionEnvelope.py",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Run-R18ZTBatchExecutionEnvelopeV2.py",
+      "sourceGuardSha256": "29271D74CF9225BC0E5B0AA3ED459864B5F49E3BF852B4294FB5743F95DF86E2",
+      "semanticReplacement": {
+        "source": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906B",
+        "generated": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906C",
+        "disposition": "REPLACED"
+      },
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Test-R18ZTBatchExecutionEnvelope.py",
+      "generated": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZTBatchExecutionEnvelopeV2.py",
+      "sourceGuardSha256": "28C523561580355F9FB30C0E82FB532FB2974A898DBEAB28BF0784B7151C3652",
+      "expectedByteRelationship": "BYTE_FOR_BYTE_COPY_TESTING_THE_FRESH_ENVELOPE_PATH",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}
+      ]
+    }
+  ],
+  "globalRules": {
+    "freshPackageNamespace": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C",
+    "withdrawnPackageNamespace": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B",
+    "requestId": "REQ_R18ZT1",
+    "requestIdPreviouslySigned": false,
+    "requestIdPreviouslyPublished": false,
+    "requestIdPreviouslyExecuted": false,
+    "productionWorkRoot": "D:\\A2\\w\\ocv\\R18ZT1",
+    "productionOutputRoot": "D:\\A2\\o\\ocv\\R18ZT1",
+    "productionProposalAlias": "D:\\A2\\w\\ocv\\R18ZT1\\p",
+    "canonicalProposalRoot": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+    "productionInstalledLauncher": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R18ZT1.ps1",
+    "freshJunctionGateRoot": "C:\\R18ZT1C3JG",
+    "freshTestRoot": "C:\\R18ZT1C3T",
+    "freshTestWorkRoot": "C:\\R18ZT1C3TW",
+    "freshTestOutputRoot": "C:\\R18ZT1C3TO",
+    "freshStageRoot": "C:\\R18ZT1C3P",
+    "freshVerifyRoot": "C:\\R18ZT1C3V",
+    "freshSentinelRoot": "C:\\R18ZT1C3_PROPOSALS_NOT_ACCESSED",
+    "reusableConfigurationPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_BATCH_CONFIGURATION.json",
+    "reusableImportSmokeTestPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Test-R18ZTPackagedImportClosure.py",
+    "publisherExcludedUntilSeparatePostBuildPublicationToolingGate": true,
+    "hashLiteralsNeverMechanicallyRewritten": true,
+    "generatedFilesMayNotBeFrozenBeforeTheirExactGuardsPass": true,
+    "gatesRunByThisManifest": false,
+    "testsRunByThisManifest": false,
+    "externalAccessPerformed": false,
+    "targetExecuted": false
+  }
+}

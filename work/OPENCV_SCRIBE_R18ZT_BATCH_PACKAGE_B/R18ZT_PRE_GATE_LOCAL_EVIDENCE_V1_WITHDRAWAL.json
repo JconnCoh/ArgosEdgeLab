@@ -1,0 +1,41 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_pre_gate_local_evidence_withdrawal_v1",
+  "state": "WITHDRAWN_R18ZT_PRE_GATE_LOCAL_EVIDENCE_V1_NON_REUSABLE_NON_PARENT",
+  "requestId": "REQ_R18ZT1",
+  "reason": "The first PASS-labeled path gate transcribed the inherited R18T path-gate hash incorrectly. It was caught before consumption, signing, publication, testing, or external mutation. The first raw/custom clone gates correctly described builder B01B, but are superseded because the DRAFT builder must point to fresh V2 gate filenames. All three artifacts are preserved as non-reusable evidence and cannot parent the signed package.",
+  "withdrawn": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PATH_PLAN_GATE.json",
+      "bytes": 10395,
+      "sha256": "9DBB9543DD86A31F079FCE24AC2FA5EBC1AFCF7DF0981BF9DDF6B69DBE65A3F4",
+      "preservedState": "PASS_R18ZT_PACKAGE_B_PATH_BUDGET",
+      "defect": "INHERITED_R18T_PATH_GATE_HASH_TRANSCRIPTION_ERROR_8DDD_INSTEAD_OF_98B26B8A"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PACKAGE_B_CLONE_LITERAL_RAW_GATE.json",
+      "bytes": 4290,
+      "sha256": "9BADC500F8B887CA233F95C2E37E02269BA5CB9FEBBF909CED2C546F4973D2B1",
+      "preservedState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+      "defect": "NONE_SUPERSEDED_ONLY_BY_DRAFT_BUILDER_GATE_FILENAME_CHANGE"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PACKAGE_B_CLONE_GATE.json",
+      "bytes": 1945,
+      "sha256": "B8B82E9CB5B360EC0EE1E034A4A2C2CDBDAF1265A5880A905D3BF3BC0CA94A41",
+      "preservedState": "PASS_R18ZT_PACKAGE_B_CLONE_LITERAL_GATE",
+      "defect": "NONE_SUPERSEDED_ONLY_BY_DRAFT_BUILDER_GATE_FILENAME_CHANGE"
+    }
+  ],
+  "successors": [
+    "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PATH_PLAN_GATE_V2.json",
+    "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PACKAGE_B_CLONE_LITERAL_RAW_GATE_V2.json",
+    "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PACKAGE_B_CLONE_GATE_V2.json"
+  ],
+  "gateCommandsNonPass": 0,
+  "combinedTestExecuted": false,
+  "signatureCreated": false,
+  "publicationPerformed": false,
+  "externalMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,123 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_package_c_scaffold_abandonment_v1",
+  "createdUtc": "2026-09-06T03:41:50.8997288Z",
+  "state": "ABANDONED_R18ZT_PACKAGE_C_PRE_REMEDIATION_SCAFFOLD_NON_REUSABLE_NON_PARENT",
+  "requestId": "REQ_R18ZT1",
+  "semanticPackageRevisionAttempted": "R18ZT_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260906C",
+  "cause": "Package C generated scaffold files were created before a truthful fresh pre-generation clone-remediation artifact. The ordering violates the mandatory clone-remediation-before-generation contract, so every generated scaffold is abandoned without gate execution and a remediation-first successor is required.",
+  "existingPackageFailure": {
+    "failureCount": 3,
+    "maximumAllowedFailures": 5,
+    "failureClass": "MUTATION_BEFORE_PREFLIGHT_RETURN",
+    "failedLauncherPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Invoke-R18ZTBatchLaunch.ps1",
+    "failedLauncherSha256": "4CB92574D45A36F819E565DE04482AE9CE79430E3B1C93F2FD621C9EF10549A2",
+    "failedLine": 625,
+    "metadataOnly": true,
+    "targetExecuted": false,
+    "packageCOfficialGateAttempted": false,
+    "failureCountIncrementedByThisAbandonment": false
+  },
+  "copiedFrozenAliasesPreservedByteForByte": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/MAINTENANCE_DEFINITION_V3.json",
+      "bytes": 11012,
+      "sha256": "3BAE55419BF753F35691E6E21AFD987103F890444DA3B906DF320CA11D470DF6",
+      "authoritativeOriginalPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/MAINTENANCE_DEFINITION_V2.json",
+      "disposition": "NON_CURRENT_ALIAS_PRESERVED_UNMODIFIED_NOT_A_SUCCESSOR"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_BATCH_PACKAGE_DESIGN_V4.json",
+      "bytes": 8535,
+      "sha256": "68FE5BBEEC2ECEB804065CE6EE742CDBD71D5618EEDE2E567161E2121BCA2A5D",
+      "authoritativeOriginalPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_BATCH_PACKAGE_DESIGN_V3.json",
+      "disposition": "NON_CURRENT_ALIAS_PRESERVED_UNMODIFIED_NOT_A_SUCCESSOR"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_FROZEN_PACKAGE_BINDINGS_V4.json",
+      "bytes": 13483,
+      "sha256": "FF7B2C75B0A3C7DD29A5249D92E947424DDB407243B52C5B04FAC36DCF9AE3F1",
+      "authoritativeOriginalPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_FROZEN_PACKAGE_BINDINGS_V3.json",
+      "disposition": "NON_CURRENT_ALIAS_PRESERVED_UNMODIFIED_NOT_A_SUCCESSOR"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PACKAGE_C_CLONE_REMEDIATION_V3.json",
+      "bytes": 3577,
+      "sha256": "423C8C9EA538D6F371FAC8070259742CD577570DC6C8B33FD8EB1B509A30630C",
+      "authoritativeOriginalPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PACKAGE_B_CLONE_REMEDIATION_V2.json",
+      "disposition": "NON_CURRENT_ALIAS_PRESERVED_UNMODIFIED_NOT_A_PREGENERATION_REMEDIATION"
+    }
+  ],
+  "abandonedGeneratedOrCopiedScaffolds": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Invoke-R18ZTBatchLaunchV2.ps1",
+      "bytes": 79719,
+      "sha256": "C09D796565262B64391AD16B5A21DB577507DFC2F8ACD54740B65ED087A0181D",
+      "disposition": "ABANDONED_DRAFT_NON_REUSABLE_NON_PARENT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV2.ps1",
+      "bytes": 67846,
+      "sha256": "882679584A018B93DA351A9481FE8C18EC194782EA16FABCFF4F1C881148468C",
+      "disposition": "ABANDONED_DRAFT_NON_REUSABLE_NON_PARENT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Run-R18ZTBatchExecutionEnvelope.py",
+      "bytes": 22475,
+      "sha256": "A1377797A502292CF9C11C3CABCDC371B7469E536515FD97F222E3A4894E055C",
+      "disposition": "ABANDONED_DRAFT_NON_REUSABLE_NON_PARENT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZTBatchExecutionEnvelope.py",
+      "bytes": 12082,
+      "sha256": "28C523561580355F9FB30C0E82FB532FB2974A898DBEAB28BF0784B7151C3652",
+      "disposition": "ABANDONED_PRE_REMEDIATION_COPY_NON_PARENT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PAYLOAD_MANIFEST.json",
+      "bytes": 13087,
+      "sha256": "FEDB82DDF78299D90780785BC34DE74C1A7438DB53F50400284BF617954EE127",
+      "disposition": "ABANDONED_DRAFT_NON_REUSABLE_NON_PARENT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_BATCH_CONFIGURATION.json",
+      "bytes": 2620,
+      "sha256": "35AA8D910AEB2A3DD68BB8FF06D396FD2E4F9702660DAEA067A1DDC242F2918C",
+      "authoritativeOriginalPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_BATCH_CONFIGURATION.json",
+      "disposition": "ABANDONED_COPY_ORIGINAL_PATH_REMAINS_AUTHORITY"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZTPackagedImportClosure.py",
+      "bytes": 4425,
+      "sha256": "5B24FE4D48E2A015D3FB8F59067450906ABA05BA3A0D050128D62D1D6CA98E7D",
+      "authoritativeOriginalPath": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Test-R18ZTPackagedImportClosure.py",
+      "disposition": "ABANDONED_COPY_ORIGINAL_PATH_REMAINS_AUTHORITY"
+    }
+  ],
+  "successorRequirements": {
+    "preGenerationRemediationMustExistFirst": true,
+    "freshGeneratedLauncher": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Invoke-R18ZTBatchLaunchV3.ps1",
+    "freshGeneratedBuilder": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV3.ps1",
+    "freshGeneratedEnvelope": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Run-R18ZTBatchExecutionEnvelopeV2.py",
+    "freshGeneratedEnvelopeTest": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZTBatchExecutionEnvelopeV2.py",
+    "freshPayloadManifest": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_PAYLOAD_MANIFEST_V2.json",
+    "freshMaintenanceDefinition": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/MAINTENANCE_DEFINITION_V4.json",
+    "freshPackageDesign": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_BATCH_PACKAGE_DESIGN_V5.json",
+    "freshBinding": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_FROZEN_PACKAGE_BINDINGS_V5.json",
+    "freshLocalRootsPrefix": "C:\\R18ZT1C3",
+    "productionRequestAndRootsRemainUnchanged": true
+  },
+  "actions": {
+    "gatesRun": false,
+    "testsRun": false,
+    "signatureCreated": false,
+    "publicationPerformed": false,
+    "externalAccessPerformed": false,
+    "targetExecuted": false,
+    "filesystemDeletionPerformed": false,
+    "sourceImageAccessPerformed": false,
+    "taskOrProcessActionPerformed": false
+  },
+  "mayBePackageParent": false,
+  "mayBePublicationParent": false,
+  "mayBeTemplate": false
+}

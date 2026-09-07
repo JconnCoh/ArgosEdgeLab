@@ -1,0 +1,175 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_publication_tooling_gate_plan_v2",
+  "state": "DRAFT_PLAN_AWAITING_FINAL_PACKAGE_BINDING_AND_GATES",
+  "lifecycle": "DRAFT",
+  "requestId": "REQ_R18ZT1",
+  "createdUtc": "2026-09-06T00:00:00Z",
+  "scope": "LOCAL_PUBLICATION_AND_ONE_SIGNED_LAUNCH_RESPONSE_COLLECTION_ONLY",
+  "currentDrafts": {
+    "publisher": {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Publish-R18ZT1V2.ps1",
+      "bytes": 42969,
+      "sha256": "B75B5BF38A6D71562DC8E9853958DBC0E67CA60B295C53BEE7D094954649EB67"
+    },
+    "collector": {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Collect-R18ZT1LaunchResponseV2.ps1",
+      "bytes": 24334,
+      "sha256": "9C8837782406FFE74AA18722A52492F99CB40BD86E36E06C26801D64DEEA4B70"
+    },
+    "invocation": {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/R18ZT_PUBLICATION_INVOCATION_V2.json",
+      "state": "DRAFT_PENDING_FRESH_FINAL_PACKAGE_AND_PUBLICATION_GATES_DO_NOT_RUN"
+    },
+    "predecessorPublisher": {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_B/Publish-R18ZT1.ps1",
+      "disposition": "UNCHANGED_PREDECESSOR_NOT_A_PUBLICATION_PARENT"
+    }
+  },
+  "requiredFinalizationOrder": [
+    "FINALIZE_AND_FREEZE_THE_FRESH_PACKAGE_BINDING_REQUEST_ZIP_AND_PACKAGE_ROUTE_PATH_SCIENCE_SIGNED_UNPUBLISHED_GATES",
+    "FREEZE_EXACT_PUBLISHER_AND_COLLECTOR_BYTES",
+    "CREATE_COMPLETE_LITERAL_ROOT_REMEDIATION_MANIFESTS_AND_PASS_SOURCE_POST_CLONE_GATES_FOR_BOTH_TOOLS",
+    "PASS_WINDOWS_POWERSHELL_5_1_PARSE_WRAPPER_AND_HARNESS_SAFETY_FOR_BOTH_TOOLS",
+    "FREEZE_A_READ_ONLY_FOUR_SCOPE_COLLISION_SCANNER_AND_ITS_FILE_BACKED_INVOCATION",
+    "CREATE_A_PREACTION_CONTRACT_THAT_PINS_THE_PUBLISHER_HASH_BUT_DOES_NOT_PIN_THE_INVOCATION_FILE",
+    "CREATE_A_PUBLICATION_TOOLING_GATE_BINDING_PUBLISHER_COLLECTOR_CLONE_HARNESS_PS51_AND_NO_HASH_CYCLE",
+    "FILL_EVERY_PENDING_PATH_BYTE_HASH_STATE_AND_PROPERTY_MAPPING_IN_THE_INVOCATION",
+    "SET_INVOCATION_TO_FROZEN_ONLY_AFTER_ALL_REFERENCED_BYTES_ARE_FINAL",
+    "COMMIT_AND_PUSH_THEN_REQUIRE_EXACT_BRANCH_CLEAN_LOCAL_HEAD_EQUALS_RECORDED_ORIGIN_TIP_WITHOUT_FETCH",
+    "RUN_ONE_READ_ONLY_PUBLISHER_PREFLIGHT",
+    "RUN_ONE_PUBLISHER_APPLY_WITH_CREATE_NEW_UPLOAD_AND_SAME_DIRECTORY_ATOMIC_RENAME",
+    "RUN_ONE_BOUNDED_SIGNED_LAUNCH_RESPONSE_COLLECTION_SNAPSHOT"
+  ],
+  "publisherMechanicalRequirements": {
+    "windowsPowerShell51DesktopExact": true,
+    "runtimeSelfHashBoundByInvocation": true,
+    "futureCommitHashEmbedded": false,
+    "gitRuntimeGate": "EXACT_BRANCH_AND_CLEAN_LOCAL_HEAD_EQUALS_RECORDED_ORIGIN_TIP_NO_FETCH",
+    "preactionHashCycle": false,
+    "preactionMustPinPublisherRuntimeHash": true,
+    "invocationPathFixedBesidePublisher": true,
+    "bindingMustMatchExactInvocationSchemaStateAndHash": true,
+    "withdrawnBindingSchemasRejected": [
+      "argos_opencv_scribe_r18zt_package_bindings_v1",
+      "argos_opencv_scribe_r18zt_package_bindings_v2"
+    ],
+    "bindingRecordHashRequiredIn": [
+      "FINAL_PACKAGE",
+      "COMPLETE_ROUTE",
+      "PATH_BUDGET",
+      "SCIENCE",
+      "SIGNED_UNPUBLISHED",
+      "PUBLICATION_TOOLING"
+    ],
+    "semanticGatesRequired": [
+      "FINAL_PACKAGE",
+      "COMPLETE_ROUTE",
+      "PATH_BUDGET",
+      "SCIENCE",
+      "SIGNED_UNPUBLISHED",
+      "PUBLICATION_TOOLING"
+    ],
+    "signedChangeExactFieldSet": [
+      "allowCreate",
+      "approvedPredecessorSha256",
+      "destination",
+      "installedSha256",
+      "source"
+    ],
+    "signedChangeSource": "payload/Invoke-R18ZTBatchLaunch.ps1",
+    "signedChangeDestination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R18ZT1.ps1",
+    "signedRequestReviewOnly": true,
+    "maximumPublications": 1,
+    "retryAuthorized": false,
+    "freshCollisionScopes": [
+      "LIVE_REQUEST_ROOT",
+      "LIVE_PROCESSED_ARCHIVE",
+      "GATEWAY_REQUEST_INVENTORY",
+      "LOCAL_PUBLICATION_ARCHIVE"
+    ],
+    "freshCollisionScanMustBeLastReadBeforeFirstWrite": true,
+    "gatewayInventoryUnavailableAccepted": false,
+    "firstWrite": "FILEMODE_CREATE_NEW_TO_EXACT_UPLOAD_LEAF",
+    "commitWrite": "SAME_DIRECTORY_RENAME_UPLOAD_TO_READY",
+    "cleanupOrAutomaticRetryLoop": false
+  },
+  "scienceMechanicalRequirements": {
+    "adjudicationSha256": "E526EDF07597D3F71A52FABAD7E93941A0FE3CD34003B6F0595C9D3992234A7D",
+    "imageFirstString": "13HFX135SUE3",
+    "selectedChannel": "BF",
+    "selectedPolarity": "DARK",
+    "selectedDirection": "FORWARD",
+    "selectionScore": 0.9117836040446633,
+    "truthComparedOnlyAfterProviderResult": true,
+    "providerRunCount": 1,
+    "analyzeImagesCallCount": 1,
+    "normalHypothesisAttemptCount": 8,
+    "directStructuralEvaluatorCallsByHarness": 0,
+    "providerRerunByAdjudication": false,
+    "runtimeRestorationFieldsAllTrue": [
+      "analyze",
+      "apply",
+      "enforce",
+      "evaluate",
+      "loader",
+      "revision",
+      "validate",
+      "sharedLockAvailableAfterRun"
+    ],
+    "developmentReferenceQueries": 475,
+    "developmentExactFoldCount": 49,
+    "developmentAcceptedCorrect": 312,
+    "developmentAcceptedWrong": 0,
+    "k25vDiagnosticHoldPreserved": true,
+    "k25vWrongPositions2And4NotRescued": true,
+    "coverageHoldPreserved": "SCRIBE_REFERENCE_COVERAGE_HOLD",
+    "eligibleIdentity": false,
+    "identityAcceptanceAuthorized": false
+  },
+  "collectorMechanicalRequirements": {
+    "windowsPowerShell51DesktopExact": true,
+    "separateFromPublisher": true,
+    "publisherGateMustBindCurrentInvocationPublisherAndCollectorHashes": true,
+    "oneBoundedTopLevelResponseSnapshot": true,
+    "polling": false,
+    "sleep": false,
+    "maximumTopLevelResponseFiles": 256,
+    "maximumNewResponseCandidates": 16,
+    "matchingRequestIdCount": 1,
+    "expectedSourceRole": "JBOD",
+    "expectedEndpointState": "PASS_MAINTENANCE_PATCH",
+    "expectedSignerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "responseVerifierSha256": "4AF5901A7B9DFFF5A4DAF128960173D67501ABF6FF87C586BA526643B1C1449C",
+    "responseSignerCertificateSha256": "5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B",
+    "expectedLaunchState": "PASS_R18ZT_BATCH_WORKER_STARTED",
+    "launchOnly": true,
+    "completionClaimed": false,
+    "taskOrProcessQuery": false,
+    "outputTreeEnumeration": false,
+    "responseArchiveMutation": false,
+    "partialExtractionRetainedOnFailure": true,
+    "retryAuthorized": false
+  },
+  "deferredFollowup": {
+    "ownedByPublisherOrLaunchCollector": false,
+    "notBeforeHoursAfterLaunch": 12,
+    "singleExactLeafSet": [
+      "LAUNCH.json",
+      "RUNNING.json",
+      "COMPLETE.json",
+      "FAILURE.json"
+    ],
+    "treeEnumeration": false,
+    "polling": false,
+    "note": "JBOD runtime, not laptop runtime, governs completion; the later probe remains one bounded exact-leaf check rather than busy polling."
+  },
+  "currentExecution": {
+    "testsRun": false,
+    "signingPerformed": false,
+    "publicationPerformed": false,
+    "externalReadsPerformed": false,
+    "shareAccessPerformed": false,
+    "jbodAccessPerformed": false,
+    "mutationsPerformedOutsideNewLocalDraftFiles": false
+  }
+}
