@@ -24,6 +24,44 @@ report the exact additional scope required; do not expand the work silently.
 Promotion or publication is a separate operation requiring an explicit
 `PROMOTE` or `PUBLISH` instruction and the applicable full gates.
 
+## Highest-priority runaway-work stop-loss
+
+For Windows/JBOD, portal, recovery, packaging, launcher, wrapper, and harness
+work, complexity is itself a failure signal. Before the first implementation
+edit, identify the smallest product change and estimate the new executable
+lines, executable files, local result roots, and worst-case local bytes. Count
+ignored and untracked files; `git status` is not evidence of bounded scope.
+
+The default package implementation is the last qualified working predecessor,
+byte-for-byte except for the requested payload delta and mechanically required
+manifest/hash updates. Do not create or replace an endpoint worker, queue,
+wrapper, launcher, transport, recovery framework, or general-purpose harness
+to carry a detector/configuration change. Such infrastructure work requires a
+separate operator instruction naming the component and approving a line/file/
+byte estimate before implementation.
+
+Stop before further editing, testing, delegation, or namespace creation when
+any one of these limits is reached or projected:
+
+- three failed local draft/rehearsal revisions for the same objective;
+- 750 net-new executable lines or six net-new executable files;
+- three accumulated local rehearsal/result roots or 500 MiB of non-image
+  infrastructure artifacts; or
+- support/recovery code larger than the product correction it exists to carry.
+
+An operator-supplied package-attempt maximum is a ceiling, not a budget to
+consume, and it never overrides these earlier limits. A package attempt count
+of zero does not make unlimited local rehearsal revisions free. After the first
+failure, reassess whether the architecture is still the smallest solution;
+after the third, no fourth correction is permitted without a new operator
+decision that explicitly approves the measured additional scope.
+
+When this stop-loss triggers, do not spawn agents to continue the design and do
+not add gates, contracts, ledgers, wrappers, or recovery machinery. Report the
+root cause, exact accumulated line/file/byte counts, and the smallest available
+options. A missing portal response or failed route is a blocker; it is not
+authority to design an endpoint replacement.
+
 ## Highest-priority detector-results lane
 
 When the operator requests detector development, correction, tuning, or real-
