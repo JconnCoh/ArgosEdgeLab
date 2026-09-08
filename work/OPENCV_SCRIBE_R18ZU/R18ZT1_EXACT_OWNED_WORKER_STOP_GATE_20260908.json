@@ -1,0 +1,50 @@
+{
+  "schema": "argos_opencv_scribe_r18zt1_exact_owned_worker_stop_gate_v1",
+  "state": "PASS_R18ZT1_EXACT_OWNED_WORKER_STOPPED",
+  "disposition": "TERMINAL_OPERATIONAL_EVIDENCE",
+  "recordedUtc": "2026-09-08T21:38:53.144Z",
+  "operatorAuthority": "STOP R18ZT1 OWNED WORKER ONLY AFTER EXACT PID/START-TIME VERIFICATION",
+  "target": {
+    "computerName": "A1025645101",
+    "processId": 21212,
+    "processName": "python.exe",
+    "recordedStartTimeUtc": "2026-09-07T20:08:49.6106434Z",
+    "observedStartTimeUtcMicroseconds": "2026-09-07T20:08:49.610643Z",
+    "workRoot": "D:\\A2\\w\\ocv\\R18ZT1",
+    "outputRoot": "D:\\A2\\o\\ocv\\R18ZT1"
+  },
+  "verification": {
+    "launchState": "PASS_R18ZT_BATCH_WORKER_STARTED",
+    "runningState": "RUNNING_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+    "completeAbsentBeforeStop": true,
+    "failureAbsentBeforeStop": true,
+    "pidMatched": true,
+    "startTimeMatchedToWmiMicrosecondResolution": true,
+    "processNameMatched": true
+  },
+  "execution": {
+    "successfulElevatedPayloadSha256": "24B1D503328ACD6EDE68E645BCD1F151BD05105D40E9A0974C887C440E7A08D8",
+    "successfulResultState": "PASS_R18ZT1_EXACT_OWNED_WORKER_STOPPED",
+    "recordedPidAbsentAfterStop": true,
+    "otherProcessMutationCount": 0,
+    "automaticRetryPerformed": false
+  },
+  "withdrawnDiagnostic": {
+    "path": "work/OPENCV_SCRIBE_R18ZU/Stop-R18ZT1OwnedWorkerOnce.ps1",
+    "bytes": 1728,
+    "sha256": "0D3E78D0178F7687DC51C4089DF5C74AEBC708FF7D4E46CC5099111BAC47E81A",
+    "state": "WITHDRAWN_EXECUTED_ACCESS_DENIED_DIAGNOSTIC",
+    "failure": "The non-elevated direct-control principal could not read executable-path evidence and later could not stop the verified process due to access denied.",
+    "mayBeReused": false,
+    "mayBePackageParent": false
+  },
+  "limits": {
+    "queueStateClaimed": false,
+    "portalResponseClaimed": false,
+    "resultCompletionClaimed": false,
+    "otherTaskOrProcessInspected": false,
+    "otherTaskOrProcessChanged": false,
+    "sourceImagesRead": false,
+    "productionStateChanged": false
+  }
+}

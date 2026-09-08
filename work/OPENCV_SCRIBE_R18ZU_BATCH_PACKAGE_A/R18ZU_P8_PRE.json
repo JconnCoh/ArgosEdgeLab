@@ -1,0 +1,73 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV02_R18ZU1_SINGLE_PUBLICATION_20260908A",
+  "createdUtc": "2026-09-08T23:36:00.0000000Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "requestId": "REQ_R18ZU1",
+  "actionType": "PUBLISH_EXACTLY_ONE_ALREADY_SIGNED_REVIEW_ONLY_REQ_R18ZU1_PACKAGE_CREATE_NEW_WITHOUT_RETRY_OR_COMPLETION_CLAIM",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C",
+  "dependencies": [
+    {"path":"ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md","sha256":"15246A9749F28A0B732A9297C978E261DE5547A766085C531E2D323F1EB008D6"},
+    {"path":"work/ARGOS_ZERO_RECURRENCE_PREACTION_POLICY.md","sha256":"9C542CF7CB86555E5A357AC492C63B891691D7C9F0DA1103A68079CB01AA1F04"},
+    {"path":"work/templates/ARGOS_ZERO_RECURRENCE_PREACTION.template.json","sha256":"7A04B1D770AE3649FD20BC238B72F0AA3F7C3FC2B3D81EE0044A3A652227B6EC"},
+    {"path":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json","sha256":"F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C"},
+    {"path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Publish-R18ZU1V1.ps1","sha256":"C2C305A818988358472762C32ADF17F697931DAB59218A5879F1124E0AEAE17E"},
+    {"path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Collect-R18ZU1LaunchResponseV1.ps1","sha256":"8EB0E39533A3AA7BBA9E38E7312FE6C65CD0F0D5400E159C1DB95C00A7C43E2A"},
+    {"path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Test-R18ZU1RequestIdUniquenessV1.ps1","sha256":"F4FBDD378E2EA5D889211E8283F6B11CBAF8AE44E5E72EB65DF4EA3688A86970"},
+    {"path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_FROZEN_PACKAGE_BINDINGS_V5.json","sha256":"F47674D29746DBFBBCCC409367D3E308146ECCFEC16A5739EAE992261DC87BA0"},
+    {"path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/final/REQ_R18ZU1.ready.zip","sha256":"657260EAE6EA95DB9794892C684FB772977CDD707FAF37BB17BCAB895548AA20"},
+    {"path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_FINAL_PACKAGE_GATE.json","sha256":"B69F37EB3ED64BA9A598B4803EDB9E1B102DF44B44D50893C982EEB81CB6F193"},
+    {"path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/final/REQ_R18ZU1.ready.zip.complete_route_gate.json","sha256":"AF7551D82F098F71FE51462134D72C52DA0F940BDD347051BEEEAC1312992865"},
+    {"path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_PATH_PLAN_GATE.json","sha256":"9ABA27D3059C368E31A5AA8E776451C7DD4A30E3F758B8AC3CB2C035CC26756E"},
+    {"path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_SCIENCE_GATE.json","sha256":"04EC7B6D02A65C0760F8E33E5507E7E3B1CEEDA4E1EE169D2A8E8DEABE271494"},
+    {"path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZT1_PRIOR_REQUEST_TERMINAL_ROUTE_GATE_20260908.json","sha256":"037C07C2FE40D2BEAAF2CFFD7F273B55C257E5A8A5094B04A8D07D71E90F499D"},
+    {"path":"work/OPENCV_SCRIBE_R17A/R17A_POWERSHELL_COLLECTION_CASE_GATE.json","sha256":"323068E3401E070FA3089D4734B2D304CA5BA4BC4E850A669D5B3FE691E3BE6D"},
+    {"path":"utilities/Confirm-ArgosZeroRecurrencePreaction.ps1","sha256":"303EE814B441365120DE1083DE018513F3D1ABE523236291460336C4CB2DE5BB"}
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/OPENCV_SCRIBE_R17A/R17A_POWERSHELL_COLLECTION_CASE_GATE.json",
+    "sha256": "323068E3401E070FA3089D4734B2D304CA5BA4BC4E850A669D5B3FE691E3BE6D",
+    "requiredCaseIds": ["ZERO", "ONE", "MANY"]
+  },
+  "scope": {
+    "requestId": "REQ_R18ZU1",
+    "signedRequestSha256": "657260EAE6EA95DB9794892C684FB772977CDD707FAF37BB17BCAB895548AA20",
+    "publicationAuthorized": true,
+    "maximumPublicationsAuthorized": 1,
+    "automaticRetryAuthorized": false,
+    "matchingSignedLaunchResponseOnly": true,
+    "completionClaimed": false,
+    "identityAcceptanceAuthorized": false,
+    "productionAuthorized": false
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "externalAccessPerformed": false,
+  "publicationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

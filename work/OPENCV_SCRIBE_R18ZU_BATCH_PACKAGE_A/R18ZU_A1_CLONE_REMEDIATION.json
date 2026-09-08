@@ -1,0 +1,90 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R18ZU_PACKAGE_A_MECHANICAL_SCOPE_20260908A",
+  "state": "FROZEN_PRE_GENERATION",
+  "createdUtc": "2026-09-08T21:45:50Z",
+  "requestId": "REQ_R18ZU1",
+  "sourceGuardPath": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_A1_SOURCE_GUARD.json",
+  "approvedMechanicalScope": {
+    "executableFiles": 6,
+    "sourceLines": 3663,
+    "sourceBytes": 284464
+  },
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Invoke-R18ZTBatchLaunchV3.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Invoke-R18ZUBatchLaunchV1.ps1",
+      "sourceGuardSha256": "61A8C1BE7B987338F077CAA30EA6152E7ACE9780DE49C2A70D195227E3D70AB9",
+      "rootRules": [
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\R18ZT1C3JG","generatedRoot":"C:\\R18ZU1A1JG","disposition":"REPLACED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\AFCV1","generatedRoot":"D:\\AFCV1","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\O2D5","generatedRoot":"D:\\O2D5","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Run-R18ZTBatchExecutionEnvelopeV2.py",
+      "generated": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Run-R18ZUBatchExecutionEnvelopeV1.py",
+      "sourceGuardSha256": "A1377797A502292CF9C11C3CABCDC371B7469E536515FD97F222E3A4894E055C",
+      "rootRules": [
+        {"sourceRoot":"","generatedRoot":"","disposition":"NO_LITERAL_ROOTS"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Build-R18ZTBatchRequestV10.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Build-R18ZUBatchRequestV1.ps1",
+      "sourceGuardSha256": "A86EC60302EDE387F7963B02BFA0F2B28EBE7084739EF53D4F3F59FFC88EBD1E",
+      "rootRules": [
+        {"sourceRoot":"C:\\ArgosPy313","generatedRoot":"C:\\ArgosPy313","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\R18ZT1C4_PROPOSALS_NOT_ACCESSED","generatedRoot":"C:\\R18ZU1A1_PROPOSALS_NOT_ACCESSED","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1C4P","generatedRoot":"C:\\R18ZU1A1P","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1C4T","generatedRoot":"C:\\R18ZU1A1T","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1C4TO","generatedRoot":"C:\\R18ZU1A1TO","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1C4TW","generatedRoot":"C:\\R18ZU1A1TW","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\R18ZT1C4V","generatedRoot":"C:\\R18ZU1A1V","disposition":"REPLACED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Publish-R18ZT1V8.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Publish-R18ZU1V1.ps1",
+      "sourceGuardSha256": "574E72BCD2EF8411C5DF3B80B212D0785D00D98DB4B84D4E14265AB7B7F74AFC",
+      "rootRules": [
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Collect-R18ZT1LaunchResponseV8.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Collect-R18ZU1LaunchResponseV1.ps1",
+      "sourceGuardSha256": "159CA5EC48F8005892588191AB73D8CEE5228F7E88A356248E7A6060CDAC4727",
+      "rootRules": [
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/Test-R18ZT1RequestIdUniquenessV6.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Test-R18ZU1RequestIdUniquenessV1.ps1",
+      "sourceGuardSha256": "0FFC9A373F8DC8E8CB758E8B8148FD8825E65F131C8C209AA76368E1B2984A9F",
+      "rootRules": [
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    }
+  ],
+  "globalRules": {
+    "freshPackageNamespace": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A",
+    "freshPackageRevision": "R18ZU_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260908A",
+    "requestId": "REQ_R18ZU1",
+    "sourceTemplatesGuardedBeforeGeneration": true,
+    "allLiteralRootsClassified": true,
+    "hashLiteralsNeverMechanicallyRewritten": true,
+    "externalRouteRootsUnchanged": true,
+    "automaticRetryAuthorized": false
+  }
+}

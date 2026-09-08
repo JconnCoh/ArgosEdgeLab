@@ -1,0 +1,133 @@
+{
+  "schema": "argos_opencv_scribe_r18zu_review_batch_science_gate_v1",
+  "state": "PASS_R18ZU_REVIEW_BATCH_SCIENCE_WITH_STRICT_RETENTION_HOLD",
+  "disposition": "FROZEN_REVIEW_ONLY_SCIENCE_EVIDENCE",
+  "revision": "ARGOS_OPENCV_SCRIBE_V1R18ZU_CANONICAL_Z_GEOMETRY_DIAGNOSTIC_20260908",
+  "artifacts": {
+    "provider": {
+      "path": "work/OPENCV_SCRIBE_R18ZU/ArgosOpenCvScribeV1R18ZU.py",
+      "bytes": 32197,
+      "sha256": "935BAAE98331FF128D4204B6C8AB2E7EBEF8A38B2773F4ACCE59AE3A78C7FF87"
+    },
+    "nonImageRegressionGate": {
+      "path": "work/OPENCV_SCRIBE_R18ZU/R18ZU_NON_IMAGE_REGRESSION_GATE.json",
+      "bytes": 4030,
+      "sha256": "0DF8CBE333D86A09840EE6B6CF2D19A07C4364BF42999692C3B942636E21A723",
+      "state": "PASS_R18ZU_NON_IMAGE_REGRESSION"
+    },
+    "canonicalZDevelopmentGate": {
+      "path": "work/OPENCV_SCRIBE_R18ZU/R18ZU_CANONICAL_Z_DEVELOPMENT_GATE_V2.json",
+      "bytes": 2346,
+      "sha256": "31C5AD7F7E2A20ACB7CD6542808375D537323247EF4A56DF81C6F92B92209470"
+    },
+    "heldOutZDiagnosticGate": {
+      "path": "work/OPENCV_SCRIBE_R18ZU/R18ZU_HELD_OUT_Z_EXECUTED_DIAGNOSTIC_GATE.json",
+      "bytes": 4374,
+      "sha256": "5C2188F632EC1811A64A354B6679AE31BE5D9F61DB1F3F7A1DE8F715AE625B18",
+      "state": "PASS_Z_DECIPHERING_HOLD_STRICT_EIGHT_RETAINED_HYPOTHESIS_COMPARABILITY"
+    },
+    "batchRunner": {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_C/Run-R18ZTExistingOrientedCropsV2.py",
+      "bytes": 71724,
+      "sha256": "F3B465F433ADB58F1C37C5673999FD03A4315EFA5A3128EFF8E192E9C3D58AE2",
+      "revision": "R18ZT_EXISTING_ORIENTED_CROPS_PUBLIC_PROVIDER_BATCH_20260908D"
+    },
+    "batchRunnerTestGate": {
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_C/R18ZT_V2_RUNNER_NON_IMAGE_TEST_GATE_20260908.json",
+      "bytes": 1682,
+      "sha256": "81DEC30BCCF622F081DD269C3D266F0E8D9A79AA0C2D21551E6407A881685584",
+      "state": "PASS_R18ZT_V2_RUNNER_NON_IMAGE_TEST_GATE"
+    },
+    "r18ztDevelopmentGate": {
+      "path": "work/OPENCV_SCRIBE_R18ZT/R18ZT_DEVELOPMENT_GATE_20260906C/R18ZT_GENERIC_HOLD_RESCUE_DEVELOPMENT_GATE.json",
+      "bytes": 52026,
+      "sha256": "D71C6356D7FD091274C80E25F1B840C537A1325939DB444AEB729A1E42866FAD"
+    },
+    "r18ztPrevalidationGate": {
+      "path": "work/OPENCV_SCRIBE_R18ZT_PRE_SLOT/R18ZT_PRE_VALIDATION_GATE_20260906A/R18ZT_PRE_VALIDATION_BOUNDED_REGRESSION_GATE.json",
+      "bytes": 34243,
+      "sha256": "A5054CB689B257819AD00B639FA9B55E2078B9193DDCB41776F7B39987606B52"
+    },
+    "slot21Adjudication": {
+      "path": "work/OPENCV_SCRIBE_R18ZT_SLOT21/R18ZT_SLOT21_POST_RESULT_ADJUDICATION_GATE_20260906A.json",
+      "bytes": 14233,
+      "sha256": "E526EDF07597D3F71A52FABAD7E93941A0FE3CD34003B6F0595C9D3992234A7D"
+    }
+  },
+  "decipheringFinish": {
+    "slot21": {
+      "imageFirstString": "13HFX135SUE3",
+      "selectedHypothesis": "BF/DARK/FORWARD",
+      "selectionScore": 0.9117836040446633,
+      "checksumValid": true,
+      "envelopePassed": true,
+      "attemptCount": 8,
+      "retainedCount": 4,
+      "acceptedWrongCount": 0
+    },
+    "k22": {
+      "imageFirstString": "13DCK060SUF5",
+      "selectionScore": 0.9505840620496798,
+      "evidenceMode": "PINNED_R18R_REAL_CROP_INHERITED_BY_R18ZT_NOT_FRESHLY_RERUN"
+    },
+    "heldOutZ": {
+      "physicalIdentity": "62623-743_20260720111120_Slot04",
+      "imageFirstString": "147Z6157SUA5",
+      "selectedHypothesis": "BF/DARK/FORWARD",
+      "selectionScore": 0.9547635449691466,
+      "checksumValid": true,
+      "envelopePassed": true,
+      "position4": "Z",
+      "zScore": 0.6427746324353658,
+      "zScoreIncreased": false,
+      "canonicalGeometryPassed": true,
+      "coveredRivalInsideEnvelope": false,
+      "retainedHypothesisCount": 2,
+      "fixedPublicLoopViewCount": 8,
+      "allEightViewsAttemptedEvidenceMode": "SOURCE_DERIVED_INFERENCE_FROM_PINNED_PUBLIC_LOOP",
+      "missingViewExceptionDetailsRecorded": false,
+      "strictEightRetainedComparabilityPassed": false
+    }
+  },
+  "boundedRegression": {
+    "referenceQueries": 475,
+    "exactFolds": 49,
+    "acceptedCorrect": 312,
+    "acceptedWrong": 0,
+    "held": 163,
+    "blankCases": 5,
+    "blankViews": 40,
+    "blankWrongAccepted": 0,
+    "r18zuRealNonZReferences": 474,
+    "r18zuRealNonZFalseAcceptances": 0,
+    "r18zuRenderedNonZVariants": 7560,
+    "r18zuRenderedNonZFalseAcceptances": 0
+  },
+  "batchContract": {
+    "publicProviderRunJobRequired": true,
+    "directStructuralEvaluatorAllowed": false,
+    "orderedHypothesisAttemptsRequired": 8,
+    "rejectedViewsRecordedAsAttempts": true,
+    "retainedHypothesisCountFixedAtEight": false,
+    "retainedMustEqualEvaluated": true,
+    "truthOrChecksumMaySelectGlyph": false,
+    "reviewOnly": true,
+    "sourceImagesMutable": false,
+    "automaticRetryAllowed": false
+  },
+  "adjudication": {
+    "exactImageFirstDecipheringFinishSatisfied": true,
+    "zeroWrongAcceptedOnBoundedRegression": true,
+    "reviewBatchScienceConditionSatisfied": true,
+    "strictEightRetainedHypothesisQualificationSatisfied": false,
+    "overallProviderQualificationClaimed": false,
+    "rawResultStateRewritten": false,
+    "coverageHoldCleared": false,
+    "identityAccepted": false,
+    "referenceBankMutated": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "publicationAuthorizedByThisGate": false
+  }
+}

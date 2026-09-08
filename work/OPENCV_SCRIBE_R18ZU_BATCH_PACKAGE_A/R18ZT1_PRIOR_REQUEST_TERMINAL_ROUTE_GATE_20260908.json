@@ -1,0 +1,60 @@
+{
+  "schema": "argos_opencv_scribe_r18zu_prior_request_terminal_route_gate_v1",
+  "checkedUtc": "2026-09-08T22:09:13.6978294Z",
+  "state": "PASS_R18ZT1_ENDPOINT_TERMINAL_AND_SIGNED_RETURN_ROUTE_HEALTHY",
+  "requestId": "REQ_R18ZT1",
+  "endpoint": {
+    "computerName": "A1025645101",
+    "root": "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod",
+    "layoutProbeCommandSha256": "B3C40F4E0EF59E9CAF4ECEC421F2A0C7962F5D6E7791629CB1595327D45CE0CD",
+    "exactProbeCommandSha256": "78618FF3B198F5A511D88ECD9803F865259B83B0BE8AA03250CEA8161396EA8A",
+    "ledgerPath": "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\ledger\\REQ_R18ZT1.json",
+    "ledgerExists": true,
+    "ledgerSchema": "argos_project_portal_request_ledger_v1",
+    "processedUtc": "2026-09-08T21:35:30.6361971Z",
+    "role": "JBOD",
+    "state": "PASS_MAINTENANCE_PATCH",
+    "responsePackage": "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_B25CA7A96889_20260908213530577_8a1862ab.ready",
+    "statusPath": "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\STATUS.json",
+    "statusState": "REQUEST_PROCESSED",
+    "statusDetail": "REQ_R18ZT1 | PASS_MAINTENANCE_PATCH",
+    "incomingRequestMatches": 0,
+    "pendingRequestMatches": 0,
+    "receiptExists": true,
+    "receiptName": "REQ_R18ZT1.receipt.json"
+  },
+  "returnedResponse": {
+    "responseRoot": "U:\\ProjectPortalRO\\responses",
+    "boundedTopLevelSnapshotCount": 585,
+    "authenticatedMatchCount": 1,
+    "path": "U:\\ProjectPortalRO\\responses\\R_B25CA7A96889_20260908213530577_8a1862ab.ready.zip",
+    "bytes": 3160,
+    "sha256": "D4760A49C552D33BA1CD7A34B8A256E2F981B466F49A16F785C7C5E7A102544A",
+    "responseId": "R_B25CA7A96889_20260908213530577_8a1862ab",
+    "createdUtc": "2026-09-08T21:35:30.5778623+00:00",
+    "sourceRole": "JBOD",
+    "state": "PASS_MAINTENANCE_PATCH",
+    "signatureValid": true,
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "payloadMembership": [
+      "MAINTENANCE.stderr.txt",
+      "MAINTENANCE.stdout.txt",
+      "RESULT.json"
+    ],
+    "payloadBytesRead": false,
+    "imageBytesRead": false
+  },
+  "conclusion": {
+    "priorEndpointRequestTerminal": true,
+    "priorEndpointQueueHeadCleared": true,
+    "signedTerminalResponseReturnedToShare": true,
+    "returnRouteHealthy": true,
+    "sameEndpointSuccessorPublicationMayProceedAfterAllFreshGates": true
+  },
+  "mutationsPerformed": false,
+  "tasksOrProcessesQueried": false,
+  "tasksOrProcessesMutated": false,
+  "sourceImagesRead": false,
+  "resultPayloadsRead": false,
+  "productionRoutingEnabled": false
+}

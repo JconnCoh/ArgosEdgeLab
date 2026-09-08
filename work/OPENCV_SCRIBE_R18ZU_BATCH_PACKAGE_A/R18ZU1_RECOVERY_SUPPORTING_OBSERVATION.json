@@ -1,0 +1,35 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "checkedUtc": "2026-09-08T22:44:30.0000000Z",
+  "state": "PASS_R18ZU1_PRIOR_REQUEST_TERMINAL_ROUTE_OBSERVATION",
+  "incidentId": "R18ZU_REVIEW_BATCH_AFTER_R18ZT1_20260908",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": true,
+  "source": {
+    "path": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZT1_PRIOR_REQUEST_TERMINAL_ROUTE_GATE_20260908.json",
+    "bytes": 2602,
+    "sha256": "037C07C2FE40D2BEAAF2CFFD7F273B55C257E5A8A5094B04A8D07D71E90F499D",
+    "requiredState": "PASS_R18ZT1_ENDPOINT_TERMINAL_AND_SIGNED_RETURN_ROUTE_HEALTHY"
+  },
+  "observed": {
+    "priorRequestId": "REQ_R18ZT1",
+    "endpointLedgerState": "PASS_MAINTENANCE_PATCH",
+    "endpointRequestTerminal": true,
+    "endpointQueueHeadCleared": true,
+    "signedTerminalResponseReturnedToShare": true,
+    "returnRouteHealthy": true,
+    "pendingIncomingCount": 0,
+    "pendingWorkCount": 0
+  },
+  "scope": "BOUNDED_DIRECT_ENDPOINT_LEDGER_AND_SIGNED_RETURN_RESPONSE_METADATA_ONLY",
+  "imageBytesRead": false,
+  "resultPayloadsRead": false,
+  "taskActions": [],
+  "processActions": [],
+  "queueMutations": [],
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

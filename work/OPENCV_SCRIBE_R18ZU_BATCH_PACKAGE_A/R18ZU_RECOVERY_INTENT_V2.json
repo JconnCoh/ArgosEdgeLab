@@ -1,0 +1,100 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-08T23:00:00.0000000Z",
+  "state": "FROZEN_R18ZU_PACKAGE_A_RECOVERY_INTENT",
+  "requestId": "REQ_R18ZU1",
+  "bindingRecordSha256": "F47674D29746DBFBBCCC409367D3E308146ECCFEC16A5739EAE992261DC87BA0",
+  "builderSha256": "450BC6D98DCB36AF8A9126D58C3BE957AB92C59A3525FF9DCECF259F1FB6D830",
+  "incidentId": "R18ZU_REVIEW_BATCH_AFTER_R18ZT1_20260908",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {"path":"work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json","sha256":"A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"},
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"","sha256":""},
+    "classificationNote": "REQ_R18ZT1 ended PASS_MAINTENANCE_PATCH and its signed terminal response returned to the share. The exact owned worker was subsequently stopped after PID/start-time verification. There is no signed premise failure. The separately governed package/wrapper coding failure counter remains 4 of 5; no R18ZU1 package attempt has failed."
+  },
+  "packageWrapperStopLoss": {
+    "failuresBeforeR18ZU1": 4,
+    "maximumFailures": 5,
+    "r18zu1FailuresAtFreeze": 0,
+    "stopOnNextPackageOrWrapperCodingFailure": true,
+    "parserOrInvocationTyposExcluded": true
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": ["START_ONE_OWNED_BACKGROUND_R18ZT_BATCH_WORKER"],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"E070135E8C211F2869623553C04AE2DDE65244760FC60457356B2FEEEFEED4EB"},
+    "installedConfigEvidence": {"path":"work/OPENCV_SCRIBE_R18W4S21/R18W4S21_ROUTE_PINS.json","sha256":"D1CDD46C70BFF4003E46D35BFC77754F9A9A742E51CA14D5AEAD2377E75B1D5E"},
+    "capabilityEvidence": {"path":"work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json","sha256":"381D3E9C4F17218DF37D8E8CE029853216E9BEA5A2FBDABC6AEB7861A29DC8A2"},
+    "qualifiedEndpointGate": {"path":"work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json","sha256":"170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"},
+    "qualifiedAdminGate": {"path":"","sha256":""}
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A","B","C","D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {"path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU1_RECOVERY_SUPPORTING_OBSERVATION.json","sha256":"1F70B561BB702745236850248F98B23567A34E9C0CC7F6CFD44F11CC74C44D5C"},
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "singleMutationAttemptScope": "LOCAL_PACKAGE_A_GATE_BUILD_TEST_AND_SIGN_ONLY_UNTIL_SEPARATE_PUBLICATION_INVOCATION_RECHECKS_OPERATOR_AUTHORITY",
+    "externalMutationAttemptAuthorized": false,
+    "publicationAuthorized": false,
+    "automaticRetryAuthorized": false
+  },
+  "scope": {
+    "revision": "R18ZU_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260908A",
+    "runnerRevision": "R18ZT_EXISTING_ORIENTED_CROPS_PUBLIC_PROVIDER_BATCH_20260908D",
+    "requestId": "REQ_R18ZU1",
+    "workRoot": "D:/A2/w/ocv/R18ZU1",
+    "outputRoot": "D:/A2/o/ocv/R18ZU1",
+    "proposalAlias": "D:/A2/w/ocv/R18ZU1/p",
+    "canonicalProposalRoot": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals",
+    "installedLauncher": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV02_R18ZU1.ps1",
+    "allExistingQualifiedOrientedCropPairs": true,
+    "frozenOcrScienceChanged": true,
+    "genericCanonicalZGeometryOnly": true,
+    "stopAtSignedUnpublished": true
+  },
+  "supersedes": {
+    "path": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_RECOVERY_INTENT.json",
+    "sha256": "8ED7A14E947A2D04742938D541DEF25067B56D69E04E842A8C1761BD597905B6",
+    "reason": "BUILDER_VALIDATOR_TOKEN_CORRECTED_BEFORE_BUILDER_EXECUTION"
+  },
+  "authority": {
+    "localPackagePreparationAndSigningAuthorized": true,
+    "publicationAuthorized": false,
+    "maximumPublicationsAuthorizedByThisIntent": 0,
+    "automaticRetryAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "automaticReferenceAdmissionAuthorized": false,
+    "automaticHoldClearanceAuthorized": false,
+    "providerActivationAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "sourceMutationOrDeletionAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

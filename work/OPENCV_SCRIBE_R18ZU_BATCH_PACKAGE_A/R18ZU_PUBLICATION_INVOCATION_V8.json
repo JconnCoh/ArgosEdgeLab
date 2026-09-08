@@ -1,0 +1,207 @@
+{
+  "schema": "argos_opencv_scribe_r18zu_publication_invocation_v8",
+  "state": "FROZEN_R18ZU1_PUBLICATION_INVOCATION_V8",
+  "lifecycle": "FROZEN",
+  "requestId": "REQ_R18ZU1",
+  "packageRevision": "R18ZU_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260908A",
+  "allowedAbsoluteLocalReadRoots": [
+    "C:\\R18ZTS21A"
+  ],
+  "authority": {
+    "operatorAuthorityText": "If this goes well, proceed to publishing a package to test OCR on the JBOD klarf.",
+    "maximumPublications": 1,
+    "retryAuthorized": false,
+    "reviewOnly": true,
+    "identityAcceptanceAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false
+  },
+  "git": {
+    "branch": "codex/opencv-scribe-deciphering",
+    "fetchAuthorized": false,
+    "runtimeRequirement": "EXACT_BRANCH_CLEAN_LOCAL_HEAD_EQUALS_LOCALLY_RECORDED_ORIGIN_TIP_NO_FETCH"
+  },
+  "tools": {
+    "publisherDependency": "publisher",
+    "collectorDependency": "collector",
+    "windowsPowerShell": "5.1 Desktop",
+    "publisherRuntimeSelfHashRequired": true,
+    "preactionMayPinPublisherButMustNotPinInvocation": true
+  },
+  "postFreezeToolingGate": {
+    "path": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_P8_FINAL_TOOL.json",
+    "expectedSchema": "argos_opencv_scribe_r18zu_publication_v8_postfreeze_tooling_gate_v1",
+    "expectedState": "PASS_R18ZU_PUBLICATION_V8_POSTFREEZE_TOOLING_GATE",
+    "requiredDependencyPins": [
+      "publisher",
+      "collector",
+      "collisionScanner",
+      "publicationToolingGate",
+      "preactionContract",
+      "packageBinding",
+      "requestZip",
+      "finalPackageGate",
+      "completeRouteGate",
+      "pathGate",
+      "scienceGate",
+      "priorRequestTerminalRouteGate",
+      "responseVerifier",
+      "responseSignerCertificate"
+    ]
+  },
+  "packageBinding": {
+    "dependency": "packageBinding",
+    "expectedSchema": "argos_opencv_scribe_r18zu_package_bindings_v5",
+    "expectedState": "FROZEN_R18ZU_PACKAGE_A_V5_BINDINGS",
+    "forbiddenSchemas": [
+      "argos_opencv_scribe_r18zu_package_bindings_v1",
+      "argos_opencv_scribe_r18zu_package_bindings_v2"
+    ]
+  },
+  "dependencies": [
+    {"name":"publisher","path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Publish-R18ZU1V1.ps1","bytes":57418,"sha256":"C2C305A818988358472762C32ADF17F697931DAB59218A5879F1124E0AEAE17E"},
+    {"name":"collector","path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Collect-R18ZU1LaunchResponseV1.ps1","bytes":42677,"sha256":"8EB0E39533A3AA7BBA9E38E7312FE6C65CD0F0D5400E159C1DB95C00A7C43E2A"},
+    {"name":"packageBinding","path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_FROZEN_PACKAGE_BINDINGS_V5.json","bytes":20799,"sha256":"F47674D29746DBFBBCCC409367D3E308146ECCFEC16A5739EAE992261DC87BA0"},
+    {"name":"launcher","path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Invoke-R18ZUBatchLaunchV1.ps1","bytes":79725,"sha256":"778CC2691C53C3B2B14579F03773ABEB4FDD45C38D2DA40DEAB53B82967E1DE5"},
+    {"name":"requestZip","path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/final/REQ_R18ZU1.ready.zip","bytes":321617,"sha256":"657260EAE6EA95DB9794892C684FB772977CDD707FAF37BB17BCAB895548AA20"},
+    {"name":"finalPackageGate","path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_FINAL_PACKAGE_GATE.json","bytes":3149,"sha256":"B69F37EB3ED64BA9A598B4803EDB9E1B102DF44B44D50893C982EEB81CB6F193"},
+    {"name":"completeRouteGate","path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/final/REQ_R18ZU1.ready.zip.complete_route_gate.json","bytes":1461,"sha256":"AF7551D82F098F71FE51462134D72C52DA0F940BDD347051BEEEAC1312992865"},
+    {"name":"pathGate","path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_PATH_PLAN_GATE.json","bytes":10189,"sha256":"9ABA27D3059C368E31A5AA8E776451C7DD4A30E3F758B8AC3CB2C035CC26756E"},
+    {"name":"scienceGate","path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_SCIENCE_GATE.json","bytes":4426,"sha256":"04EC7B6D02A65C0760F8E33E5507E7E3B1CEEDA4E1EE169D2A8E8DEABE271494"},
+    {"name":"signedUnpublishedGate","path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_FINAL_PACKAGE_GATE.json","bytes":3149,"sha256":"B69F37EB3ED64BA9A598B4803EDB9E1B102DF44B44D50893C982EEB81CB6F193"},
+    {"name":"publicationToolingGate","path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_P8_TOOL.json","bytes":1279,"sha256":"0935B535837DD9B74893C2BC2DA65A3771BF455C2DC590E82465AAD6997AF246"},
+    {"name":"preactionContract","path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_P8_PRE.json","bytes":4825,"sha256":"B593A40F0B3CE985890500B43D4D75EE6BA8CCE6C3330CD35CCE82A785BF6DC8"},
+    {"name":"preactionTool","path":"utilities/Confirm-ArgosZeroRecurrencePreaction.ps1","bytes":10766,"sha256":"303EE814B441365120DE1083DE018513F3D1ABE523236291460336C4CB2DE5BB"},
+    {"name":"historyAudit","path":"work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json","bytes":18406,"sha256":"F3E7AF05017BF00ADEDFFA7A06D89155E2E5C1BF76A64E643E4972F00737BC9C"},
+    {"name":"requestSignerCertificate","path":"work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/ARGOS_PROJECT_PORTAL_LAPTOP_SIGNER_PUBLIC.cer","bytes":1101,"sha256":"2B434D0CF6A0D6D69AAE3D280032EFF00807D423CA3B3D7F2EFC1C6BB628BFFF"},
+    {"name":"responseVerifier","path":"work/PROJECT_PORTAL_REVIEW_ONLY/scripts/Test-SignedPortalResponse.ps1","bytes":3942,"sha256":"4AF5901A7B9DFFF5A4DAF128960173D67501ABF6FF87C586BA526643B1C1449C"},
+    {"name":"responseSignerCertificate","path":"work/PROJECT_PORTAL_REVIEW_ONLY/enrollment/active/JBOD_ENDPOINT_SIGNER.cer","bytes":1080,"sha256":"5220D138831BC1CD97ABF6E37F7E67D5C0569B8CE8EED2F6EF35A24C4A88F08B"},
+    {"name":"slot21Adjudication","path":"work/OPENCV_SCRIBE_R18ZT_SLOT21/R18ZT_SLOT21_POST_RESULT_ADJUDICATION_GATE_20260906A.json","bytes":14233,"sha256":"E526EDF07597D3F71A52FABAD7E93941A0FE3CD34003B6F0595C9D3992234A7D"},
+    {"name":"slot21Runner","path":"work/OPENCV_SCRIBE_R18ZT_SLOT21/Run-R18ZTSlot21.py","bytes":30087,"sha256":"0EDCF71ACB454B0BF71B982A7172707D92E6B71373E9F6FA0DD8BC61AC9F667F"},
+    {"name":"provider","path":"work/OPENCV_SCRIBE_R18ZT/ArgosOpenCvScribeV1R18ZT.py","bytes":17391,"sha256":"AEF048D3CCEAF378A9FF43D5844DD1A28431E662F5BC54AFF384C4DB73A2C793"},
+    {"name":"developmentGate","path":"work/OPENCV_SCRIBE_R18ZT/R18ZT_DEVELOPMENT_GATE_20260906C/R18ZT_GENERIC_HOLD_RESCUE_DEVELOPMENT_GATE.json","bytes":52026,"sha256":"D71C6356D7FD091274C80E25F1B840C537A1325939DB444AEB729A1E42866FAD"},
+    {"name":"preValidationGate","path":"work/OPENCV_SCRIBE_R18ZT_PRE_SLOT/R18ZT_PRE_VALIDATION_GATE_20260906A/R18ZT_PRE_VALIDATION_BOUNDED_REGRESSION_GATE.json","bytes":34243,"sha256":"A5054CB689B257819AD00B639FA9B55E2078B9193DDCB41776F7B39987606B52"},
+    {"name":"slot21Result","path":"C:\\R18ZTS21A\\R18ZT_SLOT21_PROVIDER_RESULT.json","bytes":641749,"sha256":"0EFA3C24CE3B037DA0EB6683955673110A6D58F88EAA4ABD057CDAA5F73871ED"},
+    {"name":"slot21ExecutionGate","path":"C:\\R18ZTS21A\\R18ZT_SLOT21_VALIDATION_GATE.json","bytes":21491,"sha256":"E58D2F0967AADA1B50DE7903E83DA6235DFA786977D144880A116E4DF36E402D"},
+    {"name":"r18zuReviewBatchScienceGate","path":"work/OPENCV_SCRIBE_R18ZU/R18ZU_REVIEW_BATCH_SCIENCE_GATE_20260908.json","bytes":5354,"sha256":"6F55C32484D8DD202E5358DFAB31025C8DAE1ED1EE36078653EA87561BCF7193"},
+    {"name":"batchRunner","path":"work/OPENCV_SCRIBE_R18ZT_BATCH_C/Run-R18ZTExistingOrientedCropsV2.py","bytes":71724,"sha256":"F3B465F433ADB58F1C37C5673999FD03A4315EFA5A3128EFF8E192E9C3D58AE2"},
+    {"name":"runnerNonImageTestGate","path":"work/OPENCV_SCRIBE_R18ZT_BATCH_C/R18ZT_V2_RUNNER_NON_IMAGE_TEST_GATE_20260908.json","bytes":1682,"sha256":"81DEC30BCCF622F081DD269C3D266F0E8D9A79AA0C2D21551E6407A881685584"},
+    {"name":"r18zuProvider","path":"work/OPENCV_SCRIBE_R18ZU/ArgosOpenCvScribeV1R18ZU.py","bytes":32197,"sha256":"935BAAE98331FF128D4204B6C8AB2E7EBEF8A38B2773F4ACCE59AE3A78C7FF87"},
+    {"name":"canonicalZDevelopmentGate","path":"work/OPENCV_SCRIBE_R18ZU/R18ZU_CANONICAL_Z_DEVELOPMENT_GATE_V2.json","bytes":2346,"sha256":"31C5AD7F7E2A20ACB7CD6542808375D537323247EF4A56DF81C6F92B92209470"},
+    {"name":"r18zuNonImageRegressionGate","path":"work/OPENCV_SCRIBE_R18ZU/R18ZU_NON_IMAGE_REGRESSION_GATE.json","bytes":4030,"sha256":"0DF8CBE333D86A09840EE6B6CF2D19A07C4364BF42999692C3B942636E21A723"},
+    {"name":"heldOutZDiagnosticGate","path":"work/OPENCV_SCRIBE_R18ZU/R18ZU_HELD_OUT_Z_EXECUTED_DIAGNOSTIC_GATE.json","bytes":4374,"sha256":"5C2188F632EC1811A64A354B6679AE31BE5D9F61DB1F3F7A1DE8F715AE625B18"},
+    {"name":"priorRequestTerminalRouteGate","path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZT1_PRIOR_REQUEST_TERMINAL_ROUTE_GATE_20260908.json","bytes":2602,"sha256":"037C07C2FE40D2BEAAF2CFFD7F273B55C257E5A8A5094B04A8D07D71E90F499D"},
+    {"name":"collisionScanner","path":"work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Test-R18ZU1RequestIdUniquenessV1.ps1","bytes":12564,"sha256":"F4FBDD378E2EA5D889211E8283F6B11CBAF8AE44E5E72EB65DF4EA3688A86970"}
+  ],
+  "bindingConsumers": [
+    {"dependency":"finalPackageGate","stateProperty":"state","expectedState":"PASS_R18ZU_SIGNED_UNPUBLISHED_PACKAGE_GATE","bindingHashProperty":"bindingRecordSha256","requestIdProperty":"requestId"},
+    {"dependency":"completeRouteGate","stateProperty":"state","expectedState":"PASS_R18ZU_COMPLETE_ROUTE_GATE_SIGNED_UNPUBLISHED","bindingHashProperty":"bindingRecordSha256","requestIdProperty":"requestId"},
+    {"dependency":"pathGate","stateProperty":"state","expectedState":"PASS_R18ZU_PACKAGE_A_PATH_BUDGET","bindingHashProperty":"bindingRecordSha256","requestIdProperty":"requestId"},
+    {"dependency":"scienceGate","stateProperty":"state","expectedState":"PASS_R18ZU_BATCH_SCIENCE_GATE","bindingHashProperty":"bindingRecordSha256","requestIdProperty":"requestId"},
+    {"dependency":"signedUnpublishedGate","stateProperty":"state","expectedState":"PASS_R18ZU_SIGNED_UNPUBLISHED_PACKAGE_GATE","bindingHashProperty":"bindingRecordSha256","requestIdProperty":"requestId"},
+    {"dependency":"publicationToolingGate","stateProperty":"state","expectedState":"PASS_R18ZU_PUBLICATION_V8_PREINVOCATION_TOOLING_GATE","bindingHashProperty":"bindingRecordSha256","requestIdProperty":"requestId"}
+  ],
+  "gateSemantics": [
+    {"name":"FINAL_PACKAGE","dependency":"finalPackageGate","requestZipSha256Property":"requestZipSha256","requestZipBytesProperty":"requestZipBytes","signatureVerifiedProperty":"exactFinalZipSignaturePassed","publishedProperty":"publicationPerformed","completionClaimedProperty":"completionClaimed","retryAuthorizedProperty":"retryAuthorized"},
+    {"name":"COMPLETE_ROUTE","dependency":"completeRouteGate","requestZipSha256Property":"requestZipSha256","publicationCollisionRecheckProperty":"publicationMustRecheckAllAccessibleCollisionNamespaces","maximumEffectiveLengthProperty":"maximumEffectiveLength","maximumComponentLengthProperty":"maximumComponentLength","unsafePathCountProperty":"unsafePathCount","completionClaimedProperty":"completionClaimed"},
+    {"name":"PATH_BUDGET","dependency":"pathGate","maximumEffectiveLengthProperty":"maximumEffectiveLength","maximumComponentLengthProperty":"maximumComponentLength","unsafePathCountProperty":"unsafePathCount","maximumSuffixReserveProperty":"outputAtomicSuffixReserveCharacters","requiredRouteCoverageProperties":["routeCoverage.localBuildAndFinalZip","routeCoverage.localPublicationStaging","routeCoverage.gatewayShareRequestAndArchive","routeCoverage.gatewayToArgosRelay","routeCoverage.argosToJbodRelay","routeCoverage.jbodEndpointPendingWorkCompleteAndFailure","routeCoverage.compactFailureQuarantine","routeCoverage.responseSenderWatchAndSent","routeCoverage.argosToGatewayReturn","routeCoverage.gatewayShareResponse","routeCoverage.localResponseExtraction","routeCoverage.installedLauncher","routeCoverage.jbodWorkAndOutput"]},
+    {"name":"SCIENCE","dependency":"scienceGate","imageFirstStringProperty":"exactImageFirstString","exactFinishPassedProperty":"exactDecipheringFinish","wrongAcceptedCountProperty":"developmentAcceptedWrong","providerRerunProperty":"providerRerunForAdjudication"},
+    {"name":"SIGNED_UNPUBLISHED","dependency":"signedUnpublishedGate","requestZipSha256Property":"requestZipSha256","signatureVerifiedProperty":"exactFinalZipSignaturePassed","publishedProperty":"publicationPerformed","completionClaimedProperty":"completionClaimed","retryAuthorizedProperty":"retryAuthorized"},
+    {"name":"PUBLICATION_TOOLING","dependency":"publicationToolingGate","publisherSha256Property":"publisherSha256","collectorSha256Property":"collectorSha256","windowsPowerShell51PassedProperty":"windowsPowerShell51Passed","cloneGatesPassedProperty":"cloneGatesPassed","harnessGatesPassedProperty":"harnessGatesPassed","preactionCycleAbsentProperty":"preactionCycleAbsent"}
+  ],
+  "science": {
+    "adjudicationBindingArtifactName": "slot21Adjudication",
+    "adjudicationPins": [
+      {"pinName":"runner","dependency":"slot21Runner","bindingArtifactName":"slot21Runner"},
+      {"pinName":"provider","dependency":"provider","bindingArtifactName":"r18ztProvider"},
+      {"pinName":"developmentGate","dependency":"developmentGate","bindingArtifactName":"developmentGate"},
+      {"pinName":"preValidationGate","dependency":"preValidationGate","bindingArtifactName":"prevalidationGate"},
+      {"pinName":"executedResult","dependency":"slot21Result","bindingArtifactName":"slot21Result"},
+      {"pinName":"executedGate","dependency":"slot21ExecutionGate","bindingArtifactName":"slot21ExecutionGate"}
+    ]
+  },
+  "preaction": {
+    "contractDependency": "preactionContract",
+    "toolDependency": "preactionTool",
+    "historyDependency": "historyAudit",
+    "publisherRuntimeHashMustBeDependency": true,
+    "invocationDependencyForbiddenToAvoidHashCycle": true
+  },
+  "signedRequest": {
+    "maximumZipBytes": 67108864,
+    "maximumEntryCount": 64,
+    "change": {
+      "launcherDependency": "launcher",
+      "source": "payload/Invoke-R18ZTBatchLaunch.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R18ZU1.ps1",
+      "installedSha256": "778CC2691C53C3B2B14579F03773ABEB4FDD45C38D2DA40DEAB53B82967E1DE5",
+      "approvedPredecessorSha256": ["778CC2691C53C3B2B14579F03773ABEB4FDD45C38D2DA40DEAB53B82967E1DE5"],
+      "allowCreate": true
+    }
+  },
+  "collision": {
+    "scannerDependency": "collisionScanner",
+    "gateOutputPath": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_P8_COLLISION.json",
+    "gatePartialPath": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_P8_COLLISION.json.partial",
+    "expectedPreflightSchema": "argos_r18zu1_request_id_uniqueness_preflight_v3",
+    "expectedPreflightState": "PASS_R18ZU1_REQUEST_ID_UNIQUENESS_PREFLIGHT",
+    "expectedGateSchema": "argos_r18zu1_request_id_uniqueness_gate_v3",
+    "expectedGateState": "PASS_R18ZU1_REQUEST_ID_UNIQUENESS_ZERO_COLLISIONS",
+    "maximumStdoutBytes": 1048576,
+    "maximumDurationSeconds": 300,
+    "maximumAgeSeconds": 120,
+    "clockSkewAllowanceSeconds": 30,
+    "requiredNamespaceIds": ["SHARE_REQUEST_UPLOAD_PROCESSED_ARCHIVE","SHARE_RESPONSE_ARCHIVE"],
+    "optionalNamespaceIds": ["LOCAL_ROUTE_REQUEST_TO_ARGOS","LOCAL_ROUTE_REQUEST_FROM_GATEWAY","LOCAL_ROUTE_TO_JBOD","LOCAL_ENDPOINT_LEDGER","LOCAL_ROUTE_TO_ARGOS","LOCAL_ROUTE_FROM_JBOD","LOCAL_ROUTE_TO_GATEWAY"],
+    "optionalUnavailableAccepted": true,
+    "allAccessibleNamespacesMustBeScanned": true,
+    "mustRunImmediatelyBeforeFirstExternalWrite": true,
+    "localGateWriteBeforeExternalWrite": true
+  },
+  "route": {
+    "shareRoot": "\\\\shm-cifs\\Department\\DE-1302_FAB_BE_Engineering\\60_Saw_VI_Sort\\600_General\\Joshua.conn\\AVI_Images\\Argos\\Uploads\\InspectionRevs",
+    "requestRoot": "U:\\ProjectPortalRO\\requests",
+    "responseRoot": "U:\\ProjectPortalRO\\responses",
+    "readyPath": "U:\\ProjectPortalRO\\requests\\REQ_R18ZU1.ready.zip",
+    "uploadPath": "U:\\ProjectPortalRO\\requests\\REQ_R18ZU1.ready.zip.upload",
+    "processedPath": "U:\\ProjectPortalRO\\requests\\processed\\REQ_R18ZU1.ready.zip",
+    "persistentMappingMustRemain": true,
+    "createNew": true,
+    "sameDirectoryAtomicRename": true,
+    "automaticRetry": false
+  },
+  "collector": {
+    "responseFilePattern": "*.ready.zip",
+    "maximumTopLevelResponseFiles": 4096,
+    "maximumNewResponseCandidates": 16,
+    "maximumResponseZipBytes": 67108864,
+    "maximumResponseEntries": 16,
+    "maximumExtractedBytes": 67108864,
+    "maximumResultJsonBytes": 1048576,
+    "maximumStdoutJsonBytes": 1048576,
+    "clockSkewAllowanceSeconds": 60,
+    "expectedResponseState": "PASS_MAINTENANCE_PATCH",
+    "expectedPayloadPaths": ["MAINTENANCE.stderr.txt","MAINTENANCE.stdout.txt","RESULT.json"],
+    "resultPayloadPath": "RESULT.json",
+    "stdoutPayloadPath": "MAINTENANCE.stdout.txt",
+    "resultRequestIdProperty": "requestId",
+    "resultStateProperty": "state",
+    "expectedResultState": "PASS_MAINTENANCE_PATCH",
+    "expectedJbodOutputRoot": "D:\\A2\\o\\ocv\\R18ZU1",
+    "partialExtractionRoot": "C:\\R18ZU1L1.partial",
+    "finalExtractionRoot": "C:\\R18ZU1L1",
+    "allowedAbsoluteLocalWriteRoots": ["C:\\R18ZU1L1.partial","C:\\R18ZU1L1"],
+    "pollingAuthorized": false,
+    "completionCollectionAuthorized": false
+  },
+  "outputs": {
+    "invocationPath": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_PUBLICATION_INVOCATION_V8.json",
+    "applyIntentPath": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU_P8_APPLY_INTENT.json",
+    "publishGatePath": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU1V8_PUBLISH_GATE.json",
+    "publishGatePartialPath": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU1V8_PUBLISH_GATE.partial",
+    "collectionGatePath": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU1V1_LR_GATE.json",
+    "collectionGatePartialPath": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU1V1_LR_GATE.partial",
+    "collectionGateRecoveryPartialPath": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU1V1_LR_GATE.r.partial"
+  }
+}
