@@ -1,0 +1,100 @@
+{
+  "artifacts": {
+    "developmentGate": {
+      "bytes": 2346,
+      "path": "work/OPENCV_SCRIBE_R18ZU/R18ZU_CANONICAL_Z_DEVELOPMENT_GATE_V2.json",
+      "sha256": "31C5AD7F7E2A20ACB7CD6542808375D537323247EF4A56DF81C6F92B92209470"
+    },
+    "developmentScript": {
+      "bytes": 16244,
+      "path": "work/OPENCV_SCRIBE_R18ZU/Develop-R18ZUCanonicalZ.py",
+      "sha256": "A999BF12DA1CAF374E3F7A17FCBE3000DCF75DB1D9096DCD94668DC5FD0A5207"
+    },
+    "localTest": {
+      "bytes": 31845,
+      "path": "work/OPENCV_SCRIBE_R18ZU/Test-R18ZULocal.py",
+      "sha256": "077A91299C22ACFAFB4B39BE6E50B7FB61799C331B92AFE21C87EC52AF352076"
+    },
+    "provider": {
+      "bytes": 32197,
+      "path": "work/OPENCV_SCRIBE_R18ZU/ArgosOpenCvScribeV1R18ZU.py",
+      "sha256": "935BAAE98331FF128D4204B6C8AB2E7EBEF8A38B2773F4ACCE59AE3A78C7FF87"
+    },
+    "r18qGate": {
+      "bytes": 22340,
+      "path": "work/OPENCV_SCRIBE_R18Q/R18Q_LOCAL_GATE.json",
+      "sha256": "E080BDC20040973E6E9F533B2C650B60FFBD7BA939A375ABC9E33F6C4AE53111"
+    },
+    "r18rGate": {
+      "bytes": 28931,
+      "path": "work/OPENCV_SCRIBE_R18R/R18R_LOCAL_GATE.json",
+      "sha256": "566EB33649697713F5E0EFD3E0F04F9861333103BBBC1C1BACFEDE3CD184C82A"
+    },
+    "r18ztDevelopmentGate": {
+      "bytes": 52026,
+      "path": "work/OPENCV_SCRIBE_R18ZT/R18ZT_DEVELOPMENT_GATE_20260906C/R18ZT_GENERIC_HOLD_RESCUE_DEVELOPMENT_GATE.json",
+      "sha256": "D71C6356D7FD091274C80E25F1B840C537A1325939DB444AEB729A1E42866FAD"
+    },
+    "r18ztPrevalidationGate": {
+      "bytes": 34243,
+      "path": "work/OPENCV_SCRIBE_R18ZT_PRE_SLOT/R18ZT_PRE_VALIDATION_GATE_20260906A/R18ZT_PRE_VALIDATION_BOUNDED_REGRESSION_GATE.json",
+      "sha256": "A5054CB689B257819AD00B639FA9B55E2078B9193DDCB41776F7B39987606B52"
+    },
+    "r18ztScienceGate": {
+      "bytes": 3163,
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_PACKAGE_C/R18ZT_SCIENCE_GATE_V2.json",
+      "sha256": "9589306528B61B3689FC8702160339578F1F106D0DE057FB74108CFEDF213E99"
+    },
+    "r18ztSlot21Adjudication": {
+      "bytes": 14233,
+      "path": "work/OPENCV_SCRIBE_R18ZT_SLOT21/R18ZT_SLOT21_POST_RESULT_ADJUDICATION_GATE_20260906A.json",
+      "sha256": "E526EDF07597D3F71A52FABAD7E93941A0FE3CD34003B6F0595C9D3992234A7D"
+    }
+  },
+  "classification": "DIAGNOSTIC_ONLY",
+  "invariants": {
+    "crosswalkReadSuppressedBySyntheticUnitHook": true,
+    "externalAccessPerformed": false,
+    "externalExecutedResultFilesRead": false,
+    "identityAuthority": false,
+    "imageBytesRead": false,
+    "inheritedEvidenceReexecuted": false,
+    "productionAuthority": false,
+    "publicationAuthority": false,
+    "realImageReplayPerformed": false,
+    "validationOnlyZResultRead": false
+  },
+  "regressionEvidence": {
+    "blankCaseCount": 5,
+    "blankEvaluatedViewCount": 40,
+    "blankEvidenceMode": "R18Q_R18R_DIRECT_PLUS_R18ZT_INHERITED_NOT_RERUN",
+    "k22EvidenceMode": "DIRECT_R18R_LOCAL_PLUS_R18ZT_INHERITED_NOT_RERUN",
+    "k22ExactImageFirstString": "13DCK060SUF5",
+    "r18ztAcceptedCorrect": 312,
+    "r18ztAcceptedWrong": 0,
+    "r18ztExactFoldCount": 49,
+    "r18ztReferenceQueries": 475,
+    "r18zuRealNonZFalseAcceptanceCount": 0,
+    "r18zuRealNonZReferenceCount": 474,
+    "r18zuRenderedNonZFalseAcceptanceCount": 0,
+    "r18zuRenderedNonZVariantCount": 7560,
+    "slot21EvidenceMode": "PINNED_EXECUTED_RESULT_POST_RESULT_ADJUDICATION_NOT_RERUN",
+    "slot21ExactImageFirstString": "13HFX135SUE3"
+  },
+  "schema": "argos_opencv_scribe_r18zu_non_image_regression_gate_v1",
+  "state": "PASS_R18ZU_NON_IMAGE_REGRESSION",
+  "test": {
+    "bytes": 15820,
+    "path": "work/OPENCV_SCRIBE_R18ZU/Test-R18ZUNonImageRegressionGate.py",
+    "sha256": "DF07171D6CD8681612EE4AE7BA34DDD7E83EE72232502ACC2B8F274A1EF5AB7C"
+  },
+  "unitTests": {
+    "additionalFailClosedTestCount": 5,
+    "errors": 0,
+    "existingTestMethodCount": 24,
+    "failures": 0,
+    "passed": true,
+    "skipped": 0,
+    "testsRun": 29
+  }
+}

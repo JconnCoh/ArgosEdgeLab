@@ -1,0 +1,62 @@
+{
+  "schema": "argos_opencv_scribe_authenticated_data_pull_qualification_adapter_v1",
+  "state": "LOCAL_AUTHENTICATED_SIGNED_PULL_ORIENTED_DETECTOR_INPUT",
+  "qualificationScope": "EXACT_LOCAL_COPY_FROM_AUTHENTICATED_SIGNED_DATA_PULL_OF_ORIENTED_DETECTOR_INPUTS_ONLY",
+  "physicalIdentity": "62623-743_20260720111120_Slot04",
+  "approvedRoot": "JBOD_PROCESSOR_REVIEW",
+  "request": {
+    "requestId": "REQ_20260903T171128612Z_R18A",
+    "retried": false
+  },
+  "response": {
+    "responseId": "R_84B9CB78722E_20260903172040421_2b8e31ed",
+    "state": "PASS_DATA_PULL",
+    "signedResponseVerified": true,
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "sourceZipSha256": "CBA4E0A078D867BD13FD77F49628B32F83B72FC203BC6C302C39D33352600F7B",
+    "responseManifestSha256": "B4BF1FCBC9C8541744F1B8AF52AC62A7B77AF21F8A27AE358287A9592D57F2B4",
+    "responseSignatureSha256": "6B22709F3A96E98381B3A7771860F578062C8BCF4B8417B8721EF65F1E319BC4",
+    "resultSha256": "685D4ABA39D1954F79015A4D287E6DC09E44613D355493A1EF1033F12FB70077",
+    "payloadSha256": "2E2CF095735F6457C45A7A7E65B623A9E2A8B91F83909092824C8D4ABC3136D2"
+  },
+  "terminalResponseGate": {
+    "path": "work/OPENCV_SCRIBE_R18A/R18A_TERMINAL_RESPONSE_GATE_R2.json",
+    "sha256": "326029AFC10633010FA058F63B59D9E37C102B3B2EDEC9C648201C40D67AAB64",
+    "state": "PASS_R18A_SIGNED_FRESH_LOT_EXISTING_CROPS_COLLECTED",
+    "returnedFileCount": 24
+  },
+  "inputs": [
+    {
+      "channel": "BF",
+      "entryPath": "data/JBOD_PROCESSOR_REVIEW/identity/proposals/62623-743_20260720111120_Slot04/scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "bytes": 2227346,
+      "sha256": "DE2C242EB6AD0D188E071215D2065E44EDAE4DFE9B2FDD1FB21A03CB7BB77170"
+    },
+    {
+      "channel": "DF",
+      "entryPath": "data/JBOD_PROCESSOR_REVIEW/identity/proposals/62623-743_20260720111120_Slot04/scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "bytes": 1922542,
+      "sha256": "AB39CAE7C402F6294076F6809BC8A369074867EAC282303983E81BD39427197D"
+    }
+  ],
+  "qualificationTranslation": {
+    "from": "LOCAL_AUTHENTICATED_SIGNED_PULL_ORIENTED_DETECTOR_INPUT",
+    "toInternalExecutionMode": "QUALIFIED_INSTALLED_ORIENTED_DETECTOR_INPUT",
+    "changesDetectorPixelsOrHypothesisSelection": false
+  },
+  "legacyProducerEvidence": {
+    "proposalMetadataIncludedInSignedPull": true,
+    "multiChannelSummaryIncludedInSignedPull": false,
+    "proposalOrSummaryPathsSynthesized": false,
+    "proposalOrSummaryHashesSynthesized": false,
+    "extractedFilesRepresentedAsInstalledProvenance": false
+  },
+  "truthIncluded": false,
+  "identityAccepted": false,
+  "reviewOnly": true,
+  "referenceAdmissionAuthorized": false,
+  "trainingAuthorized": false,
+  "xmlAuthorized": false,
+  "productionAuthorized": false,
+  "providerActivationAuthorized": false
+}

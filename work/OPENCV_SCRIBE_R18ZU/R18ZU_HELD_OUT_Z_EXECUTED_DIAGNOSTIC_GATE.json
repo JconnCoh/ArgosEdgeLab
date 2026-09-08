@@ -1,0 +1,101 @@
+{
+  "schema": "argos_opencv_scribe_r18zu_held_out_z_executed_diagnostic_gate_v1",
+  "state": "PASS_Z_DECIPHERING_HOLD_STRICT_EIGHT_RETAINED_HYPOTHESIS_COMPARABILITY",
+  "disposition": "DIAGNOSTIC_ONLY",
+  "physicalIdentity": "62623-743_20260720111120_Slot04",
+  "execution": {
+    "jobCreatedUtc": "2026-09-08T20:08:27.246288Z",
+    "providerRunCount": 1,
+    "automaticRetryCount": 0,
+    "rerunAuthorized": false,
+    "outputRoot": "C:\\R18ZUH1",
+    "jobSha256": "2FEC7836C47A7D345352BFF159FAE0DC0CE58C76F055B9F8304C846FC34A23A1",
+    "resultSha256": "1260B2D34D61F63668F6EF0260C1E938DC989A3570CD9B47BD602EFC8905232D",
+    "executionGateSha256": "A96C487C58B297646E26E986F491FED7041E8A4967D5598B262C3BF30D9D15E6",
+    "executionGateState": "HOLD_R18ZU_EXECUTED_VALIDATION_FAILED_NO_RETRY",
+    "executionGateDisposition": "WITHDRAWN"
+  },
+  "code": {
+    "runnerSha256": "6B93E4AC3844CBE633DF77B9316C71EEC7A221E2D633F234A76F676774AC6AC9",
+    "providerSha256": "935BAAE98331FF128D4204B6C8AB2E7EBEF8A38B2773F4ACCE59AE3A78C7FF87",
+    "r11ProviderSha256": "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9",
+    "canonicalZDevelopmentGateSha256": "31C5AD7F7E2A20ACB7CD6542808375D537323247EF4A56DF81C6F92B92209470",
+    "signedPullQualificationAdapterSha256": "43367D6F468AA7022308D03DE08DFB98DDD8DDCDADFD2C8D94CEE508B54C6094"
+  },
+  "sources": {
+    "qualification": "LOCAL_AUTHENTICATED_SIGNED_PULL_ORIENTED_DETECTOR_INPUT",
+    "bfSha256": "DE2C242EB6AD0D188E071215D2065E44EDAE4DFE9B2FDD1FB21A03CB7BB77170",
+    "dfSha256": "AB39CAE7C402F6294076F6809BC8A369074867EAC282303983E81BD39427197D",
+    "sourceBytesChanged": false,
+    "truthUsedDuringProviderSelection": false
+  },
+  "deciphering": {
+    "state": "PASS_Z_DECIPHERING_ON_RETAINED_FULL_CHAIN_HYPOTHESIS",
+    "selectedChannel": "BF",
+    "selectedPolarity": "DARK",
+    "selectedDirection": "FORWARD",
+    "selectedImageFirstString": "147Z6157SUA5",
+    "selectedSelectionScore": 0.9547635449691466,
+    "boundaryComplete": true,
+    "checksumValid": true,
+    "expectedCheckCharacters": "A5",
+    "observedCheckCharacters": "A5",
+    "ocrEnvelopePassed": true,
+    "heldPositions": [],
+    "zPosition": 4,
+    "zSelected": true,
+    "zAdmissionMode": "UNOBSERVED_ZERO_LINEAGE_CANONICAL_Z_RUN_GEOMETRY",
+    "zGeometryPassed": true,
+    "zInheritedScore": 0.6427746324353658,
+    "zScoreIncreased": false,
+    "coveredRivalInsideEnvelope": false,
+    "checksumOrTruthChangedGlyphSelection": false
+  },
+  "hypothesisCompleteness": {
+    "state": "HOLD_STRICT_EIGHT_RETAINED_HYPOTHESIS_COMPARABILITY",
+    "fixedPublicLoopViewCount": 8,
+    "allEightViewsNecessarilyAttempted": true,
+    "allEightViewsNecessarilyAttemptedIsSourceDerivedInference": true,
+    "attemptInference": "The pinned public R11 direct-input path loops over BF and DF, DARK and BRIGHT, and FORWARD and REVERSE_180. Each evaluator call either appends a hypothesis immediately or catches ValueError and continues. The provider returned normally and no later filter can remove rows at this cardinality.",
+    "retainedHypothesisCount": 2,
+    "retained": [
+      "BF/DARK/FORWARD",
+      "BF/DARK/REVERSE_180"
+    ],
+    "missingAfterSuppressedValueError": [
+      "BF/BRIGHT/FORWARD",
+      "BF/BRIGHT/REVERSE_180",
+      "DF/DARK/FORWARD",
+      "DF/DARK/REVERSE_180",
+      "DF/BRIGHT/FORWARD",
+      "DF/BRIGHT/REVERSE_180"
+    ],
+    "suppressedExceptionDetailsRecoverableFromThisRun": false,
+    "comparableEightRetainedHypothesisResult": false
+  },
+  "resultLevel": {
+    "state": "SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID",
+    "imageFirstString": "147Z6157SUA5",
+    "proposedString": "147Z6157SUA5",
+    "checksumVerifiedCandidateCount": 1,
+    "ambiguityResolutionState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+    "eligibleIdentity": false,
+    "holds": [
+      "SCRIBE_REFERENCE_COVERAGE_HOLD"
+    ]
+  },
+  "conclusions": {
+    "zDecipheringSucceeded": true,
+    "strictEightRetainedHypothesisQualificationSucceeded": false,
+    "overallProviderQualificationClaimed": false,
+    "heldWrongCountedAsSuccess": false,
+    "identityAccepted": false,
+    "referenceBankAdmissionPerformed": false,
+    "trainingEligible": false,
+    "xmlEligible": false,
+    "productionEligible": false,
+    "publicationAuthorizedByThisGate": false,
+    "targetTuningAfterExecutionAuthorized": false,
+    "targetRerunAuthorized": false
+  }
+}
