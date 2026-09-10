@@ -1,0 +1,85 @@
+{
+  "schema": "argos_opencv_scribe_r18zv1_generic_alternative_envelope_development_freeze_v1",
+  "state": "PASS_R18ZV1_TARGET_EXCLUDED_GENERIC_BOUNDARY_FROZEN_BEFORE_BATCH_VALIDATION",
+  "classification": "DIAGNOSTIC_ONLY",
+  "createdUtc": "2026-09-10T12:44:37.6758229Z",
+  "scope": "LOCAL_DETECTOR_DRAFT_ONLY",
+  "frozenInputs": {
+    "r18zuProvider": {
+      "path": "work/OPENCV_SCRIBE_R18ZU/ArgosOpenCvScribeV1R18ZU.py",
+      "sha256": "935BAAE98331FF128D4204B6C8AB2E7EBEF8A38B2773F4ACCE59AE3A78C7FF87"
+    },
+    "r18vEnvelopeGate": {
+      "path": "work/OPENCV_SCRIBE_R18V/R18V_GLYPH_ENVELOPE_GATE.json",
+      "sha256": "BEA75FAC417BEE9D0DB5B3302AEEAD15053C46A2AC434BBB7A49E04AADC437C9"
+    },
+    "r18ztDevelopmentGate": {
+      "path": "work/OPENCV_SCRIBE_R18ZT/R18ZT_DEVELOPMENT_GATE_20260906C/R18ZT_GENERIC_HOLD_RESCUE_DEVELOPMENT_GATE.json",
+      "sha256": "D71C6356D7FD091274C80E25F1B840C537A1325939DB444AEB729A1E42866FAD"
+    }
+  },
+  "developmentPartition": {
+    "exactLineageFoldCount": 49,
+    "referenceQueryCount": 475,
+    "thresholdSelectionQueryCount": 474,
+    "excludedTruthLabels": ["Z"],
+    "validationBatchResultsReadBySweep": false,
+    "mesTruthReadBySweep": false,
+    "checksumUsed": false,
+    "lotSlotIdentityUsed": false
+  },
+  "boundaryDerivation": {
+    "existingMaximumNormalizedDistance": 0.8,
+    "largestCorrectAlternativeCorrectionDistance": 0.7667626939915576,
+    "firstIncorrectAlternativeCorrectionDistance": 0.8942548122972407,
+    "separationMidpoint": 0.8305087531443992,
+    "roundingRule": "ROUND_DOWN_TO_TWO_DECIMAL_PLACES",
+    "frozenMaximumNormalizedDistance": 0.83,
+    "candidateSweep": {
+      "0.80": {"correctAlternativeCorrections": 4, "wrongAlternativeCorrections": 0},
+      "0.82": {"correctAlternativeCorrections": 4, "wrongAlternativeCorrections": 0},
+      "0.85": {"correctAlternativeCorrections": 4, "wrongAlternativeCorrections": 0},
+      "0.88": {"correctAlternativeCorrections": 4, "wrongAlternativeCorrections": 0},
+      "0.89": {"correctAlternativeCorrections": 4, "wrongAlternativeCorrections": 0},
+      "0.90": {"correctAlternativeCorrections": 4, "wrongAlternativeCorrections": 1}
+    }
+  },
+  "runtimeRule": {
+    "selectedLabelMayChange": true,
+    "changeMechanism": "UNCHANGED_UNIQUE_RECIPROCALLY_SEPARATED_COVERED_ENVELOPE_ONLY",
+    "sparseOrUnobservedAdmissionAdded": false,
+    "scoreMayIncrease": false,
+    "newLabelSpecificRule": false,
+    "canonicalZRuleChanged": false,
+    "r18qStrongStructureRuleChanged": false,
+    "r18rReciprocalResolverChanged": false,
+    "hypothesisOrderingRuleChanged": false
+  },
+  "developmentOutcomeAtFrozenBoundary": {
+    "alternativeCorrections": 4,
+    "alternativeCorrectionsCorrect": 4,
+    "alternativeCorrectionsWrong": 0,
+    "r18ztAcceptedCorrect": 312,
+    "r18ztAcceptedWrong": 0,
+    "r18ztHeld": 163
+  },
+  "stopLoss": {
+    "newExecutableFilesMaximum": 1,
+    "newExecutableLinesMaximum": 80,
+    "changedExistingFilesMaximum": 0,
+    "localResultRootsMaximum": 1,
+    "localInfrastructureBytesMaximum": 10485760,
+    "packageAttempts": 0
+  },
+  "authority": {
+    "reviewOnly": true,
+    "identityAcceptanceAuthorized": false,
+    "referenceAdmissionAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "publicationAuthorized": false,
+    "jbodMutationAuthorized": false
+  },
+  "nextAction": "Implement only the frozen 0.83 generic envelope boundary in a fresh provider wrapper, rerun target-excluded development and non-image regression, then evaluate the already-executed R18ZU mismatch cohort once without tuning."
+}
