@@ -1,0 +1,37 @@
+{
+  "schema":"argos_opencv_scribe_r18zv1_package_b_powershell_safety_gate_v3",
+  "checkedUtc":"2026-09-10T16:12:50.4800806Z",
+  "state":"PASS_R18ZV1_PACKAGE_B_POWERSHELL_SAFETY",
+  "requestId":"REQ_RZV1",
+  "bindingRecordSha256":"DF4C66EA1E3E707E70D48F38D532EC331D5F840307578521F532A4B2D32F6B14",
+  "cloneGateSha256":"0D1823DC98F154322CEFA86D4E72C9E187BE867098B4D5A9F9033D443D3B5275",
+  "windowsPowerShell51":true,
+  "allParserChecksPassed":true,
+  "allHarnessChecksPassed":true,
+  "allWrapperChecksPassed":true,
+  "allCallerConsumerChecksPassed":true,
+  "pythonEnvelopeAstParsePassed":true,
+  "orderedGenerationEvidence":{"sourceHarnessesCheckedBeforeRemediation":true,"remediationCreatedBeforeGeneratedBytes":true,"rawCloneGateWrittenAfterGeneratedBytesFinal":true,"generatedHarnessesCheckedAfterFinalExecutableEdits":true,"onlyBuilderChangedAfterV2Gate":true,"unchangedScriptChecksInheritedByExactHash":true},
+  "windowsPowerShell51JsonDecimalCompatibility":{"selectionScoreType":"System.Decimal","decimalExactComparisonPassed":true,"doubleExactComparisonNotReliedUpon":true,"decimalPredicateRetained":true},
+  "scriptChecks":[
+    {"path":"work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Invoke-R18ZV1BatchLaunchV1.ps1","bytes":79734,"sha256":"C663F1BF47415F97C727CBA577BC9D8A7345A4A85A530E972CA5C1BBB472B406","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","harnessParserErrors":0,"harnessViolations":0,"harnessWarnings":0,"wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT","callerConsumerParametersExact":true},
+    {"path":"work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Build-R18ZV1BatchRequestV1.ps1","bytes":73354,"sha256":"E06D4C7ECA2C8BC2B56B81D250521C9D754BCA8C70540D0EA7937B297B4F432D","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","harnessParserErrors":0,"harnessViolations":0,"harnessWarnings":0,"wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT","callerConsumerParametersExact":true},
+    {"path":"work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Publish-R18ZV1V1.ps1","bytes":56052,"sha256":"1B4753D280CD8B7F5B69DF5B7C4E8B37AD7E4F9E11437A74F7036F45CBE257B5","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","harnessParserErrors":0,"harnessViolations":0,"harnessWarnings":0,"wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT","callerConsumerParametersExact":true},
+    {"path":"work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Collect-R18ZV1LaunchResponseV1.ps1","bytes":42892,"sha256":"1837551A93F4F7E667EE03CDE4DE5379C1B126E2AA1BD200222A791AE6D2D640","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","harnessParserErrors":0,"harnessViolations":0,"harnessWarnings":0,"wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT","callerConsumerParametersExact":true},
+    {"path":"work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Test-R18ZV1RequestIdUniquenessV1.ps1","bytes":12564,"sha256":"C00679FD30E06C5DCCA4E10A672E7F023E2915A55436036229818324D56C0C1B","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","harnessParserErrors":0,"harnessViolations":0,"harnessWarnings":0,"wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT","callerConsumerParametersExact":true}
+  ],
+  "callerConsumerChecks":[
+    {"caller":"builder","consumer":"launcher","namedArguments":["Preflight","Rehearsal","PackageValidationOnly","PayloadRoot","WorkRoot","OutputRoot","CanonicalProposalRoot","PythonPath","ExpectedPythonSha256","ReferenceBundlePath","ExpectedComputerName"],"exact":true},
+    {"caller":"publisher","consumer":"collisionScanner","namedArguments":["Preflight","Gate","OutputPath"],"exact":true},
+    {"caller":"operator","consumer":"publisher","namedArguments":["InvocationManifest","Preflight","Apply"],"exact":true},
+    {"caller":"operator","consumer":"collector","namedArguments":["InvocationManifest","Preflight","Collect"],"exact":true}
+  ],
+  "conditionalScalarizationViolations":0,
+  "externalPowerShellTypedObjectAssumptions":0,
+  "formatDependentEvidence":0,
+  "broadRecursiveWorkspaceEnumeration":false,
+  "metadataOnly":true,
+  "targetExecuted":false,
+  "externalMutationPerformed":false,
+  "supersedes":{"path":"work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_POWERSHELL_SAFETY_GATE_V2.json","sha256":"1E2CBFBBC508CE0C4352E1347871DFB1CD82ABEAAE0C7C577AC92F74523EDE48","reason":"BUILDER_ONLY_PREACTION_COLLECTION_EVIDENCE_PATH_NAMESPACE_CORRECTION"}
+}

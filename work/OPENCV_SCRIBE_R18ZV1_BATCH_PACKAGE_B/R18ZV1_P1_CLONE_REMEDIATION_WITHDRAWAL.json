@@ -1,0 +1,37 @@
+{
+  "schema": "argos_opencv_scribe_r18zv1_clone_remediation_withdrawal_v1",
+  "createdUtc": "2026-09-10T16:40:38.8053582Z",
+  "state": "WITHDRAWN_R18ZV1_P1_CLONE_REMEDIATION_AFTER_PUBLISHER_V1_RESTORATION_NON_REUSABLE",
+  "lifecycle": "WITHDRAWN",
+  "requestId": "REQ_RZV1",
+  "withdrawnArtifact": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_P1_CLONE_REMEDIATION.json",
+    "bytes": 1847,
+    "sha256": "A8CE3CB4C15A7C7E6DFF4E8CA1161DCBDA5ED5789834FA2FEDF0E5FF74BCC23F"
+  },
+  "reason": "The P1 remediation targeted Publish-R18ZV1V1.ps1 while those bytes were temporarily corrected. Publisher V1 was then restored byte-for-byte as immutable time-of-build evidence, and the correction moved to fresh successor Publish-R18ZV1V2.ps1.",
+  "executionEvidence": {
+    "officialCloneUtilityPreflightOnly": true,
+    "rawGateCreated": false,
+    "compositeGateCreated": false,
+    "externalAccessPerformed": false,
+    "externalMutationPerformed": false,
+    "publicationPerformed": false,
+    "targetExecuted": false,
+    "imageBytesRead": false
+  },
+  "preservation": {
+    "timeOfBuildEvidence": false,
+    "publicationUseAllowed": false,
+    "futureReuseAllowed": false,
+    "signedRequestPayloadChanged": false,
+    "signedRequestZipChanged": false
+  },
+  "freshSuccessor": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_P2_CLONE_REMEDIATION.json",
+    "targetPublisherPath": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Publish-R18ZV1V2.ps1",
+    "targetPublisherSha256": "2CF89B348BE784F31E3EAB1DB2ECE61B6502A6F651062F5467E83A08B999E806"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

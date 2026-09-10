@@ -1,0 +1,51 @@
+{
+  "schema": "argos_opencv_scribe_r18zv1_recovery_intent_withdrawal_v1",
+  "recordedUtc": "2026-09-10T15:55:24.9965665Z",
+  "state": "WITHDRAWN_R18ZV1_RECOVERY_INTENT_V1_ACTION_TOKEN_MISMATCH_NON_REUSABLE",
+  "requestId": "REQ_RZV1",
+  "bindingRecordSha256": "DF4C66EA1E3E707E70D48F38D532EC331D5F840307578521F532A4B2D32F6B14",
+  "withdrawn": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_RECOVERY_INTENT.json",
+      "bytes": 5361,
+      "sha256": "67F48AA64ED5D5CD75540C591DC4467057C39A79126FB23C896ACAF7BA521D30"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_RECOVERY_INTENT_GATE.json",
+      "bytes": 1557,
+      "sha256": "0F1832283417C53D273934634A5BC75B6191937165B60E67EDA36364E60C6B57"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_PREACTION_GATE.json",
+      "bytes": 8219,
+      "sha256": "3F48F96AD50C31E0C52F986762BA60ED1BEB8C0E8D674FADD86271C8591371E1"
+    }
+  ],
+  "mismatch": {
+    "declaredProcessAction": "START_ONE_OWNED_BACKGROUND_R18ZV1_BATCH_WORKER",
+    "implementedProcessAction": "START_ONE_OWNED_BACKGROUND_R18ZT_BATCH_WORKER",
+    "implementedSuccessState": "PASS_R18ZT_BATCH_WORKER_STARTED",
+    "detectedBeforeBuilderPreflight": true
+  },
+  "effects": {
+    "packageAttemptCount": 0,
+    "builderPreflightExecuted": false,
+    "packageCreated": false,
+    "signatureCreated": false,
+    "externalAccessPerformed": false,
+    "publicationPerformed": false,
+    "targetExecuted": false,
+    "imageBytesRead": false
+  },
+  "recovery": {
+    "v1ArtifactsWillNotBeEditedOrReused": true,
+    "freshV2IntentAndGateRequired": true,
+    "builderBoundCloneAndPowerShellGatesMustBeRegenerated": true,
+    "preactionMustBeFresh": true
+  },
+  "mayBePackageParent": false,
+  "mayBePublicationParent": false,
+  "mayBeTemplate": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

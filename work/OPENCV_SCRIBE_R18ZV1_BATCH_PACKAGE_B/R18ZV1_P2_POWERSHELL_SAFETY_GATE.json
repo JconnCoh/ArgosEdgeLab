@@ -1,0 +1,78 @@
+{
+  "schema": "argos_opencv_scribe_r18zv1_publication_v2_powershell_safety_gate_v1",
+  "checkedUtc": "2026-09-10T16:45:20.0000000Z",
+  "state": "PASS_R18ZV1_PUBLICATION_V2_POWERSHELL_SAFETY",
+  "requestId": "REQ_RZV1",
+  "publicationRevision": "R18ZV1_PUBLICATION_BINDING_SCHEMA_CORRECTION_20260910P2",
+  "cloneGate": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_P2_CLONE_GATE.json",
+    "bytes": 2673,
+    "sha256": "9BE254CBC3A79C617620AD8BBA29DCB6C3301E0F711BF8BD9B91E1C023143FBC",
+    "state": "PASS_R18ZV1_PUBLICATION_V2_CLONE_LITERAL_GATE"
+  },
+  "scriptChecks": [
+    {
+      "role": "publisher",
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Publish-R18ZV1V2.ps1",
+      "bytes": 55998,
+      "sha256": "2CF89B348BE784F31E3EAB1DB2ECE61B6502A6F651062F5467E83A08B999E806",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "declaredParameters": ["InvocationManifest", "Preflight", "Apply"]
+    },
+    {
+      "role": "collector",
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Collect-R18ZV1LaunchResponseV1.ps1",
+      "bytes": 42892,
+      "sha256": "1837551A93F4F7E667EE03CDE4DE5379C1B126E2AA1BD200222A791AE6D2D640",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "declaredParameters": ["InvocationManifest", "Preflight", "Collect"]
+    },
+    {
+      "role": "collisionScanner",
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Test-R18ZV1RequestIdUniquenessV1.ps1",
+      "bytes": 12564,
+      "sha256": "C00679FD30E06C5DCCA4E10A672E7F023E2915A55436036229818324D56C0C1B",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "declaredParameters": ["Preflight", "Gate", "OutputPath"]
+    }
+  ],
+  "utilities": [
+    {
+      "path": "utilities/Confirm-ArgosPowerShellHarnessSafety.ps1",
+      "bytes": 14288,
+      "sha256": "94CF79624915831B26E7CCF5B799B905EF16F43B601FE73B324630736D55B731"
+    },
+    {
+      "path": "utilities/Confirm-ArgosPowerShellWrapper.ps1",
+      "bytes": 9828,
+      "sha256": "58D5DCFA48B7F7B809A0FB55C0730146A6FC1A1B78DFD559368BF70771F0F596"
+    }
+  ],
+  "windowsPowerShellEdition": "Desktop",
+  "windowsPowerShellMajor": 5,
+  "windowsPowerShellMinor": 1,
+  "allParserChecksPassed": true,
+  "allHarnessChecksPassed": true,
+  "allWrapperChecksPassed": true,
+  "topLevelMutationCount": 0,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "externalMutationPerformed": false,
+  "publicationPerformed": false,
+  "imageBytesRead": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

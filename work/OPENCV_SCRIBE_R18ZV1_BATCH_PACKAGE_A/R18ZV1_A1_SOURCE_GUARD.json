@@ -1,0 +1,83 @@
+{
+  "schema": "argos_opencv_scribe_r18zv1_package_a_source_guard_v1",
+  "checkedUtc": "2026-09-10T14:40:18Z",
+  "state": "PASS_R18ZV1_PACKAGE_A_ALL_SOURCES_GUARDED_BEFORE_GENERATION",
+  "requestId": "REQ_R18ZV1",
+  "approvedMechanicalScope": {
+    "executableFilesIncludingProvider": 6,
+    "carrierSourceFiles": 5,
+    "carrierPhysicalLines": 3477,
+    "carrierNonblankLines": 3303,
+    "carrierBytes": 270099,
+    "providerPhysicalLines": 100,
+    "providerNonblankLines": 81,
+    "providerBytes": 4096,
+    "totalPhysicalLines": 3577,
+    "totalNonblankLines": 3384,
+    "totalBytes": 274195
+  },
+  "sources": [
+    {
+      "role": "builder",
+      "path": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Build-R18ZUBatchRequestV1.ps1",
+      "bytes": 77715,
+      "sha256": "E0E4B99DC7EE7493E3A2F8751A632CABBBE4A36DFFBEA32499742AA0243A335C",
+      "harnessCheckedUtc": "2026-09-10T14:40:15.3562146Z",
+      "wrapperCheckedUtc": "2026-09-10T14:40:11.4485649Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "role": "launcher",
+      "path": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Invoke-R18ZUBatchLaunchV1.ps1",
+      "bytes": 79725,
+      "sha256": "778CC2691C53C3B2B14579F03773ABEB4FDD45C38D2DA40DEAB53B82967E1DE5",
+      "harnessCheckedUtc": "2026-09-10T14:40:16.2768656Z",
+      "wrapperCheckedUtc": "2026-09-10T14:40:12.2187751Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "role": "publisher",
+      "path": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Publish-R18ZU1V1.ps1",
+      "bytes": 57418,
+      "sha256": "C2C305A818988358472762C32ADF17F697931DAB59218A5879F1124E0AEAE17E",
+      "harnessCheckedUtc": "2026-09-10T14:40:16.6236615Z",
+      "wrapperCheckedUtc": "2026-09-10T14:40:11.8489595Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "role": "collector",
+      "path": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Collect-R18ZU1LaunchResponseV1.ps1",
+      "bytes": 42677,
+      "sha256": "8EB0E39533A3AA7BBA9E38E7312FE6C65CD0F0D5400E159C1DB95C00A7C43E2A",
+      "harnessCheckedUtc": "2026-09-10T14:40:17.3832470Z",
+      "wrapperCheckedUtc": "2026-09-10T14:40:14.7301081Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "executedCollectorIsWithdrawn": true,
+      "freshCloneMustCorrectCompactResultRequestIdAssumption": true
+    },
+    {
+      "role": "collisionScanner",
+      "path": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Test-R18ZU1RequestIdUniquenessV1.ps1",
+      "bytes": 12564,
+      "sha256": "F4FBDD378E2EA5D889211E8283F6B11CBAF8AE44E5E72EB65DF4EA3688A86970",
+      "harnessCheckedUtc": "2026-09-10T14:40:14.9877697Z",
+      "wrapperCheckedUtc": "2026-09-10T14:40:12.9242628Z",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    }
+  ],
+  "productProvider": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1/ArgosOpenCvScribeV1R18ZV1.py",
+    "bytes": 4096,
+    "sha256": "81B0AAAE1CBC044321CD0CDA5F1147202F7D8CB384D7E721A36B93AE0C24E2D7"
+  },
+  "allSourcesGuardedBeforeGeneration": true,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "publicationPerformed": false
+}

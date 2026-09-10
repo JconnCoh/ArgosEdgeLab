@@ -1,0 +1,127 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-10T16:00:50.9968643Z",
+  "state": "FROZEN_R18ZV1_PACKAGE_B_RECOVERY_INTENT",
+  "requestId": "REQ_RZV1",
+  "bindingRecordSha256": "DF4C66EA1E3E707E70D48F38D532EC331D5F840307578521F532A4B2D32F6B14",
+  "builderSha256": "675DF0B74D87789CE333108A421A8200D82BCC1443F570C963D82773A1020CC8",
+  "incidentId": "R18ZV1_REVIEW_BATCH_AFTER_R18ZU1_20260910",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"","sha256":""},
+    "classificationNote": "REQ_R18ZU1 has one matching authenticated signed PASS_MAINTENANCE_PATCH terminal response. Its frozen collector then failed locally on an optional duplicate RESULT.requestId field after extraction; that collector is withdrawn and not reused. Package A REQ_R18ZV1 was withdrawn before build or signature when its path budget reached 201. The current short-identity Package B has zero package attempts and no signed premise failure."
+  },
+  "packageWrapperStopLoss": {
+    "failuresBeforeOperatorReset": 5,
+    "operatorResetUtc": "2026-09-08T23:15:00.0000000Z",
+    "maximumFailuresAfterReset": 5,
+    "failuresAfterResetAtFreeze": 1,
+    "packageAttemptsAtFreeze": 0,
+    "stopOnFifthPackageOrWrapperCodingFailure": true,
+    "workspaceThreeDraftFailureStopLossAlsoApplies": true,
+    "parserOrInvocationTyposExcluded": true,
+    "currentFailure": "V1_RECOVERY_INTENT_ACTION_TOKEN_METADATA_MISMATCH_CAUGHT_BEFORE_BUILDER_PREFLIGHT"
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": true,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": ["START_ONE_OWNED_BACKGROUND_R18ZT_BATCH_WORKER"],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": true,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "E070135E8C211F2869623553C04AE2DDE65244760FC60457356B2FEEEFEED4EB"
+    },
+    "installedConfigEvidence": {
+      "path": "work/OPENCV_SCRIBE_R18W4S21/R18W4S21_ROUTE_PINS.json",
+      "sha256": "D1CDD46C70BFF4003E46D35BFC77754F9A9A742E51CA14D5AEAD2377E75B1D5E"
+    },
+    "capabilityEvidence": {
+      "path": "work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json",
+      "sha256": "381D3E9C4F17218DF37D8E8CE029853216E9BEA5A2FBDABC6AEB7861A29DC8A2"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+      "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"
+    },
+    "qualifiedAdminGate": {"path":"","sha256":""}
+  },
+  "observation": {
+    "exactSources": [],
+    "requestedCapabilities": [],
+    "requestedFields": [],
+    "decisionOptions": ["A","B","C","D"],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_RECOVERY_SUPPORTING_OBSERVATION.json",
+      "sha256": "C8F0D6741B8B8E5D5431DDBFBF0A2D6A1EA9CAAF6C8D11F46AFDCF12C84D0177"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "singleMutationAttemptScope": "LOCAL_PACKAGE_B_PREFLIGHT_TEST_BUILD_AND_SIGN_ONLY_UNTIL_SEPARATE_PUBLICATION_INVOCATION_RECHECKS_OPERATOR_AUTHORITY",
+    "externalMutationAttemptAuthorized": false,
+    "publicationAuthorized": false,
+    "automaticRetryAuthorized": false
+  },
+  "scope": {
+    "revision": "R18ZV1_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260910B",
+    "runnerRevision": "R18ZT_EXISTING_ORIENTED_CROPS_PUBLIC_PROVIDER_BATCH_20260908D",
+    "requestId": "REQ_RZV1",
+    "workRoot": "D:/A2/w/ocv/R18ZV1",
+    "outputRoot": "D:/A2/o/ocv/R18ZV1",
+    "proposalAlias": "D:/A2/w/ocv/R18ZV1/p",
+    "canonicalProposalRoot": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals",
+    "installedLauncher": "C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV02_R18ZV1.ps1",
+    "implementedProcessActionToken": "START_ONE_OWNED_BACKGROUND_R18ZT_BATCH_WORKER",
+    "implementedSuccessStateToken": "PASS_R18ZT_BATCH_WORKER_STARTED",
+    "allExistingQualifiedOrientedCropPairsAtLaunch": true,
+    "launchInventoryIncludesStableVerifiedScribesPresentBeforeInventory": true,
+    "launchInventoryExcludesRowsAddedAfterInventory": true,
+    "inventoryMutationAfterFreezeFailsClosed": true,
+    "frozenOcrScienceChanged": true,
+    "genericCanonicalZGeometryOnly": true,
+    "stopAtSignedUnpublished": true
+  },
+  "supersedes": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_RECOVERY_INTENT.json",
+    "sha256": "67F48AA64ED5D5CD75540C591DC4467057C39A79126FB23C896ACAF7BA521D30",
+    "reason": "CORRECT_DECLARED_PROCESS_ACTION_TO_EXACT_UNCHANGED_INHERITED_RUNTIME_TOKEN"
+  },
+  "authority": {
+    "localPackagePreparationAndSigningAuthorized": true,
+    "publicationAuthorized": false,
+    "maximumPublicationsAuthorizedByThisIntent": 0,
+    "automaticRetryAuthorized": false,
+    "identityAcceptanceAuthorized": false,
+    "automaticReferenceAdmissionAuthorized": false,
+    "automaticHoldClearanceAuthorized": false,
+    "providerActivationAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "sourceMutationOrDeletionAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

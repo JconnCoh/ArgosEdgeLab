@@ -1,0 +1,68 @@
+{
+  "schema": "argos_opencv_scribe_r18zv1_publication_clone_gate_v2",
+  "checkedUtc": "2026-09-10T16:42:37.5150986Z",
+  "state": "PASS_R18ZV1_PUBLICATION_V2_CLONE_LITERAL_GATE",
+  "requestId": "REQ_RZV1",
+  "publisherRevision": "R18ZV1_PUBLICATION_BINDING_SCHEMA_CORRECTION_20260910P2",
+  "utility": {
+    "path": "utilities/Confirm-ArgosCloneLiteralRemediation.ps1",
+    "bytes": 8233,
+    "sha256": "392C54BA5AE154D529FDB7C7D2C5CF584B5204EB0181BF7FB50599D3A86C495A",
+    "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode": "GATE"
+  },
+  "remediationManifest": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_P2_CLONE_REMEDIATION.json",
+    "bytes": 2194,
+    "sha256": "72654D0D6E1DBA0ACAC75B3A3F22399792855CF4F507FE11D587BA0B83748546",
+    "state": "FROZEN_PRE_GENERATION"
+  },
+  "rawUtilityGate": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_P2_CLONE_RAW_GATE.json",
+    "bytes": 1727,
+    "sha256": "1ED002AA19DF39DB4EA48B193977C5DE0043495C973B031051B4459E90C3D577",
+    "schema": "argos_clone_literal_remediation_gate_v1",
+    "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode": "GATE",
+    "pairCount": 1,
+    "violationCount": 0
+  },
+  "publisherPair": {
+    "source": {
+      "path": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Publish-R18ZU1V1.ps1",
+      "bytes": 57418,
+      "sha256": "C2C305A818988358472762C32ADF17F697931DAB59218A5879F1124E0AEAE17E"
+    },
+    "generated": {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Publish-R18ZV1V2.ps1",
+      "bytes": 55998,
+      "sha256": "2CF89B348BE784F31E3EAB1DB2ECE61B6502A6F651062F5467E83A08B999E806"
+    },
+    "literalRoots": [
+      "\\\\shm-cifs\\Department",
+      "C:\\ProgramData",
+      "U:\\ProjectPortalRO"
+    ],
+    "allRootsUnchangedAndExplicitlyAllowed": true
+  },
+  "withdrawnPredecessorRemediation": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_P1_CLONE_REMEDIATION.json",
+    "bytes": 1847,
+    "sha256": "A8CE3CB4C15A7C7E6DFF4E8CA1161DCBDA5ED5789834FA2FEDF0E5FF74BCC23F",
+    "withdrawalPath": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_P1_CLONE_REMEDIATION_WITHDRAWAL.json",
+    "withdrawalBytes": 1637,
+    "withdrawalSha256": "3E5895B144CB4008A2EBF0DC0BD91CFD9952C7B3EF5051B279B82F34C9D0A948",
+    "futureReuseAllowed": false
+  },
+  "sourceTemplatesGuardedBeforeGeneration": true,
+  "generatedArtifactGuardedAfterGeneration": true,
+  "violationCount": 0,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "externalMutationPerformed": false,
+  "publicationPerformed": false,
+  "imageBytesRead": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

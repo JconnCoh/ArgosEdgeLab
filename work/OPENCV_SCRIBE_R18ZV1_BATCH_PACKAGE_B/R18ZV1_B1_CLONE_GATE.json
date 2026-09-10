@@ -1,0 +1,77 @@
+{
+  "schema": "argos_opencv_scribe_r18zv1_package_b_clone_gate_v1",
+  "checkedUtc": "2026-09-10T15:38:01.2831014Z",
+  "state": "PASS_R18ZV1_PACKAGE_B_CLONE_LITERAL_GATE",
+  "requestId": "REQ_RZV1",
+  "bindingRecordSha256": "DF4C66EA1E3E707E70D48F38D532EC331D5F840307578521F532A4B2D32F6B14",
+  "utilityState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "rawUtilityGatePath": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_B1_CLONE_RAW_GATE.json",
+  "rawUtilityGateSha256": "55833A5B199E5ECCF0FC10CED349B28A7C70198DC3AFC5230CFEE4A7E8D3A193",
+  "rawUtilityGateBytes": 6926,
+  "builderCorrectionRemediationPath": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_B1_CLONE_REMEDIATION.json",
+  "builderCorrectionRemediationSha256": "43128DB3A5B870BACCB2C6AAEE9459BC597C96F1151212564C342ADD06E22A3F",
+  "packageCloneRemediationPath": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_B1_CLONE_REMEDIATION.json",
+  "packageCloneRemediationSha256": "43128DB3A5B870BACCB2C6AAEE9459BC597C96F1151212564C342ADD06E22A3F",
+  "publisherCloneRemediationPath": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_B1_CLONE_REMEDIATION.json",
+  "publisherCloneRemediationSha256": "43128DB3A5B870BACCB2C6AAEE9459BC597C96F1151212564C342ADD06E22A3F",
+  "sourceGuardPath": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_B1_SOURCE_GUARD.json",
+  "sourceGuardSha256": "7C368B8E647A7513030722A8C732BFF7210A3D92A93A1F95503D190FF5E3C2D6",
+  "sourceTemplatesGuardedBeforeGeneration": true,
+  "generatedArtifactsGuardedAfterGeneration": true,
+  "rawUtilityGateCheckedUtc": "09/10/2026 15:36:04",
+  "operatorApprovedMechanicalScope": {
+    "files": 6,
+    "maximumNonblankLines": 3384,
+    "maximumBytes": 274195,
+    "exactGeneratedNonblankLines": 3265,
+    "exactGeneratedBytes": 268668,
+    "withinApprovedLineLimit": true,
+    "withinApprovedByteLimit": true,
+    "additionalExecutableFilesBeyondApprovedSix": 0
+  },
+  "generatedArtifacts": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Build-R18ZV1BatchRequestV1.ps1",
+      "bytes": 73330,
+      "sha256": "29B9E88B29E21D79F4019D359D16B6CA2A0A7BB2044867AA534188B0C2AEB1F7",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Invoke-R18ZV1BatchLaunchV1.ps1",
+      "bytes": 79734,
+      "sha256": "C663F1BF47415F97C727CBA577BC9D8A7345A4A85A530E972CA5C1BBB472B406",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Publish-R18ZV1V1.ps1",
+      "bytes": 56052,
+      "sha256": "1B4753D280CD8B7F5B69DF5B7C4E8B37AD7E4F9E11437A74F7036F45CBE257B5",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Collect-R18ZV1LaunchResponseV1.ps1",
+      "bytes": 42892,
+      "sha256": "1837551A93F4F7E667EE03CDE4DE5379C1B126E2AA1BD200222A791AE6D2D640",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Test-R18ZV1RequestIdUniquenessV1.ps1",
+      "bytes": 12564,
+      "sha256": "C00679FD30E06C5DCCA4E10A672E7F023E2915A55436036229818324D56C0C1B",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    }
+  ],
+  "publisherIncluded": true,
+  "publisherRequiresSeparatePostBuildInvocationBoundGate": true,
+  "violationCount": 0,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

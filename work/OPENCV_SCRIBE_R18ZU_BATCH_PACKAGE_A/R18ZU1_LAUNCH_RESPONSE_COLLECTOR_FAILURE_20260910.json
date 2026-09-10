@@ -1,0 +1,60 @@
+{
+  "schema": "argos_opencv_scribe_launch_response_collector_failure_v1",
+  "recordedUtc": "2026-09-10T14:33:12Z",
+  "state": "WITHDRAWN_R18ZU1_FROZEN_COLLECTOR_RESULT_REQUEST_ID_SCHEMA_FAILURE_NON_REUSABLE",
+  "requestId": "REQ_R18ZU1",
+  "collector": {
+    "path": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Collect-R18ZU1LaunchResponseV1.ps1",
+    "sha256": "8EB0E39533A3AA7BBA9E38E7312FE6C65CD0F0D5400E159C1DB95C00A7C43E2A",
+    "lifecycleBeforeExecution": "FROZEN",
+    "preflightState": "PASS_R18ZU1V8_ONE_SIGNED_LAUNCH_RESPONSE_PREFLIGHT",
+    "collectAttemptCount": 1,
+    "retryAuthorized": false,
+    "mayBeCollectorParent": false
+  },
+  "authenticatedResponse": {
+    "sourceZip": "U:\\ProjectPortalRO\\responses\\R_3ACBBED86962_20260910010611555_e8514657.ready.zip",
+    "sourceZipBytes": 3174,
+    "sourceZipSha256": "5C46983DA7790EE6103FA8E0F19F01C319F3CCB6778F18DA05ACA51047BF446D",
+    "manifestSha256": "14C7618237404B05B15360B2D9E3831665E5F9AA78BD0621AC2DBA321BDC2EF0",
+    "signatureSha256": "67C4EC1200E3D7DC53599F08849BE1B3ED43AFF54AE64804DD07E70B4289D443",
+    "signedResponseVerifiedInPreflight": true,
+    "manifestRequestIdMatched": true,
+    "manifestState": "PASS_MAINTENANCE_PATCH",
+    "endpointRequestTerminal": true,
+    "batchCompletionClaimed": false
+  },
+  "failure": {
+    "message": "R18ZT endpoint RESULT property is absent: requestId",
+    "resultPath": "C:\\R18ZU1L1.partial\\RESULT.json",
+    "resultBytes": 438,
+    "resultSha256": "49CB972AC6C2EC9CA28284DCBF4BE8B21697BEBDEF597036FF5F2A9223C763AF",
+    "resultSchema": "argos_project_portal_maintenance_result_v1",
+    "resultState": "PASS_MAINTENANCE_PATCH",
+    "resultEntryPoint": "payload/Invoke-R18ZTBatchLaunch.ps1",
+    "resultChangedFiles": 1,
+    "resultExitCode": 0,
+    "resultRequestIdPresent": false,
+    "cause": "COLLECTOR_REQUIRED_AN_OPTIONAL_DUPLICATE_RESULT_LEVEL_REQUEST_ID_ALREADY_CRYPTOGRAPHICALLY_BOUND_BY_THE_SIGNED_RESPONSE_MANIFEST"
+  },
+  "effects": {
+    "partialExtractionRoot": "C:\\R18ZU1L1.partial",
+    "partialExtractionPreserved": true,
+    "finalExtractionRootCreated": false,
+    "collectionGateCreated": false,
+    "externalMutationPerformed": false,
+    "publicationPerformed": false,
+    "jbodExecutionPerformedByCollector": false,
+    "imageBytesRead": false,
+    "resultTreeEnumerated": false,
+    "taskOrProcessQueryPerformed": false
+  },
+  "recovery": {
+    "frozenCollectorWillNotBeEditedOrRetried": true,
+    "freshSuccessorCollectorRequired": true,
+    "successorMustBindRequestIdentityFromSignedManifest": true,
+    "successorMustValidateCompactResultSchemaBeforeFreeze": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

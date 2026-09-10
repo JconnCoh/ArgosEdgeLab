@@ -1,0 +1,42 @@
+{
+  "schema": "argos_recovery_intent_preflight_v1",
+  "checkedUtc": "2026-09-10T16:03:25.4180340Z",
+  "state": "PASS_ARGOS_RECOVERY_INTENT",
+  "requestId": "REQ_RZV1",
+  "bindingRecordSha256": "DF4C66EA1E3E707E70D48F38D532EC331D5F840307578521F532A4B2D32F6B14",
+  "builderSha256": "675DF0B74D87789CE333108A421A8200D82BCC1443F570C963D82773A1020CC8",
+  "intentPath": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_RECOVERY_INTENT_V2.json",
+  "intentSha256": "B3352F18DE9072CA4ABFAEC4E77CEE201886937B3A0F10A5044BD62E609D3511",
+  "incidentId": "R18ZV1_REVIEW_BATCH_AFTER_R18ZU1_20260910",
+  "mode": "MUTATE",
+  "supportedRemedy": "B",
+  "implementedProcessActionToken": "START_ONE_OWNED_BACKGROUND_R18ZT_BATCH_WORKER",
+  "artifactLifecycle": "FROZEN",
+  "signedPremiseFailures": 0,
+  "mutationStopLossActive": false,
+  "packageWrapperFailuresBeforeOperatorReset": 5,
+  "packageWrapperFailuresAfterReset": 1,
+  "maximumPackageWrapperFailuresAfterReset": 5,
+  "packageAttempts": 0,
+  "targetExecuted": false,
+  "mutationsPerformed": false,
+  "violations": [],
+  "publicationAuthorized": false,
+  "automaticRetryAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false,
+  "preflight": {
+    "utilityPath": "utilities/Confirm-ArgosRecoveryIntent.ps1",
+    "utilitySha256": "84CE818367586DD725EB196387D28442278A0FB504A9284A36B5851E48ABA1B1",
+    "windowsPowerShell": "5.1",
+    "exactIntentPathArgument": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_RECOVERY_INTENT_V2.json",
+    "exactProjectRoot": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab-scribe-opencv",
+    "preflightSwitch": true,
+    "asJsonSwitch": true
+  },
+  "supersedes": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_RECOVERY_INTENT_GATE.json",
+    "sha256": "0F1832283417C53D273934634A5BC75B6191937165B60E67EDA36364E60C6B57",
+    "reason": "BOUND_TO_CORRECTED_V2_INTENT_AND_CURRENT_BUILDER"
+  }
+}

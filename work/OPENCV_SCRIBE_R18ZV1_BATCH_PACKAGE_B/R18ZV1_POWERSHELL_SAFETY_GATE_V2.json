@@ -1,0 +1,123 @@
+{
+  "schema": "argos_opencv_scribe_r18zv1_package_b_powershell_safety_gate_v2",
+  "checkedUtc": "2026-09-10T16:00:50.9968643Z",
+  "state": "PASS_R18ZV1_PACKAGE_B_POWERSHELL_SAFETY",
+  "requestId": "REQ_RZV1",
+  "bindingRecordSha256": "DF4C66EA1E3E707E70D48F38D532EC331D5F840307578521F532A4B2D32F6B14",
+  "cloneGateSha256": "457D766F679BB9CD6FB8E50B1CB3F93BAD044C34D7F28533A7D00DA78ECF42C1",
+  "windowsPowerShell51": true,
+  "allParserChecksPassed": true,
+  "allHarnessChecksPassed": true,
+  "allWrapperChecksPassed": true,
+  "allCallerConsumerChecksPassed": true,
+  "pythonEnvelopeAstParsePassed": true,
+  "orderedGenerationEvidence": {
+    "sourceHarnessesCheckedBeforeRemediation": true,
+    "remediationCreatedBeforeGeneratedBytes": true,
+    "rawCloneGateWrittenAfterGeneratedBytesFinal": true,
+    "generatedHarnessesCheckedAfterFinalExecutableEdits": true,
+    "onlyBuilderChangedAfterV1Gate": true,
+    "unchangedScriptChecksInheritedByExactHash": true
+  },
+  "windowsPowerShell51JsonDecimalCompatibility": {
+    "selectionScoreType": "System.Decimal",
+    "decimalExactComparisonPassed": true,
+    "doubleExactComparisonNotReliedUpon": true,
+    "decimalPredicateRetained": true
+  },
+  "scriptChecks": [
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Invoke-R18ZV1BatchLaunchV1.ps1",
+      "bytes": 79734,
+      "sha256": "C663F1BF47415F97C727CBA577BC9D8A7345A4A85A530E972CA5C1BBB472B406",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Build-R18ZV1BatchRequestV1.ps1",
+      "bytes": 73354,
+      "sha256": "675DF0B74D87789CE333108A421A8200D82BCC1443F570C963D82773A1020CC8",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Publish-R18ZV1V1.ps1",
+      "bytes": 56052,
+      "sha256": "1B4753D280CD8B7F5B69DF5B7C4E8B37AD7E4F9E11437A74F7036F45CBE257B5",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Collect-R18ZV1LaunchResponseV1.ps1",
+      "bytes": 42892,
+      "sha256": "1837551A93F4F7E667EE03CDE4DE5379C1B126E2AA1BD200222A791AE6D2D640",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    },
+    {
+      "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Test-R18ZV1RequestIdUniquenessV1.ps1",
+      "bytes": 12564,
+      "sha256": "C00679FD30E06C5DCCA4E10A672E7F023E2915A55436036229818324D56C0C1B",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    }
+  ],
+  "callerConsumerChecks": [
+    {
+      "caller": "builder",
+      "consumer": "launcher",
+      "namedArguments": ["Preflight","Rehearsal","PackageValidationOnly","PayloadRoot","WorkRoot","OutputRoot","CanonicalProposalRoot","PythonPath","ExpectedPythonSha256","ReferenceBundlePath","ExpectedComputerName"],
+      "exact": true
+    },
+    {
+      "caller": "publisher",
+      "consumer": "collisionScanner",
+      "namedArguments": ["Preflight","Gate","OutputPath"],
+      "exact": true
+    },
+    {
+      "caller": "operator",
+      "consumer": "publisher",
+      "namedArguments": ["InvocationManifest","Preflight","Apply"],
+      "exact": true
+    },
+    {
+      "caller": "operator",
+      "consumer": "collector",
+      "namedArguments": ["InvocationManifest","Preflight","Collect"],
+      "exact": true
+    }
+  ],
+  "conditionalScalarizationViolations": 0,
+  "externalPowerShellTypedObjectAssumptions": 0,
+  "formatDependentEvidence": 0,
+  "broadRecursiveWorkspaceEnumeration": false,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalMutationPerformed": false,
+  "supersedes": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_POWERSHELL_SAFETY_GATE.json",
+    "sha256": "237A462E63628953BFEE795787597A328CF93B448531219382862DDF9E092142",
+    "reason": "BUILDER_ONLY_RECOVERY_INTENT_ACTION_TOKEN_NAMESPACE_CORRECTION"
+  }
+}

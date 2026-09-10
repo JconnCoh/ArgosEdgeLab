@@ -1,0 +1,267 @@
+{
+  "schema": "argos_opencv_scribe_r18zt_maintenance_definition_v2",
+  "artifactNamespace": "R18ZV1_PACKAGE_B_MAINTENANCE_DEFINITION",
+  "revision": "R18ZV1_EXISTING_ORIENTED_CROPS_ASYNC_REVIEW_ONLY_20260910B",
+  "requestId": "REQ_RZV1",
+  "state": "FROZEN_UNPUBLISHED",
+  "disposition": "FROZEN_REVIEW_ONLY_REQUIRES_ALL_BOUND_GATES_BEFORE_BUILD",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 1048576,
+  "entryPoint": "payload/Invoke-R18ZTBatchLaunch.ps1",
+  "rehearsal": {
+    "requiredState": "PASS_R18ZT_BATCH_WORKER_STARTED",
+    "requiredStateMeaning": "ASYNC_WORKER_LAUNCH_ONLY",
+    "completionClaimed": false
+  },
+  "changes": [
+    {
+      "source": "payload/Invoke-R18ZTBatchLaunch.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV02_R18ZV1.ps1",
+      "approvedPredecessorSha256": [
+        "C663F1BF47415F97C727CBA577BC9D8A7345A4A85A530E972CA5C1BBB472B406"
+      ],
+      "installedSha256": "C663F1BF47415F97C727CBA577BC9D8A7345A4A85A530E972CA5C1BBB472B406",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [
+    {
+      "targetRoot": "D:\\A2\\w\\ocv\\R18ZV1",
+      "mode": "CREATE_NEW_SCRIBE_ONLY_WORK_TREE",
+      "failureQuarantine": "D:\\A2\\w\\ocv\\R18ZV1.failed",
+      "payloadManifestSha256": "B05892C2BD7A7A911016C7F51A6BA62987B32FA8266C0D772466D09C1E376360"
+    },
+    {
+      "targetRoot": "D:\\A2\\w\\ocv\\R18ZV1\\p",
+      "mode": "CREATE_NEW_DIRECTORY_JUNCTION_TO_EXACT_CANONICAL_PROPOSAL_ROOT",
+      "canonicalTarget": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+      "verifyResolvedTargetBeforeWorkerStart": true,
+      "removeOwnedJunctionOnPrelaunchFailure": true,
+      "sourceMutation": false
+    },
+    {
+      "targetRoot": "D:\\A2\\o\\ocv\\R18ZV1",
+      "mode": "CREATE_NEW_REVIEW_ONLY_BATCH_OUTPUT"
+    },
+    {
+      "mode": "START_ONE_OWNED_BACKGROUND_R18ZT_BATCH_WORKER",
+      "executionEnvelopeSha256": "96E8BB3DC4CE86B2BA5D9FF894C001DF1632F79440DBB922991F19A64B8C1E62",
+      "scientificDelegateSha256": "F3B465F433ADB58F1C37C5673999FD03A4315EFA5A3128EFF8E192E9C3D58AE2",
+      "providerSha256": "81B0AAAE1CBC044321CD0CDA5F1147202F7D8CB384D7E721A36B93AE0C24E2D7",
+      "workerRevision": "R18ZT_EXISTING_ORIENTED_CROPS_PUBLIC_PROVIDER_BATCH_20260908D",
+      "maximumOwnedWorkerCount": 1,
+      "automaticRetryAllowed": false
+    }
+  ],
+  "entryPointOutputs": [
+    {
+      "path": "D:\\A2\\o\\ocv\\R18ZV1\\LAUNCH.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_opencv_scribe_r18zt_batch_launch_v2",
+      "requiredState": "PASS_R18ZT_BATCH_WORKER_STARTED",
+      "proves": "ASYNC_WORKER_LAUNCH_ONLY",
+      "completionClaimed": false
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18ZV1\\RUNNING.json",
+      "mode": "WORKER_ATOMIC_PROGRESS_POINTER",
+      "schema": "argos_opencv_scribe_r18zt_batch_progress_v2",
+      "allowedStates": [
+        "RUNNING_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+        "COMPLETE_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+        "HOLD_R18ZT_NO_QUALIFIED_EXISTING_ORIENTED_CROPS",
+        "HOLD_R18ZT_SOURCE_CHANGED_STOP_NO_RETRY",
+        "HOLD_R18ZT_BATCH_FATAL_NO_RETRY"
+      ],
+      "terminalStateMayAppearInAtomicProgressPointer": true,
+      "terminalSubstitute": false
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18ZV1\\COMPLETE.json",
+      "mode": "WORKER_ATOMIC_TERMINAL_COMPLETION_POINTER",
+      "schema": "argos_opencv_scribe_r18zt_batch_complete_v2",
+      "requiredState": "COMPLETE_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18ZV1\\STATUS.json",
+      "mode": "OPTIONAL_ADDITIONAL_WORKER_STATUS_NOT_A_TERMINAL_SUBSTITUTE",
+      "schema": "argos_opencv_scribe_r18zt_batch_status_v2",
+      "allowedStates": [
+        "RUNNING_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+        "COMPLETE_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+        "HOLD_R18ZT_NO_QUALIFIED_EXISTING_ORIENTED_CROPS",
+        "HOLD_R18ZT_SOURCE_CHANGED_STOP_NO_RETRY",
+        "HOLD_R18ZT_BATCH_FATAL_NO_RETRY"
+      ],
+      "terminalSubstitute": false
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18ZV1\\WORKER.stdout.log",
+      "mode": "WORKER_CREATE_NEW_DURABLE_STDOUT"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18ZV1\\WORKER.stderr.log",
+      "mode": "WORKER_CREATE_NEW_DURABLE_STDERR"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18ZV1\\FAILURE.json",
+      "mode": "CREATE_NEW_TERMINAL_FAILURE_BY_EXACT_OWNING_PRODUCER",
+      "mutuallyExclusiveCreateNewLeaf": true,
+      "variants": [
+        {
+          "producer": "LAUNCHER",
+          "schema": "argos_opencv_scribe_r18zt_batch_launch_failure_v2",
+          "requiredState": "HOLD_R18ZT_BATCH_LAUNCH_FAILURE"
+        },
+        {
+          "producer": "WORKER_EXECUTION_ENVELOPE",
+          "schema": "argos_opencv_scribe_r18zt_batch_worker_failure_v2",
+          "requiredState": "HOLD_R18ZT_BATCH_WORKER_FAILURE"
+        }
+      ]
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18ZV1\\COMPLETE.invalid.json",
+      "mode": "NONTERMINAL_QUARANTINE_OF_INVALID_COMPLETE_BEFORE_SOLE_FAILURE",
+      "terminalSubstitute": false
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18ZV1\\LAUNCH_REPORTING_ERROR.json",
+      "mode": "NONTERMINAL_DIAGNOSTIC_AFTER_EXACT_COMPLETE_PRESERVED",
+      "schema": "argos_opencv_scribe_r18zt_launch_reporting_error_v1",
+      "requiredState": "HOLD_R18ZT_LAUNCH_REPORTING_ERROR_AFTER_EXACT_COMPLETE_PRESERVED",
+      "terminalSubstitute": false
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18ZV1\\INVENTORY.json",
+      "mode": "WORKER_CREATE_NEW_HASH_PINNED_INVENTORY"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18ZV1\\CASE_INDEX.json",
+      "mode": "WORKER_CREATE_NEW_CASE_INDEX"
+    },
+    {
+      "path": "D:\\A2\\o\\ocv\\R18ZV1\\AGGREGATE.json",
+      "mode": "WORKER_CREATE_NEW_AGGREGATE"
+    }
+  ],
+  "sourceProcessingContract": {
+    "canonicalProposalRoot": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\identity\\proposals",
+    "proposalAlias": "D:\\A2\\w\\ocv\\R18ZV1\\p",
+    "proposalAliasMode": "LAUNCHER_CREATED_VERIFIED_DIRECTORY_JUNCTION",
+    "maximumIdentityCharacters": 80,
+    "identityOverMaximumIsGlobalPrelaunchPathHold": true,
+    "perCaseContinuationAfterIdentityPathViolationAllowed": false,
+    "actualDirectChildFourSourceLeafPathBudgetRequiredBeforeFirstWrite": true,
+    "sourcePathSuffixReserveCharacters": 32,
+    "outputAtomicSuffixReserveCharacters": 52,
+    "actualFourSourceLeafIoUsesProposalAliasOnly": true,
+    "inputSelection": "ALL_DIRECT_CHILD_IDENTITIES_WITH_QUALIFIED_INSTALLED_PROPOSAL_SUMMARY_AND_BF_DF_ORIENTED_INPUTS",
+    "actualQualifiedCountFrozenByWorkerInventory": true,
+    "fixedExpectedCorpusCountAllowed": false,
+    "existingCropOnly": true,
+    "wholeWaferFallbackAllowed": false,
+    "fullWaferImageReadAllowed": false,
+    "publicProviderRunJobRequired": true,
+    "directStructuralEvaluatorAllowed": false,
+    "normalHypothesisCountRequired": 8,
+    "normalHypothesisMeaning": "EXACT_ORDERED_ATTEMPTS_NOT_RETAINED_RESULT_COUNT",
+    "retainedHypothesisCountFixedAtEight": false,
+    "sourceImageBytesReadAllowed": true,
+    "opencvPixelDecodeRequired": true,
+    "sourceMutationAllowed": false,
+    "proposalAliasCreationIsSourceMutation": false,
+    "sourceDeletionAllowed": false,
+    "runtimeChecksumOverrideAllowed": false,
+    "runtimeTruthOverrideAllowed": false,
+    "automaticIdentityAuthority": false,
+    "automaticReferenceAdmissionAllowed": false,
+    "holdClearanceAllowed": false,
+    "providerActivationAllowed": false,
+    "trainingAllowed": false,
+    "xmlAllowed": false,
+    "productionAllowed": false
+  },
+  "timeoutContract": {
+    "endpointWorkerOuterTimeoutSeconds": 300,
+    "launchConfirmationSeconds": 2,
+    "corpusWorkerPersistsAfterPortalResponse": true,
+    "corpusCompletionNotRequiredForLaunchResponse": true,
+    "portalResponseProvesLaunchOnly": true
+  },
+  "ownedWorkerContract": {
+    "executionEnvelopeInvokesDelegateInProcess": true,
+    "delegateSubprocessAllowed": false,
+    "launcherOwnsSoleLongRunningWorkerProcess": true,
+    "postStartFailureRequiresConfirmedWorkerExitBeforeAliasOrWorkRollback": true,
+    "fastExitZeroAcceptedOnlyWithExactCompleteV2": true,
+    "completeValidationCrossBindsInventoryCaseIndexAggregate": true,
+    "invalidCompleteQuarantinedBeforeSoleFailure": true,
+    "exactCompletePreservedWithoutContradictoryFailure": true
+  },
+  "boundedFollowupContract": {
+    "notBeforeHoursAfterLaunch": 12,
+    "singleExactLeafProbe": [
+      "LAUNCH.json",
+      "RUNNING.json",
+      "COMPLETE.json",
+      "FAILURE.json"
+    ],
+    "maximumBytesPerLeaf": 1048576,
+    "processOrTaskQueryAllowed": false,
+    "resultTreeEnumerationAllowed": false,
+    "klarfOrProposalTreeEnumerationAllowed": false,
+    "statusJsonMaySubstituteForComplete": false,
+    "retrieveOnlyAggregatePinnedByComplete": true
+  },
+  "collisionContract": {
+    "requestToken": "REQ_RZV1",
+    "preSignatureScansRequired": [
+      "LIVE_REQUEST_ROOT",
+      "LIVE_PROCESSED_ARCHIVE",
+      "GATEWAY_REQUEST_INVENTORY",
+      "LOCAL_PUBLICATION_ARCHIVE"
+    ],
+    "allMustProveAbsent": true
+  },
+  "artifactPins": {
+    "launcherSha256": "C663F1BF47415F97C727CBA577BC9D8A7345A4A85A530E972CA5C1BBB472B406",
+    "payloadManifestSha256": "B05892C2BD7A7A911016C7F51A6BA62987B32FA8266C0D772466D09C1E376360",
+    "configurationSha256": "E41B4C52483A8053053399192DBAE19C021C973B87878FBFD6BD238AB616EDDB",
+    "executionEnvelopeSha256": "96E8BB3DC4CE86B2BA5D9FF894C001DF1632F79440DBB922991F19A64B8C1E62",
+    "scientificDelegateSha256": "F3B465F433ADB58F1C37C5673999FD03A4315EFA5A3128EFF8E192E9C3D58AE2",
+    "providerSha256": "81B0AAAE1CBC044321CD0CDA5F1147202F7D8CB384D7E721A36B93AE0C24E2D7",
+    "developmentGateSha256": "DF38E45781E9CFEC81524D7C2C3F5EB1A21BED61D6E945A9F51198779C6E72CA"
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [
+    "START_ONE_OWNED_BACKGROUND_R18ZT_BATCH_WORKER"
+  ],
+  "publication": {
+    "publicationAuthorized": false,
+    "explicitOperatorAuthorityPresent": false,
+    "conditionalOperatorAuthorityAlreadyPresent": true,
+    "conditionalAuthorityText": "Do the work, if it is successful - as in deciphering correctly. PUBLISH the package to JBOD.",
+    "authorityCondition": "EXACT_SLOT21_IMAGE_FIRST_PASS_AND_ALL_PACKAGE_GATES_PASS",
+    "freshRequestIdSpecificLiteralRequired": false,
+    "maximumRequestsAfterFreshAuthority": 1,
+    "retryAuthorized": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "publicationAuthorized": false,
+    "conditionalPublicationAuthorityRecorded": true,
+    "identityAcceptanceAuthorized": false,
+    "automaticReferenceAdmissionAuthorized": false,
+    "holdClearanceAuthorized": false,
+    "activationAuthorized": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "sourceMutationAuthorized": false,
+    "sourceDeletionAuthorized": false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

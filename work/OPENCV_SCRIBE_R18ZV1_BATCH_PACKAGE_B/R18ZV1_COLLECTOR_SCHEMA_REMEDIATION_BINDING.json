@@ -1,0 +1,41 @@
+{
+  "schema": "argos_opencv_scribe_collector_schema_remediation_binding_v1",
+  "createdUtc": "2026-09-10T14:45:00Z",
+  "state": "FROZEN_R18ZV1_COMPACT_MAINTENANCE_RESULT_SCHEMA_REMEDIATION",
+  "requestId": "REQ_RZV1",
+  "failedPredecessor": {
+    "path": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU1_LAUNCH_RESPONSE_COLLECTOR_FAILURE_20260910.json",
+    "bytes": 2680,
+    "sha256": "051596692B74D98090C47A74FF26BE81FC1DAE6E4FA10E933B98043730EEEE9B",
+    "state": "WITHDRAWN_R18ZU1_FROZEN_COLLECTOR_RESULT_REQUEST_ID_SCHEMA_FAILURE_NON_REUSABLE"
+  },
+  "exactObservedCompactResult": {
+    "schema": "argos_project_portal_maintenance_result_v1",
+    "state": "PASS_MAINTENANCE_PATCH",
+    "entryPoint": "payload/Invoke-R18ZTBatchLaunch.ps1",
+    "exitCode": 0,
+    "changedFiles": 1,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false,
+    "requestIdPropertyPresent": false,
+    "quarantineLeafEqualsSignedManifestRequestId": true
+  },
+  "freshCollectorContract": {
+    "requestIdentitySource": "AUTHENTICATED_SIGNED_PORTAL_RESPONSE_MANIFEST",
+    "resultRequestIdRequired": false,
+    "resultSchemaRequired": "argos_project_portal_maintenance_result_v1",
+    "resultStateRequired": "PASS_MAINTENANCE_PATCH",
+    "resultEntryPointRequired": "payload/Invoke-R18ZTBatchLaunch.ps1",
+    "resultExitCodeRequired": 0,
+    "resultChangedFilesRequired": 1,
+    "resultReviewOnlyRequired": true,
+    "resultProductionRoutingEnabledRequired": false,
+    "resultQuarantineLeafMustEqualSignedManifestRequestId": true
+  },
+  "executableFileDelta": 0,
+  "freshCollectorNonblankLineIncrease": 0,
+  "frozenPredecessorWillNotBeEditedOrRetried": true,
+  "externalAccessPerformedByThisBinding": false,
+  "publicationPerformed": false,
+  "targetExecuted": false
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "argos_opencv_scribe_r18zv1_publisher_withdrawal_v1",
+  "createdUtc": "2026-09-10T16:35:17.2471625Z",
+  "state": "WITHDRAWN_R18ZV1_PUBLISHER_V1_SCHEMA_SUFFIX_FALSE_POSITIVE_NON_REUSABLE",
+  "lifecycle": "WITHDRAWN",
+  "requestId": "REQ_RZV1",
+  "withdrawnArtifact": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Publish-R18ZV1V1.ps1",
+    "bytes": 56052,
+    "sha256": "1B4753D280CD8B7F5B69DF5B7C4E8B37AD7E4F9E11437A74F7036F45CBE257B5"
+  },
+  "defect": {
+    "line": 218,
+    "cause": "Inherited suffix heuristic rejects every expected package-binding schema ending in _v1 or _v2.",
+    "contradiction": "The same publisher then requires the expected schema to equal the fresh frozen R18ZV1 binding schema argos_opencv_scribe_r18zv1_package_bindings_v1.",
+    "effect": "No valid R18ZV1 publication invocation can pass V1 preflight."
+  },
+  "preservation": {
+    "timeOfBuildEvidenceOnly": true,
+    "signedRequestPayloadChanged": false,
+    "signedRequestZipChanged": false,
+    "publicationUseAllowed": false,
+    "futureReuseAllowed": false
+  },
+  "freshSuccessor": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Publish-R18ZV1V2.ps1",
+    "bytes": 55998,
+    "sha256": "2CF89B348BE784F31E3EAB1DB2ECE61B6502A6F651062F5467E83A08B999E806",
+    "state": "DRAFT_PENDING_EXACT_CLONE_HARNESS_WRAPPER_PREACTION_AND_POSTFREEZE_GATES"
+  },
+  "externalAccessPerformed": false,
+  "externalMutationPerformed": false,
+  "publicationPerformed": false,
+  "targetExecuted": false,
+  "imageBytesRead": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

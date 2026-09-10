@@ -1,0 +1,63 @@
+{
+  "schema": "argos_opencv_scribe_prior_endpoint_request_terminal_gate_v1",
+  "checkedUtc": "2026-09-10T14:32:57.5623545Z",
+  "state": "PASS_R18ZU1_ENDPOINT_REQUEST_TERMINAL_SIGNED_RETURN_AUTHENTICATED",
+  "priorRequestId": "REQ_R18ZU1",
+  "observation": {
+    "sourceResponseZip": "U:\\ProjectPortalRO\\responses\\R_3ACBBED86962_20260910010611555_e8514657.ready.zip",
+    "sourceResponseZipBytes": 3174,
+    "sourceResponseZipSha256": "5C46983DA7790EE6103FA8E0F19F01C319F3CCB6778F18DA05ACA51047BF446D",
+    "responseCreatedUtc": "2026-09-10T01:06:11.5558495Z",
+    "responseManifestBytes": 1418,
+    "responseManifestSha256": "14C7618237404B05B15360B2D9E3831665E5F9AA78BD0621AC2DBA321BDC2EF0",
+    "responseSignatureBytes": 384,
+    "responseSignatureSha256": "67C4EC1200E3D7DC53599F08849BE1B3ED43AFF54AE64804DD07E70B4289D443",
+    "signedResponseVerified": true,
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "manifestRequestId": "REQ_R18ZU1",
+    "manifestState": "PASS_MAINTENANCE_PATCH",
+    "matchingAuthenticatedResponseCount": 1
+  },
+  "result": {
+    "bytes": 438,
+    "sha256": "49CB972AC6C2EC9CA28284DCBF4BE8B21697BEBDEF597036FF5F2A9223C763AF",
+    "schema": "argos_project_portal_maintenance_result_v1",
+    "state": "PASS_MAINTENANCE_PATCH",
+    "entryPoint": "payload/Invoke-R18ZTBatchLaunch.ps1",
+    "exitCode": 0,
+    "changedFiles": 1,
+    "reviewOnly": true,
+    "productionRoutingEnabled": false,
+    "quarantine": "C:\\ProgramData\\ArgosProjectPortalRO\\endpoint_jbod\\state\\maintenance\\REQ_R18ZU1"
+  },
+  "launcherStdout": {
+    "bytes": 2334,
+    "sha256": "7324F75A0D510E5EC2E04DE130093B160DE5C7227600C737D5B67A29B56DCC57",
+    "state": "PASS_R18ZT_BATCH_WORKER_STARTED",
+    "ownedWorkerStarted": true,
+    "proposalDirectChildCountAtLaunch": 982,
+    "sourceLeafCountAtLaunch": 3928,
+    "batchCompletionClaimed": false
+  },
+  "conclusion": {
+    "priorEndpointRequestTerminal": true,
+    "signedTerminalResponseReturnedToShare": true,
+    "returnRouteHealthy": true,
+    "priorBackgroundBatchCompletionProved": false,
+    "laterFreshEndpointRequestMayProceedOnlyAfterFreshCollisionScan": true
+  },
+  "failedCollectorEvidence": {
+    "path": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/R18ZU1_LAUNCH_RESPONSE_COLLECTOR_FAILURE_20260910.json",
+    "bytes": 2680,
+    "sha256": "051596692B74D98090C47A74FF26BE81FC1DAE6E4FA10E933B98043730EEEE9B",
+    "usedAsTerminalGate": false
+  },
+  "oneBoundedResponseSnapshot": true,
+  "pixelsDecoded": false,
+  "imageBytesRead": false,
+  "resultTreeEnumerated": false,
+  "taskOrProcessQueryPerformed": false,
+  "externalMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

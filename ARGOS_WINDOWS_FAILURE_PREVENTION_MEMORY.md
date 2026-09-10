@@ -11120,3 +11120,67 @@ than rerunning it.
   `priorTerminal.terminalResponse.*`, keep the signed package unchanged, and
   rebuild the complete clone, wrapper, path, preaction, and post-freeze chain
   before any publisher preflight or external route read.
+
+## 2026-09-10 — A compact signed maintenance RESULT may omit `requestId`
+
+- Failure signature: the frozen `REQ_R18ZU1` launch-response collector first
+  authenticated exactly one signed `PASS_MAINTENANCE_PATCH` envelope in
+  non-mutating preflight, then its single `-Collect` attempt stopped after
+  extraction because `RESULT.json` lacked a top-level `requestId`. No collection
+  gate was committed; the exact extraction remains at `C:\R18ZU1L1.partial`.
+- Cause: request identity is cryptographically bound by the signed
+  `PORTAL_RESPONSE_MANIFEST.json`, while the compact
+  `argos_project_portal_maintenance_result_v1` payload records state, entry
+  point, changed-file count, exit code, and quarantine root but does not promise
+  a duplicate top-level request identifier. The collector treated that absent
+  duplicate as mandatory.
+- Mandatory preflight: freeze and exercise the exact compact success-result
+  field set before collection. Require request identity and payload hashes from
+  the authenticated response manifest; require result schema, state, entry
+  point, exit code, changed-file count, review-only authority, and the exact
+  request-scoped quarantine leaf from `RESULT.json`. Never require an optional
+  duplicate result-level `requestId` unless the installed producer contract
+  explicitly emits it.
+- Recovery: do not edit or rerun the frozen R18ZU1 collector. Preserve its
+  partial extraction and record its failure as non-reusable diagnostic evidence.
+  Correct only the fresh successor collector before freeze, then rerun its
+  clone, harness, wrapper, and non-mutating schema-fixture gates before any
+  successor response collection.
+
+## 2026-09-10 — Recovery intent action tokens must match inherited launcher output exactly
+
+- Failure signature: the first frozen R18ZV1 Package B recovery intent named
+  `START_ONE_OWNED_BACKGROUND_R18ZV1_BATCH_WORKER`, while the unchanged inherited
+  launcher and maintenance definition truthfully use
+  `START_ONE_OWNED_BACKGROUND_R18ZT_BATCH_WORKER` and return
+  `PASS_R18ZT_BATCH_WORKER_STARTED`. The mismatch was found before builder
+  preflight, package construction, signing, external access, or target execution.
+- Cause: the package revision name was mechanically substituted into a stable
+  inherited runtime action token even though the runtime implementation was not
+  renamed.
+- Mandatory preflight: derive every declared task/process action and returned
+  state token from the exact frozen maintenance definition and launcher bytes.
+  Package identity and runtime-token identity are separate; never rename an
+  inherited token solely to match the successor package revision.
+- Recovery: preserve the V1 intent, gate, and unvalidated pre-action contract as
+  non-reusable evidence. Use a fresh V2 intent/gate with the exact inherited
+  token, then regenerate builder-bound clone, harness, wrapper, and pre-action
+  evidence before the first builder preflight.
+
+## 2026-09-10 — Binding schema freshness is lineage-specific, not a global version-number rule
+
+- Failure signature: pre-publication static review found that the mechanically
+  cloned R18ZV1 publisher rejected every declared package-binding schema ending
+  in `_v1` or `_v2`, while the new R18ZV1 binding is intentionally the first
+  schema revision in its own lineage: `argos_opencv_scribe_r18zv1_package_bindings_v1`.
+  The issue was caught before publisher preflight or portal access; the already
+  signed request ZIP does not contain the publisher and was unaffected.
+- Cause: a predecessor-local guard against withdrawn R18ZU V1/V2 binding records
+  was copied as a global suffix heuristic. Schema version numbers restart in a
+  fresh lineage and do not by themselves prove an artifact is stale.
+- Mandatory preflight: require the exact expected schema for the current lineage
+  and separately list exact forbidden predecessor schemas or hashes. Never reject
+  a current artifact solely because its schema suffix is `_v1` or `_v2`.
+- Recovery: correct only the local publisher predicate, preserve the signed ZIP,
+  and generate fresh publisher-bound clone, harness, wrapper, publication
+  pre-action, and post-freeze invocation evidence before any external write.
