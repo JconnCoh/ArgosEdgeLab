@@ -1,0 +1,104 @@
+{
+  "schema": "argos_opencv_scribe_r18zv1_slot21_late_completion_correction_gate_v1",
+  "state": "PASS_CORRECTION_A_FIRST_COMPLETED_B_DUPLICATE_EXCLUDED_SCIENCE_UNCHANGED",
+  "classification": "DIAGNOSTIC_ONLY",
+  "createdUtc": "2026-09-10T13:30:29.4353619Z",
+  "cause": "The shell parent timed out while the Python provider child continued running. Root A completed after the initial absence check. Root B was incorrectly launched before checking the exact child or waiting for late completion.",
+  "failureMemoryRule": "A_TIMED_OUT_POWERSHELL_PARENT_CAN_LEAVE_ITS_PYTHON_CHILD_RUNNING",
+  "incorrectEvidenceSuperseded": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1/R18ZV1_SLOT21_FULL_CHAIN_VALIDATION_GATE.json",
+    "bytes": 5049,
+    "sha256": "7D437C500E13C4F1D1A028667E3D2B132B5721D72178FC65E6EE5123D6ABE031",
+    "supersededFields": [
+      "withdrawnInvocation.state",
+      "withdrawnInvocation.providerResultCreated",
+      "withdrawnInvocation.gateCreated",
+      "executedValidation.root"
+    ],
+    "futurePackageParentAllowed": false
+  },
+  "authoritativeFirstCompletion": {
+    "root": "C:/R18ZV1S21A",
+    "job": {
+      "bytes": 5648,
+      "sha256": "3B1C617D4396AC83DA3C2AF05D1888005A8A1378E29F34BA0490C05EDB935480"
+    },
+    "result": {
+      "bytes": 1217688,
+      "sha256": "DABF73A0667B4DB3B2735B03506780ECC823F72296E3C6E66C77CF5F70EC8002"
+    },
+    "compactGate": {
+      "bytes": 16183,
+      "sha256": "114F3A7B4D2E66FC8B730BD8572B083073FFB68FEEC6111F215DB3623AEB8442",
+      "state": "PASS_R18ZV1_SLOT21_EXACT_IMAGE_FIRST_DIAGNOSTIC"
+    },
+    "providerRunCount": 1,
+    "attemptCount": 8,
+    "imageFirstString": "13HFX135SUE3",
+    "truthComparedOnlyAfterProviderResult": "13HFX135SUE3",
+    "exact": true,
+    "acceptedWrong": false,
+    "runtimeRestored": true,
+    "provenanceBound": true
+  },
+  "duplicateSecondCompletion": {
+    "root": "C:/R18ZV1S21B",
+    "reason": "Launched after the parent timeout but before the late child completion was recognized.",
+    "jobSha256": "ADAD805EAA8934D5D79B467BB9F040022655FFF3FE7C2FC8671CE766514AE443",
+    "resultSha256": "7A45F60F9EC7FE868326F74B6312519459E5BE22B09C1B2AB859863A2F582A63",
+    "compactGateSha256": "E27C51771AC1C59F891C75F0F41A0332150E9FE446FC2A2D51098DB100DFA347",
+    "scienceProjectionSha256": "07FC55FBDD739D2824CE09C33270F08D5AB8358347D728DEC2E2EFEA3B0A6782",
+    "countsAsIndependentValidation": false,
+    "futurePackageParentAllowed": false
+  },
+  "semanticComparison": {
+    "projectionFields": [
+      "state",
+      "imageFirstString",
+      "proposedString",
+      "eligibleIdentity",
+      "holds",
+      "candidates",
+      "checksumState",
+      "checksumVerifiedHypotheses",
+      "ambiguityResolution",
+      "selectedHypothesis",
+      "hypotheses"
+    ],
+    "rootAScienceProjectionSha256": "07FC55FBDD739D2824CE09C33270F08D5AB8358347D728DEC2E2EFEA3B0A6782",
+    "rootBScienceProjectionSha256": "07FC55FBDD739D2824CE09C33270F08D5AB8358347D728DEC2E2EFEA3B0A6782",
+    "exactEqual": true,
+    "validationCaseCount": 1
+  },
+  "correctedOutcome": {
+    "providerSha256": "81B0AAAE1CBC044321CD0CDA5F1147202F7D8CB384D7E721A36B93AE0C24E2D7",
+    "developmentAcceptedCorrect": 312,
+    "developmentAcceptedWrong": 0,
+    "developmentHeld": 163,
+    "slot21Exact": true,
+    "newSingleTargetImageFirstGain": false,
+    "rawResultState": "SCRIBE_M12_AMBIGUOUS_MULTIPLE_VALID",
+    "ambiguityResolutionState": "PASS_REVIEW_ONLY_IMAGE_FIRST_SCRIBE",
+    "onlyHoldCode": "SCRIBE_REFERENCE_COVERAGE_HOLD",
+    "eligibleIdentity": false
+  },
+  "stopLoss": {
+    "completedProviderExecutions": 2,
+    "independentValidationCases": 1,
+    "localResultRoots": 2,
+    "maximumLocalResultRoots": 3,
+    "furtherLocalSlot21ExecutionAuthorized": false,
+    "packageAttempts": 0
+  },
+  "authority": {
+    "reviewOnly": true,
+    "identityAccepted": false,
+    "referenceAdmissionPerformed": false,
+    "trainingAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "providerActivationAuthorized": false,
+    "selfPublicationAuthority": false
+  },
+  "nextAction": "Use only this correction gate plus the authoritative root-A hashes when deciding whether to build a review-only batch diagnostic. Never cite root B as a second validation case and do not execute Slot21 locally again."
+}
