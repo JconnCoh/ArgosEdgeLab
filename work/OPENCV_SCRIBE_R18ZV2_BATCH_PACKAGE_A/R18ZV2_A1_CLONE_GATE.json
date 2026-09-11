@@ -1,0 +1,57 @@
+{
+  "schema": "argos_opencv_scribe_r18zv2_package_a_clone_gate_v1",
+  "checkedUtc": "2026-09-11T00:47:00Z",
+  "state": "PASS_R18ZV2_PACKAGE_A_CLONE_LITERAL_GATE",
+  "requestId": "REQ_RZV2",
+  "bindingRecordSha256": "DF4376B6A6B06A8384D6B8A66E2A904CCFF727BAF827DB92C57C1C0774F3DBE3",
+  "utilityState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "rawUtilityGatePath": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/R18ZV2_A1_CLONE_RAW_GATE_V2.json",
+  "rawUtilityGateSha256": "C4AA6C9F9E0B81767D64737566E061FD65EEEB40E60D18BAECE38C2EA269F55D",
+  "rawUtilityGateBytes": 6919,
+  "builderCorrectionRemediationPath": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/R18ZV2_A1_CLONE_REMEDIATION.json",
+  "builderCorrectionRemediationSha256": "0EE18D49AC98B8973A021AA424285A6ADE01A4BEFBDACA8916EAE3620AB09B2C",
+  "packageCloneRemediationPath": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/R18ZV2_A1_CLONE_REMEDIATION.json",
+  "packageCloneRemediationSha256": "0EE18D49AC98B8973A021AA424285A6ADE01A4BEFBDACA8916EAE3620AB09B2C",
+  "publisherCloneRemediationPath": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/R18ZV2_A1_CLONE_REMEDIATION.json",
+  "publisherCloneRemediationSha256": "0EE18D49AC98B8973A021AA424285A6ADE01A4BEFBDACA8916EAE3620AB09B2C",
+  "sourceGuardPath": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/R18ZV2_A1_SOURCE_GUARD.json",
+  "sourceGuardSha256": "F174BF69BDEF521B204B796453F2B7AF29EF91485676A3B9893A788F264082F4",
+  "sourceTemplatesGuardedBeforeGeneration": true,
+  "generatedArtifactsGuardedAfterGeneration": true,
+  "operatorApprovedMechanicalScope": {
+    "changedExecutableFiles": 6,
+    "maximumNonblankLines": 3384,
+    "maximumBytes": 274195,
+    "exactChangedNonblankLines": 3277,
+    "exactChangedBytes": 271893,
+    "withinApprovedLineLimit": true,
+    "withinApprovedByteLimit": true,
+    "unchangedWrappedProviderBytes": 4096,
+    "additionalChangedExecutableFilesBeyondApprovedSix": 0
+  },
+  "generatedArtifacts": [
+    {"path":"work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Build-R18ZV2BatchRequestV1.ps1","bytes":75899,"sha256":"3202A834450B4DCE7839B299F1CFE8849A7AA6886D907FBAEEA74B4846ED4F1B","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"},
+    {"path":"work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Invoke-R18ZV2BatchLaunchV1.ps1","bytes":79768,"sha256":"A01624E58965D6CA65795F59DFE19891B123D3172DE542C0E5803D9E67DFCB6A","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"},
+    {"path":"work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Publish-R18ZV2V2.ps1","bytes":59001,"sha256":"97C6BC7A81F0585964E2381E179FE9976B94638028F6583B17F8B8260D373ECD","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"},
+    {"path":"work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Collect-R18ZV2LaunchResponseV1.ps1","bytes":42892,"sha256":"0D704A6D5DE53CB7750A58AC8499C921BCE9A5108ED732D5B9CAED00839F46F9","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"},
+    {"path":"work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Test-R18ZV2RequestIdUniquenessV1.ps1","bytes":12564,"sha256":"5954E4D4008531E41A5FD5ED7F455FB964C1AAD526D541DABC1BC4EEA80C5DDC","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"}
+  ],
+  "compatibilityFacade": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1/ArgosOpenCvScribeV1R18ZV1BatchAdapter.py",
+    "bytes": 1769,
+    "sha256": "4914B20364AC62F9E3152C4C40E2B06CC96A80CA1299E6E56CBF3287B07A34C7",
+    "qualificationGateSha256": "804F779647185E651F8DBC78F76ACA4ACE51EC99D90B8D5CAD2F846B5012820D"
+  },
+  "publisherIncluded": true,
+  "publisherRequiresSeparatePostBuildInvocationBoundGate": true,
+  "violationCount": 0,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false,
+  "supersedes": {
+    "path": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/R18ZV2_A1_CLONE_RAW_GATE.json",
+    "reason": "PROVISIONAL_RAW_GATE_PRECEDED_FINAL_CARRIER_BYTES_AND_IS_NOT_USED"
+  }
+}

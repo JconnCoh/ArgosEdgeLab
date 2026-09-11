@@ -1,0 +1,61 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-09-11T00:03:31.5670609Z",
+    "state":  "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+    "actionId":  "R18ZV1_TERMOBS_R5_20260911T000700Z_01",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "0208794B6576265D755F1DCDB8A69CB50C6E6ABCC24B331C77BCAFBC0B310744",
+    "payloadSha256":  "BAF15E5E2C17EE006234A853170576F662DCBE1F9A6DA6106077E97ED29FDEEE",
+    "expectedResultSchema":  "argos_r18zv1_bounded_terminal_observation_v1",
+    "hostnameGatePassed":  true,
+    "visibleConsoleRequired":  true,
+    "taskbarClickPerformed":  false,
+    "hostnameUsesShortClipboardPaste":  true,
+    "hostnameSubmittedByClipboardCrLf":  false,
+    "hostnameSubmittedByNativeVkReturn":  true,
+    "hostnameSubmissionMode":  "PASTE_THEN_NATIVE_VK_RETURN",
+    "payloadTransferred":  true,
+    "typedTrigger":  "get-clipboard -raw|iex",
+    "triggerSubmittedByNativeVkReturn":  true,
+    "triggerSubmissionMode":  "NATIVE_VK_RETURN",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "schema":  "argos_r18zv1_bounded_terminal_observation_v1",
+                         "state":  "PASS_R18ZV1_BOUNDED_TERMINAL_OBSERVATION",
+                         "mutationsPerformed":  false,
+                         "aggregateFile":  {
+                                               "bytes":  2949,
+                                               "sha256":  "070B95EDA5DF3250C1A584D202A16906BB35D0ADBD9055B70803AB87837DA2E0"
+                                           },
+                         "indexFile":  {
+                                           "bytes":  950153,
+                                           "sha256":  "DD6D6CD28DADF82A7CA2F81E8CA0B73AB6CAE2247AB7CF7647CC672AF0B1362B",
+                                           "state":  "PASS_R18ZT_CASE_INDEX_COMPLETE",
+                                           "caseCount":  1001,
+                                           "rowCount":  1001,
+                                           "stateCounts":  [
+                                                               {
+                                                                   "state":  "HOLD_R18ZT_PUBLIC_PROVIDER_RUN_FAILED_NO_RETRY",
+                                                                   "count":  1001
+                                                               }
+                                                           ],
+                                           "providerStateCounts":  [
+                                                                       {
+                                                                           "state":  "",
+                                                                           "count":  1001
+                                                                       }
+                                                                   ]
+                                       },
+                         "representativeFailure":  {
+                                                       "caseId":  "88651DA8B593780C906D",
+                                                       "state":  "HOLD_R18ZT_PUBLIC_PROVIDER_RUN_FAILED_NO_RETRY",
+                                                       "providerError":  "ValueError: Provider reference-bank cache seam is unavailable.",
+                                                       "providerReturnCode":  null,
+                                                       "entered":  0,
+                                                       "returned":  0,
+                                                       "bytes":  7371,
+                                                       "sha256":  "14FFD8D53B7DA78F385FF66106D615E52026897E706A4F50B57BA508E123A207"
+                                                   }
+                     }
+}

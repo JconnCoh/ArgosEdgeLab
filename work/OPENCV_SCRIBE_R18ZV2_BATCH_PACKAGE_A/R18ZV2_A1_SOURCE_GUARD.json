@@ -1,0 +1,50 @@
+{
+  "schema": "argos_opencv_scribe_r18zv2_package_a_source_guard_v1",
+  "checkedUtc": "2026-09-11T00:23:10.7787462Z",
+  "state": "PASS_R18ZV2_PACKAGE_A_ALL_SOURCES_GUARDED_BEFORE_GENERATION",
+  "requestId": "REQ_RZV2",
+  "smallestProductChange": "Expose the frozen R18ZV1 provider's already-loaded R18ZV and R18H modules through a batch-only compatibility facade so the unchanged batch runner can populate its reference caches before entering the unchanged public run_job path.",
+  "approvedMechanicalScope": {
+    "changedExecutableFiles": 6,
+    "mechanicallyClonedCarrierFiles": 5,
+    "newCompatibilityFacadeFiles": 1,
+    "carrierPhysicalLines": 3353,
+    "carrierNonblankLines": 3184,
+    "carrierBytes": 264542,
+    "adapterPhysicalLines": 58,
+    "adapterNonblankLines": 44,
+    "adapterBytes": 1769,
+    "totalChangedPhysicalLines": 3411,
+    "totalChangedNonblankLines": 3228,
+    "totalChangedBytes": 266311,
+    "newEndpointWorkers": 0,
+    "newTransportImplementations": 0,
+    "newGeneralPurposeHarnesses": 0,
+    "newLocalResultRoots": 1,
+    "worstCaseLocalInfrastructureBytes": 2097152
+  },
+  "sources": [
+    {"role":"builder","path":"work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Build-R18ZV1BatchRequestV1.ps1","bytes":73354,"sha256":"E06D4C7ECA2C8BC2B56B81D250521C9D754BCA8C70540D0EA7937B297B4F432D","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"},
+    {"role":"launcher","path":"work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Invoke-R18ZV1BatchLaunchV1.ps1","bytes":79734,"sha256":"C663F1BF47415F97C727CBA577BC9D8A7345A4A85A530E972CA5C1BBB472B406","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"},
+    {"role":"publisher","path":"work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Publish-R18ZV1V2.ps1","bytes":55998,"sha256":"2CF89B348BE784F31E3EAB1DB2ECE61B6502A6F651062F5467E83A08B999E806","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"},
+    {"role":"collector","path":"work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Collect-R18ZV1LaunchResponseV1.ps1","bytes":42892,"sha256":"1837551A93F4F7E667EE03CDE4DE5379C1B126E2AA1BD200222A791AE6D2D640","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"},
+    {"role":"collisionScanner","path":"work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Test-R18ZV1RequestIdUniquenessV1.ps1","bytes":12564,"sha256":"C00679FD30E06C5DCCA4E10A672E7F023E2915A55436036229818324D56C0C1B","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"}
+  ],
+  "productCorrection": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1/ArgosOpenCvScribeV1R18ZV1BatchAdapter.py",
+    "bytes": 1769,
+    "sha256": "4914B20364AC62F9E3152C4C40E2B06CC96A80CA1299E6E56CBF3287B07A34C7",
+    "seamTestState": "PASS_R18ZV1_BATCH_ADAPTER_EXACT_SEAM",
+    "runnerRegressionTests": "PASS_9_OF_9"
+  },
+  "unchangedFrozenProvider": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1/ArgosOpenCvScribeV1R18ZV1.py",
+    "bytes": 4096,
+    "sha256": "81B0AAAE1CBC044321CD0CDA5F1147202F7D8CB384D7E721A36B93AE0C24E2D7"
+  },
+  "allSourcesGuardedBeforeGeneration": true,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "publicationPerformed": false
+}

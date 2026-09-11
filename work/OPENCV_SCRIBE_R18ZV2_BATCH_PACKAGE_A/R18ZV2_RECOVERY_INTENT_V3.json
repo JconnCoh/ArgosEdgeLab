@@ -1,0 +1,62 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-11T01:14:00Z",
+  "state": "FROZEN_R18ZV2_PACKAGE_A_RECOVERY_INTENT",
+  "requestId": "REQ_RZV2",
+  "bindingRecordSha256": "DF4376B6A6B06A8384D6B8A66E2A904CCFF727BAF827DB92C57C1C0774F3DBE3",
+  "builderSha256": "E755D59AA152971BD1DDB9C021612040EF9F2C665FD3DBAA160D237A66995C61",
+  "incidentId": "R18ZV2_BATCH_CACHE_SEAM_CORRECTION_AFTER_REQ_RZV1_20260911",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {"path":"work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json","sha256":"A58814DBF52ABB4E019B36712FF671AB97988F1AFBB0D27E096A0FAD4C4A69F9"},
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"","sha256":""},
+    "classificationNote": "REQ_RZV1 has one matching authenticated signed PASS_MAINTENANCE_PATCH terminal response and a later bounded direct terminal observation proving the batch cache-seam defect before provider entry. R18ZV2 build attempt 1 stopped before any stage, signature, publication, or target write because its locally generated collision gate retained the predecessor binding hash. That exact scanner literal is corrected; no route premise failed and no external mutation occurred."
+  },
+  "packageWrapperStopLoss": {
+    "failuresBeforeOperatorReset": 5,
+    "operatorResetUtc": "2026-09-08T23:15:00.0000000Z",
+    "maximumFailuresAfterReset": 5,
+    "failuresAfterResetAtFreeze": 1,
+    "packageAttemptsAtFreeze": 1,
+    "stopOnFifthPackageOrWrapperCodingFailure": true,
+    "workspaceThreeDraftFailureStopLossAlsoApplies": true,
+    "parserOrInvocationTyposExcluded": true,
+    "currentCarrierWithinOperatorApprovedScope": true
+  },
+  "route": {
+    "type":"MAINTENANCE_PATCH","jobClass":"MAINTENANCE_PATCH","installedCodeChange":true,"helperInstall":false,
+    "taskActions":[],"processActions":["START_ONE_OWNED_BACKGROUND_R18ZV2_BATCH_WORKER"],"queueMutation":false,"ledgerMutation":false,"sourceMutation":false,"imageRead":true,"waferAction":false,"inheritsQualifiedEndpointGate":true,
+    "endpointWorker":{"path":"work/OPENCV_OLS3/pkg/payload/W.ps1","sha256":"E070135E8C211F2869623553C04AE2DDE65244760FC60457356B2FEEEFEED4EB"},
+    "installedConfigEvidence":{"path":"work/OPENCV_SCRIBE_R18W4S21/R18W4S21_ROUTE_PINS.json","sha256":"D1CDD46C70BFF4003E46D35BFC77754F9A9A742E51CA14D5AEAD2377E75B1D5E"},
+    "capabilityEvidence":{"path":"work/ARGOS_C1E_READ_ONLY_CAPABILITY_INVENTORY_20260821.json","sha256":"381D3E9C4F17218DF37D8E8CE029853216E9BEA5A2FBDABC6AEB7861A29DC8A2"},
+    "qualifiedEndpointGate":{"path":"work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json","sha256":"170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"},
+    "qualifiedAdminGate":{"path":"","sha256":""}
+  },
+  "observation":{"exactSources":[],"requestedCapabilities":[],"requestedFields":[],"decisionOptions":["A","B","C","D"],"mutationDecisionDeferred":false},
+  "mutation": {
+    "supportedRemedy":"B",
+    "supportingObservation":{"path":"work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/R18ZV2_RECOVERY_SUPPORTING_OBSERVATION.json","sha256":"0F28919FD3A404329F1DB4852209F4E8DCD3B16AC2AC8C4F4C8E888886BC251D"},
+    "endpointMutationNecessary":true,"singleMutationAttemptAuthorized":true,
+    "singleMutationAttemptScope":"LOCAL_PACKAGE_A_PREFLIGHT_TEST_BUILD_AND_SIGN_ONLY_UNTIL_SEPARATE_PUBLICATION_INVOCATION_RECHECKS_OPERATOR_AUTHORITY",
+    "externalMutationAttemptAuthorized":false,"publicationAuthorized":false,"automaticRetryAuthorized":false
+  },
+  "scope": {
+    "revision":"R18ZV2_EXISTING_ORIENTED_CROPS_BATCH_CACHE_SEAM_CORRECTION_20260911A","runnerRevision":"R18ZT_EXISTING_ORIENTED_CROPS_PUBLIC_PROVIDER_BATCH_20260908D","requestId":"REQ_RZV2",
+    "workRoot":"D:/A2/w/ocv/R18ZV2","outputRoot":"D:/A2/o/ocv/R18ZV2","proposalAlias":"D:/A2/w/ocv/R18ZV2/p","canonicalProposalRoot":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/identity/proposals","installedLauncher":"C:/ProgramData/ArgosEdgeLabRO/AllWaferProcessorV2/OCV02_R18ZV2.ps1",
+    "allExistingQualifiedOrientedCropPairsAtLaunch":true,"launchInventoryIncludesStableVerifiedScribesPresentBeforeInventory":true,"launchInventoryExcludesRowsAddedAfterInventory":true,"inventoryMutationAfterFreezeFailsClosed":true,
+    "frozenOcrScienceChanged":false,"compatibilityFacadeOnly":true,"genericCanonicalZGeometryOnly":true,"stopAtSignedUnpublished":true
+  },
+  "authority": {
+    "localPackagePreparationAndSigningAuthorized":true,"publicationAuthorized":false,"maximumPublicationsAuthorizedByThisIntent":0,"automaticRetryAuthorized":false,"identityAcceptanceAuthorized":false,"automaticReferenceAdmissionAuthorized":false,"automaticHoldClearanceAuthorized":false,"providerActivationAuthorized":false,"trainingAuthorized":false,"xmlAuthorized":false,"productionAuthorized":false,"sourceMutationOrDeletionAuthorized":false
+  },
+  "supersedes":{"path":"work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/R18ZV2_RECOVERY_INTENT_V2.json","reason":"COLLISION_SCANNER_BINDING_LITERAL_CORRECTED_AFTER_FIRST_BUILD_STOPPED_BEFORE_WRITE"},
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

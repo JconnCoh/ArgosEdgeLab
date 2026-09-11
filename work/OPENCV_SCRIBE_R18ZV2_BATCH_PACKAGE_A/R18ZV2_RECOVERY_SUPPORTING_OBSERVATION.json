@@ -1,0 +1,40 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "checkedUtc": "2026-09-11T01:01:00Z",
+  "state": "PASS_R18ZV2_PREDECESSOR_TERMINAL_AND_BATCH_FAILURE_OBSERVATION",
+  "incidentId": "R18ZV2_BATCH_CACHE_SEAM_CORRECTION_AFTER_REQ_RZV1_20260911",
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": true,
+  "source": {
+    "path": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/R18ZV1_PREDECESSOR_TERMINAL_FAILURE_GATE.json",
+    "bytes": 4120,
+    "sha256": "069228218DA6E8A78790D19F6239D8D2ED879557365985533917428856AD52FB",
+    "requiredState": "PASS_R18ZV1_PREDECESSOR_TERMINAL_FAILED_BEFORE_PROVIDER_ENTRY_NO_RETRY"
+  },
+  "observed": {
+    "priorRequestId": "REQ_RZV1",
+    "endpointLedgerState": "PASS_MAINTENANCE_PATCH",
+    "endpointRequestTerminal": true,
+    "signedTerminalResponseReturnedToShare": true,
+    "returnRouteHealthy": true,
+    "matchingAuthenticatedResponseCount": 1,
+    "priorBackgroundBatchReachedTerminalIndexAndAggregate": true,
+    "priorBackgroundBatchScientificallySucceeded": false,
+    "heldBeforeProviderEntry": 1001,
+    "providerRunJobEnteredCount": 0,
+    "ocrAccuracyEvaluated": false,
+    "exactFailure": "ValueError: Provider reference-bank cache seam is unavailable.",
+    "laterFreshEndpointRequestRequiresFreshCollisionScan": true
+  },
+  "scope": "BOUNDED_AUTHENTICATED_PREDECESSOR_RESPONSE_AND_DIRECT_TERMINAL_METADATA_ONLY",
+  "imageBytesRead": false,
+  "resultPayloadTreeRead": false,
+  "taskActions": [],
+  "processActions": [],
+  "queueMutations": [],
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

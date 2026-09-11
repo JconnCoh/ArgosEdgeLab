@@ -1,0 +1,91 @@
+{
+  "schema": "argos_opencv_scribe_r18zv1_predecessor_terminal_failure_gate_v1",
+  "checkedUtc": "2026-09-11T00:38:00Z",
+  "state": "PASS_R18ZV1_PREDECESSOR_TERMINAL_FAILED_BEFORE_PROVIDER_ENTRY_NO_RETRY",
+  "priorRequestId": "REQ_RZV1",
+  "successorRequestId": "REQ_RZV2",
+  "signedPackage": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_FINAL_PACKAGE_GATE.json",
+    "bytes": 3149,
+    "sha256": "6167ACAFB80B68F583CE276A2D41632C9FB59F08670A7F588B3C4DAD4114DE25",
+    "state": "PASS_R18ZV1_SIGNED_UNPUBLISHED_PACKAGE_GATE"
+  },
+  "publication": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_PUBLISH_GATE.json",
+    "bytes": 13949,
+    "sha256": "895A316C5BC1324FD8EB33E3C1C1085840E2260D9711D79F7D1ECD72A216B19F",
+    "state": "PASS_R18ZV1_EXACT_SIGNED_MAINTENANCE_PUBLISHED_CREATE_NEW",
+    "publishedExactlyOnce": true,
+    "retryAuthorized": false
+  },
+  "signedEndpointTerminalResponse": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_LR_GATE.json",
+    "bytes": 3593,
+    "sha256": "09A150D2F92BAAC8D7875C974A1956DD58AD2412F620767FA34176293E5111E9",
+    "state": "PASS_R18ZV1_SIGNED_LAUNCH_RESPONSE_COLLECTED",
+    "signedResponseVerified": true,
+    "endpointState": "PASS_MAINTENANCE_PATCH",
+    "launchState": "PASS_R18ZT_BATCH_WORKER_STARTED",
+    "launchOnly": true,
+    "completionClaimed": false,
+    "responseZipSha256": "0F4437311EC0C2ECE4748450BD003B91384EF1A81D5267DBB4F328BB293768C2",
+    "responseManifestSha256": "A717C3BCFA4529B3F2AAABB34695764E5532AC05830FF129B4F69E308C8A15BC",
+    "responseSignatureSha256": "029E9C53F5B758997876AB9DDE94B7D5D0B887F2C52673F0485B3CC6E780BFE2",
+    "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+    "resultSha256": "AA30F018E545E28FF5000B19B1D864410310056A792CC2227CA2BA011F258E08",
+    "stdoutSha256": "9F3DD20E5371047AB41E010F6EB871CD92B16818F6CBE91CB564EF4D4A8DC2DC"
+  },
+  "boundedBatchTerminalObservation": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_OBSERVATION/R18ZV1_TERMINAL_OBSERVATION_R5_20260911T000700Z.json",
+    "bytes": 3950,
+    "sha256": "82ADAD231E69DB22A286D86D1B6BB9EB05F2542D45D93AF6E4F1304E84E8E627",
+    "signedPortalResponse": false,
+    "hostnameGatedDirectObservation": true,
+    "computerName": "A1025645101",
+    "state": "PASS_R18ZV1_BOUNDED_TERMINAL_OBSERVATION",
+    "mutationsPerformed": false,
+    "aggregate": {
+      "bytes": 2949,
+      "sha256": "070B95EDA5DF3250C1A584D202A16906BB35D0ADBD9055B70803AB87837DA2E0"
+    },
+    "caseIndex": {
+      "bytes": 950153,
+      "sha256": "DD6D6CD28DADF82A7CA2F81E8CA0B73AB6CAE2247AB7CF7647CC672AF0B1362B",
+      "state": "PASS_R18ZT_CASE_INDEX_COMPLETE",
+      "caseCount": 1001,
+      "rowCount": 1001,
+      "heldBeforeProviderEntry": 1001,
+      "providerRunJobEntered": 0,
+      "providerRunJobReturned": 0
+    },
+    "representativeFailure": {
+      "caseId": "88651DA8B593780C906D",
+      "state": "HOLD_R18ZT_PUBLIC_PROVIDER_RUN_FAILED_NO_RETRY",
+      "providerError": "ValueError: Provider reference-bank cache seam is unavailable.",
+      "bytes": 7371,
+      "sha256": "14FFD8D53B7DA78F385FF66106D615E52026897E706A4F50B57BA508E123A207"
+    }
+  },
+  "conclusion": {
+    "priorEndpointRequestTerminal": true,
+    "signedTerminalResponseReturnedToShare": true,
+    "returnRouteHealthy": true,
+    "backgroundBatchReachedTerminalIndexAndAggregate": true,
+    "backgroundBatchScientificallySucceeded": false,
+    "ocrAccuracyEvaluated": false,
+    "failureOccurredBeforePublicProviderEntry": true,
+    "failureClass": "MISSING_BATCH_REFERENCE_CACHE_COMPATIBILITY_SEAM",
+    "priorRequestReusable": false,
+    "priorPackageParentReusable": false,
+    "priorRetryAuthorized": false,
+    "successorUsesFreshRequestId": true,
+    "successorUsesFreshWorkRoot": "D:\\A2\\w\\ocv\\R18ZV2",
+    "successorUsesFreshOutputRoot": "D:\\A2\\o\\ocv\\R18ZV2",
+    "successorRequiresFreshCollisionScanBeforeSignature": true,
+    "successorRequiresFreshCollisionScanBeforePublication": true
+  },
+  "imageBytesRead": false,
+  "externalAccessPerformed": false,
+  "externalMutationPerformed": false,
+  "publicationPerformed": false
+}

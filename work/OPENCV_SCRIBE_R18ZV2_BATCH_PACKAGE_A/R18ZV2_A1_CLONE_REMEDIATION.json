@@ -1,0 +1,84 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "R18ZV2_PACKAGE_A_BATCH_CACHE_SEAM_CORRECTION_20260911A",
+  "state": "FROZEN_PRE_GENERATION",
+  "createdUtc": "2026-09-11T00:23:10.7787462Z",
+  "requestId": "REQ_RZV2",
+  "sourceGuardPath": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/R18ZV2_A1_SOURCE_GUARD.json",
+  "approvedMechanicalScope": {
+    "changedExecutableFiles": 6,
+    "carrierFiles": 5,
+    "compatibilityFacadeFiles": 1,
+    "totalNonblankLines": 3228,
+    "totalBytes": 266311
+  },
+  "pairs": [
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Build-R18ZV1BatchRequestV1.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Build-R18ZV2BatchRequestV1.ps1",
+      "sourceGuardSha256": "E06D4C7ECA2C8BC2B56B81D250521C9D754BCA8C70540D0EA7937B297B4F432D",
+      "rootRules": [
+        {"sourceRoot":"C:\\ArgosPy313","generatedRoot":"C:\\ArgosPy313","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\RZV1B1_PROPOSALS_NOT_ACCESSED","generatedRoot":"C:\\RZV2A1_PROPOSALS_NOT_ACCESSED","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\RZV1B1P","generatedRoot":"C:\\RZV2A1P","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\RZV1B1T","generatedRoot":"C:\\RZV2A1T","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\RZV1B1TO","generatedRoot":"C:\\RZV2A1TO","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\RZV1B1TW","generatedRoot":"C:\\RZV2A1TW","disposition":"REPLACED"},
+        {"sourceRoot":"C:\\RZV1B1V","generatedRoot":"C:\\RZV2A1V","disposition":"REPLACED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Invoke-R18ZV1BatchLaunchV1.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Invoke-R18ZV2BatchLaunchV1.ps1",
+      "sourceGuardSha256": "C663F1BF47415F97C727CBA577BC9D8A7345A4A85A530E972CA5C1BBB472B406",
+      "rootRules": [
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\RZV1B1JG","generatedRoot":"C:\\RZV2A1JG","disposition":"REPLACED"},
+        {"sourceRoot":"D:\\A2","generatedRoot":"D:\\A2","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\AFCV1","generatedRoot":"D:\\AFCV1","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"D:\\O2D5","generatedRoot":"D:\\O2D5","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Publish-R18ZV1V2.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Publish-R18ZV2V2.ps1",
+      "sourceGuardSha256": "2CF89B348BE784F31E3EAB1DB2ECE61B6502A6F651062F5467E83A08B999E806",
+      "rootRules": [
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Collect-R18ZV1LaunchResponseV1.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Collect-R18ZV2LaunchResponseV1.ps1",
+      "sourceGuardSha256": "1837551A93F4F7E667EE03CDE4DE5379C1B126E2AA1BD200222A791AE6D2D640",
+      "rootRules": [
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Test-R18ZV1RequestIdUniquenessV1.ps1",
+      "generated": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Test-R18ZV2RequestIdUniquenessV1.ps1",
+      "sourceGuardSha256": "C00679FD30E06C5DCCA4E10A672E7F023E2915A55436036229818324D56C0C1B",
+      "rootRules": [
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"C:\\ProgramData","generatedRoot":"C:\\ProgramData","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    }
+  ],
+  "globalRules": {
+    "freshPackageNamespace": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A",
+    "freshPackageRevision": "R18ZV2_EXISTING_ORIENTED_CROPS_BATCH_CACHE_SEAM_CORRECTION_20260911A",
+    "requestId": "REQ_RZV2",
+    "sourceTemplatesGuardedBeforeGeneration": true,
+    "allLiteralRootsClassified": true,
+    "hashLiteralsNeverMechanicallyRewritten": true,
+    "externalRouteRootsUnchanged": true,
+    "automaticRetryAuthorized": false
+  }
+}

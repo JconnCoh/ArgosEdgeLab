@@ -1,0 +1,116 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-11T00:44:49.5228224Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab-scribe-opencv\\work\\OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A\\R18ZV2_A1_CLONE_REMEDIATION.json",
+    "manifestSha256":  "0EE18D49AC98B8973A021AA424285A6ADE01A4BEFBDACA8916EAE3620AB09B2C",
+    "pairCount":  5,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Build-R18ZV1BatchRequestV1.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Build-R18ZV2BatchRequestV1.ps1",
+                      "sourceSha256":  "E06D4C7ECA2C8BC2B56B81D250521C9D754BCA8C70540D0EA7937B297B4F432D",
+                      "generatedSha256":  "3202A834450B4DCE7839B299F1CFE8849A7AA6886D907FBAEEA74B4846ED4F1B",
+                      "sourceRoots":  [
+                                          "C:\\ArgosPy313",
+                                          "C:\\ProgramData",
+                                          "C:\\RZV1B1_PROPOSALS_NOT_ACCESSED",
+                                          "C:\\RZV1B1P",
+                                          "C:\\RZV1B1T",
+                                          "C:\\RZV1B1TO",
+                                          "C:\\RZV1B1TW",
+                                          "C:\\RZV1B1V",
+                                          "D:\\A2"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ArgosPy313",
+                                             "C:\\ProgramData",
+                                             "C:\\RZV2A1_PROPOSALS_NOT_ACCESSED",
+                                             "C:\\RZV2A1P",
+                                             "C:\\RZV2A1T",
+                                             "C:\\RZV2A1TO",
+                                             "C:\\RZV2A1TW",
+                                             "C:\\RZV2A1V",
+                                             "D:\\A2"
+                                         ],
+                      "ruleCount":  9
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Invoke-R18ZV1BatchLaunchV1.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Invoke-R18ZV2BatchLaunchV1.ps1",
+                      "sourceSha256":  "C663F1BF47415F97C727CBA577BC9D8A7345A4A85A530E972CA5C1BBB472B406",
+                      "generatedSha256":  "A01624E58965D6CA65795F59DFE19891B123D3172DE542C0E5803D9E67DFCB6A",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "C:\\RZV1B1JG",
+                                          "D:\\A2",
+                                          "D:\\AFCV1",
+                                          "D:\\O2D5"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "C:\\RZV2A1JG",
+                                             "D:\\A2",
+                                             "D:\\AFCV1",
+                                             "D:\\O2D5"
+                                         ],
+                      "ruleCount":  5
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Publish-R18ZV1V2.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Publish-R18ZV2V2.ps1",
+                      "sourceSha256":  "2CF89B348BE784F31E3EAB1DB2ECE61B6502A6F651062F5467E83A08B999E806",
+                      "generatedSha256":  "97C6BC7A81F0585964E2381E179FE9976B94638028F6583B17F8B8260D373ECD",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "C:\\ProgramData",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "C:\\ProgramData",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  3
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Collect-R18ZV1LaunchResponseV1.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Collect-R18ZV2LaunchResponseV1.ps1",
+                      "sourceSha256":  "1837551A93F4F7E667EE03CDE4DE5379C1B126E2AA1BD200222A791AE6D2D640",
+                      "generatedSha256":  "0D704A6D5DE53CB7750A58AC8499C921BCE9A5108ED732D5B9CAED00839F46F9",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/Test-R18ZV1RequestIdUniquenessV1.ps1",
+                      "generated":  "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Test-R18ZV2RequestIdUniquenessV1.ps1",
+                      "sourceSha256":  "C00679FD30E06C5DCCA4E10A672E7F023E2915A55436036229818324D56C0C1B",
+                      "generatedSha256":  "5954E4D4008531E41A5FD5ED7F455FB964C1AAD526D541DABC1BC4EEA80C5DDC",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "C:\\ProgramData",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "C:\\ProgramData",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  3
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

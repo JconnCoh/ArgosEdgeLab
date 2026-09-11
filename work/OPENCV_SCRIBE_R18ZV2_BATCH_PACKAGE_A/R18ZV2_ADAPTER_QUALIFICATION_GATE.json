@@ -1,0 +1,78 @@
+{
+  "schema": "argos_opencv_scribe_r18zv2_batch_adapter_qualification_gate_v1",
+  "checkedUtc": "2026-09-11T00:41:00Z",
+  "state": "PASS_R18ZV2_BATCH_ADAPTER_EXACT_SEAM_ALGORITHM_UNCHANGED",
+  "requestId": "REQ_RZV2",
+  "adapter": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1/ArgosOpenCvScribeV1R18ZV1BatchAdapter.py",
+    "bytes": 1769,
+    "sha256": "4914B20364AC62F9E3152C4C40E2B06CC96A80CA1299E6E56CBF3287B07A34C7"
+  },
+  "wrappedProvider": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1/ArgosOpenCvScribeV1R18ZV1.py",
+    "bytes": 4096,
+    "sha256": "81B0AAAE1CBC044321CD0CDA5F1147202F7D8CB384D7E721A36B93AE0C24E2D7",
+    "revision": "ARGOS_OPENCV_SCRIBE_V1R18ZV1_GENERIC_ENVELOPE_BOUNDARY_DIAGNOSTIC_20260910"
+  },
+  "entryProviderTranslation": {
+    "externalQualification": "EXISTING_ORIENTED_CROP_BATCH_PAYLOAD",
+    "entryModule": "ArgosOpenCvScribeV1R18ZV1BatchAdapter.py",
+    "wrappedPublicEntryPoint": "run_job",
+    "runJobIdentityPreserved": true,
+    "mainIdentityPreserved": true,
+    "revisionIdentityPreserved": true,
+    "r17dIdentityPreserved": true,
+    "r18zvIdentityPreserved": true,
+    "r18hIdentityPreserved": true,
+    "combineReferencePrototypesCallable": true,
+    "topologyLoaderCallable": true,
+    "runStructureLoaderCallable": true,
+    "publicRunJobCallable": true
+  },
+  "behavioralBoundary": {
+    "directStructuralEvaluatorCallAdded": false,
+    "polaritySelectionAdded": false,
+    "directionSelectionAdded": false,
+    "rankingLogicChanged": false,
+    "envelopeLogicChanged": false,
+    "referenceLogicChanged": false,
+    "resultLogicChanged": false,
+    "truthOrChecksumUsed": false,
+    "slotOrLotExceptionAdded": false,
+    "providerRunJobWrapped": false,
+    "adapterOnlyExposesAlreadyLoadedModuleObjects": true
+  },
+  "tests": {
+    "exactSeamTest": "PASS_R18ZV1_BATCH_ADAPTER_EXACT_SEAM",
+    "batchRunnerRegression": "PASS_9_OF_9",
+    "imageBytesRead": false,
+    "providerRunPerformed": false,
+    "detectorRerunPerformed": false
+  },
+  "inheritedScience": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1_BATCH_PACKAGE_B/R18ZV1_SCIENCE_GATE.json",
+    "bytes": 6445,
+    "sha256": "71495B2C8452DCF282523D66BF8E0839915660F81A4B78AC8A30E1B7F07CEF7D",
+    "state": "PASS_R18ZV1_BATCH_SCIENCE_GATE",
+    "exactImageFirstString": "13HFX135SUE3",
+    "developmentAcceptedCorrect": 312,
+    "developmentAcceptedWrong": 0,
+    "developmentHeld": 163,
+    "developmentReferenceQueries": 475,
+    "developmentExactFoldCount": 49,
+    "allEightNormalViewsPresent": true,
+    "newSingleTargetImageFirstGain": false
+  },
+  "authority": {
+    "reviewOnly": true,
+    "identityAccepted": false,
+    "providerActivationAuthorized": false,
+    "productionAuthorized": false,
+    "automaticRetryAuthorized": false,
+    "publicationAuthorized": false
+  },
+  "sourceImagesModified": false,
+  "externalAccessPerformed": false,
+  "targetExecuted": false,
+  "publicationPerformed": false
+}
