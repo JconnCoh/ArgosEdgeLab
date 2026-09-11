@@ -1,0 +1,70 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-09-11T17:03:28.6069090Z",
+    "state":  "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+    "actionId":  "R18ZV3_PROGRESS_20260911T170300Z_01",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "2267F5FBA3EDE0473DDA69B7F8031233FD04A3FCBF06D3E621FDE297B4E50F8D",
+    "payloadSha256":  "9C32057346922106F9AA1FCC644032D4BDDB9734E14D8E0D174E1DA058538486",
+    "expectedResultSchema":  "argos_r18zv3_current_state_observation_v1",
+    "hostnameGatePassed":  true,
+    "visibleConsoleRequired":  true,
+    "taskbarClickPerformed":  false,
+    "hostnameUsesShortClipboardPaste":  true,
+    "hostnameSubmittedByClipboardCrLf":  false,
+    "hostnameSubmittedByNativeVkReturn":  true,
+    "hostnameSubmissionMode":  "SHIFT_INSERT_PASTE_THEN_NATIVE_VK_RETURN",
+    "payloadTransferred":  true,
+    "typedTrigger":  "get-clipboard -raw|iex",
+    "triggerSubmittedByNativeVkReturn":  true,
+    "triggerSubmissionMode":  "NATIVE_VK_RETURN",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "computerName":  "A1025645101",
+                         "mutationsPerformed":  false,
+                         "markers":  [
+                                         {
+                                             "processId":  3352,
+                                             "workerState":  "RUNNING",
+                                             "qualified":  null,
+                                             "completed":  null,
+                                             "disposition":  null,
+                                             "state":  "PASS_R18ZT_BATCH_WORKER_STARTED",
+                                             "name":  "LAUNCH.json",
+                                             "bytes":  2972,
+                                             "detail":  null,
+                                             "sha256":  "55B9F8ADCDE588B22D9BFBAE26A505556DF61254B83799C1C0C8328950678FC5"
+                                         },
+                                         {
+                                             "processId":  null,
+                                             "workerState":  null,
+                                             "qualified":  1044,
+                                             "completed":  16,
+                                             "disposition":  null,
+                                             "state":  "RUNNING_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+                                             "name":  "STATUS.json",
+                                             "bytes":  1503,
+                                             "detail":  null,
+                                             "sha256":  "6FDF7B10F0DA5BEDA48BB4590043EA1BD2B3CF6F706B3DB265457A06DCF46E1A"
+                                         },
+                                         {
+                                             "processId":  null,
+                                             "workerState":  null,
+                                             "qualified":  1044,
+                                             "completed":  16,
+                                             "disposition":  null,
+                                             "state":  "RUNNING_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+                                             "name":  "RUNNING.json",
+                                             "bytes":  1505,
+                                             "detail":  null,
+                                             "sha256":  "BA1B65315E4DFE205A2DDD6DD3458A7BA4154100C92B40489DE40D568E7CFFF0"
+                                         }
+                                     ],
+                         "state":  "PASS_R18ZV3_CURRENT_STATE_OBSERVATION",
+                         "pending":  true,
+                         "schema":  "argos_r18zv3_current_state_observation_v1",
+                         "outputRoot":  true,
+                         "ledger":  null
+                     }
+}
