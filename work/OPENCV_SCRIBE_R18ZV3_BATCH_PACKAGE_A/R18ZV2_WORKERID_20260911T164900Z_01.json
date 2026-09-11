@@ -1,0 +1,46 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-09-11T16:51:51.7055919Z",
+    "state":  "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+    "actionId":  "R18ZV2_WORKERID_20260911T164900Z_01",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "2267F5FBA3EDE0473DDA69B7F8031233FD04A3FCBF06D3E621FDE297B4E50F8D",
+    "payloadSha256":  "15ECF35DEF93B2F08FF66AE58182CDDDD7EC731B1F0500D5D718A7BCB52121C6",
+    "expectedResultSchema":  "argos_r18zv2_worker_identity_observation_v1",
+    "hostnameGatePassed":  true,
+    "visibleConsoleRequired":  true,
+    "taskbarClickPerformed":  false,
+    "hostnameUsesShortClipboardPaste":  true,
+    "hostnameSubmittedByClipboardCrLf":  false,
+    "hostnameSubmittedByNativeVkReturn":  true,
+    "hostnameSubmissionMode":  "SHIFT_INSERT_PASTE_THEN_NATIVE_VK_RETURN",
+    "payloadTransferred":  true,
+    "typedTrigger":  "get-clipboard -raw|iex",
+    "triggerSubmittedByNativeVkReturn":  true,
+    "triggerSubmissionMode":  "NATIVE_VK_RETURN",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "launch":  {
+                                        "bytes":  2732,
+                                        "processId":  35456,
+                                        "processCreationTimeUtc":  null,
+                                        "sha256":  "F908959F3B6D00A9DA30D5305E22ADA2996B17565D72577E9167060F9261231B",
+                                        "workerState":  "RUNNING",
+                                        "state":  "PASS_R18ZT_BATCH_WORKER_STARTED"
+                                    },
+                         "schema":  "argos_r18zv2_worker_identity_observation_v1",
+                         "r18zv3Pending":  true,
+                         "computerName":  "A1025645101",
+                         "state":  "PASS_R18ZV2_WORKER_IDENTITY_OBSERVATION",
+                         "mutationsPerformed":  false,
+                         "process":  {
+                                         "creationDate":  "09/11/2026 07:15:25",
+                                         "name":  "python.exe",
+                                         "executablePath":  "D:\\AFCV1\\rt\\python.exe",
+                                         "processId":  35456,
+                                         "parentProcessId":  9380,
+                                         "commandLine":  "\"D:\\AFCV1\\rt\\python.exe\" \"D:\\A2\\w\\ocv\\R18ZV2\\OPENCV_SCRIBE_R18ZT_BATCH\\Run-R18ZTBatchExecutionEnvelope.py\" --delegate \"D:\\A2\\w\\ocv\\R18ZV2\\OPENCV_SCRIBE_R18ZT_BATCH\\Run-R18ZTExistingOrientedCrops.py\" --delegate-sha256 \"F3B465F433ADB58F1C37C5673999FD03A4315EFA5A3128EFF8E192E9C3D58AE2\" --configuration \"D:\\A2\\w\\ocv\\R18ZV2\\OPENCV_SCRIBE_R18ZT_BATCH\\R18ZT_BATCH_CONFIGURATION.json\" --output-root \"D:\\A2\\o\\ocv\\R18ZV2\""
+                                     }
+                     }
+}
