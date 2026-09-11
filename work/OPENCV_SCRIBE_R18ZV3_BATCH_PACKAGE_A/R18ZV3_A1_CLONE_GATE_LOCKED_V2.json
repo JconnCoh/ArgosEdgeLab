@@ -1,0 +1,53 @@
+{
+  "schema": "argos_opencv_scribe_r18zv3_package_a_clone_gate_v1",
+  "checkedUtc": "2026-09-11T16:07:45Z",
+  "state": "PASS_R18ZV3_PACKAGE_A_CLONE_LITERAL_GATE",
+  "requestId": "REQ_RZV3",
+  "bindingRecordSha256": "07315387419E5396A73D23C79228682EF547E813CDC32000AAE242448B37B4E6",
+  "utilityState": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "rawUtilityGatePath": "work/OPENCV_SCRIBE_R18ZV3_BATCH_PACKAGE_A/R18ZV3_A1_CLONE_RAW_GATE_LOCKED_V2.json",
+  "rawUtilityGateSha256": "B1973844D0CB1AA029EAF2F079E80F16007F2251E4B48D4C4DBA14A4972AA43B",
+  "rawUtilityGateBytes": 7631,
+  "builderCorrectionRemediationPath": "work/OPENCV_SCRIBE_R18ZV3_BATCH_PACKAGE_A/R18ZV3_A1_CLONE_REMEDIATION.json",
+  "builderCorrectionRemediationSha256": "F4F51C05C7C5FC83EA3D8D22DD18F9520D655145AE89DC3C203841697FA8D70A",
+  "packageCloneRemediationPath": "work/OPENCV_SCRIBE_R18ZV3_BATCH_PACKAGE_A/R18ZV3_A1_CLONE_REMEDIATION.json",
+  "packageCloneRemediationSha256": "F4F51C05C7C5FC83EA3D8D22DD18F9520D655145AE89DC3C203841697FA8D70A",
+  "publisherCloneRemediationPath": "work/OPENCV_SCRIBE_R18ZV3_BATCH_PACKAGE_A/R18ZV3_A1_CLONE_REMEDIATION.json",
+  "publisherCloneRemediationSha256": "F4F51C05C7C5FC83EA3D8D22DD18F9520D655145AE89DC3C203841697FA8D70A",
+  "sourceGuardPath": "work/OPENCV_SCRIBE_R18ZV3_BATCH_PACKAGE_A/R18ZV3_A1_SOURCE_GUARD.json",
+  "sourceGuardSha256": "6FC44A0765FE3716DB41C8ECE56A4DFE69035F3A4C53D427D580B7C55DF53F50",
+  "sourceTemplatesGuardedBeforeGeneration": true,
+  "generatedArtifactsGuardedAfterGeneration": true,
+  "operatorApprovedMechanicalScope": {
+    "additionalExecutableFiles": 6,
+    "maximumAdditionalNonblankLines": 3750,
+    "maximumAdditionalBytes": 300000,
+    "exactAdditionalNonblankLines": 3722,
+    "exactAdditionalBytes": 299934,
+    "withinApprovedLineLimit": true,
+    "withinApprovedByteLimit": true,
+    "additionalExecutableFilesBeyondApprovedSix": 0
+  },
+  "generatedArtifacts": [
+    {"path":"work/OPENCV_SCRIBE_R18ZV3_BATCH_PACKAGE_A/Build-R18ZV3BatchRequestV1.ps1","bytes":78678,"sha256":"A73EFFB7DEE9E5B2063682CE79269D72BB766B179B22D35D971D4A52A5AF5461","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"},
+    {"path":"work/OPENCV_SCRIBE_R18ZV3_BATCH_PACKAGE_A/Collect-R18ZV3LaunchResponseV1.ps1","bytes":42606,"sha256":"7B96D994B220FB327851522C4F1413976E2B8FF8CE03890FAFE49232277AB4EB","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"},
+    {"path":"work/OPENCV_SCRIBE_R18ZV3_BATCH_PACKAGE_A/Invoke-R18ZV3BatchLaunchV1.ps1","bytes":82458,"sha256":"80714794CDDA91544308F7D70F74533F59912964466904A993AD664D1842DF6B","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"},
+    {"path":"work/OPENCV_SCRIBE_R18ZV3_BATCH_PACKAGE_A/Publish-R18ZV3V2.ps1","bytes":57497,"sha256":"5D2806A0FDF095FFD42A58F44B57533D91953524FA097DE5E8E5CB76ECA77A9D","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"},
+    {"path":"work/OPENCV_SCRIBE_R18ZV3_BATCH_PACKAGE_A/Test-R18ZV3RequestIdUniquenessV1.ps1","bytes":12567,"sha256":"D5A7018A2AD6AFE998D4D20EC95281421DD0515131C065D0B986D9AAFE7470A8","harnessState":"PASS_ARGOS_POWERSHELL_HARNESS_SAFETY","wrapperState":"PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"},
+    {"path":"work/OPENCV_SCRIBE_R18ZV3_BATCH_PACKAGE_A/Run-R18ZV3BatchExecutionEnvelopeV1.py","bytes":26128,"sha256":"88CF2BC2DEE757B9F789E0D03881DC397D1C30A9857380DC460C43A48822A510","astParseState":"PASS_R18ZV3_ENVELOPE_AST_PARSE"}
+  ],
+  "compatibilityFacade": {
+    "path": "work/OPENCV_SCRIBE_R18ZV1/ArgosOpenCvScribeV1R18ZV1BatchAdapter.py",
+    "bytes": 1769,
+    "sha256": "4914B20364AC62F9E3152C4C40E2B06CC96A80CA1299E6E56CBF3287B07A34C7",
+    "qualificationGateSha256": "804F779647185E651F8DBC78F76ACA4ACE51EC99D90B8D5CAD2F846B5012820D"
+  },
+  "publisherIncluded": true,
+  "publisherRequiresSeparatePostBuildInvocationBoundGate": true,
+  "violationCount": 0,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

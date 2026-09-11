@@ -1,0 +1,46 @@
+{
+  "schema": "argos_opencv_scribe_r18zv2_running_coexistence_gate_v1",
+  "checkedUtc": "2026-09-11T15:25:09.3998737Z",
+  "state": "PASS_R18ZV2_RUNNING_STATE_BOUND_FOR_LOCAL_SUCCESSOR_PREPARATION",
+  "predecessorRequestId": "REQ_RZV2",
+  "successorRequestId": "REQ_RZV3",
+  "publishedPredecessorEvidence": {
+    "path": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/R18ZV2_PUBLISH_GATE.json",
+    "bytes": 13959,
+    "sha256": "6DF5F23CAB3CC5118FBF9EBB465B9461B2969A41F38B30090E6734091429729D",
+    "state": "PASS_R18ZV2_EXACT_SIGNED_MAINTENANCE_PUBLISHED_CREATE_NEW"
+  },
+  "latestAuthenticatedDirectObservation": {
+    "path": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/R18ZV2_PROGRESSOBS_20260911T123500Z_02.json",
+    "bytes": 4151,
+    "sha256": "3D30E7539ABDB78A8174516EF49255B7D2FA45BE84B84628182D8250FBDDB826",
+    "observedUtc": "2026-09-11T13:57:55.4921630Z",
+    "computerName": "A1025645101",
+    "remoteSchema": "argos_r18zv2_current_state_observation_v2",
+    "remoteState": "PASS",
+    "pending": true,
+    "launchState": "PASS_R18ZT_BATCH_WORKER_STARTED",
+    "workerState": "RUNNING",
+    "qualifiedCaseCount": 1044,
+    "completedCount": 53,
+    "completeObserved": false,
+    "failureObserved": false,
+    "mutationsPerformed": false
+  },
+  "coexistenceContract": {
+    "r18zv2MustNotBeStoppedBeforeCompleteR18zv3PackagePass": true,
+    "r18zv2WorkOutputAliasAndProcessMustNotBeAccessedByLocalPreparation": true,
+    "successorUsesDistinctRequestWorkOutputLauncherAndLocalRoots": true,
+    "successorMayBePreparedAndSignedLocally": true,
+    "successorMayBePublishedFromThisGate": false,
+    "freshDirectQueueAndEndpointHealthAuditRequiredBeforeAnyPublication": true,
+    "parallelSuccessorMustNotAssumeConcurrentEndpointExecution": true
+  },
+  "r18zv2ProcessActionPerformed": false,
+  "r18zv2StopPerformed": false,
+  "externalAccessPerformedForThisGate": false,
+  "targetExecutedForThisGate": false,
+  "publicationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

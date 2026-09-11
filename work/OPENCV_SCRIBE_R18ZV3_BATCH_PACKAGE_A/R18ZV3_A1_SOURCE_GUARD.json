@@ -1,0 +1,93 @@
+{
+  "schema": "argos_opencv_scribe_r18zv3_package_a_source_guard_v1",
+  "checkedUtc": "2026-09-11T15:04:15.5647112Z",
+  "state": "PASS_R18ZV3_PACKAGE_A_ALL_SOURCES_GUARDED_BEFORE_GENERATION",
+  "requestId": "REQ_RZV3",
+  "smallestProductChange": "Carry the already-qualified R18ZV3 fixed eight-worker coordinator through the last qualified R18ZV2 package route while preserving the frozen OCR detector, provider, reference bank, per-case runner, and R18ZV2 execution.",
+  "approvedMechanicalScope": {
+    "additionalExecutableFiles": 6,
+    "maximumAdditionalNonblankLines": 3750,
+    "maximumAdditionalBytes": 300000,
+    "sourceAdditionalNonblankLines": 3714,
+    "sourceAdditionalBytes": 291817,
+    "newEndpointWorkers": 0,
+    "newTransportImplementations": 0,
+    "newGeneralPurposeHarnesses": 0,
+    "newLocalResultRoots": 1,
+    "worstCaseLocalInfrastructureBytes": 2097152
+  },
+  "sources": [
+    {
+      "role": "builder",
+      "path": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Build-R18ZV2BatchRequestV1.ps1",
+      "bytes": 75938,
+      "nonblankLines": 670,
+      "sha256": "E755D59AA152971BD1DDB9C021612040EF9F2C665FD3DBAA160D237A66995C61",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "role": "collector",
+      "path": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Collect-R18ZV2LaunchResponseV1.ps1",
+      "bytes": 42892,
+      "nonblankLines": 558,
+      "sha256": "0D704A6D5DE53CB7750A58AC8499C921BCE9A5108ED732D5B9CAED00839F46F9",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "role": "launcher",
+      "path": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Invoke-R18ZV2BatchLaunchV1.ps1",
+      "bytes": 79768,
+      "nonblankLines": 1139,
+      "sha256": "A01624E58965D6CA65795F59DFE19891B123D3172DE542C0E5803D9E67DFCB6A",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "role": "publisher",
+      "path": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Publish-R18ZV2V2.ps1",
+      "bytes": 58177,
+      "nonblankLines": 642,
+      "sha256": "888B01E34317DB469C24C91D65B9F5F9F6CCCFC321D8B854AFAB0AF57B8B4B7B",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "role": "collisionScanner",
+      "path": "work/OPENCV_SCRIBE_R18ZV2_BATCH_PACKAGE_A/Test-R18ZV2RequestIdUniquenessV1.ps1",
+      "bytes": 12567,
+      "nonblankLines": 217,
+      "sha256": "4D9177622EFB37785D9BE10E72B7A9F6F39392980D5EB5088912DF094D14CD27",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT"
+    },
+    {
+      "role": "executionEnvelope",
+      "path": "work/OPENCV_SCRIBE_R18ZU_BATCH_PACKAGE_A/Run-R18ZUBatchExecutionEnvelopeV1.py",
+      "bytes": 22475,
+      "nonblankLines": 488,
+      "sha256": "96E8BB3DC4CE86B2BA5D9FF894C001DF1632F79440DBB922991F19A64B8C1E62",
+      "parserState": "PASS_AST_PARSE",
+      "bytecodeWritten": false
+    }
+  ],
+  "qualifiedCoordinator": {
+    "path": "work/OPENCV_SCRIBE_R18ZV3/r18zv3_parallel_batch.py",
+    "bytes": 22670,
+    "nonblankLines": 494,
+    "sha256": "423C15AF407E8A7637104765EE5D315113F914876E59F3440308AC9316766C6E",
+    "qualificationGatePath": "work/OPENCV_SCRIBE_R18ZV3/R18ZV3_LOCAL_PARALLEL_QUALIFICATION_GATE.json",
+    "qualificationGateSha256": "4C6A2E0474F1EA9BE323D5E6FD3F6D7FE5A902AAF5A31228B18B9C4D03A021BF"
+  },
+  "unchangedBaseRunner": {
+    "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_C/Run-R18ZTExistingOrientedCropsV2.py",
+    "sha256": "F3B465F433ADB58F1C37C5673999FD03A4315EFA5A3128EFF8E192E9C3D58AE2"
+  },
+  "allSourcesGuardedBeforeGeneration": true,
+  "r18zv2MustRemainRunningUntilSuccessorPasses": true,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalAccessPerformed": false,
+  "publicationPerformed": false
+}

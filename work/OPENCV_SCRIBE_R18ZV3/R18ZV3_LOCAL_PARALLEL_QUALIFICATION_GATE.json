@@ -1,0 +1,291 @@
+{
+  "schema": "argos_r18zv3_local_parallel_qualification_gate_v1",
+  "revision": "R18ZV3_LOCAL_PARALLEL_QUALIFICATION_20260911A",
+  "createdUtc": "2026-09-11T14:47:47.0105020Z",
+  "state": "PASS_R18ZV3_LOCAL_PARALLEL_COORDINATOR_QUALIFICATION",
+  "disposition": "PENDING_PACKAGE_CARRIER_GATE",
+  "objective": "Replace only serial case orchestration with fixed process-isolated case sharding while preserving the frozen detector, provider, base-runner case semantics, schemas, ordering, holds, and no-retry behavior.",
+  "boundedImplementation": {
+    "newExecutableFileCount": 2,
+    "newExecutableNonblankLineCount": 641,
+    "newExecutableByteCount": 32548,
+    "announcedExecutableFileMaximum": 2,
+    "announcedExecutableNonblankLineMaximum": 650,
+    "retainedLocalRehearsalRootCount": 0,
+    "peakConcurrentTransientFixtureRootCount": 1,
+    "newInfrastructureArtifactBytesBelow25MiB": true,
+    "detectorChanged": false,
+    "providerChanged": false,
+    "baseRunnerChanged": false,
+    "portalRouteChanged": false,
+    "launcherChanged": false,
+    "wrapperChanged": false
+  },
+  "artifacts": [
+    {
+      "role": "parallelCoordinator",
+      "path": "work/OPENCV_SCRIBE_R18ZV3/r18zv3_parallel_batch.py",
+      "bytes": 22670,
+      "nonblankLines": 494,
+      "sha256": "423C15AF407E8A7637104765EE5D315113F914876E59F3440308AC9316766C6E"
+    },
+    {
+      "role": "focusedNonImageTest",
+      "path": "work/OPENCV_SCRIBE_R18ZV3/test_r18zv3_parallel_batch.py",
+      "bytes": 9878,
+      "nonblankLines": 147,
+      "sha256": "BD198D466BD0D4227FDCD368E7633609CE523955354DC57E9574D4E6C8D1B8CC"
+    },
+    {
+      "role": "mechanicallyDerivedConfiguration",
+      "path": "work/OPENCV_SCRIBE_R18ZV3/R18ZV3_BATCH_CONFIGURATION.json",
+      "bytes": 2631,
+      "sha256": "6DFF191C6755A93C84C766E05DBEA9DC7E457B5A309119E0F97A341D23DD673F"
+    }
+  ],
+  "frozenDependencyPins": [
+    {
+      "role": "baseRunner",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_C/Run-R18ZTExistingOrientedCropsV2.py",
+      "bytes": 71724,
+      "sha256": "F3B465F433ADB58F1C37C5673999FD03A4315EFA5A3128EFF8E192E9C3D58AE2"
+    },
+    {
+      "role": "baseRunnerTest",
+      "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_C/Test-R18ZTExistingOrientedCropsV2.py",
+      "bytes": 29134,
+      "sha256": "7B2D00F12184E23BD697CB33A4FD347FFA58EC54320C95D79CF50A3EA5759A7B"
+    },
+    {
+      "role": "batchAdapter",
+      "path": "work/OPENCV_SCRIBE_R18ZV1/ArgosOpenCvScribeV1R18ZV1BatchAdapter.py",
+      "bytes": 1769,
+      "sha256": "4914B20364AC62F9E3152C4C40E2B06CC96A80CA1299E6E56CBF3287B07A34C7"
+    },
+    {
+      "role": "provider",
+      "path": "work/OPENCV_SCRIBE_R18ZV1/ArgosOpenCvScribeV1R18ZV1.py",
+      "bytes": 4096,
+      "sha256": "81B0AAAE1CBC044321CD0CDA5F1147202F7D8CB384D7E721A36B93AE0C24E2D7"
+    },
+    {
+      "role": "r18zuDetector",
+      "path": "work/OPENCV_SCRIBE_R18ZU/ArgosOpenCvScribeV1R18ZU.py",
+      "bytes": 32197,
+      "sha256": "935BAAE98331FF128D4204B6C8AB2E7EBEF8A38B2773F4ACCE59AE3A78C7FF87"
+    },
+    {
+      "role": "r11Analyzer",
+      "path": "work/OPENCV_SCRIBE_R11A/ArgosOpenCvScribeV1R11.py",
+      "bytes": 81305,
+      "sha256": "7C6632B2D1C56DA4CA565DAB5BF7D46A366BCAE6663793CE5AB1ABB4739F72C9"
+    },
+    {
+      "role": "boundedRegressionGate",
+      "path": "work/OPENCV_SCRIBE_R18ZT_PRE_SLOT/R18ZT_PRE_VALIDATION_GATE_20260906A/R18ZT_PRE_VALIDATION_BOUNDED_REGRESSION_GATE.json",
+      "bytes": 34243,
+      "sha256": "A5054CB689B257819AD00B639FA9B55E2078B9193DDCB41776F7B39987606B52"
+    },
+    {
+      "role": "slot21FullChainGate",
+      "path": "work/OPENCV_SCRIBE_R18ZV1/R18ZV1_SLOT21_FULL_CHAIN_VALIDATION_GATE.json",
+      "bytes": 5049,
+      "sha256": "7D437C500E13C4F1D1A028667E3D2B132B5721D72178FC65E6EE5123D6ABE031"
+    },
+    {
+      "role": "r18zuScienceGate",
+      "path": "work/OPENCV_SCRIBE_R18ZU/R18ZU_REVIEW_BATCH_SCIENCE_GATE_20260908.json",
+      "bytes": 5354,
+      "sha256": "6F55C32484D8DD202E5358DFAB31025C8DAE1ED1EE36078653EA87561BCF7193"
+    }
+  ],
+  "configurationDerivation": {
+    "state": "PASS_EXACT_R18ZV2_TO_R18ZV3_CONFIG_TOKEN_DELTA",
+    "transformation": "global exact string substitution R18ZV2 to R18ZV3",
+    "allOtherParsedJsonValuesIdentical": true
+  },
+  "localQualification": {
+    "pythonHost": "C:/ArgosPy313/Scripts/python.exe",
+    "astParse": {
+      "state": "PASS_AST_2_FILES",
+      "fileCount": 2
+    },
+    "focusedSuite": {
+      "state": "PASS",
+      "testCount": 3,
+      "elapsedSeconds": 8.169,
+      "fakeNonImageFixturesOnly": true,
+      "serialProjectionEqualsParallelProjection": true,
+      "twoIndependentParallelProjectionsEqual": true,
+      "deterministicInventoryOrder": true,
+      "distinctWorkerPidCountAtLeastTwo": true,
+      "realExecutionIntervalsOverlap": true,
+      "allEightNormalHypothesesPreservedPerCase": true,
+      "automaticRetryPerformed": false,
+      "enteredProviderFailureRemainsOnceOnlyHold": true,
+      "laterCaseInSameWorkerPassesAfterProviderFailure": true,
+      "frozenEnvelopeCompleteContract": "EXACT_COMPLETE",
+      "partialSecondWorkerStartFailureCleansStartedWorker": true,
+      "fatalWorkerWaitsForBlockedPeerEntryMarker": true,
+      "fatalWithBlockedPeerReturnsInUnderFiveSeconds": true,
+      "survivingR18ZV3ChildCountAfterFailure": 0,
+      "falseCompleteWrittenOnFatal": false
+    },
+    "unchangedBaseRunnerSuite": {
+      "state": "PASS",
+      "testCount": 9,
+      "elapsedSeconds": 2.982
+    },
+    "staticProductScan": {
+      "state": "PASS_NO_FORBIDDEN_PRODUCT_TOKENS",
+      "directImageLibraryImport": false,
+      "directStructuralEvaluatorCall": false,
+      "directAnalyzeImagesCall": false,
+      "directProviderRunJobCall": false,
+      "truthOrChecksumSelectionLogic": false,
+      "threadedExecution": false,
+      "recursiveEnumeration": false
+    },
+    "cleanup": {
+      "state": "PASS_NO_TEST_LEFTOVERS_OR_COMPILED_ARTIFACTS",
+      "retainedFixtureRootCount": 0,
+      "pycacheOrPycCount": 0
+    }
+  },
+  "parallelContract": {
+    "defaultWorkerCount": 8,
+    "maximumWorkerCount": 16,
+    "startMethod": "spawn",
+    "sharding": "fixed cyclic inventory-index shards",
+    "parentOwnsGlobalArtifacts": true,
+    "workerWritesOnlyDisjointCaseRoots": true,
+    "eachProcessLoadsIndependentProvider": true,
+    "eachProcessUsesIndependentReferenceBankCache": true,
+    "sourceAndConfigurationRevalidatedPerWorker": true,
+    "parentReconstructsOriginalInventoryOrder": true,
+    "retryAllowed": false,
+    "firstFatalSetsSharedStopEvent": true,
+    "firstFatalExitsReceiveLoop": true,
+    "abnormalCleanupGraceSecondsPerStartedWorker": 0.25,
+    "remainingLiveWorkersTerminatedAndJoined": true
+  },
+  "pathBudget": {
+    "state": "PASS",
+    "plannedLeaves": [
+      {
+        "role": "longestQualifiedProposalLeaf",
+        "baseCharacters": 156,
+        "suffixReserve": 32,
+        "effectiveCharacters": 188,
+        "maximumComponentCharacters": 80,
+        "disposition": "PASS"
+      },
+      {
+        "role": "caseAtomicLeaf",
+        "baseCharacters": 62,
+        "suffixReserve": 52,
+        "effectiveCharacters": 114,
+        "disposition": "PASS"
+      },
+      {
+        "role": "providerPartialLeafConservative",
+        "baseCharacters": 74,
+        "suffixReserve": 52,
+        "effectiveCharacters": 126,
+        "disposition": "PASS"
+      },
+      {
+        "role": "installedCoordinator",
+        "baseCharacters": 69,
+        "suffixReserve": 32,
+        "effectiveCharacters": 101,
+        "disposition": "PASS"
+      },
+      {
+        "role": "installedAdjacentBaseRunner",
+        "baseCharacters": 80,
+        "suffixReserve": 32,
+        "effectiveCharacters": 112,
+        "disposition": "PASS"
+      }
+    ],
+    "boundaryChecks": {
+      "effective199": "PASS",
+      "effective200": "SHORT_ALIAS_REQUIRED",
+      "effective229": "SHORT_ALIAS_REQUIRED",
+      "effective230": "HARD_STOP",
+      "component80": "PASS",
+      "component81": "HARD_STOP"
+    }
+  },
+  "frozenScienceBinding": {
+    "scienceRerunPerformed": false,
+    "referenceQueryCount": 475,
+    "exactLineageFoldCount": 49,
+    "acceptedCorrectCount": 312,
+    "acceptedWrongCount": 0,
+    "heldCount": 163,
+    "slot21": {
+      "imageFirstString": "13HFX135SUE3",
+      "selectedChannel": "BF",
+      "selectedPolarity": "DARK",
+      "selectedDirection": "FORWARD",
+      "selectionScore": 0.9117836040446633,
+      "allEightHypothesesAttempted": true,
+      "wrongAccepted": false
+    },
+    "rControl": {
+      "imageFirstString": "9508R043FED4",
+      "selectionScore": 0.9879781705954085
+    },
+    "t7Control": {
+      "imageFirstString": "1478T161SUG7",
+      "selectionScore": 0.9745961988190179
+    },
+    "establishedTControl": {
+      "imageFirstString": "1478T158SUC5",
+      "selectionScore": 0.9734826279999068
+    },
+    "zControl": {
+      "imageFirstString": "147Z6157SUA5",
+      "selectionScore": 0.9547635449691466
+    }
+  },
+  "independentReview": {
+    "contractAudit": "PASS_NO_SOURCE_BLOCKER",
+    "cleanupDefectReview": "PASS_PRIOR_P1_P2_CLOSED",
+    "mandatoryPackagingConditionsAccepted": true
+  },
+  "mandatoryFuturePackagingConditions": [
+    "Install the coordinator under the exact basename r18zv3_parallel_batch.py.",
+    "Install the pinned base runner beside it under the exact basename Run-R18ZTExistingOrientedCropsV2.py.",
+    "Do not inherit the R18ZV2 delegateSubprocessCount=0 or delegateSubprocessAllowed=false declaration; the successor contract must truthfully authorize the fixed bounded child count.",
+    "Prove every coordinator child has exited before the in-process coordinator main returns.",
+    "Use the last qualified carrier byte-for-byte except for this payload delta and mechanically required manifest, hash, and truthful subprocess-contract updates."
+  ],
+  "authorityAndMutationAudit": {
+    "sourceImageBytesRead": false,
+    "realImageEvaluationPerformed": false,
+    "jbodAccessPerformed": false,
+    "externalContactPerformed": false,
+    "portalActionPerformed": false,
+    "r18zv2ProcessActionPerformed": false,
+    "r18zv2StopPerformed": false,
+    "publicationPerformed": false,
+    "signaturePerformed": false,
+    "packageCarrierPrepared": false,
+    "identityAccepted": false,
+    "holdCleared": false,
+    "trainingAuthorityGranted": false,
+    "xmlAuthorityGranted": false,
+    "productionAuthorityGranted": false,
+    "sourceMutationPerformed": false,
+    "sourceDeletionPerformed": false
+  },
+  "r18zv2Preservation": {
+    "requestId": "REQ_RZV2",
+    "leftRunningAndUntouched": true,
+    "successorMayStopR18ZV2BeforeFullPackageGatePass": false
+  },
+  "nextAction": "Under a separately measured package-carrier scope, mechanically integrate these exact qualified coordinator and configuration bytes into the last qualified R18ZV2 carrier, install the exact adjacent frozen base-runner basename, truthfully revise the subprocess declaration, and run the complete package gates. Do not stop R18ZV2 until that full successor package passes. Publication remains separately explicit."
+}
