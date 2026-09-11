@@ -1,0 +1,50 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-09-11T16:27:39.8848335Z",
+    "state":  "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+    "actionId":  "R18ZV3_PREPUB_ENDPOINT_20260911T162700Z_01",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "2267F5FBA3EDE0473DDA69B7F8031233FD04A3FCBF06D3E621FDE297B4E50F8D",
+    "payloadSha256":  "F3329B09F18F9C82D5BF49590ED5E452A4E55A8A70DB87D1498B6D0A2DA077E5",
+    "expectedResultSchema":  "argos_r18zv2_endpoint_consumer_observation_v2",
+    "hostnameGatePassed":  true,
+    "visibleConsoleRequired":  true,
+    "taskbarClickPerformed":  false,
+    "hostnameUsesShortClipboardPaste":  true,
+    "hostnameSubmittedByClipboardCrLf":  false,
+    "hostnameSubmittedByNativeVkReturn":  true,
+    "hostnameSubmissionMode":  "SHIFT_INSERT_PASTE_THEN_NATIVE_VK_RETURN",
+    "payloadTransferred":  true,
+    "typedTrigger":  "get-clipboard -raw|iex",
+    "triggerSubmittedByNativeVkReturn":  true,
+    "triggerSubmissionMode":  "NATIVE_VK_RETURN",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "computerName":  "A1025645101",
+                         "mutationsPerformed":  false,
+                         "state":  "PASS_R18ZV2_ENDPOINT_CONSUMER_OBSERVATION",
+                         "config":  {
+                                        "bytes":  3144,
+                                        "sha256":  "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F"
+                                    },
+                         "worker":  {
+                                        "bytes":  67001,
+                                        "sha256":  "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+                                    },
+                         "schema":  "argos_r18zv2_endpoint_consumer_observation_v2",
+                         "matchingTaskCount":  1,
+                         "tasks":  [
+                                       {
+                                           "nextRunTime":  "",
+                                           "action":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ArgosProjectPortalEndpointWorker.ps1\" -ConfigPath \"C:\\ProgramData\\ArgosProjectPortalRO\\config\\endpoint_jbod.json\"",
+                                           "state":  "Running",
+                                           "missedRuns":  0,
+                                           "lastRunTime":  "09/11/2026 07:15:13",
+                                           "lastTaskResult":  267009,
+                                           "taskPath":  "\\",
+                                           "taskName":  "ArgosProjectPortal.JBOD.Endpoint.RO"
+                                       }
+                                   ]
+                     }
+}

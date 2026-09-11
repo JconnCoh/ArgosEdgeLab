@@ -1,0 +1,70 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-09-11T16:28:35.2816371Z",
+    "state":  "HOLD_ARGOS_ADMIN_CLIPBOARD_ACTION_REMOTE_RESULT",
+    "actionId":  "R18ZV3_PREPUB_STATE_20260911T162800Z_01",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "2267F5FBA3EDE0473DDA69B7F8031233FD04A3FCBF06D3E621FDE297B4E50F8D",
+    "payloadSha256":  "5AF4F13F103DCBD6287EF791E4F23CDCFE4FA7B22F0A50BC65356CA7DC1EED54",
+    "expectedResultSchema":  "argos_r18zv2_current_state_observation_v2",
+    "hostnameGatePassed":  true,
+    "visibleConsoleRequired":  true,
+    "taskbarClickPerformed":  false,
+    "hostnameUsesShortClipboardPaste":  true,
+    "hostnameSubmittedByClipboardCrLf":  false,
+    "hostnameSubmittedByNativeVkReturn":  true,
+    "hostnameSubmissionMode":  "SHIFT_INSERT_PASTE_THEN_NATIVE_VK_RETURN",
+    "payloadTransferred":  true,
+    "typedTrigger":  "get-clipboard -raw|iex",
+    "triggerSubmittedByNativeVkReturn":  true,
+    "triggerSubmissionMode":  "NATIVE_VK_RETURN",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "computerName":  "A1025645101",
+                         "mutationsPerformed":  false,
+                         "markers":  [
+                                         {
+                                             "processId":  35456,
+                                             "workerState":  "RUNNING",
+                                             "qualified":  null,
+                                             "completed":  null,
+                                             "disposition":  null,
+                                             "state":  "PASS_R18ZT_BATCH_WORKER_STARTED",
+                                             "name":  "LAUNCH.json",
+                                             "bytes":  2732,
+                                             "detail":  null,
+                                             "sha256":  "F908959F3B6D00A9DA30D5305E22ADA2996B17565D72577E9167060F9261231B"
+                                         },
+                                         {
+                                             "processId":  null,
+                                             "workerState":  null,
+                                             "qualified":  1044,
+                                             "completed":  133,
+                                             "disposition":  null,
+                                             "state":  "RUNNING_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+                                             "name":  "STATUS.json",
+                                             "bytes":  1467,
+                                             "detail":  null,
+                                             "sha256":  "38685A3FBE33ECA317A195116B996C09DEC3D8055B3543034CFA092913EE18B4"
+                                         },
+                                         {
+                                             "processId":  null,
+                                             "workerState":  null,
+                                             "qualified":  1044,
+                                             "completed":  133,
+                                             "disposition":  null,
+                                             "state":  "RUNNING_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+                                             "name":  "RUNNING.json",
+                                             "bytes":  1469,
+                                             "detail":  null,
+                                             "sha256":  "BB38405EC5BBA10CC69BEBFCF9BF3FBE7C28D6853C71017EF2249B23BCFB0134"
+                                         }
+                                     ],
+                         "state":  "PASS",
+                         "pending":  true,
+                         "schema":  "argos_r18zv2_current_state_observation_v2",
+                         "outputRoot":  true,
+                         "ledger":  null
+                     }
+}
