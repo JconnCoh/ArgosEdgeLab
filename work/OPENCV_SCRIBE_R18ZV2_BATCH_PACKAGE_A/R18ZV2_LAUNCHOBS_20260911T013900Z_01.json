@@ -1,0 +1,55 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-09-11T01:40:59.4243565Z",
+    "state":  "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+    "actionId":  "R18ZV2_LAUNCHOBS_20260911T013900Z_01",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "0208794B6576265D755F1DCDB8A69CB50C6E6ABCC24B331C77BCAFBC0B310744",
+    "payloadSha256":  "43A50C118BBC2F5412DD89D5BA78BC42189A8C1D48D82A61CF0D4D95DAD2DC92",
+    "expectedResultSchema":  "argos_r18zv2_bounded_launch_observation_v1",
+    "hostnameGatePassed":  true,
+    "visibleConsoleRequired":  true,
+    "taskbarClickPerformed":  false,
+    "hostnameUsesShortClipboardPaste":  true,
+    "hostnameSubmittedByClipboardCrLf":  false,
+    "hostnameSubmittedByNativeVkReturn":  true,
+    "hostnameSubmissionMode":  "PASTE_THEN_NATIVE_VK_RETURN",
+    "payloadTransferred":  true,
+    "typedTrigger":  "get-clipboard -raw|iex",
+    "triggerSubmittedByNativeVkReturn":  true,
+    "triggerSubmissionMode":  "NATIVE_VK_RETURN",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "schema":  "argos_r18zv2_bounded_launch_observation_v1",
+                         "state":  "PASS_R18ZV2_BOUNDED_LAUNCH_OBSERVATION",
+                         "rootExists":  false,
+                         "files":  [
+                                       {
+                                           "name":  "LAUNCH.json",
+                                           "exists":  false
+                                       },
+                                       {
+                                           "name":  "STATUS.json",
+                                           "exists":  false
+                                       },
+                                       {
+                                           "name":  "RUNNING.json",
+                                           "exists":  false
+                                       },
+                                       {
+                                           "name":  "COMPLETE.json",
+                                           "exists":  false
+                                       },
+                                       {
+                                           "name":  "FAILURE.json",
+                                           "exists":  false
+                                       },
+                                       {
+                                           "name":  "LAUNCH_REPORTING_ERROR.json",
+                                           "exists":  false
+                                       }
+                                   ],
+                         "mutationsPerformed":  false
+                     }
+}

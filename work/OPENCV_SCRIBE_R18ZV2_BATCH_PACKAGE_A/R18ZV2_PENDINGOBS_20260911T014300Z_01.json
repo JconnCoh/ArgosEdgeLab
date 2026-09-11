@@ -1,0 +1,43 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-09-11T01:43:28.1781066Z",
+    "state":  "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+    "actionId":  "R18ZV2_PENDINGOBS_20260911T014300Z_01",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "0208794B6576265D755F1DCDB8A69CB50C6E6ABCC24B331C77BCAFBC0B310744",
+    "payloadSha256":  "1B1D2AA0673954913D62E7DA71FE174E31EAE4FB49BD942EEF3230A0295A75AC",
+    "expectedResultSchema":  "argos_r18zv2_endpoint_pending_observation_v1",
+    "hostnameGatePassed":  true,
+    "visibleConsoleRequired":  true,
+    "taskbarClickPerformed":  false,
+    "hostnameUsesShortClipboardPaste":  true,
+    "hostnameSubmittedByClipboardCrLf":  false,
+    "hostnameSubmittedByNativeVkReturn":  true,
+    "hostnameSubmissionMode":  "PASTE_THEN_NATIVE_VK_RETURN",
+    "payloadTransferred":  true,
+    "typedTrigger":  "get-clipboard -raw|iex",
+    "triggerSubmittedByNativeVkReturn":  true,
+    "triggerSubmissionMode":  "NATIVE_VK_RETURN",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "schema":  "argos_r18zv2_endpoint_pending_observation_v1",
+                         "state":  "PASS_R18ZV2_ENDPOINT_PENDING_OBSERVATION",
+                         "pendingRootExists":  true,
+                         "files":  [
+                                       {
+                                           "name":  "PORTAL_REQUEST_MANIFEST.json",
+                                           "exists":  true,
+                                           "bytes":  30536,
+                                           "sha256":  "7061A2B306D71EA65A4C2B41E671F5C009AC87101499E0D3DCF7CFB6A3A3F9EB"
+                                       },
+                                       {
+                                           "name":  "PORTAL_REQUEST_MANIFEST.sig",
+                                           "exists":  true,
+                                           "bytes":  384,
+                                           "sha256":  "ADD9E0F3A1ABF9ED480D1DA080BCC1B51AF194AB89A72467C50E8B1D57737D76"
+                                       }
+                                   ],
+                         "mutationsPerformed":  false
+                     }
+}
