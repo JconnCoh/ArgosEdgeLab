@@ -11197,3 +11197,33 @@ than rerunning it.
   Windows PowerShell 5.1 and require zero collisions before remote execution.
 - Recovery: withdraw the executed action ID and source. Use a fresh namespace
   with uniquely prefixed helper names; do not retry the failed namespace.
+
+## 2026-09-12 — A background child must not inherit Project Portal capture pipes
+
+- Failure signature: the R18ZV3 maintenance entrypoint returned its launch
+  object after starting the OCR envelope, but the serial Project Portal worker
+  did not commit its response or advance the ledger until the 1,044-case OCR
+  process finished 6 hours 35 minutes later.
+- Cause: the endpoint captured the entrypoint's stdout and stderr with
+  asynchronous pipe readers. The entrypoint launched its long-lived Python
+  child with `UseShellExecute=false` and unredirected standard streams, so that
+  child inherited the endpoint pipe write handles. Disposing the managed
+  `Process` wrapper did not close handles owned by the Python process, and the
+  endpoint blocked while resolving `ReadToEndAsync` after the entrypoint exited.
+- Mandatory preflight: every long-lived portal-launched descendant must own
+  non-portal standard-stream sinks and retain zero endpoint capture-pipe
+  handles. Reuse the qualified hidden-worker pattern with
+  `UseShellExecute=true`, no portal-captured child streams, worker-owned `D:`
+  logs or structured status/failure files, a short liveness check, and a bounded
+  launch result. Rehearse the exact captured-parent shape and prove its stream
+  drain completes while the long-lived child is still running.
+- Live gate: require the signed launch response and terminal ledger row while
+  the owned worker is demonstrably still `RUNNING`; a later queued control must
+  be able to finish before that worker completes. A launcher preflight,
+  `Process.Dispose()`, or `RedirectStandardOutput=false` is not detachment
+  evidence.
+- Related resource preflight: setting `OPENCV_FOR_THREADS_NUM=1` alone did not
+  constrain the pinned OpenCV build (`cv2.getNumThreads()` remained 14).
+  Process-isolated OCR workers must call `cv2.setNumThreads(1)` themselves and
+  assert the resulting value before image work; BLAS environment caps remain
+  separate inherited process settings.
