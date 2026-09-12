@@ -1,0 +1,103 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-11T13:00:00.0000000Z",
+  "incidentId": "OCV03_OLS7_THREE_LOT_METADATA_CAPABILITY_20260911",
+  "mode": "MUTATE",
+  "artifactLifecycle": "FROZEN",
+  "policy": {
+    "path": "work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json",
+    "sha256": "F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"
+  },
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {
+      "path": "",
+      "sha256": ""
+    },
+    "workflowReviewClearance": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "route": {
+    "type": "MAINTENANCE_PATCH",
+    "jobClass": "MAINTENANCE_PATCH",
+    "installedCodeChange": false,
+    "helperInstall": false,
+    "taskActions": [],
+    "processActions": [],
+    "queueMutation": false,
+    "ledgerMutation": false,
+    "sourceMutation": false,
+    "imageRead": false,
+    "waferAction": false,
+    "inheritsQualifiedEndpointGate": true,
+    "endpointWorker": {
+      "path": "work/OPENCV_OLS3/pkg/payload/W.ps1",
+      "sha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+    },
+    "installedConfigEvidence": {
+      "path": "work/JBOD_ENDPOINT_ROOT_DIAGNOSTIC_C1F0/C1F0_LIVE_ENDPOINT_CONFIG.json",
+      "sha256": "465107D861E8D2C376A419B1C15841BE3A5757C6498C36CA56B9A95A2F0B76DB"
+    },
+    "capabilityEvidence": {
+      "path": "work/OPENCV_OLS4/OCV00_DEEPEST_ALIAS_LOCAL_PROOF_FREEZE.json",
+      "sha256": "C6275BFA173B6E9E5EE0DCCB39FA57EF39BA5A318767309A6DA894141B6378B5"
+    },
+    "qualifiedEndpointGate": {
+      "path": "work/OPENCV_EDGE_NOTCH_O3C1/O3C1_COMPLETE_ROUTE_GATE.json",
+      "sha256": "62D72EF54D22D83E0B46C39B4B6646D45A1B6F58CD017C51B89A7FC4ED93ECDD"
+    },
+    "qualifiedAdminGate": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "observation": {
+    "exactSources": [
+      "D:/KLARFExport/UnpatternedFront/Lot_62636-134",
+      "D:/KLARFExport/UnpatternedFront/Lot_62631-586",
+      "D:/KLARFExport/PatternedFront/Lot_62628-279"
+    ],
+    "requestedCapabilities": [
+      "EXACT_THREE_SUBTREE_ALIAS_METADATA_INVENTORY"
+    ],
+    "requestedFields": [
+      "directoryRows",
+      "bmpLeafRows",
+      "skipIdentityRows",
+      "accessErrors",
+      "complete"
+    ],
+    "decisionOptions": [
+      "COMPLETE",
+      "HOLD_INCOMPLETE"
+    ],
+    "mutationDecisionDeferred": false
+  },
+  "mutation": {
+    "supportedRemedy": "B",
+    "supportingObservation": {
+      "path": "work/OPENCV_OLS7/OLS7_SUPPORTING_OBSERVATION.json",
+      "sha256": "5B2BBEFD434180E8922E25D8A9C648C3951978BAF835B1A6A3A067E3A138D7AA"
+    },
+    "endpointMutationNecessary": true,
+    "singleMutationAttemptAuthorized": true,
+    "contractPath": "work/OPENCV_OLS7/MAINTENANCE_DEFINITION.json",
+    "contractSha256": "3B0D868BFA14FE3272CADE6EF69216EB36F0C767DFD83739FD4532E639DF3055"
+  },
+  "authorizationBoundary": {
+    "localDesignAndWindowsPowerShell51ProofAuthorized": true,
+    "packageBuildAuthorized": true,
+    "signatureAuthorized": true,
+    "livePublicationAuthorized": true,
+    "liveEndpointRequestsMaximum": 1,
+    "operatorAuthorization": "2026-09-11 user message: PUBLISH"
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

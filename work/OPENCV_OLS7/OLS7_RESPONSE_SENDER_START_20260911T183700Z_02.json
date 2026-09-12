@@ -1,0 +1,31 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-09-11T18:33:47.0143264Z",
+    "state":  "HOLD_ARGOS_ADMIN_CLIPBOARD_ACTION_REMOTE_RESULT",
+    "actionId":  "OLS7_SENDER_START_20260911T183700Z_02",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "2267F5FBA3EDE0473DDA69B7F8031233FD04A3FCBF06D3E621FDE297B4E50F8D",
+    "payloadSha256":  "CF37CD8BF9C369A0EB4BE643D444DF900A954619303EC1D06100D3247D8AAD36",
+    "expectedResultSchema":  "argos_ols7_response_sender_start_once_v1",
+    "hostnameGatePassed":  true,
+    "visibleConsoleRequired":  true,
+    "taskbarClickPerformed":  false,
+    "hostnameUsesShortClipboardPaste":  true,
+    "hostnameSubmittedByClipboardCrLf":  false,
+    "hostnameSubmittedByNativeVkReturn":  true,
+    "hostnameSubmissionMode":  "SHIFT_INSERT_PASTE_THEN_NATIVE_VK_RETURN",
+    "payloadTransferred":  true,
+    "typedTrigger":  "get-clipboard -raw|iex",
+    "triggerSubmittedByNativeVkReturn":  true,
+    "triggerSubmissionMode":  "NATIVE_VK_RETURN",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "stage":  "preflight",
+                         "schema":  "argos_ols7_response_sender_start_once_v1",
+                         "errorType":  "System.Management.Automation.CommandNotFoundException",
+                         "state":  "FAIL_OLS7_RESPONSE_SENDER_START_ONCE",
+                         "mutationsPerformed":  false,
+                         "errorMessage":  "The term \u0027throwTask action changed\u0027 is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+                     }
+}

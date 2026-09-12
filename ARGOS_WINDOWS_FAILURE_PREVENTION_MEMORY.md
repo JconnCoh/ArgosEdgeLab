@@ -11545,3 +11545,372 @@ than rerunning it.
   and queue; and passes the complete exact-worker rehearsal. Do not weaken the
   package gate, retry a request, or disguise the endpoint change as detector
   work.
+
+## 2026-09-08 — Package payload names must fit the deepest portal archive root
+
+- Failure signature: the first local O3F16R28K1 signing preflight stopped with
+  `K1 final package path gate failed`; no signature or portal write occurred.
+- Cause: `AnnularUnwrapCandidateFirstOpenCvR28Portable.py` made the deepest
+  endpoint completed-request leaf exactly 200 characters with the mandatory
+  32-character reserve.
+- Mandatory preflight: measure every packaged payload leaf under the deepest
+  inherited route root before build, not only under the local build root.
+- Recovery: retain the exact adapter bytes under a shorter packaged filename
+  and rebuild only into fresh attempt roots; do not change the endpoint route.
+
+## 2026-09-08 — Exact-package rehearsal callers must outlive the rehearsal
+
+- Failure signature: O3F16R28K1 attempt 2 was signed, then its local exact-
+  package rehearsal caller was terminated after 14 seconds with no rehearsal
+  gate; only the fresh extraction tree existed and nothing was published.
+- Cause: the outer command timeout was shorter than the rehearsal harness.
+- Mandatory preflight: give exact-package rehearsals a caller timeout greater
+  than the harness's complete bounded case duration.
+- Recovery: do not rerun the signed request; use fresh attempt, signing, and
+  rehearsal roots with identical detector bytes and a sufficient caller timeout.
+
+## 2026-09-08 — Rehearsal invocation roots are attempt-scoped
+
+- Failure signature: signed O3F16R28K1 attempt 3 failed local target preflight
+  with `HOLD_O3F16R28K1_REHEARSAL_CREATE_NEW_COLLISION`; nothing was published.
+- Cause: the interrupted attempt 2 had already created the fixed rehearsal root,
+  while attempt 3 reused the same local rehearsal invocation manifest.
+- Mandatory preflight: every signed attempt uses fresh runtime, corpus, mirror,
+  extraction, signing, and gate roots in its rehearsal invocation files.
+- Recovery: keep the attempt-3 request withdrawn and use fresh attempt-4 local
+  roots without changing detector or endpoint bytes.
+
+## 2026-09-08 — Rehearsal fixture progress schema must match the launch contract
+
+- Failure signature: signed O3F16R28K1 attempt 4 reached its normal local
+  fixture launch, then failed with `K1 normal rehearsal widened immediate launch
+  evidence`; nothing was published.
+- Cause: the fixture emitted `argos_ocv03_o3f16r28_full_front_progress_v1`
+  while the FRONT24 launcher requires
+  `argos_ocv03_o3f16r28_front24_progress_v1`.
+- Mandatory preflight: run the exact built payload's normal bootstrap rehearsal
+  to PASS with fresh roots before signing.
+- Recovery: correct only the fixture schema token, retain detector bytes, and
+  use the fifth and final package attempt with fresh local roots.
+
+## 2026-09-08 — Successful launcher output must be explicit console JSON
+
+- Failure signature: unsigned O3F16R28K1 attempt 5 launched the corrected
+  FRONT24 fixture and exited 0, but emitted no bootstrap JSON to captured stdout.
+- Cause: the success object relied on implicit PowerShell pipeline output while
+  a surviving child process shared the redirected console handles.
+- Mandatory preflight: write the success JSON explicitly to `Console.Out` and
+  prove its exact state and bootstrap fields from the unsigned built payload.
+- Recovery: operator explicitly authorized attempt 6 after the prior 5-attempt
+  stop; no seventh attempt or automatic retry is authorized.
+
+## 2026-09-08 — Package launch results must use the PowerShell success stream
+
+- Failure signature: unsigned O3F16R28K1 attempt 6 passed package-leaf and
+  target preflight, launched the normal FRONT24 fixture, and exited 0, but the
+  exact invocation again returned an empty captured result; no signing or
+  publication occurred.
+- Cause: the attempt-5 diagnosis was incomplete. Replacing implicit pipeline
+  output with `Console.Out.WriteLine` did not create an observable PowerShell
+  success-stream record for the exact launcher invocation.
+- Mandatory preflight: capture and parse the exact launcher through the same
+  Windows PowerShell caller before build freeze; require one nonempty JSON
+  success-stream record with all bootstrap-only fields.
+- Recovery: return the JSON explicitly through `Write-Output` at the top-level
+  launcher boundary and verify that draft before consuming an attempt. Attempt
+  6 is terminal under the operator's no-seventh-attempt instruction.
+
+## 2026-09-08 — Direct-control child scripts require an explicit execution policy
+
+- Failure signature: the first operator-authorized O3F16R28G1 queue-cancellation
+  command stopped before mutation because the installed signature verifier was
+  invoked directly under a restricted remote session.
+- Cause: the direct-control wrapper's encoded command did not make `.ps1` child
+  invocation policy implicit. No queue, process, output, or source state changed.
+- Mandatory preflight: invoke an installed child `.ps1` through
+  `powershell.exe -NoProfile -ExecutionPolicy Bypass -File` and require exit 0
+  before the first mutation.
+
+## 2026-09-09 — Silenced scheduled-task access errors can impersonate absence
+
+- Failure signature: an exact `Get-ScheduledTask` query returned an empty array
+  and was initially summarized as `ABSENT`, while an immediate native
+  `schtasks.exe /Query /TN <exact-name>` returned exit code `1` and
+  `ERROR: Access is denied.`
+- Cause: the query ran under non-administrator identity `A1025645101\lwm` and
+  used `-ErrorAction SilentlyContinue`, erasing the distinction between an
+  absent task and an unreadable protected task.
+- Mandatory preflight: task existence evidence must preserve the exact native
+  exit code and error text, record the current identity and Administrator-role
+  state, and reject any empty result obtained with suppressed access errors.
+- Recovery: withdraw the absence conclusion, perform no task mutation from the
+  unprivileged token, and use only an already-qualified elevated route to read
+  the exact installed task state and definition before deciding whether to
+  start, repair, or recreate it.
+
+## 2026-09-09 — Compact PowerShell metadata guards and aliases must be host-proven
+
+- Failure signature: a bounded Windows PowerShell recovery command stopped
+  before its first task start with `Cannot index into a null array` while
+  evaluating `$command.Parameters[$name]`; a later read-only draft also used
+  the unverified `gcim` token, which is not an alias in Windows PowerShell 5.1.
+- Cause: command metadata collections were assumed non-null, and a compact alias
+  was assumed portable without resolving it in the exact installed host.
+- Mandatory preflight: null-guard `Get-Command.Parameters` before any key lookup,
+  report the exact consumer when metadata is null or incomplete, and resolve
+  every abbreviated command with Windows PowerShell 5.1 before freezing. Use
+  `Get-CimInstance` explicitly rather than `gcim`.
+- Recovery: withdraw the affected frozen artifact, obtain a direct read-only
+  post-failure observation of all named consumer parameter collections and the
+  exact task/process state, then use a fresh namespace for any later action.
+
+## 2026-09-09 — Compact PowerShell predicates and variable names must remain explicit
+
+- Failure signature: a read-only observation collected its task and parameter
+  rows, then returned `An operator is required to compare the two specified
+  values` from compact `Where-Object Property -like"value"` syntax; its `$P`
+  requirements array was also overwritten by a later `$p` path assignment.
+- Cause: the comparison operator lacked token-separating whitespace, and
+  PowerShell variable names are case-insensitive.
+- Mandatory preflight: use explicit predicates such as
+  `Where-Object { [string]$_.CommandLine -like $pattern }`, and never distinguish
+  variables by case alone. Exercise the exact predicate and collection fallback
+  under Windows PowerShell 5.1 before freezing.
+- Recovery: retain the partial result only as failure evidence, use a fresh
+  read-only namespace, and collect the omitted process/parameter evidence with
+  distinct descriptive variable names before any mutation.
+
+## 2026-09-09 — Admin clipboard action timeout is capped at 300 seconds
+
+- Failure signature: a local preflight rejected `TimeoutSeconds 600` before
+  sending remote input because the qualified admin clipboard runner validates a
+  maximum of 300 seconds.
+- Cause: the invocation was authored without resolving the runner's exact
+  `ValidateRange` first.
+- Mandatory preflight: pin the runner hash, resolve `TimeoutSeconds` from its
+  exact parameter metadata, and require a value no greater than 300.
+- Recovery: retain the unchanged reviewed payload, withdraw only the malformed
+  invocation, and use a fresh invocation namespace with `TimeoutSeconds 300`.
+
+## 2026-09-09 — Nested RustDesk can drop Shift from SendKeys punctuation
+
+- Failure signature: the exact short trigger `iex(gcb -r)` arrived at the
+  elevated JBOD PowerShell prompt as `iex9gcb -r)` and failed parsing before
+  the clipboard-backed recovery payload executed.
+- Cause: `SendKeys` punctuation synthesis did not preserve Shift for the opening
+  parenthesis through the nested RustDesk/RDP input path.
+- Mandatory preflight: type shifted punctuation with explicit, delayed Shift
+  and virtual-key down/up events; keep ordinary trigger segments bounded and
+  preserve the exact `iex(gcb -r)` text contract.
+- Recovery: record the failed one-attempt namespace, keep its payload terminal
+  and unexecuted, and use a fresh action namespace with the corrected existing
+  low-level shifted-key primitive. Never retry the failed namespace.
+
+## 2026-09-09 — An absent Insite worker task can masquerade as a manual-import workflow
+
+- Failure signature: confirmed scribes accumulated without automatic Insite
+  results while the exact root task
+  `ArgosEdgeLab.InsiteBridge.Worker.ReviewOnly.V1` had cardinality zero. The
+  qualified worker remained installed, no matching worker process existed, and
+  the separate SYSTEM relay task remained running.
+- Cause: the durable SYSTEM startup-task registration was absent. The evidence
+  does not establish what removed it; do not infer a worker-code or GUI fault.
+- Mandatory preflight: require JBOD `A1025645101`, elevation, task cardinality
+  zero, no matching process, installed worker SHA-256
+  `8D10D7A775741F9A2B4FD4AA831E1426DCA1DC2A17A9A68AD8CD432F10265B5C`,
+  and exactly one running SYSTEM relay task under the installed bridge root.
+- Recovery: recreate only the missing task from the qualified original installer
+  definition, require exported-definition SHA-256
+  `37BEFFFEFF6886B4557CF91141D2DC45F5DACF8E75D65E51F2FA0279D0CCC8FA`
+  before starting it, then require one SYSTEM worker process and fresh QUEUED /
+  IMPORTED log movement. Do not rerun the full installer or launch an
+  interactive non-SYSTEM substitute.
+
+## 2026-09-09 — Single-letter PowerShell fixture helpers can resolve to built-in aliases
+
+- Failure signature: a Windows PowerShell 5.1 fixture called a helper named
+  `R`, but command resolution selected the built-in `r` / `Invoke-History`
+  alias and rejected row index `0` as a history identifier.
+- Cause: aliases take precedence over functions during command resolution, and
+  PowerShell command names are case-insensitive.
+- Mandatory preflight: resolve every helper name with `Get-Command -All` in the
+  exact host, or use descriptive multi-word helper names that do not collide
+  with built-in aliases. Parser success alone does not prove command binding.
+- Recovery: rename only the unexecuted fixture helper and rerun the unchanged
+  product bytes and assertions. Do not attribute this harness error to the
+  product under test.
+
+## 2026-09-09 — Promotion entrypoints must pin paired callers and use exact gate fields
+
+- Failure signature: a frozen but unpublished maintenance request hash-pinned
+  its changed queue producer and modules, but omitted the installed processor
+  runner and Insite exporter hashes; its publisher also read
+  `workerPayloadIncluded` although the final gate emits
+  `endpointPayloadIncluded`.
+- Cause: product rehearsal evidence named the paired dependencies without
+  making them live pre-mutation entrypoint premises, and the publisher/final-
+  gate field contract was not mechanically compared before signature.
+- Mandatory preflight: hash-pin the exact installed runner and exporter, resolve
+  their required parameter names plus the changed producer's `ConfigPath`
+  under Windows PowerShell 5.1, and compare every publisher-read property with
+  the exact final-gate producer property set before signing.
+- Recovery: withdraw the unpublished signed request, preserve its bytes as
+  evidence, use one fresh request/output namespace, add only the missing hash
+  and parameter checks, and correct the publisher to read
+  `endpointPayloadIncluded`. Do not change the product payload.
+
+## 2026-09-09 — Endpoint worker package name is not its installed entrypoint name
+
+- Failure signature: a direct one-shot preflight addressed
+  `C:\ProgramData\ArgosProjectPortalRO\bin\W.ps1`; that path did not exist even
+  though the qualified worker bytes were installed under their full entrypoint
+  name.
+- Cause: `W.ps1` is the signed package payload name, while the installed worker
+  destination is `Invoke-ArgosProjectPortalEndpointWorker.ps1`.
+- Mandatory preflight: take the installed destination from the exact maintenance
+  definition, require `Test-Path` and the qualified SHA-256 at that full path,
+  then resolve `ConfigPath` and `Once` from that exact command before execution.
+- Recovery: keep the accepted request pending, perform no retry or external
+  mutation from the failed preflight, and invoke only the verified full installed
+  entrypoint once. Do not infer an installed path from a payload filename.
+
+## 2026-09-09 — Compact direct commands require a separator after `throw`
+
+- Failure signature: a read-only direct preflight emitted `throwADMIN` as a
+  command name instead of parsing `throw 'ADMIN'`.
+- Cause: removing whitespace between the `throw` keyword and a quoted scalar
+  changes tokenization in Windows PowerShell 5.1.
+- Mandatory preflight: parse the exact direct source under Windows PowerShell
+  5.1 and retain whitespace after every `throw` keyword.
+- Recovery: make no endpoint change from the failed read-only command and use a
+  fresh corrected command revision. Do not resend the malformed source.
+
+## 2026-09-09 — PowerShell Select mode blocks clipboard command execution
+
+- Failure signature: the elevated console title began with `Select`, and the
+  hostname clipboard gate timed out with `payloadTransferred=false`.
+- Cause: console selection mode prevented the pasted hostname command from
+  executing even though the elevated window existed.
+- Mandatory preflight: require the normal PowerShell prompt, not a `Select`
+  title, before sending the hostname gate.
+- Recovery: press Escape once to leave selection mode, then use a fresh action
+  identifier and output path. Never resend the failed action artifact.
+
+## 2026-09-09 — Use the active continuity worker pin for endpoint drain
+
+- Failure signature: an accepted-request drain correctly stopped before worker
+  execution because it pinned retired endpoint SHA-256 `244A5ECD...` while the
+  installed and continuity-recorded qualified worker was `CB670071...`.
+- Cause: the drain inherited the older C1E gate instead of the active generic
+  endpoint worker pin and OLS3 route gate recorded by continuity.
+- Mandatory preflight: compare the live worker hash with the active continuity
+  worker field and its exact qualified route gate before building the drain.
+- Recovery: preserve the request and use one fresh action pinned to `CB670071...`;
+  do not alter, downgrade, or replace the endpoint worker.
+
+## 2026-09-10 — An elevated interactive console may still enforce Restricted policy
+
+- Failure signature: an in-memory admin hotfix replaced and parsed a `.psm1`,
+  then `Import-Module` failed because script execution was disabled; rollback
+  restored the exact predecessor hash.
+- Cause: elevation does not imply `ExecutionPolicy Bypass` for an already-open
+  interactive Windows PowerShell process.
+- Mandatory preflight: do not use that console to import a file-backed module as
+  a post-swap test. Parse the exact target bytes there and run behavioral tests
+  under the same pinned `-ExecutionPolicy Bypass` host used by the real task.
+- Recovery: verify the predecessor hash and rollback artifact directly, then use
+  a fresh bounded action that omits only the invalid console-policy test.
+
+## 2026-09-10 — Replacing a module does not update an already-running worker
+
+- Failure signature: the installed module had the corrected hash while the
+  worker status continued emitting the predecessor's optional-property error.
+- Cause: the persistent PowerShell task had imported the old module before the
+  in-place replacement and retained it in process memory.
+- Mandatory preflight: record whether each authorized consumer task is already
+  running; a successful module swap must reload that exact consumer before its
+  status can prove the correction.
+- Recovery: stop and start only the explicitly authorized consumer tasks, then
+  require a fresh status timestamp and fresh downstream queue activity.
+
+## 2026-09-10 — Backside completeness must require exact scan-time context
+
+- Failure signature: a confirmed backside scribe has a valid MES snapshot but
+  remains at `HOLD_EXACT_SCAN_TIME_INSITE_CONTEXT_REQUIRED_BEFORE_DETECTOR`
+  while the automatic exporter does not request that acquisition again.
+- Cause: the shared completeness predicate required exact scan-time context
+  only when a paired frontside acquisition was present, although backside
+  Bare/BowComp classification also requires that acquisition-time authority.
+- Mandatory preflight: prove missing and property-absent backside scan context
+  both require requery, while exact-context backside remains independent of the
+  frontside scratch-test route and all frontside route holds remain fail-closed.
+- Recovery: require exact scan-time context for every verified acquisition and
+  require the frontside route additionally only for frontside acquisitions; do
+  not bypass the inventory hold or infer regime from current MES state.
+
+## 2026-09-10 — Clipboard CRLF can open the PowerShell continuation prompt
+
+- Failure signature: the file-backed admin runner pasted `hostname|clip`, the
+  console displayed `>>`, and the clipboard hostname gate timed out with
+  `payloadTransferred=false`.
+- Cause: pasting the short command with a terminal CRLF into classic Windows
+  PowerShell entered continuation mode instead of submitting the command.
+- Mandatory preflight: place the exact short command on the clipboard without
+  a newline, paste once, and submit with explicit native `VK_RETURN` down/up.
+- Recovery: withdraw the failed action ID, cancel the visible `>>` prompt once,
+  and use a fresh single-attempt action only after the corrected runner passes
+  Windows PowerShell 5.1 parsing and its non-mutating input-sequence checks.
+
+## 2026-09-10 — Publish clipboard content only after remote Ctrl+C settles
+
+- Failure signature: a fresh action cleared the visible `>>` prompt with
+  `^C`, but no second `hostname|clip` appeared and the gate again ended with
+  `payloadTransferred=false`.
+- Cause: the runner published/reset the hostname clipboard around the remote
+  Ctrl+C operation, allowing bidirectional clipboard synchronization to race
+  the subsequent Ctrl+V delivery.
+- Mandatory preflight: when cancellation is authorized, foreground the exact
+  console, send Ctrl+C first, wait for it to settle, then publish the hostname,
+  wait for remote synchronization, and recheck the exact local value before
+  one paste and native Enter.
+- Recovery: withdraw the failed action ID and permit no automatic retry. A
+  fresh action requires explicit operator authorization and the corrected
+  runner's exact hash.
+
+## 2026-09-10 — A clean console does not prove clipboard round-trip health
+
+- Failure signature: from a clean visible JBOD `PS>` prompt, the exact local
+  hostname value remained stable, paste plus native Enter was issued, but no
+  hostname returned and `payloadTransferred=false` again.
+- Cause: the nested RustDesk/RDP clipboard channel did not complete the
+  command/response round trip; console visibility and foreground ownership did
+  not prove clipboard transport health.
+- Mandatory preflight: after this signature, treat the interactive clipboard
+  route as unavailable. Do not infer health from a clean prompt and do not send
+  another probe or payload through the same route.
+- Recovery: preserve all no-mutation evidence and stop. Continue only through
+  a separately authorized transport repair, a protocol-valid existing route,
+  or an operator-executed bounded launcher.
+
+## 2026-09-12 — Read compact CASE field names before scalar audits
+
+- Failure signature: a read-only R44 CASE summary stopped on missing scalar
+  `expectedSpanColumnCount` although the completed CASE itself was valid.
+- Cause: the audit guessed an internal detector-record field instead of using
+  the compact runner's retained `candidateSpan.shape[0]` representation.
+- Mandatory preflight: inspect the frozen compact CASE field set from an
+  existing response and assert every requested retained field before JBOD use.
+- Recovery: preserve the no-mutation failure evidence and use a fresh audit
+  revision mapped only to verified retained fields; never retry the failed ID.
+
+## 2026-09-12 — Normalize empty dynamic keys before clipboard JSON return
+
+- Failure signature: the read-only admin runner rejected a returned JSON object
+  because it contained a property whose name was an empty string.
+- Cause: grouping a nullable CASE classification directly into an ordered map
+  emitted an empty JSON property name that Windows PowerShell 5.1 produced but
+  the laptop result parser could not consume without `-AsHashTable`.
+- Mandatory preflight: map every null or empty dynamic key to an explicit fixed
+  sentinel and locally round-trip the exact projected JSON shape before use.
+- Recovery: preserve the no-mutation evidence, withdraw the executed payload,
+  and use one fresh normalized projection; never retry the failed action ID.

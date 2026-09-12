@@ -10779,3 +10779,24 @@ boundaries remain.
 Current checkpoint:
 `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F15L4E1_SIGNED_GATE_FAILURE_OBSERVATION_CAPABILITY_GAP_CHECKPOINT_20260903.md`,
 SHA-256 `0B08D6559A422EE243C21B1AB5DB0B40CDB1536B7A3F7B39FC0B1E012AB148A2`.
+
+## JBOD GUI automatic Insite recovery — 2026-09-09
+
+Disposition: `RELEASED_REVIEW_ONLY`
+
+Direct exact-host evidence on `A1025645101` found the root SYSTEM task
+`ArgosEdgeLab.InsiteBridge.Worker.ReviewOnly.V1` absent while the qualified
+worker remained installed. The restored task is running as SYSTEM with worker
+SHA-256 `8D10D7A775741F9A2B4FD4AA831E1426DCA1DC2A17A9A68AD8CD432F10265B5C`
+and exported-definition SHA-256
+`37BEFFFEFF6886B4557CF91141D2DC45F5DACF8E75D65E51F2FA0279D0CCC8FA`.
+
+Fresh automatic bridge evidence shows repeated `QUEUED` and `IMPORTED`
+cycles. `InsitePending` reached zero; route-ready acquisitions rose from 524
+to 542; input holds fell from 1,474 to 1,456; and the processor entered
+`PROCESSING` on current Sep 9 identity
+`62637-175_20260909024814_Slot21__BOWCOMP_BACKSIDE`. Current C: free space is
+47.37 GiB. The historical disk-full log signature is not active now. Manual
+Insite export/import is not required. This operational recovery does not alter
+the active OCV detector phase, its next action, any detector/provider bytes,
+source images, XML, training, production routing, or existing holds.

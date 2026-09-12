@@ -1,0 +1,47 @@
+{
+    "schema":  "argos_clone_literal_remediation_gate_v1",
+    "checkedUtc":  "2026-09-11T12:59:40.1634990Z",
+    "state":  "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+    "mode":  "GATE",
+    "manifest":  "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_OLS7\\OLS7_CLONE_LITERAL_REMEDIATION.json",
+    "manifestSha256":  "62F5C9FC5DC89A35490C7B232763D7ED6F220E9B1E5DAB23168AC43089929585",
+    "pairCount":  2,
+    "pairs":  [
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3C1/Invoke-OCV03HotspotMetadataEndpoint.ps1",
+                      "generated":  "work/OPENCV_OLS7/Invoke-OLS7ThreeLotInventory.ps1",
+                      "sourceSha256":  "B4C9FE769E6560815520B1922AEF5E446DA17EBD9C214A84FCB86BE7181BF06F",
+                      "generatedSha256":  "9F45469BFDCAA449F8F1861935A812209E40ACAC70135B89206492865FC0B161",
+                      "sourceRoots":  [
+                                          "C:\\ProgramData",
+                                          "F:"
+                                      ],
+                      "generatedRoots":  [
+                                             "C:\\ProgramData",
+                                             "F:"
+                                         ],
+                      "ruleCount":  2
+                  },
+                  {
+                      "source":  "work/OPENCV_EDGE_NOTCH_O3F16R28G1/Publish-O3F16R28G1Package.ps1",
+                      "generated":  "work/OPENCV_OLS7/Invoke-OLS7Package.ps1",
+                      "sourceSha256":  "4546B701627C53AD215CEAD5CC5E9C1BA6E7E58A0F4BDC4B5B9B7D87711B96F2",
+                      "generatedSha256":  "C5276D019D8488AE17484C5BB47D7C1193332351978F2A82075E7A8B808A09F8",
+                      "sourceRoots":  [
+                                          "\\\\shm-cifs\\Department",
+                                          "U:\\ProjectPortalRO"
+                                      ],
+                      "generatedRoots":  [
+                                             "\\\\shm-cifs\\Department",
+                                             "U:\\ProjectPortalRO"
+                                         ],
+                      "ruleCount":  2
+                  }
+              ],
+    "violations":  [
+
+                   ],
+    "metadataOnly":  true,
+    "targetExecuted":  false,
+    "evidenceWritten":  true
+}

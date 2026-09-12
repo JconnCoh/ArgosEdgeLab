@@ -1,0 +1,39 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-09-11T18:23:29.4273373Z",
+    "state":  "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+    "actionId":  "OLS7_SENDER_20260911T182600Z_09",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "2267F5FBA3EDE0473DDA69B7F8031233FD04A3FCBF06D3E621FDE297B4E50F8D",
+    "payloadSha256":  "EC5E7E022533F7315765710EFBA4007C997635681C3152A20D4CCE8668825535",
+    "expectedResultSchema":  "argos_ols7_response_sender_observation_v5",
+    "hostnameGatePassed":  true,
+    "visibleConsoleRequired":  true,
+    "taskbarClickPerformed":  false,
+    "hostnameUsesShortClipboardPaste":  true,
+    "hostnameSubmittedByClipboardCrLf":  false,
+    "hostnameSubmittedByNativeVkReturn":  true,
+    "hostnameSubmissionMode":  "SHIFT_INSERT_PASTE_THEN_NATIVE_VK_RETURN",
+    "payloadTransferred":  true,
+    "typedTrigger":  "get-clipboard -raw|iex",
+    "triggerSubmittedByNativeVkReturn":  true,
+    "triggerSubmissionMode":  "NATIVE_VK_RETURN",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "schema":  "argos_ols7_response_sender_observation_v5",
+                         "state":  "PASS_OLS7_RESPONSE_SENDER_OBSERVATION",
+                         "computerName":  "A1025645101",
+                         "task":  {
+                                      "name":  "ArgosProjectPortal.JBOD.ResponseSender.RO",
+                                      "state":  "Ready",
+                                      "principal":  "SYSTEM",
+                                      "lastRunUtc":  "2026-08-19T11:56:07.0000000Z",
+                                      "lastTaskResult":  255,
+                                      "action":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\Invoke-ProjectPortalTaskHost.ps1\" -TargetPath \"C:\\ProgramData\\ArgosProjectPortalRO\\bin\\ArgosProjectPortal.Transport.ReviewOnly.V1.exe\" -ArgumentListBase64 \"eyJzY2hlbWEiOiJhcmdvc19wcm9qZWN0X3BvcnRhbF90YXNrX2FyZ3VtZW50c192MSIsImFyZ3VtZW50cyI6WyItLXJ1biIsIkM6XFxQcm9ncmFtRGF0YVxcQXJnb3NQcm9qZWN0UG9ydGFsUk9cXGNvbmZpZ1xcSkJPRF9SRVNQT05TRV9TRU5ERVIuanNvbiJdfQ==\" -StateRoot \"C:\\ProgramData\\ArgosProjectPortalRO\\state\\task_hosts\\ArgosProjectPortal.JBOD.ResponseSender.RO\""
+                                  },
+                         "targetPending":  true,
+                         "targetSent":  false,
+                         "mutationsPerformed":  false
+                     }
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "argos_clone_literal_remediation_manifest_v1",
+  "revision": "F32N1_R13T5_MECHANICAL_PACKAGE_SUCCESSOR",
+  "pairs": [
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F8R13T5/Invoke-O3F8R13T5.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_F32N1/Invoke-F32N1.ps1",
+      "rootRules": [
+        {"sourceRoot":"D:","generatedRoot":"D:","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"Q:","generatedRoot":"D:\\F32N1RT","disposition":"REPLACED"},
+        {"sourceRoot":"","generatedRoot":"D:\\ArgosProjectPortalRO","disposition":"ADDED"},
+        {"sourceRoot":"","generatedRoot":"D:\\F32N1S","disposition":"ADDED"},
+        {"sourceRoot":"","generatedRoot":"D:\\KLARFExport","disposition":"ADDED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F8R13T5/Build-O3F8R13T5Package.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_F32N1/Build-F32N1Package.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\O3F8R13T5PKR2","generatedRoot":"C:\\F32N1P2","disposition":"REPLACED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F8R13T5/Sign-O3F8R13T5Package.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_F32N1/Sign-F32N1Package.ps1",
+      "rootRules": [
+        {"sourceRoot":"C:\\O3F8R13T5PKR2","generatedRoot":"C:\\F32N1P2","disposition":"REPLACED"},
+        {"sourceRoot":"","generatedRoot":"D:\\ArgosProjectPortalRO","disposition":"ADDED"},
+        {"sourceRoot":"","generatedRoot":"D:\\F32N1RT","disposition":"ADDED"},
+        {"sourceRoot":"","generatedRoot":"D:\\F32N1S","disposition":"ADDED"},
+        {"sourceRoot":"","generatedRoot":"Q:\\BrightfieldFrontsideWafer","disposition":"ADDED"},
+        {"sourceRoot":"","generatedRoot":"Q:\\DarkfieldFrontsideWafer","disposition":"ADDED"}
+      ]
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F8R13T5/Publish-O3F8R13T5Package.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_F32N1/Publish-F32N1Package.ps1",
+      "rootRules": [
+        {"sourceRoot":"\\\\shm-cifs\\Department","generatedRoot":"\\\\shm-cifs\\Department","disposition":"UNCHANGED_ALLOWED"},
+        {"sourceRoot":"U:\\ProjectPortalRO","generatedRoot":"U:\\ProjectPortalRO","disposition":"UNCHANGED_ALLOWED"}
+      ]
+    }
+  ]
+}

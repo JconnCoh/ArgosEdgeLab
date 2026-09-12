@@ -1,0 +1,82 @@
+{
+  "schema": "argos_admin_clipboard_action_evidence_v1",
+  "createdUtc": "2026-09-12T20:34:54.1437326Z",
+  "state": "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+  "actionId": "OCV03_R46_C13_PROGRESS_20260912_04",
+  "stage": "COMPLETE",
+  "computerName": "A1025645101",
+  "runnerSha256": "2267F5FBA3EDE0473DDA69B7F8031233FD04A3FCBF06D3E621FDE297B4E50F8D",
+  "payloadSha256": "AE4109F8B695CDAA43BA6F967628D404C9BF8933D4361BD1ABE86F217E00CDB1",
+  "expectedResultSchema": "argos_ocv03_r46_c13_progress_observation_v1",
+  "hostnameGatePassed": true,
+  "visibleConsoleRequired": true,
+  "taskbarClickPerformed": false,
+  "hostnameUsesShortClipboardPaste": true,
+  "hostnameSubmittedByClipboardCrLf": false,
+  "hostnameSubmittedByNativeVkReturn": true,
+  "hostnameSubmissionMode": "SHIFT_INSERT_PASTE_THEN_NATIVE_VK_RETURN",
+  "payloadTransferred": true,
+  "typedTrigger": "get-clipboard -raw|iex",
+  "triggerSubmittedByNativeVkReturn": true,
+  "triggerSubmissionMode": "NATIVE_VK_RETURN",
+  "remoteResultReturned": true,
+  "remoteResult": {
+    "schema": "argos_ocv03_r46_c13_progress_observation_v1",
+    "state": "PASS_EXACT_C13_PID_RUNNING",
+    "stage": "OBSERVE_C13",
+    "processId": 22072,
+    "process": {
+      "presentAtFirstSample": true,
+      "presentAtSecondSample": true,
+      "cpuDeltaMillisecondsOverThreeSeconds": 3031.25,
+      "firstWorkingSetBytes": 841879552,
+      "secondWorkingSetBytes": 943005696,
+      "secondThreadCount": 71
+    },
+    "progress": {
+      "state": "RUNNING_O3F16R28_FRONT24_AFTER_SOURCE_VALIDATION",
+      "scheduledCount": 24,
+      "recordedCount": 2,
+      "lastOrdinal": 2,
+      "terminal": false,
+      "sha256": "F75077831594A17F9F2EAD10DD3C594357F5CA8B475BB1EF12EBA32F17E94B67"
+    },
+    "results": null,
+    "caseRows": [
+      {
+        "ordinal": 20,
+        "exists": false,
+        "directEntryCount": 0,
+        "caseJsonExists": false
+      },
+      {
+        "ordinal": 21,
+        "exists": false,
+        "directEntryCount": 0,
+        "caseJsonExists": false
+      },
+      {
+        "ordinal": 22,
+        "exists": false,
+        "directEntryCount": 0,
+        "caseJsonExists": false
+      },
+      {
+        "ordinal": 23,
+        "exists": false,
+        "directEntryCount": 0,
+        "caseJsonExists": false
+      },
+      {
+        "ordinal": 24,
+        "exists": false,
+        "directEntryCount": 0,
+        "caseJsonExists": false
+      }
+    ],
+    "sourceImageBytesRead": false,
+    "processMutationPerformed": false,
+    "mutationsPerformed": false,
+    "reviewOnly": true
+  }
+}

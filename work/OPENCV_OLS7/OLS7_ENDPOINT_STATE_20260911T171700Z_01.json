@@ -1,0 +1,55 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-09-11T17:21:26.7939610Z",
+    "state":  "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+    "actionId":  "OLS7_STATE_20260911T171700Z_01",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "2267F5FBA3EDE0473DDA69B7F8031233FD04A3FCBF06D3E621FDE297B4E50F8D",
+    "payloadSha256":  "F3F8EB8F882C63D1FD5330A7662151C3ED680D519C97B3D2F20E735C60802C40",
+    "expectedResultSchema":  "argos_ols7_endpoint_state_observation_v1",
+    "hostnameGatePassed":  true,
+    "visibleConsoleRequired":  true,
+    "taskbarClickPerformed":  false,
+    "hostnameUsesShortClipboardPaste":  true,
+    "hostnameSubmittedByClipboardCrLf":  false,
+    "hostnameSubmittedByNativeVkReturn":  true,
+    "hostnameSubmissionMode":  "SHIFT_INSERT_PASTE_THEN_NATIVE_VK_RETURN",
+    "payloadTransferred":  true,
+    "typedTrigger":  "get-clipboard -raw|iex",
+    "triggerSubmittedByNativeVkReturn":  true,
+    "triggerSubmissionMode":  "NATIVE_VK_RETURN",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "mutationsPerformed":  false,
+                         "state":  "PASS_OLS7_ENDPOINT_STATE_OBSERVATION",
+                         "pending":  false,
+                         "schema":  "argos_ols7_endpoint_state_observation_v1",
+                         "ledger":  {
+                                        "processedUtc":  "2026-09-11T16:54:03.4468545Z",
+                                        "responsePackage":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_4165D2AA78E1_20260911165403415_1688d84f.ready",
+                                        "responseExists":  true,
+                                        "state":  "PASS_MAINTENANCE_PATCH"
+                                    },
+                         "archives":  [
+                                          {
+                                              "state":  "completed",
+                                              "exists":  true
+                                          },
+                                          {
+                                              "state":  "failed",
+                                              "exists":  false
+                                          },
+                                          {
+                                              "state":  "replayed",
+                                              "exists":  false
+                                          }
+                                      ],
+                         "output":  {
+                                        "completedTargetCount":  3,
+                                        "targetCount":  3,
+                                        "state":  "PASS_OCV03_THREE_LOT_METADATA_OLS7"
+                                    },
+                         "maintenanceRoot":  true
+                     }
+}

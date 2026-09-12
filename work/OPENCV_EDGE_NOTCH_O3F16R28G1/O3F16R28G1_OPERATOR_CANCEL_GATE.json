@@ -1,0 +1,49 @@
+{
+  "schema": "argos_ocv03_o3f16r28g1_operator_cancel_gate_v1",
+  "createdUtc": "2026-09-08T19:54:33.3194878Z",
+  "state": "PASS_OPERATOR_CANCELLED_UNEXECUTED_O3F16R28G1",
+  "disposition": "WITHDRAWN",
+  "requestId": "REQ_20260908T175516474Z_77074E70BFE3",
+  "requestManifestSha256": "E36C009689AE99FDEC8F42CF0EEBA4BBAE6489901182EEA8BD38C3966CAD3F1D",
+  "jbodComputerName": "A1025645101",
+  "cancelledPath": "C:/ProgramData/ArgosProjectPortalRO/endpoint_jbod/processed/cancelled/REQ_20260908T175516474Z_77074E70BFE3.ready",
+  "preCancellationState": {
+    "pendingDirectoryPresent": true,
+    "ledgerPresent": false,
+    "maintenanceStatePresent": false,
+    "runtimeOrOutputRootPresent": false,
+    "matchingOwnedProcessCount": 0
+  },
+  "cancelAction": {
+    "commandSha256": "E5C9A5D3DE8D58828C26B415F0096BBB6B90F5102C8C12840261879C2485F47F",
+    "nonce": "e0745a28bfc84097bd732d07b9bc560a",
+    "signatureVerifiedBeforeMove": true,
+    "atomicSameVolumeMove": true,
+    "processesStopped": 0,
+    "otherQueueEntriesChanged": 0
+  },
+  "terminalObservation": {
+    "commandSha256": "C58D723CA4BA9B724CBA17CB31F3D3E1810A21C4224BD562C883554C4A254894",
+    "nonce": "67fb628ecff84a97b61abf9007f3cd13",
+    "pendingDirectoryPresent": false,
+    "cancelledDirectoryPresent": true,
+    "executionArtifactCount": 0,
+    "matchingOwnedProcessCount": 0
+  },
+  "firstAttempt": {
+    "state": "STOPPED_BEFORE_MUTATION_EXECUTION_POLICY_BLOCKED_CHILD_VERIFIER",
+    "commandSha256": "665E067305648A99EE12C1DF12C4E9E6E1A959BF9E1D8C549EB12881B3871F48",
+    "postFailureObservationCommandSha256": "63887832AA41966A1EF0F92FD324EAEFF23951707949F6AE4445C9C9E5DA595B",
+    "postFailureObservationNonce": "8f2c9c6d49944d47919df650b9ff88bd",
+    "mutationsPerformed": false
+  },
+  "requestMayExecute": false,
+  "requestRetryAuthorized": false,
+  "sourceImagesRead": false,
+  "sourceImagesChanged": false,
+  "reviewOnly": true,
+  "trainingEligible": false,
+  "xmlEligible": false,
+  "productionEligible": false,
+  "productionRoutingEnabled": false
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "argos_ols7_three_lot_inventory_maintenance_definition_v1",
+  "state": "FROZEN_FOR_SIGNING",
+  "targetRole": "JBOD",
+  "jobClass": "MAINTENANCE_PATCH",
+  "maxResultBytes": 33554432,
+  "entryPoint": "payload/Invoke-OLS7ThreeLotInventory.ps1",
+  "changes": [
+    {
+      "source": "payload/OCV03_MetadataProviderV1.ps1",
+      "destination": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03_MetadataProviderV1.ps1",
+      "approvedPredecessorSha256": [
+        "DFF2B3A54E9C6D30A003CF4CFC283FECA0F104B5D5A2929296A81D283CAA5675"
+      ],
+      "installedSha256": "DFF2B3A54E9C6D30A003CF4CFC283FECA0F104B5D5A2929296A81D283CAA5675",
+      "allowCreate": true
+    }
+  ],
+  "entryPointMutations": [],
+  "entryPointOutputs": [
+    {
+      "path": "C:\\ProgramData\\ArgosEdgeLabRO\\AllWaferProcessorV2\\OCV03_OLS7_THREE_LOT_INVENTORY.json",
+      "mode": "CREATE_NEW",
+      "schema": "argos_ols7_three_lot_inventory_result_v1",
+      "requiredState": "PASS_OCV03_THREE_LOT_METADATA_OLS7"
+    }
+  ],
+  "metadataReadContract": {
+    "mode": "CONFIG_ANCHORED_THREE_EXACT_SUBTREES_ALIAS_METADATA_ONLY",
+    "approvedDataRoot": "JBOD_KLARF_EXPORT",
+    "targetManifest": "payload/OLS7_TARGETS.json",
+    "targetManifestSha256": "E884974593D0696EAC86EAEE39B8D6AFFF3608EDFC4273883C5A1E32C0542BD9",
+    "relativeRoots": [
+      "UnpatternedFront/Lot_62636-134",
+      "UnpatternedFront/Lot_62631-586",
+      "PatternedFront/Lot_62628-279"
+    ],
+    "processLocalAliasName": "F",
+    "aliasAnchor": "EXACT_REQUESTED_SUBTREE_ROOT",
+    "maximumDepthPerRoot": 8,
+    "maximumEntriesPerRoot": 20000,
+    "maximumDirectoriesPerRoot": 2048,
+    "maximumBmpLeavesPerRoot": 2048,
+    "pathEnumerationAllowed": true,
+    "subtreeMetadataOnly": true,
+    "fileContentReadAllowed": false,
+    "imageBytesReadAllowed": false,
+    "sourceHashingAllowed": false,
+    "taskOrProcessActionAllowed": false
+  },
+  "allowedTaskActions": [],
+  "allowedProcessActions": [],
+  "rehearsal": {
+    "requiredState": "PASS_OCV03_THREE_LOT_METADATA_OLS7"
+  },
+  "requestRetryAuthorized": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

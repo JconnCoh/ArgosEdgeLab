@@ -4,6 +4,38 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## Operator-locked OCV-09 unified frontside fast path — 2026-09-10
+
+Disposition: `LOCKED_INPUT` (architecture and performance requirement only;
+not implementation, activation, XML, training, or production authority).
+
+- Use one adaptive OpenCV frontside inspector. Insite/MES appearance history
+  must not choose a separate patterned versus unpatterned detector. Product,
+  main workflow, and step remain cohort/provenance keys for compatible
+  target-excluded composites.
+- Decode each native BF/DF source once. After edge/notch pose, search the
+  bounded predicted primary fiducial regions, then secondary regions, and
+  stop early on exactly one qualified site-bound result.
+- A missing or ambiguous fiducial means `FIDUCIAL_FREE`, never proof that the
+  wafer is unpatterned. Immediately attempt the qualified non-fiducial
+  image-to-composite registration fallback without a whole-wafer brute-force
+  fiducial search.
+- Perform one full-resolution tiled defect-scoring traversal. Compute raw
+  macro evidence and, when registration qualifies, composite-residual evidence
+  from the same decoded tiles; never run them as sequential full-wafer scans.
+- Fuse candidates only after each evidence branch passes its own registration,
+  coverage, and provenance gates. An unqualified residual cannot be blindly
+  ORed into accepted evidence.
+- If precise registration does not qualify, complete the macro inspection and
+  explicitly report reduced faint-pattern sensitivity; do not hold or skip the
+  entire wafer solely because its appearance route or fiducial is unavailable.
+- Scribe OCR must consume bounded crops from the existing decoded source data,
+  not trigger another full-image decode. Record separate elapsed times for
+  decode, edge/notch, fiducial search, fallback registration, composite access,
+  the single scoring traversal, scribe OCR, and output generation. Validate
+  representative and high-percentile latency plus absence of duplicate decode
+  or traversal before any activation.
+
 ## OCV-03 O3F16 R23 rollover / R24 candidate-first next — 2026-09-04
 
 - Current checkpoint:

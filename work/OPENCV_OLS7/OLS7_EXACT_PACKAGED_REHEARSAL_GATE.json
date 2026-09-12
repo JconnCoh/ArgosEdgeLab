@@ -1,0 +1,53 @@
+{
+  "schema": "argos_ols7_exact_packaged_rehearsal_gate_v1",
+  "createdUtc": "2026-09-11T13:06:07Z",
+  "state": "PASS_OLS7_EXACT_SIGNED_PAYLOAD_REHEARSAL",
+  "requestId": "REQ_20260911T130501848Z_E64F5EE1B952",
+  "packageGateSha256": "3C340933626C6A82CA625CF80B05064887A244D1CC262AB92E9FBCF2BC891543",
+  "sourceZipSha256": "24FCDA35E5AF9D2F44FCF44ABFDCEAE96188D17DF6445EDD13E1A5D8DEF8F905",
+  "verifiedPayloadRoot": "work/OPENCV_OLS7/final_ols7/REQ_20260911T130501848Z_E64F5EE1B952.verified/payload",
+  "invocationPath": "work/OPENCV_OLS7/OLS7_EXACT_PACKAGED_REHEARSAL.json",
+  "invocationSha256": "6395D2CE4B9A0DF859AC03FF801DF876C3B0B5900A6C1F79C34776F0E64A5398",
+  "resultPath": "work/OPENCV_OLS7/packaged_rehearsal_output/OCV03_OLS7_THREE_LOT_INVENTORY.json",
+  "resultSha256": "1A35A3881F3C75F3BB9AB8F68BA5A4E62162A4A7ADAB5CFD7458656D9BF847E2",
+  "payloadHashes": {
+    "Invoke-OLS7ThreeLotInventory.ps1": "9F45469BFDCAA449F8F1861935A812209E40ACAC70135B89206492865FC0B161",
+    "OCV03_MetadataProviderV1.ps1": "DFF2B3A54E9C6D30A003CF4CFC283FECA0F104B5D5A2929296A81D283CAA5675",
+    "OLS7_TARGETS.json": "E884974593D0696EAC86EAEE39B8D6AFFF3608EDFC4273883C5A1E32C0542BD9"
+  },
+  "result": {
+    "state": "PASS_OCV03_THREE_LOT_METADATA_OLS7",
+    "rehearsal": true,
+    "overallDisposition": "COMPLETE",
+    "targetCount": 3,
+    "completedTargetCount": 3,
+    "targetDispositions": [
+      "COMPLETE",
+      "COMPLETE",
+      "COMPLETE"
+    ],
+    "bmpLeafCounts": [
+      2,
+      2,
+      2
+    ],
+    "processLocalAliasesCreated": [
+      true,
+      true,
+      true
+    ],
+    "processLocalAliasesRemoved": [
+      true,
+      true,
+      true
+    ]
+  },
+  "filesRead": false,
+  "imageBytesRead": false,
+  "sourceHashingPerformed": false,
+  "sourceDeletionPerformed": false,
+  "processActions": [],
+  "productionRoutingEnabled": false,
+  "published": false,
+  "targetExecuted": false
+}

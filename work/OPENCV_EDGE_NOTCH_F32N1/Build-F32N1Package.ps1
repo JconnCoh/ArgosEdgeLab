@@ -1,0 +1,32 @@
+#Requires -Version 5.1
+[CmdletBinding()]
+param([switch]$Preflight,[switch]$Build)
+Set-StrictMode -Version Latest
+$ErrorActionPreference='Stop'
+if(([bool]$Preflight)-eq([bool]$Build)){throw 'Specify exactly one of -Preflight or -Build.'}
+function Require([bool]$Condition,[string]$Message){if(-not$Condition){throw $Message}}
+function Sha([string]$Path){(Get-FileHash -LiteralPath $Path -Algorithm SHA256 -ErrorAction Stop).Hash}
+function New-Json([string]$Path,[object]$Value){Require (-not(Test-Path -LiteralPath $Path)) "Create-new JSON exists: $Path";[IO.File]::WriteAllText($Path,(($Value|ConvertTo-Json -Depth 20)+[Environment]::NewLine),(New-Object Text.UTF8Encoding($false)))}
+$project=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
+$contractPath=Join-Path $PSScriptRoot 'F32N1_LAUNCH_CONTRACT.json';$contractHash='25448E0FE73FDA2D6BACF633ECE890FBA9286ED2BDDD7EDC761A5C217F7B53C7'
+$definitionSource=Join-Path $PSScriptRoot 'MAINTENANCE_DEFINITION.json';$definitionHash='FDF6849596CEF5A34DCC77041BA96A445FDEBEF20CF04C2200018AB875658C6F'
+$root='C:\F32N1P2';$payload=Join-Path $root 'payload';$definitionTarget=Join-Path $root 'DEFINITION.json';$gatePath=Join-Path $PSScriptRoot 'F32N1_BUILD_GATE.json'
+Require ((Sha $contractPath)-eq$contractHash-and(Sha $definitionSource)-eq$definitionHash) 'F32N1 contract or definition changed'
+$contract=Get-Content -LiteralPath $contractPath -Raw|ConvertFrom-Json;$definition=Get-Content -LiteralPath $definitionSource -Raw|ConvertFrom-Json
+Require ([string]$contract.schema-eq'argos_ocv03_f32n1_launch_contract_v1'-and[string]$contract.state-eq'FROZEN_FOR_BUILD'-and[int]$contract.expectedPairCount-eq4-and[int]$contract.expectedSourceLeafCount-eq8) 'F32N1 contract identity changed'
+Require ([string]$definition.schema-eq'argos_ocv03_f32n1_maintenance_definition_v1'-and[string]$definition.state-eq'FROZEN_FOR_SIGNING'-and[string]$definition.entryPoint-eq'payload/Invoke-F32N1.ps1') 'F32N1 definition identity changed'
+Require ([bool]$definition.reviewOnly-and-not[bool]$definition.trainingEligible-and-not[bool]$definition.xmlEligible-and-not[bool]$definition.productionEligible-and-not[bool]$definition.productionRoutingEnabled-and-not[bool]$definition.requestRetryAuthorized) 'F32N1 authority widened'
+$rows=New-Object Collections.Generic.List[object]
+foreach($record in @($contract.payloadFiles)){$name=[string]$record.name;$source=Join-Path $project ([string]$record.source);Require (-not[IO.Path]::IsPathRooted($name)-and$name-notmatch'[\\/]') "Unsafe payload name: $name";Require (Test-Path -LiteralPath $source -PathType Leaf) "Payload source absent: $source";Require ((Get-Item -LiteralPath $source).Length-eq[int64]$record.bytes-and(Sha $source)-eq[string]$record.sha256) "Payload source changed: $name";$rows.Add([pscustomobject]@{path=$name;source=$source;bytes=[int64]$record.bytes;sha256=[string]$record.sha256;copyToRuntime=[bool]$record.copyToRuntime})}
+$rows.Add([pscustomobject]@{path='F32N1_LAUNCH_CONTRACT.json';source=$contractPath;bytes=[int64](Get-Item $contractPath).Length;sha256=$contractHash;copyToRuntime=$false});$sources=$rows.ToArray()
+Require ($sources.Count-eq37-and@($sources.path|Sort-Object -Unique).Count-eq37-and@($sources|Where-Object{[bool]$_.copyToRuntime}).Count-eq33) 'F32N1 payload cardinality changed'
+foreach($required in @('Invoke-F32N1.ps1','Run-O3F16R32FourPairNeutral.py','O3F16R32_FOUR_PAIR_NEUTRAL_JOB.json','O3F16R32_UNREAD_HOLDOUTS.json','AnnularUnwrapCandidateFirstOpenCvR32.py','Run-O3F16R28FullKlarfReview.py','O3F8R13T5LaunchFixture.py')){Require (@($sources|Where-Object{[string]$_.path-eq$required}).Count-eq1) "Required F32N1 payload absent: $required"}
+$planned=@($root,$payload,$definitionTarget,$gatePath,(Join-Path $payload 'Run-O3F16R32FourPairNeutral.py'))
+$pathGate=& (Join-Path $project 'utilities\Confirm-ArgosPathBudget.ps1') -CandidatePath $planned -ReservedSuffixCharacters 52 -AsJson|ConvertFrom-Json;Require ([string]$pathGate.state-eq'PASS_PATH_BUDGET') 'F32N1 build path budget failed'
+if($Preflight){[ordered]@{schema='argos_ocv03_f32n1_build_preflight_v1';state='PASS_F32N1_BUILD_PREFLIGHT';contractSha256=$contractHash;definitionSha256=$definitionHash;payloadFileCount=$sources.Count;runtimeCopyFileCount=33;expectedPairCount=4;pathState=[string]$pathGate.state;targetExecuted=$false;mutationsPerformed=$false;reviewOnly=$true}|ConvertTo-Json -Depth 6;return}
+foreach($path in @($root,$gatePath)){Require (-not(Test-Path -LiteralPath $path)) "Create-new build target exists: $path"}
+[void](New-Item -ItemType Directory -Path $payload -Force);foreach($row in $sources){[IO.File]::Copy([string]$row.source,(Join-Path $payload ([string]$row.path)),$false)};[IO.File]::Copy($definitionSource,$definitionTarget,$false)
+$actual=@(Get-ChildItem -LiteralPath $payload -Force);Require ($actual.Count-eq$sources.Count-and@($actual|Where-Object{-not$_.PSIsContainer}).Count-eq$actual.Count) 'Built F32N1 payload cardinality changed'
+$payloadFiles=@($actual|Sort-Object Name|ForEach-Object{[ordered]@{path=$_.Name;bytes=[int64]$_.Length;sha256=Sha $_.FullName}})
+$gate=[ordered]@{schema='argos_ocv03_f32n1_build_gate_v1';createdUtc=[DateTime]::UtcNow.ToString('o');state='PASS_F32N1_UNSIGNED_PACKAGE_BUILT';buildRoot=$root;payloadFileCount=$payloadFiles.Count;runtimeCopyFileCount=33;payloadFiles=$payloadFiles;contractSha256=$contractHash;definitionSha256=Sha $definitionTarget;entrySha256=Sha (Join-Path $payload 'Invoke-F32N1.ps1');runnerSha256=Sha (Join-Path $payload 'Run-O3F16R32FourPairNeutral.py');adapterSha256=Sha (Join-Path $payload 'AnnularUnwrapCandidateFirstOpenCvR32.py');neutralJobSha256=Sha (Join-Path $payload 'O3F16R32_FOUR_PAIR_NEUTRAL_JOB.json');unreadHoldoutPartitionSha256=Sha (Join-Path $payload 'O3F16R32_UNREAD_HOLDOUTS.json');carrierSha256=Sha (Join-Path $payload 'OCV03_NotchReviewOpenCvV1.py');endpointWorkerSha256=[string]$contract.inheritedRoute.endpointWorkerSha256;installedRouteConfigEvidenceSha256=[string]$contract.inheritedRoute.installedRouteConfigEvidenceSha256;queueSafetyGateSha256=[string]$contract.inheritedRoute.queueSafetyGateSha256;completeRouteGateSha256=[string]$contract.inheritedRoute.completeRouteGateSha256;expectedPairCount=4;expectedSourceLeafCount=8;sameBytesCarrier=$true;installedSemanticChange=$false;taskActionCount=0;signed=$false;published=$false;targetExecuted=$false;mutationsPerformed=$false;reviewOnly=$true;productionRoutingEnabled=$false}
+New-Json $gatePath $gate;$gate|ConvertTo-Json -Depth 10

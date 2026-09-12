@@ -1,0 +1,59 @@
+{
+  "schema": "argos_recovery_intent_v1",
+  "createdUtc": "2026-09-11T18:28:00Z",
+  "incidentId": "OLS7_JBOD_RESPONSE_SENDER_READY_20260911",
+  "mode": "MUTATE",
+  "artifactLifecycle": "DRAFT",
+  "policy": {"path":"work/ARGOS_RECOVERY_OBSERVATION_AND_STOP_LOSS.json","sha256":"F8DEA0BD4F816A174AF5D81384A264A0886ADFB1D01F46E62E53CF4356B09D41"},
+  "failureHistory": {
+    "signedPremiseFailures": 0,
+    "localPremiseFailures": 0,
+    "directObservationAfterLastSignedFailure": false,
+    "mutationStopLossExplicitlyCleared": false,
+    "failureEvidence": [],
+    "postFailureObservation": {"path":"","sha256":""},
+    "workflowReviewClearance": {"path":"","sha256":""}
+  },
+  "route": {
+    "type":"DIRECT_ADMIN_TASK_START_ONCE",
+    "jobClass":"DIRECT_ADMIN_TASK_START_ONCE",
+    "installedCodeChange":false,
+    "helperInstall":false,
+    "taskActions":["START_ARGOS_PROJECT_PORTAL_JBOD_RESPONSE_SENDER_RO_ONCE"],
+    "processActions":["TASK_OWNED_RESPONSE_SENDER_PROCESS_MAY_START"],
+    "queueMutation":true,
+    "ledgerMutation":false,
+    "sourceMutation":false,
+    "imageRead":false,
+    "waferAction":false,
+    "inheritsQualifiedEndpointGate":false,
+    "endpointWorker":{"path":"","sha256":""},
+    "installedConfigEvidence":{"path":"work/OPENCV_SCRIBE_O2D10/O2D10_JBOD_EXACT_TERMINAL_STATE_R17.json","sha256":"CDCB5DCD0691B51D43CFD24FBCBF8CAC96A1F476E736C22D5A22AFD44CD363D9"},
+    "capabilityEvidence":{"path":"","sha256":""},
+    "qualifiedEndpointGate":{"path":"","sha256":""},
+    "qualifiedAdminGate":{"path":"","sha256":""}
+  },
+  "observation": {"exactSources":[],"requestedCapabilities":[],"requestedFields":[],"decisionOptions":["A","B","C","D"],"mutationDecisionDeferred":false},
+  "mutation": {
+    "supportedRemedy":"B",
+    "supportingObservation":{"path":"work/OPENCV_OLS7/OLS7_RESPONSE_SENDER_RECOVERY_OBSERVATION.json","sha256":"A1D7455055D64E697E44CB6012C8901A6613B9E6CE4A4237B6564C126A779088"},
+    "endpointMutationNecessary":true,
+    "singleMutationAttemptAuthorized":true,
+    "singleMutationAttemptScope":"START_ONLY_EXISTING_ARGOS_PROJECT_PORTAL_JBOD_RESPONSE_SENDER_RO_ONCE_AND_ALLOW_EXACT_OLS7_RESPONSE_TO_DRAIN",
+    "externalMutationAttemptAuthorized":true,
+    "publicationAuthorized":false,
+    "automaticRetryAuthorized":false
+  },
+  "authority": {
+    "operatorInstruction":"fix the issue and hold off on image analyzing until ultra",
+    "packagePublicationAuthorized":false,
+    "automaticRetryAuthorized":false,
+    "imageAnalysisAuthorized":false,
+    "providerActivationAuthorized":false,
+    "trainingAuthorized":false,
+    "xmlAuthorized":false,
+    "productionAuthorized":false
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

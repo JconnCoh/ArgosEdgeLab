@@ -1,0 +1,119 @@
+{
+  "schema": "argos_zero_recurrence_preaction_v2",
+  "revision": "OCV03_OLS7_EXACTLY_ONCE_PUBLISH_20260911",
+  "createdUtc": "2026-09-11T13:08:00Z",
+  "state": "PASS_PREACTION_CONTRACT",
+  "actionType": "PROJECT_PORTAL_OLS7_EXACTLY_ONCE_PUBLISH",
+  "historyAuditPath": "work/ARGOS_HISTORY_NO_REPEAT_AUDIT_20260820.json",
+  "historyAuditSha256": "D54E5F766D4546827069C65F098D3C98E8C1C9B724B718A101674775FB51DA75",
+  "dependencies": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "66854C304517A9442DB8409BD1B4D5DE64A2D319C5988BE86C2897087B045DED"
+    },
+    {
+      "path": "ARGOS_WINDOWS_FAILURE_PREVENTION_MEMORY.md",
+      "sha256": "0F6265533D7F6070EF8A17C8863355BD302C8E1E2241B4B9DEB9C104F0430E0B"
+    },
+    {
+      "path": "work/ARGOS_CONTINUITY_STATE.json",
+      "sha256": "96FE621D0D47B74EB6615281100C1720C97C5F4E8712B48B3DD1F5479B6A04E5"
+    },
+    {
+      "path": "work/OPENCV_OLS7/OLS7_BUILD_CONTRACT.json",
+      "sha256": "2A75267EB17B4E416E076BFD7AA722E9AF5FAE23139701AB1692AAC5973015FF"
+    },
+    {
+      "path": "work/OPENCV_OLS7/Invoke-OLS7Package.ps1",
+      "sha256": "C5276D019D8488AE17484C5BB47D7C1193332351978F2A82075E7A8B808A09F8"
+    },
+    {
+      "path": "work/OPENCV_OLS7/OLS7_FINAL_PACKAGE_GATE.json",
+      "sha256": "3C340933626C6A82CA625CF80B05064887A244D1CC262AB92E9FBCF2BC891543"
+    },
+    {
+      "path": "work/OPENCV_OLS7/final_ols7/OLS7_PREPUBLICATION_PATH_GATE.json",
+      "sha256": "1CCE17F70536A50A7E2A000D976B7DF030BA541A581C4E7B922BCF2955D38EF9"
+    },
+    {
+      "path": "work/OPENCV_OLS7/OLS7_EXACT_PACKAGED_REHEARSAL_GATE.json",
+      "sha256": "BDC9512E9F528FD65BC0E58A5ABC714813407A46BBF32BFE2C9731EF0AFDA86F"
+    },
+    {
+      "path": "work/OPENCV_OLS7/final_ols7/REQ_20260911T130501848Z_E64F5EE1B952.ready.zip",
+      "sha256": "24FCDA35E5AF9D2F44FCF44ABFDCEAE96188D17DF6445EDD13E1A5D8DEF8F905"
+    },
+    {
+      "path": "work/OPENCV_OLS7/OLS7_RECOVERY_INTENT.json",
+      "sha256": "255B423F3664A25F99D4C37E17D07E82165AD8DF454AC0AEE53849998D40216F"
+    },
+    {
+      "path": "work/OPENCV_EDGE_UNWRAP_O3F16U13/O3F16U13_LATE_SIGNED_TERMINAL_GATE.json",
+      "sha256": "E2768A4D37639F8A20E811530E652FE07958343B01559ED027C18FC4D3C89FE3"
+    },
+    {
+      "path": "work/JBOD_ENDPOINT_MAINTENANCE_PATH_C1E/C1E_QUEUE_SAFETY_PASS.json",
+      "sha256": "170015C259C3EC8FC0B369F070748A555336F8FB312636819B7F99EBCE85A65D"
+    },
+    {
+      "path": "utilities/Confirm-ArgosPowerShellHarnessSafety.ps1",
+      "sha256": "53E5767E61ABF839BF08CED330102B4CC38E30D476214FC75088C9041D58BDAC"
+    },
+    {
+      "path": "utilities/Confirm-ArgosZeroRecurrencePreaction.ps1",
+      "sha256": "D87308AC3E5BF84E6A746860A2B733EA0A8A8E3AA182DC32EC9F930DA924D79A"
+    }
+  ],
+  "controls": {
+    "valuesDerivedFromCurrentFileEvidence": true,
+    "dependencyHashesPinned": true,
+    "templateResidueAuditPassed": true,
+    "installedRootAndTaskIdentityPinned": true,
+    "pathAndWrapperGatesPassedWhenApplicable": true,
+    "compoundCommandsFileBacked": true,
+    "windowsPowerShell51ParserPassedWhenApplicable": true,
+    "externalEvidenceJsonRehydrated": true,
+    "arrayBoundaryModeSafe": true,
+    "zeroOneManyCollectionCasesPassed": true,
+    "optionalPropertiesPresenceTested": true,
+    "residentConsumersInventoried": true,
+    "declaredActionMatchesImplementation": true,
+    "expectedFailureCaptureSafe": true,
+    "optionalToolsDiscoveredBeforeUse": true,
+    "queueAndReturnRouteTerminalGatePlanned": true,
+    "historyAuditCompleteBeforeCheckpoint": true
+  },
+  "collectionCaseEvidence": {
+    "path": "work/ARGOS_POWERSHELL_COLLECTION_CASE_GATE_20260821.json",
+    "sha256": "17128A6B5745DC2B588D9803BD0E892D1108A69F87BA35300567089E1D83FF11",
+    "requiredCaseIds": [
+      "ZERO",
+      "ONE",
+      "MANY"
+    ]
+  },
+  "legacyEvidenceException": {
+    "used": false,
+    "newExecutionAuthorized": false,
+    "futureReuseAllowed": false,
+    "blockedArtifacts": []
+  },
+  "boundedAction": {
+    "publicationRoot": "U:/ProjectPortalRO/requests",
+    "requestId": "REQ_20260911T130501848Z_E64F5EE1B952",
+    "endpointRequests": 1,
+    "publicationsMaximum": 1,
+    "retriesMaximum": 0,
+    "installedFileChanges": 0,
+    "taskActions": [],
+    "processActions": [],
+    "signedRequestPackagesMaximum": 1,
+    "imageRead": false,
+    "sourceHashing": false,
+    "sourceDeletion": false,
+    "waferAction": false,
+    "jbodContact": true
+  },
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

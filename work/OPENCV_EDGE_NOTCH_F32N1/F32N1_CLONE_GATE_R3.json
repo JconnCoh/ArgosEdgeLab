@@ -1,0 +1,79 @@
+{
+  "schema": "argos_clone_literal_remediation_gate_v1",
+  "checkedUtc": "2026-09-11T19:27:59.7430168Z",
+  "state": "PASS_ARGOS_CLONE_LITERAL_REMEDIATION",
+  "mode": "GATE",
+  "manifest": "C:\\Users\\joshua.conn\\Desktop\\ArgosDev\\ArgosEdgeLab\\work\\OPENCV_EDGE_NOTCH_F32N1\\F32N1_CLONE_REMEDIATION.json",
+  "manifestSha256": "15CCA45D0B1071180551FEA67145639058B0ADAEAC384D7A2E6EF6558E332FDA",
+  "pairCount": 4,
+  "pairs": [
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F8R13T5/Invoke-O3F8R13T5.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_F32N1/Invoke-F32N1.ps1",
+      "sourceSha256": "5A2D8835CA5826ECBF3901C71E7D20F13374F16E5B2BBA4E1A0A67B43400A620",
+      "generatedSha256": "E337E7242D4E82FCF6834681699922684CAE9D8239F6489F9232A93D86AE8C3B",
+      "sourceRoots": [
+        "D:",
+        "Q:"
+      ],
+      "generatedRoots": [
+        "D:",
+        "D:\\ArgosProjectPortalRO",
+        "D:\\F32N1RT",
+        "D:\\F32N1S",
+        "D:\\KLARFExport"
+      ],
+      "ruleCount": 5
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F8R13T5/Build-O3F8R13T5Package.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_F32N1/Build-F32N1Package.ps1",
+      "sourceSha256": "EE8230C9A81BCD80FB1189919C93A197BFF9A12F5B864508AA87ACDB56E67A6F",
+      "generatedSha256": "3611F7759CA83BF10FCD07003700E0172DE69BC90C2E4A7BE6BE5ED71FC754AE",
+      "sourceRoots": [
+        "C:\\O3F8R13T5PKR2"
+      ],
+      "generatedRoots": [
+        "C:\\F32N1P2"
+      ],
+      "ruleCount": 1
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F8R13T5/Sign-O3F8R13T5Package.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_F32N1/Sign-F32N1Package.ps1",
+      "sourceSha256": "1855854622630CDE017FE9C3C87DF3C04B880EB3C7A409EDDC3C9185984944E6",
+      "generatedSha256": "81437BC30B42AAA9669C739AFDC06BBCF96A19BC2325E1F10CD4094E0C4D6425",
+      "sourceRoots": [
+        "C:\\O3F8R13T5PKR2"
+      ],
+      "generatedRoots": [
+        "C:\\F32N1P2",
+        "D:\\ArgosProjectPortalRO",
+        "D:\\F32N1RT",
+        "D:\\F32N1S",
+        "Q:\\BrightfieldFrontsideWafer",
+        "Q:\\DarkfieldFrontsideWafer"
+      ],
+      "ruleCount": 6
+    },
+    {
+      "source": "work/OPENCV_EDGE_NOTCH_O3F8R13T5/Publish-O3F8R13T5Package.ps1",
+      "generated": "work/OPENCV_EDGE_NOTCH_F32N1/Publish-F32N1Package.ps1",
+      "sourceSha256": "5B20E56FB3CFBFEBB558FF5B3361AE83233A3FA51857FEA1D5D7E98DB61CDC6E",
+      "generatedSha256": "99A0ACDE92517AD8310F3BC4C77E820F9551CE54B49B716B8E0BC2570FF98504",
+      "sourceRoots": [
+        "\\\\shm-cifs\\Department",
+        "U:\\ProjectPortalRO"
+      ],
+      "generatedRoots": [
+        "\\\\shm-cifs\\Department",
+        "U:\\ProjectPortalRO"
+      ],
+      "ruleCount": 2
+    }
+  ],
+  "violations": [],
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "evidenceWritten": true
+}

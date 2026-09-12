@@ -1,0 +1,28 @@
+{
+  "schema": "argos_recovery_observation_evidence_v1",
+  "createdUtc": "2026-09-11T18:23:29.4273373Z",
+  "state": "PASS_OLS7_RESPONSE_SENDER_RECOVERY_OBSERVATION",
+  "incidentId": "OLS7_JBOD_RESPONSE_SENDER_READY_20260911",
+  "sourceEvidence": {
+    "path": "work/OPENCV_OLS7/OLS7_RESPONSE_SENDER_20260911T182600Z_09.json",
+    "sha256": "C5ADD6D2A3148196DF663210BA659821C07AE22894B4F9EE8823FFDFD643A988"
+  },
+  "exactSourcesProved": true,
+  "fieldSpecificExpectedObservedRecorded": true,
+  "directEndpointEvidence": true,
+  "matchingSignedTerminalResponse": false,
+  "expectedObserved": [
+    {"field":"computerName","expected":"A1025645101","observed":"A1025645101","pass":true},
+    {"field":"taskName","expected":"ArgosProjectPortal.JBOD.ResponseSender.RO","observed":"ArgosProjectPortal.JBOD.ResponseSender.RO","pass":true},
+    {"field":"taskPrincipal","expected":"SYSTEM","observed":"SYSTEM","pass":true},
+    {"field":"taskState","expected":"Ready failure state requiring start-once","observed":"Ready","pass":true},
+    {"field":"lastTaskResult","expected":"nonzero","observed":255,"pass":true},
+    {"field":"ols7ResponsePending","expected":true,"observed":true,"pass":true},
+    {"field":"ols7ResponseSent","expected":false,"observed":false,"pass":true}
+  ],
+  "supportedRemedy": "B",
+  "remedy": "Start only the exact existing JBOD response-sender scheduled task once and allow the existing signed OLS7 response to drain without republishing.",
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
