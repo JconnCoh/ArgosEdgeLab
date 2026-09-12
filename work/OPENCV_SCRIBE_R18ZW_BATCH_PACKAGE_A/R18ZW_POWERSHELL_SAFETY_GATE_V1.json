@@ -1,0 +1,179 @@
+{
+  "schema": "argos_opencv_scribe_r18zw_package_a_powershell_safety_gate_v1",
+  "checkedUtc": "2026-09-12T18:54:32.1169038+00:00",
+  "state": "PASS_R18ZW_PACKAGE_A_POWERSHELL_SAFETY",
+  "requestId": "REQ_RZW1",
+  "bindingRecordSha256": "DE0B07B9DA8700A61CAF52D9786210ECDA6E363292D17922D5303AD69FAEE89A",
+  "cloneGateSha256": "1E38F50273A96BDE4EF4DB61ECE77B231134335CF0645175F53E0FBDABF8801A",
+  "windowsPowerShell51": true,
+  "allParserChecksPassed": true,
+  "allHarnessChecksPassed": true,
+  "allWrapperChecksPassed": true,
+  "allCallerConsumerChecksPassed": true,
+  "pythonEnvelopeAstParsePassed": true,
+  "orderedGenerationEvidence": {
+    "sourceHarnessesCheckedBeforeRemediation": true,
+    "remediationCreatedBeforeGeneratedBytes": true,
+    "firstRawCloneGateSupersededAfterLaterFinalScriptEdits": true,
+    "finalRawCloneGateWrittenAfterGeneratedBytesFinal": true,
+    "generatedHarnessesCheckedAfterFinalExecutableEdits": true
+  },
+  "scriptChecks": [
+    {
+      "path": "work\\OPENCV_SCRIBE_R18ZW_BATCH_PACKAGE_A\\Build-R18ZWBatchRequestV1.ps1",
+      "bytes": 79116,
+      "sha256": "A18D3980F5C9D07C2AE019B2DDBEFADF41CEE20DE75300FA09E8565B9028C33B",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    },
+    {
+      "path": "work\\OPENCV_SCRIBE_R18ZW_BATCH_PACKAGE_A\\Invoke-R18ZWBatchLaunchV1.ps1",
+      "bytes": 86532,
+      "sha256": "318DF139E816A3E95E65C016FCF7BE49766823ECB087BEFD9CDA14F6490106F6",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    },
+    {
+      "path": "work\\OPENCV_SCRIBE_R18ZW_BATCH_PACKAGE_A\\Publish-R18ZWV1.ps1",
+      "bytes": 59412,
+      "sha256": "5F72A43C1A48D614345AB6339ACB1EE308C7A5BB7B64B3C5BD9E94D34470A058",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    },
+    {
+      "path": "work\\OPENCV_SCRIBE_R18ZW_BATCH_PACKAGE_A\\Collect-R18ZWLaunchResponseV1.ps1",
+      "bytes": 42593,
+      "sha256": "8646F5731024AB988738507CD0BA37E008D0413EDD496A42754B66DF1F52720D",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    },
+    {
+      "path": "work\\OPENCV_SCRIBE_R18ZW_BATCH_PACKAGE_A\\Test-R18ZWRequestIdUniquenessV1.ps1",
+      "bytes": 12557,
+      "sha256": "455FFA90651194D52DC6A489CB259D740AEC21A35789869DDB189933E695368E",
+      "harnessState": "PASS_ARGOS_POWERSHELL_HARNESS_SAFETY",
+      "harnessParserErrors": 0,
+      "harnessViolations": 0,
+      "harnessWarnings": 0,
+      "wrapperState": "PASS_ARGOS_POWERSHELL_WRAPPER_PREFLIGHT",
+      "callerConsumerParametersExact": true
+    }
+  ],
+  "windowsPowerShell51GetCommandParameterSets": {
+    "builder": [
+      "Preflight",
+      "Test",
+      "Build"
+    ],
+    "launcher": [
+      "Preflight",
+      "Rehearsal",
+      "PackageValidationOnly",
+      "JunctionGate",
+      "PayloadRoot",
+      "WorkRoot",
+      "OutputRoot",
+      "CanonicalProposalRoot",
+      "PythonPath",
+      "ExpectedPythonSha256",
+      "ReferenceBundlePath",
+      "ExpectedComputerName"
+    ],
+    "publisher": [
+      "InvocationManifest",
+      "Preflight",
+      "Apply"
+    ],
+    "collector": [
+      "InvocationManifest",
+      "Preflight",
+      "Collect"
+    ],
+    "collisionScanner": [
+      "Preflight",
+      "Gate",
+      "OutputPath"
+    ]
+  },
+  "callerConsumerChecks": [
+    {
+      "caller": "builder",
+      "consumer": "launcher",
+      "namedArguments": [
+        "Preflight",
+        "Rehearsal",
+        "PackageValidationOnly",
+        "PayloadRoot",
+        "WorkRoot",
+        "OutputRoot",
+        "CanonicalProposalRoot",
+        "PythonPath",
+        "ExpectedPythonSha256",
+        "ReferenceBundlePath",
+        "ExpectedComputerName"
+      ],
+      "exact": true
+    },
+    {
+      "caller": "builder-junction-gate",
+      "consumer": "launcher",
+      "namedArguments": [
+        "JunctionGate"
+      ],
+      "exact": true
+    },
+    {
+      "caller": "publisher",
+      "consumer": "collisionScanner",
+      "namedArguments": [
+        "Preflight",
+        "Gate",
+        "OutputPath"
+      ],
+      "exact": true
+    },
+    {
+      "caller": "operator",
+      "consumer": "publisher",
+      "namedArguments": [
+        "InvocationManifest",
+        "Preflight",
+        "Apply"
+      ],
+      "exact": true
+    },
+    {
+      "caller": "operator",
+      "consumer": "collector",
+      "namedArguments": [
+        "InvocationManifest",
+        "Preflight",
+        "Collect"
+      ],
+      "exact": true
+    }
+  ],
+  "conditionalScalarizationViolations": 0,
+  "externalPowerShellTypedObjectAssumptions": 0,
+  "formatDependentEvidence": 0,
+  "broadRecursiveWorkspaceEnumeration": false,
+  "metadataOnly": true,
+  "targetExecuted": false,
+  "externalMutationPerformed": false
+}

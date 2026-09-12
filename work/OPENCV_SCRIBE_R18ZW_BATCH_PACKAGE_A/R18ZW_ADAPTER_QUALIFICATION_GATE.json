@@ -1,0 +1,60 @@
+{
+  "schema": "argos_opencv_scribe_r18zw_batch_adapter_qualification_gate_v1",
+  "checkedUtc": "2026-09-12T18:22:22.7555746Z",
+  "state": "PASS_R18ZW_BATCH_ADAPTER_EXACT_SEAM_AND_RESOURCE_CAP",
+  "requestId": "REQ_RZW1",
+  "adapter": {
+    "path": "work/OPENCV_SCRIBE_R18ZW_BATCH_PACKAGE_A/ArgosOpenCvScribeV1R18ZWBatchAdapter.py",
+    "sha256": "5A124F9F793C44CD3631956FA0330BD33B59298AAF653DE25C0F31572EC16E45",
+    "bytes": 3378
+  },
+  "wrappedProvider": {
+    "path": "work/OPENCV_SCRIBE_R18ZW/ArgosOpenCvScribeV1R18ZW.py",
+    "sha256": "ECC62B0B50EDE6D7D9F07868B3494D39960A8D6ECDD8CAEA8E942FAF3E069D87",
+    "bytes": 28229
+  },
+  "pairedManifest": {
+    "path": "work/OPENCV_SCRIBE_R18ZW/R18ZW_PAIRED_GLYPH_REFERENCE_MANIFEST.json",
+    "sha256": "FE6BA2DAFA1F535AF489862DD9B6A542142F6F08D17839B3B8E0D98CD3BAA9A9",
+    "bytes": 2392
+  },
+  "baseRunner": {
+    "path": "work/OPENCV_SCRIBE_R18ZT_BATCH_C/Run-R18ZTExistingOrientedCropsV2.py",
+    "sha256": "F3B465F433ADB58F1C37C5673999FD03A4315EFA5A3128EFF8E192E9C3D58AE2",
+    "bytes": 71724
+  },
+  "entryProviderTranslation": {
+    "runJobIdentityPreserved": true,
+    "mainIdentityPreserved": true,
+    "r17dIdentityPreserved": true,
+    "r18zvIdentityPreserved": true,
+    "r18hIdentityPreserved": true,
+    "r18zuIdentityPreserved": true,
+    "r18vIdentityPreserved": true,
+    "onDiskJobBytesUnchanged": true,
+    "onlyPairedManifestPathAndShaAddedToInMemoryCopy": true
+  },
+  "behavioralBoundary": {
+    "rankingLogicChanged": false,
+    "envelopeLogicChanged": false,
+    "resultLogicChanged": false,
+    "directStructuralEvaluatorCalled": false,
+    "truthOrChecksumUsed": false,
+    "providerAttributeAssignments": ["load_dot_bank"]
+  },
+  "resourceContract": {
+    "workerCount": 8,
+    "openCvThreadsPerWorker": 1,
+    "eightFreshProcessesPassed": true,
+    "openClGpuDisabled": true
+  },
+  "tests": {
+    "pureBindingPassed": true,
+    "partialAndConflictingBindingsRejected": true,
+    "astSeamGuardPassed": true,
+    "imageBytesRead": false,
+    "providerRunPerformed": false
+  },
+  "publicationPerformed": false,
+  "externalAccessPerformed": false
+}
