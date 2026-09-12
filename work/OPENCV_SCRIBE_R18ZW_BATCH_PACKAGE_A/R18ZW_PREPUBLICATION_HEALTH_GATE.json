@@ -1,0 +1,70 @@
+{
+  "schema": "argos_opencv_scribe_r18zw_fresh_direct_queue_endpoint_health_v1",
+  "checkedUtc": "2026-09-12T20:14:10.644806Z",
+  "state": "PASS_R18ZW_FRESH_DIRECT_QUEUE_AND_ENDPOINT_HEALTH",
+  "requestId": "REQ_RZW1",
+  "bindingRecordSha256": "DE0B07B9DA8700A61CAF52D9786210ECDA6E363292D17922D5303AD69FAEE89A",
+  "terminalPredecessorGateSha256": "EDD09D908AF6B52CE3A5AE8616FADCDFE7E5138280EA217EB89962BE743E8F2C",
+  "computerName": "A1025645101",
+  "predecessorRequestTerminal": true,
+  "endpointHealthy": true,
+  "queueHeadClear": true,
+  "pendingRequestCount": 0,
+  "queueSemantics": {
+    "endpointEligibleSelector": "IMMEDIATE_DIRECTORY_*.ready",
+    "observedImmediateEntryCount": 1,
+    "eligibleReadyRequestCount": 0,
+    "nonEligiblePartialEntryCount": 1,
+    "nonEligiblePartialEntryNames": ["REQ_O2D4.partial"],
+    "partialEntryIgnoredByReadyOnlyEndpointSelector": true,
+    "partialEntryMutatedOrRemoved": false
+  },
+  "endpointConsumer": {
+    "evidencePath": "work/OPENCV_SCRIBE_R18ZW_BATCH_PACKAGE_A/R18ZW_ENDPOINT_HEALTH_RAW_AFTER_RESTART_02.json",
+    "evidenceBytes": 2992,
+    "evidenceSha256": "EF51458479CDDD41E2BAD8474BF95A898CC75E6AFBBEC32FC5DE3A58084C5F07",
+    "matchingTaskCount": 1,
+    "taskState": "Running",
+    "missedRuns": 0,
+    "installedConfigSha256": "55A106E8F29F89C99CC51DACAA1466C0E076AB1DE40AAEB2E5638EFC4F02DE1F",
+    "installedWorkerSha256": "CB6700714E20DAC2D3C097095A2800C92ECAAC75F29878F4C86326493B246250"
+  },
+  "predecessorState": {
+    "evidencePath": "work/OPENCV_SCRIBE_R18ZW_BATCH_PACKAGE_A/R18ZW_PREDECESSOR_STATE_RAW_20260912T192700Z_01.json",
+    "evidenceBytes": 5629,
+    "evidenceSha256": "3315E7503D13590831EDAFDC8A59B37A378D91922488EF3A9A8BC90B03D86578",
+    "requestId": "REQ_RZV3",
+    "pending": false,
+    "ledgerState": "PASS_MAINTENANCE_PATCH",
+    "qualifiedCases": 1044,
+    "completedCases": 1044
+  },
+  "endpointQueue": {
+    "observerPath": "work/OPENCV_SCRIBE_R18ZW_BATCH_PACKAGE_A/Observe-R18ZWEndpointQueueV1.ps1",
+    "observerBytes": 1163,
+    "observerSha256": "5AA1EA9FFC7FD96C65C80DD10C096292E8A1A5BC660B01694791CE11A85403F6",
+    "evidencePath": "work/OPENCV_SCRIBE_R18ZW_BATCH_PACKAGE_A/R18ZW_QUEUE_HEALTH_RAW_AFTER_RESTART_07.json",
+    "evidenceBytes": 1839,
+    "evidenceSha256": "EECD90C7F31C37BA69D12560F37F22E65EEEF74205AD433B062B2750CA02A1E5",
+    "rawImmediateEntryCount": 1,
+    "eligibleReadyRequestCount": 0
+  },
+  "priorAcceptedPortalRequest": {
+    "requestId": "REQ_20260911T192840589Z_C82222BEE27C",
+    "terminalGatePath": "work/OPENCV_SCRIBE_R18ZW_BATCH_PACKAGE_A/R18ZW_F32_TERMINAL_RESPONSE_GATE.json",
+    "terminalGateBytes": 2197,
+    "terminalGateSha256": "F0FCABD6BD445317BD77BDEACFA426017C817869320E89C353B66B28196AC3A9",
+    "requestProcessed": true,
+    "matchingSignedResponseAuthenticated": true,
+    "terminal": true,
+    "terminalState": "FAILED",
+    "pending": false,
+    "retryAuthorized": false
+  },
+  "taskOrProcessMutationPerformed": false,
+  "queueMutationPerformed": false,
+  "partialEntryMutationPerformed": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

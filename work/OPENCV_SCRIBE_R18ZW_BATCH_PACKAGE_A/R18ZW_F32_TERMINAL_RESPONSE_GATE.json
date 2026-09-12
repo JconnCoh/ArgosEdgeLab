@@ -1,0 +1,52 @@
+{
+  "schema": "argos_opencv_scribe_r18zw_prior_portal_request_terminal_gate_v1",
+  "checkedUtc": "2026-09-12T19:56:58.3485397Z",
+  "state": "PASS_R18ZW_PRIOR_F32_REQUEST_AUTHENTICATED_TERMINAL_FAILED",
+  "requestId": "REQ_RZW1",
+  "priorRequestId": "REQ_20260911T192840589Z_C82222BEE27C",
+  "requestProcessedPath": "U:\\ProjectPortalRO\\requests\\processed\\REQ_20260911T192840589Z_C82222BEE27C.ready.zip",
+  "requestProcessedExists": true,
+  "requestPendingReadyExists": false,
+  "requestPendingUploadExists": false,
+  "responsePath": "U:\\ProjectPortalRO\\responses\\R_8A739FE301B0_20260911231405501_c146bfef.ready.zip",
+  "responseBytes": 2300,
+  "responseSha256": "D90607C4FBEA8ACD6BA3D3C730CA47C43DE95B83B0A26F4002213A11BFEB962B",
+  "responseManifestSha256": "C7784770C2838B6F3E1D5FDA16ED10BB829108326954F5CCC61292FEF98CF141",
+  "responseManifestSchema": "argos_project_portal_response_manifest_v1",
+  "responseId": "R_8A739FE301B0_20260911231405501_c146bfef",
+  "responseCreatedUtc": "2026-09-11T23:14:05.5012861Z",
+  "responseSourceRole": "JBOD",
+  "responseState": "FAILED",
+  "responseDetail": "Maintenance verifier failed with exit code 1. Exact stderr is attached.",
+  "signatureAlgorithm": "RSA-SHA256-PKCS1",
+  "signerThumbprint": "DF46FA4B81065AB273A88F4E1FA8AC0F2EE518CC",
+  "signatureVerifiedAgainstPinnedJbodCertificate": true,
+  "payloadMembershipVerified": true,
+  "payloads": [
+    {
+      "path": "FAILURE.json",
+      "bytes": 687,
+      "sha256": "67DAFCDE932BFFD91644BE7214FBA6C0F8A219C09BC8162159E13F008DA7F9DC",
+      "state": "FAILED"
+    },
+    {
+      "path": "MAINTENANCE.stderr.txt",
+      "bytes": 531,
+      "sha256": "1B2C3BFE2169AE6791A832867718E9602C35F68F4E0D84D8CF45D8F8AF71EC71"
+    },
+    {
+      "path": "MAINTENANCE.stdout.txt",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    }
+  ],
+  "priorRequestTerminal": true,
+  "priorRequestSucceeded": false,
+  "priorRequestRetryAuthorized": false,
+  "queueOrProcessMutationPerformed": false,
+  "externalAccessPerformed": true,
+  "externalMutationPerformed": false,
+  "mutationsPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

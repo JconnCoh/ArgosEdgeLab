@@ -1,0 +1,88 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-09-12T19:26:47.3627854Z",
+    "state":  "PASS_ARGOS_ADMIN_CLIPBOARD_ACTION",
+    "actionId":  "R18ZW_PREDECESSOR_STATE_20260912T192700Z_01",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "2267F5FBA3EDE0473DDA69B7F8031233FD04A3FCBF06D3E621FDE297B4E50F8D",
+    "payloadSha256":  "9C32057346922106F9AA1FCC644032D4BDDB9734E14D8E0D174E1DA058538486",
+    "expectedResultSchema":  "argos_r18zv3_current_state_observation_v1",
+    "hostnameGatePassed":  true,
+    "visibleConsoleRequired":  true,
+    "taskbarClickPerformed":  false,
+    "hostnameUsesShortClipboardPaste":  true,
+    "hostnameSubmittedByClipboardCrLf":  false,
+    "hostnameSubmittedByNativeVkReturn":  true,
+    "hostnameSubmissionMode":  "SHIFT_INSERT_PASTE_THEN_NATIVE_VK_RETURN",
+    "payloadTransferred":  true,
+    "typedTrigger":  "get-clipboard -raw|iex",
+    "triggerSubmittedByNativeVkReturn":  true,
+    "triggerSubmissionMode":  "NATIVE_VK_RETURN",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "computerName":  "A1025645101",
+                         "mutationsPerformed":  false,
+                         "markers":  [
+                                         {
+                                             "processId":  3352,
+                                             "workerState":  "RUNNING",
+                                             "qualified":  null,
+                                             "completed":  null,
+                                             "disposition":  null,
+                                             "state":  "PASS_R18ZT_BATCH_WORKER_STARTED",
+                                             "name":  "LAUNCH.json",
+                                             "bytes":  2972,
+                                             "detail":  null,
+                                             "sha256":  "55B9F8ADCDE588B22D9BFBAE26A505556DF61254B83799C1C0C8328950678FC5"
+                                         },
+                                         {
+                                             "processId":  null,
+                                             "workerState":  null,
+                                             "qualified":  1044,
+                                             "completed":  1044,
+                                             "disposition":  null,
+                                             "state":  "COMPLETE_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+                                             "name":  "STATUS.json",
+                                             "bytes":  7251,
+                                             "detail":  null,
+                                             "sha256":  "25DA668063220683EFA9D38D568690A0DCD6B351A85A2F302A17379D51013135"
+                                         },
+                                         {
+                                             "processId":  null,
+                                             "workerState":  null,
+                                             "qualified":  1044,
+                                             "completed":  1044,
+                                             "disposition":  null,
+                                             "state":  "COMPLETE_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+                                             "name":  "RUNNING.json",
+                                             "bytes":  7253,
+                                             "detail":  null,
+                                             "sha256":  "A278D42F0A5A1870C932406A4203D7CBA72974C9146FB97EC3F791B0FF89AEF6"
+                                         },
+                                         {
+                                             "processId":  null,
+                                             "workerState":  null,
+                                             "qualified":  1044,
+                                             "completed":  1044,
+                                             "disposition":  "COMPLETE_WITH_NONCOMPARABLE_OR_FAILED_CASE_HOLDS",
+                                             "state":  "COMPLETE_R18ZT_EXISTING_ORIENTED_CROPS_REVIEW_ONLY",
+                                             "name":  "COMPLETE.json",
+                                             "bytes":  7062,
+                                             "detail":  null,
+                                             "sha256":  "E56F13F583342D557BDB71E0B870CBB0D64F2FCFA7AD51FA6D30BB83C556BF4A"
+                                         }
+                                     ],
+                         "state":  "PASS_R18ZV3_CURRENT_STATE_OBSERVATION",
+                         "pending":  false,
+                         "schema":  "argos_r18zv3_current_state_observation_v1",
+                         "outputRoot":  true,
+                         "ledger":  {
+                                        "processedUtc":  "2026-09-11T23:14:03.2829488Z",
+                                        "sha256":  "285E072F8C86CABD81F73A324F1A4C4746661BFE6362AED20F5AF872E5EB37C0",
+                                        "responsePackage":  "C:\\ProgramData\\ArgosProjectPortalRO\\to_argos\\pending\\R_BA2AB89ABCB5_20260911231403250_74c987ac.ready",
+                                        "bytes":  447,
+                                        "state":  "PASS_MAINTENANCE_PATCH"
+                                    }
+                     }
+}
