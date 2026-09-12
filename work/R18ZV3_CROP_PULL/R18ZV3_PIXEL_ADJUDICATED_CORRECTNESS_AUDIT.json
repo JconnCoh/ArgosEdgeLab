@@ -1,0 +1,89 @@
+{
+  "schema": "argos_opencv_scribe_r18zv3_pixel_adjudicated_correctness_audit_v1",
+  "createdUtc": "2026-09-12T00:42:25.8422986Z",
+  "state": "PASS_R18ZV3_EXACT_PIXELS_PROVE_TWO_MANUAL_TRUTH_ENTRY_ERRORS_ZERO_ACCEPTED_WRONG",
+  "classification": "DIAGNOSTIC_ONLY",
+  "supersedes": {
+    "path": "work/OPENCV_SCRIBE_R18ZV3_RESULT_COLLECTION_A/R18ZV3_CORRECTNESS_AUDIT.json",
+    "sha256": "987A38DC3B95450C41A368614A28CBD3E2C289311D03C257299BF7B6CD969165",
+    "priorState": "PASS_BOUNDED_CORRECTNESS_AUDIT_WITH_TWO_PIXEL_ADJUDICATION_HOLDS"
+  },
+  "adjudicationMethod": {
+    "mode": "EXACT_SAME_ACQUISITION_BF_DF_PIXEL_REVIEW",
+    "laterAcquisitionSubstitutionAllowed": false,
+    "identityOnlySubstitutionAllowed": false,
+    "requiredPerCaseAgreement": "EXACT_HASH_BINDING_AND_INDEPENDENTLY_LEGIBLE_BF_DF_CONSENSUS",
+    "exactImagesOpened": 4
+  },
+  "cases": [
+    {
+      "physicalIdentity": "62629-327_20260730215320_SLOT21",
+      "r18zv3AcceptedRead": "9509R061FEH0",
+      "priorEnteredTruth": "6950FR061FE4",
+      "pixelAdjudicatedTruth": "9509R061FEH0",
+      "decision": "OCR_CORRECT_MANUAL_ENTRY_WRONG",
+      "bf": {
+        "sourceRelativePath": "identity/proposals/62629-327_20260730215320_Slot21/scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+        "localReviewPath": "work/R18ZV3_CROP_PULL/manual_drop/327_BF.png",
+        "bytes": 2038248,
+        "sha256": "15248FA111686809BE69A427284A9EC6947BF5E68E2D678C236B604EAFE5A930",
+        "visibleRead": "9509R061FEH0"
+      },
+      "df": {
+        "sourceRelativePath": "identity/proposals/62629-327_20260730215320_Slot21/scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+        "localReviewPath": "work/R18ZV3_CROP_PULL/manual_drop/327_DF.png",
+        "bytes": 770317,
+        "sha256": "A370030408972295D2E10DB1FC14B972632EC74B7FD2B892F5C84A31B36A04DB",
+        "visibleRead": "9509R061FEH0"
+      }
+    },
+    {
+      "physicalIdentity": "62629-341_20260730220842_SLOT16",
+      "r18zv3AcceptedRead": "1478E147SUD0",
+      "priorEnteredTruth": "61478E147SA3",
+      "pixelAdjudicatedTruth": "1478E147SUD0",
+      "decision": "OCR_CORRECT_MANUAL_ENTRY_WRONG",
+      "bf": {
+        "sourceRelativePath": "identity/proposals/62629-341_20260730220842_Slot16/scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+        "localReviewPath": "work/R18ZV3_CROP_PULL/manual_drop/341_BF.png",
+        "bytes": 2000856,
+        "sha256": "AE5968D5E870C7624A842507AB9ADD017325B7E7A0ED87C4A9033314AA11FECC",
+        "visibleRead": "1478E147SUD0"
+      },
+      "df": {
+        "sourceRelativePath": "identity/proposals/62629-341_20260730220842_Slot16/scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+        "localReviewPath": "work/R18ZV3_CROP_PULL/manual_drop/341_DF.png",
+        "bytes": 743925,
+        "sha256": "5D4C08B862C278F0316A8DCFC5BBB15E5D492598EF85B91CBF825102C0962EFE",
+        "visibleRead": "1478E147SUD0"
+      }
+    }
+  ],
+  "correctedTruthScoredCohort": {
+    "truthMatchedCases": 942,
+    "exact": 920,
+    "mismatch": 15,
+    "empty": 7,
+    "acceptedReviewOnly": 435,
+    "held": 609,
+    "truthMatchedAccepted": 425,
+    "truthMatchedAcceptedExact": 425,
+    "truthMatchedAcceptedWrong": 0,
+    "truthMatchedHeldExact": 495,
+    "truthMatchedHeldMismatch": 15,
+    "truthMatchedHeldEmpty": 7
+  },
+  "interpretation": {
+    "acceptedSetPassesZeroWrongRequirement": true,
+    "remainingMismatchesAreAccepted": false,
+    "remainingMismatchCount": 15,
+    "remainingEmptyCount": 7,
+    "remainingMismatchesAndEmptyRowsStayHeld": true,
+    "authoritativeOverlayCorrectionStillRequired": true
+  },
+  "identityOverlayChanged": false,
+  "detectorChanged": false,
+  "externalMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}
