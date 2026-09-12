@@ -1,0 +1,87 @@
+{
+  "schema": "argos_opencv_scribe_r18zv3_correctness_audit_v1",
+  "createdUtc": "2026-09-12T00:21:33.0678451Z",
+  "state": "PASS_BOUNDED_CORRECTNESS_AUDIT_WITH_TWO_PIXEL_ADJUDICATION_HOLDS",
+  "classification": "DIAGNOSTIC_ONLY",
+  "sourceEvidence": {
+    "correctnessExtract": {
+      "path": "work/OPENCV_SCRIBE_R18ZV3_RESULT_COLLECTION_A/R18ZV3_CORRECT_20260912T000043Z_02.json",
+      "bytes": 1032530,
+      "sha256": "203881C2A29A4D6D0A375737093AAE988776D1732A2A2A35E1CA39D26166E0A3"
+    },
+    "mismatchProvenance": {
+      "path": "work/OPENCV_SCRIBE_R18ZV3_RESULT_COLLECTION_A/R18ZV3_PROV_20260912T000710Z_01.json",
+      "bytes": 8790,
+      "sha256": "86060C5279B36AB58EFEF88833150606EA286DA21042C21C31FD759E4542CE1A"
+    },
+    "completeSha256": "E56F13F583342D557BDB71E0B870CBB0D64F2FCFA7AD51FA6D30BB83C556BF4A",
+    "caseIndexSha256": "0BECBEAA9FA20B2E691DA6BE84297A5A0B2019FBCB6B5EA276C21B7B5A627E10",
+    "currentConfirmedOverlaySha256": "1D98EE04FFAE5D05B66A115F0F57F6F31ACB1D94A1BA16A17B3305B581A24121",
+    "currentVerifiedOverlaySha256": "F96CFFF67B286173A5608C4DCA53FE811E2E55EEE934DE8F80D5242A9AB68544",
+    "exactLineageCrosswalkSha256": "84637040AF7920706616C6769D9AFEEC969895FBCE5070C52AA2ADAD1FF1ABA2"
+  },
+  "batch": {
+    "qualifiedCases": 1044,
+    "completedCases": 1044,
+    "comparableCases": 1012,
+    "inventoryHolds": 85,
+    "exactTruthUnion": 977,
+    "truthMatchedCases": 942,
+    "truthlessCases": 102,
+    "exact": 918,
+    "mismatch": 17,
+    "empty": 7,
+    "acceptedReviewOnly": 435,
+    "held": 609,
+    "truthMatchedAccepted": 425,
+    "truthMatchedAcceptedExact": 423,
+    "truthMatchedAcceptedDisputed": 2,
+    "truthMatchedHeldExact": 495,
+    "truthMatchedHeldMismatch": 15,
+    "truthMatchedHeldEmpty": 7
+  },
+  "disputedAcceptedRows": [
+    {
+      "physicalIdentity": "62629-327_20260730215320_SLOT21",
+      "enteredTruth": "6950FR061FE4",
+      "imageFirstRead": "9509R061FEH0",
+      "channel": "BF",
+      "polarity": "DARK",
+      "direction": "FORWARD",
+      "selectionScore": 0.9878396530991739,
+      "bfRelativePath": "identity/proposals/62629-327_20260730215320_Slot21/scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "bfSha256": "15248FA111686809BE69A427284A9EC6947BF5E68E2D678C236B604EAFE5A930",
+      "dfRelativePath": "identity/proposals/62629-327_20260730215320_Slot21/scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "dfSha256": "A370030408972295D2E10DB1FC14B972632EC74B7FD2B892F5C84A31B36A04DB",
+      "pixelTruthState": "PENDING_EXACT_SAME_ACQUISITION_BF_DF_ADJUDICATION"
+    },
+    {
+      "physicalIdentity": "62629-341_20260730220842_SLOT16",
+      "enteredTruth": "61478E147SA3",
+      "imageFirstRead": "1478E147SUD0",
+      "channel": "BF",
+      "polarity": "DARK",
+      "direction": "FORWARD",
+      "selectionScore": 0.9804673541194728,
+      "bfRelativePath": "identity/proposals/62629-341_20260730220842_Slot16/scribe/BF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "bfSha256": "AE5968D5E870C7624A842507AB9ADD017325B7E7A0ED87C4A9033314AA11FECC",
+      "dfRelativePath": "identity/proposals/62629-341_20260730220842_Slot16/scribe/DF_SCRIBE_ORIENTED_DETECTOR_INPUT.png",
+      "dfSha256": "5D4C08B862C278F0316A8DCFC5BBB15E5D492598EF85B91CBF825102C0962EFE",
+      "pixelTruthState": "PENDING_EXACT_SAME_ACQUISITION_BF_DF_ADJUDICATION"
+    }
+  ],
+  "interpretation": {
+    "manualEntryMayBeWrong": true,
+    "acceptedOcrMayBeWrong": true,
+    "laterAcquisitionMaySubstituteForDisputedAcquisition": false,
+    "lotPlusSlotMayEstablishPhysicalLineage": false,
+    "acceptedWrongCountBeforePixelAdjudication": null,
+    "nextAction": "PULL_AND_VISUALLY_ADJUDICATE_THE_FOUR_HASH_PINNED_SAME_ACQUISITION_BF_DF_CROPS"
+  },
+  "imageBytesRead": false,
+  "identityOverlayChanged": false,
+  "detectorChanged": false,
+  "externalMutationPerformed": false,
+  "reviewOnly": true,
+  "productionRoutingEnabled": false
+}

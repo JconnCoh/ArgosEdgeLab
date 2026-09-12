@@ -1,0 +1,31 @@
+{
+    "schema":  "argos_admin_clipboard_action_evidence_v1",
+    "createdUtc":  "2026-09-11T23:58:48.8246478Z",
+    "state":  "HOLD_ARGOS_ADMIN_CLIPBOARD_ACTION_REMOTE_RESULT",
+    "actionId":  "R18ZV3_CORRECT_20260911T235801Z_01",
+    "stage":  "COMPLETE",
+    "computerName":  "A1025645101",
+    "runnerSha256":  "2267F5FBA3EDE0473DDA69B7F8031233FD04A3FCBF06D3E621FDE297B4E50F8D",
+    "payloadSha256":  "1F7700C08754846515BEEAEE226824195A5872DC2BD919B3E32E911BDF2E29FE",
+    "expectedResultSchema":  "argos_r18zv3_correctness_extract_v1",
+    "hostnameGatePassed":  true,
+    "visibleConsoleRequired":  true,
+    "taskbarClickPerformed":  false,
+    "hostnameUsesShortClipboardPaste":  true,
+    "hostnameSubmittedByClipboardCrLf":  false,
+    "hostnameSubmittedByNativeVkReturn":  true,
+    "hostnameSubmissionMode":  "SHIFT_INSERT_PASTE_THEN_NATIVE_VK_RETURN",
+    "payloadTransferred":  true,
+    "typedTrigger":  "get-clipboard -raw|iex",
+    "triggerSubmittedByNativeVkReturn":  true,
+    "triggerSubmissionMode":  "NATIVE_VK_RETURN",
+    "remoteResultReturned":  true,
+    "remoteResult":  {
+                         "schema":  "argos_r18zv3_correctness_extract_v1",
+                         "state":  "FAIL_R18ZV3_CORRECTNESS_EXTRACT",
+                         "stage":  "PARSE",
+                         "errorType":  "System.Management.Automation.ParameterBindingException",
+                         "errorMessage":  "Cannot bind parameter \u0027Id\u0027. Cannot convert value \"D:\\A2\\o\\ocv\\R18ZV3\\COMPLETE.json\" to type \"System.Int64\". Error: \"Input string was not in a correct format.\"",
+                         "mutationsPerformed":  false
+                     }
+}

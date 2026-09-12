@@ -11184,3 +11184,16 @@ than rerunning it.
 - Recovery: correct only the local publisher predicate, preserve the signed ZIP,
   and generate fresh publisher-bound clone, harness, wrapper, publication
   pre-action, and post-freeze invocation evidence before any external write.
+
+## 2026-09-11 — Check compact PowerShell helper names against aliases
+
+- Failure signature: the read-only R18ZV3 correctness payload parsed locally,
+  but its helper call `H <path>` resolved to the built-in `h` alias for
+  `Get-History -Id`, producing a structured `ParameterBindingException` before
+  result projection. No remote mutation occurred.
+- Cause: PowerShell command resolution is case-insensitive and aliases take
+  precedence over functions; parser success does not prove invocation binding.
+- Mandatory preflight: query every compact helper name with `Get-Alias` under
+  Windows PowerShell 5.1 and require zero collisions before remote execution.
+- Recovery: withdraw the executed action ID and source. Use a fresh namespace
+  with uniquely prefixed helper names; do not retry the failed namespace.
