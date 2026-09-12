@@ -4,6 +4,39 @@ This is the stable map for continuing Argos work without relying on task
 history. It contains paths and authority only; image evidence remains
 file-backed and is never embedded here.
 
+## OCV-03 R46/C13 dual-appearance and multiprocessing handoff — 2026-09-12
+
+Disposition: `PENDING_GATE` (successor acceptance required; review-only).
+
+- Current checkpoint:
+  `work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16R46_C13_DUAL_APPEARANCE_MULTIPROCESS_HANDOFF_20260912.md`,
+  SHA-256 `A892B287976FD6CD5CB568BF1A04DC2885601CC50DD1591AA1ACAC78338F622A`.
+- Machine manifest:
+  `work/O3F8/O3F16R46_C13_DUAL_APPEARANCE_MULTIPROCESS_HANDOFF_20260912.json`,
+  SHA-256 `B1C232D62A88DAD0B98E67CBEF26B305549CFDF406D8B14EC72CCA9BB6550826`.
+- Verification gate:
+  `work/O3F8/O3F16R46_C13_DUAL_APPEARANCE_MULTIPROCESS_HANDOFF_GATE_20260912.json`,
+  SHA-256 `B3B71CD8D81CF319C80784CA54EBDFA8B7FB4D09E9787CEEEC6E9CD63D056051`.
+- The active R46 chain and all C13 action evidence are tracked and hash-pinned.
+  C13 completed 24/24 cases: 11 correct BF/DF pairs, 8 correct DF with BF
+  held, 5 no-notch cases, and zero reviewed chipout/damage/contact selections.
+- Development must always run and retain both `RAW_DEFAULT` and
+  `ENHANCED_ASSISTED` populations. No first-success exit, suppression,
+  overwrite, winner, or fusion is allowed before both populations are frozen
+  and operator-reviewed. Labels remain unread until both neutral populations
+  are hashed.
+- The contour hypothesis searches wafer-interior to outside for the first
+  sustained shoulder-connected physical edge, with a raw/native witness for
+  every accepted coordinate. Cyan is fixed, yellow is 20 pixels inward, R6 is
+  secondary only, and BF/DF transfer zero pixels.
+- Multiprocessing is process-isolated whole-wafer work using `spawn`, initially
+  two workers, BF then DF serially per worker, one OpenCV thread per worker,
+  deterministic parent aggregation, no retry, and zero-child/no-false-complete
+  failure cleanup.
+- The implementation ceiling is two new executable files and 600 net-new
+  executable lines. No predecessor edit, package, infrastructure redesign,
+  laptop C: image result, or additional rollover is authorized.
+
 ## Operator-locked OCV-09 unified frontside fast path — 2026-09-10
 
 Disposition: `LOCKED_INPUT` (architecture and performance requirement only;

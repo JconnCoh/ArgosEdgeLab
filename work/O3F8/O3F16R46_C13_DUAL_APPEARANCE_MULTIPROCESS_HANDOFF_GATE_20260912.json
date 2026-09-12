@@ -1,0 +1,66 @@
+{
+  "schema": "argos_ocv03_frontside_handoff_gate_v1",
+  "createdLocal": "2026-09-12T20:12:00-05:00",
+  "state": "PASS_FILE_BACKED_HANDOFF_READY_FOR_SUCCESSOR_ACCEPTANCE",
+  "disposition": "PENDING_SUCCESSOR_ACCEPTANCE",
+  "projectRoot": "C:/Users/joshua.conn/Desktop/ArgosDev/ArgosEdgeLab",
+  "projectId": "0e4b841f-d116-45fc-b11e-0826f55acd41",
+  "requiredEnvironmentType": "local",
+  "requiredBranch": "codex/fiducial-opencv-d-drive",
+  "prePreservationTip": "f8d7f977ac95320ff1f3fbc856577081251f08ce",
+  "preservationCommit": "29dacf534f8c1d2b5067e40918f981f99b1618c4",
+  "checkpoint": {
+    "path": "work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16R46_C13_DUAL_APPEARANCE_MULTIPROCESS_HANDOFF_20260912.md",
+    "bytes": 15527,
+    "sha256": "A892B287976FD6CD5CB568BF1A04DC2885601CC50DD1591AA1ACAC78338F622A"
+  },
+  "manifest": {
+    "path": "work/O3F8/O3F16R46_C13_DUAL_APPEARANCE_MULTIPROCESS_HANDOFF_20260912.json",
+    "bytes": 21395,
+    "sha256": "B1C232D62A88DAD0B98E67CBEF26B305549CFDF406D8B14EC72CCA9BB6550826"
+  },
+  "dependencyVerification": {
+    "dependencyCount": 56,
+    "missingCount": 0,
+    "byteMismatchCount": 0,
+    "hashMismatchCount": 0,
+    "untrackedRepoDependencyCount": 0,
+    "state": "PASS"
+  },
+  "preservationVerification": {
+    "activeR46ChainTracked": true,
+    "c13ActionEvidenceTracked": true,
+    "nonIgnoredStatusBeforePreservationCommit": 105,
+    "pathsCapturedByPreservationCommit": 132,
+    "largeIgnoredAreaCopied": false,
+    "largeIgnoredAreaDeleted": false,
+    "largeIgnoredAreaIsDependency": false
+  },
+  "contractVerification": {
+    "rawDefaultAlwaysRuns": true,
+    "enhancedAssistedAlwaysRuns": true,
+    "firstSuccessExitForbidden": true,
+    "bothNeutralPopulationsFrozenBeforeLabels": true,
+    "interiorToOutsideSearchFrozen": true,
+    "rawNativeWitnessFrozen": true,
+    "crossChannelPixelTransferForbidden": true,
+    "twoWorkerWholeCaseSpawnDesignFrozen": true,
+    "bfThenDfSerialInsideWorkerFrozen": true,
+    "automaticRetryForbidden": true,
+    "noPackageAuthorized": true,
+    "noAdditionalRolloverAuthorized": true
+  },
+  "remainingGates": [
+    "UPDATE_CONTINUITY_ACTIVE_STATE_MEMORY_AND_LEDGER",
+    "COMMIT_AND_PUSH_EXACT_HANDOFF_BYTES",
+    "FETCH_AND_REQUIRE_BRANCH_HEAD_ORIGIN_MATCH",
+    "CREATE_SUCCESSOR_IN_EXACT_SAVED_LOCAL_PROJECT",
+    "VERIFY_SUCCESSOR_READ_ONLY_ACCEPTANCE_ATTESTATION",
+    "RECORD_COMPLETE_HANDOFF_HOOK_AFTER_ACCEPTANCE"
+  ],
+  "writesPerformedOutsideRepository": false,
+  "detectorExecutionPerformed": false,
+  "imageBytesRead": false,
+  "jbodContactPerformed": false,
+  "packageActionPerformed": false
+}

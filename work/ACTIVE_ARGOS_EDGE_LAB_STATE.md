@@ -1,8 +1,68 @@
-# Active ArgosEdgeLab state - OCV-03 O3F16 R23 rollover / R24 candidate-first next - 2026-09-04
+# Active ArgosEdgeLab state - OCV-03 O3F16 R46/C13 dual-appearance and multiprocessing handoff - 2026-09-12
 
 This is the first file to read when continuing the current ArgosEdgeLab work.
 It is a lightweight filesystem handoff. Never reconstruct state from the
 quarantined task or from image payloads in chat.
+
+## OCV-03 O3F16 R46/C13 dual-appearance and multiprocessing handoff — 2026-09-12
+
+The current task crossed the mandatory 512 MiB session-metadata hard stop at
+544.631 MiB. The operator authorized exactly one robust new-task handoff. No
+detector, image, JBOD, portal, package, task/process, provider, XML, training,
+or production action is allowed in the source task after that hard stop.
+
+The file-backed handoff is now the authority. It preserves the exact R46 chain,
+all C13 action evidence, the C13 terminal machine hashes and operator review,
+the corrected dual-appearance hypothesis, the qualified Scribe multiprocessing
+pattern, strict scope limits, and every active hold. Previously ignored active
+source/evidence bytes were force-tracked, and all other existing non-ignored
+project changes were preserved in commit
+`29dacf534f8c1d2b5067e40918f981f99b1618c4` rather than left outside the
+branch snapshot.
+
+R46/C13 completed 24 of 24 cases and validated all 48 BF/DF source leaves. The
+operator review found 11 correct paired cases, 8 correct-DF/BF-held cases, and
+5 no-notch cases (C0001, C0002, C0003, C0005, C0017), with zero reviewed
+chipout/damage/contact responses selected as a notch. All ownership remains
+held; this is diagnostic evidence, not a release.
+
+The next detector experiment must run and retain two independent populations
+for every BF and DF input: `RAW_DEFAULT` and `ENHANCED_ASSISTED`. Neither lane
+may short-circuit, suppress, overwrite, or decide the other. Both neutral
+populations are frozen and hashed before labels are opened. The tracing
+hypothesis searches from the wafer interior outward for the first sustained,
+shoulder-connected physical edge, without ideal-curve forcing, morphology,
+unsupported interpolation, or cross-channel pixel transfer. Cyan remains the
+fixed outer circle, yellow remains exactly 20 pixels inward, and R6 remains
+post-contour secondary corroboration only.
+
+Multiprocessing is by whole-wafer case with Python `spawn`, initially two
+workers. Each process owns one case and runs BF then DF serially with its own
+provider/cache/module state, one OpenCV thread, and OpenCL/GPU disabled. The
+parent alone owns ordering and global completion. There are no automatic
+retries; first fatal stops, terminates, joins, proves zero residual children,
+and forbids false `COMPLETE`. Serial/parallel semantic and raster equality,
+repeat determinism, overlapping worker evidence, timing, CPU, peak RSS, and
+failure cleanup are mandatory before full-resolution evaluation.
+
+The successor must be created directly in the saved local Desktop project,
+verify every pinned byte, and return `ACCEPTED_AWAITING_RELEASE` without writes
+before implementation is released. After release, the smallest allowed change
+is one R47 detector adapter and one whole-case coordinator, at most 600 net-new
+executable lines total. No predecessor modification, wrapper/launcher/endpoint
+redesign, package, C:-drive image result, or additional rollover is authorized.
+
+Current checkpoint:
+`work/FRONTSIDE_INSPECTION_REVIEW_ONLY/OCV03_O3F16R46_C13_DUAL_APPEARANCE_MULTIPROCESS_HANDOFF_20260912.md`,
+SHA-256 `A892B287976FD6CD5CB568BF1A04DC2885601CC50DD1591AA1ACAC78338F622A`.
+
+Machine manifest:
+`work/O3F8/O3F16R46_C13_DUAL_APPEARANCE_MULTIPROCESS_HANDOFF_20260912.json`,
+SHA-256 `B1C232D62A88DAD0B98E67CBEF26B305549CFDF406D8B14EC72CCA9BB6550826`.
+
+Verification gate:
+`work/O3F8/O3F16R46_C13_DUAL_APPEARANCE_MULTIPROCESS_HANDOFF_GATE_20260912.json`,
+SHA-256 `B3B71CD8D81CF319C80784CA54EBDFA8B7FB4D09E9787CEEEC6E9CD63D056051`.
 
 ## OCV-03 O3F16 R23 rollover / R24 candidate-first next — 2026-09-04
 
