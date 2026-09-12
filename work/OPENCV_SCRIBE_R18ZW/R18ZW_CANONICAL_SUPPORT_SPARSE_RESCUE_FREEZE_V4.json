@@ -1,0 +1,100 @@
+{
+  "schema": "argos_opencv_scribe_r18zw_canonical_support_sparse_rescue_freeze_v4",
+  "state": "PASS_R18ZW_CANONICAL_SUPPORT_SPARSE_RESCUE_DEVELOPMENT_FREEZE",
+  "disposition": "LOCKED_INPUT",
+  "revision": "R18ZW_CANONICAL_SUPPORT_SPARSE_RESCUE_FREEZE_V4_20260912",
+  "supersedesAsCurrentDevelopmentFreeze": {
+    "path": "work/OPENCV_SCRIBE_R18ZW/R18ZW_PHASE_DCT_PAIRED_DEVELOPMENT_FREEZE_V3.json",
+    "sha256": "DBF241AE05E51B0D3BFED3FCA58C99407D4E4D5913CA4245DFC02E6AD2FF88E3",
+    "preservedBehavior": "UNCHANGED_TWO_FORWARD_CHANNEL_PHASE_DCT_RESOLVER"
+  },
+  "frozenInputs": {
+    "r18zv1ProviderSha256": "81B0AAAE1CBC044321CD0CDA5F1147202F7D8CB384D7E721A36B93AE0C24E2D7",
+    "baseManifestSha256": "AECAF49BD0ACFC07C4B2973AF1889ABD9F3708C1411820A667FD6330B90F1229",
+    "supplementalManifestSha256": "C7BD53925A522C21B8BAAE3E7A9B8B3817234A0665239FC1629CA3B09C9741DD",
+    "exactScribeLineageCrosswalkSha256": "84637040AF7920706616C6769D9AFEEC969895FBCE5070C52AA2ADAD1FF1ABA2",
+    "pairedReferenceManifestSha256": "FE6BA2DAFA1F535AF489862DD9B6A542142F6F08D17839B3B8E0D98CD3BAA9A9",
+    "combinedBaseReferenceCount": 475,
+    "exactScribeLineageCount": 49,
+    "pairedReferenceCount": 2
+  },
+  "rootCause": {
+    "classification": "SUPPORT_WINDOW_ORIGIN_NOT_DOT_SHAPE_OR_FONT_REGIME",
+    "targetSupportWindowStartRow": 22,
+    "independentSupportWindowStartRow": 0,
+    "targetOccupiedSpanPixels": {"rows": 115, "columns": 66},
+    "independentOccupiedSpanPixels": {"rows": 116, "columns": 65}
+  },
+  "descriptor": {
+    "baseOccupancyAndStrongest150RowWindow": "BYTE_SEMANTICS_PRESERVED_FROM_V3",
+    "canonicalRowAndColumnBounds": [0.01, 0.99],
+    "supportPaddingFraction": 0.05,
+    "resizedWidth": 32,
+    "resizedHeight": 64,
+    "dctRows": 12,
+    "dctColumns": 8,
+    "normalization": "MEAN_CENTER_THEN_L2",
+    "syntheticDotsUsed": false,
+    "componentOrCentroidMapUsed": false
+  },
+  "admission": {
+    "onlyWhenExactlyOneForwardTargetChannelSurvives": true,
+    "originalPositionMustBeHeld": true,
+    "candidateActiveExactLineagesMaximum": 3,
+    "exactlyOneIndependentPhysicalIdentityPairRequired": true,
+    "requiredReferenceChannels": ["BF", "DF"],
+    "eachReferenceMustRankCandidateOverEveryOtherActiveLabel": true,
+    "minimumPerReferenceScore": 0.71,
+    "minimumPerReferenceMargin": 0.04,
+    "incumbentUnanimityVetoPreserved": true,
+    "labelChangeRequired": true,
+    "selectionScoreMayIncrease": false,
+    "truthChecksumLotSlotOrTargetIdentityUsedForSelection": false
+  },
+  "developmentEvidence": {
+    "canonicalTopLabelCorrect": 414,
+    "canonicalTopLabelTotal": 475,
+    "broadPairedUniverse": 157,
+    "broadAcceptedCorrect": 142,
+    "broadAcceptedWrong": 1,
+    "broadRejected": 14,
+    "broadUseRejected": "TRUE_7_WOULD_CHANGE_TO_P",
+    "genericSparsePairedAcceptedCorrect": 6,
+    "genericSparsePairedAcceptedWrong": 0,
+    "genericSparsePairedRejected": 151,
+    "exactIndependentPairLeaveLineageOutAcceptedCorrect": 1,
+    "exactIndependentPairLeaveLineageOutAcceptedWrong": 0,
+    "exactIndependentPairLeaveLineageOutRejected": 474,
+    "soleExactIndependentPairAdmissionLabel": "W"
+  },
+  "separateTargetPrediction": {
+    "targetPhysicalIdentity": "62633-726_20260818204139_Slot19",
+    "targetExactLineageExcluded": "148AW103SUD5",
+    "independentPhysicalIdentity": "62635-060_20260910182411_Slot17",
+    "independentExactLineage": "148AW142SUC5",
+    "candidateLabel": "W",
+    "bfReferenceScore": 0.9911012079980619,
+    "dfReferenceScore": 0.9871361488179351,
+    "bestNonCandidateLabel": "M",
+    "bestNonCandidateScore": 0.787137484947034,
+    "minimumReferenceMargin": 0.1999986638709011,
+    "truthComparedOnlyAfterPrediction": "148AW103SUD5"
+  },
+  "requiredFullChainGate": {
+    "sevenExactStringsRequired": true,
+    "normalHypothesisAttemptsRequired": 56,
+    "wrongAdmissionsRequired": 0,
+    "runtimeRestorationRequired": true,
+    "priorSixResultStringsMustRemainByteEqual": true
+  },
+  "authority": {
+    "reviewOnly": true,
+    "identityAccepted": false,
+    "referenceAdmissionAuthorized": false,
+    "trainingAuthorized": false,
+    "activationAuthorized": false,
+    "xmlAuthorized": false,
+    "productionAuthorized": false,
+    "publicationAuthorized": false
+  }
+}
